@@ -1,0 +1,97 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  noindex?: boolean;
+  canonical?: string;
+}
+
+const {
+  title = 'Zamana — Kurumsal Claude Eğitim ve Danışmanlık',
+  description = 'Türkiye\'nin kurumsal Claude eğitim platformu. Bireysel ve kurumsal programlarla şirketinize en değerli kaynağı geri veriyoruz: zamanı.',
+  ogImage = '/images/zamana-logo.webp',
+  noindex = false,
+  canonical,
+} = Astro.props;
+
+const siteUrl = 'https://zamana.com.tr';
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonicalUrl} />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, siteUrl).toString()} />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Zamana" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#0f2855" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Zamana',
+      legalName: 'Zamana Kurumsal Eğitim ve Danışmanlık',
+      url: siteUrl,
+      logo: `${siteUrl}/images/zamana-logo.webp`,
+      email: 'info@zamana.com.tr',
+      telephone: '+90 530 490 4740',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Yavuz Sultan Selim Bulvarı, Perlavista Residence B Blok D:2',
+        addressLocality: 'Beylikdüzü',
+        addressRegion: 'İstanbul',
+        addressCountry: 'TR',
+      },
+      founder: { '@type': 'Person', name: 'Murat Özsaygılı' },
+    })} />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">İçeriğe geç</a>
+    <Header />
+    <main id="main"><slot /></main>
+    <Footer />
+
+    <style is:global>
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        background: var(--c-navy);
+        color: var(--c-white);
+        padding: 0.5rem 1rem;
+        z-index: 100;
+      }
+      .skip-link:focus { left: 0; }
+    </style>
+  </body>
+</html>

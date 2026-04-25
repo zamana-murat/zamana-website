@@ -1,0 +1,371 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProgramCard from '../components/ProgramCard.astro';
+---
+
+<Layout
+  title="Zamana — Türkiye'nin Kurumsal Claude Eğitim Platformu"
+  description="Claude bir araç. Onu doğru kullanmak bir beceri. Zamana 3 ayda bu beceriyi şirketinize getirir. Bireysel ve kurumsal eğitim programları."
+>
+
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <span class="eyebrow eyebrow--light">Kurumsal Claude Eğitimi · Türkiye</span>
+      <h1 class="hero__title">
+        Claude, doğru öğretildiğinde<br>
+        şirketinizi <span class="hero__accent">3 ayda dönüştürür.</span>
+      </h1>
+      <p class="hero__lead">
+        Zamana, Türkiye'nin yapay zeka eğitim platformudur. Bireysel profesyonellere ve şirketlere
+        Claude'u gerçek işte nasıl kullanacaklarını gösteririz — örnek üzerinden, kendi işiniz üzerinden.
+      </p>
+      <div class="hero__cta">
+        <a href="/programlar" class="btn btn--primary btn--lg">Programları İncele</a>
+        <a href="/wiki/" class="btn btn--ghost btn--lg">Ücretsiz Wiki'ye Git</a>
+      </div>
+      <div class="hero__meta">
+        <span><strong>3 ay</strong> tam destek</span>
+        <span><strong>30 dakika</strong> telefon kuralı</span>
+        <span><strong>Türkçe</strong> içerik ve eğitim</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--s-6);">
+        <span class="eyebrow">Zamana Nedir</span>
+        <h2 class="section-title center">Eğitim. Danışmanlık. Sonuç.</h2>
+        <p class="lead center">
+          Bir kurs satmıyoruz. Ekibinizin Claude'u günlük işine entegre etmesini sağlıyoruz —
+          12 hafta içinde, kanıtlanabilir çıktılarla.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="value-card">
+          <div class="value-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L2 7 L12 12 L22 7 Z"/><path d="M2 17 L12 22 L22 17"/><path d="M2 12 L12 17 L22 12"/></svg>
+          </div>
+          <h3>Eğitim</h3>
+          <p>Ekibinize Claude'u bir araç olarak değil, çalışma ortağı olarak kullanmayı öğretiyoruz. CLAUDE.md'den prompt kütüphanesine, MCP'den otomasyona kadar.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Danışmanlık</h3>
+          <p>3 ay boyunca telefon hattımız açık. Ekipte tıkanma yaşandığında 30 dakika içinde dönüş alırsınız. Sınırsız soru, sınırsız destek.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Sonuç</h3>
+          <p>Tek hedefimiz var: 3 ay sonra ekibinizin günlük işinin parçası olmuş bir Claude pratiği. Sertifikasız ders değil, çalışan iş akışı.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="programlar">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--s-6);">
+        <span class="eyebrow">İki Program</span>
+        <h2 class="section-title center">Size Uygun Olanı Seçin</h2>
+        <p class="lead center">
+          Aynı pedagojik DNA. Farklı ölçek. Bireysel profesyoneller için 3 hafta, şirketler için 3 aylık tam dönüşüm.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="max-width: 880px; margin: 0 auto;">
+        <ProgramCard
+          title="Bireysel Program"
+          badge="Hızlı Başlangıç"
+          price="$1.000"
+          duration="3 hafta eğitim + 3 ay destek"
+          audience="CEO, freelancer, bağımsız profesyonel veya kendi başına öğrenmek isteyen çalışan."
+          features={[
+            "3 hafta × 2 saat birebir oturum",
+            "Sıfırdan kurulum: Desktop, Cowork, CLAUDE.md",
+            "Sizin gerçek işiniz üzerinden çalışıyoruz",
+            "3 ay sınırsız telefon desteği",
+            "30 dakika cevap garantisi",
+            "Gerek görülürse ücretsiz ek ders saati",
+          ]}
+          ctaHref="/programlar/bireysel"
+          ctaText="Bireysel Programı İncele"
+        />
+        <ProgramCard
+          title="Kurumsal Program"
+          badge="Tam Dönüşüm"
+          price="$3.000"
+          priceSuffix="+ KDV / Ay"
+          duration=""
+          priceSubtext="Minimum 3 aylık eğitim"
+          audience="6+ çalışanı olan KOBİ ve orta ölçekli şirketler. AI dönüşümünü ciddiye alanlar."
+          features={[
+            "Çalışan başı 6 saat eğitim",
+            "Departmana özel müfredat (12 rol kapsamı)",
+            "Tüm ekip için sınırsız telefon desteği",
+            "Şirket içi 6 Claude şampiyonu yetiştirme",
+            "Yapay zeka politika ve KVKK rehberliği",
+            "Gerek görülürse ücretsiz ek ders saati",
+          ]}
+          ctaHref="/programlar/kurumsal"
+          ctaText="Kurumsal Programı İncele"
+          highlighted={true}
+        />
+      </div>
+
+      <p class="text-center" style="margin-top: var(--s-5);">
+        <a href="/programlar/karsilastirma" class="link-arrow">İki programı karşılaştır <span aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--s-6);">
+        <span class="eyebrow">Neden Zamana</span>
+        <h2 class="section-title center">Kurs Değil, Pratik</h2>
+      </div>
+
+      <div class="grid grid-2 reasons">
+        <div class="reason">
+          <div class="reason__num">01</div>
+          <div>
+            <h3>Sizin işinizi öğretiyoruz, demoyu değil</h3>
+            <p>İlk oturumdan itibaren <strong>kendi gerçek görevinizi</strong> Claude ile çalışırız. Yazılı senaryo değil, masanızdaki bekleyen iş.</p>
+          </div>
+        </div>
+        <div class="reason">
+          <div class="reason__num">02</div>
+          <div>
+            <h3>Zorluk, öğrenmenin kendisidir</h3>
+            <p>Hazır cevap vermeyiz. Birlikte deneriz, hata yaparsınız, düzeltiriz. Üç ay sonra Claude olmadan da düşünebilen bir AI kullanıcısı çıkıyor.</p>
+          </div>
+        </div>
+        <div class="reason">
+          <div class="reason__num">03</div>
+          <div>
+            <h3>Türkiye odaklı, Türkçe ilk</h3>
+            <p>İçeriklerimiz, örneklerimiz, müfredatımız Türk iş kültürüne göre tasarlandı. KVKK uyumu, yerel müşteri profili, Türkçe çıktı kalitesi — hepsi temelden ele alınmış.</p>
+          </div>
+        </div>
+        <div class="reason">
+          <div class="reason__num">04</div>
+          <div>
+            <h3>30 dakika telefon kuralı</h3>
+            <p>Tıkandığınızda telefonu açın. Yarım saat içinde dönüş garantisi. Çünkü öğrenme oturumda değil, gerçek işte yaşanır.</p>
+          </div>
+        </div>
+        <div class="reason">
+          <div class="reason__num">05</div>
+          <div>
+            <h3>CLAUDE.md ile size özel kurulum</h3>
+            <p>Standart asistan değil, sizin asistanınız. Rolünüz, müşteri profiliniz, çalışma tarzınız Claude'un belleğine yazılır — her seferinde sıfırdan anlatmak yok.</p>
+          </div>
+        </div>
+        <div class="reason">
+          <div class="reason__num">06</div>
+          <div>
+            <h3>Hedefimiz bağımsızlığınız</h3>
+            <p>Sizi bize bağımlı yapmıyoruz. 3 ay sonra kendi başınıza yeni iş akışları kuran, prompt yazan, ekibini eğitebilen bir Claude kullanıcısısınız.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark wiki-cta">
+    <div class="container">
+      <div class="wiki-cta__grid">
+        <div>
+          <span class="eyebrow">Ücretsiz Kaynak</span>
+          <h2>Zamana Wiki — Türkçe Claude bilgi tabanı</h2>
+          <p class="lead">
+            Programa başlamadan önce ne öğreneceğinizi merak ediyorsanız wiki'mizi inceleyin.
+            55+ sayfa, ücretsiz, Türkçe — Claude ile çalışmanın temellerinden departman bazlı kullanım örneklerine kadar.
+          </p>
+          <a href="/wiki/" class="btn btn--primary">Wiki'ye Git</a>
+        </div>
+        <ul class="wiki-cta__list">
+          <li>Claude nedir, nasıl çalışır</li>
+          <li>İlk 7 gün rehberi</li>
+          <li>CLAUDE.md kurulumu</li>
+          <li>Prompt yazma sanatı</li>
+          <li>12 departman için kullanım örnekleri</li>
+          <li>KVKK ve gizlilik</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container text-center">
+      <h2>İlk konuşmayı yapalım.</h2>
+      <p class="lead center">
+        Ne sattığımızı anlatmadan önce, ne yaptığınızı dinliyoruz.<br>
+        15 dakika içinde size uygun olan programı netleştiririz.
+      </p>
+      <div style="display: inline-flex; gap: var(--s-3); flex-wrap: wrap; justify-content: center; margin-top: var(--s-3);">
+        <a href="/iletisim" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
+        <a href="mailto:info@zamana.com.tr" class="btn btn--secondary btn--lg">E-posta Gönder</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .hero {
+    position: relative;
+    color: var(--c-text-light);
+    overflow: hidden;
+    padding: clamp(var(--s-7), 12vw, 9rem) 0 clamp(var(--s-7), 10vw, 7rem);
+  }
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 18% 20%, rgba(201, 168, 76, 0.18) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 80%, rgba(26, 61, 122, 0.5) 0%, transparent 55%),
+      linear-gradient(160deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
+    z-index: -2;
+  }
+  .hero__bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero__inner { position: relative; z-index: 1; max-width: 880px; }
+  .eyebrow--light { color: var(--c-gold-light); }
+  .hero__title {
+    color: var(--c-white);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: var(--s-3) 0 var(--s-4);
+  }
+  .hero__accent { color: var(--c-gold-light); }
+  .hero__lead {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: var(--c-text-light-muted);
+    line-height: 1.7;
+    max-width: 60ch;
+    margin-bottom: var(--s-5);
+  }
+  .hero__cta {
+    display: flex;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+    margin-bottom: var(--s-5);
+  }
+  .hero__meta {
+    display: flex;
+    gap: var(--s-5);
+    flex-wrap: wrap;
+    padding-top: var(--s-4);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.92rem;
+    color: var(--c-text-light-muted);
+  }
+  .hero__meta strong { color: var(--c-gold-light); font-weight: 700; margin-right: 0.3rem; }
+
+  .value-card {
+    padding: var(--s-5);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    background: var(--c-white);
+    transition: transform var(--t), box-shadow var(--t), border-color var(--t);
+  }
+  .value-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--sh-mid);
+    border-color: var(--c-border-gold);
+  }
+  .value-card__icon {
+    width: 48px; height: 48px;
+    background: rgba(201, 168, 76, 0.12);
+    border-radius: var(--r-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-gold-dark);
+    margin-bottom: var(--s-3);
+  }
+  .value-card__icon svg { width: 24px; height: 24px; }
+  .value-card h3 { margin-bottom: var(--s-2); }
+  .value-card p { color: var(--c-text-muted); font-size: 0.95rem; }
+
+  .reasons { gap: var(--s-5); }
+  .reason {
+    display: flex;
+    gap: var(--s-3);
+    align-items: flex-start;
+  }
+  .reason__num {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--c-gold);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    flex-shrink: 0;
+    width: 56px;
+  }
+  .reason h3 { margin-bottom: var(--s-2); }
+  .reason p { color: var(--c-text-muted); font-size: 0.97rem; }
+
+  .wiki-cta__grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--s-6);
+    align-items: center;
+  }
+  .wiki-cta__list {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201, 168, 76, 0.25);
+    border-radius: var(--r-lg);
+    padding: var(--s-4);
+    display: grid;
+    gap: 0.6rem;
+  }
+  .wiki-cta__list li {
+    color: var(--c-text-light-muted);
+    font-size: 0.95rem;
+    padding-left: 1.4rem;
+    position: relative;
+  }
+  .wiki-cta__list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--c-gold-light);
+    font-weight: 700;
+  }
+  @media (max-width: 720px) {
+    .wiki-cta__grid { grid-template-columns: 1fr; }
+  }
+
+  .final-cta {
+    background: var(--c-bg-subtle);
+    border-top: 1px solid var(--c-border);
+  }
+  .final-cta h2 { margin-bottom: var(--s-3); }
+
+  .link-arrow {
+    color: var(--c-gold-dark);
+    font-weight: 600;
+    transition: gap var(--t-fast);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .link-arrow:hover { gap: 0.6rem; }
+</style>

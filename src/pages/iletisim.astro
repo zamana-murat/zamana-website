@@ -1,0 +1,243 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="İletişim — 15 Dakikalık Keşif Görüşmesi | Zamana"
+  description="Zamana ile iletişime geçin. 15 dakikalık ücretsiz keşif görüşmesi, e-posta, telefon. Beylikdüzü İstanbul ofisi."
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">İletişim</span>
+      <h1>Konuşalım.</h1>
+      <p class="lead">
+        15 dakika içinde durumunuzu dinler, size uygun olan programı netleştiririz. Satış konuşması yok — gerçek tanışma.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <h2 class="section-title">Görüşme Talep Formu</h2>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Ad Soyad <span class="req">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="email">E-posta <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              <span class="hint">İsteğe bağlı — daha hızlı dönüş için</span>
+            </div>
+            <div class="field">
+              <label for="company">Şirket / Kurum</label>
+              <input type="text" id="company" name="company" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="program">Hangi program ilginizi çekiyor?</label>
+              <select id="program" name="program">
+                <option value="">Henüz emin değilim</option>
+                <option value="bireysel">Bireysel Program ($1.000 + KDV)</option>
+                <option value="kurumsal">Kurumsal Program ($3.000 + KDV / ay)</option>
+                <option value="ikisi">İkisini karşılaştırmak istiyorum</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Kısa not <span class="req">*</span></label>
+              <textarea id="message" name="message" required placeholder="Durumunuzu birkaç cümleyle anlatın — hangi sıkıntı, hangi hedef, hangi tarih aralığında müsaitsiniz."></textarea>
+            </div>
+
+            <div class="field consent">
+              <label>
+                <input type="checkbox" name="consent" required />
+                <span>Kişisel verilerimin <a href="/gizlilik">KVKK Aydınlatma Metni</a> kapsamında işlenmesini kabul ediyorum.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg form-submit">Görüşme Talep Et</button>
+
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="contact-side">
+          <div class="contact-block">
+            <h3>Doğrudan iletişim</h3>
+            <ul>
+              <li>
+                <span class="ico" aria-hidden="true">✉</span>
+                <div>
+                  <strong>E-posta</strong>
+                  <a href="mailto:info@zamana.com.tr">info@zamana.com.tr</a>
+                </div>
+              </li>
+              <li>
+                <span class="ico" aria-hidden="true">☏</span>
+                <div>
+                  <strong>Telefon</strong>
+                  <a href="tel:+905304904740">+90 530 490 4740</a>
+                </div>
+              </li>
+              <li>
+                <span class="ico" aria-hidden="true">⌖</span>
+                <div>
+                  <strong>Adres</strong>
+                  <span>Yavuz Sultan Selim Bulvarı,<br>Perlavista Residence B Blok D:2,<br>Beylikdüzü / İstanbul</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-block contact-block--gold">
+            <h3>Cevap süresi</h3>
+            <p>Hafta içi mesai saatleri içinde 24 saat — çoğu zaman birkaç saat. Hafta sonu yazdıysanız Pazartesi.</p>
+          </div>
+
+          <div class="contact-block">
+            <h3>Önce wiki'ye baksak?</h3>
+            <p class="text-muted">Programa karar vermeden önce Zamana'nın kalitesini görmek isterseniz <a href="/wiki/">ücretsiz wiki'mizi</a> inceleyin — 55+ Türkçe sayfa.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--s-6);
+    align-items: start;
+  }
+  @media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  .req { color: var(--c-gold-dark); }
+  .consent label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-weight: 400;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .consent input { width: auto; margin-top: 4px; }
+  .consent a { color: var(--c-gold-dark); text-decoration: underline; }
+
+  .form-submit { width: 100%; margin-top: var(--s-2); }
+
+  .form-status {
+    margin-top: var(--s-3);
+    padding: var(--s-3);
+    border-radius: var(--r-card);
+    font-size: 0.95rem;
+    display: none;
+  }
+  .form-status.is-success {
+    display: block;
+    background: rgba(40, 100, 40, 0.08);
+    border: 1px solid rgba(40, 100, 40, 0.3);
+    color: #1f5e1f;
+  }
+  .form-status.is-error {
+    display: block;
+    background: rgba(160, 30, 30, 0.06);
+    border: 1px solid rgba(160, 30, 30, 0.3);
+    color: #8a2424;
+  }
+
+  .contact-side { display: grid; gap: var(--s-3); }
+  .contact-block {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    padding: var(--s-4);
+  }
+  .contact-block--gold {
+    background: var(--c-bg-subtle);
+    border-color: var(--c-border-gold);
+  }
+  .contact-block h3 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--c-gold-dark);
+    margin-bottom: var(--s-3);
+  }
+  .contact-block ul { display: grid; gap: var(--s-3); }
+  .contact-block li { display: flex; gap: 0.8rem; }
+  .ico {
+    width: 32px; height: 32px;
+    background: rgba(201, 168, 76, 0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-gold-dark);
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+  .contact-block strong { display: block; color: var(--c-navy); margin-bottom: 0.15rem; }
+  .contact-block a { color: var(--c-gold-dark); }
+  .contact-block a:hover { text-decoration: underline; }
+</style>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const prog = params.get('program');
+  if (prog) {
+    const sel = document.getElementById('program') as HTMLSelectElement | null;
+    if (sel) sel.value = prog;
+  }
+
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  const status = document.getElementById('form-status');
+  const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    if (!status || !submitBtn) return;
+
+    status.className = 'form-status';
+    status.textContent = '';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Gönderiliyor…';
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const json: any = await res.json().catch(() => ({}));
+      if (res.ok && json.ok) {
+        status.classList.add('is-success');
+        status.textContent = '✓ Mesajınız alındı. 24 saat içinde dönüş yapacağız.';
+        form.reset();
+      } else {
+        throw new Error(json.error || 'unknown');
+      }
+    } catch (err) {
+      status.classList.add('is-error');
+      status.innerHTML = '✗ Form gönderilemedi. Lütfen doğrudan <a href="mailto:info@zamana.com.tr">info@zamana.com.tr</a> adresine yazın.';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Görüşme Talep Et';
+    }
+  });
+</script>

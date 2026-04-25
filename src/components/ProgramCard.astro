@@ -1,0 +1,155 @@
+---
+interface Props {
+  title: string;
+  badge?: string;
+  price: string;
+  priceSuffix?: string;
+  priceSubtext?: string;
+  duration: string;
+  audience: string;
+  features: string[];
+  ctaHref: string;
+  ctaText: string;
+  highlighted?: boolean;
+}
+
+const { title, badge, price, priceSuffix = '+ KDV', priceSubtext, duration, audience, features, ctaHref, ctaText, highlighted = false } = Astro.props;
+---
+
+<article class={`prog-card${highlighted ? ' prog-card--highlighted' : ''}`}>
+  {badge && <div class="prog-card__badge">{badge}</div>}
+  <h3 class="prog-card__title">{title}</h3>
+  <p class="prog-card__audience">{audience}</p>
+
+  <div class="prog-card__price">
+    <div class="prog-card__price-row">
+      <span class="prog-card__price-main">{price}</span>
+      <span class="prog-card__price-suffix">{priceSuffix}</span>
+    </div>
+    {duration && <div class="prog-card__duration">{duration}</div>}
+    {priceSubtext && <div class="prog-card__price-sub">{priceSubtext}</div>}
+  </div>
+
+  <ul class="prog-card__features">
+    {features.map(f => (
+      <li>
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="4 11 8 15 16 6" />
+        </svg>
+        <span>{f}</span>
+      </li>
+    ))}
+  </ul>
+
+  <a href={ctaHref} class={`btn ${highlighted ? 'btn--primary' : 'btn--secondary'} prog-card__cta`}>{ctaText}</a>
+</article>
+
+<style>
+  .prog-card {
+    position: relative;
+    background: var(--c-white);
+    border: 1.5px solid var(--c-border);
+    border-radius: var(--r-card);
+    padding: var(--s-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+    transition: transform var(--t), box-shadow var(--t), border-color var(--t);
+  }
+  .prog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sh-strong);
+    border-color: var(--c-border-gold);
+  }
+  .prog-card--highlighted {
+    border-color: var(--c-gold);
+    box-shadow: 0 8px 32px rgba(201, 168, 76, 0.15);
+  }
+  .prog-card__badge {
+    position: absolute;
+    top: -12px;
+    left: var(--s-5);
+    background: var(--c-gold);
+    color: var(--c-white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .prog-card__title {
+    font-size: 1.5rem;
+    margin-top: var(--s-1);
+  }
+  .prog-card__audience {
+    color: var(--c-text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  .prog-card__price {
+    padding: var(--s-3) 0;
+    border-top: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+    text-align: center;
+  }
+  .prog-card__price-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+  }
+  .prog-card__price-main {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--c-navy);
+    letter-spacing: -0.02em;
+  }
+  .prog-card__price-suffix {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--c-gold-dark);
+    letter-spacing: 0.04em;
+  }
+  .prog-card__duration {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--c-navy);
+    text-align: center;
+  }
+  .prog-card__price-sub {
+    margin-top: 0.4rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--c-gold-dark);
+    font-style: italic;
+    text-align: center;
+  }
+  .prog-card__features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: var(--s-2) 0;
+    flex: 1;
+  }
+  .prog-card__features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .prog-card__features svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--c-gold-dark);
+    margin-top: 3px;
+  }
+  .prog-card__cta {
+    margin-top: var(--s-2);
+    width: 100%;
+  }
+</style>

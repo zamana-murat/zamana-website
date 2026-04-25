@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+const lastUpdated = '25 Nisan 2026';
+---
+
+<Layout
+  title="Çerez Politikası | Zamana"
+  description="Zamana web sitesinin çerez kullanım politikası."
+>
+  <section class="page-hero">
+    <div class="container container-narrow">
+      <span class="eyebrow">Yasal</span>
+      <h1>Çerez Politikası</h1>
+      <p class="text-muted">Son güncelleme: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container container-narrow legal-doc">
+      <h2>Çerez Nedir?</h2>
+      <p>
+        Çerezler (cookies), bir web sitesini ziyaret ettiğinizde tarayıcınız tarafından bilgisayarınıza veya
+        mobil cihazınıza kaydedilen küçük metin dosyalarıdır. Sitenin daha iyi çalışmasını sağlar.
+      </p>
+
+      <h2>Hangi Çerezleri Kullanıyoruz?</h2>
+      <p>Zamana web sitesinde <strong>üçüncü taraf izleme veya reklam çerezi kullanılmaz</strong>. Yalnızca aşağıdaki çerezler bulunur:</p>
+
+      <h3>1. Zorunlu Çerezler</h3>
+      <p>Sitenin temel çalışması için gereklidir. Devre dışı bırakılamaz.</p>
+      <ul>
+        <li>Form gönderim güvenliği (CSRF korumalı)</li>
+        <li>Cloudflare güvenlik çerezleri</li>
+      </ul>
+
+      <h3>2. Performans Çerezleri</h3>
+      <p>Şu anda sitemiz <strong>analitik (Google Analytics vb.) kullanmıyor</strong>. Yalnızca Cloudflare'in
+      sunucu tarafı toplam trafik istatistikleri vardır — bu çerez bırakmaz, kişisel veri toplamaz.</p>
+
+      <h2>Üçüncü Taraf Servisler</h2>
+      <ul>
+        <li><strong>Google Fonts:</strong> "Plus Jakarta Sans" yazı tipi yüklenirken Google'a istek gönderilir. Çerez bırakmaz, IP adresiniz Google'a iletilir.</li>
+        <li><strong>Cloudflare:</strong> Web sitesi sunucu hizmetleri ve güvenlik. Teknik çerez bırakabilir.</li>
+      </ul>
+
+      <h2>Çerezleri Nasıl Yönetebilirsiniz?</h2>
+      <p>
+        Tarayıcınızın ayarlarından çerezleri silebilir, engelleyebilir veya yeni çerez bırakıldığında uyarı alabilirsiniz.
+        Detaylı bilgi için tarayıcınızın yardım dokümanlarına bakın.
+      </p>
+      <ul>
+        <li><a href="https://support.google.com/chrome/answer/95647" rel="noopener" target="_blank">Chrome</a></li>
+        <li><a href="https://support.mozilla.org/tr/kb/cerezler" rel="noopener" target="_blank">Firefox</a></li>
+        <li><a href="https://support.apple.com/tr-tr/guide/safari/sfri11471/mac" rel="noopener" target="_blank">Safari</a></li>
+        <li><a href="https://support.microsoft.com/tr-tr/microsoft-edge" rel="noopener" target="_blank">Edge</a></li>
+      </ul>
+
+      <h2>İletişim</h2>
+      <p>
+        Çerez kullanımı ile ilgili sorularınız için <a href="mailto:info@zamana.com.tr">info@zamana.com.tr</a> adresine yazabilirsiniz.
+        Detaylı kişisel veri politikamız için <a href="/gizlilik">Gizlilik / KVKK Aydınlatma Metni</a> sayfamıza bakabilirsiniz.
+      </p>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .legal-doc h2 {
+    font-size: 1.25rem;
+    margin-top: var(--s-5);
+    margin-bottom: var(--s-2);
+    color: var(--c-navy);
+  }
+  .legal-doc h2:first-of-type { margin-top: 0; }
+  .legal-doc h3 {
+    margin-top: var(--s-3);
+    margin-bottom: var(--s-2);
+  }
+  .legal-doc ul {
+    list-style: disc;
+    padding-left: var(--s-4);
+    margin: 0 0 var(--s-3);
+  }
+  .legal-doc ul li { margin-bottom: 0.4rem; line-height: 1.6; }
+  .legal-doc a { color: var(--c-gold-dark); text-decoration: underline; }
+  .legal-doc strong { color: var(--c-navy); }
+</style>

@@ -1,0 +1,131 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="col-brand">
+      <a href="/" class="brand" aria-label="Zamana ana sayfa">
+        <img src="/images/zamana-logo-horizontal.webp" alt="Zamana" width="248" height="82" />
+      </a>
+      <p class="footer-tag">
+        Türkiye'nin kurumsal Claude eğitim platformu.<br>
+        Kurumsal eğitim ve danışmanlık.
+      </p>
+    </div>
+
+    <div class="col">
+      <h4>Programlar</h4>
+      <ul>
+        <li><a href="/programlar/bireysel">Bireysel Program</a></li>
+        <li><a href="/programlar/kurumsal">Kurumsal Program</a></li>
+        <li><a href="/programlar/karsilastirma">Karşılaştırma</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h4>Kaynaklar</h4>
+      <ul>
+        <li><a href="/wiki/">Wiki</a></li>
+        <li><a href="/hakkinda">Hakkında</a></li>
+        <li><a href="/iletisim">İletişim</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h4>İletişim</h4>
+      <ul class="contact-list">
+        <li><a href="mailto:info@zamana.com.tr">info@zamana.com.tr</a></li>
+        <li><a href="tel:+905304904740">+90 530 490 4740</a></li>
+        <li class="addr">Yavuz Sultan Selim Bulvarı,<br>Perlavista Residence B Blok D:2,<br>Beylikdüzü / İstanbul</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© {year} Zamana. Tüm hakları saklıdır.</span>
+    <nav aria-label="Yasal">
+      <a href="/gizlilik">Gizlilik / KVKK</a>
+      <a href="/cerezler">Çerez Politikası</a>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: linear-gradient(160deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
+    color: var(--c-text-light);
+    padding: var(--s-7) 0 var(--s-4);
+    margin-top: var(--s-8);
+  }
+  .site-footer__grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+    gap: var(--s-5);
+    padding-bottom: var(--s-6);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: var(--s-3);
+  }
+  .brand img {
+    background: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    height: 82px;
+    width: auto;
+    object-fit: contain;
+  }
+  .footer-tag {
+    color: var(--c-text-light-muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+  .col h4 {
+    color: var(--c-gold-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: var(--s-3);
+  }
+  .col ul { display: flex; flex-direction: column; gap: 0.55rem; }
+  .col a {
+    color: var(--c-text-light-muted);
+    transition: color var(--t-fast);
+    font-size: 0.95rem;
+  }
+  .col a:hover { color: var(--c-gold-light); }
+  .contact-list .addr {
+    color: var(--c-text-light-muted);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-top: var(--s-2);
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--s-4);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    flex-wrap: wrap;
+    gap: var(--s-3);
+  }
+  .footer-bottom nav { display: flex; gap: var(--s-4); }
+  .footer-bottom a {
+    color: rgba(255,255,255,0.6);
+    transition: color var(--t-fast);
+  }
+  .footer-bottom a:hover { color: var(--c-gold-light); }
+
+  @media (max-width: 760px) {
+    .site-footer__grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .site-footer__grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+  }
+</style>

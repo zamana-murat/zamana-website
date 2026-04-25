@@ -1,0 +1,129 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProgramCard from '../../components/ProgramCard.astro';
+---
+
+<Layout
+  title="Programlar — Bireysel ve Kurumsal Claude Eğitimi | Zamana"
+  description="Zamana iki program sunar: bireysel profesyoneller için 3 haftalık program ve şirketler için 3 aylık kurumsal retainer. İkisini karşılaştırın, size uygun olanı seçin."
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Programlar</span>
+      <h1>İki yol. Aynı sonuç.</h1>
+      <p class="lead">
+        Bir kişi misiniz, bir şirket mi? Aynı pedagojik temele sahip iki farklı program — sizin durumunuza göre.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="max-width: 880px; margin: 0 auto;">
+        <ProgramCard
+          title="Bireysel Program"
+          badge="3 Hafta"
+          price="$1.000"
+          duration="3 hafta eğitim + 3 ay destek"
+          audience="CEO, freelancer, bağımsız profesyonel, kendi başına öğrenmek isteyen çalışan."
+          features={[
+            "3 hafta × 2 saat birebir eğitim",
+            "Sıfırdan kurulum, kendi işinizle çalışma",
+            "Kişisel prompt kütüphanesi (5-7 prompt)",
+            "3 ay sınırsız telefon desteği",
+            "Toplam 6 saat eğitim + 3 ay destek",
+            "Gerek görülürse ücretsiz ek ders saati",
+          ]}
+          ctaHref="/programlar/bireysel"
+          ctaText="Detayları Gör"
+        />
+        <ProgramCard
+          title="Kurumsal Program"
+          badge="Aylık"
+          price="$3.000"
+          priceSuffix="+ KDV / Ay"
+          duration=""
+          priceSubtext="Minimum 3 aylık eğitim"
+          audience="6+ çalışanı olan şirketler, AI dönüşümünü ekibe yaymak isteyen yöneticiler."
+          features={[
+            "Çalışan başı 6 saat eğitim",
+            "Her çalışan için 2 hafta × 3 saat",
+            "Departman bazlı müfredat (12 rol)",
+            "Şirket içi 6 Claude şampiyonu",
+            "Tüm ekip için sınırsız telefon desteği",
+            "Gerek görülürse ücretsiz ek ders saati",
+          ]}
+          ctaHref="/programlar/kurumsal"
+          ctaText="Detayları Gör"
+          highlighted={true}
+        />
+      </div>
+
+      <div class="text-center" style="margin-top: var(--s-6);">
+        <a href="/programlar/karsilastirma" class="btn btn--secondary">Karşılaştırma Tablosuna Git</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <span class="eyebrow">Ortak Özellikler</span>
+      <h2 class="section-title">Her iki programda da bunlar var</h2>
+      <ul class="shared-list">
+        <li>
+          <strong>30 dakika telefon kuralı</strong>
+          <span>Tıkandığınızda yarım saat içinde dönüş garantisi.</span>
+        </li>
+        <li>
+          <strong>3 ay sınırsız destek</strong>
+          <span>Eğitim sonrasında bırakmıyoruz — gerçek iş öğrenmesi destekle olur.</span>
+        </li>
+        <li>
+          <strong>"The struggle is the learning" pedagojisi</strong>
+          <span>Hazır cevap yok. Birlikte deneme, hata, düzeltme.</span>
+        </li>
+        <li>
+          <strong>Türkçe içerik, Türk iş kültürü</strong>
+          <span>Yerli müşteri profili, KVKK uyumu, Türkçe çıktı odaklı.</span>
+        </li>
+        <li>
+          <strong>Claude Max 5x ilk ay zorunlu</strong>
+          <span>İlk ay $100 plan ile gerçek kullanım deneyimi. Ay 2'den sonra Pro'ya inilebilir.</span>
+        </li>
+        <li>
+          <strong>CLAUDE.md bazlı çalışma</strong>
+          <span>Standart konfigürasyon değil — sizin işinize özel sistem.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .shared-list {
+    display: grid;
+    gap: var(--s-3);
+    margin-top: var(--s-4);
+  }
+  .shared-list li {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--s-3);
+    padding: var(--s-3);
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+  }
+  .shared-list strong {
+    color: var(--c-navy);
+    font-weight: 700;
+  }
+  .shared-list span {
+    color: var(--c-text-muted);
+    font-size: 0.95rem;
+  }
+  @media (max-width: 600px) {
+    .shared-list li { grid-template-columns: 1fr; gap: 0.4rem; }
+  }
+</style>
