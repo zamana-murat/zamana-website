@@ -1,19 +1,78 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Murat Özsaygılı',
+  givenName: 'Murat',
+  familyName: 'Özsaygılı',
+  image: 'https://zamana.com.tr/images/murat-portre.webp',
+  url: 'https://zamana.com.tr/hakkinda',
+  jobTitle: 'Kurucu & Baş Danışman',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Zamana',
+    url: 'https://zamana.com.tr',
+  },
+  birthDate: '1983-01-12',
+  birthPlace: {
+    '@type': 'Place',
+    name: 'İstanbul, Türkiye',
+  },
+  nationality: 'Türk',
+  alumniOf: [
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'Işık Üniversitesi',
+      department: 'Bilgisayar Mühendisliği',
+    },
+    {
+      '@type': 'EducationalOrganization',
+      name: 'Cihangir Anadolu Bilgisayar Meslek Lisesi',
+    },
+  ],
+  knowsAbout: [
+    'Anthropic Claude',
+    'Yapay Zeka Eğitimi',
+    'CLAUDE.md',
+    'Model Context Protocol',
+    'Kurumsal AI Dönüşümü',
+    'Sunucu Mimarisi',
+    'Overclocking',
+    'Uluslararası Ticaret',
+    'İş Stratejisi',
+  ],
+  hasCredential: [
+    { '@type': 'EducationalOccupationalCredential', name: 'VMware VTSP' },
+    { '@type': 'EducationalOccupationalCredential', name: 'VMware VCP' },
+    { '@type': 'EducationalOccupationalCredential', name: 'Anthropic Partner Programı' },
+  ],
+  sameAs: [
+    'https://www.linkedin.com/in/murat-%C3%B6zsayg%C4%B1l%C4%B1-59790865/',
+    'https://x.com/ZamanaClaude',
+    'https://hwbot.org/user/absolutezero/',
+  ],
+  email: 'mailto:murat@zamana.com.tr',
+  telephone: '+90 530 490 4740',
+  award: '116 Dünya Rekoru — HWBOT Overclocking (2007)',
+};
 ---
 
 <Layout
-  title="Hakkında — Murat Özsaygılı ve Zamana | Zamana"
-  description="Zamana, Murat Özsaygılı tarafından kurulan, Türkiye'nin kurumsal Claude eğitim platformudur. Misyonumuz: şirketlere en değerli kaynağı geri vermek — zamanı."
+  title="Hakkında — Murat Özsaygılı ve Zamana"
+  description="Murat Özsaygılı: 25 yılı aşkın deneyim, 116 dünya overclock rekoru, Intel Türkiye danışmanlığı, 250'den fazla iş modeli analizi. Zamana ile şirketlere yapay zekayı iş süreçlerine entegre etme rehberliği."
 >
+
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
   <section class="page-hero">
     <div class="container">
       <span class="eyebrow">Hakkında</span>
-      <h1>Zamana — şirketlere zamanı geri veren danışmanlık.</h1>
+      <h1>Zamana, şirketlere zamanı geri veren danışmanlık.</h1>
       <p class="lead">
         Zamana, Murat Özsaygılı tarafından kurulan ve Türkiye'nin kurumsal Claude eğitim ihtiyacına odaklanan
-        bir eğitim & danışmanlık girişimidir.
+        bir eğitim ve danışmanlık girişimidir.
       </p>
     </div>
   </section>
@@ -27,8 +86,8 @@ import Layout from '../layouts/Layout.astro';
         Zamana'nın hedefi bu boşluğu kapatmak.
       </p>
       <p>
-        Bir kurs satmıyoruz. Bir <strong>çalışma alışkanlığı</strong> kuruyoruz — 12 hafta içinde, gerçek işiniz üzerinden,
-        kendi tempnonuzda. Öğretirken yardımcı oluyoruz; bittiğinde bağımsızsınız.
+        Bir kurs satmıyoruz. Bir <strong>çalışma alışkanlığı</strong> kuruyoruz. 12 hafta içinde, gerçek işiniz üzerinden,
+        kendi temponuzda. Öğretirken yardımcı oluyoruz; bittiğinde bağımsızsınız.
       </p>
     </div>
   </section>
@@ -37,21 +96,175 @@ import Layout from '../layouts/Layout.astro';
     <div class="container container-narrow">
       <span class="eyebrow">Kurucu</span>
       <h2 class="section-title">Murat Özsaygılı</h2>
+
       <div class="founder">
-        <div class="founder__photo" aria-hidden="true">
-          <span>MÖ</span>
+        <div class="founder__photo">
+          <img
+            src="/images/murat-portre.webp"
+            alt="Murat Özsaygılı, Zamana kurucusu"
+            width="280"
+            height="280"
+            loading="eager"
+          />
         </div>
         <div class="founder__bio">
-          <p class="placeholder-note">
-            Bu bölümde Murat'ın kısa biyografisi yer alacak — eğitim geçmişi, profesyonel deneyim,
-            Claude ve yapay zeka ile yolculuğu, Zamana'yı neden kurduğu.
+          <p>
+            Bilgisayar mühendisliği okudum ama asıl eğitimim sahadaydı. 2001'de bir aile şirketinin tüm dijital
+            dönüşümünü tek başıma yönettim, kartoteksten sunucu altyapısına, e-postadan özel otomasyon yazılımına kadar.
+            Sonraki yedi yıl boyunca Intel Türkiye'ye teknik danışmanlık verdim, TBMM ve devlet hastanelerinden
+            veri merkezlerine sunucu mimarileri kurdum, işlemcileri sıvı azotla −120°C'ye soğutarak 116 dünya rekoru
+            kırdım. Her seferinde aynı şeyi fark ettim: teknolojiyi gerçekten anlayan ve onu iş sonucuna bağlayabilen
+            insan sayısı inanılmaz derecede az.
           </p>
-          <p class="placeholder-note">
-            <em>Placeholder: Murat'ın hazırlayacağı resmi biyografi metnini buraya yerleştireceğiz.</em>
+          <p>
+            Yıllar içinde dış ticaret, gıda ve danışmanlık dahil farklı sektörlerde 250'den fazla iş modelini
+            analiz ettim, onlarca firmaya strateji ve operasyon danışmanlığı verdim. Claude'u ilk ciddi şekilde
+            kullandığımda kafama bir soru takıldı ve bir daha çıkmadı: <em>"Bu aracın gücünü on yıl önce
+            bilseydim, işlerimi nasıl yapardım?"</em> Çünkü yıllar boyu kurduğum süreçleri sıfırdan
+            tasarlayabilecek bir araç çıkmıştı karşıma ve Türkiye'de neredeyse hiç kimse onu o gözle görmüyordu.
           </p>
-          <ul class="founder__contact">
-            <li><strong>E-posta:</strong> <a href="mailto:murat@zamana.com.tr">murat@zamana.com.tr</a></li>
-            <li><strong>Telefon:</strong> <a href="tel:+905304904740">+90 530 490 4740</a></li>
+          <p>
+            Zamana'yı kurma nedenim tam olarak bu boşluk. Türkiye'deki şirketlerin büyük çoğunluğu yapay zekanın
+            var olduğunu biliyor ama nasıl ciddi şekilde kullanılacağını bilmiyor. Bu uçurumu kapatmak için ne
+            kodlama bilgisi ne de IT departmanı gerekiyor, sadece doğru rehberlik ve gerçek iş bağlamında pratik.
+            Bu boşluğu kapatabilecek nadir konumda olduğumu görüyorum çünkü hem teknolojiyi içeriden tanıyorum,
+            hem de onlarca farklı sektörde işin nasıl döndüğünü bizzat yaşadım.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <h2 class="section-title">Kariyer ve Deneyim</h2>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">2026 →</div>
+          <div class="tl-body">
+            <h3>Zamana Danışmanlık <span class="tl-role">Kurucu &amp; Baş Danışman</span></h3>
+            <p>Türkiye'nin kurumsal Claude eğitim ve danışmanlık şirketi. Bireysel ve kurumsal programlar, 12 farklı
+            departmana özel iş akışı eğitimi.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2017 →</div>
+          <div class="tl-body">
+            <h3>Dış Ticaret <span class="tl-role">Tüccar &amp; Danışman</span></h3>
+            <p>Doğu Afrika'ya bebek bezi, kozmetik ve alüminyum profil ihracatı. Ardından Brezilya emtia ticareti:
+            üre, petrokimyasallar, kükürt, şeker, ayçiçek yağı, susam.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2020 →</div>
+          <div class="tl-body">
+            <h3>Saytad Organik Gıda <span class="tl-role">Ortak &amp; Genel Müdür</span></h3>
+            <p>Organik gıda üretim ve ticareti.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2009–2011</div>
+          <div class="tl-body">
+            <h3>10G Teknoloji <span class="tl-role">Kurucu Ortak</span></h3>
+            <p>Intel Server Systems mimarisi üzerine sunucu çözümleri. TBMM, devlet hastaneleri, hosting şirketleri,
+            veri merkezleri, teknopark firmaları için uçtan uca proje yönetimi. VMware sanallaştırma ve bulut çözümleri.</p>
+          </div>
+        </div>
+
+        <div class="tl-item highlight">
+          <div class="tl-year">2006–2013</div>
+          <div class="tl-body">
+            <h3>Intel Türkiye <span class="tl-role">Pazarlama &amp; İşlemci Mimarisi Teknik Danışmanı</span></h3>
+            <p>CeBIT 2006'da Intel standında 60.000 ziyaretçi önünde canlı overclock gösterisi. Kanal müşterilerine
+            ihale danışmanlığı. Yeni işlemci mimarilerinin benchmark testlerini dünyada ilk yayınlayan isim.</p>
+          </div>
+        </div>
+
+        <div class="tl-item highlight">
+          <div class="tl-year">2007</div>
+          <div class="tl-body">
+            <h3>116 Dünya Overclock Rekoru <span class="tl-role">HWBOT (AbsoluteZero)</span></h3>
+            <p>İşlemcileri sıvı azotla −120°C ve altına soğutarak 116 farklı kategoride eş zamanlı dünya rekoru.
+            Döneminde dünyanın en iyi overclock uzmanları arasında gösterildim. Intel Pentium Extreme Edition 965
+            ile <strong>7.209,21 MHz</strong>, Intel Core 2 Extreme QX9770 ile <strong>6.125,45 MHz</strong> rekorları
+            güncel listelerde.</p>
+            <p class="tl-links">
+              <a href="https://hwbot.org/user/absolutezero/" target="_blank" rel="noopener noreferrer">HWBOT Profili →</a>
+              <a href="https://www.hurriyet.com.tr/gundem/intel-60-bin-kisiye-teknoloji-sovu-yapti-5076224" target="_blank" rel="noopener noreferrer">Hürriyet: CeBIT 2006 Intel Şovu →</a>
+              <a href="https://shiftdelete.net/video-2-saniyede-acilan-windows-1274" target="_blank" rel="noopener noreferrer">ShiftDelete: 2 Saniyede Açılan Windows →</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2008</div>
+          <div class="tl-body">
+            <h3>Türk Silahlı Kuvvetleri <span class="tl-role">Teknik Danışman</span></h3>
+            <p>Elektronik donanım soğutma çözümleri konusunda teknik danışmanlık.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2005–2008</div>
+          <div class="tl-body">
+            <h3>İyi Fikirler Atölyesi <span class="tl-role">Kurucu</span></h3>
+            <p>Teknoloji ve girişimcilik odaklı bağımsız topluluk. İlk yılda 540 üye. Gayrettepe'de 120 m² ofis,
+            hafta sonu etkinlikler, Turkcell mühendisleriyle baz istasyonu sıvı soğutma çözümleri ARGE'si.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2004–2008</div>
+          <div class="tl-body">
+            <h3>PC Magazine Türkiye <span class="tl-role">Yazar</span></h3>
+            <p>Teknoloji, donanım ve bilgisayar mimarisi makaleleri.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2001–2013</div>
+          <div class="tl-body">
+            <h3>Gaziantepli Şirketler Grubu <span class="tl-role">BT Danışmanı</span></h3>
+            <p>Aile şirketler grubunun kartoteks tabanlı süreçlerini sıfırdan dijital altyapıya taşıdım. VB.NET
+            ile özel otomasyon yazılımı, ağ ve sunucu mimarisi, yıllık raporlama sistemi, çalışan eğitimleri.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">1999</div>
+          <div class="tl-body">
+            <h3>Türkiye'de İlk Saf Azot Lastik Basımı <span class="tl-role">Öncü Uygulama</span></h3>
+            <p>Aile şirketi Gaziantepli Lastik ve Servis'te Türkiye'nin ilk saf azot lastik basım uygulamasını
+            hayata geçirdim. Beş yıl içinde sektörde standart oldu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <h2 class="section-title">Eğitim ve Sertifikalar</h2>
+      <div class="creds">
+        <div class="cred">
+          <h3>Eğitim</h3>
+          <ul>
+            <li><strong>Işık Üniversitesi</strong>, Bilgisayar Mühendisliği (2000–2005)</li>
+            <li><strong>Cihangir Anadolu Bilgisayar Meslek Lisesi</strong> (Mezuniyet: 2000)</li>
+          </ul>
+        </div>
+        <div class="cred">
+          <h3>Sertifikalar</h3>
+          <ul>
+            <li>VMware VTSP (Technical Solutions Professional)</li>
+            <li>VMware VCP (Certified Professional)</li>
+            <li>Anthropic Partner Programı (2026, devam ediyor)</li>
+            <li>Anthropic / Claude eğitim sertifikaları: Claude 101, Cowork, Skills, Subagents, MCP, Agent Skills,
+            AI Fluency Framework, Claude Code 101, Claude Code in Action</li>
           </ul>
         </div>
       </div>
@@ -64,19 +277,23 @@ import Layout from '../layouts/Layout.astro';
       <div class="philosophy">
         <div class="phil">
           <h3>Zorluk, öğrenmenin kendisidir</h3>
-          <p>Hazır cevap vermeyiz. Sizinle birlikte deneriz, hata yaparsınız, düzeltiriz. Zorluğu yaşamadan kalıcı öğrenme olmuyor.</p>
+          <p>Hazır cevap vermeyiz. Sizinle birlikte deneriz, hata yaparsınız, düzeltiriz. Zorluğu yaşamadan
+          kalıcı öğrenme olmuyor.</p>
         </div>
         <div class="phil">
           <h3>CLAUDE.md ilk gelir</h3>
-          <p>Standart kurulum yok. Her çalışan için sıfırdan, kendi rolüne göre yapılandırılmış bir Claude. Genel amaçlı asistan değil, sizin asistanınız.</p>
+          <p>Standart kurulum yok. Her çalışan için sıfırdan, kendi rolüne göre yapılandırılmış bir Claude.
+          Genel amaçlı asistan değil, sizin asistanınız.</p>
         </div>
         <div class="phil">
           <h3>Egzersiz değil, gerçek iş</h3>
-          <p>İlk oturumdan itibaren masanızdaki bekleyen görevle çalışırız. Yapay senaryo yok. Eğitim sonunda elinizde gerçek bir çıktı oluyor.</p>
+          <p>İlk oturumdan itibaren masanızdaki bekleyen görevle çalışırız. Yapay senaryo yok. Eğitim sonunda
+          elinizde gerçek bir çıktı oluyor.</p>
         </div>
         <div class="phil">
           <h3>30 dakika telefon kuralı</h3>
-          <p>3 ay boyunca destek hattımız açık. Tıkandığınızda yarım saat içinde dönüyoruz. Çünkü öğrenme oturumda değil, gerçek anda yaşanır.</p>
+          <p>3 ay boyunca destek hattımız açık. Tıkandığınızda yarım saat içinde dönüyoruz. Çünkü öğrenme
+          oturumda değil, gerçek anda yaşanır.</p>
         </div>
       </div>
     </div>
@@ -88,9 +305,22 @@ import Layout from '../layouts/Layout.astro';
       <p>
         İsim, tek bir vaadi taşıyor: <strong>şirketlerin en değerli kaynağı zaman.</strong>
         Para gider gelir, müşteri gider gelir. Zaman gider, gelmez. Yapay zeka iyi öğretildiğinde
-        haftalık 5-10 saatlik yaratıcı işi 1-2 saatte çıkarır — geri kalan zaman insana kalır.
+        haftalık 5-10 saatlik yaratıcı işi 1-2 saatte çıkarır, geri kalan zaman insana kalır.
         Zamana bu zamanı geri vermek için var.
       </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <h2 class="section-title">İletişim ve Sosyal</h2>
+      <ul class="contact-grid">
+        <li><strong>E-posta</strong> <a href="mailto:murat@zamana.com.tr">murat@zamana.com.tr</a></li>
+        <li><strong>Telefon</strong> <a href="tel:+905304904740">+90 530 490 4740</a></li>
+        <li><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/murat-%C3%B6zsayg%C4%B1l%C4%B1-59790865/" rel="me" target="_blank">linkedin.com/in/murat-özsaygılı</a></li>
+        <li><strong>X (Zamana)</strong> <a href="https://x.com/ZamanaClaude" rel="me" target="_blank">@ZamanaClaude</a></li>
+        <li><strong>HWBOT</strong> <a href="https://hwbot.org/user/absolutezero/" target="_blank" rel="noopener noreferrer">AbsoluteZero (overclock rekorları)</a></li>
+      </ul>
     </div>
   </section>
 
@@ -109,46 +339,115 @@ import Layout from '../layouts/Layout.astro';
 <style>
   .founder {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 280px 1fr;
     gap: var(--s-5);
     margin-top: var(--s-4);
     align-items: start;
   }
-  .founder__photo {
-    width: 200px;
-    height: 200px;
+  .founder__photo img {
+    width: 280px;
+    height: 280px;
     border-radius: var(--r-lg);
-    background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--c-gold-light);
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    border: 2px solid var(--c-gold);
+    object-fit: cover;
+    border: 3px solid var(--c-gold);
     box-shadow: var(--sh-mid);
+    display: block;
   }
-  .placeholder-note {
-    background: rgba(201, 168, 76, 0.08);
-    border-left: 3px solid var(--c-gold);
-    padding: var(--s-3);
-    border-radius: 0 var(--r-card) var(--r-card) 0;
+  .founder__bio p {
+    margin-bottom: var(--s-3);
+    line-height: 1.7;
+  }
+  .founder__bio em {
+    color: var(--c-gold-dark);
+    font-style: italic;
+  }
+  @media (max-width: 700px) {
+    .founder { grid-template-columns: 1fr; }
+    .founder__photo img { margin: 0 auto; width: 220px; height: 220px; }
+  }
+
+  .timeline {
+    margin-top: var(--s-4);
+    border-left: 2px solid var(--c-border);
+    padding-left: var(--s-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-5);
+  }
+  .tl-item {
+    position: relative;
+  }
+  .tl-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--s-4) - 7px);
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--c-gold);
+    border: 2px solid var(--c-white);
+  }
+  .tl-item.highlight::before {
+    background: var(--c-navy);
+    width: 16px;
+    height: 16px;
+    left: calc(-1 * var(--s-4) - 9px);
+    top: 6px;
+  }
+  .tl-year {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--c-gold-dark);
+    margin-bottom: 0.3rem;
+  }
+  .tl-body h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+  }
+  .tl-role {
+    font-weight: 400;
+    color: var(--c-text-muted);
+    font-size: 0.92rem;
+  }
+  .tl-body p {
     color: var(--c-text-muted);
     font-size: 0.95rem;
+    line-height: 1.65;
   }
-  .founder__contact {
-    margin-top: var(--s-3);
+  .tl-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-3);
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+  }
+  .tl-links a {
+    color: var(--c-gold-dark);
+  }
+  .tl-links a:hover { text-decoration: underline; }
+
+  .creds {
     display: grid;
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--s-4);
+    margin-top: var(--s-4);
   }
-  .founder__contact strong { color: var(--c-navy); }
-  .founder__contact a { color: var(--c-gold-dark); }
-  .founder__contact a:hover { text-decoration: underline; }
-  @media (max-width: 600px) {
-    .founder { grid-template-columns: 1fr; }
-    .founder__photo { margin: 0 auto; width: 160px; height: 160px; font-size: 3rem; }
+  .cred h3 {
+    color: var(--c-navy);
+    margin-bottom: var(--s-2);
+    font-size: 1.05rem;
   }
+  .cred ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    color: var(--c-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .cred li { margin-bottom: 0.4rem; }
+  .cred strong { color: var(--c-text); }
 
   .philosophy {
     display: grid;
@@ -162,14 +461,32 @@ import Layout from '../layouts/Layout.astro';
     border-radius: var(--r-card);
     background: var(--c-white);
   }
-  .phil h3 {
-    color: var(--c-gold-dark);
-    margin-bottom: var(--s-2);
+  .phil h3 { color: var(--c-gold-dark); margin-bottom: var(--s-2); }
+  .phil p { color: var(--c-text-muted); font-size: 0.95rem; }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--s-3);
+    margin-top: var(--s-4);
   }
-  .phil p {
-    color: var(--c-text-muted);
-    font-size: 0.95rem;
+  .contact-grid li {
+    padding: var(--s-3);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    background: var(--c-white);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
   }
+  .contact-grid strong {
+    color: var(--c-navy);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .contact-grid a { color: var(--c-gold-dark); word-break: break-word; }
+  .contact-grid a:hover { text-decoration: underline; }
 
   .final-cta {
     background: var(--c-bg-subtle);
