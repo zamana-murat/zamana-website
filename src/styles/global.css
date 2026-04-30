@@ -153,6 +153,9 @@ p:last-child { margin-bottom: 0; }
 }
 .section--dark h1, .section--dark h2, .section--dark h3 { color: var(--c-white); }
 .section--dark .eyebrow { color: var(--c-gold-light); }
+.section--dark p,
+.section--dark .lead { color: var(--c-text-light-muted); }
+.section--dark a:not(.btn) { color: var(--c-gold-light); }
 
 /* ── Buttons ─────────────────────────────────────────── */
 .btn {
@@ -242,6 +245,70 @@ p:last-child { margin-bottom: 0; }
   outline: none;
   border-color: var(--c-gold);
   box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+}
+
+/* ── Mini-FAQ accordion (anasayfa + program sayfaları) ─ */
+.mini-faq,
+.mini-faq__list {
+  list-style: none;
+  display: grid;
+  gap: var(--s-2);
+  margin-top: var(--s-4);
+}
+.mini-faq > li,
+.mini-faq__list > li {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  transition: border-color var(--t);
+}
+.mini-faq > li:hover,
+.mini-faq__list > li:hover { border-color: var(--c-border-gold); }
+.mini-faq details[open],
+.mini-faq__list details[open] { box-shadow: var(--sh-mid); }
+
+.mini-faq summary,
+.mini-faq__list summary {
+  display: grid;
+  grid-template-columns: 1fr 32px;
+  gap: var(--s-3);
+  align-items: center;
+  padding: var(--s-3) var(--s-4);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background var(--t-fast);
+}
+.mini-faq summary::-webkit-details-marker,
+.mini-faq__list summary::-webkit-details-marker { display: none; }
+.mini-faq summary:hover,
+.mini-faq__list summary:hover { background: var(--c-bg-subtle); }
+
+.mfq-q {
+  font-weight: 600;
+  color: var(--c-navy);
+  line-height: 1.45;
+}
+.mfq-toggle {
+  font-size: 1.5rem;
+  color: var(--c-gold-dark);
+  text-align: center;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform var(--t-fast);
+}
+.mini-faq details[open] .mfq-toggle,
+.mini-faq__list details[open] .mfq-toggle {
+  transform: rotate(45deg);
+}
+.mini-faq details > p,
+.mini-faq__list details > p {
+  padding: 0 var(--s-4) var(--s-4);
+  color: var(--c-text-muted);
+  line-height: 1.7;
+  font-size: 0.97rem;
+  margin: 0;
 }
 
 /* ── Focus-visible (klavye kullanıcıları için) ───────── */

@@ -351,12 +351,75 @@ const websiteSchema = {
     </div>
   </section>
 
+  <section class="section mini-faq">
+    <div class="container container-narrow">
+      <div class="text-center" style="margin-bottom: var(--s-5);">
+        <span class="eyebrow">Sıkça Sorulan Sorular</span>
+        <h2 class="section-title center">Karar vermeden önce</h2>
+        <p class="lead center">
+          En sık karşılaştığımız 4 soru. Daha fazlası için <a href="/sss" class="link-inline">SSS sayfasına</a> bakın.
+        </p>
+      </div>
+
+      <ol class="mini-faq__list">
+        <li>
+          <details>
+            <summary>
+              <span class="mfq-q">Bu eğitim için ne kadar Claude bilgisi gerekir?</span>
+              <span class="mfq-toggle" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Sıfır. Hedef kitle Claude'u hiç kullanmamış veya birkaç kez denemiş iş profesyonelleri. CEO, satış, hukuk, finans, İK, operasyon gibi rollerde çalışan, kod yazmayan kişiler. Yazılım veya yapay zeka geçmişi gerekmez.
+            </p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              <span class="mfq-q">Fiyat neden bu seviyede? Daha ucuza alabilir miyim?</span>
+              <span class="mfq-toggle" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Zamana online video kurs satmıyor. Birebir, kendi gerçek işiniz üzerinden, üç ay açık telefon hattı olan bir danışman ilişkisi. "Daha ucuz" alternatifler kayıttan dinlenen video kurslar veya generic eğitimler. Aynı iş değil.
+            </p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              <span class="mfq-q">Süre neden 3 hafta veya 3 ay? Daha hızlı olamaz mı?</span>
+              <span class="mfq-toggle" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Çünkü öğrenme oturumda değil, oturumlar arasındaki gerçek işte yaşanır. Haftada bir oturum, aralarda öğrendiklerinizi denersiniz, sıradaki oturumda hatalar ve sorular çıkar, oradan ilerleriz. Sıkıştırılırsa kalıcı öğrenme olmuyor.
+            </p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              <span class="mfq-q">Üç ay sonra ne olur? Sürekli bağımlı mı kalıyoruz?</span>
+              <span class="mfq-toggle" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Tam tersi, hedefimiz bağımsızlığınız. Üç ay sonunda yeni iş akışı kurabilen, prompt yazabilen, ekibinize öğretebilen bir Claude kullanıcısı oluyorsunuz. İhtiyaç duymuyorsanız Zamana doğru iş yapmıştır.
+            </p>
+          </details>
+        </li>
+      </ol>
+
+      <p class="text-center" style="margin-top: var(--s-4);">
+        <a href="/sss" class="link-arrow">9 soru daha SSS sayfasında <span aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </section>
+
   <section class="section section--dark wiki-cta">
     <div class="container">
       <div class="wiki-cta__grid">
-        <div>
+        <div class="wiki-cta__text">
           <span class="eyebrow">Ücretsiz Kaynak</span>
-          <h2>Zamana Wiki, Türkçe Claude bilgi tabanı</h2>
+          <h2>Zamana Wiki: Türkçe Claude Bilgi Tabanı</h2>
           <p class="lead">
             Programa başlamadan önce ne öğreneceğinizi merak ediyorsanız wiki'mizi inceleyin.
             Ücretsiz, Türkçe. Claude ile çalışmanın temellerinden 12 departman bazlı kullanım örneklerine kadar geniş bir bilgi tabanı.
@@ -364,12 +427,12 @@ const websiteSchema = {
           <a href="/wiki/" class="btn btn--primary">Wiki'ye Git</a>
         </div>
         <ul class="wiki-cta__list">
-          <li>Claude nedir, nasıl çalışır</li>
-          <li>İlk 7 gün rehberi</li>
-          <li>CLAUDE.md kurulumu</li>
-          <li>Prompt yazma sanatı</li>
-          <li>12 departman için kullanım örnekleri</li>
-          <li>KVKK ve gizlilik</li>
+          <li><a href="/wiki/temeller/claude-nedir/">Claude nedir, nasıl çalışır</a></li>
+          <li><a href="/wiki/temeller/ilk-7-gun/">İlk 7 gün rehberi</a></li>
+          <li><a href="/wiki/claude-md/">CLAUDE.md kurulumu</a></li>
+          <li><a href="/wiki/prompting/">Prompt yazma sanatı</a></li>
+          <li><a href="/wiki/departmanlar/">12 departman için kullanım örnekleri</a></li>
+          <li><a href="/wiki/temeller/gizlilik-kvkk/">KVKK ve gizlilik</a></li>
         </ul>
       </div>
     </div>
@@ -564,6 +627,8 @@ const websiteSchema = {
     gap: var(--s-6);
     align-items: center;
   }
+  .wiki-cta__text h2 { margin-bottom: var(--s-3); }
+  .wiki-cta__text .lead { margin-bottom: var(--s-4); }
   .wiki-cta__list {
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(201, 168, 76, 0.25);
@@ -604,4 +669,26 @@ const websiteSchema = {
     gap: 0.4rem;
   }
   .link-arrow:hover { gap: 0.6rem; }
+
+  .link-inline {
+    color: var(--c-gold-dark);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .link-inline:hover { color: var(--c-navy); }
+
+  .wiki-cta__list a {
+    color: var(--c-text-light-muted);
+    transition: color var(--t-fast), padding-left var(--t-fast);
+  }
+  .wiki-cta__list a:hover {
+    color: var(--c-gold-light);
+    padding-left: 4px;
+  }
+  .wiki-cta__list li:hover::before {
+    color: var(--c-gold);
+  }
+
+  /* mini-faq stilleri global.css'te */
 </style>
