@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const lastUpdated = '25 Nisan 2026';
+const lastUpdated = '30 Nisan 2026';
 ---
 
 <Layout
@@ -30,9 +30,9 @@ const lastUpdated = '25 Nisan 2026';
       <h3>1. Zorunlu Çerezler</h3>
       <p>Sitenin temel çalışması için gereklidir. Devre dışı bırakılamaz.</p>
       <ul>
-        <li>Form gönderim güvenliği (CSRF korumalı)</li>
-        <li>Cloudflare güvenlik çerezleri</li>
+        <li><strong>Cloudflare güvenlik çerezleri:</strong> kötü amaçlı bot trafiğini engellemek için</li>
       </ul>
+      <p>Not: İletişim formumuzda <strong>çerez kullanılmaz</strong>; bot koruması "honeypot" yöntemi ile sağlanır (gizli bir alan, boş kalmalıdır).</p>
 
       <h3>2. Performans Çerezleri</h3>
       <p>Şu anda sitemiz <strong>analitik (Google Analytics vb.) kullanmıyor</strong>. Yalnızca Cloudflare'in
@@ -40,9 +40,13 @@ const lastUpdated = '25 Nisan 2026';
 
       <h2>Üçüncü Taraf Servisler</h2>
       <ul>
-        <li><strong>Google Fonts:</strong> "Plus Jakarta Sans" yazı tipi yüklenirken Google'a istek gönderilir. Çerez bırakmaz, IP adresiniz Google'a iletilir.</li>
-        <li><strong>Cloudflare:</strong> Web sitesi sunucu hizmetleri ve güvenlik. Teknik çerez bırakabilir.</li>
+        <li><strong>Google Fonts:</strong> "Plus Jakarta Sans" yazı tipi Google'ın CDN'inden yüklenir. Çerez bırakmaz, IP adresiniz Google'a iletilir.</li>
+        <li><strong>Cloudflare Pages:</strong> Web sitesi hosting ve güvenlik. Teknik çerez bırakabilir.</li>
+        <li><strong>Resend:</strong> İletişim formu gönderildiğinde sunucu tarafından çağrılır, kullanıcı tarayıcısı ile etkileşmez. Çerez bırakmaz.</li>
       </ul>
+      <p class="text-muted">
+        <strong>Sitemizde reklam ağı, sosyal medya pixel'i (Meta, LinkedIn vb.) veya analitik (Google Analytics, Hotjar vb.) bulunmaz.</strong>
+      </p>
 
       <h2>Çerezleri Nasıl Yönetebilirsiniz?</h2>
       <p>

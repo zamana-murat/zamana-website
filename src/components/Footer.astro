@@ -38,11 +38,13 @@ const year = new Date().getFullYear();
 
     <div class="col">
       <h4>İletişim</h4>
-      <ul class="contact-list">
-        <li><a href="mailto:info@zamana.com.tr">info@zamana.com.tr</a></li>
-        <li><a href="tel:+905304904740">+90 530 490 4740</a></li>
-        <li class="addr">Yavuz Sultan Selim Bulvarı,<br>Perlavista Residence B Blok D:2,<br>Beylikdüzü / İstanbul</li>
-      </ul>
+      <address class="contact-list">
+        <ul>
+          <li><a href="mailto:info@zamana.com.tr" aria-label="E-posta gönder: info@zamana.com.tr">info@zamana.com.tr</a></li>
+          <li><a href="tel:+905304904740" aria-label="Telefonla ara: artı 90 5 30 4 90 47 40">+90 530 490 4740</a></li>
+          <li class="addr">Yavuz Sultan Selim Bulvarı,<br>Perlavista Residence B Blok D:2,<br>Beylikdüzü / İstanbul</li>
+        </ul>
+      </address>
     </div>
   </div>
 
@@ -102,6 +104,7 @@ const year = new Date().getFullYear();
     font-size: 0.95rem;
   }
   .col a:hover { color: var(--c-gold-light); }
+  .contact-list { font-style: normal; }
   .contact-list .addr {
     color: var(--c-text-light-muted);
     font-size: 0.88rem;

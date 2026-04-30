@@ -7,17 +7,117 @@ import Layout from '../layouts/Layout.astro';
   description="Aradığınız sayfa bulunamadı."
   noindex={true}
 >
-  <section class="section" style="text-align: center; min-height: 60vh; display: flex; flex-direction: column; justify-content: center;">
+  <section class="section not-found">
     <div class="container container-narrow">
-      <p class="eyebrow">404</p>
-      <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: var(--s-3);">Sayfa bulunamadı</h1>
-      <p class="lead center" style="margin-bottom: var(--s-5);">
-        Aradığınız sayfa taşınmış, kaldırılmış veya hiç var olmamış olabilir.
-      </p>
-      <div style="display: inline-flex; gap: var(--s-3); flex-wrap: wrap; justify-content: center;">
+      <div class="nf-head">
+        <p class="eyebrow">404</p>
+        <h1>Sayfa bulunamadı</h1>
+        <p class="lead center">
+          Aradığınız sayfa taşınmış, kaldırılmış veya hiç var olmamış olabilir.
+          Belki aşağıdakilerden birine bakmak istersiniz?
+        </p>
+      </div>
+
+      <ul class="nf-links">
+        <li>
+          <a href="/programlar">
+            <strong>Programlar</strong>
+            <span>Bireysel ve kurumsal Claude eğitim programları</span>
+          </a>
+        </li>
+        <li>
+          <a href="/sss">
+            <strong>Sık Sorulan Sorular</strong>
+            <span>Karar vermeden önce sorulan 13 soru</span>
+          </a>
+        </li>
+        <li>
+          <a href="/wiki/">
+            <strong>Wiki</strong>
+            <span>Türkçe Claude bilgi tabanı, ücretsiz</span>
+          </a>
+        </li>
+        <li>
+          <a href="/hakkinda">
+            <strong>Hakkında</strong>
+            <span>Murat Özsaygılı ve Zamana'nın hikayesi</span>
+          </a>
+        </li>
+        <li>
+          <a href="/iletisim">
+            <strong>İletişim</strong>
+            <span>15 dakikalık ücretsiz keşif görüşmesi</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nf-cta">
         <a href="/" class="btn btn--primary">Ana Sayfaya Dön</a>
-        <a href="/programlar" class="btn btn--secondary">Programlara Bak</a>
+        <a href="mailto:info@zamana.com.tr" class="btn btn--secondary">Yardım İste</a>
       </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  .not-found {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--s-6) 0;
+  }
+  .nf-head {
+    text-align: center;
+    margin-bottom: var(--s-6);
+  }
+  .nf-head h1 {
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    margin-bottom: var(--s-3);
+  }
+  .nf-head .eyebrow {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    color: var(--c-gold-dark);
+  }
+
+  .nf-links {
+    list-style: none;
+    display: grid;
+    gap: var(--s-2);
+    margin: 0 auto var(--s-5);
+    max-width: 560px;
+  }
+  .nf-links a {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    padding: var(--s-3) var(--s-4);
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-left: 3px solid var(--c-gold);
+    border-radius: var(--r-card);
+    transition: transform var(--t-fast), border-color var(--t-fast), box-shadow var(--t);
+  }
+  .nf-links a:hover {
+    transform: translateX(2px);
+    border-color: var(--c-border-gold);
+    box-shadow: var(--sh-mid);
+  }
+  .nf-links strong {
+    color: var(--c-navy);
+    font-weight: 700;
+  }
+  .nf-links span {
+    color: var(--c-text-muted);
+    font-size: 0.92rem;
+  }
+
+  .nf-cta {
+    display: flex;
+    gap: var(--s-3);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>
