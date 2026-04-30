@@ -9,7 +9,7 @@ const rows = [
   { label: 'Telefon desteği',        bireysel: '3 ay sınırsız',             kurumsal: 'Sınırsız (tüm ekip, eğitim süresince)' },
   { label: 'Fiyat',                  bireysel: '$1.000 + KDV (tek seferlik)', kurumsal: '$3.000 + KDV / ay (min. 3 ay)' },
   { label: 'Kişi başı maliyet',      bireysel: '$1.000',                    kurumsal: '$1.500' },
-  { label: 'Ek ders',                bireysel: 'Eğitmen onayı ile ücretsiz', kurumsal: 'Eğitmen onayı ile ücretsiz' },
+  { label: 'Ek ders',                bireysel: 'Gerek görülürse ücretsiz',  kurumsal: 'Gerek görülürse ücretsiz' },
   { label: 'Hedef alıcı',            bireysel: 'Bireysel profesyonel (B2C)', kurumsal: 'Şirket (B2B)' },
   { label: 'Müfredat odağı',         bireysel: 'Kişisel iş akışı',          kurumsal: 'Departman bazlı + ekip dinamiği' },
   { label: 'Şirket içi yayılım',     bireysel: 'Yok (kişisel)',             kurumsal: '6 çalışan = kritik kütle' },
@@ -24,14 +24,15 @@ const recRows = [
   { situation: 'Freelance / bağımsız profesyonel',                   rec: 'Bireysel' },
   { situation: '6+ çalışanı olan şirket, AI dönüşümü istiyor',       rec: 'Kurumsal' },
   { situation: 'Küçük işletme (1-3 kişi)',                            rec: 'Her kilit kişi için Bireysel' },
-  { situation: 'Büyük kurumsal şirket',                               rec: 'Kurumsal (+ Enterprise Claude planı)' },
+  { situation: 'Büyük kurumsal şirket (50+ çalışan)',                rec: 'Genişletilmiş Kurumsal (12 çalışan, görüşmede yapı netleşir)' },
   { situation: '"Pazar sabahı evde öğrenmek isterim"',                 rec: 'Bireysel' },
 ];
 ---
 
 <Layout
-  title="Bireysel mi Kurumsal mı? — Program Karşılaştırması | Zamana"
+  title="Bireysel mi Kurumsal mı? Program Karşılaştırması | Zamana"
   description="Zamana'nın bireysel ve kurumsal programlarını yan yana karşılaştırın. Süre, fiyat, kapsam, hedef kitle ve hangi durumda hangisinin uygun olduğu."
+  ogImage="/og/programlar-karsilastirma.png"
 >
 
   <section class="page-hero">
@@ -110,10 +111,13 @@ const recRows = [
     <div class="container text-center">
       <h2>Hâlâ emin değil misiniz?</h2>
       <p class="lead center">
-        15 dakikalık keşif görüşmesinde durumunuzu dinleyip size dürüst öneri veriyoruz —
+        15 dakikalık keşif görüşmesinde durumunuzu dinleyip size dürüst öneri veriyoruz,
         bazen "şu an hiçbiri uygun değil" deriz.
       </p>
-      <a href="/iletisim" class="btn btn--primary btn--lg" style="margin-top: var(--s-3);">Görüşme Talep Et</a>
+      <div style="display: inline-flex; gap: var(--s-3); flex-wrap: wrap; justify-content: center; margin-top: var(--s-3);">
+        <a href="/iletisim" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
+        <a href="/sss" class="btn btn--secondary btn--lg">Sık Sorulan Sorulara Bak</a>
+      </div>
     </div>
   </section>
 

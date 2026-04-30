@@ -1,12 +1,131 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ProgramCard from '../components/ProgramCard.astro';
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Zamana',
+  legalName: 'Zamana Danışmanlık',
+  alternateName: 'Zamana Claude Eğitim',
+  url: 'https://zamana.com.tr',
+  logo: 'https://zamana.com.tr/images/zamana-logo.webp',
+  image: 'https://zamana.com.tr/og/index.png',
+  description: 'Türkiye\'nin kurumsal Claude eğitim ve danışmanlık platformu. Bireysel ve kurumsal programlarla şirketlere yapay zekayı iş süreçlerine entegre etme rehberliği sunar.',
+  foundingDate: '2026-04',
+  founder: {
+    '@type': 'Person',
+    name: 'Murat Özsaygılı',
+    url: 'https://zamana.com.tr/hakkinda',
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Yavuz Sultan Selim Bulvarı, Perlavista Residence B Blok D:2',
+    addressLocality: 'Beylikdüzü',
+    addressRegion: 'İstanbul',
+    addressCountry: 'TR',
+  },
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      telephone: '+90-530-490-4740',
+      email: 'info@zamana.com.tr',
+      areaServed: 'TR',
+      availableLanguage: ['Turkish', 'English'],
+    },
+    {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone: '+90-530-490-4740',
+      email: 'murat@zamana.com.tr',
+      areaServed: 'TR',
+      availableLanguage: ['Turkish'],
+    },
+  ],
+  sameAs: [
+    'https://www.linkedin.com/in/murat-%C3%B6zsayg%C4%B1l%C4%B1-59790865/',
+    'https://x.com/ZamanaClaude',
+  ],
+  knowsAbout: [
+    'Anthropic Claude',
+    'Yapay Zeka Eğitimi',
+    'CLAUDE.md',
+    'Model Context Protocol',
+    'Kurumsal AI Dönüşümü',
+    'Prompt Mühendisliği',
+    'AI İş Akışı Tasarımı',
+  ],
+  areaServed: {
+    '@type': 'Country',
+    name: 'Türkiye',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Zamana Eğitim Programları',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Bireysel Program',
+          description: '3 hafta birebir Claude eğitimi + 3 ay sınırsız telefon desteği. CEO, freelancer ve bağımsız profesyoneller için.',
+          url: 'https://zamana.com.tr/programlar/bireysel',
+        },
+        price: '1000',
+        priceCurrency: 'USD',
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Kurumsal Program',
+          description: '3 aylık şirket içi Claude dönüşümü. 6 çalışan için departman bazlı eğitim, sınırsız telefon desteği, KVKK rehberliği.',
+          url: 'https://zamana.com.tr/programlar/kurumsal',
+        },
+        price: '3000',
+        priceCurrency: 'USD',
+        priceSpecification: {
+          '@type': 'UnitPriceSpecification',
+          price: '3000',
+          priceCurrency: 'USD',
+          unitText: 'MONTH',
+          referenceQuantity: {
+            '@type': 'QuantitativeValue',
+            value: '3',
+            unitCode: 'MON',
+          },
+        },
+      },
+    ],
+  },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Zamana',
+  url: 'https://zamana.com.tr',
+  inLanguage: 'tr-TR',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Zamana',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://zamana.com.tr/images/zamana-logo.webp',
+    },
+  },
+};
 ---
 
 <Layout
-  title="Zamana — Türkiye'nin Kurumsal Claude Eğitim Platformu"
+  title="Zamana, Türkiye'nin Kurumsal Claude Eğitim Platformu"
   description="Claude bir araç. Onu doğru kullanmak bir beceri. Zamana 3 ayda bu beceriyi şirketinize getirir. Bireysel ve kurumsal eğitim programları."
+  ogImage="/og/index.png"
 >
+
+  <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
   <section class="hero">
     <div class="hero__bg" aria-hidden="true"></div>
@@ -18,7 +137,7 @@ import ProgramCard from '../components/ProgramCard.astro';
       </h1>
       <p class="hero__lead">
         Zamana, Türkiye'nin yapay zeka eğitim platformudur. Bireysel profesyonellere ve şirketlere
-        Claude'u gerçek işte nasıl kullanacaklarını gösteririz — örnek üzerinden, kendi işiniz üzerinden.
+        Claude'u gerçek işte nasıl kullanacaklarını gösteririz, örnek üzerinden, kendi işiniz üzerinden.
       </p>
       <div class="hero__cta">
         <a href="/programlar" class="btn btn--primary btn--lg">Programları İncele</a>
@@ -32,13 +151,66 @@ import ProgramCard from '../components/ProgramCard.astro';
     </div>
   </section>
 
+  <section class="trust-strip" aria-label="Güven göstergeleri">
+    <div class="container">
+      <ul class="trust-list">
+        <li>
+          <strong>Anthropic Partner</strong>
+          <span>Programı kabul edildi (2026)</span>
+        </li>
+        <li>
+          <strong>25+ yıl</strong>
+          <span>Teknoloji ve iş danışmanlığı</span>
+        </li>
+        <li>
+          <strong>250+</strong>
+          <span>Analiz edilmiş iş modeli</span>
+        </li>
+        <li>
+          <strong>Intel Türkiye</strong>
+          <span>7 yıl teknik danışmanlık</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section founder-mini">
+    <div class="container">
+      <div class="founder-mini__grid">
+        <div class="founder-mini__photo">
+          <img
+            src="/images/murat-portre.webp"
+            alt="Murat Özsaygılı, Zamana kurucusu"
+            width="180"
+            height="180"
+            loading="lazy"
+          />
+        </div>
+        <div class="founder-mini__text">
+          <span class="eyebrow">Kurucu</span>
+          <h2>Murat Özsaygılı</h2>
+          <p class="lead">
+            Bilgisayar mühendisi. 25 yıldır teknoloji ve iş danışmanlığında. Intel Türkiye'ye yedi yıl
+            danışmanlık verdim, 250'den fazla iş modelini analiz ettim, dış ticaretten kurumsal BT'ye kadar
+            farklı sektörlerde çalıştım.
+          </p>
+          <p>
+            Claude'u ciddi şekilde kullanmaya başladığımda gördüm ki Türkiye'de bu aracı iş süreçlerine
+            doğru entegre edebilen çok az kişi var. Zamana'yı bu boşluğu kapatmak için kurdum.
+          </p>
+          <a href="/hakkinda" class="link-arrow">Hakkımda daha fazla <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <div class="text-center" style="margin-bottom: var(--s-6);">
         <span class="eyebrow">Zamana Nedir</span>
         <h2 class="section-title center">Eğitim. Danışmanlık. Sonuç.</h2>
         <p class="lead center">
-          Bir kurs satmıyoruz. Ekibinizin Claude'u günlük işine entegre etmesini sağlıyoruz —
+          Bir kurs satmıyoruz. Ekibinizin Claude'u günlük işine entegre etmesini sağlıyoruz,
           12 hafta içinde, kanıtlanabilir çıktılarla.
         </p>
       </div>
@@ -151,7 +323,7 @@ import ProgramCard from '../components/ProgramCard.astro';
           <div class="reason__num">03</div>
           <div>
             <h3>Türkiye odaklı, Türkçe ilk</h3>
-            <p>İçeriklerimiz, örneklerimiz, müfredatımız Türk iş kültürüne göre tasarlandı. KVKK uyumu, yerel müşteri profili, Türkçe çıktı kalitesi — hepsi temelden ele alınmış.</p>
+            <p>İçeriklerimiz, örneklerimiz, müfredatımız Türk iş kültürüne göre tasarlandı. KVKK uyumu, yerel müşteri profili, Türkçe çıktı kalitesi, hepsi temelden ele alınmış.</p>
           </div>
         </div>
         <div class="reason">
@@ -165,7 +337,7 @@ import ProgramCard from '../components/ProgramCard.astro';
           <div class="reason__num">05</div>
           <div>
             <h3>CLAUDE.md ile size özel kurulum</h3>
-            <p>Standart asistan değil, sizin asistanınız. Rolünüz, müşteri profiliniz, çalışma tarzınız Claude'un belleğine yazılır — her seferinde sıfırdan anlatmak yok.</p>
+            <p>Standart asistan değil, sizin asistanınız. Rolünüz, müşteri profiliniz, çalışma tarzınız Claude'un belleğine yazılır, her seferinde sıfırdan anlatmak yok.</p>
           </div>
         </div>
         <div class="reason">
@@ -184,10 +356,10 @@ import ProgramCard from '../components/ProgramCard.astro';
       <div class="wiki-cta__grid">
         <div>
           <span class="eyebrow">Ücretsiz Kaynak</span>
-          <h2>Zamana Wiki — Türkçe Claude bilgi tabanı</h2>
+          <h2>Zamana Wiki, Türkçe Claude bilgi tabanı</h2>
           <p class="lead">
             Programa başlamadan önce ne öğreneceğinizi merak ediyorsanız wiki'mizi inceleyin.
-            89 sayfa, ücretsiz, Türkçe — Claude ile çalışmanın temellerinden 17 departman bazlı kullanım örneklerine kadar.
+            Ücretsiz, Türkçe. Claude ile çalışmanın temellerinden 12 departman bazlı kullanım örneklerine kadar geniş bir bilgi tabanı.
           </p>
           <a href="/wiki/" class="btn btn--primary">Wiki'ye Git</a>
         </div>
@@ -277,6 +449,70 @@ import ProgramCard from '../components/ProgramCard.astro';
     color: var(--c-text-light-muted);
   }
   .hero__meta strong { color: var(--c-gold-light); font-weight: 700; margin-right: 0.3rem; }
+
+  .trust-strip {
+    background: var(--c-bg-subtle);
+    border-bottom: 1px solid var(--c-border);
+    padding: var(--s-4) 0;
+  }
+  .trust-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--s-3);
+    list-style: none;
+  }
+  .trust-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 var(--s-2);
+  }
+  .trust-list strong {
+    color: var(--c-navy);
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .trust-list span {
+    color: var(--c-text-muted);
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+  }
+
+  .founder-mini__grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: var(--s-5);
+    align-items: center;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .founder-mini__photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--c-gold);
+    box-shadow: var(--sh-mid);
+    display: block;
+  }
+  .founder-mini__text h2 {
+    margin: 0.3rem 0 var(--s-3);
+    font-size: 1.6rem;
+  }
+  .founder-mini__text p {
+    color: var(--c-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--s-3);
+  }
+  .founder-mini__text .lead {
+    color: var(--c-text);
+  }
+  @media (max-width: 720px) {
+    .founder-mini__grid { grid-template-columns: 1fr; text-align: center; }
+    .founder-mini__photo img { margin: 0 auto; width: 150px; height: 150px; }
+  }
 
   .value-card {
     padding: var(--s-5);

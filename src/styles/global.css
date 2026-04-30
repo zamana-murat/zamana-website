@@ -1,20 +1,20 @@
 /* ================================================================
-   Zamana — Global Styles & Brand Tokens
+   Zamana, Global Styles & Brand Tokens
    Brand Guide: docs/Brainstorm.md → "🎨 Brand Guide" (2026-04-25)
    ================================================================ */
 
 :root {
-  /* Colors — Primary */
+  /* Colors: Primary */
   --c-navy:           #0f2855;
   --c-navy-mid:       #1a3d7a;
   --c-navy-deep:      #071a3e;
 
-  /* Colors — Accent */
+  /* Colors: Accent */
   --c-gold:           #c9a84c;
   --c-gold-light:     #e4c97a;
   --c-gold-dark:      #a8852d;
 
-  /* Colors — Neutral */
+  /* Colors: Neutral */
   --c-white:          #ffffff;
   --c-cream:          #fbf9f4;
   --c-text:           #0f2855;
@@ -22,7 +22,7 @@
   --c-text-light:     rgba(255, 255, 255, 0.92);
   --c-text-light-muted: rgba(255, 255, 255, 0.65);
 
-  /* Colors — Helpers */
+  /* Colors: Helpers */
   --c-border:         rgba(15, 40, 85, 0.1);
   --c-border-gold:    rgba(201, 168, 76, 0.3);
   --c-bg-subtle:      rgba(201, 168, 76, 0.04);

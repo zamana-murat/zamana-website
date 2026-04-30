@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqs = [
+  {
+    q: 'Fiyatlar neden bu seviyede? Daha ucuza alabilir miyim?',
+    a: `Zamana ne bir online kurs ne bir generic eğitim videosu satıyor. Her oturum birebir, kendi gerçek işiniz üzerinden, üç ay sonrasına kadar telefonla erişilebilir bir danışman ilişkisi. Bireysel programda toplam 6 saat birebir eğitim ve üç ay sınırsız destek $1.000 + KDV; kurumsalda altı çalışan için aylık $3.000 + KDV ve yine üç ay sınırsız telefon hattı. Bu fiyatlar Türkiye pazarında benzer kalitedeki birebir kurumsal danışmanlığın altında. "Daha ucuz" alternatifler genelde kayıttan dinlenen video kurslar veya temel araç tanıtımları, Zamana'nın yaptığı iş bu değil.`,
+  },
+  {
+    q: 'Şirketim küçük (1-3 kişi). Kurumsal program büyük geldi, ne yapmalıyım?',
+    a: `Bireysel Program'a yönlendiriyoruz. Küçük işletmelerde önce kilit karar vericinin (genelde kurucu veya CEO) Claude'u kendi işine entegre etmesi sağlanır; ekipte yayılma sonradan organik olur. Birden fazla bireysel kayıt da yapabilirsiniz, üç çalışanın her biri için $1.000 toplam $3.000 maliyetiyle üç bireysel program açılabilir. Kurumsal Retainer asıl olarak 6+ kişilik şirketlerde anlamlı.`,
+  },
+  {
+    q: 'Şirketim büyük (50+ çalışan), 6 kişi az gelir. Daha geniş bir program var mı?',
+    a: `Standart Kurumsal Retainer altı çalışan için tasarlandı çünkü "kritik kütle" olarak gözlemlediğimiz sayı bu. Ancak büyük şirketlerde aynı anda iki veya üç paralel retainer yürütüyoruz, her biri farklı bir departman veya ekip için. Tipik olarak 12 çalışanlık genişletilmiş programı ayda $5.500 + KDV gibi bir paketle çalışabiliyoruz. Görüşmede şirketinize göre yapı netleşir.`,
+  },
+  {
+    q: 'Teknik bilgi gerekiyor mu? Ekibim yazılımcı değil.',
+    a: `Hayır. Zamana'nın eğitimi yazılımcılara yönelik değil, iş profesyonellerine yönelik. Hedef kitle satış, pazarlama, hukuk, finans, operasyon, İK gibi rollerde çalışan, kod yazmayan ama yapay zekayı işine entegre etmek isteyen kişiler. CLAUDE.md, prompt yazma, MCP bağlantıları gibi konuların hepsi kod yazmadan, görsel arayüzle ve doğal dille öğretiliyor. Ekibinizde yazılımcı olması gerekmez.`,
+  },
+  {
+    q: 'Süre neden 3 ay/3 hafta? Daha hızlı olamaz mı?',
+    a: `Çünkü öğrenme oturumda değil, oturum aralarındaki gerçek işte yaşanır. Bireysel programda haftada bir oturum, aralarda öğrendiklerinizi denersiniz, sıradaki oturumda hatalar ve sorular çıkar, oradan ilerleriz. Üç haftalık yapı bilinçli bir tasarım, "yedi günlük yoğun kurs" olarak sıkıştırılırsa kalıcı öğrenme olmuyor. Kurumsalda da aynı mantık, üç ay 6 çalışanın aynı anda değişiminin organik olarak yayılması için gerekli minimum süre.`,
+  },
+  {
+    q: 'Anthropic ile resmi ilişkiniz nedir?',
+    a: `Zamana, Anthropic Partner Programı'na 2026 yılında kabul edilmiştir. Bu program Anthropic'in kurumsal müşterilere doğrudan eğitim, danışmanlık ve entegrasyon hizmeti sunan partnerlere açılır. Resmi sertifikasyon eğitimleri devam ediyor (Claude 101, Cowork, Skills, Subagents, MCP, Agent Skills, AI Fluency Framework, Claude Code 101, Claude Code in Action). Anthropic'in direkt iştiraki değil, bağımsız Türk şirketi olarak Türkiye pazarında çalışıyoruz.`,
+  },
+  {
+    q: 'Türkçe destek nasıl? Eğitim ve materyaller hangi dilde?',
+    a: `Tüm eğitim, materyaller, prompt örnekleri ve telefon desteği Türkçe. Wiki tamamen Türkçe, CLAUDE.md kurulumlarında Türk iş kültürüne uygun talimatlar yazılıyor. Claude'un kendisi Türkçe çıktı kalitesi yüksek bir araç, Zamana'nın eğitimi de bu kaliteyi en iyi nasıl çekeriz üzerine. İngilizce dokümanları okumanız gerekmiyor.`,
+  },
+  {
+    q: 'KVKK uyumu nasıl sağlanıyor?',
+    a: `Eğitim sırasında müşteri verisi veya gerçek kişisel veri kullanılmaz, sentetik örnekler ve genelleştirilmiş senaryolarla çalışılır. Kurumsal programda ayrıca her şirkete özel <strong>"Yapay Zeka Kullanım Politikası"</strong> dokümanı hazırlıyoruz. Bu doküman KVKK Kanunu ve Anthropic'in veri işleme şartlarıyla uyumlu, çalışanlarınızın hangi veriyi Claude ile paylaşıp paylaşamayacağını netleştirir. KVKK detayları için <a href="/wiki/temeller/gizlilik-kvkk/">wiki'deki KVKK rehberini</a> de inceleyebilirsiniz.`,
+  },
+  {
+    q: 'Memnun kalmazsam ne olur? İade veya garanti var mı?',
+    a: `Bireysel Program'da: ilk oturum sonunda devam etmek istemezseniz ödediğiniz tutarın tamamı iade edilir, ilk oturumun ücreti dahil. Kurumsal'da: ilk ay sonunda iki taraf da çekilebilir, sözleşme aylık fesih koşuluyla bağlanır (toplam minimum 3 ay diye satılsa da yapısal olarak aydan aya). Garantimiz "kalıcı olarak Claude kullanımını ekibinize yerleştirmek" üzerine, bunu sağlamadığımızı görürsek devam ettirmek zaten anlamsız.`,
+  },
+  {
+    q: 'Eğitim sonrası ne olur? Sürekli bağımlı mı oluyoruz?',
+    a: `Tam tersi, hedefimiz bağımsızlığınız. Üç aylık destek sona erdiğinde ekibiniz kendi başına yeni iş akışı kurabilen, prompt yazabilen, ekipteki yeni gelen kişileri eğitebilen bir AI pratiğine sahip oluyor. Sonrasında devam etmek isterseniz ek danışmanlık paketleri var (saatlik veya aylık), ama varsayılan beklenti "ihtiyaç duymama" yönünde. Üç ay sonunda ihtiyaç duymuyorsanız Zamana doğru iş yapmıştır.`,
+  },
+  {
+    q: 'ChatGPT veya Gemini yerine neden Claude?',
+    a: `Zamana sadece Claude eğitir çünkü kurumsal iş kullanımında Claude'un üstün olduğu alanlar belirgin: uzun bağlam (200K+ token), Türkçe çıktı kalitesi, dokümana sadık özetleme, daha iddia etmeden soru sorma davranışı, dosya/MCP/Cowork gibi kurumsal araçların derinliği. ChatGPT yaratıcı yazımda hızlı, Gemini Google ekosistemi için pratik, ama "iş bağlamına gerçek entegrasyon" konusunda Claude şu anda önde. Tabii ekibinizdeki kişiler diğer araçları da kullanabilir, eğitimde edindiğiniz prompt yazma ve iş akışı tasarımı becerileri büyük ölçüde transfer olur.`,
+  },
+  {
+    q: 'Eğitim online mı, yüz yüze mi?',
+    a: `Birebir online (Zoom veya Google Meet). Kurumsal programda yüz yüze de yapabiliyoruz, İstanbul içinde ek ücretsiz, dışındaki şehirler için yol/konaklama maliyeti şirket karşılar. Ama deneyimimiz online'ın hızlı ve etkili olduğu yönünde, ekran paylaşımı ile Claude'un kullanıldığı asıl ortamda öğrenme daha doğru sonuç veriyor.`,
+  },
+  {
+    q: 'Ekibim Claude\'u zaten kullanıyor. Yine de eğitim almalı mıyız?',
+    a: `Çoğu zaman evet. "Kullanmak" ve "iş süreçlerine entegre etmek" çok farklı şeyler. Türkiye'de Claude Pro abonesi olan binlerce kişi var, ama günde 3+ saat aktif iş yükü Claude'a verebilen, prompt kütüphanesi yazmış, CLAUDE.md ile çalışan, MCP konnektörü kurmuş kişi sayısı çok az. İlk görüşmemizde ekibinizin mevcut kullanım seviyesini değerlendiriyoruz, eğer gerçekten ileri seviyedelerse "şu an eğitim almanıza gerek yok" da diyebiliriz, bu olmuş bir durum.`,
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: f.a.replace(/<[^>]+>/g, ''),
+    },
+  })),
+};
+---
+
+<Layout
+  title="Sık Sorulan Sorular | Zamana"
+  description="Zamana programları hakkında en sık sorulan sorular: fiyat, süre, KVKK, Anthropic ilişkisi, ChatGPT/Gemini farkı, iade politikası, ekip büyüklüğü."
+  ogImage="/og/sss.png"
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Sık Sorulan Sorular</span>
+      <h1>Karar vermeden önce sorulan sorular.</h1>
+      <p class="lead">
+        Görüşme öncesi veya sonrası en çok karşılaştığımız sorular ve dürüst cevapları.
+        Cevap aradığınız soru burada yoksa <a href="/iletisim">doğrudan sorun</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <ol class="faq-list">
+        {faqs.map((f, i) => (
+          <li class="faq-item">
+            <details>
+              <summary>
+                <span class="faq-num">{String(i + 1).padStart(2, '0')}</span>
+                <span class="faq-q">{f.q}</span>
+                <span class="faq-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-a" set:html={f.a} />
+            </details>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow text-center">
+      <h2 class="section-title">Sorunuzun cevabı burada yok mu?</h2>
+      <p class="lead center">
+        Görüşme öncesi sorularınızı yazılı olarak da cevaplıyoruz, çekinmeyin yazın.
+      </p>
+      <div style="display: inline-flex; gap: var(--s-3); flex-wrap: wrap; justify-content: center; margin-top: var(--s-4);">
+        <a href="/iletisim" class="btn btn--primary btn--lg">İletişime Geç</a>
+        <a href="/wiki/" class="btn btn--secondary btn--lg">Wiki'ye Bak</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .faq-list {
+    list-style: none;
+    display: grid;
+    gap: var(--s-3);
+    margin-top: var(--s-4);
+  }
+  .faq-item {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    overflow: hidden;
+    transition: border-color var(--t), box-shadow var(--t);
+  }
+  .faq-item:hover { border-color: var(--c-border-gold); }
+  .faq-item details[open] { box-shadow: var(--sh-mid); }
+
+  .faq-item summary {
+    display: grid;
+    grid-template-columns: 48px 1fr 32px;
+    gap: var(--s-3);
+    align-items: center;
+    padding: var(--s-4);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    transition: background var(--t-fast);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { background: var(--c-bg-subtle); }
+
+  .faq-num {
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: var(--c-gold);
+    letter-spacing: -0.02em;
+  }
+  .faq-q {
+    font-weight: 600;
+    color: var(--c-navy);
+    line-height: 1.45;
+  }
+  .faq-toggle {
+    font-size: 1.6rem;
+    color: var(--c-gold-dark);
+    text-align: center;
+    font-weight: 300;
+    line-height: 1;
+    transition: transform var(--t-fast);
+  }
+  .faq-item details[open] .faq-toggle {
+    transform: rotate(45deg);
+  }
+
+  .faq-a {
+    padding: 0 var(--s-4) var(--s-4) calc(var(--s-4) + 48px + var(--s-3));
+    color: var(--c-text-muted);
+    line-height: 1.75;
+    font-size: 0.97rem;
+  }
+  .faq-a a {
+    color: var(--c-gold-dark);
+    text-decoration: underline;
+  }
+  .faq-a strong { color: var(--c-text); }
+
+  @media (max-width: 600px) {
+    .faq-item summary {
+      grid-template-columns: 36px 1fr 28px;
+      gap: var(--s-2);
+      padding: var(--s-3);
+    }
+    .faq-num { font-size: 0.9rem; }
+    .faq-q { font-size: 0.95rem; }
+    .faq-a {
+      padding: 0 var(--s-3) var(--s-3) var(--s-3);
+      font-size: 0.94rem;
+    }
+  }
+</style>
+</content>
+</invoke>

@@ -14,9 +14,9 @@ interface Props {
 }
 
 const {
-  title = 'Zamana — Kurumsal Claude Eğitim ve Danışmanlık',
+  title = 'Zamana, Kurumsal Claude Eğitim ve Danışmanlık',
   description = 'Türkiye\'nin kurumsal Claude eğitim platformu. Bireysel ve kurumsal programlarla şirketinize en değerli kaynağı geri veriyoruz: zamanı.',
-  ogImage = '/images/og-default.png',
+  ogImage = '/og/default.png',
   noindex = false,
   canonical,
   publishDate = '2026-04-25',
@@ -35,6 +35,7 @@ const breadcrumbLabels: Record<string, string> = {
   'iletisim': 'İletişim',
   'gizlilik': 'Gizlilik / KVKK',
   'cerezler': 'Çerez Politikası',
+  'sss': 'Sık Sorulan Sorular',
 };
 
 const pathParts = Astro.url.pathname.split('/').filter(Boolean);

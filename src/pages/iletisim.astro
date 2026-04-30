@@ -3,8 +3,9 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="İletişim — 15 Dakikalık Keşif Görüşmesi | Zamana"
+  title="İletişim, 15 Dakikalık Keşif Görüşmesi | Zamana"
   description="Zamana ile iletişime geçin. 15 dakikalık ücretsiz keşif görüşmesi, e-posta, telefon. Beylikdüzü İstanbul ofisi."
+  ogImage="/og/iletisim.png"
 >
 
   <section class="page-hero">
@@ -12,7 +13,7 @@ import Layout from '../layouts/Layout.astro';
       <span class="eyebrow">İletişim</span>
       <h1>Konuşalım.</h1>
       <p class="lead">
-        15 dakika içinde durumunuzu dinler, size uygun olan programı netleştiririz. Satış konuşması yok — gerçek tanışma.
+        15 dakika içinde durumunuzu dinler, size uygun olan programı netleştiririz. Satış konuşması yok, gerçek tanışma.
       </p>
     </div>
   </section>
@@ -23,6 +24,10 @@ import Layout from '../layouts/Layout.astro';
         <div class="contact-form-wrap">
           <h2 class="section-title">Görüşme Talep Formu</h2>
           <form id="contact-form" class="contact-form" novalidate>
+            <div class="hp" aria-hidden="true">
+              <label for="website">Web sitesi (boş bırakın)</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
             <div class="field">
               <label for="name">Ad Soyad <span class="req">*</span></label>
               <input type="text" id="name" name="name" required autocomplete="name" />
@@ -33,8 +38,8 @@ import Layout from '../layouts/Layout.astro';
             </div>
             <div class="field">
               <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" />
-              <span class="hint">İsteğe bağlı — daha hızlı dönüş için</span>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+90 5xx xxx xx xx" inputmode="tel" />
+              <span class="hint">İsteğe bağlı, daha hızlı dönüş için</span>
             </div>
             <div class="field">
               <label for="company">Şirket / Kurum</label>
@@ -43,15 +48,21 @@ import Layout from '../layouts/Layout.astro';
             <div class="field">
               <label for="program">Hangi program ilginizi çekiyor?</label>
               <select id="program" name="program">
-                <option value="">Henüz emin değilim</option>
+                <option value="">Henüz emin değilim, dinleyip karar vermek istiyorum</option>
                 <option value="bireysel">Bireysel Program ($1.000 + KDV)</option>
                 <option value="kurumsal">Kurumsal Program ($3.000 + KDV / ay)</option>
                 <option value="ikisi">İkisini karşılaştırmak istiyorum</option>
               </select>
             </div>
+
+            <div class="field">
+              <label for="availability">Görüşme için tercih ettiğiniz zaman</label>
+              <input type="text" id="availability" name="availability" placeholder="Ör: Bu hafta öğleden sonraları, Salı/Perşembe sabah" />
+              <span class="hint">İsteğe bağlı, sizinle uyumlu bir zaman bulalım</span>
+            </div>
             <div class="field">
               <label for="message">Kısa not <span class="req">*</span></label>
-              <textarea id="message" name="message" required placeholder="Durumunuzu birkaç cümleyle anlatın — hangi sıkıntı, hangi hedef, hangi tarih aralığında müsaitsiniz."></textarea>
+              <textarea id="message" name="message" required rows="5" placeholder="Şu an Claude ile ne yapmaya çalışıyorsunuz? Ekipte kaç kişi etkileniyor? Hangi engelle karşılaşıyorsunuz? Birkaç cümle yeterli."></textarea>
             </div>
 
             <div class="field consent">
@@ -97,12 +108,12 @@ import Layout from '../layouts/Layout.astro';
 
           <div class="contact-block contact-block--gold">
             <h3>Cevap süresi</h3>
-            <p>Hafta içi mesai saatleri içinde 24 saat — çoğu zaman birkaç saat. Hafta sonu yazdıysanız Pazartesi.</p>
+            <p>Hafta içi mesai saatleri içinde 24 saat, çoğu zaman birkaç saat. Hafta sonu yazdıysanız Pazartesi.</p>
           </div>
 
           <div class="contact-block">
             <h3>Önce wiki'ye baksak?</h3>
-            <p class="text-muted">Programa karar vermeden önce Zamana'nın kalitesini görmek isterseniz <a href="/wiki/">ücretsiz wiki'mizi</a> inceleyin — 55+ Türkçe sayfa.</p>
+            <p class="text-muted">Programa karar vermeden önce Zamana'nın kalitesini görmek isterseniz <a href="/wiki/">ücretsiz Türkçe wiki'mizi</a> inceleyin.</p>
           </div>
         </aside>
       </div>
@@ -121,6 +132,7 @@ import Layout from '../layouts/Layout.astro';
   @media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } }
 
   .req { color: var(--c-gold-dark); }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
   .consent label {
     display: flex;
     align-items: flex-start;
@@ -227,7 +239,7 @@ import Layout from '../layouts/Layout.astro';
       const json: any = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
         status.classList.add('is-success');
-        status.textContent = '✓ Mesajınız alındı. 24 saat içinde dönüş yapacağız.';
+        status.innerHTML = '✓ Mesajınız alındı. 24 saat içinde dönüş yapacağız. Bu arada <a href="/wiki/">wiki</a>\'ye veya <a href="/sss">sık sorulan sorulara</a> göz atabilirsiniz.';
         form.reset();
       } else {
         throw new Error(json.error || 'unknown');

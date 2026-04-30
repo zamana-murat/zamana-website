@@ -22,6 +22,7 @@ interface Payload {
   phone?: string;
   company?: string;
   program?: string;
+  availability?: string;
   message?: string;
   consent?: string;
   website?: string; // honeypot
@@ -55,6 +56,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const phone = (data.phone || '').trim().slice(0, 50);
   const company = (data.company || '').trim().slice(0, 200);
   const program = (data.program || '').trim().slice(0, 50);
+  const availability = (data.availability || '').trim().slice(0, 200);
   const message = (data.message || '').trim().slice(0, 4000);
 
   if (!name || !email || !message) {
@@ -67,7 +69,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const to = env.CONTACT_TO || 'info@zamana.com.tr';
   const from = env.CONTACT_FROM || 'Zamana <noreply@zamana.com.tr>';
 
-  const subject = `Yeni iletişim formu — ${name}${program ? ` (${program})` : ''}`;
+  const subject = `Yeni iletişim formu, ${name}${program ? ` (${program})` : ''}`;
   const html = `
     <h2 style="font-family:sans-serif;color:#0f2855">Yeni iletişim formu mesajı</h2>
     <table style="font-family:sans-serif;border-collapse:collapse">
@@ -76,6 +78,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       ${phone ? `<tr><td style="padding:6px 12px;color:#666">Telefon</td><td style="padding:6px 12px">${escapeHtml(phone)}</td></tr>` : ''}
       ${company ? `<tr><td style="padding:6px 12px;color:#666">Şirket</td><td style="padding:6px 12px">${escapeHtml(company)}</td></tr>` : ''}
       ${program ? `<tr><td style="padding:6px 12px;color:#666">Program</td><td style="padding:6px 12px">${escapeHtml(program)}</td></tr>` : ''}
+      ${availability ? `<tr><td style="padding:6px 12px;color:#666">Müsait Zaman</td><td style="padding:6px 12px">${escapeHtml(availability)}</td></tr>` : ''}
     </table>
     <h3 style="font-family:sans-serif;color:#0f2855;margin-top:24px">Mesaj</h3>
     <div style="font-family:sans-serif;white-space:pre-wrap;padding:12px;background:#f7f5ef;border-left:3px solid #c9a84c;border-radius:4px">${escapeHtml(message)}</div>
@@ -91,6 +94,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     phone ? `Telefon: ${phone}` : '',
     company ? `Şirket: ${company}` : '',
     program ? `Program: ${program}` : '',
+    availability ? `Müsait Zaman: ${availability}` : '',
     ``,
     `Mesaj:`,
     message,

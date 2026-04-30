@@ -1,5 +1,12 @@
+# Zamana — robots.txt
+# https://zamana.com.tr
+
+# Tüm botlara genel erişim açık. Ana site Türkçe Claude eğitimi
+# içeriği yayınlar, AI bot'ları dahil her crawler indeksleyebilir.
 User-agent: *
 Allow: /
+Disallow: /api/
 
+# Sitemap'ler
 Sitemap: https://zamana.com.tr/sitemap.xml
 Sitemap: https://zamana.com.tr/wiki/sitemap.xml
