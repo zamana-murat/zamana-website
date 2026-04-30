@@ -26,6 +26,9 @@ const fontSemiBold = readFileSync(join(FONTS_DIR, 'PlusJakartaSans-SemiBold.ttf'
 const fontBold = readFileSync(join(FONTS_DIR, 'PlusJakartaSans-Bold.ttf'));
 const fontExtraBold = readFileSync(join(FONTS_DIR, 'PlusJakartaSans-ExtraBold.ttf'));
 
+const logoBuffer = readFileSync(join(__dirname, 'assets', 'zamana-logo-horizontal.png'));
+const logoDataUrl = `data:image/png;base64,${logoBuffer.toString('base64')}`;
+
 // Brand colors (matching global.css)
 const NAVY = '#0f2855';
 const NAVY_DEEP = '#071a3e';
@@ -122,40 +125,26 @@ function template({ eyebrow, title, subtitle }) {
         position: 'relative',
       },
       children: [
-        // Top: brand mark
+        // Top: brand logo (white card, matching Footer pattern)
         {
           type: 'div',
           props: {
-            style: { display: 'flex', alignItems: 'center', gap: '16px' },
+            style: {
+              display: 'flex',
+              alignItems: 'center',
+              background: WHITE,
+              padding: '14px 20px',
+              borderRadius: '12px',
+              alignSelf: 'flex-start',
+            },
             children: [
               {
-                type: 'div',
+                type: 'img',
                 props: {
-                  style: {
-                    width: '48px',
-                    height: '48px',
-                    borderRadius: '10px',
-                    background: GOLD,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '28px',
-                    fontWeight: 800,
-                    color: NAVY_DEEP,
-                  },
-                  children: 'Z',
-                },
-              },
-              {
-                type: 'div',
-                props: {
-                  style: {
-                    fontSize: '32px',
-                    fontWeight: 800,
-                    letterSpacing: '-0.01em',
-                    color: WHITE,
-                  },
-                  children: 'Zamana',
+                  src: logoDataUrl,
+                  width: 220,
+                  height: 73,
+                  style: { display: 'block' },
                 },
               },
             ],
