@@ -91,6 +91,10 @@ const breadcrumbItems = pathParts.length > 0 ? [
       legalName: 'Zamana Kurumsal Eğitim ve Danışmanlık',
       url: siteUrl,
       logo: `${siteUrl}/images/zamana-logo.webp`,
+      image: [
+        `${siteUrl}/images/og-default.png`,
+        `${siteUrl}/images/zamana-logo.webp`,
+      ],
       email: 'info@zamana.com.tr',
       telephone: '+90 530 490 4740',
       address: {
@@ -101,6 +105,10 @@ const breadcrumbItems = pathParts.length > 0 ? [
         addressCountry: 'TR',
       },
       founder: { '@type': 'Person', name: 'Murat Özsaygılı' },
+      sameAs: [
+        'https://www.linkedin.com/in/murat-%C3%B6zsayg%C4%B1l%C4%B1-59790865/',
+        'https://x.com/ZamanaClaude',
+      ],
     })} />
 
     {breadcrumbItems && (
