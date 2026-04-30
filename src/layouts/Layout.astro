@@ -9,6 +9,8 @@ interface Props {
   ogImage?: string;
   noindex?: boolean;
   canonical?: string;
+  publishDate?: string;
+  modifiedDate?: string;
 }
 
 const {
@@ -17,6 +19,8 @@ const {
   ogImage = '/images/og-default.png',
   noindex = false,
   canonical,
+  publishDate = '2026-04-25',
+  modifiedDate = new Date().toISOString().slice(0, 10),
 } = Astro.props;
 
 const siteUrl = 'https://zamana.com.tr';
@@ -52,6 +56,7 @@ const breadcrumbItems = pathParts.length > 0 ? [
 
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="author" content="Murat Özsaygılı" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonicalUrl} />
 
@@ -68,6 +73,9 @@ const breadcrumbItems = pathParts.length > 0 ? [
     <meta property="og:image" content={new URL(ogImage, siteUrl).toString()} />
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:site_name" content="Zamana" />
+    <meta property="article:author" content="Murat Özsaygılı" />
+    <meta property="article:published_time" content={`${publishDate}T00:00:00+03:00`} />
+    <meta property="article:modified_time" content={`${modifiedDate}T00:00:00+03:00`} />
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta name="theme-color" content="#0f2855" />
