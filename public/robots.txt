@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://zamana.com.tr/sitemap.xml
+Sitemap: https://zamana.com.tr/wiki/sitemap.xml
