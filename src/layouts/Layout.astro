@@ -21,6 +21,26 @@ const {
 
 const siteUrl = 'https://zamana.com.tr';
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
+
+const breadcrumbLabels: Record<string, string> = {
+  'programlar': 'Programlar',
+  'bireysel': 'Bireysel Program',
+  'kurumsal': 'Kurumsal Program',
+  'karsilastirma': 'Karşılaştırma',
+  'hakkinda': 'Hakkında',
+  'iletisim': 'İletişim',
+  'gizlilik': 'Gizlilik / KVKK',
+  'cerezler': 'Çerez Politikası',
+};
+
+const pathParts = Astro.url.pathname.split('/').filter(Boolean);
+const breadcrumbItems = pathParts.length > 0 ? [
+  { name: 'Anasayfa', url: siteUrl },
+  ...pathParts.map((part, i) => ({
+    name: breadcrumbLabels[part] || part.charAt(0).toUpperCase() + part.slice(1),
+    url: `${siteUrl}/${pathParts.slice(0, i + 1).join('/')}`,
+  })),
+] : null;
 ---
 
 <!doctype html>
@@ -74,6 +94,19 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString(
       },
       founder: { '@type': 'Person', name: 'Murat Özsaygılı' },
     })} />
+
+    {breadcrumbItems && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbItems.map((item, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: item.name,
+          item: item.url,
+        })),
+      })} />
+    )}
   </head>
   <body>
     <a href="#main" class="skip-link">İçeriğe geç</a>
