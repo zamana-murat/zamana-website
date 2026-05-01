@@ -13,6 +13,7 @@
   --c-gold:           #c9a84c;
   --c-gold-light:     #e4c97a;
   --c-gold-dark:      #a8852d;
+  --c-gold-text:      #7a5f1c; /* WCAG AA on cream/white (5.2:1) — küçük metin için */
 
   /* Colors: Neutral */
   --c-white:          #ffffff;
@@ -120,7 +121,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--c-gold-dark);
+  color: var(--c-gold-text);
   margin-bottom: var(--s-3);
   display: block;
   width: fit-content;
@@ -331,7 +332,7 @@ p:last-child { margin-bottom: 0; }
 /* ── Utility ─────────────────────────────────────────── */
 .text-center { text-align: center; }
 .text-muted  { color: var(--c-text-muted); }
-.text-gold   { color: var(--c-gold-dark); }
+.text-gold   { color: var(--c-gold-text); }
 .lead {
   font-size: 1.15rem;
   line-height: 1.7;
