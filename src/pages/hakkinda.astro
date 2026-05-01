@@ -101,11 +101,14 @@ const personSchema = {
       <div class="founder">
         <div class="founder__photo">
           <img
-            src="/images/murat-portre.webp"
+            src="/images/murat-portre-360.webp"
+            srcset="/images/murat-portre-360.webp 360w, /images/murat-portre-560.webp 560w"
+            sizes="280px"
             alt="Murat Özsaygılı, Zamana kurucusu"
             width="280"
             height="280"
             loading="eager"
+            fetchpriority="high"
           />
         </div>
         <div class="founder__bio">
