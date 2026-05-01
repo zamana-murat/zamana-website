@@ -4,55 +4,55 @@ import Layout from '../layouts/Layout.astro';
 const faqs = [
   {
     q: 'Fiyatlar neden bu seviyede? Daha ucuza alabilir miyim?',
-    a: `Zamana ne bir online kurs ne bir generic eğitim videosu satıyor. Her oturum birebir, kendi gerçek işiniz üzerinden, üç ay sonrasına kadar telefonla erişilebilir bir danışman ilişkisi. Bireysel programda toplam 6 saat birebir eğitim ve üç ay sınırsız destek $1.000 + KDV; kurumsalda altı çalışan için aylık $3.000 + KDV ve yine üç ay sınırsız telefon hattı. Bu fiyatlar Türkiye pazarında benzer kalitedeki birebir kurumsal danışmanlığın altında. "Daha ucuz" alternatifler genelde kayıttan dinlenen video kurslar veya temel araç tanıtımları, Zamana'nın yaptığı iş bu değil.`,
+    a: `<strong>Kısa cevap: Bireysel $1.000 + KDV (3 hafta + 3 ay destek), Kurumsal $3.000 + KDV/ay (6 çalışan, minimum 3 ay).</strong> Zamana ne bir online kurs ne bir generic eğitim videosu satıyor. Her oturum birebir, kendi gerçek işiniz üzerinden, üç ay sonrasına kadar telefonla erişilebilir bir danışman ilişkisi. Bireysel programda toplam 6 saat birebir eğitim, üç ay sınırsız telefon desteği ve şirkete özel CLAUDE.md kurulumu dahil. Kurumsalda altı çalışan için aylık $3.000 + KDV; çalışan başına yaklaşık $500/ay düşüyor ki Türkiye'de saatlik $200-300 alan kurumsal danışmanların altı kişiye paralel verdiği hizmet bu fiyatla bulunmuyor. "Daha ucuz" alternatifler genelde kayıttan dinlenen video kurslar veya temel araç tanıtımları, Zamana'nın yaptığı iş bu değil. Ödeme aydan aya, fesih hakkı serbest. ROI ölçümü için karşılaştırma: çalışan başına haftada 8-15 saat kazanım gözleniyor.`,
   },
   {
     q: 'Şirketim küçük (1-3 kişi). Kurumsal program büyük geldi, ne yapmalıyım?',
-    a: `Bireysel Program'a yönlendiriyoruz. Küçük işletmelerde önce kilit karar vericinin (genelde kurucu veya CEO) Claude'u kendi işine entegre etmesi sağlanır; ekipte yayılma sonradan organik olur. Birden fazla bireysel kayıt da yapabilirsiniz, üç çalışanın her biri için $1.000 toplam $3.000 maliyetiyle üç bireysel program açılabilir. Kurumsal Retainer asıl olarak 6+ kişilik şirketlerde anlamlı.`,
+    a: `<strong>Kısa cevap: 1-3 kişilik işletmelerde Bireysel Program'a yönlendiriyoruz, her kişi için $1.000.</strong> Küçük işletmelerde önce kilit karar vericinin (genelde kurucu veya CEO) Claude'u kendi işine entegre etmesi sağlanır; ekipte yayılma sonradan organik olur. Birden fazla bireysel kayıt da yapabilirsiniz: üç çalışanın her biri için $1.000 toplam $3.000 maliyetiyle üç bireysel program açılabilir, her biri kendi rolüne göre derinleştirilir. Kurumsal Retainer asıl olarak 6+ kişilik şirketlerde anlamlı çünkü "kritik kütle" etkisi orada başlıyor, ekip içi paylaşım, ortak prompt kütüphanesi, departmanlar arası transfer. 1-3 kişilik bir takımda bu dinamik yok, doğru çözüm bireysel derinlik. Bütçeniz tek kişi için yetiyorsa CEO/kurucudan başlayın, üç ay sonra şirkete getirme kararı netleşir.`,
   },
   {
     q: 'Şirketim büyük (50+ çalışan), 6 kişi az gelir. Daha geniş bir program var mı?',
-    a: `Standart Kurumsal Retainer altı çalışan için tasarlandı çünkü "kritik kütle" olarak gözlemlediğimiz sayı bu. Ancak büyük şirketlerde aynı anda iki veya üç paralel retainer yürütüyoruz, her biri farklı bir departman veya ekip için. Tipik olarak 12 çalışanlık genişletilmiş programı ayda $5.500 + KDV gibi bir paketle çalışabiliyoruz. Görüşmede şirketinize göre yapı netleşir.`,
+    a: `<strong>Kısa cevap: Evet, 12 çalışanlık genişletilmiş paket aylık $5.500 + KDV; daha büyük yapılar için paralel retainer'lar kuruyoruz.</strong> Standart Kurumsal Retainer altı çalışan için tasarlandı çünkü "kritik kütle" olarak gözlemlediğimiz sayı bu. Büyük şirketlerde aynı anda iki veya üç paralel retainer yürütüyoruz, her biri farklı bir departman veya ekip için (örneğin pazarlama + finans + operasyon ayrı 6'şarlık gruplar). Tipik genişletilmiş yapılar: 12 çalışan $5.500/ay, 18 çalışan $8.000/ay, 24 çalışan $10.500/ay. Departman bazlı seçim önemli çünkü Claude kullanımı role göre derinleşir, hukuk ekibinin ihtiyacı pazarlama ekibinden farklı. Pilot yaklaşım da mümkün: 6 kişiyle başla, 3 ay sonra başarı ölçer, sonraki 12-18 kişiyi kademeli ekleriz. İlk görüşmede şirketinize göre yapı netleşir.`,
   },
   {
     q: 'Teknik bilgi gerekiyor mu? Ekibim yazılımcı değil.',
-    a: `Hayır. Zamana'nın eğitimi yazılımcılara yönelik değil, iş profesyonellerine yönelik. Hedef kitle satış, pazarlama, hukuk, finans, operasyon, İK gibi rollerde çalışan, kod yazmayan ama yapay zekayı işine entegre etmek isteyen kişiler. CLAUDE.md, prompt yazma, MCP bağlantıları gibi konuların hepsi kod yazmadan, görsel arayüzle ve doğal dille öğretiliyor. Ekibinizde yazılımcı olması gerekmez.`,
+    a: `<strong>Kısa cevap: Hayır, yazılımcı olmanız gerekmez. Eğitim iş profesyonellerine, kod yazmayan rollere yönelik.</strong> Zamana'nın hedef kitlesi satış, pazarlama, hukuk, finans, operasyon, İK, üretim ve müşteri hizmetleri gibi rollerde çalışan, kod yazmayan ama yapay zekayı işine entegre etmek isteyen kişiler. CLAUDE.md, prompt yazma, MCP bağlantıları, Skills kullanımı gibi konuların hepsi kod yazmadan, görsel arayüzle ve doğal dille öğretiliyor. Tek "teknik" beklenti: bilgisayarınızda dosya açıp kaydedebilmek, web tarayıcı kullanabilmek, e-posta yazabilmek. Excel formülü bilen biri Claude'u rahat öğrenir; Excel makrosu bile gerekmiyor. 60+ yaş muhasebe müdürleri, hukuk büroları, üretim sorumluları başarıyla geçti programdan. Konuşma arayüzü teknik bariyer kaldırıyor, asıl beceri "ne soracağını bilmek", bu da Zamana'nın öğrettiği şey.`,
   },
   {
     q: 'Süre neden 3 ay/3 hafta? Daha hızlı olamaz mı?',
-    a: `Çünkü öğrenme oturumda değil, oturum aralarındaki gerçek işte yaşanır. Bireysel programda haftada bir oturum, aralarda öğrendiklerinizi denersiniz, sıradaki oturumda hatalar ve sorular çıkar, oradan ilerleriz. Üç haftalık yapı bilinçli bir tasarım, "yedi günlük yoğun kurs" olarak sıkıştırılırsa kalıcı öğrenme olmuyor. Kurumsalda da aynı mantık, üç ay 6 çalışanın aynı anda değişiminin organik olarak yayılması için gerekli minimum süre.`,
+    a: `<strong>Kısa cevap: Hayır, çünkü öğrenme oturumda değil, oturum aralarındaki gerçek işte yaşanır.</strong> Bireysel programda haftada bir oturum (2 saat × 3 hafta = 6 saat birebir), aralarda öğrendiklerinizi kendi işinizde denersiniz, bir sonraki oturumda hatalar ve sorular çıkar, oradan ilerleriz. Üç haftalık yapı bilinçli bir tasarım, "yedi günlük yoğun kurs" olarak sıkıştırılırsa kalıcı öğrenme olmuyor çünkü beyin yeni iş akışlarını oturtmak için arada deneme süresine ihtiyaç duyuyor. Kurumsalda da aynı mantık: üç ay, 6 çalışanın aynı anda değişiminin organik olarak yayılması için gerekli minimum süre. İlk ay kurulum ve temel pratik, ikinci ay derinleşme ve rol-spesifik akışlar, üçüncü ay otonom kullanım ve yeni gelenleri eğitme kapasitesi. Kompres edilmiş programlar başarısızlık üretti, deneyim böyle.`,
   },
   {
     q: 'Anthropic ile resmi ilişkiniz nedir?',
-    a: `Zamana, Anthropic Partner Programı'na 2026 yılında kabul edilmiştir. Bu program Anthropic'in kurumsal müşterilere doğrudan eğitim, danışmanlık ve entegrasyon hizmeti sunan partnerlere açılır. Resmi sertifikasyon eğitimleri devam ediyor (Claude 101, Cowork, Skills, Subagents, MCP, Agent Skills, AI Fluency Framework, Claude Code 101, Claude Code in Action). Anthropic'in direkt iştiraki değil, bağımsız Türk şirketi olarak Türkiye pazarında çalışıyoruz.`,
+    a: `<strong>Kısa cevap: Zamana, Anthropic Partner Programı'na 2026 yılında kabul edildi. Bağımsız Türk şirketi, Anthropic'in iştiraki değil.</strong> Anthropic Partner Programı, Anthropic'in kurumsal müşterilere doğrudan eğitim, danışmanlık ve entegrasyon hizmeti sunan partnerlere açtığı resmi yapı. Programa kabul, partner'ın teknik yetkinliğini ve müşteri başarı geçmişini değerlendiren bir süreç sonunda veriliyor. Resmi sertifikasyon eğitimleri devam ediyor: Claude 101, Cowork, Skills, Subagents, MCP, Agent Skills, AI Fluency Framework, Claude Code 101, Claude Code in Action. Bu programlar Anthropic'in en güncel ürün ve metodoloji bilgisini partnerlere aktarıyor, ürün yol haritası değişiklikleri partnerlere müşterilerden önce iletiliyor. Zamana, Anthropic'in direkt iştiraki değil, bağımsız Türk şirketi olarak Türkiye pazarında çalışıyor. Bu bağımsızlık önemli: müşteriye en doğru aracı önerme özgürlüğümüz, Anthropic'in satış kotasına bağlı değil.`,
   },
   {
     q: 'Türkçe destek nasıl? Eğitim ve materyaller hangi dilde?',
-    a: `Tüm eğitim, materyaller, prompt örnekleri ve telefon desteği Türkçe. Wiki tamamen Türkçe, CLAUDE.md kurulumlarında Türk iş kültürüne uygun talimatlar yazılıyor. Claude'un kendisi Türkçe çıktı kalitesi yüksek bir araç, Zamana'nın eğitimi de bu kaliteyi en iyi nasıl çekeriz üzerine. İngilizce dokümanları okumanız gerekmiyor.`,
+    a: `<strong>Kısa cevap: Tüm eğitim, materyaller, telefon desteği ve wiki %100 Türkçe. İngilizce gerekmiyor.</strong> Eğitim oturumları Türkçe, prompt örnekleri Türkçe, CLAUDE.md kurulumları Türk iş kültürüne uygun talimatlarla (resmi yazışma tonu, KDV/SGK terimleri, Türk muhasebe takvimi, KVKK referansları). 90+ sayfalık Zamana wiki tamamen Türkçe, dünyada bu kapsamda Türkçe Claude kaynağı yok. Telefon desteği üç ay boyunca sınırsız Türkçe; çağrı saatleri Türkiye iş saatleri (09:00-18:00) içinde, acil durumlarda akşam da müsait. Claude'un kendisi Türkçe çıktı kalitesi yüksek bir araç (Sonnet 4.x ailesi profesyonel düzeyde resmi yazışma, teknik metinler, sözleşme dili üretebiliyor), Zamana'nın eğitimi de bu kaliteyi en iyi nasıl çekeriz üzerine. Şirket içi dokümanlar, teklifler, sözleşmeler Türkçe çalışılıyor. İngilizce dokümanları okumanız gerekmiyor.`,
   },
   {
     q: 'KVKK uyumu nasıl sağlanıyor?',
-    a: `Eğitim sırasında müşteri verisi veya gerçek kişisel veri kullanılmaz, sentetik örnekler ve genelleştirilmiş senaryolarla çalışılır. Kurumsal programda ayrıca her şirkete özel <strong>"Yapay Zeka Kullanım Politikası"</strong> dokümanı hazırlıyoruz. Bu doküman KVKK Kanunu ve Anthropic'in veri işleme şartlarıyla uyumlu, çalışanlarınızın hangi veriyi Claude ile paylaşıp paylaşamayacağını netleştirir. KVKK detayları için <a href="/wiki/temeller/gizlilik-kvkk/">wiki'deki KVKK rehberini</a> de inceleyebilirsiniz.`,
+    a: `<strong>Kısa cevap: Eğitimde gerçek kişisel veri kullanılmaz; kurumsal müşteriler için şirkete özel "Yapay Zeka Kullanım Politikası" dokümanı hazırlanır.</strong> Eğitim sırasında müşteri verisi veya gerçek kişisel veri kullanılmaz, sentetik örnekler ve genelleştirilmiş senaryolarla çalışılır. Bu yaklaşım eğitimin KVKK risksiz tutulması için temel kural. Kurumsal programda ayrıca her şirkete özel <strong>"Yapay Zeka Kullanım Politikası"</strong> dokümanı hazırlıyoruz. Bu doküman KVKK Kanunu (Madde 5, 6, 8, 9), Anthropic'in veri işleme şartları (DPA), ve şirket içi süreçleri eşleştirir. Çalışanlarınızın hangi veriyi Claude ile paylaşıp paylaşamayacağını netleştirir: TC kimlik numarası, sağlık verisi, finansal kayıt, müşteri kişisel verisi gibi hassas kategorilerin işleme kuralları. Anthropic Team/Enterprise planlarında verilerinizin model eğitiminde kullanılmadığı sözleşme ile garanti, bu KVKK Madde 9 (yurt dışına aktarım) uyumu için kritik bileşen. Detay için <a href="/wiki/temeller/gizlilik-kvkk/">wiki KVKK rehberi</a>.`,
   },
   {
     q: 'Memnun kalmazsam ne olur? İade veya garanti var mı?',
-    a: `Bireysel Program'da: ilk oturum sonunda devam etmek istemezseniz ödediğiniz tutarın tamamı iade edilir, ilk oturumun ücreti dahil. Kurumsal'da: ilk ay sonunda iki taraf da çekilebilir, sözleşme aylık fesih koşuluyla bağlanır (toplam minimum 3 ay diye satılsa da yapısal olarak aydan aya). Garantimiz "kalıcı olarak Claude kullanımını ekibinize yerleştirmek" üzerine, bunu sağlamadığımızı görürsek devam ettirmek zaten anlamsız.`,
+    a: `<strong>Kısa cevap: Bireysel'de ilk oturum sonrası tam iade; Kurumsal'da aylık fesih hakkı, minimum bağlanma yok.</strong> Bireysel Program'da: ilk oturum sonunda devam etmek istemezseniz ödediğiniz tutarın tamamı iade edilir, ilk oturumun ücreti dahil. Bu "risk size yok" garantisi çünkü ilk oturum (CLAUDE.md kurulumu + ilk gerçek iş çıktısı) zaten Zamana yaklaşımının özünü gösteriyor; orada karar veremiyorsanız programın geri kalanı işe yaramaz. Kurumsal'da: ilk ay sonunda iki taraf da çekilebilir, sözleşme aylık fesih koşuluyla bağlanır (toplam minimum 3 ay diye satılsa da yapısal olarak aydan aya, peşin 3 ay ödeme yok). Bir aylık ücret ödenir, sonraki ay başlamadan fesih hakkınız var. Garantimiz "kalıcı olarak Claude kullanımını ekibinize yerleştirmek" üzerine; bunu sağlamadığımızı görürsek devam ettirmek zaten anlamsız, müşteri için de bizim için de.`,
   },
   {
     q: 'Eğitim sonrası ne olur? Sürekli bağımlı mı oluyoruz?',
-    a: `Tam tersi, hedefimiz bağımsızlığınız. Üç aylık destek sona erdiğinde ekibiniz kendi başına yeni iş akışı kurabilen, prompt yazabilen, ekipteki yeni gelen kişileri eğitebilen bir AI pratiğine sahip oluyor. Sonrasında devam etmek isterseniz ek danışmanlık paketleri var (saatlik veya aylık), ama varsayılan beklenti "ihtiyaç duymama" yönünde. Üç ay sonunda ihtiyaç duymuyorsanız Zamana doğru iş yapmıştır.`,
+    a: `<strong>Kısa cevap: Tam tersi, üç ay sonunda ekibinizin Zamana olmadan devam edebilmesi hedef. Bağımlılık başarısızlık göstergesidir.</strong> Üç aylık destek sona erdiğinde ekibiniz kendi başına yeni iş akışı kurabilen, prompt yazabilen, ekipteki yeni gelen kişileri eğitebilen bir AI pratiğine sahip oluyor. Programın somut bırakma çıktıları: şirkete özel CLAUDE.md dosyası, departman bazlı prompt kütüphanesi, kurulu MCP konnektörler, dokümante edilmiş iş akışları, eğitim notları. Bunlar şirketinde kalır, çalışan ayrılırsa bile gitmez. Sonrasında devam etmek isterseniz ek danışmanlık paketleri var: saatlik ($150/saat) veya aylık abonelik ($800/ay sınırlı destek), ama varsayılan beklenti "ihtiyaç duymama" yönünde. Yeni Anthropic özellikleri çıktığında (yeni model, yeni Skill) wiki güncelleniyor, eski müşterilere otomatik bildirim gidiyor. Üç ay sonunda Zamana'ya ihtiyaç duymuyorsanız doğru iş yapılmıştır.`,
   },
   {
     q: 'ChatGPT veya Gemini yerine neden Claude?',
-    a: `Zamana sadece Claude eğitir çünkü kurumsal iş kullanımında Claude'un üstün olduğu alanlar belirgin: uzun bağlam (200K+ token), Türkçe çıktı kalitesi, dokümana sadık özetleme, daha iddia etmeden soru sorma davranışı, dosya/MCP/Cowork gibi kurumsal araçların derinliği. ChatGPT yaratıcı yazımda hızlı, Gemini Google ekosistemi için pratik, ama "iş bağlamına gerçek entegrasyon" konusunda Claude şu anda önde. Tabii ekibinizdeki kişiler diğer araçları da kullanabilir, eğitimde edindiğiniz prompt yazma ve iş akışı tasarımı becerileri büyük ölçüde transfer olur.`,
+    a: `<strong>Kısa cevap: Kurumsal iş entegrasyonunda Claude şu an önde, Türkçe kalitesi, 200K+ token bağlam, dokümana sadakat ve CLAUDE.md şeffaflığı belirleyici.</strong> Zamana sadece Claude eğitir çünkü kurumsal iş kullanımında Claude'un üstün olduğu alanlar belirgin: 200K+ token uzun bağlam (rapor, sözleşme, geçmiş yazışma seti aynı oturumda), Türkçe çıktı kalitesi (resmi yazışma, KDV/SGK terimleri, Türk hukuk dili doğru), dokümana sadık özetleme (uydurmuyor, bilmediğinde söylüyor), iddia etmeden soru sorma davranışı, dosya/MCP/Cowork/Skills gibi kurumsal araçların derinliği. ChatGPT yaratıcı yazımda hızlı, Gemini Google Workspace ekosistemi içinde pratik, Grok sosyal medya analizinde güçlü, ama "iş bağlamına gerçek entegrasyon" konusunda Claude şu anda önde. Tabii ekibinizdeki kişiler diğer araçları da kullanabilir, eğitimde edindiğiniz prompt yazma ve iş akışı tasarımı becerileri büyük ölçüde transfer olur. <a href="/wiki/temeller/claude-vs-chatgpt/">Detaylı karşılaştırma</a>.`,
   },
   {
     q: 'Eğitim online mı, yüz yüze mi?',
-    a: `Birebir online (Zoom veya Google Meet). Kurumsal programda yüz yüze de yapabiliyoruz, İstanbul içinde ek ücretsiz, dışındaki şehirler için yol/konaklama maliyeti şirket karşılar. Ama deneyimimiz online'ın hızlı ve etkili olduğu yönünde, ekran paylaşımı ile Claude'un kullanıldığı asıl ortamda öğrenme daha doğru sonuç veriyor.`,
+    a: `<strong>Kısa cevap: Birebir online (Zoom/Google Meet) varsayılan. Kurumsal'da yüz yüze opsiyonu var, İstanbul'da ek ücretsiz.</strong> Bireysel Program tamamen online; Zoom veya Google Meet üzerinden ekran paylaşımıyla yapılıyor, çünkü Claude'un kullanıldığı asıl ortam zaten ekran. Online formatın avantajı: kayıt alabilirsiniz (Zamana onayıyla), tekrar izleyebilirsiniz, ulaşım/zaman kaybı yok, hafta içi akşam veya hafta sonu esnek planlama mümkün. Kurumsal Program varsayılanı da online ama yüz yüze opsiyonu var. İstanbul içi (her ilçe) ek ücret olmadan yerinde yapıyoruz, şirket ofisinde toplantı odası ve internet yeterli. İstanbul dışı şehirlerde (Ankara, İzmir, Bursa, Antalya gibi) yol ve konaklama maliyeti şirket karşılar, tipik ek $200-400/oturum. Hibrit yaklaşım da mümkün: ilk oturum yüz yüze tanışma, sonrakiler online. Deneyimimiz online'ın hızlı ve etkili olduğu yönünde; ekran paylaşımı ile öğrenme yüz yüze toplantıdan daha doğru sonuç veriyor.`,
   },
   {
     q: 'Ekibim Claude\'u zaten kullanıyor. Yine de eğitim almalı mıyız?',
-    a: `Çoğu zaman evet. "Kullanmak" ve "iş süreçlerine entegre etmek" çok farklı şeyler. Türkiye'de Claude Pro abonesi olan binlerce kişi var, ama günde 3+ saat aktif iş yükü Claude'a verebilen, prompt kütüphanesi yazmış, CLAUDE.md ile çalışan, MCP konnektörü kurmuş kişi sayısı çok az. İlk görüşmemizde ekibinizin mevcut kullanım seviyesini değerlendiriyoruz, eğer gerçekten ileri seviyedelerse "şu an eğitim almanıza gerek yok" da diyebiliriz, bu olmuş bir durum.`,
+    a: `<strong>Kısa cevap: Çoğu zaman evet, ama ilk görüşmede mevcut seviyenizi değerlendiriyoruz, gerçekten ileri seviyedeyseniz "şu an gerek yok" diyebiliriz.</strong> "Kullanmak" ve "iş süreçlerine entegre etmek" çok farklı şeyler. Türkiye'de Claude Pro abonesi olan binlerce kişi var, ama günde 3+ saat aktif iş yükü Claude'a verebilen, prompt kütüphanesi yazmış, CLAUDE.md ile çalışan, MCP konnektörü kurmuş kişi sayısı çok az, tahminen birkaç yüz. Tipik mevcut kullanım: ara sıra metin yazdırma, e-posta taslağı, basit özet. Bu kullanım Claude'un kapasitesinin %10-15'i. Zamana eğitiminin getirisi: kalan %85'in iş akışına oturtulması, yapısal CLAUDE.md ile şirket bilgisinin Claude'a yüklenmesi, departman bazlı prompt kütüphanesi, MCP entegrasyonları (Slack, Drive, Notion, sektörel araçlar). İlk görüşmede ekibinizin mevcut kullanım seviyesini değerlendiriyoruz; eğer gerçekten ileri seviyedeyseler "şu an eğitim almanıza gerek yok, 6 ay sonra konuşalım" da diyebiliriz, bu olmuş bir durum.`,
   },
 ];
 
@@ -86,6 +86,20 @@ const faqSchema = {
         Görüşme öncesi veya sonrası en çok karşılaştığımız sorular ve dürüst cevapları.
         Cevap aradığınız soru burada yoksa <a href="/iletisim">doğrudan sorun</a>.
       </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <div class="tldr-card">
+        <span class="tldr-label">Özet</span>
+        <p>
+          Zamana iki program sunar: <strong>Bireysel ($1.000 + KDV, 3 hafta + 3 ay destek)</strong>
+          ve <strong>Kurumsal ($3.000 + KDV/ay, 6 çalışan, minimum 3 ay)</strong>.
+          Eğitim Türkçe, online (kurumsalda yüz yüze opsiyonu), yazılımcı bilgisi gerektirmez.
+          KVKK uyumlu, sentetik veriyle çalışılır. Anthropic Partner. Aylık fesih hakkı, peşin bağlanma yok.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -124,6 +138,30 @@ const faqSchema = {
 </Layout>
 
 <style>
+  .tldr-card {
+    background: var(--c-white);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    padding: var(--s-4) var(--s-5);
+    box-shadow: var(--sh-mid);
+  }
+  .tldr-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-dark);
+    margin-bottom: var(--s-2);
+  }
+  .tldr-card p {
+    margin: 0;
+    color: var(--c-text);
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+  .tldr-card strong { color: var(--c-navy); }
+
   .faq-list {
     list-style: none;
     display: grid;
