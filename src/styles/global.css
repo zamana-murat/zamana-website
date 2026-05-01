@@ -28,7 +28,7 @@
   --c-bg-subtle:      rgba(201, 168, 76, 0.04);
 
   /* Typography */
-  --font-sans: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
 
   /* Spacing scale (8px base) */
