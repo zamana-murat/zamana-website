@@ -1,0 +1,160 @@
+---
+import '../styles/wiki.css';
+import Layout from './Layout.astro';
+import WikiSidebar from '../components/WikiSidebar.astro';
+import WikiTabs from '../components/WikiTabs.astro';
+import WikiBreadcrumb from '../components/WikiBreadcrumb.astro';
+import WikiPrevNext from '../components/WikiPrevNext.astro';
+import RetainerCTA from '../components/RetainerCTA.astro';
+import { findNav } from '../data/wiki-nav';
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  slug: string;
+  title: string;
+  description?: string;
+  tags?: string[];
+  headings?: MarkdownHeading[];
+  publishDate?: string;
+  modifiedDate?: string;
+}
+
+const {
+  slug,
+  title,
+  description,
+  headings = [],
+  publishDate,
+  modifiedDate,
+} = Astro.props;
+
+const { section, prev, next } = findNav(slug);
+
+// Build canonical OG image slug. We'll generate one OG per wiki page:
+// `wiki-<slug-with-dashes>.png`. Slug `temeller/claude-nedir` → `wiki-temeller-claude-nedir`.
+const safeSlug = slug ? `wiki-${slug.replace(/\//g, '-')}` : 'wiki-index';
+const ogImage = `/og/${safeSlug}.png`;
+
+const siteUrl = 'https://zamana.com.tr';
+const pageUrl = `${siteUrl}/wiki/${slug ? slug + '/' : ''}`;
+
+// Schema.org Article + BreadcrumbList for the wiki page
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description || title,
+  image: `${siteUrl}${ogImage}`,
+  datePublished: publishDate ? `${publishDate}T00:00:00+03:00` : undefined,
+  dateModified: modifiedDate ? `${modifiedDate}T00:00:00+03:00` : undefined,
+  author: {
+    '@type': 'Person',
+    name: 'Murat Özsaygılı',
+    url: `${siteUrl}/hakkinda/`,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Zamana',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${siteUrl}/images/zamana-logo.webp`,
+    },
+  },
+  mainEntityOfPage: pageUrl,
+  inLanguage: 'tr-TR',
+};
+
+// Wiki-specific BreadcrumbList (overrides Layout's auto-generated one with proper labels)
+const breadcrumbItems = [
+  { name: 'Anasayfa', url: `${siteUrl}/` },
+  { name: 'Wiki', url: `${siteUrl}/wiki/` },
+];
+if (section && slug && slug !== section.landingSlug) {
+  breadcrumbItems.push({ name: section.label, url: `${siteUrl}/wiki/${section.landingSlug}/` });
+}
+if (slug) {
+  breadcrumbItems.push({ name: title, url: pageUrl });
+}
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((b, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: b.name,
+    item: b.url,
+  })),
+};
+---
+
+<Layout
+  title={`${title} | Zamana Wiki`}
+  description={description || title}
+  ogImage={ogImage}
+  publishDate={publishDate}
+  modifiedDate={modifiedDate}
+  skipAutoBreadcrumb={true}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <WikiTabs activeSlug={slug} />
+
+  <div class={`wiki-shell ${section ? '' : 'wiki-shell--no-sidebar'}`}>
+    <WikiSidebar activeSlug={slug} />
+
+    <article class="wiki-article">
+      {slug && <WikiBreadcrumb slug={slug} title={title} />}
+      <header class="wiki-article__header">
+        <h1>{title}</h1>
+      </header>
+
+      <div class="wiki-prose">
+        <slot />
+      </div>
+
+      <RetainerCTA />
+
+      <WikiPrevNext prev={prev} next={next} />
+    </article>
+  </div>
+</Layout>
+
+<style>
+  /* Wiki uses a wider max-width than the marketing site (1440px vs 1200px),
+     matching the old MkDocs Material layout proportions. The shared token
+     --wiki-max-w lives in src/styles/wiki.css and is also consumed by
+     WikiTabs so the inner bar lines up. */
+  .wiki-shell {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 2.5rem;
+    max-width: var(--wiki-max-w);
+    margin: 0 auto;
+    padding: 2rem var(--s-4) 4rem;
+  }
+  .wiki-shell--no-sidebar {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 880px;
+  }
+  .wiki-article { min-width: 0; }
+  .wiki-article__header { margin-bottom: 1.5rem; }
+  .wiki-article__header h1 {
+    color: var(--c-navy);
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+  .wiki-article__lead {
+    color: var(--c-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 960px) {
+    .wiki-shell {
+      grid-template-columns: 1fr;
+      padding: 1rem var(--s-3) 3rem;
+    }
+  }
+</style>

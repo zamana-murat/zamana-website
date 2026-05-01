@@ -1,0 +1,84 @@
+---
+import { wikiNav } from '../data/wiki-nav';
+
+interface Props {
+  activeSlug: string;
+}
+const { activeSlug } = Astro.props;
+
+function isActive(landingSlug: string): boolean {
+  return activeSlug === landingSlug || activeSlug.startsWith(`${landingSlug}/`);
+}
+
+const homeActive = activeSlug === '' || activeSlug === 'okuma-sirasi';
+---
+
+<nav class="wiki-tabs" aria-label="Wiki kategorileri">
+  <div class="wiki-tabs__inner">
+    <a href="/wiki/" class={`wiki-tabs__item ${homeActive ? 'is-active' : ''}`}>Wiki Anasayfa</a>
+    {wikiNav.map((section) => (
+      <a
+        href={`/wiki/${section.landingSlug}/`}
+        class={`wiki-tabs__item ${isActive(section.landingSlug) ? 'is-active' : ''}`}
+      >
+        {section.label}
+      </a>
+    ))}
+  </div>
+</nav>
+
+<style>
+  .wiki-tabs {
+    background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
+    border-bottom: 2px solid var(--c-gold);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    box-shadow: var(--sh-soft);
+  }
+  .wiki-tabs__inner {
+    max-width: var(--wiki-max-w);
+    margin: 0 auto;
+    padding: 0 var(--s-4);
+    display: flex;
+    gap: 0.25rem;
+    overflow-x: auto;
+    /* Hide scrollbar — tabs are still scrollable via touch/wheel on overflow */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .wiki-tabs__inner::-webkit-scrollbar { display: none; }
+
+  .wiki-tabs__item {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 0.85rem 1rem;
+    color: var(--c-text-light-muted);
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    transition: color var(--t-fast), border-color var(--t-fast);
+  }
+  .wiki-tabs__item:hover {
+    color: var(--c-gold-light);
+  }
+  .wiki-tabs__item.is-active {
+    color: var(--c-gold-light);
+    border-bottom-color: var(--c-gold);
+  }
+
+  @media (max-width: 820px) {
+    .wiki-tabs__inner {
+      padding: 0 var(--s-3);
+      gap: 0;
+    }
+    .wiki-tabs__item {
+      padding: 0.75rem 0.85rem;
+      font-size: 0.88rem;
+    }
+  }
+</style>

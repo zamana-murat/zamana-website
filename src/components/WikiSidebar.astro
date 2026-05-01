@@ -1,0 +1,92 @@
+---
+import { wikiNav } from '../data/wiki-nav';
+
+interface Props {
+  activeSlug: string;
+}
+const { activeSlug } = Astro.props;
+
+// Determine the active section. If there is no match (e.g. wiki home,
+// okuma-sirasi), we render nothing — the top tabs are enough.
+const sectionKey = activeSlug.split('/')[0];
+const section = wikiNav.find((s) => s.landingSlug === sectionKey);
+---
+
+{section && (
+  <aside class="wiki-sidebar" aria-label={`${section.label} sayfaları`}>
+    <p class="wiki-sidebar__heading">{section.label}</p>
+    <ul class="wiki-sidebar__list">
+      {section.items.map((item) => (
+        <li>
+          <a
+            href={`/wiki/${item.slug}/`}
+            class={item.slug === activeSlug ? 'is-active' : ''}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </aside>
+)}
+
+<style>
+  .wiki-sidebar {
+    position: sticky;
+    top: 110px; /* main header (~64px) + wiki tabs (~46px) */
+    align-self: start;
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    font-size: 0.92rem;
+  }
+  .wiki-sidebar__heading {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin: 0 0 0.5rem 0.6rem;
+  }
+  .wiki-sidebar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid var(--c-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .wiki-sidebar__list a {
+    display: block;
+    padding: 0.4rem 0.75rem;
+    color: var(--c-text-muted);
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    line-height: 1.4;
+    transition: color var(--t-fast), background var(--t-fast), border-color var(--t-fast);
+    text-decoration: none;
+  }
+  .wiki-sidebar__list a:hover {
+    color: var(--c-navy);
+    background: var(--c-bg-subtle);
+  }
+  .wiki-sidebar__list a.is-active {
+    color: var(--c-gold-text);
+    background: var(--c-bg-subtle);
+    border-left-color: var(--c-gold);
+    font-weight: 600;
+  }
+
+  /* Mobile: collapse into a top section above content */
+  @media (max-width: 960px) {
+    .wiki-sidebar {
+      position: static;
+      max-height: none;
+      padding-right: 0;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--c-border);
+      padding-bottom: 1rem;
+    }
+  }
+</style>

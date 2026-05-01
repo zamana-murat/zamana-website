@@ -10,8 +10,8 @@
 
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
-import { dirname, join, resolve } from 'node:path';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, statSync } from 'node:fs';
+import { dirname, join, resolve, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -104,6 +104,70 @@ const pages = [
     title: 'Çerez Politikası',
   },
 ];
+
+// ── Wiki pages: discover from src/content/wiki/, derive eyebrow from section,
+// title from frontmatter. Output filename: wiki-<slug-with-dashes>.png ────────
+const WIKI_DIR = join(ROOT, 'src', 'content', 'wiki');
+const SECTION_LABELS = {
+  '': 'Wiki',
+  'temeller': 'Temeller',
+  'araclar': 'Araçlar',
+  'claude-md': 'CLAUDE.md',
+  'prompting': 'Prompting',
+  'yetenekler': 'Yetenekler',
+  'mcp': 'MCP ve Eklentiler',
+  'departmanlar': 'Departmanlar',
+  'sozluk': 'Sözlük',
+};
+
+function walkMdx(dir, files = []) {
+  if (!existsSync(dir)) return files;
+  for (const entry of readdirSync(dir)) {
+    const full = join(dir, entry);
+    const st = statSync(full);
+    if (st.isDirectory()) walkMdx(full, files);
+    else if (entry.endsWith('.mdx') || entry.endsWith('.md')) files.push(full);
+  }
+  return files;
+}
+
+function parseFrontmatter(text) {
+  const m = text.match(/^---\n([\s\S]*?)\n---/);
+  if (!m) return {};
+  const out = {};
+  for (const line of m[1].split('\n')) {
+    const km = line.match(/^([a-zA-Z_][\w-]*)\s*:\s*(.*)$/);
+    if (km) {
+      let v = km[2].trim();
+      // Strip surrounding quotes
+      v = v.replace(/^["'](.*)["']$/, '$1');
+      out[km[1]] = v;
+    }
+  }
+  return out;
+}
+
+const wikiFiles = walkMdx(WIKI_DIR);
+for (const file of wikiFiles) {
+  const rel = relative(WIKI_DIR, file).replace(/\\/g, '/').replace(/\.mdx?$/, '');
+  // rel: 'index' | 'sozluk' | 'temeller/index' | 'temeller/claude-nedir'
+  let urlSlug;
+  if (rel === 'index') urlSlug = '';
+  else urlSlug = rel.replace(/\/index$/, '');
+
+  const fm = parseFrontmatter(readFileSync(file, 'utf8'));
+  const title = fm.title || urlSlug;
+
+  // Eyebrow: section label, or 'Wiki' for the homepage
+  const sectionKey = urlSlug.split('/')[0] || '';
+  const eyebrow = SECTION_LABELS[sectionKey] || 'Wiki';
+
+  pages.push({
+    slug: urlSlug ? `wiki-${urlSlug.replace(/\//g, '-')}` : 'wiki-index',
+    eyebrow,
+    title: title.length > 90 ? title.slice(0, 87) + '…' : title,
+  });
+}
 
 /**
  * Build the satori JSX-like tree for a single OG image.

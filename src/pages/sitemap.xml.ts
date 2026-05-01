@@ -1,8 +1,9 @@
 import type { APIRoute } from 'astro';
+import { allWikiSlugs } from '../data/wiki-nav';
 
 const SITE = 'https://zamana.com.tr';
 
-const routes = [
+const baseRoutes = [
   { path: '/',                              priority: '1.0', changefreq: 'monthly' },
   { path: '/programlar',                    priority: '0.9', changefreq: 'monthly' },
   { path: '/programlar/bireysel',           priority: '0.9', changefreq: 'monthly' },
@@ -14,6 +15,20 @@ const routes = [
   { path: '/gizlilik',                      priority: '0.3', changefreq: 'yearly'  },
   { path: '/cerezler',                      priority: '0.3', changefreq: 'yearly'  },
 ];
+
+// Wiki routes — derived from the canonical nav config (single source of truth).
+const wikiRoutes = allWikiSlugs().map((slug) => {
+  const path = slug ? `/wiki/${slug}/` : '/wiki/';
+  // Section landings + wiki home get higher priority; deep articles slightly lower.
+  const isLanding = !slug.includes('/') || slug === '';
+  return {
+    path,
+    priority: isLanding ? '0.9' : '0.7',
+    changefreq: 'monthly',
+  };
+});
+
+const routes = [...baseRoutes, ...wikiRoutes];
 
 export const GET: APIRoute = () => {
   const today = new Date().toISOString().slice(0, 10);

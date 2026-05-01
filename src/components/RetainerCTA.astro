@@ -1,0 +1,65 @@
+---
+/**
+ * Reusable retainer CTA box.
+ * Mirrors wiki/snippets/retainer-cta.md content, restyled with site brand tokens.
+ */
+---
+
+<aside class="retainer-cta">
+  <div class="retainer-cta__inner">
+    <p class="retainer-cta__eyebrow">Zamana Programları</p>
+    <h3>Claude'u şirketinize entegre edelim.</h3>
+    <p>
+      Bu wiki'yi okudunuz, ama tek başına okumak yetmez. Zamana, Claude'u kurumsal düzeyde uygulamak için iki program sunuyor:
+      <strong>Bireysel Program</strong> (3 hafta birebir, $1.000) veya
+      <strong>Kurumsal Retainer</strong> (3 ay × 6 çalışan, $9.000).
+    </p>
+    <div class="retainer-cta__actions">
+      <a href="/programlar/" class="btn btn--primary">Programları İncele</a>
+      <a href="/iletisim/" class="btn btn--ghost">Görüşme Talep Et</a>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .retainer-cta {
+    margin: 3rem 0 1.5rem;
+    border-radius: var(--r-lg);
+    background: linear-gradient(160deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
+    color: var(--c-text-light);
+    border-top: 3px solid var(--c-gold);
+    box-shadow: var(--sh-mid);
+    overflow: hidden;
+  }
+  .retainer-cta__inner {
+    padding: 2rem 1.75rem;
+  }
+  .retainer-cta__eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-gold-light);
+    margin: 0 0 0.5rem;
+  }
+  .retainer-cta h3 {
+    color: var(--c-white);
+    font-size: 1.4rem;
+    margin: 0 0 0.75rem;
+    line-height: 1.3;
+  }
+  .retainer-cta p {
+    color: var(--c-text-light-muted);
+    margin: 0 0 1.25rem;
+    line-height: 1.7;
+  }
+  .retainer-cta strong {
+    color: var(--c-text-light);
+    font-weight: 700;
+  }
+  .retainer-cta__actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+</style>

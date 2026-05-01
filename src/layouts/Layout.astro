@@ -12,6 +12,10 @@ interface Props {
   canonical?: string;
   publishDate?: string;
   modifiedDate?: string;
+  /** Set true when the page provides its own BreadcrumbList Schema.org block. */
+  skipAutoBreadcrumb?: boolean;
+  /** When true, removes the default site container so the page can render full-width. */
+  bare?: boolean;
 }
 
 const {
@@ -22,6 +26,7 @@ const {
   canonical,
   publishDate = '2026-04-25',
   modifiedDate = new Date().toISOString().slice(0, 10),
+  skipAutoBreadcrumb = false,
 } = Astro.props;
 
 const siteUrl = 'https://zamana.com.tr';
@@ -109,7 +114,7 @@ const breadcrumbItems = pathParts.length > 0 ? [
       ],
     })} />
 
-    {breadcrumbItems && (
+    {breadcrumbItems && !skipAutoBreadcrumb && (
       <script type="application/ld+json" set:html={JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',

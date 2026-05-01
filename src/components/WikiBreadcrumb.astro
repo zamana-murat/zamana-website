@@ -1,0 +1,78 @@
+---
+import { wikiNav } from '../data/wiki-nav';
+
+interface Props {
+  slug: string;
+  title: string;
+}
+const { slug, title } = Astro.props;
+
+// Build breadcrumb: Wiki › Section › Page (current is plain text)
+const segments = slug.split('/').filter(Boolean);
+const sectionSlug = segments[0];
+const section = wikiNav.find((s) => s.landingSlug === sectionSlug);
+const isSectionLanding = segments.length === 1 && !!section;
+
+// All ancestors are clickable links. The final entry is the current page
+// (plain text). Section landing pages have only Wiki as ancestor — the
+// section itself is "current" and shown plain.
+const trail: { label: string; href?: string }[] = [
+  { label: 'Wiki', href: '/wiki/' },
+];
+
+if (section) {
+  if (isSectionLanding) {
+    // We're on the section landing — section is current page (plain).
+    trail.push({ label: section.label });
+  } else {
+    // Deep page — section is an intermediate link.
+    trail.push({ label: section.label, href: `/wiki/${section.landingSlug}/` });
+    trail.push({ label: title });
+  }
+} else if (slug) {
+  // Leaf page outside any section (e.g. sozluk, okuma-sirasi).
+  trail.push({ label: title });
+}
+---
+
+<nav class="wiki-breadcrumb" aria-label="İçerik haritası">
+  <ol>
+    {trail.map((item, i) => (
+      <li>
+        {item.href ? <a href={item.href}>{item.label}</a> : <span aria-current="page">{item.label}</span>}
+        {i < trail.length - 1 && <span class="wiki-breadcrumb__sep" aria-hidden="true">›</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .wiki-breadcrumb {
+    font-size: 0.85rem;
+    color: var(--c-text-muted);
+    margin-bottom: 1rem;
+  }
+  .wiki-breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .wiki-breadcrumb li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .wiki-breadcrumb a {
+    color: var(--c-gold-text);
+    text-decoration: none;
+  }
+  .wiki-breadcrumb a:hover { text-decoration: underline; }
+  .wiki-breadcrumb [aria-current="page"] {
+    color: var(--c-navy);
+    font-weight: 600;
+  }
+  .wiki-breadcrumb__sep { color: var(--c-text-muted); }
+</style>

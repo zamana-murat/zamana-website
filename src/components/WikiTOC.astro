@@ -1,0 +1,73 @@
+---
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+const { headings } = Astro.props;
+
+// Only show h2 + h3 (h1 is page title, deeper noise)
+const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{items.length > 0 && (
+  <aside class="wiki-toc" aria-label="Bu sayfada">
+    <p class="wiki-toc__title">Bu sayfada</p>
+    <ol>
+      {items.map((h) => (
+        <li class={h.depth === 3 ? 'is-sub' : ''}>
+          <a href={`#${h.slug}`}>{h.text}</a>
+        </li>
+      ))}
+    </ol>
+  </aside>
+)}
+
+<style>
+  .wiki-toc {
+    position: sticky;
+    top: 80px;
+    align-self: start;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    font-size: 0.85rem;
+    border-left: 2px solid var(--c-border);
+    padding-left: 1rem;
+  }
+  .wiki-toc__title {
+    font-weight: 700;
+    color: var(--c-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.72rem;
+    margin: 0 0 0.5rem;
+  }
+  .wiki-toc ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .wiki-toc li.is-sub { padding-left: 0.75rem; }
+  .wiki-toc a {
+    color: var(--c-text-muted);
+    text-decoration: none;
+    line-height: 1.4;
+    display: block;
+    padding: 0.15rem 0;
+    border-left: 2px solid transparent;
+    margin-left: -0.5rem;
+    padding-left: 0.5rem;
+    transition: color var(--t-fast), border-color var(--t-fast);
+  }
+  .wiki-toc a:hover {
+    color: var(--c-gold-text);
+    border-left-color: var(--c-gold);
+  }
+
+  @media (max-width: 1180px) {
+    .wiki-toc { display: none; }
+  }
+</style>

@@ -7,6 +7,5 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-# Sitemap'ler
+# Sitemap (wiki URL'leri ana sitemap içinde)
 Sitemap: https://zamana.com.tr/sitemap.xml
-Sitemap: https://zamana.com.tr/wiki/sitemap.xml
