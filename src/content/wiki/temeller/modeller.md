@@ -9,9 +9,6 @@ tags:
   - haiku
 ---
 
-
-# Claude Modelleri — Haiku, Sonnet, Opus
-
 ## Model Nedir?
 
 "Model" bir yapay zekanın **beynidir**. Anthropic, OpenAI veya Google gibi şirketler büyük metin koleksiyonlarıyla bir sinir ağını eğitir; ortaya çıkan sistem **bir model**'dir. Claude ile her sohbet ettiğinizde aslında bir modelle konuşursunuz.

@@ -8,9 +8,6 @@ tags:
   - onboarding
 ---
 
-
-# İlk 7 Gün Rehberi
-
 [İlk Kurulum](ilk-kurulum/) tamam. Claude Desktop kurulu, abonelik aktif, Cowork çalışıyor. **Şimdi asıl iş başlıyor — bilgiyi alışkanlığa çevirmek.**
 
 İlk haftayı **doğru** geçirirseniz Claude günlük iş akışınızın kalıcı bir parçası olur. Yanlış geçirirseniz — "denedim, işe yaramadı" grubuna katılırsınız. Aradaki fark mucizevi bir kabiliyet değil, yapılandırılmış bir hafta.

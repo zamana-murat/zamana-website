@@ -8,9 +8,6 @@ tags:
   - standart
 ---
 
-
-# MCP Nedir?
-
 **MCP (Model Context Protocol), Claude'un dış servislere bağlanmasını sağlayan açık bir standarttır.**
 
 Basit çeviriyle: bir **MCP server**, Claude ile üçüncü taraf bir uygulama arasındaki köprüdür. Bir MCP connector kurulup kimlik doğrulaması yapıldığında, **Claude o servis üzerinde sizin adınıza gerçek eylemler alabilir**.

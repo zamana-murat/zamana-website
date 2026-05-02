@@ -7,9 +7,6 @@ tags:
   - cowork
 ---
 
-
-# CLAUDE.md Nedir?
-
 **CLAUDE.md, Claude'un sizi (ve varsa şirketinizi) her oturumda yeniden tanımak zorunda kalmaması için hazırlanan düz metin bir dosyadır.**
 
 Markdown formatındadır. Workspace klasörünüzde durur. Claude, Cowork modunda bir oturum başlattığınızda bu dosyayı otomatik olarak okur ve sessiz bir şekilde "tamam, bu kullanıcıyı tanıyorum" deyip işe başlar.

@@ -10,9 +10,6 @@ tags:
   - enterprise
 ---
 
-
-# Claude Planları — Free, Pro, Max, Team, Enterprise
-
 Claude'un beş ana planı vardır. Plan seçimi sadece fiyatla ilgili değildir — hangi özelliklerin kullanılabilir olduğunu, özellikle **Cowork modu, connector'lar, paylaşılan projeler ve kurumsal uyum araçlarını** doğrudan belirler.
 
 Bu sayfa her planın ne sunduğunu, kime uygun olduğunu ve Zamana müşterileri için önerilen plan stratejisini açıklar.
