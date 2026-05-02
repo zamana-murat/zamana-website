@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist --glob \"wiki/**/*.html\"",
     "preview": "astro preview",
     "astro": "astro",
     "og": "node scripts/generate-og.mjs",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
+    "pagefind": "^1.5.2",
     "satori": "^0.26.0"
   }
 }

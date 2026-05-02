@@ -1,5 +1,6 @@
 ---
 import { wikiNav } from '../data/wiki-nav';
+import WikiSearch from './WikiSearch.astro';
 
 interface Props {
   activeSlug: string;
@@ -24,6 +25,7 @@ const homeActive = activeSlug === '' || activeSlug === 'okuma-sirasi';
         {section.label}
       </a>
     ))}
+    <WikiSearch />
   </div>
 </nav>
 
