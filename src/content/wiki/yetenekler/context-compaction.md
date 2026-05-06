@@ -6,6 +6,7 @@ tags:
   - context-window
   - compaction
   - token
+lastUpdated: "2026-05-06"
 ---
 
 **Context window (bağlam penceresi), Claude'un tek bir konuşmada aynı anda "görebildiği" ve üzerinde çalışabildiği toplam metin miktarıdır.**
@@ -66,7 +67,7 @@ Bu süreç **Cowork ve Dispatch oturumlarında otomatiktir**. Çalışan genelde
 
 ## İş Oturumlarında Compaction Ne Zaman Kritiktir?
 
-Zamana müşterileri için compaction özellikle şunlarda önemlidir:
+Compaction özellikle şu durumlarda önemlidir:
 
 - **Uzun belge inceleme oturumları** — büyük bir sözleşmenin çoklu alışverişte analizi
 - **Çok adımlı rapor üretimi** — veri toplama, taslak yazma, iterasyon, iyileştirme
@@ -118,7 +119,7 @@ Uzun görev (30+ tur, birçok dosya): şu adımları düşün:
 
 Çok uzun proje (saatlerce, birden fazla gün): **kesinlikle** Project bağlam dosyaları ve CLAUDE.md yapılandırılmalı. Tek bir monolitik oturum tercih etme.
 
-## Zamana'nın Öğretme Yaklaşımı
+## Pratik Yaklaşım
 
 Bağlam bir **sınırlı kaynaktır**. Kısa görevlerde görmezden gelin. Uzun ve karmaşık projelerde, en önemli bağlamın **CLAUDE.md veya proje dosyalarında** bulunması için işi yapılandırın — uzun bir konuşmanın içine gömülmesin.
 

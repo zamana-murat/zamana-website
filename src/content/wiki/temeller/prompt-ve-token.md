@@ -6,6 +6,7 @@ tags:
   - prompt
   - token
   - kullanim
+lastUpdated: "2026-05-06"
 ---
 
 Claude'la çalışmaya başlamadan önce iki kelimeyi bilmek yeterli: **prompt** ve **token**. İkisi de basit, ilk başta korkutucu değil.

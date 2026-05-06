@@ -5,6 +5,7 @@ tags:
   - prompting
   - turkce
   - dil
+lastUpdated: "2026-05-06"
 ---
 
 **Claude Türkçe'yi iyi anlar, ama Türkçe yazılan prompt İngilizce yazılan prompttan farklı tepki üretebilir.** Türkçe'nin sondan eklemeli yapısı, tonlama nüansları, iş hayatındaki kalıpları farklıdır. Bu sayfa Türkçe-spesifik teknikleri anlatır.

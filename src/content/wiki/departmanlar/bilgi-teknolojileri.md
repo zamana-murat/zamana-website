@@ -7,6 +7,7 @@ tags:
   - bilgi-teknolojileri
   - powershell
   - kvkk
+lastUpdated: "2026-05-06"
 ---
 
 IT departmanı Claude konusunda iki yeni bakış açısıyla tanışmalıdır:
@@ -47,7 +48,7 @@ Sysadmin neyi otomatize etmek istediğini tarif eder, Claude çalışan bir Powe
 
 Bu tek yetenek IT'ye haftada saatler kazandırır.
 
-> **Bash tool exception:** Cowork'teki Bash tool script çalıştırmaya izin verir. Zamana'nın kural çerçevesi: "İhtiyacını anlat, Claude script'i yazar; sen sonucu doğrularsın." Çalışan kod öğrenmez — sonucun işe yaradığını doğrular.
+> **Bash tool exception:** Cowork'teki Bash tool script çalıştırmaya izin verir. Pratik kural: "İhtiyacını anlat, Claude script'i yazar; sen sonucu doğrularsın." Çalışan kod öğrenmez, sonucun işe yaradığını doğrular.
 
 ## Bölüm 2 — İletişim ve Raporlama
 

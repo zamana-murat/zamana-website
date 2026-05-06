@@ -5,6 +5,7 @@ tags:
   - araclar
   - web-arama
   - guncel-bilgi
+lastUpdated: "2026-05-06"
 ---
 
 **Claude, bir sorunun cevabı eğitim verisinde olmadığında veya güncel veri gerektiğinde otomatik olarak web'de arama yapar.** Sizin ayarlamanız, "şimdi web'i aç" demeniz gerekmez — Claude bunu kendi karar verir, sonuçları okur, cevabını kaynaklarla birlikte sunar.

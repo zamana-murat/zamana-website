@@ -6,6 +6,7 @@ tags:
   - turizm
   - otel
   - misafir-iletisim
+lastUpdated: "2026-05-06"
 ---
 
 Türkiye'de turizm stratejik sektör — ekonominin önemli bir dilimi, milyonlarca uluslararası misafir, çok dilli iletişim zorunluluğu. Otel, acente, tur operatörü için **dil çeşitliliği + 24/7 misafir iletişimi + online yorum yönetimi** Claude'un en hızlı değer ürettiği alanlardandır.

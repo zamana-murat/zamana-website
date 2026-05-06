@@ -5,6 +5,7 @@ tags:
   - mcp
   - guvenlik
   - kvkk
+lastUpdated: "2026-05-06"
 ---
 
 **[MCP](nedir/), Claude'a sisteminize erişim verir.** Bu güç, dikkatsiz kurulduğunda sorun olabilir — yetkisiz veri erişimi, beklenmedik silme işlemleri, prompt injection saldırıları. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar.
@@ -81,7 +82,7 @@ Yetkilerinizi ayarlarken adım adım:
 ❌ **Kötü:** `/` (root) erişimi
 ↓ Claude tüm sistem dosyalarına bakabilir
 
-✅ **İyi:** `/Users/murat/Documents/Claude-workspace`
+✅ **İyi:** `/Users/<kullanici>/Documents/Claude-workspace`
 ↓ Sadece bu klasör
 
 ### Postgres MCP Örneği

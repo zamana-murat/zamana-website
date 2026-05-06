@@ -5,6 +5,7 @@ tags:
   - sozluk
   - terimler
   - referans
+lastUpdated: "2026-05-06"
 ---
 
 Claude ekosistemindeki terimlerin sade Türkçe karşılıkları. Her terim için kısa açıklama ve — varsa — detaylı sayfaya bağlantı.
@@ -51,10 +52,10 @@ Windows ve macOS için yerel uygulama; Cowork moduna giriş kapısı. Detay: [Cl
 Ücretsiz plan; sıkı kullanım limitleri; 5 Project'e kadar; Cowork yok. Detay: [Claude Planları](temeller/planlar/).
 
 **Claude Pro**
-Aylık 20 USD bireysel plan. Zamana eğitim **sonrası** hafif kullanım için uygun. Sonnet 4.6 ve Cowork dahil. Detay: [Planlar](temeller/planlar/).
+Aylık 20 USD bireysel plan. Steady-state hafif kullanım için uygun. Sonnet 4.6 ve Cowork dahil. Detay: [Planlar](temeller/planlar/).
 
 **Claude Max 5x**
-Aylık 100 USD bireysel plan. **Zamana eğitim programı ilk ayı için zorunlu** — yeni kullanıcının agresif keşif ritminde Pro limiti yetmez. Ay 2+ kullanıma göre Pro'ya indirilebilir. Detay: [Planlar](temeller/planlar/).
+Aylık 100 USD bireysel plan. Yeni başlayan kullanıcının ilk ayı için önerilir, agresif keşif ritminde Pro limiti yetmez. Ay 2+ kullanıma göre Pro'ya indirilebilir. Detay: [Planlar](temeller/planlar/).
 
 **Claude Max 20x**
 Aylık 200 USD bireysel plan. Çok yoğun, sürekli kullanım için. Detay: [Planlar](temeller/planlar/).

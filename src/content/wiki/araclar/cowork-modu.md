@@ -1,15 +1,16 @@
 ---
 title: Cowork Modu Nedir?
-description: "Cowork, Claude Desktop'ın iş akışı odaklı modudur. Dosyalarınıza erişir, kod çalıştırır, araçları kullanır. Zamana eğitim programlarının çalışma ortamıdır."
+description: "Cowork, Claude Desktop'ın iş akışı odaklı modudur. Dosyalarınıza erişir, kod çalıştırır, araçları kullanır."
 tags:
   - cowork
   - claude-desktop
   - arac
+lastUpdated: "2026-05-06"
 ---
 
 **Cowork, Claude Desktop uygulamasının içinde yaşayan ve Claude'u bir sohbet arayüzünden tam bir çalışma ortamına dönüştüren özelliktir.** Şu an research preview aşamasındadır — yani aktif geliştirilen, kararlı ve kullanılabilir bir özelliktir ama Anthropic hızla değiştirmeye devam ediyor.
 
-Zamana eğitim programlarının tamamı Cowork üzerine kuruludur. Sebep basit: bir iş profesyoneline gerçek değeri Cowork katar.
+Bir iş profesyoneline Claude'un gerçek değerini katan ortam Cowork'tür.
 
 ## Chat ve Cowork Arasındaki Fark
 
@@ -55,7 +56,7 @@ Telefonunuzdan bir görev gönderirsiniz, Claude masaüstünüzde çalışır, s
 Karmaşık görevlerde Claude birden fazla alt-instance başlatır: biri araştırır, diğeri taslak yazar, üçüncüsü dosyaları kontrol eder. Sonuçlar tek çıktıda birleştirilir.
 
 ### Projects (Projeler)
-Cowork içinde ayrı çalışma alanları — her biri kendi dosyaları, bağlamı, hafızası ve zamanlanmış görevleriyle. "Akmin Q2 satışları" ile "Zamana wiki" projelerini birbirine karıştırmazsınız.
+Cowork içinde ayrı çalışma alanları — her biri kendi dosyaları, bağlamı, hafızası ve zamanlanmış görevleriyle. "Q2 satış raporu" ile "şirket içi wiki" projelerini birbirine karıştırmazsınız.
 
 ## Bir Cowork Oturumu Nasıl İşler?
 
@@ -78,7 +79,7 @@ Cowork'ün kalbidir. Bilgisayarınızda gerçek bir klasördür — siz seçer v
 | **Working directory** | Claude'un geçici çalışma alanı | Oturumlar arası temizlenir |
 | **Workspace klasörü (mnt/)** | Sizin kalıcı teslimat klasörünüz | Her zaman kalıcı |
 
-**Zamana'nın 1. Oturum Kuralı:** Workspace klasörünü hemen kurun. Adını net verin (`ClaudeWorkspace`, `YapayZeka`, `AiCalisma` gibi). Her çıktı oraya gider. Bu alışkanlığı ilk oturumda kurarsanız, bir ay içinde doğal bir refleks haline gelir.
+**Pratik kural:** Workspace klasörünü hemen kurun. Adını net verin (`ClaudeWorkspace`, `YapayZeka`, `AiCalisma` gibi). Her çıktı oraya gider. Bu alışkanlığı ilk günden kurarsanız, bir ay içinde doğal bir refleks haline gelir.
 
 ## Cowork'ün Bağlam Katmanları
 

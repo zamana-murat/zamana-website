@@ -6,6 +6,7 @@ tags:
   - mobil
   - ios
   - android
+lastUpdated: "2026-05-06"
 ---
 
 **Claude'un mobil uygulamaları, masaüstü Claude'un cebinizdeki uzantısıdır** — App Store ve Google Play'den ücretsiz indirilir, hesabınızla giriş yaptığınız anda tüm sohbet geçmişiniz, [Projects](projects/)'iniz ve aboneliğiniz aynen orada.
@@ -88,7 +89,7 @@ Mobil cihazda Claude'a yüklediğiniz fotoğraf, ses kaydı, dosya — hepsi web
 
 Mobil uygulamada hangi planı kullandığınızdan bağımsız oturum açarsınız. Pro, Max 5x veya Max 20x — hangisi varsa o limitle çalışır. Plan farkları için [Planlar](../temeller/planlar/).
 
-**Önemli:** Yeni Zamana katılımcılarına **ilk ay Max 5x ($100/ay) zorunlu**. Pro planda mobilden yoğun kullanım kotayı hızla bitirir; mobil dikte özellikle çok prompt yapar. Detay [Planlar](../temeller/planlar/) sayfasında.
+**Pratik öneri:** Yeni başlayan kullanıcılara ilk ay **Max 5x ($100/ay)** önerilir. Pro planda mobilden yoğun kullanım kotayı hızla bitirir; mobil dikte özellikle çok prompt yapar. Detay [Planlar](../temeller/planlar/) sayfasında.
 
 ## Pratik Tavsiyeler
 

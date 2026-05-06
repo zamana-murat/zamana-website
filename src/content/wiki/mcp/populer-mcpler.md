@@ -5,9 +5,10 @@ tags:
   - mcp
   - populer
   - kurumsal
+lastUpdated: "2026-05-06"
 ---
 
-**MCP ekosisteminde yüzlerce server var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa Zamana metodolojisinde gözlemlenen, denenen ve yönlendirdiğimiz MCP'leri kategorilere ayırarak listeler.
+**MCP ekosisteminde yüzlerce server var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa pratikte gözlemlenen, denenen ve önerilen MCP'leri kategorilere ayırarak listeler.
 
 [Kurulum Rehberi](kurulum-rehberi/) ile birlikte okunmalı; [Güvenlik](guvenlik/) sayfasındaki değerlendirme kontrolleri her server için geçerli.
 

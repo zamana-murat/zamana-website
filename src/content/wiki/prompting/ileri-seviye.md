@@ -7,11 +7,12 @@ tags:
   - xml-tags
   - few-shot
   - prompt-chaining
+lastUpdated: "2026-05-06"
 ---
 
 [Prompting temel ilkelerini](temel-ilkeler/) öğrenen çalışan iş çıktılarının %80'ini zaten kapsamış olur. Kalan %20, iyi olmayı mükemmele yaklaştıran ileri tekniklerdir.
 
-Bu sayfa tutarlı biçimde üstün çıktı üreten 6 tekniği anlatır. Zamana'nın 2. oturum koçluğunda devreye giren ve kaliteli prompt kütüphaneleri kurmanın bel kemiği olan bilgi.
+Bu sayfa tutarlı biçimde üstün çıktı üreten 6 tekniği anlatır. Kaliteli prompt kütüphaneleri kurmanın bel kemiği olan bilgi.
 
 ## 1. XML Tag'leri — Claude'un Yapısal Dili
 
@@ -186,12 +187,12 @@ Bir prompt kütüphanesi, sizin tarafınızdan test edilmiş ve iyileştirilmiş
 
 Workspace klasörünüzde bir `prompts/` klasörü yaratın. Her prompt ayrı bir `.md` dosyası olsun. Claude bu kütüphaneden talep üzerine okuyabilir.
 
-**Zamana hedefi:**
+**Tipik hedefler:**
 
-- 2. Oturum sonunda her çalışanın **5-10 prompt**'u olmalı
-- 3 aylık retainer sonunda **30-50 prompt** olmalı — tüm yaygın iş görevlerini kapsayan
+- İlk birkaç hafta sonunda her çalışanın **5-10 prompt**'u olmalı
+- 3 ay sonunda **30-50 prompt** olmalı, tüm yaygın iş görevlerini kapsayan
 
-Prompt kütüphanesi, programdan kalan en somut ve en değerli varlıktır. İşten ayrıldığında yanınıza alırsınız; bir sonraki işinizde çalışmaya devam eder.
+Prompt kütüphanesi en somut ve en değerli varlıktır. İşten ayrıldığında yanınıza alırsınız; bir sonraki işinizde çalışmaya devam eder.
 
 ## Gelişimi Ne Kadar Önemsemelisiniz?
 

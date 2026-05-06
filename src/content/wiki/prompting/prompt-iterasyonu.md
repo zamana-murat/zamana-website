@@ -6,6 +6,7 @@ tags:
   - iterasyon
   - test
   - geliştirme
+lastUpdated: "2026-05-06"
 ---
 
 **Bir promptu ilk seferinde mükemmel yazmak nadirdir.** İyi prompt **iterasyonla** olur — yazarsın, test edersin, sorunu görürsün, düzeltirsin, tekrar test edersin. Bu sayfa o döngünün sistematik metodolojisini anlatır.

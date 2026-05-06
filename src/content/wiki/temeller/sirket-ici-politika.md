@@ -6,6 +6,7 @@ tags:
   - politika
   - kvkk
   - guvenlik
+lastUpdated: "2026-05-06"
 ---
 
 **"AI kullanımına dair şirket politikamız var mı?"** sorusu denetim, müşteri sözleşmesi, KVKK denetimi veya iş kazası anında çıkar. Cevap "yok" ise sorun olur. Bu sayfa pratik bir politika şablonu sunar.
@@ -123,8 +124,6 @@ Bu politika imzalandıktan sonra çalışan, [İlk 7 Gün](ilk-7-gun/) rehberini
 - Yeni başlayanlar için onboarding (saat/gün tahmini)
 - Çeyreklik içsel paylaşım toplantıları
 - Yıllık politika tazeleme
-
-Zamana retainer veya bireysel programa katılan çalışanlar bu kapsamda sayılır.
 
 ### 10. İhlal ve Disiplin
 

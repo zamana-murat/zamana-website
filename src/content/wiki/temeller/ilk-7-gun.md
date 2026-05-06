@@ -6,13 +6,14 @@ tags:
   - baslangic
   - checklist
   - onboarding
+lastUpdated: "2026-05-06"
 ---
 
 [İlk Kurulum](ilk-kurulum/) tamam. Claude Desktop kurulu, abonelik aktif, Cowork çalışıyor. **Şimdi asıl iş başlıyor — bilgiyi alışkanlığa çevirmek.**
 
 İlk haftayı **doğru** geçirirseniz Claude günlük iş akışınızın kalıcı bir parçası olur. Yanlış geçirirseniz — "denedim, işe yaramadı" grubuna katılırsınız. Aradaki fark mucizevi bir kabiliyet değil, yapılandırılmış bir hafta.
 
-Bu sayfa, Zamana eğitim programlarının birinci haftasının damıtılmış halidir. Her gün **30-60 dakika**, hafta sonunda elinizde gerçek çıktılar ve refleks olmuş bir alışkanlık.
+Bu sayfa, ilk haftayı yapılandırılmış geçirmek için bir rehberdir. Her gün **30-60 dakika**, hafta sonunda elinizde gerçek çıktılar ve refleks olmuş bir alışkanlık.
 
 > **Bu hafta neler kazanacaksınız:**
 >

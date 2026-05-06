@@ -6,6 +6,7 @@ tags:
   - turkce
   - dil-kalitesi
   - yazim
+lastUpdated: "2026-05-06"
 ---
 
 "Claude Türkçeyi ne kadar iyi konuşur?" soyut bir sorudur. Bu sayfa somut cevap verir: dört farklı register (dilsel kayıt) — resmi yazışma, teknik terminoloji, hukuki dil, yaratıcı içerik — için Claude'un tipik çıktılarını gösteririz, güçlü ve zayıf yönleri tartışırız.
@@ -50,7 +51,7 @@ En yüksek formalite seviyesi. Bankalar, devlet kurumları, ticaret odaları, re
 - ⚠️ Çok **arkaik** ifadeler kullanabilir ("bilcümle", "işbu", "müteakiben") — bazı modern resmi yazışmalarda eski görünebilir. **Çözüm:** CLAUDE.md'de "arkaik dil kullanma" belirt.
 - ⚠️ **Uzun cümle** eğilimi var — resmi yazışma uzun cümleye izin verir ama okunurluk düşebilir.
 
-### Zamana Tavsiyesi
+### Pratik Tavsiye
 
 Resmi devlet yazışması için Claude **çok iyi bir ilk taslak üretir**. Ama imzalamadan önce idari personel veya muhasebeci gözden geçirsin — özellikle:
 
@@ -83,7 +84,7 @@ Teknik alan spesifik terimlerle dolu. İngilizce-Türkçe karışımı sık gör
 - ⚠️ **Aşırı Türkçeleştirme** zaman zaman garip sonuçlar verir ("serbest metin alanı" yerine "text field" daha doğal olabilir bazı bağlamlarda)
 - ⚠️ **Sektörel jargon tercihi** her zaman yerelliğe uygun olmayabilir — her şirketin iç jargonu farklı
 
-### Zamana Tavsiyesi
+### Pratik Tavsiye
 
 CLAUDE.md'de **şirketinizin teknik terminoloji tercihini** belirtin: "PLC İngilizce bırak, 'iş istasyonu' Türkçe yaz, 'firewall' Türkçeleştirme."
 
@@ -116,7 +117,7 @@ En spesifik ve en hassas register. Her kelime hukuki sonuç doğurur.
 - ⚠️ **Çok İngilizce hukuk şablonu** etkisi — "dahil ancak bunlarla sınırlı olmaksızın" İngilizce "including but not limited to" çevirisi, Türk hukuku için gerekli değil
 - ⚠️ **Karmaşık cümle** yapısı — hukuki kesinlik için gerekli ama okunurluk zorlu
 
-### Zamana Tavsiyesi
+### Pratik Tavsiye
 
 **Pazarlık dışı kural:** Claude'un yazdığı her hukuki metni avukat incelemeli. Kanun atıfları, tarih aralıkları, sayısal yükümlülükler — hepsi doğrulanmalı. Claude bir **süper hızlı ilk taslak yazarıdır** — hukuki otorite değildir.
 
@@ -153,7 +154,7 @@ Marka sesi, ton, yaratıcılık gerektiren content. Buradaki "doğru" esnek — 
 - ⚠️ **Tonu "fazla güzel"** olabilir — markanın kişiliği daha kuru/alaycı ise yumuşatılmalı
 - ⚠️ **Emoji kullanımı** talep edilmezse nadirdir — bazı markalar bekler
 
-### Zamana Tavsiyesi
+### Pratik Tavsiye
 
 Pazarlama için **CLAUDE.md "Marka Sesi" bölümü kritik.** Şunları net yazın:
 
@@ -168,7 +169,7 @@ Detay: [Pazarlama ve İletişim](../departmanlar/pazarlama/).
 
 ## Dört Register Tek Bakışta
 
-| Register | Claude Yeteneği | Ana Risk | Zamana Tavsiyesi |
+| Register | Claude Yeteneği | Ana Risk | Pratik Tavsiye |
 |---|---|---|---|
 | **Resmi yazışma** | Çok iyi | Arkaik ifade + sayı uydurma | Gözden geçir, sayılar sizin |
 | **Teknik terminoloji** | İyi | Aşırı Türkçeleştirme | CLAUDE.md'ye terminoloji tercihleri yaz |

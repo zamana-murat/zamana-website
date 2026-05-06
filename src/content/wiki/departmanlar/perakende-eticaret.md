@@ -6,6 +6,7 @@ tags:
   - perakende
   - eticaret
   - urun-aciklamasi
+lastUpdated: "2026-05-06"
 ---
 
 Türkiye'de perakende ve e-ticaret hızla büyüyor — Trendyol, Hepsiburada, Amazon TR, kendi siteleri, fiziksel mağaza zincirleri. Her gün **binlerce ürün açıklaması, müşteri yorumu, kampanya metni** gerekir. Claude bu içerik üretim makinesini ölçeklendirir; üstüne veri analizi de katar.
@@ -195,7 +196,7 @@ E-ticaret çalışanı için temel:
 
 ## Bireysel ve Küçük İşletme
 
-Tek kişilik e-ticaret işletmesi için Claude'un değeri olağanüstü. 1 kişiyle 50 kişi gibi içerik üretmek mümkün. [Bireysel program](https://zamana.com.tr) bu profile uygun.
+Tek kişilik e-ticaret işletmesi için Claude'un değeri olağanüstü. 1 kişiyle 50 kişi gibi içerik üretmek mümkün.
 
 ## İlgili Sayfalar
 

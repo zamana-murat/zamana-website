@@ -5,11 +5,12 @@ tags:
   - temeller
   - claude
   - anthropic
+lastUpdated: "2026-05-06"
 ---
 
 **Claude, Anthropic tarafından geliştirilen bir yapay zeka asistanıdır.** Büyük dil modeli (LLM) kategorisindedir; doğal dili anlayıp üretebilir, karmaşık problemler üzerinde akıl yürütebilir, belgeleri analiz edebilir, kod yazabilir ve sizin adınıza araçları kullanabilir.
 
-Kısa cevap bu kadar. Ama Zamana'da gerçek soru şu: **iş dünyasında Claude ile ne yapılır, ne yapılmaz, ve neden ChatGPT yerine Claude seçilir?** Bu sayfa bunu anlatır.
+Kısa cevap bu kadar. Asıl soru şu: **iş dünyasında Claude ile ne yapılır, ne yapılmaz, ve neden ChatGPT yerine Claude seçilir?** Bu sayfa bunu anlatır.
 
 ## Claude'u Kim Yaptı, Neden Yaptı?
 
@@ -75,7 +76,7 @@ Hayır. Her ikisi de büyük dil modeli, ama önemli farklar var — özellikle 
 
 ## Ne Zaman Claude Değil, Başka Araç?
 
-Zamana Claude'u severiz ama **her şey için doğru araç değildir**. Dürüst tavsiye: şu durumlarda Claude yerine (veya ek olarak) başka araç düşünün.
+Claude güçlüdür ama **her şey için doğru araç değildir**. Dürüst tavsiye: şu durumlarda Claude yerine (veya ek olarak) başka araç düşünün.
 
 ### Kesin hesaplama gerektiğinde → **Excel veya özel yazılım**
 
@@ -99,11 +100,11 @@ Claude Artifact'lerde basit dashboard yapar ama kurumsal BI (milyonlarca kayıt,
 
 ### Tamamen offline, hava-boşluklu ortamlar → **Yerel LLM'ler (Llama, Mistral)**
 
-Savunma, hassas finansal sunucular, internet kesintisi garantili ortamlarda Claude kullanılamaz (bulut tabanlı). Yerelde çalışan modeller tercih edilmeli. Bu tip durumlar Zamana müşterilerinde nadirdir.
+Savunma, hassas finansal sunucular, internet kesintisi garantili ortamlarda Claude kullanılamaz (bulut tabanlı). Yerelde çalışan modeller tercih edilmeli. Tipik kurumsal iş ortamlarında bu durum nadirdir.
 
 ### Kod geliştirme (iş profesyoneli değilseniz) → **Claude Code, GitHub Copilot, Cursor**
 
-İş profesyoneli kod yazmaz — Claude'a "şunu yap" der, Claude kodu üretir ve çalıştırır. Ama siz profesyonel bir geliştirici iseniz doğrudan geliştirici aracı (Claude Code, Copilot, Cursor) daha hızlıdır. **Zamana bu alanı kapsamaz.**
+İş profesyoneli kod yazmaz, Claude'a "şunu yap" der, Claude kodu üretir ve çalıştırır. Ama siz profesyonel bir geliştirici iseniz doğrudan geliştirici aracı (Claude Code, Copilot, Cursor) daha hızlıdır.
 
 ### "Claude'a sorma, patronuma sor" olan durumlar
 

@@ -7,6 +7,7 @@ tags:
   - vision
   - ocr
   - gorsel-analiz
+lastUpdated: "2026-05-06"
 ---
 
 Claude görselleri **görür ve akıl yürütür** — metinlerle yaptığı düşünceyle aynı seviyede. Bu basit OCR (metin tanıma) değil, basit görsel tanıma değil. **Görsel muhakemedir**: bağlamı, ilişkileri ve anlamı görsellerden çıkarır.
@@ -115,13 +116,13 @@ Instagram'da bir rakip kampanyası görmüşsünüz. Ekran görüntüsünü payl
 
 Pazarlama toplantısına hazır bir brief çıkar.
 
-## Zamana'nın Öğretme Noktası
+## Önemli Refleks
 
 Çalışanların çoğu **Claude'a fotoğraf verebileceğini bilmez**. "Claude metin aracı" algısı hâkim.
 
 Kartvizit → CRM girişi tek başına bir satış ekibi için "ya!" anıdır. Tahta → toplantı minutu bir yönetici asistanı için "ya!" anıdır.
 
-Zamana'nın eğitim sorusu:
+Kendinize sorun:
 
 > **"Bu bilgi elinde bir görselde mi var? Claude'a ver."**
 

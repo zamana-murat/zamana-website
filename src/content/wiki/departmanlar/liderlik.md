@@ -7,6 +7,7 @@ tags:
   - yonetim
   - strateji
   - ma
+lastUpdated: "2026-05-06"
 ---
 
 Üst yönetim için Claude en büyük zaman unlock'unu sağlar. Sebep basit: **yöneticinin günü büyük ölçüde bilgi tüketmek, karar vermek ve iletişim kurmaktan oluşur** — bu üçü Claude'un en güçlü olduğu yerlerdir.

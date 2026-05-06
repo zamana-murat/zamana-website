@@ -4,11 +4,12 @@ description: "CLAUDE.md bölümü — Claude'un sizi her oturumda yeniden tanım
 tags:
   - claude-md
   - giris
+lastUpdated: "2026-05-06"
 ---
 
-**Zamana eğitim programlarının kalbidir.**
+**Ciddi Claude kullanımının kalbinde CLAUDE.md vardır.**
 
-Bu bir abartı değildir. Claude'u genel bir yapay zeka asistanından çıkarıp size özel — kendi tarzınıza, işinize, varsa ekibinize uygun — bir asistana dönüştüren tek mekanizma CLAUDE.md'dir. Doğru yazılmış bir CLAUDE.md ile Claude ilk günden itibaren sizi, tonunuzu, iş akışlarınızı bilir.
+Bu bir abartı değildir. Claude'u genel bir yapay zeka asistanından çıkarıp size özel (kendi tarzınıza, işinize, varsa ekibinize uygun) bir asistana dönüştüren tek mekanizma CLAUDE.md'dir. Doğru yazılmış bir CLAUDE.md ile Claude ilk günden itibaren sizi, tonunuzu, iş akışlarınızı bilir.
 
 Bu bölüm CLAUDE.md'yi dört açıdan anlatır: nedir, nasıl yazılır, gerçek örnekler, ve CLAUDE.md'nin ötesindeki hafıza katmanları.
 

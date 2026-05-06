@@ -6,6 +6,7 @@ tags:
   - gecmis
   - arama
   - export
+lastUpdated: "2026-05-06"
 ---
 
 **Claude'u haftalarca aktif kullanan biri için, sohbet geçmişi hızla bir bilgi arşivine dönüşür.** Onu yönetmemek, geçmişte değerli üretimleri kaybetmek demektir.

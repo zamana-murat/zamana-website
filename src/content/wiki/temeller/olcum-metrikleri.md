@@ -6,13 +6,14 @@ tags:
   - olcum
   - roi
   - metrikler
+lastUpdated: "2026-05-06"
 ---
 
 **"Claude işe yaradı mı?" sorusunun cevabı duygusal değil sayısal olmalı.** Çoğu şirket Claude'u 6 ay kullanıyor, faydasını "hissediyor" ama ölçemiyor. İlk yıl sonunda yenileme kararı tartışmalı oluyor. Bu sayfa bunu önler.
 
 ## Üç Birincil Metrik
 
-Zamana metodolojisinde Claude etkisi üç eksende ölçülür:
+Claude etkisi üç eksende ölçülür:
 
 1. **Zaman tasarrufu** — kaç saat geri kazanıldı
 2. **Kalite** — üretilenin değeri arttı mı
@@ -30,7 +31,7 @@ Zamana metodolojisinde Claude etkisi üç eksende ölçülür:
 - "Bu hafta Claude bana yaklaşık kaç saat kazandırdı?" tek soru
 - Aralık olarak yanıt: 0-2, 3-5, 6-10, 11-15, 16+
 
-**Tipik aralıklar (Zamana müşteri gözlemleri):**
+**Tipik aralıklar:**
 
 | Kullanıcı tipi | Hafta başına tasarruf |
 |---|---|
@@ -85,7 +86,7 @@ ROI ölçümü Claude eğitiminden **2-3 hafta önce** baseline ile başlar. Bu 
 
 ## Şirket Büyüklüğüne Göre Beklenen Sonuçlar
 
-Aşağıdaki tablo Zamana retainer programı 6 ay sonu gözlemlerine dayanır:
+Aşağıdaki tablo 6 ay sonunda tipik gözlemlere dayanır:
 
 | Şirket büyüklüğü | Pilot kullanıcı | 90 gün sonra ortalama | 180 gün sonra |
 |---|---|---|---|
@@ -101,7 +102,7 @@ Basitleştirilmiş 6 ay ROI:
 
 ```
 Tasarruf = (Çalışan sayısı × Haftalık tasarruf saati × 26 hafta × Saatlik yüklü maliyet)
-Maliyet = Claude abonelik (6 ay) + Zamana retainer + İç eğitim zamanı
+Maliyet = Claude abonelik (6 ay) + Eğitim/danışmanlık + İç eğitim zamanı
 
 ROI = (Tasarruf - Maliyet) / Maliyet × 100
 ```
@@ -111,14 +112,14 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 - 6 çalışan × 8 saat/hafta × 26 hafta = 1.248 saat
 - Saatlik yüklü maliyet 500 ₺ → tasarruf = 624.000 ₺
 - Claude Max 5x maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺)
-- Zamana retainer ($9.000 ≈ 360.000 ₺)
+- Eğitim/danışmanlık (örn. ~360.000 ₺)
 - İç eğitim zamanı (~80 saat × 500 ₺ = 40.000 ₺)
 - Toplam yatırım: ~544.000 ₺
 - **ROI: (624.000 - 544.000) / 544.000 = ~%15 ilk 6 ayda**
 
 **Örnek hesap — İkinci 6 ay (6 kişilik şirket):**
 
-İkinci 6 ayda Zamana retainer ve iç eğitim maliyeti olmaz, sadece Claude Max 5x abonelik maliyeti kalır.
+İkinci 6 ayda eğitim/danışmanlık ve iç eğitim maliyeti olmaz, sadece Claude Max 5x abonelik maliyeti kalır.
 
 - 6 çalışan × 8 saat/hafta × 26 hafta = 1.248 saat
 - Saatlik yüklü maliyet 500 ₺ → tasarruf = 624.000 ₺
@@ -162,9 +163,9 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 - **Check:** 90 günde ölçüm, hedeften sapma analizi
 - **Act:** Düşük kalan kullanıcılarla bireysel görüşme, kullanım engelleri çıkarma, ek eğitim
 
-Zamana retainer programının arka planı bu döngüdür.
+Bu döngü kalıcı adaptasyonun temelidir.
 
-## Müşteri Vaka Örnekleri (Kapalı İsim)
+## Vaka Örnekleri (Kapalı İsim)
 
 > **Trakya bölgesinde gıda üreticisi, 8 çalışan.** 6 ay önce başladılar, ilk ay Max 5x zorunlu plan. 90 gün sonu ortalaması: çalışan başı 9 saat/hafta tasarruf. En büyük kazanç [İhracat](../departmanlar/ihracat/) için müşteri yazışmalarında — Almanca ve Rusça yazışmalar Claude tarafından taslak çıkarılıyor, satış müdürü 15 dk yerine 4 saat harcıyordu.
 
@@ -172,7 +173,7 @@ Zamana retainer programının arka planı bu döngüdür.
 
 > **Ankara'da otomotiv yan sanayi, 35 çalışan.** İlk pilot 6 kişi, 90 gün sonra organizasyon geneline açıldı. Ana kazanç: [Operasyon](../departmanlar/operasyon/) tarafında haftalık üretim raporları ve [Müşteri Hizmetleri](../departmanlar/musteri-hizmetleri/) tarafında çoklu dilde yazışma. Yaklaşık 18-22 saat/hafta toplam tasarruf (organizasyon geneli).
 
-İsimsiz örnekler genel rakamlar verir; spesifik veri için Murat'la görüşme önerilir.
+İsimsiz örnekler genel rakamlar verir; kendi şirketiniz için somut ölçüm yapmak en doğru karşılaştırmadır.
 
 ## Tek Sayıyla Anlatma — CFO İçin
 

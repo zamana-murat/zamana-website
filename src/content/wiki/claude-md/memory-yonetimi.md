@@ -6,6 +6,7 @@ tags:
   - memory
   - hafiza
   - bilgi-tabani
+lastUpdated: "2026-05-06"
 ---
 
 **Claude varsayılan olarak stateless çalışır** — her oturum sıfırdan başlar, önceki oturumu hatırlamaz. Bu bir tasarım tercihidir, ve bir iş kullanıcısı için aktif olarak yönetilmesi gereken bir kısıttır.
@@ -28,7 +29,7 @@ CLAUDE.md, Projects ve memory/ klasörü — bunlar o "geceyarısı notları" n�
 **Ne zaman okunur:** Her Cowork oturumunun başında, otomatik.
 **İçerik:** Değişmeyen gerçekler — kim olduğunuz, şirketiniz, rolünüz, tercihleriniz, terminolojiniz.
 
-Bu en temel ve en kritik katmandır. Zamana eğitiminde ilk oturumda kurulur. Detay: [CLAUDE.md Nedir?](nedir/) ve [CLAUDE.md Nasıl Yazılır?](nasil-yazilir/).
+Bu en temel ve en kritik katmandır. Detay: [CLAUDE.md Nedir?](nedir/) ve [CLAUDE.md Nasıl Yazılır?](nasil-yazilir/).
 
 **Güncelleme sıklığı:** Bir şey değiştiğinde. Bazı çalışanlarda bu ayda bir olur, bazılarında haftada birkaç kez.
 
@@ -73,7 +74,7 @@ memory/
 
 Bu dosyalardan herhangi birini **Claude oturum sırasında kendisi güncelleyebilir** — çalışan "bugün öğrendiğin şeyi doğru klasöre kaydet" der, Claude uygun dosyaya yazar.
 
-Bu, Zamana'nın **"şirket beyni" (company brain)** dediği yapıdır. İleri seviye kullanıcılar için güçlü bir yapı.
+Bu yapıya zaman zaman **"şirket beyni" (company brain)** denir. İleri seviye kullanıcılar için güçlü bir kurulum.
 
 ### Katman 4 — Oturum İçi Bağlam
 

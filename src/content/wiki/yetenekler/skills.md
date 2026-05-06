@@ -6,6 +6,7 @@ tags:
   - skills
   - cowork
   - uzmanlik
+lastUpdated: "2026-05-06"
 ---
 
 **Skills, Claude'a belirli görev tipleri için hazır uzmanlık kazandıran önceden inşa edilmiş talimat setleridir.** Cowork'te `/skill-adi` komutuyla çağrılır.
@@ -85,7 +86,7 @@ Claude `xlsx` skill'ini otomatik devreye alır. Siz komut vermezsiniz.
 
 Özel skill oluşturma için `/skill-creator` skill'ini çağırın — yol gösterir.
 
-**Zamana müşterilerinin yapabileceği örnekler:**
+**Pratik özel skill örnekleri:**
 
 - `haftalık-rapor` — şirketin iç haftalık raporunun tam formatı, bölümleri, tonu önceden yüklü
 - `teklif-yaz` — şirketin standart ticari şartları, fiyat formatı, ikna yaklaşımı
@@ -94,11 +95,11 @@ Claude `xlsx` skill'ini otomatik devreye alır. Siz komut vermezsiniz.
 
 Özel skill, bir ekibin yaptığı işin en tutarlı biçimde **her seferinde aynı kalitede üretilmesini** sağlar.
 
-## Zamana'nın Yaklaşımı
+## Pratik Yaklaşım
 
-Skills sihir değildir — **yapılandırılmış uzmanlığın metne çevrilmiş halidir**. Çalışan hâlâ görevi anlamak zorundadır; skill, Claude'un o görevi en yüksek seviyede yürütmesini sağlar.
+Skills sihir değildir, **yapılandırılmış uzmanlığın metne çevrilmiş halidir**. Çalışan hâlâ görevi anlamak zorundadır; skill, Claude'un o görevi en yüksek seviyede yürütmesini sağlar.
 
-Zamana eğitim programında çalışana üç şey öğretilir:
+Üç pratik prensip:
 
 1. **Hangi skill hangi görev için?** — 9 temel + 11 plugin skill = 20 skill. Bir tablo, bir sayfa. Çalışan haftada bir bakıp refleksleştirir.
 2. **Ne zaman çağrılır?** — Görevi başlamadan önce. "Bir Word raporu yazacağım" dedikten hemen sonra `/docx`. Claude'un varsayılan çıktısına razı olmayıp sonradan iyileştirmeye çalışmaktan çok daha verimli.
@@ -106,7 +107,7 @@ Zamana eğitim programında çalışana üç şey öğretilir:
 
 ## Pratik Keşif Soruları
 
-Eğitim oturumlarında çalışana sık sorulan sorular:
+Kendinize sık sorabileceğiniz sorular:
 
 - **Skill kullanıp iyi bir çıktı aldığında:** *"Eğer şirketinin bu işi yaptığı özel yöntemi bir skill haline getirsek, nasıl görünürdü?"* → Özel skill tohumu atılır.
 - **Bir görev tekrar ediyorsa:** *"Bu işi bir sonraki kez aynı kalitede yapmak için Claude'a ne söylemen gerekir?"* → SKILL.md'nin ilk taslağıdır.

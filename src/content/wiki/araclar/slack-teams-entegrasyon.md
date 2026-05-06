@@ -6,6 +6,7 @@ tags:
   - slack
   - teams
   - entegrasyon
+lastUpdated: "2026-05-06"
 ---
 
 **Çoğu kurumsal ekibin bilgi akışı Slack veya Microsoft Teams'te akar.** Claude'u bu platformlara bağlamak — geçmiş mesajları okuyabilmesi, kanal özetleyebilmesi, akışın içinde çalışabilmesi — günlük üretkenliğin en görünür kazançlarından biridir.

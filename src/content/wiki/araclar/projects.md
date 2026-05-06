@@ -6,6 +6,7 @@ tags:
   - projects
   - claude-chat
   - bilgi-tabani
+lastUpdated: "2026-05-06"
 ---
 
 **Projects, Claude Chat içinde kalıcı ve organize çalışma alanları oluşturan özelliktir.** Her sohbetin sıfırdan başladığı normal bir konuşmanın aksine, bir Project Claude'a her seferinde devam eden bağlam sağlar — **bilgi tabanı** ve **özel talimatlar** yoluyla.
@@ -68,7 +69,7 @@ Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **ha
 
 İkisi birlikte de kullanılır. Bir çalışan masaüstünde Cowork + CLAUDE.md ile çalışırken, ekibin genelinin eriştiği bilgileri Projects'te tutabilir.
 
-## Pratik Project Örnekleri (Zamana Müşterileri İçin)
+## Pratik Project Örnekleri
 
 ### Satış Ekibi Projesi
 
@@ -124,7 +125,7 @@ Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **ha
 | **Team** | Sınırsız + RAG + **paylaşılan projeler, izin kontrolleri ile** |
 | **Enterprise** | Team özellikleri + kurum çapında görünürlük, SSO, yönetici kontrolleri |
 
-Zamana eğitim programında çalışanlar **Max 5x plan ile ilk ay** başlar (zorunlu) — Projects'in tam özellikleri dahil hepsine erişim var. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
+Yeni kullanıcılar genelde **Max 5x ile ilk ay** başlar; Projects'in tam özellikleri dahil hepsine erişim olur. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
 
 ## İlk Project'inizi Nasıl Kurarsınız?
 

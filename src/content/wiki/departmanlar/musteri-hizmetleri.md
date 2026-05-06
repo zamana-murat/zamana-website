@@ -6,6 +6,7 @@ tags:
   - musteri-hizmetleri
   - sikayet-yonetimi
   - sosyal-medya
+lastUpdated: "2026-05-06"
 ---
 
 Müşteri hizmetleri en duygusal yüklü departmanlardan biridir — stres altında, baskı altında, zaman baskısıyla doğru şeyi söylemek gerekir. Claude burada en büyük değeri temsilcinin **zorluk anlarında doğru kelimeleri bulmasına yardım ederek** katar.

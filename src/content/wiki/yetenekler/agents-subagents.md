@@ -6,6 +6,7 @@ tags:
   - agents
   - subagents
   - otonom
+lastUpdated: "2026-05-06"
 ---
 
 **Bir agent, Claude'un birden fazla adım boyunca otonom çalıştığı ve araçlar kullanarak karmaşık görevleri tamamladığı modudur.** Tek bir soruya cevap vermek yerine bir dizi eylemi **planlar, uygular ve gözden geçirir**.
@@ -55,7 +56,7 @@ Cowork içinde birden fazla uzmanlaşmış agent tipi vardır. Çalışan doğru
 - **`Plan`** — mimari ve uygulama planlama
 - **`claude-code-guide`** — Claude Code, API, Agent SDK hakkında sorular
 
-**Önemli not (Zamana kapsamında):** `claude-code-guide` agent'ı geliştirici konularıyla ilgilidir ve **Zamana eğitim programlarının kapsamı dışındadır** ([Brainstorm'daki scope kilidine](../temeller/claude-nedir/) göre).
+**Not:** `claude-code-guide` agent'ı geliştirici konularıyla ilgilidir, iş profesyoneli kapsamı dışındadır.
 
 ## Çalışan Ne Bilmeli?
 
@@ -100,9 +101,9 @@ Subagent'lar paralel çalışırsa: 10 dakika içinde tablo hazırdır.
 - **Kaynak kullanımı:** Pro planda agent yoğun kullanım kotayı hızlı tüketir — [Max plan](../temeller/planlar/) bu tip iş için daha uygundur
 - **Karmaşık doğrulama:** 20 alt görevin hepsini tek tek kontrol etmek zor — önemli çıktılarda beceri gerekir
 
-## Zamana'nın Pozisyonu
+## İş Profesyoneli İçin Pratik Pozisyon
 
-Zamana eğitimi agent mimarisini **öğretmez** — iş profesyoneli için gereksiz teknik detay. Ama çalışan **agent davranışını tanımaya** başlar:
+Agent mimarisini **derinlemesine bilmek gerekmez**, iş profesyoneli için gereksiz teknik detay. Ama agent davranışını **tanımak** önemlidir:
 
 - "Claude birden fazla adım atıyorsa, düşünüyor demektir — kesintiye uğratmayın"
 - "Son çıktı gözden geçirilmelidir — subagent'lar paralel çalıştığı için"

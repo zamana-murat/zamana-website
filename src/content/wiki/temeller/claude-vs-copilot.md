@@ -6,6 +6,7 @@ tags:
   - karsilastirma
   - copilot
   - microsoft
+lastUpdated: "2026-05-06"
 ---
 
 **Microsoft Copilot, Microsoft'un Office uygulamaları ve Windows içine entegre AI asistanıdır.** Türkiye'deki orta-büyük kurumların ezici çoğunluğu Microsoft 365 kullanıyor; bu yüzden Copilot kıyaslaması — *"zaten Microsoft veriyor, Claude'a gerek var mı"* — kurumsal satışta en sık karşılaşılan sorudur.
@@ -83,7 +84,7 @@ Ama Microsoft son dönemde **kendi modelleri** (Phi serisi) ve **Anthropic Claud
 ## Zayıf Yönler — Claude
 
 - Office uygulamaları içinde **yerleşik değil** — Word'de yazıyorken Claude'u açmak için tarayıcıya geçmek veya [Desktop](../araclar/claude-desktop/)'a almak gerekir
-- Türkiye'de doğrudan Anthropic ofisi yok ([Anthropic](anthropic-ve-tarihce/) Türkiye'ye gelmedi); yerel destek için [Zamana](https://zamana.com.tr) gibi partnerler köprü oluyor
+- Türkiye'de doğrudan Anthropic ofisi yok ([Anthropic](anthropic-ve-tarihce/) Türkiye'ye gelmedi); yerel destek mevcut değil
 - Microsoft kurumsal satışında "tek tedarikçi" rahatlığı yok — IT için ek değerlendirme gerektirir
 
 ## Karar Matrisi — Hangi İşte Hangisi?
@@ -125,7 +126,7 @@ Bu itirazın detaylı cevabı [Yaygın İtirazlar](itirazlar/) sayfasında. Kıs
 
 ## Türkiye'deki Pratik Durum
 
-Çoğu Zamana müşterisinin başlangıç durumu:
+Türkiye'deki tipik orta ölçekli şirketin başlangıç durumu:
 
 - M365 sözleşmesi var, çoğunluk Outlook/Word/Excel kullanıyor
 - Copilot lisansı yok veya birkaç pilot kullanıcıda var
@@ -134,7 +135,7 @@ Bu itirazın detaylı cevabı [Yaygın İtirazlar](itirazlar/) sayfasında. Kıs
 
 Önerilen yol:
 
-1. Pilot grupla **Claude** ile başlayın (6 kişi × 3 ay retainer)
+1. Pilot grupla **Claude** ile başlayın (6 kişi × 3 ay)
 2. 90 gün sonra ROI ölçün ([Ölçüm Metrikleri](olcum-metrikleri/))
 3. Kararı veriden verin: tek başına Claude yeterli mi, yoksa Copilot da eklenmeli mi
 4. Karar vereniler için Claude + M365 Copilot karması en yaygın yapı

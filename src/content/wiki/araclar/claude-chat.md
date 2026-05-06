@@ -5,6 +5,7 @@ tags:
   - araclar
   - claude-chat
   - web
+lastUpdated: "2026-05-06"
 ---
 
 **Claude Chat, Claude'un tarayıcı ve mobil uygulamalardaki standart arayüzüdür** — çoğu kişinin Claude'la ilk tanıştığı yerdir. [claude.ai](https://claude.ai) adresinden ve iOS / Android uygulamalarından erişilir.
@@ -70,11 +71,11 @@ Claude Chat içinde **Projects** özelliği, kalıcı ve organize çalışma ala
 | Kurulum gerektirmez | ✅ | |
 | Mobilde çalışır | ✅ | (sadece Dispatch) |
 
-### Zamana'nın Yaklaşımı
+### Pratik Yaklaşım
 
 **Çalışan Claude Chat'te başlar, Cowork'te seviye atlar.**
 
-Çoğu kişi ilk Claude deneyimini Chat'te yaşar. Bu normal ve doğru. Ama profesyonel iş akışlarını gerçek anlamda sisteme oturtmak için **Cowork kaçınılmazdır**. Zamana eğitim programı ilk oturumdan itibaren Cowork üzerinde ilerler — çünkü değerin büyük kısmı oradadır.
+Çoğu kişi ilk Claude deneyimini Chat'te yaşar. Bu normal ve doğru. Ama profesyonel iş akışlarını gerçek anlamda sisteme oturtmak için **Cowork kaçınılmazdır**, çünkü değerin büyük kısmı oradadır.
 
 Chat tamamen ortadan kalkmaz. "Akşam evde kafeyi içerken hızlıca bir şey sorma" anlarında hâlâ en pratik araçtır. Ama ana çalışma ortamı Cowork olur.
 

@@ -7,11 +7,12 @@ tags:
   - kvkk
   - veri-guvenligi
   - dpa
+lastUpdated: "2026-05-06"
 ---
 
 Her kurumsal Claude konuşmasının bir yerinde aynı soru çıkar: **"Verilerimize ne olur?"**
 
-Bu sayfa Zamana'nın bu soruya verdiği net, bağlamlı, Türkiye-odaklı cevabı içerir. Üç ana başlık altında ilerler:
+Bu sayfa o soruya net, bağlamlı, Türkiye-odaklı cevap verir. Üç ana başlık altında ilerler:
 
 1. Anthropic'in veri politikaları — plana göre ne değişir
 2. Hassas veri kuralları — çalışana ne öğretmeli
@@ -33,7 +34,7 @@ Bu sayfa Zamana'nın bu soruya verdiği net, bağlamlı, Türkiye-odaklı cevab�
 
 Anthropic, tüketici kullanıcıları için opt-in bir seçenek ekledi: **"Claude'u geliştirmeye yardım et"**. Bu açıksa, konuşmalarınız kimliksizleştirilmiş biçimde 5 yıla kadar saklanabilir ve model eğitiminde kullanılabilir.
 
-**Zamana önerisi:** Pro/Free planındaki çalışanlar ayarlarını kontrol etmeli. Eğitime başlamadan önce şirket net bir politika belirlemeli. **Varsayılan önerimiz: kapatın.**
+**Pratik öneri:** Pro/Free planındaki çalışanlar ayarlarını kontrol etmeli. Şirket net bir politika belirlemeli. **Kurumsal kullanımda varsayılan: kapatın.**
 
 Bunu nasıl yaparsınız:
 
@@ -108,9 +109,9 @@ Bunların **Claude'a girişi, KVKK kapsamında bir veri işleme faaliyetidir** v
 | **Orta** | Çalışan isimlerine değinen iç raporlar, ticari bağlamda müşteri adları | DPO / KVKK sorumlusu ile gözden geçirilmeli |
 | **Yüksek** | Kimlik bilgisi içeren İK belgeleri, kişisel tanımlı müşteri verisi, sağlık bilgisi, bireysel finansal kayıtlar | Dikkatli tutum gerekir — Enterprise + DPA + Zero Data Retention önerilir |
 
-### Zamana Müşterileri İçin Önerilen Adımlar
+### Önerilen Adımlar
 
-1. **Veri haritası çıkarın.** Çalışanlar eğitim kapsamında hangi veri kategorilerini Claude'a girecek? Önceden belirleyin.
+1. **Veri haritası çıkarın.** Çalışanlar Claude'la çalışırken hangi veri kategorilerini Claude'a girecek? Önceden belirleyin.
 2. **DPA imzalayın (Team / Enterprise müşterileri için).** Anthropic'in Veri İşleme Sözleşmesi (Data Processing Agreement) KVKK uyumlu çalışmayı yasal olarak düzenler.
 3. **Şirket politikası oluşturun.** "Hangi veri kategorileri Claude'a girilebilir, hangileri giremez" — yazılı, imzalı, eğitime dahil edilmiş.
 4. **En hassas kullanımlarda Enterprise + Zero Data Retention.** İK, hukuk, sağlık gibi alanlarda standart Pro/Team yetersiz kalabilir.
@@ -188,7 +189,7 @@ Enterprise DPA'da ihlal bildirim süreleri tanımlıdır (genellikle 72 saat). T
 
 ### 9. Çalışanların Claude kullanımı nasıl eğitiliyor?
 
-Yapılandırılmış bir eğitim programı (örneğin Zamana retainer) bu soruya güçlü cevap verir. Gayri resmi öğrenme KVKK denetim karşısında zayıftır.
+Yapılandırılmış bir iç eğitim programı bu soruya güçlü cevap verir. Gayri resmi öğrenme KVKK denetim karşısında zayıftır.
 
 ### 10. Claude kullanımının iç kontrol / denetim izi nerede?
 
@@ -247,7 +248,7 @@ DPA imzalandı — ekibe bildirin. Çalışanlar Claude'u kullanmaya devam ederk
 - **Team planı standart DPA:** 1-2 hafta
 - **Enterprise müzakereli DPA:** 4-12 hafta (hukuk büroları bağımlı)
 
-Zamana retainer müşterilerinde bu süreç eğitim programının ilk 2 haftasında paralel yürür.
+Yapılandırılmış bir kurulum sürecinde bu adımlar eğitimle paralel yürütülebilir.
 
 ## Sektörel Ek — Düzenlenmiş Sektörler İçin KVKK Üstü Yükümlülükler
 
@@ -299,9 +300,9 @@ KVKK tüm sektörler için geçerlidir. Ama bazı sektörlerde **ek düzenleyici
 
 ## Kurumsal Kontrol Listesi
 
-Zamana eğitim programı başlamadan önce şirketinizin tamamlaması gerekenler:
+Claude'u kurumsal kullanıma açmadan önce tamamlanması gerekenler:
 
-- [ ] Tüm çalışanlar **Claude Max 5x** aboneliğine sahip (ilk ay zorunlu; ay 2+ Pro'ya indirme seçeneği)
+- [ ] Yeni başlayan çalışanların **Claude Max 5x** aboneliği (ilk ay önerilir; ay 2+ Pro'ya indirme seçeneği)
 - [ ] "Claude'u geliştirmeye yardım et" opt-in ayarı her çalışanda **kapalı** olarak ayarlandı
 - [ ] Hangi veri kategorilerinin Claude'a girilebileceği yazılı politikada belirlendi
 - [ ] 5+ çalışan varsa Team plana geçiş düşünüldü (SSO, merkezi yönetim, DPA)

@@ -5,6 +5,7 @@ tags:
   - yetenekler
   - memory
   - bellek
+lastUpdated: "2026-05-06"
 ---
 
 **Claude'un sohbetler arası bilgiyi hatırladığı bir bellek katmanı vardır.** Sizin kim olduğunuzu, neyle uğraştığınızı, tercihlerinizi otomatik biriktirir; sonraki sohbetlerde bu bilgileri kullanır. Bu sayfa nasıl çalıştığını, [CLAUDE.md](../claude-md/nedir/) ile farkını ve kontrol mekanizmalarını anlatır.

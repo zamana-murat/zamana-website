@@ -5,6 +5,7 @@ tags:
   - claude-md
   - sablon
   - rol-bazli
+lastUpdated: "2026-05-06"
 ---
 
 **Sıfırdan iyi bir [CLAUDE.md](nedir/) yazmak ilk seferde zor.** Bu sayfa rol bazlı şablonlar sunar — kopyalayın, kendi bilgilerinizle kişiselleştirin, başlayın.

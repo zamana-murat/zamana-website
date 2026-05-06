@@ -5,6 +5,7 @@ tags:
   - mcp
   - kurulum
   - rehber
+lastUpdated: "2026-05-06"
 ---
 
 **[MCP](nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır.** Bu sayfa bir MCP server'ı Claude Desktop veya claude.ai'a nasıl ekleyeceğinizi adım adım anlatır.
@@ -84,7 +85,7 @@ Temel yapı:
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/murat/Documents"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/kullanici/Documents"]
     },
     "github": {
       "command": "npx",
@@ -113,7 +114,7 @@ Claude'un yerel `Documents` klasörünüze erişebilmesi için:
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/Users/murat/Documents"
+        "/Users/kullanici/Documents"
       ]
     }
   }
@@ -262,7 +263,7 @@ Server kurulduktan sonra deneme:
 
 > *"Documents klasörümde bu hafta değiştirilen dosyaları listele."* (filesystem)
 >
-> *"Şu repo'daki açık PR'ları getir: zamana-murat/zamana-wiki"* (github)
+> *"Şu repo'daki açık PR'ları getir: kullanici/depo-adi"* (github)
 >
 > *"Postgres'te customers tablosundan son 10 kayıt çek."* (postgres)
 

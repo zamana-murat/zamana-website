@@ -6,6 +6,7 @@ tags:
   - rehber
   - sablon
   - kurumsal-kullanim
+lastUpdated: "2026-05-06"
 ---
 
 [CLAUDE.md'nin ne olduğunu](nedir/) okuduysanız, sıradaki soru doğal: **peki bunu ben nasıl yazarım?**
@@ -156,7 +157,7 @@ C:\ClaudeWorkspace\
 
 ## Nasıl Büyür?
 
-Bir CLAUDE.md ilk yazıldığında temelini kurmuş olur. Sonra yaşar ve büyür. Zamana'nın altın kuralı:
+Bir CLAUDE.md ilk yazıldığında temelini kurmuş olur. Sonra yaşar ve büyür. Pratik altın kural:
 
 > **Claude'a aynı şeyi ikinci kez anlattığınızı fark ettiğinizde, durun ve CLAUDE.md'yi açın. O bilgiyi dosyaya yazın.**
 

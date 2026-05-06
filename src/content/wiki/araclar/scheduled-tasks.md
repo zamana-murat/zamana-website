@@ -6,11 +6,12 @@ tags:
   - scheduled-tasks
   - otomasyon
   - cowork
+lastUpdated: "2026-05-06"
 ---
 
 **Cowork, belirli aralıklarla otomatik çalışan görevler oluşturmanıza izin verir.** Bir kere kurarsınız; siz bir daha dokunmazsınız.
 
-Her Pazartesi yazdığınız aynı rapor, her sabah yaptığınız aynı e-posta kontrolü, her ay başında hazırladığınız aynı özet — bunlar Claude'un otonom çalıştırabileceği işlerdir. Zamana programında çalışanın gördüğü en büyük zaman kazancıdır.
+Her Pazartesi yazdığınız aynı rapor, her sabah yaptığınız aynı e-posta kontrolü, her ay başında hazırladığınız aynı özet — bunlar Claude'un otonom çalıştırabileceği işlerdir. Tipik olarak en büyük zaman kazancı buradan gelir.
 
 ## Ne Zamanlanabilir?
 
@@ -65,13 +66,13 @@ Eğer [Dispatch](dispatch/) kurduysanız, zamanlanmış görev çıktıları Dis
 
 Sonuç: masaya oturduğunuzda rapor hazır, telefon açık olsa bile bilgilendirilmişsiniz.
 
-## Zamana'da Neden Önemli?
+## Neden Önemli?
 
 Zamanlanmış görevler, **"Claude bensiz çalışıyor"** kavramının giriş noktasıdır. Bu, meşgul bir profesyonel için en yüksek kaldıraçlı fikirdir.
 
-Zamana oturumlarında şu adım standarttır: **"Haftada manuel yaptığın 2-3 tekrar eden işi söyle."** Çalışan söyler. Birini Scheduled Task'e dönüştürürüz. Bir sonraki hafta iş kendi kendine biter.
+Pratik egzersiz: **"Haftada manuel yaptığım 2-3 tekrar eden iş hangileri?"** sorusuyla başlayın. Bunlardan birini Scheduled Task'e dönüştürün. Bir sonraki hafta iş kendi kendine biter.
 
-ROI anlık ve görünürdür. Çalışan bu özelliği bir kez deneyimleyince başka tekrar eden işler için de kurmaya başlar.
+ROI anlık ve görünürdür. Bu özelliği bir kez deneyimleyince başka tekrar eden işler için de kurmaya başlarsınız.
 
 ## Departmanlara Göre En İyi Adaylar
 

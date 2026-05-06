@@ -4,6 +4,7 @@ description: "Claude'la etkili iletişim kurmak bir beceridir. Bu bölüm 4D Çe
 tags:
   - prompting
   - giris
+lastUpdated: "2026-05-06"
 ---
 
 Claude'la çalışmanın en öğretilebilir becerisi. Ve en yaygın şekilde kötü kullanılan.
@@ -44,7 +45,7 @@ Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D)
 
     ---
 
-    Çoğu kullanıcının düştüğü on tuzak ve her birinin spesifik düzeltmesi. Zamana oturumlarından damıtılmış.
+    Çoğu kullanıcının düştüğü on tuzak ve her birinin spesifik düzeltmesi.
 
     [→ Yaygın Hatalar](yaygin-hatalar/)
 
@@ -79,16 +80,15 @@ Bu, Claude'u "sihirli kutu" olarak görmekten çok uzaktır. Claude bir düşün
 
 Üçü birlikte tam resmi verir. Biri olmadan diğeri eksik kalır — ama **temel ilkeler** zeminine basmayan ileri teknik havada kalır. Sırayı atlamayın.
 
-## Zamana'da Prompting Öğretimi
+## Pratik Öğrenme Yolu
 
-Eğitim programında prompting birden fazla katmana yayılır:
+Prompting öğrenmek bir oturumda olmaz, katmanlı ilerler:
 
-- **1. Oturum, 2. saat:** Description'a özel pratik (4D'nin D2'si). Çalışan üç gerçek iş problemini yüksek sesle çerçevelemeyi öğrenir.
-- **1. Oturum, 3. saat:** Tek bir gerçek çıktı üretmek. İlk prompt kütüphanesi girişi.
-- **2. Oturum Blok 3:** Prompt Kütüphanesi genişletme (30 dakika).
-- **Retainer boyunca telefonla destek:** Prompt sorunlarının çoğu iki kategoriye girer — bağlam eksikliği veya iterasyon eksikliği. İkisi de bu bölümdeki içerikle düzeltilir.
+- **İlk hafta:** Description pratiği (4D'nin D2'si). Üç gerçek iş problemini yüksek sesle çerçevelemeyi öğrenmek.
+- **Sonraki haftalar:** Gerçek iş çıktıları üretmek. Her başarılı prompt kütüphaneye eklenir.
+- **3 ay sonunda:** **30-50 promptluk kişisel bir kütüphane**. Çoğu prompt sorunu iki kategoriye girer: bağlam eksikliği veya iterasyon eksikliği.
 
-Programdan ayrılırken çalışanın elinde **30-50 promptluk kişisel bir kütüphane** olması hedefidir. Bu kütüphane, eğitimin en somut kalıntısıdır.
+Bu kütüphane Claude öğrenme sürecinin en somut kalıntısıdır.
 
 ## Nereye Gitmeli?
 

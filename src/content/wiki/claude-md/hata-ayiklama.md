@@ -5,6 +5,7 @@ tags:
   - claude-md
   - hata-ayiklama
   - debugging
+lastUpdated: "2026-05-06"
 ---
 
 **[CLAUDE.md](nedir/) yazdınız, ama Claude hâlâ eski tarzda yanıt veriyor.** Çalışmayan kuralları, çelişen yönergeleri, düşen talimatları nasıl bulup düzelteceğinizi anlatan pratik rehber.

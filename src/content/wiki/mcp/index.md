@@ -6,6 +6,7 @@ tags:
   - plugins
   - connector
   - giris
+lastUpdated: "2026-05-06"
 ---
 
 **Claude, connector'lar olmadan bir sohbet aracıdır. Connector'larla gerçek bir iş meslektaşı gibi davranır.**
@@ -53,13 +54,13 @@ Bölümde sık karıştırılan iki terim:
 
 Plugin kurulumu genellikle daha pratiktir — ilgili bileşenler bir arada gelir.
 
-## Zamana'nın Yaklaşımı
+## Pratik Yaklaşım
 
-Bir çalışanın Claude deneyimini **2. Oturum'da seviye atlatıran şey** connector kurulumudur.
+Bir çalışanın Claude deneyimini **gerçekten dönüştüren şey** connector kurulumudur.
 
-1. Oturum'da Claude Desktop, Cowork, CLAUDE.md kuruldu. Çalışan Claude'la konuşmayı öğrendi.
+İlk hafta: Claude Desktop, Cowork, CLAUDE.md kurulur. Çalışan Claude'la konuşmayı öğrenir.
 
-2. Oturum'da çalışanın rolüne göre **1-2 kritik connector** kurulur (örn. satış için Salesforce + Gmail). Oturumun sonunda çalışan, "oh, artık Claude gerçekten çalışma sistemimle konuşuyor" hissiyle ayrılır.
+İkinci hafta: rolüne göre **1-2 kritik connector** kurulur (örn. satış için Salesforce + Gmail). "Artık Claude gerçekten çalışma sistemimle konuşuyor" hissi oluşur.
 
 Bu geçiş tek seferlik bir seviye atlayışıdır. Bir kere yaşanınca geri dönüş olmaz.
 

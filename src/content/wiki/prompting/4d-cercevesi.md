@@ -6,15 +6,16 @@ tags:
   - 4d-framework
   - ai-fluency
   - anthropic-academy
+lastUpdated: "2026-05-06"
 ---
 
-Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir — ve Anthropic Academy'nin hem kendisi hem de University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
+Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir, Anthropic Academy'nin hem kendisi hem de University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
 
-Zamana eğitim programlarının tamamı da bu çerçeveye dayanır. Sebep basit: 4D, bir çalışanın Claude'la "dene bakalım" seviyesinden "işini buna göre yeniden tasarla" seviyesine geçmesini sağlayan düşünce yapısıdır.
+4D, bir çalışanın Claude'la "dene bakalım" seviyesinden "işini buna göre yeniden tasarla" seviyesine geçmesini sağlayan düşünce yapısıdır.
 
 > **AI Fluency, yapay zekayla etkili, verimli, etik ve güvenli biçimde etkileşim kurabilme yetkinliğidir.**
 
-Bu sayfa çerçeveyi tanıtır. Dört D'yi, her birinin alt yetkinliklerini ve Zamana'da nasıl öğretildiğini açıklar.
+Bu sayfa çerçeveyi tanıtır. Dört D'yi ve her birinin alt yetkinliklerini açıklar.
 
 ## Dört D — Resmi Tanımlar
 
@@ -51,9 +52,9 @@ Bu sıfır Delegation demektir. Hedef yok, görev analizi yok, bilinçli seçim 
 
 Bu tam Delegation zekası demektir. İnsan işi sahipleniyor, yapay zeka tanımlı bir alt görev üstleniyor, çıktı insan tarafından titizlikle süzülüyor.
 
-### Zamana'da nasıl öğretilir
+### Pratik egzersiz
 
-1. Oturumun başında — daha Claude açılmadan — çalışan haftalık işlerini üç kategoriye böler: sadece insan, yapay zeka destekli, birlikte çalışılabilir. Bu pratik hem az-kullanımı hem aşırı-devretmeyi önler.
+Claude'a dokunmadan önce haftalık işlerinizi üç kategoriye bölün: sadece insan, yapay zeka destekli, birlikte çalışılabilir. Bu pratik hem az-kullanımı hem aşırı-devretmeyi önler.
 
 ## D2 — Description (Tanımlama)
 
@@ -84,11 +85,11 @@ Description → Claude üretir → Discernment
 Çıktı yeterli değilse → Description'a dön → prompt'u iyileştir → tekrar
 ```
 
-Çıktı Discernment'tan geçmiyorsa çözüm her zaman Description'a geri dönmektir. Kötü çıktı, Claude'u terk etme nedeni değil — prompt hakkında geri bildirimdir.
+Çıktı Discernment'tan geçmiyorsa çözüm her zaman Description'a geri dönmektir. Kötü çıktı, Claude'u terk etme nedeni değil, prompt hakkında geri bildirimdir.
 
-### Zamana'da nasıl öğretilir
+### Pratik egzersiz
 
-1. Oturum, 2. Saat tamamen Description'a ayrılmıştır. Çalışan, 3 gerçek iş problemini yüksek sesle tarif eder. Murat çerçeveyi koçlar — çözümü değil. Amaç şudur: *"Neye ihtiyacım olduğunu, gerçekten istediğim sonucu getirecek şekilde nasıl anlatırım?"*
+3 gerçek iş problemini yüksek sesle tarif edin. Çözümü tanımlamayın, problemi tanımlayın. Amaç şudur: *"Neye ihtiyacım olduğunu, gerçekten istediğim sonucu getirecek şekilde nasıl anlatırım?"*
 
 ## D3 — Discernment (Ayırt Etme)
 
@@ -116,11 +117,11 @@ Test şudur: **"Buna adımı koyar mıyım?"**
 
 Cevap hayırsa, Description'a geri dönülür ve iterasyon yapılır.
 
-### Zamana'da nasıl öğretilir
+### Pratik egzersiz
 
-Murat'ın 1. Oturum sorusu — bir iş çıktısı üretildikten sonra: *"Bunu şu an müdürüne göndermeye razı olur muydun?"*
+Bir iş çıktısı üretildikten sonra kendinize sorun: *"Bunu şu an müdürüme göndermeye razı olur muydum?"*
 
-O tek soru Discernment'ı zorla devreye sokar. 2. Oturum'un 1. Bloğu (Ödev İncelemesi) yapılandırılmış bir Discernment pratiğidir — çalışan kendi bağımsız çıktısını değerlendirir.
+O tek soru Discernment'ı zorla devreye sokar. Cevap hayırsa, çıktıyı bağımsız bir gözle yeniden değerlendirin.
 
 ## D4 — Diligence (Sorumluluk)
 
@@ -144,11 +145,11 @@ Bu bir Diligence beyanının modelidir: yapay zekanın ne yaptığı konusunda n
 
 ### Türkiye'de profesyonel bağlam
 
-Zamana müşterilerinin çoğu profesyonel standartlara tabidir: avukatlar Barolar Birliği'ne, finans uzmanları SPK'ya, sağlık çalışanları ilgili mevzuata, ihracatçılar GTİP ve gümrük mevzuatına. Bu profesyoneller için **Diligence iyi bir pratik değil — mesleki yükümlülüktür**. Claude bir araçtır. Yasal ve mesleki sorumluluk ehliyetli profesyonelde kalır.
+Profesyonellerin çoğu mesleki standartlara tabidir: avukatlar Barolar Birliği'ne, finans uzmanları SPK'ya, sağlık çalışanları ilgili mevzuata, ihracatçılar GTİP ve gümrük mevzuatına. Bu profesyoneller için **Diligence iyi bir pratik değil, mesleki yükümlülüktür**. Claude bir araçtır. Yasal ve mesleki sorumluluk ehliyetli profesyonelde kalır.
 
-### Zamana'da nasıl öğretilir
+### Temel ilke
 
-1. Oturum'un kapanış ilkesi Diligence'tır. 12 departmanın her birinde, o departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut karşılığıdır:
+Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut karşılığıdır:
 
 > **Claude yazar. Siz karar verirsiniz. Sorumluluk asla transfer olmaz.**
 
@@ -160,22 +161,6 @@ Zamana müşterilerinin çoğu profesyonel standartlara tabidir: avukatlar Barol
 | **Description** | Nasıl anlatırım? | Ürün · Süreç · Performans | Google arama tarzı sorgu |
 | **Discernment** | Çıktı iyi mi? | Ürün · Süreç · Performans | Emin tonlu çıktıyı sorgusuz kabul |
 | **Diligence** | Sorumluluk kimde? | Yaratım · Şeffaflık · Uygulama | Kullan ama söyleme; paylaş ama doğrulama |
-
-## Zamana Programıyla Bağlantı
-
-4D, Zamana curriculum'un **kavramsal bel kemiğidir**. Her pratiğin arkasındaki "neden" sorusunu yanıtlar.
-
-| Zamana Oturum / Blok | 4D Bağlantısı |
-|---|---|
-| 1. Oturum — Saat 1 (Kurulum + Kimlik) | Delegation: Claude'a dokunmadan önce görev haritalama |
-| 1. Oturum — Saat 2 (Soru Sorma Sanatı) | Description: üç alt yetkinlik, canlı pratik |
-| 1. Oturum — Saat 3 (İlk Gerçek Kazanım) | Discernment: çıktıyı birlikte değerlendirme; Diligence: kapanış ilkesi |
-| 2. Oturum — Blok 1 (Ödev İncelemesi) | Discernment: bağımsız çıktının yapılandırılmış değerlendirmesi |
-| 2. Oturum — Blok 2 (CLAUDE.md Güncelleme) | Description: Performance Description iyileştirme |
-| 2. Oturum — Blok 3 (Prompt Kütüphanesi) | Description + Discernment döngüsü uygulamalı |
-| Tüm departmanlar — Pazarlık dışı çerçeveleme | O mesleğe özel Diligence beyanı |
-| Tüm departmanlar — Canlı egzersizler | Delegation + Description gerçek iş üzerinde |
-| Tüm departmanlar — Çıktı değerlendirme | Discernment: "Bunu müdürüne gönderir miydin?" |
 
 ## İlgili Sayfalar
 

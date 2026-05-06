@@ -7,6 +7,7 @@ tags:
   - lojistik
   - sop
   - ncr
+lastUpdated: "2026-05-06"
 ---
 
 Operasyon departmanında en büyük kayıp **bilginin insanların kafasında yaşaması** ve asla yazılı hale gelmemesidir. Claude bu kaybı tek başına çözer.

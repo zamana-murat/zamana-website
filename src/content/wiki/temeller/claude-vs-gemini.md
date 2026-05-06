@@ -6,6 +6,7 @@ tags:
   - karsilastirma
   - gemini
   - google
+lastUpdated: "2026-05-06"
 ---
 
 **Gemini, Google'ın amiral AI modelidir** — Workspace (Gmail, Docs, Drive, Calendar) içine derinlemesine entegredir, çoğu Türkiye kurumsalında zaten ücretsiz olarak deneniyor.
@@ -97,7 +98,7 @@ Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik
 
 ## Türkiye Açısından
 
-İki üründe de Türkçe kalitesi yüksek. Resmî yerel temsilcilik açısından **Google'ın Türkiye ofisi var, Anthropic'in yok.** Ama günlük kullanımda fark hissedilmez; satış-destek işi Zamana gibi yerel partnerler üstleniyor.
+İki üründe de Türkçe kalitesi yüksek. Resmî yerel temsilcilik açısından **Google'ın Türkiye ofisi var, Anthropic'in yok.** Ama günlük kullanımda fark hissedilmez.
 
 [KVKK](gizlilik-kvkk/) tarafında Anthropic'in PBC yapısı ve [Constitutional AI](anthropic-ve-tarihce/) yaklaşımı bazı kurumsal alıcılar için tercih sebebi.
 

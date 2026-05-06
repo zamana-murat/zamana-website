@@ -6,6 +6,7 @@ tags:
   - artifacts
   - dashboard
   - cowork
+lastUpdated: "2026-05-06"
 ---
 
 **Artifacts, Claude'un ürettiği kendi kendine yeten, interaktif çıktılardır.** Claude Chat'te sohbet içi önizleme, Cowork'te yan panelde kalıcı sayfa olarak yaşarlar.
@@ -101,13 +102,13 @@ Basit bir kurallar dizisi:
 - **Sadece sen kullanacaksın ve veriyi güncel isteyeceksin:** Live Artifact
 - **Birden fazla kişi aynı şeye bakacak ve interaktif olmalı:** Live Artifact
 
-## Zamana'nın Yaklaşımı
+## Pratik Yaklaşım
 
-Çoğu çalışan artifact istemez — **rapor ister**. Çünkü iş dünyasında "rapor" alışkanlığı vardır, "dashboard" değil.
+Çoğu çalışan artifact istemez, **rapor ister**. Çünkü iş dünyasında "rapor" alışkanlığı vardır, "dashboard" değil.
 
 Claude bir veri üretip çalışan "bunu haftaya yine görmek isteyeceğim" dediğinde, **Live Artifact önerisi devreye girer**. Artifact otomatik tazelenir; belge anında eskir.
 
-Zamana'nın koçluk sorusu:
+Test edebileceğiniz tek soru:
 
 > **"Bu veriye bir hafta sonra yine bakmak isteyecek misin?"**
 

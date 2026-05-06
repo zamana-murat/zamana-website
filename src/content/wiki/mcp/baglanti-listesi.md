@@ -6,6 +6,7 @@ tags:
   - connector
   - entegrasyon
   - liste
+lastUpdated: "2026-05-06"
 ---
 
 2026 itibariyle Claude 38+ hazır connector ile gelir. Bu sayfa iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
@@ -139,7 +140,7 @@ Standart connector'ların dışında, şirketinize özel connector geliştirileb
 - Şirket içi müşteri portalına bağlantı
 - Özel veritabanı sistemlerine bağlantı
 
-Bu MCP server geliştiriciliği gerektirir — Zamana kapsamı dışındadır, ama IT ekibiniz veya bir entegrasyon ortağı kurabilir. [MCP protokolü açık standarttır](nedir/).
+Bu MCP server geliştiriciliği gerektirir; iş profesyoneli kapsamı dışındadır, ama IT ekibiniz veya bir entegrasyon ortağı kurabilir. [MCP protokolü açık standarttır](nedir/).
 
 Pratik alternatif: [Computer Use](../yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesi.
 
@@ -152,7 +153,7 @@ Pratik alternatif: [Computer Use](../yetenekler/computer-use/) ile API olmayan s
 
 ## Güncel Liste Nereden?
 
-Bu sayfa **2026 başı itibariyle** doğru. Anthropic düzenli olarak yeni connector ekliyor. **Güncel listeyi** Cowork → **Customize** menüsünden görebilirsiniz. Zamana eğitim oturumlarında son kataloğu açarız.
+Bu sayfa **2026 başı itibariyle** doğru. Anthropic düzenli olarak yeni connector ekliyor. **Güncel listeyi** Cowork → **Customize** menüsünden görebilirsiniz.
 
 ## İlgili Sayfalar
 

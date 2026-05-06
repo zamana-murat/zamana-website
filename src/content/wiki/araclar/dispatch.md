@@ -6,6 +6,7 @@ tags:
   - dispatch
   - mobil
   - cowork
+lastUpdated: "2026-05-06"
 ---
 
 **Dispatch, Cowork'ün bir özelliğidir — telefonunuzla masaüstü bilgisayarınız arasında kalıcı bir konuşma hattı kurar.** Her yerden bir görev gönderirsiniz, iş bittiğinde sonucu teslim alırsınız.
@@ -70,15 +71,15 @@ Genel kural: **eğer masaüstünüzde oturduğunuzda Claude'a söyleyeceğiniz b
 
 **Pratik tavsiye:** Bilgisayarınızı gün boyunca uyanık tutmak için güç ayarlarında "uyuma" süresini uzatın veya "hiçbir zaman uyuma" yapın. Dispatch kullandığınızda bilgisayar her zaman açık kalmalı.
 
-## Zamana'nın "Vay Be" Anı
+## "Vay Be" Anı
 
-Dispatch, Zamana'nın ikinci oturumda gösterdiği en güçlü özelliklerden biridir. Çalışan gerçek bir işi telefonundan gönderir — normalde masa başında yapacağı bir şey — ve masaya döndüğünde işin bitmiş olarak kendisini beklediğini görür.
+Dispatch, çoğu kullanıcı için Claude'un en güçlü özelliklerinden biridir. Gerçek bir işi telefonunuzdan gönderirsiniz, normalde masa başında yapacağınız bir şey, ve masaya döndüğünüzde işin bitmiş olarak sizi beklediğini görürsünüz.
 
-O an, çalışanın kafasındaki algı değişir:
+O an, kullanıcının kafasındaki algı değişir:
 
-> **"Bu bir araç değil — benim için çalışan bir asistan."**
+> **"Bu bir araç değil, benim için çalışan bir asistan."**
 
-Bu psikolojik geçiş bir kerede olur. Sonrasında çalışan Claude'u farklı bir gözle kullanır.
+Bu psikolojik geçiş bir kerede olur. Sonrasında Claude'u farklı bir gözle kullanırsınız.
 
 ## İlgili Sayfalar
 

@@ -6,6 +6,7 @@ tags:
   - saglik
   - kvkk
   - hassas
+lastUpdated: "2026-05-06"
 ---
 
 Sağlık sektörü Türkiye'de özel yasal rejime tabidir — KVKK üstünde **özel kategori veri**, mesleki gizlilik, Sağlık Bakanlığı yönetmelikleri. Claude'un sağlıkta kullanımı **mümkün ama dikkat ister.** Bu sayfa hangi alanlarda güvenle kullanılabileceğini, neyin kesinlikle yasak olduğunu ve kurumsal politika çerçevesini anlatır.
@@ -229,7 +230,7 @@ Türkiye'de büyüyen **sağlık turizmi** (saç ekimi, dental, plastik cerrahi,
 
 ## Bireysel Hekim / Klinik Sahibi
 
-Tek başına çalışan hekim, küçük poliklinik / klinik için Claude'un değeri kayda değer. İdari iş yükü hekim zamanını siz çıkarır. [Bireysel program](https://zamana.com.tr) bu profile uygun, ama sektör hassasiyeti nedeniyle **özel onboarding** önerilir.
+Tek başına çalışan hekim, küçük poliklinik / klinik için Claude'un değeri kayda değer. İdari iş yükü hekim zamanını siz çıkarır. Sektör hassasiyeti nedeniyle KVKK ve mesleki gizlilik kurallarına özel dikkat gerekir.
 
 ## İlgili Sayfalar
 

@@ -6,6 +6,7 @@ tags:
   - egitim
   - akademi
   - okul
+lastUpdated: "2026-05-06"
 ---
 
 Eğitim sektörü Türkiye'de geniş — üniversiteler, lise/ortaokul, özel okullar, dershaneler, dil okulları, online kurs platformları, bireysel eğitmenler. Her birinde **müfredat hazırlama, sınav üretme, ödev değerlendirme, öğrenci iletişimi** zaman alıcı, tekrar eden işler. Claude bunların hepsinde derinlemesine değer üretir.
@@ -201,7 +202,7 @@ Eğitmen için temel yapı:
 
 ## Bireysel Eğitmen / Online Kurs
 
-Tek başına bir öğretmen / koç / kurs eğitmeni için Claude'un değeri olağanüstü. İçerik üretim hızı 3-5x artar. [Bireysel program](https://zamana.com.tr) bu profile uygun.
+Tek başına bir öğretmen / koç / kurs eğitmeni için Claude'un değeri olağanüstü. İçerik üretim hızı 3-5x artar.
 
 ## Üniversite Bağlamı — Özel Notlar
 

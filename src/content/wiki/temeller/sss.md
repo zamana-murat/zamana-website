@@ -1,20 +1,21 @@
 ---
 title: Sık Sorulan Sorular (SSS) — Bireysel ve Kurumsal Claude Kullanımı
-description: "Claude'u kullanmayı düşünürken — bireysel veya şirket olarak — akla gelen yaygın sorular ve net cevaplar. Güvenlik, veri, maliyet, adaptasyon, KVKK ve Zamana programları."
+description: "Claude'u kullanmayı düşünürken, bireysel veya şirket olarak akla gelen yaygın sorular ve net cevaplar. Güvenlik, veri, maliyet, adaptasyon ve KVKK."
 tags:
   - temeller
   - sss
   - faq
+lastUpdated: "2026-05-06"
 ---
 
-Zamana'ya en sık gelen soruları ve net cevaplarımızı tek sayfada topladık. Hem kendiniz için okuyabilirsiniz, hem de şirket içinde Claude'u savunurken kaynak olarak kullanabilirsiniz.
+Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem kendiniz için okuyabilirsiniz, hem de şirket içinde Claude'u savunurken kaynak olarak kullanabilirsiniz.
 
 <div class="wiki-admonition wiki-admonition--abstract">
   <div class="wiki-admonition__title">Özet</div>
   <div class="wiki-admonition__body" markdown>
 
 
-Claude bulut tabanlı bir yapay zeka asistanıdır; Team/Enterprise planlarında verileriniz **model eğitiminde kullanılmaz** (sözleşme garanti). KVKK uyumu doğru plan + DPA + şirket politikasıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100-200/ay; **6 çalışanlık ekipte** ilk ay Max 5x zorunlu ($600/ay), sonraki aylar karma kullanımla $280-380/ay'a iner. **Sonnet** modeli iş kullanımı için varsayılan tercih. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonu için somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır. **Zamana programları:** Bireysel $1.000 (3 hafta + 3 ay destek), Kurumsal $9.000 (3 ay × 6 çalışan).
+Claude bulut tabanlı bir yapay zeka asistanıdır; Team/Enterprise planlarında verileriniz **model eğitiminde kullanılmaz** (sözleşme garanti). KVKK uyumu doğru plan + DPA + şirket politikasıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100-200/ay; **6 çalışanlık ekipte** ilk ay Max 5x önerilir ($600/ay), sonraki aylar karma kullanımla $280-380/ay'a iner. **Sonnet** modeli iş kullanımı için varsayılan tercih. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonu için somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
 
   </div>
 </div>
@@ -41,15 +42,15 @@ Claude bulut tabanlı bir yapay zeka asistanıdır; Team/Enterprise planlarında
 
 ### Claude ayda ne kadar tutar?
 
-**Kısa cevap: Bireysel Pro $20/ay, Max $100-200/ay; Kurumsal Team $25/koltuk/ay (min 5 koltuk), Enterprise özel müzakere.** Claude'un fiyatlandırması kullanım yoğunluğuna göre kademelendirilmiştir. **Pro ($20/ay):** günde 30-40 mesaj, hafif kullanım, tek kullanıcı, dosya yükleme dahil; serbest profesyoneller için yeterli. **Max 5x ($100/ay):** Pro'nun 5 katı kullanım limiti, ortalama günlük yoğun kullanım, Projects ve Cowork dahil; Zamana programının ilk ayında zorunlu (yeni öğrenen kullanıcı Pro limitine hızla çarpıyor). **Max 20x ($200/ay):** çok yoğun kullanım, gün boyu aktif AI iş yükü, geliştirici tipi senaryolar. **Team ($25/koltuk/ay):** kurumsal yönetim paneli, merkezi faturalandırma, paylaşılan Projects, KVKK uyumlu DPA, minimum 5 koltuk yani $125/ay tabanı. **Enterprise:** özel müzakere, kullanıma göre fiyat, SSO/SAML, gelişmiş audit, Zero Data Retention seçeneği, dedicated success manager. Tüm planlara KDV ek (%20 Türkiye için). Yıllık ödemede %15-20 indirim. Detay: [Claude Planları](planlar/).
+**Kısa cevap: Bireysel Pro $20/ay, Max $100-200/ay; Kurumsal Team $25/koltuk/ay (min 5 koltuk), Enterprise özel müzakere.** Claude'un fiyatlandırması kullanım yoğunluğuna göre kademelendirilmiştir. **Pro ($20/ay):** günde 30-40 mesaj, hafif kullanım, tek kullanıcı, dosya yükleme dahil; serbest profesyoneller için yeterli. **Max 5x ($100/ay):** Pro'nun 5 katı kullanım limiti, ortalama günlük yoğun kullanım, Projects ve Cowork dahil; yeni öğrenen kullanıcı Pro limitine hızla çarptığı için ilk ay önerilir. **Max 20x ($200/ay):** çok yoğun kullanım, gün boyu aktif AI iş yükü, geliştirici tipi senaryolar. **Team ($25/koltuk/ay):** kurumsal yönetim paneli, merkezi faturalandırma, paylaşılan Projects, KVKK uyumlu DPA, minimum 5 koltuk yani $125/ay tabanı. **Enterprise:** özel müzakere, kullanıma göre fiyat, SSO/SAML, gelişmiş audit, Zero Data Retention seçeneği, dedicated success manager. Tüm planlara KDV ek (%20 Türkiye için). Yıllık ödemede %15-20 indirim. Detay: [Claude Planları](planlar/).
 
-### 6 çalışan için toplam maliyet nedir?
+### 6 çalışan için toplam abonelik maliyeti nedir?
 
-**Kısa cevap: İlk ay $600 (Max 5x zorunlu), ay 2-3 karma kullanımla $280-380. Zamana programı dahil 3 aylık toplam yatırım ~$10.300.** Maliyet ay bazında değişir çünkü Zamana yaklaşımı ilk ayda yoğun, sonraki aylarda optimize edilmiş kullanım üzerinden ilerler. **İlk ay:** 6 çalışan × Max 5x ($100) = **$600/ay** (yaklaşık 20.000 TL). Max 5x zorunluluğu Zamana'nın deneyiminden çıktı: yeni öğrenen kullanıcı Pro limitini günde birkaç saatte dolduruyor, "çalışmıyor" hissiyle vazgeçiyor; Max 5x bu ilk ay sigortasıdır. **Ay 2-3:** gerçek kullanım ritmi netleşir, ölçüm yapılır. Hafif kullananlar Pro'ya ($20) inebilir, yoğun kullananlar Max'te kalır. Tipik karma: ~2 Max + ~4 Pro = **~$280-380/ay**. **3 aylık Claude abonelik toplamı:** ilk ay $600 + ay 2 $300-380 + ay 3 $280-380 = **~$1.200-1.350**. **Zamana Kurumsal Programı ($9.000) + 3 aylık abonelik (~$1.300) = toplam ~$10.300.** Asıl yatırım eğitimdir, abonelik ikinci plandır ama yetersiz abonelik eğitimi sabote eder; bu yüzden ilk ay Max 5x pazarlık dışıdır.
+**Kısa cevap: İlk ay $600 (Max 5x önerilir), ay 2-3 karma kullanımla $280-380.** Maliyet ay bazında değişir; ilk ayda yoğun, sonraki aylarda optimize edilmiş kullanım üzerinden ilerler. **İlk ay:** 6 çalışan × Max 5x ($100) = **$600/ay** (yaklaşık 20.000 TL). Max 5x önerisi pratikten geliyor: yeni öğrenen kullanıcı Pro limitini günde birkaç saatte dolduruyor, "çalışmıyor" hissiyle vazgeçiyor; Max 5x bu ilk ay sigortasıdır. **Ay 2-3:** gerçek kullanım ritmi netleşir, ölçüm yapılır. Hafif kullananlar Pro'ya ($20) inebilir, yoğun kullananlar Max'te kalır. Tipik karma: ~2 Max + ~4 Pro = **~$280-380/ay**. **3 aylık abonelik toplamı:** ilk ay $600 + ay 2 $300-380 + ay 3 $280-380 = **~$1.200-1.350**.
 
 ### Yatırımın geri dönüşünü nasıl ölçerim?
 
-Zamana müşterilerinde tipik ölçüler: çalışan başına haftada 8-15 saat kazanım, aynı iş kalitesini %40-60 daha hızlı üretim, yıllık dokümantasyon geriliminin ortadan kalkması. Somut ölçüm için eğitim öncesi ve 3 ay sonrasını karşılaştırın.
+Tipik kazanımlar: çalışan başına haftada 8-15 saat kazanım, aynı iş kalitesini %40-60 daha hızlı üretim, yıllık dokümantasyon geriliminin ortadan kalkması. Somut ölçüm için Claude'la çalışmaya başlamadan önceki ve 3 ay sonraki durumu karşılaştırın.
 
 ### Küçük şirketim için fazla mı?
 
@@ -59,7 +60,7 @@ Bireysel başlangıç için **Claude Max 5x ilk ay ($100)** + sonrası duruma g�
 
 ### Çalışanlarım Claude'u kullanmak istemezse?
 
-Direnç doğaldır ve beklenir. Zamana programının tasarımı tam bu direnci çözer: her çalışan ilk oturumda **kendi gerçek işi için** gerçek bir çıktı üretir. "Buna neden ihtiyacım var?" sorusu o an cevaplanır — soyut değil, somut.
+Direnç doğaldır ve beklenir. Çözüm: her çalışanın **kendi gerçek işi üzerinden** Claude'la ilk gerçek çıktıyı üretmesi. "Buna neden ihtiyacım var?" sorusu o an cevaplanır, soyut değil somut.
 
 ### Yaşlı çalışanlarım teknoloji fobiklerse?
 
@@ -67,7 +68,7 @@ Claude'un büyük avantajı **konuşma arayüzü**. Ne kod, ne karmaşık menü 
 
 ### Çalışanlar Claude'a bağımlı hale gelmez mi?
 
-Bu gerçek bir risk. Zamana programının [4D Çerçevesi](../prompting/4d-cercevesi/) tam bunu hedefler: Diligence (Sorumluluk) boyutu — çalışan her çıktının arkasında durur, sorumluluğu Claude'a devretmez. "Claude yazar, siz karar verirsiniz" kuralı programın her yerinde geçerlidir.
+Bu gerçek bir risk. [4D Çerçevesi](../prompting/4d-cercevesi/) tam bunu hedefler: Diligence (Sorumluluk) boyutu, çalışan her çıktının arkasında durur, sorumluluğu Claude'a devretmez. **Claude yazar, siz karar verirsiniz** ilkesi sürekli geçerlidir.
 
 ### Claude'a öğrettiklerimiz, çalışan ayrıldığında şirketten gider mi?
 
@@ -77,7 +78,7 @@ Bu gerçek bir risk. Zamana programının [4D Çerçevesi](../prompting/4d-cerce
 
 ### Hangi Claude modelini kullanmalıyım?
 
-**Kısa cevap: Sonnet. Her zaman. İş kullanımının %95'inde varsayılan tercih budur.** Anthropic üç ana model ailesi sunar (Haiku, Sonnet, Opus) ve her birinin kendi kullanım senaryosu var. **Haiku** en hızlı ve ucuz; basit sınıflandırma, kısa yanıt, otomasyon backend'i için uygun, ama derin akıl yürütme gerektiren işlerde yetersiz kalır. **Sonnet** dengeli; hız ve yetkinlik arasında en iyi nokta, kurumsal iş kullanımının %95'inde doğru tercih. Sözleşme analizi, rapor yazımı, Türkçe iş yazışması, kod inceleme, doküman özetleme, prompt iterasyonu, Cowork iş akışları, hepsi Sonnet'le yapılır. **Opus** en güçlü model; çok derin araştırma, kompleks matematiksel akıl yürütme, ileri seviye kod üretimi, agentic tasklar için. Daha pahalı ve yavaş; günlük kurumsal işlerde getirisi farkı haklı çıkarmıyor. Zamana eğitimlerinde varsayılan Sonnet'tir. Model seçimi için enerji harcamayın, çıktı kalitesi (prompt, bağlam, CLAUDE.md) için harcayın; Sonnet doğru kurulduğunda Opus'tan daha iyi sonuç verebilir. [Modeller detay](modeller/).
+**Kısa cevap: Sonnet. Her zaman. İş kullanımının %95'inde varsayılan tercih budur.** Anthropic üç ana model ailesi sunar (Haiku, Sonnet, Opus) ve her birinin kendi kullanım senaryosu var. **Haiku** en hızlı ve ucuz; basit sınıflandırma, kısa yanıt, otomasyon backend'i için uygun, ama derin akıl yürütme gerektiren işlerde yetersiz kalır. **Sonnet** dengeli; hız ve yetkinlik arasında en iyi nokta, kurumsal iş kullanımının %95'inde doğru tercih. Sözleşme analizi, rapor yazımı, Türkçe iş yazışması, kod inceleme, doküman özetleme, prompt iterasyonu, Cowork iş akışları, hepsi Sonnet'le yapılır. **Opus** en güçlü model; çok derin araştırma, kompleks matematiksel akıl yürütme, ileri seviye kod üretimi, agentic tasklar için. Daha pahalı ve yavaş; günlük kurumsal işlerde getirisi farkı haklı çıkarmıyor. Model seçimi için enerji harcamayın, çıktı kalitesi (prompt, bağlam, CLAUDE.md) için harcayın; Sonnet doğru kurulduğunda Opus'tan daha iyi sonuç verebilir. [Modeller detay](modeller/).
 
 ### Claude Türkçeyi iyi konuşur mu?
 
@@ -89,7 +90,7 @@ Bu gerçek bir risk. Zamana programının [4D Çerçevesi](../prompting/4d-cerce
 
 ### Claude kod yazabilir mi?
 
-**Evet, ama Zamana'nın kapsamı dışıdır.** İş profesyoneli için değerli olan kısım: "Bir PowerShell script'i yaz, şunu otomatize et" diyebilmek — çalışan kod öğrenmez, Claude script'i üretir ve çalışan sonucu doğrular. [Bilgi Teknolojileri](../departmanlar/bilgi-teknolojileri/) sayfasında detay.
+**Evet.** İş profesyoneli için değerli olan kısım: "Bir PowerShell script'i yaz, şunu otomatize et" diyebilmek, çalışan kod öğrenmez, Claude script'i üretir ve çalışan sonucu doğrular. [Bilgi Teknolojileri](../departmanlar/bilgi-teknolojileri/) sayfasında detay.
 
 ### Claude bilgisayarımı kontrol edebilir mi?
 
@@ -109,72 +110,11 @@ Evet. Birçok profesyonel ikisini farklı işler için kullanır. Pratikte her �
 
 Tüketici kullanımı için denenebilir. **Kurumsal iş akışı için** şu an Claude ve ChatGPT'nin sunduğu olgunlukta (CLAUDE.md seviyesi şeffaflık, MCP connector ekosistemi, DPA) alternatif yok. Bu değişirse wiki'yi güncelleriz.
 
-## Zamana Programları
-
-### Zamana eğitim programları nelerdir?
-
-**İki program** sunuyoruz — kim olduğunuza göre seçim:
-
-**Bireysel Program ($1.000)** — Tek kişi için. 3 hafta × 2 saat birebir eğitim + 3 ay telefon desteği. CEO, freelance profesyonel, şirketi olmadan Claude'u öğrenmek isteyen herkes. Hafta sonları veya hafta içi akşam saatlerinde yapılabilir.
-
-**Kurumsal Program ($9.000)** — Şirket için. 6 çalışana 2'şer hafta özel eğitim + 3 ay telefon desteği. Şirket çapında transformasyon hedefleyen orta ölçekli işletmeler için.
-
-Detay: [zamana.com.tr](https://zamana.com.tr).
-
-### Hangi program bana uygun?
-
-| Durum | Önerilen |
-|---|---|
-| Tek başıma çalışıyorum (freelance, danışman) | **Bireysel Program** |
-| CEO'yum, şirkete getirmeden önce kendim öğrenmek istiyorum | **Önce Bireysel, sonra Kurumsal** |
-| Şirketim Claude eğitimi sunmuyor ama kendim öğrenmek istiyorum | **Bireysel Program** |
-| 6+ çalışanı eğitmek istiyorum | **Kurumsal Program** |
-| Pazar sabahı evimde Claude öğrenmek istiyorum | **Bireysel Program** |
-| Küçük işletmeyim (1-3 kişi) | **Her kişi için Bireysel** |
-
-### Bireysel Program nasıl yapılıyor?
-
-3 oturum, her biri 2 saat:
-
-- **Oturum 1** — Sıfırdan Claude'la çalışma (kurulum, CLAUDE.md, ilk gerçek iş)
-- **Oturum 2** — Rolünüze derinlemesine (skills, connector, prompt kütüphanesi)
-- **Oturum 3** — İş akışı tasarımı ve otomasyon
-
-Sonrasında 3 ay boyunca telefonla destek — 30 dakika kuralı geçerli.
-
-### Eğitim sonrası sürdürülebilir mi?
-
-Evet (her iki programda da). Programın tasarımı **katılımcının kendi kendini yeterli** hale gelmesine göre yapılmıştır. Prompt kütüphanesi + CLAUDE.md + iş akışları elinizde kaldığında aylar boyunca bağımsız ilerlersiniz.
-
-### Bireysel program öncesi ne yapmalıyım?
-
-1. Claude Max 5x aboneliği (ilk ay $100, sonrası kullanıma göre Pro'ya indirilebilir)
-2. Bilgisayar (Windows 10/11 veya macOS 12+)
-3. Stabil internet
-4. Çalışmak isteyeceğiniz gerçek bir iş listeniz (eğitimde hayali görev yok)
-
-### Kurumsal program öncesi ne yapmalıyım?
-
-1. Eğitim alacak 6 çalışanı belirleyin
-2. Her biri için **Claude Max 5x aboneliği** alın (ilk ay zorunlu, $100/ay × 6 = $600/ay). Ay 2-3'te kullanıma göre Pro'ya indirme opsiyonu.
-3. IT ekibinizden Anthropic domain'lerini whitelist yapmalarını isteyin
-4. Şirket KVKK politikanızı yazılı hale getirin
-
-Bu dördü tamamsa 1. Oturum verimli geçer.
-
 ## Uygulama ve Güncellik
 
 ### Claude ne sıklıkla değişiyor?
 
-Anthropic sık iterasyon yapar — genellikle haftada birkaç küçük güncelleme, ayda 1-2 önemli özellik, çeyrekte önemli yeni model. Wiki'deki bilgiler yaşayan belgelerdir; Zamana müşterileri olarak **güncellemeleri bizden haber alırsınız**.
-
-### Yeni bir özellik çıktığında ne olur?
-
-Zamana wiki güncellenir. Retainer müşterileri telefonda bilgilendirilir. Önemli bir geçişse (örneğin yeni model ailesi) bir iç brief dağıtılır.
-
-### Bu wiki'yi kim güncelliyor?
-
-Murat Özsaygılı ve Zamana ekibi. Claude ekosistemindeki gelişmeleri düzenli takip ederiz; yanlış / eksik bulduğunuz bir şey varsa [murat@zamana.com.tr](mailto:murat@zamana.com.tr) adresine bildirin.
+Anthropic sık iterasyon yapar: genellikle haftada birkaç küçük güncelleme, ayda 1-2 önemli özellik, çeyrekte önemli yeni model. Wiki'deki bilgiler yaşayan belgelerdir, önemli değişiklikler burada güncellenir.
 
 ## İlgili Sayfalar
 

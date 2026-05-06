@@ -6,6 +6,7 @@ tags:
   - computer-use
   - otomasyon
   - erp
+lastUpdated: "2026-05-06"
 ---
 
 **Computer Use, Claude'a bilgisayar ekranında gözler ve eller veren özelliktir.** Yapılandırılmış bir API veya connector kullanmak yerine Claude ekran görüntüsü alır, ne gördüğünü analiz eder, bir eylem kararı verir ve uygular — tıklar, yazar, kaydırır, gezinir. Sonra yeni bir ekran görüntüsü alır ve devam eder.
@@ -92,7 +93,7 @@ Cowork'te Computer Use **daha iyi bir yöntem yoksa otomatik olarak devreye gire
 
 Research preview döneminde çalışan **her adımda Claude'un eylemlerini onaylayabilir** veya yönlendirebilir. "Yanlış yere tıklama" gibi durumları önler.
 
-## Zamana İçin Neden Değerli?
+## Türk Kurumsal Kullanıcısı İçin Neden Değerli?
 
 Türkiye'deki orta ölçekli şirketlerin çoğu **eski sistemler üzerinde çalışır**:
 
@@ -105,7 +106,7 @@ Bu şirketlerin çoğunda dijital dönüşüm konuşmaları yapılır ama yeni y
 
 Computer Use bu yatırımı beklemeden şu an otomatize eder.
 
-Zamana'nın müşterilere sorduğu kritik soru:
+Kritik soru:
 
 > **"Ekibiniz her gün kimsenin otomatize etmediği bir sisteme tıklayarak yaptığı bir iş var mı?"**
 

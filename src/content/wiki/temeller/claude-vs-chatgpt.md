@@ -6,9 +6,10 @@ tags:
   - claude
   - chatgpt
   - karsilastirma
+lastUpdated: "2026-05-06"
 ---
 
-"Claude mu ChatGPT mi?" sorusu Zamana'ya en çok sorulan sorulardan biridir. Kısa ve dürüst cevap şu:
+"Claude mu ChatGPT mi?" sorusu en çok sorulan sorulardan biridir. Kısa ve dürüst cevap şu:
 
 > **İkisi de iyi. İkisi de büyük dil modeli. İkisi de bir iş profesyoneline ciddi değer katar. Ama ikisi birbirinin yerine geçmez — farklı işlerde farklı güçleri vardır.**
 
@@ -87,16 +88,16 @@ Kurumsal planlarda fiyatlar pazarlığa açıktır. Team planları iki tarafta d
 
 **Fiyat karar verici olmaz.** İkisi arasında ayda 5 USD fark varsa ve ikisinden biri işinizi %20 daha hızlı yapıyorsa, doğru cevap belli.
 
-## Zamana'nın Pozisyonu
+## Türk Kurumsal Kullanımı için Tipik Tercih
 
-Sonuç olarak Zamana neden Claude'u tercih ediyor ve eğitim programını onun üzerine kuruyor?
+Birçok orta ölçekli Türk şirketi Claude'u tercih ediyor. Sebepleri:
 
 1. **Kurumsal güven.** "Dürüst" tasarım felsefesi, finans ve hukuk bölümlerinde kritik hatalardan korur.
 2. **CLAUDE.md.** Çalışanın yapay zekaya ne öğrettiği açık bir dosyada görülür. Kurumsal şeffaflık için bu tek başına önemli bir farktır.
 3. **Cowork + Skills + MCP.** İş akışı odaklı ekosistem, tek bir oturumda "belgeyi oku → raporu yaz → Slack'te paylaş" zincirini akıcı kurar.
 4. **Uzun belge performansı.** Türk iş dünyasında uzun sözleşmeler, tender dosyaları, denetim raporları sıradan. Claude bu tip belgelerde açık üstünlük sağlar.
 
-**Bu, "ChatGPT kötü" demek değildir.** ChatGPT hâlâ birçok görevde harika iş çıkarır. Biz karar verdik — ve bu kararın arkasındaki mantığı açık paylaşıyoruz. Siz de kendi şirketiniz için aynı mantığı uygulayıp karar verebilirsiniz.
+**Bu, "ChatGPT kötü" demek değildir.** ChatGPT hâlâ birçok görevde harika iş çıkarır. Yukarıdaki maddeler bir tercih gerekçesidir, mutlak doğru değildir.
 
 ## Ya Google Gemini?
 
@@ -116,9 +117,9 @@ Google'ın yapay zeka ürünü **Gemini** son iki yılda ciddi olgunluk kazandı
 - **Kurumsal veri kontrolü** — Workspace kullanıyorsanız güçlü, ama DPA + Zero Data Retention + detaylı KVKK garantilerinde Claude Enterprise kadar olgun değil.
 - **Konumlandırma karışık** — "Gemini Advanced", "Gemini Code Assist", "Gemini in Workspace" gibi çok farklı ürünler var, hangisini kullanacağınızı çözmek kafa karıştırıyor.
 
-**Zamana değerlendirmesi:**
+**Değerlendirme:**
 
-Şirketiniz **Google Workspace tabanlıysa ve basit kullanım** istiyorsa Gemini pratiktir. Ama Zamana'nın öğrettiği seviyede derinlemesine iş akışı entegrasyonu için henüz Claude kadar olgun değil. 6-12 ay sonra tekrar değerlendirmeye değer.
+Şirketiniz **Google Workspace tabanlıysa ve basit kullanım** istiyorsa Gemini pratiktir. Ama derinlemesine iş akışı entegrasyonu için henüz Claude kadar olgun değil. 6-12 ay sonra tekrar değerlendirmeye değer.
 
 ## Ya Mistral (Fransız)?
 
@@ -137,7 +138,7 @@ Mistral AI, Paris merkezli bir Avrupa yapay zeka şirketi. AB bağımsızlığı
 - **Türkiye pazarında destek sınırlı** — bu bölgede Türkçe dokümantasyon, yerel müşteri desteği, DPA süreci zayıf
 - **Genel kalite** — en üst seviye modelde Claude/ChatGPT'nin bir adım gerisinde (hızla kapanıyor)
 
-**Zamana değerlendirmesi:**
+**Değerlendirme:**
 
 **Avrupa (özellikle Fransa) iş ortaklarıyla yoğun çalışıyorsanız** Mistral siyasi bir dengeleyici olabilir. **Açık kaynak dağıtım gerekiyorsa** (hava boşluklu ortamlar) değerli. Ama **genel Türk kurumsal kullanım** için şu an daha az olgun bir seçenek.
 
@@ -154,14 +155,14 @@ Meta'nın Llama model ailesi — **açık kaynak**. Bu onu benzersiz yapar.
 
 **Zayıf yönleri:**
 
-- **Kendi başınasınız** — Llama'yı çalıştırmak için GPU sunucuları, DevOps ekibi, model bakım uzmanı gerekir. Zamana'nın öğrettiği seviyede iş akışı için ek altyapı yatırımı şart
+- **Kendi başınasınız** — Llama'yı çalıştırmak için GPU sunucuları, DevOps ekibi, model bakım uzmanı gerekir. Olgun bir kurumsal iş akışı için ek altyapı yatırımı şart
 - **Kullanıcı deneyimi yok** — "Çalışan Llama'ya gider" gibi bir konsept yok; üstüne uygulama katmanı yazmak lazım
 - **Ekosistem boş** — Cowork, Skills, Connector gibi hazır altyapı olmadığından her şey inşa edilmek zorunda
 - **Kurumsal destek yok** — sorun olduğunda aranacak kimse yok, open source topluluğa bağımlısınız
 
-**Zamana değerlendirmesi:**
+**Değerlendirme:**
 
-Llama **savunma, büyük bankalar, devlet kurumu** gibi veri egemenliği mutlak önemli olan sektörlerde değerli. Ama Zamana'nın hedef müşteri profili olan **orta ölçekli Türk şirketi** için **uygun değil** — altyapı yükü, kurumsal destek eksikliği, ekosistem boşluğu.
+Llama **savunma, büyük bankalar, devlet kurumu** gibi veri egemenliği mutlak önemli olan sektörlerde değerli. Ama tipik **orta ölçekli Türk şirketi** için **uygun değil**, altyapı yükü, kurumsal destek eksikliği, ekosistem boşluğu nedeniyle.
 
 Açık kaynak modeller hızla gelişiyor — 2-3 yıl sonra belki bu değerlendirme değişir.
 
@@ -179,7 +180,7 @@ Tüm alternatifleri tek bakışta:
 | **Fiyat (orta kullanım)** | ~$20-25 | ~$20-25 | ~$20 | ~$16 | ~$20 API | Ücretsiz + altyapı |
 | **Açık kaynak** | Hayır | Hayır | Hayır | Kısmen | Kısmen | Evet |
 | **On-premises dağıtım** | Hayır | Hayır | Hayır | Hayır | Evet (büyük) | Evet |
-| **Zamana için uygun** | ✅ Evet | ✅ Evet | ⚠️ Sınırlı | ❌ Henüz değil | ❌ Özel durumlar | ❌ Özel durumlar |
+| **Tipik Türk kurumsalı için uygun** | ✅ Evet | ✅ Evet | ⚠️ Sınırlı | ❌ Henüz değil | ❌ Özel durumlar | ❌ Özel durumlar |
 
 ## Ya Grok?
 
@@ -241,7 +242,7 @@ Her ikisi de **kullanılabilir**. Fark çıktıların kendisinde değil, **terci
 
 ## 2026'da Durum Ne Değişti?
 
-Claude ve ChatGPT hızlı evrim geçiriyor. 2026 başı itibariyle Zamana'nın takip ettiği önemli gelişmeler:
+Claude ve ChatGPT hızlı evrim geçiriyor. 2026 başı itibariyle önemli gelişmeler:
 
 ### 2026 Ocak
 
@@ -268,15 +269,15 @@ Claude ve ChatGPT hızlı evrim geçiriyor. 2026 başı itibariyle Zamana'nın t
 - ChatGPT için **zengin BI dashboard özellikleri**
 - Her iki taraftan da **çoklu-modal** (ses + video + belge) derinleşme
 
-### Zamana'nın Takip Ettiği Noktalar
+### Türk Kurumsal Kullanıcısını Etkileyen Eksenler
 
-Hangi gelişme Zamana müşterilerini doğrudan etkiler? Üç ana eksen:
+Hangi gelişme Türk kurumsal kullanıcısını doğrudan etkiler? Üç ana eksen:
 
 1. **KVKK uyum özellikleri** — Enterprise DPA şartları, Zero Data Retention yaygınlaşması
 2. **Türkçe performans** — her iki modelin Türkçe kalitesinin seyri
 3. **Kurumsal connector'lar** — Türkiye'de yaygın araçlar (Logo, Netsis gibi yerel sistemler için MCP desteği)
 
-Bu eksenler değiştikçe wiki güncellenir. **Retainer müşterileri önemli değişimleri telefonda bilgilendirilir**.
+Bu eksenler değiştikçe wiki güncellenir.
 
 ## Kısa Karar Tablosu
 

@@ -5,6 +5,7 @@ tags:
   - prompting
   - format
   - cikti
+lastUpdated: "2026-05-06"
 ---
 
 **Aynı içerik üç farklı formatta üç farklı kullanım değeri verir.** Tabloya yapıştırılması gereken veri madde listesi olarak gelirse 5 dakika daha kaybedersiniz. Bu sayfa Claude çıktısını istediğiniz formatta üretmenin pratik tekniklerini anlatır.

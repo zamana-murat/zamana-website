@@ -7,6 +7,7 @@ tags:
   - procurement
   - rfp
   - pazarlik
+lastUpdated: "2026-05-06"
 ---
 
 > **Operasyondan farkı:** Operasyon **akışı** yönetir — malı A'dan B'ye zamanında getirmek. Satınalma **ilişkileri ve şartları** yönetir — kim tedarik eder, ne fiyata, hangi şartlarda. Kesişim gerçektir ama iş farklıdır. Operasyon çalışanı süreci yürütür; satınalma çalışanı kimin yürüteceğini ve ne tutacağını tanımlar.

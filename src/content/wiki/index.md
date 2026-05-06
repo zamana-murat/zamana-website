@@ -1,6 +1,7 @@
 ---
 title: "Zamana Wiki — Türkiye'nin Claude Kaynağı"
 description: "Claude'u profesyonel olarak kullanmak için Türkçe kapsamlı rehber. Bireysel profesyoneller ve şirketler için CLAUDE.md, Cowork, prompting ve gerçek iş akışları."
+lastUpdated: "2026-05-06"
 ---
 
 **Claude'u doğru kullanmanın Türkçe kaynağı.**
@@ -44,19 +45,6 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
     [→ CLAUDE.md Rehberi](claude-md/)
 
 </div>
-
----
-
-## Zamana Hakkında
-
-Zamana, Türkiye'de Claude üzerine eğitim ve danışmanlık veren bir programdır. **İki farklı eğitim formatımız var** — kim olduğunuza ve nasıl öğrenmek istediğinize göre seçim:
-
-- **Bireysel Program ($1.000)** — Tek kişi, 3 hafta × 2 saat birebir eğitim + 3 ay telefon desteği. CEO'lar, bağımsız profesyoneller, kendi tempoda öğrenmek isteyenler için.
-- **Kurumsal Program ($3.000 × 3 ay)** — Şirketinizden 6 çalışan, 3 ay derinlemesine eğitim. Şirket çapında dönüşüm hedefleyen orta ölçekli işletmeler için.
-
-Bu wiki **her ikisinin** referans kaynağıdır — ücretsiz ve kamuya açık.
-
-[Zamana Eğitim Programları →](https://zamana.com.tr)
 
 ---
 

@@ -7,6 +7,7 @@ tags:
   - workspace
   - pdf
   - excel
+lastUpdated: "2026-05-06"
 ---
 
 Claude, metin tabanlı bir araç olmanın çok ötesinde **dosyalarla çalışan bir sistemdir**. Bir PDF okur, bir Excel tablosu oluşturur, bir Word raporu düzenler, bir görsel analiz eder — hepsi aynı oturumda.

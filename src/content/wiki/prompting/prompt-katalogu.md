@@ -5,11 +5,12 @@ tags:
   - prompting
   - sablon
   - katalog
+lastUpdated: "2026-05-06"
 ---
 
 **Çoğu profesyonel her gün benzer 5-10 işle uğraşır.** Toplantı özeti, müşteri e-postası, rapor taslağı, veri analizi, hızlı araştırma — bunların her biri için **kullanıma hazır prompt şablonu** olması, her seferinde yeniden düşünmekten kurtarır.
 
-Bu sayfa Zamana eğitim programının pratiklerinden derlenmiş prompt şablonları sunar. **Kopyalayın, [köşeli parantezli yerleri] kendi bilgilerinizle doldurun, kullanın.**
+Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın, [köşeli parantezli yerleri] kendi bilgilerinizle doldurun, kullanın.**
 
 ## Nasıl Kullanılır
 

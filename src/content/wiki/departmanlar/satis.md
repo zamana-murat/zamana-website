@@ -6,9 +6,10 @@ tags:
   - satis
   - is-gelistirme
   - crm
+lastUpdated: "2026-05-06"
 ---
 
-Satış ekibinin Claude'la en çok zaman kazandığı yerler ve Zamana eğitim programlarının bu departmanda öğrettiği gerçek iş akışları.
+Satış ekibinin Claude'la en çok zaman kazandığı yerler ve bu departmanda kurulan tipik iş akışları.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 

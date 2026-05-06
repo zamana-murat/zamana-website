@@ -7,6 +7,7 @@ tags:
   - imalat
   - oee
   - kalite
+lastUpdated: "2026-05-06"
 ---
 
 Türkiye sanayisi geniş ve karmaşık — gıda, tekstil, otomotiv yan sanayi, makine, metal, plastik. Üretim hattı her gün veri üretir, ama bu verinin **çoğu hiç okunmaz**, yönetim raporu olmadan kaybolur. Claude, üretim verisini iş kararına çevirir ve hat-arası iletişimi olağanüstü hızlandırır.
@@ -193,7 +194,7 @@ Yeni ürün için FMEA çalıştayı yapılacak. Claude benzer ürünlerin geçm
 
 ## Bireysel Kullanım — Üretim Mühendisi
 
-Tek bir üretim mühendisi de ciddi değer alabilir. [Bireysel program](https://zamana.com.tr) sayfası katılım yolunu anlatıyor.
+Tek bir üretim mühendisi de ciddi değer alabilir, ekip kurulumuna gerek yok.
 
 ## İlgili Sayfalar
 

@@ -6,6 +6,7 @@ tags:
   - kod
   - sandbox
   - veri
+lastUpdated: "2026-05-06"
 ---
 
 **Claude, sohbet içinde gerçek Python kodu yazar ve onu kendi sandbox'ında çalıştırır.** Bu, dil modeli "tahminine" değil **gerçek hesaplamaya** dayanır. Bir Excel açmadan veri analizi, grafik, hesap tablosu çıktısı — Claude'un içinden alabilirsiniz.

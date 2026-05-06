@@ -6,6 +6,7 @@ tags:
   - takim
   - admin
   - enterprise
+lastUpdated: "2026-05-06"
 ---
 
 **Bireysel Pro plan tek kişi içindir. Şirkette Claude'u 3, 6, 20 kişi kullanmaya başladığında işler farklılaşır** — fatura merkezileşir, kullanıcı yönetimi, denetim ve veri politikası ortak olur. Bunun için **Team** ve **Enterprise** planları var.
@@ -47,9 +48,9 @@ Bu sayfa Team ve Enterprise farkını, ne zaman geçilmeli ve admin panelinde ne
 - SSO + audit log gerekli olduğunda
 - Kurum çapında 50+ kullanıcıda yıllık tasarruf ciddileşir
 
-## Plan Politikası — Yeni Zamana Müşterileri İçin
+## Yeni Kullanıcı Plan Önerisi
 
-Yeni Zamana katılımcısının **ilk ay Max 5x ($100/ay) zorunlu.** Sebep: Pro plandaki günlük limit yeni kullanıcı için yetersiz, çabuk dolar, kişi "Claude çalışmıyor" deyip vazgeçer.
+Claude'a yeni başlayan bir çalışan için **ilk ay Max 5x ($100/ay)** önerilir. Sebep: Pro plandaki günlük limit yeni kullanıcı için yetersiz, çabuk dolar, kişi "Claude çalışmıyor" deyip vazgeçer.
 
 İkinci aydan itibaren kullanım gerçek datayla görüldükçe karma plana geçilebilir:
 
@@ -171,8 +172,6 @@ Yeni bir çalışan organizasyona katıldığında:
 4. **Team CLAUDE.md (varsa):** Şirket genelinde paylaşılan kural seti uygulansın ([Takım CLAUDE.md](../claude-md/takim-claude-md/))
 5. **Eğitim:** [İlk 7 Gün](ilk-7-gun/) rehberini takip etsin
 6. **Politika imzası:** [Şirket İçi Politika](sirket-ici-politika/) belgesini okusun ve onaylasın
-
-Zamana retainer programı bu onboarding'i 6 kişi için sistemli yapar.
 
 ## İlgili Sayfalar
 

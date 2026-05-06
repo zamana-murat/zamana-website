@@ -4,11 +4,12 @@ description: "Claude'un ne olduğu, hangi modelin ne zaman kullanıldığı, fiy
 tags:
   - temeller
   - giris
+lastUpdated: "2026-05-06"
 ---
 
 Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken temel kavramlar. Bu bölüm, bir iş profesyoneline Claude'u sağlıklı biçimde kullanmaya başlatacak altı sorunun cevabını verir.
 
-Bu altı soru Zamana eğitim programlarının ilk saatinde de sorulan sorulardır. Sırasıyla okursanız bir saatten kısa sürede temel kavrayışa ulaşırsınız.
+Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak sorduğu sorulardır. Sırasıyla okursanız bir saatten kısa sürede temel kavrayışa ulaşırsınız.
 
 ## Başlangıç Yolu
 
@@ -26,7 +27,7 @@ Bu altı soru Zamana eğitim programlarının ilk saatinde de sorulan sorulardı
 
     ---
 
-    Haiku, Sonnet, Opus — üç model arasındaki fark ve Zamana'nın net tavsiyesi.
+    Haiku, Sonnet, Opus — üç model arasındaki fark ve iş kullanımı için net tavsiye.
 
     [→ Claude Modelleri](modeller/)
 
@@ -66,7 +67,7 @@ Bu altı soru Zamana eğitim programlarının ilk saatinde de sorulan sorulardı
 
     ---
 
-    Güvenlik, maliyet, çalışan adaptasyonu, ChatGPT karşılaştırması ve Zamana programı — tek sayfada.
+    Güvenlik, maliyet, çalışan adaptasyonu ve ChatGPT karşılaştırması, tek sayfada.
 
     [→ SSS](sss/)
 
@@ -98,19 +99,19 @@ Bu altı soru Zamana eğitim programlarının ilk saatinde de sorulan sorulardı
 
     ---
 
-    Yönetim, IT, hukuk, finans ve çalışandan gelen tipik itirazlar ve Zamana'nın dürüst cevapları.
+    Yönetim, IT, hukuk, finans ve çalışandan gelen tipik itirazlar ve dürüst cevapları.
 
     [→ İtirazlar](itirazlar/)
 
 </div>
 
-## Zamana'nın Ana Duruşu
+## Ana Duruş
 
 Bu bölümü okuduktan sonra aklınızda kalması gereken altı duruş:
 
 1. **Claude bir arama motoru değildir** — düşünme ortağıdır. Ona göre konuşun.
 2. **Sonnet varsayılandır.** Her zaman. İstisnai durumlar dışında model seçimiyle uğraşmayın.
-3. **Yeni Claude kullanıcısı için ilk ay Max 5x zorunludur** — agresif keşif ritminde Pro ($20) limiti çabuk dolar, yanlış ilk izlenim yaratır. Ay 2+ hafif kullanım durumunda Pro'ya inilebilir. Free iş için uygun değildir.
+3. **Yeni Claude kullanıcısı için ilk ay Max 5x önerilir** — agresif keşif ritminde Pro ($20) limiti çabuk dolar, yanlış ilk izlenim yaratır. Ay 2+ hafif kullanım durumunda Pro'ya inilebilir. Free iş için uygun değildir.
 4. **Claude yanılmaz değildir.** Her kritik çıktıyı doğrulayın. İmza testini uygulayın.
 5. **Kişisel veri ve KVKK konuları plan seçimini belirler.** Team veya Enterprise + DPA, bireysel Pro'dan farklıdır.
 6. **Claude yazar. Siz karar verirsiniz. Sorumluluk asla transfer olmaz.**

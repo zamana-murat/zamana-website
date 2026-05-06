@@ -6,6 +6,7 @@ tags:
   - ornekler
   - sablon
   - rol-bazli
+lastUpdated: "2026-05-06"
 ---
 
 [CLAUDE.md'yi nasıl yazacağınızı](nasil-yazilir/) öğrendiniz. Bu sayfa farklı rollere göre hazır örnekler sunar. Sizin rolünüze en yakınını kopyalayın, kendi bilgilerinizle doldurun, başlayın.

@@ -30,6 +30,15 @@ const {
 
 const { section, prev, next } = findNav(slug);
 
+// Format ISO date (2026-05-06) → Turkish display ("6 Mayıs 2026")
+const trMonths = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran',
+  'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+let lastUpdatedDisplay: string | null = null;
+if (modifiedDate && /^\d{4}-\d{2}-\d{2}$/.test(modifiedDate)) {
+  const [y, m, d] = modifiedDate.split('-').map(Number);
+  lastUpdatedDisplay = `${d} ${trMonths[m - 1]} ${y}`;
+}
+
 // Build canonical OG image slug. We'll generate one OG per wiki page:
 // `wiki-<slug-with-dashes>.png`. Slug `temeller/claude-nedir` → `wiki-temeller-claude-nedir`.
 const safeSlug = slug ? `wiki-${slug.replace(/\//g, '-')}` : 'wiki-index';
@@ -113,6 +122,12 @@ const breadcrumbSchema = {
         <slot />
       </div>
 
+      {lastUpdatedDisplay && (
+        <p class="wiki-last-updated">
+          Son güncelleme: <time datetime={modifiedDate}>{lastUpdatedDisplay}</time>
+        </p>
+      )}
+
       <RetainerCTA />
 
       <WikiPrevNext prev={prev} next={next} />
@@ -149,6 +164,13 @@ const breadcrumbSchema = {
     font-size: 1.05rem;
     line-height: 1.6;
     margin: 0;
+  }
+  .wiki-last-updated {
+    color: var(--c-text-muted);
+    font-size: 0.875rem;
+    margin: 2.5rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--c-border, #e5e7eb);
   }
 
   @media (max-width: 960px) {

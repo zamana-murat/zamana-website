@@ -6,6 +6,7 @@ tags:
   - plugins
   - connector
   - standart
+lastUpdated: "2026-05-06"
 ---
 
 **MCP (Model Context Protocol), Claude'un dış servislere bağlanmasını sağlayan açık bir standarttır.**
@@ -90,9 +91,9 @@ Claude, connector'lar olmadan bir **sohbet aracıdır**. Connector'larla **gerç
 
 Aradaki fark çalışanın günlük deneyiminde çok büyüktür.
 
-## Zamana'nın Yaklaşımı
+## Pratik Yaklaşım
 
-Zamana eğitim programında **her çalışan için 1-2 kritik connector** belirlenir ve 2. Oturum'da kurulur:
+İyi bir kurulum stratejisinde **her çalışan için 1-2 kritik connector** belirlenir ve önce o ikisi kurulur:
 
 | Rol | Tipik Connector'lar |
 |---|---|
@@ -103,7 +104,7 @@ Zamana eğitim programında **her çalışan için 1-2 kritik connector** belirl
 | Finans | Google Workspace (Sheets) |
 | Yönetici Asistanı | Microsoft 365 tam paket + Slack |
 
-Kurulum yaklaşık 5-10 dakika sürer. Sonuç: çalışan ertesi günden itibaren "connectorlu Claude" deneyimindedir — geri dönüşü olmayan bir seviye atlayışıdır.
+Kurulum yaklaşık 5-10 dakika sürer. Sonuç: çalışan ertesi günden itibaren "connectorlu Claude" deneyimindedir, geri dönüşü olmayan bir seviye atlayışıdır.
 
 ## Güvenlik ve İzinler
 

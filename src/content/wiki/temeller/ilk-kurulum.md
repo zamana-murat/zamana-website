@@ -6,6 +6,7 @@ tags:
   - kurulum
   - baslangic
   - claude-desktop
+lastUpdated: "2026-05-06"
 ---
 
 Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz — bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.
@@ -83,7 +84,7 @@ Sağ üst köşede **"Sign up"** veya **"Get started"** yazan turuncu/mavi düğ
 - **"Continue with Apple"** — iCloud / Apple ID ile
 - **"Continue with email"** — herhangi bir e-posta ile
 
-**Tavsiye:** Kurumsal kullanım için **şirket e-posta adresinizi** kullanın (`murat@zamana.com.tr` gibi). Kişisel öğrenim için Gmail rahattır.
+**Tavsiye:** Kurumsal kullanım için **şirket e-posta adresinizi** kullanın (`ad@sirket.com` gibi). Kişisel öğrenim için Gmail rahattır.
 
 ### 1.4 E-posta Doğrulama (E-posta seçtiyseniz)
 
@@ -124,13 +125,13 @@ Plan listesini görürsünüz: **Free / Pro / Max 5x / Max 20x / Team / Enterpri
 
 İki durumdan hangisindeyseniz ona göre seçim:
 
-**🎓 Zamana eğitim programı satın aldıysanız → Max 5x ($100/ay)**
+**🚀 İlk ay yoğun keşif yapacaksanız → Max 5x ($100/ay)**
 
-Eğitim, ilk günden itibaren ciddi kullanım gerektirir — [connector](../mcp/baglanti-listesi/) kurulumu, skill denemeleri, gerçek iş çıktıları, uzun belge testleri. Pro'nun ($20) kullanım limiti bu ritimde **birkaç saatte** dolar; "çalışmıyor" yanlış izlenimi oluşur ve eğitimden alınacak değer düşer. Max 5x bu sürtünmeyi ortadan kaldırır.
+Yeni bir kullanıcı ilk ayda ciddi kullanım yapar: [connector](../mcp/baglanti-listesi/) kurulumu, skill denemeleri, gerçek iş çıktıları, uzun belge testleri. Pro'nun ($20) kullanım limiti bu ritimde **birkaç saatte** dolar; "çalışmıyor" yanlış izlenimi oluşur ve değer kaybolur. Max 5x bu sürtünmeyi ortadan kaldırır.
 
 Plan listesinde **Max 5x'e** tıklayın → "Subscribe to Max" / "Upgrade".
 
-**📖 Kendi başınıza Claude'u öğrenmeye başladıysanız → Pro ($20/ay)**
+**📖 Yavaş tempoda öğrenmeye başladıysanız → Pro ($20/ay)**
 
 Pro, Cowork modu dahil tüm temel özelliklere erişim verir. [Sonnet 4.6](modeller/), plugin'ler, connector'lar, [scheduled tasks](../araclar/scheduled-tasks/) — hepsi Pro'da çalışır. Kendi tempoda öğrenen biri için ilk başta yeterlidir.
 
@@ -301,7 +302,7 @@ Claude Desktop'ın **sol üst köşesinde, 3 küçük ikon** şeklinde sekmeler 
 
 - 💬 **Chats** — konuşma balonu ikonu, normal sohbet için
 - ≡ **Cowork** — küçük yatay çizgili liste ikonu (ortadaki), bizim ihtiyacımız olan
-- `</>` **Code** — kod parantezleri + "Code" yazılı, geliştirici modu (Zamana kapsamı dışı)
+- `</>` **Code** — kod parantezleri + "Code" yazılı, geliştirici modu
 
 **Ortadaki Cowork ikonuna tıklayın.**
 

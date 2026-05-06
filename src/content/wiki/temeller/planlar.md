@@ -1,6 +1,6 @@
 ---
 title: Claude Planları — Free, Pro, Max, Team, Enterprise
-description: Claude'un beş planı Free, Pro, Max, Team ve Enterprise arasındaki farklar. İş kullanımı için hangi plan doğru, Zamana müşterileri için özel öneriler.
+description: Claude'un beş planı Free, Pro, Max, Team ve Enterprise arasındaki farklar. İş kullanımı için hangi plan doğru, hangi durumda hangi plan önerilir.
 tags:
   - temeller
   - planlar
@@ -8,15 +8,14 @@ tags:
   - pro
   - team
   - enterprise
+lastUpdated: "2026-05-06"
 ---
 
-Claude'un beş ana planı vardır. Plan seçimi sadece fiyatla ilgili değildir — hangi özelliklerin kullanılabilir olduğunu, özellikle **Cowork modu, connector'lar, paylaşılan projeler ve kurumsal uyum araçlarını** doğrudan belirler.
+Claude'un beş ana planı vardır. Plan seçimi sadece fiyatla ilgili değildir, hangi özelliklerin kullanılabilir olduğunu, özellikle **Cowork modu, connector'lar, paylaşılan projeler ve kurumsal uyum araçlarını** doğrudan belirler.
 
-Bu sayfa her planın ne sunduğunu, kime uygun olduğunu ve Zamana müşterileri için önerilen plan stratejisini açıklar.
+Bu sayfa her planın ne sunduğunu ve kime uygun olduğunu açıklar.
 
-> **Zamana politikası (2026-04-25 güncel):** Eğitim programına katılan her çalışanın, ilk oturumdan önce **Claude Max 5x** aboneliği olmalıdır ($100/ay). Bu, sözleşmeye yazılan pazarlık dışı bir şarttır.
->
-> **Neden Max 5x, neden Pro değil?** Yeni kullanıcı ilk ayda agresif öğrenme modunda olur — connector kurulumu, skill deneme, uzun belge testleri, günde saatlerce aktif oturum. Pro'nun ($20/ay) kullanım limiti bu ritimde birkaç saatte dolar. "Çalışmıyor" hissiyle yanlış ilk izlenim oluşur ve çalışan vazgeçer.
+> **Pratik öneri (yeni kullanıcı için):** Claude'a yeni başlayan bir kullanıcının ilk ayında **Max 5x** ($100/ay) önerilir. Yeni kullanıcı ilk ayda agresif öğrenme modunda olur, connector kurulumu, skill deneme, uzun belge testleri, günde saatlerce aktif oturum. Pro'nun ($20/ay) kullanım limiti bu ritimde birkaç saatte dolar. "Çalışmıyor" hissiyle yanlış ilk izlenim oluşur ve kullanıcı vazgeçer.
 >
 > **İkinci ay değerlendirme:** Gerçek kullanım ritmi ortaya çıktıktan sonra:
 > - Günde 2-4 saat aktif kullanan → Max 5x'te kalır
@@ -27,7 +26,7 @@ Bu sayfa her planın ne sunduğunu, kime uygun olduğunu ve Zamana müşterileri
 
 ## Hangi Plan Bana Uygun?
 
-**Zamana yolu:** Yeni öğrenenin ilk ayı **Max 5x'te** zorunlu. İkinci aydan itibaren ölçülen kullanıma göre Pro'ya inilebilir veya Max'te kalınır.
+**Pratik yaklaşım:** Yeni öğrenenin ilk ayı **Max 5x**. İkinci aydan itibaren ölçülen kullanıma göre Pro'ya inilebilir veya Max'te kalınır.
 
 ## Plan Genel Bakış (2026)
 
@@ -43,7 +42,7 @@ Claude'u hiç kullanmamış bir kişi için giriş kapısıdır.
 
 ### Pro Plan — 20 USD/ay, kişi başı
 
-**Zamana eğitim sonrası ideal plan** — ama ilk ay için yetersizdir. Eğitim tamamlandıktan ve kullanıcının gerçek kullanım ritmi ortaya çıktıktan sonra, günde 1-3 saat aktif kullanım Pro'da rahatça karşılanır.
+**Steady-state kullanım için ideal plan**, ama yeni başlayan kullanıcı için ilk ay yetersiz olabilir. Gerçek kullanım ritmi ortaya çıktıktan sonra günde 1-3 saat aktif kullanım Pro'da rahatça karşılanır.
 
 Pro planında neler vardır:
 
@@ -56,11 +55,11 @@ Pro planında neler vardır:
 - Yeni özelliklere erken erişim
 - Excel içi Claude (beta)
 
-**Kime uygun:** Tek çalışan bazında lisanslanan her iş profesyoneli. Zamana retainer programının varsayılan planıdır.
+**Kime uygun:** Tek çalışan bazında lisanslanan her iş profesyoneli. Tek kullanıcılı kurumsal kullanımın varsayılan tercihidir.
 
 ### Max Plan — 100 USD/ay (5x) veya 200 USD/ay (20x), kişi başı
 
-**Zamana eğitim programı için başlangıç planıdır.** Yeni kullanıcının ilk ay agresif keşif ritminde Pro yetmez — Max 5x bu sürtünmeyi ortadan kaldırır.
+**Yeni başlayan kullanıcı için ideal başlangıç planıdır.** İlk ay agresif keşif ritminde Pro yetmez, Max 5x bu sürtünmeyi ortadan kaldırır.
 
 Ayrıca Pro'nun limitlerine düzenli olarak takılan "güç kullanıcıları" için de doğrudur.
 
@@ -71,7 +70,7 @@ Pro'daki her şey + ek olarak:
 - Her gün çok sayıda karmaşık görevle Claude'u yoğun kullananlar için
 
 **Kime uygun:**
-- **Zamana eğitim programının tüm katılımcıları — ilk ay zorunlu**
+- Claude'a yeni başlayan, ilk ay yoğun keşif yapan kullanıcılar
 - Sonraki aylarda: günde birkaç saat Claude'la aktif çalışan, Pro limitlerine saatler sonra değil dakikalarda ulaşan çalışanlar
 - Pazarlama direktörü, ihracat yöneticisi gibi çoklu iş akışı yürüten roller
 
@@ -91,9 +90,9 @@ Pro'daki her şey + ek olarak:
 
 **Premium koltukta ek olarak:**
 
-- Claude Code (geliştirici aracı — Zamana kapsamı dışında)
+- Claude Code (geliştirici aracı)
 
-**Kime uygun:** Zamana retainer programını tamamlayan ve Claude'u bireysel Max/Pro aboneliklerinden çıkarıp şirket genelinde kurumsallaştırmak isteyen şirketler. **Zamana retainer sonrası doğal bir sonraki adımdır.**
+**Kime uygun:** Bireysel Pro/Max aboneliklerinden çıkıp Claude'u şirket genelinde kurumsallaştırmak isteyen şirketler. Yaygınlaşma aşamasında doğal bir adımdır.
 
 ### Enterprise Plan — Özel fiyat, müzakere bazlı
 
@@ -118,19 +117,19 @@ Büyük organizasyonlar için — maksimum kontrol, uyum ve güvenlik isteyen ku
 | Plan | Fiyat | Cowork | Paylaşım | En Uygun |
 |---|---|---|---|---|
 | **Free** | 0 | ❌ | ❌ | Deneme amaçlı |
-| **Pro** | 20 USD/ay | ✅ | ❌ | Zamana eğitim **sonrası** steady-state kullanım |
-| **Max 5x** | 100 USD/ay | ✅ | ❌ | **Zamana eğitim ilk ay zorunlu** + güç kullanıcısı |
+| **Pro** | 20 USD/ay | ✅ | ❌ | Steady-state kullanım, günde 1-3 saat |
+| **Max 5x** | 100 USD/ay | ✅ | ❌ | Yeni başlayan kullanıcının ilk ayı + güç kullanıcısı |
 | **Max 20x** | 200 USD/ay | ✅ | ❌ | Sürekli yoğun, çoklu iş akışı yürütenler |
 | **Team** | 25–100 USD/koltuk/ay | ✅ | ✅ (SSO, shared Projects) | 5+ çalışanı olan şirket |
 | **Enterprise** | Özel (500 USD/ay+) | ✅ | ✅ + uyum | Regülasyona tabi büyük kuruluş |
 
-## Zamana Müşterileri İçin Plan Önerisi
+## Duruma Göre Plan Önerisi
 
 | Durumunuz | Önerilen plan |
 |---|---|
-| Tek çalışan, Zamana eğitimi **ilk ay** | **Claude Max 5x** (100 USD/ay) — zorunlu |
-| Zamana eğitim sonrası, hafif kullanım | **Claude Pro** (20 USD/ay) — Max'ten indirilebilir |
-| Zamana eğitim sonrası, orta-yoğun kullanım | **Claude Max 5x**'te kal (100 USD/ay) |
+| Tek çalışan, Claude'a yeni başlıyor (ilk ay) | **Claude Max 5x** (100 USD/ay) |
+| Steady-state hafif kullanım | **Claude Pro** (20 USD/ay) |
+| Steady-state orta-yoğun kullanım | **Claude Max 5x** (100 USD/ay) |
 | Günlük limitleri zorlayan güç kullanıcısı | **Claude Max** (100 USD/ay) |
 | 5+ çalışanı Claude'a geçirmek istiyorum | **Claude Team Standart** (25 USD/koltuk) |
 | Bankacılık, sağlık, büyük üretici veya kamu | **Claude Enterprise** (özel müzakere) |
@@ -138,22 +137,20 @@ Büyük organizasyonlar için — maksimum kontrol, uyum ve güvenlik isteyen ku
 
 ## Plan Seçimi Nasıl Değişir?
 
-Zamana deneyiminde tipik bir şirketin planı zamanla doğal bir şekilde evrilir:
+Tipik bir şirketin planı zamanla doğal bir şekilde evrilir:
 
-**Ay 1 — Retainer başlarken**
+**Ay 1 — Başlangıç**
 
-- Her hafta bir çalışan programa dahil olur ve **Max 5x planıyla başlar** (şirket ödeme yapar, $100/ay)
-- İlk ay sonunda 4 çalışan aktif
-- İkinci ayın ilk iki haftasında kalan 2 çalışan da eklenir — toplamda 6 kullanıcı
-- Aylık hedef maliyet (6 kullanıcı tam açıldıktan sonra ilk ay): 6 × 100 = **600 USD + KDV**
+- Her çalışan **Max 5x planıyla başlar** ($100/ay)
+- 6 kullanıcı için aylık maliyet: 6 × 100 = **600 USD + KDV**
 
-**Ay 2-3 — Program içinde (Değerlendirme ve Optimizasyon)**
+**Ay 2-3 — Değerlendirme ve Optimizasyon**
 
 - Her çalışanın gerçek kullanım ritmi netleşir
 - Hafif kullanan (haftada birkaç çıktı) 3-4 çalışan → **Pro'ya ($20/ay) indir**
 - Orta-yoğun kullanan (günde 2-4 saat) 1-2 çalışan → **Max 5x'te kal**
 - Çok yoğun (sürekli, çoklu iş akışı) nadir bir çalışan → **Max 20x'e ($200) çıkabilir**
-- Tipik sonuç karma yapı: ~2 Max + ~4 Pro = **~280-380 USD/ay** (ilk ayın yarısı)
+- Tipik sonuç karma yapı: ~2 Max + ~4 Pro = **~280-380 USD/ay**
 
 **Ay 6-12 — Yayılım aşaması**
 
@@ -168,7 +165,7 @@ Zamana deneyiminde tipik bir şirketin planı zamanla doğal bir şekilde evrili
 - Şirketin hukuk ekibi DPA ister
 - Enterprise'a geçiş gündeme gelir
 
-Zamana bu yolu birlikte yürür. Plan seçimi, ticari büyüklüğe ve kurumsal olgunluğa göre aşamalı olarak ilerler — hep birden büyük bir plana atlamak gereksizdir.
+Plan seçimi ticari büyüklüğe ve kurumsal olgunluğa göre aşamalı olarak ilerler, hep birden büyük bir plana atlamak gereksizdir.
 
 ## KVKK ve Veri Konumu
 
@@ -249,7 +246,7 @@ Hangi planın size uygun olduğunu bulmak için sırayla:
 ### Soru 3: 5-50 kullanıcı için — Team seçimi
 
 - **Standart ihtiyaçlar** (çoğu şirket) → **Team Standart** ($25/koltuk/ay)
-- Claude Code da istiyoruz (geliştirici ekibi) → **Team Premium** ($100/koltuk/ay) — *Zamana kapsamı dışı*
+- Claude Code da istiyoruz (geliştirici ekibi) → **Team Premium** ($100/koltuk/ay)
 
 ### Soru 4: KVKK / regulasyon ne kadar kritik?
 
@@ -281,63 +278,8 @@ Tek kullanıcı, güç kullanıcısı →  Max 5x veya 20x
 5-50 kişi, standart             →  Team Standart
 5-50 kişi, finans/sağlık/hukuk  →  Team + DPA (geçişte Enterprise)
 50+ kişi veya regulatif yük     →  Enterprise
-Sadece denemek                   →  Free (Zamana için yeterli değil)
+Sadece denemek                   →  Free (ciddi iş kullanımı için yetersiz)
 ```
-
-### Zamana Özel Tavsiye
-
-Zamana eğitim programı için:
-
-- **Giriş (İlk ay):** 6 çalışana **Max 5x** ($600/ay toplam) — zorunlu, pazarlık dışı
-- **Ay 2-3 (Değerlendirme):** her çalışanın gerçek kullanımı net olunca karma yapı — ~2 Max + ~4 Pro = **~$280-380/ay**
-- **6 ay sonra** yaygınlaşma olursa **Team Standart'a geç**
-- **Regülasyon ağır sektörse** baştan Team + 12 ay sonra Enterprise planla
-
-**Miktarsal hatırlatma:**
-- İlk ayın maliyeti Pro'ya göre yüksek görünür ama **kötü deneyim nedeniyle vazgeçme maliyeti** çok daha yüksek
-- Eğitim yatırımınızın ($9.000) geri dönmesi için çalışanın Claude'la doğru ilişki kurması şart
-- Max 5x bu ilişkiyi kuran ilk ayın sigortasıdır
-
-## Zamana Eğitim Programları — Hangisi Bana Uygun?
-
-Yukarıdaki Claude **abonelik** planları (Pro, Team, Enterprise) Anthropic'e ödediğiniz tutar. **Zamana eğitim programları** ise size Claude'u nasıl kullanacağınızı **öğreten** ek hizmetimizdir.
-
-İki farklı eğitim formatımız var:
-
-| | Bireysel Program | Kurumsal Program |
-|---|---|---|
-| **Kim için** | Tek kişi (CEO, freelance, çalışan) | Şirket (6 çalışan birden) |
-| **Süre** | 3 hafta × 2 saat = 6 saat | 6 hafta × 6 saat (kişi başı) |
-| **Eğitim modeli** | Birebir, online veya yüz yüze | Birebir, çalışan başına 2 hafta |
-| **Telefon desteği** | 3 ay sınırsız | 3 ay sınırsız (tüm 6 çalışan) |
-| **Toplam yatırım** | **$1.000** | **$9.000** |
-| **Kişi başı maliyet** | $1.000 | $1.500 |
-| **Saat başı maliyet** | ~$167 | ~$250 |
-| **Takvim esnekliği** | Hafta sonu / akşam mümkün | Mesai saati |
-| **Satış süreci** | 3-7 gün | 4-8 hafta |
-
-### Karar Rehberi
-
-**Bireysel Program seçin** eğer:
-
-- Tek başına çalışan profesyonelseniz (avukat, danışman, mimar, freelance)
-- CEO'sunuz ve şirkete getirmeden önce kendiniz öğrenmek istiyorsunuz
-- Şirketiniz Claude eğitimi sunmuyor ama kendinizi geliştirmek istiyorsunuz
-- Pazar günü evinizde, kendi tempoda Claude öğrenmek istiyorsunuz
-- Küçük işletme sahibisiniz (1-3 kişi) ve kendiniz başlamak istiyorsunuz
-
-**Kurumsal Program seçin** eğer:
-
-- Şirketinizden 6+ çalışanı eğitmek istiyorsunuz
-- Şirket çapında kullanım dönüşümü hedefliyorsunuz
-- KVKK + Team/Enterprise plan + DPA için kurumsal süreç işliyor
-- Çalışanlarınız için ortak prompt kütüphanesi ve iş akışı standardı istiyorsunuz
-
-**İkisini birden** uygulayanlar da var:
-- CEO Bireysel Program alır → 1-3 ay sonra şirket Kurumsal Programa geçer
-- Çalışan Bireysel ile başlar → şirketteki iç savunucu olur → Kurumsal sürecini tetikler
-
-Detay: [zamana.com.tr](https://zamana.com.tr) | [murat@zamana.com.tr](mailto:murat@zamana.com.tr)
 
 ## Güncel Fiyat Doğrulaması
 

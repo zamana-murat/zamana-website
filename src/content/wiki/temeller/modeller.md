@@ -1,12 +1,13 @@
 ---
 title: Claude Modelleri — Haiku, Sonnet, Opus
-description: Claude'un üç modeli Haiku, Sonnet ve Opus arasındaki farkları açıklıyoruz. Zamana'nın iş kullanımı için varsayılan model önerisi ve her birinin doğru kullanım alanları.
+description: Claude'un üç modeli Haiku, Sonnet ve Opus arasındaki farkları açıklıyoruz. İş kullanımı için varsayılan model önerisi ve her birinin doğru kullanım alanları.
 tags:
   - temeller
   - modeller
   - sonnet
   - opus
   - haiku
+lastUpdated: "2026-05-06"
 ---
 
 ## Model Nedir?
@@ -23,7 +24,7 @@ Bu üç eksen birbirine **bağlıdır** — daha zeki bir model genellikle daha 
 
 **Claude tek bir model değil, bir model ailesidir.** Hız, zekâ ve maliyet arasında farklı noktalarda duran üç ana modeli vardır: **Haiku**, **Sonnet** ve **Opus**.
 
-Erken 2026 itibariyle aktif aile **Claude 4.x**'dir. Her modelin güçlü olduğu iş türü farklıdır, ama iş profesyoneli için Zamana'nın pozisyonu nettir:
+Erken 2026 itibariyle aktif aile **Claude 4.x**'dir. Her modelin güçlü olduğu iş türü farklıdır, ama iş profesyoneli için pozisyon nettir:
 
 > **Sonnet, bir iş profesyonelinin ihtiyaç duyduğu her şeyi yapar. Varsayılan olarak Sonnet kullanın. Her zaman.**
 
@@ -37,7 +38,7 @@ Bu sayfa üç modeli tanıtır, birini diğerine tercih etme gerekçelerini aç�
 | **Claude Sonnet** ⭐ | Hızlı | Mükemmel | **Her şey — her türlü iş kullanımı için ana model** |
 | **Claude Opus** | Yavaş | Maksimum | Sadece istisnai durumlar: saatlerce süren otonom görevler, 1M token belge analizi |
 
-Bu tabloyu iki kez okuyun. Satır başı "Sonnet" ve satır içi "her şey" Zamana'nın tüm curriculum'unun altına atılmış imzadır.
+Bu tabloyu iki kez okuyun. İş kullanıcısı için pratik özet: çoğu zaman Sonnet, gerisi istisnadır.
 
 ## Hangi Modeli Seçmeliyim?
 
@@ -59,7 +60,7 @@ Haiku, modellerin en küçüğü ve en hızlısıdır. Basit ama sık tekrar ede
 
 ## Claude Sonnet — Ana İş Modeli ⭐
 
-Sonnet, bir iş profesyonelinin günlük hayatında kullanması gereken modeldir. **Çoğu Zamana oturumu sadece Sonnet ile çalışır.** Başka bir model seçme ihtiyacı neredeyse hiç doğmaz.
+Sonnet, bir iş profesyonelinin günlük hayatında kullanması gereken modeldir. **Tipik iş kullanımının neredeyse tamamı Sonnet ile yapılır.** Başka bir model seçme ihtiyacı neredeyse hiç doğmaz.
 
 Sonnet'in yapabildikleri — iş açısından:
 
@@ -70,7 +71,7 @@ Sonnet'in yapabildikleri — iş açısından:
 - İş akışları yönetmek: belge oku → rapor yaz → Slack'te paylaş
 - 12 departmanın tamamında profesyonel kalitede çıktı
 
-**Zamana'nın net pozisyonu:** Sonnet ile Opus arasındaki fark benchmark testlerinde ölçülebilir, gerçek iş hayatında neredeyse görünmez. Opus'un ekstra zekâsı çoğu iş görevinde ek değer katmaz — sadece oturumu yavaşlatır ve maliyet farkı yaratır.
+**Pratik gerçek:** Sonnet ile Opus arasındaki fark benchmark testlerinde ölçülebilir, gerçek iş hayatında neredeyse görünmez. Opus'un ekstra zekâsı çoğu iş görevinde ek değer katmaz, sadece oturumu yavaşlatır ve maliyet farkı yaratır.
 
 **Güncel model kimliği:** `claude-sonnet-4-6`
 
@@ -101,7 +102,7 @@ Claude Desktop'ın Cowork modu ve Claude.ai web arayüzü, **çoğu oturumda en 
 - Bir görev sırasında Cowork otomatik olarak Haiku'ya düşerse — **merak etmeyin, o alt-görev için doğru seçim.**
 - "Opus'a mı geçsem?" diye düşünüyorsanız — **muhtemelen geçmenize gerek yok.**
 
-Bu bilinçli bir tasarımdır. Anthropic, iş kullanıcısının model aritmetiği yapmasını istemiyor. Zamana da aynı felsefeyi uygular: **Çalışana model öğretmeyiz. Çalışana düşünmeyi öğretiriz. Model seçimi arka planda halloluyor.**
+Bu bilinçli bir tasarımdır. Anthropic, iş kullanıcısının model aritmetiği yapmasını istemiyor. Pratik tavsiye de aynı yönde: **Modelin kendisini değil, düşünme biçimini ve prompt yazımını derinleştirin. Model seçimi arka planda halloluyor.**
 
 Kısacası: **"Hangi modeli kullanmalıyım?" diye soruyorsanız, cevap Sonnet'tir.**
 
@@ -136,7 +137,7 @@ Bir iş profesyoneli için Claude modelleri konusu neredeyse kararsız bir sorud
 3. Opus'u sadece gerçek istisnai durumlar için saklayın.
 4. Hangi modeli kullandığınızla ilgili endişelenmek yerine, **Claude'a nasıl iyi prompt yazacağınızla** ilgilenin. Asıl fark oradadır.
 
-Zamana'nın 12 departmanında üretilmiş binlerce saat iş çıktısı Sonnet ile yapıldı ve profesyonel kalitede. Siz de öyle yapın.
+12 farklı departmanda üretilen profesyonel kalitedeki çıktıların büyük çoğunluğu Sonnet ile yapılır. Siz de öyle yapın.
 
 ## İlgili Sayfalar
 

@@ -4,6 +4,7 @@ description: "Skills, Artifacts, Dosya İşleme, Görsel Analiz, Computer Use, A
 tags:
   - yetenekler
   - giris
+lastUpdated: "2026-05-06"
 ---
 
 Claude'un sadece yazı üretmekten çok daha fazlasını yapabildiği yerler. Bu bölüm, bir iş profesyoneline **gerçek zaman kazandıran** yedi temel yeteneği kapsar.
@@ -86,7 +87,7 @@ Bu bölümü yeni okuyorsanız önerilen sıra:
 
 Tümünü bir haftada okumak gerekmez. **Skills → Dosya İşleme → Artifacts** üçlüsü ilk iki haftada yeter. Diğerleri ihtiyaç ortaya çıktıkça devreye girer.
 
-## Zamana'nın Yaklaşımı
+## Pratik Sıralama
 
 Bir iş profesyonelinin haftalık işinin çoğunluğu **dört yetenek** üzerine kurulur:
 

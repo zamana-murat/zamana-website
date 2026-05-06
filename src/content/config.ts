@@ -7,6 +7,7 @@ const wiki = defineCollection({
     description: z.string().optional(),
     tags: z.array(z.string()).optional(),
     notInNav: z.boolean().optional(),
+    lastUpdated: z.string().optional(),
   }),
 });
 

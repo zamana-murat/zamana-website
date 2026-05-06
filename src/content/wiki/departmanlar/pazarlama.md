@@ -6,6 +6,7 @@ tags:
   - pazarlama
   - iletisim
   - icerik-uretimi
+lastUpdated: "2026-05-06"
 ---
 
 Pazarlama ekibi Claude'u doğru kurduğunda içerik üretim kapasitesini katlar — kalite düşmez, ton tutarlı kalır, üretim hızı artar.

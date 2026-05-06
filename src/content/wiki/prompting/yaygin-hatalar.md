@@ -1,13 +1,14 @@
 ---
 title: Yaygın Prompting Hataları ve Düzeltmeleri
-description: "Çoğu kullanıcının Claude ile başarısız olduğu on yaygın hata ve her birinin spesifik düzeltmesi — Zamana'nın koçluk oturumlarından çıkarılmış."
+description: "Çoğu kullanıcının Claude ile başarısız olduğu on yaygın hata ve her birinin spesifik düzeltmesi."
 tags:
   - prompting
   - hatalar
   - troubleshooting
+lastUpdated: "2026-05-06"
 ---
 
-Zamana oturumlarında izlenen bir gerçek: insanlar Claude'la başarısız olurken **benzer hatalarla** başarısız oluyor. Bu sayfa o on hatayı ve her birinin spesifik düzeltmesini içeriyor.
+Pratikte gözlenen bir gerçek: insanlar Claude'la başarısız olurken **benzer hatalarla** başarısız oluyor. Bu sayfa o on hatayı ve her birinin spesifik düzeltmesini içeriyor.
 
 Her hatayı somut bir örneğiyle, neden başarısız olduğuyla ve düzeltmesiyle veriyoruz. Kendi promptlarınızda bunlardan birini yakaladığınızda, çözüm de yanında olacak.
 
@@ -126,7 +127,7 @@ Kısıtlar gerçek kısıtlar olmalı. "İstemiyorum" listesi yerine "istiyorum"
 Çoğu zaman Claude size daha iyisini verebilirdi — sadece söylemediniz için yapmadı. 30 saniyelik bir düzeltme turu göndermeden önce çıktıyı %20 daha iyi yapabilir.
 
 **Düzeltme:**
-Zamana'nın altın sorusu: **"Bunu şu an müdürüne göndermeye razı mısın?"**
+Pratik altın soru: **"Bunu şu an müdürüne göndermeye razı mısın?"**
 
 Cevap "hayır"sa, geri dön. Basitçe: *"Üçüncü paragraf iyi değil, yeniden yaz"*, *"Konu satırı yumuşak, keskinleştir"*, *"Kapanış çok uzun, kısalt"*. Her düzeltme 30 saniye, toplam kalite farkı büyük.
 

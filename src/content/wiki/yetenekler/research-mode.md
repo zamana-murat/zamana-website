@@ -5,6 +5,7 @@ tags:
   - yetenekler
   - arastirma
   - dispatch
+lastUpdated: "2026-05-06"
 ---
 
 **Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" — bunlar saatler süren araştırma istiyor. Claude'un research mode'u tam buna hizmet eder.

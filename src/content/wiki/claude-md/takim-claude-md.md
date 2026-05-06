@@ -5,6 +5,7 @@ tags:
   - claude-md
   - takim
   - paylasimli
+lastUpdated: "2026-05-06"
 ---
 
 **[CLAUDE.md](nedir/) bireysel başlar, ama şirkette 6 kişi aynı yönergeyi paylaşmak istediğinde takım versiyonu gerekir.** Bu sayfa paylaşılan CLAUDE.md'nin nasıl kurulduğunu, kimin editlediğini, sürüm sorunlarının nasıl yönetildiğini anlatır.

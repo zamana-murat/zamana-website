@@ -1,17 +1,18 @@
 ---
 title: CLAUDE.md Nedir?
-description: CLAUDE.md, Claude'un sizi ve şirketinizi her oturumda yeniden tanımasını önleyen basit bir metin dosyasıdır. Zamana eğitim programlarının kalbidir.
+description: CLAUDE.md, Claude'un sizi ve şirketinizi her oturumda yeniden tanımasını önleyen basit bir metin dosyasıdır. Ciddi Claude kullanımının kalbidir.
 tags:
   - claude-md
   - temel-kavram
   - cowork
+lastUpdated: "2026-05-06"
 ---
 
 **CLAUDE.md, Claude'un sizi (ve varsa şirketinizi) her oturumda yeniden tanımak zorunda kalmaması için hazırlanan düz metin bir dosyadır.**
 
 Markdown formatındadır. Workspace klasörünüzde durur. Claude, Cowork modunda bir oturum başlattığınızda bu dosyayı otomatik olarak okur ve sessiz bir şekilde "tamam, bu kullanıcıyı tanıyorum" deyip işe başlar.
 
-Zamana eğitim programlarında bu dosyaya verdiğimiz önem bir slogan değildir: **CLAUDE.md, Claude'u genel bir asistan olmaktan çıkarıp size özel bir asistana dönüştüren mekanizmadır** — kendi tarzınıza, işinize, varsa ekibinize uygun.
+Bu dosyanın değeri pratikte hızla görünür: **CLAUDE.md, Claude'u genel bir asistan olmaktan çıkarıp size özel bir asistana dönüştüren mekanizmadır**, kendi tarzınıza, işinize, varsa ekibinize uygun.
 
 ## Neden Önemli?
 
@@ -63,7 +64,7 @@ Cowork her yeni oturum başlattığında bu dosyayı otomatik olarak okur. Siz b
 
 İyi bir CLAUDE.md dosyası doğumundan itibaren mükemmel değildir. Büyüyerek mükemmelleşir.
 
-Zamana'nın altın kuralı:
+Pratik altın kural:
 
 > **Kendinize Claude'a aynı şeyi iki kere anlattığınızı fark ettiğinizde, hemen CLAUDE.md'nizi açın ve o bilgiyi dosyaya yazın.**
 
@@ -82,11 +83,11 @@ Kurumsal kullanımda şeffaflık iyi bir özellik değil — **zorunlu bir özel
 ## Basit Bir Örnek
 
 ```markdown
-# CLAUDE.md — Murat Özsaygılı
+# CLAUDE.md — Ayşe Kaya
 
 ## Kim Olduğum
-- İsim: Murat Özsaygılı
-- Pozisyon: Kurucu ve Baş Danışman, Zamana Kurumsal Eğitim
+- İsim: Ayşe Kaya
+- Pozisyon: Pazarlama Direktörü, ABC Tekstil A.Ş.
 
 ## Ton Tercihleri
 - Resmi ama robotik değil
@@ -99,8 +100,8 @@ Kurumsal kullanımda şeffaflık iyi bir özellik değil — **zorunlu bir özel
 - Asla: çalışanlar hakkında özel yorum yapma
 
 ## Güncel Odak
-- Zamana wiki içerik üretimi (Türkçe, Claude eğitimi)
-- Q2 2026'da ilk kurumsal eğitim anlaşmasını imzalamak
+- Q2 2026 ihracat kampanyası içerik üretimi
+- Yeni katalog tasarımının pazara hazırlanması
 ```
 
 Bu 20 satır, her oturumun başında Claude'un profesyonel bir meslektaş gibi davranması için yeterlidir.

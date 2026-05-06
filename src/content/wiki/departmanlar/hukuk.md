@@ -7,6 +7,7 @@ tags:
   - kvkk
   - ttk
   - sozlesme
+lastUpdated: "2026-05-06"
 ---
 
 Hukuk, Claude'un en yüksek zaman tasarrufu sağladığı ama en katı disiplin gerektiren departmandır.

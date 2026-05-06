@@ -4,6 +4,7 @@ description: "Claude'un yedi farklı kullanım aracı — Claude Chat, Projects,
 tags:
   - araclar
   - giris
+lastUpdated: "2026-05-06"
 ---
 
 **Claude'u kullanmanın birden fazla yolu var. Hangisinin hangi iş için doğru olduğu, üretkenlikte ciddi fark yaratır.**
@@ -98,16 +99,16 @@ Hızlı iş, mobil kullanım, ekiple paylaşılan kalıcı bağlam için güçl�
 
 ### 2. Cowork Tabanlı (Desktop + Cowork + Dispatch + Scheduled Tasks)
 
-Claude Desktop kurulumu gerektirir ve en az Pro aboneliğine dayanır (Zamana eğitim programı katılımcıları için ilk ay Max 5x zorunludur). **Yerel dosyalara erişir, kod çalıştırır, skills ve plugins kullanır, connector'lar ile şirket araçlarınıza bağlanır, zamanlanmış görevler oluşturur.**
+Claude Desktop kurulumu gerektirir ve en az Pro aboneliğine dayanır (yeni başlayan kullanıcı için ilk ay Max 5x önerilir). **Yerel dosyalara erişir, kod çalıştırır, skills ve plugins kullanır, connector'lar ile şirket araçlarınıza bağlanır, zamanlanmış görevler oluşturur.**
 
-Gerçek iş akışları burada kurulur. Zamana eğitim programlarının büyük kısmı bu tarafta ilerler.
+Gerçek iş akışları burada kurulur.
 
-## Zamana'nın Aracı Kullanma Yolu
+## Önerilen Adaptasyon Yolu
 
-Çalışan tipik olarak şu sırayı izler:
+Tipik bir yeni kullanıcı şu sırayı izler:
 
-1. **Hafta 1 (Oturum 1):** Claude Desktop kurulur → Cowork açılır → CLAUDE.md yazılır → ilk gerçek iş çıktısı üretilir
-2. **Hafta 2 (Oturum 2):** Role göre skill'ler ve plugin'ler tanıtılır → ilk connector kurulur (Slack, Drive veya CRM)
+1. **Hafta 1:** Claude Desktop kurulur → Cowork açılır → CLAUDE.md yazılır → ilk gerçek iş çıktısı üretilir
+2. **Hafta 2:** Role göre skill'ler ve plugin'ler keşfedilir → ilk connector kurulur (Slack, Drive veya CRM)
 3. **Hafta 3-4:** Dispatch kurulumu → ilk zamanlanmış görev (haftalık rapor)
 4. **Ay 2-3:** Prompt kütüphanesi büyür, iş akışlarının 2-3 tanesi tamamen otomatikleşir, çalışan işi yeniden tasarlar
 

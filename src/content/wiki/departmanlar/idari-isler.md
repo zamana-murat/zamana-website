@@ -6,6 +6,7 @@ tags:
   - idari-isler
   - yonetici-asistani
   - toplanti
+lastUpdated: "2026-05-06"
 ---
 
 Yönetici asistanı ve idari personel, Claude'dan saatlerce kazanır. Bu kazancın çoğu **zaten yapmaları gereken ama zamanları yetmediği** yüksek değerli işlere harcanır.

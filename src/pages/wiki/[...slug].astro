@@ -29,6 +29,7 @@ const { Content, headings } = await entry.render();
   description={entry.data.description}
   tags={entry.data.tags}
   headings={headings}
+  modifiedDate={entry.data.lastUpdated}
 >
   <Content />
 </WikiLayout>

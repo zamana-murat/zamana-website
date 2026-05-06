@@ -5,6 +5,7 @@ tags:
   - prompting
   - few-shot
   - ornek
+lastUpdated: "2026-05-06"
 ---
 
 **Bir kavramı öğretmenin en güçlü yolu örnek göstermektir.** Claude için de öyle. Soyut bir kuralı tarif etmek yerine "şuna benzer üret" demek, sonucu daha tutarlı, daha sürpriz-azaltıcı yapar.

@@ -6,11 +6,12 @@ tags:
   - claude-desktop
   - kurulum
   - cowork
+lastUpdated: "2026-05-06"
 ---
 
 **Claude Desktop, Claude'un Windows ve macOS için yerel uygulamasıdır.** Kağıt üzerinde başka bir arayüz gibi görünse de pratikte çok daha fazlasıdır: **Cowork moduna erişimin tek yoludur**, ve iş kullanımı için web arayüzünden ciddi ölçüde daha güçlüdür.
 
-Tek cümleyle: Zamana eğitim programı Claude Desktop olmadan başlamaz. Çünkü programın kalbindeki Cowork, Skills, Plugins, CLAUDE.md — hepsi Desktop'ta yaşar.
+Tek cümleyle: ciddi Claude kullanımı Claude Desktop olmadan başlamaz. Çünkü Cowork, Skills, Plugins, CLAUDE.md, hepsi Desktop'ta yaşar.
 
 ## Claude Desktop Web Arayüzünden Ne Farkı Var?
 
@@ -31,9 +32,9 @@ Tek cümleyle: Zamana eğitim programı Claude Desktop olmadan başlamaz. Çünk
 | **RAM** | 8 GB | 16 GB |
 | **Depolama** | 2 GB boş alan | SSD üzerinde 10 GB |
 | **İnternet** | 10 Mbps | 25 Mbps, kararlı |
-| **Abonelik** | Claude Pro ($20/ay) | **Claude Max 5x ($100/ay)** — Zamana eğitim ilk ayı zorunlu |
+| **Abonelik** | Claude Pro ($20/ay) | **Claude Max 5x ($100/ay)** — yeni başlayan kullanıcılar için ilk ay önerilir |
 
-**Önemli:** Claude Desktop'ın en güçlü özellikleri (özellikle Cowork) için **en az Pro ($20/ay)** gerekir. Ancak **Zamana eğitim programı katılımcıları için ilk ay Max 5x ($100/ay) zorunludur** — yeni kullanıcının keşif ritminde Pro limiti çabuk dolar, "çalışmıyor" yanlış izlenimi oluşturur. İkinci aydan itibaren gerçek kullanıma göre Pro'ya ($20) indirme opsiyonu vardır.
+**Önemli:** Claude Desktop'ın en güçlü özellikleri (özellikle Cowork) için **en az Pro ($20/ay)** gerekir. Yeni başlayan kullanıcılar için **ilk ay Max 5x ($100/ay)** önerilir; yeni kullanıcının keşif ritminde Pro limiti çabuk dolar, "çalışmıyor" yanlış izlenimi oluşturur. İkinci aydan itibaren gerçek kullanıma göre Pro'ya ($20) indirme opsiyonu vardır.
 
 ## Kurulum
 
@@ -45,7 +46,7 @@ Tek cümleyle: Zamana eğitim programı Claude Desktop olmadan başlamaz. Çünk
 6. Bir **workspace klasörü** seçin — bilgisayarınızda Claude'un çalışacağı gerçek klasör (öneri: `C:\ClaudeWorkspace` veya `~/ClaudeWorkspace`)
 7. Bu klasörün içine **CLAUDE.md** dosyasını oluşturun (bkz: [CLAUDE.md Nasıl Yazılır?](../claude-md/nasil-yazilir/))
 
-Zamana'nın ilk oturum prosedürü bu 7 adımdır ve yaklaşık 20 dakika sürer.
+Bu 7 adım yaklaşık 20 dakika sürer ve sağlıklı bir başlangıç noktası verir.
 
 ## IT ve Kurumsal Ağ
 

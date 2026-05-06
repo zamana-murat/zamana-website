@@ -5,6 +5,7 @@ tags:
   - araclar
   - connectors
   - entegrasyon
+lastUpdated: "2026-05-06"
 ---
 
 **Connector'lar, Claude'u Gmail, Google Drive, Calendar, Notion, GitHub gibi iş sistemlerinize tek tıkla bağlayan resmi entegrasyonlardır.** Kuruluşunuzda bu sistemleri zaten kullanıyorsanız, Claude'u onlarla konuşur hâle getirmek için kod yazmanıza, kurulum yapmanıza gerek yok.

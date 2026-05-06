@@ -6,6 +6,7 @@ tags:
   - voice-mode
   - mobil
   - dikte
+lastUpdated: "2026-05-06"
 ---
 
 **Claude'un ses özelliği, yazı yerine konuşarak etkileşim kurmanıza izin verir.** Hem web arayüzünde hem mobil uygulamalarda çalışır — eller serbest, doğal bir sesli konuşma deneyimi sağlar.
@@ -51,7 +52,7 @@ Aynı konuşma içinde her an metinden sese veya tersine geçiş yapabilirsiniz 
 
 ## Türkçe Desteği
 
-Ses transkripsiyonu birçok dili destekler. **Claude Türkçeyi iyi anlar** — Zamana müşterilerinden özellikle konuşmayı yazmaya tercih edenler için pratik bir seçenektir.
+Ses transkripsiyonu birçok dili destekler. **Claude Türkçeyi iyi anlar**, konuşmayı yazmaya tercih edenler için pratik bir seçenektir.
 
 Birkaç pratik not:
 
@@ -80,11 +81,11 @@ En değerli kullanım şekli: **telefonla Dispatch'e sesli komut vermek.**
 
 Siz toplantıya varmadan, belge hazır. Klavye kullanmadan.
 
-## Zamana'daki Yeri
+## Pratik Kullanım
 
-Voice mode kritik bir özellik değildir — **yaşam kalitesi özelliğidir**. Kimi çalışan doğal yazıcıdır, kimi doğal konuşmacıdır. Doğal konuşmacı olanlar için — özellikle satış, iş geliştirme ve üst yönetimde — yazmak daima bir yavaşlatıcıdır.
+Voice mode kritik bir özellik değildir, **yaşam kalitesi özelliğidir**. Kimi çalışan doğal yazıcıdır, kimi doğal konuşmacıdır. Doğal konuşmacı olanlar için (özellikle satış, iş geliştirme ve üst yönetimde) yazmak daima bir yavaşlatıcıdır.
 
-Zamana birinci oturumunda voice mode'u bir seçenek olarak tanıtırız. Çalışanın doğal eğilimi varsa kullanır. Yoksa varsayılanı yazı olarak bırakırız — zorlamayız.
+Doğal eğiliminiz varsa kullanın, yoksa varsayılanı yazı olarak bırakın. Zorlama gerektirmez.
 
 ## İlgili Sayfalar
 

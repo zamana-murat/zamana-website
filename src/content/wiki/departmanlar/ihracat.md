@@ -9,9 +9,10 @@ tags:
   - spa
   - lc
   - incoterms
+lastUpdated: "2026-05-06"
 ---
 
-Bu bölüm, Zamana'nın kurucusu Murat Özsaygılı'nın ana uzmanlık alanıdır. Akmin Dış Ticaret'te kükürt, bitümen, sepiyolit, üre ve diğer emtiaları uluslararası ticareti yönetme deneyiminden doğrudan çekiyor. **Türkiye'de bu departmanı bu derinlikte veren başka bir eğitimci yok.**
+Bu bölüm, Türkiye'den emtia ihracatı yapan firmalar için somut iş akışlarına odaklanır. Kükürt, bitümen, sepiyolit, üre gibi emtiaların uluslararası ticareti, LOI/FCO/SPA aşamaları, akreditif yazışmaları ve gümrük süreçleri pratik örneklerle ele alınır.
 
 ## Pazarlık Dışı Çerçeve
 
@@ -162,12 +163,6 @@ Bir alıcı Akmin'e e-posta gönderdi: "200 ton sepiyolit, kıbrıs limanı tesl
 **Adım 5:** Alıcıya gönderilir.
 
 Toplam süre: 12 dakika. Normal süreç: 1-1.5 saat, eski LOI'yi kopyalayıp uyarlayarak.
-
-## Zamana'nın Bu Departmana Özel Duruşu
-
-Murat'ın Akmin'deki 10+ yıllık emtia ticareti tecrübesi bu departmanın her satırında. LOI ile FCO arasındaki nüansı, SPA maddelerinin neden bu sırayla olduğunu, LC uyuşmazlık yanıtlarında neden bu ton gerektiğini — bunlar teorik değil, yaşanmış.
-
-Türkiye'de başka hiçbir Claude eğitimi bu departmanı bu derinlikte veremez. **Bu Zamana'nın net farklılaştırıcısıdır.**
 
 ## İlgili Sayfalar
 

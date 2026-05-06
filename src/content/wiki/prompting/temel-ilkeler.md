@@ -5,6 +5,7 @@ tags:
   - prompting
   - temel
   - prompt-anatomisi
+lastUpdated: "2026-05-06"
 ---
 
 Prompting, Claude'la çalışırken en öğretilebilir beceridir. Ve en çok hata yapılan yerdir.

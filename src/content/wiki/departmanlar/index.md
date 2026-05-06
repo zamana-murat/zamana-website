@@ -5,11 +5,12 @@ tags:
   - departmanlar
   - giris
   - rol-bazli
+lastUpdated: "2026-05-06"
 ---
 
 Claude her departmanda farklı çalışır. **Aynı araç, farklı rollerde farklı değer üretir** — çünkü iş akışları farklı, çıktılar farklı, hukuki hassasiyetler farklı.
 
-Bu bölüm Zamana eğitim programlarının **kalbi**dir: 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışlarına dayanan Claude kullanım senaryoları.
+Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışlarına dayanan Claude kullanım senaryolarını içerir.
 
 ## 12 Departman
 
@@ -107,7 +108,7 @@ Bu bölüm Zamana eğitim programlarının **kalbi**dir: 12 iş alanı için öz
 
     ---
 
-    LOI, FCO, SPA, CIS, pazar istihbaratı, LC uyuşmazlıkları — Zamana'nın net farklılaştırıcısı.
+    LOI, FCO, SPA, CIS, pazar istihbaratı, LC uyuşmazlıkları, emtia ihracatı için pratik iş akışları.
 
     [→ İhracat](ihracat/)
 
@@ -129,9 +130,9 @@ Her departman sayfasında tutarlı bir yapı bulacaksınız:
 
 Bu bölümün özeti tek cümleye indirgenirse:
 
-> **Aynı Claude, farklı roller için farklı iş akışları kurar. Zamana eğitim programlarının 2. oturumu her çalışanın kendi departman uygulamasını canlı olarak kurmasıdır.**
+> **Aynı Claude, farklı roller için farklı iş akışları kurar. Her çalışanın kendi rolüne uygun bir uygulama kurması bu bölümde önerilen yaklaşımdır.**
 
-Zamana bu 12 departmanı tesadüfen seçmedi. Her biri Türkiye'deki orta ölçekli şirketlerin fonksiyonel yapısına karşılık gelir. Sizin şirketinizde bazıları birleştirilmiş olabilir (örneğin satınalma + operasyon tek kişide) ya da bazıları yoktur (örneğin şirket içi hukuk yerine dış danışman). Eğitim **çalışanın rolüne göre** değil, **yaptığı işe göre** uyarlanır.
+Bu 12 departman Türkiye'deki orta ölçekli şirketlerin fonksiyonel yapısına karşılık gelir. Sizin şirketinizde bazıları birleştirilmiş olabilir (örneğin satınalma + operasyon tek kişide) ya da bazıları yoktur (örneğin şirket içi hukuk yerine dış danışman). Önerilen yaklaşım **çalışanın rolüne göre** değil, **yaptığı işe göre** uyarlanır.
 
 ## Nasıl Kullanın?
 
@@ -139,16 +140,16 @@ Zamana bu 12 departmanı tesadüfen seçmedi. Her biri Türkiye'deki orta ölçe
 
 Her sayfa ~1500-2500 kelime. 15-25 dakikada bir sayfa okunur. Tamamı için 3-6 saat — ama **kendi rolünüzle sınırlarsanız** 30 dakika yeter.
 
-## Zamana'nın 2. Oturum Yaklaşımı
+## Pratik Adaptasyon Yolu
 
-Her müşteri çalışanının rolüne göre:
+Kendi rolünüz için somut bir kurulum:
 
-1. **Departman sayfasını birlikte açarız** — içeriği canlı gezeriz
-2. **3-5 prompt kütüphanesi girdisi** gerçek zamanlı inşa edilir
-3. **İlk iş akışı** canlı kurulur — o gün çalışan ilk gerçek çıktısını alır
-4. **Bir scheduled task veya connector** o rol için devreye girer
+1. **Departman sayfasını okuyun**, içeriği gezin
+2. **3-5 prompt** taslağını kendi gerçek işiniz üzerinden hazırlayın
+3. **İlk iş akışını** canlı kurun, o gün ilk gerçek çıktıyı alın
+4. **Bir scheduled task veya connector** ekleyin
 
-Oturum sonunda çalışan o departmanın sayfasını referans alacak, **ama kendi örnekleriyle zenginleştirilmiş kişisel bir sürüm** elinde olacak.
+Bu yaklaşım her departman sayfasının başlangıç noktası niteliğindedir.
 
 ## Nereye Gitmeli?
 

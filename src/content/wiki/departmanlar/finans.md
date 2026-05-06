@@ -6,6 +6,7 @@ tags:
   - finans
   - muhasebe
   - raporlama
+lastUpdated: "2026-05-06"
 ---
 
 Finans ekibi Claude'u doğru konumlandırdığında ayda 10-20 saat kazanır. Ama kritik bir çerçeve var:
@@ -140,7 +141,7 @@ Mart ayı kapandı. Satış bütçenin %8 altında, pazarlama gideri %15 üstün
 
 Toplam süre: 35 dakika. Normal süreç: 3 saat + 1 gün sonra revizyonlar.
 
-## Zamana'nın Finansa Özel Duruşu
+## Finans için Pazarlık Dışı Çerçeve
 
 > **Claude yazar. Finans profesyoneli olguyu, sayıyı ve imzayı verir. Sorumluluk asla transfer olmaz.**
 

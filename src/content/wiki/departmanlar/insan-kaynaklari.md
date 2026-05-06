@@ -6,6 +6,7 @@ tags:
   - insan-kaynaklari
   - ik
   - is-kanunu
+lastUpdated: "2026-05-06"
 ---
 
 İnsan Kaynakları Claude'un en yüksek hacim, en yüksek tekrar eden iş ürettiği alanlardan biridir. Ama hukuki hassasiyeti yüksektir.

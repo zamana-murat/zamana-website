@@ -6,6 +6,7 @@ tags:
   - fatura
   - kdv
   - muhasebe
+lastUpdated: "2026-05-06"
 ---
 
 **Claude aboneliği yurt dışından alınan dijital bir hizmettir.** Türkiye'de muhasebeleştirilmesi, KDV uygulanması ve gider olarak gösterilmesinde net bir prosedür var — ama doğru bilmek finans direktörünün ilk sorusudur.
@@ -89,7 +90,7 @@ Eğer Claude aboneliği bir **gerçek kişi (şahıs)** olarak alındıysa ve ş
 - KDV ve stopaj sorumluluğu değişir — gelir vergisi mükellefi serbest meslek erbabı için farklı kurallar geçerlidir
 - Şirkete sonradan masraf olarak yansıtılması istenirse bu **çalışan adına gider değil, ödenen fatura** olarak fatura/dekont yedekli olarak işlenmeli
 
-[Bireysel program](https://zamana.com.tr) katılımcılarının çoğu Claude aboneliğini kendi adlarına alıyor. Sonradan şirketleştirmek için yukarıdaki Billing bilgilerini güncellemek yeterli.
+Bireysel kullanıcıların çoğu Claude aboneliğini kendi adlarına alıyor. Sonradan şirketleştirmek için yukarıdaki Billing bilgilerini güncellemek yeterli.
 
 ## Plan Maliyeti — Bütçe Tahmini
 
@@ -104,7 +105,7 @@ Eğer Claude aboneliği bir **gerçek kişi (şahıs)** olarak alındıysa ve ş
 | Karma (1. ay Max, sonra Pro) × 6 kişi | ~$28/kişi/ay ortalama | ~$2.000 |
 | Team × 5 kullanıcı | ~$150 | ~$1.800 |
 
-**Plan politikası:** Yeni Zamana katılımcısı **ilk ay Max 5x ($100/ay) zorunlu**. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](planlar/).
+**Pratik öneri:** Claude'a yeni başlayanlar **ilk ay Max 5x ($100/ay)** ile başlamayı tercih ediyor — Pro plan ($20/ay) günlük limitlere yeni kullanıcı tarafından hızlı çarpılır ve "çalışmıyor" hissi yaratır. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](planlar/).
 
 ## Mali Müşavirinizle Konuşacaklarınız
 
