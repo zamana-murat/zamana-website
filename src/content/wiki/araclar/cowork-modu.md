@@ -108,9 +108,9 @@ Bu, bir çalışana "Claude şirket verilerine özgürce erişebilir" anlamına 
 ## İlgili Sayfalar
 
 - [Claude Desktop](claude-desktop/) — Cowork'ün içinde yaşadığı uygulama
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — Cowork'ün her oturumda okuduğu hafıza dosyası
-- [Skills](../yetenekler/skills/) — Cowork'teki yetenek paketleri
-- [MCP Bağlantı Listesi](../mcp/baglanti-listesi/) — Cowork'te kullanılabilen connector'lar
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Cowork'ün her oturumda okuduğu hafıza dosyası
+- [Skills](/wiki/yetenekler/skills/) — Cowork'teki yetenek paketleri
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Cowork'te kullanılabilen connector'lar
 - [Dispatch](dispatch/) — Uzaktan görev atama
 - [Scheduled Tasks](scheduled-tasks/) — Zamanlanmış otomasyonlar
 

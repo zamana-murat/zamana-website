@@ -142,8 +142,8 @@ Toplam süre: 45 dakika (bir kereye mahsus). Bundan sonra her hafta sıfır daki
 
 ## İlgili Sayfalar
 
-- [Cowork Modu](../araclar/cowork-modu/) — Bash tool ve script çalıştırma
-- [Scheduled Tasks](../araclar/scheduled-tasks/) — Script'lerin otomasyonu
-- [Computer Use](../yetenekler/computer-use/) — API olmayan sistemlerde
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — VERBİS uyum detayları
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Bash tool ve script çalıştırma
+- [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) — Script'lerin otomasyonu
+- [Computer Use](/wiki/yetenekler/computer-use/) — API olmayan sistemlerde
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — VERBİS uyum detayları
 

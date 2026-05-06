@@ -36,11 +36,11 @@ Mobil uygulamaların eksikleri masaüstüne göre belirgin. Karar verirken bilin
 | Sesli giriş | ✅ (güçlü) | ⚠️ (sınırlı) |
 | Kamera ile görsel | ✅ | — |
 | [Cowork modu](cowork-modu/) | — | ✅ |
-| [Skills](../yetenekler/skills/) (.docx, .xlsx, .pptx üretme) | — | ✅ |
+| [Skills](/wiki/yetenekler/skills/) (.docx, .xlsx, .pptx üretme) | — | ✅ |
 | Yerel dosya sistemi erişimi | — | ✅ (Desktop) |
-| [MCP](../mcp/nedir/) ve connector'lar | — | ✅ |
+| [MCP](/wiki/mcp/nedir/) ve connector'lar | — | ✅ |
 | [Scheduled Tasks](scheduled-tasks/) | İzleme ✅ / Kurulum — | ✅ |
-| Uzun [artifact](../yetenekler/artifacts/) önizleme | ⚠️ Küçük ekran | ✅ |
+| Uzun [artifact](/wiki/yetenekler/artifacts/) önizleme | ⚠️ Küçük ekran | ✅ |
 
 Kısaca: **mobil "tüketim ve hızlı giriş" için, masaüstü "üretim ve otomasyon" için.**
 
@@ -55,7 +55,7 @@ Pratik kullanımlar:
 - Toplantı sonrası "bana neyi konuştuğumuzu sözlü hatırlat" tarzı taze bellek aktarımı
 - Yabancı bir kelimenin telaffuzunu öğrenme
 
-**Türkçe performansı güçlü** ama aksanlı veya hızlı konuşmada hata payı artar — kritik metinlerde mutlaka okuyup düzeltin. Detay için [Türkçe Performansı](../temeller/turkce-performansi/).
+**Türkçe performansı güçlü** ama aksanlı veya hızlı konuşmada hata payı artar — kritik metinlerde mutlaka okuyup düzeltin. Detay için [Türkçe Performansı](/wiki/temeller/turkce-performansi/).
 
 ## Kamera ve Görsel
 
@@ -67,7 +67,7 @@ Telefonun kamerasını doğrudan Claude'a açabilirsiniz. Bunun bazı pratik kul
 - **Makine paneli teşhis** — endüstriyel ekran, hata kodu, ölçüm değeri
 - **Kartvizit dijitalleştirme** — fotoğraf çek, "bu kişiyi LinkedIn'de aramam için bilgileri çıkar"
 
-Kamera kullanımının teknik tarafı için [Görsel ve Görüntü](../yetenekler/vision-image/) sayfası.
+Kamera kullanımının teknik tarafı için [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) sayfası.
 
 ## Bildirimler ve Sürekli Görevler
 
@@ -77,19 +77,19 @@ Mobil uygulama, masaüstünde kurduğunuz [Scheduled Tasks](scheduled-tasks/)'in
 
 ## Gizlilik ve KVKK
 
-Mobil cihazda Claude'a yüklediğiniz fotoğraf, ses kaydı, dosya — hepsi web/masaüstü ile aynı veri politikasına tabidir. Telefonun kendisi farklı bir cihaz olduğu için ek bir veri toplama yapılmaz. Detay için [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/).
+Mobil cihazda Claude'a yüklediğiniz fotoğraf, ses kaydı, dosya — hepsi web/masaüstü ile aynı veri politikasına tabidir. Telefonun kendisi farklı bir cihaz olduğu için ek bir veri toplama yapılmaz. Detay için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
 **Pratik uyarılar:**
 
 - Çalıştığınız şirket cep telefonunuza MDM (mobile device management) uygulamışsa, IT departmanı uygulamanın kurulumunu kontrol edebilir
 - Hassas müşteri görsellerini telefonun yerel galerisinden Claude'a aktarmak yerine, mümkünse şirket onaylı kanaldan aktarın
-- Şirket içi politika için [Şirket İçi Politika](../temeller/sirket-ici-politika/) sayfasına bakın
+- Şirket içi politika için [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfasına bakın
 
 ## Plan ve Abonelik
 
-Mobil uygulamada hangi planı kullandığınızdan bağımsız oturum açarsınız. Pro, Max 5x veya Max 20x — hangisi varsa o limitle çalışır. Plan farkları için [Planlar](../temeller/planlar/).
+Mobil uygulamada hangi planı kullandığınızdan bağımsız oturum açarsınız. Pro, Max 5x veya Max 20x — hangisi varsa o limitle çalışır. Plan farkları için [Planlar](/wiki/temeller/planlar/).
 
-**Pratik öneri:** Yeni başlayan kullanıcılara ilk ay **Max 5x ($100/ay)** önerilir. Pro planda mobilden yoğun kullanım kotayı hızla bitirir; mobil dikte özellikle çok prompt yapar. Detay [Planlar](../temeller/planlar/) sayfasında.
+**Pratik öneri:** Yeni başlayan kullanıcılara ilk ay **Max 5x ($100/ay)** önerilir. Pro planda mobilden yoğun kullanım kotayı hızla bitirir; mobil dikte özellikle çok prompt yapar. Detay [Planlar](/wiki/temeller/planlar/) sayfasında.
 
 ## Pratik Tavsiyeler
 
@@ -106,7 +106,7 @@ Mobil uygulamada hangi planı kullandığınızdan bağımsız oturum açarsın�
 - [Voice Mode](voice-mode/) — Sesli kullanımın teknik detayı
 - [Claude Chat](claude-chat/) — Tarayıcıdan kullanım
 - [Claude Desktop](claude-desktop/) — Masaüstü uygulaması ve [Cowork modu](cowork-modu/)
-- [İlk Kurulum](../temeller/ilk-kurulum/) — Hesap açma ve uygulama indirme
-- [Planlar](../temeller/planlar/) — Mobil hangi plan üzerinde çalışır
-- [Görsel ve Görüntü](../yetenekler/vision-image/) — Kamera ile çekim mantığı
+- [İlk Kurulum](/wiki/temeller/ilk-kurulum/) — Hesap açma ve uygulama indirme
+- [Planlar](/wiki/temeller/planlar/) — Mobil hangi plan üzerinde çalışır
+- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) — Kamera ile çekim mantığı
 

@@ -155,8 +155,8 @@ Bu yaklaşım her departman sayfasının başlangıç noktası niteliğindedir.
 
 Departmanınızı tanıdıysanız:
 
-- [**CLAUDE.md Örnekleri**](../claude-md/ornekler/) — Rolünüze uygun hazır CLAUDE.md
-- [**Prompting**](../prompting/) — Kaliteli prompt yazma
-- [**Yetenekler**](../yetenekler/) — Skills, Artifacts, Computer Use
-- [**MCP Bağlantı Listesi**](../mcp/baglanti-listesi/) — Rolünüze göre connector'lar
+- [**CLAUDE.md Örnekleri**](/wiki/claude-md/ornekler/) — Rolünüze uygun hazır CLAUDE.md
+- [**Prompting**](/wiki/prompting/) — Kaliteli prompt yazma
+- [**Yetenekler**](/wiki/yetenekler/) — Skills, Artifacts, Computer Use
+- [**MCP Bağlantı Listesi**](/wiki/mcp/baglanti-listesi/) — Rolünüze göre connector'lar
 

@@ -121,7 +121,7 @@ En spesifik ve en hassas register. Her kelime hukuki sonuç doğurur.
 
 **Pazarlık dışı kural:** Claude'un yazdığı her hukuki metni avukat incelemeli. Kanun atıfları, tarih aralıkları, sayısal yükümlülükler — hepsi doğrulanmalı. Claude bir **süper hızlı ilk taslak yazarıdır** — hukuki otorite değildir.
 
-[Hukuk ve Uyum](../departmanlar/hukuk/) sayfasında detay.
+[Hukuk ve Uyum](/wiki/departmanlar/hukuk/) sayfasında detay.
 
 ---
 
@@ -163,7 +163,7 @@ Pazarlama için **CLAUDE.md "Marka Sesi" bölümü kritik.** Şunları net yazı
 - Örnek 2-3 cümle — bu tarzda
 - Emoji kullanımı: evet / hayır / seçici
 
-Detay: [Pazarlama ve İletişim](../departmanlar/pazarlama/).
+Detay: [Pazarlama ve İletişim](/wiki/departmanlar/pazarlama/).
 
 ---
 
@@ -196,7 +196,7 @@ Her register için geçerli Claude güçlü/zayıf yönleri:
 - ⚠️ **Özel terim Türkçeleştirme** kararı her zaman doğru değil ("download" → "indir" her bağlamda uygun değil)
 - ⚠️ **Uzun tire (–) vs kısa tire (-)** tutarsız kullanılabilir
 
-**Çözüm:** Önemli Türkçe metinleri her zaman **insan gözüyle** baştan sona okuyun. "Bu metin benim adımı altına atabileceğim kalitede mi?" testi ([4D Çerçevesi](../prompting/4d-cercevesi/) D3 — Discernment).
+**Çözüm:** Önemli Türkçe metinleri her zaman **insan gözüyle** baştan sona okuyun. "Bu metin benim adımı altına atabileceğim kalitede mi?" testi ([4D Çerçevesi](/wiki/prompting/4d-cercevesi/) D3 — Discernment).
 
 ## Türkçe Kalitesini CLAUDE.md İle Artırmak
 
@@ -234,8 +234,8 @@ Detaylı karşılaştırma: [Claude vs ChatGPT](claude-vs-chatgpt/).
 ## İlgili Sayfalar
 
 - [Claude Nedir?](claude-nedir/) — Genel Türkçe yeteneği
-- [CLAUDE.md Nasıl Yazılır?](../claude-md/nasil-yazilir/) — Ton bölümünü doğru yazmak
-- [Pazarlama ve İletişim](../departmanlar/pazarlama/) — Yaratıcı yazım uygulamaları
-- [Hukuk ve Uyum](../departmanlar/hukuk/) — Hukuki Türkçe pratikleri
-- [4D Çerçevesi](../prompting/4d-cercevesi/) — Çıktı değerlendirme disiplini
+- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Ton bölümünü doğru yazmak
+- [Pazarlama ve İletişim](/wiki/departmanlar/pazarlama/) — Yaratıcı yazım uygulamaları
+- [Hukuk ve Uyum](/wiki/departmanlar/hukuk/) — Hukuki Türkçe pratikleri
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Çıktı değerlendirme disiplini
 

@@ -133,5 +133,5 @@ O refleks kurulduğunda çalışan zamanını haftada saatlerce kazanır.
 - [Dosya İşleme](file-handling/) — Görsellerin de bir dosya olduğu gerçeği
 - [Computer Use](computer-use/) — Ekran görüntülerinin en gelişmiş kullanımı
 - [Artifacts](artifacts/) — Claude'un ürettiği programatik görseller
-- [Departmanlar](../departmanlar/) — Her departman için özel kullanım örnekleri
+- [Departmanlar](/wiki/departmanlar/) — Her departman için özel kullanım örnekleri
 

@@ -18,10 +18,10 @@ Bu sayfa, ilk haftayı yapılandırılmış geçirmek için bir rehberdir. Her g
 > **Bu hafta neler kazanacaksınız:**
 >
 > - 7+ gerçek iş çıktısı (taslaklar, raporlar, e-postalar — gerçekten kullanılan)
-> - Yaşayan bir [CLAUDE.md](../claude-md/nedir/) dosyası
+> - Yaşayan bir [CLAUDE.md](/wiki/claude-md/nedir/) dosyası
 > - 3-5 prompt'tan oluşan kişisel kütüphane
-> - Bir [connector](../mcp/baglanti-listesi/) kurulu ve çalışır
-> - Bir [scheduled task](../araclar/scheduled-tasks/) otomasyonda
+> - Bir [connector](/wiki/mcp/baglanti-listesi/) kurulu ve çalışır
+> - Bir [scheduled task](/wiki/araclar/scheduled-tasks/) otomasyonda
 > - **Discernment refleksi** — çıktıyı eleştirel değerlendirme alışkanlığı
 
 ## 7 Günlük Yol Haritası
@@ -88,13 +88,13 @@ Bir not defterine yazın:
 
 ### Daha Detay
 
-Konu derinleşirse: [Prompting Temel İlkeleri](../prompting/temel-ilkeler/)
+Konu derinleşirse: [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/)
 
 ---
 
 ## Gün 2 — CLAUDE.md'yi Yaşatın (40 dk)
 
-**Amaç:** Dün Claude'a tekrar tekrar açıkladığın her şeyi [CLAUDE.md](../claude-md/nedir/)'ye taşı. Bir kez yaz, her zaman geçerli olsun.
+**Amaç:** Dün Claude'a tekrar tekrar açıkladığın her şeyi [CLAUDE.md](/wiki/claude-md/nedir/)'ye taşı. Bir kez yaz, her zaman geçerli olsun.
 
 ### Yapılacaklar
 
@@ -106,7 +106,7 @@ Listele — kağıda veya nota.
 
 **2. CLAUDE.md'yi aç ve doldur (20 dk)**
 
-Workspace klasöründeki `CLAUDE.md` dosyasını bir editörle aç. [5 bölümü](../claude-md/nasil-yazilir/) sırayla doldur:
+Workspace klasöründeki `CLAUDE.md` dosyasını bir editörle aç. [5 bölümü](/wiki/claude-md/nasil-yazilir/) sırayla doldur:
 
 ```markdown
 # CLAUDE.md — [Adınız]
@@ -152,13 +152,13 @@ Yanlış veya eksik bir şey varsa CLAUDE.md'ye dön, düzelt, tekrar test et.
 
 ### Daha Detay
 
-[CLAUDE.md Nasıl Yazılır?](../claude-md/nasil-yazilir/) | [CLAUDE.md Örnekleri](../claude-md/ornekler/)
+[CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) | [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/)
 
 ---
 
 ## Gün 3 — İlk Skill ile Belge Üretimi (50 dk)
 
-**Amaç:** Claude'un [skill](../yetenekler/skills/) sistemini deneyin. Word, Excel veya PowerPoint dosyası **doğrudan** üretin.
+**Amaç:** Claude'un [skill](/wiki/yetenekler/skills/) sistemini deneyin. Word, Excel veya PowerPoint dosyası **doğrudan** üretin.
 
 ### Yapılacaklar
 
@@ -203,13 +203,13 @@ Claude `docx` skill'ini çağırır, belgeyi workspace klasörünüze yazar, aç
 
 ### Daha Detay
 
-[Skills](../yetenekler/skills/) | [Dosya İşleme](../yetenekler/file-handling/)
+[Skills](/wiki/yetenekler/skills/) | [Dosya İşleme](/wiki/yetenekler/file-handling/)
 
 ---
 
 ## Gün 4 — İlk Connector Kurulumu (45 dk)
 
-**Amaç:** Claude'u günlük kullandığınız bir araca ([Slack, Drive, Gmail, CRM](../mcp/baglanti-listesi/)) bağlayın. Artık Claude **gerçek verinizle** çalışır.
+**Amaç:** Claude'u günlük kullandığınız bir araca ([Slack, Drive, Gmail, CRM](/wiki/mcp/baglanti-listesi/)) bağlayın. Artık Claude **gerçek verinizle** çalışır.
 
 ### Yapılacaklar
 
@@ -263,7 +263,7 @@ Connector kurulu olduğuna göre, **bugün gerçekten yapacağınız bir işi** 
 
 ### Daha Detay
 
-[MCP Nedir?](../mcp/nedir/) | [Bağlantı Listesi](../mcp/baglanti-listesi/)
+[MCP Nedir?](/wiki/mcp/nedir/) | [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/)
 
 ---
 
@@ -341,7 +341,7 @@ Kaçın: "umarım", "rica ederim", pazarlama klişeleri
 
 ### Daha Detay
 
-[İleri Seviye Prompt Engineering](../prompting/ileri-seviye/) — XML tag'leri, few-shot, prompt chaining
+[İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/) — XML tag'leri, few-shot, prompt chaining
 
 ---
 
@@ -349,7 +349,7 @@ Kaçın: "umarım", "rica ederim", pazarlama klişeleri
 
 **Amaç:** Çıktıyı **eleştirel değerlendirme** refleksi kurun. Claude'un dediğini körü körüne kabul etmek yerine süzgeçten geçirmek.
 
-Bu hafta görsel olmayan ama en önemli adımdır — [4D Çerçevesi](../prompting/4d-cercevesi/)'nin **D3 (Discernment)** boyutu.
+Bu hafta görsel olmayan ama en önemli adımdır — [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **D3 (Discernment)** boyutu.
 
 ### Yapılacaklar
 
@@ -401,7 +401,7 @@ Bulduğun her gerçek eksikliği:
 
 ### Daha Detay
 
-[4D Çerçevesi](../prompting/4d-cercevesi/) | [Yaygın Prompting Hataları](../prompting/yaygin-hatalar/) | [Sınırlamalar](sinirlamalar/)
+[4D Çerçevesi](/wiki/prompting/4d-cercevesi/) | [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) | [Sınırlamalar](sinirlamalar/)
 
 ---
 
@@ -491,7 +491,7 @@ Dürüstçe cevapla:
 
 ### Daha Detay
 
-[Scheduled Tasks](../araclar/scheduled-tasks/) | [Dispatch](../araclar/dispatch/) — telefondan görev atama
+[Scheduled Tasks](/wiki/araclar/scheduled-tasks/) | [Dispatch](/wiki/araclar/dispatch/) — telefondan görev atama
 
 ---
 
@@ -499,7 +499,7 @@ Dürüstçe cevapla:
 
 Bu rehberi takip ettiyseniz, 7 gün sonra elinizde olması gerekenler:
 
-- [ ] Yaşayan, en az 100 satırlık bir [CLAUDE.md](../claude-md/nedir/)
+- [ ] Yaşayan, en az 100 satırlık bir [CLAUDE.md](/wiki/claude-md/nedir/)
 - [ ] `prompts/` klasöründe **3-5** test edilmiş prompt
 - [ ] **1+ connector** aktif ve çalışıyor
 - [ ] **1 scheduled task** otomatik çalışıyor
@@ -543,10 +543,10 @@ Yansıma olmazsa öğrenme yarım kalır. 25 dakikalık yansıma — bir sonraki
 
 İlk hafta tamam — temel refleks oturdu. Şimdi sırada:
 
-- **[Departmanlar](../departmanlar/)** — Kendi rolünüze özel iş akışları (12 alan)
-- **[Yetenekler](../yetenekler/)** — Skills, Artifacts, Computer Use, Agents
-- **[Prompting derinleşmesi](../prompting/)** — 4D Çerçevesi, ileri teknikler
-- **[CLAUDE.md derinleşmesi](../claude-md/)** — Memory yönetimi, dört katman
+- **[Departmanlar](/wiki/departmanlar/)** — Kendi rolünüze özel iş akışları (12 alan)
+- **[Yetenekler](/wiki/yetenekler/)** — Skills, Artifacts, Computer Use, Agents
+- **[Prompting derinleşmesi](/wiki/prompting/)** — 4D Çerçevesi, ileri teknikler
+- **[CLAUDE.md derinleşmesi](/wiki/claude-md/)** — Memory yönetimi, dört katman
 
 İkinci hafta bunlardan birine odaklanın — kendi rolünüze en yakın olanı seçin.
 
@@ -555,12 +555,12 @@ Yansıma olmazsa öğrenme yarım kalır. 25 dakikalık yansıma — bir sonraki
 ## İlgili Sayfalar
 
 - [İlk Kurulum](ilk-kurulum/) — Bu rehberden önce yapılması gerekenler
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — Hafıza dosyasının kavramı
-- [Prompting Temel İlkeleri](../prompting/temel-ilkeler/) — 5 bileşen yapısı
-- [Skills](../yetenekler/skills/) — Uzmanlık paketleri
-- [MCP Bağlantı Listesi](../mcp/baglanti-listesi/) — Tüm connector seçenekleri
-- [Scheduled Tasks](../araclar/scheduled-tasks/) — Otomasyon detayları
-- [4D Çerçevesi](../prompting/4d-cercevesi/) — Discernment derinleşmesi
-- [Yaygın Prompting Hataları](../prompting/yaygin-hatalar/) — İterasyon ipuçları
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Hafıza dosyasının kavramı
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — 5 bileşen yapısı
+- [Skills](/wiki/yetenekler/skills/) — Uzmanlık paketleri
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Tüm connector seçenekleri
+- [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) — Otomasyon detayları
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Discernment derinleşmesi
+- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — İterasyon ipuçları
 
 

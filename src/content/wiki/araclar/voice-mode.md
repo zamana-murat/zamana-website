@@ -91,6 +91,6 @@ Doğal eğiliminiz varsa kullanın, yoksa varsayılanı yazı olarak bırakın. 
 
 - [Claude Chat](claude-chat/) — Voice mode'un içinde yaşadığı ana arayüz
 - [Dispatch](dispatch/) — Sesli komutların en güçlü kullanım alanı
-- [Claude Nedir?](../temeller/claude-nedir/) — Temel yetenek seti
+- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Temel yetenek seti
 - [Araçlar Ana Sayfası](./) — Tüm Claude araçlarının karar tablosu
 

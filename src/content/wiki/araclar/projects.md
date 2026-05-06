@@ -140,7 +140,7 @@ Yeni kullanıcılar genelde **Max 5x ile ilk ay** başlar; Projects'in tam özel
 ## İlgili Sayfalar
 
 - [Claude Chat](claude-chat/) — Projects'in içinde yaşadığı arayüz
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — Cowork'teki kalıcı bağlam dosyası
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Cowork'teki kalıcı bağlam dosyası
 - [Claude Desktop](claude-desktop/) — Cowork ve CLAUDE.md için masaüstü uygulaması
 - [Araçlar Ana Sayfası](./) — Tüm Claude araçlarının karar tablosu
 

@@ -11,7 +11,7 @@ lastUpdated: "2026-05-06"
 
 **"AI kullanımına dair şirket politikamız var mı?"** sorusu denetim, müşteri sözleşmesi, KVKK denetimi veya iş kazası anında çıkar. Cevap "yok" ise sorun olur. Bu sayfa pratik bir politika şablonu sunar.
 
-Aşağıdaki içerik **şablon önerisidir** — şirketinizin sektörüne, büyüklüğüne, hassas veri durumuna göre uyarlayın. Hukuk müşaviri ile gözden geçirin. [Hukuk departmanı](../departmanlar/hukuk/) sayfası da rehber içerir.
+Aşağıdaki içerik **şablon önerisidir** — şirketinizin sektörüne, büyüklüğüne, hassas veri durumuna göre uyarlayın. Hukuk müşaviri ile gözden geçirin. [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası da rehber içerir.
 
 ## Politikanın Amacı
 
@@ -34,10 +34,10 @@ Bu politika [Şirket Adı] çalışanlarının, taşeronlarının ve stajyerleri
 [Şirket adı] aşağıdaki AI araçlarını **iş amaçlı kullanım için onaylar:**
 
 - **Claude** (Anthropic) — birincil AI asistanı
-  - Erişim: claude.ai web, [Claude Desktop](../araclar/claude-desktop/), [Claude Mobil](../araclar/claude-mobil/)
+  - Erişim: claude.ai web, [Claude Desktop](/wiki/araclar/claude-desktop/), [Claude Mobil](/wiki/araclar/claude-mobil/)
   - Plan: [Şirket plan adı] — kullanıcı yönetimi [admin adı] tarafından yapılır
 
-Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesapla* iş amaçlı kullanım **bu politika ile onaylanmamıştır**. Onay isterseniz [BT departmanı](../departmanlar/bilgi-teknolojileri/) ile başvurun.
+Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesapla* iş amaçlı kullanım **bu politika ile onaylanmamıştır**. Onay isterseniz [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile başvurun.
 
 ### 3. Hassas Veri Sınıflandırması ve Kullanım
 
@@ -51,11 +51,11 @@ Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesap
 
 **İç bilgi için koşullar:**
 - Sadece [Takım veya Enterprise plan](takim-ve-admin/) hesabı üzerinden girilir
-- Şirket [DPA](../departmanlar/hukuk/) imzalı olmalı
+- Şirket [DPA](/wiki/departmanlar/hukuk/) imzalı olmalı
 - Çalışan veri girmeden önce verinin **niteliğini** kontrol eder
 
 **Gizli veri için tek istisna:**
-[Enterprise plan](takim-ve-admin/) ile özel sözleşme (DPA + yerel saklama + audit log) imzalanmış belirli senaryolarda kullanım onaylanabilir. Bu istisnayı yazılı olarak [Hukuk departmanı](../departmanlar/hukuk/) onaylar.
+[Enterprise plan](takim-ve-admin/) ile özel sözleşme (DPA + yerel saklama + audit log) imzalanmış belirli senaryolarda kullanım onaylanabilir. Bu istisnayı yazılı olarak [Hukuk departmanı](/wiki/departmanlar/hukuk/) onaylar.
 
 ### 4. KVKK ve Kişisel Veri
 
@@ -84,7 +84,7 @@ Aşağıdakiler **iş amaçlı Claude kullanımında kesin yasaktır:**
 - Hukuki süreç içindeki dosyalar (avukat-müvekkil gizliliğine tabi)
 - Üretim formülleri, patent başvurusu hazırlığı, Ar-Ge çıktıları
 
-Şüphedeyseniz: **sormadan önce, sormayın.** Yöneticinize veya [Hukuk departmanı](../departmanlar/hukuk/)'na danışın.
+Şüphedeyseniz: **sormadan önce, sormayın.** Yöneticinize veya [Hukuk departmanı](/wiki/departmanlar/hukuk/)'na danışın.
 
 ### 6. Çıktı Sorumluluğu
 
@@ -97,7 +97,7 @@ Kurallar:
 - Hukuki / mali / sağlık / mühendislik kararları **danışman seviyesinde Claude'la** alınır, **karar seviyesinde uzman onayıyla**
 - Halüsinasyon olasılığı her çıktıda var ([Sınırlamalar](sinirlamalar/))
 
-[4D Çerçevesi](../prompting/4d-cercevesi/)'nin **Diligence (özen)** bacağı çalışanın bu sorumluluğunu somutlar.
+[4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence (özen)** bacağı çalışanın bu sorumluluğunu somutlar.
 
 ### 7. Atıf ve Şeffaflık
 
@@ -115,7 +115,7 @@ Müşteri sözleşmelerinde, akademik raporlarda, basın bültenlerinde **A mode
 - **Hassas içerik:** İşi biten projede ilgili sohbet ve dosyalar silinir
 - **Çalışan ayrılırsa:** Hesabı kapatılır, sohbet geçmişi şirket politikasına göre silinir veya arşivlenir
 
-[Geçmiş ve Arama](../araclar/gecmis-ve-arama/) sayfası teknik akışı verir.
+[Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) sayfası teknik akışı verir.
 
 ### 9. Eğitim Zorunluluğu
 
@@ -177,7 +177,7 @@ Bu politika tek başına yetmez; aşağıdaki belgelerle uyumlu olmalı:
 - **Tedarikçi sözleşmeleri** — [DPA](takim-ve-admin/) ile tutarlı
 - **Bilgi güvenliği politikası** — varsa, AI bölümü eklensin
 
-[Hukuk departmanı](../departmanlar/hukuk/) sayfası bu uyum işini detaylandırır.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası bu uyum işini detaylandırır.
 
 ## Mini Versiyon — 1 Sayfa
 
@@ -196,9 +196,9 @@ Küçük şirketlerde (5-15 çalışan) yukarıdaki belge fazla ağırdır. Bir 
 
 - [Gizlilik ve KVKK](gizlilik-kvkk/) — Yasal arka plan
 - [Takım ve Admin](takim-ve-admin/) — Plan ve admin paneli
-- [Hukuk Departmanı](../departmanlar/hukuk/) — Politikanın hukuki yansıması
-- [BT Departmanı](../departmanlar/bilgi-teknolojileri/) — IT açısından uygulama
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — Politikanın hukuki yansıması
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — IT açısından uygulama
 - [İlk 7 Gün](ilk-7-gun/) — Çalışan eğitim rehberi
-- [4D Çerçevesi](../prompting/4d-cercevesi/) — Çıktı sorumluluğunun felsefi karşılığı
-- [Geçmiş ve Arama](../araclar/gecmis-ve-arama/) — Sohbet saklama tarafı
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Çıktı sorumluluğunun felsefi karşılığı
+- [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) — Sohbet saklama tarafı
 

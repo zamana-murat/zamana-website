@@ -22,7 +22,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 | Yapan | [Anthropic](anthropic-ve-tarihce/) | Google |
 | Türü | Bağımsız AI ürünü | Google ekosistemi içine gömülü |
 | Web arayüzü | claude.ai | gemini.google.com |
-| Workspace entegrasyonu | [Connector](../araclar/connectors/) ile | Yerleşik (Docs / Gmail / Slides içinde doğrudan) |
+| Workspace entegrasyonu | [Connector](/wiki/araclar/connectors/) ile | Yerleşik (Docs / Gmail / Slides içinde doğrudan) |
 | API | Anthropic Console | Google AI Studio / Vertex AI |
 | Türkçe kalitesi | Yüksek | Yüksek |
 | Görsel anlama | ✅ | ✅ (çok güçlü, multimodal odaklı) |
@@ -37,13 +37,13 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 
 **[Constitutional AI](anthropic-ve-tarihce/).** Hassas konularda (hukuk, sağlık, finans) Claude daha dengeli ve dürüst yanıt verir, daha az kendinden emin "halüsinasyon" yapar.
 
-**[Cowork modu](../araclar/cowork-modu/), [Skills](../yetenekler/skills/), [Artifacts](../yetenekler/artifacts/).** İş profesyonelleri için tasarlanmış üretim katmanı (.docx, .xlsx, .pptx üretimi, scheduled task, dispatch) Gemini'de eşdeğeri yok veya daha sınırlı.
+**[Cowork modu](/wiki/araclar/cowork-modu/), [Skills](/wiki/yetenekler/skills/), [Artifacts](/wiki/yetenekler/artifacts/).** İş profesyonelleri için tasarlanmış üretim katmanı (.docx, .xlsx, .pptx üretimi, scheduled task, dispatch) Gemini'de eşdeğeri yok veya daha sınırlı.
 
-**[CLAUDE.md](../claude-md/nedir/) — kalıcı kişiselleştirme.** Claude'a "ben kimim, nasıl çalışırım" anlatabileceğiniz yerleşik bir mekanizma var. Gemini'de eşdeğeri yok.
+**[CLAUDE.md](/wiki/claude-md/nedir/) — kalıcı kişiselleştirme.** Claude'a "ben kimim, nasıl çalışırım" anlatabileceğiniz yerleşik bir mekanizma var. Gemini'de eşdeğeri yok.
 
 ## Güçlü Yönler — Gemini
 
-**Workspace entegrasyonu.** Gmail içinde "yardım et yaz", Docs içinde "rephrase", Sheets'te formül üretimi, Calendar'da brief — bunlar yerleşik. Claude'da [connector](../araclar/connectors/) ile yapılır ama Gemini içeride doğal bulunur.
+**Workspace entegrasyonu.** Gmail içinde "yardım et yaz", Docs içinde "rephrase", Sheets'te formül üretimi, Calendar'da brief — bunlar yerleşik. Claude'da [connector](/wiki/araclar/connectors/) ile yapılır ama Gemini içeride doğal bulunur.
 
 **Multimodal güç.** Video anlama, gerçek zamanlı görüntü işleme, sesli sohbette doğal akıcılık — Gemini bu konuda öne çıkıyor.
 
@@ -51,7 +51,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 
 **Ücretsiz katman.** Gemini'nin ücretsiz katmanı oldukça cömert — bireysel deneme için Pro abonelik gerekmez. Claude'un ücretsiz katmanı sınırlıdır.
 
-**Google arama entegrasyonu.** Web sorgu doğruluğu Google'ın arama altyapısını kullandığı için pratikte iyi. (Ama Claude'un [web araması](../araclar/web-arama/) da güçlü, fark giderek kapanıyor.)
+**Google arama entegrasyonu.** Web sorgu doğruluğu Google'ın arama altyapısını kullandığı için pratikte iyi. (Ama Claude'un [web araması](/wiki/araclar/web-arama/) da güçlü, fark giderek kapanıyor.)
 
 ## Zayıf Yönler — Claude
 
@@ -76,9 +76,9 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 | Karmaşık çok adımlı analiz | **Claude** |
 | Gmail içinden hızlı yanıt yazma | **Gemini** (Workspace içinde) |
 | Google Sheets formül üretme | **Gemini** |
-| .docx / .xlsx / .pptx dosya üretme | **Claude** ([Skills](../yetenekler/skills/)) |
+| .docx / .xlsx / .pptx dosya üretme | **Claude** ([Skills](/wiki/yetenekler/skills/)) |
 | Video / multimodal senaryo | **Gemini** |
-| Otomasyon / scheduled task | **Claude** ([Scheduled Tasks](../araclar/scheduled-tasks/)) |
+| Otomasyon / scheduled task | **Claude** ([Scheduled Tasks](/wiki/araclar/scheduled-tasks/)) |
 | Hassas / düzenleyici sektör | **Claude** (güvenlik kültürü, [DPA](takim-ve-admin/)) |
 | KVKK uyumlu kurumsal kullanım | **Claude Enterprise** ([Gizlilik ve KVKK](gizlilik-kvkk/)) |
 | Bireysel deneme, ücretsiz başlangıç | **Gemini** ücretsiz katman |
@@ -94,7 +94,7 @@ Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik
 
 - Microsoft ekosistemi ağırlıklı şirket → Claude + [Copilot](claude-vs-copilot/) (M365 entegrasyonu için)
 - Google Workspace ağırlıklı şirket → Claude + Gemini (Workspace içi hızlı + Claude üretim)
-- Karma → Claude tek tedarikçi olarak yeterli, [connector](../araclar/connectors/)'larla iki ekosisteme de bağlanır
+- Karma → Claude tek tedarikçi olarak yeterli, [connector](/wiki/araclar/connectors/)'larla iki ekosisteme de bağlanır
 
 ## Türkiye Açısından
 
@@ -113,7 +113,7 @@ Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik
 - [Claude vs ChatGPT](claude-vs-chatgpt/) — OpenAI tarafı
 - [Claude vs Copilot](claude-vs-copilot/) — Microsoft tarafı
 - [Modeller](modeller/) — Claude'un kendi içindeki seçim
-- [Connectors](../araclar/connectors/) — Google servislerine Claude'u bağlama
+- [Connectors](/wiki/araclar/connectors/) — Google servislerine Claude'u bağlama
 - [Anthropic ve Tarihçe](anthropic-ve-tarihce/) — Şirket arka planı
 - [Yaygın İtirazlar](itirazlar/) — "Zaten Gemini var" itirazına cevap
 

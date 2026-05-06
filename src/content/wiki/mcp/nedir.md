@@ -46,7 +46,7 @@ Bu IT için kritiktir:
   1. Sistem internete erişilebilir hale getirilmeli, veya
   2. **Kurumsal ağ perimetresi içinde özel bir MCP server** kurulmalı
 
-Türkiye'deki çoğu orta ölçekli şirket için **standart connector'lar** (Slack, Drive, Gmail, CRM) sorun olmadan çalışır. Dahili ERP'ler için [Computer Use](../yetenekler/computer-use/) genellikle daha pratik bir alternatiftir.
+Türkiye'deki çoğu orta ölçekli şirket için **standart connector'lar** (Slack, Drive, Gmail, CRM) sorun olmadan çalışır. Dahili ERP'ler için [Computer Use](/wiki/yetenekler/computer-use/) genellikle daha pratik bir alternatiftir.
 
 ## MCP Açık Bir Standart — Ne Demek?
 
@@ -113,13 +113,13 @@ Kurulum yaklaşık 5-10 dakika sürer. Sonuç: çalışan ertesi günden itibare
 - Her eylem **çalışanın onayıyla** yapılabilir (yazma, silme, gönderme)
 - İstediğiniz zaman bir connector'u **devre dışı** bırakabilirsiniz
 
-Detaylar için: [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfasına bakın.
+Detaylar için: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## İlgili Sayfalar
 
 - [MCP Bağlantı Listesi](baglanti-listesi/) — Mevcut connector'ların detaylı katalogu
-- [Skills](../yetenekler/skills/) — Plugin'lerin içinde gelen uzmanlık paketleri
-- [Cowork Modu](../araclar/cowork-modu/) — Connector'ların yaşadığı ortam
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Connector güvenlik mimarisi
+- [Skills](/wiki/yetenekler/skills/) — Plugin'lerin içinde gelen uzmanlık paketleri
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Connector'ların yaşadığı ortam
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Connector güvenlik mimarisi
 
 

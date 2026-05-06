@@ -38,7 +38,7 @@ Claude görselleri **görür** — sadece metin çıkarmaz, içeriği anlar. Bir
 
 - **`.py`, `.js`, `.ts`, `.sql`** ve diğer kod formatlarının çoğu
 
-İş profesyoneli kod yazmaz, ama zaman zaman Claude'un **kod analiz etmesi veya bir script önermesi** faydalı olur. [Bilgi Teknolojileri](../departmanlar/bilgi-teknolojileri/) departmanı için özellikle değerlidir.
+İş profesyoneli kod yazmaz, ama zaman zaman Claude'un **kod analiz etmesi veya bir script önermesi** faydalı olur. [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/) departmanı için özellikle değerlidir.
 
 ## Claude Hangi Dosyaları Üretir?
 
@@ -59,7 +59,7 @@ Cowork modunda Claude yeni dosyalar oluşturabilir. Üretim için skill'ler devr
 
 ## Workspace Klasörü — Dosyaların Fiziksel Evi
 
-Claude'un **oluşturduğu her dosya**, [Cowork](../araclar/cowork-modu/)'e bağladığınız **workspace klasörünüze** kaydedilir. Bu klasör bilgisayarınızda gerçek bir klasördür:
+Claude'un **oluşturduğu her dosya**, [Cowork](/wiki/araclar/cowork-modu/)'e bağladığınız **workspace klasörünüze** kaydedilir. Bu klasör bilgisayarınızda gerçek bir klasördür:
 
 ```
 C:\ClaudeWorkspace\
@@ -97,7 +97,7 @@ Bu iki kavramı karıştırmak kolay:
 
 - Çok büyük dosyalar (500+ sayfalık PDF, gigabyte'lık veri setleri) bağlam penceresine sığmayabilir
 - Büyük dosyaları **parçalara bölün** — bölüm bölüm işletin
-- [Enterprise planında 500K token bağlam](../temeller/planlar/) bu kısıtı büyük ölçüde gevşetir
+- [Enterprise planında 500K token bağlam](/wiki/temeller/planlar/) bu kısıtı büyük ölçüde gevşetir
 - Çok büyük veri için Python ile parçalı işlem: Claude scripte gider, her seferinde bir bölüm okur
 
 ## İyi Çalışma Alışkanlıkları
@@ -114,13 +114,13 @@ Workspace klasöründeki dosyalar fiziksel olarak **sizin bilgisayarınızdadır
 - **Team ve Enterprise planlarında** varsayılan olarak eğitim için kullanılmaz
 - **Pro planında** opt-in ayarıyla kontrol edilir
 
-Detay için [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfasına bakın.
+Detay için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## İlgili Sayfalar
 
 - [Skills](skills/) — Dosya üreten skill'ler (`docx`, `xlsx`, `pptx`, `pdf`)
 - [Artifacts](artifacts/) — Dosya olmayan canlı çıktılar
-- [Cowork Modu](../araclar/cowork-modu/) — Workspace klasörünün yaşadığı ortam
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Workspace klasörünün yaşadığı ortam
 - [Görsel ve Görüntü](vision-image/) — Görsel dosyalarla çalışmak
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Dosya gizliliği ve veri işleme
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Dosya gizliliği ve veri işleme
 

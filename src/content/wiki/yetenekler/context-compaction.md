@@ -31,7 +31,7 @@ Claude 4.x'te yaklaşık limitler:
 
 - **Uzun belgeler, büyük tablolar veya çok uzun konuşmalar** pencereyi doldurur
 - Pencere dolduğunda **erken içerik unutulabilir** (eğer compaction devreye girmezse)
-- Çok uzun konuşmalar zamanla **kalite düşüşü yaşar** — bkz: [Sınırlamalar](../temeller/sinirlamalar/)
+- Çok uzun konuşmalar zamanla **kalite düşüşü yaşar** — bkz: [Sınırlamalar](/wiki/temeller/sinirlamalar/)
 
 Pratik örnek: 300 sayfalık bir PDF yüklediğinizde bu, pencerenin büyük kısmını hemen işgal eder. Kalan alanda yaptığınız konuşma daha kısıtlı olur.
 
@@ -94,7 +94,7 @@ Her oturumda geçerli olması gereken bilgi **CLAUDE.md**'de olmalı — her yen
 
 ### 4. Cowork Projects Kullanın
 
-Project bağlam dosyaları **her oturumda taze** yüklenir. Compaction sonrası bile Project bilgisi korunur. [Projects sayfasına](../araclar/projects/) bakın.
+Project bağlam dosyaları **her oturumda taze** yüklenir. Compaction sonrası bile Project bilgisi korunur. [Projects sayfasına](/wiki/araclar/projects/) bakın.
 
 ## Uyarı İşaretleri — "Claude Unuttu" Dediğimizde
 
@@ -127,8 +127,8 @@ Bu tek prensip, çalışanların en sık şikayet ettiği "Claude bir şeyi unut
 
 ## İlgili Sayfalar
 
-- [Claude'un Sınırları](../temeller/sinirlamalar/) — Uzun oturumlarda kalite düşüşü
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — Compaction'a dayanıklı kalıcı bağlam
-- [Projects](../araclar/projects/) — Oturumlar arası hafıza
-- [Memory Yönetimi](../claude-md/memory-yonetimi/) — Dört hafıza katmanının detayı
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Uzun oturumlarda kalite düşüşü
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Compaction'a dayanıklı kalıcı bağlam
+- [Projects](/wiki/araclar/projects/) — Oturumlar arası hafıza
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — Dört hafıza katmanının detayı
 

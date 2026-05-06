@@ -68,7 +68,7 @@ Claude'un büyük avantajı **konuşma arayüzü**. Ne kod, ne karmaşık menü 
 
 ### Çalışanlar Claude'a bağımlı hale gelmez mi?
 
-Bu gerçek bir risk. [4D Çerçevesi](../prompting/4d-cercevesi/) tam bunu hedefler: Diligence (Sorumluluk) boyutu, çalışan her çıktının arkasında durur, sorumluluğu Claude'a devretmez. **Claude yazar, siz karar verirsiniz** ilkesi sürekli geçerlidir.
+Bu gerçek bir risk. [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) tam bunu hedefler: Diligence (Sorumluluk) boyutu, çalışan her çıktının arkasında durur, sorumluluğu Claude'a devretmez. **Claude yazar, siz karar verirsiniz** ilkesi sürekli geçerlidir.
 
 ### Claude'a öğrettiklerimiz, çalışan ayrıldığında şirketten gider mi?
 
@@ -90,11 +90,11 @@ Bu gerçek bir risk. [4D Çerçevesi](../prompting/4d-cercevesi/) tam bunu hedef
 
 ### Claude kod yazabilir mi?
 
-**Evet.** İş profesyoneli için değerli olan kısım: "Bir PowerShell script'i yaz, şunu otomatize et" diyebilmek, çalışan kod öğrenmez, Claude script'i üretir ve çalışan sonucu doğrular. [Bilgi Teknolojileri](../departmanlar/bilgi-teknolojileri/) sayfasında detay.
+**Evet.** İş profesyoneli için değerli olan kısım: "Bir PowerShell script'i yaz, şunu otomatize et" diyebilmek, çalışan kod öğrenmez, Claude script'i üretir ve çalışan sonucu doğrular. [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/) sayfasında detay.
 
 ### Claude bilgisayarımı kontrol edebilir mi?
 
-**Evet, [Computer Use](../yetenekler/computer-use/) özelliği ile** — ama her eylem şeffaf ve sizin onayınızla. Bu özellikle API'si olmayan eski sistemlerde (Logo, Netsis, eski ERP) otomasyon için güçlü bir araçtır.
+**Evet, [Computer Use](/wiki/yetenekler/computer-use/) özelliği ile** — ama her eylem şeffaf ve sizin onayınızla. Bu özellikle API'si olmayan eski sistemlerde (Logo, Netsis, eski ERP) otomasyon için güçlü bir araçtır.
 
 ## ChatGPT ve Diğer Alternatifler
 

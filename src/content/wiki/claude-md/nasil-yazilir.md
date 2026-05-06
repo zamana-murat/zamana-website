@@ -211,5 +211,5 @@ Bu 30 dakikada işe yarar bir CLAUDE.md'niz olur. Mükemmel olmayacak. Ama yaşa
 - [CLAUDE.md Nedir?](nedir/) — Temel kavram
 - [CLAUDE.md Örnekleri](ornekler/) — Farklı roller için gerçek örnekler
 - [Memory Yönetimi](memory-yonetimi/) — CLAUDE.md dışındaki hafıza mekanizmaları
-- [Cowork Modu](../araclar/cowork-modu/) — CLAUDE.md'nin yaşadığı yer
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — CLAUDE.md'nin yaşadığı yer
 

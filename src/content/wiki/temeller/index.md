@@ -122,7 +122,7 @@ Bu altı cümle bu bölümün özetidir. Sayfaları okumadan önce buraya döneb
 
 Temeller'i okuduysanız şu bölümler mantıklı devamdır:
 
-- [**Araçlar**](../araclar/) — Claude'u nerede kullanırsınız (Desktop, Cowork, Claude.ai)
-- [**CLAUDE.md**](../claude-md/) — Claude'u kişiselleştiren kalıcı hafıza dosyası
-- [**Prompting**](../prompting/) — Claude'la nasıl konuşulur — 4D Çerçevesi bu bölümdedir
+- [**Araçlar**](/wiki/araclar/) — Claude'u nerede kullanırsınız (Desktop, Cowork, Claude.ai)
+- [**CLAUDE.md**](/wiki/claude-md/) — Claude'u kişiselleştiren kalıcı hafıza dosyası
+- [**Prompting**](/wiki/prompting/) — Claude'la nasıl konuşulur — 4D Çerçevesi bu bölümdedir
 

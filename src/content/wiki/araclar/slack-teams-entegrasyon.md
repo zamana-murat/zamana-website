@@ -51,7 +51,7 @@ claude.ai içinde:
 
 [Connectors](connectors/) sayfası genel akışı açıklar.
 
-**Kurumsal Slack/Teams'te:** OAuth onayını **workspace yöneticisi** vermelidir. Çalışan tek başına bağlayamaz. IT ile konuşulması gereken bir adım. [BT departmanı](../departmanlar/bilgi-teknolojileri/) sayfası bu süreci açıklar.
+**Kurumsal Slack/Teams'te:** OAuth onayını **workspace yöneticisi** vermelidir. Çalışan tek başına bağlayamaz. IT ile konuşulması gereken bir adım. [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası bu süreci açıklar.
 
 ## Kurulum — Slack Bot
 
@@ -62,7 +62,7 @@ Anthropic'in resmî Slack uygulaması Slack App Directory'de mevcut. İşleyiş:
 3. Kanallara `@Claude` ekleme yetkisi (ayrı izin) verilir
 4. Çalışanlar `/claude` komutu veya `@Claude` mention ile kullanmaya başlar
 
-**Veri akışı:** Slack'e yazdığınız mesaj Claude'a (Anthropic'e) gider, cevap döner. Bu akışın gizlilik tarafı için [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) ve [Şirket İçi Politika](../temeller/sirket-ici-politika/) sayfalarına bakın.
+**Veri akışı:** Slack'e yazdığınız mesaj Claude'a (Anthropic'e) gider, cevap döner. Bu akışın gizlilik tarafı için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
 
 ## Kurulum — Teams Bot
 
@@ -95,9 +95,9 @@ Slack/Teams entegrasyonu IT ekibinin aktif onayını gerektirir. Hassas konular:
 - **Veri sızıntı riski:** Çalışan kanaldaki içeriği farkında olmadan Claude'a aktarmış olur
 - **DLP (data loss prevention) entegrasyonu:** Bazı kurumsal Slack/Teams'te DLP politikaları zaten kurulu olabilir; Claude entegrasyonuyla nasıl etkileşeceği kontrol edilmeli
 - **Audit log:** Hangi çalışan ne zaman ne sordu — kurumsal denetim açısından log tutulması gerekiyorsa Team / Enterprise plana ihtiyaç var
-- **Saklama politikası:** Slack tarafında 30 gün sonra silinen mesajlar Claude tarafında ne oluyor? Anthropic standart politikası uygulanır; net almak için [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) ve [Takım ve Admin](../temeller/takim-ve-admin/) sayfalarını okuyun.
+- **Saklama politikası:** Slack tarafında 30 gün sonra silinen mesajlar Claude tarafında ne oluyor? Anthropic standart politikası uygulanır; net almak için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfalarını okuyun.
 
-[BT departmanı](../departmanlar/bilgi-teknolojileri/) sayfası IT'nin değerlendirme listesini içerir.
+[BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası IT'nin değerlendirme listesini içerir.
 
 ## Yaygın Hatalar
 
@@ -113,14 +113,14 @@ Slack/Teams entegrasyonu IT ekibinin aktif onayını gerektirir. Hassas konular:
 
 **Bireysel kullanım:** Pro plan yeterlidir, connector'la kişisel Slack hesabınızı bağlayabilirsiniz.
 
-**Kurumsal kullanım:** Slack bot kurmak ve organizasyon genelinde dağıtmak için **Team veya Enterprise plan** gerekir. Detay [Planlar](../temeller/planlar/) ve [Takım ve Admin](../temeller/takim-ve-admin/) sayfalarında.
+**Kurumsal kullanım:** Slack bot kurmak ve organizasyon genelinde dağıtmak için **Team veya Enterprise plan** gerekir. Detay [Planlar](/wiki/temeller/planlar/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfalarında.
 
 ## İlgili Sayfalar
 
 - [Connectors](connectors/) — Genel connector mantığı
-- [MCP Nedir?](../mcp/nedir/) — Slack/Teams için custom MCP de yazılabilir
+- [MCP Nedir?](/wiki/mcp/nedir/) — Slack/Teams için custom MCP de yazılabilir
 - [Cowork Modu](cowork-modu/) — Bu entegrasyonlar Cowork ile birleşince güç katar
-- [BT Departmanı](../departmanlar/bilgi-teknolojileri/) — IT açısından değerlendirme
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Kim ne kullanabilir
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Veri akışı ve haklar
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — IT açısından değerlendirme
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Kim ne kullanabilir
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri akışı ve haklar
 

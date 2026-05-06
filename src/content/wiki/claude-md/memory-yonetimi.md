@@ -158,6 +158,6 @@ Aceleniz yoksa her seviye doğal olarak gelir. Baskı yapmayın.
 - [CLAUDE.md Nedir?](nedir/) — Katman 1 temeli
 - [CLAUDE.md Nasıl Yazılır?](nasil-yazilir/) — Pratik rehber
 - [CLAUDE.md Örnekleri](ornekler/) — Roller için hazır örnekler
-- [Projects (claude.ai)](../araclar/projects/) — Katman 2 detayı
-- [Skills](../yetenekler/skills/) — Memory skill dahil uzmanlık paketleri
+- [Projects (claude.ai)](/wiki/araclar/projects/) — Katman 2 detayı
+- [Skills](/wiki/yetenekler/skills/) — Memory skill dahil uzmanlık paketleri
 

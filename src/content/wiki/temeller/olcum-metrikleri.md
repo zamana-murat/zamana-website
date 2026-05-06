@@ -56,7 +56,7 @@ Claude etkisi üç eksende ölçülür:
 - Müşteri e-postasına yanıt → eskiden 1 sayfa düz cevap, şimdi 1.5 sayfa nüanslı, müşteri için özel kişiselleştirilmiş cevap → **1.5x**
 - Pazar araştırma raporu → eskiden 3 saatte tek paragraflık 5 maddelik özet, şimdi 1 saatte 5 sayfa derinlikli analiz → **3-5x** (zaman + kalite birleşik)
 
-**Önemli:** Kalite "Claude yazdı, ben kontrol ettim" sürecinin çıktısıdır — ham Claude çıktısı değil. Bu süreç [4D Çerçevesi](../prompting/4d-cercevesi/)'nin **Diligence** bacağıdır.
+**Önemli:** Kalite "Claude yazdı, ben kontrol ettim" sürecinin çıktısıdır — ham Claude çıktısı değil. Bu süreç [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence** bacağıdır.
 
 ### 3. Otomasyon
 
@@ -64,9 +64,9 @@ Claude etkisi üç eksende ölçülür:
 
 **Örnekler:**
 
-- Pazartesi sabah haftalık satış raporu → [Scheduled Task](../araclar/scheduled-tasks/) olarak otomatikleşti, manuel saat = 0
-- Her yeni başlayan çalışan için onboarding dökümanları → [CLAUDE.md](../claude-md/nedir/) ile yarı otomatikleşti
-- Müşteri sözleşmelerinde madde çapraz kontrolü → [Skills](../yetenekler/skills/) ile sistemli süreç
+- Pazartesi sabah haftalık satış raporu → [Scheduled Task](/wiki/araclar/scheduled-tasks/) olarak otomatikleşti, manuel saat = 0
+- Her yeni başlayan çalışan için onboarding dökümanları → [CLAUDE.md](/wiki/claude-md/nedir/) ile yarı otomatikleşti
+- Müşteri sözleşmelerinde madde çapraz kontrolü → [Skills](/wiki/yetenekler/skills/) ile sistemli süreç
 
 **Sayım:** Ay sonu *"Bu ay kaç manuel iş otomatikleşti?"* sorusu. Aralık: 0-2 / 3-5 / 6-10 / 11+
 
@@ -167,11 +167,11 @@ Bu döngü kalıcı adaptasyonun temelidir.
 
 ## Vaka Örnekleri (Kapalı İsim)
 
-> **Trakya bölgesinde gıda üreticisi, 8 çalışan.** 6 ay önce başladılar, ilk ay Max 5x zorunlu plan. 90 gün sonu ortalaması: çalışan başı 9 saat/hafta tasarruf. En büyük kazanç [İhracat](../departmanlar/ihracat/) için müşteri yazışmalarında — Almanca ve Rusça yazışmalar Claude tarafından taslak çıkarılıyor, satış müdürü 15 dk yerine 4 saat harcıyordu.
+> **Trakya bölgesinde gıda üreticisi, 8 çalışan.** 6 ay önce başladılar, ilk ay Max 5x zorunlu plan. 90 gün sonu ortalaması: çalışan başı 9 saat/hafta tasarruf. En büyük kazanç [İhracat](/wiki/departmanlar/ihracat/) için müşteri yazışmalarında — Almanca ve Rusça yazışmalar Claude tarafından taslak çıkarılıyor, satış müdürü 15 dk yerine 4 saat harcıyordu.
 
-> **İstanbul'da hukuk bürosu, 12 çalışan.** Başlangıçta dirençliydiler ("hukuk hassas, AI riskli"). 3 ay sonra avukat başına 7 saat/hafta tasarruf. Sözleşme inceleme, içtihat araştırma, müvekkile rapor yazma — hepsinde Claude taslak çıkarıyor, avukat doğrulayıp gönderiyor. [Hukuk departmanı](../departmanlar/hukuk/) sayfası yaklaşımı detaylandırır.
+> **İstanbul'da hukuk bürosu, 12 çalışan.** Başlangıçta dirençliydiler ("hukuk hassas, AI riskli"). 3 ay sonra avukat başına 7 saat/hafta tasarruf. Sözleşme inceleme, içtihat araştırma, müvekkile rapor yazma — hepsinde Claude taslak çıkarıyor, avukat doğrulayıp gönderiyor. [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası yaklaşımı detaylandırır.
 
-> **Ankara'da otomotiv yan sanayi, 35 çalışan.** İlk pilot 6 kişi, 90 gün sonra organizasyon geneline açıldı. Ana kazanç: [Operasyon](../departmanlar/operasyon/) tarafında haftalık üretim raporları ve [Müşteri Hizmetleri](../departmanlar/musteri-hizmetleri/) tarafında çoklu dilde yazışma. Yaklaşık 18-22 saat/hafta toplam tasarruf (organizasyon geneli).
+> **Ankara'da otomotiv yan sanayi, 35 çalışan.** İlk pilot 6 kişi, 90 gün sonra organizasyon geneline açıldı. Ana kazanç: [Operasyon](/wiki/departmanlar/operasyon/) tarafında haftalık üretim raporları ve [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) tarafında çoklu dilde yazışma. Yaklaşık 18-22 saat/hafta toplam tasarruf (organizasyon geneli).
 
 İsimsiz örnekler genel rakamlar verir; kendi şirketiniz için somut ölçüm yapmak en doğru karşılaştırmadır.
 
@@ -181,7 +181,7 @@ Yönetim raporlarında tek satırlık özet için:
 
 > *"6 kişiyle 6 ayda 1.250 saat kazanım. Yatırım 470 bin TL, getiri 940 bin TL. İkinci yıl artıştan ROI üç haneli."*
 
-Detayları [Yaygın İtirazlar](itirazlar/) ve [Finans Departmanı](../departmanlar/finans/) sayfaları derinleştirir.
+Detayları [Yaygın İtirazlar](itirazlar/) ve [Finans Departmanı](/wiki/departmanlar/finans/) sayfaları derinleştirir.
 
 ## İlgili Sayfalar
 
@@ -190,6 +190,6 @@ Detayları [Yaygın İtirazlar](itirazlar/) ve [Finans Departmanı](../departman
 - [Planlar](planlar/) — Plan maliyetleri
 - [Takım ve Admin](takim-ve-admin/) — Admin paneli üzerinden kullanım metriği
 - [Şirket İçi Politika](sirket-ici-politika/) — Ölçüm politikasını yazıya dökme
-- [4D Çerçevesi](../prompting/4d-cercevesi/) — Kalite üretimi felsefesi
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Kalite üretimi felsefesi
 - [Sınırlamalar](sinirlamalar/) — Halüsinasyon ve kalite riskleri
 

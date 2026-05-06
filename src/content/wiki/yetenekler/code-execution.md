@@ -34,7 +34,7 @@ Bir CSV / Excel'iniz var, içinde 10.000 satır müşteri verisi. *"Şehir bazı
 
 Bütçe modeli, ROI hesabı, faiz/amortisman hesaplaması — bunların tümü matematik. Claude code execution ile **gerçek matematik** yapar; "tahmin yürütüp" yanlış sayı vermez.
 
-[Finans departmanı](../departmanlar/finans/) sayfası bu tür hesaplara örnekler içerir.
+[Finans departmanı](/wiki/departmanlar/finans/) sayfası bu tür hesaplara örnekler içerir.
 
 ### Grafik / Görselleştirme
 
@@ -102,7 +102,7 @@ Claude code execution ile:
 
 5 dakikada bir analist günlük iş çıkar.
 
-[Perakende ve E-ticaret](../departmanlar/perakende-eticaret/) sayfasında bu tür analizlerin yaygın senaryoları var.
+[Perakende ve E-ticaret](/wiki/departmanlar/perakende-eticaret/) sayfasında bu tür analizlerin yaygın senaryoları var.
 
 ## Code Execution + Skills
 
@@ -140,7 +140,7 @@ Sandbox'tan internet erişimi sınırlıdır (web arama Claude'un kendisi taraf�
 
 Sandbox her sohbette sıfırdan başlar. Bir sohbette ürettiğiniz çıktıyı Claude bir sonraki sohbette **bilmez** — dosyayı kaydetmek, sonra yeni sohbete yüklemek gerekir.
 
-[Projects](../araclar/projects/) ile kısmen çözülür: bir proje altında dosyalar saklanır, her yeni sohbette erişilebilir.
+[Projects](/wiki/araclar/projects/) ile kısmen çözülür: bir proje altında dosyalar saklanır, her yeni sohbette erişilebilir.
 
 ## Plan Gereksinimi
 
@@ -150,7 +150,7 @@ Code execution **çoğu plan**'da mevcut, ancak ağır kullanım sınıra çabuk
 - **Max 5x / Max 20x:** Daha geniş limit
 - **Team / Enterprise:** Organizasyon bazlı kullanım
 
-[Planlar](../temeller/planlar/) sayfası detay verir.
+[Planlar](/wiki/temeller/planlar/) sayfası detay verir.
 
 ## Güvenlik / KVKK
 
@@ -158,13 +158,13 @@ Code execution için sandbox'a yüklenen veri:
 
 - Anthropic'in altyapısında işlenir, varsayılan olarak eğitim için kullanılmaz
 - Sohbet bitince sandbox sıfırlanır
-- KVKK çerçevesinde "veri işleyen" akışı içinde [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfasında anlatıldığı gibi
+- KVKK çerçevesinde "veri işleyen" akışı içinde [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında anlatıldığı gibi
 
 **Kişisel veri içeren veri yüklerken:**
 
 - Müşteri ad-soyad, TC, telefon → anonimleştir
 - Hassas finansal sırlar → yüklemeyin
-- [Şirket içi politika](../temeller/sirket-ici-politika/)'nızla uyumlu olun
+- [Şirket içi politika](/wiki/temeller/sirket-ici-politika/)'nızla uyumlu olun
 
 ## Kullanım Tavsiyeleri
 
@@ -195,10 +195,10 @@ Sıkça kullanılabilecek prompt başlangıçları:
 - [Skills](skills/) — .xlsx, .docx, .pptx üretme
 - [Artifacts](artifacts/) — Görselleştirme çıktıları
 - [Dosya İşleme](file-handling/) — Excel, CSV, PDF yükleme
-- [Projects](../araclar/projects/) — Veri kalıcılığı
-- [Cowork Modu](../araclar/cowork-modu/) — Code execution Cowork ile birleşince
-- [Planlar](../temeller/planlar/) — Hangi planda hangi sınır
-- [Finans departmanı](../departmanlar/finans/) — Finans için pratik kullanım
-- [Operasyon departmanı](../departmanlar/operasyon/) — KPI analizi
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Veri akışı
+- [Projects](/wiki/araclar/projects/) — Veri kalıcılığı
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Code execution Cowork ile birleşince
+- [Planlar](/wiki/temeller/planlar/) — Hangi planda hangi sınır
+- [Finans departmanı](/wiki/departmanlar/finans/) — Finans için pratik kullanım
+- [Operasyon departmanı](/wiki/departmanlar/operasyon/) — KPI analizi
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri akışı
 

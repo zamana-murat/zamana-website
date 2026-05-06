@@ -72,7 +72,7 @@ Claude "düşünüyorum" der, sonra "dosyaları okuyorum" der, sonra "web araşt
 
 ### 3. Son çıktıyı dikkatlice gözden geçirin
 
-Subagent paralel çalıştığı için her alt sonuç kaliteli olmayabilir. Ana Claude birleştirdiğinde bazı tutarsızlıklar kalabilir. **Son çıktı gözden geçirilmeli** — bu [Discernment](../prompting/4d-cercevesi/) boyutunun pratik karşılığıdır.
+Subagent paralel çalıştığı için her alt sonuç kaliteli olmayabilir. Ana Claude birleştirdiğinde bazı tutarsızlıklar kalabilir. **Son çıktı gözden geçirilmeli** — bu [Discernment](/wiki/prompting/4d-cercevesi/) boyutunun pratik karşılığıdır.
 
 ## Ne Zaman Agent Gücünü Talep Edersiniz?
 
@@ -98,7 +98,7 @@ Subagent'lar paralel çalışırsa: 10 dakika içinde tablo hazırdır.
 
 - **Yavaşlık:** paralel subagent bile olsa agent yaklaşımı tek bir cevaptan yavaştır — araçlar, doğrulama turları vakit alır
 - **Hata yayılımı:** bir subagent hatalı çıktı üretirse ana birleştirme de etkilenir
-- **Kaynak kullanımı:** Pro planda agent yoğun kullanım kotayı hızlı tüketir — [Max plan](../temeller/planlar/) bu tip iş için daha uygundur
+- **Kaynak kullanımı:** Pro planda agent yoğun kullanım kotayı hızlı tüketir — [Max plan](/wiki/temeller/planlar/) bu tip iş için daha uygundur
 - **Karmaşık doğrulama:** 20 alt görevin hepsini tek tek kontrol etmek zor — önemli çıktılarda beceri gerekir
 
 ## İş Profesyoneli İçin Pratik Pozisyon
@@ -114,7 +114,7 @@ Bu üç refleks, iş profesyoneli için agent konusunda bilinmesi gereken her ş
 ## İlgili Sayfalar
 
 - [Skills](skills/) — Agent'ların içinde çağırdığı uzmanlık paketleri
-- [Cowork Modu](../araclar/cowork-modu/) — Agent'ların yaşadığı ortam
-- [4D Çerçevesi](../prompting/4d-cercevesi/) — Discernment boyutu: agent çıktılarının değerlendirilmesi
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Agent'ların yaşadığı ortam
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Discernment boyutu: agent çıktılarının değerlendirilmesi
 - [Context ve Compaction](context-compaction/) — Uzun agent oturumlarında bağlam yönetimi
 

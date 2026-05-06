@@ -166,7 +166,7 @@ Konuşmacı notu: [varsa]
 ...
 ```
 
-[Skills](../yetenekler/skills/) ile doğrudan .pptx üretebilirsiniz; bu format slayt-by-slayt manuel yapıştırma için.
+[Skills](/wiki/yetenekler/skills/) ile doğrudan .pptx üretebilirsiniz; bu format slayt-by-slayt manuel yapıştırma için.
 
 ## 8. Kısa Cevap (Tek Cümle / Tek Sayı)
 
@@ -210,7 +210,7 @@ Bu yapıyla Claude her bölümü ayrı dolaşır, atlama riski azalır.
 
 **Çelişen format isteği:** "Bullet liste ama paragraf gibi yaz" — Claude şaşırır.
 
-**Çok detay format:** "Sütun 1 sola yaslı, font Helvetica 12, mavi" — Claude markdown üretir, görsel format kontrolü yok. Görsel format için [Artifacts](../yetenekler/artifacts/) veya [Skills](../yetenekler/skills/) kullanın.
+**Çok detay format:** "Sütun 1 sola yaslı, font Helvetica 12, mavi" — Claude markdown üretir, görsel format kontrolü yok. Görsel format için [Artifacts](/wiki/yetenekler/artifacts/) veya [Skills](/wiki/yetenekler/skills/) kullanın.
 
 **Birden çok format aynı sohbette:** "Önce tablo ver, sonra JSON ver, sonra paragraf yaz" → çıktı dağılır. Her formatı **ayrı sohbette / ayrı isteğe** ayırın.
 
@@ -283,7 +283,7 @@ Her sıkça yaptığınız işin **bir favori format şablonu** olsun. CLAUDE.md
 - Karar matrisi → tablo + altında öneri paragrafı
 ```
 
-[Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) sayfasında rol bazlı format örnekleri var.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında rol bazlı format örnekleri var.
 
 ## İlgili Sayfalar
 
@@ -292,7 +292,7 @@ Her sıkça yaptığınız işin **bir favori format şablonu** olsun. CLAUDE.md
 - [Prompt Kataloğu](prompt-katalogu/) — Format dahil hazır şablonlar
 - [İleri Seviye](ileri-seviye/) — Karmaşık format teknikleri
 - [Yaygın Hatalar](yaygin-hatalar/) — Format hataları
-- [Artifacts](../yetenekler/artifacts/) — Görsel format çıktıları
-- [Skills](../yetenekler/skills/) — Word/Excel/PPT dosya üretme
-- [Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) — CLAUDE.md format kuralları
+- [Artifacts](/wiki/yetenekler/artifacts/) — Görsel format çıktıları
+- [Skills](/wiki/yetenekler/skills/) — Word/Excel/PPT dosya üretme
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md format kuralları
 

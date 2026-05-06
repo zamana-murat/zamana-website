@@ -166,7 +166,7 @@ Toplam süre: 12 dakika. Normal süreç: 1-1.5 saat, eski LOI'yi kopyalayıp uya
 
 ## İlgili Sayfalar
 
-- [Skills](../yetenekler/skills/) — `foreign-trade` skill detayları
+- [Skills](/wiki/yetenekler/skills/) — `foreign-trade` skill detayları
 - [Hukuk ve Uyum](hukuk/) — Uluslararası sözleşme inceleme
 - [Finans ve Muhasebe](finans/) — FX ve hedge anlatısı
 - [Satış ve İş Geliştirme](satis/) — Alıcı yönetimi (B2B sıralaması)

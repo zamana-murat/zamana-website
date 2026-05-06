@@ -326,6 +326,6 @@ Claude, doğru planla ve doğru uygulamayla **Türkiye'de kurumsal olarak KVKK-u
 
 - [Claude Planları](planlar/) — Hangi plan hangi veri korumalarını sağlar
 - [Claude'un Sınırları](sinirlamalar/) — Veri sınırlarının uygulama tarafı
-- [Cowork Modu](../araclar/cowork-modu/) — Connector'ların güvenlik mimarisi
-- [4D Çerçevesi](../prompting/4d-cercevesi/) — Diligence (Sorumluluk) boyutu
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Connector'ların güvenlik mimarisi
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Diligence (Sorumluluk) boyutu
 

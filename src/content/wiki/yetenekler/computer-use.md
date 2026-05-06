@@ -119,12 +119,12 @@ Computer Use güçlüdür, sorumluluk da öyle:
 - Her eylem size görünür olarak çalışır — arka planda gizli eylem yok
 - Kritik eylemlerde (kayıt silme, form gönderme, para transferi) onay ister
 - Sandbox izolasyonu yerine gerçek bilgisayarınızda çalışır — bu nedenle test ortamlarında önce deneyin
-- Hassas hesap bilgileriniz CLAUDE.md veya workspace'e yazılmamalı — [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) kurallarına bakın
+- Hassas hesap bilgileriniz CLAUDE.md veya workspace'e yazılmamalı — [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) kurallarına bakın
 
 ## İlgili Sayfalar
 
 - [Görsel ve Görüntü](vision-image/) — Computer Use'un temelindeki görsel muhakeme
-- [MCP Bağlantı Listesi](../mcp/baglanti-listesi/) — Computer Use'tan önce denenecek öncelikli yöntem
-- [Cowork Modu](../araclar/cowork-modu/) — Computer Use'un yaşadığı ortam
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Otomasyon güvenlik kuralları
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Computer Use'tan önce denenecek öncelikli yöntem
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Computer Use'un yaşadığı ortam
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Otomasyon güvenlik kuralları
 

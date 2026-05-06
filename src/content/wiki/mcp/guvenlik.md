@@ -10,7 +10,7 @@ lastUpdated: "2026-05-06"
 
 **[MCP](nedir/), Claude'a sisteminize erişim verir.** Bu güç, dikkatsiz kurulduğunda sorun olabilir — yetkisiz veri erişimi, beklenmedik silme işlemleri, prompt injection saldırıları. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar.
 
-[Connectors](../araclar/connectors/) sayfasıyla karşılaştırın — connector Anthropic'in denetlediği bir paket; MCP daha açık ve sizin sorumluluğunuzda.
+[Connectors](/wiki/araclar/connectors/) sayfasıyla karşılaştırın — connector Anthropic'in denetlediği bir paket; MCP daha açık ve sizin sorumluluğunuzda.
 
 ## MCP Güvenlik Modeli — Temel Mantık
 
@@ -58,7 +58,7 @@ Topluluk MCP'lerinin bazıları kötü niyetli olabilir. Sahte bir "official-loo
 
 MCP, hassas veriyi Claude'a (yani Anthropic'e) aktarır. Hassas veri sınıflandırmanız bu akışla uyumlu olmalı.
 
-[Şirket içi politika](../temeller/sirket-ici-politika/) ve [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfaları arka planı verir.
+[Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ve [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfaları arka planı verir.
 
 ### 5. Yan Kanal — Loglama
 
@@ -155,7 +155,7 @@ Yeni bir MCP server kurulmadan önce şu kontrolleri yapın:
 - [ ] Token'ı anında iptal edebilir misiniz?
 - [ ] Kullanıcılara nasıl haber verirsiniz?
 
-[Şirket içi politika](../temeller/sirket-ici-politika/) bu listenin politika belgesindeki yansımasını verir.
+[Şirket içi politika](/wiki/temeller/sirket-ici-politika/) bu listenin politika belgesindeki yansımasını verir.
 
 ## KVKK Uyumu
 
@@ -167,13 +167,13 @@ Bir SaaS ile MCP üzerinden bağlandığınızda, o SaaS yasal olarak **işleyen
 
 ### 2. Veri Yerleşim
 
-Anthropic Claude verileri ABD'de işler. Bir KVKK ihlali olduğunda yurt dışı veri aktarımı kapsamına girer. [Enterprise plan](../temeller/takim-ve-admin/) bu konuda DPA ile ek koruma sağlar.
+Anthropic Claude verileri ABD'de işler. Bir KVKK ihlali olduğunda yurt dışı veri aktarımı kapsamına girer. [Enterprise plan](/wiki/temeller/takim-ve-admin/) bu konuda DPA ile ek koruma sağlar.
 
 ### 3. Aydınlatma Yükümlülüğü
 
 MCP üzerinden müşteri verisi Claude'a gidiyorsa, müşterilere aydınlatma yapılmış olmalı.
 
-[Hukuk departmanı](../departmanlar/hukuk/) sayfasında KVKK derinleşmesi var.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfasında KVKK derinleşmesi var.
 
 ## Yaygın Tuzaklar
 
@@ -181,7 +181,7 @@ MCP üzerinden müşteri verisi Claude'a gidiyorsa, müşterilere aydınlatma ya
 
 Çalışan kendi GitHub kişisel hesabıyla şirket repo'larını MCP üzerinden Claude'a açıyor. Şirket gözünden bu **kontrol dışı** veri akışıdır.
 
-**Çözüm:** Sadece **kurumsal hesaplarla** MCP. [Takım ve Admin](../temeller/takim-ve-admin/) sayfası bu kontrolü detaylandırır.
+**Çözüm:** Sadece **kurumsal hesaplarla** MCP. [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfası bu kontrolü detaylandırır.
 
 ### Tuzak: "Test için açtım, kapatmayı unuttum"
 
@@ -212,7 +212,7 @@ Bir MCP-kaynaklı olay olursa ne yaparsınız?
 5. **Bildirim:** KVKK olayıysa kurum içi hukuk + KVKK Kurumu (gerekirse)
 6. **Düzeltme:** Kök neden, gelecek tedbirleri
 
-[BT Departmanı](../departmanlar/bilgi-teknolojileri/) sayfasında siber olay süreçleri.
+[BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfasında siber olay süreçleri.
 
 ## Pratik Tavsiyeler
 
@@ -220,7 +220,7 @@ Bir MCP-kaynaklı olay olursa ne yaparsınız?
 
 **Periyodik audit.** 3 ayda bir tüm aktif MCP'leri gözden geçirin: hâlâ gerekli mi, yetki güncel mi, üreticiyi hâlâ güveniyor musunuz?
 
-**Eğitim.** Çalışanlara "rastgele MCP kurmamayı" anlatın. [Şirket içi politika](../temeller/sirket-ici-politika/)'da AI tool kurulum süreci yer alsın.
+**Eğitim.** Çalışanlara "rastgele MCP kurmamayı" anlatın. [Şirket içi politika](/wiki/temeller/sirket-ici-politika/)'da AI tool kurulum süreci yer alsın.
 
 **Sandbox.** Yeni bir MCP'yi production cihazda değil, izole test cihazda deneyin önce. Hassas veri yokken davranışını gözlemleyin.
 
@@ -244,10 +244,10 @@ Küçük şirketlerde basit bir Excel listesi + 3 ayda bir kontrol yetebilir.
 - [MCP Nedir?](nedir/) — Temeller
 - [Kurulum Rehberi](kurulum-rehberi/) — Adım adım kurulum
 - [Popüler MCP'ler](populer-mcpler/) — Onaylı liste önerileri
-- [Connectors](../araclar/connectors/) — Daha güvenli alternatif
-- [BT Departmanı](../departmanlar/bilgi-teknolojileri/) — Kurumsal güvenlik
-- [Hukuk Departmanı](../departmanlar/hukuk/) — KVKK, sözleşme
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Politika çerçevesi
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Veri hakları
-- [Takım ve Admin](../temeller/takim-ve-admin/) — Kurumsal yönetim
+- [Connectors](/wiki/araclar/connectors/) — Daha güvenli alternatif
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Kurumsal güvenlik
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — KVKK, sözleşme
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika çerçevesi
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri hakları
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Kurumsal yönetim
 

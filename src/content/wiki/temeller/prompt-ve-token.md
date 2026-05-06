@@ -25,7 +25,7 @@ Claude'la çalışmaya başlamadan önce iki kelimeyi bilmek yeterli: **prompt**
 
 Hepsi prompt. Düşünmek için karmaşık bir kelimeye gerek yok — Claude'a ne söylediğinizdir.
 
-> **İyi prompt nedir?** Net, bağlamlı, ne istediğinizi söyleyen. İleride [Prompting Temel İlkeleri](../prompting/temel-ilkeler/) sayfasında detaylı işliyoruz. Şimdilik sadece "Claude'a yazdığım mesaj" olarak düşünün.
+> **İyi prompt nedir?** Net, bağlamlı, ne istediğinizi söyleyen. İleride [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) sayfasında detaylı işliyoruz. Şimdilik sadece "Claude'a yazdığım mesaj" olarak düşünün.
 
 ---
 
@@ -119,5 +119,5 @@ Doğrudan değil. Aboneliğinize dahil edilen kotayı tüketirsiniz. Aşırı ku
 
 - [Claude Planları](planlar/) — Plan limitleri ve fiyatlar
 - [İlk Kurulum](ilk-kurulum/) — Hesap açma + abonelik
-- [Prompting Temel İlkeleri](../prompting/temel-ilkeler/) — İyi prompt nasıl yazılır (ileride)
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — İyi prompt nasıl yazılır (ileride)
 

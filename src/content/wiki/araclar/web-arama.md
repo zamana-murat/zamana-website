@@ -47,7 +47,7 @@ Türkçe sorular için Claude:
 - Niş Türkçe blog/forum sonuçlarında kalite düşebilir
 - Mevzuat metinlerini okurken **resmî kaynağı doğrulamak şart** — Claude doğru maddeyi bulur ama tarihi/yürürlük durumunu yorumlamada hata yapabilir
 
-[Türkçe Performansı](../temeller/turkce-performansi/) sayfası genel Türkçe kalite tablosunu gösterir.
+[Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası genel Türkçe kalite tablosunu gösterir.
 
 ## Kaynak Doğrulama — En Kritik Alışkanlık
 
@@ -64,7 +64,7 @@ Claude size kaynak gösterse bile, **kritik kararlar için kaynağı kendiniz a�
 - Şirket finansalı → bilanço kaynağına git, dönemini kontrol et
 - İstatistik → orijinal araştırma raporuna in, metodolojiyi gör
 
-Bu, [4D Çerçevesi](../prompting/4d-cercevesi/)'nin **Diligence (özen)** bacağının pratik karşılığıdır.
+Bu, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence (özen)** bacağının pratik karşılığıdır.
 
 ## Halüsinasyon Riski
 
@@ -76,7 +76,7 @@ Ham bilgi olmadığında Claude bazen olası gözüken bilgi üretir (halüsinas
 - Birden fazla kaynak birleştirirken yanlış atıf yapabilir
 - Kaynak yetersizse "tahmin"e kayabilir
 
-Çözüm: kaynak linkini açma alışkanlığı. Detay için [Sınırlamalar](../temeller/sinirlamalar/) ve [Yaygın Hatalar](../prompting/yaygin-hatalar/).
+Çözüm: kaynak linkini açma alışkanlığı. Detay için [Sınırlamalar](/wiki/temeller/sinirlamalar/) ve [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/).
 
 ## Web Aramayı Açıkça İsteme
 
@@ -86,7 +86,7 @@ Claude kendisi tetiklemediyse, açıkça isteyebilirsiniz:
 > *"En son verileri kullan, eski bilgiye dayanma."*
 > *"Resmi kaynaklara dayanarak cevap ver, kaynak linkleri ver."*
 
-Bu prompting yaklaşımı [Temel İlkeler](../prompting/temel-ilkeler/) sayfasında daha geniş anlatılır.
+Bu prompting yaklaşımı [Temel İlkeler](/wiki/prompting/temel-ilkeler/) sayfasında daha geniş anlatılır.
 
 ## KVKK ve Gizlilik
 
@@ -99,11 +99,11 @@ Web aramada **sorgunuz Claude'a (Anthropic'e) ve dolayısıyla arama servisine**
 
 İç bilgi gerekiyorsa onu zaten Claude'a yüklersiniz, web araması işin içine girmez.
 
-[Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfası bu konunun ayrıntısına girer.
+[Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası bu konunun ayrıntısına girer.
 
 ## Plan Farkı
 
-Web arama tüm planlarda mevcut, **Pro / Max / Team / Enterprise** kullanıcılarına aynı şekilde sunulur. Free planda da çalışır ama günlük sorgu limiti daha sıkıdır. Detay için [Planlar](../temeller/planlar/).
+Web arama tüm planlarda mevcut, **Pro / Max / Team / Enterprise** kullanıcılarına aynı şekilde sunulur. Free planda da çalışır ama günlük sorgu limiti daha sıkıdır. Detay için [Planlar](/wiki/temeller/planlar/).
 
 ## Kullanım Tavsiyeleri
 
@@ -119,8 +119,8 @@ Web arama tüm planlarda mevcut, **Pro / Max / Team / Enterprise** kullanıcıla
 
 - [Claude Chat](claude-chat/) — Web arama burada otomatik devreye girer
 - [Cowork Modu](cowork-modu/) — Cowork'te web + dosya + skills birleşir
-- [Sınırlamalar](../temeller/sinirlamalar/) — Halüsinasyon ve doğrulama
-- [Türkçe Performansı](../temeller/turkce-performansi/) — Türkçe arama kalitesi
-- [Yaygın Hatalar](../prompting/yaygin-hatalar/) — Web sonuçlarına körü körüne güvenmek
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Sorgularınızın akışı
+- [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Halüsinasyon ve doğrulama
+- [Türkçe Performansı](/wiki/temeller/turkce-performansi/) — Türkçe arama kalitesi
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Web sonuçlarına körü körüne güvenmek
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Sorgularınızın akışı
 

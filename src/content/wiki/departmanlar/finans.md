@@ -149,8 +149,8 @@ SPK, bağımsız denetim, mali müşavir standartları — hiçbiri Claude'a dev
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Örnekleri](../claude-md/ornekler/) — CFO için hazır CLAUDE.md şablonu
-- [Skills](../yetenekler/skills/) — `xlsx` skill detayları
-- [Claude'un Sınırları](../temeller/sinirlamalar/) — Matematik hataları ve halüsinasyon
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Hassas finansal veri hijyeni
+- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/) — CFO için hazır CLAUDE.md şablonu
+- [Skills](/wiki/yetenekler/skills/) — `xlsx` skill detayları
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Matematik hataları ve halüsinasyon
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Hassas finansal veri hijyeni
 

@@ -18,7 +18,7 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 2. Kopyalayın, bir CLAUDE.md dosyasına yapıştırın
 3. Köşeli parantezli yerleri **kendi bilgilerinizle** doldurun: `[Adınız]`, `[Şirket]`, `[Sektör]`
 4. Kuralları kendi tercihlerinize göre düzenleyin
-5. claude.ai'da bir [Project](../araclar/projects/) oluşturup orada knowledge olarak yükleyin
+5. claude.ai'da bir [Project](/wiki/araclar/projects/) oluşturup orada knowledge olarak yükleyin
 6. İlk hafta gözleyin, gerekirse [Hata Ayıklama](hata-ayiklama/) sayfasına bakarak iyileştirin
 
 ## 1. Satış Profesyoneli
@@ -56,7 +56,7 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 - Üst yönetimin bu çeyrek odağı: [tema]
 ```
 
-[Satış departmanı](../departmanlar/satis/) sayfası yaklaşımı genişletir.
+[Satış departmanı](/wiki/departmanlar/satis/) sayfası yaklaşımı genişletir.
 
 ## 2. Pazarlama / İçerik
 
@@ -95,7 +95,7 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 - Renk paleti / fon: [tema]
 ```
 
-[Pazarlama departmanı](../departmanlar/pazarlama/) sayfası ek detay verir.
+[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfası ek detay verir.
 
 ## 3. Finans / Mali İşler
 
@@ -136,7 +136,7 @@ Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi — uygun olanları].
 - Çalıştığım çapraz birimler: [İK, Operasyon]
 ```
 
-[Finans departmanı](../departmanlar/finans/) ve [Fatura ve KDV](../temeller/fatura-ve-kdv/) sayfaları derinlik verir.
+[Finans departmanı](/wiki/departmanlar/finans/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfaları derinlik verir.
 
 ## 4. Hukuk
 
@@ -176,7 +176,7 @@ Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 - İçtihat: yargitay.gov.tr, kararlaryaz.gov.tr
 ```
 
-[Hukuk departmanı](../departmanlar/hukuk/) sayfası kapsamı genişletir.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası kapsamı genişletir.
 
 ## 5. İnsan Kaynakları
 
@@ -218,7 +218,7 @@ ve gelişimi sorumluluğum.
 - AI kullanım politikası: [şirket içi politika sayfasına atıf]
 ```
 
-[İK departmanı](../departmanlar/insan-kaynaklari/) ek bağlam verir.
+[İK departmanı](/wiki/departmanlar/insan-kaynaklari/) ek bağlam verir.
 
 ## 6. Operasyon / Üretim Müdürü
 
@@ -256,7 +256,7 @@ Ekip büyüklüğü: [sayı]. Tesis [konum].
 - Ana ürün kategorileri: [3-4]
 ```
 
-[Operasyon departmanı](../departmanlar/operasyon/) genişletir.
+[Operasyon departmanı](/wiki/departmanlar/operasyon/) genişletir.
 
 ## 7. Müşteri Hizmetleri
 
@@ -294,7 +294,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 - İade politikası: [özet]
 ```
 
-[Müşteri hizmetleri departmanı](../departmanlar/musteri-hizmetleri/) detay verir.
+[Müşteri hizmetleri departmanı](/wiki/departmanlar/musteri-hizmetleri/) detay verir.
 
 ## 8. Yönetici / C-Level
 
@@ -333,7 +333,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 - Stratejik öncelik 2026: [tema]
 ```
 
-[Liderlik departmanı](../departmanlar/liderlik/) yaklaşımı derinleştirir.
+[Liderlik departmanı](/wiki/departmanlar/liderlik/) yaklaşımı derinleştirir.
 
 ## 9. BT / IT Yöneticisi
 
@@ -372,7 +372,7 @@ organizasyonun BT altyapısını yönetiyorum.
 - Onaylı AI araçları: [şirket politikası]
 ```
 
-[BT departmanı](../departmanlar/bilgi-teknolojileri/) genişletir.
+[BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) genişletir.
 
 ## Genel Tavsiyeler
 
@@ -392,5 +392,5 @@ organizasyonun BT altyapısını yönetiyorum.
 - [Takım CLAUDE.md](takim-claude-md/) — Şirket genelinde paylaşım
 - [Hata Ayıklama](hata-ayiklama/) — Çalışmıyorsa
 - [Memory Yönetimi](memory-yonetimi/) — Kalıcı bellekle ilişki
-- [Departmanlar](../departmanlar/) — Rol bazlı kullanım derinliği
+- [Departmanlar](/wiki/departmanlar/) — Rol bazlı kullanım derinliği
 

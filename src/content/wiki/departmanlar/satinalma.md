@@ -143,5 +143,5 @@ Toplam süre: 30 dakika. Normal süreç: 2-3 saat "aklıma gelen notları" not t
 - [Operasyon ve Lojistik](operasyon/) — Tedarikçi yanıt yazımı
 - [Finans ve Muhasebe](finans/) — TCO analizinin finansal boyutu
 - [Hukuk ve Uyum](hukuk/) — Satınalma sözleşmeleri inceleme
-- [Skills](../yetenekler/skills/) — Excel (xlsx) skill detayları
+- [Skills](/wiki/yetenekler/skills/) — Excel (xlsx) skill detayları
 

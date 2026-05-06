@@ -124,7 +124,7 @@ Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
 ### Sorun: "Türkçe'den İngilizce'ye kayıyor"
 
-**Çözüm:** [CLAUDE.md](../claude-md/nedir/)'de net dil kuralı. [Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) sayfasına bakın.
+**Çözüm:** [CLAUDE.md](/wiki/claude-md/nedir/)'de net dil kuralı. [Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) sayfasına bakın.
 
 ### Sorun: "Sınır vakasında sapıttı"
 
@@ -136,7 +136,7 @@ Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
 ### Sorun: "Halüsinasyon — uydurulmuş veri"
 
-**Çözüm:** "Sadece verilen veriye dayan, uydurma." "Bilmediğin şey için 'veri yok' yaz." [Sınırlamalar](../temeller/sinirlamalar/) ve [Yaygın Hatalar](yaygin-hatalar/) sayfalarına bakın.
+**Çözüm:** "Sadece verilen veriye dayan, uydurma." "Bilmediğin şey için 'veri yok' yaz." [Sınırlamalar](/wiki/temeller/sinirlamalar/) ve [Yaygın Hatalar](yaygin-hatalar/) sayfalarına bakın.
 
 ## 5. Tekrar Test — Aynı Set
 
@@ -150,7 +150,7 @@ Hazır prompta artık **kalıcı bir yer** verin:
 
 ### Seçenek A: CLAUDE.md'ye
 
-Şirket geneli kullanım için: [Takım CLAUDE.md](../claude-md/takim-claude-md/)
+Şirket geneli kullanım için: [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/)
 Kişisel için: kendi CLAUDE.md'niz
 
 ```markdown
@@ -163,7 +163,7 @@ Kişisel için: kendi CLAUDE.md'niz
 
 Notion / Google Drive / paylaşılan dosyada saklayın. Tüm ekibe açık.
 
-[Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) sayfasında nasıl organize edilir var.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında nasıl organize edilir var.
 
 ### Seçenek C: Sürüm Kontrollü Repo
 
@@ -214,7 +214,7 @@ sahip: Pazarlama Müdürü
 5. Her veri için "hangi çıktı daha iyi?" → kör değerlendirme (mümkünse başkası yapsın)
 6. Skorca üstün olan kazanır
 
-Bu özellikle [Pazarlama](../departmanlar/pazarlama/) içerikleri, [Müşteri hizmetleri](../departmanlar/musteri-hizmetleri/) yanıtları, [Hukuk](../departmanlar/hukuk/) sözleşme şablonları gibi yüksek hacimli iş için değer.
+Bu özellikle [Pazarlama](/wiki/departmanlar/pazarlama/) içerikleri, [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) yanıtları, [Hukuk](/wiki/departmanlar/hukuk/) sözleşme şablonları gibi yüksek hacimli iş için değer.
 
 ## Üretim Sonrası Geri Bildirim
 
@@ -232,9 +232,9 @@ Bu geri bildirimi sistematik toplayın:
 
 Sorun çıkan promptlar yeni iterasyon turuna girer.
 
-## Otomasyon — [Scheduled Tasks](../araclar/scheduled-tasks/) ile
+## Otomasyon — [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) ile
 
-Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu), bunu [Scheduled Tasks](../araclar/scheduled-tasks/) içine koyun. Prompt sürümü ayrı dosyada tutulur, scheduled task ona referans verir. Promptu güncellediğinizde ertesi hafta yeni sürümle çalışır.
+Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu), bunu [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) içine koyun. Prompt sürümü ayrı dosyada tutulur, scheduled task ona referans verir. Promptu güncellediğinizde ertesi hafta yeni sürümle çalışır.
 
 ## Yaygın Hata: Sürekli Yamamak
 
@@ -250,7 +250,7 @@ Kendi prompt yönetiminizi kurun:
 4. **Aylık gözden geçirin** — hangileri çalışıyor, hangileri iyileştirilmeli
 5. **Çeyreklik temizlik** — kullanılmayanları silin, eskileri güncelleyin
 
-Bu disiplin uzun vadede **AI okuryazarlığınızı** ciddi şekilde artırır. Bunu kurum çapında uygulamak için [Şirket içi politika](../temeller/sirket-ici-politika/) sayfasında çerçeve var.
+Bu disiplin uzun vadede **AI okuryazarlığınızı** ciddi şekilde artırır. Bunu kurum çapında uygulamak için [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfasında çerçeve var.
 
 ## Hızlı Test Checklist
 
@@ -275,6 +275,6 @@ Yeni prompt yazdığınızda kullanın:
 - [Few-Shot Örnekleme](few-shot-ornekleme/) — Örnekle güçlendirme
 - [Yaygın Hatalar](yaygin-hatalar/) — Tipik tuzaklar
 - [İleri Seviye](ileri-seviye/) — Karmaşık iterasyon
-- [Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) — Kalıcı saklama
-- [Ölçüm Metrikleri](../temeller/olcum-metrikleri/) — Genel kalite ölçümü
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Kalıcı saklama
+- [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) — Genel kalite ölçümü
 

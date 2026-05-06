@@ -42,7 +42,7 @@ lastUpdated: "2026-05-06"
 | **HubSpot** | CRM kayıtlarını, fırsatları okur / günceller |
 | **Close CRM** | Kişilere ve pipeline'a erişir |
 
-**Kimler için kritik:** Satış, iş geliştirme, müşteri hizmetleri. [Satış](../departmanlar/satis/) departmanı sayfasında detayları var.
+**Kimler için kritik:** Satış, iş geliştirme, müşteri hizmetleri. [Satış](/wiki/departmanlar/satis/) departmanı sayfasında detayları var.
 
 ## Proje Yönetimi
 
@@ -142,7 +142,7 @@ Standart connector'ların dışında, şirketinize özel connector geliştirileb
 
 Bu MCP server geliştiriciliği gerektirir; iş profesyoneli kapsamı dışındadır, ama IT ekibiniz veya bir entegrasyon ortağı kurabilir. [MCP protokolü açık standarttır](nedir/).
 
-Pratik alternatif: [Computer Use](../yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesi.
+Pratik alternatif: [Computer Use](/wiki/yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesi.
 
 ## Kurulum Ipuçları
 
@@ -158,7 +158,7 @@ Bu sayfa **2026 başı itibariyle** doğru. Anthropic düzenli olarak yeni conne
 ## İlgili Sayfalar
 
 - [MCP Nedir?](nedir/) — Standart ve genel çerçeve
-- [Skills](../yetenekler/skills/) — Plugin'lerin içinde gelen skill'ler
-- [Departmanlar](../departmanlar/) — Rol bazlı connector önerileri
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Connector güvenlik ve onay modeli
+- [Skills](/wiki/yetenekler/skills/) — Plugin'lerin içinde gelen skill'ler
+- [Departmanlar](/wiki/departmanlar/) — Rol bazlı connector önerileri
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Connector güvenlik ve onay modeli
 

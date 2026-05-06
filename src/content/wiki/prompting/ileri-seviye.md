@@ -213,5 +213,5 @@ Bir haftada üçü birden öğrenilmez. Bir ayda oturur.
 - [Prompting Temel İlkeleri](temel-ilkeler/) — Bu sayfanın ön koşulu
 - [4D Çerçevesi](4d-cercevesi/) — Kavramsal zemin
 - [Yaygın Prompting Hataları](yaygin-hatalar/) — Hata tipleri ve düzeltmeleri
-- [Cowork Modu](../araclar/cowork-modu/) — Prompt kütüphanenin yaşadığı ortam
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Prompt kütüphanenin yaşadığı ortam
 

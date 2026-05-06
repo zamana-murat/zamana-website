@@ -133,8 +133,8 @@ Toplam süre: 25 dakika. Normal süreç: 2-3 saat + birden fazla toplantı.
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — Marka sesi buradadır
-- [Skills](../yetenekler/skills/) — Marketing plugin skill'leri
-- [Artifacts](../yetenekler/artifacts/) — İçerik dashboardları ve canlı analizler
-- [MCP Bağlantı Listesi](../mcp/baglanti-listesi/) — Canva, Figma, Slack connector'ları
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Marka sesi buradadır
+- [Skills](/wiki/yetenekler/skills/) — Marketing plugin skill'leri
+- [Artifacts](/wiki/yetenekler/artifacts/) — İçerik dashboardları ve canlı analizler
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Canva, Figma, Slack connector'ları
 

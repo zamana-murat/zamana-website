@@ -106,5 +106,5 @@ Dördü de evetse, o iş Scheduled Task'e uygundur. Kurun, bir hafta deneyin, g�
 - [Cowork Modu](cowork-modu/) — Scheduled Tasks'in yaşadığı yer
 - [Dispatch](dispatch/) — Zamanlanmış çıktıları telefonda almak
 - [Claude Desktop](claude-desktop/) — Görevlerin çalıştığı ortam
-- [Claude'un Sınırları](../temeller/sinirlamalar/) — "Bilgisayar kapalıysa çalışmaz" sınırı
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — "Bilgisayar kapalıysa çalışmaz" sınırı
 

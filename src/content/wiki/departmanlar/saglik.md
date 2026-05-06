@@ -47,7 +47,7 @@ Sağlıkta Claude kullanımını yöneten ana mevzuat:
 
 ### Hekim Notu Ön Taslak
 
-Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder ([Voice Mode](../araclar/voice-mode/)) veya kısa yazılı not bırakır. Claude bunu yapılandırılmış hekim notuna çevirir:
+Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder ([Voice Mode](/wiki/araclar/voice-mode/)) veya kısa yazılı not bırakır. Claude bunu yapılandırılmış hekim notuna çevirir:
 
 - Şikayet
 - Anamnez
@@ -59,7 +59,7 @@ Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder ([Voice Mode
 
 ### Tıbbi Literatür Araştırması
 
-Bir vaka için literatür özeti, son tedavi yaklaşımları. [Research Mode](../yetenekler/research-mode/) ile.
+Bir vaka için literatür özeti, son tedavi yaklaşımları. [Research Mode](/wiki/yetenekler/research-mode/) ile.
 
 **Önemli:** Claude akademik ücretli tam metin makalelere erişmez; PubMed özetleri ve açık erişim makaleler üzerinden çalışır. Final klinik karar için **TÜRKDERM, UpToDate, NEJM gibi profesyonel kaynaklar** ek olarak kullanılır.
 
@@ -179,7 +179,7 @@ Sağlık çalışanı için CLAUDE.md ekstra dikkatli:
 
 ## Kurumsal Politika — Sağlık Spesifik
 
-[Şirket içi politika](../temeller/sirket-ici-politika/) sayfasındaki şablonu sağlık için **sıkılaştırın**:
+[Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfasındaki şablonu sağlık için **sıkılaştırın**:
 
 ### Sağlık Politikası Ek Maddeleri
 
@@ -195,7 +195,7 @@ Sağlık çalışanı için CLAUDE.md ekstra dikkatli:
 
 ## Kurumsal Plan Tavsiyesi
 
-Sağlık kuruluşu için **mutlaka [Enterprise plan](../temeller/takim-ve-admin/)**:
+Sağlık kuruluşu için **mutlaka [Enterprise plan](/wiki/temeller/takim-ve-admin/)**:
 
 - DPA (Data Processing Agreement) imzalanır
 - Audit log
@@ -203,7 +203,7 @@ Sağlık kuruluşu için **mutlaka [Enterprise plan](../temeller/takim-ve-admin/
 - Saklama politikası ayarlanır
 - Eğitim verisi kullanım açıkça kapatılır
 
-[Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfası ek bağlam verir.
+[Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası ek bağlam verir.
 
 ## "Hekim Yardımcısı Chatbot" Trend'i
 
@@ -240,8 +240,8 @@ Tek başına çalışan hekim, küçük poliklinik / klinik için Claude'un değ
 - [Turizm ve Otelcilik](turizm-otelcilik/) — Sağlık turizmi
 - [Operasyon Departmanı](operasyon/) — Hastane operasyonel yönetim
 - [İK Departmanı](insan-kaynaklari/) — Sağlık personeli yönetimi
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Politika temeli
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Veri hakları
-- [Takım ve Admin](../temeller/takim-ve-admin/) — Enterprise plan
-- [Research Mode](../yetenekler/research-mode/) — Tıbbi literatür
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika temeli
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri hakları
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Enterprise plan
+- [Research Mode](/wiki/yetenekler/research-mode/) — Tıbbi literatür
 

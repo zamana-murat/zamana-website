@@ -35,13 +35,13 @@ Claude'un sektörel doğru hizalanması için temel.
 
 > *Yazışmalarımızda dürüst, doğrudan ve sıcak bir dil kullanırız. Pazarlama klişeleri, abartılı sıfatlar, "lider", "yenilikçi", "vizyoner" gibi içi boş kelimeler yasaktır. Müşteriye saygılı ama eşit konuşuruz.*
 
-[Pazarlama departmanı](../departmanlar/pazarlama/) sayfasıyla uyumlu olmalı.
+[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfasıyla uyumlu olmalı.
 
 ### 3. KVKK ve Veri Politikası
 
 > *Müşteri kişisel verisi, ticari sırlar, hukuki süreç dosyaları Claude'a yüklenmez. Yüklenecek belgeler önce hassas bilgi açısından kontrol edilir.*
 
-[Şirket içi politika](../temeller/sirket-ici-politika/) ve [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfalarındaki politikayla tutarlı.
+[Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ve [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfalarındaki politikayla tutarlı.
 
 ### 4. Sektör / Hukuk / Mevzuat Notları
 
@@ -71,7 +71,7 @@ Birkaç seçenek var, her birinin avantajı farklı:
 
 ### Seçenek 1: Paylaşılan Bulut Dosyası
 
-Google Drive / OneDrive / SharePoint'te tek bir CLAUDE.md dosyası. Çalışanlar [Projects](../araclar/projects/) içine kopyalar veya doğrudan referans verir.
+Google Drive / OneDrive / SharePoint'te tek bir CLAUDE.md dosyası. Çalışanlar [Projects](/wiki/araclar/projects/) içine kopyalar veya doğrudan referans verir.
 
 **Avantaj:** Her çalışan en güncel versiyonu görür.
 **Dezavantaj:** Sürüm/değişiklik kontrolü zayıf.
@@ -92,7 +92,7 @@ Google Drive / OneDrive / SharePoint'te tek bir CLAUDE.md dosyası. Çalışanla
 
 ### Seçenek 4: Anthropic Enterprise Plan'da Organizasyon Düzeyi
 
-[Enterprise plan](../temeller/takim-ve-admin/) bazı senaryolarda admin'in tüm kullanıcılara organizasyon-genelinde talimatlar göndermesini destekler. Bu özellik gelişiyor; Anthropic Sales ile konuşulması gerekiyor.
+[Enterprise plan](/wiki/temeller/takim-ve-admin/) bazı senaryolarda admin'in tüm kullanıcılara organizasyon-genelinde talimatlar göndermesini destekler. Bu özellik gelişiyor; Anthropic Sales ile konuşulması gerekiyor.
 
 ## Çalışan Bireysel CLAUDE.md ile Birleştirme
 
@@ -114,14 +114,14 @@ Google Drive / OneDrive / SharePoint'te tek bir CLAUDE.md dosyası. Çalışanla
 
 ### B — Project Knowledge'a Şirket, CLAUDE.md'ye Bireysel
 
-[Projects](../araclar/projects/) içinde bir "Şirket Bilgisi" projesi → şirket CLAUDE.md'si project knowledge olarak yüklü. Çalışanın kişisel CLAUDE.md'si ayrı.
+[Projects](/wiki/araclar/projects/) içinde bir "Şirket Bilgisi" projesi → şirket CLAUDE.md'si project knowledge olarak yüklü. Çalışanın kişisel CLAUDE.md'si ayrı.
 
 **Avantaj:** Şirket güncellendiğinde tek noktada güncellenir.
 **Dezavantaj:** Çalışan her sohbette doğru proje altında olduğundan emin olmalı.
 
 ### C — Cowork / Team Plan'da Otomatik
 
-[Enterprise plan](../temeller/takim-ve-admin/) gelişmiş yapılandırmalarında, organizasyon-genelinde talimat ile bireysel CLAUDE.md birleşir, çalışanın hiçbir manuel kopyalama yapmasına gerek kalmaz.
+[Enterprise plan](/wiki/temeller/takim-ve-admin/) gelişmiş yapılandırmalarında, organizasyon-genelinde talimat ile bireysel CLAUDE.md birleşir, çalışanın hiçbir manuel kopyalama yapmasına gerek kalmaz.
 
 ## Kim Editler?
 
@@ -166,13 +166,13 @@ sonraki gözden geçirme: 2026-07-26
 
 Yeni çalışan ilk haftasında:
 
-1. [Şirket içi politika](../temeller/sirket-ici-politika/)'yı okur ve imzalar
+1. [Şirket içi politika](/wiki/temeller/sirket-ici-politika/)'yı okur ve imzalar
 2. Şirket CLAUDE.md'sinin son sürümünü alır
 3. Kendi bireysel CLAUDE.md'sini yazar (rolü, alışkanlıkları, projeleri)
 4. İki dosyayı birleştirir
-5. İlk haftada bir [Cowork](../araclar/cowork-modu/) oturumu — yöneticiyle birlikte CLAUDE.md test edilir, gerekirse iyileştirilir
+5. İlk haftada bir [Cowork](/wiki/araclar/cowork-modu/) oturumu — yöneticiyle birlikte CLAUDE.md test edilir, gerekirse iyileştirilir
 
-[İlk 7 Gün](../temeller/ilk-7-gun/) sayfası bu süreci genel hatlarıyla anlatır.
+[İlk 7 Gün](/wiki/temeller/ilk-7-gun/) sayfası bu süreci genel hatlarıyla anlatır.
 
 ## Yaygın Sorunlar
 
@@ -243,6 +243,6 @@ sahip: [Pozisyon]
 - [Şablon Kütüphanesi](sablon-kutuphanesi/) — Rol bazlı şablonlar
 - [Hata Ayıklama](hata-ayiklama/) — CLAUDE.md işe yaramıyorsa
 - [Memory Yönetimi](memory-yonetimi/) — CLAUDE.md ile kalıcı bellek farkı
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Politika belgesiyle uyum
-- [Takım ve Admin](../temeller/takim-ve-admin/) — Enterprise plan organizasyon düzeyi
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika belgesiyle uyum
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Enterprise plan organizasyon düzeyi
 

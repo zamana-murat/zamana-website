@@ -44,7 +44,7 @@ Aynı konuyu **6. sınıf**, **9. sınıf**, **üniversite 1. sınıf** seviyele
 
 ### Ders Notu / Sunum
 
-Konunun öğrenci dağıtım notu (handout) ve sunum slaytı. [Skills](../yetenekler/skills/) ile .pptx dosyası doğrudan çıkar.
+Konunun öğrenci dağıtım notu (handout) ve sunum slaytı. [Skills](/wiki/yetenekler/skills/) ile .pptx dosyası doğrudan çıkar.
 
 ## Bölüm 2 — Sınav ve Değerlendirme
 
@@ -52,7 +52,7 @@ Konunun öğrenci dağıtım notu (handout) ve sunum slaytı. [Skills](../yetene
 
 Açık uçlu, çoktan seçmeli, doğru-yanlış, eşleştirme — Claude tüm tipleri konuya göre üretir. **Yenilik:** sıkıcı klişe sorular yerine **gerçek hayat senaryosu** içeren sorular hazırlar.
 
-[Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) ile sizin sınav tarzınızı öğretebilirsiniz.
+[Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile sizin sınav tarzınızı öğretebilirsiniz.
 
 ### Soru Bankası Genişletme
 
@@ -94,7 +94,7 @@ Türkçe / yabancı dil kompozisyon değerlendirmesi — gramer, akış, argüma
 
 ### Literatür Taraması
 
-[Research Mode](../yetenekler/research-mode/) ile bir konuda akademik literatür özeti. Akademik kaynak değil ama **tarama başlangıcı** olarak değerli.
+[Research Mode](/wiki/yetenekler/research-mode/) ile bir konuda akademik literatür özeti. Akademik kaynak değil ama **tarama başlangıcı** olarak değerli.
 
 **Önemli:** Akademik makalenin tam gizli/ücretli içeriklerine Claude erişemez. Açık kaynaklar üzerinden tarama yapar. Final akademik atıflar için DergiPark, Google Scholar, JSTOR, Web of Science manual.
 
@@ -190,7 +190,7 @@ Eğitmen için temel yapı:
 
 **Engel:** "Eğitim hassas, AI ile akademik etik sorunlu olur."
 
-**Çözüm:** Claude **araç**tır, son üretim öğretmenin/öğrencinin işidir. Şeffaf kullanım: "AI ile taslak ürettik, ben düzelttim" notu olabilir. [Şirket içi politika](../temeller/sirket-ici-politika/) sayfası kullanım sınıflarını verir.
+**Çözüm:** Claude **araç**tır, son üretim öğretmenin/öğrencinin işidir. Şeffaf kullanım: "AI ile taslak ürettik, ben düzelttim" notu olabilir. [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfası kullanım sınıflarını verir.
 
 **Engel:** "Öğrenci verisi KVKK kapsamında çok hassas."
 
@@ -198,7 +198,7 @@ Eğitmen için temel yapı:
 
 **Engel:** "Öğretmenler teknolojiye dirençli."
 
-**Çözüm:** İlk hafta sadece **sınav sorusu üretme** ile başla — kazanan görünür olur, direnç çözülür. [İlk 7 Gün](../temeller/ilk-7-gun/) genel başlangıç rehberi.
+**Çözüm:** İlk hafta sadece **sınav sorusu üretme** ile başla — kazanan görünür olur, direnç çözülür. [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) genel başlangıç rehberi.
 
 ## Bireysel Eğitmen / Online Kurs
 
@@ -216,8 +216,8 @@ Tek başına bir öğretmen / koç / kurs eğitmeni için Claude'un değeri ola�
 - [İK Departmanı](insan-kaynaklari/) — Öğretmen yönetimi
 - [Müşteri Hizmetleri](musteri-hizmetleri/) — Veli iletişimi
 - [Hukuk Departmanı](hukuk/) — KVKK, eğitim mevzuatı
-- [Research Mode](../yetenekler/research-mode/) — Akademik tarama
-- [Skills](../yetenekler/skills/) — Sunum, çalışma kâğıdı üretme
-- [Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) — Sınav tarzınız öğretme
-- [Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) — Eğitim şablonları
+- [Research Mode](/wiki/yetenekler/research-mode/) — Akademik tarama
+- [Skills](/wiki/yetenekler/skills/) — Sunum, çalışma kâğıdı üretme
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Sınav tarzınız öğretme
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Eğitim şablonları
 

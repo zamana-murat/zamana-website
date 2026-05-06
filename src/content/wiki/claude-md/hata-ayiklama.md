@@ -18,7 +18,7 @@ Aşağıdaki sembiyolardan hangisi sizinki?
 |---|---|---|
 | "Hiçbir kuralımı tanımıyor sanki" | CLAUDE.md hiç yüklenmemiş veya yanlış yerde | Bölüm 1 |
 | "Bazı kuralları dinliyor, bazılarını dinlemiyor" | Çelişki veya öncelik sorunu | Bölüm 2 |
-| "İlk yanıtlarda iyi, sonra unutuyor" | Konuşma uzadıkça [bağlam](../yetenekler/context-compaction/) sıkışması | Bölüm 3 |
+| "İlk yanıtlarda iyi, sonra unutuyor" | Konuşma uzadıkça [bağlam](/wiki/yetenekler/context-compaction/) sıkışması | Bölüm 3 |
 | "Yazdığım gibi anlamadı" | Talimat belirsiz veya yanlış formülasyon | Bölüm 4 |
 | "Eski sürüm CLAUDE.md kullanıyor sanki" | Önbellek veya yanlış proje | Bölüm 5 |
 | "Kurallar çok uzun, Claude bunaldı" | CLAUDE.md çok uzun | Bölüm 6 |
@@ -31,9 +31,9 @@ Aşağıdaki sembiyolardan hangisi sizinki?
 
 **Cevap "Hayır" ise:**
 
-- claude.ai'da: [Projects](../araclar/projects/) içindesiniz mi? CLAUDE.md o projeye bağlı mı?
-- [Claude Desktop](../araclar/claude-desktop/)'ta: çalışma dizininizde `CLAUDE.md` dosyası var mı?
-- Mobilde: [Claude Mobil](../araclar/claude-mobil/) projeden değilse CLAUDE.md görünmez
+- claude.ai'da: [Projects](/wiki/araclar/projects/) içindesiniz mi? CLAUDE.md o projeye bağlı mı?
+- [Claude Desktop](/wiki/araclar/claude-desktop/)'ta: çalışma dizininizde `CLAUDE.md` dosyası var mı?
+- Mobilde: [Claude Mobil](/wiki/araclar/claude-mobil/) projeden değilse CLAUDE.md görünmez
 
 **Cevap "Evet" ise ama yanlış alıntı veriyorsa:** muhtemelen eski sürüm yüklenmiş veya başka bir proje CLAUDE.md'si yüklenmiş.
 
@@ -66,7 +66,7 @@ Aynı kuralı iki yerde tekrar etmeyin. Tek kaynak, tek doğru sürüm.
 
 ## 3. Bağlam Sıkışması
 
-Konuşma uzadıkça (50+ mesaj) Claude eski talimatları unutmaya başlayabilir. Bu **[bağlam](../yetenekler/context-compaction/)** kapasitesinin sınırıdır.
+Konuşma uzadıkça (50+ mesaj) Claude eski talimatları unutmaya başlayabilir. Bu **[bağlam](/wiki/yetenekler/context-compaction/)** kapasitesinin sınırıdır.
 
 **Belirtiler:**
 
@@ -81,7 +81,7 @@ Konuşma uzadıkça (50+ mesaj) Claude eski talimatları unutmaya başlayabilir.
 - **Çok adımlı işi parçala.** Bir sohbette her şeyi bitirme; alt sohbetlere böl.
 - **Compaction'a güven.** Claude konuşmayı otomatik özetler ama her zaman doğru özetlemez.
 
-[Context ve Compaction](../yetenekler/context-compaction/) sayfası bu mekanizmanın detayını verir.
+[Context ve Compaction](/wiki/yetenekler/context-compaction/) sayfası bu mekanizmanın detayını verir.
 
 ## 4. Net Olmayan Talimatlar
 
@@ -101,7 +101,7 @@ Saygılı = ne kadar resmî? Ne kadar samimi?
 
 > *Profesyonel = iş bağlamındaki bir tonlama. Örnek: 'Toplantı için müsait olduğum saatleri ekte bulabilirsiniz.' (kabul edilebilir) vs. 'Hangi saat seni uyar?' (çok samimi).*
 
-[Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) bu yaklaşımın detayıdır.
+[Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) bu yaklaşımın detayıdır.
 
 ### Negatifle Pozitif Birlikte
 
@@ -160,7 +160,7 @@ Soyut talimat yerine **örnek** verin:
 > *"İyi yanıt örneği: [tam örnek]"*
 > *"Kötü yanıt örneği: [tam örnek] — bunu yapma"*
 
-[Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) bu tekniğin detayını verir.
+[Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) bu tekniğin detayını verir.
 
 ### Adım 5 — Dış Görüşle Doğrulayın
 
@@ -186,7 +186,7 @@ içinde: örn. "akış (flow)". Türkçe karşılığı yerleşmemiş kavramlar 
 İngilizce kullanımı kabul.
 ```
 
-[Türkçe Performansı](../temeller/turkce-performansi/) ve [Türkçe Prompt Teknikleri](../prompting/turkce-prompt-teknikleri/) sayfalarına bakın.
+[Türkçe Performansı](/wiki/temeller/turkce-performansi/) ve [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfalarına bakın.
 
 ### "Çok temkinli, hep 'yapamam' diyor"
 
@@ -212,7 +212,7 @@ Bir sorun çözüldükten sonra:
 - [Örnekler](ornekler/) — Çalışan örnekler
 - [Şablon Kütüphanesi](sablon-kutuphanesi/) — Hazır şablonlar
 - [Takım CLAUDE.md](takim-claude-md/) — Şirket-geneli paylaşım
-- [Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) — Örnekle öğretme
-- [Yaygın Hatalar](../prompting/yaygin-hatalar/) — Prompting tarafının hata listesi
-- [Context ve Compaction](../yetenekler/context-compaction/) — Bağlam sıkışması
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle öğretme
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Prompting tarafının hata listesi
+- [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Bağlam sıkışması
 

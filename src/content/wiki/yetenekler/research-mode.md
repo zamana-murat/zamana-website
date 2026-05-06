@@ -10,7 +10,7 @@ lastUpdated: "2026-05-06"
 
 **Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" — bunlar saatler süren araştırma istiyor. Claude'un research mode'u tam buna hizmet eder.
 
-Bu sayfa derin araştırma yetenekçesinin ne olduğunu, [Dispatch](../araclar/dispatch/) ile ilişkisini ve hangi senaryolarda iş profesyoneline değer ürettiğini anlatır.
+Bu sayfa derin araştırma yetenekçesinin ne olduğunu, [Dispatch](/wiki/araclar/dispatch/) ile ilişkisini ve hangi senaryolarda iş profesyoneline değer ürettiğini anlatır.
 
 ## Research Mode Nedir?
 
@@ -44,19 +44,19 @@ Bir hafta süren analist işi. Research mode bunu 30-45 dakikada bitirir, bir uz
 
 > *"5 ana rakibimiz: ürün özellikleri, fiyatlandırma, müşteri profili, pazarlama yaklaşımı, son 12 aydaki haberler. Bizimle kıyaslama tablosu."*
 
-[Pazarlama departmanı](../departmanlar/pazarlama/) ve [Satış departmanı](../departmanlar/satis/) için sürekli ihtiyaç olan iş.
+[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) ve [Satış departmanı](/wiki/departmanlar/satis/) için sürekli ihtiyaç olan iş.
 
 ### Mevzuat / Yasal Araştırma
 
 > *"Yeni KVKK düzenlemesi (2026): değişen maddeler, sektörümüze etkisi, uygulama tarihleri, geçiş gereklilikleri."*
 
-[Hukuk departmanı](../departmanlar/hukuk/) tarafında zaman tasarrufu büyük.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) tarafında zaman tasarrufu büyük.
 
 ### Teknoloji Değerlendirmesi
 
 > *"3 farklı CRM çözümünün kıyaslaması: SAP, Salesforce, MS Dynamics. Maliyet, özellik, Türkiye lokalizasyonu, müşteri yorumları."*
 
-[BT departmanı](../departmanlar/bilgi-teknolojileri/) için satın alma kararı destek.
+[BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) için satın alma kararı destek.
 
 ### Müşteri / İş Ortağı Araştırması
 
@@ -78,13 +78,13 @@ Stratejik planlama girdisi.
 
 Claude bunu uzun soluklu bir araştırma olarak yorumlar.
 
-### 2. [Dispatch](../araclar/dispatch/) ile
+### 2. [Dispatch](/wiki/araclar/dispatch/) ile
 
 Daha uzun süreli araştırmalar için Dispatch tarafına gönderirsiniz. Bir dosyaya araştırma görevi tanımlarsınız, arka planda çalışır, bittiğinde size sonucu gelir. 30 dakika - birkaç saat sürebilir.
 
 ### 3. Project Knowledge ile Birleşik
 
-Araştırılacak konunun **iç dokümanlarınız** kapsamı varsa (örn. eski raporlar, satış verisi), bunları [Projects](../araclar/projects/) altında knowledge olarak yükleyip "iç dokümanlarımla birlikte web araştırmasını birleştir" diyebilirsiniz.
+Araştırılacak konunun **iç dokümanlarınız** kapsamı varsa (örn. eski raporlar, satış verisi), bunları [Projects](/wiki/araclar/projects/) altında knowledge olarak yükleyip "iç dokümanlarımla birlikte web araştırmasını birleştir" diyebilirsiniz.
 
 ## Çıktı Formatı
 
@@ -120,7 +120,7 @@ Tipik research mode çıktısı:
 2. ...
 ```
 
-[Çıktı Formatı](../prompting/cikti-formati/) sayfasında nasıl şekillendirileceği detaylanır.
+[Çıktı Formatı](/wiki/prompting/cikti-formati/) sayfasında nasıl şekillendirileceği detaylanır.
 
 ## Pratik İpuçları
 
@@ -161,7 +161,7 @@ Kaynak kalitesi araştırma kalitesini belirler.
 
 Bu Claude'u körü körüne sentez yapmaktan çıkarır.
 
-[Web Arama](../araclar/web-arama/) sayfasında araştırma kalitesi arttırma teknikleri var.
+[Web Arama](/wiki/araclar/web-arama/) sayfasında araştırma kalitesi arttırma teknikleri var.
 
 ## Kalite Kontrol
 
@@ -172,7 +172,7 @@ Research mode çıktısı yine de doğrulama gerektirir:
 - **Şirket finansalları:** Bilanço dönemi ve para birimi tutarlı mı
 - **Çelişen iddialar:** Claude çelişkiyi belirtmiş mi, yoksa birini saklayıp diğerini almış mı
 
-[Sınırlamalar](../temeller/sinirlamalar/) sayfası halüsinasyon ve doğrulama konusunu derinleştirir.
+[Sınırlamalar](/wiki/temeller/sinirlamalar/) sayfası halüsinasyon ve doğrulama konusunu derinleştirir.
 
 ## Maliyet Yönü — Token / Bağlam
 
@@ -182,7 +182,7 @@ Research mode uzun bağlam tüketir. Pro / Max planı kullanıcıları:
 - Max 5x / Max 20x: rahatça kullanılır
 - Enterprise: organizasyon havuzu paylaşılır
 
-[Planlar](../temeller/planlar/) sayfası detaylar.
+[Planlar](/wiki/temeller/planlar/) sayfası detaylar.
 
 ## Birleştirilmiş Senaryo: Research + Skills + Dispatch
 
@@ -191,10 +191,10 @@ Karmaşık iş senaryosu örneği:
 1. **Dispatch** ile uzun araştırma görevi başlatılır (45 dk arka plan)
 2. Sonuç gelir, **research mode** raporu hazır
 3. **[Skills](skills/)** ile rapor .docx ve .pptx olarak dışa aktarılır
-4. **[Connectors](../araclar/connectors/)** ile rapor Drive'a yüklenir
+4. **[Connectors](/wiki/araclar/connectors/)** ile rapor Drive'a yüklenir
 5. Sonucu yöneticilerle paylaşırsınız
 
-Bu birleşik akış [Cowork modu](../araclar/cowork-modu/) içinde tek prompt'la kurulabilir.
+Bu birleşik akış [Cowork modu](/wiki/araclar/cowork-modu/) içinde tek prompt'la kurulabilir.
 
 ## Research Mode'a Karar Verirken
 
@@ -219,13 +219,13 @@ Bu durumlar için **AI başlangıç noktası** + **insan derinleştirme** birle�
 
 ## İlgili Sayfalar
 
-- [Web Arama](../araclar/web-arama/) — Hızlı arama tarafı
-- [Dispatch](../araclar/dispatch/) — Uzun süreli arka plan görevi
-- [Cowork Modu](../araclar/cowork-modu/) — Research + Skills + Connectors birleşimi
+- [Web Arama](/wiki/araclar/web-arama/) — Hızlı arama tarafı
+- [Dispatch](/wiki/araclar/dispatch/) — Uzun süreli arka plan görevi
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Research + Skills + Connectors birleşimi
 - [Skills](skills/) — Çıktıyı dosya olarak dışa aktarma
-- [Projects](../araclar/projects/) — İç dokümanlarla birleşik araştırma
-- [Çıktı Formatı](../prompting/cikti-formati/) — Rapor şekillendirme
-- [Sınırlamalar](../temeller/sinirlamalar/) — Halüsinasyon riski
-- [Hukuk Departmanı](../departmanlar/hukuk/) — Mevzuat araştırması
-- [Pazarlama Departmanı](../departmanlar/pazarlama/) — Pazar araştırması
+- [Projects](/wiki/araclar/projects/) — İç dokümanlarla birleşik araştırma
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Rapor şekillendirme
+- [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Halüsinasyon riski
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — Mevzuat araştırması
+- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/) — Pazar araştırması
 

@@ -8,7 +8,7 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-**Claude'un sohbetler arası bilgiyi hatırladığı bir bellek katmanı vardır.** Sizin kim olduğunuzu, neyle uğraştığınızı, tercihlerinizi otomatik biriktirir; sonraki sohbetlerde bu bilgileri kullanır. Bu sayfa nasıl çalıştığını, [CLAUDE.md](../claude-md/nedir/) ile farkını ve kontrol mekanizmalarını anlatır.
+**Claude'un sohbetler arası bilgiyi hatırladığı bir bellek katmanı vardır.** Sizin kim olduğunuzu, neyle uğraştığınızı, tercihlerinizi otomatik biriktirir; sonraki sohbetlerde bu bilgileri kullanır. Bu sayfa nasıl çalıştığını, [CLAUDE.md](/wiki/claude-md/nedir/) ile farkını ve kontrol mekanizmalarını anlatır.
 
 ## Memory Nedir?
 
@@ -16,9 +16,9 @@ Memory, Claude'un **otomatik öğrenip hatırladığı** kalıcı bilgi sistemid
 
 Pratik karşılığı: bir asistan üç ay sizinle çalıştıktan sonra rolünüzü, projenizi, tercihlerinizi bilir. Memory bunu kuran mekanizmadır.
 
-**Önemli kapsam:** Memory **yalnızca [Claude Chat](../araclar/claude-chat/)'te** çalışır. [Cowork modu](../araclar/cowork-modu/) ve [Projects](../araclar/projects/) için **farklı mekanizmalar** vardır:
+**Önemli kapsam:** Memory **yalnızca [Claude Chat](/wiki/araclar/claude-chat/)'te** çalışır. [Cowork modu](/wiki/araclar/cowork-modu/) ve [Projects](/wiki/araclar/projects/) için **farklı mekanizmalar** vardır:
 
-- **Cowork modu:** Her oturum [CLAUDE.md](../claude-md/nedir/) ile bağlam kurar; oturum dışı kalıcı bellek yoktur
+- **Cowork modu:** Her oturum [CLAUDE.md](/wiki/claude-md/nedir/) ile bağlam kurar; oturum dışı kalıcı bellek yoktur
 - **Projects:** Her projenin kendi project knowledge ve özel talimatları (proje-spesifik bağlam) vardır; Memory'den ayrı çalışır
 
 Bu sayfa Claude Chat memory'sini odak alır.
@@ -34,7 +34,7 @@ Bu sayfa Claude Chat memory'sini odak alır.
 | Görünür mü? | Evet, dosya olarak | Memory yönetim panelinde |
 | Sürüm var mı? | Elle yönetilir | Claude tarafından güncellenir |
 | Düzenlenir mi? | Doğrudan | Memory paneli üzerinden |
-| Şirket genelinde paylaşım | Evet ([Takım CLAUDE.md](../claude-md/takim-claude-md/)) | Hayır, kişiseldir |
+| Şirket genelinde paylaşım | Evet ([Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/)) | Hayır, kişiseldir |
 
 **Pratik kural:**
 
@@ -53,7 +53,7 @@ Memory tipik olarak şunları biriktirir:
 
 Saklamadıkları:
 
-- Sohbetin tüm metni (sohbet geçmişi ayrı sistemdir — [Geçmiş ve Arama](../araclar/gecmis-ve-arama/))
+- Sohbetin tüm metni (sohbet geçmişi ayrı sistemdir — [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/))
 - Hassas kişisel veri (Claude bunu memory'e koymama eğilimindedir)
 - Gizli olduğunu söylediğiniz bilgi
 
@@ -91,15 +91,15 @@ Memory'in **açık veya kapalı** olması ayarlanabilir bir tercih:
 
 Tek sefer geçici sohbet için: bazı sürümlerde **Temporary Chat / Geçici Sohbet** modu vardır. O moddayken yapılan konuşma memory'e işlemez, sohbet geçmişine de kaydedilmez. Tarayıcıda **incognito** moda benzer.
 
-Detay için [Geçmiş ve Arama](../araclar/gecmis-ve-arama/) sayfası.
+Detay için [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) sayfası.
 
 ## Şirket Kullanımı — Memory Politikası
 
 Kurumsal bağlamda memory, **çalışanın kişisel asistanı** gibi davranır. Şirket politikasında dikkat:
 
 - **Kişisel hesap vs. Şirket hesabı:** Memory sadece o hesaba bağlıdır. Çalışan ayrılınca o memory de gider.
-- **Hassas veri:** Memory'e müşteri özel bilgisi düşmemeli. [Şirket içi politika](../temeller/sirket-ici-politika/) sayfasında bu konu işleniyor.
-- **Enterprise plan:** Bazı kurumsal yapılandırmalarda admin memory politikasını organizasyon çapında düzenleyebilir. [Takım ve Admin](../temeller/takim-ve-admin/) detay verir.
+- **Hassas veri:** Memory'e müşteri özel bilgisi düşmemeli. [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfasında bu konu işleniyor.
+- **Enterprise plan:** Bazı kurumsal yapılandırmalarda admin memory politikasını organizasyon çapında düzenleyebilir. [Takım ve Admin](/wiki/temeller/takim-ve-admin/) detay verir.
 
 ## KVKK ve Gizlilik
 
@@ -108,9 +108,9 @@ Memory, sizin Anthropic hesabınıza bağlı bilgi olarak saklanır. KVKK çerç
 - **Veri minimizasyonu:** Yalnızca işe yarayanı tutmak — gözden geçirip gereksizleri silin
 - **Hak: Erişim:** Memory panelinde tüm kayıtları görme hakkınız var
 - **Hak: Silme:** Tek tek veya tümünü silebilirsiniz
-- **Hak: Taşınabilirlik:** [Geçmiş ve Arama](../araclar/gecmis-ve-arama/) sayfasındaki export ile dışarı aktarılabilir
+- **Hak: Taşınabilirlik:** [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) sayfasındaki export ile dışarı aktarılabilir
 
-[Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfası genel veri haklarını anlatır.
+[Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası genel veri haklarını anlatır.
 
 ## Hatalar ve Düzeltme
 
@@ -131,14 +131,14 @@ Memory bir kez yazıldı diye sonsuza kadar kalmaz; siz değiştirebilirsiniz.
 
 Yeni sohbette CLAUDE.md zaten yüklü, memory zaten Claude'da. İkisi birlikte sizin "asistan profilinizi" oluşturur.
 
-[Memory Yönetimi](../claude-md/memory-yonetimi/) sayfası bu ilişkiyi derinleştirir.
+[Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfası bu ilişkiyi derinleştirir.
 
 ## Memory'in Sınırları
 
 **Yapamayacakları:**
 
-- Şirket-genelinde paylaşılmaz (şirket bilgisi için [Takım CLAUDE.md](../claude-md/takim-claude-md/))
-- Çok uzun bilgi tutmaz (Claude eğer bağlam-yoğun bilgi almışsa o memory'e değil, [project knowledge](../araclar/projects/)'a yazılmalı)
+- Şirket-genelinde paylaşılmaz (şirket bilgisi için [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/))
+- Çok uzun bilgi tutmaz (Claude eğer bağlam-yoğun bilgi almışsa o memory'e değil, [project knowledge](/wiki/araclar/projects/)'a yazılmalı)
 - Otomatik olarak doğrulanmış değildir — siz yazdıysanız "doğru" sayar
 
 ## Memory mu, Project Knowledge mı?
@@ -153,7 +153,7 @@ Tipik kullanım:
 - Bir müşteri için sürekli çalışıyorsanız → o müşterinin sözleşmeleri / brifingleri **project knowledge**'a yüklenir
 - "Ben bu projede onu temsil ediyorum" gibi bir bilgi → **memory**'e geçer
 
-[Projects](../araclar/projects/) sayfası project knowledge tarafını anlatır.
+[Projects](/wiki/araclar/projects/) sayfası project knowledge tarafını anlatır.
 
 ## Pratik Senaryolar
 
@@ -187,15 +187,15 @@ Claude memory'i günceller.
 
 ## Memory İyiyse Verim Artar
 
-Doğru kurulmuş memory + CLAUDE.md birleşimi her sohbette **uzun başlangıç** ihtiyacını ortadan kaldırır. Çalışan artık her seferinde "ben kimim, neyle çalışıyorum" anlatmaz; doğrudan göreve girer. Bu, [Ölçüm Metrikleri](../temeller/olcum-metrikleri/) sayfasındaki zaman tasarrufunun gizli kaynaklarından biridir.
+Doğru kurulmuş memory + CLAUDE.md birleşimi her sohbette **uzun başlangıç** ihtiyacını ortadan kaldırır. Çalışan artık her seferinde "ben kimim, neyle çalışıyorum" anlatmaz; doğrudan göreve girer. Bu, [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasındaki zaman tasarrufunun gizli kaynaklarından biridir.
 
 ## İlgili Sayfalar
 
-- [Memory Yönetimi (CLAUDE.md ile)](../claude-md/memory-yonetimi/) — Bütünleşik görünüm
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — Manuel kalıcı kurallar
-- [Projects](../araclar/projects/) — Project knowledge alternatifi
-- [Geçmiş ve Arama](../araclar/gecmis-ve-arama/) — Sohbet geçmişi (memory'den ayrı)
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Veri hakları
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Memory'e ne yazılmalı
+- [Memory Yönetimi (CLAUDE.md ile)](/wiki/claude-md/memory-yonetimi/) — Bütünleşik görünüm
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Manuel kalıcı kurallar
+- [Projects](/wiki/araclar/projects/) — Project knowledge alternatifi
+- [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) — Sohbet geçmişi (memory'den ayrı)
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri hakları
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Memory'e ne yazılmalı
 - [Context ve Compaction](context-compaction/) — Sohbet içi bağlam yönetimi (memory'den ayrı)
 

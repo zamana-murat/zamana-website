@@ -10,13 +10,13 @@ lastUpdated: "2026-05-06"
 
 **[MCP](nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır.** Bu sayfa bir MCP server'ı Claude Desktop veya claude.ai'a nasıl ekleyeceğinizi adım adım anlatır.
 
-[Connectors](../araclar/connectors/) ile karıştırmayın — connector Anthropic'in resmî, hazır entegrasyonu; MCP daha geniş ve özelleştirilebilir.
+[Connectors](/wiki/araclar/connectors/) ile karıştırmayın — connector Anthropic'in resmî, hazır entegrasyonu; MCP daha geniş ve özelleştirilebilir.
 
 ## Önce — MCP Mi, Connector Mu?
 
 | Servisiniz... | Tercih |
 |---|---|
-| Resmî [Connector](../araclar/connectors/) listesinde (Gmail, Drive, Slack, Notion vs.) | Connector — daha kolay |
+| Resmî [Connector](/wiki/araclar/connectors/) listesinde (Gmail, Drive, Slack, Notion vs.) | Connector — daha kolay |
 | Listede yok ama popüler bir SaaS | MCP — büyük olasılıkla bir community MCP var |
 | Şirket içi sistem (CRM, ERP) | MCP — özel server yazılır |
 | Hassas veriyle çalışıyor | MCP + dikkatli [Güvenlik](guvenlik/) yapılandırması |
@@ -27,7 +27,7 @@ Eğer connector seçeneğiniz varsa, MCP'ye gerek yok. Hızlı kararı [Bağlant
 
 İki ortamda da MCP destekleniyor:
 
-- **[Claude Desktop](../araclar/claude-desktop/):** Kişisel bilgisayarda yerel kurulum. Daha esnek, özel server'lar buradan kullanılır.
+- **[Claude Desktop](/wiki/araclar/claude-desktop/):** Kişisel bilgisayarda yerel kurulum. Daha esnek, özel server'lar buradan kullanılır.
 - **claude.ai:** Web/mobil. Kurulum tek tık, ama özel server seçenekleri sınırlı.
 
 Bu sayfa **Claude Desktop** üzerinden kurulumu odak alır — daha kuvvetli ve esnek. Web tarafı için kısa bir bölüm sonda var.
@@ -56,7 +56,7 @@ Açık kaynak topluluğu yüzlerce MCP server üretti — Notion, Linear, Jira, 
 
 ### C. Şirket İçi Özel MCP
 
-Kendi ERP/CRM sisteminize MCP yazmak için Anthropic'in MCP SDK'sini kullanırsınız (Python veya TypeScript). Bu geliştirici işi; [BT departmanı](../departmanlar/bilgi-teknolojileri/) ile koordine edilir.
+Kendi ERP/CRM sisteminize MCP yazmak için Anthropic'in MCP SDK'sini kullanırsınız (Python veya TypeScript). Bu geliştirici işi; [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile koordine edilir.
 
 ## Adım 2 — Ön Koşullar
 
@@ -215,7 +215,7 @@ Claude size aktif server'ların listesini söylemeli. Yoksa:
 
 **Çözüm:**
 - Kurumsal bilgisayarda IT politikası npx çalıştırmayı engelleyebilir
-- BT ile konuşun, [BT Departmanı](../departmanlar/bilgi-teknolojileri/) sayfası rehber içerir
+- BT ile konuşun, [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası rehber içerir
 
 ## claude.ai (Web) Üzerinde MCP
 
@@ -237,7 +237,7 @@ Kendi sisteminize MCP yazmak için:
 4. Test edin (Claude Desktop'ta yerel olarak)
 5. Şirket içinde dağıtım (genelde dahili NPM registry, internal Docker, vs.)
 
-[BT Departmanı](../departmanlar/bilgi-teknolojileri/) ve [Güvenlik](guvenlik/) sayfaları kurumsal pratiği detaylandırır.
+[BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ve [Güvenlik](guvenlik/) sayfaları kurumsal pratiği detaylandırır.
 
 ## Birden Fazla Server Birlikte
 
@@ -287,7 +287,7 @@ Production kurumsal kullanımda sabitlemek **güvenlik açısından önerilir** 
 - **Internal package** — şirket içi bir kurulum scripti
 - **Enterprise plan** ile organizasyon-genelinde MCP yönetimi (gelişen özellik)
 
-[Takım ve Admin](../temeller/takim-ve-admin/) sayfası kurumsal MCP yönetimini değinir.
+[Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfası kurumsal MCP yönetimini değinir.
 
 ## Yapılandırmayı Versiyonlamak
 
@@ -305,8 +305,8 @@ Ama **sırlarınızı (token, şifre) git'e koymayın.** Env değişkeni kullan�
 - [Güvenlik](guvenlik/) — MCP güvenlik modeli
 - [Popüler MCP'ler](populer-mcpler/) — Ne kurmaya başlamalı
 - [Bağlantı Listesi](baglanti-listesi/) — MCP + connector listesi
-- [Connectors](../araclar/connectors/) — Hazır alternatif
-- [Claude Desktop](../araclar/claude-desktop/) — MCP'nin yaşadığı uygulama
-- [BT Departmanı](../departmanlar/bilgi-teknolojileri/) — Kurumsal kurulum
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Hangi MCP onaylı
+- [Connectors](/wiki/araclar/connectors/) — Hazır alternatif
+- [Claude Desktop](/wiki/araclar/claude-desktop/) — MCP'nin yaşadığı uygulama
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Kurumsal kurulum
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Hangi MCP onaylı
 

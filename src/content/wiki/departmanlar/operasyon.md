@@ -128,8 +128,8 @@ Toplam süre: 25 dakika. Normal süreç: **asla yapılmaz** — "bir gün zaman 
 
 ## İlgili Sayfalar
 
-- [Skills](../yetenekler/skills/) — Operations plugin detayları
-- [Scheduled Tasks](../araclar/scheduled-tasks/) — Haftalık ops raporu otomasyonu
-- [Görsel ve Görüntü](../yetenekler/vision-image/) — Hasar fotoğrafından NCR üretimi
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — Süreç bilgilerini kalıcılaştırmak
+- [Skills](/wiki/yetenekler/skills/) — Operations plugin detayları
+- [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) — Haftalık ops raporu otomasyonu
+- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) — Hasar fotoğrafından NCR üretimi
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Süreç bilgilerini kalıcılaştırmak
 

@@ -81,7 +81,7 @@ Bağlantı Listesi sayfasında role göre önerilerin detayı var. Özet:
 
 MCP'yi anladıysanız:
 
-- [**Yetenekler**](../yetenekler/) — Connector'larla birlikte çalışan skill'ler, artifacts, agent'lar
-- [**Departmanlar**](../departmanlar/) — Rol bazlı connector uygulamaları
-- [**Cowork Modu**](../araclar/cowork-modu/) — Connector'ların yaşadığı ortam
+- [**Yetenekler**](/wiki/yetenekler/) — Connector'larla birlikte çalışan skill'ler, artifacts, agent'lar
+- [**Departmanlar**](/wiki/departmanlar/) — Rol bazlı connector uygulamaları
+- [**Cowork Modu**](/wiki/araclar/cowork-modu/) — Connector'ların yaşadığı ortam
 

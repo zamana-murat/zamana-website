@@ -14,12 +14,12 @@ lastUpdated: "2026-05-06"
 
 ## Önce — MCP Mi, Connector Mu?
 
-Resmî [Connector](../araclar/connectors/) varsa öncelik orada. MCP, connector'un karşılayamadığı senaryolarda devreye girer:
+Resmî [Connector](/wiki/araclar/connectors/) varsa öncelik orada. MCP, connector'un karşılayamadığı senaryolarda devreye girer:
 
 - Şirket içi sistem
 - Niş SaaS
 - Özel yapılandırma gerekli olduğunda
-- [Claude Desktop](../araclar/claude-desktop/) yerel kullanımda
+- [Claude Desktop](/wiki/araclar/claude-desktop/) yerel kullanımda
 
 [Bağlantı Listesi](baglanti-listesi/) sayfasında tüm seçenekler bir arada.
 
@@ -65,7 +65,7 @@ Web arama API'si.
 
 **Risk:** API maliyet sorgu sayısıyla artar.
 
-**Tavsiye:** Çoğu kullanıcı için Claude'un dahili [web araması](../araclar/web-arama/) yeterli — bu MCP genelde gereksiz.
+**Tavsiye:** Çoğu kullanıcı için Claude'un dahili [web araması](/wiki/araclar/web-arama/) yeterli — bu MCP genelde gereksiz.
 
 ### slack
 
@@ -73,13 +73,13 @@ Slack workspace erişimi.
 
 **Kullanım:** Mesaj okuma, kanal arama, DM yönetimi.
 
-**Karar:** Slack için resmi connector da var ([Slack ve Teams Entegrasyonu](../araclar/slack-teams-entegrasyon/)). MCP'ye sadece özel yapılandırma gerekiyorsa.
+**Karar:** Slack için resmi connector da var ([Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/)). MCP'ye sadece özel yapılandırma gerekiyorsa.
 
 ### memory
 
 Kalıcı bellek server'ı (filesystem üzerine kurulu).
 
-**Kullanım:** Claude'un sohbetler arası bilgi taşıması (Claude'un yerleşik [memory](../yetenekler/memory/)'sinden farklı, daha kontrollü).
+**Kullanım:** Claude'un sohbetler arası bilgi taşıması (Claude'un yerleşik [memory](/wiki/yetenekler/memory/)'sinden farklı, daha kontrollü).
 
 **Tavsiye:** İleri düzey kullanıcılar için. Çoğu kullanıcı yerleşik memory'ye yetinir.
 
@@ -148,23 +148,23 @@ Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edil
 - **CourtListener / Judicial APIs:** Yargı kararları aramak (ABD odaklı; Türkiye için karşılığı yok)
 - **Mevzuat MCP:** Türkiye mevzuat MCP'si henüz olgun değil — Claude'un dahili web araması daha pratik
 
-[Hukuk departmanı](../departmanlar/hukuk/) sayfasında alternatifler.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfasında alternatifler.
 
 ### Sağlık
 
-- Kurumsal hasta verisi MCP'leri: HIPAA / KVKK kısıtları nedeniyle Türkiye'de **özel sözleşmeyle** kurulur. [Sağlık](../departmanlar/saglik/) sayfası dikkate alınmalı.
+- Kurumsal hasta verisi MCP'leri: HIPAA / KVKK kısıtları nedeniyle Türkiye'de **özel sözleşmeyle** kurulur. [Sağlık](/wiki/departmanlar/saglik/) sayfası dikkate alınmalı.
 
 ### Finans / Muhasebe
 
 - **Logo / Mikro / Netsis:** Türkiye'nin yerli ERP sistemleri için resmî MCP yok; özel geliştirme gerekir
 - **QuickBooks / Xero:** Topluluk MCP'leri var, küçük işletmeler için
 
-[Finans departmanı](../departmanlar/finans/) sayfasında ek bağlam.
+[Finans departmanı](/wiki/departmanlar/finans/) sayfasında ek bağlam.
 
 ### Üretim
 
 - **MES / SCADA:** Çoğu zaman özel MCP geliştirme gerekir; standart MCP yok
-- [Üretim ve İmalat](../departmanlar/uretim-imalat/) sayfasında pratik.
+- [Üretim ve İmalat](/wiki/departmanlar/uretim-imalat/) sayfasında pratik.
 
 ## Önerilen Başlangıç Seti
 
@@ -217,7 +217,7 @@ Yenileme: Her çeyreğin son haftası
 Sahibi: BT Müdürü + AI Governance kurulu
 ```
 
-[Şirket içi politika](../temeller/sirket-ici-politika/) ve [BT departmanı](../departmanlar/bilgi-teknolojileri/) sayfaları bu listeyi politikaya bağlamayı detaylandırır.
+[Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ve [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfaları bu listeyi politikaya bağlamayı detaylandırır.
 
 ## Yeni MCP Değerlendirme Süreci
 
@@ -251,8 +251,8 @@ MCP ekosistemi 2025-2026'da hızla olgunlaşıyor:
 - [Kurulum Rehberi](kurulum-rehberi/) — Adım adım kurulum
 - [Güvenlik](guvenlik/) — Risk değerlendirmesi
 - [Bağlantı Listesi](baglanti-listesi/) — MCP + connector listesi
-- [Connectors](../araclar/connectors/) — Daha kolay alternatifler
-- [Claude Desktop](../araclar/claude-desktop/) — MCP kullanım ortamı
-- [BT Departmanı](../departmanlar/bilgi-teknolojileri/) — Kurumsal yapılandırma
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Onaylı liste şablonu
+- [Connectors](/wiki/araclar/connectors/) — Daha kolay alternatifler
+- [Claude Desktop](/wiki/araclar/claude-desktop/) — MCP kullanım ortamı
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Kurumsal yapılandırma
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Onaylı liste şablonu
 

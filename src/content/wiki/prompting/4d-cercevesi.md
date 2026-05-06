@@ -167,7 +167,7 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 - [Prompting Temel İlkeleri](temel-ilkeler/) — İyi bir prompt'un yapısı
 - [İleri Seviye Prompt Engineering](ileri-seviye/) — Zincirleme düşünme, yapılandırılmış çıktı
 - [Yaygın Prompting Hataları](yaygin-hatalar/) — Çoğu kişinin düştüğü tuzaklar
-- [Claude Nedir?](../temeller/claude-nedir/) — Çerçeveden önce temel kavram
+- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Çerçeveden önce temel kavram
 
 ## Resmi Kaynaklar
 

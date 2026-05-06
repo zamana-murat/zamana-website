@@ -32,7 +32,7 @@ Bir ürün ekleyeceksiniz. Hammaddeler, ölçüler, fotoğraflar var ama **satan
 - Bullet liste + akıcı paragraf birleşimi
 - Marketplace başına farklı uzunluk (Trendyol kısa, kendi site uzun)
 
-[Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) ile **"satan" örneklerinizi** Claude'a vererek tarzınızı öğretirsiniz.
+[Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile **"satan" örneklerinizi** Claude'a vererek tarzınızı öğretirsiniz.
 
 ### Çoklu Marketplace İçerik
 
@@ -44,7 +44,7 @@ Aynı ürün için Trendyol, Hepsiburada, Amazon TR varyasyonları. Karakter sı
 
 ### Ürün Özellik Tablosu
 
-Teknik özelliklerden müşteri-anlaşılır tablo: "Pamuk %95" → "Yumuşak, nefes alır kumaş" tarzı çeviri. [Çıktı Formatı](../prompting/cikti-formati/) sayfasında tablo yapımı detaylı.
+Teknik özelliklerden müşteri-anlaşılır tablo: "Pamuk %95" → "Yumuşak, nefes alır kumaş" tarzı çeviri. [Çıktı Formatı](/wiki/prompting/cikti-formati/) sayfasında tablo yapımı detaylı.
 
 ## Bölüm 2 — Müşteri Yorum Analizi
 
@@ -57,7 +57,7 @@ Aylık binlerce yorum geliyor. Çoğu okunmadı bile. Claude:
 - En sık geçen şikâyet konularını öne çıkarır
 - Memnun müşterilerin neyi övdüğünü çıkarır (pazarlama içeriği için altın)
 
-[Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) ile sınıflandırma kalitesi yükselir.
+[Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile sınıflandırma kalitesi yükselir.
 
 ### Trend Tespiti
 
@@ -96,7 +96,7 @@ Mobil app push mesajları — 60 karakter sınırı, hook + neden + aksiyon. Cla
 
 ### Rakip Analizi
 
-[Research mode](../yetenekler/research-mode/) ile rakip ürünlerin fiyat-özellik analizi. Sezonluk olarak çıkarın, fiyatlandırma kararlarınızı destekleyin.
+[Research mode](/wiki/yetenekler/research-mode/) ile rakip ürünlerin fiyat-özellik analizi. Sezonluk olarak çıkarın, fiyatlandırma kararlarınızı destekleyin.
 
 ### Fiyat Önerisi
 
@@ -104,7 +104,7 @@ Maliyet + rakip fiyat + pazar konumu → Claude fiyat aralığı önerir. Final 
 
 ### Sepet Terk Analizi
 
-Sepet terk verileriyle Claude'a sorun: hangi ürünlerde, hangi adımda, hangi sebeple. [Code Execution](../yetenekler/code-execution/) ile gerçek hesap.
+Sepet terk verileriyle Claude'a sorun: hangi ürünlerde, hangi adımda, hangi sebeple. [Code Execution](/wiki/yetenekler/code-execution/) ile gerçek hesap.
 
 ## Bölüm 5 — Müşteri Hizmetleri
 
@@ -152,7 +152,7 @@ Rakip büyük indirim açtı. Claude pazar koşulu analizi yapar, taktik öneril
 
 ### Senaryo 4: SKU Çoğaltma
 
-Bir ürün serisinin 20 yeni renk varyasyonu eklenecek. Her birinin açıklamasını Claude bir sohbette üretir, [Skills](../yetenekler/skills/) ile Excel'e dökülür, marketplace'lere yüklemeye hazır.
+Bir ürün serisinin 20 yeni renk varyasyonu eklenecek. Her birinin açıklamasını Claude bir sohbette üretir, [Skills](/wiki/yetenekler/skills/) ile Excel'e dökülür, marketplace'lere yüklemeye hazır.
 
 ## CLAUDE.md Tavsiyesi
 
@@ -178,13 +178,13 @@ E-ticaret çalışanı için temel:
 - Müşteri yorum yanıtlarında ad kullan, klişe açış yok
 ```
 
-[Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) sayfasında pazarlama şablonu var.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında pazarlama şablonu var.
 
 ## Kullanım Engelleri
 
 **Engel:** "Hep aynı şablon çıkıyor."
 
-**Çözüm:** [Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) ile en iyi 3-5 ürün açıklamanızı örnek verin. Claude tarzı taklit eder, monotonluk kalkar.
+**Çözüm:** [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile en iyi 3-5 ürün açıklamanızı örnek verin. Claude tarzı taklit eder, monotonluk kalkar.
 
 **Engel:** "Sahte iddia üretmiyor mu?"
 
@@ -204,9 +204,9 @@ Tek kişilik e-ticaret işletmesi için Claude'un değeri olağanüstü. 1 kişi
 - [Müşteri Hizmetleri](musteri-hizmetleri/) — Destek tarafı
 - [Satış Departmanı](satis/) — B2B perakende
 - [İhracat Departmanı](ihracat/) — Sınır ötesi e-ticaret
-- [Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) — Marka voice öğretme
-- [Code Execution](../yetenekler/code-execution/) — Yorum / satış analizi
-- [Research Mode](../yetenekler/research-mode/) — Rakip araştırma
-- [Skills](../yetenekler/skills/) — Excel, ürün listesi üretme
-- [Connectors](../araclar/connectors/) — Shopify, marketplace API entegrasyonu
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Marka voice öğretme
+- [Code Execution](/wiki/yetenekler/code-execution/) — Yorum / satış analizi
+- [Research Mode](/wiki/yetenekler/research-mode/) — Rakip araştırma
+- [Skills](/wiki/yetenekler/skills/) — Excel, ürün listesi üretme
+- [Connectors](/wiki/araclar/connectors/) — Shopify, marketplace API entegrasyonu
 

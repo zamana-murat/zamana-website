@@ -117,7 +117,7 @@ Aboneliği başlatmadan önce mali müşavirinize sormanız gereken sorular:
 4. *"USD ödemenin TL'ye çeviri kuralı (TCMB alış mı, satış mı, ödeme tarihinde mi)?"*
 5. *"Yıl sonu beyan ve revizede özel bir not düşmemiz gereken bir şey var mı?"*
 
-[Finans departmanı](../departmanlar/finans/) sayfası finans birimi açısından geniş resmi verir.
+[Finans departmanı](/wiki/departmanlar/finans/) sayfası finans birimi açısından geniş resmi verir.
 
 ## Şirket Politikası Tavsiyesi
 
@@ -142,6 +142,6 @@ Sadece kayıt disiplinini doğru tutmak gerekir. [Yaygın İtirazlar](itirazlar/
 - [Takım ve Admin](takim-ve-admin/) — Team / Enterprise plan faturalandırma farkı
 - [Yaygın İtirazlar](itirazlar/) — Finans direktörü itirazlarına detay
 - [Şirket İçi Politika](sirket-ici-politika/) — Ödeme prosedürü
-- [Finans Departmanı](../departmanlar/finans/) — Finans birimi için Claude kullanımı
+- [Finans Departmanı](/wiki/departmanlar/finans/) — Finans birimi için Claude kullanımı
 - [Gizlilik ve KVKK](gizlilik-kvkk/) — Veri tarafı (vergi tarafı değil)
 

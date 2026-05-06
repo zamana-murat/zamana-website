@@ -82,7 +82,7 @@ Yaygın yanlış anlaşılma: "AI'ya verilen her şey eğitimde kullanılır." B
 Üç seviye entegrasyon var:
 
 1. **Hazır connector'lar** — Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot ve 30+ servis. Tek tıkla, OAuth ile, IT müdahalesi minimum.
-2. **API'si olmayan eski sistemler** — [Computer Use](../yetenekler/computer-use/) ile Claude ekrandan kullanır (Logo, Netsis, eski ERP'ler için).
+2. **API'si olmayan eski sistemler** — [Computer Use](/wiki/yetenekler/computer-use/) ile Claude ekrandan kullanır (Logo, Netsis, eski ERP'ler için).
 3. **Özel şirket içi sistemler** — MCP protokolü açık standarttır, IT ekibiniz veya entegrasyon ortağınız özel connector yazabilir.
 
 Türkiye'deki orta ölçekli şirketlerin **%90'ı** için birinci seviye yeterli.
@@ -117,7 +117,7 @@ Detay: [Gizlilik ve KVKK](gizlilik-kvkk/) — sektörel ek bölümü avukatlar i
 
 **Cevap:**
 
-**Ehliyetli profesyonel.** Bu pazarlık dışı bir kuraldır, [4D Çerçevesi](../prompting/4d-cercevesi/)'nin D4 (Diligence, Sorumluluk) boyutunda yazılıdır.
+**Ehliyetli profesyonel.** Bu pazarlık dışı bir kuraldır, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin D4 (Diligence, Sorumluluk) boyutunda yazılıdır.
 
 Claude hukuki metinler için **süper hızlı ilk-taslak yazıcıdır**. Avukat her kelimeyi inceler, imzasını atar, sorumluluğu üstlenir. Bu "Claude kullanıyoruz o zaman iş rahat" değil, "Claude sayesinde avukat saatlerini yazım yerine yargı ve değerlendirmeye ayırıyor" demektir.
 
@@ -283,5 +283,5 @@ Bu tasarım benimsenmediğinde teknoloji adaptasyonu büyük olasılıkla sönü
 - [Claude Planları](planlar/) — Maliyet ve ROI detayı
 - [Gizlilik ve KVKK](gizlilik-kvkk/) — Hukuki/güvenlik itirazlarının derinliği
 - [Claude'un Sınırları](sinirlamalar/) — Ne yapamaz dürüstçe
-- [4D Çerçevesi](../prompting/4d-cercevesi/) — D4 Diligence — sorumluluk
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — D4 Diligence — sorumluluk
 

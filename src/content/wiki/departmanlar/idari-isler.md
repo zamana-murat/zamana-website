@@ -122,8 +122,8 @@ Toplam süre: 35 dakika. Normal süreç: 2-3 saat (ertesi gün).
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Örnekleri](../claude-md/ornekler/) — Yönetici asistanı için hazır CLAUDE.md
-- [Scheduled Tasks](../araclar/scheduled-tasks/) — Günlük brifing otomasyonu
+- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/) — Yönetici asistanı için hazır CLAUDE.md
+- [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) — Günlük brifing otomasyonu
 - [Liderlik ve Yönetim](liderlik/) — Yönetici tarafındaki Claude kullanımı
-- [Görsel ve Görüntü](../yetenekler/vision-image/) — Kartvizit / fiş / tahta notları
+- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) — Kartvizit / fiş / tahta notları
 

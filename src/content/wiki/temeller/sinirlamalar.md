@@ -152,7 +152,7 @@ Bu tek cümleyi unutursanız tüm sınırları unutabilirsiniz.
 
 Önemli bir şeyde — sözleşme, finansal karar, hukuki görüş, tıbbi tavsiye, İK aksiyonu — Claude ilk taslağı üretir ve doğru soruları sorar. **Nihai kararı** her zaman o mesleğin ehliyetli profesyoneli verir ve sorumluluğu taşır.
 
-[4D Çerçevesi](../prompting/4d-cercevesi/) içindeki **Diligence** (Sorumluluk) boyutu bu kuralın kavramsal adıdır.
+[4D Çerçevesi](/wiki/prompting/4d-cercevesi/) içindeki **Diligence** (Sorumluluk) boyutu bu kuralın kavramsal adıdır.
 
 ## Pratik Kontrol Listesi
 
@@ -170,7 +170,7 @@ Son soru en önemlisidir. Cevap "hayır"sa, geri dönün, iyileştirin, tekrar s
 ## İlgili Sayfalar
 
 - [Claude Nedir?](claude-nedir/) — Temel kavram
-- [4D Çerçevesi](../prompting/4d-cercevesi/) — Diligence (Sorumluluk) boyutu
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Diligence (Sorumluluk) boyutu
 - [Gizlilik ve KVKK](gizlilik-kvkk/) — Veri sınırları ve uyumluluk
-- [Yaygın Prompting Hataları](../prompting/yaygin-hatalar/) — Sınırları zorlayan prompt biçimleri
+- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — Sınırları zorlayan prompt biçimleri
 

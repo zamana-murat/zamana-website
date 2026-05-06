@@ -23,9 +23,9 @@ Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktası
 
 1. claude.ai'a üye olmak
 2. [Pro planı](planlar/) satın almak
-3. [Claude Desktop](../araclar/claude-desktop/)'ı indirmek ve kurmak
+3. [Claude Desktop](/wiki/araclar/claude-desktop/)'ı indirmek ve kurmak
 4. Workspace klasörü oluşturmak
-5. [Cowork modunu](../araclar/cowork-modu/) aktifleştirmek
+5. [Cowork modunu](/wiki/araclar/cowork-modu/) aktifleştirmek
 6. (Bonus) Ek yazılımlar — Chrome, basit editör
 
 ---
@@ -49,7 +49,7 @@ Başlamadan önce bilgisayarınız uygun mu kontrol edelim. Uygun değilse Claud
 
 - **8 GB RAM:** Cowork mod yavaş çalışır, sandbox kod çalıştırma takılır. Çalışır ama sinir bozucu.
 - **HDD (SSD değil):** Workspace klasörü erişimi yavaş, Claude dosyalarınızı uzun sürede okur.
-- **Eski işlemci:** Çoklu [skill](../yetenekler/skills/) aynı anda çalıştırılırken bilgisayar zorlanır.
+- **Eski işlemci:** Çoklu [skill](/wiki/yetenekler/skills/) aynı anda çalıştırılırken bilgisayar zorlanır.
 - **VPN'li ofis ağı:** Kurumsal VPN bazen Claude trafiğini engeller. (IT ile konuşun.)
 
 **Donanım yetersizse:** Önce donanımı yükselten — sonra kuruluma geç. Kötü donanımda kurmaya çalışmak boşa zaman.
@@ -127,13 +127,13 @@ Plan listesini görürsünüz: **Free / Pro / Max 5x / Max 20x / Team / Enterpri
 
 **🚀 İlk ay yoğun keşif yapacaksanız → Max 5x ($100/ay)**
 
-Yeni bir kullanıcı ilk ayda ciddi kullanım yapar: [connector](../mcp/baglanti-listesi/) kurulumu, skill denemeleri, gerçek iş çıktıları, uzun belge testleri. Pro'nun ($20) kullanım limiti bu ritimde **birkaç saatte** dolar; "çalışmıyor" yanlış izlenimi oluşur ve değer kaybolur. Max 5x bu sürtünmeyi ortadan kaldırır.
+Yeni bir kullanıcı ilk ayda ciddi kullanım yapar: [connector](/wiki/mcp/baglanti-listesi/) kurulumu, skill denemeleri, gerçek iş çıktıları, uzun belge testleri. Pro'nun ($20) kullanım limiti bu ritimde **birkaç saatte** dolar; "çalışmıyor" yanlış izlenimi oluşur ve değer kaybolur. Max 5x bu sürtünmeyi ortadan kaldırır.
 
 Plan listesinde **Max 5x'e** tıklayın → "Subscribe to Max" / "Upgrade".
 
 **📖 Yavaş tempoda öğrenmeye başladıysanız → Pro ($20/ay)**
 
-Pro, Cowork modu dahil tüm temel özelliklere erişim verir. [Sonnet 4.6](modeller/), plugin'ler, connector'lar, [scheduled tasks](../araclar/scheduled-tasks/) — hepsi Pro'da çalışır. Kendi tempoda öğrenen biri için ilk başta yeterlidir.
+Pro, Cowork modu dahil tüm temel özelliklere erişim verir. [Sonnet 4.6](modeller/), plugin'ler, connector'lar, [scheduled tasks](/wiki/araclar/scheduled-tasks/) — hepsi Pro'da çalışır. Kendi tempoda öğrenen biri için ilk başta yeterlidir.
 
 Plan listesinde **Pro'ya** tıklayın → "Subscribe to Pro" / "Upgrade".
 
@@ -195,7 +195,7 @@ claude.ai/download
 - **Windows** — `.exe` dosyası iner (~100-150 MB)
 - **macOS** — `.dmg` dosyası iner
 
-> **Linux:** Resmi destek yok. Linux kullanıyorsanız **[Claude.ai web arayüzü](../araclar/claude-chat/)** ile devam edin. Cowork'ün tüm özellikleri olmasa da çoğu işi yapar.
+> **Linux:** Resmi destek yok. Linux kullanıyorsanız **[Claude.ai web arayüzü](/wiki/araclar/claude-chat/)** ile devam edin. Cowork'ün tüm özellikleri olmasa da çoğu işi yapar.
 
 ### 3.3 İndirme
 
@@ -306,7 +306,7 @@ Claude Desktop'ın **sol üst köşesinde, 3 küçük ikon** şeklinde sekmeler 
 
 **Ortadaki Cowork ikonuna tıklayın.**
 
-> [Projects](../araclar/projects/) artık ayrı bir sekme değil — Cowork ve Chats içinde alt seçenek olarak yer alıyor.
+> [Projects](/wiki/araclar/projects/) artık ayrı bir sekme değil — Cowork ve Chats içinde alt seçenek olarak yer alıyor.
 
 ### 7.2 İlk Açılış — "Get Started"
 
@@ -342,7 +342,7 @@ Claude listeleyecek: `projeler/, raporlar/, arsiv/, prompts/`. Bu listeyi görü
 
 ## Adım 8: CLAUDE.md Başlangıç Dosyası
 
-Claude'un sizi her oturumda yeniden tanımak zorunda kalmaması için workspace kök klasörüne **[CLAUDE.md](../claude-md/nedir/)** adlı bir dosya koymalıyız. Bu dosya Claude'un kalıcı hafızasıdır.
+Claude'un sizi her oturumda yeniden tanımak zorunda kalmaması için workspace kök klasörüne **[CLAUDE.md](/wiki/claude-md/nedir/)** adlı bir dosya koymalıyız. Bu dosya Claude'un kalıcı hafızasıdır.
 
 ### 8.1 Dosyayı Yaratın
 
@@ -380,7 +380,7 @@ Dosyayı bir editör ile açın (Notepad veya TextEdit yeterli) ve şunu yapış
 
 Kaydedin. Bu kadar yeterli — zamanla genişletirsiniz.
 
-[CLAUDE.md Nasıl Yazılır?](../claude-md/nasil-yazilir/) sayfasında detaylı şablon var.
+[CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) sayfasında detaylı şablon var.
 
 ### 8.3 Test
 
@@ -476,9 +476,9 @@ Kurulum tamam. Artık Claude Desktop ve Cowork'ü kullanabiliyorsunuz. Ama şimd
 ## İlgili Sayfalar
 
 - [İlk 7 Gün Rehberi](ilk-7-gun/) — Kurulum sonrası ilk hafta
-- [Claude Desktop](../araclar/claude-desktop/) — Uygulama detayları
-- [Cowork Modu](../araclar/cowork-modu/) — Cowork'ün ne olduğu
-- [CLAUDE.md Nasıl Yazılır?](../claude-md/nasil-yazilir/) — Hafıza dosyası şablonu
+- [Claude Desktop](/wiki/araclar/claude-desktop/) — Uygulama detayları
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Cowork'ün ne olduğu
+- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Hafıza dosyası şablonu
 - [Claude Planları](planlar/) — Plan detayları, Pro → Max upgrade mantığı
 - [Gizlilik ve KVKK](gizlilik-kvkk/) — IT için kurumsal kurulum gereksinimleri
 

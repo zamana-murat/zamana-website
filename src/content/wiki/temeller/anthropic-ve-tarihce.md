@@ -70,8 +70,8 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Mart 2023 | **Claude 1** | İlk halka açık sürüm |
 | Temmuz 2023 | **Claude 2** | Daha uzun bağlam, daha iyi muhakeme |
 | Mart 2024 | **Claude 3 (Opus / Sonnet / Haiku)** | Üç katmanlı isimlendirme; görsel anlama |
-| Haziran 2024 | **Claude 3.5 Sonnet** | Orta seviye, üst seviyeyi geride bıraktı; [Artifacts](../yetenekler/artifacts/) tanıtıldı |
-| Ekim 2024 | **Claude 3.5 Sonnet v2** | [Computer Use](../yetenekler/computer-use/) — bilgisayar arayüzü kontrolü |
+| Haziran 2024 | **Claude 3.5 Sonnet** | Orta seviye, üst seviyeyi geride bıraktı; [Artifacts](/wiki/yetenekler/artifacts/) tanıtıldı |
+| Ekim 2024 | **Claude 3.5 Sonnet v2** | [Computer Use](/wiki/yetenekler/computer-use/) — bilgisayar arayüzü kontrolü |
 | Şubat 2025 | **Claude 3.7 Sonnet** | Genişletilmiş düşünme (extended thinking) — adım adım muhakeme |
 | Mayıs 2025 | **Claude 4** | Profesyonel kod üretiminde sıçrama; Claude Code günlük araç oldu |
 | Şubat 2026 | **Claude Sonnet 4.6** | Verimlilik kıyaslamalarında zirve |

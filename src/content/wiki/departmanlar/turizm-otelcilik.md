@@ -31,7 +31,7 @@ Misafir İngilizce, Almanca, Rusça, Arapça, Çince, Fransızca yazıyor. Çal�
 - Otel marka voice'unda
 - Hızlı yanıt için tek prompt
 
-[Voice Mode](../araclar/voice-mode/) ile dikteyle çoklu dilde yanıt da mümkün.
+[Voice Mode](/wiki/araclar/voice-mode/) ile dikteyle çoklu dilde yanıt da mümkün.
 
 ### Önemli Kültürel Nüanslar
 
@@ -79,7 +79,7 @@ Aylık tüm yorumları Claude'a verirsiniz, içgörü çıkarır:
 - Yeni trend (geçen ay yoktu, bu ay artıyor)
 - Müşteri profili kayması (örn. "Avrupalı düşmüş, MENA artmış")
 
-[Code Execution](../yetenekler/code-execution/) ile sayısal trend grafikleri de.
+[Code Execution](/wiki/yetenekler/code-execution/) ile sayısal trend grafikleri de.
 
 ### Yorum Toplama Stratejisi
 
@@ -178,7 +178,7 @@ Bir olumsuz yorum viral oldu, yeni rezervasyonlar düştü. Claude:
 
 Yarın London-merkezli büyük tour operator ile toplantı. Claude:
 
-- Şirket araştırması ([Research Mode](../yetenekler/research-mode/))
+- Şirket araştırması ([Research Mode](/wiki/yetenekler/research-mode/))
 - Geçmiş yazışmaları toparla, gelinen son durumu özetle
 - Toplantıda gündeme alınması gereken 5 madde
 - Olası sorulara hazır cevap
@@ -225,11 +225,11 @@ Otel iletişim sorumlusu için temel yapı:
 
 **Engel:** "Otelimizin marka sesi var, Claude tutturamaz."
 
-**Çözüm:** [CLAUDE.md](../claude-md/nedir/) + [Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) ile en iyi 5-10 yazışma örneğinizi Claude'a verin → tarz öğrenir.
+**Çözüm:** [CLAUDE.md](/wiki/claude-md/nedir/) + [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile en iyi 5-10 yazışma örneğinizi Claude'a verin → tarz öğrenir.
 
 **Engel:** "KVKK + GDPR (AB misafirleri) karmaşık."
 
-**Çözüm:** [Şirket içi politika](../temeller/sirket-ici-politika/) ile veri sınıfı kuralları net. Misafir kişisel verisi anonimleştirilerek girilir.
+**Çözüm:** [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ile veri sınıfı kuralları net. Misafir kişisel verisi anonimleştirilerek girilir.
 
 ## Sezon Dışı Strateji
 
@@ -241,8 +241,8 @@ Kasım-Mart sezon dışı. Çoğu otel personeli azaltır, içerik üretimi tama
 - [Pazarlama Departmanı](pazarlama/) — Pazarlama derinliği
 - [Satış Departmanı](satis/) — B2B acente satışı
 - [İhracat Departmanı](ihracat/) — Yurt dışı pazarlama (turizm de bir tür ihracattır)
-- [Voice Mode](../araclar/voice-mode/) — Sesle çok dilli yazma
-- [Few-Shot Örnekleme](../prompting/few-shot-ornekleme/) — Marka voice
-- [Research Mode](../yetenekler/research-mode/) — B2B araştırma
-- [Code Execution](../yetenekler/code-execution/) — Yorum / satış analizi
+- [Voice Mode](/wiki/araclar/voice-mode/) — Sesle çok dilli yazma
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Marka voice
+- [Research Mode](/wiki/yetenekler/research-mode/) — B2B araştırma
+- [Code Execution](/wiki/yetenekler/code-execution/) — Yorum / satış analizi
 

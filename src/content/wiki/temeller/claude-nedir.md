@@ -59,7 +59,7 @@ Aynı soruyu tersine çevirdiğimizde iş dünyası için değerli olan şeyler 
 - **Yazma motorudur.** İlk taslak, yeniden yazım, çeviri, ton ayarlaması — yazı işinin mekanik kısmını devralır. Satış teklifinden hukuki memoya, basın bültenden toplantı tutanağına.
 - **Belge işlemcisidir.** 200 sayfalık bir raporu 10 dakikada özetler. Uzun sözleşmelerden belirli tipte maddeleri çıkarır. İki belgeyi karşılaştırır, farkları listeler.
 - **Otomasyon katmanıdır.** Cowork modunda komut çalıştırır, dosyalarınızı yönetir, dış araçları (Slack, Google Drive, CRM) çağırır. Kod yazmayı bilmeyen çalışanlar bile Claude üzerinden bu işleri yapabilir.
-- **Rol bilincine sahip bir meslektaştır.** Doğru yapılandırılmış bir [CLAUDE.md](../claude-md/nedir/) ile Claude, ekibinizin bir üyesi gibi davranır: şirketin kim olduğunu, sizin ne yaptığınızı, tonunuzu ve sınırlarınızı bilir.
+- **Rol bilincine sahip bir meslektaştır.** Doğru yapılandırılmış bir [CLAUDE.md](/wiki/claude-md/nedir/) ile Claude, ekibinizin bir üyesi gibi davranır: şirketin kim olduğunu, sizin ne yaptığınızı, tonunuzu ve sınırlarınızı bilir.
 
 ## Claude Türkçeyi Ne Kadar İyi Anlar?
 

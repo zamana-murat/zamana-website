@@ -104,7 +104,7 @@ Geriye kalan **Computer Use**, **Agents** ve **Context** ise belirli durumlarda 
 
 Yetenekleri anladıysanız:
 
-- [**MCP ve Eklentiler**](../mcp/) — Claude'u şirket araçlarınıza bağlayan sistem
-- [**Departmanlar**](../departmanlar/) — Yetenekleri rol bazlı gerçek iş senaryolarına uygulamak
-- [**Cowork Modu**](../araclar/cowork-modu/) — Tüm yeteneklerin yaşadığı ortam
+- [**MCP ve Eklentiler**](/wiki/mcp/) — Claude'u şirket araçlarınıza bağlayan sistem
+- [**Departmanlar**](/wiki/departmanlar/) — Yetenekleri rol bazlı gerçek iş senaryolarına uygulamak
+- [**Cowork Modu**](/wiki/araclar/cowork-modu/) — Tüm yeteneklerin yaşadığı ortam
 

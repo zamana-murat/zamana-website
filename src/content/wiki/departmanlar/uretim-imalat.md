@@ -32,7 +32,7 @@ Vardiya amiri vardiya sonunda **30-60 dakika** rapor yazıyor. Claude'la bu sür
 - Vardiya içi olaylar ve aksiyon
 - Sonraki vardiyaya devir notları
 
-[Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/)'nde operasyon şablonu var.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'nde operasyon şablonu var.
 
 ### Haftalık / Aylık Üretim Raporu
 
@@ -40,7 +40,7 @@ Vardiya raporlarını birleştirip yönetim için aylık rapor üretir. Trend an
 
 ### OEE / Verim Analizi
 
-OEE (Overall Equipment Effectiveness) verilerini Claude analiz eder, **kayıp kategorileri** bazında kırılım yapar. [Code Execution](../yetenekler/code-execution/) ile gerçek hesap, halüsinasyon yok.
+OEE (Overall Equipment Effectiveness) verilerini Claude analiz eder, **kayıp kategorileri** bazında kırılım yapar. [Code Execution](/wiki/yetenekler/code-execution/) ile gerçek hesap, halüsinasyon yok.
 
 ## Bölüm 2 — Kalite ve Belgelendirme
 
@@ -107,7 +107,7 @@ Sipariş havuzu + kapasite + vardiya verisi → Claude haftalık çizelge öneri
 
 ### Bottleneck Analizi
 
-Üretim verilerinden darboğaz tespiti. Hangi makine, hangi vardiya, hangi ürün — Claude hipotez üretir, [Code Execution](../yetenekler/code-execution/) ile doğrular.
+Üretim verilerinden darboğaz tespiti. Hangi makine, hangi vardiya, hangi ürün — Claude hipotez üretir, [Code Execution](/wiki/yetenekler/code-execution/) ile doğrular.
 
 ## Bölüm 5 — İSG (İş Sağlığı Güvenliği)
 
@@ -158,7 +158,7 @@ Yeni ürün için FMEA çalıştayı yapılacak. Claude benzer ürünlerin geçm
 
 ## CLAUDE.md Tavsiyesi
 
-Üretim müdürü için CLAUDE.md temel yapısı [Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) sayfasında. Eklenmesi yararlı:
+Üretim müdürü için CLAUDE.md temel yapısı [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında. Eklenmesi yararlı:
 
 ```markdown
 ## Tesis Bilgisi
@@ -190,7 +190,7 @@ Yeni ürün için FMEA çalıştayı yapılacak. Claude benzer ürünlerin geçm
 
 **Engel:** "Üretim verim hassas, dışarı vermeyim."
 
-**Çözüm:** [Şirket içi politika](../temeller/sirket-ici-politika/) ile veri sınıflandırma yapılır. Production formula girilmez, ama OEE rakamları şirket için kritik değerli kalır.
+**Çözüm:** [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ile veri sınıflandırma yapılır. Production formula girilmez, ama OEE rakamları şirket için kritik değerli kalır.
 
 ## Bireysel Kullanım — Üretim Mühendisi
 
@@ -202,7 +202,7 @@ Tek bir üretim mühendisi de ciddi değer alabilir, ekip kurulumuna gerek yok.
 - [İhracat Departmanı](ihracat/) — İhracat odaklı üreticiler
 - [Satınalma Departmanı](satinalma/) — Tedarikçi yönetimi
 - [BT Departmanı](bilgi-teknolojileri/) — Üretim sistemleri (MES, SCADA) entegrasyonu
-- [Code Execution](../yetenekler/code-execution/) — KPI analizi ve grafik
-- [Skills](../yetenekler/skills/) — .xlsx ve .docx rapor üretme
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Veri sınıflandırma
+- [Code Execution](/wiki/yetenekler/code-execution/) — KPI analizi ve grafik
+- [Skills](/wiki/yetenekler/skills/) — .xlsx ve .docx rapor üretme
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Veri sınıflandırma
 

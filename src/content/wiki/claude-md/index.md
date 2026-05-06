@@ -76,7 +76,7 @@ Kullandıkça büyür. Büyüdükçe Claude daha akıllı hale gelir — ve bu a
 
 CLAUDE.md'yi anladıysanız:
 
-- [**Prompting**](../prompting/) — CLAUDE.md'nin üzerine iyi promptla Claude'u gerçekten kullanışlı yapmak
-- [**Cowork Modu**](../araclar/cowork-modu/) — CLAUDE.md'nin her oturumda okunduğu ortam
-- [**Yetenekler**](../yetenekler/) — Skills, Artifacts, Agents — CLAUDE.md'nin üzerine inşa edilecek özellikler
+- [**Prompting**](/wiki/prompting/) — CLAUDE.md'nin üzerine iyi promptla Claude'u gerçekten kullanışlı yapmak
+- [**Cowork Modu**](/wiki/araclar/cowork-modu/) — CLAUDE.md'nin her oturumda okunduğu ortam
+- [**Yetenekler**](/wiki/yetenekler/) — Skills, Artifacts, Agents — CLAUDE.md'nin üzerine inşa edilecek özellikler
 

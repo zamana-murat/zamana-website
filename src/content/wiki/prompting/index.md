@@ -94,7 +94,7 @@ Bu kütüphane Claude öğrenme sürecinin en somut kalıntısıdır.
 
 Prompting'i okuduysanız:
 
-- [**Yetenekler**](../yetenekler/) — Promptların üstüne Skills, Artifacts, Agents
-- [**CLAUDE.md**](../claude-md/) — Her prompttan önce yüklenen kalıcı bağlam
-- [**Departmanlar**](../departmanlar/) — Rolünüze göre gerçek prompt örnekleri
+- [**Yetenekler**](/wiki/yetenekler/) — Promptların üstüne Skills, Artifacts, Agents
+- [**CLAUDE.md**](/wiki/claude-md/) — Her prompttan önce yüklenen kalıcı bağlam
+- [**Departmanlar**](/wiki/departmanlar/) — Rolünüze göre gerçek prompt örnekleri
 

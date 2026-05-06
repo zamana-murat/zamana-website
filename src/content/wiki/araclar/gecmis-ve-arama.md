@@ -17,7 +17,7 @@ Bu sayfa Claude'un geçmiş yönetim özelliklerini, arama mantığını ve gün
 
 Claude'da yaptığınız her sohbet otomatik olarak hesabınıza bağlı kalır. Sol panelde tarihe göre sıralı görürsünüz. Bir sohbete tıklayın → tam metniyle açılır, oradan devam edebilirsiniz.
 
-**Saklama yeri:** Anthropic'in sunucularında, hesabınızla ilişkili olarak. KVKK boyutu için [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfasına bakın.
+**Saklama yeri:** Anthropic'in sunucularında, hesabınızla ilişkili olarak. KVKK boyutu için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 **Saklama süresi:** Plan ve hesap ayarlarına bağlı. Çoğu kullanıcı için süresizdir, siz silmedikçe kalır. Enterprise/Team planlarında yöneticinin tanımladığı saklama politikası geçerli olabilir.
 
@@ -61,7 +61,7 @@ Bir sohbeti silmek isterseniz: sohbetin yan menüsündeki **Delete** seçeneği.
 - Hassas içerik (kişisel veri, müşteri sırrı) → işiniz biter bitmez sil
 - Değerli üretim (kaliteli prompt, faydalı çıktı) → silmeyin, [Projects](projects/)'e taşıyın
 
-[Şirket İçi Politika](../temeller/sirket-ici-politika/) sayfasında saklama politikası şablonu var.
+[Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfasında saklama politikası şablonu var.
 
 ## Dışa Aktarma (Export)
 
@@ -110,7 +110,7 @@ Claude geçmişiniz hesaba bağlıdır. Web, [Claude Desktop](claude-desktop/) v
 
 - [Projects](projects/) — Sohbetleri organize etmenin doğru yolu
 - [Claude Chat](claude-chat/) — Geçmiş bu arayüzde tutulur
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Veri saklama hakları
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Saklama politikası şablonu
-- [Memory Yönetimi](../claude-md/memory-yonetimi/) — Geçmişten ayrı, kalıcı bellek
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri saklama hakları
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Saklama politikası şablonu
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — Geçmişten ayrı, kalıcı bellek
 

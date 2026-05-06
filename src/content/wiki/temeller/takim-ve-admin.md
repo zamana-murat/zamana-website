@@ -75,7 +75,7 @@ Team ve Enterprise planda **admin** rolü olan kullanıcı, claude.ai → **Admi
 
 - Aktif kullanıcı sayısı, son giriş tarihleri
 - Toplam mesaj/sorgu hacmi (özet düzeyinde)
-- Hangi özellikler kullanılıyor (Cowork, [Projects](../araclar/projects/), [Connectors](../araclar/connectors/))
+- Hangi özellikler kullanılıyor (Cowork, [Projects](/wiki/araclar/projects/), [Connectors](/wiki/araclar/connectors/))
 
 **Önemli sınır:** Admin **kullanıcıların sohbet içeriğini okuyamaz** (kişisel gizlilik korunur). Sadece kullanım metriklerini görür. Bu, hem yasal hem de Anthropic'in tasarım tercihidir.
 
@@ -91,8 +91,8 @@ Team ve Enterprise planda **admin** rolü olan kullanıcı, claude.ai → **Admi
 Enterprise planda admin şu politikaları organizasyon çapında uygulayabilir:
 
 - **Saklama süresi** — örn. tüm sohbetler 90 gün sonra otomatik silinsin
-- **[Connectors](../araclar/connectors/) izinleri** — hangi connector kullanılabilir, hangisi yasak
-- **[MCP](../mcp/nedir/) izinleri** — özel MCP server'lar onaylı listede mi
+- **[Connectors](/wiki/araclar/connectors/) izinleri** — hangi connector kullanılabilir, hangisi yasak
+- **[MCP](/wiki/mcp/nedir/) izinleri** — özel MCP server'lar onaylı listede mi
 - **Sohbet paylaşma izni** — kullanıcılar dışarı public link üretebilsin mi
 - **Eğitim için veri kullanma** — zaten varsayılan olarak kapalı, ama Enterprise sözleşmesiyle pekiştirilir
 
@@ -105,7 +105,7 @@ Enterprise planda **SAML 2.0** üzerinden SSO entegrasyonu var. Bu:
 - Çalışan ayrılınca SSO'dan kapatınca Claude erişimi de kapanır
 - IT'nin tek bir noktadan kontrol etmesini sağlar
 
-[BT departmanı](../departmanlar/bilgi-teknolojileri/) sayfası SSO ve Enterprise IT entegrasyonunu detaylandırır.
+[BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası SSO ve Enterprise IT entegrasyonunu detaylandırır.
 
 ## SCIM — Otomatik Kullanıcı Sağlama
 
@@ -135,7 +135,7 @@ Enterprise planda Anthropic ile **Data Processing Agreement (DPA)** imzalanabili
 
 Türkiye'deki KVKK kapsamında, **kişisel veri işleyen üçüncü taraf** ile sözleşme yapma yükümlülüğü vardır. DPA bu yükümlülüğün karşılığıdır.
 
-[Gizlilik ve KVKK](gizlilik-kvkk/) ve [Hukuk departmanı](../departmanlar/hukuk/) sayfaları bu boyutu derinleştirir.
+[Gizlilik ve KVKK](gizlilik-kvkk/) ve [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfaları bu boyutu derinleştirir.
 
 ## Geçiş Senaryoları
 
@@ -168,8 +168,8 @@ Yeni bir çalışan organizasyona katıldığında:
 
 1. **Davet:** Admin paneli üzerinden e-posta davet
 2. **İlk giriş:** Çalışan hesabı kabul eder, Claude'a girer
-3. **Bireysel CLAUDE.md:** Kendi rol ve sorumluluklarını tanımlayan [CLAUDE.md](../claude-md/nedir/) yazsın
-4. **Team CLAUDE.md (varsa):** Şirket genelinde paylaşılan kural seti uygulansın ([Takım CLAUDE.md](../claude-md/takim-claude-md/))
+3. **Bireysel CLAUDE.md:** Kendi rol ve sorumluluklarını tanımlayan [CLAUDE.md](/wiki/claude-md/nedir/) yazsın
+4. **Team CLAUDE.md (varsa):** Şirket genelinde paylaşılan kural seti uygulansın ([Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/))
 5. **Eğitim:** [İlk 7 Gün](ilk-7-gun/) rehberini takip etsin
 6. **Politika imzası:** [Şirket İçi Politika](sirket-ici-politika/) belgesini okusun ve onaylasın
 
@@ -179,7 +179,7 @@ Yeni bir çalışan organizasyona katıldığında:
 - [Fatura ve KDV](fatura-ve-kdv/) — Türkiye'de muhasebe
 - [Şirket İçi Politika](sirket-ici-politika/) — Politika şablonu
 - [Gizlilik ve KVKK](gizlilik-kvkk/) — Yasal uyum
-- [BT Departmanı](../departmanlar/bilgi-teknolojileri/) — IT açısından kurulum
-- [Hukuk Departmanı](../departmanlar/hukuk/) — DPA ve sözleşmeler
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — IT açısından kurulum
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — DPA ve sözleşmeler
 - [Yaygın İtirazlar](itirazlar/) — "Bu yatırım büyük gelir mi" itirazına cevap
 

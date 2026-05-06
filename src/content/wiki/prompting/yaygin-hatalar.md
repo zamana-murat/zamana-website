@@ -61,12 +61,12 @@ Claude ilk cevabı nadir mükemmel verir. İlk çıktı çoğunlukla %70'tir. Ka
 > *"TÜSİAD başkanı kim?"*
 
 **Neden başarısız olur:**
-Claude bilgi tabanı Mayıs 2025'te kesildi (bkz: [Sınırlamalar](../temeller/sinirlamalar/)). Güncel olmayan bir isim verebilir — **emin bir tonla**. Buna "halüsinasyon" denir.
+Claude bilgi tabanı Mayıs 2025'te kesildi (bkz: [Sınırlamalar](/wiki/temeller/sinirlamalar/)). Güncel olmayan bir isim verebilir — **emin bir tonla**. Buna "halüsinasyon" denir.
 
 **Düzeltme:**
 Claude'u düşünme ortağı olarak görün, gerçek arama motoru olarak değil.
 
-- Güncel bilgi için [Web Search skill'ini](../yetenekler/skills/) kullanın
+- Güncel bilgi için [Web Search skill'ini](/wiki/yetenekler/skills/) kullanın
 - Veya bilgiyi siz manuel olarak yapıştırın
 - Ya da "X kim?" yerine "Bana X hakkında bildiklerini söyle, son tarih neydi?" diye sorun
 
@@ -179,5 +179,5 @@ Bu haftalık refleksiyon, prompting becerisini sıradan kullanıcı seviyesinden
 - [Prompting Temel İlkeleri](temel-ilkeler/) — Beş bileşen yapısı
 - [İleri Seviye Prompt Engineering](ileri-seviye/) — XML tag'leri, few-shot prompting
 - [4D Çerçevesi](4d-cercevesi/) — Description ve Discernment kavramları
-- [Claude'un Sınırları](../temeller/sinirlamalar/) — Promptla çözülemeyen sınırlar
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Promptla çözülemeyen sınırlar
 

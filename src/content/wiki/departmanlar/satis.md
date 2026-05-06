@@ -132,8 +132,8 @@ Toplam süre: 15 dakika. Geleneksel yaklaşımla ("durumu analiz etmek için otu
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Örnekleri](../claude-md/ornekler/) — Satış yöneticisi için hazır CLAUDE.md
-- [Prompting Temel İlkeleri](../prompting/temel-ilkeler/) — Kaliteli prompt yazma
-- [Skills](../yetenekler/skills/) — Sales plugin detayları
-- [MCP Bağlantı Listesi](../mcp/baglanti-listesi/) — CRM + Gmail connector kurulumu
+- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/) — Satış yöneticisi için hazır CLAUDE.md
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — Kaliteli prompt yazma
+- [Skills](/wiki/yetenekler/skills/) — Sales plugin detayları
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — CRM + Gmail connector kurulumu
 

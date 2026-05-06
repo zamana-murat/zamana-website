@@ -369,5 +369,5 @@ Bu 20 dakika alır. Ve ertesi hafta Claude oturumlarınız niteliksel olarak far
 - [CLAUDE.md Nedir?](nedir/) — Temel kavram
 - [CLAUDE.md Nasıl Yazılır?](nasil-yazilir/) — Adım adım rehber
 - [Memory Yönetimi](memory-yonetimi/) — CLAUDE.md dışı hafıza mekanizmaları
-- [Departmanlar](../departmanlar/) — Role göre Claude kullanım senaryoları
+- [Departmanlar](/wiki/departmanlar/) — Role göre Claude kullanım senaryoları
 

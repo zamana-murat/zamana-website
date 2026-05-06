@@ -290,6 +290,6 @@ Anthropic fiyatlarını ve plan özelliklerini zaman zaman günceller. Bu sayfad
 - [Claude Modelleri](modeller/) — Hangi plan hangi modele erişim verir
 - [Claude Nedir?](claude-nedir/) — Temel kavram
 - [Gizlilik ve KVKK](gizlilik-kvkk/) — Türkiye'de veri uyumluluğu
-- [Cowork Modu](../araclar/cowork-modu/) — Pro'dan itibaren erişilebilen ana özellik
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Pro'dan itibaren erişilebilen ana özellik
 
 

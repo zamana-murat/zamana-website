@@ -94,7 +94,7 @@ Soyut talimat yetersiz kaldığı durumlar:
 
 → Claude marka voice'unuzu örnekten çıkarır, taklit eder.
 
-[Pazarlama departmanı](../departmanlar/pazarlama/) sayfasında daha fazla içerik örneği.
+[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfasında daha fazla içerik örneği.
 
 ## Örnek 3 — JSON Şema
 
@@ -166,7 +166,7 @@ Bir örneği nereye koymalı?
 
 Çoğu durumda ikisi birlikte kullanılır. CLAUDE.md genel tarzı belirler, prompt o gün için özelleşir.
 
-[Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) sayfasında CLAUDE.md içine örnek nasıl gömüleceği var.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında CLAUDE.md içine örnek nasıl gömüleceği var.
 
 ## Örnek 4 — Şirket-İçi Sınıflandırma
 
@@ -200,7 +200,7 @@ Ticket: '[veri]'
 Kategori: ?
 ```
 
-[Müşteri Hizmetleri](../departmanlar/musteri-hizmetleri/) sayfasında daha fazla bağlam.
+[Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfasında daha fazla bağlam.
 
 ## Örnek 5 — Türkçe Stil Düzeltme
 
@@ -239,7 +239,7 @@ Bazı görevlerde 10-20 örnek vermek gerekir. Bu **many-shot** dedikleri yakla�
 - Karmaşık karar verme (matrix mantık)
 - Çok-aşamalı dönüşüm (örnek-1 → orta-form → final)
 
-Many-shot için bağlam penceresi büyür — uzun bir prompt olur. Claude'un [bağlam](../yetenekler/context-compaction/) limitini aşmamak gerekir; özellikle Pro kullanıcılarda.
+Many-shot için bağlam penceresi büyür — uzun bir prompt olur. Claude'un [bağlam](/wiki/yetenekler/context-compaction/) limitini aşmamak gerekir; özellikle Pro kullanıcılarda.
 
 ## Örnek Aktarımı — Tek Sohbet İçinde
 
@@ -260,7 +260,7 @@ Bu organik few-shot, manuel olarak kurulan few-shot kadar güçlüdür.
 
 **Tuzak 3: Yanlı örnekler.** Sadece olumlu örnek verirseniz Claude olumsuz vakaları doğru tanıyamaz. Çeşitlilik şart.
 
-**Tuzak 4: Kişisel/hassas veri içeren örnek.** Müşteri ismi, gerçek ciro, kişisel veri içeren örnekler [KVKK](../temeller/gizlilik-kvkk/) sorunu yaratır. **Anonimleştir** veya synthetic örnek kur.
+**Tuzak 4: Kişisel/hassas veri içeren örnek.** Müşteri ismi, gerçek ciro, kişisel veri içeren örnekler [KVKK](/wiki/temeller/gizlilik-kvkk/) sorunu yaratır. **Anonimleştir** veya synthetic örnek kur.
 
 ## Birleşik Teknik — Format + Few-Shot + Talimat
 
@@ -298,6 +298,6 @@ Ham veri: [gerçek veri]
 - [Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) — Türkçe için
 - [Prompt İterasyonu](prompt-iterasyonu/) — Örnekleri geliştirme döngüsü
 - [İleri Seviye](ileri-seviye/) — Many-shot ve advanced teknikler
-- [Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) — CLAUDE.md'ye gömme
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md'ye gömme
 - [Yaygın Hatalar](yaygin-hatalar/) — Few-shot tuzakları
 

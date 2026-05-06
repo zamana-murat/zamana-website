@@ -10,7 +10,7 @@ lastUpdated: "2026-05-06"
 
 **Connector'lar, Claude'u Gmail, Google Drive, Calendar, Notion, GitHub gibi iş sistemlerinize tek tıkla bağlayan resmi entegrasyonlardır.** Kuruluşunuzda bu sistemleri zaten kullanıyorsanız, Claude'u onlarla konuşur hâle getirmek için kod yazmanıza, kurulum yapmanıza gerek yok.
 
-Bu sayfa connector'ların ne olduğunu, [MCP](../mcp/nedir/)'den ne farkı olduğunu ve hangi senaryolarda gerçek değer ürettiğini anlatır.
+Bu sayfa connector'ların ne olduğunu, [MCP](/wiki/mcp/nedir/)'den ne farkı olduğunu ve hangi senaryolarda gerçek değer ürettiğini anlatır.
 
 ## Connector Nedir?
 
@@ -18,7 +18,7 @@ Connector, Claude'un sizin onayınızla belirli bir dış servise (Gmail, Drive,
 
 Mantığı şu: bir defa OAuth ile bağlarsınız (Google'a giriş yapar gibi), Claude o servise sizin yetkinizle erişir. Her sohbette tekrar giriş yapmanız gerekmez. Bağlantıyı istediğiniz zaman koparırsınız.
 
-**Connector vs. [MCP](../mcp/nedir/):**
+**Connector vs. [MCP](/wiki/mcp/nedir/):**
 
 | | Connector | MCP |
 |---|---|---|
@@ -32,7 +32,7 @@ Kısaca: **connector "kapı açık, gir" — MCP "kendi kapını yap, gir."** Ç
 
 ## Hangi Connector'lar Var?
 
-Liste sürekli genişliyor; en güncel hâli için [Bağlantı Listesi](../mcp/baglanti-listesi/) sayfasına bakın. Yaygın olanlar:
+Liste sürekli genişliyor; en güncel hâli için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın. Yaygın olanlar:
 
 - **Google Drive / Docs / Sheets** — dosya okuma, içerik özetleme, çapraz arama
 - **Gmail** — e-posta okuma, taslak hazırlama (gönderim çoğu plan kuralında onaylı)
@@ -73,9 +73,9 @@ Liste sürekli genişliyor; en güncel hâli için [Bağlantı Listesi](../mcp/b
 
 **Görünürlük sınırı.** Claude yalnızca sizin yetkinizdeki içerikleri görür. Ortak Drive'da sizinle paylaşılmamış bir klasör → Claude görmez. Bu güvenlik açısından iyi haber, kullanım açısından bilinmesi gereken bir kısıt.
 
-**Bazı kurumsal hesaplarda IT engeli.** Şirket Google Workspace yöneticisi OAuth uygulamalarını kısıtlıyorsa, connector'u onaylatmak gerekebilir. [BT departmanı](../departmanlar/bilgi-teknolojileri/) ile konuşun.
+**Bazı kurumsal hesaplarda IT engeli.** Şirket Google Workspace yöneticisi OAuth uygulamalarını kısıtlıyorsa, connector'u onaylatmak gerekebilir. [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile konuşun.
 
-**KVKK / veri akışı.** Connector bağladığınızda o servisteki içerik Claude'a (Anthropic'e) gidip işlenir. Hassas veri sınıflandırması varsa, [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) ve [Şirket İçi Politika](../temeller/sirket-ici-politika/) sayfalarına bakın.
+**KVKK / veri akışı.** Connector bağladığınızda o servisteki içerik Claude'a (Anthropic'e) gidip işlenir. Hassas veri sınıflandırması varsa, [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
 
 ## Nasıl Eklenir?
 
@@ -93,17 +93,17 @@ Bağlantıyı koparmak: aynı menüden **Disconnect**. O servise erişim derhâl
 
 ## Plan Kapsamı
 
-Connector'ların büyük kısmı tüm planlarda mevcut. Bazı kurumsal connector'lar (örn. Salesforce, ServiceNow) **Team / Enterprise** planları gerektirebilir. Detay için [Planlar](../temeller/planlar/) ve [Takım ve Admin](../temeller/takim-ve-admin/) sayfaları.
+Connector'ların büyük kısmı tüm planlarda mevcut. Bazı kurumsal connector'lar (örn. Salesforce, ServiceNow) **Team / Enterprise** planları gerektirebilir. Detay için [Planlar](/wiki/temeller/planlar/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfaları.
 
 ## Connector mu, MCP mi?
 
 Karar için basit kural:
 
 - **Servisiniz listedeyse → connector kullanın.** Daha hızlı, daha güvenli, daha az bakım.
-- **Servisiniz listede yoksa veya iç sistemlerinizi bağlayacaksanız → [MCP](../mcp/nedir/).**
+- **Servisiniz listede yoksa veya iç sistemlerinizi bağlayacaksanız → [MCP](/wiki/mcp/nedir/).**
 - **Hem dış SaaS'lar hem de iç ERP/CRM'iniz varsa → ikisi birden.** Aynı sohbette her ikisi de çalışabilir.
 
-[MCP Kurulum Rehberi](../mcp/kurulum-rehberi/) ve [Popüler MCP'ler](../mcp/populer-mcpler/) sayfaları MCP tarafının detayını verir.
+[MCP Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) ve [Popüler MCP'ler](/wiki/mcp/populer-mcpler/) sayfaları MCP tarafının detayını verir.
 
 ## Kurumsal Kullanımda Tavsiyeler
 
@@ -113,14 +113,14 @@ Karar için basit kural:
 
 **Düzenli denetim.** Üç ayda bir kullanılmayan connector'ları koparın. Bu hem güvenlik, hem zihinsel temizlik.
 
-**[Şirket içi politikanız](../temeller/sirket-ici-politika/) olsun.** Hangi çalışan hangi connector'u kullanabilir, hassas veri içeren servisler kapsam dışı mı — bunu yazıya dökün.
+**[Şirket içi politikanız](/wiki/temeller/sirket-ici-politika/) olsun.** Hangi çalışan hangi connector'u kullanabilir, hassas veri içeren servisler kapsam dışı mı — bunu yazıya dökün.
 
 ## İlgili Sayfalar
 
-- [MCP Nedir?](../mcp/nedir/) — Connector'un kuzeni, daha geniş ekosistem
-- [Bağlantı Listesi](../mcp/baglanti-listesi/) — Güncel connector ve MCP listesi
+- [MCP Nedir?](/wiki/mcp/nedir/) — Connector'un kuzeni, daha geniş ekosistem
+- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Güncel connector ve MCP listesi
 - [Cowork Modu](cowork-modu/) — Connector'lar Cowork ile birlikte güç katar
 - [Slack & Teams Entegrasyonu](slack-teams-entegrasyon/) — Mesajlaşma platformlarına özel
-- [Şirket İçi Politika](../temeller/sirket-ici-politika/) — Hangi connector kim için açık olmalı
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — Veri akışı
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Hangi connector kim için açık olmalı
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri akışı
 

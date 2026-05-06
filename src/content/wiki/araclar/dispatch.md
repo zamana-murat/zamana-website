@@ -86,5 +86,5 @@ Bu psikolojik geçiş bir kerede olur. Sonrasında Claude'u farklı bir gözle k
 - [Cowork Modu](cowork-modu/) — Dispatch'in altında çalışan ortam
 - [Scheduled Tasks](scheduled-tasks/) — Otomatik çalışan zamanlanmış görevler
 - [Claude Desktop](claude-desktop/) — Dispatch için masaüstü tarafı
-- [Claude Planları](../temeller/planlar/) — Pro ve Max arasında fark
+- [Claude Planları](/wiki/temeller/planlar/) — Pro ve Max arasında fark
 

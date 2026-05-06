@@ -134,8 +134,8 @@ Toplam süre: 8-10 dakika. Normal süreç: 45-60 dakika.
 
 ## İlgili Sayfalar
 
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — KVKK genel çerçevesi
-- [Claude'un Sınırları](../temeller/sinirlamalar/) — Hukuki sınırlar
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — KVKK genel çerçevesi
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Hukuki sınırlar
 - [İhracat](ihracat/) — Uluslararası ticaret sözleşmeleri
-- [Skills](../yetenekler/skills/) — Legal plugin skill'leri
+- [Skills](/wiki/yetenekler/skills/) — Legal plugin skill'leri
 

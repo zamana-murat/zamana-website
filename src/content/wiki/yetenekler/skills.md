@@ -60,7 +60,7 @@ Plugins, ilgili skill'leri + connector'ları + subagent'ları tek pakette kurar.
 | `productivity:task-management` | Productivity | TASKS.md üzerinden görev takibi |
 | `productivity:memory-management` | Productivity | İki-katmanlı hafıza sistemi |
 
-Yeni plugin'ler düzenli olarak Anthropic tarafından ekleniyor. [Plugins & MCP](../mcp/baglanti-listesi/) sayfası güncel listeyi takip eder.
+Yeni plugin'ler düzenli olarak Anthropic tarafından ekleniyor. [Plugins & MCP](/wiki/mcp/baglanti-listesi/) sayfası güncel listeyi takip eder.
 
 ## Skill Nasıl Çağrılır?
 
@@ -116,7 +116,7 @@ Kendinize sık sorabileceğiniz sorular:
 ## İlgili Sayfalar
 
 - [Artifacts](artifacts/) — Skill'lerin ürettiği etkileşimli çıktılar
-- [Cowork Modu](../araclar/cowork-modu/) — Skill'lerin yaşadığı ortam
-- [MCP Bağlantı Listesi](../mcp/baglanti-listesi/) — Plugin'lerin içindeki connector'lar
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — Skill'lerin üzerine inşa edildiği kalıcı bağlam
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Skill'lerin yaşadığı ortam
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Plugin'lerin içindeki connector'lar
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Skill'lerin üzerine inşa edildiği kalıcı bağlam
 

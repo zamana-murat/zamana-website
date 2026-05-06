@@ -135,7 +135,7 @@ Toplam süre: 10 dakika. Normal süreç: 1-2 saat + birden fazla iç müzakere.
 ## İlgili Sayfalar
 
 - [Pazarlama](pazarlama/) — Sosyal medya kriz iletişimi koordinasyonu
-- [Artifacts](../yetenekler/artifacts/) — Şikayet dashboardu (Live Artifact)
-- [Memory Yönetimi](../claude-md/memory-yonetimi/) — Müşteri bağlamı saklamak
-- [Skills](../yetenekler/skills/) — memory skill detayları
+- [Artifacts](/wiki/yetenekler/artifacts/) — Şikayet dashboardu (Live Artifact)
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — Müşteri bağlamı saklamak
+- [Skills](/wiki/yetenekler/skills/) — memory skill detayları
 

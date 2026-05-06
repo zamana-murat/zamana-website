@@ -118,7 +118,7 @@ Bu sıra tesadüfi değil. Önce temel, sonra genişleme, en sonda otomasyon —
 
 Araçları tanıdıysanız:
 
-- [**CLAUDE.md**](../claude-md/) — Cowork'ü gerçekten etkili kılan kalıcı hafıza dosyası
-- [**Prompting**](../prompting/) — Araç ne olursa olsun, iyi prompt yazabilmek
-- [**Yetenekler**](../yetenekler/) — Cowork içinde Skills, Artifacts, Agents
+- [**CLAUDE.md**](/wiki/claude-md/) — Cowork'ü gerçekten etkili kılan kalıcı hafıza dosyası
+- [**Prompting**](/wiki/prompting/) — Araç ne olursa olsun, iyi prompt yazabilmek
+- [**Yetenekler**](/wiki/yetenekler/) — Cowork içinde Skills, Artifacts, Agents
 

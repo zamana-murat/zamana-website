@@ -19,7 +19,7 @@ Tek cümleyle: ciddi Claude kullanımı Claude Desktop olmadan başlamaz. Çünk
 
 - **[Cowork moduna](cowork-modu/) erişim** — en büyük fark
 - **Yerel dosya sistemi erişimi** — bağlı workspace klasörü üzerinden
-- **[Plugin](../yetenekler/skills/) ve MCP connector kurulumu** — şirket araçlarına bağlantı
+- **[Plugin](/wiki/yetenekler/skills/) ve MCP connector kurulumu** — şirket araçlarına bağlantı
 - **Skill çağırma** — `/docx`, `/pptx`, `/xlsx`, `/pdf` ve diğerleri
 - **Sandbox'ta kod çalıştırma** — güvenli sanal makinede Python / PowerShell / Bash
 - **Oturumlar arası kalıcı workspace klasörü** — her şey yerinde kalır, bir dahaki sefere aynı bağlamla başlar
@@ -44,7 +44,7 @@ Tek cümleyle: ciddi Claude kullanımı Claude Desktop olmadan başlamaz. Çünk
 4. Claude Desktop açılınca Claude hesabınızla giriş yapın (Max 5x önerilir, en az Pro)
 5. İlk açılışta **Cowork modunu etkinleştirin**
 6. Bir **workspace klasörü** seçin — bilgisayarınızda Claude'un çalışacağı gerçek klasör (öneri: `C:\ClaudeWorkspace` veya `~/ClaudeWorkspace`)
-7. Bu klasörün içine **CLAUDE.md** dosyasını oluşturun (bkz: [CLAUDE.md Nasıl Yazılır?](../claude-md/nasil-yazilir/))
+7. Bu klasörün içine **CLAUDE.md** dosyasını oluşturun (bkz: [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/))
 
 Bu 7 adım yaklaşık 20 dakika sürer ve sağlıklı bir başlangıç noktası verir.
 
@@ -57,7 +57,7 @@ Bu 7 adım yaklaşık 20 dakika sürer ve sağlıklı bir başlangıç noktası 
 - **VPN testi:** Kurumsal VPN bazen Claude Desktop ile çakışır. Eğitim öncesi test edin.
 - **MCP connector güvenlik incelemesi:** Slack, Drive gibi bağlantılar kuruluyorsa bilgi güvenliği politikanıza göre onay süreci gerekebilir.
 
-Detaylı IT ve KVKK gereksinimleri için: [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) sayfasına bakın.
+Detaylı IT ve KVKK gereksinimleri için: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## Claude Desktop Açıldığında Ne Görünür?
 
@@ -88,7 +88,7 @@ Claude Desktop kendi kendini günceller — arka planda yeni sürüm indirir, ye
 
 - [Cowork Modu](cowork-modu/) — Claude Desktop'ın ana gücü
 - [Claude Chat](claude-chat/) — Claude Desktop içindeki sohbet modu
-- [CLAUDE.md Nedir?](../claude-md/nedir/) — İlk kurulumun kritik parçası
-- [Claude Planları](../temeller/planlar/) — Pro minimum, plan detayları
-- [Gizlilik ve KVKK](../temeller/gizlilik-kvkk/) — IT gereksinimleri ve veri uyumu
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — İlk kurulumun kritik parçası
+- [Claude Planları](/wiki/temeller/planlar/) — Pro minimum, plan detayları
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — IT gereksinimleri ve veri uyumu
 

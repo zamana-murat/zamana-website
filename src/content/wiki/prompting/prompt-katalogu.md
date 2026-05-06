@@ -18,7 +18,7 @@ Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın
 2. Köşeli parantezli yerleri (`[müşteri adı]` gibi) doldurun
 3. Claude'a verin
 4. Çıktıyı kontrol edin, gerekirse iterasyonla geliştirin
-5. Düzenli kullandığınız şablonları kişisel CLAUDE.md / [Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/)'ne ekleyin
+5. Düzenli kullandığınız şablonları kişisel CLAUDE.md / [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'ne ekleyin
 
 İterasyon süreci için [Prompt İterasyonu](prompt-iterasyonu/) sayfası.
 
@@ -71,7 +71,7 @@ Kurallar:
 - En fazla 200 kelime
 ```
 
-[Yaygın İtirazlar](../temeller/itirazlar/) sayfasında genel itiraz kalıpları var.
+[Yaygın İtirazlar](/wiki/temeller/itirazlar/) sayfasında genel itiraz kalıpları var.
 
 ### A3. Quarterly Pipeline Review
 
@@ -91,7 +91,7 @@ Veri (Excel/CSV):
 Format: yönetim için 1 sayfa özet — başlıklar, kısa paragraflar, gerekirse tablo
 ```
 
-[Satış departmanı](../departmanlar/satis/) sayfası ek detay verir.
+[Satış departmanı](/wiki/departmanlar/satis/) sayfası ek detay verir.
 
 ---
 
@@ -259,10 +259,10 @@ Beklediğim:
 5. Görselleştirme önerisi (hangi grafiği nereye)
 
 Format: yönetim raporu, 1 sayfa
-Görselleştirme istersen [Artifact](../yetenekler/artifacts/) olarak çıkar
+Görselleştirme istersen [Artifact](/wiki/yetenekler/artifacts/) olarak çıkar
 ```
 
-[Artifacts](../yetenekler/artifacts/) sayfası görselleştirme detayını verir.
+[Artifacts](/wiki/yetenekler/artifacts/) sayfası görselleştirme detayını verir.
 
 ### D2. Karar Matrisi (Çok Seçenek)
 
@@ -337,7 +337,7 @@ Bizim rolümüz: [satıcı / alıcı / iş ortağı]
 UYARI: Bu hukuki tavsiye değil, ön inceleme. Final için avukat onayı gerekli.
 ```
 
-[Hukuk departmanı](../departmanlar/hukuk/) sayfasında sözleşme tarafının detayı.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfasında sözleşme tarafının detayı.
 
 ### E2. KVKK Aydınlatma Metni
 
@@ -414,7 +414,7 @@ Kurallar:
 - Başvuru süreci net: nereye, ne zamana kadar, ne ile
 ```
 
-[İK departmanı](../departmanlar/insan-kaynaklari/) sayfasında daha fazla şablon.
+[İK departmanı](/wiki/departmanlar/insan-kaynaklari/) sayfasında daha fazla şablon.
 
 ### F3. Performans Değerlendirme Geri Bildirimi
 
@@ -505,7 +505,7 @@ Format:
 - Belirsizlik kalıyorsa ne kalıyor
 ```
 
-[Web Arama](../araclar/web-arama/) sayfası bu yaklaşımı detaylandırır.
+[Web Arama](/wiki/araclar/web-arama/) sayfası bu yaklaşımı detaylandırır.
 
 ---
 
@@ -517,7 +517,7 @@ Bu kataloğun her şablonunu **her seferinde kopyalamak** uzun vadede yorucudur.
 2. Şablonu çağırma kısa adı tanımlayın: "soğuk e-posta şablonu", "haftalık rapor şablonu"
 3. Sonra basitçe deyin: *"Soğuk e-posta şablonunu kullan, müşteri X için, sektör Y."*
 
-[Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) bunu organize eder.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) bunu organize eder.
 
 ## Şablonların Sınırı
 
@@ -537,6 +537,6 @@ Bu işler için [4D Çerçevesi](4d-cercevesi/) ve [İleri Seviye](ileri-seviye/
 - [Çıktı Formatı](cikti-formati/) — Tablo/JSON/markdown kontrolü
 - [Few-Shot Örnekleme](few-shot-ornekleme/) — Örnekle öğretme
 - [Prompt İterasyonu](prompt-iterasyonu/) — Şablonu geliştirme
-- [Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) — CLAUDE.md rol şablonları
-- [Departmanlar](../departmanlar/) — Rol bazlı uygulamalar
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md rol şablonları
+- [Departmanlar](/wiki/departmanlar/) — Rol bazlı uygulamalar
 

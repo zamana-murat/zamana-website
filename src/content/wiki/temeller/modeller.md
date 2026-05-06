@@ -144,6 +144,6 @@ Bir iş profesyoneli için Claude modelleri konusu neredeyse kararsız bir sorud
 - [Claude Nedir?](claude-nedir/) — Modellerden önce temel kavram
 - [Claude Planları](planlar/) — Hangi modellere hangi planla erişim var
 - [Claude vs ChatGPT](claude-vs-chatgpt/) — Rakip modellerle karşılaştırma
-- [Prompting Temel İlkeleri](../prompting/temel-ilkeler/) — Modelden çok daha önemli: doğru prompt
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — Modelden çok daha önemli: doğru prompt
 
 

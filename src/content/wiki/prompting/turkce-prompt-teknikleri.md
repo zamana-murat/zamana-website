@@ -10,7 +10,7 @@ lastUpdated: "2026-05-06"
 
 **Claude Türkçe'yi iyi anlar, ama Türkçe yazılan prompt İngilizce yazılan prompttan farklı tepki üretebilir.** Türkçe'nin sondan eklemeli yapısı, tonlama nüansları, iş hayatındaki kalıpları farklıdır. Bu sayfa Türkçe-spesifik teknikleri anlatır.
 
-[Türkçe Performansı](../temeller/turkce-performansi/) sayfası genel kalite tablosunu gösterir; bu sayfa **prompt yazarken neye dikkat etmeli** sorusuna odaklanır.
+[Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası genel kalite tablosunu gösterir; bu sayfa **prompt yazarken neye dikkat etmeli** sorusuna odaklanır.
 
 ## Önce Genel Prensip
 
@@ -18,7 +18,7 @@ Claude'un Türkçe çıktı kalitesi yüksek. Ama:
 
 - Bazı **iş kalıpları** İngilizce kaynak materyallerden öğrenildiği için "tercüme kokusu" verebilir
 - **Kayıt (register)** seçimi (resmî / samimi / orta) açıkça söylenmediğinde tutarsız olur
-- Uzun [bağlam](../yetenekler/context-compaction/) içinde Türkçe'den İngilizce'ye **kayma** olabilir
+- Uzun [bağlam](/wiki/yetenekler/context-compaction/) içinde Türkçe'den İngilizce'ye **kayma** olabilir
 
 Üç temel teknik bunları çözer.
 
@@ -47,7 +47,7 @@ Uzun bir Türkçe sohbette Claude bazen İngilizce'ye kayar — özellikle tekni
 
 **Önleme:**
 
-[CLAUDE.md](../claude-md/nedir/) içine net bir dil kuralı:
+[CLAUDE.md](/wiki/claude-md/nedir/) içine net bir dil kuralı:
 
 ```markdown
 ## Dil
@@ -59,7 +59,7 @@ Sohbet içinde kayma görürseniz hemen düzeltin:
 
 > *"Hatırlatma: lütfen Türkçe yanıtla. Teknik terim için Türkçe + parantez İngilizce."*
 
-[Hata Ayıklama](../claude-md/hata-ayiklama/) sayfasında bu ve benzer dil sorunları detaylanır.
+[Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında bu ve benzer dil sorunları detaylanır.
 
 ## 3. Eklemeli Yapı — Net Kelime Seçimi
 
@@ -100,9 +100,9 @@ Claude'un eğitim verisindeki Türkçe iş dili klişe yüklü. Aşağıdakiler 
 - "Hoş bir gün geçirmenizi dileriz"
 - "Ekibimiz konuyla ilgilenmektedir"
 
-[Pazarlama departmanı](../departmanlar/pazarlama/) ve [Müşteri Hizmetleri](../departmanlar/musteri-hizmetleri/) sayfalarında alternatif kalıplar var.
+[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) ve [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfalarında alternatif kalıplar var.
 
-[CLAUDE.md](../claude-md/nedir/) içine yasak kelime listesi koymak en pratik çözüm:
+[CLAUDE.md](/wiki/claude-md/nedir/) içine yasak kelime listesi koymak en pratik çözüm:
 
 ```markdown
 ## Yasak Kalıplar
@@ -111,7 +111,7 @@ Claude'un eğitim verisindeki Türkçe iş dili klişe yüklü. Aşağıdakiler 
 - Yerine: "Merhaba [İsim]", "İyi günler", "Soruların için teşekkürler"
 ```
 
-[Şablon Kütüphanesi](../claude-md/sablon-kutuphanesi/) sayfasında rol bazlı doğru kalıplar var.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında rol bazlı doğru kalıplar var.
 
 ## 6. "Sen" mi "Siz" mi?
 
@@ -131,7 +131,7 @@ Bazı durumlarda Claude Türkçe karakterleri (ç, ğ, ı, ö, ş, ü) kaybedebi
 - Kod blokları içinde
 - Türkçe-İngilizce kayma anında
 
-Önemli yazılarda final kontrolü kendiniz yapın. Otomatik üretimlerde (örn. [Scheduled Tasks](../araclar/scheduled-tasks/) çıktısı) bir post-process kontrol ekleyin.
+Önemli yazılarda final kontrolü kendiniz yapın. Otomatik üretimlerde (örn. [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) çıktısı) bir post-process kontrol ekleyin.
 
 ## 8. Cinsiyet Belirsizliği — Avantaj
 
@@ -153,7 +153,7 @@ Türkiye'deki şirketlerin iç jargonu çok sektörel:
 - Üretim: "fire", "vardiya", "kademe", "OEE"
 - IT: "patch", "deploy", "uptime", "downtime"
 
-[CLAUDE.md](../claude-md/nedir/) içine **şirket içi sözlük** koyun:
+[CLAUDE.md](/wiki/claude-md/nedir/) içine **şirket içi sözlük** koyun:
 
 ```markdown
 ## Şirket Akronimleri ve Jargon
@@ -228,12 +228,12 @@ Kurallar:
 
 ## İlgili Sayfalar
 
-- [Türkçe Performansı](../temeller/turkce-performansi/) — Genel kalite tablosu
+- [Türkçe Performansı](/wiki/temeller/turkce-performansi/) — Genel kalite tablosu
 - [Temel İlkeler](temel-ilkeler/) — Genel prompt mantığı
 - [4D Çerçevesi](4d-cercevesi/) — Delegation/Description/Discernment/Diligence
 - [Prompt Kataloğu](prompt-katalogu/) — Hazır Türkçe şablonlar
 - [Çıktı Formatı](cikti-formati/) — Format kontrolü
 - [Few-Shot Örnekleme](few-shot-ornekleme/) — Örnekle öğretme
 - [Yaygın Hatalar](yaygin-hatalar/) — Tipik prompting hataları
-- [CLAUDE.md / Hata Ayıklama](../claude-md/hata-ayiklama/) — Dil sorunları çözümü
+- [CLAUDE.md / Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) — Dil sorunları çözümü
 
