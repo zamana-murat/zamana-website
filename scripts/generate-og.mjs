@@ -45,7 +45,7 @@ const pages = [
     slug: 'default',
     eyebrow: 'Kurumsal Claude Eğitimi · Türkiye',
     title: "Türkiye'nin Kurumsal Claude Eğitim Platformu",
-    subtitle: 'Bireysel ve Kurumsal Programlar',
+    subtitle: 'CEO Brifing · Bireysel · Kurumsal',
   },
   {
     slug: 'index',
@@ -55,8 +55,8 @@ const pages = [
   {
     slug: 'programlar',
     eyebrow: 'Programlar',
-    title: 'İki yol. Aynı sonuç.',
-    subtitle: 'Bireysel · Kurumsal',
+    title: 'Üç yol. Aynı sonuç.',
+    subtitle: 'CEO Brifing · Bireysel · Kurumsal',
   },
   {
     slug: 'programlar-bireysel',
@@ -71,10 +71,16 @@ const pages = [
     subtitle: '$3.000 + KDV / ay · Min. 3 ay · 36 saat eğitim',
   },
   {
+    slug: 'programlar-ceo-brifing',
+    eyebrow: 'CEO AI Brifing',
+    title: '3 saat. AI\'ı anlamak. Karar vermek.',
+    subtitle: '$400 + KDV · Hafta sonu · Sizin seçtiğiniz adreste',
+  },
+  {
     slug: 'programlar-karsilastirma',
     eyebrow: 'Karşılaştırma',
-    title: 'Bireysel mi, Kurumsal mı?',
-    subtitle: 'Yan yana karar verin',
+    title: 'Hangi program size uygun?',
+    subtitle: 'Üç programı yan yana görün',
   },
   {
     slug: 'hakkinda',

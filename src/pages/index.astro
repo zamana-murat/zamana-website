@@ -11,7 +11,7 @@ const organizationSchema = {
   url: 'https://zamana.com.tr',
   logo: 'https://zamana.com.tr/images/zamana-logo.webp',
   image: 'https://zamana.com.tr/og/index.png',
-  description: 'Türkiye\'nin kurumsal Claude eğitim ve danışmanlık platformu. Bireysel ve kurumsal programlarla şirketlere yapay zekayı iş süreçlerine entegre etme rehberliği sunar.',
+  description: 'Türkiye\'nin kurumsal Claude eğitim ve danışmanlık platformu. CEO Brifing, Bireysel ve Kurumsal programlarla şirketlere yapay zekayı iş süreçlerine entegre etme rehberliği sunar.',
   foundingDate: '2026-04',
   founder: {
     '@type': 'Person',
@@ -97,6 +97,17 @@ const organizationSchema = {
           },
         },
       },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'CEO AI Brifing',
+          description: 'CEO ve kurucu sahipleri için 3 saatlik AI anlama oturumu. AI nedir, ne değildir, şirketinize ne fayda sağlar. Hafta sonu, sizin seçtiğiniz adreste, birebir.',
+          url: 'https://zamana.com.tr/programlar/ceo-brifing',
+        },
+        price: '400',
+        priceCurrency: 'USD',
+      },
     ],
   },
 };
@@ -120,7 +131,7 @@ const websiteSchema = {
 
 <Layout
   title="Zamana, Türkiye'nin Kurumsal Claude Eğitim Platformu"
-  description="Anthropic Partner Zamana, Claude'u Türk şirketlerine getiren birebir eğitim programı. Bireysel 3 haftalık veya kurumsal 3 aylık Türkçe danışmanlık."
+  description="Anthropic Partner Zamana, Claude'u Türk şirketlerine getiren birebir eğitim programı. CEO için 3 saatlik AI brifing, bireysel 3 haftalık veya kurumsal 3 aylık Türkçe danışmanlık."
   ogImage="/og/index.png"
 >
 
@@ -136,7 +147,7 @@ const websiteSchema = {
         şirketinizi <span class="hero__accent">3 ayda dönüştürür.</span>
       </h1>
       <p class="hero__lead">
-        Zamana, Türkiye'nin yapay zeka eğitim platformudur. Bireysel profesyonellere ve şirketlere
+        Zamana, Türkiye'nin yapay zeka eğitim platformudur. CEO'lara, bireysel profesyonellere ve şirketlere
         Claude'u gerçek işte nasıl kullanacaklarını gösteririz, örnek üzerinden, kendi işiniz üzerinden.
       </p>
       <div class="hero__cta">
@@ -246,14 +257,14 @@ const websiteSchema = {
   <section class="section section--alt" id="programlar">
     <div class="container">
       <div class="text-center" style="margin-bottom: var(--s-6);">
-        <span class="eyebrow">İki Program</span>
+        <span class="eyebrow">Üç Program</span>
         <h2 class="section-title center">Size Uygun Olanı Seçin</h2>
         <p class="lead center">
-          Aynı pedagojik DNA. Farklı ölçek. Bireysel profesyoneller için 3 hafta, şirketler için 3 aylık tam dönüşüm.
+          Aynı pedagojik DNA. Üç farklı ölçek. CEO'lar için 3 saatlik anlama oturumu, bireysel profesyoneller için 3 hafta, şirketler için 3 aylık tam dönüşüm.
         </p>
       </div>
 
-      <div class="grid grid-2" style="max-width: 880px; margin: 0 auto;">
+      <div class="grid grid-3" style="max-width: 1200px; margin: 0 auto;">
         <ProgramCard
           title="Bireysel Program"
           badge="Hızlı Başlangıç"
@@ -295,10 +306,29 @@ const websiteSchema = {
           ctaText="Kurumsal Programı İncele"
           highlighted={true}
         />
+        <ProgramCard
+          title="CEO AI Brifing"
+          badge="Anlama Oturumu"
+          price="$400"
+          duration="Tek oturum, hafta sonu"
+          audience="CEO ve kurucu sahipleri için. AI'ı anlamak ve şirketi için karar vermek isteyen yöneticiler."
+          features={[
+            "3 saat tek oturum",
+            "İstanbul içi: yerinde yüz yüze",
+            "İstanbul dışı: yerinde ya da online (kişi tercihi)",
+            "AI nedir, ne değildir",
+            "Anonim vaka üzerinden çalışma",
+            "Şirketinize özel use case haritası",
+            "30/60/90 günlük yol haritası çıktısı",
+            "Claude aboneliği zorunlu değil, tavsiye",
+          ]}
+          ctaHref="/programlar/ceo-brifing"
+          ctaText="CEO Brifing'i İncele"
+        />
       </div>
 
       <p class="text-center" style="margin-top: var(--s-5);">
-        <a href="/programlar/karsilastirma" class="link-arrow">İki programı karşılaştır <span aria-hidden="true">→</span></a>
+        <a href="/programlar/karsilastirma" class="link-arrow">Üç programı karşılaştır <span aria-hidden="true">→</span></a>
       </p>
     </div>
   </section>

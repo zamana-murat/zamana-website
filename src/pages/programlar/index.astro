@@ -4,24 +4,24 @@ import ProgramCard from '../../components/ProgramCard.astro';
 ---
 
 <Layout
-  title="Programlar, Bireysel ve Kurumsal Claude Eğitimi | Zamana"
-  description="Zamana iki program sunar: bireysel profesyoneller için 3 haftalık program ve şirketler için 3 aylık kurumsal retainer. İkisini karşılaştırın, size uygun olanı seçin."
+  title="Programlar, CEO Brifing, Bireysel ve Kurumsal Claude Eğitimi | Zamana"
+  description="Zamana üç program sunar: CEO'lar için 3 saatlik AI brifing, bireysel profesyoneller için 3 haftalık program ve şirketler için 3 aylık kurumsal retainer. Üçünü karşılaştırın, size uygun olanı seçin."
   ogImage="/og/programlar.png"
 >
 
   <section class="page-hero">
     <div class="container">
       <span class="eyebrow">Programlar</span>
-      <h1>İki yol. Aynı sonuç.</h1>
+      <h1>Üç yol. Aynı sonuç.</h1>
       <p class="lead">
-        Bir kişi misiniz, bir şirket mi? Aynı pedagojik temele sahip iki farklı program, sizin durumunuza göre.
+        Bir CEO musunuz, bir profesyonel mi, bir şirket mi? Aynı pedagojik temele sahip üç farklı program, sizin durumunuza göre.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="grid grid-2" style="max-width: 880px; margin: 0 auto;">
+      <div class="grid grid-3" style="max-width: 1200px; margin: 0 auto;">
         <ProgramCard
           title="Bireysel Program"
           badge="3 Hafta"
@@ -63,6 +63,25 @@ import ProgramCard from '../../components/ProgramCard.astro';
           ctaText="Detayları Gör"
           highlighted={true}
         />
+        <ProgramCard
+          title="CEO AI Brifing"
+          badge="3 Saat"
+          price="$400"
+          duration="Tek oturum, hafta sonu"
+          audience="CEO ve kurucu sahipleri için. AI'ı anlamak ve şirketi için karar vermek isteyen yöneticiler."
+          features={[
+            "3 saat tek oturum",
+            "İstanbul içi: yerinde yüz yüze",
+            "İstanbul dışı: yerinde ya da online (kişi tercihi)",
+            "AI nedir, ne değildir",
+            "Anonim vaka üzerinden çalışma",
+            "Şirketinize özel use case haritası",
+            "30/60/90 günlük yol haritası çıktısı",
+            "Claude aboneliği zorunlu değil, tavsiye",
+          ]}
+          ctaHref="/programlar/ceo-brifing"
+          ctaText="Detayları Gör"
+        />
       </div>
 
       <div class="text-center" style="margin-top: var(--s-6);">
@@ -74,7 +93,10 @@ import ProgramCard from '../../components/ProgramCard.astro';
   <section class="section section--alt">
     <div class="container container-narrow">
       <span class="eyebrow">Ortak Özellikler</span>
-      <h2 class="section-title">Her iki programda da bunlar var</h2>
+      <h2 class="section-title">Bireysel ve Kurumsal Programlarda Ortak</h2>
+      <p class="text-muted" style="margin-top: -0.5rem; margin-bottom: var(--s-3); font-size: 0.95rem;">
+        CEO AI Brifing tek oturumluk anlama programı olduğu için bu listenin dışındadır.
+      </p>
       <ul class="shared-list">
         <li>
           <strong>30 dakika telefon kuralı</strong>

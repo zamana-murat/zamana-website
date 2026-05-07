@@ -2,26 +2,31 @@
 import Layout from '../../layouts/Layout.astro';
 
 const rows = [
-  { label: 'Süre',                  bireysel: '3 hafta + 3 ay destek',     kurumsal: 'Minimum 3 ay (aylık devam)' },
-  { label: 'Katılımcı sayısı',       bireysel: '1 kişi',                    kurumsal: '6 çalışan' },
-  { label: 'Kişi başı eğitim saati', bireysel: '6 saat (3×2)',              kurumsal: '6 saat (2×3)' },
-  { label: 'Toplam eğitim saati',    bireysel: '6 saat',                    kurumsal: '36 saat (6 × 6)' },
-  { label: 'Telefon desteği',        bireysel: '3 ay sınırsız',             kurumsal: 'Sınırsız (tüm ekip, eğitim süresince)' },
-  { label: 'Format (İstanbul içi)',   bireysel: 'Yerinde yüz yüze',          kurumsal: 'Yerinde yüz yüze' },
-  { label: 'Format (İstanbul dışı)',  bireysel: 'Zoom/Google Meet',          kurumsal: 'Yerinde ya da online (firma tercihi, yerinde seçilirse seyahat masrafı firmaya ait)' },
-  { label: 'Fiyat',                  bireysel: '$1.000 + KDV (tek seferlik)', kurumsal: '$3.000 + KDV / ay (min. 3 ay)' },
-  { label: 'Kişi başı maliyet',      bireysel: '$1.000',                    kurumsal: '$1.500' },
-  { label: 'Ek ders',                bireysel: 'Gerek görülürse ücretsiz',  kurumsal: 'Gerek görülürse ücretsiz' },
-  { label: 'Hedef alıcı',            bireysel: 'Bireysel profesyonel (B2C)', kurumsal: 'Şirket (B2B)' },
-  { label: 'Müfredat odağı',         bireysel: 'Kişisel iş akışı',          kurumsal: 'Departman bazlı + ekip dinamiği' },
-  { label: 'Şirket içi yayılım',     bireysel: 'Yok (kişisel)',             kurumsal: '6 çalışan = kritik kütle' },
-  { label: 'KVKK / politika',        bireysel: 'Genel rehberlik',           kurumsal: 'Şirket politika dokümanı' },
-  { label: 'İlerleme raporu',        bireysel: 'Yok',                       kurumsal: '1. ve 2. ay sunumu' },
+  { label: 'Süre',                  ceo: '3 saat tek oturum',              bireysel: '3 hafta + 3 ay destek',     kurumsal: 'Minimum 3 ay (aylık devam)' },
+  { label: 'Katılımcı sayısı',       ceo: '1 kişi (sadece CEO)',            bireysel: '1 kişi',                    kurumsal: '6 çalışan' },
+  { label: 'Kişi başı eğitim saati', ceo: '3 saat',                          bireysel: '6 saat (3×2)',              kurumsal: '6 saat (2×3)' },
+  { label: 'Toplam eğitim saati',    ceo: '3 saat',                          bireysel: '6 saat',                    kurumsal: '36 saat (6 × 6)' },
+  { label: 'Telefon desteği',        ceo: 'Standart müşteri iletişimi',     bireysel: '3 ay sınırsız',             kurumsal: 'Sınırsız (tüm ekip, eğitim süresince)' },
+  { label: 'Format (İstanbul içi)',   ceo: 'Yerinde yüz yüze',                bireysel: 'Yerinde yüz yüze',          kurumsal: 'Yerinde yüz yüze' },
+  { label: 'Format (İstanbul dışı)',  ceo: 'Yerinde ya da online (kişi tercihi, yerinde seçilirse seyahat masrafı kişiye ait)', bireysel: 'Zoom/Google Meet',          kurumsal: 'Yerinde ya da online (firma tercihi, yerinde seçilirse seyahat masrafı firmaya ait)' },
+  { label: 'Zaman',                  ceo: 'Hafta sonu (Cumartesi/Pazar)',   bireysel: 'Hafta içi veya hafta sonu', kurumsal: 'Hafta içi mesai saatinde' },
+  { label: 'Fiyat',                  ceo: '$400 + KDV (tek seferlik)',      bireysel: '$1.000 + KDV (tek seferlik)', kurumsal: '$3.000 + KDV / ay (min. 3 ay)' },
+  { label: 'Kişi başı maliyet',      ceo: '$400',                            bireysel: '$1.000',                    kurumsal: '$1.500' },
+  { label: 'Claude aboneliği',       ceo: 'Zorunlu değil (tavsiye)',         bireysel: 'Max 5x ilk ay zorunlu',     kurumsal: 'Max 5x ilk ay zorunlu' },
+  { label: 'Ek ders',                ceo: 'Yok',                             bireysel: 'Gerek görülürse ücretsiz',  kurumsal: 'Gerek görülürse ücretsiz' },
+  { label: 'Hedef alıcı',            ceo: 'CEO ve kurucu sahipleri',        bireysel: 'Bireysel profesyonel (B2C)', kurumsal: 'Şirket (B2B)' },
+  { label: 'Müfredat odağı',         ceo: 'Anlama ve karar',                bireysel: 'Kişisel iş akışı',          kurumsal: 'Departman bazlı + ekip dinamiği' },
+  { label: 'Çıktı',                   ceo: 'Yol haritası, karar',            bireysel: 'Çalışan kurulum + otomasyon', kurumsal: '6 Claude şampiyonu, ekip dönüşümü' },
+  { label: 'Şirket içi yayılım',     ceo: "Yok (CEO'ya özel)",              bireysel: 'Yok (kişisel)',             kurumsal: '6 çalışan = kritik kütle' },
+  { label: 'KVKK / politika',        ceo: 'Genel çerçeve, anonim vaka',     bireysel: 'Genel rehberlik',           kurumsal: 'Şirket politika dokümanı' },
+  { label: 'İlerleme raporu',        ceo: 'Yok',                             bireysel: 'Yok',                       kurumsal: '1. ve 2. ay sunumu' },
 ];
 
 const recRows = [
+  { situation: 'CEO\'sunuz, AI hakkında karar vermeniz gerek',          rec: 'CEO AI Brifing' },
+  { situation: 'Şirkete yatırım yapmadan önce konuyu anlamak istiyorsunuz', rec: 'CEO AI Brifing' },
+  { situation: 'CEO\'sunuz, şirkete getirmeden önce kendinize alacaksınız', rec: 'Önce CEO Brifing, sonra Bireysel veya Kurumsal' },
   { situation: 'Tek başınıza öğrenmek istiyorsunuz',                 rec: 'Bireysel' },
-  { situation: 'CEO\'sunuz, şirkete getirmeden önce kendinize alacaksınız', rec: 'Önce Bireysel, sonra Kurumsal' },
   { situation: 'Şirketiniz kurumsal program almıyor, kendiniz ödüyorsunuz', rec: 'Bireysel' },
   { situation: 'Freelance / bağımsız profesyonel',                   rec: 'Bireysel' },
   { situation: '6+ çalışanı olan şirket, AI dönüşümü istiyor',       rec: 'Kurumsal' },
@@ -32,17 +37,17 @@ const recRows = [
 ---
 
 <Layout
-  title="Bireysel mi Kurumsal mı? Program Karşılaştırması | Zamana"
-  description="Zamana'nın bireysel ve kurumsal programlarını yan yana karşılaştırın. Süre, fiyat, kapsam, hedef kitle ve hangi durumda hangisinin uygun olduğu."
+  title="Programlar Karşılaştırması, CEO Brifing, Bireysel ve Kurumsal | Zamana"
+  description="Zamana'nın üç programını yan yana karşılaştırın. CEO AI Brifing, Bireysel ve Kurumsal. Süre, fiyat, kapsam, hedef kitle ve hangi durumda hangisinin uygun olduğu."
   ogImage="/og/programlar-karsilastirma.png"
 >
 
   <section class="page-hero">
     <div class="container">
       <span class="eyebrow">Karşılaştırma</span>
-      <h1>Bireysel mi, Kurumsal mı?</h1>
+      <h1>Hangi program size uygun?</h1>
       <p class="lead">
-        Aynı pedagojik DNA, farklı ölçek. Aşağıdaki tabloda iki programı yan yana görebilir,
+        Aynı pedagojik DNA, üç farklı ölçek. Aşağıdaki tabloda üç programı yan yana görebilir,
         durumunuza uygun olanı seçebilirsiniz.
       </p>
     </div>
@@ -69,6 +74,13 @@ const recRows = [
                   <a href="/programlar/kurumsal" class="th-link">Detaylar →</a>
                 </div>
               </th>
+              <th>
+                <div class="th-card">
+                  <span class="th-tag">CEO AI Brifing</span>
+                  <span class="th-price">$400 <em>+ KDV</em></span>
+                  <a href="/programlar/ceo-brifing" class="th-link">Detaylar →</a>
+                </div>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -77,6 +89,7 @@ const recRows = [
                 <th scope="row">{r.label}</th>
                 <td>{r.bireysel}</td>
                 <td>{r.kurumsal}</td>
+                <td>{r.ceo}</td>
               </tr>
             ))}
           </tbody>
@@ -135,7 +148,7 @@ const recRows = [
     width: 100%;
     border-collapse: collapse;
     background: var(--c-white);
-    min-width: 640px;
+    min-width: 880px;
   }
   .cmp-table th, .cmp-table td {
     padding: var(--s-3) var(--s-4);
