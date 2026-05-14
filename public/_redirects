@@ -1,0 +1,12 @@
+# Cloudflare Pages _redirects
+# SEO defansif: yanlış URL şemalarını doğru hedefe yönlendir
+# Detay: docs/SEO-PLAN.md S20
+
+# Eski/yanlış crawl: /wiki/departmanlar/{section}/{slug} formatı
+# Doğrusu: /wiki/{section}/{slug}
+/wiki/departmanlar/prompting/*    /wiki/prompting/:splat    301
+/wiki/departmanlar/araclar/*      /wiki/araclar/:splat      301
+/wiki/departmanlar/yetenekler/*   /wiki/yetenekler/:splat   301
+/wiki/departmanlar/mcp/*          /wiki/mcp/:splat          301
+/wiki/departmanlar/claude-md/*    /wiki/claude-md/:splat    301
+/wiki/departmanlar/temeller/*     /wiki/temeller/:splat     301
