@@ -110,6 +110,8 @@ export const wikiNav: WikiNavSection[] = [
       { label: 'Context ve Compaction', slug: 'yetenekler/context-compaction' },
       { label: 'Computer Use', slug: 'yetenekler/computer-use' },
       { label: 'Agents ve Subagents', slug: 'yetenekler/agents-subagents' },
+      { label: 'Effort Control', slug: 'yetenekler/effort-control' },
+      { label: 'Claude Design', slug: 'yetenekler/claude-design' },
     ],
   },
   {

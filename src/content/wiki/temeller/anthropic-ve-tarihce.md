@@ -5,7 +5,7 @@ tags:
   - temeller
   - anthropic
   - tarihce
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 **Anthropic, Claude'u yapan şirkettir.** Kurumsal bir aracı sözleşmeye bağlamadan önce arkasındaki şirketi tanımak doğal — bu sayfa Anthropic'i, kuruluşunu, değerlerini ve Claude'un model tarihçesini özetler.
@@ -43,8 +43,9 @@ Anthropic'in temel araştırma katkısı **Constitutional AI** (Anayasal AI) yö
 - **Google** — yaklaşık 2 milyar dolar yatırım
 - **Amazon** — yaklaşık 4 milyar dolar yatırım (sonradan ek turlarla daha da büyüdü)
 - **Diğer:** Spark Capital, Lightspeed, Salesforce Ventures, Menlo Ventures
-- **Toplam toplanan sermaye:** ~67 milyar dolar (17 turda, Şubat 2026 itibariyle)
-- **Tahmini değerleme:** ~380 milyar dolar (Şubat 2026)
+- **Toplam toplanan sermaye:** Şubat 2026'ya kadar 17 turda ~67 milyar dolar
+- **Series H (Mayıs 2026):** 65 milyar dolar yeni yatırım, **965 milyar dolar** işlem sonrası (post-money) değerleme
+- **Tahmini değerleme:** ~965 milyar dolar (Mayıs 2026)
 
 **Ne anlama geliyor?** Anthropic kısa vadede kapanma veya satılma riski olan bir startup değil. Kurumsal bir alıcı için **uzun vadeli tedarikçi güvenilirliği** açısından bu önemli bir veridir.
 
@@ -61,6 +62,16 @@ Anthropic, AI modellerinin yetenek seviyelerini **AI Safety Levels (ASL)** siste
 
 Bu yaklaşım sektörde nadirdir ve kurumsal alıcılar için **denetlenebilir bir dürüstlük taahhüdüdür**.
 
+## 2026 Ortası Gelişmeleri
+
+Anthropic'in kurumsal olgunlaşmasını gösteren güncel başlıklar:
+
+- **Halka arz yolu (SEC S-1):** Anthropic, 1 Haziran 2026'da ABD menkul kıymet düzenleyicisine (SEC) **gizli taslak kayıt beyanı (S-1)** sundu. Bu, ileride halka açılma (IPO) ihtimalinin ilk resmî adımıdır. Kurumsal alıcı için anlamı: şeffaflık ve mali denetim yükümlülüğü artan, kurumsallaşan bir tedarikçi.
+- **Project Glasswing:** AWS, Apple, Google, Microsoft gibi şirketlerle yürütülen, kritik yazılımın güvenliğini hedefleyen çok şirketli bir girişim. Mayıs 2026'da ~150 yeni kuruluşa genişletildi ve **Claude Security** (kod tabanı tarama + yama önerisi) eklendi.
+- **Avrupa ve Asya yayılımı:** Mayıs 2026'da **Milano ofisi** açıldı (İtalya kurumsal ve geliştirici topluluğu için); Kore'de Seul ofisi öncesi yerel liderlik ataması yapıldı. Anthropic'in uluslararası kurumsal varlığı büyüyor.
+
+Bu gelişmeler, "Anthropic geçici bir startup mı, kalıcı bir kurumsal tedarikçi mi?" sorusuna kalıcılık yönünde cevap verir.
+
 ## Claude Model Tarihçesi
 
 Claude'un gelişimi hızlı oldu. Ana noktalar:
@@ -76,6 +87,7 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Mayıs 2025 | **Claude 4** | Profesyonel kod üretiminde sıçrama; Claude Code günlük araç oldu |
 | Şubat 2026 | **Claude Sonnet 4.6** | Verimlilik kıyaslamalarında zirve |
 | Nisan 2026 | **Claude Opus 4.7** (1M context) | En güçlü Opus; uzun çalışan görevler, yüksek çözünürlüklü görsel |
+| Mayıs 2026 | **Claude Opus 4.8** | Daha güçlü agentic muhakeme, varsayılan yüksek çaba, dynamic workflows; üç kat ucuz Fast mode |
 
 İsimlendirme mantığı için [Modeller](modeller/) sayfasına bakın — Haiku/Sonnet/Opus seçimi pratik fark yaratır.
 

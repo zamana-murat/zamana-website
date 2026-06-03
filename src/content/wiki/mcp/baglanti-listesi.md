@@ -6,7 +6,7 @@ tags:
   - connector
   - entegrasyon
   - liste
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 2026 itibariyle Claude 38+ hazır connector ile gelir. Bu sayfa iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
@@ -153,7 +153,7 @@ Pratik alternatif: [Computer Use](/wiki/yetenekler/computer-use/) ile API olmaya
 
 ## Güncel Liste Nereden?
 
-Bu sayfa **2026 başı itibariyle** doğru. Anthropic düzenli olarak yeni connector ekliyor. **Güncel listeyi** Cowork → **Customize** menüsünden görebilirsiniz.
+Bu sayfa **2026 ortası itibariyle** doğru. Anthropic düzenli olarak yeni connector ekliyor. **Güncel listeyi** Cowork → **Customize** menüsünden görebilirsiniz.
 
 ## İlgili Sayfalar
 

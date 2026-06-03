@@ -6,7 +6,7 @@ tags:
   - agents
   - subagents
   - otonom
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 **Bir agent, Claude'un birden fazla adım boyunca otonom çalıştığı ve araçlar kullanarak karmaşık görevleri tamamladığı modudur.** Tek bir soruya cevap vermek yerine bir dizi eylemi **planlar, uygular ve gözden geçirir**.
@@ -57,6 +57,27 @@ Cowork içinde birden fazla uzmanlaşmış agent tipi vardır. Çalışan doğru
 - **`claude-code-guide`** — Claude Code, API, Agent SDK hakkında sorular
 
 **Not:** `claude-code-guide` agent'ı geliştirici konularıyla ilgilidir, iş profesyoneli kapsamı dışındadır.
+
+## Dynamic Workflows — Yüzlerce Agent'ın Orkestrasyonu
+
+Mayıs 2026'da [Opus 4.8](/wiki/temeller/modeller/) ile birlikte gelen **dynamic workflows** (dinamik iş akışları), agent yaklaşımını ölçek olarak bir üst seviyeye taşır. Tek bir istekle Claude, bir görevi arka planda **onlarca, hatta yüzlerce paralel agent** arasında dağıtarak orkestre edebilir.
+
+Önceki subagent yaklaşımında genelde elle tarif edilmiş birkaç paralel iş çalışırdı. Dynamic workflows'ta Claude işin yapısını **kendisi çıkarır**, kaç agent gerektiğine kendisi karar verir ve sonuçları toplar.
+
+**İş açısından ne demek?** Çok büyük, çok parçalı görevler artık tek komutla mümkün:
+
+> *"Tüm departman raporlarımızı (50 dosya) tara, her birinden bu çeyreğin 3 ana riskini çıkar, sonra hepsini tek bir yönetici özetinde birleştir."*
+
+Bu özellik şu an bir **research preview** aşamasındadır ve esas olarak yoğun, büyük ölçekli işlerde değer üretir. Tipik bir günlük görev için gerekmez, ama "elle haftalar sürecek bir tarama" tipi işlerde fark yaratır.
+
+## Managed Agents (Geliştirici / Kurumsal)
+
+Anthropic, kurumsal otomasyon kuran ekipler için **Managed Agents** tarafını da güçlendirdi (Mayıs 2026). Bunlar iş profesyonelinin günlük arayüzünün değil, geliştirici/BT ekiplerinin ilgi alanıdır, ama kurumsal bir alıcının bilmesi faydalı:
+
+- **Outcomes:** Agent çıktısının başarısı bir **rubrik** ile tanımlanır; bağımsız bir değerlendirici çıktıyı bu ölçüte göre puanlar ve gerekirse agent işini düzeltir.
+- **Multiagent orchestration:** Bir lider agent, alt görevleri paralel çalışan uzman agent'lara dağıtır; agent'lar ortak bir dosya sistemi ve kalıcı bağlam paylaşır.
+- **Webhooks:** Agent'lar dış sistemlerle olay tabanlı tetiklenebilir / bildirim gönderebilir.
+- **Self-hosted sandbox:** Araç çalıştırma ortamı kurumun kendi altyapısına veya seçtiği bir sağlayıcıya taşınabilir (bkz. [MCP Güvenlik](/wiki/mcp/guvenlik/)).
 
 ## Çalışan Ne Bilmeli?
 

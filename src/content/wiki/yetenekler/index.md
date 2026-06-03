@@ -4,7 +4,7 @@ description: "Skills, Artifacts, Dosya İşleme, Görsel Analiz, Computer Use, A
 tags:
   - yetenekler
   - giris
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 Claude'un sadece yazı üretmekten çok daha fazlasını yapabildiği yerler. Bu bölüm, bir iş profesyoneline **gerçek zaman kazandıran** yedi temel yeteneği kapsar.
@@ -99,6 +99,15 @@ Bir iş profesyonelinin haftalık işinin çoğunluğu **dört yetenek** üzerin
 Bu dördü oturunca çalışan haftalık işlerinin %60-70'ini dönüştürmüş olur.
 
 Geriye kalan **Computer Use**, **Agents** ve **Context** ise belirli durumlarda devreye giren ileri yetenekler — temel dördünü oturtmayan çalışan bunlardan değer çıkaramaz.
+
+## Yeni Özellikler (2026 ortası)
+
+Yukarıdaki yedi yetenek çekirdektir. Bunların yanına 2026 ortasında iki yeni başlık eklendi:
+
+- [**Effort Control**](effort-control/) — Claude'a bir görevde ne kadar derinlemesine çalışacağını söyleyen ayar. [Opus 4.8](/wiki/temeller/modeller/) ile claude.ai ve Cowork'e geldi; kalite ile hız arasında bilinçli denge kurar.
+- [**Claude Design**](claude-design/) — Claude ile birlikte tasarım, prototip, sunum ve one-pager üretmenizi sağlayan Anthropic Labs ürünü. Pro planından itibaren dahildir.
+
+Bunlar başlangıç için zorunlu değildir; çekirdek yedi yeteneği oturttuktan sonra devreye alın.
 
 ## Nereye Gitmeli?
 

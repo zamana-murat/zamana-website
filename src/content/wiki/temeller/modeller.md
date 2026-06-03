@@ -7,7 +7,7 @@ tags:
   - sonnet
   - opus
   - haiku
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 ## Model Nedir?
@@ -24,7 +24,7 @@ Bu üç eksen birbirine **bağlıdır** — daha zeki bir model genellikle daha 
 
 **Claude tek bir model değil, bir model ailesidir.** Hız, zekâ ve maliyet arasında farklı noktalarda duran üç ana modeli vardır: **Haiku**, **Sonnet** ve **Opus**.
 
-Erken 2026 itibariyle aktif aile **Claude 4.x**'dir. Her modelin güçlü olduğu iş türü farklıdır, ama iş profesyoneli için pozisyon nettir:
+2026 ortası itibariyle aktif aile **Claude 4.x**'tir. Her modelin güçlü olduğu iş türü farklıdır, ama iş profesyoneli için pozisyon nettir:
 
 > **Sonnet, bir iş profesyonelinin ihtiyaç duyduğu her şeyi yapar. Varsayılan olarak Sonnet kullanın. Her zaman.**
 
@@ -88,7 +88,9 @@ Opus şunlar için vardır:
 
 Bunlar tipik bir çalışanın haftalık işi değildir. Bir çalışan "Opus mu kullansam?" diye düşünüyorsa cevap neredeyse her zaman: **Sonnet yeterlidir.**
 
-**Güncel model kimlikleri:** `claude-opus-4-6`, `claude-opus-4-7`
+**Güncel model kimliği:** `claude-opus-4-8` (Mayıs 2026'da çıktı; önceki sürümler `claude-opus-4-7` ve `claude-opus-4-6`). Opus 4.8 varsayılan olarak **yüksek çaba (high effort)** seviyesinde çalışır, agentic görevlerde ve uzun belge analizinde önceki sürümlere göre belirgin iyileşme getirir. Fast mode (2.5x hız) artık eski sürümlere göre üç kat daha ucuzdur. Görev başına çaba seviyesini ayarlamak için [Effort Control](/wiki/yetenekler/effort-control/) sayfasına bakın.
+
+> **Yaklaşan üst sınıf:** Anthropic, Opus'un üzerinde daha yüksek bir zekâ sınıfı olan **Claude Mythos Preview**'u sınırlı sayıda kuruluşa (Project Glasswing kapsamında ~150 organizasyon) açtı. Henüz genel kullanıma açık değildir; iş profesyoneli için bugün pratik bir karşılığı yoktur, ama Anthropic'in model yelpazesinin yukarı doğru genişlediğini gösterir.
 
 ## İş Kullanıcısı Model Seçmek Zorunda mı?
 

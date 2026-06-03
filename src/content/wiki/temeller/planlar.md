@@ -8,7 +8,7 @@ tags:
   - pro
   - team
   - enterprise
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 Claude'un beş ana planı vardır. Plan seçimi sadece fiyatla ilgili değildir, hangi özelliklerin kullanılabilir olduğunu, özellikle **Cowork modu, connector'lar, paylaşılan projeler ve kurumsal uyum araçlarını** doğrudan belirler.
@@ -47,11 +47,12 @@ Claude'u hiç kullanmamış bir kişi için giriş kapısıdır.
 Pro planında neler vardır:
 
 - Claude Sonnet 4.6'ya tam erişim (ana model)
-- Claude Opus 4.6'ya sınırlı erişim (nadiren gerekir — [Modeller](modeller/) sayfasına bakın)
+- Claude Opus 4.8'e sınırlı erişim (nadiren gerekir — [Modeller](modeller/) sayfasına bakın)
 - Free plana göre 5 kat daha yüksek kullanım limiti
 - Yoğun saatlerde öncelikli erişim
 - Sınırsız Project + her projede RAG zenginleştirmeli bilgi tabanı
 - **Cowork moduna tam erişim** (skills, plugins, connector'lar, scheduled tasks, workspace klasörü, Dispatch)
+- Claude Code (geliştirici aracı) — **Pro planından itibaren dahildir** (müfredatımızın kapsamı dışındadır, geliştirici ekipler içindir)
 - Yeni özelliklere erken erişim
 - Excel içi Claude (beta)
 
@@ -74,9 +75,16 @@ Pro'daki her şey + ek olarak:
 - Sonraki aylarda: günde birkaç saat Claude'la aktif çalışan, Pro limitlerine saatler sonra değil dakikalarda ulaşan çalışanlar
 - Pazarlama direktörü, ihracat yöneticisi gibi çoklu iş akışı yürüten roller
 
-### Team Plan — Standart 25 USD/koltuk/ay, Premium 100 USD/koltuk/ay
+### Team Plan — Standart 20–25 USD/koltuk/ay, Premium 100–125 USD/koltuk/ay
 
 Şirketlerin Claude'u birden fazla çalışana yaymak istediğinde kullandığı plandır. Minimum 5 koltuk.
+
+Fiyat ödeme periyoduna bağlıdır:
+
+- **Standart koltuk:** yıllık ödemede **20 USD/koltuk/ay**, aylık ödemede **25 USD/koltuk/ay**
+- **Premium koltuk:** yıllık ödemede **100 USD/koltuk/ay**, aylık ödemede **125 USD/koltuk/ay**
+
+Yani yıllık taahhüt, aylık ödemeye göre koltuk başına tasarruf sağlar.
 
 **Standart koltukta neler var:**
 
@@ -90,7 +98,8 @@ Pro'daki her şey + ek olarak:
 
 **Premium koltukta ek olarak:**
 
-- Claude Code (geliştirici aracı)
+- Çok daha yüksek kullanım limitleri (yoğun, sürekli çalışan kullanıcılar için)
+- Claude Code'da yüksek kullanım kotası (Claude Code'un kendisi artık Pro planından itibaren de mevcuttur; Premium koltuk geliştirici ekiplere genişletilmiş kota verir)
 
 **Kime uygun:** Bireysel Pro/Max aboneliklerinden çıkıp Claude'u şirket genelinde kurumsallaştırmak isteyen şirketler. Yaygınlaşma aşamasında doğal bir adımdır.
 
@@ -120,7 +129,7 @@ Büyük organizasyonlar için — maksimum kontrol, uyum ve güvenlik isteyen ku
 | **Pro** | 20 USD/ay | ✅ | ❌ | Steady-state kullanım, günde 1-3 saat |
 | **Max 5x** | 100 USD/ay | ✅ | ❌ | Yeni başlayan kullanıcının ilk ayı + güç kullanıcısı |
 | **Max 20x** | 200 USD/ay | ✅ | ❌ | Sürekli yoğun, çoklu iş akışı yürütenler |
-| **Team** | 25–100 USD/koltuk/ay | ✅ | ✅ (SSO, shared Projects) | 5+ çalışanı olan şirket |
+| **Team** | 20–125 USD/koltuk/ay | ✅ | ✅ (SSO, shared Projects) | 5+ çalışanı olan şirket |
 | **Enterprise** | Özel (500 USD/ay+) | ✅ | ✅ + uyum | Regülasyona tabi büyük kuruluş |
 
 ## Duruma Göre Plan Önerisi
@@ -131,7 +140,7 @@ Büyük organizasyonlar için — maksimum kontrol, uyum ve güvenlik isteyen ku
 | Steady-state hafif kullanım | **Claude Pro** (20 USD/ay) |
 | Steady-state orta-yoğun kullanım | **Claude Max 5x** (100 USD/ay) |
 | Günlük limitleri zorlayan güç kullanıcısı | **Claude Max** (100 USD/ay) |
-| 5+ çalışanı Claude'a geçirmek istiyorum | **Claude Team Standart** (25 USD/koltuk) |
+| 5+ çalışanı Claude'a geçirmek istiyorum | **Claude Team Standart** (20–25 USD/koltuk) |
 | Bankacılık, sağlık, büyük üretici veya kamu | **Claude Enterprise** (özel müzakere) |
 | Henüz ciddi değilim, sadece deniyorum | **Claude Free** (sadece değerlendirme için) |
 
@@ -195,10 +204,10 @@ Tüm planların tüm özelliklerini tek tabloda görebilmek için:
 
 | Özellik | Free | Pro | Max | Team | Enterprise |
 |---|---|---|---|---|---|
-| **Fiyat** | 0 | $20/ay | $100-200/ay | $25/koltuk/ay | Özel |
+| **Fiyat** | 0 | $20/ay | $100-200/ay | $20-25/koltuk/ay | Özel |
 | **Minimum kullanıcı** | 1 | 1 | 1 | 5 koltuk | Genelde 10+ |
 | Sonnet 4.6 | ✅ sınırlı | ✅ | ✅ | ✅ | ✅ |
-| Opus 4.6/4.7 | ❌ | ✅ sınırlı | ✅ yüksek | ✅ yüksek | ✅ sınırsız |
+| Opus 4.8 | ❌ | ✅ sınırlı | ✅ yüksek | ✅ yüksek | ✅ sınırsız |
 | Haiku | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Kullanım limiti | Çok sıkı | Baz | 5x–20x Pro | 3x Pro | Özel |
 | **Context window** | 200K | 200K | 200K | 200K | **500K** |
@@ -245,8 +254,8 @@ Hangi planın size uygun olduğunu bulmak için sırayla:
 
 ### Soru 3: 5-50 kullanıcı için — Team seçimi
 
-- **Standart ihtiyaçlar** (çoğu şirket) → **Team Standart** ($25/koltuk/ay)
-- Claude Code da istiyoruz (geliştirici ekibi) → **Team Premium** ($100/koltuk/ay)
+- **Standart ihtiyaçlar** (çoğu şirket) → **Team Standart** ($20–25/koltuk/ay)
+- Claude Code'da yüksek kota istiyoruz (geliştirici ekibi) → **Team Premium** ($100–125/koltuk/ay)
 
 ### Soru 4: KVKK / regulasyon ne kadar kritik?
 
@@ -281,9 +290,19 @@ Tek kullanıcı, güç kullanıcısı →  Max 5x veya 20x
 Sadece denemek                   →  Free (ciddi iş kullanımı için yetersiz)
 ```
 
+## Programatik Kullanım Kredi Havuzu
+
+Anthropic, 15 Haziran 2026'dan itibaren **programatik (API üzerinden, otomatik) kullanımı** abonelik kotanızdan ayrı bir **kredi havuzundan** düşmeye başladı. Her plana aylık ayrı bir programatik kredi tahsis edilir:
+
+- **Pro:** 20 USD değerinde programatik kredi
+- **Max 5x:** 100 USD değerinde programatik kredi
+- **Max 20x:** 200 USD değerinde programatik kredi
+
+**Pratik anlamı:** Claude'u normal sohbet veya Cowork arayüzünden kullanan bir iş profesyonelini bu **etkilemez**, kotanız aynı kalır. Bu havuz yalnızca API veya otomatik (programatik) çağrılar için geçerlidir. Geliştirici ekipler veya yoğun otomasyon kuran kullanıcılar bu ek sınırı dikkate almalıdır.
+
 ## Güncel Fiyat Doğrulaması
 
-Anthropic fiyatlarını ve plan özelliklerini zaman zaman günceller. Bu sayfadaki rakamlar 2026 başı itibariyle geçerlidir. Kritik bir satın alma kararı vermeden önce güncel fiyatlar için **[claude.ai/upgrade](https://claude.ai/upgrade)** sayfasını kontrol edin.
+Anthropic fiyatlarını ve plan özelliklerini zaman zaman günceller. Bu sayfadaki rakamlar 2026 ortası itibariyle geçerlidir. Kritik bir satın alma kararı vermeden önce güncel fiyatlar için **[claude.ai/upgrade](https://claude.ai/upgrade)** sayfasını kontrol edin.
 
 ## İlgili Sayfalar
 

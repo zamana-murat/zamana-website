@@ -5,7 +5,7 @@ tags:
   - mcp
   - guvenlik
   - kvkk
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 **[MCP](nedir/), Claude'a sisteminize erişim verir.** Bu güç, dikkatsiz kurulduğunda sorun olabilir — yetkisiz veri erişimi, beklenmedik silme işlemleri, prompt injection saldırıları. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar.
@@ -238,6 +238,16 @@ Bir MCP-kaynaklı olay olursa ne yaparsınız?
 - **Çeyreklik gözden geçirme**
 
 Küçük şirketlerde basit bir Excel listesi + 3 ayda bir kontrol yetebilir.
+
+## Self-Hosted Sandbox ve Özel MCP Server'lar (Kurumsal)
+
+Mayıs 2026'da Anthropic, kurumsal güvenlik sınırlarını güçlendiren iki seçenek tanıttı. Bunlar esas olarak [Managed Agents](/wiki/yetenekler/agents-subagents/) kuran BT/geliştirici ekiplerini ilgilendirir, ama güvenlik değerlendirmesi yapan bir kurumun bilmesi gereken iki kontrol noktasıdır:
+
+- **Self-hosted sandbox (public beta):** Agent'ın araç çalıştırdığı ortam, **kurumun kendi altyapısına** veya seçilen bir sağlayıcıya (örneğin Cloudflare, Daytona, Modal, Vercel) taşınabilir. Karar veren agent döngüsü Anthropic tarafında kalırken, kod ve araç yürütme sizin kontrolünüzdeki sınırlar içinde gerçekleşir. Bu, hassas işlemlerin nerede koştuğu üzerinde doğrudan denetim sağlar.
+
+- **Özel (private) MCP server'lar:** Managed Agents artık yalnızca kurum içi ağda erişilebilen **özel MCP server'lara** bağlanabilir. Hem agent'ın çalıştığı ortam hem de eriştiği servisler, kurumun belirlediği güvenlik çevresi içinde tutulabilir.
+
+**Değerlendirme açısından:** Bu seçenekler, "veri Anthropic altyapısına çıkmadan iş yürütülebilir mi?" sorusuna kısmi bir cevap sunar. KVKK ve veri yerleşim kaygısı yüksek kurumlar için, [Enterprise plan](/wiki/temeller/planlar/) + self-hosted sandbox kombinasyonu değerlendirilmeye değer.
 
 ## İlgili Sayfalar
 

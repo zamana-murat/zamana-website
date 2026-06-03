@@ -5,7 +5,7 @@ tags:
   - yetenekler
   - memory
   - bellek
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 **Claude'un sohbetler arası bilgiyi hatırladığı bir bellek katmanı vardır.** Sizin kim olduğunuzu, neyle uğraştığınızı, tercihlerinizi otomatik biriktirir; sonraki sohbetlerde bu bilgileri kullanır. Bu sayfa nasıl çalıştığını, [CLAUDE.md](/wiki/claude-md/nedir/) ile farkını ve kontrol mekanizmalarını anlatır.
@@ -188,6 +188,14 @@ Claude memory'i günceller.
 ## Memory İyiyse Verim Artar
 
 Doğru kurulmuş memory + CLAUDE.md birleşimi her sohbette **uzun başlangıç** ihtiyacını ortadan kaldırır. Çalışan artık her seferinde "ben kimim, neyle çalışıyorum" anlatmaz; doğrudan göreve girer. Bu, [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasındaki zaman tasarrufunun gizli kaynaklarından biridir.
+
+## Dreaming — Kendini İyileştiren Agent Hafızası (Kurumsal / Agent)
+
+Mayıs 2026'da Anthropic, agent tarafı için **Dreaming** adlı bir hafıza yeteneği tanıttı (research preview). Burada anlatılan kişisel Claude Chat memory'sinden farklı bir katmandır: Dreaming, **geçmiş oturumları gözden geçirerek tekrar eden kalıpları çıkarır** ve agent'ların zamanla **kendi kendini iyileştirmesini** sağlar.
+
+Pratik mantığı: çalışma araları arasında sistem, agent'ların geçmiş işlerinden öğrenilenleri damıtır; bir sonraki çalışmada bu birikim devreye girer. Birden fazla agent bu öğrenmeyi ortaklaşa paylaşabilir.
+
+**İş profesyoneli için bugünkü karşılığı:** Doğrudan kullanmazsınız; bu özellik esas olarak kurumsal otomasyon ve [Managed Agents](/wiki/yetenekler/agents-subagents/) kuran ekipleri ilgilendirir. Ama yönü gösterir: agent'lar artık sadece o anki bağlamı değil, geçmiş çalışmalardan süzülen kalıpları da kullanmaya başlıyor.
 
 ## İlgili Sayfalar
 
