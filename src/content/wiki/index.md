@@ -18,7 +18,7 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     Temel kavramlar, Claude'un ne olduğu, ne olmadığı ve neden ChatGPT'den farklı düşündüğü.
 
-    [→ Temeller](temeller/)
+    [→ Temeller](/wiki/temeller/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="map-marker-path" aria-hidden="true"></span> **Önerilen Okuma Sıralaması**
 
@@ -26,7 +26,7 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     Hangi sayfayı okumadan önce hangileri okunmalı? Prerequisite ağacı ve kullanıcı profillerine göre yol haritaları.
 
-    [→ Okuma Sıralaması](okuma-sirasi/)
+    [→ Okuma Sıralaması](/wiki/okuma-sirasi/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="account-tie-outline" aria-hidden="true"></span> **Rolüme nasıl uyarlanır?**
 
@@ -34,7 +34,7 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     Satış, pazarlama, finans, hukuk, İK ve 7 alan daha — bireysel profesyonel veya kurumsal kullanım için gerçek iş akışları.
 
-    [→ Departmanlar](departmanlar/)
+    [→ Departmanlar](/wiki/departmanlar/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="file-document" aria-hidden="true"></span> **CLAUDE.md nedir?**
 
@@ -42,7 +42,7 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     Claude'un sizi (ve varsa şirketinizi) tanıması için hazırlanan kalıcı hafıza dosyası.
 
-    [→ CLAUDE.md Rehberi](claude-md/)
+    [→ CLAUDE.md Rehberi](/wiki/claude-md/)
 
 </div>
 

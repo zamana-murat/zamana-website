@@ -55,7 +55,7 @@ ISO 9001 / 14001 / 45001 / IATF 16949 belgelerinin **canlı** tutulması zordur.
 
 ### Kalite Şikayet Yanıtı
 
-Müşteriden kalite şikayeti geldiğinde — yanıt taslağı 1 saat içinde Claude'la hazırlanabilir. **Olgusal**, **savunmacı değil**, **önlem somut**. [Müşteri hizmetleri](musteri-hizmetleri/) sayfası genel şikayet yönetimini detaylandırır.
+Müşteriden kalite şikayeti geldiğinde — yanıt taslağı 1 saat içinde Claude'la hazırlanabilir. **Olgusal**, **savunmacı değil**, **önlem somut**. [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası genel şikayet yönetimini detaylandırır.
 
 ### 8D Raporu
 
@@ -136,7 +136,7 @@ Hat operatörleri için güvenlik talimatları — sade, fotoğraflı (varsa), t
 - Müşteri spesifikasyon talebine uyum analizi
 - Sevkiyat talimatları (CMR, packing list, certificate of origin) için taslaklar
 
-[İhracat departmanı](ihracat/) sayfası ihracat-spesifik konuları detaylandırır.
+[İhracat departmanı](/wiki/departmanlar/ihracat/) sayfası ihracat-spesifik konuları detaylandırır.
 
 ## Pratik Kullanım Senaryoları
 
@@ -198,10 +198,10 @@ Tek bir üretim mühendisi de ciddi değer alabilir, ekip kurulumuna gerek yok.
 
 ## İlgili Sayfalar
 
-- [Operasyon Departmanı](operasyon/) — Genel operasyon yaklaşımı
-- [İhracat Departmanı](ihracat/) — İhracat odaklı üreticiler
-- [Satınalma Departmanı](satinalma/) — Tedarikçi yönetimi
-- [BT Departmanı](bilgi-teknolojileri/) — Üretim sistemleri (MES, SCADA) entegrasyonu
+- [Operasyon Departmanı](/wiki/departmanlar/operasyon/) — Genel operasyon yaklaşımı
+- [İhracat Departmanı](/wiki/departmanlar/ihracat/) — İhracat odaklı üreticiler
+- [Satınalma Departmanı](/wiki/departmanlar/satinalma/) — Tedarikçi yönetimi
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Üretim sistemleri (MES, SCADA) entegrasyonu
 - [Code Execution](/wiki/yetenekler/code-execution/) — KPI analizi ve grafik
 - [Skills](/wiki/yetenekler/skills/) — .xlsx ve .docx rapor üretme
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Veri sınıflandırma

@@ -23,7 +23,7 @@ Sağlıkta Claude kullanımını yöneten ana mevzuat:
 - **Sağlık Bakanlığı Bilişim Standartları**
 - **Türk Ceza Kanunu md. 134-138** — kişisel veriyi hukuka aykırı verme
 
-[Hukuk departmanı](hukuk/) sayfası KVKK derinleşmesi içerir.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası KVKK derinleşmesi içerir.
 
 ## Yapılabilenler ve Yapılamayanlar — Net Tablo
 
@@ -77,7 +77,7 @@ Cerrahi / tıbbi işlem için aydınlatılmış onam formu taslağı. Hukuk mü�
 
 ### Randevu Yönetimi
 
-Randevu hatırlatma, iptal yanıtı, çoklu dilli iletişim (turistlerin sağlık hizmeti için Türkiye'ye geldiği "sağlık turizmi" senaryosu). [Turizm ve Otelcilik](turizm-otelcilik/) sayfası benzer çoklu dilli iletişim örnekleri verir.
+Randevu hatırlatma, iptal yanıtı, çoklu dilli iletişim (turistlerin sağlık hizmeti için Türkiye'ye geldiği "sağlık turizmi" senaryosu). [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) sayfası benzer çoklu dilli iletişim örnekleri verir.
 
 ### Hasta Geri Bildirim Yanıtı
 
@@ -85,17 +85,17 @@ Olumlu / olumsuz geri bildirimlere yanıt. Hassas durumda **hukuki dikkat** — 
 
 ### Faturalama ve SGK
 
-SGK ile mali işler — yazışma taslakları, itiraz mektupları. Standart [finans](finans/) yaklaşımı, sağlığa özel KVKK katmanıyla.
+SGK ile mali işler — yazışma taslakları, itiraz mektupları. Standart [finans](/wiki/departmanlar/finans/) yaklaşımı, sağlığa özel KVKK katmanıyla.
 
 ### Personel İK ve Performans
 
-Hekim, hemşire, idari personel İK işleri standart [İK departmanı](insan-kaynaklari/) yaklaşımıyla. Sağlık-spesifik: nöbet çizelgesi optimizasyonu, performans değerlendirme (klinik göstergeler), eğitim takibi.
+Hekim, hemşire, idari personel İK işleri standart [İK departmanı](/wiki/departmanlar/insan-kaynaklari/) yaklaşımıyla. Sağlık-spesifik: nöbet çizelgesi optimizasyonu, performans değerlendirme (klinik göstergeler), eğitim takibi.
 
 ## Bölüm 3 — Eğitim ve Akademik
 
 ### Personel Eğitim Materyali
 
-Hemşire eğitimi, tıbbi sekreter eğitimi, hekim sürekli eğitim — Claude konuya göre eğitim materyali, sınav sorusu, vaka çalışması üretir. [Eğitim ve Akademi](egitim-akademi/) sayfası genel pedagojik yaklaşımı detaylandırır.
+Hemşire eğitimi, tıbbi sekreter eğitimi, hekim sürekli eğitim — Claude konuya göre eğitim materyali, sınav sorusu, vaka çalışması üretir. [Eğitim ve Akademi](/wiki/departmanlar/egitim-akademi/) sayfası genel pedagojik yaklaşımı detaylandırır.
 
 ### Tıp Fakültesi / Eğitim Hastanesi
 
@@ -113,7 +113,7 @@ Tıbbi yayında abstract, giriş, tartışma bölümü taslağı. Final hekim/ar
 
 ### Politika Belgeleri
 
-Hasta gizliliği politikası, KVKK aydınlatma, çalışan davranış kuralları. [Hukuk departmanı](hukuk/) onayıyla.
+Hasta gizliliği politikası, KVKK aydınlatma, çalışan davranış kuralları. [Hukuk departmanı](/wiki/departmanlar/hukuk/) onayıyla.
 
 ### Acil Durum Planları
 
@@ -121,7 +121,7 @@ Kriz iletişimi, hasta yakınlarına bilgi, basın açıklaması taslakları. Ha
 
 ### Kalite Yönetimi
 
-Hastane akreditasyonu (JCI, SAS) için belgeler. ISO benzeri yapı, [üretim ve imalat](uretim-imalat/) sayfasındaki ISO yaklaşımı uyarlanabilir.
+Hastane akreditasyonu (JCI, SAS) için belgeler. ISO benzeri yapı, [üretim ve imalat](/wiki/departmanlar/uretim-imalat/) sayfasındaki ISO yaklaşımı uyarlanabilir.
 
 ### Yatırım ve Stratejik Plan
 
@@ -135,7 +135,7 @@ Sabah 9-12 yoğun poliklinik. 25 hasta. Her hasta sonrası 5 dakika not yazma �
 
 ### Senaryo 2: Hastane İdari Sekreter
 
-Yabancı hasta yoğun bir hastanede, çoklu dilli randevu yazışması, tedavi öncesi bilgilendirme. Claude'la 5 dilde profesyonel iletişim — 3 sekreterin işini 1 sekreter yapar. [Turizm ve Otelcilik](turizm-otelcilik/) sayfasında benzer çoklu dilli pratik var.
+Yabancı hasta yoğun bir hastanede, çoklu dilli randevu yazışması, tedavi öncesi bilgilendirme. Claude'la 5 dilde profesyonel iletişim — 3 sekreterin işini 1 sekreter yapar. [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) sayfasında benzer çoklu dilli pratik var.
 
 ### Senaryo 3: Hekim Akademik Çalışma
 
@@ -226,7 +226,7 @@ Türkiye'de büyüyen **sağlık turizmi** (saç ekimi, dental, plastik cerrahi,
 - Pazarlama içeriği (web sitesi, sosyal medya)
 - Yorum yönetimi
 
-[Turizm ve Otelcilik](turizm-otelcilik/) sayfası bu boyutu detaylandırır.
+[Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) sayfası bu boyutu detaylandırır.
 
 ## Bireysel Hekim / Klinik Sahibi
 
@@ -234,12 +234,12 @@ Tek başına çalışan hekim, küçük poliklinik / klinik için Claude'un değ
 
 ## İlgili Sayfalar
 
-- [Hukuk Departmanı](hukuk/) — KVKK, mesleki gizlilik, Sağlık Bakanlığı mevzuatı
-- [Müşteri Hizmetleri](musteri-hizmetleri/) — Hasta iletişimi temelleri
-- [Eğitim ve Akademi](egitim-akademi/) — Tıp eğitimi, asistan eğitimi
-- [Turizm ve Otelcilik](turizm-otelcilik/) — Sağlık turizmi
-- [Operasyon Departmanı](operasyon/) — Hastane operasyonel yönetim
-- [İK Departmanı](insan-kaynaklari/) — Sağlık personeli yönetimi
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — KVKK, mesleki gizlilik, Sağlık Bakanlığı mevzuatı
+- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) — Hasta iletişimi temelleri
+- [Eğitim ve Akademi](/wiki/departmanlar/egitim-akademi/) — Tıp eğitimi, asistan eğitimi
+- [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) — Sağlık turizmi
+- [Operasyon Departmanı](/wiki/departmanlar/operasyon/) — Hastane operasyonel yönetim
+- [İK Departmanı](/wiki/departmanlar/insan-kaynaklari/) — Sağlık personeli yönetimi
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika temeli
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri hakları
 - [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Enterprise plan

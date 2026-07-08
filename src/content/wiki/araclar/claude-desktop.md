@@ -15,9 +15,9 @@ Tek cümleyle: ciddi Claude kullanımı Claude Desktop olmadan başlamaz. Çünk
 
 ## Claude Desktop Web Arayüzünden Ne Farkı Var?
 
-[Claude.ai web arayüzü](claude-chat/) iyidir, ama belirli bir noktaya kadar. Claude Desktop şunları ekler:
+[Claude.ai web arayüzü](/wiki/araclar/claude-chat/) iyidir, ama belirli bir noktaya kadar. Claude Desktop şunları ekler:
 
-- **[Cowork moduna](cowork-modu/) erişim** — en büyük fark
+- **[Cowork moduna](/wiki/araclar/cowork-modu/) erişim** — en büyük fark
 - **Yerel dosya sistemi erişimi** — bağlı workspace klasörü üzerinden
 - **[Plugin](/wiki/yetenekler/skills/) ve MCP connector kurulumu** — şirket araçlarına bağlantı
 - **Skill çağırma** — `/docx`, `/pptx`, `/xlsx`, `/pdf` ve diğerleri
@@ -65,7 +65,7 @@ Uygulama açıldığında iki ana çalışma alanı vardır:
 
 ### Chat Modu (varsayılan)
 
-Web arayüzüyle aynı deneyim — bir konuşma, soru-cevap formatı. Hızlı görevler için uygundur. [Claude Chat](claude-chat/) sayfasında detayları vardır.
+Web arayüzüyle aynı deneyim — bir konuşma, soru-cevap formatı. Hızlı görevler için uygundur. [Claude Chat](/wiki/araclar/claude-chat/) sayfasında detayları vardır.
 
 ### Cowork Modu
 
@@ -86,8 +86,8 @@ Claude Desktop kendi kendini günceller — arka planda yeni sürüm indirir, ye
 
 ## İlgili Sayfalar
 
-- [Cowork Modu](cowork-modu/) — Claude Desktop'ın ana gücü
-- [Claude Chat](claude-chat/) — Claude Desktop içindeki sohbet modu
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Claude Desktop'ın ana gücü
+- [Claude Chat](/wiki/araclar/claude-chat/) — Claude Desktop içindeki sohbet modu
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — İlk kurulumun kritik parçası
 - [Claude Planları](/wiki/temeller/planlar/) — Pro minimum, plan detayları
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — IT gereksinimleri ve veri uyumu

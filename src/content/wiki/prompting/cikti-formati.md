@@ -231,7 +231,7 @@ Bu meta-talimat Claude'u kendi kendini kontrol etmeye zorlar.
 
 ## 12. Format + Few-Shot Birleşimi
 
-En güçlü teknik **örnekle göstermek**. [Few-Shot Örnekleme](few-shot-ornekleme/) sayfasında detayı:
+En güçlü teknik **örnekle göstermek**. [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) sayfasında detayı:
 
 ```
 Çıktı şu örneğe benzer formatta:
@@ -257,7 +257,7 @@ Türkçe çıktıda format kuralları biraz farklı:
 - Para: 1.500 ₺ (₺ işareti rakamdan sonra, boşluksuz veya boşluklu)
 - Saat: 14:30 (24 saat formatı)
 
-[Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) sayfasında detay var. Promptta belirtmek gerekiyorsa belirtin.
+[Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasında detay var. Promptta belirtmek gerekiyorsa belirtin.
 
 ## 14. Karşı Örnek — Format Belirtmeyince Olan
 
@@ -287,11 +287,11 @@ Her sıkça yaptığınız işin **bir favori format şablonu** olsun. CLAUDE.md
 
 ## İlgili Sayfalar
 
-- [Temel İlkeler](temel-ilkeler/) — Genel prompt mantığı
-- [Few-Shot Örnekleme](few-shot-ornekleme/) — Örnekle format öğretme
-- [Prompt Kataloğu](prompt-katalogu/) — Format dahil hazır şablonlar
-- [İleri Seviye](ileri-seviye/) — Karmaşık format teknikleri
-- [Yaygın Hatalar](yaygin-hatalar/) — Format hataları
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle format öğretme
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) — Format dahil hazır şablonlar
+- [İleri Seviye](/wiki/prompting/ileri-seviye/) — Karmaşık format teknikleri
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Format hataları
 - [Artifacts](/wiki/yetenekler/artifacts/) — Görsel format çıktıları
 - [Skills](/wiki/yetenekler/skills/) — Word/Excel/PPT dosya üretme
 - [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md format kuralları

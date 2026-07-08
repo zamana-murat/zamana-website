@@ -19,7 +19,7 @@ Slack ve Teams için iki farklı yaklaşım var:
 
 ### Model 1 — Claude'a Bağlamak (Connector)
 
-Claude.ai içinden Slack/Teams'e [connector](connectors/) ile bağlanırsınız. Sohbet Claude'un içinde geçer; Claude sizin yerinize Slack/Teams'i okur, özetler, arar.
+Claude.ai içinden Slack/Teams'e [connector](/wiki/araclar/connectors/) ile bağlanırsınız. Sohbet Claude'un içinde geçer; Claude sizin yerinize Slack/Teams'i okur, özetler, arar.
 
 **Tipik kullanım:**
 
@@ -49,7 +49,7 @@ claude.ai içinde:
 4. Hangi yetkileri verdiğinizi okuyun (kanal okuma, DM okuma, vb.)
 5. Onaylayın → bağlantı aktif
 
-[Connectors](connectors/) sayfası genel akışı açıklar.
+[Connectors](/wiki/araclar/connectors/) sayfası genel akışı açıklar.
 
 **Kurumsal Slack/Teams'te:** OAuth onayını **workspace yöneticisi** vermelidir. Çalışan tek başına bağlayamaz. IT ile konuşulması gereken bir adım. [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası bu süreci açıklar.
 
@@ -117,9 +117,9 @@ Slack/Teams entegrasyonu IT ekibinin aktif onayını gerektirir. Hassas konular:
 
 ## İlgili Sayfalar
 
-- [Connectors](connectors/) — Genel connector mantığı
+- [Connectors](/wiki/araclar/connectors/) — Genel connector mantığı
 - [MCP Nedir?](/wiki/mcp/nedir/) — Slack/Teams için custom MCP de yazılabilir
-- [Cowork Modu](cowork-modu/) — Bu entegrasyonlar Cowork ile birleşince güç katar
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Bu entegrasyonlar Cowork ile birleşince güç katar
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — IT açısından değerlendirme
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Kim ne kullanabilir
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri akışı ve haklar

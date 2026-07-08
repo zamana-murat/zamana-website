@@ -8,9 +8,9 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-**Sıfırdan iyi bir [CLAUDE.md](nedir/) yazmak ilk seferde zor.** Bu sayfa rol bazlı şablonlar sunar — kopyalayın, kendi bilgilerinizle kişiselleştirin, başlayın.
+**Sıfırdan iyi bir [CLAUDE.md](/wiki/claude-md/nedir/) yazmak ilk seferde zor.** Bu sayfa rol bazlı şablonlar sunar — kopyalayın, kendi bilgilerinizle kişiselleştirin, başlayın.
 
-Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude bazı kuralları unutur ([Hata Ayıklama](hata-ayiklama/) sayfasında detay).
+Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude bazı kuralları unutur ([Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında detay).
 
 ## Nasıl Kullanılır
 
@@ -19,7 +19,7 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 3. Köşeli parantezli yerleri **kendi bilgilerinizle** doldurun: `[Adınız]`, `[Şirket]`, `[Sektör]`
 4. Kuralları kendi tercihlerinize göre düzenleyin
 5. claude.ai'da bir [Project](/wiki/araclar/projects/) oluşturup orada knowledge olarak yükleyin
-6. İlk hafta gözleyin, gerekirse [Hata Ayıklama](hata-ayiklama/) sayfasına bakarak iyileştirin
+6. İlk hafta gözleyin, gerekirse [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakarak iyileştirin
 
 ## 1. Satış Profesyoneli
 
@@ -378,19 +378,19 @@ organizasyonun BT altyapısını yönetiyorum.
 
 **Kişiselleştirin.** Şablon başlangıç noktası, son nokta değil. İlk haftada en az 5 kez güncelleme yapın.
 
-**Çalıştığını test edin.** [Hata Ayıklama](hata-ayiklama/) sayfasındaki test prosedürünü uygulayın.
+**Çalıştığını test edin.** [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasındaki test prosedürünü uygulayın.
 
-**Şirket CLAUDE.md ile uyumlu olsun.** [Takım CLAUDE.md](takim-claude-md/) varsa, onunla çelişen kuralları silin.
+**Şirket CLAUDE.md ile uyumlu olsun.** [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) varsa, onunla çelişen kuralları silin.
 
 **Üç ayda bir gözden geçirin.** Rolünüz, projeleriniz, müşteri portföyünüz değişiyor → CLAUDE.md de değişmeli.
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](nedir/) — Temeller
-- [Nasıl Yazılır?](nasil-yazilir/) — Yazım rehberi
-- [Örnekler](ornekler/) — Çalışan örnekler
-- [Takım CLAUDE.md](takim-claude-md/) — Şirket genelinde paylaşım
-- [Hata Ayıklama](hata-ayiklama/) — Çalışmıyorsa
-- [Memory Yönetimi](memory-yonetimi/) — Kalıcı bellekle ilişki
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Temeller
+- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Yazım rehberi
+- [Örnekler](/wiki/claude-md/ornekler/) — Çalışan örnekler
+- [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) — Şirket genelinde paylaşım
+- [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) — Çalışmıyorsa
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — Kalıcı bellekle ilişki
 - [Departmanlar](/wiki/departmanlar/) — Rol bazlı kullanım derinliği
 

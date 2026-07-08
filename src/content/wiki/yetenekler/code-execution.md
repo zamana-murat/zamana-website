@@ -11,7 +11,7 @@ lastUpdated: "2026-05-06"
 
 **Claude, sohbet içinde gerçek Python kodu yazar ve onu kendi sandbox'ında çalıştırır.** Bu, dil modeli "tahminine" değil **gerçek hesaplamaya** dayanır. Bir Excel açmadan veri analizi, grafik, hesap tablosu çıktısı — Claude'un içinden alabilirsiniz.
 
-Bu sayfa code execution yeteneğinin ne olduğunu, hangi senaryolarda iş profesyoneli için değer ürettiğini ve [Skills](skills/) ile ilişkisini anlatır.
+Bu sayfa code execution yeteneğinin ne olduğunu, hangi senaryolarda iş profesyoneli için değer ürettiğini ve [Skills](/wiki/yetenekler/skills/) ile ilişkisini anlatır.
 
 ## "Code Execution" — İş Kullanıcısı İçin Ne Demek?
 
@@ -38,7 +38,7 @@ Bütçe modeli, ROI hesabı, faiz/amortisman hesaplaması — bunların tümü m
 
 ### Grafik / Görselleştirme
 
-Verinizi grafiksel olarak görmek istiyorsunuz. Bar chart, line chart, pie chart, scatter plot — Claude Python (matplotlib, plotly) ile bunları üretir, [Artifact](artifacts/) olarak gösterir.
+Verinizi grafiksel olarak görmek istiyorsunuz. Bar chart, line chart, pie chart, scatter plot — Claude Python (matplotlib, plotly) ile bunları üretir, [Artifact](/wiki/yetenekler/artifacts/) olarak gösterir.
 
 ### Veri Temizleme
 
@@ -82,7 +82,7 @@ Claude basit hesaplarda bile bunu yapar; karmaşık olanlarda zorunlu.
 - **PyPDF2 / pdfplumber** — PDF okuma
 - **requests** — sınırlı web isteği
 
-Bazı kütüphaneler sandbox'ta yoktur (örn. internet'e açık veritabanı bağlantısı). [Skills](skills/) bu eksikliği doldurur.
+Bazı kütüphaneler sandbox'ta yoktur (örn. internet'e açık veritabanı bağlantısı). [Skills](/wiki/yetenekler/skills/) bu eksikliği doldurur.
 
 ## Pratik Örnek: Excel Analizi
 
@@ -97,7 +97,7 @@ Claude code execution ile:
 3. Kategori bazında pivot → en çok satan
 4. Müşteri başına ortalama hesaplar
 5. matplotlib ile 3 ayrı grafik üretir
-6. Çıktıyı [Artifact](artifacts/) olarak gösterir
+6. Çıktıyı [Artifact](/wiki/yetenekler/artifacts/) olarak gösterir
 7. Kodu da paylaşır (isteyen okur, isteyen atlar)
 
 5 dakikada bir analist günlük iş çıkar.
@@ -109,7 +109,7 @@ Claude code execution ile:
 İki yetenek birlikte güç katlar:
 
 - **Code execution** → veri işleme, hesaplama, görselleştirme
-- **[Skills](skills/)** → çıktıyı .docx / .xlsx / .pptx dosya olarak üretme
+- **[Skills](/wiki/yetenekler/skills/)** → çıktıyı .docx / .xlsx / .pptx dosya olarak üretme
 
 Senaryo:
 
@@ -120,7 +120,7 @@ Claude:
 2. Skills ile sonuçları Excel'e yazıyor
 3. Sonuç olarak indirilebilir .xlsx dosyası
 
-[Skills](skills/) ve [Dosya İşleme](file-handling/) sayfaları bu boyutu detaylandırır.
+[Skills](/wiki/yetenekler/skills/) ve [Dosya İşleme](/wiki/yetenekler/file-handling/) sayfaları bu boyutu detaylandırır.
 
 ## Sınırlar
 
@@ -192,9 +192,9 @@ Sıkça kullanılabilecek prompt başlangıçları:
 
 ## İlgili Sayfalar
 
-- [Skills](skills/) — .xlsx, .docx, .pptx üretme
-- [Artifacts](artifacts/) — Görselleştirme çıktıları
-- [Dosya İşleme](file-handling/) — Excel, CSV, PDF yükleme
+- [Skills](/wiki/yetenekler/skills/) — .xlsx, .docx, .pptx üretme
+- [Artifacts](/wiki/yetenekler/artifacts/) — Görselleştirme çıktıları
+- [Dosya İşleme](/wiki/yetenekler/file-handling/) — Excel, CSV, PDF yükleme
 - [Projects](/wiki/araclar/projects/) — Veri kalıcılığı
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Code execution Cowork ile birleşince
 - [Planlar](/wiki/temeller/planlar/) — Hangi planda hangi sınır

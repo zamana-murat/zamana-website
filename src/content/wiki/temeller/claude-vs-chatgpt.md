@@ -292,9 +292,9 @@ Bu eksenler değiştikçe wiki güncellenir.
 
 ## İlgili Sayfalar
 
-- [Claude Nedir?](claude-nedir/) — Temel kavram
-- [Claude Modelleri](modeller/) — Haiku / Sonnet / Opus
-- [Claude Planları](planlar/) — Fiyat ve özellik detayları
+- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Temel kavram
+- [Claude Modelleri](/wiki/temeller/modeller/) — Haiku / Sonnet / Opus
+- [Claude Planları](/wiki/temeller/planlar/) — Fiyat ve özellik detayları
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Claude'un kurumsal çalışma ortamı
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Şeffaf kalıcı hafıza
 

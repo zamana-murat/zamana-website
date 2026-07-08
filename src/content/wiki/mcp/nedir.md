@@ -117,7 +117,7 @@ Detaylar için: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bak
 
 ## İlgili Sayfalar
 
-- [MCP Bağlantı Listesi](baglanti-listesi/) — Mevcut connector'ların detaylı katalogu
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Mevcut connector'ların detaylı katalogu
 - [Skills](/wiki/yetenekler/skills/) — Plugin'lerin içinde gelen uzmanlık paketleri
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Connector'ların yaşadığı ortam
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Connector güvenlik mimarisi

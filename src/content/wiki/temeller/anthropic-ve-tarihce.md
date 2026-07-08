@@ -10,7 +10,7 @@ lastUpdated: "2026-06-03"
 
 **Anthropic, Claude'u yapan şirkettir.** Kurumsal bir aracı sözleşmeye bağlamadan önce arkasındaki şirketi tanımak doğal — bu sayfa Anthropic'i, kuruluşunu, değerlerini ve Claude'un model tarihçesini özetler.
 
-[Claude Nedir?](claude-nedir/) sayfası ürünün ne olduğunu anlatır; bu sayfa **kim yapıyor, neye değer veriyor** sorularına cevap verir.
+[Claude Nedir?](/wiki/temeller/claude-nedir/) sayfası ürünün ne olduğunu anlatır; bu sayfa **kim yapıyor, neye değer veriyor** sorularına cevap verir.
 
 ## Kuruluş — 2021, OpenAI'den Ayrılış
 
@@ -26,7 +26,7 @@ Anthropic geleneksel bir kâr amaçlı şirket değil. **Public Benefit Corporat
 
 Bunun üzerine **Long-Term Benefit Trust** adlı bir vakıf, Anthropic'in uzun vadeli kararlarını insanlık yararına yönlendirme yetkisine sahiptir. Bu yapı, ticari baskı arttıkça güvenlik tavizini kontrol altında tutmak için tasarlandı.
 
-**Pratik anlamı:** Anthropic teorik olarak hızlı para için risk almayacak şekilde yapılandırılmış. Bu kurumsal alıcı için bir güven sinyalidir — özellikle [KVKK](gizlilik-kvkk/) ve veri uygulamaları açısından.
+**Pratik anlamı:** Anthropic teorik olarak hızlı para için risk almayacak şekilde yapılandırılmış. Bu kurumsal alıcı için bir güven sinyalidir — özellikle [KVKK](/wiki/temeller/gizlilik-kvkk/) ve veri uygulamaları açısından.
 
 ## Constitutional AI — Anthropic'in Ayırt Edici Yöntemi
 
@@ -89,7 +89,7 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Nisan 2026 | **Claude Opus 4.7** (1M context) | En güçlü Opus; uzun çalışan görevler, yüksek çözünürlüklü görsel |
 | Mayıs 2026 | **Claude Opus 4.8** | Daha güçlü agentic muhakeme, varsayılan yüksek çaba, dynamic workflows; üç kat ucuz Fast mode |
 
-İsimlendirme mantığı için [Modeller](modeller/) sayfasına bakın — Haiku/Sonnet/Opus seçimi pratik fark yaratır.
+İsimlendirme mantığı için [Modeller](/wiki/temeller/modeller/) sayfasına bakın — Haiku/Sonnet/Opus seçimi pratik fark yaratır.
 
 ## "Claude" İsmi Nereden?
 
@@ -100,7 +100,7 @@ Modelin adı, bilgi kuramı ve dijital iletişimin babası **Claude Shannon**'da
 Bilinen çizgiler:
 
 - **Araştırmacı ağırlıklı.** Şirketin önemli bir kısmı doğrudan AI güvenliği ve hizalama (alignment) araştırması yapıyor
-- **Şeffaflık önceliği.** Model sınırları, [yetersizlikleri](sinirlamalar/), hata türleri Anthropic tarafından açıkça belgeleniyor
+- **Şeffaflık önceliği.** Model sınırları, [yetersizlikleri](/wiki/temeller/sinirlamalar/), hata türleri Anthropic tarafından açıkça belgeleniyor
 - **Yavaş ilerleme.** Yeni özellik çıkarma hızı OpenAI veya Google'a göre daha temkinli
 - **CEO erişilebilir.** Dario Amodei düzenli olarak teknik yazılar yazıyor, sektörün önemli sorularına kamuoyu önünde cevap veriyor
 
@@ -108,7 +108,7 @@ Bilinen çizgiler:
 
 Anthropic'in **Türkiye'de doğrudan ofisi yoktur.** Lokalize satış, teknik destek veya hukuki temsilci bulunmaz. Türkiye'deki kullanıcılar Claude'u doğrudan claude.ai üzerinden kullanır; Türkçe iş bağlamında uyum, faturalandırma ve KVKK tarafı ayrıca yönetilmesi gereken konulardır.
 
-[Türkçe Performansı](turkce-performansi/) sayfası dil tarafının kalitesini, [Gizlilik ve KVKK](gizlilik-kvkk/) sayfası Türkiye'deki yasal duruma uyum tarafını anlatır.
+[Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası dil tarafının kalitesini, [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası Türkiye'deki yasal duruma uyum tarafını anlatır.
 
 ## Anthropic Neden Önemli?
 
@@ -122,10 +122,10 @@ Birkaç bağlamda:
 
 ## İlgili Sayfalar
 
-- [Claude Nedir?](claude-nedir/) — Ürünün kendisi
-- [Modeller](modeller/) — Haiku / Sonnet / Opus seçimi
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — Veri uygulamaları
-- [Sınırlamalar](sinirlamalar/) — Anthropic'in kabul ettiği kısıtlar
-- [Claude vs ChatGPT](claude-vs-chatgpt/) — Rakip karşılaştırması
-- [Yaygın İtirazlar](itirazlar/) — "Bu şirkete neden güvenelim?" itirazına detay cevap
+- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Ürünün kendisi
+- [Modeller](/wiki/temeller/modeller/) — Haiku / Sonnet / Opus seçimi
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri uygulamaları
+- [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Anthropic'in kabul ettiği kısıtlar
+- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) — Rakip karşılaştırması
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — "Bu şirkete neden güvenelim?" itirazına detay cevap
 

@@ -136,7 +136,7 @@ MEB denetim öncesi belge hazırlığı — yıllık plan, performans dosyası, 
 
 ### Performans Değerlendirme
 
-Öğretmen performans değerlendirmesi (yıllık) — yapıcı geri bildirim çerçevesi. [İK departmanı](insan-kaynaklari/) sayfasında genel performans yaklaşımı.
+Öğretmen performans değerlendirmesi (yıllık) — yapıcı geri bildirim çerçevesi. [İK departmanı](/wiki/departmanlar/insan-kaynaklari/) sayfasında genel performans yaklaşımı.
 
 ### Bütçe ve Kaynak Planlama
 
@@ -194,7 +194,7 @@ Eğitmen için temel yapı:
 
 **Engel:** "Öğrenci verisi KVKK kapsamında çok hassas."
 
-**Çözüm:** Tüm öğrenci verisi anonimleştirilerek girilir. KVKK aydınlatma metinlerinde AI kullanımı belirtilebilir. [Hukuk departmanı](hukuk/) bağlam verir.
+**Çözüm:** Tüm öğrenci verisi anonimleştirilerek girilir. KVKK aydınlatma metinlerinde AI kullanımı belirtilebilir. [Hukuk departmanı](/wiki/departmanlar/hukuk/) bağlam verir.
 
 **Engel:** "Öğretmenler teknolojiye dirençli."
 
@@ -212,10 +212,10 @@ Tek başına bir öğretmen / koç / kurs eğitmeni için Claude'un değeri ola�
 
 ## İlgili Sayfalar
 
-- [Pazarlama Departmanı](pazarlama/) — Eğitim kurumu pazarlaması
-- [İK Departmanı](insan-kaynaklari/) — Öğretmen yönetimi
-- [Müşteri Hizmetleri](musteri-hizmetleri/) — Veli iletişimi
-- [Hukuk Departmanı](hukuk/) — KVKK, eğitim mevzuatı
+- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/) — Eğitim kurumu pazarlaması
+- [İK Departmanı](/wiki/departmanlar/insan-kaynaklari/) — Öğretmen yönetimi
+- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) — Veli iletişimi
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — KVKK, eğitim mevzuatı
 - [Research Mode](/wiki/yetenekler/research-mode/) — Akademik tarama
 - [Skills](/wiki/yetenekler/skills/) — Sunum, çalışma kâğıdı üretme
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Sınav tarzınız öğretme

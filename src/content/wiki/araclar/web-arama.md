@@ -113,12 +113,12 @@ Web arama tüm planlarda mevcut, **Pro / Max / Team / Enterprise** kullanıcıla
 
 **Birden çok kaynak isteyin.** "En az 3 farklı bağımsız kaynaktan bilgi topla, çelişki varsa söyle." Bu hem kalite hem doğrulama açısından değerli.
 
-**Sonuçları bir Project'e kaydedin.** Tekrar tekrar aynı konuda araştırıyorsanız, [Projects](projects/) içinde özet biriktirin — her seferinde sıfırdan aramaya gerek kalmaz.
+**Sonuçları bir Project'e kaydedin.** Tekrar tekrar aynı konuda araştırıyorsanız, [Projects](/wiki/araclar/projects/) içinde özet biriktirin — her seferinde sıfırdan aramaya gerek kalmaz.
 
 ## İlgili Sayfalar
 
-- [Claude Chat](claude-chat/) — Web arama burada otomatik devreye girer
-- [Cowork Modu](cowork-modu/) — Cowork'te web + dosya + skills birleşir
+- [Claude Chat](/wiki/araclar/claude-chat/) — Web arama burada otomatik devreye girer
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Cowork'te web + dosya + skills birleşir
 - [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Halüsinasyon ve doğrulama
 - [Türkçe Performansı](/wiki/temeller/turkce-performansi/) — Türkçe arama kalitesi
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Web sonuçlarına körü körüne güvenmek

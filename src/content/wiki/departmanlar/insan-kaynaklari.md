@@ -150,5 +150,5 @@ Toplam süre: 35 dakika. Normal süreç: 2-3 saat + 1-2 tur iç müzakere.
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Hukuki sınırlar
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Çalışan verisi hassasiyeti
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Şirket kültürü ve ton
-- [Hukuk ve Uyum](hukuk/) — İş Kanunu nüansları
+- [Hukuk ve Uyum](/wiki/departmanlar/hukuk/) — İş Kanunu nüansları
 

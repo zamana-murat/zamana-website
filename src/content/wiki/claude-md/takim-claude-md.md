@@ -8,7 +8,7 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-**[CLAUDE.md](nedir/) bireysel başlar, ama şirkette 6 kişi aynı yönergeyi paylaşmak istediğinde takım versiyonu gerekir.** Bu sayfa paylaşılan CLAUDE.md'nin nasıl kurulduğunu, kimin editlediğini, sürüm sorunlarının nasıl yönetildiğini anlatır.
+**[CLAUDE.md](/wiki/claude-md/nedir/) bireysel başlar, ama şirkette 6 kişi aynı yönergeyi paylaşmak istediğinde takım versiyonu gerekir.** Bu sayfa paylaşılan CLAUDE.md'nin nasıl kurulduğunu, kimin editlediğini, sürüm sorunlarının nasıl yönetildiğini anlatır.
 
 ## Bireysel mi Takım mı?
 
@@ -51,7 +51,7 @@ Claude'un sektörel doğru hizalanması için temel.
 
 > *Müşteri yanıtları için şu yapı kullanılır: 1) Selamlama, 2) Kısa onay, 3) Cevap, 4) Sıradaki adım, 5) Kapanış.*
 
-[Şablon Kütüphanesi](sablon-kutuphanesi/) sayfasında genişletilebilir.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında genişletilebilir.
 
 ### 6. Yasak Kelimeler / Cümleler
 
@@ -180,14 +180,14 @@ Yeni çalışan ilk haftasında:
 
 CLAUDE.md çok uzunsa Claude bazı kuralları görmezden gelmeye başlar. **300 kelimeyi geçmesin** kuralı pratiktir. Detaylar yerine **mutlaklar** yazılsın.
 
-Detaylı şablonlar [Şablon Kütüphanesi](sablon-kutuphanesi/)'nde, Claude'a "şu şablonu kullan" diye hitap ederek çağrılır.
+Detaylı şablonlar [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'nde, Claude'a "şu şablonu kullan" diye hitap ederek çağrılır.
 
 ### "Çalışan şirket CLAUDE.md'sine uymadı"
 
 İki olasılık:
 
 1. CLAUDE.md çok uzun veya çelişkili → kısaltın, netleştirin
-2. Bireysel CLAUDE.md şirketle çelişiyor → çalışanla görüşün, [Hata Ayıklama](hata-ayiklama/) sayfasına bakın
+2. Bireysel CLAUDE.md şirketle çelişiyor → çalışanla görüşün, [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakın
 
 ### "Şirket CLAUDE.md'sini kim güncellesin, kimse sahiplenmiyor"
 
@@ -233,16 +233,16 @@ sahip: [Pozisyon]
 - [vs.]
 ```
 
-[Örnekler](ornekler/) sayfasında daha kapsamlı örnekler var.
+[Örnekler](/wiki/claude-md/ornekler/) sayfasında daha kapsamlı örnekler var.
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](nedir/) — Bireysel başlangıç
-- [Nasıl Yazılır?](nasil-yazilir/) — Yazım rehberi
-- [Örnekler](ornekler/) — Hazır şablonlar
-- [Şablon Kütüphanesi](sablon-kutuphanesi/) — Rol bazlı şablonlar
-- [Hata Ayıklama](hata-ayiklama/) — CLAUDE.md işe yaramıyorsa
-- [Memory Yönetimi](memory-yonetimi/) — CLAUDE.md ile kalıcı bellek farkı
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Bireysel başlangıç
+- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Yazım rehberi
+- [Örnekler](/wiki/claude-md/ornekler/) — Hazır şablonlar
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Rol bazlı şablonlar
+- [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) — CLAUDE.md işe yaramıyorsa
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — CLAUDE.md ile kalıcı bellek farkı
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika belgesiyle uyum
 - [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Enterprise plan organizasyon düzeyi
 

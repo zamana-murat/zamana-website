@@ -40,7 +40,7 @@ Aynı ürün için Trendyol, Hepsiburada, Amazon TR varyasyonları. Karakter sı
 
 ### Çeviri ve Lokalizasyon
 
-İhracat satışı yapan e-ticaret için ürün açıklaması çevirisi. İngilizce, Almanca, Arapça, Rusça — Claude profesyonel ton tutar, kültürel uyumluluk gözetir. [İhracat departmanı](ihracat/) sayfası bu boyutu detaylandırır.
+İhracat satışı yapan e-ticaret için ürün açıklaması çevirisi. İngilizce, Almanca, Arapça, Rusça — Claude profesyonel ton tutar, kültürel uyumluluk gözetir. [İhracat departmanı](/wiki/departmanlar/ihracat/) sayfası bu boyutu detaylandırır.
 
 ### Ürün Özellik Tablosu
 
@@ -78,7 +78,7 @@ Yorumdan **ürün açıklamasına** bilgi geri akışı. "Müşteriler sürekli 
 - Aciliyet (son tarih)
 - CTA (net aksiyon)
 
-[Pazarlama departmanı](pazarlama/) sayfası genel pazarlama yaklaşımını detaylandırır.
+[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfası genel pazarlama yaklaşımını detaylandırır.
 
 ### E-posta Newsletter
 
@@ -112,7 +112,7 @@ Sepet terk verileriyle Claude'a sorun: hangi ürünlerde, hangi adımda, hangi s
 
 E-ticaret destek genelde aynı 30 soruyu farklı şekillerde sorar. Claude bunlar için doğal, kişiselleştirilmiş yanıt taslakları üretir.
 
-[Müşteri hizmetleri](musteri-hizmetleri/) sayfası bu boyutu derinleştirir.
+[Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası bu boyutu derinleştirir.
 
 ### İade / Şikayet Yanıtı
 
@@ -192,7 +192,7 @@ E-ticaret çalışanı için temel:
 
 **Engel:** "SEO için anahtar kelime stratejimiz var, Claude bilmiyor."
 
-**Çözüm:** Anahtar kelime listesini her ürün için Claude'a verin: "Şu kelimeler doğal şekilde geçsin." [Pazarlama departmanı](pazarlama/) SEO derinleşmesi.
+**Çözüm:** Anahtar kelime listesini her ürün için Claude'a verin: "Şu kelimeler doğal şekilde geçsin." [Pazarlama departmanı](/wiki/departmanlar/pazarlama/) SEO derinleşmesi.
 
 ## Bireysel ve Küçük İşletme
 
@@ -200,10 +200,10 @@ Tek kişilik e-ticaret işletmesi için Claude'un değeri olağanüstü. 1 kişi
 
 ## İlgili Sayfalar
 
-- [Pazarlama Departmanı](pazarlama/) — Pazarlama derinliği
-- [Müşteri Hizmetleri](musteri-hizmetleri/) — Destek tarafı
-- [Satış Departmanı](satis/) — B2B perakende
-- [İhracat Departmanı](ihracat/) — Sınır ötesi e-ticaret
+- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/) — Pazarlama derinliği
+- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) — Destek tarafı
+- [Satış Departmanı](/wiki/departmanlar/satis/) — B2B perakende
+- [İhracat Departmanı](/wiki/departmanlar/ihracat/) — Sınır ötesi e-ticaret
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Marka voice öğretme
 - [Code Execution](/wiki/yetenekler/code-execution/) — Yorum / satış analizi
 - [Research Mode](/wiki/yetenekler/research-mode/) — Rakip araştırma

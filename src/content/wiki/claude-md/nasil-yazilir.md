@@ -9,7 +9,7 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-[CLAUDE.md'nin ne olduğunu](nedir/) okuduysanız, sıradaki soru doğal: **peki bunu ben nasıl yazarım?**
+[CLAUDE.md'nin ne olduğunu](/wiki/claude-md/nedir/) okuduysanız, sıradaki soru doğal: **peki bunu ben nasıl yazarım?**
 
 Bu sayfa adım adım bir rehberdir. Sonunda kendi CLAUDE.md'nizin ilk sürümünü elinizde olmuş olur.
 
@@ -208,8 +208,8 @@ Bu 30 dakikada işe yarar bir CLAUDE.md'niz olur. Mükemmel olmayacak. Ama yaşa
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](nedir/) — Temel kavram
-- [CLAUDE.md Örnekleri](ornekler/) — Farklı roller için gerçek örnekler
-- [Memory Yönetimi](memory-yonetimi/) — CLAUDE.md dışındaki hafıza mekanizmaları
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Temel kavram
+- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/) — Farklı roller için gerçek örnekler
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — CLAUDE.md dışındaki hafıza mekanizmaları
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — CLAUDE.md'nin yaşadığı yer
 

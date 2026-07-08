@@ -94,7 +94,7 @@ Bireysel kullanıcıların çoğu Claude aboneliğini kendi adlarına alıyor. S
 
 ## Plan Maliyeti — Bütçe Tahmini
 
-[Planlar](planlar/) sayfası fiyat detayını verir. Tipik kurumsal senaryolarda yıllık bütçe:
+[Planlar](/wiki/temeller/planlar/) sayfası fiyat detayını verir. Tipik kurumsal senaryolarda yıllık bütçe:
 
 | Plan | Aylık (USD) | Yıllık (USD) |
 |---|---|---|
@@ -105,7 +105,7 @@ Bireysel kullanıcıların çoğu Claude aboneliğini kendi adlarına alıyor. S
 | Karma (1. ay Max, sonra Pro) × 6 kişi | ~$28/kişi/ay ortalama | ~$2.000 |
 | Team × 5 kullanıcı | ~$150 | ~$1.800 |
 
-**Pratik öneri:** Claude'a yeni başlayanlar **ilk ay Max 5x ($100/ay)** ile başlamayı tercih ediyor — Pro plan ($20/ay) günlük limitlere yeni kullanıcı tarafından hızlı çarpılır ve "çalışmıyor" hissi yaratır. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](planlar/).
+**Pratik öneri:** Claude'a yeni başlayanlar **ilk ay Max 5x ($100/ay)** ile başlamayı tercih ediyor — Pro plan ($20/ay) günlük limitlere yeni kullanıcı tarafından hızlı çarpılır ve "çalışmıyor" hissi yaratır. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](/wiki/temeller/planlar/).
 
 ## Mali Müşavirinizle Konuşacaklarınız
 
@@ -121,7 +121,7 @@ Aboneliği başlatmadan önce mali müşavirinize sormanız gereken sorular:
 
 ## Şirket Politikası Tavsiyesi
 
-Claude aboneliği başlattıysanız, ödeme ve muhasebe akışını [Şirket İçi Politika](sirket-ici-politika/) belgenizin bir parçası yapın:
+Claude aboneliği başlattıysanız, ödeme ve muhasebe akışını [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) belgenizin bir parçası yapın:
 
 - Hangi çalışana hangi plan veriliyor?
 - Faturalar nereden alınır, kime iletilir?
@@ -134,14 +134,14 @@ Bunlar küçük şeyler ama yıl sonunda denetimde sorun çıkartmamak için ön
 
 Hayır. Claude aboneliği **resmi bir hizmet alımıdır** — Anthropic invoice'ı ile belgelenir, KDV beyanı yapılır, gider olarak muhasebeleştirilir. Vergi açısından şüpheli bir akış değil.
 
-Sadece kayıt disiplinini doğru tutmak gerekir. [Yaygın İtirazlar](itirazlar/) sayfasında bu ve benzeri finans-muhasebe itirazlarına daha geniş cevaplar var.
+Sadece kayıt disiplinini doğru tutmak gerekir. [Yaygın İtirazlar](/wiki/temeller/itirazlar/) sayfasında bu ve benzeri finans-muhasebe itirazlarına daha geniş cevaplar var.
 
 ## İlgili Sayfalar
 
-- [Planlar](planlar/) — Hangi plan ne kadar
-- [Takım ve Admin](takim-ve-admin/) — Team / Enterprise plan faturalandırma farkı
-- [Yaygın İtirazlar](itirazlar/) — Finans direktörü itirazlarına detay
-- [Şirket İçi Politika](sirket-ici-politika/) — Ödeme prosedürü
+- [Planlar](/wiki/temeller/planlar/) — Hangi plan ne kadar
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Team / Enterprise plan faturalandırma farkı
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — Finans direktörü itirazlarına detay
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Ödeme prosedürü
 - [Finans Departmanı](/wiki/departmanlar/finans/) — Finans birimi için Claude kullanımı
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — Veri tarafı (vergi tarafı değil)
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri tarafı (vergi tarafı değil)
 

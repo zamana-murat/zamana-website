@@ -29,7 +29,7 @@ CLAUDE.md, Projects ve memory/ klasörü — bunlar o "geceyarısı notları" n�
 **Ne zaman okunur:** Her Cowork oturumunun başında, otomatik.
 **İçerik:** Değişmeyen gerçekler — kim olduğunuz, şirketiniz, rolünüz, tercihleriniz, terminolojiniz.
 
-Bu en temel ve en kritik katmandır. Detay: [CLAUDE.md Nedir?](nedir/) ve [CLAUDE.md Nasıl Yazılır?](nasil-yazilir/).
+Bu en temel ve en kritik katmandır. Detay: [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) ve [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/).
 
 **Güncelleme sıklığı:** Bir şey değiştiğinde. Bazı çalışanlarda bu ayda bir olur, bazılarında haftada birkaç kez.
 
@@ -155,9 +155,9 @@ Aceleniz yoksa her seviye doğal olarak gelir. Baskı yapmayın.
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](nedir/) — Katman 1 temeli
-- [CLAUDE.md Nasıl Yazılır?](nasil-yazilir/) — Pratik rehber
-- [CLAUDE.md Örnekleri](ornekler/) — Roller için hazır örnekler
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Katman 1 temeli
+- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Pratik rehber
+- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/) — Roller için hazır örnekler
 - [Projects (claude.ai)](/wiki/araclar/projects/) — Katman 2 detayı
 - [Skills](/wiki/yetenekler/skills/) — Memory skill dahil uzmanlık paketleri
 

@@ -119,6 +119,19 @@ Nadir durumlardır. Aşağıdaki işaretler varsa manuel Opus seçimi değerlend
 
 Bu işaretler yoksa Sonnet'ten ayrılmayın.
 
+## En Yeni Modelden Verim Almak
+
+İki pratik nokta, modellerin yenilenme hızıyla ilgili:
+
+**Yeni sürüm, eski sürümün bir "yaması" değildir.** Yeni bir Claude sürümü geldiğinde davranış inceden değişebilir; bir görevde eskiden işe yarayan bir prompt, yenide farklı sonuç verebilir. Kritik iş akışlarınızı yeni sürüm çıkınca **yeniden test edin**, "nasılsa daha iyisi" diye körü körüne güvenmeyin.
+
+**En yeni Opus'tan (4.8) en iyi verimi almak için:**
+
+- **Talimatları daha literal alır.** "Kısa tut", "sadece tabloyu ver" gibi net direktiflere daha sadık uyar; ne istediğinizi açık söyleyin.
+- **Kaynağı isimle belirtin.** Belirli bir veri önemliyse hangi dosyadan/connector'dan alacağını açıkça yazın; aksi halde mevcut bilgisini kullanmayı tercih eder, gereksiz web araması yapmaz.
+- **Adaptif düşünme + effort.** Basit soruya hızlı, karmaşık göreve derin yanıt verir; dengeyi [Effort Control](/wiki/yetenekler/effort-control/) ile elle de ayarlayabilirsiniz.
+- **İlk denemede daha temiz ofis dosyaları** üretir; revizyon turu azalır.
+
 ## Model Fiyatları ve Planlar
 
 Model seçimi doğrudan fiyata bağlıdır, ama iş kullanıcısının plan içinde kalması durumunda **ek ödeme yoktur**. Planların hangi modellere erişim verdiği aşağıdaki gibidir (genel kural):
@@ -128,7 +141,7 @@ Model seçimi doğrudan fiyata bağlıdır, ama iş kullanıcısının plan içi
 - **Max plan:** Opus'a yüksek kullanım + öncelikli erişim
 - **Team / Enterprise planları:** Tüm modellere kullanıcı başına erişim + kurumsal özellikler
 
-Plan detayları hızla değişir. Güncel fiyat ve kotaları [Claude Planları](planlar/) sayfasından kontrol edin.
+Plan detayları hızla değişir. Güncel fiyat ve kotaları [Claude Planları](/wiki/temeller/planlar/) sayfasından kontrol edin.
 
 ## Özet
 
@@ -143,9 +156,9 @@ Bir iş profesyoneli için Claude modelleri konusu neredeyse kararsız bir sorud
 
 ## İlgili Sayfalar
 
-- [Claude Nedir?](claude-nedir/) — Modellerden önce temel kavram
-- [Claude Planları](planlar/) — Hangi modellere hangi planla erişim var
-- [Claude vs ChatGPT](claude-vs-chatgpt/) — Rakip modellerle karşılaştırma
+- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Modellerden önce temel kavram
+- [Claude Planları](/wiki/temeller/planlar/) — Hangi modellere hangi planla erişim var
+- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) — Rakip modellerle karşılaştırma
 - [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — Modelden çok daha önemli: doğru prompt
 
 

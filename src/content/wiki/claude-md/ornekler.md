@@ -9,7 +9,7 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-[CLAUDE.md'yi nasıl yazacağınızı](nasil-yazilir/) öğrendiniz. Bu sayfa farklı rollere göre hazır örnekler sunar. Sizin rolünüze en yakınını kopyalayın, kendi bilgilerinizle doldurun, başlayın.
+[CLAUDE.md'yi nasıl yazacağınızı](/wiki/claude-md/nasil-yazilir/) öğrendiniz. Bu sayfa farklı rollere göre hazır örnekler sunar. Sizin rolünüze en yakınını kopyalayın, kendi bilgilerinizle doldurun, başlayın.
 
 Örnekler **gerçekçi**dir — Türkiye'deki şirket yapısı, iş kültürü ve yaygın terminoloji gözetilerek yazılmıştır.
 
@@ -366,8 +366,8 @@ Bu 20 dakika alır. Ve ertesi hafta Claude oturumlarınız niteliksel olarak far
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](nedir/) — Temel kavram
-- [CLAUDE.md Nasıl Yazılır?](nasil-yazilir/) — Adım adım rehber
-- [Memory Yönetimi](memory-yonetimi/) — CLAUDE.md dışı hafıza mekanizmaları
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Temel kavram
+- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Adım adım rehber
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — CLAUDE.md dışı hafıza mekanizmaları
 - [Departmanlar](/wiki/departmanlar/) — Role göre Claude kullanım senaryoları
 

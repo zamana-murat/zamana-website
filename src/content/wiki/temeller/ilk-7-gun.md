@@ -6,10 +6,10 @@ tags:
   - baslangic
   - checklist
   - onboarding
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
-[İlk Kurulum](ilk-kurulum/) tamam. Claude Desktop kurulu, abonelik aktif, Cowork çalışıyor. **Şimdi asıl iş başlıyor — bilgiyi alışkanlığa çevirmek.**
+[İlk Kurulum](/wiki/temeller/ilk-kurulum/) tamam. Claude Desktop kurulu, abonelik aktif, Cowork çalışıyor. **Şimdi asıl iş başlıyor — bilgiyi alışkanlığa çevirmek.**
 
 İlk haftayı **doğru** geçirirseniz Claude günlük iş akışınızın kalıcı bir parçası olur. Yanlış geçirirseniz — "denedim, işe yaramadı" grubuna katılırsınız. Aradaki fark mucizevi bir kabiliyet değil, yapılandırılmış bir hafta.
 
@@ -45,7 +45,8 @@ Bu hafta yapmanız gereken yazılı bir çıktı: müşteri e-postası, rapor ö
 > **Önce: Hangi modda, hangi modelle?**
 >
 > - **Mod: Cowork** — Claude Desktop sol üst köşesinde 3 ikon var. Soldan sağa: 💬 Chats (konuşma balonu), **Cowork** (ortadaki, küçük yatay çizgili liste ikonu), `</> Code`. **Ortadaki Cowork ikonuna tıklayın.** Sebep: CLAUDE.md dosyanız burada otomatik okunur, çıktıyı workspace klasörüne kaydedebilirsiniz. Chats'te bu yok.
-> - **Model: Sonnet (varsayılan)** — sağ üstte veya sohbet kutusunun yanında model seçici var. **Sonnet 4.6** seçili olduğunu kontrol edin. Bu hafta hep Sonnet kullanın — model seçimiyle uğraşmayın. Detay: [Modeller](modeller/).
+> - **Model: Sonnet (varsayılan)** — sağ üstte veya sohbet kutusunun yanında model seçici var. **Sonnet 4.6** seçili olduğunu kontrol edin. Bu hafta hep Sonnet kullanın, model seçimiyle uğraşmayın. Detay: [Modeller](/wiki/temeller/modeller/).
+> - **İlk devretme refleksi:** Cowork bir işe başlamadan önce sık sık **ne yapacağına dair bir plan önerir**. Bu planı okuyun, doğruysa onaylayın. Devretmenin kalbi "yap" demek değil, planı onaylamaktır. Detay: [Cowork → İlk Görevi Devretmek](/wiki/araclar/cowork-modu/).
 
 Bir promptu doğru kurmanın yapısı şu — hepsini birden ver:
 
@@ -401,7 +402,7 @@ Bulduğun her gerçek eksikliği:
 
 ### Daha Detay
 
-[4D Çerçevesi](/wiki/prompting/4d-cercevesi/) | [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) | [Sınırlamalar](sinirlamalar/)
+[4D Çerçevesi](/wiki/prompting/4d-cercevesi/) | [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) | [Sınırlamalar](/wiki/temeller/sinirlamalar/)
 
 ---
 
@@ -554,7 +555,7 @@ Yansıma olmazsa öğrenme yarım kalır. 25 dakikalık yansıma — bir sonraki
 
 ## İlgili Sayfalar
 
-- [İlk Kurulum](ilk-kurulum/) — Bu rehberden önce yapılması gerekenler
+- [İlk Kurulum](/wiki/temeller/ilk-kurulum/) — Bu rehberden önce yapılması gerekenler
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Hafıza dosyasının kavramı
 - [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — 5 bileşen yapısı
 - [Skills](/wiki/yetenekler/skills/) — Uzmanlık paketleri

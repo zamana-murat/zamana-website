@@ -5,7 +5,7 @@ tags:
   - departmanlar
   - giris
   - rol-bazli
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 Claude her departmanda farklı çalışır. **Aynı araç, farklı rollerde farklı değer üretir** — çünkü iş akışları farklı, çıktılar farklı, hukuki hassasiyetler farklı.
@@ -22,7 +22,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     Teklif, müşteri iletişimi, pipeline analizi, tender yanıtları, anlaşma teşhisi.
 
-    [→ Satış](satis/)
+    [→ Satış](/wiki/departmanlar/satis/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="bullhorn-outline" aria-hidden="true"></span> **Pazarlama ve İletişim**
 
@@ -30,7 +30,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     İçerik üretimi, kampanya planlama, kriz iletişimi, influencer brief'leri.
 
-    [→ Pazarlama](pazarlama/)
+    [→ Pazarlama](/wiki/departmanlar/pazarlama/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="calculator-variant-outline" aria-hidden="true"></span> **Finans ve Muhasebe**
 
@@ -38,7 +38,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     Rapor anlatısı, bütçe varyansı, KOSGEB/TÜBİTAK başvuruları, denetim dosyası.
 
-    [→ Finans](finans/)
+    [→ Finans](/wiki/departmanlar/finans/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="factory" aria-hidden="true"></span> **Operasyon ve Lojistik**
 
@@ -46,7 +46,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     SOP dokümantasyonu, tedarikçi yönetimi, incident raporu, NCR.
 
-    [→ Operasyon](operasyon/)
+    [→ Operasyon](/wiki/departmanlar/operasyon/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="account-group-outline" aria-hidden="true"></span> **İnsan Kaynakları**
 
@@ -54,7 +54,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     İş ilanı, performans değerlendirme, politika yazımı, onboarding.
 
-    [→ İnsan Kaynakları](insan-kaynaklari/)
+    [→ İnsan Kaynakları](/wiki/departmanlar/insan-kaynaklari/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="scale-balance" aria-hidden="true"></span> **Hukuk ve Uyum**
 
@@ -62,7 +62,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     Sözleşme taslağı, madde çıkarımı, KVKK veri sahibi talepleri, iç memolar.
 
-    [→ Hukuk](hukuk/)
+    [→ Hukuk](/wiki/departmanlar/hukuk/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="laptop" aria-hidden="true"></span> **Bilgi Teknolojileri**
 
@@ -70,7 +70,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     Teknik dokümantasyon, incident rapor, PowerShell script'leri, KVKK teknik uyum.
 
-    [→ Bilgi Teknolojileri](bilgi-teknolojileri/)
+    [→ Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="headset" aria-hidden="true"></span> **Müşteri Hizmetleri**
 
@@ -78,7 +78,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     Şikayet yanıtları, sosyal medya krizi, VIP iletişimi, FAQ.
 
-    [→ Müşteri Hizmetleri](musteri-hizmetleri/)
+    [→ Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="briefcase-outline" aria-hidden="true"></span> **İdari İşler**
 
@@ -86,7 +86,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     Yazışma, toplantı tutanağı, yönetici brifingi, yönetim kurulu paketi.
 
-    [→ İdari İşler](idari-isler/)
+    [→ İdari İşler](/wiki/departmanlar/idari-isler/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="crown-outline" aria-hidden="true"></span> **Liderlik ve Yönetim**
 
@@ -94,7 +94,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     Stratejik düşünme ortağı, bilgi sentezi, yönetim kurulu iletişimi, M&A.
 
-    [→ Liderlik](liderlik/)
+    [→ Liderlik](/wiki/departmanlar/liderlik/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="cart-outline" aria-hidden="true"></span> **Satınalma**
 
@@ -102,7 +102,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     RFP, tedarikçi değerlendirme, pazarlık hazırlığı, TCO analizi.
 
-    [→ Satınalma](satinalma/)
+    [→ Satınalma](/wiki/departmanlar/satinalma/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="earth" aria-hidden="true"></span> **İhracat ve Uluslararası Ticaret**
 
@@ -110,9 +110,15 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     LOI, FCO, SPA, CIS, pazar istihbaratı, LC uyuşmazlıkları, emtia ihracatı için pratik iş akışları.
 
-    [→ İhracat](ihracat/)
+    [→ İhracat](/wiki/departmanlar/ihracat/)
 
 </div>
+
+## Departman Değil, Senaryo: Küçük İşletme (KOBİ)
+
+Yukarıdaki 12 departman, ayrı ekiplerin olduğu orta ölçekli şirketler içindir. Ama Türkiye'deki işletmelerin çoğu **tek kişinin bütün şapkaları taktığı** KOBİ'lerdir: satışı da pazarlamayı da muhasebeyi de aynı kişi yürütür. Bu profil için ayrı bir sayfa hazırladık:
+
+- [**Küçük İşletme (KOBİ) için Claude**](/wiki/departmanlar/kobi/) — Pazartesi brifingi, kampanya, ay sonu kapanış, tahsilat takibi. Bir rol değil, tek başına her işi yürüten işletme sahibinin tam iş akışı.
 
 ## Her Departman Sayfasının İçeriği
 

@@ -8,7 +8,7 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-**[MCP](nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır.** Bu sayfa bir MCP server'ı Claude Desktop veya claude.ai'a nasıl ekleyeceğinizi adım adım anlatır.
+**[MCP](/wiki/mcp/nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır.** Bu sayfa bir MCP server'ı Claude Desktop veya claude.ai'a nasıl ekleyeceğinizi adım adım anlatır.
 
 [Connectors](/wiki/araclar/connectors/) ile karıştırmayın — connector Anthropic'in resmî, hazır entegrasyonu; MCP daha geniş ve özelleştirilebilir.
 
@@ -19,9 +19,9 @@ lastUpdated: "2026-05-06"
 | Resmî [Connector](/wiki/araclar/connectors/) listesinde (Gmail, Drive, Slack, Notion vs.) | Connector — daha kolay |
 | Listede yok ama popüler bir SaaS | MCP — büyük olasılıkla bir community MCP var |
 | Şirket içi sistem (CRM, ERP) | MCP — özel server yazılır |
-| Hassas veriyle çalışıyor | MCP + dikkatli [Güvenlik](guvenlik/) yapılandırması |
+| Hassas veriyle çalışıyor | MCP + dikkatli [Güvenlik](/wiki/mcp/guvenlik/) yapılandırması |
 
-Eğer connector seçeneğiniz varsa, MCP'ye gerek yok. Hızlı kararı [Bağlantı Listesi](baglanti-listesi/) sayfası verir.
+Eğer connector seçeneğiniz varsa, MCP'ye gerek yok. Hızlı kararı [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfası verir.
 
 ## Kurulum Yeri — Claude Desktop mı, claude.ai mi?
 
@@ -46,13 +46,13 @@ GitHub'da `anthropic/mcp-servers` repo'su (veya benzeri). Yaygın olanlar:
 - **brave-search** — web arama
 - **slack** — Slack workspace
 
-[Popüler MCP'ler](populer-mcpler/) sayfasında detay ve seçim kriterleri.
+[Popüler MCP'ler](/wiki/mcp/populer-mcpler/) sayfasında detay ve seçim kriterleri.
 
 ### B. Topluluk MCP'leri
 
 Açık kaynak topluluğu yüzlerce MCP server üretti — Notion, Linear, Jira, Salesforce, AWS, vb. GitHub'da arayarak veya MCP marketplace'lerinden bulabilirsiniz.
 
-**Dikkat:** Topluluk MCP'leri **denetlenmemiş** olabilir. [Güvenlik](guvenlik/) sayfasına bakın.
+**Dikkat:** Topluluk MCP'leri **denetlenmemiş** olabilir. [Güvenlik](/wiki/mcp/guvenlik/) sayfasına bakın.
 
 ### C. Şirket İçi Özel MCP
 
@@ -237,7 +237,7 @@ Kendi sisteminize MCP yazmak için:
 4. Test edin (Claude Desktop'ta yerel olarak)
 5. Şirket içinde dağıtım (genelde dahili NPM registry, internal Docker, vs.)
 
-[BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ve [Güvenlik](guvenlik/) sayfaları kurumsal pratiği detaylandırır.
+[BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ve [Güvenlik](/wiki/mcp/guvenlik/) sayfaları kurumsal pratiği detaylandırır.
 
 ## Birden Fazla Server Birlikte
 
@@ -301,10 +301,10 @@ Ama **sırlarınızı (token, şifre) git'e koymayın.** Env değişkeni kullan�
 
 ## İlgili Sayfalar
 
-- [MCP Nedir?](nedir/) — Genel kavramlar
-- [Güvenlik](guvenlik/) — MCP güvenlik modeli
-- [Popüler MCP'ler](populer-mcpler/) — Ne kurmaya başlamalı
-- [Bağlantı Listesi](baglanti-listesi/) — MCP + connector listesi
+- [MCP Nedir?](/wiki/mcp/nedir/) — Genel kavramlar
+- [Güvenlik](/wiki/mcp/guvenlik/) — MCP güvenlik modeli
+- [Popüler MCP'ler](/wiki/mcp/populer-mcpler/) — Ne kurmaya başlamalı
+- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — MCP + connector listesi
 - [Connectors](/wiki/araclar/connectors/) — Hazır alternatif
 - [Claude Desktop](/wiki/araclar/claude-desktop/) — MCP'nin yaşadığı uygulama
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Kurumsal kurulum

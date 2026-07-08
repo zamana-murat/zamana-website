@@ -47,7 +47,7 @@ Claude'u hiç kullanmamış bir kişi için giriş kapısıdır.
 Pro planında neler vardır:
 
 - Claude Sonnet 4.6'ya tam erişim (ana model)
-- Claude Opus 4.8'e sınırlı erişim (nadiren gerekir — [Modeller](modeller/) sayfasına bakın)
+- Claude Opus 4.8'e sınırlı erişim (nadiren gerekir — [Modeller](/wiki/temeller/modeller/) sayfasına bakın)
 - Free plana göre 5 kat daha yüksek kullanım limiti
 - Yoğun saatlerde öncelikli erişim
 - Sınırsız Project + her projede RAG zenginleştirmeli bilgi tabanı
@@ -196,7 +196,7 @@ Türkiye'deki şirketler için kritik bir nokta: **Kişisel veri işleyen bir s�
 | **Team** | Kapalı (asla kullanılmaz) | Ticari sözleşmeyle garanti | Evet (imzalanabilir) |
 | **Enterprise** | Kapalı (asla kullanılmaz) | Sözleşme + DPA + isteğe bağlı Zero Data Retention | Evet (standart) |
 
-Detaylı KVKK rehberi için: [Gizlilik ve KVKK](gizlilik-kvkk/) sayfasına bakın.
+Detaylı KVKK rehberi için: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## Tek Bakışta Tam Özellik Matrisi
 
@@ -306,9 +306,9 @@ Anthropic fiyatlarını ve plan özelliklerini zaman zaman günceller. Bu sayfad
 
 ## İlgili Sayfalar
 
-- [Claude Modelleri](modeller/) — Hangi plan hangi modele erişim verir
-- [Claude Nedir?](claude-nedir/) — Temel kavram
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — Türkiye'de veri uyumluluğu
+- [Claude Modelleri](/wiki/temeller/modeller/) — Hangi plan hangi modele erişim verir
+- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Temel kavram
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Türkiye'de veri uyumluluğu
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Pro'dan itibaren erişilebilen ana özellik
 
 

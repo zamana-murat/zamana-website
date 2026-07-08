@@ -10,7 +10,7 @@ lastUpdated: "2026-05-06"
 
 **MCP ekosisteminde yüzlerce server var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa pratikte gözlemlenen, denenen ve önerilen MCP'leri kategorilere ayırarak listeler.
 
-[Kurulum Rehberi](kurulum-rehberi/) ile birlikte okunmalı; [Güvenlik](guvenlik/) sayfasındaki değerlendirme kontrolleri her server için geçerli.
+[Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) ile birlikte okunmalı; [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki değerlendirme kontrolleri her server için geçerli.
 
 ## Önce — MCP Mi, Connector Mu?
 
@@ -21,7 +21,7 @@ Resmî [Connector](/wiki/araclar/connectors/) varsa öncelik orada. MCP, connect
 - Özel yapılandırma gerekli olduğunda
 - [Claude Desktop](/wiki/araclar/claude-desktop/) yerel kullanımda
 
-[Bağlantı Listesi](baglanti-listesi/) sayfasında tüm seçenekler bir arada.
+[Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasında tüm seçenekler bir arada.
 
 ## Resmi (Anthropic) MCP Server'ları
 
@@ -85,7 +85,7 @@ Kalıcı bellek server'ı (filesystem üzerine kurulu).
 
 ## Topluluk MCP'leri — Olgun Olanlar
 
-Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edilmiş** durumda. Yine de [Güvenlik](guvenlik/) değerlendirmesinden geçirin.
+Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edilmiş** durumda. Yine de [Güvenlik](/wiki/mcp/guvenlik/) değerlendirmesinden geçirin.
 
 ### Notion
 
@@ -225,7 +225,7 @@ Yeni bir MCP'yi onaylı listeye almak için:
 
 1. **İhtiyaç beyanı** — kim, ne için kullanacak
 2. **Kaynak doğrulama** — kim üretmiş, açık kaynak mı, kod incelendi mi
-3. **Güvenlik değerlendirmesi** — [Güvenlik](guvenlik/) sayfasındaki kontrol listesi
+3. **Güvenlik değerlendirmesi** — [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki kontrol listesi
 4. **Pilot** — 1-2 kişide test, 2-4 hafta gözlem
 5. **Onay** — BT + AI Governance imzası
 6. **Yapılandırma standartlaştırma** — token, yetki, log
@@ -247,10 +247,10 @@ MCP ekosistemi 2025-2026'da hızla olgunlaşıyor:
 
 ## İlgili Sayfalar
 
-- [MCP Nedir?](nedir/) — Temeller
-- [Kurulum Rehberi](kurulum-rehberi/) — Adım adım kurulum
-- [Güvenlik](guvenlik/) — Risk değerlendirmesi
-- [Bağlantı Listesi](baglanti-listesi/) — MCP + connector listesi
+- [MCP Nedir?](/wiki/mcp/nedir/) — Temeller
+- [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) — Adım adım kurulum
+- [Güvenlik](/wiki/mcp/guvenlik/) — Risk değerlendirmesi
+- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — MCP + connector listesi
 - [Connectors](/wiki/araclar/connectors/) — Daha kolay alternatifler
 - [Claude Desktop](/wiki/araclar/claude-desktop/) — MCP kullanım ortamı
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Kurumsal yapılandırma

@@ -8,7 +8,7 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-**[CLAUDE.md](nedir/) yazdınız, ama Claude hâlâ eski tarzda yanıt veriyor.** Çalışmayan kuralları, çelişen yönergeleri, düşen talimatları nasıl bulup düzelteceğinizi anlatan pratik rehber.
+**[CLAUDE.md](/wiki/claude-md/nedir/) yazdınız, ama Claude hâlâ eski tarzda yanıt veriyor.** Çalışmayan kuralları, çelişen yönergeleri, düşen talimatları nasıl bulup düzelteceğinizi anlatan pratik rehber.
 
 ## Önce — Hangi Sorunla Karşılaşıyorsunuz?
 
@@ -58,7 +58,7 @@ talep ediyorsa (örn. "açıklar mısın", "neden") detaylı cevap verilir.
 
 ### Bireysel ve Şirket CLAUDE.md Çelişmesi
 
-[Takım CLAUDE.md](takim-claude-md/) sayfası bunu detaylandırır. Kural: **şirket genel kuralı bireyselden üstündür.** Eğer bireysel CLAUDE.md "her zaman emoji kullan" diyorsa, şirket CLAUDE.md "yasak emoji" diyorsa — şirketinki kazanır.
+[Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) sayfası bunu detaylandırır. Kural: **şirket genel kuralı bireyselden üstündür.** Eğer bireysel CLAUDE.md "her zaman emoji kullan" diyorsa, şirket CLAUDE.md "yasak emoji" diyorsa — şirketinki kazanır.
 
 ### Ölçü: Tek Bir Kural Tek Bir Yere
 
@@ -120,7 +120,7 @@ Eski CLAUDE.md sürümü hâlâ aktif olabilir. Kontrol edin:
 - **Claude Desktop:** Çalışma dizininde tek bir `CLAUDE.md` olduğundan emin olun. `~/.claude/CLAUDE.md` global, dizinindeki proje-spesifik. İkisi aynı kurallarda çelişmiyor mu?
 - **Birden fazla proje:** Yanlış projede çalışıyor olabilirsiniz. Sol panelde aktif projeyi kontrol edin.
 
-[Memory Yönetimi](memory-yonetimi/) sayfası katmanlı CLAUDE.md mantığını anlatır.
+[Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfası katmanlı CLAUDE.md mantığını anlatır.
 
 ## 6. Fazla Uzun CLAUDE.md
 
@@ -128,9 +128,9 @@ CLAUDE.md çok uzun olduğunda Claude bazı kuralları "kaybeder". Pratik kural:
 
 Uzunsa ne yapmalı?
 
-- **Bölün:** Şirket geneli kurallar [Takım CLAUDE.md](takim-claude-md/)'ye, bireysel kurallar bireysele
+- **Bölün:** Şirket geneli kurallar [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/)'ye, bireysel kurallar bireysele
 - **Detay yerine ilke yazın:** "Pazar araştırma raporu şu yapıda olsun:" yerine "Pazar araştırma raporları için şablonu sor."
-- **Şablonları ayrı tutun:** Detay şablonlar [Şablon Kütüphanesi](sablon-kutuphanesi/)'ne, CLAUDE.md sadece "ne zaman kullanılacağını" söyler
+- **Şablonları ayrı tutun:** Detay şablonlar [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'ne, CLAUDE.md sadece "ne zaman kullanılacağını" söyler
 - **Yasak listeleri kısaltın:** 50 yasak kelime → en yıpratıcı 5'i. Çok uzun yasaklar zaten ihlal edilir
 
 ## Sistematik Hata Ayıklama Süreci
@@ -203,15 +203,15 @@ Bir sorun çözüldükten sonra:
 1. **CLAUDE.md sürümünü artırın** (1.3 → 1.4)
 2. **Değişiklik notunu** ekleyin (change log)
 3. **Bir hafta gözleyin** — tekrarlamıyor mu
-4. Şirket CLAUDE.md'sine etki eden bir değişiklik ise [Takım CLAUDE.md](takim-claude-md/) yöneticisine bildirin
+4. Şirket CLAUDE.md'sine etki eden bir değişiklik ise [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) yöneticisine bildirin
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](nedir/) — Temeller
-- [Nasıl Yazılır?](nasil-yazilir/) — İyi CLAUDE.md kuralları
-- [Örnekler](ornekler/) — Çalışan örnekler
-- [Şablon Kütüphanesi](sablon-kutuphanesi/) — Hazır şablonlar
-- [Takım CLAUDE.md](takim-claude-md/) — Şirket-geneli paylaşım
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Temeller
+- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — İyi CLAUDE.md kuralları
+- [Örnekler](/wiki/claude-md/ornekler/) — Çalışan örnekler
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Hazır şablonlar
+- [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) — Şirket-geneli paylaşım
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle öğretme
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Prompting tarafının hata listesi
 - [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Bağlam sıkışması

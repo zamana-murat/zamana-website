@@ -13,13 +13,13 @@ lastUpdated: "2026-05-06"
 
 Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde iyi, hangisi neyde değil, ikisini birden kullanmak mantıklı mı.
 
-[Claude vs ChatGPT](claude-vs-chatgpt/) sayfası OpenAI tarafının kıyaslamasını yapar; mantıklı bir kurum bu üç sayfayı birlikte okur.
+[Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) sayfası OpenAI tarafının kıyaslamasını yapar; mantıklı bir kurum bu üç sayfayı birlikte okur.
 
 ## Genel Konumlandırma
 
 | | Claude | Gemini |
 |---|---|---|
-| Yapan | [Anthropic](anthropic-ve-tarihce/) | Google |
+| Yapan | [Anthropic](/wiki/temeller/anthropic-ve-tarihce/) | Google |
 | Türü | Bağımsız AI ürünü | Google ekosistemi içine gömülü |
 | Web arayüzü | claude.ai | gemini.google.com |
 | Workspace entegrasyonu | [Connector](/wiki/araclar/connectors/) ile | Yerleşik (Docs / Gmail / Slides içinde doğrudan) |
@@ -35,7 +35,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 
 **Karmaşık muhakeme.** Çok adımlı analiz, çelişkili veriden çıkarım, nüanslı karar — Claude'un genişletilmiş düşünme yeteneği üstün.
 
-**[Constitutional AI](anthropic-ve-tarihce/).** Hassas konularda (hukuk, sağlık, finans) Claude daha dengeli ve dürüst yanıt verir, daha az kendinden emin "halüsinasyon" yapar.
+**[Constitutional AI](/wiki/temeller/anthropic-ve-tarihce/).** Hassas konularda (hukuk, sağlık, finans) Claude daha dengeli ve dürüst yanıt verir, daha az kendinden emin "halüsinasyon" yapar.
 
 **[Cowork modu](/wiki/araclar/cowork-modu/), [Skills](/wiki/yetenekler/skills/), [Artifacts](/wiki/yetenekler/artifacts/).** İş profesyonelleri için tasarlanmış üretim katmanı (.docx, .xlsx, .pptx üretimi, scheduled task, dispatch) Gemini'de eşdeğeri yok veya daha sınırlı.
 
@@ -55,7 +55,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 
 ## Zayıf Yönler — Claude
 
-- Türkiye'de doğrudan satış / destek yok ([Anthropic](anthropic-ve-tarihce/) Türkiye'de ofis kurmadı)
+- Türkiye'de doğrudan satış / destek yok ([Anthropic](/wiki/temeller/anthropic-ve-tarihce/) Türkiye'de ofis kurmadı)
 - Workspace içinde **yerleşik değil** — connector'la bağlanır, yine de Gmail içinde Gemini gibi tek tıkla erişim yok
 - Video oluşturma / multimodal üretim Gemini kadar agresif değil
 
@@ -65,7 +65,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 - **Kalite tutarsızlığı.** Aynı modelin farklı sürümleri arasında performans gözle görülür değişebiliyor; pilot çalışmadan kuruma yaymak zor
 - **Yazı kalitesi.** Uzun form içerikte Claude kadar tutarlı değil
 - **Hassas konularda fazla temkinli.** "Ben yardımcı olamam" cevapları daha sık — bu bazı iş senaryolarını engelliyor
-- **Ekosistem kilidi.** Google Workspace dışında değer önerisi azalır; Microsoft 365 kullanan firma için doğal eşleşme [Copilot](claude-vs-copilot/) olur
+- **Ekosistem kilidi.** Google Workspace dışında değer önerisi azalır; Microsoft 365 kullanan firma için doğal eşleşme [Copilot](/wiki/temeller/claude-vs-copilot/) olur
 
 ## Karar Matrisi — Hangi İşte Hangisi?
 
@@ -79,8 +79,8 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 | .docx / .xlsx / .pptx dosya üretme | **Claude** ([Skills](/wiki/yetenekler/skills/)) |
 | Video / multimodal senaryo | **Gemini** |
 | Otomasyon / scheduled task | **Claude** ([Scheduled Tasks](/wiki/araclar/scheduled-tasks/)) |
-| Hassas / düzenleyici sektör | **Claude** (güvenlik kültürü, [DPA](takim-ve-admin/)) |
-| KVKK uyumlu kurumsal kullanım | **Claude Enterprise** ([Gizlilik ve KVKK](gizlilik-kvkk/)) |
+| Hassas / düzenleyici sektör | **Claude** (güvenlik kültürü, [DPA](/wiki/temeller/takim-ve-admin/)) |
+| KVKK uyumlu kurumsal kullanım | **Claude Enterprise** ([Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)) |
 | Bireysel deneme, ücretsiz başlangıç | **Gemini** ücretsiz katman |
 
 ## İkisini Birden Kullanmak Mantıklı mı?
@@ -92,7 +92,7 @@ Evet, ve birçok gelişmiş kullanıcı bunu yapıyor:
 
 Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik kurumsal seçim:**
 
-- Microsoft ekosistemi ağırlıklı şirket → Claude + [Copilot](claude-vs-copilot/) (M365 entegrasyonu için)
+- Microsoft ekosistemi ağırlıklı şirket → Claude + [Copilot](/wiki/temeller/claude-vs-copilot/) (M365 entegrasyonu için)
 - Google Workspace ağırlıklı şirket → Claude + Gemini (Workspace içi hızlı + Claude üretim)
 - Karma → Claude tek tedarikçi olarak yeterli, [connector](/wiki/araclar/connectors/)'larla iki ekosisteme de bağlanır
 
@@ -100,20 +100,20 @@ Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik
 
 İki üründe de Türkçe kalitesi yüksek. Resmî yerel temsilcilik açısından **Google'ın Türkiye ofisi var, Anthropic'in yok.** Ama günlük kullanımda fark hissedilmez.
 
-[KVKK](gizlilik-kvkk/) tarafında Anthropic'in PBC yapısı ve [Constitutional AI](anthropic-ve-tarihce/) yaklaşımı bazı kurumsal alıcılar için tercih sebebi.
+[KVKK](/wiki/temeller/gizlilik-kvkk/) tarafında Anthropic'in PBC yapısı ve [Constitutional AI](/wiki/temeller/anthropic-ve-tarihce/) yaklaşımı bazı kurumsal alıcılar için tercih sebebi.
 
 ## Pratik Tavsiye
 
 **Mevcut Workspace kullanıcılarına:** Gemini'nin ücretsiz katmanını yarım gün test edin → Claude Pro'yu bir hafta deneyin → kalitesini hissedin → kararı işin türüne göre verin.
 
-**Yeni başlayan şirketlere:** Doğrudan Claude ile başlayın, [İlk 7 Gün](ilk-7-gun/) rehberini takip edin. İhtiyaç görürseniz Gemini'yi sonradan ek araç olarak alabilirsiniz.
+**Yeni başlayan şirketlere:** Doğrudan Claude ile başlayın, [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip edin. İhtiyaç görürseniz Gemini'yi sonradan ek araç olarak alabilirsiniz.
 
 ## İlgili Sayfalar
 
-- [Claude vs ChatGPT](claude-vs-chatgpt/) — OpenAI tarafı
-- [Claude vs Copilot](claude-vs-copilot/) — Microsoft tarafı
-- [Modeller](modeller/) — Claude'un kendi içindeki seçim
+- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) — OpenAI tarafı
+- [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/) — Microsoft tarafı
+- [Modeller](/wiki/temeller/modeller/) — Claude'un kendi içindeki seçim
 - [Connectors](/wiki/araclar/connectors/) — Google servislerine Claude'u bağlama
-- [Anthropic ve Tarihçe](anthropic-ve-tarihce/) — Şirket arka planı
-- [Yaygın İtirazlar](itirazlar/) — "Zaten Gemini var" itirazına cevap
+- [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/) — Şirket arka planı
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — "Zaten Gemini var" itirazına cevap
 

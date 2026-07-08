@@ -29,7 +29,7 @@ Arama özellikleri:
 
 - Anahtar kelime (Türkçe ve İngilizce)
 - Tarih aralığı filtresi (bazı sürümlerde)
-- [Projects](projects/) içinde sınırlama (proje seçtiğinizde sadece o proje sohbetlerinde arama)
+- [Projects](/wiki/araclar/projects/) içinde sınırlama (proje seçtiğinizde sadece o proje sohbetlerinde arama)
 
 **Pratik tavsiyeler:**
 
@@ -39,7 +39,7 @@ Arama özellikleri:
 
 ## Klasörleme — Projects ile
 
-Claude'da geleneksel klasör sistemi yok; **organize etmenin yolu [Projects](projects/) kullanmaktır.** Bir proje açarsınız (örn. "ABC Müşterisi"), o projeyle ilgili tüm sohbetleri o projenin içinde tutarsınız.
+Claude'da geleneksel klasör sistemi yok; **organize etmenin yolu [Projects](/wiki/araclar/projects/) kullanmaktır.** Bir proje açarsınız (örn. "ABC Müşterisi"), o projeyle ilgili tüm sohbetleri o projenin içinde tutarsınız.
 
 Faydaları:
 
@@ -48,7 +48,7 @@ Faydaları:
 - Projeye yüklediğiniz dosyalar tüm sohbetlerde erişilebilir
 - Arama proje bazlı daraltılabilir
 
-[Projects](projects/) sayfası ayrıntıyı verir.
+[Projects](/wiki/araclar/projects/) sayfası ayrıntıyı verir.
 
 ## Silme
 
@@ -59,7 +59,7 @@ Bir sohbeti silmek isterseniz: sohbetin yan menüsündeki **Delete** seçeneği.
 **Saklama dengesini kurun:**
 
 - Hassas içerik (kişisel veri, müşteri sırrı) → işiniz biter bitmez sil
-- Değerli üretim (kaliteli prompt, faydalı çıktı) → silmeyin, [Projects](projects/)'e taşıyın
+- Değerli üretim (kaliteli prompt, faydalı çıktı) → silmeyin, [Projects](/wiki/araclar/projects/)'e taşıyın
 
 [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfasında saklama politikası şablonu var.
 
@@ -93,7 +93,7 @@ Bir sohbete *Share* butonu ile **public link** üretebilirsiniz. Linke ulaşan h
 İki haftada bir 5 dakika ayırın:
 
 1. Son iki haftanın sohbet listesini gözden geçirin
-2. **Değerli olanları** [Projects](projects/) altına taşıyın veya iyi bir başlıkla yeniden adlandırın
+2. **Değerli olanları** [Projects](/wiki/araclar/projects/) altına taşıyın veya iyi bir başlıkla yeniden adlandırın
 3. **Bir daha bakmayacağınızı bildiklerinizi** silin
 4. Hassas veri içerenler özellikle silinsin
 
@@ -104,12 +104,12 @@ Bu disiplin uzun vadede iki şey kazandırır:
 
 ## Birden Çok Cihazda Senkron
 
-Claude geçmişiniz hesaba bağlıdır. Web, [Claude Desktop](claude-desktop/) veya [Claude Mobil](claude-mobil/) — hepsinde aynı sohbet listesini görürsünüz, anında senkronize olur. Bir cihazda silseniz diğerinden de gider.
+Claude geçmişiniz hesaba bağlıdır. Web, [Claude Desktop](/wiki/araclar/claude-desktop/) veya [Claude Mobil](/wiki/araclar/claude-mobil/) — hepsinde aynı sohbet listesini görürsünüz, anında senkronize olur. Bir cihazda silseniz diğerinden de gider.
 
 ## İlgili Sayfalar
 
-- [Projects](projects/) — Sohbetleri organize etmenin doğru yolu
-- [Claude Chat](claude-chat/) — Geçmiş bu arayüzde tutulur
+- [Projects](/wiki/araclar/projects/) — Sohbetleri organize etmenin doğru yolu
+- [Claude Chat](/wiki/araclar/claude-chat/) — Geçmiş bu arayüzde tutulur
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri saklama hakları
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Saklama politikası şablonu
 - [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — Geçmişten ayrı, kalıcı bellek

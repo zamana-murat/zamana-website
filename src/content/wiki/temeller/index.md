@@ -21,7 +21,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Anthropic'in yapay zeka asistanı. Ne yapabilir, ne yapamaz, neden ChatGPT'den farklıdır.
 
-    [→ Claude Nedir?](claude-nedir/)
+    [→ Claude Nedir?](/wiki/temeller/claude-nedir/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="layers-triple" aria-hidden="true"></span> **Hangi modeli kullanmalıyım?**
 
@@ -29,7 +29,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Haiku, Sonnet, Opus — üç model arasındaki fark ve iş kullanımı için net tavsiye.
 
-    [→ Claude Modelleri](modeller/)
+    [→ Claude Modelleri](/wiki/temeller/modeller/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="credit-card-outline" aria-hidden="true"></span> **Hangi plan bana uyar?**
 
@@ -37,7 +37,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Free, Pro, Max, Team, Enterprise — fiyatlar, özellikler ve şirketler için önerilen plan.
 
-    [→ Claude Planları](planlar/)
+    [→ Claude Planları](/wiki/temeller/planlar/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="compare-horizontal" aria-hidden="true"></span> **Claude mu ChatGPT mi?**
 
@@ -45,7 +45,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     İki büyük yapay zeka arasında dürüst bir karşılaştırma — iş kullanımı perspektifinden.
 
-    [→ Claude vs ChatGPT](claude-vs-chatgpt/)
+    [→ Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="alert-circle-outline" aria-hidden="true"></span> **Claude ne zaman hata yapar?**
 
@@ -53,7 +53,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Halüsinasyon, matematik hataları, bilgi kesim tarihi — ne zaman Claude'a güvenmeyeceğinizi bilin.
 
-    [→ Claude'un Sınırları](sinirlamalar/)
+    [→ Claude'un Sınırları](/wiki/temeller/sinirlamalar/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="shield-lock-outline" aria-hidden="true"></span> **Türkiye'de KVKK uyumlu mu?**
 
@@ -61,7 +61,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Veri politikaları, eğitim verisi kullanımı, DPA ve kurumsal kullanım kuralları.
 
-    [→ Gizlilik ve KVKK](gizlilik-kvkk/)
+    [→ Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="help-circle-outline" aria-hidden="true"></span> **Sık Sorulan Sorular**
 
@@ -69,7 +69,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Güvenlik, maliyet, çalışan adaptasyonu ve ChatGPT karşılaştırması, tek sayfada.
 
-    [→ SSS](sss/)
+    [→ SSS](/wiki/temeller/sss/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="rocket-launch-outline" aria-hidden="true"></span> **İlk Kurulum**
 
@@ -77,7 +77,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Sıfırdan başlayan için adım adım — claude.ai üyelik, Max 5x aktivasyonu, Claude Desktop kurulumu, donanım kontrolü.
 
-    [→ İlk Kurulum](ilk-kurulum/)
+    [→ İlk Kurulum](/wiki/temeller/ilk-kurulum/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="calendar-week" aria-hidden="true"></span> **İlk 7 Gün Rehberi**
 
@@ -85,7 +85,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Kurulum tamam — şimdi gün gün checklist, ilk iş akışları, kaçınılması gereken hatalar.
 
-    [→ İlk 7 Gün](ilk-7-gun/)
+    [→ İlk 7 Gün](/wiki/temeller/ilk-7-gun/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="translate" aria-hidden="true"></span> **Türkçe Performansı**
 
@@ -93,7 +93,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Resmi yazışma, teknik, hukuki, yaratıcı — dört registerda Claude'un Türkçe çıktısı ve güçlü/zayıf yönleri.
 
-    [→ Türkçe Performansı](turkce-performansi/)
+    [→ Türkçe Performansı](/wiki/temeller/turkce-performansi/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="message-question-outline" aria-hidden="true"></span> **Yaygın İtirazlar**
 
@@ -101,7 +101,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     Yönetim, IT, hukuk, finans ve çalışandan gelen tipik itirazlar ve dürüst cevapları.
 
-    [→ İtirazlar](itirazlar/)
+    [→ İtirazlar](/wiki/temeller/itirazlar/)
 
 </div>
 

@@ -175,7 +175,7 @@ Türkçe soru tipleri farklı yanıt çağrıştırır:
 | "Nasıl" sorusu | "Nasıl yaparım?" | Adım adım |
 | "Neden" sorusu | "Neden böyle?" | Açıklayıcı |
 
-Ne istediğinizi sezmesinden değil, **soruyu doğru sormaktan** kalite çıkar. [Temel İlkeler](temel-ilkeler/) ve [4D Çerçevesi](4d-cercevesi/) bunu derinleştirir.
+Ne istediğinizi sezmesinden değil, **soruyu doğru sormaktan** kalite çıkar. [Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) bunu derinleştirir.
 
 ## 11. Vurgu ve Önem
 
@@ -201,7 +201,7 @@ Yeni bir prompt yazdığınızda Türkçe kalitesini test edin:
 3. Bulduğunuz sorunları promptta düzeltin
 4. Bu süreci 2-3 kez yineleyin → kalıcı şablon oluşur
 
-[Prompt İterasyonu](prompt-iterasyonu/) sayfası bu döngüyü detaylandırır.
+[Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfası bu döngüyü detaylandırır.
 
 ## Pratik Şablon
 
@@ -229,11 +229,11 @@ Kurallar:
 ## İlgili Sayfalar
 
 - [Türkçe Performansı](/wiki/temeller/turkce-performansi/) — Genel kalite tablosu
-- [Temel İlkeler](temel-ilkeler/) — Genel prompt mantığı
-- [4D Çerçevesi](4d-cercevesi/) — Delegation/Description/Discernment/Diligence
-- [Prompt Kataloğu](prompt-katalogu/) — Hazır Türkçe şablonlar
-- [Çıktı Formatı](cikti-formati/) — Format kontrolü
-- [Few-Shot Örnekleme](few-shot-ornekleme/) — Örnekle öğretme
-- [Yaygın Hatalar](yaygin-hatalar/) — Tipik prompting hataları
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Delegation/Description/Discernment/Diligence
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) — Hazır Türkçe şablonlar
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Format kontrolü
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle öğretme
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Tipik prompting hataları
 - [CLAUDE.md / Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) — Dil sorunları çözümü
 

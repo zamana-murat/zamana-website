@@ -129,7 +129,7 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 
 **Not:** Çalışan başı saatlik yüklü maliyeti kendi ortalama çalışan maliyetinize göre değiştirip yeniden hesaplayabilirsiniz.
 
-[Yaygın İtirazlar](itirazlar/) ve [Fatura ve KDV](fatura-ve-kdv/) sayfalarında bu hesabın detayı var.
+[Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarında bu hesabın detayı var.
 
 ## Ölçüm Disiplini — Kim, Nasıl, Ne Sıklıkla
 
@@ -142,13 +142,13 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 | Anthropic Admin Console kullanım metrikleri | IT / Admin | Aylık |
 | Çalışan tatmin anketi (NPS benzeri) | İK | Çeyreklik |
 
-[Takım ve Admin](takim-ve-admin/) sayfasında Anthropic admin paneli üzerinden gelen metrikler anlatılır.
+[Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında Anthropic admin paneli üzerinden gelen metrikler anlatılır.
 
 ## Kalite Tuzakları — Ölçümde Düzeltilecekler
 
 **1. "Hızlı = İyi" yanılgısı.** Bir işin Claude ile 10 dakikada bitmesi onu otomatik daha kaliteli yapmaz. Daha hızlı yapılmış kalitesiz iş, hâlâ kalitesiz iştir.
 
-**2. Halüsinasyon riski.** Claude bazı verileri uydurabiliyor. [Sınırlamalar](sinirlamalar/) sayfası bunu açıklıyor. Ölçümün kalite tarafında **hata oranı** da takip edilmeli.
+**2. Halüsinasyon riski.** Claude bazı verileri uydurabiliyor. [Sınırlamalar](/wiki/temeller/sinirlamalar/) sayfası bunu açıklıyor. Ölçümün kalite tarafında **hata oranı** da takip edilmeli.
 
 **3. Aşırı bağımlılık.** Çalışan Claude olmadan çalışamaz hâle gelirse, bu da bir risk. Ara sıra "Claude'suz gün" denenebilir.
 
@@ -181,15 +181,15 @@ Yönetim raporlarında tek satırlık özet için:
 
 > *"6 kişiyle 6 ayda 1.250 saat kazanım. Yatırım 470 bin TL, getiri 940 bin TL. İkinci yıl artıştan ROI üç haneli."*
 
-Detayları [Yaygın İtirazlar](itirazlar/) ve [Finans Departmanı](/wiki/departmanlar/finans/) sayfaları derinleştirir.
+Detayları [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Finans Departmanı](/wiki/departmanlar/finans/) sayfaları derinleştirir.
 
 ## İlgili Sayfalar
 
-- [Yaygın İtirazlar](itirazlar/) — Finans direktörü itirazlarına detay
-- [Fatura ve KDV](fatura-ve-kdv/) — Maliyet tarafının muhasebesi
-- [Planlar](planlar/) — Plan maliyetleri
-- [Takım ve Admin](takim-ve-admin/) — Admin paneli üzerinden kullanım metriği
-- [Şirket İçi Politika](sirket-ici-politika/) — Ölçüm politikasını yazıya dökme
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — Finans direktörü itirazlarına detay
+- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) — Maliyet tarafının muhasebesi
+- [Planlar](/wiki/temeller/planlar/) — Plan maliyetleri
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Admin paneli üzerinden kullanım metriği
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Ölçüm politikasını yazıya dökme
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Kalite üretimi felsefesi
-- [Sınırlamalar](sinirlamalar/) — Halüsinasyon ve kalite riskleri
+- [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Halüsinasyon ve kalite riskleri
 

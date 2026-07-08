@@ -54,7 +54,7 @@ Aboneliğinizin bir **kullanım limiti** vardır. Bu limit token cinsinden ölç
 
 Token limitine ulaştığınızda Claude size *"saatlik limit doldu, X dakika sonra tekrar deneyin"* der. Korkutucu değil — birkaç saat sonra otomatik açılır.
 
-> **Pratik gerçek:** Normal iş kullanımında ([Pro planda](planlar/)) günde 1-3 saat aktif konuşma sorun çıkarmaz. Limit dolmaya başladığında uyaracaktır — ondan sonra düşünürsünüz.
+> **Pratik gerçek:** Normal iş kullanımında ([Pro planda](/wiki/temeller/planlar/)) günde 1-3 saat aktif konuşma sorun çıkarmaz. Limit dolmaya başladığında uyaracaktır — ondan sonra düşünürsünüz.
 
 ---
 
@@ -107,7 +107,7 @@ Saatlik limit dolduğunda Claude bekleme süresi söyler (genelde 1-5 saat). Ayl
 
 **"Limitlere sık çarpıyorum, ne yapmalıyım?"**
 
-Pro'da iseniz ve sık limit problemi yaşıyorsanız Max 5x'e ($100/ay) yükseltmenin zamanı gelmiştir. Detay: [Planlar](planlar/).
+Pro'da iseniz ve sık limit problemi yaşıyorsanız Max 5x'e ($100/ay) yükseltmenin zamanı gelmiştir. Detay: [Planlar](/wiki/temeller/planlar/).
 
 **"Token = para mı?"**
 
@@ -117,7 +117,7 @@ Doğrudan değil. Aboneliğinize dahil edilen kotayı tüketirsiniz. Aşırı ku
 
 ## İlgili Sayfalar
 
-- [Claude Planları](planlar/) — Plan limitleri ve fiyatlar
-- [İlk Kurulum](ilk-kurulum/) — Hesap açma + abonelik
+- [Claude Planları](/wiki/temeller/planlar/) — Plan limitleri ve fiyatlar
+- [İlk Kurulum](/wiki/temeller/ilk-kurulum/) — Hesap açma + abonelik
 - [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — İyi prompt nasıl yazılır (ileride)
 

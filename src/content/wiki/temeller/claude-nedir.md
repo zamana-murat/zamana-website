@@ -72,7 +72,7 @@ Yine de iki kural:
 
 ## Claude ile ChatGPT Aynı Şey mi?
 
-Hayır. Her ikisi de büyük dil modeli, ama önemli farklar var — özellikle iş kullanımı için. Detaylı karşılaştırma için [Claude vs ChatGPT](claude-vs-chatgpt/) sayfasına bakın.
+Hayır. Her ikisi de büyük dil modeli, ama önemli farklar var — özellikle iş kullanımı için. Detaylı karşılaştırma için [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) sayfasına bakın.
 
 ## Ne Zaman Claude Değil, Başka Araç?
 
@@ -112,9 +112,9 @@ Bazı konularda yapay zeka yanıtı almak yanlış hamledir — şirketinizdeki 
 
 ## İlgili Sayfalar
 
-- [Claude Modelleri](modeller/) — Haiku, Sonnet, Opus arasındaki fark
-- [Claude Planları](planlar/) — Free, Pro, Max, Team, Enterprise fiyat ve özellikler
-- [Claude'un Sınırları](sinirlamalar/) — Claude'un yapamadıkları
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — Türkiye'de Claude kullanırken veri güvenliği
-- [Claude vs ChatGPT](claude-vs-chatgpt/) — Dürüst bir karşılaştırma
+- [Claude Modelleri](/wiki/temeller/modeller/) — Haiku, Sonnet, Opus arasındaki fark
+- [Claude Planları](/wiki/temeller/planlar/) — Free, Pro, Max, Team, Enterprise fiyat ve özellikler
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Claude'un yapamadıkları
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Türkiye'de Claude kullanırken veri güvenliği
+- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) — Dürüst bir karşılaştırma
 

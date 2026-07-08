@@ -35,7 +35,7 @@ Soyut talimat yetersiz kaldığı durumlar:
 4. **Çıkarım kuralı** — "şu desenleri şu şekilde dönüştür"
 5. **Türkçe nüans** — sözcük seçimi, klişeden kaçınma
 
-[Çıktı Formatı](cikti-formati/) sayfası format-spesifik örnekleri detaylandırır.
+[Çıktı Formatı](/wiki/prompting/cikti-formati/) sayfası format-spesifik örnekleri detaylandırır.
 
 ## Sıfır vs Az Örnek — Pratik Fark
 
@@ -229,7 +229,7 @@ Neden: "vizyoner" + "geleceğin teknolojileri" → spesifik bilgi.
 Sonra: ?
 ```
 
-[Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) sayfasında bu yaklaşımı genişleten teknikler.
+[Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasında bu yaklaşımı genişleten teknikler.
 
 ## Many-Shot — Çok Örnek
 
@@ -288,16 +288,16 @@ Ham veri: [gerçek veri]
 Çıktı: ?
 ```
 
-[Prompt Kataloğu](prompt-katalogu/) sayfasında bu yapı çok sayıda görev için verilmiş.
+[Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) sayfasında bu yapı çok sayıda görev için verilmiş.
 
 ## İlgili Sayfalar
 
-- [Temel İlkeler](temel-ilkeler/) — Genel prompt mantığı
-- [Çıktı Formatı](cikti-formati/) — Format kontrolü ile birleşik kullanım
-- [Prompt Kataloğu](prompt-katalogu/) — Hazır şablonlar
-- [Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) — Türkçe için
-- [Prompt İterasyonu](prompt-iterasyonu/) — Örnekleri geliştirme döngüsü
-- [İleri Seviye](ileri-seviye/) — Many-shot ve advanced teknikler
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Format kontrolü ile birleşik kullanım
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) — Hazır şablonlar
+- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) — Türkçe için
+- [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) — Örnekleri geliştirme döngüsü
+- [İleri Seviye](/wiki/prompting/ileri-seviye/) — Many-shot ve advanced teknikler
 - [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md'ye gömme
-- [Yaygın Hatalar](yaygin-hatalar/) — Few-shot tuzakları
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Few-shot tuzakları
 

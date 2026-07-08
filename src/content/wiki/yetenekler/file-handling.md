@@ -32,7 +32,7 @@ Claude içeriklerini analiz edip üzerinde çalışabildiği dosya tipleri:
 
 - **`.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`**
 
-Claude görselleri **görür** — sadece metin çıkarmaz, içeriği anlar. Bir grafiği analiz eder, bir ekran görüntüsünden veri okur, bir ürün fotoğrafını tarif eder. Detay için [Görsel ve Görüntü](vision-image/) sayfasına bakın.
+Claude görselleri **görür** — sadece metin çıkarmaz, içeriği anlar. Bir grafiği analiz eder, bir ekran görüntüsünden veri okur, bir ürün fotoğrafını tarif eder. Detay için [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) sayfasına bakın.
 
 ### Kod Dosyaları
 
@@ -118,9 +118,9 @@ Detay için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## İlgili Sayfalar
 
-- [Skills](skills/) — Dosya üreten skill'ler (`docx`, `xlsx`, `pptx`, `pdf`)
-- [Artifacts](artifacts/) — Dosya olmayan canlı çıktılar
+- [Skills](/wiki/yetenekler/skills/) — Dosya üreten skill'ler (`docx`, `xlsx`, `pptx`, `pdf`)
+- [Artifacts](/wiki/yetenekler/artifacts/) — Dosya olmayan canlı çıktılar
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Workspace klasörünün yaşadığı ortam
-- [Görsel ve Görüntü](vision-image/) — Görsel dosyalarla çalışmak
+- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) — Görsel dosyalarla çalışmak
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Dosya gizliliği ve veri işleme
 

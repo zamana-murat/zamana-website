@@ -140,7 +140,7 @@ Standart connector'ların dışında, şirketinize özel connector geliştirileb
 - Şirket içi müşteri portalına bağlantı
 - Özel veritabanı sistemlerine bağlantı
 
-Bu MCP server geliştiriciliği gerektirir; iş profesyoneli kapsamı dışındadır, ama IT ekibiniz veya bir entegrasyon ortağı kurabilir. [MCP protokolü açık standarttır](nedir/).
+Bu MCP server geliştiriciliği gerektirir; iş profesyoneli kapsamı dışındadır, ama IT ekibiniz veya bir entegrasyon ortağı kurabilir. [MCP protokolü açık standarttır](/wiki/mcp/nedir/).
 
 Pratik alternatif: [Computer Use](/wiki/yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesi.
 
@@ -157,7 +157,7 @@ Bu sayfa **2026 ortası itibariyle** doğru. Anthropic düzenli olarak yeni conn
 
 ## İlgili Sayfalar
 
-- [MCP Nedir?](nedir/) — Standart ve genel çerçeve
+- [MCP Nedir?](/wiki/mcp/nedir/) — Standart ve genel çerçeve
 - [Skills](/wiki/yetenekler/skills/) — Plugin'lerin içinde gelen skill'ler
 - [Departmanlar](/wiki/departmanlar/) — Rol bazlı connector önerileri
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Connector güvenlik ve onay modeli

@@ -5,7 +5,7 @@ tags:
   - cowork
   - claude-desktop
   - arac
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 **Cowork, Claude Desktop uygulamasının içinde yaşayan ve Claude'u bir sohbet arayüzünden tam bir çalışma ortamına dönüştüren özelliktir.** Şu an research preview aşamasındadır — yani aktif geliştirilen, kararlı ve kullanılabilir bir özelliktir ama Anthropic hızla değiştirmeye devam ediyor.
@@ -68,6 +68,18 @@ Cowork içinde ayrı çalışma alanları — her biri kendi dosyaları, bağlam
 6. Sonucu workspace klasörünüze teslim eder, açmak için bağlantı verir
 7. Siz kontrol edersiniz, gerekirse geri bildirim verip iyileştirirsiniz
 
+## İlk Görevi Devretmek
+
+Cowork'e ilk kez bir görev devrederken üç adım vardır, ve ikincisi en kritik olanıdır:
+
+1. **İzinleri kurun.** Claude'un hangi klasöre eriştiğini (workspace) ve hangi servislere bağlandığını (connector'lar) önceden ayarlayın. Claude yalnızca verdiğiniz erişimle çalışır.
+2. **Görevi tarif edin ve planı onaylayın.** Claude, dosyalarınıza dokunmadan veya bir eylem yapmadan **önce ne yapacağına dair bir plan önerir**. Bu planı okuyun. Yanlış bir adım varsa burada durdurursunuz, makinenizde bir şey değişmeden.
+3. **Çalışmasına izin verin, sonucu gözden geçirin.** Plan doğruysa onaylarsınız; Claude uygular, çıktıyı workspace'e teslim eder.
+
+> **Devretmenin kalbi, "yap" demek değil, Claude'un planını onaylamaktır.** İlk birkaç görevde planı dikkatle okuyun; güven oluştukça bu adım hızlanır.
+
+İlk somut görev için adım adım bir yürüyüş: [İlk 7 Gün Rehberi → Gün 1](/wiki/temeller/ilk-7-gun/).
+
 ## Workspace Klasörü
 
 Cowork'ün kalbidir. Bilgisayarınızda gerçek bir klasördür — siz seçer ve Cowork ayarlarından bağlarsınız. Claude'un ürettiği her şey bu klasöre kaydedilir ve oturum bittikten sonra orada kalır.
@@ -94,6 +106,28 @@ Cowork oturumu başlattığınızda Claude birden fazla kaynaktan bağlam toplar
 
 Bu katmanların ne kadarını doldurursanız, çalışan o kadar az açıklama yapar ve Claude'un çıktısı gerçek iş bağlamınıza o kadar yaklaşır.
 
+## Cowork'ü Kişiselleştirme — Üç Katman
+
+Cowork'ü kendi iş akışınıza uydurmak, basitten ileriye doğru üç katmanda ilerler. Acele etmeyin; alttan başlayıp ihtiyaç doğdukça yükselin.
+
+**Katman 1 — Bağlam ve araçlar (herkes buradan başlar)**
+
+- **Connector'lar:** Cowork'ü Slack, Salesforce, Microsoft 365, Google Workspace gibi sistemlerinize bağlayın ki Claude verinizi okuyup yazabilsin.
+- **Talimatlar (Instructions):** Claude'un nasıl çalışacağını belirleyen sabit kurallar. Üç düzeyde verilebilir:
+  - **Global** (Settings → Cowork → Global instructions) — her oturumda geçerli
+  - **Proje** — sadece o projede geçerli
+  - **Organizasyon** — admin tarafından tüm şirkete uygulanır
+
+**Katman 2 — Süreç yakalama**
+
+- **Skills:** Tekrar eden bir iş akışını ve en iyi uygulamalarınızı bir [skill](/wiki/yetenekler/skills/) olarak kodlayın. En kolay yol: işi normal şekilde bir kez yapın, sonra *"Az önce yaptığımız işi bir skill olarak paketle"* deyin.
+
+**Katman 3 — Dağıtım**
+
+- **Plugins:** İlgili skill'leri + connector'ları tek pakette toplayıp ekip arkadaşlarınızın tek tıkla kurabileceği, role özel bir kurulum haline getirin. Detay: [Skills → Plugin Özelleştirme](/wiki/yetenekler/skills/).
+
+**Pratik sıra:** Önce connector + talimatlar. Bir işi birkaç kez tekrarladıktan sonra skill. Ekiple paylaşma ihtiyacı doğunca plugin. Talimatlar arka plan kurallarını verir, skill'ler belirli tekrar eden süreçleri yürütür.
+
 ## Güvenlik ve Kontrol
 
 Cowork güçlüdür — ve güç sorumluluk getirir.
@@ -107,10 +141,10 @@ Bu, bir çalışana "Claude şirket verilerine özgürce erişebilir" anlamına 
 
 ## İlgili Sayfalar
 
-- [Claude Desktop](claude-desktop/) — Cowork'ün içinde yaşadığı uygulama
+- [Claude Desktop](/wiki/araclar/claude-desktop/) — Cowork'ün içinde yaşadığı uygulama
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Cowork'ün her oturumda okuduğu hafıza dosyası
 - [Skills](/wiki/yetenekler/skills/) — Cowork'teki yetenek paketleri
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Cowork'te kullanılabilen connector'lar
-- [Dispatch](dispatch/) — Uzaktan görev atama
-- [Scheduled Tasks](scheduled-tasks/) — Zamanlanmış otomasyonlar
+- [Dispatch](/wiki/araclar/dispatch/) — Uzaktan görev atama
+- [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) — Zamanlanmış otomasyonlar
 

@@ -26,7 +26,7 @@ Mantığı şu: bir defa OAuth ile bağlarsınız (Google'a giriş yapar gibi), 
 | Kurulum | Tek tık (OAuth) | Manuel yapılandırma |
 | Güvenlik denetimi | Anthropic tarafından | Sizin sorumluluğunuzda |
 | Kapsam | Popüler iş servisleri | Sınırsız (her servis) |
-| Kullanım yeri | claude.ai | claude.ai + [Claude Desktop](claude-desktop/) |
+| Kullanım yeri | claude.ai | claude.ai + [Claude Desktop](/wiki/araclar/claude-desktop/) |
 
 Kısaca: **connector "kapı açık, gir" — MCP "kendi kapını yap, gir."** Çoğu iş profesyoneli için connector yeterli; özel iç sistemleriniz varsa MCP gerekir.
 
@@ -89,7 +89,7 @@ claude.ai içinde:
 
 Bağlantıyı koparmak: aynı menüden **Disconnect**. O servise erişim derhâl sona erer.
 
-[Claude Desktop](claude-desktop/) içinde de connector'lar aynı arayüzden yönetilir.
+[Claude Desktop](/wiki/araclar/claude-desktop/) içinde de connector'lar aynı arayüzden yönetilir.
 
 ## Plan Kapsamı
 
@@ -119,8 +119,8 @@ Karar için basit kural:
 
 - [MCP Nedir?](/wiki/mcp/nedir/) — Connector'un kuzeni, daha geniş ekosistem
 - [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Güncel connector ve MCP listesi
-- [Cowork Modu](cowork-modu/) — Connector'lar Cowork ile birlikte güç katar
-- [Slack & Teams Entegrasyonu](slack-teams-entegrasyon/) — Mesajlaşma platformlarına özel
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Connector'lar Cowork ile birlikte güç katar
+- [Slack & Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/) — Mesajlaşma platformlarına özel
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Hangi connector kim için açık olmalı
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri akışı
 

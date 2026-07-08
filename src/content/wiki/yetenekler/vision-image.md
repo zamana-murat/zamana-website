@@ -48,7 +48,7 @@ Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bun
 
 - Uygulama ekran görüntülerini okur ve yorumlar
 - UI öğelerini, form alanlarını, düğmeleri, menüleri tespit eder
-- Ekranda ne olduğunu tarif eder — [Computer Use](computer-use/) için kritik
+- Ekranda ne olduğunu tarif eder — [Computer Use](/wiki/yetenekler/computer-use/) için kritik
 - İki ekran görüntüsünü karşılaştırarak değişiklikleri belirler
 
 ## Teknik Özellikler
@@ -67,7 +67,7 @@ Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bun
 - **Fotoğraftan belirli isimli kişileri tanımlamaz** (gizlilik koruması)
 - **Çok düşük çözünürlüklü veya kötü bozulmuş görsellerde mükemmel doğruluk beklenmesin**
 
-**Ne üretebilir:** SVG grafikler, React görsel bileşenler, HTML görsel düzenler, Mermaid diyagramlar — **programatik görseller**, raster değil. [Artifacts](artifacts/) sayfasında detayları var.
+**Ne üretebilir:** SVG grafikler, React görsel bileşenler, HTML görsel düzenler, Mermaid diyagramlar — **programatik görseller**, raster değil. [Artifacts](/wiki/yetenekler/artifacts/) sayfasında detayları var.
 
 ## Departmana Göre Kullanım Senaryoları
 
@@ -130,8 +130,8 @@ O refleks kurulduğunda çalışan zamanını haftada saatlerce kazanır.
 
 ## İlgili Sayfalar
 
-- [Dosya İşleme](file-handling/) — Görsellerin de bir dosya olduğu gerçeği
-- [Computer Use](computer-use/) — Ekran görüntülerinin en gelişmiş kullanımı
-- [Artifacts](artifacts/) — Claude'un ürettiği programatik görseller
+- [Dosya İşleme](/wiki/yetenekler/file-handling/) — Görsellerin de bir dosya olduğu gerçeği
+- [Computer Use](/wiki/yetenekler/computer-use/) — Ekran görüntülerinin en gelişmiş kullanımı
+- [Artifacts](/wiki/yetenekler/artifacts/) — Claude'un ürettiği programatik görseller
 - [Departmanlar](/wiki/departmanlar/) — Her departman için özel kullanım örnekleri
 

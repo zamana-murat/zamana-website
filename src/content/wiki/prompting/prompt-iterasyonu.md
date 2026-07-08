@@ -11,7 +11,7 @@ lastUpdated: "2026-05-06"
 
 **Bir promptu ilk seferinde mükemmel yazmak nadirdir.** İyi prompt **iterasyonla** olur — yazarsın, test edersin, sorunu görürsün, düzeltirsin, tekrar test edersin. Bu sayfa o döngünün sistematik metodolojisini anlatır.
 
-[Temel İlkeler](temel-ilkeler/) ve [4D Çerçevesi](4d-cercevesi/) sayfaları **nasıl yazarsın** sorusuna cevap verir; bu sayfa **yazdıktan sonra ne yaparsın** sorusuna.
+[Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) sayfaları **nasıl yazarsın** sorusuna cevap verir; bu sayfa **yazdıktan sonra ne yaparsın** sorusuna.
 
 ## Neden İterasyon?
 
@@ -44,7 +44,7 @@ Promptu ilk yazdığınızda:
 
 ## 1. Yaz — Taslak Prompt
 
-İlk taslak için pratik şablon ([Prompt Kataloğu](prompt-katalogu/) sayfasında daha fazlası):
+İlk taslak için pratik şablon ([Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) sayfasında daha fazlası):
 
 ```
 Görev: [bir cümle]
@@ -112,11 +112,11 @@ Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
 ### Sorun: "Çıktı çok genel / klişe"
 
-**Çözüm:** Daha spesifik örnek verin ([Few-Shot Örnekleme](few-shot-ornekleme/)). Yasak kelime listesi ekleyin.
+**Çözüm:** Daha spesifik örnek verin ([Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/)). Yasak kelime listesi ekleyin.
 
 ### Sorun: "Format her seferinde farklı"
 
-**Çözüm:** Format örneği gösterin. "Yukarıdaki yapıya birebir uy" deyin. [Çıktı Formatı](cikti-formati/) sayfasındaki tekniklerle güçlendirin.
+**Çözüm:** Format örneği gösterin. "Yukarıdaki yapıya birebir uy" deyin. [Çıktı Formatı](/wiki/prompting/cikti-formati/) sayfasındaki tekniklerle güçlendirin.
 
 ### Sorun: "Bazı verileri görmedi"
 
@@ -124,7 +124,7 @@ Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
 ### Sorun: "Türkçe'den İngilizce'ye kayıyor"
 
-**Çözüm:** [CLAUDE.md](/wiki/claude-md/nedir/)'de net dil kuralı. [Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) sayfasına bakın.
+**Çözüm:** [CLAUDE.md](/wiki/claude-md/nedir/)'de net dil kuralı. [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasına bakın.
 
 ### Sorun: "Sınır vakasında sapıttı"
 
@@ -136,7 +136,7 @@ Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
 ### Sorun: "Halüsinasyon — uydurulmuş veri"
 
-**Çözüm:** "Sadece verilen veriye dayan, uydurma." "Bilmediğin şey için 'veri yok' yaz." [Sınırlamalar](/wiki/temeller/sinirlamalar/) ve [Yaygın Hatalar](yaygin-hatalar/) sayfalarına bakın.
+**Çözüm:** "Sadece verilen veriye dayan, uydurma." "Bilmediğin şey için 'veri yok' yaz." [Sınırlamalar](/wiki/temeller/sinirlamalar/) ve [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) sayfalarına bakın.
 
 ## 5. Tekrar Test — Aynı Set
 
@@ -267,14 +267,14 @@ Yeni prompt yazdığınızda kullanın:
 
 ## İlgili Sayfalar
 
-- [Temel İlkeler](temel-ilkeler/) — Genel prompt mantığı
-- [4D Çerçevesi](4d-cercevesi/) — Felsefe
-- [Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) — Türkçe için
-- [Prompt Kataloğu](prompt-katalogu/) — Hazır şablonlar
-- [Çıktı Formatı](cikti-formati/) — Format kontrolü
-- [Few-Shot Örnekleme](few-shot-ornekleme/) — Örnekle güçlendirme
-- [Yaygın Hatalar](yaygin-hatalar/) — Tipik tuzaklar
-- [İleri Seviye](ileri-seviye/) — Karmaşık iterasyon
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Felsefe
+- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) — Türkçe için
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) — Hazır şablonlar
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Format kontrolü
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle güçlendirme
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Tipik tuzaklar
+- [İleri Seviye](/wiki/prompting/ileri-seviye/) — Karmaşık iterasyon
 - [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Kalıcı saklama
 - [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) — Genel kalite ölçümü
 

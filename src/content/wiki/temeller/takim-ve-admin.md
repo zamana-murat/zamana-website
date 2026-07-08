@@ -15,7 +15,7 @@ Bu sayfa Team ve Enterprise farkını, ne zaman geçilmeli ve admin panelinde ne
 
 ## Plan Karşılaştırma — Bireysel mi, Takım mı?
 
-[Planlar](planlar/) sayfasında her planın detayı var. Buradaki odak: **şirket olarak hangisini almalı?**
+[Planlar](/wiki/temeller/planlar/) sayfasında her planın detayı var. Buradaki odak: **şirket olarak hangisini almalı?**
 
 | Özellik | Pro × N kişi (bireysel) | Team | Enterprise |
 |---|---|---|---|
@@ -58,7 +58,7 @@ Claude'a yeni başlayan bir çalışan için **ilk ay Max 5x ($100/ay)** öneril
 - Orta kullanıcı (1-3 saat/gün) → Pro
 - Hafif kullanıcı (haftada birkaç saat) → Pro
 
-Bu politika tek kişilik aboneliklerde de, Team / Enterprise'a geçişte de geçerlidir. [Planlar](planlar/) detay verir.
+Bu politika tek kişilik aboneliklerde de, Team / Enterprise'a geçişte de geçerlidir. [Planlar](/wiki/temeller/planlar/) detay verir.
 
 ## Admin Paneli — Ne Yapar?
 
@@ -83,7 +83,7 @@ Team ve Enterprise planda **admin** rolü olan kullanıcı, claude.ai → **Admi
 
 - Tek bir kredi kartı veya kurumsal ödeme aracı
 - Aylık/yıllık invoice tek e-postaya gelir
-- Vergi bilgileri organizasyon adına ([Fatura ve KDV](fatura-ve-kdv/) sayfasındaki şekilde)
+- Vergi bilgileri organizasyon adına ([Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasındaki şekilde)
 - Plan değişikliği, kullanıcı ekleme buradan ücretlendirme yansıması anlık görünür
 
 ### Politika Ayarları
@@ -135,7 +135,7 @@ Enterprise planda Anthropic ile **Data Processing Agreement (DPA)** imzalanabili
 
 Türkiye'deki KVKK kapsamında, **kişisel veri işleyen üçüncü taraf** ile sözleşme yapma yükümlülüğü vardır. DPA bu yükümlülüğün karşılığıdır.
 
-[Gizlilik ve KVKK](gizlilik-kvkk/) ve [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfaları bu boyutu derinleştirir.
+[Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfaları bu boyutu derinleştirir.
 
 ## Geçiş Senaryoları
 
@@ -170,16 +170,16 @@ Yeni bir çalışan organizasyona katıldığında:
 2. **İlk giriş:** Çalışan hesabı kabul eder, Claude'a girer
 3. **Bireysel CLAUDE.md:** Kendi rol ve sorumluluklarını tanımlayan [CLAUDE.md](/wiki/claude-md/nedir/) yazsın
 4. **Team CLAUDE.md (varsa):** Şirket genelinde paylaşılan kural seti uygulansın ([Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/))
-5. **Eğitim:** [İlk 7 Gün](ilk-7-gun/) rehberini takip etsin
-6. **Politika imzası:** [Şirket İçi Politika](sirket-ici-politika/) belgesini okusun ve onaylasın
+5. **Eğitim:** [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip etsin
+6. **Politika imzası:** [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) belgesini okusun ve onaylasın
 
 ## İlgili Sayfalar
 
-- [Planlar](planlar/) — Plan fiyat ve özellik detayı
-- [Fatura ve KDV](fatura-ve-kdv/) — Türkiye'de muhasebe
-- [Şirket İçi Politika](sirket-ici-politika/) — Politika şablonu
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — Yasal uyum
+- [Planlar](/wiki/temeller/planlar/) — Plan fiyat ve özellik detayı
+- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) — Türkiye'de muhasebe
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika şablonu
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Yasal uyum
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — IT açısından kurulum
 - [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — DPA ve sözleşmeler
-- [Yaygın İtirazlar](itirazlar/) — "Bu yatırım büyük gelir mi" itirazına cevap
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — "Bu yatırım büyük gelir mi" itirazına cevap
 

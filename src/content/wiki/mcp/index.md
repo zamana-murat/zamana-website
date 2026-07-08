@@ -23,7 +23,7 @@ Bu bölüm Claude'u Slack, Drive, CRM, proje yönetimi araçlarınıza bağlayan
 
     Model Context Protocol standardı — plugin'ler, connector'lar ve Claude'un iş sistemlerine bağlanma mimarisi.
 
-    [→ MCP Nedir?](nedir/)
+    [→ MCP Nedir?](/wiki/mcp/nedir/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="view-list-outline" aria-hidden="true"></span> **Bağlantı Listesi**
 
@@ -31,7 +31,7 @@ Bu bölüm Claude'u Slack, Drive, CRM, proje yönetimi araçlarınıza bağlayan
 
     38+ hazır connector — Slack, Google, Microsoft 365, Salesforce, HubSpot, Notion, Asana, DocuSign ve diğerleri.
 
-    [→ Bağlantı Listesi](baglanti-listesi/)
+    [→ Bağlantı Listesi](/wiki/mcp/baglanti-listesi/)
 
 </div>
 

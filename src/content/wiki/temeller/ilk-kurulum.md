@@ -12,8 +12,8 @@ lastUpdated: "2026-05-06"
 Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz — bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.
 
 > **Bu sayfayı okumadan önce:**
-> - [Claude Nedir?](claude-nedir/) — Claude'un ne olduğunu anlayın
-> - [Modeller](modeller/) — Sonnet'in neden ana model olduğunu görün
+> - [Claude Nedir?](/wiki/temeller/claude-nedir/) — Claude'un ne olduğunu anlayın
+> - [Modeller](/wiki/temeller/modeller/) — Sonnet'in neden ana model olduğunu görün
 >
 > İkisini okuduğunuzu varsayıyoruz. Yine de uzaklaştıysanız sorun değil — bu sayfa kendi kendine yeter.
 
@@ -22,7 +22,7 @@ Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktası
 **Yapacaklarımız:**
 
 1. claude.ai'a üye olmak
-2. [Pro planı](planlar/) satın almak
+2. [Pro planı](/wiki/temeller/planlar/) satın almak
 3. [Claude Desktop](/wiki/araclar/claude-desktop/)'ı indirmek ve kurmak
 4. Workspace klasörü oluşturmak
 5. [Cowork modunu](/wiki/araclar/cowork-modu/) aktifleştirmek
@@ -107,7 +107,7 @@ Claude.ai sizi karşılar, ad-soyad ister:
 
 Şu an **Free plandasınız**. Kullanım hakkınız var ama çok kısıtlı. Sıradaki adımda Pro'ya geçeceğiz.
 
-> **Önemli — [Free planda](planlar/) Cowork yok.** Workspace, dosya erişimi, skill kullanımı yok. Yalnız ücretli planda çalışır. O nedenle yükseltme şart.
+> **Önemli — [Free planda](/wiki/temeller/planlar/) Cowork yok.** Workspace, dosya erişimi, skill kullanımı yok. Yalnız ücretli planda çalışır. O nedenle yükseltme şart.
 
 ---
 
@@ -133,7 +133,7 @@ Plan listesinde **Max 5x'e** tıklayın → "Subscribe to Max" / "Upgrade".
 
 **📖 Yavaş tempoda öğrenmeye başladıysanız → Pro ($20/ay)**
 
-Pro, Cowork modu dahil tüm temel özelliklere erişim verir. [Sonnet 4.6](modeller/), plugin'ler, connector'lar, [scheduled tasks](/wiki/araclar/scheduled-tasks/) — hepsi Pro'da çalışır. Kendi tempoda öğrenen biri için ilk başta yeterlidir.
+Pro, Cowork modu dahil tüm temel özelliklere erişim verir. [Sonnet 4.6](/wiki/temeller/modeller/), plugin'ler, connector'lar, [scheduled tasks](/wiki/araclar/scheduled-tasks/) — hepsi Pro'da çalışır. Kendi tempoda öğrenen biri için ilk başta yeterlidir.
 
 Plan listesinde **Pro'ya** tıklayın → "Subscribe to Pro" / "Upgrade".
 
@@ -172,7 +172,7 @@ Banka 3D Secure SMS gelebilir → onaylayın. Anthropic ödeme onayı gönderir.
 
 Plan başarılı kurulduğunda **profilinizde "Pro" rozeti** görünür.
 
-claude.ai'da herhangi bir sohbet açın, yan menüde [model seçenekleri](modeller/) arasında **Sonnet** görünür olmalı (ve sınırlı Opus). Free'de bu seçenekler yoktu.
+claude.ai'da herhangi bir sohbet açın, yan menüde [model seçenekleri](/wiki/temeller/modeller/) arasında **Sonnet** görünür olmalı (ve sınırlı Opus). Free'de bu seçenekler yoktu.
 
 ---
 
@@ -232,7 +232,7 @@ Dosya **İndirilenler** (Downloads) klasörüne iner. İndirme bitene kadar bekl
 - **Domain whitelist:** `claude.ai`, `anthropic.com` ve Claude Desktop arka uç adresleri firewall'da açık olmalı
 - **VPN testi:** Bazı kurumsal VPN'ler Claude trafiğini bozar — IT'ye bunu da test ettirin
 
-[Gizlilik ve KVKK](gizlilik-kvkk/) sayfasında IT için detaylı liste var.
+[Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında IT için detaylı liste var.
 
 ---
 
@@ -469,16 +469,16 @@ Birini kurmuş olmanız yeterli.
 
 Kurulum tamam. Artık Claude Desktop ve Cowork'ü kullanabiliyorsunuz. Ama şimdi **doğru ilk hafta** önemli — bilgiyi alışkanlığa çevirmek için.
 
-[**İlk 7 Gün Rehberi**](ilk-7-gun/) → gün gün ne yapacağınızı, hangi hatalardan kaçınacağınızı, haftanın sonunda nerede olacağınızı anlatır.
+[**İlk 7 Gün Rehberi**](/wiki/temeller/ilk-7-gun/) → gün gün ne yapacağınızı, hangi hatalardan kaçınacağınızı, haftanın sonunda nerede olacağınızı anlatır.
 
 ---
 
 ## İlgili Sayfalar
 
-- [İlk 7 Gün Rehberi](ilk-7-gun/) — Kurulum sonrası ilk hafta
+- [İlk 7 Gün Rehberi](/wiki/temeller/ilk-7-gun/) — Kurulum sonrası ilk hafta
 - [Claude Desktop](/wiki/araclar/claude-desktop/) — Uygulama detayları
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Cowork'ün ne olduğu
 - [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Hafıza dosyası şablonu
-- [Claude Planları](planlar/) — Plan detayları, Pro → Max upgrade mantığı
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — IT için kurumsal kurulum gereksinimleri
+- [Claude Planları](/wiki/temeller/planlar/) — Plan detayları, Pro → Max upgrade mantığı
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — IT için kurumsal kurulum gereksinimleri
 

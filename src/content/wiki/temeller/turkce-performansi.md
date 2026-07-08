@@ -229,11 +229,11 @@ Bu 10-15 satır Claude'un Türkçe çıktı kalitesini dramatik değiştirir.
 - **ChatGPT** daha modern şirket kültüründe doğal
 - **Her ikisi de** jenerik çıktı verir — kişiselleştirme için CLAUDE.md (Claude) veya Custom Instructions (ChatGPT) şart
 
-Detaylı karşılaştırma: [Claude vs ChatGPT](claude-vs-chatgpt/).
+Detaylı karşılaştırma: [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/).
 
 ## İlgili Sayfalar
 
-- [Claude Nedir?](claude-nedir/) — Genel Türkçe yeteneği
+- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Genel Türkçe yeteneği
 - [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Ton bölümünü doğru yazmak
 - [Pazarlama ve İletişim](/wiki/departmanlar/pazarlama/) — Yaratıcı yazım uygulamaları
 - [Hukuk ve Uyum](/wiki/departmanlar/hukuk/) — Hukuki Türkçe pratikleri

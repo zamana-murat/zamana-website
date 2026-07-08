@@ -57,6 +57,6 @@ Bu, [Modeller](/wiki/temeller/modeller/) sayfasındaki "model değil prompt öne
 ## İlgili Sayfalar
 
 - [Modeller](/wiki/temeller/modeller/) — Opus 4.8 ve çaba varsayılanı
-- [Agents ve Subagents](agents-subagents/) — Yüksek çabanın en çok fark yarattığı karmaşık görevler
-- [Context ve Compaction](context-compaction/) — Uzun oturumlarda bağlam yönetimi
+- [Agents ve Subagents](/wiki/yetenekler/agents-subagents/) — Yüksek çabanın en çok fark yarattığı karmaşık görevler
+- [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Uzun oturumlarda bağlam yönetimi
 - [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — Çabadan önce gelen asıl kaldıraç: iyi prompt

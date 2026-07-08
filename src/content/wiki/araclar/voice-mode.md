@@ -48,7 +48,7 @@ Aynı konuşma içinde her an metinden sese veya tersine geçiş yapabilirsiniz 
 - **Uzun sözlü açıklamalar:** yazması dakikalar alacak karmaşık bir bağlamı 30 saniyede anlatmak
 - **Başka iş yaparken hızlı beyin fırtınası:** Claude'la kafanızı dağıtmayacak akışkan bir konuşma
 - **Eller serbest belge incelemesi:** "Bu raporun özetini söyle" — dinlerken başka iş yaparsınız
-- **Mobil kullanım:** [Dispatch](dispatch/) görevlerini sesle atamak
+- **Mobil kullanım:** [Dispatch](/wiki/araclar/dispatch/) görevlerini sesle atamak
 
 ## Türkçe Desteği
 
@@ -89,8 +89,8 @@ Doğal eğiliminiz varsa kullanın, yoksa varsayılanı yazı olarak bırakın. 
 
 ## İlgili Sayfalar
 
-- [Claude Chat](claude-chat/) — Voice mode'un içinde yaşadığı ana arayüz
-- [Dispatch](dispatch/) — Sesli komutların en güçlü kullanım alanı
+- [Claude Chat](/wiki/araclar/claude-chat/) — Voice mode'un içinde yaşadığı ana arayüz
+- [Dispatch](/wiki/araclar/dispatch/) — Sesli komutların en güçlü kullanım alanı
 - [Claude Nedir?](/wiki/temeller/claude-nedir/) — Temel yetenek seti
-- [Araçlar Ana Sayfası](./) — Tüm Claude araçlarının karar tablosu
+- [Araçlar Ana Sayfası](/wiki/araclar/) — Tüm Claude araçlarının karar tablosu
 

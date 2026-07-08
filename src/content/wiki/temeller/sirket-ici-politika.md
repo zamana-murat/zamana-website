@@ -50,12 +50,12 @@ Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesap
 | **Gizli (Confidential)** | Müşteri verileri, finansal sırlar, hukuki süreç, sağlık bilgisi, ticari sırlar | ❌ Asla |
 
 **İç bilgi için koşullar:**
-- Sadece [Takım veya Enterprise plan](takim-ve-admin/) hesabı üzerinden girilir
+- Sadece [Takım veya Enterprise plan](/wiki/temeller/takim-ve-admin/) hesabı üzerinden girilir
 - Şirket [DPA](/wiki/departmanlar/hukuk/) imzalı olmalı
 - Çalışan veri girmeden önce verinin **niteliğini** kontrol eder
 
 **Gizli veri için tek istisna:**
-[Enterprise plan](takim-ve-admin/) ile özel sözleşme (DPA + yerel saklama + audit log) imzalanmış belirli senaryolarda kullanım onaylanabilir. Bu istisnayı yazılı olarak [Hukuk departmanı](/wiki/departmanlar/hukuk/) onaylar.
+[Enterprise plan](/wiki/temeller/takim-ve-admin/) ile özel sözleşme (DPA + yerel saklama + audit log) imzalanmış belirli senaryolarda kullanım onaylanabilir. Bu istisnayı yazılı olarak [Hukuk departmanı](/wiki/departmanlar/hukuk/) onaylar.
 
 ### 4. KVKK ve Kişisel Veri
 
@@ -72,7 +72,7 @@ Kişisel veri içeren bir görev için Claude'a soru sormadan önce veriyi *jene
 - ❌ "Acme A.Ş. CEO'su Ahmet Yılmaz'a yazacağım yanıt taslağı"
 - ✅ "Bir orta ölçekli üretici şirketin CEO'suna yazacağım yanıt taslağı"
 
-Detay için [Gizlilik ve KVKK](gizlilik-kvkk/) sayfası.
+Detay için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası.
 
 ### 5. Yasak İçerik
 
@@ -95,7 +95,7 @@ Kurallar:
 - Hiçbir Claude çıktısı kontrol edilmeden müşteriye / iş ortağına / kamuya gitmez
 - Sayısal veri içeren çıktılar (rakam, oran, fiyat) kaynakla doğrulanır
 - Hukuki / mali / sağlık / mühendislik kararları **danışman seviyesinde Claude'la** alınır, **karar seviyesinde uzman onayıyla**
-- Halüsinasyon olasılığı her çıktıda var ([Sınırlamalar](sinirlamalar/))
+- Halüsinasyon olasılığı her çıktıda var ([Sınırlamalar](/wiki/temeller/sinirlamalar/))
 
 [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence (özen)** bacağı çalışanın bu sorumluluğunu somutlar.
 
@@ -110,7 +110,7 @@ Müşteri sözleşmelerinde, akademik raporlarda, basın bültenlerinde **A mode
 
 ### 8. Saklama ve Silme
 
-- **Sohbet geçmişi:** Anthropic standart politikası; [Enterprise plan](takim-ve-admin/)'da özel saklama ayarı yapılabilir
+- **Sohbet geçmişi:** Anthropic standart politikası; [Enterprise plan](/wiki/temeller/takim-ve-admin/)'da özel saklama ayarı yapılabilir
 - **İndirilen dosyalar:** Şirket bilgisayarında saklanan Claude çıktıları, **şirket dosya sınıflandırma standartlarına** göre saklanır
 - **Hassas içerik:** İşi biten projede ilgili sohbet ve dosyalar silinir
 - **Çalışan ayrılırsa:** Hesabı kapatılır, sohbet geçmişi şirket politikasına göre silinir veya arşivlenir
@@ -119,7 +119,7 @@ Müşteri sözleşmelerinde, akademik raporlarda, basın bültenlerinde **A mode
 
 ### 9. Eğitim Zorunluluğu
 
-Bu politika imzalandıktan sonra çalışan, [İlk 7 Gün](ilk-7-gun/) rehberini takip etmeyi taahhüt eder. Ek olarak şirketin sağladığı eğitim:
+Bu politika imzalandıktan sonra çalışan, [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip etmeyi taahhüt eder. Ek olarak şirketin sağladığı eğitim:
 
 - Yeni başlayanlar için onboarding (saat/gün tahmini)
 - Çeyreklik içsel paylaşım toplantıları
@@ -174,7 +174,7 @@ Bu politika tek başına yetmez; aşağıdaki belgelerle uyumlu olmalı:
 
 - **İş sözleşmesi** — gizlilik maddesi AI'a açık atıf yapsın
 - **KVKK aydınlatma metni** — müşteriye Claude kullanımı bildirilirse
-- **Tedarikçi sözleşmeleri** — [DPA](takim-ve-admin/) ile tutarlı
+- **Tedarikçi sözleşmeleri** — [DPA](/wiki/temeller/takim-ve-admin/) ile tutarlı
 - **Bilgi güvenliği politikası** — varsa, AI bölümü eklensin
 
 [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası bu uyum işini detaylandırır.
@@ -194,11 +194,11 @@ Küçük şirketlerde (5-15 çalışan) yukarıdaki belge fazla ağırdır. Bir 
 
 ## İlgili Sayfalar
 
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — Yasal arka plan
-- [Takım ve Admin](takim-ve-admin/) — Plan ve admin paneli
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Yasal arka plan
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Plan ve admin paneli
 - [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — Politikanın hukuki yansıması
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — IT açısından uygulama
-- [İlk 7 Gün](ilk-7-gun/) — Çalışan eğitim rehberi
+- [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) — Çalışan eğitim rehberi
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Çıktı sorumluluğunun felsefi karşılığı
 - [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) — Sohbet saklama tarafı
 

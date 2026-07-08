@@ -6,7 +6,7 @@ tags:
   - satis
   - is-gelistirme
   - crm
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 Satış ekibinin Claude'la en çok zaman kazandığı yerler ve bu departmanda kurulan tipik iş akışları.
@@ -98,6 +98,7 @@ Bu departman için önerilen prompt koleksiyonu:
 - `sales:call-prep` — satış görüşmesi hazırlığı
 - `sales:account-research` — şirket / kişi derinlemesine araştırma
 - `sales:draft-outreach` — kişiselleştirilmiş outreach
+- `sales:call-summary` — görüşme sonrası debrief: aksiyon maddeleri, ekip mesajı, müşteri takip e-postası
 
 **Connector'lar (öncelik sırasıyla):**
 1. **CRM** (Salesforce veya HubSpot) — pipeline için olmazsa olmaz
@@ -128,7 +129,13 @@ Bir satış yöneticisi XYZ Gıda ile 3 ay önce aktif görüşmedeydi. 2 aydır
 
 **Adım 4:** Çalışan bir strateji seçer, Claude takip e-postası taslağı yazar.
 
-Toplam süre: 15 dakika. Geleneksel yaklaşımla ("durumu analiz etmek için oturayım") bu iş yapılmaz — atlanır.
+Toplam süre: 15 dakika. Geleneksel yaklaşımla ("durumu analiz etmek için oturayım") bu iş yapılmaz, atlanır.
+
+## Pratik Refleks — Hesap Geçmişini Biriktirin
+
+`account-research` (görüşme öncesi brief) ve `call-summary` (görüşme sonrası debrief) çıktılarını her hesap için **özel bir klasörde** biriktirin (örn. `workspace/hesaplar/XYZ-Gida/`). Zamanla bu klasör, o hesabın yaşayan hafızası olur: her yeni görüşme öncesi Claude geçmiş brief ve debrief'leri okuyup bağlamı hatırlar. İkinci görüşmeye "sıfırdan" değil, tüm geçmişle girersiniz.
+
+Aynı yaklaşım satışın ötesinde de işler: müşteri başarısı, iş ortaklıkları, işe alım, kurumsal geliştirme, kişi/şirket araştırması gereken her rol.
 
 ## İlgili Sayfalar
 

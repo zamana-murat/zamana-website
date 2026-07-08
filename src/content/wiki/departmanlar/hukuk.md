@@ -7,7 +7,7 @@ tags:
   - kvkk
   - ttk
   - sozlesme
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 Hukuk, Claude'un en yüksek zaman tasarrufu sağladığı ama en katı disiplin gerektiren departmandır.
@@ -100,10 +100,11 @@ Claude uyumlu ilk-taslak yanıtı üretir; **hukuk göndermeden önce inceler**.
 **Skills:**
 - `pdf` — sözleşmelerin çoğu PDF olarak gelir
 - `docx` — ilk taslaklar ve memolar
-- `foreign-trade` — ihracat odaklı şirketler için (bkz: [İhracat](ihracat/))
+- `foreign-trade` — ihracat odaklı şirketler için (bkz: [İhracat](/wiki/departmanlar/ihracat/))
 - `legal:review-contract` — sözleşme inceleme ve redline
 - `legal:triage-nda` — hızlı NDA sınıflandırma (GREEN / YELLOW / RED)
 - `legal:signature-request` — DocuSign üzerinden imza yönlendirme
+- `legal:brief` — geçmiş kararlar / gelen kutusu / takip üzerine kaynaklı brifing
 
 **Connector'lar:**
 1. **Microsoft 365 / Google Workspace** — sözleşme depolama ve düzenleme
@@ -132,10 +133,22 @@ Claude uyumlu ilk-taslak yanıtı üretir; **hukuk göndermeden önce inceler**.
 
 Toplam süre: 8-10 dakika. Normal süreç: 45-60 dakika.
 
+## Brifing İş Akışı — Geçmiş Kararlara Hızlı Yanıt
+
+Hukuk ekibinin sık ihtiyacı: "Bu konuyu daha önce nasıl ele almıştık?" Bunu otomatik brifing + talep üzerine araştırma + **kaynak doğrulama** ile kuran bir akış, `legal:brief` skill'iyle yapılır:
+
+1. **Skill'i kurun ve özelleştirin.** İncelemelerinizin nerede durduğunu (klasör, tracker, e-posta) Claude'a tanıtın: *"/brief skill'ini ekibime göre uyarla. İncelemelerimiz şurada duruyor..."*
+2. **Günlük brief'i zamanlayın.** *"/schedule Her iş günü 08:00'de gelen kutumu, tracker'ı ve Slack'i oku, önceliklendirilmiş bir özet hazırla."* (bkz: [Scheduled Tasks](/wiki/araclar/scheduled-tasks/))
+3. **Talep üzerine brief çalıştırın.** Belirli bir soruda aynı skill: *"/brief yeni gelen talep, önceki incelemedeki sonucumuzu değiştirir mi?"*
+4. **Kaynakları doğrulayın.** Her iddianın bağlı olduğu **kaynağı tıklayıp orijinal metni okuyun**. Bu adım atlanmaz, profesyonel sorumluluk burada başlar.
+5. **Yanıtlayın ve kapatın.** Connector'larla yanıtı taslaklayın, ticket'ı kapatın, kararı ve kaynağı not düşün.
+
+> **Claude hazırlığı yaptı, ama karar sizin.** Brifing rutini sıralamayı ve özeti üstlenir; yorum, doğrulama ve nihai hukuki yargı avukatta kalır. Bu, [Sycophancy](/wiki/temeller/sinirlamalar/) riskine karşı da kalkandır: Claude'a sonucu onaylatmayın, kaynağı kendiniz okuyun.
+
 ## İlgili Sayfalar
 
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — KVKK genel çerçevesi
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Hukuki sınırlar
-- [İhracat](ihracat/) — Uluslararası ticaret sözleşmeleri
+- [İhracat](/wiki/departmanlar/ihracat/) — Uluslararası ticaret sözleşmeleri
 - [Skills](/wiki/yetenekler/skills/) — Legal plugin skill'leri
 

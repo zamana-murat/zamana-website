@@ -137,6 +137,6 @@ Toplam süre: 15 dakika. Alternatif: Hakan Bey 147 sayfayı okumaya çalışır 
 
 - [Agents ve Subagents](/wiki/yetenekler/agents-subagents/) — Karmaşık analiz görevlerinde
 - [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Uzun belgeleri özetleme
-- [İdari İşler](idari-isler/) — Yönetici asistanının Claude kullanımı
+- [İdari İşler](/wiki/departmanlar/idari-isler/) — Yönetici asistanının Claude kullanımı
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Düşünme ortağı Description boyutu
 

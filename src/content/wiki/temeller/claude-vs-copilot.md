@@ -11,7 +11,7 @@ lastUpdated: "2026-05-06"
 
 **Microsoft Copilot, Microsoft'un Office uygulamaları ve Windows içine entegre AI asistanıdır.** Türkiye'deki orta-büyük kurumların ezici çoğunluğu Microsoft 365 kullanıyor; bu yüzden Copilot kıyaslaması — *"zaten Microsoft veriyor, Claude'a gerek var mı"* — kurumsal satışta en sık karşılaşılan sorudur.
 
-Bu sayfa Claude ile Microsoft Copilot'u dürüstçe karşılaştırır. [Claude vs ChatGPT](claude-vs-chatgpt/) ve [Claude vs Gemini](claude-vs-gemini/) sayfaları diğer iki büyük rakibi ele alır.
+Bu sayfa Claude ile Microsoft Copilot'u dürüstçe karşılaştırır. [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) ve [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/) sayfaları diğer iki büyük rakibi ele alır.
 
 ## Önce — "Copilot" Hangi Copilot?
 
@@ -29,7 +29,7 @@ Microsoft, "Copilot" markasını çok geniş kullanıyor. Karıştırılmaması 
 
 ## Altyapı — İlginç Detay
 
-Microsoft Copilot'un altında **OpenAI modelleri** çalışır (GPT-4 ve sonrası). Yani teknik olarak Copilot ≈ ChatGPT + Microsoft entegrasyon katmanı. [Claude vs ChatGPT](claude-vs-chatgpt/) kıyaslamasındaki model-seviye gözlemler büyük ölçüde Copilot için de geçerlidir.
+Microsoft Copilot'un altında **OpenAI modelleri** çalışır (GPT-4 ve sonrası). Yani teknik olarak Copilot ≈ ChatGPT + Microsoft entegrasyon katmanı. [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) kıyaslamasındaki model-seviye gözlemler büyük ölçüde Copilot için de geçerlidir.
 
 Ama Microsoft son dönemde **kendi modelleri** (Phi serisi) ve **Anthropic Claude'u** da bazı senaryolarda kullanmaya başladı — yani Copilot tek bir model değil, arka planda yönlendirme var. Bu kullanıcıdan saklıdır.
 
@@ -37,7 +37,7 @@ Ama Microsoft son dönemde **kendi modelleri** (Phi serisi) ve **Anthropic Claud
 
 | | Claude | Microsoft 365 Copilot |
 |---|---|---|
-| Yapan | [Anthropic](anthropic-ve-tarihce/) | Microsoft |
+| Yapan | [Anthropic](/wiki/temeller/anthropic-ve-tarihce/) | Microsoft |
 | Altyapı | Anthropic Claude modelleri | OpenAI GPT-4+ (ve diğerleri) |
 | Birincil arayüz | claude.ai, [Desktop](/wiki/araclar/claude-desktop/), [Mobil](/wiki/araclar/claude-mobil/) | Word, Outlook, Excel, Teams içinde "Copilot" butonu |
 | Türkçe kalitesi | Yüksek | Orta-iyi (giderek artıyor) |
@@ -45,7 +45,7 @@ Ama Microsoft son dönemde **kendi modelleri** (Phi serisi) ve **Anthropic Claud
 | Outlook entegrasyonu | Connector | Yerleşik |
 | Dosya üretimi | .docx, .xlsx, .pptx ([Skills](/wiki/yetenekler/skills/)) | Mevcut Office dosyasında düzenleme |
 | Plan | $20-100/ay (bireysel) | $30/kişi/ay (M365 Copilot) |
-| KVKK / DPA | Enterprise plan ([Takım ve Admin](takim-ve-admin/)) | Microsoft 365 sözleşmesinin parçası |
+| KVKK / DPA | Enterprise plan ([Takım ve Admin](/wiki/temeller/takim-ve-admin/)) | Microsoft 365 sözleşmesinin parçası |
 
 ## Güçlü Yönler — Microsoft Copilot
 
@@ -71,7 +71,7 @@ Ama Microsoft son dönemde **kendi modelleri** (Phi serisi) ve **Anthropic Claud
 
 **Fiyat-değer.** Pro kullanıcı için $20/ay, M365 Copilot $30/ay. Claude'un Pro fiyatı daha düşük ve özellik seti daha geniş. Çok kullanıcılı senaryolarda fark birikir.
 
-**[Constitutional AI](anthropic-ve-tarihce/) — hassas konularda olgun davranış.** Hukuk, finans, sağlık gibi düzenleyici sektörlerde Claude'un daha temkinli ve doğrusal davranışı tercih sebebi.
+**[Constitutional AI](/wiki/temeller/anthropic-ve-tarihce/) — hassas konularda olgun davranış.** Hukuk, finans, sağlık gibi düzenleyici sektörlerde Claude'un daha temkinli ve doğrusal davranışı tercih sebebi.
 
 ## Zayıf Yönler — Microsoft Copilot
 
@@ -84,7 +84,7 @@ Ama Microsoft son dönemde **kendi modelleri** (Phi serisi) ve **Anthropic Claud
 ## Zayıf Yönler — Claude
 
 - Office uygulamaları içinde **yerleşik değil** — Word'de yazıyorken Claude'u açmak için tarayıcıya geçmek veya [Desktop](/wiki/araclar/claude-desktop/)'a almak gerekir
-- Türkiye'de doğrudan Anthropic ofisi yok ([Anthropic](anthropic-ve-tarihce/) Türkiye'ye gelmedi); yerel destek mevcut değil
+- Türkiye'de doğrudan Anthropic ofisi yok ([Anthropic](/wiki/temeller/anthropic-ve-tarihce/) Türkiye'ye gelmedi); yerel destek mevcut değil
 - Microsoft kurumsal satışında "tek tedarikçi" rahatlığı yok — IT için ek değerlendirme gerektirir
 
 ## Karar Matrisi — Hangi İşte Hangisi?
@@ -101,7 +101,7 @@ Ama Microsoft son dönemde **kendi modelleri** (Phi serisi) ve **Anthropic Claud
 | Otomasyon ve scheduled task | **Claude** ([Scheduled Tasks](/wiki/araclar/scheduled-tasks/)) |
 | Veri görselleştirme, [Artifacts](/wiki/yetenekler/artifacts/) | **Claude** |
 | Şirket içi bilgi tabanı sorgulama (SharePoint) | **Copilot** doğal; **Claude** [connector](/wiki/araclar/connectors/) ile |
-| Hassas / düzenleyici sektör | **Claude** ([Constitutional AI](anthropic-ve-tarihce/)) |
+| Hassas / düzenleyici sektör | **Claude** ([Constitutional AI](/wiki/temeller/anthropic-ve-tarihce/)) |
 | Bireysel öğrenme, ücretsiz başlangıç | **Claude** Free veya Copilot web |
 
 ## İkisini Birden Kullanmak — Yaygın Senaryo
@@ -122,7 +122,7 @@ Her ikisi birden satın alınabilir. Toplam maliyet ($30 + $20 = $50/kişi/ay) �
 
 ## "Microsoft'a Zaten Para Veriyoruz, Claude Çift Yatırım Olmaz mı?"
 
-Bu itirazın detaylı cevabı [Yaygın İtirazlar](itirazlar/) sayfasında. Kısa cevap: M365 Copilot **yerinde küçük yardımlar** için, Claude **gerçek üretim ve analiz** için. Aynı kategori değiller; "Outlook'la Word var, Excel'e gerek var mı?" sorusuna benzer.
+Bu itirazın detaylı cevabı [Yaygın İtirazlar](/wiki/temeller/itirazlar/) sayfasında. Kısa cevap: M365 Copilot **yerinde küçük yardımlar** için, Claude **gerçek üretim ve analiz** için. Aynı kategori değiller; "Outlook'la Word var, Excel'e gerek var mı?" sorusuna benzer.
 
 ## Türkiye'deki Pratik Durum
 
@@ -136,17 +136,17 @@ Türkiye'deki tipik orta ölçekli şirketin başlangıç durumu:
 Önerilen yol:
 
 1. Pilot grupla **Claude** ile başlayın (6 kişi × 3 ay)
-2. 90 gün sonra ROI ölçün ([Ölçüm Metrikleri](olcum-metrikleri/))
+2. 90 gün sonra ROI ölçün ([Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/))
 3. Kararı veriden verin: tek başına Claude yeterli mi, yoksa Copilot da eklenmeli mi
 4. Karar vereniler için Claude + M365 Copilot karması en yaygın yapı
 
 ## İlgili Sayfalar
 
-- [Claude vs ChatGPT](claude-vs-chatgpt/) — OpenAI tarafı
-- [Claude vs Gemini](claude-vs-gemini/) — Google tarafı
-- [Anthropic ve Tarihçe](anthropic-ve-tarihce/) — Şirket arka planı
+- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) — OpenAI tarafı
+- [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/) — Google tarafı
+- [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/) — Şirket arka planı
 - [Connectors](/wiki/araclar/connectors/) — Microsoft 365'e Claude'u bağlama
 - [Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/) — Teams için detay
-- [Yaygın İtirazlar](itirazlar/) — "Microsoft veriyor zaten" itirazına detay
-- [Takım ve Admin](takim-ve-admin/) — Kurumsal Claude
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — "Microsoft veriyor zaten" itirazına detay
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Kurumsal Claude
 

@@ -123,7 +123,7 @@ Computer Use güçlüdür, sorumluluk da öyle:
 
 ## İlgili Sayfalar
 
-- [Görsel ve Görüntü](vision-image/) — Computer Use'un temelindeki görsel muhakeme
+- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) — Computer Use'un temelindeki görsel muhakeme
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Computer Use'tan önce denenecek öncelikli yöntem
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Computer Use'un yaşadığı ortam
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Otomasyon güvenlik kuralları

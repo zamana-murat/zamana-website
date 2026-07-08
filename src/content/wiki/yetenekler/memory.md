@@ -205,5 +205,5 @@ Pratik mantığı: çalışma araları arasında sistem, agent'ların geçmiş i
 - [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) — Sohbet geçmişi (memory'den ayrı)
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri hakları
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Memory'e ne yazılmalı
-- [Context ve Compaction](context-compaction/) — Sohbet içi bağlam yönetimi (memory'den ayrı)
+- [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Sohbet içi bağlam yönetimi (memory'den ayrı)
 

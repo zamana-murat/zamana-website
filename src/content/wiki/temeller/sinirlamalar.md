@@ -6,7 +6,7 @@ tags:
   - sinirlamalar
   - hallucination
   - hata-yonetimi
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 **Claude güçlüdür, ama yanılmaz değildir.** Bu sayfa iş kullanıcıları için en kritik bilgilerden birini içerir: **nerede güvenmemeniz gerektiği.**
@@ -121,6 +121,29 @@ Claude profesyonel Türkçe yazar — ama mükemmel değildir. Özellikle:
 - **Her önemli Türkçe çıktıyı gözden geçirin.** Bu bir kural, istisna değildir.
 - CLAUDE.md dosyanızda Türkçe ton tercihlerinizi net yazın: "Sade, modern, devrik cümle kullanma."
 
+### 9. Sycophancy (Onay Eğilimi — Size Hak Verme)
+
+Halüsinasyondan farklı, daha sinsi bir sınır: **Claude bazen doğru olanı değil, sizin duymak istediğinizi söyleme eğilimindedir.** Yapay zeka literatüründe buna **sycophancy** (yağcılık / onay eğilimi) denir.
+
+Nasıl ortaya çıkar:
+
+- Kötü bir iş planını "harika fikir" diye över
+- Siz bir görüş bildirince, aksini düşünse bile size hak verir
+- "Sence bu sözleşme maddesi adil mi?" diye sorduğunuzda, soruyu nasıl sorduğunuza göre yön değiştirir
+- Bir hatanızı işaret etmek yerine yumuşatır
+
+**Neden olur?** Dil modelleri, insanların onaylanmaktan hoşlandığı milyonlarca örnekle eğitilir. Sonuçta "kullanıcıyı memnun etme" eğilimi, "katı gerçeği söyleme" eğiliminin önüne geçebilir. Bu, kötü iş kararlarını pekiştirebileceği için iş bağlamında gerçek bir risktir.
+
+**Çözüm, prompt'u nötr ve eleştiriye davet eden biçimde kurmaktır:**
+
+- ❌ *"Bu planı çok beğendim, sence de harika değil mi?"* (cevabı baştan yönlendirir)
+- ✅ *"Bu planın en zayıf üç yönünü bul. Beni eleştir, hak verme."*
+- ✅ *"Bu fikre karşı en güçlü argümanları yaz. Şeytanın avukatı ol."*
+- ✅ *"Kararımı onaylamanı istemiyorum, denetlemeni istiyorum. Nerede yanılıyor olabilirim?"*
+- ✅ Görüşünüzü **söylemeden** sorun: "Bu sözleşme maddesi kimin lehine?" (sizin ne düşündüğünüzü ekleme)
+
+**Pratik kural:** Önemli bir kararı Claude'a onaylatmayın, **çürütmesini** isteyin. İyi bir karar, eleştiriden sağ çıkan karardır. Bu, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'ndeki **Discernment** (Ayırt Etme) boyutunun doğrudan uygulamasıdır.
+
 ## Claude'un Reddedeceği Şeyler
 
 Claude, Anthropic'in güvenlik politikaları kapsamında bazı talepleri açıkça reddeder. Bunlar:
@@ -163,14 +186,15 @@ Her önemli çıktıda kendinize sorun:
 - [ ] **Güncellik:** Kritik bilgi Claude'un kesim tarihinden sonra değişmiş olabilir mi?
 - [ ] **Türkçe gözden geçirme:** Metni baştan sona insan gözüyle okudum mu?
 - [ ] **Sorumluluk:** Bu çıktının arkasında doğru ehliyetli profesyonel var mı?
+- [ ] **Onay eğilimi:** Claude bana sadece hak mı verdi, yoksa gerçekten eleştirip denetledi mi?
 - [ ] **İmza testi:** Bu metnin altına kendi adımı atmaya razı mıyım?
 
 Son soru en önemlisidir. Cevap "hayır"sa, geri dönün, iyileştirin, tekrar sorun.
 
 ## İlgili Sayfalar
 
-- [Claude Nedir?](claude-nedir/) — Temel kavram
+- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Temel kavram
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Diligence (Sorumluluk) boyutu
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — Veri sınırları ve uyumluluk
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri sınırları ve uyumluluk
 - [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — Sınırları zorlayan prompt biçimleri
 

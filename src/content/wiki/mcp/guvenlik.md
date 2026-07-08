@@ -8,7 +8,7 @@ tags:
 lastUpdated: "2026-06-03"
 ---
 
-**[MCP](nedir/), Claude'a sisteminize erişim verir.** Bu güç, dikkatsiz kurulduğunda sorun olabilir — yetkisiz veri erişimi, beklenmedik silme işlemleri, prompt injection saldırıları. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar.
+**[MCP](/wiki/mcp/nedir/), Claude'a sisteminize erişim verir.** Bu güç, dikkatsiz kurulduğunda sorun olabilir — yetkisiz veri erişimi, beklenmedik silme işlemleri, prompt injection saldırıları. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar.
 
 [Connectors](/wiki/araclar/connectors/) sayfasıyla karşılaştırın — connector Anthropic'in denetlediği bir paket; MCP daha açık ve sizin sorumluluğunuzda.
 
@@ -115,7 +115,7 @@ Yapılandırmada bunu kontrol edebilirsiniz. Kurumsal politika için:
 - **Sadece okuma işlemleri:** Once per session veya Auto
 - **Destructive (delete, drop):** Always ask + ek onay metni
 
-[Kurulum Rehberi](kurulum-rehberi/) sayfasında yapılandırma detayı var.
+[Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) sayfasında yapılandırma detayı var.
 
 ## Kurumsal Değerlendirme Listesi
 
@@ -251,9 +251,9 @@ Mayıs 2026'da Anthropic, kurumsal güvenlik sınırlarını güçlendiren iki s
 
 ## İlgili Sayfalar
 
-- [MCP Nedir?](nedir/) — Temeller
-- [Kurulum Rehberi](kurulum-rehberi/) — Adım adım kurulum
-- [Popüler MCP'ler](populer-mcpler/) — Onaylı liste önerileri
+- [MCP Nedir?](/wiki/mcp/nedir/) — Temeller
+- [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) — Adım adım kurulum
+- [Popüler MCP'ler](/wiki/mcp/populer-mcpler/) — Onaylı liste önerileri
 - [Connectors](/wiki/araclar/connectors/) — Daha güvenli alternatif
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Kurumsal güvenlik
 - [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — KVKK, sözleşme

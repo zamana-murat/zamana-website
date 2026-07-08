@@ -6,7 +6,7 @@ tags:
   - skills
   - cowork
   - uzmanlik
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 **Skills, Claude'a belirli görev tipleri için hazır uzmanlık kazandıran önceden inşa edilmiş talimat setleridir.** Cowork'te `/skill-adi` komutuyla çağrılır.
@@ -62,6 +62,24 @@ Plugins, ilgili skill'leri + connector'ları + subagent'ları tek pakette kurar.
 
 Yeni plugin'ler düzenli olarak Anthropic tarafından ekleniyor. [Plugins & MCP](/wiki/mcp/baglanti-listesi/) sayfası güncel listeyi takip eder.
 
+## Rol Plugin'lerini Özelleştirme
+
+Hazır plugin'ler (Sales, Finance, Legal, Marketing) **jenerik şablonlarla** gelir. Gerçek değeri, kendi şirketinize göre kişiselleştirdiğinizde ortaya çıkar. Cowork bunu konuşarak yapmanızı sağlar:
+
+1. **Oturumu başlatın:** Customize → Plugins → ilgili plugin → **Customize**.
+2. **Bilgi verin:** Claude araçlarınızı, iş akışlarınızı ve standartlarınızı sorar. Üç şeyi net verin:
+   - **Araçlarınız:** Gerçek sistem adları (Salesforce, Snowflake, HubSpot...) ki skill'ler doğru connector'a bağlansın
+   - **Ekip iş akışlarınız:** Varsayılanlar, terminoloji, eskalasyon kuralları
+   - **Referans belgeler:** Bitmiş iş örnekleri, şablonlar, stil kılavuzları ki çıktı sizin standardınıza benzesin
+3. **Değişiklikleri gözden geçirin:** Claude neyi değiştirdiğini ve plugin'in talimat dosyalarını gösterir. Bunlar düz metin dosyalardır, kurmadan önce okuyabilirsiniz.
+4. **Kaydedin ve paylaşın:** Yerel kurun veya dosya, GitHub ya da organizasyon dağıtımıyla ekibe yayın.
+
+**Pratik ipuçları:**
+
+- Her şeyi baştan kapsamaya çalışmayın. Bir skill'i çalıştırın, düzeltilecek bir şey görünce **aynı oturumda** Claude'a söyleyin.
+- Kalan jenerik içeriği bulmak için sorun: *"Bu plugin'de hangi placeholder'lar (doldurulmamış alanlar) kaldı?"*
+- Organizasyon adminleri, özelleştirilmiş plugin'leri departmanlara tek tip kurulum olarak dağıtabilir.
+
 ## Skill Nasıl Çağrılır?
 
 Cowork'te iki yol vardır:
@@ -115,7 +133,7 @@ Kendinize sık sorabileceğiniz sorular:
 
 ## İlgili Sayfalar
 
-- [Artifacts](artifacts/) — Skill'lerin ürettiği etkileşimli çıktılar
+- [Artifacts](/wiki/yetenekler/artifacts/) — Skill'lerin ürettiği etkileşimli çıktılar
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Skill'lerin yaşadığı ortam
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Plugin'lerin içindeki connector'lar
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Skill'lerin üzerine inşa edildiği kalıcı bağlam

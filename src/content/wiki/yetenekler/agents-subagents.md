@@ -134,8 +134,8 @@ Bu üç refleks, iş profesyoneli için agent konusunda bilinmesi gereken her ş
 
 ## İlgili Sayfalar
 
-- [Skills](skills/) — Agent'ların içinde çağırdığı uzmanlık paketleri
+- [Skills](/wiki/yetenekler/skills/) — Agent'ların içinde çağırdığı uzmanlık paketleri
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Agent'ların yaşadığı ortam
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Discernment boyutu: agent çıktılarının değerlendirilmesi
-- [Context ve Compaction](context-compaction/) — Uzun agent oturumlarında bağlam yönetimi
+- [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Uzun agent oturumlarında bağlam yönetimi
 

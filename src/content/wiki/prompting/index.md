@@ -23,7 +23,7 @@ Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D)
 
     Anthropic'in resmi AI Fluency çerçevesi — Delegation, Description, Discernment, Diligence. Bütün promptingin kavramsal zemini.
 
-    [→ 4D Çerçevesi](4d-cercevesi/)
+    [→ 4D Çerçevesi](/wiki/prompting/4d-cercevesi/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="text-box-outline" aria-hidden="true"></span> **Temel İlkeler**
 
@@ -31,7 +31,7 @@ Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D)
 
     Bir promptun beş bileşeni: rol, bağlam, görev, format, kısıtlar. Pratik şablon ve gerçek örneklerle.
 
-    [→ Temel İlkeler](temel-ilkeler/)
+    [→ Temel İlkeler](/wiki/prompting/temel-ilkeler/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="code-tags" aria-hidden="true"></span> **İleri Seviye**
 
@@ -39,7 +39,7 @@ Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D)
 
     XML tag'leri, few-shot prompting, prompt chaining, adaptif düşünme. Temellerin üstüne inşa edilen teknikler.
 
-    [→ İleri Seviye](ileri-seviye/)
+    [→ İleri Seviye](/wiki/prompting/ileri-seviye/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="alert-circle-outline" aria-hidden="true"></span> **Yaygın Hatalar**
 
@@ -47,7 +47,7 @@ Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D)
 
     Çoğu kullanıcının düştüğü on tuzak ve her birinin spesifik düzeltmesi.
 
-    [→ Yaygın Hatalar](yaygin-hatalar/)
+    [→ Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/)
 
 </div>
 
@@ -55,10 +55,10 @@ Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D)
 
 Bu bölümü yeni okuyorsanız:
 
-1. **[4D Çerçevesi](4d-cercevesi/)** — Kavramsal zemini oturtun. Neden, nasıldan önce gelir.
-2. **[Temel İlkeler](temel-ilkeler/)** — Beş bileşen yapısı. Ezberleyene kadar, bir hafta kullanın.
-3. **[Yaygın Hatalar](yaygin-hatalar/)** — Kendi promptlarınızı bu listeye karşı denetleyin.
-4. **[İleri Seviye](ileri-seviye/)** — Temelleri oturtanadık sonra. Erken dönmek boşa yatırımdır.
+1. **[4D Çerçevesi](/wiki/prompting/4d-cercevesi/)** — Kavramsal zemini oturtun. Neden, nasıldan önce gelir.
+2. **[Temel İlkeler](/wiki/prompting/temel-ilkeler/)** — Beş bileşen yapısı. Ezberleyene kadar, bir hafta kullanın.
+3. **[Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/)** — Kendi promptlarınızı bu listeye karşı denetleyin.
+4. **[İleri Seviye](/wiki/prompting/ileri-seviye/)** — Temelleri oturtanadık sonra. Erken dönmek boşa yatırımdır.
 
 Bir çalışanın prompting becerisi eğitim programının birinci saatinde başlar, **haftalarca gelişmeye devam eder**. Bu bölüm bir kere okunup kapanan değil, aylar boyunca geri dönülen bir kaynaktır.
 

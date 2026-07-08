@@ -56,7 +56,7 @@ Misafir şikayetinin çözümü hız + diplomatik tonda olur. Claude:
 
 İçerik **müdür imzasıyla** çıktığı için müdür düzenler ve gönderir.
 
-[Müşteri hizmetleri](musteri-hizmetleri/) sayfası şikayet yönetimi temellerini verir.
+[Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası şikayet yönetimi temellerini verir.
 
 ## Bölüm 2 — Online Yorum Yönetimi
 
@@ -124,7 +124,7 @@ WTM London, ITB Berlin, FITUR gibi turizm fuarları sonrası yazışmalar. Claud
 
 Otel/destinasyon sosyal medya içeriği. Görsel siz çekersiniz, metin Claude. Hashtag, mention stratejisi dahil.
 
-[Pazarlama departmanı](pazarlama/) sayfasında genel sosyal medya yaklaşımı.
+[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfasında genel sosyal medya yaklaşımı.
 
 ### Blog ve SEO
 
@@ -237,10 +237,10 @@ Kasım-Mart sezon dışı. Çoğu otel personeli azaltır, içerik üretimi tama
 
 ## İlgili Sayfalar
 
-- [Müşteri Hizmetleri](musteri-hizmetleri/) — Misafir destek temelleri
-- [Pazarlama Departmanı](pazarlama/) — Pazarlama derinliği
-- [Satış Departmanı](satis/) — B2B acente satışı
-- [İhracat Departmanı](ihracat/) — Yurt dışı pazarlama (turizm de bir tür ihracattır)
+- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) — Misafir destek temelleri
+- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/) — Pazarlama derinliği
+- [Satış Departmanı](/wiki/departmanlar/satis/) — B2B acente satışı
+- [İhracat Departmanı](/wiki/departmanlar/ihracat/) — Yurt dışı pazarlama (turizm de bir tür ihracattır)
 - [Voice Mode](/wiki/araclar/voice-mode/) — Sesle çok dilli yazma
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Marka voice
 - [Research Mode](/wiki/yetenekler/research-mode/) — B2B araştırma

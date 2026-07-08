@@ -21,7 +21,7 @@ Bu bölüm Claude'un yedi temel aracını tanıtır. Her biri farklı bir senary
 
     Tarayıcı ve mobil uygulamada standart konuşma arayüzü. Hızlı sorular, belge yükleme, web araması.
 
-    [→ Claude Chat](claude-chat/)
+    [→ Claude Chat](/wiki/araclar/claude-chat/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="folder-multiple-outline" aria-hidden="true"></span> **Projects**
 
@@ -29,7 +29,7 @@ Bu bölüm Claude'un yedi temel aracını tanıtır. Her biri farklı bir senary
 
     Claude Chat içindeki kalıcı çalışma alanları. Bilgi tabanı + özel talimatlar + ekip paylaşımı.
 
-    [→ Projects](projects/)
+    [→ Projects](/wiki/araclar/projects/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="desktop-classic" aria-hidden="true"></span> **Claude Desktop**
 
@@ -37,7 +37,7 @@ Bu bölüm Claude'un yedi temel aracını tanıtır. Her biri farklı bir senary
 
     Windows ve macOS için yerel uygulama. Cowork'ün ve tüm ileri özelliklerin giriş kapısı.
 
-    [→ Claude Desktop](claude-desktop/)
+    [→ Claude Desktop](/wiki/araclar/claude-desktop/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="robot-industrial-outline" aria-hidden="true"></span> **Cowork Modu**
 
@@ -45,7 +45,7 @@ Bu bölüm Claude'un yedi temel aracını tanıtır. Her biri farklı bir senary
 
     Claude'u sohbet arayüzünden tam bir çalışma ortamına dönüştüren mod. Dosyalar, kod, connector'lar.
 
-    [→ Cowork Modu](cowork-modu/)
+    [→ Cowork Modu](/wiki/araclar/cowork-modu/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="cellphone-link" aria-hidden="true"></span> **Dispatch**
 
@@ -53,7 +53,7 @@ Bu bölüm Claude'un yedi temel aracını tanıtır. Her biri farklı bir senary
 
     Telefonunuzdan masaüstü Cowork'e görev atamanın yolu. Siz toplantıdayken Claude çalışır.
 
-    [→ Dispatch](dispatch/)
+    [→ Dispatch](/wiki/araclar/dispatch/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="calendar-clock" aria-hidden="true"></span> **Scheduled Tasks**
 
@@ -61,7 +61,7 @@ Bu bölüm Claude'un yedi temel aracını tanıtır. Her biri farklı bir senary
 
     Her Pazartesi rapor, her sabah brifing — zamanlanmış görevler siz başlatmadan çalışır.
 
-    [→ Scheduled Tasks](scheduled-tasks/)
+    [→ Scheduled Tasks](/wiki/araclar/scheduled-tasks/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="microphone-outline" aria-hidden="true"></span> **Voice Mode**
 
@@ -69,7 +69,7 @@ Bu bölüm Claude'un yedi temel aracını tanıtır. Her biri farklı bir senary
 
     Yazmak yerine Claude'la konuşarak etkileşim. Yolda, yürürken, eller serbest.
 
-    [→ Voice Mode](voice-mode/)
+    [→ Voice Mode](/wiki/araclar/voice-mode/)
 
 </div>
 

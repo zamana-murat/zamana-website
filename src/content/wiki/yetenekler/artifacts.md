@@ -116,7 +116,7 @@ Cevap "evet"se — artifact. Cevap "hayır"sa — belge. Basit ama hayatı deği
 
 ## İlgili Sayfalar
 
-- [Skills](skills/) — Artifact üreten skill'ler
+- [Skills](/wiki/yetenekler/skills/) — Artifact üreten skill'ler
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Live Artifact'lerin kalıcı yaşadığı yer
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Connector'lar Live Artifact'leri besler
 - [Dispatch](/wiki/araclar/dispatch/) — Artifact'leri telefondan tetiklemek

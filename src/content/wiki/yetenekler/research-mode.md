@@ -190,7 +190,7 @@ Karmaşık iş senaryosu örneği:
 
 1. **Dispatch** ile uzun araştırma görevi başlatılır (45 dk arka plan)
 2. Sonuç gelir, **research mode** raporu hazır
-3. **[Skills](skills/)** ile rapor .docx ve .pptx olarak dışa aktarılır
+3. **[Skills](/wiki/yetenekler/skills/)** ile rapor .docx ve .pptx olarak dışa aktarılır
 4. **[Connectors](/wiki/araclar/connectors/)** ile rapor Drive'a yüklenir
 5. Sonucu yöneticilerle paylaşırsınız
 
@@ -222,7 +222,7 @@ Bu durumlar için **AI başlangıç noktası** + **insan derinleştirme** birle�
 - [Web Arama](/wiki/araclar/web-arama/) — Hızlı arama tarafı
 - [Dispatch](/wiki/araclar/dispatch/) — Uzun süreli arka plan görevi
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Research + Skills + Connectors birleşimi
-- [Skills](skills/) — Çıktıyı dosya olarak dışa aktarma
+- [Skills](/wiki/yetenekler/skills/) — Çıktıyı dosya olarak dışa aktarma
 - [Projects](/wiki/araclar/projects/) — İç dokümanlarla birleşik araştırma
 - [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Rapor şekillendirme
 - [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Halüsinasyon riski

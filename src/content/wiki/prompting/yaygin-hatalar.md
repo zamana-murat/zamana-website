@@ -176,8 +176,8 @@ Bu haftalık refleksiyon, prompting becerisini sıradan kullanıcı seviyesinden
 
 ## İlgili Sayfalar
 
-- [Prompting Temel İlkeleri](temel-ilkeler/) — Beş bileşen yapısı
-- [İleri Seviye Prompt Engineering](ileri-seviye/) — XML tag'leri, few-shot prompting
-- [4D Çerçevesi](4d-cercevesi/) — Description ve Discernment kavramları
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — Beş bileşen yapısı
+- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/) — XML tag'leri, few-shot prompting
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Description ve Discernment kavramları
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Promptla çözülemeyen sınırlar
 

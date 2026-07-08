@@ -65,7 +65,7 @@ Doğru tespit, ama çözülmüş problem. Team ve Enterprise planlarında:
 - **Zero Data Retention** (Enterprise) — veri işlem sonrası saklanmaz
 - **SSO ve denetim izi** — kurumsal kontrol tam
 
-Konuyu gerçekten kapsamlı ele almak için: [Gizlilik ve KVKK](gizlilik-kvkk/) ve oradaki **sektörel ek** sayfalarımızı okuyun. KVKK müfettişinin sorabileceği 10 soru ve cevapları hazır.
+Konuyu gerçekten kapsamlı ele almak için: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve oradaki **sektörel ek** sayfalarımızı okuyun. KVKK müfettişinin sorabileceği 10 soru ve cevapları hazır.
 
 ### "Şirket verilerimiz AI eğitiminde kullanılır mı?"
 
@@ -111,7 +111,7 @@ Gerçek bir risk ve eğitim programının kritik bir parçası. Çözüm **üç 
 
 Claude'a "müvekkil adı + dava detayı" girmek **hukuk bürosu için hata** olur. Bunu çalışana hem eğitimde hem CLAUDE.md'de kuralla yazmış olursunuz.
 
-Detay: [Gizlilik ve KVKK](gizlilik-kvkk/) — sektörel ek bölümü avukatlar için özel.
+Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — sektörel ek bölümü avukatlar için özel.
 
 ### "Claude'un ürettiği bir hukuki metinde hata olursa kim sorumlu?"
 
@@ -121,7 +121,7 @@ Detay: [Gizlilik ve KVKK](gizlilik-kvkk/) — sektörel ek bölümü avukatlar i
 
 Claude hukuki metinler için **süper hızlı ilk-taslak yazıcıdır**. Avukat her kelimeyi inceler, imzasını atar, sorumluluğu üstlenir. Bu "Claude kullanıyoruz o zaman iş rahat" değil, "Claude sayesinde avukat saatlerini yazım yerine yargı ve değerlendirmeye ayırıyor" demektir.
 
-Detay: [Claude'un Sınırları](sinirlamalar/).
+Detay: [Claude'un Sınırları](/wiki/temeller/sinirlamalar/).
 
 ### "Bir müfettiş 'Claude'u kullanıyor musunuz' diye sorarsa ne cevap vereceğiz?"
 
@@ -129,7 +129,7 @@ Detay: [Claude'un Sınırları](sinirlamalar/).
 
 "Evet, kullanıyoruz. Şu plan seviyesinde (Team/Enterprise), şu DPA imzalı, şu veri politikamıza göre, şu kategorilerde, VERBİS'te kayıtlı." Bu cevabı verebilmek için önceden hazırlık gerekir.
 
-Müfettişin sorabileceği 10 standart soru ve cevapları: [Gizlilik ve KVKK](gizlilik-kvkk/).
+Müfettişin sorabileceği 10 standart soru ve cevapları: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
 ---
 
@@ -279,9 +279,9 @@ Bu tasarım benimsenmediğinde teknoloji adaptasyonu büyük olasılıkla sönü
 
 ## İlgili Sayfalar
 
-- [Sık Sorulan Sorular](sss/) — Daha genel sorular
-- [Claude Planları](planlar/) — Maliyet ve ROI detayı
-- [Gizlilik ve KVKK](gizlilik-kvkk/) — Hukuki/güvenlik itirazlarının derinliği
-- [Claude'un Sınırları](sinirlamalar/) — Ne yapamaz dürüstçe
+- [Sık Sorulan Sorular](/wiki/temeller/sss/) — Daha genel sorular
+- [Claude Planları](/wiki/temeller/planlar/) — Maliyet ve ROI detayı
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Hukuki/güvenlik itirazlarının derinliği
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Ne yapamaz dürüstçe
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — D4 Diligence — sorumluluk
 

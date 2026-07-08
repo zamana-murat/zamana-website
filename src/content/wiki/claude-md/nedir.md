@@ -108,9 +108,9 @@ Bu 20 satır, her oturumun başında Claude'un profesyonel bir meslektaş gibi d
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nasıl Yazılır?](nasil-yazilir/) — Adım adım rehber
-- [CLAUDE.md Örnekleri](ornekler/) — Farklı roller için gerçek örnekler
-- [Memory Yönetimi](memory-yonetimi/) — CLAUDE.md dışındaki hafıza mekanizmaları
+- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Adım adım rehber
+- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/) — Farklı roller için gerçek örnekler
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — CLAUDE.md dışındaki hafıza mekanizmaları
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — CLAUDE.md'nin devreye girdiği ortam
 
 

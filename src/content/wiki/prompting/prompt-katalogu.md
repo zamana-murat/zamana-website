@@ -20,7 +20,7 @@ Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın
 4. Çıktıyı kontrol edin, gerekirse iterasyonla geliştirin
 5. Düzenli kullandığınız şablonları kişisel CLAUDE.md / [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'ne ekleyin
 
-İterasyon süreci için [Prompt İterasyonu](prompt-iterasyonu/) sayfası.
+İterasyon süreci için [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfası.
 
 ---
 
@@ -527,16 +527,16 @@ Bu kataloğun her şablonunu **her seferinde kopyalamak** uzun vadede yorucudur.
 - Sıfırdan yaratıcı çıktı (yeni marka kimliği)
 - Karmaşık çok adımlı stratejik analiz
 
-Bu işler için [4D Çerçevesi](4d-cercevesi/) ve [İleri Seviye](ileri-seviye/) sayfaları ile derinleşin.
+Bu işler için [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) ve [İleri Seviye](/wiki/prompting/ileri-seviye/) sayfaları ile derinleşin.
 
 ## İlgili Sayfalar
 
-- [Temel İlkeler](temel-ilkeler/) — Genel prompt mantığı
-- [4D Çerçevesi](4d-cercevesi/) — Felsefe
-- [Türkçe Prompt Teknikleri](turkce-prompt-teknikleri/) — Türkçe için
-- [Çıktı Formatı](cikti-formati/) — Tablo/JSON/markdown kontrolü
-- [Few-Shot Örnekleme](few-shot-ornekleme/) — Örnekle öğretme
-- [Prompt İterasyonu](prompt-iterasyonu/) — Şablonu geliştirme
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Felsefe
+- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) — Türkçe için
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Tablo/JSON/markdown kontrolü
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle öğretme
+- [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) — Şablonu geliştirme
 - [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md rol şablonları
 - [Departmanlar](/wiki/departmanlar/) — Rol bazlı uygulamalar
 

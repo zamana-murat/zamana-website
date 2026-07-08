@@ -10,7 +10,7 @@ lastUpdated: "2026-05-06"
 
 **Claude Chat, Claude'un tarayıcı ve mobil uygulamalardaki standart arayüzüdür** — çoğu kişinin Claude'la ilk tanıştığı yerdir. [claude.ai](https://claude.ai) adresinden ve iOS / Android uygulamalarından erişilir.
 
-Bu sayfa Claude Chat'in ne yaptığını, ne yapmadığını ve bir iş profesyonelinin hangi görevleri Chat'te, hangilerini [Cowork](cowork-modu/) modunda yapması gerektiğini açıklar.
+Bu sayfa Claude Chat'in ne yaptığını, ne yapmadığını ve bir iş profesyonelinin hangi görevleri Chat'te, hangilerini [Cowork](/wiki/araclar/cowork-modu/) modunda yapması gerektiğini açıklar.
 
 ## Claude Chat Nedir?
 
@@ -52,7 +52,7 @@ Claude sohbet penceresi içinde interaktif HTML sayfaları, veri görselleştirm
 
 ### Projects
 
-Claude Chat içinde **Projects** özelliği, kalıcı ve organize çalışma alanları yaratır — her biri kendi bilgi tabanı ve özel talimatlarıyla. Detay için [Projects](projects/) sayfasına bakın.
+Claude Chat içinde **Projects** özelliği, kalıcı ve organize çalışma alanları yaratır — her biri kendi bilgi tabanı ve özel talimatlarıyla. Detay için [Projects](/wiki/araclar/projects/) sayfasına bakın.
 
 ## Claude Chat mi, Cowork mu?
 
@@ -99,8 +99,8 @@ Bunların hepsi Chat'te harika çalışır. Cowork gerekmez.
 
 ## İlgili Sayfalar
 
-- [Cowork Modu](cowork-modu/) — Claude Chat'in gelişmiş kardeşi
-- [Projects](projects/) — Claude Chat içindeki kalıcı çalışma alanları
-- [Claude Desktop](claude-desktop/) — Cowork'ün içinde yaşadığı uygulama
-- [Araçlar Ana Sayfası](./) — Tüm Claude araçlarının karar tablosu
+- [Cowork Modu](/wiki/araclar/cowork-modu/) — Claude Chat'in gelişmiş kardeşi
+- [Projects](/wiki/araclar/projects/) — Claude Chat içindeki kalıcı çalışma alanları
+- [Claude Desktop](/wiki/araclar/claude-desktop/) — Cowork'ün içinde yaşadığı uygulama
+- [Araçlar Ana Sayfası](/wiki/araclar/) — Tüm Claude araçlarının karar tablosu
 

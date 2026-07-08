@@ -162,8 +162,8 @@ Altısı da evetse, prompt hazır. Tek sayfalık bir not olarak masanızın üst
 
 ## İlgili Sayfalar
 
-- [4D Çerçevesi](4d-cercevesi/) — Tüm prompting'in kavramsal çerçevesi (Description boyutu)
-- [İleri Seviye Prompt Engineering](ileri-seviye/) — XML tags, few-shot prompting, prompt chaining
-- [Yaygın Prompting Hataları](yaygin-hatalar/) — Bu hataları derinlemesine inceliyoruz
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Tüm prompting'in kavramsal çerçevesi (Description boyutu)
+- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/) — XML tags, few-shot prompting, prompt chaining
+- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — Bu hataları derinlemesine inceliyoruz
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Promptların üstüne inşa edildiği kalıcı hafıza
 

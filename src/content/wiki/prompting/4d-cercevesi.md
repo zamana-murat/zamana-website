@@ -6,7 +6,7 @@ tags:
   - 4d-framework
   - ai-fluency
   - anthropic-academy
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-06-03"
 ---
 
 Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir, Anthropic Academy'nin hem kendisi hem de University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
@@ -162,11 +162,24 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 | **Discernment** | Çıktı iyi mi? | Ürün · Süreç · Performans | Emin tonlu çıktıyı sorgusuz kabul |
 | **Diligence** | Sorumluluk kimde? | Yaratım · Şeffaflık · Uygulama | Kullan ama söyleme; paylaş ama doğrulama |
 
+## Davranışsal Göstergeler — Öz Değerlendirme
+
+4D bir teori değil, gözlemlenebilir davranışlar bütünüdür. Anthropic'in AI Fluency çalışması, her boyutta "düşük akıcılık" ve "yüksek akıcılık" davranışlarını ayırt eder. Aşağıdaki tablo kendinizi (veya ekibinizi) hızlıca konumlandırmak için bir aynadır.
+
+| Boyut | Düşük akıcılık göstergesi | Yüksek akıcılık göstergesi |
+|---|---|---|
+| **Delegation** | Her işi ya tamamen kendi yapar ya da körü körüne AI'a atar | Hangi işin insana, AI'a, ikisine ait olduğuna bilinçli karar verir |
+| **Description** | Google'a sorar gibi kısa, bağlamsız sorar | Rol + bağlam + görev + format + kısıt verir, gerekince iterasyonla iyileştirir |
+| **Discernment** | Emin tonlu çıktıyı sorgusuz kabul eder | Çıktıyı, süreci ve davranışı eleştirir; "adımı koyar mıyım?" testini uygular |
+| **Diligence** | Kullanır ama söylemez, paylaşır ama doğrulamaz | Araç seçimini, şeffaflığı ve doğrulamayı üstlenir; sorumluluğu taşır |
+
+**Kendi işinizde test edin:** Son bir haftada Claude ile yaptığınız 3-4 önemli işi seçin, her birini bu dört satıra göre puanlayın. En düşük çıktığınız boyut, bir sonraki gelişim alanınızdır. Tek bir boyutu bile bir kademe yukarı taşımak, genel verimi belirgin artırır.
+
 ## İlgili Sayfalar
 
-- [Prompting Temel İlkeleri](temel-ilkeler/) — İyi bir prompt'un yapısı
-- [İleri Seviye Prompt Engineering](ileri-seviye/) — Zincirleme düşünme, yapılandırılmış çıktı
-- [Yaygın Prompting Hataları](yaygin-hatalar/) — Çoğu kişinin düştüğü tuzaklar
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — İyi bir prompt'un yapısı
+- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/) — Zincirleme düşünme, yapılandırılmış çıktı
+- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — Çoğu kişinin düştüğü tuzaklar
 - [Claude Nedir?](/wiki/temeller/claude-nedir/) — Çerçeveden önce temel kavram
 
 ## Resmi Kaynaklar

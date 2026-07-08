@@ -23,7 +23,7 @@ Bu bölüm CLAUDE.md'yi dört açıdan anlatır: nedir, nasıl yazılır, gerçe
 
     Temel kavram — neyi çözer, neden önemlidir, şeffaflığın kurumsal değeri nedir.
 
-    [→ Nedir?](nedir/)
+    [→ Nedir?](/wiki/claude-md/nedir/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="pencil-outline" aria-hidden="true"></span> **Nasıl Yazılır?**
 
@@ -31,7 +31,7 @@ Bu bölüm CLAUDE.md'yi dört açıdan anlatır: nedir, nasıl yazılır, gerçe
 
     Beş adımlı yapı, kopyalanabilir şablon, sık yapılan hatalar ve ilk 30 dakika planı.
 
-    [→ Nasıl Yazılır?](nasil-yazilir/)
+    [→ Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="format-list-checks" aria-hidden="true"></span> **Örnekler**
 
@@ -39,7 +39,7 @@ Bu bölüm CLAUDE.md'yi dört açıdan anlatır: nedir, nasıl yazılır, gerçe
 
     Satış yöneticisi, CFO, hukuk müşaviri ve 2 rol daha — gerçek CLAUDE.md örnekleri.
 
-    [→ Örnekler](ornekler/)
+    [→ Örnekler](/wiki/claude-md/ornekler/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="memory" aria-hidden="true"></span> **Memory Yönetimi**
 
@@ -47,7 +47,7 @@ Bu bölüm CLAUDE.md'yi dört açıdan anlatır: nedir, nasıl yazılır, gerçe
 
     Dört hafıza katmanı — CLAUDE.md, Projects, memory skill ve oturum bağlamı birlikte.
 
-    [→ Memory Yönetimi](memory-yonetimi/)
+    [→ Memory Yönetimi](/wiki/claude-md/memory-yonetimi/)
 
 </div>
 
@@ -55,10 +55,10 @@ Bu bölüm CLAUDE.md'yi dört açıdan anlatır: nedir, nasıl yazılır, gerçe
 
 Bu bölüme yeni başlıyorsanız önerilen okuma sırası:
 
-1. **[Nedir?](nedir/)** — Kavramı oturtun, **neden** önemli olduğunu anlayın
-2. **[Nasıl Yazılır?](nasil-yazilir/)** — Şablonu alın, **kendi CLAUDE.md**'nizin ilk sürümünü yazın (30 dk)
-3. **[Örnekler](ornekler/)** — Rolünüze en yakın örneği görün, kendi sürümünüzü iyileştirin
-4. **[Memory Yönetimi](memory-yonetimi/)** — Zamanla ihtiyaç duydukça — ilk ay gerekmez, 2. aydan sonra değerlenir
+1. **[Nedir?](/wiki/claude-md/nedir/)** — Kavramı oturtun, **neden** önemli olduğunu anlayın
+2. **[Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/)** — Şablonu alın, **kendi CLAUDE.md**'nizin ilk sürümünü yazın (30 dk)
+3. **[Örnekler](/wiki/claude-md/ornekler/)** — Rolünüze en yakın örneği görün, kendi sürümünüzü iyileştirin
+4. **[Memory Yönetimi](/wiki/claude-md/memory-yonetimi/)** — Zamanla ihtiyaç duydukça — ilk ay gerekmez, 2. aydan sonra değerlenir
 
 **Asla** Örnekler'i açıp körü körüne kopyalamayın. Önce Nedir ve Nasıl Yazılır sayfalarını okuyun — çünkü CLAUDE.md'nin gücü kişiselleştirilmiş olmasındadır. Jenerik bir örneği kopyalamak, genel bir çıktı verir.
 

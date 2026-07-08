@@ -10,7 +10,7 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-[Prompting temel ilkelerini](temel-ilkeler/) öğrenen çalışan iş çıktılarının %80'ini zaten kapsamış olur. Kalan %20, iyi olmayı mükemmele yaklaştıran ileri tekniklerdir.
+[Prompting temel ilkelerini](/wiki/prompting/temel-ilkeler/) öğrenen çalışan iş çıktılarının %80'ini zaten kapsamış olur. Kalan %20, iyi olmayı mükemmele yaklaştıran ileri tekniklerdir.
 
 Bu sayfa tutarlı biçimde üstün çıktı üreten 6 tekniği anlatır. Kaliteli prompt kütüphaneleri kurmanın bel kemiği olan bilgi.
 
@@ -202,16 +202,16 @@ Dürüst cevap: **orta düzeyde**.
 
 Önerilen sıralama:
 
-1. **Önce:** [Temel İlkeler](temel-ilkeler/) — 5 bileşen yapısı oturtulana kadar
-2. **Sonra:** [4D Çerçevesi](4d-cercevesi/) — kavramsal zemin
+1. **Önce:** [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — 5 bileşen yapısı oturtulana kadar
+2. **Sonra:** [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — kavramsal zemin
 3. **En son:** Bu sayfa — XML, few-shot, chaining
 
 Bir haftada üçü birden öğrenilmez. Bir ayda oturur.
 
 ## İlgili Sayfalar
 
-- [Prompting Temel İlkeleri](temel-ilkeler/) — Bu sayfanın ön koşulu
-- [4D Çerçevesi](4d-cercevesi/) — Kavramsal zemin
-- [Yaygın Prompting Hataları](yaygin-hatalar/) — Hata tipleri ve düzeltmeleri
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — Bu sayfanın ön koşulu
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Kavramsal zemin
+- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — Hata tipleri ve düzeltmeleri
 - [Cowork Modu](/wiki/araclar/cowork-modu/) — Prompt kütüphanenin yaşadığı ortam
 

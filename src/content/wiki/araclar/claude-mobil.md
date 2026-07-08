@@ -9,7 +9,7 @@ tags:
 lastUpdated: "2026-05-06"
 ---
 
-**Claude'un mobil uygulamaları, masaüstü Claude'un cebinizdeki uzantısıdır** — App Store ve Google Play'den ücretsiz indirilir, hesabınızla giriş yaptığınız anda tüm sohbet geçmişiniz, [Projects](projects/)'iniz ve aboneliğiniz aynen orada.
+**Claude'un mobil uygulamaları, masaüstü Claude'un cebinizdeki uzantısıdır** — App Store ve Google Play'den ücretsiz indirilir, hesabınızla giriş yaptığınız anda tüm sohbet geçmişiniz, [Projects](/wiki/araclar/projects/)'iniz ve aboneliğiniz aynen orada.
 
 Bu sayfa mobil Claude'un ne için iyi olduğunu, ne için **olmadığını** ve bir iş profesyonelinin günlük rutinine nasıl yerleştireceğini anlatır.
 
@@ -29,24 +29,24 @@ Tipik kullanımlar:
 
 Mobil uygulamaların eksikleri masaüstüne göre belirgin. Karar verirken bilin:
 
-| Özellik | Mobil | [Claude Desktop](claude-desktop/) / Web |
+| Özellik | Mobil | [Claude Desktop](/wiki/araclar/claude-desktop/) / Web |
 |---|---|---|
 | Sohbet, dosya yükleme | ✅ | ✅ |
-| [Projects](projects/) erişimi | ✅ | ✅ |
+| [Projects](/wiki/araclar/projects/) erişimi | ✅ | ✅ |
 | Sesli giriş | ✅ (güçlü) | ⚠️ (sınırlı) |
 | Kamera ile görsel | ✅ | — |
-| [Cowork modu](cowork-modu/) | — | ✅ |
+| [Cowork modu](/wiki/araclar/cowork-modu/) | — | ✅ |
 | [Skills](/wiki/yetenekler/skills/) (.docx, .xlsx, .pptx üretme) | — | ✅ |
 | Yerel dosya sistemi erişimi | — | ✅ (Desktop) |
 | [MCP](/wiki/mcp/nedir/) ve connector'lar | — | ✅ |
-| [Scheduled Tasks](scheduled-tasks/) | İzleme ✅ / Kurulum — | ✅ |
+| [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) | İzleme ✅ / Kurulum — | ✅ |
 | Uzun [artifact](/wiki/yetenekler/artifacts/) önizleme | ⚠️ Küçük ekran | ✅ |
 
 Kısaca: **mobil "tüketim ve hızlı giriş" için, masaüstü "üretim ve otomasyon" için.**
 
 ## Sesli Mod (Voice Mode)
 
-Mobil uygulamada öne çıkan özellik **sesli moddur**. Mikrofona basıp konuşursunuz, Claude sesle cevap verir; yazıya dökülmüş hâli de paralel olarak ekrana düşer. Detay için [Voice Mode](voice-mode/) sayfasına bakın.
+Mobil uygulamada öne çıkan özellik **sesli moddur**. Mikrofona basıp konuşursunuz, Claude sesle cevap verir; yazıya dökülmüş hâli de paralel olarak ekrana düşer. Detay için [Voice Mode](/wiki/araclar/voice-mode/) sayfasına bakın.
 
 Pratik kullanımlar:
 
@@ -71,9 +71,9 @@ Kamera kullanımının teknik tarafı için [Görsel ve Görüntü](/wiki/yetene
 
 ## Bildirimler ve Sürekli Görevler
 
-Mobil uygulama, masaüstünde kurduğunuz [Scheduled Tasks](scheduled-tasks/)'in bildirimlerini telefonunuza düşürür. Pazartesi sabah 09:00'da hazırlanan haftalık raporun bittiğine dair push notification — uygulamayı açmaya gerek bile kalmaz.
+Mobil uygulama, masaüstünde kurduğunuz [Scheduled Tasks](/wiki/araclar/scheduled-tasks/)'in bildirimlerini telefonunuza düşürür. Pazartesi sabah 09:00'da hazırlanan haftalık raporun bittiğine dair push notification — uygulamayı açmaya gerek bile kalmaz.
 
-[Dispatch](dispatch/) ile uzun süreli arka plan görevleri başlattıysanız, mobilden ilerlemelerini görebilirsiniz. Sonuç hazır olduğunda bildirim alır, dilediğiniz zaman bakarsınız.
+[Dispatch](/wiki/araclar/dispatch/) ile uzun süreli arka plan görevleri başlattıysanız, mobilden ilerlemelerini görebilirsiniz. Sonuç hazır olduğunda bildirim alır, dilediğiniz zaman bakarsınız.
 
 ## Gizlilik ve KVKK
 
@@ -97,15 +97,15 @@ Mobil uygulamada hangi planı kullandığınızdan bağımsız oturum açarsın�
 
 **Dikte için 30 saniyelik ön düşünme.** Mikrofona basmadan önce ne söyleyeceğinizin ana noktalarını kafanızda toparlayın. Aksi halde dağınık dikte → düşük kaliteli çıktı.
 
-**Mobil dikte → masaüstü temizleme.** Yolda sesli olarak taslak çıkarın, masaya dönünce [Cowork modu](cowork-modu/)'nda parlatın. Üretim hattı gibi düşünün.
+**Mobil dikte → masaüstü temizleme.** Yolda sesli olarak taslak çıkarın, masaya dönünce [Cowork modu](/wiki/araclar/cowork-modu/)'nda parlatın. Üretim hattı gibi düşünün.
 
 **Fotoğraf çekerken çerçeveye dikkat.** Claude görseli okuyacağı için metin net ve düz olmalı. Eğri açı, gölge, parlama — kalite düşürür.
 
 ## İlgili Sayfalar
 
-- [Voice Mode](voice-mode/) — Sesli kullanımın teknik detayı
-- [Claude Chat](claude-chat/) — Tarayıcıdan kullanım
-- [Claude Desktop](claude-desktop/) — Masaüstü uygulaması ve [Cowork modu](cowork-modu/)
+- [Voice Mode](/wiki/araclar/voice-mode/) — Sesli kullanımın teknik detayı
+- [Claude Chat](/wiki/araclar/claude-chat/) — Tarayıcıdan kullanım
+- [Claude Desktop](/wiki/araclar/claude-desktop/) — Masaüstü uygulaması ve [Cowork modu](/wiki/araclar/cowork-modu/)
 - [İlk Kurulum](/wiki/temeller/ilk-kurulum/) — Hesap açma ve uygulama indirme
 - [Planlar](/wiki/temeller/planlar/) — Mobil hangi plan üzerinde çalışır
 - [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) — Kamera ile çekim mantığı
