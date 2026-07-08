@@ -1,0 +1,33 @@
+# Zamana
+
+> Türkiye'nin kurumsal Claude (Anthropic) eğitim ve danışmanlık programı. Şirketlere ve bireylere Claude'u iş süreçlerinde etkin kullanmayı öğretir. Kurucu: Murat Özsaygılı. Tüm içerik Türkçe.
+
+Zamana, API veya yazılım geliştirme değil, iş odaklı Claude kullanımını öğretir. İki program sunar: 3 haftalık Bireysel Program ve 3 aylık Kurumsal Retainer. Ayrıca herkese açık, ücretsiz bir Türkçe Claude wiki'si yayınlar.
+
+## Programlar
+- [Programlar](https://zamana.com.tr/programlar/): Tüm eğitim programlarına genel bakış
+- [Bireysel Program](https://zamana.com.tr/programlar/bireysel/): 3 hafta birebir, tek kişi
+- [Kurumsal Program](https://zamana.com.tr/programlar/kurumsal/): 3 ay, 6 çalışan retainer
+- [CEO Brifing](https://zamana.com.tr/programlar/ceo-brifing/): Yöneticiler için kısa oturum
+- [Program Karşılaştırması](https://zamana.com.tr/programlar/karsilastirma/): Üç programın karşılaştırması
+
+## Wiki (Türkçe Claude bilgi tabanı)
+- [Wiki Ana Sayfa](https://zamana.com.tr/wiki/): Türkçe Claude wiki girişi
+- [Temeller](https://zamana.com.tr/wiki/temeller/): Claude nedir, planlar, ilk kurulum, gizlilik ve KVKK
+- [Araçlar](https://zamana.com.tr/wiki/araclar/): Cowork, Projects, dispatch, scheduled tasks
+- [Prompting](https://zamana.com.tr/wiki/prompting/): Türkçe prompt teknikleri ve 4D çerçevesi
+- [CLAUDE.md](https://zamana.com.tr/wiki/claude-md/): Proje talimat dosyası rehberi
+- [Yetenekler](https://zamana.com.tr/wiki/yetenekler/): Skills, artifacts, vision, code execution
+- [MCP](https://zamana.com.tr/wiki/mcp/): Model Context Protocol
+- [Departmanlar](https://zamana.com.tr/wiki/departmanlar/): Departman bazlı kullanım senaryoları
+- [Sözlük](https://zamana.com.tr/wiki/sozluk/): Claude ve yapay zekâ terimleri
+- [Önerilen Okuma Sırası](https://zamana.com.tr/wiki/okuma-sirasi/): Wiki için önerilen okuma yolu
+
+## Kurumsal
+- [Hakkında](https://zamana.com.tr/hakkinda/): Murat Özsaygılı ve Zamana hakkında
+- [Sık Sorulan Sorular](https://zamana.com.tr/sss/): Program ve Claude kullanımıyla ilgili sorular
+- [İletişim](https://zamana.com.tr/iletisim/): İletişim ve keşif görüşmesi talebi
+
+## Yasal
+- [Gizlilik ve KVKK](https://zamana.com.tr/gizlilik/): Kişisel veri politikası
+- [Çerez Politikası](https://zamana.com.tr/cerezler/): Çerez kullanımı

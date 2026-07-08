@@ -1,5 +1,5 @@
 ---
-title: "Gizlilik, Veri ve KVKK — Claude'u Türkiye'de Kurumsal Kullanmak"
+title: "Claude Gizlilik, Veri ve KVKK Uyumu"
 description: "Claude ile çalışırken veri gizliliği, eğitim verisi politikaları, KVKK uyumluluğu, DPA ve Türkiye'deki kurumsal kullanım kuralları."
 tags:
   - temeller

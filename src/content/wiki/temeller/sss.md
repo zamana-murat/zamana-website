@@ -1,5 +1,5 @@
 ---
-title: Sık Sorulan Sorular (SSS) — Bireysel ve Kurumsal Claude Kullanımı
+title: "Claude Sık Sorulan Sorular (SSS)"
 description: "Claude'u kullanmayı düşünürken, bireysel veya şirket olarak akla gelen yaygın sorular ve net cevaplar. Güvenlik, veri, maliyet, adaptasyon ve KVKK."
 tags:
   - temeller

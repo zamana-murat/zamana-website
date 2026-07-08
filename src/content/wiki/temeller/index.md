@@ -124,5 +124,6 @@ Temeller'i okuduysanız şu bölümler mantıklı devamdır:
 
 - [**Araçlar**](/wiki/araclar/) — Claude'u nerede kullanırsınız (Desktop, Cowork, Claude.ai)
 - [**CLAUDE.md**](/wiki/claude-md/) — Claude'u kişiselleştiren kalıcı hafıza dosyası
-- [**Prompting**](/wiki/prompting/) — Claude'la nasıl konuşulur — 4D Çerçevesi bu bölümdedir
+- [**Prompting**](/wiki/prompting/) — Claude'la nasıl konuşulur, 4D Çerçevesi bu bölümdedir
+- [**Önerilen Okuma Sırası**](/wiki/okuma-sirasi/) — Tüm wiki için baştan sona önerilen okuma yolu
 

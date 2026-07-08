@@ -1,16 +1,17 @@
 ---
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const isActive = (href: string) => {
-  if (href === '/') return path === '/';
-  return path === href || path.startsWith(href + '/');
+  const h = href.replace(/\/$/, '') || '/';
+  if (h === '/') return path === '/';
+  return path === h || path.startsWith(h + '/');
 };
 const links = [
   { href: '/', label: 'Anasayfa' },
-  { href: '/programlar', label: 'Programlar' },
-  { href: '/hakkinda', label: 'Hakkında' },
-  { href: '/sss', label: 'SSS' },
+  { href: '/programlar/', label: 'Programlar' },
+  { href: '/hakkinda/', label: 'Hakkında' },
+  { href: '/sss/', label: 'SSS' },
   { href: '/wiki/', label: 'Wiki' },
-  { href: '/iletisim', label: 'İletişim' },
+  { href: '/iletisim/', label: 'İletişim' },
 ];
 ---
 
@@ -27,7 +28,7 @@ const links = [
           class={`nav-link${isActive(l.href) ? ' nav-link--active' : ''}`}
         >{l.label}</a>
       ))}
-      <a href="/iletisim" class="btn btn--primary nav-cta">Görüşme Al</a>
+      <a href="/iletisim/" class="btn btn--primary nav-cta">Görüşme Al</a>
     </nav>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç" aria-expanded="false">
@@ -39,7 +40,7 @@ const links = [
     {links.map(l => (
       <a href={l.href} class={`nav-link${isActive(l.href) ? ' nav-link--active' : ''}`}>{l.label}</a>
     ))}
-    <a href="/iletisim" class="btn btn--primary">Görüşme Al</a>
+    <a href="/iletisim/" class="btn btn--primary">Görüşme Al</a>
   </nav>
 </header>
 

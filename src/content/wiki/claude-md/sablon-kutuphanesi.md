@@ -23,6 +23,8 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 
 ## 1. Satış Profesyoneli
 
+**Kimler için:** B2B satış yapan, soğuk e-posta ve takip yazışması ağırlıklı çalışan biri.
+
 ```markdown
 # CLAUDE.md — [Adınız], Satış
 
@@ -59,6 +61,8 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 [Satış departmanı](/wiki/departmanlar/satis/) sayfası yaklaşımı genişletir.
 
 ## 2. Pazarlama / İçerik
+
+**Kimler için:** İçerik üretimi, kampanya ve marka iletişimiyle ilgilenen pazarlamacı.
 
 ```markdown
 # CLAUDE.md — [Adınız], Pazarlama
@@ -98,6 +102,8 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 [Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfası ek detay verir.
 
 ## 3. Finans / Mali İşler
+
+**Kimler için:** Muhasebe, raporlama ve mevzuat takibi yapan mali işler çalışanı.
 
 ```markdown
 # CLAUDE.md — [Adınız], Finans
@@ -140,6 +146,8 @@ Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi — uygun olanları].
 
 ## 4. Hukuk
 
+**Kimler için:** Sözleşme ve Türk hukuku bağlamında çalışan hukuk profesyoneli.
+
 ```markdown
 # CLAUDE.md — [Adınız], Hukuk
 
@@ -179,6 +187,8 @@ Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası kapsamı genişletir.
 
 ## 5. İnsan Kaynakları
+
+**Kimler için:** İşe alım, çalışan yazışmaları ve İK süreçlerini yürüten biri.
 
 ```markdown
 # CLAUDE.md — [Adınız], İnsan Kaynakları
@@ -222,6 +232,8 @@ ve gelişimi sorumluluğum.
 
 ## 6. Operasyon / Üretim Müdürü
 
+**Kimler için:** Tesis, üretim planlama ve operasyon yöneten bir müdür.
+
 ```markdown
 # CLAUDE.md — [Adınız], Operasyon
 
@@ -259,6 +271,8 @@ Ekip büyüklüğü: [sayı]. Tesis [konum].
 [Operasyon departmanı](/wiki/departmanlar/operasyon/) genişletir.
 
 ## 7. Müşteri Hizmetleri
+
+**Kimler için:** Müşteri talepleri, şikayet yönetimi ve destek yazışması yapan biri.
 
 ```markdown
 # CLAUDE.md — [Adınız], Müşteri Hizmetleri
@@ -298,6 +312,8 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 
 ## 8. Yönetici / C-Level
 
+**Kimler için:** Stratejik karar, özet ve kurul iletişimi ihtiyacı olan üst düzey yönetici.
+
 ```markdown
 # CLAUDE.md — [Adınız], [CEO / Genel Müdür / Direktör]
 
@@ -336,6 +352,8 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 [Liderlik departmanı](/wiki/departmanlar/liderlik/) yaklaşımı derinleştirir.
 
 ## 9. BT / IT Yöneticisi
+
+**Kimler için:** Altyapı, güvenlik ve teknik süreç yöneten BT sorumlusu.
 
 ```markdown
 # CLAUDE.md — [Adınız], Bilgi Teknolojileri

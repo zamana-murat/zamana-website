@@ -68,7 +68,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="field consent">
               <label>
                 <input type="checkbox" name="consent" required />
-                <span>Kişisel verilerimin <a href="/gizlilik">KVKK Aydınlatma Metni</a> kapsamında işlenmesini kabul ediyorum.</span>
+                <span>Kişisel verilerimin <a href="/gizlilik/">KVKK Aydınlatma Metni</a> kapsamında işlenmesini kabul ediyorum.</span>
               </label>
             </div>
 
@@ -116,6 +116,44 @@ import Layout from '../layouts/Layout.astro';
             <p class="text-muted">Programa karar vermeden önce Zamana'nın kalitesini görmek isterseniz <a href="/wiki/">ücretsiz Türkçe wiki'mizi</a> inceleyin.</p>
           </div>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container contact-info">
+      <div class="info-col">
+        <h2 class="section-title">15 dakikalık görüşmede ne oluyor?</h2>
+        <p>
+          Görüşme bir satış sunumu değil. Amacımız durumunuzu anlamak ve size dürüst bir yön göstermek. Çoğu görüşme 15 dakika kadar sürer, kısa ve net tutarız, zamanınızı almayız.
+        </p>
+        <ul class="info-list">
+          <li><strong>Nerede takıldığınızı dinleriz.</strong> Şu an Claude ile ne yapmaya çalışıyorsunuz, ekipte kaç kişi etkileniyor, hangi engelle karşılaşıyorsunuz.</li>
+          <li><strong>Size uygun formatı netleştiririz.</strong> Bireysel program mı, kurumsal retainer mı, yoksa henüz ikisi de değil mi. Gerekmiyorsa açıkça "şu an gerek yok" deriz.</li>
+          <li><strong>Sonraki adımı konuşuruz.</strong> Başlamak isterseniz takvim ve içerik planını, istemezseniz kendi başınıza ilerleyebileceğiniz ücretsiz kaynakları paylaşırız.</li>
+        </ul>
+      </div>
+
+      <div class="info-col">
+        <h2 class="section-title">Görüşmeden önce merak edilenler</h2>
+        <div class="mini-faq">
+          <div class="faq-item">
+            <h3>Görüşme ücretli mi?</h3>
+            <p>Hayır. İlk keşif görüşmesi tamamen ücretsiz ve hiçbir taahhüt içermez.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Hemen karar vermem gerekir mi?</h3>
+            <p>Gerekmez. Görüşme sonunda düşünmek için zamanınız olur, acele ettiren bir süreç kurmuyoruz.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Henüz Claude hesabım yok, yine de konuşabilir miyiz?</h3>
+            <p>Tabii. Birçok kişi sıfırdan başlıyor. Hangi planla başlamanız gerektiğini de bu görüşmede netleştiririz.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Görüşme yüz yüze mi, uzaktan mı?</h3>
+            <p>Genellikle telefonla veya görüntülü. İstanbul'daysanız ve yüz yüze tercih ederseniz Beylikdüzü ofisinde de buluşabiliriz.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -201,6 +239,22 @@ import Layout from '../layouts/Layout.astro';
   .contact-block strong { display: block; color: var(--c-navy); margin-bottom: 0.15rem; }
   .contact-block a { color: var(--c-gold-text); }
   .contact-block a:hover { text-decoration: underline; }
+
+  .section--alt { background: var(--c-bg-subtle); }
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-6);
+    align-items: start;
+  }
+  @media (max-width: 880px) { .contact-info { grid-template-columns: 1fr; } }
+  .info-col p { line-height: 1.7; color: var(--c-text-muted); }
+  .info-list { display: grid; gap: var(--s-3); margin-top: var(--s-3); }
+  .info-list li { line-height: 1.6; }
+  .info-list strong { color: var(--c-navy); }
+  .mini-faq { display: grid; gap: var(--s-4); margin-top: var(--s-3); }
+  .faq-item h3 { color: var(--c-navy); font-size: 1.02rem; margin-bottom: 0.3rem; }
+  .faq-item p { color: var(--c-text-muted); line-height: 1.6; margin: 0; }
 </style>
 
 <script>
@@ -239,7 +293,7 @@ import Layout from '../layouts/Layout.astro';
       const json: any = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
         status.classList.add('is-success');
-        status.innerHTML = '✓ Mesajınız alındı. 24 saat içinde dönüş yapacağız. Bu arada <a href="/wiki/">wiki</a>\'ye veya <a href="/sss">sık sorulan sorulara</a> göz atabilirsiniz.';
+        status.innerHTML = '✓ Mesajınız alındı. 24 saat içinde dönüş yapacağız. Bu arada <a href="/wiki/">wiki</a>\'ye veya <a href="/sss/">sık sorulan sorulara</a> göz atabilirsiniz.';
         form.reset();
       } else {
         throw new Error(json.error || 'unknown');

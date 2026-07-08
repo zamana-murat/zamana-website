@@ -15,6 +15,8 @@ lastUpdated: "2026-05-06"
 
 ## 1. Satış Yöneticisi (B2B)
 
+**Kimler için:** B2B satış yöneten, ekip ve kota sorumluluğu olan biri. Teklif, takip e-postası ve müşteri notları ağırlıklı çalışıyorsanız bu örnekten başlayın.
+
 ```markdown
 # CLAUDE.md — Ahmet Yılmaz
 
@@ -80,6 +82,8 @@ lastUpdated: "2026-05-06"
 ```
 
 ## 2. Finans Direktörü (CFO)
+
+**Kimler için:** Finansal raporlama, bütçe ve analiz işlerini yürüten üst düzey finans yöneticisi. Sayısal doğruluk ve mevzuat hassasiyeti öne çıkar.
 
 ```markdown
 # CLAUDE.md — Elif Demir
@@ -156,6 +160,8 @@ lastUpdated: "2026-05-06"
 
 ## 3. Hukuk Müşaviri
 
+**Kimler için:** Sözleşme, mevzuat takibi ve hukuki görüş üreten bir hukuk profesyoneli. Türk hukuku bağlamı ve dikkatli dil bu örnekte önceliklidir.
+
 ```markdown
 # CLAUDE.md — Av. Can Aksoy
 
@@ -227,6 +233,8 @@ lastUpdated: "2026-05-06"
 
 ## 4. Küçük İşletme Sahibi
 
+**Kimler için:** Satıştan muhasebeye kadar çok rolü tek başına üstlenen küçük işletme sahibi. Hız ve pratiklik bu örnekte esastır.
+
 ```markdown
 # CLAUDE.md — Selin Öztürk
 
@@ -287,6 +295,8 @@ lastUpdated: "2026-05-06"
 ```
 
 ## 5. Yönetici Asistanı
+
+**Kimler için:** Takvim, yazışma ve koordinasyon yükünü taşıyan yönetici asistanı. Kısa, net ve nazik iletişim bu örnekte önceliklidir.
 
 ```markdown
 # CLAUDE.md — Derya Kara
