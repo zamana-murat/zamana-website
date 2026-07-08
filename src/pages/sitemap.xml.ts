@@ -10,6 +10,7 @@ const baseRoutes = [
   { path: '/programlar/kurumsal/',          priority: '0.9', changefreq: 'monthly' },
   { path: '/programlar/ceo-brifing/',       priority: '0.9', changefreq: 'monthly' },
   { path: '/programlar/karsilastirma/',     priority: '0.8', changefreq: 'monthly' },
+  { path: '/yapay-zeka-egitimi/',           priority: '0.8', changefreq: 'monthly' },
   { path: '/sss/',                          priority: '0.8', changefreq: 'monthly' },
   { path: '/hakkinda/',                     priority: '0.7', changefreq: 'yearly'  },
   { path: '/iletisim/',                     priority: '0.8', changefreq: 'yearly'  },

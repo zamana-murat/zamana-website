@@ -109,6 +109,12 @@ const pages = [
     eyebrow: 'Yasal',
     title: 'Çerez Politikası',
   },
+  {
+    slug: 'yapay-zeka-egitimi',
+    eyebrow: 'Yapay Zeka Eğitimi',
+    title: 'Kurumsal Ekipler İçin Yapay Zeka Eğitimi',
+    subtitle: 'İş odaklı · Türkçe · Claude odaklı',
+  },
 ];
 
 // ── Wiki pages: discover from src/content/wiki/, derive eyebrow from section,
