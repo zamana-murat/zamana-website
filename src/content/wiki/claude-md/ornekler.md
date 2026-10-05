@@ -1,24 +1,24 @@
 ---
-title: CLAUDE.md Örnekleri — Farklı Roller İçin
+title: "CLAUDE.md Örnekleri: Farklı Roller İçin"
 description: Satış yöneticisi, finans direktörü, hukuk uzmanı ve diğer roller için hazır CLAUDE.md örnekleri. Kopyalayın, kendi rolünüze uyarlayın.
 tags:
   - claude-md
   - ornekler
   - sablon
   - rol-bazli
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 [CLAUDE.md'yi nasıl yazacağınızı](/wiki/claude-md/nasil-yazilir/) öğrendiniz. Bu sayfa farklı rollere göre hazır örnekler sunar. Sizin rolünüze en yakınını kopyalayın, kendi bilgilerinizle doldurun, başlayın.
 
-Örnekler **gerçekçi**dir — Türkiye'deki şirket yapısı, iş kültürü ve yaygın terminoloji gözetilerek yazılmıştır.
+Örnekler **gerçekçi** olsun diye Türkiye'deki şirket yapısı, iş kültürü ve yaygın terminoloji gözetilerek yazılmıştır.
 
 ## 1. Satış Yöneticisi (B2B)
 
 **Kimler için:** B2B satış yöneten, ekip ve kota sorumluluğu olan biri. Teklif, takip e-postası ve müşteri notları ağırlıklı çalışıyorsanız bu örnekten başlayın.
 
 ```markdown
-# CLAUDE.md — Ahmet Yılmaz
+# CLAUDE.md: Ahmet Yılmaz
 
 ## Kim Olduğum
 - İsim: Ahmet Yılmaz
@@ -86,7 +86,7 @@ lastUpdated: "2026-05-06"
 **Kimler için:** Finansal raporlama, bütçe ve analiz işlerini yürüten üst düzey finans yöneticisi. Sayısal doğruluk ve mevzuat hassasiyeti öne çıkar.
 
 ```markdown
-# CLAUDE.md — Elif Demir
+# CLAUDE.md: Elif Demir
 
 ## Kim Olduğum
 - İsim: Elif Demir
@@ -99,7 +99,7 @@ lastUpdated: "2026-05-06"
 - Yapı: Holding + 3 iştirak
   - Marmara Üretim A.Ş. (kumaş üretimi)
   - Marmara Dış Ticaret A.Ş. (ihracat)
-  - Marmara Mağazacılık A.Ş. (perakende — "Momento" markası)
+  - Marmara Mağazacılık A.Ş. (perakende, "Momento" markası)
 - Sektör: Tekstil, hazır giyim
 - Büyüklük: Konsolide ciro ~480M TL, 380 çalışan, 3 fabrika + 18 mağaza
 
@@ -124,14 +124,14 @@ lastUpdated: "2026-05-06"
 - Tercih: kesin sayılar veya aralıklar, karşılaştırma bazı (YoY, QoQ), yorum-analiz ayrımı
 
 ## Her Zaman / Asla
-- Her zaman: rakamları ben veririm, sen yorum ve anlatım üretirsin — hesap yapma
+- Her zaman: rakamları ben veririm, sen yorum ve anlatım üretirsin, hesap yapma
 - Her zaman: yorum üretirken önceki dönem karşılaştırması ekle
-- Her zaman: risk veya kötü haberi yumuşatma — net söyle
+- Her zaman: risk veya kötü haberi yumuşatma, net söyle
 - Asla: dış iletişimde iştirak detayını (fiyat, marj, müşteri adı) paylaşma
 - Asla: Claude'un kendi ürettiği sayıyı "benim sayım" gibi sunma
 
 ## Tekrar Eden İş Akışları
-- Aylık kapanış raporu (yönetim için) — ayın 10'una kadar
+- Aylık kapanış raporu (yönetim için), ayın 10'una kadar
 - Çeyreklik yönetim kurulu paketi
 - Yıllık bütçe sunumu (Kasım)
 - KOSGEB ve TÜBİTAK teşvik başvuruları (yılda 2-3 tane)
@@ -151,7 +151,7 @@ lastUpdated: "2026-05-06"
   - TURQUALITY başvurusu (Momento markası için)
   - Yeni fabrika finansmanı (350M TL, İşbank ile müzakere)
 - Bu çeyreğin hedefleri:
-  - EBITDA marjını %14'e çıkarmak (şu an %11.8)
+  - EBITDA marjını %14'e çıkarmak (şu an %11,8)
   - Dış finansman maliyetini 50 baz puan düşürmek
 - Bu hafta öncelik:
   - Mart ayı kapanış raporunu Pazartesi yetiştirmek
@@ -163,13 +163,13 @@ lastUpdated: "2026-05-06"
 **Kimler için:** Sözleşme, mevzuat takibi ve hukuki görüş üreten bir hukuk profesyoneli. Türk hukuku bağlamı ve dikkatli dil bu örnekte önceliklidir.
 
 ```markdown
-# CLAUDE.md — Av. Can Aksoy
+# CLAUDE.md: Av. Can Aksoy
 
 ## Kim Olduğum
 - İsim: Av. Can Aksoy
 - Pozisyon: Hukuk Müşaviri, Beta Enerji A.Ş.
 - Barolar Birliği kayıtlı: İstanbul Barosu
-- Rol özeti: Şirketin tüm hukuki süreçleri — ticari sözleşmeler, kurumsal uyum,
+- Rol özeti: Şirketin tüm hukuki süreçleri: ticari sözleşmeler, kurumsal uyum,
   KVKK, düzenleyici ilişkiler, dava yönetimi.
 
 ## Şirket
@@ -190,9 +190,9 @@ lastUpdated: "2026-05-06"
 - Dış: Yılmaz & Ortakları (ticari), ABC Hukuk (iş hukuku), XYZ Rekabet Hukuku
 
 ## Ton
-- Türkçe: Hukuki dil ama rant değil — iş anlayacağı şekilde sadeleştir
+- Türkçe: Hukuki dil ama ağdalı değil, iş birimi anlayacak şekilde sadeleştir
 - İngilizce: Uluslararası sözleşmeler için standart legal drafting
-- Kaçınılacak: Muğlak maddeler, "ilgili mevzuat uyarınca" genel ifadeleri — spesifik kanun/madde referansı tercih et
+- Kaçınılacak: Muğlak maddeler, "ilgili mevzuat uyarınca" genel ifadeleri yerine spesifik kanun/madde referansı tercih et
 - Tercih: Maddeler arası referans, tanımlı terimlerin ilk harfi büyük (Büyük harfle Tanımlanan Terim)
 
 ## Her Zaman / Asla
@@ -220,7 +220,7 @@ lastUpdated: "2026-05-06"
 
 ## Güncel Odak
 - Aktif projeler:
-  - 120 MW rüzgar santrali EPC sözleşmesi (GES Elektromekanik — müzakere)
+  - 120 MW rüzgar santrali EPC sözleşmesi (GES Elektromekanik, müzakere aşamasında)
   - 2 PPA yenilemesi (2026 Q3 süresi dolan)
   - VERBİS güncelleme (yeni İK sistemi geçişi sonrası)
 - Bu çeyreğin hedefleri:
@@ -236,7 +236,7 @@ lastUpdated: "2026-05-06"
 **Kimler için:** Satıştan muhasebeye kadar çok rolü tek başına üstlenen küçük işletme sahibi. Hız ve pratiklik bu örnekte esastır.
 
 ```markdown
-# CLAUDE.md — Selin Öztürk
+# CLAUDE.md: Selin Öztürk
 
 ## Kim Olduğum
 - İsim: Selin Öztürk
@@ -264,7 +264,7 @@ lastUpdated: "2026-05-06"
 - Freelance ekip: Gizem (illüstrasyon), Kerem (motion graphic)
 
 ## Ton
-- Türkçe: Samimi ama profesyonel — ben küçük bir firmayım, büyük kurum gibi konuşmam garip
+- Türkçe: Samimi ama profesyonel; ben küçük bir firmayım, büyük kurum gibi konuşmam garip kaçar
 - İngilizce: Business casual (yurtdışı müşteriler için)
 - Kaçınılacak: Abartılı pazarlama dili, boş klişeler
 - Tercih: Net, anlaşılır, proje odaklı
@@ -299,7 +299,7 @@ lastUpdated: "2026-05-06"
 **Kimler için:** Takvim, yazışma ve koordinasyon yükünü taşıyan yönetici asistanı. Kısa, net ve nazik iletişim bu örnekte önceliklidir.
 
 ```markdown
-# CLAUDE.md — Derya Kara
+# CLAUDE.md: Derya Kara
 
 ## Kim Olduğum
 - İsim: Derya Kara
@@ -337,8 +337,8 @@ lastUpdated: "2026-05-06"
 - Her zaman: Hakan Bey adına yazdığım her e-postayı önce taslak göster, onayını al, sonra gönder
 - Her zaman: Toplantı öncesi tek sayfalık brifing hazırla (kim, neden, ne istiyorlar, Hakan Bey'in amacı)
 - Her zaman: Seyahat planında "A Planı" ve "B Planı" (yedek) ver
-- Asla: Hakan Bey'in takviminde boşluk doldur (o yeşil gösterse bile onun boş zamanıdır)
-- Asla: Aile üyesi iletişimlerini iş iletişimiyle karıştır
+- Asla: Hakan Bey'in takviminde boşluk doldurma (o yeşil gösterse bile onun boş zamanıdır)
+- Asla: Aile üyesi iletişimlerini iş iletişimiyle karıştırma
 
 ## Tekrar Eden İş Akışları
 - Haftalık Hakan Bey takvim hazırlığı (Pazar akşamı)
@@ -353,8 +353,8 @@ lastUpdated: "2026-05-06"
 
 ## Güncel Odak
 - Aktif projeler:
-  - Hakan Bey'in 2026 Q2 Avrupa turu (Londra, Paris, Frankfurt — 10 gün)
-  - Yeni yönetici asistanı sistemi (Omega Grup genelinde — proje pilot)
+  - Hakan Bey'in 2026 Q2 Avrupa turu (Londra, Paris, Frankfurt; 10 gün)
+  - Yeni yönetici asistanı sistemi (Omega Grup genelinde, pilot proje)
 - Bu çeyreğin hedefleri:
   - Hakan Bey'in toplantı doluluğunu %20 azaltmak (gereksizleri filtrelemek)
   - Yeni asistan sistemi pilot için veri toplamak
@@ -363,21 +363,21 @@ lastUpdated: "2026-05-06"
   - Salı günü aile meclisi toplantı hazırlığı
 ```
 
-## Örnekleri Nasıl Kullanırım?
+## Örnekleri Nasıl Kullanırsınız?
 
-1. **En yakın rolü seçin** — birebir aynı olmasa bile en yakın olanı alın
-2. **Kopyalayın** — workspace klasörünüze `CLAUDE.md` olarak kaydedin
-3. **Kişisel bilgilerle değiştirin** — isim, şirket, müşteri, proje adları
-4. **Ton bölümünü kendinize uyarlayın** — en önemli bölümdür
+1. **En yakın rolü seçin**: birebir aynı olmasa bile en yakın olanı alın
+2. **Kopyalayın**: workspace klasörünüze `CLAUDE.md` olarak kaydedin
+3. **Kişisel bilgilerle değiştirin**: isim, şirket, müşteri, proje adları
+4. **Ton bölümünü kendinize uyarlayın**: en önemli bölümdür
 5. **"Güncel Odak"ı bugünkü gerçekliğinizle doldurun**
-6. **Claude'la deneyin** — bir-iki gerçek görev verin, gördüğünüz eksiklikleri CLAUDE.md'ye ekleyin
+6. **Claude'la deneyin**: bir-iki gerçek görev verin, gördüğünüz eksiklikleri CLAUDE.md'ye ekleyin
 
 Bu 20 dakika alır. Ve ertesi hafta Claude oturumlarınız niteliksel olarak farklı olur.
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Temel kavram
-- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Adım adım rehber
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — CLAUDE.md dışı hafıza mekanizmaları
-- [Departmanlar](/wiki/departmanlar/) — Role göre Claude kullanım senaryoları
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Temel kavram
+- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Adım adım rehber
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): CLAUDE.md dışı hafıza mekanizmaları
+- [Departmanlar](/wiki/departmanlar/): Role göre Claude kullanım senaryoları
 

@@ -1,12 +1,12 @@
 ---
-title: "MCP ve Eklentiler — Claude'u İş Sisteminize Oturtmak"
+title: "MCP ve Eklentiler: Claude'u İş Sisteminize Oturtmak"
 description: "MCP (Model Context Protocol) ve plugin'ler, Claude'u şirketinizin Slack, Drive, CRM, proje yönetimi araçlarına bağlar. Sohbetten iş meslektaşlığına geçiş."
 tags:
   - mcp
   - plugins
   - connector
   - giris
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **Claude, connector'lar olmadan bir sohbet aracıdır. Connector'larla gerçek bir iş meslektaşı gibi davranır.**
@@ -21,7 +21,7 @@ Bu bölüm Claude'u Slack, Drive, CRM, proje yönetimi araçlarınıza bağlayan
 
     ---
 
-    Model Context Protocol standardı — plugin'ler, connector'lar ve Claude'un iş sistemlerine bağlanma mimarisi.
+    Model Context Protocol standardı, plugin'ler, connector'lar ve Claude'un iş sistemlerine bağlanma mimarisi.
 
     [→ MCP Nedir?](/wiki/mcp/nedir/)
 
@@ -29,7 +29,7 @@ Bu bölüm Claude'u Slack, Drive, CRM, proje yönetimi araçlarınıza bağlayan
 
     ---
 
-    38+ hazır connector — Slack, Google, Microsoft 365, Salesforce, HubSpot, Notion, Asana, DocuSign ve diğerleri.
+    Resmî dizinde yaklaşık 900 connector. Rol bazında en yaygınlar: Slack, Google, Microsoft 365, Salesforce, HubSpot, Notion, Asana, DocuSign.
 
     [→ Bağlantı Listesi](/wiki/mcp/baglanti-listesi/)
 
@@ -41,18 +41,18 @@ Tüm bölümün özeti tek cümleye indirgenirse:
 
 > **Bir connector, Claude'u sizin sohbet arkadaşınızdan çıkarıp gerçek sisteminize erişen bir iş meslektaşına çevirir.**
 
-Satış çalışanı için: "XYZ Gıda ile son durumum ne?" sorusuna Claude — connector'suz — cevap veremez. Connector'lu Claude (Salesforce + Gmail bağlı) aynı soruyu saniyeler içinde doğru cevaplar: CRM kaydını okur, son yazışmayı tarar, özet üretir.
+Satış çalışanı için: "XYZ Gıda ile son durumum ne?" sorusuna Claude connector'suz cevap veremez. Connector'lu Claude (Salesforce + Gmail bağlı) aynı soruyu saniyeler içinde doğru cevaplar: CRM kaydını okur, son yazışmayı tarar, özet üretir.
 
-Bu fark küçük değil — **Claude deneyiminin tümü değişir**.
+Bu fark küçük değildir: **Claude deneyiminin tümü değişir**.
 
-## Plugin ve Connector — Kısa Fark
+## Plugin ve Connector: Kısa Fark
 
 Bölümde sık karıştırılan iki terim:
 
 - **Connector** = Claude ile tek bir servis arasındaki bağlantı (örn. Slack connector)
 - **Plugin** = İlgili skill'leri + connector'ları + subagent'ları tek kurulumda paketleyen bileşen (örn. Sales plugin içinde 3 skill + CRM connector birlikte gelir)
 
-Plugin kurulumu genellikle daha pratiktir — ilgili bileşenler bir arada gelir.
+Plugin kurulumu genellikle daha pratiktir, ilgili bileşenler bir arada gelir.
 
 ## Pratik Yaklaşım
 
@@ -62,7 +62,7 @@ Bir çalışanın Claude deneyimini **gerçekten dönüştüren şey** connector
 
 İkinci hafta: rolüne göre **1-2 kritik connector** kurulur (örn. satış için Salesforce + Gmail). "Artık Claude gerçekten çalışma sistemimle konuşuyor" hissi oluşur.
 
-Bu geçiş tek seferlik bir seviye atlayışıdır. Bir kere yaşanınca geri dönüş olmaz.
+Bu, tek seferlik bir seviye atlayışıdır. Bir kez yaşayan çalışan genelde geri dönmek istemez.
 
 ## Hangi Connector'ları Hangi Rol İçin?
 
@@ -73,6 +73,7 @@ Bağlantı Listesi sayfasında role göre önerilerin detayı var. Özet:
 | Satış | CRM + Gmail + Google Workspace |
 | Pazarlama | Google Workspace / M365 + Slack + Canva |
 | Operasyon | Asana / Monday + Slack + Sheets |
+| Finans | Google Workspace (Sheets) / M365 (Excel) |
 | İK | M365 + Slack |
 | Hukuk | M365 / Google + DocuSign |
 | Yönetici Asistanı | M365 tam paket + Slack |
@@ -81,7 +82,7 @@ Bağlantı Listesi sayfasında role göre önerilerin detayı var. Özet:
 
 MCP'yi anladıysanız:
 
-- [**Yetenekler**](/wiki/yetenekler/) — Connector'larla birlikte çalışan skill'ler, artifacts, agent'lar
-- [**Departmanlar**](/wiki/departmanlar/) — Rol bazlı connector uygulamaları
-- [**Cowork Modu**](/wiki/araclar/cowork-modu/) — Connector'ların yaşadığı ortam
+- [**Yetenekler**](/wiki/yetenekler/): Connector'larla birlikte çalışan skill'ler, artifacts, agent'lar
+- [**Departmanlar**](/wiki/departmanlar/): Rol bazlı connector uygulamaları
+- [**Cowork Modu**](/wiki/araclar/cowork-modu/): Connector'ların yaşadığı ortam
 

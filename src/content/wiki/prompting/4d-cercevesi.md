@@ -1,15 +1,15 @@
 ---
-title: 4D Çerçevesi — Claude ile Düşünmenin Temeli
-description: Anthropic'in resmi AI Fluency çerçevesi. Delegation, Description, Discernment, Diligence — yapay zekayla etkili, verimli, etik ve güvenli çalışmanın dört temel yetkinliği.
+title: "4D Çerçevesi: Claude ile Düşünmenin Temeli"
+description: "Anthropic'in AI Fluency çerçevesi: Delegation, Description, Discernment, Diligence. Yapay zekayla verimli, etik ve güvenli çalışmanın dört yetkinliği."
 tags:
   - prompting
   - 4d-framework
   - ai-fluency
   - anthropic-academy
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
-Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir, Anthropic Academy'nin hem kendisi hem de University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
+Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir. Anthropic Academy ve University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
 
 4D, bir çalışanın Claude'la "dene bakalım" seviyesinden "işini buna göre yeniden tasarla" seviyesine geçmesini sağlayan düşünce yapısıdır.
 
@@ -17,7 +17,7 @@ Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi ad
 
 Bu sayfa çerçeveyi tanıtır. Dört D'yi ve her birinin alt yetkinliklerini açıklar.
 
-## Dört D — Resmi Tanımlar
+## Dört D: Resmi Tanımlar
 
 | D | Tanım |
 |---|---|
@@ -28,9 +28,9 @@ Bu sayfa çerçeveyi tanıtır. Dört D'yi ve her birinin alt yetkinliklerini a�
 
 Bu dört D sırasıyla uygulanabilir, ama zorunlu değildir. Her biri ayrı bir giriş noktası olabilir. Deneyimli bir kullanıcı hepsini aynı anda, neredeyse bilinçsizce kullanır.
 
-## D1 — Delegation (Devretme)
+## D1: Delegation (Devretme)
 
-> **"Hangi işin size, hangisinin yapay zekaya, hangisinin ikinize ait olduğuna bilinçli karar vermek — ve işi ona göre dağıtmak."**
+> **"Hangi işin size, hangisinin yapay zekaya, hangisinin ikinize ait olduğuna bilinçli karar vermek ve işi ona göre dağıtmak."**
 
 Etkili devretme iki yetkinlik ister: **alan uzmanlığı** (işi bilmek) ve **platform farkındalığı** (yapay zekanın ne yapıp yapamayacağını bilmek).
 
@@ -40,13 +40,13 @@ Etkili devretme iki yetkinlik ister: **alan uzmanlığı** (işi bilmek) ve **pl
 - **Platform farkındalığı:** Farklı yapay zeka sistemlerinin güçlü ve zayıf yönlerini tanımak. Her işe aynı araç uygun değildir.
 - **Görev dağılımı:** İşi insan, yapay zeka ve işbirliği arasında dengeli şekilde bölmek.
 
-### Başarısızlık biçimi — "Kâbus":
+### Başarısızlık biçimi: "Kâbus"
 
-> *"Ödevimi ücretsiz bir yapay zekaya yapıştırdım, çıktıyı kendi işim olarak teslim ettim — kontrol ya da atıf olmadan."*
+> *"Ödevimi ücretsiz bir yapay zekaya yapıştırdım, çıktıyı kendi işim olarak teslim ettim, kontrol ya da atıf olmadan."*
 
 Bu sıfır Delegation demektir. Hedef yok, görev analizi yok, bilinçli seçim yok. Tam teslimiyet.
 
-### İdeal — "Rüya":
+### İdeal: "Rüya"
 
 > *"Bir taslak yazdım, dikkatle seçtiğim bir yapay zekayla editör gibi konuşarak sesimi ve bakış açımı güçlendirdim, iyi önerilerini benimsedim, nihai metni yapay zekayla olan etkileşimim hakkında düşünceli bir yansımayla birlikte teslim ettim."*
 
@@ -56,11 +56,11 @@ Bu tam Delegation zekası demektir. İnsan işi sahipleniyor, yapay zeka tanıml
 
 Claude'a dokunmadan önce haftalık işlerinizi üç kategoriye bölün: sadece insan, yapay zeka destekli, birlikte çalışılabilir. Bu pratik hem az-kullanımı hem aşırı-devretmeyi önler.
 
-## D2 — Description (Tanımlama)
+## D2: Description (Tanımlama)
 
 > **"Yapay zekayla verimli bir işbirliği ortamı yaratacak biçimde iletişim kurmak."**
 
-İnsanların çoğu Claude'la başarısız olur, çünkü Google'a sorar gibi sorar — kısa, anahtar kelime tabanlı, bağlamsız. İyi Description bu refleksi kırar.
+İnsanların çoğu Claude'la başarısız olur, çünkü Google'a sorar gibi sorar: kısa, anahtar kelime tabanlı, bağlamsız. İyi Description bu refleksi kırar.
 
 Üç alt yetkinlik:
 
@@ -91,11 +91,11 @@ Description → Claude üretir → Discernment
 
 3 gerçek iş problemini yüksek sesle tarif edin. Çözümü tanımlamayın, problemi tanımlayın. Amaç şudur: *"Neye ihtiyacım olduğunu, gerçekten istediğim sonucu getirecek şekilde nasıl anlatırım?"*
 
-## D3 — Discernment (Ayırt Etme)
+## D3: Discernment (Ayırt Etme)
 
 > **"Yapay zekanın ürettiğini, nasıl ürettiğini ve nasıl davrandığını titizlikle ve eleştirel biçimde değerlendirmek."**
 
-Eleştirel düşünme yapay zeka işe girdiğinde durmaz — yer değiştirir. Üretmekten değerlendirmeye kayar.
+Eleştirel düşünme yapay zeka işe girdiğinde durmaz, yer değiştirir: üretmekten değerlendirmeye kayar.
 
 Üç alt yetkinlik:
 
@@ -103,7 +103,7 @@ Eleştirel düşünme yapay zeka işe girdiğinde durmaz — yer değiştirir. �
 - **Süreç Ayırt Etme:** Claude'un yolu. Göreve doğru yaklaştı mı? Akıl yürütme sağlam mı? Kestirme mi gitti?
 - **Performans Ayırt Etme:** Claude'un davranışı. Görevde kaldı mı? Belirsizliği işaret etti mi? Verilen davranış talimatlarına uydu mu?
 
-### Başarısızlık biçimi — "Yapay zekayı kaynak gösterdim, sorun ne?":
+### Başarısızlık biçimi: "Yapay zekayı kaynak gösterdim, sorun ne?"
 
 > *"Bir taslak yazdım, AI ile doldurdum, tüm olguları ve kaynakları doğruluk için çift-kontrol ettim, çıkan metni aracı kaynak göstererek teslim ettim."*
 
@@ -123,7 +123,7 @@ Bir iş çıktısı üretildikten sonra kendinize sorun: *"Bunu şu an müdürü
 
 O tek soru Discernment'ı zorla devreye sokar. Cevap hayırsa, çıktıyı bağımsız bir gözle yeniden değerlendirin.
 
-## D4 — Diligence (Sorumluluk)
+## D4: Diligence (Sorumluluk)
 
 > **"Yapay zeka etkileşimlerimizin sorumluluğunu üstlenmek."**
 
@@ -131,9 +131,9 @@ Yapay zeka bir araçtır. Sorumluluk, hesap verebilirlik ve profesyonel yüküml
 
 Üç alt yetkinlik:
 
-- **Yaratım Sorumluluğu:** Hangi yapay zeka sistemlerini kullandığımız, nasıl etkileştiğimiz konusunda bilinçli olmak. Araç seçimi, veri gizliliği ve etik hatırlama — çıktı üretilmeden *önce*.
-- **Şeffaflık Sorumluluğu:** Yapay zekanın işimizdeki rolünü, bilmesi gereken herkese karşı dürüstçe ifade etmek. Yapay zeka önemli katkı yaptıysa, açıklama zorunluluktur — bağlama göre biçimi değişir, yükümlülük değişmez.
-- **Uygulama Sorumluluğu:** Kullandığımız ve paylaştığımız çıktıları doğrulamak, onların arkasında durmak. Çıktıyı teslim ettiğiniz anda — gönderdiğinizde, yayınladığınızda, sunduğunuzda, eyleme geçirdiğinizde — sorumluluk sizindir.
+- **Yaratım Sorumluluğu:** Hangi yapay zeka sistemlerini kullandığımız, nasıl etkileştiğimiz konusunda bilinçli olmak. Araç seçimi, veri gizliliği ve etik değerlendirme, çıktı üretilmeden *önce* yapılır.
+- **Şeffaflık Sorumluluğu:** Yapay zekanın işimizdeki rolünü, bilmesi gereken herkese karşı dürüstçe ifade etmek. Yapay zeka önemli katkı yaptıysa açıklama zorunluluktur; bağlama göre biçimi değişir, yükümlülük değişmez.
+- **Uygulama Sorumluluğu:** Kullandığımız ve paylaştığımız çıktıları doğrulamak, onların arkasında durmak. Çıktıyı teslim ettiğiniz, gönderdiğiniz, yayınladığınız, sunduğunuz ya da eyleme geçirdiğiniz anda sorumluluk sizindir.
 
 ### Bir Diligence beyanı örneği
 
@@ -157,12 +157,12 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 
 | D | Tanım | Alt yetkinlikler | Tipik başarısızlık |
 |---|---|---|---|
-| **Delegation** | Hangi iş kimde? | Problem · Platform · Görev | Kör teslim — yapıştır ve gönder |
+| **Delegation** | Hangi iş kimde? | Problem · Platform · Görev | Kör teslim, yapıştır ve gönder |
 | **Description** | Nasıl anlatırım? | Ürün · Süreç · Performans | Google arama tarzı sorgu |
 | **Discernment** | Çıktı iyi mi? | Ürün · Süreç · Performans | Emin tonlu çıktıyı sorgusuz kabul |
 | **Diligence** | Sorumluluk kimde? | Yaratım · Şeffaflık · Uygulama | Kullan ama söyleme; paylaş ama doğrulama |
 
-## Davranışsal Göstergeler — Öz Değerlendirme
+## Davranışsal Göstergeler: Öz Değerlendirme
 
 4D bir teori değil, gözlemlenebilir davranışlar bütünüdür. Anthropic'in AI Fluency çalışması, her boyutta "düşük akıcılık" ve "yüksek akıcılık" davranışlarını ayırt eder. Aşağıdaki tablo kendinizi (veya ekibinizi) hızlıca konumlandırmak için bir aynadır.
 
@@ -177,14 +177,14 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 
 ## İlgili Sayfalar
 
-- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — İyi bir prompt'un yapısı
-- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/) — Zincirleme düşünme, yapılandırılmış çıktı
-- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — Çoğu kişinin düştüğü tuzaklar
-- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Çerçeveden önce temel kavram
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/): İyi bir prompt'un yapısı
+- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/): Zincirleme düşünme, yapılandırılmış çıktı
+- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/): Çoğu kişinin düştüğü tuzaklar
+- [Claude Nedir?](/wiki/temeller/claude-nedir/): Çerçeveden önce temel kavram
 
 ## Resmi Kaynaklar
 
-- **AI Fluency Framework — Foundations** (Anthropic Academy): [anthropic.skilljar.com/ai-fluency-framework-foundations](https://anthropic.skilljar.com/ai-fluency-framework-foundations/291876)
+- **AI Fluency Framework: Foundations** (Anthropic Academy): [anthropic.skilljar.com/ai-fluency-framework-foundations](https://anthropic.skilljar.com/ai-fluency-framework-foundations/291876)
 - **Anthropic AI Fluency:** [anthropic.com/ai-fluency](https://anthropic.com/ai-fluency)
 - **Yazarlar:** Rick Dakan (Ringling College of Art and Design), Joseph Feller (University College Cork)
 

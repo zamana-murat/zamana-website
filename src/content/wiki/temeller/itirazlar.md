@@ -1,10 +1,10 @@
 ---
-title: Yaygın İtirazlar ve Cevapları — Bireysel ve Kurumsal
+title: "Yaygın İtirazlar ve Cevapları: Bireysel ve Kurumsal"
 description: "Claude'u kullanmaya başlarken yönetimden, IT'den, hukuktan ve çalışandan gelen tipik itirazlar ve dürüst cevapları."
 tags:
   - temeller
   - itirazlar
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 Claude'u profesyonel hayatınıza getirirken karşılaşılan tipik itirazlar ve dürüst cevapları. Şirket içinde bir karar oturumundan önce, ya da kendi kendinize "değer mi, riski ne, başarabilir miyim" diye sorarken bu sayfa kaynak olabilir.
@@ -19,9 +19,9 @@ Bölümler paydaşa göre düzenlendi: yönetim, IT, hukuk, finans, IT güvenlik
 
 **Cevap:**
 
-Yapay zeka bir moda değil — **üretkenlik altyapısının bir katmanı**. Nasıl 1995'te internet moda değildi, 2010'da bulut bilişim moda değildi. Claude veya bir rakibi (ChatGPT, Gemini) yıllarca olmaya devam edecek. Soru "bu geçer mi?" değil, **"biz hangi tarafta olacağız — erken mi yoksa geç mi adapte edenler?"**
+Yapay zeka bir moda değil, **üretkenlik altyapısının bir katmanı**. Nasıl 1995'te internet moda değildi, 2010'da bulut bilişim moda değildi. Claude veya bir rakibi (ChatGPT, Gemini) yıllarca var olmaya devam edecek. Soru "bu geçer mi?" değil, **"biz hangi tarafta olacağız, erken mi yoksa geç mi adapte edenler?"**
 
-Erken adapte edenler 2-3 yıl rekabet avantajı kazanıyor. Türkiye'deki orta ölçekli şirketlerin çoğu henüz başlamadı — **penceremiz şu an açık**.
+Erken adapte edenler zamanla birikmiş bir öğrenme avantajı kazanır. Saha gözlemimize göre Türkiye'deki orta ölçekli şirketlerin çoğu henüz sistematik başlamadı, **pencere şu an açık**.
 
 ### "Personelimiz zaten meşgul. Bir yazılıma zaman harcayamazlar."
 
@@ -37,11 +37,11 @@ Doğru tasarlanan bir Claude eğitiminde çalışanın **mevcut işleri üzerind
 
 Üç somut metrik öneriyoruz:
 
-1. **Çalışan başına haftalık zaman tasarrufu** — eğitim öncesi ve 3 ay sonrası karşılaştırma (saat bazında)
+1. **Çalışan başına haftalık zaman tasarrufu**: eğitim öncesi ve 3 ay sonrası karşılaştırma (saat bazında)
 2. **Tekrar eden görevlerin kaçı otomatize oldu** (scheduled task sayısı)
-3. **Çıktı kalitesi** — ekip liderlerinin subjektif değerlendirmesi
+3. **Çıktı kalitesi**: ekip liderlerinin subjektif değerlendirmesi
 
-Tipik sonuç: çalışan başına haftada **8-15 saat** kazanım. 6 çalışan × 10 saat = haftada 60 saat × aylık 4 hafta = **aylık 240 saat**. Ortalama çalışan maliyetinizle çarpın — yatırım geri dönüşü genelde ilk çeyrekte karşılanır.
+Örnek senaryo (bir garanti değil, kendi ölçümünüzle doğrulayın): çalışan başına haftada **8-15 saat** kazanım varsayalım. 6 çalışan × 10 saat = haftada 60 saat × aylık 4 hafta = **aylık 240 saat**. Ortalama çalışan maliyetinizle çarpın, yatırım geri dönüşü genelde ilk çeyrekte karşılanır.
 
 ### "Rakiplerimiz de kullanacak. Fark neresinde?"
 
@@ -49,7 +49,7 @@ Tipik sonuç: çalışan başına haftada **8-15 saat** kazanım. 6 çalışan �
 
 Rakipler Claude'u **kullanacak**, şüphesiz. Fark **ne kadar iyi kullandığınızda**. "Claude var, deneyin" yaklaşımı yetmez, **ne zaman, ne için, nasıl kullanacağınızı** sistematik olarak öğrenmek gerekir.
 
-Türkiye'de Claude'u stratejik öğrenerek kullanan şirket sayısı **düşük**. Tipik kullanım halen "ChatGPT'ye bir şey yazdır" seviyesinde. Derinlemesine iş akışı entegrasyonuyla şirketiniz 2-3 yıl önde olur.
+Türkiye'de Claude'u stratejik öğrenerek kullanan şirket sayısı **düşük**. Tipik kullanım halen "ChatGPT'ye bir şey yazdır" seviyesinde. Derinlemesine iş akışı entegrasyonuyla şirketiniz bu farkı büyütür.
 
 ---
 
@@ -59,21 +59,21 @@ Türkiye'de Claude'u stratejik öğrenerek kullanan şirket sayısı **düşük*
 
 **Cevap:**
 
-Doğru tespit, ama çözülmüş problem. Team ve Enterprise planlarında:
+Doğru tespit. Kişisel veri girmiyorsanız risk küçüktür. Kişisel veri giriyorsanız yurt dışına aktarım olur ve KVKK m.9 uyarınca bir güvence gerekir: bugün yeterlilik kararı bulamadık, pratik yol Kurul'un standart sözleşmesidir (imzadan sonra 5 iş günü içinde Kurum'a bildirilir). Anthropic'in Türk standart sözleşmesini imzalayıp imzalamadığı belirsiz, yazılı sorulmalı. Ticari planlarda şunlar var:
 
-- **DPA (Veri İşleme Sözleşmesi)** imzalanır — KVKK'nın "veri işleyen" ilişkisini belgeler
-- **Zero Data Retention** (Enterprise) — veri işlem sonrası saklanmaz
-- **SSO ve denetim izi** — kurumsal kontrol tam
+- **DPA (Veri İşleme Sözleşmesi)** ticari şartlara otomatik dahildir: "veri işleyen" ilişkisini belgeler (AB standart sözleşme hükümlerini içerir, Türk standart sözleşmesini içermez)
+- **Zero Data Retention** yalnızca API için: kuruluş başına talep edilen bir sözleşme düzenlemesidir, istem ve yanıtlar yanıt döndükten sonra depolanmaz
+- **SSO ve yönetim kontrolleri**: Team'de SSO ve harcama tavanı; Enterprise'da ayrıca denetim günlüğü (audit log) ve Compliance API
 
-Konuyu gerçekten kapsamlı ele almak için: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve oradaki **sektörel ek** sayfalarımızı okuyun. KVKK müfettişinin sorabileceği 10 soru ve cevapları hazır.
+Konuyu gerçekten kapsamlı ele almak için: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki yurt dışı aktarım bölümünü ve **sektörel ek** bölümünü okuyun. Bu hukuki görüş değildir, hukuk danışmanınızla doğrulayın. KVKK müfettişinin sorabileceği 10 soru ve cevapları hazır.
 
 ### "Şirket verilerimiz AI eğitiminde kullanılır mı?"
 
 **Cevap:**
 
-Net cevap: **Hayır, varsayılan olarak.** Team ve Enterprise planlarında **hiçbir zaman**, ticari sözleşmeyle garanti. Pro/Max planlarında kullanıcı opt-in ayarı açık değilse kullanılmaz; kurumsal kullanımda bu ayarın kapalı tutulması önerilir.
+Net cevap: **Team, Enterprise ve API'de hayır, varsayılan olarak eğitimde kullanılmaz** (ticari şartlarda böyle). Free, Pro ve Max planlarında bu, kullanıcının "Claude'u geliştirmeye yardım et" ayarına bağlıdır; varsayılanını resmi kaynaklar net yazmıyor, hesabınızda kontrol edin. Kurumsal kullanımda ayarın kapalı tutulması önerilir.
 
-Yaygın yanlış anlaşılma: "AI'ya verilen her şey eğitimde kullanılır." Bu ChatGPT, Claude, Gemini için de geçerli **değildir** — kurumsal planlarda açıkça engellidir.
+Yaygın yanlış anlaşılma: "AI'ya verilen her şey eğitimde kullanılır." Claude'un ticari planlarında bu **doğru değildir**. Rakiplerin kurumsal planları için kendi şartlarını ayrıca kontrol edin.
 
 ### "Mevcut sistemlerimizle nasıl entegre olacak?"
 
@@ -81,11 +81,11 @@ Yaygın yanlış anlaşılma: "AI'ya verilen her şey eğitimde kullanılır." B
 
 Üç seviye entegrasyon var:
 
-1. **Hazır connector'lar** — Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot ve 30+ servis. Tek tıkla, OAuth ile, IT müdahalesi minimum.
-2. **API'si olmayan eski sistemler** — [Computer Use](/wiki/yetenekler/computer-use/) ile Claude ekrandan kullanır (Logo, Netsis, eski ERP'ler için).
-3. **Özel şirket içi sistemler** — MCP protokolü açık standarttır, IT ekibiniz veya entegrasyon ortağınız özel connector yazabilir.
+1. **Hazır connector'lar**: Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot ve resmi dizinde yaklaşık 900 connector. Tek tıkla, OAuth ile, IT müdahalesi minimum.
+2. **API'si olmayan eski sistemler**: [Computer Use](/wiki/yetenekler/computer-use/) ile Claude ekrandan kullanabilir (Logo, Netsis, eski ERP'ler için). Dikkat: Computer Use research preview aşamasında ve yalnızca Pro ve Max planlarında, masaüstü uygulamasında çalışıyor; Team ve Enterprise'ta yok. Kritik üretim süreçlerinde tek dayanak yapmayın.
+3. **Özel şirket içi sistemler**: MCP protokolü açık standarttır, IT ekibiniz veya entegrasyon ortağınız özel connector yazabilir.
 
-Türkiye'deki orta ölçekli şirketlerin **%90'ı** için birinci seviye yeterli.
+Türkiye'deki orta ölçekli şirketlerin çoğu için birinci seviye yeterli.
 
 ### "Başka bir yazılımı öğrenmek için zaman yok."
 
@@ -105,13 +105,13 @@ Doğru rehberlikle çalışanın **birinci oturum sonunda** gerçek bir iş çı
 
 Gerçek bir risk ve eğitim programının kritik bir parçası. Çözüm **üç katmanlı**:
 
-1. **Plan seçimi** — Team/Enterprise varsayılan olarak eğitim kullanımı yok
-2. **DPA imzası** — yasal çerçeve net
-3. **Çalışan eğitimi** — "Hangi veri kategorisi Claude'a girilebilir, hangisi giremez" yazılı politika
+1. **Plan seçimi**: Team/Enterprise varsayılan olarak eğitim kullanımı yok
+2. **DPA kapsamı**: işleyen ilişkisi sözleşmeyle belgelenir (yurt dışı aktarım güvencesi ayrıca ele alınır, bkz. yukarıdaki IT cevabı)
+3. **Çalışan eğitimi**: "Hangi veri kategorisi Claude'a girilebilir, hangisi giremez" yazılı politika
 
 Claude'a "müvekkil adı + dava detayı" girmek **hukuk bürosu için hata** olur. Bunu çalışana hem eğitimde hem CLAUDE.md'de kuralla yazmış olursunuz.
 
-Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — sektörel ek bölümü avukatlar için özel.
+Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/), sektörel ek bölümü avukatlar için özel.
 
 ### "Claude'un ürettiği bir hukuki metinde hata olursa kim sorumlu?"
 
@@ -127,7 +127,7 @@ Detay: [Claude'un Sınırları](/wiki/temeller/sinirlamalar/).
 
 **Cevap:**
 
-"Evet, kullanıyoruz. Şu plan seviyesinde (Team/Enterprise), şu DPA imzalı, şu veri politikamıza göre, şu kategorilerde, VERBİS'te kayıtlı." Bu cevabı verebilmek için önceden hazırlık gerekir.
+"Evet, kullanıyoruz. Şu plan seviyesinde (Team/Enterprise), şu DPA kapsamında, şu veri politikamıza göre, şu kategorilerde, VERBİS'te kayıtlı." Bu cevabı verebilmek için önceden hazırlık gerekir.
 
 Müfettişin sorabileceği 10 standart soru ve cevapları: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
@@ -142,10 +142,10 @@ Müfettişin sorabileceği 10 standart soru ve cevapları: [Gizlilik ve KVKK](/w
 3 aylık abonelik hesabı (6 çalışan):
 
 - İlk ay: 6 Claude **Max 5x** aboneliği × $100 = **$600**
-- Ay 2-3: Kullanıma göre karma yapı (tipik ~2 Max + ~4 Pro) × 2 ay ≈ **$600-760**
-- Toplam abonelik (3 ay): **~$1.200-1.400**
+- Ay 2-3: Kullanıma göre karma yapı (tipik ~2 Max 5x + ~4 Pro aylık $280; 3 Max 5x + 3 Pro aylık $360) × 2 ay ≈ **$560-720**
+- Toplam abonelik (3 ay): **~$1.160-1.320**
 
-**"Neden Pro değil, Max 5x?"** Yeni kullanıcı ilk ayda agresif keşfeder, connector kurar, skill dener, saatlerce oturur. Pro limiti günde birkaç saatte biter, "çalışmıyor" yanlış algısı vazgeçirir. Max 5x bu ilk ay kritiktir; sonra hafif kullananlar Pro'ya iner.
+**"Neden Pro değil, Max 5x?"** Yeni kullanıcı ilk ayda agresif keşfeder, connector kurar, skill dener, saatlerce oturur. Pro limiti birkaç saatlik yoğun kullanımda dolar, "çalışmıyor" yanlış algısı vazgeçirir. Max 5x bu ilk ay kritiktir; sonra hafif kullananlar Pro'ya iner.
 
 Karşılığında:
 
@@ -162,7 +162,7 @@ En kötü senaryo tahminini yapalım:
 
 - Çalışanlardan 2 tanesi programa gerçekten dahil olmazsa (direnç, meşguliyet)
 - Kalan 4 çalışan haftada 5 saat (yarı tahmin) kazanırsa
-- 4 × 5 × 12 hafta = 240 saat × 300 TL = **72,000 TL**
+- 4 × 5 × 12 hafta = 240 saat × 300 TL = **72.000 TL**
 
 Bu senaryoda bile **abonelik maliyeti karşılanır** ve öğrenilen bilgi şirkette kalır.
 
@@ -174,8 +174,8 @@ Bu senaryoda bile **abonelik maliyeti karşılanır** ve öğrenilen bilgi şirk
 
 Doğru. Fırsat maliyeti gerçek. Karşılaştırma için:
 
-- Bir kurumsal yazılımın yıllık lisans ücreti (çoğu ERP, CRM) çoğu zaman bu tür eğitim yatırımının **katlarca** üstünde olur, çoğu çalışanın iş akışını dönüştürmez
-- Orta ölçekli bir Google Ads kampanyası bütçesi 2-3 ay içinde tükenir, kalıcı bilgi bırakmaz
+- Bir kurumsal yazılımın yıllık lisans ücreti (çoğu ERP, CRM) çoğu zaman bu tür eğitim yatırımının **katlarca** üstünde olur ve çoğu çalışanın iş akışını dönüştürmez
+- Orta ölçekli bir Google Ads kampanyası bütçesi 2-3 ay içinde tükenir ve kalıcı bilgi bırakmaz
 
 AI yetkinliği eğitimi **kalıcı yeterlilik** yaratır. Reklam kampanyası bittiğinde tüm yatırım gider; eğitimle öğrendikleri çalışanda kalır.
 
@@ -187,9 +187,9 @@ AI yetkinliği eğitimi **kalıcı yeterlilik** yaratır. Reklam kampanyası bit
 
 **Cevap:**
 
-Claude Desktop standart bir uygulama — özel yetki istemez, arka planda izleme yapmaz, şirket dosyalarınıza rıza olmadan erişmez. Cowork modunda **sadece bağlanan workspace klasörünü** görür. Diğer disk, diğer klasör — erişilmez.
+Claude Desktop standart bir uygulama, özel yetki istemez, arka planda izleme yapmaz, şirket dosyalarınıza rıza olmadan erişmez. Cowork'te **sadece bağlanan workspace klasörünü** görür. Diğer disk, diğer klasör, erişilmez.
 
-Kod çalıştırma **izole sanal makinede** yapılır — işletim sisteminizden ayrıdır.
+Kod çalıştırma **izole sanal makinede** yapılır, işletim sisteminizden ayrıdır.
 
 ### "Claude'u şirket ağına bağlamak güvenli mi?"
 
@@ -208,9 +208,9 @@ Yerel ağınızda Claude "yayın yapmaz." Dış bağlantı kurumsal internetle a
 
 İnsan hatası hep olası. Üç koruma:
 
-1. **Eğitim** — çalışan hangi veriyi nereye girebilir bilir
-2. **Plan seçimi** — Team/Enterprise verinin zaten eğitimde kullanılmamasını sağlar
-3. **Gerektiğinde Zero Data Retention** — işlem sonrası saklama yok
+1. **Eğitim**: çalışan hangi veriyi nereye girebilir bilir
+2. **Plan seçimi**: Team/Enterprise verinin zaten eğitimde kullanılmamasını sağlar
+3. **Gerektiğinde Zero Data Retention**: API kullanımında satış ekibiyle talep edilir, yanıt sonrası depolama olmaz
 
 Herkesin kabul etmesi gereken: "güvenlik mutlak değildir, risk yönetilir." Doğru bir kurulum bu riski düşürür ama sıfırlamaz. Riski kabul edilemez görüyorsanız yerel LLM (Llama, Mistral) alternatifi düşünülmeli.
 
@@ -222,9 +222,9 @@ Herkesin kabul etmesi gereken: "güvenlik mutlak değildir, risk yönetilir." Do
 
 **Cevap:**
 
-Bu samimi bir korku, ciddiye almalı. Dürüst cevap:
+Bu samimi bir korku, ciddiye almalıyız. Dürüst cevap: hiçbir araç iş güvencesi veremez, bu şirketin kararıdır. Sahada gördüğümüz ise şu:
 
-Sahada görülen: Claude **rutin işleri** ortadan kaldırıyor, raporlama, e-posta yazımı, tekrar eden teklifler gibi. Bu işleri yapmak için çalışan tutulmuyor zaten, yönetici arkadaşına e-posta yazan bir kişi "e-posta yazarı" değildir.
+Claude **rutin işleri** ortadan kaldırıyor; raporlama, e-posta yazımı ve tekrar eden teklifler gibi. Bu işleri yapmak için zaten çalışan tutulmuyor: yöneticisine e-posta yazan biri "e-posta yazarı" değildir.
 
 Rutin ortadan kalktıkça çalışanın **yüksek değer işlere** zamanı açılır: müşteri ilişkileri, karmaşık karar alma, yaratıcı çalışma. **Bu işleri Claude yapamaz**, çünkü insan yargısı ve ilişki gerekir.
 
@@ -246,13 +246,13 @@ Gerçek ve meşru soru. Cevabımız:
 
 Öğrendiğiniz beceriler **modele özel değil**:
 
-- **Prompting disiplini** — 4D çerçevesi Claude'a da ChatGPT'ye de Gemini'ye de uygulanır
-- **CLAUDE.md benzeri yaklaşım** — ChatGPT Memory, Gemini Context gibi karşılıkları var
-- **İş akışı tasarımı** — hangi işin insan, hangi işin AI olduğuna karar vermek
+- **Prompting disiplini**: 4D çerçevesi Claude'a da ChatGPT'ye de Gemini'ye de uygulanır
+- **CLAUDE.md benzeri yaklaşım**: ChatGPT'nin Memory, Gemini'nin kişisel bağlam özellikleri gibi karşılıkları var
+- **İş akışı tasarımı**: hangi işin insan, hangi işin AI olduğuna karar vermek
 
 Öğreniyor olacağınız şey **düşünme biçimi**. Model değişse de beceri yaşar.
 
-Şu anda Claude kurumsal kullanımda en olgun seçenek görünüyor; başka bir model daha iyi olduğunda da çerçeve aynı kalır.
+Bizim değerlendirmemizde Claude kurumsal kullanımda en olgun seçeneklerden biri; başka bir model daha iyi olduğunda da çerçeve aynı kalır.
 
 ### "Patronum bir sürü yazılım öğrenmemi istedi, sonuna kadar götüremedik."
 
@@ -260,7 +260,7 @@ Gerçek ve meşru soru. Cevabımız:
 
 Haklı endişe. Başarılı bir Claude adaptasyonu için tasarım kuralları:
 
-- Eğitim grubunu sınırlı tut (bir kerede aşırı yaygınlaştırma)
+- Eğitim grubunu sınırlı tutun (bir kerede aşırı yaygınlaştırmayın)
 - Her çalışan için **özel eğitim** (toplu lansman değil)
 - Eğitim sonrası destek (ilk ay sonrası "yalnız bırakılma" hissi olmasın)
 - **Her çalışan kendi gerçek işinde** kullanır (hayali kurs değil)
@@ -279,9 +279,10 @@ Bu tasarım benimsenmediğinde teknoloji adaptasyonu büyük olasılıkla sönü
 
 ## İlgili Sayfalar
 
-- [Sık Sorulan Sorular](/wiki/temeller/sss/) — Daha genel sorular
-- [Claude Planları](/wiki/temeller/planlar/) — Maliyet ve ROI detayı
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Hukuki/güvenlik itirazlarının derinliği
-- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Ne yapamaz dürüstçe
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — D4 Diligence — sorumluluk
+- [Sık Sorulan Sorular](/wiki/temeller/sss/): Daha genel sorular
+- [Claude Planları](/wiki/temeller/planlar/): Maliyet ve ROI detayı
+- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): Muhasebe ve vergi tarafı
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Hukuki/güvenlik itirazlarının derinliği
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Ne yapamaz dürüstçe
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): D4 Diligence, sorumluluk
 

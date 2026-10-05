@@ -11,7 +11,7 @@ const organizationSchema = {
   url: 'https://zamana.com.tr',
   logo: 'https://zamana.com.tr/images/zamana-logo.webp',
   image: 'https://zamana.com.tr/og/index.png',
-  description: 'Türkiye\'nin kurumsal Claude eğitim ve danışmanlık platformu. CEO Brifing, Bireysel ve Kurumsal programlarla şirketlere yapay zekayı iş süreçlerine entegre etme rehberliği sunar.',
+  description: 'Türkiye\'nin kurumsal Claude eğitim ve danışmanlık platformu. Yönetici AI Hazırlık, Bireysel ve Kurumsal programlarla şirketlere yapay zekayı iş süreçlerine entegre etme rehberliği sunar.',
   foundingDate: '2026-04',
   founder: {
     '@type': 'Person',
@@ -38,7 +38,7 @@ const organizationSchema = {
       '@type': 'ContactPoint',
       contactType: 'sales',
       telephone: '+90-530-490-4740',
-      email: 'murat@zamana.com.tr',
+      email: 'info@zamana.com.tr',
       areaServed: 'TR',
       availableLanguage: ['Turkish'],
     },
@@ -69,44 +69,49 @@ const organizationSchema = {
         itemOffered: {
           '@type': 'Service',
           name: 'Bireysel Program',
-          description: '3 hafta birebir Claude eğitimi + 3 ay sınırsız telefon desteği. CEO, freelancer ve bağımsız profesyoneller için.',
+          description: '3 hafta birebir Claude eğitimi + 3 ay sınırsız telefon desteği. Yönetici, freelancer ve bağımsız profesyoneller için.',
           url: 'https://zamana.com.tr/programlar/bireysel/',
         },
-        price: '1000',
-        priceCurrency: 'USD',
+        price: '40000',
+        priceCurrency: 'TRY',
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
           name: 'Kurumsal Program',
-          description: '3 aylık şirket içi Claude dönüşümü. 6 çalışan için departman bazlı eğitim, sınırsız telefon desteği, KVKK rehberliği.',
+          description: 'Minimum 3 aylık şirket içi Claude dönüşümü, ödeme aylık. 6 çalışan için departman bazlı eğitim, sınırsız telefon desteği, KVKK rehberliği.',
           url: 'https://zamana.com.tr/programlar/kurumsal/',
         },
-        price: '3000',
-        priceCurrency: 'USD',
+        price: '100000',
+        priceCurrency: 'TRY',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '3000',
-          priceCurrency: 'USD',
+          price: '100000',
+          priceCurrency: 'TRY',
           unitText: 'MONTH',
           referenceQuantity: {
             '@type': 'QuantitativeValue',
-            value: '3',
+            value: '1',
             unitCode: 'MON',
           },
+        },
+        eligibleDuration: {
+          '@type': 'QuantitativeValue',
+          minValue: '3',
+          unitCode: 'MON',
         },
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'CEO AI Brifing',
-          description: 'CEO ve kurucu sahipleri için 3 saatlik AI anlama oturumu. AI nedir, ne değildir, şirketinize ne fayda sağlar. Hafta sonu, sizin seçtiğiniz adreste, birebir.',
+          name: 'Yönetici AI Hazırlık',
+          description: 'Yöneticiler için 3 saatlik AI anlama oturumu. AI nedir, ne değildir, şirketinize ne fayda sağlar. Hafta sonu, sizin seçtiğiniz adreste, birebir.',
           url: 'https://zamana.com.tr/programlar/ceo-brifing/',
         },
-        price: '400',
-        priceCurrency: 'USD',
+        price: '15000',
+        priceCurrency: 'TRY',
       },
     ],
   },
@@ -131,7 +136,7 @@ const websiteSchema = {
 
 <Layout
   title="Zamana, Türkiye'nin Kurumsal Claude Eğitim Platformu"
-  description="Anthropic Partner Zamana, Claude'u Türk şirketlerine getiren birebir eğitim programı. CEO için 3 saatlik AI brifing, bireysel 3 haftalık veya kurumsal 3 aylık Türkçe danışmanlık."
+  description="Anthropic Partner Zamana, Claude'u Türk şirketlerine getiriyor: yöneticiye 3 saatlik oturum, bireysel 3 haftalık ve kurumsal 3 aylık Türkçe program."
   ogImage="/og/index.png"
 >
 
@@ -147,7 +152,7 @@ const websiteSchema = {
         şirketinizi <span class="hero__accent">3 ayda dönüştürür.</span>
       </h1>
       <p class="hero__lead">
-        Zamana, Türkiye'nin yapay zeka eğitim platformudur. CEO'lara, bireysel profesyonellere ve şirketlere
+        Zamana, Türkiye'nin yapay zeka eğitim platformudur. Yöneticilere, bireysel profesyonellere ve şirketlere
         Claude'u gerçek işte nasıl kullanacaklarını gösteririz, örnek üzerinden, kendi işiniz üzerinden.
       </p>
       <div class="hero__cta">
@@ -260,7 +265,7 @@ const websiteSchema = {
         <span class="eyebrow">Üç Program</span>
         <h2 class="section-title center">Size Uygun Olanı Seçin</h2>
         <p class="lead center">
-          Aynı pedagojik DNA. Üç farklı ölçek. CEO'lar için 3 saatlik anlama oturumu, bireysel profesyoneller için 3 hafta, şirketler için 3 aylık tam dönüşüm.
+          Aynı pedagojik DNA. Üç farklı ölçek. Yöneticiler için 3 saatlik anlama oturumu, bireysel profesyoneller için 3 hafta, şirketler için 3 aylık tam dönüşüm.
         </p>
       </div>
 
@@ -268,9 +273,9 @@ const websiteSchema = {
         <ProgramCard
           title="Bireysel Program"
           badge="Hızlı Başlangıç"
-          price="$1.000"
+          price="40.000 TL"
           duration="3 hafta eğitim + 3 ay destek"
-          audience="CEO, freelancer, bağımsız profesyonel veya kendi başına öğrenmek isteyen çalışan."
+          audience="Yönetici, freelancer, bağımsız profesyonel veya kendi başına öğrenmek isteyen çalışan."
           features={[
             "3 hafta × 2 saat birebir oturum",
             "Sıfırdan kurulum: Desktop, Cowork, CLAUDE.md",
@@ -287,7 +292,7 @@ const websiteSchema = {
         <ProgramCard
           title="Kurumsal Program"
           badge="Tam Dönüşüm"
-          price="$3.000"
+          price="100.000 TL"
           priceSuffix="+ KDV / Ay"
           duration=""
           priceSubtext="Minimum 3 aylık eğitim"
@@ -307,11 +312,11 @@ const websiteSchema = {
           highlighted={true}
         />
         <ProgramCard
-          title="CEO AI Brifing"
+          title="Yönetici AI Hazırlık"
           badge="Anlama Oturumu"
-          price="$400"
+          price="15.000 TL"
           duration="Tek oturum, hafta sonu"
-          audience="CEO ve kurucu sahipleri için. AI'ı anlamak ve şirketi için karar vermek isteyen yöneticiler."
+          audience="Yöneticiler için. AI'ı anlamak ve şirketi için karar vermek isteyenler."
           features={[
             "3 saat tek oturum",
             "İstanbul içi: yerinde yüz yüze",
@@ -323,7 +328,7 @@ const websiteSchema = {
             "Claude aboneliği zorunlu değil, tavsiye",
           ]}
           ctaHref="/programlar/ceo-brifing/"
-          ctaText="CEO Brifing'i İncele"
+          ctaText="Yönetici AI Hazırlık'ı İncele"
         />
       </div>
 
@@ -405,7 +410,7 @@ const websiteSchema = {
               <span class="mfq-toggle" aria-hidden="true">+</span>
             </summary>
             <p>
-              Sıfır. Hedef kitle Claude'u hiç kullanmamış veya birkaç kez denemiş iş profesyonelleri. CEO, satış, hukuk, finans, İK, operasyon gibi rollerde çalışan, kod yazmayan kişiler. Yazılım veya yapay zeka geçmişi gerekmez.
+              Sıfır. Hedef kitle Claude'u hiç kullanmamış veya birkaç kez denemiş iş profesyonelleri. Yönetim, satış, hukuk, finans, İK, operasyon gibi rollerde çalışan, kod yazmayan kişiler. Yazılım veya yapay zeka geçmişi gerekmez.
             </p>
           </details>
         </li>
@@ -458,7 +463,7 @@ const websiteSchema = {
           <h2>Zamana Wiki: Türkçe Claude Bilgi Tabanı</h2>
           <p class="lead">
             Programa başlamadan önce ne öğreneceğinizi merak ediyorsanız wiki'mizi inceleyin.
-            Ücretsiz, Türkçe. Claude ile çalışmanın temellerinden 12 departman bazlı kullanım örneklerine kadar geniş bir bilgi tabanı.
+            Ücretsiz, Türkçe. Claude ile çalışmanın temellerinden 12 departman ve 5 sektöre özel kullanım örneklerine kadar geniş bir bilgi tabanı.
           </p>
           <a href="/wiki/" class="btn btn--primary">Wiki'ye Git</a>
         </div>
@@ -467,7 +472,7 @@ const websiteSchema = {
           <li><a href="/wiki/temeller/ilk-7-gun/">İlk 7 gün rehberi</a></li>
           <li><a href="/wiki/claude-md/">CLAUDE.md kurulumu</a></li>
           <li><a href="/wiki/prompting/">Prompt yazma sanatı</a></li>
-          <li><a href="/wiki/departmanlar/">12 departman için kullanım örnekleri</a></li>
+          <li><a href="/wiki/departmanlar/">12 departman, KOBİ ve 5 sektör için kullanım örnekleri</a></li>
           <li><a href="/wiki/temeller/gizlilik-kvkk/">KVKK ve gizlilik</a></li>
         </ul>
       </div>

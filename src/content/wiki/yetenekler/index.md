@@ -1,15 +1,15 @@
 ---
-title: "Yetenekler — Claude'un İş Güçleri"
-description: "Skills, Artifacts, Dosya İşleme, Görsel Analiz, Computer Use, Agents ve Context — Claude'un bir iş profesyoneli için değerli olan yedi temel yeteneği."
+title: "Yetenekler: Claude'un İş Güçleri"
+description: "Claude'un iş kullanıcısı için önemli yetenekleri: Skills, Artifacts, dosya ve görsel analizi, Computer Use, ajanlar, hafıza ve Claude Design."
 tags:
   - yetenekler
   - giris
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
 Claude'un sadece yazı üretmekten çok daha fazlasını yapabildiği yerler. Bu bölüm, bir iş profesyoneline **gerçek zaman kazandıran** yedi temel yeteneği kapsar.
 
-Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsiniz — başlangıçta **Skills ve Artifacts** yeterlidir. Diğer beş yetenek zaman içinde devreye girer.
+Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsiniz, başlangıçta **Skills ve Artifacts** yeterlidir. Diğer beş yetenek zaman içinde devreye girer.
 
 ## Yedi Yetenek
 
@@ -19,7 +19,7 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 
     ---
 
-    Claude'un uzmanlık paketleri — Word, Excel, PowerPoint, PDF, sektörel skill'ler tek komutla.
+    Claude'un uzmanlık paketleri: Word, Excel, PowerPoint, PDF ve sektörel skill'ler tek komutla.
 
     [→ Skills](/wiki/yetenekler/skills/)
 
@@ -27,7 +27,7 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 
     ---
 
-    Claude'un ürettiği interaktif çıktılar ve Live Artifacts — statik rapor yerine kendi kendini tazeleyen dashboard.
+    Claude'un ürettiği interaktif çıktılar ve Live Artifacts: statik rapor yerine kendi kendini tazeleyen dashboard.
 
     [→ Artifacts](/wiki/yetenekler/artifacts/)
 
@@ -43,7 +43,7 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 
     ---
 
-    Fotoğraf, grafik, ekran görüntüsü, tahta yazısı, kartvizit — hepsini OCR'dan öte anlamsal olarak okur.
+    Fotoğraf, grafik, ekran görüntüsü, tahta yazısı ve kartvizitleri OCR'dan öte, anlamsal olarak okur.
 
     [→ Görsel ve Görüntü](/wiki/yetenekler/vision-image/)
 
@@ -51,7 +51,7 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 
     ---
 
-    API'si olmayan eski sistemleri Claude ekrandan görerek kontrol eder. Orta ölçekli Türk şirketleri için devrim.
+    API'si olmayan eski sistemleri Claude ekrandan görerek kontrol etmeyi dener. Research preview; yalnızca Pro ve Max, masaüstü uygulamasında.
 
     [→ Computer Use](/wiki/yetenekler/computer-use/)
 
@@ -77,13 +77,13 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 
 Bu bölümü yeni okuyorsanız önerilen sıra:
 
-1. **[Skills](/wiki/yetenekler/skills/)** — Günlük iş çıktılarının %80'ini halleden temel uzmanlık paketleri. İlk haftada öğrenin.
-2. **[Dosya İşleme](/wiki/yetenekler/file-handling/)** — Skills'in üzerinde çalıştığı dosyaların genel çerçevesi. Workspace mantığı.
-3. **[Artifacts](/wiki/yetenekler/artifacts/)** — Raporu Live Artifact'e çevirmenin anı. "Haftada tekrar bakacak mısın?" refleksi.
-4. **[Görsel ve Görüntü](/wiki/yetenekler/vision-image/)** — "Fotoğraf da verebilirim" keşfi. Bir hafta içinde kartvizit / fiş / tahta / grafik akışları devreye girer.
-5. **[Context ve Compaction](/wiki/yetenekler/context-compaction/)** — Uzun projelerde "Claude unuttu" probleminin önlenmesi.
-6. **[Agents ve Subagents](/wiki/yetenekler/agents-subagents/)** — Karmaşık görev refleksi. Derinlemesine bilinmesi gerekmez, ama tanınmalı.
-7. **[Computer Use](/wiki/yetenekler/computer-use/)** — Eski sistemleri olan şirketlerde devrim; yeni teknoloji kullanan şirketlerde daha az kritik.
+1. **[Skills](/wiki/yetenekler/skills/)**: Günlük iş çıktılarının büyük kısmını karşılayan temel uzmanlık paketleri. İlk haftada öğrenin.
+2. **[Dosya İşleme](/wiki/yetenekler/file-handling/)**: Skills'in üzerinde çalıştığı dosyaların genel çerçevesi. Workspace mantığı.
+3. **[Artifacts](/wiki/yetenekler/artifacts/)**: Raporu, her açılışta güncel kalan bir sayfaya çevirmenin zamanı. "Haftada tekrar bakacak mısınız?" sorusunu alışkanlık edinin.
+4. **[Görsel ve Görüntü](/wiki/yetenekler/vision-image/)**: "Fotoğraf da verebilirim" keşfi. Bir hafta içinde kartvizit / fiş / tahta / grafik akışları devreye girer.
+5. **[Context ve Compaction](/wiki/yetenekler/context-compaction/)**: Uzun projelerde "Claude unuttu" probleminin önlenmesi.
+6. **[Agents ve Subagents](/wiki/yetenekler/agents-subagents/)**: Karmaşık görev refleksi. Derinlemesine bilinmesi gerekmez, ama tanınmalı.
+7. **[Computer Use](/wiki/yetenekler/computer-use/)**: Eski sistemleri olan şirketlerde işe yarayabilir; yeni teknoloji kullanan şirketlerde daha az kritik.
 
 Tümünü bir haftada okumak gerekmez. **Skills → Dosya İşleme → Artifacts** üçlüsü ilk iki haftada yeter. Diğerleri ihtiyaç ortaya çıktıkça devreye girer.
 
@@ -91,29 +91,37 @@ Tümünü bir haftada okumak gerekmez. **Skills → Dosya İşleme → Artifacts
 
 Bir iş profesyonelinin haftalık işinin çoğunluğu **dört yetenek** üzerine kurulur:
 
-- **Skills** — Word raporu, Excel tablosu, PowerPoint sunumu, PDF analizi
-- **Dosya İşleme** — doğru dosyayı doğru klasöre koymak
-- **Artifacts** — raporu dashboard'a çevirmek
-- **Görsel ve Görüntü** — fotoğraf verip veri çıkarmak
+- **Skills**: Word raporu, Excel tablosu, PowerPoint sunumu, PDF analizi
+- **Dosya İşleme**: doğru dosyayı doğru klasöre koymak
+- **Artifacts**: raporu dashboard'a çevirmek
+- **Görsel ve Görüntü**: fotoğraf verip veri çıkarmak
 
-Bu dördü oturunca çalışan haftalık işlerinin %60-70'ini dönüştürmüş olur.
+Bu dördü oturunca haftalık işlerin büyük kısmı dönüşmüş olur.
 
-Geriye kalan **Computer Use**, **Agents** ve **Context** ise belirli durumlarda devreye giren ileri yetenekler — temel dördünü oturtmayan çalışan bunlardan değer çıkaramaz.
+Geriye kalan **Computer Use**, **Agents** ve **Context** belirli durumlarda devreye giren ileri yeteneklerdir. Önce temel dördünü oturtun, bunlardan ancak sonra değer çıkarırsınız.
 
-## Yeni Özellikler (2026 ortası)
+## Yeni Özellikler (2026)
 
-Yukarıdaki yedi yetenek çekirdektir. Bunların yanına 2026 ortasında iki yeni başlık eklendi:
+Yukarıdaki yedi yetenek çekirdektir. Bunların yanına 2026'da iki yeni başlık eklendi:
 
-- [**Effort Control**](/wiki/yetenekler/effort-control/) — Claude'a bir görevde ne kadar derinlemesine çalışacağını söyleyen ayar. [Opus 4.8](/wiki/temeller/modeller/) ile claude.ai ve Cowork'e geldi; kalite ile hız arasında bilinçli denge kurar.
-- [**Claude Design**](/wiki/yetenekler/claude-design/) — Claude ile birlikte tasarım, prototip, sunum ve one-pager üretmenizi sağlayan Anthropic Labs ürünü. Pro planından itibaren dahildir.
+- [**Effort Control**](/wiki/yetenekler/effort-control/): Claude'a bir görevde ne kadar derinlemesine çalışacağını söyleyen ayar. Kalite ile hız arasında bilinçli denge kurar; varsayılan seviye modele ve yüzeye göre değişir.
+- [**Claude Design**](/wiki/yetenekler/claude-design/): Claude ile birlikte tasarım, prototip, sunum ve one-pager üretmenizi sağlayan Anthropic Labs ürünü. Ücretli planlarda (Pro, Max, Team) beta olarak sunulur; Free'de yok, Enterprise'ta yönetici açar. [Duyuru](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/)
 
 Bunlar başlangıç için zorunlu değildir; çekirdek yedi yeteneği oturttuktan sonra devreye alın.
+
+## Diğer Yetenek Sayfaları
+
+Yedi çekirdek yeteneğin ve yukarıdaki iki yeni başlığın yanında üç sayfa daha var:
+
+- [**Memory**](/wiki/yetenekler/memory/): Claude'un sohbetler arası hatırladığı bilgi, CLAUDE.md ile farkı ve kontrol ayarları
+- [**Code Execution**](/wiki/yetenekler/code-execution/): Claude'un gerçek Python kodu çalıştırarak yaptığı hesaplama, analiz ve grafik
+- [**Research Mode**](/wiki/yetenekler/research-mode/): Çok kaynaklı, uzun soluklu derin araştırma
 
 ## Nereye Gitmeli?
 
 Yetenekleri anladıysanız:
 
-- [**MCP ve Eklentiler**](/wiki/mcp/) — Claude'u şirket araçlarınıza bağlayan sistem
-- [**Departmanlar**](/wiki/departmanlar/) — Yetenekleri rol bazlı gerçek iş senaryolarına uygulamak
-- [**Cowork Modu**](/wiki/araclar/cowork-modu/) — Tüm yeteneklerin yaşadığı ortam
+- [**MCP ve Eklentiler**](/wiki/mcp/): Claude'u şirket araçlarınıza bağlayan sistem
+- [**Departmanlar**](/wiki/departmanlar/): Yetenekleri rol bazlı gerçek iş senaryolarına uygulamak
+- [**Cowork Modu**](/wiki/araclar/cowork-modu/): Tüm yeteneklerin yaşadığı ortam
 

@@ -1,16 +1,16 @@
 ---
-title: Research Mode — Derin Araştırma ve Uzun Soluklu Analiz
+title: "Research Mode: Derin Araştırma ve Uzun Soluklu Analiz"
 description: "Claude'un kapsamlı araştırma modunda nasıl çalıştığı. Çok kaynaklı sentez, detaylı raporlar, Dispatch ile birleşim."
 tags:
   - yetenekler
   - arastirma
   - dispatch
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" — bunlar saatler süren araştırma istiyor. Claude'un research mode'u tam buna hizmet eder.
+**Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" gibi sorular saatler süren araştırma ister. Claude'un research mode'u tam buna hizmet eder.
 
-Bu sayfa derin araştırma yetenekçesinin ne olduğunu, [Dispatch](/wiki/araclar/dispatch/) ile ilişkisini ve hangi senaryolarda iş profesyoneline değer ürettiğini anlatır.
+Bu sayfa derin araştırma yeteneğinin ne olduğunu, [Dispatch](/wiki/araclar/dispatch/) ile ilişkisini ve hangi senaryolarda iş profesyoneline değer ürettiğini anlatır.
 
 ## Research Mode Nedir?
 
@@ -18,17 +18,17 @@ Tek bir web araması ile karşılaştırın:
 
 | | Hızlı Web Arama | Research Mode |
 |---|---|---|
-| Süre | 10-30 saniye | 5-30 dakika |
-| Kaynak sayısı | 5-10 | 30-100+ |
+| Süre | 10-30 saniye | genelde dakikalar (işin büyüklüğüne göre) |
+| Kaynak sayısı | 5-10 | çok daha fazla |
 | Çıktı | Birkaç paragraf | Yapılandırılmış uzun rapor |
 | Kullanım | Hızlı bilgi | Derin sentez, karar destek |
 | Tetikleme | Otomatik | Bilinçli istek |
 
-Research mode "bir arkadaşına 'şunu araştırıp bana sun' demek" gibi. Claude:
+Research mode, bir arkadaşınıza "şunu araştırıp bana sun" demek gibidir. Claude:
 
 1. Soruyu alt sorulara böler
 2. Her alt soru için birden çok kaynak tarar
-3. Çelişen bilgileri farkeder, doğruluk değerlendirmesi yapar
+3. Çelişen bilgileri fark eder, doğruluk değerlendirmesi yapar
 4. Yapılandırılmış bir rapor olarak sunar
 5. Kaynakları ekte verir
 
@@ -38,7 +38,7 @@ Research mode "bir arkadaşına 'şunu araştırıp bana sun' demek" gibi. Claud
 
 > *"Türkiye'de B2B SaaS pazarının 2026 görünümü: pazar büyüklüğü, ana oyuncular, segment kırılımı, büyüme trendleri, yatırımcı ilgisi."*
 
-Bir hafta süren analist işi. Research mode bunu 30-45 dakikada bitirir, bir uzmana göre kabaca taslak çıkarır.
+Bir hafta süren analist işi. Research mode bunun ilk taslağını çok daha kısa sürede çıkarır; yine de bir uzmanın gözden geçirmesi gerekir.
 
 ### Rakip Analizi
 
@@ -80,7 +80,7 @@ Claude bunu uzun soluklu bir araştırma olarak yorumlar.
 
 ### 2. [Dispatch](/wiki/araclar/dispatch/) ile
 
-Daha uzun süreli araştırmalar için Dispatch tarafına gönderirsiniz. Bir dosyaya araştırma görevi tanımlarsınız, arka planda çalışır, bittiğinde size sonucu gelir. 30 dakika - birkaç saat sürebilir.
+Daha uzun süreli araştırmaları Dispatch ile telefonunuzdan masaüstü Cowork oturumunuza gönderebilirsiniz; arka planda çalışır, bittiğinde sonucu alırsınız. **Dikkat:** Dispatch, Pro ve Max planlarında sınırlı beta olarak sunulur ve yeni kullanıcılara kapalıdır; zaten kullanan hesaplar şimdilik kullanmaya devam edebilir. Hesabınızda Dispatch yoksa araştırmayı normal bir Cowork oturumunda başlatın.
 
 ### 3. Project Knowledge ile Birleşik
 
@@ -91,7 +91,7 @@ Araştırılacak konunun **iç dokümanlarınız** kapsamı varsa (örn. eski ra
 Tipik research mode çıktısı:
 
 ```markdown
-# [Konu] — Araştırma Raporu
+# [Konu]: Araştırma Raporu
 
 ## Yönetici Özeti
 [1-2 paragraf, en kritik bulgular]
@@ -116,7 +116,7 @@ Tipik research mode çıktısı:
 [Veriden çıkan tavsiyeler]
 
 ## Kaynaklar
-1. [Link] — [Tip] — [Tarih]
+1. [Link], [Tip], [Tarih]
 2. ...
 ```
 
@@ -135,7 +135,7 @@ Tipik research mode çıktısı:
 
 > *"Son 12 ay verilerine odaklan, 2025 öncesi sadece referans için."*
 
-Aksi halde Claude eski, eskimiş verileri ön plana çıkarabilir.
+Aksi halde Claude eskimiş verileri ön plana çıkarabilir.
 
 ### 3. Coğrafya Belirt
 
@@ -161,7 +161,7 @@ Kaynak kalitesi araştırma kalitesini belirler.
 
 Bu Claude'u körü körüne sentez yapmaktan çıkarır.
 
-[Web Arama](/wiki/araclar/web-arama/) sayfasında araştırma kalitesi arttırma teknikleri var.
+[Web Arama](/wiki/araclar/web-arama/) sayfasında araştırma kalitesini artırma teknikleri var.
 
 ## Kalite Kontrol
 
@@ -174,13 +174,14 @@ Research mode çıktısı yine de doğrulama gerektirir:
 
 [Sınırlamalar](/wiki/temeller/sinirlamalar/) sayfası halüsinasyon ve doğrulama konusunu derinleştirir.
 
-## Maliyet Yönü — Token / Bağlam
+## Maliyet Yönü: Token / Bağlam
 
-Research mode uzun bağlam tüketir. Pro / Max planı kullanıcıları:
+Research mode uzun bağlam tüketir. Plana göre:
 
 - Pro: günlük yoğun kullanımda kotayı çabuk doldurur
 - Max 5x / Max 20x: rahatça kullanılır
-- Enterprise: organizasyon havuzu paylaşılır
+- Team: kota koltuk tipine göre (Standard veya Premium) değişir
+- Enterprise: kullanım API fiyatıyla faturalanır, bu yüzden maliyeti önceden tahmin edin
 
 [Planlar](/wiki/temeller/planlar/) sayfası detaylar.
 
@@ -188,30 +189,30 @@ Research mode uzun bağlam tüketir. Pro / Max planı kullanıcıları:
 
 Karmaşık iş senaryosu örneği:
 
-1. **Dispatch** ile uzun araştırma görevi başlatılır (45 dk arka plan)
+1. Uzun araştırma görevi Cowork'te (varsa **Dispatch** ile) başlatılır ve arka planda çalışır
 2. Sonuç gelir, **research mode** raporu hazır
 3. **[Skills](/wiki/yetenekler/skills/)** ile rapor .docx ve .pptx olarak dışa aktarılır
 4. **[Connectors](/wiki/araclar/connectors/)** ile rapor Drive'a yüklenir
 5. Sonucu yöneticilerle paylaşırsınız
 
-Bu birleşik akış [Cowork modu](/wiki/araclar/cowork-modu/) içinde tek prompt'la kurulabilir.
+Bu birleşik akış [Cowork](/wiki/araclar/cowork-modu/) içinde tek prompt'la kurulabilir.
 
 ## Research Mode'a Karar Verirken
 
-Araştırma karşılığını göz önünde tutun:
+Kabaca bir oran vermek gerekirse (bunlar tahmindir, ölçülmüş bir garanti değildir):
 
-- **15 dk Claude araştırması** ≈ 2-4 saat manual web tarama
-- **30 dk Claude araştırması** ≈ yarım gün analist işi
-- **60 dk araştırma + Skills + grafikler** ≈ 1-2 gün danışmanlık raporu
+- **Kısa bir Claude araştırması** birkaç saatlik elle web taramasının yerini tutabilir
+- **Daha uzun bir araştırma** yarım günlük analist işine denk gelebilir
+- **Araştırma + Skills + grafikler** bir iki günlük danışmanlık raporunun ilk taslağını verebilir
 
-Müşteri toplantısı, yönetim raporu, stratejik karar — geleneksel "süresi var" işlerde Claude inanılmaz değer çıkarır.
+Müşteri toplantısı, yönetim raporu ve stratejik karar gibi "hazırlanma süresi olan" işlerde Claude büyük zaman kazandırır.
 
 ## Sınırlar
 
 **Henüz şu işleri yapamaz:**
 
-- Ücretli akademik dergileri (sadece açık kaynaklar)
-- Şirket içi gizli araştırmalar (kaynak yok)
+- Ücretli akademik dergilere erişemez (yalnızca açık kaynaklar)
+- Şirket içi gizli araştırmalara erişemez (kaynak yok)
 - Çok özel uzmanlık gerektiren niş alanlar (örn. roket bilimi nüansları)
 - Birinci el saha araştırması (anket, mülakat)
 
@@ -219,13 +220,13 @@ Bu durumlar için **AI başlangıç noktası** + **insan derinleştirme** birle�
 
 ## İlgili Sayfalar
 
-- [Web Arama](/wiki/araclar/web-arama/) — Hızlı arama tarafı
-- [Dispatch](/wiki/araclar/dispatch/) — Uzun süreli arka plan görevi
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Research + Skills + Connectors birleşimi
-- [Skills](/wiki/yetenekler/skills/) — Çıktıyı dosya olarak dışa aktarma
-- [Projects](/wiki/araclar/projects/) — İç dokümanlarla birleşik araştırma
-- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Rapor şekillendirme
-- [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Halüsinasyon riski
-- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — Mevzuat araştırması
-- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/) — Pazar araştırması
+- [Web Arama](/wiki/araclar/web-arama/): Hızlı arama tarafı
+- [Dispatch](/wiki/araclar/dispatch/): Uzun süreli arka plan görevi
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Research + Skills + Connectors birleşimi
+- [Skills](/wiki/yetenekler/skills/): Çıktıyı dosya olarak dışa aktarma
+- [Projects](/wiki/araclar/projects/): İç dokümanlarla birleşik araştırma
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/): Rapor şekillendirme
+- [Sınırlamalar](/wiki/temeller/sinirlamalar/): Halüsinasyon riski
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/): Mevzuat araştırması
+- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/): Pazar araştırması
 

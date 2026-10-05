@@ -2,30 +2,30 @@
 import Layout from '../../layouts/Layout.astro';
 
 const rows = [
-  { label: 'Süre',                  ceo: '3 saat tek oturum',              bireysel: '3 hafta + 3 ay destek',     kurumsal: 'Minimum 3 ay (aylık devam)' },
-  { label: 'Katılımcı sayısı',       ceo: '1 kişi (sadece CEO)',            bireysel: '1 kişi',                    kurumsal: '6 çalışan' },
+  { label: 'Süre',                  ceo: '3 saat tek oturum',              bireysel: '3 hafta + 3 ay destek',     kurumsal: 'Minimum 3 ay, sonra aylık uzar' },
+  { label: 'Katılımcı sayısı',       ceo: '1 kişi (yönetici)',               bireysel: '1 kişi',                    kurumsal: '6 çalışan' },
   { label: 'Kişi başı eğitim saati', ceo: '3 saat',                          bireysel: '6 saat (3×2)',              kurumsal: '6 saat (2×3)' },
   { label: 'Toplam eğitim saati',    ceo: '3 saat',                          bireysel: '6 saat',                    kurumsal: '36 saat (6 × 6)' },
   { label: 'Telefon desteği',        ceo: 'Standart müşteri iletişimi',     bireysel: '3 ay sınırsız',             kurumsal: 'Sınırsız (tüm ekip, eğitim süresince)' },
   { label: 'Format (İstanbul içi)',   ceo: 'Yerinde yüz yüze',                bireysel: 'Yerinde yüz yüze',          kurumsal: 'Yerinde yüz yüze' },
   { label: 'Format (İstanbul dışı)',  ceo: 'Yerinde ya da online (kişi tercihi, yerinde seçilirse seyahat masrafı kişiye ait)', bireysel: 'Zoom/Google Meet',          kurumsal: 'Yerinde ya da online (firma tercihi, yerinde seçilirse seyahat masrafı firmaya ait)' },
   { label: 'Zaman',                  ceo: 'Hafta sonu (Cumartesi/Pazar)',   bireysel: 'Hafta içi veya hafta sonu', kurumsal: 'Hafta içi mesai saatinde' },
-  { label: 'Fiyat',                  ceo: '$400 + KDV (tek seferlik)',      bireysel: '$1.000 + KDV (tek seferlik)', kurumsal: '$3.000 + KDV / ay (min. 3 ay)' },
-  { label: 'Kişi başı maliyet',      ceo: '$400',                            bireysel: '$1.000',                    kurumsal: '$1.500' },
+  { label: 'Fiyat',                  ceo: '15.000 TL + KDV (tek seferlik)',  bireysel: '40.000 TL + KDV (tek seferlik)', kurumsal: '100.000 TL + KDV / ay (min. 3 ay, ödeme aylık)' },
+  { label: 'Kişi başı maliyet',      ceo: '15.000 TL',                       bireysel: '40.000 TL',                 kurumsal: '50.000 TL (3 ay için)' },
   { label: 'Claude aboneliği',       ceo: 'Zorunlu değil (tavsiye)',         bireysel: 'Max 5x ilk ay zorunlu',     kurumsal: 'Max 5x ilk ay zorunlu' },
   { label: 'Ek ders',                ceo: 'Yok',                             bireysel: 'Gerek görülürse ücretsiz',  kurumsal: 'Gerek görülürse ücretsiz' },
-  { label: 'Hedef alıcı',            ceo: 'CEO ve kurucu sahipleri',        bireysel: 'Bireysel profesyonel (B2C)', kurumsal: 'Şirket (B2B)' },
+  { label: 'Hedef alıcı',            ceo: 'Yöneticiler',                    bireysel: 'Bireysel profesyonel (B2C)', kurumsal: 'Şirket (B2B)' },
   { label: 'Müfredat odağı',         ceo: 'Anlama ve karar',                bireysel: 'Kişisel iş akışı',          kurumsal: 'Departman bazlı + ekip dinamiği' },
   { label: 'Çıktı',                   ceo: 'Yol haritası, karar',            bireysel: 'Çalışan kurulum + otomasyon', kurumsal: '6 Claude şampiyonu, ekip dönüşümü' },
-  { label: 'Şirket içi yayılım',     ceo: "Yok (CEO'ya özel)",              bireysel: 'Yok (kişisel)',             kurumsal: '6 çalışan = kritik kütle' },
+  { label: 'Şirket içi yayılım',     ceo: "Yok (yöneticiye özel)",              bireysel: 'Yok (kişisel)',             kurumsal: '6 çalışan = kritik kütle' },
   { label: 'KVKK / politika',        ceo: 'Genel çerçeve, anonim vaka',     bireysel: 'Genel rehberlik',           kurumsal: 'Şirket politika dokümanı' },
   { label: 'İlerleme raporu',        ceo: 'Yok',                             bireysel: 'Yok',                       kurumsal: '1. ve 2. ay sunumu' },
 ];
 
 const recRows = [
-  { situation: 'CEO\'sunuz, AI hakkında karar vermeniz gerek',          rec: 'CEO AI Brifing' },
-  { situation: 'Şirkete yatırım yapmadan önce konuyu anlamak istiyorsunuz', rec: 'CEO AI Brifing' },
-  { situation: 'CEO\'sunuz, şirkete getirmeden önce kendinize alacaksınız', rec: 'Önce CEO Brifing, sonra Bireysel veya Kurumsal' },
+  { situation: 'Yöneticisiniz, AI hakkında karar vermeniz gerek',          rec: 'Yönetici AI Hazırlık' },
+  { situation: 'Şirkete yatırım yapmadan önce konuyu anlamak istiyorsunuz', rec: 'Yönetici AI Hazırlık' },
+  { situation: 'Yöneticisiniz, şirkete getirmeden önce kendinize alacaksınız', rec: 'Önce Yönetici AI Hazırlık, sonra Bireysel veya Kurumsal' },
   { situation: 'Tek başınıza öğrenmek istiyorsunuz',                 rec: 'Bireysel' },
   { situation: 'Şirketiniz kurumsal program almıyor, kendiniz ödüyorsunuz', rec: 'Bireysel' },
   { situation: 'Freelance / bağımsız profesyonel',                   rec: 'Bireysel' },
@@ -37,8 +37,8 @@ const recRows = [
 ---
 
 <Layout
-  title="Programlar Karşılaştırması, CEO Brifing, Bireysel ve Kurumsal | Zamana"
-  description="Zamana'nın üç programını yan yana karşılaştırın. CEO AI Brifing, Bireysel ve Kurumsal. Süre, fiyat, kapsam, hedef kitle ve hangi durumda hangisinin uygun olduğu."
+  title="Program Karşılaştırması: Yönetici, Bireysel, Kurumsal"
+  description="Zamana'nın üç programı yan yana: Yönetici AI Hazırlık, Bireysel ve Kurumsal. Süre, fiyat, kapsam, hedef kitle ve hangisinin hangi durumda uygun olduğu."
   ogImage="/og/programlar-karsilastirma.png"
 >
 
@@ -63,21 +63,21 @@ const recRows = [
               <th>
                 <div class="th-card">
                   <span class="th-tag">Bireysel</span>
-                  <span class="th-price">$1.000 <em>+ KDV</em></span>
+                  <span class="th-price">40.000 TL <em>+ KDV</em></span>
                   <a href="/programlar/bireysel/" class="th-link">Detaylar →</a>
                 </div>
               </th>
               <th>
                 <div class="th-card th-card--gold">
                   <span class="th-tag">Kurumsal</span>
-                  <span class="th-price">$3.000 <em>+ KDV / ay</em></span>
+                  <span class="th-price">100.000 TL <em>+ KDV / ay</em></span>
                   <a href="/programlar/kurumsal/" class="th-link">Detaylar →</a>
                 </div>
               </th>
               <th>
                 <div class="th-card">
-                  <span class="th-tag">CEO AI Brifing</span>
-                  <span class="th-price">$400 <em>+ KDV</em></span>
+                  <span class="th-tag">Yönetici AI Hazırlık</span>
+                  <span class="th-price">15.000 TL <em>+ KDV</em></span>
                   <a href="/programlar/ceo-brifing/" class="th-link">Detaylar →</a>
                 </div>
               </th>

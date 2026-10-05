@@ -1,16 +1,16 @@
 ---
-title: CLAUDE.md Şablon Kütüphanesi — Rol Bazlı
-description: Satışçı, finans, hukuk, İK, operasyon — her departman için kullanıma hazır CLAUDE.md şablonları. Kopyala, kişiselleştir, başla.
+title: "CLAUDE.md Şablon Kütüphanesi: Rol Bazlı"
+description: Satış, finans, hukuk, İK, operasyon ve diğer roller için kullanıma hazır CLAUDE.md şablonları. Kopyala, kişiselleştir, başla.
 tags:
   - claude-md
   - sablon
   - rol-bazli
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Sıfırdan iyi bir [CLAUDE.md](/wiki/claude-md/nedir/) yazmak ilk seferde zor.** Bu sayfa rol bazlı şablonlar sunar — kopyalayın, kendi bilgilerinizle kişiselleştirin, başlayın.
+**Sıfırdan iyi bir [CLAUDE.md](/wiki/claude-md/nedir/) yazmak ilk seferde zor.** Bu sayfa rol bazlı şablonlar sunar: kopyalayın, kendi bilgilerinizle kişiselleştirin, başlayın.
 
-Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude bazı kuralları unutur ([Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında detay).
+Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden kaçırabilir; pratik sınır birkaç yüz kelimedir ([Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında detay).
 
 ## Nasıl Kullanılır
 
@@ -18,7 +18,7 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 2. Kopyalayın, bir CLAUDE.md dosyasına yapıştırın
 3. Köşeli parantezli yerleri **kendi bilgilerinizle** doldurun: `[Adınız]`, `[Şirket]`, `[Sektör]`
 4. Kuralları kendi tercihlerinize göre düzenleyin
-5. claude.ai'da bir [Project](/wiki/araclar/projects/) oluşturup orada knowledge olarak yükleyin
+5. Dosyayı çalışma klasörünüze `CLAUDE.md` adıyla kaydedin ([Cowork](/wiki/araclar/cowork-modu/) her oturumda okur). Sohbet tarafında çalışıyorsanız aynı metni bir [Project](/wiki/araclar/projects/) içine talimat ya da bilgi olarak da ekleyebilirsiniz
 6. İlk hafta gözleyin, gerekirse [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakarak iyileştirin
 
 ## 1. Satış Profesyoneli
@@ -26,7 +26,7 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 **Kimler için:** B2B satış yapan, soğuk e-posta ve takip yazışması ağırlıklı çalışan biri.
 
 ```markdown
-# CLAUDE.md — [Adınız], Satış
+# CLAUDE.md: [Adınız], Satış
 
 ## Ben Kimim
 [Şirket]'te [pozisyon]. [Sektör]'de B2B satış yapıyorum. Hedef kitlem [müşteri profili].
@@ -44,12 +44,12 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 - Quarterly review için pipeline analizi
 
 ## Yapma
-- Müşteri bilgilerini (isim, şirket detayı) tam olarak Claude'a yapıştırma — anonimleştir
-- Fiyat anlaşmalarını teyitsiz cevap üretmeye çalışma — bende final fiyat olmadan teklif yazma
+- Müşteri bilgilerini (isim, şirket detayı) tam olarak Claude'a yapıştırma, anonimleştir
+- Fiyat anlaşmalarını teyitsiz cevap üretmeye çalışma, bende final fiyat olmadan teklif yazma
 
 ## Yap
 - Her e-posta sonunda spesifik, ölçülebilir bir sonraki adım öner
-- Müşteri sektörüne uygun tonlama — finansa farklı, üretime farklı
+- Müşteri sektörüne uygun tonlama: finansa farklı, üretime farklı
 - Sayısal iddialar için "yaklaşık" kullan, kesinlik yokken kesinlik gösterme
 
 ## Şirket Bağlamı
@@ -65,14 +65,14 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 **Kimler için:** İçerik üretimi, kampanya ve marka iletişimiyle ilgilenen pazarlamacı.
 
 ```markdown
-# CLAUDE.md — [Adınız], Pazarlama
+# CLAUDE.md: [Adınız], Pazarlama
 
 ## Ben Kimim
 [Şirket]'te [pozisyon]. [Sektör]'de B2B/B2C pazarlama. Sorumluluğumda 
-[kanallar — LinkedIn, blog, e-posta, vb.].
+[kanallar: LinkedIn, blog, e-posta, vb.].
 
 ## Voice ve Dil
-- Marka ses: [3 sıfat — örn. "dürüst, doğrudan, sıcak"]
+- Marka ses: [3 sıfat, örn. "dürüst, doğrudan, sıcak"]
 - Pazarlama klişeleri yasak: "lider", "yenilikçi", "vizyoner", "pazarın 1 numarası"
 - Hedef kitle [profil] için yaz, kendi şirketim için değil
 - Türkçe-first. Marka adları İngilizce kalabilir.
@@ -89,8 +89,8 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 - Markalı kelimeleri (ürün adımız, kampanya isimleri) doğru yaz
 
 ## Yapma
-- Sahte istatistik üretme — bilmediğim sayıları söyleme
-- Klişe başlık ("X için 5 ipucu" gibi) — daha spesifik ol
+- Sahte istatistik üretme, bilmediğim sayıları söyleme
+- Klişe başlık ("X için 5 ipucu" gibi), daha spesifik ol
 - Müşteri logosu/ismini izinsiz kullanma
 
 ## Marka Bilgileri
@@ -106,11 +106,11 @@ Her şablon **300-500 kelime aralığında** tutuldu. Daha uzun olursa Claude ba
 **Kimler için:** Muhasebe, raporlama ve mevzuat takibi yapan mali işler çalışanı.
 
 ```markdown
-# CLAUDE.md — [Adınız], Finans
+# CLAUDE.md: [Adınız], Finans
 
 ## Ben Kimim
 [Şirket]'te [pozisyon]. [Mali müşavir / Finans Müdürü / CFO yardımcısı] görevindeyim.
-Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi — uygun olanları].
+Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi; uygun olanları].
 
 ## Voice ve Dil
 - Net, kesin, sayısal. Belirsizlik kabul edilmez.
@@ -126,14 +126,14 @@ Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi — uygun olanları].
 
 ## Yap
 - Her sayısal çıktının dayanağını söyle (formül, kaynak)
-- Hesap makinesi gibi davran — adım adım göster, "yaklaşık" kullanma
+- Hesap makinesi gibi davran: adım adım göster, "yaklaşık" kullanma
 - Vergi uygulamalarını mevzuatın güncel olduğu varsayımıyla cevapla, 
   ama "mali müşavire danışın" notunu mutlaka ekle
 - USD/EUR rakamlarını mevcut TCMB kuruyla TL'ye çevir, kuru belirt
 
 ## Yapma
-- Belirsiz finansal tahmin yapma — veri yoksa söyle
-- Vergi kararını tek başına ver — yorum sun, karar mali müşavirde
+- Belirsiz finansal tahmin yapma, veri yoksa söyle
+- Vergi kararını tek başına verme, yorum sun; karar mali müşavirde
 - Kişisel mali veri (banka hesabı, müşteri ödeme detayları) Claude'a girme
 
 ## Mevzuat Referansları
@@ -149,7 +149,7 @@ Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi — uygun olanları].
 **Kimler için:** Sözleşme ve Türk hukuku bağlamında çalışan hukuk profesyoneli.
 
 ```markdown
-# CLAUDE.md — [Adınız], Hukuk
+# CLAUDE.md: [Adınız], Hukuk
 
 ## Ben Kimim
 [Şirket / Hukuk Bürosu]'nda [avukat / hukuk müşaviri / şirket avukatı]. 
@@ -157,7 +157,7 @@ Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 
 ## Voice ve Dil
 - Resmî, dikkatli, net. Türkçe-first.
-- Hukuki terimleri tam yaz, kısaltma kullanma (örn. "Türk Borçlar Kanunu" — "TBK" değil).
+- Hukuki terimleri tam yaz, kısaltma kullanma (örn. "Türk Borçlar Kanunu", "TBK" değil).
 - Görüşle olgu ayır: "Görüşüm: ..." vs "Yasal düzenleme: ..."
 
 ## Yaygın İşlerim
@@ -175,13 +175,13 @@ Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 
 ## Yapma
 - Müvekkil gizliliğine tabi belge yükleme
-- Hukuki kararı son hâliyle Claude'da bitirme — taslakla bitir, sen onayla
+- Hukuki kararı son hâliyle Claude'da bitirme; taslakla bitir, sen onayla
 - Hukuki olmayan alanlarda (vergi, tıp) sınır geçme
 
 ## Türk Hukuku Bağlam
 - TTK, TBK, İK, KVKK referans kanunlar
 - Resmi kaynak: mevzuat.gov.tr (yürürlük tarihi mutlaka kontrol)
-- İçtihat: yargitay.gov.tr, kararlaryaz.gov.tr
+- İçtihat: yargitay.gov.tr, karararama.yargitay.gov.tr
 ```
 
 [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası kapsamı genişletir.
@@ -191,7 +191,7 @@ Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 **Kimler için:** İşe alım, çalışan yazışmaları ve İK süreçlerini yürüten biri.
 
 ```markdown
-# CLAUDE.md — [Adınız], İnsan Kaynakları
+# CLAUDE.md: [Adınız], İnsan Kaynakları
 
 ## Ben Kimim
 [Şirket]'te [İK pozisyonu]. [Çalışan sayısı]'lık ekibin İK yönetimi 
@@ -200,7 +200,7 @@ ve gelişimi sorumluluğum.
 ## Voice ve Dil
 - Empatik ama profesyonel. Çalışan haklarını korur, şirketin yararını gözetir.
 - Türkçe-first.
-- Hassas durumda nötr dil — "performansı düşük" yerine "performansının 
+- Hassas durumda nötr dil: "performansı düşük" yerine "performansının 
   iyileştirilmesine yönelik destek".
 
 ## Yaygın İşlerim
@@ -219,12 +219,12 @@ ve gelişimi sorumluluğum.
 
 ## Yapma
 - Çalışan kişisel sağlık verisi, finansal durumu, özel hayatı yükleme
-- Disiplin kararını tek başına Claude'la verme — taslakla bitir
+- Disiplin kararını tek başına Claude'la verme; taslakla bitir
 - İş Kanunu dışında (yabancı hukuk) tavsiye verme
 
 ## Şirket Politikaları
 - İş Kanunu kapsamı: [şirket büyüklüğü, sektör]
-- İK sistemi: [SAP, Logo, manuel — hangisi]
+- İK sistemi: [SAP, Logo, manuel: hangisi]
 - AI kullanım politikası: [şirket içi politika sayfasına atıf]
 ```
 
@@ -235,20 +235,20 @@ ve gelişimi sorumluluğum.
 **Kimler için:** Tesis, üretim planlama ve operasyon yöneten bir müdür.
 
 ```markdown
-# CLAUDE.md — [Adınız], Operasyon
+# CLAUDE.md: [Adınız], Operasyon
 
 ## Ben Kimim
 [Şirket]'te [pozisyon]. [Üretim / lojistik / tedarik zinciri] yönetiyorum.
 Ekip büyüklüğü: [sayı]. Tesis [konum].
 
 ## Voice ve Dil
-- Pratik, somut, ölçülebilir. "Belki", "muhtemelen" yerine "şu sebeple — şu kadar".
+- Pratik, somut, ölçülebilir. "Belki", "muhtemelen" yerine "şu sebeple, şu kadar".
 - Türkçe-first. Teknik terim için Türkçe + parantez İngilizce.
 
 ## Yaygın İşlerim
 - Haftalık üretim raporu
 - Tedarikçi sipariş takip ve gecikme analizi
-- KPI dashboard yorumlama (OEE, fire, fire oranı, vb.)
+- KPI dashboard yorumlama (OEE, fire oranı, vb.)
 - İşçi sağlığı ve güvenliği belgeleri
 - Süreç iyileştirme önerileri
 
@@ -275,7 +275,7 @@ Ekip büyüklüğü: [sayı]. Tesis [konum].
 **Kimler için:** Müşteri talepleri, şikayet yönetimi ve destek yazışması yapan biri.
 
 ```markdown
-# CLAUDE.md — [Adınız], Müşteri Hizmetleri
+# CLAUDE.md: [Adınız], Müşteri Hizmetleri
 
 ## Ben Kimim
 [Şirket]'te müşteri destek temsilcisi. Ortalama günde [sayı] ticket / mesaj 
@@ -299,8 +299,8 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 
 ## Yapma
 - Müşteri kişisel bilgisini Claude'a tam yapıştırma (anonimleştir)
-- Hukuki bağlayıcı söz verme (iade garantisi, gecikme tazminatı) — yetkim dışı
-- Şirket içi dahili sebep / hata Claude'a anlatma — sadece müşteri-yönlü kal
+- Hukuki bağlayıcı söz verme (iade garantisi, gecikme tazminatı), yetkim dışı
+- Şirket içi dahili sebep / hata Claude'a anlatma, sadece müşteri yönlü kal
 
 ## Şirket SLA ve Politika
 - İlk yanıt süresi: [örn. 4 saat]
@@ -315,7 +315,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 **Kimler için:** Stratejik karar, özet ve kurul iletişimi ihtiyacı olan üst düzey yönetici.
 
 ```markdown
-# CLAUDE.md — [Adınız], [CEO / Genel Müdür / Direktör]
+# CLAUDE.md: [Adınız], [CEO / Genel Müdür / Direktör]
 
 ## Ben Kimim
 [Şirket]'in [pozisyon]'uyum. Sorumluluğum [P&L / strateji / 50+ kişilik organizasyon / vs].
@@ -323,7 +323,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 
 ## Voice ve Dil
 - Net, dürüst, kararlı. Diplomatik ama dolambaçsız.
-- Pazarlama klişeleri özellikle yasak — yönetim raporlarında saçma görünür.
+- Pazarlama klişeleri özellikle yasak, yönetim raporlarında yapay görünür.
 - Türkçe-first.
 
 ## Yaygın İşlerim
@@ -334,8 +334,8 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 - Çeyreklik OKR değerlendirmesi
 
 ## Yap
-- Veri-temelli ifade — duygusal değil, sayısal
-- Risk ve fırsat dengeli sunum — sadece iyi haber yetmez
+- Veriye dayalı ifade: duygusal değil, sayısal
+- Risk ve fırsat dengeli sunulsun, sadece iyi haber yetmez
 - Karar gerektiren mesajlarda "öneri" + "alternatif" + "tavsiyem" yapısı
 
 ## Yapma
@@ -356,7 +356,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 **Kimler için:** Altyapı, güvenlik ve teknik süreç yöneten BT sorumlusu.
 
 ```markdown
-# CLAUDE.md — [Adınız], Bilgi Teknolojileri
+# CLAUDE.md: [Adınız], Bilgi Teknolojileri
 
 ## Ben Kimim
 [Şirket]'te [BT Müdürü / IT Sorumlusu / CIO]. [Çalışan sayısı]'lık 
@@ -375,7 +375,7 @@ organizasyonun BT altyapısını yönetiyorum.
 - AI araç değerlendirmesi (Claude, Copilot, vs.)
 
 ## Yap
-- Riskleri "düşük / orta / yüksek" olarak sınıfla — soyut değil
+- Riskleri "düşük / orta / yüksek" olarak sınıfla, soyut bırakma
 - Maliyet içeren önerilerde TL/USD tutar belirt
 - Güvenlik konularında **KVKK, ISO 27001, NIST** çerçevelerine atıf yap
 
@@ -404,11 +404,11 @@ organizasyonun BT altyapısını yönetiyorum.
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Temeller
-- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Yazım rehberi
-- [Örnekler](/wiki/claude-md/ornekler/) — Çalışan örnekler
-- [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) — Şirket genelinde paylaşım
-- [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) — Çalışmıyorsa
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — Kalıcı bellekle ilişki
-- [Departmanlar](/wiki/departmanlar/) — Rol bazlı kullanım derinliği
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Temeller
+- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Yazım rehberi
+- [Örnekler](/wiki/claude-md/ornekler/): Çalışan örnekler
+- [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/): Şirket genelinde paylaşım
+- [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/): Çalışmıyorsa
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı bellekle ilişki
+- [Departmanlar](/wiki/departmanlar/): Rol bazlı kullanım derinliği
 

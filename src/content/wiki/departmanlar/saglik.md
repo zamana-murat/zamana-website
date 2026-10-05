@@ -1,31 +1,32 @@
 ---
-title: Sağlık — Claude Uygulamaları (Hassas Sektör)
-description: Sağlık kuruluşları için Claude — hasta verisi politikası, idari iş yükü, hekim notu desteği, eğitim materyali. KVKK ve özel yasal rejim altında dikkatli kullanım.
+title: "Sağlık: Claude Uygulamaları (Hassas Sektör)"
+description: "Sağlık kuruluşları için Claude: hasta verisi politikası, idari iş yükü, hekim notu desteği, eğitim materyali. KVKK ve özel mevzuatta dikkatli kullanım."
 tags:
   - departmanlar
   - saglik
   - kvkk
   - hassas
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Sağlık sektörü Türkiye'de özel yasal rejime tabidir — KVKK üstünde **özel kategori veri**, mesleki gizlilik, Sağlık Bakanlığı yönetmelikleri. Claude'un sağlıkta kullanımı **mümkün ama dikkat ister.** Bu sayfa hangi alanlarda güvenle kullanılabileceğini, neyin kesinlikle yasak olduğunu ve kurumsal politika çerçevesini anlatır.
+Sağlık sektörü Türkiye'de özel bir yasal rejime tabidir: KVKK kapsamında **özel nitelikli kişisel veri**, mesleki gizlilik ve Sağlık Bakanlığı yönetmelikleri. Claude'un sağlıkta kullanımı **mümkündür ama dikkat ister.** Bu sayfa hangi alanlarda güvenle kullanılabileceğini, neyin kesinlikle yapılmaması gerektiğini ve kurumsal politika çerçevesini anlatır.
 
 **Önemli:** Bu sayfa hukuki tavsiye değil, genel rehberlik. Sağlık kuruluşunuzun **mesleki gizlilik, KVKK, Sağlık Bakanlığı mevzuatı** kapsamında **kendi hukuk müşaviriyle** politika kurması zorunludur.
 
-## Yasal Çerçeve — Hızlı Özet
+## Yasal Çerçeve: Hızlı Özet
 
 Sağlıkta Claude kullanımını yöneten ana mevzuat:
 
-- **KVKK md. 6** — sağlık verisi özel kategori, açık rıza veya yasal istisnalar gerek
-- **Hasta Hakları Yönetmeliği** — mahremiyet
-- **Tıbbi Deontoloji** — hekim mesleki gizliliği
+- **KVKK md. 6**: sağlık verisi özel nitelikli kişisel veridir; açık rıza veya yasal istisnalar gerekir
+- **KVKK md. 9**: Claude'a kişisel veri girmek yurt dışına aktarım sayılır; ayrıntılar [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım (KVKK m.9)" bölümünde. Hasta verisi için pratik kural değişmez: girmeyin
+- **Hasta Hakları Yönetmeliği**: mahremiyet
+- **Tıbbi Deontoloji**: hekim mesleki gizliliği
 - **Sağlık Bakanlığı Bilişim Standartları**
-- **Türk Ceza Kanunu md. 134-138** — kişisel veriyi hukuka aykırı verme
+- **Türk Ceza Kanunu md. 134-138**: kişisel veriyi hukuka aykırı verme
 
 [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası KVKK derinleşmesi içerir.
 
-## Yapılabilenler ve Yapılamayanlar — Net Tablo
+## Yapılabilenler ve Yapılamayanlar: Net Tablo
 
 | İş | Claude'a uygun mu? | Koşul |
 |---|---|---|
@@ -43,11 +44,11 @@ Sağlıkta Claude kullanımını yöneten ana mevzuat:
 
 **Genel kural:** Claude **klinik karar vermez**, **idari ve eğitsel destek** sağlar.
 
-## Bölüm 1 — Hekim İş Akışı Desteği
+## Bölüm 1: Hekim İş Akışı Desteği
 
 ### Hekim Notu Ön Taslak
 
-Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder ([Voice Mode](/wiki/araclar/voice-mode/)) veya kısa yazılı not bırakır. Claude bunu yapılandırılmış hekim notuna çevirir:
+Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder (cihazın dikte özelliği ya da [Voice Mode](/wiki/araclar/voice-mode/); Türkçe desteğini önceden deneyin) veya kısa yazılı not bırakır. Claude bunu yapılandırılmış hekim notuna çevirir:
 
 - Şikayet
 - Anamnez
@@ -55,97 +56,99 @@ Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder ([Voice Mode
 - Değerlendirme
 - Plan
 
-**Hasta ismi yerine "Hasta A" / vaka numarası**. Final hâli hekim onaylayıp HBYS'ye girer.
+**Hasta adı yerine "Hasta A" veya vaka numarası** kullanılır. Son hâlini hekim onaylayıp HBYS'ye girer.
 
 ### Tıbbi Literatür Araştırması
 
-Bir vaka için literatür özeti, son tedavi yaklaşımları. [Research Mode](/wiki/yetenekler/research-mode/) ile.
+Bir vaka için literatür özeti ve son tedavi yaklaşımları, [Research Mode](/wiki/yetenekler/research-mode/) ile.
 
-**Önemli:** Claude akademik ücretli tam metin makalelere erişmez; PubMed özetleri ve açık erişim makaleler üzerinden çalışır. Final klinik karar için **TÜRKDERM, UpToDate, NEJM gibi profesyonel kaynaklar** ek olarak kullanılır.
+**Önemli:** Claude ücretli tam metin makalelere erişemez; PubMed özetleri ve açık erişim makaleler üzerinden çalışır, kaynakları uydurabilir. Her atfı kaynağından doğrulayın. Klinik karar için ek olarak **UpToDate, NEJM ve ilgili uzmanlık derneği kılavuzları** gibi profesyonel kaynaklar kullanılır.
 
 ### Hasta Bilgilendirme Yazısı
 
-Bir tanı / işlem / tedavi sonrası hastaya verilecek bilgilendirme metni. Claude tıbbi terimi sade dile çevirir, "ne demek, ne yapmalı, ne zaman uyarı" yapısında.
+Bir tanı, işlem veya tedavi sonrası hastaya verilecek bilgilendirme metni. Claude tıbbi terimi sade dile çevirir: "ne demek, ne yapmalı, ne zaman uyarı" yapısında.
 
-Hekim onayından sonra hastaya verilir.
+Metin, hekim onayından sonra hastaya verilir.
 
 ### Aydınlatılmış Onam Formu
 
-Cerrahi / tıbbi işlem için aydınlatılmış onam formu taslağı. Hukuk müşaviri **mutlaka** son hâli onaylamalı.
+Cerrahi veya tıbbi işlem için aydınlatılmış onam formu taslağı. Hukuk müşaviri son hâli **mutlaka** onaylamalıdır.
 
-## Bölüm 2 — İdari ve Operasyonel
+## Bölüm 2: İdari ve Operasyonel
 
 ### Randevu Yönetimi
 
-Randevu hatırlatma, iptal yanıtı, çoklu dilli iletişim (turistlerin sağlık hizmeti için Türkiye'ye geldiği "sağlık turizmi" senaryosu). [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) sayfası benzer çoklu dilli iletişim örnekleri verir.
+Randevu hatırlatma, iptal yanıtı ve çok dilli iletişim (turistlerin sağlık hizmeti için Türkiye'ye geldiği "sağlık turizmi" senaryosu). [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) sayfası benzer çok dilli iletişim örnekleri verir.
 
 ### Hasta Geri Bildirim Yanıtı
 
-Olumlu / olumsuz geri bildirimlere yanıt. Hassas durumda **hukuki dikkat** — geri bildirim yanıtında bile mesleki gizlilik ihlali riski var.
+Olumlu ve olumsuz geri bildirimlere yanıt. Hassas durumlarda **hukuki dikkat** gerekir: geri bildirim yanıtında bile mesleki gizlilik ihlali riski vardır.
 
 ### Faturalama ve SGK
 
-SGK ile mali işler — yazışma taslakları, itiraz mektupları. Standart [finans](/wiki/departmanlar/finans/) yaklaşımı, sağlığa özel KVKK katmanıyla.
+SGK ile mali işler, yazışma taslakları, itiraz mektupları. Standart [finans](/wiki/departmanlar/finans/) yaklaşımı geçerlidir, üzerine sağlığa özgü KVKK katmanı eklenir.
 
 ### Personel İK ve Performans
 
-Hekim, hemşire, idari personel İK işleri standart [İK departmanı](/wiki/departmanlar/insan-kaynaklari/) yaklaşımıyla. Sağlık-spesifik: nöbet çizelgesi optimizasyonu, performans değerlendirme (klinik göstergeler), eğitim takibi.
+Hekim, hemşire ve idari personelin İK işleri standart [İK departmanı](/wiki/departmanlar/insan-kaynaklari/) yaklaşımıyla yürür. Sağlığa özgü başlıklar: nöbet çizelgesi planlama, performans değerlendirme (klinik göstergeler), eğitim takibi.
 
-## Bölüm 3 — Eğitim ve Akademik
+## Bölüm 3: Eğitim ve Akademik
 
 ### Personel Eğitim Materyali
 
-Hemşire eğitimi, tıbbi sekreter eğitimi, hekim sürekli eğitim — Claude konuya göre eğitim materyali, sınav sorusu, vaka çalışması üretir. [Eğitim ve Akademi](/wiki/departmanlar/egitim-akademi/) sayfası genel pedagojik yaklaşımı detaylandırır.
+Hemşire eğitimi, tıbbi sekreter eğitimi, hekim sürekli eğitimi: Claude konuya göre eğitim materyali, sınav sorusu ve vaka çalışması üretir. [Eğitim ve Akademi](/wiki/departmanlar/egitim-akademi/) sayfası genel pedagojik yaklaşımı detaylandırır.
 
 ### Tıp Fakültesi / Eğitim Hastanesi
 
-Asistan eğitimi için klinik vaka tartışmaları, makale taraması, sunum hazırlığı. **Anonimleştirilmiş** vakalarla.
+Asistan eğitimi için klinik vaka tartışmaları, makale taraması, sunum hazırlığı. Yalnızca **anonimleştirilmiş** vakalarla.
 
 ### Sağlık İletişimi (Hasta Eğitimi)
 
-Web sitesi, broşür, sosyal medya — sade tıbbi içerik. "Diyabet nedir, nasıl yönetilir" tarzı eğitsel içerik.
+Web sitesi, broşür, sosyal medya için sade tıbbi içerik. "Diyabet nedir, nasıl yönetilir" tarzı eğitsel içerikler.
 
 ### Akademik Yayın
 
-Tıbbi yayında abstract, giriş, tartışma bölümü taslağı. Final hekim/araştırmacı emeği ve sorumluluğunda.
+Tıbbi yayın için özet, giriş ve tartışma bölümü taslağı. Nihai metin, hekimin veya araştırmacının emeği ve sorumluluğundadır.
 
-## Bölüm 4 — Kurumsal Yönetim
+## Bölüm 4: Kurumsal Yönetim
 
 ### Politika Belgeleri
 
-Hasta gizliliği politikası, KVKK aydınlatma, çalışan davranış kuralları. [Hukuk departmanı](/wiki/departmanlar/hukuk/) onayıyla.
+Hasta gizliliği politikası, KVKK aydınlatma metni, çalışan davranış kuralları. [Hukuk departmanı](/wiki/departmanlar/hukuk/) onayıyla.
 
 ### Acil Durum Planları
 
-Kriz iletişimi, hasta yakınlarına bilgi, basın açıklaması taslakları. Hassas durumda **iletişim ekibi + hukuk** son onay.
+Kriz iletişimi, hasta yakınlarına bilgilendirme, basın açıklaması taslakları. Hassas durumlarda **iletişim ekibi ve hukuk** son onayı verir.
 
 ### Kalite Yönetimi
 
-Hastane akreditasyonu (JCI, SAS) için belgeler. ISO benzeri yapı, [üretim ve imalat](/wiki/departmanlar/uretim-imalat/) sayfasındaki ISO yaklaşımı uyarlanabilir.
+Hastane akreditasyonu (JCI, SAS) için belgeler. ISO benzeri bir yapı söz konusudur; [üretim ve imalat](/wiki/departmanlar/uretim-imalat/) sayfasındaki ISO yaklaşımı uyarlanabilir.
 
 ### Yatırım ve Stratejik Plan
 
-Yeni bölüm açma, cihaz satın alma kararı için iş planı, ROI analizi.
+Yeni bölüm açma veya cihaz satın alma kararı için iş planı ve ROI analizi.
 
 ## Pratik Kullanım Senaryoları
 
+Aşağıdaki süre karşılaştırmaları örnektir; kurumdan kuruma değişir.
+
 ### Senaryo 1: Polikliniğe Hekim
 
-Sabah 9-12 yoğun poliklinik. 25 hasta. Her hasta sonrası 5 dakika not yazma → 2 saat eklenmiş iş günü. Hekim Claude'a vaka anonimleştirilmiş notları dikte eder, Claude yapılandırılmış hekim notu çıkarır. 5 dk → 1 dk.
+Sabah 9-12 arası yoğun poliklinik, 25 hasta. Her hasta sonrası 5 dakika not yazmak iş gününe yaklaşık 2 saat ekler. Hekim, anonimleştirilmiş vaka notlarını Claude'a dikte eder, Claude yapılandırılmış hekim notu çıkarır. Hekimin işi, sıfırdan yazmak yerine kısa bir kontrol ve düzeltmeye iner.
 
-### Senaryo 2: Hastane İdari Sekreter
+### Senaryo 2: Hastane İdari Sekreteri
 
-Yabancı hasta yoğun bir hastanede, çoklu dilli randevu yazışması, tedavi öncesi bilgilendirme. Claude'la 5 dilde profesyonel iletişim — 3 sekreterin işini 1 sekreter yapar. [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) sayfasında benzer çoklu dilli pratik var.
+Yabancı hasta yoğun bir hastanede çok dilli randevu yazışması ve tedavi öncesi bilgilendirme gerekir. Claude ile birkaç dilde profesyonel iletişim kurulur ve sekreterlerin iş yükü belirgin biçimde azalır. [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) sayfasında benzer bir çok dilli uygulama var.
 
 ### Senaryo 3: Hekim Akademik Çalışma
 
-Klinik araştırma için literatür özeti, makale taslağı, istatistiksel analiz açıklaması. Claude'la hekim haftalarca süren işi 1-2 günde toplar.
+Klinik araştırma için literatür özeti, makale taslağı ve istatistiksel analiz açıklaması. Haftalar süren hazırlık Claude ile çok kısalır; atıflar ve istatistikler yine de hekim tarafından doğrulanır.
 
 ### Senaryo 4: Hastane Yöneticisi
 
-JCI akreditasyonuna 6 ay var. Claude'la mevcut prosedürlerin gözden geçirilmesi, eksik dokümantasyon listesi, yeni belge taslakları. 1 yıl yerine 4 ayda hazırlık tamamlanır.
+JCI akreditasyonuna 6 ay var. Claude ile mevcut prosedürler gözden geçirilir, eksik dokümantasyon listesi çıkarılır, yeni belge taslakları hazırlanır. Hazırlık süresi kısalır, ama içerik doğruluğunun sorumluluğu kurumda kalır.
 
-## CLAUDE.md Tavsiyesi — Sağlık Çalışanı
+## CLAUDE.md Tavsiyesi: Sağlık Çalışanı
 
 Sağlık çalışanı için CLAUDE.md ekstra dikkatli:
 
@@ -160,11 +163,11 @@ Sağlık çalışanı için CLAUDE.md ekstra dikkatli:
 - Hasta Hakları Yönetmeliği
 - Mesleki gizlilik (TCK 134-138)
 
-## Yapma — KESİN YASAK
+## Yapma (KESİN YASAK)
 - Hasta ad, TC, dosya no, iletişim bilgisi yapıştırma
 - Tanı/tedavi kararını Claude'a sorma → Claude'da klinik karar yok
 - Tıbbi rapor son hâlini Claude'la bitirme → mutlaka hekim onayı
-- Müsteşar/yönetim hassas yazışmasını Claude'a açma
+- Yönetimin hassas yazışmalarını Claude'a açma
 
 ## Yap
 - Anonim vaka tartışmasında "Hasta A, 45 yaş, K, [şikayet]"
@@ -177,7 +180,7 @@ Sağlık çalışanı için CLAUDE.md ekstra dikkatli:
 - Tıbbi terim + sade Türkçe karşılık.
 ```
 
-## Kurumsal Politika — Sağlık Spesifik
+## Kurumsal Politika: Sağlık Spesifik
 
 [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfasındaki şablonu sağlık için **sıkılaştırın**:
 
@@ -190,39 +193,39 @@ Sağlık çalışanı için CLAUDE.md ekstra dikkatli:
 4. Klinik karar Claude'la verilmez. Claude tarama, taslak destekçidir.
 5. Hekim notları Claude taslağı kullanılarak yazılır ama hekim onayıyla HBYS'ye girer.
 6. Yasal/etik şüpheli durumda kurum hukuk müşaviriyle hemen görüşülür.
-7. Bu politika hekim, hemşire, idari personel — herkesi kapsar.
+7. Bu politika hekim, hemşire ve idari personel dahil herkesi kapsar.
 ```
 
 ## Kurumsal Plan Tavsiyesi
 
-Sağlık kuruluşu için **mutlaka [Enterprise plan](/wiki/temeller/takim-ve-admin/)**:
+Sağlık kuruluşu için **bireysel (Free, Pro, Max) planlar yerine ticari bir plan** (Team veya [Enterprise](/wiki/temeller/takim-ve-admin/)) kullanın:
 
-- DPA (Data Processing Agreement) imzalanır
-- Audit log
-- SSO + SCIM
-- Saklama politikası ayarlanır
-- Eğitim verisi kullanım açıkça kapatılır
+- Ticari planlarda (Team, Enterprise, API) girdiler varsayılan olarak model eğitiminde kullanılmaz; bireysel planlarda bu ayar kullanıcıya bağlıdır
+- DPA (Veri İşleme Eki) ticari şartlara otomatik dahildir, ayrıca imza gerekmez; bireysel planlar DPA kapsamı dışındadır. Metni yine de kurumunuzun hukuk müşaviri gözden geçirmelidir
+- SSO ve SCIM yönetimi
+- Audit log, özel veri saklama ayarları ve RBAC gibi gelişmiş kontroller Enterprise planındadır
+- HIPAA yapılandırması (BAA) Enterprise'da mevcuttur, ancak ABD mevzuatına dairdir ve KVKK uyumu yerine geçmez
 
-[Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası ek bağlam verir.
+Hangi plan olursa olsun, hasta verisini Claude'a yüklememe kuralı geçerlidir. [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası ek bağlam verir.
 
-## "Hekim Yardımcısı Chatbot" Trend'i
+## "Hekim Yardımcısı Chatbot" Trendi
 
-Bazı dijital sağlık startup'ları "AI-destekli hasta soruları" yapıyor. Bu **çok hassas** bir alan:
+Bazı dijital sağlık girişimleri "yapay zekâ destekli hasta soruları" ürünleri geliştiriyor. Bu **çok hassas** bir alandır:
 
-- Klinik karar vermek hekim mesleki sorumluluğu
-- AI bir teşhis koymadan "destek" sağlasa bile **yasal sorumluluk** sınırı belirsiz
-- KVKK + tıp etiği iki katlı kontrol ister
-- ABD'deki FDA benzeri Türkiye'de **Sağlık Bakanlığı** onayı süreci gelişiyor
+- Klinik karar vermek hekimin mesleki sorumluluğudur
+- Yapay zekâ teşhis koymadan "destek" sağlasa bile **yasal sorumluluk** sınırı belirsizdir
+- KVKK ve tıp etiği çift katmanlı bir kontrol ister
+- Bu tür ürünlerin düzenlenmesi (ABD'deki FDA yaklaşımına benzer biçimde) Türkiye'de de gelişiyor; güncel durumu hukuk danışmanınızla doğrulayın
 
-**Öneri:** Doğrudan hasta-AI etkileşim ürünü için kurum içi karar değil, **dış hukuki ve etik kurul** danışmanlığı şart.
+**Öneri:** Doğrudan hasta ile yapay zekâ etkileşimi kuran bir ürün için karar kurum içinde verilmemeli; **dış hukuki ve etik danışmanlık** şarttır.
 
 ## Sağlık Turizmi
 
-Türkiye'de büyüyen **sağlık turizmi** (saç ekimi, dental, plastik cerrahi, IVF) için Claude değerli:
+Türkiye'de büyüyen **sağlık turizmi** (saç ekimi, dental, plastik cerrahi, IVF) için Claude değerlidir:
 
-- Çoklu dilde hasta iletişimi (öncesi, esnası, sonrası)
-- Pre-arrival bilgilendirme
-- Konaklama / transfer koordinasyonu
+- Birden fazla dilde hasta iletişimi (öncesi, esnası, sonrası)
+- Gelişten önce bilgilendirme
+- Konaklama ve transfer koordinasyonu
 - Pazarlama içeriği (web sitesi, sosyal medya)
 - Yorum yönetimi
 
@@ -230,18 +233,18 @@ Türkiye'de büyüyen **sağlık turizmi** (saç ekimi, dental, plastik cerrahi,
 
 ## Bireysel Hekim / Klinik Sahibi
 
-Tek başına çalışan hekim, küçük poliklinik / klinik için Claude'un değeri kayda değer. İdari iş yükü hekim zamanını siz çıkarır. Sektör hassasiyeti nedeniyle KVKK ve mesleki gizlilik kurallarına özel dikkat gerekir.
+Tek başına çalışan hekim ya da küçük poliklinik için Claude'un katkısı kayda değerdir. İdari iş yükünü azaltarak hekimin zamanını boşaltır. Sektörün hassasiyeti nedeniyle KVKK ve mesleki gizlilik kurallarına özel dikkat gerekir. Yukarıdaki plan tavsiyesi (bireysel plan yerine ticari plan) tek hekim için de geçerlidir.
 
 ## İlgili Sayfalar
 
-- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — KVKK, mesleki gizlilik, Sağlık Bakanlığı mevzuatı
-- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) — Hasta iletişimi temelleri
-- [Eğitim ve Akademi](/wiki/departmanlar/egitim-akademi/) — Tıp eğitimi, asistan eğitimi
-- [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/) — Sağlık turizmi
-- [Operasyon Departmanı](/wiki/departmanlar/operasyon/) — Hastane operasyonel yönetim
-- [İK Departmanı](/wiki/departmanlar/insan-kaynaklari/) — Sağlık personeli yönetimi
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika temeli
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri hakları
-- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Enterprise plan
-- [Research Mode](/wiki/yetenekler/research-mode/) — Tıbbi literatür
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/): KVKK, mesleki gizlilik, Sağlık Bakanlığı mevzuatı
+- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/): Hasta iletişimi temelleri
+- [Eğitim ve Akademi](/wiki/departmanlar/egitim-akademi/): Tıp eğitimi, asistan eğitimi
+- [Turizm ve Otelcilik](/wiki/departmanlar/turizm-otelcilik/): Sağlık turizmi
+- [Operasyon Departmanı](/wiki/departmanlar/operasyon/): Hastane operasyonel yönetim
+- [İK Departmanı](/wiki/departmanlar/insan-kaynaklari/): Sağlık personeli yönetimi
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Politika temeli
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri hakları
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Enterprise plan
+- [Research Mode](/wiki/yetenekler/research-mode/): Tıbbi literatür
 

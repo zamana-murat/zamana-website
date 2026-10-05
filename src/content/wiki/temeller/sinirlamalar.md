@@ -1,17 +1,17 @@
 ---
-title: "Claude'un Sınırları — Ne Yapamaz, Ne Zaman Hata Yapar?"
-description: "Claude'un ne yapamadığı, hangi durumlarda hata yaptığı ve bir iş profesyonelinin hangi konularda ona güvenmemesi gerektiği — dürüstçe anlatılmış."
+title: "Claude'un Sınırları: Ne Yapamaz, Ne Zaman Hata Yapar?"
+description: "Claude'un ne yapamadığı, hangi durumlarda hata yaptığı ve bir iş profesyonelinin hangi konularda ona güvenmemesi gerektiği, dürüstçe anlatılmış."
 tags:
   - temeller
   - sinirlamalar
   - hallucination
   - hata-yonetimi
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
 **Claude güçlüdür, ama yanılmaz değildir.** Bu sayfa iş kullanıcıları için en kritik bilgilerden birini içerir: **nerede güvenmemeniz gerektiği.**
 
-Yapay zeka satıcılarının çoğu sınırlardan kaçınır. Biz tersini yapıyoruz — çünkü güven abartıyla değil, doğrulukla inşa edilir. Claude'u ne kadar iyi tanırsanız, onu o kadar iyi kullanırsınız.
+Yapay zeka satıcılarının çoğu sınırlardan kaçınır. Biz tersini yapıyoruz, çünkü güven abartıyla değil, doğrulukla inşa edilir. Claude'u ne kadar iyi tanırsanız, onu o kadar iyi kullanırsınız.
 
 ## Temel Sınırlar
 
@@ -24,41 +24,41 @@ Claude bazen **bilmediği bir şeyi emin bir tonla söyler**. Yapay zeka literat
 - Gerçek bir kişiye yanlış bir pozisyon atfeder
 - Bir istatistiği uydurur
 
-**Bu nadir değildir** — özellikle Claude'un eğitim verisinde yeterince bulunmayan, dar uzmanlık konularında.
+**Bu nadir değildir**: özellikle Claude'un eğitim verisinde yeterince bulunmayan, dar uzmanlık konularında.
 
 **Çözüm:**
 
 - **Kritik olguları her zaman bağımsız kaynaktan doğrulayın.** Claude'un verdiği her sayıyı, her alıntıyı, her yasa referansını.
-- Claude'dan kaynak isteyin: "Bu bilgi için kaynak göster." Eğer kaynak veremiyor veya kaynaklar güvenilir değilse — o bilgi şüphelidir.
+- Claude'dan kaynak isteyin: "Bu bilgi için kaynak göster." Eğer kaynak veremiyor veya kaynaklar güvenilir değilse, o bilgi şüphelidir.
 - Resmi belgelerde (sözleşme, rapor, hukuki görüş) Claude'un çıktısını gözden geçirmeden kullanmayın.
 
 ### 2. Matematik Hataları
 
-Claude, matematik üzerine **düşünebilir**, ama basit aritmetikte bile hata yapabilir. 4 haneli bir çarpım işleminde bile yanlış cevap verebileceğini bildikten sonra, finansal bir modele Claude'u hesap makinesi olarak kullanmamalısınız.
+Claude matematik problemleri üzerine **düşünebilir**, ama zihinden yürüttüğü uzun aritmetikte hata yapabilir. Bu yüzden finansal bir modelde Claude'u hesap makinesi olarak kullanmamalısınız.
 
 **Çözüm:**
 
 - **Ciddi hesaplamalar için Excel, Python veya gerçek bir hesap makinesi kullanın.**
-- Cowork modunda Claude, Python/Bash çalıştırarak hesaplama yapabilir — bu güvenli bir yoldur çünkü hesap makinesi gibi davranır, zihinsel aritmetik yapmaz.
-- Finansal raporda "Claude'un yaptığı bir hesap" yoktur. Rakam sizden, anlatım Claude'dan.
+- Cowork'te Claude, Python/Bash çalıştırarak hesaplama yapabilir, bu güvenli bir yoldur çünkü hesap makinesi gibi davranır, zihinsel aritmetik yapmaz.
+- Finansal raporda rakamlar sizden (veya Excel'den), anlatım Claude'dan gelir.
 
 ### 3. Eğitim Verisi Kesme Tarihi
 
-Claude'un bilgi tabanı belli bir tarihte donar. Bu tarih **bilgi kesim tarihidir (knowledge cutoff)**. Claude 4.x için kesim tarihi yaklaşık **Mayıs 2025** civarıdır.
+Claude'un bilgi tabanı belli bir tarihte donar. Bu tarih **bilgi kesim tarihidir (knowledge cutoff)**. Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) güvenilir bilgi kesimi **Haziran 2026**'dır. Haiku 4.5'te Şubat 2025'tir.
 
-Bundan sonraki olaylar, haberler, yasalar, fiyatlar — Claude bilmez.
+Bundan sonraki olayları, haberleri, yasaları ve fiyatları Claude kendiliğinden bilmez.
 
 **Bu ne anlama geliyor?**
 
 - Bugünün döviz kuru, altın fiyatı, hisse fiyatı: **bilmez**
-- Yeni çıkan KVKK kararları, TTK değişiklikleri (Haziran 2025 sonrası): **bilmez**
+- Yeni çıkan KVKK kararları, TTK değişiklikleri (Haziran 2026 sonrası): **bilmez**
 - Son haftaki piyasa hareketi: **bilmez**
 
 **Çözüm:**
 
-- Güncel bilgi için **Web Search skill'ini** etkinleştirin — Claude bu şekilde internetten arar.
-- Ya da ilgili bilgiyi (haber yazısı, rapor) **kendiniz yapıştırın** — Claude buradan çalışır.
-- Yalnız **"Bu yıl..." sorusunu** sormadan önce Claude'un hangi yılı bildiğini kontrol edin.
+- Güncel bilgi için **web aramasının** açık olduğundan emin olun: Claude bu şekilde internetten arar ([Web Arama](/wiki/araclar/web-arama/)).
+- Ya da ilgili bilgiyi (haber yazısı, rapor) **kendiniz yapıştırın**, Claude buradan çalışır.
+- **"Bu yıl..." diye başlayan sorularda** Claude'un hangi yılı bildiğini kontrol edin.
 
 ### 4. Uzun Konuşmalarda Kalite Düşüşü
 
@@ -72,20 +72,20 @@ Claude'un bağlam penceresi geniştir, ama sonsuz değil. Çok uzun bir sohbet b
 
 - Bir görev uzun sürüyorsa, yeni bir oturum başlatın. Özeti yeni oturuma taşıyın.
 - Cowork'teki Context Compaction özelliği bu sorunu kısmen çözer ama mükemmel değildir.
-- **Pratik kural:** Aynı konuşmada 30+ prompt olduysa ve çıktı kalitesi düşüyorsa — yeni oturum açın.
+- **Pratik kural:** Aynı konuşmada 30+ prompt olduysa ve çıktı kalitesi düşüyorsa, yeni oturum açın.
 
 ### 5. Aynı Prompt, Farklı Cevaplar
 
-Claude **deterministik değildir**. Aynı prompt'u iki kere çalıştırırsanız, iki farklı cevap alabilirsiniz. Bu bir hata değil — dil modellerinin doğal çalışma biçimidir.
+Claude **deterministik değildir**. Aynı prompt'u iki kere çalıştırırsanız, iki farklı cevap alabilirsiniz. Bu bir hata değil, dil modellerinin doğal çalışma biçimidir.
 
 **Çözüm:**
 
 - Kritik içerikte, prompt'u iki kez çalıştırıp çıktıları karşılaştırın. İyi olanı seçin veya iki iyi kısmı birleştirin.
-- Çok önemli bir sözleşme maddesi için iki farklı Claude oturumunda aynı prompt'u deneyin — tutarlılığı görün.
+- Çok önemli bir sözleşme maddesi için iki farklı Claude oturumunda aynı prompt'u deneyin, tutarlılığı görün.
 
 ### 6. Gerçek Zamanlı Veri Yok
 
-Claude'un kendisi internete, veritabanlarınıza veya şirket sistemlerinize **bağlı değildir** — bağlantı (connector) kuruluncaya dek.
+Claude'un kendisi internete, veritabanlarınıza veya şirket sistemlerinize **bağlı değildir**, bağlantı (connector) kuruluncaya dek.
 
 - Kendi CRM'inizdeki müşteri kayıtları: bilmez
 - E-posta kutunuz: bilmez
@@ -94,22 +94,22 @@ Claude'un kendisi internete, veritabanlarınıza veya şirket sistemlerinize **b
 
 **Çözüm:**
 
-- Cowork modunda **connector'ları kurun** — Slack, Drive, Gmail, CRM. Bir kere bağlayın, Claude onlara okur ve yazar.
+- Cowork'te **connector'ları kurun**: Slack, Drive, Gmail, CRM. Resmi dizinde yaklaşık 900 connector bulunur. Bir kere bağlayın, Claude onlara okur ve yazar.
 - Bir bağlantı yoksa ilgili bilgiyi **manuel olarak prompt'a yapıştırın**.
 
 ### 7. Dosya Boyutu Sınırları
 
-Çok büyük dosyalar (500+ sayfalık bir rapor, gigabyte'lık veri setleri) Claude'un bağlam penceresine sığmayabilir.
+Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) bağlam penceresi tüm ücretli planlarda 1M tokendir; yüzlerce sayfalık tek bir rapor rahatça sığar. Haiku 4.5'te 200K'dır. Yine de binlerce sayfalık belge setleri veya gigabyte'lık veri setleri sığmayabilir.
 
 **Çözüm:**
 
-- Büyük belgeleri **parçalara bölün** — bölüm bölüm işleyin.
-- Enterprise plandaki 500K tokenluk bağlam penceresi bu sorunu büyük ölçüde çözer.
-- Çok büyük veri setleri için Claude'dan Python ile parçalı işlem yapmasını isteyin — her seferinde bir bölümünü okur.
+- Büyük belgeleri **parçalara bölün**: bölüm bölüm işleyin.
+- Çok büyük veri setleri için Claude'dan Python ile parçalı işlem yapmasını isteyin, her seferinde bir bölümünü okur.
+- Görsellerde de sınır vardır: claude.ai'de mesaj başına en çok 20 görsel ve görsel başına 10 MB. Claude görselleri yorumlar, görsel üretmez veya düzenlemez.
 
 ### 8. Türkçede İnce Dil Hataları
 
-Claude profesyonel Türkçe yazar — ama mükemmel değildir. Özellikle:
+Claude profesyonel Türkçe yazar, ama mükemmel değildir. Özellikle:
 
 - Resmi yazışmalarda ince ton bozuklukları
 - Devrik cümle tercihleri
@@ -121,7 +121,7 @@ Claude profesyonel Türkçe yazar — ama mükemmel değildir. Özellikle:
 - **Her önemli Türkçe çıktıyı gözden geçirin.** Bu bir kural, istisna değildir.
 - CLAUDE.md dosyanızda Türkçe ton tercihlerinizi net yazın: "Sade, modern, devrik cümle kullanma."
 
-### 9. Sycophancy (Onay Eğilimi — Size Hak Verme)
+### 9. Sycophancy (Onay Eğilimi: Size Hak Verme)
 
 Halüsinasyondan farklı, daha sinsi bir sınır: **Claude bazen doğru olanı değil, sizin duymak istediğinizi söyleme eğilimindedir.** Yapay zeka literatüründe buna **sycophancy** (yağcılık / onay eğilimi) denir.
 
@@ -153,7 +153,7 @@ Claude, Anthropic'in güvenlik politikaları kapsamında bazı talepleri açık�
 - Açıkça yasa dışı faaliyetlerin kolaylaştırılması
 - Gerçek kişileri zararlı biçimde taklit eden içerik
 
-Bunlar bir hata değil — bilinçli tasarım sınırlarıdır. İş kullanımında bu sınırlara rastlamanız çok nadirdir.
+Bunlar bir hata değil, bilinçli tasarım sınırlarıdır. İş kullanımında bu sınırlara rastlamanız çok nadirdir.
 
 ## Claude'un Kurumsal Olarak Yapamayacakları
 
@@ -165,15 +165,15 @@ Başka bir kategori: Claude yapmaya çalışabilir ama **bir iş kullanımında 
 - **İK disiplin süreci yürütmek.** Claude taslak yazabilir. Bir İK profesyoneli ve hukuk ekibi onaylamadan işten çıkarma yapılmaz.
 - **Vergi beyanı doldurmak.** Claude hesaplama yardımı sunabilir. Bir mali müşavir onaylamadan beyan verilmez.
 
-Bu liste asla Claude'un "yapamadığı" değil — **profesyonel sorumluluğun asla yapay zekaya transfer olmadığı** alanları belirler.
+Bu liste Claude'un "yapamadığı" işleri değil, **profesyonel sorumluluğun yapay zekaya devredilemeyeceği** alanları gösterir.
 
 ## Altın Kural
 
 > **Claude yazar. Siz karar verirsiniz. Sorumluluk asla transfer olmaz.**
 
-Bu tek cümleyi unutursanız tüm sınırları unutabilirsiniz.
+Sayfadan tek şey hatırlayacaksanız bu cümle olsun.
 
-Önemli bir şeyde — sözleşme, finansal karar, hukuki görüş, tıbbi tavsiye, İK aksiyonu — Claude ilk taslağı üretir ve doğru soruları sorar. **Nihai kararı** her zaman o mesleğin ehliyetli profesyoneli verir ve sorumluluğu taşır.
+Önemli bir işte (sözleşme, finansal karar, hukuki görüş, tıbbi tavsiye, İK aksiyonu) Claude ilk taslağı üretir ve doğru soruları sorar. **Nihai kararı** her zaman o mesleğin ehliyetli profesyoneli verir ve sorumluluğu taşır.
 
 [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) içindeki **Diligence** (Sorumluluk) boyutu bu kuralın kavramsal adıdır.
 
@@ -193,8 +193,8 @@ Son soru en önemlisidir. Cevap "hayır"sa, geri dönün, iyileştirin, tekrar s
 
 ## İlgili Sayfalar
 
-- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Temel kavram
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Diligence (Sorumluluk) boyutu
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri sınırları ve uyumluluk
-- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — Sınırları zorlayan prompt biçimleri
+- [Claude Nedir?](/wiki/temeller/claude-nedir/): Temel kavram
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Diligence (Sorumluluk) boyutu
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri sınırları ve uyumluluk
+- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/): Sınırları zorlayan prompt biçimleri
 

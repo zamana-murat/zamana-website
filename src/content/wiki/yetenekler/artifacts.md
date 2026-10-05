@@ -1,23 +1,25 @@
 ---
-title: Artifacts — Interaktif ve Canlı Çıktılar
+title: "Artifacts: Interaktif ve Canlı Çıktılar"
 description: "Artifacts, Claude'un ürettiği interaktif HTML sayfaları, kontrol panelleri ve canlı görselleştirmelerdir. Tek seferlik rapor yerine kendini yenileyen uygulama."
 tags:
   - yetenekler
   - artifacts
   - dashboard
   - cowork
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **Artifacts, Claude'un ürettiği kendi kendine yeten, interaktif çıktılardır.** Claude Chat'te sohbet içi önizleme, Cowork'te yan panelde kalıcı sayfa olarak yaşarlar.
 
 Tek bir kere üretilen bir cevabı **dönüp bakabileceğiniz, etkileşim kurabileceğiniz, paylaşabileceğiniz** bir şeye dönüştürürler.
 
+> **Not:** Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor. Aşağıdaki "Chat" ve "Cowork" ayrımını iki ayrı uygulama olarak değil, **iki çalışma biçimi** olarak okuyun: kısa sohbet içi önizleme ve uzun soluklu, kalıcı çalışma. Yayılım durumu için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
+
 ## İki Tip Artifact
 
 ### 1. Claude Chat Artifacts (satır içi)
 
-Sohbetin içinde üretilir ve sohbet penceresinde render edilir. Kopyalayabilir, indirebilir veya iterasyon yapabilirsiniz. Oturumlar arası kalıcı değildir — konuşmada yaşar.
+Sohbetin içinde üretilir ve sohbet penceresinde render edilir. Kopyalayabilir, indirebilir veya iterasyon yapabilirsiniz. Oturumlar arası kalıcı değildir, konuşmada yaşar.
 
 Claude Chat'te üretilebilen artifact tipleri:
 
@@ -32,15 +34,17 @@ Claude Chat'te üretilebilen artifact tipleri:
 
 ### 2. Cowork Live Artifacts (kalıcı)
 
-Cowork'ün yan panelinde saklanır ve **oturumlar arası kalıcıdır**. Asıl güçleri burada: **Live Artifacts** (Nisan 2026'da tanıtıldı) — kullanıcının kurduğu connector'lara bağlanır ve **her açıldığında güncel veriyle tazelenir**.
+Cowork'ün yan panelinde saklanır ve **oturumlar arası kalıcıdır**. Asıl güçleri burada: **Live Artifacts** (20 Nisan 2026'da tanıtıldı), kurduğunuz connector'lara bağlanır ve **her açıldığında güncel veriyle tazelenir**.
 
-Live Artifact, statik bir rapor değildir — **veri kaynağını her açılışta yeniden sorgulayan** bir mini uygulamadır.
+Live Artifact, statik bir rapor değildir. **Veri kaynağını her açılışta yeniden sorgulayan** bir mini uygulamadır.
 
 > **Bir kere inşa edersiniz. Her zaman günceldir.**
 
+**Güncel durum:** 19 Ağustos 2026'dan beri Cowork'teki live artifact biçimi "legacy" sayılıyor. Mevcut olanlar çalışmaya ve kuruluş içinde paylaşılmaya devam eder, ama yerinde düzenlenemez. Bu tarihten sonra oluşturduğunuz artifact'ler standart artifact'tir ve tam düzenlenebilir. Yeni artifact'lerde veri tazeleme davranışı için [Cowork'te artifact kullanımı](https://support.claude.com/en/articles/14729249-use-artifacts-in-claude-cowork) yardım sayfasına bakın. Bu sayfada anlatılan "her açılışta tazelenme" live artifact biçimi içindir.
+
 ## Live Artifacts Neler Yapabilir?
 
-- **Bağlı servislerden gerçek zamanlı veri çeker** — Slack, CRM, Google Drive, proje araçları
+- **Bağlı servislerden gerçek zamanlı veri çeker**: Slack, CRM, Google Drive, proje araçları
 - Her açılışta güncel metrikleri, görev listelerini, pipeline durumunu, ekip güncellemelerini gösterir
 - Etkileşime izin verir: filtreleme, sıralama, kayıt detayına inme, görünüm değiştirme
 - **Haftalık manuel rapor üretimini** daima hazır bir kontrol paneli ile değiştirir
@@ -70,7 +74,7 @@ Satış yöneticisi her Pazartesi pipeline raporu yazıyor. Bunun yerine bir Liv
 - Gecikmiş olanları kırmızıyla vurgular
 - "Bu hafta kapanması muhtemel" listesini ayrı bölümde gösterir
 
-Her Pazartesi açılır — tazelenir — toplantıya girilir. Rapor yazmak yok.
+Her Pazartesi açılır, tazelenir, toplantıya girilir. Rapor yazmak yok.
 
 ### Operasyon KPI Paneli
 
@@ -80,7 +84,7 @@ Operasyon yöneticisi günlük metriklerle çalışıyor. Bir Live Artifact:
 - Hedef karşılaştırmasını renk kodlarıyla gösterir
 - "Bu hafta dikkat gerekenler" bölümünü kural tabanlı üretir
 
-Her sabah açılır — yöneticinin gün planı oradan çıkar.
+Her sabah açılır, yöneticinin gün planı oradan çıkar.
 
 ### Müşteri Hizmetleri Şikayet Tablosu
 
@@ -92,32 +96,23 @@ MH ekibi Slack ve CRM'de dağınık şikayet kayıtlarını tek panelde toplar:
 
 Ekip lideri haftalık toplantıya tek sayfayla gelir.
 
-## Hangi Çalışan Hangisini Tercih Etmeli?
-
-Basit bir kurallar dizisi:
-
-- **Tek sefer bakacak:** Belge (Word, PDF)
-- **Her hafta bakacak:** Artifact
-- **Birisine göndereceksin:** Belge
-- **Sadece sen kullanacaksın ve veriyi güncel isteyeceksin:** Live Artifact
-- **Birden fazla kişi aynı şeye bakacak ve interaktif olmalı:** Live Artifact
-
 ## Pratik Yaklaşım
 
-Çoğu çalışan artifact istemez, **rapor ister**. Çünkü iş dünyasında "rapor" alışkanlığı vardır, "dashboard" değil.
+Çoğu çalışan artifact istemez, **rapor ister**. Çünkü iş dünyasında alışkanlık "rapor"dur, "dashboard" değil.
 
-Claude bir veri üretip çalışan "bunu haftaya yine görmek isteyeceğim" dediğinde, **Live Artifact önerisi devreye girer**. Artifact otomatik tazelenir; belge anında eskir.
+Bir çalışan "bunu haftaya yine görmek isteyeceğim" dediğinde artifact devreye girer. Artifact kendini tazeler, belge ise anında eskir.
 
-Test edebileceğiniz tek soru:
+Kendinize sorabileceğiniz tek soru:
 
-> **"Bu veriye bir hafta sonra yine bakmak isteyecek misin?"**
+> **"Bu veriye bir hafta sonra yine bakmak isteyecek miyim?"**
 
-Cevap "evet"se — artifact. Cevap "hayır"sa — belge. Basit ama hayatı değiştiren bir soru.
+Cevap "evet"se artifact, "hayır"sa belge. Basit ama hayatı değiştiren bir soru.
 
 ## İlgili Sayfalar
 
-- [Skills](/wiki/yetenekler/skills/) — Artifact üreten skill'ler
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Live Artifact'lerin kalıcı yaşadığı yer
-- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Connector'lar Live Artifact'leri besler
-- [Dispatch](/wiki/araclar/dispatch/) — Artifact'leri telefondan tetiklemek
+- [Skills](/wiki/yetenekler/skills/): Artifact üreten skill'ler
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Live Artifact'lerin kalıcı yaşadığı yer
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Connector'lar Live Artifact'leri besler
+- [Dispatch](/wiki/araclar/dispatch/): Artifact'leri telefondan tetiklemek (yeni kullanıcılara kapalı sınırlı beta)
+- [Claude Design](/wiki/yetenekler/claude-design/): Görsel tasarım, sunum ve belge odaklı kardeş yüzey
 

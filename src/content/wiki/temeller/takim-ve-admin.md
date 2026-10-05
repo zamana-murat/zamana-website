@@ -1,75 +1,82 @@
 ---
 title: Takım, Admin Paneli ve Enterprise Plan
-description: Birden çok kullanıcılı şirketler için Claude — Team ve Enterprise plan farkları, admin paneli, kullanıcı yönetimi, merkezi fatura.
+description: Birden çok kullanıcılı şirketler için Claude. Team ve Enterprise plan farkları, admin paneli, kullanıcı yönetimi, merkezi fatura.
 tags:
   - temeller
   - takim
   - admin
   - enterprise
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Bireysel Pro plan tek kişi içindir. Şirkette Claude'u 3, 6, 20 kişi kullanmaya başladığında işler farklılaşır** — fatura merkezileşir, kullanıcı yönetimi, denetim ve veri politikası ortak olur. Bunun için **Team** ve **Enterprise** planları var.
+**Bireysel Pro plan tek kişi içindir. Şirkette Claude'u 3, 6, 20 kişi kullanmaya başladığında işler farklılaşır**: fatura merkezileşir, kullanıcı yönetimi, denetim ve veri politikası ortak olur. Bunun için **Team** ve **Enterprise** planları var.
 
 Bu sayfa Team ve Enterprise farkını, ne zaman geçilmeli ve admin panelinde neler olduğunu anlatır.
 
-## Plan Karşılaştırma — Bireysel mi, Takım mı?
+## Plan Karşılaştırma: Bireysel mi, Takım mı?
 
 [Planlar](/wiki/temeller/planlar/) sayfasında her planın detayı var. Buradaki odak: **şirket olarak hangisini almalı?**
 
 | Özellik | Pro × N kişi (bireysel) | Team | Enterprise |
 |---|---|---|---|
-| Kullanıcı sayısı | 1 / hesap | Min ~5 | Esnek (genelde 50+) |
-| Fatura | Her hesap ayrı | Tek merkezi fatura | Tek merkezi, sözleşmeli |
+| Kullanıcı sayısı | 1 / hesap | Min 2, en çok 150 koltuk | Self-serve min 20 koltuk |
+| Fatura | Her hesap ayrı | Tek merkezi fatura | Tek merkezi, yıllık faturalı |
 | Kullanıcı yönetimi | Yok | Admin paneli | Gelişmiş admin paneli |
-| Veri eğitime kullanılmaz garantisi | Politika geçerli | Politika geçerli | Sözleşmeli |
-| SSO (tek seferlik giriş) | — | Sınırlı | ✅ |
-| SCIM (otomatik kullanıcı sağlama) | — | — | ✅ |
-| Audit log | — | Kısıtlı | ✅ Tam |
-| Saklama politikası özel | — | — | ✅ |
-| Fiyat | $20/kişi/ay | ~$30/kişi/ay (5+ min.) | Sözleşmeli |
-| Onay süresi | Hemen | Hemen | Anthropic ile görüşme |
+| Veri eğitime kullanılmaz garantisi | Hesap ayarına bağlı | Varsayılan olarak kullanılmaz | Varsayılan olarak kullanılmaz, sözleşmeli |
+| SSO (tek seferlik giriş) | Yok | ✅ | ✅ |
+| SCIM / JIT (otomatik kullanıcı sağlama) | Yok | ✅ | ✅ |
+| Harcama tavanı | Yok | ✅ | ✅ |
+| Audit log | Yok | Yok | ✅ Tam |
+| Saklama politikası özel | Yok | Yok | ✅ |
+| Fiyat | $20/kişi/ay | Standard $25/koltuk/ay (yıllıkta $20), Premium $125 (yıllıkta $100) | $20/koltuk/ay (yıllık faturalı) + kullanım API fiyatıyla ayrıca |
+| Onay süresi | Hemen | Hemen | Self-serve veya Anthropic ile görüşme |
+
+Team'de koltuk tipleri karıştırılabilir. Standard koltuk Pro'nun oturum başına kullanımının 1,25 katı, Premium koltuk 6,25 katıdır.
+
+Enterprise'ta koltuk ücreti kullanımı içermez; sohbet, Claude Code ve Cowork'teki her token API fiyatıyla ayrıca faturalanır. Bu yüzden aylık fatura sabit değildir, kullanıma göre değişir. Eski sözleşmelerde koltuk bazlı (standard/premium) Enterprise hâlâ görülebilir.
+
+Fiyatlar vergi hariçtir. Güncel hâli için [claude.com/pricing](https://claude.com/pricing) sayfasına bakın.
 
 ## Ne Zaman Team / Enterprise'a Geçmeli?
 
-**3 kişiden azsa** — Pro hesaplar yeterli olabilir. Tek dezavantaj: fatura tek tek geliyor, finans muhasebeleştirmek için her birini ayrı işliyor.
+**Birkaç kişiyse** bireysel Pro hesaplar yeterli olabilir. Tek dezavantajı, faturaların tek tek gelmesi ve finansın her birini ayrı işlemesidir. Team 2 koltuktan başladığı için ayrım kişi sayısından çok yönetim ihtiyacına bağlıdır.
 
-**3-10 kişi → Team plan** mantıklı:
+**Merkezi yönetim istiyorsanız (2 kişiden itibaren) → Team plan:**
 
 - Tek fatura
 - Admin paneli (kim ne kadar kullanıyor görünür)
-- Yeni başlayan çalışana hızlı kullanıcı ekleme
-- Şirketten ayrılan çalışana hızlı erişim kapatma
+- Yeni çalışana hızlı kullanıcı ekleme
+- Şirketten ayrılan çalışanın erişimini hızlı kapatma
 
-**10+ kişi veya hassas sektör → Enterprise plan** mantıklı:
+**20+ kişi veya hassas sektör → Enterprise plan:**
 
 - Hukuk, finans, sağlık gibi düzenleyici denetime tabi sektörler
-- KVKK çerçevesinde **işleyen sıfatıyla sözleşme** (DPA — Data Processing Agreement) gerektiğinde
-- SSO + audit log gerekli olduğunda
-- Kurum çapında 50+ kullanıcıda yıllık tasarruf ciddileşir
+- Audit log, RBAC ve özel veri saklama gerektiğinde (SSO ve SCIM Team'de de var)
+- Standart DPA'nın ötesinde özel sözleşme şartları gerektiğinde (standart DPA Team'de de var)
+- Kullanım bazlı faturayı yönetecek bütçe disiplini varsa (maliyet sabit değil, kullanımla değişir)
 
 ## Yeni Kullanıcı Plan Önerisi
 
-Claude'a yeni başlayan bir çalışan için **ilk ay Max 5x ($100/ay)** önerilir. Sebep: Pro plandaki günlük limit yeni kullanıcı için yetersiz, çabuk dolar, kişi "Claude çalışmıyor" deyip vazgeçer.
+Claude'a yeni başlayan bir çalışan için **ilk ay Max 5x ($100/ay)** önerilir. Pro'nun limiti yeni kullanıcı için çabuk dolar, kişi "Claude çalışmıyor" deyip vazgeçer. Limitlerin nasıl işlediği için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
 
-İkinci aydan itibaren kullanım gerçek datayla görüldükçe karma plana geçilebilir:
+İkinci aydan itibaren gerçek kullanım görüldükçe karma plana geçilebilir:
 
-- Yoğun kullanıcı (4+ saat/gün) → Max 5x veya Max 20x
-- Orta kullanıcı (1-3 saat/gün) → Pro
-- Hafif kullanıcı (haftada birkaç saat) → Pro
+- Yoğun kullanıcı (günde 4+ saat) → Max 5x veya Max 20x
+- Orta ve hafif kullanıcı (günde 1-3 saat veya daha az) → Pro
 
-Bu politika tek kişilik aboneliklerde de, Team / Enterprise'a geçişte de geçerlidir. [Planlar](/wiki/temeller/planlar/) detay verir.
+Bu politika tek kişilik aboneliklerde de, Team veya Enterprise'a geçişte de geçerlidir. Ayrıntı: [Planlar](/wiki/temeller/planlar/).
 
-## Admin Paneli — Ne Yapar?
+## Admin Paneli: Ne Yapar?
 
-Team ve Enterprise planda **admin** rolü olan kullanıcı, claude.ai → **Admin Console** üzerinden organizasyonu yönetir.
+Team ve Enterprise planda **admin** rolü olan kullanıcı, claude.ai → **Organization settings** (yönetici ayarları) üzerinden organizasyonu yönetir.
 
 ### Kullanıcı Yönetimi
 
 - **Kullanıcı ekleme:** E-posta ile davet → kullanıcı kabul ederse hesabı organizasyona bağlanır
-- **Kullanıcı kaldırma:** Çalışan ayrılınca hesabı pasifleştir; sohbet geçmişine erişimi kesilir
+- **Kullanıcı kaldırma:** Çalışan ayrılınca hesabını pasifleştirin; sohbet geçmişine erişimi kesilir
 - **Rol atama:** Admin / üye
-- **SSO ile entegrasyon (Enterprise):** Çalışan listesinin SAML/SCIM ile otomatik senkron olması
+- **SSO ile entegrasyon (Team ve Enterprise):** Çalışan listesinin SAML/SCIM ile otomatik senkron olması
+- **Harcama tavanı:** Kullanım kredisi ve kullanıma bağlı kalemler için üst sınır koyma
 
 ### Kullanım İzleme
 
@@ -77,41 +84,41 @@ Team ve Enterprise planda **admin** rolü olan kullanıcı, claude.ai → **Admi
 - Toplam mesaj/sorgu hacmi (özet düzeyinde)
 - Hangi özellikler kullanılıyor (Cowork, [Projects](/wiki/araclar/projects/), [Connectors](/wiki/araclar/connectors/))
 
-**Önemli sınır:** Admin **kullanıcıların sohbet içeriğini okuyamaz** (kişisel gizlilik korunur). Sadece kullanım metriklerini görür. Bu, hem yasal hem de Anthropic'in tasarım tercihidir.
+**Önemli sınır:** Admin panelinde varsayılan olarak yalnız kullanım metrikleri görünür. Sohbet, dosya ve proje içeriğine programatik erişim veren Compliance API yalnızca Enterprise'tadır (Team'de yok) ve kapsamı sözleşmeye ile yapılandırmaya bağlıdır. Çalışanlarınıza neyin izlendiğini baştan söyleyin ([Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)).
 
 ### Fatura ve Ödeme
 
 - Tek bir kredi kartı veya kurumsal ödeme aracı
 - Aylık/yıllık invoice tek e-postaya gelir
 - Vergi bilgileri organizasyon adına ([Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasındaki şekilde)
-- Plan değişikliği, kullanıcı ekleme buradan ücretlendirme yansıması anlık görünür
+- Plan değişikliği ve kullanıcı ekleme, ücrete yansımasıyla birlikte buradan anlık görünür
 
 ### Politika Ayarları
 
 Enterprise planda admin şu politikaları organizasyon çapında uygulayabilir:
 
-- **Saklama süresi** — örn. tüm sohbetler 90 gün sonra otomatik silinsin
-- **[Connectors](/wiki/araclar/connectors/) izinleri** — hangi connector kullanılabilir, hangisi yasak
-- **[MCP](/wiki/mcp/nedir/) izinleri** — özel MCP server'lar onaylı listede mi
-- **Sohbet paylaşma izni** — kullanıcılar dışarı public link üretebilsin mi
-- **Eğitim için veri kullanma** — zaten varsayılan olarak kapalı, ama Enterprise sözleşmesiyle pekiştirilir
+- **Saklama süresi**: örn. tüm sohbetler 90 gün sonra otomatik silinsin
+- **[Connectors](/wiki/araclar/connectors/) izinleri**: hangi connector kullanılabilir, hangisi yasak
+- **[MCP](/wiki/mcp/nedir/) izinleri**: özel MCP server'lar onaylı listede mi
+- **Sohbet paylaşma izni**: kullanıcılar dışarı public link üretebilsin mi
+- **Eğitim için veri kullanma**: zaten varsayılan olarak kapalı, ama Enterprise sözleşmesiyle pekiştirilir
 
-## SSO — Tek Seferlik Giriş
+## SSO: Tek Seferlik Giriş
 
-Enterprise planda **SAML 2.0** üzerinden SSO entegrasyonu var. Bu:
+Team ve Enterprise planlarında **SAML 2.0** üzerinden SSO entegrasyonu var. Bu:
 
-- Çalışan kurumsal e-posta + şifresiyle (Azure AD, Okta, Google Workspace) Claude'a girer
+- Çalışan kurumsal e-posta + şifresiyle (Microsoft Entra ID, eski adıyla Azure AD; Okta; Google Workspace) Claude'a girer
 - Ayrı bir Claude şifresi olmaz
 - Çalışan ayrılınca SSO'dan kapatınca Claude erişimi de kapanır
 - IT'nin tek bir noktadan kontrol etmesini sağlar
 
 [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası SSO ve Enterprise IT entegrasyonunu detaylandırır.
 
-## SCIM — Otomatik Kullanıcı Sağlama
+## SCIM: Otomatik Kullanıcı Sağlama
 
-SCIM (System for Cross-domain Identity Management), kurumsal kimlik sistemindeki (Azure AD, Okta) kullanıcı eklenmesi/silinmesi otomatiklerinin Claude'a yansımasını sağlar. Yeni çalışan İK sistemine eklendiğinde otomatik Claude hesabı açılır; ayrılınca otomatik kapanır.
+SCIM (System for Cross-domain Identity Management), kurumsal kimlik sistemindeki (Microsoft Entra ID, Okta) kullanıcı ekleme ve silme işlemlerinin Claude'a otomatik yansımasını sağlar. Yeni çalışan İK sistemine eklendiğinde otomatik Claude hesabı açılır; ayrılınca otomatik kapanır.
 
-Bu, 50+ kişilik organizasyonlarda hayati bir özelliktir.
+Bu, kalabalık organizasyonlarda hayati bir özelliktir. SCIM/JIT hem Team'de hem Enterprise'ta mevcuttur.
 
 ## Audit Log
 
@@ -126,43 +133,45 @@ Bu log düzenli olarak SIEM (kurumsal güvenlik bilgi yönetim sistemi) sistemin
 
 ## Veri İşleme Sözleşmesi (DPA)
 
-Enterprise planda Anthropic ile **Data Processing Agreement (DPA)** imzalanabilir. Bu sözleşme:
+Anthropic'in **Data Processing Agreement (DPA)** belgesi yalnızca ticari ürünlerde (Team, Enterprise, API) geçerlidir ve ticari şartlara otomatik dahildir, ayrıca imza gerekmez. Free, Pro ve Max DPA kapsamı dışındadır. Bu sözleşme:
 
 - Anthropic'in **veri işleyen** sıfatıyla rolünü tanımlar
-- KVKK ve GDPR uyumluluk taahhütlerini içerir
+- Veri koruma ve GDPR çerçevesindeki taahhütleri içerir
 - Olay (incident) bildirim süreçlerini düzenler
-- Veri yerleşim ve silme politikalarını netleştirir
+- Veri saklama ve silme politikalarını netleştirir
 
-Türkiye'deki KVKK kapsamında, **kişisel veri işleyen üçüncü taraf** ile sözleşme yapma yükümlülüğü vardır. DPA bu yükümlülüğün karşılığıdır.
+KVKK'ya göre kişisel veri işleten bir üçüncü tarafla (veri işleyen) sözleşme yapmanız gerekir; DPA bu sözleşmenin yerini tutar. Yurt dışına aktarım için KVKK m.9 kapsamında ayrıca bir dayanak gerekir. DPA'daki standart hükümler Kurul'un Türk standart sözleşmesinin yerine geçmez ([Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)).
 
-[Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfaları bu boyutu derinleştirir.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası bu boyutu derinleştirir.
 
 ## Geçiş Senaryoları
 
-### Senaryo 1 — 6 Bireysel Pro'dan Team'e
+### Senaryo 1: 6 Bireysel Pro'dan Team'e
 
 Şu an 6 kişide Pro hesap var, 6 ayrı fatura geliyor. Geçiş:
 
-1. Admin Console'da Team plan seçin
+1. Organization settings üzerinden Team planı seçin
 2. 6 e-posta adresini davet edin
-3. Çalışanlar mevcut Pro hesaplarını organizasyona bağlasın (sohbet geçmişi korunur)
+3. Çalışanlar daveti kabul eder (kişisel hesabın organizasyona taşınması için aşağıdaki nota bakın)
 4. Eski Pro abonelikleri iptal edilir
 5. Tek fatura akışı başlar
 
-### Senaryo 2 — Team'den Enterprise'a
+**Kişisel hesap Team'e taşındığında ne olur?** Hesap "yerinde yükseltilirse" şunlar taşınır: sohbetler, sohbetlerdeki artifact'ler, projeler (talimat ve dosyalarıyla), yüklenen dosyalar ve Claude hafızası (kuruluş kapatmadıysa). Şunlar taşınmaz: özel skills (geçiş yolu yok), özel connector'lar (yeniden eklenir), yayınlanmış artifact'ler, sohbet paylaşım linkleri (kalıcı olarak kapanır) ve masaüstü oturumları (yerelde kalır). "Kişisel hesabımı ayrı tut" seçilirse eski sohbetler kişisel hesapta kalır. Çalışanlarınızdan skills'lerini ve paylaşım linklerini önceden dışa aktarmalarını isteyin.
 
-20+ kişi olduğunuzda, hassas veri politikası gerektiğinde:
+### Senaryo 2: Team'den Enterprise'a
 
-1. Anthropic Sales ile iletişime geçin
+20+ koltuk olduğunuzda veya audit log, RBAC, özel saklama gibi hassas veri politikası gerektiğinde:
+
+1. Self-serve Enterprise (min 20 koltuk) veya Anthropic Sales ile iletişime geçin
 2. Kullanıcı sayısı, sektör, gereksinimler üzerinden teklif alın
-3. Sözleşme + DPA imzalanır
+3. Enterprise sözleşmesi yapılır (DPA ticari şartlara zaten dahildir)
 4. Mevcut Team hesabı Enterprise'a yükseltilir
 
-### Senaryo 3 — Sıfırdan Enterprise
+### Senaryo 3: Sıfırdan Enterprise
 
-50+ kişilik organizasyonda baştan Enterprise alınır. Pilot grup (5-10 kişi) ile başlayıp 6 ay içinde tüm organizasyona yayma rotası mantıklıdır.
+Büyük organizasyonda ve uyum yükü yüksekse baştan Enterprise alınabilir. Pilot grup (5-10 kişi) ile başlayıp tüm organizasyona yayma rotası mantıklıdır. Pilotu Team ile yapıp sonra Enterprise'a geçmek de mümkündür.
 
-## Kurumsal Onboarding — Pratik Adımlar
+## Kurumsal Onboarding: Pratik Adımlar
 
 Yeni bir çalışan organizasyona katıldığında:
 
@@ -175,11 +184,11 @@ Yeni bir çalışan organizasyona katıldığında:
 
 ## İlgili Sayfalar
 
-- [Planlar](/wiki/temeller/planlar/) — Plan fiyat ve özellik detayı
-- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) — Türkiye'de muhasebe
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika şablonu
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Yasal uyum
-- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — IT açısından kurulum
-- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — DPA ve sözleşmeler
-- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — "Bu yatırım büyük gelir mi" itirazına cevap
+- [Planlar](/wiki/temeller/planlar/): Plan fiyat ve özellik detayı
+- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): Türkiye'de muhasebe
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Politika şablonu
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Yasal uyum
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/): IT açısından kurulum
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/): DPA ve sözleşmeler
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/): "Bu yatırım büyük gelir mi" itirazına cevap
 

@@ -1,17 +1,17 @@
 ---
-title: Prompt İterasyonu — Test, Geliştir, Sürümle
-description: Bir promptu nasıl test eder, kalitesini ölçer, geliştirir ve uzun vadede iyileştirirsin? Sistematik iterasyon metodolojisi.
+title: "Prompt İterasyonu: Test, Geliştir, Sürümle"
+description: Bir promptu nasıl test eder, kalitesini ölçer, geliştirir ve uzun vadede iyileştirirsiniz? Sistematik iterasyon metodolojisi.
 tags:
   - prompting
   - iterasyon
   - test
   - geliştirme
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Bir promptu ilk seferinde mükemmel yazmak nadirdir.** İyi prompt **iterasyonla** olur — yazarsın, test edersin, sorunu görürsün, düzeltirsin, tekrar test edersin. Bu sayfa o döngünün sistematik metodolojisini anlatır.
+**Bir promptu ilk seferinde mükemmel yazmak nadirdir.** İyi prompt **iterasyonla** olur: yazarsınız, test edersiniz, sorunu görürsünüz, düzeltirsiniz, tekrar test edersiniz. Bu sayfa o döngünün sistematik metodolojisini anlatır.
 
-[Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) sayfaları **nasıl yazarsın** sorusuna cevap verir; bu sayfa **yazdıktan sonra ne yaparsın** sorusuna.
+[Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) sayfaları **nasıl yazarsınız** sorusuna cevap verir; bu sayfa **yazdıktan sonra ne yaparsınız** sorusuna.
 
 ## Neden İterasyon?
 
@@ -42,7 +42,7 @@ Promptu ilk yazdığınızda:
 6. Sürümle (CLAUDE.md veya şablon kütüphanesine kaydet)
 ```
 
-## 1. Yaz — Taslak Prompt
+## 1. Yaz: Taslak Prompt
 
 İlk taslak için pratik şablon ([Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) sayfasında daha fazlası):
 
@@ -60,9 +60,9 @@ Kurallar:
 Çıktı: [istediğin yapı]
 ```
 
-Mükemmel olmasına gerek yok — taslak.
+Mükemmel olmasına gerek yok, bu bir taslak.
 
-## 2. Test — 3-5 Örnek Veri
+## 2. Test: 3-5 Örnek Veri
 
 Promptu **gerçek verilerle** test edin. Yapay senaryolar yetmez.
 
@@ -74,9 +74,9 @@ Promptu **gerçek verilerle** test edin. Yapay senaryolar yetmez.
 - **Uzun vaka** (1 örnek) → büyük veri / uzun input
 - **Boş/eksik vaka** (1 örnek) → veri eksikse Claude ne yapar
 
-5 örnek minimum. Aksi halde "şanslı geldim" ile karıştırırsınız.
+En az 3, ideali 5 örnek kullanın. Tek örnekle "şansa iyi çıktı" ile gerçekten iyi promptu birbirinden ayıramazsınız.
 
-## 3. Değerlendir — Üç Boyutlu Skor
+## 3. Değerlendir: Üç Boyutlu Skor
 
 Her test çıktısını üç eksende skorlayın:
 
@@ -98,15 +98,15 @@ Her test çıktısını üç eksende skorlayın:
 
 ### Boyut 3: Kullanılabilirlik
 
-Çıktıyı kopyala-yapıştır kullanabilir misin, yoksa düzeltmen mi gerek?
+Çıktıyı kopyala-yapıştır kullanabilir misiniz, yoksa düzeltmeniz mi gerekir?
 
 - 5: Doğrudan kullanılabilir
 - 3: Küçük düzeltmelerle kullanılır
-- 1: Çoğunu yeniden yazman gerek
+- 1: Çoğunu yeniden yazmanız gerek
 
-**Toplam:** Her test için 3 boyut × 5 örnek = 15 skor. Ortalama 13+ ise prompt hazır. 10 altında ciddi iterasyon gerek.
+**Toplam:** Her test çıktısı en çok 15 puan alır (3 boyut × en çok 5). Test örneklerinin ortalaması 13 ve üzerindeyse prompt hazırdır. Ortalama 10'un altındaysa ciddi iterasyon gerekir.
 
-## 4. Düzelt — Sorun Türüne Göre Çözüm
+## 4. Düzelt: Sorun Türüne Göre Çözüm
 
 Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
@@ -134,24 +134,24 @@ Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
 **Çözüm:** "Maksimum N kelime" katı sınır. "Sadece çıktıyı ver, açıklama yok."
 
-### Sorun: "Halüsinasyon — uydurulmuş veri"
+### Sorun: "Halüsinasyon: uydurulmuş veri"
 
 **Çözüm:** "Sadece verilen veriye dayan, uydurma." "Bilmediğin şey için 'veri yok' yaz." [Sınırlamalar](/wiki/temeller/sinirlamalar/) ve [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) sayfalarına bakın.
 
-## 5. Tekrar Test — Aynı Set
+## 5. Tekrar Test: Aynı Set
 
-Düzeltme sonrası **aynı 5 test setiyle** baştan başlayın. Yeni veri kullanmayın — düzeltmenin işe yarayıp yaramadığını ancak aynı veriyle ölçersiniz.
+Düzeltme sonrası **aynı test setiyle** baştan başlayın. Yeni veri kullanmayın, düzeltmenin işe yarayıp yaramadığını ancak aynı veriyle ölçersiniz.
 
-Skorların 13+'a çıktığında prompt **kabul edilebilir** seviyede.
+Ortalama skor 13+/15'e çıktığında prompt **kabul edilebilir** seviyededir.
 
-## 6. Sürümle — Kalıcı Kayıt
+## 6. Sürümle: Kalıcı Kayıt
 
 Hazır prompta artık **kalıcı bir yer** verin:
 
 ### Seçenek A: CLAUDE.md'ye
 
-Şirket geneli kullanım için: [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/)
-Kişisel için: kendi CLAUDE.md'niz
+- Şirket geneli kullanım için: [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/)
+- Kişisel kullanım için: kendi CLAUDE.md'niz
 
 ```markdown
 ## Şablonlar
@@ -163,11 +163,11 @@ Kişisel için: kendi CLAUDE.md'niz
 
 Notion / Google Drive / paylaşılan dosyada saklayın. Tüm ekibe açık.
 
-[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında nasıl organize edilir var.
+[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında nasıl düzenleneceği anlatılır.
 
 ### Seçenek C: Sürüm Kontrollü Repo
 
-Daha gelişmiş şirketler git üzerinde prompt repository'si tutar:
+Daha olgun şirketler git üzerinde prompt repository'si tutar:
 
 ```
 prompts/
@@ -203,7 +203,7 @@ sahip: Pazarlama Müdürü
 - v1.3 (2025-11-01): Türkçe kayma kuralı netleşti
 ```
 
-## A/B Testi — Ciddi Karar İçin
+## A/B Testi: Ciddi Karar İçin
 
 Önemli bir prompt için iki sürüm karşılaştırın:
 
@@ -214,7 +214,7 @@ sahip: Pazarlama Müdürü
 5. Her veri için "hangi çıktı daha iyi?" → kör değerlendirme (mümkünse başkası yapsın)
 6. Skorca üstün olan kazanır
 
-Bu özellikle [Pazarlama](/wiki/departmanlar/pazarlama/) içerikleri, [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) yanıtları, [Hukuk](/wiki/departmanlar/hukuk/) sözleşme şablonları gibi yüksek hacimli iş için değer.
+Bu özellikle [Pazarlama](/wiki/departmanlar/pazarlama/) içerikleri, [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) yanıtları, [Hukuk](/wiki/departmanlar/hukuk/) sözleşme şablonları gibi yüksek hacimli işlerde değer taşır.
 
 ## Üretim Sonrası Geri Bildirim
 
@@ -232,7 +232,7 @@ Bu geri bildirimi sistematik toplayın:
 
 Sorun çıkan promptlar yeni iterasyon turuna girer.
 
-## Otomasyon — [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) ile
+## Otomasyon: Scheduled Tasks ile
 
 Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu), bunu [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) içine koyun. Prompt sürümü ayrı dosyada tutulur, scheduled task ona referans verir. Promptu güncellediğinizde ertesi hafta yeni sürümle çalışır.
 
@@ -240,15 +240,15 @@ Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu)
 
 Bir prompt çalıştığında sürekli kurcalamayın. **"Tweaking"** üretkenliği öldürür. Hazır olan prompt 3 ay sabit kalsın, sonra ihtiyaca göre revize edin.
 
-## İterasyon Disiplini — Kişisel Sistem
+## İterasyon Disiplini: Kişisel Sistem
 
 Kendi prompt yönetiminizi kurun:
 
-1. **Her yeni prompt'u test edin** — minimum 3 örnekle
-2. **Skor verin** — 5 üzerinden 3 boyutta
-3. **Sürümleyin** — CLAUDE.md veya kişisel notlar
-4. **Aylık gözden geçirin** — hangileri çalışıyor, hangileri iyileştirilmeli
-5. **Çeyreklik temizlik** — kullanılmayanları silin, eskileri güncelleyin
+1. **Her yeni prompt'u test edin**: minimum 3 örnekle
+2. **Skor verin**: 5 üzerinden 3 boyutta
+3. **Sürümleyin**: CLAUDE.md veya kişisel notlar
+4. **Aylık gözden geçirin**: hangileri çalışıyor, hangileri iyileştirilmeli
+5. **Çeyreklik temizlik**: kullanılmayanları silin, eskileri güncelleyin
 
 Bu disiplin uzun vadede **AI okuryazarlığınızı** ciddi şekilde artırır. Bunu kurum çapında uygulamak için [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfasında çerçeve var.
 
@@ -267,14 +267,14 @@ Yeni prompt yazdığınızda kullanın:
 
 ## İlgili Sayfalar
 
-- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Felsefe
-- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) — Türkçe için
-- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) — Hazır şablonlar
-- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Format kontrolü
-- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle güçlendirme
-- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Tipik tuzaklar
-- [İleri Seviye](/wiki/prompting/ileri-seviye/) — Karmaşık iterasyon
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Kalıcı saklama
-- [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) — Genel kalite ölçümü
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/): Genel prompt mantığı
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Felsefe
+- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/): Türkçe için
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/): Hazır şablonlar
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/): Format kontrolü
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle güçlendirme
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Tipik tuzaklar
+- [İleri Seviye](/wiki/prompting/ileri-seviye/): Karmaşık iterasyon
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Kalıcı saklama
+- [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/): Genel kalite ölçümü
 

@@ -1,11 +1,11 @@
 ---
-title: Takım CLAUDE.md — Paylaşılan Kural Seti
+title: "Takım CLAUDE.md: Paylaşılan Kural Seti"
 description: "Şirket veya ekip içinde paylaşılan CLAUDE.md kullanımı. Sürüm yönetimi, kim editler, çakışmalar, onboarding'e dahil etme."
 tags:
   - claude-md
   - takim
   - paylasimli
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **[CLAUDE.md](/wiki/claude-md/nedir/) bireysel başlar, ama şirkette 6 kişi aynı yönergeyi paylaşmak istediğinde takım versiyonu gerekir.** Bu sayfa paylaşılan CLAUDE.md'nin nasıl kurulduğunu, kimin editlediğini, sürüm sorunlarının nasıl yönetildiğini anlatır.
@@ -19,7 +19,7 @@ lastUpdated: "2026-05-06"
 | **Şirket / Takım CLAUDE.md** | Yönetim / İK / takım lideri | Marka voice, KVKK kuralları, yasak kelimeler, müşteri tarzı |
 | **Bireysel CLAUDE.md** | Çalışanın kendisi | Rol, kişisel tercihler, projeler, çalışma saatleri |
 
-Bunlar çelişmemeli. Bireysel, takımı **tamamlar** — değiştirmez. Şirket "asla X yapma" diyorsa, çalışan kendi CLAUDE.md'sinde "ama bazen X yap" diyemez.
+Bunlar çelişmemeli. Bireysel, takımı **tamamlar**, değiştirmez. Şirket "asla X yapma" diyorsa, çalışan kendi CLAUDE.md'sinde "ama bazen X yap" diyemez.
 
 ## Takım CLAUDE.md Ne İçerir?
 
@@ -55,7 +55,7 @@ Claude'un sektörel doğru hizalanması için temel.
 
 ### 6. Yasak Kelimeler / Cümleler
 
-> *"Lider çözümümüz", "yenilikçi yaklaşım", "vizyoner ekip", "pazarın lideri" — bu cümleler kullanılmayacak.*
+> *Şu ifadeler kullanılmayacak: "lider çözümümüz", "yenilikçi yaklaşım", "vizyoner ekip", "pazarın lideri".*
 
 Marka diliyle ilgili keskin sınırlar burada.
 
@@ -90,15 +90,15 @@ Google Drive / OneDrive / SharePoint'te tek bir CLAUDE.md dosyası. Çalışanla
 **Avantaj:** Kolay erişim, yorum sistemi.
 **Dezavantaj:** Format değişikliği (Notion → Markdown) bazen kayıp yaratır.
 
-### Seçenek 4: Anthropic Enterprise Plan'da Organizasyon Düzeyi
+### Seçenek 4: Plan Düzeyinde Merkezi Yönetim
 
-[Enterprise plan](/wiki/temeller/takim-ve-admin/) bazı senaryolarda admin'in tüm kullanıcılara organizasyon-genelinde talimatlar göndermesini destekler. Bu özellik gelişiyor; Anthropic Sales ile konuşulması gerekiyor.
+Team ve [Enterprise plan](/wiki/temeller/takim-ve-admin/) yöneticilere merkezi kontroller sunar (paylaşılan projeler, rol bazlı erişim, skill ve plugin yönetimi gibi). Organizasyon genelinde tek bir talimat metninin tüm kullanıcılara otomatik dağıtılıp dağıtılamayacağı planınıza ve güncel yönetici özelliklerine bağlıdır; bu sayfada bunu garanti etmiyoruz. Kurmadan önce admin panelinden veya Anthropic satış ekibinden teyit edin.
 
 ## Çalışan Bireysel CLAUDE.md ile Birleştirme
 
 Çalışan iki dosyayı birleştirme yaklaşımı seçer:
 
-### A — Tek Bir CLAUDE.md (kopyala + ekle)
+### A: Tek Bir CLAUDE.md (kopyala + ekle)
 
 Şirket CLAUDE.md'sini kopyala, kendi bireysel kısmını altına ekle. Tek dosya, basit.
 
@@ -106,22 +106,22 @@ Google Drive / OneDrive / SharePoint'te tek bir CLAUDE.md dosyası. Çalışanla
 # Şirket Kısmı (kopyalandı, değiştirilmemeli)
 [şirket içeriği]
 
-# Bireysel Kısım — [Çalışan Adı]
+# Bireysel Kısım: [Çalışan Adı]
 [bireysel içerik]
 ```
 
 **Risk:** Şirket güncellendiğinde çalışan kopyasını güncellemez → eskisi kalır.
 
-### B — Project Knowledge'a Şirket, CLAUDE.md'ye Bireysel
+### B: Project Knowledge'a Şirket, CLAUDE.md'ye Bireysel
 
-[Projects](/wiki/araclar/projects/) içinde bir "Şirket Bilgisi" projesi → şirket CLAUDE.md'si project knowledge olarak yüklü. Çalışanın kişisel CLAUDE.md'si ayrı.
+[Projects](/wiki/araclar/projects/) içinde bir "Şirket Bilgisi" projesi açın ve şirket CLAUDE.md'sini project knowledge olarak yükleyin. Çalışanın kişisel CLAUDE.md'si ayrı kalır. (Projects 17 Eylül 2026'da yeniden tasarlandı; mevcut projeler olduğu gibi çalışıyor, yeni yapı kademeli açılıyor. Ayrıntı: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).)
 
 **Avantaj:** Şirket güncellendiğinde tek noktada güncellenir.
 **Dezavantaj:** Çalışan her sohbette doğru proje altında olduğundan emin olmalı.
 
-### C — Cowork / Team Plan'da Otomatik
+### C: Merkezi Dağıtım (planınız destekliyorsa)
 
-[Enterprise plan](/wiki/temeller/takim-ve-admin/) gelişmiş yapılandırmalarında, organizasyon-genelinde talimat ile bireysel CLAUDE.md birleşir, çalışanın hiçbir manuel kopyalama yapmasına gerek kalmaz.
+Yönetici özellikleriniz organizasyon genelinde talimat dağıtımına izin veriyorsa ([Takım ve Admin](/wiki/temeller/takim-ve-admin/)), şirket talimatı ile bireysel CLAUDE.md birlikte kullanılır ve çalışanın elle kopyalama yapmasına gerek kalmaz. Desteklenip desteklenmediğini önce teyit edin; desteklenmiyorsa A veya B'ye dönün.
 
 ## Kim Editler?
 
@@ -170,7 +170,7 @@ Yeni çalışan ilk haftasında:
 2. Şirket CLAUDE.md'sinin son sürümünü alır
 3. Kendi bireysel CLAUDE.md'sini yazar (rolü, alışkanlıkları, projeleri)
 4. İki dosyayı birleştirir
-5. İlk haftada bir [Cowork](/wiki/araclar/cowork-modu/) oturumu — yöneticiyle birlikte CLAUDE.md test edilir, gerekirse iyileştirilir
+5. İlk haftada bir [Cowork](/wiki/araclar/cowork-modu/) oturumu: yöneticiyle birlikte CLAUDE.md test edilir, gerekirse iyileştirilir
 
 [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) sayfası bu süreci genel hatlarıyla anlatır.
 
@@ -178,7 +178,7 @@ Yeni çalışan ilk haftasında:
 
 ### "Şirket CLAUDE.md çok uzun, Claude bunalıyor"
 
-CLAUDE.md çok uzunsa Claude bazı kuralları görmezden gelmeye başlar. **300 kelimeyi geçmesin** kuralı pratiktir. Detaylar yerine **mutlaklar** yazılsın.
+CLAUDE.md çok uzunsa Claude bazı kuralları görmezden gelmeye başlar. **300-500 kelimeyi geçmesin** kuralı pratiktir. Detaylar yerine **mutlaklar** yazılsın.
 
 Detaylı şablonlar [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'nde, Claude'a "şu şablonu kullan" diye hitap ederek çağrılır.
 
@@ -191,13 +191,13 @@ Detaylı şablonlar [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)
 
 ### "Şirket CLAUDE.md'sini kim güncellesin, kimse sahiplenmiyor"
 
-Sahipsiz politika belgeleri 6 ay sonra eskimiş ve etkisizdir. **Bir kişiyi resmi sahibi atayın** — KPI'sının bir kısmı bu olsun.
+Sahipsiz politika belgeleri 6 ay sonra eskimiş ve etkisizdir. **Bir kişiyi resmi sahibi atayın**, KPI'sının bir kısmı bu olsun.
 
 ### "İki çalışan farklı sürüm CLAUDE.md kullanıyor"
 
-Sürüm yönetimi yoksa olur. **Her CLAUDE.md başında sürüm numarası** kuralı, bunu önler.
+Sürüm yönetimi yoksa olur. **Her CLAUDE.md başında sürüm numarası** kuralı bunu önler.
 
-## Mini Şablon — Başlangıç İçin
+## Mini Şablon: Başlangıç İçin
 
 Kısa bir şirket CLAUDE.md taslağı (kullanıma uyarlayın):
 
@@ -237,12 +237,12 @@ sahip: [Pozisyon]
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Bireysel başlangıç
-- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Yazım rehberi
-- [Örnekler](/wiki/claude-md/ornekler/) — Hazır şablonlar
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Rol bazlı şablonlar
-- [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) — CLAUDE.md işe yaramıyorsa
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — CLAUDE.md ile kalıcı bellek farkı
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika belgesiyle uyum
-- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Enterprise plan organizasyon düzeyi
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Bireysel başlangıç
+- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Yazım rehberi
+- [Örnekler](/wiki/claude-md/ornekler/): Hazır şablonlar
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Rol bazlı şablonlar
+- [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/): CLAUDE.md işe yaramıyorsa
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): CLAUDE.md ile kalıcı bellek farkı
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Politika belgesiyle uyum
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Enterprise plan organizasyon düzeyi
 

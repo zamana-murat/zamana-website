@@ -1,16 +1,16 @@
 ---
-title: Departmanlar — 12 İş Alanı İçin Claude Uygulamaları
+title: "Departmanlar: 12 İş Alanı, KOBİ ve 5 Sektör"
 description: Satış, pazarlama, finans, operasyon, İK, hukuk, IT, müşteri hizmetleri, idari işler, liderlik, satınalma ve ihracat için gerçek iş akışları.
 tags:
   - departmanlar
   - giris
   - rol-bazli
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
-Claude her departmanda farklı çalışır. **Aynı araç, farklı rollerde farklı değer üretir** — çünkü iş akışları farklı, çıktılar farklı, hukuki hassasiyetler farklı.
+Claude her departmanda farklı çalışır. **Aynı araç, farklı rollerde farklı değer üretir**, çünkü iş akışları farklı, çıktılar farklı, hukuki hassasiyetler farklı.
 
-Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışlarına dayanan Claude kullanım senaryolarını içerir.
+Bu bölüm 12 departman, küçük işletmeler (KOBİ) ve 5 sektör için hazırlanmış, gerçek iş akışlarına dayanan Claude kullanım senaryolarını içerir: toplam 18 sayfa.
 
 ## 12 Departman
 
@@ -20,7 +20,7 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
     ---
 
-    Teklif, müşteri iletişimi, pipeline analizi, tender yanıtları, anlaşma teşhisi.
+    Teklif, müşteri iletişimi, pipeline analizi, tender yanıtları, anlaşma teşhisi. Salesforce eklentisi dahil.
 
     [→ Satış](/wiki/departmanlar/satis/)
 
@@ -118,25 +118,37 @@ Bu bölüm 12 iş alanı için özel olarak hazırlanmış, gerçek iş akışla
 
 Yukarıdaki 12 departman, ayrı ekiplerin olduğu orta ölçekli şirketler içindir. Ama Türkiye'deki işletmelerin çoğu **tek kişinin bütün şapkaları taktığı** KOBİ'lerdir: satışı da pazarlamayı da muhasebeyi de aynı kişi yürütür. Bu profil için ayrı bir sayfa hazırladık:
 
-- [**Küçük İşletme (KOBİ) için Claude**](/wiki/departmanlar/kobi/) — Pazartesi brifingi, kampanya, ay sonu kapanış, tahsilat takibi. Bir rol değil, tek başına her işi yürüten işletme sahibinin tam iş akışı.
+- [**Küçük İşletme (KOBİ) için Claude**](/wiki/departmanlar/kobi/): Pazartesi brifingi, kampanya, ay sonu kapanış, tahsilat takibi. Bir rol değil, tek başına her işi yürüten işletme sahibinin tam iş akışı.
+
+## Sektöre Özel Sayfalar
+
+Bazı sektörlerin işi departman sınırlarına sığmaz. Bunlar için ayrı sayfalar var:
+
+- [**Perakende ve E-Ticaret**](/wiki/departmanlar/perakende-eticaret/): Ürün içeriği, yorum analizi, marketplace yönetimi
+- [**Turizm ve Otelcilik**](/wiki/departmanlar/turizm-otelcilik/): Çok dilli misafir iletişimi, yorum yönetimi
+- [**Üretim ve İmalat**](/wiki/departmanlar/uretim-imalat/): Vardiya raporları, kalite belgeleri, ISO
+- [**Eğitim ve Akademi**](/wiki/departmanlar/egitim-akademi/): Ders planı, sınav, geri bildirim
+- [**Sağlık**](/wiki/departmanlar/saglik/): Hassas sektör, idari ve eğitsel destek
 
 ## Her Departman Sayfasının İçeriği
 
 Her departman sayfasında tutarlı bir yapı bulacaksınız:
 
-- **Claude'un çözdüğü temel sıkıntılar** — o rolün günlük acıları
-- **Üç bölümlük uygulama rehberi** — iletişim, analiz, dokümantasyon
-- **Prompt Kütüphanesi konuları** — o rol için inşa edilecek promptlar listesi
-- **Kullanılacak Skills ve Connector'lar** — hangi araçlar öncelikli
-- **İş akışı yeniden tasarımı adayları** — otomasyona uygun süreçler
-- **Gerçek örnek** — tipik bir iş akışının anlık uygulaması
-- **İlgili sayfalar** — wiki içinde mantıklı bağlantılar
+- **Claude'un çözdüğü temel sıkıntılar**: o rolün günlük acıları
+- **Bölümlere ayrılmış uygulama rehberi**: iletişim, analiz, dokümantasyon
+- **Prompt Kütüphanesi konuları**: o rol için inşa edilecek promptlar listesi
+- **Kullanılacak Skills ve Connector'lar**: hangi araçlar öncelikli
+- **İş akışı yeniden tasarımı adayları**: otomasyona uygun süreçler
+- **Gerçek örnek**: tipik bir iş akışının adım adım uygulaması
+- **İlgili sayfalar**: wiki içinde mantıklı bağlantılar
+
+KOBİ ve sektör sayfaları aynı mantığı izler, ama bölümleri o işe göre düzenlenmiştir.
 
 ## Ana Fikir
 
 Bu bölümün özeti tek cümleye indirgenirse:
 
-> **Aynı Claude, farklı roller için farklı iş akışları kurar. Her çalışanın kendi rolüne uygun bir uygulama kurması bu bölümde önerilen yaklaşımdır.**
+> **Aynı Claude, farklı roller için farklı iş akışları kurar. Her çalışanın kendi işine uygun bir uygulama kurması bu bölümde önerilen yaklaşımdır.**
 
 Bu 12 departman Türkiye'deki orta ölçekli şirketlerin fonksiyonel yapısına karşılık gelir. Sizin şirketinizde bazıları birleştirilmiş olabilir (örneğin satınalma + operasyon tek kişide) ya da bazıları yoktur (örneğin şirket içi hukuk yerine dış danışman). Önerilen yaklaşım **çalışanın rolüne göre** değil, **yaptığı işe göre** uyarlanır.
 
@@ -144,7 +156,7 @@ Bu 12 departman Türkiye'deki orta ölçekli şirketlerin fonksiyonel yapısına
 
 **Kendi rolünüze en yakın sayfa(lar)dan başlayın.** Birden fazla departmanda çalışıyorsanız, en çok zaman harcadığınız alana öncelik verin.
 
-Her sayfa ~1500-2500 kelime. 15-25 dakikada bir sayfa okunur. Tamamı için 3-6 saat — ama **kendi rolünüzle sınırlarsanız** 30 dakika yeter.
+Bir sayfa genellikle 15-25 dakikada okunur. Hepsini okumak saatler alır, ama **kendi rolünüzle sınırlarsanız** 30 dakika yeter.
 
 ## Pratik Adaptasyon Yolu
 
@@ -161,8 +173,9 @@ Bu yaklaşım her departman sayfasının başlangıç noktası niteliğindedir.
 
 Departmanınızı tanıdıysanız:
 
-- [**CLAUDE.md Örnekleri**](/wiki/claude-md/ornekler/) — Rolünüze uygun hazır CLAUDE.md
-- [**Prompting**](/wiki/prompting/) — Kaliteli prompt yazma
-- [**Yetenekler**](/wiki/yetenekler/) — Skills, Artifacts, Computer Use
-- [**MCP Bağlantı Listesi**](/wiki/mcp/baglanti-listesi/) — Rolünüze göre connector'lar
+- [**CLAUDE.md Örnekleri**](/wiki/claude-md/ornekler/): Rolünüze uygun hazır CLAUDE.md
+- [**Prompting**](/wiki/prompting/): Kaliteli prompt yazma
+- [**Yetenekler**](/wiki/yetenekler/): Skills, Artifacts, Computer Use
+- [**Haberler**](/haberler/): Satış, küçük işletme ve Office eklentileri gibi güncel gelişmeler
+- [**MCP Bağlantı Listesi**](/wiki/mcp/baglanti-listesi/): Rolünüze göre connector'lar
 

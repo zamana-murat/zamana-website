@@ -1,5 +1,5 @@
 ---
-title: Dosya İşleme — Claude Hangi Dosyaları Okur ve Üretir?
+title: "Dosya İşleme: Claude Hangi Dosyaları Okur ve Üretir?"
 description: Claude hangi dosya tiplerini okur, hangilerini oluşturur, bilgisayarınızdaki workspace klasörüyle nasıl çalışır. PDF, Word, Excel, görsel, kod dosyaları.
 tags:
   - yetenekler
@@ -7,12 +7,12 @@ tags:
   - workspace
   - pdf
   - excel
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Claude, metin tabanlı bir araç olmanın çok ötesinde **dosyalarla çalışan bir sistemdir**. Bir PDF okur, bir Excel tablosu oluşturur, bir Word raporu düzenler, bir görsel analiz eder — hepsi aynı oturumda.
+Claude, metin tabanlı bir araç olmanın çok ötesinde **dosyalarla çalışan bir sistemdir**. Bir PDF okur, bir Excel tablosu oluşturur, bir Word raporu düzenler, bir görsel analiz eder; hepsi aynı oturumda.
 
-Bu sayfa hangi dosya tiplerini **okuduğunu**, hangilerini **ürettiğini**, ve dosyaların fiziksel olarak nerede yaşadığını anlatır.
+Bu sayfa hangi dosya tiplerini **okuduğunu**, hangilerini **ürettiğini** ve dosyaların fiziksel olarak nerede yaşadığını anlatır.
 
 ## Claude Hangi Dosyaları Okur?
 
@@ -20,19 +20,19 @@ Claude içeriklerini analiz edip üzerinde çalışabildiği dosya tipleri:
 
 ### Metin ve Belge Dosyaları
 
-- **`.txt`, `.md`** — düz metin ve Markdown
-- **`.pdf`** — PDF içeriği çıkarır ve okur (metin, tablolar, zaman zaman görseller)
-- **`.csv`** — tabular veriyi okur ve analiz eder
-- **`.docx`** — Word belgelerini okur (biçimleme, başlıklar, tablolar dahil)
-- **`.xlsx`** — Excel tablolarını okur (tüm sayfalar, formüller, değerler)
-- **`.pptx`** — PowerPoint sunumlarını okur (slaytlar, notlar, içerik)
-- **`.html`** — HTML dosyalarını okur
+- **`.txt`, `.md`:** düz metin ve Markdown
+- **`.pdf`:** PDF içeriği çıkarır ve okur (metin, tablolar, zaman zaman görseller). claude.ai'de PDF en çok 1000 sayfa olabilir; 100 sayfaya kadar metinle birlikte grafikler ve tablolar da okunur, bundan sonraki sayfalarda yalnız metin okunur. Sohbet başına en çok 20 dosya yüklenir
+- **`.csv`:** tablo biçimli veriyi okur ve analiz eder
+- **`.docx`:** Word belgelerini okur (biçimleme, başlıklar, tablolar dahil)
+- **`.xlsx`:** Excel tablolarını okur (tüm sayfalar, formüller, değerler)
+- **`.pptx`:** PowerPoint sunumlarını okur (slaytlar, notlar, içerik)
+- **`.html`:** HTML dosyalarını okur
 
 ### Görseller
 
 - **`.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`**
 
-Claude görselleri **görür** — sadece metin çıkarmaz, içeriği anlar. Bir grafiği analiz eder, bir ekran görüntüsünden veri okur, bir ürün fotoğrafını tarif eder. Detay için [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) sayfasına bakın.
+Claude görselleri **görür**: yalnızca metin çıkarmaz, içeriği anlar. Bir grafiği analiz eder, bir ekran görüntüsünden veri okur, bir ürün fotoğrafını tarif eder. claude.ai'de mesaj başına en çok 20 görsel yüklenir, görsel başına sınır 10 MB'tır. Detay için [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) sayfasına bakın.
 
 ### Kod Dosyaları
 
@@ -42,7 +42,7 @@ Claude görselleri **görür** — sadece metin çıkarmaz, içeriği anlar. Bir
 
 ## Claude Hangi Dosyaları Üretir?
 
-Cowork modunda Claude yeni dosyalar oluşturabilir. Üretim için skill'ler devreye girer:
+Cowork'te Claude yeni dosyalar oluşturabilir. Üretim için skill'ler devreye girer:
 
 | Format | Skill | Tipik Kullanım |
 |---|---|---|
@@ -55,9 +55,9 @@ Cowork modunda Claude yeni dosyalar oluşturabilir. Üretim için skill'ler devr
 | **`.py`, `.js`** | (skill yok, doğrudan) | Script, otomasyon kodu |
 | **`.png`, `.svg`** | `canvas-design` | Görsel tasarım, logo, diyagram |
 
-**Önemli:** Siz skill çağırmak zorunda değilsiniz. "Bir Word raporu oluştur" dediğinizde Claude `docx` skill'ini otomatik devreye alır. Manuel `/docx` çağırdığınızda aynı sonuç — ama Claude'a niyeti önceden bildirmiş olursunuz ve bazı edge case'lerde fark yaratır.
+**Önemli:** Siz skill çağırmak zorunda değilsiniz. "Bir Word raporu oluştur" dediğinizde Claude `docx` skill'ini otomatik devreye alır. `/docx` yazarak elle çağırırsanız sonuç aynıdır, ama Claude'a niyetinizi baştan bildirmiş olursunuz; bu bazen daha tutarlı çıktı verir.
 
-## Workspace Klasörü — Dosyaların Fiziksel Evi
+## Workspace Klasörü: Dosyaların Fiziksel Evi
 
 Claude'un **oluşturduğu her dosya**, [Cowork](/wiki/araclar/cowork-modu/)'e bağladığınız **workspace klasörünüze** kaydedilir. Bu klasör bilgisayarınızda gerçek bir klasördür:
 
@@ -74,13 +74,13 @@ C:\ClaudeWorkspace\
 └── arsiv\
 ```
 
-Claude bir dosya ürettiğinde size **`computer://` bağlantısı** verir — bir tıkla dosya açılır.
+Claude bir dosya ürettiğinde size **`computer://` bağlantısı** verir, bir tıkla dosya açılır.
 
 Bu klasör:
 
-- **Kalıcıdır** — oturum bittikten sonra dosyalar orada kalır
-- **Sizindir** — bilgisayarınızda, size ait, yedeklenebilir
-- **İzlenebilirdir** — Windows Explorer veya macOS Finder'dan normal bir klasör gibi yönetilir
+- **Kalıcıdır**: oturum bittikten sonra dosyalar orada kalır
+- **Sizindir**: bilgisayarınızda, size ait, yedeklenebilir
+- **İzlenebilirdir**: Windows Explorer veya macOS Finder'dan normal bir klasör gibi yönetilir
 
 ## Working Directory vs Workspace Klasörü
 
@@ -91,14 +91,14 @@ Bu iki kavramı karıştırmak kolay:
 | **Working directory** | Claude'un geçici çalışma alanı | Oturumlar arası temizlenir |
 | **Workspace klasörü (mnt/)** | Sizin kalıcı teslimat klasörünüz | Her zaman kalıcı |
 
-**Saklanmasını istediğiniz her şey** workspace klasöründe olmalıdır. Working directory Claude'un scratch paper'ıdır.
+**Saklanmasını istediğiniz her şey** workspace klasöründe olmalıdır. Working directory, Claude'un karalama kâğıdıdır.
 
 ## Dosya Boyutu Sınırları
 
-- Çok büyük dosyalar (500+ sayfalık PDF, gigabyte'lık veri setleri) bağlam penceresine sığmayabilir
-- Büyük dosyaları **parçalara bölün** — bölüm bölüm işletin
-- [Enterprise planında 500K token bağlam](/wiki/temeller/planlar/) bu kısıtı büyük ölçüde gevşetir
-- Çok büyük veri için Python ile parçalı işlem: Claude scripte gider, her seferinde bir bölüm okur
+- Çok büyük dosyalar (1.000 sayfayı aşan raporlar, gigabyte'lık veri setleri) bağlam penceresine sığmayabilir. 200K bağlamlı Claude Haiku 4.5 ile yüzlerce sayfalık belgelerde de aynı sorun çıkar
+- Büyük dosyaları **parçalara bölün**: bölüm bölüm işletin
+- Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) [1M token bağlam](/wiki/temeller/modeller/) bu kısıtı büyük ölçüde gevşetir
+- Çok büyük veri için Claude bir Python betiği yazıp dosyayı her seferinde bir bölüm okuyarak işleyebilir
 
 ## İyi Çalışma Alışkanlıkları
 
@@ -109,18 +109,18 @@ Bu iki kavramı karıştırmak kolay:
 
 ## Gizlilik Notu
 
-Workspace klasöründeki dosyalar fiziksel olarak **sizin bilgisayarınızdadır** — Anthropic sunucularında değil. Cowork oturumunda Claude bu dosyaları işlerken içerik Anthropic'e geçer (işleme için), ama:
+Workspace klasöründeki dosyalar fiziksel olarak **sizin bilgisayarınızdadır**, Anthropic sunucularında değil. Cowork oturumunda Claude bu dosyaları işlerken içerik Anthropic'e geçer (işleme için), ama:
 
 - **Team ve Enterprise planlarında** varsayılan olarak eğitim için kullanılmaz
-- **Pro planında** opt-in ayarıyla kontrol edilir
+- **Free, Pro ve Max planlarında** tüketici gizlilik ayarına bağlıdır, hesabınızda kontrol edin
 
 Detay için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## İlgili Sayfalar
 
-- [Skills](/wiki/yetenekler/skills/) — Dosya üreten skill'ler (`docx`, `xlsx`, `pptx`, `pdf`)
-- [Artifacts](/wiki/yetenekler/artifacts/) — Dosya olmayan canlı çıktılar
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Workspace klasörünün yaşadığı ortam
-- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) — Görsel dosyalarla çalışmak
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Dosya gizliliği ve veri işleme
+- [Skills](/wiki/yetenekler/skills/): Dosya üreten skill'ler (`docx`, `xlsx`, `pptx`, `pdf`)
+- [Artifacts](/wiki/yetenekler/artifacts/): Dosya olmayan canlı çıktılar
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Workspace klasörünün yaşadığı ortam
+- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/): Görsel dosyalarla çalışmak
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Dosya gizliliği ve veri işleme
 

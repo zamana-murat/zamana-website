@@ -1,11 +1,11 @@
 ---
-title: "Connectors — Claude'u İş Sistemlerinize Bağlama"
-description: "Gmail, Drive, Calendar, Notion, Slack ve daha fazlası — Claude'u günlük araçlarınıza connector ile bağlama. Kurumsal kullanımda ne kadar değer üretir?"
+title: "Connectors: Claude'u İş Sistemlerinize Bağlama"
+description: "Gmail, Drive, Calendar, Notion, Slack ve daha fazlası, Claude'u günlük araçlarınıza connector ile bağlama. Kurumsal kullanımda ne kadar değer üretir?"
 tags:
   - araclar
   - connectors
   - entegrasyon
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **Connector'lar, Claude'u Gmail, Google Drive, Calendar, Notion, GitHub gibi iş sistemlerinize tek tıkla bağlayan resmi entegrasyonlardır.** Kuruluşunuzda bu sistemleri zaten kullanıyorsanız, Claude'u onlarla konuşur hâle getirmek için kod yazmanıza, kurulum yapmanıza gerek yok.
@@ -14,7 +14,7 @@ Bu sayfa connector'ların ne olduğunu, [MCP](/wiki/mcp/nedir/)'den ne farkı ol
 
 ## Connector Nedir?
 
-Connector, Claude'un sizin onayınızla belirli bir dış servise (Gmail, Drive, vb.) erişip orada okuma — bazı durumlarda yazma — işlemleri yapmasını sağlayan **Anthropic onaylı, hazır bir köprüdür**.
+Connector, Claude'un sizin onayınızla belirli bir dış servise (Gmail, Drive, vb.) erişip orada okuma ve bazı durumlarda yazma işlemleri yapmasını sağlayan **Anthropic onaylı, hazır bir köprüdür**.
 
 Mantığı şu: bir defa OAuth ile bağlarsınız (Google'a giriş yapar gibi), Claude o servise sizin yetkinizle erişir. Her sohbette tekrar giriş yapmanız gerekmez. Bağlantıyı istediğiniz zaman koparırsınız.
 
@@ -22,26 +22,26 @@ Mantığı şu: bir defa OAuth ile bağlarsınız (Google'a giriş yapar gibi), 
 
 | | Connector | MCP |
 |---|---|---|
-| Kim sağlıyor? | Anthropic | Açık ekosistem |
+| Kim sağlıyor? | Anthropic'in onayladığı resmi dizin | Açık ekosistem |
 | Kurulum | Tek tık (OAuth) | Manuel yapılandırma |
-| Güvenlik denetimi | Anthropic tarafından | Sizin sorumluluğunuzda |
-| Kapsam | Popüler iş servisleri | Sınırsız (her servis) |
-| Kullanım yeri | claude.ai | claude.ai + [Claude Desktop](/wiki/araclar/claude-desktop/) |
+| Güvenlik denetimi | Anthropic onay sürecinden geçer | Sizin sorumluluğunuzda |
+| Kapsam | Resmi dizinde yaklaşık 900 connector | Sınırsız (her servis) |
+| Kullanım yeri | claude.ai, [Claude Desktop](/wiki/araclar/claude-desktop/) ve [Cowork](/wiki/araclar/cowork-modu/) (web ve mobil dahil) | Ağırlıklı [Claude Desktop](/wiki/araclar/claude-desktop/) ve Claude Code |
 
-Kısaca: **connector "kapı açık, gir" — MCP "kendi kapını yap, gir."** Çoğu iş profesyoneli için connector yeterli; özel iç sistemleriniz varsa MCP gerekir.
+Kısaca: **connector "kapı açık, gir", MCP "kendi kapını yap, gir."** Çoğu iş profesyoneli için connector yeterli; özel iç sistemleriniz varsa MCP gerekir.
 
 ## Hangi Connector'lar Var?
 
-Liste sürekli genişliyor; en güncel hâli için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın. Yaygın olanlar:
+Resmi dizin (claude.com/connectors) Ekim 2026 itibarıyla yaklaşık 900 connector listeliyor ve sürekli genişliyor. Güncel seçki için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın. Yaygın olanlar:
 
-- **Google Drive / Docs / Sheets** — dosya okuma, içerik özetleme, çapraz arama
-- **Gmail** — e-posta okuma, taslak hazırlama (gönderim çoğu plan kuralında onaylı)
-- **Google Calendar** — toplantı listeleme, takvim analizi, brief üretme
-- **Notion** — sayfa okuma, veritabanı sorgulama
-- **GitHub** — repo, issue, PR okuma
-- **Slack** — kanal mesajları, DM özetleme (kurumsal Slack'lerde admin onayı gerekebilir)
-- **Asana / Jira / Linear** — proje yönetimi araçlarında görev sorgulama
-- **Microsoft 365 (OneDrive, Outlook, Calendar)** — Microsoft ekosistemi için karşılığı
+- **Google Drive / Docs / Sheets**: dosya okuma, içerik özetleme, çapraz arama
+- **Gmail**: e-posta okuma, taslak hazırlama (gönderim çoğu plan kuralında onaylı)
+- **Google Calendar**: toplantı listeleme, takvim analizi, brief üretme
+- **Notion**: sayfa okuma, veritabanı sorgulama
+- **GitHub**: repo, issue, PR okuma
+- **Slack**: kanal mesajları, DM özetleme (kurumsal Slack'lerde admin onayı gerekebilir)
+- **Asana / Jira / Linear**: proje yönetimi araçlarında görev sorgulama
+- **Microsoft 365 (SharePoint, OneDrive, Outlook, Teams)**: Microsoft ekosistemi için karşılığı. Tüm planlarda var. Teams sohbet ve kanal mesajlarında arama yapar; yazma araçlarıyla e-posta, takvim, dosya ve **Teams mesajı gönderme** de mümkündür (yönetici bu araçları tek tek açıp kapatabilir). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir.
 
 ## Pratik Kullanım Senaryoları
 
@@ -63,7 +63,7 @@ Liste sürekli genişliyor; en güncel hâli için [Bağlantı Listesi](/wiki/mc
 
 ### Proje Sağlık Raporu
 
-[Linear / Asana] connector'u: *"Q1 ürün hedefleri projesindeki açık görevleri, kim üzerinde, ne kadar gecikme var — özetle."*
+[Linear / Asana] connector'u: *"Q1 ürün hedefleri projesindeki açık görevleri, kim üzerinde, ne kadar gecikme var, özetle."*
 
 ## Sınırlamalar
 
@@ -93,7 +93,7 @@ Bağlantıyı koparmak: aynı menüden **Disconnect**. O servise erişim derhâl
 
 ## Plan Kapsamı
 
-Connector'ların büyük kısmı tüm planlarda mevcut. Bazı kurumsal connector'lar (örn. Salesforce, ServiceNow) **Team / Enterprise** planları gerektirebilir. Detay için [Planlar](/wiki/temeller/planlar/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfaları.
+Connector'lar Free dahil tüm planlarda kullanılabilir. Team ve Enterprise'ta ise bazı connector'ları önce yönetici etkinleştirir, bazıları yönetici onayı veya üst plan gerektirebilir. Detay için [Planlar](/wiki/temeller/planlar/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfaları.
 
 ## Connector mu, MCP mi?
 
@@ -113,14 +113,15 @@ Karar için basit kural:
 
 **Düzenli denetim.** Üç ayda bir kullanılmayan connector'ları koparın. Bu hem güvenlik, hem zihinsel temizlik.
 
-**[Şirket içi politikanız](/wiki/temeller/sirket-ici-politika/) olsun.** Hangi çalışan hangi connector'u kullanabilir, hassas veri içeren servisler kapsam dışı mı — bunu yazıya dökün.
+**[Şirket içi politikanız](/wiki/temeller/sirket-ici-politika/) olsun.** Hangi çalışan hangi connector'u kullanabilir, hassas veri içeren servisler kapsam dışı mı, bunu yazıya dökün.
 
 ## İlgili Sayfalar
 
-- [MCP Nedir?](/wiki/mcp/nedir/) — Connector'un kuzeni, daha geniş ekosistem
-- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Güncel connector ve MCP listesi
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Connector'lar Cowork ile birlikte güç katar
-- [Slack & Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/) — Mesajlaşma platformlarına özel
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Hangi connector kim için açık olmalı
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri akışı
+- [MCP Nedir?](/wiki/mcp/nedir/): Connector'un kuzeni, daha geniş ekosistem
+- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Güncel connector ve MCP listesi
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Connector'lar Cowork ile birlikte güç katar
+- [Slack & Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/): Mesajlaşma platformlarına özel
+- [Claude Tag kişisel connector'ları kullanabiliyor](/haberler/2026-09-24-claude-tag-kisisel-baglayicilar/): Slack'te kişisel connector kullanımı
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Hangi connector kim için açık olmalı
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri akışı
 

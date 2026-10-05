@@ -1,31 +1,33 @@
 ---
-title: "Memory — Claude'un Kalıcı Belleği"
+title: "Memory: Claude'un Kalıcı Belleği"
 description: "Claude'un sohbetler arası hatırladığı bilgi sistemi. CLAUDE.md ile farkı, ne tür bilgiyi saklar, ne saklamaz, KVKK boyutu."
 tags:
   - yetenekler
   - memory
   - bellek
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
 **Claude'un sohbetler arası bilgiyi hatırladığı bir bellek katmanı vardır.** Sizin kim olduğunuzu, neyle uğraştığınızı, tercihlerinizi otomatik biriktirir; sonraki sohbetlerde bu bilgileri kullanır. Bu sayfa nasıl çalıştığını, [CLAUDE.md](/wiki/claude-md/nedir/) ile farkını ve kontrol mekanizmalarını anlatır.
 
 ## Memory Nedir?
 
-Memory, Claude'un **otomatik öğrenip hatırladığı** kalıcı bilgi sistemidir. Sohbet içinde bir şey söylediğinizde — "ben pazarlama müdürüyüm", "en sık LinkedIn için yazıyorum", "şirketim X" — Claude bunu memory'e kaydeder. Sonraki sohbette tekrar söylemenize gerek kalmaz.
+Memory, Claude'un **otomatik öğrenip hatırladığı** kalıcı bilgi sistemidir. Sohbet içinde bir şey söylediğinizde ("ben pazarlama müdürüyüm", "en sık LinkedIn için yazıyorum", "şirketim X") Claude bunu memory'e kaydeder. Sonraki sohbette tekrar söylemenize gerek kalmaz.
 
 Pratik karşılığı: bir asistan üç ay sizinle çalıştıktan sonra rolünüzü, projenizi, tercihlerinizi bilir. Memory bunu kuran mekanizmadır.
 
-**Önemli kapsam:** Memory **yalnızca [Claude Chat](/wiki/araclar/claude-chat/)'te** çalışır. [Cowork modu](/wiki/araclar/cowork-modu/) ve [Projects](/wiki/araclar/projects/) için **farklı mekanizmalar** vardır:
+**Güncel kapsam:** Hafıza **25 Ağustos 2026'dan beri sohbet ve [Cowork](/wiki/araclar/cowork-modu/) arasında ortaktır**: birinde öğrendiğini diğerinde de kullanır. Hafıza 10 Temmuz 2026'da yeniden tasarlandı ve artık **kategorili girdiler** halinde tutuluyor.
 
-- **Cowork modu:** Her oturum [CLAUDE.md](/wiki/claude-md/nedir/) ile bağlam kurar; oturum dışı kalıcı bellek yoktur
-- **Projects:** Her projenin kendi project knowledge ve özel talimatları (proje-spesifik bağlam) vardır; Memory'den ayrı çalışır
+İki ilgili mekanizma hafızadan ayrı çalışır:
 
-Bu sayfa Claude Chat memory'sini odak alır.
+- **CLAUDE.md:** Sizin yazdığınız açık talimattır; hafızanın yerine geçmez, yanında çalışır. [CLAUDE.md](/wiki/claude-md/nedir/) sayfasında ayrıntı var.
+- **Projects:** Her projenin kendi project knowledge ve özel talimatları vardır. Ayrıntı için [Projects](/wiki/araclar/projects/) sayfasına bakın.
+
+Bu sayfa kişisel hafızayı anlatır.
 
 ## CLAUDE.md ile Farkı
 
-İki sistem birbirinin alternatifi değil — birlikte çalışır. Ama farklı amaçlara hizmet eder.
+İki sistem birbirinin alternatifi değil, birlikte çalışır. Ama farklı amaçlara hizmet eder.
 
 | | CLAUDE.md | Memory |
 |---|---|---|
@@ -53,7 +55,7 @@ Memory tipik olarak şunları biriktirir:
 
 Saklamadıkları:
 
-- Sohbetin tüm metni (sohbet geçmişi ayrı sistemdir — [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/))
+- Sohbetin tüm metni (sohbet geçmişi ayrı sistemdir, [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/))
 - Hassas kişisel veri (Claude bunu memory'e koymama eğilimindedir)
 - Gizli olduğunu söylediğiniz bilgi
 
@@ -61,8 +63,8 @@ Saklamadıkları:
 
 Memory'i görmek ve yönetmek için:
 
-1. Claude.ai → **Settings → Capabilities → "Generate memory from chat history"** seçeneği
-2. Aynı bölümde Claude'un sizinle ilgili tuttuğu kayıtlar listelenir
+1. Claude.ai → **Settings → Memory**; ayarın adı **"Generate memory from chats"**
+2. Aynı bölümde Claude'un sizinle ilgili tuttuğu kayıtlar (konu başlıkları altında, "Topics") listelenir
 3. Her madde için **Düzenle** veya **Sil** seçeneği vardır
 4. Tümünü tek seferde silmek için "Clear all memory" seçeneği
 
@@ -76,10 +78,10 @@ Memory'i görmek ve yönetmek için:
 
 Memory'in **açık veya kapalı** olması ayarlanabilir bir tercih:
 
-- **Açık (varsayılan):** Claude öğrenip biriktirir
-- **Kapalı:** Her sohbet baştan başlar, hiçbir bilgi taşınmaz
+- **Açık (Free, Pro, Max'te varsayılan):** Claude öğrenip biriktirir
+- **Kapalı (Team ve Enterprise'ta varsayılan):** Her sohbet baştan başlar, hiçbir bilgi taşınmaz
 
-**Settings → Capabilities → "Generate memory from chat history"** seçeneği üzerinden açıp kapatılabilir.
+Yeni bir ekip hesabında hafızanın çalışmadığını görürseniz sebep bu olabilir. Aynı **"Generate memory from chats"** ayarıyla açıp kapatılır; Team ve Enterprise'ta kontrol kuruluş sahibindedir ve yönetici açar.
 
 **Ne zaman kapatmalı?**
 
@@ -93,22 +95,22 @@ Tek sefer geçici sohbet için: bazı sürümlerde **Temporary Chat / Geçici So
 
 Detay için [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) sayfası.
 
-## Şirket Kullanımı — Memory Politikası
+## Şirket Kullanımı: Memory Politikası
 
 Kurumsal bağlamda memory, **çalışanın kişisel asistanı** gibi davranır. Şirket politikasında dikkat:
 
 - **Kişisel hesap vs. Şirket hesabı:** Memory sadece o hesaba bağlıdır. Çalışan ayrılınca o memory de gider.
 - **Hassas veri:** Memory'e müşteri özel bilgisi düşmemeli. [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfasında bu konu işleniyor.
-- **Enterprise plan:** Bazı kurumsal yapılandırmalarda admin memory politikasını organizasyon çapında düzenleyebilir. [Takım ve Admin](/wiki/temeller/takim-ve-admin/) detay verir.
+- **Team ve Enterprise:** Hafızanın açılışını ve politikasını admin belirler. [Takım ve Admin](/wiki/temeller/takim-ve-admin/) detay verir.
 
 ## KVKK ve Gizlilik
 
 Memory, sizin Anthropic hesabınıza bağlı bilgi olarak saklanır. KVKK çerçevesinde:
 
-- **Veri minimizasyonu:** Yalnızca işe yarayanı tutmak — gözden geçirip gereksizleri silin
-- **Hak: Erişim:** Memory panelinde tüm kayıtları görme hakkınız var
-- **Hak: Silme:** Tek tek veya tümünü silebilirsiniz
-- **Hak: Taşınabilirlik:** [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) sayfasındaki export ile dışarı aktarılabilir
+- **Veri minimizasyonu:** Yalnızca işe yarayanı tutun, gözden geçirip gereksizleri silin
+- **Erişim hakkı:** Memory panelinde tüm kayıtları görebilirsiniz
+- **Silme hakkı:** Tek tek veya tümünü silebilirsiniz
+- **Taşınabilirlik hakkı:** [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) sayfasındaki export ile dışarı aktarılabilir
 
 [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası genel veri haklarını anlatır.
 
@@ -126,20 +128,18 @@ Memory bir kez yazıldı diye sonsuza kadar kalmaz; siz değiştirebilirsiniz.
 
 İkisi birbirini tamamlar:
 
-- **CLAUDE.md** → "ben pazarlama müdürüyüm, marka voice şu, klişe yasak" (sabit kurallar)
-- **Memory** → "geçen ay X projesinde çalıştım, Y müşterisini sevmem" (sohbette ortaya çıkanlar)
+- **CLAUDE.md** → "marka voice şu, klişe yasak" gibi sabit kurallar
+- **Memory** → "geçen ay X projesinde çalıştım, Y müşterisini sevmem" gibi sohbette ortaya çıkanlar
 
-Yeni sohbette CLAUDE.md zaten yüklü, memory zaten Claude'da. İkisi birlikte sizin "asistan profilinizi" oluşturur.
-
-[Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfası bu ilişkiyi derinleştirir.
+Yeni sohbette ikisi de hazırdır ve birlikte sizin "asistan profilinizi" oluşturur. [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfası bu ilişkiyi derinleştirir.
 
 ## Memory'in Sınırları
 
 **Yapamayacakları:**
 
 - Şirket-genelinde paylaşılmaz (şirket bilgisi için [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/))
-- Çok uzun bilgi tutmaz (Claude eğer bağlam-yoğun bilgi almışsa o memory'e değil, [project knowledge](/wiki/araclar/projects/)'a yazılmalı)
-- Otomatik olarak doğrulanmış değildir — siz yazdıysanız "doğru" sayar
+- Çok uzun bilgi tutmaz: geniş bağlam gerektiren içerik memory'e değil, [project knowledge](/wiki/araclar/projects/) alanına konmalıdır
+- Doğrulanmış bilgi tutmaz: ne söylediyseniz onu "doğru" sayar, yanlışı siz düzeltmelisiniz
 
 ## Memory mu, Project Knowledge mı?
 
@@ -167,7 +167,7 @@ Claude bunu memory'e kaydeder. Bir hafta sonra yeni sohbet:
 
 > *"LinkedIn için bir post yaz."*
 
-Claude: artık biliyor — B2B SaaS'a yönelik, marka voice'u memory'de. Ek bilgi sormadan iş üretir.
+Claude artık sektörünüzü biliyor ve B2B SaaS'a yönelik yazıyor. Ek bilgi sormadan iş üretir.
 
 ### Senaryo 2: Tercih
 
@@ -189,21 +189,21 @@ Claude memory'i günceller.
 
 Doğru kurulmuş memory + CLAUDE.md birleşimi her sohbette **uzun başlangıç** ihtiyacını ortadan kaldırır. Çalışan artık her seferinde "ben kimim, neyle çalışıyorum" anlatmaz; doğrudan göreve girer. Bu, [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasındaki zaman tasarrufunun gizli kaynaklarından biridir.
 
-## Dreaming — Kendini İyileştiren Agent Hafızası (Kurumsal / Agent)
+## Dreaming: Kendini İyileştiren Agent Hafızası (Kurumsal / Agent)
 
-Mayıs 2026'da Anthropic, agent tarafı için **Dreaming** adlı bir hafıza yeteneği tanıttı (research preview). Burada anlatılan kişisel Claude Chat memory'sinden farklı bir katmandır: Dreaming, **geçmiş oturumları gözden geçirerek tekrar eden kalıpları çıkarır** ve agent'ların zamanla **kendi kendini iyileştirmesini** sağlar.
+Mayıs 2026'da Anthropic, agent tarafı için **Dreaming** adlı bir hafıza yeteneği tanıttı. **Yalnız Claude Managed Agents'ta, research preview olarak** sunuluyor ve erişim bir talep formuyla veriliyor. Burada anlatılan kişisel Claude memory'sinden farklı bir katmandır ve claude.ai kullanıcısının açabileceği bir ayar değildir.
 
-Pratik mantığı: çalışma araları arasında sistem, agent'ların geçmiş işlerinden öğrenilenleri damıtır; bir sonraki çalışmada bu birikim devreye girer. Birden fazla agent bu öğrenmeyi ortaklaşa paylaşabilir.
+Pratik mantığı: Dreaming bir bellek deposunu ve en çok 100 geçmiş oturumu okuyup tekrar eden kalıpları ayıklar, yeniden düzenlenmiş yeni bir bellek deposu üretir. Girdi olarak verilen depoya dokunmaz. Standart API token fiyatıyla faturalanır.
 
 **İş profesyoneli için bugünkü karşılığı:** Doğrudan kullanmazsınız; bu özellik esas olarak kurumsal otomasyon ve [Managed Agents](/wiki/yetenekler/agents-subagents/) kuran ekipleri ilgilendirir. Ama yönü gösterir: agent'lar artık sadece o anki bağlamı değil, geçmiş çalışmalardan süzülen kalıpları da kullanmaya başlıyor.
 
 ## İlgili Sayfalar
 
-- [Memory Yönetimi (CLAUDE.md ile)](/wiki/claude-md/memory-yonetimi/) — Bütünleşik görünüm
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Manuel kalıcı kurallar
-- [Projects](/wiki/araclar/projects/) — Project knowledge alternatifi
-- [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) — Sohbet geçmişi (memory'den ayrı)
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri hakları
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Memory'e ne yazılmalı
-- [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Sohbet içi bağlam yönetimi (memory'den ayrı)
+- [Memory Yönetimi (CLAUDE.md ile)](/wiki/claude-md/memory-yonetimi/): Bütünleşik görünüm
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Manuel kalıcı kurallar
+- [Projects](/wiki/araclar/projects/): Project knowledge alternatifi
+- [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/): Sohbet geçmişi (memory'den ayrı)
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri hakları
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Memory'e ne yazılmalı
+- [Context ve Compaction](/wiki/yetenekler/context-compaction/): Sohbet içi bağlam yönetimi (memory'den ayrı)
 

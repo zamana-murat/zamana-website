@@ -76,7 +76,7 @@
         script.onerror = () => {
           const fb = document.getElementById('wiki-search-fallback');
           if (fb) {
-            fb.textContent = 'Arama indexi henüz hazır değil. (Build gerekli — npm run build)';
+            fb.textContent = 'Arama indexi henüz hazır değil. (Build gerekli: npm run build)';
             fb.classList.add('wiki-search-fallback--error');
           }
           resolve();

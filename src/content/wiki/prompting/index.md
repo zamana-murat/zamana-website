@@ -1,15 +1,15 @@
 ---
-title: "Prompting — Claude'la Düşünmenin Temeli"
+title: "Prompting: Claude'la Düşünmenin Temeli"
 description: "Claude'la etkili iletişim kurmak bir beceridir. Bu bölüm 4D Çerçevesi, prompt yapısı, ileri teknikler ve yaygın hataları kapsar."
 tags:
   - prompting
   - giris
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 Claude'la çalışmanın en öğretilebilir becerisi. Ve en yaygın şekilde kötü kullanılan.
 
-Çoğu kişi Claude'la başarısız olur çünkü ona **Google'a sorar gibi sorar** — kısa, anahtar kelimeli, bağlamsız. İyi bir prompt bu reflekse direnen, yapılandırılmış bir düşünce metnidir.
+Çoğu kişi Claude'la başarısız olur çünkü ona **Google'a sorar gibi sorar**: kısa, anahtar kelimeli, bağlamsız. İyi bir prompt bu reflekse direnen, yapılandırılmış bir düşünce metnidir.
 
 Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D), temel yapı, ileri teknikler ve hatalar.
 
@@ -21,7 +21,7 @@ Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D)
 
     ---
 
-    Anthropic'in resmi AI Fluency çerçevesi — Delegation, Description, Discernment, Diligence. Bütün promptingin kavramsal zemini.
+    Anthropic'in resmi AI Fluency çerçevesi: Delegation, Description, Discernment, Diligence. Bütün promptingin kavramsal zemini.
 
     [→ 4D Çerçevesi](/wiki/prompting/4d-cercevesi/)
 
@@ -51,14 +51,22 @@ Bu bölüm, prompting becerisini dört açıdan kapsar: kavramsal çerçeve (4D)
 
 </div>
 
+**Tamamlayıcı sayfalar:**
+
+- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/): Kayıt, İngilizceye kayma, sayı ve tarih yazımı
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/): Tablo, JSON, markdown ve diğer çıktı biçimleri
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnek vererek öğretme
+- [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/): Test et, geliştir, sürümle
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/): Kopyalayıp kullanabileceğiniz hazır şablonlar
+
 ## Öğrenme Sırası
 
 Bu bölümü yeni okuyorsanız:
 
-1. **[4D Çerçevesi](/wiki/prompting/4d-cercevesi/)** — Kavramsal zemini oturtun. Neden, nasıldan önce gelir.
-2. **[Temel İlkeler](/wiki/prompting/temel-ilkeler/)** — Beş bileşen yapısı. Ezberleyene kadar, bir hafta kullanın.
-3. **[Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/)** — Kendi promptlarınızı bu listeye karşı denetleyin.
-4. **[İleri Seviye](/wiki/prompting/ileri-seviye/)** — Temelleri oturtanadık sonra. Erken dönmek boşa yatırımdır.
+1. **[4D Çerçevesi](/wiki/prompting/4d-cercevesi/)**: Kavramsal zemini oturtun. Neden, nasıldan önce gelir.
+2. **[Temel İlkeler](/wiki/prompting/temel-ilkeler/)**: Beş bileşen yapısı. Ezberleyene kadar, bir hafta kullanın.
+3. **[Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/)**: Kendi promptlarınızı bu listeye karşı denetleyin.
+4. **[İleri Seviye](/wiki/prompting/ileri-seviye/)**: Temelleri oturtana kadar bekleyin. Erken dönmek boşa yatırımdır.
 
 Bir çalışanın prompting becerisi eğitim programının birinci saatinde başlar, **haftalarca gelişmeye devam eder**. Bu bölüm bir kere okunup kapanan değil, aylar boyunca geri dönülen bir kaynaktır.
 
@@ -66,19 +74,19 @@ Bir çalışanın prompting becerisi eğitim programının birinci saatinde baş
 
 Bölümün özeti tek cümleye indirgenirse:
 
-> **Prompt, Claude'la konuştuğunuz metin değil — Claude'un düşünmesi için size verdiği bir çerçevedir. Çerçeveyi ne kadar iyi kurarsanız, çıktı o kadar iyi olur.**
+> **Prompt, Claude'la konuştuğunuz metinden fazlasıdır: Claude'un düşünmesi için ona kurduğunuz çerçevedir. Çerçeveyi ne kadar iyi kurarsanız, çıktı o kadar iyi olur.**
 
 Bu, Claude'u "sihirli kutu" olarak görmekten çok uzaktır. Claude bir düşünme ortağıdır. İyi bir düşünme ortağı, **iyi bir sohbet partneri** gerektirir. Siz o partner olursunuz.
 
 ## 4D, Temel ve İleri Arasında
 
-Üç sayfanın ilişkisini netleştirmek gerekirse:
+Ana üç sayfanın ilişkisini netleştirmek gerekirse:
 
 - **4D Çerçevesi** → **NE?** (Neye dikkat ediyorum? Ne için sorumluyum?)
 - **Temel İlkeler** → **NASIL?** (Promptu pratik olarak nasıl yazarım?)
 - **İleri Seviye** → **DAHA İYİ NASIL?** (Kaliteyi katlayan teknikler nelerdir?)
 
-Üçü birlikte tam resmi verir. Biri olmadan diğeri eksik kalır — ama **temel ilkeler** zeminine basmayan ileri teknik havada kalır. Sırayı atlamayın.
+Üçü birlikte tam resmi verir. Biri olmadan diğeri eksik kalır, ama **temel ilkeler** zeminine basmayan ileri teknik havada kalır. Sırayı atlamayın.
 
 ## Pratik Öğrenme Yolu
 
@@ -94,7 +102,7 @@ Bu kütüphane Claude öğrenme sürecinin en somut kalıntısıdır.
 
 Prompting'i okuduysanız:
 
-- [**Yetenekler**](/wiki/yetenekler/) — Promptların üstüne Skills, Artifacts, Agents
-- [**CLAUDE.md**](/wiki/claude-md/) — Her prompttan önce yüklenen kalıcı bağlam
-- [**Departmanlar**](/wiki/departmanlar/) — Rolünüze göre gerçek prompt örnekleri
+- [**Yetenekler**](/wiki/yetenekler/): Promptların üstüne Skills, Artifacts, Agents
+- [**CLAUDE.md**](/wiki/claude-md/): Her prompttan önce yüklenen kalıcı bağlam
+- [**Departmanlar**](/wiki/departmanlar/): Rolünüze göre gerçek prompt örnekleri
 

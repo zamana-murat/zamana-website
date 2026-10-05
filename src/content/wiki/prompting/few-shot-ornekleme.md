@@ -1,14 +1,14 @@
 ---
-title: Few-Shot Örnekleme — Örnekle Öğretme
-description: "Claude'a soyut talimat yerine örnek vererek daha tutarlı çıktı alma. Sıfır, tek, az ve çok örnekleme — pratik fark ve teknikler."
+title: "Few-Shot Örnekleme: Örnekle Öğretme"
+description: "Claude'a soyut talimat yerine örnek vererek daha tutarlı çıktı alma. Sıfır, tek, az ve çok örnekleme, pratik fark ve teknikler."
 tags:
   - prompting
   - few-shot
   - ornek
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Bir kavramı öğretmenin en güçlü yolu örnek göstermektir.** Claude için de öyle. Soyut bir kuralı tarif etmek yerine "şuna benzer üret" demek, sonucu daha tutarlı, daha sürpriz-azaltıcı yapar.
+**Bir kavramı öğretmenin en güçlü yolu örnek göstermektir.** Claude için de öyle. Soyut bir kuralı tarif etmek yerine "şuna benzer üret" demek, sonucu daha tutarlı yapar ve sürprizleri azaltır.
 
 Bu sayfa few-shot örnekleme yaklaşımını ve pratik kullanımını anlatır.
 
@@ -29,23 +29,23 @@ Kural: **görev karmaşıklaştıkça örnek sayısı artar.** Basit bir özetle
 
 Soyut talimat yetersiz kaldığı durumlar:
 
-1. **Tarz / üslup üretimi** — "X yazarın tarzında yaz", "şirket marka sesi"
-2. **Spesifik format** — özelleştirilmiş tablo, JSON, özel rapor şablonu
-3. **Sınıflandırma** — "müşteri yorumlarını şu kategorilere böl"
-4. **Çıkarım kuralı** — "şu desenleri şu şekilde dönüştür"
-5. **Türkçe nüans** — sözcük seçimi, klişeden kaçınma
+1. **Tarz / üslup üretimi**: "X yazarın tarzında yaz", "şirket marka sesi"
+2. **Spesifik format**: özelleştirilmiş tablo, JSON, özel rapor şablonu
+3. **Sınıflandırma**: "müşteri yorumlarını şu kategorilere böl"
+4. **Çıkarım kuralı**: "şu desenleri şu şekilde dönüştür"
+5. **Türkçe nüans**: sözcük seçimi, klişeden kaçınma
 
 [Çıktı Formatı](/wiki/prompting/cikti-formati/) sayfası format-spesifik örnekleri detaylandırır.
 
-## Sıfır vs Az Örnek — Pratik Fark
+## Sıfır vs Az Örnek: Pratik Fark
 
-### Örnek 1 — Müşteri Yorumu Sınıflandırma
+### Örnek 1: Müşteri Yorumu Sınıflandırma
 
 **Zero-shot:**
 
 > *"Şu müşteri yorumlarını duygu sınıflandırması yap: olumlu, olumsuz, nötr."*
 
-→ Claude bunu yapar ama "duygu" tanımı belirsiz olduğu için **siz**in tanımıladığınızdan farklı sınıflandırabilir. Örneğin "ürün geldi ama paketi yırtıktı, ürün tamam" → siz "olumsuz" derken Claude "nötr" diyebilir.
+→ Claude bunu yapar ama "duygu" tanımı belirsiz olduğu için **sizin** tanımladığınızdan farklı sınıflandırabilir. Örneğin "ürün geldi ama paketi yırtıktı, ürün tamam" → siz "olumsuz" derken Claude "nötr" diyebilir.
 
 **Few-shot:**
 
@@ -72,7 +72,7 @@ Soyut talimat yetersiz kaldığı durumlar:
 
 → Claude artık sizin sınıflandırma mantığınızı öğrendi. "Paket sorunu var ama ürün tamam" → olumsuz olarak sınıflar.
 
-## Örnek 2 — Marka Voice'a Uygun Yazı
+### Örnek 2: Marka Voice'a Uygun Yazı
 
 **Zero-shot:**
 
@@ -96,7 +96,7 @@ Soyut talimat yetersiz kaldığı durumlar:
 
 [Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfasında daha fazla içerik örneği.
 
-## Örnek 3 — JSON Şema
+### Örnek 3: JSON Şema
 
 **Zero-shot:**
 
@@ -106,21 +106,21 @@ Soyut talimat yetersiz kaldığı durumlar:
 
 **Few-shot:**
 
-> *"Bu metinden müşteri bilgilerini JSON olarak çıkar. Örnek:*
->
-> *Metin: 'ABC Ltd. ile 50.000 TL'lik anlaşma yapıldı, irtibat Mehmet Yılmaz, 0532-...'*
->
-> *JSON:*
-> *```json*
-> *{*
-> *  "sirket": "ABC Ltd.",*
-> *  "tutar_tl": 50000,*
-> *  "irtibat": "Mehmet Yılmaz",*
-> *  "telefon": "0532-..."*
-> *}*
-> *```*
->
-> *Şimdi şu metin için: [metin]"*
+```text
+Bu metinden müşteri bilgilerini JSON olarak çıkar. Örnek:
+
+Metin: 'ABC Ltd. ile 50.000 TL'lik anlaşma yapıldı, irtibat Mehmet Yılmaz, 0532-...'
+
+JSON:
+{
+  "sirket": "ABC Ltd.",
+  "tutar_tl": 50000,
+  "irtibat": "Mehmet Yılmaz",
+  "telefon": "0532-..."
+}
+
+Şimdi şu metin için: [metin]
+```
 
 → Claude tam olarak istediğiniz şemayı üretir.
 
@@ -130,7 +130,7 @@ Few-shot'ta örnek kalitesi her şeydir.
 
 ### 1. Çeşit-Cins Karışımı
 
-Tek tip örnek vermeyin — Claude o tipi öğrenir, dışına çıkamaz. Olumlu / olumsuz / nötr sınıflama için her sınıftan en az bir örnek.
+Tek tip örnek vermeyin: Claude o tipi öğrenir ve dışına çıkamaz. Olumlu / olumsuz / nötr sınıflama için her sınıftan en az bir örnek.
 
 ### 2. Sınır Vakaları Dahil Et
 
@@ -151,7 +151,7 @@ Sebep: çok klişe, "lider çözümümüz" kullanılmış.
 
 ### 4. Tutarlı Format
 
-Tüm örnekler aynı yapıda olsun — başlık aynı, etiket aynı, alanlar aynı. Tutarsızlık Claude'u şaşırtır.
+Tüm örnekler aynı yapıda olsun, başlık aynı, etiket aynı, alanlar aynı. Tutarsızlık Claude'u şaşırtır.
 
 ### 5. Az ama Yüksek Kalite
 
@@ -168,18 +168,20 @@ Bir örneği nereye koymalı?
 
 [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında CLAUDE.md içine örnek nasıl gömüleceği var.
 
-## Örnek 4 — Şirket-İçi Sınıflandırma
+## Daha Fazla Uygulama Örneği
+
+### Örnek 4: Şirket İçi Sınıflandırma
 
 Müşteri ticketlerinin önceliklendirilmesi:
 
 ```
 Müşteri ticket'larını şu kategorilere ayır:
 
-A_Acil — sistem kapanmış, milyonluk müşteri etkisi
-A_Yüksek — birden fazla müşteri etkisi, gün içinde çözülmeli
-B_Orta — tek müşteri etkilemiş, 24 saatte çözülmeli
-B_Düşük — istek/öneri, planlamada düşünülecek
-C_İçerik — bilgi sorusu, dokümana yönlendirilecek
+A_Acil: sistem kapanmış, milyonluk müşteri etkisi
+A_Yüksek: birden fazla müşteri etkisi, gün içinde çözülmeli
+B_Orta: tek müşteri etkilemiş, 24 saatte çözülmeli
+B_Düşük: istek/öneri, planlamada düşünülecek
+C_İçerik: bilgi sorusu, dokümana yönlendirilecek
 
 ÖRNEKLER:
 
@@ -202,7 +204,7 @@ Kategori: ?
 
 [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfasında daha fazla bağlam.
 
-## Örnek 5 — Türkçe Stil Düzeltme
+### Örnek 5: Türkçe Stil Düzeltme
 
 İçerik stilini standartlaştırma:
 
@@ -231,7 +233,7 @@ Sonra: ?
 
 [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasında bu yaklaşımı genişleten teknikler.
 
-## Many-Shot — Çok Örnek
+## Many-Shot: Çok Örnek
 
 Bazı görevlerde 10-20 örnek vermek gerekir. Bu **many-shot** dedikleri yaklaşımdır. Pratik kullanımı:
 
@@ -239,22 +241,22 @@ Bazı görevlerde 10-20 örnek vermek gerekir. Bu **many-shot** dedikleri yakla�
 - Karmaşık karar verme (matrix mantık)
 - Çok-aşamalı dönüşüm (örnek-1 → orta-form → final)
 
-Many-shot için bağlam penceresi büyür — uzun bir prompt olur. Claude'un [bağlam](/wiki/yetenekler/context-compaction/) limitini aşmamak gerekir; özellikle Pro kullanıcılarda.
+Many-shot uzun bir prompt demektir. Güncel modellerde [bağlam penceresi](/wiki/yetenekler/context-compaction/) geniş (Fable 5.1, Opus 5.5 ve Sonnet 5.5'te 1M token, ücretli planlarda plana göre fark yok), yani sınır nadiren sorun olur. Asıl maliyet kullanım limitinizden düşen token'dır.
 
-## Örnek Aktarımı — Tek Sohbet İçinde
+## Örnek Aktarımı: Tek Sohbet İçinde
 
-Aynı sohbette birden fazla similar görev varsa, ilk birkaç görev **canlı few-shot** olur:
+Aynı sohbette birden fazla benzer görev varsa, ilk birkaç görev **canlı few-shot** olur:
 
 > Kullanıcı: *"Şu yorum hakkında ne diyorsun? [yorum 1]"*
 > Claude: *"[değerlendirme 1]"*
 > Kullanıcı: *"Doğru. Şu yorum?"* *[yorum 2]*
-> Claude: *"[değerlendirme 2]"* — birinci örneği baz alarak
+> Claude: *"[değerlendirme 2]"* (birinci örneği baz alarak)
 
 Bu organik few-shot, manuel olarak kurulan few-shot kadar güçlüdür.
 
 ## Sınırlar ve Tuzaklar
 
-**Tuzak 1: Aşırı örnek yüklemesi.** 30 örnek vermek Claude'u pürüzlü hale getirir. 5-10 yeter.
+**Tuzak 1: Aşırı örnek yüklemesi.** 30 örnek vermek tutarlılık yerine çelişki ve gürültü riskini artırır. Çoğu görevde 5-10 örnek yeter, many-shot gerektiren işlerde bile 20'yi nadiren geçmek gerekir.
 
 **Tuzak 2: Çelişen örnekler.** İki örneğiniz birbirinin tersini söylüyorsa Claude şaşırır. Örnekleri tarayın, çakışma var mı kontrol edin.
 
@@ -262,7 +264,7 @@ Bu organik few-shot, manuel olarak kurulan few-shot kadar güçlüdür.
 
 **Tuzak 4: Kişisel/hassas veri içeren örnek.** Müşteri ismi, gerçek ciro, kişisel veri içeren örnekler [KVKK](/wiki/temeller/gizlilik-kvkk/) sorunu yaratır. **Anonimleştir** veya synthetic örnek kur.
 
-## Birleşik Teknik — Format + Few-Shot + Talimat
+## Birleşik Teknik: Format + Few-Shot + Talimat
 
 En güçlü prompt üç bileşeni birleştirir:
 
@@ -292,12 +294,12 @@ Ham veri: [gerçek veri]
 
 ## İlgili Sayfalar
 
-- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
-- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Format kontrolü ile birleşik kullanım
-- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) — Hazır şablonlar
-- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) — Türkçe için
-- [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) — Örnekleri geliştirme döngüsü
-- [İleri Seviye](/wiki/prompting/ileri-seviye/) — Many-shot ve advanced teknikler
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md'ye gömme
-- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Few-shot tuzakları
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/): Genel prompt mantığı
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/): Format kontrolü ile birleşik kullanım
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/): Hazır şablonlar
+- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/): Türkçe için
+- [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/): Örnekleri geliştirme döngüsü
+- [İleri Seviye](/wiki/prompting/ileri-seviye/): Many-shot ve advanced teknikler
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md'ye gömme
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Few-shot tuzakları
 

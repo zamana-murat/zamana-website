@@ -1,12 +1,12 @@
 ---
 title: Sohbet Geçmişi, Arama ve Dışa Aktarma
-description: "Claude'da sohbet geçmişi nasıl yönetilir? Arama, klasörleme, silme, dışa aktarma — günlük disiplin tavsiyeleri."
+description: "Claude'da sohbet geçmişi nasıl yönetilir? Arama, klasörleme, silme, dışa aktarma, günlük disiplin tavsiyeleri."
 tags:
   - araclar
   - gecmis
   - arama
   - export
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **Claude'u haftalarca aktif kullanan biri için, sohbet geçmişi hızla bir bilgi arşivine dönüşür.** Onu yönetmemek, geçmişte değerli üretimleri kaybetmek demektir.
@@ -19,7 +19,7 @@ Claude'da yaptığınız her sohbet otomatik olarak hesabınıza bağlı kalır.
 
 **Saklama yeri:** Anthropic'in sunucularında, hesabınızla ilişkili olarak. KVKK boyutu için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
-**Saklama süresi:** Plan ve hesap ayarlarına bağlı. Çoğu kullanıcı için süresizdir, siz silmedikçe kalır. Enterprise/Team planlarında yöneticinin tanımladığı saklama politikası geçerli olabilir.
+**Saklama süresi:** Hesabınızda görünen geçmiş siz silmedikçe kalır. Anthropic tarafındaki saklama ise plana göre değişir. Bireysel hesaplarda (Free, Pro, Max) "Help improve Claude" ayarına bağlıdır: Anthropic'in duyurusuna göre modelin eğitimine izin verirseniz 5 yıl, vermezseniz 30 gün. Ayarın varsayılan durumu birincil kaynakta net yazmıyor, bu yüzden Privacy Settings'ten kendiniz kontrol edin. Team ve Enterprise'ta girdi ve çıktılar varsayılan olarak eğitimde kullanılmaz; yöneticinin tanımladığı saklama politikası geçerli olabilir.
 
 ## Arama Yapma
 
@@ -33,11 +33,11 @@ Arama özellikleri:
 
 **Pratik tavsiyeler:**
 
-- **Sohbete açıklayıcı isim verin.** Claude varsayılan başlık verir ama elle yeniden adlandırabilirsiniz. "İK politika revizyonu — Mart 2026" gibi isimler arama sonucunda altın değerinde.
-- **İlk mesajda anahtar kelime bırakın.** Aramada ilk mesaj ağır basar; o yüzden başlangıçta "konu: ihracat sözleşme şablonu" gibi bir cümle bırakın.
+- **Sohbete açıklayıcı isim verin.** Claude varsayılan başlık verir ama elle yeniden adlandırabilirsiniz. "İK politika revizyonu, Mart 2026" gibi isimler arama sonucunda altın değerinde.
+- **İlk mesajda anahtar kelime bırakın.** Başlangıçta "konu: ihracat sözleşme şablonu" gibi bir cümle yazmak, sohbeti sonradan bulmanızı kolaylaştırır.
 - **Tarih disiplini.** Tarih içeren projelerde "2026-Q2" gibi etiketleri konuşmanın bir yerine yazın.
 
-## Klasörleme — Projects ile
+## Klasörleme: Projects ile
 
 Claude'da geleneksel klasör sistemi yok; **organize etmenin yolu [Projects](/wiki/araclar/projects/) kullanmaktır.** Bir proje açarsınız (örn. "ABC Müşterisi"), o projeyle ilgili tüm sohbetleri o projenin içinde tutarsınız.
 
@@ -104,13 +104,14 @@ Bu disiplin uzun vadede iki şey kazandırır:
 
 ## Birden Çok Cihazda Senkron
 
-Claude geçmişiniz hesaba bağlıdır. Web, [Claude Desktop](/wiki/araclar/claude-desktop/) veya [Claude Mobil](/wiki/araclar/claude-mobil/) — hepsinde aynı sohbet listesini görürsünüz, anında senkronize olur. Bir cihazda silseniz diğerinden de gider.
+Claude geçmişiniz hesaba bağlıdır. Web, [Claude Desktop](/wiki/araclar/claude-desktop/) veya [Claude Mobil](/wiki/araclar/claude-mobil/), hepsinde aynı sohbet listesini görürsünüz, anında senkronize olur. Bir cihazda silseniz diğerinden de gider.
 
 ## İlgili Sayfalar
 
-- [Projects](/wiki/araclar/projects/) — Sohbetleri organize etmenin doğru yolu
-- [Claude Chat](/wiki/araclar/claude-chat/) — Geçmiş bu arayüzde tutulur
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri saklama hakları
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Saklama politikası şablonu
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — Geçmişten ayrı, kalıcı bellek
+- [Projects](/wiki/araclar/projects/): Sohbetleri organize etmenin doğru yolu
+- [Claude Chat](/wiki/araclar/claude-chat/): Geçmiş bu arayüzde tutulur
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri saklama hakları
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Saklama politikası şablonu
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Geçmişten ayrı, kalıcı bellek
+- [Memory](/wiki/yetenekler/memory/): Hafıza 25 Ağustos 2026'dan beri sohbet ve Cowork arasında ortak (Free, Pro, Max'te varsayılan açık; Team ve Enterprise'ta varsayılan kapalı)
 

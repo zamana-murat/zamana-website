@@ -1,17 +1,17 @@
 ---
-title: Finans ve Muhasebe — Claude Uygulamaları
-description: "Finans ekibi için Claude — raporlama anlatısı, bütçe varyans açıklaması, KOSGEB/TÜBİTAK başvuruları, denetim dosyası. Rakamlar sizin, anlatım Claude'un."
+title: "Finans ve Muhasebe: Claude Uygulamaları"
+description: "Finans ekibi için Claude: raporlama anlatısı, bütçe varyans açıklaması, KOSGEB/TÜBİTAK başvuruları, denetim dosyası. Rakamlar sizin, anlatım Claude'un."
 tags:
   - departmanlar
   - finans
   - muhasebe
   - raporlama
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Finans ekibi Claude'u doğru konumlandırdığında ayda 10-20 saat kazanır. Ama kritik bir çerçeve var:
+Finans ekibi Claude'u doğru konumlandırdığında her ay saatlerce zaman kazanır. Ama kritik bir çerçeve var:
 
-> **Claude rakamların etrafında yazar, onları hesaplamaz. Rakamlar her zaman çalışanındır. Claude bir yazma ve düşünme aracıdır — hesap makinesi değildir ve asla finansal veri kaynağı değildir.**
+> **Claude rakamların etrafında yazar, onları hesaplamaz. Rakamlar her zaman çalışanındır. Claude bir yazma ve düşünme aracıdır, hesap makinesi değildir ve asla finansal veri kaynağı değildir.**
 
 Bu çerçeve her finans prompt'unda aklınızda olmalı.
 
@@ -24,47 +24,47 @@ Bu çerçeve her finans prompt'unda aklınızda olmalı.
 - Belgeler arası tutarsızlık yakalamak yorucu ve hataya açık
 - Denetim hazırlığı dev bir dokümantasyon yükü yaratıyor
 
-## Bölüm 1 — Raporlama ve Anlatı
+## Bölüm 1: Raporlama ve Anlatı
 
 ### Aylık / Çeyreklik Rapor Yazımı
 
-Çalışan sayıları sağlar, Claude anlatı, açıklama, yönetici özeti üretir. **4 saat sürmesi gereken iş 45 dakikaya iner.**
+Siz rakamları sağlarsınız; Claude anlatıyı, açıklamayı ve yönetici özetini üretir. Deneyimimizde saatler süren bir rapor yazımı, çoğu zaman bir saatin altına iner.
 
 ### Bütçe Varyans Açıklaması
 
-Varyans tablosu → **rakamların arkasındaki hikayeyi** anlatan net yönetim anlatısı. Sadece "bütçe aşıldı" değil — "neden aşıldı, bu bir trend mi, ne yapılmalı."
+Varyans tablosundan, **rakamların arkasındaki hikâyeyi** anlatan net bir yönetim anlatısı çıkar. Yalnızca "bütçe aşıldı" demek yetmez: neden aşıldı, bu bir trend mi, ne yapılmalı.
 
 ### Yönetim ve Kurul Sunumları
 
-Finans-dışı kitleler için yapılandırılmış finansal hikayeler. CFO'nun işi sadece raporlamak değil — **anlaşılmaktır**.
+Finans dışı kitleler için yapılandırılmış finansal hikâyeler. CFO'nun işi yalnızca raporlamak değil, **anlaşılmaktır**. Claude for Excel (Excel, PowerPoint ve Word eklentileri genel kullanımda) tablo ile sunum arasındaki geçişi aynı yerde yapmanızı sağlar; ayrıntılar [Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/) sayfasında.
 
 ### Varsayımları Test Etmek
 
-Çalışan bir finansal varsayım tarif eder, Claude şeytanın avukatı olur:
+Çalışan bir finansal varsayımı tarif eder, Claude şeytanın avukatı olur:
 
 > *"Bu varsayımın yanlış olması için ne doğru olmak zorunda?"*
 
 Kör noktalar yönetim toplantısında karşınıza çıkmadan önce yüzeye çıkar.
 
-## Bölüm 2 — Analiz Desteği
+## Bölüm 2: Analiz Desteği
 
-**Finansal senaryo düşüncesi.** Hesaplama değil, mantık ve çerçeve — Claude'a değişkenleri verirsiniz, senaryoları ve sonuçlarını haritalandırır.
+**Finansal senaryo düşüncesi.** Hesaplama değil, mantık ve çerçeve: Claude'a değişkenleri verirsiniz, senaryoları ve sonuçlarını haritalandırır.
 
-**Nakit akışı anlatısı.** Pozisyon ve tahmini finans-dışı karar vericiler için sade dille açıklama.
+**Nakit akışı anlatısı.** Nakit pozisyonunu ve tahmini, finans dışı karar vericiler için sade dille açıklamak.
 
-**Tutarlılık kontrolü.** Raporun iki bölümünü veya iki belgeyi yapıştırırsınız, Claude çelişen sayı, varsayım veya ifadeleri listeler — rapor gitmeden önce hafif iç inceleme.
+**Tutarlılık kontrolü.** Raporun iki bölümünü ya da iki belgeyi yapıştırırsınız; Claude çelişen sayı, varsayım ve ifadeleri listeler. Rapor gitmeden önce hafif bir iç inceleme olur.
 
-**Yönetim sorularının öngörüsü.** Raporu Claude'a verir, "bu toplantıda CEO ne sorar?" diye sorarsınız. Cevaplarınızı önceden hazırlarsınız.
+**Yönetim sorularının öngörüsü.** Raporu Claude'a verip "bu toplantıda CEO ne sorar?" diye sorarsınız. Cevaplarınızı önceden hazırlarsınız.
 
-## Bölüm 3 — Dokümantasyon ve İletişim
+## Bölüm 3: Dokümantasyon ve İletişim
 
 ### Finansal Politika ve Prosedür Yazımı
 
-Çalışan kuralları verir, Claude temiz, anlaşılır dokümantasyon üretir. **İç hukukun yazdığı değil, insanların okuyacağı** dilde.
+Çalışan kuralları verir, Claude temiz ve anlaşılır dokümantasyon üretir. Dil, **iç hukukun yazdığı değil, insanların okuyacağı** türdendir.
 
 ### Tedarikçi Ödeme İletişimi
 
-Ödeme koşulları, anlaşmazlıklar, gecikme hatırlatmaları, onaylar için profesyonel e-postalar — kararlı ama ilişki-koruyucu.
+Ödeme koşulları, anlaşmazlıklar, gecikme hatırlatmaları ve onaylar için profesyonel e-postalar: kararlı ama ilişkiyi koruyan bir dille.
 
 ### İç Finansman Notları
 
@@ -76,18 +76,18 @@ Claude kanıt paketlerini yapılandırır, denetçiler için açıklayıcı notl
 
 ### KOSGEB, TÜBİTAK ve TURQUALITY Başvuruları
 
-Türk şirketleri için **en az kullanılan yüksek-ROI uygulamalardan biri.**
+Türk şirketleri için **az kullanılan ama getirisi yüksek uygulamalardan biri.**
 
 - **KOSGEB** destek programları
 - **TÜBİTAK** Ar-Ge hibeleri
 - **Yatırım teşvik başvuruları**
 - **TURQUALITY** ihracat destek programları
 
-Claude resmi formları doldurmaz — **destekleyici anlatıları, proje açıklamalarını ve gerekçe bölümlerini** yazar. Başvurunun başarısı bu bölümlere bağlıdır.
+Claude resmi formları doldurmaz, **destekleyici anlatıları, proje açıklamalarını ve gerekçe bölümlerini** yazar. Başvurunun başarısı bu bölümlere bağlıdır.
 
 ### FX Pozisyon Anlatısı
 
-USD veya EUR alacak / borcu yüksek şirketlerde Claude FX risk bölümünü yazar: mevcut pozisyon, hedge durumu, kur hareketi duyarlılığı — **finans-dışı yöneticilerin anlayacağı sade dilde**.
+USD veya EUR alacağı ya da borcu yüksek şirketlerde Claude FX risk bölümünü yazar: mevcut pozisyon, hedge durumu, kur hareketine duyarlılık. Dil, **finans dışı yöneticilerin anlayacağı kadar sade** olur.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -109,48 +109,50 @@ USD veya EUR alacak / borcu yüksek şirketlerde Claude FX risk bölümünü yaz
 ## Kullanılacak Skills ve Connector'lar
 
 **Skills:**
-- `docx` — rapor ve politika belgeleri
-- `xlsx` — analiz tabloları ve modelleme (formüller çalıştırılır, veri analizi yapılır — ama **orijinal sayıları siz verirsiniz**)
-- `pdf` — kurumsal raporlar, başvuru dosyaları
-- `pptx` — yönetim sunumları
+- `docx`: rapor ve politika belgeleri
+- `xlsx`: analiz tabloları ve modelleme (formüller çalıştırılır, veri analizi yapılır, ama **orijinal sayıları siz verirsiniz**)
+- `pdf`: kurumsal raporlar, başvuru dosyaları
+- `pptx`: yönetim sunumları
 
 **Connector'lar:**
 1. **Google Workspace / Microsoft 365** (özellikle Sheets / Excel)
-2. **Outlook / Gmail** — paydaş iletişimi
-3. (opsiyonel) **DocuSign** — resmi dokümanların imzası
+2. **Outlook / Gmail**: paydaş iletişimi
+3. (opsiyonel) **DocuSign**: resmi dokümanların imzası
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Ay sonu raporlama döngüsü** — rakamlar hazırlanır → Claude anlatı üretir → iç inceleme → yönetime teslim
-- **Denetim hazırlığı** — yıllık denetim öncesi kanıt paketleri ve açıklamalar
-- **Bütçe döngüsü iletişimi** — yıllık bütçe sunumu, gerekçeler, varyans takibi
-- **Başvuru taslağı döngüsü** — KOSGEB / TÜBİTAK / TURQUALITY için yılda 2-3 başvuru
+- **Ay sonu raporlama döngüsü**: rakamlar hazırlanır → Claude anlatı üretir → iç inceleme → yönetime teslim
+- **Denetim hazırlığı**: yıllık denetim öncesi kanıt paketleri ve açıklamalar
+- **Bütçe döngüsü iletişimi**: yıllık bütçe sunumu, gerekçeler, varyans takibi
+- **Başvuru taslağı döngüsü**: KOSGEB / TÜBİTAK / TURQUALITY için yılda 2-3 başvuru
 
-## Gerçek Örnek — Bütçe Varyans Anlatısı
+## Gerçek Örnek: Bütçe Varyans Anlatısı
 
 Mart ayı kapandı. Satış bütçenin %8 altında, pazarlama gideri %15 üstünde. Yönetim kurulu toplantısı cuma.
 
 **Adım 1:** Çalışan varyans tablosunu + 3 aylık trendi Claude'a verir:
-> *"Bu varyanslardan yönetim kuruluna 1 sayfalık bir anlatı yaz. Sadece rakamları tekrar etme — hikayeyi anlat. Mart'taki olağandışı olaylar (Ramazan, fuar iptali) dahil. Finansal olmayan yöneticiler anlayacak. 3 aksiyon maddesi ile bitsin."*
+> *"Bu varyanslardan yönetim kuruluna 1 sayfalık bir anlatı yaz. Sadece rakamları tekrar etme, hikayeyi anlat. Mart'taki olağandışı olaylar (Ramazan, fuar iptali) dahil. Finansal olmayan yöneticiler anlayacak. 3 aksiyon maddesi ile bitsin."*
 
-**Adım 2:** Claude taslak üretir. Çalışan olguları kontrol eder — tüm sayılar doğru.
+**Adım 2:** Claude taslak üretir. Çalışan olguları kontrol eder, tüm sayılar doğru.
 
 **Adım 3:** "Üçüncü paragraf zayıf, Ramazan etkisini daha net göster" diye iterasyon.
 
 **Adım 4:** Cuma toplantısı öncesi çalışan **yönetim FAQ prompt'unu** çağırır: *"CEO bu sayfayı okuduğunda hangi 5 soruyu soracak? Cevaplarıyla birlikte ver."*
 
-Toplam süre: 35 dakika. Normal süreç: 3 saat + 1 gün sonra revizyonlar.
+Toplam süre: yaklaşık 35 dakika (örnek senaryo). Geleneksel süreç: 3 saat ve ertesi gün revizyonlar.
 
 ## Finans için Pazarlık Dışı Çerçeve
 
 > **Claude yazar. Finans profesyoneli olguyu, sayıyı ve imzayı verir. Sorumluluk asla transfer olmaz.**
 
-SPK, bağımsız denetim, mali müşavir standartları — hiçbiri Claude'a devredilemez. Ehliyetli finans profesyoneli her çıktının arkasında durmalı.
+SPK, bağımsız denetim ve mali müşavir standartlarından doğan sorumluluk Claude'a devredilemez. Ehliyetli bir finans profesyoneli her çıktının arkasında durmalıdır.
+
+> **Kişisel veri notu:** Bordro, maaş ve kişi adı içeren müşteri ya da tedarikçi tabloları kişisel veridir. Bunları Claude'a girmeden önce anonimleştirin; yurt dışı aktarım konusunda [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım (KVKK m.9)" bölümüne bakın.
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/) — CFO için hazır CLAUDE.md şablonu
-- [Skills](/wiki/yetenekler/skills/) — `xlsx` skill detayları
-- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Matematik hataları ve halüsinasyon
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Hassas finansal veri hijyeni
+- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/): CFO için hazır CLAUDE.md şablonu
+- [Skills](/wiki/yetenekler/skills/): `xlsx` skill detayları
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Matematik hataları ve halüsinasyon
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Hassas finansal veri hijyeni
 

@@ -1,32 +1,32 @@
 ---
-title: İlk Kurulum — Hesap, Abonelik, Claude Desktop
-description: "Sıfırdan Claude'a başlamak için adım adım kurulum rehberi. Claude.ai'a üye olmak, Pro planı aktive etmek, Claude Desktop'ı kurmak, donanım gereksinimleri, ek yazılımlar."
+title: "İlk Kurulum: Hesap, Abonelik, Claude Desktop"
+description: "Claude'a sıfırdan başlamak için kurulum rehberi: claude.ai'a üye olmak, plan seçmek (Pro veya Max), Claude Desktop'ı kurmak, donanım gereksinimleri."
 tags:
   - temeller
   - kurulum
   - baslangic
   - claude-desktop
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz — bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.
+Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz, bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.
 
 > **Bu sayfayı okumadan önce:**
-> - [Claude Nedir?](/wiki/temeller/claude-nedir/) — Claude'un ne olduğunu anlayın
-> - [Modeller](/wiki/temeller/modeller/) — Sonnet'in neden ana model olduğunu görün
+> - [Claude Nedir?](/wiki/temeller/claude-nedir/): Claude'un ne olduğunu anlayın
+> - [Modeller](/wiki/temeller/modeller/): Günlük iş için neden Sonnet önerdiğimizi görün
 >
-> İkisini okuduğunuzu varsayıyoruz. Yine de uzaklaştıysanız sorun değil — bu sayfa kendi kendine yeter.
+> Okumadıysanız da sorun değil, bu sayfa kendi kendine yeter.
 
 **Toplam süre:** 30-45 dakika (donanımı hazırsa). İnternet hızınıza ve indirme süresine bağlı.
 
 **Yapacaklarımız:**
 
 1. claude.ai'a üye olmak
-2. [Pro planı](/wiki/temeller/planlar/) satın almak
+2. [Plan](/wiki/temeller/planlar/) seçip satın almak (ilk ay Max 5x, yavaş tempoda Pro)
 3. [Claude Desktop](/wiki/araclar/claude-desktop/)'ı indirmek ve kurmak
 4. Workspace klasörü oluşturmak
-5. [Cowork modunu](/wiki/araclar/cowork-modu/) aktifleştirmek
-6. (Bonus) Ek yazılımlar — Chrome, basit editör
+5. [Cowork](/wiki/araclar/cowork-modu/)'ü aktifleştirmek
+6. (Bonus) Ek yazılımlar: Chrome, basit editör
 
 ---
 
@@ -38,27 +38,29 @@ Başlamadan önce bilgisayarınız uygun mu kontrol edelim. Uygun değilse Claud
 
 | Bileşen | Minimum | Önerilen | Kontrol nasıl yapılır? |
 |---|---|---|---|
-| **İşletim sistemi** | Windows 10 (64-bit) veya macOS 12 Ventura | Windows 11 / macOS 14+ | Windows: Sağ alt → "Hakkında" / Mac: Apple ikonu → "Bu Mac Hakkında" |
-| **RAM (bellek)** | 16 GB | 32 GB | Windows: Görev Yöneticisi → Performans / Mac: Bu Mac Hakkında |
+| **İşletim sistemi** | Windows 10 (64-bit) veya üstü, macOS 11 (Big Sur) veya üstü (Linux için aşağıdaki nota bakın) | Windows 11 / macOS 14+ | Windows: Sağ alt → "Hakkında" / Mac: Apple ikonu → "Bu Mac Hakkında" |
+| **RAM (bellek)** | Resmi gereksinim yayımlanmıyor | Bol RAM tercih edin (Cowork ve çok sekmeli tarayıcı birlikte çalışır) | Windows: Görev Yöneticisi → Performans / Mac: Bu Mac Hakkında |
 | **İşlemci** | Intel i5 / i7 (8. nesil veya üstü), AMD Ryzen 5/7, Apple M1+ | Intel i7 (11. nesil+), Ryzen 7, Apple M2+ | Sistem bilgisinden bakın |
 | **Depolama** | 256 GB SSD (en az 10 GB boş) | NVMe SSD, 20+ GB boş | Sürücüler → C: sağ tık → Özellikler |
 | **Ekran** | 1080p (1920×1080) | 1440p veya 4K | Ayarlar → Sistem → Ekran |
 | **İnternet** | 25 Mbps stabil | 50 Mbps | speedtest.net'te ölçün |
 
+> Resmi olarak yayımlanan gereksinim yalnızca işletim sistemi sürümüdür. Diğer satırlar Zamana'nın deneyime dayalı önerisidir.
+
 **Donanımım uymuyorsa ne olur?**
 
-- **8 GB RAM:** Cowork mod yavaş çalışır, sandbox kod çalıştırma takılır. Çalışır ama sinir bozucu.
+- **Az RAM:** Cowork yavaş çalışabilir, sandbox kod çalıştırma takılabilir. Çalışır ama sinir bozucu.
 - **HDD (SSD değil):** Workspace klasörü erişimi yavaş, Claude dosyalarınızı uzun sürede okur.
 - **Eski işlemci:** Çoklu [skill](/wiki/yetenekler/skills/) aynı anda çalıştırılırken bilgisayar zorlanır.
 - **VPN'li ofis ağı:** Kurumsal VPN bazen Claude trafiğini engeller. (IT ile konuşun.)
 
-**Donanım yetersizse:** Önce donanımı yükselten — sonra kuruluma geç. Kötü donanımda kurmaya çalışmak boşa zaman.
+**Donanım yetersizse:** Önce donanımı yükseltin, sonra kuruluma geçin. Kötü donanımda kurmaya çalışmak boşa zaman.
 
 ---
 
 ## Adım 1: Claude.ai'a Üye Olun
 
-### 1.1 Tarayıcıdan Aç
+### 1.1 Tarayıcıdan Açın
 
 Chrome veya Edge tarayıcısını açın. Adres çubuğuna yazın:
 
@@ -66,7 +68,7 @@ Chrome veya Edge tarayıcısını açın. Adres çubuğuna yazın:
 claude.ai
 ```
 
-Enter basın. Anthropic'in ana sayfası açılır.
+Enter'a basın. Anthropic'in ana sayfası açılır.
 
 > **Neden Chrome / Edge?** Modern OAuth (kimlik doğrulama) akışları için en uyumlu. Internet Explorer veya çok eski Firefox sürümleri sorun çıkarabilir.
 
@@ -80,15 +82,15 @@ Sağ üst köşede **"Sign up"** veya **"Get started"** yazan turuncu/mavi düğ
 
 Üç seçenek çıkar:
 
-- **"Continue with Google"** — Gmail hesabınızla
-- **"Continue with Apple"** — iCloud / Apple ID ile
-- **"Continue with email"** — herhangi bir e-posta ile
+- **"Continue with Google"**: Gmail hesabınızla
+- **"Continue with Apple"**: iCloud / Apple ID ile
+- **"Continue with email"**: herhangi bir e-posta ile
 
 **Tavsiye:** Kurumsal kullanım için **şirket e-posta adresinizi** kullanın (`ad@sirket.com` gibi). Kişisel öğrenim için Gmail rahattır.
 
 ### 1.4 E-posta Doğrulama (E-posta seçtiyseniz)
 
-E-posta'nızı yazın → "Continue" / "Devam"
+E-postanızı yazın → "Continue" / "Devam"
 Mail kutunuza Anthropic'ten doğrulama maili gelir.
 Maildeki linke tıklayın → otomatik claude.ai'a döner.
 
@@ -98,20 +100,20 @@ Maildeki linke tıklayın → otomatik claude.ai'a döner.
 
 Claude.ai sizi karşılar, ad-soyad ister:
 
-- **Adınız** ve **soyadınız** (gerçek isim önerilir, sertifikalar bu isme çıkar)
-- **Anthropic'i nasıl duyduğunuz** (opsiyonel anket — istediğinizi seçin)
+- **Adınız** ve **soyadınız** (gerçek isim önerilir)
+- **Anthropic'i nasıl duyduğunuz** (opsiyonel anket: istediğinizi seçin)
 
 "Continue" → ana ekrana düşersiniz.
 
-### 1.6 İlk Görünüm — Free Plandasınız
+### 1.6 İlk Görünüm: Free Plandasınız
 
-Şu an **Free plandasınız**. Kullanım hakkınız var ama çok kısıtlı. Sıradaki adımda Pro'ya geçeceğiz.
+Şu an **Free plandasınız**. Kullanım hakkınız var ama çok kısıtlı. Sıradaki adımda ücretli bir plana geçeceğiz.
 
-> **Önemli — [Free planda](/wiki/temeller/planlar/) Cowork yok.** Workspace, dosya erişimi, skill kullanımı yok. Yalnız ücretli planda çalışır. O nedenle yükseltme şart.
+> **Önemli: [Free planda](/wiki/temeller/planlar/) Cowork yok.** Yerel klasör (workspace) erişimi yok; Claude Design, Slides ve Docs gibi yeni üretim araçları da Free'de bulunmuyor (ücretli planlarda beta). Connectors ve skills Free'de de kullanılabilir, ama bu rehberin Cowork adımları ücretli plan gerektirir. O nedenle yükseltme şart.
 
 ---
 
-## Adım 2: Pro Planı Aktive Edin
+## Adım 2: Planınızı Aktive Edin
 
 ### 2.1 Plan Seçim Ekranı
 
@@ -133,19 +135,19 @@ Plan listesinde **Max 5x'e** tıklayın → "Subscribe to Max" / "Upgrade".
 
 **📖 Yavaş tempoda öğrenmeye başladıysanız → Pro ($20/ay)**
 
-Pro, Cowork modu dahil tüm temel özelliklere erişim verir. [Sonnet 4.6](/wiki/temeller/modeller/), plugin'ler, connector'lar, [scheduled tasks](/wiki/araclar/scheduled-tasks/) — hepsi Pro'da çalışır. Kendi tempoda öğrenen biri için ilk başta yeterlidir.
+Pro, Cowork dahil tüm temel özelliklere erişim verir. [Sonnet 5.5](/wiki/temeller/modeller/), plugin'ler, connector'lar ve [scheduled tasks](/wiki/araclar/scheduled-tasks/) Pro'da çalışır. Kendi tempoda öğrenen biri için ilk başta yeterlidir.
 
 Plan listesinde **Pro'ya** tıklayın → "Subscribe to Pro" / "Upgrade".
 
 > **Ne zaman Pro'dan Max 5x'e geçmeli?**
 >
-> Pro limitlerini sık sık doldurmaya başlarsanız (Claude size "saatlik limit doldu" der), Max 5x'e geçmenin zamanı gelmiştir. Tipik tetikleyiciler:
+> Pro limitlerini sık sık doldurmaya başlarsanız (Claude size kullanım limitinin dolduğunu söyler), Max 5x'e geçmenin zamanı gelmiştir. Tipik tetikleyiciler:
 >
 > - Günde 3+ saat aktif Claude kullanıyorsunuz
 > - Birden fazla connector yoğun çalışıyor
 > - Uzun belge analizi (100+ sayfa) gibi ağır görevleri sık yapıyorsunuz
 >
-> Üst plana geçmek tek tıklama — ayarlar → plan → upgrade. İhtiyaç yoksa Pro'da kalın, parayı boşa atmayın.
+> Üst plana geçmek tek tıklama: ayarlar → plan → upgrade. İhtiyaç yoksa Pro'da kalın, parayı boşa atmayın.
 
 ### 2.3 Plan Düğmesine Basın → "Subscribe" / "Üye Ol"
 
@@ -155,9 +157,9 @@ Yukarıda seçtiğiniz plana göre **"Subscribe to Pro"** veya **"Subscribe to M
 
 - **Kredi kartı** numarası, son kullanma, CVC
 - **Fatura adresi** (kurumsal kullanım için şirket adresi)
-- **Aylık otomatik yenileme** — varsayılan açık. Ne zaman istesen iptal edebilirsin.
+- **Aylık otomatik yenileme**: varsayılan açık. İstediğiniz zaman iptal edebilirsiniz. (Pro'da yıllık ödeme seçeneği de var: $200 peşin, aylık $17 eşdeğeri. Max'te yalnızca aylık.)
 
-> **KDV ve döviz:** Anthropic ABD merkezli — fatura USD olarak gelir. Türk kartınızda otomatik TL'ye çevrilir, kartınızın döviz kuru üzerinden işlem yapılır. KDV Anthropic'in faturasına dahildir.
+> **KDV ve döviz:** Anthropic ABD merkezli, fiyatlar USD ile gösterilir. Türk kartınızda tutar bankanızın kendi kuruyla TL'ye çevrilir. Türkiye faturalama adresiyle ödemede %20 KDV'nin eklendiği bildiriliyor (ikincil kaynaklara göre aylık Pro için karttan yaklaşık $24 çekilir); Anthropic'in Türkiye'ye özel resmi bir KDV sayfasını bulamadık, o yüzden ödeme ekranındaki toplam tutara bakın. Mobil uygulama mağazasından alırsanız TL fiyat web fiyatından farklı çıkar. Kurumsal muhasebe için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına bakın.
 
 ### 2.4 Ödeme Onayı
 
@@ -170,9 +172,9 @@ Banka 3D Secure SMS gelebilir → onaylayın. Anthropic ödeme onayı gönderir.
 
 ### 2.5 Aktivasyon Doğrulama
 
-Plan başarılı kurulduğunda **profilinizde "Pro" rozeti** görünür.
+Plan başarılı kurulduğunda **profilinizde plan rozeti** ("Pro" ya da "Max") görünür.
 
-claude.ai'da herhangi bir sohbet açın, yan menüde [model seçenekleri](/wiki/temeller/modeller/) arasında **Sonnet** görünür olmalı (ve sınırlı Opus). Free'de bu seçenekler yoktu.
+claude.ai'da herhangi bir sohbet açın, yan menüde [model seçenekleri](/wiki/temeller/modeller/) arasında **Sonnet** ve **Opus** görünür olmalı (Fable da listelenir ama Pro'da yalnızca ek kullanım kredisiyle çalışır). Free'de yalnızca Haiku ve Sonnet var.
 
 ---
 
@@ -192,10 +194,10 @@ claude.ai/download
 
 İki büyük düğme var:
 
-- **Windows** — `.exe` dosyası iner (~100-150 MB)
-- **macOS** — `.dmg` dosyası iner
+- **Windows**: `.exe` dosyası iner (~100-150 MB)
+- **macOS**: `.dmg` dosyası iner
 
-> **Linux:** Resmi destek yok. Linux kullanıyorsanız **[Claude.ai web arayüzü](/wiki/araclar/claude-chat/)** ile devam edin. Cowork'ün tüm özellikleri olmasa da çoğu işi yapar.
+> **Linux:** Claude Desktop resmi olarak Linux'u da destekler (Ubuntu 22.04+ / Debian 12+, x64 veya arm64). Linux'ta Cowork için en az 8 GB RAM ve yaklaşık 25 GB boş disk gerekir (KVM gerekli). Bu rehberdeki indirme ve kurulum adımları Windows ve macOS içindir; Linux için resmi kurulum sayfasındaki adımları izleyin. İsterseniz **[Claude.ai web arayüzü](/wiki/araclar/claude-chat/)** ile de devam edebilirsiniz; Cowork web'de beta aşamasındadır ve yerel dosya erişimi kısmidir, workspace klasörü adımları (Adım 6 ve 7) masaüstü uygulaması gerektirir.
 
 ### 3.3 İndirme
 
@@ -224,13 +226,13 @@ Dosya **İndirilenler** (Downloads) klasörüne iner. İndirme bitene kadar bekl
 4. **Spotlight** açın (Cmd+Space) → **"Claude"** yazın → açın
 5. İlk açılışta macOS "indirilen uygulamayı çalıştırmak istediğinize emin misiniz?" sorabilir → **"Open"**
 
-### 4.3 Şirket Bilgisayarındaysanız — IT Engelleri
+### 4.3 Şirket Bilgisayarındaysanız: IT Engelleri
 
 Şirket bilgisayarına yazılım kuramıyorsanız:
 
 - **IT'den izin isteyin:** "Claude Desktop kurmamız gerekiyor, Anthropic'in resmi yazılımı, anthropic.com domaininden indirildi"
 - **Domain whitelist:** `claude.ai`, `anthropic.com` ve Claude Desktop arka uç adresleri firewall'da açık olmalı
-- **VPN testi:** Bazı kurumsal VPN'ler Claude trafiğini bozar — IT'ye bunu da test ettirin
+- **VPN testi:** Bazı kurumsal VPN'ler Claude trafiğini bozar: IT'ye bunu da test ettirin
 
 [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında IT için detaylı liste var.
 
@@ -245,9 +247,9 @@ Claude Desktop ilk açıldığında giriş ekranı çıkar.
 3. Claude.ai'da zaten girişliyseniz → otomatik onay
 4. Değilse → giriş bilgilerinizi yazın
 5. **"Authorize"** / **"Onayla"** → Claude Desktop'a geri döner
-6. Artık masaüstü uygulamanızda Pro hesabınızla bağlısınız
+6. Artık masaüstü uygulamanızda ücretli hesabınızla bağlısınız
 
-**Doğrulama:** Sağ üst köşede profil resminiz / baş harfleriniz + **"Pro"** rozeti görünmeli.
+**Doğrulama:** Sağ üst köşede profil resminiz / baş harfleriniz + plan rozeti (**"Pro"** ya da **"Max"**) görünmeli.
 
 ---
 
@@ -262,7 +264,7 @@ Claude Desktop'ın "Cowork" özelliği bilgisayarınızdaki belirli bir klasör�
 - **Windows:** `C:\ClaudeWorkspace`
 - **macOS:** `~/ClaudeWorkspace` (ana klasörünüzün altında)
 
-> **Asla OneDrive / iCloud / Google Drive senkronize klasörlerinin içine koymayın!** Senkronizasyon çakışmaları yaşarsınız — Claude bir dosya yazarken OneDrive aynı anda buluta yüklemeye çalışır, çakışır, dosya bozulur.
+> **Asla OneDrive / iCloud / Google Drive senkronize klasörlerinin içine koymayın!** Senkronizasyon çakışmaları yaşarsınız, Claude bir dosya yazarken OneDrive aynı anda buluta yüklemeye çalışır, çakışır, dosya bozulur.
 
 ### 6.2 Klasörü Yaratın
 
@@ -290,25 +292,27 @@ ClaudeWorkspace/
 └── prompts/         (kullandığınız prompt kütüphanesi)
 ```
 
-Şu an boş kalsın — zamanla dolar.
+Şu an boş kalsın, zamanla dolar.
 
 ---
 
-## Adım 7: Cowork Modunu Aktifleştirin
+## Adım 7: Cowork'ü Aktifleştirin
 
 ### 7.1 Cowork Sekmesi
 
 Claude Desktop'ın **sol üst köşesinde, 3 küçük ikon** şeklinde sekmeler vardır (yakın zamanda yenilenen arayüz). Soldan sağa sırasıyla:
 
-- 💬 **Chats** — konuşma balonu ikonu, normal sohbet için
-- ≡ **Cowork** — küçük yatay çizgili liste ikonu (ortadaki), bizim ihtiyacımız olan
-- `</>` **Code** — kod parantezleri + "Code" yazılı, geliştirici modu
+- 💬 **Chats**: konuşma balonu ikonu, normal sohbet için
+- ≡ **Cowork**: küçük yatay çizgili liste ikonu (ortadaki), bizim ihtiyacımız olan
+- `</>` **Code**: kod parantezleri + "Code" yazılı, geliştirici modu
 
 **Ortadaki Cowork ikonuna tıklayın.**
 
-> [Projects](/wiki/araclar/projects/) artık ayrı bir sekme değil — Cowork ve Chats içinde alt seçenek olarak yer alıyor.
+> [Projects](/wiki/araclar/projects/) artık ayrı bir sekme değil, Cowork ve Chats içinde alt seçenek olarak yer alıyor. 17 Eylül 2026'da yeniden tasarlandı (beta): [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
 
-### 7.2 İlk Açılış — "Get Started"
+> **Güncel not (16 Eylül 2026):** Cowork ve sohbet tek Claude'da birleşiyor, yayılım kademeli (önce Pro ve Max). Hesabınızda birleşik arayüz açıldıysa ayrı bir Cowork ikonu görmeyebilirsiniz; bu durumda doğrudan yeni bir konuşma açıp workspace klasörünü orada bağlayın. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
+
+### 7.2 İlk Açılış: "Get Started"
 
 Cowork ilk açıldığında karşılama ekranı çıkar:
 
@@ -336,13 +340,13 @@ Cowork sohbet alanına yazın:
 Merhaba. Workspace klasörümü görebiliyor musun? İçinde hangi klasörler var?
 ```
 
-Claude listeleyecek: `projeler/, raporlar/, arsiv/, prompts/`. Bu listeyi görüyorsa **Cowork çalışıyor** demektir.
+Claude listeleyecek: `projeler/, raporlar/, arsiv/, prompts/`. Bu listeyi görüyorsanız **Cowork çalışıyor** demektir.
 
 ---
 
 ## Adım 8: CLAUDE.md Başlangıç Dosyası
 
-Claude'un sizi her oturumda yeniden tanımak zorunda kalmaması için workspace kök klasörüne **[CLAUDE.md](/wiki/claude-md/nedir/)** adlı bir dosya koymalıyız. Bu dosya Claude'un kalıcı hafızasıdır.
+Claude'un sizi her oturumda yeniden tanımak zorunda kalmaması için workspace kök klasörüne **[CLAUDE.md](/wiki/claude-md/nedir/)** adlı bir dosya koymalıyız. Bu dosya, sizin yazıp düzenlediğiniz kalıcı talimat ve bağlam dosyasıdır (Claude'un kendi otomatik hafızasından ayrıdır).
 
 ### 8.1 Dosyayı Yaratın
 
@@ -361,7 +365,7 @@ Claude'un sizi her oturumda yeniden tanımak zorunda kalmaması için workspace 
 Dosyayı bir editör ile açın (Notepad veya TextEdit yeterli) ve şunu yapıştırın, kendi bilgilerinizle değiştirin:
 
 ```markdown
-# CLAUDE.md — [Adınız]
+# CLAUDE.md: [Adınız]
 
 ## Kim Olduğum
 - İsim: [Ad Soyad]
@@ -375,10 +379,10 @@ Dosyayı bir editör ile açın (Notepad veya TextEdit yeterli) ve şunu yapış
 
 ## Her Zaman / Asla
 - Her zaman: önemli yazıları göndermeden önce taslağı göster
-- Asla: tahmini bilgi olarak verme — emin değilsen söyle
+- Asla: tahmini bilgi olarak verme, emin değilsen söyle
 ```
 
-Kaydedin. Bu kadar yeterli — zamanla genişletirsiniz.
+Kaydedin. Bu kadar yeterli, zamanla genişletirsiniz.
 
 [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) sayfasında detaylı şablon var.
 
@@ -390,7 +394,7 @@ Cowork'te yeni sohbet açın:
 CLAUDE.md dosyamı okudun mu? Beni özetle.
 ```
 
-Claude doğru özetlerse — kurulum tamam.
+Claude doğru özetlerse, kurulum tamam.
 
 ---
 
@@ -413,7 +417,7 @@ CLAUDE.md ve markdown dosyalarını düzenlemek için Notepad/TextEdit yeterli. 
 - İlk açılışta Türkçe dil paketi önerilir → kabul edin
 - Dosyaları VS Code ile açmak için: dosyaya sağ tıklayın → "VS Code ile aç"
 
-**Şart değil** — Notepad ile de yapılır.
+**Şart değil**: Notepad ile de yapılır.
 
 ### Microsoft Office veya Google Workspace
 
@@ -421,7 +425,7 @@ Cowork'ün ürettiği `.docx`, `.xlsx`, `.pptx` dosyalarını açmak için:
 
 - **Microsoft 365** (kurumsal genelde var)
 - veya **Google Workspace** (ücretsiz Google hesabıyla yeterli)
-- veya **LibreOffice** (ücretsiz alternatif — [libreoffice.org](https://www.libreoffice.org))
+- veya **LibreOffice** (ücretsiz alternatif: [libreoffice.org](https://www.libreoffice.org))
 
 Birini kurmuş olmanız yeterli.
 
@@ -453,7 +457,7 @@ Birini kurmuş olmanız yeterli.
 
 ### "Yavaş çalışıyor"
 
-- RAM'iniz 16 GB'tan az mı? Diğer ağır uygulamaları (özellikle Chrome'un 50 sekmesi) kapatın
+- RAM'iniz kısıtlı mı? Diğer ağır uygulamaları (özellikle Chrome'un 50 sekmesi) kapatın
 - Workspace klasörü HDD'de mi? SSD'ye taşıyın
 - Çok büyük dosyalarla çalışıyorsanız parçalayın
 
@@ -467,7 +471,7 @@ Birini kurmuş olmanız yeterli.
 
 ## Sıradaki Adım: İlk 7 Gün
 
-Kurulum tamam. Artık Claude Desktop ve Cowork'ü kullanabiliyorsunuz. Ama şimdi **doğru ilk hafta** önemli — bilgiyi alışkanlığa çevirmek için.
+Kurulum tamam. Artık Claude Desktop ve Cowork'ü kullanabiliyorsunuz. Ama şimdi **doğru ilk hafta** önemli, bilgiyi alışkanlığa çevirmek için.
 
 [**İlk 7 Gün Rehberi**](/wiki/temeller/ilk-7-gun/) → gün gün ne yapacağınızı, hangi hatalardan kaçınacağınızı, haftanın sonunda nerede olacağınızı anlatır.
 
@@ -475,10 +479,10 @@ Kurulum tamam. Artık Claude Desktop ve Cowork'ü kullanabiliyorsunuz. Ama şimd
 
 ## İlgili Sayfalar
 
-- [İlk 7 Gün Rehberi](/wiki/temeller/ilk-7-gun/) — Kurulum sonrası ilk hafta
-- [Claude Desktop](/wiki/araclar/claude-desktop/) — Uygulama detayları
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Cowork'ün ne olduğu
-- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — Hafıza dosyası şablonu
-- [Claude Planları](/wiki/temeller/planlar/) — Plan detayları, Pro → Max upgrade mantığı
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — IT için kurumsal kurulum gereksinimleri
+- [İlk 7 Gün Rehberi](/wiki/temeller/ilk-7-gun/): Kurulum sonrası ilk hafta
+- [Claude Desktop](/wiki/araclar/claude-desktop/): Uygulama detayları
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Cowork'ün ne olduğu
+- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Hafıza dosyası şablonu
+- [Claude Planları](/wiki/temeller/planlar/): Plan detayları, Pro → Max upgrade mantığı
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): IT için kurumsal kurulum gereksinimleri
 

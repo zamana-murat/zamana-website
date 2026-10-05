@@ -1,31 +1,31 @@
 ---
-title: Computer Use — Claude Ekranı Görür ve Kontrol Eder
+title: "Computer Use: Claude Ekranı Görür ve Kontrol Eder"
 description: "Computer Use, Claude'a gözler ve eller verir. Ekrana bakar, ne göreceğini karar verir, tıklar, yazar. API olmayan eski sistemlerde bile çalışır."
 tags:
   - yetenekler
   - computer-use
   - otomasyon
   - erp
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Computer Use, Claude'a bilgisayar ekranında gözler ve eller veren özelliktir.** Yapılandırılmış bir API veya connector kullanmak yerine Claude ekran görüntüsü alır, ne gördüğünü analiz eder, bir eylem kararı verir ve uygular — tıklar, yazar, kaydırır, gezinir. Sonra yeni bir ekran görüntüsü alır ve devam eder.
+**Computer Use, Claude'a bilgisayar ekranında gözler ve eller veren özelliktir.** Yapılandırılmış bir API veya connector kullanmak yerine Claude ekran görüntüsü alır, ne gördüğünü analiz eder, bir eylem kararı verir ve uygular: tıklar, yazar, kaydırır, gezinir. Sonra yeni bir ekran görüntüsü alır ve devam eder.
 
-Şu an Cowork içinde **research preview** aşamasındadır.
+**Güncel kapsam:** Computer use bir **research preview**'dur ve yalnızca **Pro ve Max** planlarında vardır; Team ve Enterprise'ta yoktur. Yalnızca masaüstü uygulamasında (macOS 15 ve üstü, Windows) [Cowork](/wiki/araclar/cowork-modu/) ve Claude Code içinde çalışır; claude.ai web sohbetinde yoktur. Açmak için Ayarlar > General > Computer use anahtarını kullanırsınız. İlk çıkış 23 Mart 2026'dır.
 
-Neden önemli? **Çünkü API'si olmayan her yazılımda çalışır.** Türkiye'deki orta ölçekli şirketlerin %80'i hâlâ API'si olmayan eski sistemler kullanıyor. Computer Use, Claude'u bu şirketler için **evrensel otomasyon katmanı** haline getirir.
+Neden önemli? **Çünkü API'si olmayan yazılımlarda da çalışabilir.** Türkiye'deki birçok orta ölçekli şirket hâlâ API'si olmayan eski sistemler kullanıyor. Computer Use, Claude'u bu şirketler için **evrensel bir otomasyon katmanına** yaklaştırır; yine de research preview olduğu için her sistemde aynı güvenilirlikte çalışmaz.
 
 ## Nasıl Çalışır?
 
 Döngü basit ama güçlü:
 
 1. Claude ekran görüntüsünü alır (tüm ekran veya belirli bir uygulama penceresi)
-2. Görsel içeriği analiz eder — metinleri okur, UI öğelerini tespit eder, düzeni anlar
+2. Görsel içeriği analiz eder: metinleri okur, UI öğelerini tespit eder, düzeni anlar
 3. Bir sonraki eyleme karar verir: bu düğmeye tıkla, bu alana yaz, aşağı kaydır, bu URL'ye git
 4. Eylemi fare / klavye simülasyonuyla uygular
 5. Sonucu doğrulamak için yeni bir ekran görüntüsü alır, sonra devam eder
 
-Görev bitene kadar bu döngü tekrarlanır. Claude **gördüğü şey hakkında akıl yürütür** — beklenmedik bir şey (hata kutusu, CAPTCHA, farklı bir sayfa) çıkarsa başarısız olmak yerine adapte olur.
+Görev bitene kadar bu döngü tekrarlanır. Claude **gördüğü şey hakkında akıl yürütür**, beklenmedik bir şey (hata kutusu, farklı bir sayfa) çıkarsa çoğu zaman başarısız olmak yerine adapte olur.
 
 ## İş Dünyası İçin Neden Kritik?
 
@@ -37,17 +37,17 @@ Computer Use'un büyük farkı: **GUI (grafik arayüzü) olan her yazılımda ç
 - **Masaüstü uygulamalar** (eski Office versiyonları, sektörel özel yazılımlar)
 - **Şu an insanın elle tıklayarak yaptığı her sistem**
 
-Türkiye'deki mali müşavir programları, yerel ERP'ler, SGK portalı, GİB e-Beyanname, Ticaret Bakanlığı portalları — hiçbirinde API yok. Ama hepsi GUI. Hepsi Computer Use ile otomatize edilebilir.
+Türkiye'deki mali müşavir programları, yerel ERP'ler, SGK portalı, GİB e-Beyanname ve Ticaret Bakanlığı portallarının çoğunda genel amaçlı bir API yoktur, ama hepsinin bir arayüzü vardır. Bu yüzden Computer Use ile otomatize edilmeleri denenebilir.
 
 ## Cowork'teki Öncelik Sırası
 
 Claude bir görev aldığında her zaman en güvenilir yöntemi önce dener:
 
-1. **Connector (MCP)** — en hızlı ve güvenilir; yapılandırılmış API kullanır
-2. **Tarayıcı otomasyonu** — ekran etkileşimi olmadan bir web sitesinde gezinir
-3. **Computer Use** — son çare; her şey üzerinde çalışır ama daha yavaş ve daha az güvenilir
+1. **Connector (MCP)**: en hızlı ve güvenilir; yapılandırılmış API kullanır
+2. **Tarayıcı otomasyonu**: ekran etkileşimi olmadan bir web sitesinde gezinir
+3. **Computer Use**: son çare; çok şey üzerinde çalışır ama daha yavaş ve daha az güvenilir
 
-Computer Use, **Claude'u evrensel yapan** son kademedir — sadece API'si olan uygulamalar değil, her şey.
+Computer Use, **kapsamı genişleten** son kademedir: yalnızca API'si olan uygulamalar değil, ekranı olan hemen her şey.
 
 ## Gerçek İş Otomasyon Örnekleri
 
@@ -55,25 +55,25 @@ Computer Use, **Claude'u evrensel yapan** son kademedir — sadece API'si olan u
 
 Claude taranmış bir kartvizit yığınını veya e-posta imzalarını okur. CRM'i açar. Tek tek kayıtları oluşturur.
 
-Normalde 2 saatlik elle giriş işi, Claude 10 dakika içinde bitirir.
+Normalde 2 saatlik elle giriş işini Claude çok daha kısa sürede bitirebilir (süre kayıt sayısına ve sisteme göre değişir).
 
 ### Devlet Portalı Gönderimleri
 
 Claude SGK, GİB veya Ticaret Bakanlığı portalına gider. Yapılandırılmış veriyi forma doldurur. Gönderir. Onay belgesini alır.
 
-Bu portallar API sunmaz. Computer Use olmasa her görev elle yapılmak zorunda.
+Bu portallar genellikle API sunmaz. Giriş, e-imza ve mobil onay adımlarını yine siz yaparsınız.
 
 ### Eski ERP Güncellemesi
 
 Claude ERP'yi açar, ilgili ekrana gider, bir Excel dosyasındaki verileri girer. Entegrasyon gerektirmez.
 
-Orta büyüklükteki Türk üreticilerin çoğunda bu iki saatlik bir günlük iş. Computer Use ile arka planda çalışır.
+Birçok üreticide bu iş günde yaklaşık iki saat sürer. Computer Use ile bu işi Claude'a devretmeyi deneyebilirsiniz.
 
 ### Rakip Fiyat Takibi
 
 Claude rakip web sitelerini açar, fiyat sayfalarına gider, güncel fiyatları kaydeder, karşılaştırma tablosuna yazar.
 
-Haftalık pazarlama istihbarat işi, 20 dakikaya iner.
+Haftalık pazarlama istihbarat işi kısalır.
 
 ### Form İşleme
 
@@ -81,17 +81,17 @@ Claude bir PDF form açar, yapılandırılmış bir kaynaktan veri doldurur, kay
 
 ## Sınırlamalar
 
-- **Connector'lardan daha yavaş** — her eylem ekran görüntüsü döngüsü gerektirir (saniye, milisaniye değil)
-- **Dinamik UI'larda daha az güvenilir** — hızla değişen ekranlar veya animasyonlar görsel muhakemeyi karıştırabilir
-- **Bilgisayar açık ve kilitsiz olmalı** — yerel olarak çalışır; makine uyanık olmalı
-- **Karmaşık görevlerde tam otonom değil** — açık adım adım görevlerde en iyi çalışır; açık uçlu gezinme sapabilir
-- **Research preview** — güvenilirlik artıyor ama kritik iş akışları için henüz prodüksiyon sınıfı değil
+- **Connector'lardan daha yavaş**: her eylem ekran görüntüsü döngüsü gerektirir (saniye, milisaniye değil)
+- **Dinamik UI'larda daha az güvenilir**: hızla değişen ekranlar veya animasyonlar görsel muhakemeyi karıştırabilir
+- **Bilgisayar açık ve kilitsiz olmalı**: yerel olarak çalışır; makine uyanık olmalı
+- **Karmaşık görevlerde tam otonom değil**: açık adım adım görevlerde en iyi çalışır; açık uçlu gezinme sapabilir
+- **Research preview**: güvenilirlik artıyor ama kritik iş akışları için henüz prodüksiyon sınıfı değil
 
 ## Cowork Entegrasyonu
 
-Cowork'te Computer Use **daha iyi bir yöntem yoksa otomatik olarak devreye girer**. Çalışan ne gerektiğini anlatır; eğer ekran etkileşimi gerekiyorsa Claude onu halleder.
+Cowork'te ne gerektiğini anlatırsınız; ekran etkileşimi gerekiyorsa Claude yukarıdaki sırayı izleyip Computer Use'a kendisi geçer.
 
-Research preview döneminde çalışan **her adımda Claude'un eylemlerini onaylayabilir** veya yönlendirebilir. "Yanlış yere tıklama" gibi durumları önler.
+Research preview döneminde **her adımda Claude'un eylemlerini onaylayabilir** veya yönlendirebilirsiniz. Bu, "yanlış yere tıklama" gibi hataları önler.
 
 ## Türk Kurumsal Kullanıcısı İçin Neden Değerli?
 
@@ -102,29 +102,27 @@ Türkiye'deki orta ölçekli şirketlerin çoğu **eski sistemler üzerinde çal
 - SGK, GİB, Ticaret Bakanlığı portalları
 - Excel tabanlı makro "sistemler"
 
-Bu şirketlerin çoğunda dijital dönüşüm konuşmaları yapılır ama yeni yazılım geçişi 2-3 yıl sürer. Bu arada çalışanlar **elle tıklamaya devam eder**.
-
-Computer Use bu yatırımı beklemeden şu an otomatize eder.
+Bu şirketlerde dijital dönüşüm konuşulur, ama yeni yazılıma geçiş uzun sürer. Bu arada çalışanlar **elle tıklamaya devam eder**. Computer Use, yeni yazılım yatırımını beklemeden bazı işleri otomatize etmeyi denemenizi sağlar.
 
 Kritik soru:
 
 > **"Ekibiniz her gün kimsenin otomatize etmediği bir sisteme tıklayarak yaptığı bir iş var mı?"**
 
-Cevap "evet"se (genellikle öyledir), Computer Use'un zamanı gelmiştir.
+Cevap "evet"se, Computer Use denemeye değer. Önce küçük ve geri alınabilir bir işle başlayın.
 
 ## Güvenlik ve Kontrol
 
 Computer Use güçlüdür, sorumluluk da öyle:
 
-- Her eylem size görünür olarak çalışır — arka planda gizli eylem yok
+- Eylemler ekranınızda görünür çalışır
 - Kritik eylemlerde (kayıt silme, form gönderme, para transferi) onay ister
-- Sandbox izolasyonu yerine gerçek bilgisayarınızda çalışır — bu nedenle test ortamlarında önce deneyin
-- Hassas hesap bilgileriniz CLAUDE.md veya workspace'e yazılmamalı — [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) kurallarına bakın
+- Sandbox izolasyonu yerine gerçek bilgisayarınızda çalışır: bu nedenle test ortamlarında önce deneyin
+- Hassas hesap bilgileriniz CLAUDE.md veya workspace'e yazılmamalı, [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) kurallarına bakın
 
 ## İlgili Sayfalar
 
-- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) — Computer Use'un temelindeki görsel muhakeme
-- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Computer Use'tan önce denenecek öncelikli yöntem
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Computer Use'un yaşadığı ortam
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Otomasyon güvenlik kuralları
+- [Görsel ve Görüntü](/wiki/yetenekler/vision-image/): Computer Use'un temelindeki görsel muhakeme
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Computer Use'tan önce denenecek öncelikli yöntem
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Computer Use'un yaşadığı ortam
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Otomasyon güvenlik kuralları
 

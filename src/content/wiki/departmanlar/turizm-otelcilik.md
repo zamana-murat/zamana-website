@@ -1,53 +1,53 @@
 ---
-title: Turizm ve Otelcilik — Claude Uygulamaları
-description: Turizm ve otelcilik için Claude — çoklu dilde misafir iletişimi, online yorum yönetimi, paket içeriği, rezervasyon sorularına hızlı yanıt.
+title: "Turizm ve Otelcilik: Claude Uygulamaları"
+description: "Turizm ve otelcilik için Claude: çok dilli misafir iletişimi, online yorum yönetimi, paket içeriği, rezervasyon sorularına hızlı yanıt."
 tags:
   - departmanlar
   - turizm
   - otel
   - misafir-iletisim
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Türkiye'de turizm stratejik sektör — ekonominin önemli bir dilimi, milyonlarca uluslararası misafir, çok dilli iletişim zorunluluğu. Otel, acente, tur operatörü için **dil çeşitliliği + 24/7 misafir iletişimi + online yorum yönetimi** Claude'un en hızlı değer ürettiği alanlardandır.
+Türkiye'de turizm stratejik bir sektör: ekonominin önemli bir dilimi, milyonlarca uluslararası misafir ve çok dilli iletişim zorunluluğu. Otel, acente ve tur operatörü için **dil çeşitliliği, kesintisiz misafir iletişimi ve online yorum yönetimi**, Claude'un hızlı değer ürettiği alanlardandır.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
-- 8+ dilde misafir iletişimi sürekli yetersiz
+- 8'den fazla dilde misafir iletişimi sürekli yetersiz kalıyor
 - Booking.com / TripAdvisor yorumlarına yanıt yetişmiyor
 - Tur paket içerikleri her sezon sıfırdan yazılıyor
-- Misafir sorularına yanıt yavaş, özelleşmiyor
+- Misafir sorularına yanıt yavaş ve kişiselleşmiyor
 - Acentelerle yazışmalar standart değil
-- Sosyal medya içerik üretimi az ve klişe
+- Sosyal medya içeriği az ve klişe
 
-## Bölüm 1 — Çok Dilli Misafir İletişimi
+## Bölüm 1: Çok Dilli Misafir İletişimi
 
-### Otomatik Çeviri ve Lokalize Yanıt
+### Çeviri ve Yerelleştirilmiş Yanıt
 
-Misafir İngilizce, Almanca, Rusça, Arapça, Çince, Fransızca yazıyor. Çalışan İngilizce dışında zorlanıyor. Claude:
+Misafir İngilizce, Almanca, Rusça, Arapça, Çince veya Fransızca yazıyor; çalışan İngilizce dışında zorlanıyor. Claude:
 
-- 30+ dilde **profesyonel** otel iletişimi
-- Direkt çeviri değil — kültürel uygunluk gözetir
-- Otel marka voice'unda
-- Hızlı yanıt için tek prompt
+- Onlarca dilde **profesyonel** otel iletişimi kurar
+- Birebir çeviri yapmaz, kültürel uygunluğu gözetir
+- Otelin marka sesini korur
+- Hızlı yanıt için tek bir prompt yeter
 
-[Voice Mode](/wiki/araclar/voice-mode/) ile dikteyle çoklu dilde yanıt da mümkün.
+Sesli dikte ile çok dilli yanıt hazırlamak için [Voice Mode](/wiki/araclar/voice-mode/) sayfasına bakın; hangi dillerin desteklendiğini önceden kontrol edin.
 
 ### Önemli Kültürel Nüanslar
 
-Claude şu inceliklere dikkat eder:
+Claude şu inceliklere dikkat edebilir (genel eğilimlerdir, kalıp yargı değil):
 
-- **Almanca** misafirde: net, doğrudan, fazla "polite" abartısı yok
-- **Rusça** misafirde: sıcak ama formal kalan, üretim hatasına direkt değil yumuşak yaklaşım
+- **Almanca** misafirde: net, doğrudan, abartılı nezaket kalıpları olmadan
+- **Rusça** misafirde: sıcak ama resmî; hatayı doğrudan değil, yumuşak biçimde ele alan bir yaklaşım
 - **Arapça** misafirde: misafirperverlik vurgusu, klasik selam kalıpları
-- **Japon** misafirde: ekstra incelikli, talep değil rica formu
+- **Japon** misafirde: ekstra incelik, talep yerine rica kalıbı
 - **İskandinav** misafirde: sade, az kelimeli, şeffaf
 
-Bu hassasiyetleri Claude doğal olarak getirir; **çalışanın 8 dil bilmesine gerek kalmaz.**
+Claude bu hassasiyetleri doğal olarak getirir; **çalışanın 8 dil bilmesi gerekmez.** Yine de kritik yazışmaları ana dili bilen biri kontrol etmelidir.
 
 ### Şikayet Yönetimi
 
-Misafir şikayetinin çözümü hız + diplomatik tonda olur. Claude:
+Misafir şikayetinin çözümünde hız ve diplomatik ton belirleyicidir. Claude:
 
 - Şikayet özünü tespit eder
 - Şirketin sorumluluğu olan / olmayan kısımları ayırır
@@ -58,132 +58,134 @@ Misafir şikayetinin çözümü hız + diplomatik tonda olur. Claude:
 
 [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası şikayet yönetimi temellerini verir.
 
-## Bölüm 2 — Online Yorum Yönetimi
+## Bölüm 2: Online Yorum Yönetimi
 
 ### Yorum Yanıtı
 
-TripAdvisor, Booking, Google Reviews — her biri farklı ton, farklı uzunluk. Claude:
+TripAdvisor, Booking ve Google Reviews'ın her birinde ton ve uzunluk farklıdır. Claude:
 
-- Yoruma **kişisel** yanıt yazar (boilerplate değil)
-- Olumlu yorumlarda samimi teşekkür
-- Olumsuz yorumlarda savunmaya geçmeden çözüm
+- Yoruma **kişisel** bir yanıt yazar (hazır kalıp değil)
+- Olumlu yorumlarda samimi teşekkür eder
+- Olumsuz yorumlarda savunmaya geçmeden çözüm sunar
 - Otel adını tekrar etme klişesinden kaçınır
-- 30+ dilde
+- Onlarca dilde yanıt verebilir
 
 ### Yorum Trend Analizi
 
-Aylık tüm yorumları Claude'a verirsiniz, içgörü çıkarır:
+Aylık tüm yorumları Claude'a verirsiniz, şu içgörüleri çıkarır:
 
 - En sık övülen 3 nokta (pazarlama içeriği için altın)
 - En sık eleştirilen 3 nokta (operasyon iyileştirmesi için)
 - Yeni trend (geçen ay yoktu, bu ay artıyor)
-- Müşteri profili kayması (örn. "Avrupalı düşmüş, MENA artmış")
+- Müşteri profili kayması (örn. "Avrupalı azalmış, MENA artmış")
 
-[Code Execution](/wiki/yetenekler/code-execution/) ile sayısal trend grafikleri de.
+[Code Execution](/wiki/yetenekler/code-execution/) ile sayısal trend grafikleri de çıkarılabilir.
 
 ### Yorum Toplama Stratejisi
 
-Memnun misafire **doğru zamanda doğru kanaldan** yorum hatırlatma e-postası. Claude segment başına ayrı taslak hazırlar.
+Memnun misafire **doğru zamanda, doğru kanaldan** yorum hatırlatma e-postası. Claude segment başına ayrı taslak hazırlar.
 
-## Bölüm 3 — Tur ve Paket İçeriği
+## Bölüm 3: Tur ve Paket İçeriği
 
 ### Tur Paket Açıklaması
 
-"5 gün Kapadokya turu" gibi paketin web sitesi açıklaması. Claude:
+"5 gün Kapadokya turu" gibi bir paketin web sitesi açıklaması. Claude:
 
-- Hedef pazar başına farklı (Türk pazarı, Avrupa, Asya — farklı vurgular)
-- Görsel açıklama (her gün ne yapılacak, ne hissedilecek)
-- Pratik bilgi (dahildir/değildir, ne giymeli)
-- SEO uyumlu
+- Hedef pazara göre farklı vurgular kurar (Türk pazarı, Avrupa, Asya)
+- Görsel bir anlatım yazar (her gün ne yapılacak, ne hissedilecek)
+- Pratik bilgi ekler (dahil olanlar/olmayanlar, ne giyilmeli)
+- SEO ile uyumlu yazar
 
 ### Tur Programı (Itinerary)
 
-Misafire gönderilecek detaylı tur programı. Claude saat saat planı düzenler, opsiyonel aktiviteleri belirtir, ilerleme tahminleri verir.
+Misafire gönderilecek detaylı tur programı. Claude saat saat planı düzenler, opsiyonel aktiviteleri belirtir ve tahmini süreleri verir.
 
 ### Tematik Tur Önerileri
 
-Misafir profiline (yaş, ilgi, bütçe, süre) göre özel tur önerileri Claude'la hızla üretilir.
+Misafir profiline (yaş, ilgi, bütçe, süre) göre özel tur önerileri Claude ile hızla üretilir.
 
-## Bölüm 4 — Acente ve B2B İletişimi
+## Bölüm 4: Acente ve B2B İletişimi
 
 ### Acente Tanıtım Materyali
 
-Yurt içi ve yabancı acentelerle çalışan oteller için tanıtım kiti — özellikler, fiyat, dağıtım koşulları. Claude'la profesyonel, çok dilli.
+Yurt içi ve yabancı acentelerle çalışan oteller için tanıtım kiti: özellikler, fiyat, dağıtım koşulları. Claude ile profesyonel ve çok dilli.
 
 ### Sezonluk Fiyat Listesi İletişimi
 
-Yıllık fiyat listesi acentelere gönderilirken açıklama mektubu — değişiklikler, teşvikler, takvim. Claude tutarlı format kurar.
+Yıllık fiyat listesi acentelere gönderilirken eşlik eden açıklama mektubu: değişiklikler, teşvikler, takvim. Claude tutarlı bir format kurar.
 
 ### Konsorsiyum / Toplantı Yazışmaları
 
-WTM London, ITB Berlin, FITUR gibi turizm fuarları sonrası yazışmalar. Claude'la profesyonel takip.
+WTM London, ITB Berlin, FITUR gibi turizm fuarları sonrası yazışmalar. Claude ile profesyonel takip.
 
-## Bölüm 5 — Sosyal Medya ve İçerik
+## Bölüm 5: Sosyal Medya ve İçerik
 
 ### Instagram / TikTok
 
-Otel/destinasyon sosyal medya içeriği. Görsel siz çekersiniz, metin Claude. Hashtag, mention stratejisi dahil.
+Otel veya destinasyon için sosyal medya içeriği. Görseli siz çekersiniz, metni Claude yazar; hashtag ve etiketleme stratejisi dahil.
 
-[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfasında genel sosyal medya yaklaşımı.
+[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfasında genel sosyal medya yaklaşımı var.
 
 ### Blog ve SEO
 
-"Antalya'da yapılacak 10 şey", "Kapadokya'da en iyi yemek nerede" tarzı SEO odaklı içerikler Claude'la haftalık ritmde.
+"Antalya'da yapılacak 10 şey", "Kapadokya'da en iyi yemek nerede" gibi SEO odaklı içerikler Claude ile haftalık ritimde üretilebilir.
 
 ### Video Senaryo
 
-Otel tanıtım videosu, destinasyon vlog senaryoları. Çekim listesi de Claude'la çıkarılır.
+Otel tanıtım videosu ve destinasyon vlog senaryoları. Çekim listesi de Claude ile çıkarılabilir.
 
-## Bölüm 6 — Rezervasyon ve Operasyon
+## Bölüm 6: Rezervasyon ve Operasyon
 
 ### Sıkça Sorulan Sorular
 
-Otel SSS sayfası kapsamlı olmalı: havuz saatleri, kahvaltı bilgisi, transfer detayı, evcil hayvan kuralı, çocuk politikası, vb. Claude bütün konuları tarar, ana ve dil-spesifik versiyonlar üretir.
+Otel SSS sayfası kapsamlı olmalı: havuz saatleri, kahvaltı bilgisi, transfer detayı, evcil hayvan kuralı, çocuk politikası vb. Claude bütün konuları tarar, ana ve dile özgü versiyonlar üretir.
 
 ### Pre-Stay E-postası
 
-Misafir rezervasyon yapınca → Claude welcome e-postası taslağı çıkarır. "Ne hazırlanmalı, neye dikkat", varsa upsell (oda upgrade, paket).
+Misafir rezervasyon yapınca Claude karşılama e-postası taslağı çıkarır: "ne hazırlanmalı, neye dikkat edilmeli" ve uygunsa upsell (oda yükseltme, paket).
 
 ### In-Stay İletişim
 
-Misafirin konaklaması esnasında SMS/uygulama mesajları. "Spa rezervasyonu açık", "akşam tarihi için rezervasyon ister misiniz". Tüm dillerde.
+Misafirin konaklaması sırasında SMS veya uygulama mesajları: "Spa rezervasyonu açık", "akşam yemeği için rezervasyon ister misiniz?". Tüm dillerde.
 
 ### Post-Stay E-postası
 
-Çıkış sonrası teşekkür + yorum talebi + sonraki ziyaret için teşvik. Claude'la kişiselleştirilmiş, klişe değil.
+Çıkış sonrası teşekkür, yorum talebi ve sonraki ziyaret için teşvik. Claude ile kişiselleştirilmiş, klişesiz.
 
 ## Pratik Kullanım Senaryoları
 
+Aşağıdaki senaryolar örnektir; süreler işletmeye göre değişir.
+
 ### Senaryo 1: Otel Resepsiyonu
 
-Saat 23:00. Bir Çinli misafir Mandarin yazıyor şikayet için. Resepsiyonist Mandarin bilmiyor. Claude'a yapıştır → 30 saniyede şikayet özeti + 3 dilde yanıt taslağı. Resepsiyonist müdüre ulaşır, çözüm hızlıca yürür. Ertesi gün misafir memnun ayrılır, 5 yıldız yorum bırakır.
+Saat 23:00. Çinli bir misafir, bir şikayet için Mandarin yazıyor. Resepsiyonist Mandarin bilmiyor. Mesajı Claude'a yapıştırır; şikayet özeti ve Mandarin yanıt taslağı hemen gelir. Resepsiyonist müdüre ulaşır, çözüm hızlıca yürür. Ertesi gün misafir memnun ayrılır ve olumlu yorum bırakır.
 
 ### Senaryo 2: Sezon Açılışı
 
-Yaz sezonu başlıyor. Otel web sitesi 8 dilde içerik istiyor. Claude'la 1 hafta yerine 3 günde tüm içerik (oda açıklamaları, paketler, F&B menüleri, aktivite tanımları) hazır.
+Yaz sezonu başlıyor. Otel web sitesi 8 dilde içerik istiyor. Claude ile oda açıklamaları, paketler, F&B menüleri ve aktivite tanımları haftalar yerine günler içinde taslak olarak hazırlanır; her dilde ana dili bilen biri kontrol eder.
 
 ### Senaryo 3: TripAdvisor Krizi
 
 Bir olumsuz yorum viral oldu, yeni rezervasyonlar düştü. Claude:
 
-- Olumsuz yorumu analiz et
-- Profesyonel yanıt taslağı
-- Diğer son yorumlar için trend (sorun gerçek mi gözden mi geçirilecek)
-- Operasyona somut öneriler
-- Sosyal medya açıklaması
+- Olumsuz yorumu analiz eder
+- Profesyonel bir yanıt taslağı hazırlar
+- Son yorumlardaki trendi çıkarır (sorun gerçek mi, gözden geçirilmeli mi)
+- Operasyona somut öneriler sunar
+- Sosyal medya açıklaması yazar
 
-24 saatte krize müdahale paketi hazır.
+Böylece kısa sürede bir kriz müdahale paketi hazır olur.
 
 ### Senaryo 4: B2B Acente Toplantısı
 
-Yarın London-merkezli büyük tour operator ile toplantı. Claude:
+Yarın Londra merkezli büyük bir tour operator ile toplantı var. Claude:
 
-- Şirket araştırması ([Research Mode](/wiki/yetenekler/research-mode/))
-- Geçmiş yazışmaları toparla, gelinen son durumu özetle
-- Toplantıda gündeme alınması gereken 5 madde
-- Olası sorulara hazır cevap
+- Şirket araştırması yapar ([Research Mode](/wiki/yetenekler/research-mode/))
+- Geçmiş yazışmaları toparlar ve son durumu özetler
+- Toplantıda gündeme alınması gereken 5 maddeyi çıkarır
+- Olası sorulara hazır cevaplar önerir
 
-Saat içinde brief hazır.
+Brief kısa sürede hazırdır.
 
 ## CLAUDE.md Tavsiyesi
 
@@ -194,7 +196,7 @@ Otel iletişim sorumlusu için temel yapı:
 - Konum: [Antalya / İstanbul / Kapadokya]
 - Kategori: [5 yıldız / butik / tatil köyü]
 - Kapasite: [oda sayısı]
-- Ana pazarlar: [TR, DE, RU, GB — sıralı]
+- Ana pazarlar: [TR, DE, RU, GB, önem sırasıyla]
 - Sezon: [12 ay / Mayıs-Ekim]
 
 ## Voice
@@ -204,12 +206,12 @@ Otel iletişim sorumlusu için temel yapı:
 ## Diller
 - Birincil: Türkçe + İngilizce
 - Hedef: Almanca, Rusça, Arapça, Fransızca, İspanyolca yazışma yapabilmek
-- Tatlı çeviri değil, kültürel uyumlu
+- Birebir çeviri değil, kültürel olarak uyumlu
 
 ## Yapma
 - Misafir kişisel verisini yapıştırma (anonimleştir)
 - Rakip oteli ismen anma
-- Garanti edemediğin şeyleri vaadetme
+- Garanti edemediğin şeyleri vaat etme
 
 ## Yap
 - Şikayet yanıtında: kabul + empati + çözüm + telafi (gerekirse)
@@ -221,7 +223,7 @@ Otel iletişim sorumlusu için temel yapı:
 
 **Engel:** "8 dilde misafir iletişimi karmaşık, çalışanlar yetişmez."
 
-**Çözüm:** Tam tersi — Claude'la **bir çalışan 8 dilde yanıt verebilir.** İşgücü ve dil eğitimi yatırımı azalır.
+**Çözüm:** Tam tersi: Claude ile **bir çalışan birden fazla dilde yanıt taslağı hazırlayabilir.** Dil eğitimi yatırımı azalır, kontrol ihtiyacı ise (ana dili bilen biri) kalır.
 
 **Engel:** "Otelimizin marka sesi var, Claude tutturamaz."
 
@@ -229,20 +231,20 @@ Otel iletişim sorumlusu için temel yapı:
 
 **Engel:** "KVKK + GDPR (AB misafirleri) karmaşık."
 
-**Çözüm:** [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ile veri sınıfı kuralları net. Misafir kişisel verisi anonimleştirilerek girilir.
+**Çözüm:** [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ile veri sınıfı kuralları net. Misafir kişisel verisi anonimleştirilerek girilir; yurt dışı aktarım için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## Sezon Dışı Strateji
 
-Kasım-Mart sezon dışı. Çoğu otel personeli azaltır, içerik üretimi tamamen durur. Claude **sezon dışı dönemi** içerik üretim mevsimine çevirir — bir yıl boyunca yetecek blog, sosyal medya, e-posta serisi 3 ayda hazır.
+Kasım-Mart arası sezon dışıdır. Çoğu otel personeli azaltır, içerik üretimi tamamen durur. Claude **sezon dışı dönemi** içerik üretim mevsimine çevirir: sezon boyunca yetecek blog, sosyal medya ve e-posta serisi bu aylarda hazırlanabilir.
 
 ## İlgili Sayfalar
 
-- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) — Misafir destek temelleri
-- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/) — Pazarlama derinliği
-- [Satış Departmanı](/wiki/departmanlar/satis/) — B2B acente satışı
-- [İhracat Departmanı](/wiki/departmanlar/ihracat/) — Yurt dışı pazarlama (turizm de bir tür ihracattır)
-- [Voice Mode](/wiki/araclar/voice-mode/) — Sesle çok dilli yazma
-- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Marka voice
-- [Research Mode](/wiki/yetenekler/research-mode/) — B2B araştırma
-- [Code Execution](/wiki/yetenekler/code-execution/) — Yorum / satış analizi
+- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/): Misafir destek temelleri
+- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/): Pazarlama derinliği
+- [Satış Departmanı](/wiki/departmanlar/satis/): B2B acente satışı
+- [İhracat Departmanı](/wiki/departmanlar/ihracat/): Yurt dışı pazarlama (turizm de bir tür ihracattır)
+- [Voice Mode](/wiki/araclar/voice-mode/): Sesli dikte ve konuşma
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Marka voice
+- [Research Mode](/wiki/yetenekler/research-mode/): B2B araştırma
+- [Code Execution](/wiki/yetenekler/code-execution/): Yorum / satış analizi
 

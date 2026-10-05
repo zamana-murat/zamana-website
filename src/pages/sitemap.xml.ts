@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { allWikiSlugs } from '../data/wiki-nav';
+import { getHaberler, haberPath } from '../data/haberler';
 
 const SITE = 'https://zamana.com.tr';
 
@@ -30,15 +31,29 @@ const wikiRoutes = allWikiSlugs().map((slug) => {
   };
 });
 
-const routes = [...baseRoutes, ...wikiRoutes];
+type Route = { path: string; priority: string; changefreq: string; lastmod?: string };
 
-export const GET: APIRoute = () => {
+export const GET: APIRoute = async () => {
   const today = new Date().toISOString().slice(0, 10);
+
+  // News routes: lastmod = article date; index lastmod = newest article date.
+  const haberler = await getHaberler();
+  const newsRoutes: Route[] = [
+    { path: '/haberler/', priority: '0.8', changefreq: 'weekly', lastmod: haberler[0]?.data.date },
+    ...haberler.map((h) => ({
+      path: haberPath(h),
+      priority: '0.6',
+      changefreq: 'yearly',
+      lastmod: h.data.date,
+    })),
+  ];
+
+  const routes: Route[] = [...baseRoutes, ...wikiRoutes, ...newsRoutes];
   const urls = routes
     .map(
       (r) => `  <url>
     <loc>${SITE}${r.path}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${r.lastmod || today}</lastmod>
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority}</priority>
   </url>`

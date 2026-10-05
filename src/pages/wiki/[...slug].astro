@@ -26,6 +26,7 @@ const { Content, headings } = await entry.render();
 <WikiLayout
   slug={urlSlug}
   title={entry.data.title}
+  seoTitle={entry.data.seoTitle}
   description={entry.data.description}
   tags={entry.data.tags}
   headings={headings}

@@ -152,4 +152,24 @@ const { title, badge, price, priceSuffix = '+ KDV', priceSubtext, duration, audi
     margin-top: var(--s-2);
     width: 100%;
   }
+
+  /* Align title / audience / price / features / CTA rows across sibling cards.
+     The parent .grid supplies the row tracks; each card spans 5 of them.
+     (The absolutely positioned badge does not occupy a grid cell.) */
+  @supports (grid-template-rows: subgrid) {
+    .prog-card {
+      display: grid;
+      grid-row: span 5;
+      grid-template-rows: subgrid;
+      row-gap: var(--s-3);
+    }
+    .prog-card__price {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .prog-card__cta {
+      align-self: end;
+    }
+  }
 </style>

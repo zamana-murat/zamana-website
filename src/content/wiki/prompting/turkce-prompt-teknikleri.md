@@ -1,11 +1,11 @@
 ---
-title: Türkçe Prompt Teknikleri — Dile Özgü İpuçları
+title: "Türkçe Prompt Teknikleri: Dile Özgü İpuçları"
 description: "Türkçe prompt yazarken karşılaşılan sorunlar ve çözümleri. Tonlama, eklemeli yapı, kod-anahtarlama ve \"İngilizce kayma\" tuzağı."
 tags:
   - prompting
   - turkce
   - dil
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **Claude Türkçe'yi iyi anlar, ama Türkçe yazılan prompt İngilizce yazılan prompttan farklı tepki üretebilir.** Türkçe'nin sondan eklemeli yapısı, tonlama nüansları, iş hayatındaki kalıpları farklıdır. Bu sayfa Türkçe-spesifik teknikleri anlatır.
@@ -33,15 +33,15 @@ Türkçe'de iletişim kayıtları İngilizce'den daha katı:
 | Samimi-iş | "Merhaba [Ad]" | Tanıdık iş ortağı, kolega |
 | Çok samimi | "Selam [Ad]", "Hey" | Yakın takım arkadaşı, sosyal medya |
 
-Claude'a kayıt seçtirmeyin — **siz seçin, açıkça söyleyin:**
+Claude'a kayıt seçtirmeyin, **siz seçin, açıkça söyleyin:**
 
 > ❌ *"Müşteriye saygılı bir yanıt yaz."*
 >
-> ✅ *"Müşteriye **resmî-iş kayıdında** bir yanıt yaz: 'Merhaba [Ad]' ile başla, 'iyi günler dilerim' ile bitir, 'sayın' kullanma."*
+> ✅ *"Müşteriye **resmî-iş kaydında** bir yanıt yaz: 'Merhaba [Ad]' ile başla, 'iyi günler dilerim' ile bitir, 'sayın' kullanma."*
 
 ## 2. "İngilizce Kayma"yı Engelle
 
-Uzun bir Türkçe sohbette Claude bazen İngilizce'ye kayar — özellikle teknik terim yoğunlaştığında:
+Uzun bir Türkçe sohbette Claude bazen İngilizce'ye kayar, özellikle teknik terim yoğunlaştığında:
 
 - Kullanıcı **Türkçe** soru → Claude **Türkçe** yanıt → kullanıcı yine Türkçe → Claude bir cümle İngilizce, sonra geri Türkçe → 5 mesaj sonra çıktı yarı-İngilizce
 
@@ -61,12 +61,12 @@ Sohbet içinde kayma görürseniz hemen düzeltin:
 
 [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında bu ve benzer dil sorunları detaylanır.
 
-## 3. Eklemeli Yapı — Net Kelime Seçimi
+## 3. Eklemeli Yapı: Net Kelime Seçimi
 
 Türkçe sondan eklemeli olduğu için aynı kavram farklı eklerle ifade edilir:
 
-- "Yapıldı" / "Yapılmıştır" / "Yapılmış olur" — hepsi pasif geçmiş, ama tonlamaları farklı
-- "Söylüyorum" / "Söylemekteyim" / "Diyebilirim ki" — aktiviteyi farklı yumuşatır
+- "Yapıldı" / "Yapılmıştır" / "Yapılmış olur": hepsi pasif geçmiş, ama tonlamaları farklı
+- "Söylüyorum" / "Söylemekteyim" / "Diyebilirim ki": aktiviteyi farklı yumuşatır
 
 Promptta **istediğiniz tarzı** belirtmek faydalı:
 
@@ -88,7 +88,7 @@ Türkçe ve İngilizce yazım kuralları farklıdır:
 
 Claude bu kuralları **çoğunlukla** doğru uygular ama %100 değil. Önemli yazışmalarda kontrol edin veya promptta belirtin:
 
-> *"Tarihler 'GG Ay YYYY' formatında. Para Türk Lirası ile sonda — '1.500 ₺'. Ondalık virgül, binlik nokta."*
+> *"Tarihler 'GG Ay YYYY' formatında. Para Türk Lirası ile sonda, '1.500 ₺'. Ondalık virgül, binlik nokta."*
 
 ## 5. Klişe Türkçe İş Dilini Engelleme
 
@@ -117,15 +117,15 @@ Claude'un eğitim verisindeki Türkçe iş dili klişe yüklü. Aşağıdakiler 
 
 Türkçe "siz" hem çoğul hem nezaket. Promptta net olun:
 
-> *"Tek müşteriye yazıyorum — 'siz' diliyle, ama mesafeli değil. 'Sayın' yok, 'Merhaba [Ad]' var."*
+> *"Tek müşteriye yazıyorum: 'siz' diliyle, ama mesafeli değil. 'Sayın' yok, 'Merhaba [Ad]' var."*
 >
-> *"Şirketin web sitesinde — '[müşteriler]' çoğul, 'siz' diliyle ('biz size yardım ederiz')."*
+> *"Şirketin web sitesinde: '[müşteriler]' çoğul, 'siz' diliyle ('biz size yardım ederiz')."*
 
 Claude'a tercih bırakırsanız her seferinde farklı seçer.
 
-## 7. Türkçe Karakterler ve Şapka
+## 7. Türkçe Karakterler
 
-Bazı durumlarda Claude Türkçe karakterleri (ç, ğ, ı, ö, ş, ü) kaybedebilir veya yanlış kullanabilir — özellikle:
+Bazı durumlarda Claude Türkçe karakterleri (ç, ğ, ı, ö, ş, ü) kaybedebilir veya yanlış kullanabilir, özellikle:
 
 - Çok uzun çıktılarda
 - Kod blokları içinde
@@ -133,18 +133,18 @@ Bazı durumlarda Claude Türkçe karakterleri (ç, ğ, ı, ö, ş, ü) kaybedebi
 
 Önemli yazılarda final kontrolü kendiniz yapın. Otomatik üretimlerde (örn. [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) çıktısı) bir post-process kontrol ekleyin.
 
-## 8. Cinsiyet Belirsizliği — Avantaj
+## 8. Cinsiyet Belirsizliği: Avantaj
 
 Türkçe'de gramatik cinsiyet yok ("o" eril/dişil ayırmaz). Bu Claude'un cinsiyet-tarafsız yazmasını **kolaylaştırır**:
 
-- İngilizce: "she/he", "their" — çoğu zaman tartışmalı
-- Türkçe: "o" — doğal olarak nötr
+- İngilizce: "she/he" ve "their" seçimi çoğu zaman tartışmalıdır
+- Türkçe: "o" doğal olarak nötrdür
 
 İK, hukuk, akademik yazılarda bu avantaj kullanılır:
 
-> *"İK belgesinde tüm referanslar 'çalışan' veya 'kişi' olarak. 'Bay/Bayan' yerine 'Sayın'. 'O' zamiri gerektiğinde sorun değil — Türkçe nötr."*
+> *"İK belgesinde tüm referanslar 'çalışan' veya 'kişi' olarak. 'Bay/Bayan' yerine 'Sayın'. 'O' zamiri gerektiğinde sorun değil, Türkçe nötr."*
 
-## 9. Sektörel Türkçe — Şirket İçi Jargon
+## 9. Sektörel Türkçe: Şirket İçi Jargon
 
 Türkiye'deki şirketlerin iç jargonu çok sektörel:
 
@@ -181,9 +181,9 @@ Ne istediğinizi sezmesinden değil, **soruyu doğru sormaktan** kalite çıkar.
 
 Türkçe'de vurgu için sözcük sırası önemlidir:
 
-- "Bu raporu **yarın** vermeliyim." — yarın vurgulu
-- "Bu raporu yarın **vermeliyim**." — vermek vurgulu
-- "**Bu** raporu yarın vermeliyim." — bu spesifik rapor
+- "Bu raporu **yarın** vermeliyim.": yarın vurgulu
+- "Bu raporu yarın **vermeliyim**.": vermek vurgulu
+- "**Bu** raporu yarın vermeliyim.": bu spesifik rapor
 
 Promptta önemli olanı **kalın** yazın veya başa alın:
 
@@ -194,7 +194,7 @@ Promptta önemli olanı **kalın** yazın veya başa alın:
 Yeni bir prompt yazdığınızda Türkçe kalitesini test edin:
 
 1. Promptu yazın, Claude'a verin
-2. İlk yanıtı okuyun — **3 sorun arayın:**
+2. İlk yanıtı okuyun: **3 sorun arayın:**
    - Klişe / pazarlama dili var mı?
    - Kayıt tutarlı mı (samimi-resmî kayma yok mu)?
    - Türkçe karakter kaybı var mı?
@@ -228,12 +228,12 @@ Kurallar:
 
 ## İlgili Sayfalar
 
-- [Türkçe Performansı](/wiki/temeller/turkce-performansi/) — Genel kalite tablosu
-- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Delegation/Description/Discernment/Diligence
-- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) — Hazır Türkçe şablonlar
-- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Format kontrolü
-- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle öğretme
-- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Tipik prompting hataları
-- [CLAUDE.md / Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) — Dil sorunları çözümü
+- [Türkçe Performansı](/wiki/temeller/turkce-performansi/): Genel kalite tablosu
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/): Genel prompt mantığı
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Delegation/Description/Discernment/Diligence
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/): Hazır Türkçe şablonlar
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/): Format kontrolü
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle öğretme
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Tipik prompting hataları
+- [CLAUDE.md / Hata Ayıklama](/wiki/claude-md/hata-ayiklama/): Dil sorunları çözümü
 

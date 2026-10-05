@@ -1,14 +1,14 @@
 ---
-title: "Web Arama — Claude'un Güncel Bilgi Erişimi"
+title: "Web Arama: Claude'un Güncel Bilgi Erişimi"
 description: "Claude ne zaman web'de arama yapar? Türkçe sonuçlar nasıl, kaynak doğrulama nasıl yapılır, KVKK boyutu nedir?"
 tags:
   - araclar
   - web-arama
   - guncel-bilgi
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Claude, bir sorunun cevabı eğitim verisinde olmadığında veya güncel veri gerektiğinde otomatik olarak web'de arama yapar.** Sizin ayarlamanız, "şimdi web'i aç" demeniz gerekmez — Claude bunu kendi karar verir, sonuçları okur, cevabını kaynaklarla birlikte sunar.
+**Claude, bir sorunun cevabı eğitim verisinde olmadığında veya güncel veri gerektiğinde otomatik olarak web'de arama yapar.** Sizin ayar yapmanız ya da "şimdi web'i aç" demeniz gerekmez. Claude bunu kendisi karar verir, sonuçları okur ve cevabını kaynaklarla birlikte sunar.
 
 Bu sayfa web aramanın **ne zaman tetiklendiğini**, **ne kadar güvenilir olduğunu** ve iş profesyonellerinin kaynak kontrolünü nasıl yapması gerektiğini anlatır.
 
@@ -16,10 +16,10 @@ Bu sayfa web aramanın **ne zaman tetiklendiğini**, **ne kadar güvenilir oldu�
 
 Claude şu durumlarda web aramaya başvurur:
 
-- **Güncel veri gerektiren sorular** — bugünkü kur, son haftaki haberler, yeni çıkan yönetmelik
-- **Spesifik bir şirket / kişi / ürün hakkında bilgi** — "X firmasının 2026 ürün lansmanı"
-- **Eğitim kesim tarihinden sonraki olaylar** — modelin bilgi tabanı belli bir tarihte donmuştur, sonrasını bilmek için arama gerekir
-- **Doğrulama gerektiren iddialar** — "X istatistiği doğru mu?" gibi sorular
+- **Güncel veri gerektiren sorular**: bugünkü kur, son haftaki haberler, yeni çıkan yönetmelik
+- **Spesifik bir şirket / kişi / ürün hakkında bilgi**: "X firmasının 2026 ürün lansmanı"
+- **Eğitim kesim tarihinden sonraki olaylar**: modelin bilgi tabanı belli bir tarihte donmuştur, sonrasını bilmek için arama gerekir. Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) güvenilir bilgi kesimi Haziran 2026'dır; Haiku 4.5'te Şubat 2025'tir
+- **Doğrulama gerektiren iddialar**: "X istatistiği doğru mu?" gibi sorular
 
 Tetiklemediği durumlar:
 
@@ -45,11 +45,11 @@ Türkçe sorular için Claude:
 - **Türkçe sorgu üretmeye yatkındır** ama bazen aynı soruyu hem Türkçe hem İngilizce arar (daha geniş kaynak için)
 - Türk haber siteleri, resmî kurum siteleri (mevzuat.gov.tr, gib.gov.tr, sgk.gov.tr), büyük kurumsal yayınlar genelde iyi taranır
 - Niş Türkçe blog/forum sonuçlarında kalite düşebilir
-- Mevzuat metinlerini okurken **resmî kaynağı doğrulamak şart** — Claude doğru maddeyi bulur ama tarihi/yürürlük durumunu yorumlamada hata yapabilir
+- Mevzuat metinlerini okurken **resmî kaynağı doğrulamak şart**, Claude doğru maddeyi bulur ama tarihi/yürürlük durumunu yorumlamada hata yapabilir
 
 [Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası genel Türkçe kalite tablosunu gösterir.
 
-## Kaynak Doğrulama — En Kritik Alışkanlık
+## Kaynak Doğrulama: En Kritik Alışkanlık
 
 Claude size kaynak gösterse bile, **kritik kararlar için kaynağı kendiniz açıp kontrol edin.** Sebep:
 
@@ -70,7 +70,7 @@ Bu, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence (özen)** ba
 
 Web aramada Claude halüsinasyon yapabilir mi? **Evet, ama daha düşük oranda.**
 
-Ham bilgi olmadığında Claude bazen olası gözüken bilgi üretir (halüsinasyon). Web araması bu riski **azaltır** çünkü gerçek kaynaklara dayanır. Ama tamamen ortadan kalkmaz:
+Güvenilir bilgi bulamadığında Claude bazen olası gözüken ama yanlış bilgi üretir (halüsinasyon). Web araması bu riski **azaltır** çünkü gerçek kaynaklara dayanır. Ama tamamen ortadan kalkmaz:
 
 - Kaynaktan farklı bir cümle çıkarabilir (yanlış özetleme)
 - Birden fazla kaynak birleştirirken yanlış atıf yapabilir
@@ -103,7 +103,7 @@ Web aramada **sorgunuz Claude'a (Anthropic'e) ve dolayısıyla arama servisine**
 
 ## Plan Farkı
 
-Web arama tüm planlarda mevcut, **Pro / Max / Team / Enterprise** kullanıcılarına aynı şekilde sunulur. Free planda da çalışır ama günlük sorgu limiti daha sıkıdır. Detay için [Planlar](/wiki/temeller/planlar/).
+Web arama Free dahil tüm planlarda mevcut. Free planın kullanım limiti daha düşüktür; limit sayıları yayımlanmıyor. Detay için [Planlar](/wiki/temeller/planlar/).
 
 ## Kullanım Tavsiyeleri
 
@@ -113,14 +113,14 @@ Web arama tüm planlarda mevcut, **Pro / Max / Team / Enterprise** kullanıcıla
 
 **Birden çok kaynak isteyin.** "En az 3 farklı bağımsız kaynaktan bilgi topla, çelişki varsa söyle." Bu hem kalite hem doğrulama açısından değerli.
 
-**Sonuçları bir Project'e kaydedin.** Tekrar tekrar aynı konuda araştırıyorsanız, [Projects](/wiki/araclar/projects/) içinde özet biriktirin — her seferinde sıfırdan aramaya gerek kalmaz.
+**Sonuçları bir Project'e kaydedin.** Tekrar tekrar aynı konuda araştırıyorsanız, [Projects](/wiki/araclar/projects/) içinde özet biriktirin, her seferinde sıfırdan aramaya gerek kalmaz.
 
 ## İlgili Sayfalar
 
-- [Claude Chat](/wiki/araclar/claude-chat/) — Web arama burada otomatik devreye girer
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Cowork'te web + dosya + skills birleşir
-- [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Halüsinasyon ve doğrulama
-- [Türkçe Performansı](/wiki/temeller/turkce-performansi/) — Türkçe arama kalitesi
-- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Web sonuçlarına körü körüne güvenmek
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Sorgularınızın akışı
+- [Claude Chat](/wiki/araclar/claude-chat/): Web arama burada otomatik devreye girer
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Cowork'te web + dosya + skills birleşir
+- [Sınırlamalar](/wiki/temeller/sinirlamalar/): Halüsinasyon ve doğrulama
+- [Türkçe Performansı](/wiki/temeller/turkce-performansi/): Türkçe arama kalitesi
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Web sonuçlarına körü körüne güvenmek
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Sorgularınızın akışı
 

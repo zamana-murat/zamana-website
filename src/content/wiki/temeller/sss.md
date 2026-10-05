@@ -5,7 +5,7 @@ tags:
   - temeller
   - sss
   - faq
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem kendiniz için okuyabilirsiniz, hem de şirket içinde Claude'u savunurken kaynak olarak kullanabilirsiniz.
@@ -14,8 +14,7 @@ Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem
   <div class="wiki-admonition__title">Özet</div>
   <div class="wiki-admonition__body" markdown>
 
-
-Claude bulut tabanlı bir yapay zeka asistanıdır; Team/Enterprise planlarında verileriniz **model eğitiminde kullanılmaz** (sözleşme garanti). KVKK uyumu doğru plan + DPA + şirket politikasıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100-200/ay; **6 çalışanlık ekipte** ilk ay Max 5x önerilir ($600/ay), sonraki aylar karma kullanımla $280-380/ay'a iner. **Sonnet** modeli iş kullanımı için varsayılan tercih. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonu için somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
+Claude bulut tabanlı bir yapay zeka asistanıdır. Team ve Enterprise planlarında verileriniz varsayılan olarak **model eğitiminde kullanılmaz** (sözleşme güvencesi). KVKK uyumu doğru plan, DPA, şirket politikası ve (kişisel veri girilecekse) KVKK m.9 yurt dışı aktarım dayanağıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100-200/ay; **6 çalışanlık ekipte** ilk ay Max 5x önerilir ($600/ay), sonraki aylar karma kullanımla $280-380/ay'a iner. İş kullanımı için varsayılan model **Sonnet**'tir. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonunda somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
 
   </div>
 </div>
@@ -24,37 +23,81 @@ Claude bulut tabanlı bir yapay zeka asistanıdır; Team/Enterprise planlarında
 
 ### Claude'a girdiğimiz veriler başkasına gider mi?
 
-**Kısa cevap: Hayır. Konuşmalarınız ne başka kullanıcılarla paylaşılır ne de varsayılan olarak model eğitiminde kullanılır.** Anthropic'in veri politikası plan tipine göre değişir ama temel ilke aynı: konuşmalarınız sizindir. **Team ve Enterprise planlarında** veriler model eğitiminde **asla kullanılmaz**, bu kural sözleşme (DPA, Data Processing Agreement) ile garanti altına alınmıştır, opsiyonel değildir. **Pro ve Max planlarında** varsayılan davranış da aynı: model eğitiminde kullanılmaz; kullanıcı açıkça opt-in ile izin verirse (ayarlardan açılır seçenek) eğitim için kullanılabilir, varsayılan kapalıdır. Hiçbir planda konuşmalarınız başka müşterilere veya kullanıcılara sızmaz, mimari olarak izole edilmiştir. Anthropic çalışanları konuşmalara yalnızca iki durumda erişebilir: açık izniniz veya Kullanım Politikası ihlali incelemesi. Enterprise'da **Zero Data Retention** seçeneği bu riski sıfırlar (konuşma tamamlanınca silinir). Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+**Kısa cevap: Hayır. Konuşmalarınız başka kullanıcılarla veya müşterilerle paylaşılmaz, mimari olarak izole edilmiştir.**
+
+Model eğitiminde kullanılıp kullanılmaması plana göre değişir:
+
+- **Team ve Enterprise:** Veriler varsayılan olarak eğitimde **kullanılmaz**. Bu, ticari sözleşmenin (DPA dahil) güvencesidir.
+- **Free, Pro ve Max:** Karar sizdedir. "Claude'u geliştirmeye yardım et" ayarı Settings → Privacy altındadır ve istediğiniz zaman değiştirilir. Kurumsal kullanımda kapalı tutun.
+
+Anthropic çalışanlarının erişimi için aşağıdaki sorulara bakın. API tarafında, satış ekibiyle kuruluş başına talep edilen **Zero Data Retention** düzenlemesi riski daha da azaltır: istem ve yanıtlar, yanıt döndükten sonra depolanmaz. Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
 ### Şirket verilerimizi Claude'a vermek KVKK açısından güvenli mi?
 
-**Kısa cevap: Doğru planla (Team/Enterprise) + DPA imzası + şirket içi veri politikasıyla evet, KVKK uyumlu kullanım mümkün.** Kurumsal Claude kullanımının KVKK uyumu üç bileşene dayanır. **Birincisi plan seçimi:** Team ($25/koltuk/ay, minimum 5 koltuk) veya Enterprise (özel müzakere) gerekir; Pro/Max bireysel planları KVKK Madde 12 (veri sorumlusu yükümlülükleri) açısından kurumsal kullanımda yetersiz. **İkincisi DPA:** Anthropic'le imzalanan Data Processing Agreement, KVKK Madde 9 (yurt dışına aktarım) ve GDPR Madde 28 (işleyen sözleşmesi) yükümlülüklerini karşılar. **Üçüncüsü iç politika:** çalışanların hangi veriyi paylaşıp paylaşamayacağını yazılı olarak belirleyen Yapay Zeka Kullanım Politikası şarttır. Çalışanların hassas kişisel veriyi (TC kimlik no, sağlık verisi, tam isim + finansal kayıt birleşimi) bireysel Pro hesabında işlemesi KVKK açısından risklidir, denetimde sorun yaratır. Doğru kurulumda Claude, Microsoft 365 veya Google Workspace gibi diğer bulut araçlarıyla aynı KVKK rejiminde çalışır.
+**Kısa cevap: Kişisel veri girmiyorsanız sorun küçüktür. Kişisel veri giriyorsanız doğru plan, DPA ve iç politika yetmez; ayrıca KVKK m.9 yurt dışı aktarım dayanağı gerekir ve bu nokta bugün tam netleşmiş değildir.**
+
+Kurumsal Claude kullanımının KVKK uyumu dört bileşene dayanır:
+
+1. **Plan seçimi:** Team ($25/koltuk/ay, yıllıkta $20, en az 2 koltuk) veya Enterprise ($20/koltuk/ay + kullanım API fiyatıyla) gerekir. Pro ve Max bireysel planları, KVKK m.12 (veri sorumlusunun yükümlülükleri) açısından kurumsal kullanım için yetersizdir.
+2. **DPA:** Team, Enterprise ve API'de ticari şartlara otomatik dahil olan (ayrıca imza gerekmeyen) Data Processing Agreement, işleyen ilişkisini belgeler (KVKK m.12/2, GDPR m.28). DPA'daki standart sözleşme hükümleri AB içindir, KVKK m.9 için Kurul'un Türk standart sözleşmesinin yerine geçmez.
+3. **Yurt dışı aktarım dayanağı:** Kişisel veri girecekseniz Kurul'un standart sözleşmesi (imzadan sonra 5 iş günü içinde Kurum'a bildirilir) ya da eşdeğer bir dayanak gerekir. Anthropic'in bunu imzalayıp imzalamadığı belirsizdir, yazılı sorun.
+4. **İç politika:** Çalışanların hangi veriyi paylaşıp paylaşamayacağını yazılı belirleyen bir Yapay Zeka Kullanım Politikası şarttır ([Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)).
+
+Çalışanların hassas kişisel veriyi (TC kimlik no, sağlık verisi, tam isim ile finansal kayıt birleşimi) bireysel Pro hesabında işlemesi risklidir ve denetimde sorun yaratır. Doğru kurulumda Claude, Microsoft 365 veya Google Workspace gibi diğer bulut araçlarıyla aynı KVKK rejiminde çalışır. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/). Bu hukuki görüş değildir, hukuk danışmanınızla doğrulayın.
 
 ### Anthropic çalışanları konuşmalarımızı okuyabilir mi?
 
-**Kısa cevap: Varsayılan olarak hayır. Erişim sadece açık izninizle veya Kullanım Politikası ihlali incelemesinde, katı dahili kontrollerle.** Anthropic'in iç güvenlik mimarisi konuşmalara erişimi varsayılan olarak engeller. Çalışanlar "müşteri konuşmalarına bakma" yetkisine sahip değildir; bu yetki sadece iki spesifik durumda devreye girer. **Birinci durum:** Müşteri açık ve yazılı izin verirse (örneğin "şu konuşmada sorun var, inceleyebilir misiniz?" diye destek talebi açıldığında). **İkinci durum:** Otomatik sistemler Kullanım Politikası ihlali tespit ederse (CSAM, terör propagandası, kritik altyapı saldırı planı gibi) ihlal incelemesi başlatılır, bu süreçte sınırlı erişim verilir. Tüm erişimler loglanır ve audit edilir. **Enterprise planında Zero Data Retention** seçeneği daha da ileri gider: konuşma tamamlandığı an Anthropic sunucularından silinir, geriye dönük erişim teknik olarak imkansız hale gelir. Bu seçenek bankalar, sağlık kurumları ve yüksek hassasiyet gerektiren kurumsal müşteriler için önerilir. Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+**Kısa cevap: Varsayılan olarak hayır. Erişim yalnızca açık izninizle veya Kullanım Politikası ihlali incelemesinde, katı dahili kontrollerle olur.**
+
+Anthropic'in iç güvenlik mimarisi konuşmalara erişimi varsayılan olarak engeller; çalışanların "müşteri konuşmalarına bakma" yetkisi yoktur. Yetki yalnızca iki durumda devreye girer:
+
+1. **Açık ve yazılı izin:** Örneğin "şu konuşmada sorun var, inceleyebilir misiniz?" diye destek talebi açtığınızda.
+2. **Kullanım Politikası ihlali:** Otomatik sistemler bir ihlal tespit ederse (CSAM, terör propagandası, kritik altyapı saldırı planı gibi) inceleme başlar ve sınırlı erişim verilir.
+
+Tüm erişimler loglanır ve denetlenir. **Zero Data Retention** (API için sözleşme düzenlemesi, plan değil; satış ekibiyle kuruluş başına talep edilir) daha da ileri gider: istem ve yanıtlar, yanıt döndükten sonra Anthropic tarafında depolanmaz. Bankalar, sağlık kurumları ve yüksek hassasiyetli kurumsal müşteriler için önerilir. Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
 ### Claude offline çalışır mı?
 
-**Kısa cevap: Hayır. Claude bulut tabanlıdır, internet bağlantısı zorunludur. Hava boşluklu (air-gapped) ortamlarda çalıştırılamaz.** Claude'un model dosyaları Anthropic'in veri merkezlerinde (AWS ve Google Cloud üzerinde) çalışır, lokal cihaza indirilemez. Bu mimari karar, model boyutu (yüz milyarlarca parametre, yüzlerce GB) ve sürekli güncelleme gereği nedeniyledir. İnternet bağlantısı kesildiğinde Claude masaüstü uygulaması, web arayüzü ve API tamamen kullanılamaz hale gelir; offline çalışan hiçbir mod yoktur. Tamamen izole ortamlar için (askeri sistemler, hava boşluklu üretim ağları, yüksek güvenlikli devlet kurumları) Claude şu an uygun değildir. Bu tip ortamlar için Anthropic, AWS GovCloud veya Azure Government gibi izole bulut bölgeleri üzerinden Enterprise dağıtım sunabilir; ama bu da "internet yok" değil "izole internet" anlamına gelir. Yerel donanımda çalışan açık kaynak alternatifler (Llama, Mistral) offline çalışır ama Claude'un yetkinlik düzeyinin altındadır. İnternet erişimi olan tüm ofis ortamları için Claude sorunsuz çalışır.
+**Kısa cevap: Hayır. Claude bulut tabanlıdır, internet bağlantısı zorunludur ve hava boşluklu (air-gapped) ortamlarda çalıştırılamaz.**
+
+Model Anthropic'in veri merkezlerinde (AWS ve Google Cloud üzerinde) çalışır ve cihaza indirilemez. Nedeni model boyutu (yüz milyarlarca parametre, yüzlerce GB) ve sürekli güncellemedir. Bağlantı kesilirse masaüstü uygulaması, web arayüzü ve API kullanılamaz; offline modu yoktur.
+
+Askeri sistemler, hava boşluklu üretim ağları ve yüksek güvenlikli devlet kurumları için Claude şu an uygun değildir. Bu tip ortamlar için Anthropic, AWS GovCloud veya Azure Government gibi izole bulut bölgeleri üzerinden Enterprise dağıtım sunabilir, ama bu "internet yok" değil "izole internet" demektir. Yerel donanımda çalışan açık kaynak alternatifler (Llama, Mistral) offline çalışır, ancak Claude'un yetkinlik düzeyinin altındadır. İnternet erişimi olan ofis ortamlarında sorun yoktur.
 
 ## Maliyet ve ROI
 
 ### Claude ayda ne kadar tutar?
 
-**Kısa cevap: Bireysel Pro $20/ay, Max $100-200/ay; Kurumsal Team $25/koltuk/ay (min 5 koltuk), Enterprise özel müzakere.** Claude'un fiyatlandırması kullanım yoğunluğuna göre kademelendirilmiştir. **Pro ($20/ay):** günde 30-40 mesaj, hafif kullanım, tek kullanıcı, dosya yükleme dahil; serbest profesyoneller için yeterli. **Max 5x ($100/ay):** Pro'nun 5 katı kullanım limiti, ortalama günlük yoğun kullanım, Projects ve Cowork dahil; yeni öğrenen kullanıcı Pro limitine hızla çarptığı için ilk ay önerilir. **Max 20x ($200/ay):** çok yoğun kullanım, gün boyu aktif AI iş yükü, geliştirici tipi senaryolar. **Team ($25/koltuk/ay):** kurumsal yönetim paneli, merkezi faturalandırma, paylaşılan Projects, KVKK uyumlu DPA, minimum 5 koltuk yani $125/ay tabanı. **Enterprise:** özel müzakere, kullanıma göre fiyat, SSO/SAML, gelişmiş audit, Zero Data Retention seçeneği, dedicated success manager. Tüm planlara KDV ek (%20 Türkiye için). Yıllık ödemede %15-20 indirim. Detay: [Claude Planları](/wiki/temeller/planlar/).
+**Kısa cevap: Bireysel Pro $20/ay, Max $100-200/ay. Kurumsal Team $25/koltuk/ay (en az 2 koltuk), Enterprise $20/koltuk/ay + kullanım API fiyatıyla.**
+
+Fiyat, kullanım yoğunluğuna göre kademelidir. Anthropic mesaj sayısı vermez; kullanım 5 saatlik kayan pencere ve haftalık limitle ölçülür ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
+
+- **Pro ($20/ay):** Tek kullanıcı, hafif ve orta kullanım. Serbest profesyoneller için yeterli.
+- **Max 5x ($100/ay):** Pro'nun 5 katı limit, Fable plana dahil. Yeni öğrenen kullanıcı Pro limitine hızla çarptığı için ilk ay önerilir.
+- **Max 20x ($200/ay):** Çok yoğun kullanım, gün boyu aktif AI iş yükü, geliştirici tipi senaryolar.
+- **Team Standard ($25/koltuk/ay, yıllıkta $20):** Yönetim paneli, merkezi fatura, paylaşılan Projects, SSO, ticari şartlara dahil DPA. En az 2 koltuk, yani aylık $50 taban. Pro'nun 1,25 katı kullanım.
+- **Team Premium ($125/koltuk/ay, yıllıkta $100):** Pro'nun 6,25 katı kullanım, Fable plana dahil.
+- **Enterprise ($20/koltuk/ay, yıllık faturalı):** Kullanım ayrıca API fiyatıyla faturalanır, yani aylık tutar sabit değildir. RBAC, audit log, Compliance API. Zero Data Retention gerekiyorsa API için ayrıca talep edilir.
+
+Fiyatlar vergi hariçtir; Türkiye faturalama adresiyle web ödemesinde %20 KDV eklendiği bildirilir ([Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/)). Yıllık ödemede Pro'da yaklaşık %15, Team'de %20 indirim vardır. Kota bitince **kullanım kredisi** (kullandıkça öde) açılabilir, ayrıntı [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasında. Plan detayı: [Claude Planları](/wiki/temeller/planlar/).
 
 ### 6 çalışan için toplam abonelik maliyeti nedir?
 
-**Kısa cevap: İlk ay $600 (Max 5x önerilir), ay 2-3 karma kullanımla $280-380.** Maliyet ay bazında değişir; ilk ayda yoğun, sonraki aylarda optimize edilmiş kullanım üzerinden ilerler. **İlk ay:** 6 çalışan × Max 5x ($100) = **$600/ay** (yaklaşık 20.000 TL). Max 5x önerisi pratikten geliyor: yeni öğrenen kullanıcı Pro limitini günde birkaç saatte dolduruyor, "çalışmıyor" hissiyle vazgeçiyor; Max 5x bu ilk ay sigortasıdır. **Ay 2-3:** gerçek kullanım ritmi netleşir, ölçüm yapılır. Hafif kullananlar Pro'ya ($20) inebilir, yoğun kullananlar Max'te kalır. Tipik karma: ~2 Max + ~4 Pro = **~$280-380/ay**. **3 aylık abonelik toplamı:** ilk ay $600 + ay 2 $300-380 + ay 3 $280-380 = **~$1.200-1.350**.
+**Kısa cevap: İlk ay $600 (Max 5x önerilir), ay 2-3'te karma kullanımla aylık $280-380.**
+
+Maliyet ay bazında değişir: ilk ay yoğun, sonraki aylar optimize edilmiş kullanımla ilerler.
+
+- **İlk ay:** 6 çalışan × Max 5x ($100) = **$600** (TL karşılığı kura göre değişir, KDV ayrıca). Max 5x önerisi pratikten gelir: yeni öğrenen kullanıcı Pro limitini günde birkaç saatte doldurur ve "çalışmıyor" hissiyle vazgeçer. Max 5x ilk ayın sigortasıdır.
+- **Ay 2-3:** Gerçek kullanım ritmi netleşir. Hafif kullananlar Pro'ya ($20) iner, yoğun kullananlar Max'te kalır. Tipik karma: ~2 Max + ~4 Pro = **~$280-380/ay**.
+- **3 aylık toplam:** $600 + 2 × ($280-380) = **~$1.160-1.360**.
 
 ### Yatırımın geri dönüşünü nasıl ölçerim?
 
-Tipik kazanımlar: çalışan başına haftada 8-15 saat kazanım, aynı iş kalitesini %40-60 daha hızlı üretim, yıllık dokümantasyon geriliminin ortadan kalkması. Somut ölçüm için Claude'la çalışmaya başlamadan önceki ve 3 ay sonraki durumu karşılaştırın.
+Claude'a başlamadan önce çalışan başına haftalık süre için bir baseline alın, 3 ay sonra aynı anketi tekrarlayın. [Ölçüm Metrikleri ve ROI](/wiki/temeller/olcum-metrikleri/) sayfasındaki tipik değerlere göre 90. günde çalışan başına ortalama 5-9 saat/hafta tasarruf beklenir; yoğun kullanıcılarda 8-15 saate çıkar.
 
 ### Küçük şirketim için fazla mı?
 
-Bireysel başlangıç için **Claude Max 5x ilk ay ($100)** + sonrası duruma göre Pro ($20). Wiki ve CLAUDE.md örnekleri ücretsiz — **her büyüklükteki şirkete** ve bireysel profesyonele faydalıdır.
+Bireysel başlangıç için **Claude Max 5x ilk ay ($100)**, sonrasında duruma göre Pro ($20). Wiki ve CLAUDE.md örnekleri ücretsizdir ve her büyüklükteki şirkete, bireysel profesyonele faydalıdır.
 
 ## Çalışan Adaptasyonu
 
@@ -62,65 +105,104 @@ Bireysel başlangıç için **Claude Max 5x ilk ay ($100)** + sonrası duruma g�
 
 Direnç doğaldır ve beklenir. Çözüm: her çalışanın **kendi gerçek işi üzerinden** Claude'la ilk gerçek çıktıyı üretmesi. "Buna neden ihtiyacım var?" sorusu o an cevaplanır, soyut değil somut.
 
-### Yaşlı çalışanlarım teknoloji fobiklerse?
+### Yaşça büyük çalışanlarım teknolojiden çekiniyorsa?
 
-Claude'un büyük avantajı **konuşma arayüzü**. Ne kod, ne karmaşık menü — sadece Türkçe konuşmak. 60 yaşındaki muhasebe müdürü için Claude, 30 yaşındaki yazılımcıdan **daha rahat** olabilir.
+Claude'un büyük avantajı **konuşma arayüzüdür**: kod yok, karmaşık menü yok, sadece Türkçe konuşmak. 60 yaşındaki bir muhasebe müdürü için Claude, 30 yaşındaki bir yazılımcıdan **daha rahat** olabilir.
 
 ### Çalışanlar Claude'a bağımlı hale gelmez mi?
 
-Bu gerçek bir risk. [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) tam bunu hedefler: Diligence (Sorumluluk) boyutu, çalışan her çıktının arkasında durur, sorumluluğu Claude'a devretmez. **Claude yazar, siz karar verirsiniz** ilkesi sürekli geçerlidir.
+Bu gerçek bir risk. [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) tam bunu hedefler: Diligence (Sorumluluk) boyutu, çalışanın her çıktının arkasında durmasını ve sorumluluğu Claude'a devretmemesini söyler. **Claude yazar, siz karar verirsiniz** ilkesi sürekli geçerlidir.
 
 ### Claude'a öğrettiklerimiz, çalışan ayrıldığında şirketten gider mi?
 
-**Hayır.** CLAUDE.md dosyası, prompt kütüphanesi ve workspace klasörü **şirketin mülküdür** — çalışanın değil. Bu dosyalar iş bilgisayarında durur ve çalışan ayrıldığında şirketle kalır.
+**Hayır.** CLAUDE.md dosyası, prompt kütüphanesi ve workspace klasörü **şirketin mülküdür**, çalışanın değil. Bu dosyalar iş bilgisayarında durur ve çalışan ayrıldığında şirketle kalır.
 
 ## Teknik Konular
 
 ### Hangi Claude modelini kullanmalıyım?
 
-**Kısa cevap: Sonnet. Her zaman. İş kullanımının %95'inde varsayılan tercih budur.** Anthropic üç ana model ailesi sunar (Haiku, Sonnet, Opus) ve her birinin kendi kullanım senaryosu var. **Haiku** en hızlı ve ucuz; basit sınıflandırma, kısa yanıt, otomasyon backend'i için uygun, ama derin akıl yürütme gerektiren işlerde yetersiz kalır. **Sonnet** dengeli; hız ve yetkinlik arasında en iyi nokta, kurumsal iş kullanımının %95'inde doğru tercih. Sözleşme analizi, rapor yazımı, Türkçe iş yazışması, kod inceleme, doküman özetleme, prompt iterasyonu, Cowork iş akışları, hepsi Sonnet'le yapılır. **Opus** en güçlü model; çok derin araştırma, kompleks matematiksel akıl yürütme, ileri seviye kod üretimi, agentic tasklar için. Daha pahalı ve yavaş; günlük kurumsal işlerde getirisi farkı haklı çıkarmıyor. Model seçimi için enerji harcamayın, çıktı kalitesi (prompt, bağlam, CLAUDE.md) için harcayın; Sonnet doğru kurulduğunda Opus'tan daha iyi sonuç verebilir. [Modeller detay](/wiki/temeller/modeller/).
+**Kısa cevap: Sonnet 5.5. Günlük işte varsayılan tercih budur.**
+
+Anthropic dört model sunar ve her birinin kendi kullanım senaryosu vardır:
+
+- **Haiku 4.5:** En hızlı ve hafif. Basit sınıflandırma, kısa yanıt, otomasyon arka planı için uygundur; derin akıl yürütme gerektiren işlerde yetersiz kalır.
+- **Sonnet 5.5:** Dengeli; hız ve yetkinlik arasındaki en iyi nokta. Kurumsal günlük işin büyük çoğunluğunda doğru tercihtir: sözleşme analizi, rapor yazımı, Türkçe iş yazışması, kod inceleme, doküman özetleme, Cowork iş akışları.
+- **Opus 5.5:** Daha güçlü ve daha pahalı. Çok derin araştırma, karmaşık akıl yürütme, ileri kod üretimi ve ajan işleri gibi ağır işler için ayırın.
+- **Fable 5.1:** En güçlü genel model; erişimi plana göre değişir. Max ve Team Premium'da plana dahil (haftalık limitin en fazla yarısına kadar), Pro ve Team Standard'da yalnız kullanım kredisiyle, Free'de yok ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
+
+Model seçimine değil çıktı kalitesine (prompt, bağlam, CLAUDE.md) enerji harcayın; Sonnet doğru kurulduğunda çoğu işte yeter. [Modeller detay](/wiki/temeller/modeller/).
 
 ### Claude Türkçeyi iyi konuşur mu?
 
-**Kısa cevap: Evet, profesyonel düzeyde. Resmi yazışma, teknik terminoloji, hukuk dili ve iş kültürü nüansları doğru yakalanır.** Claude 4.x ailesi (özellikle Sonnet 4.5+) Türkçe çıktı kalitesinde sektörün en üst seviyesinde. Test edilen kullanım alanları: **resmi yazışma** (KDV iadesi başvurusu, SGK yazışmaları, KVKK Kurumu bildirimi, vergi dairesi), **hukuk dili** (sözleşme maddesi taslağı, ihtarname, dilekçe), **teknik terminoloji** (mühendislik raporu, üretim talimatı, IT belgelendirmesi), **iş kültürü nüansları** (üst yönetimle resmi e-posta tonu, müşteri itirazına yumuşak cevap, kriz iletişimi). Türkçe karakterler (ş, ç, ı, ğ, ü, ö, İ) sorunsuz, büyük-küçük harf dönüşümü doğru. Türkçe deyim ve atasözü anlama yeterli, çeviri yapay kalmıyor. Sınırlamalar: bazı Osmanlıca/eski Türkçe terimler eksik, çok yerel dialektler (Karadeniz, Doğu Anadolu) bazen genelleştirilir. **ChatGPT ve Gemini ile karşılaştırma:** Claude, kurumsal Türkçe iş dilinde özellikle "iddia etmeden soru sorma" davranışıyla öne çıkar (uydurmuyor, bilmediğinde söylüyor). Önemli metinleri her zaman gözden geçirin, ama düzeltme süresi İngilizce çıktıyla benzer.
+**Kısa cevap: Evet, profesyonel düzeyde. Resmi yazışma, teknik terminoloji, hukuk dili ve iş kültürü nüansları doğru yakalanır.**
+
+Güncel modeller (Sonnet 5.5, Opus 5.5, Fable 5.1) Türkçe çıktıda üst seviyededir. Test edilen kullanım alanları:
+
+- **Resmi yazışma:** KDV iadesi başvurusu, SGK yazışmaları, KVKK Kurumu bildirimi, vergi dairesi
+- **Hukuk dili:** Sözleşme maddesi taslağı, ihtarname, dilekçe
+- **Teknik terminoloji:** Mühendislik raporu, üretim talimatı, IT belgelendirmesi
+- **İş kültürü nüansları:** Üst yönetimle resmi e-posta tonu, müşteri itirazına yumuşak cevap, kriz iletişimi
+
+Türkçe karakterler (ş, ç, ı, ğ, ü, ö, İ) ve büyük-küçük harf dönüşümü sorunsuzdur; deyim ve atasözleri anlaşılır, çeviri yapay kalmaz.
+
+**Sınırlar:** Bazı Osmanlıca ve eski Türkçe terimler eksiktir, çok yerel şiveler (Karadeniz, Doğu Anadolu) bazen genelleştirilir. ChatGPT ve Gemini ile karşılaştırıldığında Claude kurumsal iş dilinde ton ve nezaket ayarında güçlüdür, ama halüsinasyon riski Türkçede de geçerlidir ([Sınırlamalar](/wiki/temeller/sinirlamalar/)). Önemli metinleri her zaman gözden geçirin; düzeltme süresi İngilizce çıktıyla benzerdir. Ayrıntı: [Türkçe Performansı](/wiki/temeller/turkce-performansi/).
 
 ### Claude internete bağlı mı?
 
-**Kısa cevap: Varsayılan olarak hayır. Web search skill'i etkinleştirilirse aktif olur, aksi halde sadece eğitim verisindeki bilgiyle çalışır.** Claude'un mimarisi statik bir "bilgi kesim tarihi"yle çalışır (Sonnet 4.6 için Mart 2025 civarı). Bu tarihten sonraki olayları, son haberleri, bugünün döviz kurunu, anlık hisse fiyatını veya yeni mevzuat değişikliklerini doğrudan bilmez. **Web search skill'i** Anthropic'in resmi eklentisi olarak Claude.ai arayüzünde, Cowork ortamında ve API üzerinden açılabilir; aktifleştirildiğinde Claude gerçek zamanlı web araması yapar, sonuçları özetler ve kaynak linki gösterir. Skill manuel açılır, varsayılan kapalıdır çünkü her sorgu web araması yapsa hız ve maliyet artar. **Pratik kullanım:** anlık bilgi gerektirmeyen işlerde (rapor yazma, sözleşme analizi, prompt geliştirme, kod inceleme) web search kapalı bırakılır, daha hızlı ve ucuzdur. Anlık veri gerektiğinde (güncel sektör haberleri, son mevzuat, fiyat araştırması, rakip analizi) skill açılır veya bilgi manuel olarak prompt'a yapıştırılır. **Kurumsal güvenlik:** web search açıldığında Claude'a girdiğiniz bilgi web aramalarında kullanılır ama Anthropic dışı sitelere veri sızmaz, sadece arama sorgusu üretilir.
+**Kısa cevap: Modelin kendisi hayır, ama web araması açıkken Claude gerektiğinde internette arama yapar.**
+
+Model, statik bir "bilgi kesim tarihiyle" çalışır (güncel modellerde Haziran 2026, Haiku 4.5'te Şubat 2025). Bu tarihten sonraki olayları, son haberleri, bugünün döviz kurunu, anlık hisse fiyatını veya yeni mevzuat değişikliklerini kendiliğinden bilmez. **Web arama** claude.ai arayüzünde ve Cowork'te vardır; açıkken Claude gerçek zamanlı arama yapar, sonuçları özetler ve kaynak linki gösterir ([Web Arama](/wiki/araclar/web-arama/)).
+
+- **Web arama gerekmez:** Rapor yazma, sözleşme analizi, prompt geliştirme, kod inceleme gibi anlık bilgi gerektirmeyen işler. Çıktı daha hızlı gelir.
+- **Web arama gerekir:** Güncel sektör haberi, son mevzuat, fiyat araştırması, rakip analizi. Aramayı açın veya bilgiyi prompt'a kendiniz yapıştırın.
+- **Güvenlik:** Arama sorgusu dışarı gider, o yüzden gizli bilgiyi sorgunun içine koymayın.
 
 ### Claude kod yazabilir mi?
 
-**Evet.** İş profesyoneli için değerli olan kısım: "Bir PowerShell script'i yaz, şunu otomatize et" diyebilmek, çalışan kod öğrenmez, Claude script'i üretir ve çalışan sonucu doğrular. [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/) sayfasında detay.
+**Evet.** İş profesyoneli için değerli olan kısım şudur: "Bir PowerShell script'i yaz, şunu otomatize et" diyebilirsiniz. Çalışan kod öğrenmez, Claude script'i üretir ve çalışan sonucu doğrular. [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/) sayfasında detay.
 
 ### Claude bilgisayarımı kontrol edebilir mi?
 
-**Evet, [Computer Use](/wiki/yetenekler/computer-use/) özelliği ile** — ama her eylem şeffaf ve sizin onayınızla. Bu özellikle API'si olmayan eski sistemlerde (Logo, Netsis, eski ERP) otomasyon için güçlü bir araçtır.
+**Evet, [Computer Use](/wiki/yetenekler/computer-use/) özelliğiyle, ama sınırlı.** Bu özellik **research preview** aşamasındadır, yalnızca Pro ve Max planlarında, Claude Desktop uygulaması (macOS, Windows) içinde Cowork ve Claude Code ile çalışır; Team ve Enterprise'ta yoktur. Eylemler şeffaftır ve sizin kontrolünüzdedir. API'si olmayan eski sistemlerde (Logo, Netsis, eski ERP) otomasyon için denenebilir, ama üretimde ona güvenmeden önce test edin.
 
 ## ChatGPT ve Diğer Alternatifler
 
 ### ChatGPT kullanıyoruz, Claude'a geçmemiz gerekir mi?
 
-**Kısa cevap: Şart değil ama kurumsal iş kullanımında değer artışı ciddi olabilir. CLAUDE.md, uzun bağlam, KVKK netliği belirleyici farklar.** ChatGPT (OpenAI) ve Claude (Anthropic) birbirinin doğrudan rakibi olan iki büyük dil modeli. Tüketici kullanımında benzer; kurumsal iş entegrasyonunda farklılaşıyorlar. **Claude'un üstün olduğu alanlar:** CLAUDE.md şeffaflığı (model nasıl davranacağını yapılandırılmış dosyayla yönlendirme, ChatGPT'nin Custom Instructions'undan çok daha derin), uzun belge performansı (200K+ token bağlamda doküman sadakati, ChatGPT'nin 128K bağlamına göre büyük belgelerde fark açıyor), Cowork iş akışı (paralel agent koordinasyonu), KVKK ve veri politikası netliği (DPA dili daha net, Zero Data Retention seçeneği, Team planında varsayılan no-training garantisi sözleşmede). **ChatGPT'nin üstün olduğu alanlar:** yaratıcı yazım hızı, görsel üretim (DALL-E entegre), eklenti ekosistemi genişliği, kod yorumlayıcı (Code Interpreter) olgunluğu, ses arayüzü kalitesi. Karar matriksi: yaratıcı içerik ağırlıklıysa ChatGPT yetebilir; sözleşme/rapor/uzun doküman ağırlıklıysa Claude öne geçer. Çoğu kurumsal müşteri ikisini birlikte kullanır, departmana göre seçer. Detaylı karşılaştırma: [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/).
+**Kısa cevap: Şart değil, ama kurumsal iş kullanımında değer artışı ciddi olabilir. CLAUDE.md, uzun bağlam ve KVKK netliği belirleyici farklardır.**
+
+ChatGPT (OpenAI) ve Claude (Anthropic) birbirinin doğrudan rakibidir. Tüketici kullanımında benzerler, kurumsal iş entegrasyonunda ayrışırlar.
+
+**Claude'un üstün olduğu alanlar:**
+
+- **CLAUDE.md şeffaflığı:** Modelin nasıl davranacağını yapılandırılmış bir dosyayla yönlendirirsiniz; bu, ChatGPT'nin Custom Instructions'undan çok daha derindir.
+- **Uzun belge performansı:** Güncel modellerde 1M token bağlam. OpenAI'nin güncel API modelleri de benzer bağlam sunduğu için fark boyuttan çok doküman sadakatinde ve çalışma biçiminde aranmalıdır.
+- **Cowork iş akışı:** Paralel agent koordinasyonu.
+- **KVKK ve veri politikası netliği:** DPA dili daha net, Zero Data Retention seçeneği var, Team planında varsayılan no-training güvencesi sözleşmede.
+
+**ChatGPT'nin üstün olduğu alanlar:** Yaratıcı yazım hızı, görsel üretim (Claude görsel üretmez), eklenti ekosisteminin genişliği, kod yorumlayıcı (Code Interpreter) olgunluğu, ses arayüzü kalitesi.
+
+**Karar özeti:** Yaratıcı içerik ağırlıklıysa ChatGPT yetebilir; sözleşme, rapor ve uzun doküman ağırlıklıysa Claude öne geçer. Çoğu kurumsal müşteri ikisini birlikte kullanır, departmana göre seçer. Detaylı karşılaştırma: [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/).
 
 ### Hem ChatGPT hem Claude kullanabilir miyim?
 
-Evet. Birçok profesyonel ikisini farklı işler için kullanır. Pratikte her çalışan bir süre sonra birini ana araç olarak seçer — bu tercih role bağlıdır.
+Evet. Birçok profesyonel ikisini farklı işler için kullanır. Pratikte her çalışan bir süre sonra birini ana araç olarak seçer, bu tercih role bağlıdır.
 
 ### Grok, Gemini, Mistral gibi diğer modelleri denemeli miyim?
 
-Tüketici kullanımı için denenebilir. **Kurumsal iş akışı için** şu an Claude ve ChatGPT'nin sunduğu olgunlukta (CLAUDE.md seviyesi şeffaflık, MCP connector ekosistemi, DPA) alternatif yok. Bu değişirse wiki'yi güncelleriz.
+Tüketici kullanımı için denenebilir. Kurumsal tarafta Google (Gemini) ve Microsoft (Copilot) da ciddi planlar sunuyor; bu iki rakibi [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/) ve [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/) sayfalarında karşılaştırdık. Grok ve Mistral için kurumsal olgunluk değerlendirmemiz henüz yok.
 
 ## Uygulama ve Güncellik
 
 ### Claude ne sıklıkla değişiyor?
 
-Anthropic sık iterasyon yapar: genellikle haftada birkaç küçük güncelleme, ayda 1-2 önemli özellik, çeyrekte önemli yeni model. Wiki'deki bilgiler yaşayan belgelerdir, önemli değişiklikler burada güncellenir.
+Anthropic çok sık iterasyon yapar: 2026'da yeni model sürümleri neredeyse her ay geldi, özellikler ise haftalık değişiyor. Wiki'deki bilgiler yaşayan belgelerdir, önemli değişiklikler burada güncellenir; yeni gelişmeler için [Haberler](/haberler/) sayfasına bakın.
 
 ## İlgili Sayfalar
 
-- [Claude Nedir?](/wiki/temeller/claude-nedir/) — Temel kavram
-- [Claude Planları](/wiki/temeller/planlar/) — Fiyat detayları
-- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — Dürüst sınırlar
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri güvenliği detayları
-- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) — Alternatiflerle karşılaştırma
-
+- [Claude Nedir?](/wiki/temeller/claude-nedir/): Temel kavram
+- [Claude Planları](/wiki/temeller/planlar/): Fiyat detayları
+- [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/): 5 saatlik pencere, haftalık limit, kullanım kredisi
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Dürüst sınırlar
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri güvenliği detayları
+- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/): Alternatiflerle karşılaştırma

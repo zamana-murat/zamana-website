@@ -1,15 +1,15 @@
 ---
-title: Eğitim ve Akademi — Claude Uygulamaları
-description: Üniversite, okul, dershane, kurs ve eğitmenler için Claude — ders planı, sınav sorusu, ödev geri bildirimi, akademik araştırma, öğrenci iletişimi.
+title: "Eğitim ve Akademi: Claude Uygulamaları"
+description: "Üniversite, okul, dershane, kurs ve eğitmenler için Claude: ders planı, sınav sorusu, ödev geri bildirimi, akademik araştırma, öğrenci iletişimi."
 tags:
   - departmanlar
   - egitim
   - akademi
   - okul
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Eğitim sektörü Türkiye'de geniş — üniversiteler, lise/ortaokul, özel okullar, dershaneler, dil okulları, online kurs platformları, bireysel eğitmenler. Her birinde **müfredat hazırlama, sınav üretme, ödev değerlendirme, öğrenci iletişimi** zaman alıcı, tekrar eden işler. Claude bunların hepsinde derinlemesine değer üretir.
+Eğitim sektörü Türkiye'de geniş: üniversiteler, liseler ve ortaokullar, özel okullar, dershaneler, dil okulları, online kurs platformları, bireysel eğitmenler. Her birinde **müfredat hazırlama, sınav üretme, ödev değerlendirme ve öğrenci iletişimi** zaman alıcı, tekrar eden işlerdir. Claude bunların hepsinde somut destek sağlar.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -20,7 +20,7 @@ Eğitim sektörü Türkiye'de geniş — üniversiteler, lise/ortaokul, özel ok
 - Öğrenci/veli iletişimi her seferinde kişiselleştirilemiyor
 - Çoklu seviye için aynı konuyu farklı şekillerde anlatmak zor
 
-## Bölüm 1 — Ders Planı ve Müfredat
+## Bölüm 1: Ders Planı ve Müfredat
 
 ### Ders Planı Hazırlama
 
@@ -32,7 +32,7 @@ Bir konunun haftalık / dersi başına planı. Claude:
 - Süre planı (50 dakikalık ders için ne kadar nereye)
 - Ödev / değerlendirme önerisi
 
-Bir öğretmen 2 saatte hazırladığı planı 30 dakikada Claude'la çıkarır.
+Bir öğretmenin saatler süren plan hazırlığı, Claude ile çoğu zaman dakikalar içinde ilk taslağa iner; sonrası öğretmenin düzeltmesidir.
 
 ### Müfredat Yazımı
 
@@ -40,23 +40,23 @@ Bir kursun yıllık müfredatı. Konu sırası, ön gerekler, kazanım listesi, 
 
 ### Çoklu Seviye Adaptasyonu
 
-Aynı konuyu **6. sınıf**, **9. sınıf**, **üniversite 1. sınıf** seviyelerine göre farklı kelime, farklı örnekle anlatma. Claude seviye-uyumu konusunda güçlü.
+Aynı konuyu **6. sınıf**, **9. sınıf** ve **üniversite 1. sınıf** seviyelerine göre farklı kelime ve farklı örnekle anlatmak. Claude seviyeye uyum konusunda güçlüdür.
 
 ### Ders Notu / Sunum
 
-Konunun öğrenci dağıtım notu (handout) ve sunum slaytı. [Skills](/wiki/yetenekler/skills/) ile .pptx dosyası doğrudan çıkar.
+Konunun öğrenci dağıtım notu (handout) ve sunum slaytı. [Skills](/wiki/yetenekler/skills/) ile .pptx dosyası doğrudan çıkar. Ücretli planlarda beta olan [Claude Design / Slides](/wiki/yetenekler/claude-design/) de bu iş için denenebilir.
 
-## Bölüm 2 — Sınav ve Değerlendirme
+## Bölüm 2: Sınav ve Değerlendirme
 
 ### Sınav Sorusu Üretme
 
-Açık uçlu, çoktan seçmeli, doğru-yanlış, eşleştirme — Claude tüm tipleri konuya göre üretir. **Yenilik:** sıkıcı klişe sorular yerine **gerçek hayat senaryosu** içeren sorular hazırlar.
+Açık uçlu, çoktan seçmeli, doğru-yanlış, eşleştirme: Claude tüm tipleri konuya göre üretir. Sıkıcı klişe sorular yerine **gerçek hayat senaryosu** içeren sorular da hazırlayabilir.
 
 [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile sizin sınav tarzınızı öğretebilirsiniz.
 
 ### Soru Bankası Genişletme
 
-Mevcut soru bankanızı Claude'la 2-3 katına çıkarın — orijinal soruların **paraphrase**, varyasyon, ters versiyonları otomatik üretilir.
+Mevcut soru bankanızı Claude ile genişletin: orijinal soruların **yeniden ifade edilmiş**, varyasyon ve ters versiyonları hızla üretilir.
 
 ### Cevap Anahtarı ve Çözüm
 
@@ -66,7 +66,7 @@ Sorularınız için tam çözüm + alternatif çözüm yolları + yanlış cevap
 
 Sınavın hatırlama-anlama-uygulama-analiz-değerlendirme-yaratma seviyelerinde dengesini Claude analiz eder, eksik seviye varsa soru ekler.
 
-## Bölüm 3 — Ödev ve Geri Bildirim
+## Bölüm 3: Ödev ve Geri Bildirim
 
 ### Ödev Değerlendirmesi (Tarama Aşaması)
 
@@ -76,89 +76,89 @@ Sınavın hatırlama-anlama-uygulama-analiz-değerlendirme-yaratma seviyelerinde
 - En güçlü ve en zayıf yönü
 - Öğretmenin odaklanması gereken 3 nokta
 
-Bu **karar değil tarama** — son notu öğretmen verir, Claude ön gözden geçirme yapar.
+Bu **karar değil tarama**: son notu öğretmen verir, Claude yalnızca ön gözden geçirme yapar.
 
 ### Bireyselleştirilmiş Geri Bildirim
 
-50 ödev × bireysel geri bildirim → bir öğretmen için günler. Claude'la her ödev için 3-5 cümle kişiselleştirilmiş geri bildirim, öğretmen tarayarak onaylar.
+50 ödev için bireysel geri bildirim yazmak bir öğretmen için günler sürer. Claude her ödev için 3-5 cümlelik kişiselleştirilmiş bir geri bildirim taslağı çıkarır, öğretmen tarayarak onaylar.
 
 ### Plagiat / Kopya Kontrolü
 
-Claude doğrudan plagiat detector değil, ama "bu metin sıradan değil mi, daha gelişmiş mi" sezgisi verebilir. Final karar plagiat detector + öğretmen yargısı.
+Claude bir plagiat tespit aracı değildir. Bir metnin üslubunun öğrencinin önceki çalışmalarından belirgin biçimde farklı olduğunu fark edebilir, ama bu yalnızca bir ipucudur. Karar, plagiat tespit aracı ve öğretmenin yargısıyla verilir.
 
 ### Yazma Becerileri Geri Bildirimi
 
-Türkçe / yabancı dil kompozisyon değerlendirmesi — gramer, akış, argüman gücü, kelime dağarcığı. Claude detaylı analiz çıkarır.
+Türkçe veya yabancı dilde kompozisyon değerlendirmesi: gramer, akış, argüman gücü, kelime dağarcığı. Claude ayrıntılı bir analiz çıkarır.
 
-## Bölüm 4 — Akademik Araştırma (Yüksek Eğitim)
+## Bölüm 4: Akademik Araştırma (Yüksek Eğitim)
 
 ### Literatür Taraması
 
-[Research Mode](/wiki/yetenekler/research-mode/) ile bir konuda akademik literatür özeti. Akademik kaynak değil ama **tarama başlangıcı** olarak değerli.
+[Research Mode](/wiki/yetenekler/research-mode/) ile bir konuda akademik literatür özeti çıkarılır. Bu akademik bir kaynak değildir, ama **tarama başlangıcı** olarak değerlidir.
 
-**Önemli:** Akademik makalenin tam gizli/ücretli içeriklerine Claude erişemez. Açık kaynaklar üzerinden tarama yapar. Final akademik atıflar için DergiPark, Google Scholar, JSTOR, Web of Science manual.
+**Önemli:** Claude, akademik makalelerin ücretli veya kısıtlı tam metinlerine erişemez; açık kaynaklar üzerinden tarama yapar. Her atıfı kaynağından kendiniz doğrulayın. Final akademik atıflar için DergiPark, Google Scholar, JSTOR ve Web of Science'ı elle tarayın.
 
 ### Makale Taslağı
 
-Akademik makale yazımı için taslak — abstract, giriş, yöntem, tartışma. Claude'la hızlı, sonra **akademik üslupta öğretmen** parlatır.
+Akademik makale için taslak, özet, giriş, yöntem ve tartışma bölümleri Claude ile hızlıca çıkar. Sonrasında **akademik üslubu öğretmen veya araştırmacı** parlatır.
 
 ### Atıf ve Bibliography
 
-APA, MLA, Chicago, ISNAD format dönüşümleri Claude'la doğru ve hızlı.
+APA, MLA, Chicago ve ISNAD gibi biçimler arasında dönüşüm Claude ile hızlıdır. Dönüştürülen atıfları yine de bir kez kontrol edin.
 
 ### Tez Danışmanlığı (Öğrenciye)
 
-Yüksek lisans / doktora öğrencisi tezinin bölümleri için Claude'dan **destek** alır — tarama, taslak, dil düzeltme. Akademik etik açısından Claude **araç**, son ürün öğrencinin emek ve düşüncesidir.
+Yüksek lisans veya doktora öğrencisi, tezinin bölümleri için Claude'dan **destek** alabilir: tarama, taslak, dil düzeltme. Akademik etik açısından Claude bir **araçtır**; son ürün öğrencinin emeği ve düşüncesidir.
 
-## Bölüm 5 — Öğrenci ve Veli İletişimi
+## Bölüm 5: Öğrenci ve Veli İletişimi
 
 ### Veli E-postası
 
-"Çocuğunuzun bu dönemki gelişimi" tarzı e-postalar her dönem yüzlerce. Claude veli başına kişiselleştirilmiş taslak çıkarır.
+"Çocuğunuzun bu dönemki gelişimi" tarzı e-postalar her dönem yüzlerce kişiye gider. Claude, veli başına kişiselleştirilmiş taslak çıkarır.
 
 ### Olay Bildirimi
 
-Bir öğrenci olayı (devamsızlık, davranış, kaza). Claude olgusal, profesyonel, **abartmadan** veli bildirim metni hazırlar. Hassas durum.
+Bir öğrenci olayı (devamsızlık, davranış, kaza) için Claude olgusal, profesyonel ve **abartmasız** bir veli bildirimi hazırlar. Bu hassas bir durumdur, gönderen kişi mutlaka gözden geçirir.
 
 ### Bilgilendirme Yazıları
 
-Müfredat değişikliği, etkinlik daveti, gezi onay formu. Claude ile profesyonel ama sıcak.
+Müfredat değişikliği, etkinlik daveti, gezi onay formu. Claude ile profesyonel ama sıcak bir dil kurulur.
 
 ### Çoklu Dilde
 
-Yabancı / yabancı dil ağırlıklı veli kitlesi varsa, Claude direk çeviriden öte **kültürel olarak uygun** iletişim kurar.
+Yabancı uyruklu veya yabancı dil ağırlıklı bir veli kitlesi varsa Claude, birebir çeviriden öte **kültürel olarak uygun** bir iletişim kurar.
 
-## Bölüm 6 — İdare ve Yönetim
+## Bölüm 6: İdare ve Yönetim
 
 ### Eğitim Müfettişi Hazırlığı
 
-MEB denetim öncesi belge hazırlığı — yıllık plan, performans dosyası, sınıf defterleri kontrolü. Claude eksiklerin listesini çıkarır.
+MEB denetimi öncesi belge hazırlığı: yıllık plan, performans dosyası, sınıf defterleri kontrolü. Claude eksiklerin listesini çıkarır.
 
 ### Performans Değerlendirme
 
-Öğretmen performans değerlendirmesi (yıllık) — yapıcı geri bildirim çerçevesi. [İK departmanı](/wiki/departmanlar/insan-kaynaklari/) sayfasında genel performans yaklaşımı.
+Öğretmenlerin yıllık performans değerlendirmesi için yapıcı geri bildirim çerçevesi. [İK departmanı](/wiki/departmanlar/insan-kaynaklari/) sayfasında genel performans yaklaşımı var.
 
 ### Bütçe ve Kaynak Planlama
 
-Sınıf donanımı, materyal, kurs satın alma — gerekçeli liste Claude'la net çıkar.
+Sınıf donanımı, materyal ve kurs satın alma için gerekçeli listeyi Claude ile net biçimde çıkarabilirsiniz.
 
 ## Pratik Kullanım Senaryoları
 
-### Senaryo 1: Lise Öğretmeni — Pazartesi Sabah
+### Senaryo 1: Lise Öğretmeni: Pazartesi Sabah
 
-Pazartesi 07:30. Öğretmen Cuma'dan kalan ödevleri unutmuş. Claude'a sınıf seviyesini söyler, Cuma konusunu hatırlatır → 10 ödev sorusu, çözüm anahtarı, 30 dakikalık tartışma planı 5 dakikada hazır.
+Pazartesi 07:30. Öğretmen Cuma'dan kalan ödevleri unutmuş. Claude'a sınıf seviyesini söyler, Cuma konusunu hatırlatır. Birkaç dakika içinde 10 ödev sorusu, çözüm anahtarı ve 30 dakikalık bir tartışma planı hazırdır.
 
-### Senaryo 2: Üniversite Asistan
+### Senaryo 2: Üniversite Asistanı
 
-Doktora öğrencisi, dersin asistanlığını yapıyor. Bu hafta ders konusu için Claude'la **literatür taraması** yapar, **slayt seti** hazırlar, **forum sorularına** taslak yanıt verir. Asistanlık 12 saat/hafta yerine 6 saatte biter.
+Doktora öğrencisi bir dersin asistanlığını yapıyor. Bu haftanın ders konusu için Claude ile **literatür taraması** yapar, **slayt seti** hazırlar, **forum sorularına** taslak yanıt verir. Asistanlık yükü belirgin biçimde hafifler.
 
 ### Senaryo 3: Dil Okulu
 
-Bir dil kursunda öğretmen 4 farklı seviye gruba aynı kavramı (örn. "phrasal verbs") anlatacak. Claude her seviye için farklı örnek, farklı egzersiz seti çıkarır.
+Bir dil kursunda öğretmen, aynı kavramı (örn. "phrasal verbs") 4 farklı seviye gruba anlatacak. Claude her seviye için farklı örnek ve farklı egzersiz seti çıkarır.
 
 ### Senaryo 4: Online Kurs Hazırlığı
 
-Bireysel eğitmen, bir Udemy kursu açacak. Konu listesi var ama içerik yok. Claude'la 8 hafta içerik 3 haftada üretilir — slayt, video senaryosu, alıştırma, sınav.
+Bireysel eğitmen bir Udemy kursu açacak. Konu listesi var ama içerik yok. Claude ile slayt, video senaryosu, alıştırma ve sınav taslakları haftalar yerine günler içinde çıkar; eğitmen hepsini kendi sesiyle düzeltir.
 
 ## CLAUDE.md Tavsiyesi
 
@@ -194,30 +194,30 @@ Eğitmen için temel yapı:
 
 **Engel:** "Öğrenci verisi KVKK kapsamında çok hassas."
 
-**Çözüm:** Tüm öğrenci verisi anonimleştirilerek girilir. KVKK aydınlatma metinlerinde AI kullanımı belirtilebilir. [Hukuk departmanı](/wiki/departmanlar/hukuk/) bağlam verir.
+**Çözüm:** Tüm öğrenci verisi anonimleştirilerek girilir. KVKK aydınlatma metinlerinde AI kullanımı belirtilebilir. [Hukuk departmanı](/wiki/departmanlar/hukuk/) bağlam verir; yurt dışı aktarım için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım (KVKK m.9)" bölümüne bakın.
 
 **Engel:** "Öğretmenler teknolojiye dirençli."
 
-**Çözüm:** İlk hafta sadece **sınav sorusu üretme** ile başla — kazanan görünür olur, direnç çözülür. [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) genel başlangıç rehberi.
+**Çözüm:** İlk hafta yalnızca **sınav sorusu üretme** ile başlayın. Kazanç hemen görünür olur, direnç çözülür. [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) genel başlangıç rehberidir.
 
 ## Bireysel Eğitmen / Online Kurs
 
-Tek başına bir öğretmen / koç / kurs eğitmeni için Claude'un değeri olağanüstü. İçerik üretim hızı 3-5x artar.
+Tek başına çalışan bir öğretmen, koç ya da kurs eğitmeni için Claude'un katkısı büyüktür. Deneyimimizde içerik üretim hızı belirgin biçimde artar.
 
-## Üniversite Bağlamı — Özel Notlar
+## Üniversite Bağlamı: Özel Notlar
 
-- **Akademik integrity:** Öğrenciye Claude kullanımını şeffaf duyurun. Çoğu üniversite "AI tool kullanımını **belirtmek koşuluyla**" izin veriyor.
-- **Araştırma etiği:** Claude'la üretilmiş araştırma içeriği akademik makalede atıfla bildirilmeli (henüz standart oturmadı; üniversitenizin politikasına bakın).
-- **Uzaktan eğitim:** Online dersler için Claude öğrenci sorularına 7/24 yanıt veren bir asistan kurma temelini oluşturur.
+- **Akademik dürüstlük:** Öğrencilere Claude kullanımını şeffaf biçimde duyurun. Birçok üniversite yapay zekâ araçlarının kullanımına, **belirtilmesi koşuluyla** izin veriyor.
+- **Araştırma etiği:** Claude ile üretilmiş araştırma içeriği akademik makalede bildirilmeli. Bu konuda henüz yerleşik bir standart yok, üniversitenizin politikasına bakın.
+- **Uzaktan eğitim:** Online derslerde Claude, öğrenci sorularına gün boyu yanıt veren bir asistan kurmanın temelini oluşturabilir.
 
 ## İlgili Sayfalar
 
-- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/) — Eğitim kurumu pazarlaması
-- [İK Departmanı](/wiki/departmanlar/insan-kaynaklari/) — Öğretmen yönetimi
-- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) — Veli iletişimi
-- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — KVKK, eğitim mevzuatı
-- [Research Mode](/wiki/yetenekler/research-mode/) — Akademik tarama
-- [Skills](/wiki/yetenekler/skills/) — Sunum, çalışma kâğıdı üretme
-- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Sınav tarzınız öğretme
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Eğitim şablonları
+- [Pazarlama Departmanı](/wiki/departmanlar/pazarlama/): Eğitim kurumu pazarlaması
+- [İK Departmanı](/wiki/departmanlar/insan-kaynaklari/): Öğretmen yönetimi
+- [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/): Veli iletişimi
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/): KVKK, eğitim mevzuatı
+- [Research Mode](/wiki/yetenekler/research-mode/): Akademik tarama
+- [Skills](/wiki/yetenekler/skills/): Sunum, çalışma kâğıdı üretme
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Sınav tarzınız öğretme
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Eğitim şablonları
 

@@ -1,12 +1,12 @@
 ---
-title: "Zamana Wiki — Türkiye'nin Claude Kaynağı"
+title: "Zamana Wiki: Türkiye'nin Claude Kaynağı"
 description: "Claude'u profesyonel olarak kullanmak için Türkçe kapsamlı rehber. Bireysel profesyoneller ve şirketler için CLAUDE.md, Cowork, prompting ve gerçek iş akışları."
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **Claude'u doğru kullanmanın Türkçe kaynağı.**
 
-Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek isteyen herkese yöneliktir — bağımsız profesyoneller, şirket çalışanları, ekip yöneticileri. Kod yazmayı öğretmek için değil; satış, finans, hukuk, İK, operasyon ve yönetim alanlarında pratik, gerçek iş çıktısı üretmek için.
+Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek isteyen herkese yöneliktir: bağımsız profesyoneller, şirket çalışanları, ekip yöneticileri. Kod yazmayı öğretmek için değil; satış, finans, hukuk, İK, operasyon ve yönetim alanlarında pratik, gerçek iş çıktısı üretmek için.
 
 ## Nereden Başlamalı?
 
@@ -16,7 +16,7 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     ---
 
-    Temel kavramlar, Claude'un ne olduğu, ne olmadığı ve neden ChatGPT'den farklı düşündüğü.
+    Temel kavramlar: Claude'un ne olduğu, ne olmadığı ve neden ChatGPT'den farklı düşündüğü.
 
     [→ Temeller](/wiki/temeller/)
 
@@ -24,7 +24,7 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     ---
 
-    Hangi sayfayı okumadan önce hangileri okunmalı? Prerequisite ağacı ve kullanıcı profillerine göre yol haritaları.
+    Hangi sayfayı okumadan önce hangileri okunmalı? Önkoşul sırasına göre sıralı okuma listesi.
 
     [→ Okuma Sıralaması](/wiki/okuma-sirasi/)
 
@@ -32,7 +32,7 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     ---
 
-    Satış, pazarlama, finans, hukuk, İK ve 7 alan daha — bireysel profesyonel veya kurumsal kullanım için gerçek iş akışları.
+    Satış, pazarlama, finans, hukuk, İK ve 13 alan daha: bireysel profesyonel veya kurumsal kullanım için gerçek iş akışları.
 
     [→ Departmanlar](/wiki/departmanlar/)
 

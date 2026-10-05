@@ -1,14 +1,14 @@
 ---
-title: Prompt Kataloğu — Hazır Şablonlar
-description: Toplantı özeti, müşteri yanıtı, sözleşme analizi, rapor — günlük iş için kullanıma hazır Türkçe prompt şablonları.
+title: "Prompt Kataloğu: Hazır Şablonlar"
+description: Toplantı özeti, müşteri yanıtı, sözleşme analizi, rapor, günlük iş için kullanıma hazır Türkçe prompt şablonları.
 tags:
   - prompting
   - sablon
   - katalog
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Çoğu profesyonel her gün benzer 5-10 işle uğraşır.** Toplantı özeti, müşteri e-postası, rapor taslağı, veri analizi, hızlı araştırma — bunların her biri için **kullanıma hazır prompt şablonu** olması, her seferinde yeniden düşünmekten kurtarır.
+**Çoğu profesyonel her gün benzer 5-10 işle uğraşır.** Toplantı özeti, müşteri e-postası, rapor taslağı, veri analizi, hızlı araştırma, bunların her biri için **kullanıma hazır prompt şablonu** olması, her seferinde yeniden düşünmekten kurtarır.
 
 Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın, [köşeli parantezli yerleri] kendi bilgilerinizle doldurun, kullanın.**
 
@@ -20,7 +20,7 @@ Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın
 4. Çıktıyı kontrol edin, gerekirse iterasyonla geliştirin
 5. Düzenli kullandığınız şablonları kişisel CLAUDE.md / [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'ne ekleyin
 
-İterasyon süreci için [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfası.
+İterasyon süreci için [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfasına bakın.
 
 ---
 
@@ -40,7 +40,7 @@ Ortak referans veya bağlantı: [varsa]
 Kurallar:
 - En fazla 100 kelime
 - Subject line 5-7 kelime
-- İlk cümle: hooks (sorularına değen bir gözlem)
+- İlk cümle: hook (okurun sorununa değen bir gözlem)
 - Orta: değer önerisi (1 cümle)
 - Son: net, küçük bir sonraki adım (örn. "15 dk konuşalım mı?")
 - Pazarlama klişesi yasak ("lider çözümümüz", "yenilikçi" vs.)
@@ -55,7 +55,7 @@ Kurallar:
 Görev: Müşterinin şu itirazına yanıt taslağı çıkar.
 
 Müşteri itirazı (orijinal mesajı):
-[mesajı yapıştır — kişisel veriyi anonimleştir]
+[mesajı yapıştır; kişisel veriyi anonimleştir]
 
 Bizim durumumuz:
 - Ürün/hizmet: [tanım]
@@ -88,7 +88,7 @@ Veri (Excel/CSV):
 4. Top 5 yüksek değerli fırsatın durumu
 5. Sonraki 30 günde aksiyon gereken 3 fırsat
 
-Format: yönetim için 1 sayfa özet — başlıklar, kısa paragraflar, gerekirse tablo
+Format: yönetim için 1 sayfa özet (başlıklar, kısa paragraflar, gerekirse tablo)
 ```
 
 [Satış departmanı](/wiki/departmanlar/satis/) sayfası ek detay verir.
@@ -109,7 +109,7 @@ Notlar:
 1. Toplantının amacı (1 cümle)
 2. Katılımcılar (varsa)
 3. Tartışılan ana 3-5 konu (bullet, her biri 1-2 cümle)
-4. Alınan kararlar (varsa) — net, kim, ne, ne zaman
+4. Alınan kararlar (varsa): net, kim, ne, ne zaman
 5. Aksiyon maddeleri tablo:
    | Aksiyon | Sorumlu | Deadline |
 6. Çözülmemiş sorular / sonraki toplantıya kalan
@@ -135,7 +135,7 @@ Bende olan veri:
 
 Üret:
 1. Toplantının stratejik önemi (1 paragraf)
-2. Katılımcı profilleri — kim, neyle ilgili, ne ister
+2. Katılımcı profilleri: kim, neyle ilgili, ne ister
 3. Hazırlamam gereken 3 ana nokta
 4. Olası 3 zor soru ve kısa cevap taslağı
 5. Toplantı sonrası muhtemel aksiyon adımları
@@ -158,7 +158,7 @@ Bağlam:
 
 Kurallar:
 - Açık, doğrudan, 250 kelime altı
-- "Sayın değerli çalışanlarımız" yasak — "Merhaba ekip"
+- "Sayın değerli çalışanlarımız" yasak, yerine "Merhaba ekip"
 - Klişe pazarlama dili yasak
 - Net aksiyon ile bitir
 - İmza: [İsim, Pozisyon]
@@ -181,7 +181,7 @@ Kurallar:
 - En fazla 1300 karakter
 - İlk satır hook olmalı (scroll durduran)
 - Ortada değer (gerçek bir içgörü, klişe değil)
-- Sonda CTA — yorum, paylaş, görüşelim, blog'a yönlen — net
+- Sonda net bir CTA (yorum yap, paylaş, görüşelim, blog'a yönlen)
 - Pazarlama klişesi yasak ("lider", "yenilikçi", "vizyoner")
 - Hashtag 3-5 tane, alakalı
 - Türkçe, samimi-iş kayıt
@@ -196,7 +196,7 @@ Görev: Şu konuda blog yazısı için detaylı outline çıkar.
 
 Konu: [konu]
 Hedef anahtar kelime: [SEO için]
-Hedef okur: [kim — sektör, pozisyon, sorun]
+Hedef okur: [kim: sektör, pozisyon, sorun]
 Kelime hedefi: [örn. 1500-2000]
 
 Üret:
@@ -229,7 +229,7 @@ Yapı:
 3. Ne denedi, ne işe yaramadı (yarım paragraf)
 4. Bizim yaklaşımımız (1 paragraf)
 5. Süreç ve dönüm noktaları (2-3 paragraf)
-6. Sonuçlar — sayısal ve niteliksel (1 paragraf)
+6. Sonuçlar: sayısal ve niteliksel (1 paragraf)
 7. Müşteri alıntısı (varsa) veya benzeri sonuç bekleyenlere not
 
 Kurallar: 
@@ -253,13 +253,13 @@ Veri:
 
 Beklediğim:
 1. Veri yapısının özet açıklaması (kaç satır, hangi sütunlar, ne tarz)
-2. 3 ana içgörü — her biri 1-2 cümle, gerekirse hesapla destekli
+2. 3 ana içgörü: her biri 1-2 cümle, gerekirse hesapla destekli
 3. Dikkat çeken anomali / aykırı değer (varsa)
 4. Veriden hareketle 3 öneri / aksiyon
 5. Görselleştirme önerisi (hangi grafiği nereye)
 
 Format: yönetim raporu, 1 sayfa
-Görselleştirme istersen [Artifact](/wiki/yetenekler/artifacts/) olarak çıkar
+Görselleştirme istersen Artifact olarak çıkar
 ```
 
 [Artifacts](/wiki/yetenekler/artifacts/) sayfası görselleştirme detayını verir.
@@ -353,7 +353,7 @@ Aktarım: [yurt içi / yurt dışı, hangi 3. taraflara]
 
 Üret:
 - KVKK md. 10 (aydınlatma yükümlülüğü) gerektirdiği tüm unsurları içeren tam metin
-- Sade dil — hukuk dili yerine müşteri okuyup anlayabileceği
+- Sade dil: hukuk dili yerine müşterinin okuyup anlayabileceği
 - Veri sahibi haklarına net atıf (md. 11)
 - İletişim kanalı
 
@@ -382,7 +382,7 @@ Format:
 
 Kurallar:
 - 1 sayfa
-- Belirsiz ifade yasak ("biraz iyi", "fena değil") — sayısal
+- Belirsiz ifade yasak ("biraz iyi", "fena değil"), sayısal ol
 - Türkçe-first
 ```
 
@@ -432,14 +432,14 @@ Yıl içi gelişim alanları:
 Görev:
 - Başarıları somut örneklerle yaz (2 paragraf)
 - Gelişim alanlarını yapıcı dille yaz (defansif olmadan, somut örnek + öneri)
-- 2026 hedefleri için 3 öneri
+- Gelecek dönem hedefleri için 3 öneri
 - Maaş/terfi konusunu (varsa) ayrı paragrafta
 - Pozitif ama dürüst kapanış
 
 Kurallar:
 - Kişisel saldırı yok, davranış üzerinden konuş
 - "Daha iyi yapabilir" yerine "Şu spesifik alanda gelişebilir + nasıl"
-- Dürüst — sahte övgü yok
+- Dürüst ol, sahte övgü yok
 - 1 sayfa
 ```
 
@@ -483,7 +483,7 @@ Kurallar:
 - Ana iddiaları kaybetme
 - Yan örnekleri çıkar (özet için)
 - Sayısal veri varsa koru
-- "Yazının ana fikri şudur" gibi meta cümle yasak — direkt özet
+- "Yazının ana fikri şudur" gibi meta cümle yasak, doğrudan özet
 ```
 
 ### G3. Hızlı Bilgi Sorgu (Web Arama Tetikli)
@@ -531,12 +531,12 @@ Bu işler için [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) ve [İleri Seviy
 
 ## İlgili Sayfalar
 
-- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Felsefe
-- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) — Türkçe için
-- [Çıktı Formatı](/wiki/prompting/cikti-formati/) — Tablo/JSON/markdown kontrolü
-- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle öğretme
-- [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) — Şablonu geliştirme
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md rol şablonları
-- [Departmanlar](/wiki/departmanlar/) — Rol bazlı uygulamalar
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/): Genel prompt mantığı
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Felsefe
+- [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/): Türkçe için
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/): Tablo/JSON/markdown kontrolü
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle öğretme
+- [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/): Şablonu geliştirme
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md rol şablonları
+- [Departmanlar](/wiki/departmanlar/): Rol bazlı uygulamalar
 

@@ -1,12 +1,12 @@
 ---
 title: Ölçüm Metrikleri ve ROI Çerçevesi
-description: "Claude'un şirketinizdeki etkisini nasıl ölçersiniz? Zaman, kalite, otomasyon — üç birincil metrik, baseline kurma ve aralıklı denetim rehberi."
+description: "Claude'un şirketinizdeki etkisini nasıl ölçersiniz? Zaman, kalite, otomasyon, üç birincil metrik, baseline kurma ve aralıklı denetim rehberi."
 tags:
   - temeller
   - olcum
   - roi
   - metrikler
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **"Claude işe yaradı mı?" sorusunun cevabı duygusal değil sayısal olmalı.** Çoğu şirket Claude'u 6 ay kullanıyor, faydasını "hissediyor" ama ölçemiyor. İlk yıl sonunda yenileme kararı tartışmalı oluyor. Bu sayfa bunu önler.
@@ -15,9 +15,9 @@ lastUpdated: "2026-05-06"
 
 Claude etkisi üç eksende ölçülür:
 
-1. **Zaman tasarrufu** — kaç saat geri kazanıldı
-2. **Kalite** — üretilenin değeri arttı mı
-3. **Otomasyon** — daha önce hiç yapılamayanlardan kaç tanesi otomatik yapılır oldu
+1. **Zaman tasarrufu**: kaç saat geri kazanıldı
+2. **Kalite**: üretilenin değeri arttı mı
+3. **Otomasyon**: kaç manuel iş sistemli ve otomatik hâle geldi
 
 Üçü birden ölçülmeli; sadece birine bakmak yanıltır.
 
@@ -56,11 +56,11 @@ Claude etkisi üç eksende ölçülür:
 - Müşteri e-postasına yanıt → eskiden 1 sayfa düz cevap, şimdi 1.5 sayfa nüanslı, müşteri için özel kişiselleştirilmiş cevap → **1.5x**
 - Pazar araştırma raporu → eskiden 3 saatte tek paragraflık 5 maddelik özet, şimdi 1 saatte 5 sayfa derinlikli analiz → **3-5x** (zaman + kalite birleşik)
 
-**Önemli:** Kalite "Claude yazdı, ben kontrol ettim" sürecinin çıktısıdır — ham Claude çıktısı değil. Bu süreç [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence** bacağıdır.
+**Önemli:** Kalite "Claude yazdı, ben kontrol ettim" sürecinin çıktısıdır, ham Claude çıktısı değil. Bu süreç [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence** bacağıdır.
 
 ### 3. Otomasyon
 
-**Ölçüm birimi:** Daha önce hiç yapılmayan veya manuel yapılan iş — kaç tanesi sistemli ve tekrarlanabilir oldu
+**Ölçüm birimi:** Eskiden elle yapılan işlerden kaç tanesi sistemli ve tekrarlanabilir hâle geldi
 
 **Örnekler:**
 
@@ -70,9 +70,9 @@ Claude etkisi üç eksende ölçülür:
 
 **Sayım:** Ay sonu *"Bu ay kaç manuel iş otomatikleşti?"* sorusu. Aralık: 0-2 / 3-5 / 6-10 / 11+
 
-## Baseline Ölçümü — Eğitim Öncesi Veri
+## Baseline Ölçümü: Eğitim Öncesi Veri
 
-ROI ölçümü Claude eğitiminden **2-3 hafta önce** baseline ile başlar. Bu olmazsa karşılaştırma kayıp.
+ROI ölçümü, Claude eğitiminden **2-3 hafta önce** alınan bir baseline ile başlar. Baseline yoksa önce/sonra karşılaştırması yapamazsınız.
 
 **Baseline soruları (her çalışana):**
 
@@ -107,17 +107,17 @@ Maliyet = Claude abonelik (6 ay) + Eğitim/danışmanlık + İç eğitim zamanı
 ROI = (Tasarruf - Maliyet) / Maliyet × 100
 ```
 
-**Örnek hesap — İlk 6 ay (6 kişilik şirket):**
+**Örnek hesap, İlk 6 ay (6 kişilik şirket):**
 
 - 6 çalışan × 8 saat/hafta × 26 hafta = 1.248 saat
 - Saatlik yüklü maliyet 500 ₺ → tasarruf = 624.000 ₺
 - Claude Max 5x maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺)
-- Eğitim/danışmanlık (örn. ~360.000 ₺)
+- Eğitim/danışmanlık (örn. 300.000 ₺, KDV hariç)
 - İç eğitim zamanı (~80 saat × 500 ₺ = 40.000 ₺)
-- Toplam yatırım: ~544.000 ₺
-- **ROI: (624.000 - 544.000) / 544.000 = ~%15 ilk 6 ayda**
+- Toplam yatırım: ~484.000 ₺
+- **ROI: (624.000 - 484.000) / 484.000 = ~%29 ilk 6 ayda**
 
-**Örnek hesap — İkinci 6 ay (6 kişilik şirket):**
+**Örnek hesap, İkinci 6 ay (6 kişilik şirket):**
 
 İkinci 6 ayda eğitim/danışmanlık ve iç eğitim maliyeti olmaz, sadece Claude Max 5x abonelik maliyeti kalır.
 
@@ -127,11 +127,9 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 - Toplam yatırım: ~144.000 ₺
 - **ROI: (624.000 - 144.000) / 144.000 = ~%333 ikinci 6 ayda**
 
-**Not:** Çalışan başı saatlik yüklü maliyeti kendi ortalama çalışan maliyetinize göre değiştirip yeniden hesaplayabilirsiniz.
+**Not:** Saatlik yüklü maliyeti ve kuru kendi değerlerinizle değiştirip yeniden hesaplayın. Hesabın ayrıntısı [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarında.
 
-[Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarında bu hesabın detayı var.
-
-## Ölçüm Disiplini — Kim, Nasıl, Ne Sıklıkla
+## Ölçüm Disiplini: Kim, Nasıl, Ne Sıklıkla
 
 | Aktivite | Kim | Sıklık |
 |---|---|---|
@@ -139,12 +137,12 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 | Kalite skoru örneklemesi | Ekip lideri | Haftalık (15 dk) |
 | Otomasyon sayımı | Ekip lideri | Aylık |
 | ROI raporu | Yönetim / İK | Çeyreklik |
-| Anthropic Admin Console kullanım metrikleri | IT / Admin | Aylık |
+| Yönetici paneli (Organization settings) kullanım metrikleri | IT / Admin | Aylık |
 | Çalışan tatmin anketi (NPS benzeri) | İK | Çeyreklik |
 
 [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında Anthropic admin paneli üzerinden gelen metrikler anlatılır.
 
-## Kalite Tuzakları — Ölçümde Düzeltilecekler
+## Kalite Tuzakları: Ölçümde Düzeltilecekler
 
 **1. "Hızlı = İyi" yanılgısı.** Bir işin Claude ile 10 dakikada bitmesi onu otomatik daha kaliteli yapmaz. Daha hızlı yapılmış kalitesiz iş, hâlâ kalitesiz iştir.
 
@@ -152,9 +150,9 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 
 **3. Aşırı bağımlılık.** Çalışan Claude olmadan çalışamaz hâle gelirse, bu da bir risk. Ara sıra "Claude'suz gün" denenebilir.
 
-**4. Fake productivity.** Çalışan haftada 8 saat tasarruf ettiğini söylüyor ama gerçekte sadece kahve içmeye fazla zaman ayırıyor. **Çıktı miktarı + kalitesi** ile birlikte ölçülmeli, salt "tasarruf" sayısı yanıltır.
+**4. Sahte verimlilik.** Çalışan haftada 8 saat kazandığını söylüyor, ama kazanılan süre başka bir işe dönüşmüyor olabilir. **Çıktı miktarı ve kalitesiyle** birlikte ölçün; yalnızca "tasarruf" sayısı yanıltır.
 
-## Geliştirme Döngüsü — PDCA
+## Geliştirme Döngüsü: PDCA
 
 Ölçüm yalnızca rakam toplamak değil, eylem doğurmalıdır:
 
@@ -167,29 +165,29 @@ Bu döngü kalıcı adaptasyonun temelidir.
 
 ## Vaka Örnekleri (Kapalı İsim)
 
-> **Trakya bölgesinde gıda üreticisi, 8 çalışan.** 6 ay önce başladılar, ilk ay Max 5x zorunlu plan. 90 gün sonu ortalaması: çalışan başı 9 saat/hafta tasarruf. En büyük kazanç [İhracat](/wiki/departmanlar/ihracat/) için müşteri yazışmalarında — Almanca ve Rusça yazışmalar Claude tarafından taslak çıkarılıyor, satış müdürü 15 dk yerine 4 saat harcıyordu.
+> **Trakya bölgesinde gıda üreticisi, 8 çalışan.** 6 ay önce başladılar, ilk ay Max 5x zorunlu plan. 90 gün sonu ortalaması: çalışan başı 9 saat/hafta tasarruf. En büyük kazanç [İhracat](/wiki/departmanlar/ihracat/) için müşteri yazışmalarında, Almanca ve Rusça yazışmalar Claude tarafından taslak çıkarılıyor, satış müdürü eskiden 4 saat harcadığı yazışmayı artık 15 dakikada tamamlıyor.
 
-> **İstanbul'da hukuk bürosu, 12 çalışan.** Başlangıçta dirençliydiler ("hukuk hassas, AI riskli"). 3 ay sonra avukat başına 7 saat/hafta tasarruf. Sözleşme inceleme, içtihat araştırma, müvekkile rapor yazma — hepsinde Claude taslak çıkarıyor, avukat doğrulayıp gönderiyor. [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası yaklaşımı detaylandırır.
+> **İstanbul'da hukuk bürosu, 12 çalışan.** Başlangıçta dirençliydiler ("hukuk hassas, AI riskli"). 3 ay sonra avukat başına 7 saat/hafta tasarruf. Sözleşme inceleme, içtihat araştırma ve müvekkile rapor yazmanın hepsinde Claude taslak çıkarıyor, avukat doğrulayıp gönderiyor. [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası yaklaşımı detaylandırır.
 
 > **Ankara'da otomotiv yan sanayi, 35 çalışan.** İlk pilot 6 kişi, 90 gün sonra organizasyon geneline açıldı. Ana kazanç: [Operasyon](/wiki/departmanlar/operasyon/) tarafında haftalık üretim raporları ve [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) tarafında çoklu dilde yazışma. Yaklaşık 18-22 saat/hafta toplam tasarruf (organizasyon geneli).
 
 İsimsiz örnekler genel rakamlar verir; kendi şirketiniz için somut ölçüm yapmak en doğru karşılaştırmadır.
 
-## Tek Sayıyla Anlatma — CFO İçin
+## Tek Sayıyla Anlatma: CFO İçin
 
 Yönetim raporlarında tek satırlık özet için:
 
-> *"6 kişiyle 6 ayda 1.250 saat kazanım. Yatırım 470 bin TL, getiri 940 bin TL. İkinci yıl artıştan ROI üç haneli."*
+> *"6 kişiyle 6 ayda 1.250 saat kazanım. Yatırım yaklaşık 544 bin TL, getiri yaklaşık 624 bin TL. İkinci altı ayda yalnızca abonelik maliyeti kaldığı için ROI üç haneli."*
 
 Detayları [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Finans Departmanı](/wiki/departmanlar/finans/) sayfaları derinleştirir.
 
 ## İlgili Sayfalar
 
-- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — Finans direktörü itirazlarına detay
-- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) — Maliyet tarafının muhasebesi
-- [Planlar](/wiki/temeller/planlar/) — Plan maliyetleri
-- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Admin paneli üzerinden kullanım metriği
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Ölçüm politikasını yazıya dökme
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Kalite üretimi felsefesi
-- [Sınırlamalar](/wiki/temeller/sinirlamalar/) — Halüsinasyon ve kalite riskleri
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/): Finans direktörü itirazlarına detay
+- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): Maliyet tarafının muhasebesi
+- [Planlar](/wiki/temeller/planlar/): Plan maliyetleri
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Admin paneli üzerinden kullanım metriği
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Ölçüm politikasını yazıya dökme
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Kalite üretimi felsefesi
+- [Sınırlamalar](/wiki/temeller/sinirlamalar/): Halüsinasyon ve kalite riskleri
 

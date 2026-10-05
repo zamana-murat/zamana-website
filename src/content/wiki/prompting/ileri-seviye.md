@@ -1,22 +1,22 @@
 ---
 title: İleri Seviye Prompt Engineering
-description: "XML tag'leri, few-shot prompting, prompt chaining, adaptif düşünme — temellerden sonra çıktı kalitesini katlayan teknikler."
+description: "XML tag'leri, few-shot prompting, prompt chaining, adaptif düşünme, temellerden sonra çıktı kalitesini katlayan teknikler."
 tags:
   - prompting
   - ileri-seviye
   - xml-tags
   - few-shot
   - prompt-chaining
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 [Prompting temel ilkelerini](/wiki/prompting/temel-ilkeler/) öğrenen çalışan iş çıktılarının %80'ini zaten kapsamış olur. Kalan %20, iyi olmayı mükemmele yaklaştıran ileri tekniklerdir.
 
-Bu sayfa tutarlı biçimde üstün çıktı üreten 6 tekniği anlatır. Kaliteli prompt kütüphaneleri kurmanın bel kemiği olan bilgi.
+Bu sayfa tutarlı biçimde üstün çıktı üreten 8 tekniği anlatır. Kaliteli prompt kütüphaneleri kurmanın bel kemiği olan bilgi.
 
-## 1. XML Tag'leri — Claude'un Yapısal Dili
+## 1. XML Tag'leri: Claude'un Yapısal Dili
 
-XML tag'leri, Claude'un karmaşık promptları ayrıştırmak için tercih ettiği formattır. Markdown (görsel) değil — **anlamsal** sınırlar çizer. Talimat, bağlam, örnek ve girdi karıştığında XML yanlış yorumlamayı önler.
+XML tag'leri, Claude'un karmaşık promptları ayrıştırmak için tercih ettiği formattır. Markdown (görsel) değil, **anlamsal** sınırlar çizer. Talimat, bağlam, örnek ve girdi karıştığında XML yanlış yorumlamayı önler.
 
 **Kullanım örneği:**
 
@@ -36,7 +36,7 @@ Aşağıdaki durum için bir tedarikçi gecikme bildirimi e-postası yaz.
 
 <constraints>
 - Resmi Türkçe iş tonu
-- Özür yok — olgu ve çözüm odaklı
+- Özür yok, olgu ve çözüm odaklı
 - 150 kelimenin altında
 - Önerilen yeni teslim tarihini dahil et
 </constraints>
@@ -44,16 +44,16 @@ Aşağıdaki durum için bir tedarikçi gecikme bildirimi e-postası yaz.
 
 **İş kullanımı için önerilen tag isimleri:**
 
-- `<context>` — arka plan ve durum
-- `<task>` — ne istediğiniz
-- `<document>` veya `<input>` — Claude'un üzerinde çalışacağı içerik
-- `<constraints>` — kaçınılacak, format gereksinimleri, uzunluk
-- `<example>` — takip edilecek örnek çıktı
-- `<output_format>` — cevabın tam yapısı
+- `<context>`: arka plan ve durum
+- `<task>`: ne istediğiniz
+- `<document>` veya `<input>`: Claude'un üzerinde çalışacağı içerik
+- `<constraints>`: kaçınılacak, format gereksinimleri, uzunluk
+- `<example>`: takip edilecek örnek çıktı
+- `<output_format>`: cevabın tam yapısı
 
 **Altın kural:** Uzun belgeleri ve bağlamı **talimatların ÜSTÜNE** koyun. Soruyu en sona yazın. Bu yapı karmaşık görevlerde çıktı kalitesini %30'a kadar artırır.
 
-## 2. Few-Shot Prompting — Örneklerle Öğretme
+## 2. Few-Shot Prompting: Örneklerle Öğretme
 
 Claude'a iyi çıktının nasıl göründüğünü **tarif etmek** yerine **göstermek** daha güvenilirdir. 2-5 örneği `<examples>` tag'leri içinde verin.
 
@@ -98,21 +98,21 @@ Karmaşık analiz gerektiren görevlerde Claude'dan **önce düşünmesini, sonr
 **Analiz görevleri için:**
 > *"Yazmadan önce bilmem gereken 3 en önemli şeyi belirle. Sonra yaz."*
 
-Bu, muhakemeyi görünür kılar — hem kalite artar hem de hata kaynağı tespit edilebilir olur.
+Bu, muhakemeyi görünür kılar: hem kalite artar hem de hata kaynağı tespit edilebilir olur.
 
 ## 4. Claude'u Eleştirmen Yapmak
 
 Çıktı ürettikten sonra Claude'a rol değiştirterek çıktıyı eleştirmesini isteyin. Bu teknik göndermeden önce zayıflıkları yüzeye çıkarır.
 
 > *"Bu teklifi şüpheci bir satın alma müdürü olarak oku. En zayıf üç noktası nedir?"*
-> *"Talep eden bir CEO rolüne gir. Bu rapor cevaplamadığı hangi soruyu sorar?"*
+> *"Talepkâr bir CEO rolüne gir. Bu rapor cevaplamadığı hangi soruyu sorar?"*
 > *"Bu müzakerede karşı taraf rolünde davran. Bizim karşı teklifimizin ele almadığı hangi manivelaları var?"*
 
 İyi bir çalışan, önemli bir çıktıyı göndermeden önce bu eleştirmen turunu mutlaka yapar.
 
 ## 5. Çıktı Formatını Açıkça Kontrol Etme
 
-Claude'a ne format istediğinizi **tahmin bırakmayın**. Format talimatları **spesifik ve pozitif** olduğunda en iyi çalışır — sadece "yapma"larla değil, "yap"larla.
+Claude'a ne format istediğinizi **tahmin bırakmayın**. Format talimatları **spesifik ve pozitif** olduğunda en iyi çalışır, sadece "yapma"larla değil, "yap"larla.
 
 **Zayıf:**
 > *"Madde işareti kullanma"*
@@ -124,7 +124,7 @@ Claude'a ne format istediğinizi **tahmin bırakmayın**. Format talimatları **
 > *"Daha kısa yap"*
 
 **Güçlü:**
-> *"Maksimum 200 kelime. Tek paragraf. Önsöz yok — doğrudan ana noktayla başla."*
+> *"Maksimum 200 kelime. Tek paragraf. Önsöz yok: doğrudan ana noktayla başla."*
 
 **Yapılandırılmış çıktı için:** Tam yapıyı söyleyin:
 
@@ -136,11 +136,11 @@ TEMEL BULGULAR: [3 madde]
 ÖNERİLEN EYLEM: [Tek somut tavsiye]
 ```
 
-## 6. Prompt Chaining — Karmaşık Görevleri Adımlara Bölmek
+## 6. Prompt Chaining: Karmaşık Görevleri Adımlara Bölmek
 
 Çok adımlı işler için **tek dev prompt** yerine **sıralı promptlar** kullanın. Her adım bir öncekinin üstüne inşa edilir.
 
-**Örnek — stratejik rapor yazma:**
+**Örnek, stratejik rapor yazma:**
 
 1. *"2026'da kükürt piyasası için en önemli 5 trendi belirle. Sadece liste."*
 2. *"Belirlediğin her trend için, Türkiye'deki bir emtia tüccarına etkisini yaz."*
@@ -148,7 +148,7 @@ TEMEL BULGULAR: [3 madde]
 
 Bu yaklaşım *"Türk tüccar için kükürt piyasası trendleri üzerine stratejik rapor yaz"* promptundan çok daha iyi sonuç verir. Çünkü her adımda Claude'un dikkati fokuslu kalır ve siz her adımda ara kontrol yapabilirsiniz.
 
-## 7. Adaptif Düşünme — Claude'a Ne Kadar Sıkı Düşüneceğini Söylemek
+## 7. Adaptif Düşünme: Claude'a Ne Kadar Sıkı Düşüneceğini Söylemek
 
 Karmaşık görevlerde Claude'a daha derin düşünmesini açıkça söyleyebilirsiniz:
 
@@ -160,9 +160,9 @@ Basit görevlerde tersini söyleyin:
 
 > *"Doğrudan cevapla. Akıl yürütmeni açıklamana gerek yok."*
 
-Bu, kullanım biçimi yerine kullanım niyetini iletir.
+Bu, nasıl çalışmasını değil, işten ne kadar özen beklediğinizi iletir.
 
-## 8. "Bağlam Önce" — İleri Seviye
+## 8. "Bağlam Önce": İleri Seviye
 
 Bağlam verme alışkanlığı temel prompting'te öğretilir. İleri seviyede bunu bir disiplin haline getirirsiniz. Claude'un çıktı kalitesi, aldığı bağlamın **alaka düzeyi ve tamlığıyla orantılıdır**.
 
@@ -170,11 +170,11 @@ Bağlam verme alışkanlığı temel prompting'te öğretilir. İleri seviyede b
 > *"Bir tedarikçi reddi mektubu yaz."*
 
 **Güçlü:**
-> *"Bir tedarikçi reddi mektubu yaz. Bağlam: Akmin Dış Ticaretiz. Bir tedarikçiden bitümen teklifi aldık, $450/MT CFR İstanbul. Bütçemiz $420/MT. 30 gün içinde yeniden müzakere kapısını açık bırakmak istiyoruz. Tedarikçi 2 yıldır güvenilir partner. Ton profesyonel ve ilişki-koruyucu olsun."*
+> *"Bir tedarikçi reddi mektubu yaz. Bağlam: Akmin Dış Ticaret'iz. Bir tedarikçiden bitümen teklifi aldık, $450/MT CFR İstanbul. Bütçemiz $420/MT. 30 gün içinde yeniden müzakere kapısını açık bırakmak istiyoruz. Tedarikçi 2 yıldır güvenilir partner. Ton profesyonel ve ilişki-koruyucu olsun."*
 
-İkinci versiyon neredeyse iterasyon gerektirmez. İlkinden 3-4 tur iyileştirme gerekir ve yine de genel bir şablon çıkar.
+İkinci versiyon neredeyse iterasyon gerektirmez. İlkinde genellikle birkaç tur iyileştirme gerekir ve yine de genel bir şablon çıkar.
 
-## Prompt Kütüphanesi — Test Edilmiş Prompt Koleksiyonunuz
+## Prompt Kütüphanesi: Test Edilmiş Prompt Koleksiyonunuz
 
 Bir prompt kütüphanesi, sizin tarafınızdan test edilmiş ve iyileştirilmiş promptların kişisel koleksiyonudur. İyi çalışan her prompt kütüphanenize şunlarla kaydedilmeli:
 
@@ -185,33 +185,33 @@ Bir prompt kütüphanesi, sizin tarafınızdan test edilmiş ve iyileştirilmiş
 
 **Cowork'te kütüphane:**
 
-Workspace klasörünüzde bir `prompts/` klasörü yaratın. Her prompt ayrı bir `.md` dosyası olsun. Claude bu kütüphaneden talep üzerine okuyabilir.
+Çalışma klasörünüzde bir `prompts/` klasörü oluşturun. Her prompt ayrı bir `.md` dosyası olsun; Claude bu kütüphaneden talep üzerine okuyabilir. (Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor, ancak klasörle çalışma masaüstü uygulamasında sürüyor.)
 
 **Tipik hedefler:**
 
 - İlk birkaç hafta sonunda her çalışanın **5-10 prompt**'u olmalı
 - 3 ay sonunda **30-50 prompt** olmalı, tüm yaygın iş görevlerini kapsayan
 
-Prompt kütüphanesi en somut ve en değerli varlıktır. İşten ayrıldığında yanınıza alırsınız; bir sonraki işinizde çalışmaya devam eder.
+Prompt kütüphanesi en somut ve en değerli varlıklardan biridir. Yöntemi ve yapıyı her yerde kullanırsınız; yalnız şirkete ait gizli veri ya da müşteri bilgisi içeren promptları şirket dışına taşımayın.
 
-## Gelişimi Ne Kadar Önemsemelisiniz?
+## İleri Teknikleri Ne Kadar Önemsemelisiniz?
 
 Dürüst cevap: **orta düzeyde**.
 
-İleri teknikler çıktı kalitesini artırır, ama temel ilkeleri atlayıp XML tag'leri öğrenmek boşa yatırımdır. Temellerin sağlam olduğunda, ileri teknikler doğal olarak ince ayar sağlar.
+İleri teknikler çıktı kalitesini artırır, ama temel ilkeleri atlayıp XML tag'leri öğrenmek boşa yatırımdır. Temeller sağlam olduğunda, ileri teknikler doğal olarak ince ayar sağlar.
 
 Önerilen sıralama:
 
-1. **Önce:** [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — 5 bileşen yapısı oturtulana kadar
-2. **Sonra:** [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — kavramsal zemin
-3. **En son:** Bu sayfa — XML, few-shot, chaining
+1. **Önce:** [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): kavramsal zemin
+2. **Sonra:** [Temel İlkeler](/wiki/prompting/temel-ilkeler/): 5 bileşen yapısı oturtulana kadar
+3. **En son:** Bu sayfa: XML, few-shot, chaining
 
 Bir haftada üçü birden öğrenilmez. Bir ayda oturur.
 
 ## İlgili Sayfalar
 
-- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) — Bu sayfanın ön koşulu
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Kavramsal zemin
-- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) — Hata tipleri ve düzeltmeleri
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Prompt kütüphanenin yaşadığı ortam
+- [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/): Bu sayfanın ön koşulu
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Kavramsal zemin
+- [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/): Hata tipleri ve düzeltmeleri
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Prompt kütüphanenin yaşadığı ortam
 

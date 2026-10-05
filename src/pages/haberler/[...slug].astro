@@ -1,0 +1,225 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/wiki.css';
+import { getHaberler, formatDateTr, haberPath, type Haber } from '../../data/haberler';
+import { composeTitle } from '../../data/seo';
+
+export async function getStaticPaths() {
+  const haberler = await getHaberler();
+  return haberler.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+interface Props { entry: Haber }
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { title, seoTitle, description, date, source, sourceTitle, image, imageAlt, tags } = entry.data;
+
+const SITE = 'https://zamana.com.tr';
+const pageUrl = new URL(haberPath(entry), SITE).toString();
+const ogImage = image || '/og/default.png';
+const absImage = new URL(ogImage, SITE).toString();
+
+const newsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: title,
+  description,
+  datePublished: `${date}T00:00:00+03:00`,
+  dateModified: `${date}T00:00:00+03:00`,
+  image: [absImage],
+  inLanguage: 'tr-TR',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+  url: pageUrl,
+  ...(tags && tags.length > 0 ? { keywords: tags.join(', ') } : {}),
+  author: { '@type': 'Organization', name: 'Zamana', url: SITE },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Zamana',
+    url: SITE,
+    logo: { '@type': 'ImageObject', url: `${SITE}/images/zamana-logo.webp` },
+  },
+  isBasedOn: { '@type': 'CreativeWork', url: source, name: sourceTitle, publisher: { '@type': 'Organization', name: 'Anthropic' } },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: SITE },
+    { '@type': 'ListItem', position: 2, name: 'Haberler', item: `${SITE}/haberler/` },
+    { '@type': 'ListItem', position: 3, name: title, item: pageUrl },
+  ],
+};
+---
+
+<Layout
+  title={composeTitle(title, ' | Zamana Haberler', seoTitle)}
+  description={description}
+  ogImage={ogImage}
+  publishDate={date}
+  modifiedDate={date}
+  skipAutoBreadcrumb
+>
+  <script type="application/ld+json" set:html={JSON.stringify(newsSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <article class="haber">
+    <div class="container-narrow">
+      <nav class="haber-crumbs" aria-label="Sayfa yolu">
+        <ol>
+          <li><a href="/">Anasayfa</a></li>
+          <li><a href="/haberler/">Haberler</a></li>
+          <li aria-current="page">{title}</li>
+        </ol>
+      </nav>
+
+      <header class="haber__header">
+        <time class="haber__date" datetime={date}>{formatDateTr(date)}</time>
+        <h1>{title}</h1>
+        <p class="lead">{description}</p>
+        {tags && tags.length > 0 && (
+          <ul class="haber-tags" aria-label="Etiketler">
+            {tags.map((t) => <li>{t}</li>)}
+          </ul>
+        )}
+      </header>
+
+      {image && (
+        <figure class="haber__cover">
+          <img src={image} alt={imageAlt || ''} width="1200" height="675" decoding="async" />
+        </figure>
+      )}
+
+      <div class="wiki-prose haber__body">
+        <Content />
+      </div>
+
+      <aside class="haber-source" aria-label="Kaynak">
+        <span class="haber-source__label">Kaynak</span>
+        <a href={source} target="_blank" rel="noopener">{sourceTitle}</a>
+        <p>Özgün metin: Anthropic. Türkçe uyarlama: Zamana.</p>
+      </aside>
+
+      <p class="haber__back">
+        <a href="/haberler/">&larr; Tüm haberler</a>
+      </p>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .haber {
+    padding: var(--s-5) 0 var(--s-7);
+  }
+  .haber-crumbs ol {
+    list-style: none;
+    margin: 0 0 var(--s-4);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--c-text-muted);
+  }
+  .haber-crumbs li + li::before {
+    content: '/';
+    margin-right: 0.35rem;
+    color: var(--c-border-gold);
+  }
+  .haber-crumbs a {
+    color: var(--c-text-muted);
+    text-decoration: none;
+  }
+  .haber-crumbs a:hover { color: var(--c-navy); text-decoration: underline; }
+  .haber-crumbs [aria-current='page'] {
+    color: var(--c-navy);
+    font-weight: 600;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .haber__header h1 {
+    margin: var(--s-2) 0 var(--s-3);
+    line-height: 1.2;
+  }
+  .haber__header .lead { max-width: none; }
+  .haber__date {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+  }
+  .haber-tags {
+    list-style: none;
+    margin: var(--s-3) 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .haber-tags li {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--c-navy);
+    background: var(--c-bg-subtle);
+    border: 1px solid var(--c-border-gold);
+    border-radius: 999px;
+    padding: 0.15rem 0.65rem;
+  }
+  .haber__cover {
+    margin: var(--s-5) 0 0;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    background: var(--c-navy);
+    aspect-ratio: 16 / 9;
+  }
+  .haber__cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .haber__body {
+    margin-top: var(--s-5);
+  }
+  .haber-source {
+    margin-top: var(--s-6);
+    padding: var(--s-4);
+    border: 1px solid var(--c-border-gold);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    background: var(--c-bg-subtle);
+  }
+  .haber-source__label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: var(--s-1);
+  }
+  .haber-source a {
+    font-weight: 700;
+    color: var(--c-navy);
+    overflow-wrap: anywhere;
+  }
+  .haber-source p {
+    margin: var(--s-2) 0 0;
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+  }
+  .haber__back {
+    margin-top: var(--s-5);
+  }
+  .haber__back a {
+    font-weight: 600;
+    color: var(--c-navy);
+    text-decoration: none;
+  }
+  .haber__back a:hover { text-decoration: underline; }
+</style>

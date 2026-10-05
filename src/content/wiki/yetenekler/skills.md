@@ -1,17 +1,17 @@
 ---
-title: "Skills — Claude'un Uzmanlık Paketleri"
+title: "Skills: Claude'un Uzmanlık Paketleri"
 description: "Skills, Claude'a spesifik görevler için hazır uzmanlık kazandırır. Word, Excel, PowerPoint, PDF, satış, hukuk, pazarlama skill'leri tek komutla."
 tags:
   - yetenekler
   - skills
   - cowork
   - uzmanlik
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
 **Skills, Claude'a belirli görev tipleri için hazır uzmanlık kazandıran önceden inşa edilmiş talimat setleridir.** Cowork'te `/skill-adi` komutuyla çağrılır.
 
-Kısa benzetme: Skills, Claude'un arkasında duran uzmanlık kılavuzlarıdır. `/docx` komutunu verdiğinizde Claude profesyonel bir Word belgesi uzmanının yaklaşımıyla davranır — yıllarca kurulmuş en iyi uygulamalar, yaygın hatalar, görsel kurallar bir anda aktif olur.
+Kısa benzetme: Skills, Claude'un arkasında duran uzmanlık kılavuzlarıdır. `/docx` komutunu verdiğinizde Claude profesyonel bir Word belgesi uzmanının yaklaşımıyla davranır: yıllarca oluşmuş en iyi uygulamalar, yaygın hatalar ve görsel kurallar bir anda devreye girer.
 
 ## Skills Nasıl Çalışır?
 
@@ -22,11 +22,11 @@ Bir skill çağrıldığında Claude, o skill'in ayrıntılı `SKILL.md` dosyas�
 - Adım adım yapısı
 - Yaygın tuzaklar ve çözümleri
 
-yer alır. Skills, **deneme-yanılma ile kazanılmış bilgiyi metne çevirir** — çalışan Claude'u o görev tipinde nasıl optimize edeceğini tek tek keşfetmek zorunda kalmaz.
+yer alır. Skills, **deneme-yanılma ile kazanılmış bilgiyi metne çevirir**; böylece o görev tipinde en iyi sonucu nasıl alacağınızı tek tek keşfetmek zorunda kalmazsınız.
 
 ## Temel Skills (Hazır Gelen)
 
-Claude Desktop'ta Pro veya Max aboneliğiyle doğrudan erişilebilen ana skill'ler:
+Cowork'te hazır gelen ana skill'ler (skills özelliği Free dahil tüm planlarda vardır):
 
 | Skill | Ne Yapar |
 |---|---|
@@ -34,13 +34,13 @@ Claude Desktop'ta Pro veya Max aboneliğiyle doğrudan erişilebilen ana skill'l
 | `pptx` | PowerPoint sunumları (.pptx) oluşturur ve düzenler |
 | `xlsx` | Excel tablolarını (.xlsx) oluşturur ve düzenler |
 | `pdf` | PDF dosyaları oluşturur, okur, düzenler, birleştirir |
-| `canvas-design` | Görsel tasarımlar, posterler, sanat — PNG / PDF olarak |
-| `web-design` | Tam HTML/CSS/JS web siteleri — responsive |
+| `canvas-design` | Görsel tasarımlar, posterler, sanat, PNG / PDF olarak |
+| `web-design` | Tam HTML/CSS/JS web siteleri, responsive |
 | `ui-designer` | UI bileşenleri ve arayüz sistemleri |
 | `foreign-trade` | Dış ticaret belgeleri (LOI, SPA, CIS, NCNDA...) |
 | `schedule` | Zamanlanmış / tekrar eden otomatik görevler |
 
-Bu liste en temel iş çıktıları için örtüşür — bir çalışanın ayda ürettiği çıktıların büyük kısmı bu dokuz skill ile kapsanır.
+Bu liste en temel iş çıktılarını kapsar; bir çalışanın ayda ürettiği çıktıların büyük kısmı bu dokuz skill ile karşılanır.
 
 ## Plugin Skills (Eklenti Üzerinden Gelen)
 
@@ -60,7 +60,7 @@ Plugins, ilgili skill'leri + connector'ları + subagent'ları tek pakette kurar.
 | `productivity:task-management` | Productivity | TASKS.md üzerinden görev takibi |
 | `productivity:memory-management` | Productivity | İki-katmanlı hafıza sistemi |
 
-Yeni plugin'ler düzenli olarak Anthropic tarafından ekleniyor. [Plugins & MCP](/wiki/mcp/baglanti-listesi/) sayfası güncel listeyi takip eder.
+Yeni plugin'ler düzenli olarak ekleniyor. Örneğin 15 Eylül 2026'da Salesforce in Claude plugin'i (beta, 37 satış skill'i) çıktı: [haberi okuyun](/haberler/2026-09-15-salesforce-claude-icinde/). Eklenti ve bağlayıcıların toplandığı [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) de açıldı. Yukarıdaki skill adları Anthropic'in resmi plugin deposunda (`anthropics/knowledge-work-plugins`) yer alır. Bağlayıcı tarafı için [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
 
 ## Rol Plugin'lerini Özelleştirme
 
@@ -98,18 +98,18 @@ Cowork'te iki yol vardır:
 
 Claude `xlsx` skill'ini otomatik devreye alır. Siz komut vermezsiniz.
 
-## Özel Skills — Kendi Şirketinize Özel
+## Özel Skills: Kendi Şirketinize Özel
 
-İleri kullanıcılar ve kuruluşlar **özel skill'ler** yaratabilir. Bir klasör, içinde `SKILL.md` dosyası — o dosyada şirketinize özel talimatlar. Yarattıktan sonra skill `/` ile tıpkı yerleşik skill'ler gibi kullanılabilir.
+İleri kullanıcılar ve kuruluşlar **özel skill'ler** yaratabilir. Bir klasör ve içinde şirketinize özel talimatlar taşıyan bir `SKILL.md` dosyası yeterlidir. Yarattıktan sonra skill `/` ile tıpkı yerleşik skill'ler gibi kullanılabilir.
 
-Özel skill oluşturma için `/skill-creator` skill'ini çağırın — yol gösterir.
+Özel skill oluşturma için `/skill-creator` skill'ini çağırın, yol gösterir.
 
 **Pratik özel skill örnekleri:**
 
-- `haftalık-rapor` — şirketin iç haftalık raporunun tam formatı, bölümleri, tonu önceden yüklü
-- `teklif-yaz` — şirketin standart ticari şartları, fiyat formatı, ikna yaklaşımı
-- `müşteri-mail` — şirketin e-posta ton kılavuzu ve imza formatı
-- `yeni-personel-onboarding` — İK'nın yeni çalışan onboarding dokümantasyonunun birebir yapısı
+- `haftalık-rapor`: şirketin iç haftalık raporunun tam formatı, bölümleri, tonu önceden yüklü
+- `teklif-yaz`: şirketin standart ticari şartları, fiyat formatı, ikna yaklaşımı
+- `müşteri-mail`: şirketin e-posta ton kılavuzu ve imza formatı
+- `yeni-personel-onboarding`: İK'nın yeni çalışan onboarding dokümantasyonunun birebir yapısı
 
 Özel skill, bir ekibin yaptığı işin en tutarlı biçimde **her seferinde aynı kalitede üretilmesini** sağlar.
 
@@ -119,22 +119,22 @@ Skills sihir değildir, **yapılandırılmış uzmanlığın metne çevrilmiş h
 
 Üç pratik prensip:
 
-1. **Hangi skill hangi görev için?** — 9 temel + 11 plugin skill = 20 skill. Bir tablo, bir sayfa. Çalışan haftada bir bakıp refleksleştirir.
-2. **Ne zaman çağrılır?** — Görevi başlamadan önce. "Bir Word raporu yazacağım" dedikten hemen sonra `/docx`. Claude'un varsayılan çıktısına razı olmayıp sonradan iyileştirmeye çalışmaktan çok daha verimli.
-3. **Özel skill ne zaman yazılır?** — Aynı yapıyla bir görevi **üçüncü kez** yapıyorsanız, özel skill zamanı gelmiştir.
+1. **Hangi skill hangi görev için?**: Bu sayfadaki iki tabloda 9 temel ve 11 plugin skill'i, toplam 20 skill var. Haftada bir göz atmak, doğru skill'i hatırlamanızı kolaylaştırır.
+2. **Ne zaman çağrılır?**: Görevi başlamadan önce. "Bir Word raporu yazacağım" dedikten hemen sonra `/docx`. Claude'un varsayılan çıktısına razı olmayıp sonradan iyileştirmeye çalışmaktan çok daha verimli.
+3. **Özel skill ne zaman yazılır?**: Aynı yapıyla bir görevi **üçüncü kez** yapıyorsanız, özel skill zamanı gelmiştir.
 
 ## Pratik Keşif Soruları
 
 Kendinize sık sorabileceğiniz sorular:
 
-- **Skill kullanıp iyi bir çıktı aldığında:** *"Eğer şirketinin bu işi yaptığı özel yöntemi bir skill haline getirsek, nasıl görünürdü?"* → Özel skill tohumu atılır.
-- **Bir görev tekrar ediyorsa:** *"Bu işi bir sonraki kez aynı kalitede yapmak için Claude'a ne söylemen gerekir?"* → SKILL.md'nin ilk taslağıdır.
-- **Genel bir çıktıyla karşılaşıldığında:** *"Bu işi çağırdığında hangi skill devreye girdi? Girmediyse, ne olurdu?"* → Skill refleksini geliştirir.
+- **Bir skill ile iyi çıktı aldığınızda:** *"Şirketimizin bu işi yapma yöntemini bir skill haline getirsek nasıl görünürdü?"* → Özel skill'in tohumu atılır.
+- **Bir görev tekrar ediyorsa:** *"Bu işi bir sonraki sefer aynı kalitede yapması için Claude'a ne söylemem gerekir?"* → Cevap, SKILL.md'nin ilk taslağıdır.
+- **Çıktı genel ve sıradan kaldıysa:** *"Bu işte hangi skill devreye girdi? Girmediyse girseydi ne değişirdi?"* → Skill refleksini geliştirir.
 
 ## İlgili Sayfalar
 
-- [Artifacts](/wiki/yetenekler/artifacts/) — Skill'lerin ürettiği etkileşimli çıktılar
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Skill'lerin yaşadığı ortam
-- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — Plugin'lerin içindeki connector'lar
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Skill'lerin üzerine inşa edildiği kalıcı bağlam
+- [Artifacts](/wiki/yetenekler/artifacts/): Skill'lerin ürettiği etkileşimli çıktılar
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Skill'lerin yaşadığı ortam
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Plugin'lerin içindeki connector'lar
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Skill'lerin üzerine inşa edildiği kalıcı bağlam
 

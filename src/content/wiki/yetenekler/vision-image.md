@@ -1,16 +1,16 @@
 ---
-title: Görsel ve Görüntü — Claude Gözleriyle Görüyor
-description: Claude görselleri OCR düzeyinde değil, anlamsal düzeyde okur. Belge, grafik, fotoğraf, ekran görüntüsü, diyagram — hepsini analiz eder.
+title: "Görsel ve Görüntü: Claude Gözleriyle Görüyor"
+description: Claude görselleri OCR düzeyinde değil, anlamsal düzeyde okur. Belge, grafik, fotoğraf, ekran görüntüsü, diyagram, hepsini analiz eder.
 tags:
   - yetenekler
   - gorsel
   - vision
   - ocr
   - gorsel-analiz
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Claude görselleri **görür ve akıl yürütür** — metinlerle yaptığı düşünceyle aynı seviyede. Bu basit OCR (metin tanıma) değil, basit görsel tanıma değil. **Görsel muhakemedir**: bağlamı, ilişkileri ve anlamı görsellerden çıkarır.
+Claude görselleri **görür ve üzerinde akıl yürütür**. Bu basit OCR (metin tanıma) ya da basit görsel tanıma değildir. **Görsel muhakemedir**: bağlamı, ilişkileri ve anlamı görsellerden çıkarır.
 
 Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bunu nasıl kullandığını anlatır.
 
@@ -48,26 +48,28 @@ Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bun
 
 - Uygulama ekran görüntülerini okur ve yorumlar
 - UI öğelerini, form alanlarını, düğmeleri, menüleri tespit eder
-- Ekranda ne olduğunu tarif eder — [Computer Use](/wiki/yetenekler/computer-use/) için kritik
+- Ekranda ne olduğunu tarif eder: [Computer Use](/wiki/yetenekler/computer-use/) için kritik
 - İki ekran görüntüsünü karşılaştırarak değişiklikleri belirler
 
 ## Teknik Özellikler
 
 | Özellik | Değer |
 |---|---|
-| Desteklenen formatlar | JPEG, PNG, GIF, WebP |
-| Maksimum tur başı görsel (claude.ai) | 20 |
-| Maksimum API isteği başı | 100 |
-| Maksimum çözünürlük (Opus 4.7) | 2.576 piksel uzun kenarda (Claude'un desteklediği en yüksek) |
-| Computer Use için optimum | 1080p (performans/maliyet dengesi) |
+| Desteklenen formatlar | JPEG, PNG, GIF, WebP (GIF'te yalnızca ilk kare okunur) |
+| Mesaj başına görsel (claude.ai) | en çok 20 |
+| Görsel başına boyut (claude.ai ve API) | en çok 10 MB |
+| API istek başına görsel | en çok 600 (200K bağlamlı modellerde, örn. Haiku 4.5, 100) |
+| Çözünürlük, yeni modeller (Fable 5.1, Opus 5.5, Sonnet 5.5) | uzun kenar 2.576 piksel; daha büyük görseller küçültülür |
+| Çözünürlük, Haiku 4.5 | uzun kenar 1.568 piksel |
+| API'de en büyük boyut | 8000x8000 piksel (bir istekte 20'den fazla görsel varsa sınır daha sıkıdır) |
 
 ## Claude Görsellerle Ne Yapamaz?
 
-- **Raster görsel üretmez** (fotoğraf, illüstrasyon) — DALL-E veya Midjourney işlevi yok
+- **Raster görsel üretmez** (fotoğraf, illüstrasyon): DALL-E veya Midjourney işlevi yok
 - **Fotoğraftan belirli isimli kişileri tanımlamaz** (gizlilik koruması)
 - **Çok düşük çözünürlüklü veya kötü bozulmuş görsellerde mükemmel doğruluk beklenmesin**
 
-**Ne üretebilir:** SVG grafikler, React görsel bileşenler, HTML görsel düzenler, Mermaid diyagramlar — **programatik görseller**, raster değil. [Artifacts](/wiki/yetenekler/artifacts/) sayfasında detayları var.
+**Ne üretebilir:** SVG grafikler, React görsel bileşenler, HTML görsel düzenler ve Mermaid diyagramlar gibi **programatik görseller**; raster görsel değil. [Artifacts](/wiki/yetenekler/artifacts/) sayfasında detayları var.
 
 ## Departmana Göre Kullanım Senaryoları
 
@@ -120,7 +122,7 @@ Pazarlama toplantısına hazır bir brief çıkar.
 
 Çalışanların çoğu **Claude'a fotoğraf verebileceğini bilmez**. "Claude metin aracı" algısı hâkim.
 
-Kartvizit → CRM girişi tek başına bir satış ekibi için "ya!" anıdır. Tahta → toplantı minutu bir yönetici asistanı için "ya!" anıdır.
+Kartvizitten CRM girişi bir satış ekibi için, tahtadan toplantı notu bir yönetici asistanı için çoğu zaman "bu kadar kolay mıymış" dedirten ilk andır.
 
 Kendinize sorun:
 
@@ -130,8 +132,8 @@ O refleks kurulduğunda çalışan zamanını haftada saatlerce kazanır.
 
 ## İlgili Sayfalar
 
-- [Dosya İşleme](/wiki/yetenekler/file-handling/) — Görsellerin de bir dosya olduğu gerçeği
-- [Computer Use](/wiki/yetenekler/computer-use/) — Ekran görüntülerinin en gelişmiş kullanımı
-- [Artifacts](/wiki/yetenekler/artifacts/) — Claude'un ürettiği programatik görseller
-- [Departmanlar](/wiki/departmanlar/) — Her departman için özel kullanım örnekleri
+- [Dosya İşleme](/wiki/yetenekler/file-handling/): Görsellerin de bir dosya olduğu gerçeği
+- [Computer Use](/wiki/yetenekler/computer-use/): Ekran görüntülerinin en gelişmiş kullanımı
+- [Artifacts](/wiki/yetenekler/artifacts/): Claude'un ürettiği programatik görseller
+- [Departmanlar](/wiki/departmanlar/): Her departman için özel kullanım örnekleri
 

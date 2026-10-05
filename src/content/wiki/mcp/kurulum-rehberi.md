@@ -1,56 +1,52 @@
 ---
-title: MCP Kurulum Rehberi — Adım Adım
-description: Claude Desktop ve claude.ai üzerinde MCP server ekleme. Yaygın sorunlar, doğrulama, ilk kullanım — pratik rehber.
+title: "MCP Kurulum Rehberi: Adım Adım"
+description: Claude Desktop ve claude.ai üzerinde MCP server ekleme. Yaygın sorunlar, doğrulama, ilk kullanım, pratik rehber.
 tags:
   - mcp
   - kurulum
   - rehber
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **[MCP](/wiki/mcp/nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır.** Bu sayfa bir MCP server'ı Claude Desktop veya claude.ai'a nasıl ekleyeceğinizi adım adım anlatır.
 
-[Connectors](/wiki/araclar/connectors/) ile karıştırmayın — connector Anthropic'in resmî, hazır entegrasyonu; MCP daha geniş ve özelleştirilebilir.
+[Connectors](/wiki/araclar/connectors/) ile karıştırmayın: connector Anthropic'in resmî, hazır entegrasyonudur; MCP daha geniş ve özelleştirilebilirdir.
 
-## Önce — MCP Mi, Connector Mu?
+## Önce: MCP mi, Connector mu?
 
 | Servisiniz... | Tercih |
 |---|---|
-| Resmî [Connector](/wiki/araclar/connectors/) listesinde (Gmail, Drive, Slack, Notion vs.) | Connector — daha kolay |
-| Listede yok ama popüler bir SaaS | MCP — büyük olasılıkla bir community MCP var |
-| Şirket içi sistem (CRM, ERP) | MCP — özel server yazılır |
+| Resmî [Connector](/wiki/araclar/connectors/) listesinde (Gmail, Drive, Slack, Notion vs.) | Connector, daha kolay |
+| Listede yok ama popüler bir SaaS | MCP, büyük olasılıkla bir community MCP var |
+| Şirket içi sistem (CRM, ERP) | MCP, özel server yazılır |
 | Hassas veriyle çalışıyor | MCP + dikkatli [Güvenlik](/wiki/mcp/guvenlik/) yapılandırması |
 
-Eğer connector seçeneğiniz varsa, MCP'ye gerek yok. Hızlı kararı [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfası verir.
+Eğer connector seçeneğiniz varsa, MCP'ye gerek yok. Hızlı kararı [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfası verir; resmî dizinde yaklaşık 900 connector vardır.
 
-## Kurulum Yeri — Claude Desktop mı, claude.ai mi?
+## Kurulum Yeri: Claude Desktop mı, claude.ai mi?
 
 İki ortamda da MCP destekleniyor:
 
 - **[Claude Desktop](/wiki/araclar/claude-desktop/):** Kişisel bilgisayarda yerel kurulum. Daha esnek, özel server'lar buradan kullanılır.
 - **claude.ai:** Web/mobil. Kurulum tek tık, ama özel server seçenekleri sınırlı.
 
-Bu sayfa **Claude Desktop** üzerinden kurulumu odak alır — daha kuvvetli ve esnek. Web tarafı için kısa bir bölüm sonda var.
+Bu sayfa **Claude Desktop** üzerinden kurulumu odak alır, çünkü daha güçlü ve esnektir. Web tarafı için kısa bir bölüm sonda var.
 
-## Adım 1 — Server Seçimi
+## Adım 1: Server Seçimi
 
 Hangi MCP server'ı kullanacağınızı belirleyin. Üç ana kaynak:
 
 ### A. Anthropic Resmî MCP Server'ları
 
-GitHub'da `anthropic/mcp-servers` repo'su (veya benzeri). Yaygın olanlar:
+GitHub'daki resmî MCP referans server deposu (`modelcontextprotocol/servers`) bugün yalnızca `filesystem`, `fetch`, `git`, `memory`, `sequentialthinking`, `time` ve `everything` server'larını bakımda tutar. `github`, `postgres`, `slack` ve `brave-search` gibi eski referans server'lar bakımı yapılmayan `modelcontextprotocol/servers-archived` deposuna taşındı.
 
-- **filesystem** — yerel dosya sistemi erişimi
-- **github** — GitHub repo işlemleri
-- **postgres** — PostgreSQL veritabanı
-- **brave-search** — web arama
-- **slack** — Slack workspace
+> **Arşiv notu:** Bu sayfadaki GitHub ve PostgreSQL yapılandırma örnekleri yalnızca yapıyı göstermek içindir. Gerçek kurulumda arşivdeki paketler yerine hizmet sağlayıcının resmî uzak MCP sunucusunu ya da güncel paketini seçin ve paket adını kurmadan önce doğrulayın.
 
 [Popüler MCP'ler](/wiki/mcp/populer-mcpler/) sayfasında detay ve seçim kriterleri.
 
 ### B. Topluluk MCP'leri
 
-Açık kaynak topluluğu yüzlerce MCP server üretti — Notion, Linear, Jira, Salesforce, AWS, vb. GitHub'da arayarak veya MCP marketplace'lerinden bulabilirsiniz.
+Açık kaynak topluluğu yüzlerce MCP server üretti: Notion, Linear, Jira, Salesforce, AWS ve benzerleri. GitHub'da arayarak veya MCP marketplace'lerinden bulabilirsiniz.
 
 **Dikkat:** Topluluk MCP'leri **denetlenmemiş** olabilir. [Güvenlik](/wiki/mcp/guvenlik/) sayfasına bakın.
 
@@ -58,17 +54,17 @@ Açık kaynak topluluğu yüzlerce MCP server üretti — Notion, Linear, Jira, 
 
 Kendi ERP/CRM sisteminize MCP yazmak için Anthropic'in MCP SDK'sini kullanırsınız (Python veya TypeScript). Bu geliştirici işi; [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile koordine edilir.
 
-## Adım 2 — Ön Koşullar
+## Adım 2: Ön Koşullar
 
 Çoğu MCP server için şu araçlar gerekli:
 
-- **Node.js** (v18+) veya **Python 3.10+** — server türüne bağlı
-- **Claude Desktop** kurulu — claude.ai/download adresinden indirilir
-- **Yetkili hesap** — server bağlanacağı servis için (örn. GitHub token, Slack access token)
+- **Node.js** (v18+) veya **Python 3.10+**: server türüne bağlı
+- **Claude Desktop** kurulu: claude.ai/download adresinden indirilir
+- **Yetkili hesap**: server bağlanacağı servis için (örn. GitHub token, Slack access token)
 
 Ön koşulları kurmak için terminal kullanmanız gerekir. Geliştirici değilseniz BT'den yardım alın.
 
-## Adım 3 — Yapılandırma Dosyası
+## Adım 3: Yapılandırma Dosyası
 
 Claude Desktop, MCP yapılandırmasını bir JSON dosyasında saklar:
 
@@ -100,7 +96,7 @@ Temel yapı:
 
 Her server bir JSON nesnesi. Hangi komut çalışacak, ne argümanlar, hangi env değişkenleri.
 
-## Adım 4 — Server Kuruluş Örneği
+## Adım 4: Server Kuruluş Örneği
 
 ### Örnek: Filesystem MCP
 
@@ -146,7 +142,7 @@ Açıklama:
 }
 ```
 
-GitHub'da Settings → Developer settings → Personal access tokens → fine-grained token oluşturun. Hangi repo'lar, hangi yetkiler — minimum verin.
+GitHub'da Settings → Developer settings → Personal access tokens → fine-grained token oluşturun. Hangi repo'lar, hangi yetkiler, minimum verin.
 
 ### Örnek: PostgreSQL MCP
 
@@ -167,7 +163,7 @@ GitHub'da Settings → Developer settings → Personal access tokens → fine-gr
 
 **Şifreyi konfige yazmaktan kaçının.** Yerine env değişkeni kullanın.
 
-## Adım 5 — Claude Desktop'ı Yeniden Başlatın
+## Adım 5: Claude Desktop'ı Yeniden Başlatın
 
 Yapılandırma dosyasını kaydettikten sonra:
 
@@ -175,9 +171,9 @@ Yapılandırma dosyasını kaydettikten sonra:
 2. Yeniden açın
 3. Yeni sohbet başlatın
 
-MCP server'lar Claude açılışında tetiklenir. Açılış sırasında bir terminal penceresi pop-up olabilir, normal — server süreci başlıyor.
+MCP server'lar Claude açılışında tetiklenir. Açılış sırasında bir terminal penceresi açılabilir; bu normaldir, server süreci başlıyordur.
 
-## Adım 6 — Doğrulama
+## Adım 6: Doğrulama
 
 Yeni bir sohbet açın, Claude'a sorun:
 
@@ -219,7 +215,7 @@ Claude size aktif server'ların listesini söylemeli. Yoksa:
 
 ## claude.ai (Web) Üzerinde MCP
 
-Web tarayıcısı sürümünde MCP destek **gelişiyor** — şu an Claude Desktop kadar olgun değil. Eklemek için:
+Web tarayıcısı sürümünde MCP desteği **gelişiyor** ve Claude Desktop kadar esnek değil. Resmî connector dizini buradan kullanılır; özel server eklemek için:
 
 1. Settings → Connectors / MCP (sürüme göre değişir)
 2. "Add custom MCP" benzeri seçenek (eğer mevcutsa)
@@ -227,12 +223,12 @@ Web tarayıcısı sürümünde MCP destek **gelişiyor** — şu an Claude Deskt
 
 Çoğu durumda web'de **Anthropic onaylı** hazır server'lar gelir; özel şirket-içi MCP'leri Claude Desktop'tan kullanmak daha pratik.
 
-## Şirket İçi MCP — Özel Geliştirme
+## Şirket İçi MCP: Özel Geliştirme
 
 Kendi sisteminize MCP yazmak için:
 
 1. **Anthropic MCP SDK** seçin (Python veya TypeScript)
-2. Server kapalı (resource), açık (tool) yapısını tasarlayın
+2. Server'ın hangi kaynakları (resource) ve hangi araçları (tool) sunacağını tasarlayın
 3. Yetkilendirme akışını netleştirin (OAuth, API key, mTLS, vs.)
 4. Test edin (Claude Desktop'ta yerel olarak)
 5. Şirket içinde dağıtım (genelde dahili NPM registry, internal Docker, vs.)
@@ -255,9 +251,9 @@ Tek yapılandırma dosyasında 5-10 farklı server tutabilirsiniz:
 }
 ```
 
-Hepsi Claude'a sunulur. Hangisini ne zaman kullanacağına Claude karar verir; siz "GitHub'da ABC repo'sundaki son issue'ları getir" derseniz GitHub server'a gider.
+Hepsi Claude'a sunulur. Hangisini ne zaman kullanacağına Claude karar verir. "GitHub'da ABC repo'sundaki son issue'ları getir" derseniz GitHub server'ına gider.
 
-## Kullanım — İlk Test
+## Kullanım: İlk Test
 
 Server kurulduktan sonra deneme:
 
@@ -267,7 +263,7 @@ Server kurulduktan sonra deneme:
 >
 > *"Postgres'te customers tablosundan son 10 kayıt çek."* (postgres)
 
-İlk kullanımda Claude size **izin** sormak isteyebilir — onaylayın, server çağırır.
+İlk kullanımda Claude size **izin** sormak isteyebilir; onayladığınızda server çağrılır.
 
 ## Sürüm ve Güncellemeler
 
@@ -277,17 +273,17 @@ MCP server'lar npm üzerinden geliyorsa otomatik güncel sürüm kullanılır (`
 "args": ["-y", "@modelcontextprotocol/server-github@1.2.3"]
 ```
 
-Production kurumsal kullanımda sabitlemek **güvenlik açısından önerilir** — beklenmedik güncelleme davranış değişimi yaratabilir.
+Kurumsal kullanımda sürümü sabitlemek **güvenlik açısından önerilir**, çünkü beklenmedik bir güncelleme davranışı değiştirebilir.
 
 ## Kurumsal Toplu Dağıtım
 
 50+ kişiye aynı MCP yapılandırmasını dağıtmak için:
 
-- **MDM (Mobile Device Management)** — şirket bilgisayarlarına otomatik config dağıtım
-- **Internal package** — şirket içi bir kurulum scripti
+- **MDM (Mobile Device Management)**: şirket bilgisayarlarına otomatik config dağıtım
+- **Internal package**: şirket içi bir kurulum scripti
 - **Enterprise plan** ile organizasyon-genelinde MCP yönetimi (gelişen özellik)
 
-[Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfası kurumsal MCP yönetimini değinir.
+Kurumsal MCP yönetimi için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasına bakın.
 
 ## Yapılandırmayı Versiyonlamak
 
@@ -301,12 +297,12 @@ Ama **sırlarınızı (token, şifre) git'e koymayın.** Env değişkeni kullan�
 
 ## İlgili Sayfalar
 
-- [MCP Nedir?](/wiki/mcp/nedir/) — Genel kavramlar
-- [Güvenlik](/wiki/mcp/guvenlik/) — MCP güvenlik modeli
-- [Popüler MCP'ler](/wiki/mcp/populer-mcpler/) — Ne kurmaya başlamalı
-- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) — MCP + connector listesi
-- [Connectors](/wiki/araclar/connectors/) — Hazır alternatif
-- [Claude Desktop](/wiki/araclar/claude-desktop/) — MCP'nin yaşadığı uygulama
-- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Kurumsal kurulum
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Hangi MCP onaylı
+- [MCP Nedir?](/wiki/mcp/nedir/): Genel kavramlar
+- [Güvenlik](/wiki/mcp/guvenlik/): MCP güvenlik modeli
+- [Popüler MCP'ler](/wiki/mcp/populer-mcpler/): Ne kurmaya başlamalı
+- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): MCP + connector listesi
+- [Connectors](/wiki/araclar/connectors/): Hazır alternatif
+- [Claude Desktop](/wiki/araclar/claude-desktop/): MCP'nin yaşadığı uygulama
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/): Kurumsal kurulum
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Hangi MCP onaylı
 

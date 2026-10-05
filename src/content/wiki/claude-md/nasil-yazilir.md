@@ -1,17 +1,17 @@
 ---
-title: CLAUDE.md Nasıl Yazılır? — Adım Adım Rehber
-description: Etkili bir CLAUDE.md dosyası nasıl yazılır — yapısı, bölümleri, zamanla nasıl büyür ve hangi hatalardan kaçınılmalı. Kopyalanabilir şablonla.
+title: "CLAUDE.md Nasıl Yazılır? Adım Adım Rehber"
+description: Etkili bir CLAUDE.md dosyası nasıl yazılır, yapısı, bölümleri, zamanla nasıl büyür ve hangi hatalardan kaçınılmalı. Kopyalanabilir şablonla.
 tags:
   - claude-md
   - rehber
   - sablon
   - kurumsal-kullanim
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 [CLAUDE.md'nin ne olduğunu](/wiki/claude-md/nedir/) okuduysanız, sıradaki soru doğal: **peki bunu ben nasıl yazarım?**
 
-Bu sayfa adım adım bir rehberdir. Sonunda kendi CLAUDE.md'nizin ilk sürümünü elinizde olmuş olur.
+Bu sayfa adım adım bir rehberdir. Sonunda kendi CLAUDE.md'nizin ilk sürümü elinizde olur.
 
 ## Genel Prensip
 
@@ -19,7 +19,7 @@ Bu sayfa adım adım bir rehberdir. Sonunda kendi CLAUDE.md'nizin ilk sürümün
 
 > **İyi bir CLAUDE.md, sizi işe yeni aldığınız akıllı bir asistana ilk gün hangi bilgileri aktaracağınızın yazılmış halidir.**
 
-Bu asistan zeki. Hızlı öğreniyor. Ama sizin şirketinizi, sizin rolünüzü, sizin tonunuzu, sizin iş akışlarınızı bilmiyor. Sizin görev vermeniz gereken bağlamı CLAUDE.md'ye yazarsınız — bir kere.
+Bu asistan zeki. Hızlı öğreniyor. Ama sizin şirketinizi, sizin rolünüzü, sizin tonunuzu, sizin iş akışlarınızı bilmiyor. Görev verirken gereken bağlamı CLAUDE.md'ye bir kere yazarsınız.
 
 ## Beş Adımlı Temel Yapı
 
@@ -46,7 +46,7 @@ Claude'un çalıştığı dünyayı anlaması için:
 - Sektör: [Kısa tanım]
 - Ürünler / hizmetler: [İki-üç cümlede ne satıyorsunuz]
 - Hedef müşteri: [Kime satıyorsunuz]
-- Büyüklük: [Kişi sayısı veya ciro aralığı — referans olması için]
+- Büyüklük: [Kişi sayısı veya ciro aralığı, referans olması için]
 ```
 
 ### 3. Ton Tercihleri
@@ -86,12 +86,12 @@ Bu, düzenli güncellenen bir bölümdür:
 - Bu hafta öncelik: [en fazla 2 tane]
 ```
 
-## Tam Şablon — Kopyalanabilir
+## Tam Şablon: Kopyalanabilir
 
 Aşağıdaki şablonu workspace klasörünüzde `CLAUDE.md` adıyla kaydedin ve kendinize göre uyarlayın:
 
 ```markdown
-# CLAUDE.md — [Ad Soyad]
+# CLAUDE.md: [Ad Soyad]
 
 ## Kim Olduğum
 - İsim:
@@ -143,7 +143,7 @@ Aşağıdaki şablonu workspace klasörünüzde `CLAUDE.md` adıyla kaydedin ve 
 
 ## Nereye Kaydedilir?
 
-CLAUDE.md, **workspace klasörünüzün kök dizinine** kaydedilir. Cowork mod açıldığında Claude bu dosyayı otomatik olarak okur.
+CLAUDE.md, **workspace klasörünüzün kök dizinine** kaydedilir. Claude o klasörle Cowork'te çalıştığında bu dosyayı otomatik olarak okur. Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor, ama dosyanın yeri ve işlevi aynı kalıyor.
 
 Örnek yerleşim:
 
@@ -167,21 +167,21 @@ Bu kural bir şeyi yapar: dosyanız kullandıkça daha iyi hale gelir. Kullanmay
 
 Her CLAUDE.md'de olmaması gerekenler:
 
-- **Şifreler, API anahtarları, erişim bilgileri** — bu dosya düz metindir, yedeklenebilir, paylaşılabilir
-- **KVKK kapsamındaki kişisel veriler** — başkalarının tam adları, kimlik numaraları, hassas bilgileri
-- **Çelişen talimatlar** — "her zaman resmi yaz" ve "samimi ol" aynı dosyada durursa Claude şaşırır
-- **Aşırı katı kurallar** — "hiçbir zaman liste kullanma" gibi yasaklar Claude'un esnekliğini öldürür
-- **Geçici iş notları** — bunlar konuşma bazlı, CLAUDE.md uzun vadeli
+- **Şifreler, API anahtarları, erişim bilgileri**: bu dosya düz metindir, yedeklenebilir, paylaşılabilir
+- **KVKK kapsamındaki kişisel veriler**: başkalarının tam adları, kimlik numaraları, hassas bilgileri
+- **Çelişen talimatlar**: "her zaman resmi yaz" ve "samimi ol" aynı dosyada durursa Claude şaşırır
+- **Aşırı katı kurallar**: "hiçbir zaman liste kullanma" gibi yasaklar Claude'un esnekliğini öldürür
+- **Geçici iş notları**: bunlar konuşma bazlı, CLAUDE.md uzun vadeli
 
 ## Sık Yapılan Hatalar
 
 ### Hata 1: Her Şeyi Bir Kerede Yazmaya Çalışmak
 
-İlk gün CLAUDE.md'nizi 500 satır yazmaya çalışmayın. Şablonu doldurun, 80-120 satır yeterli. Sonra büyüyecek.
+İlk gün CLAUDE.md'nizi 500 satır yazmaya çalışmayın. Şablonu doldurun; 300-500 kelime (kabaca 40-80 kısa satır) yeterli. Sonra büyüyecek.
 
 ### Hata 2: Çok Genel Yazmak
 
-"Profesyonel ol" yerine "devrik cümle kullanma, modern Türkçe yaz" — somut olun.
+"Profesyonel ol" yerine "devrik cümle kullanma, modern Türkçe yaz", somut olun.
 
 ### Hata 3: Hiç Güncellememek
 
@@ -189,7 +189,7 @@ Her CLAUDE.md'de olmaması gerekenler:
 
 ### Hata 4: Ton Tercihini Atlamak
 
-Ton bölümünü yazmayan kullanıcılar Claude'un çıktılarından şikayet eder. Ton yoksa Claude varsayılan tonda yazar — bu sizin sesiniz olmayabilir.
+Ton bölümünü yazmayan kullanıcılar Claude'un çıktılarından şikayet eder. Ton yoksa Claude varsayılan tonda yazar, bu sizin sesiniz olmayabilir.
 
 ### Hata 5: "Her Zaman/Asla" Kuralları Yok
 
@@ -202,14 +202,14 @@ Bu sayfayı okuduktan sonra:
 1. **5 dakika:** Workspace klasörünüzü açın, `CLAUDE.md` adında yeni bir dosya oluşturun. Yukarıdaki şablonu yapıştırın.
 2. **15 dakika:** Şablondaki bölümleri doldurun. Hızlıca, mükemmeliyetçi olmadan.
 3. **5 dakika:** Cowork'ü açın, Claude'a "CLAUDE.md'yi okudun mu, özetini çıkar" deyin. Yanlış anladığı yerler varsa düzeltirsiniz.
-4. **5 dakika:** Gerçek bir görev verin — bir e-posta yazdırın. Tonunuza uyuyor mu? Uymuyorsa Ton bölümünü iyileştirin.
+4. **5 dakika:** Gerçek bir görev verin: bir e-posta yazdırın. Tonunuza uyuyor mu? Uymuyorsa Ton bölümünü iyileştirin.
 
 Bu 30 dakikada işe yarar bir CLAUDE.md'niz olur. Mükemmel olmayacak. Ama yaşayan bir dosya olacak.
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Temel kavram
-- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/) — Farklı roller için gerçek örnekler
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) — CLAUDE.md dışındaki hafıza mekanizmaları
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — CLAUDE.md'nin yaşadığı yer
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Temel kavram
+- [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/): Farklı roller için gerçek örnekler
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): CLAUDE.md dışındaki hafıza mekanizmaları
+- [Cowork Modu](/wiki/araclar/cowork-modu/): CLAUDE.md'nin yaşadığı yer
 

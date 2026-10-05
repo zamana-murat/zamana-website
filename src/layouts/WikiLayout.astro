@@ -8,10 +8,12 @@ import WikiPrevNext from '../components/WikiPrevNext.astro';
 import RetainerCTA from '../components/RetainerCTA.astro';
 import { findNav } from '../data/wiki-nav';
 import type { MarkdownHeading } from 'astro';
+import { composeTitle } from '../data/seo';
 
 interface Props {
   slug: string;
   title: string;
+  seoTitle?: string;
   description?: string;
   tags?: string[];
   headings?: MarkdownHeading[];
@@ -22,6 +24,7 @@ interface Props {
 const {
   slug,
   title,
+  seoTitle,
   description,
   headings = [],
   publishDate,
@@ -97,7 +100,7 @@ const breadcrumbSchema = {
 ---
 
 <Layout
-  title={`${title} | Zamana Wiki`}
+  title={composeTitle(title, ' | Zamana Wiki', seoTitle)}
   description={description || title}
   ogImage={ogImage}
   publishDate={publishDate}

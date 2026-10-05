@@ -1,0 +1,211 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getHaberler, formatDateTr, haberPath } from '../../data/haberler';
+
+const haberler = await getHaberler();
+const latest = haberler[0]?.data.date;
+---
+
+<Layout
+  title="Haberler, Claude'dan güncel gelişmeler | Zamana"
+  description="Anthropic'in Claude duyuruları, ürün güncellemeleri ve araştırma notları, iş dünyası için sade Türkçeyle. Her yazıda özgün kaynağın bağlantısı var."
+  modifiedDate={latest}
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Haberler</span>
+      <h1>Claude'dan haberler, sade Türkçeyle.</h1>
+      <p class="lead">
+        Anthropic'in duyurularını, ürün güncellemelerini ve araştırma notlarını iş dünyasının
+        diliyle Türkçeye aktarıyoruz. Kaynak her zaman Anthropic. Buradaki yazılar birebir çeviri
+        değil, Türkçe uyarlama; her yazının altında özgün metnin bağlantısı var.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {haberler.length === 0 ? (
+        <div class="haber-empty">
+          <p><strong>Henüz haber yok.</strong></p>
+          <p>
+            İlk yazılar hazırlanıyor. Bu arada <a href="/wiki/">Türkçe Claude wiki'sine</a> göz atabilirsiniz.
+          </p>
+        </div>
+      ) : (
+        <ul class="haber-grid" role="list">
+          {haberler.map((h) => (
+            <li>
+              <article class="haber-card">
+                <a href={haberPath(h)} class="haber-card__media" tabindex="-1" aria-hidden="true">
+                  {h.data.image ? (
+                    <img
+                      src={h.data.image}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width="640"
+                      height="360"
+                    />
+                  ) : (
+                    <span class="haber-card__placeholder">
+                      <span>Zamana</span>
+                      <small>Claude haberleri</small>
+                    </span>
+                  )}
+                </a>
+                <div class="haber-card__body">
+                  <time class="haber-card__date" datetime={h.data.date}>{formatDateTr(h.data.date)}</time>
+                  <h2 class="haber-card__title">
+                    <a href={haberPath(h)}>{h.data.title}</a>
+                  </h2>
+                  <p class="haber-card__desc">{h.data.description}</p>
+                  {h.data.tags && h.data.tags.length > 0 && (
+                    <ul class="haber-tags" aria-label="Etiketler">
+                      {h.data.tags.map((t) => <li>{t}</li>)}
+                    </ul>
+                  )}
+                </div>
+              </article>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .haber-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--s-4);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  @media (max-width: 480px) {
+    .haber-grid { grid-template-columns: 1fr; }
+  }
+  .haber-card {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    overflow: hidden;
+    box-shadow: var(--sh-soft);
+    transition: box-shadow var(--t), border-color var(--t), transform var(--t);
+  }
+  .haber-card:hover {
+    border-color: var(--c-border-gold);
+    box-shadow: var(--sh-mid);
+    transform: translateY(-2px);
+  }
+  .haber-card__media {
+    display: block;
+    aspect-ratio: 16 / 9;
+    background: var(--c-navy);
+    overflow: hidden;
+  }
+  .haber-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .haber-card__placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--s-1);
+    background: linear-gradient(160deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
+    border-bottom: 3px solid var(--c-gold);
+    color: var(--c-gold-light);
+  }
+  .haber-card__placeholder span {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+  .haber-card__placeholder small {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-text-light-muted);
+  }
+  .haber-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+    padding: var(--s-4);
+    flex: 1;
+  }
+  .haber-card__date {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+  }
+  .haber-card__title {
+    font-size: 1.15rem;
+    line-height: 1.35;
+    margin: 0;
+  }
+  .haber-card__title a {
+    color: var(--c-navy);
+    text-decoration: none;
+  }
+  /* Whole card clickable via the title link */
+  .haber-card__title a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  .haber-card__title a:focus-visible {
+    outline: none;
+  }
+  .haber-card:has(.haber-card__title a:focus-visible) {
+    outline: 3px solid var(--c-gold);
+    outline-offset: 2px;
+  }
+  .haber-card__desc {
+    color: var(--c-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .haber-tags {
+    list-style: none;
+    margin: auto 0 0;
+    padding: var(--s-2) 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .haber-tags li {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--c-navy);
+    background: var(--c-bg-subtle);
+    border: 1px solid var(--c-border-gold);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+  }
+  .haber-empty {
+    max-width: var(--max-w-narrow);
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--s-6) var(--s-4);
+    border: 1px dashed var(--c-border-gold);
+    border-radius: var(--r-card);
+    background: var(--c-bg-subtle);
+  }
+</style>

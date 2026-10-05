@@ -1,18 +1,18 @@
 ---
-title: MCP Güvenlik — İzinler, Riskler, Kurumsal Değerlendirme
+title: "MCP Güvenlik: İzinler, Riskler, Kurumsal Değerlendirme"
 description: "MCP server'ların güvenlik modeli. Hangi izinler nelere açılır, kurumsal risk değerlendirmesi, KVKK uyumu, prompt injection riski."
 tags:
   - mcp
   - guvenlik
   - kvkk
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
-**[MCP](/wiki/mcp/nedir/), Claude'a sisteminize erişim verir.** Bu güç, dikkatsiz kurulduğunda sorun olabilir — yetkisiz veri erişimi, beklenmedik silme işlemleri, prompt injection saldırıları. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar.
+**[MCP](/wiki/mcp/nedir/), Claude'a sisteminize erişim verir.** Bu güç dikkatsiz kurulduğunda sorun yaratabilir: yetkisiz veri erişimi, beklenmedik silme işlemleri ve prompt injection saldırıları gibi. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar.
 
-[Connectors](/wiki/araclar/connectors/) sayfasıyla karşılaştırın — connector Anthropic'in denetlediği bir paket; MCP daha açık ve sizin sorumluluğunuzda.
+[Connectors](/wiki/araclar/connectors/) sayfasıyla karşılaştırın: connector Anthropic'in denetlediği bir pakettir, MCP ise daha açıktır ve sorumluluğu sizdedir.
 
-## MCP Güvenlik Modeli — Temel Mantık
+## MCP Güvenlik Modeli: Temel Mantık
 
 MCP üç katmanlı güvenlik üzerine kurulu:
 
@@ -28,7 +28,7 @@ MCP üç katmanlı güvenlik üzerine kurulu:
 
 En yaygın hata: server'a gerekenden fazla yetki verilmesi.
 
-**Örnek:** GitHub MCP'sine "tüm repolar — okuma + yazma + admin" yetkisi vermek. Halbuki Claude'un sadece belirli bir repo'da issue okuması yeterli olabilirdi.
+**Örnek:** GitHub MCP'sine "tüm repolar, okuma + yazma + admin" yetkisi vermek. Halbuki Claude'un sadece belirli bir repo'da issue okuması yeterli olabilirdi.
 
 **Çözüm:** **En az ayrıcalık (least privilege) ilkesi.** Token ve API key'leri minimum kapsamla yapılandırın.
 
@@ -60,7 +60,7 @@ MCP, hassas veriyi Claude'a (yani Anthropic'e) aktarır. Hassas veri sınıfland
 
 [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ve [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfaları arka planı verir.
 
-### 5. Yan Kanal — Loglama
+### 5. Yan Kanal: Loglama
 
 MCP server'ların kendisi çağrıları loglar. Sırlar (token, şifre) yanlışlıkla loglara düşebilir. Üretim ortamında bu logları korumak gerekir.
 
@@ -97,14 +97,14 @@ GRANT SELECT ON customers, orders TO claude_readonly;
 
 ## Onay Mekanizması
 
-MCP, Claude'un bir tool çağırmadan önce **kullanıcıdan onay** isteme mekanizmasını destekler. Bu davranış server tarafından belirlenir — bazıları her çağrıda sorar, bazıları ilk çağrıda sorar sonra kabul eder.
+MCP, Claude'un bir tool çağırmadan önce **kullanıcıdan onay** isteme mekanizmasını destekler. Bu davranış server tarafından belirlenir, bazıları her çağrıda sorar, bazıları ilk çağrıda sorar sonra kabul eder.
 
 ### Onay Türleri
 
 | Tip | Davranış |
 |---|---|
 | **Always ask** | Her çağrıda sor |
-| **Once per session** | Ilk sefer sor, sohbet boyunca tekrar sorma |
+| **Once per session** | İlk sefer sor, sohbet boyunca tekrar sorma |
 | **Auto** | Hiç sorma (sadece güvenli/idempotent işlemler için) |
 
 ### Sizin Tercihiniz
@@ -125,7 +125,7 @@ Yeni bir MCP server kurulmadan önce şu kontrolleri yapın:
 
 - [ ] Server'ın kaynağı belli mi? (Anthropic, tanınmış şirket, açık kaynak community)
 - [ ] Açık kaynak ise kod gözden geçirildi mi?
-- [ ] Son güncelleme yakın bir tarih mi (2 yıllık aktiflik şüpheli)?
+- [ ] Son güncelleme yakın bir tarihte mi? (Yıllardır güncellenmeyen server şüphelidir; arşivlenmiş depolardan kaçının)
 - [ ] Üreticiyi tanıyor musunuz? (resmi web sitesi, belge, iletişim)
 
 ### İzin Kapsamı
@@ -144,7 +144,7 @@ Yeni bir MCP server kurulmadan önce şu kontrolleri yapın:
 
 ### Loglama / Audit
 
-- [ ] Server çağrılarını loglıyor mu?
+- [ ] Server çağrılarını logluyor mu?
 - [ ] Loglar nerede saklanıyor?
 - [ ] Sırlar loglarda saklanmıyor değil mi?
 - [ ] Audit gerekirse logları çıkarabiliyor musunuz?
@@ -161,13 +161,13 @@ Yeni bir MCP server kurulmadan önce şu kontrolleri yapın:
 
 MCP yapılandırılırken KVKK perspektifinden:
 
-### 1. İşleyen — İşleyici Sözleşmesi
+### 1. Veri İşleyen Sözleşmesi
 
-Bir SaaS ile MCP üzerinden bağlandığınızda, o SaaS yasal olarak **işleyen** sıfatı kazanabilir. KVKK'ya göre o servisle bir sözleşmeniz olması gerekir (örneğin Slack KVKK uyumlu mu?).
+Bir SaaS ile MCP üzerinden bağlandığınızda, o SaaS yasal olarak **veri işleyen** sıfatı kazanabilir. KVKK'ya göre o servisle bir sözleşmeniz olması gerekir (örneğin Slack KVKK uyumlu mu?).
 
 ### 2. Veri Yerleşim
 
-Anthropic Claude verileri ABD'de işler. Bir KVKK ihlali olduğunda yurt dışı veri aktarımı kapsamına girer. [Enterprise plan](/wiki/temeller/takim-ve-admin/) bu konuda DPA ile ek koruma sağlar.
+Verilerin ABD dahil yurt dışında işlenebileceğini varsayın; bu, KVKK'da yurt dışına veri aktarımı kapsamına girer. Ticari ürünlerde (Team, Enterprise, API) Anthropic'in veri işleme eki (DPA, standart sözleşme maddeleri dahil) ticari şartlara otomatik dahildir ve ayrıca imza gerekmez. Free, Pro ve Max bu DPA kapsamı dışındadır. Kurumsal MCP kullanımı için bu yüzden [Team veya Enterprise planı](/wiki/temeller/takim-ve-admin/) tercih edin. Yine de hukuk ekibinizle doğrulayın.
 
 ### 3. Aydınlatma Yükümlülüğü
 
@@ -208,7 +208,7 @@ Bir MCP-kaynaklı olay olursa ne yaparsınız?
 1. **Tespit:** Olağandışı çağrı, beklenmedik veri akışı
 2. **İzole:** Server'ı hemen devre dışı bırakın (Claude Desktop config'te kaldır)
 3. **Token iptal:** Bağlı tüm token / API key'leri iptal edin
-4. **Inceleme:** Hangi veri etkilendi, kimler kullandı
+4. **İnceleme:** Hangi veri etkilendi, kimler kullandı
 5. **Bildirim:** KVKK olayıysa kurum içi hukuk + KVKK Kurumu (gerekirse)
 6. **Düzeltme:** Kök neden, gelecek tedbirleri
 
@@ -216,7 +216,7 @@ Bir MCP-kaynaklı olay olursa ne yaparsınız?
 
 ## Pratik Tavsiyeler
 
-**Beyaz liste — kara liste değil.** Onaylı server listesi tutun, dışarısı yasak. Daha kolay yönetim.
+**Beyaz liste, kara liste değil.** Onaylı server listesi tutun, dışarısı yasak. Daha kolay yönetim.
 
 **Periyodik audit.** 3 ayda bir tüm aktif MCP'leri gözden geçirin: hâlâ gerekli mi, yetki güncel mi, üreticiyi hâlâ güveniyor musunuz?
 
@@ -230,7 +230,7 @@ Bir MCP-kaynaklı olay olursa ne yaparsınız?
 
 50+ kişilik bir organizasyonda iyi MCP yönetimi şuna benzer:
 
-- **Onaylı MCP listesi** (yıllık güncellenir)
+- **Onaylı MCP listesi** (çeyreklik güncellenir)
 - **MCP onay komitesi** (BT + Hukuk + İlgili iş birimi)
 - **Standart yapılandırma şablonları** (değiştirilemez varsayılanlar)
 - **Merkezi token yönetimi** (vault servisi)
@@ -241,23 +241,23 @@ Küçük şirketlerde basit bir Excel listesi + 3 ayda bir kontrol yetebilir.
 
 ## Self-Hosted Sandbox ve Özel MCP Server'lar (Kurumsal)
 
-Mayıs 2026'da Anthropic, kurumsal güvenlik sınırlarını güçlendiren iki seçenek tanıttı. Bunlar esas olarak [Managed Agents](/wiki/yetenekler/agents-subagents/) kuran BT/geliştirici ekiplerini ilgilendirir, ama güvenlik değerlendirmesi yapan bir kurumun bilmesi gereken iki kontrol noktasıdır:
+Mayıs 2026'da Anthropic, kurumsal güvenlik sınırlarını güçlendiren iki seçenek tanıttı. Bunlar esas olarak [Managed Agents](/wiki/yetenekler/agents-subagents/) kuran BT ve geliştirici ekiplerini ilgilendirir, ama güvenlik değerlendirmesi yapan her kurumun bilmesi gereken iki kontrol noktasıdır:
 
-- **Self-hosted sandbox (public beta):** Agent'ın araç çalıştırdığı ortam, **kurumun kendi altyapısına** veya seçilen bir sağlayıcıya (örneğin Cloudflare, Daytona, Modal, Vercel) taşınabilir. Karar veren agent döngüsü Anthropic tarafında kalırken, kod ve araç yürütme sizin kontrolünüzdeki sınırlar içinde gerçekleşir. Bu, hassas işlemlerin nerede koştuğu üzerinde doğrudan denetim sağlar.
+- **Self-hosted sandbox (public beta):** Agent'ın araç çalıştırdığı ortam, **kurumun kendi altyapısına** veya seçilen bir sağlayıcıya (örneğin Cloudflare, Daytona, Modal, Vercel) taşınabilir. Karar veren agent döngüsü Anthropic tarafında kalır; kod ve araç yürütme sizin kontrolünüzdeki sınırlar içinde gerçekleşir. Böylece hassas işlemlerin nerede çalıştığını siz denetlersiniz.
 
-- **Özel (private) MCP server'lar:** Managed Agents artık yalnızca kurum içi ağda erişilebilen **özel MCP server'lara** bağlanabilir. Hem agent'ın çalıştığı ortam hem de eriştiği servisler, kurumun belirlediği güvenlik çevresi içinde tutulabilir.
+- **Özel (private) MCP server'lar:** Managed Agents artık yalnızca kurum içi ağdan erişilebilen **özel MCP server'lara** bağlanabilir. Hem agent'ın çalıştığı ortam hem de eriştiği servisler kurumun belirlediği güvenlik çevresi içinde tutulabilir.
 
 **Değerlendirme açısından:** Bu seçenekler, "veri Anthropic altyapısına çıkmadan iş yürütülebilir mi?" sorusuna kısmi bir cevap sunar. KVKK ve veri yerleşim kaygısı yüksek kurumlar için, [Enterprise plan](/wiki/temeller/planlar/) + self-hosted sandbox kombinasyonu değerlendirilmeye değer.
 
 ## İlgili Sayfalar
 
-- [MCP Nedir?](/wiki/mcp/nedir/) — Temeller
-- [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) — Adım adım kurulum
-- [Popüler MCP'ler](/wiki/mcp/populer-mcpler/) — Onaylı liste önerileri
-- [Connectors](/wiki/araclar/connectors/) — Daha güvenli alternatif
-- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — Kurumsal güvenlik
-- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — KVKK, sözleşme
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) — Politika çerçevesi
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Veri hakları
-- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Kurumsal yönetim
+- [MCP Nedir?](/wiki/mcp/nedir/): Temeller
+- [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/): Adım adım kurulum
+- [Popüler MCP'ler](/wiki/mcp/populer-mcpler/): Onaylı liste önerileri
+- [Connectors](/wiki/araclar/connectors/): Daha güvenli alternatif
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/): Kurumsal güvenlik
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/): KVKK, sözleşme
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Politika çerçevesi
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri hakları
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Kurumsal yönetim
 

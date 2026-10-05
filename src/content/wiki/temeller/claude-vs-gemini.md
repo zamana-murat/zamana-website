@@ -1,15 +1,15 @@
 ---
-title: Claude vs Gemini — Hangisi Hangi İşte?
+title: "Claude vs Gemini: Hangisi Hangi İşte?"
 description: "Google Gemini ile Claude'un dürüst karşılaştırması. Güçlü ve zayıf yönler, Workspace entegrasyonu, hangi senaryoda hangisi tercih edilmeli."
 tags:
   - temeller
   - karsilastirma
   - gemini
   - google
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Gemini, Google'ın amiral AI modelidir** — Workspace (Gmail, Docs, Drive, Calendar) içine derinlemesine entegredir, çoğu Türkiye kurumsalında zaten ücretsiz olarak deneniyor.
+**Gemini, Google'ın amiral AI modelidir**: Workspace (Gmail, Docs, Drive, Calendar) içine derinlemesine entegredir, çoğu Türkiye kurumsalında zaten ücretsiz olarak deneniyor.
 
 Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde iyi, hangisi neyde değil, ikisini birden kullanmak mantıklı mı.
 
@@ -24,50 +24,56 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 | Web arayüzü | claude.ai | gemini.google.com |
 | Workspace entegrasyonu | [Connector](/wiki/araclar/connectors/) ile | Yerleşik (Docs / Gmail / Slides içinde doğrudan) |
 | API | Anthropic Console | Google AI Studio / Vertex AI |
-| Türkçe kalitesi | Yüksek | Yüksek |
+| Türkçe kalitesi | Yüksek | İyi (günlük kullanımda fark küçük) |
 | Görsel anlama | ✅ | ✅ (çok güçlü, multimodal odaklı) |
 | Sohbet geçmişi | Hesaba bağlı | Google hesabınıza bağlı |
-| Veri eğitime kullanım | Varsayılan kapalı | Kullanıcıya göre değişir, geçmişte tartışmalı |
+| Veri eğitime kullanım | Tüketici planlarında kullanıcı Privacy Settings'ten seçer; Team, Enterprise ve API'de varsayılan olarak eğitimde kullanılmaz | Kullanıcıya ve plana göre değişir, geçmişte tartışmalı |
 
-## Güçlü Yönler — Claude
+## Güçlü Yönler: Claude
 
-**Yazı kalitesi.** Uzun-form içerik, rapor, hukuki taslak, e-posta — Claude'un üslubu daha tutarlı, daha az "AI gibi" hissedilir. Profesyonel iletişimde fark edilir bir kalite farkı var.
+**Yazı kalitesi.** Uzun-form içerik, rapor, hukuki taslak, e-posta, Claude'un üslubu daha tutarlı, daha az "AI gibi" hissedilir. Profesyonel iletişimde fark edilir bir kalite farkı var.
 
-**Karmaşık muhakeme.** Çok adımlı analiz, çelişkili veriden çıkarım, nüanslı karar — Claude'un genişletilmiş düşünme yeteneği üstün.
+**Karmaşık muhakeme.** Çok adımlı analiz, çelişkili veriden çıkarım, nüanslı karar, Claude'un genişletilmiş düşünme yeteneği güçlü.
 
-**[Constitutional AI](/wiki/temeller/anthropic-ve-tarihce/).** Hassas konularda (hukuk, sağlık, finans) Claude daha dengeli ve dürüst yanıt verir, daha az kendinden emin "halüsinasyon" yapar.
+**[Constitutional AI](/wiki/temeller/anthropic-ve-tarihce/).** Hassas konularda (hukuk, sağlık, finans) Claude daha dengeli ve dürüst yanıt vermeye eğilimlidir. Halüsinasyonu sıfırlamaz, ama emin olmadığını söyleme alışkanlığı daha belirgin.
 
-**[Cowork modu](/wiki/araclar/cowork-modu/), [Skills](/wiki/yetenekler/skills/), [Artifacts](/wiki/yetenekler/artifacts/).** İş profesyonelleri için tasarlanmış üretim katmanı (.docx, .xlsx, .pptx üretimi, scheduled task, dispatch) Gemini'de eşdeğeri yok veya daha sınırlı.
+**[Cowork](/wiki/araclar/cowork-modu/), [Skills](/wiki/yetenekler/skills/), [Artifacts](/wiki/yetenekler/artifacts/).** İş profesyonelleri için tasarlanmış üretim katmanı var (.docx, .xlsx, .pptx üretimi, scheduled task). Gemini'de de benzer araçlar bulunuyor, ama bunları Claude'un iş akışı odaklı paketi kadar bütünleşik bulmuyoruz.
 
-**[CLAUDE.md](/wiki/claude-md/nedir/) — kalıcı kişiselleştirme.** Claude'a "ben kimim, nasıl çalışırım" anlatabileceğiniz yerleşik bir mekanizma var. Gemini'de eşdeğeri yok.
+**[CLAUDE.md](/wiki/claude-md/nedir/), kalıcı kişiselleştirme.** Claude'a "ben kimim, nasıl çalışırım" anlatabileceğiniz yerleşik bir mekanizma var. Gemini'de de kişisel bağlam özellikleri bulunuyor, ama proje klasöründe yaşayan, ekiple paylaşılan düz metin bir dosya karşılığı yok.
 
-## Güçlü Yönler — Gemini
+## Güçlü Yönler: Gemini
 
-**Workspace entegrasyonu.** Gmail içinde "yardım et yaz", Docs içinde "rephrase", Sheets'te formül üretimi, Calendar'da brief — bunlar yerleşik. Claude'da [connector](/wiki/araclar/connectors/) ile yapılır ama Gemini içeride doğal bulunur.
+**Workspace entegrasyonu.** Gmail içinde "yardım et yaz", Docs içinde "rephrase", Sheets'te formül üretimi, Calendar'da brief, bunlar yerleşik. Claude'da [connector](/wiki/araclar/connectors/) ile yapılır ama Gemini içeride doğal bulunur.
 
-**Multimodal güç.** Video anlama, gerçek zamanlı görüntü işleme, sesli sohbette doğal akıcılık — Gemini bu konuda öne çıkıyor.
+**Multimodal güç.** Video anlama, gerçek zamanlı görüntü işleme, sesli sohbette doğal akıcılık, Gemini bu konuda öne çıkıyor.
 
-**Bağlam penceresi.** Gemini Pro modelleri tarihsel olarak 1M-2M token bağlamla geldi. Claude Opus 4.7 da 1M context'e ulaştı, ama Gemini'nin bu konudaki olgunluğu daha eski.
+**Bağlam penceresi.** Google AI Pro planı 1M token bağlam penceresi diyor. Claude'un güncel modelleri (Fable 5.1, Opus 5.5, Sonnet 5.5) de 1M token sunuyor, yani bu başlık artık belirleyici değil.
 
-**Ücretsiz katman.** Gemini'nin ücretsiz katmanı oldukça cömert — bireysel deneme için Pro abonelik gerekmez. Claude'un ücretsiz katmanı sınırlıdır.
+**Ücretsiz katman.** Gemini'yi ücretsiz denemek kolay. Claude Free'nin günlük kota sayıları yayımlanmıyor, o yüzden iki tarafı da kendi işinizle deneyip kotaya takılıp takılmadığınıza bakın. Not: Claude Design, Slides ve Docs gibi yeni üretim araçları Free planda yok.
 
 **Google arama entegrasyonu.** Web sorgu doğruluğu Google'ın arama altyapısını kullandığı için pratikte iyi. (Ama Claude'un [web araması](/wiki/araclar/web-arama/) da güçlü, fark giderek kapanıyor.)
 
-## Zayıf Yönler — Claude
+## Zayıf Yönler: Claude
 
 - Türkiye'de doğrudan satış / destek yok ([Anthropic](/wiki/temeller/anthropic-ve-tarihce/) Türkiye'de ofis kurmadı)
-- Workspace içinde **yerleşik değil** — connector'la bağlanır, yine de Gmail içinde Gemini gibi tek tıkla erişim yok
+- Workspace içinde **yerleşik değil**: connector'la bağlanır, yine de Gmail içinde Gemini gibi tek tıkla erişim yok
 - Video oluşturma / multimodal üretim Gemini kadar agresif değil
 
-## Zayıf Yönler — Gemini
+## Zayıf Yönler: Gemini
 
 - **Veri politikası tartışmalı geçmiş.** Google'ın veri kullanım politikaları zaman içinde değişti, kurumsal alıcılar belirsizlik hissediyor
 - **Kalite tutarsızlığı.** Aynı modelin farklı sürümleri arasında performans gözle görülür değişebiliyor; pilot çalışmadan kuruma yaymak zor
 - **Yazı kalitesi.** Uzun form içerikte Claude kadar tutarlı değil
-- **Hassas konularda fazla temkinli.** "Ben yardımcı olamam" cevapları daha sık — bu bazı iş senaryolarını engelliyor
+- **Hassas konularda fazla temkinli.** "Ben yardımcı olamam" cevapları daha sık, bu bazı iş senaryolarını engelliyor
 - **Ekosistem kilidi.** Google Workspace dışında değer önerisi azalır; Microsoft 365 kullanan firma için doğal eşleşme [Copilot](/wiki/temeller/claude-vs-copilot/) olur
 
-## Karar Matrisi — Hangi İşte Hangisi?
+## Fiyat ve Modeller (Ekim 2026 itibarıyla)
+
+Google'ın abonelik sayfalarına göre ABD fiyatları: **Google AI Plus** 4,99 USD/ay, **Google AI Pro** 19,99 USD/ay, **Google AI Ultra** 99,99 USD/ay'dan başlıyor (üst kademe 199,99 USD). Türkiye'de aynı planlar 199,99 TL, 869,99 TL ve 1.479,99 TL/ay'dan başlıyor. Abonelik sayfaları "Gemini 3.1 Pro" modelini listeliyor (Ultra'da Deep Think). Geliştirici tarafında en yeni kararlı model Gemini 3.8 Flash. Bunlar hızla değişir, karar öncesi Google'ın sayfasına bakın.
+
+Karşılaştırma için Claude tarafı: Pro 20 USD/ay, Max 100 ve 200 USD/ay, Team Standard koltuk 25 USD aylık (yıllıkta 20 USD). Ayrıntı: [Planlar](/wiki/temeller/planlar/).
+
+## Karar Matrisi: Hangi İşte Hangisi?
 
 | İş | Tercih |
 |---|---|
@@ -80,15 +86,15 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 | Video / multimodal senaryo | **Gemini** |
 | Otomasyon / scheduled task | **Claude** ([Scheduled Tasks](/wiki/araclar/scheduled-tasks/)) |
 | Hassas / düzenleyici sektör | **Claude** (güvenlik kültürü, [DPA](/wiki/temeller/takim-ve-admin/)) |
-| KVKK uyumlu kurumsal kullanım | **Claude Enterprise** ([Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)) |
-| Bireysel deneme, ücretsiz başlangıç | **Gemini** ücretsiz katman |
+| KVKK açısından kurumsal kullanım | **Claude Team / Enterprise** (DPA ticari şartlara dahil; bkz. [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)) |
+| Bireysel deneme, ücretsiz başlangıç | **Gemini** ya da **Claude** Free (ikisini de deneyin) |
 
 ## İkisini Birden Kullanmak Mantıklı mı?
 
 Evet, ve birçok gelişmiş kullanıcı bunu yapıyor:
 
-- **Gemini** — Workspace içinde hızlı, "yerinde" yardım
-- **Claude** — Üretim, analiz, derinlik gerektiren işler
+- **Gemini**: Workspace içinde hızlı, "yerinde" yardım
+- **Claude**: Üretim, analiz, derinlik gerektiren işler
 
 Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik kurumsal seçim:**
 
@@ -110,10 +116,10 @@ Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik
 
 ## İlgili Sayfalar
 
-- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) — OpenAI tarafı
-- [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/) — Microsoft tarafı
-- [Modeller](/wiki/temeller/modeller/) — Claude'un kendi içindeki seçim
-- [Connectors](/wiki/araclar/connectors/) — Google servislerine Claude'u bağlama
-- [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/) — Şirket arka planı
-- [Yaygın İtirazlar](/wiki/temeller/itirazlar/) — "Zaten Gemini var" itirazına cevap
+- [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/): OpenAI tarafı
+- [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/): Microsoft tarafı
+- [Modeller](/wiki/temeller/modeller/): Claude'un kendi içindeki seçim
+- [Connectors](/wiki/araclar/connectors/): Google servislerine Claude'u bağlama
+- [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/): Şirket arka planı
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/): "Zaten Gemini var" itirazına cevap
 

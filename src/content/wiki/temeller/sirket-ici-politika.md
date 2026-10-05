@@ -1,27 +1,27 @@
 ---
 title: Şirket İçi Claude Kullanım Politikası
-description: "Çalışanlarınızın Claude'u nasıl kullanacağını yöneten politika şablonu. Hassas veri, KVKK, paylaşım, saklama, eğitim — tek bir belgede."
+description: "Çalışanlarınızın Claude'u nasıl kullanacağını yöneten politika şablonu. Hassas veri, KVKK, paylaşım, saklama ve eğitim tek bir belgede."
 tags:
   - temeller
   - politika
   - kvkk
   - guvenlik
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **"AI kullanımına dair şirket politikamız var mı?"** sorusu denetim, müşteri sözleşmesi, KVKK denetimi veya iş kazası anında çıkar. Cevap "yok" ise sorun olur. Bu sayfa pratik bir politika şablonu sunar.
 
-Aşağıdaki içerik **şablon önerisidir** — şirketinizin sektörüne, büyüklüğüne, hassas veri durumuna göre uyarlayın. Hukuk müşaviri ile gözden geçirin. [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası da rehber içerir.
+Aşağıdaki içerik bir **şablon önerisidir**. Şirketinizin sektörüne, büyüklüğüne ve hassas veri durumuna göre uyarlayın, hukuk müşaviriyle gözden geçirin. [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası da rehber içerir.
 
 ## Politikanın Amacı
 
 Belge, çalışanlarınızın Claude'u **iş için** kullanırken nelere uyacağını netleştirir. Üç ana hedef:
 
-1. **Riski yönetmek** — hassas veri sızıntısı, halüsinasyon kaynaklı yanlış karar, KVKK ihlali
-2. **Verimi maksimize etmek** — politika sınırlayıcı değil, *aşırı temkinli olunmadan* nasıl güvenle kullanılacağını söyleyen
-3. **Denetlenebilir olmak** — yıl sonunda denetim sorulursa "evet politikamız var, çalışanlar imzaladı, ihlaller şu şekilde takip ediliyor"
+1. **Riski yönetmek**: hassas veri sızıntısı, halüsinasyon kaynaklı yanlış karar, KVKK ihlali
+2. **Verimi maksimize etmek**: politika sınırlayıcı değil, *aşırı temkinli olunmadan* nasıl güvenle kullanılacağını söyleyen
+3. **Denetlenebilir olmak**: yıl sonunda denetim sorulursa "evet politikamız var, çalışanlar imzaladı, ihlaller şu şekilde takip ediliyor"
 
-## Şablon — Politika Belgesi
+## Şablon: Politika Belgesi
 
 Aşağıdaki yapı bir Word/PDF politika belgesinin omurgasıdır. Her bölümü kendi şirket bağlamına uyarlayın.
 
@@ -33,9 +33,10 @@ Bu politika [Şirket Adı] çalışanlarının, taşeronlarının ve stajyerleri
 
 [Şirket adı] aşağıdaki AI araçlarını **iş amaçlı kullanım için onaylar:**
 
-- **Claude** (Anthropic) — birincil AI asistanı
+- **Claude** (Anthropic): birincil AI asistanı
   - Erişim: claude.ai web, [Claude Desktop](/wiki/araclar/claude-desktop/), [Claude Mobil](/wiki/araclar/claude-mobil/)
-  - Plan: [Şirket plan adı] — kullanıcı yönetimi [admin adı] tarafından yapılır
+  - Plan: [Şirket plan adı]; kullanıcı yönetimi [admin adı] tarafından yapılır
+  - Bireysel hesapla (Pro/Max) kullanılıyorsa Settings → Privacy altındaki "Claude'u geliştirmeye yardım et" ayarı kapalı olmalıdır
 
 Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesapla* iş amaçlı kullanım **bu politika ile onaylanmamıştır**. Onay isterseniz [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile başvurun.
 
@@ -51,17 +52,17 @@ Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesap
 
 **İç bilgi için koşullar:**
 - Sadece [Takım veya Enterprise plan](/wiki/temeller/takim-ve-admin/) hesabı üzerinden girilir
-- Şirket [DPA](/wiki/departmanlar/hukuk/) imzalı olmalı
+- Planın [DPA](/wiki/departmanlar/hukuk/) kapsamında olması gerekir (Team ve Enterprise'ta DPA ticari şartlara otomatik dahildir, ayrıca imza gerekmez; Free, Pro ve Max kapsam dışıdır)
 - Çalışan veri girmeden önce verinin **niteliğini** kontrol eder
 
 **Gizli veri için tek istisna:**
-[Enterprise plan](/wiki/temeller/takim-ve-admin/) ile özel sözleşme (DPA + yerel saklama + audit log) imzalanmış belirli senaryolarda kullanım onaylanabilir. Bu istisnayı yazılı olarak [Hukuk departmanı](/wiki/departmanlar/hukuk/) onaylar.
+[Enterprise plan](/wiki/temeller/takim-ve-admin/) ile özel sözleşme (DPA + özel veri saklama süresi + audit log) imzalanmış belirli senaryolarda kullanım onaylanabilir. Bu istisnayı yazılı olarak [Hukuk departmanı](/wiki/departmanlar/hukuk/) onaylar.
 
 ### 4. KVKK ve Kişisel Veri
 
 **Kişisel veri:** TC kimlik no, ad-soyad + eposta/telefon, sağlık verisi, banka bilgisi, vb.
 
-- **Müşteri / iş ortağı kişisel verisi:** Yazılı bilgilendirme ve gerekiyorsa açık rıza alınmadan Claude'a girilemez
+- **Müşteri / iş ortağı kişisel verisi:** Aydınlatma metni, KVKK m.5 işleme şartı ve hukuk departmanının onayladığı yurt dışı aktarım dayanağı (KVKK m.9) üçü birden yoksa Claude'a girilemez. Açık rıza, düzenli kullanım için tek başına yeterli dayanak sayılmaz
 - **Çalışan kişisel verisi:** İK işleri için sınırlı, anonimleştirilmiş giriş; ham veri girişi yasak
 - **Kendi kişisel verim:** Çalışanın kendi adı, e-posta gibi düşük hassasiyetli bilgiler iş bağlamında girilebilir
 
@@ -76,7 +77,7 @@ Detay için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası.
 
 ### 5. Yasak İçerik
 
-Aşağıdakiler **iş amaçlı Claude kullanımında kesin yasaktır:**
+Aşağıdakiler **iş amaçlı Claude kullanımında kesin yasaktır** (Bölüm 3'teki yazılı Enterprise istisnası hariç):
 
 - Müşteri / iş ortağının yazılı izni olmadan onlara ait gizli belgenin yüklenmesi
 - Şirket finansalları, ticari sırlar, henüz kamuya açıklanmamış stratejik kararlar
@@ -84,7 +85,7 @@ Aşağıdakiler **iş amaçlı Claude kullanımında kesin yasaktır:**
 - Hukuki süreç içindeki dosyalar (avukat-müvekkil gizliliğine tabi)
 - Üretim formülleri, patent başvurusu hazırlığı, Ar-Ge çıktıları
 
-Şüphedeyseniz: **sormadan önce, sormayın.** Yöneticinize veya [Hukuk departmanı](/wiki/departmanlar/hukuk/)'na danışın.
+Şüphedeyseniz **Claude'a girmeden önce sorun.** Yöneticinize veya [Hukuk departmanı](/wiki/departmanlar/hukuk/)'na danışın.
 
 ### 6. Çıktı Sorumluluğu
 
@@ -121,7 +122,7 @@ Müşteri sözleşmelerinde, akademik raporlarda, basın bültenlerinde **A mode
 
 Bu politika imzalandıktan sonra çalışan, [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip etmeyi taahhüt eder. Ek olarak şirketin sağladığı eğitim:
 
-- Yeni başlayanlar için onboarding (saat/gün tahmini)
+- Yeni başlayanlar için onboarding ([süre])
 - Çeyreklik içsel paylaşım toplantıları
 - Yıllık politika tazeleme
 
@@ -129,16 +130,16 @@ Bu politika imzalandıktan sonra çalışan, [İlk 7 Gün](/wiki/temeller/ilk-7-
 
 Politika ihlali durumunda izlenecek süreç:
 
-1. İlk uyarı — yazılı (basit ihlaller için)
+1. İlk uyarı: yazılı (basit ihlaller için)
 2. İkinci uyarı + zorunlu eğitim
 3. Ciddi ihlaller (gizli veri sızıntısı, müşteri zararı) → İK + hukuk yönlendirmesi
 4. Aşırı durumlar → İş Kanunu kapsamında değerlendirme
 
-İhlaller için bildirim hattı: [E-posta veya kanal] — anonim de bildirilebilir.
+İhlaller için bildirim hattı: [E-posta veya kanal], anonim de bildirilebilir.
 
 ### 11. Politika Sahipliği ve Güncelleme
 
-- **Sahip:** [Pozisyon — örn. CIO, BT Müdürü, İK Direktörü]
+- **Sahip:** [Pozisyon: örn. CIO, BT Müdürü, İK Direktörü]
 - **Onaylayan:** [Üst yönetim]
 - **İlk yayım:** [Tarih]
 - **Sonraki gözden geçirme:** Yıllık veya AI yasal düzenlemesi değiştiğinde
@@ -148,19 +149,19 @@ Politika ihlali durumunda izlenecek süreç:
 
 ## Politikayı Yayınlama Süreci
 
-1. **Şablonu uyarlayın** — bu sayfadaki yapıyı kendi şirketiniz için doldurun
-2. **Hukuk + İK gözden geçirsin** — KVKK, İş Kanunu, sözleşme açısından
-3. **Üst yönetim onaylasın** — politika ağırlığı için
-4. **Tüm çalışanlara duyurun** — toplantı + e-posta
-5. **İmza alın** — fiziksel veya dijital, dosyada saklanır
-6. **Eğitim verin** — politikayı sadece duyurmak yetmez, anlatmak gerekir
-7. **Yıllık tekrar gözden geçirin** — teknoloji ve mevzuat değişiyor
+1. **Şablonu uyarlayın**: bu sayfadaki yapıyı kendi şirketiniz için doldurun
+2. **Hukuk + İK gözden geçirsin**: KVKK, İş Kanunu, sözleşme açısından
+3. **Üst yönetim onaylasın**: politika ağırlığı için
+4. **Tüm çalışanlara duyurun**: toplantı + e-posta
+5. **İmza alın**: fiziksel veya dijital, dosyada saklanır
+6. **Eğitim verin**: politikayı sadece duyurmak yetmez, anlatmak gerekir
+7. **Yıllık tekrar gözden geçirin**: teknoloji ve mevzuat değişiyor
 
 ## Sık Yapılan Hatalar
 
 **Çok kısıtlayıcı politika.** "Hiçbir veri girilemez" türü politikalar çalışanlar tarafından **görmezden gelinir** ve daha tehlikeli olur. Daha sınırlı ama uygulanabilir bir politika, geniş ama göz ardı edilen bir politikadan iyidir.
 
-**Çok belirsiz politika.** "Hassas veriyi girmeyin" yetmez — "hassas veri" tanımı, örnekleri, sınıfları olmalı.
+**Çok belirsiz politika.** "Hassas veriyi girmeyin" yetmez; "hassas veri" için tanım, örnek ve sınıflar olmalı.
 
 **İhlal süreci yok.** Politika varsa, ihlal süreci de olmalı. Yoksa bağlayıcı değildir.
 
@@ -172,14 +173,14 @@ Politika ihlali durumunda izlenecek süreç:
 
 Bu politika tek başına yetmez; aşağıdaki belgelerle uyumlu olmalı:
 
-- **İş sözleşmesi** — gizlilik maddesi AI'a açık atıf yapsın
-- **KVKK aydınlatma metni** — müşteriye Claude kullanımı bildirilirse
-- **Tedarikçi sözleşmeleri** — [DPA](/wiki/temeller/takim-ve-admin/) ile tutarlı
-- **Bilgi güvenliği politikası** — varsa, AI bölümü eklensin
+- **İş sözleşmesi**: gizlilik maddesi AI'a açık atıf yapsın
+- **KVKK aydınlatma metni**: müşteriye Claude kullanımı bildirilirse
+- **Tedarikçi sözleşmeleri**: [DPA](/wiki/temeller/takim-ve-admin/) ile tutarlı
+- **Bilgi güvenliği politikası**: varsa, AI bölümü eklensin
 
 [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası bu uyum işini detaylandırır.
 
-## Mini Versiyon — 1 Sayfa
+## Mini Versiyon: 1 Sayfa
 
 Küçük şirketlerde (5-15 çalışan) yukarıdaki belge fazla ağırdır. Bir sayfaya sığan basit versiyon:
 
@@ -194,11 +195,11 @@ Küçük şirketlerde (5-15 çalışan) yukarıdaki belge fazla ağırdır. Bir 
 
 ## İlgili Sayfalar
 
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) — Yasal arka plan
-- [Takım ve Admin](/wiki/temeller/takim-ve-admin/) — Plan ve admin paneli
-- [Hukuk Departmanı](/wiki/departmanlar/hukuk/) — Politikanın hukuki yansıması
-- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) — IT açısından uygulama
-- [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) — Çalışan eğitim rehberi
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Çıktı sorumluluğunun felsefi karşılığı
-- [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) — Sohbet saklama tarafı
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Yasal arka plan
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Plan ve admin paneli
+- [Hukuk Departmanı](/wiki/departmanlar/hukuk/): Politikanın hukuki yansıması
+- [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/): IT açısından uygulama
+- [İlk 7 Gün](/wiki/temeller/ilk-7-gun/): Çalışan eğitim rehberi
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Çıktı sorumluluğunun felsefi karşılığı
+- [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/): Sohbet saklama tarafı
 

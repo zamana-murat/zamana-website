@@ -1,17 +1,17 @@
 ---
-title: Scheduled Tasks — Zamanlanmış Otomasyonlar
-description: "Cowork'ün Scheduled Tasks özelliği, tekrar eden görevleri siz başlatmadan çalıştırır. Günlük brifing, haftalık rapor, aylık özet — otomatik."
+title: "Scheduled Tasks: Zamanlanmış Otomasyonlar"
+description: "Cowork'ün Scheduled Tasks özelliği, tekrar eden görevleri siz başlatmadan çalıştırır. Günlük brifing, haftalık rapor, aylık özet, otomatik."
 tags:
   - araclar
   - scheduled-tasks
   - otomasyon
   - cowork
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
 **Cowork, belirli aralıklarla otomatik çalışan görevler oluşturmanıza izin verir.** Bir kere kurarsınız; siz bir daha dokunmazsınız.
 
-Her Pazartesi yazdığınız aynı rapor, her sabah yaptığınız aynı e-posta kontrolü, her ay başında hazırladığınız aynı özet — bunlar Claude'un otonom çalıştırabileceği işlerdir. Tipik olarak en büyük zaman kazancı buradan gelir.
+Her Pazartesi yazdığınız aynı rapor, her sabah yaptığınız aynı e-posta kontrolü, her ay başında hazırladığınız aynı özet: bunlar Claude'un otonom çalıştırabileceği işlerdir. Tipik olarak en büyük zaman kazancı buradan gelir.
 
 ## Ne Zamanlanabilir?
 
@@ -27,9 +27,9 @@ Gerçek kullanım örnekleri:
 
 İki yolu vardır.
 
-### Yol 1: Cowork Konuşmasında `/schedule` Komutu
+### Yol 1: Konuşmada `/schedule` Komutu
 
-Cowork'te herhangi bir sohbette `/schedule` yazın ve ne otomasyon istediğinizi anlatın. Claude sizi şu aşamalardan geçirir:
+Cowork'te herhangi bir konuşmada `/schedule` yazın ve ne otomasyon istediğinizi anlatın. Claude sizi şu aşamalardan geçirir:
 
 1. Görevin ne yapacağını netleştirir (gerekli parametreler, veri kaynağı, çıktı formatı)
 2. Sıklığı belirler (saatlik, günlük, haftalık, aylık veya özel)
@@ -42,29 +42,31 @@ Yaklaşık 5 dakikada bir zamanlanmış görev kurulur. Bir sonraki tetiklenme z
 
 **Settings → Scheduled Tasks** menüsünden mevcut görevleri yönetebilir, yenilerini oluşturabilirsiniz. Daha görsel bir kurulum tercih edenler için.
 
-## Kritik Kısıt — Bilgisayar Uyanık Kalmalı
+## Kritik Kısıt: Yerel Görevlerde Bilgisayar Uyanık Kalmalı
 
-Zamanlanmış görevler **yerel olarak sizin makinenizde çalışır** — Anthropic'in sunucularında değil. Bu şu anlama gelir:
+Yerel çalışan zamanlanmış görevler **sizin makinenizde çalışır**, Anthropic'in sunucularında değil. Bu şu anlama gelir:
 
 > **Bilgisayar kapalıysa veya uyuyorsa, zamanlanmış görev çalışmaz.**
 
 Güvenilir çalışması için:
 
-- **Bilgisayarın güç ayarlarını değiştirin** — "uyuma" süresini çok uzun yapın veya "hiçbir zaman uyuma" seçin
-- **Claude Desktop açık kalmalı** — kapalıysa görev tetiklenmez
+- **Bilgisayarın güç ayarlarını değiştirin**: "uyuma" süresini çok uzun yapın veya "hiçbir zaman uyuma" seçin
+- **Claude Desktop açık kalmalı**: kapalıysa görev tetiklenmez
 - **İnternet bağlantısı kesintisiz olmalı** (connector çağrıları için)
 
-Önemli bir Pazartesi sabahı raporu yazıldıysa ve bilgisayar o gece kapandıysa, Pazartesi rapor orada olmaz. Bu özellik için "her zaman açık" mantığı gerekir.
+Raporu Pazartesi sabahına zamanladıysanız ve bilgisayar o gece kapandıysa, rapor hazır olmaz. Yerel görevler için bilgisayarın "her zaman açık" olması gerekir.
+
+> **6 Ekim 2026'dan itibaren değişiyor:** Pro ve Max'te yeni Cowork görevleri bulutta çalışıyor ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni kurduğunuz görevler için yukarıdaki kısıt kalkıyor. Görevlerinizin hangi modda çalıştığını ayarlardan doğrulayın. Team, Enterprise ve eski görevler için yardım merkezindeki duyuruya bakın.
 
 ## Mobil Entegrasyon
 
-Eğer [Dispatch](/wiki/araclar/dispatch/) kurduysanız, zamanlanmış görev çıktıları Dispatch konuşmanıza da düşer. Yani:
+Zamanlanmış görevler mobil ve web Cowork betasında da var (Pro, Max, Team), yani telefondan hem izleyebilir hem kurabilirsiniz. Daha önce [Dispatch](/wiki/araclar/dispatch/) kurduysanız (yeni kullanıcılara kapalı), zamanlanmış görev çıktıları Dispatch konuşmanıza da düşer. Yani:
 
 - Pazartesi sabahı 08:00'da rapor üretilir
 - Rapor workspace klasörüne kaydedilir
 - Aynı anda telefonunuza özet gelir
 
-Sonuç: masaya oturduğunuzda rapor hazır, telefon açık olsa bile bilgilendirilmişsiniz.
+Sonuç: masaya oturduğunuzda rapor hazırdır, siz de telefonunuzdan haberdar olmuşsunuzdur.
 
 ## Neden Önemli?
 
@@ -101,7 +103,7 @@ Her departmanda en az bir zamanlanmış görev kurulması, programın doğal bir
 
 Dördü de evetse, o iş Scheduled Task'e uygundur. Kurun, bir hafta deneyin, gözden geçirin.
 
-## İleri Kalıp — Kendini Hazırlayan Tekrarlayan Review
+## İleri Kalıp: Kendini Hazırlayan Tekrarlayan Review
 
 Zamanlanmış görevin en güçlü kullanımı tek bir raporu otomatikleştirmek değil, **kendini hazırlayan ve zamanla kendini iyileştiren bir review döngüsü** kurmaktır. Bu kalıp her tekrar eden incelemeye uyar: haftalık satış pipeline'ı, aylık finans kapanışı, pazarlama metrik review'ı, yönetim kurulu özeti.
 
@@ -127,8 +129,9 @@ Skill her hafta biraz daha akıllanır. Bu, otomasyonun veri toplama yükünü �
 
 ## İlgili Sayfalar
 
-- [Cowork Modu](/wiki/araclar/cowork-modu/) — Scheduled Tasks'in yaşadığı yer
-- [Dispatch](/wiki/araclar/dispatch/) — Zamanlanmış çıktıları telefonda almak
-- [Claude Desktop](/wiki/araclar/claude-desktop/) — Görevlerin çalıştığı ortam
-- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) — "Bilgisayar kapalıysa çalışmaz" sınırı
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Scheduled Tasks'in yaşadığı yer
+- [Dispatch](/wiki/araclar/dispatch/): Zamanlanmış çıktıları telefonda almak
+- [Claude Desktop](/wiki/araclar/claude-desktop/): Görevlerin çalıştığı ortam
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): "Bilgisayar kapalıysa çalışmaz" sınırı
+- [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/): Cowork'ün sohbetle birleşmesi ve web ile mobilde yayılımı
 

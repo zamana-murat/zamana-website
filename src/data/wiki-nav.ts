@@ -29,6 +29,7 @@ export const wikiNav: WikiNavSection[] = [
       { label: 'Anthropic ve Tarihçe', slug: 'temeller/anthropic-ve-tarihce' },
       { label: 'Modeller', slug: 'temeller/modeller' },
       { label: 'Planlar', slug: 'temeller/planlar' },
+      { label: 'Kullanım Limitleri', slug: 'temeller/kullanim-limitleri' },
       { label: 'Takım ve Admin', slug: 'temeller/takim-ve-admin' },
       { label: 'Fatura ve KDV', slug: 'temeller/fatura-ve-kdv' },
       { label: 'Prompt ve Token', slug: 'temeller/prompt-ve-token' },
@@ -59,6 +60,7 @@ export const wikiNav: WikiNavSection[] = [
       { label: 'Projects', slug: 'araclar/projects' },
       { label: 'Claude Desktop', slug: 'araclar/claude-desktop' },
       { label: 'Cowork Modu', slug: 'araclar/cowork-modu' },
+      { label: 'Office ve Chrome', slug: 'araclar/office-ve-chrome' },
       { label: 'Connectors', slug: 'araclar/connectors' },
       { label: 'Slack & Teams', slug: 'araclar/slack-teams-entegrasyon' },
       { label: 'Dispatch', slug: 'araclar/dispatch' },
@@ -148,6 +150,7 @@ export const wikiNav: WikiNavSection[] = [
       { label: 'Liderlik', slug: 'departmanlar/liderlik' },
       { label: 'Eğitim ve Akademi', slug: 'departmanlar/egitim-akademi' },
       { label: 'Sağlık', slug: 'departmanlar/saglik' },
+      { label: 'Küçük İşletme (KOBİ)', slug: 'departmanlar/kobi' },
     ],
   },
   {

@@ -1,18 +1,18 @@
 ---
-title: Çıktı Formatı Kontrolü — Tablo, JSON, Markdown
-description: "Claude'un çıktısını istediğiniz formata sokma. Tablo, JSON, madde listesi, markdown — pratik teknikler."
+title: "Çıktı Formatı Kontrolü: Tablo, JSON, Markdown"
+description: "Claude'un çıktısını istediğiniz formata sokma. Tablo, JSON, madde listesi, markdown, pratik teknikler."
 tags:
   - prompting
   - format
   - cikti
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **Aynı içerik üç farklı formatta üç farklı kullanım değeri verir.** Tabloya yapıştırılması gereken veri madde listesi olarak gelirse 5 dakika daha kaybedersiniz. Bu sayfa Claude çıktısını istediğiniz formatta üretmenin pratik tekniklerini anlatır.
 
 ## Neden Format Önemli?
 
-Claude varsayılan olarak akıcı paragraflar üretir. Ama çoğu iş çıktısı için bu en kötü format:
+Claude çoğu zaman akıcı paragraflarla yanıt verir. Ama pek çok iş çıktısı için bu uygun olmayan formattır:
 
 - Bir tabloya geçecek veri → kopyala-yapıştır cehennemi
 - Bir başka yazılıma yapışacak veri → JSON gerekir
@@ -83,7 +83,7 @@ Sadece geçerli JSON döndür, başka yorum/açıklama yok.
 
 **Önemli:** "Sadece JSON, başka açıklama yok" demek kritik. Aksi halde Claude JSON'un başında ve sonunda paragraf ekleyebilir, bu da makine işlemeyi bozar.
 
-JSON şemasını net belirtin — Claude tahmin etmesin.
+JSON şemasını net belirtin, Claude tahmin etmesin.
 
 ## 4. Markdown
 
@@ -124,7 +124,7 @@ Numaralı vs bullet farkı:
 
 ## 6. E-posta Formatı
 
-Bir e-posta üretiyorsanız format ekstra önemli — yapıştırılacak hâlde olmalı:
+Bir e-posta üretiyorsanız format ekstra önemli, yapıştırılacak hâlde olmalı:
 
 ```
 Şu format:
@@ -133,17 +133,17 @@ Subject: [konu, 5-7 kelime]
 
 Merhaba [İsim],
 
-[İlk paragraf — 1-2 cümle]
+[İlk paragraf: 1-2 cümle]
 
-[Orta paragraf — değer / mesaj — en fazla 3 cümle]
+[Orta paragraf: değer / mesaj, en fazla 3 cümle]
 
-[Son paragraf — net sonraki adım]
+[Son paragraf: net sonraki adım]
 
 İyi günler,
 [İsim]
 ```
 
-Bu yapı Claude'a "subject + body" olarak iki ayrı parça döndürür.
+Bu yapı, Claude'un konu satırını ve gövdeyi iki ayrı parça olarak döndürmesini sağlar.
 
 ## 7. Sunum / Slayt İçeriği
 
@@ -166,7 +166,7 @@ Konuşmacı notu: [varsa]
 ...
 ```
 
-[Skills](/wiki/yetenekler/skills/) ile doğrudan .pptx üretebilirsiniz; bu format slayt-by-slayt manuel yapıştırma için.
+[Skills](/wiki/yetenekler/skills/) ile doğrudan .pptx üretebilirsiniz; ücretli planlarda beta olan Claude Slides de sunumu doğrudan oluşturur. Bu format ise slayt slayt elle yapıştırma için.
 
 ## 8. Kısa Cevap (Tek Cümle / Tek Sayı)
 
@@ -204,15 +204,15 @@ Cevabını 4 bölümde ver, her bölümü H2 başlık olarak işaretle:
 [tablo: aksiyon | sorumlu | deadline]
 ```
 
-Bu yapıyla Claude her bölümü ayrı dolaşır, atlama riski azalır.
+Bu yapıyla Claude her bölümü ayrı ele alır, atlama riski azalır.
 
 ## 10. Ne Yapmamalı? Format Çarpışmaları
 
-**Çelişen format isteği:** "Bullet liste ama paragraf gibi yaz" — Claude şaşırır.
+**Çelişen format isteği:** "Bullet liste ama paragraf gibi yaz" derseniz Claude şaşırır.
 
-**Çok detay format:** "Sütun 1 sola yaslı, font Helvetica 12, mavi" — Claude markdown üretir, görsel format kontrolü yok. Görsel format için [Artifacts](/wiki/yetenekler/artifacts/) veya [Skills](/wiki/yetenekler/skills/) kullanın.
+**Fazla görsel detay:** "Sütun 1 sola yaslı, font Helvetica 12, mavi" gibi isteklerde Claude markdown üretir, görsel format kontrolünüz olmaz. Görsel format için [Artifacts](/wiki/yetenekler/artifacts/) veya [Skills](/wiki/yetenekler/skills/) kullanın.
 
-**Birden çok format aynı sohbette:** "Önce tablo ver, sonra JSON ver, sonra paragraf yaz" → çıktı dağılır. Her formatı **ayrı sohbette / ayrı isteğe** ayırın.
+**Birden çok format tek istekte:** "Önce tablo ver, sonra JSON ver, sonra paragraf yaz" derseniz çıktı dağılır. Her formatı **ayrı isteğe** (gerekirse ayrı sohbete) ayırın.
 
 ## 11. Format Doğrulama
 
@@ -259,21 +259,21 @@ Türkçe çıktıda format kuralları biraz farklı:
 
 [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasında detay var. Promptta belirtmek gerekiyorsa belirtin.
 
-## 14. Karşı Örnek — Format Belirtmeyince Olan
+## 14. Karşı Örnek: Format Belirtmeyince Olan
 
 Format belirtmediğinizde Claude bazen kullanışsız çıktılar üretir. Örnek:
 
 ❌ Prompt: *"5 müşteri için satış stratejisi öner."*
 ↓
-Claude: *"Sayın müşterimiz, satış stratejisi konusunda size yardımcı olmaktan memnuniyet duyarız. Birinci olarak..."* — 3 sayfa kaba metin
+Claude: *"Sayın müşterimiz, satış stratejisi konusunda size yardımcı olmaktan memnuniyet duyarız. Birinci olarak..."* (3 sayfa kaba metin)
 
 ✅ Prompt: *"5 müşteri için satış stratejisi öner. Çıktı tablo: Müşteri profili | Strateji | Beklenen sonuç | Süre. Her hücre maks 15 kelime."*
 ↓
 Claude: doğrudan kullanılabilir 5 satırlık tablo
 
-## 15. Sahip Olduğunuz Format Şablonu
+## 15. Kendi Format Şablonlarınız
 
-Her sıkça yaptığınız işin **bir favori format şablonu** olsun. CLAUDE.md'ye ekleyin:
+Sık yaptığınız her işin **bir favori format şablonu** olsun. CLAUDE.md'ye ekleyin:
 
 ```markdown
 ## Çıktı Format Tercihlerim
@@ -287,12 +287,12 @@ Her sıkça yaptığınız işin **bir favori format şablonu** olsun. CLAUDE.md
 
 ## İlgili Sayfalar
 
-- [Temel İlkeler](/wiki/prompting/temel-ilkeler/) — Genel prompt mantığı
-- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle format öğretme
-- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/) — Format dahil hazır şablonlar
-- [İleri Seviye](/wiki/prompting/ileri-seviye/) — Karmaşık format teknikleri
-- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Format hataları
-- [Artifacts](/wiki/yetenekler/artifacts/) — Görsel format çıktıları
-- [Skills](/wiki/yetenekler/skills/) — Word/Excel/PPT dosya üretme
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — CLAUDE.md format kuralları
+- [Temel İlkeler](/wiki/prompting/temel-ilkeler/): Genel prompt mantığı
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle format öğretme
+- [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/): Format dahil hazır şablonlar
+- [İleri Seviye](/wiki/prompting/ileri-seviye/): Karmaşık format teknikleri
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Format hataları
+- [Artifacts](/wiki/yetenekler/artifacts/): Görsel format çıktıları
+- [Skills](/wiki/yetenekler/skills/): Word/Excel/PPT dosya üretme
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md format kuralları
 

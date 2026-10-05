@@ -1,23 +1,25 @@
 ---
-title: Projects (claude.ai) — Kalıcı Çalışma Alanları
+title: "Projects (claude.ai): Kalıcı Çalışma Alanları"
 description: Claude.ai içindeki Projects özelliği, her sohbette tekrar eden bağlamı kalıcı hale getirir. Bilgi tabanı, özel talimatlar ve ekip paylaşımı.
 tags:
   - araclar
   - projects
   - claude-chat
   - bilgi-tabani
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Projects, Claude Chat içinde kalıcı ve organize çalışma alanları oluşturan özelliktir.** Her sohbetin sıfırdan başladığı normal bir konuşmanın aksine, bir Project Claude'a her seferinde devam eden bağlam sağlar — **bilgi tabanı** ve **özel talimatlar** yoluyla.
+**Projects, Claude Chat içinde kalıcı ve organize çalışma alanları oluşturan özelliktir.** Her sohbetin sıfırdan başladığı normal bir konuşmanın aksine, bir Project Claude'a her seferinde devam eden bağlam sağlar, **bilgi tabanı** ve **özel talimatlar** yoluyla.
 
 Tek cümlede: bir Project, **"aynı bağlamda konuşmak istediğim her sohbetin o bağlamda başlaması"** demektir.
+
+> **Yeni yapı (beta, 17 Eylül 2026):** Anthropic Projects'i baştan tasarladı. Yeni projelerde birden fazla konuşma paralel çalışıyor, bir koordinatör işi yönetiyor ve ortak hafıza kullanılıyor. Erişim kademeli açılıyor; mevcut Pro ve Max projeleri olduğu gibi çalışmaya devam ediyor. Bu sayfa mevcut (klasör mantığındaki) yapıyı anlatır. Ayrıntı: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
 
 ## Bir Project Nelerden Oluşur?
 
 ### Bilgi Tabanı (Knowledge Base)
 
-O projeye dosya, belge ve metin yüklersiniz — Claude bu içeriği projedeki **her sohbette** referans alır. Bir kere yüklersiniz, Claude hatırlar.
+O projeye dosya, belge ve metin yüklersiniz, Claude bu içeriği projedeki **her sohbette** referans alır. Bir kere yüklersiniz, Claude hatırlar.
 
 Faydalı kullanımlar:
 
@@ -28,11 +30,11 @@ Faydalı kullanımlar:
 - Düzenleyici çerçeveler (KVKK, TTK metinleri)
 - Kişisel referans notları
 
-Ücretli planlarda bilgi tabanı **RAG (Retrieval Augmented Generation)** kullanır — yani büyük hacimli içeriği verimli şekilde arar ve ilgili kısımları Claude'a getirir. Yüzlerce sayfa belge yükleyebilirsiniz.
+Ücretli planlarda bilgi tabanı **RAG (Retrieval Augmented Generation)** kullanır, yani büyük hacimli içeriği verimli şekilde arar ve ilgili kısımları Claude'a getirir. Yüzlerce sayfa belge yükleyebilirsiniz.
 
 ### Özel Talimatlar (Custom Instructions)
 
-Proje düzeyindeki talimatlar Claude'a bu projede nasıl davranması gerektiğini söyler — ton, rol, kısıtlar, "her zaman yap" ve "asla yapma" kuralları. Projedeki her yeni sohbet bu talimatlarla başlar. Bağlamı yeniden açıklamazsınız; zaten oradadır.
+Proje düzeyindeki talimatlar Claude'a bu projede nasıl davranması gerektiğini söyler: ton, rol, kısıtlar, "her zaman yap" ve "asla yapma" kuralları. Projedeki her yeni sohbet bu talimatlarla başlar. Bağlamı yeniden açıklamazsınız; zaten oradadır.
 
 ### Ayrı Konuşma Geçmişi
 
@@ -42,8 +44,8 @@ Her projenin kendi izole sohbet geçmişi vardır. İş konuya, müşteriye veya
 
 Projects, meslektaşlarınızla belirli izin seviyelerinde paylaşılabilir:
 
-- **"Kullanabilir"** (Can use) — sadece okur ve sohbet eder
-- **"Düzenleyebilir"** (Can edit) — içerik ekler/değiştirir, erişim yönetir
+- **"Kullanabilir"** (Can use): sadece okur ve sohbet eder
+- **"Düzenleyebilir"** (Can edit): içerik ekler/değiştirir, erişim yönetir
 
 Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **hafif bir ekip bilgi tabanına** dönüştürür.
 
@@ -64,8 +66,8 @@ Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **ha
 
 ### Hangisini Ne Zaman?
 
-- **Projects** — tarayıcı merkezli, paylaşım odaklı, çok sayıda ekip üyesinin aynı bağlama erişmesi gerektiğinde
-- **CLAUDE.md** — tek çalışanın masaüstü merkezli, yoğun Cowork kullanımı için
+- **Projects**: tarayıcı merkezli, paylaşım odaklı, çok sayıda ekip üyesinin aynı bağlama erişmesi gerektiğinde
+- **CLAUDE.md**: tek çalışanın masaüstü merkezli, yoğun Cowork kullanımı için
 
 İkisi birlikte de kullanılır. Bir çalışan masaüstünde Cowork + CLAUDE.md ile çalışırken, ekibin genelinin eriştiği bilgileri Projects'te tutabilir.
 
@@ -121,8 +123,8 @@ Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **ha
 | Plan | Projects erişimi |
 |---|---|
 | **Free** | 5 projeye kadar; standart bilgi tabanı boyutu |
-| **Pro / Max** | Sınırsız proje; RAG zenginleştirmeli bilgi tabanı (10× kapasite) |
-| **Team** | Sınırsız + RAG + **paylaşılan projeler, izin kontrolleri ile** |
+| **Pro / Max** | Proje sayısı için yayımlanmış üst sınır yok; bilgi tabanı bağlam sınırına yaklaşınca Claude RAG moduna geçer ve kapasiteyi 10 kata kadar artırır |
+| **Team** | Pro / Max'teki RAG + **paylaşılan projeler, izin kontrolleri ile** |
 | **Enterprise** | Team özellikleri + kurum çapında görünürlük, SSO, yönetici kontrolleri |
 
 Yeni kullanıcılar genelde **Max 5x ile ilk ay** başlar; Projects'in tam özellikleri dahil hepsine erişim olur. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
@@ -131,16 +133,16 @@ Yeni kullanıcılar genelde **Max 5x ile ilk ay** başlar; Projects'in tam özel
 
 1. [claude.ai](https://claude.ai) → sol menü → **Projects** → **+ Create project**
 2. Projeye anlamlı bir ad verin ("İhracat Departmanı", "Q2 Pazarlama" gibi)
-3. **Custom instructions** alanına nasıl davranmasını istediğinizi yazın — kim olduğunuz, bağlam, ton, kurallar
-4. **Knowledge base**'e ilgili dosyaları yükleyin — şirket belgeleri, kılavuzlar, örnekler
-5. Projenin içinde yeni bir sohbet başlatın — Claude artık tüm bağlamla konuşur
+3. **Custom instructions** alanına nasıl davranmasını istediğinizi yazın, kim olduğunuz, bağlam, ton, kurallar
+4. **Knowledge base**'e ilgili dosyaları yükleyin: şirket belgeleri, kılavuzlar, örnekler
+5. Projenin içinde yeni bir sohbet başlatın: Claude artık tüm bağlamla konuşur
 
 İlk denemede 3-5 dosya yükleyin, yeter. Zamanla ekleyebilirsiniz.
 
 ## İlgili Sayfalar
 
-- [Claude Chat](/wiki/araclar/claude-chat/) — Projects'in içinde yaşadığı arayüz
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Cowork'teki kalıcı bağlam dosyası
-- [Claude Desktop](/wiki/araclar/claude-desktop/) — Cowork ve CLAUDE.md için masaüstü uygulaması
-- [Araçlar Ana Sayfası](/wiki/araclar/) — Tüm Claude araçlarının karar tablosu
+- [Claude Chat](/wiki/araclar/claude-chat/): Projects'in içinde yaşadığı arayüz
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Cowork'teki kalıcı bağlam dosyası
+- [Claude Desktop](/wiki/araclar/claude-desktop/): Cowork ve CLAUDE.md için masaüstü uygulaması
+- [Araçlar Ana Sayfası](/wiki/araclar/): Tüm Claude araçlarının karar tablosu
 

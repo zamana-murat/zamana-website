@@ -1,15 +1,13 @@
 ---
-title: "Temeller — Claude'u Anlamak İçin Başlangıç"
+title: "Temeller: Claude'u Anlamak İçin Başlangıç"
 description: "Claude'un ne olduğu, hangi modelin ne zaman kullanıldığı, fiyat planları, sınırları ve Türkiye'de KVKK kapsamında nasıl uyumlu kullanıldığı."
 tags:
   - temeller
   - giris
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken temel kavramlar. Bu bölüm, bir iş profesyoneline Claude'u sağlıklı biçimde kullanmaya başlatacak altı sorunun cevabını verir.
-
-Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak sorduğu sorulardır. Sırasıyla okursanız bir saatten kısa sürede temel kavrayışa ulaşırsınız.
+Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken temel kavramlar. İlk altı kart, Claude'la çalışmaya başlayan bir profesyonelin doğal olarak sorduğu altı sorunun cevabını verir; sonraki kartlar kurulum, ilk hafta ve itirazlar gibi pratik konulardır. İlk altı kartı sırasıyla okursanız bir saatten kısa sürede temel kavrayışa ulaşırsınız.
 
 ## Başlangıç Yolu
 
@@ -27,7 +25,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     ---
 
-    Haiku, Sonnet, Opus — üç model arasındaki fark ve iş kullanımı için net tavsiye.
+    Fable, Opus, Sonnet ve Haiku: dört model arasındaki fark ve iş kullanımı için net tavsiye.
 
     [→ Claude Modelleri](/wiki/temeller/modeller/)
 
@@ -35,7 +33,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     ---
 
-    Free, Pro, Max, Team, Enterprise — fiyatlar, özellikler ve şirketler için önerilen plan.
+    Free, Pro, Max, Team ve Enterprise: fiyatlar, özellikler ve şirketler için önerilen plan.
 
     [→ Claude Planları](/wiki/temeller/planlar/)
 
@@ -43,7 +41,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     ---
 
-    İki büyük yapay zeka arasında dürüst bir karşılaştırma — iş kullanımı perspektifinden.
+    İki büyük yapay zeka arasında dürüst bir karşılaştırma, iş kullanımı perspektifinden.
 
     [→ Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/)
 
@@ -51,7 +49,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     ---
 
-    Halüsinasyon, matematik hataları, bilgi kesim tarihi — ne zaman Claude'a güvenmeyeceğinizi bilin.
+    Halüsinasyon, matematik hataları ve bilgi kesim tarihi: ne zaman Claude'a güvenmeyeceğinizi bilin.
 
     [→ Claude'un Sınırları](/wiki/temeller/sinirlamalar/)
 
@@ -75,7 +73,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     ---
 
-    Sıfırdan başlayan için adım adım — claude.ai üyelik, Max 5x aktivasyonu, Claude Desktop kurulumu, donanım kontrolü.
+    Sıfırdan başlayanlar için adım adım rehber: claude.ai üyeliği, Max 5x aktivasyonu, Claude Desktop kurulumu, donanım kontrolü.
 
     [→ İlk Kurulum](/wiki/temeller/ilk-kurulum/)
 
@@ -83,7 +81,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     ---
 
-    Kurulum tamam — şimdi gün gün checklist, ilk iş akışları, kaçınılması gereken hatalar.
+    Kurulum tamam, şimdi gün gün checklist: ilk iş akışları ve kaçınılması gereken hatalar.
 
     [→ İlk 7 Gün](/wiki/temeller/ilk-7-gun/)
 
@@ -91,7 +89,7 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
     ---
 
-    Resmi yazışma, teknik, hukuki, yaratıcı — dört registerda Claude'un Türkçe çıktısı ve güçlü/zayıf yönleri.
+    Resmi yazışma, teknik, hukuki ve yaratıcı: dört register'da Claude'un Türkçe çıktısı ve güçlü/zayıf yönleri.
 
     [→ Türkçe Performansı](/wiki/temeller/turkce-performansi/)
 
@@ -109,21 +107,30 @@ Bu altı soru Claude'la çalışmaya başlayan bir profesyonelin doğal olarak s
 
 Bu bölümü okuduktan sonra aklınızda kalması gereken altı duruş:
 
-1. **Claude bir arama motoru değildir** — düşünme ortağıdır. Ona göre konuşun.
-2. **Sonnet varsayılandır.** Her zaman. İstisnai durumlar dışında model seçimiyle uğraşmayın.
-3. **Yeni Claude kullanıcısı için ilk ay Max 5x önerilir** — agresif keşif ritminde Pro ($20) limiti çabuk dolar, yanlış ilk izlenim yaratır. Ay 2+ hafif kullanım durumunda Pro'ya inilebilir. Free iş için uygun değildir.
+1. **Claude bir arama motoru değildir**: düşünme ortağıdır. Ona göre konuşun.
+2. **Günlük iş için Sonnet'le başlayın.** İstisnai durumlar dışında model seçimiyle uğraşmayın.
+3. **Yeni Claude kullanıcısı için ilk ay Max 5x önerilir**: agresif keşif ritminde Pro ($20) limiti çabuk dolar, yanlış ilk izlenim yaratır. Ay 2+ hafif kullanım durumunda Pro'ya inilebilir. Free iş için uygun değildir.
 4. **Claude yanılmaz değildir.** Her kritik çıktıyı doğrulayın. İmza testini uygulayın.
 5. **Kişisel veri ve KVKK konuları plan seçimini belirler.** Team veya Enterprise + DPA, bireysel Pro'dan farklıdır.
 6. **Claude yazar. Siz karar verirsiniz. Sorumluluk asla transfer olmaz.**
 
 Bu altı cümle bu bölümün özetidir. Sayfaları okumadan önce buraya dönebilirsiniz; okuduktan sonra da.
 
+## Bölümün Diğer Sayfaları
+
+- [**Anthropic ve Tarihçe**](/wiki/temeller/anthropic-ve-tarihce/): Claude'u yapan şirket, model tarihçesi
+- [**Claude vs Gemini**](/wiki/temeller/claude-vs-gemini/) ve [**Claude vs Copilot**](/wiki/temeller/claude-vs-copilot/): Google ve Microsoft karşılaştırmaları
+- [**Kullanım Limitleri**](/wiki/temeller/kullanim-limitleri/): Kotanın nasıl işlediği
+- [**Takım ve Admin**](/wiki/temeller/takim-ve-admin/): Team ve Enterprise yönetimi
+- [**Fatura ve KDV**](/wiki/temeller/fatura-ve-kdv/): Türkiye'de muhasebeleştirme
+- [**Şirket İçi Politika**](/wiki/temeller/sirket-ici-politika/) ve [**Ölçüm Metrikleri**](/wiki/temeller/olcum-metrikleri/): Kurallar ve ROI ölçümü
+
 ## Nereye Gitmeli?
 
 Temeller'i okuduysanız şu bölümler mantıklı devamdır:
 
-- [**Araçlar**](/wiki/araclar/) — Claude'u nerede kullanırsınız (Desktop, Cowork, Claude.ai)
-- [**CLAUDE.md**](/wiki/claude-md/) — Claude'u kişiselleştiren kalıcı hafıza dosyası
-- [**Prompting**](/wiki/prompting/) — Claude'la nasıl konuşulur, 4D Çerçevesi bu bölümdedir
-- [**Önerilen Okuma Sırası**](/wiki/okuma-sirasi/) — Tüm wiki için baştan sona önerilen okuma yolu
+- [**Araçlar**](/wiki/araclar/): Claude'u nerede kullanırsınız (Desktop, Cowork, Claude.ai)
+- [**CLAUDE.md**](/wiki/claude-md/): Claude'u kişiselleştiren kalıcı hafıza dosyası
+- [**Prompting**](/wiki/prompting/): Claude'la nasıl konuşulur, 4D Çerçevesi bu bölümdedir
+- [**Önerilen Okuma Sırası**](/wiki/okuma-sirasi/): Tüm wiki için baştan sona önerilen okuma yolu
 

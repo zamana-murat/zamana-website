@@ -1,85 +1,85 @@
 ---
-title: Liderlik ve Yönetim — Claude Uygulamaları
-description: "Üst yönetim için Claude — stratejik düşünme ortağı, bilgi sentezi, yönetim kurulu iletişimi, M&A due diligence. \"100 sayfayı 10 dakikada oku\" anı."
+title: "Liderlik ve Yönetim: Claude Uygulamaları"
+description: "Üst yönetim için Claude: stratejik düşünme ortağı, bilgi sentezi, yönetim kurulu iletişimi, M&A due diligence. \"100 sayfayı 10 dakikada oku\" anı."
 tags:
   - departmanlar
   - liderlik
   - yonetim
   - strateji
   - ma
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-Üst yönetim için Claude en büyük zaman unlock'unu sağlar. Sebep basit: **yöneticinin günü büyük ölçüde bilgi tüketmek, karar vermek ve iletişim kurmaktan oluşur** — bu üçü Claude'un en güçlü olduğu yerlerdir.
+Üst yönetim için Claude'un sağladığı zaman kazancı en belirgin olanlardandır. Sebep basit: **yöneticinin günü büyük ölçüde bilgi tüketmek, karar vermek ve iletişim kurmaktan oluşur**; bu üçü Claude'un en güçlü olduğu alanlardır.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
-- Stratejik düşünme izolasyonda, bir test ortağı olmadan yapılıyor
+- Stratejik düşünme çoğu zaman yalnız başına, bir test ortağı olmadan yapılıyor
 - Yönetim iletişimi orantısız zaman alıyor
-- Performans konuşmaları yapılandırılmış hazırlıktan fayda görüyor
-- Yönetim kurulu ve yatırımcı iletişimi baskı altında yüksek kaliteli yazım gerektiriyor
+- Performans konuşmaları yapılandırılmış bir hazırlıktan fayda görüyor
+- Yönetim kurulu ve yatırımcı iletişimi, baskı altında yüksek kaliteli yazım gerektiriyor
 - Bilgi fazlalığı sentezi zorlaştırıyor
-- Yönetim kurulu öncesi 80 sayfalık raporu okumak çoğu yöneticinin iyi çözemediği bir zaman problemi
+- Yönetim kurulundan önce 80 sayfalık bir raporu okumak, çoğu yöneticinin iyi çözemediği bir zaman problemi
 
-## Bölüm 1 — Stratejik Düşünme ve Karar Alma
+## Bölüm 1: Stratejik Düşünme ve Karar Alma
 
 ### Claude Düşünme Ortağı Olarak
 
-Kararları test etme, kör noktaları belirleme, varsayımları stres testi — başarılı liderlerin nadiren sahip olduğu şey **cevaba politik yatırımı olmayan dürüst ve bilgili bir muhatap**.
+Kararları test etmek, kör noktaları belirlemek, varsayımları stres testine sokmak. Başarılı liderlerin nadiren sahip olduğu şey, **cevaba politik bir yatırımı olmayan, dürüst ve bilgili bir muhataptır**. Claude bu role yaklaşabilir, ama onaylama eğilimine (sycophancy) karşı dikkatli olun: ondan açıkça itiraz isteyin.
 
 ### Senaryo Planlama
 
-Stratejik durum girer → birden fazla sonuç senaryosu çıkar, sürücüleri, erken göstergeleri ve gerekli yanıtları haritalanmış.
+Stratejik durumu girersiniz; sürücüleri, erken göstergeleri ve gerekli yanıtları haritalanmış birden fazla sonuç senaryosu çıkar.
 
 ### Karar Memoları
 
-Seçenekler analiz edilir, riskler adlandırılır, öneri yapılır — lider Claude'la düşünür, ardından çıktıyı ekip için tek sayfalık net bir belgeye damıtır.
+Seçenekler analiz edilir, riskler adlandırılır, öneri yapılır. Lider Claude ile düşünür, ardından çıktıyı ekip için tek sayfalık net bir belgeye damıtır.
 
 ### Problem Çerçevelemesi
 
-Bir problemi çözmeye çalışmadan önce **açık bir biçimde ifade etmek**. Liderlerin çoğu problemi tanımlamadan çözüm arar. Claude bu aceleyi yavaşlatır.
+Bir problemi çözmeye çalışmadan önce **açık biçimde ifade etmek**. Liderlerin çoğu problemi tanımlamadan çözüm arar. Claude bu aceleyi yavaşlatır.
 
 ### "100 Sayfayı 10 Dakikada Oku"
 
-Bir üst yönetici için **zamanın en büyük açılışı**:
+Bir üst yönetici için **zaman kazancının en büyük kapısı**:
 
-Uzun bir raporu, board pack'i veya araştırma belgesini Claude'a vermek ve **yönetici özeti + önemli 5 şey + ima edilen 3 karar** istemek.
+Uzun bir raporu, board pack'i veya araştırma belgesini Claude'a verip **yönetici özeti, en önemli 5 şey ve ima edilen 3 karar** istemek.
 
-Bu tek yetenek bilgilenmenin bütün şeklini değiştirir ve genellikle oturumun en büyük zaman açılmasıdır.
+Bu tek yetenek bilgilenme biçimini değiştirir ve çoğu zaman oturumun en büyük zaman kazancı olur. Özetteki kritik bir rakama güvenmeden önce kaynak sayfaya bakın.
 
-## Bölüm 2 — Yönetim İletişimi
+## Bölüm 2: Yönetim İletişimi
 
-**Ekip iletişimi.** Duyurular, performans mesajları, kültür iletişimi — **net ve insani**. Bir liderin demek istediği ile ekibe ulaşan arasındaki boşluk neredeyse her zaman bir yazım problemidir.
+**Ekip iletişimi.** Duyurular, performans mesajları, kültür iletişimi: **net ve insani**. Bir liderin demek istediği ile ekibe ulaşan arasındaki boşluk çoğu zaman bir yazım problemidir.
 
-**Zor konuşma hazırlığı.** Söylenmesi gerekeni, hangi sırada, olası duygusal yanıtları öngörerek yapılandırmak — bir senaryo değil, **bir çerçeve**.
+**Zor konuşma hazırlığı.** Söylenmesi gerekeni hangi sırayla söyleyeceğinizi, olası duygusal yanıtları öngörerek yapılandırmak. Bu bir senaryo değil, **bir çerçevedir**.
 
-**Yönetim kurulu ve yatırımcı güncellemeleri.** Kesinlik, güven ve uygun seçicilik gerektiren yüksek riskli yazı — ne dahil, ne atla, kötü haber nasıl saklama izlenimi vermeden çerçevelenir.
+**Yönetim kurulu ve yatırımcı güncellemeleri.** Kesinlik, güven ve uygun bir seçicilik gerektiren, yüksek riskli yazı: neyi dahil edeceğiniz, neyi dışarıda bırakacağınız, kötü haberi saklıyormuş izlenimi vermeden nasıl çerçeveleyeceğiniz.
 
-**Yönetim raporları.** Departman performansını yönetici anlatısına sentezlemek — 5 departmandaki sayılardan hikaye çıkarıp tutarlı kılmak.
+**Yönetim raporları.** Departman performansını yönetici anlatısında sentezlemek; 5 departmanın sayılarından tutarlı bir hikâye çıkarmak.
 
-**Yeniden yapılanma ve değişim iletişimi.** Önemli bir şey değişirken iletişim, kararın kendisi kadar önemlidir — Claude söylenti ve karışıklığı en aza indiren duyurular taslaklar.
+**Yeniden yapılanma ve değişim iletişimi.** Önemli bir şey değişirken iletişim, kararın kendisi kadar önemlidir. Claude, söylenti ve karışıklığı en aza indiren duyuru taslakları hazırlar.
 
-## Bölüm 3 — Bilgi Sentezi
+## Bölüm 3: Bilgi Sentezi
 
-**Uzun belgeleri, raporları, araştırmaları özetleme.** Lider daha hızlı, daha iyi bilgilenmiş karar verici olur — daha fazla çalışarak değil, **Claude okumayı halletmesi ve önemli olanı yüzeye çıkarmasıyla**.
+**Uzun belgeleri, raporları ve araştırmaları özetleme.** Lider daha fazla çalışarak değil, **okumayı Claude'a bırakıp önemli olanı yüzeye çıkararak** daha hızlı ve daha iyi bilgilenmiş bir karar verici olur.
 
-**Pazar ve sektör istihbaratı.** Son haberler, rakip hareketleri, düzenleyici güncellemeler → liderin sektöründe yapılandırılmış durum analizi.
+**Pazar ve sektör istihbaratı.** Son haberler, rakip hareketleri ve düzenleyici güncellemelerden, liderin sektörü için yapılandırılmış bir durum analizi.
 
-**Toplantı ve görüşme hazırlığı.** Önemli etkileşimler öncesi hızlı brifing üretimi — kiminle buluşuyor, ne bilmesi gerekir, hangi sonucu istiyor, neyi söylememeli.
+**Toplantı ve görüşme hazırlığı.** Önemli görüşmelerden önce hızlı brifing: kiminle buluşuyor, ne bilmesi gerekir, hangi sonucu istiyor, neyi söylememeli.
 
-**Öncelik belirleme.** Rakip öncelikler ve kaynak tahsisi hakkında düşünmek — her liderin yüzleştiği "yapılacak çok şey, yeterli insan yok" problemi için düşünme ortağı.
+**Öncelik belirleme.** Rakip öncelikler ve kaynak tahsisi üzerine düşünmek. Her liderin yüzleştiği "yapılacak çok şey var, yeterli insan yok" problemi için bir düşünme ortağı.
 
 ### Paydaş Haritalaması Dokümantasyonu
 
-Bir karar, proje veya sonuç üzerinde etkisi olan tüm tarafları belirlemek — çıkarları, olası pozisyonları, etki manivelaları ve her biri için angajman stratejisi. Claude bunu yaşayan bir çalışma belgesi olarak yapılandırır.
+Bir karar, proje veya sonuç üzerinde etkisi olan tüm tarafları belirlemek: çıkarları, olası pozisyonları, etki kaldıraçları ve her biri için angajman stratejisi. Claude bunu yaşayan bir çalışma belgesi olarak yapılandırır.
 
 ### M&A, Ortaklık ve Yatırım Due Diligence Anlatısı
 
-Bir şirket önemli bir işlemi değerlendirdiğinde lider büyük miktarda bilgiyi net bir pozisyon belgesine sentezlemek zorunda — **bildiğimiz, hala öğrenmemiz gereken, ön görüşümüz, riskler**.
+Bir şirket önemli bir işlemi değerlendirirken lider, büyük miktardaki bilgiyi net bir pozisyon belgesine sentezlemek zorundadır: **bildiklerimiz, hâlâ öğrenmemiz gerekenler, ön görüşümüz, riskler**.
 
 Claude düşünmeyi yapılandırır ve ön değerlendirmeyi yazar.
 
-> **Nihai due diligence her zaman kalifiye danışmanlar tarafından yapılır** — Claude düşünme çerçevesini ve başlangıç sentezini halleder.
+> **Nihai due diligence her zaman kalifiye danışmanlar tarafından yapılır.** Claude düşünme çerçevesini ve başlangıç sentezini hazırlar.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -100,43 +100,43 @@ Claude düşünmeyi yapılandırır ve ön değerlendirmeyi yazar.
 ## Kullanılacak Skills ve Connector'lar
 
 **Skills:**
-- `pdf` — uzun raporlar ve board pack'ler
-- `docx` — memolar ve iletişim belgeleri
-- `pptx` — yönetim kurulu sunumları
-- `memory` skill — organizasyonel bağlam (org chart, kilit paydaşlar, stratejik öncelikler)
-- Web search — pazar istihbaratı
+- `pdf`: uzun raporlar ve board pack'ler
+- `docx`: memolar ve iletişim belgeleri
+- `pptx`: yönetim kurulu sunumları
+- [Hafıza (Memory)](/wiki/yetenekler/memory/): organizasyonel bağlam (org chart, kilit paydaşlar, stratejik öncelikler)
+- Web search: pazar istihbaratı
 - Tüm ilgili departman skill'leri (denetim sorumluluklarına göre)
 
 **Connector'lar:**
-1. **Microsoft 365 / Google Workspace** — belgeler
-2. **Outlook / Gmail** — yüksek düzey iletişim
-3. **Slack / Teams** — ekip iletişimi
-4. **DocuSign** — yönetim kurulu kararları
+1. **Microsoft 365 / Google Workspace**: belgeler
+2. **Outlook / Gmail**: yüksek düzey iletişim
+3. **Slack / Teams**: ekip iletişimi
+4. **DocuSign**: yönetim kurulu kararları
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Karar öncesi yapılandırılmış düşünme süreci** — Claude ile stres testi → tek sayfalık memo
-- **Haftalık yönetim iletişim seansı** — Pazar akşamı 30 dakika, haftanın iletişimlerini toplu hazırlık
-- **Yönetim kurulu hazırlık döngüsü** — çeyreklik paket + toplantı sonrası tutanaklar
-- **Büyük işlem değerlendirme süreci** — due diligence düşünme çerçevesi
+- **Karar öncesi yapılandırılmış düşünme süreci**: Claude ile stres testi → tek sayfalık memo
+- **Haftalık yönetim iletişim seansı**: Pazar akşamı 30 dakika, haftanın iletişimlerini toplu hazırlık
+- **Yönetim kurulu hazırlık döngüsü**: çeyreklik paket + toplantı sonrası tutanaklar
+- **Büyük işlem değerlendirme süreci**: due diligence düşünme çerçevesi
 
-## Gerçek Örnek — "100 Sayfa 10 Dakikada"
+## Gerçek Örnek: "100 Sayfa 10 Dakikada"
 
 Yönetim kurulu toplantısı Perşembe. Ön paket 4 PDF, toplam 147 sayfa. Hakan Bey'in zamanı yok.
 
 **Adım 1:** Asistanı 4 PDF'i Claude'a verir:
-> *"Bu 4 belgeyi oku ve Hakan Bey için tek sayfalık yönetim kurulu brifingi hazırla. Format: 3 cümlelik özet, en önemli 5 olgu, oturum sırasında karar verilmesi gereken 3 nokta, olası zorlu 5 soru + cevap önerisi. Hakan Bey'in tonuna uygun: kısa, net, eylem odaklı."*
+> *"Bu 4 belgeyi oku ve Hakan Bey için tek sayfalık yönetim kurulu brifingi hazırla. Format: 3 cümlelik özet, en önemli 5 olgu, oturum sırasında karar verilmesi gereken 3 nokta, olası zorlu 5 soru ve cevap önerisi. Hakan Bey'in tonuna uygun: kısa, net, eylem odaklı."*
 
-**Adım 2:** Claude 3 dakikada üretir. Asistanı gözden geçirir.
+**Adım 2:** Claude birkaç dakikada üretir. Asistanı gözden geçirir ve kritik rakamları kaynak sayfalardan kontrol eder.
 
-**Adım 3:** Hakan Bey brifingi 10 dakikada okur. Toplantıya hazır girer.
+**Adım 3:** Hakan Bey brifingi 10 dakikada okur ve toplantıya hazır girer.
 
-Toplam süre: 15 dakika. Alternatif: Hakan Bey 147 sayfayı okumaya çalışır (3-4 saat), yapar mı yapmaz mı belli değil.
+Toplam süre: yaklaşık 15 dakika (örnek senaryo). Alternatif: Hakan Bey 147 sayfayı okumaya çalışır (3-4 saat) ve bunu gerçekten yapıp yapmayacağı belli değildir.
 
 ## İlgili Sayfalar
 
-- [Agents ve Subagents](/wiki/yetenekler/agents-subagents/) — Karmaşık analiz görevlerinde
-- [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Uzun belgeleri özetleme
-- [İdari İşler](/wiki/departmanlar/idari-isler/) — Yönetici asistanının Claude kullanımı
-- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) — Düşünme ortağı Description boyutu
+- [Agents ve Subagents](/wiki/yetenekler/agents-subagents/): Karmaşık analiz görevlerinde
+- [Context ve Compaction](/wiki/yetenekler/context-compaction/): Uzun belgeleri özetleme
+- [İdari İşler](/wiki/departmanlar/idari-isler/): Yönetici asistanının Claude kullanımı
+- [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Düşünme ortağı Description boyutu
 

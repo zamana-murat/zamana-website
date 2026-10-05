@@ -2,26 +2,29 @@
 
 > Türkiye'nin kurumsal Claude (Anthropic) eğitim ve danışmanlık programı. Şirketlere ve bireylere Claude'u iş süreçlerinde etkin kullanmayı öğretir. Kurucu: Murat Özsaygılı. Tüm içerik Türkçe.
 
-Zamana, API veya yazılım geliştirme değil, iş odaklı Claude kullanımını öğretir. İki program sunar: 3 haftalık Bireysel Program ve 3 aylık Kurumsal Retainer. Ayrıca herkese açık, ücretsiz bir Türkçe Claude wiki'si yayınlar.
+Zamana, API veya yazılım geliştirme değil, iş odaklı Claude kullanımını öğretir. Üç program sunar: yöneticiler için 3 saatlik Yönetici AI Hazırlık, 3 haftalık Bireysel Program ve en az 3 aylık Kurumsal Retainer (6 çalışan, aylık ödeme). Ayrıca herkese açık, ücretsiz bir Türkçe Claude wiki'si yayınlar.
 
 ## Programlar
 - [Programlar](https://zamana.com.tr/programlar/): Tüm eğitim programlarına genel bakış
 - [Bireysel Program](https://zamana.com.tr/programlar/bireysel/): 3 hafta birebir, tek kişi
-- [Kurumsal Program](https://zamana.com.tr/programlar/kurumsal/): 3 ay, 6 çalışan retainer
-- [CEO Brifing](https://zamana.com.tr/programlar/ceo-brifing/): Yöneticiler için kısa oturum
+- [Kurumsal Program](https://zamana.com.tr/programlar/kurumsal/): 6 çalışan, aylık ödeme, minimum 3 ay
+- [Yönetici AI Hazırlık](https://zamana.com.tr/programlar/ceo-brifing/): Yöneticiler için kısa oturum
 - [Program Karşılaştırması](https://zamana.com.tr/programlar/karsilastirma/): Üç programın karşılaştırması
 
 ## Wiki (Türkçe Claude bilgi tabanı)
 - [Wiki Ana Sayfa](https://zamana.com.tr/wiki/): Türkçe Claude wiki girişi
-- [Temeller](https://zamana.com.tr/wiki/temeller/): Claude nedir, planlar, ilk kurulum, gizlilik ve KVKK
-- [Araçlar](https://zamana.com.tr/wiki/araclar/): Cowork, Projects, dispatch, scheduled tasks
+- [Temeller](https://zamana.com.tr/wiki/temeller/): Claude nedir, planlar, modeller, kullanım limitleri, ilk kurulum, gizlilik ve KVKK
+- [Araçlar](https://zamana.com.tr/wiki/araclar/): Cowork, Projects, dispatch, scheduled tasks, connectors, Office ve Chrome entegrasyonları
 - [Prompting](https://zamana.com.tr/wiki/prompting/): Türkçe prompt teknikleri ve 4D çerçevesi
 - [CLAUDE.md](https://zamana.com.tr/wiki/claude-md/): Proje talimat dosyası rehberi
-- [Yetenekler](https://zamana.com.tr/wiki/yetenekler/): Skills, artifacts, vision, code execution
+- [Yetenekler](https://zamana.com.tr/wiki/yetenekler/): Skills, artifacts, Claude Design, computer use, vision, code execution
 - [MCP](https://zamana.com.tr/wiki/mcp/): Model Context Protocol
-- [Departmanlar](https://zamana.com.tr/wiki/departmanlar/): Departman bazlı kullanım senaryoları
+- [Departmanlar](https://zamana.com.tr/wiki/departmanlar/): 12 departman, KOBİ ve 5 sektör için kullanım senaryoları
 - [Sözlük](https://zamana.com.tr/wiki/sozluk/): Claude ve yapay zekâ terimleri
 - [Önerilen Okuma Sırası](https://zamana.com.tr/wiki/okuma-sirasi/): Wiki için önerilen okuma yolu
+
+## Haberler
+- [Haberler](https://zamana.com.tr/haberler/): Anthropic duyurularının sade Türkçe uyarlaması (model sürümleri, Cowork, Chrome, Projects, Marketplace, Claude Code), her yazıda özgün kaynağa bağlantı
 
 ## Kurumsal
 - [Hakkında](https://zamana.com.tr/hakkinda/): Murat Özsaygılı ve Zamana hakkında

@@ -1,18 +1,18 @@
 ---
-title: "CLAUDE.md Hata Ayıklama — \"Yazdım Ama Dinlemedi\""
-description: CLAUDE.md var ama Claude beklendiği gibi davranmıyor. Yaygın sorunlar, teşhis, düzeltme — adım adım rehber.
+title: "CLAUDE.md Hata Ayıklama: \"Yazdım Ama Dinlemedi\""
+description: CLAUDE.md var ama Claude beklendiği gibi davranmıyor. Yaygın sorunlar, teşhis, düzeltme, adım adım rehber.
 tags:
   - claude-md
   - hata-ayiklama
   - debugging
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
 **[CLAUDE.md](/wiki/claude-md/nedir/) yazdınız, ama Claude hâlâ eski tarzda yanıt veriyor.** Çalışmayan kuralları, çelişen yönergeleri, düşen talimatları nasıl bulup düzelteceğinizi anlatan pratik rehber.
 
-## Önce — Hangi Sorunla Karşılaşıyorsunuz?
+## Önce: Hangi Sorunla Karşılaşıyorsunuz?
 
-Aşağıdaki sembiyolardan hangisi sizinki?
+Aşağıdaki belirtilerden hangisi sizinki?
 
 | Belirti | Olası Sebep | Bölüm |
 |---|---|---|
@@ -25,15 +25,15 @@ Aşağıdaki sembiyolardan hangisi sizinki?
 
 ## 1. CLAUDE.md Yüklendi mi?
 
-İlk testin sonucu: Claude'a doğrudan sorun.
+İlk test basit: Claude'a doğrudan sorun.
 
 > *"CLAUDE.md'm yüklü mü? Eğer öyleyse içinden bir alıntı ver."*
 
 **Cevap "Hayır" ise:**
 
-- claude.ai'da: [Projects](/wiki/araclar/projects/) içindesiniz mi? CLAUDE.md o projeye bağlı mı?
-- [Claude Desktop](/wiki/araclar/claude-desktop/)'ta: çalışma dizininizde `CLAUDE.md` dosyası var mı?
-- Mobilde: [Claude Mobil](/wiki/araclar/claude-mobil/) projeden değilse CLAUDE.md görünmez
+- claude.ai'da: CLAUDE.md bir dosya olarak otomatik okunmaz. [Projects](/wiki/araclar/projects/) içindesiniz mi ve metni projeye talimat ya da bilgi olarak eklediniz mi?
+- [Claude Desktop](/wiki/araclar/claude-desktop/)'ta (Cowork): çalışma klasörünüzün kökünde `CLAUDE.md` dosyası var mı ve doğru klasörü mü bağladınız?
+- Mobilde: [Claude Mobil](/wiki/araclar/claude-mobil/) uygulamasında yerel klasör erişimi kısmidir; CLAUDE.md yalnızca proje talimatı olarak eklenmişse görünür
 
 **Cevap "Evet" ise ama yanlış alıntı veriyorsa:** muhtemelen eski sürüm yüklenmiş veya başka bir proje CLAUDE.md'si yüklenmiş.
 
@@ -49,7 +49,7 @@ Claude bazı kurallarınızı dinliyor, bazılarını dinlemiyorsa muhtemelen **
 "Müşteri sorularına detaylı cevap ver, eksik bilgi bırakma"
 ```
 
-İki yönerge çelişiyor — Claude hangisini tercih edeceğini şansa bırakır. Net bir öncelik koymalısınız:
+İki yönerge çelişiyor, Claude hangisini tercih edeceğini şansa bırakır. Net bir öncelik koymalısınız:
 
 ```markdown
 Yanıtlar varsayılan olarak kısa (3 cümle). Müşteri sorusu özellikle "detay" 
@@ -58,7 +58,7 @@ talep ediyorsa (örn. "açıklar mısın", "neden") detaylı cevap verilir.
 
 ### Bireysel ve Şirket CLAUDE.md Çelişmesi
 
-[Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) sayfası bunu detaylandırır. Kural: **şirket genel kuralı bireyselden üstündür.** Eğer bireysel CLAUDE.md "her zaman emoji kullan" diyorsa, şirket CLAUDE.md "yasak emoji" diyorsa — şirketinki kazanır.
+[Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) sayfası bunu detaylandırır. Kural: **şirket genel kuralı bireyselden üstündür.** Eğer bireysel CLAUDE.md "her zaman emoji kullan" diyorsa, şirket CLAUDE.md "yasak emoji" diyorsa, şirketinki kazanır.
 
 ### Ölçü: Tek Bir Kural Tek Bir Yere
 
@@ -66,7 +66,7 @@ Aynı kuralı iki yerde tekrar etmeyin. Tek kaynak, tek doğru sürüm.
 
 ## 3. Bağlam Sıkışması
 
-Konuşma uzadıkça (50+ mesaj) Claude eski talimatları unutmaya başlayabilir. Bu **[bağlam](/wiki/yetenekler/context-compaction/)** kapasitesinin sınırıdır.
+Konuşma çok uzadığında Claude eski talimatları gözden kaçırmaya başlayabilir. Bağlam penceresi büyüdü (yeni modellerde tüm ücretli planlarda 1M token), ama çok uzun konuşmalarda **[bağlam](/wiki/yetenekler/context-compaction/)** otomatik özetlenir ve ilk mesajlardaki ince talimatlar bu sırada zayıflayabilir.
 
 **Belirtiler:**
 
@@ -79,7 +79,7 @@ Konuşma uzadıkça (50+ mesaj) Claude eski talimatları unutmaya başlayabilir.
 - **Yeni sohbet aç.** En etkili yol. CLAUDE.md taze yüklenir.
 - **Önemli kuralı son mesajda hatırlat.** "Unutma: yanıtların kısa olsun."
 - **Çok adımlı işi parçala.** Bir sohbette her şeyi bitirme; alt sohbetlere böl.
-- **Compaction'a güven.** Claude konuşmayı otomatik özetler ama her zaman doğru özetlemez.
+- **Otomatik özetlemeye (compaction) tam güvenmeyin.** Claude uzun konuşmayı özetler ama her ayrıntıyı doğru taşımayabilir.
 
 [Context ve Compaction](/wiki/yetenekler/context-compaction/) sayfası bu mekanizmanın detayını verir.
 
@@ -97,7 +97,7 @@ Saygılı = ne kadar resmî? Ne kadar samimi?
 
 ### Belirsiz Sıfatlar
 
-"Profesyonel", "kaliteli", "uygun", "etkili" — bunların hepsi Claude için **belirsiz**. Yerine somut örnek koyun:
+"Profesyonel", "kaliteli", "uygun", "etkili" gibi sözcüklerin hepsi Claude için **belirsizdir**. Yerine somut örnek koyun:
 
 > *Profesyonel = iş bağlamındaki bir tonlama. Örnek: 'Toplantı için müsait olduğum saatleri ekte bulabilirsiniz.' (kabul edilebilir) vs. 'Hangi saat seni uyar?' (çok samimi).*
 
@@ -117,7 +117,7 @@ Saygılı = ne kadar resmî? Ne kadar samimi?
 Eski CLAUDE.md sürümü hâlâ aktif olabilir. Kontrol edin:
 
 - **claude.ai Projects:** Projeye yüklenmiş knowledge base'i kontrol edin. Eski versiyon hâlâ varsa kaldırın, yenisini yükleyin.
-- **Claude Desktop:** Çalışma dizininde tek bir `CLAUDE.md` olduğundan emin olun. `~/.claude/CLAUDE.md` global, dizinindeki proje-spesifik. İkisi aynı kurallarda çelişmiyor mu?
+- **Claude Desktop ve Claude Code:** Çalışma klasöründe tek bir `CLAUDE.md` olduğundan emin olun. Claude Code'da `~/.claude/CLAUDE.md` tüm projeler için geçerli global dosyadır, çalışma klasöründeki ise projeye özgüdür. İkisi birbiriyle çelişmiyor mu?
 - **Birden fazla proje:** Yanlış projede çalışıyor olabilirsiniz. Sol panelde aktif projeyi kontrol edin.
 
 [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfası katmanlı CLAUDE.md mantığını anlatır.
@@ -137,32 +137,32 @@ Uzunsa ne yapmalı?
 
 Sorununuzu yukarıdaki kategorilerden birine yerleştiremediyseniz, sistemli ilerleyin:
 
-### Adım 1 — İzole Edin
+### Adım 1: İzole Edin
 
-Yeni bir sohbet açın, sadece CLAUDE.md aktif. Hiçbir ek prompt vermeden Claude'a basit bir test sorusu sorun.
+Yeni bir sohbet açın ve yalnızca CLAUDE.md aktif olsun. Hiçbir ek prompt vermeden Claude'a basit bir test sorusu sorun.
 
 > *"Ben kimim? Nasıl çalışırım? CLAUDE.md'mden alıntı yaparak cevapla."*
 
 CLAUDE.md tanınıyorsa devam edin. Tanınmıyorsa Bölüm 1'e geri dönün.
 
-### Adım 2 — Tek Kuralı Test Edin
+### Adım 2: Tek Kuralı Test Edin
 
 Sorunlu kural tek başına işliyor mu? Diğer her şeyi geçici olarak silin (yedek aldıktan sonra), sadece o kuralı bırakın. Beklenen davranışı görüyor musunuz?
 
-### Adım 3 — Yeniden Formüle Edin
+### Adım 3: Yeniden Formüle Edin
 
 Çalışmayan kuralı 3 farklı şekilde yazın. Hangi formülasyon daha iyi sonuç veriyor?
 
-### Adım 4 — Few-Shot Ekleyin
+### Adım 4: Few-Shot Ekleyin
 
 Soyut talimat yerine **örnek** verin:
 
 > *"İyi yanıt örneği: [tam örnek]"*
-> *"Kötü yanıt örneği: [tam örnek] — bunu yapma"*
+> *"Kötü yanıt örneği: [tam örnek] (bunu yapma)"*
 
 [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) bu tekniğin detayını verir.
 
-### Adım 5 — Dış Görüşle Doğrulayın
+### Adım 5: Dış Görüşle Doğrulayın
 
 Bir başka çalışana CLAUDE.md'nizi gösterin. Onlar için açık mı? Dış göz çoğu çelişkiyi yakalar.
 
@@ -202,17 +202,17 @@ Bir sorun çözüldükten sonra:
 
 1. **CLAUDE.md sürümünü artırın** (1.3 → 1.4)
 2. **Değişiklik notunu** ekleyin (change log)
-3. **Bir hafta gözleyin** — tekrarlamıyor mu
+3. **Bir hafta gözleyin**: tekrarlamıyor mu
 4. Şirket CLAUDE.md'sine etki eden bir değişiklik ise [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) yöneticisine bildirin
 
 ## İlgili Sayfalar
 
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) — Temeller
-- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) — İyi CLAUDE.md kuralları
-- [Örnekler](/wiki/claude-md/ornekler/) — Çalışan örnekler
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) — Hazır şablonlar
-- [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) — Şirket-geneli paylaşım
-- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) — Örnekle öğretme
-- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/) — Prompting tarafının hata listesi
-- [Context ve Compaction](/wiki/yetenekler/context-compaction/) — Bağlam sıkışması
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Temeller
+- [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): İyi CLAUDE.md kuralları
+- [Örnekler](/wiki/claude-md/ornekler/): Çalışan örnekler
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Hazır şablonlar
+- [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/): Şirket-geneli paylaşım
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle öğretme
+- [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Prompting tarafının hata listesi
+- [Context ve Compaction](/wiki/yetenekler/context-compaction/): Bağlam sıkışması
 

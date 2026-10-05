@@ -5,15 +5,17 @@ tags:
   - okuma-sirasi
   - rehber
   - baslangic
-lastUpdated: "2026-05-06"
+lastUpdated: "2026-10-05"
 ---
 
-**Bu sayfa, wiki'yi baştan sona takip etmek isteyenler için sıralı bir liste sunar.** Sıranın kendisi önkoşulu gösterir — bir sayfayı okumak için öncekiler yeterlidir.
+**Bu sayfa, wiki'yi baştan sona takip etmek isteyenler için sıralı bir liste sunar.** Sıranın kendisi önkoşulu gösterir: bir sayfayı okumak için öncekiler yeterlidir.
 
 İki kritik kilometre taşı işaretlenmiştir:
 
-- 🔵 **Claude Chat kullanımına başlama noktası** — yatırım, gizlilik ve hesap kurulumu kararları alındıktan sonra
-- 🟢 **Cowork kullanımına başlama noktası** — Chat üzerinde temel hâkimiyet, prompting ve CLAUDE.md disipliniyle olgunlaştıktan sonra
+- 🔵 **Claude Chat kullanımına başlama noktası**: yatırım, gizlilik ve hesap kurulumu kararları alındıktan sonra
+- 🟢 **Cowork kullanımına başlama noktası**: Chat üzerinde temel hâkimiyet, prompting ve CLAUDE.md disipliniyle olgunlaştıktan sonra
+
+> **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım). Bu sayfadaki Chat ve Cowork ayrımı artık ayrı iki ürünü değil, **öğrenme sırasını** gösterir: önce soru-cevap ve prompting, sonra klasör, dosya ve araçlarla çalışan, işi baştan sona teslim eden kullanım. Hesabınızda birleşik arayüz açıldıysa sıra yine geçerlidir.
 
 | Sıra | Sayfa |
 |---|---|
@@ -80,9 +82,9 @@ lastUpdated: "2026-05-06"
 | 59 | [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) |
 | 60 | [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) |
 | 61 | [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) |
-| 62 | Departmanlar — kendi rolünüze ait sayfa ([liste](/wiki/departmanlar/)) |
-| 63 | [Sık Sorulan Sorular](/wiki/temeller/sss/) — referans |
-| 64 | [Sözlük](/wiki/sozluk/) — referans |
+| 62 | Departmanlar: kendi rolünüze ait sayfa ([liste](/wiki/departmanlar/)) |
+| 63 | [Sık Sorulan Sorular](/wiki/temeller/sss/) (referans) |
+| 64 | [Sözlük](/wiki/sozluk/) (referans) |
 
 ---
 
@@ -91,6 +93,10 @@ lastUpdated: "2026-05-06"
 **Departmanlar tek tek okunmaz.** Kendi rolünüze ait olan sayfayı (örn. [Satış](/wiki/departmanlar/satis/), [Pazarlama](/wiki/departmanlar/pazarlama/), [Hukuk](/wiki/departmanlar/hukuk/)) 62. sırada okuyun. Diğer departmanlar yan rollerin nasıl Claude kullandığını merak ettiğinizde bakılabilir.
 
 **Sözlük ve SSS referans sayfalarıdır.** Sıralı okumak şart değil, ihtiyaç anında bakılır.
+
+**Dispatch yeni kullanıcılara kapalıdır.** 47. sıradaki [Dispatch](/wiki/araclar/dispatch/) sayfası, zaten kullanan kişiler ve kavramı anlamak isteyenler içindir; yeni bir katılımcının kullanabileceği varsayılmamalıdır.
+
+**Sıraya girmeyen ek sayfalar.** İhtiyaç anında bakılabilecek güncel konular: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) (Planlar'dan sonra), [Office ve Chrome](/wiki/araclar/office-ve-chrome/) (Connectors'tan sonra), [Effort Control](/wiki/yetenekler/effort-control/) ve [Claude Design](/wiki/yetenekler/claude-design/) (Artifacts'tan sonra).
 
 **Sıralama esnek değildir ama uyarlanabilir.** Bir BT yöneticisi için MCP bölümü öne çekilebilir; bir hekim için Sağlık (departman) ve Hukuk önceliklendirilebilir. Sıralama "tipik kullanıcı" varsayımıdır.
 

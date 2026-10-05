@@ -1,16 +1,18 @@
 ---
-title: "Claude Design — Claude ile Görsel İş Üretimi"
-description: "Claude Design, Anthropic Labs'in görsel çıktı ürünüdür. Tasarım, prototip, sunum ve one-pager'ları Claude ile birlikte oluşturursunuz. Pro planından itibaren dahildir."
+title: "Claude Design: Claude ile Görsel İş Üretimi"
+description: "Claude Design, Anthropic Labs'in görsel çıktı ürünüdür: tasarım, prototip, sunum ve one-pager üretimi. Ücretli planlarda beta."
 tags:
   - yetenekler
   - claude-design
   - tasarim
   - sunum
   - gorsel
-lastUpdated: "2026-06-03"
+lastUpdated: "2026-10-05"
 ---
 
-**Claude Design, Claude ile birlikte görsel iş ürettiğiniz bir Anthropic Labs ürünüdür.** Nisan 2026'da [Opus 4.7](/wiki/temeller/modeller/) ile tanıtıldı. Metin yerine **tasarım, prototip, sunum ve one-pager** gibi görsel çıktıları konuşarak, adım adım birlikte oluşturmanızı sağlar.
+**Claude Design, Claude ile birlikte görsel iş ürettiğiniz bir Anthropic Labs ürünüdür.** 17 Nisan 2026'da tanıtıldı. Metin yerine **tasarım, prototip, sunum ve one-pager** gibi görsel çıktıları konuşarak, adım adım birlikte oluşturmanızı sağlar.
+
+> **16 Eylül 2026 güncellemesi:** Cowork ve sohbet tek Claude olunca **Claude Design** (tasarım), **Claude Slides** (sunum) ve **Claude Docs** (belge) ayrı bir ürüne girmeden **her konuşmanın içinden** kullanılabilir oldu. Taslağı doğrudan düzenler, belgeyi PDF, sunumu PowerPoint olarak dışa aktarır ve çıktının paylaşılabilir bağlantısını oluşturabilirsiniz. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 [Artifacts](/wiki/yetenekler/artifacts/) interaktif veri çıktıları üretirken, Claude Design **görsel tasarım** odaklıdır: bir fikri ekranda gösterilebilir, sunulabilir bir biçime dökmek için.
 
@@ -29,7 +31,7 @@ Claude Design **işbirlikçi**dir. Siz niyeti söylersiniz, Claude bir taslak ü
 
 ## Sunum ve Slayt Üretimi
 
-İş kullanıcısı için en sık senaryo. Claude Design, ihtiyacı sade dille tarif etmenizle dakikalar içinde tam bir slayt destesi üretir; şablon seçimi, biçimleme ve düzen otomatiktir.
+İş kullanıcısı için en sık senaryo budur. İhtiyacı sade dille tarif edersiniz, Claude dakikalar içinde tam bir slayt destesi üretir; şablon seçimi, biçimleme ve düzen otomatiktir.
 
 **Öne çıkanlar:**
 
@@ -78,11 +80,20 @@ Bunların hepsi sonra bir tasarımcıyla rafine edilebilir; Claude Design **ilk 
 
 ## Erişim
 
-Claude Design **Pro, Max, Team ve Enterprise** planlarına dahildir. [Free plan](/wiki/temeller/planlar/) kapsamında değildir. Ayrı bir ücret gerektirmez, mevcut aboneliğinizle gelir.
+Design, Slides ve Docs **ücretli planlarda beta** olarak sunulur. [Pro, Max ve Team](/wiki/temeller/planlar/) planlarında varsayılan olarak açıktır (Ayarlar'daki Capabilities bölümünden kapatılabilir). **Enterprise'ta** yönetici açana kadar kapalı gelir. Ayrı bir ücret gerektirmez, ücretli planınızla gelir.
+
+**Free planda bu üç ürün yoktur.** Free hesapta sohbette dosya oluşturabilir ve genel artifacts özelliğini kullanabilirsiniz, ama bu üç ürünün etkileşimli düzenleme arayüzü açılmaz. Kademeli yayılım nedeniyle ücretli hesapta bile görünürlük kısa süre gecikebilir.
+
+## Claude Slides ve Claude Docs
+
+- **Claude Slides:** Konuşma içinde sunum taslağı üretir. Slaytları sohbette düzenler, PowerPoint olarak dışa aktarırsınız.
+- **Claude Docs:** Konuşma içinde belge yazar. Doğrudan düzenler, PDF olarak indirirsiniz.
+
+Örnek: bir toplantı notunu yapıştırıp *"bundan yönetim kuruluna 8 slaytlık özet sunumu hazırla"* demek Slides'ın tipik kullanımıdır. Dosya biçimini komutla üreten [Skills](/wiki/yetenekler/skills/) (pptx, docx) ayrı bir seçenek olarak durmaya devam eder.
 
 ## İlgili Sayfalar
 
-- [Artifacts](/wiki/yetenekler/artifacts/) — Interaktif ve canlı veri çıktıları
-- [Skills](/wiki/yetenekler/skills/) — `.pptx` / `.docx` dosya üretimi
-- [Planlar](/wiki/temeller/planlar/) — Hangi planda dahil
-- [Modeller](/wiki/temeller/modeller/) — Claude Design'ın tanıtıldığı Opus sürümü
+- [Artifacts](/wiki/yetenekler/artifacts/): Interaktif ve canlı veri çıktıları
+- [Skills](/wiki/yetenekler/skills/): `.pptx` / `.docx` dosya üretimi
+- [Planlar](/wiki/temeller/planlar/): Hangi planda dahil
+- [Cowork ve Sohbet Tek Claude Oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/): Design, Slides ve Docs'un geldiği duyuru
