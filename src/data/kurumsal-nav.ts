@@ -50,7 +50,7 @@ export const kurumsalNavColumns: ClaudeNavColumn[] = [
           { label: 'Kamu', href: '/kurumsal/kamu/', slug: 'kamu', desc: 'Kamu kurumları ve belediyeler' },
           { label: 'Sağlık', href: '/kurumsal/saglik/', slug: 'saglik', desc: 'Hastaneler ve sağlık kuruluşları' },
           { label: 'Yükseköğretim', href: '/kurumsal/yuksekogretim/', slug: 'yuksekogretim', desc: 'Üniversiteler, öğrenciler ve akademisyenler' },
-          { label: 'Öğretmenler', href: '/kurumsal/ogretmenler/', slug: 'ogretmenler', desc: 'Okul öncesinden liseye öğretmenler' },
+          { label: 'Öğretmenler', href: '/kurumsal/ogretmenler/', slug: 'ogretmenler', desc: 'İlkokuldan liseye öğretmenler' },
           { label: 'Yaşam bilimleri', href: '/kurumsal/yasam-bilimleri/', slug: 'yasam-bilimleri', desc: 'İlaç, biyoteknoloji ve klinik araştırma' },
           { label: 'Sivil toplum', href: '/kurumsal/sivil-toplum/', slug: 'sivil-toplum', desc: 'Vakıflar, dernekler ve STK\'lar' },
         ],

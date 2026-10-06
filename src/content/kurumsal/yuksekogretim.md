@@ -7,7 +7,7 @@ lead: "Anthropic'in üniversiteler için sunduğu Claude, öğrenciye cevabı ha
 heroImage: "/images/kurumsal/yuksekogretim/hero.webp"
 heroAnimation: "yuksekogretim"
 heroAlt: "Kurgusal bir üniversitede öğrenci, öğrenme modunda Claude'dan iktisat ödevini çözmesini istiyor. Claude ders notlarına bakıp cevabı vermek yerine yönlendirici bir soru soruyor, öğrenci esnekliği kendisi hesaplıyor ve Claude bir sonraki soruyla devam ediyor."
-availability: "Kampüs çapında eğitim planı Anthropic'in eğitim ekibiyle görüşülerek alınır, fiyat yayımlanmıyor. Öğrenme modu claude.ai'de stil olarak açık. Kullanıcı en az 18 yaşında olmalı"
+availability: "Kampüs çapında eğitim planı Anthropic'in eğitim ekibiyle görüşülerek alınır, fiyat yayımlanmıyor. Öğrenme modu önce yalnız bu planda çıktı, claude.ai'de herkese açıldığı basın haberlerine dayanıyor. Kullanıcı en az 18 yaşında olmalı"
 sourceUrl: "https://claude.com/solutions/education"
 sourceTitle: "Claude for Higher Education"
 related:
@@ -25,7 +25,7 @@ lastUpdated: "2026-10-06"
 
 Claude for Education, Anthropic'in üniversitelere yönelik paketidir. Aynı Claude'u öğrenciye, akademisyene, araştırmacıya ve idari personele tek bir kurumsal anlaşmayla açar. Kurum hesabı olduğu için yönetim paneli, merkezi faturalama ve veri koşulları tek elden yürür. Kaynak sayfa üç vaatte toplanıyor: üniversite düzeyinde karmaşık konularla basitleştirmeden çalışmak, öğrencinin düşünmesini güçlendirmek ve kurumların uyum beklentilerini karşılamak.
 
-Paketin en çok konuşulan parçası **öğrenme modu**. Bu modda Claude iyi bir asistan hoca gibi davranır: ödevi çözmek yerine soru sorar, öğrencinin hangi adımda takıldığını bulmaya çalışır, ipucunu ders notuna yönlendirir. Anthropic öğrenme modunu önce üniversite paketiyle tanıttı, sonra claude.ai'deki stil menüsü üzerinden tüm kullanıcılara açtığını duyurdu. Yani mod kurum anlaşması olmadan da denenebilir; kurum anlaşmasının farkı yönetim, veri koşulları ve ders sistemleriyle bağlantıdır.
+Paketin en çok konuşulan parçası **öğrenme modu**. Bu modda Claude iyi bir asistan hoca gibi davranır: ödevi çözmek yerine soru sorar, öğrencinin hangi adımda takıldığını bulmaya çalışır, ipucunu ders notuna yönlendirir. Anthropic öğrenme modunu Nisan 2025'te yalnız üniversite paketiyle tanıttı. Basına yansıyan haberlere göre sonradan claude.ai'deki stil menüsüne de eklendi; biz bunu Anthropic'in kendi sayfasından doğrulayamadık ve menüde bugün de olup olmadığı teyitsiz. Claude Code'daki "Learning" ve "Explanatory" çıktı stilleri ise resmi belgelerde yer alıyor. Kurum anlaşmasının asıl farkı yönetim, veri koşulları ve ders sistemleriyle bağlantıdır.
 
 ![Aynı ödev sorusuna standart yanıt ile öğrenme modu yanıtının yan yana karşılaştırması: solda Claude çözümü adım adım veriyor, sağda öğrenciye yönlendirici soru soruyor ve ders notuna ipucu veriyor](/images/kurumsal/yuksekogretim/ogrenme-modu.webp)
 
@@ -38,7 +38,7 @@ Kaynak sayfa kullanıcıları üç gruba ayırıyor. Aşağıdaki örnekler bu g
 - **İdari birimler:** Yönetmelik ve yönerge taslakları, öğrenci işleri yazışmaları, birim bütçe gerekçesi, toplantı tutanağı özetleri.
 - **Öğrenci:** Öğrenme modunda konu çalışmak, sınavdan önce kendini sınamak, yazdığı metne geri bildirim almak. Cevabı kopyalamak için değil, anlamak için.
 
-Kaynakta ayrıca ders yönetim sistemleri ve içerik platformlarıyla bağlantılardan söz ediliyor. Anthropic'in duyurularına göre Canvas içinde Claude kullanımı (LTI) ile ders kaydı ve akademik yayın platformlarına bağlantılar var. Türk üniversitelerinde yaygın kullanılan ders yönetim sistemleri için hazır bir bağlantı kaynakta yok; kendi sisteminiz için bir [connector](/wiki/araclar/connectors/) gerekiyorsa BT biriminizle değerlendirin.
+Kaynakta ayrıca ders yönetim sistemleri ve içerik platformlarıyla bağlantılardan söz ediliyor. Anthropic'in yardım makalesine göre Canvas içinde Claude kullanımı (LTI) var; kurulumunu yalnız Claude for Education planı olan kurumun yöneticisi yapabilir. Ders transkriptleri (Panopto) ve akademik yayın (Wiley) bağlantıları 2025 duyurusunda "yakında" diye geçiyordu, bugünkü durumları doğrulanmadı. Türk üniversitelerinde yaygın kullanılan ders yönetim sistemleri için hazır bir bağlantı kaynakta yok; kendi sisteminiz için bir [connector](/wiki/araclar/connectors/) gerekiyorsa BT biriminizle değerlendirin.
 
 ## Akademik dürüstlük: yasaklamak yerine kural koymak
 

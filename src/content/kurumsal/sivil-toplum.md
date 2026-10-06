@@ -43,7 +43,7 @@ Kaynak sayfadaki kullanımlar, Türkiye'deki kuruluşların işine uyarlanmış 
 
 **Anthropic'in sayfasına göre:**
 
-- **Fiyat:** Team planında "Nonprofit standard" kullanıcı başına aylık 8 dolar, "Nonprofit access" düşük veya orta gelirli ülkelerdeki kuruluşlar için kullanıcı başına aylık 3 dolar. Normal Team Standard koltuğu aylık 25 dolar, yıllık ödemede 20 dolardır. Team planı 2 ile 150 koltuk arası içindir.
+- **Fiyat:** Team planında "Nonprofit standard" kullanıcı başına aylık 8 dolar, "Nonprofit access" düşük veya orta gelirli ülkelerdeki kuruluşlar için kullanıcı başına aylık 3 dolar. Normal Team Standard koltuğu aylık 25 dolar, yıllık ödemede 20 dolardır. İndirimli Team fiyatı en az 2 koltuk gerektirir ve 2 ile 150 koltuk arası içindir.
 - **Kimler:** Kayıtlı kâr amacı gütmeyen kuruluşlar (ABD'deki 501(c)(3) statüsü ve diğer ülkelerdeki karşılıkları), devlet ve özel K-12 okulları ve ABD'deki bazı kırsal sağlık kuruluşları.
 - **Nasıl:** 20 kişiden küçük kuruluşlar doğrulama ortağı Goodstack üzerinden birkaç dakikada doğrulanıyor, indirim kayıtta uygulanıyor. 20 ve üzeri kişide satış ekibine yönlendiriliyor. Enterprise için de satış ekibi.
 
@@ -51,7 +51,8 @@ Kaynak sayfadaki kullanımlar, Türkiye'deki kuruluşların işine uyarlanmış 
 
 - **Goodstack Türkiye'yi destekliyor.** Goodstack'in ülke tanımlarında Türkiye için kabul edilen kuruluş türleri vakıf, vergi muafiyeti olan vakıf, dernek ve kamu yararına kâr amacı gütmeden çalışan sosyal kooperatif. Desteklemediği ülkeler arasında Türkiye yok.
 - **Anthropic'in kaynak sayfasında ülke listesi yok.** "Diğer ülkelerdeki karşılıkları" ifadesi Türk vakıf ve derneklerini kapsıyor gibi görünse de Türkiye'den yapılmış ve onaylanmış bir başvuruyu doğrulayamadık. **Türkiye'den başvurulabilirliği doğrulanmadı;** en kesin yol Goodstack doğrulamasını denemek.
-- **3 dolarlık fiyat:** Anthropic, düşük veya orta gelirli ülke tanımı için Dünya Bankası sınıflandırmasına atıf yapıyor. Dünya Bankası Türkiye'yi üst-orta gelirli ülkeler arasında sayıyor. Bu, Türkiye'nin 3 dolarlık fiyata girebileceğini düşündürüyor ama Anthropic tarafından teyit edilmedi; doğrulama sonrası ekranda hangi fiyatın çıktığına bakın.
+- **3 dolarlık fiyat:** Anthropic "düşük veya orta gelirli ülke" tanımını ve ülke listesini yayımlamıyor. Türkiye'nin bu fiyata girip girmediği teyit edilmedi; başvuruda netleşir. Doğrulamadan sonra ekranda hangi fiyatın çıktığına bakın.
+- **Enterprise fiyatı:** Kaynaklar çelişiyor, bu yüzden rakam vermiyoruz. Enterprise için fiyatı satış ekibinden alın.
 - **Ödeme:** ABD doları ile, kartla. Anthropic'in Türkiye'de ofisi veya resmi temsilcisi yok. Vergi tarafı için: [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/).
 
 ## Bağlantılar ve güvenlik

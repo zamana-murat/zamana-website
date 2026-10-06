@@ -44,9 +44,9 @@ Kaynak sayfa, Claude'un sağlık veri kaynaklarına bağlandığını anlatıyor
 
 | Connector | Ne işe yarar | Türkiye'de durumu |
 |---|---|---|
-| CMS Coverage Database | ABD Medicare kapsam politikaları | ABD'ye özgü, Türkiye'de karşılığı yok |
-| NPI Registry | ABD hekim ve sağlayıcı sicili | ABD'ye özgü |
-| ICD-10 | Tanı kodları | ICD-10 Türkiye'de de kullanılır; connector'ın ABD sürümüne dayanıp dayanmadığını kontrol edin |
+| CMS Coverage Database | ABD Medicare kapsam politikaları (CMS, ABD'nin Medicare ve Medicaid kurumudur) | ABD'ye özgü, Türkiye'de karşılığı yok |
+| NPI Registry | ABD hekim ve sağlayıcı sicili (NPI, ABD'de sağlayıcılara verilen ulusal numaradır) | ABD'ye özgü, Türk hekim ve kurumları kapsamaz |
+| ICD-10 | Tanı ve işlem kodları | ABD'de kullanılan ICD-10-CM ve ICD-10-PCS kod setleridir (2026 sürümü), Dünya Sağlık Örgütü'nün ICD-10'u değildir. Türkiye'de kullanılan kodlamayla birebir örtüşmeyebilir |
 | PubMed | Tıbbi literatür taraması | Ülkeden bağımsız, kullanılabilir |
 | HealthKit, Health Connect, Function Health, HealthEx | Kişinin kendi sağlık verisini bağlaması | Bireysel kullanıcı içindir, kurumsal kullanımın konusu değil; Türkiye'de kullanılabilirliği ayrıca kontrol edilmeli |
 
@@ -56,7 +56,16 @@ Araştırma tarafında Anthropic'in ayrı bir ürünü var: veri analizi ve bili
 
 ## HIPAA ve KVKK: aynı şey değil
 
-Kaynak sayfa Claude'un "HIPAA'ya hazır altyapı" üzerinde çalıştığını söylüyor. Enterprise planında HIPAA yapılandırması (Anthropic ile iş ortağı sözleşmesi, BAA) 14 Temmuz 2026'dan beri yöneticinin kendisinin açabileceği bir seçenek.
+Kaynak sayfa Claude'un "HIPAA'ya hazır altyapı" üzerinde çalıştığını söylüyor. Enterprise planında HIPAA yapılandırması (Anthropic ile iş ortağı sözleşmesi, BAA) 14 Temmuz 2026'dan beri yöneticinin kendisinin açabileceği (self-serve) bir seçenek. HIPAA yapılandırması yalnız Enterprise'da var; Team ve bireysel planlarda (Free, Pro, Max) açılamıyor. Claude Platform (API) için BAA ayrı bir yoldan yürüyor, yalnız belirli API özellikleri ve modeller kapsamda.
+
+BAA'nın kapsamı dar tutulmuştur. Kapsam dışında kalanlar:
+
+- Üçüncü taraf entegrasyonlar: MCP sunucuları, connector'lar ve Enterprise Search.
+- Claude in Chrome tarayıcı eklentisi ve skill'ler.
+- Beta özellikler (Design, Slides, Docs).
+- Claude Code ve Cowork yalnız yerel modda ve ek yapılandırmadan sonra kapsamda.
+
+Yani yukarıdaki sağlık connector'larını kullanmak, o oturumu BAA koruması dışına çıkarabilir. BAA ayrıca yalnız sözleşmeyi kabul eden kuruluşu bağlar.
 
 HIPAA, ABD'nin sağlık verisi düzenlemesidir. Türkiye'de doğrudan karşılığı yoktur ve BAA imzalamak KVKK uyumu anlamına gelmez. Türk sağlık kuruluşu için çerçeve şöyle:
 

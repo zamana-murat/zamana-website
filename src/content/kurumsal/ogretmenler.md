@@ -25,7 +25,7 @@ lastUpdated: "2026-10-06"
 
 Anthropic'in öğretmenler sayfası tek bir fikir üzerine kurulu: öğretmenin zamanını hazırlık işinden alıp öğrenciye geri vermek. Claude ders planını, sınav sorusunu, düzeylere göre çalışma kâğıdını ya da veli mektubunu dakikalar içinde taslak olarak çıkarır. Öğretmen okur, sınıfına göre düzeltir, kullanır. Kaynak sayfa da her adımda "öğretmen gözden geçirir" vurgusunu yapıyor.
 
-Sayfanın arkasındaki program **Claude for Teachers**. ABD'de doğrulanmış okul öncesi ve K-12 öğretmenlerine üst düzey Claude özelliklerini ücretsiz veriyor, okul bölgelerine de yönetim araçlarıyla birlikte ücretsiz kurumsal alan sunuyor. Programın ABD'ye özgü parçaları var: 50 eyaletin öğretim standartlarına bağlanan bir müfredat connector'ı, ABD'deki öğrenci verisi mevzuatına göre yazılmış koşullar ve veri işleme sözleşmesi.
+Sayfanın arkasındaki program **Claude for Teachers**. ABD'de doğrulanmış K-12 (ilkokuldan liseye) öğretmenlerine üst düzey Claude özelliklerini ücretsiz veriyor, okul bölgelerine de yönetim araçlarıyla birlikte ücretsiz kurumsal alan sunuyor. Ücretsiz erişim, 30 Haziran 2027'ye kadar yapılan kayıttan itibaren 1 yıl sürüyor. Programda öğrenci hesabı yok, yalnız eğitimciler için. Programın ABD'ye özgü parçaları var: eyalet öğretim standartlarına bağlanan bir müfredat connector'ı, ABD'deki öğrenci verisi mevzuatına göre yazılmış koşullar ve veri işleme sözleşmesi.
 
 ## Türkiye'deki öğretmen için durum
 
@@ -70,4 +70,4 @@ Kaynak sayfa ayrıca Claude Design ile çalışma kâğıdı ve sunum hazırlama
 - **Kişisel hesapta eğitim ayarı:** Free ve Pro hesaplarda sohbetlerin model eğitiminde kullanılıp kullanılmayacağını kullanıcı ayarlardan seçer. Bu ayarı kendiniz kontrol edin. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Okul politikası:** Okulunuzun ve MEB'in yapay zeka ve veri kullanımına ilişkin güncel düzenlemelerini okul idaresiyle, gerekiyorsa hukuk danışmanıyla teyit edin.
 
-Ücretsiz kaynak olarak Anthropic Academy'de okul öncesinden liseye öğretmenler için İngilizce bir "AI Fluency" kursu var. Uygulamalı ve Türkçe bir başlangıç isteyen öğretmenler için Zamana'nın [bireysel programı](/programlar/bireysel/) var.
+Anthropic'in Academy sayfasında İngilizce ücretsiz kurslar var; öğretmenlere özel bir kursun güncel olduğunu doğrulayamadık. Uygulamalı ve Türkçe bir başlangıç isteyen öğretmenler için Zamana'nın [bireysel programı](/programlar/bireysel/) var.

@@ -7,7 +7,7 @@ lead: "Anthropic, Claude'u yaşam bilimlerinde hipotezden ruhsat başvurusuna ka
 heroImage: "/images/kurumsal/yasam-bilimleri/hero.webp"
 heroAnimation: "yasam-bilimleri"
 heroAlt: "Kurgusal bir biyoteknoloji şirketinin klinik ekibi Claude'dan literatür taraması istiyor. Claude araştırma veritabanlarında yayınları sayıyor, kaynak numaralı bir kanıt tablosu çıkarıyor, ardından protokol taslağını kontrol edip güvenlik izlem planının eksik olduğunu işaretliyor. Veriler kurgusaldır."
-availability: "Connector ve skill'ler Free'de de var; yaşam bilimleri paketi Cowork ve Claude Code eklentisi olarak ücretli planlarda (Pro, Max, Team, Enterprise). Claude Science beta. Akademik ve kâr amacı gütmeyen kurumlardaki baş araştırmacılara 12 ay ücretsiz Team programı var"
+availability: "Yaşam bilimleri connector'ları ve skill'leri ücretli planlarda (Pro, Max, Team, Enterprise); Free için kaynakta bir şey yazmıyor. Paket Cowork ve Claude Code eklentisi olarak da geliyor. Claude Science beta. Akademik ve kâr amacı gütmeyen kurumlardaki baş araştırmacılara 12 ay ücretsiz Team programı var"
 sourceUrl: "https://claude.com/solutions/life-sciences"
 sourceTitle: "Claude for Life Science Teams"
 related:
