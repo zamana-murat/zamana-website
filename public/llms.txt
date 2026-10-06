@@ -13,7 +13,7 @@ Zamana, API veya yazılım geliştirme değil, iş odaklı Claude kullanımını
 
 ## Wiki (Türkçe Claude bilgi tabanı)
 - [Wiki Ana Sayfa](https://zamana.com.tr/wiki/): Türkçe Claude wiki girişi
-- [Temeller](https://zamana.com.tr/wiki/temeller/): Claude nedir, planlar, modeller, kullanım limitleri, ilk kurulum, gizlilik ve KVKK
+- [Temeller](https://zamana.com.tr/wiki/temeller/): Claude nedir, Türkiye'de Claude (erişim, satın alma, ofis ve temsilci durumu), planlar, modeller, kullanım limitleri, ilk kurulum, gizlilik ve KVKK
 - [Araçlar](https://zamana.com.tr/wiki/araclar/): Cowork, Projects, dispatch, scheduled tasks, connectors, Office ve Chrome entegrasyonları
 - [Prompting](https://zamana.com.tr/wiki/prompting/): Türkçe prompt teknikleri ve 4D çerçevesi
 - [CLAUDE.md](https://zamana.com.tr/wiki/claude-md/): Proje talimat dosyası rehberi

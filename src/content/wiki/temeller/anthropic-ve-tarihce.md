@@ -5,7 +5,7 @@ tags:
   - temeller
   - anthropic
   - tarihce
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Anthropic, Claude'u yapan şirkettir.** Kurumsal bir aracı sözleşmeye bağlamadan önce arkasındaki şirketi tanımak doğaldır. Bu sayfa Anthropic'i, kuruluşunu, değerlerini ve Claude'un model tarihçesini özetler.
@@ -114,7 +114,9 @@ Bilinen çizgiler:
 
 Anthropic'in **Türkiye'de doğrudan ofisi yoktur.** Lokalize satış, teknik destek veya hukuki temsilci bulunmaz. Türkiye, Claude.ai ve API için desteklenen ülkeler arasındadır; kullanıcılar Claude'u doğrudan claude.ai üzerinden kullanır. Türkçe iş bağlamında uyum, faturalandırma ve KVKK tarafı ayrıca yönetilmesi gereken konulardır.
 
-[Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası dil tarafının kalitesini, [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası Türkiye'deki yasal duruma uyum tarafını anlatır.
+Yerel destek olmadığı için ekiplerin Claude'a geçişi çoğunlukla kendi başına kalır. Bu boşluğu Türkçe, iş odaklı ve sizin şirketinizin süreçleri üzerinden dolduran bir [şirket içi Claude eğitimi](/yapay-zeka-egitimi/) seçeneğimiz var.
+
+[Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası dil tarafının kalitesini, [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası Türkiye'deki yasal duruma uyum tarafını anlatır. Erişim, satın alma, fatura ve destek sorularının tek sayfalık cevabı için [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/) sayfasına bakın.
 
 ## Anthropic Neden Önemli?
 

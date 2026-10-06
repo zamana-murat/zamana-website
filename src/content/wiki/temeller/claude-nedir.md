@@ -61,6 +61,8 @@ Aynı soruyu tersine çevirdiğimizde iş dünyası için değerli olan şeyler 
 - **Otomasyon katmanıdır.** Cowork ile komut çalıştırır, dosyalarınızı yönetir, dış araçları (Slack, Google Drive, CRM) çağırır. Kod yazmayı bilmeyen çalışanlar bile Claude üzerinden bu işleri yapabilir.
 - **Rol bilincine sahip bir meslektaştır.** Doğru yapılandırılmış bir [CLAUDE.md](/wiki/claude-md/nedir/) ile Claude, ekibinizin bir üyesi gibi davranır: şirketin kim olduğunu, sizin ne yaptığınızı, tonunuzu ve sınırlarınızı bilir.
 
+Bu listeyi okumak ile kendi işinizde çalıştırmak arasında bir boşluk var. Bunu tek başına, deneme yanılmayla da kapatabilirsiniz; kendi işiniz üzerinden ilerleyen bir [bireysel Claude eğitimi](/programlar/bireysel/) süreyi kısaltır. Yöneticiyseniz ve önce ne kadarını, nerede kullanacağınızı görmek istiyorsanız 3 saatlik [Yönetici AI Hazırlık](/programlar/ceo-brifing/) oturumu bunun için var.
+
 ## Claude Türkçeyi Ne Kadar İyi Anlar?
 
 Çok iyi. Claude profesyonel Türkçeyi doğru yazar, resmi ve samimi tonu ayırt eder, Türk iş kültürünün nüanslarını yakalar: "Sayın" ile "Merhaba" arasındaki farkı bilir, Türk Ticaret Kanunu'na atıfta bulunabilir, Türkçe özel isimleri doğru kullanır.

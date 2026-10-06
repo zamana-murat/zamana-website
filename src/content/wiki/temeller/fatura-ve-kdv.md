@@ -142,6 +142,8 @@ Claude aboneliği başlattıysanız, ödeme ve muhasebe akışını [Şirket İ�
 
 Bunlar küçük şeyler ama yıl sonunda denetimde sorun çıkartmamak için önemli.
 
+Satın alma ve muhasebe tarafı düzene girdikten sonra bütçenin karşılığını almak, çalışanların aboneliği gerçekten kullanmasına bağlıdır. Koltukları dağıtıp bırakmak yerine [kurumsal yapay zeka eğitimi](/yapay-zeka-egitimi/) ile kullanımı baştan yönlendirmek, ilk aylardaki boşa giden lisansı azaltır.
+
 ## Yaygın İtiraz: "Yurt Dışına Para Çıkarmak Gibi mi?"
 
 Hayır. Claude aboneliği **resmi bir hizmet alımıdır**, Anthropic invoice'ı ile belgelenir, KDV beyanı yapılır, gider olarak muhasebeleştirilir. Vergi açısından şüpheli bir akış değil.

@@ -63,6 +63,8 @@ claude.ai sohbet arayüzündeki varsayılan seviye doğrulanamadı; arayüzdeki 
 
 Bu, [Modeller](/wiki/temeller/modeller/) sayfasındaki "model değil prompt önemli" felsefesinin bir uzantısıdır: artık sadece *hangi model* değil, *ne kadar çaba* da elinizde bir kaldıraçtır.
 
+Bu ayarı bireysel olarak öğrenmek kolay, bir ekibe oturtmak daha zordur: hangi işte düşük, hangisinde yüksek çaba kullanılacağı ortak bir alışkanlık olmalı. [Kurumsal Claude programı](/programlar/kurumsal/) bu tür ekip kurallarını çalışanlarınızın kendi işleri üzerinden çalışır.
+
 ## İlgili Sayfalar
 
 - [Modeller](/wiki/temeller/modeller/): Güncel model ailesi ve hangi iş için hangi model

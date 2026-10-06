@@ -475,6 +475,8 @@ Kurulum tamam. Artık Claude Desktop ve Cowork'ü kullanabiliyorsunuz. Ama şimd
 
 [**İlk 7 Gün Rehberi**](/wiki/temeller/ilk-7-gun/) → gün gün ne yapacağınızı, hangi hatalardan kaçınacağınızı, haftanın sonunda nerede olacağınızı anlatır.
 
+Kurulum tek başına verim getirmez; ilk haftada neyin işe yaradığını görmek çoğu zaman bir rehber ister. Kendi işiniz üzerinden, size özel ilerleyen bir [birebir Claude eğitimi](/programlar/bireysel/) isterseniz 3 haftalık programın kapsamına bakabilirsiniz.
+
 ---
 
 ## İlgili Sayfalar

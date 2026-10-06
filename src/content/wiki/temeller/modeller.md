@@ -155,6 +155,8 @@ Manuel Opus seçimini değerlendirmek için işaretler:
 
 Bu işaretler yoksa Sonnet'ten ayrılmayın.
 
+Ekip düzeyinde asıl risk, herkesin kendi kafasına göre model seçmesi ve gereksiz yere pahalı olanı kullanıp kotayı erkenden bitirmesidir. Bu kuralları bir kez birlikte oturtmak istiyorsanız [ekibinize Claude eğitimi](/programlar/kurumsal/) vermenin işe yaradığı yerlerden biri tam burasıdır.
+
 ## Çaba Seviyesi
 
 Claude'un bir işe ne kadar derin düşüneceğini görev başına ayarlayabilirsiniz: [Effort Control](/wiki/yetenekler/effort-control/). Varsayılan modele ve yüzeye göre değişir: API'de Fable 5.1 ve Sonnet 5.5 `high`, Opus 5.5 `medium`; Claude Code'da Fable 5.1 `high`, Opus 5.5 ve Sonnet 5.5 `medium`. Haiku 4.5 çaba ayarını desteklemez.

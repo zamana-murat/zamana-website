@@ -27,6 +27,7 @@ export const wikiNav: WikiNavSection[] = [
       { label: 'Genel Bakış', slug: 'temeller' },
       { label: 'Claude Nedir?', slug: 'temeller/claude-nedir' },
       { label: 'Anthropic ve Tarihçe', slug: 'temeller/anthropic-ve-tarihce' },
+      { label: "Türkiye'de Claude", slug: 'temeller/turkiyede-claude' },
       { label: 'Modeller', slug: 'temeller/modeller' },
       { label: 'Planlar', slug: 'temeller/planlar' },
       { label: 'Kullanım Limitleri', slug: 'temeller/kullanim-limitleri' },
