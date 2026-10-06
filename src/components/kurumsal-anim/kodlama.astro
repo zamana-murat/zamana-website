@@ -1,0 +1,206 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/kodlama/ (claude.com/solutions/coding).
+ * The source hero shows Claude debugging an authentication error: it investigates auth files,
+ * finds the root cause in token refresh, fixes it and verifies with tests.
+ * Scenario (fictional company): a mobile app's session drops after 15 minutes.
+ * Older lines scroll off the top (flex-end + mask), so the loop fits any height.
+ */
+---
+
+<div
+  class="ka-kodlama"
+  data-step="0"
+  data-ask="Mobil uygulamada oturum 15 dakikada düşüyor. Sebebini bul ve düzelt."
+  role="img"
+  aria-label="Terminalde bir geliştirici, mobil uygulamada oturumun 15 dakikada düşmesinin sebebini soruyor. Claude kimlik doğrulama dosyalarını okuyor, kök nedeni jeton yenileme isteğinde buluyor, iki satırlık düzeltmeyi kod farkı olarak gösteriyor, testleri çalıştırıyor ve değişikliği incelemeye sunuyor."
+>
+  <div class="ka-kodlama__win" aria-hidden="true">
+    <div class="ka-kodlama__bar">
+      <span class="ka-kodlama__dot"></span><span class="ka-kodlama__dot"></span><span class="ka-kodlama__dot"></span>
+      <span class="ka-kodlama__bar-title">terminal · ege-mobil-api</span>
+      <span class="ka-kodlama__sample">Kurgusal örnek</span>
+    </div>
+
+    <div class="ka-kodlama__term">
+      <div class="ka-kodlama__lines">
+        <p class="ka-kodlama__ask"><span class="ka-kodlama__gt">&gt;</span><span><span data-role="ask"></span><span class="ka-kodlama__caret"></span></span></p>
+
+        <div class="ka-kodlama__blk ka-kodlama__blk--read">
+          <p class="ka-kodlama__say"><span class="ka-kodlama__bul">●</span>Kimlik doğrulama akışını inceliyorum.</p>
+          <p class="ka-kodlama__tool" style="--i:0"><span>Oku</span> auth/token-servisi.ts</p>
+          <p class="ka-kodlama__tool" style="--i:1"><span>Oku</span> auth/yenileme.ts</p>
+          <p class="ka-kodlama__tool" style="--i:2"><span>Ara</span> "401" middleware/ içinde, 3 sonuç</p>
+          <p class="ka-kodlama__tool ka-kodlama__sum"><span>Okundu</span> 2 dosya, 1 arama</p>
+        </div>
+
+        <div class="ka-kodlama__blk ka-kodlama__blk--cause">
+          <p class="ka-kodlama__say"><span class="ka-kodlama__bul">●</span><span><strong>Kök neden:</strong> yenileme isteği, süresi dolmuş erişim jetonuyla imzalanıyor. Sunucu 401 dönüyor ve oturum kapanıyor.</span></p>
+        </div>
+
+        <div class="ka-kodlama__blk ka-kodlama__blk--diff">
+          <p class="ka-kodlama__tool"><span>Düzenle</span> auth/yenileme.ts</p>
+          <div class="ka-kodlama__diff">
+            <p class="ka-kodlama__del">- const imza = imzala(erisim)</p>
+            <p class="ka-kodlama__add">+ const imza = imzala(yenileme)</p>
+            <p class="ka-kodlama__add">+ if (kalanSn(erisim) &lt; 60) await yenile()</p>
+          </div>
+        </div>
+
+        <div class="ka-kodlama__blk ka-kodlama__blk--test">
+          <p class="ka-kodlama__tool"><span>Çalıştır</span> npm test</p>
+          <p class="ka-kodlama__prog"><span class="ka-kodlama__track"><span class="ka-kodlama__fill"></span></span><em data-role="count">0 / 48</em></p>
+          <p class="ka-kodlama__ok">✓ 48 test geçti, 1 yeni test eklendi</p>
+        </div>
+
+        <div class="ka-kodlama__blk ka-kodlama__blk--done">
+          <p class="ka-kodlama__say ka-kodlama__say--done"><span class="ka-kodlama__bul">●</span>Değişiklik incelemenize hazır: 1 dosya, +2 −1 satır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-kodlama {
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 330px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+  }
+  .ka-kodlama__win { height: 100%; display: flex; flex-direction: column; background: var(--c-navy-deep, #071a3e); transition: opacity .5s; }
+  .ka-kodlama__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid rgba(255, 255, 255, .08); background: var(--c-navy); }
+  .ka-kodlama__dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255, 255, 255, .22); flex-shrink: 0; }
+  .ka-kodlama__bar-title { margin-left: 0.6em; font-size: 0.8em; font-weight: 700; color: rgba(255, 255, 255, .7); font-family: var(--font-mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-kodlama__sample { margin-left: auto; font-size: 0.66em; font-weight: 700; color: var(--c-gold-light); background: rgba(201, 168, 76, .16); border-radius: 999px; padding: 0.25em 0.7em; white-space: nowrap; }
+
+  .ka-kodlama__term { flex: 1; min-height: 0; padding: 0.4em 1.2em 1em; display: flex; flex-direction: column; }
+  .ka-kodlama__lines {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.5em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.1em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.1em);
+  }
+  .ka-kodlama p { margin: 0; }
+  .ka-kodlama__ask {
+    display: flex; gap: 0.6em; padding: 0.55em 0.8em; border-radius: 8px; flex-shrink: 0;
+    background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .1);
+    color: #fff; font-weight: 600; line-height: 1.4; min-height: 1.4em;
+  }
+  .ka-kodlama__gt { color: var(--c-gold); font-family: var(--font-mono); font-weight: 700; }
+  .ka-kodlama__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: #fff; animation: ka-kodlama-blink 1s steps(1) infinite; }
+  .ka-kodlama[data-typing] .ka-kodlama__caret { display: inline-block; }
+
+  .ka-kodlama__blk { display: none; flex-direction: column; gap: 0.25em; flex-shrink: 0; animation: ka-kodlama-in .35s ease both; }
+  .ka-kodlama__say { display: flex; gap: 0.6em; color: rgba(255, 255, 255, .92); line-height: 1.45; font-size: 0.95em; }
+  .ka-kodlama__say strong { color: var(--c-gold-light); }
+  .ka-kodlama__bul { color: var(--c-gold); flex-shrink: 0; font-size: 0.8em; line-height: 1.8; }
+  .ka-kodlama__say--done .ka-kodlama__bul { color: #6fd3a0; }
+  .ka-kodlama__tool {
+    font-family: var(--font-mono); font-size: 0.78em; color: rgba(255, 255, 255, .6); padding-left: 1.55em;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .ka-kodlama__tool span { color: var(--c-gold-light); font-weight: 700; margin-right: 0.4em; }
+  .ka-kodlama__blk--read .ka-kodlama__tool { opacity: 0; transition: opacity .25s calc(var(--i) * 450ms + 300ms); }
+
+  .ka-kodlama__diff { margin-left: 1.55em; border-radius: 6px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .08); font-family: var(--font-mono); font-size: 0.78em; line-height: 1.6; }
+  .ka-kodlama__diff p { padding: 0 0.7em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-kodlama__del { background: rgba(232, 96, 96, .16); color: #ffb3b3; }
+  .ka-kodlama__add { background: rgba(80, 190, 130, .16); color: #a6ecc4; opacity: 0; transition: opacity .3s .5s; }
+  .ka-kodlama__add + .ka-kodlama__add { transition-delay: .9s; }
+
+  .ka-kodlama__prog { display: flex; align-items: center; gap: 0.7em; padding-left: 1.55em; }
+  .ka-kodlama__track { flex: 1; max-width: 14em; height: 6px; border-radius: 3px; background: rgba(255, 255, 255, .1); overflow: hidden; }
+  .ka-kodlama__fill { display: block; height: 100%; width: 0; background: var(--c-gold); border-radius: 3px; }
+  .ka-kodlama__prog em { font-style: normal; font-family: var(--font-mono); font-size: 0.74em; color: rgba(255, 255, 255, .6); }
+  .ka-kodlama__ok { display: none; padding-left: 1.55em; font-family: var(--font-mono); font-size: 0.8em; color: #6fd3a0; font-weight: 700; }
+
+  /* step states */
+  .ka-kodlama[data-step="2"] .ka-kodlama__blk--read, .ka-kodlama[data-step="3"] .ka-kodlama__blk--read,
+  .ka-kodlama[data-step="4"] .ka-kodlama__blk--read, .ka-kodlama[data-step="5"] .ka-kodlama__blk--read,
+  .ka-kodlama[data-step="6"] .ka-kodlama__blk--read, .ka-kodlama[data-step="7"] .ka-kodlama__blk--read { display: flex; }
+  .ka-kodlama[data-step="2"] .ka-kodlama__blk--read .ka-kodlama__tool, .ka-kodlama[data-step="3"] .ka-kodlama__blk--read .ka-kodlama__tool,
+  .ka-kodlama[data-step="4"] .ka-kodlama__blk--read .ka-kodlama__tool, .ka-kodlama[data-step="5"] .ka-kodlama__blk--read .ka-kodlama__tool,
+  .ka-kodlama[data-step="6"] .ka-kodlama__blk--read .ka-kodlama__tool, .ka-kodlama[data-step="7"] .ka-kodlama__blk--read .ka-kodlama__tool { opacity: 1; }
+  .ka-kodlama__sum { display: none; }
+  .ka-kodlama[data-step="3"] .ka-kodlama__blk--read .ka-kodlama__tool:not(.ka-kodlama__sum), .ka-kodlama[data-step="4"] .ka-kodlama__blk--read .ka-kodlama__tool:not(.ka-kodlama__sum),
+  .ka-kodlama[data-step="5"] .ka-kodlama__blk--read .ka-kodlama__tool:not(.ka-kodlama__sum), .ka-kodlama[data-step="6"] .ka-kodlama__blk--read .ka-kodlama__tool:not(.ka-kodlama__sum),
+  .ka-kodlama[data-step="7"] .ka-kodlama__blk--read .ka-kodlama__tool:not(.ka-kodlama__sum) { display: none; }
+  .ka-kodlama[data-step="3"] .ka-kodlama__sum, .ka-kodlama[data-step="4"] .ka-kodlama__sum, .ka-kodlama[data-step="5"] .ka-kodlama__sum,
+  .ka-kodlama[data-step="6"] .ka-kodlama__sum, .ka-kodlama[data-step="7"] .ka-kodlama__sum { display: block; }
+  .ka-kodlama[data-step="3"] .ka-kodlama__blk--cause, .ka-kodlama[data-step="4"] .ka-kodlama__blk--cause,
+  .ka-kodlama[data-step="5"] .ka-kodlama__blk--cause, .ka-kodlama[data-step="6"] .ka-kodlama__blk--cause,
+  .ka-kodlama[data-step="7"] .ka-kodlama__blk--cause { display: flex; }
+  .ka-kodlama[data-step="4"] .ka-kodlama__blk--diff, .ka-kodlama[data-step="5"] .ka-kodlama__blk--diff,
+  .ka-kodlama[data-step="6"] .ka-kodlama__blk--diff, .ka-kodlama[data-step="7"] .ka-kodlama__blk--diff { display: flex; }
+  .ka-kodlama[data-step="4"] .ka-kodlama__add, .ka-kodlama[data-step="5"] .ka-kodlama__add,
+  .ka-kodlama[data-step="6"] .ka-kodlama__add, .ka-kodlama[data-step="7"] .ka-kodlama__add { opacity: 1; }
+  .ka-kodlama[data-step="5"] .ka-kodlama__blk--test, .ka-kodlama[data-step="6"] .ka-kodlama__blk--test,
+  .ka-kodlama[data-step="7"] .ka-kodlama__blk--test { display: flex; }
+  .ka-kodlama[data-step="6"] .ka-kodlama__ok, .ka-kodlama[data-step="7"] .ka-kodlama__ok { display: block; animation: ka-kodlama-in .3s ease both; }
+  .ka-kodlama[data-step="6"] .ka-kodlama__prog, .ka-kodlama[data-step="7"] .ka-kodlama__prog { display: none; }
+  .ka-kodlama[data-step="6"] .ka-kodlama__blk--done, .ka-kodlama[data-step="7"] .ka-kodlama__blk--done { display: flex; animation-delay: .6s; }
+  .ka-kodlama[data-step="7"] .ka-kodlama__win { opacity: 0; }
+
+  @container (max-width: 430px) { .ka-kodlama__sample { display: none; } }
+
+  @keyframes ka-kodlama-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-kodlama-blink { 50% { opacity: 0; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-kodlama *, .ka-kodlama *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setupKodlama(root: HTMLElement) {
+    const ask = root.dataset.ask || '';
+    const askEl = root.querySelector<HTMLElement>('[data-role="ask"]')!;
+    const count = root.querySelector<HTMLElement>('[data-role="count"]')!;
+    const fill = root.querySelector<HTMLElement>('.ka-kodlama__fill')!;
+    const TOTAL = 48;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+    const setTests = (n: number) => { count.textContent = `${n} / ${TOTAL}`; fill.style.width = `${(n / TOTAL) * 100}%`; };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      askEl.textContent = ''; setTests(0);
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(500, () => { step(1); root.dataset.typing = '1'; });
+      for (let i = 0; i <= ask.length; i++) at(600 + i * 28, () => { askEl.textContent = ask.slice(0, i); });
+      const t0 = 600 + ask.length * 28 + 500;
+      at(t0, () => { delete root.dataset.typing; step(2); });      // read files
+      at(t0 + 2400, () => step(3));                                // root cause
+      at(t0 + 4600, () => step(4));                                // diff
+      at(t0 + 6800, () => step(5));                                // tests
+      for (let k = 1; k <= 12; k++) at(t0 + 6900 + k * 130, () => setTests(Math.round((TOTAL * k) / 12)));
+      at(t0 + 8700, () => step(6));                                // pass + ready for review
+      at(t0 + 12200, () => step(7));
+      at(t0 + 12800, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      askEl.textContent = ask;
+      setTests(TOTAL);
+      step(6);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-kodlama').forEach(setupKodlama);
+</script>

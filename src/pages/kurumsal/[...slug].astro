@@ -1,0 +1,42 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import ClaudeLayout from '../../layouts/ClaudeLayout.astro';
+import SectionHub from '../../components/SectionHub.astro';
+import { kurumsalHubGroups } from '../../data/kurumsal-nav';
+
+type Entry = CollectionEntry<'kurumsal'>;
+
+// One route for the whole section: src/content/kurumsal/index.md → /kurumsal/,
+// <slug>.md → /kurumsal/<slug>/.
+export async function getStaticPaths() {
+  const entries = await getCollection('kurumsal');
+  return entries.map((entry) => ({
+    params: { slug: entry.slug === 'index' ? undefined : entry.slug },
+    props: { entry, existing: entries.map((e) => e.slug) },
+  }));
+}
+
+interface Props { entry: Entry; existing: string[] }
+
+const { entry, existing } = Astro.props;
+const { Content } = await entry.render();
+const isHub = entry.slug === 'index';
+
+// Hub grid: menu groups, only items whose page exists, without the hub itself.
+const hubGroups = isHub
+  ? kurumsalHubGroups
+      .map((g) => ({
+        title: g.title,
+        items: g.items.filter((it) => it.slug && existing.includes(it.slug)),
+      }))
+      .filter((g) => g.items.length > 0)
+  : [];
+---
+
+<ClaudeLayout data={entry.data} slug={isHub ? '' : entry.slug} section="kurumsal">
+  <Content />
+
+  {hubGroups.length > 0 && (
+    <SectionHub slot="after-body" heading="Kurumsal çözümleri keşfedin" groups={hubGroups} />
+  )}
+</ClaudeLayout>

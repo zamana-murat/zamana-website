@@ -1,0 +1,189 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/hukuk/.
+ * Scenario (fictional "Kuzey Gıda" legal team): a supplier contract is open in a word processor
+ * with track changes on. Claude reads it against the company playbook, redlines the liability
+ * cap, inserts a KVKK data-processor clause and flags a point for lawyer review. Nothing is final
+ * until a lawyer approves. Generic document UI (no product branding). Script toggles data-step.
+ */
+---
+
+<div
+  class="ka-hukuk"
+  data-step="0"
+  role="img"
+  aria-label="Hukuk ekibi animasyonu: değişiklik izleme açık bir tedarik sözleşmesini Claude şirketin sözleşme kurallarına göre okuyor; sorumluluk sınırını izlenen değişiklikle düzeltiyor, eksik kişisel veri hükmünü ekliyor, cezai şart maddesini avukat incelemesi için işaretliyor ve belge avukat onayını bekliyor."
+>
+  <div class="hk__win" aria-hidden="true">
+    <div class="hk__bar">
+      <span class="hk__dot"></span><span class="hk__dot"></span><span class="hk__dot"></span>
+      <span class="hk__bar-title">Tedarik Sözleşmesi_v3 · Değişiklikleri izle: Açık</span>
+    </div>
+
+    <div class="hk__body">
+      <!-- Document -->
+      <div class="hk__doc">
+        <div class="hk__page">
+          <p class="hk__dh">TEDARİK SÖZLEŞMESİ</p>
+
+          <div class="hk__cl hk__cl--7">
+            <p class="hk__ct">Madde 7 · Sorumluluk</p>
+            <p>TEDARİKÇİ'nin bu Sözleşme'den doğan toplam sorumluluğu, <del class="hk__del">son bir ay içinde</del><ins class="hk__ins">son on iki ay içinde</ins> ödenen bedel ile sınırlıdır.</p>
+          </div>
+
+          <div class="hk__cl hk__cl--9">
+            <p class="hk__ct">Madde 9 · Gizlilik ve Kişisel Veriler</p>
+            <p>Taraflar, birbirlerinin ticari sırlarını gizli tutar.<ins class="hk__ins hk__ins--blk"> TEDARİKÇİ, ALICI adına işlediği kişisel veriler bakımından 6698 sayılı Kanun'da veri işleyene yüklenen yükümlülüklere uyar ve gerekli teknik ve idari tedbirleri alır.</ins></p>
+          </div>
+
+          <div class="hk__cl hk__cl--11">
+            <p class="hk__ct">Madde 11 · Cezai Şart</p>
+            <p>Teslimatın gecikmesi hâlinde TEDARİKÇİ, geciken her gün için sipariş bedelinin %5'i oranında cezai şart öder.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comments -->
+      <div class="hk__side">
+        <p class="hk__sh">
+          <span class="hk__spark"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          <strong>Claude</strong><span data-role="sub">Sözleşme okunuyor</span>
+        </p>
+
+        <div class="hk__c hk__c--1">
+          <p class="hk__ch"><span class="hk__r hk__r--hi">Yüksek</span>Md. 7</p>
+          <p>Sınır, bir aylık bedelle çok düşük. Şirket kuralınız 12 ay diyor; değiştirildi.</p>
+        </div>
+        <div class="hk__c hk__c--2">
+          <p class="hk__ch"><span class="hk__r hk__r--hi">Yüksek</span>Md. 9</p>
+          <p>Veri işleyen hükmü yok. Standart KVKK maddeniz eklendi.</p>
+        </div>
+        <div class="hk__c hk__c--3">
+          <p class="hk__ch"><span class="hk__r hk__r--law">Avukat incelemesi</span>Md. 11</p>
+          <p>Günlük %5 oran yüksek görünüyor. Uygulanabilirliğini güncel kararlarla doğrulayın.</p>
+        </div>
+
+        <p class="hk__status"><span class="hk__st-a">İnceleniyor</span><span class="hk__st-b">2 değişiklik · 1 soru · Avukat onayı bekliyor</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-hukuk {
+    --hk-ink: var(--c-navy);
+    --hk-muted: var(--c-text-muted);
+    --hk-line: var(--c-border);
+    --hk-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 14.5px);
+    container-type: inline-size;
+  }
+  .hk__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .hk__win p { margin: 0; }
+  .hk__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--hk-line); }
+  .hk__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .hk__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--hk-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hk__body { flex: 1; min-height: 0; display: flex; }
+
+  /* document */
+  .hk__doc { flex: 1; min-width: 0; background: #eeebe3; padding: 0.9em 0.9em 0; overflow: hidden; }
+  .hk__page { background: #fff; height: 100%; border-radius: 4px 4px 0 0; box-shadow: 0 1px 4px rgba(15, 40, 85, .12); padding: 1em 1.2em; display: flex; flex-direction: column; gap: 0.6em; font-family: Georgia, 'Times New Roman', serif; color: #1d2433; overflow: hidden; }
+  .hk__dh { text-align: center; font-weight: 700; letter-spacing: .08em; font-size: 0.84em; color: var(--hk-ink); }
+  .hk__cl { border-radius: 4px; padding: 0.3em 0.4em; margin: 0 -0.4em; transition: background .4s; font-size: 0.8em; line-height: 1.5; }
+  .hk__ct { font-weight: 700; color: var(--hk-ink); }
+  .hk__del, .hk__ins { text-decoration: none; transition: color .3s, background .3s; }
+  .hk__ins { display: none; color: #1d6b3a; text-decoration: underline; text-decoration-color: rgba(29, 107, 58, .5); }
+  .hk__ins--blk { animation: ka-hukuk-in .5s ease both; }
+
+  /* comments */
+  .hk__side { width: 40%; flex-shrink: 0; border-left: 1px solid var(--hk-line); background: var(--c-cream, #fbf9f4); padding: 0.7em 0.7em 0.7em; display: flex; flex-direction: column; gap: 0.5em; overflow: hidden; }
+  .hk__sh { display: flex; align-items: center; gap: 0.4em; font-size: 0.82em; color: var(--hk-ink); }
+  .hk__sh [data-role="sub"] { color: var(--hk-muted); font-size: 0.92em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hk__spark { width: 1.6em; height: 1.6em; border-radius: 6px; background: var(--c-navy); color: var(--c-gold); display: grid; place-items: center; flex-shrink: 0; }
+  .hk__spark svg { animation: ka-hukuk-spin 1.8s linear infinite; }
+  .hk__c { display: none; background: #fff; border: 1px solid var(--hk-line); border-left: 3px solid var(--c-gold); border-radius: 7px; padding: 0.45em 0.6em; font-size: 0.78em; color: var(--hk-ink); line-height: 1.4; animation: ka-hukuk-in .4s ease both; }
+  .hk__ch { display: flex; align-items: center; gap: 0.45em; font-weight: 800; margin-bottom: 0.2em !important; }
+  .hk__r { font-size: 0.82em; font-weight: 800; border-radius: 99px; padding: 0.1em 0.55em; }
+  .hk__r--hi { background: #f8e1dc; color: #9a2f1c; }
+  .hk__r--law { background: var(--c-navy); color: #fff; }
+  .hk__c--3 { border-left-color: var(--c-navy); }
+  .hk__status { margin-top: auto !important; font-size: 0.74em; font-weight: 700; color: var(--hk-muted); border-top: 1px dashed var(--hk-line); padding-top: 0.5em; }
+  .hk__st-b { display: none; color: var(--c-gold-text); }
+
+  /* steps: 1 read §7, 2 redline §7, 3 insert §9, 4 flag §11, 5 fade */
+  .ka-hukuk[data-step="1"] .hk__cl--7 { background: #fbf3d9; }
+  .ka-hukuk[data-step="3"] .hk__cl--9 { background: #fbf3d9; }
+  .ka-hukuk[data-step="4"] .hk__cl--11 { background: #e6ebf4; }
+  .ka-hukuk:not([data-step="0"]):not([data-step="1"]) .hk__del { color: #b4361f; text-decoration: line-through; }
+  .ka-hukuk:not([data-step="0"]):not([data-step="1"]) .hk__cl--7 .hk__ins { display: inline; margin-left: 0.25em; }
+  .ka-hukuk:is([data-step="3"], [data-step="4"], [data-step="5"]) .hk__cl--9 .hk__ins { display: inline; }
+  .ka-hukuk:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"]) .hk__c--1 { display: block; }
+  .ka-hukuk:is([data-step="3"], [data-step="4"], [data-step="5"]) .hk__c--2 { display: block; }
+  .ka-hukuk:is([data-step="4"], [data-step="5"]) .hk__c--3 { display: block; }
+  .ka-hukuk:is([data-step="4"], [data-step="5"]) .hk__st-a { display: none; }
+  .ka-hukuk:is([data-step="4"], [data-step="5"]) .hk__st-b { display: inline; }
+  .ka-hukuk[data-step="5"] .hk__win { opacity: 0; }
+
+  /* narrow: document on top, only the newest comment below */
+  @container (max-width: 520px) {
+    .hk__body { flex-direction: column; }
+    .hk__side { width: auto; border-left: 0; border-top: 1px solid var(--hk-line); flex-shrink: 0; gap: 0.4em; padding: 0.55em 0.7em; }
+    .hk__status { display: none; }
+    .ka-hukuk:is([data-step="3"], [data-step="4"], [data-step="5"]) .hk__c--1,
+    .ka-hukuk:is([data-step="4"], [data-step="5"]) .hk__c--2 { display: none; }
+    .hk__doc { padding: 0.6em 0.6em 0; }
+    .hk__page { padding: 0.8em 0.9em; gap: 0.45em; }
+  }
+
+  @keyframes ka-hukuk-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-hukuk-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-hukuk *, .ka-hukuk *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const HK_SUBS = ['Sözleşme okunuyor', 'Şirket kurallarıyla karşılaştırılıyor', 'Değişiklik öneriliyor', 'Eksik hüküm ekleniyor', 'Avukata soru işaretleniyor'];
+
+  function setupHukuk(root: HTMLElement) {
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number, s?: string) => { root.dataset.step = String(n); if (s) sub.textContent = s; };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      step(0, HK_SUBS[0]);
+    };
+
+    const cycle = () => {
+      reset();
+      at(1400, () => step(1, HK_SUBS[1]));
+      at(3800, () => step(2, HK_SUBS[2]));
+      at(6600, () => step(3, HK_SUBS[3]));
+      at(9600, () => step(4, HK_SUBS[4]));
+      at(14600, () => step(5));
+      at(15200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      step(4, HK_SUBS[4]);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-hukuk').forEach(setupHukuk);
+</script>

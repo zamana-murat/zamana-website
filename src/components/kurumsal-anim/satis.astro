@@ -1,0 +1,225 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/satis/.
+ * Scenario (fictional seller "Ardıç Endüstriyel", fictional prospect "Ege Soğutma"): a sales rep
+ * runs the call-prep skill, Claude checks the CRM record, recent e-mails and public news, then
+ * builds a one-page meeting brief and, with the rep's approval, logs a note to the CRM.
+ * Generic chat UI (no product branding). The script only toggles data-step and types text.
+ */
+---
+
+<div
+  class="ka-satis"
+  data-step="0"
+  data-cmd="/sales:call-prep"
+  data-rest=" yarınki Ege Soğutma görüşmesi"
+  role="img"
+  aria-label="Satış ekibi animasyonu: bir satış temsilcisi görüşme hazırlığı komutunu yazıyor; Claude CRM kaydını, son e-postaları ve şirket haberlerini tarıyor, açık fırsatı, son 90 günde değişenleri, riskleri ve konuşma noktalarını içeren tek sayfalık bir görüşme özeti hazırlıyor ve temsilcinin onayıyla CRM'e not ekliyor."
+>
+  <div class="st__win" aria-hidden="true">
+    <div class="st__bar">
+      <span class="st__dot"></span><span class="st__dot"></span><span class="st__dot"></span>
+      <span class="st__bar-title">Satış ekibi projesi · Ardıç Endüstriyel</span>
+    </div>
+
+    <div class="st__body">
+      <div class="st__side">
+        <p class="st__side-h">Son çalışmalar</p>
+        <p class="st__it st__it--on">Ege Soğutma hazırlık</p>
+        <p class="st__it">Haftalık tahmin</p>
+        <p class="st__it">Teklif: Marmara Gıda</p>
+        <p class="st__it">Yenileme listesi</p>
+        <p class="st__side-h st__side-h--2">Bağlı</p>
+        <p class="st__conn"><i></i>CRM</p>
+        <p class="st__conn"><i></i>E-posta</p>
+        <p class="st__conn"><i></i>Takvim</p>
+      </div>
+
+      <div class="st__main">
+        <div class="st__thread">
+          <div class="st__user"><span class="st__cmd">/sales:call-prep</span> yarınki Ege Soğutma görüşmesi</div>
+
+          <div class="st__ai">
+            <p class="st__ai-h">
+              <span class="st__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+              <strong>Claude</strong>
+            </p>
+            <ul class="st__steps">
+              <li data-n="1">CRM'deki fırsat kaydı okundu</li>
+              <li data-n="2">Son 4 e-posta ve 12 Eylül görüşme notu tarandı</li>
+              <li data-n="3">Şirket haberleri ve ilanları arandı</li>
+            </ul>
+
+            <div class="st__brief">
+              <p class="st__bt">Ege Soğutma · Görüşme özeti <small>Yarın 10.00 · 3 katılımcı</small></p>
+              <div class="st__grid">
+                <div style="--i:0"><b>Açık fırsat</b>2,4 milyon TL + KDV · teklif aşamasında · avro kur maddesi soruldu</div>
+                <div style="--i:1"><b>Son 90 gün</b>İzmir'de yeni tesis duyurdu · satın alma müdürü değişti</div>
+                <div style="--i:2" class="st__risk"><b>Risk</b>Rakip teklif yaklaşık %8 daha düşük</div>
+                <div style="--i:3"><b>Konuşma noktası</b>Kurulum süresi ve yerinde servis ağı</div>
+              </div>
+              <p class="st__src">Kaynaklar: CRM kaydı · 4 e-posta · 2 haber bağlantısı</p>
+            </div>
+
+            <p class="st__crm"><span class="st__crm-a">CRM'e görüşme notu eklensin mi?</span><span class="st__crm-b">Not CRM'e eklendi ✓</span></p>
+          </div>
+        </div>
+
+        <div class="st__comp">
+          <span class="st__ph">Bir görev yazın ya da / ile skill seçin</span>
+          <span class="st__cmd" data-role="c1"></span><span data-role="c2"></span><span class="st__caret"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-satis {
+    --st-ink: var(--c-navy);
+    --st-muted: var(--c-text-muted);
+    --st-line: var(--c-border);
+    --st-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 14.5px);
+    container-type: inline-size;
+  }
+  .st__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .st__win p { margin: 0; }
+  .st__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--st-line); }
+  .st__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .st__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--st-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .st__body { flex: 1; display: flex; min-height: 0; }
+
+  /* sidebar */
+  .st__side { width: 9.2em; flex-shrink: 0; background: var(--c-cream, #fbf9f4); border-right: 1px solid var(--st-line); padding: 0.9em 0.6em; overflow: hidden; }
+  .st__side-h { font-size: 0.66em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--st-muted); padding: 0 0.5em 0.4em; }
+  .st__side-h--2 { margin-top: 0.9em !important; }
+  .st__it { font-size: 0.8em; color: var(--st-ink); padding: 0.35em 0.55em; border-radius: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .st__it--on { background: var(--c-navy); color: #fff; font-weight: 700; }
+  .st__conn { font-size: 0.78em; color: var(--st-ink); padding: 0.25em 0.55em; display: flex; align-items: center; gap: 0.45em; }
+  .st__conn i { width: 0.55em; height: 0.55em; border-radius: 50%; background: #3f9b62; }
+  @container (max-width: 520px) { .st__side { display: none; } }
+
+  /* thread */
+  .st__main { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 0 1em 0.8em; }
+  .st__thread {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.6em; padding-top: 0.6em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1em);
+  }
+  .st__user { display: none; align-self: flex-end; max-width: 85%; background: var(--st-soft); border-radius: 12px 12px 3px 12px; padding: 0.5em 0.8em; font-size: 0.88em; color: var(--st-ink); animation: ka-satis-in .35s ease both; }
+  .st__cmd { color: #0b5a8a; font-weight: 700; }
+  .st__ai { display: none; animation: ka-satis-in .4s ease both; }
+  .st__ai-h { display: flex; align-items: center; gap: 0.45em; font-size: 0.86em; color: var(--st-ink); }
+  .st__spark { width: 1.6em; height: 1.6em; border-radius: 6px; background: var(--c-navy); color: var(--c-gold); display: grid; place-items: center; }
+  .st__spark svg { animation: ka-satis-spin 1.8s linear infinite; }
+  .st__steps { list-style: none; margin: 0.35em 0 0; padding: 0; font-size: 0.78em; color: var(--st-muted); line-height: 1.6; }
+  .st__steps li { display: none; }
+  .st__steps li::before { content: "✓"; color: #1d6b3a; font-weight: 800; margin-right: 0.45em; }
+
+  .st__brief { display: none; margin-top: 0.45em; border: 1px solid var(--c-border-gold, rgba(201,168,76,.3)); background: #fffdf7; border-radius: 10px; padding: 0.6em 0.75em; animation: ka-satis-in .4s ease both; }
+  .st__bt { font-weight: 800; color: var(--st-ink); font-size: 0.9em; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2em 0.6em; }
+  .st__bt small { font-weight: 600; color: var(--st-muted); font-size: 0.8em; }
+  .st__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45em; margin-top: 0.5em; }
+  .st__grid div { background: #fff; border: 1px solid var(--st-line); border-radius: 7px; padding: 0.4em 0.55em; font-size: 0.76em; color: var(--st-ink); line-height: 1.4; }
+  .st__grid b { display: block; font-size: 0.86em; letter-spacing: .05em; text-transform: uppercase; color: var(--c-gold-text); margin-bottom: 0.1em; }
+  .st__grid .st__risk b { color: #9a2f1c; }
+  .st__src { margin-top: 0.45em !important; font-size: 0.7em; color: var(--st-muted); }
+  .st__crm { display: none; margin-top: 0.45em !important; font-size: 0.78em; font-weight: 700; animation: ka-satis-in .35s ease both; }
+  .st__crm span { border-radius: 7px; padding: 0.35em 0.7em; display: inline-block; }
+  .st__crm-a { background: var(--c-gold); color: var(--c-navy); }
+  .st__crm-b { display: none !important; background: #dcefe2; color: #1d6b3a; }
+
+  /* composer */
+  .st__comp { margin-top: 0.5em; border: 1px solid rgba(15, 40, 85, .22); border-radius: 9px; padding: 0.6em 0.9em; min-height: 1.4em; line-height: 1.4; color: var(--st-ink); background: #fff; font-size: 0.92em; white-space: nowrap; overflow: hidden; }
+  .st__ph { color: var(--st-muted); opacity: .8; }
+  .st__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--st-ink); animation: ka-satis-blink 1s steps(1) infinite; }
+  .ka-satis[data-typing] .st__caret { display: inline-block; }
+  .st__comp [data-role="c1"]:empty { display: none; }
+
+  /* steps: 1 typing, 2 sent + tools, 3 brief, 4 CRM prompt, 5 CRM done, 6 fade */
+  .ka-satis[data-step="1"] .st__ph { display: none; }
+  .ka-satis:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"]) :is(.st__user, .st__ai) { display: block; }
+  .ka-satis[data-tools="1"] .st__steps li[data-n="1"],
+  .ka-satis[data-tools="2"] .st__steps li:is([data-n="1"], [data-n="2"]),
+  .ka-satis[data-tools="3"] .st__steps li { display: block; }
+  .ka-satis:is([data-step="3"], [data-step="4"], [data-step="5"]) .st__brief { display: block; }
+  .ka-satis:is([data-step="4"], [data-step="5"]) .st__crm { display: block; }
+  .ka-satis[data-step="5"] .st__crm-a { display: none; }
+  .ka-satis[data-step="5"] .st__crm-b { display: inline-block !important; }
+  .ka-satis[data-step="6"] .st__win { opacity: 0; }
+
+  @container (max-width: 520px) {
+    .st__main { padding: 0 0.7em 0.7em; }
+    .st__grid { grid-template-columns: 1fr; gap: 0.3em; }
+    .st__grid div:nth-child(4) { display: none; }
+    .ka-satis:is([data-step="3"], [data-step="4"], [data-step="5"]) .st__steps { display: none; }
+  }
+
+  @keyframes ka-satis-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-satis-blink { 50% { opacity: 0; } }
+  @keyframes ka-satis-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-satis *, .ka-satis *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setupSatis(root: HTMLElement) {
+    const cmd = root.dataset.cmd || '';
+    const rest = root.dataset.rest || '';
+    const c1 = root.querySelector<HTMLElement>('[data-role="c1"]')!;
+    const c2 = root.querySelector<HTMLElement>('[data-role="c2"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const type = (node: HTMLElement, text: string, start: number, speed: number) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { node.textContent = text.slice(0, i); });
+      return start + text.length * speed;
+    };
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      c1.textContent = ''; c2.textContent = '';
+      delete root.dataset.typing; delete root.dataset.tools; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(900, () => { step(1); root.dataset.typing = '1'; });
+      const t1 = type(c1, cmd, 1000, 50);
+      const t2 = type(c2, rest, t1 + 150, 32);
+      at(t2 + 500, () => { delete root.dataset.typing; c1.textContent = ''; c2.textContent = ''; step(2); });
+      at(t2 + 1100, () => { root.dataset.tools = '1'; });
+      at(t2 + 1900, () => { root.dataset.tools = '2'; });
+      at(t2 + 2700, () => { root.dataset.tools = '3'; });
+      const t3 = t2 + 3600;
+      at(t3, () => step(3));
+      at(t3 + 3600, () => step(4));
+      at(t3 + 5200, () => step(5));
+      at(t3 + 8000, () => step(6));
+      at(t3 + 8600, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      root.dataset.tools = '3';
+      step(5);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-satis').forEach(setupSatis);
+</script>

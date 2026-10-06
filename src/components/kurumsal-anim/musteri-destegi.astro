@@ -1,0 +1,284 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/musteri-destegi/.
+ * Scenario (fictional company "Lale Ev Tekstili"): support requests from several channels land in
+ * one queue, Claude labels each one, reads the knowledge base and the order record, drafts a reply
+ * for the agent to approve, and routes a billing dispute to a specialist.
+ * Generic helpdesk UI (no product branding). The script only toggles data-step and types text.
+ */
+---
+
+<div
+  class="ka-musteri-destegi"
+  data-step="0"
+  data-reply="Merhaba Ayşe Hanım, karışıklık için özür dileriz. Siparişiniz 14 günlük değişim süresi içinde. Kargo görevlisi yarın ürünü adresinizden alacak, doğru renk aynı gün yola çıkacak."
+  role="img"
+  aria-label="Destek kutusu animasyonu: mesaj, e-posta ve canlı sohbetten gelen talepler tek kuyrukta toplanıyor, Claude her talebi konu ve önceliğe göre etiketliyor, bilgi bankası ve sipariş kaydından yararlanarak bir değişim talebine yanıt taslağı yazıyor, temsilci onaylayınca yanıt gönderiliyor, bir fatura itirazı ise uzmana yönlendiriliyor."
+>
+  <div class="md__win" aria-hidden="true">
+    <div class="md__bar">
+      <span class="md__dot"></span><span class="md__dot"></span><span class="md__dot"></span>
+      <span class="md__bar-title">Destek kutusu · Lale Ev Tekstili</span>
+    </div>
+
+    <div class="md__body">
+      <!-- Queue -->
+      <div class="md__queue">
+        <p class="md__qh">Kuyruk <span>4 yeni</span></p>
+
+        <div class="md__t md__t--on">
+          <p class="md__t-top"><span class="md__ch">Mesaj</span><small>09:12</small></p>
+          <p class="md__t-name">Ayşe Demir</p>
+          <p class="md__t-sum">Yanlış renk geldi, değişim</p>
+          <p class="md__tags">
+            <span class="md__tag md__tag--a" style="--i:0">Değişim</span>
+            <span class="md__st md__st--done">Yanıtlandı</span>
+          </p>
+        </div>
+
+        <div class="md__t">
+          <p class="md__t-top"><span class="md__ch">E-posta</span><small>09:14</small></p>
+          <p class="md__t-name">Jonas Weber</p>
+          <p class="md__t-sum">Delivery to Germany?</p>
+          <p class="md__tags">
+            <span class="md__tag md__tag--b" style="--i:1">Kargo · EN</span>
+            <span class="md__st md__st--draft">Taslak hazır</span>
+          </p>
+        </div>
+
+        <div class="md__t">
+          <p class="md__t-top"><span class="md__ch">Sohbet</span><small>09:15</small></p>
+          <p class="md__t-name">Murat Kılıç</p>
+          <p class="md__t-sum">Faturada iki kez ücret</p>
+          <p class="md__tags">
+            <span class="md__tag md__tag--c" style="--i:2">Fatura · Acil</span>
+            <span class="md__st md__st--esc">Uzmana iletildi</span>
+          </p>
+        </div>
+
+        <div class="md__t">
+          <p class="md__t-top"><span class="md__ch">E-posta</span><small>09:17</small></p>
+          <p class="md__t-name">Elif Şahin</p>
+          <p class="md__t-sum">Yıkama talimatı sorusu</p>
+          <p class="md__tags">
+            <span class="md__tag md__tag--b" style="--i:3">Ürün bilgisi</span>
+            <span class="md__st md__st--done">Yanıtlandı</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Ticket detail -->
+      <div class="md__main">
+        <div class="md__thread">
+          <div class="md__msg">
+            <span class="md__av">AD</span>
+            <div class="md__mbody">
+              <p class="md__head"><strong>Ayşe Demir</strong><small>Mesaj · 09:12</small></p>
+              <p class="md__bubble">Merhaba, 3 gün önce aldığım nevresim takımı yanlış renk geldi. Değiştirebilir miyim? Sipariş no: LT-48213</p>
+            </div>
+          </div>
+
+          <div class="md__ai">
+            <p class="md__ai-h">
+              <span class="md__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+              <strong>Claude</strong>
+              <span class="md__work" data-role="sub">Talep okunuyor</span>
+            </p>
+            <div class="md__chips">
+              <span style="--i:0">Konu: Değişim</span>
+              <span style="--i:1">Öncelik: Normal</span>
+              <span style="--i:2">Dil: Türkçe</span>
+            </div>
+            <div class="md__srcs">
+              <span style="--i:0">Bilgi bankası: İade ve değişim politikası</span>
+              <span style="--i:1">Sipariş LT-48213: 3 Ekim'de teslim</span>
+            </div>
+            <div class="md__draft">
+              <p class="md__draft-h">Yanıt taslağı</p>
+              <p class="md__draft-t"><span data-role="reply"></span><span class="md__caret"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md__actions">
+          <span class="md__note">Temsilci onaylamadan gönderilmez</span>
+          <span class="md__btn"><span class="md__btn-a">Onayla ve gönder</span><span class="md__btn-b">Gönderildi ✓</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-musteri-destegi {
+    --md-ink: var(--c-navy);
+    --md-muted: var(--c-text-muted);
+    --md-line: var(--c-border);
+    --md-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 14.5px);
+    container-type: inline-size;
+  }
+  .md__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .md__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--md-line); }
+  .md__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .md__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--md-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .md__body { flex: 1; display: flex; min-height: 0; }
+  .md__body p { margin: 0; }
+
+  /* queue */
+  .md__queue { width: 38%; flex-shrink: 0; border-right: 1px solid var(--md-line); background: var(--c-cream, #fbf9f4); padding: 0.7em 0.6em; display: flex; flex-direction: column; gap: 0.45em; overflow: hidden; }
+  .md__queue { -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent); mask-image: linear-gradient(to bottom, #000 82%, transparent); }
+  .md__qh { font-size: 0.72em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--md-muted); padding: 0 0.4em 0.2em; display: flex; justify-content: space-between; }
+  .md__qh span { color: var(--c-gold-text); letter-spacing: .02em; }
+  .md__t { background: #fff; border: 1px solid var(--md-line); border-radius: 8px; padding: 0.45em 0.6em; }
+  .md__t--on { border-color: var(--c-gold); box-shadow: inset 3px 0 0 var(--c-gold); }
+  .md__t-top { display: flex; justify-content: space-between; align-items: center; }
+  .md__t-top small { color: var(--md-muted); font-size: 0.72em; }
+  .md__ch { font-size: 0.66em; font-weight: 800; color: var(--md-muted); background: var(--md-soft); border-radius: 4px; padding: 0.1em 0.45em; }
+  .md__t-name { font-weight: 800; color: var(--md-ink); font-size: 0.86em; line-height: 1.3; margin-top: 0.15em !important; }
+  .md__t-sum { font-size: 0.78em; color: var(--md-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .md__tags { display: flex; gap: 0.35em; flex-wrap: wrap; margin-top: 0.3em !important; min-height: 1.45em; }
+  .md__tag, .md__st { font-size: 0.68em; font-weight: 700; border-radius: 99px; padding: 0.15em 0.55em; white-space: nowrap; }
+  .md__tag { opacity: 0; transform: scale(.85); transition: opacity .3s calc(var(--i) * 220ms), transform .3s calc(var(--i) * 220ms); }
+  .md__tag--a { background: #f4ead0; color: var(--c-gold-text); }
+  .md__tag--b { background: #e3ebf7; color: #24497f; }
+  .md__tag--c { background: #f8e1dc; color: #9a2f1c; }
+  .md__st { display: none; }
+  .md__st--done { background: #dcefe2; color: #1d6b3a; }
+  .md__st--draft { background: #e3ebf7; color: #24497f; }
+  .md__st--esc { background: var(--c-navy); color: #fff; }
+
+  /* detail */
+  .md__main { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 0 1em 0.8em; }
+  .md__thread {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.6em;
+    padding-top: 0.6em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.4em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.4em);
+  }
+  .md__msg { display: flex; gap: 0.6em; align-items: flex-start; }
+  .md__av { width: 2.1em; height: 2.1em; border-radius: 50%; flex-shrink: 0; display: grid; place-items: center; font-weight: 800; font-size: 0.74em; background: #e5def3; color: #5b3fa0; }
+  .md__mbody { min-width: 0; }
+  .md__head { display: flex; align-items: baseline; gap: 0.5em; line-height: 1.25; }
+  .md__head strong { color: var(--md-ink); font-weight: 800; font-size: 0.92em; }
+  .md__head small { color: var(--md-muted); font-size: 0.74em; }
+  .md__bubble { margin-top: 0.25em !important; background: var(--md-soft); border-radius: 0 10px 10px 10px; padding: 0.5em 0.75em; color: var(--md-ink); line-height: 1.4; font-size: 0.9em; }
+
+  .md__ai { display: none; border: 1px solid var(--c-border-gold, rgba(201,168,76,.3)); background: #fffdf7; border-radius: 10px; padding: 0.55em 0.75em; animation: ka-musteri-destegi-in .4s ease both; }
+  .md__ai-h { display: flex; align-items: center; gap: 0.45em; font-size: 0.86em; color: var(--md-ink); }
+  .md__spark { width: 1.6em; height: 1.6em; border-radius: 6px; background: var(--c-navy); color: var(--c-gold); display: grid; place-items: center; }
+  .md__spark svg { animation: ka-musteri-destegi-spin 1.8s linear infinite; }
+  .md__work { color: var(--md-muted); font-size: 0.92em; }
+  .md__chips, .md__srcs { display: flex; flex-wrap: wrap; gap: 0.35em; margin-top: 0.45em; }
+  .md__chips span, .md__srcs span { opacity: 0; transform: translateY(4px); transition: opacity .3s calc(var(--i) * 200ms), transform .3s calc(var(--i) * 200ms); font-size: 0.74em; border-radius: 6px; padding: 0.2em 0.5em; }
+  .md__chips span { background: var(--c-navy); color: #fff; font-weight: 700; }
+  .md__srcs span { background: #fff; border: 1px solid var(--md-line); color: var(--md-muted); }
+  .md__srcs span::before { content: "↳ "; color: var(--c-gold-dark, #a8852d); font-weight: 800; }
+  .md__srcs { display: none; }
+  .md__draft { display: none; margin-top: 0.5em; border-top: 1px dashed var(--md-line); padding-top: 0.45em; }
+  .md__draft-h { font-size: 0.68em; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--c-gold-text); }
+  .md__draft-t { margin-top: 0.2em !important; color: var(--md-ink); font-size: 0.86em; line-height: 1.45; min-height: 2.9em; }
+  .md__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--md-ink); animation: ka-musteri-destegi-blink 1s steps(1) infinite; }
+  .ka-musteri-destegi[data-typing] .md__caret { display: inline-block; }
+
+  .md__actions { display: flex; align-items: center; justify-content: space-between; gap: 0.6em; margin-top: 0.55em; }
+  .md__note { font-size: 0.72em; color: var(--md-muted); }
+  .md__btn { flex-shrink: 0; font-size: 0.8em; font-weight: 800; border-radius: 8px; padding: 0.5em 0.9em; background: #e9e6dc; color: var(--md-muted); transition: background .3s, color .3s; }
+  .md__btn-b { display: none; }
+
+  /* steps: 1 labels, 2 Claude reads, 3 draft typed, 4 approve + sent, 5 fade */
+  .ka-musteri-destegi:not([data-step="0"]) .md__tag { opacity: 1; transform: none; }
+  .ka-musteri-destegi[data-step="2"] .md__ai,
+  .ka-musteri-destegi[data-step="3"] .md__ai,
+  .ka-musteri-destegi[data-step="4"] .md__ai,
+  .ka-musteri-destegi[data-step="5"] .md__ai { display: block; }
+  .ka-musteri-destegi[data-step="2"] .md__chips span,
+  .ka-musteri-destegi[data-step="3"] .md__chips span,
+  .ka-musteri-destegi[data-step="4"] .md__chips span,
+  .ka-musteri-destegi[data-step="5"] .md__chips span { opacity: 1; transform: none; }
+  .ka-musteri-destegi[data-src] .md__srcs { display: flex; }
+  .ka-musteri-destegi[data-src2] .md__srcs span { opacity: 1; transform: none; }
+  .ka-musteri-destegi[data-step="3"] .md__draft,
+  .ka-musteri-destegi[data-step="4"] .md__draft,
+  .ka-musteri-destegi[data-step="5"] .md__draft { display: block; }
+  .ka-musteri-destegi[data-step="3"] .md__btn { background: var(--c-gold); color: var(--c-navy); }
+  .ka-musteri-destegi[data-step="4"] .md__btn,
+  .ka-musteri-destegi[data-step="5"] .md__btn { background: #dcefe2; color: #1d6b3a; }
+  .ka-musteri-destegi[data-step="4"] .md__btn-a,
+  .ka-musteri-destegi[data-step="5"] .md__btn-a { display: none; }
+  .ka-musteri-destegi[data-step="4"] .md__btn-b,
+  .ka-musteri-destegi[data-step="5"] .md__btn-b { display: inline; }
+  .ka-musteri-destegi[data-step="4"] .md__st,
+  .ka-musteri-destegi[data-step="5"] .md__st { display: inline-block; animation: ka-musteri-destegi-in .35s ease both; }
+  .ka-musteri-destegi[data-step="5"] .md__win { opacity: 0; }
+
+  @container (max-width: 520px) {
+    .md__queue { display: none; }
+    .md__main { padding: 0 0.8em 0.7em; }
+  }
+
+  @keyframes ka-musteri-destegi-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-musteri-destegi-blink { 50% { opacity: 0; } }
+  @keyframes ka-musteri-destegi-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-musteri-destegi *, .ka-musteri-destegi *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const MD_SUBS = ['Talep okunuyor', 'Bilgi bankası ve sipariş kaydı inceleniyor', 'Yanıt yazılıyor', 'Temsilci onayı bekleniyor', 'Gönderildi, kuyruk güncellendi'];
+
+  function setupMusteriDestegi(root: HTMLElement) {
+    const replyText = root.dataset.reply || '';
+    const reply = root.querySelector<HTMLElement>('[data-role="reply"]')!;
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      reply.textContent = ''; sub.textContent = MD_SUBS[0];
+      delete root.dataset.typing; delete root.dataset.src; delete root.dataset.src2;
+      step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(1200, () => step(1));
+      at(2600, () => step(2));
+      at(3600, () => { sub.textContent = MD_SUBS[1]; root.dataset.src = '1'; });
+      at(3700, () => { root.dataset.src2 = '1'; });
+      at(5200, () => { sub.textContent = MD_SUBS[2]; step(3); root.dataset.typing = '1'; });
+      const t0 = 5400, speed = 24;
+      for (let i = 0; i <= replyText.length; i++) at(t0 + i * speed, () => { reply.textContent = replyText.slice(0, i); });
+      const tEnd = t0 + replyText.length * speed;
+      at(tEnd + 200, () => { delete root.dataset.typing; sub.textContent = MD_SUBS[3]; });
+      at(tEnd + 1800, () => { sub.textContent = MD_SUBS[4]; step(4); });
+      at(tEnd + 5600, () => step(5));
+      at(tEnd + 6200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      reply.textContent = replyText; sub.textContent = MD_SUBS[4];
+      root.dataset.src = '1'; root.dataset.src2 = '1';
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-musteri-destegi').forEach(setupMusteriDestegi);
+</script>

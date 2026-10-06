@@ -1,0 +1,249 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/siber-guvenlik/.
+ * Scenario (fictional "Toros Lojistik" SOC): a VPN alert arrives at night, Claude adds context,
+ * correlates logs, maps the activity to ATT&CK techniques, ranks severity and proposes response
+ * steps that wait for the analyst's approval. IPs are from the RFC 5737 documentation range.
+ * The script only toggles data-step.
+ */
+---
+
+<div
+  class="ka-siber-guvenlik"
+  data-step="0"
+  role="img"
+  aria-label="Güvenlik operasyon merkezi animasyonu: gece gelen bir VPN alarmını Claude inceliyor; kaynak adresi ve kullanıcının olağan davranışıyla bağlam ekliyor, kayıtları ilişkilendirip etkinliği ATT&CK tekniklerine eşliyor, olayı kritik olarak önceliklendiriyor ve analistin onayını bekleyen müdahale adımları öneriyor."
+>
+  <div class="sg__win" aria-hidden="true">
+    <div class="sg__bar">
+      <span class="sg__dot"></span><span class="sg__dot"></span><span class="sg__dot"></span>
+      <span class="sg__bar-title">Olay kaydı OLY-0412 · Toros Lojistik SOC</span>
+    </div>
+
+    <ol class="sg__stages">
+      <li data-s="1"><b>1</b><span>Bağlam</span></li>
+      <li data-s="2"><b>2</b><span>Doğrulama</span></li>
+      <li data-s="3"><b>3</b><span>Önceliklendirme</span></li>
+      <li data-s="4"><b>4</b><span>Müdahale</span></li>
+    </ol>
+
+    <div class="sg__body">
+      <!-- Incoming alert -->
+      <div class="sg__alert">
+        <span class="sg__sev">ALARM</span>
+        <div class="sg__alert-t">
+          <p><strong>VPN ağ geçidi:</strong> 14 başarısız giriş, ardından başarılı oturum</p>
+          <small>Kullanıcı s.yildiz · 03:12 · Kaynak 203.0.113.47</small>
+        </div>
+      </div>
+
+      <div class="sg__panel">
+        <p class="sg__ph">
+          <span class="sg__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          <strong>Claude</strong>
+          <span class="sg__sub" data-role="sub">Alarm okunuyor</span>
+        </p>
+
+        <div class="sg__stack">
+        <!-- 1: context -->
+        <div class="sg__blk sg__blk--ctx">
+          <span style="--i:0">Adres daha önce hiç görülmedi</span>
+          <span style="--i:1">Olağan giriş saati 08.00-19.00</span>
+          <span style="--i:2">MFA istemi 3 kez reddedildi, 4.'de onaylandı</span>
+        </div>
+
+        <!-- 2: correlated logs + ATT&CK -->
+        <div class="sg__blk sg__blk--log">
+          <p style="--i:0"><code>03:14</code> Aynı oturumdan dosya sunucusunda 2,1 GB okuma</p>
+          <p style="--i:1"><code>03:16</code> Posta kutusuna dış adrese yönlendirme kuralı eklendi</p>
+          <div class="sg__ttp">
+            <span style="--i:2">T1110 Kaba kuvvet</span>
+            <span style="--i:3">T1078 Geçerli hesap</span>
+            <span style="--i:4">T1114.003 Yönlendirme kuralı</span>
+          </div>
+        </div>
+
+        <!-- 3: severity -->
+        <div class="sg__blk sg__blk--sev">
+          <span class="sg__crit">Kritik</span>
+          <p><strong>Olası hesap ele geçirme ve veri sızdırma.</strong> Güven: yüksek · Benzer olay yok</p>
+        </div>
+
+        <!-- 4: response, waits for analyst -->
+        <div class="sg__blk sg__blk--act">
+          <p class="sg__act-h">Önerilen müdahale</p>
+          <ul>
+            <li style="--i:0">Oturumu sonlandır, hesabı geçici kilitle</li>
+            <li style="--i:1">Yönlendirme kuralını kaldır, giden postayı incele</li>
+            <li style="--i:2">Olay notu ve yönetici özeti taslağı hazır</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+
+      <div class="sg__foot">
+        <span class="sg__note">Eylemler analist onayıyla uygulanır</span>
+        <span class="sg__btn"><span class="sg__btn-a">Analist onayı bekleniyor</span><span class="sg__btn-b">Onaylandı · uygulanıyor</span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-siber-guvenlik {
+    --sg-ink: var(--c-navy);
+    --sg-muted: var(--c-text-muted);
+    --sg-line: var(--c-border);
+    --sg-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 14.5px);
+    container-type: inline-size;
+  }
+  .sg__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .sg__win p { margin: 0; }
+  .sg__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--sg-line); }
+  .sg__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .sg__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--sg-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* stage rail */
+  .sg__stages { list-style: none; margin: 0; padding: 0.6em 1em; display: flex; gap: 0.4em; background: var(--c-navy); }
+  .sg__stages li { flex: 1; display: flex; align-items: center; gap: 0.45em; min-width: 0; color: rgba(255, 255, 255, .55); font-size: 0.76em; font-weight: 700; padding: 0.3em 0.5em; border-radius: 6px; transition: background .3s, color .3s; }
+  .sg__stages b { width: 1.6em; height: 1.6em; flex-shrink: 0; border-radius: 50%; display: grid; place-items: center; border: 1.5px solid currentColor; font-size: 0.9em; }
+  .sg__stages span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .sg__body { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0.7em 1em 0.8em; gap: 0.55em; }
+  .sg__alert { display: flex; gap: 0.7em; align-items: center; border: 1px solid #f0c9bf; background: #fff7f4; border-radius: 9px; padding: 0.5em 0.75em; }
+  .sg__sev { flex-shrink: 0; font-size: 0.66em; font-weight: 800; letter-spacing: .08em; color: #fff; background: #b4361f; border-radius: 4px; padding: 0.25em 0.55em; }
+  .sg__alert-t { min-width: 0; }
+  .sg__alert-t p { color: var(--sg-ink); font-size: 0.88em; line-height: 1.35; }
+  .sg__alert-t small { color: var(--sg-muted); font-size: 0.74em; }
+
+  .sg__panel {
+    flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 0.45em;
+    border: 1px solid var(--c-border-gold, rgba(201,168,76,.3)); background: #fffdf7; border-radius: 10px; padding: 0.55em 0.75em;
+  }
+  .sg__ph { display: flex; align-items: center; gap: 0.45em; font-size: 0.86em; color: var(--sg-ink); }
+  .sg__stack {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.5em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 0.5em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 0.5em);
+  }
+  .sg__spark { width: 1.6em; height: 1.6em; border-radius: 6px; background: var(--c-navy); color: var(--c-gold); display: grid; place-items: center; flex-shrink: 0; }
+  .sg__spark svg { animation: ka-siber-guvenlik-spin 1.8s linear infinite; }
+  .sg__sub { color: var(--sg-muted); font-size: 0.92em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .sg__blk { display: none; animation: ka-siber-guvenlik-in .4s ease both; }
+  .sg__blk--ctx { flex-wrap: wrap; gap: 0.35em; }
+  .sg__blk--ctx span { font-size: 0.74em; border-radius: 6px; padding: 0.2em 0.5em; background: #fff; border: 1px solid var(--sg-line); color: var(--sg-ink); }
+  .sg__blk--ctx span::before { content: "↳ "; color: var(--c-gold-dark, #a8852d); font-weight: 800; }
+  .sg__blk--log p { font-size: 0.8em; color: var(--sg-ink); line-height: 1.5; }
+  .sg__blk--log code { font-size: 0.92em; background: var(--sg-soft); border-radius: 4px; padding: 0.05em 0.35em; margin-right: 0.3em; color: var(--sg-muted); }
+  .sg__ttp { display: flex; flex-wrap: wrap; gap: 0.35em; margin-top: 0.35em; }
+  .sg__ttp span { font-size: 0.72em; font-weight: 700; border-radius: 6px; padding: 0.2em 0.5em; background: var(--c-navy); color: #fff; }
+  .sg__blk--sev { align-items: center; gap: 0.6em; }
+  .sg__crit { flex-shrink: 0; font-size: 0.74em; font-weight: 800; color: #fff; background: #b4361f; border-radius: 99px; padding: 0.25em 0.75em; }
+  .sg__blk--sev p { font-size: 0.82em; color: var(--sg-ink); line-height: 1.35; }
+  .sg__act-h { font-size: 0.68em; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--c-gold-text); }
+  .sg__blk--act ul { margin: 0.2em 0 0; padding: 0; list-style: none; font-size: 0.82em; color: var(--sg-ink); line-height: 1.55; }
+  .sg__blk--act li::before { content: ""; display: inline-block; width: 0.8em; height: 0.8em; border: 1.5px solid var(--c-gold-dark, #a8852d); border-radius: 3px; margin-right: 0.5em; vertical-align: -0.05em; }
+
+  /* staggered children */
+  .sg__blk--ctx span, .sg__blk--log p, .sg__ttp span, .sg__blk--act li { animation: ka-siber-guvenlik-in .35s ease both; animation-delay: calc(var(--i) * 260ms + 200ms); }
+
+  .sg__foot { display: flex; align-items: center; justify-content: space-between; gap: 0.6em; }
+  .sg__note { font-size: 0.72em; color: var(--sg-muted); }
+  .sg__btn { flex-shrink: 0; font-size: 0.78em; font-weight: 800; border-radius: 8px; padding: 0.5em 0.9em; background: #e9e6dc; color: var(--sg-muted); transition: background .3s, color .3s; }
+  .sg__btn-b { display: none; }
+
+  /* steps: 1 context, 2 verify, 3 rank, 4 respond, 5 approved, 6 fade */
+  .ka-siber-guvenlik[data-step="1"] .sg__stages li[data-s="1"],
+  .ka-siber-guvenlik[data-step="2"] .sg__stages li[data-s="2"],
+  .ka-siber-guvenlik[data-step="3"] .sg__stages li[data-s="3"],
+  .ka-siber-guvenlik[data-step="4"] .sg__stages li[data-s="4"],
+  .ka-siber-guvenlik[data-step="5"] .sg__stages li[data-s="4"] { background: var(--c-gold); color: var(--c-navy); }
+  .ka-siber-guvenlik[data-step="2"] .sg__stages li[data-s="1"],
+  .ka-siber-guvenlik[data-step="3"] .sg__stages li[data-s="1"],
+  .ka-siber-guvenlik[data-step="3"] .sg__stages li[data-s="2"],
+  .ka-siber-guvenlik[data-step="4"] .sg__stages li:not([data-s="4"]),
+  .ka-siber-guvenlik[data-step="5"] .sg__stages li:not([data-s="4"]) { color: #fff; }
+
+  .ka-siber-guvenlik:is([data-step="1"], [data-step="2"]) .sg__blk--ctx { display: flex; }
+  .ka-siber-guvenlik:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"]) .sg__blk--log { display: block; }
+  .ka-siber-guvenlik:is([data-step="3"], [data-step="4"], [data-step="5"]) .sg__blk--sev { display: flex; }
+  .ka-siber-guvenlik:is([data-step="4"], [data-step="5"]) .sg__blk--act { display: block; }
+  .ka-siber-guvenlik[data-step="4"] .sg__btn { background: var(--c-gold); color: var(--c-navy); }
+  .ka-siber-guvenlik[data-step="5"] .sg__btn { background: #dcefe2; color: #1d6b3a; }
+  .ka-siber-guvenlik[data-step="5"] .sg__btn-a { display: none; }
+  .ka-siber-guvenlik[data-step="5"] .sg__btn-b { display: inline; }
+  .ka-siber-guvenlik[data-step="6"] .sg__win { opacity: 0; }
+  .ka-siber-guvenlik:is([data-step="4"], [data-step="5"]) .sg__blk--log > p { display: none; }
+
+  @container (max-width: 520px) {
+    .sg__stages { padding: 0.5em 0.6em; gap: 0.25em; }
+    .sg__stages li { justify-content: center; padding: 0.3em; }
+    .sg__stages li span { display: none; }
+    .ka-siber-guvenlik[data-step="1"] li[data-s="1"] span,
+    .ka-siber-guvenlik[data-step="2"] li[data-s="2"] span,
+    .ka-siber-guvenlik[data-step="3"] li[data-s="3"] span,
+    .ka-siber-guvenlik:is([data-step="4"], [data-step="5"]) li[data-s="4"] span { display: inline; }
+    .sg__body { padding: 0.6em 0.7em 0.7em; }
+    .sg__note { display: none; }
+    .sg__foot { justify-content: flex-end; }
+  }
+
+  @keyframes ka-siber-guvenlik-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-siber-guvenlik-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-siber-guvenlik *, .ka-siber-guvenlik *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SG_SUBS = ['Alarm okunuyor', 'Bağlam ekleniyor', 'Kayıtlar ilişkilendiriliyor', 'Önem derecesi belirleniyor', 'Müdahale önerisi hazır', 'Analist onayladı'];
+
+  function setupSiberGuvenlik(root: HTMLElement) {
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    // each step shows its block; children fade in with staggered CSS animation delays
+    const step = (n: number) => {
+      root.dataset.step = String(n);
+      sub.textContent = SG_SUBS[Math.min(n, SG_SUBS.length - 1)];
+    };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      root.dataset.step = '0'; sub.textContent = SG_SUBS[0];
+    };
+
+    const cycle = () => {
+      reset();
+      at(1400, () => step(1));
+      at(4200, () => step(2));
+      at(7400, () => step(3));
+      at(9600, () => step(4));
+      at(12800, () => step(5));
+      at(15600, () => { root.dataset.step = '6'; });
+      at(16200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      root.dataset.step = '4'; sub.textContent = SG_SUBS[4];
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-siber-guvenlik').forEach(setupSiberGuvenlik);
+</script>

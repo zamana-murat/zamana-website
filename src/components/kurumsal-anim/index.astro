@@ -1,0 +1,243 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/ (Claude Enterprise overview).
+ * Scenario: one fictional company (Anadolu Lojistik) on Claude Enterprise. Four departments
+ * hand Claude a task on different surfaces (Excel, chat, Claude Code, Cowork); each card works
+ * and finishes, and every action lands in the admin audit log. Generic UI, no vendor logos.
+ * All elements live in the markup; the script only toggles data-step and per-card states.
+ */
+const cards = [
+  { dept: 'Finans', tool: 'Excel', task: 'Eylül tahsilatlarında sapma var mı?', done: '3 müşteride 4,2 milyon TL gecikme, tablo hazır' },
+  { dept: 'Satış', tool: 'Sohbet', task: 'Ege Tekstil görüşmesi için hazırlık notu', done: 'Not hazır: CRM kaydı ve son 3 e-posta' },
+  { dept: 'Yazılım', tool: 'Claude Code', task: 'Sipariş servisindeki zaman aşımı hatasını düzelt', done: 'Düzeltme hazır, 128 test geçti, PR #482' },
+  { dept: 'İnsan Kaynakları', tool: 'Cowork', task: '12 yeni çalışan için oryantasyon planı', done: 'Plan ve kişiye özel takvimler Drive\'da' },
+];
+const logs = [
+  { t: '09:41', who: 'Finans', what: 'Excel eklentisi', src: 'ERP: salt okuma' },
+  { t: '09:42', who: 'Satış', what: 'Sohbet', src: 'CRM bağlayıcısı' },
+  { t: '09:44', who: 'Yazılım', what: 'Claude Code', src: 'Depo: siparis-servisi' },
+  { t: '09:45', who: 'İK', what: 'Cowork', src: 'Drive: İK klasörü' },
+];
+---
+
+<div
+  class="ka-index"
+  data-step="0"
+  role="img"
+  aria-label="Anadolu Lojistik adlı kurgusal bir şirkette finans, satış, yazılım ve insan kaynakları ekipleri Claude'a aynı anda farklı işler veriyor; her iş tamamlanıyor ve yönetici panelindeki denetim kaydına düşüyor."
+>
+  <div class="ka-index-win" aria-hidden="true">
+    <div class="ka-index-bar">
+      <span class="ka-index-dot"></span><span class="ka-index-dot"></span><span class="ka-index-dot"></span>
+      <span class="ka-index-org">Anadolu Lojistik</span>
+      <span class="ka-index-plan">Enterprise · 240 koltuk</span>
+      <span class="ka-index-sso">
+        <svg viewBox="0 0 16 16" width="11" height="11"><path d="M4 7V5a4 4 0 0 1 8 0v2M3 7h10v7H3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        SSO
+      </span>
+    </div>
+
+    <div class="ka-index-grid">
+      {cards.map((c, i) => (
+        <div class="ka-index-card" data-card={i}>
+          <p class="ka-index-head"><strong>{c.dept}</strong><span class="ka-index-chip">{c.tool}</span></p>
+          <p class="ka-index-task">{c.task}</p>
+          <p class="ka-index-status">
+            <span class="ka-index-spin"></span>
+            <span class="ka-index-check">
+              <svg viewBox="0 0 16 16" width="12" height="12"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="ka-index-st-work">Çalışıyor</span>
+            <span class="ka-index-st-done">{c.done}</span>
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <div class="ka-index-log">
+      <p class="ka-index-log-h">
+        <span>Yönetici paneli · Denetim kaydı</span>
+        <span class="ka-index-sum">4 departman · 4 iş · tamamı kayıtta</span>
+      </p>
+      <ul>
+        {logs.map((l, i) => (
+          <li data-log={i}><span class="ka-index-t">{l.t}</span><b>{l.who}</b><span>{l.what}</span><span class="ka-index-src">{l.src}</span></li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-index {
+    --kx-ink: var(--c-navy);
+    --kx-muted: var(--c-text-muted);
+    --kx-line: var(--c-border);
+    --kx-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+    font-family: var(--font-sans);
+  }
+  .ka-index p { margin: 0; }
+  .ka-index-win { height: 100%; display: flex; flex-direction: column; background: var(--c-cream); transition: opacity .5s; }
+  .ka-index[data-step="9"] .ka-index-win { opacity: 0; }
+
+  .ka-index-bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 0.65em 1em; border-bottom: 1px solid var(--kx-line); background: #fff;
+  }
+  .ka-index-dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .ka-index-org { margin-left: 0.6em; font-weight: 800; color: var(--kx-ink); font-size: 0.88em; }
+  .ka-index-plan { font-size: 0.74em; color: var(--kx-muted); font-weight: 600; }
+  .ka-index-sso {
+    margin-left: auto; display: inline-flex; align-items: center; gap: 0.3em;
+    font-size: 0.68em; font-weight: 800; letter-spacing: .06em;
+    color: var(--c-navy); background: rgba(201, 168, 76, .22); border-radius: 999px; padding: 0.25em 0.7em;
+  }
+
+  .ka-index-grid {
+    flex: 1; min-height: 0;
+    display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+    gap: 0.6em; padding: 0.75em 0.9em 0.5em;
+  }
+  .ka-index-card {
+    background: #fff; border: 1px solid var(--kx-line); border-radius: 10px;
+    padding: 0.65em 0.8em; display: flex; flex-direction: column; gap: 0.35em; min-height: 0; overflow: hidden;
+    transition: border-color .4s, box-shadow .4s;
+  }
+  .ka-index-head { display: flex; align-items: center; justify-content: space-between; gap: 0.4em; }
+  .ka-index-head strong { color: var(--kx-ink); font-weight: 800; font-size: 0.92em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-index-chip {
+    flex-shrink: 0; font-size: 0.66em; font-weight: 800; letter-spacing: .03em;
+    color: var(--c-gold-text); background: var(--kx-soft); border-radius: 4px; padding: 0.2em 0.5em;
+  }
+  .ka-index-task {
+    color: var(--kx-ink); line-height: 1.35; font-size: 0.86em;
+    opacity: .35; transition: opacity .4s;
+  }
+  .ka-index-status {
+    margin-top: auto !important; display: flex; align-items: flex-start; gap: 0.4em;
+    font-size: 0.78em; line-height: 1.35; color: var(--kx-muted); min-height: 1.35em;
+  }
+  .ka-index-spin, .ka-index-check, .ka-index-st-work, .ka-index-st-done { display: none; }
+  .ka-index-spin {
+    width: 0.95em; height: 0.95em; flex-shrink: 0; margin-top: 0.15em; border-radius: 50%;
+    border: 2px solid rgba(201, 168, 76, .3); border-top-color: var(--c-gold);
+    animation: ka-index-spin .9s linear infinite;
+  }
+  .ka-index-check {
+    flex-shrink: 0; width: 1.25em; height: 1.25em; border-radius: 50%; margin-top: 0.02em;
+    background: var(--c-navy); color: var(--c-gold); place-items: center;
+  }
+  .ka-index-st-done { color: var(--kx-ink); font-weight: 600; }
+
+  .ka-index-card.is-work { border-color: var(--c-gold); box-shadow: 0 0 0 3px rgba(201, 168, 76, .15); }
+  .ka-index-card.is-work .ka-index-task,
+  .ka-index-card.is-done .ka-index-task { opacity: 1; }
+  .ka-index-card.is-work .ka-index-spin,
+  .ka-index-card.is-work .ka-index-st-work { display: inline-block; }
+  .ka-index-card.is-done .ka-index-check { display: inline-grid; }
+  .ka-index-card.is-done .ka-index-st-done { display: inline; animation: ka-index-in .35s ease both; }
+
+  .ka-index-log { background: #fff; border-top: 1px solid var(--kx-line); padding: 0.5em 1em 0.6em; }
+  .ka-index-log-h {
+    display: flex; justify-content: space-between; align-items: center; gap: 0.5em;
+    font-size: 0.66em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--c-gold-text);
+    margin-bottom: 0.3em !important;
+  }
+  .ka-index-sum {
+    letter-spacing: 0; text-transform: none; font-size: 1.1em; color: var(--c-navy);
+    background: rgba(201, 168, 76, .22); border-radius: 999px; padding: 0.15em 0.7em;
+    opacity: 0; transition: opacity .4s;
+  }
+  .ka-index[data-step="8"] .ka-index-sum { opacity: 1; }
+  .ka-index-log ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15em; }
+  .ka-index-log li {
+    display: grid; grid-template-columns: 3.4em 6.5em 7.5em 1fr; gap: 0.5em; align-items: baseline;
+    font-size: 0.74em; line-height: 1.45; color: var(--kx-ink);
+    opacity: 0; transform: translateY(4px); transition: opacity .35s, transform .35s;
+  }
+  .ka-index-log li.is-on { opacity: 1; transform: none; }
+  .ka-index-log li b { font-weight: 700; white-space: nowrap; }
+  .ka-index-log li span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-index-t { color: var(--kx-muted); font-variant-numeric: tabular-nums; }
+  .ka-index-src { color: var(--kx-muted); }
+
+  @container (max-width: 560px) {
+    .ka-index-plan { display: none; }
+    .ka-index-log li { grid-template-columns: 3.2em 5.6em 1fr; }
+    .ka-index-src { display: none; }
+  }
+  @container (max-width: 420px) {
+    .ka-index-log ul { display: none; }
+    .ka-index-log-h > span:first-child { display: none; }
+    .ka-index-log-h { justify-content: center; margin: 0 !important; }
+    .ka-index-sum { opacity: 1; }
+    .ka-index-grid { gap: 0.45em; padding: 0.55em 0.6em 0.45em; }
+    .ka-index-card { padding: 0.5em 0.6em; }
+    .ka-index-task { font-size: 0.82em; }
+  }
+
+  @keyframes ka-index-spin { to { transform: rotate(360deg); } }
+  @keyframes ka-index-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-index *, .ka-index *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  // Card i starts working at WORK[i] ms and finishes at DONE[i] ms; its audit-log row appears on finish.
+  const WORK = [500, 1500, 2600, 3700];
+  const DONE = [2700, 4100, 5900, 7000];
+
+  function setup(root: HTMLElement) {
+    const cards = Array.from(root.querySelectorAll<HTMLElement>('[data-card]'));
+    const rows = Array.from(root.querySelectorAll<HTMLElement>('[data-log]'));
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      cards.forEach((c) => c.classList.remove('is-work', 'is-done'));
+      rows.forEach((r) => r.classList.remove('is-on'));
+      step(0);
+    };
+    const finish = (i: number) => {
+      cards[i].classList.remove('is-work'); cards[i].classList.add('is-done');
+      rows[i].classList.add('is-on');
+    };
+
+    const cycle = () => {
+      reset();
+      cards.forEach((c, i) => {
+        at(WORK[i], () => { step(i + 1); c.classList.add('is-work'); });
+        at(DONE[i], () => finish(i));
+      });
+      at(8200, () => step(8));
+      at(13600, () => step(9));
+      at(14200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      cards.forEach((_, i) => finish(i));
+      step(8);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-index').forEach(setup);
+</script>

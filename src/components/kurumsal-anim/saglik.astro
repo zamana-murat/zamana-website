@@ -1,0 +1,196 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/saglik/ (replaces Anthropic's English hero media).
+ * Scenario (fictional): "Ege Şifa Hastanesi" patient message inbox, already de-identified (protocol codes,
+ * no names). Claude sorts the messages, escalates one with a warning sign to the on-call physician and
+ * shows a triage summary. Clinical decisions stay with physicians. All data is fictional.
+ */
+---
+
+<div
+  class="ka-saglik"
+  data-step="0"
+  role="img"
+  aria-label="Kurgusal Ege Şifa Hastanesi'nin kimlik bilgisi çıkarılmış hasta mesaj kutusu: Claude mesajları sekreterya, sonuç sorusu, ilaç ve reçete olarak ayırıyor, göğüs baskısından söz eden mesajı en üste alıp nöbetçi hekime iletiyor ve günün triyaj özetini gösteriyor. Klinik karar hekimde kalıyor."
+>
+  <div class="sg__win" aria-hidden="true">
+    <div class="sg__bar">
+      <span class="sg__dot"></span><span class="sg__dot"></span><span class="sg__dot"></span>
+      <span class="sg__bar-title">Ege Şifa Hastanesi · Hasta mesajları</span>
+      <span class="sg__anon">Kimlik bilgisi çıkarıldı</span>
+    </div>
+
+    <div class="sg__body">
+      <div class="sg__inbox">
+        <p class="sg__ih">Bugün <b>42</b> mesaj</p>
+        <div class="sg__rows">
+          <div class="sg__row" style="--i:0">
+            <p class="sg__meta"><b>Protokol A-1042</b><small>09:12</small></p>
+            <p class="sg__txt">Kontrol randevumu gelecek haftaya alabilir miyiz?</p>
+            <span class="sg__cat sg__cat--sek">Sekreterya</span>
+          </div>
+          <div class="sg__row" style="--i:1">
+            <p class="sg__meta"><b>Protokol A-1057</b><small>09:20</small></p>
+            <p class="sg__txt">Kan tahlili sonucum çıktı mı, ne zaman bakılır?</p>
+            <span class="sg__cat sg__cat--son">Sonuç sorusu</span>
+          </div>
+          <div class="sg__row sg__row--red" style="--i:2">
+            <p class="sg__meta"><b>Protokol A-1063</b><small>09:31</small></p>
+            <p class="sg__txt">Dünden beri göğsümde baskı var.</p>
+            <span class="sg__cat sg__cat--red">Nöbetçi hekime iletildi</span>
+          </div>
+          <div class="sg__row" style="--i:3">
+            <p class="sg__meta"><b>Protokol A-1071</b><small>09:44</small></p>
+            <p class="sg__txt">Reçetemdeki ilacın bitmesine üç gün kaldı.</p>
+            <span class="sg__cat sg__cat--ilac">İlaç ve reçete</span>
+          </div>
+          <div class="sg__row" style="--i:4">
+            <p class="sg__meta"><b>Protokol A-1088</b><small>09:58</small></p>
+            <p class="sg__txt">Epikriz raporumu e-posta ile alabilir miyim?</p>
+            <span class="sg__cat sg__cat--sek">Sekreterya</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sg__panel">
+        <p class="sg__ph">
+          <span class="sg__spark"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          Triyaj özeti
+        </p>
+        <p class="sg__work" data-role="sub">Mesajlar okunuyor</p>
+        <ul class="sg__bars">
+          <li style="--v:43%; --i:0"><span>Sekreterya</span><b>18</b><i></i></li>
+          <li style="--v:29%; --i:1"><span>İlaç ve reçete</span><b>12</b><i></i></li>
+          <li style="--v:26%; --i:2"><span>Sonuç sorusu</span><b>11</b><i></i></li>
+          <li class="sg__bars--red" style="--v:3%; --i:3"><span>Hekime acil</span><b>1</b><i></i></li>
+        </ul>
+        <p class="sg__note">Yanıt taslakları sekreterya onayında. Klinik değerlendirme hekimindir.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-saglik {
+    --sg-ink: var(--c-navy);
+    --sg-muted: var(--c-text-muted);
+    --sg-line: rgba(15, 40, 85, .12);
+    --sg-soft: #f6f4ee;
+    --sg-red: #b3261e;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+  }
+  .sg__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .sg__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--sg-line); min-width: 0; }
+  .sg__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; flex-shrink: 0; }
+  .sg__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--sg-ink); font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sg__anon { margin-left: auto; font-size: 0.7em; font-weight: 800; color: var(--c-gold-text); background: rgba(201, 168, 76, .16); border-radius: 999px; padding: 0.15em 0.7em; white-space: nowrap; }
+  .sg__body { flex: 1; display: flex; min-height: 0; }
+
+  /* inbox */
+  .sg__inbox { flex: 1.35; min-width: 0; min-height: 0; display: flex; flex-direction: column; padding: 0.6em 0.9em 0.9em; }
+  .sg__ih { margin: 0 0 0.45em; font-size: 0.78em; color: var(--sg-muted); }
+  .sg__ih b { color: var(--sg-ink); }
+  .sg__rows {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 0.4em;
+    -webkit-mask-image: linear-gradient(to top, transparent 0, #000 1.4em);
+    mask-image: linear-gradient(to top, transparent 0, #000 1.4em);
+  }
+  .sg__row { flex-shrink: 0; position: relative; border: 1px solid var(--sg-line); border-radius: 8px; padding: 0.4em 0.7em; background: #fff; transition: border-color .3s, background .3s; }
+  .sg__meta { margin: 0; display: flex; align-items: baseline; gap: 0.5em; font-size: 0.74em; color: var(--sg-muted); }
+  .sg__meta b { color: var(--sg-ink); }
+  .sg__txt { margin: 0.1em 0 0; font-size: 0.86em; color: var(--sg-ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sg__cat { position: absolute; top: 0.4em; right: 0.6em; display: none; font-size: 0.68em; font-weight: 800; border-radius: 999px; padding: 0.12em 0.6em; }
+  .sg__cat--sek { background: #e6ecf6; color: var(--c-navy); }
+  .sg__cat--son { background: #e3f1e6; color: #1f5e33; }
+  .sg__cat--ilac { background: #f4ead0; color: var(--c-gold-text); }
+  .sg__cat--red { background: var(--sg-red); color: #fff; }
+
+  /* summary panel */
+  .sg__panel { flex: 1; min-width: 0; border-left: 1px solid var(--sg-line); background: #fbfaf6; padding: 0.7em 0.9em 0.9em; display: flex; flex-direction: column; gap: 0.5em; }
+  .sg__ph { margin: 0; display: flex; align-items: center; gap: 0.45em; font-weight: 800; color: var(--sg-ink); font-size: 0.9em; }
+  .sg__spark { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 5px; background: var(--c-navy); color: var(--c-gold); }
+  .sg__work { margin: 0; font-size: 0.82em; color: var(--sg-muted); opacity: 0; }
+  .sg__work::before { content: ''; display: inline-block; width: 0.7em; height: 0.7em; margin-right: 0.45em; border-radius: 50%; border: 2px solid var(--c-gold); border-right-color: transparent; vertical-align: -0.05em; animation: ka-saglik-spin 1s linear infinite; }
+  .sg__bars { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55em; }
+  .sg__bars li { display: grid; grid-template-columns: 1fr auto; gap: 0.2em 0.5em; font-size: 0.8em; color: var(--sg-ink); }
+  .sg__bars b { font-weight: 800; }
+  .sg__bars i { grid-column: 1 / -1; height: 0.45em; border-radius: 999px; background: var(--sg-line); position: relative; overflow: hidden; }
+  .sg__bars i::after { content: ''; position: absolute; inset: 0 auto 0 0; width: 0; min-width: 0; border-radius: 999px; background: var(--c-navy); transition: width .6s calc(var(--i) * 200ms) ease; }
+  .sg__bars--red { color: var(--sg-red) !important; }
+  .sg__bars--red i::after { background: var(--sg-red); }
+  .sg__note { margin: auto 0 0; font-size: 0.74em; line-height: 1.4; color: var(--c-navy); border-top: 1px solid var(--sg-line); padding-top: 0.5em; opacity: 0; transition: opacity .4s .9s; }
+
+  @container (max-width: 520px) {
+    .sg__body { flex-direction: column; }
+    .sg__panel { border-left: none; border-top: 1px solid var(--sg-line); flex: none; padding: 0.5em 0.9em 0.7em; gap: 0.35em; }
+    .sg__bars { flex-direction: row; flex-wrap: wrap; gap: 0.3em 0.8em; }
+    .sg__bars li { display: flex; gap: 0.3em; font-size: 0.74em; }
+    .sg__bars i { display: none; }
+    .sg__note { margin-top: 0.1em; }
+    .sg__anon { display: none; }
+    .sg__row:nth-child(n+4) { display: none; }
+    .sg__ph { font-size: 0.82em; }
+  }
+
+  /* step states */
+  .ka-saglik:is([data-step="1"], [data-step="2"]) .sg__work { opacity: 1; }
+  .ka-saglik:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"]) .sg__cat { display: inline-block; animation: ka-saglik-in .35s calc(var(--i) * 260ms) ease both; }
+  .ka-saglik:is([data-step="3"], [data-step="4"], [data-step="5"]) .sg__row--red { order: -1; border-color: var(--sg-red); background: #fdf3f2; animation: ka-saglik-up .45s ease both; }
+  .ka-saglik:is([data-step="3"], [data-step="4"], [data-step="5"]) .sg__bars i::after { width: var(--v); min-width: 0.45em; }
+  .ka-saglik:is([data-step="3"], [data-step="4"], [data-step="5"]) .sg__note { opacity: 1; }
+  .ka-saglik[data-step="5"] .sg__win { opacity: 0; }
+
+  @keyframes ka-saglik-in { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
+  @keyframes ka-saglik-up { from { opacity: .3; transform: translateY(1.2em); } to { opacity: 1; transform: none; } }
+  @keyframes ka-saglik-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-saglik *, .ka-saglik *::before, .ka-saglik *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = ['Mesajlar okunuyor', 'Konuya ve aciliyete göre ayrılıyor'];
+
+  function setup(root: HTMLElement) {
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      sub.textContent = SUBS[0]; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(1400, () => step(1));
+      at(3000, () => { sub.textContent = SUBS[1]; step(2); });
+      at(5600, () => step(3));
+      at(9000, () => step(4));
+      at(13600, () => step(5));
+      at(14200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-saglik').forEach(setup);
+</script>

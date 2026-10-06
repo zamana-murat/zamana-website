@@ -1,0 +1,220 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/yasam-bilimleri/.
+ * Scenario: a clinical team at a fictional biotech asks Claude for a literature synthesis.
+ * Claude searches public research databases (counters tick up), builds a cited evidence table,
+ * then checks a draft protocol and flags a gap. All data is fictional. No logos.
+ */
+---
+
+<div
+  class="ka-yasam-bilimleri"
+  data-step="0"
+  data-text="Son 5 yılın randomize çalışmalarını tara, kanıt tablosu çıkar ve protokol taslağımızı kontrol et."
+  role="img"
+  aria-label="Kurgusal bir biyoteknoloji şirketinin klinik ekibi Claude'dan literatür taraması istiyor. Claude araştırma veritabanlarında yayınları tarıyor, kaynak numaralı bir kanıt tablosu çıkarıyor, ardından protokol taslağını kontrol edip eksik bir bölümü işaretliyor. Veriler kurgusaldır."
+>
+  <div class="kays__win" aria-hidden="true">
+    <div class="kays__bar">
+      <span class="kays__dot"></span><span class="kays__dot"></span><span class="kays__dot"></span>
+      <span class="kays__bar-title">Defne Biyoteknoloji · Klinik geliştirme</span>
+    </div>
+
+    <div class="kays__main">
+      <div class="kays__msgs">
+        <div class="kays__msg kays__msg--me kays__msg--sent">
+          <p class="kays__bubble">Son 5 yılın randomize çalışmalarını tara, kanıt tablosu çıkar ve protokol taslağımızı kontrol et.</p>
+        </div>
+
+        <div class="kays__msg kays__msg--claude">
+          <span class="kays__av">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </span>
+          <div class="kays__mbody">
+            <div class="kays__search">
+              <p class="kays__row"><span class="kays__db">PubMed</span><span class="kays__bar-t"><i style="--p:100%"></i></span><b data-count="214">0</b></p>
+              <p class="kays__row"><span class="kays__db">bioRxiv</span><span class="kays__bar-t"><i style="--p:45%"></i></span><b data-count="31">0</b></p>
+              <p class="kays__row"><span class="kays__db">ClinicalTrials.gov</span><span class="kays__bar-t"><i style="--p:30%"></i></span><b data-count="18">0</b></p>
+              <p class="kays__fit">Ölçüte uyan: <strong>12 çalışma</strong></p>
+            </div>
+
+            <div class="kays__table">
+              <p class="kays__ttl">Kanıt tablosu · birincil sonlanım</p>
+              <div class="kays__tr kays__tr--h"><span>Çalışma</span><span>n</span><span>Sonuç</span><span>Atıf</span></div>
+              <div class="kays__tr" style="--i:0"><span>Çalışma A, 2023</span><span>3.240</span><span class="kays__pos">Anlamlı fayda</span><span class="kays__ref">[1]</span></div>
+              <div class="kays__tr" style="--i:1"><span>Çalışma B, 2024</span><span>1.115</span><span class="kays__pos">Anlamlı fayda</span><span class="kays__ref">[2]</span></div>
+              <div class="kays__tr" style="--i:2"><span>Çalışma C, 2025</span><span>860</span><span class="kays__neu">Fark yok</span><span class="kays__ref">[3]</span></div>
+            </div>
+
+            <div class="kays__check">
+              <p class="kays__ttl">Protokol taslağı kontrolü</p>
+              <p class="kays__ci" style="--i:0"><span class="kays__ok">✓</span>Birincil sonlanım noktası tanımlı</p>
+              <p class="kays__ci" style="--i:1"><span class="kays__ok">✓</span>Dahil etme ve dışlama ölçütleri</p>
+              <p class="kays__ci kays__ci--warn" style="--i:2"><span class="kays__no">!</span>Güvenlik izlem planı eksik, bölüm 8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kays__comp">
+        <span class="kays__ph">Araştırma sorunuzu yazın</span>
+        <span data-role="c1"></span><span class="kays__caret"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-yasam-bilimleri {
+    --kays-ink: var(--c-navy);
+    --kays-muted: var(--c-text-muted);
+    --kays-line: var(--c-border);
+    --kays-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+    container-type: inline-size;
+  }
+  .kays__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .kays__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--kays-line); }
+  .kays__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; flex-shrink: 0; }
+  .kays__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--kays-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .kays__main { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0 1.3em 1em; }
+  .kays__msgs {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end;
+    padding-top: 0.6em; padding-bottom: 0.25em; gap: 0.7em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+  }
+  .kays__msg { display: none; gap: 0.6em; align-items: flex-start; animation: ka-yasam-bilimleri-in .4s ease both; }
+  .kays__msg--me { justify-content: flex-end; }
+  .kays__bubble { margin: 0; max-width: 82%; background: var(--kays-soft); color: var(--kays-ink); border-radius: 14px 14px 4px 14px; padding: 0.55em 0.85em; line-height: 1.4; }
+  .kays__av { width: 2em; height: 2em; border-radius: 7px; flex-shrink: 0; display: grid; place-items: center; background: var(--c-navy); color: var(--c-gold); }
+  .kays__mbody { min-width: 0; flex: 1; }
+  .kays__ttl { margin: 0.1em 0 0.4em; font-weight: 800; color: var(--kays-ink); font-size: 0.92em; }
+
+  /* search */
+  .kays__search { display: none; }
+  .kays__row { display: grid; grid-template-columns: 9.5em 1fr 2.6em; align-items: center; gap: 0.6em; margin: 0 0 0.35em; font-size: 0.84em; }
+  .kays__db { font-weight: 700; color: var(--kays-ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kays__bar-t { height: 6px; border-radius: 3px; background: var(--kays-soft); overflow: hidden; }
+  .kays__bar-t i { display: block; height: 100%; width: 0; background: var(--c-gold); border-radius: 3px; transition: width 2.2s ease-out; }
+  .kays__row b { text-align: right; color: var(--kays-ink); font-variant-numeric: tabular-nums; }
+  .kays__fit { margin: 0.4em 0 0; font-size: 0.84em; color: var(--kays-muted); opacity: 0; transition: opacity .4s 2.3s; }
+  .kays__fit strong { color: var(--kays-ink); }
+
+  /* table */
+  .kays__table { display: none; }
+  .kays__tr {
+    display: grid; grid-template-columns: minmax(0, 1.6fr) 0.7fr minmax(0, 1.2fr) 0.6fr; gap: 0.5em;
+    padding: 0.32em 0.5em; font-size: 0.82em; color: var(--kays-ink); border-bottom: 1px solid var(--kays-line);
+    opacity: 0; transform: translateX(-6px);
+    transition: opacity .3s calc(var(--i, 0) * 240ms + 120ms), transform .3s calc(var(--i, 0) * 240ms + 120ms);
+  }
+  .kays__tr span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kays__tr--h { font-size: 0.7em; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--kays-muted); background: var(--kays-soft); border-radius: 6px 6px 0 0; }
+  .kays__pos { color: #1d6b3d; font-weight: 700; }
+  .kays__neu { color: var(--kays-muted); font-weight: 700; }
+  .kays__ref { color: var(--c-gold-text); font-weight: 800; }
+
+  /* protocol check */
+  .kays__check { display: none; margin-top: 0.7em; }
+  .kays__ci {
+    margin: 0 0 0.3em; display: flex; align-items: center; gap: 0.5em; font-size: 0.85em; color: var(--kays-ink);
+    opacity: 0; transition: opacity .3s calc(var(--i) * 300ms + 200ms);
+  }
+  .kays__ci--warn { background: #fdf3e2; border: 1px solid rgba(201, 168, 76, .55); border-radius: 6px; padding: 0.3em 0.5em; font-weight: 700; }
+  .kays__ok, .kays__no { width: 1.35em; height: 1.35em; border-radius: 50%; display: inline-grid; place-items: center; font-size: 0.8em; font-weight: 900; flex-shrink: 0; }
+  .kays__ok { background: rgba(95, 208, 138, .2); color: #1d6b3d; }
+  .kays__no { background: var(--c-gold); color: var(--c-navy); }
+
+  @container (max-width: 470px) {
+    .kays__row { grid-template-columns: 7.6em 1fr 2.4em; }
+    .kays__tr { grid-template-columns: minmax(0, 1.5fr) 0.8fr minmax(0, 1.2fr) 0.5fr; font-size: 0.76em; }
+  }
+
+  .kays__comp {
+    margin-top: 0.5em; border: 1px solid rgba(15, 40, 85, .22); border-radius: 9px;
+    padding: 0.6em 0.9em; min-height: 1.4em; line-height: 1.4; color: var(--kays-ink); background: #fff;
+    white-space: nowrap; overflow: hidden;
+  }
+  .kays__ph { color: var(--kays-muted); opacity: .8; }
+  .kays__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--kays-ink); animation: ka-yasam-bilimleri-blink 1s steps(1) infinite; }
+  .ka-yasam-bilimleri[data-typing] .kays__caret { display: inline-block; }
+
+  /* step states: 2 search, 3 table, 4 protocol check */
+  .ka-yasam-bilimleri[data-step="1"] .kays__ph { display: none; }
+  .ka-yasam-bilimleri:is([data-step="2"], [data-step="3"], [data-step="4"]) .kays__msg--sent { display: flex; }
+  .ka-yasam-bilimleri:is([data-step="2"], [data-step="3"], [data-step="4"]) .kays__msg--claude { display: flex; animation-delay: .4s; }
+  .ka-yasam-bilimleri[data-step="2"] .kays__search { display: block; }
+  .ka-yasam-bilimleri[data-search] .kays__bar-t i { width: var(--p); }
+  .ka-yasam-bilimleri[data-search] .kays__fit { opacity: 1; }
+  .ka-yasam-bilimleri:is([data-step="3"], [data-step="4"]) .kays__table { display: block; }
+  .ka-yasam-bilimleri:is([data-step="3"], [data-step="4"]) .kays__tr { opacity: 1; transform: none; }
+  .ka-yasam-bilimleri[data-step="4"] .kays__check { display: block; }
+  .ka-yasam-bilimleri[data-step="4"] .kays__ci { opacity: 1; }
+  .ka-yasam-bilimleri[data-step="5"] .kays__win { opacity: 0; transition: opacity .5s; }
+
+  @keyframes ka-yasam-bilimleri-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-yasam-bilimleri-blink { 50% { opacity: 0; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-yasam-bilimleri *, .ka-yasam-bilimleri *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setup(root: HTMLElement) {
+    const text = root.dataset.text || '';
+    const c1 = root.querySelector<HTMLElement>('[data-role="c1"]')!;
+    const counters = [...root.querySelectorAll<HTMLElement>('[data-count]')];
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+    const setCounts = (f: number) => counters.forEach((c) => { c.textContent = String(Math.round(Number(c.dataset.count) * f)); });
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      c1.textContent = ''; setCounts(0);
+      delete root.dataset.typing; delete root.dataset.search; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(900, () => { step(1); root.dataset.typing = '1'; });
+      for (let i = 0; i <= text.length; i++) at(1000 + i * 22, () => {
+        const s = text.slice(0, i);
+        c1.textContent = s.length > 46 ? '…' + s.slice(-45) : s;
+      });
+      const t1 = 1000 + text.length * 22;
+      at(t1 + 500, () => { delete root.dataset.typing; c1.textContent = ''; step(2); });
+      at(t1 + 1100, () => { root.dataset.search = '1'; });
+      for (let k = 1; k <= 20; k++) at(t1 + 1100 + k * 105, () => setCounts(k / 20));
+      const t2 = t1 + 4600;
+      at(t2, () => step(3));
+      const t3 = t2 + 3000;
+      at(t3, () => step(4));
+      at(t3 + 4400, () => step(5));
+      at(t3 + 5000, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setCounts(1); root.dataset.search = '1';
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-yasam-bilimleri').forEach(setup);
+</script>

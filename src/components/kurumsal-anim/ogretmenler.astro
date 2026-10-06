@@ -1,0 +1,220 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/ogretmenler/.
+ * Scenario: a teacher at a fictional middle school asks Claude for a 40-minute 7th grade math
+ * lesson; Claude builds a timed lesson plan, then three differentiated question sets.
+ * The teacher reviews before use. Generic UI, no logos. Script toggles data-step and types.
+ */
+---
+
+<div
+  class="ka-ogretmenler"
+  data-step="0"
+  data-text="7. sınıf, 40 dakika: birinci dereceden denklemler. Isınma, örnek, alıştırma ve çıkış kartı olsun."
+  role="img"
+  aria-label="Bir ortaokul öğretmeni Claude'dan 7. sınıf için 40 dakikalık denklem dersi istiyor. Claude süreleri belli bir ders planı çıkarıyor, ardından destek gereken, sınıf düzeyindeki ve ileri öğrenciler için üç ayrı soru seti hazırlıyor; öğretmen kontrol edip kullanıyor."
+>
+  <div class="kaog__win" aria-hidden="true">
+    <div class="kaog__bar">
+      <span class="kaog__dot"></span><span class="kaog__dot"></span><span class="kaog__dot"></span>
+      <span class="kaog__bar-title">Çınaraltı Ortaokulu · Matematik</span>
+    </div>
+
+    <div class="kaog__main">
+      <div class="kaog__msgs">
+        <div class="kaog__msg kaog__msg--me kaog__msg--sent">
+          <p class="kaog__bubble">7. sınıf, 40 dakika: birinci dereceden denklemler. Isınma, örnek, alıştırma ve çıkış kartı olsun.</p>
+        </div>
+
+        <div class="kaog__msg kaog__msg--claude">
+          <span class="kaog__av">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </span>
+          <div class="kaog__mbody">
+            <div class="kaog__work">
+              <span class="kaog__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+              <span data-role="sub">Kazanım ve süre planlanıyor</span>
+            </div>
+
+            <div class="kaog__plan">
+              <p class="kaog__ptitle">Ders planı · Denklemler · 40 dk</p>
+              <div class="kaog__tl">
+                <div class="kaog__seg kaog__seg--a" style="--i:0;--w:5"><b>Isınma</b><small>5 dk</small></div>
+                <div class="kaog__seg kaog__seg--b" style="--i:1;--w:10"><b>Örnek</b><small>10 dk</small></div>
+                <div class="kaog__seg kaog__seg--c" style="--i:2;--w:20"><b>Alıştırma</b><small>20 dk</small></div>
+                <div class="kaog__seg kaog__seg--d" style="--i:3;--w:5"><b>Çıkış</b><small>5 dk</small></div>
+              </div>
+            </div>
+
+            <div class="kaog__diff">
+              <p class="kaog__ptitle">Alıştırma, üç düzeyde</p>
+              <div class="kaog__cols">
+                <div class="kaog__col" style="--i:0"><span class="kaog__lvl">Destek</span><code>x + 4 = 9</code></div>
+                <div class="kaog__col kaog__col--on" style="--i:1"><span class="kaog__lvl">Sınıf düzeyi</span><code>3x − 5 = 16</code></div>
+                <div class="kaog__col" style="--i:2"><span class="kaog__lvl">İleri</span><code>2(x + 3) = 5x − 9</code></div>
+              </div>
+              <p class="kaog__note"><span class="kaog__chk">✓</span> Öğretmen kontrolünden sonra dağıtılacak · öğrenci adı kullanılmadı</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kaog__comp">
+        <span class="kaog__ph">Claude'a ders planı için yaz</span>
+        <span data-role="c1"></span><span class="kaog__caret"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-ogretmenler {
+    --kaog-ink: var(--c-navy);
+    --kaog-muted: var(--c-text-muted);
+    --kaog-line: var(--c-border);
+    --kaog-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+    container-type: inline-size;
+  }
+  .kaog__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .kaog__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--kaog-line); }
+  .kaog__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; flex-shrink: 0; }
+  .kaog__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--kaog-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .kaog__main { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0 1.3em 1em; }
+  .kaog__msgs {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end;
+    padding-top: 0.6em; padding-bottom: 0.25em; gap: 0.7em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+  }
+  .kaog__msg { display: none; gap: 0.6em; align-items: flex-start; animation: ka-ogretmenler-in .4s ease both; }
+  .kaog__msg--me { justify-content: flex-end; }
+  .kaog__bubble { margin: 0; max-width: 82%; background: var(--kaog-soft); color: var(--kaog-ink); border-radius: 14px 14px 4px 14px; padding: 0.55em 0.85em; line-height: 1.4; }
+  .kaog__av { width: 2em; height: 2em; border-radius: 7px; flex-shrink: 0; display: grid; place-items: center; background: var(--c-navy); color: var(--c-gold); }
+  .kaog__mbody { min-width: 0; flex: 1; }
+  .kaog__work { display: none; align-items: center; gap: 0.5em; margin-top: 0.35em; color: var(--kaog-muted); font-size: 0.9em; }
+  .kaog__spark { color: var(--c-gold); display: inline-flex; animation: ka-ogretmenler-spin 1.6s linear infinite; }
+
+  .kaog__plan, .kaog__diff { display: none; }
+  .kaog__ptitle { margin: 0.1em 0 0.45em; font-weight: 800; color: var(--kaog-ink); font-size: 0.95em; }
+  .kaog__tl { display: flex; gap: 3px; }
+  .kaog__seg {
+    flex: var(--w) 1 0; min-width: 0; border-radius: 6px; padding: 0.45em 0.5em; line-height: 1.2;
+    opacity: 0; transform: scaleX(.6); transform-origin: left;
+    transition: opacity .35s calc(var(--i) * 220ms + 100ms), transform .35s calc(var(--i) * 220ms + 100ms);
+  }
+  .kaog__seg b { display: block; font-size: 0.8em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kaog__seg small { font-size: 0.72em; opacity: .8; }
+  .kaog__seg--a { background: #f4ead0; color: var(--c-gold-text); }
+  .kaog__seg--b { background: #e3e9f4; color: var(--c-navy); }
+  .kaog__seg--c { background: var(--c-navy); color: #fff; }
+  .kaog__seg--d { background: var(--c-gold); color: var(--c-navy); }
+
+  .kaog__diff { margin-top: 0.8em; }
+  .kaog__cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.45em; }
+  .kaog__col {
+    border: 1px solid var(--kaog-line); border-radius: 8px; padding: 0.5em 0.6em; background: #fff;
+    opacity: 0; transform: translateY(6px);
+    transition: opacity .35s calc(var(--i) * 240ms + 150ms), transform .35s calc(var(--i) * 240ms + 150ms);
+  }
+  .kaog__col--on { border-color: var(--c-gold); background: #fdfaf1; }
+  .kaog__lvl { display: block; font-size: 0.68em; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--c-gold-text); margin-bottom: 0.25em; }
+  .kaog__col code { font-family: var(--font-sans); font-weight: 700; font-size: 0.86em; color: var(--kaog-ink); white-space: nowrap; }
+  .kaog__note { margin: 0.55em 0 0; font-size: 0.75em; color: var(--kaog-muted); opacity: 0; transition: opacity .4s 1s; }
+  .kaog__chk { color: #1d6b3d; font-weight: 800; }
+  @container (max-width: 470px) {
+    .kaog__cols { grid-template-columns: 1fr; gap: 0.3em; }
+    .kaog__col { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5em; padding: 0.35em 0.6em; }
+    .kaog__lvl { margin: 0; }
+    .kaog__seg small { display: none; }
+    .kaog__seg--a, .kaog__seg--d { flex: 0 0 auto; }
+  }
+
+  .kaog__comp {
+    margin-top: 0.5em; border: 1px solid rgba(15, 40, 85, .22); border-radius: 9px;
+    padding: 0.6em 0.9em; min-height: 1.4em; line-height: 1.4; color: var(--kaog-ink); background: #fff;
+    white-space: nowrap; overflow: hidden; direction: ltr;
+  }
+  .kaog__ph { color: var(--kaog-muted); opacity: .8; }
+  .kaog__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--kaog-ink); animation: ka-ogretmenler-blink 1s steps(1) infinite; }
+  .ka-ogretmenler[data-typing] .kaog__caret { display: inline-block; }
+
+  /* step states */
+  .ka-ogretmenler[data-step="1"] .kaog__ph { display: none; }
+  .ka-ogretmenler:is([data-step="2"], [data-step="3"], [data-step="4"]) .kaog__msg--sent { display: flex; }
+  .ka-ogretmenler:is([data-step="2"], [data-step="3"], [data-step="4"]) .kaog__msg--claude { display: flex; animation-delay: .5s; }
+  .ka-ogretmenler[data-step="2"] .kaog__work { display: flex; }
+  .ka-ogretmenler:is([data-step="3"], [data-step="4"]) .kaog__plan { display: block; }
+  .ka-ogretmenler:is([data-step="3"], [data-step="4"]) .kaog__seg { opacity: 1; transform: none; }
+  .ka-ogretmenler[data-step="4"] .kaog__diff { display: block; }
+  .ka-ogretmenler[data-step="4"] .kaog__col { opacity: 1; transform: none; }
+  .ka-ogretmenler[data-step="4"] .kaog__note { opacity: 1; }
+  .ka-ogretmenler[data-step="5"] .kaog__win { opacity: 0; transition: opacity .5s; }
+
+  @keyframes ka-ogretmenler-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-ogretmenler-blink { 50% { opacity: 0; } }
+  @keyframes ka-ogretmenler-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-ogretmenler *, .ka-ogretmenler *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = ['Kazanım ve süre planlanıyor', 'Örnek çözüm ve alıştırmalar yazılıyor', 'Çıkış kartı hazırlanıyor'];
+
+  function setup(root: HTMLElement) {
+    const text = root.dataset.text || '';
+    const c1 = root.querySelector<HTMLElement>('[data-role="c1"]')!;
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      c1.textContent = ''; sub.textContent = SUBS[0];
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(900, () => { step(1); root.dataset.typing = '1'; });
+      // long prompt: type fast and keep the tail visible in the one-line composer
+      for (let i = 0; i <= text.length; i++) at(1000 + i * 22, () => {
+        const s = text.slice(0, i);
+        c1.textContent = s.length > 46 ? '…' + s.slice(-45) : s;
+      });
+      const t1 = 1000 + text.length * 22;
+      at(t1 + 500, () => { delete root.dataset.typing; c1.textContent = ''; step(2); });
+      at(t1 + 1800, () => { sub.textContent = SUBS[1]; });
+      at(t1 + 3000, () => { sub.textContent = SUBS[2]; });
+      const t2 = t1 + 4000;
+      at(t2, () => step(3));
+      const t3 = t2 + 2600;
+      at(t3, () => step(4));
+      at(t3 + 4600, () => step(5));
+      at(t3 + 5200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-ogretmenler').forEach(setup);
+</script>

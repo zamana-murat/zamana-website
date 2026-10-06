@@ -1,5 +1,6 @@
 ---
 import { claudeFooterLinks } from '../data/claude-nav';
+import { kurumsalFooterLinks } from '../data/kurumsal-nav';
 const year = new Date().getFullYear();
 ---
 
@@ -36,6 +37,7 @@ const year = new Date().getFullYear();
       <ul>
         <li><a href="/programlar/bireysel/">Bireysel Program</a></li>
         <li><a href="/programlar/kurumsal/">Kurumsal Program</a></li>
+        <li><a href="/programlar/#uzman-programlar">Uzman Programlar</a></li>
         <li><a href="/programlar/karsilastirma/">Karşılaştırma</a></li>
         <li><a href="/yapay-zeka-egitimi/">Yapay Zeka Eğitimi</a></li>
         <li><a href="/sss/">Sık Sorulan Sorular</a></li>
@@ -46,6 +48,15 @@ const year = new Date().getFullYear();
       <h3>Claude</h3>
       <ul>
         {claudeFooterLinks.map((l) => (
+          <li><a href={l.href}>{l.label}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="col">
+      <h3>Kurumsal</h3>
+      <ul>
+        {kurumsalFooterLinks.map((l) => (
           <li><a href={l.href}>{l.label}</a></li>
         ))}
       </ul>
@@ -94,7 +105,7 @@ const year = new Date().getFullYear();
   }
   .site-footer__grid {
     display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr 1fr 1.3fr;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr 1.3fr;
     gap: var(--s-5);
     padding-bottom: var(--s-6);
     border-bottom: 1px solid rgba(255,255,255,0.1);

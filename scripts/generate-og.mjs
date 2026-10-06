@@ -55,8 +55,8 @@ const pages = [
   {
     slug: 'programlar',
     eyebrow: 'Eğitim',
-    title: 'Üç yol. Aynı sonuç.',
-    subtitle: 'Yönetici AI Hazırlık · Bireysel · Kurumsal',
+    title: 'Üç ana yol, altı uzman program.',
+    subtitle: 'Yönetici AI Hazırlık · Bireysel · Kurumsal · Uzman programlar',
   },
   {
     slug: 'programlar-bireysel',
@@ -75,6 +75,42 @@ const pages = [
     eyebrow: 'Yönetici AI Hazırlık',
     title: '3 saat. AI\'ı anlamak. Karar vermek.',
     subtitle: '15.000 TL + KDV · Hafta sonu · Sizin seçtiğiniz adreste',
+  },
+  {
+    slug: 'programlar-ai-sampiyonu',
+    eyebrow: 'AI Şampiyonu ve Eğitmen Programı',
+    title: "Claude'u kurumunuzda siz öğretin.",
+    subtitle: '80.000 TL + KDV · Eğitmen yolu 45.000 TL + KDV',
+  },
+  {
+    slug: 'programlar-ihracatcilar',
+    eyebrow: 'İhracatçılar için Claude',
+    title: 'Teklif, yazışma, pazar araştırması. Daha hızlı.',
+    subtitle: '45.000 TL + KDV · Ekip seçeneği · 3 ay destek',
+  },
+  {
+    slug: 'programlar-hukuk-burolari',
+    eyebrow: 'Hukuk Büroları için Claude',
+    title: 'Avukatın yerine değil, avukatın yanında.',
+    subtitle: '45.000 TL + KDV · Büro paketi · 3 ay destek',
+  },
+  {
+    slug: 'programlar-kamu-kurumlari',
+    eyebrow: 'Kamu Kurumları için Güvenli Kullanım',
+    title: 'Yapay zekayı kurumda güvenle kullanmak.',
+    subtitle: '45.000 TL + KDV · Yarım gün seminer · 30 kişiye kadar',
+  },
+  {
+    slug: 'programlar-akademisyenler',
+    eyebrow: 'Akademisyenler için Araştırma ve Yazım',
+    title: 'Daha hızlı araştırma, doğrulanmış kaynak.',
+    subtitle: '30.000 TL + KDV · Araştırma grubu seçeneği',
+  },
+  {
+    slug: 'programlar-yeni-mezun',
+    eyebrow: 'Yeni Mezun ve Kariyer Programı',
+    title: 'İş hayatına Claude ile hazır başlayın.',
+    subtitle: '7.500 TL + KDV · 4 hafta · Çevrim içi kohort',
   },
   {
     slug: 'programlar-karsilastirma',

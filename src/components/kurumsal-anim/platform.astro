@@ -1,0 +1,230 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/platform/ (Claude Platform, the API).
+ * Scenario: a fictional insurer (Anadolu Sigorta) runs a claims agent through the Messages API.
+ * Left: the request (code). Right: the run trace, tool calls returning, a draft decision handed
+ * to a human for approval, then a usage strip (tokens, time, cost). Generic UI, no vendor logos.
+ * The script only toggles data-step and per-row states.
+ */
+---
+
+<div
+  class="ka-platform"
+  data-step="0"
+  role="img"
+  aria-label="Kurgusal Anadolu Sigorta'nın yazılım ekibi bir hasar dosyası ajanını API üzerinden çalıştırıyor. Solda istek kodu, sağda çalıştırma izi görünüyor: Claude poliçeyi sorguluyor, ekspertiz raporunu okuyor, ödeme önerisi taslağını insan onayına gönderiyor; altta token, süre ve maliyet özeti çıkıyor."
+>
+  <div class="ka-platform-win" aria-hidden="true">
+    <div class="ka-platform-bar">
+      <span class="ka-platform-dot"></span><span class="ka-platform-dot"></span><span class="ka-platform-dot"></span>
+      <span class="ka-platform-title">Anadolu Sigorta · hasar-ajani</span>
+      <span class="ka-platform-tag">API</span>
+    </div>
+
+    <div class="ka-platform-body">
+      <!-- Request -->
+      <div class="ka-platform-code">
+        <p class="ka-platform-c"># Hasar dosyası ajanı</p>
+        <p><span class="ka-platform-v">yanit</span> = client.messages.<span class="ka-platform-f">create</span>(</p>
+        <p class="ka-platform-i">model=<span class="ka-platform-s">"claude-opus-5-5"</span>,</p>
+        <p class="ka-platform-i">max_tokens=<span class="ka-platform-n">2048</span>,</p>
+        <p class="ka-platform-i">tools=[police_sorgula,</p>
+        <p class="ka-platform-i ka-platform-i2">ekspertiz_oku],</p>
+        <p class="ka-platform-i">messages=[&#123;<span class="ka-platform-s">"role"</span>: <span class="ka-platform-s">"user"</span>,</p>
+        <p class="ka-platform-i ka-platform-i2"><span class="ka-platform-s">"content"</span>: <span class="ka-platform-s">"H-1184 dosyasını</span></p>
+        <p class="ka-platform-i ka-platform-i2"><span class="ka-platform-s">incele, öneri yaz"</span>&#125;],</p>
+        <p>)</p>
+        <p class="ka-platform-run"><span class="ka-platform-run-dot"></span><span class="ka-platform-run-a">Çalıştır</span><span class="ka-platform-run-b">Çalışıyor</span><span class="ka-platform-run-c">Tamamlandı</span></p>
+      </div>
+
+      <!-- Trace -->
+      <div class="ka-platform-trace">
+        <p class="ka-platform-th">Çalıştırma izi</p>
+        <ol>
+          <li data-row="1">
+            <span class="ka-platform-k">Araç</span>
+            <p><code>police_sorgula("PL-55120")</code><small>Kasko, aktif, muafiyet 5.000 TL</small></p>
+          </li>
+          <li data-row="2">
+            <span class="ka-platform-k">Araç</span>
+            <p><code>ekspertiz_oku("H-1184")</code><small>Ön tampon ve far, 38.400 TL</small></p>
+          </li>
+          <li data-row="3">
+            <span class="ka-platform-k ka-platform-k--out">Yanıt</span>
+            <p><b>Ödeme önerisi: 33.400 TL</b><small>Gerekçe ve kaynaklar eklendi</small></p>
+          </li>
+          <li data-row="4" class="ka-platform-human">
+            <span class="ka-platform-k ka-platform-k--hu">Onay</span>
+            <p><b>Hasar uzmanına gönderildi</b><small>Son karar insanda</small></p>
+          </li>
+        </ol>
+        <div class="ka-platform-use">
+          <span><b>12.480</b> girdi token</span>
+          <span><b>1.106</b> çıktı token</span>
+          <span><b>9,4 sn</b></span>
+          <span><b>≈ 0,07 $</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-platform {
+    --kp-ink: var(--c-navy);
+    --kp-muted: var(--c-text-muted);
+    --kp-line: var(--c-border);
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+    font-family: var(--font-sans);
+  }
+  .ka-platform p { margin: 0; }
+  .ka-platform-win { height: 100%; display: flex; flex-direction: column; background: var(--c-cream); transition: opacity .5s; }
+  .ka-platform[data-step="9"] .ka-platform-win { opacity: 0; }
+
+  .ka-platform-bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 0.65em 1em; border-bottom: 1px solid var(--kp-line); background: #fff;
+  }
+  .ka-platform-dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .ka-platform-title { margin-left: 0.6em; font-weight: 800; color: var(--kp-ink); font-size: 0.85em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-platform-tag { margin-left: auto; font-size: 0.68em; font-weight: 800; color: var(--c-gold-text); background: #f3f1ea; border-radius: 4px; padding: 0.2em 0.6em; }
+
+  .ka-platform-body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
+
+  /* code */
+  .ka-platform-code {
+    background: var(--c-navy-deep, #071a3e); color: rgba(255, 255, 255, .88);
+    font-family: var(--font-mono); font-size: 0.8em; line-height: 1.7;
+    padding: 1em 1em; overflow: hidden; display: flex; flex-direction: column;
+  }
+  .ka-platform-code p { white-space: nowrap; }
+  .ka-platform-i { padding-left: 1.2em; }
+  .ka-platform-i2 { padding-left: 2.4em; }
+  .ka-platform-c { color: rgba(255, 255, 255, .5); }
+  .ka-platform-v { color: #fff; }
+  .ka-platform-f { color: var(--c-gold-light, #e4c97a); }
+  .ka-platform-s { color: #9fd3b0; }
+  .ka-platform-n { color: #f0b48a; }
+  .ka-platform-run {
+    margin-top: auto !important; align-self: flex-start; display: inline-flex; align-items: center; gap: 0.5em;
+    font-family: var(--font-sans); font-weight: 800; font-size: 1.05em;
+    background: var(--c-gold); color: var(--c-navy); border-radius: 6px; padding: 0.3em 0.9em;
+    transition: background .3s, color .3s;
+  }
+  .ka-platform-run-dot { width: 0.6em; height: 0.6em; border-radius: 50%; background: currentColor; }
+  .ka-platform-run-b, .ka-platform-run-c { display: none; }
+  .ka-platform[data-step="1"] .ka-platform-run,
+  .ka-platform[data-step="2"] .ka-platform-run,
+  .ka-platform[data-step="3"] .ka-platform-run,
+  .ka-platform[data-step="4"] .ka-platform-run { background: rgba(201, 168, 76, .2); color: var(--c-gold-light, #e4c97a); }
+  .ka-platform[data-step="1"] .ka-platform-run-dot,
+  .ka-platform[data-step="2"] .ka-platform-run-dot,
+  .ka-platform[data-step="3"] .ka-platform-run-dot,
+  .ka-platform[data-step="4"] .ka-platform-run-dot { animation: ka-platform-pulse 1s ease-in-out infinite; }
+  .ka-platform[data-step="1"] .ka-platform-run-a,
+  .ka-platform[data-step="2"] .ka-platform-run-a,
+  .ka-platform[data-step="3"] .ka-platform-run-a,
+  .ka-platform[data-step="4"] .ka-platform-run-a,
+  .ka-platform[data-step="5"] .ka-platform-run-a,
+  .ka-platform[data-step="9"] .ka-platform-run-a { display: none; }
+  .ka-platform[data-step="1"] .ka-platform-run-b,
+  .ka-platform[data-step="2"] .ka-platform-run-b,
+  .ka-platform[data-step="3"] .ka-platform-run-b,
+  .ka-platform[data-step="4"] .ka-platform-run-b { display: inline; }
+  .ka-platform[data-step="5"] .ka-platform-run-c,
+  .ka-platform[data-step="9"] .ka-platform-run-c { display: inline; }
+  .ka-platform[data-step="5"] .ka-platform-run,
+  .ka-platform[data-step="9"] .ka-platform-run { background: #d8f2df; color: #1f6b3a; }
+
+  /* trace */
+  .ka-platform-trace { background: #fff; border-left: 1px solid var(--kp-line); padding: 0.9em 1em; display: flex; flex-direction: column; min-width: 0; overflow: hidden; }
+  .ka-platform-th { font-size: 0.66em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--c-gold-text); margin-bottom: 0.5em !important; }
+  .ka-platform-trace ol { list-style: none; margin: 0; padding: 0 0 0 0.2em; display: grid; gap: 0.55em; position: relative; }
+  .ka-platform-trace li {
+    display: flex; gap: 0.6em; align-items: flex-start;
+    opacity: 0; transform: translateY(6px); transition: opacity .35s, transform .35s;
+  }
+  .ka-platform-trace li.is-on { opacity: 1; transform: none; }
+  .ka-platform-k {
+    flex-shrink: 0; width: 3.6em; text-align: center; font-size: 0.64em; font-weight: 800; letter-spacing: .04em;
+    color: var(--c-navy); background: #f3f1ea; border-radius: 4px; padding: 0.3em 0; margin-top: 0.2em;
+  }
+  .ka-platform-k--out { background: rgba(201, 168, 76, .25); }
+  .ka-platform-k--hu { background: var(--c-navy); color: var(--c-gold); }
+  .ka-platform-trace li p { min-width: 0; font-size: 0.82em; line-height: 1.35; color: var(--kp-ink); }
+  .ka-platform-trace code { font-family: var(--font-mono); font-size: 0.92em; color: var(--kp-ink); background: none; padding: 0; white-space: nowrap; }
+  .ka-platform-trace small { display: block; color: var(--kp-muted); font-size: 0.9em; }
+  .ka-platform-trace b { font-weight: 800; }
+  .ka-platform-human.is-on p b { color: var(--c-gold-dark, #a8852d); }
+
+  .ka-platform-use {
+    margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 0.35em 0.8em;
+    border-top: 1px solid var(--kp-line); padding-top: 0.55em;
+    font-size: 0.72em; color: var(--kp-muted);
+    opacity: 0; transition: opacity .4s;
+  }
+  .ka-platform-use b { color: var(--kp-ink); font-weight: 800; font-variant-numeric: tabular-nums; }
+  .ka-platform[data-step="5"] .ka-platform-use { opacity: 1; }
+
+  @container (max-width: 520px) {
+    .ka-platform-body { grid-template-columns: minmax(0, 1fr); }
+    .ka-platform-code { display: none; }
+    .ka-platform-trace { border-left: 0; }
+    .ka-platform-th::after { content: ' · messages.create · claude-opus-5-5'; letter-spacing: 0; text-transform: none; font-family: var(--font-mono); font-weight: 600; color: var(--kp-muted); }
+  }
+
+  @keyframes ka-platform-pulse { 50% { opacity: .3; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-platform *, .ka-platform *::before, .ka-platform *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setup(root: HTMLElement) {
+    const rows = Array.from(root.querySelectorAll<HTMLElement>('[data-row]'));
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+    const show = (n: number) => rows[n - 1]?.classList.add('is-on');
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      rows.forEach((r) => r.classList.remove('is-on'));
+      step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(1600, () => step(1));
+      at(2800, () => show(1));
+      at(4400, () => { step(2); show(2); });
+      at(6200, () => { step(3); show(3); });
+      at(7800, () => { step(4); show(4); });
+      at(9000, () => step(5));
+      at(13600, () => step(9));
+      at(14200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      rows.forEach((r) => r.classList.add('is-on'));
+      step(5);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-platform').forEach(setup);
+</script>

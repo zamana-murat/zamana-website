@@ -11,6 +11,12 @@ const baseRoutes = [
   { path: '/programlar/bireysel/',          priority: '0.9', changefreq: 'monthly' },
   { path: '/programlar/kurumsal/',          priority: '0.9', changefreq: 'monthly' },
   { path: '/programlar/ceo-brifing/',       priority: '0.9', changefreq: 'monthly' },
+  { path: '/programlar/ai-sampiyonu/',      priority: '0.8', changefreq: 'monthly' },
+  { path: '/programlar/ihracatcilar/',      priority: '0.8', changefreq: 'monthly' },
+  { path: '/programlar/hukuk-burolari/',    priority: '0.8', changefreq: 'monthly' },
+  { path: '/programlar/kamu-kurumlari/',    priority: '0.8', changefreq: 'monthly' },
+  { path: '/programlar/akademisyenler/',    priority: '0.8', changefreq: 'monthly' },
+  { path: '/programlar/yeni-mezun/',        priority: '0.8', changefreq: 'monthly' },
   { path: '/programlar/karsilastirma/',     priority: '0.8', changefreq: 'monthly' },
   { path: '/yapay-zeka-egitimi/',           priority: '0.8', changefreq: 'monthly' },
   { path: '/sss/',                          priority: '0.8', changefreq: 'monthly' },
@@ -60,7 +66,18 @@ export const GET: APIRoute = async () => {
       lastmod: c.data.lastUpdated,
     }));
 
-  const routes: Route[] = [...baseRoutes, ...claudeRoutes, ...wikiRoutes, ...newsRoutes];
+  // Kurumsal section (claude.com Enterprise adaptation): same pattern under /kurumsal/.
+  const kurumsalEntries = await getCollection('kurumsal');
+  const kurumsalRoutes: Route[] = kurumsalEntries
+    .sort((a, b) => a.data.order - b.data.order)
+    .map((c) => ({
+      path: c.slug === 'index' ? '/kurumsal/' : `/kurumsal/${c.slug}/`,
+      priority: c.slug === 'index' ? '0.9' : '0.8',
+      changefreq: 'monthly',
+      lastmod: c.data.lastUpdated,
+    }));
+
+  const routes: Route[] = [...baseRoutes, ...claudeRoutes, ...kurumsalRoutes, ...wikiRoutes, ...newsRoutes];
   const urls = routes
     .map(
       (r) => `  <url>

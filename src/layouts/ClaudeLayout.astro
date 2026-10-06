@@ -5,16 +5,34 @@ import '../styles/wiki.css';
 import { composeTitle } from '../data/seo';
 import type { CollectionEntry } from 'astro:content';
 
-// Hero animations: src/components/claude-anim/<name>.astro, selected by frontmatter heroAnimation.
-const anims = import.meta.glob('../components/claude-anim/*.astro', { eager: true }) as Record<string, { default: any }>;
+// Hero animations: src/components/<section>-anim/<name>.astro, selected by frontmatter heroAnimation.
+const anims = import.meta.glob('../components/*-anim/*.astro', { eager: true }) as Record<string, { default: any }>;
+
+// Product sections sharing this layout: Claude (/claude/) and Kurumsal (/kurumsal/, claude.com Enterprise).
+const SECTIONS = {
+  claude: {
+    base: '/claude/',
+    name: 'Claude',
+    animDir: 'claude-anim',
+    ctaIntro: "Claude'u tanıdınız; ekibinizin onu her gün verimli kullanması ise eğitim ister.",
+  },
+  kurumsal: {
+    base: '/kurumsal/',
+    name: 'Kurumsal',
+    animDir: 'kurumsal-anim',
+    ctaIntro: "Claude'u kuruma almak bir satın alma kararı; ekiplerin onu her gün verimli kullanması ise eğitim ister.",
+  },
+} as const;
 
 interface Props {
-  data: CollectionEntry<'claude'>['data'];
-  /** '' for the /claude/ hub, otherwise the content slug. */
+  data: CollectionEntry<'claude'>['data'] | CollectionEntry<'kurumsal'>['data'];
+  /** '' for the section hub, otherwise the content slug. */
   slug: string;
+  section?: keyof typeof SECTIONS;
 }
 
-const { data, slug } = Astro.props;
+const { data, slug, section = 'claude' } = Astro.props;
+const sec = SECTIONS[section];
 const {
   title, seoTitle, description, eyebrow, lead, heroImage, heroVideo, heroAnimation, heroAlt,
   availability, sourceUrl, sourceTitle, related, lastUpdated,
@@ -22,15 +40,15 @@ const {
 
 const SITE = 'https://zamana.com.tr';
 const isHub = slug === '';
-const pagePath = isHub ? '/claude/' : `/claude/${slug}/`;
+const pagePath = isHub ? sec.base : `${sec.base}${slug}/`;
 const pageUrl = new URL(pagePath, SITE).toString();
 const ogImage = heroImage || '/og/default.png';
-const HeroAnim = heroAnimation ? anims[`../components/claude-anim/${heroAnimation}.astro`]?.default : undefined;
-if (heroAnimation && !HeroAnim) throw new Error(`Unknown heroAnimation "${heroAnimation}" (no src/components/claude-anim/${heroAnimation}.astro)`);
+const HeroAnim = heroAnimation ? anims[`../components/${sec.animDir}/${heroAnimation}.astro`]?.default : undefined;
+if (heroAnimation && !HeroAnim) throw new Error(`Unknown heroAnimation "${heroAnimation}" (no src/components/${sec.animDir}/${heroAnimation}.astro)`);
 
 const crumbs = [
   { name: 'Anasayfa', href: '/' },
-  { name: 'Claude', href: '/claude/' },
+  { name: sec.name, href: sec.base },
   ...(isHub ? [] : [{ name: title, href: pagePath }]),
 ];
 
@@ -151,10 +169,13 @@ const breadcrumbSchema = {
         <p>
           Bu sayfa, Zamana tarafından hazırlanmış Türkçe bir tanıtımdır. Claude, ürün adları ve görseller Anthropic'e aittir.
           Resmi sayfa: <a href={sourceUrl} target="_blank" rel="noopener">{sourceTitle}</a>.
+          {section === 'kurumsal' && (
+            <> Zamana, Anthropic'in temsilcisi veya bayisi değildir ve Claude aboneliği satmaz; Enterprise satın alımı doğrudan Anthropic ile yapılır.</>
+          )}
         </p>
       </aside>
 
-      <RetainerCTA intro="Claude'u tanıdınız; ekibinizin onu her gün verimli kullanması ise eğitim ister." />
+      <RetainerCTA intro={sec.ctaIntro} />
     </div>
   </article>
 </Layout>

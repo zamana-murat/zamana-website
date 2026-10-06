@@ -1,0 +1,250 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/ajanlar/ (claude.com/solutions/agents).
+ * Scenario (fictional company): a finance user gives an agent a multi-step job, e-invoice vs
+ * bank statement reconciliation. The agent plans, runs each step with a tool call, then stops
+ * at the one decision that needs a human and continues after approval.
+ * Plan, act, collaborate: the three verbs of the source page's hero.
+ */
+---
+
+<div
+  class="ka-ajanlar"
+  data-step="0"
+  data-task="Eylül e-faturalarını banka hareketleriyle eşleştir, farkları çıkar."
+  role="img"
+  aria-label="Bir finans çalışanı ajana Eylül e-faturalarını banka hareketleriyle eşleştirme görevi veriyor. Ajan dört adımlık bir plan çıkarıyor, her adımı bir araç çağrısıyla yürütüyor, 22 fark buluyor ve 18.400 TL'lik fazla ödeme kalemi için insan onayı istiyor."
+>
+  <div class="ka-ajanlar__win" aria-hidden="true">
+    <div class="ka-ajanlar__bar">
+      <span class="ka-ajanlar__dot"></span><span class="ka-ajanlar__dot"></span><span class="ka-ajanlar__dot"></span>
+      <span class="ka-ajanlar__bar-title">Ajan · Kuzey Dağıtım · Finans</span>
+      <span class="ka-ajanlar__sample">Kurgusal örnek</span>
+    </div>
+
+    <div class="ka-ajanlar__body">
+      <!-- Task given by the user -->
+      <div class="ka-ajanlar__task">
+        <span class="ka-ajanlar__av">EY</span>
+        <p class="ka-ajanlar__task-t"><span data-role="task"></span><span class="ka-ajanlar__caret"></span></p>
+      </div>
+
+      <!-- Plan: four steps, each with its tool call -->
+      <div class="ka-ajanlar__plan">
+        <p class="ka-ajanlar__plan-h"><span>Plan</span><small data-role="phase">4 adım</small></p>
+        <ol class="ka-ajanlar__steps">
+          <li class="ka-ajanlar__item" data-s="wait" style="--i:0">
+            <span class="ka-ajanlar__st"></span>
+            <span class="ka-ajanlar__txt"><strong>E-faturaları topla</strong><code>e_fatura.listele(ay: "Eylül")</code></span>
+            <span class="ka-ajanlar__res">1.284 fatura</span>
+          </li>
+          <li class="ka-ajanlar__item" data-s="wait" style="--i:1">
+            <span class="ka-ajanlar__st"></span>
+            <span class="ka-ajanlar__txt"><strong>Banka hareketlerini oku</strong><code>banka.hareketler(hesap: "TL-01")</code></span>
+            <span class="ka-ajanlar__res">1.311 hareket</span>
+          </li>
+          <li class="ka-ajanlar__item" data-s="wait" style="--i:2">
+            <span class="ka-ajanlar__st"></span>
+            <span class="ka-ajanlar__txt"><strong>Eşleştir, farkları ayır</strong><code>mutabakat.eslestir(tolerans: 1 TL)</code></span>
+            <span class="ka-ajanlar__res">22 fark</span>
+          </li>
+          <li class="ka-ajanlar__item" data-s="wait" style="--i:3">
+            <span class="ka-ajanlar__st"></span>
+            <span class="ka-ajanlar__txt"><strong>Belirsiz kalemi onaya sun</strong><code>insan.onay_iste(kalem: 1)</code></span>
+            <span class="ka-ajanlar__res">Onaylandı</span>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Human in the loop -->
+      <div class="ka-ajanlar__ask">
+        <div class="ka-ajanlar__ask-text">
+          <p class="ka-ajanlar__ask-h">Onayınız gerekiyor</p>
+          <p class="ka-ajanlar__ask-b">Akay Ambalaj'a 18.400 TL fazla ödeme görünüyor. Mahsup taslağı hazırlansın mı?</p>
+        </div>
+        <div class="ka-ajanlar__btns">
+          <span class="ka-ajanlar__btn ka-ajanlar__btn--ok">Hazırla</span>
+          <span class="ka-ajanlar__btn">İncele</span>
+        </div>
+        <p class="ka-ajanlar__done">✓ Mahsup taslağı muhasebe kuyruğuna eklendi</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-ajanlar {
+    --ag-ink: var(--c-navy);
+    --ag-muted: var(--c-text-muted);
+    --ag-line: var(--c-border);
+    --ag-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 330px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+  }
+  .ka-ajanlar__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .ka-ajanlar__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--ag-line); }
+  .ka-ajanlar__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; flex-shrink: 0; }
+  .ka-ajanlar__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--ag-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-ajanlar__sample { margin-left: auto; font-size: 0.66em; font-weight: 700; color: var(--c-gold-text); background: rgba(201, 168, 76, .14); border-radius: 999px; padding: 0.25em 0.7em; white-space: nowrap; }
+
+  .ka-ajanlar__body { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 0.55em; padding: 0.75em 1.2em 0.85em; }
+
+  /* task */
+  .ka-ajanlar__task { display: flex; gap: 0.65em; align-items: flex-start; }
+  .ka-ajanlar__av { width: 2.1em; height: 2.1em; border-radius: 7px; flex-shrink: 0; display: grid; place-items: center; font-weight: 800; font-size: 0.78em; background: #f4ead0; color: var(--c-gold-text); }
+  .ka-ajanlar__task-t {
+    margin: 0; flex: 1; min-height: 1.4em; padding: 0.4em 0.8em; border-radius: 10px;
+    background: var(--ag-soft); color: var(--ag-ink); line-height: 1.4; font-weight: 600;
+  }
+  .ka-ajanlar__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--ag-ink); animation: ka-ajanlar-blink 1s steps(1) infinite; }
+  .ka-ajanlar[data-typing] .ka-ajanlar__caret { display: inline-block; }
+
+  /* plan */
+  .ka-ajanlar__plan { opacity: 0; transform: translateY(6px); transition: opacity .4s, transform .4s; }
+  .ka-ajanlar__plan-h { margin: 0 0 0.35em; display: flex; align-items: baseline; gap: 0.6em; }
+  .ka-ajanlar__plan-h span { font-size: 0.7em; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--c-gold-text); }
+  .ka-ajanlar__plan-h small { font-size: 0.74em; color: var(--ag-muted); }
+  .ka-ajanlar__steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.15em; }
+  .ka-ajanlar__item {
+    display: flex; align-items: center; gap: 0.65em; padding: 0.25em 0.6em; border-radius: 8px;
+    border: 1px solid transparent; opacity: 0; transform: translateX(-6px);
+    transition: opacity .3s calc(var(--i) * 140ms), transform .3s calc(var(--i) * 140ms), background .3s, border-color .3s;
+  }
+  .ka-ajanlar__txt { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.3; }
+  .ka-ajanlar__txt strong { color: var(--ag-ink); font-weight: 700; font-size: 0.92em; }
+  .ka-ajanlar__txt code {
+    font-family: var(--font-mono); font-size: 0.7em; color: var(--ag-muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .ka-ajanlar__st {
+    width: 1.25em; height: 1.25em; border-radius: 50%; flex-shrink: 0; box-sizing: border-box;
+    border: 2px solid rgba(15, 40, 85, .2); display: grid; place-items: center;
+    }
+  .ka-ajanlar__res {
+    flex-shrink: 0; font-size: 0.74em; font-weight: 700; white-space: nowrap;
+    color: var(--c-navy); background: rgba(201, 168, 76, .18); border-radius: 999px; padding: 0.2em 0.65em;
+    opacity: 0; transform: scale(.9); transition: opacity .3s, transform .3s;
+  }
+  .ka-ajanlar__item[data-s="run"], .ka-ajanlar__item[data-s="ask"] { background: var(--c-bg-subtle); border-color: var(--c-border-gold); }
+  .ka-ajanlar__item[data-s="run"] .ka-ajanlar__st,
+  .ka-ajanlar__item[data-s="ask"] .ka-ajanlar__st { border-color: var(--c-gold); border-top-color: transparent; animation: ka-ajanlar-spin .9s linear infinite; }
+  .ka-ajanlar__item[data-s="ask"] .ka-ajanlar__st { animation: ka-ajanlar-pulse 1.2s ease-in-out infinite; border-top-color: var(--c-gold); background: rgba(201, 168, 76, .25); }
+  .ka-ajanlar__item[data-s="done"] .ka-ajanlar__st { border: none; background: var(--c-navy); }
+  .ka-ajanlar__item[data-s="done"] .ka-ajanlar__st::before { content: ""; width: 0.3em; height: 0.56em; margin-top: -0.12em; border: solid var(--c-gold); border-width: 0 0.15em 0.15em 0; transform: rotate(45deg); }
+  .ka-ajanlar__item[data-s="done"] .ka-ajanlar__res { opacity: 1; transform: none; }
+  .ka-ajanlar__item[data-s="done"] .ka-ajanlar__txt code { color: rgba(15, 40, 85, .45); }
+
+  /* approval */
+  .ka-ajanlar__ask {
+    margin-top: auto; display: none; flex-wrap: wrap; align-items: center; gap: 0.6em 0.9em;
+    padding: 0.6em 0.9em; border-radius: 10px; background: var(--c-navy); color: #fff;
+    animation: ka-ajanlar-in .4s ease both;
+  }
+  .ka-ajanlar__ask-text { flex: 1 1 15em; min-width: 0; }
+  .ka-ajanlar__ask-h { margin: 0; font-size: 0.68em; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--c-gold-light); }
+  .ka-ajanlar__ask-b { margin: 0.15em 0 0; font-size: 0.88em; line-height: 1.4; }
+  .ka-ajanlar__btns { display: flex; gap: 0.45em; }
+  .ka-ajanlar__btn {
+    font-size: 0.8em; font-weight: 700; padding: 0.4em 0.9em; border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, .35); color: #fff; transition: transform .15s, box-shadow .15s;
+  }
+  .ka-ajanlar__btn--ok { background: var(--c-gold); border-color: var(--c-gold); color: var(--c-navy); }
+  .ka-ajanlar[data-step="5"] .ka-ajanlar__btn--ok { transform: scale(.94); box-shadow: 0 0 0 4px rgba(201, 168, 76, .35); }
+  .ka-ajanlar__done { display: none; margin: 0; width: 100%; font-size: 0.82em; font-weight: 700; color: var(--c-gold-light); }
+
+  /* step states */
+  .ka-ajanlar[data-step="2"] .ka-ajanlar__plan, .ka-ajanlar[data-step="3"] .ka-ajanlar__plan,
+  .ka-ajanlar[data-step="4"] .ka-ajanlar__plan, .ka-ajanlar[data-step="5"] .ka-ajanlar__plan,
+  .ka-ajanlar[data-step="6"] .ka-ajanlar__plan, .ka-ajanlar[data-step="7"] .ka-ajanlar__plan { opacity: 1; transform: none; }
+  .ka-ajanlar[data-step="2"] .ka-ajanlar__item, .ka-ajanlar[data-step="3"] .ka-ajanlar__item,
+  .ka-ajanlar[data-step="4"] .ka-ajanlar__item, .ka-ajanlar[data-step="5"] .ka-ajanlar__item,
+  .ka-ajanlar[data-step="6"] .ka-ajanlar__item, .ka-ajanlar[data-step="7"] .ka-ajanlar__item { opacity: 1; transform: none; }
+  .ka-ajanlar[data-step="4"] .ka-ajanlar__ask, .ka-ajanlar[data-step="5"] .ka-ajanlar__ask,
+  .ka-ajanlar[data-step="6"] .ka-ajanlar__ask, .ka-ajanlar[data-step="7"] .ka-ajanlar__ask { display: flex; }
+  .ka-ajanlar[data-step="6"] .ka-ajanlar__ask, .ka-ajanlar[data-step="7"] .ka-ajanlar__ask { animation: none; }
+  .ka-ajanlar[data-step="6"] .ka-ajanlar__ask-text, .ka-ajanlar[data-step="6"] .ka-ajanlar__btns,
+  .ka-ajanlar[data-step="7"] .ka-ajanlar__ask-text, .ka-ajanlar[data-step="7"] .ka-ajanlar__btns { display: none; }
+  .ka-ajanlar[data-step="6"] .ka-ajanlar__done, .ka-ajanlar[data-step="7"] .ka-ajanlar__done { display: block; animation: ka-ajanlar-in .35s ease both; }
+  .ka-ajanlar[data-step="7"] .ka-ajanlar__win { opacity: 0; }
+
+  @media (max-width: 600px) { .ka-ajanlar { min-height: 375px; } }
+  @container (max-width: 430px) {
+    .ka-ajanlar__sample { display: none; }
+    .ka-ajanlar__btn { padding: 0.3em 0.8em; }
+    .ka-ajanlar__txt code { font-size: 0.66em; }
+  }
+
+  @keyframes ka-ajanlar-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-ajanlar-blink { 50% { opacity: 0; } }
+  @keyframes ka-ajanlar-spin { to { transform: rotate(360deg); } }
+  @keyframes ka-ajanlar-pulse { 50% { transform: scale(1.18); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-ajanlar *, .ka-ajanlar *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setupAjanlar(root: HTMLElement) {
+    const task = root.dataset.task || '';
+    const taskEl = root.querySelector<HTMLElement>('[data-role="task"]')!;
+    const phase = root.querySelector<HTMLElement>('[data-role="phase"]')!;
+    const items = Array.from(root.querySelectorAll<HTMLElement>('.ka-ajanlar__item'));
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+    const mark = (i: number, s: string) => { items[i].dataset.s = s; };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      taskEl.textContent = ''; phase.textContent = '4 adım';
+      items.forEach((it) => { it.dataset.s = 'wait'; });
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(500, () => { step(1); root.dataset.typing = '1'; });
+      for (let i = 0; i <= task.length; i++) at(600 + i * 26, () => { taskEl.textContent = task.slice(0, i); });
+      const t0 = 600 + task.length * 26 + 400;
+      at(t0, () => { delete root.dataset.typing; step(2); phase.textContent = '4 adım · plan hazır'; });
+      // act: each step runs with its tool call, then completes
+      const runs = [[t0 + 1000, 1300], [t0 + 2500, 1300], [t0 + 4000, 1600]];
+      runs.forEach(([start, dur], i) => {
+        at(start, () => { mark(i, 'run'); phase.textContent = `Adım ${i + 1} / 4 çalışıyor`; });
+        at(start + dur, () => mark(i, 'done'));
+      });
+      const t1 = t0 + 5900;
+      // collaborate: the agent stops at the decision that needs a human
+      at(t1, () => { mark(3, 'ask'); step(3); phase.textContent = 'İnsan onayı bekleniyor'; });
+      at(t1 + 400, () => step(4));
+      at(t1 + 2900, () => step(5));
+      at(t1 + 3300, () => { step(6); mark(3, 'done'); phase.textContent = '4 adım tamamlandı'; });
+      at(t1 + 6300, () => step(7));
+      at(t1 + 6900, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      taskEl.textContent = task;
+      [0, 1, 2].forEach((i) => mark(i, 'done'));
+      mark(3, 'ask');
+      phase.textContent = 'İnsan onayı bekleniyor';
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-ajanlar').forEach(setupAjanlar);
+</script>

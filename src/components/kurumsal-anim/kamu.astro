@@ -1,0 +1,226 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/kamu/ (Anthropic's page shows government quotes;
+ * here we show a realistic Turkish municipal use instead).
+ * Scenario (fictional): "Kuzey Belediyesi" citizen request desk. Personal data in incoming requests is
+ * masked first, then Claude routes each request to a department and drafts a reply that waits for an
+ * officer's approval. All names and requests are fictional.
+ */
+---
+
+<div
+  class="ka-kamu"
+  data-step="0"
+  role="img"
+  aria-label="Kurgusal Kuzey Belediyesi başvuru masası: gelen vatandaş başvurularındaki ad, telefon ve adres bilgileri önce maskeleniyor, ardından Claude başvuruları Fen İşleri, Park ve Bahçeler, Zabıta gibi birimlere ayırıyor, günün özetini çıkarıyor ve memur onayı bekleyen bir yanıt taslağı hazırlıyor."
+>
+  <div class="km__win" aria-hidden="true">
+    <div class="km__bar">
+      <span class="km__dot"></span><span class="km__dot"></span><span class="km__dot"></span>
+      <span class="km__bar-title">Kuzey Belediyesi · Başvuru masası</span>
+      <span class="km__count">Bugün 126 başvuru</span>
+    </div>
+
+    <div class="km__pipe">
+      <span class="km__pill km__pill--1"><i>1</i>Kişisel veriyi maskele</span>
+      <span class="km__pill km__pill--2"><i>2</i>Birime yönlendir</span>
+      <span class="km__pill km__pill--3"><i>3</i>Yanıt taslağı</span>
+    </div>
+
+    <div class="km__main">
+      <div class="km__rows">
+        <div class="km__row" style="--i:0">
+          <div class="km__rmain">
+            <p class="km__rh"><b>#1184</b>
+              <span class="km__pii"><span class="km__raw">Ahmet Kara</span><span class="km__mask">AD SOYAD</span></span>
+              <span class="km__pii"><span class="km__raw">0555 010 27 61</span><span class="km__mask">TELEFON</span></span>
+            </p>
+            <p class="km__rt">Çınar Sokak'taki çukur iki haftadır kapatılmadı.</p>
+          </div>
+          <span class="km__cat km__cat--a">Fen İşleri<small>Yüksek</small></span>
+        </div>
+        <div class="km__row" style="--i:1">
+          <div class="km__rmain">
+            <p class="km__rh"><b>#1185</b>
+              <span class="km__pii"><span class="km__raw">Zeynep Ak</span><span class="km__mask">AD SOYAD</span></span>
+            </p>
+            <p class="km__rt">Parktaki salıncak kırık, çocuklar için tehlikeli.</p>
+          </div>
+          <span class="km__cat km__cat--b">Park ve Bahçeler<small>Yüksek</small></span>
+        </div>
+        <div class="km__row" style="--i:2">
+          <div class="km__rmain">
+            <p class="km__rh"><b>#1186</b>
+              <span class="km__pii"><span class="km__raw">Lale Cad. No 14</span><span class="km__mask">ADRES</span></span>
+            </p>
+            <p class="km__rt">Bir işyerinden gece geç saate kadar gürültü geliyor.</p>
+          </div>
+          <span class="km__cat km__cat--c">Zabıta<small>Orta</small></span>
+        </div>
+        <div class="km__row" style="--i:3">
+          <div class="km__rmain">
+            <p class="km__rh"><b>#1187</b>
+              <span class="km__pii"><span class="km__raw">Hüseyin Er</span><span class="km__mask">AD SOYAD</span></span>
+            </p>
+            <p class="km__rt">Ödediğim emlak vergisi hâlâ borç görünüyor.</p>
+          </div>
+          <span class="km__cat km__cat--d">Mali Hizmetler<small>Orta</small></span>
+        </div>
+      </div>
+
+      <div class="km__out">
+        <p class="km__work">
+          <span class="km__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+          <span data-role="sub">Kişisel veriler maskeleniyor</span>
+        </p>
+        <div class="km__sum">
+          <p class="km__sum-t">Günün özeti</p>
+          <p class="km__sum-b">Fen İşleri 41 · Zabıta 28 · Park ve Bahçeler 19 · Diğer 38. İki başvuru yüksek öncelikli.</p>
+        </div>
+        <div class="km__draft">
+          <p class="km__draft-h"><span>Yanıt taslağı · #1184</span><em>Memur onayı bekliyor</em></p>
+          <p class="km__draft-b">Başvurunuz Fen İşleri Müdürlüğü'ne iletilmiştir. Ekiplerimiz yerinde inceleme yapacaktır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-kamu {
+    --km-ink: var(--c-navy);
+    --km-muted: var(--c-text-muted);
+    --km-line: rgba(15, 40, 85, .12);
+    --km-soft: #f6f4ee;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+  }
+  .km__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .km__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--km-line); min-width: 0; }
+  .km__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; flex-shrink: 0; }
+  .km__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--km-ink); font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .km__count { margin-left: auto; font-size: 0.72em; font-weight: 700; color: var(--km-muted); white-space: nowrap; }
+
+  /* pipeline */
+  .km__pipe { display: flex; gap: 0.4em; padding: 0.6em 1em; border-bottom: 1px solid var(--km-line); background: var(--km-soft); }
+  .km__pill { display: inline-flex; align-items: center; gap: 0.4em; font-size: 0.74em; font-weight: 700; color: var(--km-muted); border: 1px solid var(--km-line); background: #fff; border-radius: 999px; padding: 0.25em 0.7em 0.25em 0.3em; white-space: nowrap; transition: background .3s, color .3s, border-color .3s; }
+  .km__pill i { font-style: normal; display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; border-radius: 50%; background: var(--km-soft); font-size: 0.9em; }
+  .km__pill.is-on { background: var(--c-navy); color: #fff; border-color: var(--c-navy); }
+  .km__pill.is-on i { background: var(--c-gold); color: var(--c-navy); }
+  .km__pill.is-done { color: var(--c-gold-text); border-color: var(--c-gold); }
+  .km__pill.is-done i { background: var(--c-gold); color: var(--c-navy); }
+
+  .km__main { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0.6em 1em 0.9em; gap: 0.55em; }
+  .km__rows {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 0.4em;
+    -webkit-mask-image: linear-gradient(to top, transparent 0, #000 1.2em);
+    mask-image: linear-gradient(to top, transparent 0, #000 1.2em);
+  }
+  .km__row { display: flex; align-items: center; gap: 0.7em; border: 1px solid var(--km-line); border-radius: 8px; padding: 0.4em 0.7em; flex-shrink: 0; }
+  .km__rmain { flex: 1; min-width: 0; }
+  .km__rh { margin: 0; display: flex; align-items: center; gap: 0.45em; font-size: 0.78em; color: var(--km-muted); white-space: nowrap; overflow: hidden; }
+  .km__rh b { color: var(--km-ink); }
+  .km__rt { margin: 0.1em 0 0; font-size: 0.86em; color: var(--km-ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .km__pii { position: relative; display: inline-grid; }
+  .km__pii > span { grid-area: 1 / 1; }
+  .km__raw { background: rgba(185, 60, 50, .1); color: #8c2f26; border-radius: 4px; padding: 0 0.35em; transition: opacity .25s calc(var(--i) * 280ms); }
+  .km__mask { background: var(--c-navy); color: var(--c-gold); font-size: 0.82em; font-weight: 800; letter-spacing: .06em; border-radius: 4px; padding: 0.1em 0.45em; text-align: center; opacity: 0; transform: scaleX(.3); transform-origin: left; transition: opacity .25s calc(var(--i) * 280ms), transform .3s calc(var(--i) * 280ms); }
+
+  .km__cat { display: none; flex-direction: column; align-items: flex-end; flex-shrink: 0; font-size: 0.74em; font-weight: 800; border-radius: 6px; padding: 0.25em 0.6em; line-height: 1.25; text-align: right; }
+  .km__cat small { font-size: 0.85em; font-weight: 700; opacity: .75; }
+  .km__cat--a { background: #e6ecf6; color: var(--c-navy); }
+  .km__cat--b { background: #e3f1e6; color: #1f5e33; }
+  .km__cat--c { background: #f4ead0; color: var(--c-gold-text); }
+  .km__cat--d { background: #ece6f4; color: #4d3a80; }
+
+  .km__out { flex-shrink: 0; display: flex; flex-direction: column; gap: 0.45em; }
+  .km__work { margin: 0; display: none; align-items: center; gap: 0.5em; color: var(--km-muted); font-size: 0.85em; }
+  .km__spark { color: var(--c-gold); display: inline-flex; animation: ka-kamu-spin 1.6s linear infinite; }
+  .km__sum, .km__draft { display: none; border-radius: 10px; padding: 0.55em 0.8em; animation: ka-kamu-in .4s ease both; }
+  .km__sum { background: var(--c-navy); color: #fff; }
+  .km__sum-t { margin: 0; font-size: 0.72em; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--c-gold); }
+  .km__sum-b { margin: 0.15em 0 0; font-size: 0.84em; line-height: 1.4; }
+  .km__draft { border: 1px solid var(--c-gold); background: #fffdf6; }
+  .km__draft-h { margin: 0; display: flex; align-items: center; justify-content: space-between; gap: 0.6em; font-size: 0.78em; font-weight: 800; color: var(--km-ink); }
+  .km__draft-h em { font-style: normal; font-size: 0.88em; color: var(--c-gold-text); background: rgba(201, 168, 76, .18); border-radius: 999px; padding: 0.1em 0.6em; white-space: nowrap; }
+  .km__draft-b { margin: 0.2em 0 0; font-size: 0.82em; color: var(--km-ink); line-height: 1.4; }
+
+  @container (max-width: 520px) {
+    .km__count { display: none; }
+    .km__pill { font-size: 0.68em; }
+    .km__pill i { display: none; }
+    .km__pill { padding-left: 0.7em; }
+    .km__row:nth-child(n+4) { display: none; }
+    .km__cat small { display: none; }
+  }
+
+  /* step states */
+  .ka-kamu:not([data-step="0"]) .km__raw { opacity: 0; }
+  .ka-kamu:not([data-step="0"]) .km__mask { opacity: 1; transform: none; }
+  .ka-kamu:is([data-step="1"], [data-step="2"]) .km__work { display: flex; }
+  .ka-kamu:is([data-step="3"], [data-step="4"], [data-step="5"]) .km__cat { display: flex; animation: ka-kamu-in .35s calc(var(--i) * 240ms) ease both; }
+  .ka-kamu:is([data-step="3"], [data-step="4"], [data-step="5"]) .km__sum { display: block; }
+  .ka-kamu:is([data-step="4"], [data-step="5"]) .km__draft { display: block; }
+  .ka-kamu[data-step="5"] .km__win { opacity: 0; }
+
+  @keyframes ka-kamu-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-kamu-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-kamu *, .ka-kamu *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = ['Kişisel veriler maskeleniyor', 'Başvurular birimlere ayrılıyor'];
+
+  function setup(root: HTMLElement) {
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    const pills = [1, 2, 3].map((n) => root.querySelector<HTMLElement>(`.km__pill--${n}`)!);
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+    // pill state per pipeline stage: 0 none, 1..3 active stage, 4 all done
+    const stage = (s: number) => pills.forEach((p, i) => {
+      p.classList.toggle('is-on', i + 1 === s);
+      p.classList.toggle('is-done', i + 1 < s);
+    });
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      sub.textContent = SUBS[0]; stage(0); step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(1300, () => { step(1); stage(1); });
+      at(3700, () => { step(2); stage(2); sub.textContent = SUBS[1]; });
+      at(5600, () => { step(3); });
+      at(8600, () => { step(4); stage(3); });
+      at(10600, () => { stage(4); });
+      at(14000, () => step(5));
+      at(14600, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      stage(4);
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-kamu').forEach(setup);
+</script>

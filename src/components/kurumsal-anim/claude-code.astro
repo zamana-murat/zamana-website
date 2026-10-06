@@ -1,0 +1,213 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/claude-code/ (Claude Code for Enterprise).
+ * Scenario: a developer at a fictional company (Ege Tekstil) asks Claude Code in the terminal to
+ * migrate to a new payment library. Claude scans the repo, the organisation-wide policy blocks a
+ * read of .env, Claude asks permission before editing, tests pass and a PR opens; the admin panel
+ * on the right shows the central policy and the weekly contribution counter ticking up.
+ * Generic UI, no vendor logos. The script only toggles data-step and types the prompt.
+ */
+---
+
+<div
+  class="ka-claude-code"
+  data-step="0"
+  data-prompt="Ödeme kütüphanesini v2'ye taşı, testleri çalıştır"
+  role="img"
+  aria-label="Kurgusal Ege Tekstil'de bir geliştirici terminalde Claude Code'a ödeme kütüphanesini yeni sürüme taşımasını söylüyor. Claude kod tabanını tarıyor, kuruluş politikası gizli anahtar dosyasının okunmasını engelliyor, Claude değişiklik öncesi izin istiyor, testler geçiyor ve değişiklik isteği açılıyor. Sağdaki yönetim panelinde merkezi politika ve haftalık katkı sayacı görünüyor."
+>
+  <div class="ka-claude-code-win" aria-hidden="true">
+    <div class="ka-claude-code-bar">
+      <span class="ka-claude-code-dot"></span><span class="ka-claude-code-dot"></span><span class="ka-claude-code-dot"></span>
+      <span class="ka-claude-code-title">ege-tekstil / odeme-servisi</span>
+      <span class="ka-claude-code-tag">Terminal</span>
+    </div>
+
+    <div class="ka-claude-code-body">
+      <!-- Terminal -->
+      <div class="ka-claude-code-term">
+        <p class="ka-claude-code-cmd">
+          <span class="ka-claude-code-ps">&gt;</span>
+          <span data-role="typed"></span><span class="ka-claude-code-caret"></span>
+        </p>
+        <p class="ka-claude-code-ln" data-ln="1"><span class="ka-claude-code-b">●</span> Kod tabanı tarandı: 47 dosya, 312 çağrı noktası</p>
+        <p class="ka-claude-code-ln ka-claude-code-ln--deny" data-ln="2"><span class="ka-claude-code-x">✕</span> .env okunmadı <em>kuruluş politikası</em></p>
+        <p class="ka-claude-code-ln" data-ln="3"><span class="ka-claude-code-b">●</span> Plan: 3 aşama, önce düşük riskli servisler</p>
+        <div class="ka-claude-code-ask" data-ln="4">
+          <p>12 dosya düzenlensin mi?</p>
+          <span class="ka-claude-code-yes">Evet</span><span class="ka-claude-code-no">Hayır</span>
+        </div>
+        <p class="ka-claude-code-ln ka-claude-code-ln--ok" data-ln="5"><span class="ka-claude-code-ok">✓</span> 128 / 128 test geçti</p>
+        <p class="ka-claude-code-ln ka-claude-code-ln--ok" data-ln="6"><span class="ka-claude-code-ok">✓</span> PR #219 açıldı: odeme-v2-gecisi</p>
+      </div>
+
+      <!-- Admin panel -->
+      <div class="ka-claude-code-adm">
+        <p class="ka-claude-code-adm-h">Yönetim paneli</p>
+        <p class="ka-claude-code-adm-s">Merkezi politika</p>
+        <ul class="ka-claude-code-pol">
+          <li><span class="ka-claude-code-pi">✓</span>İzinli: git, npm test</li>
+          <li class="ka-claude-code-pol-env"><span class="ka-claude-code-pi">⛔</span>Erişim yok: .env, anahtarlar</li>
+          <li><span class="ka-claude-code-pi">✓</span>MCP: yalnız onaylı sunucular</li>
+          <li><span class="ka-claude-code-pi">✓</span>Giriş: SSO, SCIM</li>
+        </ul>
+        <p class="ka-claude-code-adm-s">Bu hafta</p>
+        <div class="ka-claude-code-met">
+          <div><b class="ka-claude-code-pr"><span class="ka-claude-code-pr-a">212</span><span class="ka-claude-code-pr-b">213</span></b><small>Claude Code ile PR</small></div>
+          <div><b>38</b><small>etkin geliştirici</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-claude-code {
+    --kc-ink: var(--c-navy);
+    --kc-muted: var(--c-text-muted);
+    --kc-line: var(--c-border);
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+    font-family: var(--font-sans);
+  }
+  .ka-claude-code p { margin: 0; }
+  .ka-claude-code-win { height: 100%; display: flex; flex-direction: column; background: var(--c-cream); transition: opacity .5s; }
+  .ka-claude-code[data-step="9"] .ka-claude-code-win { opacity: 0; }
+
+  .ka-claude-code-bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 0.65em 1em; border-bottom: 1px solid var(--kc-line); background: #fff;
+  }
+  .ka-claude-code-dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .ka-claude-code-title { margin-left: 0.6em; font-weight: 800; color: var(--kc-ink); font-size: 0.85em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-claude-code-tag { margin-left: auto; font-size: 0.68em; font-weight: 800; color: var(--c-gold-text); background: #f3f1ea; border-radius: 4px; padding: 0.2em 0.6em; }
+
+  .ka-claude-code-body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); }
+
+  /* terminal */
+  .ka-claude-code-term {
+    background: var(--c-navy-deep, #071a3e); color: rgba(255, 255, 255, .9);
+    font-family: var(--font-mono); font-size: 0.8em; line-height: 1.5;
+    padding: 1em 1.1em; display: flex; flex-direction: column; gap: 0.5em; overflow: hidden;
+  }
+  .ka-claude-code-cmd { color: #fff; min-height: 3em; }
+  .ka-claude-code-ps { color: var(--c-gold); font-weight: 700; margin-right: 0.4em; }
+  .ka-claude-code-caret { display: inline-block; width: 0.5em; height: 1.05em; vertical-align: -0.2em; background: var(--c-gold); animation: ka-claude-code-blink 1s steps(1) infinite; }
+  .ka-claude-code[data-step="0"] .ka-claude-code-caret,
+  .ka-claude-code:not([data-typing]) .ka-claude-code-caret { opacity: 0; }
+
+  .ka-claude-code-ln, .ka-claude-code-ask { display: none; }
+  .ka-claude-code-ln.is-on { display: block; animation: ka-claude-code-in .35s ease both; }
+  .ka-claude-code-ask.is-on { display: block; animation: ka-claude-code-in .35s ease both; }
+  .ka-claude-code-b { color: var(--c-gold-light, #e4c97a); margin-right: 0.35em; }
+  .ka-claude-code-x { color: #ff9b8a; margin-right: 0.35em; font-weight: 700; }
+  .ka-claude-code-ok { color: #8fd6a4; margin-right: 0.35em; font-weight: 700; }
+  .ka-claude-code-ln--deny { color: rgba(255, 255, 255, .7); }
+  .ka-claude-code-ln--deny em { font-style: normal; font-size: 0.85em; color: #ffcfc6; border: 1px solid rgba(255, 155, 138, .5); border-radius: 4px; padding: 0 0.4em; margin-left: 0.3em; }
+  .ka-claude-code-ln--ok { color: #d8f2df; }
+  .ka-claude-code-ask {
+    border: 1px solid rgba(201, 168, 76, .55); border-radius: 6px; padding: 0.5em 0.7em;
+    background: rgba(201, 168, 76, .08);
+  }
+  .ka-claude-code-ask p { color: #fff; margin-bottom: 0.35em; }
+  .ka-claude-code-yes, .ka-claude-code-no { display: inline-block; padding: 0.05em 0.7em; border-radius: 4px; margin-right: 0.5em; border: 1px solid rgba(255, 255, 255, .3); color: rgba(255, 255, 255, .8); transition: background .3s, color .3s; }
+  .ka-claude-code-ask.is-yes .ka-claude-code-yes { background: var(--c-gold); border-color: var(--c-gold); color: var(--c-navy); font-weight: 700; }
+
+  /* admin */
+  .ka-claude-code-adm { background: #fff; border-left: 1px solid var(--kc-line); padding: 0.9em 1em; display: flex; flex-direction: column; gap: 0.45em; min-width: 0; overflow: hidden; }
+  .ka-claude-code-adm-h { font-weight: 800; color: var(--kc-ink); font-size: 0.95em; }
+  .ka-claude-code-adm-s { font-size: 0.66em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--c-gold-text); margin-top: 0.3em !important; }
+  .ka-claude-code-pol { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3em; }
+  .ka-claude-code-pol li {
+    display: flex; align-items: center; gap: 0.45em; font-size: 0.78em; color: var(--kc-ink); line-height: 1.3;
+    padding: 0.3em 0.45em; border-radius: 6px; border: 1px solid transparent; transition: background .3s, border-color .3s;
+  }
+  .ka-claude-code-pi { flex-shrink: 0; width: 1.2em; text-align: center; font-size: 0.9em; color: var(--c-gold-dark, #a8852d); }
+  .ka-claude-code[data-step="2"] .ka-claude-code-pol-env { background: #fdecea; border-color: #f2b8ae; }
+
+  .ka-claude-code-met { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em; }
+  .ka-claude-code-met > div { background: var(--c-cream); border: 1px solid var(--kc-line); border-radius: 8px; padding: 0.45em 0.6em; }
+  .ka-claude-code-met b { display: block; font-size: 1.35em; font-weight: 800; color: var(--kc-ink); line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .ka-claude-code-met small { display: block; font-size: 0.68em; color: var(--kc-muted); line-height: 1.3; }
+  .ka-claude-code-pr-b { display: none; }
+  .ka-claude-code[data-step="7"] .ka-claude-code-pr-a,
+  .ka-claude-code[data-step="8"] .ka-claude-code-pr-a { display: none; }
+  .ka-claude-code[data-step="7"] .ka-claude-code-pr-b,
+  .ka-claude-code[data-step="8"] .ka-claude-code-pr-b { display: inline; color: var(--c-gold-dark, #a8852d); animation: ka-claude-code-pop .5s ease both; }
+
+  @container (max-width: 520px) {
+    .ka-claude-code-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; }
+    .ka-claude-code-adm { border-left: 0; border-top: 1px solid var(--kc-line); padding: 0.55em 0.8em; }
+    .ka-claude-code-adm-h, .ka-claude-code-pol, .ka-claude-code-adm-s { display: none; }
+    .ka-claude-code-term { font-size: 0.78em; padding: 0.8em 0.9em; gap: 0.35em; }
+  }
+
+  @keyframes ka-claude-code-blink { 50% { opacity: 0; } }
+  @keyframes ka-claude-code-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-claude-code-pop { 0% { transform: scale(1); } 40% { transform: scale(1.25); } 100% { transform: scale(1); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-claude-code *, .ka-claude-code *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setup(root: HTMLElement) {
+    const prompt = root.dataset.prompt || '';
+    const typed = root.querySelector<HTMLElement>('[data-role="typed"]')!;
+    const lines = Array.from(root.querySelectorAll<HTMLElement>('[data-ln]'));
+    const ask = root.querySelector<HTMLElement>('.ka-claude-code-ask')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+    const show = (n: number) => lines.find((l) => l.dataset.ln === String(n))?.classList.add('is-on');
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      typed.textContent = '';
+      lines.forEach((l) => l.classList.remove('is-on'));
+      ask.classList.remove('is-yes');
+      delete root.dataset.typing;
+      step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(600, () => { root.dataset.typing = '1'; });
+      for (let i = 0; i <= prompt.length; i++) at(700 + i * 38, () => { typed.textContent = prompt.slice(0, i); });
+      const t0 = 700 + prompt.length * 38 + 500;
+      at(t0, () => { delete root.dataset.typing; step(1); show(1); });
+      at(t0 + 1300, () => { step(2); show(2); });
+      at(t0 + 2900, () => { step(3); show(3); });
+      at(t0 + 4100, () => { step(4); show(4); });
+      at(t0 + 5300, () => { step(5); ask.classList.add('is-yes'); });
+      at(t0 + 6300, () => { step(6); show(5); });
+      at(t0 + 7500, () => { step(7); show(6); });
+      at(t0 + 8100, () => step(8));
+      at(t0 + 11300, () => step(9));
+      at(t0 + 11900, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      typed.textContent = prompt;
+      lines.forEach((l) => l.classList.add('is-on'));
+      ask.classList.add('is-yes');
+      step(8);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-claude-code').forEach(setup);
+</script>

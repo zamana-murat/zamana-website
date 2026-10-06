@@ -1,0 +1,242 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/yuksekogretim/.
+ * Scenario: at a fictional university, a student in "Öğrenme modu" asks Claude to solve an
+ * assignment. Claude reads the course material, does not hand over the answer, and asks a
+ * guiding question instead; the student answers and Claude follows up.
+ * Generic chat UI, no logos. Markup holds every element; the script toggles data-step and types.
+ */
+---
+
+<div
+  class="ka-yuksekogretim"
+  data-step="0"
+  data-text="Talep esnekliği ödevimi benim yerime çözer misin?"
+  role="img"
+  aria-label="Bir üniversite öğrencisi öğrenme modunda Claude'dan ödevini çözmesini istiyor. Claude ders notlarını okuyor, cevabı vermek yerine öğrenciyi düşündüren bir soru soruyor, öğrenci doğru cevaba kendisi ulaşıyor."
+>
+  <div class="kayo__win" aria-hidden="true">
+    <div class="kayo__bar">
+      <span class="kayo__dot"></span><span class="kayo__dot"></span><span class="kayo__dot"></span>
+      <span class="kayo__bar-title">İktisada Giriş · Ödev 3</span>
+      <span class="kayo__mode">
+        <svg viewBox="0 0 24 24" width="13" height="13"><path d="M4 19V6a2 2 0 0 1 2-2h12v13H6a2 2 0 0 0-2 2zm0 0a2 2 0 0 0 2 2h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        Öğrenme modu
+      </span>
+    </div>
+
+    <div class="kayo__body">
+      <div class="kayo__side">
+        <p class="kayo__ws">Kuzeyyaka Üniversitesi</p>
+        <p class="kayo__side-h">Derslerim</p>
+        <p class="kayo__ch kayo__ch--on">İktisada Giriş</p>
+        <p class="kayo__ch">İstatistik I</p>
+        <p class="kayo__ch">Akademik Yazım</p>
+        <p class="kayo__side-h kayo__side-h--2">Bağlı kaynak</p>
+        <p class="kayo__src"><span class="kayo__ok"></span>Ders notları</p>
+      </div>
+
+      <div class="kayo__main">
+        <div class="kayo__msgs">
+          <p class="kayo__hint">Öğrenme modunda Claude cevabı hazır vermez, düşünmeni ister.</p>
+
+          <div class="kayo__msg kayo__msg--me kayo__msg--sent">
+            <p class="kayo__bubble">Talep esnekliği ödevimi benim yerime çözer misin?</p>
+          </div>
+
+          <div class="kayo__msg kayo__msg--ai kayo__msg--claude">
+            <span class="kayo__av">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </span>
+            <div class="kayo__mbody">
+              <div class="kayo__work">
+                <span class="kayo__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                <span data-role="sub">Ödev metni okunuyor</span>
+              </div>
+              <div class="kayo__result">
+                <p class="kayo__p">Cevabı vermeyeceğim ama birlikte çözebiliriz. Önce şunu düşün:</p>
+                <div class="kayo__q">
+                  <p class="kayo__q-t">Fiyat %10 artınca talep edilen miktar %25 düşüyor. Esneklik 1'den büyük mü, küçük mü?</p>
+                  <p class="kayo__tip">İpucu: Hafta 4 ders notu, slayt 12</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kayo__msg kayo__msg--me kayo__msg--reply">
+            <p class="kayo__bubble">%25 bölü %10, yani 2,5. Büyük, talep esnek!</p>
+          </div>
+
+          <div class="kayo__msg kayo__msg--ai kayo__msg--follow">
+            <span class="kayo__av">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </span>
+            <div class="kayo__mbody">
+              <p class="kayo__good">Doğru yoldasın</p>
+              <p class="kayo__p">Peki fiyatı artıran firmanın toplam geliri artar mı, azalır mı? Neden?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="kayo__comp">
+          <span class="kayo__ph">Sorunu yaz</span>
+          <span data-role="c1"></span><span class="kayo__caret"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-yuksekogretim {
+    --kayo-ink: var(--c-navy);
+    --kayo-muted: var(--c-text-muted);
+    --kayo-line: var(--c-border);
+    --kayo-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+    container-type: inline-size;
+  }
+  .kayo__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .kayo__bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 0.7em 1em; border-bottom: 1px solid var(--kayo-line);
+  }
+  .kayo__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; flex-shrink: 0; }
+  .kayo__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--kayo-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .kayo__mode {
+    margin-left: auto; display: inline-flex; align-items: center; gap: 0.35em; flex-shrink: 0;
+    font-size: 0.72em; font-weight: 800; color: var(--c-navy); background: rgba(201, 168, 76, .22);
+    border: 1px solid rgba(201, 168, 76, .55); border-radius: 999px; padding: 0.3em 0.75em;
+  }
+  .kayo__body { flex: 1; display: flex; min-height: 0; }
+
+  .kayo__side { width: 8.6em; flex-shrink: 0; background: var(--c-navy); padding: 1em 0.7em; }
+  .kayo__side p { margin: 0; }
+  .kayo__ws { color: #fff; font-weight: 800; font-size: 0.86em; line-height: 1.25; padding: 0 0.45em 0.8em; }
+  .kayo__side-h { color: rgba(255, 255, 255, .5); font-size: 0.66em; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 0 0.6em 0.4em; }
+  .kayo__side-h--2 { margin-top: 1em !important; }
+  .kayo__ch { color: rgba(255, 255, 255, .72); font-size: 0.8em; padding: 0.38em 0.6em; border-radius: 6px; }
+  .kayo__ch--on { background: var(--c-gold); color: var(--c-navy); font-weight: 800; }
+  .kayo__src { display: flex; align-items: center; gap: 0.45em; color: rgba(255, 255, 255, .85); font-size: 0.76em; padding: 0.2em 0.6em; }
+  .kayo__ok { width: 7px; height: 7px; border-radius: 50%; background: #5fd08a; flex-shrink: 0; }
+  @container (max-width: 470px) { .kayo__side { display: none; } }
+
+  .kayo__main { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 0 1.2em 1em; }
+  .kayo__msgs {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end;
+    padding-top: 0.6em; padding-bottom: 0.25em; gap: 0.6em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+  }
+  .kayo__hint { margin: 0 auto 0.3em; max-width: 26em; text-align: center; font-size: 0.78em; color: var(--kayo-muted); line-height: 1.4; }
+  .kayo__msg { display: flex; gap: 0.6em; align-items: flex-start; }
+  .kayo__msg--me { justify-content: flex-end; }
+  .kayo__msg--sent, .kayo__msg--claude, .kayo__msg--reply, .kayo__msg--follow { display: none; animation: ka-yuksekogretim-in .4s ease both; }
+  .kayo__bubble {
+    margin: 0; max-width: 80%; background: var(--kayo-soft); color: var(--kayo-ink);
+    border-radius: 14px 14px 4px 14px; padding: 0.55em 0.85em; line-height: 1.4;
+  }
+  .kayo__av {
+    width: 2em; height: 2em; border-radius: 7px; flex-shrink: 0;
+    display: grid; place-items: center; background: var(--c-navy); color: var(--c-gold);
+  }
+  .kayo__mbody { min-width: 0; flex: 1; }
+  .kayo__p { margin: 0.15em 0 0; color: var(--kayo-ink); line-height: 1.45; }
+  .kayo__work { display: none; align-items: center; gap: 0.5em; margin-top: 0.35em; color: var(--kayo-muted); font-size: 0.9em; }
+  .kayo__spark { color: var(--c-gold); display: inline-flex; animation: ka-yuksekogretim-spin 1.6s linear infinite; }
+  .kayo__result { display: none; }
+  .kayo__q {
+    margin-top: 0.5em; border: 1px solid var(--c-border-gold, rgba(201, 168, 76, .3)); border-left: 3px solid var(--c-gold);
+    background: #fdfaf1; border-radius: 8px; padding: 0.6em 0.8em;
+    opacity: 0; transform: translateY(6px); transition: opacity .4s .35s, transform .4s .35s;
+  }
+  .kayo__q-t { margin: 0; font-weight: 700; color: var(--kayo-ink); line-height: 1.4; }
+  .kayo__tip { margin: 0.35em 0 0; font-size: 0.78em; color: var(--c-gold-text); font-weight: 700; }
+  .kayo__good {
+    display: inline-block; margin: 0.1em 0 0; font-size: 0.72em; font-weight: 800; letter-spacing: .04em;
+    color: #1d6b3d; background: rgba(95, 208, 138, .18); border-radius: 4px; padding: 0.2em 0.55em;
+  }
+
+  .kayo__comp {
+    margin-top: 0.5em; border: 1px solid rgba(15, 40, 85, .22); border-radius: 9px;
+    padding: 0.6em 0.9em; min-height: 1.4em; line-height: 1.4; color: var(--kayo-ink); background: #fff;
+    white-space: nowrap; overflow: hidden;
+  }
+  .kayo__ph { color: var(--kayo-muted); opacity: .8; }
+  .kayo__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--kayo-ink); animation: ka-yuksekogretim-blink 1s steps(1) infinite; }
+  .ka-yuksekogretim[data-typing] .kayo__caret { display: inline-block; }
+
+  /* step states */
+  .ka-yuksekogretim[data-step="1"] .kayo__ph { display: none; }
+  .ka-yuksekogretim:is([data-step="2"], [data-step="3"], [data-step="4"]) .kayo__msg--sent { display: flex; }
+  .ka-yuksekogretim:is([data-step="2"], [data-step="3"], [data-step="4"]) .kayo__msg--claude { display: flex; animation-delay: .5s; }
+  .ka-yuksekogretim[data-step="2"] .kayo__work { display: flex; }
+  .ka-yuksekogretim:is([data-step="3"], [data-step="4"]) .kayo__result { display: block; }
+  .ka-yuksekogretim:is([data-step="3"], [data-step="4"]) .kayo__q { opacity: 1; transform: none; }
+  .ka-yuksekogretim[data-step="4"] .kayo__msg--reply { display: flex; }
+  .ka-yuksekogretim[data-step="4"] .kayo__msg--follow { display: flex; animation-delay: 1.4s; }
+  .ka-yuksekogretim[data-step="4"] .kayo__hint { display: none; }
+  .ka-yuksekogretim[data-step="5"] .kayo__win { opacity: 0; transition: opacity .5s; }
+
+  @keyframes ka-yuksekogretim-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-yuksekogretim-blink { 50% { opacity: 0; } }
+  @keyframes ka-yuksekogretim-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-yuksekogretim *, .ka-yuksekogretim *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = ['Ödev metni okunuyor', 'Hafta 4 ders notlarına bakılıyor', 'Yönlendirici soru hazırlanıyor'];
+
+  function setup(root: HTMLElement) {
+    const text = root.dataset.text || '';
+    const c1 = root.querySelector<HTMLElement>('[data-role="c1"]')!;
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      c1.textContent = ''; sub.textContent = SUBS[0];
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(900, () => { step(1); root.dataset.typing = '1'; });
+      for (let i = 0; i <= text.length; i++) at(1000 + i * 30, () => { c1.textContent = text.slice(0, i); });
+      const t1 = 1000 + text.length * 30;
+      at(t1 + 500, () => { delete root.dataset.typing; c1.textContent = ''; step(2); });
+      at(t1 + 1900, () => { sub.textContent = SUBS[1]; });
+      at(t1 + 3100, () => { sub.textContent = SUBS[2]; });
+      const t2 = t1 + 4200;
+      at(t2, () => step(3));
+      const t3 = t2 + 3600;
+      at(t3, () => step(4));
+      at(t3 + 4400, () => step(5));
+      at(t3 + 5000, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-yuksekogretim').forEach(setup);
+</script>

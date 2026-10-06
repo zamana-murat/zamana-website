@@ -1,5 +1,6 @@
 ---
 import { claudeNavColumns, claudeNavFooter } from '../data/claude-nav';
+import { kurumsalNavColumns, kurumsalNavFooter } from '../data/kurumsal-nav';
 
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const isActive = (href: string) => {
@@ -15,8 +16,13 @@ const links = [
   { href: '/hakkinda/', label: 'Hakkında' },
   { href: '/iletisim/', label: 'İletişim' },
 ];
-const claudeActive = isActive('/claude/');
+// Mega menus, in menu order. Each renders a desktop panel and a mobile accordion.
+const megas = [
+  { id: 'claude', label: 'Claude', base: '/claude/', columns: claudeNavColumns, footer: claudeNavFooter },
+  { id: 'kurumsal', label: 'Kurumsal', base: '/kurumsal/', columns: kurumsalNavColumns, footer: kurumsalNavFooter },
+];
 const itemActive = (href: string) => !href.includes('#') && (href.replace(/\/$/, '') || '/') === path;
+const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>';
 ---
 
 <header class="site-header" id="site-header">
@@ -26,65 +32,72 @@ const itemActive = (href: string) => !href.includes('#') && (href.replace(/\/$/,
     </a>
 
     <nav class="nav-desktop" aria-label="Ana menü">
-      <div class="mega" id="claude-mega-root">
-        <button
-          type="button"
-          class={`nav-link mega__trigger${claudeActive ? ' nav-link--active' : ''}`}
-          id="claude-mega-trigger"
-          aria-expanded="false"
-          aria-controls="claude-mega"
-        >
-          Claude
-          <svg class="mega__chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+      {megas.map((m) => (
+        <div class="mega" data-mega>
+          <button
+            type="button"
+            class={`nav-link mega__trigger${isActive(m.base) ? ' nav-link--active' : ''}`}
+            id={`${m.id}-mega-trigger`}
+            aria-expanded="false"
+            aria-controls={`${m.id}-mega`}
+            data-mega-trigger
+          >
+            {m.label}
+            <svg class="mega__chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false" set:html={chevron} />
+          </button>
 
-        <div class="mega__panel" id="claude-mega" role="region" aria-labelledby="claude-mega-trigger">
-          <div class="container">
-            <div class="mega__cols">
-              {claudeNavColumns.map((col) => (
-                <div class={`mega__col${col.arrow ? ' mega__col--arrow' : ''}`}>
-                  {col.groups.map((g) => (
-                    <div class="mega__group">
-                      <p class="mega__heading">{g.title}</p>
-                      <ul>
-                        {g.items.map((it) => (
-                          <li>
-                            <a href={it.href} class="mega__item" aria-current={itemActive(it.href) ? 'page' : undefined}>
-                              <span class="mega__label">
-                                {it.label}
-                                {col.arrow && (
-                                  <svg class="mega__arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                )}
-                              </span>
-                              <span class="mega__desc">{it.desc}</span>
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+          <div class="mega__panel" id={`${m.id}-mega`} role="region" aria-labelledby={`${m.id}-mega-trigger`}>
+            <div class="container">
+              <div class="mega__cols" style={`--mega-cols: ${m.columns.length}`}>
+                {m.columns.map((col) => (
+                  <div class={`mega__col${col.arrow ? ' mega__col--arrow' : ''}`}>
+                    {col.groups.map((g) => (
+                      <div class="mega__group">
+                        <p class="mega__heading">{g.title}</p>
+                        <ul>
+                          {g.items.map((it) => (
+                            <li>
+                              <a href={it.href} class="mega__item" aria-current={itemActive(it.href) ? 'page' : undefined}>
+                                <span class="mega__label">
+                                  {it.label}
+                                  {col.arrow && (
+                                    <svg class="mega__arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                  )}
+                                </span>
+                                <span class="mega__desc">{it.desc}</span>
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+
+              <div class="mega__strip">
+                <a href={m.footer.link.href} class="mega__migrate">
+                  {m.footer.link.label}
+                  <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <div class="mega__btns">
+                  {m.footer.buttons.map((b) => (
+                    b.external ? (
+                      <a href={b.href} class="mega__btn" target="_blank" rel="noopener">
+                        {b.label}
+                        <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 6 10M11 13H3V5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="visually-hidden">(yeni sekmede açılır)</span>
+                      </a>
+                    ) : (
+                      <a href={b.href} class="mega__btn" aria-current={itemActive(b.href) ? 'page' : undefined}>{b.label}</a>
+                    )
                   ))}
                 </div>
-              ))}
-            </div>
-
-            <div class="mega__strip">
-              <a href={claudeNavFooter.migrate.href} class="mega__migrate">
-                {claudeNavFooter.migrate.label}
-                <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-              <div class="mega__btns">
-                {claudeNavFooter.buttons.map((b) => (
-                  <a href={b.href} class="mega__btn" target="_blank" rel="noopener">
-                    {b.label}
-                    <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M6 3h7v7M13 3 6 10M11 13H3V5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <span class="visually-hidden">(yeni sekmede açılır)</span>
-                  </a>
-                ))}
               </div>
             </div>
           </div>
         </div>
-      </div>
+      ))}
 
       {links.map(l => (
         <a
@@ -101,36 +114,40 @@ const itemActive = (href: string) => !href.includes('#') && (href.replace(/\/$/,
   </div>
 
   <nav class="nav-mobile" id="nav-mobile" aria-label="Mobil menü">
-    <div class="macc">
-      <button
-        type="button"
-        class={`nav-link macc__trigger${claudeActive ? ' nav-link--active' : ''}`}
-        id="claude-macc-trigger"
-        aria-expanded="false"
-        aria-controls="claude-macc"
-      >
-        Claude
-        <svg class="mega__chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div class="macc__panel" id="claude-macc" hidden>
-        {claudeNavColumns.flatMap((c) => c.groups).map((g) => (
-          <div class="macc__group">
-            <p class="mega__heading">{g.title}</p>
-            <ul>
-              {g.items.map((it) => (
-                <li><a href={it.href} aria-current={itemActive(it.href) ? 'page' : undefined}>{it.label}</a></li>
-              ))}
-            </ul>
-          </div>
-        ))}
-        <div class="macc__group macc__strip">
-          <a href={claudeNavFooter.migrate.href}>{claudeNavFooter.migrate.label}</a>
-          {claudeNavFooter.buttons.map((b) => (
-            <a href={b.href} target="_blank" rel="noopener">{b.label} <span aria-hidden="true">&#8599;</span><span class="visually-hidden">(yeni sekmede açılır)</span></a>
+    {megas.map((m) => (
+      <div class="macc">
+        <button
+          type="button"
+          class={`nav-link macc__trigger${isActive(m.base) ? ' nav-link--active' : ''}`}
+          aria-expanded="false"
+          aria-controls={`${m.id}-macc`}
+          data-macc-trigger
+        >
+          {m.label}
+          <svg class="mega__chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false" set:html={chevron} />
+        </button>
+        <div class="macc__panel" id={`${m.id}-macc`} hidden>
+          {m.columns.flatMap((c) => c.groups).map((g) => (
+            <div class="macc__group">
+              <p class="mega__heading">{g.title}</p>
+              <ul>
+                {g.items.map((it) => (
+                  <li><a href={it.href} aria-current={itemActive(it.href) ? 'page' : undefined}>{it.label}</a></li>
+                ))}
+              </ul>
+            </div>
           ))}
+          <div class="macc__group macc__strip">
+            <a href={m.footer.link.href}>{m.footer.link.label}</a>
+            {m.footer.buttons.map((b) => (
+              b.external
+                ? <a href={b.href} target="_blank" rel="noopener">{b.label} <span aria-hidden="true">&#8599;</span><span class="visually-hidden">(yeni sekmede açılır)</span></a>
+                : <a href={b.href} aria-current={itemActive(b.href) ? 'page' : undefined}>{b.label}</a>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    ))}
     {links.map(l => (
       <a href={l.href} class={`nav-link${isActive(l.href) ? ' nav-link--active' : ''}`}>{l.label}</a>
     ))}
@@ -205,7 +222,7 @@ const itemActive = (href: string) => !href.includes('#') && (href.replace(/\/$/,
     font-size: 0.92rem;
   }
 
-  /* ── Claude mega menu (desktop) ─────────────────────── */
+  /* ── Mega menus (desktop) ───────────────────────── */
   .mega__trigger {
     display: inline-flex;
     align-items: center;
@@ -259,7 +276,7 @@ const itemActive = (href: string) => !href.includes('#') && (href.replace(/\/$/,
   }
   .mega__cols {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(var(--mega-cols, 4), minmax(0, 1fr));
     gap: var(--s-4);
   }
   .mega__group + .mega__group { margin-top: var(--s-4); }
@@ -390,7 +407,7 @@ const itemActive = (href: string) => !href.includes('#') && (href.replace(/\/$/,
   }
   .nav-mobile.is-open { display: flex; }
 
-  /* ── Claude accordion (mobile) ──────────────────────── */
+  /* ── Mega menu accordions (mobile) ──────────────────── */
   .macc__trigger {
     display: inline-flex;
     align-items: center;
@@ -451,27 +468,30 @@ const itemActive = (href: string) => !href.includes('#') && (href.replace(/\/$/,
     toggle.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
   });
 
-  // Mobile "Claude" accordion
-  const maccTrigger = document.getElementById('claude-macc-trigger');
-  const maccPanel = document.getElementById('claude-macc');
-  maccTrigger?.addEventListener('click', () => {
-    const open = maccTrigger.getAttribute('aria-expanded') !== 'true';
-    maccTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
-    if (maccPanel) maccPanel.hidden = !open;
+  // Mobile mega menu accordions
+  document.querySelectorAll<HTMLButtonElement>('[data-macc-trigger]').forEach((btn) => {
+    const panel = document.getElementById(btn.getAttribute('aria-controls') || '');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (panel) panel.hidden = !open;
+    });
   });
 
-  // Desktop "Claude" mega menu: click toggles, hover opens with small delays.
-  const root = document.getElementById('claude-mega-root');
-  const trigger = document.getElementById('claude-mega-trigger');
-  const panel = document.getElementById('claude-mega');
-  if (root && trigger && panel) {
+  // Desktop mega menus: click toggles, hover opens with small delays; one open at a time.
+  interface Mega { root: HTMLElement; trigger: HTMLButtonElement; isOpen: () => boolean; setOpen: (open: boolean) => void }
+  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+  const megas: Mega[] = [];
+  document.querySelectorAll<HTMLElement>('[data-mega]').forEach((root) => {
+    const trigger = root.querySelector<HTMLButtonElement>('[data-mega-trigger]');
+    if (!trigger) return;
     let openTimer: number | undefined;
     let closeTimer: number | undefined;
-    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
     const isOpen = () => root.classList.contains('is-open');
     const setOpen = (open: boolean) => {
       window.clearTimeout(openTimer);
       window.clearTimeout(closeTimer);
+      if (open) megas.forEach((m) => m.root !== root && m.isOpen() && m.setOpen(false));
       root.classList.toggle('is-open', open);
       trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
     };
@@ -488,19 +508,25 @@ const itemActive = (href: string) => !href.includes('#') && (href.replace(/\/$/,
       window.clearTimeout(openTimer);
       closeTimer = window.setTimeout(() => setOpen(false), 220);
     });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && isOpen()) {
-        setOpen(false);
-        trigger.focus();
-      }
-    });
-    document.addEventListener('pointerdown', (e) => {
-      if (isOpen() && !root.contains(e.target as Node)) setOpen(false);
-    });
     root.addEventListener('focusout', (e) => {
       const next = e.relatedTarget as Node | null;
       if (isOpen() && next && !root.contains(next)) setOpen(false);
     });
-  }
+
+    megas.push({ root, trigger, isOpen, setOpen });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    const open = megas.find((m) => m.isOpen());
+    if (open) {
+      open.setOpen(false);
+      open.trigger.focus();
+    }
+  });
+  document.addEventListener('pointerdown', (e) => {
+    megas.forEach((m) => {
+      if (m.isOpen() && !m.root.contains(e.target as Node)) m.setOpen(false);
+    });
+  });
 </script>

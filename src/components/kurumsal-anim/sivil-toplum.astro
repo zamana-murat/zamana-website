@@ -1,0 +1,232 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/sivil-toplum/.
+ * Scenario: a fictional disaster-relief association asks Claude to draft the "expected results"
+ * section of a grant application from an attached field report. Claude reads the file, builds a
+ * logic model (inputs, activities, outputs, outcomes), then a draft section with a word count.
+ * All data is fictional. No logos.
+ */
+---
+
+<div
+  class="ka-sivil-toplum"
+  data-step="0"
+  data-text="Psikososyal destek programımız için hibe başvurusunun 'Beklenen sonuçlar' bölümünü yaz."
+  role="img"
+  aria-label="Kurgusal bir afet dayanışma derneğinin çalışanı, saha raporunu ekleyip Claude'dan hibe başvurusunun beklenen sonuçlar bölümünü istiyor. Claude raporu okuyor, girdi, faaliyet, çıktı ve sonuç kutularından oluşan bir mantıksal çerçeve kuruyor, ardından kelime sınırına uyan bir bölüm taslağı hazırlıyor. Veriler kurgusaldır."
+>
+  <div class="kast__win" aria-hidden="true">
+    <div class="kast__bar">
+      <span class="kast__dot"></span><span class="kast__dot"></span><span class="kast__dot"></span>
+      <span class="kast__bar-title">Yarenler Afet Dayanışma Derneği · Hibe başvurusu</span>
+    </div>
+
+    <div class="kast__main">
+      <div class="kast__msgs">
+        <div class="kast__msg kast__msg--me kast__msg--sent">
+          <div class="kast__mecol">
+            <p class="kast__file"><span class="kast__xls">XLS</span>saha-raporu-2026.xlsx</p>
+            <p class="kast__bubble">Psikososyal destek programımız için hibe başvurusunun 'Beklenen sonuçlar' bölümünü yaz.</p>
+          </div>
+        </div>
+
+        <div class="kast__msg kast__msg--claude">
+          <span class="kast__av">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </span>
+          <div class="kast__mbody">
+            <div class="kast__work">
+              <span class="kast__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+              <span data-role="sub">Saha raporu okunuyor</span>
+            </div>
+
+            <div class="kast__lm">
+              <p class="kast__ttl">Mantıksal çerçeve</p>
+              <div class="kast__boxes">
+                <div class="kast__box" style="--i:0"><span>Girdi</span><b>14 psikolog</b><small>120 gönüllü</small></div>
+                <div class="kast__box" style="--i:1"><span>Faaliyet</span><b>Haftalık grup</b><small>6 ilçede</small></div>
+                <div class="kast__box" style="--i:2"><span>Çıktı</span><b>1.800 kişi</b><small>12 ayda</small></div>
+                <div class="kast__box kast__box--goal" style="--i:3"><span>Sonuç</span><b>Ölçülebilir iyileşme</b><small>ön ve son test</small></div>
+              </div>
+            </div>
+
+            <div class="kast__draft">
+              <p class="kast__ttl">Taslak · 3. Beklenen sonuçlar</p>
+              <p class="kast__line">Program 12 ay içinde 6 ilçede 1.800 afetzedeye ulaşacak…</p>
+              <p class="kast__bars"><i style="--w:96%"></i><i style="--w:88%"></i><i style="--w:62%"></i></p>
+              <p class="kast__meta"><span class="kast__wc">1.240 / 1.500 kelime</span><span class="kast__chip">Göstergeler tabloya eklendi</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kast__comp">
+        <span class="kast__ph">Claude'a yazın</span>
+        <span data-role="c1"></span><span class="kast__caret"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-sivil-toplum {
+    --kast-ink: var(--c-navy);
+    --kast-muted: var(--c-text-muted);
+    --kast-line: var(--c-border);
+    --kast-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+    container-type: inline-size;
+  }
+  .kast__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .kast__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--kast-line); }
+  .kast__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; flex-shrink: 0; }
+  .kast__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--kast-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+
+  .kast__main { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0 1.3em 1em; }
+  .kast__msgs {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end;
+    padding-top: 0.6em; padding-bottom: 0.25em; gap: 0.7em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+  }
+  .kast__msg { display: none; gap: 0.6em; align-items: flex-start; animation: ka-sivil-toplum-in .4s ease both; }
+  .kast__msg--me { justify-content: flex-end; }
+  .kast__mecol { display: flex; flex-direction: column; align-items: flex-end; gap: 0.3em; max-width: 84%; }
+  .kast__file {
+    margin: 0; display: inline-flex; align-items: center; gap: 0.5em; font-size: 0.78em; font-weight: 700; color: var(--kast-ink);
+    border: 1px solid var(--kast-line); border-radius: 8px; padding: 0.3em 0.6em 0.3em 0.35em; background: #fff;
+  }
+  .kast__xls { background: #1d6b3d; color: #fff; font-size: 0.75em; font-weight: 800; border-radius: 4px; padding: 0.2em 0.4em; }
+  .kast__bubble { margin: 0; background: var(--kast-soft); color: var(--kast-ink); border-radius: 14px 14px 4px 14px; padding: 0.55em 0.85em; line-height: 1.4; }
+  .kast__av { width: 2em; height: 2em; border-radius: 7px; flex-shrink: 0; display: grid; place-items: center; background: var(--c-navy); color: var(--c-gold); }
+  .kast__mbody { min-width: 0; flex: 1; }
+  .kast__work { display: none; align-items: center; gap: 0.5em; margin-top: 0.35em; color: var(--kast-muted); font-size: 0.9em; }
+  .kast__spark { color: var(--c-gold); display: inline-flex; animation: ka-sivil-toplum-spin 1.6s linear infinite; }
+  .kast__ttl { margin: 0.1em 0 0.45em; font-weight: 800; color: var(--kast-ink); font-size: 0.92em; }
+
+  /* logic model */
+  .kast__lm { display: none; }
+  .kast__boxes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.9em; position: relative; }
+  .kast__box {
+    position: relative; border: 1px solid var(--kast-line); border-radius: 8px; padding: 0.45em 0.55em; background: #fff; line-height: 1.25;
+    opacity: 0; transform: translateY(6px);
+    transition: opacity .35s calc(var(--i) * 260ms + 120ms), transform .35s calc(var(--i) * 260ms + 120ms);
+  }
+  .kast__box:not(:last-child)::after {
+    content: '›'; position: absolute; right: -0.78em; top: 50%; transform: translateY(-50%);
+    color: var(--c-gold-dark, #a8852d); font-weight: 900; font-size: 1.1em;
+  }
+  .kast__box span { display: block; font-size: 0.66em; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--c-gold-text); }
+  .kast__box b { display: block; font-size: 0.82em; color: var(--kast-ink); }
+  .kast__box small { display: block; font-size: 0.7em; color: var(--kast-muted); }
+  .kast__box--goal { background: var(--c-navy); border-color: var(--c-navy); }
+  .kast__box--goal span { color: var(--c-gold); }
+  .kast__box--goal b { color: #fff; }
+  .kast__box--goal small { color: rgba(255, 255, 255, .7); }
+
+  /* draft */
+  .kast__draft {
+    display: none; margin-top: 0.7em; border: 1px solid var(--kast-line); border-left: 3px solid var(--c-gold);
+    border-radius: 8px; padding: 0.55em 0.75em; background: #fdfaf1;
+  }
+  .kast__line { margin: 0 0 0.35em; font-size: 0.85em; color: var(--kast-ink); line-height: 1.4; }
+  .kast__bars { margin: 0; display: flex; flex-direction: column; gap: 0.35em; }
+  .kast__bars i { display: block; height: 0.42em; border-radius: 3px; background: rgba(15, 40, 85, .12); width: 0; transition: width .6s ease-out; }
+  .kast__bars i:nth-child(2) { transition-delay: .25s; }
+  .kast__bars i:nth-child(3) { transition-delay: .5s; }
+  .kast__meta { margin: 0.55em 0 0; display: flex; flex-wrap: wrap; gap: 0.5em; align-items: center; font-size: 0.74em; opacity: 0; transition: opacity .4s 1s; }
+  .kast__wc { font-weight: 800; color: var(--kast-ink); }
+  .kast__chip { color: #1d6b3d; background: rgba(95, 208, 138, .18); border-radius: 4px; padding: 0.15em 0.5em; font-weight: 700; }
+
+  @container (max-width: 470px) {
+    .kast__boxes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.4em 0.9em; }
+    .kast__box:nth-child(2)::after { display: none; }
+    .kast__box small { display: none; }
+  }
+
+  .kast__comp {
+    margin-top: 0.5em; border: 1px solid rgba(15, 40, 85, .22); border-radius: 9px;
+    padding: 0.6em 0.9em; min-height: 1.4em; line-height: 1.4; color: var(--kast-ink); background: #fff;
+    white-space: nowrap; overflow: hidden;
+  }
+  .kast__ph { color: var(--kast-muted); opacity: .8; }
+  .kast__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--kast-ink); animation: ka-sivil-toplum-blink 1s steps(1) infinite; }
+  .ka-sivil-toplum[data-typing] .kast__caret { display: inline-block; }
+
+  /* step states */
+  .ka-sivil-toplum[data-step="1"] .kast__ph { display: none; }
+  .ka-sivil-toplum:is([data-step="2"], [data-step="3"], [data-step="4"]) .kast__msg--sent { display: flex; }
+  .ka-sivil-toplum:is([data-step="2"], [data-step="3"], [data-step="4"]) .kast__msg--claude { display: flex; animation-delay: .5s; }
+  .ka-sivil-toplum[data-step="2"] .kast__work { display: flex; }
+  .ka-sivil-toplum:is([data-step="3"], [data-step="4"]) .kast__lm { display: block; }
+  .ka-sivil-toplum:is([data-step="3"], [data-step="4"]) .kast__box { opacity: 1; transform: none; }
+  .ka-sivil-toplum[data-step="4"] .kast__draft { display: block; }
+  .ka-sivil-toplum[data-step="4"] .kast__bars i { width: var(--w); }
+  .ka-sivil-toplum[data-step="4"] .kast__meta { opacity: 1; }
+  .ka-sivil-toplum[data-step="5"] .kast__win { opacity: 0; transition: opacity .5s; }
+
+  @keyframes ka-sivil-toplum-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-sivil-toplum-blink { 50% { opacity: 0; } }
+  @keyframes ka-sivil-toplum-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-sivil-toplum *, .ka-sivil-toplum *::before, .ka-sivil-toplum *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = ['Saha raporu okunuyor', 'Göstergeler ve hedefler çıkarılıyor', 'Mantıksal çerçeve kuruluyor'];
+
+  function setup(root: HTMLElement) {
+    const text = root.dataset.text || '';
+    const c1 = root.querySelector<HTMLElement>('[data-role="c1"]')!;
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      c1.textContent = ''; sub.textContent = SUBS[0];
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(900, () => { step(1); root.dataset.typing = '1'; });
+      for (let i = 0; i <= text.length; i++) at(1000 + i * 24, () => {
+        const s = text.slice(0, i);
+        c1.textContent = s.length > 46 ? '…' + s.slice(-45) : s;
+      });
+      const t1 = 1000 + text.length * 24;
+      at(t1 + 500, () => { delete root.dataset.typing; c1.textContent = ''; step(2); });
+      at(t1 + 1800, () => { sub.textContent = SUBS[1]; });
+      at(t1 + 3000, () => { sub.textContent = SUBS[2]; });
+      const t2 = t1 + 4100;
+      at(t2, () => step(3));
+      const t3 = t2 + 3000;
+      at(t3, () => step(4));
+      at(t3 + 4400, () => step(5));
+      at(t3 + 5000, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-sivil-toplum').forEach(setup);
+</script>

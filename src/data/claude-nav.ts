@@ -91,9 +91,14 @@ export const claudeNavColumns: ClaudeNavColumn[] = [
   },
 ];
 
-/** Bottom strip of the mega menu. */
-export const claudeNavFooter = {
-  migrate: { label: "Claude'a geçiş", href: '/claude/gecis/', desc: 'Başka bir asistandan geçmek için' },
+/** Bottom strip of a mega menu: one text link on the left, buttons on the right. */
+export interface MegaNavFooter {
+  link: { label: string; href: string; desc: string };
+  buttons: { label: string; href: string; external?: boolean }[];
+}
+
+export const claudeNavFooter: MegaNavFooter = {
+  link: { label: "Claude'a geçiş", href: '/claude/gecis/', desc: 'Başka bir asistandan geçmek için' },
   buttons: [
     { label: 'Uygulamaları indir', href: 'https://claude.com/download', external: true },
     { label: "Claude'a giriş", href: 'https://claude.ai', external: true },
@@ -105,7 +110,7 @@ export const claudeHubGroups: { title: string; items: ClaudeNavItem[] }[] = [
   ...claudeNavColumns.flatMap((c) => c.groups),
   {
     title: 'Geçiş',
-    items: [{ label: claudeNavFooter.migrate.label, href: claudeNavFooter.migrate.href, slug: 'gecis', desc: claudeNavFooter.migrate.desc }],
+    items: [{ label: claudeNavFooter.link.label, href: claudeNavFooter.link.href, slug: 'gecis', desc: claudeNavFooter.link.desc }],
   },
 ];
 

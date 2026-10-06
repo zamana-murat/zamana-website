@@ -1,0 +1,185 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/musteriler/.
+ * Scenario: a showcase of sector cards. Each card shows the job, the Claude product used and
+ * a before/after time bar taken from a published customer story. No company names or logos:
+ * the cards speak only in sector and result type. The script only toggles classes.
+ */
+const cards = [
+  { sector: 'Hukuk', job: 'Sözleşme incelemesi', desc: 'Word içinde riskleri işaretler, değişiklik önerir', product: 'Claude Platform', before: '10 saat', after: '1 saat', w: 10 },
+  { sector: 'Finans', job: 'Uyum boşluk analizi', desc: 'Gereksinimleri mevcut süreçlerle karşılaştırır', product: 'Claude Code ve Cowork', before: '2 hafta', after: 'Saatler', w: 8 },
+  { sector: 'Sigorta', job: 'Hasar belgesi işleme', desc: 'Gelen belgeleri sınıflandırıp dosyaya işler', product: 'Claude Platform', before: 'Günler', after: 'Dakikalar', w: 4 },
+  { sector: 'Sağlık', job: 'Ürün geliştirme döngüsü', desc: 'Düzenlemeye tabi ortamda şirket geneline yayıldı', product: 'Enterprise ve Claude Code', before: 'Tam döngü', after: 'Yarı süre', w: 50 },
+  { sector: 'Sivil toplum', job: 'Yönetime analiz raporu', desc: 'Dağınık Excel verisinden çevrimdışı pano üretir', product: 'Claude Enterprise', before: '1 iş günü', after: '30 dk altı', w: 6 },
+  { sector: 'Perakende', job: 'Üretim alarmına yanıt', desc: 'Kanaldaki alarmı inceler, doğru ekibe yönlendirir', product: 'Claude Tag', before: 'Önceki süre', after: '%65 daha hızlı', w: 35 },
+];
+---
+
+<div
+  class="ka-musteriler"
+  role="img"
+  aria-label="Sektör kartlarının döndüğü bir vitrin: hukuk, finans, sigorta, sağlık, sivil toplum ve perakende kartlarında işin adı, kullanılan Claude ürünü ve öncesi ile sonrası süre çubukları görünüyor."
+>
+  <div class="ka-musteriler-win" aria-hidden="true">
+    <div class="ka-musteriler-bar">
+      <span class="ka-musteriler-dot"></span><span class="ka-musteriler-dot"></span><span class="ka-musteriler-dot"></span>
+      <span class="ka-musteriler-bar-title">Müşteri hikâyeleri</span>
+      <span class="ka-musteriler-note">Yayımlanmış vakalardan</span>
+    </div>
+
+    <div class="ka-musteriler-chips">
+      {cards.map((c, i) => <span class="ka-musteriler-chip" data-k={i}>{c.sector}</span>)}
+    </div>
+
+    <div class="ka-musteriler-stage">
+      {cards.map((c, i) => (
+        <div class="ka-musteriler-card" data-k={i} style={`--w:${c.w}%`}>
+          <div class="ka-musteriler-chead">
+            <span class="ka-musteriler-sector">{c.sector}</span>
+            <span class="ka-musteriler-prod">{c.product}</span>
+          </div>
+          <p class="ka-musteriler-job">{c.job}</p>
+          <p class="ka-musteriler-desc">{c.desc}</p>
+          <div class="ka-musteriler-rows">
+            <div class="ka-musteriler-row">
+              <span class="ka-musteriler-lbl">Önce</span>
+              <span class="ka-musteriler-track"><span class="ka-musteriler-fill ka-musteriler-fill--before"></span></span>
+              <span class="ka-musteriler-val">{c.before}</span>
+            </div>
+            <div class="ka-musteriler-row">
+              <span class="ka-musteriler-lbl">Sonra</span>
+              <span class="ka-musteriler-track"><span class="ka-musteriler-fill ka-musteriler-fill--after"></span></span>
+              <span class="ka-musteriler-val ka-musteriler-val--after">{c.after}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="ka-musteriler-dots">
+      {cards.map((_, i) => <span class="ka-musteriler-pip" data-k={i}></span>)}
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-musteriler {
+    --kmu-ink: var(--c-navy);
+    --kmu-muted: var(--c-text-muted);
+    --kmu-line: var(--c-border);
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+  }
+  .ka-musteriler p { margin: 0; }
+  .ka-musteriler-win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .ka-musteriler-bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--kmu-line); }
+  .ka-musteriler-dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .ka-musteriler-bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--kmu-muted); font-weight: 700; }
+  .ka-musteriler-note { margin-left: auto; font-size: 0.66em; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--c-gold-text); background: #f7efd9; border-radius: 4px; padding: 0.25em 0.55em; white-space: nowrap; }
+
+  .ka-musteriler-chips { display: flex; gap: 0.4em; padding: 0.9em 1.1em 0.2em; flex-wrap: wrap; }
+  .ka-musteriler-chip {
+    font-size: 0.76em; font-weight: 700; color: var(--kmu-muted); border: 1px solid var(--kmu-line);
+    border-radius: 999px; padding: 0.3em 0.8em; white-space: nowrap; transition: background .35s, color .35s, border-color .35s;
+  }
+  .ka-musteriler-chip.is-on { background: var(--c-navy); color: #fff; border-color: var(--c-navy); }
+
+  .ka-musteriler-stage { position: relative; flex: 1; min-height: 0; margin: 0.8em 1.1em 0.4em; }
+  .ka-musteriler-card {
+    position: absolute; inset: 0 2.2em 0 0; border-radius: 14px; padding: 1.1em 1.3em;
+    background: var(--c-navy); color: #fff; display: flex; flex-direction: column; gap: 0.6em;
+    box-shadow: 0 14px 30px rgba(15, 40, 85, .18);
+    opacity: 0; transform: translateX(2.2em) scale(.94); transition: opacity .5s, transform .5s;
+  }
+  .ka-musteriler-card.is-next { opacity: .35; transform: translateX(2.2em) scale(.94); background: #1a3d7a; }
+  .ka-musteriler-card.is-next > * { visibility: hidden; }
+  /* Outgoing card fades out first, incoming card follows: texts never overlap. */
+  .ka-musteriler-card.is-on { opacity: 1; transform: none; z-index: 2; transition: opacity .35s .2s, transform .5s .1s; }
+  .ka-musteriler-card.is-on > * { transition: visibility 0s .2s; }
+  .ka-musteriler-card.is-prev { opacity: 0; transform: translateX(-2em) scale(.96); transition: opacity .18s, transform .4s; }
+  .ka-musteriler-chead { display: flex; align-items: center; justify-content: space-between; gap: 0.6em; }
+  .ka-musteriler-sector { font-size: 0.72em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--c-gold); }
+  .ka-musteriler-prod { font-size: 0.7em; font-weight: 700; color: rgba(255, 255, 255, .85); background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .16); border-radius: 999px; padding: 0.25em 0.7em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-musteriler-job { font-size: 1.45em; font-weight: 800; line-height: 1.2; letter-spacing: -.01em; }
+  .ka-musteriler-desc { font-size: 0.92em; line-height: 1.4; color: rgba(255, 255, 255, .78); margin-top: -0.2em !important; }
+  .ka-musteriler-rows { margin-top: auto; display: flex; flex-direction: column; gap: 0.7em; }
+  .ka-musteriler-row { display: grid; grid-template-columns: 3.6em minmax(0, 1fr) auto; align-items: center; gap: 0.7em; }
+  .ka-musteriler-lbl { font-size: 0.74em; font-weight: 700; color: rgba(255, 255, 255, .65); }
+  .ka-musteriler-track { height: 0.75em; border-radius: 999px; background: rgba(255, 255, 255, .1); overflow: hidden; }
+  .ka-musteriler-fill { display: block; height: 100%; width: 0; border-radius: 999px; }
+  .ka-musteriler-fill--before { background: rgba(255, 255, 255, .45); transition: width .9s ease .3s; }
+  .ka-musteriler-fill--after { background: var(--c-gold); transition: width .7s ease 1.2s; }
+  .ka-musteriler-card.is-on .ka-musteriler-fill--before { width: 100%; }
+  .ka-musteriler-card.is-on .ka-musteriler-fill--after { width: var(--w); }
+  .ka-musteriler-val { font-size: 0.8em; font-weight: 700; color: rgba(255, 255, 255, .8); min-width: 5.5em; text-align: right; white-space: nowrap; }
+  .ka-musteriler-val--after { color: var(--c-gold); opacity: 0; transition: opacity .3s 1.7s; }
+  .ka-musteriler-card.is-on .ka-musteriler-val--after { opacity: 1; }
+
+  .ka-musteriler-dots { display: flex; gap: 0.4em; justify-content: center; padding: 0.4em 0 0.9em; }
+  .ka-musteriler-pip { width: 0.5em; height: 0.5em; border-radius: 999px; background: rgba(15, 40, 85, .18); transition: width .35s, background .35s; }
+  .ka-musteriler-pip.is-on { width: 1.6em; background: var(--c-gold); }
+
+  @container (max-width: 470px) {
+    .ka-musteriler-chips { display: none; }
+    .ka-musteriler-card { inset: 0 1.2em 0 0; padding: 1em; }
+    .ka-musteriler-card.is-next { transform: translateX(1.2em) scale(.94); }
+    .ka-musteriler-job { font-size: 1.3em; }
+    .ka-musteriler-row { grid-template-columns: 3.2em minmax(0, 1fr) auto; }
+    .ka-musteriler-val { min-width: 4.8em; font-size: 0.74em; }
+    .ka-musteriler-note { font-size: 0.6em; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-musteriler *, .ka-musteriler *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setupMusteriler(root: HTMLElement) {
+    const cards = Array.from(root.querySelectorAll<HTMLElement>('.ka-musteriler-card'));
+    const chips = Array.from(root.querySelectorAll<HTMLElement>('.ka-musteriler-chip'));
+    const pips = Array.from(root.querySelectorAll<HTMLElement>('.ka-musteriler-pip'));
+    const n = cards.length;
+    const HOLD = 2600;
+    let timer = 0;
+    let i = 0;
+    let running = false;
+
+    const show = (k: number) => {
+      cards.forEach((c, j) => {
+        c.classList.toggle('is-on', j === k);
+        c.classList.toggle('is-prev', j === (k - 1 + n) % n);
+        c.classList.toggle('is-next', j === (k + 1) % n);
+      });
+      chips.forEach((c, j) => c.classList.toggle('is-on', j === k));
+      pips.forEach((c, j) => c.classList.toggle('is-on', j === k));
+    };
+
+    const tick = () => {
+      show(i);
+      i = (i + 1) % n;
+      timer = window.setTimeout(tick, HOLD);
+    };
+
+    const stop = () => { clearTimeout(timer); i = 0; };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      show(0);
+      return;
+    }
+
+    show(0);
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; tick(); }
+      else if (!visible && running) { running = false; stop(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-musteriler').forEach(setupMusteriler);
+</script>

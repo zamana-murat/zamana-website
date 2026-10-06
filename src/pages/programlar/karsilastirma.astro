@@ -22,7 +22,7 @@ const rows = [
   { label: 'İlerleme raporu',        ceo: 'Yok',                             bireysel: 'Yok',                       kurumsal: '1. ve 2. ay sunumu' },
 ];
 
-const recRows = [
+const recRows: { situation: string; rec: string; href?: string }[] = [
   { situation: 'Yöneticisiniz, AI hakkında karar vermeniz gerek',          rec: 'Yönetici AI Hazırlık' },
   { situation: 'Şirkete yatırım yapmadan önce konuyu anlamak istiyorsunuz', rec: 'Yönetici AI Hazırlık' },
   { situation: 'Yöneticisiniz, şirkete getirmeden önce kendinize alacaksınız', rec: 'Önce Yönetici AI Hazırlık, sonra Bireysel veya Kurumsal' },
@@ -33,6 +33,13 @@ const recRows = [
   { situation: 'Küçük işletme (1-3 kişi)',                            rec: 'Her kilit kişi için Bireysel' },
   { situation: 'Büyük kurumsal şirket (50+ çalışan)',                rec: 'Genişletilmiş Kurumsal (12 çalışan, görüşmede yapı netleşir)' },
   { situation: '"Pazar sabahı evde öğrenmek isterim"',                 rec: 'Bireysel' },
+  { situation: "Claude'u kurum içinde başkalarına siz öğreteceksiniz",  rec: 'AI Şampiyonu (şampiyon yolu)', href: '/programlar/ai-sampiyonu/' },
+  { situation: 'Eğitmensiniz, kendi eğitimlerinizi Claude ile tasarlayacaksınız', rec: 'AI Şampiyonu (eğitmen yolu)', href: '/programlar/ai-sampiyonu/' },
+  { situation: 'İhracat ya da dış ticaret ekibindesiniz',            rec: 'İhracatçılar için Claude', href: '/programlar/ihracatcilar/' },
+  { situation: 'Avukatsınız ya da hukuk bürosusunuz',                rec: 'Hukuk Büroları için Claude', href: '/programlar/hukuk-burolari/' },
+  { situation: 'Kamu kurumu ya da belediyesiniz',                     rec: 'Kamu Kurumları için Güvenli Kullanım', href: '/programlar/kamu-kurumlari/' },
+  { situation: 'Akademisyen, araştırmacı ya da doktora öğrencisisiniz', rec: 'Akademisyenler için Araştırma ve Yazım', href: '/programlar/akademisyenler/' },
+  { situation: 'Yeni mezun ya da son sınıf öğrencisisiniz',           rec: 'Yeni Mezun ve Kariyer Programı', href: '/programlar/yeni-mezun/' },
 ];
 ---
 
@@ -114,7 +121,7 @@ const recRows = [
           {recRows.map(r => (
             <tr>
               <td>{r.situation}</td>
-              <td><strong>{r.rec}</strong></td>
+              <td><strong>{r.href ? <a href={r.href}>{r.rec}</a> : r.rec}</strong></td>
             </tr>
           ))}
         </tbody>

@@ -4,17 +4,17 @@ import ProgramCard from '../../components/ProgramCard.astro';
 ---
 
 <Layout
-  title="Claude Eğitimi: Yönetici, Bireysel, Kurumsal | Zamana"
-  description="Zamana üç program sunar: yöneticiye 3 saatlik AI hazırlık, bireysel 3 haftalık program ve şirketler için 3 aylık kurumsal retainer. Hangisi size uygun?"
+  title="Claude Eğitimi: Yönetici, Bireysel, Kurumsal ve Uzman Programlar | Zamana"
+  description="Üç ana program (Yönetici AI Hazırlık, Bireysel, Kurumsal) ve altı uzman program: AI şampiyonu, ihracatçılar, hukuk, kamu, akademisyenler, yeni mezunlar."
   ogImage="/og/programlar.png"
 >
 
   <section class="page-hero">
     <div class="container">
       <span class="eyebrow">Eğitim</span>
-      <h1>Üç yol. Aynı sonuç.</h1>
+      <h1>Üç ana yol, altı uzman program.</h1>
       <p class="lead">
-        Bir yönetici misiniz, bir profesyonel mi, bir şirket mi? Aynı pedagojik temele sahip üç farklı program, sizin durumunuza göre.
+        Bir yönetici misiniz, bir profesyonel mi, bir şirket mi? Aynı pedagojik temele sahip üç ana program ve belirli meslek ve kurumlar için tasarlanmış altı uzman program.
       </p>
     </div>
   </section>
@@ -90,12 +90,129 @@ import ProgramCard from '../../components/ProgramCard.astro';
     </div>
   </section>
 
-  <section class="section section--alt">
+  <section class="section section--alt" id="uzman-programlar" aria-labelledby="uzman-h">
+    <div class="container">
+      <div class="container-narrow text-center" style="margin-bottom: var(--s-5);">
+        <span class="eyebrow">Uzman Programlar</span>
+        <h2 class="section-title center" id="uzman-h">Mesleğinize ve kurumunuza göre</h2>
+        <p class="text-muted">
+          Ana programların yöntemi aynı, içerik belirli bir işe göre kurulu: örnekler, şablonlar ve riskler o mesleğin gerçek işlerinden.
+          Ekip seçeneği olan programlarda ek kişi başı fiyat kartta yazılı.
+        </p>
+      </div>
+      <div class="grid grid-3 uzman-grid" style="max-width: 1200px; margin: 0 auto;">
+        <ProgramCard
+          title="AI Şampiyonu ve Eğitmen"
+          badge="İç eğitmen"
+          price="80.000 TL"
+          duration="Şampiyon yolu · 12 saat · 3 ay destek"
+          priceSubtext="Eğitmen yolu: 45.000 TL + KDV"
+          audience="Claude'u kurum içinde diğer çalışanlara öğretecek kişi ve kendi eğitimlerini Claude ile tasarlamak isteyen eğitmenler."
+          features={[
+            "4 hafta × 2,5 saat birebir eğitim",
+            "İlk iç eğitiminize Zamana eğitmeni katılır, geri bildirim verir",
+            "Zamana eğitmen materyal seti, kurum içi lisans",
+            "Zamana AI Şampiyonu sertifikası",
+            "Kurumsal Program müşterisine ek şampiyon 65.000 TL",
+          ]}
+          ctaHref="/programlar/ai-sampiyonu/"
+          ctaText="Detayları Gör"
+        />
+        <ProgramCard
+          title="İhracatçılar için Claude"
+          badge="Dış ticaret"
+          price="45.000 TL"
+          duration="Tek kişi · 3 hafta · 3 ay destek"
+          priceSubtext="Ekip (2-4 kişi): her ek kişi +20.000 TL"
+          audience="İhracat müdürleri, dış ticaret uzmanları ve ihracat ekipleri."
+          features={[
+            "Teklif, proforma ve yabancı dilde yazışma",
+            "Hedef pazar ve alıcı araştırması",
+            "Fuar hazırlığı ve takip",
+            "Belge tutarlılık kontrolü, son söz uzmanda",
+            "İhracata özel prompt ve skill seti",
+          ]}
+          ctaHref="/programlar/ihracatcilar/"
+          ctaText="Detayları Gör"
+        />
+        <ProgramCard
+          title="Hukuk Büroları için Claude"
+          badge="Hukuk"
+          price="45.000 TL"
+          duration="Tek avukat · 3 hafta · 3 ay destek"
+          priceSubtext="Büro paketi (2-4 kişi): her ek kişi +20.000 TL"
+          audience="Avukatlar, hukuk büroları ve şirket hukuk müşavirlikleri."
+          features={[
+            "Sözleşme inceleme ve karşılaştırma",
+            "Araştırma notu ve atıf doğrulama",
+            "Dilekçe ve mütalaa taslağını hızlandırma",
+            "Sır saklama ve KVKK'ya uygun çalışma",
+            "Büro paketinde yapay zeka kullanım politikası taslağı",
+          ]}
+          ctaHref="/programlar/hukuk-burolari/"
+          ctaText="Detayları Gör"
+        />
+        <ProgramCard
+          title="Kamu Kurumları için Güvenli Kullanım"
+          badge="Seminer"
+          price="45.000 TL"
+          duration="Yarım gün · 30 kişiye kadar"
+          priceSubtext="Uygulama atölyesi: 30.000 TL + KDV"
+          audience="Belediyeler, kamu kurumları ve kamu iktisadi teşebbüsleri."
+          features={[
+            "Veri sınıflandırması: Claude'a ne girer, ne girmez",
+            "Kişisel veri ve KVKK",
+            "Güvenli kullanım senaryoları",
+            "Kurum içi kullanım yönergesi taslağı",
+            "Claude aboneliği zorunlu değil",
+          ]}
+          ctaHref="/programlar/kamu-kurumlari/"
+          ctaText="Detayları Gör"
+        />
+        <ProgramCard
+          title="Akademisyenler için Araştırma ve Yazım"
+          badge="Akademik"
+          price="30.000 TL"
+          duration="Tek kişi · 3 hafta · 3 ay destek"
+          priceSubtext="Araştırma grubu (3-6 kişi): 75.000 TL + KDV"
+          audience="Öğretim üyeleri, araştırmacılar ve doktora öğrencileri."
+          features={[
+            "Literatür tarama ve kaynak doğrulama",
+            "Proje başvurusu ve makale yazımı",
+            "İngilizce akademik yazım",
+            "Kod yazmadan veri analizi",
+            "Akademik dürüstlük ve yapay zeka beyanı",
+          ]}
+          ctaHref="/programlar/akademisyenler/"
+          ctaText="Detayları Gör"
+        />
+        <ProgramCard
+          title="Yeni Mezun ve Kariyer Programı"
+          badge="Kohort"
+          price="7.500 TL"
+          duration="Kişi başı · 4 hafta · çevrim içi grup"
+          priceSubtext="En fazla 12 kişilik canlı grup"
+          audience="Üniversite son sınıf öğrencileri ve yeni mezunlar (18 yaş ve üstü)."
+          features={[
+            "4 hafta × 2 saat canlı çevrim içi",
+            "CV, ön yazı ve mülakat hazırlığı",
+            "İş hayatında ilk 90 gün: e-posta, rapor, Excel",
+            "Kendi alanınızda portföy projesi",
+            "Program sonrası 1 ay yazılı destek",
+          ]}
+          ctaHref="/programlar/yeni-mezun/"
+          ctaText="Detayları Gör"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="container container-narrow">
       <span class="eyebrow">Ortak Özellikler</span>
       <h2 class="section-title">Bireysel ve Kurumsal Programlarda Ortak</h2>
       <p class="text-muted" style="margin-top: -0.5rem; margin-bottom: var(--s-3); font-size: 0.95rem;">
-        Yönetici AI Hazırlık tek oturumluk anlama programı olduğu için bu listenin dışındadır.
+        Yönetici AI Hazırlık tek oturumluk anlama programı olduğu için bu listenin dışındadır. Uzman programlarda farklar (kamu seminerinde abonelik şartı yok, yeni mezun kohortunda telefon yerine yazılı destek) kendi sayfalarında yazılıdır.
       </p>
       <ul class="shared-list">
         <li>
@@ -128,6 +245,10 @@ import ProgramCard from '../../components/ProgramCard.astro';
 </Layout>
 
 <style>
+  /* Six cards: 3 + 3 on desktop instead of auto-fit 4 + 2. */
+  @media (min-width: 900px) {
+    .uzman-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
   .shared-list {
     display: grid;
     gap: var(--s-3);

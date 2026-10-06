@@ -1,0 +1,228 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/ticaret/ (claude.com/solutions/commerce).
+ * The source page's first consumer demo: "Budget to basket in one conversation", a shopping
+ * agent builds a home office set under budget, fills the cart and remembers a preference.
+ * Scenario (fictional store "Lale Ev"); prices are illustrative.
+ */
+---
+
+<div
+  class="ka-ticaret"
+  data-step="0"
+  data-ask="Ev ofisi kuruyorum, bütçem 25.000 TL. Bel ağrım var, nelere bakayım?"
+  role="img"
+  aria-label="Kurgusal bir ev mobilyası mağazasının alışveriş asistanında müşteri 25.000 TL bütçeyle ev ofisi kurmak istediğini yazıyor. Ajan katalogda stok ve fiyatı kontrol edip yükseklik ayarlı masa, bel destekli sandalye ve monitör yükselticiden oluşan 22.640 TL'lik bir set öneriyor, ürünleri sepete ekliyor ve bel desteği tercihini kaydediyor."
+>
+  <div class="ka-ticaret__win" aria-hidden="true">
+    <div class="ka-ticaret__bar">
+      <span class="ka-ticaret__logo">Lale Ev</span>
+      <span class="ka-ticaret__bar-title">Alışveriş asistanı</span>
+      <span class="ka-ticaret__sample">Kurgusal örnek</span>
+      <span class="ka-ticaret__cart">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 4h2l2.2 10.2a1.6 1.6 0 0 0 1.6 1.3h8.3a1.6 1.6 0 0 0 1.6-1.2L20.5 8H6.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19.5" r="1.4" fill="currentColor"/><circle cx="17" cy="19.5" r="1.4" fill="currentColor"/></svg>
+        <b data-role="badge">0</b>
+      </span>
+    </div>
+
+    <div class="ka-ticaret__body">
+      <div class="ka-ticaret__msgs">
+        <p class="ka-ticaret__user"><span data-role="ask"></span><span class="ka-ticaret__caret"></span></p>
+
+        <div class="ka-ticaret__agent">
+          <p class="ka-ticaret__work"><span class="ka-ticaret__spin"></span><span data-role="sub">Katalog aranıyor</span></p>
+
+          <div class="ka-ticaret__answer">
+            <p class="ka-ticaret__intro">Bütçenize uyan, bel desteğini öne alan 3 ürünlük bir set:</p>
+            <div class="ka-ticaret__cards">
+              <div class="ka-ticaret__card" style="--i:0">
+                <span class="ka-ticaret__img">
+                  <svg viewBox="0 0 48 32"><rect x="4" y="8" width="40" height="4" rx="1.5" fill="#0f2855"/><rect x="9" y="12" width="3" height="16" fill="#c9a84c"/><rect x="36" y="12" width="3" height="16" fill="#c9a84c"/><rect x="6" y="27" width="9" height="2.5" rx="1" fill="#0f2855"/><rect x="33" y="27" width="9" height="2.5" rx="1" fill="#0f2855"/><path d="M24 15v8M21 18l3-3 3 3M21 20l3 3 3-3" stroke="#0f2855" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
+                </span>
+                <strong>Yükseklik ayarlı masa</strong>
+                <em>9.450 TL</em>
+                <small>Stokta · 2 gün</small>
+              </div>
+              <div class="ka-ticaret__card" style="--i:1">
+                <span class="ka-ticaret__img">
+                  <svg viewBox="0 0 48 32"><rect x="17" y="2" width="14" height="14" rx="4" fill="#0f2855"/><rect x="19.5" y="9" width="9" height="4" rx="2" fill="#c9a84c"/><rect x="14" y="17" width="20" height="4" rx="2" fill="#0f2855"/><rect x="22.5" y="21" width="3" height="6" fill="#c9a84c"/><path d="M15 29h18M24 27v2" stroke="#0f2855" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <strong>Bel destekli sandalye</strong>
+                <em>11.900 TL</em>
+                <small>Stokta · 3 gün</small>
+              </div>
+              <div class="ka-ticaret__card" style="--i:2">
+                <span class="ka-ticaret__img">
+                  <svg viewBox="0 0 48 32"><rect x="12" y="3" width="24" height="15" rx="2" fill="#0f2855"/><rect x="14" y="5" width="20" height="11" rx="1" fill="#e4c97a"/><rect x="22" y="18" width="4" height="4" fill="#0f2855"/><rect x="8" y="22" width="32" height="4" rx="1.5" fill="#c9a84c"/><rect x="10" y="26" width="3" height="3" fill="#0f2855"/><rect x="35" y="26" width="3" height="3" fill="#0f2855"/></svg>
+                </span>
+                <strong>Monitör yükseltici</strong>
+                <em>1.290 TL</em>
+                <small>Stokta · 1 gün</small>
+              </div>
+            </div>
+            <div class="ka-ticaret__total">
+              <p><strong>Toplam 22.640 TL</strong><small>Bütçenizin 2.360 TL altında</small></p>
+              <span class="ka-ticaret__btn">Sepete ekle</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="ka-ticaret__toast">✓ 3 ürün sepete eklendi · Tercih kaydedildi: bel desteği</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-ticaret {
+    --tc-ink: var(--c-navy);
+    --tc-muted: var(--c-text-muted);
+    --tc-line: var(--c-border);
+    --tc-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 340px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+  }
+  .ka-ticaret__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .ka-ticaret__bar { display: flex; align-items: center; gap: 0.6em; padding: 0.6em 1em; border-bottom: 1px solid var(--tc-line); }
+  .ka-ticaret__logo { font-weight: 800; color: #fff; background: var(--c-navy); border-radius: 6px; padding: 0.2em 0.6em; font-size: 0.82em; white-space: nowrap; }
+  .ka-ticaret__bar-title { font-size: 0.8em; font-weight: 700; color: var(--tc-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ka-ticaret__sample { margin-left: auto; font-size: 0.66em; font-weight: 700; color: var(--c-gold-text); background: rgba(201, 168, 76, .14); border-radius: 999px; padding: 0.25em 0.7em; white-space: nowrap; }
+  .ka-ticaret__cart { position: relative; color: var(--c-navy); display: inline-flex; padding: 0.2em; }
+  .ka-ticaret__cart b {
+    position: absolute; top: -0.35em; right: -0.5em; min-width: 1.35em; height: 1.35em; border-radius: 999px;
+    display: grid; place-items: center; font-size: 0.66em; background: #e2ded3; color: var(--c-navy); transition: background .3s, transform .3s;
+  }
+  .ka-ticaret[data-step="5"] .ka-ticaret__cart b, .ka-ticaret[data-step="6"] .ka-ticaret__cart b { background: var(--c-gold); animation: ka-ticaret-pop .45s ease; }
+
+  .ka-ticaret__body { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0 1.1em 0.9em; background: var(--c-cream); }
+  .ka-ticaret__msgs {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.5em;
+    padding-top: 0.6em; padding-bottom: 0.3em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.2em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.2em);
+  }
+  .ka-ticaret p { margin: 0; }
+  .ka-ticaret__user {
+    align-self: flex-end; max-width: 82%; flex-shrink: 0; padding: 0.5em 0.85em; border-radius: 14px 14px 4px 14px;
+    background: var(--c-navy); color: #fff; line-height: 1.4; font-weight: 600; font-size: 0.92em; min-height: 1.4em;
+  }
+  .ka-ticaret[data-step="0"] .ka-ticaret__user { visibility: hidden; }
+  .ka-ticaret__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: #fff; animation: ka-ticaret-blink 1s steps(1) infinite; }
+  .ka-ticaret[data-typing] .ka-ticaret__caret { display: inline-block; }
+
+  .ka-ticaret__agent { display: none; flex-direction: column; gap: 0.4em; flex-shrink: 0; animation: ka-ticaret-in .35s ease both; }
+  .ka-ticaret__work { display: flex; align-items: center; gap: 0.55em; color: var(--tc-muted); font-size: 0.88em; }
+  .ka-ticaret__spin { width: 0.95em; height: 0.95em; border-radius: 50%; border: 2px solid var(--c-gold); border-top-color: transparent; animation: ka-ticaret-spin .9s linear infinite; }
+  .ka-ticaret__answer { display: none; flex-direction: column; gap: 0.5em; background: #fff; border: 1px solid var(--tc-line); border-radius: 4px 14px 14px 14px; padding: 0.7em 0.8em; }
+  .ka-ticaret__intro { color: var(--tc-ink); font-size: 0.9em; line-height: 1.4; font-weight: 600; }
+  .ka-ticaret__cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5em; }
+  .ka-ticaret__card {
+    display: flex; flex-direction: column; gap: 0.15em; border: 1px solid var(--tc-line); border-radius: 9px; padding: 0.45em;
+    opacity: 0; transform: translateY(6px); transition: opacity .3s calc(var(--i) * 220ms + 100ms), transform .3s calc(var(--i) * 220ms + 100ms), border-color .3s;
+  }
+  .ka-ticaret__img { display: block; background: var(--tc-soft); border-radius: 6px; padding: 0.3em 0.5em; margin-bottom: 0.2em; }
+  .ka-ticaret__img svg { display: block; width: 100%; height: 2.1em; }
+  .ka-ticaret__card strong { font-size: 0.76em; color: var(--tc-ink); line-height: 1.25; font-weight: 700; }
+  .ka-ticaret__card em { font-style: normal; font-size: 0.82em; font-weight: 800; color: var(--tc-ink); }
+  .ka-ticaret__card small { font-size: 0.66em; color: #2f7d55; font-weight: 600; }
+  .ka-ticaret__total { display: flex; align-items: center; justify-content: space-between; gap: 0.6em; border-top: 1px dashed var(--tc-line); padding-top: 0.5em; opacity: 0; transition: opacity .3s .8s; }
+  .ka-ticaret__total p { display: flex; flex-direction: column; line-height: 1.3; }
+  .ka-ticaret__total strong { color: var(--tc-ink); font-size: 0.92em; }
+  .ka-ticaret__total small { color: var(--c-gold-text); font-size: 0.74em; font-weight: 700; }
+  .ka-ticaret__btn { flex-shrink: 0; font-size: 0.8em; font-weight: 800; padding: 0.5em 1em; border-radius: 8px; background: var(--c-gold); color: var(--c-navy); transition: transform .15s, box-shadow .15s; }
+  .ka-ticaret[data-step="4"] .ka-ticaret__btn { transform: scale(.94); box-shadow: 0 0 0 4px rgba(201, 168, 76, .35); }
+  .ka-ticaret[data-step="5"] .ka-ticaret__btn, .ka-ticaret[data-step="6"] .ka-ticaret__btn { background: var(--c-navy); color: #fff; }
+
+  .ka-ticaret__toast {
+    display: none; align-self: flex-start; flex-shrink: 0; font-size: 0.8em; font-weight: 700; color: var(--c-navy);
+    background: rgba(201, 168, 76, .2); border: 1px solid var(--c-border-gold); border-radius: 999px; padding: 0.35em 0.9em;
+  }
+
+  /* step states */
+  .ka-ticaret[data-step="2"] .ka-ticaret__agent, .ka-ticaret[data-step="3"] .ka-ticaret__agent,
+  .ka-ticaret[data-step="4"] .ka-ticaret__agent, .ka-ticaret[data-step="5"] .ka-ticaret__agent,
+  .ka-ticaret[data-step="6"] .ka-ticaret__agent { display: flex; }
+  .ka-ticaret[data-step="3"] .ka-ticaret__work, .ka-ticaret[data-step="4"] .ka-ticaret__work,
+  .ka-ticaret[data-step="5"] .ka-ticaret__work, .ka-ticaret[data-step="6"] .ka-ticaret__work { display: none; }
+  .ka-ticaret[data-step="3"] .ka-ticaret__answer, .ka-ticaret[data-step="4"] .ka-ticaret__answer,
+  .ka-ticaret[data-step="5"] .ka-ticaret__answer, .ka-ticaret[data-step="6"] .ka-ticaret__answer { display: flex; animation: ka-ticaret-in .35s ease both; }
+  .ka-ticaret[data-step="3"] .ka-ticaret__card, .ka-ticaret[data-step="4"] .ka-ticaret__card,
+  .ka-ticaret[data-step="5"] .ka-ticaret__card, .ka-ticaret[data-step="6"] .ka-ticaret__card { opacity: 1; transform: none; }
+  .ka-ticaret[data-step="5"] .ka-ticaret__card, .ka-ticaret[data-step="6"] .ka-ticaret__card { border-color: var(--c-border-gold); }
+  .ka-ticaret[data-step="3"] .ka-ticaret__total, .ka-ticaret[data-step="4"] .ka-ticaret__total,
+  .ka-ticaret[data-step="5"] .ka-ticaret__total, .ka-ticaret[data-step="6"] .ka-ticaret__total { opacity: 1; }
+  .ka-ticaret[data-step="5"] .ka-ticaret__toast, .ka-ticaret[data-step="6"] .ka-ticaret__toast { display: block; animation: ka-ticaret-in .35s ease both; }
+  .ka-ticaret[data-step="6"] .ka-ticaret__win { opacity: 0; }
+
+  @container (max-width: 430px) {
+    .ka-ticaret__sample, .ka-ticaret__bar-title { display: none; }
+    .ka-ticaret__logo { margin-right: auto; }
+    .ka-ticaret__card small { display: none; }
+    .ka-ticaret__toast { font-size: 0.72em; }
+  }
+
+  @keyframes ka-ticaret-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-ticaret-blink { 50% { opacity: 0; } }
+  @keyframes ka-ticaret-spin { to { transform: rotate(360deg); } }
+  @keyframes ka-ticaret-pop { 40% { transform: scale(1.35); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-ticaret *, .ka-ticaret *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const KA_TICARET_SUBS = ['Katalog aranıyor', 'Stok ve fiyatlar kontrol ediliyor', 'Bütçeye göre set hazırlanıyor'];
+
+  function setupTicaret(root: HTMLElement) {
+    const ask = root.dataset.ask || '';
+    const askEl = root.querySelector<HTMLElement>('[data-role="ask"]')!;
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    const badge = root.querySelector<HTMLElement>('[data-role="badge"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      askEl.textContent = ''; sub.textContent = KA_TICARET_SUBS[0]; badge.textContent = '0';
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(500, () => { step(1); root.dataset.typing = '1'; });
+      for (let i = 0; i <= ask.length; i++) at(600 + i * 28, () => { askEl.textContent = ask.slice(0, i); });
+      const t0 = 600 + ask.length * 28 + 500;
+      at(t0, () => { delete root.dataset.typing; step(2); });
+      at(t0 + 1100, () => { sub.textContent = KA_TICARET_SUBS[1]; });
+      at(t0 + 2200, () => { sub.textContent = KA_TICARET_SUBS[2]; });
+      at(t0 + 3200, () => step(3));            // set + total
+      at(t0 + 6600, () => step(4));            // press "add to cart"
+      at(t0 + 7000, () => { step(5); badge.textContent = '3'; });
+      at(t0 + 10600, () => step(6));
+      at(t0 + 11200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      askEl.textContent = ask;
+      badge.textContent = '3';
+      step(5);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-ticaret').forEach(setupTicaret);
+</script>

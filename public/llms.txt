@@ -2,17 +2,26 @@
 
 > Türkiye'nin kurumsal Claude (Anthropic) eğitim ve danışmanlık programı. Şirketlere ve bireylere Claude'u iş süreçlerinde etkin kullanmayı öğretir. Kurucu: Murat Özsaygılı. Tüm içerik Türkçe.
 
-Zamana, API veya yazılım geliştirme değil, iş odaklı Claude kullanımını öğretir. Üç program sunar: yöneticiler için 3 saatlik Yönetici AI Hazırlık, 3 haftalık Bireysel Program ve en az 3 aylık Kurumsal Retainer (6 çalışan, aylık ödeme). Ayrıca herkese açık, ücretsiz bir Türkçe Claude wiki'si yayınlar.
+Zamana, API veya yazılım geliştirme değil, iş odaklı Claude kullanımını öğretir. Üç ana program sunar: yöneticiler için 3 saatlik Yönetici AI Hazırlık, 3 haftalık Bireysel Program ve en az 3 aylık Kurumsal Retainer (6 çalışan, aylık ödeme). Bunlara ek olarak altı uzman program vardır: AI Şampiyonu ve Eğitmen, İhracatçılar, Hukuk Büroları, Kamu Kurumları için Güvenli Kullanım, Akademisyenler, Yeni Mezun ve Kariyer. Ayrıca herkese açık, ücretsiz bir Türkçe Claude wiki'si yayınlar.
 
 ## Programlar
 - [Programlar](https://zamana.com.tr/programlar/): Tüm eğitim programlarına genel bakış
 - [Bireysel Program](https://zamana.com.tr/programlar/bireysel/): 3 hafta birebir, tek kişi
 - [Kurumsal Program](https://zamana.com.tr/programlar/kurumsal/): 6 çalışan, aylık ödeme, minimum 3 ay
 - [Yönetici AI Hazırlık](https://zamana.com.tr/programlar/ceo-brifing/): Yöneticiler için kısa oturum
+- [AI Şampiyonu ve Eğitmen Programı](https://zamana.com.tr/programlar/ai-sampiyonu/): Claude'u kurum içinde öğretecek iç eğitmen ve kendi eğitimlerini Claude ile tasarlayan eğitmenler
+- [İhracatçılar için Claude](https://zamana.com.tr/programlar/ihracatcilar/): Dış ticaret ekipleri için teklif, yazışma, pazar araştırması
+- [Hukuk Büroları için Claude](https://zamana.com.tr/programlar/hukuk-burolari/): Avukatlar ve hukuk büroları, sır saklama ve KVKK'ya uygun kullanım
+- [Kamu Kurumları için Güvenli Kullanım](https://zamana.com.tr/programlar/kamu-kurumlari/): Kamu kurumlarına yarım günlük güvenli kullanım semineri ve atölye
+- [Akademisyenler için Araştırma ve Yazım](https://zamana.com.tr/programlar/akademisyenler/): Literatür, proje başvurusu, akademik yazım ve kaynak doğrulama
+- [Yeni Mezun ve Kariyer Programı](https://zamana.com.tr/programlar/yeni-mezun/): Yeni mezunlar için 4 haftalık çevrim içi kohort
 - [Program Karşılaştırması](https://zamana.com.tr/programlar/karsilastirma/): Üç programın karşılaştırması
 
 ## Claude (ürün tanıtımları)
 - [Claude](https://zamana.com.tr/claude/): Claude ürün ailesinin Türkçe tanıtımı (Claude, Claude Code, @Claude, Claude Security, Claude Science, Artifacts, Design, Connectors, Plugins, Skills, Claude for Chrome, Claude for Microsoft 365, modeller, Claude'a geçiş), her sayfada plan bilgisi ve resmi kaynak bağlantısı
+
+## Kurumsal (Claude Enterprise tanıtımları)
+- [Kurumsal](https://zamana.com.tr/kurumsal/): Claude Enterprise, kurumlar için Claude Code ve Claude Platform'un Türkçe tanıtımı; kullanım alanları (yapay zeka ajanları, kodlama, ticaret), departmanlar (müşteri desteği, siber güvenlik, hukuk, satış) ve Türkiye koşullarına uyarlanmış sektör sayfaları (finansal hizmetler, kamu, sağlık, yükseköğretim, öğretmenler, yaşam bilimleri, sivil toplum). Zamana Anthropic temsilcisi değildir, abonelik satmaz
 
 ## Wiki (Türkçe Claude bilgi tabanı)
 - [Wiki Ana Sayfa](https://zamana.com.tr/wiki/): Türkçe Claude wiki girişi

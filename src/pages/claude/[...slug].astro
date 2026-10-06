@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import ClaudeLayout from '../../layouts/ClaudeLayout.astro';
+import SectionHub from '../../components/SectionHub.astro';
 import { claudeHubGroups } from '../../data/claude-nav';
 
 type Entry = CollectionEntry<'claude'>;
@@ -36,69 +37,6 @@ const hubGroups = isHub
   <Content />
 
   {hubGroups.length > 0 && (
-    <section slot="after-body" class="cl-hub" aria-labelledby="cl-hub-h">
-      <div class="container">
-        <h2 id="cl-hub-h" class="section-title">Claude ailesini keşfedin</h2>
-        {hubGroups.map((g) => (
-          <div class="cl-hub__group">
-            <h3 class="cl-hub__heading">{g.title}</h3>
-            <ul class="cl-hub__grid">
-              {g.items.map((it) => (
-                <li>
-                  <a href={it.href} class="cl-hub__card">
-                    <span class="cl-hub__title">{it.label}</span>
-                    <span class="cl-hub__desc">{it.desc}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
+    <SectionHub slot="after-body" heading="Claude ailesini keşfedin" groups={hubGroups} />
   )}
 </ClaudeLayout>
-
-<style>
-  .cl-hub {
-    margin-top: var(--s-6);
-    padding: var(--s-6) 0;
-    background: var(--c-bg-subtle);
-    border-top: 1px solid var(--c-border);
-    border-bottom: 1px solid var(--c-border);
-  }
-  .cl-hub__group + .cl-hub__group { margin-top: var(--s-5); }
-  .cl-hub__heading {
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--c-text-muted);
-    margin: 0 0 var(--s-3);
-  }
-  .cl-hub__grid {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: var(--s-3);
-  }
-  .cl-hub__card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    height: 100%;
-    padding: var(--s-3) var(--s-4);
-    background: var(--c-white);
-    border: 1px solid var(--c-border);
-    border-radius: var(--r-card);
-    text-decoration: none;
-    transition: border-color var(--t-fast), box-shadow var(--t-fast), transform var(--t-fast);
-  }
-  .cl-hub__card:hover { border-color: var(--c-gold); box-shadow: var(--sh-mid); transform: translateY(-1px); }
-  .cl-hub__card:focus-visible { outline: 2px solid var(--c-gold); outline-offset: 2px; }
-  .cl-hub__title { font-weight: 700; color: var(--c-navy); }
-  .cl-hub__card:hover .cl-hub__title { color: var(--c-gold-text); }
-  .cl-hub__desc { font-size: 0.88rem; line-height: 1.45; color: var(--c-text-muted); }
-</style>

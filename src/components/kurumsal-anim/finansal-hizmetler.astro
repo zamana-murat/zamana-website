@@ -1,0 +1,232 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/finansal-hizmetler/ (replaces Anthropic's English video).
+ * Scenario (fictional): a commercial banking analyst at "Marmara Katılım Bankası" has a corporate
+ * financing request open in a spreadsheet. She asks Claude in the side panel for a credit memo draft;
+ * Claude reads the statements, adds ratio rows to the sheet and writes a source-referenced memo draft.
+ * The decision stays with the credit committee. Generic spreadsheet UI (no Microsoft branding).
+ */
+---
+
+<div
+  class="ka-finansal-hizmetler"
+  data-step="0"
+  data-prompt="Bu talep için rasyoları hesapla ve tahsis memosu taslağı yaz."
+  role="img"
+  aria-label="Bir banka analisti tablo programında açık duran finansman talebi için Claude'dan tahsis memosu taslağı istiyor; Claude mali tabloları okuyup tabloya rasyo satırlarını ekliyor ve hücre kaynaklarını gösteren bir memo taslağı yazıyor. Karar kredi komitesinde kalıyor. Banka ve firma kurgusaldır."
+>
+  <div class="fh__win" aria-hidden="true">
+    <div class="fh__bar">
+      <span class="fh__dot"></span><span class="fh__dot"></span><span class="fh__dot"></span>
+      <span class="fh__bar-title">ege-orme-finansman-talebi.xlsx</span>
+      <span class="fh__bank">Marmara Katılım Bankası</span>
+    </div>
+
+    <div class="fh__body">
+      <!-- Spreadsheet -->
+      <div class="fh__sheet">
+        <div class="fh__fx">
+          <span class="fh__cell" data-role="cell">C4</span>
+          <span class="fh__fxsign">fx</span>
+          <span class="fh__fxval" data-role="fx">412,0</span>
+        </div>
+        <table class="fh__grid">
+          <thead>
+            <tr><th class="fh__n"></th><th>Ege Örme Tekstil (mn TL)</th><th>2024</th><th>2025</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="fh__n">4</td><td>Net satışlar</td><td>338,4</td><td>412,0</td></tr>
+            <tr><td class="fh__n">5</td><td>FAVÖK</td><td>44,1</td><td>58,5</td></tr>
+            <tr><td class="fh__n">6</td><td>Net borç</td><td>131,7</td><td>122,9</td></tr>
+            <tr><td class="fh__n">7</td><td>Dönen varlıklar</td><td>158,0</td><td>186,2</td></tr>
+            <tr><td class="fh__n">8</td><td>Kısa vadeli borçlar</td><td>121,5</td><td>133,0</td></tr>
+            <tr class="fh__new" style="--i:0"><td class="fh__n">10</td><td>FAVÖK marjı</td><td>%13,0</td><td>%14,2</td></tr>
+            <tr class="fh__new" style="--i:1"><td class="fh__n">11</td><td>Net borç / FAVÖK</td><td>3,0x</td><td>2,1x</td></tr>
+            <tr class="fh__new" style="--i:2"><td class="fh__n">12</td><td>Cari oran</td><td>1,30</td><td>1,40</td></tr>
+          </tbody>
+        </table>
+        <p class="fh__tag"><span class="fh__tag-dot"></span>Claude 3 satır ekledi</p>
+      </div>
+
+      <!-- Claude side panel -->
+      <div class="fh__panel">
+        <p class="fh__ph-title">
+          <span class="fh__spark-s"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          Claude
+        </p>
+        <div class="fh__msgs">
+          <p class="fh__empty">Tablo hakkında bir şey sorun</p>
+          <div class="fh__user">Bu talep için rasyoları hesapla ve tahsis memosu taslağı yaz.</div>
+          <div class="fh__work">
+            <span class="fh__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <span data-role="sub">Mali tablolar okunuyor</span>
+          </div>
+          <div class="fh__memo">
+            <p class="fh__memo-t">Tahsis memosu · taslak</p>
+            <ul class="fh__list">
+              <li style="--i:0">Satışlar %21,7 arttı, FAVÖK marjı %14,2. <span class="fh__ref">B4:C5</span></li>
+              <li style="--i:1">Net borç / FAVÖK 3,0x'ten 2,1x'e indi. <span class="fh__ref">C11</span></li>
+              <li style="--i:2">Eksik: teminat ve grup riski bilgisi yok.</li>
+            </ul>
+            <p class="fh__decide">Karar kredi komitesinindir</p>
+          </div>
+        </div>
+        <div class="fh__comp">
+          <span class="fh__cph">Claude'a yazın</span><span data-role="c1"></span><span class="fh__caret"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-finansal-hizmetler {
+    --fh-ink: var(--c-navy);
+    --fh-muted: var(--c-text-muted);
+    --fh-line: rgba(15, 40, 85, .12);
+    --fh-soft: #f6f4ee;
+    --fh-hi: rgba(201, 168, 76, .2);
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    container-type: inline-size;
+  }
+  .fh__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .fh__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--fh-line); min-width: 0; }
+  .fh__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; flex-shrink: 0; }
+  .fh__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--fh-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fh__bank { margin-left: auto; font-size: 0.72em; font-weight: 800; color: var(--c-gold-text); white-space: nowrap; }
+  .fh__body { flex: 1; display: flex; min-height: 0; }
+
+  /* spreadsheet */
+  .fh__sheet { flex: 1.25; min-width: 0; padding: 0.7em 0.8em; display: flex; flex-direction: column; gap: 0.5em; }
+  .fh__fx { display: flex; align-items: center; gap: 0.6em; border: 1px solid var(--fh-line); border-radius: 6px; padding: 0.3em 0.6em; font-size: 0.8em; }
+  .fh__cell { font-weight: 800; color: var(--fh-ink); min-width: 2.2em; }
+  .fh__fxsign { font-style: italic; color: var(--fh-muted); border-left: 1px solid var(--fh-line); padding-left: 0.6em; }
+  .fh__fxval { color: var(--fh-ink); font-family: ui-monospace, Consolas, monospace; white-space: nowrap; overflow: hidden; }
+  .fh__grid { width: 100%; border-collapse: collapse; font-size: 0.8em; color: var(--fh-ink); table-layout: fixed; }
+  .fh__grid th { background: var(--fh-soft); color: var(--fh-muted); font-weight: 700; text-align: right; padding: 0.38em 0.5em; border: 1px solid var(--fh-line); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fh__grid th:nth-child(2) { text-align: left; width: 52%; }
+  .fh__grid td { padding: 0.38em 0.5em; border: 1px solid var(--fh-line); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fh__grid td:nth-child(2) { text-align: left; }
+  .fh__grid .fh__n { width: 2.6em; text-overflow: clip; padding-left: 0.2em; padding-right: 0.2em; text-align: center; color: var(--fh-muted); background: var(--fh-soft); font-size: 0.9em; }
+  .fh__new { display: none; }
+  .fh__new td { background: var(--fh-hi); font-weight: 700; }
+  .fh__new td.fh__n { background: var(--fh-soft); font-weight: 400; }
+  .fh__tag { display: none; margin: 0; align-items: center; gap: 0.45em; font-size: 0.75em; color: var(--c-gold-text); font-weight: 700; }
+  .fh__tag-dot { width: 0.55em; height: 0.55em; border-radius: 2px; background: var(--c-gold); }
+
+  /* Claude panel */
+  .fh__panel { flex: 1; min-width: 0; display: flex; flex-direction: column; border-left: 1px solid var(--fh-line); background: #fbfaf6; padding: 0.7em 0.9em 0.9em; }
+  .fh__ph-title { margin: 0 0 0.4em; display: flex; align-items: center; gap: 0.45em; font-weight: 800; color: var(--fh-ink); font-size: 0.9em; }
+  .fh__spark-s { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 5px; background: var(--c-navy); color: var(--c-gold); }
+  .fh__msgs {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.55em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.4em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.4em);
+  }
+  .fh__empty { margin: auto 0; text-align: center; color: var(--fh-muted); font-size: 0.85em; }
+  .fh__user { display: none; align-self: flex-end; max-width: 92%; background: var(--c-navy); color: #fff; border-radius: 10px 10px 2px 10px; padding: 0.5em 0.75em; font-size: 0.85em; line-height: 1.4; animation: ka-finansal-hizmetler-in .4s ease both; }
+  .fh__work { display: none; align-items: center; gap: 0.5em; color: var(--fh-muted); font-size: 0.85em; }
+  .fh__spark { color: var(--c-gold); display: inline-flex; animation: ka-finansal-hizmetler-spin 1.6s linear infinite; }
+  .fh__memo { display: none; background: #fff; border: 1px solid var(--fh-line); border-radius: 10px; padding: 0.65em 0.8em; animation: ka-finansal-hizmetler-in .4s ease both; }
+  .fh__memo-t { margin: 0; font-weight: 800; color: var(--fh-ink); font-size: 0.88em; }
+  .fh__list { margin: 0.3em 0 0; padding-left: 1.1em; font-size: 0.8em; color: var(--fh-ink); line-height: 1.45; }
+  .fh__list li { opacity: 0; transform: translateX(-6px); transition: opacity .3s calc(var(--i) * 420ms + 200ms), transform .3s calc(var(--i) * 420ms + 200ms); }
+  .fh__ref { display: inline-block; font-size: 0.82em; font-weight: 800; color: var(--c-gold-text); background: var(--fh-hi); border-radius: 4px; padding: 0 0.35em; }
+  .fh__decide { margin: 0.5em 0 0; display: inline-block; font-size: 0.72em; font-weight: 800; letter-spacing: .02em; color: var(--c-navy); border: 1px solid var(--c-gold); border-radius: 999px; padding: 0.2em 0.7em; opacity: 0; transition: opacity .4s 1.6s; }
+
+  .fh__comp { margin-top: 0.55em; border: 1px solid rgba(15, 40, 85, .22); border-radius: 9px; padding: 0.55em 0.8em; min-height: 1.4em; line-height: 1.4; color: var(--fh-ink); background: #fff; font-size: 0.85em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fh__cph { color: var(--fh-muted); opacity: .8; }
+  .fh__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--fh-ink); animation: ka-finansal-hizmetler-blink 1s steps(1) infinite; }
+  .ka-finansal-hizmetler[data-typing] .fh__caret { display: inline-block; }
+
+  @container (max-width: 520px) {
+    .fh__sheet { display: none; }
+    .fh__panel { border-left: none; }
+    .fh__bank { display: none; }
+  }
+
+  /* step states */
+  .ka-finansal-hizmetler[data-step="1"] .fh__cph { display: none; }
+  .ka-finansal-hizmetler:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"]) .fh__empty { display: none; }
+  .ka-finansal-hizmetler:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"]) .fh__user { display: block; }
+  .ka-finansal-hizmetler:is([data-step="2"], [data-step="3"]) .fh__work { display: flex; }
+  .fh__new.is-on { display: table-row; }
+  .ka-finansal-hizmetler:is([data-step="3"], [data-step="4"], [data-step="5"]) .fh__tag { display: flex; }
+  .ka-finansal-hizmetler:is([data-step="4"], [data-step="5"]) .fh__memo { display: block; }
+  .ka-finansal-hizmetler:is([data-step="4"], [data-step="5"]) .fh__list li { opacity: 1; transform: none; }
+  .ka-finansal-hizmetler:is([data-step="4"], [data-step="5"]) .fh__decide { opacity: 1; }
+  .ka-finansal-hizmetler[data-step="5"] .fh__win { opacity: 0; }
+
+  @keyframes ka-finansal-hizmetler-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-finansal-hizmetler-blink { 50% { opacity: 0; } }
+  @keyframes ka-finansal-hizmetler-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-finansal-hizmetler *, .ka-finansal-hizmetler *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = ['Mali tablolar okunuyor', 'Rasyolar hesaplanıp tabloya ekleniyor', 'Memo yazılıyor'];
+  const FX = ['412,0', '=C5/C4', '=C6/C5', '=C7/C8'];
+  const CELLS = ['C4', 'C10', 'C11', 'C12'];
+
+  function setup(root: HTMLElement) {
+    const prompt = root.dataset.prompt || '';
+    const el = (r: string) => root.querySelector<HTMLElement>(`[data-role="${r}"]`)!;
+    const c1 = el('c1'), sub = el('sub'), fx = el('fx'), cell = el('cell');
+    const rows = [...root.querySelectorAll<HTMLElement>('.fh__new')];
+    const showRows = (n: number) => rows.forEach((r, i) => r.classList.toggle('is-on', i < n));
+    const fxAt = (i: number) => { fx.textContent = FX[i]; cell.textContent = CELLS[i]; };
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const type = (node: HTMLElement, text: string, start: number, speed: number) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { node.textContent = text.slice(0, i); });
+      return start + text.length * speed;
+    };
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      c1.textContent = ''; sub.textContent = SUBS[0]; fxAt(0); showRows(0);
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(1100, () => { step(1); root.dataset.typing = '1'; });
+      const t1 = type(c1, prompt, 1200, 30);
+      at(t1 + 500, () => { delete root.dataset.typing; c1.textContent = ''; step(2); });
+      const t2 = t1 + 2000;
+      at(t2, () => { sub.textContent = SUBS[1]; step(3); });
+      at(t2 + 300, () => { fxAt(1); showRows(1); });
+      at(t2 + 800, () => { fxAt(2); showRows(2); });
+      at(t2 + 1300, () => { fxAt(3); showRows(3); });
+      at(t2 + 2000, () => { sub.textContent = SUBS[2]; });
+      const t3 = t2 + 3000;
+      at(t3, () => step(4));
+      at(t3 + 5600, () => step(5));
+      at(t3 + 6200, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      fxAt(2); showRows(3);
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-finansal-hizmetler').forEach(setup);
+</script>
