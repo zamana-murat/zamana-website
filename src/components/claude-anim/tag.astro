@@ -1,0 +1,255 @@
+---
+/**
+ * Turkish, code-driven hero animation for /claude/tag/ (replaces Anthropic's English video).
+ * Scenario: in a team channel (#satis-ekibi) an employee tags @Claude in a thread, Claude
+ * reads the conversation, works, and posts the result in the same thread.
+ * Generic channel UI (no Slack branding). All elements live in the markup; the script only
+ * toggles data-step and types text.
+ */
+---
+
+<div
+  class="ca-tag"
+  data-step="0"
+  data-mention="@Claude"
+  data-rest=" bu görüşme için bilmem gerekenleri toparlar mısın?"
+  role="img"
+  aria-label="Ekip kanalında bir çalışan @Claude'u etiketliyor, Claude iş parçacığında konuşmayı okuyup çalışıyor ve alıcı görüşmesi için hazırlık özetini aynı iş parçacığına yazıyor."
+>
+  <div class="tg__win" aria-hidden="true">
+    <div class="tg__bar">
+      <span class="tg__dot"></span><span class="tg__dot"></span><span class="tg__dot"></span>
+      <span class="tg__bar-title"># satis-ekibi</span>
+    </div>
+
+    <div class="tg__body">
+      <!-- Channel list -->
+      <div class="tg__side">
+        <p class="tg__ws">Aydın Makine</p>
+        <p class="tg__side-h">Kanallar</p>
+        <p class="tg__ch"># genel</p>
+        <p class="tg__ch tg__ch--on"># satis-ekibi</p>
+        <p class="tg__ch"># finans</p>
+        <p class="tg__ch"># destek</p>
+      </div>
+
+      <div class="tg__main">
+        <div class="tg__msgs">
+          <!-- Thread root -->
+          <div class="tg__msg">
+            <span class="tg__av tg__av--ka">KA</span>
+            <div class="tg__mbody">
+              <p class="tg__head"><strong>Kemal Aydın</strong><small>09:40</small></p>
+              <p class="tg__text">Bereket Gıda yarın 14.00'te geliyor. Neye bakalım?</p>
+            </div>
+          </div>
+
+          <div class="tg__replies">
+            <!-- Employee tags Claude -->
+            <div class="tg__msg tg__msg--sent">
+              <span class="tg__av tg__av--sk">SK</span>
+              <div class="tg__mbody">
+                <p class="tg__head"><strong>Selin Kaya</strong><small>09:42</small></p>
+                <p class="tg__text"><span class="tg__mention">@Claude</span> bu görüşme için bilmem gerekenleri toparlar mısın?</p>
+              </div>
+            </div>
+
+            <!-- Claude works, then answers in the thread -->
+            <div class="tg__msg tg__msg--claude">
+              <span class="tg__av tg__av--ai">
+                <svg viewBox="0 0 24 24" width="17" height="17"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+              </span>
+              <div class="tg__mbody">
+                <p class="tg__head"><strong>Claude</strong><em>AJAN</em><small>09:42</small></p>
+                <div class="tg__work">
+                  <span class="tg__spark"><svg viewBox="0 0 24 24" width="15" height="15"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+                  <span class="tg__work-t" data-role="sub">İş parçacığı okunuyor</span>
+                </div>
+                <div class="tg__result">
+                  <p class="tg__rtitle">Bereket Gıda görüşmesi · yarın 14.00</p>
+                  <ul class="tg__list">
+                    <li style="--i:0">Açık teklif: 480.000 TL + KDV, yanıt bekleniyor</li>
+                    <li style="--i:1">Son yazışma: vadeyi 60 güne çıkarma talebi</li>
+                    <li style="--i:2">Geçen görüşme: teslim süresi şikayeti</li>
+                  </ul>
+                  <p class="tg__src">Kaynak: CRM kaydı ve son 3 e-posta</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Colleague follows up -->
+            <div class="tg__msg tg__msg--reply">
+              <span class="tg__av tg__av--ka">KA</span>
+              <div class="tg__mbody">
+                <p class="tg__head"><strong>Kemal Aydın</strong><small>09:44</small></p>
+                <p class="tg__text">Süper, vade konusunu ben alıyorum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg__comp">
+          <span class="tg__ph">İş parçacığına yanıt yazın</span>
+          <span class="tg__mention" data-role="m1"></span><span data-role="c1"></span><span class="tg__caret"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-tag {
+    --tg-ink: var(--c-navy);
+    --tg-muted: var(--c-text-muted);
+    --tg-line: var(--c-border);
+    --tg-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+    container-type: inline-size;
+  }
+  .tg__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .tg__bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 0.7em 1em; border-bottom: 1px solid var(--tg-line);
+  }
+  .tg__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .tg__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--tg-muted); font-weight: 700; }
+  .tg__body { flex: 1; display: flex; min-height: 0; }
+
+  /* sidebar */
+  .tg__side { width: 7.2em; flex-shrink: 0; background: var(--c-navy); padding: 1em 0.7em; }
+  .tg__side p { margin: 0; }
+  .tg__ws { color: #fff; font-weight: 800; font-size: 0.9em; padding: 0 0.45em 0.8em; }
+  .tg__side-h { color: rgba(255, 255, 255, .5); font-size: 0.7em; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 0 0.6em 0.4em; }
+  .tg__ch { color: rgba(255, 255, 255, .72); font-size: 0.82em; padding: 0.38em 0.6em; border-radius: 6px; }
+  .tg__ch--on { background: var(--c-gold); color: var(--c-navy); font-weight: 800; }
+  @container (max-width: 470px) { .tg__side { display: none; } }
+
+  /* messages */
+  .tg__main { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 0 1.2em 1em; }
+  .tg__msgs {
+    flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end;
+    padding-top: 0.6em; padding-bottom: 0.25em; gap: 0.55em;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 1.6em);
+  }
+  .tg__replies { display: flex; flex-direction: column; gap: 0.55em; margin-left: 1.15em; padding-left: 0.9em; border-left: 2px solid var(--tg-line); }
+  .tg__msg { display: flex; gap: 0.7em; align-items: flex-start; }
+  .tg__msg--sent, .tg__msg--claude, .tg__msg--reply { display: none; animation: tg-in .4s ease both; }
+  .tg__av {
+    width: 2.2em; height: 2.2em; border-radius: 7px; flex-shrink: 0;
+    display: grid; place-items: center; font-weight: 800; font-size: 0.78em;
+  }
+  .tg__av--ka { background: #f4ead0; color: var(--c-gold-text); }
+  .tg__av--sk { background: #e5def3; color: #5b3fa0; }
+  .tg__av--ai { background: var(--c-navy); color: var(--c-gold); }
+  .tg__mbody { min-width: 0; }
+  .tg__head { margin: 0; display: flex; align-items: baseline; gap: 0.5em; line-height: 1.25; }
+  .tg__head strong { color: var(--tg-ink); font-weight: 800; }
+  .tg__head small { color: var(--tg-muted); font-size: 0.78em; }
+  .tg__head em { font-style: normal; font-size: 0.62em; font-weight: 800; letter-spacing: .06em; color: var(--tg-muted); background: var(--tg-soft); border-radius: 4px; padding: 0.2em 0.5em; }
+  .tg__text { margin: 0.1em 0 0; color: var(--tg-ink); line-height: 1.4; }
+  .tg__mention { color: #0b5a8a; background: rgba(29, 155, 209, .13); border-radius: 4px; padding: 0 0.15em; }
+
+  .tg__work { display: none; align-items: center; gap: 0.5em; margin-top: 0.3em; color: var(--tg-muted); font-size: 0.9em; }
+  .tg__spark { color: var(--c-gold); display: inline-flex; animation: tg-spin 1.6s linear infinite; }
+  .tg__result { display: none; margin-top: 0.15em; }
+  .tg__rtitle { margin: 0; font-weight: 800; color: var(--tg-ink); line-height: 1.35; }
+  .tg__list { margin: 0.25em 0 0; padding-left: 1.2em; font-size: 0.9em; color: var(--tg-ink); line-height: 1.5; }
+  .tg__list li { opacity: 0; transform: translateX(-6px); transition: opacity .3s calc(var(--i) * 260ms + 150ms), transform .3s calc(var(--i) * 260ms + 150ms); }
+  .tg__src { margin: 0.35em 0 0; font-size: 0.76em; color: var(--tg-muted); }
+
+  /* composer */
+  .tg__comp {
+    margin-top: 0.5em; border: 1px solid rgba(15, 40, 85, .22); border-radius: 9px;
+    padding: 0.6em 0.9em; min-height: 1.4em; line-height: 1.4; color: var(--tg-ink); background: #fff;
+  }
+  .tg__ph { color: var(--tg-muted); opacity: .8; }
+  .tg__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--tg-ink); animation: tg-blink 1s steps(1) infinite; }
+  .ca-tag[data-typing] .tg__caret { display: inline-block; }
+  .tg__comp [data-role="m1"]:empty { display: none; }
+
+  /* step states */
+  .ca-tag[data-step="1"] .tg__ph { display: none; }
+  .ca-tag[data-step="2"] .tg__msg--sent,
+  .ca-tag[data-step="3"] .tg__msg--sent,
+  .ca-tag[data-step="4"] .tg__msg--sent { display: flex; }
+  .ca-tag[data-step="2"] .tg__msg--claude,
+  .ca-tag[data-step="3"] .tg__msg--claude,
+  .ca-tag[data-step="4"] .tg__msg--claude { display: flex; animation-delay: .5s; }
+  .ca-tag[data-step="2"] .tg__work { display: flex; }
+  .ca-tag[data-step="3"] .tg__result,
+  .ca-tag[data-step="4"] .tg__result { display: block; }
+  .ca-tag[data-step="3"] .tg__list li,
+  .ca-tag[data-step="4"] .tg__list li { opacity: 1; transform: none; }
+  .ca-tag[data-step="4"] .tg__msg--reply { display: flex; }
+  .ca-tag[data-step="5"] .tg__win { opacity: 0; transition: opacity .5s; }
+
+  @keyframes tg-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @keyframes tg-blink { 50% { opacity: 0; } }
+  @keyframes tg-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-tag *, .ca-tag *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = ['İş parçacığı okunuyor', 'CRM notları ve son e-postalar toparlanıyor', 'Özet yazılıyor'];
+
+  function setup(root: HTMLElement) {
+    const mention = root.dataset.mention || '';
+    const rest = root.dataset.rest || '';
+    const el = (r: string) => root.querySelector<HTMLElement>(`[data-role="${r}"]`)!;
+    const m1 = el('m1'), c1 = el('c1'), sub = el('sub');
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const type = (node: HTMLElement, text: string, start: number, speed: number) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { node.textContent = text.slice(0, i); });
+      return start + text.length * speed;
+    };
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      m1.textContent = ''; c1.textContent = ''; sub.textContent = SUBS[0];
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(900, () => { step(1); root.dataset.typing = '1'; });
+      const t1 = type(m1, mention, 1000, 45);
+      const t2 = type(c1, rest, t1 + 150, 22);
+      // send: composer empties, the message appears in the thread, Claude starts working
+      at(t2 + 500, () => { delete root.dataset.typing; m1.textContent = ''; c1.textContent = ''; step(2); });
+      at(t2 + 1900, () => { sub.textContent = SUBS[1]; });
+      at(t2 + 3100, () => { sub.textContent = SUBS[2]; });
+      const t3 = t2 + 4200;
+      at(t3, () => step(3));
+      const t4 = t3 + 3300;
+      at(t4, () => step(4));
+      at(t4 + 3300, () => step(5));
+      at(t4 + 3900, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ca-tag').forEach(setup);
+</script>

@@ -1,0 +1,320 @@
+<!--
+  Turkish, code-driven hero animation for /claude/chrome/ (replaces Anthropic's English video).
+  Scenario: in the browser side panel the user asks Claude to find the last 3 invoices in a
+  supplier portal and enter them into a tracking table; Claude reads the portal, fills the
+  second tab, asks for approval before saving, then reports.
+  All elements live in the markup; the script only toggles data-step / classes and types text.
+-->
+<div
+  class="ca-chrome"
+  data-step="0"
+  data-prompt="Tedarikçi portalından son 3 faturayı bulup tabloya işle."
+  role="img"
+  aria-label="Tarayıcı yan panelinde Claude'a görev veriliyor: tedarikçi portalındaki son 3 fatura bulunup takip tablosuna işleniyor, kaydetmeden önce kullanıcıdan onay isteniyor."
+>
+  <div class="cc__win" aria-hidden="true">
+    <div class="cc__top">
+      <span class="cc__dot"></span><span class="cc__dot"></span><span class="cc__dot"></span>
+      <div class="cc__tabs">
+        <span class="cc__tab cc__tab--a">Kuzey Ambalaj Portal</span>
+        <span class="cc__tab cc__tab--b">Fatura Takip</span>
+      </div>
+    </div>
+    <div class="cc__addr">
+      <span class="cc__url cc__url--a">portal.kuzeyambalaj.example/faturalar</span>
+      <span class="cc__url cc__url--b">takip.sirketim.example/faturalar</span>
+    </div>
+
+    <div class="cc__body">
+      <!-- Web page area -->
+      <div class="cc__page">
+        <div class="cc__view cc__view--a">
+          <div class="cc__site"><strong>Kuzey Ambalaj</strong><span>Bayi Portalı</span></div>
+          <p class="cc__h">Faturalarım</p>
+          <div class="cc__tbl">
+            <div class="cc__tr cc__tr--head"><span>Fatura no</span><span>Tarih</span><span>Tutar</span></div>
+            <div class="cc__tr cc__arow"><span>FTR-4251</span><span>3 Ekim</span><span>14.980,50 TL</span></div>
+            <div class="cc__tr cc__arow"><span>FTR-4236</span><span>29 Eylül</span><span>21.640,00 TL</span></div>
+            <div class="cc__tr cc__arow"><span>FTR-4219</span><span>24 Eylül</span><span>9.320,00 TL</span></div>
+            <div class="cc__tr"><span>FTR-4203</span><span>15 Eylül</span><span>18.750,50 TL</span></div>
+            <div class="cc__tr"><span>FTR-4187</span><span>2 Eylül</span><span>12.480,00 TL</span></div>
+          </div>
+          <p class="cc__foot">24 faturadan 5'i gösteriliyor</p>
+        </div>
+
+        <div class="cc__view cc__view--b">
+          <div class="cc__site cc__site--light">
+            <strong>Fatura Takip Tablosu</strong>
+            <span class="cc__pill">
+              <span class="cc__pill-a">Claude dolduruyor</span>
+              <span class="cc__pill-b">Onay bekliyor</span>
+              <span class="cc__pill-c">Kaydedildi ✓</span>
+            </span>
+          </div>
+          <div class="cc__tbl cc__tbl--b">
+            <div class="cc__tr cc__tr--head"><span>Fatura no</span><span>Tarih</span><span>Tutar</span></div>
+            <div class="cc__tr cc__brow" style="--i:0"><span>FTR-4251</span><span>3 Ekim</span><span>14.980,50 TL</span></div>
+            <div class="cc__tr cc__brow" style="--i:1"><span>FTR-4236</span><span>29 Eylül</span><span>21.640,00 TL</span></div>
+            <div class="cc__tr cc__brow" style="--i:2"><span>FTR-4219</span><span>24 Eylül</span><span>9.320,00 TL</span></div>
+            <div class="cc__tr cc__total"><span>Toplam</span><span></span><span>45.940,50 TL</span></div>
+          </div>
+          <p class="cc__foot">Kaynak: Kuzey Ambalaj Bayi Portalı, son 3 fatura</p>
+        </div>
+      </div>
+
+      <!-- Claude side panel -->
+      <div class="cc__panel">
+        <p class="cc__panel-head"><strong>Claude</strong><span>yan panel</span></p>
+        <div class="cc__user">
+          <p class="cc__bubble"><span class="cc__type" data-role="prompt"></span><span class="cc__caret"></span></p>
+        </div>
+
+        <div class="cc__slot">
+          <div class="cc__status">
+            <span class="cc__spark"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path></svg></span>
+            <div>
+              <p class="cc__status-title">Tarayıcıda çalışıyor</p>
+              <p class="cc__status-sub" data-role="sub">Portalda fatura listesi açılıyor</p>
+            </div>
+          </div>
+
+          <div class="cc__approve">
+            <p class="cc__approve-title">Onayınız gerekiyor</p>
+            <p class="cc__approve-text">Fatura Takip tablosuna 3 fatura (45.940,50 TL) kaydedilecek.</p>
+            <div class="cc__btns">
+              <span class="cc__btn">Vazgeç</span>
+              <span class="cc__btn cc__btn--ok">Onayla</span>
+            </div>
+          </div>
+
+          <div class="cc__done">
+            <p class="cc__done-text"><span class="cc__type" data-role="done"></span></p>
+            <p class="cc__done-note">Kayıt yalnızca onayınızdan sonra yapıldı.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-chrome {
+    --cc-ink: var(--c-navy);
+    --cc-muted: var(--c-text-muted);
+    --cc-line: var(--c-border);
+    --cc-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+  }
+  .cc__win {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--c-white, #fff);
+    transition: opacity .5s;
+  }
+  .cc__top {
+    display: flex; align-items: flex-end; gap: 6px;
+    padding: 0.6em 1em 0;
+    background: var(--cc-soft);
+  }
+  .cc__dot { width: 9px; height: 9px; border-radius: 50%; background: #d9d4c6; margin-bottom: 0.75em; }
+  .cc__tabs { display: flex; gap: 0.3em; margin-left: 0.7em; }
+  .cc__tab {
+    font-size: 0.78em; font-weight: 600; color: var(--cc-muted);
+    padding: 0.5em 1em; border-radius: 8px 8px 0 0; white-space: nowrap;
+    background: transparent; transition: background .3s, color .3s;
+  }
+  .ca-chrome:not([data-view="b"]) .cc__tab--a,
+  .ca-chrome[data-view="b"] .cc__tab--b {
+    background: var(--c-white, #fff); color: var(--cc-ink);
+  }
+  .cc__addr {
+    position: relative; height: 2.3em;
+    border-bottom: 1px solid var(--cc-line);
+    padding: 0.4em 1em;
+  }
+  .cc__url {
+    position: absolute; left: 1em; right: 1em; top: 0.4em; bottom: 0.4em;
+    display: flex; align-items: center; padding: 0 0.9em;
+    background: var(--cc-soft); border-radius: 999px;
+    font-size: 0.78em; color: var(--cc-muted); transition: opacity .3s;
+  }
+  .cc__url--b { opacity: 0; }
+  .ca-chrome[data-view="b"] .cc__url--a { opacity: 0; }
+  .ca-chrome[data-view="b"] .cc__url--b { opacity: 1; }
+
+  .cc__body { position: relative; flex: 1; display: flex; min-height: 0; }
+
+  /* page */
+  .cc__page { position: relative; flex: 1 1 62%; min-width: 0; overflow: hidden; background: #fff; }
+  .cc__view { position: absolute; inset: 0; transition: opacity .4s; }
+  .cc__view--b { opacity: 0; }
+  .ca-chrome[data-view="b"] .cc__view--a { opacity: 0; }
+  .ca-chrome[data-view="b"] .cc__view--b { opacity: 1; }
+  .cc__site {
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--c-navy); color: #fff; padding: 0.8em 1em; font-size: 0.9em;
+  }
+  .cc__site strong { font-weight: 800; }
+  .cc__site span { font-size: 0.9em; color: rgba(255,255,255,.7); }
+  .cc__site--light { background: var(--cc-soft); color: var(--cc-ink); }
+  .cc__h { margin: 1.1em 1.1em 0.5em; font-size: 1.3em; font-weight: 800; color: var(--cc-ink); }
+  .cc__tbl { margin: 0.4em 1.1em; font-size: 0.92em; }
+  .cc__tbl--b { margin-top: 0.9em; }
+  .cc__foot { margin: 0.9em 1.1em 0; font-size: 0.78em; color: var(--cc-muted); }
+  .cc__tr {
+    display: grid; grid-template-columns: 1.1fr 1fr 1.2fr; gap: 0.5em;
+    padding: 0.85em 0.6em; border-bottom: 1px solid var(--cc-line); color: var(--cc-ink);
+    position: relative;
+  }
+  .cc__tr span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .cc__tr--head { font-weight: 700; color: var(--cc-muted); font-size: 0.92em; border-bottom: 2px solid var(--cc-line); }
+  .cc__arow { transition: background .3s; }
+  .cc__arow::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+    background: var(--c-gold); opacity: 0; transition: opacity .3s;
+  }
+  .cc__arow.is-read { background: rgba(201, 168, 76, .16); }
+  .cc__arow.is-read::before { opacity: 1; }
+  .cc__brow { opacity: 0; transform: translateY(6px); transition: opacity .35s calc(var(--i) * 600ms + 300ms), transform .35s calc(var(--i) * 600ms + 300ms); }
+  .cc__total { font-weight: 800; border-bottom: 0; border-top: 2px solid var(--cc-ink); opacity: 0; transition: opacity .35s; }
+  .ca-chrome[data-view="b"] .cc__brow { opacity: 1; transform: none; }
+  .ca-chrome[data-step="4"] .cc__total,
+  .ca-chrome[data-step="5"] .cc__total { opacity: 1; }
+  .cc__pill { position: relative; display: inline-block; min-width: 9.5em; height: 1.7em; }
+  .cc__pill span {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    border-radius: 999px; font-size: 0.85em; font-weight: 700; opacity: 0; transition: opacity .25s;
+    background: rgba(201, 168, 76, .25); color: var(--c-gold-text);
+  }
+  .cc__pill .cc__pill-c { background: #e3f1e6; color: #1d6f42; }
+  .ca-chrome[data-step="3"] .cc__pill-a,
+  .ca-chrome[data-step="4"] .cc__pill-b,
+  .ca-chrome[data-step="5"] .cc__pill-c { opacity: 1; }
+
+  /* side panel */
+  .cc__panel {
+    flex: 1 1 38%; min-width: 0; border-left: 1px solid var(--cc-line);
+    background: #fff; padding: 0.8em 0.9em; display: flex; flex-direction: column;
+    box-shadow: -6px 0 14px rgba(15, 40, 85, .05);
+  }
+  .cc__panel-head { margin: 0 0 0.8em; display: flex; align-items: baseline; gap: 0.5em; color: var(--cc-ink); }
+  .cc__panel-head strong { font-weight: 800; }
+  .cc__panel-head span { font-size: 0.8em; color: var(--cc-muted); }
+  .cc__user { opacity: 0; transform: translateY(8px); transition: opacity .35s, transform .35s; }
+  .cc__bubble {
+    margin: 0 0 0 auto; max-width: 94%;
+    background: var(--cc-soft); color: var(--cc-ink); font-size: 0.92em;
+    padding: 0.7em 0.9em; border-radius: 12px 12px 4px 12px;
+    line-height: 1.45; min-height: 1.45em;
+  }
+  .cc__caret { display: inline-block; width: 2px; height: 1em; margin-left: 2px; vertical-align: -0.15em; background: var(--cc-ink); animation: cc-blink 1s steps(1) infinite; }
+  .cc__slot { position: relative; flex: 1; margin-top: 1em; min-height: 9em; }
+  .cc__status, .cc__approve, .cc__done { position: absolute; left: 0; right: 0; top: 0; opacity: 0; transition: opacity .3s; }
+  .cc__status { display: flex; gap: 0.6em; align-items: flex-start; }
+  .cc__spark { color: var(--c-gold); display: inline-flex; margin-top: 0.1em; animation: cc-spin 1.6s linear infinite; }
+  .cc__status-title { margin: 0; font-weight: 700; font-size: 0.98em; color: var(--cc-ink); }
+  .cc__status-sub { margin: 0.15em 0 0; color: var(--cc-muted); font-size: 0.86em; }
+  .cc__approve {
+    border: 1.5px solid var(--c-gold); border-radius: 10px; padding: 0.7em 0.8em; background: #fffdf6;
+  }
+  .cc__approve-title { margin: 0; font-weight: 800; font-size: 0.95em; color: var(--c-gold-text); }
+  .cc__approve-text { margin: 0.3em 0 0.8em; font-size: 0.86em; line-height: 1.4; color: var(--cc-ink); }
+  .cc__btns { display: flex; gap: 0.5em; justify-content: flex-end; }
+  .cc__btn {
+    font-size: 0.84em; font-weight: 700; padding: 0.45em 1em; border-radius: 7px;
+    border: 1px solid var(--cc-line); color: var(--cc-ink); background: #fff;
+    transition: transform .15s, background .15s;
+  }
+  .cc__btn--ok { background: var(--c-gold); border-color: var(--c-gold); color: var(--c-navy); }
+  .ca-chrome[data-press] .cc__btn--ok { background: var(--c-gold-dark); border-color: var(--c-gold-dark); transform: scale(.93); }
+  .cc__done-text { margin: 0; font-weight: 700; font-size: 0.95em; color: var(--cc-ink); min-height: 2.8em; line-height: 1.4; }
+  .cc__done-note { margin: 0.5em 0 0; font-size: 0.8em; color: var(--cc-muted); }
+
+  /* step states */
+  .ca-chrome:not([data-step="0"]) .cc__user { opacity: 1; transform: none; }
+  .ca-chrome[data-step="2"] .cc__status,
+  .ca-chrome[data-step="3"] .cc__status { opacity: 1; }
+  .ca-chrome[data-step="4"] .cc__approve { opacity: 1; }
+  .ca-chrome[data-step="5"] .cc__done { opacity: 1; }
+  .ca-chrome[data-step="6"] .cc__win { opacity: 0; }
+  .ca-chrome:not([data-typing]) .cc__caret { display: none; }
+
+  @keyframes cc-blink { 50% { opacity: 0; } }
+  @keyframes cc-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-chrome *, .ca-chrome *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = [
+    'Portalda fatura listesi açılıyor',
+    'Son 3 fatura okunuyor',
+    'Fatura Takip sekmesine işleniyor',
+  ];
+  const DONE = 'Bitti: 3 fatura tabloya işlendi. Toplam 45.940,50 TL.';
+
+  function setup(root) {
+    const prompt = root.dataset.prompt || '';
+    const el = (r) => root.querySelector('[data-role="' + r + '"]');
+    const pEl = el('prompt'), sub = el('sub'), done = el('done');
+    const rows = Array.from(root.querySelectorAll('.cc__arow'));
+    let timers = [];
+    let running = false;
+    const at = (ms, fn) => timers.push(window.setTimeout(fn, ms));
+    const type = (node, text, start, speed) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { node.textContent = text.slice(0, i); });
+      return start + text.length * speed;
+    };
+    const step = (n) => { root.dataset.step = String(n); root.dataset.view = n >= 3 ? 'b' : 'a'; };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      pEl.textContent = ''; done.textContent = ''; sub.textContent = SUBS[0];
+      rows.forEach((r) => r.classList.remove('is-read'));
+      delete root.dataset.press; delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(300, () => { step(1); root.dataset.typing = '1'; });
+      const typed = type(pEl, prompt, 500, 24);
+      at(typed + 300, () => { delete root.dataset.typing; step(2); });
+      at(typed + 1100, () => { rows[0].classList.add('is-read'); sub.textContent = SUBS[1]; });
+      at(typed + 1700, () => rows[1].classList.add('is-read'));
+      at(typed + 2300, () => rows[2].classList.add('is-read'));
+      const t3 = typed + 3200;
+      at(t3, () => { step(3); sub.textContent = SUBS[2]; });
+      const t4 = t3 + 3000;
+      at(t4, () => step(4));
+      at(t4 + 2200, () => { root.dataset.press = '1'; });
+      const t5 = t4 + 2700;
+      at(t5, () => { delete root.dataset.press; step(5); });
+      type(done, DONE, t5 + 150, 26);
+      at(t5 + 3400, () => step(6));
+      at(t5 + 4000, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      pEl.textContent = prompt; done.textContent = DONE;
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll('.ca-chrome').forEach(setup);
+</script>

@@ -3,6 +3,10 @@
  * Reusable retainer CTA box.
  * Mirrors wiki/snippets/retainer-cta.md content, restyled with site brand tokens.
  */
+interface Props {
+  intro?: string;
+}
+const { intro = "Bu wiki'yi okudunuz, ama tek başına okumak yetmez." } = Astro.props;
 ---
 
 <aside class="retainer-cta">
@@ -10,7 +14,7 @@
     <p class="retainer-cta__eyebrow">Zamana Claude Eğitimi</p>
     <h3>Claude'u şirketinize entegre edelim.</h3>
     <p>
-      Bu wiki'yi okudunuz, ama tek başına okumak yetmez. Zamana, <a href="/yapay-zeka-egitimi/">kurumsal yapay zeka eğitimi</a> için üç program sunuyor:
+      {intro} Zamana, <a href="/yapay-zeka-egitimi/">kurumsal yapay zeka eğitimi</a> için üç program sunuyor:
       <strong>Yönetici AI Hazırlık</strong> (3 saat, 15.000 TL),
       <strong>Bireysel Program</strong> (3 hafta birebir, 40.000 TL) veya
       <strong>Kurumsal Retainer</strong> (6 çalışan, aylık 100.000 TL, minimum 3 ay). Fiyatlara KDV dahil değildir.

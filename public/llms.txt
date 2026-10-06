@@ -11,6 +11,9 @@ Zamana, API veya yazılım geliştirme değil, iş odaklı Claude kullanımını
 - [Yönetici AI Hazırlık](https://zamana.com.tr/programlar/ceo-brifing/): Yöneticiler için kısa oturum
 - [Program Karşılaştırması](https://zamana.com.tr/programlar/karsilastirma/): Üç programın karşılaştırması
 
+## Claude (ürün tanıtımları)
+- [Claude](https://zamana.com.tr/claude/): Claude ürün ailesinin Türkçe tanıtımı (Claude, Claude Code, @Claude, Claude Security, Claude Science, Artifacts, Design, Connectors, Plugins, Skills, Claude for Chrome, Claude for Microsoft 365, modeller, Claude'a geçiş), her sayfada plan bilgisi ve resmi kaynak bağlantısı
+
 ## Wiki (Türkçe Claude bilgi tabanı)
 - [Wiki Ana Sayfa](https://zamana.com.tr/wiki/): Türkçe Claude wiki girişi
 - [Temeller](https://zamana.com.tr/wiki/temeller/): Claude nedir, Türkiye'de Claude (erişim, satın alma, ofis ve temsilci durumu), planlar, modeller, kullanım limitleri, ilk kurulum, gizlilik ve KVKK

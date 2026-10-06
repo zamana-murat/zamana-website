@@ -1,6 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ProgramCard from '../components/ProgramCard.astro';
+import { claudeNavColumns } from '../data/claude-nav';
+
+// "Claude nedir?" cards: picked from the Claude menu (single source of truth).
+const claudeIntroPicks = ['/claude/', '/claude/artifacts/', '/claude/connectors/', '/claude/microsoft-365/', '/claude/claude-code/'];
+const claudeNavItems = claudeNavColumns.flatMap((c) => c.groups.flatMap((g) => g.items));
+const claudeIntroCards = [
+  ...claudeIntroPicks.map((href) => claudeNavItems.find((it) => it.href === href)!).filter(Boolean),
+  { label: 'Modeller', href: '/claude/modeller/', desc: 'Fable, Opus, Sonnet ve Haiku arasındaki fark' },
+];
 
 const organizationSchema = {
   '@context': 'https://schema.org',
@@ -218,6 +227,34 @@ const websiteSchema = {
           </p>
           <a href="/hakkinda/" class="link-arrow">Hakkımda daha fazla <span aria-hidden="true">→</span></a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt claude-intro" aria-labelledby="claude-intro-h">
+    <div class="container">
+      <div class="text-center claude-intro__head">
+        <span class="eyebrow">Anthropic · Claude</span>
+        <h2 id="claude-intro-h" class="section-title center">Claude nedir?</h2>
+        <p class="lead center">
+          Claude, Anthropic'in geliştirdiği bir yapay zeka asistanıdır. Yazışma, rapor, analiz, belge hazırlama ve
+          araştırma gibi günlük işlerde çalışma ortağınız olur. Türkiye'den kullanılabilir ve Türkçe çalışır.
+        </p>
+      </div>
+
+      <ul class="claude-intro__grid">
+        {claudeIntroCards.map((c) => (
+          <li>
+            <a href={c.href} class="claude-intro__card">
+              <span class="claude-intro__title">{c.label}</span>
+              <span class="claude-intro__desc">{c.desc}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="text-center claude-intro__cta">
+        <a href="/claude/" class="btn btn--secondary">Claude'u tanıyın</a>
       </div>
     </div>
   </section>
@@ -496,6 +533,37 @@ const websiteSchema = {
 </Layout>
 
 <style>
+  /* ── Claude nedir? ─────────────────────────────── */
+  .claude-intro__head { margin-bottom: var(--s-5); }
+  .claude-intro__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--s-3);
+  }
+  @media (max-width: 860px) { .claude-intro__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .claude-intro__grid { grid-template-columns: minmax(0, 1fr); } }
+  .claude-intro__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    height: 100%;
+    padding: var(--s-3) var(--s-4);
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    text-decoration: none;
+    transition: border-color var(--t-fast), box-shadow var(--t-fast), transform var(--t-fast);
+  }
+  .claude-intro__card:hover { border-color: var(--c-gold); box-shadow: var(--sh-mid); transform: translateY(-1px); }
+  .claude-intro__card:focus-visible { outline: 2px solid var(--c-gold); outline-offset: 2px; }
+  .claude-intro__title { font-weight: 700; color: var(--c-navy); }
+  .claude-intro__card:hover .claude-intro__title { color: var(--c-gold-text); }
+  .claude-intro__desc { font-size: 0.9rem; line-height: 1.45; color: var(--c-text-muted); }
+  .claude-intro__cta { margin-top: var(--s-5); }
+
   .hero {
     position: relative;
     color: var(--c-text-light);

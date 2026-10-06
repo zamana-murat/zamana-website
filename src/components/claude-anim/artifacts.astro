@@ -1,0 +1,295 @@
+---
+/**
+ * Turkish, code-driven hero animation for /claude/artifacts/ (replaces Anthropic's English video).
+ * Scenario: user asks for a small price-quote calculator for dealers; it opens live in a side panel,
+ * a value (discount) is changed and the total updates, then the artifact is shared by link.
+ * All elements live in the markup; the script only toggles data-step and types text.
+ */
+const PROMPT = "Bayilere göndereceğim fiyat teklifi için iskontolu bir hesaplayıcı yap.";
+---
+
+<div
+  class="ca-artifacts"
+  data-step="0"
+  data-prompt={PROMPT}
+  role="img"
+  aria-label="Claude'dan fiyat teklifi hesaplayıcısı isteniyor: araç yan panelde canlı açılıyor, iskonto değişince toplam güncelleniyor ve bağlantı ile paylaşılıyor."
+>
+  <div class="caa__win" aria-hidden="true">
+    <div class="caa__bar">
+      <span class="caa__dot"></span><span class="caa__dot"></span><span class="caa__dot"></span>
+      <span class="caa__bar-title">Yeni sohbet</span>
+    </div>
+
+    <div class="caa__stage">
+      <!-- Chat column -->
+      <div class="caa__chat">
+        <p class="caa__bubble"><span class="caa__type" data-role="prompt"></span><span class="caa__caret"></span></p>
+
+        <div class="caa__flow">
+          <div class="caa__status">
+            <span class="caa__spark"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path></svg></span>
+            <div>
+              <p class="caa__status-title">Hesaplayıcı hazırlanıyor</p>
+              <p class="caa__status-sub" data-role="sub">Hesaplama formülleri yazılıyor</p>
+            </div>
+          </div>
+
+          <div class="caa__done">
+            <p class="caa__done-text"><span class="caa__type" data-role="done"></span></p>
+            <span class="caa__chip">
+              <span class="caa__chip-icon">F</span>
+              <span><strong>Bayi Fiyat Teklifi</strong><small>Artifact</small></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artifact panel -->
+      <div class="caa__panel">
+        <div class="caa__phead">
+          <span class="caa__chip-icon">F</span>
+          <strong>Bayi Fiyat Teklifi</strong>
+          <span class="caa__share"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M6.5 9.5l3-3M5 7.2L3.6 8.6a2.4 2.4 0 003.4 3.4L8.4 10.6M11 8.8l1.4-1.4A2.4 2.4 0 009 4L7.6 5.4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg>Paylaş</span>
+        </div>
+
+        <div class="caa__pbody">
+          <div class="caa__skel"><span></span><span></span><span></span></div>
+
+          <div class="caa__calc">
+            <div class="caa__fields" style="--i:0">
+              <div class="caa__field"><span class="caa__label">Birim fiyat</span><span class="caa__val">1.250,00 TL</span></div>
+              <div class="caa__field"><span class="caa__label">Adet</span><span class="caa__val">40</span></div>
+              <div class="caa__field caa__field--disc"><span class="caa__label">İskonto</span><span class="caa__val"><span data-role="disc">%10</span><span class="caa__vcaret"></span></span></div>
+              <div class="caa__field"><span class="caa__label">KDV</span><span class="caa__val">%20</span></div>
+            </div>
+            <div class="caa__rows" style="--i:1">
+              <p><span>Ara toplam</span><b>50.000,00 TL</b></p>
+              <p><span>İskonto</span><b data-role="r-disc">−5.000,00 TL</b></p>
+              <p><span>KDV</span><b data-role="r-kdv">+9.000,00 TL</b></p>
+            </div>
+            <div class="caa__total" style="--i:2">
+              <span>Teklif toplamı</span>
+              <strong data-role="total">54.000,00 TL</strong>
+            </div>
+          </div>
+
+          <span class="caa__toast">✓ Bağlantı kopyalandı</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-artifacts {
+    --ca-ink: var(--c-navy);
+    --ca-muted: var(--c-text-muted);
+    --ca-line: var(--c-border);
+    --ca-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+  }
+  .caa__win {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--c-white, #fff);
+  }
+  .caa__bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 0.7em 1em;
+    border-bottom: 1px solid var(--ca-line);
+  }
+  .caa__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .caa__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--ca-muted); font-weight: 600; }
+  .caa__stage { position: relative; flex: 1; overflow: hidden; }
+
+  /* chat */
+  .caa__chat {
+    position: absolute; left: 0; top: 0; bottom: 0; width: 37%;
+    padding: 1.2em 1em 1em 1.2em; display: flex; flex-direction: column;
+  }
+  .caa__bubble {
+    margin: 0; background: var(--ca-soft); color: var(--ca-ink);
+    padding: 0.7em 0.85em; border-radius: 14px 14px 4px 14px;
+    font-size: 0.85em; line-height: 1.45; min-height: 1.45em;
+    opacity: 0; transform: translateY(8px); transition: opacity .35s, transform .35s;
+  }
+  .caa__caret { display: inline-block; width: 2px; height: 1em; margin-left: 2px; vertical-align: -0.15em; background: var(--ca-ink); animation: caa-blink 1s steps(1) infinite; }
+  .caa__flow { display: grid; margin-top: 1.2em; }
+  .caa__status, .caa__done { grid-area: 1 / 1; opacity: 0; transition: opacity .3s; }
+  .caa__status { display: flex; gap: 0.6em; align-items: flex-start; align-self: start; }
+  .caa__spark { color: var(--c-gold); display: inline-flex; margin-top: 0.1em; animation: caa-spin 1.6s linear infinite; }
+  .caa__status-title { margin: 0; font-weight: 700; color: var(--ca-ink); font-size: 0.9em; }
+  .caa__status-sub { margin: 0.15em 0 0; color: var(--ca-muted); font-size: 0.8em; line-height: 1.35; }
+  .caa__done-text { margin: 0 0 0.8em; font-weight: 700; color: var(--ca-ink); font-size: 0.85em; line-height: 1.45; min-height: 4.4em; }
+  .caa__chip {
+    display: inline-flex; align-items: center; gap: 0.6em;
+    border: 1px solid var(--ca-line); border-radius: 10px; padding: 0.5em 0.8em 0.5em 0.5em; background: #fff;
+  }
+  .caa__chip strong { display: block; color: var(--ca-ink); font-size: 0.8em; }
+  .caa__chip small { color: var(--ca-muted); font-size: 0.7em; }
+  .caa__chip-icon {
+    width: 1.9em; height: 1.9em; border-radius: 6px; display: grid; place-items: center; flex-shrink: 0;
+    background: var(--c-navy); color: var(--c-gold); font-weight: 800; font-size: 0.8em;
+  }
+
+  /* panel */
+  .caa__panel {
+    position: absolute; left: 39%; right: 1.1em; top: 1em; bottom: 1.1em;
+    border: 1px solid var(--ca-line); border-radius: 12px; background: #fff; overflow: hidden;
+    box-shadow: 0 12px 30px rgba(15, 40, 85, .12);
+    display: flex; flex-direction: column;
+    opacity: 0; transform: translateX(24px); transition: opacity .45s, transform .45s;
+  }
+  .caa__phead {
+    display: flex; align-items: center; gap: 0.6em; padding: 0.65em 0.9em;
+    background: var(--c-cream, #fbf9f4); border-bottom: 1px solid var(--ca-line);
+  }
+  .caa__phead strong { color: var(--ca-ink); font-size: 0.9em; }
+  .caa__share {
+    margin-left: auto; display: inline-flex; align-items: center; gap: 0.35em;
+    font-size: 0.75em; font-weight: 700; color: var(--ca-ink);
+    border: 1px solid rgba(15, 40, 85, .25); border-radius: 999px; padding: 0.35em 0.8em; background: #fff;
+    transition: background .25s, border-color .25s, transform .2s;
+  }
+  .caa__pbody { position: relative; flex: 1; padding: 1em 1.1em; }
+
+  .caa__skel { position: absolute; inset: 1em 1.1em; display: flex; flex-direction: column; gap: 0.7em; opacity: 0; transition: opacity .25s; }
+  .caa__skel span { height: 2.1em; border-radius: 6px; background: linear-gradient(90deg, #efece3 25%, #f8f6f0 50%, #efece3 75%); background-size: 200% 100%; animation: caa-shimmer 1.3s linear infinite; }
+  .caa__skel span:nth-child(2) { width: 70%; }
+  .caa__skel span:nth-child(3) { height: 3.4em; }
+
+  .caa__calc { display: flex; flex-direction: column; gap: 0.8em; }
+  .caa__calc > * { opacity: 0; transform: translateY(6px); transition: opacity .35s calc(var(--i) * 150ms), transform .35s calc(var(--i) * 150ms); }
+  .caa__fields { display: grid; grid-template-columns: 1fr 1fr; gap: 0.55em; }
+  .caa__field { display: flex; flex-direction: column; gap: 0.2em; }
+  .caa__label { font-size: 0.7em; color: var(--ca-muted); font-weight: 600; }
+  .caa__val {
+    display: flex; align-items: center; font-size: 0.9em; font-weight: 700; color: var(--ca-ink);
+    border: 1px solid var(--ca-line); border-radius: 7px; padding: 0.4em 0.6em; min-height: 2em;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .caa__vcaret { display: none; width: 2px; height: 1em; margin-left: 1px; background: var(--ca-ink); animation: caa-blink 1s steps(1) infinite; }
+  .ca-artifacts[data-edit] .caa__field--disc .caa__val { border-color: var(--c-gold); box-shadow: 0 0 0 3px rgba(201, 168, 76, .28); }
+  .ca-artifacts[data-edit="type"] .caa__vcaret { display: inline-block; }
+  .caa__rows { border-top: 1px solid var(--ca-line); padding-top: 0.5em; }
+  .caa__rows p { display: flex; justify-content: space-between; margin: 0; padding: 0.22em 0; font-size: 0.8em; color: var(--ca-muted); }
+  .caa__rows b { color: var(--ca-ink); border-radius: 3px; transition: background .3s; }
+  .caa__total {
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--c-cream, #fbf9f4); border: 1px solid var(--c-border-gold, rgba(201,168,76,.3)); border-radius: 10px; padding: 0.6em 0.85em;
+  }
+  .caa__total span { font-size: 0.8em; font-weight: 700; color: var(--ca-ink); }
+  .caa__total strong { font-size: 1.35em; font-weight: 800; color: var(--ca-ink); border-radius: 4px; padding: 0 0.15em; transition: background .3s; }
+  .ca-artifacts[data-flash] .caa__rows b,
+  .ca-artifacts[data-flash] .caa__total strong { background: rgba(201, 168, 76, .4); }
+
+  .caa__toast {
+    position: absolute; right: 1.1em; bottom: 0.55em; transform: translateY(6px);
+    background: var(--c-navy); color: #fff; font-size: 0.8em; font-weight: 700;
+    padding: 0.55em 1em; border-radius: 999px; white-space: nowrap; opacity: 0; transition: opacity .3s, transform .3s;
+    box-shadow: 0 6px 16px rgba(15, 40, 85, .25);
+  }
+
+  /* step states */
+  .ca-artifacts:not([data-step="0"]) .caa__bubble { opacity: 1; transform: none; }
+  .ca-artifacts[data-step="2"] .caa__status { opacity: 1; }
+  .ca-artifacts:not([data-step="0"]):not([data-step="1"]) .caa__panel { opacity: 1; transform: none; }
+  .ca-artifacts[data-step="2"] .caa__skel { opacity: 1; }
+  .ca-artifacts[data-step="3"] .caa__done,
+  .ca-artifacts[data-step="4"] .caa__done,
+  .ca-artifacts[data-step="5"] .caa__done { opacity: 1; }
+  .ca-artifacts[data-step="3"] .caa__calc > *,
+  .ca-artifacts[data-step="4"] .caa__calc > *,
+  .ca-artifacts[data-step="5"] .caa__calc > * { opacity: 1; transform: none; }
+  .ca-artifacts[data-step="5"] .caa__share { background: var(--c-gold); border-color: var(--c-gold); }
+  .ca-artifacts[data-step="5"] .caa__toast { opacity: 1; transform: none; }
+  .ca-artifacts[data-step="6"] .caa__win { opacity: 0; transition: opacity .5s; }
+  .ca-artifacts:not([data-typing]) .caa__caret { display: none; }
+
+  @keyframes caa-blink { 50% { opacity: 0; } }
+  @keyframes caa-spin { to { transform: rotate(360deg); } }
+  @keyframes caa-shimmer { to { background-position: -200% 0; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-artifacts *, .ca-artifacts *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = [
+    'Hesaplama formülleri yazılıyor',
+    'Alanlar ve sonuç satırları kuruluyor',
+    'Sonuç canlı olarak bağlanıyor',
+  ];
+  const DONE = 'Hesaplayıcınız hazır. Değerleri değiştirdikçe sonuç anında güncellenir.';
+  const BEFORE = { disc: '%10', rDisc: '−5.000,00 TL', rKdv: '+9.000,00 TL', total: '54.000,00 TL' };
+  const AFTER = { disc: '%15', rDisc: '−7.500,00 TL', rKdv: '+8.500,00 TL', total: '51.000,00 TL' };
+
+  function setup(root: HTMLElement) {
+    const prompt = root.dataset.prompt || '';
+    const el = (r: string) => root.querySelector<HTMLElement>(`[data-role="${r}"]`)!;
+    const pEl = el('prompt'), sub = el('sub'), done = el('done');
+    const disc = el('disc'), rDisc = el('r-disc'), rKdv = el('r-kdv'), total = el('total');
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const type = (node: HTMLElement, text: string, start: number, speed: number) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { node.textContent = text.slice(0, i); });
+      return start + text.length * speed;
+    };
+    const step = (n: number) => { root.dataset.step = String(n); };
+    const show = (v: typeof BEFORE) => {
+      disc.textContent = v.disc; rDisc.textContent = v.rDisc; rKdv.textContent = v.rKdv; total.textContent = v.total;
+    };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      pEl.textContent = ''; done.textContent = ''; sub.textContent = SUBS[0]; show(BEFORE);
+      delete root.dataset.edit; delete root.dataset.typing; delete root.dataset.flash; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(300, () => { step(1); root.dataset.typing = '1'; });
+      const typed = type(pEl, prompt, 500, 22);
+      at(typed + 300, () => { delete root.dataset.typing; step(2); });
+      at(typed + 1300, () => { sub.textContent = SUBS[1]; });
+      at(typed + 2300, () => { sub.textContent = SUBS[2]; });
+      const t3 = typed + 3200;
+      at(t3, () => step(3));
+      type(done, DONE, t3 + 150, 22);
+      const t4 = t3 + 2400;
+      at(t4, () => { step(4); root.dataset.edit = 'sel'; });
+      at(t4 + 800, () => { root.dataset.edit = 'type'; disc.textContent = ''; });
+      const t4e = type(disc, AFTER.disc, t4 + 850, 170);
+      at(t4e + 250, () => { show(AFTER); root.dataset.flash = '1'; });
+      at(t4e + 1000, () => { delete root.dataset.flash; delete root.dataset.edit; });
+      const t5 = t4e + 1500;
+      at(t5, () => step(5));
+      at(t5 + 2600, () => step(6));
+      at(t5 + 3200, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      pEl.textContent = prompt; done.textContent = DONE; show(AFTER);
+      step(5);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ca-artifacts').forEach(setup);
+</script>

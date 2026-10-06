@@ -1,0 +1,317 @@
+---
+/**
+ * Turkish, code-driven hero animation for /claude/security/ (replaces Anthropic's English video).
+ * Scenario: a fictional e-commerce repo is scanned, findings are listed by severity,
+ * one finding is opened (explanation), a fix is suggested as a diff that waits for human review.
+ * All elements live in the markup; the script only toggles data-step and types text.
+ */
+---
+
+<div
+  class="ca-sec"
+  data-step="0"
+  role="img"
+  aria-label="Claude Security bir kod deposunu tarıyor: bulgular önem derecesine göre listeleniyor, bir SQL enjeksiyonu bulgusu açıklanıyor ve inceleme bekleyen bir düzeltme önerisi kod farkı olarak gösteriliyor."
+>
+  <div class="ca-sec__win" aria-hidden="true">
+    <div class="ca-sec__bar">
+      <span class="ca-sec__dot"></span><span class="ca-sec__dot"></span><span class="ca-sec__dot"></span>
+      <span class="ca-sec__bar-title">Güvenlik taraması</span>
+      <span class="ca-sec__sample">Kurgusal örnek</span>
+    </div>
+
+    <div class="ca-sec__stage">
+      <!-- View 1: scan + findings -->
+      <div class="ca-sec__v1">
+        <div class="ca-sec__repo">
+          <span class="ca-sec__repoicon">Y</span>
+          <span class="ca-sec__reponame"><strong>yesilova/siparis-api</strong><small>ana dal · Python</small></span>
+          <span class="ca-sec__pill ca-sec__pill--run"><span class="ca-sec__spin"></span>Taranıyor</span>
+          <span class="ca-sec__pill ca-sec__pill--done">✓ Tamamlandı</span>
+        </div>
+
+        <div class="ca-sec__progress">
+          <div class="ca-sec__track"><span class="ca-sec__fill"></span></div>
+          <div class="ca-sec__meta">
+            <span data-role="file">api/siparis/arama.py</span>
+            <span data-role="count">0 / 214 dosya</span>
+          </div>
+        </div>
+
+        <div class="ca-sec__list">
+          <p class="ca-sec__list-title"><strong>4 bulgu</strong><span>1 Kritik · 1 Yüksek · 2 Orta</span></p>
+          <div class="ca-sec__row ca-sec__row--sel" style="--i:0">
+            <span class="ca-sec__sev ca-sec__sev--crit">Kritik</span>
+            <span class="ca-sec__rowtext"><strong>SQL enjeksiyonu: sipariş arama</strong><small>api/siparis/arama.py:41 · Enjeksiyon</small></span>
+          </div>
+          <div class="ca-sec__row" style="--i:1">
+            <span class="ca-sec__sev ca-sec__sev--high">Yüksek</span>
+            <span class="ca-sec__rowtext"><strong>JWT imzası doğrulanmadan kabul ediliyor</strong><small>auth/token.py:28 · Kimlik doğrulama</small></span>
+          </div>
+          <div class="ca-sec__row" style="--i:2">
+            <span class="ca-sec__sev ca-sec__sev--mid">Orta</span>
+            <span class="ca-sec__rowtext"><strong>Rapor indirmede yol gezinmesi</strong><small>api/rapor/indir.py:17 · Dosya erişimi</small></span>
+          </div>
+          <div class="ca-sec__row" style="--i:3">
+            <span class="ca-sec__sev ca-sec__sev--mid">Orta</span>
+            <span class="ca-sec__rowtext"><strong>Hata yanıtında iç yapı bilgisi sızıyor</strong><small>api/hata.py:9 · Bilgi sızıntısı</small></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- View 2: finding detail -->
+      <div class="ca-sec__v2">
+        <div class="ca-sec__v2-head">
+          <span class="ca-sec__sev ca-sec__sev--crit">Kritik</span>
+          <span class="ca-sec__verified">✓ Doğrulandı</span>
+          <code class="ca-sec__loc">api/siparis/arama.py:41</code>
+        </div>
+        <p class="ca-sec__v2-title">SQL enjeksiyonu: sipariş arama</p>
+        <div class="ca-sec__v2-cols">
+          <div>
+            <h4>Açıklama</h4>
+            <p><code>ad</code> parametresi doğrulanmadan SQL sorgusuna ekleniyor. İstek gönderen kişi sorguyu değiştirip sipariş ve müşteri kayıtlarını okuyabilir.</p>
+          </div>
+          <div>
+            <h4>Veri akışı</h4>
+            <ol>
+              <li>İstek: <code>GET /api/siparis/ara?ad=</code></li>
+              <li><code>ad</code>, f-string ile sorguya eklenir</li>
+              <li>Sorgu doğrudan çalıştırılır</li>
+            </ol>
+          </div>
+        </div>
+        <div class="ca-sec__v2-code"><i>41</i><code>sorgu = f"SELECT * FROM siparis WHERE ad = '&#123;ad&#125;'"</code></div>
+        <p class="ca-sec__v2-check">Claude bu bulguyu çürütmeye çalıştı ve çürütemedi.</p>
+        <div class="ca-sec__actions">
+          <span class="ca-sec__btn ca-sec__btn--ghost">Yok say</span>
+          <span class="ca-sec__btn ca-sec__btn--primary"><span class="ca-sec__btn-a">Düzeltme öner</span><span class="ca-sec__btn-b"><span class="ca-sec__spin ca-sec__spin--dark"></span>Hazırlanıyor</span></span>
+        </div>
+      </div>
+
+      <!-- View 3: suggested fix (diff) -->
+      <div class="ca-sec__v3">
+        <p class="ca-sec__ready"><span class="ca-sec__ready-check">✓</span><span data-role="ready"></span></p>
+        <div class="ca-sec__file">
+          <span>api/siparis/arama.py</span>
+          <span><b class="ca-sec__add">+3</b> <b class="ca-sec__del">-2</b></span>
+        </div>
+        <div class="ca-sec__code">
+          <div class="ca-sec__ln" style="--i:0"><i>40</i><code>def siparis_ara(ad):</code></div>
+          <div class="ca-sec__ln ca-sec__ln--del" style="--i:1"><i>41</i><code>-   sorgu = f"SELECT * FROM siparis WHERE ad = '&#123;ad&#125;'"</code></div>
+          <div class="ca-sec__ln ca-sec__ln--del" style="--i:2"><i>42</i><code>-   return db.execute(sorgu)</code></div>
+          <div class="ca-sec__ln ca-sec__ln--add" style="--i:3"><i>41</i><code>+   # Girdi sorguya eklenmez, parametre olarak geçer</code></div>
+          <div class="ca-sec__ln ca-sec__ln--add" style="--i:4"><i>42</i><code>+   sorgu = "SELECT * FROM siparis WHERE ad = %s"</code></div>
+          <div class="ca-sec__ln ca-sec__ln--add" style="--i:5"><i>43</i><code>+   return db.execute(sorgu, (ad,))</code></div>
+        </div>
+        <p class="ca-sec__note"><strong>Claude'un notu:</strong> Sorgu parametreli hale getirildi, girdi artık SQL komutu olarak yorumlanmaz. Yamayı uygulamadan önce testleri çalıştırın.</p>
+        <div class="ca-sec__foot">
+          <span class="ca-sec__foot-note">Yama siz onaylamadan uygulanmaz.</span>
+          <span class="ca-sec__btn ca-sec__btn--primary">Claude Code'da aç</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-sec {
+    --ink: var(--c-navy);
+    --muted: var(--c-text-muted);
+    --line: var(--c-border);
+    --soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+  }
+  .ca-sec__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .ca-sec__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--line); }
+  .ca-sec__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .ca-sec__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--muted); font-weight: 600; }
+  .ca-sec__sample {
+    margin-left: auto; font-size: 0.68em; font-weight: 700; color: var(--c-gold-text);
+    border: 1px solid var(--c-border-gold, rgba(201,168,76,.3)); border-radius: 999px; padding: 0.15em 0.65em;
+  }
+  .ca-sec__stage { position: relative; flex: 1; overflow: hidden; }
+  .ca-sec__v1, .ca-sec__v2, .ca-sec__v3 { position: absolute; inset: 0; padding: 1.2em 1.5em; transition: opacity .4s, transform .4s; }
+  .ca-sec__v2, .ca-sec__v3 { background: #fff; opacity: 0; transform: translateY(12px); }
+  .ca-sec p, .ca-sec h4, .ca-sec ol { margin: 0; }
+
+  /* view 1 */
+  .ca-sec__repo { display: flex; align-items: center; gap: 0.7em; }
+  .ca-sec__repoicon { width: 2.1em; height: 2.1em; border-radius: 6px; background: var(--c-navy); color: #fff; display: grid; place-items: center; font-weight: 800; flex-shrink: 0; }
+  .ca-sec__reponame strong { display: block; color: var(--ink); font-size: 0.95em; }
+  .ca-sec__reponame small { color: var(--muted); font-size: 0.78em; }
+  .ca-sec__pill {
+    margin-left: auto; display: inline-flex; align-items: center; gap: 0.45em;
+    font-size: 0.78em; font-weight: 700; padding: 0.3em 0.75em; border-radius: 999px; white-space: nowrap;
+  }
+  .ca-sec__pill--run { background: var(--soft); color: var(--ink); }
+  .ca-sec__pill--done { background: #e6f2ea; color: #1d6f42; display: none; }
+  .ca-sec__spin { width: 0.9em; height: 0.9em; border-radius: 50%; border: 2px solid rgba(201,168,76,.35); border-top-color: var(--c-gold); animation: ca-sec-spin .9s linear infinite; display: inline-block; }
+  .ca-sec__spin--dark { border-color: rgba(15,40,85,.25); border-top-color: var(--c-navy); margin-right: 0.45em; vertical-align: -0.1em; }
+  .ca-sec__progress { margin-top: 1em; }
+  .ca-sec__track { height: 6px; border-radius: 99px; background: var(--soft); overflow: hidden; }
+  .ca-sec__fill { display: block; height: 100%; width: 0; background: var(--c-gold); border-radius: 99px; }
+  .ca-sec__meta { display: flex; justify-content: space-between; gap: 1em; margin-top: 0.45em; font-size: 0.76em; color: var(--muted); }
+  .ca-sec__meta span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: ui-monospace, Consolas, monospace; }
+  .ca-sec__meta span:last-child { white-space: nowrap; font-weight: 600; }
+
+  .ca-sec__list { margin-top: 1em; }
+  .ca-sec__list-title { display: flex; justify-content: space-between; align-items: baseline; gap: 1em; margin-bottom: 0.5em !important; opacity: 0; transition: opacity .3s; }
+  .ca-sec__list-title strong { color: var(--ink); }
+  .ca-sec__list-title span { font-size: 0.78em; color: var(--muted); font-weight: 600; }
+  .ca-sec__row {
+    display: flex; align-items: center; gap: 0.8em;
+    border: 1px solid var(--line); border-radius: 9px; padding: 0.5em 0.8em; margin-bottom: 0.4em;
+    opacity: 0; transform: translateY(8px);
+    transition: opacity .3s calc(var(--i) * 150ms), transform .3s calc(var(--i) * 150ms), border-color .25s, background .25s;
+  }
+  .ca-sec__rowtext { min-width: 0; }
+  .ca-sec__rowtext strong { display: block; color: var(--ink); font-size: 0.88em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ca-sec__rowtext small { display: block; color: var(--muted); font-size: 0.72em; font-family: ui-monospace, Consolas, monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ca-sec__sev {
+    flex-shrink: 0; min-width: 4.4em; text-align: center;
+    font-size: 0.72em; font-weight: 800; padding: 0.25em 0.6em; border-radius: 6px; border: 1px solid transparent;
+  }
+  .ca-sec__sev--crit { background: #fbe9e7; color: #a8281d; border-color: #f2c7c1; }
+  .ca-sec__sev--high { background: #fef0dc; color: #9a4d06; border-color: #f6d8ab; }
+  .ca-sec__sev--mid { background: #f6efd9; color: var(--c-gold-text); border-color: #e8d9a8; }
+
+  /* view 2 */
+  .ca-sec__v2-head { display: flex; align-items: center; gap: 0.6em; }
+  .ca-sec__verified { font-size: 0.74em; font-weight: 700; color: #1d6f42; }
+  .ca-sec__loc, .ca-sec code { font-family: ui-monospace, Consolas, monospace; }
+  .ca-sec__loc { margin-left: auto; font-size: 0.74em; color: var(--muted); }
+  .ca-sec__v2-title { margin-top: 0.6em !important; font-size: 1.3em; font-weight: 800; color: var(--ink); line-height: 1.2; }
+  .ca-sec__v2-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1em; margin-top: 0.8em; }
+  .ca-sec__v2 h4 { font-size: 0.7em; letter-spacing: .1em; text-transform: uppercase; color: var(--c-gold-text); font-weight: 800; margin-bottom: 0.35em; }
+  .ca-sec__v2-cols p, .ca-sec__v2-cols li { font-size: 0.82em; line-height: 1.45; color: var(--ink); }
+  .ca-sec__v2-cols ol { padding-left: 1.2em; }
+  .ca-sec__v2-cols code { font-size: 1em; color: #a8281d; }
+  .ca-sec__v2-code { display: flex; margin-top: 0.8em; border: 1px solid #f2c7c1; background: #fdecea; border-radius: 8px; padding: 0.35em 0.2em; font-size: 0.74em; line-height: 1.6; }
+  .ca-sec__v2-code i { flex: 0 0 2.4em; text-align: right; padding-right: 0.8em; font-style: normal; color: rgba(143,32,24,.55); font-family: ui-monospace, Consolas, monospace; }
+  .ca-sec__v2-code code { color: #8f2018; white-space: pre; overflow: hidden; text-overflow: ellipsis; }
+  .ca-sec__v2-check { margin-top: 0.8em !important; font-size: 0.8em; color: var(--muted); font-style: italic; }
+  .ca-sec__actions { position: absolute; left: 1.5em; right: 1.5em; bottom: 1.1em; display: flex; justify-content: flex-end; gap: 0.6em; }
+  .ca-sec__btn { display: inline-flex; align-items: center; font-size: 0.8em; font-weight: 700; padding: 0.55em 1.1em; border-radius: 8px; border: 1px solid var(--line); white-space: nowrap; }
+  .ca-sec__btn--ghost { color: var(--ink); background: #fff; }
+  .ca-sec__btn--primary { color: #fff; background: var(--c-navy); border-color: var(--c-navy); transition: background .25s, color .25s; }
+  .ca-sec__btn-b { display: none; }
+
+  /* view 3 */
+  .ca-sec__ready { display: flex; align-items: center; gap: 0.55em; font-weight: 800; color: var(--ink); min-height: 1.5em; }
+  .ca-sec__ready-check { width: 1.4em; height: 1.4em; border-radius: 50%; background: #e6f2ea; color: #1d6f42; display: grid; place-items: center; font-size: 0.85em; flex-shrink: 0; }
+  .ca-sec__file { display: flex; justify-content: space-between; align-items: center; margin-top: 0.8em; padding: 0.5em 0.8em; background: var(--soft); border: 1px solid var(--line); border-bottom: 0; border-radius: 9px 9px 0 0; font-family: ui-monospace, Consolas, monospace; font-size: 0.76em; color: var(--ink); font-weight: 600; }
+  .ca-sec__add { color: #1d6f42; }
+  .ca-sec__del { color: #a8281d; }
+  .ca-sec__code { border: 1px solid var(--line); border-radius: 0 0 9px 9px; overflow: hidden; background: #fff; }
+  .ca-sec__ln { display: flex; font-family: ui-monospace, Consolas, monospace; font-size: 0.74em; line-height: 1.75; opacity: 0; transition: opacity .3s calc(var(--i) * 140ms); }
+  .ca-sec__ln i { flex: 0 0 2.6em; text-align: right; padding-right: 0.9em; font-style: normal; color: rgba(15,40,85,.4); user-select: none; }
+  .ca-sec__ln code { white-space: pre; color: var(--ink); overflow: hidden; text-overflow: ellipsis; }
+  .ca-sec__ln--del { background: #fdecea; }
+  .ca-sec__ln--del code { color: #8f2018; }
+  .ca-sec__ln--add { background: #e8f5ec; }
+  .ca-sec__ln--add code { color: #155c37; }
+  .ca-sec__note { margin-top: 0.9em !important; font-size: 0.8em; line-height: 1.45; color: var(--ink); background: var(--soft); border-radius: 9px; padding: 0.6em 0.9em; opacity: 0; transition: opacity .4s 1.2s; }
+  .ca-sec__foot { position: absolute; left: 1.5em; right: 1.5em; bottom: 1.1em; display: flex; justify-content: space-between; align-items: center; gap: 1em; }
+  .ca-sec__foot-note { font-size: 0.76em; color: var(--muted); font-weight: 600; }
+
+  /* step states */
+  .ca-sec[data-step="1"] .ca-sec__fill { width: 100%; transition: width 2.7s linear; }
+  .ca-sec:not([data-step="0"]):not([data-step="1"]) .ca-sec__fill { width: 100%; }
+  .ca-sec:not([data-step="0"]):not([data-step="1"]) .ca-sec__pill--run { display: none; }
+  .ca-sec:not([data-step="0"]):not([data-step="1"]) .ca-sec__pill--done { display: inline-flex; }
+  .ca-sec[data-step="2"] .ca-sec__list-title,
+  .ca-sec[data-step="3"] .ca-sec__list-title { opacity: 1; }
+  .ca-sec[data-step="2"] .ca-sec__row,
+  .ca-sec[data-step="3"] .ca-sec__row { opacity: 1; transform: none; }
+  .ca-sec[data-sel] .ca-sec__row--sel { border-color: var(--c-gold); background: rgba(201,168,76,.12); }
+  .ca-sec[data-step="3"] .ca-sec__v1,
+  .ca-sec[data-step="4"] .ca-sec__v1,
+  .ca-sec[data-step="5"] .ca-sec__v1 { opacity: 0; }
+  .ca-sec[data-step="3"] .ca-sec__v2 { opacity: 1; transform: none; }
+  .ca-sec[data-step="4"] .ca-sec__v2,
+  .ca-sec[data-step="5"] .ca-sec__v2 { opacity: 0; }
+  .ca-sec[data-press] .ca-sec__btn-a { display: none; }
+  .ca-sec[data-press] .ca-sec__btn-b { display: inline-flex; align-items: center; }
+  .ca-sec[data-press] .ca-sec__btn--primary { background: var(--c-gold); border-color: var(--c-gold); color: var(--c-navy); }
+  .ca-sec[data-step="4"] .ca-sec__v3,
+  .ca-sec[data-step="5"] .ca-sec__v3 { opacity: 1; transform: none; }
+  .ca-sec[data-step="4"] .ca-sec__ln,
+  .ca-sec[data-step="5"] .ca-sec__ln { opacity: 1; }
+  .ca-sec[data-step="4"] .ca-sec__note,
+  .ca-sec[data-step="5"] .ca-sec__note { opacity: 1; }
+  .ca-sec[data-step="5"] .ca-sec__win { opacity: 0; transition: opacity .5s; }
+
+  @keyframes ca-sec-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-sec *, .ca-sec *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const FILES = ['api/siparis/arama.py', 'auth/token.py', 'api/rapor/indir.py', 'Bulgular çürütülmeye çalışılıyor'];
+  const READY = 'Düzeltme önerisi hazır. İncelemenizi bekliyor.';
+  const TOTAL = 214;
+
+  function setup(root) {
+    const el = (r) => root.querySelector('[data-role="' + r + '"]');
+    const fileEl = el('file'), countEl = el('count'), readyEl = el('ready');
+    let timers = [];
+    let running = false;
+    const at = (ms, fn) => timers.push(window.setTimeout(fn, ms));
+    const type = (node, text, start, speed) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { node.textContent = text.slice(0, i); });
+      return start + text.length * speed;
+    };
+    const step = (n) => { root.dataset.step = String(n); };
+    const setCount = (n) => { countEl.textContent = n + ' / ' + TOTAL + ' dosya'; };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      fileEl.textContent = FILES[0]; setCount(0); readyEl.textContent = '';
+      delete root.dataset.sel; delete root.dataset.press; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(300, () => step(1));
+      // scan progress: counter + current file
+      for (let i = 1; i <= 18; i++) at(300 + i * 150, () => setCount(Math.round((TOTAL * i) / 18)));
+      FILES.forEach((f, i) => at(300 + i * 700, () => { fileEl.textContent = f; }));
+      const t2 = 3300;
+      at(t2, () => { step(2); fileEl.textContent = 'Doğrulama tamamlandı'; });
+      at(t2 + 1700, () => { root.dataset.sel = '1'; });
+      const t3 = t2 + 2400;
+      at(t3, () => step(3));
+      at(t3 + 2500, () => { root.dataset.press = '1'; });
+      const t4 = t3 + 3500;
+      at(t4, () => { step(4); delete root.dataset.press; });
+      type(readyEl, READY, t4 + 200, 24);
+      const t5 = t4 + 5200;
+      at(t5, () => step(5));
+      at(t5 + 700, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      readyEl.textContent = READY;
+      setCount(TOTAL);
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll('.ca-sec').forEach(setup);
+</script>

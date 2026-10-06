@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { allWikiSlugs } from '../data/wiki-nav';
 import { getHaberler, haberPath } from '../data/haberler';
+import { getCollection } from 'astro:content';
 
 const SITE = 'https://zamana.com.tr';
 
@@ -48,7 +49,18 @@ export const GET: APIRoute = async () => {
     })),
   ];
 
-  const routes: Route[] = [...baseRoutes, ...wikiRoutes, ...newsRoutes];
+  // Claude section: /claude/ hub + one page per content entry; lastmod = lastUpdated.
+  const claudeEntries = await getCollection('claude');
+  const claudeRoutes: Route[] = claudeEntries
+    .sort((a, b) => a.data.order - b.data.order)
+    .map((c) => ({
+      path: c.slug === 'index' ? '/claude/' : `/claude/${c.slug}/`,
+      priority: c.slug === 'index' ? '0.9' : '0.8',
+      changefreq: 'monthly',
+      lastmod: c.data.lastUpdated,
+    }));
+
+  const routes: Route[] = [...baseRoutes, ...claudeRoutes, ...wikiRoutes, ...newsRoutes];
   const urls = routes
     .map(
       (r) => `  <url>

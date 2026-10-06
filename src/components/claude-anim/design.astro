@@ -1,0 +1,312 @@
+---
+/**
+ * Turkish, code-driven hero animation for /claude/design/ (replaces Anthropic's English video).
+ * Scenario: a fictional Turkish coffee brand asks for a campaign visual; a square draft is built,
+ * the headline and accent colour are edited, a 4:5 format is added, then the export menu opens.
+ * All elements live in the markup; the script only toggles data-step and types text.
+ */
+const PROMPT = "Kırlangıç Kahve'nin sonbahar kampanyası için bir sosyal medya görseli hazırla: filtre kahvede %20 indirim, 14–20 Ekim.";
+---
+
+<div
+  class="ca-design"
+  data-step="0"
+  data-prompt={PROMPT}
+  role="img"
+  aria-label="Claude Design'dan kampanya görseli isteniyor: kare taslak oluşuyor, başlık ve renk düzenleniyor, dikey boyut ekleniyor ve dışa aktarma menüsü açılıyor."
+>
+  <div class="cdg__win" aria-hidden="true">
+    <div class="cdg__bar">
+      <span class="cdg__dot"></span><span class="cdg__dot"></span><span class="cdg__dot"></span>
+      <span class="cdg__bar-title">Sonbahar kampanyası</span>
+    </div>
+
+    <div class="cdg__stage">
+      <div class="cdg__canvas">
+        <!-- working status -->
+        <div class="cdg__status">
+          <span class="cdg__spark"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path></svg></span>
+          <div>
+            <p class="cdg__status-title">Taslak hazırlanıyor</p>
+            <p class="cdg__status-sub" data-role="sub">Düzen ve yazı tipi seçiliyor</p>
+          </div>
+        </div>
+
+        <!-- square board -->
+        <div class="cdg__board cdg__board--sq">
+          <span class="cdg__blabel">Kare · 1:1</span>
+          <div class="cdg__art">
+            <span class="cdg__brand" style="--i:1">KIRLANGIÇ KAHVE</span>
+            <svg class="cdg__cup" style="--i:4" viewBox="0 0 48 48"><circle cx="22" cy="27" r="16" fill="#f3e9d6"></circle><circle cx="22" cy="27" r="11" fill="#5b3a29"></circle><path d="M36 21h4a4 4 0 010 8h-4" fill="none" stroke="#f3e9d6" stroke-width="3"></path><path d="M16 9c-2 3 2 4 0 7M23 6c-2 3 2 4 0 7" stroke="rgba(255,255,255,.55)" stroke-width="1.6" fill="none" stroke-linecap="round"></path></svg>
+            <p class="cdg__h1" style="--i:2">Sonbaharın tadı</p>
+            <p class="cdg__h2" style="--i:3"><span class="cdg__acc" data-role="accent">%20 indirim</span></p>
+            <p class="cdg__sub" style="--i:4">Filtre kahvede, 14–20 Ekim</p>
+          </div>
+        </div>
+
+        <!-- portrait board -->
+        <div class="cdg__board cdg__board--pt">
+          <span class="cdg__blabel">Dikey · 4:5</span>
+          <div class="cdg__art">
+            <span class="cdg__brand">KIRLANGIÇ KAHVE</span>
+            <svg class="cdg__cup" viewBox="0 0 48 48"><circle cx="22" cy="27" r="16" fill="#f3e9d6"></circle><circle cx="22" cy="27" r="11" fill="#5b3a29"></circle><path d="M36 21h4a4 4 0 010 8h-4" fill="none" stroke="#f3e9d6" stroke-width="3"></path><path d="M16 9c-2 3 2 4 0 7M23 6c-2 3 2 4 0 7" stroke="rgba(255,255,255,.55)" stroke-width="1.6" fill="none" stroke-linecap="round"></path></svg>
+            <p class="cdg__h1">Sonbaharın tadı</p>
+            <p class="cdg__h2"><span class="cdg__acc" data-role="accent">%20 indirim</span></p>
+            <p class="cdg__sub">Filtre kahvede, 14–20 Ekim</p>
+          </div>
+        </div>
+
+        <!-- tweak panel -->
+        <div class="cdg__tweak">
+          <p class="cdg__tweak-title">Düzenle</p>
+          <p class="cdg__tweak-label">Vurgu rengi</p>
+          <div class="cdg__swatches">
+            <span class="cdg__sw cdg__sw--1"></span><span class="cdg__sw cdg__sw--2"></span><span class="cdg__sw cdg__sw--3"></span>
+          </div>
+          <p class="cdg__tweak-label">Başlık boyutu</p>
+          <div class="cdg__slider"><span class="cdg__knob"></span></div>
+        </div>
+
+        <!-- export -->
+        <div class="cdg__export">
+          <span class="cdg__export-btn"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M8 2v8M4.5 7L8 10.5 11.5 7M3 13h10" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Dışa aktar</span>
+          <div class="cdg__menu">
+            <p class="cdg__item cdg__item--pdf"><span>PDF</span><i class="cdg__ok">✓ İndirildi</i></p>
+            <p class="cdg__item"><span>PowerPoint</span></p>
+            <p class="cdg__item"><span>HTML</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- prompt bar -->
+      <div class="cdg__prompt">
+        <p class="cdg__ptext"><span class="cdg__type" data-role="prompt" data-ph="Ne tasarlamak istersiniz?"></span><span class="cdg__caret"></span></p>
+        <span class="cdg__send"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M8 13V3M3.8 7.2L8 3l4.2 4.2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-design {
+    --cd-ink: var(--c-navy);
+    --cd-muted: var(--c-text-muted);
+    --cd-line: var(--c-border);
+    --cd-soft: #f3f1ea;
+    --acc: #e8b04a;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+  }
+  .ca-design[data-swatch="2"] { --acc: #ff8a65; }
+  .cdg__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .cdg__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--cd-line); }
+  .cdg__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .cdg__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--cd-muted); font-weight: 600; }
+  .cdg__stage { position: relative; flex: 1; overflow: hidden; }
+
+  /* canvas */
+  .cdg__canvas {
+    position: absolute; inset: 0 0 5.6em 0; overflow: hidden;
+    background-color: #f6f4ee;
+    background-image: radial-gradient(rgba(15, 40, 85, .13) 1px, transparent 1px);
+    background-size: 14px 14px;
+    border-bottom: 1px solid var(--cd-line);
+  }
+
+  .cdg__status {
+    position: absolute; left: 50%; top: 42%; transform: translate(-50%, -50%);
+    display: flex; gap: 0.7em; align-items: flex-start;
+    background: #fff; border: 1px solid var(--cd-line); border-radius: 12px; padding: 0.9em 1.3em 0.9em 1em;
+    box-shadow: 0 10px 26px rgba(15, 40, 85, .12);
+    opacity: 0; transition: opacity .3s;
+  }
+  .cdg__spark { color: var(--c-gold); display: inline-flex; margin-top: 0.1em; animation: cdg-spin 1.6s linear infinite; }
+  .cdg__status-title { margin: 0; font-weight: 700; color: var(--cd-ink); font-size: 0.95em; }
+  .cdg__status-sub { margin: 0.15em 0 0; color: var(--cd-muted); font-size: 0.8em; }
+
+  /* boards */
+  .cdg__board { position: absolute; top: 2.9em; height: 13em; opacity: 0; transition: opacity .45s, left .55s cubic-bezier(.2,.8,.2,1), transform .45s; }
+  .cdg__board--sq { width: 13em; left: 13.1em; transform: translateY(14px) scale(.97); }
+  .cdg__board--pt { width: 10.4em; left: 17.4em; transform: translateX(18px); }
+  .cdg__blabel { position: absolute; left: 0; top: -1.65em; font-size: 0.72em; font-weight: 700; color: var(--cd-muted); white-space: nowrap; }
+  .cdg__art {
+    position: relative; width: 100%; height: 100%; overflow: hidden;
+    background: #1f3d34; color: #fff; border-radius: 6px; padding: 1em 1.1em;
+    box-shadow: 0 12px 28px rgba(15, 40, 85, .22);
+  }
+  .cdg__art::after { content: ""; position: absolute; right: -2.6em; bottom: -2.6em; width: 8em; height: 8em; border-radius: 50%; background: #29493f; }
+  .cdg__board--pt .cdg__art { padding: 0.9em 0.9em; }
+  .cdg__art > * { position: relative; z-index: 1; }
+  .cdg__brand { display: block; font-size: 0.66em; font-weight: 700; letter-spacing: .13em; color: rgba(255,255,255,.82); white-space: nowrap; }
+  .cdg__board--pt .cdg__brand { letter-spacing: .06em; font-size: 0.62em; }
+  .cdg__h1 { margin: 1.5em 0 0; font-size: 1.05em; font-weight: 800; line-height: 1.15; }
+  .cdg__h2 { margin: 0.1em 0 0; font-size: 1.35em; font-weight: 800; line-height: 1.15; color: var(--acc); transition: font-size .35s, color .3s; white-space: nowrap; }
+  .cdg__board--pt .cdg__h1 { font-size: 0.95em; }
+  .cdg__board--pt .cdg__h2 { font-size: 1.22em; }
+  .cdg__acc { border-radius: 3px; transition: background .2s; }
+  .ca-design[data-edit="sel"] .cdg__acc { background: rgba(255, 255, 255, .3); }
+  .ca-design[data-edit="sel"] .cdg__board--sq .cdg__h2,
+  .ca-design[data-edit="type"] .cdg__board--sq .cdg__h2 { outline: 1.5px solid var(--c-gold); outline-offset: 3px; }
+  .ca-design[data-size="2"] .cdg__board--sq .cdg__h2 { font-size: 1.5em; }
+  .ca-design[data-size="2"] .cdg__board--pt .cdg__h2 { font-size: 1.32em; }
+  .cdg__sub { margin: 0.55em 0 0; font-size: 0.68em; color: rgba(255,255,255,.82); line-height: 1.35; }
+  .cdg__board--pt .cdg__sub { font-size: 0.64em; }
+  .cdg__cup { position: absolute !important; right: 0.7em; bottom: 0.6em; width: 4em; height: 4em; }
+  .cdg__board--pt .cdg__cup { width: 3.4em; height: 3.4em; }
+  .cdg__board--sq .cdg__art > * { opacity: 0; transform: translateY(6px); transition: opacity .35s calc(var(--i, 0) * 140ms), transform .35s calc(var(--i, 0) * 140ms); }
+
+  /* tweak panel */
+  .cdg__tweak {
+    position: absolute; right: 1em; top: 2.9em; width: 11.4em;
+    background: #fff; border: 1px solid var(--cd-line); border-radius: 12px; padding: 0.8em 0.9em 0.9em;
+    box-shadow: 0 12px 28px rgba(15, 40, 85, .14);
+    opacity: 0; transform: translateX(16px); transition: opacity .35s, transform .35s;
+  }
+  .cdg__tweak p { margin: 0; }
+  .cdg__tweak-title { font-weight: 800; color: var(--cd-ink); font-size: 0.9em; margin-bottom: 0.6em !important; }
+  .cdg__tweak-label { font-size: 0.72em; font-weight: 600; color: var(--cd-muted); margin-top: 0.7em !important; }
+  .cdg__swatches { display: flex; gap: 0.5em; margin-top: 0.4em; }
+  .cdg__sw { width: 1.5em; height: 1.5em; border-radius: 50%; border: 2px solid transparent; box-shadow: 0 0 0 1px var(--cd-line); transition: border-color .2s, box-shadow .2s; }
+  .cdg__sw--1 { background: #e8b04a; }
+  .cdg__sw--2 { background: #ff8a65; }
+  .cdg__sw--3 { background: #f3e9d6; }
+  .ca-design:not([data-swatch]) .cdg__sw--1,
+  .ca-design[data-swatch="2"] .cdg__sw--2 { border-color: #fff; box-shadow: 0 0 0 2px var(--c-navy); }
+  .cdg__slider { position: relative; height: 4px; border-radius: 4px; background: #e2ded3; margin-top: 0.8em; }
+  .cdg__slider::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: var(--k, 40%); border-radius: 4px; background: var(--c-navy); transition: width .4s; }
+  .cdg__knob { position: absolute; top: 50%; left: var(--k, 40%); width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; background: #fff; border: 2px solid var(--c-navy); transition: left .4s; }
+  .cdg__slider { --k: 40%; }
+  .ca-design[data-size="2"] .cdg__slider { --k: 72%; }
+
+  /* export */
+  .cdg__export { position: absolute; right: 1em; top: 0.8em; width: 9.6em; display: flex; flex-direction: column; align-items: flex-end; gap: 0.4em; }
+  .cdg__export-btn {
+    display: inline-flex; align-items: center; gap: 0.4em; font-size: 0.75em; font-weight: 700; color: var(--cd-ink);
+    background: #fff; border: 1px solid rgba(15, 40, 85, .25); border-radius: 999px; padding: 0.4em 0.9em;
+    opacity: 0; transition: opacity .35s, background .25s;
+  }
+  .cdg__menu {
+    width: 100%; background: #fff; border: 1px solid var(--cd-line); border-radius: 10px; padding: 0.35em;
+    box-shadow: 0 12px 28px rgba(15, 40, 85, .16);
+    opacity: 0; transform: translateY(-6px); transition: opacity .3s, transform .3s;
+  }
+  .cdg__item { margin: 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.8em; font-weight: 600; color: var(--cd-ink); padding: 0.55em 0.6em; border-radius: 6px; transition: background .25s; white-space: nowrap; }
+  .cdg__ok { display: none; font-style: normal; font-weight: 800; color: var(--c-gold-text); font-size: 0.9em; }
+  .ca-design[data-export="pick"] .cdg__item--pdf,
+  .ca-design[data-export="done"] .cdg__item--pdf { background: rgba(201, 168, 76, .28); }
+  .ca-design[data-export="done"] .cdg__ok { display: inline; }
+
+  /* prompt bar */
+  .cdg__prompt {
+    position: absolute; left: 1em; right: 1em; bottom: 1em; min-height: 3.6em;
+    display: flex; align-items: center; gap: 0.8em;
+    background: #fff; border: 1px solid rgba(15, 40, 85, .18); border-radius: 12px; padding: 0.55em 0.6em 0.55em 0.95em;
+    box-shadow: 0 4px 14px rgba(15, 40, 85, .06);
+  }
+  .cdg__ptext { margin: 0; flex: 1; font-size: 0.82em; line-height: 1.45; color: var(--cd-ink); transition: opacity .3s; }
+  .ca-design[data-step="0"] .cdg__type:empty::before { content: attr(data-ph); color: var(--cd-muted); }
+  .cdg__caret { display: inline-block; width: 2px; height: 1em; margin-left: 2px; vertical-align: -0.15em; background: var(--cd-ink); animation: cdg-blink 1s steps(1) infinite; }
+  .cdg__send { width: 2em; height: 2em; border-radius: 50%; display: grid; place-items: center; flex-shrink: 0; background: #d9d5c8; color: #fff; transition: background .25s, color .25s; }
+
+  /* step states */
+  .ca-design:not([data-step="0"]) .cdg__send { background: var(--c-navy); }
+  .ca-design:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .cdg__ptext { opacity: .55; }
+  .ca-design:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .cdg__send { background: var(--c-gold); color: var(--c-navy); }
+  .ca-design[data-step="2"] .cdg__status { opacity: 1; }
+  .ca-design:is([data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .cdg__board--sq { opacity: 1; transform: none; }
+  .ca-design:is([data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .cdg__board--sq .cdg__art > * { opacity: 1; transform: none; }
+  .ca-design[data-step="4"] .cdg__board--sq { left: 8em; }
+  .ca-design[data-step="4"] .cdg__tweak { opacity: 1; transform: none; }
+  .ca-design:is([data-step="5"], [data-step="6"]) .cdg__board--sq { left: 3em; }
+  .ca-design:is([data-step="5"], [data-step="6"]) .cdg__board--pt { opacity: 1; transform: none; }
+  .ca-design:is([data-step="5"], [data-step="6"]) .cdg__export-btn { opacity: 1; }
+  .ca-design[data-step="6"] .cdg__menu { opacity: 1; transform: none; }
+  .ca-design[data-step="6"] .cdg__export-btn { background: var(--c-cream, #fbf9f4); }
+  .ca-design[data-step="7"] .cdg__win { opacity: 0; transition: opacity .5s; }
+  .ca-design:not([data-typing]) .cdg__caret { display: none; }
+
+  @keyframes cdg-blink { 50% { opacity: 0; } }
+  @keyframes cdg-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-design *, .ca-design *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const SUBS = [
+    'Düzen ve yazı tipi seçiliyor',
+    'Marka yeşili uygulanıyor',
+    'Metinler yerleştiriliyor',
+  ];
+  const ACC_FROM = '%20 indirim';
+  const ACC_TO = '%25 indirim';
+
+  function setup(root: HTMLElement) {
+    const prompt = root.dataset.prompt || '';
+    const el = (r: string) => root.querySelector<HTMLElement>(`[data-role="${r}"]`)!;
+    const pEl = el('prompt'), sub = el('sub');
+    const accents = Array.from(root.querySelectorAll<HTMLElement>('[data-role="accent"]'));
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const setAcc = (t: string) => accents.forEach((a) => { a.textContent = t; });
+    const type = (node: HTMLElement | null, text: string, start: number, speed: number) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { if (node) node.textContent = text.slice(0, i); else setAcc(text.slice(0, i)); });
+      return start + text.length * speed;
+    };
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      pEl.textContent = ''; setAcc(ACC_FROM); sub.textContent = SUBS[0];
+      delete root.dataset.edit; delete root.dataset.typing; delete root.dataset.swatch;
+      delete root.dataset.size; delete root.dataset.export; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(300, () => { step(1); root.dataset.typing = '1'; });
+      const typed = type(pEl, prompt, 500, 16);
+      at(typed + 300, () => { delete root.dataset.typing; step(2); });
+      at(typed + 1200, () => { sub.textContent = SUBS[1]; });
+      at(typed + 2100, () => { sub.textContent = SUBS[2]; });
+      const t3 = typed + 2700;
+      at(t3, () => step(3));
+      const t4 = t3 + 2200;
+      at(t4, () => step(4));
+      at(t4 + 700, () => { root.dataset.edit = 'sel'; });
+      at(t4 + 1400, () => { root.dataset.edit = 'type'; setAcc(''); });
+      const t4e = type(null, ACC_TO, t4 + 1450, 55);
+      at(t4e + 300, () => { root.dataset.swatch = '2'; root.dataset.size = '2'; });
+      at(t4e + 1000, () => { delete root.dataset.edit; });
+      const t5 = t4e + 1500;
+      at(t5, () => step(5));
+      const t6 = t5 + 2300;
+      at(t6, () => { step(6); root.dataset.export = 'pick'; });
+      at(t6 + 1000, () => { root.dataset.export = 'done'; });
+      at(t6 + 2200, () => step(7));
+      at(t6 + 2800, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      pEl.textContent = prompt; setAcc(ACC_TO);
+      root.dataset.swatch = '2'; root.dataset.size = '2';
+      step(5);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ca-design').forEach(setup);
+</script>

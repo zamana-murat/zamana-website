@@ -54,7 +54,7 @@ const pages = [
   },
   {
     slug: 'programlar',
-    eyebrow: 'Programlar',
+    eyebrow: 'Eğitim',
     title: 'Üç yol. Aynı sonuç.',
     subtitle: 'Yönetici AI Hazırlık · Bireysel · Kurumsal',
   },

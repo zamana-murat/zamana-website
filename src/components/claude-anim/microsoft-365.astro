@@ -1,0 +1,334 @@
+<!--
+  Turkish, code-driven hero animation for /claude/microsoft-365/ (replaces Anthropic's English video).
+  Scenario: one conversation across apps. Excel (change formula + chart) -> PowerPoint (one summary
+  slide) -> Outlook (draft e-mail, left unsent). App icons are plain letter boxes (X / P / W / O).
+  All elements live in the markup; the script only toggles data-step / data-app and types text.
+-->
+<div
+  class="ca-m365"
+  data-step="0"
+  data-app="x"
+  data-prompt="Bölgelere göre değişimi hesapla ve grafiğe dök. Sonra yönetim için tek slayt ve Kemal Bey'e e-posta taslağı hazırla."
+  role="img"
+  aria-label="Claude yan panelinde tek konuşma: Excel'de bölgelere göre değişim hesaplanıp grafiğe dökülüyor, PowerPoint'e özet slayt ekleniyor, Outlook'ta gönderilmeyen bir e-posta taslağı hazırlanıyor."
+>
+  <div class="cm__win" aria-hidden="true">
+    <div class="cm__bar">
+      <span class="cm__app cm__app--x">X</span>
+      <span class="cm__app cm__app--p">P</span>
+      <span class="cm__app cm__app--w">W</span>
+      <span class="cm__app cm__app--o">O</span>
+      <span class="cm__titles">
+        <span class="cm__title cm__title--x">Q3-satis.xlsx</span>
+        <span class="cm__title cm__title--p">Yönetim-sunumu.pptx</span>
+        <span class="cm__title cm__title--o">Yeni ileti</span>
+      </span>
+    </div>
+
+    <div class="cm__body">
+      <!-- Document area -->
+      <div class="cm__doc">
+        <!-- Excel -->
+        <div class="cm__view cm__view--x">
+          <div class="cm__fx"><span class="cm__fx-label">fx</span><span class="cm__fx-text">=(C2-B2)/B2</span></div>
+          <div class="cm__grid">
+            <div class="cm__r cm__r--col"><span>A</span><span>B</span><span>C</span><span>D</span></div>
+            <div class="cm__r cm__r--head"><span>Bölge</span><span>2. Çeyrek</span><span>3. Çeyrek</span><span>Değişim</span></div>
+            <div class="cm__r"><span>Marmara</span><span>1.840</span><span>2.120</span><span class="cm__chg" style="--i:0">+%15,2</span></div>
+            <div class="cm__r"><span>Ege</span><span>1.260</span><span>1.510</span><span class="cm__chg" style="--i:1">+%19,8</span></div>
+            <div class="cm__r"><span>İç Anadolu</span><span>980</span><span>1.010</span><span class="cm__chg" style="--i:2">+%3,1</span></div>
+            <div class="cm__r"><span>İhracat</span><span>1.520</span><span>2.340</span><span class="cm__chg cm__chg--hi" style="--i:3">+%53,9</span></div>
+          </div>
+          <p class="cm__cap">Satış, bin TL</p>
+          <div class="cm__mini">
+            <div class="cm__mcol" style="--v:28; --i:0"><span class="cm__mbar"></span><span class="cm__mlbl">Marmara</span></div>
+            <div class="cm__mcol" style="--v:37; --i:1"><span class="cm__mbar"></span><span class="cm__mlbl">Ege</span></div>
+            <div class="cm__mcol" style="--v:6; --i:2"><span class="cm__mbar"></span><span class="cm__mlbl">İç Anadolu</span></div>
+            <div class="cm__mcol" style="--v:100; --i:3"><span class="cm__mbar cm__mbar--hi"></span><span class="cm__mlbl">İhracat</span></div>
+          </div>
+        </div>
+
+        <!-- PowerPoint -->
+        <div class="cm__view cm__view--p">
+          <div class="cm__slide">
+            <p class="cm__s-eyebrow">3. çeyrek satış özeti</p>
+            <p class="cm__s-title">Satışlar %24,6 arttı, büyümeyi ihracat taşıdı</p>
+            <div class="cm__s-chart">
+              <div class="cm__scol" style="--v:28; --i:0"><span class="cm__sval">+%15,2</span><span class="cm__sbar"></span><span class="cm__slbl">Marmara</span></div>
+              <div class="cm__scol" style="--v:37; --i:1"><span class="cm__sval">+%19,8</span><span class="cm__sbar"></span><span class="cm__slbl">Ege</span></div>
+              <div class="cm__scol" style="--v:6; --i:2"><span class="cm__sval">+%3,1</span><span class="cm__sbar"></span><span class="cm__slbl">İç Anadolu</span></div>
+              <div class="cm__scol" style="--v:100; --i:3"><span class="cm__sval">+%53,9</span><span class="cm__sbar cm__sbar--hi"></span><span class="cm__slbl">İhracat</span></div>
+            </div>
+            <span class="cm__s-tag">Claude ekledi</span>
+            <p class="cm__s-foot">Yönetim sunumu · Slayt 1</p>
+          </div>
+        </div>
+
+        <!-- Outlook -->
+        <div class="cm__view cm__view--o">
+          <div class="cm__mail">
+            <div class="cm__mail-head">
+              <strong>Yeni ileti</strong>
+              <span class="cm__draft">Taslak, gönderilmedi</span>
+            </div>
+            <p class="cm__field"><span>Kime</span>Kemal Aydın</p>
+            <p class="cm__field"><span>Konu</span>3. çeyrek satış özeti</p>
+            <div class="cm__mail-body">
+              <p>Kemal Bey merhaba,</p>
+              <p>3. çeyrek satışları bir önceki çeyreğe göre %24,6 artışla 6.980 bin TL oldu. Büyümenin büyük kısmı ihracattan geldi (+%53,9).</p>
+              <p>Özet slayt ekte.</p>
+            </div>
+            <span class="cm__attach"><span class="cm__att-ico">P</span>Yönetim-sunumu.pptx</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Claude side panel -->
+      <div class="cm__panel">
+        <p class="cm__panel-head"><strong>Claude</strong><span>yan panel</span></p>
+        <div class="cm__user">
+          <p class="cm__bubble"><span class="cm__type" data-role="prompt"></span><span class="cm__caret"></span></p>
+        </div>
+
+        <ul class="cm__list">
+          <li class="cm__li cm__li--1"><span class="cm__lbox cm__lbox--x">X</span><span class="cm__ltxt">Excel: değişim formülü ve grafik</span><span class="cm__st"></span></li>
+          <li class="cm__li cm__li--2"><span class="cm__lbox cm__lbox--p">P</span><span class="cm__ltxt">PowerPoint: özet slayt</span><span class="cm__st"></span></li>
+          <li class="cm__li cm__li--3"><span class="cm__lbox cm__lbox--o">O</span><span class="cm__ltxt">Outlook: e-posta taslağı</span><span class="cm__st"></span></li>
+        </ul>
+
+        <p class="cm__final"><span class="cm__type" data-role="done"></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-m365 {
+    --cm-ink: var(--c-navy);
+    --cm-muted: var(--c-text-muted);
+    --cm-line: var(--c-border);
+    --cm-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+  }
+  .cm__win {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--c-white, #fff);
+    transition: opacity .5s;
+  }
+  .cm__bar {
+    display: flex; align-items: center; gap: 0.45em;
+    padding: 0.65em 1em;
+    background: var(--cm-soft);
+    border-bottom: 1px solid var(--cm-line);
+  }
+  .cm__app, .cm__lbox {
+    display: inline-grid; place-items: center; flex-shrink: 0;
+    width: 1.7em; height: 1.7em; border-radius: 6px;
+    color: #fff; font-weight: 800; font-size: 0.85em;
+  }
+  .cm__app { opacity: .38; transition: opacity .3s, box-shadow .3s; }
+  .cm__app--x, .cm__lbox--x { background: #1d6f42; }
+  .cm__app--p, .cm__lbox--p { background: #c4502b; }
+  .cm__app--w, .cm__lbox--w { background: #2b5797; }
+  .cm__app--o, .cm__lbox--o { background: #1a73b8; }
+  .ca-m365[data-app="x"] .cm__app--x,
+  .ca-m365[data-app="p"] .cm__app--p,
+  .ca-m365[data-app="o"] .cm__app--o { opacity: 1; box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--c-gold); }
+  .cm__titles { position: relative; margin-left: 0.7em; flex: 1; height: 1.4em; }
+  .cm__title {
+    position: absolute; left: 0; top: 0; font-size: 0.82em; font-weight: 600;
+    color: var(--cm-muted); opacity: 0; transition: opacity .3s; white-space: nowrap;
+  }
+  .ca-m365[data-app="x"] .cm__title--x,
+  .ca-m365[data-app="p"] .cm__title--p,
+  .ca-m365[data-app="o"] .cm__title--o { opacity: 1; }
+
+  .cm__body { position: relative; flex: 1; display: flex; min-height: 0; }
+
+  /* document area */
+  .cm__doc { position: relative; flex: 1 1 63%; min-width: 0; overflow: hidden; background: #fff; }
+  .cm__view { position: absolute; inset: 0; opacity: 0; transition: opacity .4s; padding: 0.9em 1em; background: #fff; }
+  .ca-m365[data-app="x"] .cm__view--x,
+  .ca-m365[data-app="p"] .cm__view--p,
+  .ca-m365[data-app="o"] .cm__view--o { opacity: 1; }
+
+  /* excel */
+  .cm__fx { display: flex; align-items: center; gap: 0.6em; font-size: 0.8em; border: 1px solid var(--cm-line); border-radius: 6px; padding: 0.35em 0.6em; margin-bottom: 0.7em; }
+  .cm__fx-label { font-weight: 800; font-style: italic; color: var(--c-gold-text); }
+  .cm__fx-text { color: var(--cm-ink); opacity: 0; transition: opacity .3s; font-variant-numeric: tabular-nums; }
+  .ca-m365[data-step="2"] .cm__fx-text,
+  .ca-m365[data-step="3"] .cm__fx-text,
+  .ca-m365[data-step="4"] .cm__fx-text,
+  .ca-m365[data-step="5"] .cm__fx-text { opacity: 1; }
+  .cm__grid { font-size: 0.82em; border: 1px solid var(--cm-line); border-radius: 6px; overflow: hidden; }
+  .cm__r { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 0.4em; padding: 0.6em 0.7em; border-bottom: 1px solid var(--cm-line); color: var(--cm-ink); }
+  .cm__r:last-child { border-bottom: 0; }
+  .cm__r span:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; }
+  .cm__r--col { background: var(--cm-soft); color: var(--cm-muted); font-size: 0.8em; padding-top: 0.25em; padding-bottom: 0.25em; }
+  .cm__r--head { background: var(--c-navy); color: #fff; font-weight: 700; }
+  .cm__chg { opacity: 0; font-weight: 700; transition: opacity .3s calc(var(--i) * 250ms + 200ms); }
+  .cm__chg--hi { color: var(--c-gold-text); }
+  .ca-m365[data-step="2"] .cm__chg,
+  .ca-m365[data-step="3"] .cm__chg,
+  .ca-m365[data-step="4"] .cm__chg,
+  .ca-m365[data-step="5"] .cm__chg { opacity: 1; }
+  .cm__cap { margin: 0.7em 0 0; font-size: 0.75em; color: var(--cm-muted); font-weight: 600; }
+  .cm__mini { display: flex; align-items: flex-end; gap: 7%; height: 8em; padding: 0.3em 6% 0; border-bottom: 1px solid var(--cm-line); }
+  .cm__mcol { flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 0.3em; }
+  .cm__mbar { width: 100%; height: 0; border-radius: 3px 3px 0 0; background: rgba(15, 40, 85, .28); transition: height .7s cubic-bezier(.2,.8,.2,1) calc(var(--i) * 90ms + 900ms); }
+  .cm__mbar--hi { background: var(--c-gold); }
+  .cm__mlbl { font-size: 0.75em; color: var(--cm-muted); white-space: nowrap; }
+  .ca-m365[data-step="2"] .cm__mbar,
+  .ca-m365[data-step="3"] .cm__mbar,
+  .ca-m365[data-step="4"] .cm__mbar,
+  .ca-m365[data-step="5"] .cm__mbar { height: calc(var(--v) * 0.85%); }
+
+  /* powerpoint */
+  .cm__view--p { background: var(--cm-soft); display: grid; place-items: center; }
+  .cm__slide {
+    position: relative; width: 100%; height: 100%; box-sizing: border-box;
+    background: var(--c-navy); color: #fff; border-radius: 8px;
+    padding: 1.1em 1.3em 0.9em; display: flex; flex-direction: column;
+    box-shadow: 0 10px 26px rgba(15, 40, 85, .22);
+  }
+  .cm__s-eyebrow { margin: 0; font-size: 0.7em; letter-spacing: .14em; text-transform: uppercase; color: var(--c-gold); font-weight: 700; }
+  .cm__s-title { margin: 0.3em 0 0; font-size: 1.3em; font-weight: 800; line-height: 1.2; max-width: 85%; }
+  .cm__s-chart { flex: 1; display: flex; align-items: flex-end; gap: 7%; padding: 0.7em 4% 0; min-height: 0; }
+  .cm__scol { flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 0.3em; }
+  .cm__sval { font-size: 0.72em; font-weight: 700; color: rgba(255,255,255,.85); opacity: 0; transition: opacity .3s calc(var(--i) * 90ms + 600ms); }
+  .cm__sbar { width: 100%; height: 0; border-radius: 4px 4px 0 0; background: rgba(255,255,255,.35); transition: height .7s cubic-bezier(.2,.8,.2,1) calc(var(--i) * 90ms); }
+  .cm__sbar--hi { background: var(--c-gold); }
+  .cm__slbl { font-size: 0.7em; color: rgba(255,255,255,.75); white-space: nowrap; }
+  .cm__s-tag { position: absolute; top: 0.9em; right: 0.9em; font-size: 0.68em; font-weight: 700; color: var(--c-navy); background: var(--c-gold); padding: 0.25em 0.6em; border-radius: 999px; }
+  .cm__s-foot { margin: 0.6em 0 0; font-size: 0.68em; color: rgba(255,255,255,.55); }
+  .ca-m365[data-step="3"] .cm__sbar, .ca-m365[data-step="4"] .cm__sbar, .ca-m365[data-step="5"] .cm__sbar { height: calc(var(--v) * 0.7%); }
+  .ca-m365[data-step="3"] .cm__sval, .ca-m365[data-step="4"] .cm__sval, .ca-m365[data-step="5"] .cm__sval { opacity: 1; }
+
+  /* outlook */
+  .cm__mail { display: flex; flex-direction: column; border: 1px solid var(--cm-line); border-radius: 8px; overflow: hidden; }
+  .cm__mail-head { display: flex; align-items: center; justify-content: space-between; background: var(--cm-soft); padding: 0.7em 0.9em; font-size: 0.9em; color: var(--cm-ink); }
+  .cm__draft { font-size: 0.82em; font-weight: 700; color: var(--c-gold-text); background: rgba(201, 168, 76, .25); padding: 0.2em 0.7em; border-radius: 999px; }
+  .cm__field { margin: 0; padding: 0.6em 0.9em; font-size: 0.9em; border-bottom: 1px solid var(--cm-line); color: var(--cm-ink); display: flex; gap: 0.9em; }
+  .cm__field span { color: var(--cm-muted); width: 2.6em; }
+  .cm__mail-body { padding: 0.8em 0.9em 0; font-size: 0.92em; line-height: 1.5; color: var(--cm-ink); }
+  .cm__mail-body p { margin: 0 0 0.6em; }
+  .cm__attach { align-self: flex-start; display: inline-flex; align-items: center; gap: 0.5em; margin: 0.3em 0.9em 0.9em; font-size: 0.82em; font-weight: 600; color: var(--cm-ink); border: 1px solid var(--cm-line); border-radius: 8px; padding: 0.3em 0.7em; }
+  .cm__att-ico { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 4px; background: #c4502b; color: #fff; font-weight: 800; font-size: 0.85em; }
+
+  /* side panel */
+  .cm__panel {
+    flex: 1 1 37%; min-width: 0; border-left: 1px solid var(--cm-line);
+    background: #fff; padding: 0.8em 0.9em; display: flex; flex-direction: column;
+    box-shadow: -6px 0 14px rgba(15, 40, 85, .05);
+  }
+  .cm__panel-head { margin: 0 0 0.7em; display: flex; align-items: baseline; gap: 0.5em; color: var(--cm-ink); }
+  .cm__panel-head strong { font-weight: 800; }
+  .cm__panel-head span { font-size: 0.8em; color: var(--cm-muted); }
+  .cm__user { opacity: 0; transform: translateY(8px); transition: opacity .35s, transform .35s; }
+  .cm__bubble {
+    margin: 0 0 0 auto; max-width: 96%;
+    background: var(--cm-soft); color: var(--cm-ink); font-size: 0.85em;
+    padding: 0.65em 0.85em; border-radius: 12px 12px 4px 12px;
+    line-height: 1.45; min-height: 1.45em;
+  }
+  .cm__caret { display: inline-block; width: 2px; height: 1em; margin-left: 2px; vertical-align: -0.15em; background: var(--cm-ink); animation: cm-blink 1s steps(1) infinite; }
+  .cm__list { list-style: none; margin: 0.9em 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.6em; opacity: 0; transition: opacity .35s; }
+  .cm__li { display: flex; align-items: center; gap: 0.6em; font-size: 0.86em; color: var(--cm-ink); }
+  .cm__li .cm__lbox { width: 1.6em; height: 1.6em; font-size: 0.78em; opacity: .45; transition: opacity .3s; }
+  .cm__ltxt { flex: 1; line-height: 1.3; color: var(--cm-muted); transition: color .3s; }
+  .cm__st { width: 1.15em; height: 1.15em; border-radius: 50%; border: 1.5px solid #d3cfc2; flex-shrink: 0; display: grid; place-items: center; font-size: 0.7em; font-weight: 800; color: transparent; transition: background .3s, border-color .3s; }
+  .ca-m365[data-step="2"] .cm__li--1 .cm__st,
+  .ca-m365[data-step="3"] .cm__li--2 .cm__st,
+  .ca-m365[data-step="4"] .cm__li--3 .cm__st { border-color: var(--c-gold) var(--c-gold) transparent transparent; animation: cm-spin 1s linear infinite; }
+  .ca-m365[data-step="2"] .cm__li--1 .cm__lbox, .ca-m365[data-step="2"] .cm__li--1 .cm__ltxt,
+  .ca-m365[data-step="3"] .cm__li--2 .cm__lbox, .ca-m365[data-step="3"] .cm__li--2 .cm__ltxt,
+  .ca-m365[data-step="4"] .cm__li--3 .cm__lbox, .ca-m365[data-step="4"] .cm__li--3 .cm__ltxt { opacity: 1; color: var(--cm-ink); font-weight: 700; }
+  .ca-m365[data-step="3"] .cm__li--1 .cm__st, .ca-m365[data-step="4"] .cm__li--1 .cm__st, .ca-m365[data-step="5"] .cm__li--1 .cm__st, .ca-m365[data-step="6"] .cm__li--1 .cm__st,
+  .ca-m365[data-step="4"] .cm__li--2 .cm__st, .ca-m365[data-step="5"] .cm__li--2 .cm__st, .ca-m365[data-step="6"] .cm__li--2 .cm__st,
+  .ca-m365[data-step="5"] .cm__li--3 .cm__st, .ca-m365[data-step="6"] .cm__li--3 .cm__st { background: var(--c-gold); border-color: var(--c-gold); color: var(--c-navy); }
+  .ca-m365[data-step="3"] .cm__li--1 .cm__st::after, .ca-m365[data-step="4"] .cm__li--1 .cm__st::after, .ca-m365[data-step="5"] .cm__li--1 .cm__st::after, .ca-m365[data-step="6"] .cm__li--1 .cm__st::after,
+  .ca-m365[data-step="4"] .cm__li--2 .cm__st::after, .ca-m365[data-step="5"] .cm__li--2 .cm__st::after, .ca-m365[data-step="6"] .cm__li--2 .cm__st::after,
+  .ca-m365[data-step="5"] .cm__li--3 .cm__st::after, .ca-m365[data-step="6"] .cm__li--3 .cm__st::after { content: '✓'; }
+  .ca-m365[data-step="3"] .cm__li--1 .cm__lbox, .ca-m365[data-step="4"] .cm__li--1 .cm__lbox, .ca-m365[data-step="5"] .cm__li--1 .cm__lbox,
+  .ca-m365[data-step="4"] .cm__li--2 .cm__lbox, .ca-m365[data-step="5"] .cm__li--2 .cm__lbox,
+  .ca-m365[data-step="5"] .cm__li--3 .cm__lbox { opacity: 1; }
+  .cm__final { margin: 0.9em 0 0; font-size: 0.88em; font-weight: 700; color: var(--cm-ink); line-height: 1.4; min-height: 2.8em; }
+
+  /* step states */
+  .ca-m365:not([data-step="0"]) .cm__user { opacity: 1; transform: none; }
+  .ca-m365:not([data-step="0"]):not([data-step="1"]) .cm__list { opacity: 1; }
+  .ca-m365[data-step="6"] .cm__win { opacity: 0; }
+  .ca-m365:not([data-typing]) .cm__caret { display: none; }
+
+  @keyframes cm-blink { 50% { opacity: 0; } }
+  @keyframes cm-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-m365 *, .ca-m365 *::before, .ca-m365 *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const DONE = 'Hazır. Göndermeden önce taslağı okuyun.';
+
+  function setup(root) {
+    const prompt = root.dataset.prompt || '';
+    const el = (r) => root.querySelector('[data-role="' + r + '"]');
+    const pEl = el('prompt'), done = el('done');
+    let timers = [];
+    let running = false;
+    const at = (ms, fn) => timers.push(window.setTimeout(fn, ms));
+    const type = (node, text, start, speed) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { node.textContent = text.slice(0, i); });
+      return start + text.length * speed;
+    };
+    const step = (n) => {
+      root.dataset.step = String(n);
+      root.dataset.app = n === 3 ? 'p' : n >= 4 && n <= 6 ? 'o' : 'x';
+    };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      pEl.textContent = ''; done.textContent = '';
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(300, () => { step(1); root.dataset.typing = '1'; });
+      const typed = type(pEl, prompt, 500, 20);
+      at(typed + 300, () => { delete root.dataset.typing; step(2); });
+      const t3 = typed + 3300;
+      at(t3, () => step(3));
+      const t4 = t3 + 2800;
+      at(t4, () => step(4));
+      const t5 = t4 + 3000;
+      at(t5, () => step(5));
+      type(done, DONE, t5 + 150, 28);
+      at(t5 + 3000, () => step(6));
+      at(t5 + 3600, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      pEl.textContent = prompt; done.textContent = DONE;
+      step(5);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll('.ca-m365').forEach(setup);
+</script>

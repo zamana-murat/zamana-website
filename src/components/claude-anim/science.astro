@@ -1,0 +1,507 @@
+---
+/**
+ * Turkish, code-driven hero animation for /claude/science/ (replaces Anthropic's English video).
+ * Scenario: a researcher (fictional lab, fictional data) asks for clustering + cell-type labelling
+ * of single-cell data and a literature comparison; Claude runs the steps, a figure appears,
+ * the researcher asks for larger labels, and the figure's provenance (code, environment) is shown.
+ * All elements live in the markup; the script only toggles data-step and types text.
+ */
+---
+
+<div
+  class="ca-sci"
+  data-step="0"
+  role="img"
+  aria-label="Claude Science'ta bir araştırmacı tek hücre verisini kümelemesini istiyor: analiz adımları çalışıyor, hücre tipi haritası çıkıyor, etiketler büyütülüyor ve şeklin hangi kodla üretildiği kayıt altında gösteriliyor. Veriler kurgusaldır."
+>
+  <div class="ca-sci__win" aria-hidden="true">
+    <div class="ca-sci__bar">
+      <span class="ca-sci__dot"></span><span class="ca-sci__dot"></span><span class="ca-sci__dot"></span>
+      <span class="ca-sci__bar-title">Hücre atlası projesi</span>
+      <span class="ca-sci__sample">Kurgusal örnek veri</span>
+    </div>
+
+    <div class="ca-sci__stage">
+      <!-- Chat column -->
+      <div class="ca-sci__chat">
+        <div class="ca-sci__user">
+          <p class="ca-sci__bubble"><span data-role="prompt"></span><span class="ca-sci__caret ca-sci__caret--p"></span></p>
+          <span class="ca-sci__file">
+            <svg viewBox="0 0 16 16" width="14" height="14"><rect x="2" y="1.5" width="12" height="13" rx="2" fill="#2a8f8a"/><circle cx="6" cy="6" r="1.2" fill="#fff"/><circle cx="10" cy="7.5" r="1.2" fill="#fff"/><circle cx="7" cy="10.5" r="1.2" fill="#fff"/></svg>
+            deney3.h5ad
+          </span>
+        </div>
+
+        <div class="ca-sci__respond">
+          <div class="ca-sci__status">
+            <span class="ca-sci__spark"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <div>
+              <p class="ca-sci__status-title">Analiz çalışıyor</p>
+              <p class="ca-sci__status-sub" data-role="sub">Veri okunuyor</p>
+            </div>
+          </div>
+          <div class="ca-sci__done">
+            <p class="ca-sci__done-text"><span data-role="done"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right panel -->
+      <div class="ca-sci__panel">
+        <!-- Layer: run log -->
+        <div class="ca-sci__log">
+          <p class="ca-sci__panel-title">Çalışma kaydı</p>
+          <div class="ca-sci__logrow"><span class="ca-sci__tick">✓</span><span><strong>Veri okundu</strong><small>4.812 hücre · 18.240 gen</small></span></div>
+          <div class="ca-sci__logrow"><span class="ca-sci__tick">✓</span><span><strong>Kalite kontrolü</strong><small>157 düşük kaliteli hücre çıkarıldı</small></span></div>
+          <div class="ca-sci__logrow"><span class="ca-sci__tick">✓</span><span><strong>Kümeleme</strong><small>7 küme bulundu</small></span></div>
+          <div class="ca-sci__logrow"><span class="ca-sci__tick">✓</span><span><strong>Literatür karşılaştırması</strong><small>6 makale tarandı</small></span></div>
+        </div>
+
+        <!-- Layer: figure -->
+        <div class="ca-sci__fig">
+          <p class="ca-sci__panel-title">Hücre tipi haritası <span>(UMAP)</span></p>
+          <svg class="ca-sci__svg" viewBox="0 0 300 230" preserveAspectRatio="xMidYMid meet">
+            <line x1="14" y1="220" x2="14" y2="202" stroke="rgba(15,40,85,.35)" stroke-width="1"/>
+            <line x1="14" y1="220" x2="32" y2="220" stroke="rgba(15,40,85,.35)" stroke-width="1"/>
+            <text x="38" y="223" class="ca-sci__axis">UMAP 1</text>
+            <text x="18" y="199" class="ca-sci__axis">UMAP 2</text>
+            <circle cx="91.8" cy="82.0" r="2.4" fill="#3b6fb6" style="--i:0"/>
+            <circle cx="92.2" cy="69.7" r="2.4" fill="#3b6fb6" style="--i:1"/>
+            <circle cx="83.5" cy="71.2" r="2.4" fill="#3b6fb6" style="--i:2"/>
+            <circle cx="108.8" cy="80.7" r="2.4" fill="#3b6fb6" style="--i:3"/>
+            <circle cx="107.8" cy="78.1" r="2.4" fill="#3b6fb6" style="--i:4"/>
+            <circle cx="99.9" cy="77.2" r="2.4" fill="#3b6fb6" style="--i:5"/>
+            <circle cx="74.4" cy="87.1" r="2.4" fill="#3b6fb6" style="--i:6"/>
+            <circle cx="101.3" cy="81.8" r="2.4" fill="#3b6fb6" style="--i:7"/>
+            <circle cx="84.0" cy="67.4" r="2.4" fill="#3b6fb6" style="--i:8"/>
+            <circle cx="98.8" cy="73.7" r="2.4" fill="#3b6fb6" style="--i:9"/>
+            <circle cx="101.5" cy="64.9" r="2.4" fill="#3b6fb6" style="--i:10"/>
+            <circle cx="98.8" cy="80.3" r="2.4" fill="#3b6fb6" style="--i:11"/>
+            <circle cx="86.8" cy="99.9" r="2.4" fill="#3b6fb6" style="--i:12"/>
+            <circle cx="101.9" cy="92.2" r="2.4" fill="#3b6fb6" style="--i:13"/>
+            <circle cx="87.3" cy="63.4" r="2.4" fill="#3b6fb6" style="--i:14"/>
+            <circle cx="90.7" cy="72.8" r="2.4" fill="#3b6fb6" style="--i:15"/>
+            <circle cx="102.8" cy="78.1" r="2.4" fill="#3b6fb6" style="--i:16"/>
+            <circle cx="89.5" cy="60.2" r="2.4" fill="#3b6fb6" style="--i:17"/>
+            <circle cx="88.6" cy="92.5" r="2.4" fill="#3b6fb6" style="--i:18"/>
+            <circle cx="85.0" cy="78.0" r="2.4" fill="#3b6fb6" style="--i:19"/>
+            <circle cx="100.3" cy="52.3" r="2.4" fill="#3b6fb6" style="--i:20"/>
+            <circle cx="95.6" cy="93.8" r="2.4" fill="#3b6fb6" style="--i:21"/>
+            <circle cx="70.1" cy="69.6" r="2.4" fill="#3b6fb6" style="--i:22"/>
+            <circle cx="93.7" cy="62.3" r="2.4" fill="#3b6fb6" style="--i:23"/>
+            <circle cx="101.2" cy="73.5" r="2.4" fill="#3b6fb6" style="--i:24"/>
+            <circle cx="76.9" cy="86.7" r="2.4" fill="#3b6fb6" style="--i:25"/>
+            <circle cx="103.3" cy="88.5" r="2.4" fill="#3b6fb6" style="--i:26"/>
+            <circle cx="112.8" cy="79.8" r="2.4" fill="#3b6fb6" style="--i:27"/>
+            <circle cx="96.5" cy="55.1" r="2.4" fill="#3b6fb6" style="--i:28"/>
+            <circle cx="102.6" cy="65.3" r="2.4" fill="#3b6fb6" style="--i:29"/>
+            <circle cx="89.4" cy="55.6" r="2.4" fill="#3b6fb6" style="--i:30"/>
+            <circle cx="83.0" cy="66.5" r="2.4" fill="#3b6fb6" style="--i:31"/>
+            <circle cx="77.0" cy="78.0" r="2.4" fill="#3b6fb6" style="--i:32"/>
+            <circle cx="112.9" cy="83.0" r="2.4" fill="#3b6fb6" style="--i:33"/>
+            <circle cx="99.4" cy="63.5" r="2.4" fill="#3b6fb6" style="--i:34"/>
+            <circle cx="81.1" cy="88.9" r="2.4" fill="#3b6fb6" style="--i:35"/>
+            <circle cx="108.6" cy="76.7" r="2.4" fill="#3b6fb6" style="--i:36"/>
+            <circle cx="98.0" cy="80.9" r="2.4" fill="#3b6fb6" style="--i:37"/>
+            <circle cx="114.7" cy="83.6" r="2.4" fill="#3b6fb6" style="--i:38"/>
+            <circle cx="101.4" cy="82.5" r="2.4" fill="#3b6fb6" style="--i:39"/>
+            <circle cx="75.6" cy="93.4" r="2.4" fill="#3b6fb6" style="--i:40"/>
+            <circle cx="106.8" cy="82.3" r="2.4" fill="#3b6fb6" style="--i:41"/>
+            <circle cx="70.6" cy="65.0" r="2.4" fill="#3b6fb6" style="--i:42"/>
+            <circle cx="105.4" cy="47.5" r="2.4" fill="#3b6fb6" style="--i:43"/>
+            <circle cx="92.7" cy="89.5" r="2.4" fill="#3b6fb6" style="--i:44"/>
+            <circle cx="78.8" cy="98.3" r="2.4" fill="#3b6fb6" style="--i:45"/>
+            <circle cx="101.8" cy="72.2" r="2.4" fill="#3b6fb6" style="--i:46"/>
+            <circle cx="99.0" cy="84.1" r="2.4" fill="#3b6fb6" style="--i:47"/>
+            <circle cx="96.5" cy="91.4" r="2.4" fill="#3b6fb6" style="--i:48"/>
+            <circle cx="86.8" cy="68.2" r="2.4" fill="#3b6fb6" style="--i:49"/>
+            <circle cx="107.9" cy="74.8" r="2.4" fill="#3b6fb6" style="--i:50"/>
+            <circle cx="84.1" cy="88.5" r="2.4" fill="#3b6fb6" style="--i:51"/>
+            <circle cx="113.1" cy="67.8" r="2.4" fill="#3b6fb6" style="--i:52"/>
+            <circle cx="77.9" cy="72.4" r="2.4" fill="#3b6fb6" style="--i:53"/>
+            <circle cx="93.2" cy="70.0" r="2.4" fill="#3b6fb6" style="--i:54"/>
+            <circle cx="112.4" cy="59.1" r="2.4" fill="#3b6fb6" style="--i:55"/>
+            <circle cx="110.6" cy="55.6" r="2.4" fill="#3b6fb6" style="--i:56"/>
+            <circle cx="85.3" cy="83.8" r="2.4" fill="#3b6fb6" style="--i:57"/>
+            <circle cx="109.0" cy="87.2" r="2.4" fill="#3b6fb6" style="--i:58"/>
+            <circle cx="99.3" cy="76.5" r="2.4" fill="#3b6fb6" style="--i:59"/>
+            <circle cx="96.9" cy="82.9" r="2.4" fill="#3b6fb6" style="--i:60"/>
+            <circle cx="92.8" cy="78.5" r="2.4" fill="#3b6fb6" style="--i:61"/>
+            <circle cx="62.1" cy="120.0" r="2.4" fill="#3b6fb6" style="--i:62"/>
+            <circle cx="63.5" cy="124.9" r="2.4" fill="#3b6fb6" style="--i:63"/>
+            <circle cx="72.4" cy="122.8" r="2.4" fill="#3b6fb6" style="--i:64"/>
+            <circle cx="54.9" cy="116.8" r="2.4" fill="#3b6fb6" style="--i:65"/>
+            <circle cx="57.9" cy="127.9" r="2.4" fill="#3b6fb6" style="--i:66"/>
+            <circle cx="55.6" cy="123.3" r="2.4" fill="#3b6fb6" style="--i:67"/>
+            <circle cx="50.0" cy="122.1" r="2.4" fill="#3b6fb6" style="--i:68"/>
+            <circle cx="60.8" cy="122.0" r="2.4" fill="#3b6fb6" style="--i:69"/>
+            <circle cx="54.9" cy="125.6" r="2.4" fill="#3b6fb6" style="--i:70"/>
+            <circle cx="60.0" cy="115.5" r="2.4" fill="#3b6fb6" style="--i:71"/>
+            <circle cx="54.0" cy="119.1" r="2.4" fill="#3b6fb6" style="--i:72"/>
+            <circle cx="56.4" cy="119.5" r="2.4" fill="#3b6fb6" style="--i:73"/>
+            <circle cx="65.2" cy="110.0" r="2.4" fill="#3b6fb6" style="--i:74"/>
+            <circle cx="57.5" cy="128.2" r="2.4" fill="#3b6fb6" style="--i:75"/>
+            <circle cx="64.1" cy="132.8" r="2.4" fill="#3b6fb6" style="--i:76"/>
+            <circle cx="45.8" cy="117.0" r="2.4" fill="#3b6fb6" style="--i:77"/>
+            <circle cx="55.6" cy="125.3" r="2.4" fill="#3b6fb6" style="--i:78"/>
+            <circle cx="65.8" cy="107.6" r="2.4" fill="#3b6fb6" style="--i:79"/>
+            <circle cx="62.9" cy="107.2" r="2.4" fill="#3b6fb6" style="--i:80"/>
+            <circle cx="59.3" cy="130.2" r="2.4" fill="#3b6fb6" style="--i:81"/>
+            <circle cx="56.9" cy="121.6" r="2.4" fill="#3b6fb6" style="--i:82"/>
+            <circle cx="63.7" cy="121.2" r="2.4" fill="#3b6fb6" style="--i:83"/>
+            <circle cx="57.4" cy="133.1" r="2.4" fill="#3b6fb6" style="--i:84"/>
+            <circle cx="65.5" cy="117.5" r="2.4" fill="#3b6fb6" style="--i:85"/>
+            <circle cx="64.5" cy="117.7" r="2.4" fill="#3b6fb6" style="--i:86"/>
+            <circle cx="58.9" cy="126.0" r="2.4" fill="#3b6fb6" style="--i:87"/>
+            <circle cx="59.6" cy="125.5" r="2.4" fill="#3b6fb6" style="--i:88"/>
+            <circle cx="47.1" cy="107.1" r="2.4" fill="#3b6fb6" style="--i:89"/>
+            <circle cx="217.9" cy="51.4" r="2.4" fill="#c9a84c" style="--i:90"/>
+            <circle cx="202.2" cy="45.6" r="2.4" fill="#c9a84c" style="--i:91"/>
+            <circle cx="224.1" cy="70.9" r="2.4" fill="#c9a84c" style="--i:92"/>
+            <circle cx="226.0" cy="51.7" r="2.4" fill="#c9a84c" style="--i:93"/>
+            <circle cx="212.0" cy="49.4" r="2.4" fill="#c9a84c" style="--i:94"/>
+            <circle cx="219.3" cy="80.6" r="2.4" fill="#c9a84c" style="--i:95"/>
+            <circle cx="203.5" cy="80.2" r="2.4" fill="#c9a84c" style="--i:96"/>
+            <circle cx="221.4" cy="60.4" r="2.4" fill="#c9a84c" style="--i:97"/>
+            <circle cx="211.1" cy="55.5" r="2.4" fill="#c9a84c" style="--i:98"/>
+            <circle cx="215.8" cy="67.1" r="2.4" fill="#c9a84c" style="--i:99"/>
+            <circle cx="226.3" cy="50.7" r="2.4" fill="#c9a84c" style="--i:100"/>
+            <circle cx="222.8" cy="79.4" r="2.4" fill="#c9a84c" style="--i:101"/>
+            <circle cx="225.8" cy="60.3" r="2.4" fill="#c9a84c" style="--i:102"/>
+            <circle cx="204.9" cy="74.0" r="2.4" fill="#c9a84c" style="--i:103"/>
+            <circle cx="213.1" cy="63.8" r="2.4" fill="#c9a84c" style="--i:104"/>
+            <circle cx="225.6" cy="59.4" r="2.4" fill="#c9a84c" style="--i:105"/>
+            <circle cx="194.3" cy="71.8" r="2.4" fill="#c9a84c" style="--i:106"/>
+            <circle cx="215.0" cy="55.4" r="2.4" fill="#c9a84c" style="--i:107"/>
+            <circle cx="211.9" cy="71.9" r="2.4" fill="#c9a84c" style="--i:108"/>
+            <circle cx="212.8" cy="77.6" r="2.4" fill="#c9a84c" style="--i:109"/>
+            <circle cx="211.4" cy="74.3" r="2.4" fill="#c9a84c" style="--i:110"/>
+            <circle cx="226.2" cy="80.8" r="2.4" fill="#c9a84c" style="--i:111"/>
+            <circle cx="205.6" cy="72.5" r="2.4" fill="#c9a84c" style="--i:112"/>
+            <circle cx="194.1" cy="50.0" r="2.4" fill="#c9a84c" style="--i:113"/>
+            <circle cx="200.3" cy="62.3" r="2.4" fill="#c9a84c" style="--i:114"/>
+            <circle cx="210.2" cy="62.1" r="2.4" fill="#c9a84c" style="--i:115"/>
+            <circle cx="206.4" cy="65.1" r="2.4" fill="#c9a84c" style="--i:116"/>
+            <circle cx="229.1" cy="62.9" r="2.4" fill="#c9a84c" style="--i:117"/>
+            <circle cx="217.1" cy="73.8" r="2.4" fill="#c9a84c" style="--i:118"/>
+            <circle cx="210.1" cy="48.0" r="2.4" fill="#c9a84c" style="--i:119"/>
+            <circle cx="206.7" cy="74.7" r="2.4" fill="#c9a84c" style="--i:120"/>
+            <circle cx="196.3" cy="55.6" r="2.4" fill="#c9a84c" style="--i:121"/>
+            <circle cx="221.6" cy="71.5" r="2.4" fill="#c9a84c" style="--i:122"/>
+            <circle cx="212.1" cy="71.6" r="2.4" fill="#c9a84c" style="--i:123"/>
+            <circle cx="213.6" cy="48.9" r="2.4" fill="#c9a84c" style="--i:124"/>
+            <circle cx="197.1" cy="55.1" r="2.4" fill="#c9a84c" style="--i:125"/>
+            <circle cx="220.8" cy="55.9" r="2.4" fill="#c9a84c" style="--i:126"/>
+            <circle cx="203.4" cy="53.6" r="2.4" fill="#c9a84c" style="--i:127"/>
+            <circle cx="197.4" cy="61.1" r="2.4" fill="#c9a84c" style="--i:128"/>
+            <circle cx="200.8" cy="66.6" r="2.4" fill="#c9a84c" style="--i:129"/>
+            <circle cx="221.0" cy="118.5" r="2.4" fill="#2a8f8a" style="--i:130"/>
+            <circle cx="235.9" cy="140.4" r="2.4" fill="#2a8f8a" style="--i:131"/>
+            <circle cx="231.2" cy="138.0" r="2.4" fill="#2a8f8a" style="--i:132"/>
+            <circle cx="236.5" cy="153.8" r="2.4" fill="#2a8f8a" style="--i:133"/>
+            <circle cx="235.3" cy="148.3" r="2.4" fill="#2a8f8a" style="--i:134"/>
+            <circle cx="242.6" cy="152.7" r="2.4" fill="#2a8f8a" style="--i:135"/>
+            <circle cx="232.9" cy="116.6" r="2.4" fill="#2a8f8a" style="--i:136"/>
+            <circle cx="237.8" cy="161.2" r="2.4" fill="#2a8f8a" style="--i:137"/>
+            <circle cx="224.7" cy="137.8" r="2.4" fill="#2a8f8a" style="--i:138"/>
+            <circle cx="217.8" cy="153.1" r="2.4" fill="#2a8f8a" style="--i:139"/>
+            <circle cx="248.7" cy="142.4" r="2.4" fill="#2a8f8a" style="--i:140"/>
+            <circle cx="234.1" cy="155.9" r="2.4" fill="#2a8f8a" style="--i:141"/>
+            <circle cx="218.1" cy="142.8" r="2.4" fill="#2a8f8a" style="--i:142"/>
+            <circle cx="231.2" cy="154.8" r="2.4" fill="#2a8f8a" style="--i:143"/>
+            <circle cx="227.6" cy="141.4" r="2.4" fill="#2a8f8a" style="--i:144"/>
+            <circle cx="216.9" cy="139.3" r="2.4" fill="#2a8f8a" style="--i:145"/>
+            <circle cx="237.8" cy="145.3" r="2.4" fill="#2a8f8a" style="--i:146"/>
+            <circle cx="218.7" cy="132.9" r="2.4" fill="#2a8f8a" style="--i:147"/>
+            <circle cx="234.8" cy="150.3" r="2.4" fill="#2a8f8a" style="--i:148"/>
+            <circle cx="246.4" cy="149.6" r="2.4" fill="#2a8f8a" style="--i:149"/>
+            <circle cx="227.3" cy="150.9" r="2.4" fill="#2a8f8a" style="--i:150"/>
+            <circle cx="206.7" cy="157.6" r="2.4" fill="#2a8f8a" style="--i:151"/>
+            <circle cx="231.6" cy="134.8" r="2.4" fill="#2a8f8a" style="--i:152"/>
+            <circle cx="212.6" cy="135.2" r="2.4" fill="#2a8f8a" style="--i:153"/>
+            <circle cx="231.2" cy="146.4" r="2.4" fill="#2a8f8a" style="--i:154"/>
+            <circle cx="223.6" cy="131.2" r="2.4" fill="#2a8f8a" style="--i:155"/>
+            <circle cx="214.9" cy="126.3" r="2.4" fill="#2a8f8a" style="--i:156"/>
+            <circle cx="246.7" cy="157.0" r="2.4" fill="#2a8f8a" style="--i:157"/>
+            <circle cx="247.9" cy="154.6" r="2.4" fill="#2a8f8a" style="--i:158"/>
+            <circle cx="218.4" cy="147.4" r="2.4" fill="#2a8f8a" style="--i:159"/>
+            <circle cx="227.4" cy="150.9" r="2.4" fill="#2a8f8a" style="--i:160"/>
+            <circle cx="220.0" cy="142.4" r="2.4" fill="#2a8f8a" style="--i:161"/>
+            <circle cx="233.0" cy="149.0" r="2.4" fill="#2a8f8a" style="--i:162"/>
+            <circle cx="235.0" cy="146.7" r="2.4" fill="#2a8f8a" style="--i:163"/>
+            <circle cx="224.5" cy="154.4" r="2.4" fill="#2a8f8a" style="--i:164"/>
+            <circle cx="228.5" cy="133.1" r="2.4" fill="#2a8f8a" style="--i:165"/>
+            <circle cx="221.1" cy="144.0" r="2.4" fill="#2a8f8a" style="--i:166"/>
+            <circle cx="226.8" cy="146.1" r="2.4" fill="#2a8f8a" style="--i:167"/>
+            <circle cx="228.0" cy="146.3" r="2.4" fill="#2a8f8a" style="--i:168"/>
+            <circle cx="226.5" cy="127.5" r="2.4" fill="#2a8f8a" style="--i:169"/>
+            <circle cx="232.6" cy="157.8" r="2.4" fill="#2a8f8a" style="--i:170"/>
+            <circle cx="232.8" cy="141.5" r="2.4" fill="#2a8f8a" style="--i:171"/>
+            <circle cx="232.9" cy="131.3" r="2.4" fill="#2a8f8a" style="--i:172"/>
+            <circle cx="207.2" cy="144.8" r="2.4" fill="#2a8f8a" style="--i:173"/>
+            <circle cx="217.8" cy="153.7" r="2.4" fill="#2a8f8a" style="--i:174"/>
+            <circle cx="216.6" cy="164.7" r="2.4" fill="#2a8f8a" style="--i:175"/>
+            <circle cx="223.8" cy="126.0" r="2.4" fill="#2a8f8a" style="--i:176"/>
+            <circle cx="219.6" cy="150.8" r="2.4" fill="#2a8f8a" style="--i:177"/>
+            <circle cx="116.0" cy="167.3" r="2.4" fill="#c4502b" style="--i:178"/>
+            <circle cx="124.0" cy="172.5" r="2.4" fill="#c4502b" style="--i:179"/>
+            <circle cx="111.8" cy="171.4" r="2.4" fill="#c4502b" style="--i:180"/>
+            <circle cx="125.4" cy="175.0" r="2.4" fill="#c4502b" style="--i:181"/>
+            <circle cx="120.3" cy="155.1" r="2.4" fill="#c4502b" style="--i:182"/>
+            <circle cx="110.8" cy="172.7" r="2.4" fill="#c4502b" style="--i:183"/>
+            <circle cx="109.6" cy="176.0" r="2.4" fill="#c4502b" style="--i:184"/>
+            <circle cx="116.8" cy="174.4" r="2.4" fill="#c4502b" style="--i:185"/>
+            <circle cx="122.0" cy="163.5" r="2.4" fill="#c4502b" style="--i:186"/>
+            <circle cx="109.2" cy="174.1" r="2.4" fill="#c4502b" style="--i:187"/>
+            <circle cx="119.9" cy="165.7" r="2.4" fill="#c4502b" style="--i:188"/>
+            <circle cx="102.6" cy="167.4" r="2.4" fill="#c4502b" style="--i:189"/>
+            <circle cx="114.9" cy="176.6" r="2.4" fill="#c4502b" style="--i:190"/>
+            <circle cx="118.3" cy="165.8" r="2.4" fill="#c4502b" style="--i:191"/>
+            <circle cx="118.9" cy="170.8" r="2.4" fill="#c4502b" style="--i:192"/>
+            <circle cx="113.7" cy="166.1" r="2.4" fill="#c4502b" style="--i:193"/>
+            <circle cx="110.0" cy="172.3" r="2.4" fill="#c4502b" style="--i:194"/>
+            <circle cx="103.5" cy="159.5" r="2.4" fill="#c4502b" style="--i:195"/>
+            <circle cx="112.0" cy="151.4" r="2.4" fill="#c4502b" style="--i:196"/>
+            <circle cx="108.5" cy="146.1" r="2.4" fill="#c4502b" style="--i:197"/>
+            <circle cx="106.5" cy="171.1" r="2.4" fill="#c4502b" style="--i:198"/>
+            <circle cx="116.6" cy="165.1" r="2.4" fill="#c4502b" style="--i:199"/>
+            <circle cx="110.1" cy="151.8" r="2.4" fill="#c4502b" style="--i:200"/>
+            <circle cx="126.8" cy="170.6" r="2.4" fill="#c4502b" style="--i:201"/>
+            <circle cx="120.9" cy="157.0" r="2.4" fill="#c4502b" style="--i:202"/>
+            <circle cx="110.5" cy="147.9" r="2.4" fill="#c4502b" style="--i:203"/>
+            <circle cx="118.3" cy="174.7" r="2.4" fill="#c4502b" style="--i:204"/>
+            <circle cx="96.6" cy="165.1" r="2.4" fill="#c4502b" style="--i:205"/>
+            <circle cx="117.1" cy="148.5" r="2.4" fill="#c4502b" style="--i:206"/>
+            <circle cx="97.2" cy="155.3" r="2.4" fill="#c4502b" style="--i:207"/>
+            <circle cx="106.9" cy="152.0" r="2.4" fill="#c4502b" style="--i:208"/>
+            <circle cx="112.3" cy="168.0" r="2.4" fill="#c4502b" style="--i:209"/>
+            <circle cx="117.1" cy="172.4" r="2.4" fill="#c4502b" style="--i:210"/>
+            <circle cx="124.2" cy="176.9" r="2.4" fill="#c4502b" style="--i:211"/>
+            <circle cx="159.4" cy="67.0" r="2.4" fill="#7b5ea7" style="--i:212"/>
+            <circle cx="160.5" cy="64.1" r="2.4" fill="#7b5ea7" style="--i:213"/>
+            <circle cx="164.7" cy="69.6" r="2.4" fill="#7b5ea7" style="--i:214"/>
+            <circle cx="167.1" cy="61.4" r="2.4" fill="#7b5ea7" style="--i:215"/>
+            <circle cx="159.7" cy="69.5" r="2.4" fill="#7b5ea7" style="--i:216"/>
+            <circle cx="164.1" cy="68.0" r="2.4" fill="#7b5ea7" style="--i:217"/>
+            <circle cx="164.7" cy="65.7" r="2.4" fill="#7b5ea7" style="--i:218"/>
+            <circle cx="168.0" cy="71.4" r="2.4" fill="#7b5ea7" style="--i:219"/>
+            <circle cx="164.6" cy="66.1" r="2.4" fill="#7b5ea7" style="--i:220"/>
+            <circle cx="160.8" cy="69.8" r="2.4" fill="#7b5ea7" style="--i:221"/>
+            <circle cx="158.6" cy="70.6" r="2.4" fill="#7b5ea7" style="--i:222"/>
+            <circle cx="165.6" cy="62.5" r="2.4" fill="#7b5ea7" style="--i:223"/>
+            <circle cx="163.9" cy="68.0" r="2.4" fill="#7b5ea7" style="--i:224"/>
+            <circle cx="167.0" cy="72.7" r="2.4" fill="#7b5ea7" style="--i:225"/>
+            <circle cx="164.8" cy="65.2" r="2.4" fill="#7b5ea7" style="--i:226"/>
+            <circle cx="164.4" cy="69.3" r="2.4" fill="#7b5ea7" style="--i:227"/>
+            <circle cx="168.1" cy="71.1" r="2.4" fill="#7b5ea7" style="--i:228"/>
+            <circle cx="161.9" cy="62.6" r="2.4" fill="#7b5ea7" style="--i:229"/>
+            <text class="ca-sci__lab" x="95" y="34">T hücresi</text>
+            <text class="ca-sci__lab" x="212" y="30">B hücresi</text>
+            <text class="ca-sci__lab" x="228" y="192">Monosit</text>
+            <text class="ca-sci__lab" x="112" y="208">NK hücresi</text>
+            <text class="ca-sci__lab" x="165" y="92">Dendritik</text>
+          </svg>
+          <div class="ca-sci__note">
+            <span class="ca-sci__note-n">1</span>
+            <span class="ca-sci__note-text"><span data-role="note"></span><span class="ca-sci__caret ca-sci__caret--note"></span></span>
+          </div>
+        </div>
+
+        <!-- Layer: provenance -->
+        <div class="ca-sci__prov">
+          <p class="ca-sci__prov-title">Bu şeklin kökeni <span>kayıtlı</span></p>
+          <div class="ca-sci__prov-row"><b>Kod</b><span>kumeleme.py, satır 54–88</span></div>
+          <div class="ca-sci__prov-row"><b>Ortam</b><span>Python 3.12 · scanpy</span></div>
+          <div class="ca-sci__prov-row"><b>Veri</b><span>deney3.h5ad</span></div>
+          <div class="ca-sci__prov-row ca-sci__prov-row--ok"><b>Gözden geçirme</b><span>✓ Şekil, kodla uyumlu</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-sci {
+    --ink: var(--c-navy);
+    --muted: var(--c-text-muted);
+    --line: var(--c-border);
+    --soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+  }
+  .ca-sci__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); }
+  .ca-sci__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--line); }
+  .ca-sci__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .ca-sci__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--muted); font-weight: 600; }
+  .ca-sci__sample {
+    margin-left: auto; font-size: 0.68em; font-weight: 700; color: var(--c-gold-text);
+    border: 1px solid var(--c-border-gold, rgba(201,168,76,.3)); border-radius: 999px; padding: 0.15em 0.65em;
+  }
+  .ca-sci__stage { position: relative; flex: 1; overflow: hidden; display: grid; grid-template-columns: 41% 1fr; }
+  .ca-sci p { margin: 0; }
+
+  /* chat */
+  .ca-sci__chat { padding: 1.2em 1em 1.2em 1.3em; min-width: 0; }
+  .ca-sci__user { display: flex; flex-direction: column; align-items: flex-end; gap: 0.45em; opacity: 0; transform: translateY(8px); transition: opacity .35s, transform .35s; }
+  .ca-sci__bubble {
+    max-width: 100%; background: var(--soft); color: var(--ink);
+    padding: 0.7em 0.9em; border-radius: 14px 14px 4px 14px; font-size: 0.86em;
+    line-height: 1.45; min-height: 1.45em;
+  }
+  .ca-sci__caret { display: inline-block; width: 2px; height: 1em; margin-left: 2px; vertical-align: -0.15em; background: var(--ink); animation: ca-sci-blink 1s steps(1) infinite; }
+  .ca-sci__file {
+    display: inline-flex; align-items: center; gap: 0.4em;
+    font-size: 0.74em; font-weight: 600; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 8px; padding: 0.3em 0.6em; background: #fff;
+  }
+  .ca-sci__respond { display: grid; margin-top: 1.1em; }
+  .ca-sci__status, .ca-sci__done { grid-area: 1 / 1; opacity: 0; transition: opacity .3s; }
+  .ca-sci__status { display: flex; gap: 0.7em; align-items: flex-start; }
+  .ca-sci__spark { color: var(--c-gold); display: inline-flex; margin-top: 0.1em; animation: ca-sci-spin 1.6s linear infinite; }
+  .ca-sci__status-title { font-weight: 700; color: var(--ink); font-size: 0.92em; }
+  .ca-sci__status-sub { margin-top: 0.15em !important; color: var(--muted); font-size: 0.8em; }
+  .ca-sci__done-text { font-weight: 700; color: var(--ink); font-size: 0.88em; line-height: 1.45; min-height: 1.4em; }
+
+  /* right panel */
+  .ca-sci__panel { position: relative; opacity: 0; transition: opacity .35s; margin: 0.9em 1.1em 0.9em 0; border: 1px solid var(--line); border-radius: 10px; background: #fff; overflow: hidden; min-width: 0; }
+  .ca-sci__panel-title { font-size: 0.74em; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--c-gold-text); }
+  .ca-sci__panel-title span { letter-spacing: 0; text-transform: none; font-weight: 600; color: var(--muted); }
+  .ca-sci__log, .ca-sci__fig, .ca-sci__prov { position: absolute; inset: 0; padding: 0.9em 1em; }
+  .ca-sci__log { opacity: 0; transition: opacity .35s; }
+  .ca-sci__logrow { display: flex; align-items: flex-start; gap: 0.7em; margin-top: 0.85em; opacity: 0; transform: translateY(6px); transition: opacity .3s, transform .3s; }
+  .ca-sci__logrow strong { display: block; font-size: 0.86em; color: var(--ink); }
+  .ca-sci__logrow small { display: block; font-size: 0.74em; color: var(--muted); margin-top: 0.1em; }
+  .ca-sci__tick { flex-shrink: 0; width: 1.5em; height: 1.5em; border-radius: 50%; background: #e6f2ea; color: #1d6f42; display: grid; place-items: center; font-size: 0.78em; font-weight: 800; }
+  .ca-sci__logrow--on { opacity: 1; transform: none; }
+
+  .ca-sci__fig { opacity: 0; transition: opacity .4s; }
+  .ca-sci__svg { display: block; width: 100%; height: auto; margin: 0.3em auto 0; transition: width .5s; }
+  .ca-sci__axis { font-size: 7px; fill: rgba(15,40,85,.5); font-weight: 600; }
+  .ca-sci__svg circle { opacity: 0; transition: opacity .35s calc(var(--i) * 4ms); }
+  .ca-sci__lab {
+    font-size: 9px; font-weight: 600; fill: var(--muted); text-anchor: middle;
+    paint-order: stroke; stroke: #fff; stroke-width: 0; stroke-linejoin: round;
+    transition: font-size .4s, fill .3s, stroke-width .3s; opacity: 0;
+  }
+  .ca-sci__note {
+    position: absolute; left: 1em; right: 1em; bottom: 0.9em;
+    display: flex; align-items: flex-start; gap: 0.6em;
+    background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 0.55em 0.75em;
+    box-shadow: 0 6px 18px rgba(15,40,85,.14);
+    opacity: 0; transform: translateY(8px); transition: opacity .3s, transform .3s;
+  }
+  .ca-sci__note-n { flex-shrink: 0; width: 1.5em; height: 1.5em; border-radius: 50%; background: var(--c-navy); color: #fff; display: grid; place-items: center; font-size: 0.74em; font-weight: 800; }
+  .ca-sci__note-text { font-size: 0.8em; color: var(--ink); line-height: 1.4; min-height: 1.4em; }
+  .ca-sci__caret--note { height: 0.95em; }
+
+  .ca-sci__prov {
+    top: auto; padding: 0.8em 1em 0.9em; background: #fff; border-top: 1px solid var(--line);
+    box-shadow: 0 -8px 20px rgba(15,40,85,.1);
+    opacity: 0; transform: translateY(16px); transition: opacity .4s, transform .4s;
+  }
+  .ca-sci__prov-title { font-size: 0.86em; font-weight: 800; color: var(--ink); margin-bottom: 0.4em !important; }
+  .ca-sci__prov-title span { font-size: 0.8em; font-weight: 700; color: #1d6f42; background: #e6f2ea; border-radius: 999px; padding: 0.1em 0.6em; margin-left: 0.4em; }
+  .ca-sci__prov-row { display: flex; gap: 0.8em; padding: 0.28em 0; border-top: 1px solid var(--line); font-size: 0.74em; color: var(--ink); }
+  .ca-sci__prov-row b { flex: 0 0 8.6em; white-space: nowrap; color: var(--muted); font-weight: 700; }
+  .ca-sci__prov-row span { font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ca-sci__prov-row--ok span { color: #1d6f42; }
+
+  /* step states */
+  .ca-sci:not([data-step="0"]) .ca-sci__user { opacity: 1; transform: none; }
+  .ca-sci:not([data-step="0"]):not([data-step="1"]) .ca-sci__panel { opacity: 1; }
+  .ca-sci[data-step="2"] .ca-sci__status { opacity: 1; }
+  .ca-sci[data-step="2"] .ca-sci__log { opacity: 1; }
+  .ca-sci:not([data-step="0"]):not([data-step="1"]):not([data-step="2"]) .ca-sci__done { opacity: 1; }
+  .ca-sci:not([data-step="0"]):not([data-step="1"]):not([data-step="2"]) .ca-sci__fig { opacity: 1; }
+  .ca-sci:not([data-step="0"]):not([data-step="1"]):not([data-step="2"]) .ca-sci__svg circle { opacity: 0.88; }
+  .ca-sci:not([data-step="0"]):not([data-step="1"]):not([data-step="2"]) .ca-sci__lab { opacity: 1; }
+  .ca-sci[data-edit="note"] .ca-sci__note { opacity: 1; transform: none; }
+  .ca-sci[data-edit="sent"] .ca-sci__lab { font-size: 13px; font-weight: 800; fill: var(--c-navy); stroke-width: 3px; }
+  .ca-sci[data-step="5"] .ca-sci__svg,
+  .ca-sci[data-step="6"] .ca-sci__svg { width: 66%; }
+  .ca-sci[data-step="5"] .ca-sci__prov,
+  .ca-sci[data-step="6"] .ca-sci__prov { opacity: 1; transform: none; }
+  .ca-sci[data-step="6"] .ca-sci__win { opacity: 0; transition: opacity .5s; }
+  .ca-sci__caret--p, .ca-sci__caret--note { display: none; }
+  .ca-sci[data-typing="prompt"] .ca-sci__caret--p { display: inline-block; }
+  .ca-sci[data-typing="note"] .ca-sci__caret--note { display: inline-block; }
+
+  @keyframes ca-sci-blink { 50% { opacity: 0; } }
+  @keyframes ca-sci-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-sci *, .ca-sci *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const PROMPT = 'Laboratuvarın tek hücre verisini kümele, hücre tiplerini işaretle ve literatürle karşılaştır.';
+  const SUBS = ['Veri okunuyor', 'Hücreler kümeleniyor', 'Literatür taranıyor'];
+  const DONE = 'Analiz bitti: 7 küme, 5 hücre tipi. Ön bulgu: 3. küme NK hücrelerine benziyor.';
+  const NOTE = 'Etiketler küçük, büyütür müsünüz?';
+
+  function setup(root) {
+    const el = (r) => root.querySelector('[data-role="' + r + '"]');
+    const pEl = el('prompt'), sub = el('sub'), done = el('done'), note = el('note');
+    const rows = root.querySelectorAll('.ca-sci__logrow');
+    let timers = [];
+    let running = false;
+    const at = (ms, fn) => timers.push(window.setTimeout(fn, ms));
+    const type = (node, text, start, speed) => {
+      for (let i = 0; i <= text.length; i++) at(start + i * speed, () => { node.textContent = text.slice(0, i); });
+      return start + text.length * speed;
+    };
+    const step = (n) => { root.dataset.step = String(n); };
+    const rowsOn = (n) => rows.forEach((r, i) => r.classList.toggle('ca-sci__logrow--on', i < n));
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      pEl.textContent = ''; done.textContent = ''; note.textContent = ''; sub.textContent = SUBS[0];
+      rowsOn(0);
+      delete root.dataset.edit; delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(300, () => { step(1); root.dataset.typing = 'prompt'; });
+      const typed = type(pEl, PROMPT, 500, 18);
+      at(typed + 300, () => { delete root.dataset.typing; step(2); });
+      at(typed + 700, () => rowsOn(1));
+      at(typed + 1400, () => { rowsOn(2); sub.textContent = SUBS[1]; });
+      at(typed + 2100, () => rowsOn(3));
+      at(typed + 2800, () => { rowsOn(4); sub.textContent = SUBS[2]; });
+      const t3 = typed + 3600;
+      at(t3, () => step(3));
+      const doneEnd = type(done, DONE, t3 + 700, 20);
+      const t4 = Math.max(doneEnd + 500, t3 + 2600);
+      at(t4, () => { step(4); root.dataset.edit = 'note'; root.dataset.typing = 'note'; });
+      const noteEnd = type(note, NOTE, t4 + 400, 32);
+      at(noteEnd + 600, () => { delete root.dataset.typing; root.dataset.edit = 'sent'; });
+      const t5 = noteEnd + 1700;
+      at(t5, () => step(5));
+      at(t5 + 2800, () => step(6));
+      at(t5 + 3400, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      pEl.textContent = PROMPT; done.textContent = DONE;
+      rowsOn(4);
+      root.dataset.edit = 'sent';
+      step(5);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll('.ca-sci').forEach(setup);
+</script>
