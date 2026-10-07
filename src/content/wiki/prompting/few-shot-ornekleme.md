@@ -1,11 +1,12 @@
 ---
 title: "Few-Shot Örnekleme: Örnekle Öğretme"
-description: "Claude'a soyut talimat yerine örnek vererek daha tutarlı çıktı alma. Sıfır, tek, az ve çok örnekleme, pratik fark ve teknikler."
+seoTitle: "Few-Shot Prompting Nedir? Örnekle Claude'a Öğretmek"
+description: "Few-shot prompting nedir? Claude'a soyut talimat yerine örnek vererek tutarlı çıktı alma: sıfır, tek, az ve çok örnekleme, örnek seçimi ve Türkçe örnekler."
 tags:
   - prompting
   - few-shot
   - ornek
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Bir kavramı öğretmenin en güçlü yolu örnek göstermektir.** Claude için de öyle. Soyut bir kuralı tarif etmek yerine "şuna benzer üret" demek, sonucu daha tutarlı yapar ve sürprizleri azaltır.
@@ -20,7 +21,7 @@ Prompt mühendisliğinde örnek sayısı önemlidir:
 |---|---|---|
 | **Zero-shot** | 0 | Sadece talimat ver, örnek verme |
 | **One-shot** | 1 | Bir örnek göster |
-| **Few-shot** | 2-5 | Birkaç örnek göster |
+| **Few-shot** | 3-5 | Birkaç örnek göster (Anthropic rehberinin önerdiği aralık) |
 | **Many-shot** | 6+ | Çok örnek göster (genelde 10-20) |
 
 Kural: **görev karmaşıklaştıkça örnek sayısı artar.** Basit bir özetleme zero-shot çalışır; karmaşık bir tarz/format görevi few-shot gerektirir.
@@ -72,7 +73,7 @@ Soyut talimat yetersiz kaldığı durumlar:
 
 → Claude artık sizin sınıflandırma mantığınızı öğrendi. "Paket sorunu var ama ürün tamam" → olumsuz olarak sınıflar.
 
-### Örnek 2: Marka Voice'a Uygun Yazı
+### Örnek 2: Marka Sesine Uygun Yazı
 
 **Zero-shot:**
 
@@ -92,7 +93,7 @@ Soyut talimat yetersiz kaldığı durumlar:
 >
 > *Şu konuda aynı tarzda bir post yaz: [konu]"*
 
-→ Claude marka voice'unuzu örnekten çıkarır, taklit eder.
+→ Claude marka sesinizi örnekten çıkarır, taklit eder.
 
 [Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfasında daha fazla içerik örneği.
 
@@ -109,14 +110,14 @@ Soyut talimat yetersiz kaldığı durumlar:
 ```text
 Bu metinden müşteri bilgilerini JSON olarak çıkar. Örnek:
 
-Metin: 'ABC Ltd. ile 50.000 TL'lik anlaşma yapıldı, irtibat Mehmet Yılmaz, 0532-...'
+Metin: 'ABC Ltd. ile 50.000 TL'lik anlaşma yapıldı, irtibat Mehmet Yılmaz, 0532 000 00 00'
 
 JSON:
 {
   "sirket": "ABC Ltd.",
   "tutar_tl": 50000,
   "irtibat": "Mehmet Yılmaz",
-  "telefon": "0532-..."
+  "telefon": "0532 000 00 00"
 }
 
 Şimdi şu metin için: [metin]
@@ -157,16 +158,18 @@ Tüm örnekler aynı yapıda olsun, başlık aynı, etiket aynı, alanlar aynı.
 
 3 mükemmel örnek, 10 ortalama örnekten iyidir. Kalite sayıyı yener.
 
-## Few-Shot vs CLAUDE.md
+## Örneği Nereye Koymalı?
 
-Bir örneği nereye koymalı?
+- **Prompt içinde:** o göreve özel örnekler.
+- **Kalıcı bir yerde:** her seferinde yapıştırmak istemediğiniz örnekler (marka sesi, format örnekleri). Hangi yerin neyi kapsadığı kullandığınız araca göre değişir:
+  - **Tüm sohbetleriniz için:** profil talimatı ("Instructions for Claude", Settings > General).
+  - **Tek bir iş/müşteri için:** [Claude Projesi](/wiki/araclar/projects/) talimatı ya da proje dosyası; yalnız o projenin sohbetlerinde geçerlidir.
+  - **Cowork'te:** global talimat ve klasör talimatı.
+  - **Claude Code'da:** CLAUDE.md dosyası. CLAUDE.md Claude Code'un mekanizmasıdır, claude.ai sohbetinde okunmaz.
 
-- **CLAUDE.md** → her sohbette geçerli, kalıcı kurallar (marka voice örnekleri, format örnekleri)
-- **Prompt içinde** → o spesifik göreve özel örnekler
+Çoğu durumda ikisi birlikte kullanılır: kalıcı yer genel tarzı belirler, prompt o günün işine özelleşir. Kalıcı talimat yerlerinin karşılaştırması [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasında.
 
-Çoğu durumda ikisi birlikte kullanılır. CLAUDE.md genel tarzı belirler, prompt o gün için özelleşir.
-
-[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında CLAUDE.md içine örnek nasıl gömüleceği var.
+CLAUDE.md kullanıyorsanız örneklerin dosyaya nasıl gömüleceği için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasına bakın.
 
 ## Daha Fazla Uygulama Örneği
 
@@ -256,13 +259,13 @@ Bu organik few-shot, manuel olarak kurulan few-shot kadar güçlüdür.
 
 ## Sınırlar ve Tuzaklar
 
-**Tuzak 1: Aşırı örnek yüklemesi.** 30 örnek vermek tutarlılık yerine çelişki ve gürültü riskini artırır. Çoğu görevde 5-10 örnek yeter, many-shot gerektiren işlerde bile 20'yi nadiren geçmek gerekir.
+**Tuzak 1: Aşırı örnek yüklemesi.** 30 örnek vermek tutarlılık yerine çelişki ve gürültü riskini artırır. Çoğu görevde 3-5 örnek yeter, many-shot gerektiren işlerde bile 20'yi nadiren geçmek gerekir.
 
 **Tuzak 2: Çelişen örnekler.** İki örneğiniz birbirinin tersini söylüyorsa Claude şaşırır. Örnekleri tarayın, çakışma var mı kontrol edin.
 
 **Tuzak 3: Yanlı örnekler.** Sadece olumlu örnek verirseniz Claude olumsuz vakaları doğru tanıyamaz. Çeşitlilik şart.
 
-**Tuzak 4: Kişisel/hassas veri içeren örnek.** Müşteri ismi, gerçek ciro, kişisel veri içeren örnekler [KVKK](/wiki/temeller/gizlilik-kvkk/) sorunu yaratır. **Anonimleştir** veya synthetic örnek kur.
+**Tuzak 4: Kişisel/hassas veri içeren örnek.** Müşteri ismi, gerçek ciro, kişisel veri içeren örnekler [KVKK](/wiki/temeller/gizlilik-kvkk/) sorunu yaratır. **Anonimleştirin** veya kurgusal örnek kurun.
 
 ## Birleşik Teknik: Format + Few-Shot + Talimat
 
@@ -300,6 +303,7 @@ Ham veri: [gerçek veri]
 - [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/): Türkçe için
 - [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/): Örnekleri geliştirme döngüsü
 - [İleri Seviye](/wiki/prompting/ileri-seviye/): Many-shot ve advanced teknikler
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md'ye gömme
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat yerleri
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md'ye gömme (Claude Code)
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Few-shot tuzakları
 

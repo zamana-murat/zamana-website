@@ -1,18 +1,25 @@
 ---
 title: Slack ve Microsoft Teams Entegrasyonu
-description: "Claude'u Slack ve Teams ekiplerine bağlama. Connector'lar, Slack'te Claude Tag, kurumsal IT onayı ve günlük kullanım rehberi."
+seoTitle: "Claude Slack Entegrasyonu ve Teams Durumu"
+description: "Claude'u Slack ve Teams ekiplerine bağlama: Teams'te resmi uygulama yok, connector yolu, Slack'te Claude Tag, IT onayı ve kullanım örnekleri."
 tags:
   - araclar
   - slack
   - teams
   - claude-tag
   - entegrasyon
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Çoğu kurumsal ekibin bilgi akışı Slack veya Microsoft Teams'te akar.** Claude'u bu platformlara bağlamak (geçmiş mesajları okuyabilmesi, kanal özetleyebilmesi, akışın içinde çalışabilmesi) günlük üretkenliğin en görünür kazançlarından biridir.
 
-Bu sayfa entegrasyon seçeneklerini, kurulumu ve kurumsal IT onayını anlatır.
+Bu sayfa entegrasyon seçeneklerini, kurulumu ve kurumsal IT onayını anlatır. Türk kurumlarında Teams yaygın olduğu için önce onun durumu geliyor. Claude Tag'in ürün tanıtımı ve plan kapsamı için [@Claude: Slack'te Claude](/claude/tag/), Microsoft tarafı için [Claude for Microsoft 365](/claude/microsoft-365/) sayfasına bakın.
+
+## Teams: Resmi Uygulama Yok, Connector Var
+
+Teams içinde resmi bir Claude uygulaması veya botu yok, Anthropic de bir Teams sürümü duyurmadı. Geçerli yol Microsoft 365 connector'ıdır (aşağıdaki Model 1). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir, Microsoft 365 admin onayı da gerekebilir.
+
+Microsoft ekosisteminde ayrıca Excel, PowerPoint ve Word'ün içinde çalışan Claude eklentileri var (Excel, PowerPoint, Word genel kullanımda, Outlook public beta). Bunlar Teams botu değil, ofis uygulamalarının içindeki yardımcıdır: [Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
 
 ## İki Entegrasyon Modeli
 
@@ -25,7 +32,7 @@ Claude.ai içinden Slack'e (Teams için Microsoft 365 connector'ı üzerinden) [
 **Tipik kullanım:**
 
 - *"Marketing kanalında son 3 gün ne konuşuldu, özet ver."*
-- *"Acme Şirketi ile DM'de konuştuğum konuların aksiyon listesini çıkar."*
+- *"Bosfor Tekstil ile DM'de konuştuğum konuların aksiyon listesini çıkar."*
 - *"Bu hafta ürün lansmanı kanalında alınan kararları liste hâlinde topla."*
 
 ### Model 2: Slack'in İçine Claude Eklemek (Claude Tag)
@@ -49,7 +56,7 @@ Başlangıçta inceleme modunu seçin: kanalda herkesin göreceği bir cevapta h
 
 Kişisel connector yalnızca sizin başlattığınız istekler içindir. Zamanlanmış rutinler ve Claude'un kendi başlattığı işler, yöneticinin kanala tanımladığı ortak connector'ları kullanır. Claude'un sizin connector'ınızla yaptığı işlemler, ilgili aracın kendi günlüğünde sizin hesabınız altında görünür. Ayrıntı: [Claude Tag kişisel connector'ları kullanabiliyor](/haberler/2026-09-24-claude-tag-kisisel-baglayicilar/).
 
-İki model birlikte kullanılabilir. **Model 1 (connector)**, Claude'un tam gücüne (skills, projects, dosya yükleme) erişim verdiği için çoğu iş için daha geniş bir yoldur. Teams için Claude Tag benzeri bir sürüm yok; Teams'te connector yolunu kullanın (aşağıdaki Teams bölümüne bakın).
+İki model birlikte kullanılabilir. **Model 1 (connector)**, Claude'un tam gücüne (skills, projects, dosya yükleme) erişim verdiği için çoğu iş için daha geniş bir yoldur. Teams için Claude Tag benzeri bir sürüm yok; Teams'te connector yolunu kullanın (yukarıdaki Teams bölümüne bakın).
 
 ## Kurulum: Connector (Model 1)
 
@@ -76,23 +83,17 @@ Claude Tag'i workspace yöneticisi etkinleştirir. Kesin menü adımları Anthro
 
 **Veri akışı:** Slack'e yazdığınız mesaj Claude'a (Anthropic'e) gider, cevap döner. Bu akışın gizlilik tarafı için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
 
-## Teams: Resmi Uygulama Yok, Connector Var
-
-Teams içinde resmi bir Claude uygulaması veya botu yok, Anthropic de bir Teams sürümü duyurmadı. Geçerli yol Microsoft 365 connector'ıdır (yukarıda Model 1). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir, Microsoft 365 admin onayı da gerekebilir.
-
-Microsoft ekosisteminde ayrıca Excel, PowerPoint ve Word'ün içinde çalışan Claude eklentileri var (Excel, PowerPoint, Word genel kullanımda, Outlook public beta). Bunlar Teams botu değil, ofis uygulamalarının içindeki yardımcıdır: [Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
-
 ## Pratik Kullanım Senaryoları
 
 ### Sabah Brifingi
 
 [Connector ile] *"Slack'te bu sabah açılmış kanallarımdan #marketing, #sales, #urun, son 12 saatte ne oldu, kısa özet ver."*
 
-Çıktı: kanal başına bir paragraf, neyin önemli olduğu vurgulanmış. 5 dakikada okuduğunuz 200 mesajdan kurtarır.
+Çıktı: kanal başına bir paragraf, neyin önemli olduğu vurgulanmış. 200 mesajı tek tek taramak yerine kısa bir özet okursunuz. **Süre:** elle 30-45 dakika, Claude ile özet okuma yaklaşık 5 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ### Müşteri Tartışması Toplama
 
-*"#cs-acme-musterisi kanalında son haftaki tüm mesajları oku, müşterinin yaşadığı 3 ana sorunu ve önerilen çözümleri özetle."*
+*"#cs-bosfor-tekstil kanalında son haftaki tüm mesajları oku, müşterinin yaşadığı 3 ana sorunu ve önerilen çözümleri özetle."*
 
 ### Karar Tutanağı
 
@@ -127,11 +128,13 @@ Slack/Teams entegrasyonu IT ekibinin aktif onayını gerektirir. Hassas konular:
 
 **Bireysel kullanım:** Connector tüm planlarda vardır, kişisel Slack hesabınızı bağlayabilirsiniz.
 
-**Kurumsal kullanım:** Claude Tag ile Slack kanallarında Claude kullanmak ve organizasyon genelinde dağıtmak için **Team veya Enterprise plan** gerekir. Detay [Planlar](/wiki/temeller/planlar/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfalarında.
+**Kurumsal kullanım:** Claude Tag yalnız Team ve Enterprise planlarında var. Plan tablosu [@Claude: Slack'te Claude](/claude/tag/) ve [Planlar](/wiki/temeller/planlar/) sayfalarında, yönetici ayarları [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında.
 
 ## İlgili Sayfalar
 
 - [Connectors](/wiki/araclar/connectors/): Genel connector mantığı
+- [@Claude: Slack'te Claude](/claude/tag/): Claude Tag ürün tanıtımı
+- [Claude for Microsoft 365](/claude/microsoft-365/): Microsoft tarafı
 - [MCP Nedir?](/wiki/mcp/nedir/): Slack/Teams için custom MCP de yazılabilir
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Bu entegrasyonlar Cowork ile birleşince güç katar
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/): IT açısından değerlendirme

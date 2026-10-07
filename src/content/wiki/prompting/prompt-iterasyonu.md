@@ -1,12 +1,13 @@
 ---
 title: "Prompt İterasyonu: Test, Geliştir, Sürümle"
-description: Bir promptu nasıl test eder, kalitesini ölçer, geliştirir ve uzun vadede iyileştirirsiniz? Sistematik iterasyon metodolojisi.
+seoTitle: "Prompt Nasıl Test Edilir? Puanlama ve Sürümleme"
+description: "Promptu nasıl test eder, üç boyutta puanlar, düzeltir ve sürümlersiniz? 3-5 örnekli test seti, puan tablosu ve Claude'a promptu iyileştirtme yöntemi."
 tags:
   - prompting
   - iterasyon
   - test
   - geliştirme
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Bir promptu ilk seferinde mükemmel yazmak nadirdir.** İyi prompt **iterasyonla** olur: yazarsınız, test edersiniz, sorunu görürsünüz, düzeltirsiniz, tekrar test edersiniz. Bu sayfa o döngünün sistematik metodolojisini anlatır.
@@ -19,7 +20,7 @@ Promptu ilk yazdığınızda:
 
 - Görevi **kafanızda olduğu gibi** anlatırsınız → ama Claude'a göre belirsiz noktalar vardır
 - Beklediğiniz çıktı tipinin örneği yoktur → Claude tahmin eder
-- Sınır vakaları (edge cases) düşünülmemiştir → ilk gelen verilerde patlar
+- Sınır vakaları düşünülmemiştir → ilk gelen verilerde patlar
 - Form / kayıt / dil tutarsızlıkları yakalanmamıştır
 
 İterasyon bu boşlukları doldurur.
@@ -39,7 +40,7 @@ Promptu ilk yazdığınızda:
    ↓
 (çıktı kabul edilebilir kalitede)
    ↓
-6. Sürümle (CLAUDE.md veya şablon kütüphanesine kaydet)
+6. Sürümle (Proje, Skill veya şablon kütüphanesine kaydet)
 ```
 
 ## 1. Yaz: Taslak Prompt
@@ -75,6 +76,8 @@ Promptu **gerçek verilerle** test edin. Yapay senaryolar yetmez.
 - **Boş/eksik vaka** (1 örnek) → veri eksikse Claude ne yapar
 
 En az 3, ideali 5 örnek kullanın. Tek örnekle "şansa iyi çıktı" ile gerçekten iyi promptu birbirinden ayıramazsınız.
+
+**Süre:** bir test turu (5 örnek çalıştırmak ve skorlamak) elle 20-40 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ## 3. Değerlendir: Üç Boyutlu Skor
 
@@ -124,7 +127,7 @@ Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
 ### Sorun: "Türkçe'den İngilizce'ye kayıyor"
 
-**Çözüm:** [CLAUDE.md](/wiki/claude-md/nedir/)'de net dil kuralı. [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasına bakın.
+**Çözüm:** Kalıcı talimatta (profil, proje ya da Cowork talimatı; Claude Code'da CLAUDE.md) net dil kuralı. [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasına bakın.
 
 ### Sorun: "Sınır vakasında sapıttı"
 
@@ -148,7 +151,17 @@ Ortalama skor 13+/15'e çıktığında prompt **kabul edilebilir** seviyededir.
 
 Hazır prompta artık **kalıcı bir yer** verin:
 
-### Seçenek A: CLAUDE.md'ye
+### Seçenek A: Claude Projesi (sohbet ve Cowork kullanıcıları için)
+
+Hazır promptu bir [Claude Projesi](/wiki/araclar/projects/)ne koyun: şablon dosyalarını projeye yükleyin, proje talimatına "bu projedeki şablonlardan birini kullan, eksik bilgiyi bana sor" yazın. Proje her sohbette sabit arka plan bilgisidir. Cowork'te de aynı proje çalışır. Yalnızca bilgisayardaki bir klasöre güvenmeyin: Pro ve Max'te yeni Cowork görevleri 6 Ekim 2026'dan beri bulutta çalışır ve bulut görevleri yerel klasöre doğrudan erişemez.
+
+Çok sık kullandığınız ve artık değişmeyen bir prompt için bir sonraki adım [Skill](/wiki/yetenekler/skills/)'e çevirmektir; Claude ilgili gördüğünde onu kendisi yükler.
+
+Her sohbette geçerli olması gereken kısa kurallar (dil, ton, yasak kalıplar) için profil talimatı ("Instructions for Claude", Settings > General) daha uygundur; şablonların kendisini oraya doldurmayın.
+
+### Seçenek B: Claude Code kullananlar için CLAUDE.md
+
+Claude Code kullanıyorsanız şablon adlarını ve nerede durduklarını [CLAUDE.md](/wiki/claude-md/nedir/) dosyasına yazabilirsiniz (CLAUDE.md Claude Code'un mekanizmasıdır; Cowork'te klasör talimatı kullanın).
 
 - Şirket geneli kullanım için: [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/)
 - Kişisel kullanım için: kendi CLAUDE.md'niz
@@ -159,15 +172,11 @@ Hazır prompta artık **kalıcı bir yer** verin:
 - "Toplantı özeti şablonu": [...]
 ```
 
-### Seçenek B: Şirket Şablon Kütüphanesi
+Notion, Google Drive ya da paylaşılan klasör de olur; önemli olan tüm ekibin aynı sürüme erişmesi. Düzenleme için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasına, hangi talimatın nerede geçerli olduğu için [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
 
-Notion / Google Drive / paylaşılan dosyada saklayın. Tüm ekibe açık.
+### Seçenek C: Sürüm Kontrollü Depo
 
-[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında nasıl düzenleneceği anlatılır.
-
-### Seçenek C: Sürüm Kontrollü Repo
-
-Daha olgun şirketler git üzerinde prompt repository'si tutar:
+Daha olgun şirketler git üzerinde prompt deposu tutar:
 
 ```
 prompts/
@@ -195,13 +204,37 @@ sahip: Pazarlama Müdürü
 ---
 ```
 
-Önemli değişikliklerde **change log:**
+Önemli değişikliklerde **değişiklik günlüğü:**
 
 ```markdown
 - v2.1 (2026-04-26): Yasak kelime listesi genişletildi
 - v2.0 (2026-02-15): Few-shot örnekler eklendi, format katılaştırıldı
 - v1.3 (2025-11-01): Türkçe kayma kuralı netleşti
 ```
+
+## Claude'a Promptu İyileştirtmek ve Prompt Yazdırmak
+
+"Promptumu Claude'a iyileştirtebilir miyim?" Evet, ve çoğu zaman iyi sonuç verir. İki ayrı kullanım var.
+
+**1. Yazdığınız promptu iyileştirtmek.** Taslağı yapıştırın, test sonuçlarında gördüğünüz sorunu da ekleyin:
+
+> *"Aşağıdaki promptu iyileştir. Bu promptla aldığım çıktılarda sorun şu: [örn. çıktılar çok genel, format her seferinde değişiyor]. Promptun neresi bu sorunu yaratıyor olabilir, açıkla; sonra düzeltilmiş halini yaz. Anlamını değiştirme, yalnız belirsiz yerleri netleştir ve eksik bilgi için bana soru sor.*
+>
+> *Prompt: [promptu yapıştır]"*
+
+Çıktıyı yine kendi test setinizle deneyin. Claude'un "iyileştirilmiş" hali kâğıt üstünde düzgün görünür ama sizin verinizde daha kötü çıkabilir; karar test skorunun, Claude'un beğenisinin değil.
+
+**2. Sıfırdan prompt yazdırmak.** Görevi birkaç cümleyle anlatın ve Claude'dan prompt isteyin:
+
+> *"[Görev: örn. müşteri şikâyet e-postalarını kategorilere ayırmak] için kullanabileceğim bir prompt yaz. Girdi: [ne vereceğim]. Çıktı: [ne bekliyorum]. Değişken yerleri köşeli parantezle göster. Yazmaya başlamadan önce bana ihtiyacın olan bilgileri sor."*
+
+**"Başlamadan önce bana 3 netleştirici soru sor" tekniği.** Prompt yazdırırken de, doğrudan iş yaptırırken de işe yarar. Prompta şunu ekleyin:
+
+> *"Başlamadan önce bana en fazla 3 netleştirici soru sor. Cevaplarımı aldıktan sonra devam et."*
+
+Claude eksik bilgiyi tahmin etmek yerine sorar; ilk çıktı hedefe yaklaşır. Soru sayısını sınırlamak önemli, yoksa uzun bir anket çıkar. Genellikle kayıt (resmî mi samimi mi), hedef okur ve çıktı biçimi sorulur; bu cevapları sonra şablonun içine yerleştirin ki bir daha sorması gerekmesin.
+
+> **Geliştiriciler için:** Anthropic'in Console'unda (geliştirici paneli) "prompt improver" ve "prompt generator" adlı araçlar bulunur; improver 2024'te çıktı ve verilen promptu yeniden yazarak akıl yürütme adımı ve düzenli örnek biçimi ekler. Bunlar API kullanan ekipler içindir; dokümandaki özel sayfaları bugün genel prompt rehberine yönleniyor ve araçların güncel arayüzdeki yeri doğrulanmadı. İş kullanıcısı için yukarıdaki sohbet yöntemi yeterlidir.
 
 ## A/B Testi: Ciddi Karar İçin
 
@@ -218,7 +251,7 @@ Bu özellikle [Pazarlama](/wiki/departmanlar/pazarlama/) içerikleri, [Müşteri
 
 ## Üretim Sonrası Geri Bildirim
 
-Bir prompt CLAUDE.md'de aktif kullanımda olduktan sonra da **gözlemlenmeli**:
+Bir prompt (proje, skill ya da paylaşılan kütüphane) aktif kullanımda olduktan sonra da **gözlemlenmeli**:
 
 - Çalışan kullanıyor mu, yoksa bypass mı geçiyor?
 - Çıktıyı kullanmadan önce ne kadar düzeltme yapıyor?
@@ -238,7 +271,7 @@ Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu)
 
 ## Yaygın Hata: Sürekli Yamamak
 
-Bir prompt çalıştığında sürekli kurcalamayın. **"Tweaking"** üretkenliği öldürür. Hazır olan prompt 3 ay sabit kalsın, sonra ihtiyaca göre revize edin.
+Bir prompt çalıştığında sürekli kurcalamayın. **Sürekli ince ayar** üretkenliği öldürür. Hazır olan prompt 3 ay sabit kalsın, sonra ihtiyaca göre revize edin.
 
 ## İterasyon Disiplini: Kişisel Sistem
 
@@ -246,7 +279,7 @@ Kendi prompt yönetiminizi kurun:
 
 1. **Her yeni prompt'u test edin**: minimum 3 örnekle
 2. **Skor verin**: 5 üzerinden 3 boyutta
-3. **Sürümleyin**: CLAUDE.md veya kişisel notlar
+3. **Sürümleyin**: proje dosyası, skill ya da kişisel notlar
 4. **Aylık gözden geçirin**: hangileri çalışıyor, hangileri iyileştirilmeli
 5. **Çeyreklik temizlik**: kullanılmayanları silin, eskileri güncelleyin
 
@@ -276,5 +309,9 @@ Yeni prompt yazdığınızda kullanın:
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Tipik tuzaklar
 - [İleri Seviye](/wiki/prompting/ileri-seviye/): Karmaşık iterasyon
 - [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Kalıcı saklama
+- [Projects](/wiki/araclar/projects/): Prompt kütüphanesi için proje
+- [Skills](/wiki/yetenekler/skills/): Sık kullanılan promptu skill'e çevirmek
+- [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/): Uzun belge, sözleşme ve tabloda prompt
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat ve hafıza
 - [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/): Genel kalite ölçümü
 

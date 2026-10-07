@@ -7,7 +7,7 @@ tags:
   - limit
   - usage-credits
   - fable
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Claude'da "limit" sorusu en sık şikayet konusudur: "Dün çalışıyordu, bugün bekle diyor." Bu sayfa limitin nasıl işlediğini, dolunca ne yapacağınızı ve hangi planın kime yettiğini sade bir dille anlatır. Plan fiyatları için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
@@ -61,7 +61,7 @@ Kullanım kredisi (usage credits), abonelik kotanız bittikten sonra devam etmen
 - Kullanım, **API fiyatıyla** (milyon token başına) ücretlendirilir. Abonelik ücretinden ayrıdır.
 - Aylık **$50, $250 veya $1.000'lık paketler** (usage bundle) alırsanız sırasıyla **%10, %20 ve %30 indirim** gelir.
 - Team'de yönetici **harcama tavanı** koyabilir, böylece fatura sürpriz yapmaz.
-- Fiyatlar USD ve vergi hariçtir. Türkiye'deki şirket faturası için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına bakın.
+- Fiyatlar USD ve vergi hariçtir; TL karşılığı için [Claude Planları](/wiki/temeller/planlar/) sayfasına bakın. Türkiye'deki şirket faturası için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına bakın.
 
 > **Örnek:** Pro kullanıcısı Ayşe Hanım, ay sonu kapanışında iki gün üst üste haftalık limitine takıldı. Bir hafta beklemek yerine krediyi açtı ve kalan işi API fiyatıyla yaptırdı. Bu iki gün için ödediği tutar, planı Max 5x'e yükseltmenin farkından az ya da çok olabilir. Kredi ara sıra olan zirve için iyidir, her hafta tekrarlıyorsa Max daha ucuza gelir.
 
@@ -98,7 +98,7 @@ Team'de koltuk tipleri karıştırılabilir (örneğin yoğun kullanan 2 kişiye
 
 ### Zamana'nın önerisi: ilk ay Max 5x
 
-Zamana, yeni başlayan her kullanıcının **ilk ay Max 5x** ile başlamasını önerir. Neden limittir: yeni kullanıcı ilk ayda uzun belgeler yükler, connector kurar, skill dener, saatlerce çalışır. Pro'nun 5 saatlik penceresi bu tempoda hızla dolar ve kişi "Claude çalışmıyor" diye vazgeçer. Max 5x bu sürtünmeyi kaldırır, Fable'ı da plana dahil sunar. İkinci aydan itibaren gerçek kullanımınıza bakıp Pro'ya inebilir veya Max'te kalabilirsiniz. Ayrıntı: [Planlar](/wiki/temeller/planlar/).
+Zamana, yeni başlayanlara **ilk ay Max 5x** önerir (zorunlu değil, Pro ile başlayıp yükseltmek de olur). Neden limittir: yeni kullanıcı ilk ayda uzun belgeler yükler, connector kurar, skill dener, saatlerce çalışır. Pro'nun 5 saatlik penceresi bu tempoda hızla dolar ve kişi "Claude çalışmıyor" diye vazgeçer. Max 5x bu sürtünmeyi kaldırır, Fable'ı da plana dahil sunar. İkinci aydan itibaren gerçek kullanımınıza bakıp Pro'ya inebilir veya Max'te kalabilirsiniz. Ayrıntı: [Planlar](/wiki/temeller/planlar/).
 
 ## Programatik Kullanım Abonelikten Düşer
 

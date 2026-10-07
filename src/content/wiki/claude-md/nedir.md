@@ -1,20 +1,34 @@
 ---
 title: CLAUDE.md Nedir?
-description: CLAUDE.md, Claude'un sizi ve şirketinizi her oturumda yeniden tanımasını önleyen basit bir metin dosyasıdır. Ciddi Claude kullanımının kalbidir.
+seoTitle: "CLAUDE.md Nedir? Nerede Okunur, Sohbetteki Karşılığı"
+description: "CLAUDE.md, Claude'a sizi tanıtan düz metin dosyasıdır. Cowork klasöründe ve Claude Code'da okunur, sohbette okunmaz; karşılığı profil talimatıdır."
 tags:
   - claude-md
   - temel-kavram
   - cowork
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **CLAUDE.md, Claude'un sizi (ve varsa şirketinizi) her oturumda yeniden tanımak zorunda kalmaması için hazırlanan düz metin bir dosyadır.**
 
-Markdown formatındadır. Workspace klasörünüzde durur. Claude, Cowork'te bir oturum başlattığınızda bu dosyayı otomatik olarak okur ve sessiz bir şekilde "tamam, bu kullanıcıyı tanıyorum" deyip işe başlar.
+Markdown formatındadır. Çalıştığınız klasörde durur. Claude, bu klasörle çalışan bir oturum başlattığında (masaüstündeki yerel Cowork oturumu, Claude Code) dosyayı okur ve sessiz bir şekilde "tamam, bu kullanıcıyı tanıyorum" deyip işe başlar.
 
-> **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım). CLAUDE.md'nin işlevi değişmedi: Claude'un bir çalışma klasörüyle çalıştığı yerde, yani Cowork tarzı işlerde ve Claude Code'da, klasördeki dosya okunur. Sohbet tarafında benzer işi [Projects](/wiki/araclar/projects/) talimatları ve Claude'un [yerleşik hafızası](/wiki/yetenekler/memory/) görür. Ayrıntı için [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
+## CLAUDE.md Nerede Çalışır?
 
-Bu dosyanın değeri pratikte hızla görünür: **CLAUDE.md, Claude'u genel bir asistan olmaktan çıkarıp size özel bir asistana dönüştüren mekanizmadır**: kendi tarzınıza, işinize, varsa ekibinize uygun bir asistan.
+Önce en sık yanlış anlaşılan nokta: CLAUDE.md her yerde otomatik okunan bir dosya değildir. Hangi ortamda çalıştığınıza bağlıdır.
+
+| Ortam | CLAUDE.md okunur mu? | Karşılığı |
+|---|---|---|
+| **Sohbet** (claude.ai, mobil) | Hayır, dosya olarak okunmaz | **Profil talimatı** (Ayarlar > General > "Instructions for Claude") ve **proje talimatı** |
+| **Yerel Cowork oturumu** (Claude Desktop, klasör bağlı) | Evet, klasördeki dosya okunur | Cowork yardım sayfaları buna "klasör talimatı" der |
+| **Bulut Cowork oturumu** | Okunduğu belgelenmemiş | Klasörler elle eklenir; kritik kuralı profil talimatına da yazın |
+| **Claude Code** | Evet, hiyerarşik olarak | Geliştiriciler için; ayrıntı [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasının son kutusunda |
+
+Hangi yerin nerede geçerli olduğunu ve kimin yönettiğini tek tabloda [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/#kalıcı-talimat-ve-hafıza-yerleri) bölümünde görebilirsiniz. Bu sayfada anlatılan fikir ise hepsinde aynıdır: **kendinizi bir kez yazarsınız, kullandığınız yere koyarsınız.**
+
+> **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım). Klasörle çalıştığınız yerde CLAUDE.md okunur; sohbet tarafında benzer işi [Projects](/wiki/araclar/projects/) talimatları, profil talimatı ve Claude'un [yerleşik hafızası](/wiki/yetenekler/memory/) görür.
+
+Bu dosyanın (ya da sohbetteki karşılığının) değeri pratikte hızla görünür: **Claude'u genel bir asistan olmaktan çıkarıp size özel bir asistana dönüştüren mekanizma, kalıcı talimattır**: kendi tarzınıza, işinize, varsa ekibinize uygun bir asistan.
 
 ## Neden Önemli?
 
@@ -27,11 +41,11 @@ Bu durum iki soruna yol açar:
 
 CLAUDE.md bu iki sorunu ortadan kaldırır:
 
-> **Bir kere yazarsınız, Claude her oturumda sanki sizinle aylardır çalışıyormuş gibi başlar.**
+> **Bir kere yazarsınız, Claude her oturumda (dosyanın ya da profil talimatının geçerli olduğu yerde) sanki sizinle aylardır çalışıyormuş gibi başlar.**
 
 ## CLAUDE.md Nasıl Devreye Girer?
 
-CLAUDE.md'siz Claude ile CLAUDE.md'li Claude arasındaki fark şudur: ilki her seferinde "kim olduğunuzu" sıfırdan öğrenir, ikincisi dosyayı sessizce okur ve hazır başlar.
+CLAUDE.md'siz Claude ile CLAUDE.md'li Claude arasındaki fark şudur: ilki her seferinde "kim olduğunuzu" sıfırdan öğrenir, ikincisi dosyayı sessizce okur ve hazır başlar. Sohbette bu okumayı profil talimatı yapar.
 
 ## Ne İçerir?
 
@@ -58,9 +72,11 @@ Bir CLAUDE.md dosyası **şeffaf** bir dosyadır. Açık yazılır, kolay okunur
 
 ## Nerede Durur?
 
-CLAUDE.md, Cowork'te bağladığınız **workspace klasörünüzün içinde** durur. Basit bir metin dosyasıdır: Notepad, TextEdit, VS Code veya Word (metin olarak kaydettiğiniz sürece) gibi herhangi bir editörle açıp düzenleyebilirsiniz.
+CLAUDE.md, çalıştığınız **klasörün içinde** durur (örneğin Cowork'te bağladığınız klasör). Basit bir metin dosyasıdır: Notepad, TextEdit, VS Code veya Word (metin olarak kaydettiğiniz sürece) gibi herhangi bir editörle açıp düzenleyebilirsiniz. Dosyaya tam olarak `CLAUDE.md` adını verin.
 
-Cowork her yeni oturum başlattığında bu dosyayı otomatik olarak okur. Siz bir şey yapmanız gerekmez.
+Yerel Cowork oturumu bu dosyayı okur; siz bir şey yapmanız gerekmez. Yine de **güvenli çizgiyi** izleyin: ilk mesajda "talimatımı 3 maddede özetle" diye test edin ve kritik kuralların kısa sürümünü profil talimatına da yazın. Cowork yardım sayfaları dosyayı adıyla anmaz, bu yüzden testle doğrulamak sağlam yoldur.
+
+Sohbet kullanıyorsanız dosya yerine aynı metni profil talimatına koyun. Hepsi için: [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ## Nasıl Büyür?
 
@@ -106,13 +122,14 @@ Kurumsal kullanımda şeffaflık iyi bir özellik değil, **zorunlu bir özellik
 - Yeni katalog tasarımının pazara hazırlanması
 ```
 
-Bu 20 satır, her oturumun başında Claude'un profesyonel bir meslektaş gibi davranması için yeterlidir.
+Bu 20 satır, dosyanın okunduğu (ya da profil talimatına konduğu) her yerde Claude'un profesyonel bir meslektaş gibi davranması için yeterlidir.
 
 ## İlgili Sayfalar
 
 - [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Adım adım rehber
 - [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/): Farklı roller için gerçek örnekler
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): CLAUDE.md dışındaki hafıza mekanizmaları
-- [Cowork Modu](/wiki/araclar/cowork-modu/): CLAUDE.md'nin devreye girdiği ortam
+- [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Hangisi nerede geçerli, tek tabloda
+- [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/): Yazdım ama okunmadı
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Klasörle çalışan ortam
 
 

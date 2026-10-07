@@ -1,11 +1,12 @@
 ---
 title: "CLAUDE.md Şablon Kütüphanesi: Rol Bazlı"
-description: Satış, finans, hukuk, İK, operasyon ve diğer roller için kullanıma hazır CLAUDE.md şablonları. Kopyala, kişiselleştir, başla.
+seoTitle: "CLAUDE.md Şablon Kütüphanesi: Rol Bazlı Hazır Şablonlar"
+description: "Satış, finans, hukuk, İK, operasyon ve diğer roller için kopyalanabilir CLAUDE.md şablonları. Doldurun, profile, projeye ya da klasöre koyun."
 tags:
   - claude-md
   - sablon
   - rol-bazli
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Sıfırdan iyi bir [CLAUDE.md](/wiki/claude-md/nedir/) yazmak ilk seferde zor.** Bu sayfa rol bazlı şablonlar sunar: kopyalayın, kendi bilgilerinizle kişiselleştirin, başlayın.
@@ -15,11 +16,21 @@ Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden 
 ## Nasıl Kullanılır
 
 1. Aşağıdan **kendi rolünüze en yakın olanı** seçin
-2. Kopyalayın, bir CLAUDE.md dosyasına yapıştırın
+2. Kopyalayın, bir metin dosyasına yapıştırın (klasörle çalışacaksanız `CLAUDE.md` adıyla)
 3. Köşeli parantezli yerleri **kendi bilgilerinizle** doldurun: `[Adınız]`, `[Şirket]`, `[Sektör]`
 4. Kuralları kendi tercihlerinize göre düzenleyin
-5. Dosyayı çalışma klasörünüze `CLAUDE.md` adıyla kaydedin ([Cowork](/wiki/araclar/cowork-modu/) her oturumda okur). Sohbet tarafında çalışıyorsanız aynı metni bir [Project](/wiki/araclar/projects/) içine talimat ya da bilgi olarak da ekleyebilirsiniz
-6. İlk hafta gözleyin, gerekirse [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakarak iyileştirin
+5. Metni yerine koyun (aşağıdaki "Bu metni nereye koyacağım?" kutusuna bakın)
+6. Yeni bir sohbet ya da oturumda Claude'a "Talimatımı 3 maddede özetle" deyin; özet doğruysa devam edin
+7. İlk hafta gözleyin, gerekirse [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakarak iyileştirin
+
+> **Bu metni nereye koyacağım?**
+>
+> - **Tüm sohbetlerde geçerli olsun:** Settings > General > "Instructions for Claude" (profil talimatı). Şablonun tamamı yerine kısa sürümünü yazın: Ben Kimim, Ton ve Dil, Yap, Yapma.
+> - **Bir iş ya da müşteri için:** o işin [Projects](/wiki/araclar/projects/) talimat alanına; Şirket Bağlamı gibi bölümler burada daha yerindedir.
+> - **[Cowork](/wiki/araclar/cowork-modu/) ile bilgisayarınızdaki klasörde çalışıyorsanız:** klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel oturumda okunur; bulut oturumunda okunduğu belgelenmediği için kritik kuralları profil talimatına da yazın.
+> - **Claude Code'da:** proje köküne `CLAUDE.md`.
+>
+> Yerlerin karşılaştırması: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ## 1. Satış Profesyoneli
 
@@ -32,7 +43,7 @@ Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden 
 [Şirket]'te [pozisyon]. [Sektör]'de B2B satış yapıyorum. Hedef kitlem [müşteri profili].
 Çeyreklik kotam [tutar]. Aktif müşteri portföyüm ~[sayı].
 
-## Voice ve Dil
+## Ton ve Dil
 - Profesyonel ama soğuk değil. Müşteriyle insan gibi konuş.
 - "Lider çözümümüz", "yenilikçi yaklaşım" kelimelerini kullanma.
 - Türkçe-first. İngilizce karşılık gerekirse parantez içinde.
@@ -41,7 +52,7 @@ Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden 
 - Soğuk e-posta taslağı (en fazla 100 kelime, ilk yarıda değer önerisi)
 - Toplantı sonrası özet ve sonraki adım e-postası
 - Müşteri itirazlarına argüman hazırlama
-- Quarterly review için pipeline analizi
+- Çeyreklik değerlendirme için satış hattı (pipeline) analizi
 
 ## Yapma
 - Müşteri bilgilerini (isim, şirket detayı) tam olarak Claude'a yapıştırma, anonimleştir
@@ -71,7 +82,7 @@ Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden 
 [Şirket]'te [pozisyon]. [Sektör]'de B2B/B2C pazarlama. Sorumluluğumda 
 [kanallar: LinkedIn, blog, e-posta, vb.].
 
-## Voice ve Dil
+## Ton ve Dil
 - Marka ses: [3 sıfat, örn. "dürüst, doğrudan, sıcak"]
 - Pazarlama klişeleri yasak: "lider", "yenilikçi", "vizyoner", "pazarın 1 numarası"
 - Hedef kitle [profil] için yaz, kendi şirketim için değil
@@ -80,7 +91,7 @@ Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden 
 ## Yaygın İşlerim
 - LinkedIn post taslağı (max 1300 karakter, hook + value + CTA)
 - Blog yazısı (1500-2500 kelime, SEO odaklı, başlık altında özet)
-- E-posta kampanya yazısı (subject + preview + body, A/B varyantı opsiyonel)
+- E-posta kampanya yazısı (konu satırı + ön izleme metni + gövde, A/B varyantı isteğe bağlı)
 - Hashtag ve anahtar kelime önerisi
 
 ## Yap
@@ -112,7 +123,7 @@ Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden 
 [Şirket]'te [pozisyon]. [Mali müşavir / Finans Müdürü / CFO yardımcısı] görevindeyim.
 Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi; uygun olanları].
 
-## Voice ve Dil
+## Ton ve Dil
 - Net, kesin, sayısal. Belirsizlik kabul edilmez.
 - Türkçe-first. Mali terimler için Türkçe + parantez içinde İngilizce: 
   örn. "nakit akışı (cash flow)".
@@ -155,7 +166,7 @@ Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi; uygun olanları].
 [Şirket / Hukuk Bürosu]'nda [avukat / hukuk müşaviri / şirket avukatı]. 
 Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 
-## Voice ve Dil
+## Ton ve Dil
 - Resmî, dikkatli, net. Türkçe-first.
 - Hukuki terimleri tam yaz, kısaltma kullanma (örn. "Türk Borçlar Kanunu", "TBK" değil).
 - Görüşle olgu ayır: "Görüşüm: ..." vs "Yasal düzenleme: ..."
@@ -197,7 +208,7 @@ Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 [Şirket]'te [İK pozisyonu]. [Çalışan sayısı]'lık ekibin İK yönetimi 
 ve gelişimi sorumluluğum.
 
-## Voice ve Dil
+## Ton ve Dil
 - Empatik ama profesyonel. Çalışan haklarını korur, şirketin yararını gözetir.
 - Türkçe-first.
 - Hassas durumda nötr dil: "performansı düşük" yerine "performansının 
@@ -241,7 +252,7 @@ ve gelişimi sorumluluğum.
 [Şirket]'te [pozisyon]. [Üretim / lojistik / tedarik zinciri] yönetiyorum.
 Ekip büyüklüğü: [sayı]. Tesis [konum].
 
-## Voice ve Dil
+## Ton ve Dil
 - Pratik, somut, ölçülebilir. "Belki", "muhtemelen" yerine "şu sebeple, şu kadar".
 - Türkçe-first. Teknik terim için Türkçe + parantez İngilizce.
 
@@ -281,7 +292,7 @@ Ekip büyüklüğü: [sayı]. Tesis [konum].
 [Şirket]'te müşteri destek temsilcisi. Ortalama günde [sayı] ticket / mesaj 
 kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 
-## Voice ve Dil
+## Ton ve Dil
 - Empatik, hızlı, çözüm odaklı. Müşteriyi "müşteri" olarak değil **insan** olarak gör.
 - Türkçe-first. Müşteri İngilizce yazıyorsa İngilizce yanıtla.
 - Klişe yasak: "Sayın değerli müşterimiz", "anlayışınız için teşekkürler".
@@ -321,7 +332,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 [Şirket]'in [pozisyon]'uyum. Sorumluluğum [P&L / strateji / 50+ kişilik organizasyon / vs].
 Çalışan sayımız [sayı], yıllık ciro [TL aralığı], sektör [sektör].
 
-## Voice ve Dil
+## Ton ve Dil
 - Net, dürüst, kararlı. Diplomatik ama dolambaçsız.
 - Pazarlama klişeleri özellikle yasak, yönetim raporlarında yapay görünür.
 - Türkçe-first.
@@ -362,7 +373,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 [Şirket]'te [BT Müdürü / IT Sorumlusu / CIO]. [Çalışan sayısı]'lık 
 organizasyonun BT altyapısını yönetiyorum.
 
-## Voice ve Dil
+## Ton ve Dil
 - Teknik ama yöneticiye anlaşılır. "Şirket dilinde" çevir.
 - Türkçe-first. Teknik terimler için karşılık parantez içinde.
 
@@ -396,11 +407,11 @@ organizasyonun BT altyapısını yönetiyorum.
 
 **Kişiselleştirin.** Şablon başlangıç noktası, son nokta değil. İlk haftada en az 5 kez güncelleme yapın.
 
-**Çalıştığını test edin.** [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasındaki test prosedürünü uygulayın.
+**Çalıştığını test edin.** "Talimatımı 3 maddede özetle" diye sorun, sonra [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasındaki test prosedürünü uygulayın.
 
 **Şirket CLAUDE.md ile uyumlu olsun.** [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) varsa, onunla çelişen kuralları silin.
 
-**Üç ayda bir gözden geçirin.** Rolünüz, projeleriniz, müşteri portföyünüz değişiyor → CLAUDE.md de değişmeli.
+**Üç ayda bir gözden geçirin.** Rolünüz, projeleriniz, müşteri portföyünüz değişiyor → talimat metniniz de değişmeli.
 
 ## İlgili Sayfalar
 
@@ -409,6 +420,6 @@ organizasyonun BT altyapısını yönetiyorum.
 - [Örnekler](/wiki/claude-md/ornekler/): Çalışan örnekler
 - [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/): Şirket genelinde paylaşım
 - [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/): Çalışmıyorsa
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı bellekle ilişki
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Profil talimatı, proje, klasör ve hafıza karşılaştırması
 - [Departmanlar](/wiki/departmanlar/): Rol bazlı kullanım derinliği
 

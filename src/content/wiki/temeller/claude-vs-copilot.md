@@ -6,7 +6,7 @@ tags:
   - karsilastirma
   - copilot
   - microsoft
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Microsoft Copilot, Microsoft'un Office uygulamaları ve Windows içine entegre AI asistanıdır.** Türkiye'deki orta-büyük kurumların ezici çoğunluğu Microsoft 365 kullanıyor; bu yüzden *"zaten Microsoft veriyor, Claude'a gerek var mı"* sorusu kurumsal satışta en sık karşılaşılan itirazdır.
@@ -42,23 +42,23 @@ Ama Microsoft'un dokümanına göre **Anthropic modelleri** de belirli Microsoft
 | Altyapı | Anthropic Claude modelleri | Ağırlıklı OpenAI modelleri, belirli deneyimlerde Anthropic modelleri |
 | Birincil arayüz | claude.ai, [Desktop](/wiki/araclar/claude-desktop/), [Mobil](/wiki/araclar/claude-mobil/) | Word, Outlook, Excel, Teams içinde "Copilot" butonu |
 | Türkçe kalitesi | Yüksek | Orta-iyi (giderek artıyor) |
-| Office dosyalarında çalışma | Excel, PowerPoint ve Word eklentileri (genel kullanımda), [Skills](/wiki/yetenekler/skills/) | Yerleşik |
+| Office dosyalarında çalışma | Excel, PowerPoint ve Word eklentileri (genel kullanımda; [ayrıntı](/claude/microsoft-365/)), [Skills](/wiki/yetenekler/skills/) | Yerleşik |
 | Outlook entegrasyonu | Outlook eklentisi (public beta) ve Microsoft 365 [connector](/wiki/araclar/connectors/) | Yerleşik |
 | Dosya üretimi | .docx, .xlsx, .pptx ([Skills](/wiki/yetenekler/skills/)) | Mevcut Office dosyasında düzenleme |
-| Plan | $20-200/ay (bireysel), Team $20-25/koltuk | $30/kişi/ay yıllık (M365 Copilot) |
-| KVKK / DPA | Team ve Enterprise (DPA ticari şartlara dahil) ([Takım ve Admin](/wiki/temeller/takim-ve-admin/)) | Microsoft 365 sözleşmesinin parçası |
+| Plan | Bireysel ve Team fiyatları için [Planlar](/wiki/temeller/planlar/) | $30/kişi/ay yıllık (M365 Copilot); küçük işletmede Copilot Business $18 |
+| KVKK / DPA | Team ve Enterprise (DPA ticari şartlara dahil) ([Takım ve Admin](/wiki/temeller/takim-ve-admin/)) | Microsoft 365 sözleşmesi kapsamında; ayrıntıyı Microsoft'tan yazılı doğrulayın |
 
 ## Güçlü Yönler: Microsoft Copilot
 
 **Yerleşik entegrasyon.** Outlook'ta yeni bir e-posta yazarken Copilot butonu, Word'de "bu paragrafı yeniden yaz" butonu, Excel'de formül üretimi: hepsi yerinde, kopyala-yapıştır gerekmez. Claude'un Office eklentileri bu farkı daraltıyor ([Office ve Chrome](/wiki/araclar/office-ve-chrome/)), ama Microsoft'un kendi yerleşik katmanı kadar derin değil.
 
-**Tek tedarikçi disiplini.** Şirket Microsoft 365 sözleşmesinde, IT ekibi Microsoft araçlarına alışkın, faturalama ortak, KVKK/DPA Microsoft Türkiye üzerinden yürür. Yeni bir AI tedarikçisi değerlendirmek, kurumsal satın almada zaman alır.
+**Tek tedarikçi disiplini.** Şirket Microsoft 365 sözleşmesinde, IT ekibi Microsoft araçlarına alışkın, faturalama ortak. Yeni bir AI tedarikçisi değerlendirmek, kurumsal satın almada zaman alır. (KVKK ve DPA tarafının Microsoft Türkiye üzerinden nasıl yürüdüğünü biz doğrulayamadık; Microsoft'tan yazılı isteyin.)
 
 **Teams toplantı transkripsiyonu ve özetlemesi.** Yerleşik. Toplantıdan çıktığınızda özet ve aksiyon maddeleri Teams içinde hazır. Claude'un Teams içinde resmi bir uygulaması yok; Microsoft 365 connector ile Teams sohbet ve kanal mesajlarını arayabilir, mesaj da gönderebilir.
 
 **SharePoint / OneDrive bilgisi.** Şirket içi OneDrive ve SharePoint'teki dosyaları doğal olarak okur (yetkiniz olan kapsamda). Claude'da Microsoft 365 [connector](/wiki/araclar/connectors/) ile (SharePoint, OneDrive, Outlook, Teams) bağlanır ama yerleşik kadar pürüzsüz değil.
 
-**Türkiye'de yerel sözleşme.** Microsoft Türkiye var, yerel sözleşme imzalanabilir, KVKK boyutu Türkçe sözleşmeye yansır.
+**Türkiye'de yerel varlık.** Microsoft'un Türkiye'de ofisi ve iş ortakları var; Anthropic'in yok. Sözleşme dili, KVKK ve veri konumu ayrıntılarını Microsoft'tan yazılı almak gerekir, biz bu ayrıntıları doğrulamadık.
 
 ## Güçlü Yönler: Claude
 
@@ -68,9 +68,9 @@ Ama Microsoft'un dokümanına göre **Anthropic modelleri** de belirli Microsoft
 
 **[Cowork](/wiki/araclar/cowork-modu/), [Agents](/wiki/yetenekler/agents-subagents/), [Scheduled Tasks](/wiki/araclar/scheduled-tasks/).** Otomasyon ve arka plan işlerinin altyapısı Claude'da bizim deneyimimizde daha olgun. Microsoft da bu alana giriyor (Copilot'un Premium katmanında Cowork kullanım bazlı), o yüzden bu başlık hızlı değişebilir.
 
-**[CLAUDE.md](/wiki/claude-md/nedir/), kalıcı kişiselleştirme.** Claude, sizin yazdığınız CLAUDE.md ile rolünüzü ve tercihlerinizi her konuşmada bilir. Bu dosya düz metindir ve ekiple paylaşılır; Copilot'ta bu işi gören, ekibin ortak düzenlediği bir dosya yok.
+**Kalıcı talimat ([profil talimatı, CLAUDE.md](/wiki/claude-md/nedir/)), kalıcı kişiselleştirme.** Claude, sizin yazdığınız profil talimatıyla tüm sohbetlerde, Cowork klasörünüzdeki CLAUDE.md ile de o klasörde çalışırken rolünüzü ve tercihlerinizi bilir. CLAUDE.md düz metindir ve ekiple paylaşılabilir; Copilot'ta bu işi gören, ekibin ortak düzenlediği bir dosya yok.
 
-**Fiyat-değer.** Bireyde Claude Pro $20/ay. Kurumsalda Claude Team Standard koltuk $25 aylık ($20 yıllık), M365 Copilot ise $30 yıllık ödemeli ve Microsoft 365 lisansının üzerine eklenir. Çok kullanıcılı senaryolarda fark birikir. Fiyatlar Ekim 2026 itibarıyladır, güncel rakam için resmi sayfalara bakın.
+**Fiyat-değer.** Claude fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında. M365 Copilot $30/kişi/ay (yıllık ödemeli) ve nitelikli bir Microsoft 365 lisansının üzerine eklenir; küçük işletmeler için Copilot Business $18 (yıllık). Yani kurumsalda Claude Team her zaman daha ucuz değildir; paket ve koltuk sayısına göre hesaplayın. Fiyatlar Ekim 2026 itibarıyladır, güncel rakam için resmi sayfalara bakın.
 
 **[Constitutional AI](/wiki/temeller/anthropic-ve-tarihce/), hassas konularda olgun davranış.** Hukuk, finans, sağlık gibi düzenleyici sektörlerde Claude'un daha temkinli ve doğrusal davranışı tercih sebebi.
 
@@ -78,13 +78,13 @@ Ama Microsoft'un dokümanına göre **Anthropic modelleri** de belirli Microsoft
 
 - **Kalite tutarsız.** Aynı görev iki kere sorulduğunda farklı kalitede yanıt gelebiliyor
 - **Özet ve transkripsiyon dışında "yaratıcılık" sınırlı.** Brainstorm, analiz, derin yazı işlerinde tatmin etmiyor
-- **Fiyat.** $30/kişi/ay Microsoft 365 sözleşmesi üzerine eklenir; Claude'un Team Standard koltuğuna ($20-25) göre ek maliyet daha yüksek
+- **Fiyat.** M365 Copilot $30/kişi/ay ve Microsoft 365 lisansının üzerine eklenir; Copilot Business ($18) küçük ekiplerde daha ucuzdur. Claude Team ile kıyası paket ve koltuk sayısına bağlı, [Planlar](/wiki/temeller/planlar/) sayfasından hesaplayın
 - **Türkçe.** Türkçe çıktı kalitesi yıldan yıla iyileşiyor ama Claude'un seviyesinde değil
 - **Karmaşık iş akışı yok.** Tek seferlik yardım için iyi, çok adımlı ve otonom işler için yetersiz
 
 ## Zayıf Yönler: Claude
 
-- Office uygulamaları içinde Microsoft kadar **yerleşik değil**: Excel, PowerPoint ve Word eklentileri var, Outlook eklentisi public beta aşamasında; eklenti kurulmamışsa tarayıcıya ya da [Desktop](/wiki/araclar/claude-desktop/)'a geçmek gerekir
+- Office uygulamaları içinde Microsoft kadar **yerleşik değil**: Excel, PowerPoint ve Word eklentileri var, Outlook eklentisi public beta aşamasında (ayrıntı: [Claude for Microsoft 365](/claude/microsoft-365/)); eklenti kurulmamışsa tarayıcıya ya da [Desktop](/wiki/araclar/claude-desktop/)'a geçmek gerekir
 - Türkiye'de doğrudan Anthropic ofisi yok ([Anthropic](/wiki/temeller/anthropic-ve-tarihce/) Türkiye'ye gelmedi); yerel destek mevcut değil
 - Microsoft kurumsal satışında "tek tedarikçi" rahatlığı yok: IT için ek değerlendirme gerektirir
 
@@ -114,7 +114,7 @@ Türkiye'deki orta-büyük kurumların **çoğu zaten Microsoft 365 ekosistemind
 - **M365 Copilot**: Outlook, Word, Excel içinde günlük "yerinde" yardım için
 - **Claude**: Yaratıcı üretim, derin analiz, otomasyon için
 
-Her ikisi birden satın alınabilir. Toplam maliyet yaklaşık $50-55/kişi/ay ($30 Copilot artı $20-25 Claude). Yoğun kullanan çalışanlar için karşılığını verir; kendi ekibinizde [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) ile doğrulayın.
+Her ikisi birden satın alınabilir; maliyet iki aboneliğin toplamıdır (Claude fiyatları için [Planlar](/wiki/temeller/planlar/)). Yoğun kullanan çalışanlar için karşılığını verir; kendi ekibinizde [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) ile doğrulayın.
 
 **Ama tek tedarikçi tercih ediliyorsa:** Çoğu durumda **Claude** seçilir, çünkü:
 

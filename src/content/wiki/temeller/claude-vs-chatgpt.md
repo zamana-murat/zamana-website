@@ -6,7 +6,7 @@ tags:
   - claude
   - chatgpt
   - karsilastirma
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 "Claude mu ChatGPT mi?" sorusu en çok sorulan sorulardan biridir. Kısa ve dürüst cevap şu:
@@ -53,7 +53,7 @@ Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kes
 
 **ChatGPT**: *Code Interpreter* (Advanced Data Analysis) ile Python kodunu sandbox'ta çalıştırır. *GPTs* ile özelleştirilmiş mini-asistanlar yaratabilirsiniz. Dış servislere ChatGPT'nin kendi uygulama ve bağlayıcı katalogu üzerinden bağlanır.
 
-**Claude**: *Cowork* ile yerel bilgisayarınızdaki dosyalara erişir, kod çalıştırır, araç kullanır. *Skills* ile hazır uzmanlık paketleri devreye girer (PDF, Excel, PPTX, marketing, sales, hepsi hazır). *MCP* (Model Context Protocol) ile şirket içi araçlarınıza (Slack, Drive, CRM) bağlanır. *Computer Use* ile ekranı görür ve kontrol eder (research preview, yalnızca Pro ve Max planlarında).
+**Claude**: *Cowork* ile bilgisayarınızda izin verdiğiniz klasörlerdeki dosyalara erişir, kod çalıştırır, araç kullanır; 6 Ekim 2026'dan beri Pro ve Max'te yeni Cowork görevleri bulutta da çalışır. *Skills* ile hazır uzmanlık paketleri devreye girer (PDF, Excel, PPTX, marketing, sales, hepsi hazır). *MCP* (Model Context Protocol) ile şirket içi araçlarınıza (Slack, Drive, CRM) bağlanır. *Computer Use* ile ekranı görür ve kontrol eder (research preview, yalnızca Pro ve Max planlarında; bu özelliği açtığınızda Claude klasör sınırının ötesinde ekranınızı da görebilir).
 
 **İş akışı açısından:** ChatGPT'nin araç entegrasyonu daha uygulama-odaklı, Claude'unki daha iş-akışı-odaklı. Bir satış yöneticisi için Cowork + Skills kombinasyonu "CRM'e bak, proposal'ı hazırla, Slack'te paylaş" zincirini kuran daha akıcı bir yapı sunar.
 
@@ -61,30 +61,30 @@ Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kes
 
 | Özellik | Claude | ChatGPT |
 |---|---|---|
-| Kalıcı hafıza | CLAUDE.md (açık, düzenlenebilir) + Claude hafızası (memory) | Memory (kaydedilen anılar) |
+| Kalıcı hafıza Profil/proje talimatı + Cowork klasöründe CLAUDE.md (açık, düzenlenebilir) + Claude hafızası (memory) | Memory (kaydedilen anılar) |
 | Hazır uzmanlık | Skills (PDF, Excel, marketing, sales, legal, vb.) | GPTs (topluluk yapımı) |
 | Dış araç bağlantısı | MCP (açık standart), resmi dizinde yaklaşık 900 connector | Kendi uygulama ve bağlayıcı kataloğu + GPT Actions |
 | Proje alanları | Projects (claude.ai, 17 Eylül 2026'da yeniden tasarlandı) | Projects (ChatGPT) |
 | Zamanlanmış ve uzaktan görev | Scheduled Tasks; Dispatch (telefondan görev atama) yeni kullanıcıya kapalı sınırlı beta | Zamanlanmış görevler |
 
-**Önemli fark:** CLAUDE.md dosyası düz metindir; tarayıcıda açıp düzenlersiniz. ChatGPT de kaydettiklerini gösterir, ama onun hafızası proje klasöründe yaşayan, ekiple paylaşılıp sürüm kontrolüne alınabilen bir dosya değildir. Kurumsal kullanımda **şeffaflık önemlidir**, çalışanın Claude'a ne öğrettiği görülebilir olmalı.
+**Önemli fark:** Claude'un kalıcı talimatları düz metindir: profil talimatını ayarlardan, Cowork klasörünüzdeki CLAUDE.md dosyasını bir editörle düzenlersiniz (sıradan sohbet CLAUDE.md okumaz, orada profil ve proje talimatı geçerlidir). ChatGPT de kaydettiklerini gösterir, ama onun hafızası proje klasöründe yaşayan, ekiple paylaşılıp sürüm kontrolüne alınabilen bir dosya değildir. Kurumsal kullanımda **şeffaflık önemlidir**, çalışanın Claude'a ne öğrettiği görülebilir olmalı.
 
 ## 5. Türkçe Kalitesi
 
 İkisi de çok iyi. Aralarındaki fark küçüktür ve kullanım biçimine göre değişir:
 
 - **Resmi Türkçe (sözleşme, resmi yazışma, hukuki metin):** Claude hafifçe önde. "Sayın", "takdirlerinize arz ederim", "işbu sözleşme" gibi formal kalıpları daha tutarlı kullanır.
-- **Yaratıcı içerik (pazarlama kopisi, sosyal medya):** İkisi de çok iyi. Ton ayarı CLAUDE.md / custom instructions ile şekillenir.
+- **Yaratıcı içerik (pazarlama kopisi, sosyal medya):** İkisi de çok iyi. Ton ayarı kalıcı talimatla (Claude'da profil talimatı veya CLAUDE.md, ChatGPT'de custom instructions) şekillenir.
 - **Teknik Türkçe (IT, finans terminolojisi):** Eşit. İkisi de "bulut bilişim", "nakit akışı", "karlılık oranı" gibi terimleri doğru kullanır.
 
 ## 6. Fiyat
 
 Bireysel kullanıcı planları benzer:
 
-- **Claude Pro:** 20 USD/ay, Sonnet 5.5 ve Opus 5.5 plana dahil (Fable 5.1 yalnızca ek kullanım kredisiyle)
+- **Claude Pro:** 20 USD/ay (Max kademeleri dahil tüm Claude fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında); Sonnet 5.5 ve Opus 5.5 plana dahil, Fable 5.1 yalnızca ek kullanım kredisiyle
 - **ChatGPT Plus:** 20 USD/ay, benzer kullanım. ChatGPT'de ayrıca Go (8 USD/ay) ve üç kademeli Pro (100, 200 ve 500 USD/ay) planları var
 
-Kurumsal tarafta Claude Team koltuk başına Standard 25 USD/ay (yıllık faturada 20 USD), Premium 125 USD/ay (yıllıkta 100 USD) fiyatlıdır; en az 2 koltuk gerekir. Claude Enterprise koltuk başına 20 USD/ay (yıllık faturalı) artı kullanımın API fiyatıyla ayrıca faturalanması modelindedir. ChatGPT Business kullanıcı başına 20 USD/ay (yıllık faturalı, en az 2 kullanıcı); Enterprise özel fiyatlıdır. Rakip fiyatları Ekim 2026 itibarıyla geçerlidir ve hızlı değişir, güncel fiyat için resmi sayfalara bakın.
+Kurumsal tarafta Claude Team ve Enterprise fiyatları ile kullanım modeli [Planlar](/wiki/temeller/planlar/) sayfasında. ChatGPT Business kullanıcı başına 20 USD/ay (yıllık faturalı, en az 2 kullanıcı); Enterprise özel fiyatlıdır. Rakip fiyatları Ekim 2026 itibarıyla geçerlidir ve hızlı değişir, güncel fiyat için resmi sayfalara bakın.
 
 **Fiyat karar verici olmaz.** İkisi arasında ayda 5 USD fark varsa ve ikisinden biri işinizi %20 daha hızlı yapıyorsa, doğru cevap belli.
 
@@ -93,7 +93,7 @@ Kurumsal tarafta Claude Team koltuk başına Standard 25 USD/ay (yıllık fatura
 Birçok orta ölçekli Türk şirketi Claude'u tercih ediyor. Sebepleri:
 
 1. **Kurumsal güven.** "Dürüst" tasarım felsefesi, finans ve hukuk bölümlerinde kritik hatalardan korur.
-2. **CLAUDE.md.** Çalışanın yapay zekaya ne öğrettiği açık bir dosyada görülür. Kurumsal şeffaflık için bu tek başına önemli bir farktır.
+2. **Açık kalıcı talimat.** Çalışanın yapay zekaya ne öğrettiği (profil/proje talimatı, Cowork klasöründeki CLAUDE.md) düz metin olarak görülür. Kurumsal şeffaflık için bu tek başına önemli bir farktır.
 3. **Cowork + Skills + MCP.** İş akışı odaklı ekosistem, tek bir oturumda "belgeyi oku → raporu yaz → Slack'te paylaş" zincirini akıcı kurar.
 4. **Uzun belge performansı.** Türk iş dünyasında uzun sözleşmeler, tender dosyaları, denetim raporları sıradan. Claude bu tip belgelerde güçlü bir seçenektir.
 
@@ -101,25 +101,9 @@ Birçok orta ölçekli Türk şirketi Claude'u tercih ediyor. Sebepleri:
 
 ## Ya Google Gemini?
 
-Google'ın yapay zeka ürünü **Gemini** son iki yılda ciddi olgunluk kazandı. Özellikle Google Workspace kullanan şirketler için doğal bir seçenek.
+Google'ın yapay zekâ ürünü **Gemini**, Google Workspace (Gmail, Drive, Docs, Sheets) kullanan şirketler için doğal bir seçenek: ek hesap gerekmez, asistan zaten uygulamanın içindedir. Uzun bağlamda (1 milyon token) Claude'un güncel modelleriyle başa baş, bu başlık artık belirleyici değil. Claude'un iş akışı tarafı (Cowork, Skills, MCP) ile Gemini'nin Workspace içi yerleşikliği farklı güçler; Türkçe kalitesinde günlük kullanımda fark küçük. Gemini'nin ticari sözleşme metnini bu sayfa için incelemedik, DPA ve KVKK konusunda iki sözleşmeyi yan yana okuyun.
 
-**Güçlü yönleri:**
-
-- **Google Workspace entegrasyonu**: Gmail, Drive, Docs, Sheets ile native entegrasyon. Zaten Workspace kullanıyorsanız ek bir hesaba ihtiyaç yok.
-- **Uzun bağlam**: Gemini planları 1 milyon token bağlam penceresi sunuyor. Claude'un güncel modelleri de 1 milyon token sunduğu için bu başlık eskisi kadar belirleyici değil.
-- **Google altyapısı**: güvenilirlik ve ölçeklendirme tarafında pişmiş.
-- **Fiyat rekabetçiliği**: Google AI Pro 19,99 USD/ay, Google AI Plus 4,99 USD/ay, yani bireysel planlar Claude Pro ve ChatGPT Plus civarında ya da daha ucuz. Ayrıntı: [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/).
-
-**Zayıf yönleri:**
-
-- **Ekosistem derinliği daha az**: Claude'un Cowork + Skills + MCP bütünü Gemini'de henüz yok. "Workspace içinde akıllı asistan" seviyesi var, "iş akışı dönüştürücü" seviyesi değil.
-- **Türkçe kalitesi** iyi, ama resmi Türkçe yazışmada ton nüansında Claude ve ChatGPT'ye göre biraz geride kalabiliyor. Günlük kullanımda fark küçük.
-- **Kurumsal veri kontrolü**: Workspace kullanıyorsanız güçlü. DPA ve KVKK konusunda Gemini'nin ticari şartlarını Claude'unkilerle yan yana okuyun; Gemini'nin sözleşme metnini bu sayfa için incelemedik.
-- **Konumlandırma karışık**: "Google AI Plus/Pro/Ultra" abonelikleri, "Gemini Code Assist", "Gemini in Workspace" gibi çok farklı ürünler var, hangisini kullanacağınızı çözmek kafa karıştırıyor.
-
-**Değerlendirme:**
-
-Şirketiniz **Google Workspace tabanlıysa ve basit kullanım** istiyorsa Gemini pratiktir. Ama derinlemesine iş akışı entegrasyonu için henüz Claude kadar olgun değil. 6-12 ay sonra tekrar değerlendirmeye değer.
+Güçlü ve zayıf yönler, fiyatlar, karar matrisi ve "ikisini birden kullanmak mantıklı mı" sorusu için [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/) sayfasına bakın.
 
 ## Ya Mistral (Fransız)?
 
@@ -128,13 +112,13 @@ Mistral AI, Paris merkezli bir Avrupa yapay zeka şirketi. AB bağımsızlığı
 **Güçlü yönleri:**
 
 - **AB menşeli**: veri gizliliği konusunda daha net GDPR uyumu, AB kaynaklı müşterilerle çalışan şirketler için siyasi olarak "güvenli tercih"
-- **Açık kaynak modelleri** (Mistral 7B, Mixtral): on-premises dağıtıma izin verir. Savunma ve finans sektörü için değerli.
+- **Açık ağırlıklı modeller** (güncel aile için Mistral'in sayfasına bakın): on-premises dağıtıma izin verir. Savunma ve finans sektörü için değerli.
 - **Hızlı iterasyon**: son bir yılda rekabetçi modeller çıkardılar
 - **Fiyat rekabetçiliği**: özellikle API kullanımında
 
 **Zayıf yönleri:**
 
-- **Kurumsal özellik olgunluğu**: Claude'un CLAUDE.md'si, Cowork'ü, Skills'i, MCP'si dengi yok
+- **Kurumsal özellik olgunluğu**: Claude'un kalıcı talimat yapısı (CLAUDE.md dahil), Cowork'ü, Skills'i, MCP'si dengi yok
 - **Türkiye pazarında destek sınırlı**: bu bölgede Türkçe dokümantasyon, yerel müşteri desteği, DPA süreci zayıf
 - **Genel kalite**: en üst seviye modelde Claude/ChatGPT'nin bir adım gerisinde (hızla kapanıyor)
 
@@ -170,7 +154,7 @@ Açık kaynak modeller hızla gelişiyor, 2-3 yıl sonra belki bu değerlendirme
 
 Son zamanlarda "Claude vs ChatGPT vs Grok" karşılaştırmaları popüler. Dürüst görüşümüz: **Grok şu an iş kullanımında ciddi bir üçüncü seçenek değil.**
 
-xAI'nin ürünü Grok, daha çok tüketici ve eğlence odaklı konumlanıyor, X/Twitter entegrasyonu, gündem yorumu, mizahi ton bu tarafa yatırım yapıyor. Kurumsal tarafta ise henüz CLAUDE.md benzeri şeffaf bir hafıza dosyası, MCP gibi açık bir bağlantı standardı, Cowork seviyesinde bir iş akışı ortamı veya olgun bir Team/Enterprise planı sunmuyor. Türkiye'deki kurumsal kullanım için kritik olan KVKK uyumluluğu konusunda da veri işleme konumu hâlâ belirsiz.
+xAI'nin ürünü Grok, daha çok tüketici ve eğlence odaklı konumlanıyor, X/Twitter entegrasyonu, gündem yorumu, mizahi ton bu tarafa yatırım yapıyor. Kurumsal tarafta ise henüz CLAUDE.md benzeri şeffaf bir talimat dosyası, MCP gibi açık bir bağlantı standardı, Cowork seviyesinde bir iş akışı ortamı veya olgun bir Team/Enterprise planı sunmuyor. Türkiye'deki kurumsal kullanım için kritik olan KVKK uyumluluğu konusunda da veri işleme konumu hâlâ belirsiz.
 
 Bu durum değişebilir, xAI hızlı hareket ediyor. Ama bugün itibariyle, bir şirketin yapay zeka stratejisini kurarken karar Claude ile ChatGPT arasındadır. Grok zamanla ciddi bir alternatif olursa bu sayfayı güncelleriz.
 
@@ -273,7 +257,7 @@ Hangi gelişme Türk kurumsal kullanıcısını doğrudan etkiler? Üç ana ekse
 
 1. **KVKK uyum özellikleri**: ticari planlardaki DPA şartları ve veri saklama seçenekleri
 2. **Türkçe performans**: her iki modelin Türkçe kalitesinin seyri
-3. **Kurumsal connector'lar**: Türkiye'de yaygın araçlar (Logo, Netsis gibi yerel sistemler için MCP desteği)
+3. **Kurumsal connector'lar**: Türkiye'de yaygın araçlar (Logo, Mikro, Paraşüt için resmi connector yok; özel connector veya API ile kurulur)
 
 Bu eksenler değiştikçe wiki güncellenir.
 
@@ -282,11 +266,13 @@ Bu eksenler değiştikçe wiki güncellenir.
 | Sizin için öncelik... | Muhtemelen daha uygun |
 |---|---|
 | Uzun belge analizi, hukuk, finans | **Claude** |
-| Şeffaf kalıcı hafıza (CLAUDE.md) | **Claude** |
+| Şeffaf kalıcı talimat (CLAUDE.md, profil talimatı) | **Claude** |
 | İş akışı otomasyonu (Skills + MCP) | **Claude** |
 | Geniş topluluk GPT'leri | **ChatGPT** |
 | Görsel üretimi | **ChatGPT** (Claude görsel üretmez veya düzenlemez, yalnızca yorumlar) |
 | Ekibinizin çoğunluğu zaten alışkın | **Zaten kullandığı** |
+
+Hâlihazırda ChatGPT kullanıyor ve Claude'a geçmeyi düşünüyorsanız, tercihlerinizi ve bağlamınızı kaybetmeden taşıma yolu için [ChatGPT'den Claude'a geçiş](/claude/gecis/) sayfasına bakın.
 
 ## İlgili Sayfalar
 
@@ -294,5 +280,5 @@ Bu eksenler değiştikçe wiki güncellenir.
 - [Claude Modelleri](/wiki/temeller/modeller/): Fable / Opus / Sonnet / Haiku
 - [Claude Planları](/wiki/temeller/planlar/): Fiyat ve özellik detayları
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Claude'un kurumsal çalışma ortamı
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Şeffaf kalıcı hafıza
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Şeffaf kalıcı talimat
 

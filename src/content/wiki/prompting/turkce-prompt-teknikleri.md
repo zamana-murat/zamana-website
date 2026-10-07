@@ -1,16 +1,17 @@
 ---
-title: "Türkçe Prompt Teknikleri: Dile Özgü İpuçları"
-description: "Türkçe prompt yazarken karşılaşılan sorunlar ve çözümleri. Tonlama, eklemeli yapı, kod-anahtarlama ve \"İngilizce kayma\" tuzağı."
+title: "Türkçe Prompt Yazma: Dile Özgü Teknikler"
+seoTitle: "Türkçe Prompt Yazma: Claude İçin 12 Teknik ve Şablon"
+description: "Türkçe prompt yazarken kayıt seçimi, sen/siz, sayı ve tarih yazımı, klişe iş dili ve İngilizceye kayma sorunları için teknikler ve şablon."
 tags:
   - prompting
   - turkce
   - dil
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-**Claude Türkçe'yi iyi anlar, ama Türkçe yazılan prompt İngilizce yazılan prompttan farklı tepki üretebilir.** Türkçe'nin sondan eklemeli yapısı, tonlama nüansları, iş hayatındaki kalıpları farklıdır. Bu sayfa Türkçe-spesifik teknikleri anlatır.
+**Türkçe prompt yazmak İngilizce yazmaktan farklı dikkat ister.** Claude Türkçe'yi iyi anlar, ama Türkçe yazılan prompt İngilizce yazılan prompttan farklı tepki üretebilir: sondan eklemeli yapı, tonlama nüansları ve iş hayatındaki kalıplar farklıdır. Bu sayfa on iki Türkçe'ye özgü tekniği ve bir şablonu anlatır.
 
-[Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası genel kalite tablosunu gösterir; bu sayfa **prompt yazarken neye dikkat etmeli** sorusuna odaklanır.
+Fark tek cümleyle: [Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası Claude'un Türkçe'de **ne kadar iyi** olduğunu gösterir; bu sayfa **prompt yazarken neye dikkat edeceğinizi** anlatır.
 
 ## Önce Genel Prensip
 
@@ -22,7 +23,7 @@ Claude'un Türkçe çıktı kalitesi yüksek. Ama:
 
 Üç temel teknik bunları çözer.
 
-## 1. Kayıt (Register) Açıkça Belirt
+## 1. Kayıt (Hitap Düzeyi) Açıkça Belirt
 
 Türkçe'de iletişim kayıtları İngilizce'den daha katı:
 
@@ -47,11 +48,17 @@ Uzun bir Türkçe sohbette Claude bazen İngilizce'ye kayar, özellikle teknik t
 
 **Önleme:**
 
-[CLAUDE.md](/wiki/claude-md/nedir/) içine net bir dil kuralı:
+Net bir dil kuralını **kalıcı talimata** yazın. Nereye yazacağınız, Claude'u nerede kullandığınıza bağlıdır:
 
-```markdown
-## Dil
-Tüm yanıtların Türkçe. Teknik terim için İngilizce karşılık parantez içinde 
+- **Claude sohbetinde** (web, masaüstü, mobil): Settings > General altındaki "Instructions for Claude" alanı tüm sohbetlerde geçerlidir. Kural yalnız bir iş için gerekiyorsa o işin [Projesi](/wiki/araclar/projects/)ndeki proje talimatına yazın
+- **Cowork'te:** global talimat (her oturumda) ya da klasör talimatı (o klasörle çalışırken)
+- **Claude Code'da:** [CLAUDE.md](/wiki/claude-md/nedir/) dosyası (Claude Code'un mekanizmasıdır)
+
+Hangi talimatın nerede geçerli olduğu ve hafızayla farkı için [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasına bakın. Talimat metni şöyle olabilir:
+
+```
+Dil
+Tüm yanıtların Türkçe. Teknik terim için İngilizce karşılık parantez içinde
 verilir (örn. "akış (flow)"). Kullanıcı Türkçe yazdığı sürece İngilizce'ye geçilmez.
 ```
 
@@ -102,10 +109,10 @@ Claude'un eğitim verisindeki Türkçe iş dili klişe yüklü. Aşağıdakiler 
 
 [Pazarlama departmanı](/wiki/departmanlar/pazarlama/) ve [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfalarında alternatif kalıplar var.
 
-[CLAUDE.md](/wiki/claude-md/nedir/) içine yasak kelime listesi koymak en pratik çözüm:
+Yasak kelime listesini kalıcı talimata (profil talimatı, proje talimatı, Cowork talimatı ya da Claude Code'da CLAUDE.md; yerler için 2. teknikteki listeye bakın) koymak en pratik çözümdür:
 
-```markdown
-## Yasak Kalıplar
+```
+Yasak Kalıplar
 - "Sayın değerli", "ilginiz için teşekkür"
 - "En içten saygılarımla", "hoş bir gün"
 - Yerine: "Merhaba [İsim]", "İyi günler", "Soruların için teşekkürler"
@@ -153,10 +160,10 @@ Türkiye'deki şirketlerin iç jargonu çok sektörel:
 - Üretim: "fire", "vardiya", "kademe", "OEE"
 - IT: "patch", "deploy", "uptime", "downtime"
 
-[CLAUDE.md](/wiki/claude-md/nedir/) içine **şirket içi sözlük** koyun:
+Kalıcı talimatınıza (2. tekniğin sonundaki yerler) bir **şirket içi sözlük** koyun:
 
-```markdown
-## Şirket Akronimleri ve Jargon
+```
+Şirket Akronimleri ve Jargon
 - PMV: Proje Müdürü Vekâleti
 - "Kara Hat": Anadolu üretim tesisi
 - "Yumuşak deadline": tarih önemli ama bir gün kaymak suç değil
@@ -208,6 +215,8 @@ Yeni bir prompt yazdığınızda Türkçe kalitesini test edin:
 Türkçe iş prompt'u için temel iskelet:
 
 ```
+Rol: [Claude'un rolü: örn. kıdemli satış yöneticisi, iş hukuku danışmanı]
+
 Görev: [Ne istiyorsun]
 
 Bağlam:
@@ -236,4 +245,5 @@ Kurallar:
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle öğretme
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Tipik prompting hataları
 - [CLAUDE.md / Hata Ayıklama](/wiki/claude-md/hata-ayiklama/): Dil sorunları çözümü
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat ve hafıza katmanları
 

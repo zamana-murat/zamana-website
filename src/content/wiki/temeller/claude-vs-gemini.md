@@ -6,7 +6,7 @@ tags:
   - karsilastirma
   - gemini
   - google
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Gemini, Google'ın amiral AI modelidir**: Workspace (Gmail, Docs, Drive, Calendar) içine derinlemesine entegredir, çoğu Türkiye kurumsalında zaten ücretsiz olarak deneniyor.
@@ -23,7 +23,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 | Türü | Bağımsız AI ürünü | Google ekosistemi içine gömülü |
 | Web arayüzü | claude.ai | gemini.google.com |
 | Workspace entegrasyonu | [Connector](/wiki/araclar/connectors/) ile | Yerleşik (Docs / Gmail / Slides içinde doğrudan) |
-| API | Anthropic Console | Google AI Studio / Vertex AI |
+| API | Claude Platform (platform.claude.com) | Google AI Studio / Vertex AI |
 | Türkçe kalitesi | Yüksek | İyi (günlük kullanımda fark küçük) |
 | Görsel anlama | ✅ | ✅ (çok güçlü, multimodal odaklı) |
 | Sohbet geçmişi | Hesaba bağlı | Google hesabınıza bağlı |
@@ -39,7 +39,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 
 **[Cowork](/wiki/araclar/cowork-modu/), [Skills](/wiki/yetenekler/skills/), [Artifacts](/wiki/yetenekler/artifacts/).** İş profesyonelleri için tasarlanmış üretim katmanı var (.docx, .xlsx, .pptx üretimi, scheduled task). Gemini'de de benzer araçlar bulunuyor, ama bunları Claude'un iş akışı odaklı paketi kadar bütünleşik bulmuyoruz.
 
-**[CLAUDE.md](/wiki/claude-md/nedir/), kalıcı kişiselleştirme.** Claude'a "ben kimim, nasıl çalışırım" anlatabileceğiniz yerleşik bir mekanizma var. Gemini'de de kişisel bağlam özellikleri bulunuyor, ama proje klasöründe yaşayan, ekiple paylaşılan düz metin bir dosya karşılığı yok.
+**Kalıcı talimat ([profil talimatı, CLAUDE.md](/wiki/claude-md/nedir/)), kalıcı kişiselleştirme.** Claude'a "ben kimim, nasıl çalışırım" anlatabileceğiniz yerleşik bir mekanizma var. Gemini'de de kişisel bağlam özellikleri bulunuyor, ama proje klasöründe yaşayan, ekiple paylaşılan düz metin bir dosya karşılığı yok.
 
 ## Güçlü Yönler: Gemini
 
@@ -71,7 +71,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 
 Google'ın abonelik sayfalarına göre ABD fiyatları: **Google AI Plus** 4,99 USD/ay, **Google AI Pro** 19,99 USD/ay, **Google AI Ultra** 99,99 USD/ay'dan başlıyor (üst kademe 199,99 USD). Türkiye'de aynı planlar 199,99 TL, 869,99 TL ve 1.479,99 TL/ay'dan başlıyor. Abonelik sayfaları "Gemini 3.1 Pro" modelini listeliyor (Ultra'da Deep Think). Geliştirici tarafında en yeni kararlı model Gemini 3.8 Flash. Bunlar hızla değişir, karar öncesi Google'ın sayfasına bakın.
 
-Karşılaştırma için Claude tarafı: Pro 20 USD/ay, Max 100 ve 200 USD/ay, Team Standard koltuk 25 USD aylık (yıllıkta 20 USD). Ayrıntı: [Planlar](/wiki/temeller/planlar/).
+Claude tarafının fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında.
 
 ## Karar Matrisi: Hangi İşte Hangisi?
 

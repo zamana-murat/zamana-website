@@ -1,11 +1,12 @@
 ---
 title: "Prompting Temel İlkeleri: İyi Bir Promptun Anatomisi"
-description: "Claude'a soru sormanın yapısı. Rol, bağlam, görev, format, kısıtlar ve iterasyon. Prompt yazımı çoğu kişinin düşündüğünden daha kurallıdır."
+seoTitle: "Prompt Nasıl Yazılır? Claude İçin 5 Bileşen ve Örnek"
+description: "Claude için prompt nasıl yazılır? Rol, bağlam, görev, format ve kısıtlar: beş bileşen, Türkçe örnekler, iterasyon ve hızlı kontrol listesi."
 tags:
   - prompting
   - temel
   - prompt-anatomisi
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Prompting, Claude'la çalışırken en öğretilebilir beceridir. Ve en çok hata yapılan yerdir.
@@ -16,13 +17,17 @@ Bu sayfa, her iş profesyonelinin günlük promptlarına uygulayabileceği beş 
 
 ## Bir Promptun Beş Bileşeni
 
+![Bir promptun beş bileşeni: rol, bağlam, görev, format ve kısıtlar; her biri bir soruya cevap verir, satış takip e-postası örneğiyle](/images/wiki/prompting-prompt-anatomisi.svg)
+
 ### 1. Rol: Claude'a Kim Olduğunu Söyleyin
 
 Claude'un hangi uzmanlıkla yaklaşmasını istediğinizi belirtin.
 
-> *"Deneyimli bir B2B satış profesyonelisiniz..."*
-> *"İş hukukunda uzmanlaşmış, Türk İş Kanunu'na hâkim bir avukatsınız..."*
-> *"Kurumsal bir toplantı moderatörüsünüz..."*
+> *"Deneyimli bir B2B satış profesyonelisin..."*
+> *"İş hukukunda uzmanlaşmış, Türk İş Kanunu'na hâkim bir avukatsın..."*
+> *"Kurumsal bir toplantı moderatörüsün..."*
+
+(Örneklerde Claude'a "sen" diye hitap ediyoruz; bu sayfanın okuruna hitabımız "siz" kalıyor. İkisi de çalışır, önemli olan tutarlı olmak.)
 
 Rol, Claude'un cevabın tonunu, derinliğini ve odağını belirler. Boş bırakırsanız "genel bir asistan" gibi davranır, cevaplar sönük ve ortalama olur.
 
@@ -34,6 +39,8 @@ Ne kadar ilgili bağlam verirseniz çıktı o kadar iyi olur. İş bağlamı öz
 
 Bağlam üç soruya cevap verir: **Kim için**, **ne durumda**, **neden şimdi**. Bu üçü olmadan Claude tahminde bulunur ve genellikle yanlış tahmin eder.
 
+**Hassas veri uyarısı:** Bağlam yazarken müşteri adı, TC kimlik numarası, maaş ya da sağlık bilgisi gibi kişisel veri girmeden önce durun. Gerekmiyorsa anonimleştirin ("Müşteri A", "çalışan X"), gerekiyorsa şirketinizin politikasına bakın. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+
 ### 3. Görev: Ne İstediğinizi Net Söyleyin
 
 Ne istediğinizi tam ve belirgin söyleyin.
@@ -43,6 +50,8 @@ Ne istediğinizi tam ve belirgin söyleyin.
 > *"Bu tedarikçi teklifi için 150 kelimelik bir reddetme mektubu yaz..."*
 
 "Bir şey yaz" dersek Claude rastgele yazar. "Tam olarak ne, ne uzunlukta, hangi amaçla" dediğimizde işler netleşir.
+
+Görevin içine **başarının ne demek olduğunu** da yazın: "Bu e-posta başarılı sayılır, eğer karar verici teknik keşif için tarih önerirse." Neye ulaşmaya çalıştığını bilen Claude, neyi öne çıkaracağına daha iyi karar verir.
 
 ### 4. Format: Çıktı Biçimini Söyleyin
 
@@ -61,6 +70,7 @@ Kısıtlar pozitif talimatların yapamadığını yapar, Claude'un düşmemesi g
 > *"Hiçbir yerde 'sinerjik' veya 'devrim yaratan' kelimelerini kullanma."*
 > *"Rakip marka isimleri dahil etme."*
 > *"İçeriğe atıfta bulunmadan önce onayımı iste."*
+> *"Rakam uydurma. Yalnız verdiklerimi kullan; bilgi eksikse eksik de."*
 
 ## Beşini Birleştirmek: Bir Gerçek Örnek
 
@@ -70,15 +80,15 @@ Kısıtlar pozitif talimatların yapamadığını yapar, Claude'un düşmemesi g
 
 **Güçlü prompt (5 bileşenle):**
 
-> *"**Rol:** B2B endüstriyel ekipman satışında 10 yıllık deneyimli bir satış yöneticisisiniz.*
+> *"**Rol:** B2B endüstriyel ekipman satışında 10 yıllık deneyimli bir satış yöneticisisin.*
 >
 > ***Bağlam:** Dün bir potansiyel müşteriyle ilk toplantıyı yaptık. Şirket: XYZ Gıda, orta ölçekli üretici, Konya merkezli. Onları SCADA güncelleme ihtiyaçlarından konuştuk. Karar verici Ahmet Bey, teknik geçmişi olan genel müdür. Bütçe hassasiyetleri var ama sistem kritik. Bir sonraki adımda teknik keşif istiyorlar.*
 >
-> ***Görev:** Toplantı sonrası bir takip e-postası yazın. Teknik keşif görüşmesi için gelecek ayın ilk haftasında randevu önerin.*
+> ***Görev:** Toplantı sonrası bir takip e-postası yaz. Teknik keşif görüşmesi için gelecek ayın ilk haftasında randevu öner. Başarı ölçütü: Ahmet Bey'in bir tarih seçmesi.*
 >
 > ***Format:** 3 kısa paragraf. Konu satırı dahil. Maksimum 180 kelime.*
 >
-> ***Kısıtlar:** Fiyattan söz etmeyin. Ürün özelliği saymaya başlamayın. Türkçe, resmi ama sıcak ton. "Umarım", "keyifli" gibi hafif ifadelerden kaçının."*
+> ***Kısıtlar:** Fiyattan söz etme. Ürün özelliği saymaya başlama. Türkçe, resmi ama sıcak ton. "Umarım", "keyifli" gibi hafif ifadelerden kaçın. Rakam uydurma, yalnız yukarıda verdiklerimi kullan."*
 
 İkinci prompt yaklaşık iterasyonsuz çalışır. İlki birkaç tur geri bildirim ister ve yine de genel kalır.
 
@@ -104,25 +114,27 @@ Kötü bir alışkanlık: Claude ilk cevabı verir, çalışan "olmadı" deyip y
 
 ## Bağlamı Önce Verin Prensibi
 
-Her zaman Claude'a **ihtiyacı olan bağlamı ÖNCE** verin, sonra sorunuzu sorun.
+Her zaman Claude'a **ihtiyacı olan bağlamı ÖNCE** verin, sonra sorunuzu sorun. Soruyu başa yazıp durumu "aa, bu arada" diye sonradan eklemek, bir danışmanı arayıp önce "ne yapmalıyım?" deyip sonra durumu anlatmak gibidir. Önce durum, sonra soru:
 
-**Yanlış:**
-> *"Bu müşteri için ne yapmalıyım? Aa, bu arada müşteri 3 yıldır bizimle çalışıyor ve son 2 ay cevap vermedi..."*
+> *"Bağlam: Müşteri 3 yıldır bizimle çalışıyor, son 2 ay cevap vermedi, bütçe sıkıntısından bahsetmişti. Soru: Şimdi en doğru adım nedir?"*
 
-**Doğru:**
-> *"Bağlam: Müşteri 3 yıldır bizimle çalışıyor, son 2 ay cevap vermedi, önceki üç toplantıda bütçe sıkıntısından bahsetmişti, kilit karar verici eski iletişim müdürümüzle ilişkisi iyiydi (kendisi ayrıldı). Soru: Bu müşteri için şimdi en doğru adım nedir?"*
+Uzun belgelerde bu sıranın nasıl işlediği [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/) sayfasında.
 
-İkinci versiyon Claude'a soruyu cevaplamak için gereken her şeyi veriyor. Birincisi, bir danışmanı arayıp önce "ne yapmalıyım?" deyip sonra durumu açıklamak gibidir; öyle bir görüşmeden iyi cevap çıkmaz.
+## Düşünme Derinliği: Prompt mu, Effort mu?
 
-## Zincirleme Düşünme: Claude'a "Düşün" Demek
+Eskiden karmaşık işlerde "cevaptan önce adım adım düşün" yazmak ana kaldıraçtı. Güncel modellerde (Sonnet 5.5, Opus 5.5, Fable 5.1) Thinking kapatılamıyor; Claude gerektiğinde zaten düşünüyor. Bu cümle zararsız ama artık asıl iş yapan şey değil. İki şey daha çok işe yarar:
 
-Karmaşık problemler için Claude'a cevap vermeden önce düşünmesini söyleyin. Kalite fark edilir şekilde artar.
+- **Değerlendirme kriterlerini söyleyin.** "Karar vermeden önce şu üç ölçüte göre tart: maliyet, risk, süre." Claude'a neye bakacağını vermek, "daha çok düşün" demekten güçlüdür.
+- **Düşünme derinliğini Effort ile ayarlayın.** Pro ve üstü planlarda gönder düğmesinin yanındaki model adına tıklayınca model, Effort ve Thinking ayarları açılır. Effort beş kademedir (Low'dan Max'e): rutin işte düşük, zor karar ve analizde yüksek seçin. Yüksek effort limitinizi daha hızlı tüketir. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
 
-> *"Cevaptan önce bunu dikkatle adım adım düşün."*
-> *"Akıl yürütmeni önce özetle, sonra tavsiyeni ver."*
-> *"Karar vermeden önce 3 alternatif senaryoyu değerlendir."*
+*"Akıl yürütmeni önce özetle, sonra tavsiyeni ver"* gibi cümleler hâlâ işe yarar, ama gerekçeyi **görünür kılmak** için: Claude'un neden o sonuca vardığını siz denetleyebilirsiniz. Zincirleme (adımlara bölme) ve eleştirmen teknikleri [İleri Seviye](/wiki/prompting/ileri-seviye/) sayfasında derinlemesine anlatılıyor.
 
-Bu teknik özellikle strateji, müzakere, tasarım kararları, tanı ve analiz tipi görevlerde etkilidir.
+## Geliştiriciler için
+
+> **Bu kutu yalnız teknik ekipleri ilgilendirir; iş kullanıcısı atlayabilir.**
+>
+> - API'de düşünme derinliği `output_config.effort` ile (low, medium, high, xhigh, max) ayarlanır; Thinking ise ayrı bir `thinking` alanıdır. İkisi ayrı ayarlardır.
+> - Opus 5.5'te `thinking` alanını `disabled` yapmak her effort kademesinde hata verir (400).
 
 ## Claude'u Eleştirmen Yapın
 
@@ -132,7 +144,7 @@ Bir çıktı ürettirdikten sonra Claude'a **rol değiştirtin**. Şüpheci mü�
 > *"Talepkâr bir CEO olarak bu raporu oku. Hangi üç soruya cevap vermiyor?"*
 > *"Bu müzakerede karşı taraf ol. Bizim teklifimizin karşılık verilebilir en zayıf noktası nedir?"*
 
-Bu teknik, işi göndermeden önce eksikleri kendiniz yakalamanızı sağlar.
+Bu teknik, işi göndermeden önce eksikleri kendiniz yakalamanızı sağlar. Rolleri ve soru kalıplarını [İleri Seviye](/wiki/prompting/ileri-seviye/) sayfasında bulabilirsiniz.
 
 ## Yaygın Yanlışlar ve Düzeltmeleri
 
@@ -145,7 +157,7 @@ Bu teknik, işi göndermeden önce eksikleri kendiniz yakalamanızı sağlar.
 | Claude'u Google sanma | Yanlış zihinsel model | Düşünme ortağı olarak gör |
 | Tek promptta çoklu soru | Karışık çıktı | Tek prompt, tek görev |
 
-Bu tablo her haftada en az bir kez gözden geçirilmeli. Yaptığınız prompt'u gönderirken kendinize sorun: "Bu altı tuzaktan birine düştüm mü?"
+Bu tablo her haftada en az bir kez gözden geçirilmeli. Yaptığınız prompt'u gönderirken kendinize sorun: "Bu altı tuzaktan birine düştüm mü?" Hataların tamamı örnekleriyle [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) sayfasında.
 
 ## Hızlı Kontrol Listesi
 
@@ -154,16 +166,20 @@ Bir prompt yazdığınızda son bir kez göz gezdirin:
 - [ ] **Rol** verdim mi?
 - [ ] **Bağlam** yeterli mi? (kim, ne, neden)
 - [ ] **Görev** net mi? (tam olarak ne istiyorum)
+- [ ] **Başarı ne demek**, yazdım mı? (hangi sonuç bu işi başarılı kılar)
 - [ ] **Format** belirttim mi? (uzunluk, yapı, üslup)
-- [ ] **Kısıtlar** var mı? (kaçınılması gereken)
+- [ ] **Kısıtlar** var mı? (kaçınılması gereken, "rakam uydurma" dahil)
+- [ ] **Hassas veri** var mı? (varsa anonimleştirdim ya da politikaya baktım)
 - [ ] Bu bir **iterasyon**a girecek mi? (ilk çıktıyı sonuç saymıyorum)
 
-Altısı da evetse, prompt hazır. Tek sayfalık bir not olarak masanızın üstüne yazın, bir hafta sonra gözleriniz alışır.
+Sekizi de evetse, prompt hazır. Tek sayfalık bir not olarak masanızın üstüne yazın, bir hafta sonra gözleriniz alışır.
 
 ## İlgili Sayfalar
 
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Tüm prompting'in kavramsal çerçevesi (Description boyutu)
 - [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/): XML tags, few-shot prompting, prompt chaining
+- [Effort Kontrolü](/wiki/yetenekler/effort-control/): Düşünme derinliğini model menüsünden ayarlamak
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Prompta hangi veriyi yazmamalı
 - [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/): Bu hataları derinlemesine inceliyoruz
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Promptların üstüne inşa edildiği kalıcı hafıza
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Promptların üstüne inşa edilen kalıcı talimat (yerel Cowork ve Claude Code'da klasörden, sohbette profil ya da proje talimatından)
 

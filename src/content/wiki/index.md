@@ -1,12 +1,16 @@
 ---
 title: "Zamana Wiki: Türkiye'nin Claude Kaynağı"
-description: "Claude'u profesyonel olarak kullanmak için Türkçe kapsamlı rehber. Bireysel profesyoneller ve şirketler için CLAUDE.md, Cowork, prompting ve gerçek iş akışları."
-lastUpdated: "2026-10-05"
+description: "Claude'u profesyonel olarak kullanmak için Türkçe kapsamlı rehber. Bireysel profesyoneller ve şirketler için kalıcı talimat (CLAUDE.md dahil), Cowork, prompting ve gerçek iş akışları."
+lastUpdated: "2026-10-06"
 ---
 
 **Claude'u doğru kullanmanın Türkçe kaynağı.**
 
 Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek isteyen herkese yöneliktir: bağımsız profesyoneller, şirket çalışanları, ekip yöneticileri. Kod yazmayı öğretmek için değil; satış, finans, hukuk, İK, operasyon ve yönetim alanlarında pratik, gerçek iş çıktısı üretmek için.
+
+![Anthropic Claude'u geliştirir ve satar, abonelik doğrudan Anthropic'ten alınır; Zamana bayi değildir, bağımsız eğitim, danışmanlık ve ücretsiz wiki sunar](/images/wiki/wiki-zamana-claude.svg)
+
+*Zamana abonelik satmaz; Claude aboneliğinizi doğrudan Anthropic'ten alırsınız.*
 
 ## Nereden Başlamalı?
 
@@ -36,13 +40,13 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     [→ Departmanlar](/wiki/departmanlar/)
 
--   <span class="wiki-icon wiki-icon--lg" data-icon="file-document" aria-hidden="true"></span> **CLAUDE.md nedir?**
+-   <span class="wiki-icon wiki-icon--lg" data-icon="file-document" aria-hidden="true"></span> **CLAUDE.md ve Kalıcı Talimat**
 
     ---
 
-    Claude'un sizi (ve varsa şirketinizi) tanıması için hazırlanan kalıcı hafıza dosyası.
+    Claude'a kendinizi (ve varsa şirketinizi) bir kez tanıtmanın yolları: profil talimatı, proje talimatı, klasörde CLAUDE.md.
 
-    [→ CLAUDE.md Rehberi](/wiki/claude-md/)
+    [→ Kalıcı Talimat Rehberi](/wiki/claude-md/)
 
 </div>
 

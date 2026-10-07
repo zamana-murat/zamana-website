@@ -6,7 +6,7 @@ tags:
   - prompt
   - token
   - kullanim
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Claude'la çalışmaya başlamadan önce iki kelimeyi bilmek yeterli: **prompt** ve **token**. İkisi de basit, ilk başta korkutucu değil.
@@ -45,15 +45,9 @@ Kabaca:
 
 ## Neden Önemli?
 
-Aboneliğinizin bir **kullanım limiti** vardır. Limit iki katmanlıdır: **5 saatlik kayan oturum penceresi** ve tüm ücretli planlarda **haftalık limit**. Harcadığınız şey sabit bir mesaj sayısı değil, işlenen metnin (token) miktarıdır.
+Aboneliğinizin bir **kullanım limiti** vardır ve harcadığınız şey sabit bir mesaj sayısı değil, işlenen metnin (token) miktarıdır. Limitin nasıl işlediği, hangi planda ne kadar olduğu ve dolunca ne yapılacağı ayrı bir sayfada anlatılıyor: [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/). Plan fiyatları için [Claude Planları](/wiki/temeller/planlar/).
 
-- **Pro ($20/ay):** temel limit
-- **Max 5x ($100/ay):** Pro'nun 5 katı
-- **Max 20x ($200/ay):** Pro'nun 20 katı
-
-Oturum limitine ulaştığınızda Claude size ne zaman yeniden açılacağını söyler. Korkutucu değil, pencere kayarak otomatik açılır. Haftalık limit dolarsa hafta sıfırlanana kadar beklersiniz ya da **kullanım kredisi** (kullandıkça öde) açarsınız. Ayrıntı için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
-
-> **Pratik gerçek:** Alışmış bir kullanıcı için ([Pro planda](/wiki/temeller/planlar/)) günde 1-3 saat aktif konuşma sorun çıkarmaz. Limit dolmaya yaklaşınca Claude sizi uyarır, o zaman düşünürsünüz. Yeni başlayanın ilk ayı daha yoğun geçer, bu yüzden ilk ay için Max 5x önerilir.
+> **Pratik gerçek:** Alışmış bir kullanıcı için günde 1-3 saat aktif konuşma genellikle sorun çıkarmaz. Yeni başlayanın ilk ayı daha yoğun geçer; bu yüzden ilk ay için daha yüksek bir plan öneriliyor, ayrıntısı Planlar sayfasında.
 
 ---
 
@@ -73,7 +67,7 @@ Token harcaması düşük olan işler:
 - Kısa cevaplar
 - Yeni sohbet başlatmak (geçmiş yük yok)
 
-**Endişelenmeyin**: alışkanlık oturduktan sonra günlük iş için Pro'nun limiti yeter. Yalnızca çok uzun belgelerle çalışırken (örn. 200 sayfalık sözleşme analizi) limite dikkat edin.
+**Endişelenmeyin**: alışkanlık oturduktan sonra günlük iş çoğu zaman limite takılmaz. Yalnızca çok uzun belgelerle çalışırken (örn. 200 sayfalık sözleşme analizi) limite dikkat edin.
 
 ---
 
@@ -84,7 +78,7 @@ claude.ai veya Claude Desktop'ta:
 1. **Sol alt köşedeki profil ikonunuza** tıklayın
 2. Açılan menüden **"Settings"** seçin
 3. Sol panelden **"Usage"** sekmesine tıklayın
-4. Mevcut limit + kullanılan miktar + sıfırlanma zamanı görünür
+4. Mevcut limit + kullanılan miktar + sıfırlanma zamanı görünür (nasıl okunacağı: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/))
 
 Ekranınızda şuna benzer bir bilgi olur:
 
@@ -100,13 +94,9 @@ Bu kadar, kullanım takibi tek tıklama uzakta. Limite yaklaşırken Claude size
 
 Hayır. Tipik kullanıcı token saymaz, sadece limite çarptığında öğrenir. **Sayma, kullan.**
 
-**"Limit dolarsa ne olur?"**
+**"Limit dolarsa ne olur?" / "Limitlere sık çarpıyorum, ne yapmalıyım?"**
 
-5 saatlik oturum limiti dolduğunda Claude yeniden açılma zamanını söyler. Haftalık limit dolarsa hafta sıfırlanana kadar bekleyebilir, planı yükseltebilir ya da kullanım kredisi açabilirsiniz. Aylık bir limit yoktur. Ayrıntı: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/).
-
-**"Limitlere sık çarpıyorum, ne yapmalıyım?"**
-
-Pro'da iseniz ve sık limit problemi yaşıyorsanız Max 5x'e ($100/ay) yükseltmenin zamanı gelmiştir. Detay: [Planlar](/wiki/temeller/planlar/).
+Bunlar ayrı bir sayfada ayrıntılı yanıtlanıyor: [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/).
 
 **"Token = para mı?"**
 
@@ -116,7 +106,8 @@ Doğrudan değil. Aboneliğinize dahil edilen kotayı tüketirsiniz. Kota dolunc
 
 ## İlgili Sayfalar
 
-- [Claude Planları](/wiki/temeller/planlar/): Plan limitleri ve fiyatlar
+- [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/): Limit yapısı, dolunca ne yapılır
+- [Claude Planları](/wiki/temeller/planlar/): Plan fiyatları
 - [İlk Kurulum](/wiki/temeller/ilk-kurulum/): Hesap açma + abonelik
 - [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/): İyi prompt nasıl yazılır
 

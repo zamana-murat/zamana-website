@@ -1,24 +1,27 @@
 ---
 title: "Claude Chat (claude.ai): Tarayıcıdan Claude Kullanmak"
-description: "Claude'un tarayıcı ve mobil sohbet arayüzü: ne için uygun, hangi işlerde Cowork tarzı çalışmaya geçmeli, 16 Eylül birleşmesi neyi değiştirdi."
+seoTitle: "Claude Chat (claude.ai) Nasıl Kullanılır?"
+description: "Claude'un tarayıcı ve mobil sohbet arayüzü: ne için uygun, hangi işlerde Cowork tarzı çalışmaya geçmeli ve 16 Eylül birleşmesi neyi değiştirdi."
 tags:
   - araclar
   - claude-chat
   - web
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Claude Chat, Claude'un tarayıcı ve mobil uygulamalardaki standart arayüzüdür**, çoğu kişinin Claude'la ilk tanıştığı yerdir. [claude.ai](https://claude.ai) adresinden ve iOS / Android uygulamalarından erişilir.
 
 Bu sayfa Claude Chat'in ne yaptığını, ne yapmadığını ve bir iş profesyonelinin hangi görevleri sohbet tarzında, hangilerini [Cowork](/wiki/araclar/cowork-modu/) tarzında yapması gerektiğini açıklar.
 
-> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor. Artık "sohbet mi, Cowork mu?" diye seçim yapmıyorsunuz; Claude görevin neye ihtiyaç duyduğunu kendisi anlıyor. Aynı konuşmada hem soru sorabilir hem "bu verilerden haftalık raporu hazırla" diyebilirsiniz. Yayılım kademeli: önce Pro ve Max, Team ve Free için "yakında". Enterprise yöneticilerine en az 30 gün önceden haber verilecek. Aşağıdaki "sohbet ayrı, Cowork ayrı" anlatımı, birleşik arayüz hesabınıza henüz gelmediyse ekranınızı; geldiyse **iş türü ayrımını** tarif eder. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
+> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor (kademeli yayılım: önce Pro ve Max, Team ve Free için "yakında"). Aynı konuşmada hem soru sorabilir hem "bu verilerden haftalık raporu hazırla" diyebilirsiniz. Hangi iş hangi tarza yakın, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ## Claude Chat Nedir?
 
 Kısaca: bir konuşma arayüzü. Siz yazarsınız, Claude cevap verir. Yazı yazmak, analiz, araştırma, belge incelemesi gibi bir dizi işte hemen sonuç üretir.
 
-**Klasik sohbet arayüzünde (birleşik arayüz hesabınıza gelmediyse):**
+**Sohbet arayüzünde dosya yükleyebilir, web'de arayabilir, artifact üretebilir, skill ve kod çalıştırma özelliklerini kullanabilirsiniz.** Skill'ler ve code execution claude.ai'de Free dahil tüm planlarda var (Team ve Enterprise'ta yönetici kod çalıştırmayı kapatabilir). Bu yüzden .docx, .xlsx, .pptx gibi dosyaları sohbetten indirilebilir çıktı olarak üretebilirsiniz.
+
+**Klasik sohbet arayüzünde (birleşik arayüz hesabınıza gelmediyse) olmayanlar:**
 
 - **Yerel dosya sisteminize erişmez.** Bilgisayarınızdaki klasörü göremez.
 - **Kalıcı otomasyon çalıştırmaz.** Zamanlanmış görev, arka plan süreci yok.
@@ -48,7 +51,7 @@ Claude görselleri okur, analiz eder ve tarif eder. Ürün fotoğrafı, grafik, 
 
 ### Sesli Giriş
 
-Claude'a konuşabilirsiniz. Voice mode beta olarak tüm planlarda, mobilde, masaüstünde ve web'de var; yoldayken çabuk görevler için pratiktir. Ayrıntı ve Türkçe notu: [Voice Mode](/wiki/araclar/voice-mode/).
+Voice mode beta olarak tüm planlarda, mobilde, masaüstünde ve web'de var, ama Türkçeyi desteklemiyor. Türkçe konuşmak için cihazınızın dikte özelliği kullanılır. Ayrıntı: [Voice Mode](/wiki/araclar/voice-mode/).
 
 ### Artifacts
 
@@ -60,28 +63,7 @@ Claude Chat içinde **Projects** özelliği, kalıcı ve organize çalışma ala
 
 ## Soru-Cevap mı, Çalışma mı?
 
-İş profesyonelleri için en sık sorulan sorudur. Kısa cevap, iş türüne göre değişir:
-
-| Durum | Sohbet tarzı | Cowork tarzı |
-|---|---|---|
-| Hızlı soru, tek seferlik görev | ✅ | |
-| Belge inceleme, yüklediğiniz dosya | ✅ | ✅ |
-| Taslak yazma, e-posta, rapor | ✅ | ✅ |
-| .docx / .pptx / .xlsx dosyası üretme | ✅ (indirilir) | ✅ (skills, doğrudan workspace klasörüne) |
-| Script veya otomasyon çalıştırma | | ✅ |
-| Slack, CRM, Drive'a bağlanma | ✅ (connector'lar, hesap ayarlarından) | ✅ (connector'lar) |
-| Tekrar eden zamanlanmış görevler | | ✅ |
-| Çok adımlı otonom iş akışları | | ✅ |
-| Kurulum gerektirmez | ✅ | |
-| Mobilde çalışır | ✅ | ✅ Beta (7 Tem 2026'dan beri; Pro, Max, Team) ve Dispatch (yeni kullanıcılara kapalı) |
-
-### Pratik Yaklaşım
-
-**Çalışan soru-cevapla başlar, çalışma tarzı işlerde seviye atlar.**
-
-Çoğu kişi ilk Claude deneyimini sohbette yaşar. Bu normal ve doğru. Ama profesyonel iş akışlarını gerçek anlamda sisteme oturtmak için **Cowork tarzı çalışma kaçınılmazdır**, çünkü değerin büyük kısmı oradadır.
-
-Hızlı soru-cevap ortadan kalkmaz. "Akşam evde kafeyi içerken hızlıca bir şey sorma" anlarında hâlâ en pratik kullanımdır. Ama ana çalışma biçimi Cowork tarzı olur.
+İş profesyonelleri için en sık sorulan sorudur. Kısa cevap: iş türüne göre değişir. Soru-cevapla başlayın; çıktının bilgisayarınızdaki klasöre yazılması, bir işin tekrar etmesi ya da şirket sistemine bağlanma gerektiğinde çalışma tarzına geçin. Karşılaştırma tablosu ve ayrıntı: [Cowork Modu → Sohbet ve Cowork](/wiki/araclar/cowork-modu/).
 
 ## Ne Zaman Soru-Cevap Tek Başına Yeterlidir?
 
@@ -89,17 +71,13 @@ Hızlı soru-cevap ortadan kalkmaz. "Akşam evde kafeyi içerken hızlıca bir �
 - **Belge özetleme:** Bir PDF yükleyip "özetini çıkar, ana 3 konuyu belirle" demek
 - **Yazım yardımı:** Bir e-posta taslağı, bir LinkedIn yazısı, kısa bir metin
 - **Görsel yorumlama:** Bir grafik, bir çizim, bir ekran görüntüsü üzerine konuşmak
-- **Gezerken kullanım:** Mobil uygulamada sesli komut, sürücü koltuğunda dikte
+- **Gezerken kullanım:** Telefondan kısa soru, fotoğraf yükleyip yorum isteme
 
 Bunların hepsi sohbette harika çalışır. Cowork tarzı çalışma gerekmez.
 
 ## Ne Zaman Cowork Tarzı Çalışmaya Geçmelisiniz?
 
-- **Çıktının bilgisayarınızdaki klasöre yazılması gerekiyorsa** (Word raporu, Excel modeli, PPT sunumu)
-- **Bir iş akışı tekrar ediyorsa** (her Pazartesi aynı raporu üretmek)
-- **Şirket sisteminize bağlanma gerekiyorsa** (Slack'e mesaj, Drive'a yükleme, CRM'e kayıt)
-- **Çok adımlı otomasyon lazımsa** (oku → analiz et → yaz → gönder zinciri)
-- **Aynı projede tekrar tekrar dönüyorsanız** (proje klasörü + CLAUDE.md kombinasyonu)
+Çıktı bilgisayarınızdaki klasöre yazılacaksa, iş her hafta tekrar ediyorsa, şirket sistemine bağlanma ya da çok adımlı otomasyon gerekiyorsa. Ayrıntılı liste [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında.
 
 ## İlgili Sayfalar
 
@@ -107,4 +85,5 @@ Bunların hepsi sohbette harika çalışır. Cowork tarzı çalışma gerekmez.
 - [Projects](/wiki/araclar/projects/): Claude Chat içindeki kalıcı çalışma alanları
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Cowork'ün masaüstü uygulaması
 - [Araçlar Ana Sayfası](/wiki/araclar/): Tüm Claude araçlarının karar tablosu
+- [Claude nedir, ne işe yarar?](/claude/): ürüne genel bakış ve plan farkları
 

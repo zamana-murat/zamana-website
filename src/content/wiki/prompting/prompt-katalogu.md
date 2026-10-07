@@ -1,11 +1,12 @@
 ---
 title: "Prompt Kataloğu: Hazır Şablonlar"
-description: Toplantı özeti, müşteri yanıtı, sözleşme analizi, rapor, günlük iş için kullanıma hazır Türkçe prompt şablonları.
+seoTitle: "Hazır Türkçe Prompt Şablonları: İş İçin 26 Örnek"
+description: "Toplantı özeti, müşteri e-postası, sözleşme ön incelemesi, KVKK metni ve rapor için kopyalayıp dolduracağınız 26 hazır Türkçe prompt şablonu."
 tags:
   - prompting
   - sablon
   - katalog
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Çoğu profesyonel her gün benzer 5-10 işle uğraşır.** Toplantı özeti, müşteri e-postası, rapor taslağı, veri analizi, hızlı araştırma, bunların her biri için **kullanıma hazır prompt şablonu** olması, her seferinde yeniden düşünmekten kurtarır.
@@ -18,7 +19,7 @@ Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın
 2. Köşeli parantezli yerleri (`[müşteri adı]` gibi) doldurun
 3. Claude'a verin
 4. Çıktıyı kontrol edin, gerekirse iterasyonla geliştirin
-5. Düzenli kullandığınız şablonları kişisel CLAUDE.md / [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'ne ekleyin
+5. Düzenli kullandığınız şablonları bir [Claude Projesi](/wiki/araclar/projects/)ne ya da [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'ne ekleyin (ayrıntı sayfanın sonunda)
 
 İterasyon süreci için [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfasına bakın.
 
@@ -29,7 +30,9 @@ Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın
 ### A1. Soğuk E-posta
 
 ```
-Görev: Yeni bir prospect'e ilk temas e-postası yaz.
+Rol: B2B satış e-postaları yazan, kısa ve doğrudan konuşan deneyimli bir satış yöneticisisin.
+
+Görev: Yeni bir potansiyel müşteriye ilk temas e-postası yaz.
 
 Hedef kitle: [Sektör] sektöründe [pozisyon] kişi, [şehir]'de.
 Şirket: [Şirket adı], [çalışan sayısı], [kısa tanım].
@@ -39,8 +42,8 @@ Ortak referans veya bağlantı: [varsa]
 
 Kurallar:
 - En fazla 100 kelime
-- Subject line 5-7 kelime
-- İlk cümle: hook (okurun sorununa değen bir gözlem)
+- Konu satırı 5-7 kelime
+- İlk cümle: açılış cümlesi (okurun sorununa değen bir gözlem)
 - Orta: değer önerisi (1 cümle)
 - Son: net, küçük bir sonraki adım (örn. "15 dk konuşalım mı?")
 - Pazarlama klişesi yasak ("lider çözümümüz", "yenilikçi" vs.)
@@ -49,9 +52,13 @@ Kurallar:
 İki versiyon yaz: A versiyonu daha doğrudan, B versiyonu daha hikâyeyle.
 ```
 
+Not: Soğuk e-posta ticari elektronik ileti sayılabilir ve alıcının izni, İYS kaydı gibi kuralları gündeme getirebilir (6563 sayılı Kanun). Hangi alıcıya, hangi koşulda gönderebileceğinizi hukuk biriminizle teyit edin. Alıcı bilgisini Claude'a yazarken de [KVKK](/wiki/temeller/gizlilik-kvkk/) kurallarını gözetin.
+
 ### A2. Müşteri İtirazına Yanıt
 
 ```
+Rol: Müşteri ilişkilerinde itirazı yumuşak ama net karşılayan kıdemli bir müşteri yöneticisisin.
+
 Görev: Müşterinin şu itirazına yanıt taslağı çıkar.
 
 Müşteri itirazı (orijinal mesajı):
@@ -73,19 +80,21 @@ Kurallar:
 
 [Yaygın İtirazlar](/wiki/temeller/itirazlar/) sayfasında genel itiraz kalıpları var.
 
-### A3. Quarterly Pipeline Review
+### A3. Çeyreklik Satış Hattı Değerlendirmesi
 
 ```
-Görev: Şu pipeline verilerinden bir çeyreklik review hazırla.
+Rol: Satış verisini yönetime özetleyen bir satış operasyon analistisin.
+
+Görev: Şu satış hattı (pipeline) verilerinden bir çeyreklik değerlendirme hazırla.
 
 Veri (Excel/CSV):
 [yapıştır veya yükle]
 
 Üret:
-1. Toplam pipeline değeri ve önceki çeyrekle değişim
-2. Stage bazında breakdown (her stage'te kaç fırsat, toplam değer)
-3. Risk fırsatları (close date geçmiş, son 30 gündür hareketsiz)
-4. Top 5 yüksek değerli fırsatın durumu
+1. Toplam satış hattı değeri ve önceki çeyrekle değişim
+2. Aşama bazında döküm (her aşamada kaç fırsat, toplam değer)
+3. Riskli fırsatlar (kapanış tarihi geçmiş, son 30 gündür hareketsiz)
+4. En yüksek değerli 5 fırsatın durumu
 5. Sonraki 30 günde aksiyon gereken 3 fırsat
 
 Format: yönetim için 1 sayfa özet (başlıklar, kısa paragraflar, gerekirse tablo)
@@ -100,6 +109,8 @@ Format: yönetim için 1 sayfa özet (başlıklar, kısa paragraflar, gerekirse 
 ### B1. Toplantı Sonrası Özet
 
 ```
+Rol: Toplantı notlarını kısa ve eyleme dönük özetleyen deneyimli bir yönetici asistanısın.
+
 Görev: Şu toplantı transkripsiyonundan / notlarından özet çıkar.
 
 Notlar:
@@ -111,15 +122,19 @@ Notlar:
 3. Tartışılan ana 3-5 konu (bullet, her biri 1-2 cümle)
 4. Alınan kararlar (varsa): net, kim, ne, ne zaman
 5. Aksiyon maddeleri tablo:
-   | Aksiyon | Sorumlu | Deadline |
+   | Aksiyon | Sorumlu | Son tarih |
 6. Çözülmemiş sorular / sonraki toplantıya kalan
 
-Kurallar: Türkçe-first, klişe yasak, en fazla 1 sayfa
+Kurallar: Türkçe yaz, klişe yasak, en fazla 1 sayfa
 ```
+
+**Süre:** elle 30-45 dakika, Claude ile 5-10 dakika (kontrol için ayrıca yaklaşık 10 dakika). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ### B2. Toplantı Öncesi Brief
 
 ```
+Rol: Toplantı öncesi kısa ve işe yarar brief hazırlayan bir stratejik destek uzmanısın.
+
 Görev: Yarın saat [zaman]'daki [müşteri / iç toplantı] için brief hazırla.
 
 Toplantı bilgisi:
@@ -146,6 +161,8 @@ Format: yarım sayfa, hızlı taranabilir
 ### B3. Şirket İçi Duyuru
 
 ```
+Rol: Şirket içi iletişimde açık ve sade yazan bir kurumsal iletişim uzmanısın.
+
 Görev: Şu konuda tüm çalışanlara duyuru e-postası yaz.
 
 Konu: [örn. yeni AI politika, ofis taşınma, tatil duyurusu]
@@ -171,28 +188,32 @@ Kurallar:
 ### C1. LinkedIn Post
 
 ```
+Rol: İş dünyası için LinkedIn paylaşımı yazan, klişeden kaçınan bir içerik yazarısın.
+
 Görev: LinkedIn için bir post yaz.
 
 Konu: [konu]
 Hedef kitle: [örn. orta-büyük şirket karar vericileri, satış müdürleri]
-Tarz: [örn. kişisel hikâye + içgörü, vaka analizi, listicle]
+Tarz: [örn. kişisel hikâye + içgörü, vaka analizi, madde madde liste]
 
 Kurallar:
 - En fazla 1300 karakter
-- İlk satır hook olmalı (scroll durduran)
+- İlk satır dikkat çekmeli (okuru durduran)
 - Ortada değer (gerçek bir içgörü, klişe değil)
-- Sonda net bir CTA (yorum yap, paylaş, görüşelim, blog'a yönlen)
+- Sonda net bir çağrı (yorum yap, paylaş, görüşelim, yazıya yönlen)
 - Pazarlama klişesi yasak ("lider", "yenilikçi", "vizyoner")
 - Hashtag 3-5 tane, alakalı
 - Türkçe, samimi-iş kayıt
 
-3 farklı versiyon üret: A) hikâye-temelli, B) veri-temelli, C) kontrarian görüş
+3 farklı versiyon üret: A) hikâye temelli, B) veri temelli, C) yaygın görüşe karşı çıkan
 ```
 
-### C2. Blog Yazısı Outline
+### C2. Blog Yazısı Taslağı (İskelet)
 
 ```
-Görev: Şu konuda blog yazısı için detaylı outline çıkar.
+Rol: Arama motoru uyumlu blog içeriği planlayan deneyimli bir içerik editörüsün.
+
+Görev: Şu konuda blog yazısı için ayrıntılı bir iskelet çıkar.
 
 Konu: [konu]
 Hedef anahtar kelime: [SEO için]
@@ -200,22 +221,24 @@ Hedef okur: [kim: sektör, pozisyon, sorun]
 Kelime hedefi: [örn. 1500-2000]
 
 Üret:
-1. 5 alternatif başlık önerisi (SEO + clickability dengesi)
-2. Meta description (155 karakter)
-3. Tam outline:
-   - Giriş (problem, hook, kim için)
+1. 5 alternatif başlık önerisi (arama görünürlüğü ve tıklanma dengesi)
+2. Meta açıklama (155 karakter)
+3. Tam iskelet:
+   - Giriş (problem, açılış cümlesi, kim için)
    - Ana bölümler (en az 4, her biri H2)
    - Her ana bölüm altında 2-3 alt başlık (H3)
-   - Sonuç + CTA
+   - Sonuç + okura çağrı
 4. Her bölüm için anahtar nokta (cümle)
 5. İçerikte kullanılabilecek 3 örnek/vaka önerisi
 
 Format: hiyerarşik liste
 ```
 
-### C3. Müşteri Vaka Çalışması (Case Study)
+### C3. Müşteri Vaka Çalışması
 
 ```
+Rol: B2B vaka çalışması yazan, sayıya dayanan ve abartmayan bir içerik yazarısın.
+
 Görev: Şu müşteri için vaka çalışması yaz.
 
 Müşteri (anonimleştirilmiş): [örn. "Trakya'da orta ölçekli gıda üreticisi, 8 çalışan"]
@@ -246,6 +269,8 @@ Kurallar:
 ### D1. Veri Analizi (CSV / Excel)
 
 ```
+Rol: Tablo verisinden yönetim için içgörü çıkaran bir veri analistisin.
+
 Görev: Şu veriyi analiz et.
 
 Veri:
@@ -259,7 +284,7 @@ Beklediğim:
 5. Görselleştirme önerisi (hangi grafiği nereye)
 
 Format: yönetim raporu, 1 sayfa
-Görselleştirme istersen Artifact olarak çıkar
+Görselleştirme istersem Artifact olarak çıkar
 ```
 
 [Artifacts](/wiki/yetenekler/artifacts/) sayfası görselleştirme detayını verir.
@@ -267,6 +292,8 @@ Görselleştirme istersen Artifact olarak çıkar
 ### D2. Karar Matrisi (Çok Seçenek)
 
 ```
+Rol: Karar vericilere seçenekleri ağırlıklı kriterlerle karşılaştıran bir strateji danışmanısın.
+
 Görev: [Karar konusu] için karar matrisi hazırla.
 
 Seçenekler:
@@ -293,6 +320,8 @@ Format: tablo + altında 1 sayfa yorum
 ### D3. SWOT / Risk Analizi
 
 ```
+Rol: Stratejik analiz yapan, her iddiayı veriye bağlayan bir iş analistisin.
+
 Görev: [Konu / proje / şirket] için SWOT (veya risk) analizi yap.
 
 Bağlam:
@@ -319,6 +348,8 @@ Sonuç: stratejik öneriler (3 öneri)
 ### E1. Sözleşme İnceleme
 
 ```
+Rol: Türk hukuku açısından sözleşme ön incelemesi yapan deneyimli bir hukuk danışmanısın.
+
 Görev: Şu sözleşmeyi (Türk hukuku açısından) incele.
 
 Sözleşme:
@@ -342,6 +373,8 @@ UYARI: Bu hukuki tavsiye değil, ön inceleme. Final için avukat onayı gerekli
 ### E2. KVKK Aydınlatma Metni
 
 ```
+Rol: KVKK aydınlatma metinlerini sade Türkçeyle hazırlayan bir veri koruma danışmanısın.
+
 Görev: Şu durum için KVKK aydınlatma metni taslağı hazırla.
 
 Veri sahibi: [örn. müşteri / çalışan / iş ortağı]
@@ -360,6 +393,8 @@ Aktarım: [yurt içi / yurt dışı, hangi 3. taraflara]
 UYARI: Şirketin hukuk müşaviri ile son hali onaylanacak.
 ```
 
+Aktarım satırında yurt dışı geçiyorsa [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasına bakın.
+
 ---
 
 ## F. Operasyon ve İK
@@ -367,6 +402,8 @@ UYARI: Şirketin hukuk müşaviri ile son hali onaylanacak.
 ### F1. Haftalık Operasyon Raporu
 
 ```
+Rol: Haftalık operasyon performansını sayılarla raporlayan bir operasyon yöneticisisin.
+
 Görev: Şu haftanın operasyon raporunu hazırla.
 
 Veri:
@@ -383,12 +420,14 @@ Format:
 Kurallar:
 - 1 sayfa
 - Belirsiz ifade yasak ("biraz iyi", "fena değil"), sayısal ol
-- Türkçe-first
+- Türkçe yaz
 ```
 
 ### F2. İş İlanı
 
 ```
+Rol: Kapsayıcı ve net iş ilanı yazan deneyimli bir işe alım uzmanısın.
+
 Görev: Şu pozisyon için iş ilanı yaz.
 
 Pozisyon: [pozisyon adı]
@@ -403,22 +442,24 @@ Aranan nitelikler:
 - [zorunlu]
 - [tercih edilen]
 
-Şirket pitch (hızlıca anlat):
+Şirket tanıtımı (kısaca):
 [1-2 paragraf]
 
 Kurallar:
-- Geniş aday havuzu için inclusive dil
+- Geniş aday havuzu için kapsayıcı dil
 - "Genç dinamik ekip" gibi yaş ayrımcılığı içeren ifade yasak
 - "Erkek aday" gibi cinsiyet talebi yasak (yasal sorun)
-- Maaş aralığı belirt (Türkiye'de yasal olarak zorunlu değil ama iyi pratik)
+- Maaş aralığı: [ilanda belirtilsin / belirtilmesin; şirket politikanıza göre doldurun]
 - Başvuru süreci net: nereye, ne zamana kadar, ne ile
 ```
 
-[İK departmanı](/wiki/departmanlar/insan-kaynaklari/) sayfasında daha fazla şablon.
+İlanda maaş aralığı yazıp yazmama ve ilan metnindeki yasal sınırlar için hukuk biriminizle teyit edin. [İK departmanı](/wiki/departmanlar/insan-kaynaklari/) sayfasında daha fazla şablon.
 
 ### F3. Performans Değerlendirme Geri Bildirimi
 
 ```
+Rol: Dürüst ve yapıcı performans geri bildirimi yazan deneyimli bir İK iş ortağısın.
+
 Görev: Çalışanın yıllık performans değerlendirmesi için yapıcı geri bildirim 
 taslağı hazırla.
 
@@ -450,6 +491,8 @@ Kurallar:
 ### G1. Türkçeden İngilizce'ye Profesyonel Çeviri
 
 ```
+Rol: Türkçeden İngilizceye iş yazışması çeviren profesyonel bir çevirmensin.
+
 Görev: Şu Türkçe metni İngilizce'ye profesyonel çevir.
 
 Metin:
@@ -469,6 +512,8 @@ Kurallar:
 ### G2. Uzun Metin Özeti
 
 ```
+Rol: Uzun metinleri ana iddiaları kaybetmeden özetleyen bir editörsün.
+
 Görev: Şu metni özetle.
 
 Metin:
@@ -489,6 +534,8 @@ Kurallar:
 ### G3. Hızlı Bilgi Sorgu (Web Arama Tetikli)
 
 ```
+Rol: Kaynaklı ve temkinli araştırma yapan bir araştırma analistisin.
+
 Görev: Şu sorunun cevabını bul, kaynak link ile.
 
 Soru: [soru]
@@ -509,15 +556,175 @@ Format:
 
 ---
 
-## Şablonu CLAUDE.md'ye Yerleştirme
+## H. Finans, İhracat, Satınalma ve Kamu
 
-Bu kataloğun her şablonunu **her seferinde kopyalamak** uzun vadede yorucudur. Sıkça kullandıklarınız için:
+### H1. Tahsilat Hatırlatma E-postası
 
-1. CLAUDE.md'nize "şablonlarım" bölümü ekleyin
-2. Şablonu çağırma kısa adı tanımlayın: "soğuk e-posta şablonu", "haftalık rapor şablonu"
-3. Sonra basitçe deyin: *"Soğuk e-posta şablonunu kullan, müşteri X için, sektör Y."*
+```
+Rol: Müşteri ilişkisini bozmadan alacak takibi yapan deneyimli bir finans uzmanısın.
 
-[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) bunu organize eder.
+Görev: Vadesi geçmiş bir fatura için hatırlatma e-postası yaz.
+
+Bilgiler:
+- Müşteri: [firma adı, yetkili adı]
+- Fatura no ve tutar: [no, tutar ₺]
+- Vade tarihi ve geçen gün: [tarih, gün]
+- Önceki hatırlatma: [yok / 1. / 2.]
+- İlişkinin durumu: [uzun süreli / yeni / hassas]
+
+Kurallar:
+- Hatırlatma sırasına göre ton: 1. hatırlatma nazik, 2. net, 3. kesin ama saygılı
+- Fatura numarası, tutar ve vade tarihi metinde açıkça geçsin
+- Net bir sonraki adım ve tarih ver ("[tarih]'e kadar ödeme planınızı paylaşır mısınız?")
+- Suçlama, tehdit ve hukuki işlem imasında bulunma
+- Rakam uydurma, yalnız verdiklerimi kullan
+- Resmî-iş kayıt, en fazla 120 kelime
+```
+
+Sözleşme ya da ihtar gerektiren aşamalarda hukuk biriminize danışın. [Finans departmanı](/wiki/departmanlar/finans/) sayfasında ek şablonlar var.
+
+### H2. Bütçe Sapma Açıklaması
+
+```
+Rol: Yönetime bütçe sapmasını sayılarla anlatan bir mali analistsin.
+
+Görev: Şu dönemin bütçe-gerçekleşen karşılaştırmasından sapma açıklaması hazırla.
+
+Veri:
+[bütçe ve gerçekleşen tablosunu yükle: kalem, bütçe, gerçekleşen]
+
+Üret:
+1. Toplam sapma (tutar ve %)
+2. Sapması en büyük 5 kalem (tutar, %, olası neden)
+3. Her kalem için: bu sapma tek seferlik mi, süregelen mi? (veride dayanak göster; dayanak yoksa "veri yok" yaz)
+4. Dönem sonuna kadar beklenen sapma için 2 senaryo (iyimser, kötümser)
+5. Yönetimin karar vermesi gereken 2-3 konu
+
+Kurallar:
+- Hesapları ayrıca göster, yönetimin yeniden hesaplayabilmesi için
+- Nedeni bilmiyorsan tahmin yürütme, "ek bilgi gerekiyor" yaz
+- Tablo + en fazla yarım sayfa yorum
+```
+
+Hesapları mutlaka kendiniz örnekleyin; ayrıntı için [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/) sayfasındaki tablo doğrulama bölümüne bakın.
+
+### H3. İngilizce Teklif Mektubu (İhracat)
+
+```
+Rol: Türk üreticiler adına yurt dışı alıcılara yazan deneyimli bir ihracat satış temsilcisisin.
+
+Görev: Aşağıdaki bilgilerle İngilizce bir teklif mektubu yaz.
+
+Alıcı: [firma, ülke, yetkili adı]
+Ürün: [ürün, miktar, özellik]
+Fiyat ve teslim şekli: [birim fiyat, para birimi, teslim şekli (örn. FOB, CIF) ve limanı]
+Ödeme şekli: [peşin / akreditif / vadeli]
+Teklif geçerlilik süresi: [tarih]
+Tanışma bağlamı: [fuar / referans / önceki yazışma]
+
+Kurallar:
+- Doğal iş İngilizcesi, çeviri kokusu yok
+- Ton: nazik ama net, abartılı övgü yok
+- Fiyat, teslim şekli ve geçerlilik tarihi ayrı satırlarda açık yazılsın
+- Verdiğim bilgilerin dışında şart, sertifika ya da teslim süresi ekleme
+- Sonda net bir sonraki adım iste (örnek, numune, görüşme)
+- En fazla 200 kelime
+```
+
+[İhracat departmanı](/wiki/departmanlar/ihracat/) sayfası daha fazla örnek verir. Fiyat, teslim şekli ve ödeme koşullarını göndermeden kendiniz kontrol edin.
+
+### H4. Proforma Fatura Yazışması
+
+```
+Rol: İhracat operasyonunda alıcıyla yazışan titiz bir dış ticaret uzmanısın.
+
+Görev: Alıcının proforma fatura talebine İngilizce yanıt yaz.
+
+Alıcının talebi (orijinal e-posta):
+[yapıştır; kişisel veriyi anonimleştir]
+
+Bizim bilgilerimiz:
+- Proforma no ve tarih: [no, tarih]
+- Ürün ve miktar: [liste]
+- Toplam tutar ve para birimi: [tutar]
+- Banka bilgileri ve ödeme şartı: [yalnız şirket içi onaylı metin]
+- Hazırlık ve sevk süresi: [gün]
+
+Kurallar:
+- Alıcının sorduğu her soruya sırayla cevap ver
+- Bilgisi olmayan soruya "bu konuda teyit edip döneceğiz" de, tahmin etme
+- Proformayı ekte gönderdiğimizi belirt (dosyayı ben eklerim)
+- En fazla 150 kelime, resmî-iş kayıt
+```
+
+Banka bilgileri gibi hassas veriyi Claude'a yazmadan önce şirket politikanıza bakın.
+
+### H5. Satınalma Teklif Karşılaştırması
+
+```
+Rol: Tedarikçi tekliflerini ağırlıklı kriterlerle karşılaştıran deneyimli bir satınalma uzmanısın.
+
+Görev: Aşağıdaki tedarikçi tekliflerini karşılaştır.
+
+Teklifler:
+[her teklifi yapıştır ya da PDF olarak yükle; tedarikçi adı + fiyat + vade + teslim süresi + ödeme koşulu + garanti]
+
+Kriterler ve ağırlıklar:
+- Toplam maliyet (%[X])
+- Teslim süresi (%[X])
+- Ödeme vadesi (%[X])
+- Garanti ve servis (%[X])
+- Tedarikçi güvenilirliği (%[X])
+
+Üret:
+1. Teklif × kriter tablosu (her hücrede somut değer, tekliften alınan)
+2. Ağırlıklı skor ve sıralama
+3. Tekliflerde eksik ya da birbirine uymayan bilgi (örn. biri KDV dahil, diğeri hariç)
+4. Pazarlıkta istenebilecek 3 madde
+5. Karar vericiye tek paragraf öneri
+
+Kurallar:
+- Teklifte yazmayan değeri uydurma, "teklifte yok" yaz
+- Para birimi ve KDV durumunu aynı zemine getir, nasıl getirdiğini söyle
+```
+
+[Satınalma departmanı](/wiki/departmanlar/satinalma/) sayfasında ek şablonlar var.
+
+### H6. Resmî Yazı Taslağı (Kamu)
+
+```
+Rol: Kamu kurumunda resmî yazı hazırlayan deneyimli bir idari destek personelisin.
+
+Görev: Şu konuda resmî yazı taslağı hazırla.
+
+Kurum ve muhatap: [yazının yazıldığı birim ve makam]
+Konu: [kısa konu]
+İlgi: [varsa önceki yazı tarih ve sayısı]
+Anlatılacak içerik: [kısa, madde madde]
+İstenen işlem: [ne yapılması isteniyor, hangi tarihe kadar]
+
+Kurallar:
+- Resmî yazışma dili: "bilgilerinize arz/rica ederim" kalıpları, edilgen anlatım, kısa ve açık cümleler
+- Kurumun kendi yazı biçimi ve yönetmeliğine göre yerleşimi ben ayarlayacağım; sen yalnız metni yaz
+- Sayı, tarih ve mevzuat atfını ben vermedikçe uydurma, yer tutucu bırak: [sayı], [tarih]
+- Kişisel veri ve gizlilik dereceli bilgi içermesin
+- En fazla 1 sayfa
+```
+
+Kamu kullanımında kurumunuzun yapay zekâ ve veri politikasına uyun; çerçeve için [Kamu departmanı](/wiki/departmanlar/kamu/) sayfasına bakın.
+
+---
+
+## Şablonu Kalıcı Hale Getirme
+
+Bu kataloğun her şablonunu **her seferinde kopyalamak** uzun vadede yorucudur. Sık kullandıklarınız için:
+
+1. **Claude Projesi:** şablonları bir [Projeye](/wiki/araclar/projects/) dosya olarak yükleyin, proje talimatına "şablonlarım bu projede; adıyla çağırırsam o şablonu kullan, eksik bilgiyi sor" yazın. Sonra basitçe deyin: *"Soğuk e-posta şablonunu kullan, müşteri X için, sektör Y."* Cowork bulut görevleri bilgisayardaki klasöre doğrudan erişemediği için kütüphaneyi yerel klasörde değil projede tutmak daha güvenlidir
+2. **Sık kullanılan ve değişmeyen şablon:** [Skill](/wiki/yetenekler/skills/)'e çevirin; Claude ilgili gördüğünde yükler
+3. **Her sohbette geçerli kısa kurallar** (dil, ton, yasak kalıplar): profil talimatı ("Instructions for Claude", Settings > General)
+4. **Claude Code kullanıyorsanız:** [CLAUDE.md](/wiki/claude-md/nedir/) dosyası bu iş için kullanılan mekanizmadır
+
+Talimat türlerinin kapsamı için [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/), organize etmek için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasına bakın.
 
 ## Şablonların Sınırı
 
@@ -538,5 +745,6 @@ Bu işler için [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) ve [İleri Seviy
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle öğretme
 - [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/): Şablonu geliştirme
 - [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md rol şablonları
+- [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/): Uzun belge, sözleşme ve tablo ile çalışırken prompt
 - [Departmanlar](/wiki/departmanlar/): Rol bazlı uygulamalar
 

@@ -1,15 +1,18 @@
 ---
 title: "Skills: Claude'un Uzmanlık Paketleri"
+seoTitle: "Claude Skills Nasıl Kullanılır? Kurulum ve Örnekler"
 description: "Skills, Claude'a spesifik görevler için hazır uzmanlık kazandırır. Word, Excel, PowerPoint, PDF, satış, hukuk, pazarlama skill'leri tek komutla."
 tags:
   - yetenekler
   - skills
   - cowork
   - uzmanlik
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-**Skills, Claude'a belirli görev tipleri için hazır uzmanlık kazandıran önceden inşa edilmiş talimat setleridir.** Cowork'te `/skill-adi` komutuyla çağrılır.
+**Skills, Claude'a belirli görev tipleri için hazır uzmanlık kazandıran önceden inşa edilmiş talimat setleridir.** Sohbette ve Cowork'te `/skill-adi` komutuyla çağrılır; Claude görevi tanırsa kendiliğinden de devreye alır.
+
+Skills Free dahil tüm planlarda vardır. Ürünün Türkçe tanıtımı için [Claude Skills](/claude/skills/) ve [Claude Plugins](/claude/plugins/) sayfalarına bakın; bu sayfa kurulum, çağırma ve sınırları anlatır.
 
 Kısa benzetme: Skills, Claude'un arkasında duran uzmanlık kılavuzlarıdır. `/docx` komutunu verdiğinizde Claude profesyonel bir Word belgesi uzmanının yaklaşımıyla davranır: yıllarca oluşmuş en iyi uygulamalar, yaygın hatalar ve görsel kurallar bir anda devreye girer.
 
@@ -26,7 +29,7 @@ yer alır. Skills, **deneme-yanılma ile kazanılmış bilgiyi metne çevirir**;
 
 ## Temel Skills (Hazır Gelen)
 
-Cowork'te hazır gelen ana skill'ler (skills özelliği Free dahil tüm planlarda vardır):
+Dosya üreten ana skill'ler sohbette ve Cowork'te hazır gelir:
 
 | Skill | Ne Yapar |
 |---|---|
@@ -34,17 +37,14 @@ Cowork'te hazır gelen ana skill'ler (skills özelliği Free dahil tüm planlard
 | `pptx` | PowerPoint sunumları (.pptx) oluşturur ve düzenler |
 | `xlsx` | Excel tablolarını (.xlsx) oluşturur ve düzenler |
 | `pdf` | PDF dosyaları oluşturur, okur, düzenler, birleştirir |
-| `canvas-design` | Görsel tasarımlar, posterler, sanat, PNG / PDF olarak |
-| `web-design` | Tam HTML/CSS/JS web siteleri, responsive |
-| `ui-designer` | UI bileşenleri ve arayüz sistemleri |
-| `foreign-trade` | Dış ticaret belgeleri (LOI, SPA, CIS, NCNDA...) |
-| `schedule` | Zamanlanmış / tekrar eden otomatik görevler |
 
-Bu liste en temel iş çıktılarını kapsar; bir çalışanın ayda ürettiği çıktıların büyük kısmı bu dokuz skill ile karşılanır.
+Bu dört skill en temel iş çıktılarını kapsar; bir çalışanın ayda ürettiği çıktıların büyük kısmı bunlarla karşılanır.
+
+Hesabınızda bunların yanında başka skill'ler de görünebilir. Örneğin görsel tasarım için `canvas-design` ya da tekrar eden görev kurmak için `schedule` adlı skill'ler bazı hesaplarda listelenir; ayrıca kurumun ya da kullanıcının sonradan eklediği skill'ler (web tasarımı, dış ticaret belgeleri gibi) olabilir. Bunlar her hesapta aynı olmayabilir, listenizi `/` yazarak görün. Kendi iş akışınız için aynısını siz de yazabilirsiniz.
 
 ## Plugin Skills (Eklenti Üzerinden Gelen)
 
-Plugins, ilgili skill'leri + connector'ları + subagent'ları tek pakette kurar. Yüklediğinizde bir dizi skill erişilebilir hale gelir:
+Plugins, ilgili skill'leri + connector'ları + subagent'ları tek pakette kurar. Ayrıntı: [Claude Plugins](/claude/plugins/). Yüklediğinizde bir dizi skill erişilebilir hale gelir:
 
 | Skill | Plugin | Ne Yapar |
 |---|---|---|
@@ -57,10 +57,10 @@ Plugins, ilgili skill'leri + connector'ları + subagent'ları tek pakette kurar.
 | `operations:runbook` | Operations | Adım adım operasyonel prosedürler |
 | `legal:review-contract` | Legal | Sözleşme incelemesi ve redline |
 | `legal:triage-nda` | Legal | Hızlı NDA sınıflandırması |
-| `productivity:task-management` | Productivity | TASKS.md üzerinden görev takibi |
 | `productivity:memory-management` | Productivity | İki-katmanlı hafıza sistemi |
+| `productivity:task-management` | Productivity | Görev takibi (`TASKS.md` dosyasıyla, markdown tabanlı) |
 
-Yeni plugin'ler düzenli olarak ekleniyor. Örneğin 15 Eylül 2026'da Salesforce in Claude plugin'i (beta, 37 satış skill'i) çıktı: [haberi okuyun](/haberler/2026-09-15-salesforce-claude-icinde/). Eklenti ve bağlayıcıların toplandığı [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) de açıldı. Yukarıdaki skill adları Anthropic'in resmi plugin deposunda (`anthropics/knowledge-work-plugins`) yer alır. Bağlayıcı tarafı için [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
+Yeni plugin'ler düzenli olarak ekleniyor. Örneğin 15 Eylül 2026'da Salesforce in Claude plugin'i (beta, 37 satış skill'i) çıktı: [haberi okuyun](/haberler/2026-09-15-salesforce-claude-icinde/). Eklenti ve bağlayıcıların toplandığı [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) de açıldı. Yukarıdaki plugin skill adları Anthropic'in resmi plugin deposunda (`anthropics/knowledge-work-plugins`) yer alır; depoda başka klasörler ve skill'ler de var, tablo seçmedir. Bağlayıcı tarafı için [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
 
 ## Rol Plugin'lerini Özelleştirme
 
@@ -82,14 +82,14 @@ Hazır plugin'ler (Sales, Finance, Legal, Marketing) **jenerik şablonlarla** ge
 
 ## Skill Nasıl Çağrılır?
 
-Cowork'te iki yol vardır:
+İki yol vardır:
 
 **Yol 1: Manuel çağrı.** Herhangi bir sohbette `/` yazın. Mevcut skill'ler listelenir. Hangisini istiyorsanız tıklayın veya adını doğrudan yazın:
 
 ```
 /docx
 /pptx
-/foreign-trade
+/pdf
 ```
 
 **Yol 2: Otomatik çağrı.** Claude, görevi tanıdığında skill'i kendiliğinden çağırır. Örneğin:
@@ -113,13 +113,15 @@ Claude `xlsx` skill'ini otomatik devreye alır. Siz komut vermezsiniz.
 
 Özel skill, bir ekibin yaptığı işin en tutarlı biçimde **her seferinde aynı kalitede üretilmesini** sağlar.
 
+**Team'e geçerken dikkat:** Kişisel hesabınızı Team ya da Enterprise kuruluşuna yükseltirseniz **özel skill'ler taşınmaz**; ekip için yeniden yükleyin. Skill'in talimat ve betik içerdiğini, kaynağını bilmediğiniz skill'i yüklememeniz gerektiğini unutmayın. Kurumsal yönetim için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasına bakın.
+
 ## Pratik Yaklaşım
 
 Skills sihir değildir, **yapılandırılmış uzmanlığın metne çevrilmiş halidir**. Çalışan hâlâ görevi anlamak zorundadır; skill, Claude'un o görevi en yüksek seviyede yürütmesini sağlar.
 
 Üç pratik prensip:
 
-1. **Hangi skill hangi görev için?**: Bu sayfadaki iki tabloda 9 temel ve 11 plugin skill'i, toplam 20 skill var. Haftada bir göz atmak, doğru skill'i hatırlamanızı kolaylaştırır.
+1. **Hangi skill hangi görev için?**: Bu sayfadaki iki tabloda 4 temel dosya skill'i ve 11 plugin skill'i, toplam 15 skill var; listeniz bundan farklı olabilir. Haftada bir `/` yazıp göz atmak, doğru skill'i hatırlamanızı kolaylaştırır.
 2. **Ne zaman çağrılır?**: Görevi başlamadan önce. "Bir Word raporu yazacağım" dedikten hemen sonra `/docx`. Claude'un varsayılan çıktısına razı olmayıp sonradan iyileştirmeye çalışmaktan çok daha verimli.
 3. **Özel skill ne zaman yazılır?**: Aynı yapıyla bir görevi **üçüncü kez** yapıyorsanız, özel skill zamanı gelmiştir.
 
@@ -133,8 +135,9 @@ Kendinize sık sorabileceğiniz sorular:
 
 ## İlgili Sayfalar
 
+- [Claude Skills (ürün tanıtımı)](/claude/skills/) ve [Claude Plugins](/claude/plugins/): Türkçe ürün tanıtımları
 - [Artifacts](/wiki/yetenekler/artifacts/): Skill'lerin ürettiği etkileşimli çıktılar
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Skill'lerin yaşadığı ortam
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Plugin'lerin içindeki connector'lar
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Skill'lerin üzerine inşa edildiği kalıcı bağlam
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Skill'lerin yanında çalışan kalıcı bağlam (yerel Cowork ve Claude Code'da klasörden okunur)
 

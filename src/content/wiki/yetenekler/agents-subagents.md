@@ -1,12 +1,13 @@
 ---
 title: "Agents ve Subagents: Claude Kendi Kendini Çoklar"
-description: "Agent, Claude'un çok adımlı otonom çalışma biçimidir. Subagent'lar paralel alt-instance'lardır. Karmaşık görevlerin arkasındaki yapı."
+seoTitle: "Claude Ajanları ve Subagents: İş Kullanıcısı İçin"
+description: "Agent, Claude'un çok adımlı otonom çalışma biçimidir; subagent'lar işi paralel yürütür. İş kullanıcısının bilmesi gereken kısım."
 tags:
   - yetenekler
   - agents
   - subagents
   - otonom
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Bir agent, Claude'un birden fazla adım boyunca otonom çalıştığı ve araçlar kullanarak karmaşık görevleri tamamladığı modudur.** Tek bir soruya cevap vermek yerine bir dizi eylemi **planlar, uygular ve gözden geçirir**.
@@ -24,7 +25,7 @@ Basit bir benzetme: **Claude bir iş arkadaşı gibi çalışır.** Size tek cev
 Bu basit cümle karmaşık bir görevdir. Agent yaklaşımıyla Claude:
 
 1. **Planlar:** "Önce şirket hakkında web araştırması yapayım, sonra LinkedIn'den karar vericiyi bulayım, sonra CRM'e bakayım, sonra brief yazayım."
-2. **Uygular:** Web search skill'ini çağırır, CRM connector'ını kullanır, topladığı bilgiyi bir belgeye dönüştürür
+2. **Uygular:** Web aramasını kullanır, CRM connector'ını çağırır, topladığı bilgiyi bir belgeye dönüştürür
 3. **Teslim eder:** Yapılandırılmış brief + kaynak listesi ile
 
 Siz *"yap"* dediniz. Claude planı kendi yaptı, adımları kendi yürüttü, kontrolü siz yaptınız.
@@ -45,39 +46,7 @@ Büyük bir görev için Claude kendi yardımcı kopyalarını (subagent) başla
 
 Beş iş paralel ilerler. Hepsi bittiğinde ana Claude sonuçları birleştirip tek brief üretir.
 
-Normalde sıralı çalışılsa 20 dakika süren iş, 5 dakikada biter.
-
-## Yerleşik Agent Tipleri
-
-Alt ajanlar Claude Code'da genel kullanıma açıktır ve birkaç uzmanlaşmış agent tipi yerleşik gelir. Cowork için ayrı bir alt ajan belgesi yoktur, bu yüzden aynı tiplerin orada da bulunduğunu varsaymayın. Bunları siz seçmezsiniz, Claude uygun gördüğünde devreye alır:
-
-- **`Explore`**, hızlı dosya / klasör inceleme agent'ı
-- **`general-purpose`**, açık uçlu araştırma ve çok adımlı görevler
-- **`Plan`**, mimari ve uygulama planlama
-- **`claude-code-guide`**, Claude Code, API, Agent SDK hakkında sorular
-
-`claude-code-guide` geliştirici konularıyla ilgilidir, iş profesyoneli kapsamı dışındadır.
-
-## Dynamic Workflows: Yüzlerce Agent'ı Yönetmek
-
-28 Mayıs 2026'da [Opus 4.8](/wiki/temeller/modeller/) ile duyurulan **dynamic workflows** (dinamik iş akışları), agent yaklaşımını ölçek olarak bir üst seviyeye taşır. Tek bir istekle Claude Code, bir görevi arka planda **onlarca, hatta yüzlerce agent** arasında dağıtabilir (çalışma başına en çok 1.000 agent, varsayılan olarak aynı anda 16).
-
-Önceki subagent yaklaşımında genelde elle tarif edilmiş birkaç paralel iş çalışırdı. Dynamic workflows'ta Claude işin yapısını **kendisi çıkarır**, kaç agent gerektiğine kendisi karar verir ve sonuçları toplar.
-
-**İş açısından ne demek?** Çok büyük, çok parçalı görevler artık tek komutla mümkün:
-
-> *"Tüm departman raporlarımızı (50 dosya) tara, her birinden bu çeyreğin 3 ana riskini çıkar, sonra hepsini tek bir yönetici özetinde birleştir."*
-
-İlk duyuruda research preview olarak anılmıştı. Bugün Claude Code'da tüm ücretli planlarda kullanılabiliyor (Pro'da `/config` içindeki "Dynamic workflows" satırından açılır). Tipik bir günlük görev için gerekmez, ama elle haftalar sürecek bir tarama gibi işlerde fark yaratır. Dikkat: workflow'lar çok token harcar ve abonelik limitinizden düşer.
-
-## Managed Agents (Geliştirici / Kurumsal)
-
-Anthropic, kurumsal otomasyon kuran ekipler için **Managed Agents** tarafını da güçlendirdi (Mayıs 2026). Bunlar günlük kullanıcının değil, geliştirici ve BT ekiplerinin ilgi alanıdır, ama kurumsal bir alıcının bilmesi faydalı:
-
-- **Outcomes:** Agent çıktısının başarısı bir **rubrik** (ölçüt listesi) ile tanımlanır; bağımsız bir değerlendirici çıktıyı bu ölçüte göre puanlar ve gerekirse agent işini düzeltir.
-- **Multiagent orchestration:** Bir lider agent, alt görevleri uzman agent'lara dağıtır; agent'lar ortak bir dosya sistemi ve kalıcı bağlam paylaşır.
-- **Webhooks:** Agent'lar dış sistemlerdeki olaylarla tetiklenebilir ve bildirim gönderebilir.
-- **Self-hosted sandbox:** Araç çalıştırma ortamı kurumun kendi altyapısına veya seçtiği bir sağlayıcıya taşınabilir (bkz. [MCP Güvenlik](/wiki/mcp/guvenlik/)).
+Paralel çalışma toplam bekleme süresini kısaltır. Çıktıyı gözden geçirme süresi ise aynı kalır.
 
 ## Çalışan Ne Bilmeli?
 
@@ -111,16 +80,24 @@ Ahmet, satış yöneticisi. Her hafta pazartesi sabahı şu görevi veriyor:
 
 > *"Bu hafta kontak kurulacak 10 prospect listesini hazırla. Her biri için: şirket özeti, son haber, karar verici (LinkedIn'den), bize benzer firmalarla geçmiş çalışma, tahmini bütçe kapasitesi."*
 
-Bu 10 şirket × 5 bileşen = 50 alt görev. Agent olmadan elle bu iş 4-5 saat sürer.
+Bu 10 şirket × 5 bileşen = 50 alt görev.
 
-Subagent'lar paralel çalışırsa: 10 dakika içinde tablo hazırdır.
+**Süre:** elle 4-5 saat, Claude ile 30-45 dakika + 30 dakika kontrol. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ## Agent Yaklaşımının Sınırları
 
 - **Yavaşlık:** paralel subagent bile olsa agent yaklaşımı tek bir cevaptan yavaştır; araç çağrıları ve doğrulama turları vakit alır
 - **Hata yayılımı:** bir subagent hatalı çıktı üretirse ana birleştirme de etkilenir
-- **Kaynak kullanımı:** Pro planda agent yoğun kullanım kotayı hızlı tüketir; [Max plan](/wiki/temeller/planlar/) bu tip iş için daha uygundur
+- **Kaynak kullanımı:** agent yoğun kullanım kotayı hızlı tüketir (5 saatlik pencere ve haftalık limit, bkz. [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)); Pro'da sık dolarsa [Max plan](/wiki/temeller/planlar/) bir seçenektir, ama zorunlu değil
 - **Karmaşık doğrulama:** 20 alt görevin hepsini tek tek kontrol etmek zordur, önemli çıktılarda dikkat ister
+
+## Geliştiriciler için
+
+> **Bu kutu yalnız teknik ekipleri ilgilendirir; iş kullanıcısı atlayabilir.**
+>
+> - **Subagents** Claude Code'da genel kullanıma açıktır. Cowork için ayrı bir subagents belgesi doğrulanamadı, orada aynı davranışı varsaymayın.
+> - **Dynamic workflows** (28 Mayıs 2026'da duyuruldu): Claude Code'da bir görevi arka planda onlarca, hatta yüzlerce agent arasında dağıtır. Çalışma başına en çok 1.000 agent, varsayılan olarak aynı anda 16. Tüm ücretli planlarda vardır (Pro'da `/config` içindeki "Dynamic workflows" satırından açılır). Çok token harcar ve abonelik limitinizden düşer.
+> - **Managed Agents** (API tarafı, kurumsal otomasyon kuran BT ekipleri için): [Kurumsal: Ajanlar](/kurumsal/ajanlar/) sayfasında ve [Claude Code mod'ları](/haberler/2026-10-01-claude-code-mods/) haberinde ayrıntı var.
 
 ## Kısacası
 
@@ -132,5 +109,6 @@ Agent mimarisinin teknik ayrıntısı iş profesyoneli için gerekmez. Yukarıda
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Agent'ların yaşadığı ortam
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Discernment boyutu: agent çıktılarının değerlendirilmesi
 - [Context ve Compaction](/wiki/yetenekler/context-compaction/): Uzun agent oturumlarında bağlam yönetimi
-- [Claude Code mod'ları](/haberler/2026-10-01-claude-code-mods/): Claude Code'un davranışını özelleştiren küçük fonksiyonlar (geliştirici odaklı haber)
+- [Kurumsal: Ajanlar](/kurumsal/ajanlar/): Claude'un kurumsal ajan olarak kullanımı
+- [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/): Ağır agent işinin limite etkisi
 

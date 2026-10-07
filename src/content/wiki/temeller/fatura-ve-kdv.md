@@ -6,7 +6,7 @@ tags:
   - fatura
   - kdv
   - muhasebe
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Claude aboneliği yurt dışından alınan dijital bir hizmettir.** Türkiye'de muhasebeleştirilmesi, KDV uygulanması ve gider olarak gösterilmesi için net bir prosedür var; bunu doğru bilmek de finans direktörünün ilk sorusudur.
@@ -117,7 +117,7 @@ Bireysel kullanıcıların çoğu Claude aboneliğini kendi adlarına alıyor. S
 
 Tablodaki rakamlar vergi hariçtir. İki kalemi bütçede ayrıca düşünün: Pro, Max ve Team'de kota bitince açabileceğiniz **kullanım kredisi** (kullandıkça öde) ve Enterprise'ın kullanıma bağlı faturası. İkisi de önceden kesin tahmin edilemeyen değişken kalemdir; Team ve Enterprise'ta yönetici panelinden harcama tavanı koyabilirsiniz. Ayrıntı: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/).
 
-**Pratik öneri:** Claude'a yeni başlayanlar **ilk ay Max 5x ($100/ay)** ile başlamayı tercih ediyor. Pro plan ($20/ay) limitine yeni kullanıcı hızlı çarpar ve "çalışmıyor" hissi yaratır. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](/wiki/temeller/planlar/).
+**Pratik öneri:** Claude'a yeni başlayanlara **ilk ay Max 5x ($100/ay)** öneriyoruz (zorunlu değil, Pro ile başlamak da olur). Pro plan ($20/ay) limitine yeni kullanıcı hızlı çarpar ve "çalışmıyor" hissi yaratır. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](/wiki/temeller/planlar/).
 
 ## Mali Müşavirinizle Konuşacaklarınız
 

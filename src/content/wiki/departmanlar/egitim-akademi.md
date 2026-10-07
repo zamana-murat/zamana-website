@@ -1,12 +1,13 @@
 ---
 title: "Eğitim ve Akademi: Claude Uygulamaları"
+seoTitle: "Eğitimde Claude: Ders Planı, Sınav, Ödev Geri Bildirimi, Akademik Kullanım"
 description: "Üniversite, okul, dershane, kurs ve eğitmenler için Claude: ders planı, sınav sorusu, ödev geri bildirimi, akademik araştırma, öğrenci iletişimi."
 tags:
   - departmanlar
   - egitim
   - akademi
   - okul
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Eğitim sektörü Türkiye'de geniş: üniversiteler, liseler ve ortaokullar, özel okullar, dershaneler, dil okulları, online kurs platformları, bireysel eğitmenler. Her birinde **müfredat hazırlama, sınav üretme, ödev değerlendirme ve öğrenci iletişimi** zaman alıcı, tekrar eden işlerdir. Claude bunların hepsinde somut destek sağlar.
@@ -32,11 +33,11 @@ Bir konunun haftalık / dersi başına planı. Claude:
 - Süre planı (50 dakikalık ders için ne kadar nereye)
 - Ödev / değerlendirme önerisi
 
-Bir öğretmenin saatler süren plan hazırlığı, Claude ile çoğu zaman dakikalar içinde ilk taslağa iner; sonrası öğretmenin düzeltmesidir.
+Bir ders planı elle yaklaşık 2 saat sürer; Claude ile yaklaşık 30 dakikada ilk taslağa iner (Zamana eğitim materyali). Sonrası öğretmenin düzeltmesidir.
 
 ### Müfredat Yazımı
 
-Bir kursun yıllık müfredatı. Konu sırası, ön gerekler, kazanım listesi, ölçme planı. Claude akademik standartları (MEB için, üniversite için, Common Core için) gözeterek üretir.
+Bir kursun yıllık müfredatı. Konu sırası, ön gerekler, kazanım listesi, ölçme planı. Claude akademik standartları (MEB için, üniversite için, Common Core için) gözeterek üretir. Birden çok standart çelişebilir; hangisini gözetmesini istediğinizi açıkça yazın.
 
 ### Çoklu Seviye Adaptasyonu
 
@@ -62,6 +63,10 @@ Mevcut soru bankanızı Claude ile genişletin: orijinal soruların **yeniden if
 
 Sorularınız için tam çözüm + alternatif çözüm yolları + yanlış cevap analizi (bu cevap neden yanlış).
 
+### Rubrik Üretimi
+
+Açık uçlu soru ve projeler için tutarlı bir değerlendirme rubriği: kriterler, düzey tanımları ve puan aralıkları. Rubriği öğrencilerle ödevden önce paylaşırsanız hem geri bildirim hem itiraz süreci kolaylaşır. Taslağı öğretmen kendi dersine göre ayarlar.
+
 ### Bloom Taksonomisi Dengeleme
 
 Sınavın hatırlama-anlama-uygulama-analiz-değerlendirme-yaratma seviyelerinde dengesini Claude analiz eder, eksik seviye varsa soru ekler.
@@ -80,7 +85,7 @@ Bu **karar değil tarama**: son notu öğretmen verir, Claude yalnızca ön göz
 
 ### Bireyselleştirilmiş Geri Bildirim
 
-50 ödev için bireysel geri bildirim yazmak bir öğretmen için günler sürer. Claude her ödev için 3-5 cümlelik kişiselleştirilmiş bir geri bildirim taslağı çıkarır, öğretmen tarayarak onaylar.
+50 ödev için bireysel geri bildirim yazmak elle yaklaşık 7-8 saat sürer. Claude her ödev için 3-5 cümlelik kişiselleştirilmiş bir geri bildirim taslağı çıkarır, öğretmen tarayarak onaylar.
 
 ### Plagiat / Kopya Kontrolü
 
@@ -158,7 +163,28 @@ Bir dil kursunda öğretmen, aynı kavramı (örn. "phrasal verbs") 4 farklı se
 
 ### Senaryo 4: Online Kurs Hazırlığı
 
-Bireysel eğitmen bir Udemy kursu açacak. Konu listesi var ama içerik yok. Claude ile slayt, video senaryosu, alıştırma ve sınav taslakları haftalar yerine günler içinde çıkar; eğitmen hepsini kendi sesiyle düzeltir.
+Bireysel eğitmen bir Udemy kursu açacak. Konu listesi var ama içerik yok. Claude ile her ders için slayt, senaryo, alıştırma ve sınav taslakları yaklaşık yarım saatte (ders planındaki aralıkla) ilk hâline gelir; eğitmen hepsini kendi sesiyle düzeltir.
+
+## Gerçek Örnek: 50 Ödev İçin Geri Bildirim
+
+Bir lise edebiyat öğretmeni 50 kompozisyon ödevi topladı. Her öğrenciye kısa, kişisel bir geri bildirim yazması gerekiyor ama hafta sonuna 7-8 saatini ayıramıyor.
+
+**Adım 1:** Rubriği ve birkaç örnek geri bildirimi (kendi yazdıklarınız) Claude'a verir, ardından ilk 10 ödevi ekler (öğrenci adları çıkarılmış, "Ödev 01, 02..."):
+> *"Ekteki rubriğe göre her ödev için 3-5 cümlelik geri bildirim taslağı yaz: bir güçlü yön, iki gelişim alanı, bir sonraki ödev için tek öneri. Notu sen verme, yalnız rubrikteki hangi düzeye yakın olduğunu söyle. Tonum örneklerdeki gibi: net, destekleyici, abartısız."*
+
+**Adım 2:** Claude 10 taslağı üretir. Öğretmen 2-3 tanesini okur, tonu düzeltmek için bir kez geri bildirim verir ("daha kısa olsun, 'harika' kelimesini az kullan").
+
+**Adım 3:** Kalan 40 ödev aynı yönergeyle partiler hâlinde işlenir.
+
+**Adım 4:** Öğretmen her taslağı ödevle birlikte okur, yanlış okunmuş olanları düzeltir, notu kendisi verir ve ödevleri öğrencilere iletir.
+
+**Süre:** 50 ödev için elle 7-8 saat, Claude ile 2-3 saat (okuma ve düzeltme dahil). Ödevler her dönem birkaç kez toplanıyorsa her turda 5 saat civarı fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
+## Sık Hatalar
+
+- **Akademik dürüstlük:** Öğrenci ödevini Claude'a "yaz" diye veriyorsa bu öğrencinin sorumluluğudur; öğretmenin kullanımı farklıdır (taslak, tarama, geri bildirim). Hangi kullanımın serbest olduğunu dönem başında yazılı duyurun.
+- **Uydurma kaynak:** Claude makale referansı uydurabilir. DOI, yazar ve yıl her zaman kaynağından doğrulanmalı.
+- **Standart karışması:** MEB, üniversite ve uluslararası standartlar çelişebilir. Claude'a hangi standardı gözetmesini istediğinizi söyleyin.
 
 ## CLAUDE.md Tavsiyesi
 
@@ -194,7 +220,7 @@ Eğitmen için temel yapı:
 
 **Engel:** "Öğrenci verisi KVKK kapsamında çok hassas."
 
-**Çözüm:** Tüm öğrenci verisi anonimleştirilerek girilir. KVKK aydınlatma metinlerinde AI kullanımı belirtilebilir. [Hukuk departmanı](/wiki/departmanlar/hukuk/) bağlam verir; yurt dışı aktarım için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım (KVKK m.9)" bölümüne bakın.
+**Çözüm:** Tüm öğrenci verisi anonimleştirilerek girilir. KVKK aydınlatma metinlerinde AI kullanımı belirtilebilir. [Hukuk departmanı](/wiki/departmanlar/hukuk/) bağlam verir; yurt dışı aktarım için [KVKK m.9: Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasına, genel çerçeve için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 **Engel:** "Öğretmenler teknolojiye dirençli."
 
@@ -202,7 +228,18 @@ Eğitmen için temel yapı:
 
 ## Bireysel Eğitmen / Online Kurs
 
-Tek başına çalışan bir öğretmen, koç ya da kurs eğitmeni için Claude'un katkısı büyüktür. Deneyimimizde içerik üretim hızı belirgin biçimde artar.
+Tek başına çalışan bir öğretmen, koç ya da kurs eğitmeni için Claude'un katkısı büyüktür. **Zamana notu:** bu çalışma biçiminde ilk taslak üretimi belirgin biçimde hızlanır; kalite yine eğitmenin düzeltmesine bağlıdır.
+
+## Akademik Kullanım: Hangi Plan, Hangi Program
+
+Eğitim için Anthropic'in ayrı programları var, ama hepsi Türkiye'de olduğu gibi geçerli değil:
+
+- **Claude for Education (yükseköğretim):** Kurum çapında plan; öğrenci, akademisyen ve personeli kapsar. Fiyat yayımlanmıyor, Anthropic'in eğitim ekibiyle görüşülerek alınıyor, bireysel satın alma yok. SSO ve yönetim paneli gibi kurumsal özellikler içerir. Bir Türk üniversitesinin bu programa alınıp alınmadığı doğrulanmadı; ülke kısıtı yazılı değil, ama Türkiye'den örnek de yok. Ayrıntı: [Yükseköğretim için Claude](/kurumsal/yuksekogretim/).
+- **Claude for Teachers (K-12):** Ücretsiz program yalnız ABD'deki okul ve eğitimciler için. Türkiye'deki öğretmen kendi hesabıyla başlar. Claude 18 yaş altı için ürün sunmaz, yani öğrenciler Claude hesabı açamaz; öğretmen kendi hazırlık işinde kullanır. Ayrıntı: [Öğretmenler için Claude](/kurumsal/ogretmenler/).
+- **Team plan for scientists:** Akredite üniversitelerde ve kâr amacı gütmeyen enstitülerde doğa bilimleri, matematik, bilgisayar bilimi ve mühendislik alanındaki araştırmacılara 12 ay promosyonlu Team planı. Şirket ve sanayi Ar-Ge'si uygun değil. Türk üniversitesinin onaylanıp onaylanmadığı doğrulanmadı; başvuru sayfasından kendiniz deneyin.
+- **Bireysel akademisyen:** Kurum planı yoksa Pro ile başlanabilir. Atıf doğrulama, literatür ve makale yazımı için uygulamalı eğitim: [Akademisyenler programı](/programlar/akademisyenler/).
+
+Öğrenci verisi ve araştırma verisini planınızın veri ayarlarına göre değerlendirin; ticari planlarda (Team, Enterprise) girdiler varsayılan olarak model eğitiminde kullanılmaz, kişisel planlarda bu bir kullanıcı ayarıdır.
 
 ## Üniversite Bağlamı: Özel Notlar
 
@@ -216,6 +253,9 @@ Tek başına çalışan bir öğretmen, koç ya da kurs eğitmeni için Claude'u
 - [İK Departmanı](/wiki/departmanlar/insan-kaynaklari/): Öğretmen yönetimi
 - [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/): Veli iletişimi
 - [Hukuk Departmanı](/wiki/departmanlar/hukuk/): KVKK, eğitim mevzuatı
+- [Yükseköğretim için Claude](/kurumsal/yuksekogretim/) ve [Öğretmenler için Claude](/kurumsal/ogretmenler/): Anthropic'in eğitim programları
+- [Akademisyenler programı](/programlar/akademisyenler/): Uygulamalı eğitim
+- [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/): Kazancı nasıl ölçersiniz
 - [Research Mode](/wiki/yetenekler/research-mode/): Akademik tarama
 - [Skills](/wiki/yetenekler/skills/): Sunum, çalışma kâğıdı üretme
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Sınav tarzınız öğretme

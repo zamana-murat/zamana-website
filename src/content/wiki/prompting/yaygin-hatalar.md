@@ -1,11 +1,12 @@
 ---
 title: Yaygın Prompting Hataları ve Düzeltmeleri
-description: "Çoğu kullanıcının Claude ile başarısız olduğu on yaygın hata ve her birinin spesifik düzeltmesi."
+seoTitle: "Yaygın Prompt Hataları: 10 Hata ve Düzeltmesi"
+description: "Claude ile en sık yapılan 10 prompt hatası: Google tarzı sorgu, bağlamsız soru, tek atış zihniyeti. Her biri için Türkçe örnekli düzeltme."
 tags:
   - prompting
   - hatalar
   - troubleshooting
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Pratikte gözlenen bir gerçek: insanlar Claude'la başarısız olurken **benzer hatalarla** başarısız oluyor. Bu sayfa o on hatayı ve her birinin spesifik düzeltmesini içeriyor.
@@ -19,6 +20,8 @@ Her hatayı somut bir örneğiyle, neden başarısız olduğuyla ve düzeltmesiy
 
 **Neden başarısız olur:**
 Claude ne bağlamda olduğunuzu, ne istediğinizi, hangi tonu tercih ettiğinizi bilmez. Size jenerik bir şablon verir. 4-5 iterasyon sonra zaten elde edeceğiniz çıktıya ulaşırsınız, ama 30 saniye yerine 10 dakikada.
+
+*Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 **Düzeltme:**
 Promptu cümlelerle yazın. Claude'la konuşur gibi: "X durumundayım. Y istiyorum. Z tarzında olsun."
@@ -61,7 +64,7 @@ Claude ilk cevabı nadiren mükemmel verir. İlk çıktı çoğu zaman iyi bir t
 > *"TÜSİAD başkanı kim?"*
 
 **Neden başarısız olur:**
-Claude'un eğitim bilgisinin bir kesim tarihi vardır (güncel modellerde Haziran 2026, bkz: [Sınırlamalar](/wiki/temeller/sinirlamalar/)). Sonrasında değişen bir isim ya da rakamı güncel sanıp **emin bir tonla** söyleyebilir. Buna "halüsinasyon" denir.
+Claude'un eğitim bilgisinin bir kesim tarihi vardır (Fable 5.1, Opus 5.5 ve Sonnet 5.5 için Haziran 2026; Haiku 4.5 için güvenilir bilgi Şubat 2025'e kadar. Modeller için bkz: [Modeller](/wiki/temeller/modeller/), sınırlar için [Sınırlamalar](/wiki/temeller/sinirlamalar/)). Sonrasında değişen bir isim ya da rakamı güncel sanıp **emin bir tonla** söyleyebilir. Buna "halüsinasyon" denir.
 
 **Düzeltme:**
 Claude'u düşünme ortağı olarak görün, gerçek arama motoru olarak değil.
@@ -131,22 +134,23 @@ Pratik altın soru: **"Bunu şu an müdürüme göndermeye razı olur muydum?"**
 
 Cevap "hayır"sa geri dönün. Basitçe: *"Üçüncü paragraf iyi değil, yeniden yaz"*, *"Konu satırı yumuşak, keskinleştir"*, *"Kapanış çok uzun, kısalt"*. Her düzeltme 30 saniye, toplam kalite farkı büyük.
 
-## Hata 10: Claude'dan "Düşünmesini" İstememek
+Bir tuzak daha: Claude'a "bu iyi mi?" diye sorarsanız bazen doğruyu değil, duymak istediğinizi söyleme eğilimine girer (sycophancy, onay eğilimi). Onay değil eleştiri isteyin: *"Bu metnin en zayıf üç noktası nedir?"* Ayrıntı: [Claude'un Sınırları](/wiki/temeller/sinirlamalar/).
+
+## Hata 10: Zor İşte Kriter Vermemek ve Düşünme Derinliğini Ayarlamamak
 
 **Örnek:**
-Karmaşık bir stratejik karar prompt'u yazıp Claude'un hemen sonuca atlamasını beklemek.
+> *"Şu üç tedarikçiden hangisiyle devam edelim?"* (kriter yok, karar yüksek riskli, düşük effort ile çalışılıyor)
 
 **Neden başarısız olur:**
-Karmaşık problemlerde Claude'dan önce düşünmesini istemezseniz cevap yüzeysel kalabilir, mantık zinciri kısa olur.
+Güncel modellerde (Sonnet 5.5, Opus 5.5, Fable 5.1) Thinking kapatılamaz; "adım adım düşün" demek eskisi kadar fark yaratmaz. Cevabın yüzeysel kalmasının iki yaygın nedeni var: Claude neye göre değerlendireceğini bilmiyor ya da Effort kademesi iş için fazla düşük.
 
 **Düzeltme:**
-Claude'dan önce düşünmesini isteyin:
+Önce kriterleri verin, sonra gerekirse Effort'u yükseltin:
 
-> *"Cevaptan önce bunu dikkatle düşün."*
-> *"Önce olası senaryoları listele, sonra her birinin artılarını-eksilerini tart, sonra tavsiyeni ver."*
-> *"Bu yüksek riskli bir karar. Titizlikle akıl yürüt."*
+> *"Üç tedarikçiyi şu ölçütlere göre karşılaştır: toplam maliyet, teslim süresi güvenilirliği, ödeme koşulları. Önce olası senaryoları listele, her birinin artılarını ve eksilerini tart, sonra tavsiyeni ver."*
+> *"Bu yüksek riskli bir karar. Varsayımlarını açıkça yaz, emin olmadığın yeri belirt."*
 
-Bu tek cümle, karmaşık görevlerde çıktı kalitesini gözle görülür biçimde artırır.
+Pro ve üstü planlarda model menüsünden Effort'u yükseltmek (zor karar ve analiz için High ve üstü) derinliği doğrudan artırır; ayrıntı [Effort Kontrolü](/wiki/yetenekler/effort-control/) sayfasında. Prompt tarafında düşünme tekniklerinin tamamı [İleri Seviye](/wiki/prompting/ileri-seviye/) sayfasında.
 
 ## Hızlı Özet Tablosu
 
@@ -161,7 +165,7 @@ Bu tek cümle, karmaşık görevlerde çıktı kalitesini gözle görülür biç
 | Ton yok | Genel klişelerle dolu | Tonu söyle, kaçınılacakları söyle |
 | Aşırı kısıt | Sıkışmış çıktı | Gerçek kısıtlar + yaratıcılık alanı bırak |
 | Yanlış çıktıyı kabul | "İmza testi" başarısız | Son bir düzeltme turu yap |
-| Düşünme istememek | Yüzeysel stratejik cevap | "Önce düşün" komutu ver |
+| Kriter ve derinlik yok | Yüzeysel stratejik cevap | Değerlendirme kriterlerini ver, zor işte Effort'u yükselt |
 
 ## Kendi Promptlarınızı Denetlemek İçin
 

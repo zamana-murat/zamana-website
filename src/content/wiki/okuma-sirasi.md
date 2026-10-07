@@ -5,7 +5,7 @@ tags:
   - okuma-sirasi
   - rehber
   - baslangic
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Bu sayfa, wiki'yi baştan sona takip etmek isteyenler için sıralı bir liste sunar.** Sıranın kendisi önkoşulu gösterir: bir sayfayı okumak için öncekiler yeterlidir.
@@ -13,7 +13,7 @@ lastUpdated: "2026-10-05"
 İki kritik kilometre taşı işaretlenmiştir:
 
 - 🔵 **Claude Chat kullanımına başlama noktası**: yatırım, gizlilik ve hesap kurulumu kararları alındıktan sonra
-- 🟢 **Cowork kullanımına başlama noktası**: Chat üzerinde temel hâkimiyet, prompting ve CLAUDE.md disipliniyle olgunlaştıktan sonra
+- 🟢 **Cowork kullanımına başlama noktası**: Chat üzerinde temel hâkimiyet, prompting ve kalıcı talimat (CLAUDE.md ve Kalıcı Talimat bölümü) disipliniyle olgunlaştıktan sonra
 
 > **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım). Bu sayfadaki Chat ve Cowork ayrımı artık ayrı iki ürünü değil, **öğrenme sırasını** gösterir: önce soru-cevap ve prompting, sonra klasör, dosya ve araçlarla çalışan, işi baştan sona teslim eden kullanım. Hesabınızda birleşik arayüz açıldıysa sıra yine geçerlidir.
 
@@ -53,7 +53,7 @@ lastUpdated: "2026-10-05"
 | 31 | [Örnekler](/wiki/claude-md/ornekler/) |
 | 32 | [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) |
 | 33 | [Memory](/wiki/yetenekler/memory/) |
-| 34 | [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) |
+| 34 | [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) |
 | 35 | [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) |
 | 36 | [İlk 7 Gün Rehberi](/wiki/temeller/ilk-7-gun/) |
 | 🟢 | **Bu noktada Cowork kullanımına başlanabilir** |
@@ -67,7 +67,7 @@ lastUpdated: "2026-10-05"
 | 44 | [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) |
 | 45 | [Code Execution](/wiki/yetenekler/code-execution/) |
 | 46 | [Context ve Compaction](/wiki/yetenekler/context-compaction/) |
-| 47 | [Dispatch](/wiki/araclar/dispatch/) |
+| 47 | [Mobil Cowork ve Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) |
 | 48 | [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) |
 | 49 | [Research Mode](/wiki/yetenekler/research-mode/) |
 | 50 | [İleri Seviye](/wiki/prompting/ileri-seviye/) |
@@ -94,7 +94,7 @@ lastUpdated: "2026-10-05"
 
 **Sözlük ve SSS referans sayfalarıdır.** Sıralı okumak şart değil, ihtiyaç anında bakılır.
 
-**Dispatch yeni kullanıcılara kapalıdır.** 47. sıradaki [Dispatch](/wiki/araclar/dispatch/) sayfası, zaten kullanan kişiler ve kavramı anlamak isteyenler içindir; yeni bir katılımcının kullanabileceği varsayılmamalıdır.
+**Dispatch yeni kullanıcılara kapalıdır.** 47. sıradaki [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) sayfası, zaten kullanan kişiler ve kavramı anlamak isteyenler içindir; yeni bir katılımcının kullanabileceği varsayılmamalıdır.
 
 **Sıraya girmeyen ek sayfalar.** İhtiyaç anında bakılabilecek güncel konular: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) (Planlar'dan sonra), [Office ve Chrome](/wiki/araclar/office-ve-chrome/) (Connectors'tan sonra), [Effort Control](/wiki/yetenekler/effort-control/) ve [Claude Design](/wiki/yetenekler/claude-design/) (Artifacts'tan sonra).
 

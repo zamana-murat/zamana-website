@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Claude, Anthropic ve Zamana ilişkisi</title>
+  <desc id="desc">Anthropic Claude'u geliştirir ve satar; aboneliği doğrudan Anthropic'ten alırsınız. Zamana bağımsız eğitim ve danışmanlık verir, bayi değildir ve abonelik satmaz. Bu wiki ücretsizdir.</desc>
+  <defs>
+    <marker id="arrow-navy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f2855"/>
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="470" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Claude, Anthropic ve Zamana</text>
+  <text x="40" y="88" font-size="17" font-weight="500" fill="#1a2238">Kim ne yapar, aboneliği nereden alırsınız?</text>
+
+  <!-- Anthropic -->
+  <rect x="40" y="130" width="280" height="104" rx="10" fill="#0f2855"/>
+  <text x="180" y="172" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Anthropic</text>
+  <text x="180" y="204" font-size="16" font-weight="500" fill="#ffffff" text-anchor="middle">Claude'u geliştirir ve satar</text>
+
+  <!-- Zamana -->
+  <rect x="480" y="130" width="280" height="104" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="620" y="172" font-size="22" font-weight="700" fill="#0f2855" text-anchor="middle">Zamana</text>
+  <text x="620" y="204" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Eğitim ve danışmanlık</text>
+
+  <!-- Anthropic - Zamana: no reseller link -->
+  <line x1="324" y1="182" x2="476" y2="182" stroke="#c5cdda" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="400" y="170" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">Bayi değil</text>
+  <text x="400" y="206" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">abonelik satmaz</text>
+
+  <!-- You -->
+  <rect x="250" y="340" width="300" height="96" rx="10" fill="#e8edf6" stroke="#0f2855" stroke-width="2"/>
+  <text x="400" y="380" font-size="20" font-weight="700" fill="#0f2855" text-anchor="middle">Siz: kişi ya da şirket</text>
+  <text x="400" y="410" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Claude'u işte kullanırsınız</text>
+
+  <!-- Anthropic -> You -->
+  <line x1="180" y1="236" x2="304" y2="334" stroke="#0f2855" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <text x="56" y="290" font-size="16" font-weight="700" fill="#0f2855">Abonelik doğrudan</text>
+  <text x="56" y="312" font-size="16" font-weight="500" fill="#1a2238">Anthropic'ten</text>
+
+  <!-- Zamana -> You -->
+  <line x1="620" y1="236" x2="496" y2="334" stroke="#c9a84c" stroke-width="2" marker-end="url(#arrow-gold)"/>
+  <text x="744" y="290" font-size="16" font-weight="700" fill="#0f2855" text-anchor="end">Bağımsız eğitim</text>
+  <text x="744" y="312" font-size="16" font-weight="500" fill="#1a2238" text-anchor="end">ve ücretsiz wiki</text>
+</svg>

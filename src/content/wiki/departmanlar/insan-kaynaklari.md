@@ -1,19 +1,20 @@
 ---
 title: "İnsan Kaynakları: Claude Uygulamaları"
+seoTitle: "İKte Claude: İş İlanı, Mülakat Soruları, Performans Değerlendirme"
 description: "İK ekibi için Claude: iş ilanı, mülakat soru setleri, performans değerlendirme, onboarding, politika yazımı. İş Kanunu çerçevesinde hukuki dikkat."
 tags:
   - departmanlar
   - insan-kaynaklari
   - ik
   - is-kanunu
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 İnsan Kaynakları, Claude'un en çok tekrarlayan ve en yüksek hacimli işi bulduğu alanlardan biridir. Ama hukuki hassasiyeti de yüksektir.
 
 > **Kritik çerçeve:** Claude İK belgelerini taslaklar; istihdam hukukuna dokunan her şeyde **hukuk incelemesi zorunludur**. Özellikle Türkiye'de **İş Kanunu** kendine özgü gereksinimler taşır. Claude yapı ve dil konusunda yardım eder; disiplin işlemleri, işten çıkarmalar veya bağlayıcı anlaşmalar için istihdam avukatının yerini tutmaz.
 
-> **Kişisel veri notu:** Aday ve çalışan bilgileri kişisel veridir. Kimlik, maaş, sağlık ve performans bilgilerini Claude'a girmeden önce anonimleştirin; anonimleştirmeden girecekseniz yurt dışı aktarım güvencesini tamamlayın ([Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım (KVKK m.9)" bölümü). Çalışandan açık rıza almak, düzenli kullanım için tek başına güvenli bir dayanak değildir.
+> **Kişisel veri notu:** Aday ve çalışan bilgileri kişisel veridir. Kimlik, maaş, sağlık ve performans bilgilerini Claude'a girmeden önce anonimleştirin; anonimleştirmeden girecekseniz yurt dışı aktarım güvencesini tamamlayın ([KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/)). Çalışandan açık rıza almak, düzenli kullanım için tek başına güvenli bir dayanak değildir.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -51,7 +52,7 @@ Toplantı zamanı harcamadan adayları eleyen yazılı sorular.
 
 ### Performans Değerlendirme Yazımı
 
-Siz olgusal değerlendirmeyi ve somut örnekleri verirsiniz, Claude yapılandırılmış bir anlatı üretir. **Tüm yöneticilerde tutarlı kalite** sağlanır, değerlendirmenin kalitesi en iyi yazan kişiye bağlı kalmaz.
+Siz olgusal değerlendirmeyi ve somut örnekleri verirsiniz, Claude yapılandırılmış bir anlatı üretir. **Tüm yöneticilerde tutarlı kalite** sağlanır, değerlendirmenin kalitesi en iyi yazan kişiye bağlı kalmaz. **Süre:** kişi başı elle 45-60 dakika, Claude ile 15-20 dakika (yönetici kontrolü dahil). *Zamana gözlemi, tipik aralık.* 50 kişilik bir değerlendirme sezonunda fark kabaca 20-35 saattir.
 
 ### Gelişim Planı Dokümantasyonu
 
@@ -69,7 +70,7 @@ Yazılı uyarılar ve performans iyileştirme planları: yapılandırılmış, o
 
 ### Eğitim Materyali Ana Hatları
 
-Siz konuyu tarif edersiniz; Claude eğitim oturumunun gündemini, kilit noktalarını, egzersizlerini ve değerlendirme sorularını yapılandırır.
+Siz konuyu tarif edersiniz; Claude eğitim oturumunun gündemini, kilit noktalarını, egzersizlerini ve değerlendirme sorularını yapılandırır. İK şirket içi eğitim planının sahibiyse ve Claude eğitimini yürütecek bir kişi yetiştirmek istiyorsanız [AI Şampiyonu ve Eğitmen programına](/programlar/ai-sampiyonu/) bakın.
 
 ## Bölüm 3: Politika ve İç İletişim
 
@@ -124,6 +125,8 @@ Pozisyon kaldırma bildirimleri, danışma süreci dokümantasyonu, kıdem tazmi
 2. **Slack / Teams**: iç iletişim
 3. (opsiyonel) **DocuSign**: teklif mektubu imzaları
 
+**Hazır eklenti:** Anthropic'in resmi eklenti deposunda (`anthropics/knowledge-work-plugins`) İK için ayrı bir `human-resources` klasörü var. Kurmadan önce içeriğini inceleyin; çıktıları İş Kanunu ve şirket politikanıza göre ayrıca kontrol edin.
+
 ## İş Akışı Yeniden Tasarımı Adayları
 
 - **İşe alım döngüsü**: ilan → ön-eleme → mülakat → teklif, her adımda Claude destekli
@@ -145,7 +148,15 @@ Pozisyon kaldırma bildirimleri, danışma süreci dokümantasyonu, kıdem tazmi
 
 **Adım 4:** İlan LinkedIn'de ve kariyer sayfasında yayına girer.
 
-Toplam süre: yaklaşık 35 dakika (örnek senaryo). Geleneksel süreç: 2-3 saat ve 1-2 tur iç müzakere.
+**Süre:** iş ilanı ve 10 mülakat sorusu için elle 2-3 saat, Claude ile 30-45 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Yılda 12 ilan açan bir ekipte fark kabaca 15-30 saattir.
+
+## Sık Hatalar
+
+Eğitimlerde İK ekiplerinin en çok takıldığı üç nokta (Zamana eğitim materyali):
+
+- **Hukuki risk.** Disiplin, fesih ve kıdem hesaplaması Claude'un işi değildir; hukuk incelemesi her zaman gerekir.
+- **Çalışan verisi.** Performans değerlendirmesi gibi bilgiler hassastır; prompt'a girmeden önce anonimleştirin ya da şirket politikanıza bakın. Çalışan verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
+- **Fazla teknik dil.** İK iletişiminde insani ton önemlidir. Talimata "hukuk dili olmasın" yazın, yazılı kısıt koymazsanız çıktı resmî bir dile kayabilir.
 
 ## İlgili Sayfalar
 
@@ -153,4 +164,7 @@ Toplam süre: yaklaşık 35 dakika (örnek senaryo). Geleneksel süreç: 2-3 saa
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Çalışan verisi hassasiyeti
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Şirket kültürü ve ton
 - [Hukuk ve Uyum](/wiki/departmanlar/hukuk/): İş Kanunu nüansları
+- [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/): çalışan verisini Claude'a girmeden önce
+- [AI Şampiyonu ve Eğitmen programı](/programlar/ai-sampiyonu/): kurum içi Claude eğitmeni yetiştirme
+- [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): kendi zaman kazancınızı hesaplayın
 

@@ -1,12 +1,13 @@
 ---
 title: "4D Çerçevesi: Claude ile Düşünmenin Temeli"
+seoTitle: "AI Fluency 4D Çerçevesi Nedir? 4 Yetkinlik"
 description: "Anthropic'in AI Fluency çerçevesi: Delegation, Description, Discernment, Diligence. Yapay zekayla verimli, etik ve güvenli çalışmanın dört yetkinliği."
 tags:
   - prompting
   - 4d-framework
   - ai-fluency
   - anthropic-academy
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir. Anthropic Academy ve University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
@@ -28,6 +29,8 @@ Bu sayfa çerçeveyi tanıtır. Dört D'yi ve her birinin alt yetkinliklerini a�
 
 Bu dört D sırasıyla uygulanabilir, ama zorunlu değildir. Her biri ayrı bir giriş noktası olabilir. Deneyimli bir kullanıcı hepsini aynı anda, neredeyse bilinçsizce kullanır.
 
+![4D döngüsü: Delegation (Devretme), Description (Tanımlama), Discernment (Ayırt Etme), Diligence (Sorumluluk); çıktı yetersizse Discernment'tan Description'a geri dönülür](/images/wiki/prompting-4d-dongusu.svg)
+
 ## D1: Delegation (Devretme)
 
 > **"Hangi işin size, hangisinin yapay zekaya, hangisinin ikinize ait olduğuna bilinçli karar vermek ve işi ona göre dağıtmak."**
@@ -37,7 +40,7 @@ Etkili devretme iki yetkinlik ister: **alan uzmanlığı** (işi bilmek) ve **pl
 Üç alt yetkinlik:
 
 - **Problem farkındalığı:** Yapay zekayı işe dahil etmeden *önce* neyi başarmak istediğinizi netleştirmek. Tanımlamadığınız bir şeyi iyi devredemezsiniz.
-- **Platform farkındalığı:** Farklı yapay zeka sistemlerinin güçlü ve zayıf yönlerini tanımak. Her işe aynı araç uygun değildir.
+- **Platform farkındalığı:** Farklı yapay zeka sistemlerinin güçlü ve zayıf yönlerini tanımak. Her işe aynı araç uygun değildir. Claude ailesi içinde model seçimi için: [Claude Modelleri](/wiki/temeller/modeller/).
 - **Görev dağılımı:** İşi insan, yapay zeka ve işbirliği arasında dengeli şekilde bölmek.
 
 ### Başarısızlık biçimi: "Kâbus"
@@ -103,6 +106,8 @@ Eleştirel düşünme yapay zeka işe girdiğinde durmaz, yer değiştirir: üre
 - **Süreç Ayırt Etme:** Claude'un yolu. Göreve doğru yaklaştı mı? Akıl yürütme sağlam mı? Kestirme mi gitti?
 - **Performans Ayırt Etme:** Claude'un davranışı. Görevde kaldı mı? Belirsizliği işaret etti mi? Verilen davranış talimatlarına uydu mu?
 
+Neyi ayırt edeceğinizi bilmek için Claude'un tipik zayıf noktalarını tanımak gerekir: uydurma bilgi, güncel olmayan veri, duymak istediğinizi söyleme eğilimi. Bunlar [Claude'un Sınırları](/wiki/temeller/sinirlamalar/) sayfasında.
+
 ### Başarısızlık biçimi: "Yapay zekayı kaynak gösterdim, sorun ne?"
 
 > *"Bir taslak yazdım, AI ile doldurdum, tüm olguları ve kaynakları doğruluk için çift-kontrol ettim, çıkan metni aracı kaynak göstererek teslim ettim."*
@@ -131,7 +136,7 @@ Yapay zeka bir araçtır. Sorumluluk, hesap verebilirlik ve profesyonel yüküml
 
 Üç alt yetkinlik:
 
-- **Yaratım Sorumluluğu:** Hangi yapay zeka sistemlerini kullandığımız, nasıl etkileştiğimiz konusunda bilinçli olmak. Araç seçimi, veri gizliliği ve etik değerlendirme, çıktı üretilmeden *önce* yapılır.
+- **Yaratım Sorumluluğu:** Hangi yapay zeka sistemlerini kullandığımız, nasıl etkileştiğimiz konusunda bilinçli olmak. Araç seçimi, veri gizliliği ve etik değerlendirme, çıktı üretilmeden *önce* yapılır. Pratikte: kuruma özel kurallar için [Şirket İçi AI Politikası](/wiki/temeller/sirket-ici-politika/), kişisel veri için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Şeffaflık Sorumluluğu:** Yapay zekanın işimizdeki rolünü, bilmesi gereken herkese karşı dürüstçe ifade etmek. Yapay zeka önemli katkı yaptıysa açıklama zorunluluktur; bağlama göre biçimi değişir, yükümlülük değişmez.
 - **Uygulama Sorumluluğu:** Kullandığımız ve paylaştığımız çıktıları doğrulamak, onların arkasında durmak. Çıktıyı teslim ettiğiniz, gönderdiğiniz, yayınladığınız, sunduğunuz ya da eyleme geçirdiğiniz anda sorumluluk sizindir.
 
@@ -139,7 +144,9 @@ Yapay zeka bir araçtır. Sorumluluk, hesap verebilirlik ve profesyonel yüküml
 
 Çerçeveyi yazan akademisyenlerin kendi sunumlarında kullandıkları ifade:
 
-> *"Bu sunumun hazırlanmasında metin oluşturma ve rafine etmede Claude Sonnet 3.7'den yararlandık. Yapay zeka tarafından üretilen tüm içerik, dikkatli bir inceleme ve seçim sürecinden geçirilmiştir. Nihai sunum bizim anlayışımızı, uzmanlığımızı ve iletmek istediklerimizi doğru biçimde yansıtmaktadır. Yapay zeka sistemleri yaratım sürecinde araç görevi görse de, içeriğin, doğruluğunun ve sunumunun tam sorumluluğu bize aittir."*
+> *"Bu sunumun hazırlanmasında metin oluşturma ve rafine etmede Claude 3.7 Sonnet'ten yararlandık. Yapay zeka tarafından üretilen tüm içerik, dikkatli bir inceleme ve seçim sürecinden geçirilmiştir. Nihai sunum bizim anlayışımızı, uzmanlığımızı ve iletmek istediklerimizi doğru biçimde yansıtmaktadır. Yapay zeka sistemleri yaratım sürecinde araç görevi görse de, içeriğin, doğruluğunun ve sunumunun tam sorumluluğu bize aittir."*
+
+(Alıntıdaki model adı sunumun hazırlandığı dönemdendir; kendi beyanınıza o gün kullandığınız modeli yazın.)
 
 Bu bir Diligence beyanının modelidir: yapay zekanın ne yaptığı konusunda net, insan sorumluluğu konusunda açık, hedef kitleye karşı şeffaf.
 
@@ -178,13 +185,13 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 ## İlgili Sayfalar
 
 - [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/): İyi bir prompt'un yapısı
-- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/): Zincirleme düşünme, yapılandırılmış çıktı
+- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/): XML etiketleri, zincirleme, eleştirmen, düşünme derinliği
 - [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/): Çoğu kişinin düştüğü tuzaklar
 - [Claude Nedir?](/wiki/temeller/claude-nedir/): Çerçeveden önce temel kavram
 
 ## Resmi Kaynaklar
 
-- **AI Fluency Framework: Foundations** (Anthropic Academy): [anthropic.skilljar.com/ai-fluency-framework-foundations](https://anthropic.skilljar.com/ai-fluency-framework-foundations/291876)
+- **AI Fluency Framework and Foundations** (Claude Academy, ücretsiz, 14 ders, yaklaşık 4 saat): [academy.claude.com/courses](https://academy.claude.com/courses)
 - **Anthropic AI Fluency:** [anthropic.com/ai-fluency](https://anthropic.com/ai-fluency)
 - **Yazarlar:** Rick Dakan (Ringling College of Art and Design), Joseph Feller (University College Cork)
 

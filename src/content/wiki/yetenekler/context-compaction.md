@@ -1,12 +1,13 @@
 ---
 title: "Context Window ve Compaction: Claude'un Çalışan Belleği"
+seoTitle: "Claude Bağlam Penceresi ve Compaction Rehberi"
 description: "Claude'un bağlam penceresi nedir, nasıl dolar, neden önemli. Context compaction uzun oturumları ayakta tutar. Pratik bağlam yönetimi taktikleri."
 tags:
   - yetenekler
   - context-window
   - compaction
   - token
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Context window (bağlam penceresi), Claude'un tek bir konuşmada aynı anda "görebildiği" ve üzerinde çalışabildiği toplam metin miktarıdır.**
@@ -48,7 +49,7 @@ Pencere dolmaya yaklaştığında:
 2. Eski mesajların yerine bu özet konur
 3. Çalışma özeti yeni temel alarak devam eder
 
-Bu süreç **Cowork ve Dispatch oturumlarında otomatiktir**. Genelde farkına bile varmazsınız, iş sadece devam eder.
+Bu süreç **[Cowork](/wiki/araclar/cowork-modu/) ve Claude Code oturumlarında otomatiktir**. Genelde farkına bile varmazsınız, iş sadece devam eder.
 
 claude.ai sohbetinde de, code execution açıkken, bağlam penceresine yaklaşıldığında önceki mesajlar otomatik özetlenir. Bu özetleme kullanım limitinizden düşmez ve tam sohbet geçmişi korunur. Code execution kapalıysa otomatik yönetim çalışmaz. Çok büyük tek bir ilk mesaj gibi uç durumlarda sınır yine aşılabilir.
 
@@ -73,7 +74,7 @@ Compaction özellikle şu durumlarda önemlidir:
 - **Uzun belge inceleme oturumları**: büyük bir sözleşmenin çoklu alışverişte analizi
 - **Çok adımlı rapor üretimi**: veri toplama, taslak yazma, iterasyon, iyileştirme
 - **Çoklu dosya ve araç kullanan Cowork Project oturumları**
-- **Zaman içinde birçok adım gerektiren Dispatch görevleri**
+- **Zaman içinde birçok adım gerektiren uzun Cowork görevleri**
 
 Pratik sonuç: **Cowork'te karmaşık bir işle uğraşan kişi "ortada sıfırlamak" zorunda değildir**. Sistem süreklilik yönetimini otomatik yapar.
 
@@ -91,7 +92,7 @@ Claude'a "bugüne kadar önemli olan her şeyi özetle" deyin. Özeti bir dosyay
 
 ### 3. Kritik Bağlamı CLAUDE.md'ye Taşıyın
 
-Her oturumda geçerli olması gereken bilgi **CLAUDE.md**'de olmalı, her yeni oturumda taze yüklenir, compaction'dan etkilenmez.
+Her oturumda geçerli olması gereken bilgi kalıcı talimatta olmalı: yerel Cowork ve Claude Code'da klasördeki **CLAUDE.md**, sohbette proje talimatı ya da profil talimatı. Bunlar her yeni oturumda taze yüklenir, compaction'dan etkilenmez. Sohbet CLAUDE.md dosyasını okumaz; yerlerin karşılaştırması için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ### 4. Cowork Projects Kullanın
 
@@ -131,5 +132,5 @@ Bu tek prensip, en sık duyulan "Claude bir şeyi unutuyor" şikayetini büyük 
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Uzun oturumlarda kalite düşüşü
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Compaction'a dayanıklı kalıcı bağlam
 - [Projects](/wiki/araclar/projects/): Oturumlar arası hafıza
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Dört hafıza katmanının detayı
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat ve hafıza yerlerinin detayı
 

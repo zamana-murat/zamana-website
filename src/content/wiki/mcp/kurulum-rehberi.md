@@ -1,308 +1,179 @@
 ---
 title: "MCP Kurulum Rehberi: Adım Adım"
-description: Claude Desktop ve claude.ai üzerinde MCP server ekleme. Yaygın sorunlar, doğrulama, ilk kullanım, pratik rehber.
+seoTitle: "Claude'a MCP Ekleme: Özel Connector Nasıl Kurulur?"
+description: "Claude'a MCP nasıl eklenir? Özel connector (sunucu URL'si), masaüstü uzantıları, yönetici onayı, BT'ye düşen adımlar ve yaygın hatalar."
 tags:
   - mcp
   - kurulum
   - rehber
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-**[MCP](/wiki/mcp/nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır.** Bu sayfa bir MCP server'ı Claude Desktop veya claude.ai'a nasıl ekleyeceğinizi adım adım anlatır.
+**[MCP](/wiki/mcp/nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır; Claude'daki "connector" bir MCP sunucusudur.** Bu sayfa dizinde olmayan bir MCP sunucusunu Claude'a nasıl ekleyeceğinizi anlatır: özel connector (uzak sunucu URL'si) ve masaüstü uzantısı (yerel).
 
-[Connectors](/wiki/araclar/connectors/) ile karıştırmayın: connector Anthropic'in resmî, hazır entegrasyonudur; MCP daha geniş ve özelleştirilebilirdir.
+Dizinde hazır duran connector'lar da aynı protokolü kullanır; onları bağlamak tek tıktır ve [Connectors](/wiki/araclar/connectors/) sayfasında anlatılır. Ürün çerçevesi ve plan kapsamı için [Claude Connectors](/claude/connectors/) sayfasına bakın.
 
-## Önce: MCP mi, Connector mu?
+## Önce: Hangi Yol?
 
-| Servisiniz... | Tercih |
+| Servisiniz... | Yol |
 |---|---|
-| Resmî [Connector](/wiki/araclar/connectors/) listesinde (Gmail, Drive, Slack, Notion vs.) | Connector, daha kolay |
-| Listede yok ama popüler bir SaaS | MCP, büyük olasılıkla bir community MCP var |
-| Şirket içi sistem (CRM, ERP) | MCP, özel server yazılır |
-| Hassas veriyle çalışıyor | MCP + dikkatli [Güvenlik](/wiki/mcp/guvenlik/) yapılandırması |
+| Resmî dizinde var (yaklaşık 900 connector) | Dizin connector'ı, tek tık: [Connectors](/wiki/araclar/connectors/) |
+| Dizinde yok | Özel connector (uzak sunucu URL'si) ya da masaüstü uzantısı (yerel), bu sayfa |
 
-Eğer connector seçeneğiniz varsa, MCP'ye gerek yok. Hızlı kararı [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfası verir; resmî dizinde yaklaşık 900 connector vardır.
+Kendi iç sisteminizi (ERP, iç CRM) bağlamak istiyorsanız kim kurar, ne istenir, nasıl pilot yapılır sorularını [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfası ele alır. Hızlı seçki için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/).
 
-## Kurulum Yeri: Claude Desktop mı, claude.ai mi?
+## Üç Yol, Tek Protokol
 
-İki ortamda da MCP destekleniyor:
+| | Dizin connector'ı | Özel connector | Masaüstü uzantısı |
+|---|---|---|---|
+| Nerede çalışır | Sağlayıcının uzak sunucusunda | Uzak sunucuda; herkese açık internetten erişilebilir olmalı | Sizin bilgisayarınızda |
+| Kurulum yeri | Customize > Connectors | Customize > Connectors | Claude Desktop, Settings > Extensions |
+| Ne gerekir | Hesap girişi (OAuth) | Sunucunun URL'si | `.mcpb` paketi (eski adı `.dxt`) |
+| Kim ekler | Siz; Team ve Enterprise'ta bazılarını önce owner açar | Team ve Enterprise'ta yalnız owner | Siz; Team ve Enterprise'ta owner izin listesi açabilir |
 
-- **[Claude Desktop](/wiki/araclar/claude-desktop/):** Kişisel bilgisayarda yerel kurulum. Daha esnek, özel server'lar buradan kullanılır.
-- **claude.ai:** Web/mobil. Kurulum tek tık, ama özel server seçenekleri sınırlı.
+## Yol 1: Özel Connector (Uzak Sunucu URL'si)
 
-Bu sayfa **Claude Desktop** üzerinden kurulumu odak alır, çünkü daha güçlü ve esnektir. Web tarafı için kısa bir bölüm sonda var.
+Sağlayıcının ya da sizin barındırdığınız bir MCP sunucusunun adresi elinizdeyse bu yol yeterlidir. Claude'da, Claude Desktop'ta, Cowork'te ve mobilde çalışır; mobilde kurulum beta aşamasındadır, asıl yol web ve Desktop'tır.
 
-## Adım 1: Server Seçimi
+**Bireysel planlarda (Free, Pro, Max):**
 
-Hangi MCP server'ı kullanacağınızı belirleyin. Üç ana kaynak:
+1. **Customize > Connectors** bölümünü açın.
+2. Özel connector ekleme seçeneğini seçin, sunucunun URL'sini girin.
+3. Gerekiyorsa gelişmiş ayarlardan OAuth Client ID ve Secret girin.
+4. Sunucunun giriş ekranında kendi hesabınızla onay verin.
 
-### A. Anthropic Resmî MCP Server'ları
+Free planda en çok 1 özel connector eklenir. Menü adları arayüz güncellemelerinde değişebilir; ekranda görünen ad esastır.
 
-GitHub'daki resmî MCP referans server deposu (`modelcontextprotocol/servers`) bugün yalnızca `filesystem`, `fetch`, `git`, `memory`, `sequentialthinking`, `time` ve `everything` server'larını bakımda tutar. `github`, `postgres`, `slack` ve `brave-search` gibi eski referans server'lar bakımı yapılmayan `modelcontextprotocol/servers-archived` deposuna taşındı.
+**Team ve Enterprise'ta:**
 
-> **Arşiv notu:** Bu sayfadaki GitHub ve PostgreSQL yapılandırma örnekleri yalnızca yapıyı göstermek içindir. Gerçek kurulumda arşivdeki paketler yerine hizmet sağlayıcının resmî uzak MCP sunucusunu ya da güncel paketini seçin ve paket adını kurmadan önce doğrulayın.
+1. Owner (Primary Owner dahil), **Organization settings > Connectors** altında **Add > Custom > Web** yolunu izler, URL'yi girer.
+2. Üyeler özel connector ekleyemez; **Customize > Connectors** bölümünde ilgili connector'ın yanındaki **Connect** ile kendi hesaplarını bağlar. Kimlik doğrulama kişi başına ayrı yapılır.
 
-[Popüler MCP'ler](/wiki/mcp/populer-mcpler/) sayfasında detay ve seçim kriterleri.
+**Kimlik doğrulama seçenekleri:** OAuth (Claude'un yayımlanmış kimliği önerilen seçenek; ayrıca otomatik kayıt ya da kendi OAuth istemciniz), sabit API anahtarı veya bearer başlığı, ya da hiç giriş yok. Anthropic'in doğrulamadığı bir sunucuya özel connector eklerken Claude güvenlik uyarısı verir; uyarıyı okuyun.
 
-### B. Topluluk MCP'leri
+> **BT'ye düşen:** Uzak connector'a Claude, cihazınızdan değil **Anthropic'in bulut altyapısından** bağlanır. Sunucu bir güvenlik duvarı ya da VPN arkasındaysa ve yalnız iç ağdan erişiliyorsa bu yolla ulaşılmaz. Sunucuyu internete açıyorsanız Anthropic'in giden IPv4 aralığını (`160.79.104.0/21`) güvenlik duvarında izin listesine alın; eski `34.162.x.x` adresleri kullanım dışıdır ve silinmelidir. Güncel aralık için [Anthropic IP adresleri sayfasına](https://platform.claude.com/docs/en/api/ip-addresses) bakın.
 
-Açık kaynak topluluğu yüzlerce MCP server üretti: Notion, Linear, Jira, Salesforce, AWS ve benzerleri. GitHub'da arayarak veya MCP marketplace'lerinden bulabilirsiniz.
+## Yol 2: Masaüstü Uzantısı (Yerel)
 
-**Dikkat:** Topluluk MCP'leri **denetlenmemiş** olabilir. [Güvenlik](/wiki/mcp/guvenlik/) sayfasına bakın.
+Masaüstü uzantısı, Claude Desktop'a tek tıkla kurulan yerel MCP sunucusu paketidir (`.mcpb`, eski adıyla `.dxt`). Claude Desktop'ta Node.js gömülü gelir, JSON yapılandırması gerekmez. Dosya ya da klasör gibi bilgisayarınızdaki şeylere erişecek bir sunucu için doğru yol budur.
 
-### C. Şirket İçi Özel MCP
+1. [Claude Desktop](/wiki/araclar/claude-desktop/) içinde **Settings > Extensions** bölümünü açın.
+2. **Browse extensions** ile Anthropic incelemeli dizinden uzantıyı seçip kurun.
+3. Dizinde olmayan bir `.mcpb` dosyanız varsa **Advanced settings > Extension Developer > Install Extension** yolunu kullanın.
+4. İstenen ayarları (klasör yolu, API anahtarı) girin. Hassas olarak işaretli alanlar işletim sisteminin kasasında şifrelenir (macOS Keychain, Windows Credential Manager).
 
-Kendi ERP/CRM sisteminize MCP yazmak için Anthropic'in MCP SDK'sini kullanırsınız (Python veya TypeScript). Bu geliştirici işi; [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile koordine edilir.
+Dosya erişimi veren bir uzantıda tüm diski değil, tek bir çalışma klasörünü seçin.
 
-## Adım 2: Ön Koşullar
+**Team ve Enterprise'ta yönetici kontrolü** (owner, Organization settings > Connectors > Desktop sekmesi):
 
-Çoğu MCP server için şu araçlar gerekli:
+- Herkese açık uzantı dizini açılıp kapatılabilir.
+- **İzin listesi (allowlist) anahtarı varsayılan olarak kapalıdır.** Açıldığında kurulu uzantılar **zorla silinir**; kullanıcılar yalnız onaylı uygulama içi kayıt defterinden kurabilir, `.mcpb` dosyasını sürükleyip kuramaz. Açmadan önce çalışanları uyarın. İzin listesi Claude Desktop 0.13.91 ve üstünü ister.
+- Kurum kendi `.mcpb` uzantısını yükleyip tek tıkla dağıtabilir. Manifest'teki `name` benzersiz olmalı, güncelleme için `version` artırılır.
+- Cihaz yönetimi (MDM) politikası, uygulama içi ayarı **ezer**.
 
-- **Node.js** (v18+) veya **Python 3.10+**: server türüne bağlı
-- **Claude Desktop** kurulu: claude.ai/download adresinden indirilir
-- **Yetkili hesap**: server bağlanacağı servis için (örn. GitHub token, Slack access token)
+## Kurulumdan Önce: Sunucu Seçimi
 
-Ön koşulları kurmak için terminal kullanmanız gerekir. Geliştirici değilseniz BT'den yardım alın.
+### A. Sağlayıcının Kendi Sunucusu
 
-## Adım 3: Yapılandırma Dosyası
+Birçok SaaS kendi uzak MCP sunucusunu yayımlar. Mümkünse bu yolu seçin: bakımı sağlayıcıdadır. Dizinde "Anthropic verified" olarak görünenler bu türdendir.
 
-Claude Desktop, MCP yapılandırmasını bir JSON dosyasında saklar:
+### B. Resmî Referans Sunucuları
 
-- **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
-- **Linux:** `~/.config/Claude/claude_desktop_config.json`
+GitHub'daki MCP referans deposu (`modelcontextprotocol/servers`) bugün yalnızca `filesystem`, `fetch`, `git`, `memory`, `sequentialthinking`, `time` ve `everything` sunucularını bakımda tutar. `github`, `postgres`, `slack` ve `brave-search` gibi eski referans sunucular bakımı yapılmayan `modelcontextprotocol/servers-archived` deposuna taşındı. Bunların yerine sağlayıcının resmî uzak MCP sunucusunu ya da güncel paketini seçin.
 
-Dosya yoksa yaratırsınız (Claude Desktop ilk açıldığında oluşturmuş olabilir).
+[Popüler MCP'ler](/wiki/mcp/populer-mcpler/) sayfasında seçim kriterleri var.
 
-Temel yapı:
+### C. Topluluk Sunucuları
 
-```json
-{
-  "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/kullanici/Documents"]
-    },
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_xxxxxxxxxxxxxxxxxxxx"
-      }
-    }
-  }
-}
-```
+Açık kaynak topluluğu yüzlerce sunucu üretti, ama bunlar **denetlenmemiş** olabilir. Örneğin Paraşüt için bulunan tek MCP sunucusu resmî değil, topluluk işidir; deneme dışında önerilmez. [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki kontrol listesinden geçirmeden kurmayın.
 
-Her server bir JSON nesnesi. Hangi komut çalışacak, ne argümanlar, hangi env değişkenleri.
+### D. Şirket İçi Sistemler
 
-## Adım 4: Server Kuruluş Örneği
+ERP ve iç CRM için sunucuyu bir geliştirici yazar ya da entegratör kurar; bu BT ile koordine edilir. Karar akışı için [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasına bakın.
 
-### Örnek: Filesystem MCP
+## Doğrulama
 
-Claude'un yerel `Documents` klasörünüze erişebilmesi için:
+Kurulumdan sonra yeni bir sohbet açıp sorun:
 
-```json
-{
-  "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "/Users/kullanici/Documents"
-      ]
-    }
-  }
-}
-```
+> *"Hangi araçların aktif?"*
 
-Açıklama:
-
-- `command: npx` → Node.js paket yürütücüsü
-- `-y` → otomatik onay
-- Paket adı → server'ın npm'deki adı
-- Son arg → erişim verilen klasör (sadece bu ve alt klasörleri erişilebilir)
-
-**Güvenlik:** "Tüm hard disk" demek yerine spesifik klasör seçin.
-
-### Örnek: GitHub MCP
-
-```json
-{
-  "mcpServers": {
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_..."
-      }
-    }
-  }
-}
-```
-
-GitHub'da Settings → Developer settings → Personal access tokens → fine-grained token oluşturun. Hangi repo'lar, hangi yetkiler, minimum verin.
-
-### Örnek: PostgreSQL MCP
-
-```json
-{
-  "mcpServers": {
-    "postgres": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-postgres",
-        "postgresql://kullanici:sifre@localhost:5432/veritabani"
-      ]
-    }
-  }
-}
-```
-
-**Şifreyi konfige yazmaktan kaçının.** Yerine env değişkeni kullanın.
-
-## Adım 5: Claude Desktop'ı Yeniden Başlatın
-
-Yapılandırma dosyasını kaydettikten sonra:
-
-1. Claude Desktop'ı tamamen kapatın (sadece pencere kapatma değil, çıkış)
-2. Yeniden açın
-3. Yeni sohbet başlatın
-
-MCP server'lar Claude açılışında tetiklenir. Açılış sırasında bir terminal penceresi açılabilir; bu normaldir, server süreci başlıyordur.
-
-## Adım 6: Doğrulama
-
-Yeni bir sohbet açın, Claude'a sorun:
-
-> *"Hangi MCP araçların aktif?"*
-
-Claude size aktif server'ların listesini söylemeli. Yoksa:
-
-- Server hata vermiş olabilir → Claude Desktop loglarını kontrol edin
-- Yapılandırma JSON yanlış olabilir → JSON validator ile sözdizimi kontrolü
-- Env değişkeni eksik → token / şifre doğru mu
+Claude bağlı connector ve uzantıların araçlarını saymalı. Sohbetteki **Search and tools** menüsünden hangi connector'ın açık olduğunu da görür, ilgisiz olanı kapatabilirsiniz. İlk kullanımda Claude araç için izin sorar (**Allow once**, **Always allow** ya da **Deny**); ayrıntı için [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki "Onay Mekanizması" bölümüne bakın.
 
 ## Yaygın Sorunlar
 
-### Sorun: "Server bağlanamadı"
+### "Sunucuya ulaşılamıyor" (özel connector)
 
-**Çözüm:** 
-- Komut yolu doğru mu (`npx` PATH'te mi)
-- Paket adı doğru mu (yazım hatası yaygın)
-- Yetkilendirme token'ı geçerli mi
+- Sunucu herkese açık internetten erişilebilir mi? Yalnız şirket ağında çalışıyorsa Anthropic bulutu ulaşamaz.
+- Güvenlik duvarı varsa Anthropic'in IP aralığı izin listesinde mi?
+- URL doğru mu, sunucu ayakta mı?
 
-### Sorun: "Claude server'ı görüyor ama çağıramıyor"
+### "Giriş (OAuth) tamamlanmıyor"
 
-**Çözüm:**
-- Server yetkisi yetersiz (örn. GitHub token'da read yok)
-- Filesystem'de klasör yolu var olmayabilir
+- Sunucunun OAuth ayarları ile Claude'da seçtiğiniz kimlik seçeneği uyuşuyor mu?
+- Hesabınızın o servis tarafında gerekli yetkisi var mı?
 
-### Sorun: "JSON syntax hatası"
+### "Üye olarak connector ekleyemiyorum" (Team ve Enterprise)
 
-**Çözüm:**
-- Virgül eksik / fazla
-- Tırnak işareti eksik
-- jsonlint.com gibi araçla kontrol
+Beklenen davranıştır: özel connector'ı yalnız owner ekler. Üyenin yapacağı **Connect** ile kendi hesabını bağlamaktır. Connector listede yoksa owner'dan ekletin.
 
-### Sorun: "Antivirus / Firewall engelliyor"
+### "Uzantıyı kuramıyorum" (Team ve Enterprise)
 
-**Çözüm:**
-- Kurumsal bilgisayarda IT politikası npx çalıştırmayı engelleyebilir
-- BT ile konuşun, [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası rehber içerir
+İzin listesi açıksa yalnız onaylı kayıt defterindeki uzantılar kurulur. Gerekirse owner'dan uzantıyı onaylatmasını isteyin.
 
-## claude.ai (Web) Üzerinde MCP
+### "Kurumsal bilgisayarda engelleniyor"
 
-Web tarayıcısı sürümünde MCP desteği **gelişiyor** ve Claude Desktop kadar esnek değil. Resmî connector dizini buradan kullanılır; özel server eklemek için:
-
-1. Settings → Connectors / MCP (sürüme göre değişir)
-2. "Add custom MCP" benzeri seçenek (eğer mevcutsa)
-3. Server URL'si veya yapılandırma yüklenir
-
-Çoğu durumda web'de **Anthropic onaylı** hazır server'lar gelir; özel şirket-içi MCP'leri Claude Desktop'tan kullanmak daha pratik.
-
-## Şirket İçi MCP: Özel Geliştirme
-
-Kendi sisteminize MCP yazmak için:
-
-1. **Anthropic MCP SDK** seçin (Python veya TypeScript)
-2. Server'ın hangi kaynakları (resource) ve hangi araçları (tool) sunacağını tasarlayın
-3. Yetkilendirme akışını netleştirin (OAuth, API key, mTLS, vs.)
-4. Test edin (Claude Desktop'ta yerel olarak)
-5. Şirket içinde dağıtım (genelde dahili NPM registry, internal Docker, vs.)
-
-[BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ve [Güvenlik](/wiki/mcp/guvenlik/) sayfaları kurumsal pratiği detaylandırır.
-
-## Birden Fazla Server Birlikte
-
-Tek yapılandırma dosyasında 5-10 farklı server tutabilirsiniz:
-
-```json
-{
-  "mcpServers": {
-    "filesystem": { ... },
-    "github": { ... },
-    "postgres": { ... },
-    "slack": { ... },
-    "internal-crm": { ... }
-  }
-}
-```
-
-Hepsi Claude'a sunulur. Hangisini ne zaman kullanacağına Claude karar verir. "GitHub'da ABC repo'sundaki son issue'ları getir" derseniz GitHub server'ına gider.
-
-## Kullanım: İlk Test
-
-Server kurulduktan sonra deneme:
-
-> *"Documents klasörümde bu hafta değiştirilen dosyaları listele."* (filesystem)
->
-> *"Şu repo'daki açık PR'ları getir: kullanici/depo-adi"* (github)
->
-> *"Postgres'te customers tablosundan son 10 kayıt çek."* (postgres)
-
-İlk kullanımda Claude size **izin** sormak isteyebilir; onayladığınızda server çağrılır.
-
-## Sürüm ve Güncellemeler
-
-MCP server'lar npm üzerinden geliyorsa otomatik güncel sürüm kullanılır (`-y` argümanı). Manuel sabitlemek için sürüm belirtin:
-
-```json
-"args": ["-y", "@modelcontextprotocol/server-github@1.2.3"]
-```
-
-Kurumsal kullanımda sürümü sabitlemek **güvenlik açısından önerilir**, çünkü beklenmedik bir güncelleme davranışı değiştirebilir.
+Antivirüs ya da BT politikası uzantı kurulumunu veya dış bağlantıyı engelleyebilir. [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile konuşun.
 
 ## Kurumsal Toplu Dağıtım
 
-50+ kişiye aynı MCP yapılandırmasını dağıtmak için:
+50+ kişiye aynı bağlantıyı vermek için:
 
-- **MDM (Mobile Device Management)**: şirket bilgisayarlarına otomatik config dağıtım
-- **Internal package**: şirket içi bir kurulum scripti
-- **Enterprise plan** ile organizasyon-genelinde MCP yönetimi (gelişen özellik)
+- **Özel connector:** owner bir kez ekler, üyeler **Connect** ile bağlanır. Adresi ve kimlik doğrulamayı herkes elle girmez.
+- **Kurum uzantısı:** owner kendi `.mcpb` paketini yükler, tek tıkla dağıtır.
+- **İzin listesi ve MDM:** hangi uzantıların kurulabileceğini sınırlayın; MDM politikası uygulama içi ayarı ezer.
+- **Araç izinleri:** owner, connector başına araç kategorilerini (salt okunur, yazma ve silme) kuruluş genelinde sınırlar, kullanıcı geçersiz kılamaz. Ayrıntı [Güvenlik](/wiki/mcp/guvenlik/) sayfasında.
 
-Kurumsal MCP yönetimi için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasına bakın.
+Kurumsal yönetimin geneli için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasına bakın.
 
-## Yapılandırmayı Versiyonlamak
-
-Yapılandırma dosyanızı git'te tutarsanız:
-
-- Değişiklik geçmişi izlenir
-- Bir bilgisayardan diğerine taşınabilir
-- BT'nin onayı PR ile yapılabilir
-
-Ama **sırlarınızı (token, şifre) git'e koymayın.** Env değişkeni kullanın, .gitignore ekleyin.
+> **Geliştiriciler için: JSON yapılandırma ve komut satırı sunucuları**
+>
+> Bu bölüm iş kullanıcısı için gerekli değildir; masaüstü uzantısı ya da özel connector çoğu durumda yeterlidir. Yerel bir sunucuyu elle kaydetmek isteyen geliştiriciler için Claude Desktop yapılandırmasını bir JSON dosyasında tutar:
+>
+> - **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+> - **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+> - **Linux:** `~/.config/Claude/claude_desktop_config.json`
+>
+> Temel yapı (yalnız bakımı süren `filesystem` sunucusu örneği):
+>
+> ```json
+> {
+>   "mcpServers": {
+>     "filesystem": {
+>       "command": "npx",
+>       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/kullanici/Documents"]
+>     }
+>   }
+> }
+> ```
+>
+> - `command: npx` Node.js paket yürütücüsüdür; Node.js (v18+) ya da Python 3.10+ kurulu olmalıdır.
+> - `-y` npm'in kurulum onayı sorusunu otomatik geçer. Sürümü güncel tutmaz; sürümü paket adının sonuna `@1.2.3` yazarak sabitlersiniz. Kurumsal kullanımda sürümü sabitlemek önerilir, çünkü beklenmedik bir güncelleme davranışı değiştirebilir.
+> - Son argüman erişim verilen klasördür; tüm disk yerine tek bir çalışma klasörü seçin.
+> - Parola ve token'ı yapılandırma dosyasına yazmayın, ortam değişkeni kullanın; dosyayı git'te tutuyorsanız sırları dışarıda bırakın.
+> - Dosyayı kaydettikten sonra Claude Desktop'ı tamamen kapatıp yeniden açın (yalnız pencereyi kapatmak yetmez).
+> - Sorun halinde sırayla bakın: `npx` PATH'te mi, paket adı doğru mu, JSON sözdizimi geçerli mi (virgül ve tırnak hataları yaygındır), token geçerli mi, Claude Desktop günlükleri ne diyor.
+>
+> Bir yapılandırma dosyasında birden çok sunucu tutulabilir; Claude hangisini çağıracağına isteğe göre karar verir. Kendi MCP sunucunuzu yazmak için resmî MCP SDK'larını (Python veya TypeScript) kullanırsınız; yetkilendirme akışını (OAuth, API anahtarı) baştan netleştirin.
 
 ## İlgili Sayfalar
 
 - [MCP Nedir?](/wiki/mcp/nedir/): Genel kavramlar
-- [Güvenlik](/wiki/mcp/guvenlik/): MCP güvenlik modeli
+- [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/): ERP ve iç CRM için karar akışı
+- [Güvenlik](/wiki/mcp/guvenlik/): izinler, riskler, KVKK
 - [Popüler MCP'ler](/wiki/mcp/populer-mcpler/): Ne kurmaya başlamalı
-- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): MCP + connector listesi
-- [Connectors](/wiki/araclar/connectors/): Hazır alternatif
-- [Claude Desktop](/wiki/araclar/claude-desktop/): MCP'nin yaşadığı uygulama
+- [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): MCP ve connector listesi
+- [Connectors](/wiki/araclar/connectors/): Dizin connector'ı nasıl bağlanır
+- [Claude Connectors](/claude/connectors/): ürün tanıtımı ve plan kapsamı
+- [Claude Desktop](/wiki/araclar/claude-desktop/): Uzantıların yaşadığı uygulama
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/): Kurumsal kurulum
-- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Hangi MCP onaylı
-
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Hangi bağlantı onaylı

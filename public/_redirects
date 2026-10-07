@@ -11,6 +11,10 @@
 /wiki/departmanlar/claude-md/*    /wiki/claude-md/:splat    301
 /wiki/departmanlar/temeller/*     /wiki/temeller/:splat     301
 
+# Wiki Araçlar Tur 2 (2026-10-06): Dispatch sayfası Claude Mobil'e birleşti
+/wiki/araclar/dispatch/   /wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch   301
+/wiki/araclar/dispatch    /wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch   301
+
 # Eski göreli link hatasının kalıntıları (GSC 404 raporu, 2026-10-06, 217/220 URL).
 # Gerçek wiki sayfaları en fazla 2 seviye: /wiki/{section}/{slug}/. 3 seviyeli her yol bu hatanın ürünü.
 # Detay: docs/SEO-PLAN.md S23. Sıra önemli: önce bölüm adlı kurallar, sonra kardeş sayfa kuralı.

@@ -1,13 +1,14 @@
 ---
 title: "Görsel ve Görüntü: Claude Gözleriyle Görüyor"
-description: Claude görselleri OCR düzeyinde değil, anlamsal düzeyde okur. Belge, grafik, fotoğraf, ekran görüntüsü, diyagram, hepsini analiz eder.
+seoTitle: "Claude ile Görsel Analizi: Fiş, Kartvizit, Grafik"
+description: Claude görsellerdeki metni okur ve anlamını yorumlar. Fiş, kartvizit, grafik, ekran görüntüsü ve diyagram analizini nasıl kullanacağınız.
 tags:
   - yetenekler
   - gorsel
   - vision
   - ocr
   - gorsel-analiz
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Claude görselleri **görür ve üzerinde akıl yürütür**. Bu basit OCR (metin tanıma) ya da basit görsel tanıma değildir. **Görsel muhakemedir**: bağlamı, ilişkileri ve anlamı görsellerden çıkarır.
@@ -18,7 +19,7 @@ Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bun
 
 ### Belgeler ve Görsellerdeki Metin
 
-- Fotoğraf, tarama ve ekran görüntülerinden metin okur ve çıkarır (OCR kalitesine eşdeğer veya daha iyi)
+- Fotoğraf, tarama ve ekran görüntülerinden metin okur ve çıkarır (yazı net ve düzen sade olduğunda genellikle başarılıdır; yine de rakamları kontrol edin)
 - El yazısı notları işler (orta düzey doğruluk)
 - Standart olmayan düzenlerdeki metinleri okur: ekrandaki sözleşmeler, yazı tahtası fotoğrafları, fişler, kartvizitler
 - Belge görsellerinden tablolar, şekiller ve yapılandırılmış veri çıkarır
@@ -80,7 +81,7 @@ Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bun
 | **İnsan Kaynakları** | Taranmış CV → yapılandırılmış aday profili; tahta organizasyon şeması → metin hali |
 | **Hukuk** | Sözleşme sayfası fotoğrafı → madde çıkarımı; taranmış belgede imza / damga kontrolü |
 | **İdari İşler** | Kartvizit fotoğrafı → iletişim kaydı; tahta toplantı notları → yapılandırılmış minute |
-| **İhracat / Ticaret** | Mal, ambalaj, işaret fotoğrafları → sevkiyat inceleme notları; CIS belgeleri |
+| **İhracat / Ticaret** | Mal, ambalaj, işaret fotoğrafları → sevkiyat inceleme notları; irsaliye ve gümrük beyannamesi taramaları → kalem listesi (kontrol amaçlı, resmî işlem yerine geçmez) |
 | **Müşteri Hizmetleri** | Müşterinin gönderdiği ürün fotoğrafı → sorun sınıflandırması ve yanıt |
 | **Pazarlama** | Rakip reklam ekran görüntüsü → analiz; etkinlik fotoğrafı → sosyal medya caption |
 
@@ -92,7 +93,9 @@ Konferansta 20 kartvizit aldınız. Fotoğrafları tek oturumda Claude'a gönder
 
 > *"Bu 20 kartvizitten her birini CRM kaydı formatında yapılandır: Ad, Şirket, Pozisyon, E-posta, Telefon, Web. Excel tablosu olarak ver."*
 
-Saatlerce sürecek elle yazma işi birkaç dakikaya iner.
+**Süre:** elle 40-60 dakika, Claude ile 5-10 dakika + 10 dakika kontrol. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
+Telefondaysanız fotoğrafı Claude mobil uygulamasının kamerasından doğrudan çekebilirsiniz ([Claude Mobil](/wiki/araclar/claude-mobil/#kamera-ve-gorsel)).
 
 ### Tahta Fotoğrafı → Toplantı Notu
 
@@ -108,7 +111,17 @@ Toplantıdan çıkmadan notlar hazırdır.
 
 > *"Bu fişlerden bir gider raporu çıkar. Her fiş için tarih, satıcı, tutar, KDV, kategori. Excel formatında."*
 
-Mali müşavire gönderilecek dosya hazır.
+Mali müşavire gönderilecek taslak hazır. Fiş okumak ve gruplamak için bir yardımcıdır; muhasebe kaydı ve KDV indirimi kararı mali müşavirinizindir (bkz. [Türk İş Araçları](/wiki/temeller/turk-is-araclari/)).
+
+**Süre:** elle 45-60 dakika, Claude ile 10-15 dakika + kontrol. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
+### İrsaliye ve Gümrük Beyannamesi → Kalem Listesi
+
+Kurgusal bir örnek: Marmara Gıda İhracat'ın sevkiyat ekibi, taranmış irsaliye ve gümrük beyannamesi sayfalarını yükler:
+
+> *"Bu belgelerden kalem listesi çıkar: ürün kodu, miktar, brüt/net kg, değer. İrsaliye ile beyanname arasında tutmayan satırları ayrıca işaretle."*
+
+Claude bir ön kontrol listesi üretir. Beyanname ve gümrük işlemi gümrük müşavirinizin sorumluluğundadır; bu çıktı resmî belge yerine geçmez.
 
 ### Rakip Kampanyası Ekran Görüntüsü → Analiz
 
@@ -117,6 +130,16 @@ Instagram'da bir rakip kampanyası görmüşsünüz. Ekran görüntüsünü payl
 > *"Bu kampanyanın iletişim stratejisini analiz et: ana mesaj, hedef kitle, ton, çağrı, görsel yaklaşım. Bize nasıl uygulanır?"*
 
 Pazarlama toplantısına hazır bir brief çıkar.
+
+## Kişisel Veri Uyarısı (KVKK)
+
+Görseller metinden daha fazla kişisel veri taşır. Yüklemeden önce şunlara dikkat edin:
+
+- **Kimlik, ehliyet, pasaport fotoğrafları** ve TC kimlik numarası görünen belgeler: gerekmedikçe yüklemeyin; gerekiyorsa numarayı ve fotoğrafı kapatın
+- **Kişinin tanınabildiği fotoğraflar** (çalışan, müşteri, ziyaretçi): kişisel veridir, işleme amacınız ve dayanağınız olmalı
+- **Müşteri belgeleri** (sözleşme, fatura, banka dekontu): [şirket içi politikanıza](/wiki/temeller/sirket-ici-politika/) uygun olanlarla sınırlı tutun
+
+Hesabınızdaki veri ayarlarının plana göre nasıl değiştiği [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında.
 
 ## Önemli Refleks
 

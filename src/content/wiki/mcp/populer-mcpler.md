@@ -1,31 +1,30 @@
 ---
 title: "Popüler MCP'ler: Kurumsal Seçim Rehberi"
-description: "Hangi MCP'ler kurumsal kullanım için olgun? Resmi, topluluk, sektörel, kategori bazlı seçim ve değerlendirme."
+seoTitle: "Kurumsal MCP Sunucuları: Hangisi Olgun, Hangisi Riskli?"
+description: "Hangi MCP sunucuları kurumsal kullanıma hazır? Resmi, sağlayıcı ve topluluk sunucuları, arşivlenen paketler, Türk muhasebe yazılımlarının durumu."
 tags:
   - mcp
   - populer
   - kurumsal
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-**MCP ekosisteminde yüzlerce server var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa pratikte gözlemlenen, denenen ve önerilen MCP'leri kategorilere ayırarak listeler.
+**MCP ekosisteminde yüzlerce sunucu var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa MCP sunucularını kategorilere ayırır ve her biri için olgunluk ve risk notu verir. Claude'daki connector'lar da birer MCP sunucusudur; sayfadaki bazı sunucuların dizinde hazır connector karşılığı vardır.
 
-[Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) ile birlikte okunmalı; [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki değerlendirme kontrolleri her server için geçerli.
+[Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) ile birlikte okunmalı; [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki değerlendirme kontrolleri her sunucu için geçerli. Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına bakın.
 
-## Önce: MCP mi, Connector mu?
+## Önce: Dizinde Var mı?
 
-Resmî [Connector](/wiki/araclar/connectors/) varsa öncelik orada. MCP, connector'un karşılayamadığı senaryolarda devreye girer:
+| Durum | Yol |
+|---|---|
+| Servis resmî dizinde var | Hazır connector, tek tık: [Connectors](/wiki/araclar/connectors/) |
+| Dizinde yok | Özel connector ya da masaüstü uzantısı: [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) |
 
-- Şirket içi sistem
-- Niş SaaS
-- Özel yapılandırma gerekli olduğunda
-- [Claude Desktop](/wiki/araclar/claude-desktop/) yerel kullanımda
-
-[Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasında tüm seçenekler bir arada.
+Kendi iç sisteminiz için [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasına, tüm seçeneklerin listesi için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
 
 ## Resmi (Anthropic) MCP Server'ları
 
-Anthropic'in yayımladığı referans server'lar. Bunlardan `filesystem`, `memory`, `fetch`, `git` gibileri hâlâ bakımdadır. `github`, `postgres`, `sqlite`, `slack` ve `brave-search` ise `modelcontextprotocol/servers-archived` deposuna taşındı ve artık bakımı yapılmıyor. Bu beşi için sağlayıcının güncel, bakımı yapılan sunucusunu ya da paketini kurun.
+Anthropic'in yayımladığı referans sunucular; çoğu geliştirici içindir. Bunlardan `filesystem`, `memory`, `fetch`, `git` gibileri hâlâ bakımdadır. `github`, `postgres`, `sqlite`, `slack` ve `brave-search` ise `modelcontextprotocol/servers-archived` deposuna taşındı ve artık bakımı yapılmıyor. Bu beşi için sağlayıcının güncel, bakımı yapılan sunucusunu ya da paketini kurun.
 
 ### filesystem
 
@@ -97,7 +96,7 @@ Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edil
 
 **Kullanım:** Proje yönetim sistemlerinde görev sorgulama, durum güncelleme.
 
-**Connector:** Linear ve Asana için resmî connector mevcut, önce onu deneyin. Jira için connector dizinine bakın, yoksa MCP yaygındır.
+**Connector:** Linear ve Asana için resmî connector mevcut, önce onu deneyin. Jira için Atlassian'ın kendi connector'ı dizinde (Jira, Confluence, Bitbucket ve Loom'u kapsar, Atlassian yapımı, "Anthropic verified"); topluluk sunucusuna gerek yok.
 
 ### Google Drive (genişletilmiş)
 
@@ -148,7 +147,7 @@ Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edil
 ### Hukuki
 
 - **CourtListener / Judicial APIs:** Yargı kararları aramak (ABD odaklı; Türkiye için karşılığı yok)
-- **Mevzuat MCP:** Türkiye mevzuatı için olgun bir MCP yok; Claude'un dahili web araması daha pratiktir
+- **Mevzuat MCP:** Türkiye mevzuatı için olgun bir MCP bulunamadı; Claude'un dahili web araması daha pratiktir
 
 [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfasında alternatifler.
 
@@ -158,8 +157,8 @@ Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edil
 
 ### Finans / Muhasebe
 
-- **Paraşüt / Logo / Mikro / Netsis:** Türkiye'nin yerli muhasebe ve ERP sistemleri için resmî Claude connector ya da MCP yok (Ekim 2026 itibarıyla dizinde görünmüyor); özel connector veya sağlayıcının REST API'si ile kurulur, özel geliştirme gerekir
-- **QuickBooks / Xero:** Topluluk MCP'leri var, küçük işletmeler için
+- **Paraşüt / Logo / Mikro / Netsis:** Türkiye'nin yerli muhasebe ve ERP sistemleri için Claude dizininde connector yok ve sağlayıcı yayımlı resmî MCP sunucusu bulunamadı (Ekim 2026 araması). Özel connector (herkese açık HTTPS adresli bir MCP sunucusu gerekir) ya da sağlayıcının REST API'si ile kurulur; özel geliştirme ister. Paraşüt için tek bulunan sunucu **resmî olmayan topluluk işidir** (Paraşüt ile bağı yok); müşteri verisi için önerilmez, en fazla deneme içindir. Logo, Mikro ve Netsis için topluluk sunucusu da bulunamadı. Çoğu zaman dışa aktarılan dosyayla çalışmak daha güvenlidir: [Türk İş Araçları](/wiki/temeller/turk-is-araclari/)
+- **QuickBooks / Xero:** İkisinin de sağlayıcı yapımı connector'ı dizinde (QuickBooks Intuit'ten, Xero Xero Limited'den ve salt okunur). Bu yazılımları kullanıyorsanız (örneğin yurt dışı iştirakinizde) işe yarar; Türk muhasebe yazılımlarının karşılığı değildir
 
 [Finans departmanı](/wiki/departmanlar/finans/) sayfasında ek bağlam.
 
@@ -170,16 +169,26 @@ Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edil
 
 ## Önerilen Başlangıç Seti
 
-Yeni bir Claude Desktop kullanıcısı için önerilen ilk MCP set:
+Çoğu iş kullanıcısı için üç parça yeter:
 
-| MCP | Kim için |
-|-----|----------|
-| **filesystem** | Herkes (Documents klasörü) |
-| **github** | Geliştirici, BT, ürün |
-| **postgres / mysql** | Veri analisti, finans, BT |
-| **slack** | Kurumsal kullanıcı (workspace varsa) |
+| Parça | Kim için |
+|---|---|
+| **Ofis paketi connector'ı** (Microsoft 365 ya da Google Drive, Gmail, Calendar) | Herkes |
+| **CRM connector'ı** (kullandığınız CRM dizindeyse) | Satış, müşteri ilişkileri |
+| **Dosya uzantısı** (Claude Desktop, Settings > Extensions; tek bir çalışma klasörüyle sınırlı) | Dosya üzerinde çalışanlar |
 
-Bu dört başlık çoğu kullanıcı için yeterli temeli oluşturur. Diğerleri ihtiyaca göre eklenir. `github`, `postgres` ve `slack` için yukarıdaki arşiv uyarısına uyun ve güncel sağlayıcı sunucusunu kurun.
+Diğerleri ihtiyaca göre eklenir; bağlantı sayısını az tutmak hem güvenliği hem doğruluğu korur.
+
+> **Geliştiriciler için: başlangıç seti**
+>
+> | Sunucu | Kim için |
+> |---|---|
+> | `filesystem` | Herkes (tek çalışma klasörü) |
+> | `github` | Geliştirici, BT, ürün |
+> | `postgres` / `mysql` | Veri analisti, BT (yalnız salt okunur kullanıcıyla) |
+> | `slack` | Kurumsal kullanıcı (workspace varsa) |
+>
+> `github`, `postgres` ve `slack` için yukarıdaki arşiv uyarısına uyun ve güncel sağlayıcı sunucusunu kurun.
 
 ## Kurulum Sonrası Audit Listesi
 
@@ -196,30 +205,31 @@ Kullanılmayanları kapatın. Yetkileri sıkılaştırın. Bu basit disiplin uzu
 Şirketinizde kullanılacak MCP'lerin yazılı listesi olsun:
 
 ```markdown
-# [Şirket]: Onaylı MCP Listesi (sürüm 2.1)
+# [Şirket]: Onaylı Bağlantı Listesi (sürüm 2.1)
 
 ## Production Onaylı
-- filesystem (sınırlı klasör)
-- github (read-only fine-grained)
-- postgres (read-only user)
-- slack (resmi connector öncelikli, MCP yedek)
+- Microsoft 365 connector (SharePoint, OneDrive; araçlar: salt okunur Always allow, yazma Needs approval)
+- Google Drive connector (yalnız "Claude-calisma" klasörü)
+- CRM connector'ı (salt okunur kullanıcı)
+- Dosya uzantısı (tek çalışma klasörü)
 
 ## Pilot: Test Aşamasında
-- linear
-- internal-crm-mcp (şirket içi geliştirme)
+- Linear connector
+- İç CRM için özel connector (şirket içi geliştirme)
 
 ## Onay Beklemekte
-- aws-s3 (BT inceliyor)
+- Muhasebe yazılımı için özel connector (BT inceliyor)
 
 ## Yasak
-- Kişisel filesystem MCP (root erişimli)
-- Test edilmemiş topluluk MCP'leri
+- Kök klasöre erişimli uzantılar
+- Test edilmemiş topluluk sunucuları
+- Kişisel hesapla kurum verisine bağlantı
 
 Yenileme: Her çeyreğin son haftası
 Sahibi: BT Müdürü + AI Governance kurulu
 ```
 
-[Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ve [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfaları bu listeyi politikaya bağlamayı detaylandırır.
+Team ve Enterprise'ta owner, uzantılar için izin listesini ve connector araçları için kuruluş geneli izinleri açarak bu listeyi teknik olarak da uygulayabilir ([Güvenlik](/wiki/mcp/guvenlik/)). [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ve [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfaları listeyi politikaya bağlamayı detaylandırır.
 
 ## Yeni MCP Değerlendirme Süreci
 
@@ -228,7 +238,7 @@ Yeni bir MCP'yi onaylı listeye almak için:
 1. **İhtiyaç beyanı**: kim, ne için kullanacak
 2. **Kaynak doğrulama**: kim üretmiş, açık kaynak mı, kod incelendi mi
 3. **Güvenlik değerlendirmesi**: [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki kontrol listesi
-4. **Pilot**: 1-2 kişide test, 2-4 hafta gözlem
+4. **Pilot**: 1-2 kişide test; gözlem süresi tahmini tipik aralıkla 2-4 hafta, kuruluşa göre değişir
 5. **Onay**: BT + AI Governance imzası
 6. **Yapılandırma standartlaştırma**: token, yetki, log
 7. **Dağıtım**: onaylı listeye eklenir, ilgili kullanıcılara duyurulur
@@ -240,7 +250,7 @@ Bu süreç ağır gibi görünür ama kurumsal güven için kritiktir.
 
 MCP ekosistemi 2025-2026'da hızla olgunlaşıyor:
 
-- Resmî connector dizini yaklaşık 900 connector'a ulaştı; [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde topluyor
+- Resmî connector dizini yaklaşık 900 connector'a ulaştı; [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde topluyor (kurumun satın alma tarafı için [Marketplace](/kurumsal/marketplace/))
 - Kurumsal SaaS'lar kendi resmî MCP sunucularını yayımlıyor
 - Enterprise yönetim araçları (merkezi config, audit) gelişiyor
 
@@ -253,6 +263,8 @@ MCP ekosistemi 2025-2026'da hızla olgunlaşıyor:
 - [Güvenlik](/wiki/mcp/guvenlik/): Risk değerlendirmesi
 - [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): MCP + connector listesi
 - [Connectors](/wiki/araclar/connectors/): Daha kolay alternatifler
+- [Claude Connectors](/claude/connectors/): ürün tanıtımı ve plan kapsamı
+- [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/): iç ERP ve CRM için karar akışı
 - [Claude Desktop](/wiki/araclar/claude-desktop/): MCP kullanım ortamı
 - [BT Departmanı](/wiki/departmanlar/bilgi-teknolojileri/): Kurumsal yapılandırma
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Onaylı liste şablonu

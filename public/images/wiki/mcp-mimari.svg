@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 610" width="800" height="610" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">MCP mimarisi: Claude, connector katmanı ve dış sistemler</title>
+  <desc id="desc">Solda istemci olarak Claude, sohbet ve Cowork. Ortada MCP connector katmanı ve içinde izin bölümü: OAuth ile her servise ayrı onay verilir, şifreyi Claude görmez. Sağda bağlanılan sistemler: Google Drive (Docs, Sheets, Slides), Microsoft 365 (OneDrive, Outlook, Teams), Slack, CRM (Salesforce, HubSpot) ve özel MCP server ile bağlanan şirket veritabanı. Alttaki not: Logo ve Mikro gibi Türk iş araçları için resmi connector yok, doğrudan bağlantı için özel MCP server gerekir.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="610" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">MCP mimarisi: tek dil, çok bağlantı</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Claude tek protokolle konuşur, her servis kendi connector'ıyla bağlanır</text>
+
+  <!-- Arrows -->
+  <g stroke="#c9a84c" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)">
+    <line x1="224" y1="298" x2="266" y2="298"/>
+    <line x1="434" y1="158" x2="476" y2="158"/>
+    <line x1="434" y1="228" x2="476" y2="228"/>
+    <line x1="434" y1="298" x2="476" y2="298"/>
+    <line x1="434" y1="368" x2="476" y2="368"/>
+    <line x1="434" y1="438" x2="476" y2="438"/>
+  </g>
+
+  <!-- Claude (client) -->
+  <rect x="40" y="128" width="180" height="340" rx="10" fill="#0f2855" stroke="#c9a84c" stroke-width="3"/>
+  <text x="130" y="286" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Claude</text>
+  <text x="130" y="316" font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">istemci</text>
+  <text x="130" y="340" font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">sohbet ve Cowork</text>
+
+  <!-- MCP layer -->
+  <rect x="270" y="128" width="160" height="340" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="350" y="196" font-size="26" font-weight="700" fill="#0f2855" text-anchor="middle">MCP</text>
+  <text x="350" y="224" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">connector'lar</text>
+  <text x="350" y="246" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">açık standart</text>
+
+  <rect x="286" y="290" width="128" height="160" rx="10" fill="#ffffff" stroke="#c5cdda" stroke-width="2"/>
+  <text x="350" y="326" font-size="18" font-weight="700" fill="#0f2855" text-anchor="middle">İzin</text>
+  <text x="350" y="354" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">OAuth</text>
+  <text x="350" y="380" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">her servise</text>
+  <text x="350" y="402" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">ayrı onay</text>
+  <text x="350" y="430" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">şifre gizli</text>
+
+  <!-- Services -->
+  <rect x="480" y="128" width="280" height="60" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="500" y="153" font-size="18" font-weight="700" fill="#0f2855">Google Drive</text>
+  <text x="500" y="176" font-size="16" font-weight="500" fill="#1a2238">Docs, Sheets, Slides</text>
+
+  <rect x="480" y="198" width="280" height="60" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="500" y="223" font-size="18" font-weight="700" fill="#0f2855">Microsoft 365</text>
+  <text x="500" y="246" font-size="16" font-weight="500" fill="#1a2238">OneDrive, Outlook, Teams</text>
+
+  <rect x="480" y="268" width="280" height="60" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="500" y="293" font-size="18" font-weight="700" fill="#0f2855">Slack</text>
+  <text x="500" y="316" font-size="16" font-weight="500" fill="#1a2238">kanallar ve mesajlar</text>
+
+  <rect x="480" y="338" width="280" height="60" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="500" y="363" font-size="18" font-weight="700" fill="#0f2855">CRM</text>
+  <text x="500" y="386" font-size="16" font-weight="500" fill="#1a2238">Salesforce, HubSpot</text>
+
+  <rect x="480" y="408" width="280" height="60" rx="10" fill="#ffffff" stroke="#0f2855" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="500" y="433" font-size="18" font-weight="700" fill="#0f2855">Şirket veritabanı</text>
+  <text x="500" y="456" font-size="16" font-weight="500" fill="#1a2238">özel MCP server ile</text>
+
+  <!-- Turkish tools note -->
+  <rect x="40" y="496" width="720" height="84" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="60" y="530" font-size="18" font-weight="700" fill="#0f2855">Logo, Mikro gibi Türk araçları: resmi connector yok</text>
+  <text x="60" y="558" font-size="16" font-weight="500" fill="#1a2238">Doğrudan bağlantı için özel MCP server yazılır (kesik çizgili kutu gibi).</text>
+</svg>

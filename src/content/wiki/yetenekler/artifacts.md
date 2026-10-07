@@ -1,94 +1,87 @@
 ---
 title: "Artifacts: Interaktif ve Canlı Çıktılar"
-description: "Artifacts, Claude'un ürettiği interaktif HTML sayfaları, kontrol panelleri ve canlı görselleştirmelerdir. Tek seferlik rapor yerine kendini yenileyen uygulama."
+seoTitle: "Claude Artifacts Nasıl Kullanılır? Panel ve Rapor"
+description: "Artifacts, Claude'un ürettiği interaktif sayfa ve panellerdir. Yerinde düzenlenir, paylaşılır, zamanlanmış görevle yenilenir."
 tags:
   - yetenekler
   - artifacts
   - dashboard
   - cowork
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-**Artifacts, Claude'un ürettiği kendi kendine yeten, interaktif çıktılardır.** Claude Chat'te sohbet içi önizleme, Cowork'te yan panelde kalıcı sayfa olarak yaşarlar.
+**Artifacts, Claude'un ürettiği kendi kendine yeten, interaktif çıktılardır.** Sohbetin yanında bir panelde açılır; metin cevabı yerine **dönüp bakabileceğiniz, düzenleyebileceğiniz, paylaşabileceğiniz** bir şeye dönüşür.
 
-Tek bir kere üretilen bir cevabı **dönüp bakabileceğiniz, etkileşim kurabileceğiniz, paylaşabileceğiniz** bir şeye dönüştürürler.
+Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro ve Max'te kademeli, diğer planlarda sonra). Bu yüzden artifact'i artık "sohbet artifact'i" ve "Cowork artifact'i" diye ikiye bölmek gerekmez: **standart artifact** her yerde aynı davranır. Yayılım durumu için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
 
-> **Not:** Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor. Aşağıdaki "Chat" ve "Cowork" ayrımını iki ayrı uygulama olarak değil, **iki çalışma biçimi** olarak okuyun: kısa sohbet içi önizleme ve uzun soluklu, kalıcı çalışma. Yayılım durumu için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
+> Claude'un ürün tanıtım sayfası için: [Claude Artifacts](/claude/artifacts/). Bu sayfa kurulum, karar ve sınırları anlatır.
 
-## İki Tip Artifact
+## Standart Artifact Neler Yapar?
 
-### 1. Claude Chat Artifacts (satır içi)
+- **Düzenlenir:** taslağı yerinde düzenler, Claude'a "bu sütunu çıkar, şu grafiği ekle" diyerek iterasyon yaparsınız
+- **Paylaşılır:** çıktının bağlantısını oluşturabilirsiniz; hesap ayarlarınıza ve kuruluşunuzun kurallarına göre paylaşım kapsamı değişir
+- **İndirilir:** belge PDF, sunum PowerPoint olarak dışa aktarılır
+- **Ücretli planlarda ve Free'de vardır:** artifacts her planda açıktır; Team ve Enterprise'ta yönetici ayarını kontrol eder
 
-Sohbetin içinde üretilir ve sohbet penceresinde render edilir. Kopyalayabilir, indirebilir veya iterasyon yapabilirsiniz. Oturumlar arası kalıcı değildir, konuşmada yaşar.
-
-Claude Chat'te üretilebilen artifact tipleri:
+Üretilebilen tipler:
 
 - **HTML sayfalar** (stil ve JavaScript dahil)
-- **React bileşenleri** (etkileşimli UI)
-- **Veri görselleştirmeleri** (Recharts, Chart.js, D3)
+- **React bileşenleri** (etkileşimli arayüz)
+- **Veri görselleştirmeleri** (grafikler, tablolar)
 - **SVG grafikler ve diyagramlar**
 - **Mermaid akış şemaları**
 - **Markdown belgeleri**
-- **Matematiksel ifadeler** (LaTeX)
 - **İnteraktif hesaplayıcılar ve araçlar**
 
-### 2. Cowork Live Artifacts (kalıcı)
+## Eski Canlı Artifact (Live Artifact) Ne Oldu?
 
-Cowork'ün yan panelinde saklanır ve **oturumlar arası kalıcıdır**. Asıl güçleri burada: **Live Artifacts** (20 Nisan 2026'da tanıtıldı), kurduğunuz connector'lara bağlanır ve **her açıldığında güncel veriyle tazelenir**.
+20 Nisan 2026'da Cowork'te **live artifact** tanıtıldı: bağlı servislerden veri çeken, her açılışta tazelenen sayfalar. **19 Ağustos 2026'dan beri bu biçim "legacy" sayılıyor.** Eskiden oluşturduklarınız çalışmaya ve kuruluş içinde paylaşılmaya devam eder, ama yerinde düzenlenemez. Bu tarihten sonra oluşturduklarınız standart artifact'tir ve tam düzenlenebilir.
 
-Live Artifact, statik bir rapor değildir. **Veri kaynağını her açılışta yeniden sorgulayan** bir mini uygulamadır.
+Pratik sonuç: "her açılışta kendiliğinden tazelenir" vaadine güvenerek yeni bir panel kurmayın. Yeni artifact'lerin veri davranışı için [Cowork'te artifact kullanımı](https://support.claude.com/en/articles/14729249-use-artifacts-in-claude-cowork) yardım sayfasına bakın.
 
-> **Bir kere inşa edersiniz. Her zaman günceldir.**
-
-**Güncel durum:** 19 Ağustos 2026'dan beri Cowork'teki live artifact biçimi "legacy" sayılıyor. Mevcut olanlar çalışmaya ve kuruluş içinde paylaşılmaya devam eder, ama yerinde düzenlenemez. Bu tarihten sonra oluşturduğunuz artifact'ler standart artifact'tir ve tam düzenlenebilir. Yeni artifact'lerde veri tazeleme davranışı için [Cowork'te artifact kullanımı](https://support.claude.com/en/articles/14729249-use-artifacts-in-claude-cowork) yardım sayfasına bakın. Bu sayfada anlatılan "her açılışta tazelenme" live artifact biçimi içindir.
-
-## Live Artifacts Neler Yapabilir?
-
-- **Bağlı servislerden gerçek zamanlı veri çeker**: Slack, CRM, Google Drive, proje araçları
-- Her açılışta güncel metrikleri, görev listelerini, pipeline durumunu, ekip güncellemelerini gösterir
-- Etkileşime izin verir: filtreleme, sıralama, kayıt detayına inme, görünüm değiştirme
-- **Haftalık manuel rapor üretimini** daima hazır bir kontrol paneli ile değiştirir
-- Role özel mini-dashboard'lar olarak hizmet eder (Satış pipeline, Operasyon KPI, İK headcount)
+**Güncel yöntem:** panelin her hafta taze veriyle yeniden üretilmesini istiyorsanız [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) kurun. Görev her Pazartesi connector'lardan veriyi çeker ve artifact'i yeniden üretir; siz açıp bakarsınız.
 
 ## Hangi Durumda Artifact, Hangi Durumda Belge?
 
-Kararı kolaylaştıran bir tablo:
-
 | Durum | Artifact | Belge |
 |---|---|---|
-| Veri haftalık veya günlük değişiyor | ✅ Live Artifact | |
-| Çalışan tekrar tekrar açacak | ✅ Artifact | |
+| Veri haftalık veya günlük değişiyor | ✅ (zamanlanmış görevle yenilenir) | |
+| Çalışan tekrar tekrar açacak | ✅ | |
 | E-posta veya dış paylaşım gerekiyor | | ✅ Belge |
 | Tek seferlik teslimat | | ✅ Belge |
-| İnteraktif filtreleme gerekiyor | ✅ Artifact | |
+| İnteraktif filtreleme gerekiyor | ✅ | |
 | Resmi rapor, letterhead formatında | | ✅ Belge |
 
 ## Pratik Örnekler
 
-### Haftalık Satış Pipeline Artifact
+Aşağıdaki şirketler kurgusaldır.
 
-Satış yöneticisi her Pazartesi pipeline raporu yazıyor. Bunun yerine bir Live Artifact inşa edilir:
+### Haftalık Satış Pipeline Paneli
+
+Anadolu Yapı Market'in satış yöneticisi her Pazartesi pipeline raporu yazıyor. Bunun yerine bir artifact kurulur ve zamanlanmış görev her Pazartesi sabahı yeniler:
 
 - CRM connector'ından tüm açık fırsatları çeker
 - Her fırsatı aşamasına göre sıralar
 - Gecikmiş olanları kırmızıyla vurgular
 - "Bu hafta kapanması muhtemel" listesini ayrı bölümde gösterir
 
-Her Pazartesi açılır, tazelenir, toplantıya girilir. Rapor yazmak yok.
+Pazartesi açılır, toplantıya girilir. Rapor yazmak yok.
+
+**Süre:** elle 1-2 saat, Claude ile 15-20 dk (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ### Operasyon KPI Paneli
 
-Operasyon yöneticisi günlük metriklerle çalışıyor. Bir Live Artifact:
+Karadeniz Gıda'nın operasyon yöneticisi günlük üretim metrikleriyle çalışıyor. Bir artifact:
 
 - Google Sheets'teki üretim verilerinden KPI'ları okur
 - Hedef karşılaştırmasını renk kodlarıyla gösterir
 - "Bu hafta dikkat gerekenler" bölümünü kural tabanlı üretir
 
-Her sabah açılır, yöneticinin gün planı oradan çıkar.
+Her sabah açılır, gün planı oradan çıkar.
 
 ### Müşteri Hizmetleri Şikayet Tablosu
 
-MH ekibi Slack ve CRM'de dağınık şikayet kayıtlarını tek panelde toplar:
+Ege Tekstil'in müşteri hizmetleri ekibi Slack ve CRM'de dağınık şikayet kayıtlarını tek panelde toplar:
 
 - Slack'teki "#musteri-sikayet" kanalından son 7 günü çeker
 - CRM'deki açık ticket'larla eşleştirir
@@ -100,7 +93,7 @@ Ekip lideri haftalık toplantıya tek sayfayla gelir.
 
 Çoğu çalışan artifact istemez, **rapor ister**. Çünkü iş dünyasında alışkanlık "rapor"dur, "dashboard" değil.
 
-Bir çalışan "bunu haftaya yine görmek isteyeceğim" dediğinde artifact devreye girer. Artifact kendini tazeler, belge ise anında eskir.
+Bir çalışan "bunu haftaya yine görmek isteyeceğim" dediğinde artifact devreye girer. Belge anında eskir; artifact ise yeniden üretilerek güncel tutulabilir.
 
 Kendinize sorabileceğiniz tek soru:
 
@@ -110,9 +103,10 @@ Cevap "evet"se artifact, "hayır"sa belge. Basit ama hayatı değiştiren bir so
 
 ## İlgili Sayfalar
 
+- [Claude Artifacts (ürün tanıtımı)](/claude/artifacts/): Ürünün Türkçe tanıtımı
 - [Skills](/wiki/yetenekler/skills/): Artifact üreten skill'ler
-- [Cowork Modu](/wiki/araclar/cowork-modu/): Live Artifact'lerin kalıcı yaşadığı yer
-- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Connector'lar Live Artifact'leri besler
-- [Dispatch](/wiki/araclar/dispatch/): Artifact'leri telefondan tetiklemek (yeni kullanıcılara kapalı sınırlı beta)
+- [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Panelin düzenli yenilenmesi
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Artifact'lerin ve zamanlanmış görevlerin çalıştığı ortam
+- [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Connector'lar paneli besler
+- [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): Telefondan görev atmak (yeni kullanıcılara kapalı sınırlı beta)
 - [Claude Design](/wiki/yetenekler/claude-design/): Görsel tasarım, sunum ve belge odaklı kardeş yüzey
-

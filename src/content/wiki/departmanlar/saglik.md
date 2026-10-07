@@ -1,12 +1,13 @@
 ---
 title: "Sağlık: Claude Uygulamaları (Hassas Sektör)"
+seoTitle: "Sağlıkta Claude: Hekim Notu, Hasta Bilgilendirme, KVKK ve Sınırlar"
 description: "Sağlık kuruluşları için Claude: hasta verisi politikası, idari iş yükü, hekim notu desteği, eğitim materyali. KVKK ve özel mevzuatta dikkatli kullanım."
 tags:
   - departmanlar
   - saglik
   - kvkk
   - hassas
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Sağlık sektörü Türkiye'de özel bir yasal rejime tabidir: KVKK kapsamında **özel nitelikli kişisel veri**, mesleki gizlilik ve Sağlık Bakanlığı yönetmelikleri. Claude'un sağlıkta kullanımı **mümkündür ama dikkat ister.** Bu sayfa hangi alanlarda güvenle kullanılabileceğini, neyin kesinlikle yapılmaması gerektiğini ve kurumsal politika çerçevesini anlatır.
@@ -18,13 +19,13 @@ Sağlık sektörü Türkiye'de özel bir yasal rejime tabidir: KVKK kapsamında 
 Sağlıkta Claude kullanımını yöneten ana mevzuat:
 
 - **KVKK md. 6**: sağlık verisi özel nitelikli kişisel veridir; açık rıza veya yasal istisnalar gerekir
-- **KVKK md. 9**: Claude'a kişisel veri girmek yurt dışına aktarım sayılır; ayrıntılar [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım (KVKK m.9)" bölümünde. Hasta verisi için pratik kural değişmez: girmeyin
+- **KVKK md. 9**: Claude'a kişisel veri girmek yurt dışına aktarım sayılır; ayrıntılar [KVKK m.9: Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasında, genel çerçeve [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında. Hasta verisi için pratik kural değişmez: girmeyin
 - **Hasta Hakları Yönetmeliği**: mahremiyet
 - **Tıbbi Deontoloji**: hekim mesleki gizliliği
 - **Sağlık Bakanlığı Bilişim Standartları**
 - **Türk Ceza Kanunu md. 134-138**: kişisel veriyi hukuka aykırı verme
 
-[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası KVKK derinleşmesi içerir.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası KVKK derinleşmesi içerir. Anthropic'in sağlık çözümünün (HIPAA kapsamı, sağlık connector'ları, ABD'ye özgü sınırlar) Türkiye açısından değerlendirmesi için [Sağlık kuruluşları için Claude](/kurumsal/saglik/) sayfasına bakın.
 
 ## Yapılabilenler ve Yapılamayanlar: Net Tablo
 
@@ -48,7 +49,7 @@ Sağlıkta Claude kullanımını yöneten ana mevzuat:
 
 ### Hekim Notu Ön Taslak
 
-Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder (cihazın dikte özelliği ya da [Voice Mode](/wiki/araclar/voice-mode/); Türkçe desteğini önceden deneyin) veya kısa yazılı not bırakır. Claude bunu yapılandırılmış hekim notuna çevirir:
+Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder (cihazın kendi dikte özelliğiyle; Claude'un [Voice Mode](/wiki/araclar/voice-mode/) özelliği şu an Türkçe desteklemiyor) veya kısa yazılı not bırakır. Claude bunu yapılandırılmış hekim notuna çevirir:
 
 - Şikayet
 - Anamnez
@@ -84,6 +85,10 @@ Randevu hatırlatma, iptal yanıtı ve çok dilli iletişim (turistlerin sağlı
 
 Olumlu ve olumsuz geri bildirimlere yanıt. Hassas durumlarda **hukuki dikkat** gerekir: geri bildirim yanıtında bile mesleki gizlilik ihlali riski vardır.
 
+### Sağlık Bakanlığı Raporlama
+
+Periyodik resmi raporlar için yapı ve anlatı desteği: Claude rapor iskeletini, açıklama metinlerini ve eksik alan kontrol listesini hazırlar. Rakamlar ve içerik hekim ya da kalite ekibinden gelir; Claude'a hasta düzeyinde veri değil, toplulaştırılmış sayılar verilir.
+
 ### Faturalama ve SGK
 
 SGK ile mali işler, yazışma taslakları, itiraz mektupları. Standart [finans](/wiki/departmanlar/finans/) yaklaşımı geçerlidir, üzerine sağlığa özgü KVKK katmanı eklenir.
@@ -97,6 +102,10 @@ Hekim, hemşire ve idari personelin İK işleri standart [İK departmanı](/wiki
 ### Personel Eğitim Materyali
 
 Hemşire eğitimi, tıbbi sekreter eğitimi, hekim sürekli eğitimi: Claude konuya göre eğitim materyali, sınav sorusu ve vaka çalışması üretir. [Eğitim ve Akademi](/wiki/departmanlar/egitim-akademi/) sayfası genel pedagojik yaklaşımı detaylandırır.
+
+### KVKK ve Hasta Hakları Eğitim Materyali
+
+Sağlık personeline yönelik KVKK ve mesleki gizlilik farkındalık eğitimi: Claude konuyu günlük çalışmadan örneklerle ("koridorda hasta bilgisi konuşmak", "telefonda sonuç paylaşmak") anlatan bir modül ve kısa sınav hazırlar. Hasta ve yakınları için sade dille "haklarınız neler" rehberi de çıkar. Hukuk müşaviri son metni onaylar.
 
 ### Tıp Fakültesi / Eğitim Hastanesi
 
@@ -134,7 +143,7 @@ Aşağıdaki süre karşılaştırmaları örnektir; kurumdan kuruma değişir.
 
 ### Senaryo 1: Polikliniğe Hekim
 
-Sabah 9-12 arası yoğun poliklinik, 25 hasta. Her hasta sonrası 5 dakika not yazmak iş gününe yaklaşık 2 saat ekler. Hekim, anonimleştirilmiş vaka notlarını Claude'a dikte eder, Claude yapılandırılmış hekim notu çıkarır. Hekimin işi, sıfırdan yazmak yerine kısa bir kontrol ve düzeltmeye iner.
+Sabah 9-12 arası yoğun poliklinik, 25 hasta. Her hasta sonrası 5 dakika not yazmak iş gününe yaklaşık 2 saat ekler. Hekim, anonimleştirilmiş vaka notlarını cihazın dikte özelliğiyle yazıya çevirip Claude'a verir, Claude yapılandırılmış hekim notu çıkarır. Hekimin işi, sıfırdan yazmak yerine hasta başına yaklaşık 1-2 dakikalık bir kontrol ve düzeltmeye iner (bu süre ölçülmedi, tahminidir; kurumunuzda kendiniz ölçün).
 
 ### Senaryo 2: Hastane İdari Sekreteri
 
@@ -142,11 +151,26 @@ Yabancı hasta yoğun bir hastanede çok dilli randevu yazışması ve tedavi ö
 
 ### Senaryo 3: Hekim Akademik Çalışma
 
-Klinik araştırma için literatür özeti, makale taslağı ve istatistiksel analiz açıklaması. Haftalar süren hazırlık Claude ile çok kısalır; atıflar ve istatistikler yine de hekim tarafından doğrulanır.
+Klinik araştırma için literatür özeti, makale taslağı ve istatistiksel analiz açıklaması. Literatür taraması ve ilk taslak aşaması belirgin biçimde kısalır; atıflar ve istatistikler yine de hekim tarafından doğrulanır.
 
 ### Senaryo 4: Hastane Yöneticisi
 
 JCI akreditasyonuna 6 ay var. Claude ile mevcut prosedürler gözden geçirilir, eksik dokümantasyon listesi çıkarılır, yeni belge taslakları hazırlanır. Hazırlık süresi kısalır, ama içerik doğruluğunun sorumluluğu kurumda kalır.
+
+## Gerçek Örnek: Tedavi Öncesi Bilgilendirme Yazısı
+
+Bir özel hastanenin kulak burun boğaz polikliniği, bademcik ameliyatı olacak hastalar için işlem öncesi bilgilendirme yazısını güncellemek istiyor. Metin her hasta için kullanılacak, kişisel veri içermiyor.
+
+**Adım 1:** Sekreter ya da hemşire, hekimin onaylı klinik içeriğini (hazırlık, açlık süresi, kullanılacak ilaçlar, riskler) Claude'a verir:
+> *"Aşağıdaki hekim onaylı bilgiden bademcik ameliyatı öncesi hasta bilgilendirme yazısı hazırla. 8. sınıf düzeyinde sade Türkçe. Bölümler: ameliyattan önceki 24 saatte ne yapılır, açlık, ilaçlar, ameliyat günü getirilecekler, hangi durumda hemen arayın. Tıbbi terimin yanına parantezle sade karşılığı. Ekte olmayan hiçbir tıbbi bilgi ekleme; emin olmadığın yere [hekime sor] yaz."*
+
+**Adım 2:** Claude yazıyı üretir ve [hekime sor] işaretli yerleri listeler.
+
+**Adım 3:** Hekim işaretli yerleri yanıtlar, metni okur ve klinik içeriği onaylar.
+
+**Adım 4:** Hastane hukuk müşaviri ya da kalite birimi kurumsal onam ve bilgilendirme kurallarıyla uyumu kontrol eder; metin şablon olarak kaydedilir.
+
+**Süre:** tedavi öncesi bilgilendirme yazısı için elle 20-30 dakika, Claude ile 5-10 dakika (hekim kontrolü dahil). Hekim notu için hasta başına 5 dakikalık yazımın kontrol süresine (1-2 dakika) inmesi beklenir, ama bu ölçülmedi; kurumunuzda küçük bir denemeyle sayıyı kendiniz çıkarın. *Tahmini tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ## CLAUDE.md Tavsiyesi: Sağlık Çalışanı
 
@@ -198,13 +222,13 @@ Sağlık çalışanı için CLAUDE.md ekstra dikkatli:
 
 ## Kurumsal Plan Tavsiyesi
 
-Sağlık kuruluşu için **bireysel (Free, Pro, Max) planlar yerine ticari bir plan** (Team veya [Enterprise](/wiki/temeller/takim-ve-admin/)) kullanın:
+Kurum olarak hasta ya da çalışan verisi işleyecekseniz bireysel (Free, Pro, Max) planlar yerine ticari bir plan (Team veya [Enterprise](/wiki/temeller/takim-ve-admin/)) öneriyoruz; zorunlu değil, ama merkezi kontrol ve veri ayarları açısından daha uygun. Team en az 2 koltuktur, Enterprise self-serve en az 20 koltukla alınır.
 
 - Ticari planlarda (Team, Enterprise, API) girdiler varsayılan olarak model eğitiminde kullanılmaz; bireysel planlarda bu ayar kullanıcıya bağlıdır
 - DPA (Veri İşleme Eki) ticari şartlara otomatik dahildir, ayrıca imza gerekmez; bireysel planlar DPA kapsamı dışındadır. Metni yine de kurumunuzun hukuk müşaviri gözden geçirmelidir
 - SSO ve SCIM yönetimi
 - Audit log, özel veri saklama ayarları ve RBAC gibi gelişmiş kontroller Enterprise planındadır
-- HIPAA yapılandırması (BAA) Enterprise'da mevcuttur, ancak ABD mevzuatına dairdir ve KVKK uyumu yerine geçmez
+- HIPAA yapılandırması (BAA) yalnız Enterprise'da mevcuttur, Team ve bireysel planlarda açılamaz; ayrıca ABD mevzuatına dairdir ve KVKK uyumu yerine geçmez
 
 Hangi plan olursa olsun, hasta verisini Claude'a yüklememe kuralı geçerlidir. [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası ek bağlam verir.
 
@@ -233,7 +257,7 @@ Türkiye'de büyüyen **sağlık turizmi** (saç ekimi, dental, plastik cerrahi,
 
 ## Bireysel Hekim / Klinik Sahibi
 
-Tek başına çalışan hekim ya da küçük poliklinik için Claude'un katkısı kayda değerdir. İdari iş yükünü azaltarak hekimin zamanını boşaltır. Sektörün hassasiyeti nedeniyle KVKK ve mesleki gizlilik kurallarına özel dikkat gerekir. Yukarıdaki plan tavsiyesi (bireysel plan yerine ticari plan) tek hekim için de geçerlidir.
+Tek başına çalışan hekim ya da küçük poliklinik için Claude'un katkısı kayda değerdir. İdari iş yükünü azaltarak hekimin zamanını boşaltır. Sektörün hassasiyeti nedeniyle KVKK ve mesleki gizlilik kurallarına özel dikkat gerekir. Ticari plan önerisi tek hekim için de geçerlidir, ama Team en az 2 koltuk istediğinden hekim ve bir idari çalışan birlikte alabilir. Tek kişilik bireysel planla çalışılacaksa hasta verisini hiç girmemek, yalnız idari ve eğitsel işlerde kullanmak gerekir.
 
 ## İlgili Sayfalar
 
@@ -245,6 +269,8 @@ Tek başına çalışan hekim ya da küçük poliklinik için Claude'un katkıs�
 - [İK Departmanı](/wiki/departmanlar/insan-kaynaklari/): Sağlık personeli yönetimi
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Politika temeli
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri hakları
+- [Sağlık kuruluşları için Claude](/kurumsal/saglik/): Anthropic'in sağlık çözümü ve Türkiye açısından sınırları
+- [KVKK m.9: Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/): Hasta verisi girmeden önce
 - [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Enterprise plan
 - [Research Mode](/wiki/yetenekler/research-mode/): Tıbbi literatür
 

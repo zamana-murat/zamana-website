@@ -1,17 +1,22 @@
 ---
 title: "Yetenekler: Claude'un İş Güçleri"
-description: "Claude'un iş kullanıcısı için önemli yetenekleri: Skills, Artifacts, dosya ve görsel analizi, Computer Use, ajanlar, hafıza ve Claude Design."
+seoTitle: "Claude Yetenekleri: Hangisi Ne Zaman Kullanılır?"
+description: "Claude'un iş yetenekleri: Skills, dosya işleme, Artifacts, görsel analiz, hafıza, kod çalıştırma, araştırma ve Claude Design. Hangisi ne zaman işe yarar?"
 tags:
   - yetenekler
   - giris
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-Claude'un sadece yazı üretmekten çok daha fazlasını yapabildiği yerler. Bu bölüm, bir iş profesyoneline **gerçek zaman kazandıran** yedi temel yeteneği kapsar.
+Claude'un sadece yazı üretmekten çok daha fazlasını yapabildiği yerler. Bu bölüm, bir iş profesyoneline **gerçek zaman kazandıran** on iki yeteneği üç grupta toplar: dört temel, üç ileri ve beş destekleyen yetenek.
 
-Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsiniz, başlangıçta **Skills ve Artifacts** yeterlidir. Diğer beş yetenek zaman içinde devreye girer.
+Hepsini birden öğrenmek zorunda değilsiniz. Başlangıçta **Skills, Dosya İşleme ve Artifacts** yeterlidir; diğerleri ihtiyaç ortaya çıktıkça devreye girer.
 
-## Yedi Yetenek
+![Yetenekler haritası: temel dört (Skills, Dosya İşleme, Artifacts, Görsel ve Görüntü), ileri yetenekler (Context ve Compaction, Agents ve Subagents, Computer Use) ve destekleyenler (Memory, Code Execution, Research Mode, Effort Control, Claude Design)](/images/wiki/yetenekler-haritasi.svg)
+
+## Temel Dört Yetenek
+
+Bir iş profesyonelinin haftalık işinin çoğunluğu bu dört yetenek üzerine kurulur.
 
 <div class="wiki-grid">
 
@@ -23,21 +28,21 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 
     [→ Skills](/wiki/yetenekler/skills/)
 
--   <span class="wiki-icon wiki-icon--lg" data-icon="monitor-dashboard" aria-hidden="true"></span> **Artifacts**
-
-    ---
-
-    Claude'un ürettiği interaktif çıktılar ve Live Artifacts: statik rapor yerine kendi kendini tazeleyen dashboard.
-
-    [→ Artifacts](/wiki/yetenekler/artifacts/)
-
 -   <span class="wiki-icon wiki-icon--lg" data-icon="folder-open-outline" aria-hidden="true"></span> **Dosya İşleme**
 
     ---
 
-    Claude hangi dosyaları okur, hangilerini üretir, workspace klasörü nasıl yönetilir.
+    Claude hangi dosyaları okur, hangilerini üretir, yükleme sınırları nelerdir.
 
     [→ Dosya İşleme](/wiki/yetenekler/file-handling/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="monitor-dashboard" aria-hidden="true"></span> **Artifacts**
+
+    ---
+
+    Claude'un sohbette ürettiği interaktif sayfalar ve paneller: düzenlenir, paylaşılır, zamanlanmış görevle yenilenir.
+
+    [→ Artifacts](/wiki/yetenekler/artifacts/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="eye-outline" aria-hidden="true"></span> **Görsel ve Görüntü**
 
@@ -47,21 +52,13 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 
     [→ Görsel ve Görüntü](/wiki/yetenekler/vision-image/)
 
--   <span class="wiki-icon wiki-icon--lg" data-icon="desktop-mac-dashboard" aria-hidden="true"></span> **Computer Use**
+</div>
 
-    ---
+## İleri Yetenekler
 
-    API'si olmayan eski sistemleri Claude ekrandan görerek kontrol etmeyi dener. Research preview; yalnızca Pro ve Max, masaüstü uygulamasında.
+Belirli durumlarda devreye giren yetenekler. Önce temel dördünü oturtun.
 
-    [→ Computer Use](/wiki/yetenekler/computer-use/)
-
--   <span class="wiki-icon wiki-icon--lg" data-icon="sitemap-outline" aria-hidden="true"></span> **Agents ve Subagents**
-
-    ---
-
-    Karmaşık görevlerde Claude'un kendi kendini çoğaltıp paralel çalışma biçimi.
-
-    [→ Agents ve Subagents](/wiki/yetenekler/agents-subagents/)
+<div class="wiki-grid">
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="window-maximize" aria-hidden="true"></span> **Context ve Compaction**
 
@@ -71,6 +68,70 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 
     [→ Context ve Compaction](/wiki/yetenekler/context-compaction/)
 
+-   <span class="wiki-icon wiki-icon--lg" data-icon="sitemap-outline" aria-hidden="true"></span> **Agents ve Subagents**
+
+    ---
+
+    Karmaşık görevlerde Claude'un işi parçalara bölüp paralel çalışma biçimi.
+
+    [→ Agents ve Subagents](/wiki/yetenekler/agents-subagents/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="desktop-mac-dashboard" aria-hidden="true"></span> **Computer Use**
+
+    ---
+
+    API'si olmayan eski sistemleri Claude ekrandan görerek kontrol etmeyi dener. Research preview; yalnızca Pro ve Max, masaüstü uygulamasında.
+
+    [→ Computer Use](/wiki/yetenekler/computer-use/)
+
+</div>
+
+## Destekleyen Yetenekler
+
+Diğer yeteneklerin kalitesini ve kapsamını belirleyen beş başlık.
+
+<div class="wiki-grid">
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="memory" aria-hidden="true"></span> **Memory**
+
+    ---
+
+    Claude'un sohbetler arası hatırladığı bilgi, CLAUDE.md ile farkı ve kontrol ayarları.
+
+    [→ Memory](/wiki/yetenekler/memory/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="code-tags" aria-hidden="true"></span> **Code Execution**
+
+    ---
+
+    Claude'un gerçek Python kodu çalıştırarak yaptığı hesaplama, analiz ve grafik.
+
+    [→ Code Execution](/wiki/yetenekler/code-execution/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="compass-outline" aria-hidden="true"></span> **Research Mode**
+
+    ---
+
+    Çok kaynaklı, uzun soluklu derin araştırma.
+
+    [→ Research Mode](/wiki/yetenekler/research-mode/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="format-list-checks" aria-hidden="true"></span> **Effort Control**
+
+    ---
+
+    Claude'a bir görevde ne kadar derinlemesine çalışacağını söyleyen ayar: kalite ile hız arasında bilinçli denge.
+
+    [→ Effort Control](/wiki/yetenekler/effort-control/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="pencil-outline" aria-hidden="true"></span> **Claude Design**
+
+    ---
+
+    Claude ile birlikte tasarım, prototip, sunum ve one-pager üretimi. Ücretli planlarda beta.
+
+    [→ Claude Design](/wiki/yetenekler/claude-design/)
+
 </div>
 
 ## Öğrenme Sırası
@@ -78,44 +139,36 @@ Her bir yetenek ayrı bir dünyadır. Hepsini birden öğrenmek zorunda değilsi
 Bu bölümü yeni okuyorsanız önerilen sıra:
 
 1. **[Skills](/wiki/yetenekler/skills/)**: Günlük iş çıktılarının büyük kısmını karşılayan temel uzmanlık paketleri. İlk haftada öğrenin.
-2. **[Dosya İşleme](/wiki/yetenekler/file-handling/)**: Skills'in üzerinde çalıştığı dosyaların genel çerçevesi. Workspace mantığı.
-3. **[Artifacts](/wiki/yetenekler/artifacts/)**: Raporu, her açılışta güncel kalan bir sayfaya çevirmenin zamanı. "Haftada tekrar bakacak mısınız?" sorusunu alışkanlık edinin.
-4. **[Görsel ve Görüntü](/wiki/yetenekler/vision-image/)**: "Fotoğraf da verebilirim" keşfi. Bir hafta içinde kartvizit / fiş / tahta / grafik akışları devreye girer.
-5. **[Context ve Compaction](/wiki/yetenekler/context-compaction/)**: Uzun projelerde "Claude unuttu" probleminin önlenmesi.
-6. **[Agents ve Subagents](/wiki/yetenekler/agents-subagents/)**: Karmaşık görev refleksi. Derinlemesine bilinmesi gerekmez, ama tanınmalı.
-7. **[Computer Use](/wiki/yetenekler/computer-use/)**: Eski sistemleri olan şirketlerde işe yarayabilir; yeni teknoloji kullanan şirketlerde daha az kritik.
+2. **[Dosya İşleme](/wiki/yetenekler/file-handling/)**: Skills'in üzerinde çalıştığı dosyaların genel çerçevesi ve yükleme sınırları.
+3. **[Artifacts](/wiki/yetenekler/artifacts/)**: Raporu, tekrar açacağınız bir sayfaya çevirmenin zamanı. "Haftaya yine bakacak mıyım?" sorusunu alışkanlık edinin.
+4. **[Görsel ve Görüntü](/wiki/yetenekler/vision-image/)**: "Fotoğraf da verebilirim" keşfi. Bir hafta içinde kartvizit, fiş, tahta ve grafik akışları devreye girer.
+5. **[Memory](/wiki/yetenekler/memory/)**: Aynı bilgiyi her sohbette yeniden anlatmamak için.
+6. **[Context ve Compaction](/wiki/yetenekler/context-compaction/)**: Uzun projelerde "Claude unuttu" probleminin önlenmesi.
+7. **[Code Execution](/wiki/yetenekler/code-execution/)** ve **[Research Mode](/wiki/yetenekler/research-mode/)**: Sayısal analiz ve çok kaynaklı araştırma ihtiyacı doğduğunda.
+8. **[Effort Control](/wiki/yetenekler/effort-control/)** ve **[Claude Design](/wiki/yetenekler/claude-design/)**: İnce ayar ve görsel çıktı. Başlangıç için zorunlu değil.
+9. **[Agents ve Subagents](/wiki/yetenekler/agents-subagents/)** ve **[Computer Use](/wiki/yetenekler/computer-use/)**: Karmaşık görev refleksi ve eski sistemler. Derinlemesine bilinmesi gerekmez, ama tanınmalı.
 
-Tümünü bir haftada okumak gerekmez. **Skills → Dosya İşleme → Artifacts** üçlüsü ilk iki haftada yeter. Diğerleri ihtiyaç ortaya çıktıkça devreye girer.
+Tümünü bir haftada okumak gerekmez. **Skills → Dosya İşleme → Artifacts** üçlüsü ilk iki haftada yeter.
 
 ## Pratik Sıralama
 
-Bir iş profesyonelinin haftalık işinin çoğunluğu **dört yetenek** üzerine kurulur:
+Temel dört yeteneğin ne işe yaradığı:
 
 - **Skills**: Word raporu, Excel tablosu, PowerPoint sunumu, PDF analizi
-- **Dosya İşleme**: doğru dosyayı doğru klasöre koymak
-- **Artifacts**: raporu dashboard'a çevirmek
+- **Dosya İşleme**: doğru dosyayı doğru biçimde vermek, yükleme sınırlarını bilmek
+- **Artifacts**: raporu açıp tekrar bakılan bir panele çevirmek
 - **Görsel ve Görüntü**: fotoğraf verip veri çıkarmak
 
-Bu dördü oturunca haftalık işlerin büyük kısmı dönüşmüş olur.
+Bu dördü oturunca haftalık işlerin büyük kısmı dönüşmüş olur. **Computer Use**, **Agents** ve **Context** belirli durumlarda devreye giren ileri yeteneklerdir; temel dördü oturduktan sonra değer çıkarırsınız.
 
-Geriye kalan **Computer Use**, **Agents** ve **Context** belirli durumlarda devreye giren ileri yeteneklerdir. Önce temel dördünü oturtun, bunlardan ancak sonra değer çıkarırsınız.
+## Ürün Tanıtımı ve Wiki Arasındaki Fark
 
-## Yeni Özellikler (2026)
+Claude'un ürünlerini Türkçe tanıtan sayfalar ayrı bir bölümde durur. Bu wiki ise kurulum, karar, sınırlar ve iş akışı anlatır:
 
-Yukarıdaki yedi yetenek çekirdektir. Bunların yanına 2026'da iki yeni başlık eklendi:
-
-- [**Effort Control**](/wiki/yetenekler/effort-control/): Claude'a bir görevde ne kadar derinlemesine çalışacağını söyleyen ayar. Kalite ile hız arasında bilinçli denge kurar; varsayılan seviye modele ve yüzeye göre değişir.
-- [**Claude Design**](/wiki/yetenekler/claude-design/): Claude ile birlikte tasarım, prototip, sunum ve one-pager üretmenizi sağlayan Anthropic Labs ürünü. Ücretli planlarda (Pro, Max, Team) beta olarak sunulur; Free'de yok, Enterprise'ta yönetici açar. [Duyuru](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/)
-
-Bunlar başlangıç için zorunlu değildir; çekirdek yedi yeteneği oturttuktan sonra devreye alın.
-
-## Diğer Yetenek Sayfaları
-
-Yedi çekirdek yeteneğin ve yukarıdaki iki yeni başlığın yanında üç sayfa daha var:
-
-- [**Memory**](/wiki/yetenekler/memory/): Claude'un sohbetler arası hatırladığı bilgi, CLAUDE.md ile farkı ve kontrol ayarları
-- [**Code Execution**](/wiki/yetenekler/code-execution/): Claude'un gerçek Python kodu çalıştırarak yaptığı hesaplama, analiz ve grafik
-- [**Research Mode**](/wiki/yetenekler/research-mode/): Çok kaynaklı, uzun soluklu derin araştırma
+- [Claude Skills](/claude/skills/) ve [Claude Plugins](/claude/plugins/)
+- [Claude Artifacts](/claude/artifacts/)
+- [Claude Design](/claude/design/)
+- [Claude'a Geçiş](/claude/gecis/): başka bir asistandan geçenler için
 
 ## Nereye Gitmeli?
 
@@ -123,5 +176,7 @@ Yetenekleri anladıysanız:
 
 - [**MCP ve Eklentiler**](/wiki/mcp/): Claude'u şirket araçlarınıza bağlayan sistem
 - [**Departmanlar**](/wiki/departmanlar/): Yetenekleri rol bazlı gerçek iş senaryolarına uygulamak
-- [**Cowork Modu**](/wiki/araclar/cowork-modu/): Tüm yeteneklerin yaşadığı ortam
-
+- [**Cowork Modu**](/wiki/araclar/cowork-modu/): Uzun görevler, zamanlanmış işler ve dosya işleri için çalışma modu
+- [**Türk İş Araçlarıyla Claude**](/wiki/temeller/turk-is-araclari/): Türkiye'de kullanılan iş araçlarıyla Claude
+- [**Kullanım Limitleri**](/wiki/temeller/kullanim-limitleri/): Kota ve limit mantığı
+- [**ROI Hesaplayıcı**](/wiki/temeller/roi-hesaplayici/): Kazancı kendi rakamlarınızla hesaplayın

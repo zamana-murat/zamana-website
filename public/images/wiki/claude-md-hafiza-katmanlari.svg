@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 656" width="800" height="656" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Claude'da kalıcı talimat ve hafıza katmanları: geniş kapsamdan dara</title>
+  <desc id="desc">Yukarıdan aşağıya, geniş kapsamdan dara beş katman. Katman 1 profil talimatı tüm sohbetlerde ve Cowork'te geçerlidir. Katman 2 proje talimatı, dosyaları ve proje hafızası yalnız o projede geçerlidir. Katman 3 Cowork klasöründeki CLAUDE.md yerel Cowork oturumunda okunur. Katman 4 oturum içi bağlam konuşma bitince kaybolur. Bu dördünü siz yazarsınız. Altta beşinci, otomatik katman: Claude'un kendisinin biriktirdiği yerleşik hafıza. En altta not: Claude Code'da CLAUDE.md bir hiyerarşi olarak çalışır.</desc>
+
+  <defs>
+    <marker id="arrow-navy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f2855"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="656" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Kalıcı talimat ve hafıza katmanları</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Geniş kapsamdan dara: ilk dördünü siz yazarsınız, beşincisini Claude biriktirir</text>
+
+  <!-- Axis -->
+  <text x="60" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#0f2855">Geniş</text>
+  <line x1="60" y1="144" x2="60" y2="464" stroke="#0f2855" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <text x="60" y="490" text-anchor="middle" font-size="16" font-weight="700" fill="#0f2855">Dar</text>
+
+  <!-- Layer 1 -->
+  <rect x="110" y="116" width="650" height="80" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <circle cx="150" cy="156" r="22" fill="#0f2855"/>
+  <text x="150" y="162" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">1</text>
+  <text x="188" y="163" font-size="21" font-weight="700" fill="#0f2855">Profil talimatı</text>
+  <text x="740" y="162" text-anchor="end" font-size="16" font-weight="500" fill="#1a2238">Tüm sohbetlerde ve Cowork'te</text>
+
+  <!-- Layer 2 -->
+  <rect x="110" y="208" width="650" height="80" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <circle cx="150" cy="248" r="22" fill="#0f2855"/>
+  <text x="150" y="254" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">2</text>
+  <text x="188" y="255" font-size="21" font-weight="700" fill="#0f2855">Proje</text>
+  <text x="740" y="254" text-anchor="end" font-size="16" font-weight="500" fill="#1a2238">Talimat, dosyalar, proje hafızası: yalnız o projede</text>
+
+  <!-- Layer 3 -->
+  <rect x="110" y="300" width="650" height="80" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <circle cx="150" cy="340" r="22" fill="#0f2855"/>
+  <text x="150" y="346" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">3</text>
+  <text x="188" y="347" font-size="21" font-weight="700" fill="#0f2855">Klasörde CLAUDE.md</text>
+  <text x="740" y="346" text-anchor="end" font-size="16" font-weight="500" fill="#1a2238">Yerel Cowork oturumunda</text>
+
+  <!-- Layer 4 -->
+  <rect x="110" y="392" width="650" height="80" rx="10" fill="#ffffff" stroke="#c5cdda" stroke-width="2"/>
+  <circle cx="150" cy="432" r="22" fill="#0f2855"/>
+  <text x="150" y="438" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">4</text>
+  <text x="188" y="439" font-size="21" font-weight="700" fill="#0f2855">Oturum içi bağlam</text>
+  <text x="740" y="438" text-anchor="end" font-size="16" font-weight="500" fill="#1a2238">Konuşma bitince kaybolur</text>
+
+  <!-- Built-in memory (automatic) -->
+  <text x="60" y="560" text-anchor="middle" font-size="16" font-weight="700" fill="#0f2855">Otomatik</text>
+  <rect x="110" y="506" width="650" height="80" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2" stroke-dasharray="8 6"/>
+  <circle cx="150" cy="546" r="22" fill="#c9a84c"/>
+  <text x="150" y="552" text-anchor="middle" font-size="18" font-weight="700" fill="#0f2855">5</text>
+  <text x="188" y="553" font-size="21" font-weight="700" fill="#0f2855">Yerleşik hafıza</text>
+  <text x="740" y="552" text-anchor="end" font-size="16" font-weight="500" fill="#1a2238">Claude kendisi biriktirir</text>
+
+  <!-- Claude Code note -->
+  <text x="110" y="626" font-size="16" font-weight="500" fill="#1a2238">Claude Code: CLAUDE.md burada ayrı bir hiyerarşidir (Geliştiriciler için kutusu)</text>
+</svg>

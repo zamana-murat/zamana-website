@@ -1,17 +1,20 @@
 ---
 title: "CLAUDE.md Nasıl Yazılır? Adım Adım Rehber"
-description: Etkili bir CLAUDE.md dosyası nasıl yazılır, yapısı, bölümleri, zamanla nasıl büyür ve hangi hatalardan kaçınılmalı. Kopyalanabilir şablonla.
+seoTitle: "CLAUDE.md Nasıl Yazılır? Şablon ve Nereye Konur"
+description: "Claude'a kalıcı talimat yazmanın beş bölümlü yöntemi: kim olduğunuz, şirket, ton, kurallar, güncel odak. Metni nereye koyacağınız da dahil."
 tags:
   - claude-md
   - rehber
   - sablon
   - kurumsal-kullanim
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 [CLAUDE.md'nin ne olduğunu](/wiki/claude-md/nedir/) okuduysanız, sıradaki soru doğal: **peki bunu ben nasıl yazarım?**
 
 Bu sayfa adım adım bir rehberdir. Sonunda kendi CLAUDE.md'nizin ilk sürümü elinizde olur.
+
+> **Metin araçtan bağımsızdır, konduğu yer değişir.** Aşağıdaki beş bölümlü metni bir kez yazarsınız; sonra kullandığınız araca göre profil talimatına, bir projenin talimatına, Cowork'te çalıştığınız klasöre ya da Claude Code'a koyarsınız. Hangisinin size uyduğunu aşağıdaki "Bu Metni Nereye Koyacağım?" bölümünde bulursunuz.
 
 ## Genel Prensip
 
@@ -88,7 +91,7 @@ Bu, düzenli güncellenen bir bölümdür:
 
 ## Tam Şablon: Kopyalanabilir
 
-Aşağıdaki şablonu workspace klasörünüzde `CLAUDE.md` adıyla kaydedin ve kendinize göre uyarlayın:
+Aşağıdaki şablonu kopyalayın ve kendinize göre uyarlayın. Nereye koyacağınız bir sonraki bölümde; klasörle çalışacaksanız dosyayı `CLAUDE.md` adıyla kaydedin:
 
 ```markdown
 # CLAUDE.md: [Ad Soyad]
@@ -141,11 +144,34 @@ Aşağıdaki şablonu workspace klasörünüzde `CLAUDE.md` adıyla kaydedin ve 
 - Bu dosya [tarih] itibariyle günceldir. Düzenli güncellemek benim sorumluluğum.
 ```
 
-## Nereye Kaydedilir?
+## Bu Metni Nereye Koyacağım?
 
-CLAUDE.md, **workspace klasörünüzün kök dizinine** kaydedilir. Claude o klasörle Cowork'te çalıştığında bu dosyayı otomatik olarak okur. Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor, ama dosyanın yeri ve işlevi aynı kalıyor.
+Sohbet ekranındaki Claude, bilgisayarınızdaki bir `CLAUDE.md` dosyasını kendiliğinden okumaz. Aynı metin, nasıl çalıştığınıza göre farklı yere konur:
 
-Örnek yerleşim:
+| Nasıl çalışıyorsunuz? | Metni nereye koyarsınız? |
+|---|---|
+| **Tüm sohbetlerde** geçerli olsun istiyorsunuz | Settings > General > **"Instructions for Claude"** (profil talimatı). Tüm planlarda var, Cowork'ün genel talimatıyla aynı yerdir. Buraya uzun metnin **kısa sürümünü** yazın: Kim Olduğum, Ton, Her Zaman / Asla |
+| Tek bir **iş, müşteri ya da konu** için | O işin [Projects](/wiki/araclar/projects/) talimat alanı. Şirket ve Güncel Odak bölümleri burada daha yerinde durur; yalnız o projede geçerlidir |
+| [Cowork](/wiki/araclar/cowork-modu/) ile **bilgisayarınızdaki bir klasörde** çalışıyorsunuz | Klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel Cowork oturumunda okunur |
+| **Claude Code** kullanıyorsunuz | `CLAUDE.md` dosyası (bkz. aşağıdaki kutu) |
+
+Kalıcı talimat yerlerinin tam karşılaştırması (kapsam, plan, ne zaman okunur) için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
+
+İki not:
+
+- **Bulut Cowork oturumları.** Cowork görevi bulutta çalışıyorsa klasör elle eklenir ve orada CLAUDE.md okunduğu Anthropic belgelerinde yazmıyor. Cowork belgeleri klasördeki talimatı "klasör talimatı" diye anar, dosya adını açıkça vermez. Bu yüzden değişmez kuralların kısa sürümünü profil talimatına da koyun, sonra aşağıdaki testi yapın.
+- **Kısa sürüm nasıl görünür?** Örneğin profil talimatına şu kadarı yeter:
+
+```
+Ben Elif Kaya, Mavi Lojistik'te operasyon müdürüyüm.
+Türkçe yaz, sade ve dolaysız ol; devrik cümle ve "ayrıca" ile başlayan cümle kullanma.
+Önemli bir metni göndermeden önce taslağı bana göster.
+Müşteri kişisel verisini ve gizli mali bilgiyi dış metinlerde kullanma.
+```
+
+> **Geliştiriciler için.** Claude Code'da `CLAUDE.md` katmanlıdır: kullanıcı düzeyinde `~/.claude/CLAUDE.md`, proje kökünde `./CLAUDE.md`, kişisel notlar için `CLAUDE.local.md`. Dosyalar birleştirilir, biri ötekini ezmez. Bu bir iş eğitimi sayfası olduğu için ayrıntıya girmiyoruz; ayrıntı için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
+
+Örnek klasör yerleşimi (Cowork'te klasörle çalışıyorsanız):
 
 ```
 C:\ClaudeWorkspace\
@@ -159,15 +185,15 @@ C:\ClaudeWorkspace\
 
 Bir CLAUDE.md ilk yazıldığında temelini kurmuş olur. Sonra yaşar ve büyür. Pratik altın kural:
 
-> **Claude'a aynı şeyi ikinci kez anlattığınızı fark ettiğinizde, durun ve CLAUDE.md'yi açın. O bilgiyi dosyaya yazın.**
+> **Claude'a aynı şeyi ikinci kez anlattığınızı fark ettiğinizde, durun ve talimat metninizi (CLAUDE.md, proje talimatı ya da profil talimatı) açın. O bilgiyi oraya yazın.**
 
-Bu kural bir şeyi yapar: dosyanız kullandıkça daha iyi hale gelir. Kullanmayan bir çalışanın CLAUDE.md'si paslanmış kalır; kullanan çalışanın her geçen hafta daha güçlü olur.
+Bu kural bir şeyi yapar: metniniz kullandıkça daha iyi hale gelir. Kullanmayan bir çalışanın CLAUDE.md'si paslanmış kalır; kullanan çalışanın her geçen hafta daha güçlü olur.
 
 ## Ne Koymamalısınız?
 
 Her CLAUDE.md'de olmaması gerekenler:
 
-- **Şifreler, API anahtarları, erişim bilgileri**: bu dosya düz metindir, yedeklenebilir, paylaşılabilir
+- **Şifreler, API anahtarları, erişim bilgileri**: bu metin düz metindir, yedeklenebilir, paylaşılabilir
 - **KVKK kapsamındaki kişisel veriler**: başkalarının tam adları, kimlik numaraları, hassas bilgileri
 - **Çelişen talimatlar**: "her zaman resmi yaz" ve "samimi ol" aynı dosyada durursa Claude şaşırır
 - **Aşırı katı kurallar**: "hiçbir zaman liste kullanma" gibi yasaklar Claude'un esnekliğini öldürür
@@ -177,7 +203,7 @@ Her CLAUDE.md'de olmaması gerekenler:
 
 ### Hata 1: Her Şeyi Bir Kerede Yazmaya Çalışmak
 
-İlk gün CLAUDE.md'nizi 500 satır yazmaya çalışmayın. Şablonu doldurun; 300-500 kelime (kabaca 40-80 kısa satır) yeterli. Sonra büyüyecek.
+İlk gün CLAUDE.md'nizi 500 satır yazmaya çalışmayın. Şablonu doldurun; birkaç yüz kelime (kabaca 40-80 kısa satır) yeterli. Sonra büyüyecek.
 
 ### Hata 2: Çok Genel Yazmak
 
@@ -199,9 +225,9 @@ Bu bölüm yoksa Claude nasıl davranacağını tahmin etmek zorunda kalır. Kur
 
 Bu sayfayı okuduktan sonra:
 
-1. **5 dakika:** Workspace klasörünüzü açın, `CLAUDE.md` adında yeni bir dosya oluşturun. Yukarıdaki şablonu yapıştırın.
+1. **5 dakika:** Yeni bir metin dosyası açın (klasörle çalışacaksanız adı `CLAUDE.md` olsun) ve yukarıdaki şablonu yapıştırın.
 2. **15 dakika:** Şablondaki bölümleri doldurun. Hızlıca, mükemmeliyetçi olmadan.
-3. **5 dakika:** Cowork'ü açın, Claude'a "CLAUDE.md'yi okudun mu, özetini çıkar" deyin. Yanlış anladığı yerler varsa düzeltirsiniz.
+3. **5 dakika:** Metni yerine koyun (profil talimatı, proje ya da klasör), yeni bir sohbet ya da oturum açın ve Claude'a "Talimatımı 3 maddede özetle" deyin. Yanlış ya da eksik anladığı yerleri metinde düzeltirsiniz. Özet hiç tutmuyorsa [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakın.
 4. **5 dakika:** Gerçek bir görev verin: bir e-posta yazdırın. Tonunuza uyuyor mu? Uymuyorsa Ton bölümünü iyileştirin.
 
 Bu 30 dakikada işe yarar bir CLAUDE.md'niz olur. Mükemmel olmayacak. Ama yaşayan bir dosya olacak.
@@ -210,6 +236,7 @@ Bu 30 dakikada işe yarar bir CLAUDE.md'niz olur. Mükemmel olmayacak. Ama yaşa
 
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Temel kavram
 - [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/): Farklı roller için gerçek örnekler
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): CLAUDE.md dışındaki hafıza mekanizmaları
-- [Cowork Modu](/wiki/araclar/cowork-modu/): CLAUDE.md'nin yaşadığı yer
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Profil talimatı, proje, klasör ve hafıza karşılaştırması
+- [Projects](/wiki/araclar/projects/): Bir işe özel talimat ve dosyalar
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Klasörle çalışma
 

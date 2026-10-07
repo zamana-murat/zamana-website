@@ -1,20 +1,21 @@
 ---
-title: Cowork Modu Nedir?
-description: "Cowork, Claude'un dosyalarınıza erişen, kod çalıştıran ve araçları kullanan çalışma biçimidir. 16 Eylül 2026'dan itibaren sohbetle tek Claude içinde birleşiyor."
+title: Claude Cowork Nedir?
+seoTitle: "Claude Cowork Nedir? Sohbetten Farkı"
+description: "Cowork, Claude'un dosyalarınıza erişen, kod çalıştıran ve araçları kullanan çalışma biçimidir. 16 Eylül 2026'dan beri sohbetle tek Claude içindedir."
 tags:
   - cowork
   - claude-desktop
   - arac
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-**Cowork, Claude'u bir sohbet arayüzünden tam bir çalışma ortamına dönüştüren özelliktir.** Dosyalarınıza erişir, kod çalıştırır, bağlı araçları kullanır ve işi baştan sona teslim eder. Cowork 9 Nisan 2026'dan beri masaüstünde (macOS ve Windows) genel kullanıma açık, 7 Temmuz 2026'dan beri web ve mobilde beta olarak da kullanılabiliyor.
+**Cowork, Claude'u bir sohbet arayüzünden tam bir çalışma ortamına dönüştüren özelliktir.** Dosyalarınıza erişir, kod çalıştırır, bağlı araçları kullanır ve işi baştan sona teslim eder. Cowork 9 Nisan 2026'dan beri masaüstünde (macOS, Windows ve Linux) genel kullanıma açık, 7 Temmuz 2026'dan beri web ve mobilde beta olarak da kullanılabiliyor.
 
 > **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor. Artık "sohbet mi, Cowork mu?" diye seçim yapmıyorsunuz; Claude görevin neye ihtiyaç duyduğunu kendisi anlıyor. Yayılım kademeli: önce Pro ve Max, Team ve Free için "yakında". Enterprise yöneticilerine en az 30 gün önceden haber verilecek. Hesabınızda birleşik arayüz henüz açılmadıysa sayfadaki "ayrı mod" anlatımı sizin ekranınızı tarif eder. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ## Hangi Planda, Nerede Çalışır?
 
-- **Masaüstü (macOS, Windows):** tüm ücretli planlarda. Enterprise'da yönetici etkinleştirmesi gerekebilir.
+- **Masaüstü (macOS, Windows, Linux):** tüm ücretli planlarda. Enterprise'da yönetici etkinleştirmesi gerekebilir. Linux'ta Cowork için en az 8 GB RAM ve KVM desteği gerekir, bkz. [Claude Desktop](/wiki/araclar/claude-desktop/).
 - **Web ve mobil:** beta; Pro, Max ve Team planlarında, Enterprise'da yönetici açtıysa. Connector'lar, skill'ler, zamanlanmış görevler ve cihazlar arası devam var; yerel dosya erişimi ve tarayıcı kullanımı kısmidir (masaüstü uygulaması açık olmalı).
 - **Cowork'ün Chrome yan paneli:** Max ve Team'de, Pro'ya yayılıyor.
 - **Computer use:** research preview; yalnız Pro ve Max'te, masaüstü uygulamasında Cowork ve Claude Code içinde. Team ve Enterprise'ta yok. Ayrıntı: [Computer Use](/wiki/yetenekler/computer-use/).
@@ -26,7 +27,7 @@ Free planda Cowork yoktur. Hafıza 25 Ağustos 2026'dan beri sohbet ve Cowork ar
 
 ## Sohbet ve Cowork: Hangi Tür İş Hangisine Yakın?
 
-Birleşme sonrası bu bir ürün seçimi değil, bir **iş türü** ayrımıdır. Aynı konuşmada ikisini birlikte kullanırsınız.
+Birleşme sonrası bu bir ürün seçimi değil, bir **iş türü** ayrımıdır. Aynı konuşmada ikisini birlikte kullanırsınız. Bu sayfa, "sohbet mi, çalışma mı" sorusunun wiki'deki tek ayrıntılı cevabıdır; [Claude Chat](/wiki/araclar/claude-chat/), [Claude Desktop](/wiki/araclar/claude-desktop/) ve [Araçlar ana sayfası](/wiki/araclar/) buraya link verir.
 
 **Soru-cevap tarzı işlerde** siz sorarsınız, Claude cevap verir. Her şey yazı düzleminde kalır, sonuç sizin sorumluluğunuzdadır.
 
@@ -36,9 +37,26 @@ Birleşme sonrası bu bir ürün seçimi değil, bir **iş türü** ayrımıdır
 
 Claude ilerlemeyi nasıl kontrol edeceğinizi de size bırakır: ya her adımdan önce onay ister ya da bağımsız çalışıp yalnızca önemli noktaları bildirir. İlk haftalarda onay isteyen modu tercih edin.
 
+| Durum | Sohbet tarzı | Cowork tarzı |
+|---|---|---|
+| Hızlı soru, tek seferlik görev | ✅ | |
+| Belge inceleme, yüklediğiniz dosya | ✅ | ✅ |
+| Taslak yazma, e-posta, rapor | ✅ | ✅ |
+| .docx / .pptx / .xlsx dosyası üretme | ✅ (indirilir) | ✅ (doğrudan workspace klasörüne) |
+| Script veya otomasyon çalıştırma | Kod çalıştırma var, bilgisayarınızda kalıcı iş yok | ✅ |
+| Slack, CRM, Drive'a bağlanma | ✅ (connector'lar) | ✅ (connector'lar) |
+| Tekrar eden zamanlanmış görevler | | ✅ |
+| Çok adımlı otonom iş akışları | | ✅ |
+| Kurulum gerektirmez | ✅ | |
+| Mobilde çalışır | ✅ | ✅ Beta (7 Tem 2026'dan beri; Pro, Max, Team, Enterprise'da yönetici açtıysa) |
+
+**Pratik yaklaşım:** soru-cevapla başlayın; çıktının bilgisayarınızdaki klasöre yazılması, bir işin tekrar etmesi, şirket sistemine bağlanma ya da çok adımlı otomasyon gerektiğinde çalışma tarzına geçin. Hızlı soru-cevap ortadan kalkmaz.
+
 ## Cowork'te Neler Var?
 
 Cowork'ün gücü tek bir özelliğinden değil, birlikte çalışan bir özellik setinden gelir:
+
+![Cowork ekosistemi: merkezde Cowork, çevresinde klasör ve dosyalar, connector'lar, skills ve plugin'ler, Chrome, telefon ve web'den görev, zamanlanmış görevler, bulut görevleri ve kod çalıştırma](/images/wiki/araclar-cowork-ekosistemi.svg)
 
 ### Dosya Erişimi
 Claude workspace klasörünüzdeki dosyaları doğrudan okur, oluşturur, düzenler. Word belgesi yazar, Excel dosyasını günceller, PDF'i açıp işler. Bilgisayarınızdaki gerçek klasörde, gerçek dosyalar üzerinde çalışır.
@@ -57,8 +75,8 @@ Plugins, skills + connector + subagent paketlerini bir araya getiren kurulabilir
 ### Connectors (Bağlayıcılar)
 Dış servislere kimlik doğrulamalı bağlantılardır: Slack, Google Drive, Gmail, Microsoft 365, Notion, Asana, ClickUp, birçok CRM platformu ve resmi dizindeki yaklaşık 900 connector'dan geri kalanı. Bir kere bağlarsınız, Claude bu servislere sizin adınıza okur ve yazar. Excel, PowerPoint ve Word'ün içinde çalışan eklentiler ayrı bir konudur: [Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
 
-### Artifacts (Canlı Çıktılar)
-Cowork yan panelinde açılan kalıcı HTML sayfalarıdır. Her açıldığında connector'lardan güncel veri çekebilir, yani tek seferlik bir raporu canlı bir kontrol paneline dönüştürür. Satış pipeline'ı, haftalık performans özeti, stok durumu gibi şeyler için.
+### Artifacts (Çıktılar)
+Artifact, Cowork yan panelinde açılan HTML sayfası, tablo ya da görseldir; satış pipeline'ı, haftalık performans özeti, stok durumu gibi şeyler için kullanılır. Cowork'te yeni artifact'ler standart artifact olarak oluşur ve içinde tam düzenleme yapabilirsiniz. Eskiden "canlı artifact" denen, her açılışta connector'lardan veri çeken biçim 19 Ağustos 2026'dan beri legacy: mevcutlar çalışmaya ve kuruluş içinde paylaşılmaya devam ediyor, ama yerinde düzenlenemiyor. Ayrıntı: [Artifacts (Yetenekler)](/wiki/yetenekler/artifacts/).
 
 Claude Design, Slides ve Docs ürünleri de bu ailede yer alır; ücretli planlarda (Pro, Max, Team, Enterprise) beta olarak sunulur, Free planda yoktur. Enterprise'da yönetici açana kadar kapalıdır.
 
@@ -66,7 +84,7 @@ Claude Design, Slides ve Docs ürünleri de bu ailede yer alır; ücretli planla
 Sizin başlatmanıza gerek kalmadan belirli aralıklarla (günlük, haftalık, aylık) çalışan otomasyonlardır. Pazartesi sabah brifinginiz, Cuma akşam ekip raporu, siz bir şey yapmadan hazırlanır.
 
 ### Dispatch (Uzaktan Görev)
-Telefonunuzdan bir görev gönderirsiniz, Claude masaüstünüzde çalışır ve sonucu hazırlar. Pro ve Max'te sınırlı beta olarak sunuluyor, yeni kullanıcılara kapalı; mevcut kullanıcılar şimdilik kullanabiliyor. Yeni bir hesapta telefondan görev atmanın yolu mobil Cowork betasıdır. Ayrıntı: [Dispatch](/wiki/araclar/dispatch/).
+Telefonunuzdan bir görev gönderirsiniz, Claude masaüstünüzde çalışır ve sonucu hazırlar. Pro ve Max'te sınırlı beta olarak sunuluyor, yeni kullanıcılara kapalı; mevcut kullanıcılar şimdilik kullanabiliyor. Yeni bir hesapta telefondan görev atmanın yolu mobil Cowork betasıdır. Ayrıntı: [Claude Mobil: telefondan görev](/wiki/araclar/claude-mobil/).
 
 ### Subagent Koordinasyonu
 Karmaşık görevlerde Claude birden fazla alt ajan başlatabilir: biri araştırır, diğeri taslak yazar, üçüncüsü dosyaları kontrol eder. Sonuçlar tek çıktıda birleştirilir. Aynı mantık Claude Code'da da genel kullanıma açık alt ajanlar olarak vardır, bkz. [Alt Ajanlar](/wiki/yetenekler/agents-subagents/).
@@ -78,7 +96,7 @@ Cowork içinde ayrı çalışma alanları, her biri kendi dosyaları, bağlamı,
 
 1. Claude'u açarsınız (masaüstü, web ya da mobil). Birleşik arayüz hesabınızda henüz yoksa Cowork sekmesini seçersiniz
 2. Görevi tarif edersiniz. Tek cümle de olabilir, detaylı talimat da
-3. Claude workspace klasörünüzü ve bağlam dosyalarınızı (CLAUDE.md, proje dosyaları) okur
+3. Claude workspace klasörünüzü ve bağlam dosyalarınızı (klasörde CLAUDE.md, proje dosyaları) okur. CLAUDE.md'yi yerel oturum okur (masaüstü, klasör bağlı); bulut oturumunda okunduğu belgelenmemiştir
 4. Claude isteği analiz eder, bir plan çıkarır, alt görevlere böler
 5. Claude çalışır: dosyaları okur, kod çalıştırır, connector'ları çağırır, çıktıları yazar
 6. Sonucu workspace klasörünüze teslim eder, açmak için bağlantı verir
@@ -100,12 +118,7 @@ Cowork'e ilk kez bir görev devrederken üç adım vardır, ve ikincisi en kriti
 
 Cowork'ün kalbidir. Bilgisayarınızda gerçek bir klasördür, siz seçer ve Cowork ayarlarından bağlarsınız. Claude'un ürettiği her şey bu klasöre kaydedilir ve oturum bittikten sonra orada kalır.
 
-**İki kavramı karıştırmayın:**
-
-| Kavram | Ne İşe Yarar | Kalıcılık |
-|---|---|---|
-| **Working directory** | Claude'un geçici çalışma alanı | Oturumlar arası temizlenir |
-| **Workspace klasörü (mnt/)** | Sizin kalıcı teslimat klasörünüz | Her zaman kalıcı |
+Claude'un kod çalıştırırken kullandığı geçici alan oturum bitince temizlenir. Sizin için önemli olan tek şey workspace klasörüdür: kalıcı teslimat klasörünüz.
 
 **Pratik kural:** Workspace klasörünü hemen kurun. Adını net verin (`ClaudeWorkspace`, `YapayZeka`, `AiCalisma` gibi). Her çıktı oraya gider. Bu alışkanlığı ilk günden kurarsanız, bir ay içinde doğal bir refleks haline gelir.
 
@@ -115,8 +128,8 @@ Cowork oturumu başlattığınızda Claude birden fazla kaynaktan bağlam toplar
 
 | Katman | Kaynak | Kapsamı |
 |---|---|---|
-| Genel talimatlar | Ayarlar → Cowork | Her oturum |
-| CLAUDE.md | Workspace kök klasörü | Her oturum |
+| Genel talimatlar (profil talimatı) | Settings > General > "Instructions for Claude" (tüm sohbetler ve Cowork) | Her oturum |
+| CLAUDE.md | Workspace kök klasörü | Yerel oturum (masaüstü, klasör bağlı) |
 | Proje bağlam dosyası | Aktif proje klasörü | Sadece o proje |
 | Oturum içi yüklemeler | Konuşmada paylaşılan dosyalar | Sadece o oturum |
 
@@ -159,9 +172,14 @@ Bu, bir çalışana "Claude şirket verilerine özgürce erişebilir" anlamına 
 
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Cowork'ün masaüstü uygulaması
 - [Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/): Excel, PowerPoint, Word, Outlook ve tarayıcı
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Cowork'ün her oturumda okuduğu hafıza dosyası
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Yerel Cowork oturumunun klasörden okuduğu talimat dosyası
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Profil talimatı, proje, klasör ve hafıza karşılaştırması
 - [Skills](/wiki/yetenekler/skills/): Cowork'teki yetenek paketleri
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Cowork'te kullanılabilen connector'lar
-- [Dispatch](/wiki/araclar/dispatch/): Uzaktan görev atama
+- [Claude Mobil](/wiki/araclar/claude-mobil/): Telefondan görev, mobil Cowork ve Dispatch
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Zamanlanmış otomasyonlar
+- [Pilot ve Yaygınlaştırma](/wiki/temeller/pilot-ve-yayginlastirma/): Cowork'ü ekipte denemek ve kurum geneline açmak
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Team ve Enterprise'ta Cowork'ün yönetici ayarları
+- [Claude nedir? (Claude bölümü)](/claude/): ürüne genel bakış, hangi planda ne var
+- [Claude Artifacts](/claude/artifacts/) ve [Claude Skills](/claude/skills/): ürün tanıtım sayfaları
 

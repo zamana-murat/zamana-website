@@ -1,11 +1,12 @@
 ---
 title: "Web Arama: Claude'un Güncel Bilgi Erişimi"
-description: "Claude ne zaman web'de arama yapar? Türkçe sonuçlar nasıl, kaynak doğrulama nasıl yapılır, KVKK boyutu nedir?"
+seoTitle: "Claude Web Arama: Kaynak Doğrulama"
+description: "Claude ne zaman web'de arama yapar? Türkçe sonuçların kalitesi, mevzuat ve istatistikte kaynak doğrulama, halüsinasyon riski ve KVKK boyutu."
 tags:
   - araclar
   - web-arama
   - guncel-bilgi
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Claude, bir sorunun cevabı eğitim verisinde olmadığında veya güncel veri gerektiğinde otomatik olarak web'de arama yapar.** Sizin ayar yapmanız ya da "şimdi web'i aç" demeniz gerekmez. Claude bunu kendisi karar verir, sonuçları okur ve cevabını kaynaklarla birlikte sunar.
@@ -66,6 +67,8 @@ Claude size kaynak gösterse bile, **kritik kararlar için kaynağı kendiniz a�
 
 Bu, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence (özen)** bacağının pratik karşılığıdır.
 
+**Örnek iş:** üç kaynaktan (mevzuat.gov.tr, GİB, SGK) bir düzenlemenin son durumunu tarayıp tek sayfalık özet çıkarmak. **Süre:** elle 45-60 dakika, Claude ile 10-15 dakika, ardından kaynakları açıp doğrulamak için 10-15 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
 ## Halüsinasyon Riski
 
 Web aramada Claude halüsinasyon yapabilir mi? **Evet, ama daha düşük oranda.**
@@ -94,7 +97,7 @@ Web aramada **sorgunuz Claude'a (Anthropic'e) ve dolayısıyla arama servisine**
 
 **Pratik kural:** sorguya iç müşteri ismi, gizli proje adı, kişisel veri yazmayın. Onun yerine genel forma çevirin:
 
-- ❌ "Acme A.Ş.'nin X projesindeki gecikme sebepleri nelerdir?"
+- ❌ "Bosfor Tekstil A.Ş.'nin X projesindeki gecikme sebepleri nelerdir?"
 - ✅ "Yazılım projelerinde sıkça görülen gecikme sebepleri nelerdir?"
 
 İç bilgi gerekiyorsa onu zaten Claude'a yüklersiniz, web araması işin içine girmez.

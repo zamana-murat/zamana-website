@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 530" width="800" height="530" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Cowork ekosistemi: merkezde Cowork, çevresinde birlikte çalışan parçalar</title>
+  <desc id="desc">Ortada Cowork görevi planlar, uygular ve teslim eder. Çevresinde sekiz parça var: klasör ve dosyalar, yaklaşık 900 servise bağlanan connector'lar, skills ve plugin'ler, Chrome yan paneli ve tarayıcı, mobil ve web'den görev atama (beta), zamanlanmış görevler, izole sandbox'ta kod çalıştırma ve 6 Ekim 2026'dan beri Pro ve Max'te bulutta çalışan yeni görevler.</desc>
+
+  <rect x="0" y="0" width="800" height="530" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Cowork ekosistemi</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Tek görev, birlikte çalışan parçalar</text>
+
+  <!-- Spokes -->
+  <g stroke="#c9a84c" stroke-width="2" stroke-linecap="round">
+    <line x1="400" y1="256" x2="400" y2="226"/>
+    <line x1="400" y1="366" x2="400" y2="396"/>
+    <line x1="282" y1="311" x2="260" y2="311"/>
+    <line x1="518" y1="311" x2="540" y2="311"/>
+    <line x1="282" y1="256" x2="260" y2="226"/>
+    <line x1="518" y1="256" x2="540" y2="226"/>
+    <line x1="282" y1="366" x2="260" y2="396"/>
+    <line x1="518" y1="366" x2="540" y2="396"/>
+  </g>
+
+  <!-- Row 1 -->
+  <rect x="24" y="116" width="236" height="110" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="142" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#0f2855">Klasör ve dosyalar</text>
+  <text x="142" y="193" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">gerçek dosyada çalışır</text>
+
+  <rect x="282" y="116" width="236" height="110" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="400" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#0f2855">Connector'lar</text>
+  <text x="400" y="193" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">yaklaşık 900 servis</text>
+
+  <rect x="540" y="116" width="236" height="110" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="658" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#0f2855">Skills, plugin'ler</text>
+  <text x="658" y="193" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">hazır uzmanlık paketleri</text>
+
+  <!-- Row 2 -->
+  <rect x="24" y="256" width="236" height="110" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="142" y="304" text-anchor="middle" font-size="19" font-weight="700" fill="#0f2855">Chrome</text>
+  <text x="142" y="333" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">yan panel, tarayıcı</text>
+
+  <rect x="282" y="256" width="236" height="110" rx="10" fill="#0f2855" stroke="#c9a84c" stroke-width="3"/>
+  <text x="400" y="306" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff">Cowork</text>
+  <text x="400" y="336" text-anchor="middle" font-size="16" font-weight="500" fill="#f7f0dc">plan, uygula, teslim</text>
+
+  <rect x="540" y="256" width="236" height="110" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="658" y="304" text-anchor="middle" font-size="19" font-weight="700" fill="#0f2855">Telefon ve web</text>
+  <text x="658" y="333" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">mobil Cowork (beta)</text>
+
+  <!-- Row 3 -->
+  <rect x="24" y="396" width="236" height="110" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="142" y="444" text-anchor="middle" font-size="19" font-weight="700" fill="#0f2855">Zamanlanmış görevler</text>
+  <text x="142" y="473" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">günlük, haftalık, aylık</text>
+
+  <rect x="282" y="396" width="236" height="110" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="400" y="444" text-anchor="middle" font-size="19" font-weight="700" fill="#0f2855">Bulut görevleri</text>
+  <text x="400" y="473" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">Pro, Max: 6 Ekim 2026</text>
+
+  <rect x="540" y="396" width="236" height="110" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="658" y="444" text-anchor="middle" font-size="19" font-weight="700" fill="#0f2855">Kod çalıştırma</text>
+  <text x="658" y="473" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">izole sandbox</text>
+</svg>

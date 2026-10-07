@@ -15,7 +15,7 @@ lastUpdated: "2026-10-06"
 
 ## Claude Türkiye'de kullanılabilir mi?
 
-Evet. Türkiye, Anthropic'in claude.ai için yayımladığı [desteklenen ülkeler](https://www.anthropic.com/supported-countries) listesinde. Web, masaüstü uygulaması (Windows ve macOS) ve iOS ile Android uygulamaları Türkiye'den çalışır. Ücretsiz planla başlayıp ücretli plana geçebilirsiniz; planlar için [Claude Planları](/wiki/temeller/planlar/) sayfasına bakın.
+Evet. Türkiye, Anthropic'in claude.ai için yayımladığı [desteklenen ülkeler](https://www.anthropic.com/supported-countries) listesinde. Web, masaüstü uygulaması (Windows, macOS ve Linux) ve iOS ile Android uygulamaları Türkiye'den çalışır. Ücretsiz planla başlayıp ücretli plana geçebilirsiniz; planlar için [Claude Planları](/wiki/temeller/planlar/) sayfasına bakın.
 
 Türkçe yazışma ve profesyonel metin üretiminde Claude'un performansı iyidir. Dört farklı dil kaydında (resmi yazışma, teknik, hukuki, yaratıcı) yan yana örnekler için [Claude Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfasına bakın. Arayüz dili seçeneklerinin güncel listesi sık değişebilir; bunu uygulamadaki ayarlardan kontrol edin.
 
@@ -49,7 +49,7 @@ Girecekseniz, pratikte Kurul'un ilan ettiği standart sözleşme yolu gündeme g
 
 ## Kamu kurumları
 
-Kamu kurumları için tablo daha zor. Yurt dışındaki bir firmadan doğrudan abonelik almak çoğu kurum için satın alma mevzuatı açısından mümkün olmuyor ve şu an kamu için Anthropic'in yetkili bir Türkiye satış kanalı yok. Ayrıca kamu verisinde, Bilgi ve İletişim Güvenliği Tedbirleri Genelgesi (2019/12) gibi düzenlemelerin yurt dışı bulut kullanımına getirdiği kısıtlar devreye girebilir. Kapsamı kurumdan kuruma değişir; bilgi işlem ve hukuk biriminize danışın.
+Kamu kurumları için tablo daha zor. Yurt dışındaki bir firmadan doğrudan abonelik almak çoğu kurum için satın alma mevzuatı açısından mümkün olmuyor ve şu an kamu için Anthropic'in yetkili bir Türkiye satış kanalı yok. Ayrıca kamu verisinde, Bilgi ve İletişim Güvenliği Tedbirleri Genelgesi (2019/12) gibi düzenlemelerin yurt dışı bulut kullanımına getirdiği kısıtlar devreye girebilir. Kapsamı kurumdan kuruma değişir; bilgi işlem ve hukuk biriminize danışın. Türk kamu kurumu ve belediyeleri için veri sınıflandırması, satın alma yolu ve kullanım örnekleri [Kamu kurumları için Claude](/kurumsal/kamu/) sayfasında.
 
 Kamu kurumunda çalışıyorsanız durumunuzu bize yazın: [İletişim](/iletisim/). Bu alanda gelişme olursa bu sayfayı güncelleyeceğiz.
 

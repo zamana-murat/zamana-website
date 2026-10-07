@@ -1,18 +1,19 @@
 ---
 title: "Dosya İşleme: Claude Hangi Dosyaları Okur ve Üretir?"
-description: Claude hangi dosya tiplerini okur, hangilerini oluşturur, bilgisayarınızdaki workspace klasörüyle nasıl çalışır. PDF, Word, Excel, görsel, kod dosyaları.
+seoTitle: "Claude Hangi Dosyaları Okur? PDF, Excel, Word"
+description: "Claude hangi dosyaları okur ve üretir? PDF, Word, Excel, görsel; yükleme sınırları, dosyaların nerede durduğu ve Türkiye'den örnekler."
 tags:
   - yetenekler
   - dosya-isleme
-  - workspace
+  - yukleme-sinirlari
   - pdf
   - excel
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Claude, metin tabanlı bir araç olmanın çok ötesinde **dosyalarla çalışan bir sistemdir**. Bir PDF okur, bir Excel tablosu oluşturur, bir Word raporu düzenler, bir görsel analiz eder; hepsi aynı oturumda.
 
-Bu sayfa hangi dosya tiplerini **okuduğunu**, hangilerini **ürettiğini** ve dosyaların fiziksel olarak nerede yaşadığını anlatır.
+Bu sayfa hangi dosya tiplerini **okuduğunu**, hangilerini **ürettiğini**, yükleme sınırlarını ve üretilen dosyaların nerede durduğunu anlatır.
 
 ## Claude Hangi Dosyaları Okur?
 
@@ -42,7 +43,7 @@ Claude görselleri **görür**: yalnızca metin çıkarmaz, içeriği anlar. Bir
 
 ## Claude Hangi Dosyaları Üretir?
 
-Cowork'te Claude yeni dosyalar oluşturabilir. Üretim için skill'ler devreye girer:
+Claude sohbette de, Cowork görevinde de yeni dosyalar oluşturabilir. Code execution ve dosya oluşturma Free dahil tüm planlarda vardır (Team ve Enterprise'ta yönetici kapatabilir). Biçim için skill'ler devreye girer:
 
 | Format | Skill | Tipik Kullanım |
 |---|---|---|
@@ -50,77 +51,61 @@ Cowork'te Claude yeni dosyalar oluşturabilir. Üretim için skill'ler devreye g
 | **`.xlsx`** | `xlsx` | Excel tablosu, analiz, finansal model, veri listesi |
 | **`.pptx`** | `pptx` | PowerPoint sunumu, yönetim kuruluna rapor |
 | **`.pdf`** | `pdf` | PDF raporu, broşür, belge birleştirme |
-| **`.html`** | (skill yok, doğrudan) | Web sayfası, canlı artifact |
+| **`.html`** | (skill yok, doğrudan) | Web sayfası, artifact |
 | **`.md`** | (skill yok, doğrudan) | Markdown belge, CLAUDE.md güncellemesi |
 | **`.py`, `.js`** | (skill yok, doğrudan) | Script, otomasyon kodu |
-| **`.png`, `.svg`** | `canvas-design` | Görsel tasarım, logo, diyagram |
+| **`.svg`, grafik** | (skill gerekmez) | Diyagram ve grafik; Claude resim üretmez, kod ya da vektör olarak çizer |
 
 **Önemli:** Siz skill çağırmak zorunda değilsiniz. "Bir Word raporu oluştur" dediğinizde Claude `docx` skill'ini otomatik devreye alır. `/docx` yazarak elle çağırırsanız sonuç aynıdır, ama Claude'a niyetinizi baştan bildirmiş olursunuz; bu bazen daha tutarlı çıktı verir.
 
-## Workspace Klasörü: Dosyaların Fiziksel Evi
+## Üretilen Dosyalar Nerede Durur?
 
-Claude'un **oluşturduğu her dosya**, [Cowork](/wiki/araclar/cowork-modu/)'e bağladığınız **workspace klasörünüze** kaydedilir. Bu klasör bilgisayarınızda gerçek bir klasördür:
+Claude bir dosya ürettiğinde konuşmada bir bağlantı ya da önizleme olarak görürsünüz; açar, indirir, kendi klasörünüze kaydedersiniz. Önemli çıktıyı kendi klasörünüze (OneDrive, Drive ya da şirket paylaşımı) siz kaydetmeyi alışkanlık edinin.
 
-```
-C:\ClaudeWorkspace\
-├── CLAUDE.md
-├── projeler\
-│   ├── XYZ-Gida-teklif\
-│   │   ├── teklif-final.docx
-│   │   └── karsilastirma.xlsx
-│   └── Q2-pazarlama\
-├── raporlar\
-│   └── 2026-03-operasyon.docx
-└── arsiv\
-```
+Cowork'te yerel klasör bağlayarak çalışmak da mümkündür; klasör erişimi masaüstü uygulaması ister. 6 Ekim 2026'dan beri Pro ve Max'te yeni Cowork görevleri bulutta çalışır. Klasör bağlama, zamanlanmış işler ve bulut/yerel ayrımı için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
 
-Claude bir dosya ürettiğinde size **`computer://` bağlantısı** verir, bir tıkla dosya açılır.
+## Yükleme Sınırları
 
-Bu klasör:
-
-- **Kalıcıdır**: oturum bittikten sonra dosyalar orada kalır
-- **Sizindir**: bilgisayarınızda, size ait, yedeklenebilir
-- **İzlenebilirdir**: Windows Explorer veya macOS Finder'dan normal bir klasör gibi yönetilir
-
-## Working Directory vs Workspace Klasörü
-
-Bu iki kavramı karıştırmak kolay:
-
-| Kavram | Ne İşe Yarar | Kalıcılık |
-|---|---|---|
-| **Working directory** | Claude'un geçici çalışma alanı | Oturumlar arası temizlenir |
-| **Workspace klasörü (mnt/)** | Sizin kalıcı teslimat klasörünüz | Her zaman kalıcı |
-
-**Saklanmasını istediğiniz her şey** workspace klasöründe olmalıdır. Working directory, Claude'un karalama kâğıdıdır.
-
-## Dosya Boyutu Sınırları
-
+- **Sohbette:** dosya başına en çok 500 MB, sohbet başına en çok 20 dosya; PDF'de en çok 1000 sayfa (100 sayfaya kadar metin ve görsel, sonrası yalnız metin). Görselde mesaj başına 20 görsel, görsel başına 10 MB
+- **Projelerde:** proje dosyası başına 30 MB; dosya sayısı sınırsız ama bilgi tabanı bağlama sığmalıdır. Sınıra yaklaşınca Pro, Max, Team ve Enterprise'ta RAG modu kapasiteyi 10 kata kadar artırır
+- **Code execution'da:** dosya başına 30 MB (yükleme ve indirme)
 - Çok büyük dosyalar (1.000 sayfayı aşan raporlar, gigabyte'lık veri setleri) bağlam penceresine sığmayabilir. 200K bağlamlı Claude Haiku 4.5 ile yüzlerce sayfalık belgelerde de aynı sorun çıkar
 - Büyük dosyaları **parçalara bölün**: bölüm bölüm işletin
 - Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) [1M token bağlam](/wiki/temeller/modeller/) bu kısıtı büyük ölçüde gevşetir
-- Çok büyük veri için Claude bir Python betiği yazıp dosyayı her seferinde bir bölüm okuyarak işleyebilir
+- Çok büyük veri için Claude bir Python betiği yazıp dosyayı her seferinde bir bölüm okuyarak işleyebilir ([Code Execution](/wiki/yetenekler/code-execution/))
+
+## Türkiye'den Örnekler
+
+Aşağıdaki şirketler kurgusaldır. Muhasebe programlarına resmi bir connector olmadığı için en pratik yol dışa aktarılan dosyadır; ayrıntı [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasında.
+
+- **Logo dökümü:** Anadolu Yapı Market'in muhasebesi cari hesap dökümünü Excel ya da CSV olarak alır, Claude'dan vadesi geçmiş bakiyeleri tedarikçiye göre gruplamasını ister
+- **e-Fatura:** Ege Tekstil'in finans ekibi gelen fatura listesini Excel olarak, tek tek faturaları PDF olarak yükler; kategorileme ve mükerrer kayıt kontrolü yaptırır. e-Fatura XML (UBL) dosyalarını da yükleyebilirsiniz, ama büyük XML yerine liste halini deneyin ve önce 10-20 satırla test edin
+- **Banka ekstresi:** CSV ya da Excel çıktısı yüklenir, Claude hareketleri sınıflandırır; sonucu kendi kayıtlarınızla karşılaştırın
+
+Claude'un hazırladığı çıktı resmi belge değildir; resmi e-Fatura ve beyan çıktısını muhasebe programınız ve entegratörünüz üretir.
 
 ## İyi Çalışma Alışkanlıkları
 
-- **Proje bazlı alt klasörler:** workspace kökünde her büyük iş için ayrı klasör (`projeler/XYZ-teklif/`, `projeler/Q2-rapor/`). Claude klasör yapınızı görür ve mantıklı yere kaydeder.
-- **Ay başı arşiv:** eski projeleri `arsiv/` klasörüne taşıyın. Workspace kökü dağınık olmasın.
-- **CLAUDE.md kökte:** her zaman workspace'in kök dizininde durur. Claude oturumu başlatırken oradan okur.
+- **Proje bazlı klasörler:** Cowork'e klasör bağlıyorsanız her büyük iş için ayrı klasör kullanın (`projeler/Karadeniz-teklif/`, `projeler/Q2-rapor/`). Claude klasör yapınızı görür ve mantıklı yere kaydeder.
+- **Ay başı arşiv:** eski projeleri `arsiv/` klasörüne taşıyın, çalışma klasörü dağınık olmasın.
 - **Önemli dosyaları versiyonla:** `teklif-v1.docx`, `teklif-v2.docx` gibi. İterasyon geçmişi görünür olur.
+- **Yinelenen iş için Project:** aynı dosyalarla tekrar çalışıyorsanız dosyaları bir projeye koyun; her sohbette yeniden yüklemezsiniz.
 
 ## Gizlilik Notu
 
-Workspace klasöründeki dosyalar fiziksel olarak **sizin bilgisayarınızdadır**, Anthropic sunucularında değil. Cowork oturumunda Claude bu dosyaları işlerken içerik Anthropic'e geçer (işleme için), ama:
+Yüklediğiniz ya da Claude'un işlediği dosyanın içeriği, işlenmek üzere Anthropic'e geçer. Cowork'te yerel klasörde çalışsanız da bu böyledir. Sonrası plana bağlıdır:
 
-- **Team ve Enterprise planlarında** varsayılan olarak eğitim için kullanılmaz
+- **Team ve Enterprise planlarında** girdi ve çıktı varsayılan olarak eğitim için kullanılmaz
 - **Free, Pro ve Max planlarında** tüketici gizlilik ayarına bağlıdır, hesabınızda kontrol edin
 
-Detay için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
+Kişisel veri içeren dosyalar (bordro, müşteri listesi, kimlik belgesi) için önce [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## İlgili Sayfalar
 
 - [Skills](/wiki/yetenekler/skills/): Dosya üreten skill'ler (`docx`, `xlsx`, `pptx`, `pdf`)
-- [Artifacts](/wiki/yetenekler/artifacts/): Dosya olmayan canlı çıktılar
-- [Cowork Modu](/wiki/araclar/cowork-modu/): Workspace klasörünün yaşadığı ortam
+- [Artifacts](/wiki/yetenekler/artifacts/): Dosya olmayan interaktif çıktılar
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Klasör bağlama ve bulut görevleri
+- [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/): Logo, e-Fatura ve banka dökümleri
 - [Görsel ve Görüntü](/wiki/yetenekler/vision-image/): Görsel dosyalarla çalışmak
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Dosya gizliliği ve veri işleme
 

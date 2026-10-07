@@ -6,7 +6,7 @@ tags:
   - takim
   - admin
   - enterprise
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Bireysel Pro plan tek kişi içindir. Şirkette Claude'u 3, 6, 20 kişi kullanmaya başladığında işler farklılaşır**: fatura merkezileşir, kullanıcı yönetimi, denetim ve veri politikası ortak olur. Bunun için **Team** ve **Enterprise** planları var.
@@ -28,14 +28,13 @@ Bu sayfa Team ve Enterprise farkını, ne zaman geçilmeli ve admin panelinde ne
 | Harcama tavanı | Yok | ✅ | ✅ |
 | Audit log | Yok | Yok | ✅ Tam |
 | Saklama politikası özel | Yok | Yok | ✅ |
-| Fiyat | $20/kişi/ay | Standard $25/koltuk/ay (yıllıkta $20), Premium $125 (yıllıkta $100) | $20/koltuk/ay (yıllık faturalı) + kullanım API fiyatıyla ayrıca |
 | Onay süresi | Hemen | Hemen | Self-serve veya Anthropic ile görüşme |
 
 Team'de koltuk tipleri karıştırılabilir. Standard koltuk Pro'nun oturum başına kullanımının 1,25 katı, Premium koltuk 6,25 katıdır.
 
 Enterprise'ta koltuk ücreti kullanımı içermez; sohbet, Claude Code ve Cowork'teki her token API fiyatıyla ayrıca faturalanır. Bu yüzden aylık fatura sabit değildir, kullanıma göre değişir. Eski sözleşmelerde koltuk bazlı (standard/premium) Enterprise hâlâ görülebilir.
 
-Fiyatlar vergi hariçtir. Güncel hâli için [claude.com/pricing](https://claude.com/pricing) sayfasına bakın.
+Fiyatlar ve ekip maliyeti örneği tek yerde tutulur: [Claude Planları](/wiki/temeller/planlar/). Güncel hâli için [claude.com/pricing](https://claude.com/pricing) sayfasına da bakabilirsiniz.
 
 ## Ne Zaman Team / Enterprise'a Geçmeli?
 
@@ -57,14 +56,14 @@ Fiyatlar vergi hariçtir. Güncel hâli için [claude.com/pricing](https://claud
 
 ## Yeni Kullanıcı Plan Önerisi
 
-Claude'a yeni başlayan bir çalışan için **ilk ay Max 5x ($100/ay)** önerilir. Pro'nun limiti yeni kullanıcı için çabuk dolar, kişi "Claude çalışmıyor" deyip vazgeçer. Limitlerin nasıl işlediği için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
+Claude'a yeni başlayan bir kullanıcı için **ilk ay Max 5x** öneriyoruz; zorunlu değildir. Pro'nun limiti yeni kullanıcı için çabuk dolar, kişi "Claude çalışmıyor" deyip vazgeçer. Limitlerin nasıl işlediği için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
 
 İkinci aydan itibaren gerçek kullanım görüldükçe karma plana geçilebilir:
 
 - Yoğun kullanıcı (günde 4+ saat) → Max 5x veya Max 20x
 - Orta ve hafif kullanıcı (günde 1-3 saat veya daha az) → Pro
 
-Bu politika tek kişilik aboneliklerde de, Team veya Enterprise'a geçişte de geçerlidir. Ayrıntı: [Planlar](/wiki/temeller/planlar/).
+Bu öneri bireysel aboneliklerde geçerlidir. Şirket verisi işleyen ekipler için **Team planı zorunlu değildir; merkezi yönetim, faturalama ve veri kontrolü için öneriyoruz.** Team'e geçişte yeni başlayanın koltuk tipi (Standard ya da Premium) kullanım yoğunluğuna göre seçilir. Ayrıntı: [Planlar](/wiki/temeller/planlar/).
 
 ## Admin Paneli: Ne Yapar?
 
@@ -84,7 +83,7 @@ Team ve Enterprise planda **admin** rolü olan kullanıcı, claude.ai → **Orga
 - Toplam mesaj/sorgu hacmi (özet düzeyinde)
 - Hangi özellikler kullanılıyor (Cowork, [Projects](/wiki/araclar/projects/), [Connectors](/wiki/araclar/connectors/))
 
-**Önemli sınır:** Admin panelinde varsayılan olarak yalnız kullanım metrikleri görünür. Sohbet, dosya ve proje içeriğine programatik erişim veren Compliance API yalnızca Enterprise'tadır (Team'de yok) ve kapsamı sözleşmeye ile yapılandırmaya bağlıdır. Çalışanlarınıza neyin izlendiğini baştan söyleyin ([Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)).
+**Önemli sınır:** Admin panelinde varsayılan olarak yalnız kullanım metrikleri görünür. Sohbet, dosya ve proje içeriğine programatik erişim veren Compliance API yalnızca Enterprise'tadır (Team'de yok) ve kapsamı sözleşmeye ve yapılandırmaya bağlıdır. Çalışanlarınıza neyin izlendiğini baştan söyleyin ([Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)).
 
 ### Fatura ve Ödeme
 
@@ -102,6 +101,35 @@ Enterprise planda admin şu politikaları organizasyon çapında uygulayabilir:
 - **[MCP](/wiki/mcp/nedir/) izinleri**: özel MCP server'lar onaylı listede mi
 - **Sohbet paylaşma izni**: kullanıcılar dışarı public link üretebilsin mi
 - **Eğitim için veri kullanma**: zaten varsayılan olarak kapalı, ama Enterprise sözleşmesiyle pekiştirilir
+
+### Varsayılan Ayarlar ve Admin Anahtarları
+
+Aşağıdaki varsayılanlar 6 Ekim 2026 itibarıyla geçerlidir; Claude hızlı değiştiği için ayarı kendi panelinizde doğrulayın.
+
+| Özellik | Team | Enterprise | Admin ne yapar? |
+|---|---|---|---|
+| **Hafıza** (Generate memory from chats) | Varsayılan kapalı | Varsayılan kapalı | Owner kontrolünde; açarsanız sohbet ve Cowork arasında ortak çalışır, [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)'ya ekleyin |
+| **Claude Design, Slides, Docs** (beta) | Varsayılan açık | Owner açana kadar kapalı | Owner anahtarıyla açılır ya da kapatılır |
+| **Kod çalıştırma ve dosya oluşturma** | Açık, owner kapatabilir | Açık, owner kapatabilir | Kod çalıştırmada ağ erişimi varsayılan olarak kapalıdır |
+| **Cowork** | Tüm ücretli planlarda masaüstünde var | Admin etkinleştirmesi gerekebilir | Web ve mobil Cowork'te de admin açar |
+| **Microsoft 365 connector** | Owner açar | Owner açar | Teams mesajı gönderme gibi yazma araçlarını araç bazında açıp kapatır |
+| **Model yetkilendirme** | Duyuruda yalnız Enterprise | Var (1 Temmuz 2026) | Hangi modellerin kullanılabileceğini belirler |
+| **Claude Tag** (Slack'te Claude'u etiketleme) | Var | Var | Slack üzerinden Claude etiketlenir |
+| **Skill ve eklenti güvenlik taraması** (beta) | Duyuruda yalnız Enterprise | Var (6 Ağustos 2026) | Kurulacak skill ve eklentileri taratır |
+| **Compliance API, audit log, RBAC** | Yok (OpenTelemetry kısmi) | Var | Yalnız Primary Owner Compliance API'yi açar |
+
+Bu tablo, "Ne zaman Team'e geçmeli?" kararını da besler: kod çalıştırma ağı, hafıza ve Design anahtarları Team'de de var, ama model yetkilendirme, RBAC ve denetim kayıtları Enterprise'a özgü.
+
+### Örnek: 25 Kişilik Bir Türk Üretim Şirketi
+
+Varsayımsal örnek; kendi durumunuza uyarlayın. 25 kişi (yönetim, satış, ihracat, muhasebe, üretim planlama) Claude kullanacak, bir kişisel veri ve müşteri sözleşmesi akışı var.
+
+1. **Plan:** 25 koltuk Team'in sınırları içinde (en çok 150), Enterprise'ın self-serve alt sınırının (20 koltuk) da üstünde. Audit log, RBAC ya da özel saklama gerekmiyorsa Team yeter; gerekiyorsa Enterprise. Enterprise'ta kullanım API fiyatıyla ayrıca faturalandığı için aylık tutar sabit olmaz. Rakam örneği için [Claude Planları](/wiki/temeller/planlar/).
+2. **Kimlik:** SSO ve SCIM ile kurumsal e-postayla giriş, çalışan ayrılınca erişim otomatik kapanır.
+3. **Ayarlar:** Hafıza kapalı bırakılır (ihtiyaç doğarsa bilinçli açılır), kod çalıştırmada ağ kapalı kalır, M365 connector'ında Teams mesajı gönderme yetkisi gerekmedikçe kapalı tutulur.
+4. **Hukuk:** DPA ticari şartlara dahildir; kişisel veri girilecekse KVKK m.9 dayanağı ayrıca kurulur ([Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)).
+5. **Politika:** [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) imzalatılır, ilk hafta [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) ile başlanır.
+6. **Ölçüm:** 90 gün sonra [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) ile geri dönüş değerlendirilir.
 
 ## SSO: Tek Seferlik Giriş
 
@@ -177,8 +205,8 @@ Yeni bir çalışan organizasyona katıldığında:
 
 1. **Davet:** Admin paneli üzerinden e-posta davet
 2. **İlk giriş:** Çalışan hesabı kabul eder, Claude'a girer
-3. **Bireysel CLAUDE.md:** Kendi rol ve sorumluluklarını tanımlayan [CLAUDE.md](/wiki/claude-md/nedir/) yazsın
-4. **Team CLAUDE.md (varsa):** Şirket genelinde paylaşılan kural seti uygulansın ([Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/))
+3. **Bireysel talimat:** Kendi rol ve sorumluluklarını tanımlayan kısa bir profil talimatı (Settings > General > "Instructions for Claude") yazsın; masaüstünde klasörle çalışacaksa aynı metnin ayrıntılı hâlini [CLAUDE.md](/wiki/claude-md/nedir/) olarak klasörüne koysun
+4. **Şirket kural seti (varsa):** Şirket genelinde paylaşılan kurallar Team/Enterprise'ta paylaşılan proje talimatı ve (cihaz yönetimiyle yapılandırılan) kuruluş talimatı olarak verilir; kuruluş talimatı en çok 3.000 karakterdir (27 Ağustos 2026'dan beri), sohbet, Cowork ve Code oturumlarında geçerlidir ve zorlayıcı değil, modele yol gösterir. Ayrıntı: [Takım Kural Seti](/wiki/claude-md/takim-claude-md/), [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/)
 5. **Eğitim:** [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip etsin
 6. **Politika imzası:** [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) belgesini okusun ve onaylasın
 

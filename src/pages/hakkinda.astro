@@ -14,6 +14,12 @@ const personSchema = {
     '@type': 'Organization',
     name: 'Zamana',
     url: 'https://zamana.com.tr',
+    memberOf: {
+      '@type': 'ProgramMembership',
+      programName: 'Claude Partner Network (Registered)',
+      startDate: '2026-08-07',
+      hostingOrganization: { '@type': 'Organization', name: 'Anthropic', url: 'https://www.anthropic.com' },
+    },
   },
   birthDate: '1983-01-12',
   birthPlace: {
@@ -46,7 +52,21 @@ const personSchema = {
   hasCredential: [
     { '@type': 'EducationalOccupationalCredential', name: 'VMware VTSP' },
     { '@type': 'EducationalOccupationalCredential', name: 'VMware VCP' },
-    { '@type': 'EducationalOccupationalCredential', name: 'Anthropic Partner Programı' },
+    ...[
+      'Claude 101',
+      'Claude Code 101',
+      'Claude Code in Action',
+      'Introduction to Claude Cowork',
+      'Introduction to Subagents',
+      'Introduction to Agent Skills',
+      'Introduction to Model Context Protocol',
+      'AI Fluency Framework & Foundations',
+    ].map((name) => ({
+      '@type': 'EducationalOccupationalCredential',
+      name,
+      credentialCategory: 'Certificate of Completion',
+      recognizedBy: { '@type': 'Organization', name: 'Anthropic', url: 'https://www.anthropic.com' },
+    })),
   ],
   sameAs: [
     'https://www.linkedin.com/in/murat-%C3%B6zsayg%C4%B1l%C4%B1-59790865/',
@@ -149,8 +169,10 @@ const personSchema = {
           <div class="tl-year">2026 →</div>
           <div class="tl-body">
             <h3>Zamana Danışmanlık <span class="tl-role">Kurucu &amp; Baş Danışman</span></h3>
-            <p>Türkiye'nin kurumsal Claude eğitim ve danışmanlık şirketi. Bireysel ve kurumsal programlar, 12 farklı
-            departmana özel iş akışı eğitimi.</p>
+            <p>Türkiye'de kurumsal ve bireysel Claude eğitimi ve danışmanlığı veren şirket. Kurumsal, bireysel ve
+            yönetici programlarına ek olarak altı uzman program; kurumsal eğitimde 20 departman ve sektör için
+            hazırlanmış iş akışı blokları, wiki'de 20 departman ve sektör rehberi. Anthropic'in Claude Partner
+            Network programında Registered seviyesinde kayıtlı.</p>
           </div>
         </div>
 
@@ -158,8 +180,10 @@ const personSchema = {
           <div class="tl-year">2017 →</div>
           <div class="tl-body">
             <h3>Dış Ticaret <span class="tl-role">Tüccar &amp; Danışman</span></h3>
-            <p>Doğu Afrika'ya bebek bezi, kozmetik ve alüminyum profil ihracatı. Ardından Brezilya emtia ticareti:
-            üre, petrokimyasallar, kükürt, şeker, ayçiçek yağı, susam.</p>
+            <p>2017'den Covid-19 dönemine dek Doğu Afrika'ya Türk üreticilerinden bebek bezi, kozmetik ve
+            alüminyum profil ihracatı. 2021'de Dharma Dış Ticaret ile ortaklaşa Brezilya emtia ticareti. Pandemi
+            sonrasında odak emtia ve tarım ürünleri: üre, petrokimyasallar, kükürt, şeker, ayçiçek yağı, susam.
+            Şirketlere dış ticaret ve uluslararası pazarlama danışmanlığı.</p>
           </div>
         </div>
 
@@ -194,9 +218,9 @@ const personSchema = {
           <div class="tl-body">
             <h3>11 Dünya Overclock Rekoru <span class="tl-role">HWBOT (AbsoluteZero)</span></h3>
             <p>2010 yılında 11 farklı kategoride eş zamanlı dünya rekoru sahibiydim. İşlemcileri sıvı azotla
-            −120°C ve altına soğutarak gerçekleştirdiğim bu rekorlarla döneminde dünyanın en iyi overclock
-            uzmanları arasında gösterildim. Intel Pentium Extreme Edition 965 ile <strong>7.209,21 MHz</strong>,
-            Intel Core 2 Extreme QX9770 ile <strong>6.125,45 MHz</strong> rekorları güncel listelerde.</p>
+            −120°C ve altına soğutarak gerçekleştirdiğim bu rekorlarla döneminde <a href="https://hwbot.org/users/absolutezero?userProfileTab=submissions" target="_blank" rel="noopener">dünyanın en iyi overclock
+            uzmanları arasında</a> gösterildim. Intel Pentium Extreme Edition 965 ile <strong>7.209,21 MHz</strong>,
+            Intel Core 2 Extreme QX9770 ile <strong>6.125,45 MHz</strong> rekorları <a href="https://hwbot.org/users/absolutezero?userProfileTab=submissions" target="_blank" rel="noopener">güncel listelerde</a>.</p>
             <p class="tl-links">
               <a href="https://hwbot.org/users/absolutezero?userProfileTab=submissions" target="_blank" rel="noopener noreferrer">HWBOT Profili →</a>
               <a href="https://www.hurriyet.com.tr/gundem/intel-60-bin-kisiye-teknoloji-sovu-yapti-5076224" target="_blank" rel="noopener noreferrer">Hürriyet: CeBIT 2006 Intel Şovu →</a>
@@ -267,9 +291,10 @@ const personSchema = {
           <ul>
             <li>VMware VTSP (Technical Solutions Professional)</li>
             <li>VMware VCP (Certified Professional)</li>
-            <li>Anthropic Partner Programı (2026, devam ediyor)</li>
-            <li>Anthropic / Claude eğitim sertifikaları: Claude 101, Cowork, Skills, Subagents, MCP, Agent Skills,
-            AI Fluency Framework, Claude Code 101, Claude Code in Action</li>
+            <li>Claude Partner Network (Anthropic): Zamana, Registered seviyesinde kayıtlı partner (kayıt: 7 Ağustos 2026)</li>
+            <li>Anthropic Academy tamamlama sertifikaları (8 sertifika, Nisan 2026): Claude 101, Claude Code 101,
+            Claude Code in Action, Introduction to Claude Cowork, Introduction to Subagents, Introduction to Agent
+            Skills, Introduction to Model Context Protocol, AI Fluency Framework &amp; Foundations</li>
           </ul>
         </div>
       </div>

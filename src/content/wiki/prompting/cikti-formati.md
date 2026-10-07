@@ -1,11 +1,12 @@
 ---
 title: "Çıktı Formatı Kontrolü: Tablo, JSON, Markdown"
-description: "Claude'un çıktısını istediğiniz formata sokma. Tablo, JSON, madde listesi, markdown, pratik teknikler."
+seoTitle: "Claude'dan Tablo, JSON ve E-posta Formatında Çıktı"
+description: "Claude'dan tablo, JSON, e-posta, slayt ve madde listesi biçiminde kullanıma hazır çıktı almanın Türkçe örnekli pratik teknikleri."
 tags:
   - prompting
   - format
   - cikti
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Aynı içerik üç farklı formatta üç farklı kullanım değeri verir.** Tabloya yapıştırılması gereken veri madde listesi olarak gelirse 5 dakika daha kaybedersiniz. Bu sayfa Claude çıktısını istediğiniz formatta üretmenin pratik tekniklerini anlatır.
@@ -40,7 +41,7 @@ Format direktifi **her zaman netleştirilmeli:**
 
 ## 2. Tablo
 
-Claude markdown tablo üretir. Word/Google Docs'a yapıştırınca otomatik tabloya çevrilir; Excel'e yapıştırma için biraz daha çalışmak gerekir.
+Claude markdown tablo üretir. Word/Google Docs'a yapıştırınca otomatik tabloya çevrilir; Excel'e yapıştırma için biraz daha çalışmak gerekir. Tabloyu hiç yapıştırmadan doğrudan Excel dosyası da isteyebilirsiniz, aşağıda.
 
 **Talimat şablonu:**
 
@@ -65,6 +66,8 @@ ABC	1.000.000	üretim
 
 TSV (tab-separated) Excel'e doğrudan yapışır. CSV (virgül) yapışmaz çünkü Excel virgülü farklı yorumlar.
 
+**Hazır .xlsx dosyası isteyin.** Code execution ve dosya oluşturma açıkken (tüm planlarda, varsayılan olarak açık) Claude doğrudan indirilebilir bir `.xlsx` dosyası üretebilir; dosya başına sınır 30 MB. Örneğin: *"Bu müşteri listesini sütun başlıkları kalın, ciro sütunu para biçiminde bir Excel dosyası olarak ver."* Ayrıntı: [Code Execution](/wiki/yetenekler/code-execution/). Excel'in içinde çalışıyorsanız Claude'un Excel eklentisi de var, bkz. [Office ve Chrome](/wiki/araclar/office-ve-chrome/).
+
 ## 3. JSON
 
 Bir başka yazılıma (Python, Excel formül, başka bir API) verilecek veri için **JSON** ideal:
@@ -84,6 +87,8 @@ Sadece geçerli JSON döndür, başka yorum/açıklama yok.
 **Önemli:** "Sadece JSON, başka açıklama yok" demek kritik. Aksi halde Claude JSON'un başında ve sonunda paragraf ekleyebilir, bu da makine işlemeyi bozar.
 
 JSON şemasını net belirtin, Claude tahmin etmesin.
+
+> **Geliştiriciler için:** API'de JSON çıktısını metinle istemek yerine **structured outputs** kullanılabilir (genel kullanıma açık). `output_config.format` alanına `type: "json_schema"` ile bir şema verilir, araçlarda ise `strict: true` kullanılır; ikisi birlikte de kullanılabilir. Düşük effort'ta çok adımlı hesaplarda JSON'a ek olarak "Cevaptan önce problemi iyice düşün" satırı önerilir. İş kullanıcısı bu kutuyu atlayabilir.
 
 ## 4. Markdown
 
@@ -129,7 +134,7 @@ Bir e-posta üretiyorsanız format ekstra önemli, yapıştırılacak hâlde olm
 ```
 Şu format:
 
-Subject: [konu, 5-7 kelime]
+Konu: [konu, 5-7 kelime]
 
 Merhaba [İsim],
 
@@ -154,7 +159,7 @@ Slayt başına çıktı:
 
 # Slayt 1
 Başlık: [3-5 kelime]
-Subtitle: [opsiyonel]
+Alt başlık: [isteğe bağlı]
 İçerik:
 - Bullet 1 (max 8 kelime)
 - Bullet 2
@@ -273,17 +278,24 @@ Claude: doğrudan kullanılabilir 5 satırlık tablo
 
 ## 15. Kendi Format Şablonlarınız
 
-Sık yaptığınız her işin **bir favori format şablonu** olsun. CLAUDE.md'ye ekleyin:
+Sık yaptığınız her işin **bir favori format şablonu** olsun ve her seferinde yazmayın, kalıcı bir yere koyun:
+
+- **Tüm sohbetleriniz için:** profil talimatı ("Instructions for Claude", Settings > General).
+- **Tek bir iş için:** o işin [Claude Projesi](/wiki/araclar/projects/) talimatı.
+- **Cowork'te:** global talimat ya da klasör talimatı.
+- **Claude Code kullanıyorsanız:** CLAUDE.md dosyası (claude.ai sohbetinde okunmaz).
+
+Örnek içerik:
 
 ```markdown
 ## Çıktı Format Tercihlerim
 - Veri analizi → tablo + altında 3 cümle özet
-- Toplantı özeti → 5 bullet aksiyon listesi
-- Müşteri yanıtı → e-posta formatı (subject + body)
+- Toplantı özeti → 5 madde aksiyon listesi
+- Müşteri yanıtı → e-posta formatı (konu + gövde)
 - Karar matrisi → tablo + altında öneri paragrafı
 ```
 
-[Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasında rol bazlı format örnekleri var.
+Yer karşılaştırması: [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/). Claude Code'da rol bazlı örnekler için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/).
 
 ## İlgili Sayfalar
 
@@ -294,5 +306,6 @@ Sık yaptığınız her işin **bir favori format şablonu** olsun. CLAUDE.md'ye
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Format hataları
 - [Artifacts](/wiki/yetenekler/artifacts/): Görsel format çıktıları
 - [Skills](/wiki/yetenekler/skills/): Word/Excel/PPT dosya üretme
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md format kuralları
+- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat yerleri
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md format kuralları (Claude Code)
 

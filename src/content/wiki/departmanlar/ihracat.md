@@ -1,5 +1,6 @@
 ---
 title: "İhracat ve Uluslararası Ticaret: Claude Uygulamaları"
+seoTitle: "İhracatta Claude: LOI, FCO, SPA, LC ve Proforma Taslakları"
 description: "İhracat ve emtia ticareti için Claude: LOI, FCO, SPA, CIS, NCNDA, pazar istihbaratı, LC uyuşmazlıkları, Incoterms tutarlılığı, proforma fatura."
 tags:
   - departmanlar
@@ -9,7 +10,7 @@ tags:
   - spa
   - lc
   - incoterms
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Bu bölüm, Türkiye'den emtia ihracatı yapan firmalar için somut iş akışlarına odaklanır. Kükürt, bitümen, sepiyolit ve üre gibi emtiaların uluslararası ticareti, LOI/FCO/SPA aşamaları, akreditif yazışmaları ve gümrük süreçleri pratik örneklerle ele alınır.
@@ -130,7 +131,7 @@ Forward kontratlar, opsiyonlar veya swap'lar ile emtia fiyat riskini hedge eden 
 ## Kullanılacak Skills ve Connector'lar
 
 **Skills:**
-- **`foreign-trade`**: birincil skill (LOI, SPA, CIS, NCNDA ve diğerleri)
+- **Kendi dış ticaret skill'iniz**: LOI, SPA, CIS, NCNDA gibi belgeleri şirketinizin şablonlarıyla üreten, sizin yazdığınız skill (hazır gelmez; nasıl yazılır: [Skills](/wiki/yetenekler/skills/))
 - Web search: pazar istihbaratı, pazar haberleri, fiyat referansları
 - `docx`, `pdf`: ticaret belgeleri
 - `xlsx`: fiyat ve miktar takibi
@@ -145,6 +146,12 @@ Forward kontratlar, opsiyonlar veya swap'lar ile emtia fiyat riskini hedge eden 
 - **Ticaret sorgu → teklif döngüsü**: sorgu alındı → LOI / FCO taslandı → pazarlık → SPA execute edildi
 - **Pazar istihbarat raporu üretimi**: haftalık / aylık emtia brifingleri
 - **LC belge hazırlığı ve uyuşmazlık yönetimi**: tüm LC süreci
+
+## Sık Hatalar
+
+- **SPA madde hatası:** Bağlayıcı sözleşmede yanlış bir madde gerçek para kaybettirir. Claude'un taslağını her zaman tüccar ve hukuk müşaviri inceler.
+- **Yaptırım listeleri:** Claude güncel yaptırım listelerini bilmiyor olabilir. Alıcıyı ve ülkeyi OFAC, AB ve BM listelerinden ayrıca kontrol edin.
+- **Banka enstrümanı dili:** LC, MT760, MT799 gibi mesajların dili çok özeldir. Claude'un taslağını bankanın kendi şablonuyla kıyaslamadan göndermeyin.
 
 ## Gerçek Örnek: LOI Hazırlığı
 
@@ -163,10 +170,13 @@ Bir alıcı Akmin'e e-posta gönderdi: "200 ton sepiyolit, Kıbrıs limanı tesl
 
 Toplam süre: yaklaşık 12 dakika (örnek senaryo). Geleneksel süreç: eski LOI'yi kopyalayıp uyarlayarak 1-1,5 saat.
 
+**Süre:** LOI için elle 60-90 dakika, Claude ile 15-20 dakika (tüccar kontrolü dahil; hukuk incelemesi ayrı). Yabancı dilde alıcı yazışmasında kazanç daha büyük olabilir: bir vakada satış müdürünün 4 saat süren Almanca ve Rusça yazışması 15 dakikaya inmiş ([ölçüm vakaları](/wiki/temeller/olcum-metrikleri/)). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
 ## İlgili Sayfalar
 
-- [Skills](/wiki/yetenekler/skills/): `foreign-trade` skill detayları
+- [Skills](/wiki/yetenekler/skills/): kendi dış ticaret skill'inizi yazmak
 - [Hukuk ve Uyum](/wiki/departmanlar/hukuk/): Uluslararası sözleşme inceleme
 - [Finans ve Muhasebe](/wiki/departmanlar/finans/): FX ve hedge anlatısı
 - [Satış ve İş Geliştirme](/wiki/departmanlar/satis/): Alıcı yönetimi
+- [İhracatçılar için Claude programı](/programlar/ihracatcilar/): teklif, proforma, yabancı dilde yazışma ve belge kontrolü üzerine uygulamalı eğitim
 

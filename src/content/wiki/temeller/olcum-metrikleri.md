@@ -6,7 +6,7 @@ tags:
   - olcum
   - roi
   - metrikler
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **"Claude işe yaradı mı?" sorusunun cevabı duygusal değil sayısal olmalı.** Çoğu şirket Claude'u 6 ay kullanıyor, faydasını "hissediyor" ama ölçemiyor. İlk yıl sonunda yenileme kararı tartışmalı oluyor. Bu sayfa bunu önler.
@@ -110,8 +110,8 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 **Örnek hesap, İlk 6 ay (6 kişilik şirket):**
 
 - 6 çalışan × 8 saat/hafta × 26 hafta = 1.248 saat
-- Saatlik yüklü maliyet 500 ₺ → tasarruf = 624.000 ₺
-- Claude Max 5x maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺)
+- Saatlik yüklü maliyet 500 ₺ (örnek varsayım; kendi değerinizle hesaplamak için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/)) → tasarruf = 624.000 ₺
+- Claude Max 5x maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺, kur varsayımı: $1 ≈ 40 ₺, Ekim 2026)
 - Eğitim/danışmanlık (örn. 300.000 ₺, KDV hariç)
 - İç eğitim zamanı (~80 saat × 500 ₺ = 40.000 ₺)
 - Toplam yatırım: ~484.000 ₺
@@ -123,11 +123,11 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 
 - 6 çalışan × 8 saat/hafta × 26 hafta = 1.248 saat
 - Saatlik yüklü maliyet 500 ₺ → tasarruf = 624.000 ₺
-- Claude Max 5x maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺)
+- Claude Max 5x maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺, aynı kur varsayımı: $1 ≈ 40 ₺, Ekim 2026)
 - Toplam yatırım: ~144.000 ₺
 - **ROI: (624.000 - 144.000) / 144.000 = ~%333 ikinci 6 ayda**
 
-**Not:** Saatlik yüklü maliyeti ve kuru kendi değerlerinizle değiştirip yeniden hesaplayın. Hesabın ayrıntısı [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarında.
+**Not:** Bu örnekte Max 5x seçildi, bu bir zorunluluk değil. Ekip için hangi planın hangi maliyete geldiği [Planlar](/wiki/temeller/planlar/) sayfasında. Saatlik yüklü maliyeti, planı ve kuru kendi değerlerinizle değiştirip yeniden hesaplamak için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) sayfasını kullanın. Hesabın ayrıntısı [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarında.
 
 ## Ölçüm Disiplini: Kim, Nasıl, Ne Sıklıkla
 
@@ -177,7 +177,7 @@ Bu döngü kalıcı adaptasyonun temelidir.
 
 Yönetim raporlarında tek satırlık özet için:
 
-> *"6 kişiyle 6 ayda 1.250 saat kazanım. Yatırım yaklaşık 544 bin TL, getiri yaklaşık 624 bin TL. İkinci altı ayda yalnızca abonelik maliyeti kaldığı için ROI üç haneli."*
+> *"6 kişiyle 6 ayda 1.250 saat kazanım. Yatırım yaklaşık 484 bin TL, getiri yaklaşık 624 bin TL. İkinci altı ayda yalnızca abonelik maliyeti kaldığı için ROI üç haneli."*
 
 Detayları [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Finans Departmanı](/wiki/departmanlar/finans/) sayfaları derinleştirir.
 
@@ -185,6 +185,8 @@ Detayları [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Finans Departman�
 
 - [Yaygın İtirazlar](/wiki/temeller/itirazlar/): Finans direktörü itirazlarına detay
 - [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): Maliyet tarafının muhasebesi
+- [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): Kendi rakamlarınızla ROI hesabı
+- [Pilottan Yaygınlaştırmaya](/wiki/temeller/pilot-ve-yayginlastirma/): Ölçümü pilot ve yayılım sürecine bağlamak
 - [Planlar](/wiki/temeller/planlar/): Plan maliyetleri
 - [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Admin paneli üzerinden kullanım metriği
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Ölçüm politikasını yazıya dökme

@@ -1,104 +1,91 @@
 ---
 title: İleri Seviye Prompt Engineering
-description: "XML tag'leri, few-shot prompting, prompt chaining, adaptif düşünme, temellerden sonra çıktı kalitesini katlayan teknikler."
+seoTitle: "İleri Prompt Teknikleri: XML Etiketi, Zincirleme, Eleştirmen"
+description: "XML etiketi, uzun belge düzeni, zincirleme, eleştirmen ve düşünme derinliği: temel ilkelerden sonra çıktı kalitesini artıran Claude prompt teknikleri."
 tags:
   - prompting
   - ileri-seviye
   - xml-tags
   - few-shot
   - prompt-chaining
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-[Prompting temel ilkelerini](/wiki/prompting/temel-ilkeler/) öğrenen çalışan iş çıktılarının %80'ini zaten kapsamış olur. Kalan %20, iyi olmayı mükemmele yaklaştıran ileri tekniklerdir.
+[Prompting temel ilkelerini](/wiki/prompting/temel-ilkeler/) oturtmuş bir çalışan, günlük iş çıktılarının büyük bölümünü zaten karşılar. İleri teknikler kalan farkı kapatır: karmaşık girdiyi düzenler, uzun işi parçalar, çıktıyı göndermeden önce sınar.
 
-Bu sayfa tutarlı biçimde üstün çıktı üreten 8 tekniği anlatır. Kaliteli prompt kütüphaneleri kurmanın bel kemiği olan bilgi.
+Bu sayfa, temel ilkelerdeki kısa anlatımların **derin** halidir (zincirleme, eleştirmen, bağlam önce). Few-shot ve çıktı formatı kendi sayfalarında ayrıntılı anlatılır, burada yalnız özetlenir. Kaliteli bir prompt kütüphanesi kurmanın da zemini bu tekniklerdir.
 
-## 1. XML Tag'leri: Claude'un Yapısal Dili
+## 1. XML Etiketleri: Karmaşık Promptun Yapısı
 
-XML tag'leri, Claude'un karmaşık promptları ayrıştırmak için tercih ettiği formattır. Markdown (görsel) değil, **anlamsal** sınırlar çizer. Talimat, bağlam, örnek ve girdi karıştığında XML yanlış yorumlamayı önler.
+XML etiketleri, uzun bir promptta talimatı, bağlamı, örneği ve değişen girdiyi birbirinden ayırır. Markdown gibi görsel değil, **anlamsal** sınır çizer: Claude hangi bölümün talimat, hangisinin üzerinde çalışılacak içerik olduğunu karıştırmaz.
 
 **Kullanım örneği:**
 
 ```xml
-<context>
+<baglam>
 Bir lojistik şirketinin operasyon yöneticisine yardım ediyorsun. Şirket
 Türkiye'de endüstriyel kimyasal sevkiyatı yapıyor.
-</context>
+</baglam>
 
-<task>
+<gorev>
 Aşağıdaki durum için bir tedarikçi gecikme bildirimi e-postası yaz.
-</task>
+</gorev>
 
-<situation>
+<durum>
 {{DURUM}}
-</situation>
+</durum>
 
-<constraints>
+<kisitlar>
 - Resmi Türkçe iş tonu
 - Özür yok, olgu ve çözüm odaklı
 - 150 kelimenin altında
 - Önerilen yeni teslim tarihini dahil et
-</constraints>
+</kisitlar>
 ```
 
-**İş kullanımı için önerilen tag isimleri:**
+**İş kullanımında sık görülen etiketler:**
 
-- `<context>`: arka plan ve durum
-- `<task>`: ne istediğiniz
-- `<document>` veya `<input>`: Claude'un üzerinde çalışacağı içerik
-- `<constraints>`: kaçınılacak, format gereksinimleri, uzunluk
-- `<example>`: takip edilecek örnek çıktı
-- `<output_format>`: cevabın tam yapısı
+- `<baglam>`: arka plan ve durum
+- `<gorev>`: ne istediğiniz
+- `<belge>` veya `<girdi>`: Claude'un üzerinde çalışacağı içerik
+- `<kisitlar>`: kaçınılacaklar, biçim gereksinimleri, uzunluk
+- `<ornek>`: takip edilecek örnek çıktı
+- `<cikti_formati>`: cevabın tam yapısı
 
-**Altın kural:** Uzun belgeleri ve bağlamı **talimatların ÜSTÜNE** koyun. Soruyu en sona yazın. Bu yapı karmaşık görevlerde çıktı kalitesini %30'a kadar artırır.
+**Etiket adları serbesttir.** Anthropic'in prompt rehberi `<instructions>`, `<context>`, `<input>` gibi adları yalnız örnek olarak verir ve tek şart olarak tutarlı, açıklayıcı adlar kullanmayı söyler. Zorunlu bir ad listesi yok. Bu yüzden Türkçe etiket kullanabilirsiniz (bu bir çıkarımdır, rehber Türkçe etiketten söz etmiyor); önemli olan promptun başından sonuna aynı adı aynı işte kullanmak. Hiyerarşik içeriği iç içe etiketle koyun. Birden çok belge varsa her birini `<belge>` içine koymak da rehberin önerisidir.
 
-## 2. Few-Shot Prompting: Örneklerle Öğretme
+### Uzun Belgelerde Düzen
 
-Claude'a iyi çıktının nasıl göründüğünü **tarif etmek** yerine **göstermek** daha güvenilirdir. 2-5 örneği `<examples>` tag'leri içinde verin.
+Yirmi bin token'ı aşan uzun girdilerde (birkaç yüz sayfalık sözleşme, ihale dosyası, çok belgeli bir paket) üç alışkanlık fark yaratır:
 
-Örnekler üç kriteri karşılamalı:
+1. **Belgeyi başa, sorunuzu en sona koyun.** Uzun veri promptun üst kısmında, talimat ve soru altında olsun. Anthropic, sorguyu sona koymanın özellikle karmaşık, çok belgeli girdilerde yanıt kalitesini testlerinde **en çok %30'a kadar** artırabildiğini söylüyor. Bu, uzun belge girdisi için verilmiş bir test sonucudur; kısa bir promptta aynı etkiyi beklemeyin.
+2. **Önce ilgili alıntıları çıkarttırın, sonra cevaplatın.** "Önce soruyla ilgili bölümleri `<alintilar>` içine al, sonra yalnız bu alıntılara dayanarak cevapla." Cevap tüm belge yerine seçilmiş parçalara dayanınca doğrulaması kolaylaşır ve uydurma riski düşer.
+3. **"Belgede yoksa yok de" deyin.** Cevabın belgede bulunmadığı durumda bunu açıkça söylemesini yazın; aksi halde Claude boşluğu makul görünen bir cümleyle doldurabilir.
 
-- **Alakalı:** gerçek kullanım senaryonuzla yakın eşleşme
-- **Çeşitli:** sınır durumları ve varyasyonları kapsamalı
-- **Yapılı:** talimatlardan ayrılabilecek şekilde etiketlenmeli
+Sözleşme, şartname ve Excel ile adım adım çalışma örnekleri için [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/) sayfasına bakın.
 
-**Örnek yapı:**
+## 2. Few-Shot: Örnekle Öğretme
 
-```xml
-<examples>
-<example>
-<input>Müşteri gecikmeden şikayet etti</input>
-<output>Sayın [İsim], siparişinizin gecikmesi konusundaki bilginiz için
-teşekkür ederiz. Yeni tahmini teslimat tarihiniz [Tarih]'tir. Herhangi
-bir sorunuz için [İletişim] aracılığıyla bize ulaşabilirsiniz.</output>
-</example>
+Claude'a iyi çıktının nasıl göründüğünü **tarif etmek** yerine **göstermek** çoğu zaman daha tutarlıdır. Rehber en iyi sonuç için 3-5 örnek önerir; örnekler ilgili ve çeşitli olmalı, `<ornekler>` gibi bir etiketle talimattan ayrılmalı.
 
-<example>
-<input>Ürün hasarlı geldi</input>
-<output>Sayın [İsim], ürününüzün hasarlı ulaştığını duymak bizi üzdü.
-Aynı gün kargoyla yenisini gönderiyoruz, takip numaranız [NO]. Hasarlı
-ürünü iade etmenize gerek yok.</output>
-</example>
-</examples>
-```
+Örnek seçimi, sınır vakaları, yanlış örnek etiketleme ve many-shot için [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) sayfasına bakın.
 
-Bu yaklaşım, 20 paragraflık bir talimat listesinden çok daha tutarlı çalışır.
+## 3. Zincirleme Düşünme: Güncel Modellerde Ne Değişti?
 
-## 3. Zincirleme Düşünme (Chain-of-Thought)
+Eskiden karmaşık işlerde "adım adım düşün" demek ana kaldıraçtı. Güncel modellerde (Sonnet 5.5, Opus 5.5, Fable 5.1) Thinking claude.ai'de **kapatılamıyor**; yani akıl yürütme zaten çalışıyor. Anthropic'in rehberi Thinking açıkken elle yazılmış adım planı yerine **genel talimatı** önerir: Claude'un akıl yürütmesi çoğu zaman sizin tarif edeceğiniz adımları aşıyor.
 
-Karmaşık analiz gerektiren görevlerde Claude'dan **önce düşünmesini, sonra cevap vermesini** isteyin.
+**Zayıf (adımları siz dayatıyorsunuz):**
+> *"Önce şunu hesapla, sonra bunu karşılaştır, sonra üçüncü adımda..."*
 
-**Basit tetikleyici:**
-> *"Cevaptan önce bunu dikkatle düşün."*
+**Güçlü (önemi ve ölçütü söylüyorsunuz):**
+> *"Bu yüksek riskli bir bütçe kararı. Cevaptan önce tüm etkileri iyice düşün."*
+> *"Yazmadan önce bilmem gereken en önemli üç şeyi belirle. Sonra yaz."*
 
-**Yapılandırılmış tetikleyici:**
-> *"Akıl yürütmeni adım adım özetle, sonra sonucunu ver."*
+İşe yarayan şey **neyin doğru sayılacağını** söylemektir: kriterler, kısıtlar, "bitirmeden önce sonucu şu ölçüte göre doğrula" gibi bir kontrol cümlesi. Kod ve matematik gibi işlerde böyle bir kapanış kontrolü hata yakalar.
 
-**Analiz görevleri için:**
-> *"Yazmadan önce bilmem gereken 3 en önemli şeyi belirle. Sonra yaz."*
+**Elle zincirleme düşünce yedektir.** "Cevaptan önce adım adım düşün, son yanıtı `<cevap>` etiketine koy" yöntemi, Thinking'in kapalı olduğu durumlar için hâlâ geçerli. Akıl yürütmeyi yanıt metnine dökmesini istemek ise bazı modellerde reddedilebilir; ihtiyacınız olan şey denetlenebilir bir gerekçeyse "sonuca hangi verilerle vardığını kısaca açıkla" demek daha güvenli bir yoldur.
 
-Bu, muhakemeyi görünür kılar: hem kalite artar hem de hata kaynağı tespit edilebilir olur.
+Düşünmeyi derinleştirmek ya da hızlandırmak için promptun yanında ayara da bakın: bölüm 7.
 
 ## 4. Claude'u Eleştirmen Yapmak
 
@@ -108,33 +95,13 @@ Bu, muhakemeyi görünür kılar: hem kalite artar hem de hata kaynağı tespit 
 > *"Talepkâr bir CEO rolüne gir. Bu rapor cevaplamadığı hangi soruyu sorar?"*
 > *"Bu müzakerede karşı taraf rolünde davran. Bizim karşı teklifimizin ele almadığı hangi manivelaları var?"*
 
-İyi bir çalışan, önemli bir çıktıyı göndermeden önce bu eleştirmen turunu mutlaka yapar.
+İyi bir çalışan, önemli bir çıktıyı göndermeden önce bu eleştirmen turunu mutlaka yapar. Eleştirinin ardından "bu üç zayıflığı gidererek metni yeniden yaz" demek ikinci adımdır; bu iki adımlı akış küçük bir zincirdir (bölüm 6).
 
 ## 5. Çıktı Formatını Açıkça Kontrol Etme
 
-Claude'a ne format istediğinizi **tahmin bırakmayın**. Format talimatları **spesifik ve pozitif** olduğunda en iyi çalışır, sadece "yapma"larla değil, "yap"larla.
+Format talimatı **spesifik ve olumlu** olduğunda en iyi çalışır: "madde işareti kullanma" yerine "akıcı paragraflar halinde yaz, başlık yok", "daha kısa yap" yerine "en fazla 200 kelime, tek paragraf, önsöz yok".
 
-**Zayıf:**
-> *"Madde işareti kullanma"*
-
-**Güçlü:**
-> *"Akıcı paragraflar halinde yaz. Madde işareti yok, başlık yok. Resmi iş dili."*
-
-**Zayıf:**
-> *"Daha kısa yap"*
-
-**Güçlü:**
-> *"Maksimum 200 kelime. Tek paragraf. Önsöz yok: doğrudan ana noktayla başla."*
-
-**Yapılandırılmış çıktı için:** Tam yapıyı söyleyin:
-
-```text
-Cevabını tam olarak şu formatta ver:
-
-ÖZET: [Tek cümle]
-TEMEL BULGULAR: [3 madde]
-ÖNERİLEN EYLEM: [Tek somut tavsiye]
-```
+Tablo, JSON, e-posta, slayt ve kısa cevap şablonları için [Çıktı Formatı](/wiki/prompting/cikti-formati/) sayfasına bakın.
 
 ## 6. Prompt Chaining: Karmaşık Görevleri Adımlara Bölmek
 
@@ -148,9 +115,9 @@ TEMEL BULGULAR: [3 madde]
 
 Bu yaklaşım *"Türk tüccar için kükürt piyasası trendleri üzerine stratejik rapor yaz"* promptundan çok daha iyi sonuç verir. Çünkü her adımda Claude'un dikkati fokuslu kalır ve siz her adımda ara kontrol yapabilirsiniz.
 
-## 7. Adaptif Düşünme: Claude'a Ne Kadar Sıkı Düşüneceğini Söylemek
+## 7. Düşünme Derinliği: Prompt mu, Effort mu?
 
-Karmaşık görevlerde Claude'a daha derin düşünmesini açıkça söyleyebilirsiniz:
+Karmaşık görevlerde Claude'a daha derin düşünmesini cümleyle söyleyebilirsiniz:
 
 > *"Cevaptan önce tüm etkileri dikkatle düşün."*
 > *"Bu yüksek riskli bir karar. Titizlikle akıl yürüt."*
@@ -160,7 +127,11 @@ Basit görevlerde tersini söyleyin:
 
 > *"Doğrudan cevapla. Akıl yürütmeni açıklamana gerek yok."*
 
-Bu, nasıl çalışmasını değil, işten ne kadar özen beklediğinizi iletir.
+Bu cümleler nasıl çalışacağını değil, işten ne kadar özen beklediğinizi iletir. Ama düşünme derinliğinin asıl ayarı artık cümle değil **Effort**'tur. claude.ai'de gönder düğmesinin yanındaki model adına tıklayınca model, Effort (Low'dan Max'e beş kademe) ve Thinking ayrı ayarlar olarak görünür. Rutin işte düşük, zor karar ve analizde yüksek Effort seçin; yüksek Effort kullanım limitinizi daha hızlı tüketir. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
+
+Pratik sıra: önce **ne istediğinizi ve neyin doğru sayılacağını** netleştirin, sonra gerekirse Effort'u yükseltin.
+
+> **Geliştiriciler için:** API'de derinlik `output_config.effort` ile ayarlanır, Thinking ise ayrı bir `thinking` alanıdır. Opus 5.5'te `thinking` alanını `disabled` yapmak her kademede hata verir (400).
 
 ## 8. "Bağlam Önce": İleri Seviye
 
@@ -183,9 +154,13 @@ Bir prompt kütüphanesi, sizin tarafınızdan test edilmiş ve iyileştirilmiş
 - **Kullanım notu:** Ne zaman kullanılır, neyi ayarlamak gerekir
 - **Son kullanım/güncelleme tarihi**
 
-**Cowork'te kütüphane:**
+**Kütüphane nerede yaşasın?**
 
-Çalışma klasörünüzde bir `prompts/` klasörü oluşturun. Her prompt ayrı bir `.md` dosyası olsun; Claude bu kütüphaneden talep üzerine okuyabilir. (Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor, ancak klasörle çalışma masaüstü uygulamasında sürüyor.)
+En uygun yer bir [Claude Projesi](/wiki/araclar/projects/): prompt metinlerini proje talimatına ya da proje dosyalarına (`.md`) koyarsınız, projedeki sohbetlerde Claude'un elinde olur. Proje talimatı yalnız o projede geçerlidir; tüm sohbetlerinizi ilgilendiren genel tercihler için profil talimatı ("Instructions for Claude", Settings > General) ayrıdır, ayrıntı [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasında.
+
+Bilgisayarınızdaki bir `prompts/` klasörü bu iş için artık iyi bir tercih değil. Cowork'te yeni görevler bulutta çalışıyor ve bulut oturumu yerel klasöre doğrudan erişemiyor; Claude Desktop'ın açık ve bağlı olması, klasörün elle eklenmesi gerekiyor.
+
+**Sık kullandığınız bir prompt varsa onu [Skill](/wiki/yetenekler/skills/)'e çevirin.** Skill, Claude ilgili gördüğünde kendiliğinden yüklenir; her seferinde prompt'u yapıştırmanız gerekmez.
 
 **Tipik hedefler:**
 
@@ -198,7 +173,7 @@ Prompt kütüphanesi en somut ve en değerli varlıklardan biridir. Yöntemi ve 
 
 Dürüst cevap: **orta düzeyde**.
 
-İleri teknikler çıktı kalitesini artırır, ama temel ilkeleri atlayıp XML tag'leri öğrenmek boşa yatırımdır. Temeller sağlam olduğunda, ileri teknikler doğal olarak ince ayar sağlar.
+İleri teknikler çıktı kalitesini artırır, ama temel ilkeleri atlayıp XML etiketlerini öğrenmek boşa yatırımdır. Temeller sağlam olduğunda, ileri teknikler doğal olarak ince ayar sağlar.
 
 Önerilen sıralama:
 
@@ -212,6 +187,10 @@ Bir haftada üçü birden öğrenilmez. Bir ayda oturur.
 
 - [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/): Bu sayfanın ön koşulu
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Kavramsal zemin
+- [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle öğretme
+- [Çıktı Formatı](/wiki/prompting/cikti-formati/): Tablo, JSON, e-posta formatları
 - [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/): Hata tipleri ve düzeltmeleri
-- [Cowork Modu](/wiki/araclar/cowork-modu/): Prompt kütüphanenin yaşadığı ortam
+- [Projects](/wiki/araclar/projects/): Prompt kütüphanesinin yeri
+- [Skills](/wiki/yetenekler/skills/): Sık kullanılan promptu yeniden kullanılabilir hale getirme
+- [Effort Kontrolü](/wiki/yetenekler/effort-control/): Düşünme derinliğinin ayarı
 

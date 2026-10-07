@@ -1,12 +1,13 @@
 ---
 title: Sohbet Geçmişi, Arama ve Dışa Aktarma
-description: "Claude'da sohbet geçmişi nasıl yönetilir? Arama, klasörleme, silme, dışa aktarma, günlük disiplin tavsiyeleri."
+seoTitle: "Claude Sohbet Geçmişi: Arama, Silme ve Dışa Aktarma"
+description: "Claude'da sohbet geçmişi nasıl aranır, silinir, dışa aktarılır? Projects ile düzen, hafıza, Team'e geçişte neler taşınır, günlük disiplin."
 tags:
   - araclar
   - gecmis
   - arama
   - export
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Claude'u haftalarca aktif kullanan biri için, sohbet geçmişi hızla bir bilgi arşivine dönüşür.** Onu yönetmemek, geçmişte değerli üretimleri kaybetmek demektir.
@@ -39,12 +40,12 @@ Arama özellikleri:
 
 ## Klasörleme: Projects ile
 
-Claude'da geleneksel klasör sistemi yok; **organize etmenin yolu [Projects](/wiki/araclar/projects/) kullanmaktır.** Bir proje açarsınız (örn. "ABC Müşterisi"), o projeyle ilgili tüm sohbetleri o projenin içinde tutarsınız.
+Claude'da geleneksel klasör sistemi yok; **organize etmenin yolu [Projects](/wiki/araclar/projects/) kullanmaktır.** Bir proje açarsınız (örn. "Ege Tekstil Müşterisi"), o projeyle ilgili tüm sohbetleri o projenin içinde tutarsınız.
 
 Faydaları:
 
 - Proje içi sohbetler ayrı arşivde
-- Projeye özel CLAUDE.md / talimat
+- Projeye özel talimatlar (proje talimatları)
 - Projeye yüklediğiniz dosyalar tüm sohbetlerde erişilebilir
 - Arama proje bazlı daraltılabilir
 
@@ -65,7 +66,7 @@ Bir sohbeti silmek isterseniz: sohbetin yan menüsündeki **Delete** seçeneği.
 
 ## Dışa Aktarma (Export)
 
-Claude verilerinizin tamamını indirebilmenizi sağlar. KVKK'da kullanıcının hakkı olan **veri taşınabilirliği** bu şekilde karşılanır.
+Claude verilerinizin tamamını indirebilmenizi sağlar. Kendi verilerinize erişmenin pratik yolu budur. Hukuki tarafta, kişisel verilerinize ilişkin bilgi talep hakkı KVKK m.11 kapsamındadır; ayrıntı için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
 **Nasıl yapılır:**
 
@@ -79,6 +80,16 @@ Claude verilerinizin tamamını indirebilmenizi sağlar. KVKK'da kullanıcının
 - Yıllık arşiv yedeği
 - Şirketten ayrılırken (eğer sohbetler kişisel hesaptaysa) kişisel arşiv
 - Şirkete sözleşme/denetim için sunulacak bir veri raporu
+
+### Hafızayı içe ve dışa aktarma
+
+Sohbet geçmişinden ayrı olarak Claude'un **hafızası** da vardır. Hafıza içe ve dışa aktarma 2 Mart 2026'dan beri Free dahil tüm planlarda sunuluyor; ayar **Settings → Memory** altında ("Generate memory from chats"). Başka bir yapay zekâ aracındaki tercihlerinizi Claude'a taşımak ya da Claude'daki hafızanızı yedeklemek için bu yolu kullanın. Team ve Enterprise'ta hafıza yönetici kontrolündedir. Hafızanın işleyişi için [Memory](/wiki/yetenekler/memory/).
+
+## Sık Sorulan Sorular
+
+**Claude geçmiş sohbetlerimi arayıp kullanabilir mi?** Evet, Claude'un sohbet arama özelliği geçmiş konuşmalarınıza başvurup önceki bağlamdan yararlanabilir; Anthropic bunu hafıza özelliğiyle birlikte anlatıyor. Kapsamı planınıza ve ayarlarınıza göre değişebilir, kendi hesabınızda "geçen ay X için ne konuşmuştuk?" diye sorup deneyin. Bu, yukarıdaki arama kutusundan ayrıdır: arama kutusunda siz ararsınız, sohbet aramada Claude arar.
+
+**Kişisel hesabımı Team'e geçirirsem sohbetlerim taşınır mı?** Hesabı yerinde yükseltirseniz sohbetler, artifact'ler, projeler (Cowork dahil), dosyalar, hafıza (kuruluş kapatmadıysa) ve tercihler taşınır. Taşınmayanlar: özel skill'ler, uygulama yetkilendirmeleri, özel connector'lar, yayınlanmış artifact'ler, halka açık paylaşım linkleri ve yerel Cowork/Claude Code oturumları. "Kişisel hesabımı ayrı tut" seçeneğini seçerseniz eski sohbetler kişisel hesapta kalır. Ekip tarafı için [Takım ve Admin](/wiki/temeller/takim-ve-admin/).
 
 ## Paylaşım
 

@@ -4,10 +4,10 @@ description: "Claude'un ne olduğu, hangi modelin ne zaman kullanıldığı, fiy
 tags:
   - temeller
   - giris
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken temel kavramlar. İlk altı kart, Claude'la çalışmaya başlayan bir profesyonelin doğal olarak sorduğu altı sorunun cevabını verir; sonraki kartlar kurulum, ilk hafta ve itirazlar gibi pratik konulardır. İlk altı kartı sırasıyla okursanız bir saatten kısa sürede temel kavrayışa ulaşırsınız.
+Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken temel kavramlar. İlk altı kart, Claude'la çalışmaya başlayan bir profesyonelin doğal olarak sorduğu altı sorunun cevabını verir; sonraki kartlar kurulum, ilk hafta ve itirazlar gibi pratik konulardır; "Şirkette Uygulama" başlığı ise ekip ve şirket ölçeğine geçenler içindir. İlk altı kartı sırasıyla okursanız bir saatten kısa sürede temel kavrayışa ulaşırsınız.
 
 ## Başlangıç Yolu
 
@@ -103,13 +103,45 @@ Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken teme
 
 </div>
 
+## Şirkette Uygulama
+
+Bireysel kullanımı oturttuktan sonra, ekibe ve şirkete yayarken işinize yarayacak üç sayfa:
+
+<div class="wiki-grid">
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="calculator-variant-outline" aria-hidden="true"></span> **Claude kendini öder mi?**
+
+    ---
+
+    Kendi çalışan sayınız, saat ücretiniz ve planınızla ROI hesabı.
+
+    [→ ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="map-marker-path" aria-hidden="true"></span> **Küçük başlayıp nasıl büyütürüm?**
+
+    ---
+
+    Pilot grup, ölçüm ve şirket geneline yayılma: sırayla ne yapılır.
+
+    [→ Pilottan Yaygınlaştırmaya](/wiki/temeller/pilot-ve-yayginlastirma/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="toolbox-outline" aria-hidden="true"></span> **Logo, Mikro, Paraşüt ile çalışır mı?**
+
+    ---
+
+    Türkiye'de yaygın iş araçlarıyla Claude'u kullanmanın bugünkü yolları ve sınırları.
+
+    [→ Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/)
+
+</div>
+
 ## Ana Duruş
 
 Bu bölümü okuduktan sonra aklınızda kalması gereken altı duruş:
 
 1. **Claude bir arama motoru değildir**: düşünme ortağıdır. Ona göre konuşun.
 2. **Günlük iş için Sonnet'le başlayın.** İstisnai durumlar dışında model seçimiyle uğraşmayın.
-3. **Yeni Claude kullanıcısı için ilk ay Max 5x önerilir**: agresif keşif ritminde Pro ($20) limiti çabuk dolar, yanlış ilk izlenim yaratır. Ay 2+ hafif kullanım durumunda Pro'ya inilebilir. Free iş için uygun değildir.
+3. **Yeni Claude kullanıcısına ilk ay Max 5x öneriyoruz, zorunlu değil**: yoğun keşif ritminde Pro ($20) limiti çabuk dolabilir ve yanlış ilk izlenim yaratır. Hafif kullanımda Pro yeterli olabilir. Free iş için uygun değildir. Şirketlerde Team zorunlu değildir; merkezi yönetim ve kontrol için önerilir.
 4. **Claude yanılmaz değildir.** Her kritik çıktıyı doğrulayın. İmza testini uygulayın.
 5. **Kişisel veri ve KVKK konuları plan seçimini belirler.** Team veya Enterprise + DPA, bireysel Pro'dan farklıdır.
 6. **Claude yazar. Siz karar verirsiniz. Sorumluluk asla transfer olmaz.**
@@ -129,8 +161,10 @@ Bu altı cümle bu bölümün özetidir. Sayfaları okumadan önce buraya döneb
 
 Temeller'i okuduysanız şu bölümler mantıklı devamdır:
 
+- [**Claude Ürünleri**](/claude/): Claude'un ürün ve özelliklerinin Türkçe tanıtımı (modeller, Chrome, Microsoft 365, Claude Code ve diğerleri)
+- [**Kurumsal**](/kurumsal/): Claude'un sektörlere ve kurumsal kullanım alanlarına göre tanıtımı (kamu, hukuk, finans, sağlık ve diğerleri)
 - [**Araçlar**](/wiki/araclar/): Claude'u nerede kullanırsınız (Desktop, Cowork, Claude.ai)
-- [**CLAUDE.md**](/wiki/claude-md/): Claude'u kişiselleştiren kalıcı hafıza dosyası
+- [**CLAUDE.md**](/wiki/claude-md/): Claude'a kalıcı talimat vermenin yolları (profil talimatı, proje, CLAUDE.md)
 - [**Prompting**](/wiki/prompting/): Claude'la nasıl konuşulur, 4D Çerçevesi bu bölümdedir
 - [**Önerilen Okuma Sırası**](/wiki/okuma-sirasi/): Tüm wiki için baştan sona önerilen okuma yolu
 

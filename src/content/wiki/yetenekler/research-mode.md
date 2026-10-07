@@ -1,16 +1,17 @@
 ---
 title: "Research Mode: Derin Araştırma ve Uzun Soluklu Analiz"
-description: "Claude'un kapsamlı araştırma modunda nasıl çalıştığı. Çok kaynaklı sentez, detaylı raporlar, Dispatch ile birleşim."
+seoTitle: "Claude ile Derin Araştırma: Pazar ve Rakip Analizi"
+description: "Claude Research ile çok kaynaklı derin araştırma: nasıl açılır, hangi planlarda var, limite etkisi, kalite kontrol, pazar ve rakip analizi örnekleri."
 tags:
   - yetenekler
   - arastirma
-  - dispatch
-lastUpdated: "2026-10-05"
+  - research
+lastUpdated: "2026-10-06"
 ---
 
-**Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" gibi sorular saatler süren araştırma ister. Claude'un research mode'u tam buna hizmet eder.
+**Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" gibi sorular saatler süren araştırma ister. Claude'un **Research** (derin araştırma) özelliği tam buna hizmet eder.
 
-Bu sayfa derin araştırma yeteneğinin ne olduğunu, [Dispatch](/wiki/araclar/dispatch/) ile ilişkisini ve hangi senaryolarda iş profesyoneline değer ürettiğini anlatır.
+Bu sayfa derin araştırma yeteneğinin ne olduğunu, claude.ai'de nasıl açıldığını, kullanım limitine etkisini ve hangi senaryolarda iş profesyoneline değer ürettiğini anlatır.
 
 ## Research Mode Nedir?
 
@@ -18,13 +19,13 @@ Tek bir web araması ile karşılaştırın:
 
 | | Hızlı Web Arama | Research Mode |
 |---|---|---|
-| Süre | 10-30 saniye | genelde dakikalar (işin büyüklüğüne göre) |
+| Süre | 10-30 saniye | genelde dakikalar (kesin süre sınırı yayımlanmıyor) |
 | Kaynak sayısı | 5-10 | çok daha fazla |
 | Çıktı | Birkaç paragraf | Yapılandırılmış uzun rapor |
 | Kullanım | Hızlı bilgi | Derin sentez, karar destek |
 | Tetikleme | Otomatik | Bilinçli istek |
 
-Research mode, bir arkadaşınıza "şunu araştırıp bana sun" demek gibidir. Claude:
+Research, bir arkadaşınıza "şunu araştırıp bana sun" demek gibidir. Claude:
 
 1. Soruyu alt sorulara böler
 2. Her alt soru için birden çok kaynak tarar
@@ -38,7 +39,7 @@ Research mode, bir arkadaşınıza "şunu araştırıp bana sun" demek gibidir. 
 
 > *"Türkiye'de B2B SaaS pazarının 2026 görünümü: pazar büyüklüğü, ana oyuncular, segment kırılımı, büyüme trendleri, yatırımcı ilgisi."*
 
-Bir hafta süren analist işi. Research mode bunun ilk taslağını çok daha kısa sürede çıkarır; yine de bir uzmanın gözden geçirmesi gerekir.
+Normalde günler süren bir analist işi. Research bunun ilk taslağını çok daha kısa sürede çıkarır; yine de bir uzmanın gözden geçirmesi gerekir.
 
 ### Rakip Analizi
 
@@ -70,25 +71,37 @@ Bir hafta süren analist işi. Research mode bunun ilk taslağını çok daha k�
 
 Stratejik planlama girdisi.
 
-## Research Mode Nasıl Tetiklenir?
+## Research Nasıl Açılır?
 
-### 1. Açıkça İsteme
+### 1. Research düğmesiyle (claude.ai)
+
+Sohbet kutusundaki **"+" menüsünden "Research"** seçilir. Altta mavi bir gösterge belirir; tekrar tıklarsanız kapanır.
+
+- **Planlar:** Free'de yok. Pro, Max, Team ve Enterprise'ta web, Claude Desktop ve mobilde çalışır.
+- **Web arama açık olmalı.** Kapalıysa Research kullanılamaz.
+- Claude birbirini izleyen çok sayıda arama yapar. **Gmail, Google Calendar veya Google Docs bağlıysa** onları da tarayabilir; bağlantıyı açmadan önce hangi hesabın bağlı olduğuna bakın ([Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)).
+- Yanıt genelde dakikalar içinde, kaynak atıflarıyla gelir; atıflar doğrulamayı kolaylaştırır.
+- Team ve Enterprise'ta Research için ayrı bir yönetici anahtarı olup olmadığı belgelenmemiştir. Düğmeyi göremiyorsanız önce yöneticinize sorun.
+
+### 2. Açıkça isteme
+
+Düğme olmadan da isteğinizi derin araştırma diye tarif edebilirsiniz:
 
 > *"Detaylı araştırma yap. Birden çok kaynak çakıştır, çelişkileri belirt, kaynak listesi ver. Yapılandırılmış rapor formatında."*
 
-Claude bunu uzun soluklu bir araştırma olarak yorumlar.
+Bu, Research düğmesinin yaptığı kadar çok arama yapmayı garanti etmez ama çıktının biçimini ve titizliğini yönlendirir.
 
-### 2. [Dispatch](/wiki/araclar/dispatch/) ile
+### 3. Uzun görevler ve telefon
 
-Daha uzun süreli araştırmaları Dispatch ile telefonunuzdan masaüstü Cowork oturumunuza gönderebilirsiniz; arka planda çalışır, bittiğinde sonucu alırsınız. **Dikkat:** Dispatch, Pro ve Max planlarında sınırlı beta olarak sunulur ve yeni kullanıcılara kapalıdır; zaten kullanan hesaplar şimdilik kullanmaya devam edebilir. Hesabınızda Dispatch yoksa araştırmayı normal bir Cowork oturumunda başlatın.
+Çok uzun süren işleri [Cowork](/wiki/araclar/cowork-modu/) içinde yürütebilirsiniz. Telefondan görev gönderme (Dispatch) yeni kullanıcılara kapalı bir beta olduğu için buna güvenmeyin; ayrıntı için [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) sayfasına bakın.
 
-### 3. Project Knowledge ile Birleşik
+### 4. Project Knowledge ile birleşik
 
 Araştırılacak konunun **iç dokümanlarınız** kapsamı varsa (örn. eski raporlar, satış verisi), bunları [Projects](/wiki/araclar/projects/) altında knowledge olarak yükleyip "iç dokümanlarımla birlikte web araştırmasını birleştir" diyebilirsiniz.
 
 ## Çıktı Formatı
 
-Tipik research mode çıktısı:
+Tipik bir araştırma raporu (isterseniz bu iskeleti prompt'ta tarif edin):
 
 ```markdown
 # [Konu]: Araştırma Raporu
@@ -165,7 +178,7 @@ Bu Claude'u körü körüne sentez yapmaktan çıkarır.
 
 ## Kalite Kontrol
 
-Research mode çıktısı yine de doğrulama gerektirir:
+Research çıktısı yine de doğrulama gerektirir:
 
 - **Sayısal veriler:** Önemli olanları kaynağa gidip kontrol edin
 - **Mevzuat referansları:** Yürürlük tarihini doğrulayın (resmî kaynak)
@@ -174,38 +187,37 @@ Research mode çıktısı yine de doğrulama gerektirir:
 
 [Sınırlamalar](/wiki/temeller/sinirlamalar/) sayfası halüsinasyon ve doğrulama konusunu derinleştirir.
 
-## Maliyet Yönü: Token / Bağlam
+## Maliyet Yönü: Kullanım Limiti
 
-Research mode uzun bağlam tüketir. Plana göre:
+Research'ün **ayrı bir kotası yoktur**; standart sohbetle aynı limitten düşer. Ama çok sayıda kaynak getirdiği için limiti normal sohbetten **daha hızlı** tüketir. Limit "günlük" değil, **5 saatlik kayan pencere ve haftalık sınır** üzerinden işler; ayrıntı [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasında.
 
-- Pro: günlük yoğun kullanımda kotayı çabuk doldurur
-- Max 5x / Max 20x: rahatça kullanılır
-- Team: kota koltuk tipine göre (Standard veya Premium) değişir
-- Enterprise: kullanım API fiyatıyla faturalanır, bu yüzden maliyeti önceden tahmin edin
+Plana göre:
+
+- **Pro:** Sık Research kullanırsanız pencereyi ve haftalık sınırı çabuk doldurabilirsiniz. Önce araştırmanın sorusunu daraltın.
+- **Max:** Daha geniş limit verir; Research'ü çok kullanıyorsanız seçenektir ama zorunlu değildir.
+- **Team:** Kullanım koltuk tipine (Standard veya Premium) göre değişir.
+- **Enterprise:** Kullanım bazlı planda koltuk ücreti kullanımı içermez, kullanım standart API fiyatıyla ayrıca faturalanır; eski koltuk bazlı sözleşmelerde (legacy) ise koşullar sözleşmeye bağlıdır. Maliyeti önceden tahmin edin.
 
 [Planlar](/wiki/temeller/planlar/) sayfası detaylar.
 
-## Birleştirilmiş Senaryo: Research + Skills + Dispatch
+## Birleştirilmiş Senaryo: Research + Skills + Connectors
 
 Karmaşık iş senaryosu örneği:
 
-1. Uzun araştırma görevi Cowork'te (varsa **Dispatch** ile) başlatılır ve arka planda çalışır
-2. Sonuç gelir, **research mode** raporu hazır
-3. **[Skills](/wiki/yetenekler/skills/)** ile rapor .docx ve .pptx olarak dışa aktarılır
-4. **[Connectors](/wiki/araclar/connectors/)** ile rapor Drive'a yüklenir
-5. Sonucu yöneticilerle paylaşırsınız
+1. Araştırma Research ile başlatılır; dakikalar içinde atıflı rapor gelir
+2. **[Skills](/wiki/yetenekler/skills/)** ile rapor .docx ve .pptx olarak dışa aktarılır
+3. **[Connectors](/wiki/araclar/connectors/)** ile rapor Drive'a yüklenir
+4. Sonucu yöneticilerle paylaşırsınız
 
 Bu birleşik akış [Cowork](/wiki/araclar/cowork-modu/) içinde tek prompt'la kurulabilir.
 
-## Research Mode'a Karar Verirken
+## Research'e Karar Verirken
 
-Kabaca bir oran vermek gerekirse (bunlar tahmindir, ölçülmüş bir garanti değildir):
+Müşteri toplantısı, yönetim raporu ve stratejik karar gibi "hazırlanma süresi olan" işlerde Claude zaman kazandırır. Kurgusal bir örnek: Yıldız Ambalaj'ın satış ekibi 5 rakibin ürün ve fiyat karşılaştırmasını hazırlıyor.
 
-- **Kısa bir Claude araştırması** birkaç saatlik elle web taramasının yerini tutabilir
-- **Daha uzun bir araştırma** yarım günlük analist işine denk gelebilir
-- **Araştırma + Skills + grafikler** bir iki günlük danışmanlık raporunun ilk taslağını verebilir
+**Süre:** elle 1-2 gün, Claude ile 1-2 saat + 2-3 saat doğrulama. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
-Müşteri toplantısı, yönetim raporu ve stratejik karar gibi "hazırlanma süresi olan" işlerde Claude büyük zaman kazandırır.
+Doğrulama süresini hesaba katmadan "araştırma 1 saatte bitti" demeyin: sayıları ve kaynakları kontrol etmek işin ayrılmaz parçasıdır.
 
 ## Sınırlar
 
@@ -221,8 +233,10 @@ Bu durumlar için **AI başlangıç noktası** + **insan derinleştirme** birle�
 ## İlgili Sayfalar
 
 - [Web Arama](/wiki/araclar/web-arama/): Hızlı arama tarafı
-- [Dispatch](/wiki/araclar/dispatch/): Uzun süreli arka plan görevi
+- [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): Telefondan görev (Dispatch, yeni kullanıcıya kapalı)
+- [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/): Research'ün limite etkisi
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Research + Skills + Connectors birleşimi
+- [Türk İş Araçları](/wiki/temeller/turk-is-araclari/): Türkiye'deki sistemlerle çalışma sınırları
 - [Skills](/wiki/yetenekler/skills/): Çıktıyı dosya olarak dışa aktarma
 - [Projects](/wiki/araclar/projects/): İç dokümanlarla birleşik araştırma
 - [Çıktı Formatı](/wiki/prompting/cikti-formati/): Rapor şekillendirme

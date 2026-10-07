@@ -1,5 +1,6 @@
 ---
 title: "Satınalma: Claude Uygulamaları"
+seoTitle: "Satınalmada Claude: RFQ, Pazarlık Brief'i, Tedarikçi Karşılaştırma"
 description: "Satınalma ekibi için Claude: RFP/RFQ, tedarikçi değerlendirme, pazarlık hazırlığı, TCO analizi, tek kaynak gerekçesi. Operasyondan farkı net."
 tags:
   - departmanlar
@@ -7,7 +8,7 @@ tags:
   - procurement
   - rfp
   - pazarlik
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 > **Operasyondan farkı:** Operasyon **akışı** yönetir: malı A'dan B'ye zamanında getirmek. Satınalma ise **ilişkileri ve şartları** yönetir: kim tedarik eder, ne fiyata, hangi şartlarda. İkisinin kesiştiği yerler vardır ama iş farklıdır. Operasyon çalışanı süreci yürütür; satınalma çalışanı kimin yürüteceğini ve neyin tutulacağını tanımlar.
@@ -26,6 +27,8 @@ lastUpdated: "2026-10-05"
 ### RFP ve RFQ Yazımı
 
 Yapılandırılmış, eksiksiz ve tutarlı belgelerle her tedarikçi aynı kalitede bir sorgu alır; değerlendirme **daha adil, süreç daha savunulabilir** olur.
+
+RFQ için Claude'a şunları verin: ne alınacak (ürün, miktar, teknik şartname), teslim yeri ve tarihi, ödeme koşulu, tekliflerin hangi biçimde ve hangi tarihe kadar istendiği, değerlendirme kriterleri. İstenen çıktı: bütün tedarikçilere gidecek tek bir RFQ metni ve tedarikçinin dolduracağı fiyat tablosu. Aynı şablon her seferinde kullanılırsa teklifler yan yana karşılaştırılabilir hâle gelir. [Operasyon](/wiki/departmanlar/operasyon/) ve [Üretim](/wiki/departmanlar/uretim-imalat/) sayfaları RFQ'yu kendi bağlamında anar; ayrıntı burada.
 
 ### Tedarikçi Değerlendirme Çerçeveleri
 
@@ -110,11 +113,11 @@ Onaylı listeye tedarikçi eklerken veya listeden çıkarırken karar dokümante
 - `xlsx`: karşılaştırma matrisleri ve skorlama
 - `pdf`: resmi satınalma belgeleri
 - Web search: pazar kaynak bulma
-- `operations:vendor-review`: vendor değerlendirme çerçevesi
+- Kendi vendor değerlendirme skill'iniz: skorlama çerçevenizi bir kez tanımlayıp her değerlendirmede aynısını kullanır ([Skills](/wiki/yetenekler/skills/))
 
 **Connector'lar:**
 1. **Microsoft 365 / Google Workspace**: RFP ve sözleşme belgeleri
-2. **ERP** (varsa; connector'ı yoksa Computer Use ile, bu özellik Pro ve Max'te research preview aşamasındadır): satınalma siparişi girişi
+2. **ERP** (varsa): satınalma siparişi girişi. Logo, Mikro gibi yerel yazılımların resmi connector'ı yok; dışa aktarım ya da özel bağlantı yolu için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın. Computer use (research preview) yalnız Pro ve Max'te var, Team ve Enterprise'da yok
 3. **DocuSign**: tedarikçi sözleşme imzaları
 
 ## İş Akışı Yeniden Tasarımı Adayları
@@ -122,6 +125,12 @@ Onaylı listeye tedarikçi eklerken veya listeden çıkarırken karar dokümante
 - **Kaynak bulma süreci**: ihtiyaç tespiti → tedarikçi seçimi → sözleşme, her adımda Claude destekli
 - **Tedarikçi performans inceleme döngüsü**: çeyreklik otomasyon
 - **Onaylı tedarikçi listesi yönetişimi**: her değişiklik dokümante
+
+## Sık Hatalar
+
+- **Hassas tedarikçi bilgisi:** Müzakere pozisyonunu ve vazgeçme fiyatını prompt'a yazmadan önce şirketinizin veri politikasına bakın. Rakamları yuvarlayın ya da aralıkla verin.
+- **Çıkar çatışması:** Tedarikçinin sunduğu hediye, kişisel ilişki gibi konular yazılı belgelere ve Claude'a girmez; bunlar etik kurula gider.
+- **Uydurma pazar fiyatı:** Claude pazar fiyatı uydurabilir. "Pazar %8 ucuz" gibi bir iddiayı gerçek fiyat listesi ya da tekliflerle doğrulamadan pazarlığa taşımayın.
 
 ## Gerçek Örnek: Pazarlık Hazırlığı
 
@@ -137,6 +146,8 @@ Satınalma müdürü, ana tedarikçisiyle yıllık sözleşme yenileme görüşm
 **Adım 4:** Toplantıya gider, brief cebinde.
 
 Toplam süre: yaklaşık 30 dakika (örnek senaryo). Geleneksel süreç: 2-3 saat boyunca "aklıma gelen" notları toplamak.
+
+**Süre:** pazarlık brief'i için elle 2-3 saat, Claude ile 30-40 dakika (kontrol dahil). Üç teklifli karşılaştırma matrisi için elle 1,5-2 saat, Claude ile 20-30 dakika. Ayda dört tedarikçi görüşmesi yapılıyorsa brief tarafında kabaca 6-10 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ## İlgili Sayfalar
 

@@ -1,16 +1,19 @@
 ---
-title: "Departmanlar: 12 İş Alanı, KOBİ ve 5 Sektör"
-description: Satış, pazarlama, finans, operasyon, İK, hukuk, IT, müşteri hizmetleri, idari işler, liderlik, satınalma ve ihracat için gerçek iş akışları.
+title: "Departmanlar: 12 İş Alanı, KOBİ ve 7 Sektör"
+seoTitle: "Claude ile Departman ve Sektör İş Akışları: Satıştan Kamuya, Finanstan Sağlığa"
+description: "Satış, pazarlama, finans, hukuk, İK, operasyon gibi 12 departman, KOBİ ve 7 sektör (perakende, turizm, üretim, eğitim, sağlık, kamu, finansal hizmetler) için Claude iş akışları."
 tags:
   - departmanlar
   - giris
   - rol-bazli
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Claude her departmanda farklı çalışır. **Aynı araç, farklı rollerde farklı değer üretir**, çünkü iş akışları farklı, çıktılar farklı, hukuki hassasiyetler farklı.
 
-Bu bölüm 12 departman, küçük işletmeler (KOBİ) ve 5 sektör için hazırlanmış, gerçek iş akışlarına dayanan Claude kullanım senaryolarını içerir: toplam 18 sayfa.
+Bu bölüm 12 departman, küçük işletmeler (KOBİ) ve 7 sektör için hazırlanmış, gerçek iş akışlarına dayanan Claude kullanım senaryolarını içerir: toplam 20 sayfa.
+
+![Departman ve sektör çarkı: merkezde Claude ve ekip, üstte 12 departman, altta 7 sektör ve Küçük İşletme (KOBİ)](/images/wiki/departmanlar-cark.svg)
 
 ## 12 Departman
 
@@ -129,6 +132,19 @@ Bazı sektörlerin işi departman sınırlarına sığmaz. Bunlar için ayrı sa
 - [**Üretim ve İmalat**](/wiki/departmanlar/uretim-imalat/): Vardiya raporları, kalite belgeleri, ISO
 - [**Eğitim ve Akademi**](/wiki/departmanlar/egitim-akademi/): Ders planı, sınav, geri bildirim
 - [**Sağlık**](/wiki/departmanlar/saglik/): Hassas sektör, idari ve eğitsel destek
+- [**Kamu Kurumları**](/wiki/departmanlar/kamu/): Resmi yazı, mevzuat özeti, vatandaş başvurusu; 2019/12 Genelgesi ve veri sınırı
+- [**Finansal Hizmetler**](/wiki/departmanlar/finansal-hizmetler/): Banka, sigorta, aracı kurum, faktoring; BDDK, SPK, MASAK çerçevesi
+
+## Nasıl Ölçülür?
+
+Sayfalardaki "Gerçek Örnek" bölümlerinde elle ve Claude ile süre karşılaştırması bulacaksınız. Bunlar **Zamana'nın atölye ve müşteri çalışmalarında gözlediği tipik aralıklardır**; kurumdan kuruma değişir. Kendi kurumunuzdaki kazancı görmek için:
+
+- [**Ölçüm Metrikleri**](/wiki/temeller/olcum-metrikleri/): Neyi, nasıl ölçeceğiniz ve gerçek vaka örnekleri
+- [**ROI Hesaplayıcı**](/wiki/temeller/roi-hesaplayici/): Kendi süre ve maliyet rakamlarınızla hesap
+
+## Kurumsal ve Program Yönlendirmesi
+
+> **Ekibiniz için mi bakıyorsunuz?** Bu bölüm kendi başınıza uygulayabileceğiniz iş akışlarını anlatır. Ürünlerin kurumsal tarafı (Team, Enterprise, sektör notları) [Kurumsal](/kurumsal/) bölümünde, Zamana'nın eğitim ve danışmanlık seçenekleri [Programlar](/programlar/) sayfasındadır. Zamana bayi değildir; abonelik satın alma doğrudan Anthropic'tendir.
 
 ## Her Departman Sayfasının İçeriği
 

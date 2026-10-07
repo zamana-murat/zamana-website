@@ -1,6 +1,7 @@
 ---
 title: Claude Modelleri, Güncel Kılavuz
-description: "Claude'un güncel dört modeli Fable 5.1, Opus 5.5, Sonnet 5.5 ve Haiku 4.5 arasındaki farklar, plan erişimi, bağlam penceresi ve model seçimi."
+seoTitle: "Claude Modelleri: Opus mu Sonnet mi? Effort Nedir?"
+description: "Opus 5.5 mi Sonnet 5.5 mi? Claude'un dört modeli Fable, Opus, Sonnet ve Haiku arasındaki farklar, effort (çaba) nedir, plan erişimi ve bağlam penceresi."
 tags:
   - temeller
   - modeller
@@ -8,8 +9,19 @@ tags:
   - sonnet
   - opus
   - haiku
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
+
+**Kısa cevap, Opus mu Sonnet mi:** Günlük iş için **Sonnet 5.5**. Sonnet'in yetmediği uzun, zor ve çok adımlı işler için **Opus 5.5**. Fable 5.1 yalnız ikisiyle de olmayan çok zor işlerde, Haiku 4.5 hızlı ve hafif işlerde.
+
+| İş | Model |
+|---|---|
+| E-posta, rapor özeti, sözleşme taslağı, sunum metni | **Sonnet 5.5** |
+| Büyük belge seti, uzun otonom görev, kritik metin | **Opus 5.5** |
+| Sonnet ve Opus'un yetmediği, çok uzun ufuklu iş | **Fable 5.1** |
+| Sınıflandırma, kısa çeviri, yüksek hacimli basit iş | **Haiku 4.5** |
+
+> **Bu sayfa ile Claude bölümündeki sayfanın farkı:** Burada iş kullanıcısı için seçim kuralı, plan erişimi, bağlam penceresi ve effort ayrıntısı var. Modelleri ürün olarak tanıtan kısa özet için [Claude bölümündeki Modeller sayfasına](/claude/modeller/) bakın.
 
 ## Model Nedir?
 
@@ -33,6 +45,8 @@ Bu sayfa **5 Ekim 2026** itibarıyla doğrulanmış bilgiyle yazıldı. Claude.a
 | **Claude Opus 5.5** | Ağır ve zor işler. Fable 5.1 düzeyinde performans, Opus 5'ten yaklaşık %40 ucuz | 1M token | 128K | $4 / $20 |
 | **Claude Sonnet 5.5** ⭐ | Günlük iş için hız ve zekâ dengesi. Sonnet 5'ten yaklaşık %30 hızlı | 1M token | 128K | $2 / $10 |
 | **Claude Haiku 4.5** | En hızlı, hafif ve yüksek hacimli işler | 200K token | 64K | $1 / $5 |
+
+![Claude model ailesinin göreli konumu: Haiku 4.5 en hızlı ve en ucuz, Sonnet 5.5 günlük iş, Opus 5.5 ağır işler, Fable 5.1 en güçlü ve en pahalı; yetenek arttıkça hız düşer](/images/wiki/temeller-modeller.svg)
 
 API fiyatları abonelik kullanıcısını doğrudan ilgilendirmez; plan içinde kaldığınız sürece ek ödeme yoktur. Yine de modeller arasındaki maliyet oranını gösterdikleri için tabloda yer alır: Fable, Sonnet'in yaklaşık beş katı pahalıdır.
 
@@ -118,7 +132,7 @@ Fable'ın plana göre durumu ayrıca önemlidir:
 
 Eski koltuk bazlı Enterprise sözleşmelerinde standart koltuk Pro gibi (yalnızca kullanım kredisi), premium koltuk Max gibi (plana dahil, %50 sınırıyla) davranır.
 
-> **Zamana notu:** Yeni başlayan her katılımcı için ilk ay Max 5x politikamız aynen geçerli. Fable'ın Max'te plana dahil, Pro'da ise yalnızca kullanım kredisiyle gelmesi, ilk ayda üst modelleri de denemek isteyenler için ayrıca bir artıdır.
+> **Zamana notu:** Yeni başlayanlara ilk ay Max 5x öneriyoruz (zorunlu değil, Pro ile başlayıp yükseltmek de olur). Fable'ın Max'te plana dahil, Pro'da ise yalnızca kullanım kredisiyle gelmesi, ilk ayda üst modelleri de denemek isteyenler için ayrıca bir artıdır.
 
 **Varsayılan model:** Hangi planda hangi modelin varsayılan geldiği resmi kaynaklarda net yazmaz ve arayüz değişebilir. Model seçicide neyin seçili olduğuna bakın, değiştirmek isterseniz oradan seçin.
 
@@ -126,7 +140,7 @@ Plan fiyatları ve kota ayrıntıları için [Claude Planları](/wiki/temeller/p
 
 ## Bağlam Penceresi
 
-Yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) sohbet bağlam penceresi **1 milyon token**'dır ve **ücretli planlarda fark yoktur** (Free için resmi bir değer yayımlanmıyor). Bir önceki kuşakta (Fable 5, Opus 5, Sonnet 5) 500K, daha eski modellerde 200K idi. Haiku 4.5 hâlâ 200K'dır.
+Yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) sohbet bağlam penceresi **1 milyon token**'dır. Bağlam penceresi **plana değil modele bağlıdır**: aynı model ücretli planlarda aynı pencereyi kullanır (Free için resmi bir değer yayımlanmıyor). Bir önceki kuşakta (Fable 5, Opus 5, Sonnet 5) 500K, daha eski modellerde 200K idi. Haiku 4.5 hâlâ 200K'dır.
 
 Pratik anlamı: yüzlerce sayfalık bir belge setini tek oturumda yükleyip tartışabilirsiniz. Çok uzun oturumlarda yine de bağlam dolar; bunu yönetmek için [Context Compaction](/wiki/yetenekler/context-compaction/) sayfasına bakın.
 
@@ -157,9 +171,13 @@ Bu işaretler yoksa Sonnet'ten ayrılmayın.
 
 Ekip düzeyinde asıl risk, herkesin kendi kafasına göre model seçmesi ve gereksiz yere pahalı olanı kullanıp kotayı erkenden bitirmesidir. Bu kuralları bir kez birlikte oturtmak istiyorsanız [ekibinize Claude eğitimi](/programlar/kurumsal/) vermenin işe yaradığı yerlerden biri tam burasıdır.
 
-## Çaba Seviyesi
+## Effort Nedir? (Çaba Seviyesi)
 
-Claude'un bir işe ne kadar derin düşüneceğini görev başına ayarlayabilirsiniz: [Effort Control](/wiki/yetenekler/effort-control/). Varsayılan modele ve yüzeye göre değişir: API'de Fable 5.1 ve Sonnet 5.5 `high`, Opus 5.5 `medium`; Claude Code'da Fable 5.1 `high`, Opus 5.5 ve Sonnet 5.5 `medium`. Haiku 4.5 çaba ayarını desteklemez.
+**Effort**, Claude'un bir cevaba ulaşmadan önce ne kadar derin düşüneceğini belirleyen ayardır. Yüksek effort daha uzun düşünür, daha çok ara adım atar ve daha çok kota tüketir; düşük effort hızlıdır ama karmaşık işte yüzeysel kalabilir. Model seçimi "hangi beyin", effort seçimi "o beyin ne kadar uğraşsın" sorusudur.
+
+Çoğu iş profesyoneli için kural basit: **varsayılanı bırakın**. Yalnız basit ve çok sayıda işte hız için düşürün, kritik bir çıktıda ve süre önemli değilse yükseltin. Görev başına nasıl ayarlanacağı, ne zaman yüksek ne zaman düşük kullanılacağı: [Effort Control](/wiki/yetenekler/effort-control/).
+
+Varsayılan modele ve yüzeye göre değişir: API'de Fable 5.1 ve Sonnet 5.5 `high`, Opus 5.5 `medium`; Claude Code'da Fable 5.1 `high`, Opus 5.5 ve Sonnet 5.5 `medium`. Haiku 4.5 effort ayarını desteklemez.
 
 ## Yeni Model Çıkınca
 
@@ -177,6 +195,8 @@ Yeni bir Claude sürümü eski sürümün "yaması" değildir. Davranış incede
 ## İlgili Sayfalar
 
 - [Claude Nedir?](/wiki/temeller/claude-nedir/): Modellerden önce temel kavram
+- [Claude Modelleri (Claude bölümü)](/claude/modeller/): Modellerin ürün olarak kısa tanıtımı
+- [Effort Control](/wiki/yetenekler/effort-control/): Çaba seviyesini görev başına ayarlamak
 - [Claude Planları](/wiki/temeller/planlar/): Hangi modele hangi planla erişim var
 - [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/): Rakip modellerle karşılaştırma
 - [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/): Model sürümlerinin zaman çizelgesi

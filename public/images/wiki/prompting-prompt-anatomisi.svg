@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="800" height="650" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Bir promptun beş bileşeni: rol, bağlam, görev, format, kısıtlar</title>
+  <desc id="desc">Beş kart yukarıdan aşağı. Rol: Claude kim olarak yaklaşsın, örnek B2B satışta 10 yıllık yönetici. Bağlam: kim için, ne durumda, neden şimdi, örnek XYZ Gıda, Konya, dünkü ilk toplantı. Görev: tam olarak ne istiyorsunuz, örnek takip e-postası ve keşif randevusu önerisi. Format: çıktı nasıl görünsün, örnek 3 kısa paragraf, en çok 180 kelime. Kısıtlar: ne olmamalı, örnek fiyattan söz etme, ürün özelliği sayma. Beşi bir arada kullanılınca iterasyon ihtiyacı azalır.</desc>
+
+  <rect x="0" y="0" width="800" height="650" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Bir promptun beş bileşeni</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Her bileşen bir soruya cevap verir. Örnek: satış takip e-postası</text>
+
+  <!-- 1 Rol -->
+  <rect x="40" y="120" width="720" height="76" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <rect x="56" y="132" width="150" height="52" rx="10" fill="#0f2855"/>
+  <circle cx="82" cy="158" r="15" fill="#c9a84c"/>
+  <text x="82" y="164" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">1</text>
+  <text x="106" y="165" font-size="20" font-weight="700" fill="#ffffff">Rol</text>
+  <text x="226" y="152" font-size="18" font-weight="700" fill="#0f2855">Claude kim olarak yaklaşsın?</text>
+  <text x="226" y="178" font-size="16" font-weight="500" fill="#1a2238">Örnek: B2B satışta 10 yıllık yönetici</text>
+
+  <!-- 2 Bağlam -->
+  <rect x="40" y="208" width="720" height="76" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <rect x="56" y="220" width="150" height="52" rx="10" fill="#0f2855"/>
+  <circle cx="82" cy="246" r="15" fill="#c9a84c"/>
+  <text x="82" y="252" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">2</text>
+  <text x="106" y="253" font-size="20" font-weight="700" fill="#ffffff">Bağlam</text>
+  <text x="226" y="240" font-size="18" font-weight="700" fill="#0f2855">Kim için, ne durumda, neden şimdi?</text>
+  <text x="226" y="266" font-size="16" font-weight="500" fill="#1a2238">Örnek: XYZ Gıda, Konya, dünkü ilk toplantı</text>
+
+  <!-- 3 Görev -->
+  <rect x="40" y="296" width="720" height="76" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <rect x="56" y="308" width="150" height="52" rx="10" fill="#0f2855"/>
+  <circle cx="82" cy="334" r="15" fill="#c9a84c"/>
+  <text x="82" y="340" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">3</text>
+  <text x="106" y="341" font-size="20" font-weight="700" fill="#ffffff">Görev</text>
+  <text x="226" y="328" font-size="18" font-weight="700" fill="#0f2855">Tam olarak ne istiyorsunuz?</text>
+  <text x="226" y="354" font-size="16" font-weight="500" fill="#1a2238">Örnek: takip e-postası, keşif randevusu öner</text>
+
+  <!-- 4 Format -->
+  <rect x="40" y="384" width="720" height="76" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <rect x="56" y="396" width="150" height="52" rx="10" fill="#0f2855"/>
+  <circle cx="82" cy="422" r="15" fill="#c9a84c"/>
+  <text x="82" y="428" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">4</text>
+  <text x="106" y="429" font-size="20" font-weight="700" fill="#ffffff">Format</text>
+  <text x="226" y="416" font-size="18" font-weight="700" fill="#0f2855">Çıktı nasıl görünsün?</text>
+  <text x="226" y="442" font-size="16" font-weight="500" fill="#1a2238">Örnek: 3 kısa paragraf, en çok 180 kelime</text>
+
+  <!-- 5 Kısıtlar -->
+  <rect x="40" y="472" width="720" height="76" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <rect x="56" y="484" width="150" height="52" rx="10" fill="#0f2855"/>
+  <circle cx="82" cy="510" r="15" fill="#c9a84c"/>
+  <text x="82" y="516" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">5</text>
+  <text x="106" y="517" font-size="20" font-weight="700" fill="#ffffff">Kısıtlar</text>
+  <text x="226" y="504" font-size="18" font-weight="700" fill="#0f2855">Ne olmamalı?</text>
+  <text x="226" y="530" font-size="16" font-weight="500" fill="#1a2238">Örnek: fiyattan söz etme, ürün özelliği sayma</text>
+
+  <!-- Note -->
+  <rect x="40" y="572" width="720" height="48" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="60" y="602" font-size="16" font-weight="600" fill="#1a2238">Beşi bir arada: iterasyon ihtiyacı belirgin biçimde azalır.</text>
+</svg>

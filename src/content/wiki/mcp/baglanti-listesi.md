@@ -1,17 +1,18 @@
 ---
 title: "MCP Bağlantı Listesi: Claude'u İş Araçlarınıza Bağlamak"
-description: "Claude'un resmî connector dizininde yaklaşık 900 connector var. Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot ve diğerleri rol bazında."
+seoTitle: "Claude Connector Listesi: Role Göre ~900 Bağlantı"
+description: "Claude'un resmi dizininde yaklaşık 900 connector var. Satış, finans, İK, hukuk ve operasyon için hangileri kritik, rol bazında liste."
 tags:
   - mcp
   - connector
   - entegrasyon
   - liste
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-Ekim 2026 itibarıyla Claude'un resmî dizininde yaklaşık 900 bağlayıcı (connector) bulunur. Bu sayfa bunların hepsini değil, iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
+Ekim 2026 itibarıyla Claude'un resmî dizininde yaklaşık 900 bağlayıcı (connector) bulunur. Connector, bir MCP sunucusudur ([MCP Nedir?](/wiki/mcp/nedir/)). Bu sayfa bunların hepsini değil, iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
 
-> **Not:** Dizin düzenli olarak büyür. Güncel kataloğu Cowork → **"Customize"** menüsünden veya claude.com/connectors adresinden görebilirsiniz. 23 Eylül 2026'da açılan [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde toplar ve 2.000'den fazla bağlayıcı ve eklenti sunar. Bu sayı eklentileri de kapsar; yalnızca connector sayan dizinin yaklaşık 900 rakamıyla çelişmez.
+> **Not:** Dizin düzenli olarak büyür. Güncel kataloğu Claude'da **Customize > Connectors** bölümünden veya claude.com/connectors adresinden görebilirsiniz. Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına bakın. Team ve Enterprise'ta bazı connector'ları önce kuruluş sahibi (Owner) açar. 23 Eylül 2026'da açılan [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde toplar ve 2.000'den fazla bağlayıcı ve eklenti sunar. Bu sayı eklentileri de kapsar; yalnızca connector sayan dizinin yaklaşık 900 rakamıyla çelişmez.
 
 ## Üretkenlik ve Belgeler
 
@@ -40,7 +41,7 @@ Ekim 2026 itibarıyla Claude'un resmî dizininde yaklaşık 900 bağlayıcı (co
 |---|---|
 | **Salesforce** | Kişi, fırsat, hesap kayıtlarını okur / günceller |
 | **HubSpot** | CRM kayıtlarını, fırsatları okur / günceller |
-| **Close CRM** | Kişilere ve pipeline'a erişir |
+| **Close CRM** | Kişilere ve pipeline'a erişir (Close'un kendi connector'ı, resmi dizinde) |
 
 **Kimler için kritik:** Satış, iş geliştirme, müşteri hizmetleri. [Satış](/wiki/departmanlar/satis/) departmanı sayfasında detayları var.
 
@@ -48,6 +49,7 @@ Ekim 2026 itibarıyla Claude'un resmî dizininde yaklaşık 900 bağlayıcı (co
 
 | Connector | Claude Ne Yapabilir |
 |---|---|
+| **Atlassian** | Jira, Confluence, Bitbucket ve Loom'a erişir (Atlassian'ın kendi yaptığı connector, resmi dizinde) |
 | **Asana** | Görevleri ve projeleri okur / oluşturur / günceller |
 | **Linear** | Issue'ları ve projeleri okur / yönetir |
 | **ClickUp** | Görevlere ve projelere erişir |
@@ -68,10 +70,21 @@ Ekim 2026 itibarıyla Claude'un resmî dizininde yaklaşık 900 bağlayıcı (co
 
 | Connector | Claude Ne Yapabilir |
 |---|---|
-| **Amplitude** | Analitik verisini sorgular |
-| **Supermetrics** | Pazarlama performans verisini çeker |
+| **Amplitude** | Analitik verisini sorgular (Amplitude'un kendi connector'ı, resmi dizinde) |
+| **Supermetrics** | Pazarlama performans verisini çeker (Supermetrics'in kendi connector'ı, resmi dizinde) |
 
 **Kimler için kritik:** Pazarlama analitiği yapan, veri odaklı karar alan roller.
+
+## Finans ve Muhasebe
+
+| Connector | Claude Ne Yapabilir |
+|---|---|
+| **QuickBooks** | Intuit'in kendi connector'ı, resmi dizinde. Muhasebe verisine erişir |
+| **Xero** | Xero'nun kendi connector'ı, resmi dizinde, salt okunur |
+
+**Türkiye'de yaygın muhasebe yazılımları:** Logo, Mikro ve Netsis için resmi dizinde connector yok; Ekim 2026 taramamızda yazılım sağlayıcılarının yayımladığı resmi bir MCP sunucusu da bulamadık. Paraşüt için yalnızca resmi olmayan, topluluk yapımı bir sunucu var; onu iş verisi için önermiyoruz ([MCP Güvenliği](/wiki/mcp/guvenlik/)). Bu araçlarla Claude'u nasıl kullanacağınız [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasında. Kendi sisteminizi bağlamayı düşünüyorsanız [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasına bakın.
+
+**Kimler için kritik:** Finans, muhasebe, genel müdür yardımcılığı. Bu iki yazılım yurt dışı kökenlidir; kullanmıyorsanız bu bölümdeki connector'lar size uymaz, Türk vergi ve e-Fatura düzenine uygunluklarını da ayrıca sormanız gerekir.
 
 ## Hukuk ve Uyumluluk
 
@@ -99,6 +112,7 @@ Her rol için "olmadan olmaz" tip connector önerileri:
 ### Finans Direktörü
 - **Google Workspace** veya **Microsoft 365** (özellikle Excel / Sheets): raporlama
 - **Outlook** veya **Gmail**: paydaş iletişimi
+- Yurt dışı kökenli bir muhasebe yazılımı kullanıyorsanız (QuickBooks, Xero) kendi connector'ı. Logo, Mikro, Netsis ve Paraşüt için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın
 
 ### Operasyon Yöneticisi
 - **Asana** veya **Monday.com**: süreç yönetimi
@@ -130,30 +144,31 @@ Ayrıca Anthropic'in sektörel **plugin paketleri** var. Bir plugin kurduğunuzd
 | **Marketing** | content-creation, campaign-plan |
 | **Operations** | process-doc, runbook |
 | **Legal** | review-contract, triage-nda |
-| **Productivity** | task-management, memory-management (kişisel verimlilik için) |
+| **Productivity** | Kişisel verimlilik için görev ve hafıza yönetimi skill'leri |
 
 ## Özel Connector: Şirket İçi Sistemler
 
-Standart connector'ların dışında, şirketinize özel connector geliştirilebilir:
+Dizinde olmayan bir sistemi (iç CRM, müşteri portalı, özel veritabanı, yerel ERP) Claude'a bağlamanın yolu **özel connector** ya da **masaüstü uzantısıdır**:
 
-- Dahili ERP'ye bağlantı (Paraşüt, Logo ve Mikro için resmî bir Claude connector yoktur; Paraşüt'ün REST API'si üzerinden özel connector kurulabilir)
-- Şirket içi müşteri portalına bağlantı
-- Özel veritabanı sistemlerine bağlantı
+- **Özel connector:** sistemin MCP sunucusunun internet adresini (URL) Claude'a verirsiniz. Sunucu internetten erişilebilir olmalıdır. Team ve Enterprise'ta yalnız kuruluş sahibi ekler, üyeler kendi hesaplarıyla bağlanır.
+- **Masaüstü uzantısı:** kullanıcının bilgisayarında çalışan bir MCP sunucusu paketi (`.mcpb`).
 
-Bu MCP server geliştiriciliği gerektirir; iş profesyoneli kapsamı dışındadır, ama IT ekibiniz veya bir entegrasyon ortağı kurabilir. [MCP protokolü açık standarttır](/wiki/mcp/nedir/).
+İkisi de bir MCP sunucusunun hazır olmasını gerektirir. Bunu BT ekibiniz, yazılım sağlayıcınız ya da bir entegrasyon ortağı kurar; iş kullanıcısının kendi başına yapacağı bir iş değildir. Nereden başlanacağı, kimden ne isteneceği ve pilotun nasıl kurulacağı [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasında.
 
 Alternatif: [Computer Use](/wiki/yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesini denemek (research preview, yalnızca Pro ve Max, masaüstü uygulamasında).
 
 ## Kurulum İpuçları
 
 - **OAuth akışı bir kez yapılır.** Kurarsınız, tarayıcı açılır, giriş yapıp "izin ver" dersiniz. Sonrasında connector kendiliğinden çalışır.
-- **Şirket politikası:** IT ekibi hangi connector'ların onaylı olduğunu belirleyebilir. Özellikle Enterprise planda private plugin marketplace kullanılır.
+- **Şirket politikası:** Team ve Enterprise'ta kuruluş sahibi hangi connector'ların açık olduğunu belirler ve araç kategorileri için "Always allow / Needs approval / Blocked" kuralı koyabilir. Şirket içi plugin dağıtımı için özel plugin marketplace de Team ve Enterprise'ta vardır.
 - **Test et, sonra yaygınlaştır:** bir departmanda bir çalışanla deneyin. İş akışında fayda görülürse ekibe yayın.
-- **İzinleri en dar tutun:** connector'ların bazılarında "read" ve "write" ayrı. Gerçekten gerekmiyorsa "write" izni vermeyin.
+- **İzinleri en dar tutun:** connector'ların bazılarında okuma ve yazma araçları ayrıdır. Gerçekten gerekmiyorsa yazma araçlarına "Always allow" demeyin, yönetici iseniz yazma kategorisini "Needs approval" ya da "Blocked" yapın.
 
 ## İlgili Sayfalar
 
 - [MCP Nedir?](/wiki/mcp/nedir/): Standart ve genel çerçeve
+- [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/): Dizinde olmayan sistemler için karar akışı
+- [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt ve diğerleri
 - [Skills](/wiki/yetenekler/skills/): Plugin'lerin içinde gelen skill'ler
 - [Departmanlar](/wiki/departmanlar/): Rol bazlı connector önerileri
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Connector güvenlik ve onay modeli

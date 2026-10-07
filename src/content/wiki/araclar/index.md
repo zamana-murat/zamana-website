@@ -1,10 +1,11 @@
 ---
 title: "Araçlar: Claude'u Nerede Kullanırsınız?"
-description: "Claude'un kullanım araçları: Chat, Projects, Desktop, Cowork, Dispatch, Scheduled Tasks, Voice Mode, Office ve Chrome eklentileri. Hangisi ne zaman?"
+seoTitle: "Claude Araçları: Hangisi Ne Zaman?"
+description: "Claude'u nerede kullanırsınız: Chat, Projects, Desktop, Cowork, mobil, zamanlanmış görevler, connector'lar, Office ve Chrome. Hangi araç hangi iş için?"
 tags:
   - araclar
   - giris
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Claude'u kullanmanın birden fazla yolu var. Hangisinin hangi iş için doğru olduğu, üretkenlikte ciddi fark yaratır.**
@@ -47,13 +48,13 @@ Bu bölüm Claude'un temel araçlarını tanıtır. Her biri farklı bir senaryo
 
     [→ Cowork Modu](/wiki/araclar/cowork-modu/)
 
--   <span class="wiki-icon wiki-icon--lg" data-icon="cellphone-link" aria-hidden="true"></span> **Dispatch**
+-   <span class="wiki-icon wiki-icon--lg" data-icon="cellphone-link" aria-hidden="true"></span> **Claude Mobil**
 
     ---
 
-    Telefonunuzdan masaüstü Cowork'e görev atamanın yolu. Pro ve Max'te sınırlı beta, yeni kullanıcılara kapalı.
+    iOS ve Android uygulaması, telefondan görev atma (mobil Cowork betası, Dispatch) ve sesli giriş notları.
 
-    [→ Dispatch](/wiki/araclar/dispatch/)
+    [→ Claude Mobil](/wiki/araclar/claude-mobil/)
 
 -   <span class="wiki-icon wiki-icon--lg" data-icon="calendar-clock" aria-hidden="true"></span> **Scheduled Tasks**
 
@@ -79,6 +80,38 @@ Bu bölüm Claude'un temel araçlarını tanıtır. Her biri farklı bir senaryo
 
     [→ Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/)
 
+-   <span class="wiki-icon wiki-icon--lg" data-icon="layers-triple" aria-hidden="true"></span> **Connectors**
+
+    ---
+
+    Claude'u Drive, Gmail, Slack, Microsoft 365 ve CRM gibi şirket araçlarınıza bağlar. Kurulum, izinler, KVKK.
+
+    [→ Connectors](/wiki/araclar/connectors/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="earth" aria-hidden="true"></span> **Web Arama**
+
+    ---
+
+    Claude'un güncel bilgiye web'den ulaşması, kaynakları nasıl doğrulayacağınız ve ne zaman güvenmemeniz gerektiği.
+
+    [→ Web Arama](/wiki/araclar/web-arama/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="history" aria-hidden="true"></span> **Geçmiş ve Arama**
+
+    ---
+
+    Sohbet geçmişinde arama, klasörleme, silme ve dışa aktarma.
+
+    [→ Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/)
+
+-   <span class="wiki-icon wiki-icon--lg" data-icon="account-group-outline" aria-hidden="true"></span> **Slack ve Teams**
+
+    ---
+
+    Slack'te Claude'u ekibe etiketlemek (Claude Tag) ve Microsoft Teams'in bugünkü durumu.
+
+    [→ Slack ve Teams](/wiki/araclar/slack-teams-entegrasyon/)
+
 </div>
 
 ## Hangi Araç Ne Zaman?
@@ -90,36 +123,30 @@ Başlangıç için basit bir karar ağacı:
 | Hızlı bir soru sormak, bir fikir sınamak | **Claude Chat** |
 | Ekipçe aynı bağlamla çalışılacak bir proje | **Projects** (Team planında paylaşımlı) |
 | Gerçek iş çıktıları üretmek (Word, Excel, PPT) | **Claude Desktop + Cowork** ya da dosyanın içinde **Office eklentisi** |
+| Tasarım, sunum ya da doküman üzerinde etkileşimli düzenleme | **Claude Design, Slides, Docs** (ücretli planlarda beta, Free'de yok), bkz. [Claude Design](/wiki/yetenekler/claude-design/) |
 | Bir web sitesinde form doldurmak, API'si olmayan portalda iş yapmak | **Claude in Chrome** (veya Cowork'ün yerleşik tarayıcısı) |
-| Şirket araçlarına bağlanmak (Slack, Drive, CRM) | **Cowork + connector'lar** |
+| Şirket araçlarına bağlanmak (Slack, Drive, CRM) | **Connector'lar**, bkz. [Connectors](/wiki/araclar/connectors/) |
 | Slack kanalında ekiple birlikte Claude kullanmak | **Claude Tag** (Team/Enterprise), bkz. [Slack ve Teams](/wiki/araclar/slack-teams-entegrasyon/) |
-| Yolda telefondan iş atmak, masada bitmiş bulmak | **Dispatch** (yalnız mevcut kullanıcılar) ya da mobil/web **Cowork** (beta) |
-| Tekrar eden haftalık/aylık bir görevi otomatikleştirmek | **Scheduled Tasks** |
-| Yazmaktansa konuşmayı tercih ediyorsanız | **Voice Mode** |
+| Yolda telefondan iş atmak, masada bitmiş bulmak | Mobil/web **Cowork** (beta) ya da **Dispatch** (yalnız mevcut kullanıcılar), bkz. [Claude Mobil](/wiki/araclar/claude-mobil/) |
+| Tekrar eden haftalık/aylık bir görevi otomatikleştirmek | **Scheduled Tasks** (Pro ve Max'te yeni görevler bulutta çalışır) |
+| Güncel bilgi, mevzuat ya da fiyat araştırması | **Web Arama**, bkz. [Web Arama](/wiki/araclar/web-arama/) |
+| Yazmaktansa konuşmayı tercih ediyorsanız | **Voice Mode** (Türkçe desteklemiyor, bkz. [Voice Mode](/wiki/araclar/voice-mode/)) |
+
+![Hangi araç ne zaman: altı ihtiyaç ve karşılık gelen araç; sohbet, masaüstü ve Cowork, Office eklentileri, Claude in Chrome, mobil Cowork, zamanlanmış görevler](/images/wiki/araclar-hangi-arac.svg)
 
 ## İki Temel Ayrım
 
-Araçlar kavramsal olarak iki gruba ayrılır. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude arayüzünde birleşiyor (kademeli yayılım). Bu yüzden ayrım giderek ürün seçimi değil, **iş türü** ayrımına dönüşüyor:
+Araçlar kavramsal olarak soru-cevap ağırlıklı (Chat, Projects, Voice Mode) ve çalışma ağırlıklı (Desktop, Cowork, Scheduled Tasks) diye iki gruba ayrılır. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude arayüzünde birleşiyor (kademeli yayılım), bu yüzden ayrım giderek ürün seçimi değil **iş türü** ayrımına dönüşüyor. Karşılaştırma tablosu tek yerde, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında.
 
-### 1. Soru-Cevap Ağırlıklı (Claude Chat + Projects + Voice Mode)
-
-Tarayıcı veya mobil uygulamada yaşar. Kurulum gerektirmez. Belge yükleme, konuşma geçmişi, web araması gibi özellikler vardır. Klasik sohbet arayüzünde **yerel dosyalarınıza erişmez, otomasyon yapmaz, skill kullanmaz**; birleşik arayüzde bu işler aynı konuşmadan yapılabilir.
-
-Hızlı iş, mobil kullanım, ekiple paylaşılan kalıcı bağlam için güçlüdür.
-
-### 2. Çalışma Ağırlıklı (Desktop + Cowork + Dispatch + Scheduled Tasks)
-
-Yerel dosya erişimi için Claude Desktop kurulumu gerektirir (Cowork web ve mobilde de beta olarak var) ve en az Pro aboneliğine dayanır (yeni başlayan kullanıcı için ilk ay Max 5x önerilir). **Yerel dosyalara erişir, kod çalıştırır, skills ve plugins kullanır, connector'lar ile şirket araçlarınıza bağlanır, zamanlanmış görevler oluşturur.**
-
-Gerçek iş akışları burada kurulur.
+Kısa özet: sohbet kurulum gerektirmez; dosya yükleme, web araması, artifact, skill ve kod çalıştırma claude.ai'de Free dahil tüm planlarda vardır. Yerel klasörlerle çalışmak, connector'larla şirket araçlarına bağlanmak ve zamanlanmış görev kurmak ise Cowork ister; Cowork en az Pro abonelik gerektirir. Yeni başlayan kullanıcı için ilk ay Max 5x önerilir (öneri, zorunlu değil).
 
 ## Önerilen Adaptasyon Yolu
 
 Tipik bir yeni kullanıcı şu sırayı izler:
 
-1. **Hafta 1:** Claude Desktop kurulur → Cowork açılır → CLAUDE.md yazılır → ilk gerçek iş çıktısı üretilir
+1. **Hafta 1:** Claude Desktop kurulur → Cowork açılır → klasöre CLAUDE.md yazılır (ve profil talimatı doldurulur) → ilk gerçek iş çıktısı üretilir
 2. **Hafta 2:** Role göre skill'ler ve plugin'ler keşfedilir → ilk connector kurulur (Slack, Drive veya CRM)
-3. **Hafta 3-4:** İlk zamanlanmış görev (haftalık rapor) → telefondan görev atma (Dispatch yeni kullanıcılara kapalı olduğu için mobil Cowork betasıyla)
+3. **Hafta 3-4:** İlk zamanlanmış görev (haftalık rapor) → telefondan görev atma (Dispatch yeni kullanıcılara kapalı olduğu için mobil Cowork betasıyla, bkz. [Claude Mobil](/wiki/araclar/claude-mobil/))
 4. **Ay 2-3:** Prompt kütüphanesi büyür, iş akışlarının 2-3 tanesi tamamen otomatikleşir, çalışan işi yeniden tasarlar
 
 Bu sıra tesadüfi değil. Önce temel, sonra genişleme, en sonda otomasyon gelir; bu dizilim öğrenme eğrisini doğal akışta tutar.
@@ -128,7 +155,11 @@ Bu sıra tesadüfi değil. Önce temel, sonra genişleme, en sonda otomasyon gel
 
 Araçları tanıdıysanız:
 
-- [**CLAUDE.md**](/wiki/claude-md/): Cowork'ü gerçekten etkili kılan kalıcı hafıza dosyası
+- [**CLAUDE.md ve Kalıcı Talimat**](/wiki/claude-md/): Claude'a kendinizi bir kez tanıtmanın yolları: profil talimatı, proje, klasörde CLAUDE.md
 - [**Prompting**](/wiki/prompting/): Araç ne olursa olsun, iyi prompt yazabilmek
 - [**Yetenekler**](/wiki/yetenekler/): Cowork içinde Skills, Artifacts, Agents
+- [**Pilot ve Yaygınlaştırma**](/wiki/temeller/pilot-ve-yayginlastirma/): araçları ekipte denemek ve kurum geneline açmak
+- [**Takım ve Admin**](/wiki/temeller/takim-ve-admin/): Team ve Enterprise'ta yönetici ayarları
+- [**Claude bölümü**](/claude/): ürün tanıtımları, hangi planda ne var
+- [**Türk İş Araçları**](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt gibi yerel yazılımlarla çalışmak
 

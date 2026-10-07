@@ -6,7 +6,7 @@ tags:
   - politika
   - kvkk
   - guvenlik
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **"AI kullanımına dair şirket politikamız var mı?"** sorusu denetim, müşteri sözleşmesi, KVKK denetimi veya iş kazası anında çıkar. Cevap "yok" ise sorun olur. Bu sayfa pratik bir politika şablonu sunar.
@@ -51,7 +51,7 @@ Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesap
 | **Gizli (Confidential)** | Müşteri verileri, finansal sırlar, hukuki süreç, sağlık bilgisi, ticari sırlar | ❌ Asla |
 
 **İç bilgi için koşullar:**
-- Sadece [Takım veya Enterprise plan](/wiki/temeller/takim-ve-admin/) hesabı üzerinden girilir
+- Şablonun tercihi: yalnız [Team veya Enterprise plan](/wiki/temeller/takim-ve-admin/) hesabı üzerinden girilir (merkezi yönetim ve veri kontrolü için önerilir; şirketiniz farklı karar verebilir)
 - Planın [DPA](/wiki/departmanlar/hukuk/) kapsamında olması gerekir (Team ve Enterprise'ta DPA ticari şartlara otomatik dahildir, ayrıca imza gerekmez; Free, Pro ve Max kapsam dışıdır)
 - Çalışan veri girmeden önce verinin **niteliğini** kontrol eder
 
@@ -87,7 +87,22 @@ Aşağıdakiler **iş amaçlı Claude kullanımında kesin yasaktır** (Bölüm 
 
 Şüphedeyseniz **Claude'a girmeden önce sorun.** Yöneticinize veya [Hukuk departmanı](/wiki/departmanlar/hukuk/)'na danışın.
 
-### 6. Çıktı Sorumluluğu
+### 6. Bağlantılar, Tarayıcı ve Bilgisayar Kontrolü
+
+Claude'a araç yetkisi verdikçe risk de büyür. Bu bölüm o yetkilerin kim tarafından, hangi koşulda açılacağını belirler:
+
+- **Connector, MCP ve eklentiler:** Yalnız [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) onaylı listedeki olanlar kurulur. Connector'lar dış servislere Anthropic'in bulutu üzerinden ulaşır. Yazma yetkisi (e-posta, mesaj ya da dosya gönderme, düzenleme) okuma yetkisinden ayrı onaylanır. Yeni connector isteği BT'ye başvuruyla açılır
+- **Claude in Chrome:** [Rol veya birim listesi] kullanabilir. Bankacılık, sağlık kayıtları ve başkasıyla paylaşılmayacak şifreler gibi işlerde kullanılmaz. Claude'un sorduğu her onay okunur, beklenmedik davranışta işlem durdurulur ([Claude for Chrome](/claude/chrome/))
+- **Computer use (bilgisayar kontrolü):** Research preview aşamasındadır ve yalnız Pro ve Max'te vardır. [Rol listesi] dışında kullanılmaz, ekranda gizli sınıfta veri açıkken başlatılmaz
+- **Prompt injection:** Claude'un okuduğu bir web sayfası, e-posta ya da PDF içine gizlenmiş talimat olabilir. Güvenilmeyen kaynaklar üzerinde Claude'a eylem yetkisi verilmez; para, veri gönderme ya da silme gibi geri dönüşü olmayan adımlar insan onayı olmadan yapılmaz ([Sınırlamalar](/wiki/temeller/sinirlamalar/))
+
+### 7. Hafıza, Paylaşım Linkleri ve Bulutta Çalışan Görevler
+
+- **Hafıza:** Free, Pro ve Max'te varsayılan açık, Team ve Enterprise'ta varsayılan kapalıdır (owner kontrolünde). Şirket tercihini yazın: [açık / kapalı]. Açıksa hafızaya müşteri adı, kişisel veri ve gizli bilgi kaydettirilmez; hafıza listesi [üç ayda bir] gözden geçirilir
+- **Herkese açık paylaşım linkleri:** Sohbet ve artifact'ler link ile dışarı açılabilir. İç ya da gizli sınıf içerik için herkese açık link üretilmez; kurumsal planlarda bu izin admin ayarıdır ([Takım ve Admin](/wiki/temeller/takim-ve-admin/))
+- **Bulutta çalışan Cowork görevleri:** 6 Ekim 2026'dan itibaren Pro ve Max'te yeni Cowork görevleri bulutta çalışır, "yalnızca bilgisayarınızda" seçeneği kalkar. Yerel dosyalarda gizli sınıf veri bulunan bilgisayarlarda bireysel Pro/Max hesabıyla Cowork görevi başlatılmaz
+
+### 8. Çıktı Sorumluluğu
 
 Claude **araç**tır. Çıktının doğruluğundan, uygunluğundan, etik standartlardan **çalışan sorumludur.**
 
@@ -100,7 +115,7 @@ Kurallar:
 
 [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence (özen)** bacağı çalışanın bu sorumluluğunu somutlar.
 
-### 7. Atıf ve Şeffaflık
+### 9. Atıf ve Şeffaflık
 
 İç dokümanlar için: çalışan Claude'u kullandığını gizlemez ama her cümlede belirtmez de. Şirket politikası iki yaklaşımdan birini seçmeli:
 
@@ -109,16 +124,16 @@ Kurallar:
 
 Müşteri sözleşmelerinde, akademik raporlarda, basın bültenlerinde **A modeli** önerilir.
 
-### 8. Saklama ve Silme
+### 10. Saklama ve Silme
 
-- **Sohbet geçmişi:** Anthropic standart politikası; [Enterprise plan](/wiki/temeller/takim-ve-admin/)'da özel saklama ayarı yapılabilir
+- **Sohbet geçmişi:** Anthropic standart politikası (silinen sohbet 30 gün içinde arka uçtan temizlenir, ayrıntı [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)); [Enterprise plan](/wiki/temeller/takim-ve-admin/)'da özel saklama ayarı yapılabilir
 - **İndirilen dosyalar:** Şirket bilgisayarında saklanan Claude çıktıları, **şirket dosya sınıflandırma standartlarına** göre saklanır
 - **Hassas içerik:** İşi biten projede ilgili sohbet ve dosyalar silinir
 - **Çalışan ayrılırsa:** Hesabı kapatılır, sohbet geçmişi şirket politikasına göre silinir veya arşivlenir
 
 [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/) sayfası teknik akışı verir.
 
-### 9. Eğitim Zorunluluğu
+### 11. Eğitim Zorunluluğu
 
 Bu politika imzalandıktan sonra çalışan, [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip etmeyi taahhüt eder. Ek olarak şirketin sağladığı eğitim:
 
@@ -126,7 +141,7 @@ Bu politika imzalandıktan sonra çalışan, [İlk 7 Gün](/wiki/temeller/ilk-7-
 - Çeyreklik içsel paylaşım toplantıları
 - Yıllık politika tazeleme
 
-### 10. İhlal ve Disiplin
+### 12. İhlal ve Disiplin
 
 Politika ihlali durumunda izlenecek süreç:
 
@@ -137,7 +152,7 @@ Politika ihlali durumunda izlenecek süreç:
 
 İhlaller için bildirim hattı: [E-posta veya kanal], anonim de bildirilebilir.
 
-### 11. Politika Sahipliği ve Güncelleme
+### 13. Politika Sahipliği ve Güncelleme
 
 - **Sahip:** [Pozisyon: örn. CIO, BT Müdürü, İK Direktörü]
 - **Onaylayan:** [Üst yönetim]
@@ -179,6 +194,71 @@ Bu politika tek başına yetmez; aşağıdaki belgelerle uyumlu olmalı:
 - **Bilgi güvenliği politikası**: varsa, AI bölümü eklensin
 
 [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası bu uyum işini detaylandırır.
+
+## Kopyala-Yapıştır Şablon
+
+Aşağıdaki metni kendi belgenize yapıştırıp `[köşeli parantez]` alanlarını doldurun. Sektörünüze göre uyarlayın, hukuk müşaviriyle gözden geçirin.
+
+```text
+[ŞİRKET ADI] YAPAY ZEKA (CLAUDE) KULLANIM POLİTİKASI
+Sürüm: [versiyon] | Sahip: [pozisyon] | Onaylayan: [üst yönetim]
+İlk yayım: [tarih] | Sonraki gözden geçirme: yıllık
+
+1. KAPSAM
+Politika, çalışanların, taşeronların ve stajyerlerin iş amacıyla AI
+asistanı kullanımı için geçerlidir. Kişisel kullanım kapsam dışıdır.
+
+2. ONAYLI ARAÇLAR
+Onaylı araç: Claude ([plan adı]). Kullanıcı yönetimi: [admin adı].
+Kişisel hesapla iş amaçlı AI kullanımı onaylı değildir.
+Bireysel hesaplarda "Claude'u geliştirmeye yardım et" ayarı kapalı olmalıdır.
+
+3. VERİ SINIFLARI
+Açık: Claude'a girilebilir.
+İç: yalnız [Team/Enterprise] hesabıyla ve DPA kapsamında girilebilir.
+Gizli: girilemez. Tek istisna: [Hukuk]'un yazılı onayladığı Enterprise senaryoları.
+
+4. KİŞİSEL VERİ (KVKK)
+Müşteri ve iş ortağı kişisel verisi; aydınlatma metni, KVKK m.5 işleme şartı
+ve hukukun onayladığı yurt dışı aktarım dayanağı (m.9) yoksa girilemez.
+Çalışan kişisel verisi anonimleştirilerek girilir.
+
+5. YASAK İÇERİK
+Müşteri gizli belgeleri (yazılı izin olmadan), finansal sırlar, açıklanmamış
+kararlar, İK disiplin ve sağlık belgeleri, hukuki süreç dosyaları, Ar-Ge çıktıları.
+
+6. BAĞLANTILAR, TARAYICI, BİLGİSAYAR KONTROLÜ
+Yalnız BT onaylı connector, MCP ve eklentiler kurulur; yazma yetkisi ayrıca onaylanır.
+Claude in Chrome: [roller]; bankacılık, sağlık kaydı, paylaşılmayacak şifre işlerinde yasak.
+Computer use: [roller]; ekranda gizli veri varken başlatılmaz.
+Güvenilmeyen kaynakta eylem yetkisi verilmez; geri dönüşsüz adımlar insan onayı ister.
+
+7. HAFIZA, PAYLAŞIM, BULUT GÖREVLERİ
+Hafıza: [açık/kapalı]; açıksa kişisel veri ve gizli bilgi kaydettirilmez.
+İç ve gizli içerik için herkese açık paylaşım linki üretilmez.
+Gizli veri bulunan bilgisayarda bireysel Pro/Max ile Cowork görevi başlatılmaz.
+
+8. ÇIKTI SORUMLULUĞU
+Çıktıdan çalışan sorumludur. Kontrolsüz çıktı müşteriye, iş ortağına veya
+kamuya gitmez. Rakamlar kaynakla doğrulanır.
+
+9. ATIF
+[A modeli / B modeli].
+
+10. SAKLAMA VE SİLME
+Biten projedeki hassas sohbet ve dosyalar silinir. Ayrılan çalışanın
+hesabı kapatılır, geçmişi [sil/arşivle].
+
+11. EĞİTİM
+Yeni başlayanlar onboarding alır; çeyreklik paylaşım, yıllık tazeleme yapılır.
+
+12. İHLAL
+Yazılı uyarı, ikinci uyarı ve eğitim, ciddi ihlalde İK ve hukuk yönlendirmesi.
+Bildirim hattı: [e-posta/kanal] (anonim bildirim mümkündür).
+
+Okudum, anladım, kabul ediyorum.
+Ad-soyad: [ ]  Tarih: [ ]  İmza: [ ]
+```
 
 ## Mini Versiyon: 1 Sayfa
 

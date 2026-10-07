@@ -1,5 +1,6 @@
 ---
 title: "Bilgi Teknolojileri: Claude Uygulamaları"
+seoTitle: "BT Ekibinde Claude: Script, Runbook, Post-mortem ve KVKK Dokümanı"
 description: "IT ekibi için Claude: teknik dokümantasyon, incident raporu, PowerShell script'leri, KVKK teknik uyum. Kod yazmayan sysadmin için bile değerli."
 tags:
   - departmanlar
@@ -7,7 +8,7 @@ tags:
   - bilgi-teknolojileri
   - powershell
   - kvkk
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 IT departmanı Claude konusunda iki yeni bakış açısıyla tanışmalıdır:
@@ -46,15 +47,15 @@ Tekrar eden görevler için adım adım operasyonel prosedürler. **On-call pers
 
 Sysadmin neyi otomatize etmek istediğini tarif eder, Claude çalışan bir PowerShell, Bash veya Python script'i üretir. **Script'i çalıştırmadan önce siz doğrular ve test edersiniz, körü körüne çalıştırmazsınız.**
 
-Deneyimimizde bu tek yetenek IT ekibine haftada saatler kazandırır.
+**Zamana notu:** eğitim materyalimizde bu tek yetenek IT ekibine haftada saatler kazandıran kalem olarak geçer; örnek aşağıda (Gerçek Örnek).
 
-> **Bash tool notu:** Cowork'teki Bash tool script çalıştırmaya izin verir. Pratik kural: "İhtiyacınızı anlatın, Claude script'i yazar; siz sonucu doğrularsınız." Kod yazmayı öğrenmeniz gerekmez, sonucun işe yaradığını doğrularsınız.
+> **Script çalıştırma notu:** Claude'un kod çalıştırma ve dosya oluşturma özelliği Claude'un kendi ortamında çalışır; Team ve Enterprise'ta ağ erişimi varsayılan kapalıdır. Yani 50 sunucunuza bağlanan script'i Claude değil, siz kendi ağınızda çalıştırırsınız. Pratik kural: "İhtiyacınızı anlatın, Claude script'i yazar; siz sonucu doğrularsınız." Kod yazmayı öğrenmeniz gerekmez, sonucun işe yaradığını doğrularsınız.
 
 ## Bölüm 2: İletişim ve Raporlama
 
 **Teknik → teknik olmayan çeviri.** Teknik gerçekliği Claude'a verirsiniz; karşılığında bilgisayar mühendisliği bilgisi gerektirmeyen ama doğru bir yönetim düzeyi açıklama alırsınız.
 
-**Incident raporları.** Yapılandırılmış, net, suçlamasız post-mortem formatı: ne oldu, ne zaman, etki, kök neden, çözüm, önleme.
+**Incident raporları.** Yapılandırılmış, net, suçlamasız post-mortem formatı: ne oldu, ne zaman, etki, kök neden, çözüm, önleme. **Süre:** elle 2-3 saat, Claude ile 30-45 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 **IT proje durum raporları.** Mühendislik ekibi için değil, **zaman çizelgesi, maliyet ve risklerle ilgilenen iş paydaşları** için yazılmış.
 
@@ -76,7 +77,7 @@ Deneyimimizde bu tek yetenek IT ekibine haftada saatler kazandırır.
 
 IT, kişisel veri işleyen bir sistem dağıttığında veya değiştirdiğinde **KVKK uyumu için veri akışlarını, depolama konumlarını, erişim kontrollerini ve saklama sürelerini dokümante etmek zorundadır**.
 
-Claude, IT personelinin teknik bilgisinden bu veri işleme faaliyet kayıtlarını (**VERBİS ile uyumlu**) üretmesine yardım eder: yapılandırılmış, eksiksiz ve hukuk ekibinin ya da KVKK uyum sorumlusunun inceleyebileceği biçimde. Son kontrol onlarındır.
+Claude, IT personelinin teknik bilgisinden bu veri işleme faaliyet kayıtlarının **taslağını** üretmesine yardım eder; kayıtlar, VERBİS'e girilen bilgilerin dayandığı veri envanteriyle aynı alanları (veri kategorisi, amaç, saklama süresi, aktarım) kapsayacak biçimde yapılandırılır. VERBİS kaydını ve güncellemesini Claude yapmaz; hukuk ekibi ya da KVKK uyum sorumlusu inceler ve kaydı kendisi yapar. Son kontrol onlarındır.
 
 ### Help Desk Ticket Kalitesi
 
@@ -106,7 +107,7 @@ Claude yardımcı olur: "iyi ticket nasıl yazılır" rehberi + yaygın talep ti
 **Skills:**
 - `docx`: politikalar, runbook'lar, raporlar
 - `pdf`: kurumsal dokümantasyon
-- **Bash tool** (Cowork'te): script yazım ve test
+- **Kod çalıştırma** (code execution): script mantığını küçük örnek veriyle denemek; gerçek sunucularda test sizin ortamınızda yapılır
 - `operations:runbook`: adım adım operasyon prosedürleri
 
 **Connector'lar:**
@@ -122,7 +123,7 @@ Claude yardımcı olur: "iyi ticket nasıl yazılır" rehberi + yaygın talep ti
 - **Dokümantasyon kültürü değişimi**: dokümantasyonu backlog değil alışkanlık yapmak
 - **Incident yönetim süreci**: olay → tespit → kök neden → rapor → önleme
 - **Change request iş akışı**: her değişiklik yapılandırılmış dokümantasyonla
-- **KVKK teknik uyum dokümantasyonu**: sistem değişikliklerinde otomatik VERBİS güncellemesi
+- **KVKK teknik uyum dokümantasyonu**: sistem değişikliğinde veri envanteri taslağının güncellenmesi, VERBİS değişikliği gerekiyorsa hukuk/uyum sorumlusuna iletilmesi
 
 ## Gerçek Örnek: Script Yardımı
 
@@ -140,13 +141,25 @@ Sysadmin her Pazartesi sabahı 50 sunucunun disk kullanım durumunu elle kontrol
 
 **Adım 5:** Script'i Windows Zamanlanmış Görev olarak kurar; her Pazartesi sabah 08:00'da otomatik çalışır ve raporu e-postayla gönderir.
 
-Toplam süre: 45 dakika (bir kereye mahsus). Bundan sonra her hafta sıfır dakika, rapor kendiliğinden gelir.
+**Süre:** script bir kereye mahsus 45-60 dakika (yazım, gözden geçirme ve test dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Haftalık elle kontrol 60-90 dakika sürüyordu (50 sunucu varsayımıyla); bundan sonra rapor kendiliğinden gelir. Bu kontrol her hafta yapılıyorsa yılda kabaca 50-80 saat, script'in bakımı hariç.
+
+## Sık Hatalar
+
+Eğitimlerde BT ekiplerinin en çok takıldığı üç nokta (Zamana eğitim materyali):
+
+- **Script'i körü körüne çalıştırmak.** Claude'un ürettiği script test edilmeden canlı ortama girmez; özellikle silme ve değiştirme komutlarında.
+- **Var olmayan komut ya da kütüphane.** Claude olmayan bir modül, parametre ya da fonksiyon önerebilir. Derleme ve çalıştırma testi şarttır.
+- **Hassas yapılandırma.** Şifre, API anahtarı ve iç IP adreslerini prompt'a yazmadan önce temizleyin. Şirket yapılandırması işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
 
 ## İlgili Sayfalar
 
-- [Cowork](/wiki/araclar/cowork-modu/): Bash tool ve script çalıştırma
+- [Cowork](/wiki/araclar/cowork-modu/): dosya ve görev otomasyonu
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Script'lerin otomasyonu
-- [Computer Use](/wiki/yetenekler/computer-use/): API olmayan sistemlerde (Pro ve Max'te research preview)
+- [Computer Use](/wiki/yetenekler/computer-use/): API olmayan sistemlerde (research preview, yalnız Pro ve Max; Team ve Enterprise'ta yok)
 - [Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/): Tarayıcı ve Microsoft 365 içinde Claude
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): VERBİS uyum detayları
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): KVKK genel çerçevesi
+- [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/): Claude'a kişisel veri girmeden önce
+- [Kodlama: yazılım ekiplerinde Claude](/kurumsal/kodlama/): geliştirici ekipler için kurumsal sayfa
+- [Kurumlar için Claude Code](/kurumsal/claude-code/): merkezi yönetim, SSO, politika
+- [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): kendi zaman kazancınızı hesaplayın
 

@@ -1,5 +1,6 @@
 ---
 title: "Liderlik ve Yönetim: Claude Uygulamaları"
+seoTitle: "Yöneticiler İçin Claude: Uzun Raporu Özetleme, Karar Memosu, Due Diligence"
 description: "Üst yönetim için Claude: stratejik düşünme ortağı, bilgi sentezi, yönetim kurulu iletişimi, M&A due diligence. \"100 sayfayı 10 dakikada oku\" anı."
 tags:
   - departmanlar
@@ -7,7 +8,7 @@ tags:
   - yonetim
   - strateji
   - ma
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Üst yönetim için Claude'un sağladığı zaman kazancı en belirgin olanlardandır. Sebep basit: **yöneticinin günü büyük ölçüde bilgi tüketmek, karar vermek ve iletişim kurmaktan oluşur**; bu üçü Claude'un en güçlü olduğu alanlardır.
@@ -131,7 +132,15 @@ Yönetim kurulu toplantısı Perşembe. Ön paket 4 PDF, toplam 147 sayfa. Hakan
 
 **Adım 3:** Hakan Bey brifingi 10 dakikada okur ve toplantıya hazır girer.
 
-Toplam süre: yaklaşık 15 dakika (örnek senaryo). Alternatif: Hakan Bey 147 sayfayı okumaya çalışır (3-4 saat) ve bunu gerçekten yapıp yapmayacağı belli değildir.
+**Süre:** 147 sayfayı elle okumak 3-4 saat; brifing 5-10 dakikada hazırlanır, kritik rakamların kaynak sayfadan kontrolüyle 15-30 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Hakan Bey'in 147 sayfayı gerçekten okuyup okumayacağı ise belli değildir.
+
+## Sık Hatalar
+
+Eğitimlerde yöneticilerin en çok takıldığı üç nokta (Zamana eğitim materyali):
+
+- **"Claude'a karar verdir" yanılgısı.** Claude düşünme ortağıdır, karar verici değil. Sorumluluk kararda, yani sizde kalır.
+- **Hassas yönetim kurulu ve strateji bilgisi.** Maaş, stratejik plan ve birleşme-satın alma bilgisini prompt'a girmeden önce şirket politikanıza bakın. Bu tür veri işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
+- **Çok uzun özet.** Bir sayfa istersiniz, beş sayfa gelir. Talimata "300 kelime altı, en çok 5 madde" gibi bir kısıt yazın.
 
 ## İlgili Sayfalar
 
@@ -139,4 +148,7 @@ Toplam süre: yaklaşık 15 dakika (örnek senaryo). Alternatif: Hakan Bey 147 s
 - [Context ve Compaction](/wiki/yetenekler/context-compaction/): Uzun belgeleri özetleme
 - [İdari İşler](/wiki/departmanlar/idari-isler/): Yönetici asistanının Claude kullanımı
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Düşünme ortağı Description boyutu
+- [Yönetici AI Hazırlık](/programlar/ceo-brifing/): yöneticiler için 3 saatlik tek oturum
+- [Pilot ve Yaygınlaştırma](/wiki/temeller/pilot-ve-yayginlastirma/): şirket genelinde Claude'a geçişin yönetimi
+- [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): kendi zaman kazancınızı hesaplayın
 

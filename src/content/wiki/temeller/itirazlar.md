@@ -4,12 +4,12 @@ description: "Claude'u kullanmaya başlarken yönetimden, IT'den, hukuktan ve ç
 tags:
   - temeller
   - itirazlar
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Claude'u profesyonel hayatınıza getirirken karşılaşılan tipik itirazlar ve dürüst cevapları. Şirket içinde bir karar oturumundan önce, ya da kendi kendinize "değer mi, riski ne, başarabilir miyim" diye sorarken bu sayfa kaynak olabilir.
 
-Bölümler paydaşa göre düzenlendi: yönetim, IT, hukuk, finans, IT güvenlik ve çalışanlar.
+Bölümler paydaşa göre düzenlendi: yönetim, IT, hukuk, finans, IT güvenlik, İK, satın alma, KVKK sorumlusu ve çalışanlar.
 
 ---
 
@@ -23,6 +23,20 @@ Yapay zeka bir moda değil, **üretkenlik altyapısının bir katmanı**. Nasıl
 
 Erken adapte edenler zamanla birikmiş bir öğrenme avantajı kazanır. Saha gözlemimize göre Türkiye'deki orta ölçekli şirketlerin çoğu henüz sistematik başlamadı, **pencere şu an açık**.
 
+### "Zaten Microsoft Copilot (ya da Gemini) var. Claude çift yatırım olmaz mı?"
+
+**Cevap:**
+
+Aynı kategori değiller, çoğu kurum ikisini yan yana kullanıyor. Copilot ve Gemini, Office ve Workspace **uygulamasının içinde yerinde yardım** için güçlü: Outlook'ta yanıt yazmak, Excel'de formül üretmek, Teams toplantısını özetlemek, Gmail'de taslak çıkarmak. Claude ise **sıfırdan üretim ve analiz** tarafında öne çıkar: uzun belge incelemesi, çok adımlı analiz, hukuki taslak, otomasyon.
+
+Üç pratik not:
+
+- **Claude Office'e bağlanır.** Excel, PowerPoint ve Word eklentileri genel kullanımda, Outlook eklentisi public beta; ayrıca Microsoft 365 connector vardır. Ayrıntı: [Claude for Microsoft 365](/claude/microsoft-365/)
+- **Tek tedarikçi istiyorsanız** bunu dürüstçe tartın: toplantı özeti ve Outlook içi yardım gibi işlerde Copilot yeterli olabilir. Karar işin türüne göre verilir
+- **Çift yatırımı önlemenin yolu pilot:** 6 kişilik bir ekiple, kendi gerçek işlerinizde iki aracı yan yana deneyin ve [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) ile karar verin. Mevcut Copilot ya da Gemini aboneliğinizi pilot için iptal etmeniz gerekmez
+
+Ayrıntılı kıyaslar: [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/) ve [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/).
+
 ### "Personelimiz zaten meşgul. Bir yazılıma zaman harcayamazlar."
 
 **Cevap:**
@@ -30,6 +44,8 @@ Erken adapte edenler zamanla birikmiş bir öğrenme avantajı kazanır. Saha g�
 Doğru tasarlanan bir Claude eğitiminde çalışanın **mevcut işleri üzerinde** çalışılır, hayali egzersizlerde değil. İlk oturumdan itibaren çalışan gerçek bir teklifi, gerçek bir raporu Claude'la üretir. 30 dakika eğitim, 30 dakika tasarruf.
 
 İki hafta sonra çalışan **eğitim öncesi harcadığı zamanın fazlasını kazanmaya başlar**.
+
+Somut bir yatırım: [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberi günde 30-60 dakika ister, yani ilk hafta toplam yaklaşık 5 saat. Karşılığında örnek işlerin süresi şöyle (hepsi *Zamana gözlemi, tipik aralık*): önemli bir e-posta elle 15-20 dakika, Claude ile 3-5 dakika ([İdari İşler](/wiki/departmanlar/idari-isler/)); toplantı tutanağı ve kişiye özel takip e-postaları elle 2-3 saat, Claude ile 30-40 dakika. Kazancı büyük bir yatırım yapmadan ölçmek için pilot kullanın: katılımcılar haftada yalnızca 20 dakikalık bir toplantı ve 5 dakikalık bir anket için zaman ayırır ([Pilot ve Yaygınlaştırma](/wiki/temeller/pilot-ve-yayginlastirma/)).
 
 ### "Bu yatırımın geri dönüşünü nasıl ölçeceğim?"
 
@@ -41,7 +57,9 @@ Doğru tasarlanan bir Claude eğitiminde çalışanın **mevcut işleri üzerind
 2. **Tekrar eden görevlerin kaçı otomatize oldu** (scheduled task sayısı)
 3. **Çıktı kalitesi**: ekip liderlerinin subjektif değerlendirmesi
 
-Örnek senaryo (bir garanti değil, kendi ölçümünüzle doğrulayın): çalışan başına haftada **8-15 saat** kazanım varsayalım. 6 çalışan × 10 saat = haftada 60 saat × aylık 4 hafta = **aylık 240 saat**. Ortalama çalışan maliyetinizle çarpın, yatırım geri dönüşü genelde ilk çeyrekte karşılanır.
+Referans olarak [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasındaki beyana dayalı aralıklar: orta kullanıcıda (günde 30-60 dakika Claude) haftada 5-8 saat, yoğun kullanıcıda 8-15 saat. Aynı sayfadaki kapalı isimli vakalardan biri, 8 çalışanlı bir gıda üreticisinde 90 gün sonunda çalışan başı haftada ortalama 9 saat; bir diğeri, 12 çalışanlı bir hukuk bürosunda 3 ay sonra avukat başına haftada 7 saat. Pilotta başarı eşiğini önceden yazın: örneğin 2. hafta sonunda katılımcıların en az %80'i haftada en az 3 gün kullanıyor olsun (Zamana'nın önerdiği örnek eşik, evrensel ölçü değil).
+
+Bir garanti vermiyoruz: kazanım ekibe ve işe göre değişir, kendi ölçümünüzle doğrulayın. Kendi ekip büyüklüğünüz ve saat ücretinizle hesap yapmak için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) sayfasını kullanın; ölçüm yöntemi için [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/).
 
 ### "Rakiplerimiz de kullanacak. Fark neresinde?"
 
@@ -85,7 +103,7 @@ Yaygın yanlış anlaşılma: "AI'ya verilen her şey eğitimde kullanılır." C
 2. **API'si olmayan eski sistemler**: [Computer Use](/wiki/yetenekler/computer-use/) ile Claude ekrandan kullanabilir (Logo, Netsis, eski ERP'ler için). Dikkat: Computer Use research preview aşamasında ve yalnızca Pro ve Max planlarında, masaüstü uygulamasında çalışıyor; Team ve Enterprise'ta yok. Kritik üretim süreçlerinde tek dayanak yapmayın.
 3. **Özel şirket içi sistemler**: MCP protokolü açık standarttır, IT ekibiniz veya entegrasyon ortağınız özel connector yazabilir.
 
-Türkiye'deki orta ölçekli şirketlerin çoğu için birinci seviye yeterli.
+Türkiye'deki orta ölçekli şirketlerin çoğu için birinci seviye yeterli. Bireysel kullanıcı için bir connector'ın OAuth bağlantısı yaklaşık 5 dakikalık iştir ([İlk 7 Gün](/wiki/temeller/ilk-7-gun/)); kurum genelinde hangi connector'ların açılacağı ise ayrıca bir politika kararıdır.
 
 ### "Başka bir yazılımı öğrenmek için zaman yok."
 
@@ -94,6 +112,8 @@ Türkiye'deki orta ölçekli şirketlerin çoğu için birinci seviye yeterli.
 Claude bir "yazılım" değil, **konuşma arayüzü**. Menü yok, karmaşık ayar yok. Türkçe konuşursunuz, Claude cevap verir. Eğitim eğrisi **Excel'den çok daha düşük**.
 
 Doğru rehberlikle çalışanın **birinci oturum sonunda** gerçek bir iş çıktısı üretmesi mümkündür. İki hafta sonra çalışan Claude'u doğal refleksle kullanıyor olur.
+
+Beklenen öğrenme yükü: [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberinde günde 30-60 dakika, ilk hafta toplam yaklaşık 5 saat. Rehberin ilk günü tek bir gerçek işi yapıp "Claude olmadan kaç dakika sürerdi, şimdi kaç dakika sürdü" notunu almakla biter; yani öğrenme süresini ilk günden kendi işinizde ölçersiniz.
 
 ---
 
@@ -121,6 +141,8 @@ Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/), sektörel ek bölümü
 
 Claude hukuki metinler için **süper hızlı ilk-taslak yazıcıdır**. Avukat her kelimeyi inceler, imzasını atar, sorumluluğu üstlenir. Bu "Claude kullanıyoruz o zaman iş rahat" değil, "Claude sayesinde avukat saatlerini yazım yerine yargı ve değerlendirmeye ayırıyor" demektir.
 
+Kontrolün süresi de hesaba girer ve atlanmaz. [Hukuk](/wiki/departmanlar/hukuk/) sayfasındaki tipik aralıklar (Zamana gözlemi): 40 sayfalık bir sözleşmede madde çıkarımı elle 2-3 saat, Claude ile 20-30 dakika; bir KVKK başvuru yanıtının taslağı elle 45-60 dakika, Claude ile 10-15 dakika, üstüne hukuk kontrolü 15-30 dakika. Sözleşmedeki her alıntı metinden ayrıca doğrulanır. Kazanç taslak yazımındadır, sorumlulukta değil.
+
 Detay: [Claude'un Sınırları](/wiki/temeller/sinirlamalar/).
 
 ### "Bir müfettiş 'Claude'u kullanıyor musunuz' diye sorarsa ne cevap vereceğiz?"
@@ -139,34 +161,25 @@ Müfettişin sorabileceği 10 standart soru ve cevapları: [Gizlilik ve KVKK](/w
 
 **Cevap:**
 
-3 aylık abonelik hesabı (6 çalışan):
+Abonelik maliyeti ekip büyüklüğüne ve kullanım yoğunluğuna göre değişir. Plan karşılaştırması ve örnek ekip hesabı tek yerde duruyor: [Claude Planları](/wiki/temeller/planlar/). Fatura ve vergi tarafı için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/).
 
-- İlk ay: 6 Claude **Max 5x** aboneliği × $100 = **$600**
-- Ay 2-3: Kullanıma göre karma yapı (tipik ~2 Max 5x + ~4 Pro aylık $280; 3 Max 5x + 3 Pro aylık $360) × 2 ay ≈ **$560-720**
-- Toplam abonelik (3 ay): **~$1.160-1.320**
+**"İlk ay neden Max 5x öneriliyor?"** Yeni kullanıcı ilk ayda agresif keşfeder, connector kurar, skill dener, saatlerce oturur. Pro limiti birkaç saatlik yoğun kullanımda dolabilir ve "çalışmıyor" yanlış algısı vazgeçirir. Bu yüzden yeni başlayanlara ilk ay Max 5x öneriyoruz; zorunlu değil. İkinci aydan itibaren gerçek kullanıma göre hafif kullananlar Pro'ya inebilir.
 
-**"Neden Pro değil, Max 5x?"** Yeni kullanıcı ilk ayda agresif keşfeder, connector kurar, skill dener, saatlerce oturur. Pro limiti birkaç saatlik yoğun kullanımda dolar, "çalışmıyor" yanlış algısı vazgeçirir. Max 5x bu ilk ay kritiktir; sonra hafif kullananlar Pro'ya iner.
+Şirket olarak başlıyorsanız **Team planı zorunlu değildir**; merkezi yönetim, faturalama ve veri kontrolü için öneriyoruz.
 
-Karşılığında:
-
-- Çalışan başına haftada 10 saat tasarruf × 6 çalışan × 12 hafta = **720 saat**
-- Ortalama çalışan maliyeti 300 TL/saat = **216.000 TL kazanım**
-
-Çalışan yeterliliği **kalıcı**, bir yıl sonra Claude aboneliği devam ederse kazanç birikir.
+Karşılığındaki kazanımı kendi ekibinizle hesaplamak için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) sayfasına bakın. Çalışan yeterliliği **kalıcıdır**: abonelik sürdükçe kazanç birikir.
 
 ### "Rakamlar iyimser. Gerçek ROI ne olur?"
 
 **Cevap:**
 
-En kötü senaryo tahminini yapalım:
+Haklısınız, varsayımlar iyimser olabilir. O yüzden en kötü senaryoyu da hesaplayın:
 
-- Çalışanlardan 2 tanesi programa gerçekten dahil olmazsa (direnç, meşguliyet)
-- Kalan 4 çalışan haftada 5 saat (yarı tahmin) kazanırsa
-- 4 × 5 × 12 hafta = 240 saat × 300 TL = **72.000 TL**
+- 6 kişilik ekibin 2'si programa gerçekten dahil olmazsa (direnç, meşguliyet)
+- Kalan 4 çalışan hedeflenen kazanımın yarısını yakalarsa (örneğin haftada 5 saat)
+- 4 × 5 saat × 12 hafta = **240 saat**
 
-Bu senaryoda bile **abonelik maliyeti karşılanır** ve öğrenilen bilgi şirkette kalır.
-
-**Gerçekçi orta senaryoda** (6 çalışan × 8 saat/hafta × 12 hafta × 300 TL = 172.800 TL) yatırım geri dönüşü birinci çeyreğin sonunda sağlanır.
+Bu saati kendi saat ücretinizle çarpın; [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) bunu senaryo bazında yapar. Bu kötü senaryoda bile çoğu durumda abonelik maliyeti karşılanır ve öğrenilen bilgi şirkette kalır. Orta senaryoda (6 çalışan × haftada 8 saat × 12 hafta = 576 saat) geri dönüşün ilk çeyrek içinde görünmesi beklenir, ama bu da bir garanti değil, ölçerek doğrulayın.
 
 ### "Bu paraya başka şeyler yapabiliriz."
 
@@ -187,7 +200,14 @@ AI yetkinliği eğitimi **kalıcı yeterlilik** yaratır. Reklam kampanyası bit
 
 **Cevap:**
 
-Claude Desktop standart bir uygulama, özel yetki istemez, arka planda izleme yapmaz, şirket dosyalarınıza rıza olmadan erişmez. Cowork'te **sadece bağlanan workspace klasörünü** görür. Diğer disk, diğer klasör, erişilmez.
+Claude Desktop standart bir uygulama, özel yetki istemez, arka planda izleme yapmaz, şirket dosyalarınıza rıza olmadan erişmez. Cowork'te dosya erişimi **sizin eklediğiniz klasörlerle** sınırlıdır; izin vermediğiniz disk ve klasörlere dokunmaz.
+
+İki istisnayı bilin ve politikanıza yazın:
+
+- **Computer use** (research preview, yalnızca Pro ve Max, Team ve Enterprise'ta yok) kullanıcı tarafından açılırsa Claude ekranı görüp fare ve klavyeyi kullanabilir; bu durumda klasör sınırı tek başına yeterli bir güvence değildir
+- **6 Ekim 2026'dan itibaren Pro ve Max'te yeni Cowork görevleri bulutta çalışır**, yani yalnızca bilgisayarınızda değil. Bulut görevlerinde hangi dosya ve bağlı hesapların kullanıldığını görev bazında kontrol edin
+
+Team ve Enterprise'ta hangi özelliklerin açık olacağına yönetici (owner) karar verir: [Takım ve Admin](/wiki/temeller/takim-ve-admin/), [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/).
 
 Kod çalıştırma **izole sanal makinede** yapılır, işletim sisteminizden ayrıdır.
 
@@ -216,6 +236,56 @@ Herkesin kabul etmesi gereken: "güvenlik mutlak değildir, risk yönetilir." Do
 
 ---
 
+## İK Direktörü'nden Gelen İtirazlar
+
+### "Claude çalışanları izlemek için mi kullanılacak? Yönetici sohbetleri görebilir mi?"
+
+**Cevap:**
+
+Bunu baştan netleştirmek güveni belirler. Kişisel Free, Pro ve Max hesaplarını şirket göremez. Team ve Enterprise'ta yönetim kontrolleri vardır (SSO, harcama tavanı); **Enterprise'ta** ayrıca audit log ve Compliance API (sohbet, dosya ve proje verisine erişim sağlar, yalnızca Primary Owner açar). Yani teknik olarak kurum, kendi Enterprise hesabındaki içeriğe erişebilir.
+
+Bu yüzden iki şey şart: çalışana **önceden yazılı bildirim** (neyin kaydedildiği, kimin erişebildiği, hangi amaçla) ve izlemenin amacını "performans cezası" değil "güvenlik ve uyum" olarak sınırlayan bir politika. Çalışan izleme ve KVKK aydınlatma yükümlülüğü hukuk danışmanınızla birlikte çözülür. Ayrıca Team ve Enterprise'ta hafıza varsayılan olarak kapalıdır.
+
+Politika örneği için [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/).
+
+### "Performans değerlendirmesinde Claude kullanımı nasıl hesaba katılacak?"
+
+**Cevap:**
+
+Kullanım sayısını (kaç mesaj, kaç saat) performans ölçütü yapmayın; insanları anlamsız kullanıma iter. Daha iyi ölçüt, **çıktının kalitesi ve işin süresi**: aynı işi eskiden kaç saatte, şimdi kaç saatte yapıyor, çıktı kontrolden geçiyor mu. Yöntem: [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/).
+
+Süre ölçütüne örnek: performans değerlendirme metni kişi başı elle 45-60 dakika, Claude ile 15-20 dakika (yönetici kontrolü dahil); 50 kişilik bir sezonda fark kabaca 20-35 saat ([İnsan Kaynakları](/wiki/departmanlar/insan-kaynaklari/), Zamana gözlemi, tipik aralık). Olgusal değerlendirmeyi ve somut örnekleri yine yönetici verir; Claude yalnız yapılandırılmış bir anlatı çıkarır.
+
+---
+
+## Satın Alma'dan Gelen İtirazlar
+
+### "Yurt dışı, tek bir tedarikçiye bağımlı olmak istemiyoruz. Fatura ve destek nasıl işliyor?"
+
+**Cevap:**
+
+Üç somut gerçek:
+
+- **Satın alma doğrudan Anthropic'ten yapılır.** Fiyatlar USD'dir; fatura adresine göre vergi eklenir. Güncel durum ve muhasebe tarafı için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına, mali müşavirinize ve ilk faturanıza bakın
+- **Anthropic'in Türkiye'de ofisi ve resmî temsilcisi yoktur**, yerel destek sunulmaz. Erişim, ödeme ve destek soruları için [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/)
+- **Tedarikçi sürekliliği:** Anthropic 2026'da büyük finansman turları kapattı ve SEC'e gizli taslak halka arz belgesi sundu; bu, kısa vadede kapanma riski olan bir startup olmadığını gösterir. Ayrıntı: [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/)
+
+Bağımlılığı azaltmanın yolu tedarikçiyi değil **beceriyi taşınabilir tutmak**: prompting disiplini, kalıcı talimat dosyaları ve iş akışı tasarımı modelden bağımsızdır. Zamana bayi değildir, abonelik satmaz; bu çerçeveyi kurmanıza yardım eder.
+
+---
+
+## KVKK Sorumlusu / Veri Koruma Birimi'nden Gelen İtirazlar
+
+### "Claude kullanımı için aydınlatma metni, VERBİS ve envanter güncellemesi gerekir mi?"
+
+**Cevap:**
+
+**Kişisel veri Claude'a girilecekse** büyük olasılıkla evet: veri envanterine yeni bir işleme faaliyeti ve yurt dışı aktarım girer, aydınlatma metni ve (kapsamınıza bağlı olarak) VERBİS kaydı gözden geçirilmelidir. Kişisel veri hiç girilmeyecekse (anonimleştirilmiş ya da kurumsal içerik) yük çok azalır.
+
+Pratik yol: önce hangi veri kategorilerinin girilebileceğini yazılı politikayla sınırlayın, sonra gerekli güncellemeleri yapın. Ayrıntı ve müfettiş soruları: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/). Bu hukuki görüş değildir, hukuk danışmanınızla doğrulayın.
+
+---
+
 ## Çalışanlardan Gelen İtirazlar
 
 ### "Beni işsiz bırakacak."
@@ -227,6 +297,8 @@ Bu samimi bir korku, ciddiye almalıyız. Dürüst cevap: hiçbir araç iş güv
 Claude **rutin işleri** ortadan kaldırıyor; raporlama, e-posta yazımı ve tekrar eden teklifler gibi. Bu işleri yapmak için zaten çalışan tutulmuyor: yöneticisine e-posta yazan biri "e-posta yazarı" değildir.
 
 Rutin ortadan kalktıkça çalışanın **yüksek değer işlere** zamanı açılır: müşteri ilişkileri, karmaşık karar alma, yaratıcı çalışma. **Bu işleri Claude yapamaz**, çünkü insan yargısı ve ilişki gerekir.
+
+Somut olarak "rutin" şu kadar zaman demek (Zamana gözlemi, tipik aralıklar): önemli bir e-posta elle 15-20 dakika, Claude ile 3-5 dakika ([İdari İşler](/wiki/departmanlar/idari-isler/)); haftalık operasyon raporu elle 2-3 saat, Claude ile 20-30 dakika ([Operasyon](/wiki/departmanlar/operasyon/)). Boşalan saatlerin nereye gideceği şirketin kararıdır, bu yüzden bunu çalışanla baştan konuşmak gerekir.
 
 Tarihsel paralel: bilgisayarlar sekreterleri işsiz bırakmadı, sekreterleri **proje yöneticilerine** dönüştürdü.
 
@@ -267,6 +339,8 @@ Haklı endişe. Başarılı bir Claude adaptasyonu için tasarım kuralları:
 
 Bu tasarım benimsenmediğinde teknoloji adaptasyonu büyük olasılıkla sönümlenir.
 
+Ölçek için [Pilot ve Yaygınlaştırma](/wiki/temeller/pilot-ve-yayginlastirma/) sayfasının önerisi: 5-10 kişilik pilot, küçük ve tek işlevli ekipte 4 hafta, çok işlevli ya da düzenlemeye tabi ekipte 6-8 hafta, hafta başı 20 dakikalık bir toplantı. On iki haftayı geçen pilot kararın ertelenmesine dönüşür; bu yüzden süre ve karar kapıları baştan yazılır.
+
 ---
 
 ## Bu Sayfayı Nasıl Kullanırsınız?
@@ -280,7 +354,10 @@ Bu tasarım benimsenmediğinde teknoloji adaptasyonu büyük olasılıkla sönü
 ## İlgili Sayfalar
 
 - [Sık Sorulan Sorular](/wiki/temeller/sss/): Daha genel sorular
-- [Claude Planları](/wiki/temeller/planlar/): Maliyet ve ROI detayı
+- [Claude Planları](/wiki/temeller/planlar/): Maliyet ve plan karşılaştırması
+- [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): Kendi ekibiniz için geri dönüş hesabı
+- [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/) ve [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/): "Zaten var" itirazı
+- [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Yazılı kullanım politikası
 - [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): Muhasebe ve vergi tarafı
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Hukuki/güvenlik itirazlarının derinliği
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Ne yapamaz dürüstçe

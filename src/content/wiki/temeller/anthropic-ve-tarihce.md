@@ -10,6 +10,8 @@ lastUpdated: "2026-10-06"
 
 **Anthropic, Claude'u yapan şirkettir.** Kurumsal bir aracı sözleşmeye bağlamadan önce arkasındaki şirketi tanımak doğaldır. Bu sayfa Anthropic'i, kuruluşunu, değerlerini ve Claude'un model tarihçesini özetler.
 
+> **Kısa cevap:** Claude'u **Anthropic** yapar, ABD'li bir yapay zekâ şirketidir ve merkezi San Francisco'dadır. **2021'de** kuruldu; kurucuların başında kardeşler **Dario Amodei** (CEO) ve **Daniela Amodei** (Başkan) gelir. İlk Claude **Mart 2023'te** çıktı. "Claude" adının, bilgi kuramının babası **Claude Shannon**'dan geldiği düşünülüyor (Anthropic resmen doğrulamadı).
+
 [Claude Nedir?](/wiki/temeller/claude-nedir/) sayfası ürünün ne olduğunu anlatır; bu sayfa **kim yapıyor, neye değer veriyor** sorularına cevap verir.
 
 ## Kuruluş: 2021, OpenAI'den Ayrılış
@@ -40,11 +42,11 @@ Anthropic'in temel araştırma katkısı **Constitutional AI** (Anayasal AI) yö
 
 ## Yatırımcılar ve Mali Durum
 
-- **Google**: yaklaşık 2 milyar dolar yatırım
-- **Amazon**: yaklaşık 4 milyar dolar yatırım (sonradan ek turlarla daha da büyüdü)
+- **Google ve Amazon:** Anthropic'in en bilinen yatırımcıları ve bulut ortakları arasındadır. Yatırım tutarları turlarla çok değişti; güncel rakam için Anthropic'in resmî duyurularına bakın, eski "2 milyar / 4 milyar dolar" rakamları artık geçerli bir resim vermiyor
 - **Diğer:** Spark Capital, Lightspeed, Salesforce Ventures, Menlo Ventures
-- **Toplam toplanan sermaye:** Şubat 2026'ya kadar 17 turda yaklaşık 67 milyar dolar (Anthropic bu toplamı kendi sayfasında vermiyor; rakam ikincil kaynaklara dayanır)
-- **Series H (Mayıs 2026):** 65 milyar dolarlık tur (28 Mayıs; bunun 15 milyar doları büyük bulut sağlayıcılarından önceden taahhüt edilen yatırım), **965 milyar dolar** işlem sonrası (post-money) değerleme
+- **Series G (12 Şubat 2026):** 30 milyar dolarlık tur, **380 milyar dolar** işlem sonrası (post-money) değerleme
+- **Series H (28 Mayıs 2026):** 65 milyar dolarlık tur (bunun 15 milyar doları büyük bulut sağlayıcılarından taahhüt edilen yatırım), **965 milyar dolar** işlem sonrası değerleme; Anthropic yıllıklandırılmış gelirinin (run-rate) 47 milyar doları geçtiğini bildirdi
+- Toplam toplanan sermayeye dair "17 turda yaklaşık 67 milyar dolar" gibi rakamlar yalnızca ikincil kaynaklarda geçiyor, Anthropic bu toplamı kendi sayfasında vermiyor
 
 **Ne anlama geliyor?** Anthropic kısa vadede kapanma veya satılma riski olan bir startup değil. Kurumsal bir alıcı için **uzun vadeli tedarikçi güvenilirliği** açısından bu önemli bir veridir.
 
@@ -66,8 +68,8 @@ Bu yaklaşım sektörde nadirdir ve kurumsal alıcılar için **denetlenebilir b
 Anthropic'in kurumsal olgunlaşmasını gösteren güncel başlıklar:
 
 - **Halka arz yolu (SEC S-1):** Anthropic, 1 Haziran 2026'da ABD menkul kıymet düzenleyicisine (SEC) **gizli taslak kayıt beyanı (S-1)** sundu. Bu, ileride halka açılma (IPO) ihtimalinin ilk resmî adımıdır. Kurumsal alıcı için anlamı: şeffaflık ve mali denetim yükümlülüğü artan, kurumsallaşan bir tedarikçi.
-- **Project Glasswing:** AWS, Apple, Google, Microsoft gibi şirketlerle yürütülen, kritik yazılımın güvenliğini hedefleyen çok şirketli bir girişim. Mayıs 2026'da ~150 yeni kuruluşa genişletildi ve **Claude Security** (kod tabanı tarama + yama önerisi) eklendi.
-- **Avrupa ve Asya yayılımı:** 27 Mayıs 2026'da **Milano ofisinin** açılacağı duyuruldu (İtalya kurumsal ve geliştirici topluluğu için); Kore'de Seul ofisi öncesi yerel liderlik ataması yapıldı. Anthropic'in uluslararası kurumsal varlığı büyüyor.
+- **Project Glasswing:** Anthropic'in, en yetenekli modelinin erişimini kontrollü bir katılımcı grubuyla sınırladığı program. Mythos 5.1 yalnızca bu katılımcılara davetle açılıyor. Güvenlik tarafındaki ürünler için [Claude Security](/claude/security/) sayfasına bakın.
+- **Avrupa yayılımı:** 27 Mayıs 2026'da **Milano ofisinin** açılacağı duyuruldu (Avrupa'da Londra, Dublin, Paris, Zürih ve Münih'ten sonra altıncı ofis). Anthropic'in uluslararası kurumsal varlığı büyüyor.
 - **Ürün tarafı (Haziran-Eylül 2026):** Claude Tag (Slack, 23 Haziran), Cowork'ün web ve mobilde açılması (7 Temmuz), Claude in Chrome'un genel kullanıma açılması (26 Ağustos) ve 16 Eylül'de Cowork ile sohbetin tek Claude'da birleşmesi. Model tarafı için aşağıdaki tabloya bakın.
 
 Bu gelişmeler, "Anthropic geçici bir startup mı, kalıcı bir kurumsal tedarikçi mi?" sorusuna kalıcılık yönünde cevap verir.
@@ -85,8 +87,9 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Ekim 2024 | **Claude 3.5 Sonnet v2** | [Computer Use](/wiki/yetenekler/computer-use/), bilgisayar arayüzü kontrolü |
 | Şubat 2025 | **Claude 3.7 Sonnet** | Genişletilmiş düşünme (extended thinking), adım adım muhakeme |
 | Mayıs 2025 | **Claude 4** | Profesyonel kod üretiminde sıçrama; Claude Code günlük araç oldu |
-| Şubat 2026 | **Claude Sonnet 4.6** | Verimlilik kıyaslamalarında zirve |
-| Nisan 2026 | **Claude Opus 4.7** (16 Nisan) | Uzun çalışan görevler, yüksek çözünürlüklü görsel |
+| Ekim 2025 | **Claude Haiku 4.5** | En hızlı ve en ucuz model; bugün de güncel ailede |
+| Şubat 2026 | **Claude Sonnet 4.6** (17 Şubat) | Sonnet'in 4.x serisinde güncel sürüm |
+| Nisan 2026 | **Claude Opus 4.7** (16 Nisan) | `xhigh` çaba düzeyi, task budgets (beta), yüksek çözünürlüklü görsel |
 | Mayıs 2026 | **Claude Opus 4.8** (28 Mayıs) | Daha güçlü agentic muhakeme, varsayılan yüksek çaba, dynamic workflows; üç kat ucuz Fast mode |
 | Haziran 2026 | **Claude Fable 5** ve **Mythos 5** (9 Haziran) | Yeni üst model katmanı. Erişim 12 Haziran ile 1 Temmuz arası askıya alındı, 1 Temmuz'da geri geldi |
 | Haziran 2026 | **Claude Sonnet 5** (30 Haziran) | Yeni kuşak Sonnet |
@@ -95,11 +98,27 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Eylül 2026 | **Claude Opus 5.5** (22 Eylül) | Fable 5.1 düzeyinde performans, Opus 5'ten yaklaşık %40 ucuz |
 | Eylül 2026 | **Claude Sonnet 5.5** (28 Eylül) | Günlük iş modeli; Sonnet 5'ten yaklaşık %30 hızlı |
 
-Güncel dört model (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 4.5) ve hangisini ne zaman seçeceğiniz için [Modeller](/wiki/temeller/modeller/) sayfasına bakın.
+Tabloda yalnızca dönüm noktaları var; 4.5 ve 4.6 sürümleri (Opus 4.5, Sonnet 4.5, Opus 4.6 dahil) arada çıktı, ayrıntıları ve tarihleri Anthropic'in model sayfasında bulabilirsiniz.
+
+Güncel dört model (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 4.5) ve hangisini ne zaman seçeceğiniz için [Modeller](/wiki/temeller/modeller/) sayfasına, plan ve görev bazlı seçim için [Claude modelleri](/claude/modeller/) tanıtımına bakın.
 
 ## "Claude" İsmi Nereden?
 
 Modelin adı büyük olasılıkla, bilgi kuramının ve dijital iletişimin babası **Claude Shannon**'dan geliyor. Anthropic bunu resmen doğrulamadı ama reddetmedi de. Shannon, bilgiyi ölçülebilir bir kavrama indirgeyerek modern hesaplama ve iletişimin matematiksel temellerini attı.
+
+## Sık Sorulan Sorular
+
+### Anthropic ne zaman kuruldu?
+2021'de. Yedi kişilik bir ekip OpenAI'dan ayrılarak kurdu; ilk yatırım Mayıs 2021'de 124 milyon dolarlık Seri A oldu. İlk Claude modeli Mart 2023'te yayımlandı.
+
+### Anthropic nerenin şirketi?
+Amerikan şirketidir, merkezi San Francisco'dadır. Türkiye'de doğrudan ofisi yoktur (aşağıdaki "Türkiye'de Anthropic" bölümüne bakın).
+
+### Claude'u kim yaptı?
+Anthropic'in araştırma ve mühendislik ekibi. Şirketin kurucuları arasında Dario Amodei (CEO), Daniela Amodei (Başkan), Tom Brown, Jack Clark, Sam McCandlish, Chris Olah ve Jared Kaplan var.
+
+### Claude'un ismi ne anlama geliyor?
+Resmî bir açıklama yok; yaygın kanı bilgi kuramının kurucusu Claude Shannon'a gönderme olduğu yönünde.
 
 ## Anthropic Kültürü
 

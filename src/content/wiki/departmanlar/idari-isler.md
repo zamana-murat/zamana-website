@@ -1,12 +1,13 @@
 ---
 title: "İdari İşler: Claude Uygulamaları"
+seoTitle: "Yönetici Asistanı İçin Claude: Toplantı Tutanağı, Brifing, E-posta"
 description: "Yönetici asistanı ve idari personel için Claude: yazışma, toplantı tutanakları, yönetici brifingi, seyahat planı, yönetim kurulu paketi."
 tags:
   - departmanlar
   - idari-isler
   - yonetici-asistani
   - toplanti
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Yönetici asistanı ve idari personel, Claude ile haftada saatlerce zaman kazanabilir. Bu zaman, **zaten yapmaları gereken ama vakit bulamadıkları** yüksek değerli işlere gider.
@@ -24,7 +25,7 @@ Yönetici asistanı ve idari personel, Claude ile haftada saatlerce zaman kazana
 
 ### Profesyonel E-posta Taslağı
 
-Bağlam ve istenen sonuç girilir, parlatılmış bir taslak çıkar. **Asistan artık her e-posta için kelime seçmekle uzun uzun uğraşmaz.**
+Bağlam ve istenen sonuç girilir, parlatılmış bir taslak çıkar. **Asistan artık her e-posta için kelime seçmekle uzun uzun uğraşmaz.** **Süre:** tek bir önemli e-posta için elle 15-20 dakika, Claude ile 3-5 dakika (Zamana eğitim materyali, tahmini aralık).
 
 ### Çok Partili Koordinasyon E-postaları
 
@@ -118,7 +119,15 @@ Yönetici asistanı, 2 saatlik strateji toplantısının hızlıca tutulmuş not
 
 **Adım 4:** Asistan e-postaları gözden geçirir, yönetici adına gönderir.
 
-Toplam süre: yaklaşık 35 dakika (örnek senaryo). Geleneksel süreç: 2-3 saat, çoğu zaman ertesi gün.
+**Süre:** tutanak ve kişiye özel takip e-postaları için elle 2-3 saat, Claude ile 30-40 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Haftada 2 böyle toplantı varsa fark kabaca 3-5 saattir.
+
+## Sık Hatalar
+
+Eğitimlerde idari ekiplerin en çok takıldığı üç nokta (Zamana eğitim materyali):
+
+- **Yönetici sesini yakalamak.** İlk 5-10 e-postada ton tutmayabilir. Yönetici ile birlikte düzeltin ve düzeltmeleri CLAUDE.md'ye işleyin.
+- **Hassas yönetici bilgisi.** Strateji ve personel kararı gibi konular yöneticinin onayı olmadan paylaşılmaz, Claude'a da yazılmaz. Şirket yazışması işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
+- **Her e-postayı aynılaştırmak.** "Standart e-posta atayım" diye tüm yazışmayı tek kalıba sokmayın; ilişki taşıyan kişilere özel yazın.
 
 ## İlgili Sayfalar
 
@@ -126,4 +135,5 @@ Toplam süre: yaklaşık 35 dakika (örnek senaryo). Geleneksel süreç: 2-3 saa
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Günlük brifing otomasyonu
 - [Liderlik ve Yönetim](/wiki/departmanlar/liderlik/): Yönetici tarafındaki Claude kullanımı
 - [Görsel ve Görüntü](/wiki/yetenekler/vision-image/): Kartvizit / fiş / tahta notları
+- [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): kendi zaman kazancınızı hesaplayın
 

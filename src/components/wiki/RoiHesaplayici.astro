@@ -1,0 +1,219 @@
+---
+// ROI hesaplayıcı: vanilla JS, harici kütüphane yok.
+// Varsayılan sonuçlar sunucuda hesaplanır; JS kapalıyken de görünür.
+const AY_HAFTA = 52 / 12;
+
+const defaults = {
+  kisi: 6,
+  saat: 5,
+  ucret: 400,
+  gercek: 70,
+  usd: 600,
+  kur: 40,
+  kdv: 'haric',
+};
+
+function hesapla(v) {
+  const hamSaat = v.kisi * v.saat * AY_HAFTA;
+  const donusenSaat = hamSaat * (v.gercek / 100);
+  const deger = donusenSaat * v.ucret;
+  const maliyet = v.usd * v.kur * (v.kdv === 'dahil' ? 1.2 : 1);
+  const net = deger - maliyet;
+  const oran = maliyet > 0 ? (net / maliyet) * 100 : null;
+  const payda = v.kisi * AY_HAFTA * v.ucret * (v.gercek / 100);
+  const basabas = payda > 0 ? maliyet / payda : null;
+  return { hamSaat, donusenSaat, deger, maliyet, net, oran, basabas };
+}
+
+const fmt0 = (n) => n.toLocaleString('tr-TR', { maximumFractionDigits: 0 });
+const fmt1 = (n) => n.toLocaleString('tr-TR', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
+const r = hesapla(defaults);
+const baslangic = {
+  ham: fmt1(r.hamSaat) + ' saat',
+  donusen: fmt1(r.donusenSaat) + ' saat',
+  deger: fmt0(r.deger) + ' TL',
+  maliyet: fmt0(r.maliyet) + ' TL',
+  net: fmt0(r.net) + ' TL',
+  oran: r.oran === null ? 'hesaplanamaz' : '%' + fmt0(r.oran),
+  basabas: r.basabas === null ? 'hesaplanamaz' : fmt1(r.basabas) + ' saat/hafta',
+};
+---
+
+<section class="roi" id="roi-hesaplayici" aria-labelledby="roi-baslik">
+  <h3 id="roi-baslik" class="roi__title">Hesaplayıcı</h3>
+  <p class="roi__lead">
+    Değerleri kendi şirketinize göre değiştirin; sonuç yazarken güncellenir. Hiçbir değer sunucuya gönderilmez, hesap tarayıcınızda yapılır.
+  </p>
+
+  <form class="roi__form" autocomplete="off" onsubmit="return false;">
+    <div class="roi__field">
+      <label for="roi-kisi">Kişi sayısı</label>
+      <input id="roi-kisi" type="number" inputmode="decimal" min="1" step="1" value={defaults.kisi} />
+      <small>Claude kullanacak çalışan sayısı</small>
+    </div>
+    <div class="roi__field">
+      <label for="roi-saat">Kişi başı haftalık kazanılan saat</label>
+      <input id="roi-saat" type="number" inputmode="decimal" min="0" step="0.5" value={defaults.saat} />
+      <small>Kendi ölçümünüz; yoksa 3-5 ile başlayın</small>
+    </div>
+    <div class="roi__field">
+      <label for="roi-ucret">Saatlik yüklü maliyet (TL)</label>
+      <input id="roi-ucret" type="number" inputmode="decimal" min="0" step="10" value={defaults.ucret} />
+      <small>Brüt maaş değil, yüklü maliyet (aşağıya bakın)</small>
+    </div>
+    <div class="roi__field">
+      <label for="roi-gercek">Kazanılan saatin işe dönüşen payı (%)</label>
+      <input id="roi-gercek" type="number" inputmode="decimal" min="0" max="100" step="5" value={defaults.gercek} />
+      <small>Kazanılan her saat işe dönmez; varsayılan %70</small>
+    </div>
+    <div class="roi__field">
+      <label for="roi-usd">Aylık Claude maliyeti, toplam (USD)</label>
+      <input id="roi-usd" type="number" inputmode="decimal" min="0" step="10" value={defaults.usd} />
+      <small>Kişi başı plan fiyatı × kişi sayısı, vergi hariç (varsayılan: 6 kişi × Max 5x)</small>
+    </div>
+    <div class="roi__field">
+      <label for="roi-kur">Kur (TL/USD), Ekim 2026 varsayımı</label>
+      <input id="roi-kur" type="number" inputmode="decimal" min="0" step="0.5" value={defaults.kur} />
+      <small>Varsayımdır; kendi bankanızın güncel kurunu yazın</small>
+    </div>
+    <div class="roi__field">
+      <label for="roi-kdv">Maliyette KDV</label>
+      <select id="roi-kdv">
+        <option value="haric" selected>KDV hariç (indirilebiliyorsa)</option>
+        <option value="dahil">KDV dahil (%20, indirilemiyorsa)</option>
+      </select>
+      <small>KDV mükellefi şirkette KDV genelde indirilir</small>
+    </div>
+  </form>
+
+  <div class="roi__results" role="region" aria-live="polite" aria-label="Hesap sonuçları">
+    <dl class="roi__grid">
+      <div><dt>Aylık kazanılan saat (ham)</dt><dd id="roi-o-ham">{baslangic.ham}</dd></div>
+      <div><dt>İşe dönüşen saat</dt><dd id="roi-o-donusen">{baslangic.donusen}</dd></div>
+      <div><dt>Aylık değer</dt><dd id="roi-o-deger">{baslangic.deger}</dd></div>
+      <div><dt>Aylık maliyet</dt><dd id="roi-o-maliyet">{baslangic.maliyet}</dd></div>
+      <div class="roi__strong"><dt>Net fayda (aylık)</dt><dd id="roi-o-net">{baslangic.net}</dd></div>
+      <div class="roi__strong"><dt>Geri dönüş oranı</dt><dd id="roi-o-oran">{baslangic.oran}</dd></div>
+      <div class="roi__wide"><dt>Başabaş noktası (kişi başı)</dt><dd id="roi-o-basabas">{baslangic.basabas}</dd></div>
+    </dl>
+    <p class="roi__note">
+      Geri dönüş oranı = net fayda / aylık maliyet. Eğitim, danışmanlık veya iç eğitim zamanı harcadıysanız, toplamını birkaç aya bölüp "aylık Claude maliyeti" kalemine USD karşılığıyla ekleyin.
+    </p>
+  </div>
+
+  <noscript>
+    <p class="roi__noscript">
+      Bu tarayıcıda JavaScript kapalı: yukarıdaki kutular yalnızca varsayılan değerlerin sonucunu gösterir. Kendi değerlerinizle hesaplamak için aşağıdaki formülü ve örnek tabloyu kullanın.
+    </p>
+  </noscript>
+</section>
+
+<style>
+  .roi {
+    margin: 1.5rem 0;
+    padding: var(--s-4, 1.5rem);
+    background: var(--c-bg-subtle);
+    border: 1px solid var(--c-border-gold);
+    border-radius: var(--r-card);
+  }
+  .roi__title { margin-top: 0; }
+  .roi__lead { margin: 0 0 1rem; color: var(--c-text-muted); font-size: 0.95rem; }
+  .roi__form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+  }
+  .roi__field { display: flex; flex-direction: column; gap: 0.3rem; }
+  .roi__field label { font-weight: 700; font-size: 0.9rem; color: var(--c-navy); }
+  .roi__field input,
+  .roi__field select {
+    font: inherit;
+    padding: 0.5rem 0.65rem;
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-input);
+    background: var(--c-white);
+    color: var(--c-text);
+    min-height: 2.5rem;
+  }
+  .roi__field input:focus-visible,
+  .roi__field select:focus-visible {
+    outline: 2px solid var(--c-gold);
+    outline-offset: 1px;
+    border-color: var(--c-gold-dark);
+  }
+  .roi__field small { color: var(--c-text-muted); font-size: 0.8rem; line-height: 1.35; }
+  .roi__results { margin-top: 1.25rem; }
+  .roi__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 0.75rem;
+    margin: 0;
+  }
+  .roi__grid > div {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    padding: 0.7rem 0.9rem;
+    box-shadow: var(--sh-soft);
+  }
+  .roi__grid > .roi__strong { border-color: var(--c-border-gold); }
+  .roi__wide { grid-column: 1 / -1; }
+  .roi__grid dt { font-size: 0.8rem; color: var(--c-text-muted); margin: 0; }
+  .roi__grid dd { margin: 0.15rem 0 0; font-size: 1.2rem; font-weight: 800; color: var(--c-navy); }
+  .roi__strong dd { color: var(--c-gold-text); }
+  .roi__grid > .roi__neg dd { color: #b3392b; }
+  .roi__note, .roi__noscript { font-size: 0.85rem; color: var(--c-text-muted); margin: 0.9rem 0 0; }
+</style>
+
+<script>
+  const AY_HAFTA = 52 / 12;
+  const $ = (id) => document.getElementById(id);
+  const ids = ['kisi', 'saat', 'ucret', 'gercek', 'usd', 'kur', 'kdv'];
+
+  const fmt0 = (n) => n.toLocaleString('tr-TR', { maximumFractionDigits: 0 });
+  const fmt1 = (n) => n.toLocaleString('tr-TR', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
+  const num = (id) => {
+    const v = parseFloat(($(id) as HTMLInputElement).value.replace(',', '.'));
+    return Number.isFinite(v) && v >= 0 ? v : 0;
+  };
+
+  function guncelle() {
+    const kisi = num('roi-kisi');
+    const saat = num('roi-saat');
+    const ucret = num('roi-ucret');
+    const gercek = Math.min(num('roi-gercek'), 100) / 100;
+    const usd = num('roi-usd');
+    const kur = num('roi-kur');
+    const kdv = ($('roi-kdv') as HTMLSelectElement).value === 'dahil' ? 1.2 : 1;
+
+    const ham = kisi * saat * AY_HAFTA;
+    const donusen = ham * gercek;
+    const deger = donusen * ucret;
+    const maliyet = usd * kur * kdv;
+    const net = deger - maliyet;
+    const payda = kisi * AY_HAFTA * ucret * gercek;
+
+    const yaz = (id, t) => { const el = $(id); if (el) el.textContent = t; };
+    yaz('roi-o-ham', fmt1(ham) + ' saat');
+    yaz('roi-o-donusen', fmt1(donusen) + ' saat');
+    yaz('roi-o-deger', fmt0(deger) + ' TL');
+    yaz('roi-o-maliyet', fmt0(maliyet) + ' TL');
+    yaz('roi-o-net', fmt0(net) + ' TL');
+    yaz('roi-o-oran', maliyet > 0 ? '%' + fmt0((net / maliyet) * 100) : 'hesaplanamaz');
+    yaz('roi-o-basabas', payda > 0 ? fmt1(maliyet / payda) + ' saat/hafta' : 'hesaplanamaz');
+
+    ['roi-o-net', 'roi-o-oran'].forEach((id) => {
+      const box = $(id)?.parentElement;
+      if (box) box.classList.toggle('roi__neg', net < 0);
+    });
+  }
+
+  ids.forEach((k) => {
+    const el = $('roi-' + k);
+    if (el) {
+      el.addEventListener('input', guncelle);
+      el.addEventListener('change', guncelle);
+    }
+  });
+  guncelle();
+</script>

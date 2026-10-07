@@ -1,5 +1,6 @@
 ---
 title: "Küçük İşletme (KOBİ) için Claude: Tek Kişi, Bütün Şapkalar"
+seoTitle: "KOBİ İçin Claude: Nakit Akışı, Tahsilat, Ay Sonu Kapanış"
 description: "Küçük işletme sahibi için Claude: nakit akışı, kampanya, ay sonu kapanış, tahsilat takibi. Her işi tek başına yürüten KOBİ sahibinin iş akışı."
 tags:
   - departmanlar
@@ -7,12 +8,12 @@ tags:
   - kucuk-isletme
   - nakit-akisi
   - otomasyon
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Bu sayfa bir departman değil, bir **senaryo**: satışı da pazarlamayı da muhasebeyi de tek başına yürüten **küçük işletme sahibi**. Diğer departman sayfaları tek bir role odaklanır; KOBİ sahibi hepsini aynı gün yapar. Claude'un en büyük kaldıraç sağladığı yer tam burasıdır, çünkü ayrı ekiplerin yaptığı işi tek kişiye sığdırır.
 
-Anthropic bu profile özel bir paket de sunuyor: Eylül 2026'da genişleyen Claude for Small Business, 43 hazır iş akışı (Monday Brief, Proposal Builder, Close the Month gibi) ve 27 yeni entegrasyon içeriyor. Aşağıdaki akışların birçoğu bu paketin kapsadığı işlerle örtüşüyor. Paketin Türkiye'deki muhasebe yazılımlarıyla uyumu için aşağıdaki Connector'lar bölümündeki nota bakın. Ayrıntılar için [haberi okuyun](/haberler/2026-09-15-claude-for-small-business-genisledi/).
+Anthropic bu profile özel bir paket de sunuyor: Eylül 2026'da genişleyen Claude for Small Business, 43 hazır iş akışı (Monday Brief, Proposal Builder, Close the Month gibi) ve 27 yeni entegrasyon içeriyor. Aşağıdaki akışların birçoğu bu paketin kapsadığı işlerle örtüşüyor. Paketin Türkiye'deki muhasebe yazılımlarıyla uyumu için aşağıdaki Connector'lar bölümündeki nota bakın. Ayrıntılar için [haberi okuyun](/haberler/2026-09-15-claude-for-small-business-genisledi/). Anthropic'in Cowork için hazırladığı eklenti deposunda da bir `small-business` klasörü bulunur ([knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)); hangi iş akışının Türkiye'de işe yaradığını denemeden varsaymayın.
 
 > **Pazarlık dışı çerçeve:** Hiçbir şey siz onaylamadan **gönderilmez, yayınlanmaz, ödenmez.** Claude taslak hazırlar ve önerir; göndermek, yayınlamak veya para hareketi yapmak her zaman sizin onayınızla olur. Vergi, hukuk ve finans gibi kritik kararlar ehliyetli danışmanınızdadır; Claude mali müşavirin ya da avukatın onayının yerine geçmez.
 
@@ -79,7 +80,7 @@ KOBİ sahibinin en sevmediği iş. Claude, ön muhasebe kayıtlarını banka ve 
 - `canvas-design`: sosyal medya ve kampanya görselleri
 
 **Connector'lar:**
-1. **Banka / ön muhasebe** (Paraşüt, Logo ve Mikro için resmî bir Claude connector'ı yoktur; özel connector ya da yazılımın REST API'si gerekir), nakit ve mutabakat. Çoğu işletme için pratik yol, dışa aktarılmış Excel/CSV dosyasıyla çalışmaktır.
+1. **Banka / ön muhasebe** (Paraşüt, Logo ve Mikro için resmî bir Claude connector'ı yoktur; özel connector ya da yazılımın REST API'si gerekir), nakit ve mutabakat. Çoğu işletme için pratik yol, dışa aktarılmış Excel/CSV dosyasıyla çalışmaktır. Hangi programda hangi yolun işlediği, Türkçe sayı ve tarih tuzakları ve ay sonu mutabakat örneği için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın.
 2. **Gmail / Outlook**: müşteri yazışmaları, hatırlatmalar
 3. **Google Workspace / Microsoft 365**: belgeler
 4. (opsiyonel) **CRM / HubSpot**: müşteri listesi ve segment
@@ -99,6 +100,8 @@ Bir KOBİ sahibinin 3 müşterisinde vadesi geçmiş fatura var, ama takip edece
 
 Toplam süre: yaklaşık 10 dakika. Eskiden bu iş ya hiç yapılmıyordu ya da yarım saat üzülerek yazılıyordu.
 
+**Süre:** 3 tahsilat hatırlatması için elle 30-45 dakika, Claude ile yaklaşık 10 dakika (okuyup onaylamak dahil). Pazartesi brifingi elle toplanırsa 30-60 dakika alır; zamanlanmış görevle hazırlık sıfıra iner, geriye yaklaşık 5 dakikalık okuma kalır. Brifing her hafta yapılıyorsa ayda kabaca 2-4 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
 ## İş Akışı Yeniden Tasarımı Adayları
 
 - **Pazartesi brifingi**: tam otomatik, her hafta hazır
@@ -111,6 +114,7 @@ Toplam süre: yaklaşık 10 dakika. Eskiden bu iş ya hiç yapılmıyordu ya da 
 - [İlk 7 Gün Rehberi](/wiki/temeller/ilk-7-gun/): Claude'u alışkanlığa çevirmek
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Pazartesi brifingi otomasyonu
 - [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): Türkiye'de faturalandırma
+- [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt, e-Fatura ve Excel ile çalışma yolları
 - [Finans](/wiki/departmanlar/finans/): Daha derin finans iş akışları
 - [Satış](/wiki/departmanlar/satis/): Müşteri iletişimi ve teklif
 - [Sınırlamalar](/wiki/temeller/sinirlamalar/): Claude'a neyi bırakmamalı

@@ -1,12 +1,13 @@
 ---
 title: "Scheduled Tasks: Zamanlanmış Otomasyonlar"
-description: "Cowork'ün Scheduled Tasks özelliği, tekrar eden görevleri siz başlatmadan çalıştırır. Günlük brifing, haftalık rapor, aylık özet, otomatik."
+seoTitle: "Claude Zamanlanmış Görevler (Scheduled Tasks)"
+description: "Cowork'ün Scheduled Tasks özelliği, tekrar eden görevleri siz başlatmadan çalıştırır: günlük brifing, haftalık rapor, aylık özet. Bulut ve yerel fark."
 tags:
   - araclar
   - scheduled-tasks
   - otomasyon
   - cowork
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Cowork, belirli aralıklarla otomatik çalışan görevler oluşturmanıza izin verir.** Bir kere kurarsınız; siz bir daha dokunmazsınız.
@@ -17,8 +18,8 @@ Her Pazartesi yazdığınız aynı rapor, her sabah yaptığınız aynı e-posta
 
 Gerçek kullanım örnekleri:
 
-- **Günlük brifing:** E-postayı, Slack'i, takvimi kontrol et, öncelikli sabah gündemini üret. Her sabah 08:00'da workspace klasörüne düşer.
-- **Haftalık rapor:** Operasyon verilerini topla, durum raporu hazırla. Her Pazartesi ekip toplantısından önce hazır.
+- **Günlük brifing:** E-postayı, Slack'i, takvimi kontrol et, öncelikli sabah gündemini üret. Her sabah 08:00'da workspace klasörüne düşer. **Süre:** elle 30-45 dk, Claude ile okuma yaklaşık 5 dk. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+- **Haftalık rapor:** Operasyon verilerini topla, durum raporu hazırla. Her Pazartesi ekip toplantısından önce hazır. Kurgusal bir örnek: Karadeniz Gıda'nın operasyon müdürü, her Pazartesi 08:00'de önceki haftanın sevkiyat gecikmelerini ve tedarikçi teslim durumunu tek sayfada bulur. **Süre:** elle 1-2 saat, Claude ile 15-20 dk kontrol. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 - **Aylık belge:** Tekrar eden şablonu üret, güncel veriyle doldur. Her ayın 1'inde hazırlanır.
 - **Tekrar eden hatırlatıcılar:** Proje yönetim aracından gecikmiş görevleri çek, hatırlatma listesi üret. Her Cuma öğleden sonra.
 - **Veri çekme işlemleri:** Bağlı analitik araçlardan son metrikleri al, özet formatla. Günlük veya haftalık.
@@ -36,31 +37,31 @@ Cowork'te herhangi bir konuşmada `/schedule` yazın ve ne otomasyon istediğini
 3. Çıktıyı nereye kaydedeceğini teyit eder
 4. Programı aktifleştirir
 
-Yaklaşık 5 dakikada bir zamanlanmış görev kurulur. Bir sonraki tetiklenme zamanında otomatik çalışır.
+**Süre:** görev kurulumu 5-10 dk. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Bir sonraki tetiklenme zamanında otomatik çalışır.
 
 ### Yol 2: Cowork Arayüzünden
 
 **Settings → Scheduled Tasks** menüsünden mevcut görevleri yönetebilir, yenilerini oluşturabilirsiniz. Daha görsel bir kurulum tercih edenler için.
 
-## Kritik Kısıt: Yerel Görevlerde Bilgisayar Uyanık Kalmalı
+## Nerede Çalışır: Bulut mu, Bilgisayarınız mı?
 
-Yerel çalışan zamanlanmış görevler **sizin makinenizde çalışır**, Anthropic'in sunucularında değil. Bu şu anlama gelir:
+**6 Ekim 2026'dan itibaren Pro ve Max'te yeni Cowork görevleri bulutta çalışıyor** ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni kurduğunuz görevler için bilgisayarın açık ve uyanık kalması gerekmiyor. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler ise yine masaüstü uygulaması ister. Görevlerinizin hangi modda çalıştığını ayarlardan doğrulayın.
 
-> **Bilgisayar kapalıysa veya uyuyorsa, zamanlanmış görev çalışmaz.**
+**Yerel kısıt şu durumlarda sürer:** Team, Enterprise ve eski (6 Ekim öncesi kurulmuş) görevler. Güncel durum için yardım merkezindeki duyuruya bakın. Yerel çalışan görevler **sizin makinenizde çalışır**, Anthropic'in sunucularında değil:
 
-Güvenilir çalışması için:
+> **Bilgisayar kapalıysa veya uyuyorsa, yerel zamanlanmış görev çalışmaz.**
+
+Yerel görevlerin güvenilir çalışması için:
 
 - **Bilgisayarın güç ayarlarını değiştirin**: "uyuma" süresini çok uzun yapın veya "hiçbir zaman uyuma" seçin
 - **Claude Desktop açık kalmalı**: kapalıysa görev tetiklenmez
 - **İnternet bağlantısı kesintisiz olmalı** (connector çağrıları için)
 
-Raporu Pazartesi sabahına zamanladıysanız ve bilgisayar o gece kapandıysa, rapor hazır olmaz. Yerel görevler için bilgisayarın "her zaman açık" olması gerekir.
-
-> **6 Ekim 2026'dan itibaren değişiyor:** Pro ve Max'te yeni Cowork görevleri bulutta çalışıyor ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni kurduğunuz görevler için yukarıdaki kısıt kalkıyor. Görevlerinizin hangi modda çalıştığını ayarlardan doğrulayın. Team, Enterprise ve eski görevler için yardım merkezindeki duyuruya bakın.
+Raporu Pazartesi sabahına yerel olarak zamanladıysanız ve bilgisayar o gece kapandıysa, rapor hazır olmaz. Bu yüzden Team ve Enterprise'ta kritik bir raporu yerel göreve bağlamadan önce küçük bir deneme yapın.
 
 ## Mobil Entegrasyon
 
-Zamanlanmış görevler mobil ve web Cowork betasında da var (Pro, Max, Team), yani telefondan hem izleyebilir hem kurabilirsiniz. Daha önce [Dispatch](/wiki/araclar/dispatch/) kurduysanız (yeni kullanıcılara kapalı), zamanlanmış görev çıktıları Dispatch konuşmanıza da düşer. Yani:
+Zamanlanmış görevler mobil ve web Cowork betasında da var (Pro, Max, Team; Enterprise'ta yönetici açtıysa), yani telefondan hem izleyebilir hem kurabilirsiniz. Daha önce Dispatch kurduysanız ([Claude Mobil](/wiki/araclar/claude-mobil/)) (yeni kullanıcılara kapalı), zamanlanmış görev çıktıları Dispatch konuşmanıza da düşer. Yani:
 
 - Pazartesi sabahı 08:00'da rapor üretilir
 - Rapor workspace klasörüne kaydedilir
@@ -130,8 +131,8 @@ Skill her hafta biraz daha akıllanır. Bu, otomasyonun veri toplama yükünü �
 ## İlgili Sayfalar
 
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Scheduled Tasks'in yaşadığı yer
-- [Dispatch](/wiki/araclar/dispatch/): Zamanlanmış çıktıları telefonda almak
+- [Claude Mobil](/wiki/araclar/claude-mobil/): Zamanlanmış çıktıları telefonda almak, mobil Cowork ve Dispatch
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Görevlerin çalıştığı ortam
-- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): "Bilgisayar kapalıysa çalışmaz" sınırı
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Claude'un genel sınırları
 - [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/): Cowork'ün sohbetle birleşmesi ve web ile mobilde yayılımı
 

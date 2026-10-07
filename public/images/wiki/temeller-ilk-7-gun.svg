@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Claude ile ilk 7 gün yol haritası</title>
+  <desc id="desc">Gün 1 ilk gerçek iş çıktısı, Gün 2 CLAUDE.md'yi yaşatma, Gün 3 skill ile belge üretimi, Gün 4 ilk connector kurulumu, Gün 5 prompt kütüphanesi, Gün 6 iterasyon ve discernment, Gün 7 otomasyon ve yansıma. Günde 40 ile 60 dakika, toplam yaklaşık 5 saat; sonuç kalıcı alışkanlık.</desc>
+  <defs>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="480" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">İlk 7 gün yol haritası</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Günde 40-60 dakika, toplam yaklaşık 5 saat</text>
+
+  <!-- Timeline spines -->
+  <line x1="68" y1="150" x2="68" y2="420" stroke="#c5cdda" stroke-width="2"/>
+  <line x1="448" y1="150" x2="448" y2="330" stroke="#c5cdda" stroke-width="2"/>
+  <line x1="448" y1="356" x2="448" y2="384" stroke="#c9a84c" stroke-width="2" marker-end="url(#arrow-gold)"/>
+
+  <!-- Day 1 -->
+  <circle cx="68" cy="150" r="24" fill="#0f2855"/>
+  <text x="68" y="157" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="110" y="146" font-size="19" font-weight="700" fill="#0f2855">İlk gerçek iş çıktısı</text>
+  <text x="110" y="170" font-size="16" font-weight="500" fill="#1a2238">45 dakika</text>
+
+  <!-- Day 2 -->
+  <circle cx="68" cy="240" r="24" fill="#0f2855"/>
+  <text x="68" y="247" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="110" y="236" font-size="19" font-weight="700" fill="#0f2855">CLAUDE.md'yi yaşatın</text>
+  <text x="110" y="260" font-size="16" font-weight="500" fill="#1a2238">40 dakika</text>
+
+  <!-- Day 3 -->
+  <circle cx="68" cy="330" r="24" fill="#0f2855"/>
+  <text x="68" y="337" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="110" y="326" font-size="19" font-weight="700" fill="#0f2855">Skill ile belge üretimi</text>
+  <text x="110" y="350" font-size="16" font-weight="500" fill="#1a2238">50 dakika</text>
+
+  <!-- Day 4 -->
+  <circle cx="68" cy="420" r="24" fill="#0f2855"/>
+  <text x="68" y="427" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="110" y="416" font-size="19" font-weight="700" fill="#0f2855">İlk connector kurulumu</text>
+  <text x="110" y="440" font-size="16" font-weight="500" fill="#1a2238">45 dakika</text>
+
+  <!-- Day 5 -->
+  <circle cx="448" cy="150" r="24" fill="#0f2855"/>
+  <text x="448" y="157" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+  <text x="490" y="146" font-size="19" font-weight="700" fill="#0f2855">Prompt kütüphanesi</text>
+  <text x="490" y="170" font-size="16" font-weight="500" fill="#1a2238">40 dakika</text>
+
+  <!-- Day 6 -->
+  <circle cx="448" cy="240" r="24" fill="#0f2855"/>
+  <text x="448" y="247" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+  <text x="490" y="236" font-size="19" font-weight="700" fill="#0f2855">İterasyon ve discernment</text>
+  <text x="490" y="260" font-size="16" font-weight="500" fill="#1a2238">40 dakika</text>
+
+  <!-- Day 7 -->
+  <circle cx="448" cy="330" r="24" fill="#0f2855"/>
+  <text x="448" y="337" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+  <text x="490" y="326" font-size="19" font-weight="700" fill="#0f2855">Otomasyon ve yansıma</text>
+  <text x="490" y="350" font-size="16" font-weight="500" fill="#1a2238">60 dakika</text>
+
+  <!-- Result -->
+  <rect x="420" y="388" width="340" height="64" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="590" y="427" font-size="18" font-weight="700" fill="#0f2855" text-anchor="middle">Sonuç: kalıcı alışkanlık</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 690" width="800" height="690" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Hangi Claude aracı ne zaman: ihtiyaçtan araca karar akışı</title>
+  <desc id="desc">Altı ihtiyaç ve karşılık gelen araç. Hızlı soru ve fikir sınamak için sohbet, kurulum gerekmez. Dosyalarla gerçek iş çıktısı için masaüstü ve Cowork, klasör ve connector'larla. Excel, Word ya da PowerPoint dosyasının içinde çalışmak için Office eklentileri. Web sitesinde ya da portalda iş yapmak için masaüstü Chrome'da Claude in Chrome. Yoldayken telefondan görev atmak için web ve mobilde beta olan mobil Cowork. Tekrar eden haftalık ya da aylık iş için zamanlanmış görevler, Pro ve Max'te bulutta çalışır. Not: sohbet ve Cowork 16 Eylül 2026'dan beri kademeli olarak tek arayüzde birleşiyor.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="690" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Hangi araç ne zaman?</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">İhtiyacınızdan başlayın, araç kendiliğinden çıkar</text>
+
+  <!-- Column headers -->
+  <text x="60" y="134" font-size="16" font-weight="700" fill="#0f2855">İhtiyacınız</text>
+  <text x="640" y="134" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">Doğru araç</text>
+
+  <!-- Arrows -->
+  <g stroke="#c9a84c" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="462" y1="182" x2="514" y2="182"/>
+    <line x1="462" y1="258" x2="514" y2="258"/>
+    <line x1="462" y1="334" x2="514" y2="334"/>
+    <line x1="462" y1="410" x2="514" y2="410"/>
+    <line x1="462" y1="486" x2="514" y2="486"/>
+    <line x1="462" y1="562" x2="514" y2="562"/>
+  </g>
+
+  <!-- Row 1 -->
+  <rect x="40" y="150" width="420" height="64" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="60" y="188" font-size="18" font-weight="600" fill="#1a2238">Hızlı soru, fikir sınamak</text>
+  <rect x="520" y="150" width="240" height="64" rx="10" fill="#0f2855"/>
+  <text x="640" y="176" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">Sohbet</text>
+  <text x="640" y="200" font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">kurulum gerekmez</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="226" width="420" height="64" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="60" y="264" font-size="18" font-weight="600" fill="#1a2238">Dosyalarla gerçek iş çıktısı</text>
+  <rect x="520" y="226" width="240" height="64" rx="10" fill="#0f2855"/>
+  <text x="640" y="252" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">Masaüstü + Cowork</text>
+  <text x="640" y="276" font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">klasör, connector'lar</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="302" width="420" height="64" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="60" y="340" font-size="18" font-weight="600" fill="#1a2238">Excel, Word, PowerPoint dosyasının içinde</text>
+  <rect x="520" y="302" width="240" height="64" rx="10" fill="#0f2855"/>
+  <text x="640" y="328" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">Office eklentileri</text>
+  <text x="640" y="352" font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">dosyadan çıkmadan</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="378" width="420" height="64" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="60" y="416" font-size="18" font-weight="600" fill="#1a2238">Web sitesinde, portalda iş yapmak</text>
+  <rect x="520" y="378" width="240" height="64" rx="10" fill="#0f2855"/>
+  <text x="640" y="404" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">Claude in Chrome</text>
+  <text x="640" y="428" font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">masaüstü Chrome</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="454" width="420" height="64" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="60" y="492" font-size="18" font-weight="600" fill="#1a2238">Yoldayken telefondan görev atmak</text>
+  <rect x="520" y="454" width="240" height="64" rx="10" fill="#0f2855"/>
+  <text x="640" y="480" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">Mobil Cowork</text>
+  <text x="640" y="504" font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">web ve mobilde beta</text>
+
+  <!-- Row 6 -->
+  <rect x="40" y="530" width="420" height="64" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="60" y="568" font-size="18" font-weight="600" fill="#1a2238">Tekrar eden haftalık, aylık iş</text>
+  <rect x="520" y="530" width="240" height="64" rx="10" fill="#0f2855"/>
+  <text x="640" y="556" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">Zamanlanmış görevler</text>
+  <text x="640" y="580" font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">Pro, Max'te bulutta</text>
+
+  <!-- Note -->
+  <rect x="40" y="616" width="720" height="48" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="60" y="646" font-size="16" font-weight="500" fill="#1a2238">Sohbet ve Cowork 16 Eylül 2026'dan beri tek arayüzde birleşiyor (kademeli).</text>
+</svg>

@@ -1,19 +1,20 @@
 ---
 title: "Projects (claude.ai): Kalıcı Çalışma Alanları"
-description: Claude.ai içindeki Projects özelliği, her sohbette tekrar eden bağlamı kalıcı hale getirir. Bilgi tabanı, özel talimatlar ve ekip paylaşımı.
+seoTitle: "Claude Projects Nedir? Kurulum ve Örnekler"
+description: "Claude Projects ile her sohbette tekrar eden bağlamı kalıcı yapın: bilgi tabanı, özel talimatlar, ekip paylaşımı, plan farkları ve Türkçe örnekler."
 tags:
   - araclar
   - projects
   - claude-chat
   - bilgi-tabani
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
-**Projects, Claude Chat içinde kalıcı ve organize çalışma alanları oluşturan özelliktir.** Her sohbetin sıfırdan başladığı normal bir konuşmanın aksine, bir Project Claude'a her seferinde devam eden bağlam sağlar, **bilgi tabanı** ve **özel talimatlar** yoluyla.
+**Projects, claude.ai'de kalıcı ve organize çalışma alanları oluşturan özelliktir.** Her sohbetin sıfırdan başladığı normal bir konuşmanın aksine, bir Project Claude'a her seferinde devam eden bağlam sağlar, **bilgi tabanı** ve **özel talimatlar** yoluyla.
 
 Tek cümlede: bir Project, **"aynı bağlamda konuşmak istediğim her sohbetin o bağlamda başlaması"** demektir.
 
-> **Yeni yapı (beta, 17 Eylül 2026):** Anthropic Projects'i baştan tasarladı. Yeni projelerde birden fazla konuşma paralel çalışıyor, bir koordinatör işi yönetiyor ve ortak hafıza kullanılıyor. Erişim kademeli açılıyor; mevcut Pro ve Max projeleri olduğu gibi çalışmaya devam ediyor. Bu sayfa mevcut (klasör mantığındaki) yapıyı anlatır. Ayrıntı: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
+> **Yeni yapı duyuruldu (17 Eylül 2026):** Anthropic Projects'in baştan tasarlandığını duyurdu: yeni projelerde birden fazla konuşmanın paralel çalışması ve ortak hafıza anlatılıyor. Erişimin kademeli açıldığı ve mevcut projelerin çalışmaya devam ettiği bildirildi; kendi hesabınızda hangi yapıyı gördüğünüzü kontrol edin. Bu sayfa mevcut (klasör mantığındaki) yapıyı anlatır. Ayrıntı ve kaynak: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
 
 ## Bir Project Nelerden Oluşur?
 
@@ -30,7 +31,7 @@ Faydalı kullanımlar:
 - Düzenleyici çerçeveler (KVKK, TTK metinleri)
 - Kişisel referans notları
 
-Ücretli planlarda bilgi tabanı **RAG (Retrieval Augmented Generation)** kullanır, yani büyük hacimli içeriği verimli şekilde arar ve ilgili kısımları Claude'a getirir. Yüzlerce sayfa belge yükleyebilirsiniz.
+Ücretli planlarda bilgi tabanı **RAG (Retrieval Augmented Generation)** kullanır, yani büyük hacimli içeriği verimli şekilde arar ve ilgili kısımları Claude'a getirir. Yüzlerce sayfa belge yükleyebilirsiniz. Proje dosyası başına sınır 30 MB; dosya sayısı sınırsızdır ama içerik bağlama sığmalıdır, sığmayınca Claude RAG moduna geçer.
 
 ### Özel Talimatlar (Custom Instructions)
 
@@ -49,27 +50,30 @@ Projects, meslektaşlarınızla belirli izin seviyelerinde paylaşılabilir:
 
 Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **hafif bir ekip bilgi tabanına** dönüştürür.
 
-## Projects vs CLAUDE.md (Cowork)
+## Projects, Klasörde CLAUDE.md ve Profil Talimatı
 
-İki özellik de "kalıcı bağlam" ihtiyacını çözer, ama farklı yerlerde yaşarlar ve farklı güçleri vardır:
+Üç yer de "kalıcı bağlam" ihtiyacını çözer, ama farklı yerlerde yaşar ve farklı yerlerde okunur. Sohbet CLAUDE.md dosyasını okumaz; sohbetteki karşılığı proje talimatı ve profil talimatıdır:
 
-| Özellik | Projects (claude.ai) | CLAUDE.md (Cowork) |
-|---|---|---|
-| Kalıcı talimatlar | ✅ | ✅ |
-| Bilgi tabanı / yüklenen dosyalar | ✅ | ✅ (workspace klasörü) |
-| Tarayıcıda çalışır (kurulum yok) | ✅ | |
-| Skills ve plugins ile çalışır | | ✅ |
-| Otomasyon ve script çalıştırır | | ✅ |
-| .docx / .pptx / .xlsx dosya üretir | | ✅ |
-| Ekiple paylaşılır | ✅ (Team/Enterprise) | Manuel dosya paylaşımı |
-| RAG ile ölçeklenir | ✅ (ücretli planlar) | Manuel yönetim |
+| Özellik | Proje talimatı (claude.ai) | Klasörde CLAUDE.md (yerel Cowork) | Profil talimatı |
+|---|---|---|---|
+| Nerede durur | Projenin ayarlarında | Çalışma klasöründe, dosya olarak | Settings > General > "Instructions for Claude" |
+| Nerede geçerli | Sohbet ve o projedeki oturumlar | Yerel Cowork oturumu (masaüstü, klasör bağlı); bulut oturumunda okunduğu belgelenmemiştir | Tüm sohbetler ve Cowork, her yerde |
+| Bilgi tabanı / yüklenen dosyalar | ✅ | ✅ (klasördeki dosyalar) | Yok, yalnız kısa metin |
+| Tarayıcıda çalışır (kurulum yok) | ✅ | | ✅ |
+| Plugins, masaüstü klasörlerine erişim | | ✅ | |
+| Yerel script ve otomasyon | | ✅ | |
+| Ekiple paylaşılır | ✅ (Team/Enterprise) | Manuel dosya paylaşımı | Hayır, kişiseldir |
+| RAG ile ölçeklenir | ✅ (ücretli planlar) | Manuel yönetim | Hayır |
+
+Skills, kod çalıştırma ve dosya üretimi (.docx / .pptx / .xlsx) bu üç yerden birine bağlı değildir; kullandığınız ortamda (claude.ai ya da Cowork) açıksa çalışır. Kod çalıştırma claude.ai'de tüm planlarda vardır, Team ve Enterprise'ta yönetici kapatabilir.
 
 ### Hangisini Ne Zaman?
 
-- **Projects**: tarayıcı merkezli, paylaşım odaklı, çok sayıda ekip üyesinin aynı bağlama erişmesi gerektiğinde
-- **CLAUDE.md**: tek çalışanın masaüstü merkezli, yoğun Cowork kullanımı için
+- **Proje talimatı**: tarayıcı merkezli, paylaşım odaklı, çok sayıda ekip üyesinin aynı bağlama erişmesi gerektiğinde
+- **Klasörde CLAUDE.md**: tek çalışanın masaüstü merkezli, yerel klasör, plugin ve otomasyon gerektiren yoğun Cowork kullanımı için
+- **Profil talimatı**: nerede çalışırsanız çalışın geçmesini istediğiniz kısa kurallar için (dil, ton, rol)
 
-İkisi birlikte de kullanılır. Bir çalışan masaüstünde Cowork + CLAUDE.md ile çalışırken, ekibin genelinin eriştiği bilgileri Projects'te tutabilir.
+Üçü birlikte de kullanılır. Bir çalışan masaüstünde Cowork + klasörde CLAUDE.md ile çalışırken, ekibin genelinin eriştiği bilgileri Projects'te tutabilir. Yerlerin tam karşılaştırması için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
 
 ## Pratik Project Örnekleri
 
@@ -84,6 +88,17 @@ Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **ha
 - Müşteri itiraz kütüphanesi
 
 **Sonuç:** Her satış temsilcisinin o projedeki Claude sohbeti, şirketin tekliflerine tam bağlamla başlar. Tekrar tekrar açıklama gerekmez.
+
+### İhracat Projesi
+
+**Yüklenenler:**
+
+- Standart proforma fatura ve niyet mektubu (LOI) şablonları
+- Hedef pazara göre sevkiyat ve ödeme koşulları notları
+- Müşteri bazlı geçmiş teklif ve yazışma özetleri
+- Teslim şekli (Incoterms) hatırlatma notu
+
+**Sonuç:** Yeni bir alıcı için proforma ya da LOI taslağı şirketin kendi kalıbıyla başlar; her seferinde koşulları baştan anlatmazsınız. Hukuki ve gümrük yönü yine uzman kontrolünden geçer.
 
 ### Hukuk Projesi
 
@@ -102,10 +117,10 @@ Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **ha
 
 - İş tanımı kütüphanesi
 - Çalışan el kitabı
-- İş Kanunu referans notları
+- İş Kanunu referans notları (fazla mesai, izin, ihbar süreleri gibi sık sorulanlar)
 - Şirket iç prosedürleri
 
-**Sonuç:** Her İK görevi şirkete özel bağlamda çalışır. Jenerik tavsiye yerine şirkete özel çıktı üretilir.
+**Sonuç:** Her İK görevi şirkete özel bağlamda çalışır. Jenerik tavsiye yerine şirkete özel çıktı üretilir. Mevzuat yorumu için yüklediğiniz notların güncelliğini siz tutarsınız.
 
 ### Pazarlama Projesi
 
@@ -127,7 +142,7 @@ Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **ha
 | **Team** | Pro / Max'teki RAG + **paylaşılan projeler, izin kontrolleri ile** |
 | **Enterprise** | Team özellikleri + kurum çapında görünürlük, SSO, yönetici kontrolleri |
 
-Yeni kullanıcılar genelde **Max 5x ile ilk ay** başlar; Projects'in tam özellikleri dahil hepsine erişim olur. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
+Yeni kullanıcılara **ilk ay Max 5x** öneriyoruz; bu bir öneridir, zorunlu değildir. Pro ile başlayıp gerektiğinde yükseltmek de olur. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
 
 ## İlk Project'inizi Nasıl Kurarsınız?
 
@@ -139,10 +154,14 @@ Yeni kullanıcılar genelde **Max 5x ile ilk ay** başlar; Projects'in tam özel
 
 İlk denemede 3-5 dosya yükleyin, yeter. Zamanla ekleyebilirsiniz.
 
+**Süre:** ilk projenin kurulumu (talimat yazma ve dosya yükleme) 15-30 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
 ## İlgili Sayfalar
 
 - [Claude Chat](/wiki/araclar/claude-chat/): Projects'in içinde yaşadığı arayüz
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Cowork'teki kalıcı bağlam dosyası
+- [Skills](/claude/skills/): Projects içinde de kullanılabilen skill'lerin tanıtımı
+- [Sohbet Geçmişi ve Arama](/wiki/araclar/gecmis-ve-arama/): Sohbetleri projelerle organize etmek
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Yerel Cowork'te klasörden okunan kalıcı bağlam dosyası
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Cowork ve CLAUDE.md için masaüstü uygulaması
 - [Araçlar Ana Sayfası](/wiki/araclar/): Tüm Claude araçlarının karar tablosu
 

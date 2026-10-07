@@ -1,7 +1,7 @@
 ---
 title: "Claude Planları ve Fiyatları: Free, Pro, Max, Team, Enterprise"
-seoTitle: "Claude Planları, Paketleri ve Fiyatları 2026"
-description: "Claude paketleri ve fiyatları 2026: Free, Pro, Max, Team ve Enterprise farkları, kullanım limitleri ve iş kullanımı için hangi planın doğru olduğu."
+seoTitle: "Claude Paketleri ve Fiyatları 2026: Pro, Max, Team, TL'de Ne Ödersiniz"
+description: "Claude paketleri ve fiyatları 2026: Free, Pro, Max 5x/20x, Team ve Enterprise farkları, Türkiye'de KDV ve kurla TL karşılığı, hangi plan kime uygun."
 tags:
   - temeller
   - planlar
@@ -9,14 +9,14 @@ tags:
   - pro
   - team
   - enterprise
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Claude'un beş ana planı vardır. Plan seçimi sadece fiyatla ilgili değildir, hangi özelliklerin kullanılabilir olduğunu, özellikle **hangi modellere erişildiğini, connector'ları, paylaşılan projeleri ve kurumsal uyum araçlarını** doğrudan belirler.
 
 Bu sayfa her planın ne sunduğunu ve kime uygun olduğunu açıklar. Limitlerin nasıl işlediği için ayrı bir sayfa var: [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/).
 
-> **Pratik öneri (yeni kullanıcı için):** Claude'a yeni başlayan bir kullanıcının ilk ayında **Max 5x** ($100/ay) önerilir. İlk ayda herkes yoğun keşif yapar: connector kurar, skill dener, uzun belge yükler, günde saatlerce çalışır. Pro'nun ($20/ay) limiti bu tempoda birkaç saatte dolar, kişi "çalışmıyor" diye vazgeçer.
+> **Pratik öneri (yeni kullanıcı için):** Claude'a yeni başlayanlara ilk ay **Max 5x** ($100/ay) öneriyoruz, çünkü Pro'nun ($20/ay) limitine yeni kullanıcı çabuk çarpar. İlk ayda herkes yoğun keşif yapar: connector kurar, skill dener, uzun belge yükler, günde saatlerce çalışır. Pro'da limit bu tempoda birkaç saatte dolabilir ve kişi "çalışmıyor" diye vazgeçebilir. Bu zorunlu değil: Pro ile başlayıp gerektiğinde yükseltmek de olur.
 >
 > **İkinci ay değerlendirme:** Gerçek kullanım netleşince:
 > - Günde 4 saatten fazla kullanan veya Pro limitine sık takılan → Max 5x'te kalır
@@ -24,6 +24,22 @@ Bu sayfa her planın ne sunduğunu ve kime uygun olduğunu açıklar. Limitlerin
 > - Çok yoğun, çoklu iş akışı → Max 20x'e ($200) çıkabilir
 >
 > **Max 5x pahalı görünür, ama kötü bir ilk deneyimle vazgeçmekten ucuzdur.** Max ayrıca Fable gibi en güçlü modeli plana dahil sunar ([Modeller ve Planlar](#modeller-ve-planlar)).
+
+## Türkiye'de TL Olarak Ne Ödersiniz?
+
+Anthropic fiyatları USD ile gösterir. Türkiye'den ödeme yapan biri için pratik hesap şöyledir:
+
+1. **Liste fiyatı (USD, vergi hariç):** Pro $20, Max 5x $100, Max 20x $200.
+2. **KDV:** Türkiye faturalama adresiyle ödemede %20 KDV'nin eklendiği bildiriliyor (ikincil kaynaklara göre Pro için $20 yerine $24). Anthropic'in Türkiye'ye özel resmi bir KDV sayfası yok; ödeme ekranındaki toplam tutar esastır.
+3. **Kur:** Kartınızdan çekilen USD tutarı bankanız kendi kuruyla TL'ye çevirir. Örnek: 1 USD = 40 TL varsayımıyla Pro'nun KDV dahil karşılığı yaklaşık 960 TL olur. Kur değiştikçe bu rakam da değişir, güncel kuru kontrol edin.
+4. **Mobil uygulama mağazası:** App Store ve Google Play'de TL fiyat doğrudan gösterilir ve web fiyatından farklıdır (Ağustos 2026'da Pro için yaklaşık 999,99 TL/ay bildirilmişti, ikincil kaynak). Fiyat farkı mağaza komisyonundan kaynaklanır; en şeffaf yol web'den almaktır.
+
+Şirket olarak alıyorsanız KDV mahsubu ve stopaj sorusu için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına, kesin sonuç için mali müşavirinize bakın.
+
+**Sık karıştırılan iki isim:**
+
+- **"Claude Premium"** diye ayrı bir plan yoktur. Aranan şey genellikle **Team planının Premium koltuğudur** ($125/ay, yıllık ödemede $100).
+- **"Max 5x" ve "Max 20x"** (bazı yerlerde "x5", "x20") aynı plandır, yalnız kullanım limiti farklıdır: Pro'nun 5 katı $100, 20 katı $200. Fiyat 5 kat değil, limit 5 kat artar.
 
 ## Plan Genel Bakış (2026)
 
@@ -51,7 +67,7 @@ Pro planında neler vardır:
 - Sınırsız Project + her projede RAG zenginleştirmeli bilgi tabanı
 - **Cowork'e tam erişim** (skills, plugins, connector'lar, scheduled tasks, workspace klasörü). Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude'da birleşiyor, Pro ve Max'te kademeli açılıyor ([haber](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/)). 6 Ekim 2026'dan itibaren yeni Cowork görevleri bulutta çalışır
 - Claude Design, Slides ve Docs (ücretli planlarda **beta**, Free'de yok)
-- Computer use (**research preview**, yalnızca Pro ve Max) ve Dispatch (Pro ve Max için sınırlı beta, yeni kullanıcıya kapalı); kullanmadan önce [Dispatch](/wiki/araclar/dispatch/) ve [Cowork Modu](/wiki/araclar/cowork-modu/) sayfalarına bakın
+- Computer use (**research preview**, yalnızca Pro ve Max) ve Dispatch (Pro ve Max için sınırlı beta, yeni kullanıcıya kapalı); kullanmadan önce [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) ve [Cowork Modu](/wiki/araclar/cowork-modu/) sayfalarına bakın
 - Claude Code (geliştirici aracı) **tüm ücretli planlarda** dahildir; kotası sohbetle ortaktır. Müfredatımızın kapsamı dışındadır, geliştirici ekipler içindir
 - Excel, PowerPoint ve Word içinde Claude (genel kullanıma açık), Outlook için public beta
 - Yeni özelliklere erken erişim
@@ -101,7 +117,7 @@ Yani yıllık taahhüt, aylık ödemeye göre koltuk başına tasarruf sağlar.
 - **Fable 5.1 plana dahildir** (haftalık limitin en fazla %50'sine kadar)
 - Claude Code kotası da bu yüksek limitten gelir; geliştirici ekipler için uygundur
 
-**Kime uygun:** Bireysel Pro/Max aboneliklerinden çıkıp Claude'u şirket genelinde kurumsallaştırmak isteyen şirketler. Yaygınlaşma aşamasında doğal bir adımdır. Merkezi fatura ve paylaşılan proje istiyorsanız 2 kişiyle bile başlanabilir.
+**Kime uygun:** Bireysel Pro/Max aboneliklerinden çıkıp Claude'u şirket genelinde kurumsallaştırmak isteyen şirketler. Yaygınlaşma aşamasında doğal bir adımdır. Merkezi fatura ve paylaşılan proje istiyorsanız 2 kişiyle bile başlanabilir. Team planı zorunlu değildir; merkezi yönetim, faturalama ve veri kontrolü için öneriyoruz.
 
 ### Enterprise Plan, 20 USD/koltuk/ay + kullanım API fiyatıyla
 
@@ -154,13 +170,15 @@ Fable'ın limitten nasıl düştüğü [Kullanım Limitleri](/wiki/temeller/kull
 | Bankacılık, sağlık, büyük üretici veya kamu | **Claude Enterprise** (20 USD/koltuk + kullanım) |
 | Henüz ciddi değilim, sadece deniyorum | **Claude Free** (sadece değerlendirme için) |
 
+![Claude plan merdiveni: Free denemek isteyene, Pro hafif bireysel kullanıma, Max 5x ilk ay ve yoğun kullanıma, Max 20x çok yoğun kullanıcıya, Team ekiplere, Enterprise regülasyona tabi kuruluşa](/images/wiki/temeller-planlar.svg)
+
 ## Plan Seçimi Nasıl Değişir?
 
 Tipik bir şirketin planı zamanla doğal bir şekilde evrilir:
 
 **Ay 1: Başlangıç**
 
-- Her çalışan **Max 5x planıyla başlar** ($100/ay)
+- Önerimizle her çalışan **Max 5x planıyla başlar** ($100/ay); Pro ile başlamak da mümkündür
 - 6 kullanıcı için aylık maliyet: 6 × 100 = **600 USD + KDV**
 
 **Ay 2-3: Değerlendirme ve Optimizasyon**
@@ -169,7 +187,8 @@ Tipik bir şirketin planı zamanla doğal bir şekilde evrilir:
 - Hafif kullanan (haftada birkaç çıktı) 3-4 çalışan → **Pro'ya ($20/ay) indir**
 - Orta-yoğun kullanan (günde 4+ saat) 1-2 çalışan → **Max 5x'te kal**
 - Çok yoğun (sürekli, çoklu iş akışı) nadir bir çalışan → **Max 20x'e ($200) çıkabilir**
-- Tipik sonuç karma yapı: ~2 Max + ~4 Pro = **~280-380 USD/ay**
+- Tipik sonuç karma yapı: 2 Max 5x + 4 Pro = 2 × 100 + 4 × 20 = **280 USD/ay + KDV** (6 kişilik ekip). Max'lerden biri 20x'e çıkarsa 100 + 200 + 4 × 20 = **380 USD/ay + KDV**; yani 280-380 aralığı, ekipteki Max'lerin 5x mi 20x mi olduğuna bağlıdır
+- Bu, ekip maliyeti örneğinin bu sitedeki tek hesabıdır; diğer sayfalar buraya bağlanır
 
 **Ay 6-12: Yayılım aşaması**
 
@@ -223,7 +242,7 @@ Tüm planların tüm özelliklerini tek tabloda görebilmek için:
 | Fable 5.1 | ❌ | Yalnız kullanım kredisiyle | ✅ plana dahil (haftalık limitin en çok %50'si) | Standard: kredi; Premium: plana dahil | API fiyatıyla faturalanır |
 | Haiku 4.5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Kullanım limiti | Çok sıkı | Baz | 5x–20x Pro | Standard: Pro'nun 1,25 katı; Premium: 6,25 katı (oturum başına) | Kullanım bazlı, API fiyatıyla |
-| **Context window** | Belirsiz | 1M | 1M | 1M | 1M |
+| **Context window** | Modele bağlı (Free için resmi değer yok) | 1M* | 1M* | 1M* | 1M* |
 | Claude Chat | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Projects (claude.ai) | 5 adete kadar | Sınırsız | Sınırsız | Sınırsız + paylaşımlı | Sınırsız + tam kontrol |
 | RAG zenginleştirme | ❌ | ✅ | ✅ | ✅ | ✅ |
@@ -251,7 +270,7 @@ Tüm planların tüm özelliklerini tek tabloda görebilmek için:
 | HIPAA yapılandırması (BAA) | ❌ | ❌ | ❌ | ❌ | ✅ (14 Tem 2026'dan beri self-serve) |
 | Özel veri saklama politikası | ❌ | ❌ | ❌ | ❌ | ✅ müzakereli |
 
-**Not:** Cowork yayılımı kademelidir: Pro ve Max önce, Team ve Free "yakında", Enterprise yöneticilerine en az 30 gün önceden haber verilir. Bağlam penceresi satırı yeni modeller (Fable 5.1, Opus 5.5, Sonnet 5.5) içindir; Haiku 4.5'te 200K'dır. Anthropic'in Team yardım sayfası hâlâ eski "200K" değerini gösterebilir.
+**Not:** Cowork yayılımı kademelidir: Pro ve Max önce, Team ve Free "yakında", Enterprise yöneticilerine en az 30 gün önceden haber verilir. *Bağlam penceresi plana değil modele bağlıdır: yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) 1M, Haiku 4.5'te 200K'dır. Anthropic'in Team yardım sayfası hâlâ eski "200K" değerini gösterebilir.
 
 ## Plan Seçici Karar Ağacı
 

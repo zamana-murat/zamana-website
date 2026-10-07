@@ -1,5 +1,6 @@
 ---
 title: "Hukuk ve Uyum: Claude Uygulamaları"
+seoTitle: "Hukukta Claude: Sözleşme İnceleme, KVKK Talebi ve Hukuk Bürosu"
 description: "Hukuk müşaviri için Claude: sözleşme taslağı, madde çıkarımı, KVKK talepleri, iç memo. Çerçeve net: Claude yazar, avukat gözden geçirir."
 tags:
   - departmanlar
@@ -7,7 +8,7 @@ tags:
   - kvkk
   - ttk
   - sozlesme
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Hukuk, Claude'un büyük zaman tasarrufu sağlayabildiği ama en katı disiplini gerektiren departmandır.
@@ -33,7 +34,7 @@ Ticari şartlar girilir; madde madde, mantıksal sırayla, uygun hukuki dille ya
 
 ### Madde Çıkarımı
 
-Uzun bir sözleşmeyi verir ve Claude'dan her mücbir sebep maddesini, cezai şartı, ödeme koşulunu, fesih hakkını ve yetkili mahkeme maddesini **bulmasını, alıntılamasını ve özetlemesini** istersiniz. Saatler süren bir due diligence taraması çok daha kısa sürer. Yine de her alıntıyı sözleşme metninden kontrol edin.
+Uzun bir sözleşmeyi verir ve Claude'dan her mücbir sebep maddesini, cezai şartı, ödeme koşulunu, fesih hakkını ve yetkili mahkeme maddesini **bulmasını, alıntılamasını ve özetlemesini** istersiniz. Tipik beklenti: 40 sayfalık bir sözleşmede madde çıkarımı elle 2-3 saat, Claude ile 20-30 dakika (Zamana eğitim materyali, tahmini aralık). Her alıntıyı sözleşme metninden kontrol etmek bu sürenin dışındadır ve atlanmaz.
 
 ### Sözleşme Karşılaştırma
 
@@ -76,7 +77,7 @@ KVKK kapsamında şirketler, veri sahiplerinin taleplerine **yasal olarak yanıt
 - Silme / yok etme talepleri
 - İtiraz talepleri
 
-Yanıt, kanunda öngörülen süre içinde verilmelidir. Bu yanıtlar **hukuki olarak doğru, resmi olarak yapılandırılmış ve tutarlı** olmak zorundadır.
+Yanıt, kanunda öngörülen süre içinde (başvuruya en geç 30 gün, KVKK m.13) verilmelidir. Bu yanıtlar **hukuki olarak doğru, resmi olarak yapılandırılmış ve tutarlı** olmak zorundadır.
 
 Claude, kanuna uygun bir ilk taslak yanıt üretir; **hukuk, göndermeden önce inceler**. Kişisel veri işleyen her şirkette bu yüksek hacimli ve zaman alıcı bir iştir; örnek senaryomuzda taslak yazım süresi dakikalara iner.
 
@@ -100,18 +101,16 @@ Claude, kanuna uygun bir ilk taslak yanıt üretir; **hukuk, göndermeden önce 
 **Skills:**
 - `pdf`: sözleşmelerin çoğu PDF olarak gelir
 - `docx`: ilk taslaklar ve memolar
-- `foreign-trade`: ihracat odaklı şirketler için (bkz: [İhracat](/wiki/departmanlar/ihracat/))
+- Kendi dış ticaret skill'iniz: ihracat odaklı şirketler için (bkz: [İhracat](/wiki/departmanlar/ihracat/))
 - `legal:review-contract`: sözleşme inceleme ve redline
-- `legal:triage-nda`: hızlı NDA sınıflandırma (GREEN / YELLOW / RED)
-- `legal:signature-request`: DocuSign üzerinden imza yönlendirme
-- `legal:brief`: geçmiş kararlar / gelen kutusu / takip üzerine kaynaklı brifing
+- `legal:triage-nda`: hızlı NDA sınıflandırma
 
 **Connector'lar:**
 1. **Microsoft 365 / Google Workspace**: sözleşme depolama ve düzenleme. Word eklentisi genel kullanımdadır ([Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/)).
 2. **DocuSign**: imza süreçleri
 3. **Outlook**: resmi yazışmalar (Outlook eklentisi public beta)
 
-> **Not:** `legal:*` skill'leri Anthropic'in resmi plugin deposundaki (`anthropics/knowledge-work-plugins`) Legal plugin'inden gelir, örneğin `legal:review-contract` ve `legal:triage-nda`. Hukuk alanında hazır eklenti ve ajanlar için [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) da bir başlangıç noktasıdır.
+> **Not:** `legal:*` skill'leri Anthropic'in resmi plugin deposundaki (`anthropics/knowledge-work-plugins`) Legal plugin'inden gelir, örneğin `legal:review-contract` ve `legal:triage-nda`. Eklentinin sunduğu diğer skill'leri kurmadan önce plugin sayfasından kontrol edin; imza yönlendirme ve brifing gibi işler için kendi skill'inizi de yazdırabilirsiniz. Hukuk alanında hazır eklenti ve ajanlar için [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) da bir başlangıç noktasıdır.
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
@@ -122,10 +121,10 @@ Claude, kanuna uygun bir ilk taslak yanıt üretir; **hukuk, göndermeden önce 
 
 ## Gerçek Örnek: KVKK Erişim Talebi
 
-Şirket bir müşteriden KVKK kapsamında "benim hakkımda tuttuğunuz tüm verileri görmek istiyorum" talebi aldı. 30 gün içinde yanıt vermek yasal zorunluluk.
+Şirket bir müşteriden KVKK kapsamında "benim hakkımda tuttuğunuz tüm verileri görmek istiyorum" talebi aldı. Başvuruya en geç 30 gün içinde yanıt vermek yasal zorunluluk (KVKK m.13).
 
 **Adım 1:** Hukuk müşaviri talep metnini + şirketin veri envanterini Claude'a verir:
-> *"Bu KVKK erişim talebine yanıt taslağı hazırla. KVKK madde 11 uyarınca 30 gün içinde yanıt verilecek; resmi ve yapılandırılmış olsun. Hangi veri kategorilerinin, hangi amaçla ve hangi saklama sürelerle işlendiğini içersin. Şirket adı: [Y], talep sahibi: [X]."*
+> *"Bu KVKK erişim talebine yanıt taslağı hazırla. Talep KVKK madde 11 kapsamındaki bir hak (erişim); yanıt, madde 13 uyarınca en geç 30 gün içinde verilecek; resmi ve yapılandırılmış olsun. Hangi veri kategorilerinin, hangi amaçla ve hangi saklama sürelerle işlendiğini içersin. Şirket adı: [Y], talep sahibi: [X]."*
 
 **Adım 2:** Claude yapılandırılmış bir yanıt üretir: veri kategorileri, işlenme amaçları, hukuki dayanaklar, saklama süreleri, aktarım bilgisi ve hakların hatırlatılması.
 
@@ -133,17 +132,38 @@ Claude, kanuna uygun bir ilk taslak yanıt üretir; **hukuk, göndermeden önce 
 
 **Adım 4:** Resmi kanallarla (e-posta veya KEP) gönderim.
 
-Toplam süre: yaklaşık 8-10 dakika (örnek senaryo). Geleneksel süreç: 45-60 dakika.
+**Süre:** taslak yazımı elle 45-60 dakika, Claude ile 10-15 dakika. Hukuk kontrolü ayrıca 15-30 dakika sürer ve atlanmaz. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Ayda 10 talep işleyen bir şirkette yalnızca taslak aşamasının kazancı kabaca 5-8 saattir; kontrol süresi bunun dışındadır.
 
-> **Kişisel veri notu:** Talep metni ve veri envanteri kişisel veri içerir. Claude'a girmeden önce kişisel verileri anonimleştirin ya da yurt dışı aktarım güvencesini tamamlayın; ayrıntılar [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım (KVKK m.9)" bölümünde. Çalışandan ya da müşteriden açık rıza almak, düzenli Claude kullanımı için tek başına güvenli bir dayanak değildir.
+> **Kişisel veri notu:** Talep metni ve veri envanteri kişisel veri içerir. Claude'a girmeden önce kişisel verileri anonimleştirin ya da yurt dışı aktarım güvencesini tamamlayın; ayrıntılar [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasında. Çalışandan ya da müşteriden açık rıza almak, düzenli Claude kullanımı için tek başına güvenli bir dayanak değildir.
+
+## Hukuk Bürosunda Kullanım
+
+Şirket içi hukuk birimi ile hukuk bürosunun işi farklıdır: büroda müvekkil adına çalışılır ve müvekkil bilgisi avukatlık sırrı kapsamındadır. Ölçüm sayfasındaki [12 kişilik İstanbul hukuk bürosu vakası](/wiki/temeller/olcum-metrikleri/) yaklaşımın büroda nasıl yerleştiğini anlatır; ilk direnç "hukuk hassas, yapay zekâ riskli" kaygısıdır ve çözümü kuralı baştan yazmaktır: Claude taslak çıkarır, avukat doğrulayıp gönderir.
+
+Büro pratiğinde öne çıkan işler:
+
+- **KEP yazışması.** İhtarname, cevap ve bildirim metinlerinin taslağı. Claude KEP'e bağlanmaz; metni siz gözden geçirip KEP üzerinden gönderirsiniz.
+- **UYAP belgeleri.** UYAP'tan indirdiğiniz dilekçe, tensip zaptı ve ara kararları PDF olarak yükleyip özet, tarih çizelgesi ve eksik belge listesi çıkarabilirsiniz. Claude UYAP'a girmez; sistemden belgeyi siz alırsınız.
+- **Arabuluculuk yazışması.** Başvuru metni, davet yazısı ve görüşme sonrası özet notları. Anlaşma ya da son tutanak metnini mutlaka avukat kontrol eder.
+- **Dilekçe ve içtihat çalışması.** Taslak ve araştırma notu hazırlanır; atıf yapılan karar ve madde numaraları resmî kaynaktan tek tek doğrulanır.
+
+Müvekkil verisini anonimleştirmeden girmeyin. Büro olarak Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil, ama kişisel hesaplarda veri ayarları herkesin kendi elindedir. Hukuk bürolarına yönelik program için [Hukuk Büroları programı](/programlar/hukuk-burolari/) sayfasına bakın.
+
+## Sık Hatalar
+
+Eğitimlerde hukuk ekiplerinin en çok takıldığı üç nokta (Zamana eğitim materyali):
+
+- **"Claude hukuk biliyor" sanısı.** Claude metin üretir, hukuki yargıyı insan verir. Çıktı bir avukatın kontrolünden geçmeden dışarı çıkmaz.
+- **Hassas sözleşme içeriği.** Müşteri ya da karşı taraf bilgisini yapıştırmadan önce şirket politikanızı kontrol edin; mümkünse anonimleştirin.
+- **Güncel olmayan mevzuat.** Claude'un bilgisi belirli bir tarihe kadardır, yeni mevzuat değişikliğini bilmeyebilir. Madde numarasını ve yürürlük durumunu resmî kaynaktan doğrulayın.
 
 ## Brifing İş Akışı: Geçmiş Kararlara Hızlı Yanıt
 
-Hukuk ekibinin sık ihtiyacı: "Bu konuyu daha önce nasıl ele almıştık?" Bunu otomatik brifing, talep üzerine araştırma ve **kaynak doğrulama** ile kuran bir akış, `legal:brief` skill'iyle yapılır:
+Hukuk ekibinin sık ihtiyacı: "Bu konuyu daha önce nasıl ele almıştık?" Bunu otomatik brifing, talep üzerine araştırma ve **kaynak doğrulama** ile kuran bir akışı, kendi yazdıracağınız bir "brief" skill'iyle kurabilirsiniz (Anthropic'in hazır bir brifing skill'ine dayanmıyoruz):
 
-1. **Skill'i kurun ve özelleştirin.** İncelemelerinizin nerede durduğunu (klasör, tracker, e-posta) Claude'a tanıtın: *"/brief skill'ini ekibime göre uyarla. İncelemelerimiz şurada duruyor..."*
+1. **Skill'i yazdırın ve özelleştirin.** İncelemelerinizin nerede durduğunu (klasör, tracker, e-posta) Claude'a tanıtın: *"Ekibim için 'brief' adında bir skill yaz. İncelemelerimiz şurada duruyor..."*
 2. **Günlük brief'i zamanlayın.** *"/schedule Her iş günü 08:00'de gelen kutumu, tracker'ı ve Slack'i oku, önceliklendirilmiş bir özet hazırla."* (bkz: [Scheduled Tasks](/wiki/araclar/scheduled-tasks/))
-3. **Talep üzerine brief çalıştırın.** Belirli bir soruda aynı skill: *"/brief yeni gelen talep, önceki incelemedeki sonucumuzu değiştirir mi?"*
+3. **Talep üzerine brief çalıştırın.** Belirli bir soruda aynı skill'i çağırın: *"/brief yeni gelen talep, önceki incelemedeki sonucumuzu değiştirir mi?"*
 4. **Kaynakları doğrulayın.** Her iddianın bağlı olduğu **kaynağı tıklayıp orijinal metni okuyun**. Bu adım atlanmaz, profesyonel sorumluluk burada başlar.
 5. **Yanıtlayın ve kapatın.** Connector'larla yanıtı taslaklayın, ticket'ı kapatın, kararı ve kaynağı not düşün.
 
@@ -151,7 +171,11 @@ Hukuk ekibinin sık ihtiyacı: "Bu konuyu daha önce nasıl ele almıştık?" Bu
 
 ## İlgili Sayfalar
 
-- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): KVKK genel çerçevesi ve yurt dışı aktarım (m.9)
+- [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): KVKK genel çerçevesi
+- [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/): Claude'a kişisel veri girmeden önce
+- [Hukuk ekipleri için Claude](/kurumsal/hukuk/): kurumsal sayfa, Türk hukukunda dikkat edilecekler
+- [Hukuk Büroları programı](/programlar/hukuk-burolari/): büro için eğitim programı
+- [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): kendi zaman kazancınızı hesaplayın
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Hukuki sınırlar
 - [İhracat](/wiki/departmanlar/ihracat/): Uluslararası ticaret sözleşmeleri
 - [Skills](/wiki/yetenekler/skills/): Legal plugin skill'leri

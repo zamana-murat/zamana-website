@@ -6,7 +6,7 @@ tags:
   - baslangic
   - checklist
   - onboarding
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 [İlk Kurulum](/wiki/temeller/ilk-kurulum/) tamam. Claude Desktop kurulu, abonelik aktif, Cowork çalışıyor. **Şimdi asıl iş başlıyor, bilgiyi alışkanlığa çevirmek.**
@@ -28,6 +28,8 @@ Bu sayfa, ilk haftayı yapılandırılmış geçirmek için bir rehberdir. Her g
 
 Toplam yatırım: **~5 saat** (haftada 7 gün × ortalama 40 dk). Çıktı: kalıcı alışkanlık.
 
+![İlk 7 gün zaman çizelgesi: iş çıktısı, CLAUDE.md, skill ile belge, connector, prompt kütüphanesi, iterasyon ve otomasyon](/images/wiki/temeller-ilk-7-gun.svg)
+
 ---
 
 ## Gün 1: İlk Gerçek İş Çıktısı (45 dk)
@@ -44,7 +46,7 @@ Bu hafta yapmanız gereken yazılı bir çıktı: müşteri e-postası, rapor ö
 
 > **Önce: Hangi modda, hangi modelle?**
 >
-> - **Mod: Cowork.** Claude Desktop sol üstte üç ikon gösterir: 💬 Chats, **Cowork** (ortadaki, küçük yatay çizgili liste ikonu) ve `</> Code`. **Ortadaki Cowork ikonuna tıklayın.** Sebep: CLAUDE.md dosyanız burada otomatik okunur ve çıktıyı workspace klasörüne kaydedebilirsiniz; Chats'te bu yok. Hesabınızda birleşik arayüz açıldıysa ([Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/), yayılım kademeli) ayrı bir Cowork ikonu görmeyebilirsiniz; doğrudan yeni bir konuşma açıp görevi yazın.
+> - **Mod: Cowork.** Claude Desktop sol üstte üç ikon gösterir: 💬 Chats, **Cowork** (ortadaki, küçük yatay çizgili liste ikonu) ve `</> Code`. **Ortadaki Cowork ikonuna tıklayın.** Sebep: workspace klasörünü bağladığınız yerel Cowork oturumu klasördeki CLAUDE.md dosyanızı okur, çıktıyı da workspace klasörüne kaydedebilirsiniz; Chats'te ikisi de yok. Hesabınızda birleşik arayüz açıldıysa ([Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/), yayılım kademeli) ayrı bir Cowork ikonu görmeyebilirsiniz; doğrudan yeni bir konuşma açıp görevi yazın.
 > - **Model: Sonnet**, sağ üstte veya sohbet kutusunun yanında model seçici var. **Sonnet 5.5** seçili olduğunu kontrol edin, değilse seçin. Bu hafta hep Sonnet kullanın, model seçimiyle uğraşmayın. Detay: [Modeller](/wiki/temeller/modeller/).
 > - **İlk devretme refleksi:** Cowork bir işe başlamadan önce sık sık **ne yapacağına dair bir plan önerir**. Bu planı okuyun, doğruysa onaylayın. Devretmenin kalbi "yap" demek değil, planı onaylamaktır. Detay: [Cowork → İlk Görevi Devretmek](/wiki/araclar/cowork-modu/).
 
@@ -95,7 +97,7 @@ Konu derinleşirse: [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/)
 
 ## Gün 2: CLAUDE.md'yi Yaşatın (40 dk)
 
-**Amaç:** Dün Claude'a tekrar tekrar açıkladığınız her şeyi [CLAUDE.md](/wiki/claude-md/nedir/)'ye taşıyın. Bir kez yazın, her zaman geçerli olsun.
+**Amaç:** Dün Claude'a tekrar tekrar açıkladığınız her şeyi [CLAUDE.md](/wiki/claude-md/nedir/)'ye taşıyın. Bir kez yazın, çalışma klasörünüzde (bağlı Cowork oturumlarında) her seferinde geçerli olsun; kısa sürümü profil talimatına yazarsanız sıradan sohbetlerde de geçerli olur.
 
 ### Yapılacaklar
 
@@ -136,15 +138,19 @@ Workspace klasöründeki `CLAUDE.md` dosyasını bir editörle açın. [5 bölü
 - 2-3 aktif proje
 ```
 
-**3. Test edin (10 dk)**
+**3. Kısa sürümü profil talimatına yazın (5 dk)**
 
-Cowork'te yeni sohbet açın:
+Settings > General > "Instructions for Claude" alanına dosyanın en kritik 3-4 satırını (ton, "her zaman / asla" kuralları) yapıştırın. Bu alan tüm sohbetlerde geçerlidir. Hangi talimatın nerede çalıştığı: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
+
+**4. Test edin (5 dk)**
+
+Workspace klasörünü bağlayarak Cowork'te yeni oturum açın:
 
 ```
-CLAUDE.md dosyamı okudun mu? Beni özetle.
+Talimatımı 3 maddede özetle.
 ```
 
-Yanlış veya eksik bir şey varsa CLAUDE.md'ye dönün, düzeltin, tekrar test edin.
+Yanlış veya eksik bir şey varsa CLAUDE.md'ye (ya da profil talimatına) dönün, düzeltin, tekrar test edin.
 
 ### Yeni Öğrenilen
 
@@ -227,6 +233,8 @@ Rolünüze göre en kritik olan:
 | İK | **Microsoft 365** |
 | Yönetici Asistanı | **Microsoft 365** tam paket |
 
+**Türkiye'de sık kullanılan araçlar (Logo, Mikro, Paraşüt):** Bu üç muhasebe/ERP aracı için Claude'un resmi bir connector'ı yok (Ekim 2026). Bu yüzden Gün 4'te bunlardan birini bağlamaya çalışmayın. Finans ve muhasebe rolündeyseniz bugünün connector'ı olarak **Microsoft 365** (Excel) ya da dosya tabanlı akış yeterlidir: araçtan Excel/CSV dışa aktarın, Claude'a yükleyin ya da Excel eklentisiyle çalıştırın. Özel bağlantı seçenekleri için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın.
+
 **2. Cowork → Customize → Connector kurulumu (15 dk)**
 
 Cowork sol panelde **"Customize"** veya **"Settings → Connectors"** sekmesi.
@@ -274,9 +282,9 @@ Connector kurulu olduğuna göre, **bugün gerçekten yapacağınız bir işi** 
 
 ### Yapılacaklar
 
-**1. prompts/ klasörünü kur (2 dk)**
+**1. Kütüphanenin yerini seç (2 dk)**
 
-Workspace klasörünüzde (örn. `C:\ClaudeWorkspace`) **`prompts/`** adlı yeni klasör oluşturun. (Kurulum sayfasında zaten önerdiyseniz var.)
+Önerilen yer bir **Claude Projesi**: "Prompt Kütüphanem" adlı bir proje açın, aşağıda hazırlayacağınız `.md` dosyalarını projeye yükleyin, proje talimatına "bu projedeki şablonlardan birini seçip değişkenleri benden sor" yazın. Proje hem sohbette hem Cowork'te aynı şekilde çalışır. Yalnızca bilgisayardaki bir klasöre (örn. `C:\ClaudeWorkspace\prompts\`) güvenmeyin: 6 Ekim 2026'dan beri Pro ve Max'te yeni Cowork görevleri bulutta çalışır ve bulut görevleri yerel klasöre doğrudan erişemez. Aşağıdaki adımlarda geçen `prompts/` klasörünü dosyalarınızın yerel yedeği olarak tutun, asıl kütüphane projede dursun. Sık kullandığınız bir prompt zamanla sabitlenirse onu [Skill](/wiki/yetenekler/skills/)'e çevirmek de bir yoldur.
 
 **2. Bu hafta çalışan promptları topla (15 dk)**
 
@@ -315,11 +323,11 @@ Kaçın: "umarım", "rica ederim", pazarlama klişeleri
 - En son güncellendi: 2026-10-05
 ```
 
-3-5 prompt için tekrarla. `prompts/` klasöründe `musteri-yeniden-baglanti.md`, `aylik-rapor-anlatisi.md` gibi anlamlı isimlerle.
+3-5 prompt için tekrarla. Claude Projende `musteri-yeniden-baglanti`, `aylik-rapor-anlatisi` gibi anlamlı isimlerle (Cowork ile yerel klasörde çalışıyorsan `prompts/` klasöründe).
 
 **4. README.md ekle (8 dk)**
 
-`prompts/README.md` dosyası, kütüphanedeki promptların listesi:
+Proje talimatında ya da bir liste dosyasında (Cowork'te `prompts/README.md`) kütüphanedeki promptların listesi:
 
 ```markdown
 # Prompt Kütüphanem
@@ -474,7 +482,7 @@ CLAUDE.md'nin "Güncel Odak" bölümüne **bir sonraki haftanın 2-3 hedefini** 
 
 - "Tüm Pazartesi sabah pipeline raporu otomatik yapılacak"
 - "Tedarikçi yazışmaları için yeni bir prompt geliştir"
-- "İK departmanı için bir CLAUDE.md alt klasörü kur"
+- "İK departmanı için ayrı bir klasör ve kendi CLAUDE.md'sini kur"
 
 **4. Soru: Bu Claude bende kalıcı bir parça oldu mu? (5 dk)**
 
@@ -492,7 +500,7 @@ Dürüstçe cevaplayın:
 
 ### Daha Detay
 
-[Scheduled Tasks](/wiki/araclar/scheduled-tasks/) | [Dispatch](/wiki/araclar/dispatch/): telefondan görev atama (sınırlı beta, yeni kullanıcılara kapalı; yalnızca bilgi için)
+[Scheduled Tasks](/wiki/araclar/scheduled-tasks/) | [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): telefondan görev atama (sınırlı beta, yeni kullanıcılara kapalı; yalnızca bilgi için)
 
 ---
 
@@ -501,7 +509,7 @@ Dürüstçe cevaplayın:
 Bu rehberi takip ettiyseniz, 7 gün sonra elinizde olması gerekenler:
 
 - [ ] Gerçek işinize göre genişlemiş, yaşayan bir [CLAUDE.md](/wiki/claude-md/nedir/)
-- [ ] `prompts/` klasöründe **3-5** test edilmiş prompt
+- [ ] Claude Projenizde (ya da `prompts/` klasöründe) **3-5** test edilmiş prompt
 - [ ] **1+ connector** aktif ve çalışıyor
 - [ ] **1 scheduled task** otomatik çalışıyor
 - [ ] **7+ gerçek iş çıktısı** üretilmiş ve kullanılmış
@@ -547,7 +555,7 @@ Yansıma olmazsa öğrenme yarım kalır. 25 dakikalık yansıma, bir sonraki ha
 - **[Departmanlar](/wiki/departmanlar/)**: Kendi rolünüze özel iş akışları (18 alan)
 - **[Yetenekler](/wiki/yetenekler/)**: Skills, Artifacts, Computer Use, Agents
 - **[Prompting derinleşmesi](/wiki/prompting/)**: 4D Çerçevesi, ileri teknikler
-- **[CLAUDE.md derinleşmesi](/wiki/claude-md/)**: Memory yönetimi, dört katman
+- **[Kalıcı talimat derinleşmesi](/wiki/claude-md/)**: Talimat ve hafıza yerleri, dört katman
 
 İkinci hafta bunlardan birine odaklanın, kendi rolünüze en yakın olanı seçin.
 
@@ -556,12 +564,14 @@ Yansıma olmazsa öğrenme yarım kalır. 25 dakikalık yansıma, bir sonraki ha
 ## İlgili Sayfalar
 
 - [İlk Kurulum](/wiki/temeller/ilk-kurulum/): Bu rehberden önce yapılması gerekenler
-- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Hafıza dosyasının kavramı
+- [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Kalıcı talimat dosyasının kavramı
 - [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/): 5 bileşen yapısı
 - [Skills](/wiki/yetenekler/skills/): Uzmanlık paketleri
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Tüm connector seçenekleri
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Otomasyon detayları
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Discernment derinleşmesi
 - [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/): İterasyon ipuçları
+- [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt gibi araçlar için seçenekler
+- [Pilottan Yaygınlaştırmaya](/wiki/temeller/pilot-ve-yayginlastirma/): Kişisel haftadan ekip düzeyine geçiş
 
 

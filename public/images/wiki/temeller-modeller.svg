@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Claude model ailesi: yetenek, maliyet ve hız</title>
+  <desc id="desc">Göreli konumlandırma, rakam yok. Haiku 4.5 en hızlı ve en ucuz, hafif işler için. Sonnet 5.5 günlük iş ve başlangıç modeli. Opus 5.5 ağır ve zor işler için. Fable 5.1 en güçlü ve en pahalı, uzun işler için. Yetenek ve maliyet arttıkça hız düşer.</desc>
+  <defs>
+    <marker id="arrow-navy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f2855"/>
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="560" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Dört model: yetenek, maliyet, hız</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Yukarı çıktıkça güç ve maliyet artar, hız düşer</text>
+
+  <!-- Axes -->
+  <line x1="90" y1="470" x2="90" y2="118" stroke="#0f2855" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <line x1="90" y1="470" x2="776" y2="470" stroke="#0f2855" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <text x="62" y="294" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle" transform="rotate(-90 62 294)">Maliyet ve kota tüketimi</text>
+  <text x="776" y="500" font-size="16" font-weight="700" fill="#0f2855" text-anchor="end">Zeka ve yetenek</text>
+
+  <!-- Haiku -->
+  <rect x="110" y="384" width="210" height="66" rx="10" fill="#e8edf6"/>
+  <text x="126" y="412" font-size="20" font-weight="700" fill="#0f2855">Haiku 4.5</text>
+  <text x="126" y="436" font-size="16" font-weight="500" fill="#1a2238">En hızlı, hafif işler</text>
+
+  <!-- Sonnet -->
+  <rect x="260" y="298" width="210" height="66" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="276" y="326" font-size="20" font-weight="700" fill="#0f2855">Sonnet 5.5</text>
+  <text x="276" y="350" font-size="16" font-weight="500" fill="#1a2238">Günlük iş, başlangıç</text>
+
+  <!-- Opus -->
+  <rect x="410" y="212" width="210" height="66" rx="10" fill="#e8edf6" stroke="#0f2855" stroke-width="2"/>
+  <text x="426" y="240" font-size="20" font-weight="700" fill="#0f2855">Opus 5.5</text>
+  <text x="426" y="264" font-size="16" font-weight="500" fill="#1a2238">Ağır ve zor işler</text>
+
+  <!-- Fable -->
+  <rect x="560" y="126" width="210" height="66" rx="10" fill="#0f2855"/>
+  <text x="576" y="154" font-size="20" font-weight="700" fill="#ffffff">Fable 5.1</text>
+  <text x="576" y="178" font-size="16" font-weight="500" fill="#ffffff">En güçlü, uzun işler</text>
+
+  <!-- Speed axis -->
+  <line x1="200" y1="530" x2="660" y2="530" stroke="#c9a84c" stroke-width="2" marker-start="url(#arrow-gold)" marker-end="url(#arrow-gold)"/>
+  <text x="96" y="536" font-size="16" font-weight="700" fill="#0f2855">Daha hızlı</text>
+  <text x="776" y="536" font-size="16" font-weight="700" fill="#0f2855" text-anchor="end">Daha yavaş</text>
+  <rect x="404" y="518" width="52" height="24" fill="#ffffff"/>
+  <text x="430" y="536" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">Hız</text>
+</svg>

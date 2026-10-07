@@ -1,12 +1,13 @@
 ---
 title: "Voice Mode: Claude ile Sesli Etkileşim"
-description: "Claude'un ses özelliği, yazı yerine konuşarak etkileşim kurmanıza izin verir. Dikte, hızlı brainstorm, mobil kullanım için uygundur."
+seoTitle: "Claude Sesli Mod: Nasıl Açılır, Türkçe Destekliyor mu?"
+description: "Claude sesli mod nasıl açılır, hangi planlarda var, Türkçe destekliyor mu? Desteklenen diller, sınırlar ve Türkçe için dikte alternatifi."
 tags:
   - araclar
   - voice-mode
   - mobil
   - dikte
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Claude'un ses özelliği, yazı yerine konuşarak etkileşim kurmanıza izin verir.** Beta olarak tüm planlarda (Free, Pro, Max, Team, Enterprise) mobil uygulamalarda, masaüstünde ve web'de çalışır. Eller serbest, doğal bir sesli konuşma deneyimi sağlar.
@@ -46,17 +47,19 @@ Aynı konuşma içinde her an metinden sese veya tersine geçiş yapabilirsiniz,
 
 ## Voice Mode Neye Uygundur?
 
-- **Yazmanın zor olduğu anlarda dikte:** araba yolu, yürüyüş, elleriniz doluyken
+- **Yazmanın zor olduğu anlarda dikte:** yürüyüş, elleriniz doluyken (desteklenen dillerde, Türkçe için aşağıya bakın)
 - **Uzun sözlü açıklamalar:** yazması dakikalar alacak karmaşık bir bağlamı 30 saniyede anlatmak
 - **Başka iş yaparken hızlı beyin fırtınası:** Claude'la kafanızı dağıtmayacak akışkan bir konuşma
 - **Eller serbest belge incelemesi:** "Bu raporun özetini söyle": dinlerken başka iş yaparsınız
-- **Mobil kullanım:** yoldayken Claude'la sesli konuşmak
+- **Mobil kullanım:** yoldayken Claude'la sesli konuşmak ([Claude Mobil](/wiki/araclar/claude-mobil/))
 
 ## Türkçe Desteği
 
-Dürüst not: Anthropic'in yardım sayfasındaki Voice mode dil listesinde (İngilizce, Fransızca, Almanca, Hintçe, Endonezyaca, İtalyanca, Japonca, Korece, Brezilya Portekizcesi, İspanyolca) Türkçe görünmüyor. Bu liste bir arama özetinden alındı, Türkçe için sayfayı doğrudan teyit edemedik. Claude yazılı Türkçeyi iyi anlar, ama Türkçe sesli konuşmanın kalitesini kendi hesabınızda deneyip karar verin. Alternatif: telefonun klavye dikte özelliğini kullanıp metni Claude'a göndermek.
+**Voice mode Türkçe desteklemiyor.** Anthropic'in yardım sayfasındaki dil listesinde (İngilizce, Fransızca, Almanca, Hintçe, Endonezyaca, İtalyanca, Japonca, Korece, Brezilya Portekizcesi, İspanyolca) Türkçe yok. Bu liste bir arama özetinden alındı; güncel hâli için yardım sayfasına bakın. Claude yazılı Türkçeyi iyi anlar ve yazar, sorun yalnızca sesli konuşma tarafındadır.
 
-Birkaç pratik not:
+**Türkçe için alternatif:** telefonun klavye dikte özelliğiyle (iOS ve Android'de klavyedeki mikrofon simgesi) konuşup metni Claude'a yazılı göndermek. Dikteyi telefon yapar, Claude yazılı metinle çalışır; Türkçede kalite telefonun dikteine bağlıdır. İngilizce çalışıyorsanız aşağıdaki notlar geçerli.
+
+İngilizce sesli kullanım için birkaç pratik not:
 
 - Konuşma hızınız normal olsun, çok yavaş veya çok hızlı transkripsiyon kalitesini düşürür
 - Özel isimler (şirket adı, kişi adı, teknik terim) bazen yanlış yazılabilir, konuşma sonrası metni kontrol edin veya yazıya geçip düzeltin
@@ -66,20 +69,20 @@ Birkaç pratik not:
 
 Voice mode bir konuşma arayüzüdür, yani:
 
-- **Cowork'ün dosya ve skill akışını tetiklemez.** Bir `docx` dosyası üretemez, `/schedule` komutu çalıştırmaz.
-- **Yerel dosyalara erişemez, script çalıştıramaz, otomasyon yapamaz.** Bağlı araçlardan (connector) yararlanabilir; Free'de tek araç, ücretli planlarda tüm bağlı araçlar.
+- **Sohbet arayüzüdür, Cowork değildir.** Dosya üretme, zamanlanmış görev ve masaüstü otomasyonu için [Cowork](/wiki/araclar/cowork-modu/) kullanın; sesli konuşmanın bunları tetikleyeceğini varsaymayın.
+- **Bağlı araçlardan (connector) yararlanabilir:** Free'de tek araç, ücretli planlarda tüm bağlı araçlar açıktır. Masaüstünüzdeki yerel dosyalarla çalışma Cowork'ün işidir.
 - **Cevap kalitesi yazıyla aynıdır**: fark sadece giriş/çıkış biçimidir.
 - **Uzun ve karmaşık çıktılar** sesli dinlemektense okumak genelde daha verimlidir.
 
-Kısaca: Voice mode **sohbetin sesli sürümüdür**. Cowork'ün tüm gücü (dosya üretme, otomasyon) ses üzerinden doğrudan kullanılamaz. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude içinde birleşiyor (kademeli yayılım). Birleşik arayüzde sesli girişin hangi işleri tetikleyebildiğini doğrulayamadık, kendi hesabınızda deneyin.
+Kısaca: Voice mode **sohbetin sesli sürümüdür**. Cowork'ün dosya üretme ve otomasyon gücü ses üzerinden doğrudan kullanılamaz. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude içinde birleşiyor (kademeli yayılım). Birleşik arayüzde sesli girişin hangi işleri tetikleyebildiğini doğrulayamadık, kendi hesabınızda deneyin.
 
-## Sesle Görev Vermek (Dispatch ve Mobil Cowork)
+## Sesle Görev Vermek (Mobil Cowork ve Dispatch)
 
-Konuşarak iş vermek, bu özelliğin en değerli kullanım şeklidir. Voice mode'un kendisi Cowork görevi başlatmaz, ama telefonun klavye dikteyiyle bir görevi yazdırıp [Dispatch](/wiki/araclar/dispatch/) (yeni kullanıcılara kapalı, mevcut kullanıcılar için) ya da mobil Cowork betasına gönderebilirsiniz.
+Konuşarak iş vermek değerlidir, ama Türkçede bunu Claude'un sesli modu değil, telefonun klavye diktesi sağlar. Voice mode'un kendisi Cowork görevi başlatmaz; diktesiyle yazdırdığınız görevi mobil Cowork betasına ya da (mevcut kullanıcılar için, yeni kullanıcılara kapalı) Dispatch'e gönderirsiniz. Ayrıntı: [Telefondan görev: mobil Cowork ve Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
 
 Örnek: yolda direksiyondasınız, aklınıza bir iş gelir. Kenara çekince dikte edin:
 
-> *"Perşembeki tedarikçi toplantısı için hazırlık notları çıkar. Şirket ABC Metal. Son 3 ay yazışmalarımıza bak, öne çıkan konuları listele, önerilen gündemi hazırla, Projects/Supplier-ABC klasörüne kaydet."*
+> *"Perşembeki tedarikçi toplantısı için hazırlık notları çıkar. Şirket Ege Metal. Son 3 ay yazışmalarımıza bak, öne çıkan konuları listele, önerilen gündemi hazırla, Tedarikçi-Ege klasörüne kaydet."*
 
 Siz toplantıya varmadan, belge hazır olabilir. Klavye kullanmadan.
 
@@ -92,7 +95,7 @@ Doğal eğiliminiz varsa kullanın, yoksa varsayılanı yazı olarak bırakın. 
 ## İlgili Sayfalar
 
 - [Claude Chat](/wiki/araclar/claude-chat/): Voice mode'un içinde yaşadığı ana arayüz
-- [Dispatch](/wiki/araclar/dispatch/): Telefondan görev atma (yeni kullanıcılara kapalı)
+- [Claude Mobil](/wiki/araclar/claude-mobil/): Mobil uygulama, mobil Cowork ve Dispatch (yeni kullanıcılara kapalı)
 - [Claude Nedir?](/wiki/temeller/claude-nedir/): Temel yetenek seti
 - [Araçlar Ana Sayfası](/wiki/araclar/): Tüm Claude araçlarının karar tablosu
 

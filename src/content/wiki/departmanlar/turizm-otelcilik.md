@@ -1,12 +1,13 @@
 ---
 title: "Turizm ve Otelcilik: Claude Uygulamaları"
+seoTitle: "Otelcilikte Claude: Çok Dilli Misafir Yanıtı ve Yorum Yönetimi"
 description: "Turizm ve otelcilik için Claude: çok dilli misafir iletişimi, online yorum yönetimi, paket içeriği, rezervasyon sorularına hızlı yanıt."
 tags:
   - departmanlar
   - turizm
   - otel
   - misafir-iletisim
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Türkiye'de turizm stratejik bir sektör: ekonominin önemli bir dilimi, milyonlarca uluslararası misafir ve çok dilli iletişim zorunluluğu. Otel, acente ve tur operatörü için **dil çeşitliliği, kesintisiz misafir iletişimi ve online yorum yönetimi**, Claude'un hızlı değer ürettiği alanlardandır.
@@ -31,7 +32,7 @@ Misafir İngilizce, Almanca, Rusça, Arapça, Çince veya Fransızca yazıyor; �
 - Otelin marka sesini korur
 - Hızlı yanıt için tek bir prompt yeter
 
-Sesli dikte ile çok dilli yanıt hazırlamak için [Voice Mode](/wiki/araclar/voice-mode/) sayfasına bakın; hangi dillerin desteklendiğini önceden kontrol edin.
+Sesli dikte ile çok dilli yanıt hazırlamak için [Voice Mode](/wiki/araclar/voice-mode/) sayfasına bakın; Claude'un sesli modu şu an Türkçeyi desteklemiyor, Türkçe dikte için cihazınızın kendi dikte özelliğini kullanın ve diğer dillerde desteği önceden kontrol edin.
 
 ### Önemli Kültürel Nüanslar
 
@@ -58,6 +59,10 @@ Misafir şikayetinin çözümünde hız ve diplomatik ton belirleyicidir. Claude
 
 [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası şikayet yönetimi temellerini verir.
 
+### Acil Durum İletişimi
+
+Kayıp eşya, sağlık durumu ya da güvenlik olayında misafire ve yakınına hızlı, sakin ve çok dilli bilgilendirme gerekir. Claude mesaj taslağını hazırlar; ama acil bir durumda önce otelin kendi acil prosedürü ve ilgili resmî kurumlar devreye girer, Claude yalnız yazışmaya yardım eder. Sağlık ve güvenlik içeren her mesajı yetkili yönetici onaylar, kişisel veriyi minimumda tutun.
+
 ## Bölüm 2: Online Yorum Yönetimi
 
 ### Yorum Yanıtı
@@ -80,6 +85,10 @@ Aylık tüm yorumları Claude'a verirsiniz, şu içgörüleri çıkarır:
 - Müşteri profili kayması (örn. "Avrupalı azalmış, MENA artmış")
 
 [Code Execution](/wiki/yetenekler/code-execution/) ile sayısal trend grafikleri de çıkarılabilir.
+
+### Rezervasyon Öncesi Soru Yanıtı (Booking vb.)
+
+Misafir rezervasyondan önce "havuz ısıtmalı mı", "havaalanı transferi var mı" gibi sorular sorar; hızlı ve doğru yanıt dönüşüme yansır. Claude, otelin SSS belgesini ve politika notlarını bağlam olarak alıp misafirin dilinde kısa, sıcak yanıt taslağı çıkarır. Belgede olmayan bilgiyi uydurmaması için "yalnız verdiğim belgeye göre yanıtla" kuralını koyun; fiyat, müsaitlik ve kampanya bilgisini rezervasyon sisteminden doğrulayın.
 
 ### Yorum Toplama Stratejisi
 
@@ -134,6 +143,10 @@ Otel veya destinasyon için sosyal medya içeriği. Görseli siz çekersiniz, me
 
 Otel tanıtım videosu ve destinasyon vlog senaryoları. Çekim listesi de Claude ile çıkarılabilir.
 
+### Influencer / Blogger Brief'i
+
+Otel ziyareti için içerik üreticiye gidecek brief: ne paylaşılacak, ne söylenmeyecek, teslimatlar, tarih, içerik kullanım hakları. Claude yapıyı hızla kurar; reklam ve işbirliği etiketleme kurallarını ve sözleşme maddelerini hukuk ekibiniz doğrular.
+
 ## Bölüm 6: Rezervasyon ve Operasyon
 
 ### Sıkça Sorulan Sorular
@@ -152,6 +165,23 @@ Misafirin konaklaması sırasında SMS veya uygulama mesajları: "Spa rezervasyo
 
 Çıkış sonrası teşekkür, yorum talebi ve sonraki ziyaret için teşvik. Claude ile kişiselleştirilmiş, klişesiz.
 
+## Gerçek Örnek: Almanca Olumsuz Yorum
+
+Bir Alman misafir TripAdvisor'a 2 yıldızlı bir yorum bırakmış: "Oda temiz değildi, resepsiyon ilgisizdi, kahvaltı çeşidi azdı." Yanıtın 24 saat içinde gitmesini istiyorsunuz; resepsiyon müdürü Almanca bilmiyor.
+
+**Adım 1:** Müdür yorumu ve ilgili iç bilgiyi Claude'a verir:
+> *"Ekte Almanca bir TripAdvisor yorumu var. İç bilgi: oda temizlik kaydı o gün eksikmiş (doğru), resepsiyon notu yok, kahvaltı menüsü sabit. Önce yorumun üç şikayetini Türkçe özetle, sorumluluğumuz olan ve olmayan kısımları ayır. Sonra Almanca yanıt yaz: net ve doğrudan, aşırı nezaket kalıpları yok, savunmaya geçme, oda temizliğinde hatayı kabul et, somut düzeltme adımı söyle, 120 kelimeyi geçmesin. Yanıtın Türkçe karşılığını da ver."*
+
+**Adım 2:** Claude özeti ve Almanca yanıt taslağını Türkçe karşılığıyla birlikte verir.
+
+**Adım 3:** Müdür Türkçe karşılığını okuyup içeriği onaylar, "telafi sözü çok geniş, kaldır" der; yeni taslak gelir.
+
+**Adım 4:** Almanca bilen bir ekip üyesi ya da dış kontrolcü yanıtı gözden geçirir, ardından yorum platformundan yayınlanır.
+
+Toplam süre: yaklaşık 2-4 dakika yanıt başına (kontrol dahil, ana dil kontrolü hariç; örnek senaryo). Elle, çeviri ve yazım için yaklaşık 10-15 dakika.
+
+**Süre:** yabancı dilde yorum yanıtı elle 10-15 dakika, Claude ile 2-4 dakika; ana dil kontrolü ayrı. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/). Ayda 100 yorumda fark kabaca 20 saatten 5 saate iner.*
+
 ## Pratik Kullanım Senaryoları
 
 Aşağıdaki senaryolar örnektir; süreler işletmeye göre değişir.
@@ -162,7 +192,7 @@ Saat 23:00. Çinli bir misafir, bir şikayet için Mandarin yazıyor. Resepsiyon
 
 ### Senaryo 2: Sezon Açılışı
 
-Yaz sezonu başlıyor. Otel web sitesi 8 dilde içerik istiyor. Claude ile oda açıklamaları, paketler, F&B menüleri ve aktivite tanımları haftalar yerine günler içinde taslak olarak hazırlanır; her dilde ana dili bilen biri kontrol eder.
+Yaz sezonu başlıyor. Otel web sitesi 8 dilde içerik istiyor. Claude ile oda açıklamaları, paketler, F&B menüleri ve aktivite tanımları, elle birkaç haftayı bulan işin yerine tahminen birkaç iş gününde taslak olarak hazırlanır; her dilde ana dili bilen biri kontrol eder.
 
 ### Senaryo 3: TripAdvisor Krizi
 
@@ -174,7 +204,7 @@ Bir olumsuz yorum viral oldu, yeni rezervasyonlar düştü. Claude:
 - Operasyona somut öneriler sunar
 - Sosyal medya açıklaması yazar
 
-Böylece kısa sürede bir kriz müdahale paketi hazır olur.
+Böylece tahminen bir saat içinde bir kriz müdahale paketi taslağı hazır olur; yayınlamadan önce müdür ve ana dili bilen biri kontrol eder.
 
 ### Senaryo 4: B2B Acente Toplantısı
 
@@ -185,7 +215,7 @@ Yarın Londra merkezli büyük bir tour operator ile toplantı var. Claude:
 - Toplantıda gündeme alınması gereken 5 maddeyi çıkarır
 - Olası sorulara hazır cevaplar önerir
 
-Brief kısa sürede hazırdır.
+Brief tahminen yarım saatte hazır olur; kaynakları ve rakamları doğrulamak sizde.
 
 ## CLAUDE.md Tavsiyesi
 

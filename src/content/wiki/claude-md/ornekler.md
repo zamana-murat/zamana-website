@@ -1,15 +1,18 @@
 ---
 title: "CLAUDE.md Örnekleri: Farklı Roller İçin"
-description: Satış yöneticisi, finans direktörü, hukuk uzmanı ve diğer roller için hazır CLAUDE.md örnekleri. Kopyalayın, kendi rolünüze uyarlayın.
+seoTitle: "CLAUDE.md Örnekleri: Satış, Finans, Hukuk, İK"
+description: "Satış, finans, hukuk, İK ve yönetici asistanı için hazır CLAUDE.md örnekleri. Rolünüze uyarlayın, profil talimatına, projeye ya da klasöre koyun."
 tags:
   - claude-md
   - ornekler
   - sablon
   - rol-bazli
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 [CLAUDE.md'yi nasıl yazacağınızı](/wiki/claude-md/nasil-yazilir/) öğrendiniz. Bu sayfa farklı rollere göre hazır örnekler sunar. Sizin rolünüze en yakınını kopyalayın, kendi bilgilerinizle doldurun, başlayın.
+
+Örnekler `CLAUDE.md` biçiminde yazıldı ama metnin kendisi araçtan bağımsızdır: aynı içeriği profil talimatına, bir projenin talimatına ya da klasörünüze koyabilirsiniz. Yeri seçmek için sayfa sonundaki "Bu Metni Nereye Koyacağım?" bölümüne bakın.
 
 Örnekler **gerçekçi** olsun diye Türkiye'deki şirket yapısı, iş kültürü ve yaygın terminoloji gözetilerek yazılmıştır.
 
@@ -366,18 +369,29 @@ lastUpdated: "2026-10-05"
 ## Örnekleri Nasıl Kullanırsınız?
 
 1. **En yakın rolü seçin**: birebir aynı olmasa bile en yakın olanı alın
-2. **Kopyalayın**: workspace klasörünüze `CLAUDE.md` olarak kaydedin
+2. **Kopyalayın**: bir metin dosyasına yapıştırın
 3. **Kişisel bilgilerle değiştirin**: isim, şirket, müşteri, proje adları
 4. **Ton bölümünü kendinize uyarlayın**: en önemli bölümdür
 5. **"Güncel Odak"ı bugünkü gerçekliğinizle doldurun**
-6. **Claude'la deneyin**: bir-iki gerçek görev verin, gördüğünüz eksiklikleri CLAUDE.md'ye ekleyin
+6. **Yerine koyun** (aşağıya bakın) ve yeni bir sohbet ya da oturumda "Talimatımı 3 maddede özetle" deyin
+7. **Claude'la deneyin**: bir-iki gerçek görev verin, gördüğünüz eksiklikleri metne ekleyin
 
 Bu 20 dakika alır. Ve ertesi hafta Claude oturumlarınız niteliksel olarak farklı olur.
+
+## Bu Metni Nereye Koyacağım?
+
+- **Tüm sohbetlerde geçerli olsun istiyorsanız:** Settings > General > "Instructions for Claude" (profil talimatı). Uzun örneğin tamamı yerine kısa sürümünü, yani Kim Olduğum, Ton ve Her Zaman / Asla bölümlerini yapıştırın.
+- **Bir iş ya da müşteri için:** o işin [Projects](/wiki/araclar/projects/) talimat alanına. Şirket ve Güncel Odak bölümleri burada daha yerindedir.
+- **Cowork ile bilgisayarınızdaki klasörde çalışıyorsanız:** klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel oturumda okunur; bulut Cowork oturumunda okunduğu belgelenmediği için kritik kuralları profil talimatına da yazın.
+- **Claude Code kullanıyorsanız:** `CLAUDE.md` dosyası olarak proje köküne.
+
+Kalıcı talimat yerlerinin karşılaştırması: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ## İlgili Sayfalar
 
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Temel kavram
 - [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Adım adım rehber
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): CLAUDE.md dışı hafıza mekanizmaları
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Profil talimatı, proje, klasör ve hafıza karşılaştırması
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Daha kısa, rol bazlı şablonlar
 - [Departmanlar](/wiki/departmanlar/): Role göre Claude kullanım senaryoları
 

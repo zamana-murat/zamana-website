@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 610" width="800" height="610" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Claude kullanımında veri akışı ve şirket kontrol noktaları</title>
+  <desc id="desc">Çalışan metin, dosya ya da soru girer; veri Claude uygulamasından ABD merkezli Anthropic sunucularına, yani yurt dışına gider. Ticari planlarda (Team, Enterprise, API) veri eğitimde kullanılmaz ve standart saklama 30 gündür. Free, Pro ve Max'te eğitim kullanıcı ayarına bağlıdır, saklama 30 gün ya da 5 yıldır. Şirketin dört kontrol noktası: iç politika, plan seçimi, KVKK m.9 aktarım dayanağı ve gizlilik ayarı.</desc>
+  <defs>
+    <marker id="arrow-navy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f2855"/>
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="610" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Veriniz nereye gider?</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Solda veri akışı, sağda şirketin kontrol noktaları</text>
+
+  <!-- Flow 1: employee -->
+  <rect x="40" y="120" width="380" height="76" rx="10" fill="#e8edf6"/>
+  <text x="230" y="152" font-size="20" font-weight="700" fill="#0f2855" text-anchor="middle">Çalışan</text>
+  <text x="230" y="178" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Metin, dosya ya da soru girer</text>
+  <line x1="230" y1="198" x2="230" y2="222" stroke="#0f2855" stroke-width="2" marker-end="url(#arrow-navy)"/>
+
+  <!-- Flow 2: app -->
+  <rect x="40" y="226" width="380" height="76" rx="10" fill="#e8edf6"/>
+  <text x="230" y="258" font-size="20" font-weight="700" fill="#0f2855" text-anchor="middle">Claude uygulaması</text>
+  <text x="230" y="284" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Web, masaüstü, mobil</text>
+  <line x1="230" y1="304" x2="230" y2="328" stroke="#0f2855" stroke-width="2" marker-end="url(#arrow-navy)"/>
+
+  <!-- Flow 3: servers -->
+  <rect x="40" y="332" width="380" height="76" rx="10" fill="#0f2855"/>
+  <text x="230" y="364" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Anthropic sunucuları</text>
+  <text x="230" y="390" font-size="16" font-weight="500" fill="#ffffff" text-anchor="middle">ABD merkezli, yurt dışı aktarım</text>
+  <line x1="200" y1="410" x2="146" y2="434" stroke="#0f2855" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <line x1="260" y1="410" x2="314" y2="434" stroke="#0f2855" stroke-width="2" marker-end="url(#arrow-navy)"/>
+
+  <!-- Flow 4a: commercial -->
+  <rect x="40" y="438" width="182" height="104" rx="10" fill="#e8edf6" stroke="#0f2855" stroke-width="2"/>
+  <text x="131" y="470" font-size="18" font-weight="700" fill="#0f2855" text-anchor="middle">Ticari plan</text>
+  <text x="131" y="496" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Eğitimde yok</text>
+  <text x="131" y="522" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">30 gün saklama</text>
+
+  <!-- Flow 4b: consumer -->
+  <rect x="238" y="438" width="182" height="104" rx="10" fill="#e8edf6" stroke="#0f2855" stroke-width="2"/>
+  <text x="329" y="470" font-size="18" font-weight="700" fill="#0f2855" text-anchor="middle">Free, Pro, Max</text>
+  <text x="329" y="496" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Eğitim ayara bağlı</text>
+  <text x="329" y="522" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">30 gün ya da 5 yıl</text>
+
+  <!-- Control 1: internal policy -->
+  <rect x="500" y="120" width="260" height="76" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="630" y="152" font-size="18" font-weight="700" fill="#0f2855" text-anchor="middle">İç politika</text>
+  <text x="630" y="178" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Hangi veri girmez</text>
+  <line x1="498" y1="158" x2="426" y2="158" stroke="#c9a84c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow-gold)"/>
+
+  <!-- Control 2: plan choice -->
+  <rect x="500" y="226" width="260" height="76" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="630" y="258" font-size="18" font-weight="700" fill="#0f2855" text-anchor="middle">Plan seçimi</text>
+  <text x="630" y="284" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Ticari hesap, DPA dahil</text>
+  <line x1="498" y1="264" x2="426" y2="264" stroke="#c9a84c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow-gold)"/>
+
+  <!-- Control 3: transfer basis -->
+  <rect x="500" y="332" width="260" height="76" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="630" y="364" font-size="18" font-weight="700" fill="#0f2855" text-anchor="middle">Aktarım dayanağı</text>
+  <text x="630" y="390" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">KVKK m.9 güvencesi</text>
+  <line x1="498" y1="370" x2="426" y2="370" stroke="#c9a84c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow-gold)"/>
+
+  <!-- Control 4: privacy setting -->
+  <rect x="500" y="452" width="260" height="76" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="630" y="484" font-size="18" font-weight="700" fill="#0f2855" text-anchor="middle">Gizlilik ayarı</text>
+  <text x="630" y="510" font-size="16" font-weight="500" fill="#1a2238" text-anchor="middle">Eğitim izni kapalı</text>
+  <line x1="498" y1="490" x2="426" y2="490" stroke="#c9a84c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow-gold)"/>
+
+  <!-- Legend -->
+  <rect x="40" y="566" width="22" height="22" rx="6" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="72" y="583" font-size="16" font-weight="500" fill="#1a2238">Şirketin kontrol noktası</text>
+  <rect x="300" y="566" width="22" height="22" rx="6" fill="#0f2855"/>
+  <text x="332" y="583" font-size="16" font-weight="500" fill="#1a2238">Türkiye dışında işlenir</text>
+</svg>

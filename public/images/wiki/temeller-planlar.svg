@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 610" width="800" height="610" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Claude plan merdiveni: hangi plan kimin için</title>
+  <desc id="desc">Aşağıdan yukarı: Free denemek isteyenler için, Pro hafif bireysel kullanım için, Max 5x ilk ay ve yoğun kullanım için (Zamana'nın ilk ay önerisi), Max 20x çok yoğun güç kullanıcıları için. Kurumsal planlar: Team iki ve daha fazla kişilik ekipler için, Enterprise regülasyona tabi kuruluşlar için.</desc>
+
+  <rect x="0" y="0" width="800" height="610" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Plan merdiveni: kimin için?</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Aşağıdan yukarı: daha çok kullanım ve kontrol</text>
+
+  <!-- Enterprise -->
+  <rect x="310" y="116" width="440" height="60" rx="10" fill="#0f2855"/>
+  <text x="330" y="154" font-size="20" font-weight="700" fill="#ffffff">Enterprise</text>
+  <text x="480" y="153" font-size="16" font-weight="500" fill="#ffffff">Regülasyona tabi kuruluş</text>
+
+  <!-- Team -->
+  <rect x="260" y="190" width="440" height="60" rx="10" fill="#0f2855"/>
+  <text x="280" y="228" font-size="20" font-weight="700" fill="#ffffff">Team</text>
+  <text x="430" y="227" font-size="16" font-weight="500" fill="#ffffff">2+ kişilik ekipler</text>
+
+  <!-- Max 20x -->
+  <rect x="210" y="264" width="440" height="60" rx="10" fill="#e8edf6"/>
+  <text x="230" y="302" font-size="20" font-weight="700" fill="#0f2855">Max 20x</text>
+  <text x="380" y="301" font-size="16" font-weight="500" fill="#1a2238">Çok yoğun güç kullanıcısı</text>
+
+  <!-- Max 5x -->
+  <rect x="160" y="338" width="440" height="60" rx="10" fill="#e8edf6" stroke="#c9a84c" stroke-width="2"/>
+  <text x="180" y="376" font-size="20" font-weight="700" fill="#0f2855">Max 5x</text>
+  <text x="330" y="375" font-size="16" font-weight="500" fill="#1a2238">İlk ay ve yoğun kullanım</text>
+  <rect x="616" y="352" width="150" height="32" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2"/>
+  <text x="691" y="374" font-size="16" font-weight="700" fill="#0f2855" text-anchor="middle">İlk ay önerisi</text>
+
+  <!-- Pro -->
+  <rect x="110" y="412" width="440" height="60" rx="10" fill="#e8edf6"/>
+  <text x="130" y="450" font-size="20" font-weight="700" fill="#0f2855">Pro</text>
+  <text x="280" y="449" font-size="16" font-weight="500" fill="#1a2238">Hafif bireysel kullanım</text>
+
+  <!-- Free -->
+  <rect x="60" y="486" width="440" height="60" rx="10" fill="#e8edf6"/>
+  <text x="80" y="524" font-size="20" font-weight="700" fill="#0f2855">Free</text>
+  <text x="230" y="523" font-size="16" font-weight="500" fill="#1a2238">Denemek isteyen</text>
+
+  <!-- Legend -->
+  <rect x="60" y="566" width="22" height="22" rx="6" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="92" y="583" font-size="16" font-weight="500" fill="#1a2238">Bireysel</text>
+  <rect x="200" y="566" width="22" height="22" rx="6" fill="#0f2855"/>
+  <text x="232" y="583" font-size="16" font-weight="500" fill="#1a2238">Ekip ve şirket</text>
+</svg>

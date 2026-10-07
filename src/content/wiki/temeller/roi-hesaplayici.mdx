@@ -1,0 +1,112 @@
+---
+title: "ROI Hesaplayıcı: Claude Kendini Öder mi?"
+seoTitle: "Claude ROI Hesaplayıcı: Aylık Maliyet ve Kazanç (TL)"
+description: "Kişi sayısı, kazanılan saat, saatlik maliyet ve plan fiyatını girin; aylık değer, net fayda ve geri dönüş oranını görün. Formül, saat ücreti varsayımı ve dört örnek senaryo."
+tags:
+  - temeller
+  - roi
+  - hesaplayici
+  - maliyet
+lastUpdated: "2026-10-06"
+---
+
+import RoiHesaplayici from '../../../components/wiki/RoiHesaplayici.astro';
+
+**"Claude ayda bana ne kadara patlıyor, karşılığında ne getiriyor?"** Bu sayfa tek bir aylık hesap yapar. Rakamları kendi şirketinize göre girin; formül açık, varsayımlar yazılı, sonucu sizin ölçümünüz belirler.
+
+Aynı hesabın 6 aylık, eğitim bedeli dahil versiyonu [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasında. Kazanılan saati nasıl ölçeceğiniz de orada. Bu sayfa daha kısa bir soruya cevap verir: abonelik kendini çıkarıyor mu?
+
+<RoiHesaplayici />
+
+## Formül
+
+Hesaplayıcı JavaScript olmadan da aynı formülü uygular. Elle hesaplamak isterseniz:
+
+```
+Aylık kazanılan saat = Kişi sayısı × Haftalık kazanılan saat × 4,33
+İşe dönüşen saat     = Aylık kazanılan saat × Dönüşüm payı
+Aylık değer          = İşe dönüşen saat × Saatlik yüklü maliyet
+Aylık maliyet        = Aylık Claude maliyeti (USD) × Kur × (1,20 ise KDV dahil)
+Net fayda            = Aylık değer - Aylık maliyet
+Geri dönüş oranı     = Net fayda / Aylık maliyet × 100
+Başabaş              = Aylık maliyet / (Kişi sayısı × 4,33 × Saatlik maliyet × Dönüşüm payı)
+```
+
+4,33, bir ayın hafta sayısıdır (52 / 12). **Başabaş**, kişi başına haftada en az kaç saat kazanmanız gerektiğini söyler; bunun altında abonelik kendini çıkarmaz.
+
+![ROI hesabının akışı: değer tarafında aylık kazanılan saat, işe dönüşen saat ve aylık değer; maliyet tarafında USD plan fiyatı, kur ve KDV; ikisi net faydada ve geri dönüş oranında birleşir](/images/wiki/temeller-roi-akisi.svg)
+
+### Neden "dönüşüm payı" var?
+
+Çalışan "haftada 8 saat kazandım" der, ama o 8 saat her zaman başka bir işe dönmez; bir kısmı kahveye, bir kısmı çıktıyı kontrol etmeye gider. Ölçüm sayfasında anlatılan "sahte verimlilik" tuzağı budur. Varsayılan **%70**, kendi gözleminize göre değiştirin. %100 yazarsanız hesap, kazanılan her saatin işe döndüğünü varsayar; bu iyimser bir kabuldür.
+
+## Saatlik maliyet varsayımı
+
+**Bu sayfa, Zamana wiki'sinde saatlik maliyet varsayımının tek kaynağıdır.** Başka sayfalardaki örnekler farklı bir değer kullanıyorsa, o sayfa başka bir senaryo anlatıyordur; kendi hesabınızda bu sayfadaki mantığı kullanın.
+
+Girmeniz gereken rakam brüt maaş değil, **yüklü maliyet**: brüt maaşın üzerine işveren payları, yan haklar ve çalışanın başına düşen ofis ve ekipman gideri eklenir. Aylık yüklü maliyeti, ayda gerçekten çalışılan saate (izinler ve toplantılar düşüldükten sonra yaklaşık 150-170 saat) bölerseniz saatlik değere varırsınız. Örnek: aylık yüklü maliyet 60.000 TL, 160 saat çalışma varsayımıyla saat başı 375 TL.
+
+| Rol grubu | Saatlik yüklü maliyet (TL) | Ne zaman |
+|---|---|---|
+| Destek ve idari roller | 250-300 | Giriş ve orta düzey, tekrar eden iş yoğun |
+| Uzman (satış, finans, İK, operasyon) | 300-400 | Çoğu ekip için makul başlangıç |
+| Kıdemli uzman ve yönetici | 400-500 | Müdür, direktör ve benzeri roller |
+
+**Varsayılan 400 TL** orta kuşak uzman-yönetici karışımı içindir. Bu aralıklar **Zamana'nın örnek varsayımıdır**, bir piyasa araştırmasından alınmış ölçülmüş veri değildir ve enflasyonla eskir. En doğru rakam, şirketinizin bordro ve muhasebe verisinden çıkan kendi rakamıdır; mali müşaviriniz ya da İK'nız bunu birkaç dakikada verir.
+
+## Maliyet tarafı: USD, kur ve KDV
+
+- **Plan fiyatları (USD, vergi hariç, aylık):** Pro 20, Max 5x 100, Max 20x 200, Team Standard koltuk 25 (yıllık ödemede 20), Team Premium koltuk 125 (yıllık ödemede 100), Enterprise koltuk başı 20 ve kullanım ayrıca API fiyatıyla faturalanır. Güncel tablo ve ayrıntı [Planlar](/wiki/temeller/planlar/) sayfasında.
+- **"Aylık Claude maliyeti" toplam rakamdır:** kişi başı plan fiyatı çarpı kişi sayısı. Karma plan kullanıyorsanız (bir kısmı Pro, bir kısmı Max 5x) toplamı kendiniz yazın. Enterprise'ta kullanım bazlı kısmı tahmin etmek gerekir; ilk aylarda gerçek faturayı görüp güncelleyin.
+- **Kur:** varsayılan 40 TL/USD'dir ve bir **Ekim 2026 varsayımıdır**, o günün canlı kuru değildir. Kartınızdan çekim yapan bankanın kuru farklı olabilir; kendi değerinizi yazın.
+- **KDV:** Türkiye'de yurt dışından alınan bu tür hizmette KDV'yi çoğu şirket 2 No'lu beyannameyle kendi öder ve 1 No'lu beyannamede indirir; KDV mükellefi şirkette net yük genelde sıfırdır. Bu yüzden varsayılan **KDV hariç** hesaptır. KDV'yi indiremiyorsanız (muaf işletme, bireysel kullanım gibi) "KDV dahil" seçeneğiyle %20 eklenir. Mali tarafın ayrıntısı [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasında; kesin uygulama için mali müşavirinize danışın.
+- **Aboneliği Zamana satmaz.** Zamana bir bayi değildir; plan satın alma doğrudan Anthropic'ten yapılır.
+
+## Dört örnek senaryo
+
+Tüm senaryolarda kur 40 TL/USD, KDV hariç, dönüşüm payı %70. **Eğitim, danışmanlık ve iç eğitim zamanı bu tabloya dahil değildir**; onları ekleyince ilk aylar daha zayıf görünür.
+
+| | A: küçük ekip, ilk ay | B: aynı ekip, ikinci ay | C: orta ekip, Team | D: yöneticiler |
+|---|---|---|---|---|
+| Kişi sayısı | 3 | 3 | 10 | 6 |
+| Haftalık kazanılan saat (kişi başı) | 4 | 4 | 5 | 3 |
+| Saatlik yüklü maliyet | 300 TL | 300 TL | 400 TL | 500 TL |
+| Plan | Max 5x (3 × 100 USD) | Pro (3 × 20 USD) | Team Standard (10 × 25 USD) | Max 5x (6 × 100 USD) |
+| Aylık Claude maliyeti | 300 USD | 60 USD | 250 USD | 600 USD |
+| Aylık kazanılan saat (ham) | 52,0 | 52,0 | 216,7 | 78,0 |
+| İşe dönüşen saat (%70) | 36,4 | 36,4 | 151,7 | 54,6 |
+| Aylık değer | 10.920 TL | 10.920 TL | 60.667 TL | 27.300 TL |
+| Aylık maliyet | 12.000 TL | 2.400 TL | 10.000 TL | 24.000 TL |
+| **Net fayda** | **-1.080 TL** | **8.520 TL** | **50.667 TL** | **3.300 TL** |
+| **Geri dönüş oranı** | **%-9** | **%355** | **%507** | **%14** |
+| Başabaş (kişi başı saat/hafta) | 4,4 | 0,9 | 0,8 | 2,6 |
+
+Bu tablodan üç ders çıkar:
+
+1. **İlk ay zayıf görünebilir, bu normaldir.** A senaryosunda ilk ay Max 5x'in maliyeti kazancı biraz aşıyor: kullanıcı henüz alışkanlık kazanmadı. Max 5x'i ilk ay için öneriyoruz; çünkü Pro'nun limiti yeni kullanıcı için çabuk dolar ve kişi "çalışmıyor" diye bırakabilir (zorunlu değil, bir öneridir). Asıl hesap ikinci aydan sonra, B satırındaki gibi yapılır.
+2. **Plan seçimi hesabı çok değiştirir.** Aynı ekip, Pro ile Max 5x arasında maliyeti beş kat oynatıyor. Yoğun kullanan kişi Max 5x'i hak eder, hafif kullanan Pro ile yetinir; bunu ikinci aydan sonra kullanım verisine bakarak ayarlayın.
+3. **Düşük saat kazancı ve yüksek plan, geri dönüşü eritir.** D senaryosunda yöneticiler haftada yalnızca 3 saat kazanıyor ve Max 5x kullanıyor: sonuç pozitif ama sınırda. Yönetici saati pahalı olduğu için değer yüksek görünür, ama kazanılan saat de gerçekten ölçülmelidir.
+
+### Hesaplayıcının varsayılan değerleri
+
+Sayfadaki hesaplayıcı şu değerlerle açılır: 6 kişi, haftada 5 saat, saatlik 400 TL, dönüşüm payı %70, 600 USD (6 × Max 5x), kur 40, KDV hariç. Sonuç: aylık 130 saat ham kazanç, 36.400 TL değer, 24.000 TL maliyet, **12.400 TL net fayda, yaklaşık %52 geri dönüş**, başabaş kişi başı haftada 3,3 saat.
+
+## Bu hesap neyi göstermez?
+
+- **Kaliteyi.** Daha iyi yazılmış bir teklif ya da kaçırılmayan bir hata para olarak görünmez. Ölçüm sayfasındaki kalite metriğine ayrıca bakın.
+- **Riski.** Hatalı çıktı, yanlış kullanılan gizli veri ya da halüsinasyon maliyeti formüle girmez. [Sınırlamalar](/wiki/temeller/sinirlamalar/) ve [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfalarındaki kontroller bunun içindir.
+- **Tek seferlik maliyeti.** Eğitim, danışmanlık, kurulum ve iç eğitim saatlerini "aylık Claude maliyeti" kalemine, birkaç aya bölerek ekleyin.
+- **Kullanımın artması halinde ek maliyeti.** Kota bitince açılan usage credits ve Enterprise'ın kullanım bazlı faturası maliyeti artırır. Ayrıntı [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasında.
+
+## Hesabı yönetime nasıl anlatırsınız?
+
+Üç rakamı yan yana verin: **kişi başı aylık maliyet**, **kişi başı aylık değer** ve **başabaş saati**. "Başabaş 2 saat, ekibimiz ortalama 5 saat kazanıyor" cümlesi, yüzde oranından daha kolay anlaşılır. Rakamı sunmadan önce [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasındaki yöntemle en az iki hafta gerçek veri toplayın; tahmini rakamla başlayan toplantı, ilk itirazda dağılır. Ekibin tamamına açmadan önce küçük bir deneme yapmak isterseniz [Pilot ve Yaygınlaştırma](/wiki/temeller/pilot-ve-yayginlastirma/) sayfası yolu anlatır.
+
+## İlgili sayfalar
+
+- [Ölçüm Metrikleri ve ROI Çerçevesi](/wiki/temeller/olcum-metrikleri/): kazanılan saati nasıl ölçersiniz, 6 aylık hesap
+- [Planlar](/wiki/temeller/planlar/): güncel plan fiyatları ve karşılaştırma
+- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): 2 No'lu beyanname, stopaj, gider yazımı
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Team ve Enterprise seçimi
+- [Yaygın İtirazlar](/wiki/temeller/itirazlar/): finans direktörü itirazları
+- [Pilot ve Yaygınlaştırma](/wiki/temeller/pilot-ve-yayginlastirma/): önce küçük, sonra büyük

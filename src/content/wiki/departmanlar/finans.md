@@ -1,12 +1,13 @@
 ---
 title: "Finans ve Muhasebe: Claude Uygulamaları"
+seoTitle: "Finans ve Muhasebede Claude: Rapor Anlatısı, Varyans, Hibe Başvurusu"
 description: "Finans ekibi için Claude: raporlama anlatısı, bütçe varyans açıklaması, KOSGEB/TÜBİTAK başvuruları, denetim dosyası. Rakamlar sizin, anlatım Claude'un."
 tags:
   - departmanlar
   - finans
   - muhasebe
   - raporlama
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Finans ekibi Claude'u doğru konumlandırdığında her ay saatlerce zaman kazanır. Ama kritik bir çerçeve var:
@@ -28,7 +29,7 @@ Bu çerçeve her finans prompt'unda aklınızda olmalı.
 
 ### Aylık / Çeyreklik Rapor Yazımı
 
-Siz rakamları sağlarsınız; Claude anlatıyı, açıklamayı ve yönetici özetini üretir. Deneyimimizde saatler süren bir rapor yazımı, çoğu zaman bir saatin altına iner.
+Siz rakamları sağlarsınız; Claude anlatıyı, açıklamayı ve yönetici özetini üretir. **Zamana notu:** aylık rapor anlatısı elle 3-4 saat sürer; Claude ile kontrol dahil 45-60 dakika tipik bir beklentidir (Zamana eğitim materyali, tahmini aralık). Kendi sürenizi [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/) ile deneyin.
 
 ### Bütçe Varyans Açıklaması
 
@@ -37,6 +38,10 @@ Varyans tablosundan, **rakamların arkasındaki hikâyeyi** anlatan net bir yön
 ### Yönetim ve Kurul Sunumları
 
 Finans dışı kitleler için yapılandırılmış finansal hikâyeler. CFO'nun işi yalnızca raporlamak değil, **anlaşılmaktır**. Claude for Excel (Excel, PowerPoint ve Word eklentileri genel kullanımda) tablo ile sunum arasındaki geçişi aynı yerde yapmanızı sağlar; ayrıntılar [Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/) sayfasında.
+
+### Enflasyon Muhasebesi (TMS 29) Anlatısı
+
+Enflasyon muhasebesi uygulayan şirketlerde düzeltme öncesi ve sonrası tabloların neden farklı olduğunu finans dışı yöneticiye anlatmak ayrı bir iştir: parasal olmayan kalemlerin yeniden ifadesi, net parasal pozisyon kazancı ya da kaybı, karşılaştırmalı dönemin etkisi. Düzeltilmiş rakamları muhasebe sisteminiz ve mali müşaviriniz üretir; Claude yalnızca "fark nereden geliyor" anlatısını, dipnot taslağını ve yönetimin soracağı soruların cevap hazırlığını yazar. Düzeltme hesabını ona yaptırmayın, çıktıyı mali müşavirinizle doğrulayın.
 
 ### Varsayımları Test Etmek
 
@@ -119,6 +124,10 @@ USD veya EUR alacağı ya da borcu yüksek şirketlerde Claude FX risk bölümü
 2. **Outlook / Gmail**: paydaş iletişimi
 3. (opsiyonel) **DocuSign**: resmi dokümanların imzası
 
+**Muhasebe programı (Logo, Mikro, Paraşüt):** Bu programlar için Claude'un resmi bir connector'ı yok. Pratik yol: mizanı, cari ekstreyi ya da fatura listesini programdan Excel/CSV olarak **dışa aktarıp** Claude'a yüklemek; ayrıntı ve riskler [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasında.
+
+**Hazır eklenti:** Anthropic'in resmi eklenti deposunda (`anthropics/knowledge-work-plugins`) finans için ayrı bir `finance` klasörü var. Kurmadan önce içeriğini inceleyin; çıktıları Türk mevzuatına (VUK, TFRS) göre ayrıca kontrol edin.
+
 ## İş Akışı Yeniden Tasarımı Adayları
 
 - **Ay sonu raporlama döngüsü**: rakamlar hazırlanır → Claude anlatı üretir → iç inceleme → yönetime teslim
@@ -139,7 +148,15 @@ Mart ayı kapandı. Satış bütçenin %8 altında, pazarlama gideri %15 üstün
 
 **Adım 4:** Cuma toplantısı öncesi çalışan **yönetim FAQ prompt'unu** çağırır: *"CEO bu sayfayı okuduğunda hangi 5 soruyu soracak? Cevaplarıyla birlikte ver."*
 
-Toplam süre: yaklaşık 35 dakika (örnek senaryo). Geleneksel süreç: 3 saat ve ertesi gün revizyonlar.
+**Süre:** elle 2-3 saat, Claude ile 30-45 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Yalnız varyans anlatısı bile her ay hazırlanıyorsa fark yılda kabaca 15-30 saat eder; aylık rapor anlatısı da eklenirse 40-70 saat.
+
+## Sık Hatalar
+
+Eğitimlerde finans ekiplerinin en çok takıldığı üç nokta (Zamana eğitim materyali):
+
+- **Rakam uydurma.** Claude bilmediği rakamı tahmin edebilir ("ortalama %18 kâr marjı" gibi). Hesabı ona bırakmayın, yalnızca anlatıyı. Her rakam sizin dosyanızdan gelmeli.
+- **Hassas finansal veri.** Bilanço, kâr-zarar ve müşteriye özel ödeme bilgisini yazmadan önce şirket politikanızı kontrol edin. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
+- **"Claude rakamları doğruluyor" sanısı.** Doğrulamaz. Tutarlılık kontrolü başka, doğrulama başka şeydir; rakamın doğruluğu sizin sorumluluğunuzdadır.
 
 ## Finans için Pazarlık Dışı Çerçeve
 
@@ -147,10 +164,13 @@ Toplam süre: yaklaşık 35 dakika (örnek senaryo). Geleneksel süreç: 3 saat 
 
 SPK, bağımsız denetim ve mali müşavir standartlarından doğan sorumluluk Claude'a devredilemez. Ehliyetli bir finans profesyoneli her çıktının arkasında durmalıdır.
 
-> **Kişisel veri notu:** Bordro, maaş ve kişi adı içeren müşteri ya da tedarikçi tabloları kişisel veridir. Bunları Claude'a girmeden önce anonimleştirin; yurt dışı aktarım konusunda [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım (KVKK m.9)" bölümüne bakın.
+> **Kişisel veri notu:** Bordro, maaş ve kişi adı içeren müşteri ya da tedarikçi tabloları kişisel veridir. Bunları Claude'a girmeden önce anonimleştirin; yurt dışı aktarım konusunda [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasına bakın.
 
 ## İlgili Sayfalar
 
+- [Finansal Hizmetler için Claude](/kurumsal/finansal-hizmetler/): banka, sigorta ve aracı kurumlar için sektör sayfası
+- [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt, e-Fatura, KEP
+- [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): kendi zaman kazancınızı hesaplayın
 - [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/): CFO için hazır CLAUDE.md şablonu
 - [Skills](/wiki/yetenekler/skills/): `xlsx` skill detayları
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Matematik hataları ve halüsinasyon

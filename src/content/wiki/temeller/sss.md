@@ -5,7 +5,7 @@ tags:
   - temeller
   - sss
   - faq
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem kendiniz için okuyabilirsiniz, hem de şirket içinde Claude'u savunurken kaynak olarak kullanabilirsiniz.
@@ -14,7 +14,7 @@ Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem
   <div class="wiki-admonition__title">Özet</div>
   <div class="wiki-admonition__body" markdown>
 
-Claude bulut tabanlı bir yapay zeka asistanıdır. Team ve Enterprise planlarında verileriniz varsayılan olarak **model eğitiminde kullanılmaz** (sözleşme güvencesi). KVKK uyumu doğru plan, DPA, şirket politikası ve (kişisel veri girilecekse) KVKK m.9 yurt dışı aktarım dayanağıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100-200/ay; **6 çalışanlık ekipte** ilk ay Max 5x önerilir ($600/ay), sonraki aylar karma kullanımla $280-380/ay'a iner. İş kullanımı için varsayılan model **Sonnet**'tir. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonunda somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
+Claude bulut tabanlı bir yapay zeka asistanıdır. Team ve Enterprise planlarında verileriniz varsayılan olarak **model eğitiminde kullanılmaz** (sözleşme güvencesi). KVKK uyumu doğru plan, DPA, şirket politikası ve (kişisel veri girilecekse) KVKK m.9 yurt dışı aktarım dayanağıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100-200/ay; yeni başlayanlara ilk ay Max 5x önerilir (zorunlu değil). Ekip maliyeti örneği [Claude Planları](/wiki/temeller/planlar/) sayfasındadır. İş kullanımı için varsayılan model **Sonnet**'tir. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonunda somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
 
   </div>
 </div>
@@ -38,7 +38,7 @@ Anthropic çalışanlarının erişimi için aşağıdaki sorulara bakın. API t
 
 Kurumsal Claude kullanımının KVKK uyumu dört bileşene dayanır:
 
-1. **Plan seçimi:** Team ($25/koltuk/ay, yıllıkta $20, en az 2 koltuk) veya Enterprise ($20/koltuk/ay + kullanım API fiyatıyla) gerekir. Pro ve Max bireysel planları, KVKK m.12 (veri sorumlusunun yükümlülükleri) açısından kurumsal kullanım için yetersizdir.
+1. **Plan seçimi:** Şirket verisi işleyen ekipler için Team veya Enterprise önerilir (fiyatlar: [Claude Planları](/wiki/temeller/planlar/)). Zorunlu değildir, ama merkezi yönetim, faturalama ve veri kontrolü ticari planlarda vardır. Pro ve Max bireysel plandır: DPA kapsamı dışındadır, bu da KVKK m.12 (veri sorumlusunun yükümlülükleri) açısından kurumsal veri için zayıf noktadır.
 2. **DPA:** Team, Enterprise ve API'de ticari şartlara otomatik dahil olan (ayrıca imza gerekmeyen) Data Processing Agreement, işleyen ilişkisini belgeler (KVKK m.12/2, GDPR m.28). DPA'daki standart sözleşme hükümleri AB içindir, KVKK m.9 için Kurul'un Türk standart sözleşmesinin yerine geçmez.
 3. **Yurt dışı aktarım dayanağı:** Kişisel veri girecekseniz Kurul'un standart sözleşmesi (imzadan sonra 5 iş günü içinde Kurum'a bildirilir) ya da eşdeğer bir dayanak gerekir. Anthropic'in bunu imzalayıp imzalamadığı belirsizdir, yazılı sorun.
 4. **İç politika:** Çalışanların hangi veriyi paylaşıp paylaşamayacağını yazılı belirleyen bir Yapay Zeka Kullanım Politikası şarttır ([Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)).
@@ -62,42 +62,42 @@ Tüm erişimler loglanır ve denetlenir. **Zero Data Retention** (API için söz
 
 Model Anthropic'in veri merkezlerinde (AWS ve Google Cloud üzerinde) çalışır ve cihaza indirilemez. Nedeni model boyutu (yüz milyarlarca parametre, yüzlerce GB) ve sürekli güncellemedir. Bağlantı kesilirse masaüstü uygulaması, web arayüzü ve API kullanılamaz; offline modu yoktur.
 
-Askeri sistemler, hava boşluklu üretim ağları ve yüksek güvenlikli devlet kurumları için Claude şu an uygun değildir. Bu tip ortamlar için Anthropic, AWS GovCloud veya Azure Government gibi izole bulut bölgeleri üzerinden Enterprise dağıtım sunabilir, ama bu "internet yok" değil "izole internet" demektir. Yerel donanımda çalışan açık kaynak alternatifler (Llama, Mistral) offline çalışır, ancak Claude'un yetkinlik düzeyinin altındadır. İnternet erişimi olan ofis ortamlarında sorun yoktur.
+Askeri sistemler, hava boşluklu üretim ağları ve yüksek güvenlikli devlet kurumları için Claude şu an uygun değildir. Bu tip ortamlar için Anthropic'in izole bir dağıtım seçeneği olup olmadığını doğrulayamadık; ihtiyacınız varsa Anthropic satış ekibine yazılı sorun. Yerel donanımda çalışan açık kaynak alternatifler (Llama, Mistral) offline çalışır, ancak Claude'un yetkinlik düzeyinin altındadır. İnternet erişimi olan ofis ortamlarında sorun yoktur.
 
 ## Maliyet ve ROI
 
 ### Claude ayda ne kadar tutar?
 
-**Kısa cevap: Bireysel Pro $20/ay, Max $100-200/ay. Kurumsal Team $25/koltuk/ay (en az 2 koltuk), Enterprise $20/koltuk/ay + kullanım API fiyatıyla.**
+**Kısa cevap: Bireysel Pro $20/ay, Max $100-200/ay. Team ve Enterprise koltuk başına fiyatlanır; güncel rakamlar [Claude Planları](/wiki/temeller/planlar/) sayfasındadır.**
 
 Fiyat, kullanım yoğunluğuna göre kademelidir. Anthropic mesaj sayısı vermez; kullanım 5 saatlik kayan pencere ve haftalık limitle ölçülür ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
 
 - **Pro ($20/ay):** Tek kullanıcı, hafif ve orta kullanım. Serbest profesyoneller için yeterli.
-- **Max 5x ($100/ay):** Pro'nun 5 katı limit, Fable plana dahil. Yeni öğrenen kullanıcı Pro limitine hızla çarptığı için ilk ay önerilir.
+- **Max 5x ($100/ay):** Pro'nun 5 katı limit, Fable plana dahil. Yeni öğrenen kullanıcı Pro limitine çabuk çarptığı için yeni başlayanlara ilk ay öneriyoruz; zorunlu değildir.
 - **Max 20x ($200/ay):** Çok yoğun kullanım, gün boyu aktif AI iş yükü, geliştirici tipi senaryolar.
-- **Team Standard ($25/koltuk/ay, yıllıkta $20):** Yönetim paneli, merkezi fatura, paylaşılan Projects, SSO, ticari şartlara dahil DPA. En az 2 koltuk, yani aylık $50 taban. Pro'nun 1,25 katı kullanım.
-- **Team Premium ($125/koltuk/ay, yıllıkta $100):** Pro'nun 6,25 katı kullanım, Fable plana dahil.
-- **Enterprise ($20/koltuk/ay, yıllık faturalı):** Kullanım ayrıca API fiyatıyla faturalanır, yani aylık tutar sabit değildir. RBAC, audit log, Compliance API. Zero Data Retention gerekiyorsa API için ayrıca talep edilir.
+- **Team Standard:** Yönetim paneli, merkezi fatura, paylaşılan Projects, SSO, ticari şartlara dahil DPA. En az 2 koltuk. Pro'nun 1,25 katı kullanım.
+- **Team Premium:** Pro'nun 6,25 katı kullanım, Fable plana dahil.
+- **Enterprise:** Koltuk ücreti kullanımı içermez, kullanım ayrıca API fiyatıyla faturalanır, yani aylık tutar sabit değildir. RBAC, audit log, Compliance API. Zero Data Retention gerekiyorsa API için ayrıca talep edilir.
 
 Fiyatlar vergi hariçtir; Türkiye faturalama adresiyle web ödemesinde %20 KDV eklendiği bildirilir ([Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/)). Yıllık ödemede Pro'da yaklaşık %15, Team'de %20 indirim vardır. Kota bitince **kullanım kredisi** (kullandıkça öde) açılabilir, ayrıntı [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasında. Plan detayı: [Claude Planları](/wiki/temeller/planlar/).
 
 ### 6 çalışan için toplam abonelik maliyeti nedir?
 
-**Kısa cevap: İlk ay $600 (Max 5x önerilir), ay 2-3'te karma kullanımla aylık $280-380.**
+**Kısa cevap: Koltuk türüne ve kullanım yoğunluğuna göre değişir. Hesaplı ekip örneği tek yerde, [Claude Planları](/wiki/temeller/planlar/) sayfasında.**
 
-Maliyet ay bazında değişir: ilk ay yoğun, sonraki aylar optimize edilmiş kullanımla ilerler.
+Maliyet ay bazında değişir: yeni başlayanlar ilk ay daha yoğun kullanır, sonraki aylarda kullanım oturur.
 
-- **İlk ay:** 6 çalışan × Max 5x ($100) = **$600** (TL karşılığı kura göre değişir, KDV ayrıca). Max 5x önerisi pratikten gelir: yeni öğrenen kullanıcı Pro limitini günde birkaç saatte doldurur ve "çalışmıyor" hissiyle vazgeçer. Max 5x ilk ayın sigortasıdır.
-- **Ay 2-3:** Gerçek kullanım ritmi netleşir. Hafif kullananlar Pro'ya ($20) iner, yoğun kullananlar Max'te kalır. Tipik karma: ~2 Max + ~4 Pro = **~$280-380/ay**.
-- **3 aylık toplam:** $600 + 2 × ($280-380) = **~$1.160-1.360**.
+- **İlk ay:** Yeni başlayan kullanıcılar için ilk ay Max 5x öneriyoruz (zorunlu değil). Pratikte yeni kullanıcı Pro limitini günde birkaç saatte doldurur ve "çalışmıyor" hissiyle vazgeçer; Max 5x bunu önler.
+- **Sonraki aylar:** Gerçek kullanım ritmi netleşir. Hafif kullananlar Pro'ya iner, yoğun kullananlar Max'te kalır.
+- **Şirket verisi işleyen ekipler:** Karma bireysel hesaplar yerine Team veya Enterprise önerilir; merkezi yönetim, faturalama ve veri kontrolü bunlarda vardır.
 
 ### Yatırımın geri dönüşünü nasıl ölçerim?
 
-Claude'a başlamadan önce çalışan başına haftalık süre için bir baseline alın, 3 ay sonra aynı anketi tekrarlayın. [Ölçüm Metrikleri ve ROI](/wiki/temeller/olcum-metrikleri/) sayfasındaki tipik değerlere göre 90. günde çalışan başına ortalama 5-9 saat/hafta tasarruf beklenir; yoğun kullanıcılarda 8-15 saate çıkar.
+Claude'a başlamadan önce çalışan başına haftalık süre için bir baseline alın, 3 ay sonra aynı anketi tekrarlayın. [Ölçüm Metrikleri ve ROI](/wiki/temeller/olcum-metrikleri/) sayfasındaki tipik değerlere göre 90. günde çalışan başına ortalama 5-9 saat/hafta tasarruf beklenir; yoğun kullanıcılarda 8-15 saate çıkar. Kendi rakamlarınızla hesaplamak için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) sayfasına bakın.
 
 ### Küçük şirketim için fazla mı?
 
-Bireysel başlangıç için **Claude Max 5x ilk ay ($100)**, sonrasında duruma göre Pro ($20). Wiki ve CLAUDE.md örnekleri ücretsizdir ve her büyüklükteki şirkete, bireysel profesyonele faydalıdır.
+Bireysel başlangıç için ilk ay **Max 5x** önerilir (zorunlu değil), sonrasında duruma göre Pro. Wiki ve CLAUDE.md örnekleri ücretsizdir ve her büyüklükteki şirkete, bireysel profesyonele faydalıdır.
 
 ## Çalışan Adaptasyonu
 
@@ -175,14 +175,14 @@ ChatGPT (OpenAI) ve Claude (Anthropic) birbirinin doğrudan rakibidir. Tüketici
 
 **Claude'un üstün olduğu alanlar:**
 
-- **CLAUDE.md şeffaflığı:** Modelin nasıl davranacağını yapılandırılmış bir dosyayla yönlendirirsiniz; bu, ChatGPT'nin Custom Instructions'undan çok daha derindir.
+- **Kalıcı talimat şeffaflığı:** Modelin nasıl davranacağını profil/proje talimatı ve (Cowork'te) klasördeki CLAUDE.md gibi düz metin kurallarla yönlendirirsiniz; bu, ChatGPT'nin Custom Instructions'undan çok daha derindir.
 - **Uzun belge performansı:** Güncel modellerde 1M token bağlam. OpenAI'nin güncel API modelleri de benzer bağlam sunduğu için fark boyuttan çok doküman sadakatinde ve çalışma biçiminde aranmalıdır.
 - **Cowork iş akışı:** Paralel agent koordinasyonu.
 - **KVKK ve veri politikası netliği:** DPA dili daha net, Zero Data Retention seçeneği var, Team planında varsayılan no-training güvencesi sözleşmede.
 
 **ChatGPT'nin üstün olduğu alanlar:** Yaratıcı yazım hızı, görsel üretim (Claude görsel üretmez), eklenti ekosisteminin genişliği, kod yorumlayıcı (Code Interpreter) olgunluğu, ses arayüzü kalitesi.
 
-**Karar özeti:** Yaratıcı içerik ağırlıklıysa ChatGPT yetebilir; sözleşme, rapor ve uzun doküman ağırlıklıysa Claude öne geçer. Çoğu kurumsal müşteri ikisini birlikte kullanır, departmana göre seçer. Detaylı karşılaştırma: [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/).
+**Karar özeti:** Yaratıcı içerik ağırlıklıysa ChatGPT yetebilir; sözleşme, rapor ve uzun doküman ağırlıklıysa Claude öne geçer. Çoğu kurumsal müşteri ikisini birlikte kullanır, departmana göre seçer. Detaylı karşılaştırma: [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/). Geçmeye karar verirseniz tercihlerinizi ve hafızanızı tek kopyala-yapıştırla taşımak için [ChatGPT'den Claude'a geçiş](/claude/gecis/) sayfasına bakın.
 
 ### Hem ChatGPT hem Claude kullanabilir miyim?
 

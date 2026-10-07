@@ -1,20 +1,21 @@
 ---
 title: "Claude Design: Claude ile Görsel İş Üretimi"
-description: "Claude Design, Anthropic Labs'in görsel çıktı ürünüdür: tasarım, prototip, sunum ve one-pager üretimi. Ücretli planlarda beta."
+seoTitle: "Claude Design Nasıl Kullanılır? Slides ve Docs"
+description: "Claude Design, Slides ve Docs ile konuşarak tasarım, sunum, belge ve one-pager üretin. Hangi planda açık, ne zaman Skills ya da Artifacts daha uygun?"
 tags:
   - yetenekler
   - claude-design
   - tasarim
   - sunum
   - gorsel
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Claude Design, Claude ile birlikte görsel iş ürettiğiniz bir Anthropic Labs ürünüdür.** 17 Nisan 2026'da tanıtıldı. Metin yerine **tasarım, prototip, sunum ve one-pager** gibi görsel çıktıları konuşarak, adım adım birlikte oluşturmanızı sağlar.
 
 > **16 Eylül 2026 güncellemesi:** Cowork ve sohbet tek Claude olunca **Claude Design** (tasarım), **Claude Slides** (sunum) ve **Claude Docs** (belge) ayrı bir ürüne girmeden **her konuşmanın içinden** kullanılabilir oldu. Taslağı doğrudan düzenler, belgeyi PDF, sunumu PowerPoint olarak dışa aktarır ve çıktının paylaşılabilir bağlantısını oluşturabilirsiniz. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
-[Artifacts](/wiki/yetenekler/artifacts/) interaktif veri çıktıları üretirken, Claude Design **görsel tasarım** odaklıdır: bir fikri ekranda gösterilebilir, sunulabilir bir biçime dökmek için.
+[Artifacts](/wiki/yetenekler/artifacts/) interaktif veri çıktıları üretirken, Claude Design **görsel tasarım** odaklıdır: bir fikri ekranda gösterilebilir, sunulabilir bir biçime dökmek için. Ürünün Türkçe tanıtımı için: [Claude Design](/claude/design/).
 
 ## Ne Üretir?
 
@@ -31,21 +32,23 @@ Claude Design **işbirlikçi**dir. Siz niyeti söylersiniz, Claude bir taslak ü
 
 ## Sunum ve Slayt Üretimi
 
-İş kullanıcısı için en sık senaryo budur. İhtiyacı sade dille tarif edersiniz, Claude dakikalar içinde tam bir slayt destesi üretir; şablon seçimi, biçimleme ve düzen otomatiktir.
+İş kullanıcısı için en sık senaryo budur. İhtiyacı sade dille tarif edersiniz, Claude tam bir slayt destesi taslağı üretir; şablon seçimi, biçimleme ve düzen otomatiktir.
+
+**Süre:** 10 slaytlık bir deste için elle 3-4 saat, Claude ile 30-60 dk (kontrol ve düzeltme dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 **Öne çıkanlar:**
 
-- **Marka tutarlılığı:** Kurumsal renk, tipografi ve görsel stil bir tasarım sistemi olarak tanımlanıp tüm sunumlara otomatik uygulanabilir (Zamana için navy + gold gibi).
-- **İnteraktif çıktı:** Sunum, canvas'ta interaktif HTML olarak render edilir; gerçek zamanlı düzenlenir.
-- **Export seçenekleri:** Bağımsız HTML, **PPTX**, **PDF** olarak dışa aktarılır; Canva'ya veya ileri işleme için Claude Code'a gönderilebilir.
+- **Marka tutarlılığı:** Kurumsal renk ve yazı tipini baştan söylersiniz, Claude deste boyunca aynı stili korumaya çalışır. Sonucu kendi şablonunuzla karşılaştırıp düzeltin.
+- **Doğrudan düzenleme:** Taslağı konuşmanın içinde düzenler, "şu slaytı ikiye böl" diyerek iterasyon yaparsınız.
+- **Dışa aktarma ve paylaşım:** Sunumu **PowerPoint (PPTX)**, belgeyi **PDF** olarak dışa aktarır, çıktının paylaşılabilir bağlantısını oluşturabilirsiniz.
 
 **Örnek prompt'lar:**
 
-- *"Q1 sonuçları için 10 slaytlık bir deste hazırla: ciro, ürün güncellemeleri ve ekip başarıları bölümleriyle."*
+- *"Karadeniz Gıda'nın 2026 üçüncü çeyrek sonuçları için 10 slaytlık bir deste hazırla: ciro, ürün güncellemeleri ve ekip başarıları bölümleriyle."*
 - *"Yönetim kurulu için ürün yol haritamızın 15 slaytlık bir özetini yap."*
-- *"Bir iş ortağıyla co-branded (iki logolu) 5 slaytlık teklif destesi oluştur."*
+- *"Bir iş ortağıyla iki logolu 5 slaytlık teklif destesi oluştur."*
 
-İş akışı: tarif et → Claude ilk desteyi üretir → slayt slayt düzenle (içerik ekle/çıkar, görsel/grafik ekle) → export et veya paylaş.
+İş akışı: tarif et → Claude ilk desteyi üretir → slayt slayt düzenle (içerik ekle/çıkar, görsel/grafik ekle) → dışa aktar veya paylaş.
 
 ## Prototip ve UX
 
@@ -65,7 +68,7 @@ Karışmaması için:
 |---|---|
 | Konuşarak görsel tasarlamak, prototip, konsept | **Claude Design** |
 | Hazır içeriği `.pptx` / `.docx` dosyasına dökmek | [Skills](/wiki/yetenekler/skills/) (pptx, docx) |
-| Veri panosu, kendini tazeleyen çıktı | [Artifacts](/wiki/yetenekler/artifacts/) (Live Artifacts) |
+| Veri panosu, filtrelenebilir interaktif sayfa | [Artifacts](/wiki/yetenekler/artifacts/) (düzenli yenileme için [zamanlanmış görev](/wiki/araclar/scheduled-tasks/)) |
 
 Üçü farklı işler için vardır; biri diğerinin yerine geçmez.
 
@@ -77,6 +80,8 @@ Karışmaması için:
 - **Operasyon:** süreç akışının görsel anlatımı
 
 Bunların hepsi sonra bir tasarımcıyla rafine edilebilir; Claude Design **ilk taslağı** hızlandırır.
+
+> **Geliştiriciler için:** Tasarımı koda dökmek geliştirici işidir ve bu wiki'nin kapsamı dışındadır. Ayrıntı için [Claude Code](/claude/claude-code/) tanıtımına bakın.
 
 ## Erişim
 
@@ -93,7 +98,8 @@ Design, Slides ve Docs **ücretli planlarda beta** olarak sunulur. [Pro, Max ve 
 
 ## İlgili Sayfalar
 
-- [Artifacts](/wiki/yetenekler/artifacts/): Interaktif ve canlı veri çıktıları
+- [Claude Design (ürün tanıtımı)](/claude/design/): Ürünün Türkçe tanıtımı
+- [Artifacts](/wiki/yetenekler/artifacts/): İnteraktif veri çıktıları
 - [Skills](/wiki/yetenekler/skills/): `.pptx` / `.docx` dosya üretimi
 - [Planlar](/wiki/temeller/planlar/): Hangi planda dahil
 - [Cowork ve Sohbet Tek Claude Oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/): Design, Slides ve Docs'un geldiği duyuru

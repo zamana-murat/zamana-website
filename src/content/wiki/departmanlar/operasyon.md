@@ -1,5 +1,6 @@
 ---
 title: "Operasyon ve Lojistik: Claude Uygulamaları"
+seoTitle: "Operasyon ve Lojistikte Claude: SOP, NCR, Tedarikçi Yazışması"
 description: "Operasyon ekibi için Claude: SOP dokümantasyonu, tedarikçi iletişimi, incident raporu, NCR, kapasite planlama. Kafalardaki bilgiyi yazılı hale getirmek."
 tags:
   - departmanlar
@@ -7,7 +8,7 @@ tags:
   - lojistik
   - sop
   - ncr
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Operasyon departmanında en büyük kayıp, **bilginin insanların kafasında yaşaması** ve hiç yazılı hale gelmemesidir. Claude bu kaybı gidermenin en kolay yollarından biridir.
@@ -47,7 +48,7 @@ Personel rol değiştirdiğinde veya ayrıldığında genellikle hiç yazılmaya
 
 **Gecikme ve istisna yönetimi.** Tedarik aksaklıklarını yukarıya (yönetime) ve aşağıya (müşterilere) iletmek: net, olgusal, çözüm odaklı.
 
-**RFQ (Teklif Talebi) yazımı.** Yapılandırılmış, eksiksiz, tutarlı: kim yazarsa yazsın her RFQ aynı kalitede olur.
+**RFQ (Teklif Talebi) yazımı.** Kim yazarsa yazsın aynı kalitede, eksiksiz bir RFQ. Yapı ve prompt örneği [Satınalma](/wiki/departmanlar/satinalma/) sayfasında.
 
 **Gümrük ve sevkiyat talimat dokümantasyonu.** İhracat odaklı işletmeler için Claude; sevkiyat talimatlarını, gümrük beyanı destek metinlerini ve freight koordinasyon e-postalarını taslaklar.
 
@@ -106,11 +107,17 @@ Claude raporu çalışanın tarifinden üretir; **çalışan her teknik detayı 
 - **Tedarikçi istisna yönetim iş akışı**: gecikme tespiti → iletişim → önleyici aksiyon
 - **NCR süreci**: olay yakalama → Claude taslağı → teknik doğrulama → dağıtım
 
+## Sık Hatalar
+
+- **"Süreç bende, yazmaya değmez":** Bilgi tek kişideyse o kişi izne çıktığında süreç durur. Devredilemezliğin riskini baştan konuşun; SOP bir lüks değil, devir güvencesidir.
+- **Uydurma sevkiyat ve gümrük bilgisi:** Claude sevkiyat süresi, gümrük detayı gibi spesifik bilgileri uydurabilir. Rakamı, süreyi ve mevzuat atfını kaynağından kontrol edin.
+- **Çok genel SOP:** "Tedarikçiyle konuş" gibi boş adımlar işe yaramaz. Kim arar, hangi soruları sorar, hangi cevaba göre ne yapılır, bunu prompt'a yazın.
+
 ## Gerçek Örnek: SOP Tek Oturumda
 
 Operasyon müdürü yıllardır kendi kafasında taşıdığı "yeni tedarikçi onboarding" sürecini bir SOP'a dönüştürmek istiyor.
 
-**Adım 1:** Süreci sesle anlatır (cihazın dikte özelliği ya da Claude'un ses özelliği; Türkçe desteğini önceden deneyin) ve çıkan metni Claude'a verir. Bu yaklaşık 10 dakika sürer:
+**Adım 1:** Süreci sesle anlatır (cihazın kendi dikte özelliğini kullanın; Claude'un sesli modu şu an Türkçe desteklemiyor) ve çıkan metni Claude'a verir. Bu yaklaşık 10 dakika sürer:
 > *"Yeni bir tedarikçi bulduğumda önce mali durum kontrolü yaparım, sonra kalite sertifikalarını isterim, sonra numune isteyip değerlendiririz, sonra fiyat pazarlığı, sonra küçük bir deneme siparişi, sonra onaylı tedarikçi listesine alırız..."*
 
 **Adım 2:** Claude yapılandırır:
@@ -125,6 +132,8 @@ Operasyon müdürü yıllardır kendi kafasında taşıdığı "yeni tedarikçi 
 **Adım 4:** ISO denetçisi için hazır bir belge.
 
 Toplam süre: yaklaşık 25 dakika (örnek senaryo). Geleneksel süreçte bu iş çoğu zaman hiç yapılmaz, "bir gün zaman bulunca" listesinde kalır.
+
+**Süre:** SOP için elle 3-6 saat (çoğu zaman hiç yazılmaz), Claude ile 25-40 dakika (kontrol dahil). Haftalık operasyon raporu için elle 2-3 saat, Claude ile 20-30 dakika (Zamana eğitim materyali); her hafta yapılıyorsa ayda yaklaşık 6-10 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ## İlgili Sayfalar
 

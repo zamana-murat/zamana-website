@@ -1,12 +1,13 @@
 ---
 title: "İlk Kurulum: Hesap, Abonelik, Claude Desktop"
-description: "Claude'a sıfırdan başlamak için kurulum rehberi: claude.ai'a üye olmak, plan seçmek (Pro veya Max), Claude Desktop'ı kurmak, donanım gereksinimleri."
+seoTitle: "Claude'a Nasıl Kayıt Olunur? Üye Olma, Plan ve Kurulum Rehberi"
+description: "Claude'a nasıl kayıt olunur: claude.ai'a üye olma, yaş sınırı, gizlilik ayarı, plan seçimi (Pro veya Max), Claude Desktop kurulumu ve donanım gereksinimleri."
 tags:
   - temeller
   - kurulum
   - baslangic
   - claude-desktop
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz, bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.
@@ -22,7 +23,7 @@ Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktası
 **Yapacaklarımız:**
 
 1. claude.ai'a üye olmak
-2. [Plan](/wiki/temeller/planlar/) seçip satın almak (ilk ay Max 5x, yavaş tempoda Pro)
+2. [Plan](/wiki/temeller/planlar/) seçip satın almak (yeni başlayanlara ilk ay Max 5x öneriyoruz, Pro ile başlamak da olur)
 3. [Claude Desktop](/wiki/araclar/claude-desktop/)'ı indirmek ve kurmak
 4. Workspace klasörü oluşturmak
 5. [Cowork](/wiki/araclar/cowork-modu/)'ü aktifleştirmek
@@ -58,7 +59,11 @@ Başlamadan önce bilgisayarınız uygun mu kontrol edelim. Uygun değilse Claud
 
 ---
 
-## Adım 1: Claude.ai'a Üye Olun
+## Adım 1: Claude'a Nasıl Kayıt Olunur? (claude.ai'a Üye Olun)
+
+Claude'a kayıt ücretsizdir ve birkaç dakika sürer. Şirketiniz Team veya Enterprise kullanıyorsa kayıt yerine yöneticinizin davetini kullanırsınız, bu durum 1.8'de.
+
+> **Yaş sınırı:** Claude'u kullanmak için en az 18 yaşında olmanız gerekir (bulunduğunuz yerde rıza yaşı daha yüksekse o geçerlidir). 18 yaş altı izlenimi veren hesaplar devre dışı bırakılabilir.
 
 ### 1.1 Tarayıcıdan Açın
 
@@ -109,7 +114,24 @@ Claude.ai sizi karşılar, ad-soyad ister:
 
 Şu an **Free plandasınız**. Kullanım hakkınız var ama çok kısıtlı. Sıradaki adımda ücretli bir plana geçeceğiz.
 
-> **Önemli: [Free planda](/wiki/temeller/planlar/) Cowork yok.** Yerel klasör (workspace) erişimi yok; Claude Design, Slides ve Docs gibi yeni üretim araçları da Free'de bulunmuyor (ücretli planlarda beta). Connectors ve skills Free'de de kullanılabilir, ama bu rehberin Cowork adımları ücretli plan gerektirir. O nedenle yükseltme şart.
+> **Önemli: [Free planda](/wiki/temeller/planlar/) Cowork yok.** Yerel klasör (workspace) erişimi yok; Claude Design, Slides ve Docs gibi yeni üretim araçları da Free'de bulunmuyor (ücretli planlarda beta). Connectors ve skills Free'de de kullanılabilir, ama bu rehberin Cowork adımları ücretli plan gerektirir. Bu yüzden bir sonraki adımda ücretli plana geçiyoruz.
+
+### 1.7 İlk Gizlilik Ayarları
+
+Plan almadan önce iki ayara bakın. İkisi de **Settings** altındadır ve istediğiniz zaman değiştirebilirsiniz.
+
+- **Claude'u geliştirmeye yardım et** (*Help improve Claude*, **Settings → Privacy**): konuşmalarınızın model eğitiminde kullanılıp kullanılmayacağını siz seçersiniz. İzin verirseniz veri 5 yıl, vermezseniz 30 gün saklanır. Varsayılan konumu hesabınızda kendiniz kontrol edin; iş içeriği yazacaksanız ayarın kapalı olması önerilir. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+- **Sohbetlerden hafıza oluştur** (*Generate memory from chats*, **Settings → Memory**): Claude önceki sohbetlerinizden tercihlerinizi hatırlar. Free, Pro ve Max'te varsayılan olarak açıktır; Team ve Enterprise'ta varsayılan kapalıdır ve yönetici kontrolündedir. İş ve kişisel konuları aynı hesapta karıştırmak istemiyorsanız kapatın. Ayrıntı: [Hafıza](/wiki/yetenekler/memory/).
+
+### 1.8 Şirketiniz Team veya Enterprise Kullanıyorsa: Davetle Katılım
+
+Şirketiniz Team veya Enterprise planındaysa yöneticiniz size e-postayla davet gönderir. Davet bağlantısından şirket e-posta adresinizle giriş yaparsınız; ücretli planı şirket karşılar, kendiniz abonelik almanız gerekmez ve Adım 2'yi atlayabilirsiniz.
+
+Daha önce kişisel hesabınız varsa katılırken eski sohbetlerinizi şirket hesabına taşıyabilir ya da kişisel hesabı ayrı tutabilirsiniz. Taşıma sırasında özel skills, özel connector'lar, uygulama yetkilendirmeleri ve halka açık paylaşım linkleri taşınmaz, bunları yeniden kurmanız gerekir. Hangi plan neyi içerir: [Claude Planları](/wiki/temeller/planlar/).
+
+### 1.9 Mobil Uygulama
+
+Aynı hesapla iOS ve Android uygulamasına da giriş yapabilirsiniz. Telefondan satın alırsanız fiyat App Store veya Google Play üzerinden TL ile gösterilir ve web fiyatından farklıdır, ayrıntısı [Claude Planları](/wiki/temeller/planlar/) sayfasında. Bu rehberdeki Cowork ve workspace adımları masaüstü uygulaması içindir.
 
 ---
 
@@ -125,9 +147,9 @@ Plan listesini görürsünüz: **Free / Pro / Max 5x / Max 20x / Team / Enterpri
 
 ### 2.2 Hangi Planı?
 
-İki durumdan hangisindeyseniz ona göre seçim:
+İki durumdan hangisindeyseniz ona göre seçim. Önerimiz ilk ay Max 5x'tir, ama zorunlu değil: Pro ile başlayıp gerektiğinde yükseltebilirsiniz.
 
-**🚀 İlk ay yoğun keşif yapacaksanız → Max 5x ($100/ay)**
+**🚀 İlk ay yoğun keşif yapacaksanız → Max 5x ($100/ay), önerimiz**
 
 Yeni bir kullanıcı ilk ayda ciddi kullanım yapar: [connector](/wiki/mcp/baglanti-listesi/) kurulumu, skill denemeleri, gerçek iş çıktıları, uzun belge testleri. Pro'nun ($20) kullanım limiti bu ritimde **birkaç saatte** dolar; "çalışmıyor" yanlış izlenimi oluşur ve değer kaybolur. Max 5x bu sürtünmeyi ortadan kaldırır.
 
@@ -159,7 +181,7 @@ Yukarıda seçtiğiniz plana göre **"Subscribe to Pro"** veya **"Subscribe to M
 - **Fatura adresi** (kurumsal kullanım için şirket adresi)
 - **Aylık otomatik yenileme**: varsayılan açık. İstediğiniz zaman iptal edebilirsiniz. (Pro'da yıllık ödeme seçeneği de var: $200 peşin, aylık $17 eşdeğeri. Max'te yalnızca aylık.)
 
-> **KDV ve döviz:** Anthropic ABD merkezli, fiyatlar USD ile gösterilir. Türk kartınızda tutar bankanızın kendi kuruyla TL'ye çevrilir. Türkiye faturalama adresiyle ödemede %20 KDV'nin eklendiği bildiriliyor (ikincil kaynaklara göre aylık Pro için karttan yaklaşık $24 çekilir); Anthropic'in Türkiye'ye özel resmi bir KDV sayfasını bulamadık, o yüzden ödeme ekranındaki toplam tutara bakın. Mobil uygulama mağazasından alırsanız TL fiyat web fiyatından farklı çıkar. Kurumsal muhasebe için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına bakın.
+> **KDV ve döviz:** Anthropic ABD merkezli, fiyatlar USD ile gösterilir. Türk kartınızda tutar bankanızın kendi kuruyla TL'ye çevrilir. Türkiye faturalama adresiyle ödemede %20 KDV'nin eklendiği bildiriliyor (ikincil kaynaklara göre aylık Pro için karttan yaklaşık $24 çekilir); Anthropic'in Türkiye'ye özel resmi bir KDV sayfasını bulamadık, o yüzden ödeme ekranındaki toplam tutara bakın. Mobil uygulama mağazasından alırsanız TL fiyat web fiyatından farklı çıkar. TL karşılığı hesabı için [Claude Planları](/wiki/temeller/planlar/) sayfasına, kurumsal muhasebe için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına bakın.
 
 ### 2.4 Ödeme Onayı
 
@@ -310,6 +332,8 @@ Claude Desktop'ın **sol üst köşesinde, 3 küçük ikon** şeklinde sekmeler 
 
 > [Projects](/wiki/araclar/projects/) artık ayrı bir sekme değil, Cowork ve Chats içinde alt seçenek olarak yer alıyor. 17 Eylül 2026'da yeniden tasarlandı (beta): [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
 
+> **Güncel not (6 Ekim 2026):** Pro ve Max'te yeni Cowork görevleri artık bulutta çalışır ve "Only on your computer" seçeneği kalktı; yeni görevler için bilgisayarın açık ve uyanık kalması gerekmez. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler yine masaüstü uygulaması ister, bu yüzden aşağıdaki workspace klasörü adımları geçerlidir. Ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/).
+
 > **Güncel not (16 Eylül 2026):** Cowork ve sohbet tek Claude'da birleşiyor, yayılım kademeli (önce Pro ve Max). Hesabınızda birleşik arayüz açıldıysa ayrı bir Cowork ikonu görmeyebilirsiniz; bu durumda doğrudan yeni bir konuşma açıp workspace klasörünü orada bağlayın. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ### 7.2 İlk Açılış: "Get Started"
@@ -347,6 +371,8 @@ Claude listeleyecek: `projeler/, raporlar/, arsiv/, prompts/`. Bu listeyi görü
 ## Adım 8: CLAUDE.md Başlangıç Dosyası
 
 Claude'un sizi her oturumda yeniden tanımak zorunda kalmaması için workspace kök klasörüne **[CLAUDE.md](/wiki/claude-md/nedir/)** adlı bir dosya koymalıyız. Bu dosya, sizin yazıp düzenlediğiniz kalıcı talimat ve bağlam dosyasıdır (Claude'un kendi otomatik hafızasından ayrıdır).
+
+**Nerede okunur?** Bilgisayarınızda, klasörü bağlayarak açtığınız Cowork oturumu bu klasördeki CLAUDE.md'yi okur. Sıradan sohbet (Chats) CLAUDE.md okumaz; bulut Cowork oturumlarında okunduğu belgelenmemiş. Tüm sohbetlerde geçerli olmasını istediğiniz kurallar için aşağıdaki 8.3'te profil talimatına da kısa bir sürüm yazacağız. Hangi talimatın nerede geçerli olduğunun tam tablosu: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ### 8.1 Dosyayı Yaratın
 
@@ -386,15 +412,19 @@ Kaydedin. Bu kadar yeterli, zamanla genişletirsiniz.
 
 [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) sayfasında detaylı şablon var.
 
-### 8.3 Test
+### 8.3 Kısa Sürümü Profil Talimatına da Yazın
 
-Cowork'te yeni sohbet açın:
+Settings > General > **"Instructions for Claude"** alanını açın ve yukarıdaki dosyanın en kritik 3-4 satırını (kim olduğunuz, ton, "her zaman / asla" kuralları) oraya yapıştırın. Bu alan tüm sohbetlerde ve Cowork'te geçerlidir; CLAUDE.md'yi okumayan sıradan sohbette de Claude sizi tanır.
+
+### 8.4 Test
+
+Workspace klasörünü bağlayarak Cowork'te yeni oturum açın ve ilk mesaj olarak şunu yazın:
 
 ```
-CLAUDE.md dosyamı okudun mu? Beni özetle.
+Talimatımı 3 maddede özetle.
 ```
 
-Claude doğru özetlerse, kurulum tamam.
+Claude CLAUDE.md'deki bilgileri (ad, ton, kurallar) doğru özetlerse klasör tarafı tamam. Aynı soruyu bir sıradan sohbette sorun: bu kez yalnız profil talimatına yazdığınız kısa sürümü özetlemesi gerekir. Özet yanlışsa ya da boşsa dosyanın doğru klasörde ve adının tam `CLAUDE.md` olduğundan emin olun, profil talimatının kaydedildiğini kontrol edin.
 
 ---
 
@@ -405,6 +435,8 @@ Claude Desktop tek başına yeter ama şu yardımcıları kurarsanız hayatını
 ### Chrome veya Edge (Modern Tarayıcı)
 
 Connector'ları (Slack, Drive vb.) bağlarken OAuth akışları için modern tarayıcı gerekir.
+
+Google Chrome kullanıyorsanız **Claude in Chrome** eklentisi de vardır (26 Ağustos 2026'dan beri genel kullanımda, tüm ücretli planlarda, yalnız masaüstü Chrome). Claude'un tarayıcıda sizin adınıza sayfa açıp doldurmasını sağlar; ne yaptığını bilerek kullanın. Tanıtım: [Claude in Chrome](/claude/chrome/), wiki özeti: [Office ve Chrome](/wiki/araclar/office-ve-chrome/).
 
 - Zaten varsa: güncel olduğundan emin olun (Yardım → Hakkında)
 - Yoksa: [google.com/chrome](https://www.google.com/chrome) → indir → kur
@@ -427,7 +459,7 @@ Cowork'ün ürettiği `.docx`, `.xlsx`, `.pptx` dosyalarını açmak için:
 - veya **Google Workspace** (ücretsiz Google hesabıyla yeterli)
 - veya **LibreOffice** (ücretsiz alternatif: [libreoffice.org](https://www.libreoffice.org))
 
-Birini kurmuş olmanız yeterli.
+Birini kurmuş olmanız yeterli. Microsoft 365 kullanıyorsanız Excel, PowerPoint ve Word içinde çalışan Claude eklentileri de vardır (ücretli planlarda; Outlook için public beta). Tanıtım: [Claude ve Microsoft 365](/claude/microsoft-365/).
 
 ### Speedtest (İsteğe Bağlı)
 
@@ -484,7 +516,7 @@ Kurulum tek başına verim getirmez; ilk haftada neyin işe yaradığını görm
 - [İlk 7 Gün Rehberi](/wiki/temeller/ilk-7-gun/): Kurulum sonrası ilk hafta
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Uygulama detayları
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Cowork'ün ne olduğu
-- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Hafıza dosyası şablonu
+- [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Kalıcı talimat dosyası şablonu
 - [Claude Planları](/wiki/temeller/planlar/): Plan detayları, Pro → Max upgrade mantığı
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): IT için kurumsal kurulum gereksinimleri
 

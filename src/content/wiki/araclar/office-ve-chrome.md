@@ -1,6 +1,7 @@
 ---
 title: "Office ve Chrome'da Claude"
-description: "Claude'u Excel, PowerPoint, Word ve Outlook içinde, ayrıca Chrome'da kullanmak. Hangi planda çalışır, nasıl kurulur, iş örnekleri ve sınırlar."
+seoTitle: "Claude Excel, Word, Outlook ve Chrome Eklentisi: Kurulum ve Güvenlik"
+description: "Claude'u Excel, PowerPoint, Word, Outlook ve Chrome içinde kullanmak: IT kurulumu, KVKK, güvenlik sınırları ve hangi işte hangisi."
 tags:
   - araclar
   - excel
@@ -9,25 +10,18 @@ tags:
   - outlook
   - chrome
   - eklenti
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **Çoğu iş gün boyu aynı birkaç yerde yapılır: bir Excel dosyası, bir sunum, bir Word belgesi, gelen kutusu ve tarayıcı.** Claude'un bu yerlerin içinde çalışan iki eklenti ailesi var. Birincisi Microsoft 365 eklentileri (Excel, PowerPoint, Word, Outlook), ikincisi Chrome tarayıcı eklentisi (Claude in Chrome). İkisi de dosyayı Claude'a kopyala-yapıştır yapmak yerine, Claude'u işin olduğu yere getirir.
 
-Bu sayfa ikisini de anlatır. Cowork ve sohbet tarafı için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
+Bu sayfa kurulumu, IT tarafını, güvenlik sınırlarını ve hangi işte hangisinin seçileceğini anlatır. Ürün tanıtımı ve plan kapsamı için [Claude for Microsoft 365](/claude/microsoft-365/) ve [Claude for Chrome](/claude/chrome/) sayfalarına bakın. Cowork ve sohbet tarafı için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfası var.
 
 ## Microsoft 365 Eklentileri: Excel, PowerPoint, Word, Outlook
 
 ### Durum ve Plan
 
-| Eklenti | Durum | Plan |
-|---|---|---|
-| Excel | Genel kullanımda (GA), Mac ve Windows | Pro, Max, Team, Enterprise |
-| PowerPoint | Genel kullanımda (GA), Mac ve Windows | Pro, Max, Team, Enterprise |
-| Word | Genel kullanımda (GA), Mac ve Windows | Pro, Max, Team, Enterprise |
-| Outlook | Public beta | Tüm ücretli planlar |
-
-Free planda yoktur. Önceki bir dönemde Excel eklentisi "beta" olarak anılıyordu; bu artık eskidir.
+Excel, PowerPoint ve Word eklentileri genel kullanımda (GA), Outlook eklentisi public beta. Eklentiler ücretli planlarda var, Free planda yok. Önceki bir dönemde Excel eklentisi "beta" olarak anılıyordu; bu artık eskidir. Plan ve durum tablosunun güncel hâli [Claude for Microsoft 365](/claude/microsoft-365/) sayfasında.
 
 ### Ne İşe Yarar?
 
@@ -48,10 +42,11 @@ Yöneticiler OpenTelemetry ile güvenlik izlemesi yapılandırabilir ve Analytic
 
 ### İş Kullanıcısı İçin Somut Örnekler
 
-1. **Finans / Satış operasyon:** *"Bu satış tablosunda bölge bazlı büyümeyi hesapla, en zayıf üç bölgeyi işaretle."* Sonra aynı konuşmada: *"Bunu yönetim kuruluna 5 slaytlık özete çevir."* Excel'den PowerPoint'e veri kopyalamak gerekmez.
+1. **Finans / Satış operasyon:** *"Bu satış tablosunda bölge bazlı büyümeyi hesapla, en zayıf üç bölgeyi işaretle."* Sonra aynı konuşmada: *"Bunu yönetim kuruluna 5 slaytlık özete çevir."* Excel'den PowerPoint'e veri kopyalamak gerekmez. **Süre:** elle 1-2 saat, Claude ile 15-25 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 2. **Model güncelleme:** Kur varsayımını değiştirirsiniz, bağlı sunum grafiği ve rapor metni güncellenir. Rakamların tutarlı kalması, çok dosyalı raporlarda en sık hata kaynağıdır.
 3. **Belge yazımı:** *"Ekibin teklif şablonunu kullanarak, bu Excel'deki fiyatlarla müşteri teklifi taslağı yaz."* Şablon biçimi korunur.
-4. **Gelen kutusu:** Outlook'ta *"Bu sabah gelen e-postaları önem sırasına göre ayır, ilk üçüne yanıt taslağı hazırla ve bu hafta Perşembe için uygun saat öner."* Taslaklar yazma bölmesinde bekler, siz okuyup gönderirsiniz.
+4. **Gelen kutusu:** Outlook'ta *"Bu sabah gelen e-postaları önem sırasına göre ayır, ilk üçüne yanıt taslağı hazırla ve bu hafta Perşembe için uygun saat öner."* Taslaklar yazma bölmesinde bekler, siz okuyup gönderirsiniz. **Süre:** elle 30-45 dakika, Claude ile yaklaşık 10 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+5. **Muhasebe dökümü:** Logo ya da Mikro'dan dışa aktardığınız cari hareket Excel'ini yükleyip *"Bu dökümü e-Fatura listesiyle karşılaştır, eşleşmeyenleri işaretle"* diyebilir, ya da *"Varsayımlardaki kuru TCMB'nin güncel kuruyla değiştir"* isteyebilirsiniz. Logo, Mikro ve Paraşüt için resmi connector yok; iş dosya üzerinden yürür. Ayrıntı: [Türk İş Araçları](/wiki/temeller/turk-is-araclari/).
 
 ### Sınırlar
 
@@ -67,13 +62,13 @@ Kaynak ve ayrıntı için: [Claude for Excel, PowerPoint, Word ve Outlook](https
 
 ### Nedir?
 
-Claude in Chrome, tarayıcınıza eklenen küçük bir programdır (eklenti). Claude'un sizin yerinize web sayfalarını okumasını, bağlantılara tıklamasını, sayfalar arasında gezmesini ve form doldurmasını sağlar. Özellikle **API'si olmayan siteler ve şirket içi araçlar** için işe yarar: bağlayıcı (connector) olmayan yerde Claude yine de iş yapabilir. Zaten oturum açtığınız sitelerde mevcut girişinizi kullanır.
+Claude in Chrome, tarayıcınıza eklenen küçük bir programdır (eklenti). Ürün tanıtımı için [Claude for Chrome](/claude/chrome/) sayfası var. Claude'un sizin yerinize web sayfalarını okumasını, bağlantılara tıklamasını, sayfalar arasında gezmesini ve form doldurmasını sağlar. Özellikle **API'si olmayan siteler ve şirket içi araçlar** için işe yarar: bağlayıcı (connector) olmayan yerde Claude yine de iş yapabilir. Zaten oturum açtığınız sitelerde mevcut girişinizi kullanır.
 
 26 Ağustos 2026'dan beri **genel kullanımda**; artık beta değil. Ayrıntı: [Claude in Chrome tüm ücretli planlarda genel kullanıma açıldı](/haberler/2026-08-26-claude-in-chrome-genel-kullanima-acildi/).
 
 ### Hangi Planda?
 
-Pro, Max, Team ve Enterprise. Free planda yoktur.
+Tüm ücretli planlarda; Free planda yok. Güncel plan tablosu [Claude for Chrome](/claude/chrome/) sayfasında.
 
 ### Nasıl Kurulur?
 
@@ -85,7 +80,7 @@ Enterprise yöneticileri Organization Settings üzerinden dağıtımı yönetebi
 
 ### İş Kullanıcısı İçin Somut Örnekler
 
-1. **Tedarikçi portalı:** *"Bu portaldan son üç ayın fatura bilgilerini çek, tabloya dök."* Portalın API'si yoksa bile.
+1. **Tedarikçi portalı:** *"Bu portaldan son üç ayın fatura bilgilerini çek, tabloya dök."* Portalın API'si yoksa bile. **Süre:** elle 1-2 saat, Claude ile 15-30 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 2. **Başvuru ve form işleri:** Aynı bilgileri tekrar tekrar giriyorsanız (kurum başvurusu, tedarikçi kayıt formu), Claude formu sizin verdiğiniz bilgilerle doldurur, siz gönderme öncesi kontrol edersiniz.
 3. **İç araç:** Connector'ı olmayan bir iç raporlama panelinden rakam alıp özet çıkarmak.
 4. **Araştırma:** Birkaç sayfayı gezip karşılaştırma tablosu çıkarmak (fiyat, özellik, şartlar).
@@ -114,6 +109,8 @@ Daha geniş bağlam için: [Computer Use](/wiki/yetenekler/computer-use/) ve [MC
 
 - [Cowork Modu](/wiki/araclar/cowork-modu/): dosya, kod ve connector'larla çalışma
 - [Connectors](/wiki/araclar/connectors/): Microsoft 365 ve diğer bağlantılar
+- [Türk İş Araçları](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt, e-Fatura
+- [Claude for Microsoft 365](/claude/microsoft-365/) ve [Claude for Chrome](/claude/chrome/): ürün tanıtımı
 - [Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/): Claude Tag ve connector yolu
 - [Computer Use](/wiki/yetenekler/computer-use/): Claude'un ekranı kullanması
 - [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/): Microsoft ekosisteminde karşılaştırma

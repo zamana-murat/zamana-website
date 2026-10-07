@@ -1,17 +1,18 @@
 ---
 title: "Claude Türkçe Performansı: Dört Registerda Derin Analiz"
+seoTitle: "Claude Türkçe Biliyor mu? Dört Kayıtta Örneklerle"
 description: Claude Türkçeyi nasıl yazıyor? Dört register (resmi yazışma, teknik terminoloji, hukuki dil, yaratıcı içerik), yan yana örnekler, güçlü ve zayıf yönler.
 tags:
   - temeller
   - turkce
   - dil-kalitesi
   - yazim
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 "Claude Türkçeyi ne kadar iyi konuşur?" soyut bir sorudur. Bu sayfa somut cevap verir: dört register (dilsel kayıt) için Claude'un tipik çıktılarını ve her birindeki güçlü ve zayıf yönleri gösterir. Registerlar: resmi yazışma, teknik terminoloji, hukuki dil ve yaratıcı içerik.
 
-> **Genel değerlendirme:** Claude profesyonel Türkçeyi **doğru** yazar ve ChatGPT ile yakın seviyededir. Aradaki farklar küçüktür, bu sayfa onları gösterir.
+> **Kısa cevap:** Evet, Claude Türkçe biliyor; profesyonel Türkçeyi büyük ölçüde **doğru** yazar. Bu sayfadaki değerlendirmeler Zamana'nın kendi kullanım gözlemidir, bağımsız bir ölçüm ya da Anthropic'in yayımladığı bir Türkçe karşılaştırması değildir. Hata yapar: sayı, madde numarası ve ek yazımında özellikle.
 
 ## Register 1: Resmi Yazışma (Kurumsal/Devlet)
 
@@ -221,13 +222,43 @@ En büyük kalite sıçraması CLAUDE.md'nin "Ton" bölümünde yapılır. Minim
 
 Bu 10-15 satır Claude'un Türkçe çıktı kalitesini belirgin biçimde iyileştirir.
 
+## Çeviri: Türkçe ile İngilizce, Almanca ve Rusça Arası
+
+İhracat yapan ya da yabancı tedarikçiyle çalışan ekipler için en sık iş çeviridir. Claude bu yönlerde iş metni çevirisini iyi yapar; avantajı, çeviriyi bağlamla birlikte yapabilmesidir (alıcı kim, ton ne, hangi terim sözleşmeye bağlı).
+
+### Prompt Örneği
+
+> *"Aşağıdaki e-postayı Almancaya çevir. Alıcı: Alman bir toptancı, ton nazik ama net. 'Vade' ödeme koşulu anlamında, 'sevkiyat' gönderim tarihi anlamında. Metin: Siparişinizin sevkiyatı 14 Kasım'da yapılacaktır. Ödeme vadesi fatura tarihinden itibaren 30 gündür. Gecikme halinde sevkiyatı durdurmak zorunda kalırız."*
+
+### Claude Tipik Çıktısı
+
+> Ihre Bestellung wird am 14. November versandt. Das Zahlungsziel beträgt 30 Tage ab Rechnungsdatum. Bei Zahlungsverzug müssen wir weitere Lieferungen aussetzen.
+
+### Nelere Dikkat Edin
+
+- ✅ Terim seçimi bağlamla birlikte verildiğinde doğru ("Vade" için "Zahlungsziel" gibi).
+- ✅ Rusça ve Almanca yazışmalarda taslak olarak işe yarar; vaka örneği için [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasına bakın.
+- ⚠️ Sözleşme, gümrük belgesi ve resmi başvuru gibi hukuki sonucu olan metinlerde hedef dili bilen biri okumalı.
+- ⚠️ Hedef dili bilmiyorsanız Claude'dan çeviriyi **geri çevirtin** (Almancadan Türkçeye) ve anlamın korunup korunmadığına bakın. Bu, kontrolün tek başına yeterli yolu değildir ama büyük kaymaları yakalar.
+- 💡 Yönlerden hangisi daha güçlü? Türkçe kaynaklı çeviride (TR → EN/DE/RU) çıktı genelde daha akıcıdır; yabancı dilden Türkçeye çeviride ise yabancı cümle yapısı Türkçeye sızabilir. Bu bizim gözlemimiz, ölçülmüş bir oran değil.
+
+## Taranmış Türkçe Belge Okumak
+
+Claude görselleri ve PDF'leri okuyabilir; taranmış fatura, sözleşme sayfası ya da dilekçe fotoğrafı da buna girer. Türkçe karakterler (ç, ğ, ı, ö, ş, ü) temiz taramalarda genelde doğru okunur.
+
+- ✅ **Temiz, düz tarama:** metin çıkarma, özetleme ve tablo hâline getirme iyi çalışır.
+- ⚠️ **Kötü tarama:** düşük çözünürlük, eğik sayfa, kaşe ve imzanın metnin üstüne binmesi, el yazısı notlar hata oranını artırır. Tutar, tarih, vergi numarası ve IBAN gibi alanları kaynakla mutlaka karşılaştırın.
+- ⚠️ **Uzun PDF:** 100 sayfaya kadar PDF'te hem metin hem sayfa görüntüsü okunur. 100 sayfadan uzun PDF'te yalnız metin katmanı okunur; taranmış (görüntü) sayfalarda metin katmanı yoksa içerik görülmez. Uzun taramaları bölün. Sınırlar değişebilir; Claude'un dosya yükleme yardım sayfasından teyit edin.
+
+Hassas belgelerde (kimlik, sağlık, personel kaydı) önce [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki kurallara bakın.
+
 ## Yazılı Türkçe ile Sesli Mod Aynı Şey Değil
 
 Bu sayfa **yazılı** Türkçeyi anlatır. Claude'un sesli modu (Voice mode, beta) için yardım sayfasındaki desteklenen diller listesinde Türkçe görünmüyor; sesli modu Türkçe iş akışlarında kullanmadan önce güncel dil listesini kontrol edin ([Voice Mode](/wiki/araclar/voice-mode/)).
 
 ## ChatGPT ile Türkçe Karşılaştırması
 
-Özetle: iki model Türkçede **çok yakın seviyede**. Fark kullanım biçiminde:
+Zamana gözlemimize göre iki model Türkçede yakın seviyede. Bunu destekleyen bağımsız bir Türkçe karşılaştırma yayımlamıyoruz; kendi işinizdeki metinlerle yan yana deneyin. Gözlemlediğimiz fark kullanım biçiminde:
 
 - **Claude** daha ağır kurumsal tonda doğal
 - **ChatGPT** daha modern şirket kültüründe doğal

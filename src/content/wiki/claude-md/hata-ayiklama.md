@@ -1,11 +1,12 @@
 ---
 title: "CLAUDE.md Hata Ayıklama: \"Yazdım Ama Dinlemedi\""
-description: CLAUDE.md var ama Claude beklendiği gibi davranmıyor. Yaygın sorunlar, teşhis, düzeltme, adım adım rehber.
+seoTitle: "CLAUDE.md Çalışmıyor mu? Claude Talimatımı Dinlemiyor Çözümü"
+description: "CLAUDE.md ya da profil talimatı var ama Claude dinlemiyor. Önce okunuyor mu diye kontrol edin, sonra çelişki, uzunluk ve belirsizlik sorunlarını düzeltin."
 tags:
   - claude-md
   - hata-ayiklama
   - debugging
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 **[CLAUDE.md](/wiki/claude-md/nedir/) yazdınız, ama Claude hâlâ eski tarzda yanıt veriyor.** Çalışmayan kuralları, çelişen yönergeleri, düşen talimatları nasıl bulup düzelteceğinizi anlatan pratik rehber.
@@ -16,26 +17,31 @@ Aşağıdaki belirtilerden hangisi sizinki?
 
 | Belirti | Olası Sebep | Bölüm |
 |---|---|---|
-| "Hiçbir kuralımı tanımıyor sanki" | CLAUDE.md hiç yüklenmemiş veya yanlış yerde | Bölüm 1 |
+| "Hiçbir kuralımı tanımıyor sanki" | Talimat hiç yüklenmemiş (yanlış yer, yanlış ortam) | Bölüm 1 |
 | "Bazı kuralları dinliyor, bazılarını dinlemiyor" | Çelişki veya öncelik sorunu | Bölüm 2 |
 | "İlk yanıtlarda iyi, sonra unutuyor" | Konuşma uzadıkça [bağlam](/wiki/yetenekler/context-compaction/) sıkışması | Bölüm 3 |
 | "Yazdığım gibi anlamadı" | Talimat belirsiz veya yanlış formülasyon | Bölüm 4 |
-| "Eski sürüm CLAUDE.md kullanıyor sanki" | Önbellek veya yanlış proje | Bölüm 5 |
+| "Eski sürüm kullanıyor sanki" | Eski kopya ya da yanlış proje | Bölüm 5 |
 | "Kurallar çok uzun, Claude bunaldı" | CLAUDE.md çok uzun | Bölüm 6 |
 
-## 1. CLAUDE.md Yüklendi mi?
+## 1. Talimat Yüklendi mi?
 
-İlk test basit: Claude'a doğrudan sorun.
+CLAUDE.md her ortamda okunmaz. Önce **nerede çalıştığınızı** bulun, çünkü çoğu "dinlemiyor" şikâyeti aslında "hiç okumadı"dır. Şu sırayla kontrol edin:
 
-> *"CLAUDE.md'm yüklü mü? Eğer öyleyse içinden bir alıntı ver."*
+1. **Sohbette misiniz?** (claude.ai, mobil) Sohbet CLAUDE.md dosyasını okumaz. Profil talimatınız (Ayarlar > General > "Instructions for Claude") dolu mu? Bir projedeyseniz doğru projedesiniz ve metin proje talimatında ya da dosyalarında mı?
+2. **Masaüstünde Cowork'te misiniz?** Klasör gerçekten bağlı mı, doğru klasör mü? Dosyanın adı tam olarak `CLAUDE.md` mi, klasörün kökünde mi?
+3. **Oturum yerel mi, bulut mu?** Yerel Cowork oturumunda klasördeki CLAUDE.md okunur. Bulut Cowork oturumunda okunduğu belgelenmemiştir ve klasörler elle eklenir; orada talimatı profil talimatına da yazın.
+4. **Dosya adı ve içerik:** `CLAUDE.md` yerine `claude.md.txt` ya da `Claude.md` gibi bir ad, boş dosya ya da yanlış dizin en sık nedenlerdir.
 
-**Cevap "Hayır" ise:**
+Sonra Claude'a doğrudan sorun:
 
-- claude.ai'da: CLAUDE.md bir dosya olarak otomatik okunmaz. [Projects](/wiki/araclar/projects/) içindesiniz mi ve metni projeye talimat ya da bilgi olarak eklediniz mi?
-- [Claude Desktop](/wiki/araclar/claude-desktop/)'ta (Cowork): çalışma klasörünüzün kökünde `CLAUDE.md` dosyası var mı ve doğru klasörü mü bağladınız?
-- Mobilde: [Claude Mobil](/wiki/araclar/claude-mobil/) uygulamasında yerel klasör erişimi kısmidir; CLAUDE.md yalnızca proje talimatı olarak eklenmişse görünür
+> *"Talimatımı 3 maddede özetle."*
 
-**Cevap "Evet" ise ama yanlış alıntı veriyorsa:** muhtemelen eski sürüm yüklenmiş veya başka bir proje CLAUDE.md'si yüklenmiş.
+**Özet gelmiyorsa ya da yanlışsa**, yukarıdaki dört adıma geri dönün. **Doğru özet geliyorsa** talimat yüklenmiştir; sorun içeriktedir, Bölüm 2'den devam edin.
+
+Ortamların tam karşılaştırması: [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/#kalıcı-talimat-ve-hafıza-yerleri).
+
+> **Not:** Mobilde yerel klasör erişimi kısmidir; [Claude Mobil](/wiki/araclar/claude-mobil/) uygulamasında talimatın görünmesi için profil talimatı ya da proje talimatı kullanın.
 
 ## 2. Çelişme ve Öncelik
 
@@ -58,7 +64,7 @@ talep ediyorsa (örn. "açıklar mısın", "neden") detaylı cevap verilir.
 
 ### Bireysel ve Şirket CLAUDE.md Çelişmesi
 
-[Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) sayfası bunu detaylandırır. Kural: **şirket genel kuralı bireyselden üstündür.** Eğer bireysel CLAUDE.md "her zaman emoji kullan" diyorsa, şirket CLAUDE.md "yasak emoji" diyorsa, şirketinki kazanır.
+[Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) sayfası bunu detaylandırır. Claude iki kuralı gördüğünde hangisinin üstün olduğunu kendiliğinden bilmez; öncelik **kendi yazdığınız kuralla** belirlenir. Örneğin bireysel dosyada "her zaman emoji kullan", şirket kural setinde "emoji yasak" yazıyorsa, bireysel dosyaya "şirket kural setiyle çelişen yerde şirket kuralı geçerlidir" satırını ekleyin ya da çelişen satırı silin.
 
 ### Ölçü: Tek Bir Kural Tek Bir Yere
 
@@ -76,7 +82,7 @@ Konuşma çok uzadığında Claude eski talimatları gözden kaçırmaya başlay
 
 **Çözümler:**
 
-- **Yeni sohbet aç.** En etkili yol. CLAUDE.md taze yüklenir.
+- **Yeni sohbet (ya da yeni oturum) aç.** En etkili yol. Profil talimatı ve proje talimatı baştan yüklenir; klasörle çalışıyorsanız yeni oturumda dosya yeniden okunur.
 - **Önemli kuralı son mesajda hatırlat.** "Unutma: yanıtların kısa olsun."
 - **Çok adımlı işi parçala.** Bir sohbette her şeyi bitirme; alt sohbetlere böl.
 - **Otomatik özetlemeye (compaction) tam güvenmeyin.** Claude uzun konuşmayı özetler ama her ayrıntıyı doğru taşımayabilir.
@@ -114,17 +120,18 @@ Saygılı = ne kadar resmî? Ne kadar samimi?
 
 ## 5. Yanlış Versiyon
 
-Eski CLAUDE.md sürümü hâlâ aktif olabilir. Kontrol edin:
+Eski bir kopya hâlâ aktif olabilir. Kontrol edin:
 
-- **claude.ai Projects:** Projeye yüklenmiş knowledge base'i kontrol edin. Eski versiyon hâlâ varsa kaldırın, yenisini yükleyin.
-- **Claude Desktop ve Claude Code:** Çalışma klasöründe tek bir `CLAUDE.md` olduğundan emin olun. Claude Code'da `~/.claude/CLAUDE.md` tüm projeler için geçerli global dosyadır, çalışma klasöründeki ise projeye özgüdür. İkisi birbiriyle çelişmiyor mu?
+- **Profil talimatı ve projeler:** Ayarlar > General'daki metin güncel mi? Projeye yüklenmiş dosyalarda ve proje talimatında eski versiyon varsa kaldırın, yenisini yükleyin. Aynı metni birden fazla yere koyduysanız hepsini güncelleyin.
+- **Cowork klasörü:** Çalışma klasöründe tek bir `CLAUDE.md` olduğundan emin olun; üst ya da alt klasörde eski bir kopya kalmış olabilir.
+- **Claude Code (geliştiriciler):** `~/.claude/CLAUDE.md` tüm projeler için geçerli kullanıcı dosyası, çalışma klasöründeki ise projeye özgüdür; ikisi birleştirilir, biri ötekini ezmez. Çelişmiyor mu?
 - **Birden fazla proje:** Yanlış projede çalışıyor olabilirsiniz. Sol panelde aktif projeyi kontrol edin.
 
-[Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfası katmanlı CLAUDE.md mantığını anlatır.
+[Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfası hangi talimatın nerede geçerli olduğunu anlatır.
 
 ## 6. Fazla Uzun CLAUDE.md
 
-CLAUDE.md çok uzun olduğunda Claude bazı kuralları "kaybeder". Pratik kural: **300-500 kelimeyi geçmesin.**
+CLAUDE.md çok uzun olduğunda Claude bazı kuralları "kaybeder". Pratik kural: **kısa tutun, birkaç ekranı geçmesin.** (Claude Code belgesi kendi dosyası için yaklaşık 200 satırın altını önerir; iş kullanıcısı için de iyi bir tavandır.)
 
 Uzunsa ne yapmalı?
 
@@ -139,11 +146,11 @@ Sorununuzu yukarıdaki kategorilerden birine yerleştiremediyseniz, sistemli ile
 
 ### Adım 1: İzole Edin
 
-Yeni bir sohbet açın ve yalnızca CLAUDE.md aktif olsun. Hiçbir ek prompt vermeden Claude'a basit bir test sorusu sorun.
+Yeni bir sohbet ya da oturum açın ve yalnızca test ettiğiniz talimat yeri aktif olsun (örneğin yalnız klasördeki CLAUDE.md ya da yalnız profil talimatı). Hiçbir ek prompt vermeden Claude'a basit bir test sorusu sorun.
 
-> *"Ben kimim? Nasıl çalışırım? CLAUDE.md'mden alıntı yaparak cevapla."*
+> *"Ben kimim? Nasıl çalışırım? Talimatımdan alıntı yaparak cevapla."*
 
-CLAUDE.md tanınıyorsa devam edin. Tanınmıyorsa Bölüm 1'e geri dönün.
+Talimat tanınıyorsa devam edin. Tanınmıyorsa Bölüm 1'e geri dönün.
 
 ### Adım 2: Tek Kuralı Test Edin
 
@@ -168,9 +175,9 @@ Bir başka çalışana CLAUDE.md'nizi gösterin. Onlar için açık mı? Dış g
 
 ## Yaygın Spesifik Sorunlar
 
-### "Voice'a uymuyor"
+### "Üslubuma uymuyor"
 
-Voice ifade tarzıdır; soyutluk yüksek. Çözüm:
+Üslup ifade tarzıdır; soyutluk yüksek. Çözüm:
 
 - En az 2 örnek verin (iyi/kötü)
 - Sevdiğiniz birinin yazısından parça yapıştırın "böyle yaz"
@@ -201,7 +208,7 @@ CLAUDE.md'de "[Çalışan adı] şu işlerden sorumlu" gibi yazdıysanız, Claud
 Bir sorun çözüldükten sonra:
 
 1. **CLAUDE.md sürümünü artırın** (1.3 → 1.4)
-2. **Değişiklik notunu** ekleyin (change log)
+2. **Değişiklik notunu** ekleyin (değişiklik günlüğü)
 3. **Bir hafta gözleyin**: tekrarlamıyor mu
 4. Şirket CLAUDE.md'sine etki eden bir değişiklik ise [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) yöneticisine bildirin
 
@@ -212,6 +219,7 @@ Bir sorun çözüldükten sonra:
 - [Örnekler](/wiki/claude-md/ornekler/): Çalışan örnekler
 - [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Hazır şablonlar
 - [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/): Şirket-geneli paylaşım
+- [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Hangisi nerede geçerli
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle öğretme
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Prompting tarafının hata listesi
 - [Context ve Compaction](/wiki/yetenekler/context-compaction/): Bağlam sıkışması

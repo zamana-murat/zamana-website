@@ -1,12 +1,13 @@
 ---
 title: "Perakende ve E-Ticaret: Claude Uygulamaları"
+seoTitle: "E-Ticarette Claude: Ürün Açıklaması, Yorum Analizi ve Marketplace"
 description: "Perakende ve e-ticaret işletmeleri için Claude: ürün açıklaması, müşteri yorum analizi, kampanya, fiyat takibi, marketplace yönetimi."
 tags:
   - departmanlar
   - perakende
   - eticaret
   - urun-aciklamasi
-lastUpdated: "2026-10-05"
+lastUpdated: "2026-10-06"
 ---
 
 Türkiye'de perakende ve e-ticaret hızla büyüyor: Trendyol, Hepsiburada, Amazon TR, kendi siteleri, fiziksel mağaza zincirleri. Her gün **binlerce ürün açıklaması, müşteri yorumu ve kampanya metni** gerekir. Claude bu içerik üretimini ölçeklendirir ve üstüne veri analizi de katar.
@@ -36,7 +37,7 @@ Yeni bir ürün ekleyeceksiniz. Hammaddeler, ölçüler, fotoğraflar elinizde a
 
 ### Çoklu Marketplace İçerik
 
-Aynı ürün için Trendyol, Hepsiburada ve Amazon TR varyasyonları: karakter sınırları, format ve anahtar kelime stratejisi farklıdır. Claude tek bir prompttan üç versiyon üretebilir. Her platformun güncel kurallarını kontrol edin.
+Aynı ürün için Trendyol, Hepsiburada ve Amazon TR varyasyonları: karakter sınırları, format ve anahtar kelime stratejisi farklıdır. Claude tek bir prompttan üç versiyon üretebilir. Her platformun güncel kurallarını kontrol edin; bazı marketplace'lerde "en iyi", "garanti" gibi ifadeler kısıtlı olabilir, bu listeyi prompta ya da CLAUDE.md'ye yazın.
 
 ### Çeviri ve Lokalizasyon
 
@@ -114,9 +115,13 @@ E-ticaret desteği genelde aynı 30 soruyu farklı biçimlerde alır. Claude bun
 
 [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası bu boyutu derinleştirir.
 
+### Marketplace Soru-Cevap ve Mesajları
+
+Trendyol ve Hepsiburada gibi platformlarda ürün sayfasındaki müşteri soruları ve satıcı mesajları aynı tutarlılıkla, hızlıca yanıtlanmalıdır. Claude, ürün bilginizi (özellik, beden, stok politikası) verdiğinizde soru başına doğal bir yanıt taslağı üretir; bilmediği bilgiyi uydurmaması için prompta "yalnız verdiğim bilgiye göre yanıtla, yoksa 'kontrol edip döneceğim' de" kuralını koyun. Platformun yanıt süresi ve içerik kurallarını güncel olarak kontrol edin.
+
 ### İade / Şikayet Yanıtı
 
-Hassas durumlarda Claude diplomatik ve çözüm odaklı bir taslak hazırlar. Müşteri temsilcisi düzenler ve gönderir.
+Hassas durumlarda Claude diplomatik ve çözüm odaklı bir taslak hazırlar. Müşteri temsilcisi düzenler ve gönderir. İnternetten satışta (mesafeli satış) cayma hakkı ve iade süreleri yasal çerçevededir; yanıttaki süre ve koşulları güncel mevzuat ve kendi politikanıza göre doğrulayın, kategoriye göre istisnalar olabilir.
 
 ### Çoklu Dilde Destek
 
@@ -126,7 +131,7 @@ Hassas durumlarda Claude diplomatik ve çözüm odaklı bir taslak hazırlar. M�
 
 ### Ürün Kataloğu
 
-Yıllık ürün kataloğu: 200 ürün, kısa açıklama ve özellik tablosuyla haftalarca iştir. Claude ile ilk taslaklar günler içinde çıkar, kontrol sizdedir.
+Yıllık ürün kataloğu: 200 ürün, kısa açıklama ve özellik tablosuyla elle çoğu ekipte birkaç hafta sürer. Claude ile ilk taslaklar yaklaşık birkaç iş gününde çıkar (tahmini aralık), kontrol ve düzeltme süresi ayrıca sizdedir.
 
 ### Blog ve SEO İçerik
 
@@ -142,7 +147,20 @@ Aşağıdaki senaryolar örnektir; süreler işletmeden işletmeye değişir.
 
 ### Senaryo 1: Sezon Lansmanı
 
-Yaz koleksiyonu lansmanı. 80 ürün, her birinin Trendyol, Hepsiburada ve kendi site açıklaması; kampanya metni, e-posta ve sosyal medya seti. Claude'suz haftalar süren bu iş, Claude ile günlere iner.
+Yaz koleksiyonu lansmanı: 80 ürün, her birinin Trendyol, Hepsiburada ve kendi site açıklaması; ayrıca kampanya metni, e-posta ve sosyal medya seti.
+
+**Adım 1:** Çalışan en iyi satan 3-5 ürünün açıklamasını örnek olarak, 80 ürünün özellik tablosunu da (Excel) ekler:
+> *"Ekteki özellik tablosundaki her ürün için üç açıklama yaz: Trendyol (kısa, en fazla 600 karakter), Hepsiburada (orta), kendi site (uzun, SEO için şu anahtar kelimeler doğal geçsin). Tarz olarak şu 3 örneğe benzesin. Tabloda olmayan özellik uydurma, 'en iyi' ve 'garanti' kelimelerini kullanma."*
+
+**Adım 2:** Önce 5 üründen oluşan bir deneme grubu istenir, tarz ve uzunluk doğrulanır.
+
+**Adım 3:** Onaylanan prompt 80 ürüne çalıştırılır; Claude sonuçları ürün başına satır olacak şekilde Excel'e döker.
+
+**Adım 4:** Çalışan her açıklamayı özellik tablosuyla karşılaştırır, platform karakter sınırlarını ve yasak kelimeleri kontrol eder, sonra yükleme dosyasını hazırlar.
+
+Toplam süre: ürün başı elle yaklaşık 20-30 dakika, Claude ile 3-5 dakika (kontrol dahil); 80 ürün için kabaca 30-40 saat yerine 6-10 saat (örnek senaryo).
+
+**Süre:** 80 ürünün üç platform açıklaması elle yaklaşık 30-40 saat, Claude ile 6-10 saat (kontrol dahil); 500 yorumun sınıflandırılması elle 1-2 gün, Claude ile 1-2 saat. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/). Ayda 2 lansman yapıyorsanız fark yaklaşık 40-65 saattir.*
 
 ### Senaryo 2: Müşteri Yorum Krizi
 
@@ -211,4 +229,6 @@ Tek kişilik bir e-ticaret işletmesi için Claude'un katkısı çok büyüktür
 - [Research Mode](/wiki/yetenekler/research-mode/): Rakip araştırma
 - [Skills](/wiki/yetenekler/skills/): Excel, ürün listesi üretme
 - [Connectors](/wiki/araclar/connectors/): Shopify, marketplace API entegrasyonu
+- [Ticaret: e-ticaret ve perakendede Claude ajanları](/kurumsal/ticaret/): Alışveriş asistanı ve satıcı ajanı şablonu (yazılım ekibi gerekir)
+- [Ölçüm Metrikleri ve ROI Çerçevesi](/wiki/temeller/olcum-metrikleri/): Kazancı kendi işletmenizde ölçmek
 
