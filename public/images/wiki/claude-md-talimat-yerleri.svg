@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Aynı talimat metni dört yere konabilir: profil talimatı, proje talimatı, Cowork klasörü, Claude Code</title>
+  <desc id="desc">Ortada beş bölümlü metin: Kim Olduğum, Şirket, Ton, Her Zaman / Asla, Güncel Odak. Oklar dört yere gider. Profil talimatı tüm sohbetlerde geçerlidir, buraya kısa sürüm yazılır. Proje talimatı yalnız o projede geçerlidir, Şirket ve Güncel Odak burada daha yerinde durur. Cowork klasörünün köküne CLAUDE.md adıyla kaydedilen dosya yerel Cowork oturumunda okunur. Claude Code kullanan geliştiriciler CLAUDE.md dosyasını kullanır. Altta test: metni koyduktan sonra yeni bir sohbet ya da oturumda Talimatımı 3 maddede özetle deyin. Not: sohbet ekranı bilgisayarınızdaki CLAUDE.md dosyasını kendiliğinden okumaz.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="600" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Bu metni nereye koyacağım?</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Metin araçtan bağımsızdır, konduğu yer değişir</text>
+
+  <!-- Arrows -->
+  <g stroke="#c9a84c" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="320" y1="190" x2="274" y2="190"/>
+    <line x1="320" y1="340" x2="274" y2="340"/>
+    <line x1="480" y1="190" x2="526" y2="190"/>
+    <line x1="480" y1="340" x2="526" y2="340"/>
+  </g>
+
+  <!-- Center: the text -->
+  <rect x="320" y="130" width="160" height="270" rx="10" fill="#0f2855"/>
+  <text x="400" y="170" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">Beş bölümlü</text>
+  <text x="400" y="196" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">metin</text>
+  <line x1="344" y1="214" x2="456" y2="214" stroke="#c9a84c" stroke-width="2"/>
+  <g font-size="16" font-weight="500" fill="#f7f0dc" text-anchor="middle">
+    <text x="400" y="244">Kim Olduğum</text>
+    <text x="400" y="274">Şirket</text>
+    <text x="400" y="304">Ton</text>
+    <text x="400" y="334">Her Zaman / Asla</text>
+    <text x="400" y="364">Güncel Odak</text>
+  </g>
+
+  <!-- Left top: profile instructions -->
+  <rect x="40" y="130" width="230" height="120" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="56" y="166" font-size="20" font-weight="700" fill="#0f2855">Profil talimatı</text>
+  <text x="56" y="198" font-size="16" font-weight="500" fill="#1a2238">Tüm sohbetlerde geçerli</text>
+  <text x="56" y="226" font-size="16" font-weight="500" fill="#1a2238">Kısa sürümü yazın</text>
+
+  <!-- Left bottom: project instructions -->
+  <rect x="40" y="280" width="230" height="120" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="56" y="316" font-size="20" font-weight="700" fill="#0f2855">Proje talimatı</text>
+  <text x="56" y="348" font-size="16" font-weight="500" fill="#1a2238">Yalnız o projede geçerli</text>
+  <text x="56" y="376" font-size="16" font-weight="500" fill="#1a2238">Şirket, Güncel Odak</text>
+
+  <!-- Right top: Cowork folder -->
+  <rect x="530" y="130" width="230" height="120" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="546" y="166" font-size="20" font-weight="700" fill="#0f2855">Cowork klasörü</text>
+  <text x="546" y="198" font-size="16" font-weight="500" fill="#1a2238">Kökte CLAUDE.md dosyası</text>
+  <text x="546" y="226" font-size="16" font-weight="500" fill="#1a2238">Yerel Cowork oturumunda</text>
+
+  <!-- Right bottom: Claude Code -->
+  <rect x="530" y="280" width="230" height="120" rx="10" fill="#ffffff" stroke="#c5cdda" stroke-width="2"/>
+  <text x="546" y="316" font-size="20" font-weight="700" fill="#0f2855">Claude Code</text>
+  <text x="546" y="348" font-size="16" font-weight="500" fill="#1a2238">CLAUDE.md dosyası</text>
+  <text x="546" y="376" font-size="16" font-weight="500" fill="#1a2238">Geliştiriciler için</text>
+
+  <!-- Test -->
+  <rect x="40" y="436" width="720" height="92" rx="10" fill="#f7f0dc" stroke="#c9a84c" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="400" y="474" text-anchor="middle" font-size="20" font-weight="700" fill="#0f2855">Test: "Talimatımı 3 maddede özetle."</text>
+  <text x="400" y="504" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">Metni koyduktan sonra yeni bir sohbet ya da oturumda sorun</text>
+
+  <text x="40" y="568" font-size="16" font-weight="500" fill="#1a2238">Sohbet ekranı bilgisayarınızdaki CLAUDE.md dosyasını kendiliğinden okumaz</text>
+</svg>

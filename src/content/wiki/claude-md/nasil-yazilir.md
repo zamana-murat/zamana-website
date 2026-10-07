@@ -157,6 +157,8 @@ Sohbet ekranındaki Claude, bilgisayarınızdaki bir `CLAUDE.md` dosyasını ken
 
 Kalıcı talimat yerlerinin tam karşılaştırması (kapsam, plan, ne zaman okunur) için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
 
+![Beş bölümlü metin (Kim Olduğum, Şirket, Ton, Her Zaman / Asla, Güncel Odak) dört yere konabilir: profil talimatı tüm sohbetlerde kısa sürümle, proje talimatı yalnız o projede, Cowork klasörünün kökünde CLAUDE.md yerel oturumda, Claude Code'da CLAUDE.md geliştiriciler için; altta "Talimatımı 3 maddede özetle" testi](/images/wiki/claude-md-talimat-yerleri.svg)
+
 İki not:
 
 - **Bulut Cowork oturumları.** Cowork görevi bulutta çalışıyorsa klasör elle eklenir ve orada CLAUDE.md okunduğu Anthropic belgelerinde yazmıyor. Cowork belgeleri klasördeki talimatı "klasör talimatı" diye anar, dosya adını açıkça vermez. Bu yüzden değişmez kuralların kısa sürümünü profil talimatına da koyun, sonra aşağıdaki testi yapın.

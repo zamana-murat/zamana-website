@@ -92,6 +92,8 @@ Kısıtlar pozitif talimatların yapamadığını yapar, Claude'un düşmemesi g
 
 İkinci prompt yaklaşık iterasyonsuz çalışır. İlki birkaç tur geri bildirim ister ve yine de genel kalır.
 
+![Aynı istek önce ve sonra: zayıf prompt "Bana bir satış takip e-postası yaz" Claude'u beş noktada tahmine zorlar; beş bileşenli prompt rol, bağlam, görev, format ve kısıtlarla her birini yanıtlar ve çıktı yaklaşık iterasyonsuz olur](/images/wiki/prompting-once-sonra.svg)
+
 ## Pozitif ve Negatif Örnekler
 
 Claude'a iyi örnek **ve** kötü örnek gösterin. Bu tek başına çıktı kalitesini çarpıcı biçimde artırır.

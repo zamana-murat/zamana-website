@@ -142,6 +142,8 @@ Sayfalardaki "Gerçek Örnek" bölümlerinde elle ve Claude ile süre karşıla�
 - [**Ölçüm Metrikleri**](/wiki/temeller/olcum-metrikleri/): Neyi, nasıl ölçeceğiniz ve gerçek vaka örnekleri
 - [**ROI Hesaplayıcı**](/wiki/temeller/roi-hesaplayici/): Kendi süre ve maliyet rakamlarınızla hesap
 
+![Altı tipik işte elle ve Claude ile süre (kontrol dahil): SOP yazımı 3-6 saate karşı 25-40 dakika; teklif taslağı, bütçe varyans anlatısı, iş ilanı ve mülakat soruları 2-3 saate karşı 30-45 dakika; tutanak ve takip e-postaları 2-3 saate karşı 30-40 dakika; kamuya açık şikayet yanıtı 1-2 saate karşı 10-20 dakika](/images/wiki/departmanlar-sure-karsilastirma.svg)
+
 ## Kurumsal ve Program Yönlendirmesi
 
 > **Ekibiniz için mi bakıyorsunuz?** Bu bölüm kendi başınıza uygulayabileceğiniz iş akışlarını anlatır. Ürünlerin kurumsal tarafı (Team, Enterprise, sektör notları) [Kurumsal](/kurumsal/) bölümünde, Zamana'nın eğitim ve danışmanlık seçenekleri [Programlar](/programlar/) sayfasındadır. Zamana bayi değildir; abonelik satın alma doğrudan Anthropic'tendir.

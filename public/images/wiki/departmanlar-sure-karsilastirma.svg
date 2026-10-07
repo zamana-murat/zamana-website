@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 880" width="800" height="880" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Altı tipik işte süre: elle ve Claude ile, kontrol dahil</title>
+  <desc id="desc">Yatay çubuk grafik, dakika ölçeğinde, çubuk boyu aralığın orta noktası. Operasyon, SOP yazımı: elle 3-6 saat, Claude ile 25-40 dk. Satış, teklif taslağı: elle 2-3 saat, Claude ile 30-45 dk. Finans, bütçe varyans anlatısı: elle 2-3 saat, Claude ile 30-45 dk. İnsan Kaynakları, iş ilanı ve 10 mülakat sorusu: elle 2-3 saat, Claude ile 30-45 dk. İdari İşler, tutanak ve takip e-postaları: elle 2-3 saat, Claude ile 30-40 dk. Müşteri Hizmetleri, kamuya açık şikayet yanıtı: elle 1-2 saat, Claude ile 10-20 dk. Claude ile süreler kontrol dahildir. Zamana gözlemi, tipik aralık; kurumdan kuruma değişir.</desc>
+
+  <rect x="0" y="0" width="800" height="880" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Elle ve Claude ile: altı tipik iş</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Departman sayfalarındaki süre aralıkları, aynı dakika ölçeğinde</text>
+
+  <!-- Legend -->
+  <rect x="40" y="110" width="20" height="20" rx="4" fill="#0f2855"/>
+  <text x="70" y="126" font-size="16" font-weight="600" fill="#1a2238">Elle</text>
+  <rect x="140" y="110" width="20" height="20" rx="4" fill="#c9a84c"/>
+  <text x="170" y="126" font-size="16" font-weight="600" fill="#1a2238">Claude ile (kontrol dahil)</text>
+
+  <!-- Grid -->
+  <g stroke="#e8edf6" stroke-width="2">
+    <line x1="160" y1="150" x2="160" y2="756"/>
+    <line x1="280" y1="150" x2="280" y2="756"/>
+    <line x1="400" y1="150" x2="400" y2="756"/>
+    <line x1="520" y1="150" x2="520" y2="756"/>
+    <line x1="640" y1="150" x2="640" y2="756"/>
+  </g>
+
+  <!-- Row 1: Operasyon -->
+  <text x="40" y="172" font-size="18" fill="#0f2855"><tspan font-weight="700">Operasyon:</tspan><tspan font-weight="500" fill="#1a2238"> SOP yazımı</tspan></text>
+  <rect x="40" y="184" width="540" height="24" rx="4" fill="#0f2855"/>
+  <text x="590" y="202" font-size="16" font-weight="600" fill="#1a2238">3-6 saat</text>
+  <rect x="40" y="214" width="65" height="24" rx="4" fill="#c9a84c"/>
+  <text x="115" y="232" font-size="16" font-weight="600" fill="#1a2238">25-40 dk</text>
+
+  <!-- Row 2: Satış -->
+  <text x="40" y="272" font-size="18" fill="#0f2855"><tspan font-weight="700">Satış:</tspan><tspan font-weight="500" fill="#1a2238"> teklif taslağı</tspan></text>
+  <rect x="40" y="284" width="300" height="24" rx="4" fill="#0f2855"/>
+  <text x="350" y="302" font-size="16" font-weight="600" fill="#1a2238">2-3 saat</text>
+  <rect x="40" y="314" width="75" height="24" rx="4" fill="#c9a84c"/>
+  <text x="125" y="332" font-size="16" font-weight="600" fill="#1a2238">30-45 dk</text>
+
+  <!-- Row 3: Finans -->
+  <text x="40" y="372" font-size="18" fill="#0f2855"><tspan font-weight="700">Finans:</tspan><tspan font-weight="500" fill="#1a2238"> bütçe varyans anlatısı</tspan></text>
+  <rect x="40" y="384" width="300" height="24" rx="4" fill="#0f2855"/>
+  <text x="350" y="402" font-size="16" font-weight="600" fill="#1a2238">2-3 saat</text>
+  <rect x="40" y="414" width="75" height="24" rx="4" fill="#c9a84c"/>
+  <text x="125" y="432" font-size="16" font-weight="600" fill="#1a2238">30-45 dk</text>
+
+  <!-- Row 4: İnsan Kaynakları -->
+  <text x="40" y="472" font-size="18" fill="#0f2855"><tspan font-weight="700">İnsan Kaynakları:</tspan><tspan font-weight="500" fill="#1a2238"> iş ilanı ve 10 mülakat sorusu</tspan></text>
+  <rect x="40" y="484" width="300" height="24" rx="4" fill="#0f2855"/>
+  <text x="350" y="502" font-size="16" font-weight="600" fill="#1a2238">2-3 saat</text>
+  <rect x="40" y="514" width="75" height="24" rx="4" fill="#c9a84c"/>
+  <text x="125" y="532" font-size="16" font-weight="600" fill="#1a2238">30-45 dk</text>
+
+  <!-- Row 5: İdari İşler -->
+  <text x="40" y="572" font-size="18" fill="#0f2855"><tspan font-weight="700">İdari İşler:</tspan><tspan font-weight="500" fill="#1a2238"> tutanak ve takip e-postaları</tspan></text>
+  <rect x="40" y="584" width="300" height="24" rx="4" fill="#0f2855"/>
+  <text x="350" y="602" font-size="16" font-weight="600" fill="#1a2238">2-3 saat</text>
+  <rect x="40" y="614" width="70" height="24" rx="4" fill="#c9a84c"/>
+  <text x="120" y="632" font-size="16" font-weight="600" fill="#1a2238">30-40 dk</text>
+
+  <!-- Row 6: Müşteri Hizmetleri -->
+  <text x="40" y="672" font-size="18" fill="#0f2855"><tspan font-weight="700">Müşteri Hizmetleri:</tspan><tspan font-weight="500" fill="#1a2238"> kamuya açık şikayet yanıtı</tspan></text>
+  <rect x="40" y="684" width="180" height="24" rx="4" fill="#0f2855"/>
+  <text x="230" y="702" font-size="16" font-weight="600" fill="#1a2238">1-2 saat</text>
+  <rect x="40" y="714" width="30" height="24" rx="4" fill="#c9a84c"/>
+  <text x="80" y="732" font-size="16" font-weight="600" fill="#1a2238">10-20 dk</text>
+
+  <!-- Axis -->
+  <line x1="40" y1="756" x2="640" y2="756" stroke="#c5cdda" stroke-width="2"/>
+  <line x1="40" y1="150" x2="40" y2="756" stroke="#c5cdda" stroke-width="2"/>
+  <text x="40" y="782" text-anchor="start" font-size="16" font-weight="500" fill="#1a2238">0</text>
+  <text x="160" y="782" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">1 saat</text>
+  <text x="280" y="782" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">2 saat</text>
+  <text x="400" y="782" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">3 saat</text>
+  <text x="520" y="782" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">4 saat</text>
+  <text x="640" y="782" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">5 saat</text>
+
+  <text x="40" y="826" font-size="16" font-weight="600" fill="#0f2855">Zamana gözlemi, tipik aralık; kurumdan kuruma değişir.</text>
+  <text x="40" y="852" font-size="16" font-weight="500" fill="#1a2238">Çubuk boyu aralığın orta noktasıdır, etikette aralığın kendisi yazar.</text>
+</svg>

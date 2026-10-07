@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" width="800" height="720" role="img" aria-labelledby="title desc" font-family="'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="title">Aynı istek, önce ve sonra: zayıf prompt ile beş bileşenli prompt</title>
+  <desc id="desc">Solda zayıf prompt: Bana bir satış takip e-postası yaz. Claude beş şeyi tahmin etmek zorunda kalır: kim olarak yazacağını, kime ve hangi durumda, tam olarak ne istendiğini, ne uzunlukta ve nasıl yazacağını, nelerden kaçınacağını. Sağda her soruyu bir bileşen yanıtlar. Rol: B2B satışta 10 yıllık yöneticisin. Bağlam: XYZ Gıda, Konya, dünkü ilk toplantı. Görev: takip e-postası yaz, randevu öner. Format: 3 kısa paragraf, en çok 180 kelime. Kısıtlar: fiyattan söz etme, rakam uydurma. Altta çıktılar: zayıf prompt birkaç tur ister ve genel kalır; beş bileşenli prompt yaklaşık iterasyonsuz ve hedefe yönelik çalışır.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="720" rx="16" fill="#ffffff"/>
+
+  <text x="40" y="56" font-size="26" font-weight="700" fill="#0f2855">Aynı istek, önce ve sonra</text>
+  <text x="40" y="88" font-size="16" font-weight="500" fill="#1a2238">Zayıf promptta Claude tahmin eder, beş bileşen her soruyu yanıtlar</text>
+
+  <!-- Column headers -->
+  <text x="40" y="136" font-size="20" font-weight="700" fill="#0f2855">Önce: zayıf prompt</text>
+  <text x="330" y="136" font-size="20" font-weight="700" fill="#0f2855">Sonra: beş bileşenli prompt</text>
+
+  <!-- Left: weak prompt -->
+  <rect x="40" y="154" width="260" height="84" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="170" y="190" text-anchor="middle" font-size="18" font-weight="700" fill="#0f2855">"Bana bir satış takip</text>
+  <text x="170" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#0f2855">e-postası yaz."</text>
+
+  <!-- Right: intro -->
+  <rect x="330" y="154" width="430" height="84" rx="10" fill="#e8edf6" stroke="#c5cdda" stroke-width="2"/>
+  <text x="545" y="190" text-anchor="middle" font-size="18" font-weight="700" fill="#0f2855">Aynı e-posta isteği,</text>
+  <text x="545" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#0f2855">eksikleri tek tek doldurulmuş</text>
+
+  <text x="40" y="272" font-size="16" font-weight="600" fill="#1a2238">Claude tahmin etmek zorunda:</text>
+  <text x="330" y="272" font-size="16" font-weight="600" fill="#1a2238">Her soruyu bir satır yanıtlar:</text>
+
+  <!-- Arrows between rows -->
+  <g stroke="#c9a84c" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="302" y1="310" x2="328" y2="310"/>
+    <line x1="302" y1="368" x2="328" y2="368"/>
+    <line x1="302" y1="426" x2="328" y2="426"/>
+    <line x1="302" y1="484" x2="328" y2="484"/>
+    <line x1="302" y1="542" x2="328" y2="542"/>
+  </g>
+
+  <!-- Left questions -->
+  <g fill="#ffffff" stroke="#c5cdda" stroke-width="2" stroke-dasharray="6 5">
+    <rect x="40" y="288" width="260" height="44" rx="10"/>
+    <rect x="40" y="346" width="260" height="44" rx="10"/>
+    <rect x="40" y="404" width="260" height="44" rx="10"/>
+    <rect x="40" y="462" width="260" height="44" rx="10"/>
+    <rect x="40" y="520" width="260" height="44" rx="10"/>
+  </g>
+  <g font-size="16" font-weight="500" fill="#1a2238">
+    <text x="56" y="316">Kim olarak yazsın?</text>
+    <text x="56" y="374">Kime, hangi durumda?</text>
+    <text x="56" y="432">Tam olarak ne isteniyor?</text>
+    <text x="56" y="490">Ne uzunlukta, nasıl?</text>
+    <text x="56" y="548">Nelerden kaçınsın?</text>
+  </g>
+
+  <!-- Right components -->
+  <g fill="#f7f0dc" stroke="#c9a84c" stroke-width="2">
+    <rect x="330" y="288" width="430" height="44" rx="10"/>
+    <rect x="330" y="346" width="430" height="44" rx="10"/>
+    <rect x="330" y="404" width="430" height="44" rx="10"/>
+    <rect x="330" y="462" width="430" height="44" rx="10"/>
+    <rect x="330" y="520" width="430" height="44" rx="10"/>
+  </g>
+  <g fill="#0f2855">
+    <rect x="338" y="294" width="92" height="32" rx="8"/>
+    <rect x="338" y="352" width="92" height="32" rx="8"/>
+    <rect x="338" y="410" width="92" height="32" rx="8"/>
+    <rect x="338" y="468" width="92" height="32" rx="8"/>
+    <rect x="338" y="526" width="92" height="32" rx="8"/>
+  </g>
+  <g font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <text x="384" y="316">Rol</text>
+    <text x="384" y="374">Bağlam</text>
+    <text x="384" y="432">Görev</text>
+    <text x="384" y="490">Format</text>
+    <text x="384" y="548">Kısıtlar</text>
+  </g>
+  <g font-size="16" font-weight="500" fill="#1a2238">
+    <text x="444" y="316">B2B satışta 10 yıllık yöneticisin</text>
+    <text x="444" y="374">XYZ Gıda, Konya, dünkü ilk toplantı</text>
+    <text x="444" y="432">Takip e-postası yaz, randevu öner</text>
+    <text x="444" y="490">3 kısa paragraf, en çok 180 kelime</text>
+    <text x="444" y="548">Fiyattan söz etme, rakam uydurma</text>
+  </g>
+
+  <!-- Outputs -->
+  <g stroke="#c9a84c" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="170" y1="568" x2="170" y2="600"/>
+    <line x1="545" y1="568" x2="545" y2="600"/>
+  </g>
+  <rect x="40" y="604" width="260" height="76" rx="10" fill="#ffffff" stroke="#c5cdda" stroke-width="2"/>
+  <text x="170" y="634" text-anchor="middle" font-size="18" font-weight="700" fill="#0f2855">Çıktı</text>
+  <text x="170" y="662" text-anchor="middle" font-size="16" font-weight="500" fill="#1a2238">Birkaç tur ister, genel kalır</text>
+
+  <rect x="330" y="604" width="430" height="76" rx="10" fill="#0f2855"/>
+  <text x="545" y="634" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Çıktı</text>
+  <text x="545" y="662" text-anchor="middle" font-size="16" font-weight="500" fill="#f7f0dc">Yaklaşık iterasyonsuz, hedefe yönelik</text>
+</svg>
