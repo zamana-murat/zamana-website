@@ -9,17 +9,17 @@ tags:
   - sonnet
   - opus
   - haiku
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
-**Kısa cevap, Opus mu Sonnet mi:** Günlük iş için **Sonnet 5.5**. Sonnet'in yetmediği uzun, zor ve çok adımlı işler için **Opus 5.5**. Fable 5.1 yalnız ikisiyle de olmayan çok zor işlerde, Haiku 4.5 hızlı ve hafif işlerde.
+**Kısa cevap, Opus mu Sonnet mi:** Günlük iş için **Sonnet 5.5**. Sonnet'in yetmediği uzun, zor ve çok adımlı işler için **Opus 5.5**. Fable 5.1 yalnız ikisiyle de olmayan çok zor işlerde, Haiku 5.5 hızlı ve hafif işlerde.
 
 | İş | Model |
 |---|---|
 | E-posta, rapor özeti, sözleşme taslağı, sunum metni | **Sonnet 5.5** |
 | Büyük belge seti, uzun otonom görev, kritik metin | **Opus 5.5** |
 | Sonnet ve Opus'un yetmediği, çok uzun ufuklu iş | **Fable 5.1** |
-| Sınıflandırma, kısa çeviri, yüksek hacimli basit iş | **Haiku 4.5** |
+| Sınıflandırma, kısa çeviri, yüksek hacimli basit iş | **Haiku 5.5** |
 
 > **Bu sayfa ile Claude bölümündeki sayfanın farkı:** Burada iş kullanıcısı için seçim kuralı, plan erişimi, bağlam penceresi ve effort ayrıntısı var. Modelleri ürün olarak tanıtan kısa özet için [Claude bölümündeki Modeller sayfasına](/claude/modeller/) bakın.
 
@@ -44,15 +44,15 @@ Bu sayfa **5 Ekim 2026** itibarıyla doğrulanmış bilgiyle yazıldı. Claude.a
 | **Claude Fable 5.1** | En güçlü genel model. Uzun süren, çok adımlı ajan işleri | 1M token | 128K | $10 / $50 |
 | **Claude Opus 5.5** | Ağır ve zor işler. Fable 5.1 düzeyinde performans, Opus 5'ten yaklaşık %40 ucuz | 1M token | 128K | $4 / $20 |
 | **Claude Sonnet 5.5** ⭐ | Günlük iş için hız ve zekâ dengesi. Sonnet 5'ten yaklaşık %30 hızlı | 1M token | 128K | $2 / $10 |
-| **Claude Haiku 4.5** | En hızlı, hafif ve yüksek hacimli işler | 200K token | 64K | $1 / $5 |
+| **Claude Haiku 5.5** | En hızlı, hafif ve yüksek hacimli işler | 1M token | 128K | $0,10 / $0,50'den (100K token'a kadar istem) |
 
-![Claude model ailesinin göreli konumu: Haiku 4.5 en hızlı ve en ucuz, Sonnet 5.5 günlük iş, Opus 5.5 ağır işler, Fable 5.1 en güçlü ve en pahalı; yetenek arttıkça hız düşer](/images/wiki/temeller-modeller.svg)
+![Claude model ailesinin göreli konumu: Haiku 5.5 en hızlı ve en ucuz, Sonnet 5.5 günlük iş, Opus 5.5 ağır işler, Fable 5.1 en güçlü ve en pahalı; yetenek arttıkça hız düşer](/images/wiki/temeller-modeller.svg)
 
 API fiyatları abonelik kullanıcısını doğrudan ilgilendirmez; plan içinde kaldığınız sürece ek ödeme yoktur. Yine de modeller arasındaki maliyet oranını gösterdikleri için tabloda yer alır: Fable, Sonnet'in yaklaşık beş katı pahalıdır.
 
-Çıkış tarihleri: Fable 5.1 (1 Eylül 2026), Opus 5.5 (22 Eylül 2026, [haber](/haberler/2026-09-24-claude-opus-5-5/)), Sonnet 5.5 (28 Eylül 2026), Haiku 4.5 (Ekim 2025).
+Çıkış tarihleri: Fable 5.1 (1 Eylül 2026), Opus 5.5 (22 Eylül 2026, [haber](/haberler/2026-09-24-claude-opus-5-5/)), Sonnet 5.5 (28 Eylül 2026), Haiku 5.5 (Ekim 2026; kesin tarih doğrulanmadı). Eski Haiku 4.5 (Ekim 2025) artık legacy sayılır.
 
-**Bilgi kesimi:** Fable 5.1, Opus 5.5 ve Sonnet 5.5'in güvenilir bilgi kesimi **Haziran 2026**'dır. Haiku 4.5'te güvenilir bilgi kesimi Şubat 2025'tir (eğitim verisi kesimi Temmuz 2025). Bu tarihten sonraki gelişmeleri Claude kendiliğinden bilmez; güncel bilgi için web aramasını açın veya belgeyi kendiniz verin.
+**Bilgi kesimi:** Fable 5.1, Opus 5.5 ve Sonnet 5.5'in güvenilir bilgi kesimi **Haziran 2026**'dır. Haiku 5.5'in de Haziran 2026'dır. Legacy Haiku 4.5'te güvenilir bilgi kesimi Şubat 2025'tir (eğitim verisi kesimi Temmuz 2025). Bu tarihten sonraki gelişmeleri Claude kendiliğinden bilmez; güncel bilgi için web aramasını açın veya belgeyi kendiniz verin.
 
 **Mythos 5.1:** Fable 5.1 ile aynı yetenekte bir modeldir, ancak yalnızca Project Glasswing katılımcılarına davetle açıktır. Genel kullanıma açık değildir; bu sayfadaki hiçbir plan veya seçici onu içermez.
 
@@ -68,7 +68,7 @@ Gerekçe pratiktir. Sonnet 5.5 bir iş profesyonelinin haftalık işinin neredey
 
 ## Her Model Ne Zaman?
 
-### Claude Haiku 4.5: En Hızlı
+### Claude Haiku 5.5: En Hızlı
 
 Haiku, ailenin en küçüğü ve en hızlısıdır. Basit ama sık tekrar eden görevlerde parlar:
 
@@ -78,9 +78,9 @@ Haiku, ailenin en küçüğü ve en hızlısıdır. Basit ama sık tekrar eden g
 - Yüksek hacimli veri temizliği
 - Otomasyon zincirlerinde aracı adımlar
 
-**Sınırı:** Karmaşık yazım, uzun belge analizi ve stratejik akıl yürütme için seçilmez. Bağlam penceresi de diğerlerinin beşte biridir (200K). Çalışanın günlük işinde doğrudan Haiku seçmesi nadiren doğru karardır; Haiku genellikle skill ve plugin içinde alt görevlerde çalışır.
+**Sınırı:** Karmaşık yazım, uzun belge analizi ve stratejik akıl yürütme için seçilmez. Haiku 5.5'in bağlam penceresi 1M token'dır; eski Haiku 4.5'te 200K idi. Çalışanın günlük işinde doğrudan Haiku seçmesi nadiren doğru karardır; Haiku genellikle skill ve plugin içinde alt görevlerde çalışır.
 
-**Model kimliği:** `claude-haiku-4-5-20251001`. Not: API'de en erken 15 Ekim 2026'da emekliye ayrılabilir. Henüz resmi bir emeklilik duyurusu yoktur; API üzerinden kullanıyorsanız duyuruyu izleyin.
+**Legacy Haiku 4.5 model kimliği:** `claude-haiku-4-5-20251001`. Not: API'de en erken 15 Ekim 2026'da emekliye ayrılabilir. Henüz resmi bir emeklilik duyurusu yoktur; API üzerinden kullanıyorsanız duyuruyu izleyin.
 
 ### Claude Sonnet 5.5: Günlük İş Modeli ⭐
 
@@ -125,14 +125,14 @@ Fable'ın plana göre durumu ayrıca önemlidir:
 |---|---|
 | Free | Yok |
 | Pro | Plana dahil değil. Yalnızca **kullanım kredisi** (usage credits) ile ($10 / $50 API fiyatından) |
-| Max 5x / Max 20x | Plana dahil. Haftalık limitin **en fazla %50'sine** kadar Fable kullanılabilir |
+| Max / Ultra | Plana dahil. Haftalık limitin **en fazla %50'sine** kadar Fable kullanılabilir |
 | Team Standard koltuk | Plana dahil değil. Yalnızca kullanım kredisi ile |
 | Team Premium koltuk | Plana dahil. Haftalık limitin en fazla %50'sine kadar |
 | Enterprise (kullanım bazlı) | Standart API fiyatıyla faturalanır |
 
 Eski koltuk bazlı Enterprise sözleşmelerinde standart koltuk Pro gibi (yalnızca kullanım kredisi), premium koltuk Max gibi (plana dahil, %50 sınırıyla) davranır.
 
-> **Zamana notu:** Yeni başlayanlara ilk ay Max 5x öneriyoruz (zorunlu değil, Pro ile başlayıp yükseltmek de olur). Fable'ın Max'te plana dahil, Pro'da ise yalnızca kullanım kredisiyle gelmesi, ilk ayda üst modelleri de denemek isteyenler için ayrıca bir artıdır.
+> **Zamana notu:** Yeni başlayanlara ilk ay Max (eski adı Max 5x) öneriyoruz (zorunlu değil, Pro ile başlayıp yükseltmek de olur). Fable'ın Max'te plana dahil, Pro'da ise yalnızca kullanım kredisiyle gelmesi, ilk ayda üst modelleri de denemek isteyenler için ayrıca bir artıdır.
 
 **Varsayılan model:** Hangi planda hangi modelin varsayılan geldiği resmi kaynaklarda net yazmaz ve arayüz değişebilir. Model seçicide neyin seçili olduğuna bakın, değiştirmek isterseniz oradan seçin.
 
@@ -140,13 +140,13 @@ Plan fiyatları ve kota ayrıntıları için [Claude Planları](/wiki/temeller/p
 
 ## Bağlam Penceresi
 
-Yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) sohbet bağlam penceresi **1 milyon token**'dır. Bağlam penceresi **plana değil modele bağlıdır**: aynı model ücretli planlarda aynı pencereyi kullanır (Free için resmi bir değer yayımlanmıyor). Bir önceki kuşakta (Fable 5, Opus 5, Sonnet 5) 500K, daha eski modellerde 200K idi. Haiku 4.5 hâlâ 200K'dır.
+Yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) sohbet bağlam penceresi **1 milyon token**'dır. Bağlam penceresi **plana değil modele bağlıdır**: aynı model ücretli planlarda aynı pencereyi kullanır (Free için resmi bir değer yayımlanmıyor). Bir önceki kuşakta (Fable 5, Opus 5, Sonnet 5) 500K, daha eski modellerde 200K idi. Haiku 5.5 de 1M'dir; yalnız legacy Haiku 4.5 hâlâ 200K'dır.
 
 Pratik anlamı: yüzlerce sayfalık bir belge setini tek oturumda yükleyip tartışabilirsiniz. Çok uzun oturumlarda yine de bağlam dolar; bunu yönetmek için [Context Compaction](/wiki/yetenekler/context-compaction/) sayfasına bakın.
 
 ## Eski (Legacy) Modeller
 
-Önceki kuşaklar hâlâ kullanılabilir durumdadır ama artık **legacy** sayılır: Fable 5, Opus 5, Opus 4.8, 4.7, 4.6, 4.5, Sonnet 5 ve Sonnet 4.6. Sohbette özel bir nedeniniz yoksa güncel dört modeli kullanın.
+Önceki kuşaklar hâlâ kullanılabilir durumdadır ama artık **legacy** sayılır: Fable 5, Opus 5, Opus 4.8, 4.7, 4.6, 4.5, Sonnet 5, Sonnet 4.6 ve Haiku 4.5. Sohbette özel bir nedeniniz yoksa güncel dört modeli kullanın.
 
 Sonnet 4.5 API'de **deprecated** durumdadır ve **30 Kasım 2026**'da emekliye ayrılacaktır. Bu modele bağlı bir otomasyonunuz varsa güncel bir modele geçirin.
 
@@ -177,7 +177,7 @@ Ekip düzeyinde asıl risk, herkesin kendi kafasına göre model seçmesi ve ger
 
 Çoğu iş profesyoneli için kural basit: **varsayılanı bırakın**. Yalnız basit ve çok sayıda işte hız için düşürün, kritik bir çıktıda ve süre önemli değilse yükseltin. Görev başına nasıl ayarlanacağı, ne zaman yüksek ne zaman düşük kullanılacağı: [Effort Control](/wiki/yetenekler/effort-control/).
 
-Varsayılan modele ve yüzeye göre değişir: API'de Fable 5.1 ve Sonnet 5.5 `high`, Opus 5.5 `medium`; Claude Code'da Fable 5.1 `high`, Opus 5.5 ve Sonnet 5.5 `medium`. Haiku 4.5 effort ayarını desteklemez.
+Varsayılan modele ve yüzeye göre değişir: API'de Fable 5.1 ve Sonnet 5.5 `high`, Opus 5.5 `medium`; Claude Code'da Fable 5.1 `high`, Opus 5.5 ve Sonnet 5.5 `medium`. Legacy Haiku 4.5 effort ayarını desteklemez; Haiku 5.5'in effort desteği doğrulanmadı.
 
 ## Yeni Model Çıkınca
 
@@ -188,7 +188,7 @@ Yeni bir Claude sürümü eski sürümün "yaması" değildir. Davranış incede
 1. **Günlük iş için Sonnet 5.5.** Varsayılan budur.
 2. **Ağır işler için Opus 5.5.** Sonnet yetmediğinde.
 3. **Fable 5.1** yalnızca gerçekten zor, uzun ufuklu işler için; Pro'da kullanım kredisi gerektirir.
-4. **Haiku 4.5** hızlı ve hafif işler için, çoğunlukla arka planda.
+4. **Haiku 5.5** hızlı ve hafif işler için, çoğunlukla arka planda.
 5. Mythos 5.1 yalnızca davetle; genel kullanıcı için pratik karşılığı yok.
 6. Modelden çok **prompt yazımına** yatırım yapın. Asıl fark oradadır.
 

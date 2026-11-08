@@ -8,7 +8,7 @@ tags:
   - tasarim
   - sunum
   - gorsel
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude Design, Claude ile birlikte görsel iş ürettiğiniz bir Anthropic Labs ürünüdür.** 17 Nisan 2026'da tanıtıldı. Metin yerine **tasarım, prototip, sunum ve one-pager** gibi görsel çıktıları konuşarak, adım adım birlikte oluşturmanızı sağlar.
@@ -85,7 +85,7 @@ Bunların hepsi sonra bir tasarımcıyla rafine edilebilir; Claude Design **ilk 
 
 ## Erişim
 
-Design, Slides ve Docs **ücretli planlarda beta** olarak sunulur. [Pro, Max ve Team](/wiki/temeller/planlar/) planlarında varsayılan olarak açıktır (Ayarlar'daki Capabilities bölümünden kapatılabilir). **Enterprise'ta** yönetici açana kadar kapalı gelir. Ayrı bir ücret gerektirmez, ücretli planınızla gelir.
+Design, Slides ve Docs **ücretli planlarda beta** olarak sunulur. [Pro, Max, Ultra ve Team](/wiki/temeller/planlar/) planlarında varsayılan olarak açıktır (Ayarlar'daki Capabilities bölümünden kapatılabilir). **Enterprise'ta** yönetici açana kadar kapalı gelir. Ayrı bir ücret gerektirmez, ücretli planınızla gelir.
 
 **Free planda bu üç ürün yoktur.** Free hesapta sohbette dosya oluşturabilir ve genel artifacts özelliğini kullanabilirsiniz, ama bu üç ürünün etkileşimli düzenleme arayüzü açılmaz. Kademeli yayılım nedeniyle ücretli hesapta bile görünürlük kısa süre gecikebilir.
 

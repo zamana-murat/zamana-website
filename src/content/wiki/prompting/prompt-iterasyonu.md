@@ -7,7 +7,7 @@ tags:
   - iterasyon
   - test
   - geliştirme
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Bir promptu ilk seferinde mükemmel yazmak nadirdir.** İyi prompt **iterasyonla** olur: yazarsınız, test edersiniz, sorunu görürsünüz, düzeltirsiniz, tekrar test edersiniz. Bu sayfa o döngünün sistematik metodolojisini anlatır.
@@ -153,7 +153,7 @@ Hazır prompta artık **kalıcı bir yer** verin:
 
 ### Seçenek A: Claude Projesi (sohbet ve Cowork kullanıcıları için)
 
-Hazır promptu bir [Claude Projesi](/wiki/araclar/projects/)ne koyun: şablon dosyalarını projeye yükleyin, proje talimatına "bu projedeki şablonlardan birini kullan, eksik bilgiyi bana sor" yazın. Proje her sohbette sabit arka plan bilgisidir. Cowork'te de aynı proje çalışır. Yalnızca bilgisayardaki bir klasöre güvenmeyin: Pro ve Max'te yeni Cowork görevleri 6 Ekim 2026'dan beri bulutta çalışır ve bulut görevleri yerel klasöre doğrudan erişemez.
+Hazır promptu bir [Claude Projesi](/wiki/araclar/projects/)ne koyun: şablon dosyalarını projeye yükleyin, proje talimatına "bu projedeki şablonlardan birini kullan, eksik bilgiyi bana sor" yazın. Proje her sohbette sabit arka plan bilgisidir. Cowork'te de aynı proje çalışır. Yalnızca bilgisayardaki bir klasöre güvenmeyin: Pro, Max ve Ultra'da yeni Cowork görevleri 6 Ekim 2026'dan beri bulutta çalışır ve bulut görevleri yerel klasöre doğrudan erişemez.
 
 Çok sık kullandığınız ve artık değişmeyen bir prompt için bir sonraki adım [Skill](/wiki/yetenekler/skills/)'e çevirmektir; Claude ilgili gördüğünde onu kendisi yükler.
 

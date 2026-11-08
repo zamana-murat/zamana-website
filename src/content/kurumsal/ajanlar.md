@@ -18,7 +18,7 @@ related:
   - { label: "Kodlama", href: "/kurumsal/kodlama/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 30
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -73,7 +73,7 @@ Ortak çizgi: ajan veri toplar, karşılaştırır, taslak hazırlar; geri alın
 
 ## Hangi planda, nasıl başlanır?
 
-- **Plan:** Cowork ve Claude Code Pro, Max, Team ve Enterprise'ta; Claude Tag yalnız Team ve Enterprise'ta. Kurum içinde yönetim, SSO ve denetim kaydı gerekiyorsa Team veya Enterprise.
+- **Plan:** Cowork ve Claude Code Pro, Max, Ultra, Team ve Enterprise'ta; Claude Tag yalnız Team ve Enterprise'ta. Kurum içinde yönetim, SSO ve denetim kaydı gerekiyorsa Team veya Enterprise.
 - **Fiyat:** Enterprise kullanım bazlıdır: koltuk başına aylık 20 dolar, yıllık faturalı; sohbet, Cowork ve Claude Code kullanımı ayrıca API fiyatıyla faturalanır. Kendi ajanınızı API ile kurarsanız yalnız token kullanımı ödenir. Ajanlar uzun işlerde çok token harcar; pilotta maliyeti ölçün.
 - **Satın alma:** Doğrudan Anthropic'ten, dolar ile. Anthropic'in Türkiye'de ofisi veya resmi temsilcisi yok. Kurumsal teklif için Anthropic satış ekibiyle görüşülür.
 - **Başlangıç:** Tekrar eden, kuralları belli, yanlışı kolay fark edilen tek bir işle başlayın (ör. aylık mutabakat ön kontrolü). Ajanın çıktısını birkaç hafta insan çıktısıyla yan yana karşılaştırın, sonra kapsamı genişletin.

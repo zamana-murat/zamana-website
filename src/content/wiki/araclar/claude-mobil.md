@@ -8,7 +8,7 @@ tags:
   - ios
   - android
   - dispatch
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude'un mobil uygulamaları, masaüstü Claude'un cebinizdeki uzantısıdır.** App Store ve Google Play'den ücretsiz indirilir. Hesabınızla giriş yaptığınız anda sohbet geçmişiniz, [Projects](/wiki/araclar/projects/)'iniz ve aboneliğiniz aynen orada olur.
@@ -36,7 +36,7 @@ Mobil uygulamaların eksikleri masaüstüne göre belirgin. Karar verirken bilin
 | [Projects](/wiki/araclar/projects/) erişimi | ✅ | ✅ |
 | Sesli giriş ([Voice Mode](/wiki/araclar/voice-mode/), beta, Türkçe yok) | ✅ | ✅ |
 | Kamera ile görsel | ✅ | Yok |
-| [Cowork](/wiki/araclar/cowork-modu/) | ✅ Beta (Pro, Max, Team; Enterprise'da yönetici açtıysa; 7 Tem 2026'dan beri) | ✅ (tam sürüm masaüstünde) |
+| [Cowork](/wiki/araclar/cowork-modu/) | ✅ Beta (Pro, Max, Ultra, Team; Enterprise'da yönetici açtıysa; 7 Tem 2026'dan beri) | ✅ (tam sürüm masaüstünde) |
 | [Skills](/wiki/yetenekler/skills/) (.docx, .xlsx, .pptx üretme) | ✅ Mobil Cowork betasında var | ✅ |
 | Yerel dosya sistemi erişimi | ⚠️ Kısmi (masaüstü uygulaması açık olmalı) | ✅ (Desktop) |
 | [Connector'lar](/wiki/araclar/connectors/) | ✅ Mobil Cowork betasında var | ✅ |
@@ -75,9 +75,9 @@ Kamera kullanımının teknik tarafı için [Görsel ve Görüntü](/wiki/yetene
 
 Telefondan iş vermenin iki yolu var ve ikisi farklı durumda.
 
-**Mobil Cowork (beta, 7 Temmuz 2026'dan beri).** Pro, Max ve Team planlarında; Enterprise'da yönetici açtıysa. Yeni kullanıcı için telefondan görev atmanın yolu budur. Connector'lar, skill'ler ve zamanlanmış görevler mobilde çalışır; yerel dosya ve tarayıcı erişimi kısmidir, masaüstü uygulamasının açık olmasına bağlıdır. 6 Ekim 2026'dan itibaren Pro ve Max'te yeni Cowork görevleri bulutta çalışıyor, yani bu görevler için bilgisayarın açık kalması gerekmiyor. Mobilde [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) hem izlenir hem kurulur: pazartesi sabah 09:00'da hazırlanan haftalık raporun bittiğini telefonunuzdan görürsünüz.
+**Mobil Cowork (beta, 7 Temmuz 2026'dan beri).** Pro, Max, Ultra ve Team planlarında; Enterprise'da yönetici açtıysa. Yeni kullanıcı için telefondan görev atmanın yolu budur. Connector'lar, skill'ler ve zamanlanmış görevler mobilde çalışır; yerel dosya ve tarayıcı erişimi kısmidir, masaüstü uygulamasının açık olmasına bağlıdır. 6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor, yani bu görevler için bilgisayarın açık kalması gerekmiyor. Mobilde [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) hem izlenir hem kurulur: pazartesi sabah 09:00'da hazırlanan haftalık raporun bittiğini telefonunuzdan görürsünüz.
 
-**Dispatch (sınırlı beta, yeni kullanıcılara kapalı).** Dispatch, telefonunuzla masaüstü bilgisayarınız arasında kalıcı bir konuşma hattı kurar: görevi telefondan yazarsınız, işi masaüstündeki Claude kendi dosya ve araçlarınızla yapar, sonucu telefona mesaj olarak alırsınız. Pro ve Max'te Cowork için sınırlı beta olarak duruyor ve Anthropic'in yardım sayfasına göre yeni kullanıcılara açık değil; zaten kullanan hesaplar devam edebiliyor. Bu yüzden yeni bir hesap açıp Dispatch'e güvenerek iş akışı kurmayın, eğitimde ya da ekip düzeninde "herkes kullanabilir" varsayımıyla ona bağımlı olmayın. Pro ve Max'te yeni Cowork görevlerinin bulutta çalışmasının Dispatch'i nasıl etkilediği henüz duyurulmadı; yardım merkezinden kontrol edin.
+**Dispatch (sınırlı beta, yeni kullanıcılara kapalı).** Dispatch, telefonunuzla masaüstü bilgisayarınız arasında kalıcı bir konuşma hattı kurar: görevi telefondan yazarsınız, işi masaüstündeki Claude kendi dosya ve araçlarınızla yapar, sonucu telefona mesaj olarak alırsınız. Pro, Max ve Ultra'da Cowork için sınırlı beta olarak duruyor ve Anthropic'in yardım sayfasına göre yeni kullanıcılara açık değil; zaten kullanan hesaplar devam edebiliyor. Bu yüzden yeni bir hesap açıp Dispatch'e güvenerek iş akışı kurmayın, eğitimde ya da ekip düzeninde "herkes kullanabilir" varsayımıyla ona bağımlı olmayın. Pro, Max ve Ultra'da yeni Cowork görevlerinin bulutta çalışmasının Dispatch'i nasıl etkilediği henüz duyurulmadı; yardım merkezinden kontrol edin.
 
 Dispatch'in farkı, işi **kendi masaüstünüzdeki** klasör, plugin ve connector'larla yaptırmasıdır: bilgisayar ağır işi yapar, telefon uzaktan kumanda olur. Konuşma bağlamı görevler arasında korunur, Claude önceki görevlerinizi ve tercihlerinizi hatırlar.
 
@@ -95,7 +95,7 @@ Telefondan konuşarak iş vermek istiyorsanız Türkçe için klavye diktesini k
 
 ### Dispatch gereksinimleri ve sınırlar
 
-- Pro veya Max aboneliği ve halihazırda Dispatch erişimi olan bir hesap
+- Pro, Max veya Ultra aboneliği ve halihazırda Dispatch erişimi olan bir hesap
 - Güncel Claude Desktop (macOS ve Windows; yardım sayfası Linux'u da listeliyor) ve güncel mobil uygulama
 - **Masaüstü bilgisayar açık ve uyanık, Claude Desktop çalışır durumda olmalı.** Bilgisayar uyursa veya uygulama kapanırsa Dispatch'e gönderilen görevler çalışmaz
 - Dakikadan birkaç saate kadar süren görevler için uygundur, gerçek zamanlı izleme gereken işler için değil
@@ -115,9 +115,9 @@ Mobil cihazda Claude'a yüklediğiniz fotoğraf, ses kaydı ve dosya, web/masaü
 
 ## Plan ve Abonelik
 
-Mobil uygulamada hangi planı kullandığınızdan bağımsız oturum açarsınız. Free, Pro, Max, Team veya Enterprise, hangisi varsa o planın limitiyle çalışır. Plan farkları için [Planlar](/wiki/temeller/planlar/).
+Mobil uygulamada hangi planı kullandığınızdan bağımsız oturum açarsınız. Free, Pro, Max, Ultra, Team veya Enterprise, hangisi varsa o planın limitiyle çalışır. Plan farkları için [Planlar](/wiki/temeller/planlar/).
 
-**Pratik öneri:** Yeni başlayan kullanıcılara ilk ay **Max 5x ($100/ay)** önerilir; öneridir, zorunlu değildir. Pro planla başlayıp gerektiğinde yükseltmek de olur. Detay [Planlar](/wiki/temeller/planlar/) sayfasında.
+**Pratik öneri:** Yeni başlayan kullanıcılara ilk ay **Max, eski adıyla Max 5x ($100/ay)** önerilir; öneridir, zorunlu değildir. Pro planla başlayıp gerektiğinde yükseltmek de olur. Detay [Planlar](/wiki/temeller/planlar/) sayfasında.
 
 ## Pratik Tavsiyeler
 

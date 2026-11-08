@@ -8,7 +8,7 @@ tags:
   - yaygınlaştırma
   - kurumsal
   - yonetici
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude'u bir anda şirketin tamamına açmak da, kimseye açmamak da yanlış.** Doğru yol küçük bir grupla, sınırlı bir sürede, ölçerek başlamak; sonra rakama bakıp karar vermek. Bu sayfa o yolu anlatır: pilot kimlerle yapılır, kaç hafta sürer, hangi noktada devam ya da dur denir, yaygınlaştırma nasıl yönetilir.
@@ -50,9 +50,9 @@ Hazırlık, pilotun kendisinden kısa ama daha önemlidir.
 5. **Yönetici ayarlarını kontrol edin.** Team ya da Enterprise ise Cowork, bağlayıcılar ve kod çalıştırma gibi özelliklerin admin tarafında açık mı kapalı mı olduğuna bakın. Enterprise'ta bazı özellikler (Cowork, Claude Design ve benzerleri) yönetici açana kadar kapalı olabilir; pilot günü "bende çıkmıyor" sürprizi yaşamayın. Ayrıntı [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında.
 6. **Destek kanalı açın.** Ortak bir mesaj grubu ya da kanal; katılımcılar buraya prompt'larını, sorunlarını ve kazanımlarını yazar.
 
-> **Plan önerisi.** Pilot katılımcıları için ilk ay Max 5x ($100/ay) öneriyoruz, zorunlu değil: Pro'nun limiti yeni kullanıcı için çabuk dolar ve "çalışmıyor" hissine yol açabilir. Kurumsalda **Team zorunlu değildir**; bireysel hesaplarla da pilot yapılabilir. Merkezi kontrol istiyorsanız (tek fatura, admin paneli, kullanıcı ekleme-çıkarma, varsayılan olarak eğitimde kullanılmayan girdi, DPA) Team önerilir; Team en az 2 koltuktan başlar. Enterprise self-serve en az 20 koltuk ister ve kullanım ayrıca faturalanır. Güncel rakamlar [Planlar](/wiki/temeller/planlar/) sayfasında. Zamana bayi değildir; satın alma doğrudan Anthropic'tendir.
+> **Plan önerisi.** Pilot katılımcıları için ilk ay Max (eski adı Max 5x) ($100/ay) öneriyoruz, zorunlu değil: Pro'nun limiti yeni kullanıcı için çabuk dolar ve "çalışmıyor" hissine yol açabilir. Kurumsalda **Team zorunlu değildir**; bireysel hesaplarla da pilot yapılabilir. Merkezi kontrol istiyorsanız (tek fatura, admin paneli, kullanıcı ekleme-çıkarma, varsayılan olarak eğitimde kullanılmayan girdi, DPA) Team önerilir; Team en az 2 koltuktan başlar. Enterprise self-serve en az 20 koltuk ister ve kullanım ayrıca faturalanır. Güncel rakamlar [Planlar](/wiki/temeller/planlar/) sayfasında. Zamana bayi değildir; satın alma doğrudan Anthropic'tendir.
 
-**Veri açısından önemli bir fark:** Free, Pro ve Max hesaplarında girdilerin model eğitiminde kullanılıp kullanılmayacağı kullanıcının kendi ayarıdır ve DPA bu hesapları kapsamaz. Pilotu kişisel hesaplarla yürütüyorsanız **müşteri verisi, personel verisi ve sözleşme metni** girmeyin; gerçek veri gerekiyorsa Team ya da Enterprise ile başlayın. [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası ayrıntıyı verir.
+**Veri açısından önemli bir fark:** Free, Pro, Max ve Ultra hesaplarında girdilerin model eğitiminde kullanılıp kullanılmayacağı kullanıcının kendi ayarıdır ve DPA bu hesapları kapsamaz. Pilotu kişisel hesaplarla yürütüyorsanız **müşteri verisi, personel verisi ve sözleşme metni** girmeyin; gerçek veri gerekiyorsa Team ya da Enterprise ile başlayın. [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası ayrıntıyı verir.
 
 ## Pilot takvimi: 4-8 hafta
 

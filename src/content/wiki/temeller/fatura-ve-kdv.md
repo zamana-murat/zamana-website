@@ -6,7 +6,7 @@ tags:
   - fatura
   - kdv
   - muhasebe
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude aboneliği yurt dışından alınan dijital bir hizmettir.** Türkiye'de muhasebeleştirilmesi, KDV uygulanması ve gider olarak gösterilmesi için net bir prosedür var; bunu doğru bilmek de finans direktörünün ilk sorusudur.
@@ -108,16 +108,16 @@ Bireysel kullanıcıların çoğu Claude aboneliğini kendi adlarına alıyor. S
 | Plan | Aylık (USD) | Yıllık (USD) |
 |---|---|---|
 | Pro × 1 kişi | $20 | $240 |
-| Max 5x × 1 kişi | $100 | $1.200 |
+| Max (eski adı Max 5x) × 1 kişi | $100 | $1.200 |
 | Pro × 6 kişi | $120 | $1.440 |
-| Max 5x × 6 kişi (12 ay boyunca Max 5x'ta kalırsa) | $600 | $7.200 |
-| Karma (1. ay Max 5x, sonra Pro) × 6 kişi | ~$27/kişi/ay ortalama | ~$1.920 |
+| Max × 6 kişi (12 ay boyunca Max'ta kalırsa) | $600 | $7.200 |
+| Karma (1. ay Max, sonra Pro) × 6 kişi | ~$27/kişi/ay ortalama | ~$1.920 |
 | Team Standard × 5 koltuk | $125 (yıllık ödemede $100) | $1.500 (yıllık ödemede $1.200) |
 | Enterprise (koltuk başı $20/ay + kullanım API fiyatıyla) | Sabit değil, kullanıma göre değişir | Sabit değil |
 
-Tablodaki rakamlar vergi hariçtir. İki kalemi bütçede ayrıca düşünün: Pro, Max ve Team'de kota bitince açabileceğiniz **kullanım kredisi** (kullandıkça öde) ve Enterprise'ın kullanıma bağlı faturası. İkisi de önceden kesin tahmin edilemeyen değişken kalemdir; Team ve Enterprise'ta yönetici panelinden harcama tavanı koyabilirsiniz. Ayrıntı: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/).
+Tablodaki rakamlar vergi hariçtir. İki kalemi bütçede ayrıca düşünün: Pro, Max, Ultra ve Team'de kota bitince açabileceğiniz **kullanım kredisi** (kullandıkça öde) ve Enterprise'ın kullanıma bağlı faturası. İkisi de önceden kesin tahmin edilemeyen değişken kalemdir; Team ve Enterprise'ta yönetici panelinden harcama tavanı koyabilirsiniz. Ayrıntı: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/).
 
-**Pratik öneri:** Claude'a yeni başlayanlara **ilk ay Max 5x ($100/ay)** öneriyoruz (zorunlu değil, Pro ile başlamak da olur). Pro plan ($20/ay) limitine yeni kullanıcı hızlı çarpar ve "çalışmıyor" hissi yaratır. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](/wiki/temeller/planlar/).
+**Pratik öneri:** Claude'a yeni başlayanlara **ilk ay Max ($100/ay)** öneriyoruz (zorunlu değil, Pro ile başlamak da olur). Pro plan ($20/ay) limitine yeni kullanıcı hızlı çarpar ve "çalışmıyor" hissi yaratır. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](/wiki/temeller/planlar/).
 
 ## Mali Müşavirinizle Konuşacaklarınız
 
@@ -138,7 +138,7 @@ Claude aboneliği başlattıysanız, ödeme ve muhasebe akışını [Şirket İ�
 - Hangi çalışana hangi plan veriliyor?
 - Faturalar nereden alınır, kime iletilir?
 - Aylık ödeme onayı kimde?
-- Plan değişikliği (Max 5x'tan Pro'ya geçiş gibi) hangi prosedürle yapılır?
+- Plan değişikliği (Max'tan Pro'ya geçiş gibi) hangi prosedürle yapılır?
 
 Bunlar küçük şeyler ama yıl sonunda denetimde sorun çıkartmamak için önemli.
 

@@ -6,7 +6,7 @@ tags:
   - yetenekler
   - arastirma
   - research
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" gibi sorular saatler süren araştırma ister. Claude'un **Research** (derin araştırma) özelliği tam buna hizmet eder.
@@ -77,7 +77,7 @@ Stratejik planlama girdisi.
 
 Sohbet kutusundaki **"+" menüsünden "Research"** seçilir. Altta mavi bir gösterge belirir; tekrar tıklarsanız kapanır.
 
-- **Planlar:** Free'de yok. Pro, Max, Team ve Enterprise'ta web, Claude Desktop ve mobilde çalışır.
+- **Planlar:** Free'de yok. Pro, Max, Ultra, Team ve Enterprise'ta web, Claude Desktop ve mobilde çalışır.
 - **Web arama açık olmalı.** Kapalıysa Research kullanılamaz.
 - Claude birbirini izleyen çok sayıda arama yapar. **Gmail, Google Calendar veya Google Docs bağlıysa** onları da tarayabilir; bağlantıyı açmadan önce hangi hesabın bağlı olduğuna bakın ([Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)).
 - Yanıt genelde dakikalar içinde, kaynak atıflarıyla gelir; atıflar doğrulamayı kolaylaştırır.
@@ -189,12 +189,12 @@ Research çıktısı yine de doğrulama gerektirir:
 
 ## Maliyet Yönü: Kullanım Limiti
 
-Research'ün **ayrı bir kotası yoktur**; standart sohbetle aynı limitten düşer. Ama çok sayıda kaynak getirdiği için limiti normal sohbetten **daha hızlı** tüketir. Limit "günlük" değil, **5 saatlik kayan pencere ve haftalık sınır** üzerinden işler; ayrıntı [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasında.
+Research'ün **ayrı bir kotası yoktur**; standart sohbetle aynı limitten düşer. Ama çok sayıda kaynak getirdiği için limiti normal sohbetten **daha hızlı** tüketir. Limit "günlük" değil, **5 saatlik kayan pencere ve haftalık sınır** üzerinden işler (doğrulanmış Ultra hesabında 5 saatlik pencere yoktur); ayrıntı [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasında.
 
 Plana göre:
 
 - **Pro:** Sık Research kullanırsanız pencereyi ve haftalık sınırı çabuk doldurabilirsiniz. Önce araştırmanın sorusunu daraltın.
-- **Max:** Daha geniş limit verir; Research'ü çok kullanıyorsanız seçenektir ama zorunlu değildir.
+- **Max ve Ultra:** Daha geniş limit verir; Research'ü çok kullanıyorsanız seçenektir ama zorunlu değildir.
 - **Team:** Kullanım koltuk tipine (Standard veya Premium) göre değişir.
 - **Enterprise:** Kullanım bazlı planda koltuk ücreti kullanımı içermez, kullanım standart API fiyatıyla ayrıca faturalanır; eski koltuk bazlı sözleşmelerde (legacy) ise koşullar sözleşmeye bağlıdır. Maliyeti önceden tahmin edin.
 

@@ -7,7 +7,7 @@ tags:
   - kurulum
   - baslangic
   - claude-desktop
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz, bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.
@@ -23,7 +23,7 @@ Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktası
 **Yapacaklarımız:**
 
 1. claude.ai'a üye olmak
-2. [Plan](/wiki/temeller/planlar/) seçip satın almak (yeni başlayanlara ilk ay Max 5x öneriyoruz, Pro ile başlamak da olur)
+2. [Plan](/wiki/temeller/planlar/) seçip satın almak (yeni başlayanlara ilk ay Max (eski adı Max 5x) öneriyoruz, Pro ile başlamak da olur)
 3. [Claude Desktop](/wiki/araclar/claude-desktop/)'ı indirmek ve kurmak
 4. Workspace klasörü oluşturmak
 5. [Cowork](/wiki/araclar/cowork-modu/)'ü aktifleştirmek
@@ -121,7 +121,7 @@ Claude.ai sizi karşılar, ad-soyad ister:
 Plan almadan önce iki ayara bakın. İkisi de **Settings** altındadır ve istediğiniz zaman değiştirebilirsiniz.
 
 - **Claude'u geliştirmeye yardım et** (*Help improve Claude*, **Settings → Privacy**): konuşmalarınızın model eğitiminde kullanılıp kullanılmayacağını siz seçersiniz. İzin verirseniz veri 5 yıl, vermezseniz 30 gün saklanır. Varsayılan konumu hesabınızda kendiniz kontrol edin; iş içeriği yazacaksanız ayarın kapalı olması önerilir. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
-- **Sohbetlerden hafıza oluştur** (*Generate memory from chats*, **Settings → Memory**): Claude önceki sohbetlerinizden tercihlerinizi hatırlar. Free, Pro ve Max'te varsayılan olarak açıktır; Team ve Enterprise'ta varsayılan kapalıdır ve yönetici kontrolündedir. İş ve kişisel konuları aynı hesapta karıştırmak istemiyorsanız kapatın. Ayrıntı: [Hafıza](/wiki/yetenekler/memory/).
+- **Sohbetlerden hafıza oluştur** (*Generate memory from chats*, **Settings → Memory**): Claude önceki sohbetlerinizden tercihlerinizi hatırlar. Free, Pro, Max ve Ultra'da varsayılan olarak açıktır; Team ve Enterprise'ta varsayılan kapalıdır ve yönetici kontrolündedir. İş ve kişisel konuları aynı hesapta karıştırmak istemiyorsanız kapatın. Ayrıntı: [Hafıza](/wiki/yetenekler/memory/).
 
 ### 1.8 Şirketiniz Team veya Enterprise Kullanıyorsa: Davetle Katılım
 
@@ -143,17 +143,17 @@ Sol alt köşede profil ikonunuz var. Tıklayın → açılan menüden **"Upgrad
 
 Alternatif: Sol menüden **"Settings"** → **"Plan"** veya **"Billing"** sekmesi.
 
-Plan listesini görürsünüz: **Free / Pro / Max 5x / Max 20x / Team / Enterprise**.
+Plan listesini görürsünüz: **Free / Pro / Max / Ultra / Team / Enterprise**.
 
 ### 2.2 Hangi Planı?
 
-İki durumdan hangisindeyseniz ona göre seçim. Önerimiz ilk ay Max 5x'tir, ama zorunlu değil: Pro ile başlayıp gerektiğinde yükseltebilirsiniz.
+İki durumdan hangisindeyseniz ona göre seçim. Önerimiz ilk ay Max'tir, ama zorunlu değil: Pro ile başlayıp gerektiğinde yükseltebilirsiniz.
 
-**🚀 İlk ay yoğun keşif yapacaksanız → Max 5x ($100/ay), önerimiz**
+**🚀 İlk ay yoğun keşif yapacaksanız → Max ($100/ay), önerimiz**
 
-Yeni bir kullanıcı ilk ayda ciddi kullanım yapar: [connector](/wiki/mcp/baglanti-listesi/) kurulumu, skill denemeleri, gerçek iş çıktıları, uzun belge testleri. Pro'nun ($20) kullanım limiti bu ritimde **birkaç saatte** dolar; "çalışmıyor" yanlış izlenimi oluşur ve değer kaybolur. Max 5x bu sürtünmeyi ortadan kaldırır.
+Yeni bir kullanıcı ilk ayda ciddi kullanım yapar: [connector](/wiki/mcp/baglanti-listesi/) kurulumu, skill denemeleri, gerçek iş çıktıları, uzun belge testleri. Pro'nun ($20) kullanım limiti bu ritimde **birkaç saatte** dolar; "çalışmıyor" yanlış izlenimi oluşur ve değer kaybolur. Max bu sürtünmeyi ortadan kaldırır.
 
-Plan listesinde **Max 5x'e** tıklayın → "Subscribe to Max" / "Upgrade".
+Plan listesinde **Max'e** tıklayın → "Subscribe to Max" / "Upgrade".
 
 **📖 Yavaş tempoda öğrenmeye başladıysanız → Pro ($20/ay)**
 
@@ -161,9 +161,9 @@ Pro, Cowork dahil tüm temel özelliklere erişim verir. [Sonnet 5.5](/wiki/teme
 
 Plan listesinde **Pro'ya** tıklayın → "Subscribe to Pro" / "Upgrade".
 
-> **Ne zaman Pro'dan Max 5x'e geçmeli?**
+> **Ne zaman Pro'dan Max'e geçmeli?**
 >
-> Pro limitlerini sık sık doldurmaya başlarsanız (Claude size kullanım limitinin dolduğunu söyler), Max 5x'e geçmenin zamanı gelmiştir. Tipik tetikleyiciler:
+> Pro limitlerini sık sık doldurmaya başlarsanız (Claude size kullanım limitinin dolduğunu söyler), Max'e geçmenin zamanı gelmiştir. Tipik tetikleyiciler:
 >
 > - Günde 3+ saat aktif Claude kullanıyorsunuz
 > - Birden fazla connector yoğun çalışıyor
@@ -179,7 +179,7 @@ Yukarıda seçtiğiniz plana göre **"Subscribe to Pro"** veya **"Subscribe to M
 
 - **Kredi kartı** numarası, son kullanma, CVC
 - **Fatura adresi** (kurumsal kullanım için şirket adresi)
-- **Aylık otomatik yenileme**: varsayılan açık. İstediğiniz zaman iptal edebilirsiniz. (Pro'da yıllık ödeme seçeneği de var: $200 peşin, aylık $17 eşdeğeri. Max'te yalnızca aylık.)
+- **Aylık otomatik yenileme**: varsayılan açık. İstediğiniz zaman iptal edebilirsiniz. (Pro'da yıllık ödeme seçeneği de var: $200 peşin, aylık $17 eşdeğeri. Max ve Ultra'da yalnızca aylık.)
 
 > **KDV ve döviz:** Anthropic ABD merkezli, fiyatlar USD ile gösterilir. Türk kartınızda tutar bankanızın kendi kuruyla TL'ye çevrilir. Türkiye faturalama adresiyle ödemede %20 KDV'nin eklendiği bildiriliyor (ikincil kaynaklara göre aylık Pro için karttan yaklaşık $24 çekilir); Anthropic'in Türkiye'ye özel resmi bir KDV sayfasını bulamadık, o yüzden ödeme ekranındaki toplam tutara bakın. Mobil uygulama mağazasından alırsanız TL fiyat web fiyatından farklı çıkar. TL karşılığı hesabı için [Claude Planları](/wiki/temeller/planlar/) sayfasına, kurumsal muhasebe için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına bakın.
 
@@ -332,9 +332,9 @@ Claude Desktop'ın **sol üst köşesinde, 3 küçük ikon** şeklinde sekmeler 
 
 > [Projects](/wiki/araclar/projects/) artık ayrı bir sekme değil, Cowork ve Chats içinde alt seçenek olarak yer alıyor. 17 Eylül 2026'da yeniden tasarlandı (beta): [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
 
-> **Güncel not (6 Ekim 2026):** Pro ve Max'te yeni Cowork görevleri artık bulutta çalışır ve "Only on your computer" seçeneği kalktı; yeni görevler için bilgisayarın açık ve uyanık kalması gerekmez. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler yine masaüstü uygulaması ister, bu yüzden aşağıdaki workspace klasörü adımları geçerlidir. Ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/).
+> **Güncel not (6 Ekim 2026):** Pro, Max ve Ultra'da yeni Cowork görevleri artık bulutta çalışır ve "Only on your computer" seçeneği kalktı; yeni görevler için bilgisayarın açık ve uyanık kalması gerekmez. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler yine masaüstü uygulaması ister, bu yüzden aşağıdaki workspace klasörü adımları geçerlidir. Ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/).
 
-> **Güncel not (16 Eylül 2026):** Cowork ve sohbet tek Claude'da birleşiyor, yayılım kademeli (önce Pro ve Max). Hesabınızda birleşik arayüz açıldıysa ayrı bir Cowork ikonu görmeyebilirsiniz; bu durumda doğrudan yeni bir konuşma açıp workspace klasörünü orada bağlayın. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
+> **Güncel not (16 Eylül 2026):** Cowork ve sohbet tek Claude'da birleşiyor, yayılım kademeli (önce Pro, Max ve Ultra). Hesabınızda birleşik arayüz açıldıysa ayrı bir Cowork ikonu görmeyebilirsiniz; bu durumda doğrudan yeni bir konuşma açıp workspace klasörünü orada bağlayın. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ### 7.2 İlk Açılış: "Get Started"
 

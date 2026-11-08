@@ -7,7 +7,7 @@ lead: "Ne istediğinizi anlatırsınız, Claude marka kurallarınıza uygun bir 
 heroImage: "/images/claude/design/hero.webp"
 heroAnimation: "design"
 heroAlt: "Claude Design'da hazırlanan kurgusal bir kahve markası kampanya görselinin kare ve dikey boyutları, yanında Dışa aktar düğmesi"
-availability: "Ücretli planlarda beta (Pro, Max, Team, Enterprise); Free'de yok. Enterprise'da yönetici açana kadar kapalı."
+availability: "Ücretli planlarda beta (Pro, Max, Ultra, Team, Enterprise); Free'de yok. Enterprise'da yönetici açana kadar kapalı."
 sourceUrl: "https://claude.com/product/design"
 sourceTitle: "Claude Design"
 related:
@@ -16,7 +16,7 @@ related:
   - { label: "Pazarlama departmanı için Claude (wiki)", href: "/wiki/departmanlar/pazarlama/" }
   - { label: "Takım ve Admin (wiki)", href: "/wiki/temeller/takim-ve-admin/" }
 order: 7
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -48,7 +48,7 @@ Claude Design şu hizmetlerle bağlantı kuruyor: Adobe, Canva, Gamma, Lovable, 
 
 ## Hangi planda, nelere dikkat?
 
-**Plan.** Design, Slides ve Docs ücretli planlarda beta durumunda: Pro, Max ve Team'de varsayılan olarak açık, Enterprise'ta yöneticinin Organization settings > Artifacts altından açması gerekiyor. **Free planda bu üç ürünün etkileşimli arayüzü yok.** Güncel kapsam için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
+**Plan.** Design, Slides ve Docs ücretli planlarda beta durumunda: Pro, Max, Ultra ve Team'de varsayılan olarak açık, Enterprise'ta yöneticinin Organization settings > Artifacts altından açması gerekiyor. **Free planda bu üç ürünün etkileşimli arayüzü yok.** Güncel kapsam için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
 
 **Kullanım limiti.** Design ile yapılan işler, planınızın kullanım limitinden düşer. Tam bir sunum ya da tasarım, tek mesajdan belirgin biçimde daha çok limit harcar. Yoğun tasarım işi için üst plan düşünmeniz gerekebilir.
 

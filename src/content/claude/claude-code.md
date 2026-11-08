@@ -4,7 +4,7 @@ seoTitle: "Claude Code Nedir? Yazılım Ekipleri İçin Rehber"
 description: "Claude Code, kod tabanınızı okuyan, dosya düzenleyen, komut çalıştıran ve test koşan kodlama ajanı. Hangi planda, kimler için, nasıl başlanır?"
 eyebrow: "Ürün"
 lead: "Claude Code, Anthropic'in yazılımcılar için geliştirdiği kodlama ajanı. Terminalde, IDE'de, masaüstünde, web'de ve Slack'te çalışır. Zamana programları bu aracı öğretmez, bu sayfa yalnızca tanıtım içindir."
-availability: "Pro, Max, Team ve Enterprise planlarında; Free planda yok. Claude Console hesabıyla API fiyatından da kullanılır"
+availability: "Pro, Max, Ultra, Team ve Enterprise planlarında; Free planda yok. Claude Console hesabıyla API fiyatından da kullanılır"
 sourceUrl: "https://claude.com/product/claude-code"
 sourceTitle: "Claude Code by Anthropic | AI Coding Agent, Terminal, IDE"
 related:
@@ -14,7 +14,7 @@ related:
   - { label: "Planlar ve fiyatlar (wiki)", href: "/wiki/temeller/planlar/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 20
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -47,17 +47,17 @@ Claude Code kod yazmayan bir çalışanın yerine kullanacağı bir araç değil
 
 ## Nasıl başlarsınız?
 
-1. Planınızı belirleyin: Claude Code, Pro, Max, Team ve Enterprise planlarının hepsinde dahildir. Kullanım kotası sohbetle ortaktır. Alternatif olarak Claude Console hesabıyla API fiyatından token harcayarak kullanabilirsiniz.
+1. Planınızı belirleyin: Claude Code, Pro, Max, Ultra, Team ve Enterprise planlarının hepsinde dahildir. Kullanım kotası sohbetle ortaktır. Alternatif olarak Claude Console hesabıyla API fiyatından token harcayarak kullanabilirsiniz.
 2. Claude Code'u indirin ve Claude (ya da Console) hesabınızla giriş yapın. Kurulum komutu kaynak sayfada tek satırdır, ayrıntıyı dokümantasyon verir.
 3. Önce küçük, riskli olmayan bir işle deneyin: depoyu açıklatın, bir test yazdırın.
 4. Projenize bir `CLAUDE.md` dosyası ekleyin; derleme komutlarınızı, kod standartlarınızı ve kurallarınızı Claude her oturumda buradan okur. Ayrıntı için [CLAUDE.md bölümü](/wiki/claude-md/nedir/).
 5. Claude Code değişiklik yapmadan veya komut çalıştırmadan önce izin ister. Bu izinleri gevşetmeden önce ekip içinde kuralları netleştirin.
 
-Kaynak sayfa şu yeni özellikleri duyuruyor: Projeler (masaüstünde birden çok oturumu gruplayıp denetleme), Pro, Max ve Team'de varsayılan "auto mode" (riskli komutları yakalayarak daha uzun süre çalışma), kendi altyapınızda çalışan ortamlar (herkese açık beta) ve oturum bağlamından canlı artifact üretme. Hepsini kullanmadan önce güncel dokümantasyona bakın, bu özellikler hızlı değişiyor.
+Kaynak sayfa şu yeni özellikleri duyuruyor: Projeler (masaüstünde birden çok oturumu gruplayıp denetleme), Pro, Max, Ultra ve Team'de varsayılan "auto mode" (riskli komutları yakalayarak daha uzun süre çalışma), kendi altyapınızda çalışan ortamlar (herkese açık beta) ve oturum bağlamından canlı artifact üretme. Hepsini kullanmadan önce güncel dokümantasyona bakın, bu özellikler hızlı değişiyor.
 
 ## Hangi planda, nelere dikkat?
 
-- **Planlar:** Free'de yok. Pro bireysel kullanım için, Max daha büyük kod tabanları ve yoğun kullanım için. Team ve Enterprise ekip yönetimi sunar. Güncel fiyatlar için [Planlar](/wiki/temeller/planlar/) sayfası. Kota bitince kullandıkça öde krediler veya API anahtarı devreye girer; haftalık limit rakamları yayımlanmıyor.
+- **Planlar:** Free'de yok. Pro bireysel kullanım için, Max ve Ultra daha büyük kod tabanları ve yoğun kullanım için. Team ve Enterprise ekip yönetimi sunar. Güncel fiyatlar için [Planlar](/wiki/temeller/planlar/) sayfası. Kota bitince kullandıkça öde krediler veya API anahtarı devreye girer; haftalık limit rakamları yayımlanmıyor.
 - **Uzun görevler kotayı hızlı tüketir.** Alt ajanlar ve çok ajanlı iş akışları çok sayıda token harcar, abonelik limitinden düşer.
 - **Veri ve KVKK:** Claude Code yerelde çalışır ve doğrudan model API'leriyle konuşur, ancak kodunuz ve komut çıktılarınız model işlemesi için Anthropic'e gider, yani yurt dışına aktarılır. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak eğitimde kullanılmaz; tüketici hesaplarında (Pro, Max) bu bir kullanıcı ayarıdır. Müşteri verisi, kişisel veri veya gizli anahtarları depoda tutuyorsanız önce şirket politikanızı oluşturun: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Türkiye notları:** Ödeme ABD doları ile, Anthropic'in Türkiye'de ofisi veya temsilcisi yok. Ayrıntı: [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/).

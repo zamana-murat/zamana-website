@@ -6,7 +6,7 @@ tags:
   - olcum
   - roi
   - metrikler
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **"Claude işe yaradı mı?" sorusunun cevabı duygusal değil sayısal olmalı.** Çoğu şirket Claude'u 6 ay kullanıyor, faydasını "hissediyor" ama ölçemiyor. İlk yıl sonunda yenileme kararı tartışmalı oluyor. Bu sayfa bunu önler.
@@ -111,7 +111,7 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 
 - 6 çalışan × 8 saat/hafta × 26 hafta = 1.248 saat
 - Saatlik yüklü maliyet 500 ₺ (örnek varsayım; kendi değerinizle hesaplamak için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/)) → tasarruf = 624.000 ₺
-- Claude Max 5x maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺, kur varsayımı: $1 ≈ 40 ₺, Ekim 2026)
+- Claude Max (eski adı Max 5x) maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺, kur varsayımı: $1 ≈ 40 ₺, Ekim 2026)
 - Eğitim/danışmanlık (örn. 300.000 ₺, KDV hariç)
 - İç eğitim zamanı (~80 saat × 500 ₺ = 40.000 ₺)
 - Toplam yatırım: ~484.000 ₺
@@ -119,15 +119,15 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 
 **Örnek hesap, İkinci 6 ay (6 kişilik şirket):**
 
-İkinci 6 ayda eğitim/danışmanlık ve iç eğitim maliyeti olmaz, sadece Claude Max 5x abonelik maliyeti kalır.
+İkinci 6 ayda eğitim/danışmanlık ve iç eğitim maliyeti olmaz, sadece Claude Max abonelik maliyeti kalır.
 
 - 6 çalışan × 8 saat/hafta × 26 hafta = 1.248 saat
 - Saatlik yüklü maliyet 500 ₺ → tasarruf = 624.000 ₺
-- Claude Max 5x maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺, aynı kur varsayımı: $1 ≈ 40 ₺, Ekim 2026)
+- Claude Max maliyeti ($100/kişi/ay × 6 kişi × 6 ay = $3.600 ≈ 144.000 ₺, aynı kur varsayımı: $1 ≈ 40 ₺, Ekim 2026)
 - Toplam yatırım: ~144.000 ₺
 - **ROI: (624.000 - 144.000) / 144.000 = ~%333 ikinci 6 ayda**
 
-**Not:** Bu örnekte Max 5x seçildi, bu bir zorunluluk değil. Ekip için hangi planın hangi maliyete geldiği [Planlar](/wiki/temeller/planlar/) sayfasında. Saatlik yüklü maliyeti, planı ve kuru kendi değerlerinizle değiştirip yeniden hesaplamak için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) sayfasını kullanın. Hesabın ayrıntısı [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarında.
+**Not:** Bu örnekte Max seçildi, bu bir zorunluluk değil. Ekip için hangi planın hangi maliyete geldiği [Planlar](/wiki/temeller/planlar/) sayfasında. Saatlik yüklü maliyeti, planı ve kuru kendi değerlerinizle değiştirip yeniden hesaplamak için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) sayfasını kullanın. Hesabın ayrıntısı [Yaygın İtirazlar](/wiki/temeller/itirazlar/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarında.
 
 ## Ölçüm Disiplini: Kim, Nasıl, Ne Sıklıkla
 

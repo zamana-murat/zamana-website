@@ -6,7 +6,7 @@ tags:
   - sinirlamalar
   - hallucination
   - hata-yonetimi
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude güçlüdür, ama yanılmaz değildir.** Bu sayfa iş kullanıcıları için en kritik bilgilerden birini içerir: **nerede güvenmemeniz gerektiği.**
@@ -44,7 +44,7 @@ Claude matematik problemleri üzerine **düşünebilir**, ama zihinden yürütt�
 
 ### 3. Eğitim Verisi Kesme Tarihi
 
-Claude'un bilgi tabanı belli bir tarihte donar. Bu tarih **bilgi kesim tarihidir (knowledge cutoff)**. Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) güvenilir bilgi kesimi **Haziran 2026**'dır. Haiku 4.5'te Şubat 2025'tir.
+Claude'un bilgi tabanı belli bir tarihte donar. Bu tarih **bilgi kesim tarihidir (knowledge cutoff)**. Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) güvenilir bilgi kesimi **Haziran 2026**'dır. Haiku 5.5'te Haziran 2026, legacy Haiku 4.5'te Şubat 2025'tir.
 
 Bundan sonraki olayları, haberleri, yasaları ve fiyatları Claude kendiliğinden bilmez.
 
@@ -99,7 +99,7 @@ Claude'un kendisi internete, veritabanlarınıza veya şirket sistemlerinize **b
 
 ### 7. Dosya Boyutu Sınırları
 
-Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) bağlam penceresi tüm ücretli planlarda 1M tokendir; yüzlerce sayfalık tek bir rapor rahatça sığar. Haiku 4.5'te 200K'dır. Yine de binlerce sayfalık belge setleri veya gigabyte'lık veri setleri sığmayabilir.
+Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) bağlam penceresi tüm ücretli planlarda 1M tokendir; yüzlerce sayfalık tek bir rapor rahatça sığar. Haiku 5.5'te de 1M, legacy Haiku 4.5'te 200K'dır. Yine de binlerce sayfalık belge setleri veya gigabyte'lık veri setleri sığmayabilir.
 
 **Çözüm:**
 

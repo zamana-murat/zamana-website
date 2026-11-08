@@ -8,7 +8,7 @@ tags:
   - kucuk-isletme
   - nakit-akisi
   - otomasyon
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Bu sayfa bir departman değil, bir **senaryo**: satışı da pazarlamayı da muhasebeyi de tek başına yürüten **küçük işletme sahibi**. Diğer departman sayfaları tek bir role odaklanır; KOBİ sahibi hepsini aynı gün yapar. Claude'un en büyük kaldıraç sağladığı yer tam burasıdır, çünkü ayrı ekiplerin yaptığı işi tek kişiye sığdırır.
@@ -86,7 +86,7 @@ KOBİ sahibinin en sevmediği iş. Claude, ön muhasebe kayıtlarını banka ve 
 4. (opsiyonel) **CRM / HubSpot**: müşteri listesi ve segment
 5. (opsiyonel) **Canva**: görsel üretim
 
-> **Not:** Mevcut araç izinleriniz aynen geçerlidir; Claude erişiminiz olmayan veriyi göremez. Free, Pro ve Max'te verilerinizin model eğitiminde kullanılıp kullanılmayacağı Privacy Settings'ten sizin yapacağınız bir seçimdir, ayarı kendiniz kontrol edin. Team ve Enterprise'ta girdiler varsayılan olarak eğitimde kullanılmaz. Müşteri adı, telefon gibi kişisel veri içeren tabloları yüklemeden önce anonimleştirin; yurt dışı aktarım için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
+> **Not:** Mevcut araç izinleriniz aynen geçerlidir; Claude erişiminiz olmayan veriyi göremez. Free, Pro, Max ve Ultra'da verilerinizin model eğitiminde kullanılıp kullanılmayacağı Privacy Settings'ten sizin yapacağınız bir seçimdir, ayarı kendiniz kontrol edin. Team ve Enterprise'ta girdiler varsayılan olarak eğitimde kullanılmaz. Müşteri adı, telefon gibi kişisel veri içeren tabloları yüklemeden önce anonimleştirin; yurt dışı aktarım için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 ## Gerçek Örnek: Geciken Tahsilat
 

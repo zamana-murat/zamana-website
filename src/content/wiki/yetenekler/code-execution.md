@@ -7,7 +7,7 @@ tags:
   - kod
   - sandbox
   - veri
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude, sohbet içinde gerçek kod yazar (veri işlerinde genellikle Python) ve onu kendi sandbox'ında çalıştırır.** Bu, dil modeli "tahminine" değil **gerçek hesaplamaya** dayanır. Excel açmadan veri analizi, grafik ve hesap tablosu çıktısını Claude'un içinden alabilirsiniz.
@@ -75,7 +75,7 @@ Claude çoğu zaman kodu kendiliğinden çalıştırır; yine de önemli hesapla
 
 Claude kodu izole bir hesaplama alanında (sandbox) **Python ya da JavaScript** ile çalıştırır. Excel (.xlsx), CSV ve PDF tablo okuyup grafik üretebilir; çıktı olarak xlsx, pptx, docx ve pdf dosyası verir. Dosya başına sınır 30 MB'tır (yükleme ve indirme). Ön yüklü kütüphanelerin tam listesi yayımlanmıyor; bir araca ihtiyacınız varsa Claude'a "bunu çalıştırabiliyor musun?" diye sorun. Kaynak: Anthropic'in [dosya oluşturma yardım sayfası](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude).
 
-**İnternet erişimi sınırlıdır.** Free, Pro ve Max'te sandbox yalnız onaylı adreslere (GitHub, PyPI, NPM gibi paket depoları ve Anthropic servisleri) bağlanabilir, internetin tamamına değil; şirketinizin veritabanına ya da bir web sitesine doğrudan bağlanamaz. Team ve Enterprise'ta ağ erişimi varsayılan kapalıdır, açıp açmamak yöneticinin kararıdır ([Takım ve Admin](/wiki/temeller/takim-ve-admin/)). Geçici (gizli) sohbette kod çalıştırma ve dosya oluşturma yoktur. Dosya üretimi gibi işleri [Skills](/wiki/yetenekler/skills/) tamamlar.
+**İnternet erişimi sınırlıdır.** Free, Pro, Max ve Ultra'da sandbox yalnız onaylı adreslere (GitHub, PyPI, NPM gibi paket depoları ve Anthropic servisleri) bağlanabilir, internetin tamamına değil; şirketinizin veritabanına ya da bir web sitesine doğrudan bağlanamaz. Team ve Enterprise'ta ağ erişimi varsayılan kapalıdır, açıp açmamak yöneticinin kararıdır ([Takım ve Admin](/wiki/temeller/takim-ve-admin/)). Geçici (gizli) sohbette kod çalıştırma ve dosya oluşturma yoktur. Dosya üretimi gibi işleri [Skills](/wiki/yetenekler/skills/) tamamlar.
 
 ## Pratik Örnek: Excel Analizi
 
@@ -141,8 +141,8 @@ Code execution kapalıysa uzun sohbette bağlamı otomatik özetleyen [context c
 
 Code execution tüm planlarda vardır ve varsayılan olarak açıktır; ağır kullanım plan limitine çabuk dayanır:
 
-- **Tüm planlar:** Kullanım 5 saatlik pencere ve haftalık limite tabidir (bkz. [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)); Free limit sayıları yayımlanmaz
-- **Max 5x / Max 20x:** Daha geniş limit; ağır analiz işi limitinize sık dayanıyorsa bir seçenek, ama zorunlu değil
+- **Tüm planlar:** Kullanım 5 saatlik pencere (doğrulanmış Ultra hesabında yok) ve haftalık limite tabidir (bkz. [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)); Free limit sayıları yayımlanmaz
+- **Max / Ultra:** Daha geniş limit; ağır analiz işi limitinize sık dayanıyorsa bir seçenek, ama zorunlu değil
 - **Team / Enterprise:** Yönetici kapatabilir; dış ağ erişimi varsayılan olarak kapalıdır
 
 [Planlar](/wiki/temeller/planlar/) sayfası detay verir.
@@ -151,7 +151,7 @@ Code execution tüm planlarda vardır ve varsayılan olarak açıktır; ağır k
 
 Code execution için sandbox'a yüklenen veri:
 
-- Anthropic'in altyapısında işlenir. Team ve Enterprise planlarında varsayılan olarak eğitim için kullanılmaz; Free, Pro ve Max'te bu, hesabınızdaki gizlilik ayarına (Privacy Settings) bağlıdır
+- Anthropic'in altyapısında işlenir. Team ve Enterprise planlarında varsayılan olarak eğitim için kullanılmaz; Free, Pro, Max ve Ultra'da bu, hesabınızdaki gizlilik ayarına (Privacy Settings) bağlıdır
 - KVKK çerçevesinde "veri işleyen" akışı içinde [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında anlatıldığı gibi
 
 **Kişisel veri içeren veri yüklerken:**

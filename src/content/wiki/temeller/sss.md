@@ -5,7 +5,7 @@ tags:
   - temeller
   - sss
   - faq
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem kendiniz için okuyabilirsiniz, hem de şirket içinde Claude'u savunurken kaynak olarak kullanabilirsiniz.
@@ -14,7 +14,7 @@ Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem
   <div class="wiki-admonition__title">Özet</div>
   <div class="wiki-admonition__body" markdown>
 
-Claude bulut tabanlı bir yapay zeka asistanıdır. Team ve Enterprise planlarında verileriniz varsayılan olarak **model eğitiminde kullanılmaz** (sözleşme güvencesi). KVKK uyumu doğru plan, DPA, şirket politikası ve (kişisel veri girilecekse) KVKK m.9 yurt dışı aktarım dayanağıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100-200/ay; yeni başlayanlara ilk ay Max 5x önerilir (zorunlu değil). Ekip maliyeti örneği [Claude Planları](/wiki/temeller/planlar/) sayfasındadır. İş kullanımı için varsayılan model **Sonnet**'tir. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonunda somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
+Claude bulut tabanlı bir yapay zeka asistanıdır. Team ve Enterprise planlarında verileriniz varsayılan olarak **model eğitiminde kullanılmaz** (sözleşme güvencesi). KVKK uyumu doğru plan, DPA, şirket politikası ve (kişisel veri girilecekse) KVKK m.9 yurt dışı aktarım dayanağıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100, Ultra $200/ay; yeni başlayanlara ilk ay Max (eski adı Max 5x) önerilir (zorunlu değil). Ekip maliyeti örneği [Claude Planları](/wiki/temeller/planlar/) sayfasındadır. İş kullanımı için varsayılan model **Sonnet**'tir. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonunda somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
 
   </div>
 </div>
@@ -28,7 +28,7 @@ Claude bulut tabanlı bir yapay zeka asistanıdır. Team ve Enterprise planları
 Model eğitiminde kullanılıp kullanılmaması plana göre değişir:
 
 - **Team ve Enterprise:** Veriler varsayılan olarak eğitimde **kullanılmaz**. Bu, ticari sözleşmenin (DPA dahil) güvencesidir.
-- **Free, Pro ve Max:** Karar sizdedir. "Claude'u geliştirmeye yardım et" ayarı Settings → Privacy altındadır ve istediğiniz zaman değiştirilir. Kurumsal kullanımda kapalı tutun.
+- **Free, Pro, Max ve Ultra:** Karar sizdedir. "Claude'u geliştirmeye yardım et" ayarı Settings → Privacy altındadır ve istediğiniz zaman değiştirilir. Kurumsal kullanımda kapalı tutun.
 
 Anthropic çalışanlarının erişimi için aşağıdaki sorulara bakın. API tarafında, satış ekibiyle kuruluş başına talep edilen **Zero Data Retention** düzenlemesi riski daha da azaltır: istem ve yanıtlar, yanıt döndükten sonra depolanmaz. Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
@@ -38,7 +38,7 @@ Anthropic çalışanlarının erişimi için aşağıdaki sorulara bakın. API t
 
 Kurumsal Claude kullanımının KVKK uyumu dört bileşene dayanır:
 
-1. **Plan seçimi:** Şirket verisi işleyen ekipler için Team veya Enterprise önerilir (fiyatlar: [Claude Planları](/wiki/temeller/planlar/)). Zorunlu değildir, ama merkezi yönetim, faturalama ve veri kontrolü ticari planlarda vardır. Pro ve Max bireysel plandır: DPA kapsamı dışındadır, bu da KVKK m.12 (veri sorumlusunun yükümlülükleri) açısından kurumsal veri için zayıf noktadır.
+1. **Plan seçimi:** Şirket verisi işleyen ekipler için Team veya Enterprise önerilir (fiyatlar: [Claude Planları](/wiki/temeller/planlar/)). Zorunlu değildir, ama merkezi yönetim, faturalama ve veri kontrolü ticari planlarda vardır. Pro, Max ve Ultra bireysel plandır: DPA kapsamı dışındadır, bu da KVKK m.12 (veri sorumlusunun yükümlülükleri) açısından kurumsal veri için zayıf noktadır.
 2. **DPA:** Team, Enterprise ve API'de ticari şartlara otomatik dahil olan (ayrıca imza gerekmeyen) Data Processing Agreement, işleyen ilişkisini belgeler (KVKK m.12/2, GDPR m.28). DPA'daki standart sözleşme hükümleri AB içindir, KVKK m.9 için Kurul'un Türk standart sözleşmesinin yerine geçmez.
 3. **Yurt dışı aktarım dayanağı:** Kişisel veri girecekseniz Kurul'un standart sözleşmesi (imzadan sonra 5 iş günü içinde Kurum'a bildirilir) ya da eşdeğer bir dayanak gerekir. Anthropic'in bunu imzalayıp imzalamadığı belirsizdir, yazılı sorun.
 4. **İç politika:** Çalışanların hangi veriyi paylaşıp paylaşamayacağını yazılı belirleyen bir Yapay Zeka Kullanım Politikası şarttır ([Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)).
@@ -68,13 +68,13 @@ Askeri sistemler, hava boşluklu üretim ağları ve yüksek güvenlikli devlet 
 
 ### Claude ayda ne kadar tutar?
 
-**Kısa cevap: Bireysel Pro $20/ay, Max $100-200/ay. Team ve Enterprise koltuk başına fiyatlanır; güncel rakamlar [Claude Planları](/wiki/temeller/planlar/) sayfasındadır.**
+**Kısa cevap: Bireysel Pro $20/ay, Max $100, Ultra $200/ay. Team ve Enterprise koltuk başına fiyatlanır; güncel rakamlar [Claude Planları](/wiki/temeller/planlar/) sayfasındadır.**
 
-Fiyat, kullanım yoğunluğuna göre kademelidir. Anthropic mesaj sayısı vermez; kullanım 5 saatlik kayan pencere ve haftalık limitle ölçülür ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
+Fiyat, kullanım yoğunluğuna göre kademelidir. Anthropic mesaj sayısı vermez; kullanım 5 saatlik kayan pencere (Ultra'da doğrulanmış hesapta yok) ve haftalık limitle ölçülür ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
 
 - **Pro ($20/ay):** Tek kullanıcı, hafif ve orta kullanım. Serbest profesyoneller için yeterli.
-- **Max 5x ($100/ay):** Pro'nun 5 katı limit, Fable plana dahil. Yeni öğrenen kullanıcı Pro limitine çabuk çarptığı için yeni başlayanlara ilk ay öneriyoruz; zorunlu değildir.
-- **Max 20x ($200/ay):** Çok yoğun kullanım, gün boyu aktif AI iş yükü, geliştirici tipi senaryolar.
+- **Max ($100/ay):** Pro'nun 5 katı limit, Fable plana dahil. Yeni öğrenen kullanıcı Pro limitine çabuk çarptığı için yeni başlayanlara ilk ay öneriyoruz; zorunlu değildir.
+- **Ultra ($200/ay, eski adı Max 20x):** Pro'nun haftalık 10 katı limit, doğrulanmış hesapta 5 saatlik limit yok. Çok yoğun kullanım, gün boyu aktif AI iş yükü, geliştirici tipi senaryolar.
 - **Team Standard:** Yönetim paneli, merkezi fatura, paylaşılan Projects, SSO, ticari şartlara dahil DPA. En az 2 koltuk. Pro'nun 1,25 katı kullanım.
 - **Team Premium:** Pro'nun 6,25 katı kullanım, Fable plana dahil.
 - **Enterprise:** Koltuk ücreti kullanımı içermez, kullanım ayrıca API fiyatıyla faturalanır, yani aylık tutar sabit değildir. RBAC, audit log, Compliance API. Zero Data Retention gerekiyorsa API için ayrıca talep edilir.
@@ -87,7 +87,7 @@ Fiyatlar vergi hariçtir; Türkiye faturalama adresiyle web ödemesinde %20 KDV 
 
 Maliyet ay bazında değişir: yeni başlayanlar ilk ay daha yoğun kullanır, sonraki aylarda kullanım oturur.
 
-- **İlk ay:** Yeni başlayan kullanıcılar için ilk ay Max 5x öneriyoruz (zorunlu değil). Pratikte yeni kullanıcı Pro limitini günde birkaç saatte doldurur ve "çalışmıyor" hissiyle vazgeçer; Max 5x bunu önler.
+- **İlk ay:** Yeni başlayan kullanıcılar için ilk ay Max öneriyoruz (zorunlu değil). Pratikte yeni kullanıcı Pro limitini günde birkaç saatte doldurur ve "çalışmıyor" hissiyle vazgeçer; Max bunu önler.
 - **Sonraki aylar:** Gerçek kullanım ritmi netleşir. Hafif kullananlar Pro'ya iner, yoğun kullananlar Max'te kalır.
 - **Şirket verisi işleyen ekipler:** Karma bireysel hesaplar yerine Team veya Enterprise önerilir; merkezi yönetim, faturalama ve veri kontrolü bunlarda vardır.
 
@@ -97,7 +97,7 @@ Claude'a başlamadan önce çalışan başına haftalık süre için bir baselin
 
 ### Küçük şirketim için fazla mı?
 
-Bireysel başlangıç için ilk ay **Max 5x** önerilir (zorunlu değil), sonrasında duruma göre Pro. Wiki ve CLAUDE.md örnekleri ücretsizdir ve her büyüklükteki şirkete, bireysel profesyonele faydalıdır.
+Bireysel başlangıç için ilk ay **Max** önerilir (zorunlu değil), sonrasında duruma göre Pro. Wiki ve CLAUDE.md örnekleri ücretsizdir ve her büyüklükteki şirkete, bireysel profesyonele faydalıdır.
 
 ## Çalışan Adaptasyonu
 
@@ -125,10 +125,10 @@ Bu gerçek bir risk. [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) tam bunu he
 
 Anthropic dört model sunar ve her birinin kendi kullanım senaryosu vardır:
 
-- **Haiku 4.5:** En hızlı ve hafif. Basit sınıflandırma, kısa yanıt, otomasyon arka planı için uygundur; derin akıl yürütme gerektiren işlerde yetersiz kalır.
+- **Haiku 5.5:** En hızlı ve hafif (güncel sürüm API'de Haiku 5.5, Haiku 4.5 legacy). Basit sınıflandırma, kısa yanıt, otomasyon arka planı için uygundur; derin akıl yürütme gerektiren işlerde yetersiz kalır.
 - **Sonnet 5.5:** Dengeli; hız ve yetkinlik arasındaki en iyi nokta. Kurumsal günlük işin büyük çoğunluğunda doğru tercihtir: sözleşme analizi, rapor yazımı, Türkçe iş yazışması, kod inceleme, doküman özetleme, Cowork iş akışları.
 - **Opus 5.5:** Daha güçlü ve daha pahalı. Çok derin araştırma, karmaşık akıl yürütme, ileri kod üretimi ve ajan işleri gibi ağır işler için ayırın.
-- **Fable 5.1:** En güçlü genel model; erişimi plana göre değişir. Max ve Team Premium'da plana dahil (haftalık limitin en fazla yarısına kadar), Pro ve Team Standard'da yalnız kullanım kredisiyle, Free'de yok ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
+- **Fable 5.1:** En güçlü genel model; erişimi plana göre değişir. Max, Ultra ve Team Premium'da plana dahil (haftalık limitin en fazla yarısına kadar), Pro ve Team Standard'da yalnız kullanım kredisiyle, Free'de yok ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
 
 Model seçimine değil çıktı kalitesine (prompt, bağlam, CLAUDE.md) enerji harcayın; Sonnet doğru kurulduğunda çoğu işte yeter. [Modeller detay](/wiki/temeller/modeller/).
 
@@ -151,7 +151,7 @@ Türkçe karakterler (ş, ç, ı, ğ, ü, ö, İ) ve büyük-küçük harf dön�
 
 **Kısa cevap: Modelin kendisi hayır, ama web araması açıkken Claude gerektiğinde internette arama yapar.**
 
-Model, statik bir "bilgi kesim tarihiyle" çalışır (güncel modellerde Haziran 2026, Haiku 4.5'te Şubat 2025). Bu tarihten sonraki olayları, son haberleri, bugünün döviz kurunu, anlık hisse fiyatını veya yeni mevzuat değişikliklerini kendiliğinden bilmez. **Web arama** claude.ai arayüzünde ve Cowork'te vardır; açıkken Claude gerçek zamanlı arama yapar, sonuçları özetler ve kaynak linki gösterir ([Web Arama](/wiki/araclar/web-arama/)).
+Model, statik bir "bilgi kesim tarihiyle" çalışır (güncel modellerde Haziran 2026, legacy Haiku 4.5'te Şubat 2025). Bu tarihten sonraki olayları, son haberleri, bugünün döviz kurunu, anlık hisse fiyatını veya yeni mevzuat değişikliklerini kendiliğinden bilmez. **Web arama** claude.ai arayüzünde ve Cowork'te vardır; açıkken Claude gerçek zamanlı arama yapar, sonuçları özetler ve kaynak linki gösterir ([Web Arama](/wiki/araclar/web-arama/)).
 
 - **Web arama gerekmez:** Rapor yazma, sözleşme analizi, prompt geliştirme, kod inceleme gibi anlık bilgi gerektirmeyen işler. Çıktı daha hızlı gelir.
 - **Web arama gerekir:** Güncel sektör haberi, son mevzuat, fiyat araştırması, rakip analizi. Aramayı açın veya bilgiyi prompt'a kendiniz yapıştırın.
@@ -163,7 +163,7 @@ Model, statik bir "bilgi kesim tarihiyle" çalışır (güncel modellerde Hazira
 
 ### Claude bilgisayarımı kontrol edebilir mi?
 
-**Evet, [Computer Use](/wiki/yetenekler/computer-use/) özelliğiyle, ama sınırlı.** Bu özellik **research preview** aşamasındadır, yalnızca Pro ve Max planlarında, Claude Desktop uygulaması (macOS, Windows) içinde Cowork ve Claude Code ile çalışır; Team ve Enterprise'ta yoktur. Eylemler şeffaftır ve sizin kontrolünüzdedir. API'si olmayan eski sistemlerde (Logo, Netsis, eski ERP) otomasyon için denenebilir, ama üretimde ona güvenmeden önce test edin.
+**Evet, [Computer Use](/wiki/yetenekler/computer-use/) özelliğiyle, ama sınırlı.** Bu özellik **research preview** aşamasındadır, yalnızca Pro, Max ve Ultra planlarında, Claude Desktop uygulaması (macOS, Windows) içinde Cowork ve Claude Code ile çalışır; Team ve Enterprise'ta yoktur. Eylemler şeffaftır ve sizin kontrolünüzdedir. API'si olmayan eski sistemlerde (Logo, Netsis, eski ERP) otomasyon için denenebilir, ama üretimde ona güvenmeden önce test edin.
 
 ## ChatGPT ve Diğer Alternatifler
 

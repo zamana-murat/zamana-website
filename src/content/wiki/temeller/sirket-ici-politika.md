@@ -6,7 +6,7 @@ tags:
   - politika
   - kvkk
   - guvenlik
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **"AI kullanımına dair şirket politikamız var mı?"** sorusu denetim, müşteri sözleşmesi, KVKK denetimi veya iş kazası anında çıkar. Cevap "yok" ise sorun olur. Bu sayfa pratik bir politika şablonu sunar.
@@ -36,7 +36,7 @@ Bu politika [Şirket Adı] çalışanlarının, taşeronlarının ve stajyerleri
 - **Claude** (Anthropic): birincil AI asistanı
   - Erişim: claude.ai web, [Claude Desktop](/wiki/araclar/claude-desktop/), [Claude Mobil](/wiki/araclar/claude-mobil/)
   - Plan: [Şirket plan adı]; kullanıcı yönetimi [admin adı] tarafından yapılır
-  - Bireysel hesapla (Pro/Max) kullanılıyorsa Settings → Privacy altındaki "Claude'u geliştirmeye yardım et" ayarı kapalı olmalıdır
+  - Bireysel hesapla (Pro/Max/Ultra) kullanılıyorsa Settings → Privacy altındaki "Claude'u geliştirmeye yardım et" ayarı kapalı olmalıdır
 
 Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesapla* iş amaçlı kullanım **bu politika ile onaylanmamıştır**. Onay isterseniz [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile başvurun.
 
@@ -52,7 +52,7 @@ Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesap
 
 **İç bilgi için koşullar:**
 - Şablonun tercihi: yalnız [Team veya Enterprise plan](/wiki/temeller/takim-ve-admin/) hesabı üzerinden girilir (merkezi yönetim ve veri kontrolü için önerilir; şirketiniz farklı karar verebilir)
-- Planın [DPA](/wiki/departmanlar/hukuk/) kapsamında olması gerekir (Team ve Enterprise'ta DPA ticari şartlara otomatik dahildir, ayrıca imza gerekmez; Free, Pro ve Max kapsam dışıdır)
+- Planın [DPA](/wiki/departmanlar/hukuk/) kapsamında olması gerekir (Team ve Enterprise'ta DPA ticari şartlara otomatik dahildir, ayrıca imza gerekmez; Free, Pro, Max ve Ultra kapsam dışıdır)
 - Çalışan veri girmeden önce verinin **niteliğini** kontrol eder
 
 **Gizli veri için tek istisna:**
@@ -93,14 +93,14 @@ Claude'a araç yetkisi verdikçe risk de büyür. Bu bölüm o yetkilerin kim ta
 
 - **Connector, MCP ve eklentiler:** Yalnız [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) onaylı listedeki olanlar kurulur. Connector'lar dış servislere Anthropic'in bulutu üzerinden ulaşır. Yazma yetkisi (e-posta, mesaj ya da dosya gönderme, düzenleme) okuma yetkisinden ayrı onaylanır. Yeni connector isteği BT'ye başvuruyla açılır
 - **Claude in Chrome:** [Rol veya birim listesi] kullanabilir. Bankacılık, sağlık kayıtları ve başkasıyla paylaşılmayacak şifreler gibi işlerde kullanılmaz. Claude'un sorduğu her onay okunur, beklenmedik davranışta işlem durdurulur ([Claude for Chrome](/claude/chrome/))
-- **Computer use (bilgisayar kontrolü):** Research preview aşamasındadır ve yalnız Pro ve Max'te vardır. [Rol listesi] dışında kullanılmaz, ekranda gizli sınıfta veri açıkken başlatılmaz
+- **Computer use (bilgisayar kontrolü):** Research preview aşamasındadır ve yalnız Pro, Max ve Ultra'da vardır. [Rol listesi] dışında kullanılmaz, ekranda gizli sınıfta veri açıkken başlatılmaz
 - **Prompt injection:** Claude'un okuduğu bir web sayfası, e-posta ya da PDF içine gizlenmiş talimat olabilir. Güvenilmeyen kaynaklar üzerinde Claude'a eylem yetkisi verilmez; para, veri gönderme ya da silme gibi geri dönüşü olmayan adımlar insan onayı olmadan yapılmaz ([Sınırlamalar](/wiki/temeller/sinirlamalar/))
 
 ### 7. Hafıza, Paylaşım Linkleri ve Bulutta Çalışan Görevler
 
-- **Hafıza:** Free, Pro ve Max'te varsayılan açık, Team ve Enterprise'ta varsayılan kapalıdır (owner kontrolünde). Şirket tercihini yazın: [açık / kapalı]. Açıksa hafızaya müşteri adı, kişisel veri ve gizli bilgi kaydettirilmez; hafıza listesi [üç ayda bir] gözden geçirilir
+- **Hafıza:** Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'ta varsayılan kapalıdır (owner kontrolünde). Şirket tercihini yazın: [açık / kapalı]. Açıksa hafızaya müşteri adı, kişisel veri ve gizli bilgi kaydettirilmez; hafıza listesi [üç ayda bir] gözden geçirilir
 - **Herkese açık paylaşım linkleri:** Sohbet ve artifact'ler link ile dışarı açılabilir. İç ya da gizli sınıf içerik için herkese açık link üretilmez; kurumsal planlarda bu izin admin ayarıdır ([Takım ve Admin](/wiki/temeller/takim-ve-admin/))
-- **Bulutta çalışan Cowork görevleri:** 6 Ekim 2026'dan itibaren Pro ve Max'te yeni Cowork görevleri bulutta çalışır, "yalnızca bilgisayarınızda" seçeneği kalkar. Yerel dosyalarda gizli sınıf veri bulunan bilgisayarlarda bireysel Pro/Max hesabıyla Cowork görevi başlatılmaz
+- **Bulutta çalışan Cowork görevleri:** 6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır, "yalnızca bilgisayarınızda" seçeneği kalkar. Yerel dosyalarda gizli sınıf veri bulunan bilgisayarlarda bireysel Pro/Max/Ultra hesabıyla Cowork görevi başlatılmaz
 
 ### 8. Çıktı Sorumluluğu
 
@@ -236,7 +236,7 @@ Güvenilmeyen kaynakta eylem yetkisi verilmez; geri dönüşsüz adımlar insan 
 7. HAFIZA, PAYLAŞIM, BULUT GÖREVLERİ
 Hafıza: [açık/kapalı]; açıksa kişisel veri ve gizli bilgi kaydettirilmez.
 İç ve gizli içerik için herkese açık paylaşım linki üretilmez.
-Gizli veri bulunan bilgisayarda bireysel Pro/Max ile Cowork görevi başlatılmaz.
+Gizli veri bulunan bilgisayarda bireysel Pro/Max/Ultra ile Cowork görevi başlatılmaz.
 
 8. ÇIKTI SORUMLULUĞU
 Çıktıdan çalışan sorumludur. Kontrolsüz çıktı müşteriye, iş ortağına veya

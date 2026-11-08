@@ -7,7 +7,7 @@ lead: "Claude, yazılım ekiplerinde kod yazmaktan çok daha fazlası için kull
 heroImage: "/images/kurumsal/kodlama/hero.webp"
 heroAnimation: "kodlama"
 heroAlt: "Terminalde bir geliştirici mobil uygulamada oturumun 15 dakikada düşmesinin sebebini soruyor; Claude kimlik doğrulama dosyalarını okuyup kök nedeni jeton yenilemede buluyor, düzeltmeyi kod farkı olarak gösteriyor ve 48 testin geçtiğini bildiriyor."
-availability: "Claude Code Pro, Max, Team ve Enterprise planlarında, kota sohbetle ortak; Free'de yok. Kendi araçlarınız için Claude Platform (API), kullanım başına ücret"
+availability: "Claude Code Pro, Max, Ultra, Team ve Enterprise planlarında, kota sohbetle ortak; Free'de yok. Kendi araçlarınız için Claude Platform (API), kullanım başına ücret"
 sourceUrl: "https://claude.com/solutions/coding"
 sourceTitle: "The best AI for developers"
 related:
@@ -18,7 +18,7 @@ related:
   - { label: "Yapay zeka ajanları", href: "/kurumsal/ajanlar/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 40
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -58,7 +58,7 @@ Kurgusal bir örnek: bir katılım bankasının yazılım ekibi, kâr payı hesa
 
 ## Güvenlik, gizlilik ve uyum
 
-- **Kaynak kod da veridir:** Claude'a okuttuğunuz kod, model işlemesi için Anthropic'e gider. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz ve veri işleme sözleşmesi (DPA) ticari şartlara dahildir. Kişisel Pro veya Max hesabında bu ticari şartlar yoktur; şirket kodu için kurumsal planı tercih edin.
+- **Kaynak kod da veridir:** Claude'a okuttuğunuz kod, model işlemesi için Anthropic'e gider. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz ve veri işleme sözleşmesi (DPA) ticari şartlara dahildir. Kişisel Pro, Max veya Ultra hesabında bu ticari şartlar yoktur; şirket kodu için kurumsal planı tercih edin.
 - **Test verisinde gerçek kişisel veri kullanmayın:** Veritabanı dökümleri, log dosyaları ve hata kayıtları çoğu zaman müşteri verisi içerir. KVKK (6698) açısından bunları anonimleştirmeden paylaşmayın, ayrıntıyı hukuk biriminizle teyit edin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Sektör düzenlemeleri:** Bankacılık, sigorta ve kamu gibi düzenlenmiş sektörlerde yurt dışı bulut hizmeti ve dış kaynak kullanımı ayrıca kurallara tabidir. Kullanmadan önce uyum ve bilgi güvenliği birimlerinizin onayını alın.
 - **Yetki ve denetim:** Claude Code'un hangi komutları onaysız çalıştırabileceği yönetici tarafından kısıtlanabilir. Enterprise'ta denetim kaydı ve Compliance API ile Claude Code oturumları da izlenebilir.
@@ -66,7 +66,7 @@ Kurgusal bir örnek: bir katılım bankasının yazılım ekibi, kâr payı hesa
 
 ## Hangi planda, nasıl başlanır?
 
-- **Plan:** Claude Code Pro, Max, Team ve Enterprise'ta; kota sohbetle ortaktır. Yazılım ekibi için merkezi yönetim, SSO ve harcama kontrolü gerekiyorsa Team veya Enterprise.
+- **Plan:** Claude Code Pro, Max, Ultra, Team ve Enterprise'ta; kota sohbetle ortaktır. Yazılım ekibi için merkezi yönetim, SSO ve harcama kontrolü gerekiyorsa Team veya Enterprise.
 - **Fiyat:** Team'de Standard koltuk aylık 25 dolar (yıllık faturalamada 20), Premium koltuk 125 dolar (yıllıkta 100). Enterprise kullanım bazlıdır: koltuk başına aylık 20 dolar, yıllık faturalı, Claude Code dahil tüm kullanım ayrıca API fiyatıyla faturalanır. Ödeme dolar ile, doğrudan Anthropic'e.
 - **Başlangıç:** Bir ekip, bir depo ve okuma ağırlıklı bir işle başlayın (kod tabanı analizi, belge, test). Depoya bir `CLAUDE.md` dosyası koyup ekibin kurallarını yazın: [CLAUDE.md nedir?](/wiki/claude-md/nedir/) Yazma yetkisini ve otomatik komut çalıştırmayı, ekip sonuçlara güvendikçe açın.
 

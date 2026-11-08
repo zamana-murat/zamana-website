@@ -8,7 +8,7 @@ tags:
   - e-fatura
   - excel
   - kobi
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Kısa cevap: Logo, Mikro ve Paraşüt için Claude'un resmi bir connector'ı yok.** Yani Claude'u bu programlara tek tıkla bağlayamazsınız. Ama bu, Claude'un muhasebe ve fatura işlerinde işe yaramadığı anlamına gelmez: en pratik yol, programdan **dışa aktardığınız dosyayı** Claude'a vermek. Bu sayfa hangi işin hangi yolla yapıldığını, teknik bilgi gerektirmeyen dille anlatır.
@@ -55,7 +55,7 @@ Türkçe programların çıktısında sayı `1.234,56` biçimindedir (nokta binl
 Excel, muhasebe ile Claude'un buluştuğu yerdir. Üç yol var:
 
 1. **Dosyayı yüklemek.** Excel dosyasını sohbete atarsınız, Claude içeriği okur, [kod çalıştırma](/wiki/yetenekler/code-execution/) ile toplama, süzme ve grafik yapabilir ve sonucu yeni bir Excel dosyası olarak verir. En kolay yol bu.
-2. **Excel'in içindeki eklenti.** Claude'un Microsoft 365 için Excel eklentisi genel kullanıma açıktır (ücretli planlarda, Pro, Max, Team ve Enterprise); dosyanın içinde çalışır, formül ve tablo önerir. Ayrıntı [Office ve Chrome](/wiki/araclar/office-ve-chrome/) sayfasında. Eklenti için Microsoft 365 aboneliğiniz olması gerekir; kurulumdan önce Excel sürümünüzün destekleyip desteklemediğini kontrol edin.
+2. **Excel'in içindeki eklenti.** Claude'un Microsoft 365 için Excel eklentisi genel kullanıma açıktır (ücretli planlarda, Pro, Max, Ultra, Team ve Enterprise); dosyanın içinde çalışır, formül ve tablo önerir. Ayrıntı [Office ve Chrome](/wiki/araclar/office-ve-chrome/) sayfasında. Eklenti için Microsoft 365 aboneliğiniz olması gerekir; kurulumdan önce Excel sürümünüzün destekleyip desteklemediğini kontrol edin.
 3. **Google E-Tablolar.** Google Workspace connector'ı Docs, Sheets ve Slides dosyalarını okuyup yazabilir.
 
 İyi çalışan örnekler: farklı bölgelerden gelen Excel'leri tek tabloda birleştirmek, bütçe sapmasını işaretlemek, ay sonunda tutmayan satırları listelemek. Zayıf kalan yer: **gizli sayfalar, birleştirilmiş hücreler ve elle eklenmiş renkli notlar.** Dosyayı temizleyip verin.
@@ -76,7 +76,7 @@ Excel, muhasebe ile Claude'un buluştuğu yerdir. Üç yol var:
 Bazı eski programların API'si ya da dışa aktarım seçeneği zayıftır. Bu durumda [Computer Use](/wiki/yetenekler/computer-use/) özelliği, Claude'un ekranı görüp fare ve klavyeyle programı kullanmasına izin verir. Mümkün ama **dikkatli kullanılması gereken** bir yoldur:
 
 - Özellik **research preview** aşamasındadır, yani denemelik; üretimde tek dayanak yapılmamalıdır.
-- Yalnızca **Pro ve Max** planlarında ve masaüstü uygulamasında (Cowork ve Claude Code içinde) çalışır; **Team ve Enterprise'ta yok**, web sohbetinde de yok.
+- Yalnızca **Pro, Max ve Ultra** planlarında ve masaüstü uygulamasında (Cowork ve Claude Code içinde) çalışır; **Team ve Enterprise'ta yok**, web sohbetinde de yok.
 - Claude yanlış alana tıklayabilir, yanlış kaydı seçebilir. Muhasebe programında bir hatalı kayıt, geri alması en zahmetli hatadır.
 - Ekranda ne varsa Claude onu görür: açık duran müşteri listesi, maaş ekranı dahil.
 
@@ -107,7 +107,7 @@ Bilmeniz gereken şeyler:
 
 ## Gizlilik ve kontrol
 
-- **Kişisel veri.** Bordro, TC kimlik numarası, IBAN, müşteri telefonu içeren dosyaları yüklemeden önce gereksiz sütunları silin ya da maskeleyin. Team ve Enterprise'ta girdiler varsayılan olarak eğitimde kullanılmaz; Free, Pro ve Max'te bu bir kullanıcı ayarıdır, kendiniz kontrol edin. Ayrıntı [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında.
+- **Kişisel veri.** Bordro, TC kimlik numarası, IBAN, müşteri telefonu içeren dosyaları yüklemeden önce gereksiz sütunları silin ya da maskeleyin. Team ve Enterprise'ta girdiler varsayılan olarak eğitimde kullanılmaz; Free, Pro, Max ve Ultra'da bu bir kullanıcı ayarıdır, kendiniz kontrol edin. Ayrıntı [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında.
 - **Resmi çıktı.** Claude'un hazırladığı e-Fatura benzeri bir belge ya da beyanname taslağı hukuki geçerlilik taşımaz. Resmî çıktıyı her zaman muhasebe programınız ve entegratörünüz üretir.
 - **Sayıları doğrulayın.** Claude toplamları bazen yanlış yapar ya da satırı atlar. Kontrol yöntemi basit: raporun toplamını programdaki toplamla karşılaştırın. [Sınırlamalar](/wiki/temeller/sinirlamalar/) sayfası bu riski anlatır.
 - **Vergi ve hukuk kararı.** Claude yorum ve taslak hazırlar; beyan, vergi planlaması ve hukuki karar mali müşavirinizin ve avukatınızın işidir.
@@ -130,7 +130,7 @@ Kazancın ne kadar olduğu işletmeye göre çok değişir; kendi sürenizi bir 
 
 **KEP'e Claude bağlanabilir mi?** Bildiğimiz kadarıyla hazır bağlantı yok. Metni Claude yazar, gönderimi siz yaparsınız.
 
-**Bu iş için hangi plan?** Kullanım yoğunluğuna göre Pro ya da Max; hangisinin yettiğini ilk aylarda kullanımınız gösterir. Yeni başlayanlara ilk ay Max 5x öneriyoruz (zorunlu değil). [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
+**Bu iş için hangi plan?** Kullanım yoğunluğuna göre Pro, Max ya da Ultra; hangisinin yettiğini ilk aylarda kullanımınız gösterir. Yeni başlayanlara ilk ay Max (eski adı Max 5x) öneriyoruz (zorunlu değil). [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
 
 ## İlgili sayfalar
 

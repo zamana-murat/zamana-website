@@ -18,7 +18,7 @@ related:
   - { label: "Alt ajanlar (wiki)", href: "/wiki/yetenekler/agents-subagents/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 20
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -33,7 +33,7 @@ Anthropic, platformu üç katman olarak anlatıyor:
 
 ![Claude Platform'un üç katmanının Türkçe çizimi: altta Messages API ve araçlar, ortada yönetilen ajanlar ve altyapı, üstte yetkilendirme, yönetişim ve gözlem; yanda tüm katmanları izleyen Claude Console](/images/kurumsal/platform/katmanlar.webp)
 
-- **Temel yapı taşları:** Messages API ile modele tam kontrolle erişim ve modele eklenebilen araçlar: kod çalıştırma, JSON şemasına uyan yapılandırılmış çıktı, dış sistemleri çağırma (tool use), tarayıcı ve masaüstü otomasyonu (computer use), kaynak gösterme, dosya yükleme, web arama, 1 milyon tokenlık bağlam penceresi (Haiku 4.5'te 200 bin) ve uzun oturumlarda bağlamı özetleme (compaction).
+- **Temel yapı taşları:** Messages API ile modele tam kontrolle erişim ve modele eklenebilen araçlar: kod çalıştırma, JSON şemasına uyan yapılandırılmış çıktı, dış sistemleri çağırma (tool use), tarayıcı ve masaüstü otomasyonu (computer use), kaynak gösterme, dosya yükleme, web arama, 1 milyon tokenlık bağlam penceresi ve uzun oturumlarda bağlamı özetleme (compaction).
 - **Yönetilen ajanlar (Claude Managed Agents, beta):** Uzun süren ajanları ölçekli çalıştırmak için hazır altyapı. Kaynak sayfa çoklu ajan yönetimi, ajanın kendi işini bir başarı ölçütüne göre puanlaması, oturumlar arası hafıza, zamanlanmış çalıştırma, hassas veriyi kendi altyapınızda tutan yalıtılmış ortamlar, özel ağdaki MCP sunucularına güvenli erişim ve kimlik bilgilerini koddan ayrı saklayan kasalar gibi özellikleri sayıyor. Ajanların oturumlar arasında öğrendiklerini derlemesi ("dreaming") ayrıca talep formuyla açılan bir araştırma önizlemesi.
 - **Yönetim katmanı:** Yetkilendirme, yönetişim ve gözlem kontrolleri.
 
@@ -50,7 +50,7 @@ Fiyatlar milyon token başına, ABD doları, vergi hariç:
 | Fable 5.1 | 10 $ | 50 $ | En güçlü model, uzun soluklu ajan işleri |
 | Opus 5.5 | 4 $ | 20 $ | Çoğu iş için başlangıç önerisi, ajan ve kodlama |
 | Sonnet 5.5 | 2 $ | 10 $ | Hız ve zekâ dengesi, yüksek hacimli işler |
-| Haiku 4.5 | 1 $ | 5 $ | En hızlı ve en ucuz, hafif işler |
+| Haiku 5.5 | 0,10 $'dan | 0,50 $'dan | En hızlı ve en ucuz, hafif işler |
 
 Maliyeti düşüren yollar: toplu işleme (batch) yüzde 50 tasarruf sağlar, istem önbelleği (prompt caching) tekrar eden bağlamda maliyeti yüzde 90'a kadar düşürür. Anthropic'in sayfasına göre yalnız ABD'de işleme seçeneği 1,1 kat fiyatlanır. Modellerin ayrıntısı için [Claude modelleri](/claude/modeller/) sayfasına bakın.
 

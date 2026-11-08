@@ -7,10 +7,10 @@ tags:
   - voice-mode
   - mobil
   - dikte
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
-**Claude'un ses özelliği, yazı yerine konuşarak etkileşim kurmanıza izin verir.** Beta olarak tüm planlarda (Free, Pro, Max, Team, Enterprise) mobil uygulamalarda, masaüstünde ve web'de çalışır. Eller serbest, doğal bir sesli konuşma deneyimi sağlar.
+**Claude'un ses özelliği, yazı yerine konuşarak etkileşim kurmanıza izin verir.** Beta olarak tüm planlarda (Free, Pro, Max, Ultra, Team, Enterprise) mobil uygulamalarda, masaüstünde ve web'de çalışır. Eller serbest, doğal bir sesli konuşma deneyimi sağlar.
 
 Free'de Haiku modeli ve tek bağlı araç kullanılır; ücretli planlarda daha fazla model ve tüm bağlı araçlar açıktır. Kullanım, normal sohbet gibi planınızın limitinden düşer.
 

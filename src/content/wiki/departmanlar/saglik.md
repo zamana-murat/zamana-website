@@ -7,7 +7,7 @@ tags:
   - saglik
   - kvkk
   - hassas
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Sağlık sektörü Türkiye'de özel bir yasal rejime tabidir: KVKK kapsamında **özel nitelikli kişisel veri**, mesleki gizlilik ve Sağlık Bakanlığı yönetmelikleri. Claude'un sağlıkta kullanımı **mümkündür ama dikkat ister.** Bu sayfa hangi alanlarda güvenle kullanılabileceğini, neyin kesinlikle yapılmaması gerektiğini ve kurumsal politika çerçevesini anlatır.
@@ -222,7 +222,7 @@ Sağlık çalışanı için CLAUDE.md ekstra dikkatli:
 
 ## Kurumsal Plan Tavsiyesi
 
-Kurum olarak hasta ya da çalışan verisi işleyecekseniz bireysel (Free, Pro, Max) planlar yerine ticari bir plan (Team veya [Enterprise](/wiki/temeller/takim-ve-admin/)) öneriyoruz; zorunlu değil, ama merkezi kontrol ve veri ayarları açısından daha uygun. Team en az 2 koltuktur, Enterprise self-serve en az 20 koltukla alınır.
+Kurum olarak hasta ya da çalışan verisi işleyecekseniz bireysel (Free, Pro, Max, Ultra) planlar yerine ticari bir plan (Team veya [Enterprise](/wiki/temeller/takim-ve-admin/)) öneriyoruz; zorunlu değil, ama merkezi kontrol ve veri ayarları açısından daha uygun. Team en az 2 koltuktur, Enterprise self-serve en az 20 koltukla alınır.
 
 - Ticari planlarda (Team, Enterprise, API) girdiler varsayılan olarak model eğitiminde kullanılmaz; bireysel planlarda bu ayar kullanıcıya bağlıdır
 - DPA (Veri İşleme Eki) ticari şartlara otomatik dahildir, ayrıca imza gerekmez; bireysel planlar DPA kapsamı dışındadır. Metni yine de kurumunuzun hukuk müşaviri gözden geçirmelidir

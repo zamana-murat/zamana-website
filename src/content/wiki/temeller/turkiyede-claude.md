@@ -6,7 +6,7 @@ tags:
   - temeller
   - turkiye
   - satin-alma
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 "Claude'un Türkiye temsilcisi kim?" sorusunun kısa cevabı: **yok**. Ama bu, Claude'u Türkiye'den kullanamayacağınız anlamına gelmiyor. Bu sayfa, Türkiye'deki bir şirket yöneticisinin ya da çalışanının sorduğu soruları sırayla cevaplıyor: erişim, satın alma, fatura, KVKK, kamu kurumları ve destek.
@@ -26,7 +26,7 @@ Hayır. Anthropic'in Türkiye'de ofisi yok, Türkiye'de resmi temsilcisi ya da d
 **Bir uyarı:** "Claude Türkiye temsilcisiyiz" diyen biriyle karşılaşırsanız, Anthropic'in yetkilendirdiği resmi bir partner ya da yetkili kanal olup olmadığını yazılı sorun. Abonelik, "özel fiyat" ya da "kurumsal paket" adı altında ödeme istenen durumlarda, ödemenin Anthropic'e mi yoksa üçüncü bir tarafa mı gittiğine bakın.
 ## Türkiye'den nasıl satın alınır?
 
-**Bireysel planlar (Pro, Max):** claude.ai üzerinden ya da mobil uygulamadan, kartla satın alınır. ABD fiyatları şöyledir: Pro 20 dolar, Max 5x 100 dolar, Max 20x 200 dolar (aylık). Mobil mağaza fiyatlarını bu sayfada yazmıyoruz, çünkü Anthropic'in bu konuda yayımlanmış bir fiyat sayfası yok; satın alma ekranında gördüğünüz tutar geçerlidir.
+**Bireysel planlar (Pro, Max, Ultra):** claude.ai üzerinden ya da mobil uygulamadan, kartla satın alınır. ABD fiyatları şöyledir: Pro 20 dolar, Max 100 dolar, Ultra 200 dolar (aylık; eski adlarıyla Max 5x ve Max 20x). Mobil mağaza fiyatlarını bu sayfada yazmıyoruz, çünkü Anthropic'in bu konuda yayımlanmış bir fiyat sayfası yok; satın alma ekranında gördüğünüz tutar geçerlidir.
 
 **Team ve Enterprise:** Team için yönetici hesabıyla en az 2 koltuk gerekir ve plan self-serve açılır. Enterprise için self-serve alımda en az 20 koltuk, yıllık taahhüt ve kullanıma göre ek ücret söz konusudur; daha büyük ya da özel şartlı alımlarda Anthropic'in satış ekibiyle görüşülür. Ayrıntı için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) ve [Planlar](/wiki/temeller/planlar/) sayfalarına bakın.
 

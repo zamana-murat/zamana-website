@@ -5,7 +5,7 @@ description: "Claude'un iş yetenekleri: Skills, dosya işleme, Artifacts, görs
 tags:
   - yetenekler
   - giris
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude'un sadece yazı üretmekten çok daha fazlasını yapabildiği yerler. Bu bölüm, bir iş profesyoneline **gerçek zaman kazandıran** on iki yeteneği üç grupta toplar: dört temel, üç ileri ve beş destekleyen yetenek.
@@ -80,7 +80,7 @@ Belirli durumlarda devreye giren yetenekler. Önce temel dördünü oturtun.
 
     ---
 
-    API'si olmayan eski sistemleri Claude ekrandan görerek kontrol etmeyi dener. Research preview; yalnızca Pro ve Max, masaüstü uygulamasında.
+    API'si olmayan eski sistemleri Claude ekrandan görerek kontrol etmeyi dener. Research preview; yalnızca Pro, Max ve Ultra, masaüstü uygulamasında.
 
     [→ Computer Use](/wiki/yetenekler/computer-use/)
 

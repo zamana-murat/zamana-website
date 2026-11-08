@@ -7,7 +7,7 @@ lead: "Claude Science, araştırmacıların analiz çalıştırdığı, veritaba
 heroImage: "/images/claude/science/hero.webp"
 heroAnimation: "science"
 heroAlt: "Claude Science için Türkçe örnek animasyon: bir araştırmacı tek hücre verisinin kümelenmesini istiyor, analiz adımları çalışıyor, hücre tipi haritası çıkıyor ve şeklin hangi kodla üretildiği kayıt altında gösteriliyor. Veriler kurgusaldır."
-availability: "Beta; macOS, Windows ve Linux'ta Pro, Max, Team ve Enterprise planlarında. Team ve Enterprise'ta önce yönetici etkinleştirir. Free'de yok"
+availability: "Beta; macOS, Windows ve Linux'ta Pro, Max, Ultra, Team ve Enterprise planlarında. Team ve Enterprise'ta önce yönetici etkinleştirir. Free'de yok"
 sourceUrl: "https://claude.com/product/claude-science"
 sourceTitle: "Claude Science (beta)"
 related:
@@ -17,7 +17,7 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Türkiye'de Claude (wiki)", href: "/wiki/temeller/turkiyede-claude/" }
 order: 50
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -52,7 +52,7 @@ Uygulama yaşam bilimleri için ayarlı. Muhasebe, satış veya yönetim gibi ge
 
 ## Nasıl başlarsınız?
 
-1. Planınızı kontrol edin: Pro, Max, Team veya Enterprise gerekir. Team ve Enterprise'ta yönetici uygulamayı önce etkinleştirmelidir.
+1. Planınızı kontrol edin: Pro, Max, Ultra, Team veya Enterprise gerekir. Team ve Enterprise'ta yönetici uygulamayı önce etkinleştirmelidir.
 2. Uygulamayı verinizin bulunduğu yere kurun: dizüstü bilgisayar, laboratuvar sunucusu, HPC giriş düğümü veya bulut sanal makinesi. Kurulum belgesi Anthropic'in dokümantasyonunda. macOS, Windows ve Linux desteklenir. Arayüze tarayıcınızdan bağlanırsınız.
 3. Hesaplama için yerel çekirdek, SSH üzerinden Slurm kümeniz veya Modal hesabınızı bağlayın.
 4. Küçük bir proje ve elinizdeki mevcut betikle başlayın. Uygulama mevcut Python, R ve kabuk betiklerinizi okuyup çalıştırabilir, yeniden yazmanızı gerektirmez.
@@ -60,7 +60,7 @@ Uygulama yaşam bilimleri için ayarlı. Muhasebe, satış veya yönetim gibi ge
 
 ## Hangi planda, nelere dikkat?
 
-- **Durum ve erişim:** Beta. Kaynağa göre macOS, Windows ve Linux'ta Pro, Max, Team ve Enterprise planlarında kullanılabilir. Enterprise'ta SSO, SCIM, özel roller, kullanım analitiği, Compliance API ve uygulama özelliklerinin (connector, skill, uzak hesaplama, hafıza) yönetimi var. Yöneticilerin yaygınlaştırmadan önce belgeleri incelemesi öneriliyor.
+- **Durum ve erişim:** Beta. Kaynağa göre macOS, Windows ve Linux'ta Pro, Max, Ultra, Team ve Enterprise planlarında kullanılabilir. Enterprise'ta SSO, SCIM, özel roller, kullanım analitiği, Compliance API ve uygulama özelliklerinin (connector, skill, uzak hesaplama, hafıza) yönetimi var. Yöneticilerin yaygınlaştırmadan önce belgeleri incelemesi öneriliyor.
 - **Akademik ve kâr amacı gütmeyen indirim:** Dünyadaki akademik ve kâr amacı gütmeyen araştırma kurumlarındaki aktif bilim insanları için indirimli bir Team planı var; uygunluk grubun baş araştırmacısı üzerinden doğrulanıyor. Türkiye'deki kurumların uygunluğu için kaynakta ayrı bir ifade yok, başvurmadan önce Anthropic'ten teyit alın. Kâr amaçlı şirketler, sözleşmeli araştırma kuruluşları ve sanayi Ar-Ge ekipleri için Team ve Enterprise planları öneriliyor.
 - **Veri gizliliği:** Uygulama sizin altyapınızda çalışır, ham veri kümeleri ve hesaplama yerelde kalır. Ancak komutlara dahil ettiğiniz içerik ve model cevapları Anthropic tarafından standart saklama kurallarıyla işlenir, yani yurt dışına gider. Hasta verisi veya kişisel veri içeren çalışmalarda KVKK ve etik kurul gereklilikleri önce gelir: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/). Ekibinize özel ihtiyaçlar için Anthropic satış ekibiyle görüşmeniz öneriliyor.
 - **Yeni model değil:** Kullanılan modeller planınızdaki Claude modelleridir. Mevcut uzman araçların yerine geçmez, onların birlikte çalıştığı bir tezgâh olarak konumlanır.

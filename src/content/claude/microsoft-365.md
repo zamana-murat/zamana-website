@@ -17,7 +17,7 @@ related:
   - { label: "Claude vs Copilot (wiki)", href: "/wiki/temeller/claude-vs-copilot/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 51
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -43,7 +43,7 @@ En önemli fark, **tek bir konuşmanın uygulamalar arasında sürmesidir.** Out
 
 ## Nasıl başlarsınız?
 
-1. Ücretli bir Claude planınız olduğundan emin olun (Pro, Max, Team ya da Enterprise).
+1. Ücretli bir Claude planınız olduğundan emin olun (Pro, Max, Ultra, Team ya da Enterprise).
 2. Excel, PowerPoint ve Word için "Microsoft 365 için yükle" bağlantısından, Outlook için ayrı olan "Outlook için yükle" bağlantısından eklentileri kurun. Kurumsal Microsoft 365'te IT yöneticisinin eklenti kurulumuna izin vermesi gerekebilir.
 3. Claude hesabınızla giriş yapın. Bulut sağlayıcınız üzerinden bağlanmak istiyorsanız, Microsoft Foundry, Amazon Bedrock ya da Google Cloud Vertex AI kimlik bilgileriyle de bağlanabilirsiniz.
 4. Önce kendi şablonlarınız üzerinde küçük bir iş deneyin: bir slayt, bir bölüm, bir tablo.

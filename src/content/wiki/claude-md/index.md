@@ -5,7 +5,7 @@ description: "Claude'a kendinizi bir kez tanıtın: profil talimatı, proje ve C
 tags:
   - claude-md
   - giris
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Ciddi Claude kullanımının kalbinde kalıcı talimat vardır.**
@@ -97,7 +97,7 @@ Tüm bölüm tek bir ilkeyi farklı açılardan anlatır:
 
 > **Claude'u her gece geceyarısı hafızası silinen harika bir meslektaş olarak düşünün. Sizin işiniz, geceyarısından önce önemli şeyleri yazmaktır.**
 
-Profil talimatı, proje ve klasördeki CLAUDE.md bu "geceyarısı notlarının" farklı biçimleridir. Claude'un kendi biriktirdiği yerleşik hafıza bunlara ek olarak çalışır (Free, Pro ve Max'te varsayılan açık), ama o sizin yazdığınız açık kuralın yerini tutmaz.
+Profil talimatı, proje ve klasördeki CLAUDE.md bu "geceyarısı notlarının" farklı biçimleridir. Claude'un kendi biriktirdiği yerleşik hafıza bunlara ek olarak çalışır (Free, Pro, Max ve Ultra'da varsayılan açık), ama o sizin yazdığınız açık kuralın yerini tutmaz.
 
 Kullandıkça büyür. Büyüdükçe Claude daha akıllı hale gelir ve bu akıllılık **sizde kalır**: metin sizin elinizdedir, yeni bir bilgisayara ya da yeni bir araca taşırsınız. Ekibinize katılan başka biri kendi metnini yazar, ama sizinkinden öğrenir.
 

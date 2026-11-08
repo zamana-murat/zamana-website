@@ -6,7 +6,7 @@ tags:
   - prompting
   - hatalar
   - troubleshooting
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Pratikte gözlenen bir gerçek: insanlar Claude'la başarısız olurken **benzer hatalarla** başarısız oluyor. Bu sayfa o on hatayı ve her birinin spesifik düzeltmesini içeriyor.
@@ -64,7 +64,7 @@ Claude ilk cevabı nadiren mükemmel verir. İlk çıktı çoğu zaman iyi bir t
 > *"TÜSİAD başkanı kim?"*
 
 **Neden başarısız olur:**
-Claude'un eğitim bilgisinin bir kesim tarihi vardır (Fable 5.1, Opus 5.5 ve Sonnet 5.5 için Haziran 2026; Haiku 4.5 için güvenilir bilgi Şubat 2025'e kadar. Modeller için bkz: [Modeller](/wiki/temeller/modeller/), sınırlar için [Sınırlamalar](/wiki/temeller/sinirlamalar/)). Sonrasında değişen bir isim ya da rakamı güncel sanıp **emin bir tonla** söyleyebilir. Buna "halüsinasyon" denir.
+Claude'un eğitim bilgisinin bir kesim tarihi vardır (Fable 5.1, Opus 5.5 ve Sonnet 5.5 için Haziran 2026; legacy Haiku 4.5 için güvenilir bilgi Şubat 2025'e kadar. Modeller için bkz: [Modeller](/wiki/temeller/modeller/), sınırlar için [Sınırlamalar](/wiki/temeller/sinirlamalar/)). Sonrasında değişen bir isim ya da rakamı güncel sanıp **emin bir tonla** söyleyebilir. Buna "halüsinasyon" denir.
 
 **Düzeltme:**
 Claude'u düşünme ortağı olarak görün, gerçek arama motoru olarak değil.

@@ -8,7 +8,7 @@ tags:
   - yukleme-sinirlari
   - pdf
   - excel
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude, metin tabanlı bir araç olmanın çok ötesinde **dosyalarla çalışan bir sistemdir**. Bir PDF okur, bir Excel tablosu oluşturur, bir Word raporu düzenler, bir görsel analiz eder; hepsi aynı oturumda.
@@ -62,14 +62,14 @@ Claude sohbette de, Cowork görevinde de yeni dosyalar oluşturabilir. Code exec
 
 Claude bir dosya ürettiğinde konuşmada bir bağlantı ya da önizleme olarak görürsünüz; açar, indirir, kendi klasörünüze kaydedersiniz. Önemli çıktıyı kendi klasörünüze (OneDrive, Drive ya da şirket paylaşımı) siz kaydetmeyi alışkanlık edinin.
 
-Cowork'te yerel klasör bağlayarak çalışmak da mümkündür; klasör erişimi masaüstü uygulaması ister. 6 Ekim 2026'dan beri Pro ve Max'te yeni Cowork görevleri bulutta çalışır. Klasör bağlama, zamanlanmış işler ve bulut/yerel ayrımı için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
+Cowork'te yerel klasör bağlayarak çalışmak da mümkündür; klasör erişimi masaüstü uygulaması ister. 6 Ekim 2026'dan beri Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır. Klasör bağlama, zamanlanmış işler ve bulut/yerel ayrımı için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
 
 ## Yükleme Sınırları
 
 - **Sohbette:** dosya başına en çok 500 MB, sohbet başına en çok 20 dosya; PDF'de en çok 1000 sayfa (100 sayfaya kadar metin ve görsel, sonrası yalnız metin). Görselde mesaj başına 20 görsel, görsel başına 10 MB
-- **Projelerde:** proje dosyası başına 30 MB; dosya sayısı sınırsız ama bilgi tabanı bağlama sığmalıdır. Sınıra yaklaşınca Pro, Max, Team ve Enterprise'ta RAG modu kapasiteyi 10 kata kadar artırır
+- **Projelerde:** proje dosyası başına 30 MB; dosya sayısı sınırsız ama bilgi tabanı bağlama sığmalıdır. Sınıra yaklaşınca Pro, Max, Ultra, Team ve Enterprise'ta RAG modu kapasiteyi 10 kata kadar artırır
 - **Code execution'da:** dosya başına 30 MB (yükleme ve indirme)
-- Çok büyük dosyalar (1.000 sayfayı aşan raporlar, gigabyte'lık veri setleri) bağlam penceresine sığmayabilir. 200K bağlamlı Claude Haiku 4.5 ile yüzlerce sayfalık belgelerde de aynı sorun çıkar
+- Çok büyük dosyalar (1.000 sayfayı aşan raporlar, gigabyte'lık veri setleri) bağlam penceresine sığmayabilir. 200K bağlamlı eski (legacy) Claude Haiku 4.5 ile yüzlerce sayfalık belgelerde de aynı sorun çıkar
 - Büyük dosyaları **parçalara bölün**: bölüm bölüm işletin
 - Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) [1M token bağlam](/wiki/temeller/modeller/) bu kısıtı büyük ölçüde gevşetir
 - Çok büyük veri için Claude bir Python betiği yazıp dosyayı her seferinde bir bölüm okuyarak işleyebilir ([Code Execution](/wiki/yetenekler/code-execution/))
@@ -96,7 +96,7 @@ Claude'un hazırladığı çıktı resmi belge değildir; resmi e-Fatura ve beya
 Yüklediğiniz ya da Claude'un işlediği dosyanın içeriği, işlenmek üzere Anthropic'e geçer. Cowork'te yerel klasörde çalışsanız da bu böyledir. Sonrası plana bağlıdır:
 
 - **Team ve Enterprise planlarında** girdi ve çıktı varsayılan olarak eğitim için kullanılmaz
-- **Free, Pro ve Max planlarında** tüketici gizlilik ayarına bağlıdır, hesabınızda kontrol edin
+- **Free, Pro, Max ve Ultra planlarında** tüketici gizlilik ayarına bağlıdır, hesabınızda kontrol edin
 
 Kişisel veri içeren dosyalar (bordro, müşteri listesi, kimlik belgesi) için önce [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 

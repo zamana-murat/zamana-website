@@ -7,7 +7,7 @@ tags:
   - agents
   - subagents
   - otonom
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Bir agent, Claude'un birden fazla adım boyunca otonom çalıştığı ve araçlar kullanarak karmaşık görevleri tamamladığı modudur.** Tek bir soruya cevap vermek yerine bir dizi eylemi **planlar, uygular ve gözden geçirir**.
@@ -88,7 +88,7 @@ Bu 10 şirket × 5 bileşen = 50 alt görev.
 
 - **Yavaşlık:** paralel subagent bile olsa agent yaklaşımı tek bir cevaptan yavaştır; araç çağrıları ve doğrulama turları vakit alır
 - **Hata yayılımı:** bir subagent hatalı çıktı üretirse ana birleştirme de etkilenir
-- **Kaynak kullanımı:** agent yoğun kullanım kotayı hızlı tüketir (5 saatlik pencere ve haftalık limit, bkz. [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)); Pro'da sık dolarsa [Max plan](/wiki/temeller/planlar/) bir seçenektir, ama zorunlu değil
+- **Kaynak kullanımı:** agent yoğun kullanım kotayı hızlı tüketir (5 saatlik pencere, Ultra hariç, ve haftalık limit, bkz. [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)); Pro'da sık dolarsa [Max ya da Ultra planı](/wiki/temeller/planlar/) bir seçenektir, ama zorunlu değil
 - **Karmaşık doğrulama:** 20 alt görevin hepsini tek tek kontrol etmek zordur, önemli çıktılarda dikkat ister
 
 ## Geliştiriciler için

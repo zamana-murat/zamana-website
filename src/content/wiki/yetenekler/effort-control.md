@@ -8,10 +8,10 @@ tags:
   - caba
   - opus
   - hiz
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
-**Claude Effort, Claude'un bir göreve ne kadar "çaba" harcayacağını sizin belirlemenizi sağlayan ayardır.** [Modeller](/wiki/temeller/modeller/) sayfasındaki güncel model ailesinin çoğunda vardır; Haiku 4.5 desteklemez.
+**Claude Effort, Claude'un bir göreve ne kadar "çaba" harcayacağını sizin belirlemenizi sağlayan ayardır.** [Modeller](/wiki/temeller/modeller/) sayfasındaki güncel model ailesinin çoğunda vardır; Haiku 4.5 (legacy) desteklemez; Haiku 5.5'te desteği belgelenmemiştir.
 
 Basit mantığı: bazı işler derin düşünme ister (yavaş ama kaliteli), bazıları hızlı cevap ister (yüzeysel ama anında). Effort bu dengeyi **görev başına** sizin kontrolünüze verir.
 
@@ -36,9 +36,9 @@ Effort beş kademelidir:
 | Extra high (xhigh) | Uzun kodlama ve çok adımlı ajan işleri |
 | Max | En derin akıl yürütme |
 
-Effort seçimi Sonnet 5.5, Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Fable 5, Opus 4.7, Opus 4.6 ve Sonnet 4.6'da vardır; Haiku 4.5 listede yoktur. Buradaki "Max" kademesi, Max aboneliğinden ayrı bir şeydir. Kendi menünüzde gördüğünüz kademelere bakın.
+Effort seçimi Sonnet 5.5, Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Fable 5, Opus 4.7, Opus 4.6 ve Sonnet 4.6'da vardır; Haiku 4.5 (legacy) listede yoktur, Haiku 5.5'in desteği belgelenmemiştir. Buradaki "Max" kademesi, Max aboneliğinden ayrı bir şeydir. Kendi menünüzde gördüğünüz kademelere bakın.
 
-İki belirsizlik: claude.ai'deki **varsayılan kademe** Anthropic'in yardım sayfalarında belgelenmemiştir, yani "varsayılan şudur" diye yazamıyoruz. Seçicinin **Free planda** görünüp görünmediği de belgelenmemiştir; Pro, Max, Team ve Enterprise'ta vardır.
+İki belirsizlik: claude.ai'deki **varsayılan kademe** Anthropic'in yardım sayfalarında belgelenmemiştir, yani "varsayılan şudur" diye yazamıyoruz. Seçicinin **Free planda** görünüp görünmediği de belgelenmemiştir; Pro, Max, Ultra, Team ve Enterprise'ta vardır.
 
 ## Effort ve Extended Thinking: Aynı Şey Değil
 
@@ -101,7 +101,7 @@ Anthropic bunu belgelememiş. Model menüsünde seçili olanı görürsünüz.
 Daha derin düşünür ama hata yapmaz demek değildir. Önemli çıktıyı yine doğrulayın.
 
 **Free planda var mı?**
-Pro, Max, Team ve Enterprise'ta vardır. Free için belgelenmemiş.
+Pro, Max, Ultra, Team ve Enterprise'ta vardır. Free için belgelenmemiş.
 
 ## Geliştiriciler için
 
@@ -116,7 +116,8 @@ Pro, Max, Team ve Enterprise'ta vardır. Free için belgelenmemiş.
 > | Fable 5.1 | high | high |
 > | Opus 5.5 | medium | medium |
 > | Sonnet 5.5 | high | medium |
-> | Haiku 4.5 | desteklenmiyor | desteklenmiyor |
+> | Haiku 5.5 | medium | belgelenmemiş |
+> | Haiku 4.5 (legacy) | desteklenmiyor | desteklenmiyor |
 
 ## İlgili Sayfalar
 

@@ -5,7 +5,7 @@ description: "Claude'un beş model ailesi Mythos, Fable, Opus, Sonnet ve Haiku i
 eyebrow: "Model"
 lead: "Claude tek bir model değil, hız ve derinlik dengesi farklı beş aile. Çoğu iş için doğru seçim Sonnet, ağır işler için Opus; geri kalanı ne zaman gerektiğini bu sayfada bulursunuz."
 heroAlt: "Claude model ailesi: Mythos, Fable, Opus, Sonnet ve Haiku"
-availability: "Haiku ve Sonnet Free dahil tüm planlarda. Opus ve Fable ücretli planlarda; Fable Pro ve Team Standard'da kullanım kredisiyle, Max ve Team Premium'da planın içinde. Mythos yalnız davetle."
+availability: "Haiku ve Sonnet Free dahil tüm planlarda. Opus ve Fable ücretli planlarda; Fable Pro ve Team Standard'da kullanım kredisiyle, Max, Ultra ve Team Premium'da planın içinde. Mythos yalnız davetle."
 sourceUrl: "https://www.anthropic.com/claude/opus"
 sourceTitle: "Claude Opus, Sonnet, Haiku, Fable ve Mythos model sayfaları (anthropic.com/claude)"
 related:
@@ -15,7 +15,7 @@ related:
   - { label: "Effort Kontrolü (wiki)", href: "/wiki/yetenekler/effort-control/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 60
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -28,7 +28,7 @@ Claude ile her sohbet ettiğinizde bir **model** konuşur. Anthropic bunları ai
 | Fable | 5.1 | 1M | En güçlü genel model, uzun ve zor işler |
 | Opus | 5.5 | 1M | Ağır iş ve ajanlar |
 | Sonnet | 5.5 | 1M | Hız ve zekâ dengesi, günlük model |
-| Haiku | 4.5 | 200K | En hızlı, hafif işler |
+| Haiku | 5.5 | 1M | En hızlı, hafif işler |
 
 Bağlam penceresi, Claude'un bir konuşmada aynı anda "aklında tutabildiği" metin miktarıdır; sayı büyüdükçe uzun belgeler ve uzun yazışmalar tek konuşmaya sığar (1M, 1 milyon token demektir).
 
@@ -54,7 +54,7 @@ Fable 5.1, **genel kullanıma açık en güçlü modeldir.** Saatler hatta günl
 
 - Free: yok.
 - Pro ve Team Standard koltuk: plana dahil değil, **kullanım kredisi (usage credits)** ile açılır.
-- Max ve Team Premium koltuk: plana dahil; haftalık limitinizin en fazla %50'sine kadar Fable kullanabilirsiniz.
+- Max, Ultra ve Team Premium koltuk: plana dahil; haftalık limitinizin en fazla %50'sine kadar Fable kullanabilirsiniz.
 
 **Dikkat edilecekler:**
 
@@ -68,7 +68,7 @@ Fable 5.1, **genel kullanıma açık en güçlü modeldir.** Saatler hatta günl
 
 Opus 5.5, çoğu işte Fable 5.1 düzeyinde çalışır ve Opus 5'e göre yaklaşık %40 daha ucuza gelir (Anthropic'in tipik iş yükü tahmini). Uzun süren ajan işleri, ileri kodlama, finansal analiz, yoğun belgeleri ve grafikleri okuma, bilgisayar kullanımı ve **hazır kullanılabilir tablo, sunum ve belge üretimi** onun güçlü olduğu yerlerdir. Anthropic, Opus 5.5'in yanıtlarının daha net olduğunu, önemli olandan başladığını ve yazım kurallarınıza uyduğunu söylüyor.
 
-**Ne zaman:** Bir yönetim raporunun tamamını hazırlatıyorsanız, çok kaynaklı bir araştırmayı bitirmesini istiyorsanız, karmaşık bir sözleşme ya da finansal modeli didikleyecekseniz Opus'a geçin. Pro, Max, Team ve Enterprise'ta kullanılabilir; Free'de yok. Plana göre varsayılan modelin hangisi olduğunu resmi kaynaktan doğrulayamadık; model seçiciden kendiniz seçin.
+**Ne zaman:** Bir yönetim raporunun tamamını hazırlatıyorsanız, çok kaynaklı bir araştırmayı bitirmesini istiyorsanız, karmaşık bir sözleşme ya da finansal modeli didikleyecekseniz Opus'a geçin. Pro, Max, Ultra, Team ve Enterprise'ta kullanılabilir; Free'de yok. Plana göre varsayılan modelin hangisi olduğunu resmi kaynaktan doğrulayamadık; model seçiciden kendiniz seçin.
 
 Not: Anthropic, Opus 5.5'i hem kodlama hem bilgi işi için "günlük çalışma atı" olarak öneriyor. Zamana'nın çizgisi, günlük işte Sonnet ile başlayıp işin gerektirdiği yerde Opus'a çıkmaktır.
 
@@ -84,9 +84,9 @@ Free dahil herkes Sonnet 5.5 ile claude.ai'de (web, iOS, Android) sohbet edebili
 
 ## Haiku
 
-Haiku 4.5, ailenin **en hızlı ve en hafif** modelidir (Ekim 2025). Bağlam penceresi 200K, yani öbürlerinden küçüktür. Hız kritik olan, hacmin yüksek olduğu işlerde öne çıkar: canlı müşteri sohbetleri, çok sayıda kaydı tek tek sınıflandırma, alt ajanlar. Free planda da kullanılabilir.
+Haiku 5.5, ailenin **en hızlı ve en hafif** modelidir (API'de Ekim 2026'da güncel aile arasına girdi; Haiku 4.5 artık legacy). Bağlam penceresi 1M, çıktı sınırı 128K. Sohbette (claude.ai) hangi Haiku sürümünün seçilebildiği resmi olarak doğrulanmadı. Hız kritik olan, hacmin yüksek olduğu işlerde öne çıkar: canlı müşteri sohbetleri, çok sayıda kaydı tek tek sınıflandırma, alt ajanlar. Free planda da kullanılabilir.
 
-**Ne zaman:** Basit bir soru, kısa çeviri ya da hızlı bir özet için yeter. Derin analiz, uzun belge ya da hata kaldırmayan bir iş için Sonnet ya da Opus tercih edin. Not: API'de Haiku 4.5'in en erken 15 Ekim 2026'da emekliye ayrılabileceği belirtiliyor; henüz resmi bir duyuru yok.
+**Ne zaman:** Basit bir soru, kısa çeviri ya da hızlı bir özet için yeter. Derin analiz, uzun belge ya da hata kaldırmayan bir iş için Sonnet ya da Opus tercih edin. Not: Haiku 5.5 API'de en erken 7 Ekim 2027'de emekliye ayrılabilir.
 
 ## Hangi planda, nelere dikkat?
 
@@ -100,10 +100,10 @@ Haiku 4.5, ailenin **en hızlı ve en hafif** modelidir (Ekim 2025). Bağlam pen
 | Çok hızlı, basit ve yüksek hacimli işler | Haiku |
 | Siber güvenlik ya da biyoloji araştırması | Mythos (davetle) |
 
-**Plan.** Free'de Haiku ve Sonnet; Pro ve üstünde Opus ve Fable de model seçicide görünür. Fable için yukarıdaki kullanım kredisi kuralı geçerlidir. Bağlam penceresi plana göre değişmez: yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) 1M, Haiku'da 200K.
+**Plan.** Free'de Haiku ve Sonnet; Pro ve üstünde Opus ve Fable de model seçicide görünür. Fable için yukarıdaki kullanım kredisi kuralı geçerlidir. Bağlam penceresi plana göre değişmez: yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5) 1M.
 
 **Limit.** Kullanım limitiniz planınıza bağlıdır; Fable gibi modeller için ayrıca kredi ya da haftalık pay kuralı vardır. Ayrıntı için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
 
-**API fiyatları** (geliştirici kullanımı, milyon token başına girdi / çıktı): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 4.5 $1 / $5. Abonelik (Pro, Max) fiyatlarından ayrıdır. Ödeme USD ile yapılır; Türkiye'de Anthropic ofisi ya da temsilcisi yoktur ([Türkiye'de Claude](/wiki/temeller/turkiyede-claude/)).
+**API fiyatları** (geliştirici kullanımı, milyon token başına girdi / çıktı): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0,10 / $0,50'den (100K token'a kadar istem). Abonelik (Pro, Max, Ultra) fiyatlarından ayrıdır. Ödeme USD ile yapılır; Türkiye'de Anthropic ofisi ya da temsilcisi yoktur ([Türkiye'de Claude](/wiki/temeller/turkiyede-claude/)).
 
 Hangi modelin hangi işte işinize yaradığını ekibinizle birlikte denemek isterseniz [Zamana programlarına](/programlar/) bakabilirsiniz.

@@ -7,12 +7,12 @@ tags:
   - computer-use
   - otomasyon
   - erp
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Computer Use, Claude'a bilgisayar ekranında gözler ve eller veren özelliktir.** Yapılandırılmış bir API veya connector kullanmak yerine Claude ekran görüntüsü alır, ne gördüğünü analiz eder, bir eylem kararı verir ve uygular: tıklar, yazar, kaydırır, gezinir. Sonra yeni bir ekran görüntüsü alır ve devam eder.
 
-**Güncel kapsam:** Computer use bir **research preview**'dur ve yalnızca **Pro ve Max** planlarında vardır; Team ve Enterprise'ta yoktur. Yalnızca masaüstü uygulamasında (macOS 15 ve üstü, Windows) [Cowork](/wiki/araclar/cowork-modu/) ve Claude Code içinde çalışır; claude.ai web sohbetinde yoktur. Açmak için Ayarlar > General > Computer use anahtarını kullanırsınız. İlk çıkış 23 Mart 2026'dır.
+**Güncel kapsam:** Computer use bir **research preview**'dur ve yalnızca **Pro, Max ve Ultra** planlarında vardır; Team ve Enterprise'ta yoktur. Yalnızca masaüstü uygulamasında (macOS 15 ve üstü, Windows) [Cowork](/wiki/araclar/cowork-modu/) ve Claude Code içinde çalışır; claude.ai web sohbetinde yoktur. Açmak için Ayarlar > General > Computer use anahtarını kullanırsınız. İlk çıkış 23 Mart 2026'dır.
 
 Neden önemli? **Çünkü API'si olmayan yazılımlarda da çalışabilir.** Türkiye'deki birçok orta ölçekli şirket hâlâ API'si olmayan eski sistemler kullanıyor. Computer Use, Claude'u bu şirketler için **evrensel bir otomasyon katmanına** yaklaştırır; yine de research preview olduğu için her sistemde aynı güvenilirlikte çalışmaz.
 

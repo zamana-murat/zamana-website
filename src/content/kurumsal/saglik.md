@@ -18,7 +18,7 @@ related:
   - { label: "Yaşam bilimleri için Claude", href: "/kurumsal/yasam-bilimleri/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 120
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Kaynak sayfa ne anlatıyor?
@@ -56,7 +56,7 @@ Araştırma tarafında Anthropic'in ayrı bir ürünü var: veri analizi ve bili
 
 ## HIPAA ve KVKK: aynı şey değil
 
-Kaynak sayfa Claude'un "HIPAA'ya hazır altyapı" üzerinde çalıştığını söylüyor. Enterprise planında HIPAA yapılandırması (Anthropic ile iş ortağı sözleşmesi, BAA) 14 Temmuz 2026'dan beri yöneticinin kendisinin açabileceği (self-serve) bir seçenek. HIPAA yapılandırması yalnız Enterprise'da var; Team ve bireysel planlarda (Free, Pro, Max) açılamıyor. Claude Platform (API) için BAA ayrı bir yoldan yürüyor, yalnız belirli API özellikleri ve modeller kapsamda.
+Kaynak sayfa Claude'un "HIPAA'ya hazır altyapı" üzerinde çalıştığını söylüyor. Enterprise planında HIPAA yapılandırması (Anthropic ile iş ortağı sözleşmesi, BAA) 14 Temmuz 2026'dan beri yöneticinin kendisinin açabileceği (self-serve) bir seçenek. HIPAA yapılandırması yalnız Enterprise'da var; Team ve bireysel planlarda (Free, Pro, Max, Ultra) açılamıyor. Claude Platform (API) için BAA ayrı bir yoldan yürüyor, yalnız belirli API özellikleri ve modeller kapsamda.
 
 BAA'nın kapsamı dar tutulmuştur. Kapsam dışında kalanlar:
 

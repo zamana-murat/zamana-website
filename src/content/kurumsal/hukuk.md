@@ -18,7 +18,7 @@ related:
   - { label: "Plugin'ler", href: "/claude/plugins/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 80
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -53,7 +53,7 @@ Aşağıdaki örnekler kurgusaldır:
 ## Sır saklama, gizlilik ve KVKK
 
 - **Avukatın sır saklama yükümlülüğü:** Avukatlık Kanunu avukatlara sır saklama yükümlülüğü getirir. Müvekkil bilgisini bir yapay zekâ hizmetine göndermenin bu yükümlülük ve meslek kuralları açısından nasıl değerlendirileceğini büronuz ya da şirket hukuk biriminiz kendisi belirlemelidir; bu sayfa bir hukuki görüş değildir.
-- **Plan seçimi:** Müvekkil ve şirket verisi için kişisel Free, Pro veya Max hesapları kullanmayın. Team ve Enterprise planlarında girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz, Anthropic'in veri işleme eki (DPA) ticari şartlara dahildir. Enterprise'da denetim kayıtları, rol bazlı erişim ve Compliance API vardır.
+- **Plan seçimi:** Müvekkil ve şirket verisi için kişisel Free, Pro, Max veya Ultra hesapları kullanmayın. Team ve Enterprise planlarında girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz, Anthropic'in veri işleme eki (DPA) ticari şartlara dahildir. Enterprise'da denetim kayıtları, rol bazlı erişim ve Compliance API vardır.
 - **Yurt dışına aktarım:** Claude'a gönderilen veriler model işlemesi için Anthropic'e, yani yurt dışına gider. Dava dosyalarında sık görülen özel nitelikli kişisel veriler (sağlık, ceza mahkûmiyeti gibi) ayrıca korunur. Aktarımın dayanağını hukuk biriminizle teyit edin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Pratik kural:** Mümkün olan yerde taraf adlarını, T.C. kimlik numaralarını ve dosya numaralarını maskeleyin. İnceleme için çoğu zaman maddenin metni yeterlidir, tarafların kimliği gerekmez.
 

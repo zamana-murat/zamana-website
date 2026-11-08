@@ -7,7 +7,7 @@ lead: "Claude for Chrome, açık sekmenizdeki sayfayı okur, bağlantılara tık
 heroImage: "/images/claude/chrome/hero.webp"
 heroAnimation: "chrome"
 heroAlt: "Tarayıcı yan panelinde Claude, tedarikçi portalındaki son 3 faturayı takip tablosuna işliyor ve kaydetmeden önce kullanıcıdan onay istiyor"
-availability: "Tüm ücretli planlarda (Pro, Max, Team, Enterprise); Free'de yok. Yalnız masaüstü Google Chrome."
+availability: "Tüm ücretli planlarda (Pro, Max, Ultra, Team, Enterprise); Free'de yok. Yalnız masaüstü Google Chrome."
 sourceUrl: "https://claude.com/claude-in-chrome"
 sourceTitle: "Claude in Chrome: A helping hand across all your tabs"
 related:
@@ -17,7 +17,7 @@ related:
   - { label: "MCP Güvenliği (wiki)", href: "/wiki/mcp/guvenlik/" }
   - { label: "Claude in Chrome genel kullanıma açıldı (haber)", href: "/haberler/2026-08-26-claude-in-chrome-genel-kullanima-acildi/" }
 order: 50
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -56,7 +56,7 @@ Claude Cowork'e artık yerleşik bir tarayıcı da geldi: kurulum gerektirmez ve
 
 ## Hangi planda, nelere dikkat?
 
-**Plan.** Pro, Max, Team ve Enterprise. Free planda yok. Yalnız **masaüstü Google Chrome** desteklenir; Edge, Brave gibi diğer Chromium tarayıcılarda ve mobilde çalışmaz.
+**Plan.** Pro, Max, Ultra, Team ve Enterprise. Free planda yok. Yalnız **masaüstü Google Chrome** desteklenir; Edge, Brave gibi diğer Chromium tarayıcılarda ve mobilde çalışmaz.
 
 **Güvenlik.** Web'de çalışan her yapay zekanın ortak riski, sayfaya gizlenmiş talimatla yönlendirilmeye çalışılmasıdır (prompt injection). Anthropic koruma katmanları kurduğunu ve gerçek saldırılarla test ettiğini söylüyor; ama kendi sayfasında da bunların kusursuz olmadığını, Claude'un yanlış şey yapabileceğini açıkça yazıyor. Satın alma gibi geri dönüşü olmayan adımlarda Claude durup size sorar. Anthropic'in önerisi: bankacılık, sağlık kayıtları ve paylaşmayacağınız şifrelerle ilgili işlerde kullanmayın, Claude'un onay isteklerini dikkatle okuyun, beklenmedik davranışta durup inceleyin. Test sonuçları ve ayrıntı için [Office ve Chrome sayfası](/wiki/araclar/office-ve-chrome/) ile [MCP Güvenliği](/wiki/mcp/guvenlik/) sayfasına bakın.
 

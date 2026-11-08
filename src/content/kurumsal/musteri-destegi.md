@@ -18,7 +18,7 @@ related:
   - { label: "Claude Platform", href: "/kurumsal/platform/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 60
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -55,7 +55,7 @@ Anthropic'in resmi açık depodaki müşteri desteği plugin'inde bu işler içi
 
 Destek talepleri ad, telefon, adres, sipariş ve bazen sağlık ya da ödeme bilgisi içerir. Claude'a giden her metin, model işlemesi için Anthropic'e (yurt dışına) gider. Bu yüzden:
 
-- Ekip kullanımında Team veya Enterprise planı tercih edin: bu planlarda girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz ve Anthropic'in veri işleme eki (DPA) ticari şartlara dahildir. Kişisel Free, Pro veya Max hesaplarıyla müşteri verisi işlemeyin.
+- Ekip kullanımında Team veya Enterprise planı tercih edin: bu planlarda girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz ve Anthropic'in veri işleme eki (DPA) ticari şartlara dahildir. Kişisel Free, Pro, Max veya Ultra hesaplarıyla müşteri verisi işlemeyin.
 - Müşterilere yönelik aydınlatma metninizde, taleplerin yurt dışındaki hizmet sağlayıcılarca işlenebileceğini ve aktarımın dayanağını hukuk biriminizle birlikte değerlendirin. Yurt dışına aktarım şartları KVKK'da ayrıca düzenlenmiştir; uygulamayı hukuk biriminizle teyit edin.
 - Kart numarası, T.C. kimlik numarası gibi verileri Claude'a gönderilen metinden ayıklamayı veya maskelemeyi kural haline getirin.
 - Hangi temsilcinin neyi gönderdiği kayıt altında olmalı. Enterprise planında denetim kayıtları ve Compliance API bulunur.

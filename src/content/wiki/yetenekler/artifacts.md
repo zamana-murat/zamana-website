@@ -7,12 +7,12 @@ tags:
   - artifacts
   - dashboard
   - cowork
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Artifacts, Claude'un ürettiği kendi kendine yeten, interaktif çıktılardır.** Sohbetin yanında bir panelde açılır; metin cevabı yerine **dönüp bakabileceğiniz, düzenleyebileceğiniz, paylaşabileceğiniz** bir şeye dönüşür.
 
-Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro ve Max'te kademeli, diğer planlarda sonra). Bu yüzden artifact'i artık "sohbet artifact'i" ve "Cowork artifact'i" diye ikiye bölmek gerekmez: **standart artifact** her yerde aynı davranır. Yayılım durumu için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
+Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro, Max ve Ultra'da kademeli, diğer planlarda sonra). Bu yüzden artifact'i artık "sohbet artifact'i" ve "Cowork artifact'i" diye ikiye bölmek gerekmez: **standart artifact** her yerde aynı davranır. Yayılım durumu için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
 
 > Claude'un ürün tanıtım sayfası için: [Claude Artifacts](/claude/artifacts/). Bu sayfa kurulum, karar ve sınırları anlatır.
 

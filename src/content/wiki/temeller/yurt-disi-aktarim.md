@@ -7,7 +7,7 @@ tags:
   - kvkk
   - yurt-disi-aktarim
   - gizlilik
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude'a kişisel veri girmeden önce şirketlerin en sık atladığı soru: **bu veri yurt dışına aktarılıyor, dayanağınız ne?** Bu sayfa [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasının yurt dışı aktarım bölümünün ayrıntısıdır. Plan, DPA ve eğitim ayarı gibi genel başlıklar orada.
@@ -42,7 +42,7 @@ Anthropic ABD merkezli bir şirket. Claude'a kişisel veri yüklediğinizde bu v
 ## Claude'a kişisel veri yüklemeden önce şirketiniz ne yapmalı
 
 1. **Gerçekten kişisel veri girecek misiniz?** Girmeyecekseniz politikanıza "kişisel veri yasak" yazın ve burada durun. İsim yerine kod kullansanız bile yeniden kimliklendirilebilen veri kişisel veri olarak kalabilir.
-2. **Ticari plan kullanın.** Team, Enterprise ya da API. Free, Pro ve Max'te DPA yoktur ve veri işleyen ilişkisi belgesizdir.
+2. **Ticari plan kullanın.** Team, Enterprise ya da API. Free, Pro, Max ve Ultra'da DPA yoktur ve veri işleyen ilişkisi belgesizdir.
 3. **İşleme şartınızı ve aydınlatmanızı hazırlayın.** Hangi m.5 (özel nitelikli veride m.6) şartına dayandığınızı yazın. Aydınlatma metniniz (m.10) verinin kimlere ve hangi amaçla aktarılabileceğini, yurt dışı aktarımı da içerecek şekilde söylesin.
 4. **Aktarım güvencenizi kurun.** Anthropic'e Türk standart sözleşmesini (veri sorumlusundan veri işleyene) imzalamaya hazır olup olmadığını yazılı sorun. İmza gelirse 5 iş günü içinde Kurum'a bildirin ve takvime işleyin.
 5. **Güvence yoksa kişisel veri yüklemeyin.** Anthropic imzalamıyor ya da yanıt vermiyorsa, kişisel veri içeren işleri Claude dışında tutun ya da hukuk danışmanınızla risk kabulünü yazılı olarak değerlendirin. Açık rızayı düzenli kullanımın dayanağı yapmayın.

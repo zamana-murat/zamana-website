@@ -7,7 +7,7 @@ tags:
   - context-window
   - compaction
   - token
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Context window (bağlam penceresi), Claude'un tek bir konuşmada aynı anda "görebildiği" ve üzerinde çalışabildiği toplam metin miktarıdır.**
@@ -24,7 +24,8 @@ Güncel modellerde yaklaşık limitler (sohbet penceresi; ücretli planlarda far
 |---|---|---|
 | Fable 5.1, Opus 5.5, Sonnet 5.5 | ~1.000.000 token | ~750.000 kelime / ~2.500 sayfa |
 | Bir önceki kuşak (Fable 5, Opus 5, Sonnet 5) | ~500.000 token | ~375.000 kelime / ~1.250 sayfa |
-| Claude Haiku 4.5 | ~200.000 token | ~150.000 kelime / ~500 sayfa |
+| Claude Haiku 5.5 | ~1.000.000 token | ~750.000 kelime / ~2.500 sayfa |
+| Claude Haiku 4.5 (legacy) | ~200.000 token | ~150.000 kelime / ~500 sayfa |
 
 **Token nedir?** Yaklaşık 0,75 İngilizce kelime veya 3-4 karakter. Türkçe metin sayfa başına daha fazla token tutar (sayfa başına ~500-700 token, İngilizcede ~400), yani tablodaki sayfa sayılarını Türkçe belgeler için yaklaşık üçte bir azaltarak düşünün. Ayrıntı: [Prompt ve Token](/wiki/temeller/prompt-ve-token/). Bir iş kullanıcısı token saymaz, ama şunu bilmesi gerekir: **pencere dolabilir**.
 
@@ -34,7 +35,7 @@ Güncel modellerde yaklaşık limitler (sohbet penceresi; ücretli planlarda far
 - Pencere dolduğunda **erken içerik unutulabilir** (eğer compaction devreye girmezse)
 - Çok uzun konuşmalar zamanla **kalite düşüşü yaşar**, ayrıntı için [Sınırlamalar](/wiki/temeller/sinirlamalar/) sayfasına bakın.
 
-Pratik örnek: 300 sayfalık bir PDF, 1M token'lık pencerede belirgin ama yönetilebilir yer tutar; 200K'lık Haiku 4.5'te ise pencerenin büyük kısmını işgal eder ve kalan alanda yaptığınız konuşma kısıtlı olur.
+Pratik örnek: 300 sayfalık bir PDF, 1M token'lık pencerede belirgin ama yönetilebilir yer tutar; 200K'lık eski Haiku 4.5'te ise pencerenin büyük kısmını işgal eder ve kalan alanda yaptığınız konuşma kısıtlı olur.
 
 ## Context Compaction Nasıl Çalışır?
 

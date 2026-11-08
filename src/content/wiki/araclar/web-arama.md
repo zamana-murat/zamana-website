@@ -6,7 +6,7 @@ tags:
   - araclar
   - web-arama
   - guncel-bilgi
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude, bir sorunun cevabı eğitim verisinde olmadığında veya güncel veri gerektiğinde otomatik olarak web'de arama yapar.** Sizin ayar yapmanız ya da "şimdi web'i aç" demeniz gerekmez. Claude bunu kendisi karar verir, sonuçları okur ve cevabını kaynaklarla birlikte sunar.
@@ -19,7 +19,7 @@ Claude şu durumlarda web aramaya başvurur:
 
 - **Güncel veri gerektiren sorular**: bugünkü kur, son haftaki haberler, yeni çıkan yönetmelik
 - **Spesifik bir şirket / kişi / ürün hakkında bilgi**: "X firmasının 2026 ürün lansmanı"
-- **Eğitim kesim tarihinden sonraki olaylar**: modelin bilgi tabanı belli bir tarihte donmuştur, sonrasını bilmek için arama gerekir. Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) güvenilir bilgi kesimi Haziran 2026'dır; Haiku 4.5'te Şubat 2025'tir
+- **Eğitim kesim tarihinden sonraki olaylar**: modelin bilgi tabanı belli bir tarihte donmuştur, sonrasını bilmek için arama gerekir. Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5) güvenilir bilgi kesimi Haziran 2026'dır; eski Haiku 4.5'te Şubat 2025'tir
 - **Doğrulama gerektiren iddialar**: "X istatistiği doğru mu?" gibi sorular
 
 Tetiklemediği durumlar:

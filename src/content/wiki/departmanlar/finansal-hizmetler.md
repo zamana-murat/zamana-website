@@ -8,7 +8,7 @@ tags:
   - bddk
   - kvkk
   - hassas
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Banka, sigorta şirketi, aracı kurum ve faktoring şirketinde iş büyük ölçüde belgedir: kredi dosyası, poliçe, rapor, müşteri yazışması, denetim bulgusu. Claude bu belge işlerinde zaman kazandırır. Ama finansal hizmetler Türkiye'de düzenleyicisi olan, müşteri sırrı ve bilgi sistemleri kuralları bulunan bir sektördür; Claude kullanımı **önce uyum biriminin, sonra kullanıcının işidir**.
@@ -106,7 +106,7 @@ Denetçinin saha notlarından bulgu anlatısı ("tespit, risk, öneri, yönetim 
 
 ## Plan Önerisi
 
-Bireysel plan (Free, Pro, Max) yerine **Team ya da Enterprise öneriyoruz**; **zorunlu değildir**. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz, DPA yalnız ticari ürünlere dahildir. Denetim günlüğü ve Compliance API gibi izleme araçları yalnız Enterprise'tadır; bir bankanın ya da aracı kurumun denetim ihtiyacı varsa bunlar belirleyicidir. Ayrıntı: [Takım ve Admin](/wiki/temeller/takim-ve-admin/). API kullanılıyorsa Zero Data Retention bir API düzenlemesidir ve satış ekibiyle talep edilir.
+Bireysel plan (Free, Pro, Max, Ultra) yerine **Team ya da Enterprise öneriyoruz**; **zorunlu değildir**. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz, DPA yalnız ticari ürünlere dahildir. Denetim günlüğü ve Compliance API gibi izleme araçları yalnız Enterprise'tadır; bir bankanın ya da aracı kurumun denetim ihtiyacı varsa bunlar belirleyicidir. Ayrıntı: [Takım ve Admin](/wiki/temeller/takim-ve-admin/). API kullanılıyorsa Zero Data Retention bir API düzenlemesidir ve satış ekibiyle talep edilir.
 
 Hangi plan olursa olsun, müşteri sırrı ve BDDK/SPK/MASAK kapsamındaki veri için kural aynıdır: uyum birimi izin vermeden girmeyin.
 

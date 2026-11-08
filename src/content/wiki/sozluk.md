@@ -6,7 +6,7 @@ tags:
   - sozluk
   - terimler
   - referans
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude ekosistemindeki terimlerin sade Türkçe karşılıkları. Her terim için kısa açıklama ve, varsa, detaylı sayfaya bağlantı.
@@ -39,7 +39,7 @@ Anthropic'in modellerin yetenek seviyesini sınıflandırma sistemi (ASL-1 ile A
 Claude'u Gmail, Drive, Slack, Notion, CRM gibi üçüncü taraf servislere bağlayan entegrasyon; çoğu OAuth ile yetkilendirilir. Resmi dizinde yaklaşık 900 hazır connector bulunur, MCP ile özel connector da eklenebilir. Logo, Mikro, Paraşüt gibi Türk iş araçlarında resmi connector durumu farklıdır. Detay: [Connectors](/wiki/araclar/connectors/), [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) ve [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/).
 
 **Bağlam Penceresi (Context Window)**
-Claude'un bir sohbette aynı anda görebildiği ve akıl yürütebildiği toplam metin. Plana göre değil modele göre değişir: Fable 5.1, Opus 5.5 ve Sonnet 5.5 için 1M token, Haiku 4.5 için 200K. Uzun belgede sorunuzu belgeden sonra, en sona yazmak yanıtı iyileştirir. Detay: [Context ve Compaction](/wiki/yetenekler/context-compaction/) ve [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/).
+Claude'un bir sohbette aynı anda görebildiği ve akıl yürütebildiği toplam metin. Plana göre değil modele göre değişir: Fable 5.1, Opus 5.5 ve Sonnet 5.5 için 1M token, Haiku 5.5 için 1M, legacy Haiku 4.5 için 200K. Uzun belgede sorunuzu belgeden sonra, en sona yazmak yanıtı iyileştirir. Detay: [Context ve Compaction](/wiki/yetenekler/context-compaction/) ve [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/).
 
 **Bash / Bash tool**
 Kabuk / komut satırı ortamı. Claude izole bir sanal makinede burada kod çalıştırabilir. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
@@ -48,7 +48,7 @@ Kabuk / komut satırı ortamı. Claude izole bir sanal makinede burada kod çal�
 Best Alternative To a Negotiated Agreement: bir pazarlıkta anlaşmaya varılamazsa alacağınız en iyi alternatif. Satınalma ve ticarette kritik. Detay: [Satınalma](/wiki/departmanlar/satinalma/).
 
 **Bilgi Kesim Tarihi (Knowledge Cutoff)**
-Modelin eğitiminden sonraki olayları kendiliğinden bilmediği tarih. Fable 5.1, Opus 5.5 ve Sonnet 5.5 için güvenilir bilgi kesimi Haziran 2026, Haiku 4.5 için Şubat 2025'tir. Güncel konuda web aramasını açmak gerekir. Detay: [Modeller](/wiki/temeller/modeller/).
+Modelin eğitiminden sonraki olayları kendiliğinden bilmediği tarih. Fable 5.1, Opus 5.5 ve Sonnet 5.5 için güvenilir bilgi kesimi Haziran 2026 (Haiku 5.5 için de Haziran 2026), legacy Haiku 4.5 için Şubat 2025'tir. Güncel konuda web aramasını açmak gerekir. Detay: [Modeller](/wiki/temeller/modeller/).
 
 ## C
 
@@ -73,11 +73,8 @@ Koltuk başı aylık 20 USD (yıllık faturalı) artı kullanımın API fiyatıy
 **Claude Marketplace**
 23 Eylül 2026'da açılan katalog; connector, eklenti, ajan, iş ortağı ürünleri ve hizmet ortaklarını tek yerde toplar. Dizindeki connector sayısıyla çelişmez, sayılan birimler farklıdır. Detay: [Connectors](/wiki/araclar/connectors/) ve [Claude Marketplace](/kurumsal/marketplace/).
 
-**Claude Max 5x**
-Aylık 100 USD bireysel plan. Yeni başlayan kullanıcının ilk ayı için önerilir, agresif keşif ritminde Pro limiti yetmez. Ay 2+ kullanıma göre Pro'ya indirilebilir. Detay: [Planlar](/wiki/temeller/planlar/).
-
-**Claude Max 20x**
-Aylık 200 USD bireysel plan. Çok yoğun, sürekli kullanım için. Detay: [Planlar](/wiki/temeller/planlar/).
+**Claude Max**
+Aylık 100 USD bireysel plan (eski adı Max 5x), Pro'nun 5 katı limit. Yeni başlayan kullanıcının ilk ayı için önerilir, agresif keşif ritminde Pro limiti yetmez. Ay 2+ kullanıma göre Pro'ya indirilebilir. Aylık 100 USD API kredisi içerir. Detay: [Planlar](/wiki/temeller/planlar/).
 
 **CLAUDE.md**
 Çalışma klasöründe duran kalıcı talimat dosyası. Yerel Cowork oturumu (masaüstü, klasör bağlı) ve Claude Code okur; sohbet okumaz, bulut Cowork oturumunda okunduğu belgelenmemiştir. Sohbetteki karşılığı için bkz. Instructions for Claude. Detay: [CLAUDE.md Nedir?](/wiki/claude-md/nedir/).
@@ -91,11 +88,14 @@ Slack'te @Claude yazarak Claude'u ekip arkadaşı gibi etiketleme özelliği (23
 **Claude Team**
 Kurumsal plan, Standard koltuk aylık 25 USD (yıllıkta 20), Premium koltuk aylık 125 USD (yıllıkta 100), en az 2 koltuk; paylaşılan Project'ler; SSO; yönetici kontrolleri. Detay: [Planlar](/wiki/temeller/planlar/).
 
+**Claude Ultra**
+Aylık 200 USD bireysel plan (eski adı Max 20x), Pro'nun haftalık 10 katı limit; doğrulanmış hesapta 5 saatlik oturum limiti yoktur. Çok yoğun, sürekli kullanım için. Aylık 200 USD API kredisi içerir. Detay: [Planlar](/wiki/temeller/planlar/).
+
 **Code Execution**
 Claude'un sohbet içinde Python ya da JavaScript kodu yazıp sandbox'ta çalıştırması: gerçek hesap, veri analizi, grafik, xlsx/pptx/docx/pdf dosya üretimi. Free dahil tüm planlarda vardır; Team ve Enterprise'ta owner kapatabilir. Geçici sohbette çalışmaz. Detay: [Code Execution](/wiki/yetenekler/code-execution/).
 
 **Computer Use**
-Claude'un herhangi bir yazılım GUI'si ile etkileşim kurma yeteneği: ekran görüntüleri ile görsel giriş, fare / klavye ile çıkış. Research preview aşamasındadır, yalnızca Pro ve Max'te, Claude Desktop içinde çalışır. Detay: [Computer Use](/wiki/yetenekler/computer-use/).
+Claude'un herhangi bir yazılım GUI'si ile etkileşim kurma yeteneği: ekran görüntüleri ile görsel giriş, fare / klavye ile çıkış. Research preview aşamasındadır, yalnızca Pro, Max ve Ultra'da, Claude Desktop içinde çalışır. Detay: [Computer Use](/wiki/yetenekler/computer-use/).
 
 **Constitutional AI**
 Anthropic'in geliştirdiği AI eğitim yöntemi: modelin "anayasa"ya göre kendi çıktılarını eleştirip iyileştirmesi. Detay: [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/).
@@ -104,7 +104,7 @@ Anthropic'in geliştirdiği AI eğitim yöntemi: modelin "anayasa"ya göre kendi
 Bağlam penceresi dolmaya yaklaşırken eski mesajların otomatik özetlenmesi, uzun oturumları ayakta tutar. claude.ai'de code execution açıkken çalışır, limitten düşmez. Detay: [Context ve Compaction](/wiki/yetenekler/context-compaction/).
 
 **Cowork**
-Claude'un çok adımlı otonom çalışma biçimi. Masaüstünde ücretli planlarda genel kullanıma açık, web ve mobilde beta. 16 Eylül 2026'dan beri sohbetle tek Claude içinde birleşiyor (kademeli yayılım). 6 Ekim 2026'dan itibaren Pro ve Max'te yeni görevler bulutta çalışır. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
+Claude'un çok adımlı otonom çalışma biçimi. Masaüstünde ücretli planlarda genel kullanıma açık, web ve mobilde beta. 16 Eylül 2026'dan beri sohbetle tek Claude içinde birleşiyor (kademeli yayılım). 6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni görevler bulutta çalışır. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
 
 **Cowork Project**
 Cowork içinde kendi klasörü, talimatı, bağlamı ve proje hafızası olan, yalnızca bilgisayarda duran çalışma alanı. claude.ai'deki Project ile aynı şey değildir. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
@@ -120,7 +120,7 @@ Bkz. Effort.
 ## D
 
 **Dispatch**
-Telefonunuzdan masaüstü Cowork oturumunuza görev göndermenizi sağlayan özellik. Pro ve Max için sınırlı beta, yeni kullanıcıya kapalı. Detay: [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
+Telefonunuzdan masaüstü Cowork oturumunuza görev göndermenizi sağlayan özellik. Pro, Max ve Ultra için sınırlı beta, yeni kullanıcıya kapalı. Detay: [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
 
 **DPA (Data Processing Agreement)**
 Veri İşleme Sözleşmesi: KVKK ve GDPR kapsamında veri işleyenle yapılan, kurumsal dağıtım için gereken sözleşme. Anthropic'in DPA'sı yalnızca ticari ürünlerde (Team, Enterprise, API) geçerlidir ve ticari şartlara otomatik dahildir. Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/).
@@ -128,7 +128,7 @@ Veri İşleme Sözleşmesi: KVKK ve GDPR kapsamında veri işleyenle yapılan, k
 ## E
 
 **Effort (Çaba seviyesi)**
-Claude'un bir işe ne kadar derin düşünüp ne kadar token harcayacağını ayarlayan seviye. claude.ai'de gönder düğmesinin yanındaki model menüsünden seçilir; Low, Medium, High, Extra high ve Max kademeleri vardır. Yüksek kademe limiti daha hızlı tüketir. Haiku 4.5 desteklemez. Detay: [Effort Control](/wiki/yetenekler/effort-control/).
+Claude'un bir işe ne kadar derin düşünüp ne kadar token harcayacağını ayarlayan seviye. claude.ai'de gönder düğmesinin yanındaki model menüsünden seçilir; Low, Medium, High, Extra high ve Max kademeleri vardır. Yüksek kademe limiti daha hızlı tüketir. Legacy Haiku 4.5 desteklemez. Detay: [Effort Control](/wiki/yetenekler/effort-control/).
 
 **Extended Thinking / Thinking (Uzatılmış Düşünme)**
 Claude'un yanıtı yazmadan önce kendi içinde akıl yürütmesi. Model menüsünde Effort'tan ayrı bir ayardır: Effort ne kadar çaba harcanacağını, Thinking düşünmenin açık olup olmadığını belirler. Güncel modellerin çoğunda kapatılamaz. Detay: [Effort Control](/wiki/yetenekler/effort-control/).
@@ -136,7 +136,7 @@ Claude'un yanıtı yazmadan önce kendi içinde akıl yürütmesi. Model menüs�
 ## F
 
 **Fable / Mythos**
-Claude ailesinin en güçlü genel modeli Fable 5.1'dir (Mythos sınıfı). Mythos 5.1 yalnızca Project Glasswing katılımcılarına davetle açıktır. Fable, Max ve Team Premium'da plana dahildir (haftalık limitin en fazla %50'sine kadar); Pro ve Team Standard'da yalnızca kullanım kredisi (usage credits) ile kullanılır. Detay: [Modeller](/wiki/temeller/modeller/).
+Claude ailesinin en güçlü genel modeli Fable 5.1'dir (Mythos sınıfı). Mythos 5.1 yalnızca Project Glasswing katılımcılarına davetle açıktır. Fable, Max, Ultra ve Team Premium'da plana dahildir (haftalık limitin en fazla %50'sine kadar); Pro ve Team Standard'da yalnızca kullanım kredisi (usage credits) ile kullanılır. Detay: [Modeller](/wiki/temeller/modeller/).
 
 **Few-shot Prompting**
 Prompt'ta istenen çıktı formatını, stilini veya akıl yürütme kalıbını göstermek için 3-5 örnek sağlamak. Örnekler ilgili ve çeşitli olmalıdır. Detay: [İleri Seviye](/wiki/prompting/ileri-seviye/) ve [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/).
@@ -173,7 +173,7 @@ Claude'un yapılandırılmış veri çıktısında alanların isim ve tipini bel
 Bir Project'e yüklenen belge koleksiyonu; Claude her sohbette referans alır. Bilgi tabanı bağlama sığmayacak kadar büyürse ücretli planlarda RAG moduna geçer ve kapasite 10 kata kadar artar. Detay: [Projects](/wiki/araclar/projects/).
 
 **Kullanım Kredisi (Usage Credits)**
-Abonelik kotası bitince devreye giren, API fiyatıyla çalışan kullandıkça öde bakiyesi; Pro, Max ve Team'de açılabilir. Detay: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/).
+Abonelik kotası bitince devreye giren, API fiyatıyla çalışan kullandıkça öde bakiyesi; Pro, Max, Ultra ve Team'de açılabilir. Detay: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/).
 
 **Kuruluş Talimatı (organizationInstructions)**
 Yöneticinin tüm kullanıcılar için tanımladığı talimat; sohbet, Cowork ve Claude Code oturumlarında sistem istemine eklenir, en çok 3.000 karakterdir. Model için bir rehberdir, zorlayıcı kural değildir. Detay: [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/).
@@ -201,7 +201,7 @@ Niyet Mektubu, uluslararası ticarette alıcı veya satıcının açılış pozi
 Açık standart, Claude ↔ dış servis bağlantıları için. Detay: [MCP Nedir?](/wiki/mcp/nedir/).
 
 **Memory**
-Claude'un otomatik biriktirdiği kişisel bilgi katmanı. Sohbet hafızası 25 Ağustos 2026'dan beri bulut Cowork görevlerinde kullanılır; yerel Cowork oturumları sohbet hafızasını kullanmaz, Cowork projesinin ayrı hafızası vardır. Free, Pro ve Max'te varsayılan açık, Team ve Enterprise'ta varsayılan kapalıdır. CLAUDE.md'den farklı; otomatik öğrenir. Detay: [Memory](/wiki/yetenekler/memory/).
+Claude'un otomatik biriktirdiği kişisel bilgi katmanı. Sohbet hafızası 25 Ağustos 2026'dan beri bulut Cowork görevlerinde kullanılır; yerel Cowork oturumları sohbet hafızasını kullanmaz, Cowork projesinin ayrı hafızası vardır. Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'ta varsayılan kapalıdır. CLAUDE.md'den farklı; otomatik öğrenir. Detay: [Memory](/wiki/yetenekler/memory/).
 
 **Memory Skill**
 `productivity:memory-management`: iki-katmanlı kalıcı bilgi sistemi oluşturur. Detay: [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/).
@@ -257,7 +257,7 @@ Anthropic'in kurumsal yapısı: kâr amacının yanında kamu yararını da göz
 Bilgi tabanındaki belgelerden yalnız ilgili parçaları getirip kullanan teknoloji. Claude'da Project bilgi tabanı büyüdüğünde ücretli planlarda devreye girer. Detay: [Projects](/wiki/araclar/projects/).
 
 **Research (Derin Araştırma)**
-Claude'un çok sayıda arama yapıp kaynaklı rapor hazırladığı mod. Pro, Max, Team ve Enterprise'ta vardır, Free'de yoktur; web arama açık olmalıdır. Standart sohbetle aynı kotayı kullanır ama limiti daha hızlı tüketir. Detay: [Research Mode](/wiki/yetenekler/research-mode/).
+Claude'un çok sayıda arama yapıp kaynaklı rapor hazırladığı mod. Pro, Max, Ultra, Team ve Enterprise'ta vardır, Free'de yoktur; web arama açık olmalıdır. Standart sohbetle aynı kotayı kullanır ama limiti daha hızlı tüketir. Detay: [Research Mode](/wiki/yetenekler/research-mode/).
 
 **RFP / RFQ**
 Request for Proposal / Request for Quote, Teklif Talebi / Fiyat Teklifi Talebi. Satınalma süreçlerinde kullanılır; üretim ve satınalmada standart belgedir. Detay: [Üretim ve İmalat](/wiki/departmanlar/uretim-imalat/), [Satınalma](/wiki/departmanlar/satinalma/).

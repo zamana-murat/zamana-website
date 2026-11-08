@@ -6,7 +6,7 @@ tags:
   - claude-md
   - temel-kavram
   - cowork
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **CLAUDE.md, Claude'un sizi (ve varsa şirketinizi) her oturumda yeniden tanımak zorunda kalmaması için hazırlanan düz metin bir dosyadır.**
@@ -32,7 +32,7 @@ Bu dosyanın (ya da sohbetteki karşılığının) değeri pratikte hızla gör�
 
 ## Neden Önemli?
 
-Claude'un her oturumu kendi bağlamıyla başlar. Yerleşik bir hafızası da vardır (Free, Pro ve Max'te varsayılan açık, Team ve Enterprise'ta varsayılan kapalı), ama o neyi biriktireceğine kendisi karar verir. "Şu kural her zaman geçerli" demek için güvenebileceğiniz bir yer değildir. İki hafta önce anlattığınız pazarlama stratejisinin, şirketinizin adının, sektörünüzün ve tercihlerinizin ne kadarının hatırlanacağını garanti edemezsiniz.
+Claude'un her oturumu kendi bağlamıyla başlar. Yerleşik bir hafızası da vardır (Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'ta varsayılan kapalı), ama o neyi biriktireceğine kendisi karar verir. "Şu kural her zaman geçerli" demek için güvenebileceğiniz bir yer değildir. İki hafta önce anlattığınız pazarlama stratejisinin, şirketinizin adının, sektörünüzün ve tercihlerinizin ne kadarının hatırlanacağını garanti edemezsiniz.
 
 Bu durum iki soruna yol açar:
 

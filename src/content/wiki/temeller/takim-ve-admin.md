@@ -6,7 +6,7 @@ tags:
   - takim
   - admin
   - enterprise
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Bireysel Pro plan tek kişi içindir. Şirkette Claude'u 3, 6, 20 kişi kullanmaya başladığında işler farklılaşır**: fatura merkezileşir, kullanıcı yönetimi, denetim ve veri politikası ortak olur. Bunun için **Team** ve **Enterprise** planları var.
@@ -56,11 +56,11 @@ Fiyatlar ve ekip maliyeti örneği tek yerde tutulur: [Claude Planları](/wiki/t
 
 ## Yeni Kullanıcı Plan Önerisi
 
-Claude'a yeni başlayan bir kullanıcı için **ilk ay Max 5x** öneriyoruz; zorunlu değildir. Pro'nun limiti yeni kullanıcı için çabuk dolar, kişi "Claude çalışmıyor" deyip vazgeçer. Limitlerin nasıl işlediği için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
+Claude'a yeni başlayan bir kullanıcı için **ilk ay Max (eski adı Max 5x)** öneriyoruz; zorunlu değildir. Pro'nun limiti yeni kullanıcı için çabuk dolar, kişi "Claude çalışmıyor" deyip vazgeçer. Limitlerin nasıl işlediği için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
 
 İkinci aydan itibaren gerçek kullanım görüldükçe karma plana geçilebilir:
 
-- Yoğun kullanıcı (günde 4+ saat) → Max 5x veya Max 20x
+- Yoğun kullanıcı (günde 4+ saat) → Max veya Ultra
 - Orta ve hafif kullanıcı (günde 1-3 saat veya daha az) → Pro
 
 Bu öneri bireysel aboneliklerde geçerlidir. Şirket verisi işleyen ekipler için **Team planı zorunlu değildir; merkezi yönetim, faturalama ve veri kontrolü için öneriyoruz.** Team'e geçişte yeni başlayanın koltuk tipi (Standard ya da Premium) kullanım yoğunluğuna göre seçilir. Ayrıntı: [Planlar](/wiki/temeller/planlar/).
@@ -161,7 +161,7 @@ Bu log düzenli olarak SIEM (kurumsal güvenlik bilgi yönetim sistemi) sistemin
 
 ## Veri İşleme Sözleşmesi (DPA)
 
-Anthropic'in **Data Processing Agreement (DPA)** belgesi yalnızca ticari ürünlerde (Team, Enterprise, API) geçerlidir ve ticari şartlara otomatik dahildir, ayrıca imza gerekmez. Free, Pro ve Max DPA kapsamı dışındadır. Bu sözleşme:
+Anthropic'in **Data Processing Agreement (DPA)** belgesi yalnızca ticari ürünlerde (Team, Enterprise, API) geçerlidir ve ticari şartlara otomatik dahildir, ayrıca imza gerekmez. Free, Pro, Max ve Ultra DPA kapsamı dışındadır. Bu sözleşme:
 
 - Anthropic'in **veri işleyen** sıfatıyla rolünü tanımlar
 - Veri koruma ve GDPR çerçevesindeki taahhütleri içerir

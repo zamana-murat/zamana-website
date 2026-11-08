@@ -18,7 +18,7 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Fatura, KDV ve stopaj (wiki)", href: "/wiki/temeller/fatura-ve-kdv/" }
 order: 0
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Claude Enterprise nedir?
@@ -47,7 +47,7 @@ Anthropic'in sayfasına göre Enterprise'da tek koltuk şunları kapsar:
 - **Microsoft 365 ve Chrome:** Excel, Word ve PowerPoint eklentileri, Outlook eklentisi (beta) ve Chrome uzantısı.
 - **Bağlayıcılar ve skill'ler:** Google Drive, Gmail, Slack, Microsoft 365 gibi araçlara bağlanma, şirkete özel bağlayıcı ve skill tanımlama. Slack'te Claude'u etiketlemek (@Claude) de Team ve Enterprise'a özel.
 
-İki not: Hafıza özelliği Team ve Enterprise'da varsayılan olarak kapalı gelir, açıp açmamak yöneticinin kararıdır. Claude'un bilgisayarı doğrudan kullanması (computer use) şu an yalnız Pro ve Max'te var, Enterprise'da yok.
+İki not: Hafıza özelliği Team ve Enterprise'da varsayılan olarak kapalı gelir, açıp açmamak yöneticinin kararıdır. Claude'un bilgisayarı doğrudan kullanması (computer use) şu an yalnız Pro, Max ve Ultra'da var, Enterprise'da yok.
 
 ## Yönetim ve güvenlik kontrolleri
 

@@ -7,7 +7,7 @@ lead: "Artifact, Claude'un sohbette yazıp yanınızda açtığı iştir: bir su
 heroImage: "/images/claude/artifacts/hero.webp"
 heroAnimation: "artifacts"
 heroAlt: "Fiyat teklifi hesaplayıcısı sohbetin yanındaki panelde açılmış: iskonto yüzde 15 yapılmış, teklif toplamı 51.000,00 TL gösteriliyor ve bağlantı kopyalandı bildirimi görünüyor"
-availability: "Artifacts tüm planlarda var. Claude Design, Slides ve Docs ücretli planlarda (Pro, Max, Team, Enterprise) beta; Free'de yok. Enterprise'da yönetici açana kadar kapalı."
+availability: "Artifacts tüm planlarda var. Claude Design, Slides ve Docs ücretli planlarda (Pro, Max, Ultra, Team, Enterprise) beta; Free'de yok. Enterprise'da yönetici açana kadar kapalı."
 sourceUrl: "https://claude.com/features/artifacts"
 sourceTitle: "Claude Artifacts"
 related:
@@ -16,7 +16,7 @@ related:
   - { label: "Planlar (wiki)", href: "/wiki/temeller/planlar/" }
   - { label: "Takım ve Admin (wiki)", href: "/wiki/temeller/takim-ve-admin/" }
 order: 6
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -55,9 +55,9 @@ Artifacts ve alt ürünleri, planınızın kullanım limitinden harcar. Tam bir 
 
 ## Hangi planda, nelere dikkat?
 
-**Plan.** Genel artifacts özelliği tüm planlarda mevcut. Claude Design, Slides ve Docs ise ücretli planlarda beta: Pro, Max ve Team'de varsayılan olarak açık (Ayarlar'dan kapatılabilir), Enterprise'da ise yönetici Organization settings > Artifacts altından açana kadar kapalı. Free planda bu üç ürünün etkileşimli düzenleme arayüzü yok. Planlar için [Planlar sayfasına](/wiki/temeller/planlar/) bakın.
+**Plan.** Genel artifacts özelliği tüm planlarda mevcut. Claude Design, Slides ve Docs ise ücretli planlarda beta: Pro, Max, Ultra ve Team'de varsayılan olarak açık (Ayarlar'dan kapatılabilir), Enterprise'da ise yönetici Organization settings > Artifacts altından açana kadar kapalı. Free planda bu üç ürünün etkileşimli düzenleme arayüzü yok. Planlar için [Planlar sayfasına](/wiki/temeller/planlar/) bakın.
 
-**Paylaşım.** Free, Pro ve Max'te linke sahip herkesle paylaşabilirsiniz. Team ve Enterprise'ta linkler varsayılan olarak kuruluşun içinde kalır; dışarıyla paylaşım, bir Owner ya da Primary Owner "External sharing" ayarını açana kadar kapalıdır. Bir artifact'i görmek ve düzenlemek için karşı tarafın da Claude hesabı olması gerekir. Müşteriye gidecek bir dosya için en güvenli yol PDF ya da PPTX olarak indirip e-postayla göndermektir.
+**Paylaşım.** Free, Pro, Max ve Ultra'da linke sahip herkesle paylaşabilirsiniz. Team ve Enterprise'ta linkler varsayılan olarak kuruluşun içinde kalır; dışarıyla paylaşım, bir Owner ya da Primary Owner "External sharing" ayarını açana kadar kapalıdır. Bir artifact'i görmek ve düzenlemek için karşı tarafın da Claude hesabı olması gerekir. Müşteriye gidecek bir dosya için en güvenli yol PDF ya da PPTX olarak indirip e-postayla göndermektir.
 
 **Veri ve KVKK.** Artifact'e koyduğunuz müşteri ya da çalışan verisi, sohbete yazdığınız veriyle aynı kurala tabidir. Kişisel veri içeren belgeler için şirket içi bir politika belirlemenizi öneririz; ayrıntı [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında. Anthropic'in Türkiye'de ofisi ya da temsilcisi yok; bunun anlamı [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/) sayfasında.
 

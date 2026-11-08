@@ -4,7 +4,7 @@ description: "Claude'u kullanmaya başlarken yönetimden, IT'den, hukuktan ve ç
 tags:
   - temeller
   - itirazlar
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude'u profesyonel hayatınıza getirirken karşılaşılan tipik itirazlar ve dürüst cevapları. Şirket içinde bir karar oturumundan önce, ya da kendi kendinize "değer mi, riski ne, başarabilir miyim" diye sorarken bu sayfa kaynak olabilir.
@@ -89,7 +89,7 @@ Konuyu gerçekten kapsamlı ele almak için: [Gizlilik ve KVKK](/wiki/temeller/g
 
 **Cevap:**
 
-Net cevap: **Team, Enterprise ve API'de hayır, varsayılan olarak eğitimde kullanılmaz** (ticari şartlarda böyle). Free, Pro ve Max planlarında bu, kullanıcının "Claude'u geliştirmeye yardım et" ayarına bağlıdır; varsayılanını resmi kaynaklar net yazmıyor, hesabınızda kontrol edin. Kurumsal kullanımda ayarın kapalı tutulması önerilir.
+Net cevap: **Team, Enterprise ve API'de hayır, varsayılan olarak eğitimde kullanılmaz** (ticari şartlarda böyle). Free, Pro, Max ve Ultra planlarında bu, kullanıcının "Claude'u geliştirmeye yardım et" ayarına bağlıdır; varsayılanını resmi kaynaklar net yazmıyor, hesabınızda kontrol edin. Kurumsal kullanımda ayarın kapalı tutulması önerilir.
 
 Yaygın yanlış anlaşılma: "AI'ya verilen her şey eğitimde kullanılır." Claude'un ticari planlarında bu **doğru değildir**. Rakiplerin kurumsal planları için kendi şartlarını ayrıca kontrol edin.
 
@@ -100,7 +100,7 @@ Yaygın yanlış anlaşılma: "AI'ya verilen her şey eğitimde kullanılır." C
 Üç seviye entegrasyon var:
 
 1. **Hazır connector'lar**: Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot ve resmi dizinde yaklaşık 900 connector. Tek tıkla, OAuth ile, IT müdahalesi minimum.
-2. **API'si olmayan eski sistemler**: [Computer Use](/wiki/yetenekler/computer-use/) ile Claude ekrandan kullanabilir (Logo, Netsis, eski ERP'ler için). Dikkat: Computer Use research preview aşamasında ve yalnızca Pro ve Max planlarında, masaüstü uygulamasında çalışıyor; Team ve Enterprise'ta yok. Kritik üretim süreçlerinde tek dayanak yapmayın.
+2. **API'si olmayan eski sistemler**: [Computer Use](/wiki/yetenekler/computer-use/) ile Claude ekrandan kullanabilir (Logo, Netsis, eski ERP'ler için). Dikkat: Computer Use research preview aşamasında ve yalnızca Pro, Max ve Ultra planlarında, masaüstü uygulamasında çalışıyor; Team ve Enterprise'ta yok. Kritik üretim süreçlerinde tek dayanak yapmayın.
 3. **Özel şirket içi sistemler**: MCP protokolü açık standarttır, IT ekibiniz veya entegrasyon ortağınız özel connector yazabilir.
 
 Türkiye'deki orta ölçekli şirketlerin çoğu için birinci seviye yeterli. Bireysel kullanıcı için bir connector'ın OAuth bağlantısı yaklaşık 5 dakikalık iştir ([İlk 7 Gün](/wiki/temeller/ilk-7-gun/)); kurum genelinde hangi connector'ların açılacağı ise ayrıca bir politika kararıdır.
@@ -163,7 +163,7 @@ Müfettişin sorabileceği 10 standart soru ve cevapları: [Gizlilik ve KVKK](/w
 
 Abonelik maliyeti ekip büyüklüğüne ve kullanım yoğunluğuna göre değişir. Plan karşılaştırması ve örnek ekip hesabı tek yerde duruyor: [Claude Planları](/wiki/temeller/planlar/). Fatura ve vergi tarafı için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/).
 
-**"İlk ay neden Max 5x öneriliyor?"** Yeni kullanıcı ilk ayda agresif keşfeder, connector kurar, skill dener, saatlerce oturur. Pro limiti birkaç saatlik yoğun kullanımda dolabilir ve "çalışmıyor" yanlış algısı vazgeçirir. Bu yüzden yeni başlayanlara ilk ay Max 5x öneriyoruz; zorunlu değil. İkinci aydan itibaren gerçek kullanıma göre hafif kullananlar Pro'ya inebilir.
+**"İlk ay neden Max (eski adı Max 5x) öneriliyor?"** Yeni kullanıcı ilk ayda agresif keşfeder, connector kurar, skill dener, saatlerce oturur. Pro limiti birkaç saatlik yoğun kullanımda dolabilir ve "çalışmıyor" yanlış algısı vazgeçirir. Bu yüzden yeni başlayanlara ilk ay Max öneriyoruz; zorunlu değil. İkinci aydan itibaren gerçek kullanıma göre hafif kullananlar Pro'ya inebilir.
 
 Şirket olarak başlıyorsanız **Team planı zorunlu değildir**; merkezi yönetim, faturalama ve veri kontrolü için öneriyoruz.
 
@@ -204,8 +204,8 @@ Claude Desktop standart bir uygulama, özel yetki istemez, arka planda izleme ya
 
 İki istisnayı bilin ve politikanıza yazın:
 
-- **Computer use** (research preview, yalnızca Pro ve Max, Team ve Enterprise'ta yok) kullanıcı tarafından açılırsa Claude ekranı görüp fare ve klavyeyi kullanabilir; bu durumda klasör sınırı tek başına yeterli bir güvence değildir
-- **6 Ekim 2026'dan itibaren Pro ve Max'te yeni Cowork görevleri bulutta çalışır**, yani yalnızca bilgisayarınızda değil. Bulut görevlerinde hangi dosya ve bağlı hesapların kullanıldığını görev bazında kontrol edin
+- **Computer use** (research preview, yalnızca Pro, Max ve Ultra planlarında, Team ve Enterprise'ta yok) kullanıcı tarafından açılırsa Claude ekranı görüp fare ve klavyeyi kullanabilir; bu durumda klasör sınırı tek başına yeterli bir güvence değildir
+- **6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır**, yani yalnızca bilgisayarınızda değil. Bulut görevlerinde hangi dosya ve bağlı hesapların kullanıldığını görev bazında kontrol edin
 
 Team ve Enterprise'ta hangi özelliklerin açık olacağına yönetici (owner) karar verir: [Takım ve Admin](/wiki/temeller/takim-ve-admin/), [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/).
 
@@ -242,7 +242,7 @@ Herkesin kabul etmesi gereken: "güvenlik mutlak değildir, risk yönetilir." Do
 
 **Cevap:**
 
-Bunu baştan netleştirmek güveni belirler. Kişisel Free, Pro ve Max hesaplarını şirket göremez. Team ve Enterprise'ta yönetim kontrolleri vardır (SSO, harcama tavanı); **Enterprise'ta** ayrıca audit log ve Compliance API (sohbet, dosya ve proje verisine erişim sağlar, yalnızca Primary Owner açar). Yani teknik olarak kurum, kendi Enterprise hesabındaki içeriğe erişebilir.
+Bunu baştan netleştirmek güveni belirler. Kişisel Free, Pro, Max ve Ultra hesaplarını şirket göremez. Team ve Enterprise'ta yönetim kontrolleri vardır (SSO, harcama tavanı); **Enterprise'ta** ayrıca audit log ve Compliance API (sohbet, dosya ve proje verisine erişim sağlar, yalnızca Primary Owner açar). Yani teknik olarak kurum, kendi Enterprise hesabındaki içeriğe erişebilir.
 
 Bu yüzden iki şey şart: çalışana **önceden yazılı bildirim** (neyin kaydedildiği, kimin erişebildiği, hangi amaçla) ve izlemenin amacını "performans cezası" değil "güvenlik ve uyum" olarak sınırlayan bir politika. Çalışan izleme ve KVKK aydınlatma yükümlülüğü hukuk danışmanınızla birlikte çözülür. Ayrıca Team ve Enterprise'ta hafıza varsayılan olarak kapalıdır.
 

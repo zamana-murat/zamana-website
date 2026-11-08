@@ -8,7 +8,7 @@ tags:
   - hafiza
   - kalici-talimat
   - bilgi-tabani
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude'a "beni bir kez tanı" demenin tek bir yolu yoktur.** Her konuşma kendi bağlamıyla başlar; neyin bir sonraki konuşmaya taşınacağı, talimatı **nereye yazdığınıza** bağlıdır. Bu sayfa, Claude'un kalıcı talimat ve hafıza yerlerinin hepsini tek tabloda toplar: hangisi nerede ayarlanır, nerede geçerli, kim yönetir.
@@ -41,7 +41,7 @@ Bölümün diğer sayfaları buraya bağlanır. Prompting sayfalarında geçen "
 | **Proje hafızası** | Ayarlar > Memory açıksa kendiliğinden oluşur | Yalnız o projede; her projenin ayrı hafıza alanı ve özeti var, proje dışı sohbetlerden ayrıdır | Claude biriktirir; siz sohbette söyleyerek ya da düzenleyerek değiştirirsiniz | Yeni proje yapısında ortak hafıza daha da öne çıkıyor: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/) |
 | **Klasörde CLAUDE.md** | Çalıştığınız klasörün içine düz metin dosyası | Yerel Cowork oturumunda (Claude Desktop, klasör bağlı) ve Claude Code'da okunur. Sohbette okunmaz. Bulut Cowork oturumunda okunduğu belgelenmemiş | Siz (Claude oturumda güncelleyebilir) | Cowork yardım sayfaları buna "klasör talimatı" der; dosya adı ve sınırı belgelenmemiş, o yüzden testle doğrulayın (aşağıda) |
 | **Cowork projesi** | Cowork içinde | Yalnız bilgisayarınızda; klasörler, talimat, bağlantılar ve kendi proje hafızası var | Siz | claude.ai projesi değildir, paylaşılmaz. [Cowork Modu](/wiki/araclar/cowork-modu/) |
-| **Yerleşik hafıza** | Ayarlar > Memory ("Generate memory from chats") | Sohbette ve bulutta çalışan Cowork görevlerinde (görev başına "+" menüsünden kapatılır). Bilgisayarda yerel çalışan Cowork oturumları sohbet hafızasını kullanmaz. Geçici sohbette kullanılmaz | Claude biriktirir; siz düzenler | Free, Pro, Max'te varsayılan açık; Team ve Enterprise'ta yönetici açar, üye ayrıca onaylar. Ayrıntı: [Memory](/wiki/yetenekler/memory/) |
+| **Yerleşik hafıza** | Ayarlar > Memory ("Generate memory from chats") | Sohbette ve bulutta çalışan Cowork görevlerinde (görev başına "+" menüsünden kapatılır). Bilgisayarda yerel çalışan Cowork oturumları sohbet hafızasını kullanmaz. Geçici sohbette kullanılmaz | Claude biriktirir; siz düzenler | Free, Pro, Max ve Ultra'da varsayılan açık; Team ve Enterprise'ta yönetici açar, üye ayrıca onaylar. Ayrıntı: [Memory](/wiki/yetenekler/memory/) |
 | **Kuruluş talimatı** | Yönetici, cihaz yönetimi veya yerel yapılandırma dosyasıyla | Sohbet, Cowork ve Code oturumlarının hepsinde sistem istemine eklenir | Kuruluş yöneticisi | En çok 3.000 karakter. Model için bir rehberdir, zorlayıcı değildir: kritik kuralı tek başına buna emanet etmeyin |
 | **Oturum içi bağlam** | Konuşmanın kendisi | Yalnız o konuşmada | Siz | Yüklediğiniz dosyalar ve söyledikleriniz; konuşma bitince kaybolur |
 | **`memory/` klasörü** (ileri kurulum) | Çalışma klasörünüzde kendi açtığınız dosyalar | Klasörle çalışılan oturumlarda, CLAUDE.md'den "bak" denirse | Siz, Claude'un yardımıyla | İsteğe bağlıdır; aşağıda anlatılıyor |
@@ -78,7 +78,7 @@ En geniş ve en kolay yerdir. Hangi uygulamada olursanız olun sohbetlerinizde g
 
 Bir projeye girdiğinizde proje talimatı ve dosyaları o projedeki her sohbette hazırdır. "XYZ Gıda ile 3 yıldır çalışıyoruz, karar verici Ahmet Bey, bütçe dar" gibi bilgiler profil talimatına değil, o müşterinin projesine aittir. Profil talimatı genel tarzınızı, proje ise o işin ayrıntısını taşır; Claude ikisini birleştirir.
 
-> **Güncel durum:** Projects 17 Eylül 2026'da yeniden tasarlandı (beta, kademeli açılıyor). Yeni yapıda proje, paralel çalışan konuşmalardan ve bir koordinatörden oluşuyor; her konuşma projenin **ortak hafızasına** katkı yapıyor. Pro ve Max'teki mevcut projeler olduğu gibi çalışmaya devam ediyor. Ayrıntı: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
+> **Güncel durum:** Projects 17 Eylül 2026'da yeniden tasarlandı (beta, kademeli açılıyor). Yeni yapıda proje, paralel çalışan konuşmalardan ve bir koordinatörden oluşuyor; her konuşma projenin **ortak hafızasına** katkı yapıyor. Pro, Max ve Ultra'daki mevcut projeler olduğu gibi çalışmaya devam ediyor. Ayrıntı: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
 
 Klasik projede bilgi tabanını siz güncellersiniz. Her oturumun sonunda Claude'a "bugün neyi öğrendik, özetle" deyip çıkan özeti proje talimatına eklemeye alışın.
 

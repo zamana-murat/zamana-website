@@ -7,7 +7,7 @@ tags:
   - scheduled-tasks
   - otomasyon
   - cowork
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Cowork, belirli aralıklarla otomatik çalışan görevler oluşturmanıza izin verir.** Bir kere kurarsınız; siz bir daha dokunmazsınız.
@@ -45,7 +45,7 @@ Cowork'te herhangi bir konuşmada `/schedule` yazın ve ne otomasyon istediğini
 
 ## Nerede Çalışır: Bulut mu, Bilgisayarınız mı?
 
-**6 Ekim 2026'dan itibaren Pro ve Max'te yeni Cowork görevleri bulutta çalışıyor** ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni kurduğunuz görevler için bilgisayarın açık ve uyanık kalması gerekmiyor. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler ise yine masaüstü uygulaması ister. Görevlerinizin hangi modda çalıştığını ayarlardan doğrulayın.
+**6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor** ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni kurduğunuz görevler için bilgisayarın açık ve uyanık kalması gerekmiyor. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler ise yine masaüstü uygulaması ister. Görevlerinizin hangi modda çalıştığını ayarlardan doğrulayın.
 
 **Yerel kısıt şu durumlarda sürer:** Team, Enterprise ve eski (6 Ekim öncesi kurulmuş) görevler. Güncel durum için yardım merkezindeki duyuruya bakın. Yerel çalışan görevler **sizin makinenizde çalışır**, Anthropic'in sunucularında değil:
 
@@ -61,7 +61,7 @@ Raporu Pazartesi sabahına yerel olarak zamanladıysanız ve bilgisayar o gece k
 
 ## Mobil Entegrasyon
 
-Zamanlanmış görevler mobil ve web Cowork betasında da var (Pro, Max, Team; Enterprise'ta yönetici açtıysa), yani telefondan hem izleyebilir hem kurabilirsiniz. Daha önce Dispatch kurduysanız ([Claude Mobil](/wiki/araclar/claude-mobil/)) (yeni kullanıcılara kapalı), zamanlanmış görev çıktıları Dispatch konuşmanıza da düşer. Yani:
+Zamanlanmış görevler mobil ve web Cowork betasında da var (Pro, Max, Ultra, Team; Enterprise'ta yönetici açtıysa), yani telefondan hem izleyebilir hem kurabilirsiniz. Daha önce Dispatch kurduysanız ([Claude Mobil](/wiki/araclar/claude-mobil/)) (yeni kullanıcılara kapalı), zamanlanmış görev çıktıları Dispatch konuşmanıza da düşer. Yani:
 
 - Pazartesi sabahı 08:00'da rapor üretilir
 - Rapor workspace klasörüne kaydedilir

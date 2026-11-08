@@ -6,7 +6,7 @@ tags:
   - mcp
   - kurulum
   - rehber
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **[MCP](/wiki/mcp/nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır; Claude'daki "connector" bir MCP sunucusudur.** Bu sayfa dizinde olmayan bir MCP sunucusunu Claude'a nasıl ekleyeceğinizi anlatır: özel connector (uzak sunucu URL'si) ve masaüstü uzantısı (yerel).
@@ -35,7 +35,7 @@ Kendi iç sisteminizi (ERP, iç CRM) bağlamak istiyorsanız kim kurar, ne isten
 
 Sağlayıcının ya da sizin barındırdığınız bir MCP sunucusunun adresi elinizdeyse bu yol yeterlidir. Claude'da, Claude Desktop'ta, Cowork'te ve mobilde çalışır; mobilde kurulum beta aşamasındadır, asıl yol web ve Desktop'tır.
 
-**Bireysel planlarda (Free, Pro, Max):**
+**Bireysel planlarda (Free, Pro, Max ve Ultra):**
 
 1. **Customize > Connectors** bölümünü açın.
 2. Özel connector ekleme seçeneğini seçin, sunucunun URL'sini girin.

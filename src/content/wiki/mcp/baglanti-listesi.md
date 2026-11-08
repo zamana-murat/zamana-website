@@ -7,7 +7,7 @@ tags:
   - connector
   - entegrasyon
   - liste
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Ekim 2026 itibarıyla Claude'un resmî dizininde yaklaşık 900 bağlayıcı (connector) bulunur. Connector, bir MCP sunucusudur ([MCP Nedir?](/wiki/mcp/nedir/)). Bu sayfa bunların hepsini değil, iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
@@ -155,7 +155,7 @@ Dizinde olmayan bir sistemi (iç CRM, müşteri portalı, özel veritabanı, yer
 
 İkisi de bir MCP sunucusunun hazır olmasını gerektirir. Bunu BT ekibiniz, yazılım sağlayıcınız ya da bir entegrasyon ortağı kurar; iş kullanıcısının kendi başına yapacağı bir iş değildir. Nereden başlanacağı, kimden ne isteneceği ve pilotun nasıl kurulacağı [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasında.
 
-Alternatif: [Computer Use](/wiki/yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesini denemek (research preview, yalnızca Pro ve Max, masaüstü uygulamasında).
+Alternatif: [Computer Use](/wiki/yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesini denemek (research preview, yalnızca Pro, Max ve Ultra, masaüstü uygulamasında).
 
 ## Kurulum İpuçları
 

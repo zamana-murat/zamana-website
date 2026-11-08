@@ -6,7 +6,7 @@ tags:
   - yetenekler
   - memory
   - bellek
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude'un sohbetler arası bilgiyi hatırladığı bir bellek katmanı vardır.** Sizin kim olduğunuzu, neyle uğraştığınızı, tercihlerinizi otomatik biriktirir; sonraki sohbetlerde bu bilgileri kullanır. Bu sayfa nasıl çalıştığını, [CLAUDE.md](/wiki/claude-md/nedir/) ile farkını ve kontrol mekanizmalarını anlatır.
@@ -81,7 +81,7 @@ Memory'i görmek ve yönetmek için:
 
 Memory'in **açık veya kapalı** olması ayarlanabilir bir tercih:
 
-- **Açık (Free, Pro, Max'te varsayılan):** Claude öğrenip biriktirir
+- **Açık (Free, Pro, Max ve Ultra'da varsayılan):** Claude öğrenip biriktirir
 - **Kapalı (Team ve Enterprise'ta varsayılan):** Her sohbet baştan başlar, hiçbir bilgi taşınmaz
 
 Yeni bir ekip hesabında hafızanın çalışmadığını görürseniz sebep bu olabilir. Aynı **"Generate memory from chats"** ayarıyla açıp kapatılır; Team ve Enterprise'ta kontrol kuruluş sahibindedir ve yönetici açar.
@@ -129,7 +129,7 @@ Memory, sizin Anthropic hesabınıza bağlı bilgi olarak saklanır. KVKK çerç
 - **Veri minimizasyonu:** Yalnızca işe yarayanı tutun, gözden geçirip gereksizleri silin
 - **Bilgi talep hakkı (KVKK m.11):** Hangi verinizin tutulduğunu öğrenme hakkınızın pratik karşılığı, Memory panelinde tüm kayıtları görebilmenizdir
 - **Silme:** Tek tek veya tümünü silebilirsiniz
-- **Eğitim ve saklama:** Free, Pro ve Max'te "Help improve Claude" ayarını kendiniz kontrol edin; ayarın varsayılanına güvenmeyin. Geçici sohbet eğitimde kullanılmaz ama 30 gün saklanır
+- **Eğitim ve saklama:** Free, Pro, Max ve Ultra'da "Help improve Claude" ayarını kendiniz kontrol edin; ayarın varsayılanına güvenmeyin. Geçici sohbet eğitimde kullanılmaz ama 30 gün saklanır
 
 [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası genel veri haklarını anlatır.
 

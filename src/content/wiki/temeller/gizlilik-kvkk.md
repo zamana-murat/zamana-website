@@ -7,7 +7,7 @@ tags:
   - kvkk
   - veri-guvenligi
   - dpa
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Her kurumsal Claude konuşmasının bir yerinde aynı soru çıkar: **"Verilerimize ne olur?"**
@@ -20,12 +20,12 @@ Bu sayfa o soruya net, bağlamlı, Türkiye-odaklı cevap verir. Üç ana başl�
 
 ## Anthropic Verilerinizi Ne Yapar? (Plana Göre)
 
-**Önemli ön bilgi:** Team ve Enterprise planlarında konuşmalarınız varsayılan olarak model eğitiminde kullanılmaz. Free, Pro ve Max'te bu durum tüketici ayarına bağlıdır, yani hesabınızdaki gizlilik ayarı belirler. Hesap ayarınızı bir kez kontrol edin.
+**Önemli ön bilgi:** Team ve Enterprise planlarında konuşmalarınız varsayılan olarak model eğitiminde kullanılmaz. Free, Pro, Max ve Ultra'da bu durum tüketici ayarına bağlıdır, yani hesabınızdaki gizlilik ayarı belirler. Hesap ayarınızı bir kez kontrol edin.
 
 | Plan | Model eğitimi için kullanılır mı? | Konuşma saklama | Notlar |
 |---|---|---|---|
 | **Free** | **Tüketici ayarına bağlı** (Settings → Privacy) | Standart süre | "Claude'u geliştirmeye yardım et" ayarı açıksa konuşmalar eğitimde kullanılabilir; kendi hesabınızda kontrol edin |
-| **Pro / Max** | **Tüketici ayarına bağlı** (Settings → Privacy) | Standart süre | Kurumsal kullanımda kapalı kalmasını öneriyoruz; şirket politika belirlemeli |
+| **Pro / Max / Ultra** | **Tüketici ayarına bağlı** (Settings → Privacy) | Standart süre | Kurumsal kullanımda kapalı kalmasını öneriyoruz; şirket politika belirlemeli |
 | **Team** | Varsayılan: **Hayır** | Standart süre | Ticari şartlar kapsamında; eğitim kullanımı varsayılan olarak kapalıdır |
 | **Enterprise** | Varsayılan: **Hayır** | Özel veri saklama süresi tanımlanabilir; Zero Data Retention plana dahil değildir, API için ayrıca talep edilir (aşağıya bakın) | En sıkı veri kontrolü; DPA ticari şartlara dahil |
 | **API** | Hayır, varsayılan olarak asla | Standart 30 gün (sözleşmeyle farklı olabilir) | Zero Data Retention: satış ekibiyle talep edilen, kuruluş başına etkinleştirilen sözleşme düzenlemesi |
@@ -40,13 +40,13 @@ Tablodaki "standart süre" şu anlama gelir:
 - **Silinen sohbetler:** sildiğinizde 30 gün içinde arka uçtan temizlenir.
 - **Politika ihlali işaretli veri:** otomatik sistemler ihlal olarak işaretlediyse 2 yıla kadar saklanabilir.
 - **Geri bildirim verisi:** Anthropic'e gönderdiğiniz geri bildirim 5 yıl saklanır.
-- **Tüketici planları (Free, Pro, Max):** "Claude'u geliştirmeye yardım et" izni verilmişse 5 yıl, verilmemişse 30 gün.
+- **Tüketici planları (Free, Pro, Max, Ultra):** "Claude'u geliştirmeye yardım et" izni verilmişse 5 yıl, verilmemişse 30 gün.
 
 ### Tüketici Planlarında Eğitim Ayarı
 
-Tüketici kullanıcıları (Free, Pro, Max) için **"Claude'u geliştirmeye yardım et"** (İngilizce adı "Help improve Claude") adlı bir ayar var; Anthropic 2025 Ağustos sonunda duyurdu. Bu açıksa, konuşmalarınız model eğitiminde kullanılabilir ve saklama süresi 5 yıla uzar; kapalıysa saklama 30 gündür. Ayarı istediğiniz zaman değiştirebilirsiniz. Varsayılan konumun açık mı kapalı mı olduğunu resmi kaynaklarda net bulamadık, o yüzden varsayılana güvenmeyin, her hesapta kendiniz kontrol edin.
+Tüketici kullanıcıları (Free, Pro, Max, Ultra) için **"Claude'u geliştirmeye yardım et"** (İngilizce adı "Help improve Claude") adlı bir ayar var; Anthropic 2025 Ağustos sonunda duyurdu. Bu açıksa, konuşmalarınız model eğitiminde kullanılabilir ve saklama süresi 5 yıla uzar; kapalıysa saklama 30 gündür. Ayarı istediğiniz zaman değiştirebilirsiniz. Varsayılan konumun açık mı kapalı mı olduğunu resmi kaynaklarda net bulamadık, o yüzden varsayılana güvenmeyin, her hesapta kendiniz kontrol edin.
 
-**Pratik öneri:** Free, Pro ve Max planındaki çalışanlar ayarlarını kontrol etmeli. Şirket net bir politika belirlemeli. **Kurumsal kullanımda varsayılan: kapatın.**
+**Pratik öneri:** Free, Pro, Max ve Ultra planındaki çalışanlar ayarlarını kontrol etmeli. Şirket net bir politika belirlemeli. **Kurumsal kullanımda varsayılan: kapatın.**
 
 Bunu nasıl yaparsınız:
 
@@ -64,14 +64,14 @@ Bunu nasıl yaparsınız:
 
 ### Claude'un Yapmadığı Şeyler
 
-- **Model oturumlar arasında kendiliğinden bilgi taşımaz.** Ama hafıza (memory) özelliği Free, Pro ve Max'te varsayılan olarak açıktır (Team ve Enterprise'da varsayılan kapalı). Açıksa Claude önceki konuşmalardan özet bilgi saklar; kurumsal kullanımda bu ayarı da politikanıza ekleyin
+- **Model oturumlar arasında kendiliğinden bilgi taşımaz.** Ama hafıza (memory) özelliği Free, Pro, Max ve Ultra'da varsayılan olarak açıktır (Team ve Enterprise'da varsayılan kapalı). Açıksa Claude önceki konuşmalardan özet bilgi saklar; kurumsal kullanımda bu ayarı da politikanıza ekleyin
 - **Bir kullanıcının konuşmasını başka bir kullanıcıyla paylaşmaz**
 - **Açık kimlik doğrulamalı bir MCP connector kurulmadıkça hiçbir sisteme erişmez**
 - Connector'lar dış servislere **Anthropic'in bulutu üzerinden** ulaşır, yerel kurumsal ağınızdan değil (IT firewall planlaması için kritik bilgi)
 
 ## Çalışana Ne Öğretmeli: Hassas Veri Kuralları
 
-Tüketici planlarında (Free, Pro, Max) çalışanlar şunları **kesinlikle Claude'a girmemeli:**
+Tüketici planlarında (Free, Pro, Max, Ultra) çalışanlar şunları **kesinlikle Claude'a girmemeli:**
 
 - **Şifreler, API anahtarları, erişim bilgileri**
 - **Müşterilerin tam adı + iletişim + finansal verisi** (KVKK kapsamında PII, kişisel veri)
@@ -157,7 +157,7 @@ Anthropic, ticari müşterilere **Data Processing Agreement (DPA)** sunar. Bu s�
 
 **Sınırı:** DPA tek başına KVKK m.9 yurt dışı aktarım güvencesi sayılmaz (ayrıntı: [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/)).
 
-**Ticari ürünler (Team, Enterprise, API) için standarttır.** Free, Pro ve Max tüketici ürünleri DPA kapsamı dışındadır, bu KVKK kapsamında sınırlayıcıdır.
+**Ticari ürünler (Team, Enterprise, API) için standarttır.** Free, Pro, Max ve Ultra tüketici ürünleri DPA kapsamı dışındadır, bu KVKK kapsamında sınırlayıcıdır.
 
 ## GDPR (Uluslararası Müşteriler İçin)
 
@@ -176,7 +176,7 @@ Kurumsal dağıtım için IT ekibinizin yapması gerekenler:
 - **Connector trafiği:** Dış servislere (Slack, Drive vb.) Anthropic'in bulutu üzerinden ulaşır, yerel kurumsal ağ üzerinden değil. Firewall planlamasında bu bilgi kritiktir.
 - **VPN uyumluluğu:** Kurumsal VPN bazen Claude Desktop ile çakışır. Eğitim öncesi test edin.
 - **Kurulum yetkisi:** Claude Desktop kurulumu için yönetici hakkı veya IT onayı gerekir.
-- **Cowork görevleri bulutta çalışabilir:** Pro ve Max'te 6 Ekim 2026'dan itibaren yeni Cowork görevleri bulutta çalışır; "yalnızca bilgisayarınızda" seçeneği kaldırılır. Yerel dosya hassasiyeti olan ekipler bunu politikalarına işlemeli.
+- **Cowork görevleri bulutta çalışabilir:** Pro, Max ve Ultra'da 6 Ekim 2026'dan itibaren yeni Cowork görevleri bulutta çalışır; "yalnızca bilgisayarınızda" seçeneği kaldırılır. Yerel dosya hassasiyeti olan ekipler bunu politikalarına işlemeli.
 - **Özel dahili connector'lar:** Şirket içi sistemlere bağlanan MCP server'lar ya açık erişimli olmalı ya da kurumsal ağ perimetresi içinde barındırılmalı.
 
 ## KVKK Müfettişinin Sorabileceği 10 Soru
@@ -197,7 +197,7 @@ Team veya Enterprise plan + SSO ile bu izlenebilir. Bireysel Pro hesaplarda çal
 
 ### 4. Anthropic ile imzalı DPA'nız var mı?
 
-Team, Enterprise ve API gibi ticari ürünlerde DPA ticari şartlara otomatik dahildir. Free, Pro ve Max'te DPA yoktur; bu planlarda kurumsal veri işliyorsanız "veri işleyen" ilişkisi belgesizdir, denetimde risk.
+Team, Enterprise ve API gibi ticari ürünlerde DPA ticari şartlara otomatik dahildir. Free, Pro, Max ve Ultra'da DPA yoktur; bu planlarda kurumsal veri işliyorsanız "veri işleyen" ilişkisi belgesizdir, denetimde risk.
 
 ### 5. Veri yurt dışına aktarılıyor mu? Hangi yetkili çerçevede?
 
@@ -213,7 +213,7 @@ Bu soru zorludur. Claude tarafında "kullanıcı X hakkında ne var" diye spesif
 
 ### 8. Bir güvenlik ihlali durumunda Anthropic sizi nasıl bilgilendirir?
 
-Anthropic'in DPA'sı (Team, Enterprise ve API'yi kapsar) ihlal bildirimi yükümlülüğünü tanımlar; süre ve kapsam için DPA metnine bakın. Free, Pro ve Max tüketici şartlarında DPA kapsamı yoktur, kurumsal ihlal bildirimi beklemeyin.
+Anthropic'in DPA'sı (Team, Enterprise ve API'yi kapsar) ihlal bildirimi yükümlülüğünü tanımlar; süre ve kapsam için DPA metnine bakın. Free, Pro, Max ve Ultra tüketici şartlarında DPA kapsamı yoktur, kurumsal ihlal bildirimi beklemeyin.
 
 ### 9. Çalışanların Claude kullanımı nasıl eğitiliyor?
 
@@ -229,7 +229,7 @@ DPA, ticari şartlara (Commercial Terms) otomatik dahildir ve ayrıca imza gerek
 
 ### 1. Plan Seviyesini Belirleyin
 
-DPA **ticari ürünlerde (Team, Enterprise, API)** geçerli. Free, Pro ve Max tüketici ürünlerinde yok. Önce plan seçilmeli.
+DPA **ticari ürünlerde (Team, Enterprise, API)** geçerli. Free, Pro, Max ve Ultra tüketici ürünlerinde yok. Önce plan seçilmeli.
 
 ### 2. DPA Metnini Edinin
 
@@ -335,7 +335,7 @@ KVKK tüm sektörler için geçerlidir. Ama bazı sektörlerde **ek düzenleyici
 
 Claude'u kurumsal kullanıma açmadan önce tamamlanması gerekenler:
 
-- [ ] Yeni başlayan kullanıcılar için ilk ay **Max 5x** önerisi değerlendirildi (zorunlu değil; Pro limiti yeni kullanıcıya çabuk dolar, ay 2+ Pro'ya inilebilir)
+- [ ] Yeni başlayan kullanıcılar için ilk ay **Max** (eski adı Max 5x) önerisi değerlendirildi (zorunlu değil; Pro limiti yeni kullanıcıya çabuk dolar, ay 2+ Pro'ya inilebilir)
 - [ ] "Claude'u geliştirmeye yardım et" ayarı her çalışanda **kapalı** olarak ayarlandı
 - [ ] Hangi veri kategorilerinin Claude'a girilebileceği yazılı politikada belirlendi
 - [ ] Şirket verisi işleyen ekipler için Team veya Enterprise değerlendirildi (zorunlu değil; merkezi yönetim, faturalama, DPA ve veri kontrolü için önerilir; Team en az 2 koltuk)
@@ -352,7 +352,7 @@ Claude, doğru planla ve doğru uygulamayla **Türkiye'de kurumsal olarak KVKK'y
 
 **Kilit dört hareket:**
 
-1. **Şirket verisi işleyen ekipler için Team veya Enterprise önerilir.** Zorunlu değildir, ama merkezi yönetim, faturalama, DPA ve veri kontrolü yalnız ticari planlarda vardır. Free, Pro ve Max bireysel kullanım içindir, DPA kapsamı dışındadır.
+1. **Şirket verisi işleyen ekipler için Team veya Enterprise önerilir.** Zorunlu değildir, ama merkezi yönetim, faturalama, DPA ve veri kontrolü yalnız ticari planlarda vardır. Free, Pro, Max ve Ultra bireysel kullanım içindir, DPA kapsamı dışındadır.
 2. **DPA'yı inceleyip dosyalayın.** İşleyen ilişkisinin ve GDPR'ın sözleşme omurgası budur; KVKK yurt dışı aktarım güvencesi yerine geçmez.
 3. **Veri politikası belirleyin.** "Nerede Claude'a ne veririm" sorusu yazılı cevaplanmalı.
 4. **Kişisel veri yükleyecekseniz KVKK m.9 dayanağını kurun.** Standart sözleşme yolunu hukuk danışmanınızla ve Anthropic ile netleştirmeden kişisel veri yüklemeyin.

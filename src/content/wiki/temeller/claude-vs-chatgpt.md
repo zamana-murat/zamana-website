@@ -6,7 +6,7 @@ tags:
   - claude
   - chatgpt
   - karsilastirma
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 "Claude mu ChatGPT mi?" sorusu en çok sorulan sorulardan biridir. Kısa ve dürüst cevap şu:
@@ -53,7 +53,7 @@ Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kes
 
 **ChatGPT**: *Code Interpreter* (Advanced Data Analysis) ile Python kodunu sandbox'ta çalıştırır. *GPTs* ile özelleştirilmiş mini-asistanlar yaratabilirsiniz. Dış servislere ChatGPT'nin kendi uygulama ve bağlayıcı katalogu üzerinden bağlanır.
 
-**Claude**: *Cowork* ile bilgisayarınızda izin verdiğiniz klasörlerdeki dosyalara erişir, kod çalıştırır, araç kullanır; 6 Ekim 2026'dan beri Pro ve Max'te yeni Cowork görevleri bulutta da çalışır. *Skills* ile hazır uzmanlık paketleri devreye girer (PDF, Excel, PPTX, marketing, sales, hepsi hazır). *MCP* (Model Context Protocol) ile şirket içi araçlarınıza (Slack, Drive, CRM) bağlanır. *Computer Use* ile ekranı görür ve kontrol eder (research preview, yalnızca Pro ve Max planlarında; bu özelliği açtığınızda Claude klasör sınırının ötesinde ekranınızı da görebilir).
+**Claude**: *Cowork* ile bilgisayarınızda izin verdiğiniz klasörlerdeki dosyalara erişir, kod çalıştırır, araç kullanır; 6 Ekim 2026'dan beri Pro, Max ve Ultra'da yeni Cowork görevleri bulutta da çalışır. *Skills* ile hazır uzmanlık paketleri devreye girer (PDF, Excel, PPTX, marketing, sales, hepsi hazır). *MCP* (Model Context Protocol) ile şirket içi araçlarınıza (Slack, Drive, CRM) bağlanır. *Computer Use* ile ekranı görür ve kontrol eder (research preview, yalnızca Pro, Max ve Ultra planlarında; bu özelliği açtığınızda Claude klasör sınırının ötesinde ekranınızı da görebilir).
 
 **İş akışı açısından:** ChatGPT'nin araç entegrasyonu daha uygulama-odaklı, Claude'unki daha iş-akışı-odaklı. Bir satış yöneticisi için Cowork + Skills kombinasyonu "CRM'e bak, proposal'ı hazırla, Slack'te paylaş" zincirini kuran daha akıcı bir yapı sunar.
 
@@ -81,7 +81,7 @@ Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kes
 
 Bireysel kullanıcı planları benzer:
 
-- **Claude Pro:** 20 USD/ay (Max kademeleri dahil tüm Claude fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında); Sonnet 5.5 ve Opus 5.5 plana dahil, Fable 5.1 yalnızca ek kullanım kredisiyle
+- **Claude Pro:** 20 USD/ay (Max ve Ultra kademeleri dahil tüm Claude fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında); Sonnet 5.5 ve Opus 5.5 plana dahil, Fable 5.1 yalnızca ek kullanım kredisiyle
 - **ChatGPT Plus:** 20 USD/ay, benzer kullanım. ChatGPT'de ayrıca Go (8 USD/ay) ve üç kademeli Pro (100, 200 ve 500 USD/ay) planları var
 
 Kurumsal tarafta Claude Team ve Enterprise fiyatları ile kullanım modeli [Planlar](/wiki/temeller/planlar/) sayfasında. ChatGPT Business kullanıcı başına 20 USD/ay (yıllık faturalı, en az 2 kullanıcı); Enterprise özel fiyatlıdır. Rakip fiyatları Ekim 2026 itibarıyla geçerlidir ve hızlı değişir, güncel fiyat için resmi sayfalara bakın.

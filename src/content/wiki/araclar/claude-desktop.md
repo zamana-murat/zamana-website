@@ -7,7 +7,7 @@ tags:
   - claude-desktop
   - kurulum
   - cowork
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude Desktop, Claude'un Windows, macOS ve Linux için yerel uygulamasıdır.** Kağıt üzerinde başka bir arayüz gibi görünse de pratikte çok daha fazlasıdır: bilgisayarınızdaki gerçek klasörlerle çalışan [Cowork](/wiki/araclar/cowork-modu/)'ün en eksiksiz ortamıdır ve iş kullanımı için web arayüzünden ciddi ölçüde daha güçlüdür.
@@ -23,11 +23,11 @@ Tek cümleyle: yerel dosyalarla ciddi Claude kullanımı Claude Desktop ile baş
 - **Bilgisayarınızda kod çalıştırma**: Cowork'te güvenli sanal makinede Python / PowerShell / Bash
 - **Oturumlar arası kalıcı workspace klasörü**: her şey yerinde kalır, bir dahaki sefere aynı bağlamla başlar
 - **Masaüstüne bağlı yetenekler**: Dispatch, yerleşik tarayıcı ve computer use
-- **Computer use (research preview):** Claude ekranınızı görüp fare ve klavyeyi kullanabilir. Yalnız Pro ve Max'te, masaüstü uygulamasında (macOS 15+ veya Windows) Cowork ve Claude Code içinde çalışır. Web sohbetinde ve Team/Enterprise'ta yoktur. Ayarlar → General → Computer use anahtarından açılır. Ayrıntı: [Computer Use](/wiki/yetenekler/computer-use/)
+- **Computer use (research preview):** Claude ekranınızı görüp fare ve klavyeyi kullanabilir. Yalnız Pro, Max ve Ultra'da, masaüstü uygulamasında (macOS 15+ veya Windows) Cowork ve Claude Code içinde çalışır. Web sohbetinde ve Team/Enterprise'ta yoktur. Ayarlar → General → Computer use anahtarından açılır. Ayrıntı: [Computer Use](/wiki/yetenekler/computer-use/)
 
 Skill'ler, connector'lar, Projects ve kod çalıştırma/dosya oluşturma claude.ai'de de var; bunlar için masaüstü uygulaması şart değildir. Masaüstünün asıl farkı, bunların bilgisayarınızdaki gerçek klasörlerle birleşmesidir.
 
-> **6 Ekim 2026'dan itibaren:** Pro ve Max'te yeni Cowork görevleri bulutta çalışıyor. Yerel klasör erişimi ve computer use gibi masaüstüne bağlı yetenekler ise yine masaüstü uygulaması ister. Ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/).
+> **6 Ekim 2026'dan itibaren:** Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor. Yerel klasör erişimi ve computer use gibi masaüstüne bağlı yetenekler ise yine masaüstü uygulaması ister. Ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/).
 
 ## Sistem Gereksinimleri
 
@@ -39,7 +39,7 @@ Skill'ler, connector'lar, Projects ve kod çalıştırma/dosya oluşturma claude
 
 Güncel gereksinim için resmi kurulum sayfasına bakın: [Claude Desktop kurulumu](https://support.claude.com/en/articles/10065433-installing-claude-desktop).
 
-**Önemli:** Cowork için **en az Pro ($20/ay)** gerekir. Yeni başlayan kullanıcılar için **ilk ay Max 5x ($100/ay)** önerilir (öneri, zorunlu değil): keşif döneminde Pro limiti çabuk dolar ve "çalışmıyor" izlenimi oluşur. İkinci aydan itibaren gerçek kullanıma göre Pro'ya ($20) inebilirsiniz.
+**Önemli:** Cowork için **en az Pro ($20/ay)** gerekir. Yeni başlayan kullanıcılar için **ilk ay Max, eski adıyla Max 5x ($100/ay)** önerilir (öneri, zorunlu değil): keşif döneminde Pro limiti çabuk dolar ve "çalışmıyor" izlenimi oluşur. İkinci aydan itibaren gerçek kullanıma göre Pro'ya ($20) inebilirsiniz.
 
 ## Kurulum
 
@@ -68,7 +68,7 @@ Detaylı IT ve KVKK gereksinimleri için: [Gizlilik ve KVKK](/wiki/temeller/gizl
 
 ## Claude Desktop Açıldığında Ne Görünür?
 
-Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude arayüzünde birleşiyor (kademeli yayılım, önce Pro ve Max). Birleşik arayüz hesabınızda açıldıysa tek bir konuşma görürsünüz. Henüz açılmadıysa uygulamada iki ayrı alan olur: hızlı görevler için [sohbet alanı](/wiki/araclar/claude-chat/) ve workspace klasörünüzle çalışan Cowork alanı. Hangi iş hangisine yakın: [Cowork Modu](/wiki/araclar/cowork-modu/).
+Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude arayüzünde birleşiyor (kademeli yayılım, önce Pro, Max ve Ultra). Birleşik arayüz hesabınızda açıldıysa tek bir konuşma görürsünüz. Henüz açılmadıysa uygulamada iki ayrı alan olur: hızlı görevler için [sohbet alanı](/wiki/araclar/claude-chat/) ve workspace klasörünüzle çalışan Cowork alanı. Hangi iş hangisine yakın: [Cowork Modu](/wiki/araclar/cowork-modu/).
 
 ## Güncelleme
 
@@ -76,7 +76,7 @@ Claude Desktop kendi kendini günceller, arka planda yeni sürüm indirir, yenid
 
 ## Sorun Giderme: Sık Karşılaşılan Durumlar
 
-- **"Cowork görünmüyor":** Hesabınızda Pro veya üstü (Max/Team/Enterprise) abonelik aktif mi? Free hesapla Cowork çalışmaz. Birleşik arayüz açıldıysa ayrı bir Cowork simgesi görmezsiniz, tek konuşmadan çalışırsınız.
+- **"Cowork görünmüyor":** Hesabınızda Pro veya üstü (Max/Ultra/Team/Enterprise) abonelik aktif mi? Free hesapla Cowork çalışmaz. Birleşik arayüz açıldıysa ayrı bir Cowork simgesi görmezsiniz, tek konuşmadan çalışırsınız.
 - **"Workspace klasörü bağlanmıyor":** Cowork ayarlarındaki workspace klasörü bölümüne bakın. Klasörün var olduğundan ve yazma izniniz olduğundan emin olun.
 - **"Connector'lar açılmıyor":** IT firewall Claude'un adreslerini engelliyor olabilir. IT ile izin listesini kontrol edin.
 - **"VPN'de çalışmıyor":** Bazı kurumsal VPN'ler Claude Desktop trafiğini kısıtlar. VPN'i geçici kapatın veya IT ile konuşun.

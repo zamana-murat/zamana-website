@@ -6,14 +6,14 @@ tags:
   - araclar
   - claude-chat
   - web
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude Chat, Claude'un tarayıcı ve mobil uygulamalardaki standart arayüzüdür**, çoğu kişinin Claude'la ilk tanıştığı yerdir. [claude.ai](https://claude.ai) adresinden ve iOS / Android uygulamalarından erişilir.
 
 Bu sayfa Claude Chat'in ne yaptığını, ne yapmadığını ve bir iş profesyonelinin hangi görevleri sohbet tarzında, hangilerini [Cowork](/wiki/araclar/cowork-modu/) tarzında yapması gerektiğini açıklar.
 
-> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor (kademeli yayılım: önce Pro ve Max, Team ve Free için "yakında"). Aynı konuşmada hem soru sorabilir hem "bu verilerden haftalık raporu hazırla" diyebilirsiniz. Hangi iş hangi tarza yakın, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
+> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor (kademeli yayılım: önce Pro, Max ve Ultra, Team ve Free için "yakında"). Aynı konuşmada hem soru sorabilir hem "bu verilerden haftalık raporu hazırla" diyebilirsiniz. Hangi iş hangi tarza yakın, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ## Claude Chat Nedir?
 
@@ -35,7 +35,7 @@ Claude Chat'i şöyle düşünün: **"kurulum gerektirmeyen Claude giriş kapıs
 
 ### Konuşma Geçmişi
 
-Tüm sohbetleriniz sol panelde kaydedilir ve aranabilir. Geçmişe dönebilir, devam ettirebilir, paylaşabilirsiniz. Claude bir sohbete geri döndüğünüzde o konuşmanın bağlamından devam eder. Hafıza özelliği de sohbet ve Cowork arasında ortaktır (Free, Pro ve Max'te varsayılan açık, Team ve Enterprise'ta varsayılan kapalı), bkz. [Memory](/wiki/yetenekler/memory/). Hafıza, CLAUDE.md gibi sizin yazdığınız bir talimat dosyası değildir.
+Tüm sohbetleriniz sol panelde kaydedilir ve aranabilir. Geçmişe dönebilir, devam ettirebilir, paylaşabilirsiniz. Claude bir sohbete geri döndüğünüzde o konuşmanın bağlamından devam eder. Hafıza özelliği de sohbet ve Cowork arasında ortaktır (Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'ta varsayılan kapalı), bkz. [Memory](/wiki/yetenekler/memory/). Hafıza, CLAUDE.md gibi sizin yazdığınız bir talimat dosyası değildir.
 
 ### Dosya Yükleme
 
@@ -55,7 +55,7 @@ Voice mode beta olarak tüm planlarda, mobilde, masaüstünde ve web'de var, ama
 
 ### Artifacts
 
-Claude sohbet penceresi içinde interaktif HTML sayfaları, veri görselleştirmeleri, kod önizlemeleri üretir. Bu "artifacts" satır içinde render edilir, kopyalanabilir veya indirilebilir. Claude Design, Slides ve Docs ürünleri ise ücretli planlarda (Pro, Max, Team, Enterprise) beta olarak sunulur; Free planda yoktur. Free'de sohbette dosya ve artifact üretimi sürer, yalnız bu üç ürünün düzenleme arayüzü gelmez.
+Claude sohbet penceresi içinde interaktif HTML sayfaları, veri görselleştirmeleri, kod önizlemeleri üretir. Bu "artifacts" satır içinde render edilir, kopyalanabilir veya indirilebilir. Claude Design, Slides ve Docs ürünleri ise ücretli planlarda (Pro, Max, Ultra, Team, Enterprise) beta olarak sunulur; Free planda yoktur. Free'de sohbette dosya ve artifact üretimi sürer, yalnız bu üç ürünün düzenleme arayüzü gelmez.
 
 ### Projects
 

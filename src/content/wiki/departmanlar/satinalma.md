@@ -8,7 +8,7 @@ tags:
   - procurement
   - rfp
   - pazarlik
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 > **Operasyondan farkı:** Operasyon **akışı** yönetir: malı A'dan B'ye zamanında getirmek. Satınalma ise **ilişkileri ve şartları** yönetir: kim tedarik eder, ne fiyata, hangi şartlarda. İkisinin kesiştiği yerler vardır ama iş farklıdır. Operasyon çalışanı süreci yürütür; satınalma çalışanı kimin yürüteceğini ve neyin tutulacağını tanımlar.
@@ -117,7 +117,7 @@ Onaylı listeye tedarikçi eklerken veya listeden çıkarırken karar dokümante
 
 **Connector'lar:**
 1. **Microsoft 365 / Google Workspace**: RFP ve sözleşme belgeleri
-2. **ERP** (varsa): satınalma siparişi girişi. Logo, Mikro gibi yerel yazılımların resmi connector'ı yok; dışa aktarım ya da özel bağlantı yolu için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın. Computer use (research preview) yalnız Pro ve Max'te var, Team ve Enterprise'da yok
+2. **ERP** (varsa): satınalma siparişi girişi. Logo, Mikro gibi yerel yazılımların resmi connector'ı yok; dışa aktarım ya da özel bağlantı yolu için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın. Computer use (research preview) yalnız Pro, Max ve Ultra'da var, Team ve Enterprise'da yok
 3. **DocuSign**: tedarikçi sözleşme imzaları
 
 ## İş Akışı Yeniden Tasarımı Adayları

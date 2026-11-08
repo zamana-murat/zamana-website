@@ -7,7 +7,7 @@ tags:
   - projects
   - claude-chat
   - bilgi-tabani
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Projects, claude.ai'de kalıcı ve organize çalışma alanları oluşturan özelliktir.** Her sohbetin sıfırdan başladığı normal bir konuşmanın aksine, bir Project Claude'a her seferinde devam eden bağlam sağlar, **bilgi tabanı** ve **özel talimatlar** yoluyla.
@@ -138,11 +138,11 @@ Skills, kod çalıştırma ve dosya üretimi (.docx / .pptx / .xlsx) bu üç yer
 | Plan | Projects erişimi |
 |---|---|
 | **Free** | 5 projeye kadar; standart bilgi tabanı boyutu |
-| **Pro / Max** | Proje sayısı için yayımlanmış üst sınır yok; bilgi tabanı bağlam sınırına yaklaşınca Claude RAG moduna geçer ve kapasiteyi 10 kata kadar artırır |
-| **Team** | Pro / Max'teki RAG + **paylaşılan projeler, izin kontrolleri ile** |
+| **Pro / Max / Ultra** | Proje sayısı için yayımlanmış üst sınır yok; bilgi tabanı bağlam sınırına yaklaşınca Claude RAG moduna geçer ve kapasiteyi 10 kata kadar artırır |
+| **Team** | Pro / Max / Ultra'daki RAG + **paylaşılan projeler, izin kontrolleri ile** |
 | **Enterprise** | Team özellikleri + kurum çapında görünürlük, SSO, yönetici kontrolleri |
 
-Yeni kullanıcılara **ilk ay Max 5x** öneriyoruz; bu bir öneridir, zorunlu değildir. Pro ile başlayıp gerektiğinde yükseltmek de olur. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
+Yeni kullanıcılara **ilk ay Max (eski adı Max 5x)** öneriyoruz; bu bir öneridir, zorunlu değildir. Pro ile başlayıp gerektiğinde yükseltmek de olur. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
 
 ## İlk Project'inizi Nasıl Kurarsınız?
 

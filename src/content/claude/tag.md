@@ -7,7 +7,7 @@ lead: "@Claude, Slack konuşmasına etiketlediğiniz bir Claude'dur. Konuşmanı
 heroImage: "/images/claude/tag/hero.webp"
 heroAnimation: "tag"
 heroAlt: "Satış ekibi kanalında bir çalışan @Claude'u etiketliyor; Claude iş parçacığında konuşmayı okuyup çalışıyor ve alıcı görüşmesi için hazırlık özetini aynı iş parçacığına yazıyor."
-availability: "Team ve Enterprise planlarında beta, Slack üzerinde; Free, Pro ve Max'te yok. Microsoft Teams sürümü beklemede"
+availability: "Team ve Enterprise planlarında beta, Slack üzerinde; Free, Pro, Max ve Ultra'da yok. Microsoft Teams sürümü beklemede"
 sourceUrl: "https://claude.com/product/tag"
 sourceTitle: "Claude in Slack: Tag @Claude in any thread"
 related:
@@ -17,7 +17,7 @@ related:
   - { label: "MCP güvenliği (wiki)", href: "/wiki/mcp/guvenlik/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 30
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -50,7 +50,7 @@ Aşağıdakiler özelliklerden türetilmiş örneklerdir. Kaynaktaki müşteri h
 
 ## Nasıl başlarsınız?
 
-1. Planınızı kontrol edin: Claude Tag Team veya Enterprise gerektirir. Kişisel Pro veya Max hesabıyla kullanılmaz.
+1. Planınızı kontrol edin: Claude Tag Team veya Enterprise gerektirir. Kişisel Pro, Max veya Ultra hesabıyla kullanılmaz.
 2. Slack çalışma alanınızın yöneticisi ve Claude organizasyonunuzun yöneticisi birlikte kurulumu yapar (Slack'e ekleme düğmesi kaynak sayfada, kurulum belgesi Anthropic'in dokümantasyonunda).
 3. Yönetici Claude'un hangi araçlara erişeceğini belirler. Hassas bağlantıları tek bir özel kanalla sınırlayabilir, daha geniş araçları belirli kanallara açabilir.
 4. Küçük başlayın: tek bir kanalda, düşük riskli bir işle (haftalık özet, karar listesi).
@@ -60,7 +60,7 @@ Ekibinizin Slack ve Claude kurulumunu iş akışına yerleştirirken eğitim des
 
 ## Hangi planda, nelere dikkat?
 
-- **Plan ve durum:** Team ve Enterprise planlarında, beta olarak. Haziran 2026'da çıktı. Free, Pro ve Max'te yok.
+- **Plan ve durum:** Team ve Enterprise planlarında, beta olarak. Haziran 2026'da çıktı. Free, Pro, Max ve Ultra'da yok.
 - **Microsoft Teams:** Kaynak sayfada Teams sürümü "yakında" olarak duyurulmuş ve bekleme listesi açılmış. Şu an Teams içinde resmi bir @Claude uygulaması yok.
 - **Kullanım:** Kaynak sayfa Slack'teki kullanımın nasıl hesaplandığına dair rakam vermiyor. Kullanım bazlı Enterprise planında tüm kullanım API fiyatıyla faturalanır; ayrıntıyı satış ekibinden veya yöneticinizden teyit edin.
 - **Veri ve KVKK:** Kanalda yazılanlar, bağlı araçlardan çekilen veriler ve Claude'un cevapları model işlemesi için Anthropic'e gider. Team ve Enterprise'ta girdi ve çıktılar varsayılan olarak eğitimde kullanılmaz ve DPA ticari şartlara dahildir. Kişisel veri içeren kanallarda @Claude'u açmadan önce aydınlatma ve yurt dışı aktarım konusunu şirket içinde değerlendirin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).

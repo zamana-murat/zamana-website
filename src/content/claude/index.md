@@ -7,7 +7,7 @@ lead: "Claude, soru cevaplamanın ötesinde iş devredebileceğiniz bir yapay ze
 heroImage: "/images/claude/index/hero.webp"
 heroAnimation: "demo"
 heroAlt: "Claude'a Türkçe görev verilen, satış raporundan sunum hazırlanan tanıtım animasyonu"
-availability: "Free, Pro, Max, Team ve Enterprise planlarında; hangi özelliğin hangi planda olduğu aşağıda ve ilgili sayfalarda belirtilir"
+availability: "Free, Pro, Max, Ultra, Team ve Enterprise planlarında; hangi özelliğin hangi planda olduğu aşağıda ve ilgili sayfalarda belirtilir"
 sourceUrl: "https://claude.com/product/overview"
 sourceTitle: "The AI for Problem Solvers | Claude by Anthropic"
 related:
@@ -18,7 +18,7 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "İlk 7 gün planı (wiki)", href: "/wiki/temeller/ilk-7-gun/" }
 order: 10
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Claude nedir?
@@ -38,7 +38,7 @@ Ekim 2026 itibarıyla güncel model ailesi dört isimden oluşur:
 - **Fable 5.1:** en güçlü genel model, uzun süren ve çok adımlı işler için.
 - **Opus 5.5:** Fable 5.1'e yakın performans, daha düşük maliyet. Çoğu iş için iyi bir başlangıç.
 - **Sonnet 5.5:** hız ve zekâ dengesi, günlük kullanım modeli.
-- **Haiku 4.5:** en hızlı ve hafif model, basit ve yüksek hacimli işler için.
+- **Haiku 5.5:** en hızlı ve hafif model, basit ve yüksek hacimli işler için.
 
 Yeni modellerde bağlam penceresi 1 milyon token. Bu, çok uzun belgeleri ve yazışma geçmişini tek seferde işleyebilmesi demek. Hangi modelin ne zaman seçileceği için [Modeller bölümümüze](/claude/modeller/) ve [wiki'deki model sayfasına](/wiki/temeller/modeller/) bakın. Mythos 5.1 adlı bir model de var, ancak yalnızca davetle seçili katılımcılara açık, genel kullanımda değil.
 
@@ -53,16 +53,16 @@ Claude'un güçlü olduğu işlerin pratik karşılığı şöyle:
 - **Zamanlanmış görevler:** "Her pazartesi geçen haftanın rakamlarını çek, bir sunuma koy" gibi tekrarlanan işleri belirlediğiniz takvimde kendi başına çalıştırır.
 - **Hafıza ve Projects:** Geçmiş konuşmalardan bağlamı hatırlar, projelerinizi dosya ve talimatlarıyla bir arada tutar.
 - **Web araması, sesli konuşma ve tarayıcıda çalışma:** Güncel bilgiyi arar. Sesle de konuşabilirsiniz, ancak sesli modun resmi dil listesinde Türkçe görünmüyor. Chrome eklentisiyle web sayfalarında işlem yapabilir.
-- **Bilgisayar kullanımı:** Ekranınızı görüp kullanabilir. Bu özellik araştırma önizlemesi, yalnızca Pro ve Max planlarında.
+- **Bilgisayar kullanımı:** Ekranınızı görüp kullanabilir. Bu özellik araştırma önizlemesi, yalnızca Pro, Max ve Ultra planlarında.
 
 ## Hangi uygulamalarda çalışır?
 
 - **Web, masaüstü, mobil:** claude.ai üzerinden tarayıcıda; macOS, Windows ve Linux için masaüstü uygulamasında; iOS ve Android'de. Masaüstü uygulaması, kendi bilgisayarınızdaki klasör ve uygulamalara erişim gibi web ve mobilin ulaşamadığı işleri ekler. Dosyalarınız oradaysa en rahatı oradan başlamaktır.
-- **Telefondan görev:** Pro, Max ve Team planlarında telefondan görev başlatıp bulutta çalışmasını bırakabilirsiniz.
+- **Telefondan görev:** Pro, Max, Ultra ve Team planlarında telefondan görev başlatıp bulutta çalışmasını bırakabilirsiniz.
 - **Claude Code:** Yazılım geliştirme için ayrı bir ürün, [kendi sayfasında](/claude/claude-code/) anlatılıyor.
 - **@Claude (Slack):** Ekip kanallarında Claude'u etiketlersiniz, Team ve Enterprise için beta. [Sayfası](/claude/tag/) var.
 - **Claude for Chrome ve Claude for Microsoft 365:** Tarayıcıda ve Excel, PowerPoint, Word gibi uygulamaların içinde.
-- **Cowork:** Önceden ayrı bir ürün olan Cowork, 16 Eylül 2026'dan itibaren sohbetle birleşti ve artık tek bir "Claude". Pro ve Max'te kademeli açılıyor; sohbetleriniz, projeleriniz, connector ve skill'leriniz olduğu gibi kalıyor.
+- **Cowork:** Önceden ayrı bir ürün olan Cowork, 16 Eylül 2026'dan itibaren sohbetle birleşti ve artık tek bir "Claude". Pro, Max ve Ultra'da kademeli açılıyor; sohbetleriniz, projeleriniz, connector ve skill'leriniz olduğu gibi kalıyor.
 
 ![Claude'un hazırladığı Türkçe haftalık kampanya raporu sunumu: "Kampanya raporu, 17 Ağustos haftası" kapak slaytı ve 7 slaytlık önizleme](/images/claude/index/kampanya-raporu.webp)
 
@@ -84,18 +84,18 @@ Fiyatlar ABD doları, vergi hariç, Ekim 2026 itibarıyla geçerlidir. Kesin ve 
 |---|---|---|
 | Free | $0 | Denemek için |
 | Pro | $20/ay ($17/ay, yıllık peşin $200) | Bireysel düzenli kullanım |
-| Max 5x / Max 20x | $100 / $200 aylık | Yoğun bireysel kullanım |
+| Max / Ultra | $100 / $200 aylık | Yoğun bireysel kullanım |
 | Team | Standard $25, Premium $125 koltuk/ay (yıllık faturada $20 ve $100), en az 2, en çok 150 koltuk | Küçük ve orta ekipler |
 | Enterprise | $20/koltuk/ay (yıllık fatura) + kullanım API fiyatıyla | Büyük kurumlar, yönetim ve denetim ihtiyacı |
 
-Dikkat edilecekler: Claude Code ve Cowork ücretli planlarda, Free'de yok. Kullanım limiti 5 saatlik kayan pencere ve haftalık limitle işler; haftalık tavan rakamları yayımlanmıyor. Fable modeli Pro'da plana dahil değil, kullandıkça öde (usage credits) ile açılıyor; Max ve Team Premium'da haftalık limitin belli bir bölümüne kadar dahil. SSO, merkezi yönetim ve eğitim verisi tercihleri Team ve Enterprise'ta farklılaşır. Ayrıntı için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
+Dikkat edilecekler: Claude Code ve Cowork ücretli planlarda, Free'de yok. Kullanım limiti 5 saatlik kayan pencere ve haftalık limitle işler (doğrulanmış hesaplı Ultra'da 5 saatlik limit yok); haftalık tavan rakamları yayımlanmıyor. Fable modeli Pro'da plana dahil değil, kullandıkça öde (usage credits) ile açılıyor; Max, Ultra ve Team Premium'da haftalık limitin belli bir bölümüne kadar dahil. SSO, merkezi yönetim ve eğitim verisi tercihleri Team ve Enterprise'ta farklılaşır. Ayrıntı için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
 
 ## Türkiye'den kullanım
 
 - Türkiye, Claude'un desteklendiği ülkeler listesinde. Claude Türkçe anlar ve yazar; kalitesi hakkında örneklerle [Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfasına bakın.
 - Ödeme ABD doları üzerinden. Türkiye faturalama adresiyle KDV eklendiği bildiriliyor, ancak Anthropic'in Türkiye'ye özel TL fiyat sayfasını doğrulayamadık. Mobil mağazalarda TL fiyat gösterilir ve web fiyatından farklı olabilir. Ayrıntı: [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/).
 - Anthropic'in Türkiye'de ofisi veya resmi temsilcisi yok, satın alma doğrudan Anthropic'ten yapılır. Bkz. [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/). Zamana, Anthropic'in Partner programının katılımcısıdır; temsilci veya bayi değildir ve abonelik satmaz.
-- Veri yurt dışında işlenir. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz; Free, Pro ve Max'te bu bir kullanıcı ayarıdır. KVKK açısından hangi planın uygun olduğunu şirket içi politikanıza göre değerlendirin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+- Veri yurt dışında işlenir. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz; Free, Pro, Max ve Ultra'da bu bir kullanıcı ayarıdır. KVKK açısından hangi planın uygun olduğunu şirket içi politikanıza göre değerlendirin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
 ## Nasıl başlarsınız?
 

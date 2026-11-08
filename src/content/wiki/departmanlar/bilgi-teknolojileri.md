@@ -8,7 +8,7 @@ tags:
   - bilgi-teknolojileri
   - powershell
   - kvkk
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 IT departmanı Claude konusunda iki yeni bakış açısıyla tanışmalıdır:
@@ -155,7 +155,7 @@ Eğitimlerde BT ekiplerinin en çok takıldığı üç nokta (Zamana eğitim mat
 
 - [Cowork](/wiki/araclar/cowork-modu/): dosya ve görev otomasyonu
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Script'lerin otomasyonu
-- [Computer Use](/wiki/yetenekler/computer-use/): API olmayan sistemlerde (research preview, yalnız Pro ve Max; Team ve Enterprise'ta yok)
+- [Computer Use](/wiki/yetenekler/computer-use/): API olmayan sistemlerde (research preview, yalnız Pro, Max ve Ultra; Team ve Enterprise'ta yok)
 - [Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/): Tarayıcı ve Microsoft 365 içinde Claude
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): KVKK genel çerçevesi
 - [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/): Claude'a kişisel veri girmeden önce

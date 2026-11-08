@@ -7,7 +7,7 @@ tags:
   - roi
   - hesaplayici
   - maliyet
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 import RoiHesaplayici from '../../../components/wiki/RoiHesaplayici.astro';
@@ -56,8 +56,8 @@ Girmeniz gereken rakam brüt maaş değil, **yüklü maliyet**: brüt maaşın �
 
 ## Maliyet tarafı: USD, kur ve KDV
 
-- **Plan fiyatları (USD, vergi hariç, aylık):** Pro 20, Max 5x 100, Max 20x 200, Team Standard koltuk 25 (yıllık ödemede 20), Team Premium koltuk 125 (yıllık ödemede 100), Enterprise koltuk başı 20 ve kullanım ayrıca API fiyatıyla faturalanır. Güncel tablo ve ayrıntı [Planlar](/wiki/temeller/planlar/) sayfasında.
-- **"Aylık Claude maliyeti" toplam rakamdır:** kişi başı plan fiyatı çarpı kişi sayısı. Karma plan kullanıyorsanız (bir kısmı Pro, bir kısmı Max 5x) toplamı kendiniz yazın. Enterprise'ta kullanım bazlı kısmı tahmin etmek gerekir; ilk aylarda gerçek faturayı görüp güncelleyin.
+- **Plan fiyatları (USD, vergi hariç, aylık):** Pro 20, Max (eski adı Max 5x) 100, Ultra 200, Team Standard koltuk 25 (yıllık ödemede 20), Team Premium koltuk 125 (yıllık ödemede 100), Enterprise koltuk başı 20 ve kullanım ayrıca API fiyatıyla faturalanır. Güncel tablo ve ayrıntı [Planlar](/wiki/temeller/planlar/) sayfasında.
+- **"Aylık Claude maliyeti" toplam rakamdır:** kişi başı plan fiyatı çarpı kişi sayısı. Karma plan kullanıyorsanız (bir kısmı Pro, bir kısmı Max) toplamı kendiniz yazın. Enterprise'ta kullanım bazlı kısmı tahmin etmek gerekir; ilk aylarda gerçek faturayı görüp güncelleyin.
 - **Kur:** varsayılan 40 TL/USD'dir ve bir **Ekim 2026 varsayımıdır**, o günün canlı kuru değildir. Kartınızdan çekim yapan bankanın kuru farklı olabilir; kendi değerinizi yazın.
 - **KDV:** Türkiye'de yurt dışından alınan bu tür hizmette KDV'yi çoğu şirket 2 No'lu beyannameyle kendi öder ve 1 No'lu beyannamede indirir; KDV mükellefi şirkette net yük genelde sıfırdır. Bu yüzden varsayılan **KDV hariç** hesaptır. KDV'yi indiremiyorsanız (muaf işletme, bireysel kullanım gibi) "KDV dahil" seçeneğiyle %20 eklenir. Mali tarafın ayrıntısı [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasında; kesin uygulama için mali müşavirinize danışın.
 - **Aboneliği Zamana satmaz.** Zamana bir bayi değildir; plan satın alma doğrudan Anthropic'ten yapılır.
@@ -71,7 +71,7 @@ Tüm senaryolarda kur 40 TL/USD, KDV hariç, dönüşüm payı %70. **Eğitim, d
 | Kişi sayısı | 3 | 3 | 10 | 6 |
 | Haftalık kazanılan saat (kişi başı) | 4 | 4 | 5 | 3 |
 | Saatlik yüklü maliyet | 300 TL | 300 TL | 400 TL | 500 TL |
-| Plan | Max 5x (3 × 100 USD) | Pro (3 × 20 USD) | Team Standard (10 × 25 USD) | Max 5x (6 × 100 USD) |
+| Plan | Max (3 × 100 USD) | Pro (3 × 20 USD) | Team Standard (10 × 25 USD) | Max (6 × 100 USD) |
 | Aylık Claude maliyeti | 300 USD | 60 USD | 250 USD | 600 USD |
 | Aylık kazanılan saat (ham) | 52,0 | 52,0 | 216,7 | 78,0 |
 | İşe dönüşen saat (%70) | 36,4 | 36,4 | 151,7 | 54,6 |
@@ -83,13 +83,13 @@ Tüm senaryolarda kur 40 TL/USD, KDV hariç, dönüşüm payı %70. **Eğitim, d
 
 Bu tablodan üç ders çıkar:
 
-1. **İlk ay zayıf görünebilir, bu normaldir.** A senaryosunda ilk ay Max 5x'in maliyeti kazancı biraz aşıyor: kullanıcı henüz alışkanlık kazanmadı. Max 5x'i ilk ay için öneriyoruz; çünkü Pro'nun limiti yeni kullanıcı için çabuk dolar ve kişi "çalışmıyor" diye bırakabilir (zorunlu değil, bir öneridir). Asıl hesap ikinci aydan sonra, B satırındaki gibi yapılır.
-2. **Plan seçimi hesabı çok değiştirir.** Aynı ekip, Pro ile Max 5x arasında maliyeti beş kat oynatıyor. Yoğun kullanan kişi Max 5x'i hak eder, hafif kullanan Pro ile yetinir; bunu ikinci aydan sonra kullanım verisine bakarak ayarlayın.
-3. **Düşük saat kazancı ve yüksek plan, geri dönüşü eritir.** D senaryosunda yöneticiler haftada yalnızca 3 saat kazanıyor ve Max 5x kullanıyor: sonuç pozitif ama sınırda. Yönetici saati pahalı olduğu için değer yüksek görünür, ama kazanılan saat de gerçekten ölçülmelidir.
+1. **İlk ay zayıf görünebilir, bu normaldir.** A senaryosunda ilk ay Max'in maliyeti kazancı biraz aşıyor: kullanıcı henüz alışkanlık kazanmadı. Max'i ilk ay için öneriyoruz; çünkü Pro'nun limiti yeni kullanıcı için çabuk dolar ve kişi "çalışmıyor" diye bırakabilir (zorunlu değil, bir öneridir). Asıl hesap ikinci aydan sonra, B satırındaki gibi yapılır.
+2. **Plan seçimi hesabı çok değiştirir.** Aynı ekip, Pro ile Max arasında maliyeti beş kat oynatıyor. Yoğun kullanan kişi Max'i hak eder, hafif kullanan Pro ile yetinir; bunu ikinci aydan sonra kullanım verisine bakarak ayarlayın.
+3. **Düşük saat kazancı ve yüksek plan, geri dönüşü eritir.** D senaryosunda yöneticiler haftada yalnızca 3 saat kazanıyor ve Max kullanıyor: sonuç pozitif ama sınırda. Yönetici saati pahalı olduğu için değer yüksek görünür, ama kazanılan saat de gerçekten ölçülmelidir.
 
 ### Hesaplayıcının varsayılan değerleri
 
-Sayfadaki hesaplayıcı şu değerlerle açılır: 6 kişi, haftada 5 saat, saatlik 400 TL, dönüşüm payı %70, 600 USD (6 × Max 5x), kur 40, KDV hariç. Sonuç: aylık 130 saat ham kazanç, 36.400 TL değer, 24.000 TL maliyet, **12.400 TL net fayda, yaklaşık %52 geri dönüş**, başabaş kişi başı haftada 3,3 saat.
+Sayfadaki hesaplayıcı şu değerlerle açılır: 6 kişi, haftada 5 saat, saatlik 400 TL, dönüşüm payı %70, 600 USD (6 × Max), kur 40, KDV hariç. Sonuç: aylık 130 saat ham kazanç, 36.400 TL değer, 24.000 TL maliyet, **12.400 TL net fayda, yaklaşık %52 geri dönüş**, başabaş kişi başı haftada 3,3 saat.
 
 ## Bu hesap neyi göstermez?
 

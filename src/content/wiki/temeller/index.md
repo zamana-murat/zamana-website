@@ -4,7 +4,7 @@ description: "Claude'un ne olduğu, hangi modelin ne zaman kullanıldığı, fiy
 tags:
   - temeller
   - giris
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken temel kavramlar. İlk altı kart, Claude'la çalışmaya başlayan bir profesyonelin doğal olarak sorduğu altı sorunun cevabını verir; sonraki kartlar kurulum, ilk hafta ve itirazlar gibi pratik konulardır; "Şirkette Uygulama" başlığı ise ekip ve şirket ölçeğine geçenler içindir. İlk altı kartı sırasıyla okursanız bir saatten kısa sürede temel kavrayışa ulaşırsınız.
@@ -33,7 +33,7 @@ Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken teme
 
     ---
 
-    Free, Pro, Max, Team ve Enterprise: fiyatlar, özellikler ve şirketler için önerilen plan.
+    Free, Pro, Max, Ultra, Team ve Enterprise: fiyatlar, özellikler ve şirketler için önerilen plan.
 
     [→ Claude Planları](/wiki/temeller/planlar/)
 
@@ -73,7 +73,7 @@ Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken teme
 
     ---
 
-    Sıfırdan başlayanlar için adım adım rehber: claude.ai üyeliği, Max 5x aktivasyonu, Claude Desktop kurulumu, donanım kontrolü.
+    Sıfırdan başlayanlar için adım adım rehber: claude.ai üyeliği, Max (eski adı Max 5x) aktivasyonu, Claude Desktop kurulumu, donanım kontrolü.
 
     [→ İlk Kurulum](/wiki/temeller/ilk-kurulum/)
 
@@ -141,7 +141,7 @@ Bu bölümü okuduktan sonra aklınızda kalması gereken altı duruş:
 
 1. **Claude bir arama motoru değildir**: düşünme ortağıdır. Ona göre konuşun.
 2. **Günlük iş için Sonnet'le başlayın.** İstisnai durumlar dışında model seçimiyle uğraşmayın.
-3. **Yeni Claude kullanıcısına ilk ay Max 5x öneriyoruz, zorunlu değil**: yoğun keşif ritminde Pro ($20) limiti çabuk dolabilir ve yanlış ilk izlenim yaratır. Hafif kullanımda Pro yeterli olabilir. Free iş için uygun değildir. Şirketlerde Team zorunlu değildir; merkezi yönetim ve kontrol için önerilir.
+3. **Yeni Claude kullanıcısına ilk ay Max öneriyoruz, zorunlu değil**: yoğun keşif ritminde Pro ($20) limiti çabuk dolabilir ve yanlış ilk izlenim yaratır. Hafif kullanımda Pro yeterli olabilir. Free iş için uygun değildir. Şirketlerde Team zorunlu değildir; merkezi yönetim ve kontrol için önerilir.
 4. **Claude yanılmaz değildir.** Her kritik çıktıyı doğrulayın. İmza testini uygulayın.
 5. **Kişisel veri ve KVKK konuları plan seçimini belirler.** Team veya Enterprise + DPA, bireysel Pro'dan farklıdır.
 6. **Claude yazar. Siz karar verirsiniz. Sorumluluk asla transfer olmaz.**

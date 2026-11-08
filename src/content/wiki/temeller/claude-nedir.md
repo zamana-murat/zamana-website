@@ -5,7 +5,7 @@ tags:
   - temeller
   - claude
   - anthropic
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude, Anthropic'in geliştirdiği yapay zekâ asistanıdır.** Yazdığınız talebi Türkçe dahil birçok dilde anlar; metin yazar, uzun belgeleri özetler, tablo ve kod üretir, bağladığınız araçlarla (e-posta, takvim, dosya) sizin adınıza iş yapar. Web, masaüstü ve mobil uygulamadan ya da Excel, Word ve Chrome'un içinden kullanılır.
@@ -16,7 +16,7 @@ Kısa cevap bu kadar. Asıl soru şu: **iş dünyasında Claude ile ne yapılır
 
 "Claude" tek bir ekran değil, aynı modelin birkaç yüzü. Ekim 2026 itibarıyla ana olanlar:
 
-- **Sohbet ve Cowork (claude.ai ve uygulamalar).** Eskiden ayrı duran sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude'da birleşiyor (Pro ve Max'te kademeli). Sohbet etmenin yanında dosyalarla çalışır, belge hazırlar, bağlı araçlarla iş yapar. Genel tanıtım için [Claude'a genel bakış](/claude/) sayfasına bakın.
+- **Sohbet ve Cowork (claude.ai ve uygulamalar).** Eskiden ayrı duran sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude'da birleşiyor (Pro, Max ve Ultra'da kademeli). Sohbet etmenin yanında dosyalarla çalışır, belge hazırlar, bağlı araçlarla iş yapar. Genel tanıtım için [Claude'a genel bakış](/claude/) sayfasına bakın.
 - **Claude Code.** Terminalde ve kod editörlerinde çalışır, tüm ücretli planlarda var. Geliştiriciler için; iş kullanıcısının onunla işi yok. Ayrıntı: [Claude Code](/claude/claude-code/).
 - **Claude in Chrome.** Tarayıcıda sizin adınıza gezinip form dolduran eklenti. 26 Ağustos 2026'da genel kullanıma açıldı, tüm ücretli planlarda, yalnız masaüstü Google Chrome'da. Ayrıntı: [Claude in Chrome](/claude/chrome/).
 - **Microsoft 365 eklentileri.** Excel, PowerPoint ve Word'ün içinde yan panel olarak çalışır; Outlook sürümü herkese açık beta aşamasında. Ayrıntı: [Claude for Microsoft 365](/claude/microsoft-365/).
@@ -36,7 +36,7 @@ Kuruluş hikâyesi (neden ayrıldılar, Constitutional AI, şirket yapısı, yat
 Claude'u yanlış kullanmanın en hızlı yolu onun ne olmadığını anlamadan ona bir şey yaptırmaya çalışmaktır. İş hayatında tekrar tekrar karşılaştığımız yanlış anlamalar:
 
 - **Claude bir arama motoru değildir.** Model tek başına internete bakmaz ve bilgisi bir kesim tarihinde durur. Web araması tüm planlarda (Free dahil) kullanılabilir, ama açıkken bile güncel haber, hisse fiyatı ya da bugünün döviz kurunu kaynağından doğrulayın.
-- **Claude bir veritabanı değildir.** Model her konuşmaya sıfırdan başlar. Süreklilik, hafıza (Free, Pro ve Max'te varsayılan açık, Team ve Enterprise'da varsayılan kapalı) profil talimatı ve (Cowork'te) klasördeki CLAUDE.md gibi kalıcı talimatlarla sağlanır; bunlar da ham bir kayıt tutmaz, özet ve tercih saklar.
+- **Claude bir veritabanı değildir.** Model her konuşmaya sıfırdan başlar. Süreklilik, hafıza (Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'da varsayılan kapalı) profil talimatı ve (Cowork'te) klasördeki CLAUDE.md gibi kalıcı talimatlarla sağlanır; bunlar da ham bir kayıt tutmaz, özet ve tercih saklar.
 - **Claude bir hesap makinesi değildir.** Matematik üzerine düşünür, ama dört işlem aritmetiğinde bile hata yapabilir. Kritik sayılar için Claude'a hesaplama yaptırmayın, Excel'e veya tabloya yaptırın, Claude sadece yorumlasın.
 - **Claude yanılmaz değildir.** Bilmediği bir şeyi emin bir tonla söyleyebilir (buna *halüsinasyon* denir). Önemli çıktıları her zaman insan gözüyle kontrol edin.
 
@@ -104,7 +104,7 @@ Bazı konularda yapay zeka yanıtı almak yanlış hamledir, şirketinizdeki ger
 ## İlgili Sayfalar
 
 - [Claude Modelleri](/wiki/temeller/modeller/): Fable, Opus, Sonnet ve Haiku arasındaki fark
-- [Claude Planları](/wiki/temeller/planlar/): Free, Pro, Max, Team, Enterprise fiyat ve özellikler
+- [Claude Planları](/wiki/temeller/planlar/): Free, Pro, Max, Ultra, Team, Enterprise fiyat ve özellikler
 - [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/): Şirket, kurucular, model tarihçesi
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Claude'un yapamadıkları
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Türkiye'de Claude kullanırken veri güvenliği

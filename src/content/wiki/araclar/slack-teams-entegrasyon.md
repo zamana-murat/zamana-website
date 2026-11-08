@@ -8,7 +8,7 @@ tags:
   - teams
   - claude-tag
   - entegrasyon
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Çoğu kurumsal ekibin bilgi akışı Slack veya Microsoft Teams'te akar.** Claude'u bu platformlara bağlamak (geçmiş mesajları okuyabilmesi, kanal özetleyebilmesi, akışın içinde çalışabilmesi) günlük üretkenliğin en görünür kazançlarından biridir.
@@ -37,7 +37,7 @@ Claude.ai içinden Slack'e (Teams için Microsoft 365 connector'ı üzerinden) [
 
 ### Model 2: Slack'in İçine Claude Eklemek (Claude Tag)
 
-Slack'te Claude'u kanala getiren yol **Claude Tag**'dir (23 Haziran 2026'dan beri; haber metnine göre şu an beta). Kanalda `@Claude bana ...` diye etiketlersiniz, cevap kanalın içinde gelir. Claude Tag yalnızca **Team ve Enterprise** planlarında vardır; Free, Pro ve Max'te yoktur.
+Slack'te Claude'u kanala getiren yol **Claude Tag**'dir (23 Haziran 2026'dan beri; haber metnine göre şu an beta). Kanalda `@Claude bana ...` diye etiketlersiniz, cevap kanalın içinde gelir. Claude Tag yalnızca **Team ve Enterprise** planlarında vardır; Free, Pro, Max ve Ultra'da yoktur.
 
 **Tipik kullanım:**
 

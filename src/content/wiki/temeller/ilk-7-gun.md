@@ -6,7 +6,7 @@ tags:
   - baslangic
   - checklist
   - onboarding
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 [İlk Kurulum](/wiki/temeller/ilk-kurulum/) tamam. Claude Desktop kurulu, abonelik aktif, Cowork çalışıyor. **Şimdi asıl iş başlıyor, bilgiyi alışkanlığa çevirmek.**
@@ -284,7 +284,7 @@ Connector kurulu olduğuna göre, **bugün gerçekten yapacağınız bir işi** 
 
 **1. Kütüphanenin yerini seç (2 dk)**
 
-Önerilen yer bir **Claude Projesi**: "Prompt Kütüphanem" adlı bir proje açın, aşağıda hazırlayacağınız `.md` dosyalarını projeye yükleyin, proje talimatına "bu projedeki şablonlardan birini seçip değişkenleri benden sor" yazın. Proje hem sohbette hem Cowork'te aynı şekilde çalışır. Yalnızca bilgisayardaki bir klasöre (örn. `C:\ClaudeWorkspace\prompts\`) güvenmeyin: 6 Ekim 2026'dan beri Pro ve Max'te yeni Cowork görevleri bulutta çalışır ve bulut görevleri yerel klasöre doğrudan erişemez. Aşağıdaki adımlarda geçen `prompts/` klasörünü dosyalarınızın yerel yedeği olarak tutun, asıl kütüphane projede dursun. Sık kullandığınız bir prompt zamanla sabitlenirse onu [Skill](/wiki/yetenekler/skills/)'e çevirmek de bir yoldur.
+Önerilen yer bir **Claude Projesi**: "Prompt Kütüphanem" adlı bir proje açın, aşağıda hazırlayacağınız `.md` dosyalarını projeye yükleyin, proje talimatına "bu projedeki şablonlardan birini seçip değişkenleri benden sor" yazın. Proje hem sohbette hem Cowork'te aynı şekilde çalışır. Yalnızca bilgisayardaki bir klasöre (örn. `C:\ClaudeWorkspace\prompts\`) güvenmeyin: 6 Ekim 2026'dan beri Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır ve bulut görevleri yerel klasöre doğrudan erişemez. Aşağıdaki adımlarda geçen `prompts/` klasörünü dosyalarınızın yerel yedeği olarak tutun, asıl kütüphane projede dursun. Sık kullandığınız bir prompt zamanla sabitlenirse onu [Skill](/wiki/yetenekler/skills/)'e çevirmek de bir yoldur.
 
 **2. Bu hafta çalışan promptları topla (15 dk)**
 

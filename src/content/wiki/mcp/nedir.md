@@ -7,7 +7,7 @@ tags:
   - plugins
   - connector
   - standart
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **MCP (Model Context Protocol), Claude'un dış servislere bağlanmasını sağlayan açık bir standarttır.**
@@ -68,7 +68,7 @@ Kendi sisteminizi bağlamak istiyorsanız karar akışı [Şirket Sistemini Clau
 
 Türkiye'deki orta ölçekli şirketlerin kullandığı **standart connector'lar** (Slack, Drive, Gmail, CRM) genellikle sorunsuz çalışır. Resmi dizinde yaklaşık 900 connector bulunur; [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) ise connector'ları ve eklentileri tek yerde toplar. Kurumsal değerlendirme için [Claude Marketplace (Kurumsal)](/kurumsal/marketplace/) sayfası var.
 
-API'si olmayan dahili programlar için [Computer Use](/wiki/yetenekler/computer-use/) bir alternatif olabilir. Yalnızca Pro ve Max planlarında, masaüstü uygulamasında ve research preview olarak çalışır.
+API'si olmayan dahili programlar için [Computer Use](/wiki/yetenekler/computer-use/) bir alternatif olabilir. Yalnızca Pro, Max ve Ultra planlarında, masaüstü uygulamasında ve research preview olarak çalışır.
 
 ## MCP Açık Bir Standart: Ne Demek?
 

@@ -18,7 +18,7 @@ related:
   - { label: "Alt ajanlar (wiki)", href: "/wiki/yetenekler/agents-subagents/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 10
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -63,7 +63,7 @@ Rakamlar Anthropic'in sayfasından, ilgili şirketlere aittir: Rakuten yeni öze
 
 ## Hangi planda, ne kadar?
 
-- **Tüm ücretli planlarda:** Claude Code Pro, Max, Team ve Enterprise'a dahildir; Free planda yoktur.
+- **Tüm ücretli planlarda:** Claude Code Pro, Max, Ultra, Team ve Enterprise'a dahildir; Free planda yoktur.
 - **Team:** Anthropic'in sayfası ekipler için Claude Code'u kişi başı aylık 100 dolar (en az 2 kişi) fiyatıyla gösteriyor; bu, Team Premium koltuğun yıllık faturalı fiyatıdır, aylık faturada 125 dolardır. Koltuk kotası aşılırsa ek kullanım standart API fiyatıyla açılabilir. Self-serve koltuk yönetimi vardır.
 - **Enterprise:** Koltuk başı aylık 20 dolar, yıllık faturalı, en az 20 koltuk; Claude Code dahil tüm kullanım ayrıca API fiyatıyla faturalanır. Team'deki her şeye ek olarak rol bazlı izinler, denetim kaydı, özel veri saklama ve IP izin listesi gelir. Kurulum rehberliği ve öncelikli destek de Enterprise kapsamında.
 - **Bulut hesabıyla:** Bedrock, Vertex AI veya Foundry üzerinden kullanımda faturayı ilgili bulut sağlayıcı keser.

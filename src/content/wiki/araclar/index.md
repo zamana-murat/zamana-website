@@ -5,7 +5,7 @@ description: "Claude'u nerede kullanırsınız: Chat, Projects, Desktop, Cowork,
 tags:
   - araclar
   - giris
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude'u kullanmanın birden fazla yolu var. Hangisinin hangi iş için doğru olduğu, üretkenlikte ciddi fark yaratır.**
@@ -128,7 +128,7 @@ Başlangıç için basit bir karar ağacı:
 | Şirket araçlarına bağlanmak (Slack, Drive, CRM) | **Connector'lar**, bkz. [Connectors](/wiki/araclar/connectors/) |
 | Slack kanalında ekiple birlikte Claude kullanmak | **Claude Tag** (Team/Enterprise), bkz. [Slack ve Teams](/wiki/araclar/slack-teams-entegrasyon/) |
 | Yolda telefondan iş atmak, masada bitmiş bulmak | Mobil/web **Cowork** (beta) ya da **Dispatch** (yalnız mevcut kullanıcılar), bkz. [Claude Mobil](/wiki/araclar/claude-mobil/) |
-| Tekrar eden haftalık/aylık bir görevi otomatikleştirmek | **Scheduled Tasks** (Pro ve Max'te yeni görevler bulutta çalışır) |
+| Tekrar eden haftalık/aylık bir görevi otomatikleştirmek | **Scheduled Tasks** (Pro, Max ve Ultra'da yeni görevler bulutta çalışır) |
 | Güncel bilgi, mevzuat ya da fiyat araştırması | **Web Arama**, bkz. [Web Arama](/wiki/araclar/web-arama/) |
 | Yazmaktansa konuşmayı tercih ediyorsanız | **Voice Mode** (Türkçe desteklemiyor, bkz. [Voice Mode](/wiki/araclar/voice-mode/)) |
 
@@ -138,7 +138,7 @@ Başlangıç için basit bir karar ağacı:
 
 Araçlar kavramsal olarak soru-cevap ağırlıklı (Chat, Projects, Voice Mode) ve çalışma ağırlıklı (Desktop, Cowork, Scheduled Tasks) diye iki gruba ayrılır. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude arayüzünde birleşiyor (kademeli yayılım), bu yüzden ayrım giderek ürün seçimi değil **iş türü** ayrımına dönüşüyor. Karşılaştırma tablosu tek yerde, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında.
 
-Kısa özet: sohbet kurulum gerektirmez; dosya yükleme, web araması, artifact, skill ve kod çalıştırma claude.ai'de Free dahil tüm planlarda vardır. Yerel klasörlerle çalışmak, connector'larla şirket araçlarına bağlanmak ve zamanlanmış görev kurmak ise Cowork ister; Cowork en az Pro abonelik gerektirir. Yeni başlayan kullanıcı için ilk ay Max 5x önerilir (öneri, zorunlu değil).
+Kısa özet: sohbet kurulum gerektirmez; dosya yükleme, web araması, artifact, skill ve kod çalıştırma claude.ai'de Free dahil tüm planlarda vardır. Yerel klasörlerle çalışmak, connector'larla şirket araçlarına bağlanmak ve zamanlanmış görev kurmak ise Cowork ister; Cowork en az Pro abonelik gerektirir. Yeni başlayan kullanıcı için ilk ay Max (eski adı Max 5x) önerilir (öneri, zorunlu değil).
 
 ## Önerilen Adaptasyon Yolu
 

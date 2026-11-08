@@ -8,7 +8,7 @@ tags:
   - vision
   - ocr
   - gorsel-analiz
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude görselleri **görür ve üzerinde akıl yürütür**. Bu basit OCR (metin tanıma) ya da basit görsel tanıma değildir. **Görsel muhakemedir**: bağlamı, ilişkileri ve anlamı görsellerden çıkarır.
@@ -59,9 +59,9 @@ Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bun
 | Desteklenen formatlar | JPEG, PNG, GIF, WebP (GIF'te yalnızca ilk kare okunur) |
 | Mesaj başına görsel (claude.ai) | en çok 20 |
 | Görsel başına boyut (claude.ai ve API) | en çok 10 MB |
-| API istek başına görsel | en çok 600 (200K bağlamlı modellerde, örn. Haiku 4.5, 100) |
+| API istek başına görsel | en çok 600 (200K bağlamlı modellerde, örn. legacy Haiku 4.5, 100) |
 | Çözünürlük, yeni modeller (Fable 5.1, Opus 5.5, Sonnet 5.5) | uzun kenar 2.576 piksel; daha büyük görseller küçültülür |
-| Çözünürlük, Haiku 4.5 | uzun kenar 1.568 piksel |
+| Çözünürlük, Haiku 4.5 (legacy) | uzun kenar 1.568 piksel |
 | API'de en büyük boyut | 8000x8000 piksel (bir istekte 20'den fazla görsel varsa sınır daha sıkıdır) |
 
 ## Claude Görsellerle Ne Yapamaz?

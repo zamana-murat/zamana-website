@@ -18,7 +18,7 @@ related:
   - { label: "Claude Platform", href: "/kurumsal/platform/" }
   - { label: "Türkçe performansı (wiki)", href: "/wiki/temeller/turkce-performansi/" }
 order: 50
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -88,7 +88,7 @@ Kaynak sayfa dört yol sayıyor; hangisinin seçileceği yazılım ekibinizin ka
 
 Kaynak sayfadaki müşteri görüşlerine göre kurulum hızlı: Wix mühendislerinin on beş dakikada çalışan bir ajana, Fetch ekibinin bir saatten kısa sürede iki ajanın yerel kurulumuna ulaştığı aktarılıyor. Canlıya almak ise katalog, ödeme, stok ve müşteri sistemlerinize bağlantı, test ve güvenlik incelemesi demek; asıl iş oradadır.
 
-Ücret Claude API kullanımına göre token başına ödenir. Güncel API fiyatları milyon token başına girdi ve çıktı için Opus 5.5'te 4 ve 20 dolar, Sonnet 5.5'te 2 ve 10 dolar, Haiku 4.5'te 1 ve 5 dolar. Yoğun trafikli bir mağazada model seçimi ve önbellekleme maliyeti doğrudan belirler; kampanya dönemi trafiğiyle hesaplayın. Ödeme dolar ile, doğrudan Anthropic'e. Kurumsal görüşme için Anthropic satış ekibiyle iletişime geçilir.
+Ücret Claude API kullanımına göre token başına ödenir. Güncel API fiyatları milyon token başına girdi ve çıktı için Opus 5.5'te 4 ve 20 dolar, Sonnet 5.5'te 2 ve 10 dolar, Haiku 5.5'te 0,10 ve 0,50 dolardan (100K token'a kadar istem). Yoğun trafikli bir mağazada model seçimi ve önbellekleme maliyeti doğrudan belirler; kampanya dönemi trafiğiyle hesaplayın. Ödeme dolar ile, doğrudan Anthropic'e. Kurumsal görüşme için Anthropic satış ekibiyle iletişime geçilir.
 
 ## Zamana'nın notu
 

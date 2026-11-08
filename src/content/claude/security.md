@@ -16,7 +16,7 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Türkiye'de Claude (wiki)", href: "/wiki/temeller/turkiyede-claude/" }
 order: 40
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -55,7 +55,7 @@ Claude Code kullanıcıları için ayrı bir seçenek var: Claude Security eklen
 ## Hangi planda, nelere dikkat?
 
 - **Durum:** Herkese açık beta. Kaynağa göre Enterprise müşterileri doğrudan model erişimi olmadan Mythos kalitesinde bulgu alıyor. Mythos 5.1'in kendisi genel kullanıma açık bir model değildir, yalnızca davetle seçili katılımcılara verilir.
-- **Plan:** Kaynak sayfa uygulamanın Enterprise için sunulduğunu söylüyor. Pro, Max veya Team'de kullanılabildiğine dair bir ifade yok, bu yüzden varsaymayın. Fiyat yayımlanmıyor, satış ekibiyle konuşulur.
+- **Plan:** Kaynak sayfa uygulamanın Enterprise için sunulduğunu söylüyor. Pro, Max, Ultra veya Team'de kullanılabildiğine dair bir ifade yok, bu yüzden varsaymayın. Fiyat yayımlanmıyor, satış ekibiyle konuşulur.
 - **İnsan incelemesi şart:** Claude hata yapabilir. Önerilen yamaları, özellikle kritik sistemlerde, uygulamadan önce mutlaka inceleyin. Bulgu sayısı, doğruluk oranı ve kapsam gibi ölçümler için kaynakta rakam verilmiyor; kendi deneme sonuçlarınıza güvenin.
 - **Veri ve KVKK:** Tarama için kaynak kodunuz Anthropic'e gönderilir. Enterprise'ta girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz ve veri işleme eki (DPA) ticari şartlara dahildir. Yine de kaynak kodun yurt dışında işlenmesi, ticari sır ve müşteri sözleşmeleri açısından şirketinizde onaylanmalıdır. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Türkiye notları:** Ödeme ve sözleşme Anthropic ile doğrudan, Türkiye'de ofis veya resmi temsilci yok. Bkz. [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/). Zamana'nın programları iş kullanıcısına odaklıdır, güvenlik taraması eğitimi vermez.

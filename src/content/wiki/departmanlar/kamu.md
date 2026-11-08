@@ -8,7 +8,7 @@ tags:
   - belediye
   - kvkk
   - hassas
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Kamu kurumunda iş büyük ölçüde yazıdır: resmi yazı, mevzuat okuma, tutanak, vatandaş başvurusuna yanıt. Claude bu işlerde zaman kazandırır. Ama kamu kurumunun önünde özel sektörden farklı bir sınır vardır: **verinin nerede durduğu**. Bu sayfa hangi işlerin güvenle yapılabileceğini, hangilerinin yapılmaması gerektiğini ve kararı kimin vermesi gerektiğini anlatır.
@@ -135,7 +135,7 @@ Benzer başvurular için bir kez iyi bir şablon kurarsanız ([Projects](/wiki/a
 
 ## Plan ve Satın Alma
 
-Bireysel plan (Free, Pro, Max) yerine **Team ya da Enterprise öneriyoruz** (merkezi kontrol, veri ayarları); **zorunlu değildir**. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz; DPA yalnız ticari ürünlere dahildir. Bunlar KVKK ya da 2019/12 uyumu yerine geçmez: hangi plan olursa olsun, kuralın sınırındaki veri Claude'a girmez.
+Bireysel plan (Free, Pro, Max, Ultra) yerine **Team ya da Enterprise öneriyoruz** (merkezi kontrol, veri ayarları); **zorunlu değildir**. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz; DPA yalnız ticari ürünlere dahildir. Bunlar KVKK ya da 2019/12 uyumu yerine geçmez: hangi plan olursa olsun, kuralın sınırındaki veri Claude'a girmez.
 
 Satın alma tarafı kamuda ayrı bir meseledir. Kamu kurumları genellikle yurt dışından doğrudan alım yapamaz ve "TL fatura" ister. Anthropic'in Türkiye'de ofisi ya da resmi temsilcisi yoktur; Zamana da bayi ya da temsilci değildir, abonelik satmaz. Aboneliğin üçüncü bir tarafça yeniden satışı Anthropic'in yazılı onayına bağlıdır. Satın alma yolunu kurumunuzun satın alma ve hukuk birimleriyle birlikte çözün.
 

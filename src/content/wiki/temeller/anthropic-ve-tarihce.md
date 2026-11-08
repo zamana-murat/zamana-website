@@ -5,7 +5,7 @@ tags:
   - temeller
   - anthropic
   - tarihce
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Anthropic, Claude'u yapan şirkettir.** Kurumsal bir aracı sözleşmeye bağlamadan önce arkasındaki şirketi tanımak doğaldır. Bu sayfa Anthropic'i, kuruluşunu, değerlerini ve Claude'un model tarihçesini özetler.
@@ -87,7 +87,7 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Ekim 2024 | **Claude 3.5 Sonnet v2** | [Computer Use](/wiki/yetenekler/computer-use/), bilgisayar arayüzü kontrolü |
 | Şubat 2025 | **Claude 3.7 Sonnet** | Genişletilmiş düşünme (extended thinking), adım adım muhakeme |
 | Mayıs 2025 | **Claude 4** | Profesyonel kod üretiminde sıçrama; Claude Code günlük araç oldu |
-| Ekim 2025 | **Claude Haiku 4.5** | En hızlı ve en ucuz model; bugün de güncel ailede |
+| Ekim 2025 | **Claude Haiku 4.5** | En hızlı ve en ucuz model; Ekim 2026'da yerini Haiku 5.5 aldı, 4.5 legacy kaldı |
 | Şubat 2026 | **Claude Sonnet 4.6** (17 Şubat) | Sonnet'in 4.x serisinde güncel sürüm |
 | Nisan 2026 | **Claude Opus 4.7** (16 Nisan) | `xhigh` çaba düzeyi, task budgets (beta), yüksek çözünürlüklü görsel |
 | Mayıs 2026 | **Claude Opus 4.8** (28 Mayıs) | Daha güçlü agentic muhakeme, varsayılan yüksek çaba, dynamic workflows; üç kat ucuz Fast mode |
@@ -97,10 +97,12 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Eylül 2026 | **Claude Fable 5.1** (1 Eylül) | En güçlü genel model, 1M bağlam. Mythos 5.1 aynı yetenekte ama yalnızca Project Glasswing katılımcılarına davetle |
 | Eylül 2026 | **Claude Opus 5.5** (22 Eylül) | Fable 5.1 düzeyinde performans, Opus 5'ten yaklaşık %40 ucuz |
 | Eylül 2026 | **Claude Sonnet 5.5** (28 Eylül) | Günlük iş modeli; Sonnet 5'ten yaklaşık %30 hızlı |
+| Ekim 2026 | **Claude Haiku 5.5** | En hızlı ve en ucuz model, 1M bağlam; aylık API kredisi de Ekim'de Max ve Team planlarına geldi |
+| Ekim 2026 (30 Ekim dolayı) | **Ultra planı** | Max 20x yeni adıyla Ultra, Max 5x yeni adıyla Max oldu; fiyatlar aynı |
 
 Tabloda yalnızca dönüm noktaları var; 4.5 ve 4.6 sürümleri (Opus 4.5, Sonnet 4.5, Opus 4.6 dahil) arada çıktı, ayrıntıları ve tarihleri Anthropic'in model sayfasında bulabilirsiniz.
 
-Güncel dört model (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 4.5) ve hangisini ne zaman seçeceğiniz için [Modeller](/wiki/temeller/modeller/) sayfasına, plan ve görev bazlı seçim için [Claude modelleri](/claude/modeller/) tanıtımına bakın.
+Güncel dört model (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5) ve hangisini ne zaman seçeceğiniz için [Modeller](/wiki/temeller/modeller/) sayfasına, plan ve görev bazlı seçim için [Claude modelleri](/claude/modeller/) tanıtımına bakın.
 
 ## "Claude" İsmi Nereden?
 

@@ -6,24 +6,24 @@ tags:
   - cowork
   - claude-desktop
   - arac
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Cowork, Claude'u bir sohbet arayüzünden tam bir çalışma ortamına dönüştüren özelliktir.** Dosyalarınıza erişir, kod çalıştırır, bağlı araçları kullanır ve işi baştan sona teslim eder. Cowork 9 Nisan 2026'dan beri masaüstünde (macOS, Windows ve Linux) genel kullanıma açık, 7 Temmuz 2026'dan beri web ve mobilde beta olarak da kullanılabiliyor.
 
-> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor. Artık "sohbet mi, Cowork mu?" diye seçim yapmıyorsunuz; Claude görevin neye ihtiyaç duyduğunu kendisi anlıyor. Yayılım kademeli: önce Pro ve Max, Team ve Free için "yakında". Enterprise yöneticilerine en az 30 gün önceden haber verilecek. Hesabınızda birleşik arayüz henüz açılmadıysa sayfadaki "ayrı mod" anlatımı sizin ekranınızı tarif eder. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
+> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor. Artık "sohbet mi, Cowork mu?" diye seçim yapmıyorsunuz; Claude görevin neye ihtiyaç duyduğunu kendisi anlıyor. Yayılım kademeli: önce Pro, Max ve Ultra, Team ve Free için "yakında". Enterprise yöneticilerine en az 30 gün önceden haber verilecek. Hesabınızda birleşik arayüz henüz açılmadıysa sayfadaki "ayrı mod" anlatımı sizin ekranınızı tarif eder. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ## Hangi Planda, Nerede Çalışır?
 
 - **Masaüstü (macOS, Windows, Linux):** tüm ücretli planlarda. Enterprise'da yönetici etkinleştirmesi gerekebilir. Linux'ta Cowork için en az 8 GB RAM ve KVM desteği gerekir, bkz. [Claude Desktop](/wiki/araclar/claude-desktop/).
-- **Web ve mobil:** beta; Pro, Max ve Team planlarında, Enterprise'da yönetici açtıysa. Connector'lar, skill'ler, zamanlanmış görevler ve cihazlar arası devam var; yerel dosya erişimi ve tarayıcı kullanımı kısmidir (masaüstü uygulaması açık olmalı).
-- **Cowork'ün Chrome yan paneli:** Max ve Team'de, Pro'ya yayılıyor.
-- **Computer use:** research preview; yalnız Pro ve Max'te, masaüstü uygulamasında Cowork ve Claude Code içinde. Team ve Enterprise'ta yok. Ayrıntı: [Computer Use](/wiki/yetenekler/computer-use/).
+- **Web ve mobil:** beta; Pro, Max, Ultra ve Team planlarında, Enterprise'da yönetici açtıysa. Connector'lar, skill'ler, zamanlanmış görevler ve cihazlar arası devam var; yerel dosya erişimi ve tarayıcı kullanımı kısmidir (masaüstü uygulaması açık olmalı).
+- **Cowork'ün Chrome yan paneli:** Max, Ultra ve Team'de, Pro'ya yayılıyor.
+- **Computer use:** research preview; yalnız Pro, Max ve Ultra'da, masaüstü uygulamasında Cowork ve Claude Code içinde. Team ve Enterprise'ta yok. Ayrıntı: [Computer Use](/wiki/yetenekler/computer-use/).
 - **Yerleşik tarayıcı (masaüstü):** Claude, sizin sekmelerinize ve şifrelerinize dokunmayan kendi tarayıcısıyla sitelerde gezip form doldurabiliyor. Ayrıntı: [Cowork'e kendi tarayıcısı geldi](/haberler/2026-08-26-cowork-yerlesik-tarayici/).
 
 Free planda Cowork yoktur. Hafıza 25 Ağustos 2026'dan beri sohbet ve Cowork arasında ortaktır, bkz. [Memory](/wiki/yetenekler/memory/).
 
-> **6 Ekim 2026'dan itibaren:** Pro ve Max'te yeni Cowork görevleri bulutta çalışıyor ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni görevler için bilgisayarın açık ve uyanık kalması gerekmiyor. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler yine masaüstü uygulaması ister. Eski görevler ile Team ve Enterprise için yardım merkezindeki güncel duyuruya bakın.
+> **6 Ekim 2026'dan itibaren:** Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni görevler için bilgisayarın açık ve uyanık kalması gerekmiyor. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler yine masaüstü uygulaması ister. Eski görevler ile Team ve Enterprise için yardım merkezindeki güncel duyuruya bakın.
 
 ## Sohbet ve Cowork: Hangi Tür İş Hangisine Yakın?
 
@@ -48,7 +48,7 @@ Claude ilerlemeyi nasıl kontrol edeceğinizi de size bırakır: ya her adımdan
 | Tekrar eden zamanlanmış görevler | | ✅ |
 | Çok adımlı otonom iş akışları | | ✅ |
 | Kurulum gerektirmez | ✅ | |
-| Mobilde çalışır | ✅ | ✅ Beta (7 Tem 2026'dan beri; Pro, Max, Team, Enterprise'da yönetici açtıysa) |
+| Mobilde çalışır | ✅ | ✅ Beta (7 Tem 2026'dan beri; Pro, Max, Ultra, Team, Enterprise'da yönetici açtıysa) |
 
 **Pratik yaklaşım:** soru-cevapla başlayın; çıktının bilgisayarınızdaki klasöre yazılması, bir işin tekrar etmesi, şirket sistemine bağlanma ya da çok adımlı otomasyon gerektiğinde çalışma tarzına geçin. Hızlı soru-cevap ortadan kalkmaz.
 
@@ -78,13 +78,13 @@ Dış servislere kimlik doğrulamalı bağlantılardır: Slack, Google Drive, Gm
 ### Artifacts (Çıktılar)
 Artifact, Cowork yan panelinde açılan HTML sayfası, tablo ya da görseldir; satış pipeline'ı, haftalık performans özeti, stok durumu gibi şeyler için kullanılır. Cowork'te yeni artifact'ler standart artifact olarak oluşur ve içinde tam düzenleme yapabilirsiniz. Eskiden "canlı artifact" denen, her açılışta connector'lardan veri çeken biçim 19 Ağustos 2026'dan beri legacy: mevcutlar çalışmaya ve kuruluş içinde paylaşılmaya devam ediyor, ama yerinde düzenlenemiyor. Ayrıntı: [Artifacts (Yetenekler)](/wiki/yetenekler/artifacts/).
 
-Claude Design, Slides ve Docs ürünleri de bu ailede yer alır; ücretli planlarda (Pro, Max, Team, Enterprise) beta olarak sunulur, Free planda yoktur. Enterprise'da yönetici açana kadar kapalıdır.
+Claude Design, Slides ve Docs ürünleri de bu ailede yer alır; ücretli planlarda (Pro, Max, Ultra, Team, Enterprise) beta olarak sunulur, Free planda yoktur. Enterprise'da yönetici açana kadar kapalıdır.
 
 ### Scheduled Tasks (Zamanlanmış Görevler)
 Sizin başlatmanıza gerek kalmadan belirli aralıklarla (günlük, haftalık, aylık) çalışan otomasyonlardır. Pazartesi sabah brifinginiz, Cuma akşam ekip raporu, siz bir şey yapmadan hazırlanır.
 
 ### Dispatch (Uzaktan Görev)
-Telefonunuzdan bir görev gönderirsiniz, Claude masaüstünüzde çalışır ve sonucu hazırlar. Pro ve Max'te sınırlı beta olarak sunuluyor, yeni kullanıcılara kapalı; mevcut kullanıcılar şimdilik kullanabiliyor. Yeni bir hesapta telefondan görev atmanın yolu mobil Cowork betasıdır. Ayrıntı: [Claude Mobil: telefondan görev](/wiki/araclar/claude-mobil/).
+Telefonunuzdan bir görev gönderirsiniz, Claude masaüstünüzde çalışır ve sonucu hazırlar. Pro, Max ve Ultra'da sınırlı beta olarak sunuluyor, yeni kullanıcılara kapalı; mevcut kullanıcılar şimdilik kullanabiliyor. Yeni bir hesapta telefondan görev atmanın yolu mobil Cowork betasıdır. Ayrıntı: [Claude Mobil: telefondan görev](/wiki/araclar/claude-mobil/).
 
 ### Subagent Koordinasyonu
 Karmaşık görevlerde Claude birden fazla alt ajan başlatabilir: biri araştırır, diğeri taslak yazar, üçüncüsü dosyaları kontrol eder. Sonuçlar tek çıktıda birleştirilir. Aynı mantık Claude Code'da da genel kullanıma açık alt ajanlar olarak vardır, bkz. [Alt Ajanlar](/wiki/yetenekler/agents-subagents/).
