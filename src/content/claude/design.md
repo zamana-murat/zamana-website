@@ -1,13 +1,13 @@
 ---
 title: "Claude Design: Fikri Görsele Çevirmek"
 seoTitle: "Claude Design: Tasarım, Sunum, Prototip"
-description: "Claude Design, tarif ettiğiniz görseli markanıza uygun ilk taslağa çevirir. Düzenler, PDF veya PowerPoint olarak indirirsiniz. Ücretli planlarda beta."
+description: "Claude Design, tarif ettiğiniz görseli markanıza uygun ilk taslağa çevirir. Düzenler, PDF veya PowerPoint olarak indirirsiniz. Free dahil tüm planlarda."
 eyebrow: "Yetenek"
 lead: "Ne istediğinizi anlatırsınız, Claude marka kurallarınıza uygun bir ilk taslak çıkarır. Siz düzeltir, paylaşır ya da kullandığınız araca aktarırsınız. Tasarımcı yerine geçmez; ilk adımı hızlandırır."
 heroImage: "/images/claude/design/hero.webp"
 heroAnimation: "design"
 heroAlt: "Claude Design'da hazırlanan kurgusal bir kahve markası kampanya görselinin kare ve dikey boyutları, yanında Dışa aktar düğmesi"
-availability: "Ücretli planlarda beta (Pro, Max, Ultra, Team, Enterprise); Free'de yok. Enterprise'da yönetici açana kadar kapalı."
+availability: "Free dahil tüm planlarda (Free, Pro, Max, Ultra, Team, Enterprise), varsayılan açık. Enterprise'da 15 Ekim 2026'dan beri varsayılan açık (HIPAA etkin kuruluşlar hariç)."
 sourceUrl: "https://claude.com/product/design"
 sourceTitle: "Claude Design"
 related:
@@ -48,7 +48,7 @@ Claude Design şu hizmetlerle bağlantı kuruyor: Adobe, Canva, Gamma, Lovable, 
 
 ## Hangi planda, nelere dikkat?
 
-**Plan.** Design, Slides ve Docs ücretli planlarda beta durumunda: Pro, Max, Ultra ve Team'de varsayılan olarak açık, Enterprise'ta yöneticinin Organization settings > Artifacts altından açması gerekiyor. **Free planda bu üç ürünün etkileşimli arayüzü yok.** Güncel kapsam için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
+**Plan.** Anthropic'in güncel sayfasına göre Design, Slides ve Docs **Free dahil tüm planlarda** var ve varsayılan olarak açık. Enterprise'ta 15 Ekim 2026'dan itibaren de varsayılan açık geliyor; HIPAA yapılandırması etkin kuruluşlar bu değişikliğin dışında. Yönetici ayarı Organization settings > Artifacts altında. Ayrı adres claude.ai/design 14 Aralık 2026'da kapanıyor; sonrasında Design yalnız konuşmaların içinden kullanılır. Aynı aileye iki beta eklendi: **Claude Dashboards** (ücretli planlarda, doğal dille sorulan sorudan veri panosu) ve **Claude Motion** (Team ve Enterprise'ta, MP4 olarak dışa aktarılan animasyon). Güncel kapsam için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
 
 **Kullanım limiti.** Design ile yapılan işler, planınızın kullanım limitinden düşer. Tam bir sunum ya da tasarım, tek mesajdan belirgin biçimde daha çok limit harcar. Yoğun tasarım işi için üst plan düşünmeniz gerekebilir.
 

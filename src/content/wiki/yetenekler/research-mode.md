@@ -78,7 +78,7 @@ Stratejik planlama girdisi.
 Sohbet kutusundaki **"+" menüsünden "Research"** seçilir. Altta mavi bir gösterge belirir; tekrar tıklarsanız kapanır.
 
 - **Planlar:** Free'de yok. Pro, Max, Ultra, Team ve Enterprise'ta web, Claude Desktop ve mobilde çalışır.
-- **Web arama açık olmalı.** Kapalıysa Research kullanılamaz.
+- **Web arama açık olmalı.** Kapalıysa Research kullanılamaz; Team ve Enterprise'ta web aramayı önce owner kuruluş için açar ([Web Arama](/wiki/araclar/web-arama/)).
 - Claude birbirini izleyen çok sayıda arama yapar. **Gmail, Google Calendar veya Google Docs bağlıysa** onları da tarayabilir; bağlantıyı açmadan önce hangi hesabın bağlı olduğuna bakın ([Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/)).
 - Yanıt genelde dakikalar içinde, kaynak atıflarıyla gelir; atıflar doğrulamayı kolaylaştırır.
 - Team ve Enterprise'ta Research için ayrı bir yönetici anahtarı olup olmadığı belgelenmemiştir. Düğmeyi göremiyorsanız önce yöneticinize sorun.
@@ -93,7 +93,7 @@ Bu, Research düğmesinin yaptığı kadar çok arama yapmayı garanti etmez ama
 
 ### 3. Uzun görevler ve telefon
 
-Çok uzun süren işleri [Cowork](/wiki/araclar/cowork-modu/) içinde yürütebilirsiniz. Telefondan görev gönderme (Dispatch) yeni kullanıcılara kapalı bir beta olduğu için buna güvenmeyin; ayrıntı için [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) sayfasına bakın.
+Çok uzun süren işleri [Cowork](/wiki/araclar/cowork-modu/) içinde yürütebilirsiniz. Araştırma görevini telefondan da verebilirsiniz: Cowork'te telefondan görev Pro, Max, Ultra ve Team'de otomatik açıktır, görev bulutta sürer (eski Dispatch yeni kullanıcılara kapalıdır, ona güvenmeyin); ayrıntı için [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) sayfasına bakın.
 
 ### 4. Project Knowledge ile birleşik
 
@@ -224,7 +224,7 @@ Doğrulama süresini hesaba katmadan "araştırma 1 saatte bitti" demeyin: sayı
 **Henüz şu işleri yapamaz:**
 
 - Ücretli akademik dergilere erişemez (yalnızca açık kaynaklar)
-- Şirket içi gizli araştırmalara erişemez (kaynak yok)
+- Bağlamadığınız şirket içi kaynaklara erişemez (Gmail, Google Calendar ve Google Docs bağlıysa onları da tarar; diğer iç sistemler için [connector](/wiki/araclar/connectors/) gerekir)
 - Çok özel uzmanlık gerektiren niş alanlar (örn. roket bilimi nüansları)
 - Birinci el saha araştırması (anket, mülakat)
 
@@ -233,7 +233,7 @@ Bu durumlar için **AI başlangıç noktası** + **insan derinleştirme** birle�
 ## İlgili Sayfalar
 
 - [Web Arama](/wiki/araclar/web-arama/): Hızlı arama tarafı
-- [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): Telefondan görev (Dispatch, yeni kullanıcıya kapalı)
+- [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): Telefondan görev (Cowork; eski Dispatch yeni kullanıcıya kapalı)
 - [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/): Research'ün limite etkisi
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Research + Skills + Connectors birleşimi
 - [Türk İş Araçları](/wiki/temeller/turk-is-araclari/): Türkiye'deki sistemlerle çalışma sınırları

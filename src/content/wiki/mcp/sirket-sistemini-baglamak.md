@@ -1,14 +1,14 @@
 ---
 title: "Şirket Sistemini Claude'a Bağlamak: Karar Akışı"
-seoTitle: "Şirket Sistemini Claude'a Bağlamak: ERP, CRM ve İç Araçlar"
-description: "ERP'nizi, iç CRM'inizi ya da muhasebe yazılımınızı Claude'a bağlayabilir misiniz? Altı adımlık karar akışı: dizin, API, BT'den istenecekler, salt okunur pilot, bakım, güvenlik."
+seoTitle: "Şirket Sistemini Claude'a Bağlamak: ERP ve CRM"
+description: "ERP, iç CRM ya da muhasebe yazılımınızı Claude'a bağlayabilir misiniz? Altı adımlık karar akışı: dizin, API, BT'den istenenler, salt okunur pilot, bakım."
 tags:
   - mcp
   - connector
   - erp
   - entegrasyon
   - bt
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Kısa cevap: çoğu zaman evet, ama "bağlayalım" demeden önce altı soruya cevap vermek gerekir.** Bu sayfa, iş kullanıcısı ya da yönetici olarak "ERP'mizi, iç CRM'imizi Claude'a bağlayabilir miyiz, kim kurar, ne kadar sürer?" sorusunu sorduğunuzda izleyeceğiniz sırayı anlatır. Teknik kısım BT ekibinize ya da entegratörünüze düşer; sizin işiniz doğru soruları doğru sırayla sormaktır.
@@ -17,7 +17,7 @@ Bir kurgusal örnek üzerinden gidelim: **Marmara Dağıtım**, 40 satış temsi
 
 ## Adım 1: Resmi dizinde var mı?
 
-Önce en ucuz yol: sisteminiz için hazır bir connector olabilir. [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına ya da Claude'da **Customize > Connectors** bölümüne bakın. Resmi dizinde yaklaşık 900 connector var; Salesforce, HubSpot, Atlassian, Slack, Microsoft 365 gibi tanıdık adlar orada.
+Önce en ucuz yol: sisteminiz için hazır bir connector olabilir. [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına ya da Claude'da **Customize > Connectors** bölümüne bakın. Resmi dizinde 1.000'den fazla connector var; Salesforce, HubSpot, Atlassian, Slack, Microsoft 365 gibi tanıdık adlar orada.
 
 - **Varsa:** dizin connector'ını kullanın. Bu sayfanın geri kalanına ihtiyacınız yok; [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) yeterli.
 - **Yoksa:** dizinde olmaması "yok" demek değil, "hazır yok" demektir. Adım 2'ye geçin.

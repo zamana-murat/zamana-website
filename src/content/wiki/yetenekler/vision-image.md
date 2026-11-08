@@ -60,7 +60,8 @@ Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bun
 | Mesaj başına görsel (claude.ai) | en çok 20 |
 | Görsel başına boyut (claude.ai ve API) | en çok 10 MB |
 | API istek başına görsel | en çok 600 (200K bağlamlı modellerde, örn. legacy Haiku 4.5, 100) |
-| Çözünürlük, yeni modeller (Fable 5.1, Opus 5.5, Sonnet 5.5) | uzun kenar 2.576 piksel; daha büyük görseller küçültülür |
+| Çözünürlük, Claude 4.7 ve sonrası (güncel Fable 5.1, Opus 5.5, Sonnet 5.5 dahil) | uzun kenar 2.576 piksel; daha büyük görseller küçültülür |
+| Yükleme boyutu (claude.ai) | en çok 8000x8000 piksel |
 | Çözünürlük, Haiku 4.5 (legacy) | uzun kenar 1.568 piksel |
 | API'de en büyük boyut | 8000x8000 piksel (bir istekte 20'den fazla görsel varsa sınır daha sıkıdır) |
 
@@ -95,7 +96,7 @@ Konferansta 20 kartvizit aldınız. Fotoğrafları tek oturumda Claude'a gönder
 
 **Süre:** elle 40-60 dakika, Claude ile 5-10 dakika + 10 dakika kontrol. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
-Telefondaysanız fotoğrafı Claude mobil uygulamasının kamerasından doğrudan çekebilirsiniz ([Claude Mobil](/wiki/araclar/claude-mobil/#kamera-ve-gorsel)).
+Telefondaysanız fotoğrafı Claude mobil uygulamasının kamerasından doğrudan çekebilirsiniz ([Claude Mobil](/wiki/araclar/claude-mobil/#kamera-ve-görsel)).
 
 ### Tahta Fotoğrafı → Toplantı Notu
 

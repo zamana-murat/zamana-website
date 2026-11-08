@@ -1,7 +1,7 @@
 ---
 title: "Kamu Kurumları: Claude Uygulamaları (Hassas Sektör)"
-seoTitle: "Kamu Kurumlarında ve Belediyelerde Claude Nasıl Kullanılır?"
-description: "Kamu kurumu ve belediye çalışanı için Claude: resmi yazı taslağı, mevzuat özeti, toplantı tutanağı, vatandaş başvurusu yanıtı. 2019/12 Genelgesi ve KVKK sınırları."
+seoTitle: "Kamu Kurumlarında Claude: Resmi Yazı, Mevzuat"
+description: "Kamu çalışanı için Claude: resmi yazı taslağı, mevzuat özeti, tutanak, vatandaş başvurusu yanıtı. 2019/12 Genelgesi ve KVKK sınırları."
 tags:
   - departmanlar
   - kamu

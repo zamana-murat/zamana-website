@@ -1,6 +1,6 @@
 ---
 title: "Satınalma: Claude Uygulamaları"
-seoTitle: "Satınalmada Claude: RFQ, Pazarlık Brief'i, Tedarikçi Karşılaştırma"
+seoTitle: "Satınalmada Claude: RFQ, Pazarlık, Tedarikçi"
 description: "Satınalma ekibi için Claude: RFP/RFQ, tedarikçi değerlendirme, pazarlık hazırlığı, TCO analizi, tek kaynak gerekçesi. Operasyondan farkı net."
 tags:
   - departmanlar
@@ -36,7 +36,7 @@ Doğru kriterleri tanımlamak (fiyat, kalite, teslimat süresi, güvenilirlik, m
 
 ### Vendor Karşılaştırma Dokümantasyonu
 
-Birden fazla tedarikçi yanıtından, öneriyle birlikte yapılandırılmış bir yan yana analiz çıkarmak.
+Birden fazla tedarikçi yanıtından, öneriyle birlikte yapılandırılmış bir yan yana analiz çıkarmak. Tedarikçilerin PDF ya da Excel tekliflerini birlikte yükleyip aynı kalemlerde karşılaştırma tablosu isteyebilirsiniz ([Dosya İşleme](/wiki/yetenekler/file-handling/)); her fiyatı ve birimi teklif belgesinden kontrol edin, farklı para birimi ve KDV dahil/hariç farklarını tablo başlığında açıkça yazdırın.
 
 ### Tedarikçi Yeterlilik Anketi
 
@@ -117,7 +117,7 @@ Onaylı listeye tedarikçi eklerken veya listeden çıkarırken karar dokümante
 
 **Connector'lar:**
 1. **Microsoft 365 / Google Workspace**: RFP ve sözleşme belgeleri
-2. **ERP** (varsa): satınalma siparişi girişi. Logo, Mikro gibi yerel yazılımların resmi connector'ı yok; dışa aktarım ya da özel bağlantı yolu için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın. Computer use (research preview) yalnız Pro, Max ve Ultra'da var, Team ve Enterprise'da yok
+2. **ERP** (varsa): satınalma siparişi girişi. Logo, Mikro gibi yerel yazılımların resmi connector'ı yok; dışa aktarım ya da özel bağlantı yolu için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın. Computer use (beta) yalnız Pro, Max ve Ultra'da var, Team ve Enterprise'da yok
 3. **DocuSign**: tedarikçi sözleşme imzaları
 
 ## İş Akışı Yeniden Tasarımı Adayları
@@ -128,7 +128,7 @@ Onaylı listeye tedarikçi eklerken veya listeden çıkarırken karar dokümante
 
 ## Sık Hatalar
 
-- **Hassas tedarikçi bilgisi:** Müzakere pozisyonunu ve vazgeçme fiyatını prompt'a yazmadan önce şirketinizin veri politikasına bakın. Rakamları yuvarlayın ya da aralıkla verin.
+- **Hassas tedarikçi bilgisi:** Müzakere pozisyonunu ve vazgeçme fiyatını prompt'a yazmadan önce şirketinizin veri politikasına bakın. Rakamları yuvarlayın ya da aralıkla verin. Tedarikçi fiyatları ve sözleşme maddeleri ticari sırdır; şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
 - **Çıkar çatışması:** Tedarikçinin sunduğu hediye, kişisel ilişki gibi konular yazılı belgelere ve Claude'a girmez; bunlar etik kurula gider.
 - **Uydurma pazar fiyatı:** Claude pazar fiyatı uydurabilir. "Pazar %8 ucuz" gibi bir iddiayı gerçek fiyat listesi ya da tekliflerle doğrulamadan pazarlığa taşımayın.
 
@@ -144,8 +144,6 @@ Satınalma müdürü, ana tedarikçisiyle yıllık sözleşme yenileme görüşm
 **Adım 3:** Çalışan "Ödün noktalarını ters sırayla yaz, en değerlilerini en son kullanayım" diyerek yeniden düzenletir.
 
 **Adım 4:** Toplantıya gider, brief cebinde.
-
-Toplam süre: yaklaşık 30 dakika (örnek senaryo). Geleneksel süreç: 2-3 saat boyunca "aklıma gelen" notları toplamak.
 
 **Süre:** pazarlık brief'i için elle 2-3 saat, Claude ile 30-40 dakika (kontrol dahil). Üç teklifli karşılaştırma matrisi için elle 1,5-2 saat, Claude ile 20-30 dakika. Ayda dört tedarikçi görüşmesi yapılıyorsa brief tarafında kabaca 6-10 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 

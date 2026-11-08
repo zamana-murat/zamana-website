@@ -6,7 +6,7 @@ tags:
   - mcp
   - guvenlik
   - kvkk
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **[MCP](/wiki/mcp/nedir/), Claude'a sisteminize erişim verir.** Bu güç dikkatsiz kurulduğunda sorun yaratabilir: yetkisiz veri erişimi, beklenmedik silme işlemleri ve prompt injection saldırıları gibi. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar. Ürün tarafındaki güvenlik çerçevesi için [Claude Güvenliği](/claude/security/) sayfasına bakın.
@@ -210,7 +210,7 @@ Bir SaaS ile MCP üzerinden bağlandığınızda, o SaaS yasal olarak **veri iş
 
 ### 2. Veri Yerleşimi
 
-Verilerin ABD dahil yurt dışında işlenebileceğini varsayın; bu, KVKK'da yurt dışına veri aktarımı kapsamına girer. Ticari ürünlerde (Team, Enterprise, API) Anthropic'in veri işleme eki (DPA, standart sözleşme maddeleri dahil) ticari şartlara otomatik dahildir ve ayrıca imza gerekmez. Free, Pro ve Max bu DPA kapsamı dışındadır. Kurumsal MCP kullanımı için bu yüzden [Team veya Enterprise planı](/wiki/temeller/takim-ve-admin/) tercih edin. Yine de hukuk ekibinizle doğrulayın.
+Verilerin ABD dahil yurt dışında işlenebileceğini varsayın; bu, KVKK'da yurt dışına veri aktarımı kapsamına girer. Ticari ürünlerde (Team, Enterprise, API) Anthropic'in veri işleme eki (DPA, standart sözleşme maddeleri dahil) ticari şartlara otomatik dahildir ve ayrıca imza gerekmez. Free, Pro, Max ve Ultra bu DPA kapsamı dışındadır. Kurumsal MCP kullanımı için bu yüzden [Team veya Enterprise planı](/wiki/temeller/takim-ve-admin/) tercih edin. Yine de hukuk ekibinizle doğrulayın.
 
 ### 3. Aydınlatma Yükümlülüğü
 
@@ -232,7 +232,7 @@ Kişisel hesabınızı Team ya da Enterprise'a taşırsanız, kişisel hesaptaki
 
 Çalışan kendi kişisel hesabıyla şirketin Drive klasörlerini ya da CRM'ini Claude'a açıyor. Şirket gözünden bu **kontrol dışı** veri akışıdır.
 
-**Çözüm:** Yalnız **kurumsal hesaplarla** bağlantı. [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfası bu kontrolü detaylandırır.
+**Çözüm:** Yalnız **kurumsal hesaplarla** bağlantı. Enterprise'ta 5 Kasım 2026'dan beri kişisel Claude hesaplarına erişim kurum ağında engellenebiliyor; Team'de bu kural politika ve eğitimle uygulanır. [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfası bu kontrolü detaylandırır.
 
 ### Tuzak: "Test için açtım, kapatmayı unuttum"
 

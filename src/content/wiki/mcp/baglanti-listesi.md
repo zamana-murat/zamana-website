@@ -1,7 +1,7 @@
 ---
 title: "MCP Bağlantı Listesi: Claude'u İş Araçlarınıza Bağlamak"
-seoTitle: "Claude Connector Listesi: Role Göre ~900 Bağlantı"
-description: "Claude'un resmi dizininde yaklaşık 900 connector var. Satış, finans, İK, hukuk ve operasyon için hangileri kritik, rol bazında liste."
+seoTitle: "Claude Connector Listesi: Role Göre 1.000+ Bağlantı"
+description: "Claude'un resmi dizininde 1.000'den fazla connector var. Satış, finans, İK, hukuk ve operasyon için hangileri kritik, rol bazında liste."
 tags:
   - mcp
   - connector
@@ -10,16 +10,16 @@ tags:
 lastUpdated: "2026-11-08"
 ---
 
-Ekim 2026 itibarıyla Claude'un resmî dizininde yaklaşık 900 bağlayıcı (connector) bulunur. Connector, bir MCP sunucusudur ([MCP Nedir?](/wiki/mcp/nedir/)). Bu sayfa bunların hepsini değil, iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
+Kasım 2026 itibarıyla Claude'un resmî dizininde 1.000'den fazla bağlayıcı (connector) bulunur (8 Kasım 2026 sayımı: 1.094 connector ve 529 plugin). Connector, bir MCP sunucusudur ([MCP Nedir?](/wiki/mcp/nedir/)). Bu sayfa bunların hepsini değil, iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
 
-> **Not:** Dizin düzenli olarak büyür. Güncel kataloğu Claude'da **Customize > Connectors** bölümünden veya claude.com/connectors adresinden görebilirsiniz. Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına bakın. Team ve Enterprise'ta bazı connector'ları önce kuruluş sahibi (Owner) açar. 23 Eylül 2026'da açılan [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde toplar ve 2.000'den fazla bağlayıcı ve eklenti sunar. Bu sayı eklentileri de kapsar; yalnızca connector sayan dizinin yaklaşık 900 rakamıyla çelişmez.
+> **Not:** Dizin düzenli olarak büyür. Güncel kataloğu Claude'da **Customize > Connectors** bölümünden veya claude.com/connectors adresinden görebilirsiniz. Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına bakın. Team ve Enterprise'ta bazı connector'ları önce kuruluş sahibi (Owner) açar. 23 Eylül 2026'da açılan [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde toplar ve açılışta 2.000'den fazla bağlayıcı ve eklenti sunduğu duyuruldu. Bu sayı eklentileri de kapsar; yalnızca connector sayan dizinin rakamıyla çelişmez.
 
 ## Üretkenlik ve Belgeler
 
 | Connector | Claude Ne Yapabilir |
 |---|---|
 | **Microsoft 365** | SharePoint, OneDrive, Outlook ve Teams araması yapar; e-posta, takvim, dosya ve Teams mesajı gönderebilir (yönetici tek tek açıp kapatabilir). Team ve Enterprise'ta önce organizasyon sahibi etkinleştirir. Word, Excel ve PowerPoint için ayrı [Office eklentileri](/wiki/araclar/office-ve-chrome/) vardır |
-| **Google Workspace** | Docs, Sheets, Slides okur ve yazar; Drive'a erişir; Gmail ve Calendar okur |
+| **Google Workspace** | Docs, Sheets, Slides okur ve yazar; Drive'a erişir; Gmail ve Calendar okur. Team ve Enterprise'ta önce owner açar. Açık dosyada yan panelle çalışan ayrı bir [Claude for Google Workspace](/claude/google-workspace/) eklentisi de var (genel beta, ücretli planlar) |
 | **Notion** | Sayfaları ve veritabanlarını okur / yazar |
 | **Dropbox** | Dosyalara erişir ve yönetir |
 
@@ -155,7 +155,7 @@ Dizinde olmayan bir sistemi (iç CRM, müşteri portalı, özel veritabanı, yer
 
 İkisi de bir MCP sunucusunun hazır olmasını gerektirir. Bunu BT ekibiniz, yazılım sağlayıcınız ya da bir entegrasyon ortağı kurar; iş kullanıcısının kendi başına yapacağı bir iş değildir. Nereden başlanacağı, kimden ne isteneceği ve pilotun nasıl kurulacağı [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasında.
 
-Alternatif: [Computer Use](/wiki/yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesini denemek (research preview, yalnızca Pro, Max ve Ultra, masaüstü uygulamasında).
+Alternatif: [Computer Use](/wiki/yetenekler/computer-use/) ile API olmayan sistemleri Claude'un ekrandan kontrol etmesini denemek (beta, yalnızca Pro, Max ve Ultra, masaüstü uygulamasında; Team ve Enterprise'ta yok).
 
 ## Kurulum İpuçları
 

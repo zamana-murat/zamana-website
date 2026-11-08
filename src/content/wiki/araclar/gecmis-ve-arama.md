@@ -24,13 +24,13 @@ Claude'da yaptığınız her sohbet otomatik olarak hesabınıza bağlı kalır.
 
 ## Arama Yapma
 
-claude.ai üst kısmında arama kutusu var. Buradan **tüm sohbet başlıklarınızda ve içeriklerinde** arama yaparsınız.
+claude.ai'de sohbet listesinde arama yaparsınız (yeri arayüz sürümüne göre değişir, genelde sol kenar çubuğundadır). Arama **sohbet başlıklarınızda ve içeriklerinde** çalışır.
 
 Arama özellikleri:
 
 - Anahtar kelime (Türkçe ve İngilizce)
-- Tarih aralığı filtresi (bazı sürümlerde)
 - [Projects](/wiki/araclar/projects/) içinde sınırlama (proje seçtiğinizde sadece o proje sohbetlerinde arama)
+- Bulutta çalışan Cowork görevleri yalnız başlıkla aranır; yerel Cowork oturumlarında tam metin arama vardır
 
 **Pratik tavsiyeler:**
 
@@ -53,14 +53,20 @@ Faydaları:
 
 ## Silme
 
-Bir sohbeti silmek isterseniz: sohbetin yan menüsündeki **Delete** seçeneği. Anında silinir, geri dönüş yok.
+Bir sohbeti silmek isterseniz: sohbetin yan menüsündeki **Delete** seçeneği. Geçmişinizden anında kalkar, geri dönüş yok; Anthropic'in sistemlerinden 30 gün içinde temizlenir.
 
-**Toplu silme:** Tek tek silmek dışında, hesap genelinde silme için **Settings → Privacy** menüsündeki "Delete all chats" seçeneği vardır.
+**Toplu silme:** Web'de sol kenar çubuğundaki sohbet listesinde ("Chats and tasks") bir sohbetin "⋮" menüsünden **Select** deyin, silinecekleri işaretleyin ya da "Select all" seçin, sonra **Delete**. Android'de listedeki işaret simgesiyle çoklu seçim var; iOS'ta sohbetler tek tek silinir. Tek tuşla "tüm sohbetleri sil" seçeneği yok; hesaptaki her şeyi silmenin yolu hesabı kalıcı olarak silmektir (öncesinde dışa aktarın).
+
+**Hafıza ayrı silinir.** Bir sohbeti silmek, o sohbetten oluşan hafıza kayıtlarını silmez; onları Settings → Memory'den ayrıca kaldırın ([Memory](/wiki/yetenekler/memory/)).
 
 **Saklama dengesini kurun:**
 
-- Hassas içerik (kişisel veri, müşteri sırrı) → işiniz biter bitmez sil
+- Hassas içerik (kişisel veri, müşteri sırrı) → işiniz biter bitmez sil, ya da baştan geçici sohbette yapın (aşağıda)
 - Değerli üretim (kaliteli prompt, faydalı çıktı) → silmeyin, [Projects](/wiki/araclar/projects/)'e taşıyın
+
+### Geçici sohbet: geçmişe hiç girmesin
+
+Free dahil tüm planlarda **geçici sohbet (Incognito chat)** vardır: yeni sohbette sağ üstteki hayalet simgesiyle açılır. Konuşma sohbet geçmişine ve hafızaya kaydedilmez, aramada çıkmaz, eğitimde kullanılmaz. "Hiç saklanmaz" demek doğru değildir: Anthropic tarafında 30 gün tutulur (Enterprise'ta kuruluş süresi daha uzun olabilir), Team ve Enterprise'ta kuruluş sahibinin veri dışa aktarımına girer. Dosya oluşturma ve kod çalıştırma yoktur, proje içinde açılamaz. Ayrıntı: [Memory](/wiki/yetenekler/memory/).
 
 [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfasında saklama politikası şablonu var.
 
@@ -123,6 +129,6 @@ Claude geçmişiniz hesaba bağlıdır. Web, [Claude Desktop](/wiki/araclar/clau
 - [Claude Chat](/wiki/araclar/claude-chat/): Geçmiş bu arayüzde tutulur
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Veri saklama hakları
 - [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/): Saklama politikası şablonu
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Geçmişten ayrı, kalıcı bellek
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Geçmişten ayrı, kalıcı bellek
 - [Memory](/wiki/yetenekler/memory/): Hafıza 25 Ağustos 2026'dan beri sohbet ve Cowork arasında ortak (Free, Pro, Max ve Ultra'da varsayılan açık; Team ve Enterprise'ta varsayılan kapalı)
 

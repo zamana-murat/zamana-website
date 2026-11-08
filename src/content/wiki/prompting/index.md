@@ -1,18 +1,18 @@
 ---
 title: "Prompting: Claude'la Düşünmenin Temeli"
-seoTitle: "Claude Prompt Rehberi: Prompting Nedir, Nasıl Öğrenilir?"
+seoTitle: "Claude Prompt Rehberi: Prompting Nasıl Öğrenilir?"
 description: "Prompt nasıl yazılır? 4D Çerçevesi, beş bileşenli yapı, Türkçe teknikler, hazır şablonlar ve yaygın hatalarla Claude prompt rehberi."
 tags:
   - prompting
   - giris
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude'la çalışmanın en öğretilebilir becerisi. Ve en yaygın şekilde kötü kullanılan.
 
 Çoğu kişi Claude'la başarısız olur çünkü ona **Google'a sorar gibi sorar**: kısa, anahtar kelimeli, bağlamsız. İyi bir prompt bu reflekse direnen, yapılandırılmış bir düşünce metnidir.
 
-Bu bölüm, prompting becerisini kavramsal çerçeveden (4D) başlayıp temel yapıya, Türkçe ve çıktı biçimine, ileri tekniklere, test etmeye ve hazır şablonlara kadar dokuz sayfada kapsar.
+Bu bölüm, prompting becerisini kavramsal çerçeveden (4D) başlayıp temel yapıya, Türkçe ve çıktı biçimine, ileri tekniklere, belgeyle çalışmaya, test etmeye ve hazır şablonlara kadar on sayfada kapsar.
 
 ## Bu Bölümdeki Sayfalar
 
@@ -82,6 +82,14 @@ Bu bölüm, prompting becerisini kavramsal çerçeveden (4D) başlayıp temel ya
 
     [→ Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/)
 
+-   <span class="wiki-icon wiki-icon--lg" data-icon="file-document-outline" aria-hidden="true"></span> **Belgeyle Çalışma**
+
+    ---
+
+    Sözleşme, şartname ve Excel: belge önce soru sonda, alıntı çıkarma, "belgede yoksa yok de", sayı doğrulama.
+
+    [→ Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/)
+
 -   <span class="wiki-icon wiki-icon--lg" data-icon="view-list-outline" aria-hidden="true"></span> **Prompt Kataloğu**
 
     ---
@@ -103,8 +111,9 @@ Bu bölümü yeni okuyorsanız:
 5. **[Çıktı Formatı](/wiki/prompting/cikti-formati/)**: Tablo, e-posta, JSON gibi çıktıyı istediğiniz biçimde almak.
 6. **[Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/)**: Anlatmak yetmediğinde örnek göstermek.
 7. **[İleri Seviye](/wiki/prompting/ileri-seviye/)**: Temelleri oturtana kadar bekleyin. Erken dönmek boşa yatırımdır.
-8. **[Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/)**: Promptlarınızı test edin, puanlayın, sürümleyin.
-9. **[Prompt Kataloğu](/wiki/prompting/prompt-katalogu/)**: Hazır şablonlar. En sona bırakın: önce kendi promptunuzu yazmayı öğrenin.
+8. **[Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/)**: Sözleşme, şartname ve tabloyla çalışırken güvenilir cevap almak.
+9. **[Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/)**: Promptlarınızı test edin, puanlayın, sürümleyin.
+10. **[Prompt Kataloğu](/wiki/prompting/prompt-katalogu/)**: Hazır şablonlar. En sona bırakın: önce kendi promptunuzu yazmayı öğrenin.
 
 **Önce kendiniz deneyin.** Hazır şablonu kopyalayıp geçmek hızlı görünür ama öğretmez. Aynı işi önce kendi cümlelerinizle yazın, zorlanın, sonra kataloga bakın. Prompt yazmayı öğreten şey, ilk denemelerdeki o zorlanmadır.
 

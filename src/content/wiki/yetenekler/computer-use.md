@@ -1,7 +1,7 @@
 ---
 title: "Computer Use: Claude Ekranı Görür ve Kontrol Eder"
 seoTitle: "Claude Computer Use: Eski Sistemlerde Otomasyon"
-description: "Computer Use, Claude'un ekranı görüp tıklaması ve yazmasıdır. API'si olmayan eski programlarda okuma ve rapor alma için, research preview olarak."
+description: "Computer Use, Claude'un ekranı görüp tıklaması ve yazmasıdır. API'si olmayan eski programlarda okuma ve rapor alma için, beta olarak."
 tags:
   - yetenekler
   - computer-use
@@ -12,9 +12,20 @@ lastUpdated: "2026-11-08"
 
 **Computer Use, Claude'a bilgisayar ekranında gözler ve eller veren özelliktir.** Yapılandırılmış bir API veya connector kullanmak yerine Claude ekran görüntüsü alır, ne gördüğünü analiz eder, bir eylem kararı verir ve uygular: tıklar, yazar, kaydırır, gezinir. Sonra yeni bir ekran görüntüsü alır ve devam eder.
 
-**Güncel kapsam:** Computer use bir **research preview**'dur ve yalnızca **Pro, Max ve Ultra** planlarında vardır; Team ve Enterprise'ta yoktur. Yalnızca masaüstü uygulamasında (macOS 15 ve üstü, Windows) [Cowork](/wiki/araclar/cowork-modu/) ve Claude Code içinde çalışır; claude.ai web sohbetinde yoktur. Açmak için Ayarlar > General > Computer use anahtarını kullanırsınız. İlk çıkış 23 Mart 2026'dır.
+**Güncel kapsam:** Computer use Anthropic'in yardım sayfasında artık **beta** olarak geçer (ilk çıkışta research preview'du) ve yalnızca **Pro, Max ve Ultra** planlarında vardır; Team ve Enterprise'ta yoktur. Yalnızca masaüstü uygulamasında (macOS 15 ve üstü, Windows) [Cowork](/wiki/araclar/cowork-modu/) ve Claude Code içinde çalışır; claude.ai web sohbetinde yoktur. İlk çıkış 23 Mart 2026'dır.
 
-Neden önemli? **Çünkü API'si olmayan yazılımlarda da çalışabilir.** Türkiye'deki birçok orta ölçekli şirket hâlâ API'si olmayan eski sistemler kullanıyor. Computer Use, Claude'u bu şirketler için **evrensel bir otomasyon katmanına** yaklaştırır; yine de research preview olduğu için her sistemde aynı güvenilirlikte çalışmaz.
+## Nasıl Açılır?
+
+Anthropic'in yardım sayfasına göre:
+
+1. Claude Desktop'ı güncel sürüme getirin
+2. **Settings > Capabilities** bölümüne girin (orada "Computer use" yoksa **Settings > System**, "This computer" başlığı altına bakın)
+3. **Enable computer use** anahtarını açın
+4. Cowork ya da Claude Code'da bir oturum başlatın ve bilgisayarınızdaki bir uygulamayı içeren bir iş isteyin
+
+Claude her uygulamaya erişmeden önce sizden onay ister; yatırım, alım satım ve kripto platformları varsayılan olarak yasaktır, kendi engelleme listenize de uygulama ekleyebilirsiniz. Claude'u istediğiniz an durdurabilirsiniz. macOS 15 ve üstünde Claude varsayılan olarak arka plandaki pencerelerde çalışır; ekranı tamamen devretmek için Computer use bölümünde "How Claude uses the apps you allow" ayarını "Full control" yapın.
+
+Neden önemli? **Çünkü API'si olmayan yazılımlarda da çalışabilir.** Türkiye'deki birçok orta ölçekli şirket hâlâ API'si olmayan eski sistemler kullanıyor. Computer Use, Claude'u bu şirketler için **evrensel bir otomasyon katmanına** yaklaştırır; yine de beta olduğu için her sistemde aynı güvenilirlikte çalışmaz.
 
 ## Nasıl Çalışır?
 
@@ -45,7 +56,7 @@ Türkiye'deki mali müşavir programlarının ve yerel ERP'lerin çoğunda genel
 Aynı işi birkaç yolla yapabiliyorsanız şu sırayı öneririz:
 
 1. **Connector (MCP):** en hızlı ve güvenilir; yapılandırılmış API kullanır
-2. **Tarayıcı işi için Claude in Chrome:** web sitesinde gezinmek ve form işlemek için ayrı bir yol; ayrıntı [Office ve Chrome](/wiki/araclar/office-ve-chrome/#claude-in-chrome) sayfasında
+2. **Tarayıcı işi için Claude in Chrome:** web sitesinde gezinmek ve form işlemek için ayrı bir yol; ayrıntı [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/#claude-in-chrome) sayfasında
 3. **Dışa aktar ve yükle:** programdan rapor alıp dosyayı Claude'a vermek çoğu zaman en güvenli yoldur
 4. **Computer Use:** son çare; çok şey üzerinde çalışır ama daha yavaş ve daha az güvenilir
 
@@ -77,9 +88,9 @@ Claude bir PDF form açar ve yapılandırılmış bir kaynaktan veri doldurur. G
 
 - **Connector'lardan daha yavaş**: her eylem ekran görüntüsü döngüsü gerektirir (saniye, milisaniye değil)
 - **Dinamik UI'larda daha az güvenilir**: hızla değişen ekranlar veya animasyonlar görsel muhakemeyi karıştırabilir
-- **Bilgisayar açık ve kilitsiz olmalı**: yerel olarak çalışır; makine uyanık olmalı
+- **Bilgisayar açık ve kilitsiz olmalı**: yerel olarak çalışır; makine uyanık olmalı. Bulutta çalışan bir Cowork görevi de computer use için masaüstü uygulamasının açık ve bağlı olmasını ister
 - **Karmaşık görevlerde tam otonom değil**: açık adım adım görevlerde en iyi çalışır; açık uçlu gezinme sapabilir
-- **Research preview**: güvenilirlik artıyor ama kritik iş akışları için henüz prodüksiyon sınıfı değil
+- **Beta**: güvenilirlik artıyor ama kritik iş akışları için henüz prodüksiyon sınıfı değil
 
 ## Cowork Entegrasyonu
 

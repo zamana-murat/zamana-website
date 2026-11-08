@@ -1,6 +1,6 @@
 ---
 title: "Satış ekipleri için Claude"
-seoTitle: "Satışta Claude: Görüşme Hazırlığı, Teklif ve Satış Tahmini"
+seoTitle: "Satışta Claude: Görüşme Hazırlığı ve Teklif"
 description: "Satış ekipleri Claude ile müşteri araştırır, görüşmeye hazırlanır, teklif ve tahmin hazırlar, CRM'i günceller. Türkiye'de bayi ağı, TL ve döviz teklif notları."
 eyebrow: "Departman"
 lead: "Satış temsilcisinin haftasının önemli bir kısmı müşteriyle değil, hazırlıkla geçer: araştırma, not toplama, teklif, CRM girişi. Claude bu hazırlık işini üstlenir; temsilci zamanını görüşmeye ve kapanışa ayırır."

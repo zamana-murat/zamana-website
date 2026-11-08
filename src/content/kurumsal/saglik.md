@@ -1,6 +1,6 @@
 ---
 title: "Sağlık kuruluşları için Claude"
-seoTitle: "Hastaneler ve Sağlık Kuruluşlarında Claude: KVKK ve Kullanım"
+seoTitle: "Hastanelerde ve Sağlıkta Claude: KVKK ve Kullanım"
 description: "Hastane ve sağlık grupları Claude'u idari işte nasıl kullanır? Sağlık verisi ve KVKK, HIPAA'nın Türkiye'deki yeri, sağlık connector'ları ve sınırları."
 eyebrow: "Sektör"
 lead: "Claude, sağlık kuruluşlarında idari yükü azaltmak için kullanılır: hasta mesajlarını ayırmak, belge ve politika metni taramak, rapor taslağı yazmak. Klinik karar aracı değildir. Türkiye'de sağlık verisi özel nitelikli kişisel veridir; hasta bilgisini Claude'a girmeden önce hukuk ve bilgi güvenliği biriminizin onayı gerekir."
@@ -62,7 +62,7 @@ BAA'nın kapsamı dar tutulmuştur. Kapsam dışında kalanlar:
 
 - Üçüncü taraf entegrasyonlar: MCP sunucuları, connector'lar ve Enterprise Search.
 - Claude in Chrome tarayıcı eklentisi ve skill'ler.
-- Beta özellikler (Design, Slides, Docs).
+- Design, Slides ve Docs (Ekim 2026'da betadan çıktılar ama BAA kapsamına girmiyorlar; HIPAA etkin kuruluşlarda varsayılan olarak kapalı).
 - Claude Code ve Cowork yalnız yerel modda ve ek yapılandırmadan sonra kapsamda.
 
 Yani yukarıdaki sağlık connector'larını kullanmak, o oturumu BAA koruması dışına çıkarabilir. BAA ayrıca yalnız sözleşmeyi kabul eden kuruluşu bağlar.

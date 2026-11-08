@@ -1,6 +1,6 @@
 ---
 title: "Claude Enterprise: kurumun tamamında Claude"
-seoTitle: "Claude Enterprise Nedir? Kurumlar İçin Türkçe Rehber"
+seoTitle: "Claude Enterprise Nedir? Kurumlar İçin Rehber"
 description: "Claude Enterprise nedir? Sohbet, Cowork ve Claude Code tek koltukta; SSO, rol yönetimi, denetim kaydı, fiyat modeli ve Türkiye'den satın alma yolu."
 eyebrow: "Kurumsal"
 lead: "Claude Enterprise, Claude'u şirketin tüm çalışanlarına BT'nin kontrolünde açmak için tasarlanmış plan. Sohbet, Cowork, Claude Code ve bağlayıcılar tek koltukta; kimlik, erişim, kayıt ve veri kontrolleri yöneticide."
@@ -43,9 +43,11 @@ Anthropic'in sayfasına göre Enterprise'da tek koltuk şunları kapsar:
 - **Sohbet:** Araştırma, yazım, analiz ve fikir geliştirme için günlük çalışma ortağı.
 - **Cowork:** Dosyalarınıza ve araçlarınıza bağlanıp çok adımlı işi arka planda yürüten ve bitmiş bir çıktı teslim eden Claude. Enterprise'da yöneticinin açması gerekebilir.
 - **Claude Code:** Yazılım ekipleri için kodlama ajanı. Kurumsal tarafı [Kurumlar için Claude Code](/kurumsal/claude-code/) sayfasında.
-- **Claude Design, Slides ve Docs:** Beta. Enterprise'da kuruluş sahibi açana kadar kapalıdır.
-- **Microsoft 365 ve Chrome:** Excel, Word ve PowerPoint eklentileri, Outlook eklentisi (beta) ve Chrome uzantısı.
+- **Claude Design, Slides ve Docs:** 15 Ekim 2026'dan beri Enterprise'da varsayılan açık (HIPAA etkin kuruluşlar hariç); yönetici Organization settings > Artifacts altından kapatabilir. Dashboards (beta) Enterprise'da yönetici açana kadar kapalı; Motion da Team ve Enterprise'da beta.
+- **Microsoft 365, Google Workspace ve Chrome:** Excel, Word ve PowerPoint eklentileri, Outlook eklentisi (beta), Google Docs, Sheets ve Slides eklentisi (beta) ve Chrome uzantısı. Chrome'da yönetici site izin ve engel listesi tanımlar.
 - **Bağlayıcılar ve skill'ler:** Google Drive, Gmail, Slack, Microsoft 365 gibi araçlara bağlanma, şirkete özel bağlayıcı ve skill tanımlama. Slack'te Claude'u etiketlemek (@Claude) de Team ve Enterprise'a özel.
+- **Claude Security (beta):** Kod depolarını güvenlik açığına karşı tarayıp düzeltme önerisi hazırlayan ürün yalnız Enterprise'da; yönetici panelinden açılır. Ayrıntı [Claude Security](/claude/security/) sayfasında.
+- **Claude Science (beta):** Araştırma ekipleri için masaüstü uygulaması; Enterprise'da yönetici etkinleştirir.
 
 İki not: Hafıza özelliği Team ve Enterprise'da varsayılan olarak kapalı gelir, açıp açmamak yöneticinin kararıdır. Claude'un bilgisayarı doğrudan kullanması (computer use) şu an yalnız Pro, Max ve Ultra'da var, Enterprise'da yok.
 
@@ -56,9 +58,10 @@ Enterprise'ı Team'den ayıran asıl şey bu katman. BT ve bilgi güvenliği bir
 ![Claude Enterprise yönetici panelinin Türkçe çizimi: kimlik ve erişim, kayıt ve görünürlük, veri kontrolleri ve ağ kontrolleri başlıkları altında SSO, SCIM, rol bazlı erişim, denetim kaydı, Compliance API, özel veri saklama ve IP izin listesi](/images/kurumsal/index/kontroller.webp)
 
 - **Kimlik ve erişim:** SSO (SAML) ve alan adı sahiplenme, SCIM ile otomatik kullanıcı açma ve kapatma (SSO ve SCIM Team'de de var), rol bazlı erişim (RBAC), özel roller ve model yetkilendirme.
-- **Kayıt ve görünürlük:** Denetim kaydı (audit log), OpenTelemetry ile izleme, kullanım analitiği ve raporlar. Compliance API ile sohbet, dosya, Cowork ve Claude Code oturum içeriği programatik olarak çekilebilir. Compliance API yalnız Enterprise'da var, Team'de yok.
+- **Kayıt ve görünürlük:** Denetim kaydı (audit log), OpenTelemetry ile izleme, kullanım analitiği, Analytics API ve raporlar. Compliance API ile sohbet, dosya, Cowork ve Claude Code oturum içeriği programatik olarak çekilebilir. Compliance API yalnız Enterprise'da var, Team'de yok.
 - **Veri kontrolleri:** Özel veri saklama süresi, müşteri yönetimli şifreleme anahtarı, yalnız ABD'de işleme (US-only inference) seçeneği.
-- **Ağ ve bağlayıcı yönetimi:** IP izin listesi, hangi bağlayıcının kimde açık olacağına dair merkezi yönetim.
+- **Ağ ve bağlayıcı yönetimi:** IP izin listesi, kişisel ya da şirket dışı Claude hesaplarına erişimi ağ düzeyinde engelleme, hangi bağlayıcının kimde açık olacağına ve araç bazında izinlere dair merkezi yönetim.
+- **Kasım 2026 güvenlik güncellemesi:** Anthropic 5 Kasım 2026'da Enterprise'a ayarları önerilen yapılandırmayla karşılaştıran bir güvenlik merkezi, istem ve araç çağrılarını kurumun kendi güvenlik aracından geçiren çıkarım kancaları (genel kullanımda), birden çok kuruluşu tek konsoldan yönetme ve Cowork için uç nokta koruma (EDR) desteği (beta) ekledi; projelere etiket verip harcamayı izleme de beta olarak geldi. Ayrıntı: [haberimiz](/haberler/2026-11-05-claude-enterprise-guvenlik-guncellemeleri/).
 - **Uyum:** Anthropic'in sayfası SOC 2, ISO 27001, GDPR ve CCPA uyumunu listeliyor. Sağlık verisi işleyen kurumlar için HIPAA yapılandırması (BAA ile) Enterprise'da var. Bunlar ABD ve AB çerçeveleridir, Türkiye'ye özgü bir sertifika ya da onay anlamına gelmez.
 
 ## Kaynak sayfadaki örnekler
@@ -90,6 +93,15 @@ Claude Enterprise doğrudan Anthropic'ten alınır: self-serve olarak claude.com
 - **Sıfır veri saklama (ZDR):** Enterprise planına otomatik dahil değildir; API tarafında kuruluş başına talep edilen bir düzenlemedir.
 
 DPA ve "eğitimde kullanılmama" güvencesi KVKK dosyanız için sağlam bir temel, ama uyumun yerine geçmez. Son kararı hukuk biriminizle verin. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+
+## Ekibi yetiştirmek: Claude Academy ve Frontier Academy
+
+Anthropic'in iki ayrı eğitim yolu var ve sık karıştırılıyor:
+
+- **Claude Academy** ([academy.claude.com](https://academy.claude.com)): herkese açık, ücretsiz, İngilizce çevrim içi kurslar; yapay zeka okuryazarlığından Claude Code ve Cowork'e kadar. Bitirene rozet ya da sertifika verilir.
+- **Claude Frontier Academy:** kurumların en güçlü mühendislerini aday gösterdiği, Claude ile gerçek kurulum yapmayı öğreten program. İlk adımı "Frontier Deployed Engineer" (FDE) rezidansı: dört günlük yoğun bölüm (üç gün yüz yüze, dördüncü gün notlandırılan senaryo, geçene "Claude Resident Engineer" rozeti), ardından katılımcının kendi kurumunda Claude kurulumuna liderlik ettiği 12 haftalık rezidans ve son pratik sınavla "Claude Frontier Deployed Engineer" rozeti. **Bireysel başvuru yok;** program Enterprise müşterileri ve partnerlerle başlıyor, müşteri Anthropic hesap ekibine, partner kendi partner yöneticisine başvurur. Rezidans şu an seçili bir grupla erken erişimde. Anthropic 100 milyon dolarlık ilk yatırımla 2027 sonuna kadar 10.000 FDE yetiştirmeyi hedefliyor ve ilk belgeleri 2027 başında vermeyi bekliyor. Ücret ve yer bilgisi yayımlanmadı. Kaynak: [claude.com/programs/frontier-academy](https://claude.com/programs/frontier-academy).
+
+İki yol da İngilizce ve teknik ekibe ya da kendi kendine öğrenen çalışana göre. Türkçe, iş odaklı ve sizin süreçlerinize uyarlanmış çalışan eğitimi Zamana'nın işi; Zamana bu programların sağlayıcısı değildir.
 
 ## Türkçe
 

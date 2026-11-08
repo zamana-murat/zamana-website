@@ -1,6 +1,6 @@
 ---
 title: "Öğretmenler için Claude: ders planı, ölçme ve farklılaştırma"
-seoTitle: "Öğretmenler için Claude: Ders Planı, Sınav, Farklılaştırma"
+seoTitle: "Öğretmenler için Claude: Ders Planı ve Sınav"
 description: "Öğretmenler Claude ile ders planı, sınav ve farklılaştırılmış materyal hazırlar. Claude for Teachers'ın Türkiye'de durumu, 18 yaş kuralı ve öğrenci verisi."
 eyebrow: "Sektör"
 lead: "Claude, öğretmenin ders planı, sınav sorusu, düzeylere göre çalışma kâğıdı ve veli mektubu gibi hazırlık işlerini dakikalara indirir; son sözü öğretmen söyler. Anthropic'in ücretsiz öğretmen programı yalnız ABD'deki okullar için. Türkiye'deki öğretmen kendi hesabıyla başlar, öğrenciler ise 18 yaş kuralı nedeniyle Claude kullanamaz."
@@ -18,7 +18,7 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Bireysel program", href: "/programlar/bireysel/" }
 order: 140
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -54,7 +54,7 @@ Kaynak sayfadaki beş kullanım, Türk sınıfına uyarlanmış örneklerle:
 
 ![Aynı denklem konusunun üç düzeyde hazırlanmış Türkçe çalışma kâğıdı: destek düzeyinde adım adım ipuçlu sorular, sınıf düzeyinde iki adımlı denklemler, ileri düzeyde parantezli denklem ve bir problem sorusu; altta öğretmen kontrol kutusu](/images/kurumsal/ogretmenler/farklilastirma.webp)
 
-Kaynak sayfa ayrıca Claude Design ile çalışma kâğıdı ve sunum hazırlamayı, Cowork ile veli bülteni gibi tekrarlayan işleri zamanlamayı ve kendi rubrik ya da karne yorumu biçiminizi bir [skill](/wiki/yetenekler/skills/) olarak tanımlamayı öneriyor. Bunlar ücretli planlarda; Claude Design beta durumunda.
+Kaynak sayfa ayrıca Claude Design ile çalışma kâğıdı ve sunum hazırlamayı, Cowork ile veli bülteni gibi tekrarlayan işleri zamanlamayı ve kendi rubrik ya da karne yorumu biçiminizi bir [skill](/wiki/yetenekler/skills/) olarak tanımlamayı öneriyor. Cowork ücretli planlarda; Claude Design 8 Ekim 2026'da betadan çıktı ve skill'lerle birlikte Free dahil tüm planlarda var.
 
 ## Nasıl başlarsınız?
 
@@ -70,4 +70,4 @@ Kaynak sayfa ayrıca Claude Design ile çalışma kâğıdı ve sunum hazırlama
 - **Kişisel hesapta eğitim ayarı:** Free ve Pro hesaplarda sohbetlerin model eğitiminde kullanılıp kullanılmayacağını kullanıcı ayarlardan seçer. Bu ayarı kendiniz kontrol edin. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Okul politikası:** Okulunuzun ve MEB'in yapay zeka ve veri kullanımına ilişkin güncel düzenlemelerini okul idaresiyle, gerekiyorsa hukuk danışmanıyla teyit edin.
 
-Anthropic'in Academy sayfasında İngilizce ücretsiz kurslar var; öğretmenlere özel bir kursun güncel olduğunu doğrulayamadık. Uygulamalı ve Türkçe bir başlangıç isteyen öğretmenler için Zamana'nın [bireysel programı](/programlar/bireysel/) var.
+Claude Academy'de eğitimcilere yönelik İngilizce ücretsiz kurslar var ("AI Fluency" başlığı altında genel eğitimciler ve K-12 eğitimcileri için ayrı kurslar). Uygulamalı ve Türkçe bir başlangıç isteyen öğretmenler için Zamana'nın [bireysel programı](/programlar/bireysel/) var.

@@ -33,7 +33,7 @@ Claude hata yapabilir. Özellikle rakam, hukuki atıf ve önemli kararlar için 
 
 Claude'u ABD merkezli yapay zeka şirketi Anthropic geliştirir. Şirketin geçmişi ve yaklaşımı için [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/) sayfasına bakabilirsiniz.
 
-Ekim 2026 itibarıyla güncel model ailesi dört isimden oluşur:
+Kasım 2026 itibarıyla güncel model ailesi dört isimden oluşur:
 
 - **Fable 5.1:** en güçlü genel model, uzun süren ve çok adımlı işler için.
 - **Opus 5.5:** Fable 5.1'e yakın performans, daha düşük maliyet. Çoğu iş için iyi bir başlangıç.
@@ -48,12 +48,12 @@ Claude'un güçlü olduğu işlerin pratik karşılığı şöyle:
 
 - **Hızlı cevap ve uzun görev:** Kısa bir soru da sorabilir, bilgisayarınızı kapattıktan sonra bile süren uzun bir görev de verebilirsiniz.
 - **Bitmiş, düzenlenebilir dosyalar:** Word, Excel, PowerPoint ve PDF okur; belge, tablo, sunum ve etkileşimli grafik üretir. Claude görsel üretmez, görselleri yorumlar.
-- **Bağlı araçlarda çalışma (connectors):** E-posta, takvim, Drive, Slack, CRM gibi uygulamalara bağlanır. Resmi dizinde yaklaşık 900 connector var.
+- **Bağlı araçlarda çalışma (connectors):** E-posta, takvim, Drive, Slack, CRM gibi uygulamalara bağlanır. Resmi dizinde 1.000'den fazla connector var.
 - **Skills ve Plugins:** Kendi çalışma yönteminizi Claude'a öğretir, ekiple paylaşırsınız. Böylece her seferinde baştan anlatmazsınız.
 - **Zamanlanmış görevler:** "Her pazartesi geçen haftanın rakamlarını çek, bir sunuma koy" gibi tekrarlanan işleri belirlediğiniz takvimde kendi başına çalıştırır.
 - **Hafıza ve Projects:** Geçmiş konuşmalardan bağlamı hatırlar, projelerinizi dosya ve talimatlarıyla bir arada tutar.
-- **Web araması, sesli konuşma ve tarayıcıda çalışma:** Güncel bilgiyi arar. Sesle de konuşabilirsiniz, ancak sesli modun resmi dil listesinde Türkçe görünmüyor. Chrome eklentisiyle web sayfalarında işlem yapabilir.
-- **Bilgisayar kullanımı:** Ekranınızı görüp kullanabilir. Bu özellik araştırma önizlemesi, yalnızca Pro, Max ve Ultra planlarında.
+- **Web araması, sesli konuşma ve tarayıcıda çalışma:** Güncel bilgiyi arar. Sesle de konuşabilirsiniz (beta), ancak Anthropic sesli modda Türkçe desteğini resmi olarak belirtmiyor. Chrome eklentisiyle web sayfalarında işlem yapabilir.
+- **Bilgisayar kullanımı:** Ekranınızı görüp kullanabilir. Bu özellik beta, yalnızca Pro, Max ve Ultra planlarında, masaüstü uygulamasında (macOS ve Windows); Team ve Enterprise'da yok.
 
 ## Hangi uygulamalarda çalışır?
 
@@ -61,8 +61,9 @@ Claude'un güçlü olduğu işlerin pratik karşılığı şöyle:
 - **Telefondan görev:** Pro, Max, Ultra ve Team planlarında telefondan görev başlatıp bulutta çalışmasını bırakabilirsiniz.
 - **Claude Code:** Yazılım geliştirme için ayrı bir ürün, [kendi sayfasında](/claude/claude-code/) anlatılıyor.
 - **@Claude (Slack):** Ekip kanallarında Claude'u etiketlersiniz, Team ve Enterprise için beta. [Sayfası](/claude/tag/) var.
-- **Claude for Chrome ve Claude for Microsoft 365:** Tarayıcıda ve Excel, PowerPoint, Word gibi uygulamaların içinde.
-- **Cowork:** Önceden ayrı bir ürün olan Cowork, 16 Eylül 2026'dan itibaren sohbetle birleşti ve artık tek bir "Claude". Pro, Max ve Ultra'da kademeli açılıyor; sohbetleriniz, projeleriniz, connector ve skill'leriniz olduğu gibi kalıyor.
+- **Claude for Chrome, Microsoft 365 ve Google Workspace:** Tarayıcıda; Excel, PowerPoint, Word ve Outlook'un içinde; Google Docs, Sheets ve Slides'ın yan panelinde ([Google Workspace sayfası](/claude/google-workspace/)).
+- **Cowork:** Önceden ayrı bir ürün olan Cowork, 16 Eylül 2026'dan itibaren sohbetle birleşti ve artık tek bir "Claude". Pro, Max ve Ultra'da kademeli açılıyor, Enterprise'da 23 Ekim 2026'dan beri genel kullanımda (Team ve Enterprise'da yönetici açar); sohbetleriniz, projeleriniz, connector ve skill'leriniz olduğu gibi kalıyor. Ne yaptığı [Cowork sayfasında](/claude/cowork/).
+- **Claude Duet:** Sabah özeti gönderen, işleri takip edip yalnız karar gerektiğinde size yazan proaktif ajan. Şu an yalnız ABD'de, Pro, Max ve Ultra için bekleme listeli araştırma önizlemesi; ABD dışına henüz açılmadı.
 
 ![Claude'un hazırladığı Türkçe haftalık kampanya raporu sunumu: "Kampanya raporu, 17 Ağustos haftası" kapak slaytı ve 7 slaytlık önizleme](/images/claude/index/kampanya-raporu.webp)
 
@@ -78,13 +79,13 @@ Aşağıdakiler Claude'un çalışma biçimini Türkiye'deki tipik işlere uyarl
 
 ## Planlar ve fiyatlar
 
-Fiyatlar ABD doları, vergi hariç, Ekim 2026 itibarıyla geçerlidir. Kesin ve güncel fiyat için Anthropic'in sayfasına bakın.
+Fiyatlar ABD doları, vergi hariç, Kasım 2026 itibarıyla geçerlidir. Kesin ve güncel fiyat için Anthropic'in sayfasına bakın.
 
 | Plan | Fiyat | Kime |
 |---|---|---|
 | Free | $0 | Denemek için |
 | Pro | $20/ay ($17/ay, yıllık peşin $200) | Bireysel düzenli kullanım |
-| Max / Ultra | $100 / $200 aylık | Yoğun bireysel kullanım |
+| Max / Ultra | $100 / $200 aylık (yıllık seçenek yok) | Yoğun bireysel kullanım |
 | Team | Standard $25, Premium $125 koltuk/ay (yıllık faturada $20 ve $100), en az 2, en çok 150 koltuk | Küçük ve orta ekipler |
 | Enterprise | $20/koltuk/ay (yıllık fatura) + kullanım API fiyatıyla | Büyük kurumlar, yönetim ve denetim ihtiyacı |
 

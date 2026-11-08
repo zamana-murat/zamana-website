@@ -16,7 +16,7 @@ related:
   - { label: "Projects (wiki)", href: "/wiki/araclar/projects/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 70
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -35,7 +35,7 @@ Hazır istem Claude'un sayfasında (claude.com/import-memory). Asistandan şunla
 - **İhracat ve satış ekibi:** Ürün gamınızı, hedef pazarlarınızı ve standart teklif dilinizi hafızaya yazdırmış bir çalışan, aynı bilgiyi Claude'da yeniden yazmak zorunda kalmaz.
 - **Muhasebe ve mali işler:** "Tutarları nokta ve virgülle şöyle göster, KDV'yi ayrı satırda yaz" gibi biçim kuralları, her konuşmada yeniden hatırlatılmadan taşınır.
 - **Hukuk ve insan kaynakları:** Bu bölümlerde hafızada müşteri, çalışan ya da dava bilgisi birikmiş olabilir. Taşımadan önce listeyi satır satır okuyup yalnızca çalışma biçiminize dair olanları bırakın.
-- **Ekip geçişi:** Bir ekibin tamamı geçiyorsa herkes kendi bellek listesini aktarır. Ortak talimatlar için bellek yerine [Projects](/wiki/araclar/projects/) ya da şirket CLAUDE.md dosyası daha uygun olabilir.
+- **Ekip geçişi:** Bir ekibin tamamı geçiyorsa herkes kendi bellek listesini aktarır. Ortak talimatlar için bellek yerine [Projects](/wiki/araclar/projects/) ve proje talimatları daha uygun olabilir.
 
 ## Nasıl başlarsınız?
 

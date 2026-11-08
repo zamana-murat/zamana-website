@@ -1,7 +1,7 @@
 ---
 title: "Zamana Wiki: Türkiye'nin Claude Kaynağı"
-description: "Claude'u profesyonel olarak kullanmak için Türkçe kapsamlı rehber. Bireysel profesyoneller ve şirketler için kalıcı talimat (CLAUDE.md dahil), Cowork, prompting ve gerçek iş akışları."
-lastUpdated: "2026-10-06"
+description: "Claude'u profesyonel kullanmanın Türkçe rehberi: kalıcı talimat (CLAUDE.md), Cowork, prompting, MCP ve rol bazlı gerçek iş akışları."
+lastUpdated: "2026-11-08"
 ---
 
 **Claude'u doğru kullanmanın Türkçe kaynağı.**
@@ -36,7 +36,7 @@ Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek 
 
     ---
 
-    Satış, pazarlama, finans, hukuk, İK ve 13 alan daha: bireysel profesyonel veya kurumsal kullanım için gerçek iş akışları.
+    Satış, pazarlama, finans, hukuk, İK ve 15 alan daha: bireysel profesyonel veya kurumsal kullanım için gerçek iş akışları.
 
     [→ Departmanlar](/wiki/departmanlar/)
 

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Sivil toplum indirim akışı</title>
+<!--
+  Source of public/images/kurumsal/sivil-toplum/indirim-akisi.webp (used in /kurumsal/sivil-toplum/).
+  Facts: docs/CLAUDE-GUNCEL-OLGULAR.md §12 (Claude for Nonprofits) and https://claude.com/solutions/nonprofits (2026-11-08).
+  Render (800 CSS px wide, 2x):
+    chrome --headless=new --hide-scrollbars --force-device-scale-factor=2 --window-size=800,456
+           --screenshot=out.png file:///.../sivil-toplum-indirim-akisi.html
+  then convert to webp (quality 90).
+-->
+<style>
+  @font-face { font-family: 'PJS'; src: url('../../fonts/PlusJakartaSans-Regular.ttf'); font-weight: 400; }
+  @font-face { font-family: 'PJS'; src: url('../../fonts/PlusJakartaSans-SemiBold.ttf'); font-weight: 600; }
+  @font-face { font-family: 'PJS'; src: url('../../fonts/PlusJakartaSans-Bold.ttf'); font-weight: 700; }
+  @font-face { font-family: 'PJS'; src: url('../../fonts/PlusJakartaSans-ExtraBold.ttf'); font-weight: 800; }
+  :root {
+    --navy: #0f2855; --gold: #c9a84c; --gold-text: #8a6d1f; --cream: #fbf9f4;
+    --line: #e7e2d6; --muted: #5b6475; --green-bg: #e3f1e6; --green: #1d6b3a;
+    --amber-bg: #fbf1d6; --amber-line: #e5cf8f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 800px; height: 456px; background: var(--cream); }
+  body { font-family: 'PJS', sans-serif; color: var(--navy); padding: 26px 24px 0; -webkit-font-smoothing: antialiased; }
+  .eyebrow { font-size: 10.5px; font-weight: 800; letter-spacing: .12em; color: var(--gold-text); }
+  h1 { font-size: 21px; font-weight: 800; letter-spacing: -.01em; margin-top: 5px; }
+  .flow { display: grid; grid-template-columns: 1fr 14px 1fr 14px 1.1fr 14px 1.15fr; gap: 0 6px; margin-top: 18px; align-items: stretch; }
+  .arrow { align-self: center; color: var(--gold); font-weight: 800; font-size: 16px; text-align: center; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 12px 11px; display: flex; flex-direction: column; gap: 6px; }
+  .card--hi { border: 1.5px solid var(--gold); }
+  .num { width: 22px; height: 22px; border-radius: 50%; background: var(--navy); color: var(--gold); font-size: 11.5px; font-weight: 800; display: grid; place-items: center; }
+  .card h2 { font-size: 13px; font-weight: 800; line-height: 1.25; }
+  .card p, .card li { font-size: 10px; line-height: 1.45; color: var(--muted); }
+  .card p b, .card li b { color: var(--navy); font-weight: 700; }
+  .card ul { list-style: none; display: flex; flex-direction: column; gap: 3px; }
+  .card li { padding-left: 10px; position: relative; }
+  .card li::before { content: ''; position: absolute; left: 0; top: 6px; width: 4px; height: 4px; border-radius: 50%; background: var(--gold); }
+  .card .no { font-size: 9.4px; border-top: 1px dashed var(--line); padding-top: 6px; }
+  .chip { margin-top: auto; align-self: flex-start; font-size: 9.6px; font-weight: 700; border-radius: 6px; padding: 3px 7px; line-height: 1.3; }
+  .chip--ok { background: var(--green-bg); color: var(--green); }
+  .chip--warn { background: var(--amber-bg); color: #7a5a12; border: 1px solid var(--amber-line); }
+  .price { border-radius: 9px; padding: 7px 9px; }
+  .price--main { background: var(--navy); color: #fff; }
+  .price--alt { border: 1px solid var(--line); }
+  .card .amt { font-size: 15px; color: var(--navy); font-weight: 800; letter-spacing: -.01em; }
+  .amt small { font-size: 10px; font-weight: 700; }
+  .card .price--main .amt { color: var(--gold); }
+  .card .price .lbl { font-size: 9.6px; line-height: 1.35; margin-top: 1px; }
+  .card .price--main .lbl { color: #d9deea; }
+  .card .price--alt .lbl { color: var(--muted); }
+  .areas { display: grid; grid-template-columns: 1fr; gap: 4px; }
+  .area { background: var(--cream); border: 1px solid var(--line); border-radius: 7px; padding: 4px 7px; display: flex; gap: 6px; align-items: baseline; }
+  .area b { font-size: 9.6px; white-space: nowrap; font-weight: 800; color: var(--navy); }
+  .card .area span { font-size: 9px; line-height: 1.35; color: var(--muted); }
+  .card .plugin { font-size: 13px; color: var(--navy); font-weight: 800; }
+  .plugin small { display: block; font-size: 10px; font-weight: 600; color: var(--muted); margin-top: 1px; }
+  .foot { display: flex; gap: 10px; margin-top: 12px; }
+  .foot div { flex: 1; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; font-size: 10.2px; line-height: 1.45; color: var(--muted); }
+  .foot b { display: block; font-size: 9px; font-weight: 800; letter-spacing: .12em; color: var(--gold-text); margin-bottom: 2px; }
+</style>
+</head>
+<body>
+  <p class="eyebrow">TEAM PLANINDA KÂR AMACI GÜTMEYEN FİYAT</p>
+  <h1>Bir vakıf veya dernek için başvuru akışı</h1>
+
+  <div class="flow">
+    <div class="card">
+      <span class="num">1</span>
+      <h2>Kuruluş türü uygun mu?</h2>
+      <p>Goodstack'in Türkiye tanımı: <b>vakıf, vergi muafiyeti olan vakıf, dernek</b> ve kamu yararına çalışan sosyal kooperatif.</p>
+      <p class="no">Uygun değil: devlet kurumları, siyasi kampanyalar, yükseköğretim, sağlık sistemleri.</p>
+      <span class="chip chip--ok">Türkiye Goodstack listesinde</span>
+    </div>
+    <span class="arrow">›</span>
+
+    <div class="card">
+      <span class="num">2</span>
+      <h2>Goodstack doğrulaması</h2>
+      <p><b>2 ile 150 koltuk</b> arası Team planı için. Doğrulama birkaç dakika sürer, indirim kurulumda uygulanır.</p>
+      <p class="no">Enterprise: Anthropic'in kâr amacı gütmeyenler satış ekibi.</p>
+      <span class="chip chip--warn">Türkiye'den onaylı başvuru doğrulanmadı</span>
+    </div>
+    <span class="arrow">›</span>
+
+    <div class="card">
+      <span class="num">3</span>
+      <h2>Fiyat</h2>
+      <div class="price price--main">
+        <p class="amt">8 $ <small>/ kullanıcı / ay</small></p>
+        <p class="lbl">Nonprofit standard</p>
+      </div>
+      <div class="price price--alt">
+        <p class="amt">3 $ <small>/ kullanıcı / ay</small></p>
+        <p class="lbl">Nonprofit access: düşük ve orta gelirli ülkeler</p>
+      </div>
+      <p>Normal Team Standard: aylık 25&nbsp;$, yıllıkta 20&nbsp;$.</p>
+      <span class="chip chip--warn">Türkiye'nin hangi fiyata girdiği teyitli değil</span>
+    </div>
+    <span class="arrow">›</span>
+
+    <div class="card card--hi">
+      <span class="num">4</span>
+      <h2>Kurulu gelir</h2>
+      <p class="plugin">Nonprofits plugin'i<small>14 skill, doğrulanan kuruluşa hazır</small></p>
+      <div class="areas">
+        <div class="area"><b>Kuruluşu tanıma</b><span>ses, politika</span></div>
+        <div class="area"><b>Pazarlama</b><span>kampanya, içerik</span></div>
+        <div class="area"><b>Ekip</b><span>ilan, mülakat</span></div>
+        <div class="area"><b>Fon geliştirme</b><span>hibe, bağışçı</span></div>
+      </div>
+      <span class="chip chip--warn">Türk vakıf ve dernek mevzuatına uyarlayın</span>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div><b>TÜRKİYE'DEN</b>En kesin yol Goodstack doğrulamasını denemek; doğrulamadan sonra ekranda çıkan fiyatı kontrol edin.</div>
+    <div><b>ÖDEME</b>ABD doları ile, kartla. Fiyatlar Anthropic'in sayfasından (Kasım 2026), vergi hariçtir ve değişebilir.</div>
+  </div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 ---
 title: "Claude'a Kişisel Veri Yüklemeden Önce: KVKK m.9 Yurt Dışı Aktarım"
-seoTitle: "Claude ve KVKK m.9: Yurt Dışına Veri Aktarımı Rehberi"
-description: "Claude'a kişisel veri girmek yurt dışına aktarımdır. KVKK m.9 sırası (yeterlilik kararı, standart sözleşme, arızi aktarım), 5 iş günü bildirimi ve şirketin atacağı adımlar."
+seoTitle: "Claude ve KVKK m.9: Yurt Dışı Veri Aktarımı"
+description: "Claude'a kişisel veri girmek aktarımdır. KVKK m.9 sırası (yeterlilik, standart sözleşme, arızi aktarım), 5 iş günü bildirimi, şirketin adımları."
 tags:
   - temeller
   - kvkk

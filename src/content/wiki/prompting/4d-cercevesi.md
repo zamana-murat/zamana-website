@@ -7,10 +7,10 @@ tags:
   - 4d-framework
   - ai-fluency
   - anthropic-academy
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
-Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir. Anthropic Academy ve University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
+Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir. Claude Academy (eski adı Anthropic Academy) ve University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
 
 4D, bir çalışanın Claude'la "dene bakalım" seviyesinden "işini buna göre yeniden tasarla" seviyesine geçmesini sağlayan düşünce yapısıdır.
 
@@ -171,7 +171,7 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 
 ## Davranışsal Göstergeler: Öz Değerlendirme
 
-4D bir teori değil, gözlemlenebilir davranışlar bütünüdür. Anthropic'in AI Fluency çalışması, her boyutta "düşük akıcılık" ve "yüksek akıcılık" davranışlarını ayırt eder. Aşağıdaki tablo kendinizi (veya ekibinizi) hızlıca konumlandırmak için bir aynadır.
+4D bir teori değil, gözlemlenebilir davranışlar bütünüdür. Çerçeve 24 gözlemlenebilir davranış tanımlar ve her boyutta "düşük akıcılık" ve "yüksek akıcılık" davranışlarını ayırt eder. Aşağıdaki tablo kendinizi (veya ekibinizi) hızlıca konumlandırmak için bir aynadır.
 
 | Boyut | Düşük akıcılık göstergesi | Yüksek akıcılık göstergesi |
 |---|---|---|

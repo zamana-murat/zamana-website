@@ -6,7 +6,7 @@ tags:
   - prompting
   - sablon
   - katalog
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Çoğu profesyonel her gün benzer 5-10 işle uğraşır.** Toplantı özeti, müşteri e-postası, rapor taslağı, veri analizi, hızlı araştırma, bunların her biri için **kullanıma hazır prompt şablonu** olması, her seferinde yeniden düşünmekten kurtarır.
@@ -22,6 +22,8 @@ Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın
 5. Düzenli kullandığınız şablonları bir [Claude Projesi](/wiki/araclar/projects/)ne ya da [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'ne ekleyin (ayrıntı sayfanın sonunda)
 
 İterasyon süreci için [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfasına bakın.
+
+**Zor analiz ve karar şablonlarında** (D2, D3, E1, H2, H5) yalnız promptu değil düşünme derinliğini de ayarlayın: Pro ve üstü planlarda model menüsünden Effort'u yükseltin. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
 
 ---
 
@@ -423,6 +425,8 @@ Kurallar:
 - Türkçe yaz
 ```
 
+[Operasyon departmanı](/wiki/departmanlar/operasyon/) sayfasında ek bağlam.
+
 ### F2. İş İlanı
 
 ```
@@ -532,6 +536,8 @@ Kurallar:
 ```
 
 ### G3. Hızlı Bilgi Sorgu (Web Arama Tetikli)
+
+Bu şablon için web aramasının açık olması gerekir.
 
 ```
 Rol: Kaynaklı ve temkinli araştırma yapan bir araştırma analistisin.
@@ -722,9 +728,9 @@ Bu kataloğun her şablonunu **her seferinde kopyalamak** uzun vadede yorucudur.
 1. **Claude Projesi:** şablonları bir [Projeye](/wiki/araclar/projects/) dosya olarak yükleyin, proje talimatına "şablonlarım bu projede; adıyla çağırırsam o şablonu kullan, eksik bilgiyi sor" yazın. Sonra basitçe deyin: *"Soğuk e-posta şablonunu kullan, müşteri X için, sektör Y."* Cowork bulut görevleri bilgisayardaki klasöre doğrudan erişemediği için kütüphaneyi yerel klasörde değil projede tutmak daha güvenlidir
 2. **Sık kullanılan ve değişmeyen şablon:** [Skill](/wiki/yetenekler/skills/)'e çevirin; Claude ilgili gördüğünde yükler
 3. **Her sohbette geçerli kısa kurallar** (dil, ton, yasak kalıplar): profil talimatı ("Instructions for Claude", Settings > General)
-4. **Claude Code kullanıyorsanız:** [CLAUDE.md](/wiki/claude-md/nedir/) dosyası bu iş için kullanılan mekanizmadır
+4. **Klasörle çalışıyorsanız (yerel Cowork, Claude Code):** klasördeki [CLAUDE.md](/wiki/claude-md/nedir/) dosyası; şablonların adını ve yerini oraya yazın
 
-Talimat türlerinin kapsamı için [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/), organize etmek için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasına bakın.
+Talimat türlerinin kapsamı için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/), organize etmek için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasına bakın.
 
 ## Şablonların Sınırı
 

@@ -1,7 +1,7 @@
 ---
 title: "Türkiye'de Claude: Erişim, Satın Alma ve Destek"
 seoTitle: "Claude Türkiye Temsilcisi Var mı? Ofis, Satın Alma"
-description: "Claude Türkiye'de kullanılabilir mi? Anthropic'in Türkiye ofisi ve resmi temsilcisi yok; satın alma doğrudan Anthropic'ten. Fatura, KDV ve KVKK özeti."
+description: "Claude Türkiye'de kullanılabilir mi? Anthropic'in Türkiye ofisi ve temsilcisi yok; satın alma doğrudan Anthropic'ten. Fatura, KDV ve KVKK özeti."
 tags:
   - temeller
   - turkiye
@@ -24,13 +24,14 @@ Türkçe yazışma ve profesyonel metin üretiminde Claude'un performansı iyidi
 Hayır. Anthropic'in Türkiye'de ofisi yok, Türkiye'de resmi temsilcisi ya da distribütörü de yok. Yerel satış ya da yerel destek hattı bulunmuyor; hesap, fatura ve teknik sorular Anthropic'in kendi kanallarından (claude.ai ve yardım merkezi) çözülüyor. Şirketin genel yapısı için [Anthropic ve Claude'un Tarihçesi](/wiki/temeller/anthropic-ve-tarihce/) sayfasına bakabilirsiniz.
 
 **Bir uyarı:** "Claude Türkiye temsilcisiyiz" diyen biriyle karşılaşırsanız, Anthropic'in yetkilendirdiği resmi bir partner ya da yetkili kanal olup olmadığını yazılı sorun. Abonelik, "özel fiyat" ya da "kurumsal paket" adı altında ödeme istenen durumlarda, ödemenin Anthropic'e mi yoksa üçüncü bir tarafa mı gittiğine bakın.
+
 ## Türkiye'den nasıl satın alınır?
 
 **Bireysel planlar (Pro, Max, Ultra):** claude.ai üzerinden ya da mobil uygulamadan, kartla satın alınır. ABD fiyatları şöyledir: Pro 20 dolar, Max 100 dolar, Ultra 200 dolar (aylık; eski adlarıyla Max 5x ve Max 20x). Mobil mağaza fiyatlarını bu sayfada yazmıyoruz, çünkü Anthropic'in bu konuda yayımlanmış bir fiyat sayfası yok; satın alma ekranında gördüğünüz tutar geçerlidir.
 
 **Team ve Enterprise:** Team için yönetici hesabıyla en az 2 koltuk gerekir ve plan self-serve açılır. Enterprise için self-serve alımda en az 20 koltuk, yıllık taahhüt ve kullanıma göre ek ücret söz konusudur; daha büyük ya da özel şartlı alımlarda Anthropic'in satış ekibiyle görüşülür. Ayrıntı için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) ve [Planlar](/wiki/temeller/planlar/) sayfalarına bakın.
 
-**Ödeme:** Fiyatlar dolarla gösterilir. Türk lirasıyla ödeme ya da Türkiye'ye özel TL fiyat listesi bulamadık. Kartınızın yurt dışı e-ticarete açık olması gerekir; banka dolar tutarını kendi kuruyla liraya çevirir. Şirket aboneliklerinde çoğu ekip bu yüzden kurumsal kredi kartı kullanır. Kullanım kotaları için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
+**Ödeme:** Fiyatlar dolarla gösterilir. Web'de Türk lirasıyla ödeme ya da Türkiye'ye özel TL fiyat listesi bulamadık; App Store ve Google Play'de ise TL fiyat gösterilir ve web fiyatından farklıdır ([Planlar](/wiki/temeller/planlar/#türkiyede-tl-olarak-ne-ödersiniz)). Kartınızın yurt dışı e-ticarete açık olması gerekir; banka dolar tutarını kendi kuruyla liraya çevirir. Şirket aboneliklerinde çoğu ekip bu yüzden kurumsal kredi kartı kullanır. Kullanım kotaları için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
 
 ## Fatura, KDV ve stopaj
 
@@ -45,7 +46,7 @@ Tam çerçeve için [Fatura, KDV ve Türkiye'de Muhasebeleştirme](/wiki/temelle
 
 Anthropic ABD merkezli olduğu için Claude'a kişisel veri girdiğinizde bu, KVKK anlamında yurt dışına aktarım sayılır. Kişisel veri girmiyorsanız (anonim iş metni, genel araştırma) bu konu sizi ilgilendirmez.
 
-Girecekseniz, pratikte Kurul'un ilan ettiği standart sözleşme yolu gündeme gelir; imzalar tamamlandıktan sonra 5 iş günü içinde Kurum'a bildirim gerekir. Çalışanlardan açık rıza almak, düzenli ve günlük Claude kullanımı için güvenli bir dayanak sayılmaz. Ayrıntılı anlatım ve Anthropic tarafında bilinmeyenler için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Yurt Dışına Aktarım" bölümüne bakın. Hukuki görüş yerine geçmez.
+Girecekseniz, pratikte Kurul'un ilan ettiği standart sözleşme yolu gündeme gelir; imzalar tamamlandıktan sonra 5 iş günü içinde Kurum'a bildirim gerekir. Çalışanlardan açık rıza almak, düzenli ve günlük Claude kullanımı için güvenli bir dayanak sayılmaz. Ayrıntılı anlatım ve Anthropic tarafında bilinmeyenler için [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasına, plana göre veri politikası için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın. Hukuki görüş yerine geçmez.
 
 ## Kamu kurumları
 
@@ -68,7 +69,7 @@ Zamana'nın **yapmadıkları:** Claude aboneliği satmaz, Anthropic adına fatur
 
 ### Claude'u Türk lirasıyla alabilir miyim?
 
-Türk lirası fiyat ya da TL ödeme seçeneği bulamadık. Fiyatlar dolarla gösterilir; kartınız dolar üzerinden çekilir ve bankanız kendi kuruyla çevirir. Mobil uygulamadan alıyorsanız mağazanın gösterdiği tutar esastır.
+Web'de Türk lirası fiyat ya da TL ödeme seçeneği bulamadık. Fiyatlar dolarla gösterilir; kartınız dolar üzerinden çekilir ve bankanız kendi kuruyla çevirir. Mobil uygulamadan alıyorsanız mağazanın gösterdiği tutar esastır.
 
 ### Türkçe destek var mı?
 

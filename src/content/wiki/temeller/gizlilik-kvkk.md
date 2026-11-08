@@ -54,12 +54,22 @@ Bunu nasıl yaparsınız:
 2. **Settings → Privacy** menüsüne gidin
 3. **"Claude'u geliştirmeye yardım et"** (Help improve Claude) seçeneğini kapatın
 
+### Geçici Sohbet (Incognito chat): Ne Sağlar, Ne Sağlamaz?
+
+Tüm planlarda yeni sohbette sağ üstteki **hayalet simgesiyle** geçici sohbet açılır (siyah çerçeve, "Incognito chat" etiketi). Çalışanlar bunu sık sık "iz bırakmayan mod" sanar; KVKK açısından doğru çerçeve şudur:
+
+- **Sağlar:** sohbet geçmişe ve hafızaya kaydedilmez, mevcut hafızayı kullanmaz, aramada çıkmaz ve **eğitimde kullanılmaz**. Tüketici hesabında "Claude'u geliştirmeye yardım et" açık olsa bile tek seferlik hassas bir soru için güvenli bir alışkanlıktır.
+- **Sağlamaz:** veri "hiç saklanmaz" değildir; 30 gün saklanır (Enterprise'ta kuruluşun belirlediği süre daha uzun olabilir). Team ve Enterprise'ta owner'ın veri dışa aktarımına, Enterprise'ta Compliance API'ye girer. Yani kişisel veriyi Claude'a girmek için KVKK dayanağının yerini tutmaz.
+- **Kısıtlar:** geçici sohbette dosya oluşturma ve kod çalıştırma yok; normal sohbete çevrilemez, kapatılınca yeniden açılamaz, proje içinde başlatılamaz. Profil talimatınız uygulanmaya devam eder.
+
+Ayrıntı: [Memory](/wiki/yetenekler/memory/) ve [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
+
 ### Şifreleme ve Erişim Kontrolleri
 
 - Tüm veri iletimde (HTTPS/TLS) ve depolamada şifrelenir
 - Anthropic çalışanları varsayılan olarak konuşmalarınıza erişemez, sadece açık izin veya Kullanım Politikası ihlali incelemesi durumunda
 - Erişim katı dahili kontrollerle korunur
-- **Compliance API (yalnız Enterprise):** sohbet, dosya, proje ve etkinlik akışına programatik erişim verir; Cowork ve Claude Code (CLI, masaüstü) oturum içeriği de kapsamdadır. Team'de yoktur, Public Sector Enterprise hariçtir, yalnız Primary Owner açabilir. Denetim izi ihtiyacınız varsa plan seçiminde bu fark belirleyicidir
+- **Compliance API (yalnız Enterprise):** sohbet, dosya, proje ve etkinlik akışına programatik erişim verir; Cowork ve Claude Code (CLI, masaüstü) oturum içeriği de kapsamdadır. Google Workspace eklentisi de kapsamdadır; **Claude Docs etkinliği ise Compliance API'ye girmez**. Team'de yoktur, Public Sector Enterprise hariçtir, yalnız Primary Owner açabilir. Denetim izi ihtiyacınız varsa plan seçiminde bu fark belirleyicidir
 - **Zero Data Retention (API sözleşme düzenlemesi):** Anthropic istem ve yanıtları, yanıt döndükten sonra depolamaz. Bir plan değildir: satış ekibiyle talep edilir, kuruluş başına etkinleştirilir (başka bir organizasyona otomatik yayılmaz) ve tüm API özellikleri bu düzenlemeye uygun değildir. Enterprise planı otomatik olarak Zero Data Retention içermez
 
 ### Claude'un Yapmadığı Şeyler
@@ -77,7 +87,7 @@ Tüketici planlarında (Free, Pro, Max, Ultra) çalışanlar şunları **kesinli
 - **Müşterilerin tam adı + iletişim + finansal verisi** (KVKK kapsamında PII, kişisel veri)
 - **Gizli M&A bilgisi, açıklanmamış mali veri, insider bilgiler**
 - **Ticari sırlar veya özel formüller** (özellikle Free/Pro hesaplarında)
-- **Ayrıcalıklı hukuki iletişim** (avukat-müvekkil gizliliği: ticari plan ve DPA dışında)
+- **Ayrıcalıklı hukuki iletişim** (avukat-müvekkil gizliliği: ticari plan ve DPA dışında; Avukatlık Kanunu'ndaki sır saklama yükümlülüğü Claude'a girilen bilgi için de geçerlidir. Anthropic'in hukuk çalışması destek makalesi Team ya da Enterprise önerir; ABD'de *United States v. Heppner* kararı (Şubat 2026) tüketici hesabında avukatsız kullanımı korumasız saydı. Bu bir hukuki görüş değildir)
 - **Hasta sağlık verisi** (HIPAA bağlamı: Türk hukukunda doğrudan karşılığı yok ama sağlık sektörü müşterileri için önemli. Enterprise planında HIPAA yapılandırması, yani BAA, 14 Temmuz 2026'dan beri self-serve olarak açılabiliyor; kapsam sınırları aşağıdaki sağlık sektörü bölümünde)
 
 ### Pratik Test Sorusu
@@ -173,11 +183,12 @@ Kurumsal dağıtım için IT ekibinizin yapması gerekenler:
   - `claude.ai`
   - `anthropic.com`
   - Claude Desktop backend endpoint'leri
-- **Connector trafiği:** Dış servislere (Slack, Drive vb.) Anthropic'in bulutu üzerinden ulaşır, yerel kurumsal ağ üzerinden değil. Firewall planlamasında bu bilgi kritiktir.
+- **Connector trafiği:** Dış servislere (Slack, Drive vb.) Anthropic'in bulutu üzerinden ulaşır, yerel kurumsal ağ üzerinden değil. Firewall planlamasında bu bilgi kritiktir: kendi sunucunuza gelen connector çağrısına izin vermek için Anthropic'in giden IP aralığı (`160.79.104.0/21`) izin listesine eklenir. Ayrıntı: [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/).
+- **Kişisel hesap engeli (Enterprise):** Kasım 2026'dan beri Enterprise kuruluşları kişisel Claude hesaplarını şirket ağında engelleyebilir (güvenlik merkezi ile birlikte gelen kontroller, kısmen beta). Güvenlik merkezi ve prompt hook'ları (mevcut DLP kurallarınızı Claude'a da uygulatır) claude.ai'da Organization settings altında yönetilir; araçların tam listesi ve durumu: [Takım ve Admin](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026).
 - **VPN uyumluluğu:** Kurumsal VPN bazen Claude Desktop ile çakışır. Eğitim öncesi test edin.
 - **Kurulum yetkisi:** Claude Desktop kurulumu için yönetici hakkı veya IT onayı gerekir.
-- **Cowork görevleri bulutta çalışabilir:** Pro, Max ve Ultra'da 6 Ekim 2026'dan itibaren yeni Cowork görevleri bulutta çalışır; "yalnızca bilgisayarınızda" seçeneği kaldırılır. Yerel dosya hassasiyeti olan ekipler bunu politikalarına işlemeli.
-- **Özel dahili connector'lar:** Şirket içi sistemlere bağlanan MCP server'lar ya açık erişimli olmalı ya da kurumsal ağ perimetresi içinde barındırılmalı.
+- **Cowork görevleri bulutta çalışabilir:** Pro, Max ve Ultra'da 6 Ekim 2026'dan beri yeni Cowork görevleri bulutta çalışır; "yalnızca bilgisayarınızda" seçeneği kaldırıldı. Bulut oturumu bilgisayardaki dosyaya doğrudan erişmez, yerel klasör için masaüstü uygulaması açık ve bağlı olmalıdır. Yerel dosya hassasiyeti olan ekipler bunu politikalarına işlemeli.
+- **Özel dahili connector'lar:** Şirket içi sistemlere bağlanan uzak MCP sunucusu herkese açık internetten erişilebilir olmalıdır (erişim Anthropic'in IP aralığıyla sınırlanabilir); VPN arkasındaki bir sunucuya bu yolla ulaşılmaz. Yalnız iç ağda kalması gereken sistem için çalışanın bilgisayarında çalışan yerel (Desktop) MCP sunucusu kullanılır. Ayrıntı: [Şirket Sistemini Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/).
 
 ## KVKK Müfettişinin Sorabileceği 10 Soru
 
@@ -193,7 +204,7 @@ Kişisel veri işleyen bir AI aracı kullanımı, işleme faaliyetlerinize eklen
 
 ### 3. Çalışanların hangi plan altında Claude kullandığını nasıl biliyorsunuz?
 
-Team veya Enterprise plan + SSO ile bu izlenebilir. Bireysel Pro hesaplarda çalışanın plan seviyesini ve opt-in ayarını görmek güçtür, dolayısıyla kurumsal kullanım için Team önerilir.
+Team veya Enterprise plan + SSO ile bu izlenebilir. Enterprise'ta Kasım 2026'dan beri çalışanların kişisel Claude hesaplarına şirket ağından girişi ağ düzeyinde engellenebilir; böylece şirket verisi bireysel hesaplara kaymaz. Bireysel Pro hesaplarda çalışanın plan seviyesini ve opt-in ayarını görmek güçtür, dolayısıyla kurumsal kullanım için Team önerilir.
 
 ### 4. Anthropic ile imzalı DPA'nız var mı?
 
@@ -221,7 +232,7 @@ Yapılandırılmış bir iç eğitim programı bu soruya güçlü cevap verir. G
 
 ### 10. Claude kullanımının iç kontrol / denetim izi nerede?
 
-Team yönetici paneli kullanım metriklerini gösterir (OpenTelemetry desteği kısmi vardır). Audit log ve Compliance API yalnız Enterprise'tadır. Ayrıca CLAUDE.md dosyaları, workspace klasörleri ve prompt kütüphaneleri **şirket dokümantasyonudur** ve denetimde kanıt olarak sunulabilir.
+Team yönetici paneli kullanım metriklerini gösterir (OpenTelemetry desteği kısmi vardır). Audit log ve Compliance API yalnız Enterprise'tadır; Enterprise'ta ayrıca güvenlik merkezi raporu denetçiye verilebilir ([Takım ve Admin](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026)). Ayrıca CLAUDE.md dosyaları, workspace klasörleri ve prompt kütüphaneleri **şirket dokümantasyonudur** ve denetimde kanıt olarak sunulabilir.
 
 ## Adım Adım DPA Süreci
 

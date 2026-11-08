@@ -1,6 +1,6 @@
 ---
 title: "Küçük İşletme (KOBİ) için Claude: Tek Kişi, Bütün Şapkalar"
-seoTitle: "KOBİ İçin Claude: Nakit Akışı, Tahsilat, Ay Sonu Kapanış"
+seoTitle: "KOBİ için Claude: Nakit Akışı, Tahsilat, Kapanış"
 description: "Küçük işletme sahibi için Claude: nakit akışı, kampanya, ay sonu kapanış, tahsilat takibi. Her işi tek başına yürüten KOBİ sahibinin iş akışı."
 tags:
   - departmanlar
@@ -32,7 +32,7 @@ Dağınık bilgiyi (banka bakiyesi, gelen ödemeler, açık teklifler, takvim) *
 
 > *"Bağlı banka/ön muhasebe ve takvimimden bu sabahın brifingini hazırla: nakit pozisyonu, bu hafta gelmesi beklenen tahsilatlar, açık teklifler, bugünkü randevular. Sonunda bu haftaki en kritik 3 işi sırala."*
 
-[Scheduled Task](/wiki/araclar/scheduled-tasks/) ile her Pazartesi 08:00'de otomatik hazırlanır.
+[Scheduled Task](/wiki/araclar/scheduled-tasks/) ile her Pazartesi 08:00'de otomatik hazırlanır. Veriniz bilgisayarınızdaki bir Excel dosyasındaysa görevin yerelde çalışması gerekir (bilgisayar açık, Desktop bağlı); bulutta kurulan görev yerel klasörünüzü göremez. Ayrıntı için Scheduled Tasks sayfasındaki "Nerede Çalışır" bölümüne bakın.
 
 ## Bölüm 2: Kampanya Yönetimi
 
@@ -40,7 +40,7 @@ Yavaş bir dönem yaklaşıyorsa Claude kampanya kurar: stratejiyi taslaklar, g�
 
 - Satış verisinden durgun dönemi tespit eder
 - Promosyon fikri + mesaj taslağı üretir
-- Canva ile görsel üretir ([Skills](/wiki/yetenekler/skills/) → `canvas-design`)
+- Görseli Canva connector'ıyla, `canvas-design` skill'iyle ([Skills](/wiki/yetenekler/skills/)) ya da Free dahil tüm planlarda açık [Claude Design](/wiki/yetenekler/claude-design/) ile hazırlar
 - CRM'de müşteri listesini segmentler
 - Gönderimi hazırlar, **siz onaylayana kadar göndermez**
 
@@ -67,6 +67,7 @@ KOBİ sahibinin en sevmediği iş. Claude, ön muhasebe kayıtlarını banka ve 
 |---|---|---|
 | Pazartesi sabah | Hafta brifingi + 3 öncelik | Scheduled Task ile otomatik |
 | Gün içi | Müşteri yazışması, teklif | Claude sohbetinde hızlı taslak |
+| Dükkândan ayrıyken | Teklif taslağı, müşteriye yanıt | Telefondan görev atama ([Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch)) ya da [sesli mod](/wiki/araclar/voice-mode/) |
 | Ay sonu | Kapanış ön hazırlığı | Muhasebe + banka mutabakatı |
 | Haftalık | Geciken tahsilat hatırlatmaları | Vade + ödeme geçmişi analizi |
 | Durgun dönem | Kampanya | Strateji + görsel + segment |
@@ -98,7 +99,7 @@ Bir KOBİ sahibinin 3 müşterisinde vadesi geçmiş fatura var, ama takip edece
 
 **Adım 3:** Siz okur, gerekirse düzeltir, **onaylayıp** gönderirsiniz.
 
-Toplam süre: yaklaşık 10 dakika. Eskiden bu iş ya hiç yapılmıyordu ya da yarım saat üzülerek yazılıyordu.
+Eskiden bu iş ya hiç yapılmıyordu ya da yarım saat üzülerek yazılıyordu.
 
 **Süre:** 3 tahsilat hatırlatması için elle 30-45 dakika, Claude ile yaklaşık 10 dakika (okuyup onaylamak dahil). Pazartesi brifingi elle toplanırsa 30-60 dakika alır; zamanlanmış görevle hazırlık sıfıra iner, geriye yaklaşık 5 dakikalık okuma kalır. Brifing her hafta yapılıyorsa ayda kabaca 2-4 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 

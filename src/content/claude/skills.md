@@ -12,11 +12,11 @@ sourceUrl: "https://claude.com/skills"
 sourceTitle: "Skills"
 related:
   - { label: "Skills: Claude'un Uzmanlık Paketleri (wiki)", href: "/wiki/yetenekler/skills/" }
-  - { label: "CLAUDE.md nedir? (wiki)", href: "/wiki/claude-md/" }
+  - { label: "CLAUDE.md nedir? (wiki)", href: "/wiki/claude-md/nedir/" }
   - { label: "Şirket İçi Politika (wiki)", href: "/wiki/temeller/sirket-ici-politika/" }
   - { label: "Takım ve Admin (wiki)", href: "/wiki/temeller/takim-ve-admin/" }
 order: 10
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -57,7 +57,7 @@ Hazır paketler isterseniz, rol bazlı skill gruplarını [Plugins sayfasında](
 
 ## Hangi planda, nelere dikkat?
 
-**Plan.** Skills Free dahil tüm planlarda mevcut. Ayrıntılar için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
+**Plan.** Skills Free dahil tüm planlarda mevcut; Enterprise'da code execution özelliğinin açık olması gerekir. Ayrıntılar için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
 
 **Geçişte kaybolanlar.** Kişisel bir Pro hesabını Team ya da Enterprise'a yükselttiğinizde sohbetleriniz ve projeleriniz taşınır, ancak özel skill'leriniz taşınmaz (geçiş yolu yok). Önce skill klasörlerinizi dışarı alıp saklayın, sonra yeniden yükleyin.
 

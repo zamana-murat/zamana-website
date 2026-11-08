@@ -23,7 +23,7 @@ Claude Code, bir yazılım projesinin içinde çalışan bir kodlama ajanıdır.
 
 Nasıl çalıştığına dair kaynak sayfadaki örnek: çift tıklamada müşteriye iki kez ödeme çektiren bir hata. Claude Code sorunu yeniden üretir, kök nedeni bulur (her çağrıda yeni bir tekrar önleme anahtarı üretilmesi), düzeltmeyi yapar ve düğmeyi işlem sürerken devre dışı bırakır. Siz değişikliği inceler, onaylarsınız.
 
-Claude Code şu yüzeylerde çalışır: terminal, VS Code (Cursor dahil) ve JetBrains eklentileri, Claude masaüstü uygulaması, web, iOS ve Android uygulaması, GitHub ve Slack. macOS, Linux ve Windows desteklenir. GitHub gibi araçlarla ve Git gibi komut satırı araçlarıyla çalışır, MCP sunucularıyla yeteneklerini genişletir.
+Claude Code şu yüzeylerde çalışır: terminal, VS Code (Cursor ve Devin Desktop dahil) ve JetBrains eklentileri, Claude masaüstü uygulaması, web, iOS ve Android uygulaması, GitHub ve Slack. macOS, Linux ve Windows desteklenir. GitHub gibi araçlarla ve Git gibi komut satırı araçlarıyla çalışır, MCP sunucularıyla yeteneklerini genişletir.
 
 ## Zamana programlarıyla ilişkisi
 
@@ -53,12 +53,12 @@ Claude Code kod yazmayan bir çalışanın yerine kullanacağı bir araç değil
 4. Projenize bir `CLAUDE.md` dosyası ekleyin; derleme komutlarınızı, kod standartlarınızı ve kurallarınızı Claude her oturumda buradan okur. Ayrıntı için [CLAUDE.md bölümü](/wiki/claude-md/nedir/).
 5. Claude Code değişiklik yapmadan veya komut çalıştırmadan önce izin ister. Bu izinleri gevşetmeden önce ekip içinde kuralları netleştirin.
 
-Kaynak sayfa şu yeni özellikleri duyuruyor: Projeler (masaüstünde birden çok oturumu gruplayıp denetleme), Pro, Max, Ultra ve Team'de varsayılan "auto mode" (riskli komutları yakalayarak daha uzun süre çalışma), kendi altyapınızda çalışan ortamlar (herkese açık beta) ve oturum bağlamından canlı artifact üretme. Hepsini kullanmadan önce güncel dokümantasyona bakın, bu özellikler hızlı değişiyor.
+Kaynak sayfa şu yeni özellikleri duyuruyor: Projeler (masaüstünde birden çok oturumu gruplayıp denetleme), Pro, Max, Ultra ve Team'de varsayılan "auto mode" (riskli komutları yakalayarak daha uzun süre çalışma), kendi altyapınızda çalışan ortamlar (herkese açık beta) ve oturum bağlamından canlı artifact üretme. Kasım 2026 sayfasında ayrıca Team ve Enterprise için genel kullanımdaki **Code Review** (kod inceleme), Claude Code'un davranışını ve görünümünü özelleştiren **Mods** ve Opus 5.5 üzerinde araştırma önizlemesi olarak **Fast mode** (milyon token başına 8 / 40 dolar; abonelikte usage credits ile) yer alıyor. Hepsini kullanmadan önce güncel dokümantasyona bakın, bu özellikler hızlı değişiyor.
 
 ## Hangi planda, nelere dikkat?
 
 - **Planlar:** Free'de yok. Pro bireysel kullanım için, Max ve Ultra daha büyük kod tabanları ve yoğun kullanım için. Team ve Enterprise ekip yönetimi sunar. Güncel fiyatlar için [Planlar](/wiki/temeller/planlar/) sayfası. Kota bitince kullandıkça öde krediler veya API anahtarı devreye girer; haftalık limit rakamları yayımlanmıyor.
 - **Uzun görevler kotayı hızlı tüketir.** Alt ajanlar ve çok ajanlı iş akışları çok sayıda token harcar, abonelik limitinden düşer.
-- **Veri ve KVKK:** Claude Code yerelde çalışır ve doğrudan model API'leriyle konuşur, ancak kodunuz ve komut çıktılarınız model işlemesi için Anthropic'e gider, yani yurt dışına aktarılır. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak eğitimde kullanılmaz; tüketici hesaplarında (Pro, Max) bu bir kullanıcı ayarıdır. Müşteri verisi, kişisel veri veya gizli anahtarları depoda tutuyorsanız önce şirket politikanızı oluşturun: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+- **Veri ve KVKK:** Claude Code yerelde çalışır ve doğrudan model API'leriyle konuşur, ancak kodunuz ve komut çıktılarınız model işlemesi için Anthropic'e gider, yani yurt dışına aktarılır. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak eğitimde kullanılmaz; tüketici hesaplarında (Pro, Max, Ultra) bu bir kullanıcı ayarıdır. Müşteri verisi, kişisel veri veya gizli anahtarları depoda tutuyorsanız önce şirket politikanızı oluşturun: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Türkiye notları:** Ödeme ABD doları ile, Anthropic'in Türkiye'de ofisi veya temsilcisi yok. Ayrıntı: [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/).
 - **Yazılımcı olmayanlar için:** İş kullanıcısı odaklı eğitimden önce gündelik işlerde Claude'u verimli kullanmayı öğrenmek gerekiyorsa Zamana'nın [programlarına](/programlar/) bakabilirsiniz. Claude Code için ise yukarıdaki Anthropic kaynakları öncelikli.

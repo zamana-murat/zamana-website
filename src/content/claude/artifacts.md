@@ -7,7 +7,7 @@ lead: "Artifact, Claude'un sohbette yazıp yanınızda açtığı iştir: bir su
 heroImage: "/images/claude/artifacts/hero.webp"
 heroAnimation: "artifacts"
 heroAlt: "Fiyat teklifi hesaplayıcısı sohbetin yanındaki panelde açılmış: iskonto yüzde 15 yapılmış, teklif toplamı 51.000,00 TL gösteriliyor ve bağlantı kopyalandı bildirimi görünüyor"
-availability: "Artifacts tüm planlarda var. Claude Design, Slides ve Docs ücretli planlarda (Pro, Max, Ultra, Team, Enterprise) beta; Free'de yok. Enterprise'da yönetici açana kadar kapalı."
+availability: "Artifacts, Claude Design, Slides ve Docs Free dahil tüm planlarda. Dashboards ücretli planlarda, Motion Team ve Enterprise'ta beta. Enterprise'da Design, Slides ve Docs 15 Ekim 2026'dan beri varsayılan açık."
 sourceUrl: "https://claude.com/features/artifacts"
 sourceTitle: "Claude Artifacts"
 related:
@@ -23,11 +23,13 @@ lastUpdated: "2026-11-08"
 
 Claude ile bir konuşma yaptığınızda çıktı çoğu zaman sohbet kutusunda metin olarak kalır. Artifact bunun bir adım ötesidir. Anthropic'in tarifiyle artifact, Claude'un sizin için yaptığı ve bir başkasının önüne koyacağınız her şeydir: bir tasarım, bir sunum, bir belge, bir pano ya da küçük etkileşimli bir araç. Konuşmanın yanında ayrı bir pencerede açılır, orada düzenlersiniz, sonra geri dönüp devam edersiniz.
 
-Bugün bu çatının altında üç hazır başlangıç noktası var:
+Bugün bu çatının altında üç temel başlangıç noktası var:
 
 - **Claude Design:** görsel taslaklar, mockup'lar, tek sayfalık tanıtımlar, sosyal medya görselleri. Ayrıntısı [Design sayfasında](/claude/design/).
 - **Claude Slides:** kaba notlardan sunum. Müşteri teklifi, yönetim kurulu sunumu, çeyrek sonu değerlendirmesi gibi.
 - **Claude Docs:** Claude ve ekip arkadaşlarınızla birlikte yazdığınız canlı belgeler. Bağlı araçlarınızdan veri çekip belgeye etkileşimli grafik ve diyagram koyabilir.
+
+Bunlara iki beta eklendi: **Claude Dashboards** doğal dille sorduğunuz sorudan veri panosu kurar, her grafiğin arkasındaki sorguyu gösterir ve bağlı kaynaktaki veri değiştikçe yenilenebilir (BI aracının yerine geçmez, hızlı sorular içindir). **Claude Motion** kısa animasyonlar üretir ve MP4 olarak dışa aktarır; yalnız Team ve Enterprise'ta.
 
 Üçünü ister ilgili başlangıç ekranından, ister herhangi bir sohbetin içinde "şunu hazırla" diyerek açabilirsiniz. Claude Code içinde çalışırken de aynı şekilde bir prototip çıkarıp sohbete geri taşıyabilirsiniz.
 
@@ -48,14 +50,14 @@ Not: Claude'un ürettiği e-Fatura ya da resmî belge örnekleri hukuki geçerli
 1. Claude'da herhangi bir sohbette ne istediğinizi yazın: "Bu rakamlarla yönetim sunumu hazırla" gibi. İsterseniz dosyanızı (PPTX, DOCX, XLSX) ekleyin.
 2. Artifact konuşmanın yanında açılır. Metni doğrudan düzenleyin, bir öğeye yorum bırakın ya da sohbetten değişiklik isteyin.
 3. İş bitince **Paylaş** ile link üretin. Her artifact'in bir linki var ve siz paylaşana kadar yalnız size görünür.
-4. Dışarı almak için PowerPoint, PDF veya HTML olarak indirin. Slides için Google Slides'a aktarma da var.
+4. Dışarı almak için PowerPoint, PDF veya HTML olarak indirin. Slides için Google Slides'a aktarma, Motion için MP4 de var.
 5. Yaptığınız her şey Artifacts sekmesinde kayıtlı kalır; sonradan oradan bulursunuz.
 
 Artifacts ve alt ürünleri, planınızın kullanım limitinden harcar. Tam bir sunum ya da tasarım, sıradan bir mesajdan daha çok limit tüketir; yoğun üretim yapacaksanız bunu hesaba katın.
 
 ## Hangi planda, nelere dikkat?
 
-**Plan.** Genel artifacts özelliği tüm planlarda mevcut. Claude Design, Slides ve Docs ise ücretli planlarda beta: Pro, Max, Ultra ve Team'de varsayılan olarak açık (Ayarlar'dan kapatılabilir), Enterprise'da ise yönetici Organization settings > Artifacts altından açana kadar kapalı. Free planda bu üç ürünün etkileşimli düzenleme arayüzü yok. Planlar için [Planlar sayfasına](/wiki/temeller/planlar/) bakın.
+**Plan.** Genel artifacts özelliği ve Claude Design, Slides, Docs **Free dahil tüm planlarda** var, varsayılan olarak açık (Ayarlar'dan kapatılabilir). Enterprise'da bu üçü 15 Ekim 2026'dan itibaren varsayılan açık; HIPAA yapılandırması etkin kuruluşlar hariç, ayar Organization settings > Artifacts altında. İki yeni beta var: **Claude Dashboards** ücretli planlarda (Pro, Max, Ultra, Team, Enterprise), **Claude Motion** yalnız Team ve Enterprise'ta; Enterprise'da ikisi de yönetici açana kadar kapalı. Planlar için [Planlar sayfasına](/wiki/temeller/planlar/) bakın.
 
 **Paylaşım.** Free, Pro, Max ve Ultra'da linke sahip herkesle paylaşabilirsiniz. Team ve Enterprise'ta linkler varsayılan olarak kuruluşun içinde kalır; dışarıyla paylaşım, bir Owner ya da Primary Owner "External sharing" ayarını açana kadar kapalıdır. Bir artifact'i görmek ve düzenlemek için karşı tarafın da Claude hesabı olması gerekir. Müşteriye gidecek bir dosya için en güvenli yol PDF ya da PPTX olarak indirip e-postayla göndermektir.
 

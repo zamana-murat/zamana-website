@@ -1,6 +1,6 @@
 ---
 title: "Üretim ve İmalat: Claude Uygulamaları"
-seoTitle: "Üretimde Claude: Vardiya Raporu, 8D, OEE Analizi ve ISO Belgeleri"
+seoTitle: "Üretimde Claude: Vardiya Raporu, 8D, OEE, ISO"
 description: "Üretim ve imalat işletmeleri için Claude: vardiya raporları, kalite belgeleri, OEE analizi, fire azaltma, ISO uyumu ve tedarikçi yönetimi."
 tags:
   - departmanlar
@@ -8,7 +8,7 @@ tags:
   - imalat
   - oee
   - kalite
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Türkiye sanayisi geniş ve çeşitli: gıda, tekstil, otomotiv yan sanayi, makine, metal, plastik. Üretim hattı her gün veri üretir, ama bu verinin **büyük kısmı hiç okunmaz**; yönetim raporuna dönüşmediği için kaybolur. Claude, üretim verisini iş kararına çevirmeye ve vardiyalar arası iletişimi hızlandırmaya yardım eder.
@@ -37,7 +37,7 @@ Vardiya amiri vardiya sonunda rapor yazmak için genellikle 30-60 dakika harcıy
 
 ### Haftalık / Aylık Üretim Raporu
 
-Vardiya raporlarını birleştirip yönetim için aylık rapor üretir: trend analizi, anomali işaretleme, **3 ana içgörü ve 3 öneri** formatında.
+Vardiya raporlarını birleştirip yönetim için aylık rapor üretir: trend analizi, anomali işaretleme, **3 ana içgörü ve 3 öneri** formatında. Raporlar aynı klasöre düşüyorsa her Pazartesi sabahı o klasörü okuyup haftalık özeti hazırlayan bir [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) kurulabilir (klasör yerelse görev yerelde, bilgisayar açıkken çalışır).
 
 ### OEE / Verim Analizi
 
@@ -124,7 +124,7 @@ Sipariş havuzu, kapasite ve vardiya verisinden Claude haftalık bir çizelge ö
 
 ### Güvenlik Talimatları
 
-Hat operatörleri için güvenlik talimatları: sade, mümkünse fotoğraflı, tek sayfa. Hem Türkçe hem yabancı işçi varsa çeviriyle birlikte.
+Hat operatörleri için güvenlik talimatları: sade, mümkünse fotoğraflı, tek sayfa. Saha fotoğrafından risk gözlemi çıkarmak için [Görsel ve Görüntü](/wiki/yetenekler/vision-image/) sayfasına bakın; fotoğrafta çalışan yüzü ya da kimliği varsa kırpın. Hem Türkçe hem yabancı işçi varsa çeviriyle birlikte.
 
 ## Bölüm 6: İhracat Odaklı Üretim
 
@@ -203,7 +203,7 @@ Bir otomotiv yan sanayi tesisine müşteriden kritik bir şikayet geldi: sevk ed
 
 **Engel:** "Üretim verim hassas, dışarı vermeyim."
 
-**Çözüm:** [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ile veri sınıflandırması yapılır. Üretim formülü Claude'a girilmez, ama OEE rakamları gibi veriler paylaşılabilir hale getirilebilir.
+**Çözüm:** [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) ile veri sınıflandırması yapılır. Üretim formülü Claude'a girilmez, ama OEE rakamları gibi veriler paylaşılabilir hale getirilebilir. Ticari veri işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
 
 ## Bireysel Kullanım: Üretim Mühendisi
 

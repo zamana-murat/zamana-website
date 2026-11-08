@@ -1,6 +1,6 @@
 ---
 title: "Operasyon ve Lojistik: Claude Uygulamaları"
-seoTitle: "Operasyon ve Lojistikte Claude: SOP, NCR, Tedarikçi Yazışması"
+seoTitle: "Operasyonda Claude: SOP, NCR, Tedarikçi Yazışması"
 description: "Operasyon ekibi için Claude: SOP dokümantasyonu, tedarikçi iletişimi, incident raporu, NCR, kapasite planlama. Kafalardaki bilgiyi yazılı hale getirmek."
 tags:
   - departmanlar
@@ -8,7 +8,7 @@ tags:
   - lojistik
   - sop
   - ncr
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Operasyon departmanında en büyük kayıp, **bilginin insanların kafasında yaşaması** ve hiç yazılı hale gelmemesidir. Claude bu kaybı gidermenin en kolay yollarından biridir.
@@ -99,6 +99,7 @@ Claude raporu çalışanın tarifinden üretir; **çalışan her teknik detayı 
 2. **Asana / Monday.com**: süreç yönetimi
 3. **Google Sheets / Excel**: operasyonel metrikler
 4. **E-posta**: tedarikçi iletişimi
+5. (opsiyonel) **Claude Dashboards** (beta, ücretli planlar; Enterprise'ta yönetici açar): bağlı veriden zamanında teslimat ve fire gibi KPI'lar için hızlı pano. Resmî raporlamanın yerine geçmez, rakamı kaynak sistemde doğrulayın ([Claude Dashboards](/wiki/yetenekler/claude-design/#claude-dashboards-ve-claude-motion-beta))
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
@@ -111,13 +112,14 @@ Claude raporu çalışanın tarifinden üretir; **çalışan her teknik detayı 
 
 - **"Süreç bende, yazmaya değmez":** Bilgi tek kişideyse o kişi izne çıktığında süreç durur. Devredilemezliğin riskini baştan konuşun; SOP bir lüks değil, devir güvencesidir.
 - **Uydurma sevkiyat ve gümrük bilgisi:** Claude sevkiyat süresi, gümrük detayı gibi spesifik bilgileri uydurabilir. Rakamı, süreyi ve mevzuat atfını kaynağından kontrol edin.
+- **Tedarikçi ve fiyat bilgisi.** Sözleşme fiyatı, tedarikçi iletişim kişileri ve müşteri siparişleri ticari sırdır; gerekmiyorsa yer tutucu kullanın. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil. Çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Çok genel SOP:** "Tedarikçiyle konuş" gibi boş adımlar işe yaramaz. Kim arar, hangi soruları sorar, hangi cevaba göre ne yapılır, bunu prompt'a yazın.
 
 ## Gerçek Örnek: SOP Tek Oturumda
 
 Operasyon müdürü yıllardır kendi kafasında taşıdığı "yeni tedarikçi onboarding" sürecini bir SOP'a dönüştürmek istiyor.
 
-**Adım 1:** Süreci sesle anlatır (cihazın kendi dikte özelliğini kullanın; Claude'un sesli modu şu an Türkçe desteklemiyor) ve çıkan metni Claude'a verir. Bu yaklaşık 10 dakika sürer:
+**Adım 1:** Süreci sesle anlatır (cihazın kendi dikte özelliğini kullanın; Claude'un sesli modunda Türkçe desteği doğrulanmadı) ve çıkan metni Claude'a verir. Bu yaklaşık 10 dakika sürer:
 > *"Yeni bir tedarikçi bulduğumda önce mali durum kontrolü yaparım, sonra kalite sertifikalarını isterim, sonra numune isteyip değerlendiririz, sonra fiyat pazarlığı, sonra küçük bir deneme siparişi, sonra onaylı tedarikçi listesine alırız..."*
 
 **Adım 2:** Claude yapılandırır:
@@ -130,8 +132,6 @@ Operasyon müdürü yıllardır kendi kafasında taşıdığı "yeni tedarikçi 
 **Adım 3:** Çalışan gözden geçirir, iki küçük ekleme yapar.
 
 **Adım 4:** ISO denetçisi için hazır bir belge.
-
-Toplam süre: yaklaşık 25 dakika (örnek senaryo). Geleneksel süreçte bu iş çoğu zaman hiç yapılmaz, "bir gün zaman bulunca" listesinde kalır.
 
 **Süre:** SOP için elle 3-6 saat (çoğu zaman hiç yazılmaz), Claude ile 25-40 dakika (kontrol dahil). Haftalık operasyon raporu için elle 2-3 saat, Claude ile 20-30 dakika (Zamana eğitim materyali); her hafta yapılıyorsa ayda yaklaşık 6-10 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 

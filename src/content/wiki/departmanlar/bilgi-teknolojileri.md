@@ -1,6 +1,6 @@
 ---
 title: "Bilgi Teknolojileri: Claude Uygulamaları"
-seoTitle: "BT Ekibinde Claude: Script, Runbook, Post-mortem ve KVKK Dokümanı"
+seoTitle: "BT Ekibinde Claude: Script, Runbook, Post-mortem"
 description: "IT ekibi için Claude: teknik dokümantasyon, incident raporu, PowerShell script'leri, KVKK teknik uyum. Kod yazmayan sysadmin için bile değerli."
 tags:
   - departmanlar
@@ -141,7 +141,11 @@ Sysadmin her Pazartesi sabahı 50 sunucunun disk kullanım durumunu elle kontrol
 
 **Adım 5:** Script'i Windows Zamanlanmış Görev olarak kurar; her Pazartesi sabah 08:00'da otomatik çalışır ve raporu e-postayla gönderir.
 
-**Süre:** script bir kereye mahsus 45-60 dakika (yazım, gözden geçirme ve test dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Haftalık elle kontrol 60-90 dakika sürüyordu (50 sunucu varsayımıyla); bundan sonra rapor kendiliğinden gelir. Bu kontrol her hafta yapılıyorsa yılda kabaca 50-80 saat, script'in bakımı hariç.
+**Süre:** elle her hafta 60-90 dakika (50 sunucu varsayımıyla), Claude ile script bir kereye mahsus 45-60 dakika (yazım, gözden geçirme ve test dahil); bundan sonra rapor kendiliğinden gelir. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Bu kontrol her hafta yapılıyorsa yılda kabaca 50-80 saat, script'in bakımı hariç.
+
+## Kurumsal Güvenlik Kontrolleri
+
+BT ekibinin Claude'u şirkete açarken sorduğu ilk sorular genelde "DLP'miz araya girebilir mi, kişisel hesapla girişi engelleyebilir miyiz, uç nokta güvenliği Cowork'ü görür mü" olur. 5 Kasım 2026'dan beri Enterprise'ta prompt hook'larıyla istemler kendi DLP aracınızdan geçer (genel kullanımda), yönetilen bilgisayarlarda Claude Desktop'a dış hesapla giriş engellenir, IP izin listesi panelden kurulur ve güvenlik merkezi ayarları Anthropic'in önerdiği yapılandırmayla karşılaştırır (bu üçü ve yönetim araçlarının çoğu beta ya da duyuruda durumu belirtilmemiş). EDR sensörünün Cowork sanal makinesinde çalışması Team'de de var. Team ve Enterprise'ta ayrıca masaüstü uzantıları (yerel MCP sunucuları) için izin listesi açılabilir; varsayılan kapalıdır, açılınca onaylanmamış kurulu uzantılar kaldırılır ve kullanıcı yalnız onaylı listeden kurar ([MCP Güvenlik](/wiki/mcp/guvenlik/)). Tam liste: [Takım ve Admin, Enterprise Güvenlik Araçları](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026).
 
 ## Sık Hatalar
 
@@ -155,8 +159,8 @@ Eğitimlerde BT ekiplerinin en çok takıldığı üç nokta (Zamana eğitim mat
 
 - [Cowork](/wiki/araclar/cowork-modu/): dosya ve görev otomasyonu
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Script'lerin otomasyonu
-- [Computer Use](/wiki/yetenekler/computer-use/): API olmayan sistemlerde (research preview, yalnız Pro, Max ve Ultra; Team ve Enterprise'ta yok)
-- [Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/): Tarayıcı ve Microsoft 365 içinde Claude
+- [Computer Use](/wiki/yetenekler/computer-use/): API olmayan sistemlerde (beta, yalnız Pro, Max ve Ultra; Team ve Enterprise'ta yok)
+- [Office, Google ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/): Tarayıcı ve Microsoft 365 içinde Claude
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): KVKK genel çerçevesi
 - [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/): Claude'a kişisel veri girmeden önce
 - [Kodlama: yazılım ekiplerinde Claude](/kurumsal/kodlama/): geliştirici ekipler için kurumsal sayfa

@@ -1,21 +1,22 @@
 ---
-title: "Office ve Chrome'da Claude"
-seoTitle: "Claude Excel, Word, Outlook ve Chrome Eklentisi: Kurulum ve Güvenlik"
-description: "Claude'u Excel, PowerPoint, Word, Outlook ve Chrome içinde kullanmak: IT kurulumu, KVKK, güvenlik sınırları ve hangi işte hangisi."
+title: "Office, Google ve Chrome'da Claude"
+seoTitle: "Claude Office, Google ve Chrome Eklentileri"
+description: "Claude'u Excel, Word, PowerPoint, Outlook, Google Docs, Sheets, Slides ve Chrome içinde kullanmak: kurulum, KVKK, güvenlik sınırları, hangi işte hangisi."
 tags:
   - araclar
   - excel
   - powerpoint
   - word
   - outlook
+  - google-workspace
   - chrome
   - eklenti
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
-**Çoğu iş gün boyu aynı birkaç yerde yapılır: bir Excel dosyası, bir sunum, bir Word belgesi, gelen kutusu ve tarayıcı.** Claude'un bu yerlerin içinde çalışan iki eklenti ailesi var. Birincisi Microsoft 365 eklentileri (Excel, PowerPoint, Word, Outlook), ikincisi Chrome tarayıcı eklentisi (Claude in Chrome). İkisi de dosyayı Claude'a kopyala-yapıştır yapmak yerine, Claude'u işin olduğu yere getirir.
+**Çoğu iş gün boyu aynı birkaç yerde yapılır: bir Excel dosyası, bir sunum, bir Word belgesi, gelen kutusu ve tarayıcı.** Claude'un bu yerlerin içinde çalışan üç eklenti ailesi var: Microsoft 365 eklentileri (Excel, PowerPoint, Word, Outlook), Google Workspace eklentisi (Docs, Sheets, Slides) ve Chrome tarayıcı eklentisi (Claude in Chrome). Üçü de dosyayı Claude'a kopyala-yapıştır yapmak yerine, Claude'u işin olduğu yere getirir.
 
-Bu sayfa kurulumu, IT tarafını, güvenlik sınırlarını ve hangi işte hangisinin seçileceğini anlatır. Ürün tanıtımı ve plan kapsamı için [Claude for Microsoft 365](/claude/microsoft-365/) ve [Claude for Chrome](/claude/chrome/) sayfalarına bakın. Cowork ve sohbet tarafı için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfası var.
+Bu sayfa kurulumu, IT tarafını, güvenlik sınırlarını ve hangi işte hangisinin seçileceğini anlatır. Ürün tanıtımı ve plan kapsamı için [Claude for Microsoft 365](/claude/microsoft-365/), [Claude for Google Workspace](/claude/google-workspace/) ve [Claude for Chrome](/claude/chrome/) sayfalarına bakın. Cowork ve sohbet tarafı için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfası var.
 
 ## Microsoft 365 Eklentileri: Excel, PowerPoint, Word, Outlook
 
@@ -58,6 +59,47 @@ Yöneticiler OpenTelemetry ile güvenlik izlemesi yapılandırabilir ve Analytic
 
 Kaynak ve ayrıntı için: [Claude for Excel, PowerPoint, Word ve Outlook](https://claude.com/blog/collaborate-with-claude-across-excel-powerpoint-word-and-outlook) (Anthropic).
 
+## Google Docs, Sheets ve Slides Eklentisi
+
+### Durum ve Plan
+
+**Claude for Google Workspace** 6 Ekim 2026'da **genel beta** olarak çıktı. Tek bir Google Workspace Marketplace eklentisidir: bir kez kurarsınız, Docs, Sheets ve Slides'ın üçüne birden gelir (menüde Extensions > Claude). **Pro, Max, Ultra, Team ve Enterprise** planlarında var, Free planda yok.
+
+### Ne İşe Yarar?
+
+Yan panelde açılır, **açık olan dosyayı** okur ve yerinde düzenler. Yaptığı her değişiklik dosyanın sürüm geçmişinde görünür, yani geri almak kolaydır. Varsayılan ayar **"Ask before edits"**: Claude her düzenlemeden önce onayınızı ister. İsterseniz "Accept all edits" ile onaysız çalıştırırsınız; önemli belgelerde varsayılanda kalın. Yanıtlarında dosyanın hangi bölümüne dayandığını gösterir.
+
+### İş Kullanıcısı İçin Somut Örnekler
+
+1. **Sheets:** *"Bu tahsilat tablosunda vadesi 30 günü geçenleri işaretle, müşteri bazında toplamı yeni bir sekmeye çıkar."* **Süre:** elle 45-60 dakika, Claude ile 10-15 dakika (kontrol dahil). *Tahmini tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+2. **Docs:** *"Bu teklif metnini kurumsal dile çek, fiyat tablosundaki KDV satırını kontrol et, değişiklikleri onayıma sun."*
+3. **Slides:** *"Bu sunumdaki 12 slaytı 6'ya indir, her slayta tek ana mesaj bırak."*
+
+### Kurulum ve IT Tarafı
+
+**Adım adım (Anthropic yardım sayfasına göre):**
+
+1. Google Workspace Marketplace'teki Claude sayfasını açıp **Install**'a basın (yönetici sizin için kurduysa bu adımı atlayın)
+2. Kurulum akışında Google hesabınızı seçin, **Continue**, izinleri okuyup **Allow**
+3. Açık duran Docs, Sheets, Slides dosyalarını yenileyin
+4. Bir dosyada **Extensions > Claude > Open Claude** deyin; ilk seferde Google iki izin ister, onaylayın
+5. Yan panelde Claude hesabınızla giriş yapın (connector açmak isteğe bağlı)
+
+"This application is not allowed by your administrator" uyarısı çıkarsa Google Workspace yöneticisinin Claude'u izin listesine alması ya da sizin için kurması gerekir.
+
+- Şirket hesabında **Google Workspace yöneticisi** eklentiyi kuruluşa dağıtır ya da izin listesine alır. Kullanıcının Google hesabı Marketplace uygulaması kurabiliyor olmalı; "kuramıyorum" diyorsanız IT'ye sorun.
+- **Team ve Enterprise'ta** Docs, Sheets ve Slides connector'larını owner ya da primary owner önce açar.
+- Eklenti yalnız açık dosyada çalışır. Drive'daki başka dosyalara ulaşması için Google Drive bağlantısının ayrıca açık olması gerekir (varsayılan kapalı).
+- **Enterprise:** Compliance API, müşteri yönetimli anahtar (CMEK) ve OpenTelemetry denetim aktarımı eklentiyi de kapsar. Zero data retention ve üçüncü taraf çıkarım henüz desteklenmez.
+
+### Sınırlar
+
+- **Beta.** Kritik dosyada değişiklikleri tek tek onaylayın.
+- Chrome, Edge ve Safari'de çalışır, Firefox'ta çalışmaz. Yan panel açık kalmalı; tek işlem en çok 6 dakika sürer.
+- **Connector'dan farkı:** Google Workspace [connector](/wiki/araclar/connectors/)'ı Claude'un sohbetten Drive dosyalarını bulup okumasını ya da yeni dosya oluşturmasını sağlar. Eklenti ise Claude'u dosyanın **içine** koyar. Microsoft 365 tarafındaki ayrımın aynısıdır.
+
+Kaynak: [Use Claude in Google Docs, Sheets, and Slides](https://support.claude.com/en/articles/16951679-use-claude-in-google-docs-sheets-and-slides) (Anthropic).
+
 ## Claude in Chrome
 
 ### Nedir?
@@ -68,7 +110,7 @@ Claude in Chrome, tarayıcınıza eklenen küçük bir programdır (eklenti). Ü
 
 ### Hangi Planda?
 
-Tüm ücretli planlarda; Free planda yok. Güncel plan tablosu [Claude for Chrome](/claude/chrome/) sayfasında.
+Tüm ücretli planlarda; Free planda yok. Eklentideki Cowork tabanlı yan panel ayrı bir özelliktir: Max, Ultra ve Team'de var, Pro'ya kademeli açılıyor, Enterprise'ta yönetici açtıysa gelir. Güncel plan tablosu [Claude for Chrome](/claude/chrome/) sayfasında.
 
 ### Nasıl Kurulur?
 
@@ -100,6 +142,7 @@ Daha geniş bağlam için: [Computer Use](/wiki/yetenekler/computer-use/) ve [MC
 | İhtiyaç | Seçim |
 |---|---|
 | Elinizdeki Excel/Word/PowerPoint dosyasının içinde çalışmak | **Office eklentisi** |
+| Google Docs, Sheets ya da Slides dosyasının içinde çalışmak | **Google Workspace eklentisi** (beta) |
 | E-posta ayıklamak, yanıt taslağı hazırlamak | **Outlook eklentisi** (beta) |
 | API'si olmayan bir web sitesinde işlem yapmak | **Claude in Chrome** |
 | Bilgisayarınızdaki klasörlerle çok adımlı iş | **Cowork** ([Cowork Modu](/wiki/araclar/cowork-modu/)) |
@@ -108,9 +151,9 @@ Daha geniş bağlam için: [Computer Use](/wiki/yetenekler/computer-use/) ve [MC
 ## İlgili Sayfalar
 
 - [Cowork Modu](/wiki/araclar/cowork-modu/): dosya, kod ve connector'larla çalışma
-- [Connectors](/wiki/araclar/connectors/): Microsoft 365 ve diğer bağlantılar
+- [Connectors](/wiki/araclar/connectors/): Microsoft 365, Google Workspace ve diğer bağlantılar
 - [Türk İş Araçları](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt, e-Fatura
-- [Claude for Microsoft 365](/claude/microsoft-365/) ve [Claude for Chrome](/claude/chrome/): ürün tanıtımı
+- [Claude for Microsoft 365](/claude/microsoft-365/), [Claude for Google Workspace](/claude/google-workspace/) ve [Claude for Chrome](/claude/chrome/): ürün tanıtımı
 - [Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/): Claude Tag ve connector yolu
 - [Computer Use](/wiki/yetenekler/computer-use/): Claude'un ekranı kullanması
 - [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/): Microsoft ekosisteminde karşılaştırma

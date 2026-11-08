@@ -1,6 +1,6 @@
 ---
 title: "Ticaret: e-ticaret ve perakendede Claude ajanları"
-seoTitle: "E-Ticaret ve Perakendede Claude: Alışveriş ve Satıcı Ajanları"
+seoTitle: "E-Ticaret ve Perakendede Claude: Alışveriş Ajanı"
 description: "Claude ile alışveriş asistanı ve satıcı ajanı: Anthropic'in açık kaynak ticaret ajanı şablonu, Türk e-ticaretine uyarlama, kampanya, iade ve KVKK notları."
 eyebrow: "Kullanım alanı"
 lead: "Anthropic, e-ticaret ve perakende şirketlerinin kendi uygulamalarına Claude tabanlı iki tür ajan kurması için açık kaynak bir şablon yayımladı: müşteriye alışverişte yardım eden ajan ve mağaza ekibine operasyonda yardım eden ajan. Bu bir hazır ürün değil, yazılım ekibinizin üzerine inşa edeceği bir başlangıç noktası."

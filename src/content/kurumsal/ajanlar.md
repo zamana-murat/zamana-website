@@ -1,6 +1,6 @@
 ---
 title: "Yapay zeka ajanları: işi uçtan uca yürüten Claude"
-seoTitle: "Yapay Zeka Ajanları (AI Agents): Claude ile Kurumsal Kullanım"
+seoTitle: "Yapay Zeka Ajanları (AI Agents): Kurumda Claude"
 description: "Yapay zeka ajanı nedir, iş akışından farkı ne? Claude ile planlayan, araç kullanan ve onay soran ajanlar: Türk şirketi senaryoları, KVKK notları ve planlar."
 eyebrow: "Kullanım alanı"
 lead: "Ajan, kendisine verilen bir hedef için adımları kendisi planlayan, sistemlerinize bağlı araçları kullanan ve karar gereken yerde insana soran bir Claude'dur. Sohbetten farkı, cevap vermekle kalmayıp işi yürütmesidir."

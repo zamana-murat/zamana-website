@@ -6,7 +6,7 @@ tags:
   - prompt
   - token
   - kullanim
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude'la çalışmaya başlamadan önce iki kelimeyi bilmek yeterli: **prompt** ve **token**. İkisi de basit, ilk başta korkutucu değil.
@@ -60,6 +60,7 @@ Token harcaması yüksek olan işler:
 - Uzun belge yüklemek (100 sayfalık PDF → dile göre yaklaşık 40.000-70.000 token)
 - Çok uzun bir konuşma sürdürmek (100+ mesaj)
 - Claude'dan uzun, detaylı yanıtlar istemek
+- Research (derin araştırma) çalıştırmak ve model menüsünde effort'u High, Extra high ya da Max seçmek
 
 Token harcaması düşük olan işler:
 

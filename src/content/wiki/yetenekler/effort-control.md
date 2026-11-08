@@ -11,7 +11,7 @@ tags:
 lastUpdated: "2026-11-08"
 ---
 
-**Claude Effort, Claude'un bir göreve ne kadar "çaba" harcayacağını sizin belirlemenizi sağlayan ayardır.** [Modeller](/wiki/temeller/modeller/) sayfasındaki güncel model ailesinin çoğunda vardır; Haiku 4.5 (legacy) desteklemez; Haiku 5.5'te desteği belgelenmemiştir.
+**Claude Effort, Claude'un bir göreve ne kadar "çaba" harcayacağını sizin belirlemenizi sağlayan ayardır.** [Modeller](/wiki/temeller/modeller/) sayfasındaki güncel model ailesinin çoğunda vardır; Haiku 4.5 (legacy) desteklemez; Haiku 5.5 dahil yeni modellerde vardır.
 
 Basit mantığı: bazı işler derin düşünme ister (yavaş ama kaliteli), bazıları hızlı cevap ister (yüzeysel ama anında). Effort bu dengeyi **görev başına** sizin kontrolünüze verir.
 
@@ -30,13 +30,13 @@ Effort beş kademelidir:
 
 | Kademe | Ne zaman |
 |---|---|
-| Low | Rutin işler, daha az limit tüketimi |
+| Low | En basit ve hızlı işler, en az limit tüketimi |
 | Medium | Rutin işler, daha az limit tüketimi |
 | High | Kalite ile hız arasında denge |
 | Extra high (xhigh) | Uzun kodlama ve çok adımlı ajan işleri |
 | Max | En derin akıl yürütme |
 
-Effort seçimi Sonnet 5.5, Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Fable 5, Opus 4.7, Opus 4.6 ve Sonnet 4.6'da vardır; Haiku 4.5 (legacy) listede yoktur, Haiku 5.5'in desteği belgelenmemiştir. Buradaki "Max" kademesi, Max aboneliğinden ayrı bir şeydir. Kendi menünüzde gördüğünüz kademelere bakın.
+Effort seçimi Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Fable 5, Opus 4.7, Opus 4.6 ve Sonnet 4.6'da vardır; Haiku 4.5 (legacy) listede yoktur. Menüde her modelin önerilen kademesi "Default" diye işaretlidir. Buradaki "Max" kademesi, Max aboneliğinden ayrı bir şeydir. Kendi menünüzde gördüğünüz kademelere bakın.
 
 İki belirsizlik: claude.ai'deki **varsayılan kademe** Anthropic'in yardım sayfalarında belgelenmemiştir, yani "varsayılan şudur" diye yazamıyoruz. Seçicinin **Free planda** görünüp görünmediği de belgelenmemiştir; Pro, Max, Ultra, Team ve Enterprise'ta vardır.
 
@@ -49,7 +49,7 @@ Effort seçimi Sonnet 5.5, Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Fable 5, Opus 
 
 İstediğiniz birleşimi seçersiniz. Örneğin hızlı bir çeviri için Low, bir yatırım sunumunun mantık denetimi için High ve Thinking açık.
 
-**Önemli ayrıntı:** Sonnet 5.5, Opus 5.5, Fable 5.1 ve Opus 5'te Thinking **kapatılamaz**. Anahtarı bulamıyorsanız hata değildir, o modelde zaten hep açıktır. Bu durumda tek kaldıracınız Effort'tur.
+**Önemli ayrıntı:** Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1 ve Opus 5'te claude.ai'de Thinking **kapatılamaz**. Anahtarı bulamıyorsanız hata değildir, o modelde zaten hep açıktır. Bu durumda tek kaldıracınız Effort'tur.
 
 **Kurumsal kullanıcılar için:** Enterprise'ta yönetici bir modeli ya da Effort kademelerini role göre gizleyebilir. Menüde bir kademeyi göremiyorsanız önce yöneticinize sorun. Ayrıntı: [Takım ve Admin](/wiki/temeller/takim-ve-admin/).
 

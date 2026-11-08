@@ -6,7 +6,7 @@ tags:
   - karsilastirma
   - gemini
   - google
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Gemini, Google'ın amiral AI modelidir**: Workspace (Gmail, Docs, Drive, Calendar) içine derinlemesine entegredir, çoğu Türkiye kurumsalında zaten ücretsiz olarak deneniyor.
@@ -22,7 +22,7 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 | Yapan | [Anthropic](/wiki/temeller/anthropic-ve-tarihce/) | Google |
 | Türü | Bağımsız AI ürünü | Google ekosistemi içine gömülü |
 | Web arayüzü | claude.ai | gemini.google.com |
-| Workspace entegrasyonu | [Connector](/wiki/araclar/connectors/) ile | Yerleşik (Docs / Gmail / Slides içinde doğrudan) |
+| Workspace entegrasyonu | Docs, Sheets, Slides eklentisi (6 Ekim 2026'dan beri genel beta, ücretli planlar) + Gmail, Drive, Calendar için [connector](/wiki/araclar/connectors/) | Yerleşik (Docs / Gmail / Slides içinde doğrudan) |
 | API | Claude Platform (platform.claude.com) | Google AI Studio / Vertex AI |
 | Türkçe kalitesi | Yüksek | İyi (günlük kullanımda fark küçük) |
 | Görsel anlama | ✅ | ✅ (çok güçlü, multimodal odaklı) |
@@ -43,20 +43,20 @@ Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde 
 
 ## Güçlü Yönler: Gemini
 
-**Workspace entegrasyonu.** Gmail içinde "yardım et yaz", Docs içinde "rephrase", Sheets'te formül üretimi, Calendar'da brief, bunlar yerleşik. Claude'da [connector](/wiki/araclar/connectors/) ile yapılır ama Gemini içeride doğal bulunur.
+**Workspace entegrasyonu.** Gmail içinde "yardım et yaz", Docs içinde "rephrase", Sheets'te formül üretimi, Calendar'da brief, bunlar yerleşik. Claude'un Google Workspace eklentisi Docs, Sheets ve Slides'ta yan panel olarak çalışır ve açık dosyayı yerinde düzenler; Gmail ve Calendar tarafı [connector](/wiki/araclar/connectors/) ile yapılır. Gemini ise ayrı kurulum gerektirmeden her yerde içeride bulunur.
 
 **Multimodal güç.** Video anlama, gerçek zamanlı görüntü işleme, sesli sohbette doğal akıcılık, Gemini bu konuda öne çıkıyor.
 
 **Bağlam penceresi.** Google AI Pro planı 1M token bağlam penceresi diyor. Claude'un güncel modelleri (Fable 5.1, Opus 5.5, Sonnet 5.5) de 1M token sunuyor, yani bu başlık artık belirleyici değil.
 
-**Ücretsiz katman.** Gemini'yi ücretsiz denemek kolay. Claude Free'nin günlük kota sayıları yayımlanmıyor, o yüzden iki tarafı da kendi işinizle deneyip kotaya takılıp takılmadığınıza bakın. Not: Claude Design, Slides ve Docs gibi yeni üretim araçları Free planda yok.
+**Ücretsiz katman.** Gemini'yi ücretsiz denemek kolay. Claude Free'nin günlük kota sayıları yayımlanmıyor, o yüzden iki tarafı da kendi işinizle deneyip kotaya takılıp takılmadığınıza bakın. Not: Claude Design, Slides ve Docs 8 Ekim 2026'dan beri Free planda da var; Cowork, Office ve Google Workspace eklentileri ise ücretli plan ister.
 
 **Google arama entegrasyonu.** Web sorgu doğruluğu Google'ın arama altyapısını kullandığı için pratikte iyi. (Ama Claude'un [web araması](/wiki/araclar/web-arama/) da güçlü, fark giderek kapanıyor.)
 
 ## Zayıf Yönler: Claude
 
 - Türkiye'de doğrudan satış / destek yok ([Anthropic](/wiki/temeller/anthropic-ve-tarihce/) Türkiye'de ofis kurmadı)
-- Workspace içinde **yerleşik değil**: connector'la bağlanır, yine de Gmail içinde Gemini gibi tek tıkla erişim yok
+- Workspace içinde **yerleşik değil**: Docs, Sheets ve Slides eklentisi beta aşamasında ve Workspace yöneticisinin izni gerekebilir; Gmail içinde Gemini gibi tek tıkla erişim yok, Gmail connector'la bağlanır
 - Video oluşturma / multimodal üretim Gemini kadar agresif değil
 
 ## Zayıf Yönler: Gemini
@@ -81,7 +81,7 @@ Claude tarafının fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında.
 | Hukuki taslak, sözleşme analizi | **Claude** |
 | Karmaşık çok adımlı analiz | **Claude** |
 | Gmail içinden hızlı yanıt yazma | **Gemini** (Workspace içinde) |
-| Google Sheets formül üretme | **Gemini** |
+| Google Sheets formül üretme | **Gemini** (Claude'un Sheets eklentisi kuruluysa fark daralır) |
 | .docx / .xlsx / .pptx dosya üretme | **Claude** ([Skills](/wiki/yetenekler/skills/)) |
 | Video / multimodal senaryo | **Gemini** |
 | Otomasyon / scheduled task | **Claude** ([Scheduled Tasks](/wiki/araclar/scheduled-tasks/)) |

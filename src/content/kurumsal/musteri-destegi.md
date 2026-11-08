@@ -1,6 +1,6 @@
 ---
 title: "Müşteri desteği için Claude"
-seoTitle: "Müşteri Desteğinde Claude: Talep Yönetimi ve Yanıt Taslağı"
+seoTitle: "Müşteri Desteğinde Claude: Talep ve Yanıt Taslağı"
 description: "Destek ekipleri Claude ile talepleri sınıflandırır, bilgi bankasından yanıt taslağı çıkarır, zor vakaları uzmana aktarır. Türkiye için KVKK ve kurulum notları."
 eyebrow: "Departman"
 lead: "Claude, destek ekibinin gelen kutusunu düzenler: talebi okur, konusunu ve aciliyetini belirler, şirketin bilgi bankasına dayanarak müşterinin dilinde yanıt taslağı yazar. Son sözü temsilci söyler."

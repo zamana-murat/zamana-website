@@ -1,7 +1,7 @@
 ---
 title: "Claude Connectors: Claude'u Araçlarınıza Bağlayın"
-seoTitle: "Claude Connectors: Gmail, Drive, Slack ve ~900 Araç"
-description: "Connector'lar Claude'u Gmail, Drive, Slack, HubSpot gibi araçlara bağlar. Dizinde yaklaşık 900 var; Paraşüt, Logo ve Mikro için resmi olanı yok."
+seoTitle: "Claude Connectors: Gmail, Drive, Slack, 1.000+ Araç"
+description: "Connector'lar Claude'u Gmail, Drive, Slack, HubSpot gibi araçlara bağlar. Dizinde 1.000'den fazla var; Paraşüt, Logo ve Mikro için resmi olanı yok."
 eyebrow: "Yetenek"
 lead: "Connector, Claude'un Gmail, Drive, takvim, Slack ya da CRM'inizdeki bilgiye sizin yetkinizle erişmesini sağlar. Dosyaları kopyalayıp yapıştırmak yerine Claude'a \"şuna bak\" dersiniz."
 heroAlt: "Claude connector dizini"
@@ -15,7 +15,7 @@ related:
   - { label: "MCP Güvenlik (wiki)", href: "/wiki/mcp/guvenlik/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 8
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
@@ -24,7 +24,7 @@ Claude tek başına yalnız sizin yazdığınız ya da yüklediğiniz şeyi gör
 
 Connector'lar, arka planda Model Context Protocol (MCP) adlı açık standardı kullanır. Teknik ayrıntı gerekmez; kullanıcı olarak "Ekle" düğmesine basar, hesabınıza giriş yaparsınız. İsterseniz MCP'yi [wiki'deki MCP Nedir sayfasından](/wiki/mcp/nedir/) okuyabilirsiniz.
 
-Resmî dizin Claude Marketplace içinde duruyor. Dizin sayfası yazıldığı gün yaklaşık 900 connector gösteriyor (yardım sayfası ve bağımsız kataloglar farklı sayılar verebilir, çünkü bazıları topluluk connector'larını da sayar). En öne çıkanlar: Google Drive, Gmail, Google Calendar, Canva, Microsoft 365, Notion, Figma, Slack, HubSpot, Asana, Linear ve monday.com. Dizin; ticaret, iletişim, yaratıcı işler, veri ve analiz, geliştirici araçları, eğitim, satış ve pazarlama, seyahat gibi kategorilere ayrılıyor. Bazı connector'larda "Anthropic verified" rozeti var; rozetsizlere daha dikkatli yaklaşın.
+Resmî dizin Claude Marketplace içinde duruyor. Dizin sayfası Kasım 2026'da 1.094 connector gösteriyor (Ekim başında yaklaşık 900'dü) (yardım sayfası ve bağımsız kataloglar farklı sayılar verebilir, çünkü bazıları topluluk connector'larını da sayar). En öne çıkanlar: Google Drive, Gmail, Google Calendar, Canva, Microsoft 365, Notion, Figma, Slack, HubSpot, Asana, Linear ve monday.com. Dizin; ticaret, iletişim, yaratıcı işler, veri ve analiz, geliştirici araçları, eğitim, satış ve pazarlama, seyahat gibi kategorilere ayrılıyor. Bazı connector'larda "Anthropic verified" rozeti var; rozetsizlere daha dikkatli yaklaşın.
 
 ## Türk şirketinde ne işe yarar?
 
@@ -55,6 +55,6 @@ Kendi iç sistemleriniz (ERP, kendi CRM'iniz) için özel connector eklenebilir;
 
 **KVKK.** Müşteri ve çalışan verisi içeren sistemleri bağlamadan önce yurt dışı aktarım konusunu değerlendirin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/). Anthropic'in Türkiye'de ofisi ya da temsilcisi yoktur; ayrıntı [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/) sayfasında.
 
-**Dizin ve plugin farkı.** Marketplace blogu "2.000'den fazla bağlayıcı ve eklenti" diyor; bu, connector'lar ile plugin'lerin toplamıdır. Yalnız connector sayısı yaklaşık 900'dür. Plugin'ler için [Plugins sayfasına](/claude/plugins/) bakın.
+**Dizin ve plugin farkı.** Marketplace sayfası "2.000'den fazla connector ve plugin" diyor; bu rakam ikisini birlikte ve dizinden farklı bir birimle sayar. Dizin sayfaları Kasım 2026'da 1.094 connector ve 529 plugin listeliyor. Plugin'ler için [Plugins sayfasına](/claude/plugins/) bakın.
 
 Ekibinize hangi connector'ı hangi iş için, hangi izinlerle açacağınızı birlikte kurgulamak isterseniz [Zamana programları](/programlar/) bu konuyu iş kullanımı açısından ele alır.

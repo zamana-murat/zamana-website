@@ -18,6 +18,8 @@ Claude'u genel bir yapay zeka asistanından çıkarıp size özel bir asistana (
 
 Bölüm adını taşıyan **CLAUDE.md**, bu fikrin klasörle çalışan ortamlardaki biçimidir: düz bir metin dosyası. Sohbet CLAUDE.md dosyasını okumaz; orada aynı işi profil talimatı ve proje görür. Bu bölüm bütün yerleri ve aralarındaki farkı anlatır.
 
+**Nereden başlamalı?** Yalnız sohbette (claude.ai, mobil) çalışıyorsanız dosya oluşturmanız gerekmez: beş bölümlü kısa metni profil talimatına yazmanız yeter. Masaüstünde bir klasörle çalışıyorsanız aynı metni klasöre `CLAUDE.md` olarak da koyarsınız.
+
 ## Bu Bölümdeki Sayfalar
 
 <div class="wiki-grid">

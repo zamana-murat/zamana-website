@@ -60,7 +60,7 @@ Tüm erişimler loglanır ve denetlenir. **Zero Data Retention** (API için söz
 
 **Kısa cevap: Hayır. Claude bulut tabanlıdır, internet bağlantısı zorunludur ve hava boşluklu (air-gapped) ortamlarda çalıştırılamaz.**
 
-Model Anthropic'in veri merkezlerinde (AWS ve Google Cloud üzerinde) çalışır ve cihaza indirilemez. Nedeni model boyutu (yüz milyarlarca parametre, yüzlerce GB) ve sürekli güncellemedir. Bağlantı kesilirse masaüstü uygulaması, web arayüzü ve API kullanılamaz; offline modu yoktur.
+Model Anthropic'in bulut altyapısında çalışır ve cihaza indirilemez. Nedeni model boyutu (yüz milyarlarca parametre, yüzlerce GB) ve sürekli güncellemedir. Bağlantı kesilirse masaüstü uygulaması, web arayüzü ve API kullanılamaz; offline modu yoktur.
 
 Askeri sistemler, hava boşluklu üretim ağları ve yüksek güvenlikli devlet kurumları için Claude şu an uygun değildir. Bu tip ortamlar için Anthropic'in izole bir dağıtım seçeneği olup olmadığını doğrulayamadık; ihtiyacınız varsa Anthropic satış ekibine yazılı sorun. Yerel donanımda çalışan açık kaynak alternatifler (Llama, Mistral) offline çalışır, ancak Claude'un yetkinlik düzeyinin altındadır. İnternet erişimi olan ofis ortamlarında sorun yoktur.
 
@@ -79,7 +79,7 @@ Fiyat, kullanım yoğunluğuna göre kademelidir. Anthropic mesaj sayısı verme
 - **Team Premium:** Pro'nun 6,25 katı kullanım, Fable plana dahil.
 - **Enterprise:** Koltuk ücreti kullanımı içermez, kullanım ayrıca API fiyatıyla faturalanır, yani aylık tutar sabit değildir. RBAC, audit log, Compliance API. Zero Data Retention gerekiyorsa API için ayrıca talep edilir.
 
-Fiyatlar vergi hariçtir; Türkiye faturalama adresiyle web ödemesinde %20 KDV eklendiği bildirilir ([Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/)). Yıllık ödemede Pro'da yaklaşık %15, Team'de %20 indirim vardır. Kota bitince **kullanım kredisi** (kullandıkça öde) açılabilir, ayrıntı [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasında. Plan detayı: [Claude Planları](/wiki/temeller/planlar/).
+Fiyatlar vergi hariçtir; Türkiye faturalama adresiyle web ödemesinde %20 KDV eklendiği bildirilir ([Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/)). Yıllık ödemede Pro'da yaklaşık %15, Team'de %20 indirim vardır; Max ve Ultra yalnız aylık ödenir. Kota bitince **kullanım kredisi** (kullandıkça öde) açılabilir, ayrıntı [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasında. Plan detayı: [Claude Planları](/wiki/temeller/planlar/).
 
 ### 6 çalışan için toplam abonelik maliyeti nedir?
 
@@ -163,7 +163,15 @@ Model, statik bir "bilgi kesim tarihiyle" çalışır (güncel modellerde Hazira
 
 ### Claude bilgisayarımı kontrol edebilir mi?
 
-**Evet, [Computer Use](/wiki/yetenekler/computer-use/) özelliğiyle, ama sınırlı.** Bu özellik **research preview** aşamasındadır, yalnızca Pro, Max ve Ultra planlarında, Claude Desktop uygulaması (macOS, Windows) içinde Cowork ve Claude Code ile çalışır; Team ve Enterprise'ta yoktur. Eylemler şeffaftır ve sizin kontrolünüzdedir. API'si olmayan eski sistemlerde (Logo, Netsis, eski ERP) otomasyon için denenebilir, ama üretimde ona güvenmeden önce test edin.
+**Evet, [Computer Use](/wiki/yetenekler/computer-use/) özelliğiyle, ama sınırlı.** Bu özellik **beta** aşamasındadır, yalnızca Pro, Max ve Ultra planlarında, Claude Desktop uygulaması (macOS, Windows) içinde Cowork ve Claude Code ile çalışır; Team ve Enterprise'ta yoktur. Eylemler şeffaftır ve sizin kontrolünüzdedir. API'si olmayan eski sistemlerde (Logo, Netsis, eski ERP) otomasyon için denenebilir, ama üretimde ona güvenmeden önce test edin.
+
+### Telefondan Claude'a iş verebilir miyim?
+
+**Evet.** Pro, Max, Ultra ve Team'de Cowork'ün "telefondan görev" özelliği otomatik açıktır; mobil uygulamadan görev atarsınız, yeni görevler bulutta çalışır. Enterprise'ta kurum isterse açılır. Bilgisayardaki yerel dosyalara ulaşmak için masaüstü uygulamasının açık olması gerekir. Eski Dispatch özelliği yeni kullanıcıya kapalıdır. Adımlar: [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
+
+### Word, Excel veya Google Docs içinde çalışır mı?
+
+**Evet.** Excel, PowerPoint ve Word eklentileri genel kullanımda, Outlook public beta aşamasındadır. Google Docs, Sheets ve Slides için eklenti 6 Ekim 2026'dan beri genel beta'dadır. İkisi de yalnız ücretli planlarda vardır (Free'de yok). Ayrıntı: [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/).
 
 ## ChatGPT ve Diğer Alternatifler
 
@@ -178,7 +186,7 @@ ChatGPT (OpenAI) ve Claude (Anthropic) birbirinin doğrudan rakibidir. Tüketici
 - **Kalıcı talimat şeffaflığı:** Modelin nasıl davranacağını profil/proje talimatı ve (Cowork'te) klasördeki CLAUDE.md gibi düz metin kurallarla yönlendirirsiniz; bu, ChatGPT'nin Custom Instructions'undan çok daha derindir.
 - **Uzun belge performansı:** Güncel modellerde 1M token bağlam. OpenAI'nin güncel API modelleri de benzer bağlam sunduğu için fark boyuttan çok doküman sadakatinde ve çalışma biçiminde aranmalıdır.
 - **Cowork iş akışı:** Paralel agent koordinasyonu.
-- **KVKK ve veri politikası netliği:** DPA dili daha net, Zero Data Retention seçeneği var, Team planında varsayılan no-training güvencesi sözleşmede.
+- **KVKK ve veri politikası netliği:** DPA dili daha net, API için Zero Data Retention seçeneği var, Team planında varsayılan no-training güvencesi sözleşmede.
 
 **ChatGPT'nin üstün olduğu alanlar:** Yaratıcı yazım hızı, görsel üretim (Claude görsel üretmez), eklenti ekosisteminin genişliği, kod yorumlayıcı (Code Interpreter) olgunluğu, ses arayüzü kalitesi.
 

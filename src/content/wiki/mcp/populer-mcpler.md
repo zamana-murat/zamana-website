@@ -1,12 +1,12 @@
 ---
 title: "Popüler MCP'ler: Kurumsal Seçim Rehberi"
-seoTitle: "Kurumsal MCP Sunucuları: Hangisi Olgun, Hangisi Riskli?"
+seoTitle: "Kurumsal MCP Sunucuları: Olgun ve Riskli Olanlar"
 description: "Hangi MCP sunucuları kurumsal kullanıma hazır? Resmi, sağlayıcı ve topluluk sunucuları, arşivlenen paketler, Türk muhasebe yazılımlarının durumu."
 tags:
   - mcp
   - populer
   - kurumsal
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **MCP ekosisteminde yüzlerce sunucu var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa MCP sunucularını kategorilere ayırır ve her biri için olgunluk ve risk notu verir. Claude'daki connector'lar da birer MCP sunucusudur; sayfadaki bazı sunucuların dizinde hazır connector karşılığı vardır.
@@ -22,65 +22,69 @@ lastUpdated: "2026-10-06"
 
 Kendi iç sisteminiz için [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasına, tüm seçeneklerin listesi için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
 
-## Resmi (Anthropic) MCP Server'ları
+## Resmi Referans MCP Sunucuları
 
-Anthropic'in yayımladığı referans sunucular; çoğu geliştirici içindir. Bunlardan `filesystem`, `memory`, `fetch`, `git` gibileri hâlâ bakımdadır. `github`, `postgres`, `sqlite`, `slack` ve `brave-search` ise `modelcontextprotocol/servers-archived` deposuna taşındı ve artık bakımı yapılmıyor. Bu beşi için sağlayıcının güncel, bakımı yapılan sunucusunu ya da paketini kurun.
+İş kullanıcısı için kısa cevap: bu sunucular geliştiricilerin elle kurduğu temel parçalardır; dosya, Drive, Slack ya da CRM bağlantısı için önce yukarıdaki dizine bakın. Ayrıntı BT ve geliştirici ekipler içindir.
 
-### filesystem
-
-Yerel dosya sistemine erişim.
-
-**Kullanım:** Claude'un belirli bir klasördeki dosyaları okuyup yazması: proje klasörü, doküman arşivi, indirilenler.
-
-**Risk:** Klasör seçimi geniş tutulursa hassas veri görülür.
-
-**Tavsiye:** Sadece "Claude workspace" gibi izole bir klasör.
-
-### github
-
-GitHub repo işlemleri. GitHub'ın kendi güncel MCP sunucusunu tercih edin.
-
-**Kullanım:** Repo dosyası okuma, issue / PR yönetimi, kod arama.
-
-**Risk:** Yazma yetkisi geniş verilirse Claude beklenmedik commit yapabilir.
-
-**Tavsiye:** Fine-grained token, sadece okuma; yazma için ayrı manuel onay.
-
-### postgres / sqlite
-
-Veritabanı sorgulama. Güncel, bakımı yapılan bir paketle kurun.
-
-**Kullanım:** İç veritabanlarına Claude üzerinden ad-hoc sorgu, analitik, rapor.
-
-**Risk:** Yazma yetkisi olan user kullanılırsa **DROP TABLE** vs felaket.
-
-**Tavsiye:** Her zaman **read-only** kullanıcı, sadece belirli tablolar.
-
-### brave-search / google-search
-
-Web arama API'si.
-
-**Kullanım:** Claude'un dahili web aramasına alternatif; kurumsal bütçeleme için.
-
-**Risk:** API maliyet sorgu sayısıyla artar.
-
-**Tavsiye:** Çoğu kullanıcı için Claude'un dahili [web araması](/wiki/araclar/web-arama/) yeterlidir, bu MCP genelde gereksizdir.
-
-### slack
-
-Slack workspace erişimi.
-
-**Kullanım:** Mesaj okuma, kanal arama, DM yönetimi.
-
-**Karar:** Slack için resmi connector da var ([Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/)). MCP'ye sadece özel yapılandırma gerekiyorsa.
-
-### memory
-
-Kalıcı bellek server'ı (filesystem üzerine kurulu).
-
-**Kullanım:** Claude'un sohbetler arası bilgi taşıması (Claude'un yerleşik [memory](/wiki/yetenekler/memory/)'sinden farklı, daha kontrollü).
-
-**Tavsiye:** İleri düzey kullanıcılar için. Çoğu kullanıcı yerleşik memory'ye yetinir.
+> **Geliştiriciler için: resmi referans sunucular**
+>
+> MCP projesinin (`modelcontextprotocol/servers`) yayımladığı referans sunucular; çoğu geliştirici içindir. Bunlardan `filesystem`, `memory`, `fetch`, `git` gibileri hâlâ bakımdadır. `github`, `postgres`, `sqlite`, `slack` ve `brave-search` ise `modelcontextprotocol/servers-archived` deposuna taşındı ve artık bakımı yapılmıyor. Bu beşi için sağlayıcının güncel, bakımı yapılan sunucusunu ya da paketini kurun.
+>
+> **`filesystem`**
+>
+> Yerel dosya sistemine erişim.
+>
+> **Kullanım:** Claude'un belirli bir klasördeki dosyaları okuyup yazması: proje klasörü, doküman arşivi, indirilenler.
+>
+> **Risk:** Klasör seçimi geniş tutulursa hassas veri görülür.
+>
+> **Tavsiye:** Sadece "Claude workspace" gibi izole bir klasör.
+>
+> **`github`**
+>
+> GitHub repo işlemleri. GitHub'ın kendi güncel MCP sunucusunu tercih edin.
+>
+> **Kullanım:** Repo dosyası okuma, issue / PR yönetimi, kod arama.
+>
+> **Risk:** Yazma yetkisi geniş verilirse Claude beklenmedik commit yapabilir.
+>
+> **Tavsiye:** Fine-grained token, sadece okuma; yazma için ayrı manuel onay.
+>
+> **`postgres` / `sqlite`**
+>
+> Veritabanı sorgulama. Güncel, bakımı yapılan bir paketle kurun.
+>
+> **Kullanım:** İç veritabanlarına Claude üzerinden ad-hoc sorgu, analitik, rapor.
+>
+> **Risk:** Yazma yetkisi olan user kullanılırsa **DROP TABLE** vs felaket.
+>
+> **Tavsiye:** Her zaman **read-only** kullanıcı, sadece belirli tablolar.
+>
+> **`brave-search` / `google-search`**
+>
+> Web arama API'si.
+>
+> **Kullanım:** Claude'un dahili web aramasına alternatif; kurumsal bütçeleme için.
+>
+> **Risk:** API maliyet sorgu sayısıyla artar.
+>
+> **Tavsiye:** Çoğu kullanıcı için Claude'un dahili [web araması](/wiki/araclar/web-arama/) yeterlidir, bu MCP genelde gereksizdir.
+>
+> **`slack`**
+>
+> Slack workspace erişimi.
+>
+> **Kullanım:** Mesaj okuma, kanal arama, DM yönetimi.
+>
+> **Karar:** Slack için resmi connector da var ([Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/)). MCP'ye sadece özel yapılandırma gerekiyorsa.
+>
+> **`memory`**
+>
+> Kalıcı bellek server'ı (filesystem üzerine kurulu).
+>
+> **Kullanım:** Claude'un sohbetler arası bilgi taşıması (Claude'un yerleşik [memory](/wiki/yetenekler/memory/)'sinden farklı, daha kontrollü).
+>
+> **Tavsiye:** İleri düzey kullanıcılar için. Çoğu kullanıcı yerleşik memory'ye yetinir.
 
 ## Topluluk MCP'leri: Olgun Olanlar
 
@@ -238,7 +242,7 @@ Yeni bir MCP'yi onaylı listeye almak için:
 1. **İhtiyaç beyanı**: kim, ne için kullanacak
 2. **Kaynak doğrulama**: kim üretmiş, açık kaynak mı, kod incelendi mi
 3. **Güvenlik değerlendirmesi**: [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki kontrol listesi
-4. **Pilot**: 1-2 kişide test; gözlem süresi tahmini tipik aralıkla 2-4 hafta, kuruluşa göre değişir
+4. **Pilot**: 1-2 kişide test; gözlem süresi (Tahmini tipik aralık) 2-4 hafta, kuruluşa göre değişir
 5. **Onay**: BT + AI Governance imzası
 6. **Yapılandırma standartlaştırma**: token, yetki, log
 7. **Dağıtım**: onaylı listeye eklenir, ilgili kullanıcılara duyurulur
@@ -250,7 +254,7 @@ Bu süreç ağır gibi görünür ama kurumsal güven için kritiktir.
 
 MCP ekosistemi 2025-2026'da hızla olgunlaşıyor:
 
-- Resmî connector dizini yaklaşık 900 connector'a ulaştı; [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde topluyor (kurumun satın alma tarafı için [Marketplace](/kurumsal/marketplace/))
+- Resmî connector dizini 1.000 connector'ı aştı (Kasım 2026); [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde topluyor (kurumun satın alma tarafı için [Marketplace](/kurumsal/marketplace/))
 - Kurumsal SaaS'lar kendi resmî MCP sunucularını yayımlıyor
 - Enterprise yönetim araçları (merkezi config, audit) gelişiyor
 

@@ -1,0 +1,196 @@
+---
+/**
+ * Turkish, code-driven hero animation for /kurumsal/kucuk-isletme/.
+ * Scenario (fictional "Ege Zeytin Atölyesi", 6 people): a scheduled Monday task runs at 08.00.
+ * Claude reads the accounting export, the web shop, the bank statement and the calendar, writes the
+ * Monday brief (cash, weekend sales, the week ahead, one thing that needs attention) and prepares
+ * three overdue-invoice reminders as drafts. Nothing is sent until the owner approves.
+ * Generic chat UI (no product branding). Script toggles data-step.
+ */
+---
+
+<div
+  class="ka-kobi"
+  data-step="0"
+  role="img"
+  aria-label="Küçük işletme animasyonu: kurgusal bir zeytinyağı atölyesinde her pazartesi 08.00'de çalışan zamanlanmış görev başlıyor. Claude muhasebe dosyasını, web mağazasını, banka hesap dökümünü ve takvimi okuyor; kasa, hafta sonu satışı ve haftanın işlerinden oluşan pazartesi özetini yazıyor, vadesi geçen üç fatura için hatırlatma e-postalarını taslak olarak hazırlıyor ve gönderim için işletme sahibinin onayını bekliyor."
+>
+  <div class="kb__win" aria-hidden="true">
+    <div class="kb__bar">
+      <span class="kb__dot"></span><span class="kb__dot"></span><span class="kb__dot"></span>
+      <span class="kb__bar-title">Ege Zeytin Atölyesi · Zamanlanmış görev: Pazartesi özeti</span>
+    </div>
+
+    <div class="kb__body">
+      <!-- Sources -->
+      <div class="kb__src">
+        <p class="kb__lbl">Her pazartesi 08.00</p>
+        <ul class="kb__list">
+          <li class="kb__s kb__s--1"><span class="kb__ck"></span>Ön muhasebe dışa aktarımı</li>
+          <li class="kb__s kb__s--2"><span class="kb__ck"></span>Web mağazası siparişleri</li>
+          <li class="kb__s kb__s--3"><span class="kb__ck"></span>Banka hesap dökümü</li>
+          <li class="kb__s kb__s--4"><span class="kb__ck"></span>Takvim</li>
+        </ul>
+        <p class="kb__note">Bağlı olmayan sistem için dosya ya da iletilen e-posta da olur.</p>
+      </div>
+
+      <!-- Brief -->
+      <div class="kb__main">
+        <p class="kb__sh">
+          <span class="kb__spark"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          <strong>Claude</strong><span data-role="sub">Kaynaklar okunuyor</span>
+        </p>
+
+        <div class="kb__brief">
+          <p class="kb__bt">Pazartesi özeti · 9 Kasım</p>
+          <div class="kb__kpis">
+            <div class="kb__kpi"><span>Kasa ve banka</span><b>184.300 TL</b></div>
+            <div class="kb__kpi"><span>Hafta sonu satış</span><b>23.450 TL</b><i>38 sipariş</i></div>
+          </div>
+          <ul class="kb__week">
+            <li>Çarşamba: şişe tedarikçisine 41.200 TL ödeme</li>
+            <li>Perşembe: otel zinciri teklifinin son günü</li>
+            <li>Cuma: fuar için numune kolileri kargoya</li>
+          </ul>
+        </div>
+
+        <div class="kb__alert">
+          <p class="kb__at"><span class="kb__tag">Dikkat</span>Vadesi geçen 3 fatura · 12.800 TL</p>
+          <p class="kb__ad">Hatırlatma e-postaları taslak olarak hazır.</p>
+        </div>
+
+        <div class="kb__approve">
+          <span class="kb__btn kb__btn--ghost">Taslakları gör</span>
+          <span class="kb__btn">Onayla ve gönder</span>
+          <span class="kb__wait">Siz onaylamadan gönderilmez</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ka-kobi {
+    --kb-ink: var(--c-navy);
+    --kb-muted: var(--c-text-muted);
+    --kb-line: var(--c-border);
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.2vw, 14.5px);
+    container-type: inline-size;
+  }
+  .kb__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .kb__win p { margin: 0; }
+  .kb__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--kb-line); }
+  .kb__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .kb__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--kb-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kb__body { flex: 1; min-height: 0; display: flex; }
+
+  /* sources */
+  .kb__src { width: 36%; flex-shrink: 0; border-right: 1px solid var(--kb-line); background: var(--c-cream, #fbf9f4); padding: 0.9em 0.8em; display: flex; flex-direction: column; gap: 0.6em; }
+  .kb__lbl { font-size: 0.72em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--c-gold-text); }
+  .kb__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.4em; }
+  .kb__s { display: flex; align-items: center; gap: 0.5em; font-size: 0.8em; font-weight: 600; color: var(--kb-muted); background: #fff; border: 1px solid var(--kb-line); border-radius: 7px; padding: 0.45em 0.55em; transition: color .3s, border-color .3s; }
+  .kb__ck { width: 1.05em; height: 1.05em; border-radius: 50%; border: 1.5px solid var(--kb-line); flex-shrink: 0; transition: background .3s, border-color .3s; }
+  .kb__note { margin-top: auto !important; font-size: 0.72em; line-height: 1.4; color: var(--kb-muted); border-top: 1px dashed var(--kb-line); padding-top: 0.5em; }
+
+  /* brief */
+  .kb__main { flex: 1; min-width: 0; padding: 0.8em 0.9em; display: flex; flex-direction: column; gap: 0.55em; overflow: hidden; }
+  .kb__sh { display: flex; align-items: center; gap: 0.4em; font-size: 0.82em; color: var(--kb-ink); }
+  .kb__sh [data-role="sub"] { color: var(--kb-muted); font-size: 0.92em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kb__spark { width: 1.6em; height: 1.6em; border-radius: 6px; background: var(--c-navy); color: var(--c-gold); display: grid; place-items: center; flex-shrink: 0; }
+  .kb__spark svg { animation: ka-kobi-spin 1.8s linear infinite; }
+  .kb__brief { display: none; border: 1px solid var(--kb-line); border-radius: 9px; padding: 0.6em 0.7em; animation: ka-kobi-in .4s ease both; }
+  .kb__bt { font-size: 0.84em; font-weight: 800; color: var(--kb-ink); margin-bottom: 0.45em !important; }
+  .kb__kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45em; }
+  .kb__kpi { background: #f6f3ea; border-radius: 7px; padding: 0.4em 0.55em; display: flex; flex-direction: column; }
+  .kb__kpi span { font-size: 0.7em; color: var(--kb-muted); font-weight: 600; }
+  .kb__kpi b { font-size: 1.02em; color: var(--kb-ink); font-weight: 800; }
+  .kb__kpi i { font-style: normal; font-size: 0.68em; color: var(--kb-muted); }
+  .kb__week { display: none; list-style: none; margin: 0.5em 0 0; padding: 0; font-size: 0.76em; color: var(--kb-ink); line-height: 1.5; animation: ka-kobi-in .4s ease both; }
+  .kb__week li::before { content: '•'; color: var(--c-gold); margin-right: 0.4em; font-weight: 800; }
+  .kb__alert { display: none; border: 1px solid #efd9a8; background: #fdf6e3; border-left: 3px solid var(--c-gold); border-radius: 8px; padding: 0.5em 0.65em; animation: ka-kobi-in .4s ease both; }
+  .kb__at { display: flex; align-items: center; gap: 0.45em; font-size: 0.8em; font-weight: 800; color: var(--kb-ink); }
+  .kb__tag { font-size: 0.82em; font-weight: 800; border-radius: 99px; padding: 0.1em 0.55em; background: #f8e1dc; color: #9a2f1c; }
+  .kb__ad { font-size: 0.74em; color: var(--kb-muted); margin-top: 0.15em !important; }
+  .kb__approve { display: none; align-items: center; flex-wrap: wrap; gap: 0.45em; margin-top: 0.2em; animation: ka-kobi-in .4s ease both; }
+  .kb__btn { font-size: 0.76em; font-weight: 800; border-radius: 7px; padding: 0.45em 0.8em; background: var(--c-navy); color: #fff; }
+  .kb__btn--ghost { background: #fff; color: var(--kb-ink); border: 1px solid var(--kb-line); }
+  .kb__wait { flex-basis: 100%; font-size: 0.72em; font-weight: 700; color: var(--c-gold-text); }
+
+  /* steps: 1-2 sources checked, 3 brief, 4 week + alert, 5 approval, 6 fade */
+  .ka-kobi:not([data-step="0"]) .kb__s--1,
+  .ka-kobi:not([data-step="0"]) .kb__s--2,
+  .ka-kobi:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .kb__s--3,
+  .ka-kobi:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .kb__s--4 { color: var(--kb-ink); border-color: rgba(201, 168, 76, .55); }
+  .ka-kobi:not([data-step="0"]) .kb__s--1 .kb__ck,
+  .ka-kobi:not([data-step="0"]) .kb__s--2 .kb__ck,
+  .ka-kobi:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .kb__s--3 .kb__ck,
+  .ka-kobi:is([data-step="2"], [data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .kb__s--4 .kb__ck { background: var(--c-gold); border-color: var(--c-gold); }
+  .ka-kobi:is([data-step="3"], [data-step="4"], [data-step="5"], [data-step="6"]) .kb__brief { display: block; }
+  .ka-kobi:is([data-step="4"], [data-step="5"], [data-step="6"]) .kb__week { display: block; }
+  .ka-kobi:is([data-step="4"], [data-step="5"], [data-step="6"]) .kb__alert { display: block; }
+  .ka-kobi:is([data-step="5"], [data-step="6"]) .kb__approve { display: flex; }
+  .ka-kobi[data-step="6"] .kb__win { opacity: 0; }
+
+  /* narrow: sources as a compact strip on top */
+  @container (max-width: 520px) {
+    .kb__body { flex-direction: column; }
+    .kb__src { width: auto; border-right: 0; border-bottom: 1px solid var(--kb-line); padding: 0.55em 0.7em; gap: 0.4em; }
+    .kb__list { flex-direction: row; flex-wrap: wrap; gap: 0.3em; }
+    .kb__s { font-size: 0.7em; padding: 0.3em 0.45em; }
+    .kb__note { display: none; }
+    .kb__week { display: none !important; }
+  }
+
+  @keyframes ka-kobi-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+  @keyframes ka-kobi-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ka-kobi *, .ka-kobi *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  const KB_SUBS = ['Kaynaklar okunuyor', 'Satış ve ödemeler eşleştiriliyor', 'Takvim kontrol ediliyor', 'Özet yazılıyor', 'Vadesi geçen faturalar bulundu', 'Onayınız bekleniyor'];
+
+  function setupKobi(root: HTMLElement) {
+    const sub = root.querySelector<HTMLElement>('[data-role="sub"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number, s?: string) => { root.dataset.step = String(n); if (s) sub.textContent = s; };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      step(0, KB_SUBS[0]);
+    };
+
+    const cycle = () => {
+      reset();
+      at(1300, () => step(1, KB_SUBS[1]));
+      at(2900, () => step(2, KB_SUBS[2]));
+      at(4500, () => step(3, KB_SUBS[3]));
+      at(7000, () => step(4, KB_SUBS[4]));
+      at(9800, () => step(5, KB_SUBS[5]));
+      at(14800, () => step(6));
+      at(15400, () => { if (running) cycle(); });
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      step(5, KB_SUBS[5]);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ka-kobi').forEach(setupKobi);
+</script>

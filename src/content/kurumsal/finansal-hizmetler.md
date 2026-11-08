@@ -1,6 +1,6 @@
 ---
 title: "Finansal hizmetler için Claude"
-seoTitle: "Bankacılık, Sigorta ve Yatırımda Claude: Türkiye Rehberi"
+seoTitle: "Bankacılık, Sigorta ve Yatırımda Claude Rehberi"
 description: "Banka, katılım bankası, sigorta ve aracı kurumlar Claude'u nerede kullanır? Excel eklentisi, veri connector'ları, BDDK ve KVKK açısından dikkat edilecekler."
 eyebrow: "Sektör"
 lead: "Claude, kredi analizinden sunum hazırlığına, aktüerya kontrolünden uyum taramasına kadar finans ekiplerinin metin ve tabloyla geçen işini hızlandırır. Karar ve sorumluluk kurumda kalır; veriyi hangi koşulda Claude'a vereceğinize ise uyum biriminiz karar verir."
@@ -18,7 +18,7 @@ related:
   - { label: "Hukuk ekipleri için Claude", href: "/kurumsal/hukuk/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 100
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Finans ekibinde Claude ne yapar?
@@ -30,7 +30,7 @@ Finans işinin büyük kısmı, karar anından önceki hazırlıktır: mali tabl
 - **Portföy yönetimi:** Yatırım komitesi notları, performans sunumları, portföy gözden geçirmeleri.
 - **Sigorta:** Aktüerya çalışma kitaplarının kontrolü ve düzenleyiciye gidecek raporlara hazırlık.
 
-Kaynak sayfa bir de yeni bir ürün duyuruyor: **Claude for financial advisors** (finansal danışmanlar için Claude). Saklama kuruluşu, portföy, planlama ve CRM sistemlerini bağlayıp müşteri kabulü, toplantı hazırlığı, hesap açılışı, portföy gözden geçirme ve uyum kontrolü gibi hazır iş akışları sunuyor. Bağlandığı sistemler (Charles Schwab, Envestnet, Addepar, Wealthbox gibi) ABD'deki bağımsız yatırım danışmanlığı pazarına ait. Türkiye'deki aracı kurum ve portföy yönetim yazılımları için bu üründe hazır bir bağlantı göremedik; benzer akışı Türkiye'de kurmak için kendi sistemlerinize özel connector gerekir.
+Kaynak sayfa bir de yeni bir ürün duyuruyor: **Claude for Financial Advisors** (finansal danışmanlar için Claude). Ayrıntısı ve Türkiye açısından anlamı aşağıda, "Finansal danışmanlar için Claude" bölümünde.
 
 ## Tablo ve sunum işi: Microsoft 365 eklentileri
 
@@ -38,13 +38,29 @@ Finans ekiplerinin günü Excel ve PowerPoint'te geçer. Claude bu programların
 
 ![Tablo programında kurgusal bir firmanın mali tablosu ve yan panelde Claude: analist "FAVÖK yüzde 15 düşerse borç oranı ne olur?" diye soruyor, Claude yeni bir senaryo sütunu ekleyip sonucu hücre kaynaklarıyla açıklıyor](/images/kurumsal/finansal-hizmetler/excel-senaryo.webp)
 
-Bu eklentiler finans sektörüne özel değil, tüm ücretli planlarda var; Outlook eklentisi henüz beta. Ayrıntı: [Microsoft 365 için Claude](/claude/microsoft-365/).
+Bu eklentiler finans sektörüne özel değil, tüm ücretli planlarda var; Outlook eklentisi henüz beta. Ayrıntı: [Microsoft 365 için Claude](/claude/microsoft-365/). Kurumunuz Google kullanıyorsa aynı iş Google Sheets, Docs ve Slides içinde de yapılabiliyor (beta): [Google Workspace için Claude](/claude/google-workspace/).
+
+Kaynak sayfa ayrıca pitch book, kredi memosu, KYC (müşterini tanı) taraması ve fon muhasebesi için hazır **ajan şablonları** duyuruyor. Bunlar Claude ve Claude Code içinde plugin olarak, kendi ajanını kuran yazılım ekipleri için de Managed Agents tarifi olarak geliyor. Şablonlar ABD ve küresel piyasa pratiğine göre yazıldığı için MASAK ve BDDK gereklerine göre uyarlanmadan kullanılmamalı.
 
 ## Veri sağlayıcılar ve connector'lar
 
 Kaynak sayfa, Claude'un doğrudan bağlanabildiği finansal veri sağlayıcılarını sayıyor: LSEG, FactSet, S&P Global, Morningstar ve PitchBook. Moody's, Dun & Bradstreet, Verisk, Daloopa, Third Bridge gibi veri ve analiz ortakları da listede. Bunlar küresel sağlayıcılar; kurumunuzun zaten aboneliği varsa Claude'a bağlayıp verileri sohbet içinde kaynak göstererek kullanabilirsiniz. Abonelik ücreti sağlayıcıyla aranızdadır, Claude planına dahil değildir.
 
 Türk piyasasına özgü kaynaklar (KAP bildirimleri, Borsa İstanbul verisi, kurum içi çekirdek bankacılık ve risk sistemleri) için resmi bir Claude connector'ı doğrulamadık. Bunlar için kurumun BT ekibi özel bir connector (MCP sunucusu) yazabilir; ayrıntı [Connectors](/claude/connectors/) sayfasında.
+
+## Finansal danışmanlar için Claude (ABD odaklı)
+
+Claude for Financial Advisors ayrı bir model ya da uygulama değil, Claude'a kurulan bir plugin: hazır iş akışları (skill), bağlantılar (connector) ve rehberli kurulum bir arada geliyor. Anthropic ilk duyuruyu Eylül 2026'da yaptı, 27 Ekim 2026'da ortak bağlantılarını ekledi. Kaynak: [claude.com/solutions/financial-advisors](https://claude.com/solutions/financial-advisors).
+
+- **Ne yapar:** Müşteri adayı kaydı, toplantı öncesi hazırlık, toplantı sonrası not ve takip yazısı, portföy yeniden dengeleme gözden geçirmesi, alternatif yatırım özeti, miras ve vergi özeti, uyum ve yapay zeka politikası taslağı. Bilgiyi toplar ve analizin taslağını yazar.
+- **Ne yapmaz:** Yatırım tavsiyesi vermez, işlem yapmaz, para taşımaz, müşteriye kendi başına e-posta göndermez. CRM güncellemesi ve müşteri yazışması danışman onaylayana kadar bekletilir.
+- **Hangi planda:** Çözüm sayfası ücretli planlarda çalıştığını, kayıtlı yatırım danışmanları için Enterprise'ı (denetim kaydı ve uyum kontrolleri nedeniyle) önerdiğini yazıyor. Ekim duyurusu ise plugin'in bugün Enterprise için sunulduğunu, diğer planların lisans talep formu doldurduğunu söylüyor. İki kaynak tam örtüşmüyor; kendi hesabınızda görmeden plan kararı vermeyin.
+
+**ABD'ye özgü olanlar.** Ürünün hedefi ABD'deki bağımsız yatırım danışmanları (RIA). Uyum akışı müşteriye giden metni ABD Sermaye Piyasası Kurulu'nun (SEC) pazarlama kuralına göre ön kontrol ediyor. Bağlantıların hepsi ABD servet yönetimi pazarının araçları: saklama kuruluşu Charles Schwab, portföy platformları Addepar, Envestnet, Orion, SS&C Black Diamond, CRM'ler Wealthbox ve Redtail, varlık yöneticileri BlackRock ve Vanguard gibi. Türkiye'deki aracı kurum, portföy yönetim ve CRM yazılımları için hazır bir bağlantı yok; benzer akış Türkiye'de ancak kendi sistemlerinize özel connector ve Türk mevzuatına göre yeniden yazılmış skill'lerle kurulabilir.
+
+**Türkiye'de yatırım danışmanlığı uyarısı.** Türkiye'de yatırım danışmanlığı, 6362 sayılı Sermaye Piyasası Kanunu'nun 37. maddesinde sayılan bir yatırım hizmetidir ve düzenli olarak yapılabilmesi için SPK izni gerekir (Kanun m. 39). SPK'nın III-37.1 sayılı Yatırım Hizmetleri ve Faaliyetleri ile Yan Hizmetlere İlişkin Esaslar Hakkında Tebliğ'ine göre bu faaliyeti yalnız SPK'dan izin almış aracı kurumlar, yatırım ve kalkınma bankaları ile portföy yönetim şirketleri yapabilir (Tebliğ m. 46). Bu kurumlarda çalışan danışmanların SPK'nın lisanslama düzenlemelerinde aranan lisans belgesine sahip olması gerekir. Claude'un ürettiği bir portföy değerlendirmesi ya da öneri taslağı, olduğu gibi müşteriye yatırım tavsiyesi olarak iletilmemeli; taslağı izinli kurumun lisanslı personeli inceler, sorumluluk onda kalır. SEC kuralına göre yapılan ön kontrol, SPK düzenlemelerine ve kurumun kendi uyum prosedürüne uygunluk anlamına gelmez. Bu not hukuki görüş değildir; uygulamayı kurumunuzun uyum ve hukuk birimiyle netleştirin.
+
+Kurgusal bir örnek: İstanbul'daki bir portföy yönetim şirketi olan Boğaziçi Portföy, yatırım danışmanlarının müşteri toplantısı öncesi hazırlığını hızlandırmak istiyor. Bu plugin'in ABD bağlantıları işine yaramadığı için kamuya açık fon raporlarını ve anonimleştirilmiş portföy özetini Claude'a verip toplantı notu taslağı hazırlatıyor. Öneriyi lisanslı danışman yazıyor, müşteriye giden metni uyum birimi onaylıyor.
 
 ## Kaynak sayfadaki müşteri örnekleri
 

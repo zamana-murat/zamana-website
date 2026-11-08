@@ -1,7 +1,7 @@
 ---
 title: "Türk İş Araçlarıyla Claude: Logo, Mikro, Paraşüt, e-Fatura, KEP, Excel"
-seoTitle: "Claude ile Logo, Mikro, Paraşüt ve e-Fatura Kullanımı: Ne Yapılır?"
-description: "Logo, Mikro, Paraşüt, e-Fatura, KEP, banka ekstresi ve Excel ile Claude nasıl çalışır? Resmi connector durumu, dışa aktarım yolu, Cowork, computer use riski ve özel bağlantı."
+seoTitle: "Claude ile Logo, Mikro, Paraşüt ve e-Fatura"
+description: "Logo, Mikro, Paraşüt, e-Fatura, KEP, banka ekstresi ve Excel ile Claude nasıl çalışır? Resmi connector durumu, dışa aktarım ve özel bağlantı."
 tags:
   - temeller
   - muhasebe
@@ -21,7 +21,7 @@ Connector, Claude'un bir programa doğrudan bağlanıp veri okumasını (bazen y
 
 | Araç | Resmi Claude connector'ı | Not |
 |---|---|---|
-| Paraşüt | Yok | Paraşüt'ün kendi REST API'si var; özel bağlantı kurulabilir (teknik ekip gerekir) |
+| Paraşüt | Yok | Paraşüt'ün kendi REST API'si var; özel bağlantı kurulabilir (teknik ekip gerekir). İnternette Paraşüt ile bağı olmayan bir topluluk MCP sunucusu var, muhasebe verisi için önermiyoruz |
 | Logo (Tiger, Go ve diğerleri) | Yok | API ve entegrasyon seçenekleri ürüne göre değişir; yazılım sağlayıcınıza sorun |
 | Mikro | Yok | Aynı |
 | Netsis | Yok | Wiki'deki [Popüler MCP'ler](/wiki/mcp/populer-mcpler/) sayfasında da aynı durum yazılı |
@@ -29,7 +29,7 @@ Connector, Claude'un bir programa doğrudan bağlanıp veri okumasını (bazen y
 | KEP | Bildiğimiz kadarıyla yok | Aynı |
 | Türk bankaları | Bildiğimiz kadarıyla yok | Aynı |
 
-Bu tablo **Ekim 2026** itibarıyladır ve resmi dizin (yaklaşık 900 connector) ile arama sonuçlarına dayanır. Durum değişebilir: karar vermeden önce [claude.com/connectors](https://claude.com/connectors) dizininde ürün adını arayın. Dizinde görünmeyen şey için "özel connector" yolu vardır, ama bu sizin sorumluluğunuzdaki bir kurulumdur (aşağıya bakın). Genel resmi connector listesi için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
+Bu tablo **Kasım 2026** itibarıyladır ve resmi dizin (1.000'den fazla connector, Kasım 2026) ile arama sonuçlarına dayanır. Durum değişebilir: karar vermeden önce [claude.com/connectors](https://claude.com/connectors) dizininde ürün adını arayın. Dizinde görünmeyen şey için "özel connector" yolu vardır, ama bu sizin sorumluluğunuzdaki bir kurulumdur (aşağıya bakın). Genel resmi connector listesi için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
 
 ## En pratik yol: dışa aktar, Claude'a yükle
 
@@ -55,8 +55,8 @@ Türkçe programların çıktısında sayı `1.234,56` biçimindedir (nokta binl
 Excel, muhasebe ile Claude'un buluştuğu yerdir. Üç yol var:
 
 1. **Dosyayı yüklemek.** Excel dosyasını sohbete atarsınız, Claude içeriği okur, [kod çalıştırma](/wiki/yetenekler/code-execution/) ile toplama, süzme ve grafik yapabilir ve sonucu yeni bir Excel dosyası olarak verir. En kolay yol bu.
-2. **Excel'in içindeki eklenti.** Claude'un Microsoft 365 için Excel eklentisi genel kullanıma açıktır (ücretli planlarda, Pro, Max, Ultra, Team ve Enterprise); dosyanın içinde çalışır, formül ve tablo önerir. Ayrıntı [Office ve Chrome](/wiki/araclar/office-ve-chrome/) sayfasında. Eklenti için Microsoft 365 aboneliğiniz olması gerekir; kurulumdan önce Excel sürümünüzün destekleyip desteklemediğini kontrol edin.
-3. **Google E-Tablolar.** Google Workspace connector'ı Docs, Sheets ve Slides dosyalarını okuyup yazabilir.
+2. **Excel'in içindeki eklenti.** Claude'un Microsoft 365 için Excel eklentisi genel kullanıma açıktır (ücretli planlarda, Pro, Max, Ultra, Team ve Enterprise); dosyanın içinde çalışır, formül ve tablo önerir. Ayrıntı [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/) sayfasında. Eklenti için Microsoft 365 aboneliğiniz olması gerekir; kurulumdan önce Excel sürümünüzün destekleyip desteklemediğini kontrol edin.
+3. **Google E-Tablolar.** Google Workspace connector'ı Docs, Sheets ve Slides dosyalarını okuyup yazabilir. Dosyanın içinde çalışmak için ücretli planlarda Google Workspace eklentisi de var (6 Ekim 2026, beta), bkz. [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
 
 İyi çalışan örnekler: farklı bölgelerden gelen Excel'leri tek tabloda birleştirmek, bütçe sapmasını işaretlemek, ay sonunda tutmayan satırları listelemek. Zayıf kalan yer: **gizli sayfalar, birleştirilmiş hücreler ve elle eklenmiş renkli notlar.** Dosyayı temizleyip verin.
 
@@ -75,7 +75,7 @@ Excel, muhasebe ile Claude'un buluştuğu yerdir. Üç yol var:
 
 Bazı eski programların API'si ya da dışa aktarım seçeneği zayıftır. Bu durumda [Computer Use](/wiki/yetenekler/computer-use/) özelliği, Claude'un ekranı görüp fare ve klavyeyle programı kullanmasına izin verir. Mümkün ama **dikkatli kullanılması gereken** bir yoldur:
 
-- Özellik **research preview** aşamasındadır, yani denemelik; üretimde tek dayanak yapılmamalıdır.
+- Özellik **beta** aşamasındadır, yani henüz denemelik; üretimde tek dayanak yapılmamalıdır.
 - Yalnızca **Pro, Max ve Ultra** planlarında ve masaüstü uygulamasında (Cowork ve Claude Code içinde) çalışır; **Team ve Enterprise'ta yok**, web sohbetinde de yok.
 - Claude yanlış alana tıklayabilir, yanlış kaydı seçebilir. Muhasebe programında bir hatalı kayıt, geri alması en zahmetli hatadır.
 - Ekranda ne varsa Claude onu görür: açık duran müşteri listesi, maaş ekranı dahil.
@@ -90,6 +90,7 @@ Bilmeniz gereken şeyler:
 
 - **Teknik ekip gerekir.** Kendi başına kurabilecek bir muhasebeci ya da işletme sahibi için bu iş fazla. Bir yazılımcı ya da bilgi işlem ekibi gerekir.
 - **Sorumluluk sizin.** Resmi bir connector değil; yazan ve bakımını yapan sizsiniz.
+- **Sunucu internetten erişilebilir olmalı.** Claude uzak connector'a Anthropic'in bulutundan bağlanır; bu yüzden sunucu herkese açık bir HTTPS adresinde durur (erişim Anthropic'in IP aralığıyla sınırlanabilir), VPN arkasındaki sunucuya bu yolla ulaşılmaz. Team ve Enterprise'ta özel connector'ı yalnız owner ekler, Free'de en çok bir özel connector olur. Ayrıntı: [Şirket Sistemini Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/).
 - **Salt okunur başlayın.** İlk sürümde Claude yalnızca veri okusun; kayıt yazma, fatura onaylama gibi yetkiler olmasın. Ayrı bir kullanıcı ve en düşük yetki tanımlayın.
 - **Hazır "topluluk" connector'larına dikkat.** İnternette bulunan, kimin yazdığı belirsiz connector'lar muhasebe verinize erişir. Kurmadan önce [MCP Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki kontrolleri okuyun.
 - **Önce ihtiyacı sorun.** Ayda bir kez rapor alınıyorsa özel connector'a gerek yoktur; günde birkaç kez canlı veri gerekiyorsa değer.

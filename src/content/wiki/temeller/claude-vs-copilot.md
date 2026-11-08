@@ -1,12 +1,13 @@
 ---
 title: "Claude vs Microsoft Copilot: Hangisi Hangi İşte?"
+seoTitle: "Claude vs Copilot: Hangisi Hangi İşte?"
 description: "Microsoft 365 Copilot ile Claude'un dürüst karşılaştırması. Outlook/Word/Excel entegrasyonu, kurumsal IT, ne zaman birlikte kullanmalı."
 tags:
   - temeller
   - karsilastirma
   - copilot
   - microsoft
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Microsoft Copilot, Microsoft'un Office uygulamaları ve Windows içine entegre AI asistanıdır.** Türkiye'deki orta-büyük kurumların ezici çoğunluğu Microsoft 365 kullanıyor; bu yüzden *"zaten Microsoft veriyor, Claude'a gerek var mı"* sorusu kurumsal satışta en sık karşılaşılan itirazdır.
@@ -50,7 +51,7 @@ Ama Microsoft'un dokümanına göre **Anthropic modelleri** de belirli Microsoft
 
 ## Güçlü Yönler: Microsoft Copilot
 
-**Yerleşik entegrasyon.** Outlook'ta yeni bir e-posta yazarken Copilot butonu, Word'de "bu paragrafı yeniden yaz" butonu, Excel'de formül üretimi: hepsi yerinde, kopyala-yapıştır gerekmez. Claude'un Office eklentileri bu farkı daraltıyor ([Office ve Chrome](/wiki/araclar/office-ve-chrome/)), ama Microsoft'un kendi yerleşik katmanı kadar derin değil.
+**Yerleşik entegrasyon.** Outlook'ta yeni bir e-posta yazarken Copilot butonu, Word'de "bu paragrafı yeniden yaz" butonu, Excel'de formül üretimi: hepsi yerinde, kopyala-yapıştır gerekmez. Claude'un Office eklentileri bu farkı daraltıyor ([Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/)), ama Microsoft'un kendi yerleşik katmanı kadar derin değil.
 
 **Tek tedarikçi disiplini.** Şirket Microsoft 365 sözleşmesinde, IT ekibi Microsoft araçlarına alışkın, faturalama ortak. Yeni bir AI tedarikçisi değerlendirmek, kurumsal satın almada zaman alır. (KVKK ve DPA tarafının Microsoft Türkiye üzerinden nasıl yürüdüğünü biz doğrulayamadık; Microsoft'tan yazılı isteyin.)
 
@@ -105,7 +106,7 @@ Ama Microsoft'un dokümanına göre **Anthropic modelleri** de belirli Microsoft
 | Hassas / düzenleyici sektör | **Claude** ([Constitutional AI](/wiki/temeller/anthropic-ve-tarihce/)) |
 | Bireysel öğrenme, ücretsiz başlangıç | **Claude** Free veya Copilot web |
 
-*Claude'un Office eklentileri kuruluysa "yerinde" avantajı olan ilk dört satırda fark daralır.*
+*Claude'un Office eklentileri kuruluysa "yerinde" avantajı olan ilk üç satırda fark daralır; Teams toplantı özeti Copilot'ta kalır.*
 
 ## İkisini Birden Kullanmak: Yaygın Senaryo
 

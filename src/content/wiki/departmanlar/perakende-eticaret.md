@@ -1,13 +1,13 @@
 ---
 title: "Perakende ve E-Ticaret: Claude Uygulamaları"
-seoTitle: "E-Ticarette Claude: Ürün Açıklaması, Yorum Analizi ve Marketplace"
+seoTitle: "E-Ticarette Claude: Ürün Metni, Yorum, Marketplace"
 description: "Perakende ve e-ticaret işletmeleri için Claude: ürün açıklaması, müşteri yorum analizi, kampanya, fiyat takibi, marketplace yönetimi."
 tags:
   - departmanlar
   - perakende
   - eticaret
   - urun-aciklamasi
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Türkiye'de perakende ve e-ticaret hızla büyüyor: Trendyol, Hepsiburada, Amazon TR, kendi siteleri, fiziksel mağaza zincirleri. Her gün **binlerce ürün açıklaması, müşteri yorumu ve kampanya metni** gerekir. Claude bu içerik üretimini ölçeklendirir ve üstüne veri analizi de katar.
@@ -60,6 +60,8 @@ Aylık binlerce yorum geliyor. Çoğu okunmadı bile. Claude:
 
 [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile sınıflandırma kalitesi yükselir.
 
+Yorum dosyasını (CSV ya da Excel) yüklemeden önce müşteri adı, telefon ve adres sütunlarını silin; sınıflandırma için yorum metni ve sipariş tarihi yeterlidir. Çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+
 ### Trend Tespiti
 
 "Geçen ay yoktu, bu ay 20 yorumda görünüyor" gibi yeni trendleri Claude fark eder: yeni bir kalite sorunu mu, lojistik aksaklık mı, yeni bir rakiple kıyas mı?
@@ -87,7 +89,7 @@ Müşteri listesine haftalık veya aylık newsletter. Claude segment başına fa
 
 ### Sosyal Medya Postları
 
-Instagram, TikTok metin kısımları. Görseli siz üretirsiniz, metni Claude. Hashtag stratejisi dahil.
+Instagram, TikTok metin kısımları. Ürün fotoğrafını siz çekersiniz, metni Claude yazar; hashtag stratejisi dahil. Afiş, kampanya kartı gibi tasarım görsellerini Free dahil tüm planlarda açık [Claude Design](/wiki/yetenekler/claude-design/) ile de hazırlayabilirsiniz; Claude fotoğraf üretmez ya da düzenlemez.
 
 ### Push Notification
 
@@ -105,7 +107,7 @@ Maliyet, rakip fiyatı ve pazar konumundan Claude bir fiyat aralığı önerir. 
 
 ### Sepet Terk Analizi
 
-Sepet terk verilerini Claude'a verip sorun: hangi ürünlerde, hangi adımda, hangi sebeple? [Code Execution](/wiki/yetenekler/code-execution/) ile hesaplar gerçekten çalıştırılır.
+Sepet terk verilerini Claude'a verip sorun: hangi ürünlerde, hangi adımda, hangi sebeple? [Code Execution](/wiki/yetenekler/code-execution/) ile hesaplar gerçekten çalıştırılır. Veri bir platforma (Snowflake, BigQuery, Salesforce gibi) bağlıysa [Claude Dashboards](/wiki/yetenekler/claude-design/#claude-dashboards-ve-claude-motion-beta) (beta, ücretli planlar) aynı soruyu canlı panoya çevirebilir; yerli pazar yeri panelleri için hazır bağlantı yoktur, dışa aktarılan dosya kullanılır.
 
 ## Bölüm 5: Müşteri Hizmetleri
 
@@ -131,7 +133,7 @@ Hassas durumlarda Claude diplomatik ve çözüm odaklı bir taslak hazırlar. M�
 
 ### Ürün Kataloğu
 
-Yıllık ürün kataloğu: 200 ürün, kısa açıklama ve özellik tablosuyla elle çoğu ekipte birkaç hafta sürer. Claude ile ilk taslaklar yaklaşık birkaç iş gününde çıkar (tahmini aralık), kontrol ve düzeltme süresi ayrıca sizdedir.
+Yıllık ürün kataloğu: 200 ürün, kısa açıklama ve özellik tablosuyla elle çoğu ekipte birkaç hafta sürer. Claude ile ilk taslaklar yaklaşık birkaç iş gününde çıkar (tahmini tipik aralık), kontrol ve düzeltme süresi ayrıca sizdedir.
 
 ### Blog ve SEO İçerik
 
@@ -139,7 +141,7 @@ E-ticaret SEO'sunun önemli bir kısmı bloga dayanır. "Hangi ayakkabı hangi m
 
 ### Video Senaryosu
 
-Ürün tanıtım videolarınızın senaryoları: 30 saniyelik TikTok, 1 dakikalık Reels, 5 dakikalık YouTube, formata göre.
+Ürün tanıtım videolarınızın senaryoları: 30 saniyelik TikTok, 1 dakikalık Reels, 5 dakikalık YouTube, formata göre. Team ve Enterprise'ta Claude Motion (beta) satış verisinden ya da kampanya özetinden kısa animasyonlu anlatım üretip MP4 olarak verir; ürün çekiminin yerini tutmaz.
 
 ## Pratik Kullanım Senaryoları
 
@@ -157,8 +159,6 @@ Yaz koleksiyonu lansmanı: 80 ürün, her birinin Trendyol, Hepsiburada ve kendi
 **Adım 3:** Onaylanan prompt 80 ürüne çalıştırılır; Claude sonuçları ürün başına satır olacak şekilde Excel'e döker.
 
 **Adım 4:** Çalışan her açıklamayı özellik tablosuyla karşılaştırır, platform karakter sınırlarını ve yasak kelimeleri kontrol eder, sonra yükleme dosyasını hazırlar.
-
-Toplam süre: ürün başı elle yaklaşık 20-30 dakika, Claude ile 3-5 dakika (kontrol dahil); 80 ürün için kabaca 30-40 saat yerine 6-10 saat (örnek senaryo).
 
 **Süre:** 80 ürünün üç platform açıklaması elle yaklaşık 30-40 saat, Claude ile 6-10 saat (kontrol dahil); 500 yorumun sınıflandırılması elle 1-2 gün, Claude ile 1-2 saat. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/). Ayda 2 lansman yapıyorsanız fark yaklaşık 40-65 saattir.*
 

@@ -1,5 +1,6 @@
 ---
 title: "Claude'un Sınırları: Ne Yapamaz, Ne Zaman Hata Yapar?"
+seoTitle: "Claude'un Sınırları: Nerede Hata Yapar?"
 description: "Claude'un ne yapamadığı, hangi durumlarda hata yaptığı ve bir iş profesyonelinin hangi konularda ona güvenmemesi gerektiği, dürüstçe anlatılmış."
 tags:
   - temeller
@@ -39,7 +40,7 @@ Claude matematik problemleri üzerine **düşünebilir**, ama zihinden yürütt�
 **Çözüm:**
 
 - **Ciddi hesaplamalar için Excel, Python veya gerçek bir hesap makinesi kullanın.**
-- Cowork'te Claude, Python/Bash çalıştırarak hesaplama yapabilir, bu güvenli bir yoldur çünkü hesap makinesi gibi davranır, zihinsel aritmetik yapmaz.
+- Sohbette kod çalıştırma (code execution) açıkken ve Cowork'te Claude, Python gibi bir dil çalıştırarak hesaplama yapabilir, bu güvenli bir yoldur çünkü hesap makinesi gibi davranır, zihinsel aritmetik yapmaz.
 - Finansal raporda rakamlar sizden (veya Excel'den), anlatım Claude'dan gelir.
 
 ### 3. Eğitim Verisi Kesme Tarihi
@@ -71,7 +72,7 @@ Claude'un bağlam penceresi geniştir, ama sonsuz değil. Çok uzun bir sohbet b
 **Çözüm:**
 
 - Bir görev uzun sürüyorsa, yeni bir oturum başlatın. Özeti yeni oturuma taşıyın.
-- Cowork'teki Context Compaction özelliği bu sorunu kısmen çözer ama mükemmel değildir.
+- Otomatik bağlam özetleme (Context Compaction; claude.ai'de kod çalıştırma açıkken ve Cowork'te) bu sorunu kısmen çözer ama mükemmel değildir.
 - **Pratik kural:** Aynı konuşmada 30+ prompt olduysa ve çıktı kalitesi düşüyorsa, yeni oturum açın.
 
 ### 5. Aynı Prompt, Farklı Cevaplar
@@ -94,7 +95,7 @@ Claude'un kendisi internete, veritabanlarınıza veya şirket sistemlerinize **b
 
 **Çözüm:**
 
-- Cowork'te **connector'ları kurun**: Slack, Drive, Gmail, CRM. Resmi dizinde yaklaşık 900 connector bulunur. Bir kere bağlayın, Claude onlara okur ve yazar.
+- Cowork'te **connector'ları kurun**: Slack, Drive, Gmail, CRM. Resmi dizinde 1.000'den fazla connector bulunur. Bir kere bağlayın, Claude onlara okur ve yazar.
 - Bir bağlantı yoksa ilgili bilgiyi **manuel olarak prompt'a yapıştırın**.
 
 ### 7. Dosya Boyutu Sınırları
@@ -111,7 +112,7 @@ Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) bağlam penceresi tüm ücr
 
 | Konu | Sınır |
 |---|---|
-| Sohbete yükleme | Sohbet başına en çok 20 dosya |
+| Sohbete yükleme | Dosya başına 500 MB, sohbet başına en çok 20 dosya; Excel (XLSX) okumak için kod çalıştırma açık olmalı |
 | PDF | En çok 1000 sayfa; 100 sayfa ve altında metin ile görseller okunur, 101-1000 sayfada yalnız metin |
 | Proje dosyası | Dosya başına 30 MB; dosya sayısı sınırsız ama bağlama sığmalı, bilgi tabanı büyüyünce RAG moduna geçilir |
 | Kod çalıştırma | Yükleme ve indirmede dosya başına 30 MB |
@@ -166,11 +167,11 @@ Anthropic bu konuda koruma katmanları kurduğunu ve ölçtüğünü söylüyor.
 - Claude'u güvenmediğiniz kaynaklara (bilinmeyen web siteleri, tanımadığınız kişilerden gelen e-postalar ve ekler) yönlendirirken ona geniş yetki vermeyin.
 - Para, şifre, kişisel veri ya da dosya gönderme gibi geri dönüşü olmayan adımlarda onayı otomatik bırakmayın, Claude'un sorduğu her onayı okuyun.
 - Connector ve eklentileri yalnız ihtiyacınız olanlarla sınırlayın, şirkette bu onayı politikaya bağlayın ([Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)).
-- Tarayıcı tarafı ayrıntısı: [Claude for Chrome](/claude/chrome/), [Office ve Chrome](/wiki/araclar/office-ve-chrome/), [MCP Güvenliği](/wiki/mcp/guvenlik/).
+- Tarayıcı tarafı ayrıntısı: [Claude for Chrome](/claude/chrome/), [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/), [MCP Güvenliği](/wiki/mcp/guvenlik/).
 
-### 11. Sesli Modda Türkçe Desteği Görünmüyor
+### 11. Sesli Modda Türkçe Desteği Doğrulanmadı
 
-Voice mode (beta) tüm planlarda var, ama Anthropic'in dil listesinde Türkçe görünmüyor (liste bir arama özetinden alındı, kesin teyit için kendi hesabınızda deneyin). Yazılı Türkçe güçlüdür; konuşarak kullanım için telefonun klavye dikte özelliğiyle metin üretip Claude'a göndermek sağlam yoldur. Ayrıntı: [Voice Mode](/wiki/araclar/voice-mode/).
+Voice mode (beta) tüm planlarda var, ama Anthropic'in yardım sayfası artık desteklenen dilleri listelemiyor ve İngilizce dışındaki dilleri beta sayıyor; eski listede Türkçe yoktu. Türkçe sesli kullanımı kendi hesabınızda deneyin, iş akışını ona dayandırmayın. Yazılı Türkçe güçlüdür; konuşarak kullanım için telefonun klavye dikte özelliğiyle metin üretip Claude'a göndermek sağlam yoldur. Ayrıntı: [Voice Mode](/wiki/araclar/voice-mode/).
 
 ## Claude'un Reddedeceği Şeyler
 

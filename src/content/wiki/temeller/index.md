@@ -153,6 +153,9 @@ Bu altı cümle bu bölümün özetidir. Sayfaları okumadan önce buraya döneb
 - [**Anthropic ve Tarihçe**](/wiki/temeller/anthropic-ve-tarihce/): Claude'u yapan şirket, model tarihçesi
 - [**Claude vs Gemini**](/wiki/temeller/claude-vs-gemini/) ve [**Claude vs Copilot**](/wiki/temeller/claude-vs-copilot/): Google ve Microsoft karşılaştırmaları
 - [**Kullanım Limitleri**](/wiki/temeller/kullanim-limitleri/): Kotanın nasıl işlediği
+- [**Prompt ve Token**](/wiki/temeller/prompt-ve-token/): İki temel kavram, sade anlatım
+- [**Türkiye'de Claude**](/wiki/temeller/turkiyede-claude/): Erişim, satın alma ve destek
+- [**KVKK m.9 Yurt Dışı Aktarım**](/wiki/temeller/yurt-disi-aktarim/): Claude'a kişisel veri girmeden önce
 - [**Takım ve Admin**](/wiki/temeller/takim-ve-admin/): Team ve Enterprise yönetimi
 - [**Fatura ve KDV**](/wiki/temeller/fatura-ve-kdv/): Türkiye'de muhasebeleştirme
 - [**Şirket İçi Politika**](/wiki/temeller/sirket-ici-politika/) ve [**Ölçüm Metrikleri**](/wiki/temeller/olcum-metrikleri/): Kurallar ve ROI ölçümü

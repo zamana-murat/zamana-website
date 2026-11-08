@@ -1,6 +1,6 @@
 ---
 title: CLAUDE.md Nedir?
-seoTitle: "CLAUDE.md Nedir? Nerede Okunur, Sohbetteki Karşılığı"
+seoTitle: "CLAUDE.md Nedir? Nerede Okunur, Sohbet Karşılığı"
 description: "CLAUDE.md, Claude'a sizi tanıtan düz metin dosyasıdır. Cowork klasöründe ve Claude Code'da okunur, sohbette okunmaz; karşılığı profil talimatıdır."
 tags:
   - claude-md
@@ -20,13 +20,13 @@ Markdown formatındadır. Çalıştığınız klasörde durur. Claude, bu klasö
 | Ortam | CLAUDE.md okunur mu? | Karşılığı |
 |---|---|---|
 | **Sohbet** (claude.ai, mobil) | Hayır, dosya olarak okunmaz | **Profil talimatı** (Ayarlar > General > "Instructions for Claude") ve **proje talimatı** |
-| **Yerel Cowork oturumu** (Claude Desktop, klasör bağlı) | Evet, klasördeki dosya okunur | Cowork yardım sayfaları buna "klasör talimatı" der |
+| **Yerel Cowork oturumu** (Claude Desktop, klasör bağlı) | Evet, klasördeki dosya okunur (CLAUDE.md yoksa AGENTS.md) | Cowork belgeleri "klasör talimatı" der ama dosyayı adıyla anmaz; "talimatımı 3 maddede özetle" testiyle doğrulayın |
 | **Bulut Cowork oturumu** | Okunduğu belgelenmemiş | Klasörler elle eklenir; kritik kuralı profil talimatına da yazın |
-| **Claude Code** | Evet, hiyerarşik olarak | Geliştiriciler için; ayrıntı [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasının son kutusunda |
+| **Claude Code** | Evet, hiyerarşik olarak | Geliştiriciler için; ayrıntı [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasının son kutusunda |
 
 Hangi yerin nerede geçerli olduğunu ve kimin yönettiğini tek tabloda [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/#kalıcı-talimat-ve-hafıza-yerleri) bölümünde görebilirsiniz. Bu sayfada anlatılan fikir ise hepsinde aynıdır: **kendinizi bir kez yazarsınız, kullandığınız yere koyarsınız.**
 
-> **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım). Klasörle çalıştığınız yerde CLAUDE.md okunur; sohbet tarafında benzer işi [Projects](/wiki/araclar/projects/) talimatları, profil talimatı ve Claude'un [yerleşik hafızası](/wiki/yetenekler/memory/) görür.
+> **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım; Enterprise'ta 23 Ekim 2026'da genel kullanıma açıldı, Team ve Enterprise'ta yönetici "Chat and Cowork unified" ayarıyla açar). Klasörle çalıştığınız yerde CLAUDE.md okunur; sohbet tarafında benzer işi [Projects](/wiki/araclar/projects/) talimatları, profil talimatı ve Claude'un [yerleşik hafızası](/wiki/yetenekler/memory/) görür.
 
 Bu dosyanın (ya da sohbetteki karşılığının) değeri pratikte hızla görünür: **Claude'u genel bir asistan olmaktan çıkarıp size özel bir asistana dönüştüren mekanizma, kalıcı talimattır**: kendi tarzınıza, işinize, varsa ekibinize uygun bir asistan.
 

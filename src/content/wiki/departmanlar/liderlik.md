@@ -1,6 +1,6 @@
 ---
 title: "Liderlik ve Yönetim: Claude Uygulamaları"
-seoTitle: "Yöneticiler İçin Claude: Uzun Raporu Özetleme, Karar Memosu, Due Diligence"
+seoTitle: "Yöneticiler için Claude: Rapor Özeti, Karar Memosu"
 description: "Üst yönetim için Claude: stratejik düşünme ortağı, bilgi sentezi, yönetim kurulu iletişimi, M&A due diligence. \"100 sayfayı 10 dakikada oku\" anı."
 tags:
   - departmanlar
@@ -8,7 +8,7 @@ tags:
   - yonetim
   - strateji
   - ma
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Üst yönetim için Claude'un sağladığı zaman kazancı en belirgin olanlardandır. Sebep basit: **yöneticinin günü büyük ölçüde bilgi tüketmek, karar vermek ve iletişim kurmaktan oluşur**; bu üçü Claude'un en güçlü olduğu alanlardır.
@@ -26,7 +26,7 @@ lastUpdated: "2026-10-06"
 
 ### Claude Düşünme Ortağı Olarak
 
-Kararları test etmek, kör noktaları belirlemek, varsayımları stres testine sokmak. Başarılı liderlerin nadiren sahip olduğu şey, **cevaba politik bir yatırımı olmayan, dürüst ve bilgili bir muhataptır**. Claude bu role yaklaşabilir, ama onaylama eğilimine (sycophancy) karşı dikkatli olun: ondan açıkça itiraz isteyin.
+Kararları test etmek, kör noktaları belirlemek, varsayımları stres testine sokmak. Başarılı liderlerin nadiren sahip olduğu şey, **cevaba politik bir yatırımı olmayan, dürüst ve bilgili bir muhataptır**. Claude bu role yaklaşabilir, ama onaylama eğilimine (sycophancy) karşı dikkatli olun: ondan açıkça itiraz isteyin. Araçta ya da yolda düşünmek istiyorsanız mobil uygulamadaki [sesli mod](/wiki/araclar/voice-mode/) bu iş için kullanışlıdır (beta; Türkçe desteği belgelenmemiştir, önce deneyin).
 
 ### Senaryo Planlama
 
@@ -64,7 +64,7 @@ Bu tek yetenek bilgilenme biçimini değiştirir ve çoğu zaman oturumun en bü
 
 **Uzun belgeleri, raporları ve araştırmaları özetleme.** Lider daha fazla çalışarak değil, **okumayı Claude'a bırakıp önemli olanı yüzeye çıkararak** daha hızlı ve daha iyi bilgilenmiş bir karar verici olur.
 
-**Pazar ve sektör istihbaratı.** Son haberler, rakip hareketleri ve düzenleyici güncellemelerden, liderin sektörü için yapılandırılmış bir durum analizi.
+**Pazar ve sektör istihbaratı.** Son haberler, rakip hareketleri ve düzenleyici güncellemelerden, liderin sektörü için yapılandırılmış bir durum analizi. Daha derin tarama için [Research Mode](/wiki/yetenekler/research-mode/) kaynaklı rapor çıkarır; kaynak linklerini açıp doğrulayın.
 
 **Toplantı ve görüşme hazırlığı.** Önemli görüşmelerden önce hızlı brifing: kiminle buluşuyor, ne bilmesi gerekir, hangi sonucu istiyor, neyi söylememeli.
 
@@ -107,6 +107,7 @@ Claude düşünmeyi yapılandırır ve ön değerlendirmeyi yazar.
 - [Hafıza (Memory)](/wiki/yetenekler/memory/): organizasyonel bağlam (org chart, kilit paydaşlar, stratejik öncelikler)
 - Web search: pazar istihbaratı
 - Tüm ilgili departman skill'leri (denetim sorumluluklarına göre)
+- **Claude Dashboards** (beta, ücretli planlar; Enterprise'ta yönetici açar): bağlı veri kaynağından sade bir soruyla canlı yönetim panosu. Hızlı soru içindir, onaylı raporlamanın yerine geçmez ([Claude Dashboards](/wiki/yetenekler/claude-design/#claude-dashboards-ve-claude-motion-beta))
 
 **Connector'lar:**
 1. **Microsoft 365 / Google Workspace**: belgeler
@@ -132,7 +133,7 @@ Yönetim kurulu toplantısı Perşembe. Ön paket 4 PDF, toplam 147 sayfa. Hakan
 
 **Adım 3:** Hakan Bey brifingi 10 dakikada okur ve toplantıya hazır girer.
 
-**Süre:** 147 sayfayı elle okumak 3-4 saat; brifing 5-10 dakikada hazırlanır, kritik rakamların kaynak sayfadan kontrolüyle 15-30 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Hakan Bey'in 147 sayfayı gerçekten okuyup okumayacağı ise belli değildir.
+**Süre:** 147 sayfayı elle okumak 3-4 saat; brifing 5-10 dakikada hazırlanır, kritik rakamların kaynak sayfadan kontrolüyle 15-30 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ## Sık Hatalar
 

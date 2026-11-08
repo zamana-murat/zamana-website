@@ -1,6 +1,6 @@
 ---
 title: "Yükseköğretim için Claude: öğrenci, akademisyen ve idare"
-seoTitle: "Üniversiteler için Claude: Öğrenme Modu, Araştırma, KVKK"
+seoTitle: "Üniversiteler için Claude: Öğrenme Modu ve KVKK"
 description: "Üniversitelerde Claude: öğrenme modu, ders materyali, araştırma ve idari işler. Akademik dürüstlük, öğrenci verisi, KVKK ve Türkiye'den kampüs anlaşması yolu."
 eyebrow: "Sektör"
 lead: "Anthropic'in üniversiteler için sunduğu Claude, öğrenciye cevabı hazır vermek yerine düşündüren bir öğrenme modu, akademisyene ders materyali ve araştırma desteği, idari birimlere yazışma ve bütçe yardımı sunar. Kampüs anlaşması Anthropic'in eğitim ekibiyle yapılır, fiyat açık değildir."
@@ -18,14 +18,14 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Şirket içi yapay zeka politikası (wiki)", href: "/wiki/temeller/sirket-ici-politika/" }
 order: 130
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
 
 Claude for Education, Anthropic'in üniversitelere yönelik paketidir. Aynı Claude'u öğrenciye, akademisyene, araştırmacıya ve idari personele tek bir kurumsal anlaşmayla açar. Kurum hesabı olduğu için yönetim paneli, merkezi faturalama ve veri koşulları tek elden yürür. Kaynak sayfa üç vaatte toplanıyor: üniversite düzeyinde karmaşık konularla basitleştirmeden çalışmak, öğrencinin düşünmesini güçlendirmek ve kurumların uyum beklentilerini karşılamak.
 
-Paketin en çok konuşulan parçası **öğrenme modu**. Bu modda Claude iyi bir asistan hoca gibi davranır: ödevi çözmek yerine soru sorar, öğrencinin hangi adımda takıldığını bulmaya çalışır, ipucunu ders notuna yönlendirir. Anthropic öğrenme modunu Nisan 2025'te yalnız üniversite paketiyle tanıttı. Basına yansıyan haberlere göre sonradan claude.ai'deki stil menüsüne de eklendi; biz bunu Anthropic'in kendi sayfasından doğrulayamadık ve menüde bugün de olup olmadığı teyitsiz. Claude Code'daki "Learning" ve "Explanatory" çıktı stilleri ise resmi belgelerde yer alıyor. Kurum anlaşmasının asıl farkı yönetim, veri koşulları ve ders sistemleriyle bağlantıdır.
+Paketin en çok konuşulan parçası **öğrenme modu**. Bu modda Claude iyi bir asistan hoca gibi davranır: ödevi çözmek yerine soru sorar, öğrencinin hangi adımda takıldığını bulmaya çalışır, ipucunu ders notuna yönlendirir. Anthropic öğrenme modunu Nisan 2025'te yalnız üniversite paketiyle tanıttı. Basına yansıyan haberlere göre sonradan claude.ai'deki stil menüsüne de eklendi. Anthropic stil menüsünü skill'lere taşıyor ve "Learning" bir skill olarak kalıyor; bu geçişin ayrıntısını Anthropic'in kendi yardım makalesinden doğrulayamadık. Claude Code'daki "Learning" ve "Explanatory" çıktı stilleri ise resmi belgelerde yer alıyor. Kurum anlaşmasının asıl farkı yönetim, veri koşulları ve ders sistemleriyle bağlantıdır.
 
 ![Aynı ödev sorusuna standart yanıt ile öğrenme modu yanıtının yan yana karşılaştırması: solda Claude çözümü adım adım veriyor, sağda öğrenciye yönlendirici soru soruyor ve ders notuna ipucu veriyor](/images/kurumsal/yuksekogretim/ogrenme-modu.webp)
 
@@ -55,8 +55,19 @@ Kurum içi kullanım politikası için başlangıç şablonu: [Şirket içi yapa
 
 - **Satın alma yolu:** Kampüs çapında anlaşma için kaynak sayfadaki "eğitim ekibiyle iletişim" formu kullanılır. Anthropic'in Türkiye'de ofisi veya resmi temsilcisi yok; görüşme ve sözleşme doğrudan Anthropic'le, ödeme ABD doları ile yapılır. Eğitim planının fiyatı yayımlanmıyor.
 - **Devlet üniversiteleri:** Kamu kurumu oldukları için yurt dışından hizmet alımı, bütçe kalemi ve kamu verisinin yurt dışında işlenmesi ayrı değerlendirilir. Ayrıntı: [Kamu](/kurumsal/kamu/).
-- **Daha küçük başlangıç:** Bir bölüm veya araştırma grubu, kampüs anlaşmasını beklemeden Team planıyla başlayabilir. Fen ve mühendislik alanındaki baş araştırmacılar için ücretsiz Team planı programı da var, ayrıntısı [Yaşam bilimleri](/kurumsal/yasam-bilimleri/) sayfasında. Programın sayfasında ülke kısıtı yazmıyor ama Türkiye'deki bir üniversiteden kabul edilen bir başvuruyu doğrulayamadık.
-- **Ücretsiz eğitim içeriği:** Anthropic Academy'de öğrenciler, eğitimciler ve yapay zeka okuryazarlığını öğretecekler için ücretsiz "AI Fluency" kursları var. İçerik İngilizce.
+- **Daha küçük başlangıç:** Bir bölüm veya araştırma grubu, kampüs anlaşmasını beklemeden Team planıyla başlayabilir. Doğa bilimleri, matematik, bilgisayar bilimi ve mühendislik alanındaki baş araştırmacılar için 12 ay ücretsiz standart koltuklu Team programı da var (1 ile 25 koltuk), ayrıntısı aşağıdaki "Bilim insanları için Team planı" bölümünde ve [Yaşam bilimleri](/kurumsal/yasam-bilimleri/) sayfasında. Programın sayfasında ülke kısıtı yazmıyor ama Türkiye'deki bir üniversiteden kabul edilen bir başvuruyu doğrulayamadık.
+- **Ücretsiz eğitim içeriği:** Claude Academy'de (eski adı Anthropic Academy) öğrenciler, eğitimciler ve yapay zeka okuryazarlığını öğretecekler için ücretsiz "AI Fluency" kursları var. İçerik İngilizce.
+- **Öğrenci elçileri (Claude Campus):** Anthropic'in kampüs programında üç kol var: lisans öğrencileri bir Claude Builder Club yönetir, yüksek lisans öğrencileri yapay zeka ve toplum üzerine "Claude Campus Conversations" buluşmaları düzenler, doktora öğrencileri ve doktora sonrası araştırmacılar Claude Science atölyeleri yürütür. Seçilenlere 3.600 dolar burs, Anthropic ekibiyle atölye ve etkinlik veriliyor; lisans kulüplerine API kredisi verilebiliyor. Program Eylül 2026'dan Haziran 2027'ye bir öğretim yılı sürüyor. Kaynak sayfaya göre dünyanın her yerinden öğrenci başvurabiliyor; 18 yaş ve okunan ülkede çalışma izni şartı var, yüksek lisans ve doktora kollarında ilk aşamada daha dar bir okul listesi seçilebiliyor. **2026 güz dönemi başvuruları kapandı** (1-12 Eylül); sonraki dönem kaynak sayfadan izlenmeli: [claude.com/programs/campus](https://claude.com/programs/campus). Bu program bir öğrenci etkinliği; kurumun Claude erişimi yerine geçmez.
+
+## Bilim insanları için Team planı
+
+Anthropic, araştırma gruplarına kampüs anlaşmasından bağımsız, indirimli bir Team planı sunuyor: [Team plan for scientists](https://claude.com/programs/team-plan-for-scientists).
+
+- **Kimler başvurabilir:** Akredite üniversitelerde ve kâr amacı gütmeyen araştırma enstitülerinde doğa bilimleri, matematik, bilgisayar bilimi ve mühendislik alanında çalışan baş araştırmacılar (PI); araştırma ekibi sonradan eklenebilir. Şirketler, sözleşmeli araştırma kuruluşları ve sanayi Ar-Ge ekipleri uygun değil.
+- **Ne kadar:** 12 aylık promosyon süresince Standard koltuk ücretsiz, Premium koltuk aylık 15 dolar ya da yıllık 180 dolar. Program 1 ile 25 koltuk için; daha büyük gruplar satış ekibine yönlendiriliyor. 12 ay dolunca plan güncel Team fiyatıyla yenileniyor, kontenjan sınırlı.
+- **Neler dahil:** Claude Science, Claude Code, Cowork, projeler, dosya oluşturma, araştırma connector'ları ve tek oturum açma (SSO).
+- **Süreç:** Başvuru sonucu genelde 5-7 iş gününde geliyor.
+- **Türkiye:** Program sayfasında ülke kısıtı yazmıyor, ancak Türk üniversitelerinin uygunluğunu doğrulayamadık ve Türkiye'den kabul edilmiş bir başvuru görmedik. Başvurmadan önce kurumunuzun yurt dışı hizmet alımı ve araştırma verisi kurallarını da kontrol edin; kişisel veri ya da gizli proje verisi için KVKK ve proje sözleşmesi ayrıca değerlendirilir.
 
 ## Öğrenci verisi, KVKK ve yaş sınırı
 

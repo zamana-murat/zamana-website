@@ -1,7 +1,7 @@
 ---
 title: "Claude Mobil: iOS ve Android Uygulamaları"
 seoTitle: "Claude Mobil Uygulama: iOS ve Android Rehberi"
-description: "Claude'un iPhone ve Android uygulamaları, mobil Cowork betası ve Dispatch. Kamera, telefondan görev verme ve masaüstüyle farkı."
+description: "Claude'un iPhone ve Android uygulamaları, mobil Cowork ve telefondan görev verme, eski Dispatch. Kamera, sesli giriş ve masaüstüyle farkı."
 tags:
   - araclar
   - mobil
@@ -21,7 +21,7 @@ Mobil Claude, **arada kalan zamanı çalışma zamanına çeviren** araçtır. B
 
 Tipik kullanımlar:
 
-- **E-posta taslağı**: telefonun klavye dikte özelliğiyle konuşup yazdırın, Claude düzgün bir e-posta hâline getirsin (Claude'un kendi sesli modu Türkçe desteklemiyor, aşağıya bakın)
+- **E-posta taslağı**: telefonun klavye dikte özelliğiyle konuşup yazdırın, Claude düzgün bir e-posta hâline getirsin (Claude'un kendi sesli modunda Türkçe desteği doğrulanmadı, aşağıya bakın)
 - **Fotoğraf çekip soru sorma**: el yazısı not, kartvizit, tabela, ürün etiketi, makine ekranı
 - **Toplantı öncesi hızlı brief**: "Demirtaş Metal son altı ayda neler yaptı, bana üç dakikalık özet ver"
 - **Yolda sohbete devam**: masaüstünde başlattığınız konuşmayı telefonda devam ettirme
@@ -34,7 +34,7 @@ Mobil uygulamaların eksikleri masaüstüne göre belirgin. Karar verirken bilin
 |---|---|---|
 | Sohbet, dosya yükleme | ✅ | ✅ |
 | [Projects](/wiki/araclar/projects/) erişimi | ✅ | ✅ |
-| Sesli giriş ([Voice Mode](/wiki/araclar/voice-mode/), beta, Türkçe yok) | ✅ | ✅ |
+| Sesli giriş ([Voice Mode](/wiki/araclar/voice-mode/), beta, Türkçe doğrulanmadı) | ✅ | ✅ |
 | Kamera ile görsel | ✅ | Yok |
 | [Cowork](/wiki/araclar/cowork-modu/) | ✅ Beta (Pro, Max, Ultra, Team; Enterprise'da yönetici açtıysa; 7 Tem 2026'dan beri) | ✅ (tam sürüm masaüstünde) |
 | [Skills](/wiki/yetenekler/skills/) (.docx, .xlsx, .pptx üretme) | ✅ Mobil Cowork betasında var | ✅ |
@@ -45,13 +45,13 @@ Mobil uygulamaların eksikleri masaüstüne göre belirgin. Karar verirken bilin
 
 Kısaca: **mobil "hızlı giriş ve takip" için, masaüstü "üretim ve otomasyon" için.**
 
-Mobil Cowork 7 Temmuz 2026'dan beri beta olarak çalışıyor. Connector'lar, skill'ler, zamanlanmış görevler ve cihazlar arası devam mobilde de var. Yerel dosya erişimi ve tarayıcı kullanımı kısmi; sandbox'ta kod çalıştırma ve computer use masaüstü uygulamasına bağlı. Cowork ile sohbet 16 Eylül 2026'dan itibaren tek Claude içinde birleşiyor (kademeli yayılım, ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/)). Hafıza sohbet ve Cowork arasında ortak, bkz. [Memory](/wiki/yetenekler/memory/). Mobilde etkileşimli uygulamalar (interactive apps) da 25 Mart 2026'dan beri var.
+Mobil Cowork 7 Temmuz 2026'dan beri beta olarak çalışıyor; telefondan görev atma Pro, Max, Ultra ve Team'de otomatik açık (aşağıda). Connector'lar, skill'ler, zamanlanmış görevler ve cihazlar arası devam mobilde de var. Yerel dosya erişimi ve tarayıcı kullanımı kısmi; sandbox'ta kod çalıştırma ve computer use masaüstü uygulamasına bağlı. Cowork ile sohbet 16 Eylül 2026'dan itibaren tek Claude içinde birleşiyor (kademeli yayılım, ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/)). Hafıza sohbet ve Cowork arasında ortak, bkz. [Memory](/wiki/yetenekler/memory/). Mobilde etkileşimli uygulamalar (interactive apps) da 25 Mart 2026'dan beri var.
 
 ## Sesli Mod (Voice Mode)
 
 Mobil uygulamada bir de **sesli mod** vardır (beta, tüm planlarda). Mikrofona basıp konuşursunuz, Claude sesle cevap verir; yazıya dökülmüş hâli de paralel olarak ekrana düşer. Kullanım, normal sohbet gibi planınızın limitinden düşer. Detay için [Voice Mode](/wiki/araclar/voice-mode/) sayfasına bakın.
 
-**Türkçe notu:** Voice mode Türkçe desteklemiyor. Anthropic'in dil listesinde Türkçe yok (İngilizce, Fransızca, Almanca ve birkaç dil var; tam liste Voice Mode sayfasında). Claude yazılı Türkçeyi iyi anlar ve yazar; Türkçe konuşarak iş vermek için telefonun kendi klavye dikte özelliğini kullanın, metni Claude'a yazılı gönderin. Genel kalite için [Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfasına bakın.
+**Türkçe notu:** Voice mode'un Türkçe desteği doğrulanmadı. Bilinen dil listesinde Türkçe yoktu; yardım sayfası artık tam liste vermiyor, ayrıntı Voice Mode sayfasında. Claude yazılı Türkçeyi iyi anlar ve yazar; Türkçe konuşarak iş vermek için telefonun kendi klavye dikte özelliğini kullanın, metni Claude'a yazılı gönderin. Genel kalite için [Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfasına bakın.
 
 İngilizce çalışıyorsanız sesli mod şu işlerde işe yarar:
 
@@ -73,27 +73,27 @@ Kamera kullanımının teknik tarafı için [Görsel ve Görüntü](/wiki/yetene
 
 ## Telefondan görev: mobil Cowork ve Dispatch
 
-Telefondan iş vermenin iki yolu var ve ikisi farklı durumda.
+Telefondan iş vermenin bugün geçerli yolu Cowork'ün kendisidir; eski Dispatch yalnız onu zaten kullananlarda kalıyor.
 
-**Mobil Cowork (beta, 7 Temmuz 2026'dan beri).** Pro, Max, Ultra ve Team planlarında; Enterprise'da yönetici açtıysa. Yeni kullanıcı için telefondan görev atmanın yolu budur. Connector'lar, skill'ler ve zamanlanmış görevler mobilde çalışır; yerel dosya ve tarayıcı erişimi kısmidir, masaüstü uygulamasının açık olmasına bağlıdır. 6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor, yani bu görevler için bilgisayarın açık kalması gerekmiyor. Mobilde [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) hem izlenir hem kurulur: pazartesi sabah 09:00'da hazırlanan haftalık raporun bittiğini telefonunuzdan görürsünüz.
+**Cowork'te telefondan görev (yeni kullanıcı için yol budur).** Telefondan görev atma Pro, Max, Ultra ve Team planlarında **otomatik açık**, Enterprise'ta kurum isterse açılır. Görev bulutta çalışır, dizüstünüz kapalıyken de sürer. Mobil ve web Cowork 7 Temmuz 2026'dan beri beta (Pro, Max, Ultra, Team; Enterprise'da yönetici açtıysa): connector'lar, skill'ler, zamanlanmış görevler ve cihazlar arası devam mobilde çalışır. Bulut görevinin bilgisayarınızdaki dosyaya ne zaman ulaşabildiği [Cowork Modu](/wiki/araclar/cowork-modu/#hangi-planda-nerede-çalışır) sayfasında anlatılır. Mobilde [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) hem izlenir hem kurulur: pazartesi sabah 09:00'da hazırlanan haftalık raporun bittiğini telefonunuzdan görürsünüz.
 
-**Dispatch (sınırlı beta, yeni kullanıcılara kapalı).** Dispatch, telefonunuzla masaüstü bilgisayarınız arasında kalıcı bir konuşma hattı kurar: görevi telefondan yazarsınız, işi masaüstündeki Claude kendi dosya ve araçlarınızla yapar, sonucu telefona mesaj olarak alırsınız. Pro, Max ve Ultra'da Cowork için sınırlı beta olarak duruyor ve Anthropic'in yardım sayfasına göre yeni kullanıcılara açık değil; zaten kullanan hesaplar devam edebiliyor. Bu yüzden yeni bir hesap açıp Dispatch'e güvenerek iş akışı kurmayın, eğitimde ya da ekip düzeninde "herkes kullanabilir" varsayımıyla ona bağımlı olmayın. Pro, Max ve Ultra'da yeni Cowork görevlerinin bulutta çalışmasının Dispatch'i nasıl etkilediği henüz duyurulmadı; yardım merkezinden kontrol edin.
+**Dispatch (eski özellik, yeni kullanıcılara kapalı).** Dispatch, telefonunuzla masaüstü bilgisayarınız arasında kalıcı bir konuşma hattı kurar: görevi telefondan yazarsınız, işi masaüstündeki Claude kendi dosya, plugin ve connector'larınızla yapar, sonucu telefona mesaj olarak alırsınız. Bazı Pro, Max ve Ultra hesaplarında sınırlı beta olarak duruyor; Anthropic'in yardım sayfasına göre yeni kullanıcılara açık değil, zaten kullanan hesaplar devam edebiliyor. Yardım sayfası yeni kullanıcıyı bu eşleştirme yerine bulutta Cowork'e yönlendiriyor. Bu yüzden yeni bir hesapta Dispatch'e güvenerek iş akışı kurmayın; eğitimde ve ekip düzeninde telefondan görevi yukarıdaki Cowork yoluyla anlatın.
 
-Dispatch'in farkı, işi **kendi masaüstünüzdeki** klasör, plugin ve connector'larla yaptırmasıdır: bilgisayar ağır işi yapar, telefon uzaktan kumanda olur. Konuşma bağlamı görevler arasında korunur, Claude önceki görevlerinizi ve tercihlerinizi hatırlar.
+**Claude Duet (research preview, şimdilik yalnız ABD).** 21 Ekim 2026'da duyurulan Duet, ana Claude uygulamasından ayrı bir **proaktif ajan uygulamasıdır** (iOS, Android ve claude.ai). Kendi sanal makinesinde çalıştığı için telefonunuzun ya da bilgisayarınızın açık olması gerekmez; bağlı hesaplarınızı birkaç saatte bir kontrol eder, günlük özet gönderir ve yalnız dikkat gerektiren bir şey olduğunda yazar. Hafızanızı, skill'lerinizi ve bağlı uygulamalarınızı Claude hesabınızdan taşır. Mesaj göndermeden, ödeme yapmadan, belge imzalamadan ya da bir şey silmeden önce ne yapacağını gösterip onayınızı bekler; menkul kıymet alım satımı ve hesaplar arası para transferini onayla bile yapmaz. Pro, Max ve Ultra'da (Team ve Enterprise'ta yok), Opus 5.5 ile çalışır, kullanım plan limitinizden düşer; erişim **ABD'deki abonelerden başlayarak bekleme listesiyle** açılıyor. Türkiye'den kullanılabilirliği belirsiz olduğu için iş akışınızı ona göre kurmayın. Kaynak: [Introducing Claude Duet](https://claude.com/resources/articles/claude-duet) (Anthropic).
 
 ### Ne tür görevler atılır?
 
 Genel kural: **masaüstünüzde otururken Claude'a söyleyeceğiniz bir şeyse**, telefondan da söyleyebilirsiniz. Örnekler:
 
-- *"Tedarikçi klasöründeki fiyat dosyalarını çıkar, karşılaştırma tablosu yap"*: masaüstünde yapılır, sonuç telefonunuza gelir
+- *"Tedarikçi klasöründeki fiyat dosyalarını çıkar, karşılaştırma tablosu yap"*: klasör bilgisayarınızdaysa masaüstü uygulaması açık ve bağlı olmalı, sonuç telefonunuza gelir
 - *"Geçen haftaki Slack mesajlarımı tara, ihracat projesinin durumunu özetle"*: Slack connector'ından çeker
 - *"Proje klasöründe bıraktığım kurul paketinden tek sayfalık özet hazırla"*
 - *"Haftalık operasyon raporunu çalıştır"*: önceden kurduğunuz zamanlanmış görevi tetikler
 - *"Ege Tekstil toplantı notlarından PowerPoint sunum yap"*: pptx skill'i ile dosyayı üretir
 
-Telefondan konuşarak iş vermek istiyorsanız Türkçe için klavye diktesini kullanın; sesli mod Türkçe desteklemiyor ve kendisi Cowork görevi başlatmaz, bkz. [Voice Mode](/wiki/araclar/voice-mode/).
+Telefondan konuşarak iş vermek istiyorsanız Türkçe için klavye diktesini kullanın; sesli modun Türkçe desteği doğrulanmadı. Sesli mod birleşik Claude arayüzünde görevlerde de çalışır, ayrı Cowork ve Claude Code ekranlarında ise yalnız dikte vardır, bkz. [Voice Mode](/wiki/araclar/voice-mode/).
 
-### Dispatch gereksinimleri ve sınırlar
+### Dispatch gereksinimleri ve sınırlar (yalnız mevcut kullanıcılar)
 
 - Pro, Max veya Ultra aboneliği ve halihazırda Dispatch erişimi olan bir hesap
 - Güncel Claude Desktop (macOS ve Windows; yardım sayfası Linux'u da listeliyor) ve güncel mobil uygulama
@@ -101,7 +101,7 @@ Telefondan konuşarak iş vermek istiyorsanız Türkçe için klavye diktesini k
 - Dakikadan birkaç saate kadar süren görevler için uygundur, gerçek zamanlı izleme gereken işler için değil
 - Kurulum bir kez yapılır (yaklaşık 5 dakika): Cowork'te "Dispatch" bölümünden başlatılır, ekrandaki QR kodu telefonla taramanız yeterlidir
 
-**Güvenlik notu:** Dispatch'te telefondan gönderdiğiniz görev, masaüstünüzdeki dosyalara ve bağlı connector'lara erişir. Telefonunuzu kilitsiz bırakmayın, görevleri yazarken içine gereksiz kişisel veri koymayın ve masaüstünde hangi klasörü Claude'a açtığınızı bilin. Genel çerçeve için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+**Güvenlik notu:** Telefondan gönderdiğiniz görev (Cowork ya da Dispatch), masaüstünüzdeki dosyalara ve bağlı connector'lara erişir. Telefonunuzu kilitsiz bırakmayın, görevleri yazarken içine gereksiz kişisel veri koymayın ve masaüstünde hangi klasörü Claude'a açtığınızı bilin. Genel çerçeve için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 
 ## Gizlilik ve KVKK
 

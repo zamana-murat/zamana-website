@@ -1,6 +1,6 @@
 ---
 title: "Fatura, KDV ve Türkiye'de Muhasebeleştirme"
-description: "Claude aboneliğinin Türkiye'de KDV, stopaj ve muhasebe yansıması. Yurt dışı dijital hizmet vergisi, fatura formatı, gider gösterimi."
+description: "Claude aboneliğinin Türkiye'de KDV, stopaj ve muhasebe yansıması: 2 No'lu beyanname, fatura formatı, gider gösterimi ve mali müşavire sorulacaklar."
 tags:
   - temeller
   - fatura
@@ -60,6 +60,8 @@ Stopaj, yurt dışına ödeme yaparken **sizin** kesip vergi dairesine yatırdı
 
 **Not:** Stopaj ve KDV iki ayrı konudur. Stopaj yapılsa da yapılmasa da KDV için 2 No'lu beyan ayrıca değerlendirilir. Bu bölüm genel bilgidir; kendi durumunuz için **mali müşavirinizle doğrulayın**.
 
+**Dijital Hizmet Vergisi (7194 sayılı Kanun) ile karıştırmayın:** o vergi hizmeti sunan şirketin vergisidir ve sizin stopaj ya da KDV yükümlülüğünüzü değiştirmez.
+
 ## Anthropic Faturası (Invoice) Nasıl Görünür?
 
 Anthropic her ödeme sonrası **e-posta ile invoice gönderir.** PDF formatında. İçeriği:
@@ -99,7 +101,7 @@ Eğer Claude aboneliği bir **gerçek kişi (şahıs)** olarak alındıysa ve ş
 - KDV ve stopaj sorumluluğu değişir: gelir vergisi mükellefi serbest meslek erbabı için farklı kurallar geçerlidir
 - Şirkete sonradan masraf olarak yansıtılması istenirse invoice ve dekont eksiksiz saklanmalı; bu kaydın şirket giderine nasıl işleneceğini mali müşavirinizle netleştirin
 
-Bireysel kullanıcıların çoğu Claude aboneliğini kendi adlarına alıyor. Sonradan şirketleştirmek için aşağıdaki Billing bilgilerini güncelleyin; geçmiş dönem faturalarının nasıl işleneceğini mali müşavirinize sorun.
+Bireysel kullanıcıların çoğu Claude aboneliğini kendi adlarına alıyor. Sonradan şirketleştirmek için yukarıdaki "Fatura İsteme" bölümünde anlatılan Billing bilgilerini güncelleyin; geçmiş dönem faturalarının nasıl işleneceğini mali müşavirinize sorun.
 
 ## Plan Maliyeti: Bütçe Tahmini
 
@@ -107,15 +109,16 @@ Bireysel kullanıcıların çoğu Claude aboneliğini kendi adlarına alıyor. S
 
 | Plan | Aylık (USD) | Yıllık (USD) |
 |---|---|---|
-| Pro × 1 kişi | $20 | $240 |
-| Max (eski adı Max 5x) × 1 kişi | $100 | $1.200 |
-| Pro × 6 kişi | $120 | $1.440 |
+| Pro × 1 kişi | $20 (yıllık ödemede $17) | $240 (yıllık peşin ödemede $200) |
+| Max (eski adı Max 5x) × 1 kişi | $100 (yalnız aylık) | $1.200 |
+| Ultra (eski adı Max 20x) × 1 kişi | $200 (yalnız aylık) | $2.400 |
+| Pro × 6 kişi | $120 (yıllık ödemede $102) | $1.440 (yıllık peşin ödemede $1.200) |
 | Max × 6 kişi (12 ay boyunca Max'ta kalırsa) | $600 | $7.200 |
 | Karma (1. ay Max, sonra Pro) × 6 kişi | ~$27/kişi/ay ortalama | ~$1.920 |
 | Team Standard × 5 koltuk | $125 (yıllık ödemede $100) | $1.500 (yıllık ödemede $1.200) |
 | Enterprise (koltuk başı $20/ay + kullanım API fiyatıyla) | Sabit değil, kullanıma göre değişir | Sabit değil |
 
-Tablodaki rakamlar vergi hariçtir. İki kalemi bütçede ayrıca düşünün: Pro, Max, Ultra ve Team'de kota bitince açabileceğiniz **kullanım kredisi** (kullandıkça öde) ve Enterprise'ın kullanıma bağlı faturası. İkisi de önceden kesin tahmin edilemeyen değişken kalemdir; Team ve Enterprise'ta yönetici panelinden harcama tavanı koyabilirsiniz. Ayrıntı: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/).
+Tablodaki rakamlar vergi hariçtir. Max ve Ultra yalnız aylık ödenir, yıllık indirim yoktur. Karma senaryo aylık Pro fiyatıyla hesaplanmıştır. İki kalemi bütçede ayrıca düşünün: Pro, Max, Ultra ve Team'de kota bitince açabileceğiniz **kullanım kredisi** (kullandıkça öde) ve Enterprise'ın kullanıma bağlı faturası. İkisi de önceden kesin tahmin edilemeyen değişken kalemdir; Team ve Enterprise'ta yönetici panelinden harcama tavanı koyabilirsiniz. Ayrıntı: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/).
 
 **Pratik öneri:** Claude'a yeni başlayanlara **ilk ay Max ($100/ay)** öneriyoruz (zorunlu değil, Pro ile başlamak da olur). Pro plan ($20/ay) limitine yeni kullanıcı hızlı çarpar ve "çalışmıyor" hissi yaratır. İkinci aydan itibaren gerçek kullanıma göre Pro'ya inilebilir. Detay [Planlar](/wiki/temeller/planlar/).
 

@@ -1,6 +1,6 @@
 ---
 title: "Sözlük: Claude ve AI Terimleri Türkçe"
-seoTitle: "Claude Sözlüğü: Yapay Zeka ve Claude Terimleri Türkçe"
+seoTitle: "Claude Sözlüğü: Yapay Zeka Terimleri Türkçe"
 description: "Claude ve yapay zeka terimlerinin sade Türkçe karşılıkları: effort, thinking, Cowork, CLAUDE.md, geçici sohbet, Research, KVKK ve 90'dan fazla terim."
 tags:
   - sozluk
@@ -36,7 +36,7 @@ Anthropic'in modellerin yetenek seviyesini sınıflandırma sistemi (ASL-1 ile A
 ## B
 
 **Bağlayıcı (Connector)**
-Claude'u Gmail, Drive, Slack, Notion, CRM gibi üçüncü taraf servislere bağlayan entegrasyon; çoğu OAuth ile yetkilendirilir. Resmi dizinde yaklaşık 900 hazır connector bulunur, MCP ile özel connector da eklenebilir. Logo, Mikro, Paraşüt gibi Türk iş araçlarında resmi connector durumu farklıdır. Detay: [Connectors](/wiki/araclar/connectors/), [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) ve [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/).
+Claude'u Gmail, Drive, Slack, Notion, CRM gibi üçüncü taraf servislere bağlayan entegrasyon; çoğu OAuth ile yetkilendirilir. Resmi dizinde 1.000'den fazla hazır connector bulunur, MCP ile özel connector da eklenebilir. Logo, Mikro, Paraşüt gibi Türk iş araçlarında resmi connector durumu farklıdır. Detay: [Connectors](/wiki/araclar/connectors/), [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) ve [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/).
 
 **Bağlam Penceresi (Context Window)**
 Claude'un bir sohbette aynı anda görebildiği ve akıl yürütebildiği toplam metin. Plana göre değil modele göre değişir: Fable 5.1, Opus 5.5 ve Sonnet 5.5 için 1M token, Haiku 5.5 için 1M, legacy Haiku 4.5 için 200K. Uzun belgede sorunuzu belgeden sonra, en sona yazmak yanıtı iyileştirir. Detay: [Context ve Compaction](/wiki/yetenekler/context-compaction/) ve [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/).
@@ -61,41 +61,65 @@ Anthropic'in ücretsiz kurs platformu (academy.claude.com, eski adıyla Anthropi
 **Claude Chat**
 claude.ai adresindeki standart tarayıcı / mobil arayüzü. Kurulum gerektirmez. Detay: [Claude Chat](/wiki/araclar/claude-chat/).
 
+**Claude Code**
+Claude'un terminalde ve geliştirici ortamlarında (VS Code, Cursor, JetBrains) çalışan kodlama aracı; kullanım kotası sohbetle ortaktır, Free'de yoktur. Geliştirici aracıdır, iş eğitiminin kapsamı dışındadır. Detay: [Kurumlar için Claude Code](/kurumsal/claude-code/).
+
+**Claude Dashboards**
+Bağlı veri kaynağından (Snowflake, BigQuery, Salesforce gibi) sade bir soruyla canlı pano kuran ve veri değiştikçe güncel tutan özellik (8 Ekim 2026, beta). Ücretli planlarda; Enterprise'ta yönetici açar. Detay: [Claude Design](/wiki/yetenekler/claude-design/).
+
+**Claude Design / Slides / Docs**
+Konuşma içinden tasarım, sunum ve belge üretip doğrudan düzenleme araçları. 8 Ekim 2026'dan beri beta değil, Free dahil tüm planlarda. Ayrı claude.ai/design sitesi 14 Aralık 2026'da kapanır. Detay: [Claude Design](/wiki/yetenekler/claude-design/).
+
 **Claude Desktop**
 Windows, macOS ve Linux için yerel uygulama; Cowork'ün yerel dosya ve tarayıcı özelliklerinin ön koşulu. Detay: [Claude Desktop](/wiki/araclar/claude-desktop/).
+
+**Claude Duet**
+Claude'un kendi sanal makinesinde arka planda çalışıp dikkat gerektiren işi size getirdiği, ayrı bir proaktif ajan uygulaması (21 Ekim 2026, research preview). Pro, Max ve Ultra'da, şimdilik ABD'de bekleme listesiyle; mesaj gönderme, ödeme, imza ve silme öncesi onay ister.
 
 **Claude Enterprise**
 Koltuk başı aylık 20 USD (yıllık faturalı) artı kullanımın API fiyatıyla ayrıca faturalandığı plan; RBAC, audit log, HIPAA yapılandırması, DPA. Bağlam penceresi diğer ücretli planlarla aynıdır (1M). Detay: [Planlar](/wiki/temeller/planlar/).
 
+**Claude for Google Workspace**
+Google Docs, Sheets ve Slides içinde yan panelde çalışan Claude eklentisi (6 Ekim 2026, genel beta). Açık dosyayı okur ve onayınızla yerinde düzenler. Ücretli planlarda. Detay: [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
+
 **Claude Free**
-Ücretsiz plan; sıkı kullanım limitleri; 5 Project'e kadar; Research, Claude Code ve Cowork yok. Detay: [Claude Planları](/wiki/temeller/planlar/).
+Ücretsiz plan; sıkı kullanım limitleri; 5 Project'e kadar; Research, Claude Code ve Cowork yok, Claude Design, Slides ve Docs var. Detay: [Claude Planları](/wiki/temeller/planlar/).
+
+**Claude in Chrome**
+Claude'un masaüstü Google Chrome'da yan panelde açılıp sayfayı okuduğu, tıklayıp form doldurabildiği tarayıcı uzantısı. 26 Ağustos 2026'dan beri tüm ücretli planlarda genel kullanımda; diğer Chromium tarayıcılarda ve mobilde yoktur. Anthropic kullanımı hâlâ riskli sayar; hassas sitelerde ve geri alınamaz işlemlerde dikkatli olun. Detay: [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
 
 **Claude Marketplace**
 23 Eylül 2026'da açılan katalog; connector, eklenti, ajan, iş ortağı ürünleri ve hizmet ortaklarını tek yerde toplar. Dizindeki connector sayısıyla çelişmez, sayılan birimler farklıdır. Detay: [Connectors](/wiki/araclar/connectors/) ve [Claude Marketplace](/kurumsal/marketplace/).
 
 **Claude Max**
-Aylık 100 USD bireysel plan (eski adı Max 5x), Pro'nun 5 katı limit. Yeni başlayan kullanıcının ilk ayı için önerilir, agresif keşif ritminde Pro limiti yetmez. Ay 2+ kullanıma göre Pro'ya indirilebilir. Aylık 100 USD API kredisi içerir. Detay: [Planlar](/wiki/temeller/planlar/).
+Aylık 100 USD bireysel plan (eski adı Max 5x), Pro'nun 5 katı limit. Yeni başlayan kullanıcının ilk ayı için önerilir, agresif keşif ritminde Pro limiti yetmez. Zorunlu değildir; ay 2+ kullanıma göre Pro'ya indirilebilir. Aylık 100 USD API kredisi içerir (Claude Console'daki API kullanımı için; Claude Code ve Cowork'ü kapsamaz). Detay: [Planlar](/wiki/temeller/planlar/).
 
 **CLAUDE.md**
 Çalışma klasöründe duran kalıcı talimat dosyası. Yerel Cowork oturumu (masaüstü, klasör bağlı) ve Claude Code okur; sohbet okumaz, bulut Cowork oturumunda okunduğu belgelenmemiştir. Sohbetteki karşılığı için bkz. Instructions for Claude. Detay: [CLAUDE.md Nedir?](/wiki/claude-md/nedir/).
+
+**Claude Motion**
+Rapordan ya da veriden kısa video gibi oynayan animasyonlu anlatım üreten özellik (8 Ekim 2026, beta). Video üretim modeli değil, kodla animasyon; MP4 indirilir. Yalnız Team ve Enterprise. Detay: [Claude Design](/wiki/yetenekler/claude-design/).
 
 **Claude Pro**
 Aylık 20 USD bireysel plan. Steady-state hafif kullanım için uygun. Sonnet 5.5 ve Cowork dahil. Kullanım limiti 5 saatlik pencere ve haftalık limitle işler. Detay: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) ve [Planlar](/wiki/temeller/planlar/).
 
 **Claude Tag**
-Slack'te @Claude yazarak Claude'u ekip arkadaşı gibi etiketleme özelliği (23 Haziran 2026). Team ve Enterprise planlarında vardır. Teams için resmi bir sürümü duyurulmadı. Detay: [Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/).
+Slack'te @Claude yazarak Claude'u ekip arkadaşı gibi etiketleme özelliği (23 Haziran 2026). Team ve Enterprise planlarında vardır. Microsoft Teams sürümü için bekleme listesi var, henüz yayında değil. Detay: [Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/).
 
 **Claude Team**
 Kurumsal plan, Standard koltuk aylık 25 USD (yıllıkta 20), Premium koltuk aylık 125 USD (yıllıkta 100), en az 2 koltuk; paylaşılan Project'ler; SSO; yönetici kontrolleri. Detay: [Planlar](/wiki/temeller/planlar/).
 
 **Claude Ultra**
-Aylık 200 USD bireysel plan (eski adı Max 20x), Pro'nun haftalık 10 katı limit; doğrulanmış hesapta 5 saatlik oturum limiti yoktur. Çok yoğun, sürekli kullanım için. Aylık 200 USD API kredisi içerir. Detay: [Planlar](/wiki/temeller/planlar/).
+Aylık 200 USD bireysel plan (eski adı Max 20x), Pro'nun haftalık 10 katı limit; doğrulanmış hesapta 5 saatlik oturum limiti yoktur. Çok yoğun, sürekli kullanım için. Aylık 200 USD API kredisi içerir (Claude Console'daki API kullanımı için; Claude Code ve Cowork'ü kapsamaz). Detay: [Planlar](/wiki/temeller/planlar/).
 
 **Code Execution**
 Claude'un sohbet içinde Python ya da JavaScript kodu yazıp sandbox'ta çalıştırması: gerçek hesap, veri analizi, grafik, xlsx/pptx/docx/pdf dosya üretimi. Free dahil tüm planlarda vardır; Team ve Enterprise'ta owner kapatabilir. Geçici sohbette çalışmaz. Detay: [Code Execution](/wiki/yetenekler/code-execution/).
 
+**Compliance API**
+Yöneticilerin sohbet, dosya, proje ve etkinlik kayıtlarına programatik erişimle denetim ve uyum raporu çıkarmasını sağlayan arayüz. Yalnız Enterprise'ta vardır (Public Sector hariç), Team'de yoktur; yalnız Primary Owner açar. Detay: [Takım ve Admin](/wiki/temeller/takim-ve-admin/).
+
 **Computer Use**
-Claude'un herhangi bir yazılım GUI'si ile etkileşim kurma yeteneği: ekran görüntüleri ile görsel giriş, fare / klavye ile çıkış. Research preview aşamasındadır, yalnızca Pro, Max ve Ultra'da, Claude Desktop içinde çalışır. Detay: [Computer Use](/wiki/yetenekler/computer-use/).
+Claude'un herhangi bir yazılım GUI'si ile etkileşim kurma yeteneği: ekran görüntüleri ile görsel giriş, fare / klavye ile çıkış. Beta aşamasındadır (ilk çıkışta research preview idi), yalnızca Pro, Max ve Ultra'da, Claude Desktop'ta Cowork ve Claude Code içinde çalışır; Team ve Enterprise'ta yoktur. Detay: [Computer Use](/wiki/yetenekler/computer-use/).
 
 **Constitutional AI**
 Anthropic'in geliştirdiği AI eğitim yöntemi: modelin "anayasa"ya göre kendi çıktılarını eleştirip iyileştirmesi. Detay: [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/).
@@ -104,7 +128,7 @@ Anthropic'in geliştirdiği AI eğitim yöntemi: modelin "anayasa"ya göre kendi
 Bağlam penceresi dolmaya yaklaşırken eski mesajların otomatik özetlenmesi, uzun oturumları ayakta tutar. claude.ai'de code execution açıkken çalışır, limitten düşmez. Detay: [Context ve Compaction](/wiki/yetenekler/context-compaction/).
 
 **Cowork**
-Claude'un çok adımlı otonom çalışma biçimi. Masaüstünde ücretli planlarda genel kullanıma açık, web ve mobilde beta. 16 Eylül 2026'dan beri sohbetle tek Claude içinde birleşiyor (kademeli yayılım). 6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni görevler bulutta çalışır. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
+Claude'un çok adımlı otonom çalışma biçimi. Masaüstünde ücretli planlarda genel kullanıma açık, web ve mobilde beta. 16 Eylül 2026'dan beri sohbetle tek Claude içinde birleşiyor (kademeli yayılım; Enterprise'ta birleşik arayüz 23 Ekim 2026'dan beri genel kullanımda). 6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni görevler bulutta çalışır. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
 
 **Cowork Project**
 Cowork içinde kendi klasörü, talimatı, bağlamı ve proje hafızası olan, yalnızca bilgisayarda duran çalışma alanı. claude.ai'deki Project ile aynı şey değildir. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
@@ -120,7 +144,7 @@ Bkz. Effort.
 ## D
 
 **Dispatch**
-Telefonunuzdan masaüstü Cowork oturumunuza görev göndermenizi sağlayan özellik. Pro, Max ve Ultra için sınırlı beta, yeni kullanıcıya kapalı. Detay: [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
+Telefonunuzdan masaüstü Cowork oturumunuza görev göndermenizi sağlayan özellik. Pro, Max ve Ultra için sınırlı beta, yeni kullanıcıya kapalı. Cowork'ün telefondan görev atama özelliği bundan ayrıdır: Pro, Max, Ultra ve Team'de otomatik açıktır, Enterprise'ta kurum isterse açılır. Detay: [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
 
 **DPA (Data Processing Agreement)**
 Veri İşleme Sözleşmesi: KVKK ve GDPR kapsamında veri işleyenle yapılan, kurumsal dağıtım için gereken sözleşme. Anthropic'in DPA'sı yalnızca ticari ürünlerde (Team, Enterprise, API) geçerlidir ve ticari şartlara otomatik dahildir. Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/).
@@ -150,6 +174,9 @@ Geçmişe ve hafızaya kaydedilmeyen, modelin eğitiminde kullanılmayan sohbet.
 Cowork'teki eski adı; artık profil talimatıyla aynı ayardır (Settings > General > "Instructions for Claude"). Bkz. Instructions for Claude.
 
 ## H
+
+**Hook (Prompt Hook'u, Güvenlik Merkezi)**
+Enterprise'ta Claude'dan giden istemleri ya da araç çağrılarını kendi güvenlik aracınıza (ör. DLP) kontrole gönderen mekanizma. 5 Kasım 2026'da gelen güvenlik paketinin parçasıdır; güvenlik merkezi ise ayarları Anthropic'in önerdiği yapılandırmayla karşılaştırır (beta). Detay: [Takım ve Admin](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026).
 
 **Halüsinasyon (Hallucination)**
 Claude'un emin ama yanlış bilgi üretmesi. Detay: [Claude'un Sınırları](/wiki/temeller/sinirlamalar/).
@@ -200,11 +227,14 @@ Niyet Mektubu, uluslararası ticarette alıcı veya satıcının açılış pozi
 **MCP (Model Context Protocol)**
 Açık standart, Claude ↔ dış servis bağlantıları için. Detay: [MCP Nedir?](/wiki/mcp/nedir/).
 
+**Masaüstü Uzantısı (.mcpb)**
+Claude Desktop'a tek tıkla kurulan yerel MCP sunucu paketi (eski adı .dxt). Team ve Enterprise'ta owner izin listesi açarsa yalnız onaylı uzantılar kurulabilir. Detay: [MCP Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/).
+
 **Memory**
 Claude'un otomatik biriktirdiği kişisel bilgi katmanı. Sohbet hafızası 25 Ağustos 2026'dan beri bulut Cowork görevlerinde kullanılır; yerel Cowork oturumları sohbet hafızasını kullanmaz, Cowork projesinin ayrı hafızası vardır. Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'ta varsayılan kapalıdır. CLAUDE.md'den farklı; otomatik öğrenir. Detay: [Memory](/wiki/yetenekler/memory/).
 
 **Memory Skill**
-`productivity:memory-management`: iki-katmanlı kalıcı bilgi sistemi oluşturur. Detay: [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/).
+`productivity:memory-management`: iki-katmanlı kalıcı bilgi sistemi oluşturur. Detay: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ## N
 
@@ -228,7 +258,7 @@ Sağlık alanında hastanın bilgilendirilmiş izni. Detay: [Sağlık](/wiki/dep
 Skill'ler, MCP connector'ları ve subagent'ların kurulabilir paketi. Detay: [Skills](/wiki/yetenekler/skills/).
 
 **Private Marketplace (Özel Marketplace)**
-Yalnızca şirketin onayladığı araçlardan oluşan, Enterprise kontrollü plugin kataloğu. Genel katalog için bkz. Claude Marketplace.
+Yalnızca şirketin onayladığı plugin'lerden oluşan, kurum içi dağıtım kataloğu. Team ve Enterprise'ta owner kurar (Cowork ve Skills açık olmalı); gruba göre farklı kurulum kuralı yalnız Enterprise'tadır. Genel katalog için bkz. Claude Marketplace. Detay: [Skills](/wiki/yetenekler/skills/).
 
 **Project (claude.ai)**
 Claude Chat'teki kalıcı çalışma alanı, bilgi tabanı ve proje talimatıyla. Free'de en çok 5 proje açılır. Detay: [Projects](/wiki/araclar/projects/).
@@ -313,6 +343,9 @@ Bir agentik döngünün tamamı için Claude'a verilen istişari token bütçesi
 **TCO (Total Cost of Ownership)**
 Toplam Sahip Olma Maliyeti: sadece satın alma fiyatı değil, tüm yaşam döngüsü maliyetleri dahil. Detay: [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/).
 
+**Telefondan Görev (Cowork)**
+Telefondaki Claude uygulamasından Cowork'e iş atama; görev bulutta çalışır, dizüstünüz kapalıyken de sürer. Pro, Max, Ultra ve Team'de otomatik açıktır, Enterprise'ta kurum isterse açılır. Eski Dispatch'ten ayrıdır. Detay: [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
+
 **Token**
 Yaklaşık 0.75 İngilizce kelime; bağlam penceresi boyutunun ölçüm birimi. Detay: [Prompt ve Token](/wiki/temeller/prompt-ve-token/).
 
@@ -334,7 +367,7 @@ Claude'un görselleri (belge, grafik, ekran görüntüsü, fotoğraf) görme, an
 Sanal makine, Claude'un kod çalıştırdığı izole sandbox. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
 
 **Voice Mode**
-Claude'un ses giriş / çıkış arayüzü (beta); web, mobil ve masaüstünde, tüm planlarda mevcut. Türkçe, yardım sayfasındaki desteklenen diller arasında görünmüyor. Detay: [Voice Mode](/wiki/araclar/voice-mode/).
+Claude'un ses giriş / çıkış arayüzü (beta); web, mobil ve masaüstünde, tüm planlarda mevcut. Türkçe desteği doğrulanmadı, uygulamadaki dil menüsünden kontrol edin. Detay: [Voice Mode](/wiki/araclar/voice-mode/).
 
 ## W
 
@@ -364,4 +397,4 @@ Bir API sözleşme düzenlemesi: Anthropic istem ve yanıtları, yanıt döndük
 
 ---
 
-**Sözlük yaşayan bir belgedir.** Claude yeni özellikler ekledikçe, modeller değiştikçe ve yeni kullanım senaryoları ortaya çıktıkça güncellenir. Son güncelleme: 2026-10-06.
+**Sözlük yaşayan bir belgedir.** Claude yeni özellikler ekledikçe, modeller değiştikçe ve yeni kullanım senaryoları ortaya çıktıkça güncellenir. Son güncelleme: 2026-11-08.

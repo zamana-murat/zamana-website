@@ -60,7 +60,6 @@ Fable 5.1, **genel kullanıma açık en güçlü modeldir.** Saatler hatta günl
 
 - Siber güvenlik ve biyoloji konularındaki bazı sorular otomatik olarak Opus modellerine yönlendirilir. Yönlendirilen istekler Fable fiyatıyla ücretlendirilmez.
 - Fable'ı kullanmak varsayılan olarak 30 günlük veri saklamayı gerektirir (güvenlik izlemesi için). Kişisel veri ya da gizli iş verisi işleyecekseniz [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına ve şirket politikanıza bakın.
--
 
 <a id="opus"></a>
 
@@ -78,13 +77,13 @@ Not: Anthropic, Opus 5.5'i hem kodlama hem bilgi işi için "günlük çalışma
 
 Sonnet 5.5, Opus'un daha hızlı ve daha ucuz tamamlayıcısıdır; **iyi tanımlanmış gündelik işler** için tasarlanmıştır: yazışma ve rapor taslakları, analiz, belge ve slayt hazırlama, sınırlı kapsamlı araştırma, inceleme. Anthropic'e göre Sonnet 5'ten %30 hızlıdır ve çoğu iş için %30'a kadar daha ucuzdur. Yazısı daha net ve doğrudandır, bu yüzden taslaklar daha az temizlik ister. Şablonu verirseniz o şablona uygun slaytlar kurar.
 
-Free dahil herkes Sonnet 5.5 ile claude.ai'de (web, iOS, Android) sohbet edebilir. Günlük işin büyük kısmı için başlangıç noktası budur. Sonuç zayıf ya da yüzeysel kalırsa aynı işi Opus ile deneyin.
+Free dahil herkes claude.ai'de (web, iOS, Android) Sonnet ile sohbet edebilir; Free'de hangi Sonnet sürümünün sunulduğunu Anthropic'in fiyat sayfası belirtmiyor. Günlük işin büyük kısmı için başlangıç noktası budur. Sonuç zayıf ya da yüzeysel kalırsa aynı işi Opus ile deneyin.
 
 <a id="haiku"></a>
 
 ## Haiku
 
-Haiku 5.5, ailenin **en hızlı ve en hafif** modelidir (API'de Ekim 2026'da güncel aile arasına girdi; Haiku 4.5 artık legacy). Bağlam penceresi 1M, çıktı sınırı 128K. Sohbette (claude.ai) hangi Haiku sürümünün seçilebildiği resmi olarak doğrulanmadı. Hız kritik olan, hacmin yüksek olduğu işlerde öne çıkar: canlı müşteri sohbetleri, çok sayıda kaydı tek tek sınıflandırma, alt ajanlar. Free planda da kullanılabilir.
+Haiku 5.5, ailenin **en hızlı ve en hafif** modelidir (7 Ekim 2026'da çıktı; önceki Haiku 4.5 hâlâ kullanılabiliyor). Bağlam penceresi 1M, çıktı sınırı 128K. Anthropic'in claude.ai effort ayarı sayfası Haiku 5.5'i de listeliyor. Hız kritik olan, hacmin yüksek olduğu işlerde öne çıkar: canlı müşteri sohbetleri, çok sayıda kaydı tek tek sınıflandırma, alt ajanlar. Free planda da kullanılabilir.
 
 **Ne zaman:** Basit bir soru, kısa çeviri ya da hızlı bir özet için yeter. Derin analiz, uzun belge ya da hata kaldırmayan bir iş için Sonnet ya da Opus tercih edin. Not: Haiku 5.5 API'de en erken 7 Ekim 2027'de emekliye ayrılabilir.
 

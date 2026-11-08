@@ -6,7 +6,7 @@ tags:
   - araclar
   - connectors
   - entegrasyon
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Connector'lar, Claude'u Gmail, Google Drive, Calendar, Notion, GitHub gibi iş sistemlerinize tek tıkla bağlayan resmi entegrasyonlardır.** Kuruluşunuzda bu sistemleri zaten kullanıyorsanız, Claude'u onlarla konuşur hâle getirmek için kod yazmanıza, kurulum yapmanıza gerek yok.
@@ -23,7 +23,7 @@ Mantığı şu: bir defa OAuth ile bağlarsınız (Google'a giriş yapar gibi), 
 
 | | Dizin connector'ı | Özel connector | Masaüstü uzantısı |
 |---|---|---|---|
-| Ne? | Resmi dizinde hazır duran sunucu (yaklaşık 900 tane) | Kendi uzak sunucunuzun URL'si | Claude Desktop'a tek tıkla kurulan yerel paket (.mcpb) |
+| Ne? | Resmi dizinde hazır duran sunucu (1.000'den fazla) | Kendi uzak sunucunuzun URL'si | Claude Desktop'a tek tıkla kurulan yerel paket (.mcpb) |
 | Nerede çalışır? | Sağlayıcının uzak sunucusunda | Uzak sunucuda; herkese açık internetten erişilebilir olmalı | Sizin bilgisayarınızda |
 | Kurulum | Tek tık (OAuth) | Customize > Connectors, URL girilir | Settings > Extensions |
 | Kim ekler? | Siz; Team ve Enterprise'ta bazılarını önce owner açar | Team ve Enterprise'ta yalnız owner, üye "Connect" ile bağlanır | Siz; owner izin listesi açabilir |
@@ -34,9 +34,9 @@ Kısaca: dizinde varsa hazır connector'ı bağlayın. Dizinde yoksa özel conne
 
 ## Hangi Connector'lar Var?
 
-Resmi dizin (claude.com/connectors) Ekim 2026 itibarıyla yaklaşık 900 connector listeliyor ve sürekli genişliyor. 23 Eylül 2026'da açılan Claude Marketplace ise connector'ları, eklentileri, ajanları ve iş ortağı ürünlerini tek katalogda toplar; Anthropic "2.000'den fazla bağlayıcı ve eklenti" diyor (dizindeki connector sayısıyla çelişmez, sayılan birimler farklı). Kurumun Marketplace'ten satın alma tarafı için [Claude Marketplace](/kurumsal/marketplace/) sayfasına bakın. Güncel seçki için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın. Yaygın olanlar:
+Resmi dizin (claude.com/connectors) Kasım 2026 itibarıyla 1.000'den fazla connector listeliyor ve sürekli genişliyor. 23 Eylül 2026'da açılan Claude Marketplace ise connector'ları, eklentileri, ajanları ve iş ortağı ürünlerini tek katalogda toplar; Anthropic Eylül'deki açılışta "2.000'den fazla bağlayıcı ve eklenti" demişti, katalog o günden beri büyüyor (dizindeki connector sayısıyla çelişmez, sayılan birimler farklı). Kurumun Marketplace'ten satın alma tarafı için [Claude Marketplace](/kurumsal/marketplace/) sayfasına bakın. Güncel seçki için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın. Yaygın olanlar:
 
-- **Google Drive / Docs / Sheets**: dosya okuma, içerik özetleme, çapraz arama
+- **Google Drive / Docs / Sheets**: dosya okuma, içerik özetleme, çapraz arama (dosyanın içinde yan panelde çalışmak için ayrı Google Workspace eklentisi var, bkz. [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/))
 - **Gmail**: e-posta okuma, taslak hazırlama (gönderim çoğu plan kuralında onaylı)
 - **Google Calendar**: toplantı listeleme, takvim analizi, brief üretme
 - **Notion**: sayfa okuma, veritabanı sorgulama
@@ -63,7 +63,7 @@ Türk şirketlerinin muhasebe ve ERP yazılımları için durum şöyle: **Para�
 
 ### Logo Dökümünden Mutabakat ve Kur Güncelleme
 
-Logo ya da Mikro'dan aldığınız cari hareket dökümünü Excel olarak yükleyin: *"Bu döküm ile e-Fatura listesini karşılaştır, eşleşmeyen faturaları listele."* Ya da: *"Varsayımlardaki dolar kurunu TCMB'nin güncel kuruyla değiştir, maliyet tablosunu yeniden hesapla."* Burada resmi bir Logo connector'ı yok; iş, dışa aktarılan dosya üzerinden yürür. Çıkan rakamları kaynakla karşılaştırmak sizin işiniz. Excel içinde çalışmak için [Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/) sayfasına bakın.
+Logo ya da Mikro'dan aldığınız cari hareket dökümünü Excel olarak yükleyin: *"Bu döküm ile e-Fatura listesini karşılaştır, eşleşmeyen faturaları listele."* Ya da: *"Varsayımlardaki dolar kurunu TCMB'nin güncel kuruyla değiştir, maliyet tablosunu yeniden hesapla."* Burada resmi bir Logo connector'ı yok; iş, dışa aktarılan dosya üzerinden yürür. Çıkan rakamları kaynakla karşılaştırmak sizin işiniz. Excel içinde çalışmak için [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/) sayfasına bakın.
 
 ### Toplantı Sonrası Aksiyon Çıkarımı
 
@@ -81,7 +81,7 @@ Logo ya da Mikro'dan aldığınız cari hareket dökümünü Excel olarak yükle
 
 **Hız.** Büyük Drive/e-posta hesaplarında ilk arama yavaş olabilir. Claude akıllıca filtreler ama sınırsız değil.
 
-**Yazma yetkisi sınırlı.** Çoğu connector öncelikle okuma odaklı. Yazma (e-posta gönderme, dosya oluşturma) bazı connector'larda var, bazılarında yok. Ayrıca sizin onaylamanız gereken bir adım olabilir.
+**Yazma yetkisi sınırlı.** Çoğu connector öncelikle okuma odaklı. Yazma (e-posta gönderme, dosya oluşturma) bazı connector'larda var, bazılarında yok. Ayrıca sizin onaylamanız gereken bir adım olabilir (aşağıda "Araç izinleri").
 
 **Görünürlük sınırı.** Claude yalnızca sizin yetkinizdeki içerikleri görür. Ortak Drive'da sizinle paylaşılmamış bir klasör → Claude görmez. Bu güvenlik açısından iyi haber, kullanım açısından bilinmesi gereken bir kısıt.
 
@@ -91,9 +91,9 @@ Logo ya da Mikro'dan aldığınız cari hareket dökümünü Excel olarak yükle
 
 ## Nasıl Eklenir?
 
-claude.ai içinde:
+claude.ai içinde (bireysel planlar):
 
-1. **Settings → Connectors** menüsüne girin
+1. **Customize → Connectors** menüsüne girin (eski arayüzde Settings → Connectors)
 2. Eklemek istediğiniz servisi seçin (örn. Google Drive)
 3. **Connect** butonuna basın → tarayıcıda servisin OAuth ekranı açılır
 4. İzinleri okuyun, onaylayın
@@ -101,11 +101,15 @@ claude.ai içinde:
 
 Bağlantıyı koparmak: aynı menüden **Disconnect**. O servise erişim derhâl sona erer.
 
+Team ve Enterprise'ta connector'ları owner **Organization settings → Connectors**'tan açar; üye kendi hesabıyla Customize → Connectors'tan "Connect" der.
+
+**Araç izinleri.** Claude bir connector aracını ilk kullandığında "Allow once", "Always allow" ya da "Deny" diye sorar; araçları sohbetteki "Search and tools" menüsünden tek tek kapatabilirsiniz. "Always allow"u yalnız gözetimsiz çalışmasına güvendiğiniz araçlarda seçin. Team ve Enterprise'ta owner, her connector için salt okunur ve yazma/silme araçlarını "Always allow", "Needs approval" ya da "Blocked" diye kuruluş geneline ayarlar, kullanıcı bunu geçersiz kılamaz (örneğin e-postayı arasın ama göndermesin). Claude'daki izin, kaynak sistemdeki yetkinizi aşmaz, yalnız daraltır.
+
 [Claude Desktop](/wiki/araclar/claude-desktop/) içinde de connector'lar aynı arayüzden yönetilir.
 
 ## Plan Kapsamı
 
-Connector'lar Free dahil tüm planlarda kullanılabilir. Team ve Enterprise'ta bazı connector'ları önce yönetici etkinleştirir. Plan karşılaştırması için [Claude Connectors](/claude/connectors/) ve [Planlar](/wiki/temeller/planlar/), yönetici ayarları için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfaları.
+Connector'lar Free dahil tüm planlarda kullanılabilir; Free'de en çok 1 özel connector eklenir. Team ve Enterprise'ta bazı connector'ları önce yönetici etkinleştirir, özel connector'ı yalnız owner ekler. Plan karşılaştırması için [Claude Connectors](/claude/connectors/) ve [Planlar](/wiki/temeller/planlar/), yönetici ayarları için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfaları.
 
 ## Dizinden mi, Özel Bağlantı mı?
 

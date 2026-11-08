@@ -1,12 +1,12 @@
 ---
 title: "Türkçe Prompt Yazma: Dile Özgü Teknikler"
-seoTitle: "Türkçe Prompt Yazma: Claude İçin 12 Teknik ve Şablon"
+seoTitle: "Türkçe Prompt Yazma: Claude İçin 12 Teknik, Şablon"
 description: "Türkçe prompt yazarken kayıt seçimi, sen/siz, sayı ve tarih yazımı, klişe iş dili ve İngilizceye kayma sorunları için teknikler ve şablon."
 tags:
   - prompting
   - turkce
   - dil
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Türkçe prompt yazmak İngilizce yazmaktan farklı dikkat ister.** Claude Türkçe'yi iyi anlar, ama Türkçe yazılan prompt İngilizce yazılan prompttan farklı tepki üretebilir: sondan eklemeli yapı, tonlama nüansları ve iş hayatındaki kalıplar farklıdır. Bu sayfa on iki Türkçe'ye özgü tekniği ve bir şablonu anlatır.
@@ -51,10 +51,10 @@ Uzun bir Türkçe sohbette Claude bazen İngilizce'ye kayar, özellikle teknik t
 Net bir dil kuralını **kalıcı talimata** yazın. Nereye yazacağınız, Claude'u nerede kullandığınıza bağlıdır:
 
 - **Claude sohbetinde** (web, masaüstü, mobil): Settings > General altındaki "Instructions for Claude" alanı tüm sohbetlerde geçerlidir. Kural yalnız bir iş için gerekiyorsa o işin [Projesi](/wiki/araclar/projects/)ndeki proje talimatına yazın
-- **Cowork'te:** global talimat (her oturumda) ya da klasör talimatı (o klasörle çalışırken)
-- **Claude Code'da:** [CLAUDE.md](/wiki/claude-md/nedir/) dosyası (Claude Code'un mekanizmasıdır)
+- **Cowork'te:** her oturum için yine profil talimatı (Cowork'ün eski "Global instructions" ayarı buna birleşti); bir klasörle çalışırken klasördeki [CLAUDE.md](/wiki/claude-md/nedir/) dosyası (yerel oturumda okunur)
+- **Claude Code'da:** CLAUDE.md dosyası
 
-Hangi talimatın nerede geçerli olduğu ve hafızayla farkı için [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasına bakın. Talimat metni şöyle olabilir:
+Hangi talimatın nerede geçerli olduğu ve hafızayla farkı için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın. Talimat metni şöyle olabilir:
 
 ```
 Dil
@@ -109,7 +109,7 @@ Claude'un eğitim verisindeki Türkçe iş dili klişe yüklü. Aşağıdakiler 
 
 [Pazarlama departmanı](/wiki/departmanlar/pazarlama/) ve [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfalarında alternatif kalıplar var.
 
-Yasak kelime listesini kalıcı talimata (profil talimatı, proje talimatı, Cowork talimatı ya da Claude Code'da CLAUDE.md; yerler için 2. teknikteki listeye bakın) koymak en pratik çözümdür:
+Yasak kelime listesini kalıcı talimata (profil talimatı, proje talimatı ya da yerel Cowork ve Claude Code'da klasördeki CLAUDE.md; yerler için 2. teknikteki listeye bakın) koymak en pratik çözümdür:
 
 ```
 Yasak Kalıplar
@@ -245,5 +245,5 @@ Kurallar:
 - [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/): Örnekle öğretme
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Tipik prompting hataları
 - [CLAUDE.md / Hata Ayıklama](/wiki/claude-md/hata-ayiklama/): Dil sorunları çözümü
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat ve hafıza katmanları
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat ve hafıza katmanları
 

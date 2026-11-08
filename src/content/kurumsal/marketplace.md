@@ -1,6 +1,6 @@
 ---
 title: "Claude Marketplace: iş ortağı çözümlerini kuruma almak"
-seoTitle: "Claude Marketplace: Kurumlar İçin Değerlendirme Rehberi"
+seoTitle: "Claude Marketplace: Kurumlar İçin Rehber"
 description: "Claude Marketplace'te connector, eklenti, Claude tabanlı ürünler ve hizmet ortakları var. Türk kurumu için satın alma, veri akışı, KVKK ve BT onayı notları."
 eyebrow: "Ekosistem"
 lead: "Claude Marketplace, Claude ile çalışan üçüncü taraf çözümlerin tek vitrini: araçlarınızı bağlayan connector ve eklentiler, iş ortaklarının Claude tabanlı ürünleri ve kurulum yapan hizmet ortakları. Kurumsal tarafta asıl yenilik, bazı ürünlerin Anthropic taahhüdünüzden ödenebilmesi."
@@ -18,15 +18,15 @@ related:
   - { label: "Takım ve admin (wiki)", href: "/wiki/temeller/takim-ve-admin/" }
   - { label: "Müşteri hikâyeleri", href: "/kurumsal/musteriler/" }
 order: 170
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
 
-Claude Marketplace, Anthropic'in claude.com/marketplace adresinde topladığı iş ortağı kataloğu. 23 Eylül 2026'da bugünkü haliyle açıldı ([haberimiz](/haberler/2026-09-23-claude-marketplace/)). Üç bölümü var:
+Claude Marketplace, Anthropic'in claude.com/marketplace adresinde topladığı iş ortağı kataloğu. 23 Eylül 2026'da açıldı ([haberimiz](/haberler/2026-09-23-claude-marketplace/)); 4 Kasım 2026'da 14 yeni ortak ürünün eklenmesiyle ortak ürünü sayısı 25'i aştı ([haberimiz](/haberler/2026-11-04-claude-marketplace-yeni-ajanlar/)). Üç bölümü var:
 
-- **Connector ve eklentiler:** Claude'u Google, Microsoft, Atlassian, Notion, Salesforce gibi araçlara bağlayan bileşenler. Anthropic'in duyurusuna göre 2.000'den fazla. Bu sayı bağlayıcı ve eklentinin toplamı; yalnız connector dizini yaklaşık 900 kayıt. Ayrıntı için [Connectors](/claude/connectors/) ve [Plugins](/claude/plugins/) sayfalarımıza bakın.
-- **Ajanlar ve ürünler:** İş ortaklarının Claude üzerine kurduğu hazır yazılımlar. Kaynak sayfada kod (Cursor, GitLab, Vercel, Factory), veri (Snowflake, Gamma), hukuk (Harvey, Legora), finans (Hebbia) ve güvenlik (CrowdStrike) kategorileri listeleniyor.
+- **Connector ve eklentiler:** Claude'u Google, Microsoft, Atlassian, Notion, Salesforce gibi araçlara bağlayan bileşenler. Marketplace sayfasına göre 2.000'den fazla. Bu sayı bağlayıcı ve eklentinin toplamı; Kasım 2026'da dizin sayfası 1.094 connector ve 529 plugin gösteriyor. Ayrıntı için [Connectors](/claude/connectors/) ve [Plugins](/claude/plugins/) sayfalarımıza bakın.
+- **Ajanlar ve ürünler:** İş ortaklarının Claude üzerine kurduğu hazır yazılımlar. Kaynak sayfada kod (Cursor, GitLab, Vercel, Factory), veri (Snowflake, Gamma), hukuk (Harvey, Legora), finans (Hebbia) ve güvenlik (CrowdStrike) kategorileri listeleniyor. Kasım eklemeleri ağırlıkla güvenlik, geliştirme altyapısı, pazarlama ve üretkenlik ürünleri.
 - **Hizmet ortakları:** Claude'u kurumun geneline yaymak için kurulum ve danışmanlık yapan firmalar (Claude Partner Network). Global Premier, Preferred ve Select diye üç kademe var.
 
 Bu sayfa kurumsal tarafa odaklanıyor: ikinci ve üçüncü bölümü bir Türk kurumu nasıl değerlendirir.

@@ -63,14 +63,15 @@ Anthropic, AI modellerinin yetenek seviyelerini **AI Safety Levels (ASL)** siste
 
 Bu yaklaşım sektörde nadirdir ve kurumsal alıcılar için **denetlenebilir bir dürüstlük taahhüdüdür**.
 
-## 2026 Ortası Gelişmeleri
+## 2026 Gelişmeleri
 
 Anthropic'in kurumsal olgunlaşmasını gösteren güncel başlıklar:
 
 - **Halka arz yolu (SEC S-1):** Anthropic, 1 Haziran 2026'da ABD menkul kıymet düzenleyicisine (SEC) **gizli taslak kayıt beyanı (S-1)** sundu. Bu, ileride halka açılma (IPO) ihtimalinin ilk resmî adımıdır. Kurumsal alıcı için anlamı: şeffaflık ve mali denetim yükümlülüğü artan, kurumsallaşan bir tedarikçi.
 - **Project Glasswing:** Anthropic'in, en yetenekli modelinin erişimini kontrollü bir katılımcı grubuyla sınırladığı program. Mythos 5.1 yalnızca bu katılımcılara davetle açılıyor. Güvenlik tarafındaki ürünler için [Claude Security](/claude/security/) sayfasına bakın.
 - **Avrupa yayılımı:** 27 Mayıs 2026'da **Milano ofisinin** açılacağı duyuruldu (Avrupa'da Londra, Dublin, Paris, Zürih ve Münih'ten sonra altıncı ofis). Anthropic'in uluslararası kurumsal varlığı büyüyor.
-- **Ürün tarafı (Haziran-Eylül 2026):** Claude Tag (Slack, 23 Haziran), Cowork'ün web ve mobilde açılması (7 Temmuz), Claude in Chrome'un genel kullanıma açılması (26 Ağustos) ve 16 Eylül'de Cowork ile sohbetin tek Claude'da birleşmesi. Model tarafı için aşağıdaki tabloya bakın.
+- **Ürün tarafı (Haziran-Eylül 2026):** Claude Tag (Slack, 23 Haziran), Cowork'ün web ve mobilde açılması (7 Temmuz), Claude in Chrome'un genel kullanıma açılması (26 Ağustos) ve 16 Eylül'de Cowork ile sohbetin tek Claude'da birleşmesi.
+- **Ürün tarafı (Ekim-Kasım 2026):** Google Dokümanlar, E-Tablolar ve Slaytlar eklentisi (6 Ekim, genel beta), Design, Slides ve Docs'un betadan çıkıp Free dahil tüm planlara açılması (8 Ekim), Enterprise'ta birleşik Cowork ve sohbet arayüzünün genel kullanıma açılması (23 Ekim), Max 20x'in Ultra adını alması (30 Ekim dolayı) ve Enterprise güvenlik merkezi (5 Kasım). Model tarafı için aşağıdaki tabloya bakın.
 
 Bu gelişmeler, "Anthropic geçici bir startup mı, kalıcı bir kurumsal tedarikçi mi?" sorusuna kalıcılık yönünde cevap verir.
 
@@ -97,7 +98,7 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Eylül 2026 | **Claude Fable 5.1** (1 Eylül) | En güçlü genel model, 1M bağlam. Mythos 5.1 aynı yetenekte ama yalnızca Project Glasswing katılımcılarına davetle |
 | Eylül 2026 | **Claude Opus 5.5** (22 Eylül) | Fable 5.1 düzeyinde performans, Opus 5'ten yaklaşık %40 ucuz |
 | Eylül 2026 | **Claude Sonnet 5.5** (28 Eylül) | Günlük iş modeli; Sonnet 5'ten yaklaşık %30 hızlı |
-| Ekim 2026 | **Claude Haiku 5.5** | En hızlı ve en ucuz model, 1M bağlam; aylık API kredisi de Ekim'de Max ve Team planlarına geldi |
+| Ekim 2026 | **Claude Haiku 5.5** (7 Ekim) | En hızlı ve en ucuz model, 1M bağlam; aynı gün Max ve Team planlarına aylık API kredisi geldi |
 | Ekim 2026 (30 Ekim dolayı) | **Ultra planı** | Max 20x yeni adıyla Ultra, Max 5x yeni adıyla Max oldu; fiyatlar aynı |
 
 Tabloda yalnızca dönüm noktaları var; 4.5 ve 4.6 sürümleri (Opus 4.5, Sonnet 4.5, Opus 4.6 dahil) arada çıktı, ayrıntıları ve tarihleri Anthropic'in model sayfasında bulabilirsiniz.

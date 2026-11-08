@@ -38,7 +38,7 @@ Bu politika [Şirket Adı] çalışanlarının, taşeronlarının ve stajyerleri
   - Plan: [Şirket plan adı]; kullanıcı yönetimi [admin adı] tarafından yapılır
   - Bireysel hesapla (Pro/Max/Ultra) kullanılıyorsa Settings → Privacy altındaki "Claude'u geliştirmeye yardım et" ayarı kapalı olmalıdır
 
-Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesapla* iş amaçlı kullanım **bu politika ile onaylanmamıştır**. Onay isterseniz [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile başvurun.
+Diğer AI araçları (ChatGPT, Gemini, Copilot, Perplexity, vb.) *kişisel hesapla* iş amaçlı kullanım **bu politika ile onaylanmamıştır**. Enterprise planındaysanız kişisel Claude hesaplarına şirket ağından erişimi ağ düzeyinde engelleyebilirsiniz (Kasım 2026). Onay isterseniz [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) ile başvurun.
 
 ### 3. Hassas Veri Sınıflandırması ve Kullanım
 
@@ -91,16 +91,17 @@ Aşağıdakiler **iş amaçlı Claude kullanımında kesin yasaktır** (Bölüm 
 
 Claude'a araç yetkisi verdikçe risk de büyür. Bu bölüm o yetkilerin kim tarafından, hangi koşulda açılacağını belirler:
 
-- **Connector, MCP ve eklentiler:** Yalnız [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) onaylı listedeki olanlar kurulur. Connector'lar dış servislere Anthropic'in bulutu üzerinden ulaşır. Yazma yetkisi (e-posta, mesaj ya da dosya gönderme, düzenleme) okuma yetkisinden ayrı onaylanır. Yeni connector isteği BT'ye başvuruyla açılır
+- **Connector, MCP ve eklentiler:** Yalnız [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) onaylı listedeki olanlar kurulur. Connector'lar dış servislere Anthropic'in bulutu üzerinden ulaşır. Yazma yetkisi (e-posta, mesaj ya da dosya gönderme, düzenleme) okuma yetkisinden ayrı onaylanır; Team ve Enterprise'ta owner bunu connector başına "Always allow / Needs approval / Blocked" olarak kuruluş genelinde ayarlar ve kullanıcı geçersiz kılamaz. Yeni connector isteği BT'ye başvuruyla açılır
 - **Claude in Chrome:** [Rol veya birim listesi] kullanabilir. Bankacılık, sağlık kayıtları ve başkasıyla paylaşılmayacak şifreler gibi işlerde kullanılmaz. Claude'un sorduğu her onay okunur, beklenmedik davranışta işlem durdurulur ([Claude for Chrome](/claude/chrome/))
-- **Computer use (bilgisayar kontrolü):** Research preview aşamasındadır ve yalnız Pro, Max ve Ultra'da vardır. [Rol listesi] dışında kullanılmaz, ekranda gizli sınıfta veri açıkken başlatılmaz
+- **Computer use (bilgisayar kontrolü):** Beta aşamasındadır ve yalnız Pro, Max ve Ultra'da vardır (Team ve Enterprise'ta yok). [Rol listesi] dışında kullanılmaz, ekranda gizli sınıfta veri açıkken başlatılmaz
+- **Google Docs/Sheets/Slides eklentisi, Dashboards (beta) ve telefondan görev:** Eklenti açık dosyayı okuyup yerinde düzenler; Dashboards bağlı veri kaynağından canlı pano kurar; telefondan atılan görevler bulutta çalışır. Üçü de gizli sınıf veriye değebilir, bu yüzden hangi rollerin kullanacağını ve hangi veri kaynaklarının bağlanabileceğini yazın. Eklentiyi Google Workspace yöneticisi dağıtır ya da izin listesine alır, Enterprise'ta Dashboards owner açana kadar kapalıdır ([Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/#google-docs-sheets-ve-slides-eklentisi), [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch))
 - **Prompt injection:** Claude'un okuduğu bir web sayfası, e-posta ya da PDF içine gizlenmiş talimat olabilir. Güvenilmeyen kaynaklar üzerinde Claude'a eylem yetkisi verilmez; para, veri gönderme ya da silme gibi geri dönüşü olmayan adımlar insan onayı olmadan yapılmaz ([Sınırlamalar](/wiki/temeller/sinirlamalar/))
 
 ### 7. Hafıza, Paylaşım Linkleri ve Bulutta Çalışan Görevler
 
 - **Hafıza:** Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'ta varsayılan kapalıdır (owner kontrolünde). Şirket tercihini yazın: [açık / kapalı]. Açıksa hafızaya müşteri adı, kişisel veri ve gizli bilgi kaydettirilmez; hafıza listesi [üç ayda bir] gözden geçirilir
 - **Herkese açık paylaşım linkleri:** Sohbet ve artifact'ler link ile dışarı açılabilir. İç ya da gizli sınıf içerik için herkese açık link üretilmez; kurumsal planlarda bu izin admin ayarıdır ([Takım ve Admin](/wiki/temeller/takim-ve-admin/))
-- **Bulutta çalışan Cowork görevleri:** 6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır, "yalnızca bilgisayarınızda" seçeneği kalkar. Yerel dosyalarda gizli sınıf veri bulunan bilgisayarlarda bireysel Pro/Max/Ultra hesabıyla Cowork görevi başlatılmaz
+- **Bulutta çalışan Cowork görevleri:** 6 Ekim 2026'dan beri Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır, "yalnızca bilgisayarınızda" seçeneği kalktı. Yerel dosyalarda gizli sınıf veri bulunan bilgisayarlarda bireysel Pro/Max/Ultra hesabıyla Cowork görevi başlatılmaz
 
 ### 8. Çıktı Sorumluluğu
 
@@ -232,6 +233,7 @@ Yalnız BT onaylı connector, MCP ve eklentiler kurulur; yazma yetkisi ayrıca o
 Claude in Chrome: [roller]; bankacılık, sağlık kaydı, paylaşılmayacak şifre işlerinde yasak.
 Computer use: [roller]; ekranda gizli veri varken başlatılmaz.
 Güvenilmeyen kaynakta eylem yetkisi verilmez; geri dönüşsüz adımlar insan onayı ister.
+Google eklentisi, Dashboards ve telefondan görev: [roller]; bağlanacak veri kaynakları BT onaylı listeyle sınırlıdır.
 
 7. HAFIZA, PAYLAŞIM, BULUT GÖREVLERİ
 Hafıza: [açık/kapalı]; açıksa kişisel veri ve gizli bilgi kaydettirilmez.

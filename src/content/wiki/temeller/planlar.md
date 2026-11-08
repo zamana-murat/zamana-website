@@ -1,6 +1,6 @@
 ---
-title: "Claude Planları ve Fiyatları: Free, Pro, Max, Team, Enterprise"
-seoTitle: "Claude Paketleri ve Fiyatları 2026: Pro, Max, Team, TL'de Ne Ödersiniz"
+title: "Claude Planları ve Fiyatları: Free, Pro, Max, Ultra, Team, Enterprise"
+seoTitle: "Claude Planları 2026: Pro, Max, Ultra, Team"
 description: "Claude paketleri ve fiyatları 2026: Free, Pro, Max, Ultra, Team ve Enterprise farkları, Türkiye'de KDV ve kurla TL karşılığı, hangi plan kime uygun."
 tags:
   - temeller
@@ -12,7 +12,7 @@ tags:
 lastUpdated: "2026-11-08"
 ---
 
-Claude'un beş ana planı vardır. Plan seçimi sadece fiyatla ilgili değildir, hangi özelliklerin kullanılabilir olduğunu, özellikle **hangi modellere erişildiğini, connector'ları, paylaşılan projeleri ve kurumsal uyum araçlarını** doğrudan belirler.
+Claude'un altı ana planı vardır: Free, Pro, Max, Ultra, Team ve Enterprise. Plan seçimi sadece fiyatla ilgili değildir, hangi özelliklerin kullanılabilir olduğunu, özellikle **hangi modellere erişildiğini, connector'ları, paylaşılan projeleri ve kurumsal uyum araçlarını** doğrudan belirler.
 
 Bu sayfa her planın ne sunduğunu ve kime uygun olduğunu açıklar. Limitlerin nasıl işlediği için ayrı bir sayfa var: [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/).
 
@@ -47,10 +47,11 @@ Anthropic fiyatları USD ile gösterir. Türkiye'den ödeme yapan biri için pra
 
 Claude'u hiç kullanmamış bir kişi için giriş kapısıdır.
 
-- Web, iOS, Android ve masaüstünden erişim; model seçicide Haiku ve Sonnet (güncel: Sonnet 5.5)
+- Web, iOS, Android ve masaüstünden erişim; model seçicide Haiku ve Sonnet (Free'de hangi sürümün açık olduğu resmi olarak belirtilmez)
 - Web araması, belge analizi, görsel anlama, içerik üretimi
-- Connector'lar ve skills
+- Connector'lar ve skills (özel connector en çok 1)
 - 5 adete kadar Project oluşturma
+- Claude Design, Slides ve Docs (8 Ekim 2026'dan beri Free'de de açık)
 
 **Sınırlar:** Kullanım kotası dardır. Aktif bir kullanıcı kısa sürede limite ulaşır. Opus ve Fable erişimi yoktur. **Ciddi iş kullanımına uygun değildir**, Claude'u denemek ve "ne kadar faydalı olur" sorusuna cevap aramak için vardır.
 
@@ -66,17 +67,19 @@ Pro planında neler vardır:
 - Free'ye göre çok daha yüksek limit (5 saatlik pencere + haftalık limit; Ultra'da doğrulanmış hesapta 5 saatlik pencere yok) ve yoğun saatlerde öncelikli erişim
 - Sınırsız Project + her projede RAG zenginleştirmeli bilgi tabanı
 - **Cowork'e tam erişim** (skills, plugins, connector'lar, scheduled tasks, workspace klasörü). Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude'da birleşiyor, Pro, Max ve Ultra'da kademeli açılıyor ([haber](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/)). 6 Ekim 2026'dan itibaren yeni Cowork görevleri bulutta çalışır
-- Claude Design, Slides ve Docs (ücretli planlarda **beta**, Free'de yok)
-- Computer use (**research preview**, yalnızca Pro, Max ve Ultra) ve Dispatch (Pro, Max ve Ultra için sınırlı beta, yeni kullanıcıya kapalı); kullanmadan önce [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) ve [Cowork Modu](/wiki/araclar/cowork-modu/) sayfalarına bakın
+- Claude Design, Slides ve Docs (8 Ekim 2026'dan beri beta değil, Free dahil tüm planlarda) ve **Claude Dashboards** (bağlı veriden canlı pano, ücretli planlarda beta)
+- Computer use (**beta**, yalnızca Pro, Max ve Ultra; Team ve Enterprise'ta yok), telefondan Cowork'e görev atama (otomatik açık) ve eski Dispatch (Pro, Max ve Ultra için sınırlı beta, yeni kullanıcıya kapalı); kullanmadan önce [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) ve [Cowork Modu](/wiki/araclar/cowork-modu/) sayfalarına bakın
 - Claude Code (geliştirici aracı) **tüm ücretli planlarda** dahildir; kotası sohbetle ortaktır. Müfredatımızın kapsamı dışındadır, geliştirici ekipler içindir
 - Excel, PowerPoint ve Word içinde Claude (genel kullanıma açık), Outlook için public beta
+- Google Dokümanlar, E-Tablolar ve Slaytlar içinde Claude (Google Workspace eklentisi, 6 Ekim 2026'dan beri genel beta; Free'de yok)
+- Research (derin araştırma; Free'de yok)
 - Yeni özelliklere erken erişim
 
 **Kime uygun:** Tek çalışan bazında lisanslanan her iş profesyoneli. Tek kullanıcılı kurumsal kullanımın varsayılan tercihidir.
 
 ### Max (100 USD/ay) ve Ultra (200 USD/ay) Planları, kişi başı
 
-**Yeni başlayan kullanıcı için ideal başlangıç planıdır.** İlk ayın yoğun keşif temposunda Pro yetmez, Max bu sürtünmeyi ortadan kaldırır. Pro'nun limitine düzenli takılan güç kullanıcıları için de doğru plandır. Max ve Ultra yalnızca aylık ödenir, yıllık seçenek yoktur.
+**Yeni başlayan kullanıcı için ideal başlangıç planıdır.** İlk ayın yoğun keşif temposunda Pro çoğu zaman yetmez, Max bu sürtünmeyi ortadan kaldırır. Pro'nun limitine düzenli takılan güç kullanıcıları için de doğru plandır. Max ve Ultra yalnızca aylık ödenir, yıllık seçenek yoktur.
 
 Pro'daki her şey, ek olarak:
 
@@ -131,6 +134,7 @@ Büyük organizasyonlar için: maksimum kontrol, uyum ve güvenlik isteyen kurul
 - Anthropic ile **DPA (Veri İşleme Sözleşmesi)**
 - Özel hesap yöneticisi
 - Kurum çapında yönetici kontrolleri
+- Kasım 2026 eklemeleri: güvenlik merkezi, kişisel Claude hesaplarını şirket ağında engelleme, proje etiketiyle harcama takibi (kısmen beta; ayrıntı [Takım ve Admin](/wiki/temeller/takim-ve-admin/))
 
 **Bütçe notu:** Aylık tutar sabit değil, kullanıma göre değişir. Bu yüzden Enterprise'a geçmeden önce Team'de ölçülmüş bir kullanım verisi ve yönetici panelindeki harcama izleme çok işe yarar. Güncel fiyat için [claude.com/pricing/enterprise](https://claude.com/pricing/enterprise) sayfasına bakın.
 
@@ -138,7 +142,7 @@ Büyük organizasyonlar için: maksimum kontrol, uyum ve güvenlik isteyen kurul
 
 ## Modeller ve Planlar
 
-Zamana'nın çizgisi: **günlük iş için Sonnet 5.5** (her planda vardır), ağır işler için Opus 5.5 (Pro ve üstünde), en güçlüsü için Fable 5.1. Haiku en hızlı ve hafif modeldir, basit işler içindir; güncel sürümü Haiku 5.5'tir (API'de), Haiku 4.5 legacy kaldı.
+Zamana'nın çizgisi: **günlük iş için Sonnet 5.5** (Sonnet her planda vardır), ağır işler için Opus 5.5 (Pro ve üstünde), en güçlüsü için Fable 5.1. Haiku en hızlı ve hafif modeldir, basit işler içindir; güncel sürümü Haiku 5.5'tir (API'de), Haiku 4.5 legacy kaldı.
 
 **Fable erişimi plana göre farklıdır:**
 
@@ -238,7 +242,7 @@ Tüm planların tüm özelliklerini tek tabloda görebilmek için:
 |---|---|---|---|---|---|
 | **Fiyat** | 0 | $20/ay | Max $100, Ultra $200/ay | $20-25/koltuk/ay (Premium $100-125) | $20/koltuk/ay + kullanım (API fiyatı) |
 | **Minimum kullanıcı** | 1 | 1 | 1 | 2 koltuk (en çok 150) | Self-serve 20 koltuk |
-| Sonnet 5.5 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Sonnet 5.5 | Sonnet ✅ (sürüm belirtilmez) | ✅ | ✅ | ✅ | ✅ |
 | Opus 5.5 | ❌ | ✅ | ✅ | ✅ | ✅ |
 | Fable 5.1 | ❌ | Yalnız kullanım kredisiyle | ✅ plana dahil (haftalık limitin en çok %50'si) | Standard: kredi; Premium: plana dahil | API fiyatıyla faturalanır |
 | Haiku (güncel: 5.5, API; 4.5 legacy) | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -252,10 +256,16 @@ Tüm planların tüm özelliklerini tek tabloda görebilmek için:
 | Skills | ✅ | ✅ | ✅ | ✅ | ✅ + özel |
 | MCP connector'lar | ✅ | ✅ | ✅ | ✅ | ✅ + özel |
 | Scheduled Tasks | ❌ | ✅ | ✅ | ✅ | ✅ |
-| Dispatch | ❌ | Sınırlı beta (yeni kullanıcıya kapalı) | Sınırlı beta (yeni kullanıcıya kapalı) | ❌ | ❌ |
-| Voice Mode (beta; Türkçe desteklenen dillerde yok) | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Computer Use (research preview) | ❌ | ✅ | ✅ | ❌ | ❌ |
-| Claude Design / Slides / Docs (beta) | ❌ | ✅ | ✅ | ✅ | ✅ (admin açana kadar kapalı) |
+| Research (derin araştırma) | ❌ | ✅ | ✅ | ✅ | ✅ |
+| Telefondan Cowork'e görev | ❌ | ✅ otomatik açık | ✅ otomatik açık | ✅ otomatik açık | Kurum isterse açılır |
+| Dispatch (eski özellik) | ❌ | Sınırlı beta (yeni kullanıcıya kapalı) | Sınırlı beta (yeni kullanıcıya kapalı) | ❌ | ❌ |
+| Voice Mode (beta; Türkçe desteği doğrulanmadı) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Computer Use (beta) | ❌ | ✅ | ✅ | ❌ | ❌ |
+| Excel, PowerPoint, Word eklentileri (Outlook beta) | ❌ | ✅ | ✅ | ✅ | ✅ |
+| Google Docs, Sheets, Slides eklentisi (beta) | ❌ | ✅ | ✅ | ✅ | ✅ |
+| Claude Design / Slides / Docs | ✅ | ✅ | ✅ | ✅ | ✅ (15 Eki 2026'dan beri varsayılan açık, HIPAA etkin kuruluş hariç; owner kapatabilir) |
+| Claude Dashboards (beta) | ❌ | ✅ | ✅ | ✅ | ✅ (admin açana kadar kapalı) |
+| Claude Motion (beta, animasyonlu anlatım) | ❌ | ❌ | ❌ | ✅ | ✅ |
 | **Eğitim verisinde kullanım** | Kullanıcı seçer | Kullanıcı seçer | Kullanıcı seçer | Varsayılan hayır | Varsayılan hayır |
 | Veri saklama | Standart | Standart | Standart | Standart | Özelleştirilebilir |
 | **DPA (Data Processing Agreement)** | ❌ | ❌ | ❌ | ✅ | ✅ standart |
@@ -265,13 +275,13 @@ Tüm planların tüm özelliklerini tek tabloda görebilmek için:
 | Harcama tavanı | ❌ | ❌ | ❌ | ✅ | ✅ |
 | Yönetici paneli | ❌ | ❌ | ❌ | ✅ | ✅ gelişmiş |
 | Merkezi faturalama | ❌ | ❌ | ❌ | ✅ | ✅ |
-| RBAC, audit log, Compliance API | ❌ | ❌ | ❌ | ❌ | ✅ |
+| RBAC, audit log, Compliance API | ❌ | ❌ | ❌ | ❌ (OpenTelemetry kısmi var) | ✅ |
 | Özel hesap yöneticisi | ❌ | ❌ | ❌ | ❌ | ✅ |
-| Özel plugin marketplace | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Özel plugin marketplace | ❌ | ❌ | ❌ | ✅ | ✅ (grup bazlı ayar yalnız Enterprise) |
 | HIPAA yapılandırması (BAA) | ❌ | ❌ | ❌ | ❌ | ✅ (14 Tem 2026'dan beri self-serve) |
 | Özel veri saklama politikası | ❌ | ❌ | ❌ | ❌ | ✅ müzakereli |
 
-**Not:** Cowork yayılımı kademelidir: Pro, Max ve Ultra önce, Team ve Free "yakında", Enterprise yöneticilerine en az 30 gün önceden haber verilir. *Bağlam penceresi plana değil modele bağlıdır: yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) 1M, Haiku 5.5'te 1M, legacy Haiku 4.5'te 200K'dır. Anthropic'in Team yardım sayfası hâlâ eski "200K" değerini gösterebilir.
+**Not:** Cowork yalnız ücretli planlarda var. Sohbet ve Cowork'ün birleşik arayüzü Pro, Max ve Ultra'da kademeli açılıyor; Team ve Enterprise'ta yöneticinin "Chat and Cowork unified" ayarını açtığı kuruluşlarda görünür (Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda). *Bağlam penceresi plana değil modele bağlıdır: yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) 1M, Haiku 5.5'te 1M, legacy Haiku 4.5'te 200K'dır. Anthropic'in Team yardım sayfası hâlâ eski "200K" değerini gösterebilir.
 
 ## Plan Seçici Karar Ağacı
 
@@ -322,7 +332,7 @@ Bağlam penceresi artık Enterprise'ı gerektiren bir neden değildir: yeni mode
 
 ## Aylık API Kredisi
 
-Ekim 2026'dan itibaren bazı planlar, Console (API) organizasyonuna bağlanarak kullanılabilen **aylık API kredisi** içerir:
+7 Ekim 2026'dan itibaren bazı planlar, Console (API) organizasyonuna bağlanarak kullanılabilen **aylık API kredisi** içerir:
 
 | Plan | Aylık API kredisi |
 |---|---|
@@ -331,7 +341,7 @@ Ekim 2026'dan itibaren bazı planlar, Console (API) organizasyonuna bağlanarak 
 | Team Standard koltuk | $20 |
 | Team Premium koltuk | $100 |
 
-Team'de krediler havuzda toplanır ve havuz en çok **$500/ay** olur. Free, Pro ve Enterprise planlarında bu kredi yoktur. Kredi yalnızca API kullanımı içindir: interaktif Claude Code, Cowork ve kullanım kredisi (usage credits) için geçmez. Bu krediyi kullanmak, Zamana programlarının kapsamında değildir; programlar iş eğitimidir, API kullanımı müfredata girmez.
+Team'de krediler havuzda toplanır ve havuz en çok **$500/ay** olur. Free, Pro ve Enterprise planlarında bu kredi yoktur. Kredi plan en az 7 gün sürdükten sonra, tek bir Console organizasyonuna bağlanarak açılır ve ay sonunda devretmez. Yalnızca API kullanımı içindir: interaktif Claude Code, Cowork ve kullanım kredisi (usage credits) için geçmez. Bu krediyi kullanmak, Zamana programlarının kapsamında değildir; programlar iş eğitimidir, API kullanımı müfredata girmez.
 
 ## Kota Bitince Ne Olur?
 
@@ -345,7 +355,7 @@ Anthropic, Agent SDK ve `claude -p` gibi programatik kullanım için abonelikten
 
 ## Güncel Fiyat Doğrulaması
 
-Anthropic fiyatlarını ve plan özelliklerini zaman zaman günceller. Bu sayfadaki rakamlar 5 Ekim 2026 itibariyle doğrulanmıştır, fiyatlar USD ve vergi hariçtir. Kritik bir satın alma kararı vermeden önce güncel fiyatlar için **[claude.com/pricing](https://claude.com/pricing)** sayfasını kontrol edin.
+Anthropic fiyatlarını ve plan özelliklerini zaman zaman günceller. Bu sayfadaki rakamlar 8 Kasım 2026 itibarıyla doğrulanmıştır, fiyatlar USD ve vergi hariçtir. Kritik bir satın alma kararı vermeden önce güncel fiyatlar için **[claude.com/pricing](https://claude.com/pricing)** sayfasını kontrol edin.
 
 ## İlgili Sayfalar
 

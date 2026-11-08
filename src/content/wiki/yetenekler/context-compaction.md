@@ -18,14 +18,15 @@ Sizin mesajlarınız, Claude'un cevapları, yüklenen dosyalar, araç çıktıla
 
 ## Bağlam Penceresinin Boyutu
 
-Güncel modellerde yaklaşık limitler (sohbet penceresi; ücretli planlarda fark yok, Free için resmi değer yayımlanmıyor):
+Güncel modellerde yaklaşık limitler (claude.ai sohbeti; ücretli planlarda fark yok, Free için resmi değer yayımlanmıyor):
 
 | Model | Bağlam Penceresi | İngilizce metin karşılığı |
 |---|---|---|
-| Fable 5.1, Opus 5.5, Sonnet 5.5 | ~1.000.000 token | ~750.000 kelime / ~2.500 sayfa |
-| Bir önceki kuşak (Fable 5, Opus 5, Sonnet 5) | ~500.000 token | ~375.000 kelime / ~1.250 sayfa |
-| Claude Haiku 5.5 | ~1.000.000 token | ~750.000 kelime / ~2.500 sayfa |
-| Claude Haiku 4.5 (legacy) | ~200.000 token | ~150.000 kelime / ~500 sayfa |
+| Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5, ayrıca Opus 5 ve Sonnet 5 | ~1.000.000 token | ~750.000 kelime / ~2.500 sayfa |
+| Fable 5, Opus 4.8, 4.7, 4.6, Sonnet 4.6 | ~500.000 token | ~375.000 kelime / ~1.250 sayfa |
+| Diğerleri, ör. Claude Haiku 4.5 (legacy) | ~200.000 token | ~150.000 kelime / ~500 sayfa |
+
+Cowork'te bazı modellerin penceresi farklıdır (örneğin Haiku 5.5 Cowork'te 500.000 token); güncel tablo için Anthropic'in [bağlam penceresi yardım sayfasına](https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans) bakın.
 
 **Token nedir?** Yaklaşık 0,75 İngilizce kelime veya 3-4 karakter. Türkçe metin sayfa başına daha fazla token tutar (sayfa başına ~500-700 token, İngilizcede ~400), yani tablodaki sayfa sayılarını Türkçe belgeler için yaklaşık üçte bir azaltarak düşünün. Ayrıntı: [Prompt ve Token](/wiki/temeller/prompt-ve-token/). Bir iş kullanıcısı token saymaz, ama şunu bilmesi gerekir: **pencere dolabilir**.
 
@@ -95,9 +96,9 @@ Claude'a "bugüne kadar önemli olan her şeyi özetle" deyin. Özeti bir dosyay
 
 Her oturumda geçerli olması gereken bilgi kalıcı talimatta olmalı: yerel Cowork ve Claude Code'da klasördeki **CLAUDE.md**, sohbette proje talimatı ya da profil talimatı. Bunlar her yeni oturumda taze yüklenir, compaction'dan etkilenmez. Sohbet CLAUDE.md dosyasını okumaz; yerlerin karşılaştırması için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
-### 4. Cowork Projects Kullanın
+### 4. Projects Kullanın
 
-Project bağlam dosyaları **her oturumda taze** yüklenir. Compaction sonrası bile Project bilgisi korunur. [Projects sayfasına](/wiki/araclar/projects/) bakın.
+claude.ai'deki proje bilgi tabanı ve talimatı ile Cowork projesinin bağlam dosyaları **her oturumda taze** yüklenir. Compaction sonrası bile proje bilgisi korunur. İkisi ayrı yapılardır: claude.ai projesi için [Projects](/wiki/araclar/projects/), Cowork projesi için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
 
 ## Uyarı İşaretleri: "Claude Unuttu" Dediğimizde
 

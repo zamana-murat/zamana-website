@@ -1,6 +1,6 @@
 ---
 title: "MCP Nedir?: Claude'u Şirket Araçlarınıza Bağlayan Standart"
-seoTitle: "MCP (Model Context Protocol) Nedir? Claude İçin Basit Anlatım"
+seoTitle: "MCP (Model Context Protocol) Nedir? Claude İçin"
 description: "MCP (Model Context Protocol) nedir? Claude'un şirket araçlarına bağlanma standardı, connector ve plugin farkı, iç sistemleri bağlama yolu sade dille."
 tags:
   - mcp
@@ -34,7 +34,7 @@ Claude tek protokolle (MCP) konuşur, her servis kendi MCP sunucusu üzerinden b
 
 Dizindeki bağlantılar Anthropic incelemesinden geçer, özel connector geçmez. Dizinde olmayan bir sunucu için Claude güvenlik uyarısı verir. Ama "incelemeden geçti" demek sizin verinizin güvende olduğunu garanti etmez; hangi veriyi açacağınıza yine siz karar verirsiniz ([MCP Güvenliği](/wiki/mcp/guvenlik/)).
 
-Özel connector Free dahil tüm planlarda vardır (Free'de en çok 1 tane). Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına, adım adım kurulum için [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) sayfasına bakın.
+Dizin connector'ını eklemek için Claude'da **Customize > Connectors** bölümünü açın, listeden servisi seçip **Connect** deyin ve o servisin giriş ekranında kendi hesabınızla onay verin. Özel connector Free dahil tüm planlarda vardır (Free'de en çok 1 tane). Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına, adım adım kurulum için [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) sayfasına bakın.
 
 ## Plugin ve Connector: İlişkisi Ne?
 
@@ -50,7 +50,9 @@ Dizindeki bağlantılar Anthropic incelemesinden geçer, özel connector geçmez
 - draft-outreach skill
 - CRM connector (mevcutsa)
 
-Tek tıkla hepsi kurulur, ayrı ayrı uğraşmazsınız. Plugin'lerin ürün tanıtımı için [Claude Plugins](/claude/plugins/) sayfasına bakın.
+Tek tıkla hepsi kurulur, ayrı ayrı uğraşmazsınız.
+
+**Aynı isim, farklı şey:** Google Workspace için hem dizinde Docs, Sheets, Slides ve Gmail connector'ları hem de ayrı bir [Claude for Google Workspace](/claude/google-workspace/) eklentisi vardır. Connector'lar Claude'un sohbetinden Google dosyalarınıza ulaşmasını sağlar; eklenti ise Google Docs, Sheets ve Slides'ın içinde yan panel olarak açılır ve açık dosya üzerinde çalışır. İkisi ayrı kurulur, birbirinin yerine geçmez. Plugin'lerin ürün tanıtımı için [Claude Plugins](/claude/plugins/) sayfasına bakın.
 
 ## Connector'lar Nereden Çağrılır?
 
@@ -66,15 +68,15 @@ Bu, BT ekibinizin ve sizin kararınızı değiştiren bir ayrıntıdır: **uzak 
 
 Kendi sisteminizi bağlamak istiyorsanız karar akışı [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasında.
 
-Türkiye'deki orta ölçekli şirketlerin kullandığı **standart connector'lar** (Slack, Drive, Gmail, CRM) genellikle sorunsuz çalışır. Resmi dizinde yaklaşık 900 connector bulunur; [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) ise connector'ları ve eklentileri tek yerde toplar. Kurumsal değerlendirme için [Claude Marketplace (Kurumsal)](/kurumsal/marketplace/) sayfası var.
+Türkiye'deki orta ölçekli şirketlerin kullandığı **standart connector'lar** (Slack, Drive, Gmail, CRM) genellikle sorunsuz çalışır. Resmi dizinde 1.000'den fazla connector bulunur; [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) ise connector'ları ve eklentileri tek yerde toplar. Kurumsal değerlendirme için [Claude Marketplace (Kurumsal)](/kurumsal/marketplace/) sayfası var.
 
-API'si olmayan dahili programlar için [Computer Use](/wiki/yetenekler/computer-use/) bir alternatif olabilir. Yalnızca Pro, Max ve Ultra planlarında, masaüstü uygulamasında ve research preview olarak çalışır.
+API'si olmayan dahili programlar için [Computer Use](/wiki/yetenekler/computer-use/) bir alternatif olabilir. Yalnızca Pro, Max ve Ultra planlarında, masaüstü uygulamasında (Cowork ve Claude Code içinde) çalışır ve beta aşamasındadır; Team ve Enterprise'ta yoktur.
 
 ## MCP Açık Bir Standart: Ne Demek?
 
 MCP'nin "open standard" (açık standart) olması önemli bir tasarım seçimidir:
 
-- **Anthropic'e özel değil**: başka AI sistemleri de MCP kullanabilir
+- **Anthropic'e özel değil**: başka AI sistemleri de MCP kullanabilir. Anthropic MCP'yi Aralık 2025'te, Agent Skills standardını da 22 Ekim 2026'da Linux Foundation bünyesindeki Agentic AI Foundation'a (AAIF) devretti; iki standardın yönetimi artık tek bir şirkette değil
 - **Özelleştirilebilir**: şirketler kendi MCP sunucularını yazabilir
 - **Uzun ömürlü**: protokol standart kaldığı sürece bir connector'un çalışmaya devam etmesi beklenir (bakımı yine sağlayıcıya bağlıdır)
 - **Yetkilendirme için ortak yol var**: MCP spesifikasyonu, HTTP üzerinden çalışan sunucular için OAuth 2.1 taslağına dayanan bir yetkilendirme tarif eder. Yetkilendirme isteğe bağlıdır, her sunucu uygulamak zorunda değildir; güvenlik bu yüzden sunucuya göre değişir
@@ -83,7 +85,7 @@ Bu, Claude'u seçen bir şirketin **kendini Anthropic'e kilitlememiş** olduğu 
 
 ## Plugin Nasıl Kurulur?
 
-1. Cowork'ü açın, yan panelde **"Customize"** (Özelleştir) bölümüne girin
+1. Claude'da (Cowork dahil) sol paneldeki **"Customize"** (Özelleştir) bölümüne girin
 2. Plugin kataloğunu gözden geçirin
 3. İstediğiniz plugin'in üzerinde **"Install"** (Kur) deyin
 4. İçindeki connector'ların giriş gerektirenleri varsa tek seferlik kimlik doğrulaması yapın (OAuth)
@@ -95,7 +97,7 @@ Bu, Claude'u seçen bir şirketin **kendini Anthropic'e kilitlememiş** olduğu 
 
 Team ve Enterprise planlarında kuruluş sahibi, çalışanların kuracağı plugin'leri kendi kataloğunda toplayabilir:
 
-- Şirkete özgü plugin'lerle zenginleştirilmiş, yönetici kontrollü katalog (plugin dosyalarını elle yükleyerek ya da özel bir GitHub deposundan senkronla)
+- Şirkete özgü plugin'lerle zenginleştirilmiş, yönetici kontrollü katalog (plugin dosyalarını elle yükleyerek ya da özel bir GitHub deposundan senkronla; GitLab senkronu beta)
 - Çalışanlar **şirket kataloğundan** kurar
 - Bazı plugin'ler otomatik kurulabilir ya da zorunlu tutulabilir
 - Enterprise'ta ek olarak departman gruplarına göre farklı kurallar tanımlanabilir (örn. Hukuk'ta isteğe bağlı, Mühendislik'te otomatik)

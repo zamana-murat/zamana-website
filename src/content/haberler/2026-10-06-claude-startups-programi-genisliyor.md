@@ -39,4 +39,6 @@ Küçük bir ekibiniz varsa ve Claude'u şirket genelinde denemek istiyorsanız,
 - Ücretsiz yıl bitince koltukların ve kredinin ne olacağı kaynak yazıda anlatılmıyor; bitiş koşullarını başvuru sırasında okuyun.
 - Zamana Anthropic'in bayisi ya da temsilcisi değildir; başvuru ve satın alma doğrudan Anthropic üzerinden yapılır.
 
+> **Güncelleme (8 Kasım 2026):** Program 13 Ekim 2026'dan beri yeni başvuru almıyor, mevcut dönem doldu. Güncel durum için [programın sayfasına](https://claude.com/programs/startups) bakın.
+
 *Kaynak: [We're expanding the Claude Startups program to help founders build](https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

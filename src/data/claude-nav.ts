@@ -34,6 +34,7 @@ export const claudeNavColumns: ClaudeNavColumn[] = [
         items: [
           { label: 'Claude', href: '/claude/', slug: '', desc: 'Yazma, analiz ve araştırma için yapay zeka asistanı' },
           { label: 'Claude Code', href: '/claude/claude-code/', slug: 'claude-code', desc: 'Yazılım ekipleri için kodlama ajanı' },
+          { label: 'Claude Cowork', href: '/claude/cowork/', slug: 'cowork', desc: 'Dosyalarınızda çok adımlı işi yürüten Claude' },
           { label: '@Claude', href: '/claude/tag/', slug: 'tag', desc: "Slack'te etiketleyerek iş verin" },
         ],
       },
@@ -69,6 +70,7 @@ export const claudeNavColumns: ClaudeNavColumn[] = [
         items: [
           { label: 'Claude for Chrome', href: '/claude/chrome/', slug: 'chrome', desc: 'Tarayıcıda sizin yerinize gezinir' },
           { label: 'Claude for Microsoft 365', href: '/claude/microsoft-365/', slug: 'microsoft-365', desc: 'Excel, Word, PowerPoint ve Outlook içinde' },
+          { label: 'Claude for Google Workspace', href: '/claude/google-workspace/', slug: 'google-workspace', desc: 'Docs, Sheets ve Slides içinde' },
         ],
       },
     ],

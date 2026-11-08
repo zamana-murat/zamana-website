@@ -1,0 +1,220 @@
+---
+/**
+ * Turkish, code-driven hero animation for /claude/cowork/ (replaces Anthropic's English video).
+ * Scenario: at a fictional textile company (Ege Örme Tekstil) the finance lead gives Claude a goal:
+ * compare the regional sales exports with the budget, flag variances above 10 percent and prepare
+ * a short deck. Claude shows each file it opens, finds the variances, delivers a deck for review
+ * and offers to schedule the same task every Monday.
+ * Generic task UI (no Anthropic branding). All elements live in the markup; the script only
+ * toggles data-step and types text.
+ */
+const STEPS = [
+  'satis-marmara.xlsx açıldı',
+  'satis-ege.xlsx açıldı',
+  'butce-2026.xlsx ile karşılaştırılıyor',
+  'Sunum hazırlanıyor',
+];
+---
+
+<div
+  class="ca-cowork"
+  data-step="0"
+  data-prompt="Bölge satış dosyalarını bütçeyle karşılaştır, yüzde 10'dan büyük sapmaları işaretle ve yönetim için kısa bir sunum hazırla."
+  role="img"
+  aria-label="Kurgusal Ege Örme Tekstil'de finans sorumlusu Claude'a hedefi yazıyor; Claude seçilen klasördeki satış ve bütçe dosyalarını tek tek açıyor, yüzde 10'u aşan üç sapmayı buluyor, onaya hazır bir sunum teslim ediyor ve aynı işi her pazartesi 09.00'da çalıştırmayı öneriyor."
+>
+  <div class="cw__win" aria-hidden="true">
+    <div class="cw__bar">
+      <span class="cw__dot"></span><span class="cw__dot"></span><span class="cw__dot"></span>
+      <span class="cw__bar-title">Aylık sapma raporu</span>
+    </div>
+
+    <div class="cw__body">
+      <!-- Left: task and progress -->
+      <div class="cw__main">
+        <div class="cw__goal">
+          <span class="cw__av">EY</span>
+          <p class="cw__goal-text"><span data-role="prompt"></span><span class="cw__caret"></span></p>
+        </div>
+
+        <ul class="cw__steps">
+          {STEPS.map((s, i) => (
+            <li class="cw__step" style={`--i:${i}`}>
+              <span class="cw__tick">
+                <svg viewBox="0 0 16 16" width="12" height="12"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span>{s}</span>
+            </li>
+          ))}
+        </ul>
+
+        <div class="cw__result">
+          <p class="cw__rtitle">3 sapma bulundu</p>
+          <ul class="cw__vars">
+            <li style="--i:0"><span>Ege, örme kumaş</span><b class="cw__neg">−%14</b></li>
+            <li style="--i:1"><span>Marmara, ihracat</span><b class="cw__pos">+%12</b></li>
+            <li style="--i:2"><span>İç Anadolu, ev tekstili</span><b class="cw__neg">−%11</b></li>
+          </ul>
+          <div class="cw__deliver">
+            <span class="cw__file">
+              <svg viewBox="0 0 16 16" width="14" height="14"><rect x="2" y="1.5" width="12" height="13" rx="2" fill="#c4502a"/><rect x="5" y="5" width="6" height="4" rx="1" fill="#fff"/></svg>
+              sapma-raporu-ekim.pptx
+            </span>
+            <span class="cw__btn">İncele</span>
+          </div>
+          <p class="cw__sched">
+            <svg viewBox="0 0 16 16" width="13" height="13"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 4.6V8l2.4 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            Her pazartesi 09.00'da tekrar çalıştırılsın mı?
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: selected folder -->
+      <div class="cw__side">
+        <p class="cw__side-h">Seçilen klasör</p>
+        <p class="cw__folder">Finans / Ekim</p>
+        <p class="cw__f" data-f="0">satis-marmara.xlsx</p>
+        <p class="cw__f" data-f="1">satis-ege.xlsx</p>
+        <p class="cw__f" data-f="2">satis-icanadolu.xlsx</p>
+        <p class="cw__f" data-f="3">butce-2026.xlsx</p>
+        <p class="cw__f cw__f--new">sapma-raporu-ekim.pptx</p>
+        <p class="cw__note">Silme ve gönderme için onayınız istenir</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-cowork {
+    --cw-ink: var(--c-navy);
+    --cw-muted: var(--c-text-muted);
+    --cw-line: var(--c-border);
+    --cw-soft: #f3f1ea;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+    container-type: inline-size;
+  }
+  .cw__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .cw__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--cw-line); }
+  .cw__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .cw__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--cw-muted); font-weight: 700; }
+  .cw__body { flex: 1; display: flex; min-height: 0; }
+
+  .cw__main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.7em; padding: 1em 1.2em; overflow: hidden; }
+  .cw__goal { display: flex; gap: 0.7em; align-items: flex-start; }
+  .cw__av { width: 2.2em; height: 2.2em; border-radius: 7px; flex-shrink: 0; display: grid; place-items: center; font-weight: 800; font-size: 0.78em; background: #f4ead0; color: var(--c-gold-text); }
+  .cw__goal-text { margin: 0; color: var(--cw-ink); line-height: 1.4; background: var(--cw-soft); border-radius: 10px; padding: 0.55em 0.8em; min-height: 1.4em; flex: 1; }
+  .cw__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: var(--cw-ink); animation: cw-blink 1s steps(1) infinite; }
+  .ca-cowork[data-typing] .cw__caret { display: inline-block; }
+
+  .cw__steps { list-style: none; margin: 0; padding: 0 0 0 0.3em; display: flex; flex-direction: column; gap: 0.35em; }
+  .cw__step { display: none; align-items: center; gap: 0.55em; font-size: 0.88em; color: var(--cw-muted); animation: cw-in .35s ease both; }
+  .cw__tick { width: 1.35em; height: 1.35em; border-radius: 50%; display: grid; place-items: center; background: var(--cw-soft); color: var(--cw-muted); flex-shrink: 0; }
+  .cw__step.is-done .cw__tick { background: var(--c-navy); color: var(--c-gold); }
+  .cw__step.is-done { color: var(--cw-ink); }
+
+  .cw__result { display: none; border: 1px solid var(--cw-line); border-radius: 10px; padding: 0.7em 0.9em; animation: cw-in .4s ease both; }
+  .cw__rtitle { margin: 0 0 0.3em; font-weight: 800; color: var(--cw-ink); }
+  .cw__vars { list-style: none; margin: 0; padding: 0; font-size: 0.86em; }
+  .cw__vars li { display: flex; justify-content: space-between; gap: 1em; padding: 0.22em 0; border-bottom: 1px dashed var(--cw-line); color: var(--cw-ink); opacity: 0; transform: translateX(-6px); transition: opacity .3s calc(var(--i) * 240ms + 120ms), transform .3s calc(var(--i) * 240ms + 120ms); }
+  .cw__neg { color: #b23a2a; }
+  .cw__pos { color: #1d6f42; }
+  .cw__deliver { display: flex; align-items: center; justify-content: space-between; gap: 0.6em; margin-top: 0.6em; }
+  .cw__file { display: inline-flex; align-items: center; gap: 0.4em; font-size: 0.82em; font-weight: 700; color: var(--cw-ink); background: var(--cw-soft); border-radius: 6px; padding: 0.3em 0.6em; }
+  .cw__btn { font-size: 0.8em; font-weight: 800; color: var(--c-navy); background: var(--c-gold); border-radius: 6px; padding: 0.35em 0.8em; }
+  .cw__sched { display: none; align-items: center; gap: 0.45em; margin: 0.6em 0 0; font-size: 0.8em; color: var(--cw-muted); animation: cw-in .4s ease both; }
+
+  .cw__side { width: 12em; flex-shrink: 0; background: var(--c-navy); padding: 1em 0.8em; display: flex; flex-direction: column; gap: 0.15em; }
+  .cw__side p { margin: 0; }
+  .cw__side-h { color: rgba(255, 255, 255, .5); font-size: 0.68em; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 0 0.4em 0.2em; }
+  .cw__folder { color: #fff; font-weight: 800; font-size: 0.88em; padding: 0 0.4em 0.5em; }
+  .cw__f { color: rgba(255, 255, 255, .72); font-size: 0.78em; padding: 0.32em 0.5em; border-radius: 6px; transition: background .3s, color .3s; }
+  .cw__f.is-open { background: var(--c-gold); color: var(--c-navy); font-weight: 800; }
+  .cw__f--new { display: none; color: var(--c-gold); font-weight: 800; animation: cw-in .4s ease both; }
+  .cw__note { margin-top: auto !important; color: rgba(255, 255, 255, .55); font-size: 0.66em; line-height: 1.35; padding: 0 0.4em; }
+  @container (max-width: 520px) { .cw__side { display: none; } }
+
+  /* step states */
+  .ca-cowork[data-step="2"] .cw__step,
+  .ca-cowork[data-step="3"] .cw__step,
+  .ca-cowork[data-step="4"] .cw__step { display: flex; }
+  .ca-cowork[data-step="2"] .cw__step { animation-delay: calc(var(--i) * 900ms); }
+  .ca-cowork[data-step="3"] .cw__result,
+  .ca-cowork[data-step="4"] .cw__result { display: block; }
+  .ca-cowork[data-step="3"] .cw__vars li,
+  .ca-cowork[data-step="4"] .cw__vars li { opacity: 1; transform: none; }
+  .ca-cowork[data-step="3"] .cw__f--new,
+  .ca-cowork[data-step="4"] .cw__f--new { display: block; }
+  .ca-cowork[data-step="4"] .cw__sched { display: flex; }
+  .ca-cowork[data-step="3"] .cw__steps,
+  .ca-cowork[data-step="4"] .cw__steps { display: none; }
+  .ca-cowork[data-step="5"] .cw__win { opacity: 0; }
+
+  @keyframes cw-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes cw-blink { 50% { opacity: 0; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-cowork *, .ca-cowork *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setup(root: HTMLElement) {
+    const prompt = root.dataset.prompt || '';
+    const out = root.querySelector<HTMLElement>('[data-role="prompt"]')!;
+    const steps = Array.from(root.querySelectorAll<HTMLElement>('.cw__step'));
+    const files = Array.from(root.querySelectorAll<HTMLElement>('.cw__f[data-f]'));
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+    const openFile = (i: number) => files.forEach((f, k) => f.classList.toggle('is-open', k === i));
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      out.textContent = '';
+      steps.forEach((s) => s.classList.remove('is-done'));
+      openFile(-1);
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(700, () => { step(1); root.dataset.typing = '1'; });
+      const speed = 24;
+      for (let i = 0; i <= prompt.length; i++) at(800 + i * speed, () => { out.textContent = prompt.slice(0, i); });
+      const t1 = 800 + prompt.length * speed + 500;
+      at(t1, () => { delete root.dataset.typing; step(2); });
+      // each step: highlight the file it touches, then tick it
+      const order = [0, 1, 3, -1];
+      steps.forEach((s, i) => {
+        at(t1 + i * 900 + 100, () => openFile(order[i]));
+        at(t1 + i * 900 + 800, () => s.classList.add('is-done'));
+      });
+      const t2 = t1 + steps.length * 900 + 600;
+      at(t2, () => { openFile(-1); step(3); });
+      at(t2 + 2600, () => step(4));
+      at(t2 + 6200, () => step(5));
+      at(t2 + 6800, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      out.textContent = prompt;
+      step(4);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ca-cowork').forEach(setup);
+</script>

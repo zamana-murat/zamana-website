@@ -6,7 +6,7 @@ tags:
   - claude-md
   - takim
   - paylasimli
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **[CLAUDE.md](/wiki/claude-md/nedir/) bireysel başlar, ama şirkette 6 kişi aynı yönergeyi paylaşmak istediğinde takım versiyonu gerekir.** Bu sayfa paylaşılan kural setinin nasıl kurulduğunu, kimin editlediğini, sürüm sorunlarının nasıl yönetildiğini anlatır.
@@ -101,7 +101,7 @@ Kaynak metin hazırsa, onu çalışanın Claude'una ulaştıran dört yol var. B
 |---|---|---|---|
 | **Paylaşılan proje** (Team ve Enterprise) | Proje sahibi | O projedeki sohbetler | Çalışan doğru projede çalışmalı; izin düzeyi paylaşımda belirlenir |
 | **Kuruluş talimatı** | Yönetici | Sohbet, Cowork ve Claude Code oturumları | En çok 3.000 karakter; **zorlayıcı değil**, modele rehberdir |
-| **Yöneticinin dağıttığı skill** | Yönetici | Skill'i yüklemiş ya da kendisine açılmış kullanıcılar | Claude skill'i ilgili gördüğünde yükler, her mesaja sabit uygulanmaz |
+| **Yöneticinin dağıttığı skill ya da plugin** | Yönetici | Skill'i yüklemiş ya da kendisine açılmış kullanıcılar | Claude skill'i ilgili gördüğünde yükler, her mesaja sabit uygulanmaz. Toplu dağıtım şirket içi plugin marketplace'iyle (Team ve Enterprise; Cowork ve Skills açık olmalı) |
 | **Klasörde ortak CLAUDE.md** | Takım lideri | Cowork'te o klasörle çalışılan **yerel** oturumlar | Her çalışanın klasörde güncel kopyası olmalı; bulut Cowork oturumunda okunduğu belgelenmemiş |
 
 Hangi yönetici özelliklerinin planınızda açık olduğu ([Team ve Enterprise plan](/wiki/temeller/takim-ve-admin/)) güncel yönetici ayarlarına bağlıdır; bu sayfada bunu garanti etmiyoruz. Kurmadan önce admin panelinden veya Anthropic satış ekibinden teyit edin.

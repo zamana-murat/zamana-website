@@ -11,19 +11,20 @@ lastUpdated: "2026-11-08"
 
 **Cowork, Claude'u bir sohbet arayüzünden tam bir çalışma ortamına dönüştüren özelliktir.** Dosyalarınıza erişir, kod çalıştırır, bağlı araçları kullanır ve işi baştan sona teslim eder. Cowork 9 Nisan 2026'dan beri masaüstünde (macOS, Windows ve Linux) genel kullanıma açık, 7 Temmuz 2026'dan beri web ve mobilde beta olarak da kullanılabiliyor.
 
-> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor. Artık "sohbet mi, Cowork mu?" diye seçim yapmıyorsunuz; Claude görevin neye ihtiyaç duyduğunu kendisi anlıyor. Yayılım kademeli: önce Pro, Max ve Ultra, Team ve Free için "yakında". Enterprise yöneticilerine en az 30 gün önceden haber verilecek. Hesabınızda birleşik arayüz henüz açılmadıysa sayfadaki "ayrı mod" anlatımı sizin ekranınızı tarif eder. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
+> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor. Artık "sohbet mi, Cowork mu?" diye seçim yapmıyorsunuz; Claude görevin neye ihtiyaç duyduğunu kendisi anlıyor. Yayılım kademeli: Pro, Max ve Ultra'da açılıyor; Team ve Enterprise'ta yönetici "Chat and Cowork unified" ayarını açınca görünür (Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda). Free planda Cowork yok. Hesabınızda birleşik arayüz henüz açılmadıysa sayfadaki "ayrı mod" anlatımı sizin ekranınızı tarif eder. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ## Hangi Planda, Nerede Çalışır?
 
 - **Masaüstü (macOS, Windows, Linux):** tüm ücretli planlarda. Enterprise'da yönetici etkinleştirmesi gerekebilir. Linux'ta Cowork için en az 8 GB RAM ve KVM desteği gerekir, bkz. [Claude Desktop](/wiki/araclar/claude-desktop/).
 - **Web ve mobil:** beta; Pro, Max, Ultra ve Team planlarında, Enterprise'da yönetici açtıysa. Connector'lar, skill'ler, zamanlanmış görevler ve cihazlar arası devam var; yerel dosya erişimi ve tarayıcı kullanımı kısmidir (masaüstü uygulaması açık olmalı).
-- **Cowork'ün Chrome yan paneli:** Max, Ultra ve Team'de, Pro'ya yayılıyor.
-- **Computer use:** research preview; yalnız Pro, Max ve Ultra'da, masaüstü uygulamasında Cowork ve Claude Code içinde. Team ve Enterprise'ta yok. Ayrıntı: [Computer Use](/wiki/yetenekler/computer-use/).
-- **Yerleşik tarayıcı (masaüstü):** Claude, sizin sekmelerinize ve şifrelerinize dokunmayan kendi tarayıcısıyla sitelerde gezip form doldurabiliyor. Ayrıntı: [Cowork'e kendi tarayıcısı geldi](/haberler/2026-08-26-cowork-yerlesik-tarayici/).
+- **Telefondan görev:** Pro, Max, Ultra ve Team'de otomatik açık, Enterprise'ta kurum isterse açılır; görev bulutta sürer. Eski Dispatch ayrıdır ve yeni kullanıcıya kapalıdır, bkz. [Claude Mobil](/wiki/araclar/claude-mobil/).
+- **Claude in Chrome'daki Cowork tabanlı yan panel:** Max, Ultra ve Team'de, Pro'ya kademeli yayılıyor; Enterprise'ta yönetici açtıysa.
+- **Computer use:** beta (ilk çıkışta research preview); yalnız Pro, Max ve Ultra'da, masaüstü uygulamasında Cowork ve Claude Code içinde. Team ve Enterprise'ta yok. Ayrıntı: [Computer Use](/wiki/yetenekler/computer-use/).
+- **Yerleşik tarayıcı (masaüstü, 26 Ağustos 2026):** Claude, sizin sekmelerinize ve şifrelerinize dokunmayan kendi tarayıcısıyla Cowork yan panelinde sitelerde gezip form doldurabiliyor. Pro, Max, Ultra ve Team'de; Enterprise'ta yönetici Organization settings'ten yönetir. Ayrıntı: [Cowork'e kendi tarayıcısı geldi](/haberler/2026-08-26-cowork-yerlesik-tarayici/).
 
 Free planda Cowork yoktur. Hafıza 25 Ağustos 2026'dan beri sohbet ve Cowork arasında ortaktır, bkz. [Memory](/wiki/yetenekler/memory/).
 
-> **6 Ekim 2026'dan itibaren:** Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni görevler için bilgisayarın açık ve uyanık kalması gerekmiyor. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler yine masaüstü uygulaması ister. Eski görevler ile Team ve Enterprise için yardım merkezindeki güncel duyuruya bakın.
+> **6 Ekim 2026'dan itibaren:** Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni görevler için bilgisayarın açık ve uyanık kalması gerekmiyor. Ama bulut oturumu bilgisayarınızdaki dosyaya doğrudan erişmez: yerel klasör, yerel connector ve eklenti, Claude in Chrome ve computer use için masaüstü uygulaması açık ve bağlı olmalı, klasörleri elle eklersiniz. Bulutta kurulan zamanlanmış görev yerel klasör ve yerel connector kullanamaz; yerel klasörlü eski görevler yerelde çalışmaya devam eder (ayrıntı: [Scheduled Tasks](/wiki/araclar/scheduled-tasks/#nerede-çalışır-bulut-mu-bilgisayarınız-mı)). Oturumun ortasında bulut ve yerel arasında geçiş yapılmaz. Team ve Enterprise için yardım merkezindeki güncel duyuruya bakın.
 
 ## Sohbet ve Cowork: Hangi Tür İş Hangisine Yakın?
 
@@ -73,24 +74,24 @@ Skills, belirli bir görev tipi için önceden hazırlanmış uzmanlık paketler
 Plugins, skills + connector + subagent paketlerini bir araya getiren kurulabilir bileşenlerdir. Örneğin "Sales plugin" içinde satış aramaları hazırlama skill'i, müşteri araştırma skill'i ve CRM bağlantısı birlikte gelir. Bir departmanın ihtiyaçlarını tek pakette toplar.
 
 ### Connectors (Bağlayıcılar)
-Dış servislere kimlik doğrulamalı bağlantılardır: Slack, Google Drive, Gmail, Microsoft 365, Notion, Asana, ClickUp, birçok CRM platformu ve resmi dizindeki yaklaşık 900 connector'dan geri kalanı. Bir kere bağlarsınız, Claude bu servislere sizin adınıza okur ve yazar. Excel, PowerPoint ve Word'ün içinde çalışan eklentiler ayrı bir konudur: [Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
+Dış servislere kimlik doğrulamalı bağlantılardır: Slack, Google Drive, Gmail, Microsoft 365, Notion, Asana, ClickUp, birçok CRM platformu ve resmi dizindeki 1.000'i aşkın connector'dan geri kalanı. Bir kere bağlarsınız, Claude bu servislere sizin adınıza okur ve yazar. Excel, PowerPoint ve Word'ün içinde çalışan eklentiler ayrı bir konudur: [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
 
 ### Artifacts (Çıktılar)
 Artifact, Cowork yan panelinde açılan HTML sayfası, tablo ya da görseldir; satış pipeline'ı, haftalık performans özeti, stok durumu gibi şeyler için kullanılır. Cowork'te yeni artifact'ler standart artifact olarak oluşur ve içinde tam düzenleme yapabilirsiniz. Eskiden "canlı artifact" denen, her açılışta connector'lardan veri çeken biçim 19 Ağustos 2026'dan beri legacy: mevcutlar çalışmaya ve kuruluş içinde paylaşılmaya devam ediyor, ama yerinde düzenlenemiyor. Ayrıntı: [Artifacts (Yetenekler)](/wiki/yetenekler/artifacts/).
 
-Claude Design, Slides ve Docs ürünleri de bu ailede yer alır; ücretli planlarda (Pro, Max, Ultra, Team, Enterprise) beta olarak sunulur, Free planda yoktur. Enterprise'da yönetici açana kadar kapalıdır.
+Claude Design, Slides ve Docs ürünleri de bu ailede yer alır; 8 Ekim 2026'dan beri beta değil, Free dahil tüm planlarda varsayılan açık (Team ve Enterprise'ta owner kapatabilir). Bağlı veriden canlı pano kuran Claude Dashboards ücretli planlarda beta. Ayrıntı: [Claude Design](/wiki/yetenekler/claude-design/).
 
 ### Scheduled Tasks (Zamanlanmış Görevler)
 Sizin başlatmanıza gerek kalmadan belirli aralıklarla (günlük, haftalık, aylık) çalışan otomasyonlardır. Pazartesi sabah brifinginiz, Cuma akşam ekip raporu, siz bir şey yapmadan hazırlanır.
 
-### Dispatch (Uzaktan Görev)
-Telefonunuzdan bir görev gönderirsiniz, Claude masaüstünüzde çalışır ve sonucu hazırlar. Pro, Max ve Ultra'da sınırlı beta olarak sunuluyor, yeni kullanıcılara kapalı; mevcut kullanıcılar şimdilik kullanabiliyor. Yeni bir hesapta telefondan görev atmanın yolu mobil Cowork betasıdır. Ayrıntı: [Claude Mobil: telefondan görev](/wiki/araclar/claude-mobil/).
+### Telefondan Görev (ve eski Dispatch)
+Telefonunuzdan bir görev gönderirsiniz, Claude bulutta çalışır ve sonucu hazırlar; dizüstünüz kapalı olsa da iş sürer. Pro, Max, Ultra ve Team'de otomatik açık, Enterprise'ta kurum isterse açılır. Eski **Dispatch** (görevi masaüstünüzdeki Claude'a yaptıran eşleştirme) bazı Pro, Max ve Ultra hesaplarında sınırlı beta olarak kalıyor ve yeni kullanıcılara kapalı. Ayrıntı: [Claude Mobil: telefondan görev](/wiki/araclar/claude-mobil/).
 
 ### Subagent Koordinasyonu
 Karmaşık görevlerde Claude birden fazla alt ajan başlatabilir: biri araştırır, diğeri taslak yazar, üçüncüsü dosyaları kontrol eder. Sonuçlar tek çıktıda birleştirilir. Aynı mantık Claude Code'da da genel kullanıma açık alt ajanlar olarak vardır, bkz. [Alt Ajanlar](/wiki/yetenekler/agents-subagents/).
 
 ### Projects (Projeler)
-Cowork içinde ayrı çalışma alanları, her biri kendi dosyaları, bağlamı, hafızası ve zamanlanmış görevleriyle. "Q2 satış raporu" ile "şirket içi wiki" projelerini birbirine karıştırmazsınız.
+Cowork içinde ayrı çalışma alanları, her biri kendi dosyaları, bağlamı, hafızası ve zamanlanmış görevleriyle. "Q2 satış raporu" ile "şirket içi wiki" projelerini birbirine karıştırmazsınız. Yerel Cowork projesi bilgisayarınızda durur ve [claude.ai'deki Projects](/wiki/araclar/projects/) ile aynı şey değildir, ekiple paylaşılmaz; Anthropic iki yapıyı birleştirmeye başladı (Eylül 2026), hesabınızda hangisini gördüğünüzü kontrol edin.
 
 ## Bir Cowork Oturumu Nasıl İşler?
 
@@ -143,9 +144,9 @@ Cowork'ü kendi iş akışınıza uydurmak, basitten ileriye doğru üç katmand
 
 - **Connector'lar:** Cowork'ü Slack, Salesforce, Microsoft 365, Google Workspace gibi sistemlerinize bağlayın ki Claude verinizi okuyup yazabilsin.
 - **Talimatlar (Instructions):** Claude'un nasıl çalışacağını belirleyen sabit kurallar. Üç düzeyde verilebilir:
-  - **Global** (Settings → Cowork → Global instructions): her oturumda geçerli
+  - **Global** (Settings → General → "Instructions for Claude"; Cowork'ün eski "Global instructions" ayarı buraya birleşti): tüm sohbetlerde ve oturumlarda geçerli
   - **Proje**: sadece o projede geçerli
-  - **Organizasyon**: admin tarafından tüm şirkete uygulanır
+  - **Organizasyon**: BT, cihaz yönetimiyle Claude Desktop'a kuruluş geneli talimat ekler (en çok 3.000 karakter); sohbete, Cowork'e ve Claude Code'a eklenir, ama zorlayıcı bir kural değil, modele rehberdir
 
 **Katman 2: Süreç yakalama**
 
@@ -171,7 +172,7 @@ Bu, bir çalışana "Claude şirket verilerine özgürce erişebilir" anlamına 
 ## İlgili Sayfalar
 
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Cowork'ün masaüstü uygulaması
-- [Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/): Excel, PowerPoint, Word, Outlook ve tarayıcı
+- [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/): Excel, PowerPoint, Word, Outlook ve tarayıcı
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Yerel Cowork oturumunun klasörden okuduğu talimat dosyası
 - [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Profil talimatı, proje, klasör ve hafıza karşılaştırması
 - [Skills](/wiki/yetenekler/skills/): Cowork'teki yetenek paketleri

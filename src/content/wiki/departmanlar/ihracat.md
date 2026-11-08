@@ -1,6 +1,6 @@
 ---
 title: "İhracat ve Uluslararası Ticaret: Claude Uygulamaları"
-seoTitle: "İhracatta Claude: LOI, FCO, SPA, LC ve Proforma Taslakları"
+seoTitle: "İhracatta Claude: LOI, FCO, SPA, LC, Proforma"
 description: "İhracat ve emtia ticareti için Claude: LOI, FCO, SPA, CIS, NCNDA, pazar istihbaratı, LC uyuşmazlıkları, Incoterms tutarlılığı, proforma fatura."
 tags:
   - departmanlar
@@ -10,7 +10,7 @@ tags:
   - spa
   - lc
   - incoterms
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Bu bölüm, Türkiye'den emtia ihracatı yapan firmalar için somut iş akışlarına odaklanır. Kükürt, bitümen, sepiyolit ve üre gibi emtiaların uluslararası ticareti, LOI/FCO/SPA aşamaları, akreditif yazışmaları ve gümrük süreçleri pratik örneklerle ele alınır.
@@ -100,7 +100,7 @@ Resmi ticari faturadan önce birçok ticaret işlemi proforma fatura gerektirir;
 
 Emtia ticaretinin en zor anlarından biri: banka, Letter of Credit kapsamındaki belgeleri uyuşmazlık nedeniyle reddeder. Tüccar, düzenleyen bankaya, alıcıya ya da her ikisine **hızlı ve kesin bir dille** yanıt vermek zorundadır.
 
-Claude, tüccarın uyuşmazlık tanımından ve pozisyonundan bir yanıt taslağı çıkarır; **tüccar göndermeden önce inceler**.
+Claude, tüccarın uyuşmazlık tanımından ve pozisyonundan bir yanıt taslağı çıkarır; **tüccar göndermeden önce inceler**. Bankanın uyuşmazlık bildirimini (PDF ya da tarama) ve LC metnini birlikte yüklerseniz Claude, bildirilen her uyuşmazlığı LC maddesiyle karşılaştırıp tablo yapar; taranmış belgede okuma hatası olabilir, rakam ve tarihleri aslından kontrol edin ([Dosya İşleme](/wiki/yetenekler/file-handling/)).
 
 > **Bu, yanlış seçilmiş kelimelerin gerçek para kaybına yol açabildiği bir durumdur.**
 
@@ -151,6 +151,7 @@ Forward kontratlar, opsiyonlar veya swap'lar ile emtia fiyat riskini hedge eden 
 
 - **SPA madde hatası:** Bağlayıcı sözleşmede yanlış bir madde gerçek para kaybettirir. Claude'un taslağını her zaman tüccar ve hukuk müşaviri inceler.
 - **Yaptırım listeleri:** Claude güncel yaptırım listelerini bilmiyor olabilir. Alıcıyı ve ülkeyi OFAC, AB ve BM listelerinden ayrıca kontrol edin.
+- **Ticari sır.** Alıcı adı, fiyat ve banka bilgisi ticari sırdır; taslağı hazırlarken gerekmiyorsa yer tutucu (`[ALICI]`, `[FİYAT]`) kullanın. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil. Çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Banka enstrümanı dili:** LC, MT760, MT799 gibi mesajların dili çok özeldir. Claude'un taslağını bankanın kendi şablonuyla kıyaslamadan göndermeyin.
 
 ## Gerçek Örnek: LOI Hazırlığı
@@ -167,8 +168,6 @@ Bir alıcı Akmin'e e-posta gönderdi: "200 ton sepiyolit, Kıbrıs limanı tesl
 **Adım 4:** Hukuki danışman göndermeden önce son kontrolü yapar.
 
 **Adım 5:** Alıcıya gönderilir.
-
-Toplam süre: yaklaşık 12 dakika (örnek senaryo). Geleneksel süreç: eski LOI'yi kopyalayıp uyarlayarak 1-1,5 saat.
 
 **Süre:** LOI için elle 60-90 dakika, Claude ile 15-20 dakika (tüccar kontrolü dahil; hukuk incelemesi ayrı). Yabancı dilde alıcı yazışmasında kazanç daha büyük olabilir: bir vakada satış müdürünün 4 saat süren Almanca ve Rusça yazışması 15 dakikaya inmiş ([ölçüm vakaları](/wiki/temeller/olcum-metrikleri/)). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 

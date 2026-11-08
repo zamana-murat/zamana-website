@@ -140,7 +140,7 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 | Yönetici paneli (Organization settings) kullanım metrikleri | IT / Admin | Aylık |
 | Çalışan tatmin anketi (NPS benzeri) | İK | Çeyreklik |
 
-[Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında Anthropic admin paneli üzerinden gelen metrikler anlatılır.
+[Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında Anthropic admin paneli üzerinden gelen metrikler anlatılır. Enterprise'ta 28 Ekim 2026'dan beri akıllı raporlar ve uygulama içi anketler de var; haftalık mini anketi ayrı bir form yerine Claude'un içinden sormak için bu araç kullanılabilir.
 
 ## Kalite Tuzakları: Ölçümde Düzeltilecekler
 

@@ -6,7 +6,7 @@ tags:
   - prompting
   - few-shot
   - ornek
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Bir kavramı öğretmenin en güçlü yolu örnek göstermektir.** Claude için de öyle. Soyut bir kuralı tarif etmek yerine "şuna benzer üret" demek, sonucu daha tutarlı yapar ve sürprizleri azaltır.
@@ -158,16 +158,19 @@ Tüm örnekler aynı yapıda olsun, başlık aynı, etiket aynı, alanlar aynı.
 
 3 mükemmel örnek, 10 ortalama örnekten iyidir. Kalite sayıyı yener.
 
+### 6. Örnekleri Claude'a Denetletin
+
+Anthropic'in prompt rehberi, örnekleri Claude'a değerlendirtmeyi ya da onlardan yola çıkarak yenilerini ürettirmeyi de önerir: *"Bu dört örnek, sınıflandırma kuralımı yeterince çeşitli gösteriyor mu? Eksik kalan vaka türünü söyle ve onun için bir örnek öner."* Önerilen örneği kendiniz kontrol etmeden setinize eklemeyin.
+
 ## Örneği Nereye Koymalı?
 
 - **Prompt içinde:** o göreve özel örnekler.
 - **Kalıcı bir yerde:** her seferinde yapıştırmak istemediğiniz örnekler (marka sesi, format örnekleri). Hangi yerin neyi kapsadığı kullandığınız araca göre değişir:
   - **Tüm sohbetleriniz için:** profil talimatı ("Instructions for Claude", Settings > General).
   - **Tek bir iş/müşteri için:** [Claude Projesi](/wiki/araclar/projects/) talimatı ya da proje dosyası; yalnız o projenin sohbetlerinde geçerlidir.
-  - **Cowork'te:** global talimat ve klasör talimatı.
-  - **Claude Code'da:** CLAUDE.md dosyası. CLAUDE.md Claude Code'un mekanizmasıdır, claude.ai sohbetinde okunmaz.
+  - **Klasörle çalışırken (yerel Cowork, Claude Code):** klasördeki CLAUDE.md dosyası. claude.ai sohbetinde okunmaz; Cowork'ün genel talimatı ise profil talimatıyla aynı ayardır.
 
-Çoğu durumda ikisi birlikte kullanılır: kalıcı yer genel tarzı belirler, prompt o günün işine özelleşir. Kalıcı talimat yerlerinin karşılaştırması [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasında.
+Çoğu durumda ikisi birlikte kullanılır: kalıcı yer genel tarzı belirler, prompt o günün işine özelleşir. Kalıcı talimat yerlerinin karşılaştırması [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasında.
 
 CLAUDE.md kullanıyorsanız örneklerin dosyaya nasıl gömüleceği için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasına bakın.
 
@@ -302,8 +305,8 @@ Ham veri: [gerçek veri]
 - [Prompt Kataloğu](/wiki/prompting/prompt-katalogu/): Hazır şablonlar
 - [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/): Türkçe için
 - [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/): Örnekleri geliştirme döngüsü
-- [İleri Seviye](/wiki/prompting/ileri-seviye/): Many-shot ve advanced teknikler
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat yerleri
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md'ye gömme (Claude Code)
+- [İleri Seviye](/wiki/prompting/ileri-seviye/): XML etiketleri, zincirleme ve eleştirmen
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat yerleri
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Rol bazlı hazır kalıcı talimat metinleri
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Few-shot tuzakları
 

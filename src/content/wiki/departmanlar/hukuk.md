@@ -1,6 +1,6 @@
 ---
 title: "Hukuk ve Uyum: Claude Uygulamaları"
-seoTitle: "Hukukta Claude: Sözleşme İnceleme, KVKK Talebi ve Hukuk Bürosu"
+seoTitle: "Hukukta Claude: Sözleşme, KVKK ve Hukuk Bürosu"
 description: "Hukuk müşaviri için Claude: sözleşme taslağı, madde çıkarımı, KVKK talepleri, iç memo. Çerçeve net: Claude yazar, avukat gözden geçirir."
 tags:
   - departmanlar
@@ -8,7 +8,7 @@ tags:
   - kvkk
   - ttk
   - sozlesme
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Hukuk, Claude'un büyük zaman tasarrufu sağlayabildiği ama en katı disiplini gerektiren departmandır.
@@ -34,7 +34,7 @@ Ticari şartlar girilir; madde madde, mantıksal sırayla, uygun hukuki dille ya
 
 ### Madde Çıkarımı
 
-Uzun bir sözleşmeyi verir ve Claude'dan her mücbir sebep maddesini, cezai şartı, ödeme koşulunu, fesih hakkını ve yetkili mahkeme maddesini **bulmasını, alıntılamasını ve özetlemesini** istersiniz. Tipik beklenti: 40 sayfalık bir sözleşmede madde çıkarımı elle 2-3 saat, Claude ile 20-30 dakika (Zamana eğitim materyali, tahmini aralık). Her alıntıyı sözleşme metninden kontrol etmek bu sürenin dışındadır ve atlanmaz.
+Uzun bir sözleşmeyi verir ve Claude'dan her mücbir sebep maddesini, cezai şartı, ödeme koşulunu, fesih hakkını ve yetkili mahkeme maddesini **bulmasını, alıntılamasını ve özetlemesini** istersiniz. Tipik beklenti: 40 sayfalık bir sözleşmede madde çıkarımı elle 2-3 saat, Claude ile 20-30 dakika (Zamana eğitim materyali; tahmini tipik aralık). Her alıntıyı sözleşme metninden kontrol etmek bu sürenin dışındadır ve atlanmaz.
 
 ### Sözleşme Karşılaştırma
 
@@ -105,12 +105,34 @@ Claude, kanuna uygun bir ilk taslak yanıt üretir; **hukuk, göndermeden önce 
 - `legal:review-contract`: sözleşme inceleme ve redline
 - `legal:triage-nda`: hızlı NDA sınıflandırma
 
+**Claude for Legal (12 Mayıs 2026 duyurusu):** "Hukuk modu" adında ayrı bir mod yoktur; hukuk için hazır paket Claude for Legal adını taşır. 12 pratik alan plugin'i içerir (açık kaynak, `anthropics/claude-for-legal`). Her biri ilk kurulumda sizden playbook, tırmandırma zinciri, risk kalibrasyonu ve üslup bilgisini ister:
+- **Commercial:** ticari sözleşmeler
+- **Corporate:** şirket hukuku işleri
+- **Employment:** iş hukuku
+- **Privacy:** kişisel veri ve gizlilik
+- **Product:** ürün hukuku
+- **Regulatory:** düzenleyici uyum
+- **AI Governance:** yapay zekâ yönetişimi
+- **IP:** fikri mülkiyet
+- **Litigation:** dava süreçleri
+- **Law Student:** hukuk öğrencisi
+- **Legal Clinic:** hukuk kliniği
+- **Legal Builder Hub:** kendi hukuk plugin'inizi kurmak için
+
+Eski Legal plugin'i (`anthropics/knowledge-work-plugins/legal`) hâlâ yayında ve beş komut sunar: `/review-contract`, `/triage-nda`, `/vendor-check`, `/brief`, `/respond`. Resmi kaynaklarda biri diğerinin yerini aldı denmiyor.
+
+**Legal artifacts (28 Ekim 2026):** hazır etkileşimli araçlar galerisi: tablo bazlı sözleşme incelemesi (her cevap kaynak pasaja bağlı), playbook sapma panosu, mevzuat takibi, hukuk talep girişi, yargı alanı matrisi, dosya takibi ve atıf kontrolü. Bazıları ABD eyalet kurallarına bağlıdır. Yayın makalesi ürünü Claude Enterprise olarak etiketler ve Enterprise yöneticilerinin çalışma alanı ayarlarından açabildiğini söyler; diğer planlarda durum resmi kaynakta belirtilmiyor.
+
+**Connector'lar:** 20'den fazla hukuk connector'ı var (ör. Harvey, Docusign, Ironclad, iManage, NetDocuments, Box, Everlaw, Relativity; Thomson Reuters CoCounsel pilot olarak). Çoğu ABD ve AB pazarına yöneliktir. Resmi kaynakta Türk hukuk veri tabanı connector'ı (UYAP, Kazancı, Lexpera gibi yerli sistemler için) anılmıyor; bu sistemlerdeki belgeleri siz indirip yüklersiniz.
+
+Kullanım: Word'de playbook'a karşı değişiklik izlemeli redline, Outlook'ta talep sınıflandırma ve yanıt taslağı, Cowork'ta zamanlanmış mevzuat taraması. Çıktılar avukat incelemesi için taslaktır; connector'dan gelmeyen, yalnız model bilgisine dayanan atıflar `[verify]` ile işaretlenir.
+
 **Connector'lar:**
-1. **Microsoft 365 / Google Workspace**: sözleşme depolama ve düzenleme. Word eklentisi genel kullanımdadır ([Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/)).
+1. **Microsoft 365 / Google Workspace**: sözleşme depolama ve düzenleme. Word eklentisi genel kullanımdadır; Google Docs içinde çalışan eklenti genel beta aşamasında, ücretli planlarda ve açık belgede düzenlemeyi onayınızla yapar ([Office, Google ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/)).
 2. **DocuSign**: imza süreçleri
 3. **Outlook**: resmi yazışmalar (Outlook eklentisi public beta)
 
-> **Not:** `legal:*` skill'leri Anthropic'in resmi plugin deposundaki (`anthropics/knowledge-work-plugins`) Legal plugin'inden gelir, örneğin `legal:review-contract` ve `legal:triage-nda`. Eklentinin sunduğu diğer skill'leri kurmadan önce plugin sayfasından kontrol edin; imza yönlendirme ve brifing gibi işler için kendi skill'inizi de yazdırabilirsiniz. Hukuk alanında hazır eklenti ve ajanlar için [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) da bir başlangıç noktasıdır.
+> **Not:** `legal:*` skill'leri Anthropic'in resmi plugin deposundaki (`anthropics/knowledge-work-plugins`) Legal plugin'inden gelir, örneğin `legal:review-contract` ve `legal:triage-nda`. Eklentinin sunduğu diğer skill'leri kurmadan önce plugin sayfasından kontrol edin; imza yönlendirme ve brifing gibi işler için kendi skill'inizi de yazdırabilirsiniz. Hukuk alanında hazır eklenti ve ajanlar için [Claude Marketplace](/kurumsal/marketplace/) da bir başlangıç noktasıdır: ortak ürünleri arasında Harvey ve Legora gibi hukuk araçları var, 4 Kasım 2026'da eklenen 14 ürünle ortak ürün sayısı 25'i geçti. Bu ürünler kendi sağlayıcılarının sözleşme ve veri koşullarına tabidir; kurmadan önce bilgi güvenliği ve KVKK açısından ayrıca değerlendirin.
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
@@ -147,7 +169,9 @@ Büro pratiğinde öne çıkan işler:
 - **Arabuluculuk yazışması.** Başvuru metni, davet yazısı ve görüşme sonrası özet notları. Anlaşma ya da son tutanak metnini mutlaka avukat kontrol eder.
 - **Dilekçe ve içtihat çalışması.** Taslak ve araştırma notu hazırlanır; atıf yapılan karar ve madde numaraları resmî kaynaktan tek tek doğrulanır.
 
-Müvekkil verisini anonimleştirmeden girmeyin. Büro olarak Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil, ama kişisel hesaplarda veri ayarları herkesin kendi elindedir. Hukuk bürolarına yönelik program için [Hukuk Büroları programı](/programlar/hukuk-burolari/) sayfasına bakın.
+Müvekkil verisini anonimleştirmeden girmeyin. Büro olarak Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil, ama kişisel hesaplarda veri ayarları herkesin kendi elindedir. Enterprise'ta projelere müvekkil dosya numarası gibi etiketler verilip Claude harcaması etikete göre izlenebilir (6 Kasım 2026'dan beri beta; HIPAA, müşteri yönetimli anahtar ya da zero data retention kullananlar gibi bazı kuruluşlarda kullanılamaz) ([Proje Etiketiyle Maliyet Takibi](/wiki/temeller/takim-ve-admin/#proje-etiketiyle-maliyet-takibi-beta)). Hukuk bürolarına yönelik program için [Hukuk Büroları programı](/programlar/hukuk-burolari/) sayfasına bakın.
+
+Claude for Legal'in varsayılan playbook örnekleri ABD eyalet hukukuna (Delaware, New York, California) dayanır. Büro olarak kendi standart, yedek ve kabul edilemez maddelerinizi Türk hukukuna (TTK, Borçlar Kanunu, KVKK) göre playbook'a yazmanız gerekir; hazır kural setini olduğu gibi kullanmayın.
 
 ## Sık Hatalar
 

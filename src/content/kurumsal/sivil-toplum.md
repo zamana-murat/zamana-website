@@ -7,7 +7,7 @@ lead: "Claude, sivil toplum kuruluşlarının en çok zaman alan yazı ve veri i
 heroImage: "/images/kurumsal/sivil-toplum/hero.webp"
 heroAnimation: "sivil-toplum"
 heroAlt: "Kurgusal bir afet dayanışma derneğinin çalışanı saha raporunu ekleyip Claude'dan hibe başvurusunun beklenen sonuçlar bölümünü istiyor. Claude raporu okuyor, girdi, faaliyet, çıktı ve sonuç kutularıyla mantıksal çerçeve kuruyor, ardından kelime sınırına uyan bir taslak bölüm hazırlıyor. Veriler kurgusaldır."
-availability: "Anthropic'in sayfasına göre Team planında kâr amacı gütmeyen fiyat kullanıcı başına aylık 8 dolar, düşük ve orta gelirli ülkelerde 3 dolar; 20 kişiden küçük kuruluşlar Goodstack ile doğrulanır. Enterprise için satış ekibi"
+availability: "Anthropic'in sayfasına göre Team planında kâr amacı gütmeyen fiyat kullanıcı başına aylık 8 dolar, düşük ve orta gelirli ülkelerde 3 dolar; 2 ile 150 koltuk arası kuruluşlar Goodstack ile doğrulanır. Enterprise için satış ekibi"
 sourceUrl: "https://claude.com/solutions/nonprofits"
 sourceTitle: "Claude for Nonprofits"
 related:
@@ -18,14 +18,14 @@ related:
   - { label: "Fatura ve KDV (wiki)", href: "/wiki/temeller/fatura-ve-kdv/" }
   - { label: "Öğretmenler", href: "/kurumsal/ogretmenler/" }
 order: 160
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?
 
 Sivil toplum kuruluşlarında az sayıda insan çok iş yapar: aynı ekip hem sahada çalışır hem hibe başvurusu yazar, hem gönüllüleri organize eder hem bağışçıya rapor verir. Anthropic'in sivil toplum sayfası Claude'u tam bu yükü hafifletmek için konumluyor: kısıtlı kaynağı somut sonuca çevirmek, yüzlerce yararlanıcının izlendiği programları takip etmek ve personelin zamanını topluma hizmete geri vermek.
 
-Sayfa üç şey sunuyor: kurumsal Claude'u kâr amacı gütmeyen fiyatla (Team ve Enterprise planlarında), sektörün kullandığı araçlarla bağlantılar ve ücretsiz bir "sivil toplum için yapay zeka okuryazarlığı" kursu (İngilizce, Anthropic Academy'de).
+Sayfa üç şey sunuyor: kurumsal Claude'u kâr amacı gütmeyen fiyatla (Team ve Enterprise planlarında), sektörün kullandığı araçlarla bağlantılar ve ücretsiz bir "sivil toplum için yapay zeka okuryazarlığı" kursu (İngilizce, Claude Academy'de).
 
 ## Vakıf ve dernekler ne için kullanır?
 
@@ -37,15 +37,17 @@ Kaynak sayfadaki kullanımlar, Türkiye'deki kuruluşların işine uyarlanmış 
 - **Gönüllü yönetimi:** Gönüllü görev tanımları, oryantasyon belgesi, vardiya planı, afet anında hızlıca dağıtılacak görev kartları.
 - **Veri ve raporlama:** Anket sonuçlarını analiz etmek, bağışçıya ve yönetim kuruluna dönemsel rapor, faaliyet raporu grafikleri.
 
-![Kâr amacı gütmeyen indirim için başvuru akışı: kuruluş türü vakıf veya dernek mi, kişi sayısı 20'den az mı, Goodstack doğrulaması, ardından Team planında 8 dolar ya da düşük ve orta gelirli ülkeler için 3 dolar; 20 ve üzeri kişide satış ekibi; Türkiye için doğrulanmamış adımlar işaretli](/images/kurumsal/sivil-toplum/indirim-akisi.webp)
-
 ## İndirim: kimler, ne kadar, Türkiye'den olur mu?
 
 **Anthropic'in sayfasına göre:**
 
 - **Fiyat:** Team planında "Nonprofit standard" kullanıcı başına aylık 8 dolar, "Nonprofit access" düşük veya orta gelirli ülkelerdeki kuruluşlar için kullanıcı başına aylık 3 dolar. Normal Team Standard koltuğu aylık 25 dolar, yıllık ödemede 20 dolardır. İndirimli Team fiyatı en az 2 koltuk gerektirir ve 2 ile 150 koltuk arası içindir.
-- **Kimler:** Kayıtlı kâr amacı gütmeyen kuruluşlar (ABD'deki 501(c)(3) statüsü ve diğer ülkelerdeki karşılıkları), devlet ve özel K-12 okulları ve ABD'deki bazı kırsal sağlık kuruluşları.
-- **Nasıl:** 20 kişiden küçük kuruluşlar doğrulama ortağı Goodstack üzerinden birkaç dakikada doğrulanıyor, indirim kayıtta uygulanıyor. 20 ve üzeri kişide satış ekibine yönlendiriliyor. Enterprise için de satış ekibi.
+- **Kimler:** Kayıtlı kâr amacı gütmeyen kuruluşlar (ABD'deki 501(c)(3) statüsü ve diğer ülkelerdeki karşılıkları), devlet ve özel K-12 okulları ve ABD'deki bazı kırsal sağlık kuruluşları. Devlet kurumları, siyasi kampanyalar, yükseköğretim kurumları ve sağlık sistemleri uygun değil; üniversiteler için [Yükseköğretim](/kurumsal/yuksekogretim/) sayfasına bakın.
+- **Nasıl:** Team planında (2 ile 150 koltuk) doğrulama ortağı Goodstack üzerinden 2-3 dakikada doğrulanıyor; onaydan sonra gelen e-postayla kurulum indirim uygulanmış olarak tamamlanıyor. Enterprise müşterilerini Anthropic'in kâr amacı gütmeyenler satış ekibi doğruluyor.
+- **Hazır paket:** Doğrulanan her kuruluşa "Claude for Nonprofits" plugin'i kurulu geliyor. Yaklaşık 30 kuruluşla birlikte hazırlanan 14 skill dört alanı kapsıyor: kuruluşu tanıma (kayıtların nerede durduğu, ses rehberi, yapay zeka politikası), pazarlama (kampanya planı, içerik inceleme, sunum), ekip (iş ilanı, mülakat rehberi, işe alıştırma, yönetim kurulu üyesi arama) ve fon geliştirme (fon ve hibe araştırması, başvuru yazımı, hibe raporu, bağışçı ilişkileri). Salesforce, Blackbaud, Benevity ve Candid gibi connector'larla çalışıyor. Skill'ler ABD'li küçük bir hayır kurumunu varsayarak başladığı için Türk vakıf ve dernek mevzuatına göre uyarlamak gerekir.
+- **Ekim 2026 genişlemesi:** Anthropic 26 Ekim 2026'da plugin'in Team ve Enterprise kâr amacı gütmeyen planlarına ek ücret olmadan otomatik kurulduğunu duyurdu. Bu planlar standart Team ve Enterprise ile aynı modelleri kullanıyor, Claude Code da ek ücretsiz dahil. Düşük ve orta gelirli ülkelerdeki doğrulanmış kuruluşlar için yaklaşık yüzde 90'lık indirim (Team koltuğu aylık 3 dolar) Eylül 2026'da duyurulmuştu. Aynı duyurudaki Claude Corps gönüllü uzman programı yalnız ABD'deki kuruluşlar için. ([Kaynak](https://claude.com/resources/articles/expanding-claude-for-nonprofits))
+
+![Türkiye'deki bir vakıf veya dernek için dört adımlı başvuru akışı: kuruluş türünün Goodstack'in Türkiye tanımına uyması, 2 ile 150 koltuk arası Team planı için Goodstack doğrulaması, kullanıcı başına aylık 8 dolar ya da düşük ve orta gelirli ülkelerde 3 dolarlık fiyat ve doğrulanan kuruluşa kurulu gelen 14 skill'li Nonprofits plugin'i; Türkiye'den onaylı başvuru ve Türkiye'nin hangi fiyata girdiği teyit edilmemiş](/images/kurumsal/sivil-toplum/indirim-akisi.webp)
 
 **Türkiye açısından ne biliyoruz, ne bilmiyoruz:**
 
@@ -69,7 +71,7 @@ Anthropic'in aktardığına göre MyFriendBen, Claude ile işini dört kat hızl
 
 - **Yararlanıcı verisi hassastır.** Afetzede, mülteci, engelli veya hasta yararlanıcıların kimlik, sağlık ve durum bilgileri KVKK kapsamında kişisel veridir, bir kısmı özel nitelikli veridir. Raporlamada anonimleştirilmiş veya toplulaştırılmış veriyle çalışın.
 - **Bağışçı listesi kişisel veridir.** Kampanya için bağışçı segmentasyonu yapacaksanız ad, telefon ve e-posta yerine kodlanmış kimlik kullanın.
-- **Plan farkı:** Team planında girdiler ve çıktılar varsayılan olarak model eğitiminde kullanılmaz ve veri işleme sözleşmesi (DPA) ticari şartlara dahildir. Kişisel Free veya Pro hesaplarda bu ayarı kullanıcı seçer; kuruluş işinde kişisel hesap yerine Team tercih edin. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
+- **Plan farkı:** Team planında girdiler ve çıktılar varsayılan olarak model eğitiminde kullanılmaz ve veri işleme sözleşmesi (DPA) ticari şartlara dahildir. Kişisel Free, Pro, Max veya Ultra hesaplarda bu ayarı kullanıcı seçer; kuruluş işinde kişisel hesap yerine Team tercih edin. Ayrıntı: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Hukuki teyit:** Veri yurt dışında işlenir. Aydınlatma metni ve yurt dışı aktarım dayanağını hukuk danışmanınızla teyit edin.
 
 Ekibinize hibe yazımı, raporlama ve gönüllü koordinasyonu için uygulamalı Claude eğitimi düşünüyorsanız Zamana'nın [kurumsal programına](/programlar/kurumsal/) bakabilirsiniz.

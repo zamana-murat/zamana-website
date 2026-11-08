@@ -1,6 +1,6 @@
 ---
 title: "Kamu kurumları için Claude"
-seoTitle: "Kamu Kurumları ve Belediyelerde Claude: Türkiye'de Gerçekçi Tablo"
+seoTitle: "Kamu Kurumları ve Belediyelerde Claude Rehberi"
 description: "Claude'un kamu teklifleri ABD odaklıdır. Türk kamu kurumu ve belediyesi için veri sınıflandırması, 2019/12 Genelgesi, satın alma yolu ve kullanım örnekleri."
 eyebrow: "Sektör"
 lead: "Anthropic'in kamu sayfası ağırlıkla ABD kurumlarına yönelik: FedRAMP yetkisi, ABD'ye özel ürün ve fiyatlandırma. Bunların Türkiye'de karşılığı yok. Türk kamu kurumu Claude'u ancak ticari planlarla, kamuya açık ya da anonimleştirilmiş veriyle ve kendi bilgi güvenliği kurallarının izin verdiği ölçüde kullanabilir."
@@ -18,7 +18,7 @@ related:
   - { label: "Kodlama için Claude", href: "/kurumsal/kodlama/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 110
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Kaynak sayfa ne anlatıyor?
@@ -33,7 +33,7 @@ Sayfanın asıl teklifleri ABD kamu sistemine bağlı. Bir Türk kurumunun bunla
 
 - **Claude for Government:** ABD federal, eyalet ve yerel kurumları ile onlara hizmet veren yükleniciler için ayrı bir ürün. FedRAMP High yetkisine sahip, masaüstü uygulaması ve Claude Code içeriyor.
 - **FedRAMP ve DoD IL4/IL5:** ABD federal hükümetinin bulut güvenlik yetkilendirmeleridir. Türk mevzuatında karşılığı yoktur, Türk kurumu için bir onay anlamı taşımaz. Kaynak sayfa, ticari Claude Enterprise ve Anthropic'in doğrudan sunduğu API'nin bugün FedRAMP yetkili olmadığını da ayrıca belirtiyor.
-- **Kamuya özel fiyat:** Claude for Government'ta koltuk ücreti yok, önceden ödenen kullanım ve aşılamaz harcama tavanı var. Bu fiyat modeli ABD kurumları içindir.
+- **Kamuya özel fiyat:** Claude for Government'ta koltuk ücreti yok, önceden ödenen kullanım ve aşılamaz harcama tavanı var. Bu fiyat modeli ABD kurumları içindir. Ekim 2026'da ABD Genel Hizmetler İdaresi (GSA) ile duyurulan yüzde 40 indirim de yalnız ABD'deki federal, eyalet ve yerel kamu kurumlarına uygulanır; Türk kamu kurumları bu indirimden yararlanamaz.
 - **ABD bulut kanalları:** Claude API'nin Amazon Bedrock (AWS GovCloud) ve Google Vertex AI (Assured Workloads) üzerinden FedRAMP High yetkili kullanımı da ABD kamu sistemine yöneliktir.
 
 Türk kamu kurumunun önünde olan seçenekler, herkese açık ticari planlardır: Team veya Enterprise. Bu planlarda girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz, Anthropic'in veri işleme sözleşmesi (DPA) ticari şartlara dahildir. Enterprise'da koltuk başına aylık 20 dolar ödenir, kullanım ayrıca API fiyatıyla faturalanır ([Planlar](/wiki/temeller/planlar/)).
@@ -56,7 +56,7 @@ Bu sayfa hukuki görüş değildir. Mevzuatın kurumunuza nasıl uygulanacağın
 
 Kamu kurumlarının en çok takıldığı yer burası:
 
-- **Ödeme ABD doları ile, Anthropic'e yapılır.** Anthropic'in Türkiye'de ofisi ya da resmi temsilcisi yok. Türkiye'de Claude koltuklarını yeniden satmaya yetkili bir bayi de doğrulayamadık.
+- **Ödeme ABD doları ile, Anthropic'e yapılır.** Anthropic'in Türkiye'de ofisi ya da resmi temsilcisi yok.
 - **TL faturalı bir satın alma yolunu doğrulayamadık.** Team ve Enterprise'ın üçüncü taraf üzerinden yeniden satışı Anthropic'in yazılı onayına bağlı ve Türkiye'de yetkili bir bayi doğrulanmadı. Zamana, Anthropic'in temsilcisi ya da bayisi değildir ve abonelik satmaz.
 - **Yurt dışı hizmet alımı:** Doğrudan temin, kredi kartıyla yurt dışı ödeme, sorumlu sıfatıyla KDV ve kur farkı gibi konuları kurumun mali hizmetler birimiyle önceden netleştirin. Vergi tarafı için: [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/).
 - **Kurumsal sözleşme:** Enterprise için Anthropic'in satış ekibiyle doğrudan görüşülür; sözleşme tarafı Anthropic'tir.

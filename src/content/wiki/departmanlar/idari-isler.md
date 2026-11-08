@@ -1,13 +1,13 @@
 ---
 title: "İdari İşler: Claude Uygulamaları"
-seoTitle: "Yönetici Asistanı İçin Claude: Toplantı Tutanağı, Brifing, E-posta"
+seoTitle: "Yönetici Asistanı için Claude: Tutanak, Brifing"
 description: "Yönetici asistanı ve idari personel için Claude: yazışma, toplantı tutanakları, yönetici brifingi, seyahat planı, yönetim kurulu paketi."
 tags:
   - departmanlar
   - idari-isler
   - yonetici-asistani
   - toplanti
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Yönetici asistanı ve idari personel, Claude ile haftada saatlerce zaman kazanabilir. Bu zaman, **zaten yapmaları gereken ama vakit bulamadıkları** yüksek değerli işlere gider.
@@ -25,7 +25,7 @@ Yönetici asistanı ve idari personel, Claude ile haftada saatlerce zaman kazana
 
 ### Profesyonel E-posta Taslağı
 
-Bağlam ve istenen sonuç girilir, parlatılmış bir taslak çıkar. **Asistan artık her e-posta için kelime seçmekle uzun uzun uğraşmaz.** **Süre:** tek bir önemli e-posta için elle 15-20 dakika, Claude ile 3-5 dakika (Zamana eğitim materyali, tahmini aralık).
+Bağlam ve istenen sonuç girilir, parlatılmış bir taslak çıkar. **Asistan artık her e-posta için kelime seçmekle uzun uzun uğraşmaz.** **Süre:** tek bir önemli e-posta için elle 15-20 dakika, Claude ile 3-5 dakika. *Zamana gözlemi, tipik aralık.*
 
 ### Çok Partili Koordinasyon E-postaları
 
@@ -59,7 +59,7 @@ Uluslararası kontaklar için İngilizce (veya tersine Türkçe) iletişim tasla
 
 **Brifing belgeleri.** Yöneticiyi toplantı, görüşme ve sunumlara hazırlamak: kiminle buluşuyor, neden, ne bilmesi gerekir, neyi **söylememesi** gerekir, istenen sonuç ne.
 
-**Sunum desteği.** Slayt içeriğini yapılandırmak ve yöneticinin okumadan, güvenle sunmasına yardım eden konuşmacı notları yazmak. Claude'un PowerPoint eklentisi bu işi doğrudan sunum dosyasının içinde yapabilir, bkz. [Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/).
+**Sunum desteği.** Slayt içeriğini yapılandırmak ve yöneticinin okumadan, güvenle sunmasına yardım eden konuşmacı notları yazmak. Claude'un PowerPoint eklentisi bu işi doğrudan sunum dosyasının içinde yapabilir; Google Slaytlar kullanıyorsanız Google Workspace eklentisi (genel beta, ücretli planlarda) aynı işi görür, bkz. [Office, Google ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/).
 
 **Takvim ve öncelik yönetimi.** Zamanlama, reddetme ve yeniden zamanlama için profesyonel yanıtlar: ilişkileri koruyan ama **yöneticinin zamanını da koruyan** bir dille.
 
@@ -102,6 +102,7 @@ Claude **paketi yapılandırır, kapak özetlerini yazar ve eksik bir belge olup
 ## İş Akışı Yeniden Tasarımı Adayları
 
 - **Sabah e-posta yönetim seansı**: gelen kutusu → öncelikleme → taslak yanıtlar
+- **Yoldayken iş atama**: toplantıdan çıkarken telefondan "şu notları tutanağa çevir" diyebilirsiniz. Cowork'ün telefondan görev özelliği Pro, Max, Ultra ve Team'de otomatik açıktır; görev bulutta çalışır, bilgisayarınızdaki dosyalar gerekiyorsa Desktop'ın açık ve bağlı olması gerekir ([Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch))
 - **Toplantı hazırlık → tutanak → takip döngüsü**: her toplantının tam döngüsü
 - **Seyahat koordinasyon iş akışı**: rezervasyon → seyahat programı → dönüş sonrası gider raporu
 - **Yönetim kurulu hazırlık döngüsü**: çeyreklik tam paket üretimi

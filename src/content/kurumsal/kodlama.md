@@ -1,6 +1,6 @@
 ---
 title: "Kodlama: yazılım ekiplerinde Claude"
-seoTitle: "Kodlamada Claude: Yazılım Ekipleri ve Eski Sistem Modernizasyonu"
+seoTitle: "Kodlamada Claude: Yazılım Ekipleri, Eski Sistemler"
 description: "Claude ile kod yazma, hata ayıklama, test, kod inceleme ve eski sistem modernizasyonu. Türk yazılım ekipleri için kullanım alanları, güvenlik ve plan notları."
 eyebrow: "Kullanım alanı"
 lead: "Claude, yazılım ekiplerinde kod yazmaktan çok daha fazlası için kullanılıyor: bir hatanın kök nedenini bulmak, test yazmak, kod incelemek ve kimsenin dokunmaya cesaret edemediği eski sistemleri anlamak. Bu sayfa kullanım alanlarını anlatır; aracın kurumsal yönetimi ayrı sayfada."
@@ -55,6 +55,17 @@ Türkiye'de bankacılık, sigorta, telekom ve kamu tarafında çekirdek sistemle
 4. **Parça parça taşımak:** Modülü yeni dile veya servise küçük adımlarla taşımak, her adımı incelemek.
 
 Kurgusal bir örnek: bir katılım bankasının yazılım ekibi, kâr payı hesaplayan eski bir modülü yeni platforma taşımadan önce Claude'a modülün belgesini ve 120 senaryoluk bir test setini hazırlatıyor. Taşıma kararı ve hesaplama kurallarının doğruluğu yine ekibin ve iç denetimin sorumluluğunda kalıyor.
+
+### Anthropic'in kod modernizasyonu sayfası ne diyor?
+
+Anthropic bu işe ayrı bir çözüm sayfası ayırmış: [claude.com/solutions/code-modernization](https://claude.com/solutions/code-modernization). Sayfa Claude Code'u eski kurumsal sistemler için bir modernizasyon aracı olarak anlatıyor. Saydığı işler: bağımlılık haritası çıkarmak, iş mantığını koruyarak kodu adım adım yeniden düzenlemek (her adımda insan incelemesiyle), test üretip doğrulamak, güvenlik açıklarını kapatmak ve belgesi olmayan koddan belge üretmek. Amaç, kurumsal bilgiyi kaybolmadan kayda geçirmek.
+
+- **Hangi kod:** Sayfanın kendi metninde dil adı geçmiyor; COBOL, sayfanın bağlantı verdiği yazının başlığında anılıyor. Anthropic'in 23 Şubat 2026 tarihli [yazısı](https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization), COBOL modernizasyonunda en pahalı adımın kodun ne yaptığını anlamak olduğunu, Claude Code'un emeğin çoğunu tüketen keşif ve analiz aşamalarını otomatikleştirebileceğini söylüyor. Anthropic'in isteğe bağlı bir [webinarında](https://claude.com/resources/webinars/modernizing-legacy-code-with-claude-code) COBOL'dan Java'ya taşıma ve yaklaşık 500.000 satırlık bir Java 8 uygulamasının Java 17'ye yükseltilmesi gösteriliyor.
+- **Hangi ürün ve plan:** Araç Claude Code; çözüm sayfası ayrı bir plan ya da fiyat yazmıyor. Webinarda bir "kod modernizasyonu plugin'i" anılıyor; Anthropic'in resmi plugin dizininde aynı adı taşıyan bir [`code-modernization` plugin'i](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization) var. Plugin sayfası ayrı bir plan koşulu yazmıyor, yalnız Claude Code istiyor ve büyük sistemlerde çok sayıda ajan çalıştığı için kullanımın yüksek olacağını belirtiyor.
+- **Ortaklar:** Sayfa Deloitte, Slalom, Caylent gibi danışmanlık ve AWS, Google Cloud, GitHub, GitLab gibi platform ortaklarını listeliyor. Türkiye'den bir ortak ya da müşteri örneği yok, sayfada ölçülmüş bir müşteri sonucu da verilmiyor.
+- **Dürüst sınır:** Kodu başka bir dile çevirmek, bir platformu modernize etmekle aynı şey değil. IBM'in Anthropic yazısıyla aynı gün (23 Şubat 2026) yayımladığı [yazı](https://newsroom.ibm.com/blog-lost-in-translation-what-the-ai-code-debate-keeps-getting-wrong), ana bilgisayardaki (mainframe) onlarca yıllık donanım ve yazılım bütünleşmesinin kodu taşımakla yeniden üretilemeyeceğini; asıl işin veri mimarisini yeniden tasarlamak, çalışma ortamını değiştirmek ve işlem bütünlüğünü korumak olduğunu söylüyor. Thoughtworks'ün 2 Mart 2026 tarihli [değerlendirmesi](https://www.thoughtworks.com/insights/articles/claude-code-cobol-modernization-reality) de büyük COBOL sistemlerinde asıl sorunun kodun okunamaması değil ölçek olduğunu, modernizasyonun bir kodlama işinden çok bir teslimat işi olduğunu yazıyor. Claude analizi ve kod yazımını hızlandırır; mimari karar, geçiş planı ve geri dönüş planı ekibinizindir.
+
+Kurgusal ikinci bir örnek: bir lojistik şirketi olan Anadolu Depo A.Ş.'nin depo yönetim sistemi 2012'den beri Java 8 üzerinde çalışıyor ve sistemi yazan ekipten kimse kalmamış. Ekip Claude Code ile önce modüllerin Türkçe belgesini ve bağımlılık haritasını çıkarıyor, sevkiyat hesaplayan sınıflar için mevcut davranışı sabitleyen testler yazdırıyor, sonra Java 17'ye geçişi modül modül yapıp her çekme isteğini iki kıdemli geliştiriciye inceletiyor. Geçiş penceresi ve geri dönüş planı BT müdürlüğünün kararında kalıyor.
 
 ## Güvenlik, gizlilik ve uyum
 

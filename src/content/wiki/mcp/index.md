@@ -1,13 +1,13 @@
 ---
 title: "MCP ve Eklentiler: Claude'u İş Sisteminize Oturtmak"
-seoTitle: "Claude MCP ve Connector Rehberi: İş Araçlarını Bağlama"
+seoTitle: "Claude MCP ve Connector Rehberi: İş Araçları"
 description: "MCP ve connector'lar Claude'u Slack, Drive, Microsoft 365 ve CRM'inize bağlar. Ne işe yarar, kim kurar, güvenli mi, hangi rol için hangisi?"
 tags:
   - mcp
   - plugins
   - connector
   - giris
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Claude, connector'lar olmadan bir sohbet aracıdır. Connector'larla gerçek bir iş meslektaşı gibi davranır.**
@@ -38,7 +38,7 @@ Bu bölüm Claude'u Slack, Drive, CRM, proje yönetimi araçlarınıza bağlayan
 
     ---
 
-    Resmî dizinde yaklaşık 900 connector. Rol bazında en yaygınlar ve role göre önerilen setler.
+    Resmî dizinde 1.000'den fazla connector. Rol bazında en yaygınlar ve role göre önerilen setler.
 
     [→ Bağlantı Listesi](/wiki/mcp/baglanti-listesi/)
 
@@ -83,7 +83,7 @@ Bu fark küçük değildir: **Claude deneyiminin tümü değişir**.
 - **Connector** = Claude ile tek bir servis arasındaki bağlantı. Teknik adıyla bir MCP sunucusu.
 - **Plugin** = İlgili skill'leri, connector'ları ve subagent'ları tek kurulumda paketleyen bileşen.
 
-Ayrıntı için [MCP Nedir?](/wiki/mcp/nedir/) sayfasına bakın. Ürün tanıtımları: [Claude Connectors](/claude/connectors/) ve [Claude Plugins](/claude/plugins/).
+Connector eklemek için Claude'da **Customize > Connectors** bölümünü açıp servisi seçmeniz yeter; adımlar [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) sayfasında. Ayrıntı için [MCP Nedir?](/wiki/mcp/nedir/) sayfasına bakın. Ürün tanıtımları: [Claude Connectors](/claude/connectors/) ve [Claude Plugins](/claude/plugins/).
 
 ## Pratik Yaklaşım
 

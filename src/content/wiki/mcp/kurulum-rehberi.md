@@ -17,7 +17,7 @@ Dizinde hazır duran connector'lar da aynı protokolü kullanır; onları bağla
 
 | Servisiniz... | Yol |
 |---|---|
-| Resmî dizinde var (yaklaşık 900 connector) | Dizin connector'ı, tek tık: [Connectors](/wiki/araclar/connectors/) |
+| Resmî dizinde var (1.000'den fazla connector) | Dizin connector'ı, tek tık: [Connectors](/wiki/araclar/connectors/) |
 | Dizinde yok | Özel connector (uzak sunucu URL'si) ya da masaüstü uzantısı (yerel), bu sayfa |
 
 Kendi iç sisteminizi (ERP, iç CRM) bağlamak istiyorsanız kim kurar, ne istenir, nasıl pilot yapılır sorularını [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfası ele alır. Hızlı seçki için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/).

@@ -1,12 +1,12 @@
 ---
 title: "Prompting Temel İlkeleri: İyi Bir Promptun Anatomisi"
-seoTitle: "Prompt Nasıl Yazılır? Claude İçin 5 Bileşen ve Örnek"
+seoTitle: "Prompt Nasıl Yazılır? Claude İçin 5 Bileşen, Örnek"
 description: "Claude için prompt nasıl yazılır? Rol, bağlam, görev, format ve kısıtlar: beş bileşen, Türkçe örnekler, iterasyon ve hızlı kontrol listesi."
 tags:
   - prompting
   - temel
   - prompt-anatomisi
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Prompting, Claude'la çalışırken en öğretilebilir beceridir. Ve en çok hata yapılan yerdir.
@@ -124,7 +124,7 @@ Uzun belgelerde bu sıranın nasıl işlediği [İleri Seviye Prompt Engineering
 
 ## Düşünme Derinliği: Prompt mu, Effort mu?
 
-Eskiden karmaşık işlerde "cevaptan önce adım adım düşün" yazmak ana kaldıraçtı. Güncel modellerde (Sonnet 5.5, Opus 5.5, Fable 5.1) Thinking kapatılamıyor; Claude gerektiğinde zaten düşünüyor. Bu cümle zararsız ama artık asıl iş yapan şey değil. İki şey daha çok işe yarar:
+Eskiden karmaşık işlerde "cevaptan önce adım adım düşün" yazmak ana kaldıraçtı. Güncel modellerde (Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1) Thinking kapatılamıyor; Claude gerektiğinde zaten düşünüyor. Bu cümle zararsız ama artık asıl iş yapan şey değil. İki şey daha çok işe yarar:
 
 - **Değerlendirme kriterlerini söyleyin.** "Karar vermeden önce şu üç ölçüte göre tart: maliyet, risk, süre." Claude'a neye bakacağını vermek, "daha çok düşün" demekten güçlüdür.
 - **Düşünme derinliğini Effort ile ayarlayın.** Pro ve üstü planlarda gönder düğmesinin yanındaki model adına tıklayınca model, Effort ve Thinking ayarları açılır. Effort beş kademedir (Low'dan Max'e): rutin işte düşük, zor karar ve analizde yüksek seçin. Yüksek effort limitinizi daha hızlı tüketir. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
@@ -179,7 +179,7 @@ Sekizi de evetse, prompt hazır. Tek sayfalık bir not olarak masanızın üstü
 ## İlgili Sayfalar
 
 - [4D Çerçevesi](/wiki/prompting/4d-cercevesi/): Tüm prompting'in kavramsal çerçevesi (Description boyutu)
-- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/): XML tags, few-shot prompting, prompt chaining
+- [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/): XML etiketleri, uzun belge düzeni, zincirleme, eleştirmen
 - [Effort Kontrolü](/wiki/yetenekler/effort-control/): Düşünme derinliğini model menüsünden ayarlamak
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Prompta hangi veriyi yazmamalı
 - [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/): Bu hataları derinlemesine inceliyoruz

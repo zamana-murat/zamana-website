@@ -1,7 +1,7 @@
 ---
 title: "Finansal Hizmetler: Claude Uygulamaları (Hassas Sektör)"
-seoTitle: "Banka, Sigorta ve Aracı Kurumda Claude: BDDK, SPK, MASAK Çerçevesi"
-description: "Banka, sigorta, aracı kurum ve faktoring için Claude: kredi dosyası özeti, müşteri yazışması, poliçe karşılaştırma, iç denetim taslağı. BDDK, SPK, MASAK ve müşteri verisi sınırları."
+seoTitle: "Bankacılık ve Sigortada Claude: BDDK, SPK, MASAK"
+description: "Banka, sigorta, aracı kurum ve faktoring için Claude: kredi dosyası özeti, müşteri yazışması, poliçe karşılaştırma, iç denetim. BDDK, SPK, MASAK sınırları."
 tags:
   - departmanlar
   - finansal-hizmetler
@@ -106,7 +106,7 @@ Denetçinin saha notlarından bulgu anlatısı ("tespit, risk, öneri, yönetim 
 
 ## Plan Önerisi
 
-Bireysel plan (Free, Pro, Max, Ultra) yerine **Team ya da Enterprise öneriyoruz**; **zorunlu değildir**. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz, DPA yalnız ticari ürünlere dahildir. Denetim günlüğü ve Compliance API gibi izleme araçları yalnız Enterprise'tadır; bir bankanın ya da aracı kurumun denetim ihtiyacı varsa bunlar belirleyicidir. Ayrıntı: [Takım ve Admin](/wiki/temeller/takim-ve-admin/). API kullanılıyorsa Zero Data Retention bir API düzenlemesidir ve satış ekibiyle talep edilir.
+Bireysel plan (Free, Pro, Max, Ultra) yerine **Team ya da Enterprise öneriyoruz**; **zorunlu değildir**. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz, DPA yalnız ticari ürünlere dahildir. Denetim günlüğü ve Compliance API gibi izleme araçları yalnız Enterprise'tadır; bir bankanın ya da aracı kurumun denetim ihtiyacı varsa bunlar belirleyicidir. 5 Kasım 2026'dan beri Enterprise'ta istemleri kurumun kendi DLP aracından geçiren hook'lar, yönetilen bilgisayarlarda kişisel hesapla girişi engelleme ve self-serve IP izin listesi de var (hook'lar genel kullanımda, IP izin listesi beta); bilgi güvenliği biriminiz bunları değerlendirmeye katabilir ([Enterprise Güvenlik Araçları](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026)). Ayrıntı: [Takım ve Admin](/wiki/temeller/takim-ve-admin/). API kullanılıyorsa Zero Data Retention bir API düzenlemesidir ve satış ekibiyle talep edilir.
 
 Hangi plan olursa olsun, müşteri sırrı ve BDDK/SPK/MASAK kapsamındaki veri için kural aynıdır: uyum birimi izin vermeden girmeyin.
 

@@ -41,6 +41,10 @@ Proje düzeyindeki talimatlar Claude'a bu projede nasıl davranması gerektiğin
 
 Her projenin kendi izole sohbet geçmişi vardır. İş konuya, müşteriye veya proje tipine göre organize kalır. İlgisiz projeler arasında veri sızması olmaz.
 
+### Proje Hafızası
+
+Hafıza açıksa her projenin **ayrı bir hafızası ve özeti** olur; proje dışındaki sohbetlerden ayrı tutulur. Projede söylediğiniz bir tercih o projede hatırlanır, başka müşterinin projesine taşınmaz. Hafızayı sohbette söyleyerek ya da düzenleyerek değiştirirsiniz. Ayrıntı: [Memory](/wiki/yetenekler/memory/).
+
 ### Paylaşılan Projeler (Team ve Enterprise)
 
 Projects, meslektaşlarınızla belirli izin seviyelerinde paylaşılabilir:
@@ -140,7 +144,7 @@ Skills, kod çalıştırma ve dosya üretimi (.docx / .pptx / .xlsx) bu üç yer
 | **Free** | 5 projeye kadar; standart bilgi tabanı boyutu |
 | **Pro / Max / Ultra** | Proje sayısı için yayımlanmış üst sınır yok; bilgi tabanı bağlam sınırına yaklaşınca Claude RAG moduna geçer ve kapasiteyi 10 kata kadar artırır |
 | **Team** | Pro / Max / Ultra'daki RAG + **paylaşılan projeler, izin kontrolleri ile** |
-| **Enterprise** | Team özellikleri + kurum çapında görünürlük, SSO, yönetici kontrolleri |
+| **Enterprise** | Team özellikleri + kurum çapında görünürlük, SSO, yönetici kontrolleri; 6 Kasım 2026'dan beri projelere etiket verip harcamayı proje bazında izleme (beta) |
 
 Yeni kullanıcılara **ilk ay Max (eski adı Max 5x)** öneriyoruz; bu bir öneridir, zorunlu değildir. Pro ile başlayıp gerektiğinde yükseltmek de olur. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
 

@@ -1,7 +1,7 @@
 ---
 title: "Pilot ve Yaygınlaştırma: Claude'u Şirkete Nasıl Açarsınız?"
-seoTitle: "Claude Pilot Uygulaması ve Kurumsal Yaygınlaştırma Rehberi"
-description: "5-10 kişilik pilot, 4-8 haftalık takvim, üç karar kapısı, ölçütler ve yaygınlaştırma dalgaları. Yönetici ve kurumsal ekipler için, kurgusal Türk şirketi örneğiyle."
+seoTitle: "Claude Pilot ve Kurumsal Yaygınlaştırma Rehberi"
+description: "5-10 kişilik pilot, 4-8 haftalık takvim, üç karar kapısı, ölçütler ve yaygınlaştırma dalgaları. Yöneticiler için, kurgusal Türk şirketi örneğiyle."
 tags:
   - temeller
   - pilot
@@ -47,7 +47,7 @@ Hazırlık, pilotun kendisinden kısa ama daha önemlidir.
 2. **Baseline alın.** Pilot başlamadan 1-2 hafta önce katılımcılara [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasındaki baseline sorularını sorun. Önce/sonra karşılaştırması bu veriye dayanır.
 3. **Tek sayfalık bir kural yazın.** Hangi veri girmez, çıktı kim tarafından kontrol edilir, kime sorulur. [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfasındaki "Mini Versiyon: 1 Sayfa" yeterlidir; tam politikayı pilot sonrasında yazarsınız.
 4. **Planı seçin.** Aşağıdaki kutuya bakın.
-5. **Yönetici ayarlarını kontrol edin.** Team ya da Enterprise ise Cowork, bağlayıcılar ve kod çalıştırma gibi özelliklerin admin tarafında açık mı kapalı mı olduğuna bakın. Enterprise'ta bazı özellikler (Cowork, Claude Design ve benzerleri) yönetici açana kadar kapalı olabilir; pilot günü "bende çıkmıyor" sürprizi yaşamayın. Ayrıntı [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında.
+5. **Yönetici ayarlarını kontrol edin.** Team ya da Enterprise ise Cowork, bağlayıcılar ve kod çalıştırma gibi özelliklerin admin tarafında açık mı kapalı mı olduğuna bakın. Enterprise'ta bazı özellikler (Cowork, Claude Dashboards ve benzerleri) yönetici açana kadar kapalı olabilir; Team ve Enterprise'ta bazı connector'ları da önce owner açar; pilot günü "bende çıkmıyor" sürprizi yaşamayın. Ayrıntı [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında.
 6. **Destek kanalı açın.** Ortak bir mesaj grubu ya da kanal; katılımcılar buraya prompt'larını, sorunlarını ve kazanımlarını yazar.
 
 > **Plan önerisi.** Pilot katılımcıları için ilk ay Max (eski adı Max 5x) ($100/ay) öneriyoruz, zorunlu değil: Pro'nun limiti yeni kullanıcı için çabuk dolar ve "çalışmıyor" hissine yol açabilir. Kurumsalda **Team zorunlu değildir**; bireysel hesaplarla da pilot yapılabilir. Merkezi kontrol istiyorsanız (tek fatura, admin paneli, kullanıcı ekleme-çıkarma, varsayılan olarak eğitimde kullanılmayan girdi, DPA) Team önerilir; Team en az 2 koltuktan başlar. Enterprise self-serve en az 20 koltuk ister ve kullanım ayrıca faturalanır. Güncel rakamlar [Planlar](/wiki/temeller/planlar/) sayfasında. Zamana bayi değildir; satın alma doğrudan Anthropic'tendir.
@@ -136,8 +136,8 @@ Kapı 3'ten geçtiyseniz herkese tek günde hesap açmayın. Dalgalar halinde il
 Her dalga başlamadan şu beş kontrolü yapın:
 
 - **Politika yayınlandı mı?** Pilotta oturmuş tek sayfalık kural artık [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) belgesine dönüştü mü, herkes okudu mu?
-- **Plan ve yönetim seviyesi doğru mu?** Kullanıcı sayısı artınca merkezi kontrol ihtiyacı büyür: [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasındaki geçiş senaryolarına bakın. Pilot kişisel hesaplarla yürütüldüyse ve hesaplar Team ya da Enterprise'a taşınacaksa, sohbetler ve projeler taşınır; ama özel skills, uygulama yetkilendirmeleri ve özel connector'lar taşınmaz, bunları yeniden kurmak gerekir.
-- **Kullanım bütçesi görünür mü?** Kota bitince açılan usage credits ve Enterprise'ın kullanım bazlı faturası için aylık bir tavan belirleyin ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
+- **Plan ve yönetim seviyesi doğru mu?** Kullanıcı sayısı artınca merkezi kontrol ihtiyacı büyür: [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasındaki geçiş senaryolarına bakın. Pilot kişisel hesaplarla yürütüldüyse ve hesaplar Team ya da Enterprise'a taşınacaksa, sohbetler ve projeler taşınır; ama özel skills, uygulama yetkilendirmeleri, özel connector'lar, yayınlanmış artifact'ler, herkese açık paylaşım linkleri ve bilgisayardaki yerel Cowork oturumları taşınmaz, bunları yeniden kurmak gerekir.
+- **Kullanım bütçesi görünür mü?** Kota bitince açılan usage credits ve Enterprise'ın kullanım bazlı faturası için aylık bir tavan belirleyin ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)). Enterprise'ta grup bazlı ortak bütçe ve proje etiketiyle harcama takibi (Ekim-Kasım 2026, kısmen beta) dalgaların maliyetini ayrı ayrı görmeyi kolaylaştırır.
 - **Destek sahibi var mı?** Her dalga için bir kişi: "Claude sorusu kime sorulur?" sorusunun cevabı olmalı.
 - **Ölçüm devam ediyor mu?** Yaygınlaştırma sonrasında ölçümü bırakmak, pilotun yarısını boşa harcamaktır. Çeyreklik ROI raporu için [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) sayfasındaki aylık hesabı kullanabilirsiniz.
 

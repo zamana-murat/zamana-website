@@ -7,12 +7,12 @@ tags:
   - skills
   - cowork
   - uzmanlik
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Skills, Claude'a belirli görev tipleri için hazır uzmanlık kazandıran önceden inşa edilmiş talimat setleridir.** Sohbette ve Cowork'te `/skill-adi` komutuyla çağrılır; Claude görevi tanırsa kendiliğinden de devreye alır.
 
-Skills Free dahil tüm planlarda vardır. Ürünün Türkçe tanıtımı için [Claude Skills](/claude/skills/) ve [Claude Plugins](/claude/plugins/) sayfalarına bakın; bu sayfa kurulum, çağırma ve sınırları anlatır.
+Skills Free dahil tüm planlarda vardır (Enterprise'ta code execution açık olmalı). Claude bir skill'i ilgili gördüğünde yükler; her mesaja sabit uygulanan bir kural değildir. Her konuşmada geçerli bir ton istiyorsanız profil talimatını, görev bazlı bir biçim istiyorsanız skill'i kullanın. Ürünün Türkçe tanıtımı için [Claude Skills](/claude/skills/) ve [Claude Plugins](/claude/plugins/) sayfalarına bakın; bu sayfa kurulum, çağırma ve sınırları anlatır.
 
 Kısa benzetme: Skills, Claude'un arkasında duran uzmanlık kılavuzlarıdır. `/docx` komutunu verdiğinizde Claude profesyonel bir Word belgesi uzmanının yaklaşımıyla davranır: yıllarca oluşmuş en iyi uygulamalar, yaygın hatalar ve görsel kurallar bir anda devreye girer.
 
@@ -78,7 +78,7 @@ Hazır plugin'ler (Sales, Finance, Legal, Marketing) **jenerik şablonlarla** ge
 
 - Her şeyi baştan kapsamaya çalışmayın. Bir skill'i çalıştırın, düzeltilecek bir şey görünce **aynı oturumda** Claude'a söyleyin.
 - Kalan jenerik içeriği bulmak için sorun: *"Bu plugin'de hangi placeholder'lar (doldurulmamış alanlar) kaldı?"*
-- Organizasyon adminleri, özelleştirilmiş plugin'leri departmanlara tek tip kurulum olarak dağıtabilir.
+- Team ve Enterprise'ta owner, özelleştirilmiş plugin'leri kurumun özel plugin marketplace'i üzerinden (Organization settings > Plugins & skills; Cowork ve Skills açık olmalı) ekibe dağıtabilir, bazılarını otomatik kurdurabilir. Departman bazında farklı kurulum (ör. Mühendislik'e otomatik, Hukuk'ta isteğe bağlı) yalnız Enterprise'ta var.
 
 ## Skill Nasıl Çağrılır?
 
@@ -112,6 +112,10 @@ Claude `xlsx` skill'ini otomatik devreye alır. Siz komut vermezsiniz.
 - `yeni-personel-onboarding`: İK'nın yeni çalışan onboarding dokümantasyonunun birebir yapısı
 
 Özel skill, bir ekibin yaptığı işin en tutarlı biçimde **her seferinde aynı kalitede üretilmesini** sağlar.
+
+**Styles kalkıyor, Skills'e taşınıyor.** Eski "Styles" (yazım stili) menüsü Skills'e taşınıyor: kendi oluşturduğunuz stiller **devre dışı skill** olarak gelir, Customize > Skills'ten açarsınız; Concise, Explanatory ve Formal hazır stilleri kalkıyor, Learning skill olarak kalıyor. Taşıma tarihi ve ayrıntılar resmi yardım sayfasında doğrulanamadı; kendi hesabınızda Skills listesine bakın.
+
+**Açık standart.** Skill biçimi (Agent Skills) Ekim 2026'da Linux Foundation çatısındaki Agentic AI Foundation'a devredildi; yani bir skill başka araçlarda da kullanılabilir hâle geliyor. Ayrıntı: [Agent Skills tarafsız vakfa devredildi](/haberler/2026-10-22-agent-skills-acik-standart-vakfa-devredildi/).
 
 **Team'e geçerken dikkat:** Kişisel hesabınızı Team ya da Enterprise kuruluşuna yükseltirseniz **özel skill'ler taşınmaz**; ekip için yeniden yükleyin. Skill'in talimat ve betik içerdiğini, kaynağını bilmediğiniz skill'i yüklememeniz gerektiğini unutmayın. Kurumsal yönetim için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasına bakın.
 

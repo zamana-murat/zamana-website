@@ -18,7 +18,7 @@ Her Pazartesi yazdığınız aynı rapor, her sabah yaptığınız aynı e-posta
 
 Gerçek kullanım örnekleri:
 
-- **Günlük brifing:** E-postayı, Slack'i, takvimi kontrol et, öncelikli sabah gündemini üret. Her sabah 08:00'da workspace klasörüne düşer. **Süre:** elle 30-45 dk, Claude ile okuma yaklaşık 5 dk. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+- **Günlük brifing:** E-postayı, Slack'i, takvimi kontrol et, öncelikli sabah gündemini üret. Her sabah 08:00'da hazır olur (yerel görevde workspace klasörüne düşer). **Süre:** elle 30-45 dk, Claude ile okuma yaklaşık 5 dk. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 - **Haftalık rapor:** Operasyon verilerini topla, durum raporu hazırla. Her Pazartesi ekip toplantısından önce hazır. Kurgusal bir örnek: Karadeniz Gıda'nın operasyon müdürü, her Pazartesi 08:00'de önceki haftanın sevkiyat gecikmelerini ve tedarikçi teslim durumunu tek sayfada bulur. **Süre:** elle 1-2 saat, Claude ile 15-20 dk kontrol. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 - **Aylık belge:** Tekrar eden şablonu üret, güncel veriyle doldur. Her ayın 1'inde hazırlanır.
 - **Tekrar eden hatırlatıcılar:** Proje yönetim aracından gecikmiş görevleri çek, hatırlatma listesi üret. Her Cuma öğleden sonra.
@@ -45,9 +45,9 @@ Cowork'te herhangi bir konuşmada `/schedule` yazın ve ne otomasyon istediğini
 
 ## Nerede Çalışır: Bulut mu, Bilgisayarınız mı?
 
-**6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor** ve "Only on your computer" seçeneği kalkıyor. Bu planlarda yeni kurduğunuz görevler için bilgisayarın açık ve uyanık kalması gerekmiyor. Yerel klasör erişimi, computer use ve yerleşik tarayıcı gibi masaüstüne bağlı yetenekler ise yine masaüstü uygulaması ister. Görevlerinizin hangi modda çalıştığını ayarlardan doğrulayın.
+**6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor**; bilgisayarın açık kalması gerekmiyor (genel anlatım: [Cowork Modu](/wiki/araclar/cowork-modu/#hangi-planda-nerede-çalışır)). Zamanlanmış görev için önemli sınır: **bulutta kurulan zamanlanmış görev yerel klasör ve yerel connector kullanamaz.** Görev veriyi bulut connector'larından (Drive, Gmail, Slack, CRM gibi) çekmeli, çıktıyı da oraya ya da görevin kendi çıktısına bırakmalıdır. Görevlerinizin hangi modda çalıştığını ayarlardan doğrulayın.
 
-**Yerel kısıt şu durumlarda sürer:** Team, Enterprise ve eski (6 Ekim öncesi kurulmuş) görevler. Güncel durum için yardım merkezindeki duyuruya bakın. Yerel çalışan görevler **sizin makinenizde çalışır**, Anthropic'in sunucularında değil:
+**Yerel kısıt şu durumlarda sürer:** Team, Enterprise ve yerel klasör kullanan eski (6 Ekim öncesi kurulmuş) görevler; bu eski görevler yerelde çalışmaya devam eder. Güncel durum için yardım merkezindeki duyuruya bakın. Yerel çalışan görevler **sizin makinenizde çalışır**, Anthropic'in sunucularında değil:
 
 > **Bilgisayar kapalıysa veya uyuyorsa, yerel zamanlanmış görev çalışmaz.**
 
@@ -61,13 +61,13 @@ Raporu Pazartesi sabahına yerel olarak zamanladıysanız ve bilgisayar o gece k
 
 ## Mobil Entegrasyon
 
-Zamanlanmış görevler mobil ve web Cowork betasında da var (Pro, Max, Ultra, Team; Enterprise'ta yönetici açtıysa), yani telefondan hem izleyebilir hem kurabilirsiniz. Daha önce Dispatch kurduysanız ([Claude Mobil](/wiki/araclar/claude-mobil/)) (yeni kullanıcılara kapalı), zamanlanmış görev çıktıları Dispatch konuşmanıza da düşer. Yani:
+Zamanlanmış görevler mobil ve web Cowork betasında da var (Pro, Max, Ultra, Team; Enterprise'ta yönetici açtıysa), yani telefondan hem izleyebilir hem kurabilirsiniz ([Claude Mobil](/wiki/araclar/claude-mobil/)). Yani:
 
 - Pazartesi sabahı 08:00'da rapor üretilir
-- Rapor workspace klasörüne kaydedilir
-- Aynı anda telefonunuza özet gelir
+- Rapor bulut görevinde ya da bağlı Drive klasöründe hazır olur
+- Telefonunuzdan görevin bittiğini görüp özete bakarsınız
 
-Sonuç: masaya oturduğunuzda rapor hazırdır, siz de telefonunuzdan haberdar olmuşsunuzdur.
+Sonuç: masaya oturduğunuzda rapor hazırdır. Eski Dispatch'i kullanan hesaplarda görev çıktıları Dispatch konuşmasına da düşer; Dispatch yeni kullanıcılara kapalıdır.
 
 ## Neden Önemli?
 
@@ -116,7 +116,7 @@ Dört adımlı döngü:
 
 **2. Hazırlık adımını zamanlayın.** Skill'in sadece **veri toplama ve taslak** kısmını otomatiğe alın, yorumu değil:
 
-> *"/schedule Her Pazar 17:00'de haftalık review skill'imin hazırlık adımını çalıştır, taslağı workspace/review/ altına kaydet."*
+> *"/schedule Her Pazar 17:00'de haftalık review skill'imin hazırlık adımını çalıştır, taslağı Drive'daki Review klasörüne kaydet."* (Görev yerelde çalışıyorsa bilgisayarınızdaki bir klasör de olur.)
 
 **3. Review'ı siz yapın.** Pazartesi masaya oturduğunuzda veriler ve taslak hazır. Siz **odağı, anlatıyı ve dışarı çıkacak mesajı** belirlersiniz. Karar insanda kalır.
 

@@ -35,7 +35,7 @@ Bir oturumda ne kadar kullanabileceğinizi belirler. "Kayan" demek, sabit bir sa
 
 ### 2. Haftalık limit
 
-Tüm ücretli planlarda ayrıca haftalık bir limit vardır. Beş saatlik pencereyi her seferinde sonuna kadar doldurup hafta içinde çok yoğun çalışan biri, haftalık tavana çarpabilir. Bu durumda hafta sıfırlanana kadar beklersiniz.
+Tüm ücretli planlarda ayrıca haftalık bir limit vardır. Beş saatlik pencereyi her seferinde sonuna kadar doldurup hafta içinde çok yoğun çalışan biri, haftalık tavana çarpabilir. Bu durumda hafta sıfırlanana kadar beklersiniz. Haftalık sayaç gece yarısı değil, hesabınıza atanmış sabit bir gün ve saatte sıfırlanır; zamanı Usage ekranında görünür.
 
 Haftalık tavanın tam miktarını Anthropic açıklamaz ve ek sınırlar koyma hakkını saklı tutar. Bu yüzden bu sayfada "haftada şu kadar mesaj" gibi bir sayı bulamazsınız; bulduğunuz sayılar resmî değildir.
 
@@ -50,7 +50,7 @@ claude.ai veya Claude Desktop'ta profil ikonu, **Settings**, **Usage** yolunu iz
 Sırayla düşünün:
 
 1. **Bekleyin.** Beş saatlik pencerede bu en ucuz ve çoğu zaman yeterli çözümdür. Beklerken Claude gerektirmeyen bir işe geçin.
-2. **Tüketimi azaltın.** Yeni bir konuya geçerken yeni sohbet açın (uzun geçmiş her mesajda yeniden işlenir). Günlük işte Sonnet 5.5 kullanın; Opus ve Fable'ı yalnız gerçekten gereken işlere ayırın. Çok büyük belgeleri bölüm bölüm yükleyin.
+2. **Tüketimi azaltın.** Yeni bir konuya geçerken yeni sohbet açın (uzun geçmiş her mesajda yeniden işlenir). Günlük işte Sonnet 5.5 kullanın; Opus ve Fable'ı yalnız gerçekten gereken işlere ayırın. Model menüsündeki **Effort** ayarını rutin işte Low ya da Medium'a çekin; High, Extra high ve Max limiti daha hızlı bitirir. Research (derin araştırma) ayrı kotadan değil standart limitten yer ve onu hızlı tüketir. Çok büyük belgeleri bölüm bölüm yükleyin.
 3. **Kullanım kredisi açın.** Beklemek istemiyorsanız kullandıkça öde seçeneğini açabilirsiniz (aşağıda).
 4. **Planı yükseltin.** Limite haftada birkaç kez takılıyorsanız sorun alışkanlık değil plandır. Pro'dan Max'e geçmek mantıklıdır.
 
@@ -102,7 +102,7 @@ Zamana, yeni başlayanlara **ilk ay Max** (eski adı Max 5x) önerir (zorunlu de
 
 ## Aylık API Kredisi
 
-Bazı planlar abonelik limitinden ayrı, **aylık API kredisi** içerir. Console (API) organizasyonuna bağlanarak kullanılır: Max $100, Ultra $200, Team Standard koltuk $20, Team Premium koltuk $100 (Team'de havuz en çok $500/ay). Free, Pro ve Enterprise'da yoktur. Bu kredi yalnız API kullanımı içindir; interaktif Claude Code, Cowork ve kullanım kredisini (usage credits) kapsamaz, yani sohbet ve Claude Code limitiniz dolduğunda bu krediyle devam edemezsiniz. Plan tablosu: [Planlar](/wiki/temeller/planlar/#aylık-api-kredisi).
+Bazı planlar abonelik limitinden ayrı, **aylık API kredisi** içerir. Console (API) organizasyonuna bağlanarak kullanılır: Max $100, Ultra $200, Team Standard koltuk $20, Team Premium koltuk $100 (Team'de havuz en çok $500/ay). Free, Pro ve Enterprise'da yoktur. Kredi, plan en az 7 gün sürdükten sonra ve tek bir Console organizasyonuna bağlanarak açılır; ay sonunda kullanılmayan kısım devretmez. Bu kredi yalnız API kullanımı içindir; interaktif Claude Code, Cowork ve kullanım kredisini (usage credits) kapsamaz, yani sohbet ve Claude Code limitiniz dolduğunda bu krediyle devam edemezsiniz. Plan tablosu: [Planlar](/wiki/temeller/planlar/#aylık-api-kredisi).
 
 ## Programatik Kullanım Abonelikten Düşer
 
@@ -126,7 +126,7 @@ Anthropic sayı vermez. İnternette dolaşan rakamlar resmî değildir, kendi ku
 Ultra "Pro'nun haftalık 10 katı", Max ise "Pro'nun 5 katı" olarak tanımlanır; ama Ultra'da (doğrulanmış hesapta) 5 saatlik oturum limiti de yoktur. Haftalık tavan miktarları yayımlanmadığı için kesin bir oran vaat edilemez.
 
 **Uzun sohbet neden limiti hızlı bitirir?**
-Her yeni mesajda önceki geçmiş de yeniden işlenir. Konu değişince yeni sohbet açmak ucuzlatır.
+Her yeni mesajda önceki geçmiş de yeniden işlenir. Code execution açıkken bağlam dolmaya yaklaşınca Claude eski mesajları otomatik özetler (bu özetleme limitten düşmez), ama konu değişince yeni sohbet açmak yine de ucuzlatır.
 
 **Kullanım kredisi açık kalırsa kontrolsüz mü harcarım?**
 Team'de yönetici harcama tavanı koyar. Bireysel planlarda krediyi yalnız ihtiyaç anında açmanız ve ayarlardan kapalı tutmanız en güvenlisidir.

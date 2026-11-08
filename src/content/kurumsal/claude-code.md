@@ -7,7 +7,7 @@ lead: "Claude Code, kod tabanınızı okuyup değişiklik yapan, test koşan ve 
 heroImage: "/images/kurumsal/claude-code/hero.webp"
 heroAnimation: "claude-code"
 heroAlt: "Kurgusal Ege Tekstil'de geliştirici terminalde Claude Code'a ödeme kütüphanesini yeni sürüme taşımasını söylüyor; kuruluş politikası gizli anahtar dosyasının okunmasını engelliyor, Claude düzenleme öncesi izin istiyor, testler geçiyor ve değişiklik isteği açılıyor. Yanda yönetim paneli politikaları ve haftalık katkı sayısını gösteriyor."
-availability: "Tüm ücretli planlarda; kurumsal yönetim özellikleri Team ve Enterprise'da (SSO ve SCIM dahil); rol bazlı izin, denetim kaydı, özel veri saklama ve IP izin listesi yalnız Enterprise'da. Amazon Bedrock, Google Vertex AI ve Microsoft Foundry üzerinden de kullanılır"
+availability: "Tüm ücretli planlarda; kurumsal yönetim özellikleri Team ve Enterprise'da (SSO ve SCIM dahil); rol bazlı izin, denetim kaydı, özel veri saklama ve IP izin listesi yalnız Enterprise'da. Amazon Bedrock, Google Cloud (Gemini Enterprise Agent Platform, eski adı Vertex AI) ve Microsoft Foundry üzerinden de kullanılır"
 sourceUrl: "https://claude.com/product/claude-code/enterprise"
 sourceTitle: "Claude Code for Enterprise"
 related:
@@ -43,12 +43,12 @@ Kuruluşun kodlama standartları için ayrıca CLAUDE.md dosyaları kullanılır
 ## Güvenlik nasıl kurgulanmış?
 
 - **Yerelde çalışır:** Anthropic'e göre Claude Code geliştiricinin terminalinde çalışır ve doğrudan model API'siyle konuşur; kodunuz uzak bir sunucuda dizinlenmez. Dosya değiştirmeden ya da komut çalıştırmadan önce izin ister.
-- **Kendi bulut hesabınızla:** Claude Code, Amazon Bedrock, Google Vertex AI veya Microsoft Foundry anahtarlarıyla, şirketin mevcut sanal ağı (VPC), kimlik yönetimi ve kayıt altyapısı içinde çalıştırılabilir.
+- **Kendi bulut hesabınızla:** Claude Code, Amazon Bedrock, Google Cloud (Gemini Enterprise Agent Platform, eski adı Vertex AI) veya Microsoft Foundry anahtarlarıyla, şirketin mevcut sanal ağı (VPC), kimlik yönetimi ve kayıt altyapısı içinde çalıştırılabilir.
 - **Kimlik:** Okta, Azure AD ya da herhangi bir SAML 2.0 sağlayıcısıyla SSO.
 - **Şifreleme:** Aktarımda TLS 1.3, depolamada AES-256; müşteri yönetimli anahtar seçeneği var.
 - **Uyum:** Anthropic'in sayfası SOC 2 Type II uyumunu belirtiyor.
 - **Eğitimde kullanım:** Kurumsal planlarda kodunuz ve konuşmalarınız varsayılan olarak model eğitiminde kullanılmaz.
-- **Denetim:** Enterprise'da Compliance API, Claude Code oturumlarının (komut satırı ve masaüstü) içeriğini de kapsar. Claude Code'un web sürümü ve Bedrock, Vertex AI ya da Foundry üzerinden yürüyen oturumlar bu kapsamın dışındadır.
+- **Denetim:** Enterprise'da Compliance API, Claude Code oturumlarının (komut satırı ve masaüstü) içeriğini de kapsar. Claude Code'un web sürümü ve Bedrock, Google Cloud ya da Foundry üzerinden yürüyen oturumlar bu kapsamın dışındadır.
 
 ## Kaynak sayfadaki örnekler
 
@@ -57,7 +57,7 @@ Rakamlar Anthropic'in sayfasından, ilgili şirketlere aittir: Rakuten yeni öze
 ## Türkiye'de kullanırken
 
 - **Kaynak kod yurt dışında işlenir.** Claude Code'un okuduğu dosyalar model işlemesi için Anthropic'e (ya da seçtiğiniz bulut sağlayıcıya) gider. Kodda müşteri verisi, gerçek kişisel veri içeren test dosyaları ya da gizli anahtar bırakmayın; bunları merkezi politikayla Claude Code'un erişiminden çıkarın.
-- **Bulut sağlayıcı yolu:** Bedrock, Vertex AI veya Foundry üzerinden kullanımda veri işleme yeri ve sözleşme şartları o sağlayıcıyla yaptığınız anlaşmaya bağlıdır. Şirketiniz zaten bu bulutlardan biriyle çalışıyorsa BT onay süreci bu yoldan daha kısa olabilir; ayrıntıyı sağlayıcınızla teyit edin.
+- **Bulut sağlayıcı yolu:** Bedrock, Google Cloud veya Foundry üzerinden kullanımda veri işleme yeri ve sözleşme şartları o sağlayıcıyla yaptığınız anlaşmaya bağlıdır. Şirketiniz zaten bu bulutlardan biriyle çalışıyorsa BT onay süreci bu yoldan daha kısa olabilir; ayrıntıyı sağlayıcınızla teyit edin.
 - **KVKK ve sektör kuralları:** Kişisel veri işleyen sistemlerin kodunda çalışırken 6698 sayılı KVKK'nın yurt dışına aktarım hükümleri gündeme gelir. Bankacılık ve sağlık gibi düzenlenmiş sektörlerde dış hizmet alımına dair kendi mevzuatınız da ayrıca değerlendirilmelidir. Son kararı hukuk ve bilgi güvenliği birimlerinizle verin.
 - **Dil:** Claude Code'a Türkçe talimat verebilirsiniz. Kod, değişken adları ve commit mesajları için şirketinizin mevcut kuralı neyse CLAUDE.md'ye yazın; Claude Code ona uyar.
 
@@ -66,7 +66,7 @@ Rakamlar Anthropic'in sayfasından, ilgili şirketlere aittir: Rakuten yeni öze
 - **Tüm ücretli planlarda:** Claude Code Pro, Max, Ultra, Team ve Enterprise'a dahildir; Free planda yoktur.
 - **Team:** Anthropic'in sayfası ekipler için Claude Code'u kişi başı aylık 100 dolar (en az 2 kişi) fiyatıyla gösteriyor; bu, Team Premium koltuğun yıllık faturalı fiyatıdır, aylık faturada 125 dolardır. Koltuk kotası aşılırsa ek kullanım standart API fiyatıyla açılabilir. Self-serve koltuk yönetimi vardır.
 - **Enterprise:** Koltuk başı aylık 20 dolar, yıllık faturalı, en az 20 koltuk; Claude Code dahil tüm kullanım ayrıca API fiyatıyla faturalanır. Team'deki her şeye ek olarak rol bazlı izinler, denetim kaydı, özel veri saklama ve IP izin listesi gelir. Kurulum rehberliği ve öncelikli destek de Enterprise kapsamında.
-- **Bulut hesabıyla:** Bedrock, Vertex AI veya Foundry üzerinden kullanımda faturayı ilgili bulut sağlayıcı keser.
+- **Bulut hesabıyla:** Bedrock, Google Cloud veya Foundry üzerinden kullanımda faturayı ilgili bulut sağlayıcı keser.
 
 Fiyatlar dolar cinsindendir ve vergi hariçtir. Satın alma doğrudan Anthropic'ten (self-serve ya da [claude.com/contact-sales](https://claude.com/contact-sales)) yapılır.
 

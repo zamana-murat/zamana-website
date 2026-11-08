@@ -1,5 +1,6 @@
 ---
 title: "İlk 7 Gün Rehberi: Claude'u Alışkanlığa Çevirin"
+seoTitle: "Claude İlk 7 Gün Rehberi: Alışkanlığa Çevirin"
 description: "Kurulum sonrası ilk 7 gün, gün gün: ne yapacağınız, neyi öğreneceğiniz, ne üreteceğiniz. Claude'u günlük iş akışınızın kalıcı parçası yapan program."
 tags:
   - temeller
@@ -47,7 +48,7 @@ Bu hafta yapmanız gereken yazılı bir çıktı: müşteri e-postası, rapor ö
 > **Önce: Hangi modda, hangi modelle?**
 >
 > - **Mod: Cowork.** Claude Desktop sol üstte üç ikon gösterir: 💬 Chats, **Cowork** (ortadaki, küçük yatay çizgili liste ikonu) ve `</> Code`. **Ortadaki Cowork ikonuna tıklayın.** Sebep: workspace klasörünü bağladığınız yerel Cowork oturumu klasördeki CLAUDE.md dosyanızı okur, çıktıyı da workspace klasörüne kaydedebilirsiniz; Chats'te ikisi de yok. Hesabınızda birleşik arayüz açıldıysa ([Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/), yayılım kademeli) ayrı bir Cowork ikonu görmeyebilirsiniz; doğrudan yeni bir konuşma açıp görevi yazın.
-> - **Model: Sonnet**, sağ üstte veya sohbet kutusunun yanında model seçici var. **Sonnet 5.5** seçili olduğunu kontrol edin, değilse seçin. Bu hafta hep Sonnet kullanın, model seçimiyle uğraşmayın. Detay: [Modeller](/wiki/temeller/modeller/).
+> - **Model: Sonnet**, model seçici gönder düğmesinin yanındaki model adındadır. **Sonnet 5.5** seçili olduğunu kontrol edin, değilse seçin. Bu hafta hep Sonnet kullanın, model seçimiyle uğraşmayın. Detay: [Modeller](/wiki/temeller/modeller/).
 > - **İlk devretme refleksi:** Cowork bir işe başlamadan önce sık sık **ne yapacağına dair bir plan önerir**. Bu planı okuyun, doğruysa onaylayın. Devretmenin kalbi "yap" demek değil, planı onaylamaktır. Detay: [Cowork → İlk Görevi Devretmek](/wiki/araclar/cowork-modu/).
 
 İyi kurulmuş bir prompt şu beş bileşeni birlikte taşır:
@@ -210,7 +211,7 @@ Claude `docx` skill'ini çağırır, belgeyi workspace klasörünüze yazar, aç
 
 ### Daha Detay
 
-[Skills](/wiki/yetenekler/skills/) | [Dosya İşleme](/wiki/yetenekler/file-handling/)
+[Skills](/wiki/yetenekler/skills/) | [Dosya İşleme](/wiki/yetenekler/file-handling/) | Belgeyi Google Dokümanlar, E-Tablolar ya da Slaytlar içinde düzenlemek isterseniz Claude eklentisi (genel beta, ücretli planlar): [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/#google-docs-sheets-ve-slides-eklentisi)
 
 ---
 
@@ -233,7 +234,7 @@ Rolünüze göre en kritik olan:
 | İK | **Microsoft 365** |
 | Yönetici Asistanı | **Microsoft 365** tam paket |
 
-**Türkiye'de sık kullanılan araçlar (Logo, Mikro, Paraşüt):** Bu üç muhasebe/ERP aracı için Claude'un resmi bir connector'ı yok (Ekim 2026). Bu yüzden Gün 4'te bunlardan birini bağlamaya çalışmayın. Finans ve muhasebe rolündeyseniz bugünün connector'ı olarak **Microsoft 365** (Excel) ya da dosya tabanlı akış yeterlidir: araçtan Excel/CSV dışa aktarın, Claude'a yükleyin ya da Excel eklentisiyle çalıştırın. Özel bağlantı seçenekleri için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın.
+**Türkiye'de sık kullanılan araçlar (Logo, Mikro, Paraşüt):** Bu üç muhasebe/ERP aracı için Claude'un resmi bir connector'ı yok (Kasım 2026). Bu yüzden Gün 4'te bunlardan birini bağlamaya çalışmayın. Finans ve muhasebe rolündeyseniz bugünün connector'ı olarak **Microsoft 365** (Excel) ya da dosya tabanlı akış yeterlidir: araçtan Excel/CSV dışa aktarın, Claude'a yükleyin ya da Excel eklentisiyle çalıştırın. Özel bağlantı seçenekleri için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın.
 
 **2. Cowork → Customize → Connector kurulumu (15 dk)**
 
@@ -244,6 +245,9 @@ Cowork sol panelde **"Customize"** veya **"Settings → Connectors"** sekmesi.
 - Tarayıcı açılır → ilgili servise giriş yapın
 - **OAuth onay ekranı**: Claude'a hangi izinleri vereceğinizi gösterir → onaylayın
 - Cowork'e geri dönersiniz, connector aktif
+- İlk kullanımda Claude araç başına izin sorar ("Allow once", "Always allow", "Deny"). E-posta gönderen ya da dosya silen araçlarda "Always allow" demeyin, her seferinde onaylayın
+
+Team veya Enterprise planındaysanız bazı connector'ları (örneğin Microsoft 365, Google Docs) önce yöneticinin kuruluş için açması gerekir; listede göremiyorsanız yöneticinize sorun.
 
 **3. Test sorgusu (10 dk)**
 
@@ -442,9 +446,11 @@ Her Pazartesi sabah 08:00'de:
 - CRM'den geçen haftaki yeni fırsatları çek
 - Açılan toplam değer ve sayısını hesapla
 - 3 dikkat gereken anlaşmayı listele
-- Workspace/raporlar/ altına "haftalik-pipeline-YYYY-MM-DD.md" olarak kaydet
+- Raporu bağlı Google Drive ya da OneDrive klasörüne "haftalik-pipeline-YYYY-MM-DD" adıyla kaydet
 - Bana özet bildirim gönder
 ```
+
+**Dikkat:** 6 Ekim 2026'dan beri Pro, Max ve Ultra'da yeni zamanlanmış görevler bulutta kurulur ve bulut görevi yerel klasöre ya da yerel connector'a ulaşamaz. Çıktıyı bilgisayarınızdaki workspace klasörüne değil, bağlı bir bulut klasörüne ya da doğrudan sohbete yazdırın.
 
 Claude netleştirmek için sorabilir:
 - Hangi CRM connector'u kullansın
@@ -500,7 +506,7 @@ Dürüstçe cevaplayın:
 
 ### Daha Detay
 
-[Scheduled Tasks](/wiki/araclar/scheduled-tasks/) | [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): telefondan görev atama (sınırlı beta, yeni kullanıcılara kapalı; yalnızca bilgi için)
+[Scheduled Tasks](/wiki/araclar/scheduled-tasks/) | [Telefondan görev](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): Cowork'e telefondan görev atama (Pro, Max, Ultra ve Team'de otomatik açık; eski Dispatch yeni kullanıcılara kapalı) | İkinci hafta için: bağlı veriden kendiliğinden güncellenen pano isterseniz [Dashboards (beta)](/wiki/yetenekler/claude-design/)
 
 ---
 
@@ -552,7 +558,7 @@ Yansıma olmazsa öğrenme yarım kalır. 25 dakikalık yansıma, bir sonraki ha
 
 İlk hafta tamam, temel refleks oturdu. Şimdi sırada:
 
-- **[Departmanlar](/wiki/departmanlar/)**: Kendi rolünüze özel iş akışları (18 alan)
+- **[Departmanlar](/wiki/departmanlar/)**: Kendi rolünüze özel iş akışları (20 alan)
 - **[Yetenekler](/wiki/yetenekler/)**: Skills, Artifacts, Computer Use, Agents
 - **[Prompting derinleşmesi](/wiki/prompting/)**: 4D Çerçevesi, ileri teknikler
 - **[Kalıcı talimat derinleşmesi](/wiki/claude-md/)**: Talimat ve hafıza yerleri, dört katman

@@ -7,14 +7,14 @@ tags:
   - ornekler
   - sablon
   - rol-bazli
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 [CLAUDE.md'yi nasıl yazacağınızı](/wiki/claude-md/nasil-yazilir/) öğrendiniz. Bu sayfa farklı rollere göre hazır örnekler sunar. Sizin rolünüze en yakınını kopyalayın, kendi bilgilerinizle doldurun, başlayın.
 
 Örnekler `CLAUDE.md` biçiminde yazıldı ama metnin kendisi araçtan bağımsızdır: aynı içeriği profil talimatına, bir projenin talimatına ya da klasörünüze koyabilirsiniz. Yeri seçmek için sayfa sonundaki "Bu Metni Nereye Koyacağım?" bölümüne bakın.
 
-Örnekler **gerçekçi** olsun diye Türkiye'deki şirket yapısı, iş kültürü ve yaygın terminoloji gözetilerek yazılmıştır.
+Örnekler **gerçekçi** olsun diye Türkiye'deki şirket yapısı, iş kültürü ve yaygın terminoloji gözetilerek yazılmıştır. Kişi ve şirket adları kurgusaldır. Kendi metninizde iş arkadaşlarınızın adı ve rolünden ötesini (telefon, kişisel bilgi, performans notu) yazmayın; ayrıntı [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) sayfasındaki "Ne Koymamalısınız?" bölümünde.
 
 ## 1. Satış Yöneticisi (B2B)
 
@@ -74,7 +74,7 @@ lastUpdated: "2026-10-06"
 
 ## Güncel Odak
 - Aktif projeler:
-  - XYZ Gıda A.Ş. SCADA yenileme (1.2M TL, karar aşaması Nisan 2026)
+  - XYZ Gıda A.Ş. SCADA yenileme (1.2M TL, karar aşaması Aralık 2026)
   - ABC Kimya otomasyon PoC (proposal yazma aşamasında)
 - Bu çeyreğin hedefleri:
   - Yeni müşteri kazanımı: en az 6 yeni hesap
@@ -157,7 +157,7 @@ lastUpdated: "2026-10-06"
   - EBITDA marjını %14'e çıkarmak (şu an %11,8)
   - Dış finansman maliyetini 50 baz puan düşürmek
 - Bu hafta öncelik:
-  - Mart ayı kapanış raporunu Pazartesi yetiştirmek
+  - Ekim ayı kapanış raporunu Pazartesi yetiştirmek
   - TURQUALITY dosyası Salı sunumda
 ```
 
@@ -224,7 +224,7 @@ lastUpdated: "2026-10-06"
 ## Güncel Odak
 - Aktif projeler:
   - 120 MW rüzgar santrali EPC sözleşmesi (GES Elektromekanik, müzakere aşamasında)
-  - 2 PPA yenilemesi (2026 Q3 süresi dolan)
+  - 2 PPA yenilemesi (2027 Q1 süresi dolan)
   - VERBİS güncelleme (yeni İK sistemi geçişi sonrası)
 - Bu çeyreğin hedefleri:
   - Tüm standart sözleşme şablonlarını revize etmek (TTK güncellemeleri ışığında)
@@ -356,7 +356,7 @@ lastUpdated: "2026-10-06"
 
 ## Güncel Odak
 - Aktif projeler:
-  - Hakan Bey'in 2026 Q2 Avrupa turu (Londra, Paris, Frankfurt; 10 gün)
+  - Hakan Bey'in 2027 Q1 Avrupa turu (Londra, Paris, Frankfurt; 10 gün)
   - Yeni yönetici asistanı sistemi (Omega Grup genelinde, pilot proje)
 - Bu çeyreğin hedefleri:
   - Hakan Bey'in toplantı doluluğunu %20 azaltmak (gereksizleri filtrelemek)
@@ -376,7 +376,7 @@ lastUpdated: "2026-10-06"
 6. **Yerine koyun** (aşağıya bakın) ve yeni bir sohbet ya da oturumda "Talimatımı 3 maddede özetle" deyin
 7. **Claude'la deneyin**: bir-iki gerçek görev verin, gördüğünüz eksiklikleri metne ekleyin
 
-Bu 20 dakika alır. Ve ertesi hafta Claude oturumlarınız niteliksel olarak farklı olur.
+Bu işlem Tahmini tipik aralıkla 20-30 dakika alır. Ve ertesi hafta Claude oturumlarınız niteliksel olarak farklı olur.
 
 ## Bu Metni Nereye Koyacağım?
 

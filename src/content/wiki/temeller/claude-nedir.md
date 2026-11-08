@@ -8,18 +8,21 @@ tags:
 lastUpdated: "2026-11-08"
 ---
 
-**Claude, Anthropic'in geliştirdiği yapay zekâ asistanıdır.** Yazdığınız talebi Türkçe dahil birçok dilde anlar; metin yazar, uzun belgeleri özetler, tablo ve kod üretir, bağladığınız araçlarla (e-posta, takvim, dosya) sizin adınıza iş yapar. Web, masaüstü ve mobil uygulamadan ya da Excel, Word ve Chrome'un içinden kullanılır.
+**Claude, Anthropic'in geliştirdiği yapay zekâ asistanıdır.** Yazdığınız talebi Türkçe dahil birçok dilde anlar; metin yazar, uzun belgeleri özetler, tablo ve kod üretir, bağladığınız araçlarla (e-posta, takvim, dosya) sizin adınıza iş yapar. Web, masaüstü ve mobil uygulamadan ya da Excel, Word, Google Dokümanlar ve Chrome'un içinden kullanılır.
 
 Kısa cevap bu kadar. Asıl soru şu: **iş dünyasında Claude ile ne yapılır, ne yapılmaz, ve neden ChatGPT yerine Claude seçilir?** Bu sayfa bunu anlatır.
 
 ## 2026'da Claude Nerelerde Karşınıza Çıkar?
 
-"Claude" tek bir ekran değil, aynı modelin birkaç yüzü. Ekim 2026 itibarıyla ana olanlar:
+"Claude" tek bir ekran değil, aynı modelin birkaç yüzü. Kasım 2026 itibarıyla ana olanlar:
 
-- **Sohbet ve Cowork (claude.ai ve uygulamalar).** Eskiden ayrı duran sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude'da birleşiyor (Pro, Max ve Ultra'da kademeli). Sohbet etmenin yanında dosyalarla çalışır, belge hazırlar, bağlı araçlarla iş yapar. Genel tanıtım için [Claude'a genel bakış](/claude/) sayfasına bakın.
+- **Sohbet ve Cowork (claude.ai ve uygulamalar).** Eskiden ayrı duran sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude'da birleşiyor (Pro, Max ve Ultra'da kademeli; Enterprise'ta 23 Ekim 2026'dan beri yöneticinin açtığı bir ayarla). Sohbet etmenin yanında dosyalarla çalışır, belge, sunum ve tasarım hazırlar (Design, Slides ve Docs, Free dahil tüm planlarda), bağlı araçlarla iş yapar. Genel tanıtım için [Claude'a genel bakış](/claude/) sayfasına bakın.
 - **Claude Code.** Terminalde ve kod editörlerinde çalışır, tüm ücretli planlarda var. Geliştiriciler için; iş kullanıcısının onunla işi yok. Ayrıntı: [Claude Code](/claude/claude-code/).
 - **Claude in Chrome.** Tarayıcıda sizin adınıza gezinip form dolduran eklenti. 26 Ağustos 2026'da genel kullanıma açıldı, tüm ücretli planlarda, yalnız masaüstü Google Chrome'da. Ayrıntı: [Claude in Chrome](/claude/chrome/).
 - **Microsoft 365 eklentileri.** Excel, PowerPoint ve Word'ün içinde yan panel olarak çalışır; Outlook sürümü herkese açık beta aşamasında. Ayrıntı: [Claude for Microsoft 365](/claude/microsoft-365/).
+- **Google Workspace eklentisi.** 6 Ekim 2026'dan beri Google Dokümanlar, E-Tablolar ve Slaytlar'ın içinde yan panel olarak çalışır (genel beta, tüm ücretli planlar). Ayrıntı: [Claude for Google Workspace](/claude/google-workspace/).
+
+- **Telefon.** iOS ve Android uygulamasından Cowork'e görev atabilirsiniz (Pro, Max, Ultra ve Team'de otomatik açık, Enterprise'ta kurum isterse açılır). Ayrıntı: [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
 
 Hangi planda hangisinin açık olduğu için [Claude Planları](/wiki/temeller/planlar/) sayfasına bakın.
 
@@ -36,7 +39,7 @@ Kuruluş hikâyesi (neden ayrıldılar, Constitutional AI, şirket yapısı, yat
 Claude'u yanlış kullanmanın en hızlı yolu onun ne olmadığını anlamadan ona bir şey yaptırmaya çalışmaktır. İş hayatında tekrar tekrar karşılaştığımız yanlış anlamalar:
 
 - **Claude bir arama motoru değildir.** Model tek başına internete bakmaz ve bilgisi bir kesim tarihinde durur. Web araması tüm planlarda (Free dahil) kullanılabilir, ama açıkken bile güncel haber, hisse fiyatı ya da bugünün döviz kurunu kaynağından doğrulayın.
-- **Claude bir veritabanı değildir.** Model her konuşmaya sıfırdan başlar. Süreklilik, hafıza (Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'da varsayılan kapalı) profil talimatı ve (Cowork'te) klasördeki CLAUDE.md gibi kalıcı talimatlarla sağlanır; bunlar da ham bir kayıt tutmaz, özet ve tercih saklar.
+- **Claude bir veritabanı değildir.** Model her konuşmaya sıfırdan başlar. Süreklilik, hafıza (Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'da varsayılan kapalı), profil talimatı ve (Cowork'te) klasördeki CLAUDE.md gibi kalıcı talimatlarla sağlanır; bunlar da ham bir kayıt tutmaz, özet ve tercih saklar.
 - **Claude bir hesap makinesi değildir.** Matematik üzerine düşünür, ama dört işlem aritmetiğinde bile hata yapabilir. Kritik sayılar için Claude'a hesaplama yaptırmayın, Excel'e veya tabloya yaptırın, Claude sadece yorumlasın.
 - **Claude yanılmaz değildir.** Bilmediği bir şeyi emin bir tonla söyleyebilir (buna *halüsinasyon* denir). Önemli çıktıları her zaman insan gözüyle kontrol edin.
 
@@ -83,7 +86,7 @@ Noter, konsolosluk onayı, apostil gerektiren belgeler için Claude bir başlang
 
 ### Ekibin birlikte gerçek zamanlı düzenleme yapması gerektiğinde → **Google Docs, Microsoft 365 co-authoring**
 
-Claude tek kullanıcı ve tek oturumdur. 5 kişi aynı belge üzerinde eş zamanlı çalışıyorsa Google Docs veya OneDrive daha uygundur. Claude ilk taslağı üretir, sonra ekip co-editing'de devam eder.
+Claude sohbeti tek kullanıcı ve tek oturumdur. 5 kişi aynı belge üzerinde eş zamanlı çalışıyorsa Google Docs veya OneDrive daha uygundur. Claude ilk taslağı üretir, sonra ekip co-editing'de devam eder; Word ve Google Dokümanlar eklentileriyle Claude ortak belgenin içinde de yardım edebilir.
 
 ### Büyük veri görselleştirmesi ve BI → **Tableau, Power BI, Looker**
 

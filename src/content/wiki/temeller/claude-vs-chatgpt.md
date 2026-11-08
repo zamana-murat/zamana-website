@@ -1,6 +1,7 @@
 ---
 title: "Claude vs ChatGPT: Dürüst Bir Karşılaştırma"
-description: Claude ve ChatGPT arasındaki farkları iş kullanımı açısından inceliyoruz. Hangisi hangi durumda daha doğru seçim, Türkçe kalitesi, fiyat ve kurumsal özellikler.
+seoTitle: "Claude vs ChatGPT: İş İçin Dürüst Karşılaştırma"
+description: "Claude ve ChatGPT'yi iş kullanımı açısından karşılaştırıyoruz: hangisi hangi durumda doğru seçim, Türkçe kalitesi, fiyat ve kurumsal özellikler."
 tags:
   - temeller
   - claude
@@ -53,7 +54,7 @@ Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kes
 
 **ChatGPT**: *Code Interpreter* (Advanced Data Analysis) ile Python kodunu sandbox'ta çalıştırır. *GPTs* ile özelleştirilmiş mini-asistanlar yaratabilirsiniz. Dış servislere ChatGPT'nin kendi uygulama ve bağlayıcı katalogu üzerinden bağlanır.
 
-**Claude**: *Cowork* ile bilgisayarınızda izin verdiğiniz klasörlerdeki dosyalara erişir, kod çalıştırır, araç kullanır; 6 Ekim 2026'dan beri Pro, Max ve Ultra'da yeni Cowork görevleri bulutta da çalışır. *Skills* ile hazır uzmanlık paketleri devreye girer (PDF, Excel, PPTX, marketing, sales, hepsi hazır). *MCP* (Model Context Protocol) ile şirket içi araçlarınıza (Slack, Drive, CRM) bağlanır. *Computer Use* ile ekranı görür ve kontrol eder (research preview, yalnızca Pro, Max ve Ultra planlarında; bu özelliği açtığınızda Claude klasör sınırının ötesinde ekranınızı da görebilir).
+**Claude**: *Cowork* ile bilgisayarınızda izin verdiğiniz klasörlerdeki dosyalara erişir, kod çalıştırır, araç kullanır; 6 Ekim 2026'dan beri Pro, Max ve Ultra'da yeni Cowork görevleri bulutta da çalışır. *Skills* ile hazır uzmanlık paketleri devreye girer (PDF, Excel, PPTX, marketing, sales, hepsi hazır). *MCP* (Model Context Protocol) ile şirket içi araçlarınıza (Slack, Drive, CRM) bağlanır. *Computer Use* ile ekranı görür ve kontrol eder (beta, yalnızca Pro, Max ve Ultra planlarında; bu özelliği açtığınızda Claude klasör sınırının ötesinde ekranınızı da görebilir).
 
 **İş akışı açısından:** ChatGPT'nin araç entegrasyonu daha uygulama-odaklı, Claude'unki daha iş-akışı-odaklı. Bir satış yöneticisi için Cowork + Skills kombinasyonu "CRM'e bak, proposal'ı hazırla, Slack'te paylaş" zincirini kuran daha akıcı bir yapı sunar.
 
@@ -61,11 +62,11 @@ Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kes
 
 | Özellik | Claude | ChatGPT |
 |---|---|---|
-| Kalıcı hafıza Profil/proje talimatı + Cowork klasöründe CLAUDE.md (açık, düzenlenebilir) + Claude hafızası (memory) | Memory (kaydedilen anılar) |
+| Kalıcı hafıza | Profil/proje talimatı + Cowork klasöründe CLAUDE.md (açık, düzenlenebilir) + Claude hafızası (memory) | Memory (kaydedilen anılar) |
 | Hazır uzmanlık | Skills (PDF, Excel, marketing, sales, legal, vb.) | GPTs (topluluk yapımı) |
-| Dış araç bağlantısı | MCP (açık standart), resmi dizinde yaklaşık 900 connector | Kendi uygulama ve bağlayıcı kataloğu + GPT Actions |
+| Dış araç bağlantısı | MCP (açık standart), resmi dizinde 1.000'den fazla connector | Kendi uygulama ve bağlayıcı kataloğu + GPT Actions |
 | Proje alanları | Projects (claude.ai, 17 Eylül 2026'da yeniden tasarlandı) | Projects (ChatGPT) |
-| Zamanlanmış ve uzaktan görev | Scheduled Tasks; Dispatch (telefondan görev atama) yeni kullanıcıya kapalı sınırlı beta | Zamanlanmış görevler |
+| Zamanlanmış ve uzaktan görev | Scheduled Tasks; telefondan Cowork'e görev atama (Pro, Max, Ultra ve Team'de otomatik açık; eski Dispatch yeni kullanıcıya kapalı) | Zamanlanmış görevler |
 
 **Önemli fark:** Claude'un kalıcı talimatları düz metindir: profil talimatını ayarlardan, Cowork klasörünüzdeki CLAUDE.md dosyasını bir editörle düzenlersiniz (sıradan sohbet CLAUDE.md okumaz, orada profil ve proje talimatı geçerlidir). ChatGPT de kaydettiklerini gösterir, ama onun hafızası proje klasöründe yaşayan, ekiple paylaşılıp sürüm kontrolüne alınabilen bir dosya değildir. Kurumsal kullanımda **şeffaflık önemlidir**, çalışanın Claude'a ne öğrettiği görülebilir olmalı.
 
@@ -101,7 +102,7 @@ Birçok orta ölçekli Türk şirketi Claude'u tercih ediyor. Sebepleri:
 
 ## Ya Google Gemini?
 
-Google'ın yapay zekâ ürünü **Gemini**, Google Workspace (Gmail, Drive, Docs, Sheets) kullanan şirketler için doğal bir seçenek: ek hesap gerekmez, asistan zaten uygulamanın içindedir. Uzun bağlamda (1 milyon token) Claude'un güncel modelleriyle başa baş, bu başlık artık belirleyici değil. Claude'un iş akışı tarafı (Cowork, Skills, MCP) ile Gemini'nin Workspace içi yerleşikliği farklı güçler; Türkçe kalitesinde günlük kullanımda fark küçük. Gemini'nin ticari sözleşme metnini bu sayfa için incelemedik, DPA ve KVKK konusunda iki sözleşmeyi yan yana okuyun.
+Google'ın yapay zekâ ürünü **Gemini**, Google Workspace (Gmail, Drive, Docs, Sheets) kullanan şirketler için doğal bir seçenek: ek hesap gerekmez, asistan zaten uygulamanın içindedir. Claude da 6 Ekim 2026'dan beri Google Workspace eklentisiyle Dokümanlar, E-Tablolar ve Slaytlar'ın içinde çalışır (genel beta, ücretli planlar), ama bunun için ayrı bir Claude aboneliği gerekir. Uzun bağlamda (1 milyon token) Claude'un güncel modelleriyle başa baş, bu başlık artık belirleyici değil. Claude'un iş akışı tarafı (Cowork, Skills, MCP) ile Gemini'nin Workspace içi yerleşikliği farklı güçler; Türkçe kalitesinde günlük kullanımda fark küçük. Gemini'nin ticari sözleşme metnini bu sayfa için incelemedik, DPA ve KVKK konusunda iki sözleşmeyi yan yana okuyun.
 
 Güçlü ve zayıf yönler, fiyatlar, karar matrisi ve "ikisini birden kullanmak mantıklı mı" sorusu için [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/) sayfasına bakın.
 
@@ -154,7 +155,7 @@ Açık kaynak modeller hızla gelişiyor, 2-3 yıl sonra belki bu değerlendirme
 
 Son zamanlarda "Claude vs ChatGPT vs Grok" karşılaştırmaları popüler. Dürüst görüşümüz: **Grok şu an iş kullanımında ciddi bir üçüncü seçenek değil.**
 
-xAI'nin ürünü Grok, daha çok tüketici ve eğlence odaklı konumlanıyor, X/Twitter entegrasyonu, gündem yorumu, mizahi ton bu tarafa yatırım yapıyor. Kurumsal tarafta ise henüz CLAUDE.md benzeri şeffaf bir talimat dosyası, MCP gibi açık bir bağlantı standardı, Cowork seviyesinde bir iş akışı ortamı veya olgun bir Team/Enterprise planı sunmuyor. Türkiye'deki kurumsal kullanım için kritik olan KVKK uyumluluğu konusunda da veri işleme konumu hâlâ belirsiz.
+xAI'nin ürünü Grok, daha çok tüketici ve eğlence odaklı konumlanıyor, X/Twitter entegrasyonu, gündem yorumu, mizahi ton bu tarafa yatırım yapıyor. Kurumsal tarafta ise henüz CLAUDE.md benzeri şeffaf bir talimat dosyası, MCP gibi açık bir bağlantı standardı, Cowork seviyesinde bir iş akışı ortamı veya olgun bir Team/Enterprise planı sunduğunu bu sayfa için doğrulayamadık. Türkiye'deki kurumsal kullanım için kritik olan KVKK uyumluluğu konusunda da veri işleme konumu hâlâ belirsiz.
 
 Bu durum değişebilir, xAI hızlı hareket ediyor. Ama bugün itibariyle, bir şirketin yapay zeka stratejisini kurarken karar Claude ile ChatGPT arasındadır. Grok zamanla ciddi bir alternatif olursa bu sayfayı güncelleriz.
 
@@ -228,9 +229,9 @@ Her ikisi de **kullanılabilir**. Fark çıktıların kendisinde değil, **terci
 
 ## 2026'da Durum Ne Değişti?
 
-Claude ve ChatGPT hızlı evrim geçiriyor. Ekim 2026 itibarıyla önemli gelişmeler:
+Claude ve ChatGPT hızlı evrim geçiriyor. Kasım 2026 itibarıyla önemli gelişmeler:
 
-### Claude tarafı (Nisan-Ekim 2026)
+### Claude tarafı (Nisan-Kasım 2026)
 
 - 9 Nisan: **Cowork** masaüstünde genel kullanıma açıldı
 - 16 Nisan: **Claude Opus 4.7** yayınlandı
@@ -240,8 +241,15 @@ Claude ve ChatGPT hızlı evrim geçiriyor. Ekim 2026 itibarıyla önemli geliş
 - 25 Ağustos: **Hafıza** sohbet ve Cowork arasında ortak oldu
 - 26 Ağustos: **Claude in Chrome** genel kullanıma açıldı
 - 1 Eylül: **Fable 5.1** (Mythos 5.1 yalnızca davetle)
-- 16 Eylül: **Cowork ve sohbet tek Claude** oldu; Design, Slides ve Docs her konuşmada istenebiliyor (ücretli planlarda beta, Free'de yok). Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/)
+- 16 Eylül: **Cowork ve sohbet tek Claude** oldu; Design, Slides ve Docs her konuşmada istenebiliyor. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/)
 - 22 Eylül: **Opus 5.5** ([haber](/haberler/2026-09-24-claude-opus-5-5/)); 28 Eylül: **Sonnet 5.5**
+- 6 Ekim: **Claude for Google Workspace** (Docs, Sheets, Slides eklentisi, genel beta)
+- 7 Ekim: **Haiku 5.5**; Max ve Team planlarına aylık API kredisi
+- 8 Ekim: Design, Slides ve Docs betadan çıktı, **Free dahil** tüm planlarda
+- Ekim-Kasım: **Claude Dashboards** (ücretli planlar) ve **Claude Motion** (Team, Enterprise) beta olarak geldi
+- 23 Ekim: Enterprise'ta birleşik Cowork ve sohbet arayüzü genel kullanıma açıldı
+- 30 Ekim dolayı: Max 20x'in yeni adı **Ultra**, Max 5x'in yeni adı **Max**
+- 5 Kasım: Enterprise için güvenlik merkezi ve ek erişim kontrolleri (kısmen beta)
 
 ### ChatGPT tarafı (Ekim 2026 itibarıyla)
 

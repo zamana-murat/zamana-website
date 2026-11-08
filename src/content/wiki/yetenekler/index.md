@@ -80,7 +80,7 @@ Belirli durumlarda devreye giren yetenekler. Önce temel dördünü oturtun.
 
     ---
 
-    API'si olmayan eski sistemleri Claude ekrandan görerek kontrol etmeyi dener. Research preview; yalnızca Pro, Max ve Ultra, masaüstü uygulamasında.
+    API'si olmayan eski sistemleri Claude ekrandan görerek kontrol etmeyi dener. Beta; yalnızca Pro, Max ve Ultra, masaüstü uygulamasında.
 
     [→ Computer Use](/wiki/yetenekler/computer-use/)
 
@@ -104,7 +104,7 @@ Diğer yeteneklerin kalitesini ve kapsamını belirleyen beş başlık.
 
     ---
 
-    Claude'un gerçek Python kodu çalıştırarak yaptığı hesaplama, analiz ve grafik.
+    Claude'un gerçek kod (Python ya da JavaScript) çalıştırarak yaptığı hesaplama, analiz ve grafik.
 
     [→ Code Execution](/wiki/yetenekler/code-execution/)
 
@@ -128,7 +128,7 @@ Diğer yeteneklerin kalitesini ve kapsamını belirleyen beş başlık.
 
     ---
 
-    Claude ile birlikte tasarım, prototip, sunum ve one-pager üretimi. Ücretli planlarda beta.
+    Claude ile birlikte tasarım, prototip, sunum, belge ve canlı veri panosu (Dashboards, beta) üretimi. Design, Slides ve Docs tüm planlarda.
 
     [→ Claude Design](/wiki/yetenekler/claude-design/)
 

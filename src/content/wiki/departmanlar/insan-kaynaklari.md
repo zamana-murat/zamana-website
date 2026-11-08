@@ -1,13 +1,13 @@
 ---
 title: "İnsan Kaynakları: Claude Uygulamaları"
-seoTitle: "İKte Claude: İş İlanı, Mülakat Soruları, Performans Değerlendirme"
+seoTitle: "İKte Claude: İş İlanı, Mülakat, Performans"
 description: "İK ekibi için Claude: iş ilanı, mülakat soru setleri, performans değerlendirme, onboarding, politika yazımı. İş Kanunu çerçevesinde hukuki dikkat."
 tags:
   - departmanlar
   - insan-kaynaklari
   - ik
   - is-kanunu
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 İnsan Kaynakları, Claude'un en çok tekrarlayan ve en yüksek hacimli işi bulduğu alanlardan biridir. Ama hukuki hassasiyeti de yüksektir.
@@ -133,6 +133,7 @@ Pozisyon kaldırma bildirimleri, danışma süreci dokümantasyonu, kıdem tazmi
 - **Performans değerlendirme sezonu**: tutarlı yapıda toplu değerlendirme
 - **Disiplin dokümantasyon süreci**: her adımda hukuk koordinasyonu
 - **Yıllık iş gücü planlama döngüsü**
+- **Politika soru-cevap ortamı**: yürürlükteki politika belgelerini bir [Project](/wiki/araclar/projects/)'e koyup "yıllık izin devri nasıl işliyor?" gibi tekrar eden soruları kaynağa dayalı yanıtlatmak. Yanıtlar İK uzmanınca kontrol edilir; kişisel dosya (bordro, özlük) bu ortama girmez
 
 ## Gerçek Örnek: İş İlanı
 

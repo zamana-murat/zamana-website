@@ -5,7 +5,7 @@ tags:
   - okuma-sirasi
   - rehber
   - baslangic
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Bu sayfa, wiki'yi baştan sona takip etmek isteyenler için sıralı bir liste sunar.** Sıranın kendisi önkoşulu gösterir: bir sayfayı okumak için öncekiler yeterlidir.
@@ -15,7 +15,7 @@ lastUpdated: "2026-10-06"
 - 🔵 **Claude Chat kullanımına başlama noktası**: yatırım, gizlilik ve hesap kurulumu kararları alındıktan sonra
 - 🟢 **Cowork kullanımına başlama noktası**: Chat üzerinde temel hâkimiyet, prompting ve kalıcı talimat (CLAUDE.md ve Kalıcı Talimat bölümü) disipliniyle olgunlaştıktan sonra
 
-> **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım). Bu sayfadaki Chat ve Cowork ayrımı artık ayrı iki ürünü değil, **öğrenme sırasını** gösterir: önce soru-cevap ve prompting, sonra klasör, dosya ve araçlarla çalışan, işi baştan sona teslim eden kullanım. Hesabınızda birleşik arayüz açıldıysa sıra yine geçerlidir.
+> **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım; Enterprise'ta birleşik arayüz 23 Ekim 2026'dan beri genel kullanımda, yönetici açar). Bu sayfadaki Chat ve Cowork ayrımı artık ayrı iki ürünü değil, **öğrenme sırasını** gösterir: önce soru-cevap ve prompting, sonra klasör, dosya ve araçlarla çalışan, işi baştan sona teslim eden kullanım. Hesabınızda birleşik arayüz açıldıysa sıra yine geçerlidir.
 
 | Sıra | Sayfa |
 |---|---|
@@ -94,9 +94,11 @@ lastUpdated: "2026-10-06"
 
 **Sözlük ve SSS referans sayfalarıdır.** Sıralı okumak şart değil, ihtiyaç anında bakılır.
 
-**Dispatch yeni kullanıcılara kapalıdır.** 47. sıradaki [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) sayfası, zaten kullanan kişiler ve kavramı anlamak isteyenler içindir; yeni bir katılımcının kullanabileceği varsayılmamalıdır.
+**Dispatch yeni kullanıcılara kapalıdır, telefondan görev atama açıktır.** 47. sıradaki [bölüm](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch) ikisini birlikte anlatır. Cowork'ün telefondan görev atama özelliği Pro, Max, Ultra ve Team'de otomatik açıktır, Enterprise'ta kurum isterse açılır; yeni katılımcı bunu kullanabilir. Eski adlandırılmış Dispatch özelliği ise yalnız zaten kullananlar ve kavramı anlamak isteyenler içindir; yeni bir katılımcının kullanabileceği varsayılmamalıdır.
 
-**Sıraya girmeyen ek sayfalar.** İhtiyaç anında bakılabilecek güncel konular: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) (Planlar'dan sonra), [Office ve Chrome](/wiki/araclar/office-ve-chrome/) (Connectors'tan sonra), [Effort Control](/wiki/yetenekler/effort-control/) ve [Claude Design](/wiki/yetenekler/claude-design/) (Artifacts'tan sonra).
+**Sıraya girmeyen ek sayfalar.** İhtiyaç anında bakılabilecek güncel konular: [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) (Planlar'dan sonra), [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/) (Connectors'tan sonra), [Effort Control](/wiki/yetenekler/effort-control/) ve [Claude Design](/wiki/yetenekler/claude-design/) (Artifacts'tan sonra).
+
+**Konuya göre bakılacak diğer sayfalar.** Kişisel veri girecekseniz [Yurt Dışı Aktarım (KVKK m.9)](/wiki/temeller/yurt-disi-aktarim/) (Gizlilik ve KVKK'dan sonra). Türkiye'den satın alma ve destek için [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/) (Planlar'dan sonra). Logo, Mikro, Paraşüt gibi yerli araçlarla çalışacaksanız [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) (Connectors'tan sonra). Sözleşme, şartname ve Excel gibi uzun belgelerde [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/) (Dosya İşleme'den sonra). Bir iç sistemi bağlayacak BT ekibi için [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) (MCP Nedir'den sonra). Şirket genelinde açacaksanız [Pilot ve Yaygınlaştırma](/wiki/temeller/pilot-ve-yayginlastirma/) ile [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) (Ölçüm Metrikleri'nin yanında).
 
 **Sıralama esnek değildir ama uyarlanabilir.** Bir BT yöneticisi için MCP bölümü öne çekilebilir; bir hekim için Sağlık (departman) ve Hukuk önceliklendirilebilir. Sıralama "tipik kullanıcı" varsayımıdır.
 

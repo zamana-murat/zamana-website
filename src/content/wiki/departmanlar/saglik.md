@@ -1,6 +1,6 @@
 ---
 title: "Sağlık: Claude Uygulamaları (Hassas Sektör)"
-seoTitle: "Sağlıkta Claude: Hekim Notu, Hasta Bilgilendirme, KVKK ve Sınırlar"
+seoTitle: "Sağlıkta Claude: İdari İş, Eğitim, KVKK ve Sınırlar"
 description: "Sağlık kuruluşları için Claude: hasta verisi politikası, idari iş yükü, hekim notu desteği, eğitim materyali. KVKK ve özel mevzuatta dikkatli kullanım."
 tags:
   - departmanlar
@@ -49,7 +49,7 @@ Sağlıkta Claude kullanımını yöneten ana mevzuat:
 
 ### Hekim Notu Ön Taslak
 
-Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder (cihazın kendi dikte özelliğiyle; Claude'un [Voice Mode](/wiki/araclar/voice-mode/) özelliği şu an Türkçe desteklemiyor) veya kısa yazılı not bırakır. Claude bunu yapılandırılmış hekim notuna çevirir:
+Hekim hasta görüşmesinden çıkar. Notlarını sözle dikte eder (cihazın kendi dikte özelliğiyle; Claude'un [Voice Mode](/wiki/araclar/voice-mode/) özelliğinde Türkçe desteği doğrulanmadı) veya kısa yazılı not bırakır. Claude bunu yapılandırılmış hekim notuna çevirir:
 
 - Şikayet
 - Anamnez

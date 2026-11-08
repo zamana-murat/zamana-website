@@ -53,6 +53,7 @@ export const kurumsalNavColumns: ClaudeNavColumn[] = [
           { label: 'Öğretmenler', href: '/kurumsal/ogretmenler/', slug: 'ogretmenler', desc: 'İlkokuldan liseye öğretmenler' },
           { label: 'Yaşam bilimleri', href: '/kurumsal/yasam-bilimleri/', slug: 'yasam-bilimleri', desc: 'İlaç, biyoteknoloji ve klinik araştırma' },
           { label: 'Sivil toplum', href: '/kurumsal/sivil-toplum/', slug: 'sivil-toplum', desc: 'Vakıflar, dernekler ve STK\'lar' },
+          { label: 'Küçük işletmeler', href: '/kurumsal/kucuk-isletme/', slug: 'kucuk-isletme', desc: 'Hazır iş akışları ve Small Business eklentisi' },
         ],
       },
     ],

@@ -1,13 +1,13 @@
 ---
 title: "Finans ve Muhasebe: Claude Uygulamaları"
-seoTitle: "Finans ve Muhasebede Claude: Rapor Anlatısı, Varyans, Hibe Başvurusu"
+seoTitle: "Finans ve Muhasebede Claude: Rapor, Varyans, Hibe"
 description: "Finans ekibi için Claude: raporlama anlatısı, bütçe varyans açıklaması, KOSGEB/TÜBİTAK başvuruları, denetim dosyası. Rakamlar sizin, anlatım Claude'un."
 tags:
   - departmanlar
   - finans
   - muhasebe
   - raporlama
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Finans ekibi Claude'u doğru konumlandırdığında her ay saatlerce zaman kazanır. Ama kritik bir çerçeve var:
@@ -29,7 +29,7 @@ Bu çerçeve her finans prompt'unda aklınızda olmalı.
 
 ### Aylık / Çeyreklik Rapor Yazımı
 
-Siz rakamları sağlarsınız; Claude anlatıyı, açıklamayı ve yönetici özetini üretir. **Zamana notu:** aylık rapor anlatısı elle 3-4 saat sürer; Claude ile kontrol dahil 45-60 dakika tipik bir beklentidir (Zamana eğitim materyali, tahmini aralık). Kendi sürenizi [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/) ile deneyin.
+Siz rakamları sağlarsınız; Claude anlatıyı, açıklamayı ve yönetici özetini üretir. **Zamana notu:** aylık rapor anlatısı elle 3-4 saat sürer; Claude ile kontrol dahil 45-60 dakika tipik bir beklentidir (Zamana eğitim materyali; tahmini tipik aralık). Kendi sürenizi [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/) ile deneyin.
 
 ### Bütçe Varyans Açıklaması
 
@@ -37,7 +37,7 @@ Varyans tablosundan, **rakamların arkasındaki hikâyeyi** anlatan net bir yön
 
 ### Yönetim ve Kurul Sunumları
 
-Finans dışı kitleler için yapılandırılmış finansal hikâyeler. CFO'nun işi yalnızca raporlamak değil, **anlaşılmaktır**. Claude for Excel (Excel, PowerPoint ve Word eklentileri genel kullanımda) tablo ile sunum arasındaki geçişi aynı yerde yapmanızı sağlar; ayrıntılar [Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/) sayfasında.
+Finans dışı kitleler için yapılandırılmış finansal hikâyeler. CFO'nun işi yalnızca raporlamak değil, **anlaşılmaktır**. Claude for Excel (Excel, PowerPoint ve Word eklentileri genel kullanımda) tablo ile sunum arasındaki geçişi aynı yerde yapmanızı sağlar. Google Sheets ve Slides kullanan ekipler için aynı işi yapan Google Workspace eklentisi genel beta aşamasında, ücretli planlarda. Ayrıntılar [Office, Google ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/) sayfasında.
 
 ### Enflasyon Muhasebesi (TMS 29) Anlatısı
 
@@ -123,6 +123,7 @@ USD veya EUR alacağı ya da borcu yüksek şirketlerde Claude FX risk bölümü
 1. **Google Workspace / Microsoft 365** (özellikle Sheets / Excel)
 2. **Outlook / Gmail**: paydaş iletişimi
 3. (opsiyonel) **DocuSign**: resmi dokümanların imzası
+4. (opsiyonel) **Claude Dashboards** (beta, ücretli planlar; Enterprise'ta yönetici açar): Snowflake, BigQuery gibi bağlı bir veri kaynağından sade bir soruyla canlı pano (ör. bölge bazında ciro ve tahsilat gecikmesi). Onaylı raporlama sisteminizin yerine geçmez; yönetime giden rakamı kaynağında doğrulayın ([Claude Dashboards](/wiki/yetenekler/claude-design/#claude-dashboards-ve-claude-motion-beta)).
 
 **Muhasebe programı (Logo, Mikro, Paraşüt):** Bu programlar için Claude'un resmi bir connector'ı yok. Pratik yol: mizanı, cari ekstreyi ya da fatura listesini programdan Excel/CSV olarak **dışa aktarıp** Claude'a yüklemek; ayrıntı ve riskler [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasında.
 
@@ -130,7 +131,7 @@ USD veya EUR alacağı ya da borcu yüksek şirketlerde Claude FX risk bölümü
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Ay sonu raporlama döngüsü**: rakamlar hazırlanır → Claude anlatı üretir → iç inceleme → yönetime teslim
+- **Ay sonu raporlama döngüsü**: rakamlar hazırlanır → Claude anlatı üretir → iç inceleme → yönetime teslim. Her ay aynı günde "mizan dosyasını oku, varyans taslağını hazırla" diyen bir [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) taslağı sizi beklerken hazır eder (dosyaların yerel mi bulutta mı olduğu görevin çalışma yerini belirler)
 - **Denetim hazırlığı**: yıllık denetim öncesi kanıt paketleri ve açıklamalar
 - **Bütçe döngüsü iletişimi**: yıllık bütçe sunumu, gerekçeler, varyans takibi
 - **Başvuru taslağı döngüsü**: KOSGEB / TÜBİTAK / TURQUALITY için yılda 2-3 başvuru
@@ -168,6 +169,7 @@ SPK, bağımsız denetim ve mali müşavir standartlarından doğan sorumluluk C
 
 ## İlgili Sayfalar
 
+- [Finansal Hizmetler (sektör sayfası)](/wiki/departmanlar/finansal-hizmetler/): banka, sigorta, aracı kurum; BDDK, SPK, MASAK çerçevesi
 - [Finansal Hizmetler için Claude](/kurumsal/finansal-hizmetler/): banka, sigorta ve aracı kurumlar için sektör sayfası
 - [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt, e-Fatura, KEP
 - [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): kendi zaman kazancınızı hesaplayın

@@ -17,9 +17,9 @@ Bu sayfa entegrasyon seçeneklerini, kurulumu ve kurumsal IT onayını anlatır.
 
 ## Teams: Resmi Uygulama Yok, Connector Var
 
-Teams içinde resmi bir Claude uygulaması veya botu yok, Anthropic de bir Teams sürümü duyurmadı. Geçerli yol Microsoft 365 connector'ıdır (aşağıdaki Model 1). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir, Microsoft 365 admin onayı da gerekebilir.
+Teams içinde resmi bir Claude uygulaması veya botu yok. Anthropic, Claude Tag'in Microsoft Teams sürümü için yalnızca bir bekleme listesi açtı; henüz yayında değil. Geçerli yol Microsoft 365 connector'ıdır (aşağıdaki Model 1). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir, Microsoft 365 admin onayı da gerekebilir.
 
-Microsoft ekosisteminde ayrıca Excel, PowerPoint ve Word'ün içinde çalışan Claude eklentileri var (Excel, PowerPoint, Word genel kullanımda, Outlook public beta). Bunlar Teams botu değil, ofis uygulamalarının içindeki yardımcıdır: [Office ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
+Microsoft ekosisteminde ayrıca Excel, PowerPoint ve Word'ün içinde çalışan Claude eklentileri var (Excel, PowerPoint, Word genel kullanımda, Outlook public beta). Bunlar Teams botu değil, ofis uygulamalarının içindeki yardımcıdır: [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
 
 ## İki Entegrasyon Modeli
 
@@ -56,13 +56,13 @@ Başlangıçta inceleme modunu seçin: kanalda herkesin göreceği bir cevapta h
 
 Kişisel connector yalnızca sizin başlattığınız istekler içindir. Zamanlanmış rutinler ve Claude'un kendi başlattığı işler, yöneticinin kanala tanımladığı ortak connector'ları kullanır. Claude'un sizin connector'ınızla yaptığı işlemler, ilgili aracın kendi günlüğünde sizin hesabınız altında görünür. Ayrıntı: [Claude Tag kişisel connector'ları kullanabiliyor](/haberler/2026-09-24-claude-tag-kisisel-baglayicilar/).
 
-İki model birlikte kullanılabilir. **Model 1 (connector)**, Claude'un tam gücüne (skills, projects, dosya yükleme) erişim verdiği için çoğu iş için daha geniş bir yoldur. Teams için Claude Tag benzeri bir sürüm yok; Teams'te connector yolunu kullanın (yukarıdaki Teams bölümüne bakın).
+İki model birlikte kullanılabilir. **Model 1 (connector)**, Claude'un tam gücüne (skills, projects, dosya yükleme) erişim verdiği için çoğu iş için daha geniş bir yoldur. Teams için Claude Tag henüz yayında değil (bekleme listesi var); Teams'te connector yolunu kullanın (yukarıdaki Teams bölümüne bakın).
 
 ## Kurulum: Connector (Model 1)
 
 claude.ai içinde:
 
-1. **Settings → Connectors** menüsüne girin
+1. **Customize → Connectors** menüsüne girin (eski arayüzde Settings → Connectors; Team ve Enterprise'ta connector'ı önce owner Organization settings → Connectors'tan açar)
 2. Slack seçin (Teams için Microsoft 365 connector'ını seçin)
 3. **Connect** → workspace OAuth ekranı açılır
 4. Hangi yetkileri verdiğinizi okuyun (kanal okuma, DM okuma, vb.)

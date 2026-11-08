@@ -1,6 +1,6 @@
 ---
 title: İleri Seviye Prompt Engineering
-seoTitle: "İleri Prompt Teknikleri: XML Etiketi, Zincirleme, Eleştirmen"
+seoTitle: "İleri Prompt Teknikleri: XML, Zincirleme, Eleştiri"
 description: "XML etiketi, uzun belge düzeni, zincirleme, eleştirmen ve düşünme derinliği: temel ilkelerden sonra çıktı kalitesini artıran Claude prompt teknikleri."
 tags:
   - prompting
@@ -8,7 +8,7 @@ tags:
   - xml-tags
   - few-shot
   - prompt-chaining
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 [Prompting temel ilkelerini](/wiki/prompting/temel-ilkeler/) oturtmuş bir çalışan, günlük iş çıktılarının büyük bölümünü zaten karşılar. İleri teknikler kalan farkı kapatır: karmaşık girdiyi düzenler, uzun işi parçalar, çıktıyı göndermeden önce sınar.
@@ -72,7 +72,7 @@ Claude'a iyi çıktının nasıl göründüğünü **tarif etmek** yerine **gös
 
 ## 3. Zincirleme Düşünme: Güncel Modellerde Ne Değişti?
 
-Eskiden karmaşık işlerde "adım adım düşün" demek ana kaldıraçtı. Güncel modellerde (Sonnet 5.5, Opus 5.5, Fable 5.1) Thinking claude.ai'de **kapatılamıyor**; yani akıl yürütme zaten çalışıyor. Anthropic'in rehberi Thinking açıkken elle yazılmış adım planı yerine **genel talimatı** önerir: Claude'un akıl yürütmesi çoğu zaman sizin tarif edeceğiniz adımları aşıyor.
+Eskiden karmaşık işlerde "adım adım düşün" demek ana kaldıraçtı. Güncel modellerde (Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1) Thinking claude.ai'de **kapatılamıyor**; yani akıl yürütme zaten çalışıyor. Anthropic'in rehberi Thinking açıkken elle yazılmış adım planı yerine **genel talimatı** önerir: Claude'un akıl yürütmesi çoğu zaman sizin tarif edeceğiniz adımları aşıyor.
 
 **Zayıf (adımları siz dayatıyorsunuz):**
 > *"Önce şunu hesapla, sonra bunu karşılaştır, sonra üçüncü adımda..."*
@@ -131,7 +131,7 @@ Bu cümleler nasıl çalışacağını değil, işten ne kadar özen beklediğin
 
 Pratik sıra: önce **ne istediğinizi ve neyin doğru sayılacağını** netleştirin, sonra gerekirse Effort'u yükseltin.
 
-> **Geliştiriciler için:** API'de derinlik `output_config.effort` ile ayarlanır, Thinking ise ayrı bir `thinking` alanıdır. Opus 5.5'te `thinking` alanını `disabled` yapmak her kademede hata verir (400).
+> **Geliştiriciler için:** API'de derinlik `output_config.effort` ile ayarlanır, Thinking ise ayrı bir `thinking` alanıdır. Opus 5.5'te `thinking` alanını `disabled` yapmak her kademede hata verir (400). 2026-10-21 API sürümü `temperature`, `top_p` ve `top_k` parametrelerini kaldırdı; çıktıyı tutarlı kılmak için artık bu ayarlara değil, net kısıta, örneğe ve yapılandırılmış çıktıya güvenin.
 
 ## 8. "Bağlam Önce": İleri Seviye
 
@@ -156,7 +156,7 @@ Bir prompt kütüphanesi, sizin tarafınızdan test edilmiş ve iyileştirilmiş
 
 **Kütüphane nerede yaşasın?**
 
-En uygun yer bir [Claude Projesi](/wiki/araclar/projects/): prompt metinlerini proje talimatına ya da proje dosyalarına (`.md`) koyarsınız, projedeki sohbetlerde Claude'un elinde olur. Proje talimatı yalnız o projede geçerlidir; tüm sohbetlerinizi ilgilendiren genel tercihler için profil talimatı ("Instructions for Claude", Settings > General) ayrıdır, ayrıntı [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasında.
+En uygun yer bir [Claude Projesi](/wiki/araclar/projects/): prompt metinlerini proje talimatına ya da proje dosyalarına (`.md`) koyarsınız, projedeki sohbetlerde Claude'un elinde olur. Proje talimatı yalnız o projede geçerlidir; tüm sohbetlerinizi ilgilendiren genel tercihler için profil talimatı ("Instructions for Claude", Settings > General) ayrıdır, ayrıntı [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasında.
 
 Bilgisayarınızdaki bir `prompts/` klasörü bu iş için artık iyi bir tercih değil. Cowork'te yeni görevler bulutta çalışıyor ve bulut oturumu yerel klasöre doğrudan erişemiyor; Claude Desktop'ın açık ve bağlı olması, klasörün elle eklenmesi gerekiyor.
 

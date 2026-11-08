@@ -11,7 +11,7 @@ availability: "Excel, PowerPoint ve Word tüm ücretli planlarda genel kullanım
 sourceUrl: "https://claude.com/claude-for-microsoft-365"
 sourceTitle: "Claude for Microsoft 365: Work without the window shuffle"
 related:
-  - { label: "Office ve Chrome'da Claude (wiki)", href: "/wiki/araclar/office-ve-chrome/" }
+  - { label: "Office, Google ve Chrome'da Claude (wiki)", href: "/wiki/araclar/office-ve-chrome/" }
   - { label: "Connectors (wiki)", href: "/wiki/araclar/connectors/" }
   - { label: "Slack ve Teams Entegrasyonu (wiki)", href: "/wiki/araclar/slack-teams-entegrasyon/" }
   - { label: "Claude vs Copilot (wiki)", href: "/wiki/temeller/claude-vs-copilot/" }
@@ -45,7 +45,7 @@ En önemli fark, **tek bir konuşmanın uygulamalar arasında sürmesidir.** Out
 
 1. Ücretli bir Claude planınız olduğundan emin olun (Pro, Max, Ultra, Team ya da Enterprise).
 2. Excel, PowerPoint ve Word için "Microsoft 365 için yükle" bağlantısından, Outlook için ayrı olan "Outlook için yükle" bağlantısından eklentileri kurun. Kurumsal Microsoft 365'te IT yöneticisinin eklenti kurulumuna izin vermesi gerekebilir.
-3. Claude hesabınızla giriş yapın. Bulut sağlayıcınız üzerinden bağlanmak istiyorsanız, Microsoft Foundry, Amazon Bedrock ya da Google Cloud Vertex AI kimlik bilgileriyle de bağlanabilirsiniz.
+3. Claude hesabınızla giriş yapın. Bulut sağlayıcınız üzerinden bağlanmak istiyorsanız, Microsoft Foundry, Amazon Bedrock ya da Google Cloud'un Gemini Enterprise Agent Platform'u (eski adı Vertex AI) üzerinden de bağlanabilirsiniz.
 4. Önce kendi şablonlarınız üzerinde küçük bir iş deneyin: bir slayt, bir bölüm, bir tablo.
 
 Güvenlik tasarımı şöyle: her düzenleme gözden geçirilebilir. Word'de değişiklikleri izleme, Excel'de vurgulanan hücreler, Outlook'ta gönderilmeyi bekleyen taslaklar. Siz onaylamadan hiçbir şey gönderilmez ya da kaydedilmez. Claude e-postayı sizin görmeden göndermez; taslak ve takvim daveti Outlook'un normal yazma penceresinde sizi bekler.

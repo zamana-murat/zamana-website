@@ -11,7 +11,7 @@ availability: "Tüm ücretli planlarda (Pro, Max, Ultra, Team, Enterprise); Free
 sourceUrl: "https://claude.com/claude-in-chrome"
 sourceTitle: "Claude in Chrome: A helping hand across all your tabs"
 related:
-  - { label: "Office ve Chrome'da Claude (wiki)", href: "/wiki/araclar/office-ve-chrome/" }
+  - { label: "Office, Google ve Chrome'da Claude (wiki)", href: "/wiki/araclar/office-ve-chrome/" }
   - { label: "Computer Use (wiki)", href: "/wiki/yetenekler/computer-use/" }
   - { label: "Cowork Modu (wiki)", href: "/wiki/araclar/cowork-modu/" }
   - { label: "MCP Güvenliği (wiki)", href: "/wiki/mcp/guvenlik/" }
@@ -26,7 +26,7 @@ Claude for Chrome, tarayıcınıza eklediğiniz küçük bir uzantıdır. Claude
 
 Asıl değeri, **API'si olmayan web'e** ulaşabilmesidir. Eski tip tedarikçi portalları, şirket içi yönetim panelleri, fatura sistemleri: bunlara hazır bir bağlayıcı (connector) yoktur. Claude orada, sizin zaten sahip olduğunuz girişle ve önünüzdeki sekmede çalışır. Aynı pencereye başka sekmeler sürüklerseniz hepsinde birlikte çalışabilir.
 
-Yan panel artık tam bir Claude Cowork oturumu çalıştırıyor. Daha önce hazırladığınız skill'ler, eklentiler ve connector'lar panelde hazır gelir, tarayıcıda ayrıca kurulum yapmazsınız. Konuşmalar hesabınıza kaydolur: Chrome'da başlayıp masaüstü ya da mobil uygulamada devam edebilirsiniz.
+Yan panel artık tam bir Claude Cowork oturumu çalıştırıyor (Max, Ultra ve Team'de; Pro'da kademeli açılıyor, Enterprise'da yönetici açtıysa). Daha önce hazırladığınız skill'ler, eklentiler ve connector'lar panelde hazır gelir, tarayıcıda ayrıca kurulum yapmazsınız. Konuşmalar hesabınıza kaydolur: Chrome'da başlayıp masaüstü ya da mobil uygulamada devam edebilirsiniz.
 
 26 Ağustos 2026'da genel kullanıma açıldı, artık beta değil. Ayrıntı için [haber sayfamıza](/haberler/2026-08-26-claude-in-chrome-genel-kullanima-acildi/) bakabilirsiniz.
 
@@ -50,7 +50,7 @@ Aşağıdaki örnekler varsayımsaldır; kendi iş akışınıza göre uyarlayı
 4. Başlangıçta güvendiğiniz siteleri ve iyi bildiğiniz iş akışlarını seçin.
 5. Çalışma biçimini belirleyin. İsterseniz Claude, her adımı onayınızı beklemeden ilerler; bu modda eylemi yapmadan önce ayrı bir güvenlik denetimi riski ve sayfaya gizlenmiş talimatları gözden geçirir. Daha sıkı kontrol istiyorsanız **İzinler (Permissions) Moduna** geçip erişimi site site verirsiniz. Onayladığınız yere Claude giremez.
 
-Claude Cowork'e artık yerleşik bir tarayıcı da geldi: kurulum gerektirmez ve kendi gezinmenizden tamamen ayrıdır. Chrome uzantısını zaten kullanıyorsanız o varsayılan kalır; ayarı Ayarlar, Cowork, Tercih edilen tarayıcı (Preferred browser) altından değiştirirsiniz.
+Claude Cowork'e yerleşik bir tarayıcı da geldi (masaüstünde Pro, Max, Ultra ve Team'de; Enterprise'da yönetici ayarlar): kurulum gerektirmez ve kendi gezinmenizden tamamen ayrıdır. Chrome uzantısını zaten kullanıyorsanız o varsayılan kalır; ayarı Ayarlar, Cowork, Tercih edilen tarayıcı (Preferred browser) altından değiştirirsiniz.
 
 ![Claude'un yan panelde haftalık takvimi gözden geçirip oda gereken toplantılara uygun oda araması](/images/claude/chrome/calendar.webp)
 
@@ -58,7 +58,7 @@ Claude Cowork'e artık yerleşik bir tarayıcı da geldi: kurulum gerektirmez ve
 
 **Plan.** Pro, Max, Ultra, Team ve Enterprise. Free planda yok. Yalnız **masaüstü Google Chrome** desteklenir; Edge, Brave gibi diğer Chromium tarayıcılarda ve mobilde çalışmaz.
 
-**Güvenlik.** Web'de çalışan her yapay zekanın ortak riski, sayfaya gizlenmiş talimatla yönlendirilmeye çalışılmasıdır (prompt injection). Anthropic koruma katmanları kurduğunu ve gerçek saldırılarla test ettiğini söylüyor; ama kendi sayfasında da bunların kusursuz olmadığını, Claude'un yanlış şey yapabileceğini açıkça yazıyor. Satın alma gibi geri dönüşü olmayan adımlarda Claude durup size sorar. Anthropic'in önerisi: bankacılık, sağlık kayıtları ve paylaşmayacağınız şifrelerle ilgili işlerde kullanmayın, Claude'un onay isteklerini dikkatle okuyun, beklenmedik davranışta durup inceleyin. Test sonuçları ve ayrıntı için [Office ve Chrome sayfası](/wiki/araclar/office-ve-chrome/) ile [MCP Güvenliği](/wiki/mcp/guvenlik/) sayfasına bakın.
+**Güvenlik.** Web'de çalışan her yapay zekanın ortak riski, sayfaya gizlenmiş talimatla yönlendirilmeye çalışılmasıdır (prompt injection). Anthropic koruma katmanları kurduğunu ve gerçek saldırılarla test ettiğini söylüyor; ama kendi sayfasında da bunların kusursuz olmadığını, Claude'un yanlış şey yapabileceğini açıkça yazıyor. Satın alma gibi geri dönüşü olmayan adımlarda Claude durup size sorar. Anthropic'in önerisi: bankacılık, sağlık kayıtları ve paylaşmayacağınız şifrelerle ilgili işlerde kullanmayın, Claude'un onay isteklerini dikkatle okuyun, beklenmedik davranışta durup inceleyin. Test sonuçları ve ayrıntı için [Office, Google ve Chrome sayfası](/wiki/araclar/office-ve-chrome/) ile [MCP Güvenliği](/wiki/mcp/guvenlik/) sayfasına bakın.
 
 **Yönetici kontrolü.** Team ve Enterprise'ta yöneticiler uzantıyı kuruluş genelinde açıp kapatabilir, izinli ve yasaklı site listeleri belirleyebilir.
 

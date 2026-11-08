@@ -1,12 +1,12 @@
 ---
 title: "Departmanlar: 12 İş Alanı, KOBİ ve 7 Sektör"
-seoTitle: "Claude ile Departman ve Sektör İş Akışları: Satıştan Kamuya, Finanstan Sağlığa"
-description: "Satış, pazarlama, finans, hukuk, İK, operasyon gibi 12 departman, KOBİ ve 7 sektör (perakende, turizm, üretim, eğitim, sağlık, kamu, finansal hizmetler) için Claude iş akışları."
+seoTitle: "Claude ile Departman ve Sektör İş Akışları"
+description: "Satış, pazarlama, finans, İK dahil 12 departman, KOBİ ve 7 sektör için Claude iş akışları: hazır prompt'lar, kullanılacak araçlar, gerçek örnekler."
 tags:
   - departmanlar
   - giris
   - rol-bazli
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude her departmanda farklı çalışır. **Aynı araç, farklı rollerde farklı değer üretir**, çünkü iş akışları farklı, çıktılar farklı, hukuki hassasiyetler farklı.

@@ -23,7 +23,7 @@ lastUpdated: "2026-10-06"
 
 ## Bu sayfayı nasıl okumalı?
 
-claude.com/customers'ta Ekim 2026 itibarıyla 280'i aşkın hikâye var. Aşağıdakileri iki ölçüte göre seçtik: Türk kurumlarının tanıdığı bir iş problemi olsun ve kaynakta somut bir sonuç yazsın. Özetler kısaltılmış uyarlamalardır; ayrıntı ve bağlamı için her örneğin bağlantısına gidin. Rakamları biz üretmedik, değiştirmedik.
+claude.com/customers'ta Kasım 2026 itibarıyla 286 hikâye var. Aşağıdakileri iki ölçüte göre seçtik: Türk kurumlarının tanıdığı bir iş problemi olsun ve kaynakta somut bir sonuç yazsın. Özetler kısaltılmış uyarlamalardır; ayrıntı ve bağlamı için her örneğin bağlantısına gidin. Rakamları biz üretmedik, değiştirmedik.
 
 Bir uyarı: bu hikâyelerin önemli bir kısmı Claude'u **kendi ürününe API ile gömen** şirketlere ait. Ekiplerin günlük işte Claude Enterprise, Cowork veya Claude Tag kullandığı örneklerle aynı şey değil. Aşağıdaki görsel, seçtiğimiz örneklerde hangi ürünün kullanıldığını gösteriyor.
 

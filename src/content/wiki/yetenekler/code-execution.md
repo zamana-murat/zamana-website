@@ -119,15 +119,11 @@ Claude:
 
 ### Veri Boyutu
 
-Sandbox'a yüklenen ve indirilen dosyalar için sınır dosya başına 30 MB'tır. Çok büyük veri için ön-örnekleme veya özet veri ile çalışın.
+Dosya başına 30 MB sınırı yukarıda. Çok büyük veri için ön-örnekleme veya özet veri ile çalışın.
 
 ### Hız
 
 Çok karmaşık hesap (örn. milyonlarca satır, ML modeli eğitimi) yavaş veya zaman aşımına uğrar. Bu durumlar için yerel Excel veya başka araç daha pratik.
-
-### Internet Erişimi
-
-Sandbox'tan internet erişimi sınırlıdır (web arama Claude'un kendisi tarafından yapılır, code'un içinden değil). Dış API'ye bağlanan kod sınırlı çalışır.
 
 ### Kalıcılık Yok
 

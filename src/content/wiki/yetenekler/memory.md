@@ -22,7 +22,7 @@ Pratik karşılığı: bir asistan üç ay sizinle çalıştıktan sonra rolün�
 İki ilgili mekanizma hafızadan ayrı çalışır:
 
 - **Yazdığınız kalıcı talimat:** Hafızanın yerine geçmez, yanında çalışır. Sohbet CLAUDE.md dosyasını okumaz; sohbette bunun yeri profil talimatıdır (Settings > General > "Instructions for Claude") ya da proje talimatıdır. Yerel Cowork oturumu klasördeki [CLAUDE.md](/wiki/claude-md/nedir/) dosyasını okur. Yerlerin karşılaştırması için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
-- **Projects:** Her projenin kendi project knowledge ve özel talimatları vardır. Ayrıntı için [Projects](/wiki/araclar/projects/) sayfasına bakın.
+- **Projects:** Her projenin kendi project knowledge ve özel talimatları vardır. Hafıza açıksa her projenin **ayrı hafızası ve özeti** de olur; proje dışındaki sohbetlerin hafızasıyla karışmaz. Ayrıntı için [Projects](/wiki/araclar/projects/) sayfasına bakın.
 
 Bu sayfa kişisel hafızayı anlatır.
 
@@ -84,7 +84,7 @@ Memory'in **açık veya kapalı** olması ayarlanabilir bir tercih:
 - **Açık (Free, Pro, Max ve Ultra'da varsayılan):** Claude öğrenip biriktirir
 - **Kapalı (Team ve Enterprise'ta varsayılan):** Her sohbet baştan başlar, hiçbir bilgi taşınmaz
 
-Yeni bir ekip hesabında hafızanın çalışmadığını görürseniz sebep bu olabilir. Aynı **"Generate memory from chats"** ayarıyla açıp kapatılır; Team ve Enterprise'ta kontrol kuruluş sahibindedir ve yönetici açar.
+Yeni bir ekip hesabında hafızanın çalışmadığını görürseniz sebep bu olabilir. Aynı **"Generate memory from chats"** ayarıyla açıp kapatılır; Team ve Enterprise'ta önce kuruluş sahibi (owner) açar, sonra her üye kendi ayarından ayrıca onaylar.
 
 **Ne zaman kapatmalı?**
 
@@ -128,7 +128,7 @@ Memory, sizin Anthropic hesabınıza bağlı bilgi olarak saklanır. KVKK çerç
 
 - **Veri minimizasyonu:** Yalnızca işe yarayanı tutun, gözden geçirip gereksizleri silin
 - **Bilgi talep hakkı (KVKK m.11):** Hangi verinizin tutulduğunu öğrenme hakkınızın pratik karşılığı, Memory panelinde tüm kayıtları görebilmenizdir
-- **Silme:** Tek tek veya tümünü silebilirsiniz
+- **Silme:** Tek tek veya tümünü silebilirsiniz. Bir sohbeti silmek, o sohbetten oluşan hafıza kayıtlarını silmez; onları Memory panelinden ayrıca kaldırın
 - **Eğitim ve saklama:** Free, Pro, Max ve Ultra'da "Help improve Claude" ayarını kendiniz kontrol edin; ayarın varsayılanına güvenmeyin. Geçici sohbet eğitimde kullanılmaz ama 30 gün saklanır
 
 [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası genel veri haklarını anlatır.
@@ -150,7 +150,7 @@ Memory bir kez yazıldı diye sonsuza kadar kalmaz; siz değiştirebilirsiniz.
 - **CLAUDE.md** → "marka voice şu, klişe yasak" gibi sabit kurallar
 - **Memory** → "geçen ay X projesinde çalıştım, Y müşterisini sevmem" gibi sohbette ortaya çıkanlar
 
-Yerel Cowork oturumunda CLAUDE.md klasörden okunur; sohbette sabit kurallar profil talimatından gelir, hafıza ise ayarınız açıksa devreye girer. İkisi birlikte sizin "asistan profilinizi" oluşturur. [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfası bu ilişkiyi derinleştirir.
+Yerel Cowork oturumunda CLAUDE.md klasörden okunur; sohbette sabit kurallar profil talimatından gelir, hafıza ise ayarınız açıksa devreye girer. İkisi birlikte sizin "asistan profilinizi" oluşturur. [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfası bu ilişkiyi derinleştirir.
 
 ## Memory'in Sınırları
 

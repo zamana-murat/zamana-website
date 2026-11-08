@@ -1,14 +1,14 @@
 ---
 title: "Belgeyle Çalışma: Sözleşme, Şartname ve Excel için Prompt"
-seoTitle: "Claude ile Uzun Belge, Sözleşme ve Excel Analizi: Prompt Rehberi"
-description: "Claude'a sözleşme, ihale şartnamesi ya da Excel tablosu verirken nasıl prompt yazılır? Önce alıntı çıkarma, belgede yoksa yok dedirtme, sayı doğrulama ve KVKK anonimleştirme."
+seoTitle: "Claude ile Sözleşme ve Excel Analizi: Prompt"
+description: "Claude'a sözleşme, ihale şartnamesi ya da Excel verirken prompt nasıl yazılır? Önce alıntı, belgede yoksa yok dedirtme, sayı doğrulama, anonimleştirme."
 tags:
   - prompting
   - belge
   - sozlesme
   - excel
   - dogrulama
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Claude'a bir belge verip "bunu özetle" demek kolaydır. İşin zor kısmı, aldığınız cevaba **güvenip güvenemeyeceğinizi** bilmektir. Belgeyle çalışırken üç hata türü çıkar: belgede olmayan bir şeyi var gibi anlatmak, belgedeki bir maddeyi atlamak ve tablodaki bir sayıyı yanlış okumak ya da toplamak.
@@ -146,7 +146,7 @@ Yanıt geldiğinde şu üç denetimi yapın:
 2. **Tek bir değeri elle doğrulayın:** Excel'de bir bölgenin toplamını filtreyle alın, Claude'unkiyle karşılaştırın
 3. **Genel toplam** Excel'deki toplamla aynı mı? Küçük de olsa fark varsa nedenini sorun ("Hangi satırlar bu farka yol açıyor?")
 
-Claude'a Excel'i doğrudan çalıştırtmak isterseniz [Office ve Chrome](/wiki/araclar/office-ve-chrome/) sayfasındaki Excel eklentisi de bir yoldur; yine aynı doğrulama alışkanlığı geçerlidir.
+Claude'a Excel'i doğrudan çalıştırtmak isterseniz [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/) sayfasındaki Excel eklentisi (Google Sheets kullanıyorsanız Claude for Google Workspace eklentisi) de bir yoldur; yine aynı doğrulama alışkanlığı geçerlidir.
 
 **Süre:** altı aylık tablodan bölge, ay ve müşteri özeti elle 1-2 saat, Claude ile 10-20 dakika (doğrulama dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 

@@ -127,7 +127,7 @@ Test sonuçlarındaki yaygın sorunlar ve çözümleri:
 
 ### Sorun: "Türkçe'den İngilizce'ye kayıyor"
 
-**Çözüm:** Kalıcı talimatta (profil, proje ya da Cowork talimatı; Claude Code'da CLAUDE.md) net dil kuralı. [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasına bakın.
+**Çözüm:** Kalıcı talimatta (profil ya da proje talimatı; yerel Cowork ve Claude Code'da klasördeki CLAUDE.md) net dil kuralı. [Türkçe Prompt Teknikleri](/wiki/prompting/turkce-prompt-teknikleri/) sayfasına bakın.
 
 ### Sorun: "Sınır vakasında sapıttı"
 
@@ -153,15 +153,15 @@ Hazır prompta artık **kalıcı bir yer** verin:
 
 ### Seçenek A: Claude Projesi (sohbet ve Cowork kullanıcıları için)
 
-Hazır promptu bir [Claude Projesi](/wiki/araclar/projects/)ne koyun: şablon dosyalarını projeye yükleyin, proje talimatına "bu projedeki şablonlardan birini kullan, eksik bilgiyi bana sor" yazın. Proje her sohbette sabit arka plan bilgisidir. Cowork'te de aynı proje çalışır. Yalnızca bilgisayardaki bir klasöre güvenmeyin: Pro, Max ve Ultra'da yeni Cowork görevleri 6 Ekim 2026'dan beri bulutta çalışır ve bulut görevleri yerel klasöre doğrudan erişemez.
+Hazır promptu bir [Claude Projesi](/wiki/araclar/projects/)ne koyun: şablon dosyalarını projeye yükleyin, proje talimatına "bu projedeki şablonlardan birini kullan, eksik bilgiyi bana sor" yazın. Proje her sohbette sabit arka plan bilgisidir. Cowork'ün kendi projeleri (bilgisayardaki klasör, talimat ve bağlantılar) ayrı bir yapıdır, claude.ai projesiyle aynı şey değildir. Yalnızca bilgisayardaki bir klasöre güvenmeyin: Pro, Max ve Ultra'da yeni Cowork görevleri 6 Ekim 2026'dan beri bulutta çalışır ve bulut görevleri yerel klasöre doğrudan erişemez.
 
 Çok sık kullandığınız ve artık değişmeyen bir prompt için bir sonraki adım [Skill](/wiki/yetenekler/skills/)'e çevirmektir; Claude ilgili gördüğünde onu kendisi yükler.
 
 Her sohbette geçerli olması gereken kısa kurallar (dil, ton, yasak kalıplar) için profil talimatı ("Instructions for Claude", Settings > General) daha uygundur; şablonların kendisini oraya doldurmayın.
 
-### Seçenek B: Claude Code kullananlar için CLAUDE.md
+### Seçenek B: Klasörle çalışanlar için CLAUDE.md
 
-Claude Code kullanıyorsanız şablon adlarını ve nerede durduklarını [CLAUDE.md](/wiki/claude-md/nedir/) dosyasına yazabilirsiniz (CLAUDE.md Claude Code'un mekanizmasıdır; Cowork'te klasör talimatı kullanın).
+Yerel Cowork oturumunda ya da Claude Code'da bir klasörle çalışıyorsanız şablon adlarını ve nerede durduklarını klasördeki [CLAUDE.md](/wiki/claude-md/nedir/) dosyasına yazabilirsiniz. Bulut Cowork oturumunda okunduğu belgelenmemiştir; orada Seçenek A'yı kullanın.
 
 - Şirket geneli kullanım için: [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/)
 - Kişisel kullanım için: kendi CLAUDE.md'niz
@@ -172,11 +172,11 @@ Claude Code kullanıyorsanız şablon adlarını ve nerede durduklarını [CLAUD
 - "Toplantı özeti şablonu": [...]
 ```
 
-Notion, Google Drive ya da paylaşılan klasör de olur; önemli olan tüm ekibin aynı sürüme erişmesi. Düzenleme için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasına, hangi talimatın nerede geçerli olduğu için [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
+Notion, Google Drive ya da paylaşılan klasör de olur; önemli olan tüm ekibin aynı sürüme erişmesi. Düzenleme için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/) sayfasına, hangi talimatın nerede geçerli olduğu için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
 
 ### Seçenek C: Sürüm Kontrollü Depo
 
-Daha olgun şirketler git üzerinde prompt deposu tutar:
+Yazılım ekibi olan, daha olgun şirketler git üzerinde prompt deposu tutar (bu seçenek BT desteği ister, çoğu ekip için A ya da B yeter):
 
 ```
 prompts/
@@ -267,7 +267,7 @@ Sorun çıkan promptlar yeni iterasyon turuna girer.
 
 ## Otomasyon: Scheduled Tasks ile
 
-Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu), bunu [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) içine koyun. Prompt sürümü ayrı dosyada tutulur, scheduled task ona referans verir. Promptu güncellediğinizde ertesi hafta yeni sürümle çalışır.
+Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu), bunu [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) içine koyun. Prompt sürümü ayrı dosyada tutulur, scheduled task ona referans verir. Promptu güncellediğinizde ertesi hafta yeni sürümle çalışır. Dikkat: bulutta kurulan zamanlanmış görev yerel klasörü ve yerel connector'ı kullanamaz; şablon dosyasını bilgisayardaki klasörde değil projede ya da görevin kendi talimatında tutun.
 
 ## Yaygın Hata: Sürekli Yamamak
 
@@ -312,6 +312,6 @@ Yeni prompt yazdığınızda kullanın:
 - [Projects](/wiki/araclar/projects/): Prompt kütüphanesi için proje
 - [Skills](/wiki/yetenekler/skills/): Sık kullanılan promptu skill'e çevirmek
 - [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/): Uzun belge, sözleşme ve tabloda prompt
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat ve hafıza
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat ve hafıza
 - [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/): Genel kalite ölçümü
 

@@ -1,6 +1,6 @@
 ---
 title: "Siber güvenlik ekipleri için Claude"
-seoTitle: "Siber Güvenlikte Claude: SOC, Olay Müdahalesi ve Kod Güvenliği"
+seoTitle: "Siber Güvenlikte Claude: SOC ve Olay Müdahalesi"
 description: "Güvenlik ekipleri Claude ile alarm inceler, kayıtları ilişkilendirir, açıkları önceliklendirir ve yama hazırlar. Türkiye'deki SOC ekipleri için KVKK notları."
 eyebrow: "Departman"
 lead: "Saldırganlar yapay zekâyı kullanmaya başladı; savunma tarafının da aynı hızda çalışması gerekiyor. Claude, güvenlik ekibinin alarm inceleme, kayıt analizi, açık doğrulama ve yama işlerinde yorulmayan bir analist gibi çalışır. Müdahale kararı analistte kalır."
@@ -18,7 +18,7 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Kodlama", href: "/kurumsal/kodlama/" }
 order: 70
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 ## Nedir?

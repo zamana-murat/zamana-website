@@ -1,12 +1,12 @@
 ---
 title: "CLAUDE.md Hata Ayıklama: \"Yazdım Ama Dinlemedi\""
-seoTitle: "CLAUDE.md Çalışmıyor mu? Claude Talimatımı Dinlemiyor Çözümü"
+seoTitle: "CLAUDE.md Çalışmıyor mu? Claude Dinlemiyorsa"
 description: "CLAUDE.md ya da profil talimatı var ama Claude dinlemiyor. Önce okunuyor mu diye kontrol edin, sonra çelişki, uzunluk ve belirsizlik sorunlarını düzeltin."
 tags:
   - claude-md
   - hata-ayiklama
   - debugging
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **[CLAUDE.md](/wiki/claude-md/nedir/) yazdınız, ama Claude hâlâ eski tarzda yanıt veriyor.** Çalışmayan kuralları, çelişen yönergeleri, düşen talimatları nasıl bulup düzelteceğinizi anlatan pratik rehber.
@@ -31,7 +31,7 @@ CLAUDE.md her ortamda okunmaz. Önce **nerede çalıştığınızı** bulun, ç�
 1. **Sohbette misiniz?** (claude.ai, mobil) Sohbet CLAUDE.md dosyasını okumaz. Profil talimatınız (Ayarlar > General > "Instructions for Claude") dolu mu? Bir projedeyseniz doğru projedesiniz ve metin proje talimatında ya da dosyalarında mı?
 2. **Masaüstünde Cowork'te misiniz?** Klasör gerçekten bağlı mı, doğru klasör mü? Dosyanın adı tam olarak `CLAUDE.md` mi, klasörün kökünde mi?
 3. **Oturum yerel mi, bulut mu?** Yerel Cowork oturumunda klasördeki CLAUDE.md okunur. Bulut Cowork oturumunda okunduğu belgelenmemiştir ve klasörler elle eklenir; orada talimatı profil talimatına da yazın.
-4. **Dosya adı ve içerik:** `CLAUDE.md` yerine `claude.md.txt` ya da `Claude.md` gibi bir ad, boş dosya ya da yanlış dizin en sık nedenlerdir.
+4. **Dosya adı ve içerik:** `CLAUDE.md` yerine `claude.md.txt` ya da `Claude.md` gibi bir ad, boş dosya ya da yanlış dizin en sık nedenlerdir. Klasörde CLAUDE.md yoksa Claude Desktop AGENTS.md dosyasını okur; eski bir AGENTS.md beklemediğiniz kuralları getiriyor olabilir.
 
 Sonra Claude'a doğrudan sorun:
 
@@ -72,7 +72,7 @@ Aynı kuralı iki yerde tekrar etmeyin. Tek kaynak, tek doğru sürüm.
 
 ## 3. Bağlam Sıkışması
 
-Konuşma çok uzadığında Claude eski talimatları gözden kaçırmaya başlayabilir. Bağlam penceresi büyüdü (yeni modellerde tüm ücretli planlarda 1M token), ama çok uzun konuşmalarda **[bağlam](/wiki/yetenekler/context-compaction/)** otomatik özetlenir ve ilk mesajlardaki ince talimatlar bu sırada zayıflayabilir.
+Konuşma çok uzadığında Claude eski talimatları gözden kaçırmaya başlayabilir. Bağlam penceresi büyüdü (yeni modellerde 1M token; pencere plana değil modele göre değişir), ama çok uzun konuşmalarda **[bağlam](/wiki/yetenekler/context-compaction/)** otomatik özetlenir (claude.ai'de code execution açıkken) ve ilk mesajlardaki ince talimatlar bu sırada zayıflayabilir.
 
 **Belirtiler:**
 

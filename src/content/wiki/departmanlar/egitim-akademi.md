@@ -1,13 +1,13 @@
 ---
 title: "Eğitim ve Akademi: Claude Uygulamaları"
-seoTitle: "Eğitimde Claude: Ders Planı, Sınav, Ödev Geri Bildirimi, Akademik Kullanım"
+seoTitle: "Eğitimde Claude: Ders Planı, Sınav, Geri Bildirim"
 description: "Üniversite, okul, dershane, kurs ve eğitmenler için Claude: ders planı, sınav sorusu, ödev geri bildirimi, akademik araştırma, öğrenci iletişimi."
 tags:
   - departmanlar
   - egitim
   - akademi
   - okul
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Eğitim sektörü Türkiye'de geniş: üniversiteler, liseler ve ortaokullar, özel okullar, dershaneler, dil okulları, online kurs platformları, bireysel eğitmenler. Her birinde **müfredat hazırlama, sınav üretme, ödev değerlendirme ve öğrenci iletişimi** zaman alıcı, tekrar eden işlerdir. Claude bunların hepsinde somut destek sağlar.
@@ -45,7 +45,7 @@ Aynı konuyu **6. sınıf**, **9. sınıf** ve **üniversite 1. sınıf** seviye
 
 ### Ders Notu / Sunum
 
-Konunun öğrenci dağıtım notu (handout) ve sunum slaytı. [Skills](/wiki/yetenekler/skills/) ile .pptx dosyası doğrudan çıkar. Ücretli planlarda beta olan [Claude Design / Slides](/wiki/yetenekler/claude-design/) de bu iş için denenebilir.
+Konunun öğrenci dağıtım notu (handout) ve sunum slaytı. [Skills](/wiki/yetenekler/skills/) ile .pptx dosyası doğrudan çıkar. Free dahil tüm planlarda açık olan [Claude Design / Slides](/wiki/yetenekler/claude-design/) de bu iş için denenebilir. Okulunuz Google Workspace kullanıyorsa Google Docs ve Slides içinde yan panelde çalışan Claude eklentisi (genel beta, ücretli planlarda) açık dosyayı onayınızla yerinde düzenler ([Google Docs, Sheets ve Slides Eklentisi](/wiki/araclar/office-ve-chrome/#google-docs-sheets-ve-slides-eklentisi)).
 
 ## Bölüm 2: Sınav ve Değerlendirme
 
@@ -237,13 +237,13 @@ Eğitim için Anthropic'in ayrı programları var, ama hepsi Türkiye'de olduğu
 - **Claude for Education (yükseköğretim):** Kurum çapında plan; öğrenci, akademisyen ve personeli kapsar. Fiyat yayımlanmıyor, Anthropic'in eğitim ekibiyle görüşülerek alınıyor, bireysel satın alma yok. SSO ve yönetim paneli gibi kurumsal özellikler içerir. Bir Türk üniversitesinin bu programa alınıp alınmadığı doğrulanmadı; ülke kısıtı yazılı değil, ama Türkiye'den örnek de yok. Ayrıntı: [Yükseköğretim için Claude](/kurumsal/yuksekogretim/).
 - **Claude for Teachers (K-12):** Ücretsiz program yalnız ABD'deki okul ve eğitimciler için. Türkiye'deki öğretmen kendi hesabıyla başlar. Claude 18 yaş altı için ürün sunmaz, yani öğrenciler Claude hesabı açamaz; öğretmen kendi hazırlık işinde kullanır. Ayrıntı: [Öğretmenler için Claude](/kurumsal/ogretmenler/).
 - **Team plan for scientists:** Akredite üniversitelerde ve kâr amacı gütmeyen enstitülerde doğa bilimleri, matematik, bilgisayar bilimi ve mühendislik alanındaki araştırmacılara 12 ay promosyonlu Team planı. Şirket ve sanayi Ar-Ge'si uygun değil. Türk üniversitesinin onaylanıp onaylanmadığı doğrulanmadı; başvuru sayfasından kendiniz deneyin.
-- **Bireysel akademisyen:** Kurum planı yoksa Pro ile başlanabilir. Atıf doğrulama, literatür ve makale yazımı için uygulamalı eğitim: [Akademisyenler programı](/programlar/akademisyenler/).
+- **Bireysel akademisyen:** Kurum planı yoksa bireysel planla başlanır. Yeni başlayana ilk ay Max öneriyoruz, çünkü Pro limitine çabuk çarpılıyor; zorunlu değil, Pro ile başlayıp gerekirse yükseltmek de olur, ikinci aydan kullanıma göre Pro'ya inilebilir. Atıf doğrulama, literatür ve makale yazımı için uygulamalı eğitim: [Akademisyenler programı](/programlar/akademisyenler/).
 
 Öğrenci verisi ve araştırma verisini planınızın veri ayarlarına göre değerlendirin; ticari planlarda (Team, Enterprise) girdiler varsayılan olarak model eğitiminde kullanılmaz, kişisel planlarda bu bir kullanıcı ayarıdır.
 
 ## Üniversite Bağlamı: Özel Notlar
 
-- **Akademik dürüstlük:** Öğrencilere Claude kullanımını şeffaf biçimde duyurun. Birçok üniversite yapay zekâ araçlarının kullanımına, **belirtilmesi koşuluyla** izin veriyor.
+- **Kullanım duyurusu:** Birçok üniversite yapay zekâ araçlarının kullanımına, **belirtilmesi koşuluyla** izin veriyor; dönem başında kuralı yazılı duyurmak (Sık Hatalar'daki akademik dürüstlük notu) tartışmayı baştan keser.
 - **Araştırma etiği:** Claude ile üretilmiş araştırma içeriği akademik makalede bildirilmeli. Bu konuda henüz yerleşik bir standart yok, üniversitenizin politikasına bakın.
 - **Uzaktan eğitim:** Online derslerde Claude, öğrenci sorularına gün boyu yanıt veren bir asistan kurmanın temelini oluşturabilir.
 

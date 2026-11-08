@@ -1,13 +1,13 @@
 ---
 title: "Pazarlama ve İletişim: Claude Uygulamaları"
-seoTitle: "Pazarlamada Claude: İçerik, Kampanya Brief'i ve Aylık Rapor"
+seoTitle: "Pazarlamada Claude: İçerik, Kampanya, Aylık Rapor"
 description: "Pazarlama ekibi için Claude: içerik üretimi, kampanya planlama, raporlama, kriz iletişimi, influencer brief'leri. Marka sesi CLAUDE.md'de."
 tags:
   - departmanlar
   - pazarlama
   - iletisim
   - icerik-uretimi
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Pazarlama ekibi Claude'u doğru kurduğunda içerik üretim kapasitesini belirgin biçimde artırır: kalite düşmez, ton tutarlı kalır, üretim hızlanır.
@@ -29,6 +29,8 @@ Pazarlama ekibi Claude'u doğru kurduğunda içerik üretim kapasitesini belirgi
 Pazarlama için **en önemli ilk adım**, marka ses profilini CLAUDE.md'ye yerleştirmektir: ton, sözcük dağarcığı, kaçınılacak ifadeler, hedef kitle ve **rakiplerin sesinden uzaklaşma kuralları**.
 
 Zayıf bir marka ses profili jenerik içerik üretir. Ayrıntılı bir profil, **şirketin sesiyle yazılmış gibi duran** içerik üretir.
+
+Profili nereye yazacağınız çalıştığınız yere bağlıdır: sohbette bir Project'in proje talimatına, yerel Cowork'te çalışma klasöründeki CLAUDE.md dosyasına. Sohbet CLAUDE.md dosyasını okumaz. Ayrıntı: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ### İçerik Yaratım Akışı
 
@@ -97,8 +99,10 @@ Ana mesaj üzerinde **gerçekten farklı açılardan** 2-3 varyant: yalnızca ke
 ## Kullanılacak Skills ve Connector'lar
 
 **Skills:**
-- `docx`, `pdf`, `pptx`: içerik belgeleri (PowerPoint içinde çalışan Claude eklentisi genel kullanımda, bkz. [Office ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/))
+- `docx`, `pdf`, `pptx`: içerik belgeleri (PowerPoint içinde çalışan Claude eklentisi genel kullanımda, bkz. [Office, Google ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/))
 - `canvas-design`: görsel tasarım (poster, banner, sosyal post)
+- [Claude Design ve Slides](/wiki/yetenekler/claude-design/): konuşma içinden sosyal medya görseli, afiş ve sunum; 8 Ekim 2026'dan beri beta değil, Free dahil tüm planlarda
+- **Claude Motion** (beta, yalnız Team ve Enterprise): rapordan ya da veriden kısa animasyonlu anlatım, MP4 olarak indirilir; video üretim modeli değil, kodla animasyondur
 - Artifacts: basit landing page taslağı (bkz: [Artifacts](/wiki/yetenekler/artifacts/))
 - `marketing:content-creation`: çok formatlı içerik üretimi
 - `marketing:campaign-plan`: tam kampanya brief'i
@@ -130,8 +134,6 @@ Ay sonu. Yönetim toplantısı için e-posta, Instagram ve web sitesi verileri e
 
 **Adım 4:** Pazarlama direktörü onaylar, anlatı toplantı belgesine girer.
 
-Toplam süre: yaklaşık 30-45 dakika (örnek senaryo, kontrol dahil). Aynı işi yönetim özeti kalitesinde elle yapmak çoğu ekipte yarım günü bulur.
-
 **Süre:** elle 3-4 saat, Claude ile 30-45 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/). Ayda 1 kez yapıldığında fark yaklaşık 2-3,5 saattir; haftalık raporlarda katlanır.*
 
 Kriz ve şikayet yanıtı taslağı örneği için [Müşteri Hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfasındaki sosyal medya örneğine bakın; pazarlama tarafında fark, yanıtı marka ve hukuk onayından geçirmektir.
@@ -140,12 +142,13 @@ Kriz ve şikayet yanıtı taslağı örneği için [Müşteri Hizmetleri](/wiki/
 
 - **Marka sesi tanımlamadan üretmek.** CLAUDE.md'de ses profili yoksa Claude jenerik yazar. İçerik üretmeden önce ilk zamanı ses profiline ayırın. *(Zamana eğitim materyali)*
 - **"X markası gibi yaz" demek.** Rakip dilini kopyalamak hukuki risk ve marka değeri kaybıdır; "rakipten şu açılardan ayrışan" diye tarif edin.
+- **Müşteri listesini olduğu gibi yüklemek.** E-posta listesi, müşteri adı ve telefon kişisel veridir; segment çalışması için anonim özet tablo yeterlidir. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil. Çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Veri olmadan tahmine güvenmek.** "Bu post kaç beğeni alır" gibi sorulara Claude veri olmadan da cevap üretir; gerçek veriyle test edin.
 
 ## İlgili Sayfalar
 
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Marka sesi buradadır
 - [Skills](/wiki/yetenekler/skills/): Marketing plugin skill'leri
-- [Artifacts](/wiki/yetenekler/artifacts/): İçerik dashboardları ve canlı analizler
+- [Artifacts](/wiki/yetenekler/artifacts/): İçerik panoları; bağlı veri kaynağından canlı pano için [Claude Dashboards](/wiki/yetenekler/claude-design/#claude-dashboards-ve-claude-motion-beta) (beta, ücretli planlar)
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Canva, Figma, Slack connector'ları
 

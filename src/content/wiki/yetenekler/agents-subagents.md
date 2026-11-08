@@ -88,7 +88,7 @@ Bu 10 şirket × 5 bileşen = 50 alt görev.
 
 - **Yavaşlık:** paralel subagent bile olsa agent yaklaşımı tek bir cevaptan yavaştır; araç çağrıları ve doğrulama turları vakit alır
 - **Hata yayılımı:** bir subagent hatalı çıktı üretirse ana birleştirme de etkilenir
-- **Kaynak kullanımı:** agent yoğun kullanım kotayı hızlı tüketir (5 saatlik pencere, Ultra hariç, ve haftalık limit, bkz. [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)); Pro'da sık dolarsa [Max ya da Ultra planı](/wiki/temeller/planlar/) bir seçenektir, ama zorunlu değil
+- **Kaynak kullanımı:** agent yoğun kullanım kotayı hızlı tüketir (5 saatlik pencere, doğrulanmış Ultra hesabında yok, ve haftalık limit, bkz. [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)); Pro'da sık dolarsa [Max ya da Ultra planı](/wiki/temeller/planlar/) bir seçenektir, ama zorunlu değil
 - **Karmaşık doğrulama:** 20 alt görevin hepsini tek tek kontrol etmek zordur, önemli çıktılarda dikkat ister
 
 ## Geliştiriciler için
@@ -97,7 +97,7 @@ Bu 10 şirket × 5 bileşen = 50 alt görev.
 >
 > - **Subagents** Claude Code'da genel kullanıma açıktır. Cowork için ayrı bir subagents belgesi doğrulanamadı, orada aynı davranışı varsaymayın.
 > - **Dynamic workflows** (28 Mayıs 2026'da duyuruldu): Claude Code'da bir görevi arka planda onlarca, hatta yüzlerce agent arasında dağıtır. Çalışma başına en çok 1.000 agent, varsayılan olarak aynı anda 16. Tüm ücretli planlarda vardır (Pro'da `/config` içindeki "Dynamic workflows" satırından açılır). Çok token harcar ve abonelik limitinizden düşer.
-> - **Managed Agents** (API tarafı, kurumsal otomasyon kuran BT ekipleri için): [Kurumsal: Ajanlar](/kurumsal/ajanlar/) sayfasında ve [Claude Code mod'ları](/haberler/2026-10-01-claude-code-mods/) haberinde ayrıntı var.
+> - **Managed Agents** (API tarafı, kurumsal otomasyon kuran BT ekipleri için): ayrıntı [Kurumsal: Ajanlar](/kurumsal/ajanlar/) sayfasında. Claude Code'u kendi arayüz ve davranışlarınızla genişletmek ise ayrı bir konudur: [Claude Code mod'ları](/haberler/2026-10-01-claude-code-mods/).
 
 ## Kısacası
 

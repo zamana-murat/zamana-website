@@ -1,6 +1,6 @@
 ---
 title: "Voice Mode: Claude ile Sesli Etkileşim"
-seoTitle: "Claude Sesli Mod: Nasıl Açılır, Türkçe Destekliyor mu?"
+seoTitle: "Claude Sesli Mod: Açma ve Türkçe Durumu"
 description: "Claude sesli mod nasıl açılır, hangi planlarda var, Türkçe destekliyor mu? Desteklenen diller, sınırlar ve Türkçe için dikte alternatifi."
 tags:
   - araclar
@@ -28,9 +28,9 @@ Sonuç: akıcı bir sesli konuşma, ama aslında yazılı bir metin konuşmasıd
 
 ## Nasıl Aktifleştirilir?
 
-**Web ([claude.ai](https://claude.ai)):** Sohbet penceresinin sağ alt köşesindeki ses dalgası simgesine tıklayın.
+**Web ve masaüstü ([claude.ai](https://claude.ai)):** Yeni bir sohbette pencerenin sağ alt köşesindeki ses dalgası simgesine tıklayın; çıkmak için sağ alttaki "Stop" düğmesi.
 
-**Mobil (iOS / Android):** Sohbet arayüzünde aynı simge.
+**Mobil (iOS / Android):** Yazı alanında mikrofon simgesinin yanındaki ses dalgası simgesine dokunun, bir ses seçin ve konuşmaya başlayın.
 
 ### İki Dinleme Modu
 
@@ -39,7 +39,7 @@ Sonuç: akıcı bir sesli konuşma, ama aslında yazılı bir metin konuşmasıd
 
 ### Ses Tercihleri
 
-**Settings → General → Voice Settings** menüsünden Claude'un sesini seçebilirsiniz.
+Web ve masaüstünde Claude'un sesini **Settings → Capabilities → Voice settings** menüsünden seçersiniz (orada "Voice" yoksa Settings → General altında). Mobilde sesli konuşma sırasında sol alttaki ayar düğmesiyle ses ve hız değişir. Uygulamanın görünüm dili sesli modun dilini değiştirmez.
 
 ### Metinle Sesi Karıştırmak
 
@@ -55,7 +55,7 @@ Aynı konuşma içinde her an metinden sese veya tersine geçiş yapabilirsiniz,
 
 ## Türkçe Desteği
 
-**Voice mode Türkçe desteklemiyor.** Anthropic'in yardım sayfasındaki dil listesinde (İngilizce, Fransızca, Almanca, Hintçe, Endonezyaca, İtalyanca, Japonca, Korece, Brezilya Portekizcesi, İspanyolca) Türkçe yok. Bu liste bir arama özetinden alındı; güncel hâli için yardım sayfasına bakın. Claude yazılı Türkçeyi iyi anlar ve yazar, sorun yalnızca sesli konuşma tarafındadır.
+**Voice mode'un Türkçe desteği doğrulanmadı.** Daha önce yayımlanan dil listesinde (İngilizce, Fransızca, Almanca, Hintçe, Endonezyaca, İtalyanca, Japonca, Korece, Brezilya Portekizcesi, İspanyolca) Türkçe yoktu; bu liste bir arama özetinden alınmıştı. Anthropic'in yardım sayfası Kasım 2026'da artık tam liste vermiyor, "çok daha fazla dil" destekleniyor ve İngilizce dışındaki dillerin beta olduğunu söylüyor. Kendi hesabınızda Settings > Capabilities > Voice > Spoken language (ya da Settings > General > Voice > Language) menüsünde Türkçe çıkıyor mu bakın; çıkmıyorsa aşağıdaki dikte yolunu kullanın. Claude yazılı Türkçeyi iyi anlar ve yazar, sorun yalnızca sesli konuşma tarafındadır.
 
 **Türkçe için alternatif:** telefonun klavye dikte özelliğiyle (iOS ve Android'de klavyedeki mikrofon simgesi) konuşup metni Claude'a yazılı göndermek. Dikteyi telefon yapar, Claude yazılı metinle çalışır; Türkçede kalite telefonun dikteine bağlıdır. İngilizce çalışıyorsanız aşağıdaki notlar geçerli.
 
@@ -69,16 +69,16 @@ Aynı konuşma içinde her an metinden sese veya tersine geçiş yapabilirsiniz,
 
 Voice mode bir konuşma arayüzüdür, yani:
 
-- **Sohbet arayüzüdür, Cowork değildir.** Dosya üretme, zamanlanmış görev ve masaüstü otomasyonu için [Cowork](/wiki/araclar/cowork-modu/) kullanın; sesli konuşmanın bunları tetikleyeceğini varsaymayın.
+- **Ayrı Cowork ekranında yoktur.** Klasik arayüzde dosya üretme, zamanlanmış görev ve masaüstü otomasyonu için [Cowork](/wiki/araclar/cowork-modu/) kullanın; orada yalnız dikte vardır.
 - **Bağlı araçlardan (connector) yararlanabilir:** Free'de tek araç, ücretli planlarda tüm bağlı araçlar açıktır. Masaüstünüzdeki yerel dosyalarla çalışma Cowork'ün işidir.
 - **Cevap kalitesi yazıyla aynıdır**: fark sadece giriş/çıkış biçimidir.
 - **Uzun ve karmaşık çıktılar** sesli dinlemektense okumak genelde daha verimlidir.
 
-Kısaca: Voice mode **sohbetin sesli sürümüdür**. Cowork'ün dosya üretme ve otomasyon gücü ses üzerinden doğrudan kullanılamaz. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude içinde birleşiyor (kademeli yayılım). Birleşik arayüzde sesli girişin hangi işleri tetikleyebildiğini doğrulayamadık, kendi hesabınızda deneyin.
+Kısaca: Voice mode **sohbetin sesli sürümüdür**. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude içinde birleşiyor (kademeli yayılım). Anthropic'in yardım sayfasına göre birleşik arayüzde sesli mod görevler dahil her konuşmada çalışır; ayrı Cowork ve Claude Code ekranlarında ise sesli mod yoktur, yalnız dikte vardır. Sesle verilen görevin sonucunu yine yazılı kontrol edin.
 
-## Sesle Görev Vermek (Mobil Cowork ve Dispatch)
+## Sesle Görev Vermek (Telefondan Görev)
 
-Konuşarak iş vermek değerlidir, ama Türkçede bunu Claude'un sesli modu değil, telefonun klavye diktesi sağlar. Voice mode'un kendisi Cowork görevi başlatmaz; diktesiyle yazdırdığınız görevi mobil Cowork betasına ya da (mevcut kullanıcılar için, yeni kullanıcılara kapalı) Dispatch'e gönderirsiniz. Ayrıntı: [Telefondan görev: mobil Cowork ve Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
+Konuşarak iş vermek değerlidir, ama Türkçede bunu şimdilik Claude'un sesli modu değil, telefonun klavye diktesi sağlar. Diktesiyle yazdırdığınız görevi Cowork'ün telefondan görev özelliğine gönderirsiniz (Pro, Max, Ultra ve Team'de otomatik açık; eski Dispatch yeni kullanıcılara kapalı). Ayrıntı: [Telefondan görev: mobil Cowork ve Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
 
 Örnek: yolda direksiyondasınız, aklınıza bir iş gelir. Kenara çekince dikte edin:
 
@@ -95,7 +95,7 @@ Doğal eğiliminiz varsa kullanın, yoksa varsayılanı yazı olarak bırakın. 
 ## İlgili Sayfalar
 
 - [Claude Chat](/wiki/araclar/claude-chat/): Voice mode'un içinde yaşadığı ana arayüz
-- [Claude Mobil](/wiki/araclar/claude-mobil/): Mobil uygulama, mobil Cowork ve Dispatch (yeni kullanıcılara kapalı)
+- [Claude Mobil](/wiki/araclar/claude-mobil/): Mobil uygulama, telefondan görev ve eski Dispatch (yeni kullanıcılara kapalı)
 - [Claude Nedir?](/wiki/temeller/claude-nedir/): Temel yetenek seti
 - [Araçlar Ana Sayfası](/wiki/araclar/): Tüm Claude araçlarının karar tablosu
 

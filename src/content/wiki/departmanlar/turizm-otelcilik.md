@@ -1,13 +1,13 @@
 ---
 title: "Turizm ve Otelcilik: Claude Uygulamaları"
-seoTitle: "Otelcilikte Claude: Çok Dilli Misafir Yanıtı ve Yorum Yönetimi"
+seoTitle: "Otelcilikte Claude: Misafir Yanıtı, Yorum Yönetimi"
 description: "Turizm ve otelcilik için Claude: çok dilli misafir iletişimi, online yorum yönetimi, paket içeriği, rezervasyon sorularına hızlı yanıt."
 tags:
   - departmanlar
   - turizm
   - otel
   - misafir-iletisim
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Türkiye'de turizm stratejik bir sektör: ekonominin önemli bir dilimi, milyonlarca uluslararası misafir ve çok dilli iletişim zorunluluğu. Otel, acente ve tur operatörü için **dil çeşitliliği, kesintisiz misafir iletişimi ve online yorum yönetimi**, Claude'un hızlı değer ürettiği alanlardandır.
@@ -32,7 +32,7 @@ Misafir İngilizce, Almanca, Rusça, Arapça, Çince veya Fransızca yazıyor; �
 - Otelin marka sesini korur
 - Hızlı yanıt için tek bir prompt yeter
 
-Sesli dikte ile çok dilli yanıt hazırlamak için [Voice Mode](/wiki/araclar/voice-mode/) sayfasına bakın; Claude'un sesli modu şu an Türkçeyi desteklemiyor, Türkçe dikte için cihazınızın kendi dikte özelliğini kullanın ve diğer dillerde desteği önceden kontrol edin.
+Sesli dikte ile çok dilli yanıt hazırlamak için [Voice Mode](/wiki/araclar/voice-mode/) sayfasına bakın; Claude'un sesli modunda Türkçe desteği doğrulanmadı, Türkçe dikte için cihazınızın kendi dikte özelliğini kullanın ve diğer dillerde desteği önceden kontrol edin.
 
 ### Önemli Kültürel Nüanslar
 
@@ -84,7 +84,7 @@ Aylık tüm yorumları Claude'a verirsiniz, şu içgörüleri çıkarır:
 - Yeni trend (geçen ay yoktu, bu ay artıyor)
 - Müşteri profili kayması (örn. "Avrupalı azalmış, MENA artmış")
 
-[Code Execution](/wiki/yetenekler/code-execution/) ile sayısal trend grafikleri de çıkarılabilir.
+[Code Execution](/wiki/yetenekler/code-execution/) ile sayısal trend grafikleri de çıkarılabilir. Her ayın başında yorum dışa aktarımını okuyup özet hazırlayan bir [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) kurabilirsiniz (dosya bilgisayarınızdaysa görev yerelde çalışır).
 
 ### Rezervasyon Öncesi Soru Yanıtı (Booking vb.)
 
@@ -177,8 +177,6 @@ Bir Alman misafir TripAdvisor'a 2 yıldızlı bir yorum bırakmış: "Oda temiz 
 **Adım 3:** Müdür Türkçe karşılığını okuyup içeriği onaylar, "telafi sözü çok geniş, kaldır" der; yeni taslak gelir.
 
 **Adım 4:** Almanca bilen bir ekip üyesi ya da dış kontrolcü yanıtı gözden geçirir, ardından yorum platformundan yayınlanır.
-
-Toplam süre: yaklaşık 2-4 dakika yanıt başına (kontrol dahil, ana dil kontrolü hariç; örnek senaryo). Elle, çeviri ve yazım için yaklaşık 10-15 dakika.
 
 **Süre:** yabancı dilde yorum yanıtı elle 10-15 dakika, Claude ile 2-4 dakika; ana dil kontrolü ayrı. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/). Ayda 100 yorumda fark kabaca 20 saatten 5 saate iner.*
 

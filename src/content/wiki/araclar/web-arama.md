@@ -9,7 +9,9 @@ tags:
 lastUpdated: "2026-11-08"
 ---
 
-**Claude, bir sorunun cevabı eğitim verisinde olmadığında veya güncel veri gerektiğinde otomatik olarak web'de arama yapar.** Sizin ayar yapmanız ya da "şimdi web'i aç" demeniz gerekmez. Claude bunu kendisi karar verir, sonuçları okur ve cevabını kaynaklarla birlikte sunar.
+**Claude, bir sorunun cevabı eğitim verisinde olmadığında veya güncel veri gerektiğinde web'de arama yapar.** Ne zaman arayacağına kendisi karar verir, sonuçları okur ve cevabını kaynaklarla birlikte sunar.
+
+**Açık mı, kapalı mı?** Birleşik Claude arayüzünde ayrı bir anahtar yoktur, Claude gerektiğinde arar. Klasik arayüzde sohbet kutusunun sol altındaki **"+"** menüsünden **"Web search"** seçilir (işaret görünür), tekrar tıklayınca kapanır. Team ve Enterprise'ta önce owner, Organization settings → Capabilities'ten web aramayı kuruluş için açar; açılmadıysa üyeler göremez.
 
 Bu sayfa web aramanın **ne zaman tetiklendiğini**, **ne kadar güvenilir olduğunu** ve iş profesyonellerinin kaynak kontrolünü nasıl yapması gerektiğini anlatır.
 
@@ -83,7 +85,7 @@ Güvenilir bilgi bulamadığında Claude bazen olası gözüken ama yanlış bil
 
 ## Web Aramayı Açıkça İsteme
 
-Claude kendisi tetiklemediyse, açıkça isteyebilirsiniz:
+Claude kendisi tetiklemediyse (ve web arama açıksa), açıkça isteyebilirsiniz:
 
 > *"Bu soruyu cevaplamadan önce web'de güncel bilgi ara."*
 > *"En son verileri kullan, eski bilgiye dayanma."*
@@ -106,7 +108,9 @@ Web aramada **sorgunuz Claude'a (Anthropic'e) ve dolayısıyla arama servisine**
 
 ## Plan Farkı
 
-Web arama Free dahil tüm planlarda mevcut. Free planın kullanım limiti daha düşüktür; limit sayıları yayımlanmıyor. Detay için [Planlar](/wiki/temeller/planlar/).
+Web arama Free dahil tüm planlarda mevcut. Arama ve sayfa okuma kullanım limitinizden düşer; Free planın limiti daha düşüktür, limit sayıları yayımlanmıyor. Detay için [Planlar](/wiki/temeller/planlar/).
+
+Tek bir sorudan öte, çok kaynaklı uzun bir rapor gerekiyorsa **Research** (derin araştırma, Pro ve üstü) kullanın; Research için web aramanın açık olması gerekir. Ayrıntı: [Research Mode](/wiki/yetenekler/research-mode/).
 
 ## Kullanım Tavsiyeleri
 
@@ -120,7 +124,8 @@ Web arama Free dahil tüm planlarda mevcut. Free planın kullanım limiti daha d
 
 ## İlgili Sayfalar
 
-- [Claude Chat](/wiki/araclar/claude-chat/): Web arama burada otomatik devreye girer
+- [Claude Chat](/wiki/araclar/claude-chat/): Web arama burada devreye girer
+- [Research Mode](/wiki/yetenekler/research-mode/): Çok kaynaklı derin araştırma
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Cowork'te web + dosya + skills birleşir
 - [Sınırlamalar](/wiki/temeller/sinirlamalar/): Halüsinasyon ve doğrulama
 - [Türkçe Performansı](/wiki/temeller/turkce-performansi/): Türkçe arama kalitesi

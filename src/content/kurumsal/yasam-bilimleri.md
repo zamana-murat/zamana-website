@@ -1,13 +1,13 @@
 ---
 title: "Yaşam bilimleri için Claude: Ar-Ge'den ruhsat dosyasına"
-seoTitle: "İlaç ve Biyoteknoloji için Claude: Ar-Ge, Klinik, Ruhsat"
+seoTitle: "İlaç ve Biyoteknoloji için Claude: Ar-Ge, Klinik"
 description: "İlaç, biyoteknoloji ve klinik araştırma ekipleri için Claude: literatür, biyoinformatik, protokol ve ruhsat dosyası. Bağlantılar, planlar, hasta verisi, KVKK."
 eyebrow: "Sektör"
 lead: "Anthropic, Claude'u yaşam bilimlerinde hipotezden ruhsat başvurusuna kadar her aşamada, kaynak göstererek ve izi sürülebilir şekilde çalışan bir araştırma ortağı olarak konumluyor. Bu sayfa sektörün iş akışına bakar; araştırmacının analiz uygulaması Claude Science ayrı sayfada."
 heroImage: "/images/kurumsal/yasam-bilimleri/hero.webp"
 heroAnimation: "yasam-bilimleri"
 heroAlt: "Kurgusal bir biyoteknoloji şirketinin klinik ekibi Claude'dan literatür taraması istiyor. Claude araştırma veritabanlarında yayınları sayıyor, kaynak numaralı bir kanıt tablosu çıkarıyor, ardından protokol taslağını kontrol edip güvenlik izlem planının eksik olduğunu işaretliyor. Veriler kurgusaldır."
-availability: "Yaşam bilimleri connector'ları ve skill'leri ücretli planlarda (Pro, Max, Ultra, Team, Enterprise); Free için kaynakta bir şey yazmıyor. Paket Cowork ve Claude Code eklentisi olarak da geliyor. Claude Science beta. Akademik ve kâr amacı gütmeyen kurumlardaki baş araştırmacılara 12 ay ücretsiz Team programı var"
+availability: "Yaşam bilimleri connector'ları ve skill'leri fiyat sayfasında Pro, Max ve Ultra planlarında listeleniyor; Team, Enterprise ve Free için kaynakta ayrı bir ifade yok. Paket Cowork ve Claude Code eklentisi olarak da geliyor. Claude Science beta. Akademik ve kâr amacı gütmeyen kurumlardaki baş araştırmacılara 12 ay ücretsiz Team programı var"
 sourceUrl: "https://claude.com/solutions/life-sciences"
 sourceTitle: "Claude for Life Science Teams"
 related:
@@ -52,7 +52,7 @@ Kaynak sayfa çok sayıda ilaç ve araştırma kuruluşunu sayıyor. Anthropic'i
 - **Bireysel araştırmacı:** Pro planında yaşam bilimleri connector'ları ve skill'leri, dosya oluşturma ve Claude Code var. Yoğun kullanım için Max ya da Ultra.
 - **Ekip:** Team planı ortak projeler, tek oturum açma ve merkezi fatura getirir.
 - **Şirket:** Enterprise'ta koltuk ücreti kullanımı içermez, kullanım API fiyatıyla ayrıca faturalanır; ayrıca uyum API'si (Compliance API), özel veri saklama süresi ve müşteri yönetimli şifreleme anahtarı gibi kontroller var. Kaynak sayfadaki "HIPAA'ya hazır altyapı" ABD sağlık mevzuatına yöneliktir, Türkiye'de KVKK uyumu anlamına gelmez.
-- **Akademik araştırmacılar için ücretsiz program:** Anthropic, akademik ve kâr amacı gütmeyen araştırma kurumlarındaki baş araştırmacılara (fen, matematik, bilgisayar ve mühendislik alanları) Team planının standart koltuklarını 12 ay ücretsiz veriyor; başvuruda kurum bağlantısı doğrulanıyor. Programın sayfasında ülke kısıtı yazmıyor ama Türkiye'deki bir üniversiteden kabul edilen bir başvuruyu doğrulayamadık. Kâr amaçlı şirketler, CRO'lar ve sanayi Ar-Ge ekipleri bu programa giremez.
+- **Akademik araştırmacılar için ücretsiz program:** Anthropic, akademik ve kâr amacı gütmeyen araştırma kurumlarındaki baş araştırmacılara (fen, matematik, bilgisayar ve mühendislik alanları) Team planının standart koltuklarını 12 ay ücretsiz veriyor (1 ile 25 koltuk; Premium koltuk aylık 15 dolar); başvuruda kurum bağlantısı doğrulanıyor, süre sonunda plan güncel fiyatla yenileniyor. Programın sayfasında ülke kısıtı yazmıyor ama Türkiye'deki bir üniversiteden kabul edilen bir başvuruyu doğrulayamadık. Kâr amaçlı şirketler, CRO'lar ve sanayi Ar-Ge ekipleri bu programa giremez.
 - **Satın alma:** Anthropic'in Türkiye'de ofisi veya resmi temsilcisi yok. Enterprise için kaynak sayfadaki yaşam bilimleri satış formu kullanılır, ödeme ABD doları ile.
 
 ## Hasta verisi, KVKK ve doğrulama

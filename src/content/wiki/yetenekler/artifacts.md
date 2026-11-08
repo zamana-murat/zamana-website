@@ -12,7 +12,7 @@ lastUpdated: "2026-11-08"
 
 **Artifacts, Claude'un ürettiği kendi kendine yeten, interaktif çıktılardır.** Sohbetin yanında bir panelde açılır; metin cevabı yerine **dönüp bakabileceğiniz, düzenleyebileceğiniz, paylaşabileceğiniz** bir şeye dönüşür.
 
-Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro, Max ve Ultra'da kademeli, diğer planlarda sonra). Bu yüzden artifact'i artık "sohbet artifact'i" ve "Cowork artifact'i" diye ikiye bölmek gerekmez: **standart artifact** her yerde aynı davranır. Yayılım durumu için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
+Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro, Max ve Ultra'da kademeli; Team ve Enterprise'ta yönetici açınca, Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda). Bu yüzden artifact'i artık "sohbet artifact'i" ve "Cowork artifact'i" diye ikiye bölmek gerekmez: **standart artifact** her yerde aynı davranır. Yayılım durumu için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
 
 > Claude'un ürün tanıtım sayfası için: [Claude Artifacts](/claude/artifacts/). Bu sayfa kurulum, karar ve sınırları anlatır.
 
@@ -20,8 +20,8 @@ Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro, Ma
 
 - **Düzenlenir:** taslağı yerinde düzenler, Claude'a "bu sütunu çıkar, şu grafiği ekle" diyerek iterasyon yaparsınız
 - **Paylaşılır:** çıktının bağlantısını oluşturabilirsiniz; hesap ayarlarınıza ve kuruluşunuzun kurallarına göre paylaşım kapsamı değişir
-- **İndirilir:** belge PDF, sunum PowerPoint olarak dışa aktarılır
-- **Ücretli planlarda ve Free'de vardır:** artifacts her planda açıktır; Team ve Enterprise'ta yönetici ayarını kontrol eder
+- **İndirilir:** belge Word, PDF ya da Google Docs, sunum PowerPoint olarak dışa aktarılır
+- **Plan:** artifacts Free dahil her planda açıktır; Team ve Enterprise'ta yönetici ayarını kontrol eder (Organization settings > Artifacts)
 
 Üretilebilen tipler:
 
@@ -40,6 +40,8 @@ Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro, Ma
 Pratik sonuç: "her açılışta kendiliğinden tazelenir" vaadine güvenerek yeni bir panel kurmayın. Yeni artifact'lerin veri davranışı için [Cowork'te artifact kullanımı](https://support.claude.com/en/articles/14729249-use-artifacts-in-claude-cowork) yardım sayfasına bakın.
 
 **Güncel yöntem:** panelin her hafta taze veriyle yeniden üretilmesini istiyorsanız [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) kurun. Görev her Pazartesi connector'lardan veriyi çeker ve artifact'i yeniden üretir; siz açıp bakarsınız.
+
+**Yeni seçenek: Claude Dashboards (8 Ekim 2026, beta, ücretli planlar).** Veriniz Snowflake, BigQuery, Databricks, Salesforce gibi bağlı bir kaynaktaysa, Claude Dashboards panoyu kurar ve veri değiştikçe kendisi güncel tutar; her grafik son yenilenme zamanını, her sayı arkasındaki sorguyu gösterir. Kaynağınız Excel dökümüyse yukarıdaki zamanlanmış görev yolu geçerli kalır. Ayrıntı: [Claude Design, Dashboards ve Motion](/wiki/yetenekler/claude-design/).
 
 ## Hangi Durumda Artifact, Hangi Durumda Belge?
 
@@ -108,5 +110,5 @@ Cevap "evet"se artifact, "hayır"sa belge. Basit ama hayatı değiştiren bir so
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Panelin düzenli yenilenmesi
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Artifact'lerin ve zamanlanmış görevlerin çalıştığı ortam
 - [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/): Connector'lar paneli besler
-- [Dispatch](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): Telefondan görev atmak (yeni kullanıcılara kapalı sınırlı beta)
+- [Telefondan görev](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch): Panel hazırlığını telefondan başlatmak (Cowork; eski Dispatch yeni kullanıcılara kapalı)
 - [Claude Design](/wiki/yetenekler/claude-design/): Görsel tasarım, sunum ve belge odaklı kardeş yüzey

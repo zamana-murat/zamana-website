@@ -1,13 +1,13 @@
 ---
 title: "Claude Platform: kendi ürününüzü Claude üzerine kurun"
-seoTitle: "Claude Platform (API) Nedir? Kurumlar İçin Türkçe Özet"
+seoTitle: "Claude Platform (API) Nedir? Kurumlar İçin Özet"
 description: "Claude Platform: API, yönetilen ajanlar ve Console ile Claude'u kendi ürün ve sistemlerinize gömme yolu. Modeller, fiyatlar, bulut ve KVKK notları."
 eyebrow: "Kurumsal"
 lead: "Claude Platform, Claude'u bir sohbet uygulaması olarak değil, kendi yazılımınızın parçası olarak kullanmanın yolu. Modellere API ile erişir, ajan kurar, Console'dan izler ve yönetirsiniz. Bu bir yazılım ekibi işidir."
 heroImage: "/images/kurumsal/platform/hero.webp"
 heroAnimation: "platform"
 heroAlt: "Kurgusal Anadolu Sigorta'nın hasar dosyası ajanı API üzerinden çalışıyor: solda istek kodu, sağda Claude'un poliçeyi sorguladığı, ekspertiz raporunu okuduğu ve ödeme önerisini hasar uzmanının onayına gönderdiği çalıştırma izi, altta token ve maliyet özeti."
-availability: "Abonelik planı değil, kullandıkça öde: Claude Console hesabıyla ön ödemeli API kullanımı, kurumsal sözleşmede aylık fatura. Amazon Bedrock, Google Cloud Vertex AI ve Microsoft Foundry üzerinden de kullanılır"
+availability: "Abonelik planı değil, kullandıkça öde: Claude Console hesabıyla ön ödemeli API kullanımı, kurumsal sözleşmede aylık fatura. Amazon Bedrock, Google Cloud (Gemini Enterprise Agent Platform, eski adı Vertex AI) ve Microsoft Foundry üzerinden de kullanılır"
 sourceUrl: "https://claude.com/platform/api"
 sourceTitle: "Claude Platform"
 related:
@@ -34,7 +34,7 @@ Anthropic, platformu üç katman olarak anlatıyor:
 ![Claude Platform'un üç katmanının Türkçe çizimi: altta Messages API ve araçlar, ortada yönetilen ajanlar ve altyapı, üstte yetkilendirme, yönetişim ve gözlem; yanda tüm katmanları izleyen Claude Console](/images/kurumsal/platform/katmanlar.webp)
 
 - **Temel yapı taşları:** Messages API ile modele tam kontrolle erişim ve modele eklenebilen araçlar: kod çalıştırma, JSON şemasına uyan yapılandırılmış çıktı, dış sistemleri çağırma (tool use), tarayıcı ve masaüstü otomasyonu (computer use), kaynak gösterme, dosya yükleme, web arama, 1 milyon tokenlık bağlam penceresi ve uzun oturumlarda bağlamı özetleme (compaction).
-- **Yönetilen ajanlar (Claude Managed Agents, beta):** Uzun süren ajanları ölçekli çalıştırmak için hazır altyapı. Kaynak sayfa çoklu ajan yönetimi, ajanın kendi işini bir başarı ölçütüne göre puanlaması, oturumlar arası hafıza, zamanlanmış çalıştırma, hassas veriyi kendi altyapınızda tutan yalıtılmış ortamlar, özel ağdaki MCP sunucularına güvenli erişim ve kimlik bilgilerini koddan ayrı saklayan kasalar gibi özellikleri sayıyor. Ajanların oturumlar arasında öğrendiklerini derlemesi ("dreaming") ayrıca talep formuyla açılan bir araştırma önizlemesi.
+- **Yönetilen ajanlar (Claude Managed Agents, beta):** Uzun süren ajanları ölçekli çalıştırmak için hazır altyapı. Kaynak sayfa çoklu ajan yönetimi, ajanın kendi işini bir başarı ölçütüne göre puanlaması, oturumlar arası hafıza, zamanlanmış çalıştırma, hassas veriyi kendi altyapınızda tutan yalıtılmış ortamlar, özel ağdaki MCP sunucularına güvenli erişim ve kimlik bilgilerini koddan ayrı saklayan kasalar (Vaults) gibi özellikleri sayıyor. Uygun müşteriler için "Enterprise Frontier Safeguards" ise sıfır veri saklamayı (ZDR) kötüye kullanım tespitiyle birlikte sunuyor. Ajanların oturumlar arasında öğrendiklerini derlemesi ("dreaming") ayrıca talep formuyla açılan bir araştırma önizlemesi.
 - **Yönetim katmanı:** Yetkilendirme, yönetişim ve gözlem kontrolleri.
 
 **Claude Console** ise bunların yönetildiği yer: istekleri deneme ve ajan yapılandırma, kullanımı, maliyeti, önbellek oranını ve hız sınırlarını model ve API anahtarı bazında izleme, çalışma alanı başına anahtar, üye ve harcama sınırı yönetimi.
@@ -52,13 +52,13 @@ Fiyatlar milyon token başına, ABD doları, vergi hariç:
 | Sonnet 5.5 | 2 $ | 10 $ | Hız ve zekâ dengesi, yüksek hacimli işler |
 | Haiku 5.5 | 0,10 $'dan | 0,50 $'dan | En hızlı ve en ucuz, hafif işler |
 
-Maliyeti düşüren yollar: toplu işleme (batch) yüzde 50 tasarruf sağlar, istem önbelleği (prompt caching) tekrar eden bağlamda maliyeti yüzde 90'a kadar düşürür. Anthropic'in sayfasına göre yalnız ABD'de işleme seçeneği 1,1 kat fiyatlanır. Modellerin ayrıntısı için [Claude modelleri](/claude/modeller/) sayfasına bakın.
+Maliyeti düşüren yollar: toplu işleme (batch) yüzde 50 tasarruf sağlar, istem önbelleği (prompt caching) uzun ve tekrar eden istemlerde Anthropic'e göre maliyeti yaklaşık yüzde 97'ye, gecikmeyi yaklaşık yüzde 60'a kadar düşürür. Opus 5.5 için Fast mode yaklaşık 2,5 kat hızlı, standart fiyatın 2 katı. "Advisor strategy" (beta) ile hızlı bir model, planını ya da işini değerlendirmesi için daha güçlü bir modele danışır. Anthropic'in sayfasına göre yalnız ABD'de işleme seçeneği 1,1 kat fiyatlanır. Modellerin ayrıntısı için [Claude modelleri](/claude/modeller/) sayfasına bakın.
 
 Ödeme iki türlü: kendi başınıza başlarsanız Console'da ön ödemeli kredi (isteğe bağlı otomatik yükleme) ve kullanıma göre artan hız sınırları; satış ekibiyle anlaşırsanız aylık fatura, özel hız sınırları ve kurulum desteği.
 
 ## Nerede çalışır?
 
-Claude Platform'u doğrudan Anthropic'ten kullanabileceğiniz gibi Amazon Web Services (Bedrock), Google Cloud (Vertex AI) ve Microsoft Foundry üzerinden de kullanabilirsiniz. Şirketiniz bu bulutlardan biriyle çalışıyorsa satın alma, faturalama ve güvenlik onayı mevcut sözleşmeniz üzerinden daha kolay ilerleyebilir. Anthropic'in sayfası ayrıca Asya-Pasifik, Kanada, Avrupa ve ABD için bölgesel veri yerleşimi seçeneklerinden söz ediyor. Türkiye bölgesi yok.
+Claude Platform'u doğrudan Anthropic'ten kullanabileceğiniz gibi Amazon Web Services (Bedrock), Google Cloud (Gemini Enterprise Agent Platform; Google'ın Nisan 2026'da Vertex AI'a verdiği yeni ad) ve Microsoft Foundry üzerinden de kullanabilirsiniz. Şirketiniz bu bulutlardan biriyle çalışıyorsa satın alma, faturalama ve güvenlik onayı mevcut sözleşmeniz üzerinden daha kolay ilerleyebilir. Anthropic'in sayfası ayrıca Asya-Pasifik, Kanada, Avrupa ve ABD için bölgesel veri yerleşimi seçeneklerinden söz ediyor. Türkiye bölgesi yok.
 
 ## Türk kurumunda ne işe yarar?
 

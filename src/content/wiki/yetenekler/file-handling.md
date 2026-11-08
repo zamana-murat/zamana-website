@@ -21,12 +21,15 @@ Claude içeriklerini analiz edip üzerinde çalışabildiği dosya tipleri:
 
 ### Metin ve Belge Dosyaları
 
+Anthropic'in sohbete yükleme listesi: PDF, DOCX, CSV, TXT, HTML, ODT, RTF, EPUB, JSON ve XLSX (görseller ayrıca aşağıda).
+
 - **`.txt`, `.md`:** düz metin ve Markdown
 - **`.pdf`:** PDF içeriği çıkarır ve okur (metin, tablolar, zaman zaman görseller). claude.ai'de PDF en çok 1000 sayfa olabilir; 100 sayfaya kadar metinle birlikte grafikler ve tablolar da okunur, bundan sonraki sayfalarda yalnız metin okunur. Sohbet başına en çok 20 dosya yüklenir
 - **`.csv`:** tablo biçimli veriyi okur ve analiz eder
 - **`.docx`:** Word belgelerini okur (biçimleme, başlıklar, tablolar dahil)
-- **`.xlsx`:** Excel tablolarını okur (tüm sayfalar, formüller, değerler)
-- **`.pptx`:** PowerPoint sunumlarını okur (slaytlar, notlar, içerik)
+- **`.xlsx`:** Excel tablolarını okur (tüm sayfalar, formüller, değerler); sohbete yüklemek için code execution ve dosya oluşturma ayarı açık olmalı
+- **`.odt`, `.rtf`, `.epub`, `.json`:** diğer belge ve veri biçimleri
+- **`.pptx`:** sohbete yükleme listesinde sayılmaz; sunumla çalışmak için Cowork'te klasördeki dosyayı, PowerPoint eklentisini ya da sunumun PDF hâlini kullanın
 - **`.html`:** HTML dosyalarını okur
 
 ### Görseller
@@ -66,12 +69,12 @@ Cowork'te yerel klasör bağlayarak çalışmak da mümkündür; klasör erişim
 
 ## Yükleme Sınırları
 
-- **Sohbette:** dosya başına en çok 500 MB, sohbet başına en çok 20 dosya; PDF'de en çok 1000 sayfa (100 sayfaya kadar metin ve görsel, sonrası yalnız metin). Görselde mesaj başına 20 görsel, görsel başına 10 MB
+- **Sohbette:** dosya başına en çok 500 MB, sohbet başına en çok 20 dosya; PDF'de en çok 1000 sayfa (100 sayfaya kadar metin ve görsel, sonrası yalnız metin). Görselde mesaj başına 20 görsel, görsel başına 10 MB, en çok 8000x8000 piksel
 - **Projelerde:** proje dosyası başına 30 MB; dosya sayısı sınırsız ama bilgi tabanı bağlama sığmalıdır. Sınıra yaklaşınca Pro, Max, Ultra, Team ve Enterprise'ta RAG modu kapasiteyi 10 kata kadar artırır
 - **Code execution'da:** dosya başına 30 MB (yükleme ve indirme)
 - Çok büyük dosyalar (1.000 sayfayı aşan raporlar, gigabyte'lık veri setleri) bağlam penceresine sığmayabilir. 200K bağlamlı eski (legacy) Claude Haiku 4.5 ile yüzlerce sayfalık belgelerde de aynı sorun çıkar
 - Büyük dosyaları **parçalara bölün**: bölüm bölüm işletin
-- Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) [1M token bağlam](/wiki/temeller/modeller/) bu kısıtı büyük ölçüde gevşetir
+- Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5) [1M token bağlam](/wiki/temeller/modeller/) bu kısıtı büyük ölçüde gevşetir
 - Çok büyük veri için Claude bir Python betiği yazıp dosyayı her seferinde bir bölüm okuyarak işleyebilir ([Code Execution](/wiki/yetenekler/code-execution/))
 
 ## Türkiye'den Örnekler

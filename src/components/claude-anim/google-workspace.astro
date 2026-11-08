@@ -1,0 +1,189 @@
+---
+/**
+ * Turkish, code-driven hero animation for /claude/google-workspace/ (replaces Anthropic's English video).
+ * Scenario: at a fictional food exporter (Kuzey Fındık) the export lead opens the price list
+ * spreadsheet and asks Claude in the side panel to raise EUR prices by 5 percent for the new
+ * season. Claude highlights the changed cells as reviewable suggestions; the user accepts.
+ * Generic spreadsheet UI (no Google branding). All elements live in the markup; the script only
+ * toggles data-step and types text.
+ */
+const ROWS = [
+  { name: 'İç fındık 11-13 mm', old: '7,40', neu: '7,77' },
+  { name: 'Kavrulmuş fındık', old: '8,20', neu: '8,61' },
+  { name: 'Fındık ezmesi 1 kg', old: '9,90', neu: '10,40' },
+  { name: 'Fındık unu', old: '6,80', neu: '7,14' },
+];
+---
+
+<div
+  class="ca-gws"
+  data-step="0"
+  data-prompt="Yeni sezon için euro fiyatlarını yüzde 5 artır, değişen hücreleri göster."
+  role="img"
+  aria-label="Kurgusal Kuzey Fındık'ın ihracat fiyat listesi tablosu açık; yan paneldeki Claude'a euro fiyatlarını yüzde 5 artırması yazılıyor, Claude değişen dört hücreyi öneri olarak vurguluyor ve kullanıcı değişikliği kabul ediyor."
+>
+  <div class="gw__win" aria-hidden="true">
+    <div class="gw__bar">
+      <span class="gw__dot"></span><span class="gw__dot"></span><span class="gw__dot"></span>
+      <span class="gw__bar-title">ihracat-fiyat-listesi-2027 · Tablo</span>
+    </div>
+
+    <div class="gw__body">
+      <!-- Spreadsheet -->
+      <div class="gw__sheet">
+        <div class="gw__row gw__row--head">
+          <span>Ürün</span><span>EUR / kg</span>
+        </div>
+        {ROWS.map((r, i) => (
+          <div class="gw__row" style={`--i:${i}`}>
+            <span>{r.name}</span>
+            <span class="gw__cell"><s>{r.old}</s><b>{r.neu}</b></span>
+          </div>
+        ))}
+        <p class="gw__foot">Fiyatlar FOB Trabzon</p>
+      </div>
+
+      <!-- Side panel -->
+      <div class="gw__panel">
+        <p class="gw__panel-h">Claude</p>
+        <p class="gw__ctx">
+          <svg viewBox="0 0 16 16" width="12" height="12"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5h12M6.5 2v12" stroke="currentColor" stroke-width="1.5"/></svg>
+          Açık dosya: ihracat-fiyat-listesi-2027
+        </p>
+        <div class="gw__msgs">
+          <p class="gw__user"><span data-role="prompt"></span><span class="gw__caret"></span></p>
+          <div class="gw__work">
+            <span class="gw__spark"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            B sütunu hesaplanıyor
+          </div>
+          <div class="gw__ans">
+            <p>4 hücrede öneri hazır. Yuvarlama 2 basamak, formüller korunuyor.</p>
+            <div class="gw__acts"><span class="gw__ok">Kabul et</span><span class="gw__no">Reddet</span></div>
+          </div>
+          <p class="gw__applied">Değişiklik uygulandı, sürüm geçmişine kaydedildi.</p>
+        </div>
+        <div class="gw__input">Claude'a sorun</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ca-gws {
+    --gw-ink: var(--c-navy);
+    --gw-muted: var(--c-text-muted);
+    --gw-line: var(--c-border);
+    --gw-soft: #f3f1ea;
+    --gw-hl: rgba(201, 168, 76, .28);
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    min-height: 320px;
+    max-height: 520px;
+    font-size: clamp(12px, 1.25vw, 15px);
+    container-type: inline-size;
+  }
+  .gw__win { height: 100%; display: flex; flex-direction: column; background: var(--c-white, #fff); transition: opacity .5s; }
+  .gw__bar { display: flex; align-items: center; gap: 6px; padding: 0.7em 1em; border-bottom: 1px solid var(--gw-line); }
+  .gw__dot { width: 9px; height: 9px; border-radius: 50%; background: #e2ded3; }
+  .gw__bar-title { margin-left: 0.6em; font-size: 0.8em; color: var(--gw-muted); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .gw__body { flex: 1; display: flex; min-height: 0; }
+
+  .gw__sheet { flex: 1; min-width: 0; padding: 1em; display: flex; flex-direction: column; }
+  .gw__row { display: grid; grid-template-columns: 1fr 6.5em; border: 1px solid var(--gw-line); border-top: 0; font-size: 0.86em; color: var(--gw-ink); }
+  .gw__row > span { padding: 0.5em 0.6em; }
+  .gw__row > span + span { border-left: 1px solid var(--gw-line); text-align: right; }
+  .gw__row--head { border-top: 1px solid var(--gw-line); background: var(--gw-soft); font-weight: 800; font-size: 0.78em; }
+  .gw__cell s { color: var(--gw-muted); }
+  .gw__cell b { display: none; }
+  .gw__cell { transition: background .3s calc(var(--i) * 200ms); }
+  .gw__foot { margin: 0.6em 0 0; font-size: 0.72em; color: var(--gw-muted); }
+
+  .gw__panel { width: 15em; flex-shrink: 0; border-left: 1px solid var(--gw-line); display: flex; flex-direction: column; padding: 0.8em; gap: 0.5em; background: #fbfaf6; }
+  .gw__panel p { margin: 0; }
+  .gw__panel-h { font-weight: 800; color: var(--gw-ink); }
+  .gw__ctx { display: flex; align-items: center; gap: 0.4em; font-size: 0.7em; color: var(--gw-muted); }
+  .gw__msgs { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.5em; overflow: hidden; }
+  .gw__user { align-self: flex-end; background: var(--c-navy); color: #fff; border-radius: 10px 10px 2px 10px; padding: 0.5em 0.7em; font-size: 0.82em; line-height: 1.4; min-height: 1.2em; }
+  .gw__user:has(span:empty) { visibility: hidden; }
+  .ca-gws[data-typing] .gw__user { visibility: visible; }
+  .gw__caret { display: none; width: 2px; height: 1em; margin-left: 1px; vertical-align: -0.15em; background: #fff; animation: gw-blink 1s steps(1) infinite; }
+  .ca-gws[data-typing] .gw__caret { display: inline-block; }
+  .gw__work { display: none; align-items: center; gap: 0.45em; font-size: 0.8em; color: var(--gw-muted); }
+  .gw__spark { color: var(--c-gold); display: inline-flex; animation: gw-spin 1.6s linear infinite; }
+  .gw__ans { display: none; font-size: 0.8em; color: var(--gw-ink); line-height: 1.4; animation: gw-in .4s ease both; }
+  .gw__acts { display: flex; gap: 0.5em; margin-top: 0.5em; }
+  .gw__ok, .gw__no { font-weight: 800; border-radius: 6px; padding: 0.3em 0.7em; font-size: 0.92em; }
+  .gw__ok { background: var(--c-gold); color: var(--c-navy); }
+  .gw__no { border: 1px solid var(--gw-line); color: var(--gw-muted); }
+  .gw__applied { display: none; font-size: 0.76em; color: #1d6f42; font-weight: 700; animation: gw-in .4s ease both; }
+  .gw__input { border: 1px solid rgba(15, 40, 85, .22); border-radius: 8px; padding: 0.45em 0.6em; font-size: 0.78em; color: var(--gw-muted); background: #fff; }
+  @container (max-width: 480px) { .gw__panel { width: 12em; } .gw__row { grid-template-columns: 1fr 5em; } }
+
+  /* step states */
+  .ca-gws[data-step="2"] .gw__work { display: flex; }
+  .ca-gws[data-step="3"] .gw__ans,
+  .ca-gws[data-step="4"] .gw__ans { display: block; }
+  .ca-gws[data-step="3"] .gw__cell,
+  .ca-gws[data-step="4"] .gw__cell { background: var(--gw-hl); }
+  .ca-gws[data-step="3"] .gw__cell b,
+  .ca-gws[data-step="4"] .gw__cell b { display: inline; margin-left: 0.4em; }
+  .ca-gws[data-step="4"] .gw__cell s { display: none; }
+  .ca-gws[data-step="4"] .gw__cell { background: transparent; }
+  .ca-gws[data-step="4"] .gw__acts { display: none; }
+  .ca-gws[data-step="4"] .gw__applied { display: block; }
+  .ca-gws[data-step="5"] .gw__win { opacity: 0; }
+
+  @keyframes gw-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes gw-blink { 50% { opacity: 0; } }
+  @keyframes gw-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ca-gws *, .ca-gws *::before { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<script>
+  function setup(root: HTMLElement) {
+    const prompt = root.dataset.prompt || '';
+    const out = root.querySelector<HTMLElement>('[data-role="prompt"]')!;
+    let timers: number[] = [];
+    let running = false;
+    const at = (ms: number, fn: () => void) => timers.push(window.setTimeout(fn, ms));
+    const step = (n: number) => { root.dataset.step = String(n); };
+
+    const reset = () => {
+      timers.forEach(clearTimeout); timers = [];
+      out.textContent = '';
+      delete root.dataset.typing; step(0);
+    };
+
+    const cycle = () => {
+      reset();
+      at(700, () => { step(1); root.dataset.typing = '1'; });
+      const speed = 30;
+      for (let i = 0; i <= prompt.length; i++) at(800 + i * speed, () => { out.textContent = prompt.slice(0, i); });
+      const t1 = 800 + prompt.length * speed + 500;
+      at(t1, () => { delete root.dataset.typing; step(2); });
+      at(t1 + 2200, () => step(3));
+      at(t1 + 5600, () => step(4));
+      at(t1 + 8800, () => step(5));
+      at(t1 + 9400, () => { if (running) cycle(); });
+    };
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      out.textContent = prompt;
+      step(3);
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries.some((e) => e.isIntersecting);
+      if (visible && !running) { running = true; cycle(); }
+      else if (!visible && running) { running = false; reset(); }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  }
+
+  document.querySelectorAll<HTMLElement>('.ca-gws').forEach(setup);
+</script>

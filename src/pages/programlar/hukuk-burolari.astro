@@ -137,8 +137,10 @@ import Layout from '../../layouts/Layout.astro';
             <p class="curr-meta">Hafta 2 · 60 dk</p>
             <p>
               Karşı taraftan gelen taslağı kendi kurallarınızla (sorumluluk tavanı, ödeme vadesi, yetkili mahkeme) karşılaştırmak, iki versiyon arasındaki
-              farkları çıkarmak, Word eklentisinde değişiklikleri izleme açıkken öneri almak. Anthropic'in resmi hukuk eklentisindeki
-              <code>legal:review-contract</code> ve <code>legal:triage-nda</code> skill'lerini tanıyoruz; bunlar Türk hukukuna göre hazırlanmadığı için büronuzun kurallarıyla uyarlıyoruz.
+              farkları çıkarmak, Word eklentisinde değişiklikleri izleme açıkken öneri almak. Anthropic'in Claude for Legal paketini tanıyoruz:
+              pratik alan plugin'leri (ör. Commercial, Corporate, Litigation), sözleşme incelemesi için hazır etkileşimli araçlar (legal artifacts) ve eski
+              <code>legal:review-contract</code> ile <code>legal:triage-nda</code> skill'leri. Varsayılan kurallar ABD hukukuna göre hazırlandığı için
+              (örnekler Delaware, New York, California), resmi kaynakta Türk hukuku desteği anılmıyor; bu yüzden büronuzun kurallarıyla Türk hukukuna uyarlıyoruz.
             </p>
             <p class="curr-out"><strong>Çıktı:</strong> Büronuzun inceleme kuralları dosyası ve NDA ön eleme şablonu.</p>
           </div>
@@ -216,7 +218,7 @@ import Layout from '../../layouts/Layout.astro';
     <div class="container container-narrow">
       <h2 class="section-title">Başlamadan Önce</h2>
       <ul class="who-list">
-        <li><strong>Claude aboneliği:</strong> Büronuz Team ya da Enterprise kullanıyorsa büronun koltuğuyla katılırsınız. Kişisel hesapla katılıyorsanız ilk ay Claude Max (eski adı Max 5x) (~$100/ay, Anthropic'e ödenir) öneriyoruz, çünkü Pro ($20) limitine yeni kullanıcı çabuk çarpıyor. Zorunlu değil: Pro ile başlayıp gerektiğinde yükseltmek de olur.</li>
+        <li><strong>Claude aboneliği:</strong> Büronuz Team ya da Enterprise kullanıyorsa büronun koltuğuyla katılırsınız. Kişisel hesapla katılıyorsanız ilk ay Claude Max (eski adı Max 5x, ~$100/ay, Anthropic'e ödenir) öneriyoruz, çünkü Pro ($20) limitine yeni kullanıcı çabuk çarpıyor. Zorunlu değil: Pro ile başlayıp gerektiğinde yükseltmek de olur.</li>
         <li><strong>Müvekkil verisi kişisel hesaba girmez:</strong> Pro, Max ve Ultra kişisel planlardır, veri işleme eki (DPA) kapsamında değildir. Eğitimde kurgusal, kamuya açık ya da tamamen anonimleştirilmiş metinlerle çalışıyoruz. Gerçek müvekkil verisiyle çalışmaya geçmeden önce büronuzun Team veya Enterprise planını ve sır saklama değerlendirmesini netleştirmesini öneriyoruz.</li>
         <li><strong>Donanım:</strong> Modern Mac veya Windows, internet, Claude Desktop uygulamasını yükleyebilen bilgisayar. Word eklentisi için Microsoft 365.</li>
         <li><strong>Hazırlık:</strong> Büronuzun en sık hazırladığı 2-3 belge türü ve varsa kendi standart maddeleriniz. Müvekkil bilgisi istemiyoruz.</li>
@@ -267,7 +269,7 @@ import Layout from '../../layouts/Layout.astro';
             </summary>
             <p>
               Resmi Türkçe hukuk dilinde iyi yazar, genel kavramları bilir. Ama son değişiklikleri ve güncel kararları ancak web araması açıksa ya da metni siz verirseniz bilir,
-              ayrıntıda yanılabilir. Bu yüzden kritik konularda metni kendiniz sağlarsınız. Anthropic'in hukuk eklentisi de Türk hukukuna göre hazırlanmamıştır;
+              ayrıntıda yanılabilir. Bu yüzden kritik konularda metni kendiniz sağlarsınız. Anthropic'in Claude for Legal paketinde de resmi kaynakta Türk hukuku desteği anılmıyor;
               programda büronuzun kurallarıyla uyarlıyoruz.
             </p>
           </details>

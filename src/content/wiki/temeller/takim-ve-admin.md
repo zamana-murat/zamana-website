@@ -1,6 +1,6 @@
 ---
 title: Takım, Admin Paneli ve Enterprise Plan
-description: Birden çok kullanıcılı şirketler için Claude. Team ve Enterprise plan farkları, admin paneli, kullanıcı yönetimi, merkezi fatura.
+description: Birden çok kullanıcılı şirketler için Claude. Team ve Enterprise plan farkları, admin paneli, kullanıcı yönetimi, güvenlik araçları ve merkezi fatura.
 tags:
   - temeller
   - takim
@@ -82,6 +82,7 @@ Team ve Enterprise planda **admin** rolü olan kullanıcı, claude.ai → **Orga
 - Aktif kullanıcı sayısı, son giriş tarihleri
 - Toplam mesaj/sorgu hacmi (özet düzeyinde)
 - Hangi özellikler kullanılıyor (Cowork, [Projects](/wiki/araclar/projects/), [Connectors](/wiki/araclar/connectors/))
+- Enterprise'ta ayrıca Analytics API, akıllı raporlar, uygulama içi anketler ve grup bazlı ortak bütçe (28 Ekim 2026)
 
 **Önemli sınır:** Admin panelinde varsayılan olarak yalnız kullanım metrikleri görünür. Sohbet, dosya ve proje içeriğine programatik erişim veren Compliance API yalnızca Enterprise'tadır (Team'de yok) ve kapsamı sözleşmeye ve yapılandırmaya bağlıdır. Çalışanlarınıza neyin izlendiğini baştan söyleyin ([Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)).
 
@@ -104,15 +105,19 @@ Enterprise planda admin şu politikaları organizasyon çapında uygulayabilir:
 
 ### Varsayılan Ayarlar ve Admin Anahtarları
 
-Aşağıdaki varsayılanlar 6 Ekim 2026 itibarıyla geçerlidir; Claude hızlı değiştiği için ayarı kendi panelinizde doğrulayın.
+Aşağıdaki varsayılanlar 8 Kasım 2026 itibarıyla geçerlidir; Claude hızlı değiştiği için ayarı kendi panelinizde doğrulayın.
 
 | Özellik | Team | Enterprise | Admin ne yapar? |
 |---|---|---|---|
 | **Hafıza** (Generate memory from chats) | Varsayılan kapalı | Varsayılan kapalı | Owner kontrolünde; açarsanız sohbet ve Cowork arasında ortak çalışır, [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/)'ya ekleyin |
-| **Claude Design, Slides, Docs** (beta) | Varsayılan açık | Owner açana kadar kapalı | Owner anahtarıyla açılır ya da kapatılır |
+| **Claude Design, Slides, Docs** | Varsayılan açık | Varsayılan açık (15 Ekim 2026'dan beri) | Owner Organization settings > Artifacts'tan kapatabilir; Enterprise'ta özel rollerle gruba sınırlar |
+| **Claude Dashboards, Claude Motion** (beta) | Duyuru varsayılan kapalı demiyor, panelde kontrol edin | Dashboards owner açana kadar kapalı; Motion için panelde kontrol edin | Organization settings > Artifacts; dış paylaşım iznini ayrıca belirler |
 | **Kod çalıştırma ve dosya oluşturma** | Açık, owner kapatabilir | Açık, owner kapatabilir | Kod çalıştırmada ağ erişimi varsayılan olarak kapalıdır |
 | **Cowork** | Tüm ücretli planlarda masaüstünde var | Admin etkinleştirmesi gerekebilir | Web ve mobil Cowork'te de admin açar |
+| **Birleşik sohbet ve Cowork arayüzü** | Ayarla açılır | Ayarla açılır (23 Ekim 2026'dan beri genel kullanımda) | "Chat and Cowork unified" ayarı |
+| **Connector araç izinleri** | Owner belirler | Owner belirler | Connector başına salt okunur ve yazma/silme araçları için "Always allow / Needs approval / Blocked"; kuruluş geneli, kullanıcı geçersiz kılamaz |
 | **Microsoft 365 connector** | Owner açar | Owner açar | Teams mesajı gönderme gibi yazma araçlarını araç bazında açıp kapatır |
+| **Google Docs, Sheets, Slides** (connector ve eklenti) | Owner connector'ları önce açar | Owner connector'ları önce açar | Eklentiyi Google Workspace yöneticisi kuruluşa dağıtır ya da izin listesine alır; Enterprise'ta Compliance API eklentiyi de kapsar |
 | **Model yetkilendirme** | Duyuruda yalnız Enterprise | Var (1 Temmuz 2026) | Hangi modellerin kullanılabileceğini belirler |
 | **Claude Tag** (Slack'te Claude'u etiketleme) | Var | Var | Slack üzerinden Claude etiketlenir |
 | **Skill ve eklenti güvenlik taraması** (beta) | Duyuruda yalnız Enterprise | Var (6 Ağustos 2026) | Kurulacak skill ve eklentileri taratır |
@@ -159,6 +164,39 @@ Enterprise planda admin tüm organizasyon aktivitelerinin loglarını görür:
 
 Bu log düzenli olarak SIEM (kurumsal güvenlik bilgi yönetim sistemi) sistemine aktarılabilir. Hukuk ve finans denetimi için gereken iz buradadır.
 
+## Enterprise Güvenlik Araçları (Kasım 2026)
+
+5 Kasım 2026'da Enterprise için yeni güvenlik ve yönetim araçları geldi; çoğu **beta**. BT ve bilgi güvenliği ekibinin sorduğu "kendi DLP'miz araya girebilir mi, gölge kullanım nasıl engellenir" sorularının cevabı buradadır.
+
+| Araç | Ne yapar? | Durum |
+|---|---|---|
+| **Güvenlik merkezi** (security center) | Sohbet, Cowork ve Claude Code ayarlarınızı Anthropic'in önerdiği yapılandırmayla karşılaştırır; denetçi için rapor indirilir. Uyum sertifikası ya da garantisi değildir | Beta |
+| **Prompt hook'ları** | Desteklenen Claude ürünlerinden giden istemleri kendi güvenlik aracınıza kontrole gönderir; mevcut DLP (veri sızıntısı önleme) kurallarınız Claude'a da uygulanır | Genel kullanımda |
+| **Araç çağrısı öncesi hook'lar** | Claude'un bir aracı çalıştırmasından önce çağrıyı kontrol ettirir | Genel kullanımda |
+| **Merkezi yönetim** | Birden çok Claude organizasyonu olan şirkete admin.claude.com'da tek konsol: SSO, SCIM, alan adı doğrulama, gruplar, Compliance API anahtarları; üst organizasyon owner ve admin rolleri; birden fazla kimlik sağlayıcı | Beta |
+| **Üyeyi tüm cihazlardan çıkarma** | Admin API ile tek çağrıda üyenin tüm tarayıcı ve cihaz oturumlarını kapatır, organizasyondan silmez (API anahtarlarını ve zamanlanmış rutinleri durdurmaz) | Beta |
+| **Self-serve IP izin listesi** | Yönetici IP izin listesini Anthropic'e başvurmadan kendisi kurar | Beta |
+| **Claude Desktop ayar yönetimi** | Sık kullanılan masaüstü ayarlarını cihaz yönetimi (MDM) dağıtımı gerekmeden panelden belirler | Beta |
+| **Dış hesap engeli** | Yönetilen bilgisayarlarda Claude Desktop'a kişisel ve başka kuruluş hesaplarıyla girişi engeller (gölge BT'ye karşı) | Duyuruda belirtilmedi |
+| **Çalışma klasörü sınırı** | Owner, Claude'la hangi klasörlerin kullanılabileceğini kısıtlar | Duyuruda belirtilmedi |
+| **Cowork'te EDR sensörü** | Kurumun uç nokta güvenlik (EDR) sensörü kullanıcının bilgisayarındaki Cowork sanal makinesinde de çalışır; yalnız tespit modunda, engellemez. **Team ve Enterprise**, macOS ve Windows | Beta |
+
+**Admin panelinde nerede?** Anthropic duyurusuna göre güvenlik merkezi, prompt hook'ları ve Claude Desktop ayar yönetimi claude.ai içinde **Organization settings** altında yönetilir (owner girer). Merkezi yönetim ayrı bir konsoldur: **admin.claude.com**. Cowork'teki EDR sensörü panelden değil, macOS ve Windows'ta cihaz yönetimi (MDM) üzerinden kurulur. IP izin listesi, dış hesap engeli ve çalışma klasörü sınırı için duyuruda menü yolu verilmiyor; panelde göremezseniz Anthropic yardım merkezine ya da hesap yöneticinize sorun. Önce BT ekibiyle hangi aracın gerçekten gerektiğine karar verin, sonra bir pilot grupta açın.
+
+Kaynak: [More visibility and control over Claude Enterprise for security teams](https://claude.com/resources/articles/claude-enterprise-security-updates) (Anthropic, 5 Kasım 2026). Beta dönemindeki istisnalar Anthropic yardım merkezinde listelenir.
+
+### Proje Etiketiyle Maliyet Takibi (beta)
+
+6 Kasım 2026'dan beri uygun Enterprise kuruluşları projelere zaten kullandıkları kodlarla **etiket** verir (masraf merkezi, müşteri-dosya numarası gibi) ve harcamayı etikete göre görür. Danışmanlık, hukuk ve muhasebe bürolarında "bu müşteri dosyasına ne kadar Claude kullanımı gitti" sorusunun cevabıdır.
+
+- **Kurulum:** Organization settings > Organization > Project tags > "Create tag". Etiket adı küçük harf, boşluksuz ve sonradan değiştirilemez; değerler elle ya da CSV ile girilir, isteğe "Required" yapılır. Projeye etiketi, projede düzenleme yetkisi olan kişi verir; harcamayı Owner ya da Analytics ve Billing görme yetkili özel rol görür.
+- **Sayılan kullanım:** proje içindeki sohbet ve Cowork, proje seçili masaüstü Cowork görevleri, proje kimliği ayarlanmış Claude Code.
+- **Sayılmayan:** Office eklentileri, Claude in Chrome, Claude Design, Slack ve Teams, Artifacts, sesli mod, API ve koltuk ücretine dahil kullanım. Proje dışındaki iş "Not in a project" görünür.
+- **Uygun olmayan kuruluşlar:** HIPAA yapılandırması, müşteri yönetimli anahtar, zero data retention ya da asgari veri saklama kullananlar ve verisi ABD dışında tutulanlar.
+- **Sınırlar:** Etiketler kuruluştaki herkese görünür, kilitlenemez; tek sohbete etiket, etiketler arası bölüştürme ve etiket bazlı harcama tavanı yok. Rakamlar faturayla birebir tutmayabilir; ay sonundan sonra yaklaşık bir hafta değişebilir.
+
+Kaynak: [Track spend by project with tags](https://support.claude.com/en/articles/18251257-track-spend-by-project-with-tags) (Anthropic).
+
 ## Veri İşleme Sözleşmesi (DPA)
 
 Anthropic'in **Data Processing Agreement (DPA)** belgesi yalnızca ticari ürünlerde (Team, Enterprise, API) geçerlidir ve ticari şartlara otomatik dahildir, ayrıca imza gerekmez. Free, Pro, Max ve Ultra DPA kapsamı dışındadır. Bu sözleşme:
@@ -184,7 +222,7 @@ KVKK'ya göre kişisel veri işleten bir üçüncü tarafla (veri işleyen) söz
 4. Eski Pro abonelikleri iptal edilir
 5. Tek fatura akışı başlar
 
-**Kişisel hesap Team'e taşındığında ne olur?** Hesap "yerinde yükseltilirse" şunlar taşınır: sohbetler, sohbetlerdeki artifact'ler, projeler (talimat ve dosyalarıyla), yüklenen dosyalar ve Claude hafızası (kuruluş kapatmadıysa). Şunlar taşınmaz: özel skills (geçiş yolu yok), özel connector'lar (yeniden eklenir), yayınlanmış artifact'ler, sohbet paylaşım linkleri (kalıcı olarak kapanır) ve masaüstü oturumları (yerelde kalır). "Kişisel hesabımı ayrı tut" seçilirse eski sohbetler kişisel hesapta kalır. Çalışanlarınızdan skills'lerini ve paylaşım linklerini önceden dışa aktarmalarını isteyin.
+**Kişisel hesap Team'e taşındığında ne olur?** Hesap "yerinde yükseltilirse" şunlar taşınır: sohbetler, sohbetlerdeki artifact'ler, projeler (talimat ve dosyalarıyla), yüklenen dosyalar ve Claude hafızası (kuruluş kapatmadıysa). Şunlar taşınmaz: özel skills (geçiş yolu yok), özel connector'lar (yeniden eklenir), uygulama yetkilendirmeleri, yayınlanmış artifact'ler, sohbet paylaşım linkleri (kalıcı olarak kapanır) ve masaüstü oturumları (yerelde kalır). "Kişisel hesabımı ayrı tut" seçilirse eski sohbetler kişisel hesapta kalır. Çalışanlarınızdan skills'lerini ve paylaşım linklerini önceden dışa aktarmalarını isteyin.
 
 ### Senaryo 2: Team'den Enterprise'a
 
@@ -207,7 +245,7 @@ Yeni bir çalışan organizasyona katıldığında:
 2. **İlk giriş:** Çalışan hesabı kabul eder, Claude'a girer
 3. **Bireysel talimat:** Kendi rol ve sorumluluklarını tanımlayan kısa bir profil talimatı (Settings > General > "Instructions for Claude") yazsın; masaüstünde klasörle çalışacaksa aynı metnin ayrıntılı hâlini [CLAUDE.md](/wiki/claude-md/nedir/) olarak klasörüne koysun
 4. **Şirket kural seti (varsa):** Şirket genelinde paylaşılan kurallar Team/Enterprise'ta paylaşılan proje talimatı ve (cihaz yönetimiyle yapılandırılan) kuruluş talimatı olarak verilir; kuruluş talimatı en çok 3.000 karakterdir (27 Ağustos 2026'dan beri), sohbet, Cowork ve Code oturumlarında geçerlidir ve zorlayıcı değil, modele yol gösterir. Ayrıntı: [Takım Kural Seti](/wiki/claude-md/takim-claude-md/), [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/)
-5. **Eğitim:** [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip etsin
+5. **Eğitim:** [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip etsin. Telefondan görev atma (Team'de otomatik açık) için [mobil Cowork](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch), Docs/Sheets/Slides eklentisi için [Office ve Chrome](/wiki/araclar/office-ve-chrome/#google-docs-sheets-ve-slides-eklentisi) sayfasına bakın
 6. **Politika imzası:** [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) belgesini okusun ve onaylasın
 
 ## İlgili Sayfalar

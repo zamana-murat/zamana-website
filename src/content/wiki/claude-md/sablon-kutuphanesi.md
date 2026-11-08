@@ -1,12 +1,12 @@
 ---
 title: "CLAUDE.md Şablon Kütüphanesi: Rol Bazlı"
-seoTitle: "CLAUDE.md Şablon Kütüphanesi: Rol Bazlı Hazır Şablonlar"
+seoTitle: "CLAUDE.md Şablon Kütüphanesi: Rol Bazlı Şablonlar"
 description: "Satış, finans, hukuk, İK, operasyon ve diğer roller için kopyalanabilir CLAUDE.md şablonları. Doldurun, profile, projeye ya da klasöre koyun."
 tags:
   - claude-md
   - sablon
   - rol-bazli
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Sıfırdan iyi bir [CLAUDE.md](/wiki/claude-md/nedir/) yazmak ilk seferde zor.** Bu sayfa rol bazlı şablonlar sunar: kopyalayın, kendi bilgilerinizle kişiselleştirin, başlayın.
@@ -140,7 +140,7 @@ Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi; uygun olanları].
 - Hesap makinesi gibi davran: adım adım göster, "yaklaşık" kullanma
 - Vergi uygulamalarını mevzuatın güncel olduğu varsayımıyla cevapla, 
   ama "mali müşavire danışın" notunu mutlaka ekle
-- USD/EUR rakamlarını mevcut TCMB kuruyla TL'ye çevir, kuru belirt
+- USD/EUR rakamlarını TL'ye çevirirken kullandığın kuru ve tarihini belirt; güncel TCMB kurunu web aramasıyla doğrulayamıyorsan kuru bana sor, tahmin etme
 
 ## Yapma
 - Belirsiz finansal tahmin yapma, veri yoksa söyle
@@ -181,7 +181,7 @@ Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 ## Yap
 - Her sözleşme maddesinde Türk hukukunda emredici hükümle çelişme 
   riskini açıkça belirt
-- İçtihatları iddia ettiğinde mutlaka kaynak ver (esas/karar no, tarih)
+- İçtihatları iddia ettiğinde mutlaka kaynak ver (esas/karar no, tarih); doğrulayamadığın esas/karar numarası uydurma, "doğrulanmadı" yaz
 - Belirsizlikte "yasal kesinlik için Yargıtay/Danıştay kararını doğrulayın" notu
 
 ## Yapma

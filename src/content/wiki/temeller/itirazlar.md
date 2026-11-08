@@ -1,6 +1,7 @@
 ---
 title: "Yaygın İtirazlar ve Cevapları: Bireysel ve Kurumsal"
-description: "Claude'u kullanmaya başlarken yönetimden, IT'den, hukuktan ve çalışandan gelen tipik itirazlar ve dürüst cevapları."
+seoTitle: "Claude İtirazları ve Dürüst Cevapları"
+description: "Claude'u kullanmaya başlarken yönetimden, IT'den, hukuktan, finanstan ve çalışandan gelen tipik itirazlar, her biri için dürüst ve kısa cevaplar."
 tags:
   - temeller
   - itirazlar
@@ -31,7 +32,7 @@ Aynı kategori değiller, çoğu kurum ikisini yan yana kullanıyor. Copilot ve 
 
 Üç pratik not:
 
-- **Claude Office'e bağlanır.** Excel, PowerPoint ve Word eklentileri genel kullanımda, Outlook eklentisi public beta; ayrıca Microsoft 365 connector vardır. Ayrıntı: [Claude for Microsoft 365](/claude/microsoft-365/)
+- **Claude Office'e bağlanır.** Excel, PowerPoint ve Word eklentileri genel kullanımda, Outlook eklentisi public beta; ayrıca Microsoft 365 connector vardır. Google Workspace kullanıyorsanız Docs, Sheets ve Slides eklentisi de 6 Ekim 2026'dan beri genel beta aşamasında. Ayrıntı: [Claude for Microsoft 365](/claude/microsoft-365/), [Claude for Google Workspace](/claude/google-workspace/)
 - **Tek tedarikçi istiyorsanız** bunu dürüstçe tartın: toplantı özeti ve Outlook içi yardım gibi işlerde Copilot yeterli olabilir. Karar işin türüne göre verilir
 - **Çift yatırımı önlemenin yolu pilot:** 6 kişilik bir ekiple, kendi gerçek işlerinizde iki aracı yan yana deneyin ve [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) ile karar verin. Mevcut Copilot ya da Gemini aboneliğinizi pilot için iptal etmeniz gerekmez
 
@@ -99,8 +100,8 @@ Yaygın yanlış anlaşılma: "AI'ya verilen her şey eğitimde kullanılır." C
 
 Üç seviye entegrasyon var:
 
-1. **Hazır connector'lar**: Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot ve resmi dizinde yaklaşık 900 connector. Tek tıkla, OAuth ile, IT müdahalesi minimum.
-2. **API'si olmayan eski sistemler**: [Computer Use](/wiki/yetenekler/computer-use/) ile Claude ekrandan kullanabilir (Logo, Netsis, eski ERP'ler için). Dikkat: Computer Use research preview aşamasında ve yalnızca Pro, Max ve Ultra planlarında, masaüstü uygulamasında çalışıyor; Team ve Enterprise'ta yok. Kritik üretim süreçlerinde tek dayanak yapmayın.
+1. **Hazır connector'lar**: Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot ve resmi dizinde 1.000'den fazla connector. Tek tıkla, OAuth ile, IT müdahalesi minimum.
+2. **API'si olmayan eski sistemler**: [Computer Use](/wiki/yetenekler/computer-use/) ile Claude ekrandan kullanabilir (Logo, Netsis, eski ERP'ler için). Dikkat: Computer Use beta aşamasında ve yalnızca Pro, Max ve Ultra planlarında, masaüstü uygulamasında çalışıyor; Team ve Enterprise'ta yok. Kritik üretim süreçlerinde tek dayanak yapmayın.
 3. **Özel şirket içi sistemler**: MCP protokolü açık standarttır, IT ekibiniz veya entegrasyon ortağınız özel connector yazabilir.
 
 Türkiye'deki orta ölçekli şirketlerin çoğu için birinci seviye yeterli. Bireysel kullanıcı için bir connector'ın OAuth bağlantısı yaklaşık 5 dakikalık iştir ([İlk 7 Gün](/wiki/temeller/ilk-7-gun/)); kurum genelinde hangi connector'ların açılacağı ise ayrıca bir politika kararıdır.
@@ -204,8 +205,8 @@ Claude Desktop standart bir uygulama, özel yetki istemez, arka planda izleme ya
 
 İki istisnayı bilin ve politikanıza yazın:
 
-- **Computer use** (research preview, yalnızca Pro, Max ve Ultra planlarında, Team ve Enterprise'ta yok) kullanıcı tarafından açılırsa Claude ekranı görüp fare ve klavyeyi kullanabilir; bu durumda klasör sınırı tek başına yeterli bir güvence değildir
-- **6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır**, yani yalnızca bilgisayarınızda değil. Bulut görevlerinde hangi dosya ve bağlı hesapların kullanıldığını görev bazında kontrol edin
+- **Computer use** (beta, yalnızca Pro, Max ve Ultra planlarında, Team ve Enterprise'ta yok) kullanıcı tarafından açılırsa Claude ekranı görüp fare ve klavyeyi kullanabilir; bu durumda klasör sınırı tek başına yeterli bir güvence değildir
+- **6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır**, yani yalnızca bilgisayarınızda değil. Bulut oturumu bilgisayardaki dosyaya doğrudan erişmez (yerel klasör için masaüstü uygulaması açık ve bağlı olmalı), ama bağlı hesaplarla çalışır; hangi dosya ve bağlı hesapların kullanıldığını görev bazında kontrol edin
 
 Team ve Enterprise'ta hangi özelliklerin açık olacağına yönetici (owner) karar verir: [Takım ve Admin](/wiki/temeller/takim-ve-admin/), [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/).
 
@@ -221,6 +222,8 @@ Claude bulut tabanlıdır, trafik HTTPS üzerinden Anthropic'in sunucularına gi
 - VPN uyumluluk testi
 
 Yerel ağınızda Claude "yayın yapmaz." Dış bağlantı kurumsal internetle aynı güvenlik katmanından geçer.
+
+Kendi DLP ve güvenlik araçlarınızı devreye sokmak istiyorsanız Enterprise'ta prompt hook'ları, güvenlik merkezi ve kişisel hesap engeli gibi kontroller var (kısmen beta); nerede yönetildikleri [Takım ve Admin](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026) sayfasında.
 
 ### "Personel yanlışlıkla kritik veriyi paylaşırsa?"
 

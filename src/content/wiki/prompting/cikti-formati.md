@@ -6,7 +6,7 @@ tags:
   - prompting
   - format
   - cikti
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 **Aynı içerik üç farklı formatta üç farklı kullanım değeri verir.** Tabloya yapıştırılması gereken veri madde listesi olarak gelirse 5 dakika daha kaybedersiniz. Bu sayfa Claude çıktısını istediğiniz formatta üretmenin pratik tekniklerini anlatır.
@@ -66,11 +66,11 @@ ABC	1.000.000	üretim
 
 TSV (tab-separated) Excel'e doğrudan yapışır. CSV (virgül) yapışmaz çünkü Excel virgülü farklı yorumlar.
 
-**Hazır .xlsx dosyası isteyin.** Code execution ve dosya oluşturma açıkken (tüm planlarda, varsayılan olarak açık) Claude doğrudan indirilebilir bir `.xlsx` dosyası üretebilir; dosya başına sınır 30 MB. Örneğin: *"Bu müşteri listesini sütun başlıkları kalın, ciro sütunu para biçiminde bir Excel dosyası olarak ver."* Ayrıntı: [Code Execution](/wiki/yetenekler/code-execution/). Excel'in içinde çalışıyorsanız Claude'un Excel eklentisi de var, bkz. [Office ve Chrome](/wiki/araclar/office-ve-chrome/).
+**Hazır .xlsx dosyası isteyin.** Code execution ve dosya oluşturma açıkken (tüm planlarda, varsayılan olarak açık) Claude doğrudan indirilebilir bir `.xlsx` dosyası üretebilir; dosya başına sınır 30 MB. Örneğin: *"Bu müşteri listesini sütun başlıkları kalın, ciro sütunu para biçiminde bir Excel dosyası olarak ver."* Ayrıntı: [Code Execution](/wiki/yetenekler/code-execution/). Excel'in içinde çalışıyorsanız Claude'un Excel eklentisi de var, bkz. [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/).
 
 ## 3. JSON
 
-Bir başka yazılıma (Python, Excel formül, başka bir API) verilecek veri için **JSON** ideal:
+Bir başka yazılıma (Python, Excel formül, başka bir API) verilecek veri için **JSON** ideal. Çoğu iş kullanıcısına tablo yeter; bu bölüm veriyi bir yazılıma aktaracak olanlar içindir:
 
 ```
 Çıktı JSON formatında:
@@ -171,7 +171,7 @@ Konuşmacı notu: [varsa]
 ...
 ```
 
-[Skills](/wiki/yetenekler/skills/) ile doğrudan .pptx üretebilirsiniz; ücretli planlarda beta olan Claude Slides de sunumu doğrudan oluşturur. Bu format ise slayt slayt elle yapıştırma için.
+[Skills](/wiki/yetenekler/skills/) ile doğrudan .pptx üretebilirsiniz; tüm planlarda açık olan Claude Slides de sunumu doğrudan oluşturur. Bu format ise slayt slayt elle yapıştırma için.
 
 ## 8. Kısa Cevap (Tek Cümle / Tek Sayı)
 
@@ -282,8 +282,7 @@ Sık yaptığınız her işin **bir favori format şablonu** olsun ve her seferi
 
 - **Tüm sohbetleriniz için:** profil talimatı ("Instructions for Claude", Settings > General).
 - **Tek bir iş için:** o işin [Claude Projesi](/wiki/araclar/projects/) talimatı.
-- **Cowork'te:** global talimat ya da klasör talimatı.
-- **Claude Code kullanıyorsanız:** CLAUDE.md dosyası (claude.ai sohbetinde okunmaz).
+- **Klasörle çalışıyorsanız (yerel Cowork, Claude Code):** klasördeki CLAUDE.md dosyası (claude.ai sohbetinde okunmaz). Cowork'ün genel talimatı profil talimatıyla aynı ayardır.
 
 Örnek içerik:
 
@@ -295,7 +294,7 @@ Sık yaptığınız her işin **bir favori format şablonu** olsun ve her seferi
 - Karar matrisi → tablo + altında öneri paragrafı
 ```
 
-Yer karşılaştırması: [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/). Claude Code'da rol bazlı örnekler için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/).
+Yer karşılaştırması: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/). Rol bazlı hazır talimat metinleri için [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/).
 
 ## İlgili Sayfalar
 
@@ -306,6 +305,6 @@ Yer karşılaştırması: [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/). 
 - [Yaygın Hatalar](/wiki/prompting/yaygin-hatalar/): Format hataları
 - [Artifacts](/wiki/yetenekler/artifacts/): Görsel format çıktıları
 - [Skills](/wiki/yetenekler/skills/): Word/Excel/PPT dosya üretme
-- [Memory Yönetimi](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat yerleri
-- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): CLAUDE.md format kuralları (Claude Code)
+- [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Kalıcı talimat yerleri
+- [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/): Rol bazlı hazır kalıcı talimat metinleri
 

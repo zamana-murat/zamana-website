@@ -13,7 +13,7 @@ lastUpdated: "2026-11-08"
 
 Bu sayfa Claude Chat'in ne yaptığını, ne yapmadığını ve bir iş profesyonelinin hangi görevleri sohbet tarzında, hangilerini [Cowork](/wiki/araclar/cowork-modu/) tarzında yapması gerektiğini açıklar.
 
-> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor (kademeli yayılım: önce Pro, Max ve Ultra, Team ve Free için "yakında"). Aynı konuşmada hem soru sorabilir hem "bu verilerden haftalık raporu hazırla" diyebilirsiniz. Hangi iş hangi tarza yakın, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
+> **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor (kademeli yayılım: Pro, Max ve Ultra'da açılıyor; Team ve Enterprise'ta yönetici "Chat and Cowork unified" ayarını açınca görünür, Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda; Free için "yakında" deniyor). Aynı konuşmada hem soru sorabilir hem "bu verilerden haftalık raporu hazırla" diyebilirsiniz. Hangi iş hangi tarza yakın, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ## Claude Chat Nedir?
 
@@ -35,7 +35,7 @@ Claude Chat'i şöyle düşünün: **"kurulum gerektirmeyen Claude giriş kapıs
 
 ### Konuşma Geçmişi
 
-Tüm sohbetleriniz sol panelde kaydedilir ve aranabilir. Geçmişe dönebilir, devam ettirebilir, paylaşabilirsiniz. Claude bir sohbete geri döndüğünüzde o konuşmanın bağlamından devam eder. Hafıza özelliği de sohbet ve Cowork arasında ortaktır (Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'ta varsayılan kapalı), bkz. [Memory](/wiki/yetenekler/memory/). Hafıza, CLAUDE.md gibi sizin yazdığınız bir talimat dosyası değildir.
+Tüm sohbetleriniz sol panelde kaydedilir ve aranabilir. Geçmişe dönebilir, devam ettirebilir, paylaşabilirsiniz. Claude bir sohbete geri döndüğünüzde o konuşmanın bağlamından devam eder. Hafıza özelliği de sohbet ve Cowork arasında ortaktır (Free, Pro, Max ve Ultra'da varsayılan açık, Team ve Enterprise'ta varsayılan kapalı), bkz. [Memory](/wiki/yetenekler/memory/). Hafıza, CLAUDE.md gibi sizin yazdığınız bir talimat dosyası değildir. Geçmişe ve hafızaya girmesini istemediğiniz bir konuşma için yeni sohbette sağ üstteki hayalet simgesiyle **geçici sohbet** açabilirsiniz, bkz. [Geçmiş ve Arama](/wiki/araclar/gecmis-ve-arama/).
 
 ### Dosya Yükleme
 
@@ -43,7 +43,7 @@ Bir konuşmaya doğrudan dosya ekleyebilirsiniz: PDF, Word, görsel, Excel, CSV 
 
 ### Web Araması
 
-Claude, ihtiyaç duyduğunda gerçek zamanlı olarak web'de arama yapar: güncel fiyatlar, haberler, şirket bilgileri, yeni çıkan yönetmelikler. Bu özellik gerektiğinde otomatik olarak devreye girer, sizin açmanıza gerek yoktur. Ayrıntı: [Web Arama](/wiki/araclar/web-arama/).
+Claude, ihtiyaç duyduğunda gerçek zamanlı olarak web'de arama yapar: güncel fiyatlar, haberler, şirket bilgileri, yeni çıkan yönetmelikler. Birleşik arayüzde gerektiğinde kendiliğinden devreye girer; klasik arayüzde "+" menüsündeki "Web search" ile açılır. Team ve Enterprise'ta önce yönetici kuruluş için açar. Ayrıntı: [Web Arama](/wiki/araclar/web-arama/).
 
 ### Görsel Anlama
 
@@ -51,11 +51,11 @@ Claude görselleri okur, analiz eder ve tarif eder. Ürün fotoğrafı, grafik, 
 
 ### Sesli Giriş
 
-Voice mode beta olarak tüm planlarda, mobilde, masaüstünde ve web'de var, ama Türkçeyi desteklemiyor. Türkçe konuşmak için cihazınızın dikte özelliği kullanılır. Ayrıntı: [Voice Mode](/wiki/araclar/voice-mode/).
+Voice mode beta olarak tüm planlarda, mobilde, masaüstünde ve web'de var; Türkçe desteği doğrulanmadı. Türkçe konuşmak için şimdilik cihazınızın dikte özelliğini kullanın. Ayrıntı: [Voice Mode](/wiki/araclar/voice-mode/).
 
 ### Artifacts
 
-Claude sohbet penceresi içinde interaktif HTML sayfaları, veri görselleştirmeleri, kod önizlemeleri üretir. Bu "artifacts" satır içinde render edilir, kopyalanabilir veya indirilebilir. Claude Design, Slides ve Docs ürünleri ise ücretli planlarda (Pro, Max, Ultra, Team, Enterprise) beta olarak sunulur; Free planda yoktur. Free'de sohbette dosya ve artifact üretimi sürer, yalnız bu üç ürünün düzenleme arayüzü gelmez.
+Claude sohbet penceresi içinde interaktif HTML sayfaları, veri görselleştirmeleri, kod önizlemeleri üretir. Bu "artifacts" satır içinde render edilir, kopyalanabilir veya indirilebilir. Claude Design, Slides ve Docs ise 8 Ekim 2026'dan beri betadan çıktı ve Free dahil tüm planlarda açık; konuşmanın içinden tasarım, sunum ve belgeyi doğrudan düzenlersiniz. Ayrıntı: [Claude Design](/wiki/yetenekler/claude-design/).
 
 ### Projects
 

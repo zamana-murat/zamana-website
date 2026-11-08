@@ -1,6 +1,6 @@
 ---
 title: "Kalıcı Talimat ve Hafıza Yerleri: Hangisi Nerede Geçerli?"
-seoTitle: "Claude'da Kalıcı Talimat ve Hafıza Yerleri: Karşılaştırma Tablosu"
+seoTitle: "Claude'da Kalıcı Talimat ve Hafıza: Karşılaştırma"
 description: "Claude'a kalıcı talimat nereye yazılır? Profil talimatı, proje, klasörde CLAUDE.md, yerleşik hafıza: hangisi nerede geçerli, kim yönetir, karşılaştırma."
 tags:
   - claude-md
@@ -24,6 +24,7 @@ Bölümün diğer sayfaları buraya bağlanır. Prompting sayfalarında geçen "
 | Her sohbette geçerli olsun (dil, ton, rolünüz, "taslağı göster, gönderme" gibi kurallar) | **Profil talimatı** (Ayarlar > General > "Instructions for Claude") |
 | Yalnız bir müşteri, bir iş ya da bir konu için geçerli olsun | **Proje** (talimat ve dosyalar) |
 | Masaüstünde bir klasörle, dosyalarla çalışıyorsunuz (Cowork) | **O klasörün içine CLAUDE.md** ve kritik kuralların kısa sürümünü profil talimatına |
+| Belirli bir iş türünde her seferinde aynı yöntem ya da biçim (haftalık rapor, teklif iskeleti) | **Skill**: Claude ilgili gördüğünde yükler, her mesaja sabit uygulanmaz. Sabit ton profil talimatına. Ayrıntı: [Skills](/wiki/yetenekler/skills/) |
 | Sadece bu konuşma için | **Sohbete yazın**, kalıcı yere koymayın |
 | Şirketin tamamı için ortak kural | **Takım kural seti**: [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) |
 | Terminalde kod yazıyorsunuz (Claude Code) | Aşağıdaki [Geliştiriciler için](#geliştiriciler-için-claude-codeda-claudemd) kutusu |
@@ -39,7 +40,7 @@ Bölümün diğer sayfaları buraya bağlanır. Prompting sayfalarında geçen "
 | **Profil talimatı** ("Instructions for Claude") | Ayarlar > General | Tüm sohbetlerde, tüm planlarda (Free dahil); Cowork'te de aynı ayar (eski "Global instructions" buna birleşti); geçici sohbette de uygulanır | Siz | Sabit ton, dil ve değişmez kurallar için en geniş yer |
 | **Proje talimatı ve dosyaları** | Projects içinde | Yalnız o projedeki sohbetlerde; her sohbette sabit yüklü arka plan bilgisi olur. Free'de en çok 5 proje | Siz | Müşteriye veya konuya özgü bilgi. Ayrıntı: [Projects](/wiki/araclar/projects/) |
 | **Proje hafızası** | Ayarlar > Memory açıksa kendiliğinden oluşur | Yalnız o projede; her projenin ayrı hafıza alanı ve özeti var, proje dışı sohbetlerden ayrıdır | Claude biriktirir; siz sohbette söyleyerek ya da düzenleyerek değiştirirsiniz | Yeni proje yapısında ortak hafıza daha da öne çıkıyor: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/) |
-| **Klasörde CLAUDE.md** | Çalıştığınız klasörün içine düz metin dosyası | Yerel Cowork oturumunda (Claude Desktop, klasör bağlı) ve Claude Code'da okunur. Sohbette okunmaz. Bulut Cowork oturumunda okunduğu belgelenmemiş | Siz (Claude oturumda güncelleyebilir) | Cowork yardım sayfaları buna "klasör talimatı" der; dosya adı ve sınırı belgelenmemiş, o yüzden testle doğrulayın (aşağıda) |
+| **Klasörde CLAUDE.md** | Çalıştığınız klasörün içine düz metin dosyası | Yerel Cowork oturumunda (Claude Desktop, klasör bağlı) ve Claude Code'da okunur. Sohbette okunmaz. Bulut Cowork oturumunda okunduğu belgelenmemiş | Siz (Claude oturumda güncelleyebilir) | Cowork belgeleri "klasör talimatı" der, dosyayı adıyla anmaz; ikisinin aynı şey olduğu ve sınırı belgelenmemiş, o yüzden testle doğrulayın (aşağıda). Klasörde CLAUDE.md yoksa Claude Desktop AGENTS.md dosyasını okur |
 | **Cowork projesi** | Cowork içinde | Yalnız bilgisayarınızda; klasörler, talimat, bağlantılar ve kendi proje hafızası var | Siz | claude.ai projesi değildir, paylaşılmaz. [Cowork Modu](/wiki/araclar/cowork-modu/) |
 | **Yerleşik hafıza** | Ayarlar > Memory ("Generate memory from chats") | Sohbette ve bulutta çalışan Cowork görevlerinde (görev başına "+" menüsünden kapatılır). Bilgisayarda yerel çalışan Cowork oturumları sohbet hafızasını kullanmaz. Geçici sohbette kullanılmaz | Claude biriktirir; siz düzenler | Free, Pro, Max ve Ultra'da varsayılan açık; Team ve Enterprise'ta yönetici açar, üye ayrıca onaylar. Ayrıntı: [Memory](/wiki/yetenekler/memory/) |
 | **Kuruluş talimatı** | Yönetici, cihaz yönetimi veya yerel yapılandırma dosyasıyla | Sohbet, Cowork ve Code oturumlarının hepsinde sistem istemine eklenir | Kuruluş yöneticisi | En çok 3.000 karakter. Model için bir rehberdir, zorlayıcı değildir: kritik kuralı tek başına buna emanet etmeyin |

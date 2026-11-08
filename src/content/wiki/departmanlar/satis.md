@@ -1,13 +1,13 @@
 ---
 title: "Satış ve İş Geliştirme: Claude Uygulamaları"
-seoTitle: "Satışta Claude: Teklif, Takip E-postası ve Anlaşma Teşhisi"
+seoTitle: "Satışta Claude: Teklif, Takip ve Anlaşma Teşhisi"
 description: "Satış yöneticisi için Claude: teklif, müşteri iletişimi, pipeline analizi, tender yanıtları. Gerçek iş akışları ve prompt kütüphanesi önerileri."
 tags:
   - departmanlar
   - satis
   - is-gelistirme
   - crm
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 Bu sayfa, satış ekibinin Claude ile en çok zaman kazandığı yerleri ve bu departmanda kurulan tipik iş akışlarını anlatır. Salesforce kullanıyorsanız ilgili eklenti için Skills bölümündeki nota bakın.
@@ -110,7 +110,8 @@ Bu departman için önerilen prompt koleksiyonu:
 2. **Gmail / Outlook**: müşteri yazışmaları
 3. **Google Workspace / Microsoft 365**: teklif belgeleri
 4. (opsiyonel) **Slack**: ekip iç iletişimi
-5. (opsiyonel) **LinkedIn** entegrasyonu: prospect araştırma (zamanla eklenecek)
+5. (opsiyonel) **LinkedIn**: prospect araştırması. Resmi connector dizininde hazır bir bağlantı olup olmadığını kurmadan önce kontrol edin; yoksa profil ve şirket bilgisini kendiniz yapıştırın
+6. (opsiyonel) **Claude Dashboards** (beta, ücretli planlar; Enterprise'ta yönetici açar): bağlı Salesforce verisinden sade bir soruyla canlı pipeline panosu. Yönetime giden rakamı CRM'de doğrulayın ([Claude Dashboards](/wiki/yetenekler/claude-design/#claude-dashboards-ve-claude-motion-beta))
 
 ## İş Akışı Yeniden Tasarımı Adayları
 

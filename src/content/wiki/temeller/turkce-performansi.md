@@ -1,5 +1,5 @@
 ---
-title: "Claude Türkçe Performansı: Dört Registerda Derin Analiz"
+title: "Claude Türkçe Performansı: Dört Register'da Derin Analiz"
 seoTitle: "Claude Türkçe Biliyor mu? Dört Kayıtta Örneklerle"
 description: Claude Türkçeyi nasıl yazıyor? Dört register (resmi yazışma, teknik terminoloji, hukuki dil, yaratıcı içerik), yan yana örnekler, güçlü ve zayıf yönler.
 tags:
@@ -7,7 +7,7 @@ tags:
   - turkce
   - dil-kalitesi
   - yazim
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-08"
 ---
 
 "Claude Türkçeyi ne kadar iyi konuşur?" soyut bir sorudur. Bu sayfa somut cevap verir: dört register (dilsel kayıt) için Claude'un tipik çıktılarını ve her birindeki güçlü ve zayıf yönleri gösterir. Registerlar: resmi yazışma, teknik terminoloji, hukuki dil ve yaratıcı içerik.
@@ -201,7 +201,7 @@ Dört register'ın hepsinde görülen güçlü ve zayıf yönler:
 
 ## Türkçe Kalitesini CLAUDE.md İle Artırmak
 
-En büyük kalite sıçraması CLAUDE.md'nin "Ton" bölümünde yapılır. Minimum içerik:
+En büyük kalite sıçraması kalıcı talimatın "Ton" bölümünde yapılır. Cowork'te klasördeki CLAUDE.md'ye, sıradan sohbette ise profil talimatına (Settings > General > "Instructions for Claude") ya da proje talimatına yazın; sohbet CLAUDE.md okumaz ([Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/)). Minimum içerik:
 
 ```markdown
 ## Ton
@@ -254,7 +254,7 @@ Hassas belgelerde (kimlik, sağlık, personel kaydı) önce [Gizlilik ve KVKK](/
 
 ## Yazılı Türkçe ile Sesli Mod Aynı Şey Değil
 
-Bu sayfa **yazılı** Türkçeyi anlatır. Claude'un sesli modu (Voice mode, beta) için yardım sayfasındaki desteklenen diller listesinde Türkçe görünmüyor; sesli modu Türkçe iş akışlarında kullanmadan önce güncel dil listesini kontrol edin ([Voice Mode](/wiki/araclar/voice-mode/)).
+Bu sayfa **yazılı** Türkçeyi anlatır. Claude'un sesli modu (Voice mode, beta) Türkçe desteği doğrulanmadı (yardım sayfası tam dil listesi vermiyor, İngilizce dışı dilleri beta sayıyor); sesli modu Türkçe iş akışlarında kullanmadan önce uygulamadaki dil menüsünü kontrol edin ([Voice Mode](/wiki/araclar/voice-mode/)).
 
 ## ChatGPT ile Türkçe Karşılaştırması
 
