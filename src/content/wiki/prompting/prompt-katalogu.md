@@ -6,7 +6,7 @@ tags:
   - prompting
   - sablon
   - katalog
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Çoğu profesyonel her gün benzer 5-10 işle uğraşır.** Toplantı özeti, müşteri e-postası, rapor taslağı, veri analizi, hızlı araştırma, bunların her biri için **kullanıma hazır prompt şablonu** olması, her seferinde yeniden düşünmekten kurtarır.
@@ -23,7 +23,7 @@ Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın
 
 İterasyon süreci için [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfasına bakın.
 
-**Zor analiz ve karar şablonlarında** (D2, D3, E1, H2, H5) yalnız promptu değil düşünme derinliğini de ayarlayın: Pro ve üstü planlarda model menüsünden Effort'u yükseltin. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
+**Zor analiz ve karar şablonlarında** (D2, D3, E1, H2, H5) yalnız promptu değil düşünme derinliğini de ayarlayın: Pro ve üstü planlarda model menüsünden [Effort](/wiki/sozluk/#effort)'u yükseltin. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
 
 ---
 

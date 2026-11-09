@@ -1,5 +1,6 @@
 ---
 title: "Kullanım Limitleri ve Usage Credits"
+seoTitle: "Claude Kullanım Limitleri: 5 Saat ve Haftalık Sınır"
 description: "Claude'un 5 saatlik kayan pencere ve haftalık limiti nasıl işler, limite takılınca ne yapılır, usage credits nedir, Fable'a hangi planda erişilir."
 tags:
   - temeller

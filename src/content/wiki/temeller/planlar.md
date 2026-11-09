@@ -1,7 +1,7 @@
 ---
 title: "Claude Planları ve Fiyatları: Free, Pro, Max, Ultra, Team, Enterprise"
-seoTitle: "Claude Planları 2026: Pro, Max, Ultra, Team"
-description: "Claude paketleri ve fiyatları 2026: Free, Pro, Max, Ultra, Team ve Enterprise farkları, Türkiye'de KDV ve kurla TL karşılığı, hangi plan kime uygun."
+seoTitle: "Claude Fiyatları 2026: Pro, Max, Ultra, Team (TL)"
+description: "Claude fiyatları 2026: Free ücretsiz, Pro 20 USD/ay, Max 100, Ultra 200 USD. Türkiye'de %20 KDV ve kurla TL karşılığı, Team ve Enterprise farkları."
 tags:
   - temeller
   - planlar
@@ -9,7 +9,7 @@ tags:
   - pro
   - team
   - enterprise
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Claude'un altı ana planı vardır: Free, Pro, Max, Ultra, Team ve Enterprise. Plan seçimi sadece fiyatla ilgili değildir, hangi özelliklerin kullanılabilir olduğunu, özellikle **hangi modellere erişildiğini, connector'ları, paylaşılan projeleri ve kurumsal uyum araçlarını** doğrudan belirler.
@@ -35,6 +35,8 @@ Anthropic fiyatları USD ile gösterir. Türkiye'den ödeme yapan biri için pra
 4. **Mobil uygulama mağazası:** App Store ve Google Play'de TL fiyat doğrudan gösterilir ve web fiyatından farklıdır (Ağustos 2026'da Pro için yaklaşık 999,99 TL/ay bildirilmişti, ikincil kaynak). Fiyat farkı mağaza komisyonundan kaynaklanır; en şeffaf yol web'den almaktır.
 
 Şirket olarak alıyorsanız KDV mahsubu ve stopaj sorusu için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına, kesin sonuç için mali müşavirinize bakın.
+
+Ekip için alıyorsanız planı almak işin yarısıdır; ekibin onu nasıl kullanacağını da planlamak gerekir. Bunun için [kurumsal yapay zeka eğitimi programına](/programlar/kurumsal/) bakabilirsiniz. Ücretsiz seçenekleri ve indirim durumunu ayrı sayfada topladık: [Claude ücretsiz mi?](/wiki/temeller/claude-ucretsiz-mi/)
 
 **Sık karıştırılan iki isim:**
 
@@ -174,6 +176,8 @@ Fable'ın limitten nasıl düştüğü [Kullanım Limitleri](/wiki/temeller/kull
 | Ekibi Claude'a geçirmek, merkezi fatura ve paylaşılan proje istiyorum (2+ kişi) | **Claude Team Standard** (20–25 USD/koltuk) |
 | Bankacılık, sağlık, büyük üretici veya kamu | **Claude Enterprise** (20 USD/koltuk + kullanım) |
 | Henüz ciddi değilim, sadece deniyorum | **Claude Free** (sadece değerlendirme için) |
+
+Planı aldıktan sonra ilk adımlar için [İlk Kurulum](/wiki/temeller/ilk-kurulum/), Claude ile ChatGPT arasında kararsızsanız [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) sayfasına bakın.
 
 ![Claude plan merdiveni: Free denemek isteyene, Pro hafif bireysel kullanıma, Max ilk ay ve yoğun kullanıma, Ultra çok yoğun kullanıcıya, Team ekiplere, Enterprise regülasyona tabi kuruluşa](/images/wiki/temeller-planlar.svg)
 
@@ -329,6 +333,8 @@ Hangi planın size uygun olduğunu bulmak için sırayla:
 - [ ] Özel hesap yöneticisi
 
 Bağlam penceresi artık Enterprise'ı gerektiren bir neden değildir: yeni modellerde tüm ücretli planlarda 1M tokendir.
+
+Kararı etkileşimli olarak vermek isterseniz [Plan Seçici](/wiki/temeller/plan-secici/) aracı birkaç soruyla size uygun planı gösterir. Plan kararını yöneticiler için bir adım öncesine almak isterseniz, 3 saatlik [Yönetici AI Hazırlık](/programlar/ceo-brifing/) oturumu hangi rolde hangi plana ihtiyaç olduğunu netleştirir.
 
 ## Aylık API Kredisi
 

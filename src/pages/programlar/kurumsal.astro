@@ -1,19 +1,35 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="Kurumsal Program, 3 Aylık Claude Dönüşümü | Zamana"
-  description="6 çalışan, 100.000 TL + KDV / ay (minimum 3 ay). Şirket içi 6 Claude şampiyonu yetiştirme. Departman bazlı müfredat, sınırsız telefon desteği, KVKK rehberliği."
+  title="Kurumsal Yapay Zeka Eğitimi, Claude Programı | Zamana"
+  description="Kurumsal yapay zeka eğitimi: 6 çalışan, 3 ay, şirket içi Claude şampiyonları. 100.000 TL + KDV / ay (minimum 3 ay), departman müfredatı, telefon desteği, KVKK."
   ogImage="/og/programlar-kurumsal.png"
 >
 
+  <ProgramSchema
+    name="Kurumsal Yapay Zeka Eğitimi, Claude Programı"
+    description="Şirket içi 6 Claude şampiyonu yetiştiren 3 aylık kurumsal yapay zeka eğitimi. Departman bazlı müfredat, sınırsız telefon desteği, KVKK rehberliği."
+    url="https://zamana.com.tr/programlar/kurumsal/"
+    duration="P3M"
+    courseMode={['onsite', 'online']}
+    audience="Şirketler ve kurumsal ekipler"
+    offers={[
+      { name: '6 çalışan, aylık (minimum 3 ay)', price: 100000 },
+      { name: '12 çalışan, aylık (minimum 3 ay)', price: 185000 },
+      { name: '18 çalışan, aylık (minimum 3 ay)', price: 265000 },
+      { name: '24 çalışan, aylık (minimum 3 ay)', price: 350000 },
+    ]}
+  />
+
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Kurumsal Program</span>
+      <span class="eyebrow">Kurumsal Yapay Zeka Eğitimi</span>
       <h1>6 çalışan. 3 ay. Şirket içi dönüşüm.</h1>
       <p class="lead">
-        AI'ı şirketinize getirmek için tek bir kurs yetmez. Çekirdek bir grup gerek, birbirini öğreten,
+        Kurumsal yapay zeka eğitiminde tek bir kurs yetmez. Çekirdek bir grup gerek, birbirini öğreten,
         organik olarak yayan 6 Claude şampiyonu.
       </p>
       <div class="hero-meta">
@@ -25,6 +41,9 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=kurumsal" class="btn btn--primary btn--lg">Keşif Görüşmesi Talep Et</a>
         <a href="/programlar/karsilastirma/" class="btn btn--secondary btn--lg">Bireysel ile Karşılaştır</a>
       </div>
+      <p class="text-muted" style="margin-top: var(--s-3); font-size: 0.95rem;">
+        Ekibiniz hazır mı? <a href="/hazirlik-degerlendirmesi/" style="text-decoration: underline;">3 dakikalık Hazırlık Değerlendirmesi</a>
+      </p>
     </div>
   </section>
 
@@ -263,6 +282,17 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=kurumsal" class="btn btn--primary btn--lg">Keşif Görüşmesi Talep Et</a>
         <a href="/programlar/karsilastirma/" class="btn btn--secondary btn--lg">Bireysel ile Karşılaştır</a>
       </div>
+      <p class="text-muted" style="margin-top: var(--s-3); font-size: 0.95rem;">
+        Ekibiniz hazır mı? <a href="/hazirlik-degerlendirmesi/">3 dakikalık Hazırlık Değerlendirmesi</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

@@ -8,7 +8,7 @@ tags:
   - kvkk
   - ttk
   - sozlesme
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Hukuk, Claude'un büyük zaman tasarrufu sağlayabildiği ama en katı disiplini gerektiren departmandır.
@@ -101,7 +101,7 @@ Claude, kanuna uygun bir ilk taslak yanıt üretir; **hukuk, göndermeden önce 
 **Skills:**
 - `pdf`: sözleşmelerin çoğu PDF olarak gelir
 - `docx`: ilk taslaklar ve memolar
-- Kendi dış ticaret skill'iniz: ihracat odaklı şirketler için (bkz: [İhracat](/wiki/departmanlar/ihracat/))
+- Kendi dış ticaret [skill](/wiki/sozluk/#skill)'iniz: ihracat odaklı şirketler için (bkz: [İhracat](/wiki/departmanlar/ihracat/))
 - `legal:review-contract`: sözleşme inceleme ve redline
 - `legal:triage-nda`: hızlı NDA sınıflandırma
 
@@ -192,6 +192,8 @@ Hukuk ekibinin sık ihtiyacı: "Bu konuyu daha önce nasıl ele almıştık?" Bu
 5. **Yanıtlayın ve kapatın.** Connector'larla yanıtı taslaklayın, ticket'ı kapatın, kararı ve kaynağı not düşün.
 
 > **Claude hazırlığı yaptı, ama karar sizin.** Brifing rutini sıralamayı ve özeti üstlenir; yorum, doğrulama ve nihai hukuki yargı avukatta kalır. Bu, [Sycophancy](/wiki/temeller/sinirlamalar/) riskine karşı da kalkandır: Claude'a sonucu onaylatmayın, kaynağı kendiniz okuyun.
+
+Sözleşme taslağı için [Claude ile Sözleşme Taslağı](/wiki/gorevler/claude-ile-sozlesme-taslagi/), uzun PDF'ler için [Claude ile PDF](/wiki/gorevler/claude-ile-pdf/) rehberine bakın.
 
 ## İlgili Sayfalar
 

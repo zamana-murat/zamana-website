@@ -1,10 +1,11 @@
 ---
 title: "Temeller: Claude'u Anlamak İçin Başlangıç"
+seoTitle: "Claude'u Anlamak: Temel Kavramlar ve Başlangıç"
 description: "Claude'un ne olduğu, hangi modelin ne zaman kullanıldığı, fiyat planları, sınırları ve Türkiye'de KVKK kapsamında nasıl uyumlu kullanıldığı."
 tags:
   - temeller
   - giris
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Claude'u ciddi şekilde kullanmaya başlamadan önce anlaşılması gereken temel kavramlar. İlk altı kart, Claude'la çalışmaya başlayan bir profesyonelin doğal olarak sorduğu altı sorunun cevabını verir; sonraki kartlar kurulum, ilk hafta ve itirazlar gibi pratik konulardır; "Şirkette Uygulama" başlığı ise ekip ve şirket ölçeğine geçenler içindir. İlk altı kartı sırasıyla okursanız bir saatten kısa sürede temel kavrayışa ulaşırsınız.
@@ -152,6 +153,7 @@ Bu altı cümle bu bölümün özetidir. Sayfaları okumadan önce buraya döneb
 
 - [**Anthropic ve Tarihçe**](/wiki/temeller/anthropic-ve-tarihce/): Claude'u yapan şirket, model tarihçesi
 - [**Claude vs Gemini**](/wiki/temeller/claude-vs-gemini/) ve [**Claude vs Copilot**](/wiki/temeller/claude-vs-copilot/): Google ve Microsoft karşılaştırmaları
+- [**Hangi Yapay Zeka?**](/wiki/temeller/hangi-yapay-zeka/) karar rehberi, [**Claude vs Perplexity**](/wiki/temeller/claude-vs-perplexity/) ve [**Claude vs DeepSeek**](/wiki/temeller/claude-vs-deepseek/): diğer araçlarla karşılaştırma
 - [**Kullanım Limitleri**](/wiki/temeller/kullanim-limitleri/): Kotanın nasıl işlediği
 - [**Prompt ve Token**](/wiki/temeller/prompt-ve-token/): İki temel kavram, sade anlatım
 - [**Türkiye'de Claude**](/wiki/temeller/turkiyede-claude/): Erişim, satın alma ve destek

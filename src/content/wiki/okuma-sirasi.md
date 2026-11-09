@@ -1,5 +1,6 @@
 ---
 title: Önerilen Okuma Sıralaması
+seoTitle: "Claude Öğrenme Sırası: Wiki Okuma Rehberi"
 description: "Wiki sayfalarının baştan sona okunması için önerilen sıra. Hangi noktada Claude Chat'e, hangi noktada Cowork'e başlanabilir?"
 tags:
   - okuma-sirasi

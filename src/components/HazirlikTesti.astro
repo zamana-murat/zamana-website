@@ -1,0 +1,317 @@
+---
+// Claude hazırlık değerlendirmesi: 10 soru, istemci tarafı, vanilla JS.
+// Cevaplar hiçbir yere gönderilmez ve saklanmaz.
+const sorular = [
+  {
+    alan: 'Kullanım durumu',
+    soru: 'Claude ile hangi işleri hızlandırmak istediğiniz belli mi?',
+    secenekler: [
+      'Henüz belirlenmedi',
+      'Genel fikirler var, öncelik sırası yok',
+      'En az 2-3 somut iş süreci belli',
+    ],
+  },
+  {
+    alan: 'Yönetim desteği',
+    soru: 'Üst yönetim Claude kullanımına nasıl bakıyor?',
+    secenekler: [
+      'İlgisiz ya da şüpheci',
+      'İlgili, ama karar ve bütçe henüz yok',
+      'Destekliyor; sponsor ve bütçe var',
+    ],
+  },
+  {
+    alan: 'Veri ve KVKK politikası',
+    soru: 'Hangi verinin Claude\'a girip hangisinin girmeyeceği belli mi?',
+    secenekler: [
+      'Politika yok, herkes kendi bildiğini yapıyor',
+      'Sözlü kurallar ya da taslak var',
+      'Yazılı politika var ve ekip biliyor',
+    ],
+  },
+  {
+    alan: 'Pilot ekip',
+    soru: 'İlk denemeyi yapacak bir ekip ya da grup var mı?',
+    secenekler: [
+      'Yok',
+      'Gönüllüler var, ama resmi bir grup değil',
+      'Tanımlı pilot ekip ve sorumlusu var',
+    ],
+  },
+  {
+    alan: 'Ölçüm',
+    soru: 'Claude\'un işe etkisini nasıl ölçeceğiniz belli mi?',
+    secenekler: [
+      'Ölçmeyi düşünmedik',
+      'Genel izlenimle değerlendireceğiz',
+      'Başlangıç süresi/hata oranı ölçüldü, hedef var',
+    ],
+  },
+  {
+    alan: 'Araç erişimi',
+    soru: 'Çalışanlar Claude\'a şirket onaylı hesapla erişebiliyor mu?',
+    secenekler: [
+      'Erişim yok ya da engelli',
+      'Bazıları kişisel hesapla kullanıyor',
+      'Şirket onaylı hesap ve plan var',
+    ],
+  },
+  {
+    alan: 'Eğitim',
+    soru: 'Ekibin Claude\'u iş için kullanmayı öğrenmesi nasıl olacak?',
+    secenekler: [
+      'Planlanmadı',
+      'Herkes kendi kendine öğrenecek',
+      'Yapılandırılmış bir eğitim ya da program planlandı',
+    ],
+  },
+  {
+    alan: 'Süreç dokümantasyonu',
+    soru: 'Hızlandırmak istediğiniz işlerin adımları yazılı mı?',
+    secenekler: [
+      'Çoğu bilgi kişilerin kafasında',
+      'Kısmen yazılı',
+      'Ana süreçler yazılı ve güncel',
+    ],
+  },
+  {
+    alan: 'Sorumluluk',
+    soru: 'Claude kullanımından sorumlu, adı konmuş biri var mı?',
+    secenekler: [
+      'Kimse sorumlu değil',
+      'İlgilenen biri var, ama görevi değil',
+      'Görevlendirilmiş sorumlu (şampiyon) var',
+    ],
+  },
+  {
+    alan: 'Çıktı kontrolü',
+    soru: 'Claude çıktısının işe girmeden önce kontrolü nasıl yapılıyor?',
+    secenekler: [
+      'Tanımlı bir kontrol yok',
+      'Herkes kendi inisiyatifiyle bakıyor',
+      'İnsan onayı kuralı tanımlı',
+    ],
+  },
+];
+---
+
+<section class="ht" id="hazirlik-testi" aria-labelledby="ht-baslik">
+  <h2 id="ht-baslik" class="ht__title">Değerlendirme: 10 soru, yaklaşık 3 dakika</h2>
+  <p class="ht__lead">
+    Her soruda şu an gerçekte olana en yakın cevabı seçin, olmasını istediğinize değil. Dürüst cevap, işe yarar sonuç verir.
+  </p>
+
+  <form class="ht__form" id="ht-form" autocomplete="off" novalidate>
+    <p class="ht__progress" id="ht-ilerleme" aria-live="polite">0 / 10 cevaplandı</p>
+
+    {sorular.map((s, qi) => (
+      <fieldset class="ht__q" data-alan={s.alan}>
+        <legend><span class="ht__no">{qi + 1}.</span> {s.soru}</legend>
+        <div class="ht__opts">
+          {s.secenekler.map((t, oi) => (
+            <label class="ht__opt" for={`ht-q${qi}-${oi}`}>
+              <input type="radio" id={`ht-q${qi}-${oi}`} name={`ht-q${qi}`} value={oi} />
+              <span>{t}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+    ))}
+
+    <div class="ht__actions">
+      <button type="submit" class="btn btn--primary btn--lg">Sonucu göster</button>
+      <button type="reset" class="btn btn--secondary btn--lg" id="ht-sifirla">Sıfırla</button>
+    </div>
+    <p class="ht__error" id="ht-hata" role="alert" hidden></p>
+  </form>
+
+  <div class="ht__result" id="ht-sonuc" role="region" aria-live="polite" aria-label="Değerlendirme sonucu" tabindex="-1" hidden>
+    <div class="ht-band" data-band="baslangic" hidden>
+      <p class="ht-band__eyebrow">Sonuç: Başlangıç</p>
+      <h3>Önce zemini hazırlayın</h3>
+      <p>
+        Claude'u hemen satın almak ya da ekibe yaymak için erken. Bu kötü bir haber değil: hazırlık eksikleri çoğunlukla ucuz ve hızlı kapanır. Önce kullanım durumunu netleştirin, veri kuralını yazın ve üst yönetimle aynı sayfaya gelin.
+      </p>
+      <ul>
+        <li><a href="/wiki/temeller/ilk-7-gun/">İlk 7 Gün</a>: Claude ile ilk haftada ne yapılır, ücretsiz ve kendi başınıza.</li>
+        <li><a href="/wiki/temeller/sirket-ici-politika/">Şirket İçi Politika</a>: hangi veri girer, hangisi girmez; yazılı kuralın ilk taslağı.</li>
+        <li><a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>: üst yönetimin kararını hızlandırmak istiyorsanız, 3 saatlik tek oturum, 15.000 TL + KDV. Bu adım şart değildir; yukarıdaki iki ücretsiz kaynakla da başlayabilirsiniz.</li>
+      </ul>
+      <p><a class="btn btn--primary" href="/iletisim/?program=ceo-brifing">Görüşme talep et</a></p>
+    </div>
+
+    <div class="ht-band" data-band="orta" hidden>
+      <p class="ht-band__eyebrow">Sonuç: Gelişen</p>
+      <h3>Pilotu başlatmaya yakınsınız</h3>
+      <p>
+        Birçok temel parça yerinde, birkaç boşluk var. Bu aşamada en çok işe yarayan şey, küçük ve ölçülen bir pilot yapmak ve boş kalan alanları pilot sırasında kapatmaktır.
+      </p>
+      <ul>
+        <li><a href="/wiki/temeller/pilot-ve-yayginlastirma/">Pilot ve Yaygınlaştırma</a>: önce küçük bir grup, sonra yayma.</li>
+        <li><a href="/programlar/bireysel/">Bireysel Program</a>: tek bir kişinin (örneğin pilot sorumlusunun) hızlı yetkinlik kazanması için, 3 hafta + 3 ay destek, 40.000 TL + KDV.</li>
+        <li><a href="/programlar/kurumsal/">Kurumsal Program</a>: ekip genelinde süreklilik için, aylık 100.000 TL + KDV, en az 3 ay, 6 çalışan.</li>
+      </ul>
+      <p><a class="btn btn--primary" href="/iletisim/?program=kurumsal">Görüşme talep et</a></p>
+    </div>
+
+    <div class="ht-band" data-band="ileri" hidden>
+      <p class="ht-band__eyebrow">Sonuç: İleri</p>
+      <h3>Ölçeklemeye hazırsınız</h3>
+      <p>
+        Hedef, politika, sahiplik ve ölçüm büyük ölçüde yerinde. Bundan sonraki risk teknik değil, alışkanlık riskidir: kullanım bir ekipte parlayıp diğerinde sönebilir. Süreklilik ve iç şampiyon yapısı bu aşamanın asıl işidir.
+      </p>
+      <ul>
+        <li><a href="/programlar/kurumsal/">Kurumsal Program</a>: rol bazlı, gerçek iş üzerinden süreklilik; aylık 100.000 TL + KDV, en az 3 ay, 6 çalışan.</li>
+        <li><a href="/programlar/ai-sampiyonu/">AI Şampiyonu</a>: şirket içinde Claude'u yaygınlaştıracak kişiyi yetiştirmek için.</li>
+      </ul>
+      <p><a class="btn btn--primary" href="/iletisim/?program=kurumsal">Görüşme talep et</a></p>
+    </div>
+
+    <div class="ht-score" id="ht-puan"></div>
+    <p class="ht__privacy">Cevaplarınız hiçbir yere gönderilmez ve saklanmaz; sayfayı kapattığınızda silinir. Görüşme talep ederseniz bu sonucu bize iletmeniz gerekmez.</p>
+  </div>
+
+  <noscript>
+    <p class="ht__noscript">
+      Bu tarayıcıda JavaScript kapalı, bu yüzden test çalışmıyor. Aşağıdaki "Puan bantları" bölümü, sorulara kendi cevaplarınızı puanlayarak (ilk seçenek 0, ikinci 1, üçüncü 2 puan) sonucu elle bulmanızı sağlar.
+    </p>
+  </noscript>
+</section>
+
+<style>
+  .ht {
+    margin: 1.5rem 0;
+    padding: var(--s-4, 1.5rem);
+    background: var(--c-bg-subtle);
+    border: 1px solid var(--c-border-gold);
+    border-radius: var(--r-card);
+  }
+  .ht__title { margin-top: 0; }
+  .ht__lead { margin: 0 0 1rem; color: var(--c-text-muted); font-size: 0.95rem; }
+  .ht__progress { margin: 0 0 1rem; font-size: 0.85rem; color: var(--c-text-muted); font-weight: 700; }
+  .ht__q { border: 0; padding: 0; margin: 0 0 1.25rem; min-width: 0; }
+  .ht__q legend { font-weight: 700; color: var(--c-navy); padding: 0; margin-bottom: 0.45rem; line-height: 1.4; }
+  .ht__no { color: var(--c-gold-text); }
+  .ht__opts { display: grid; gap: 0.4rem; }
+  .ht__opt {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    min-height: 2.75rem;
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-input);
+    cursor: pointer;
+    font-size: 0.93rem;
+    line-height: 1.4;
+  }
+  .ht__opt input { margin-top: 0.2rem; accent-color: var(--c-navy); flex: none; }
+  .ht__opt:has(input:checked) { border-color: var(--c-gold-dark); box-shadow: var(--sh-soft); }
+  .ht__opt:has(input:focus-visible) { outline: 2px solid var(--c-gold); outline-offset: 1px; }
+  .ht__q.ht__q--eksik legend { color: #b3392b; }
+  .ht__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+  .ht__error { margin: 0.75rem 0 0; color: #b3392b; font-weight: 700; font-size: 0.9rem; }
+  .ht__result { margin-top: 1.5rem; scroll-margin-top: 5rem; }
+  .ht__result:focus { outline: none; }
+  .ht-band {
+    background: var(--c-white);
+    border: 1px solid var(--c-border-gold);
+    border-radius: var(--r-card);
+    padding: 1.1rem 1.25rem;
+    box-shadow: var(--sh-soft);
+  }
+  .ht-band__eyebrow { margin: 0; font-size: 0.8rem; font-weight: 700; color: var(--c-gold-text); text-transform: uppercase; letter-spacing: 0.04em; }
+  .ht-band h3 { margin: 0.2rem 0 0.5rem; color: var(--c-navy); }
+  .ht-band ul { padding-left: 1.2rem; }
+  .ht-band li { margin-bottom: 0.4rem; }
+  .ht-score { margin-top: 1rem; font-size: 0.92rem; }
+  .ht-score :global(strong) { color: var(--c-navy); }
+  .ht__privacy, .ht__noscript { font-size: 0.85rem; color: var(--c-text-muted); margin: 0.9rem 0 0; }
+</style>
+
+<script>
+  const ESIKLER = { baslangic: [0, 7], orta: [8, 14], ileri: [15, 20] };
+  const TOPLAM = 10;
+
+  const form = document.getElementById('ht-form') as HTMLFormElement | null;
+  const sonuc = document.getElementById('ht-sonuc');
+  const hata = document.getElementById('ht-hata');
+  const ilerleme = document.getElementById('ht-ilerleme');
+  const puanKutusu = document.getElementById('ht-puan');
+
+  function cevaplar() {
+    const liste = [];
+    for (let i = 0; i < TOPLAM; i++) {
+      const el = document.querySelector('input[name="ht-q' + i + '"]:checked') as HTMLInputElement | null;
+      liste.push(el ? parseInt(el.value, 10) : null);
+    }
+    return liste;
+  }
+
+  function ilerlemeGuncelle() {
+    const sayi = cevaplar().filter((v) => v !== null).length;
+    if (ilerleme) ilerleme.textContent = sayi + ' / ' + TOPLAM + ' cevaplandı';
+  }
+
+  function sifirla() {
+    if (sonuc) sonuc.hidden = true;
+    if (hata) { hata.hidden = true; hata.textContent = ''; }
+    document.querySelectorAll('.ht__q').forEach((q) => q.classList.remove('ht__q--eksik'));
+    document.querySelectorAll('.ht-band').forEach((b) => ((b as HTMLElement).hidden = true));
+    setTimeout(ilerlemeGuncelle, 0);
+  }
+
+  if (form) {
+    form.addEventListener('change', ilerlemeGuncelle);
+    form.addEventListener('reset', sifirla);
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const c = cevaplar();
+      const fieldsets = Array.from(document.querySelectorAll('.ht__q'));
+      let ilkEksik: Element | null = null;
+      let eksik = 0;
+      c.forEach((v, i) => {
+        const fs = fieldsets[i];
+        fs.classList.toggle('ht__q--eksik', v === null);
+        if (v === null) { eksik++; if (!ilkEksik) ilkEksik = fs; }
+      });
+      if (eksik > 0) {
+        if (hata) {
+          hata.hidden = false;
+          hata.textContent = eksik + ' soru cevapsız. Kırmızı işaretli soruları cevaplayın.';
+        }
+        if (ilkEksik) {
+          const ilkInput = (ilkEksik as Element).querySelector('input') as HTMLInputElement | null;
+          if (ilkInput) ilkInput.focus();
+        }
+        return;
+      }
+      if (hata) { hata.hidden = true; hata.textContent = ''; }
+
+      const puan = c.reduce((t, v) => t + (v || 0), 0);
+      const bant = puan <= ESIKLER.baslangic[1] ? 'baslangic' : puan <= ESIKLER.orta[1] ? 'orta' : 'ileri';
+      document.querySelectorAll('.ht-band').forEach((b) => {
+        (b as HTMLElement).hidden = (b as HTMLElement).dataset.band !== bant;
+      });
+
+      const zayif = fieldsets
+        .filter((fs, i) => c[i] === 0)
+        .map((fs) => (fs as HTMLElement).dataset.alan);
+      let html = '<p>Toplam puanınız: <strong>' + puan + ' / ' + (TOPLAM * 2) + '</strong>.</p>';
+      if (zayif.length > 0) {
+        html += '<p>Önce bakmanız gereken alanlar: <strong>' + zayif.join(', ') + '</strong>.</p>';
+      } else {
+        html += '<p>Hiçbir alanda en düşük cevabı seçmediniz.</p>';
+      }
+      if (puanKutusu) puanKutusu.innerHTML = html;
+
+      if (sonuc) {
+        sonuc.hidden = false;
+        sonuc.focus();
+        sonuc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+  ilerlemeGuncelle();
+</script>

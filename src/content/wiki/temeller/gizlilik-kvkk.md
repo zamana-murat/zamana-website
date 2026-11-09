@@ -1,5 +1,6 @@
 ---
 title: "Claude Gizlilik, Veri ve KVKK Uyumu"
+seoTitle: "Claude KVKK Uyumlu mu? Gizlilik ve Veri Güvenliği"
 description: "Claude ile çalışırken veri gizliliği, eğitim verisi politikaları, KVKK uyumluluğu, DPA ve Türkiye'deki kurumsal kullanım kuralları."
 tags:
   - temeller

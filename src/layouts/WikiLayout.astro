@@ -6,9 +6,11 @@ import WikiTabs from '../components/WikiTabs.astro';
 import WikiBreadcrumb from '../components/WikiBreadcrumb.astro';
 import WikiPrevNext from '../components/WikiPrevNext.astro';
 import RetainerCTA from '../components/RetainerCTA.astro';
+import type { RetainerVariant } from '../data/retainer-variants';
+import WikiTOC from '../components/WikiTOC.astro';
 import { findNav } from '../data/wiki-nav';
 import type { MarkdownHeading } from 'astro';
-import { composeTitle } from '../data/seo';
+import { composeTitle, ORG_REF, WIKI_SECTION_LABELS } from '../data/seo';
 
 interface Props {
   slug: string;
@@ -32,6 +34,29 @@ const {
 } = Astro.props;
 
 const { section, prev, next } = findNav(slug);
+
+// Contextual program CTA, picked from the page path (no frontmatter needed).
+const KURUMSAL_TEMELLER = new Set([
+  'planlar', 'kullanim-limitleri', 'takim-ve-admin', 'fatura-ve-kdv',
+  'pilot-ve-yayginlastirma', 'sirket-ici-politika',
+]);
+const DEPARTMAN_VARIANTS: Record<string, RetainerVariant> = {
+  'hukuk': 'hukuk',
+  'ihracat': 'ihracat',
+  'kamu': 'kamu',
+  'egitim-akademi': 'akademi',
+  'insan-kaynaklari': 'sampiyon',
+  'liderlik': 'yonetici',
+  'kobi': 'bireysel',
+};
+function ctaVariantFor(s: string): RetainerVariant {
+  const [group, page] = s.split('/');
+  if (group === 'temeller' && page && KURUMSAL_TEMELLER.has(page)) return 'kurumsal';
+  if (group === 'departmanlar' && page) return DEPARTMAN_VARIANTS[page] ?? 'kurumsal';
+  if (group === 'gorevler' && page) return 'bireysel';
+  return 'default';
+}
+const ctaVariant = ctaVariantFor(slug);
 
 // Format ISO date (2026-05-06) → Turkish display ("6 Mayıs 2026")
 const trMonths = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran',
@@ -57,21 +82,14 @@ const articleSchema = {
   headline: title,
   description: description || title,
   image: `${siteUrl}${ogImage}`,
-  datePublished: publishDate ? `${publishDate}T00:00:00+03:00` : undefined,
+  datePublished: (publishDate || modifiedDate) ? `${publishDate || modifiedDate}T00:00:00+03:00` : undefined,
   dateModified: modifiedDate ? `${modifiedDate}T00:00:00+03:00` : undefined,
   author: {
     '@type': 'Person',
     name: 'Murat Özsaygılı',
     url: `${siteUrl}/hakkinda/`,
   },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Zamana',
-    logo: {
-      '@type': 'ImageObject',
-      url: `${siteUrl}/images/zamana-logo.webp`,
-    },
-  },
+  publisher: ORG_REF,
   mainEntityOfPage: pageUrl,
   inLanguage: 'tr-TR',
 };
@@ -81,8 +99,11 @@ const breadcrumbItems = [
   { name: 'Anasayfa', url: `${siteUrl}/` },
   { name: 'Wiki', url: `${siteUrl}/wiki/` },
 ];
+const fallbackSection = !section && slug.includes('/') ? slug.split('/')[0] : '';
 if (section && slug && slug !== section.landingSlug) {
   breadcrumbItems.push({ name: section.label, url: `${siteUrl}/wiki/${section.landingSlug}/` });
+} else if (fallbackSection && WIKI_SECTION_LABELS[fallbackSection]) {
+  breadcrumbItems.push({ name: WIKI_SECTION_LABELS[fallbackSection], url: `${siteUrl}/wiki/${fallbackSection}/` });
 }
 if (slug) {
   breadcrumbItems.push({ name: title, url: pageUrl });
@@ -100,10 +121,11 @@ const breadcrumbSchema = {
 ---
 
 <Layout
-  title={composeTitle(title, ' | Zamana Wiki', seoTitle)}
+  title={composeTitle(title, ' | Zamana', seoTitle)}
   description={description || title}
   ogImage={ogImage}
-  publishDate={publishDate}
+  ogType="article"
+  publishDate={publishDate || modifiedDate}
   modifiedDate={modifiedDate}
   skipAutoBreadcrumb={true}
 >
@@ -119,19 +141,21 @@ const breadcrumbSchema = {
       {slug && <WikiBreadcrumb slug={slug} title={title} />}
       <header class="wiki-article__header">
         <h1>{title}</h1>
+        <p class="wiki-byline">
+          <span>Yazan: <a href="/hakkinda/" rel="author">Murat Özsaygılı</a></span>
+          {lastUpdatedDisplay && (
+            <span>Son güncelleme: <time datetime={modifiedDate}>{lastUpdatedDisplay}</time></span>
+          )}
+        </p>
       </header>
+
+      <WikiTOC headings={headings} />
 
       <div class="wiki-prose" data-pagefind-body>
         <slot />
       </div>
 
-      {lastUpdatedDisplay && (
-        <p class="wiki-last-updated">
-          Son güncelleme: <time datetime={modifiedDate}>{lastUpdatedDisplay}</time>
-        </p>
-      )}
-
-      <RetainerCTA />
+      <RetainerCTA variant={ctaVariant} />
 
       <WikiPrevNext prev={prev} next={next} />
     </article>
@@ -168,12 +192,29 @@ const breadcrumbSchema = {
     line-height: 1.6;
     margin: 0;
   }
-  .wiki-last-updated {
+  .wiki-byline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.6rem;
+    margin: 0.25rem 0 0;
     color: var(--c-text-muted);
     font-size: 0.875rem;
-    margin: 2.5rem 0 0;
-    padding-top: 1rem;
-    border-top: 1px solid var(--c-border, #e5e7eb);
+  }
+  .wiki-byline span + span::before {
+    content: '\00B7';
+    margin-right: 0.6rem;
+    color: var(--c-gold-dark);
+    font-weight: 700;
+  }
+  .wiki-byline a {
+    color: var(--c-navy);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .wiki-byline a:hover {
+    color: var(--c-gold-text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   @media (max-width: 960px) {

@@ -6,7 +6,7 @@ tags:
   - departmanlar
   - giris
   - rol-bazli
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Claude her departmanda farklı çalışır. **Aynı araç, farklı rollerde farklı değer üretir**, çünkü iş akışları farklı, çıktılar farklı, hukuki hassasiyetler farklı.
@@ -134,6 +134,7 @@ Bazı sektörlerin işi departman sınırlarına sığmaz. Bunlar için ayrı sa
 - [**Sağlık**](/wiki/departmanlar/saglik/): Hassas sektör, idari ve eğitsel destek
 - [**Kamu Kurumları**](/wiki/departmanlar/kamu/): Resmi yazı, mevzuat özeti, vatandaş başvurusu; 2019/12 Genelgesi ve veri sınırı
 - [**Finansal Hizmetler**](/wiki/departmanlar/finansal-hizmetler/): Banka, sigorta, aracı kurum, faktoring; BDDK, SPK, MASAK çerçevesi
+- [**Muhasebeciler ve SMMM'ler**](/wiki/departmanlar/muhasebe-smmm/): Muhasebe ve mali müşavirlik işleri için Claude iş akışları
 
 ## Nasıl Ölçülür?
 

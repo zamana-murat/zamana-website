@@ -1,16 +1,32 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="İhracatçılar için Claude, Teklif ve Yazışma Eğitimi | Zamana"
-  description="İhracat ekipleri için Claude: teklif, proforma, yabancı dilde yazışma, pazar araştırması, belge kontrolü. Tek kişi 45.000 TL + KDV, ekip paketi, 3 ay destek."
+  title="İhracatçılar için Yapay Zeka Eğitimi, Claude | Zamana"
+  description="İhracatçılar için yapay zeka eğitimi: teklif, proforma, yabancı dilde yazışma, belge kontrolü. Tek kişi 45.000 TL + KDV, ekip paketi, 3 ay destek."
   ogImage="/og/programlar-ihracatcilar.png"
 >
 
+  <ProgramSchema
+    name="İhracatçılar için Claude"
+    description="İhracat ekipleri için Claude eğitimi: teklif, proforma, yabancı dilde yazışma, pazar araştırması, belge kontrolü."
+    url="https://zamana.com.tr/programlar/ihracatcilar/"
+    duration="P3W"
+    courseMode={['onsite', 'online']}
+    audience="İhracat müdürleri, dış ticaret uzmanları ve ihracatçı firmalar"
+    offers={[
+      { name: 'Tek kişi', price: 45000 },
+      { name: 'Ekip paketi, 2 kişi', price: 65000 },
+      { name: 'Ekip paketi, 3 kişi', price: 85000 },
+      { name: 'Ekip paketi, 4 kişi', price: 105000 },
+    ]}
+  />
+
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">İhracatçılar için Claude</span>
+      <span class="eyebrow">İhracatçılar için Yapay Zeka Eğitimi</span>
       <h1>Teklif, yazışma, belge. Daha hızlı, son kontrol sizde.</h1>
       <p class="lead">
         İhracatın masa başı yükü büyük: teklif, proforma, yabancı dilde yazışma, alıcı araştırması, fuar takibi, belge kontrolü.
@@ -360,6 +376,14 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=ihracatcilar" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/programlar/" class="btn btn--secondary btn--lg">Tüm Programlar</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

@@ -8,7 +8,7 @@ tags:
   - lojistik
   - sop
   - ncr
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Operasyon departmanında en büyük kayıp, **bilginin insanların kafasında yaşaması** ve hiç yazılı hale gelmemesidir. Claude bu kaybı gidermenin en kolay yollarından biridir.
@@ -134,6 +134,8 @@ Operasyon müdürü yıllardır kendi kafasında taşıdığı "yeni tedarikçi 
 **Adım 4:** ISO denetçisi için hazır bir belge.
 
 **Süre:** SOP için elle 3-6 saat (çoğu zaman hiç yazılmaz), Claude ile 25-40 dakika (kontrol dahil). Haftalık operasyon raporu için elle 2-3 saat, Claude ile 20-30 dakika (Zamana eğitim materyali); her hafta yapılıyorsa ayda yaklaşık 6-10 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
+SOP ve raporlama alışkanlığının ekipte yerleşmesi için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) seçeneğine bakabilirsiniz. Haftalık raporlar için [Claude ile Rapor](/wiki/gorevler/claude-ile-rapor/) rehberi var.
 
 ## İlgili Sayfalar
 

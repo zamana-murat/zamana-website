@@ -8,7 +8,7 @@ tags:
   - sozlesme
   - excel
   - dogrulama
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Claude'a bir belge verip "bunu özetle" demek kolaydır. İşin zor kısmı, aldığınız cevaba **güvenip güvenemeyeceğinizi** bilmektir. Belgeyle çalışırken üç hata türü çıkar: belgede olmayan bir şeyi var gibi anlatmak, belgedeki bir maddeyi atlamak ve tablodaki bir sayıyı yanlış okumak ya da toplamak.
@@ -152,7 +152,7 @@ Claude'a Excel'i doğrudan çalıştırtmak isterseniz [Office, Google ve Chrome
 
 ## Çok Uzun Belgeyle Çalışırken
 
-Yüzlerce sayfalık bir şartname ya da sözleşme paketinde bağlam penceresi ve yükleme sınırları devreye girer (sınırlar için [Dosya İşleme](/wiki/yetenekler/file-handling/) sayfası). Pratik düzen:
+Yüzlerce sayfalık bir şartname ya da sözleşme paketinde [bağlam penceresi](/wiki/sozluk/#baglam-penceresi) ve yükleme sınırları devreye girer (sınırlar için [Dosya İşleme](/wiki/yetenekler/file-handling/) sayfası). Pratik düzen:
 
 1. **Önce haritasını çıkarın:** "Belgenin bölüm başlıklarını ve her bölümün tek cümlelik özetini ver." Bu harita sonraki sorularda yol gösterir
 2. **Bölüm bölüm sorun:** tüm belgeye tek bir dev soru yerine, ilgili bölümlere odaklı sorular

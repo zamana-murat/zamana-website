@@ -50,7 +50,19 @@ const pages = [
   {
     slug: 'index',
     eyebrow: 'Kurumsal Claude Eğitimi · Türkiye',
-    title: 'Claude doğru öğretildiğinde şirketinizi 3 ayda dönüştürür.',
+    title: 'Claude eğitimiyle şirketinizi 3 ayda dönüştürün.',
+  },
+  {
+    slug: 'claude-egitimi',
+    eyebrow: 'Claude Eğitimi ve Kursu',
+    title: 'İş için, Türkçe, kendi işinizle.',
+    subtitle: 'Yönetici AI Hazırlık · Bireysel · Kurumsal · Uzman programlar',
+  },
+  {
+    slug: 'hazirlik-degerlendirmesi',
+    eyebrow: 'Hazırlık Değerlendirmesi',
+    title: 'Ekibiniz Claude\'a hazır mı?',
+    subtitle: '10 soru · 3 dakika · Cevaplar saklanmaz',
   },
   {
     slug: 'programlar',
@@ -114,9 +126,9 @@ const pages = [
   },
   {
     slug: 'programlar-karsilastirma',
-    eyebrow: 'Karşılaştırma',
+    eyebrow: 'Yapay Zeka Eğitimi Fiyatları',
     title: 'Hangi program size uygun?',
-    subtitle: 'Üç programı yan yana görün',
+    subtitle: 'Fiyatlar, süreler ve seçerken sorulacak 7 soru',
   },
   {
     slug: 'hakkinda',
@@ -165,6 +177,7 @@ const SECTION_LABELS = {
   'yetenekler': 'Yetenekler',
   'mcp': 'MCP ve Eklentiler',
   'departmanlar': 'Departmanlar',
+  'gorevler': 'Görev Rehberleri',
   'sozluk': 'Sözlük',
 };
 

@@ -1,14 +1,16 @@
 ---
 title: Claude Cowork Nedir?
-seoTitle: "Claude Cowork Nedir? Sohbetten Farkı"
+seoTitle: "Claude Cowork Nasıl Kullanılır? Adım Adım"
 description: "Cowork, Claude'un dosyalarınıza erişen, kod çalıştıran ve araçları kullanan çalışma biçimidir. 16 Eylül 2026'dan beri sohbetle tek Claude içindedir."
 tags:
   - cowork
   - claude-desktop
   - arac
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
+
+Bu sayfa Cowork'ü **adım adım nasıl kullanacağınızı** anlatır. Cowork'ün ne olduğunu ve ne sunduğunu kısaca görmek isterseniz [Claude Cowork ürün tanıtımına](/claude/cowork/) bakın.
 **Cowork, Claude'u bir sohbet arayüzünden tam bir çalışma ortamına dönüştüren özelliktir.** Dosyalarınıza erişir, kod çalıştırır, bağlı araçları kullanır ve işi baştan sona teslim eder. Cowork 9 Nisan 2026'dan beri masaüstünde (macOS, Windows ve Linux) genel kullanıma açık, 7 Temmuz 2026'dan beri web ve mobilde beta olarak da kullanılabiliyor.
 
 > **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor. Artık "sohbet mi, Cowork mu?" diye seçim yapmıyorsunuz; Claude görevin neye ihtiyaç duyduğunu kendisi anlıyor. Yayılım kademeli: Pro, Max ve Ultra'da açılıyor; Team ve Enterprise'ta yönetici "Chat and Cowork unified" ayarını açınca görünür (Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda). Free planda Cowork yok. Hesabınızda birleşik arayüz henüz açılmadıysa sayfadaki "ayrı mod" anlatımı sizin ekranınızı tarif eder. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).

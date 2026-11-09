@@ -1,16 +1,31 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="Kamu Kurumları için Güvenli Yapay Zeka Semineri | Zamana"
-  description="Kamu personeli için yarım günlük güvenli Claude kullanımı semineri: veri sınıflandırması, KVKK, doğrulama. 30 kişiye kadar 45.000 TL + KDV, abonelik gerekmez."
+  title="Kamu Kurumları için Yapay Zeka Eğitimi Semineri | Zamana"
+  description="Kamu personeli için yapay zeka eğitimi semineri: yarım günde veri sınıflandırması, KVKK, doğrulama. 30 kişiye kadar 45.000 TL + KDV, abonelik gerekmez."
   ogImage="/og/programlar-kamu-kurumlari.png"
 >
 
+  <ProgramSchema
+    name="Kamu Kurumları için Güvenli Yapay Zeka Semineri"
+    description="Kamu personeli için yarım günlük güvenli Claude kullanımı semineri: veri sınıflandırması, KVKK, doğrulama."
+    url="https://zamana.com.tr/programlar/kamu-kurumlari/"
+    duration="PT4H"
+    courseMode={['onsite', 'online']}
+    audience="Kamu kurumu personeli"
+    offers={[
+      { name: 'Seminer, 30 kişiye kadar', price: 45000 },
+      { name: 'Aynı kurumda ikinci birime seminer', price: 35000 },
+      { name: 'Uygulama atölyesi (opsiyonel)', price: 30000 },
+    ]}
+  />
+
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Kamu Kurumları için Güvenli Kullanım</span>
+      <span class="eyebrow">Kamu için Güvenli Yapay Zeka Eğitimi</span>
       <h1>4 saat. Ne girer, ne girmez. Nasıl doğrulanır.</h1>
       <p class="lead">
         Kamu personeli için yarım günlük seminer: yapay zekanın ne olduğu ve ne olmadığı, hangi verinin Claude'a hiç girmediği,
@@ -321,6 +336,14 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=kamu-kurumlari" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/programlar/" class="btn btn--secondary btn--lg">Tüm Programlar</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

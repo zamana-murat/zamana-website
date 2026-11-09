@@ -1,12 +1,23 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="Yeni Mezun ve Kariyer Programı, 4 Haftalık Kohort | Zamana"
-  description="Son sınıf öğrencileri ve yeni mezunlar için 4 haftalık çevrim içi Claude kohortu: CV, mülakat, ilk 90 gün ve portföy projesi. Kişi başı 7.500 TL + KDV."
+  title="Yeni Mezunlar için Claude Eğitimi, 4 Hafta | Zamana"
+  description="Son sınıf öğrencileri ve yeni mezunlar için 4 haftalık çevrim içi Claude eğitimi: CV, mülakat, ilk 90 gün, portföy projesi. Kişi başı 7.500 TL + KDV."
   ogImage="/og/programlar-yeni-mezun.png"
 >
+
+  <ProgramSchema
+    name="Yeni Mezun ve Kariyer Programı"
+    description="Son sınıf öğrencileri ve yeni mezunlar için 4 haftalık çevrim içi Claude kohortu: CV, mülakat, ilk 90 gün ve portföy projesi."
+    url="https://zamana.com.tr/programlar/yeni-mezun/"
+    price={7500}
+    duration="P4W"
+    courseMode="online"
+    audience="Son sınıf öğrencileri ve yeni mezunlar"
+  />
 
   <section class="page-hero">
     <div class="container">
@@ -293,6 +304,14 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=yeni-mezun" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/programlar/" class="btn btn--secondary btn--lg">Tüm Programlar</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

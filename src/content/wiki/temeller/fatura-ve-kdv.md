@@ -1,15 +1,18 @@
 ---
 title: "Fatura, KDV ve Türkiye'de Muhasebeleştirme"
+seoTitle: "Claude Fatura ve KDV: Türkiye'de Muhasebe"
 description: "Claude aboneliğinin Türkiye'de KDV, stopaj ve muhasebe yansıması: 2 No'lu beyanname, fatura formatı, gider gösterimi ve mali müşavire sorulacaklar."
 tags:
   - temeller
   - fatura
   - kdv
   - muhasebe
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Claude aboneliği yurt dışından alınan dijital bir hizmettir.** Türkiye'de muhasebeleştirilmesi, KDV uygulanması ve gider olarak gösterilmesi için net bir prosedür var; bunu doğru bilmek de finans direktörünün ilk sorusudur.
+
+Claude'un ne olduğunu henüz bilmiyorsanız önce [Claude nedir](/wiki/temeller/claude-nedir/) sayfasına, plan fiyatları için [Claude Planları](/wiki/temeller/planlar/) sayfasına bakın.
 
 Bu sayfa Claude aboneliğinin Türkiye'deki vergi-muhasebe yansımasını anlatır. **Önemli not:** Bu sayfa genel rehberlik amaçlıdır; nihai uygulamayı **mali müşaviriniz** ile birlikte netleştirin. Vergi mevzuatı değişebilir.
 

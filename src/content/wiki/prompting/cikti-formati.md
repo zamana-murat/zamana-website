@@ -6,7 +6,7 @@ tags:
   - prompting
   - format
   - cikti
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Aynı içerik üç farklı formatta üç farklı kullanım değeri verir.** Tabloya yapıştırılması gereken veri madde listesi olarak gelirse 5 dakika daha kaybedersiniz. Bu sayfa Claude çıktısını istediğiniz formatta üretmenin pratik tekniklerini anlatır.
@@ -88,7 +88,7 @@ Sadece geçerli JSON döndür, başka yorum/açıklama yok.
 
 JSON şemasını net belirtin, Claude tahmin etmesin.
 
-> **Geliştiriciler için:** API'de JSON çıktısını metinle istemek yerine **structured outputs** kullanılabilir (genel kullanıma açık). `output_config.format` alanına `type: "json_schema"` ile bir şema verilir, araçlarda ise `strict: true` kullanılır; ikisi birlikte de kullanılabilir. Düşük effort'ta çok adımlı hesaplarda JSON'a ek olarak "Cevaptan önce problemi iyice düşün" satırı önerilir. İş kullanıcısı bu kutuyu atlayabilir.
+> **Geliştiriciler için:** API'de JSON çıktısını metinle istemek yerine **structured outputs** kullanılabilir (genel kullanıma açık). `output_config.format` alanına `type: "json_schema"` ile bir şema verilir, araçlarda ise `strict: true` kullanılır; ikisi birlikte de kullanılabilir. Düşük [effort](/wiki/sozluk/#effort)'ta çok adımlı hesaplarda JSON'a ek olarak "Cevaptan önce problemi iyice düşün" satırı önerilir. İş kullanıcısı bu kutuyu atlayabilir.
 
 ## 4. Markdown
 

@@ -7,7 +7,7 @@ tags:
   - saglik
   - kvkk
   - hassas
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Sağlık sektörü Türkiye'de özel bir yasal rejime tabidir: KVKK kapsamında **özel nitelikli kişisel veri**, mesleki gizlilik ve Sağlık Bakanlığı yönetmelikleri. Claude'un sağlıkta kullanımı **mümkündür ama dikkat ister.** Bu sayfa hangi alanlarda güvenle kullanılabileceğini, neyin kesinlikle yapılmaması gerektiğini ve kurumsal politika çerçevesini anlatır.
@@ -25,7 +25,7 @@ Sağlıkta Claude kullanımını yöneten ana mevzuat:
 - **Sağlık Bakanlığı Bilişim Standartları**
 - **Türk Ceza Kanunu md. 134-138**: kişisel veriyi hukuka aykırı verme
 
-[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası KVKK derinleşmesi içerir. Anthropic'in sağlık çözümünün (HIPAA kapsamı, sağlık connector'ları, ABD'ye özgü sınırlar) Türkiye açısından değerlendirmesi için [Sağlık kuruluşları için Claude](/kurumsal/saglik/) sayfasına bakın.
+[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası KVKK derinleşmesi içerir. Anthropic'in sağlık çözümünün (HIPAA kapsamı, sağlık [connector](/wiki/sozluk/#connector)'ları, ABD'ye özgü sınırlar) Türkiye açısından değerlendirmesi için [Sağlık kuruluşları için Claude](/kurumsal/saglik/) sayfasına bakın.
 
 ## Yapılabilenler ve Yapılamayanlar: Net Tablo
 
@@ -258,6 +258,8 @@ Türkiye'de büyüyen **sağlık turizmi** (saç ekimi, dental, plastik cerrahi,
 ## Bireysel Hekim / Klinik Sahibi
 
 Tek başına çalışan hekim ya da küçük poliklinik için Claude'un katkısı kayda değerdir. İdari iş yükünü azaltarak hekimin zamanını boşaltır. Sektörün hassasiyeti nedeniyle KVKK ve mesleki gizlilik kurallarına özel dikkat gerekir. Ticari plan önerisi tek hekim için de geçerlidir, ama Team en az 2 koltuk istediğinden hekim ve bir idari çalışan birlikte alabilir. Tek kişilik bireysel planla çalışılacaksa hasta verisini hiç girmemek, yalnız idari ve eğitsel işlerde kullanmak gerekir.
+
+Kurum içinde ortak kullanım kuralları (hasta verisi dışarıda kalacak şekilde) kurmak için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programı var; tek hekim ya da klinik sahibi için [Bireysel Program](/programlar/bireysel/) daha uygundur.
 
 ## İlgili Sayfalar
 

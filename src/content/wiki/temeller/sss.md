@@ -1,5 +1,6 @@
 ---
 title: "Claude Sık Sorulan Sorular (SSS)"
+seoTitle: "Claude Hakkında Sık Sorulan Sorular (2026)"
 description: "Claude'u kullanmayı düşünürken, bireysel veya şirket olarak akla gelen yaygın sorular ve net cevaplar. Güvenlik, veri, maliyet, adaptasyon ve KVKK."
 tags:
   - temeller

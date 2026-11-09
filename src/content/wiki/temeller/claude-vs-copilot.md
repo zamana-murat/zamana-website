@@ -7,7 +7,7 @@ tags:
   - karsilastirma
   - copilot
   - microsoft
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Microsoft Copilot, Microsoft'un Office uygulamaları ve Windows içine entegre AI asistanıdır.** Türkiye'deki orta-büyük kurumların ezici çoğunluğu Microsoft 365 kullanıyor; bu yüzden *"zaten Microsoft veriyor, Claude'a gerek var mı"* sorusu kurumsal satışta en sık karşılaşılan itirazdır.
@@ -146,6 +146,7 @@ Türkiye'deki tipik orta ölçekli şirketin başlangıç durumu:
 
 ## İlgili Sayfalar
 
+- [Hangi Yapay Zeka? Karar Rehberi](/wiki/temeller/hangi-yapay-zeka/): ChatGPT, Gemini, Copilot, Perplexity, DeepSeek ve Claude tek tabloda
 - [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/): OpenAI tarafı
 - [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/): Google tarafı
 - [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/): Şirket arka planı

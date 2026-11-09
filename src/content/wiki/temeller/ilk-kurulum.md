@@ -1,13 +1,13 @@
 ---
 title: "İlk Kurulum: Hesap, Abonelik, Claude Desktop"
-seoTitle: "Claude'a Nasıl Kayıt Olunur? Plan ve Kurulum"
+seoTitle: "Claude'a Türkiye'den Nasıl Kayıt Olunur? Kurulum"
 description: "Claude'a nasıl kayıt olunur: claude.ai'a üye olma, yaş sınırı, gizlilik ayarı, plan seçimi (Pro veya Max), Claude Desktop kurulumu ve donanım kontrolü."
 tags:
   - temeller
   - kurulum
   - baslangic
   - claude-desktop
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz, bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.

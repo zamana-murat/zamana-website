@@ -6,7 +6,7 @@ tags:
   - araclar
   - web-arama
   - guncel-bilgi
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Claude, bir sorunun cevabı eğitim verisinde olmadığında veya güncel veri gerektiğinde web'de arama yapar.** Ne zaman arayacağına kendisi karar verir, sonuçları okur ve cevabını kaynaklarla birlikte sunar.
@@ -73,7 +73,7 @@ Bu, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin **Diligence (özen)** ba
 
 ## Halüsinasyon Riski
 
-Web aramada Claude halüsinasyon yapabilir mi? **Evet, ama daha düşük oranda.**
+Web aramada Claude [halüsinasyon](/wiki/sozluk/#halusinasyon) yapabilir mi? **Evet, ama daha düşük oranda.**
 
 Güvenilir bilgi bulamadığında Claude bazen olası gözüken ama yanlış bilgi üretir (halüsinasyon). Web araması bu riski **azaltır** çünkü gerçek kaynaklara dayanır. Ama tamamen ortadan kalkmaz:
 

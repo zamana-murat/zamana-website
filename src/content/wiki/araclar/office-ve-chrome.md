@@ -11,7 +11,7 @@ tags:
   - google-workspace
   - chrome
   - eklenti
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Çoğu iş gün boyu aynı birkaç yerde yapılır: bir Excel dosyası, bir sunum, bir Word belgesi, gelen kutusu ve tarayıcı.** Claude'un bu yerlerin içinde çalışan üç eklenti ailesi var: Microsoft 365 eklentileri (Excel, PowerPoint, Word, Outlook), Google Workspace eklentisi (Docs, Sheets, Slides) ve Chrome tarayıcı eklentisi (Claude in Chrome). Üçü de dosyayı Claude'a kopyala-yapıştır yapmak yerine, Claude'u işin olduğu yere getirir.
@@ -47,7 +47,7 @@ Yöneticiler OpenTelemetry ile güvenlik izlemesi yapılandırabilir ve Analytic
 2. **Model güncelleme:** Kur varsayımını değiştirirsiniz, bağlı sunum grafiği ve rapor metni güncellenir. Rakamların tutarlı kalması, çok dosyalı raporlarda en sık hata kaynağıdır.
 3. **Belge yazımı:** *"Ekibin teklif şablonunu kullanarak, bu Excel'deki fiyatlarla müşteri teklifi taslağı yaz."* Şablon biçimi korunur.
 4. **Gelen kutusu:** Outlook'ta *"Bu sabah gelen e-postaları önem sırasına göre ayır, ilk üçüne yanıt taslağı hazırla ve bu hafta Perşembe için uygun saat öner."* Taslaklar yazma bölmesinde bekler, siz okuyup gönderirsiniz. **Süre:** elle 30-45 dakika, Claude ile yaklaşık 10 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
-5. **Muhasebe dökümü:** Logo ya da Mikro'dan dışa aktardığınız cari hareket Excel'ini yükleyip *"Bu dökümü e-Fatura listesiyle karşılaştır, eşleşmeyenleri işaretle"* diyebilir, ya da *"Varsayımlardaki kuru TCMB'nin güncel kuruyla değiştir"* isteyebilirsiniz. Logo, Mikro ve Paraşüt için resmi connector yok; iş dosya üzerinden yürür. Ayrıntı: [Türk İş Araçları](/wiki/temeller/turk-is-araclari/).
+5. **Muhasebe dökümü:** Logo ya da Mikro'dan dışa aktardığınız cari hareket Excel'ini yükleyip *"Bu dökümü e-Fatura listesiyle karşılaştır, eşleşmeyenleri işaretle"* diyebilir, ya da *"Varsayımlardaki kuru TCMB'nin güncel kuruyla değiştir"* isteyebilirsiniz. Logo, Mikro ve Paraşüt için resmi [connector](/wiki/sozluk/#connector) yok; iş dosya üzerinden yürür. Ayrıntı: [Türk İş Araçları](/wiki/temeller/turk-is-araclari/).
 
 ### Sınırlar
 

@@ -44,19 +44,95 @@ const recRows: { situation: string; rec: string; href?: string }[] = [
 ---
 
 <Layout
-  title="Program Karşılaştırması: Yönetici, Bireysel, Kurumsal"
-  description="Zamana'nın üç programı yan yana: Yönetici AI Hazırlık, Bireysel ve Kurumsal. Süre, fiyat, kapsam, hedef kitle ve hangisinin hangi durumda uygun olduğu."
+  title="Yapay Zeka Eğitimi Fiyatları ve Nasıl Seçilir | Zamana"
+  description="Kurumsal yapay zeka eğitimi ne kadar tutar? Fiyatı neyin belirlediği, tek günlük kurs ile 3 aylık program farkı ve eğitim seçerken sorulacak 7 soru."
   ogImage="/og/programlar-karsilastirma.png"
 >
 
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Karşılaştırma</span>
-      <h1>Hangi program size uygun?</h1>
+      <span class="eyebrow">Fiyat ve Seçim Rehberi</span>
+      <h1>Yapay zeka eğitimi ne kadar tutar, nasıl seçilir?</h1>
       <p class="lead">
-        Aynı pedagojik DNA, üç farklı ölçek. Aşağıdaki tabloda üç programı yan yana görebilir,
-        durumunuza uygun olanı seçebilirsiniz.
+        Kurumsal yapay zeka eğitimi fiyatları süreye, kişi sayısına ve eğitimin ne kadar sizin işinize göre kurulduğuna göre değişir.
+        Aşağıda Zamana fiyatları, fiyatı neyin belirlediği ve herhangi bir sağlayıcıya sorabileceğiniz 7 soru var. Sonra üç ana programı yan yana görebilirsiniz.
       </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <h2 class="section-title">Zamana fiyatları</h2>
+      <p class="text-muted">Tüm fiyatlar TL, KDV hariçtir.</p>
+      <table class="rec-table">
+        <thead>
+          <tr><th>Program</th><th>Fiyat (+ KDV)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>, 3 saatlik tek oturum</td><td><strong>15.000 TL</strong></td></tr>
+          <tr><td><a href="/programlar/bireysel/">Bireysel Program</a>, 3 hafta, 1 kişi, 3 ay destek dahil</td><td><strong>40.000 TL</strong>, tek seferlik. Sonrası aylık devam desteği 8.000 TL</td></tr>
+          <tr><td><a href="/programlar/kurumsal/">Kurumsal Program</a>, 6 çalışan, minimum 3 ay</td><td><strong>100.000 TL / ay</strong> (3 ay için 300.000 TL)</td></tr>
+          <tr><td>Kurumsal Program, 12 / 18 / 24 çalışan</td><td><strong>185.000 / 265.000 / 350.000 TL / ay</strong></td></tr>
+          <tr><td><a href="/programlar/ai-sampiyonu/">AI Şampiyonu</a> (Şampiyon yolu / Eğitmen yolu)</td><td><strong>80.000 TL</strong> (Kurumsal müşteriye 65.000 TL) / <strong>45.000 TL</strong></td></tr>
+          <tr><td><a href="/programlar/ihracatcilar/">İhracatçılar</a> ve <a href="/programlar/hukuk-burolari/">Hukuk Büroları</a></td><td><strong>45.000 TL</strong> tek kişi, ek kişi + 20.000 TL (2-4 kişi)</td></tr>
+          <tr><td><a href="/programlar/kamu-kurumlari/">Kamu Kurumları</a> semineri / atölye</td><td><strong>45.000 TL</strong> (aynı kurumda ikinci seminer 35.000 TL) / <strong>30.000 TL</strong></td></tr>
+          <tr><td><a href="/programlar/akademisyenler/">Akademisyenler</a></td><td><strong>30.000 TL</strong>, grup (3-6 kişi) 75.000 TL</td></tr>
+          <tr><td><a href="/programlar/yeni-mezun/">Yeni Mezun</a> kohortu</td><td><strong>7.500 TL</strong> kişi başı</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <h2 class="section-title">Eğitim fiyatını ne belirler?</h2>
+      <ul class="guide-list">
+        <li><strong>Süre ve destek.</strong> Üç saatlik tek oturum ile 3 ay boyunca telefondan ulaşılabilen bir program aynı iş değildir. Fiyat farkının büyük kısmı burada.</li>
+        <li><strong>Kaç kişi, hangi roller.</strong> Altı kişilik bir çekirdek grup ile tek kişilik birebir çalışma farklı emek ister. Rol bazlı müfredat (satış, finans, hukuk) hazırlık gerektirir.</li>
+        <li><strong>Sizin işinize göre kurulması.</strong> Hazır slayt anlatmak ucuzdur. Sizin dosyalarınız, teklifleriniz ve süreçleriniz üzerinden çalışmak her ekip için ayrı hazırlık demek.</li>
+        <li><strong>Yer.</strong> İstanbul içi yerinde oturumda ek ücret yok. İstanbul dışında yerinde oturum seçilirse yol ve konaklama için tipik ek 7.000-13.000 TL, online seçenekte bu ek yok.</li>
+        <li><strong>Eğitim dışı kalemler.</strong> Claude aboneliği eğitim ücretine dahil değildir ve doğrudan Anthropic'ten alınır, Zamana abonelik satmaz. Yeni katılımcıya ilk ay Max planını öneririz, zorunlu değil. Sağlayıcınızın bu tür kalemleri baştan yazıp yazmadığına bakın.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <h2 class="section-title">Tek günlük kurs mu, 3 aylık program mı?</h2>
+      <p class="text-muted">
+        İkisi de yanlış bir seçim değil, farklı işler görüyor.
+      </p>
+      <ul class="guide-list">
+        <li><strong>Tek günlük kurs</strong> aracı tanımak, kavramları öğrenmek ve karar verecek kişiyi bilgilendirmek için yeterli olabilir. Maliyeti düşüktür. Eksik kalan: öğrenilen şeyi ertesi gün kendi işine taşımak ve takılınca soracak biri.</li>
+        <li><strong>3 aylık program</strong> alışkanlık kurmak içindir. Öğrenme oturumda değil, oturumlar arasındaki gerçek işte yaşanır; bu yüzden süre ve destek bilinçli tasarımdır. Maliyeti yüksektir ve ekibin gerçekten zaman ayırmasını gerektirir.</li>
+        <li>Emin değilseniz küçük başlayın: 3 saatlik <a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>, 30 gün içinde Bireysel ya da Kurumsal Program'a geçerseniz ücret düşülür.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <h2 class="section-title">Eğitim alırken sorulacak 7 soru</h2>
+      <p class="text-muted">Bu sorular Zamana için de geçerli; hangi sağlayıcıyla konuşursanız konuşun sorun.</p>
+      <ul class="guide-list">
+        <li><strong>1. Kendi işimiz üzerinden mi çalışılıyor?</strong> Gerçek dosyalarınız ve süreçleriniz kullanılmıyorsa örnekler jenerik kalır.</li>
+        <li><strong>2. Eğitim bittikten sonra destek var mı, ne kadar?</strong> İlk engelde vazgeçilmesini destek önler. Süreyi ve yanıt süresini yazılı isteyin.</li>
+        <li><strong>3. Rol bazlı mı?</strong> Satış, finans ve hukuk ekiplerinin ihtiyacı farklıdır; tek müfredat hepsine oturmaz.</li>
+        <li><strong>4. Veri güvenliği ve KVKK ele alınıyor mu?</strong> Hangi verinin yapay zekaya girmeyeceği şirkete özel bir karardır. Eğitimin sonunda yazılı bir kullanım politikası çıkmalı.</li>
+        <li><strong>5. Türkçe mi, Türkiye'deki iş süreçlerine göre mi?</strong> Çevrilmiş içerik ile Türk iş kültürüne göre kurulmuş içerik farklı sonuç verir.</li>
+        <li><strong>6. Toplam maliyet ne?</strong> Eğitim ücreti dışında araç aboneliği, seyahat, ek oturum gibi kalemleri baştan sorun.</li>
+        <li><strong>7. Ne ölçülecek?</strong> "Eğitim verildi" ile "ekip artık kendi başına yeni akış kurabiliyor" arasında fark var. Hedefi baştan konuşun.</li>
+      </ul>
+      <p class="text-muted" style="margin-top: var(--s-3);">
+        Daha geniş bir çerçeve için <a href="/yapay-zeka-egitimi/">kurumsal yapay zeka eğitimi rehberine</a> bakabilirsiniz.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <span class="eyebrow">Ana Programlar</span>
+      <h2 class="section-title">Üç ana program yan yana</h2>
     </div>
   </section>
 
@@ -140,6 +216,9 @@ const recRows: { situation: string; rec: string; href?: string }[] = [
         <a href="/iletisim/" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/sss/" class="btn btn--secondary btn--lg">Sık Sorulan Sorulara Bak</a>
       </div>
+      <p class="text-muted" style="margin-top: var(--s-3); font-size: 0.95rem;">
+        Ekibiniz hazır mı? <a href="/hazirlik-degerlendirmesi/">3 dakikalık Hazırlık Değerlendirmesi</a>
+      </p>
     </div>
   </section>
 
@@ -239,4 +318,16 @@ const recRows: { situation: string; rec: string; href?: string }[] = [
     background: var(--c-bg-subtle);
     border-top: 1px solid var(--c-border);
   }
+  .guide-list { display: grid; gap: var(--s-3); margin-top: var(--s-3); padding: 0; list-style: none; }
+  .guide-list li {
+    padding: var(--s-3) var(--s-4);
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-left: 3px solid var(--c-gold);
+    border-radius: var(--r-card);
+    line-height: 1.7;
+  }
+  .guide-list strong { color: var(--c-navy); }
+  .guide-list a { color: var(--c-gold-text); text-decoration: underline; }
+  .rec-table a { color: inherit; text-decoration: underline; }
 </style>

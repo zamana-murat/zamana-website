@@ -1,6 +1,6 @@
 ---
 title: "Claude Design: Fikri Görsele Çevirmek"
-seoTitle: "Claude Design: Tasarım, Sunum, Prototip"
+seoTitle: "Claude Design Nedir? Tasarım, Sunum, Prototip"
 description: "Claude Design, tarif ettiğiniz görseli markanıza uygun ilk taslağa çevirir. Düzenler, PDF veya PowerPoint olarak indirirsiniz. Free dahil tüm planlarda."
 eyebrow: "Yetenek"
 lead: "Ne istediğinizi anlatırsınız, Claude marka kurallarınıza uygun bir ilk taslak çıkarır. Siz düzeltir, paylaşır ya da kullandığınız araca aktarırsınız. Tasarımcı yerine geçmez; ilk adımı hızlandırır."
@@ -16,7 +16,7 @@ related:
   - { label: "Pazarlama departmanı için Claude (wiki)", href: "/wiki/departmanlar/pazarlama/" }
   - { label: "Takım ve Admin (wiki)", href: "/wiki/temeller/takim-ve-admin/" }
 order: 7
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 ## Nedir?

@@ -7,7 +7,7 @@ tags:
   - projects
   - claude-chat
   - bilgi-tabani
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Projects, claude.ai'de kalıcı ve organize çalışma alanları oluşturan özelliktir.** Her sohbetin sıfırdan başladığı normal bir konuşmanın aksine, bir Project Claude'a her seferinde devam eden bağlam sağlar, **bilgi tabanı** ve **özel talimatlar** yoluyla.
@@ -163,7 +163,7 @@ Yeni kullanıcılara **ilk ay Max (eski adı Max 5x)** öneriyoruz; bu bir öner
 ## İlgili Sayfalar
 
 - [Claude Chat](/wiki/araclar/claude-chat/): Projects'in içinde yaşadığı arayüz
-- [Skills](/claude/skills/): Projects içinde de kullanılabilen skill'lerin tanıtımı
+- [Skills](/claude/skills/): Projects içinde de kullanılabilen [skill](/wiki/sozluk/#skill)'lerin tanıtımı
 - [Sohbet Geçmişi ve Arama](/wiki/araclar/gecmis-ve-arama/): Sohbetleri projelerle organize etmek
 - [CLAUDE.md Nedir?](/wiki/claude-md/nedir/): Yerel Cowork'te klasörden okunan kalıcı bağlam dosyası
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Cowork ve CLAUDE.md için masaüstü uygulaması

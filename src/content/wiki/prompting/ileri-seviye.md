@@ -8,7 +8,7 @@ tags:
   - xml-tags
   - few-shot
   - prompt-chaining
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 [Prompting temel ilkelerini](/wiki/prompting/temel-ilkeler/) oturtmuş bir çalışan, günlük iş çıktılarının büyük bölümünü zaten karşılar. İleri teknikler kalan farkı kapatır: karmaşık girdiyi düzenler, uzun işi parçalar, çıktıyı göndermeden önce sınar.
@@ -56,7 +56,7 @@ Aşağıdaki durum için bir tedarikçi gecikme bildirimi e-postası yaz.
 
 ### Uzun Belgelerde Düzen
 
-Yirmi bin token'ı aşan uzun girdilerde (birkaç yüz sayfalık sözleşme, ihale dosyası, çok belgeli bir paket) üç alışkanlık fark yaratır:
+Yirmi bin [token](/wiki/sozluk/#token)'ı aşan uzun girdilerde (birkaç yüz sayfalık sözleşme, ihale dosyası, çok belgeli bir paket) üç alışkanlık fark yaratır:
 
 1. **Belgeyi başa, sorunuzu en sona koyun.** Uzun veri promptun üst kısmında, talimat ve soru altında olsun. Anthropic, sorguyu sona koymanın özellikle karmaşık, çok belgeli girdilerde yanıt kalitesini testlerinde **en çok %30'a kadar** artırabildiğini söylüyor. Bu, uzun belge girdisi için verilmiş bir test sonucudur; kısa bir promptta aynı etkiyi beklemeyin.
 2. **Önce ilgili alıntıları çıkarttırın, sonra cevaplatın.** "Önce soruyla ilgili bölümleri `<alintilar>` içine al, sonra yalnız bu alıntılara dayanarak cevapla." Cevap tüm belge yerine seçilmiş parçalara dayanınca doğrulaması kolaylaşır ve uydurma riski düşer.

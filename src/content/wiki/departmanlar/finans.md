@@ -7,7 +7,7 @@ tags:
   - finans
   - muhasebe
   - raporlama
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Finans ekibi Claude'u doğru konumlandırdığında her ay saatlerce zaman kazanır. Ama kritik bir çerçeve var:
@@ -167,6 +167,8 @@ SPK, bağımsız denetim ve mali müşavir standartlarından doğan sorumluluk C
 
 > **Kişisel veri notu:** Bordro, maaş ve kişi adı içeren müşteri ya da tedarikçi tabloları kişisel veridir. Bunları Claude'a girmeden önce anonimleştirin; yurt dışı aktarım konusunda [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasına bakın.
 
+Finans ekibinde kullanımı yaygınlaştırmak için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) seçeneği var. Pratik görevler için [Claude ile Excel](/wiki/gorevler/claude-ile-excel/) ve [Claude ile Rapor](/wiki/gorevler/claude-ile-rapor/) rehberlerine, muhasebe tarafı için [Muhasebeciler ve SMMM'ler](/wiki/departmanlar/muhasebe-smmm/) sayfasına bakabilirsiniz.
+
 ## İlgili Sayfalar
 
 - [Finansal Hizmetler (sektör sayfası)](/wiki/departmanlar/finansal-hizmetler/): banka, sigorta, aracı kurum; BDDK, SPK, MASAK çerçevesi
@@ -174,7 +176,7 @@ SPK, bağımsız denetim ve mali müşavir standartlarından doğan sorumluluk C
 - [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/): Logo, Mikro, Paraşüt, e-Fatura, KEP
 - [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/): kendi zaman kazancınızı hesaplayın
 - [CLAUDE.md Örnekleri](/wiki/claude-md/ornekler/): CFO için hazır CLAUDE.md şablonu
-- [Skills](/wiki/yetenekler/skills/): `xlsx` skill detayları
-- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Matematik hataları ve halüsinasyon
+- [Skills](/wiki/yetenekler/skills/): `xlsx` [skill](/wiki/sozluk/#skill) detayları
+- [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Matematik hataları ve [halüsinasyon](/wiki/sozluk/#halusinasyon)
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Hassas finansal veri hijyeni
 

@@ -8,7 +8,7 @@ tags:
   - erp
   - entegrasyon
   - bt
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Kısa cevap: çoğu zaman evet, ama "bağlayalım" demeden önce altı soruya cevap vermek gerekir.** Bu sayfa, iş kullanıcısı ya da yönetici olarak "ERP'mizi, iç CRM'imizi Claude'a bağlayabilir miyiz, kim kurar, ne kadar sürer?" sorusunu sorduğunuzda izleyeceğiniz sırayı anlatır. Teknik kısım BT ekibinize ya da entegratörünüze düşer; sizin işiniz doğru soruları doğru sırayla sormaktır.
@@ -17,14 +17,14 @@ Bir kurgusal örnek üzerinden gidelim: **Marmara Dağıtım**, 40 satış temsi
 
 ## Adım 1: Resmi dizinde var mı?
 
-Önce en ucuz yol: sisteminiz için hazır bir connector olabilir. [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına ya da Claude'da **Customize > Connectors** bölümüne bakın. Resmi dizinde 1.000'den fazla connector var; Salesforce, HubSpot, Atlassian, Slack, Microsoft 365 gibi tanıdık adlar orada.
+Önce en ucuz yol: sisteminiz için hazır bir [connector](/wiki/sozluk/#connector) olabilir. [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına ya da Claude'da **Customize > Connectors** bölümüne bakın. Resmi dizinde 1.000'den fazla connector var; Salesforce, HubSpot, Atlassian, Slack, Microsoft 365 gibi tanıdık adlar orada.
 
 - **Varsa:** dizin connector'ını kullanın. Bu sayfanın geri kalanına ihtiyacınız yok; [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) yeterli.
 - **Yoksa:** dizinde olmaması "yok" demek değil, "hazır yok" demektir. Adım 2'ye geçin.
 
 Marmara Dağıtım'ın iç CRM'i dizinde yok; yerel bir yazılım olduğu için olması da beklenmez.
 
-**Türkiye'deki muhasebe yazılımları için not:** Logo, Mikro ve Netsis için resmi dizinde connector yok, Ekim 2026 taramamızda sağlayıcıların yayımladığı resmi bir MCP sunucusu da bulamadık. Paraşüt için yalnızca resmi olmayan, topluluk yapımı bir sunucu var; muhasebe verinize erişeceği için onu önermiyoruz ([neden](/wiki/mcp/guvenlik/)). Bu araçlarda çoğu işi, programdan dışa aktarılan dosyayla görmek mümkün; ayrıntı [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasında. Yabancı kökenli bazı muhasebe yazılımlarının (QuickBooks, Xero) kendi connector'ı resmi dizinde var.
+**Türkiye'deki muhasebe yazılımları için not:** Logo, Mikro ve Netsis için resmi dizinde connector yok, Ekim 2026 taramamızda sağlayıcıların yayımladığı resmi bir [MCP](/wiki/sozluk/#mcp) sunucusu da bulamadık. Paraşüt için yalnızca resmi olmayan, topluluk yapımı bir sunucu var; muhasebe verinize erişeceği için onu önermiyoruz ([neden](/wiki/mcp/guvenlik/)). Bu araçlarda çoğu işi, programdan dışa aktarılan dosyayla görmek mümkün; ayrıntı [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasında. Yabancı kökenli bazı muhasebe yazılımlarının (QuickBooks, Xero) kendi connector'ı resmi dizinde var.
 
 ## Adım 2: Sağlayıcının API'si ya da kendi MCP sunucusu var mı?
 

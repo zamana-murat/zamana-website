@@ -19,6 +19,13 @@
 
 .wiki-prose > * + * { margin-top: 1rem; }
 
+/* Anchor jumps (TOC, #links) land below the sticky header + wiki tabs. */
+.wiki-prose h2,
+.wiki-prose h3,
+.wiki-prose h4 {
+  scroll-margin-top: 120px;
+}
+
 .wiki-prose h2,
 .wiki-prose h3,
 .wiki-prose h4 {

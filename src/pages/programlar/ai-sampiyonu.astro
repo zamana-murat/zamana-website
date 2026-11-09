@@ -1,12 +1,26 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="AI Şampiyonu ve Eğitmen Programı, Kurum İçi Eğitmen | Zamana"
-  description="Kurum içinde Claude'u öğretecek şampiyon (80.000 TL + KDV) ya da eğitimlerini Claude ile tasarlayan eğitmen (45.000 TL + KDV). Birebir eğitim, 3 ay destek."
+  title="AI Şampiyonu ve Eğitmen Programı | Zamana"
+  description="Kurumunuzda Claude'u öğretecek şampiyon (80.000 TL + KDV) ya da eğitimlerini Claude ile tasarlayan eğitmen (45.000 TL + KDV). Birebir eğitim, 3 ay destek."
   ogImage="/og/programlar-ai-sampiyonu.png"
 >
+
+  <ProgramSchema
+    name="AI Şampiyonu ve Eğitmen Programı"
+    description="Kurum içinde Claude'u öğretecek şampiyon ya da eğitimlerini Claude ile tasarlayan eğitmen için birebir program, 3 ay destek."
+    url="https://zamana.com.tr/programlar/ai-sampiyonu/"
+    duration="P4W"
+    courseMode={['onsite', 'online']}
+    audience="Kurum içi eğitmen adayları ve profesyonel eğitmenler"
+    offers={[
+      { name: 'Şampiyon yolu, kişi başı', price: 80000 },
+      { name: 'Eğitmen yolu, kişi başı', price: 45000 },
+    ]}
+  />
 
   <section class="page-hero">
     <div class="container">
@@ -418,6 +432,14 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=ai-sampiyonu" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/programlar/" class="btn btn--secondary btn--lg">Tüm Programlar</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

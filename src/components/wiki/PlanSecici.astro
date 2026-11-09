@@ -1,0 +1,357 @@
+---
+// Claude plan seçici: vanilla JS, harici kütüphane yok.
+// Fiyatlar: docs/CLAUDE-GUNCEL-OLGULAR.md § 1 (2026-11-08). Sonuç tarayıcıda hesaplanır.
+const sorular = [
+  {
+    id: 'yogunluk',
+    baslik: '2. Claude\'u ne kadar yoğun kullanacaksınız?',
+    secenekler: [
+      { v: 'yeni', t: 'Yeni başlıyorum, henüz alışkanlığım yok' },
+      { v: 'hafif', t: 'Hafif: haftada birkaç kez, kısa işler' },
+      { v: 'orta', t: 'Orta: hemen her gün, günde 1-2 saat' },
+      { v: 'yogun', t: 'Yoğun: günün büyük kısmı, uzun belgeler ve çok iş' },
+      { v: 'limit', t: 'Mevcut planımın limitine sık çarpıyorum' },
+    ],
+    secili: 'orta',
+  },
+  {
+    id: 'cowork',
+    baslik: '3. Cowork, masaüstü işleri ya da çok uzun belgeler olacak mı?',
+    secenekler: [
+      { v: 'hayir', t: 'Hayır, çoğunlukla sohbet' },
+      { v: 'arasira', t: 'Ara sıra dosya, tablo ya da uzun belge' },
+      { v: 'sik', t: 'Sık: Cowork, dosya düzenleme, çok adımlı işler' },
+    ],
+    secili: 'arasira',
+  },
+  {
+    id: 'yonetim',
+    baslik: '4. Merkezi yönetim, faturalandırma ve veri kontrolü ihtiyacınız var mı?',
+    secenekler: [
+      { v: 'yok', t: 'Yok, herkes kendi hesabıyla kullanabilir' },
+      { v: 'merkezi', t: 'Merkezi fatura, paylaşılan projeler, SSO ve yönetici paneli istiyoruz' },
+      { v: 'uyum', t: 'Denetim kaydı, rol bazlı yetki, DPA ve uyum denetimi gerekiyor' },
+    ],
+    secili: 'yok',
+  },
+  {
+    id: 'butce',
+    baslik: '5. Kişi başı aylık bütçeniz nedir?',
+    secenekler: [
+      { v: 'ucretsiz', t: 'Ücretsiz kalmak istiyorum' },
+      { v: '20', t: 'En fazla yaklaşık 20 USD' },
+      { v: '100', t: 'En fazla yaklaşık 100 USD' },
+      { v: 'esnek', t: 'Esnek, ihtiyaç neyse o' },
+    ],
+    secili: 'esnek',
+  },
+];
+---
+
+<section class="ps" id="plan-secici" aria-labelledby="ps-baslik">
+  <h3 id="ps-baslik" class="ps__title">Plan seçici</h3>
+  <p class="ps__lead">
+    Beş soruyu cevaplayın; öneri anında güncellenir. Hiçbir cevap sunucuya gönderilmez, hesap tarayıcınızda yapılır.
+  </p>
+
+  <form class="ps__form" autocomplete="off" onsubmit="return false;">
+    <div class="ps__row">
+      <div class="ps__field">
+        <label for="ps-kisi">1. Kaç kişi kullanacak?</label>
+        <input id="ps-kisi" type="number" inputmode="numeric" min="1" step="1" value="1" />
+        <small>Tek kişiyse bireysel planlar, 2 ve üzeri için Team ya da Enterprise de değerlendirilir</small>
+      </div>
+      <div class="ps__field">
+        <label for="ps-kur">Kur (TL/USD), Ekim 2026 varsayımı</label>
+        <input id="ps-kur" type="number" inputmode="decimal" min="0" step="0.5" value="40" />
+        <small>Varsayımdır, canlı kur değildir; kendi bankanızın kurunu yazın</small>
+      </div>
+    </div>
+
+    {sorular.map((s) => (
+      <fieldset class="ps__q">
+        <legend>{s.baslik}</legend>
+        <div class="ps__opts">
+          {s.secenekler.map((o, i) => (
+            <label class="ps__opt" for={`ps-${s.id}-${i}`}>
+              <input
+                type="radio"
+                id={`ps-${s.id}-${i}`}
+                name={`ps-${s.id}`}
+                value={o.v}
+                checked={o.v === s.secili}
+              />
+              <span>{o.t}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+    ))}
+  </form>
+
+  <div class="ps__result" id="ps-sonuc" role="region" aria-live="polite" aria-label="Önerilen plan">
+    <p class="ps__placeholder">Öneri burada görünecek.</p>
+  </div>
+
+  <noscript>
+    <p class="ps__noscript">
+      Bu tarayıcıda JavaScript kapalı, bu yüzden araç çalışmıyor. Aşağıdaki "Hızlı karar tablosu" aynı mantığı elle uygulamanızı sağlar.
+    </p>
+  </noscript>
+</section>
+
+<style>
+  .ps {
+    margin: 1.5rem 0;
+    padding: var(--s-4, 1.5rem);
+    background: var(--c-bg-subtle);
+    border: 1px solid var(--c-border-gold);
+    border-radius: var(--r-card);
+  }
+  .ps__title { margin-top: 0; }
+  .ps__lead { margin: 0 0 1rem; color: var(--c-text-muted); font-size: 0.95rem; }
+  .ps__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ps__field { display: flex; flex-direction: column; gap: 0.3rem; }
+  .ps__field label { font-weight: 700; font-size: 0.9rem; color: var(--c-navy); }
+  .ps__field input {
+    font: inherit;
+    padding: 0.5rem 0.65rem;
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-input);
+    background: var(--c-white);
+    color: var(--c-text);
+    min-height: 2.5rem;
+  }
+  .ps__field input:focus-visible {
+    outline: 2px solid var(--c-gold);
+    outline-offset: 1px;
+    border-color: var(--c-gold-dark);
+  }
+  .ps__field small { color: var(--c-text-muted); font-size: 0.8rem; line-height: 1.35; }
+  .ps__q {
+    border: 0;
+    padding: 0;
+    margin: 0 0 1rem;
+    min-width: 0;
+  }
+  .ps__q legend {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--c-navy);
+    padding: 0;
+    margin-bottom: 0.4rem;
+  }
+  .ps__opts { display: grid; gap: 0.4rem; }
+  .ps__opt {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.55rem 0.75rem;
+    min-height: 2.75rem;
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-input);
+    cursor: pointer;
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+  .ps__opt input { margin-top: 0.2rem; accent-color: var(--c-navy); flex: none; }
+  .ps__opt:has(input:checked) { border-color: var(--c-gold-dark); box-shadow: var(--sh-soft); }
+  .ps__opt:has(input:focus-visible) { outline: 2px solid var(--c-gold); outline-offset: 1px; }
+  .ps__result { margin-top: 1.25rem; }
+  .ps__placeholder, .ps__noscript { font-size: 0.85rem; color: var(--c-text-muted); margin: 0.5rem 0 0; }
+
+  /* Sonuç kartı innerHTML ile eklenir; :global gerekli */
+  .ps__result :global(.ps-card) {
+    background: var(--c-white);
+    border: 1px solid var(--c-border-gold);
+    border-radius: var(--r-card);
+    padding: 1rem 1.1rem;
+    box-shadow: var(--sh-soft);
+  }
+  .ps__result :global(.ps-card__eyebrow) { font-size: 0.8rem; color: var(--c-text-muted); margin: 0; }
+  .ps__result :global(.ps-card__plan) { margin: 0.1rem 0 0.4rem; font-size: 1.5rem; font-weight: 800; color: var(--c-navy); }
+  .ps__result :global(.ps-card p) { margin: 0.4rem 0; font-size: 0.93rem; line-height: 1.5; }
+  .ps__result :global(.ps-card__prices) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 0.6rem;
+    margin: 0.8rem 0;
+  }
+  .ps__result :global(.ps-card__prices > div) {
+    background: var(--c-bg-subtle);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    padding: 0.55rem 0.8rem;
+  }
+  .ps__result :global(.ps-card__prices dt) { font-size: 0.78rem; color: var(--c-text-muted); margin: 0; }
+  .ps__result :global(.ps-card__prices dd) { margin: 0.1rem 0 0; font-weight: 800; color: var(--c-navy); font-size: 1.05rem; }
+  .ps__result :global(.ps-card__prices dd small) { display: block; font-weight: 400; font-size: 0.78rem; color: var(--c-text-muted); }
+  .ps__result :global(.ps-card__notes) { margin: 0.5rem 0; padding-left: 1.2rem; font-size: 0.88rem; color: var(--c-text-muted); }
+  .ps__result :global(.ps-card__links) { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin: 0.8rem 0 0; padding: 0; list-style: none; font-size: 0.9rem; }
+  .ps__result :global(.ps-card__buy) { font-size: 0.82rem; color: var(--c-text-muted); margin-top: 0.8rem; }
+</style>
+
+<script>
+  // Fiyatlar USD, vergi hariç, kişi başı aylık. Kaynak: OLGULAR § 1 (2026-11-08).
+  const PLANLAR = {
+    free: { ad: 'Free', aylik: 0, yillik: null },
+    pro: { ad: 'Pro', aylik: 20, yillik: 17 },
+    max: { ad: 'Max', aylik: 100, yillik: null },
+    ultra: { ad: 'Ultra', aylik: 200, yillik: null },
+    teamStd: { ad: 'Team Standard', aylik: 25, yillik: 20 },
+    teamPrem: { ad: 'Team Premium', aylik: 125, yillik: 100 },
+    ent: { ad: 'Enterprise', aylik: 20, yillik: 20 },
+  };
+
+  const $ = (id) => document.getElementById(id);
+  const sec = (ad, varsayilan) => {
+    const el = document.querySelector('input[name="ps-' + ad + '"]:checked') as HTMLInputElement | null;
+    return el ? el.value : varsayilan;
+  };
+  const fmt0 = (n) => n.toLocaleString('tr-TR', { maximumFractionDigits: 0 });
+
+  function oneri(girdi) {
+    const { n, yogunluk, cowork, yonetim, butce } = girdi;
+    const notlar = [];
+
+    // Gereksinim düzeyi: 0 Free, 1 Pro, 2 Max, 3 Ultra
+    const taban = { yeni: 2, hafif: 1, orta: 1, yogun: 2, limit: 3 }[yogunluk] || 1;
+    const istenen = Math.min(3, taban + (cowork === 'sik' ? 1 : 0));
+    const tavan = { ucretsiz: 0, '20': 1, '100': 2, esnek: 3 }[butce];
+    const duzey = Math.min(istenen, tavan);
+    if (duzey < istenen) {
+      notlar.push('İhtiyacınız bir üst düzeye işaret ediyor, ama bütçe sınırınız nedeniyle bu plan seçildi. Limit dolarsa usage credits ile devam edebilir ya da planı yükseltebilirsiniz.');
+    }
+
+    const takimMi = n >= 2;
+    let plan;
+    let gerekce;
+
+    if (takimMi && (n > 150 || (n >= 20 && yonetim === 'uyum'))) {
+      plan = 'ent';
+      gerekce = 'Denetim kaydı, rol bazlı yetki ve uyum denetimi ya da 150 kişiyi aşan bir ekip için Team yerine Enterprise uygundur. Koltuk ücreti kullanımı içermez; sohbet, Claude Code ve Cowork kullanımı standart API fiyatıyla ayrıca faturalanır.';
+      notlar.push('Self-serve Enterprise başlangıcı en az 20 koltuk ister; satış ekibiyle yapılan sözleşmelerde eşik daha yüksek olabilir.');
+    } else if (takimMi && (yonetim === 'merkezi' || yonetim === 'uyum')) {
+      plan = duzey >= 2 ? 'teamPrem' : 'teamStd';
+      gerekce = yonetim === 'uyum'
+        ? 'Merkezi fatura, SSO ve yönetici kontrolü Team planında var; denetim kaydı ve rol bazlı yetki ise yalnız Enterprise\'ta. Ekibiniz 20 kişinin altında olduğu için Team ile başlamak ve ihtiyaç doğarsa satış ekibiyle Enterprise görüşmek mantıklıdır.'
+        : 'Merkezi fatura, paylaşılan projeler, SSO ve harcama tavanı Team planında var. ' + (plan === 'teamPrem' ? 'Yoğun kullanım için Premium koltuk, Standard koltuğa göre belirgin biçimde daha yüksek kullanım sunar.' : 'Standart kullanım için Standard koltuk yeterlidir.');
+      notlar.push('Team\'de koltuk tipleri karıştırılabilir: yoğun kullananlara Premium, diğerlerine Standard verebilirsiniz. Team en az 2 koltuktur.');
+      if (duzey === 0) {
+        plan = 'free';
+        gerekce = 'Bütçeniz ücretsiz olduğu için Free seçildi. Team ücretsiz değildir; merkezi yönetim ve paylaşılan çalışma alanı Free\'de yoktur.';
+      }
+    } else if (takimMi && n >= 2 && duzey >= 1) {
+      // Yönetim ihtiyacı yok: her kişi bireysel plan alabilir.
+      plan = ['free', 'pro', 'max', 'ultra'][duzey];
+      gerekce = 'Merkezi yönetim ihtiyacınız olmadığı için herkes kendi hesabıyla bireysel plan alabilir; Team zorunlu değildir. Ekip büyüdükçe merkezi fatura ve paylaşılan projeler için Team\'e geçmek doğal adımdır.';
+    } else {
+      plan = ['free', 'pro', 'max', 'ultra'][duzey];
+      gerekce = [
+        'Free planda Claude\'u denemek ve hafif işler için yeterlidir; Cowork ve Claude Code gibi ücretli plan özellikleri yoktur, kullanım limiti düşüktür.',
+        'Pro, hafif ve orta düzeyde düzenli kullanım için uygun giriş planıdır. Cowork ve Claude Code dahildir.',
+        'Max, Pro\'nun yaklaşık 5 katı kullanım sunar; yoğun kullanım, uzun belgeler ve Cowork için rahat bir tavan verir.',
+        'Ultra, Pro\'nun yaklaşık 10 katı haftalık kullanım sunar; limite sürekli çarpan yoğun kullanıcılar içindir.',
+      ][duzey];
+      if (n === 1 && (yonetim === 'merkezi' || yonetim === 'uyum')) {
+        notlar.push('Team en az 2 koltuktur; tek kişi için bireysel plan önerildi.');
+      }
+    }
+
+    if (plan === 'max' && yogunluk === 'yeni') {
+      notlar.push('Yeni başlayanlara ilk ay Max öneririz, çünkü Pro\'nun limitine yeni kullanıcı çabuk çarpar ve "çalışmıyor" diye bırakabilir. Bu zorunlu değildir; 2. aydan itibaren kullanımınıza göre Pro\'ya inebilirsiniz.');
+    }
+    if (plan === 'pro' && yogunluk === 'yeni') {
+      notlar.push('Yeni başlıyorsanız ilk ay Max öneririz (zorunlu değil): ilk ayda yoğun keşif yapılır ve Pro limiti erken dolabilir. Pro ile başlayıp gerekirse yükseltmek de olur.');
+    }
+    if (plan === 'free' && butce !== 'ucretsiz') {
+      notlar.push('Seçtiğiniz kullanım düzeyi Free için fazla olabilir; Pro\'yu da değerlendirin.');
+    }
+    return { plan, gerekce, notlar };
+  }
+
+  function linkler(plan, n) {
+    const l = [
+      ['Planlar ve fiyatlar', '/wiki/temeller/planlar/'],
+      ['Kullanım limitleri', '/wiki/temeller/kullanim-limitleri/'],
+      ['Takım ve admin', '/wiki/temeller/takim-ve-admin/'],
+    ];
+    l.push(n >= 2 ? ['Kurumsal program', '/programlar/kurumsal/'] : ['Bireysel program', '/programlar/bireysel/']);
+    return l.map(([t, h]) => '<li><a href="' + h + '">' + t + '</a></li>').join('');
+  }
+
+  function fiyatKutulari(planKey, n, kur) {
+    const p = PLANLAR[planKey];
+    const kutu = (baslik, deger, alt) =>
+      '<div><dt>' + baslik + '</dt><dd>' + deger + (alt ? '<small>' + alt + '</small>' : '') + '</dd></div>';
+    if (planKey === 'free') {
+      return kutu('Kişi başı', '0 USD', 'Ücretsiz') + kutu('Toplam', '0 TL', n + ' kişi');
+    }
+    const usdAy = p.aylik;
+    const toplamUsd = usdAy * n;
+    const tlHaric = toplamUsd * kur;
+    const tlDahil = tlHaric * 1.2;
+    let html = '';
+    if (planKey === 'ent') {
+      html += kutu('Koltuk (yıllık faturalı)', '20 USD / koltuk / ay', 'Kullanım ayrıca API fiyatıyla faturalanır');
+      html += kutu(n + ' koltuk, alt sınır', fmt0(toplamUsd) + ' USD / ay', 'Kullanım hariç');
+    } else {
+      html += kutu('Aylık ödeme', usdAy + ' USD / kişi / ay', n >= 2 ? n + ' kişi: ' + fmt0(toplamUsd) + ' USD / ay' : '');
+      if (p.yillik) {
+        html += kutu('Yıllık ödeme', p.yillik + ' USD / kişi / ay', planKey === 'pro' ? '200 USD peşin ödenir' : 'Yıllık faturalı');
+      } else {
+        html += kutu('Yıllık ödeme', 'Yok', 'Yalnız aylık');
+      }
+    }
+    html += kutu(
+      'Yaklaşık TL (aylık ödeme)',
+      fmt0(tlHaric) + ' TL + KDV',
+      'KDV dahil yaklaşık ' + fmt0(tlDahil) + ' TL, ' + fmt0(kur) + ' TL/USD varsayımıyla'
+    );
+    return html;
+  }
+
+  function guncelle() {
+    const nHam = parseInt(($('ps-kisi') as HTMLInputElement).value, 10);
+    const n = Number.isFinite(nHam) && nHam >= 1 ? nHam : 1;
+    const kurHam = parseFloat(($('ps-kur') as HTMLInputElement).value.replace(',', '.'));
+    const kur = Number.isFinite(kurHam) && kurHam > 0 ? kurHam : 40;
+
+    const g = {
+      n,
+      yogunluk: sec('yogunluk', 'orta'),
+      cowork: sec('cowork', 'arasira'),
+      yonetim: sec('yonetim', 'yok'),
+      butce: sec('butce', 'esnek'),
+    };
+    const o = oneri(g);
+    const p = PLANLAR[o.plan];
+    const notHtml = o.notlar.length
+      ? '<ul class="ps-card__notes">' + o.notlar.map((t) => '<li>' + t + '</li>').join('') + '</ul>'
+      : '';
+
+    $('ps-sonuc').innerHTML =
+      '<div class="ps-card">' +
+      '<p class="ps-card__eyebrow">Önerilen plan (' + n + ' kişi)</p>' +
+      '<h4 class="ps-card__plan">' + p.ad + '</h4>' +
+      '<p>' + o.gerekce + '</p>' +
+      '<dl class="ps-card__prices">' + fiyatKutulari(o.plan, n, kur) + '</dl>' +
+      notHtml +
+      '<ul class="ps-card__links">' + linkler(o.plan, n) + '</ul>' +
+      '<p class="ps-card__buy">Zamana abonelik satmaz; satın alma doğrudan Anthropic\'ten yapılır (claude.com/pricing). Fiyatlar vergi hariçtir ve 2026-11-08 tarihlidir.</p>' +
+      '</div>';
+  }
+
+  const form = document.querySelector('#plan-secici form');
+  if (form) {
+    form.addEventListener('input', guncelle);
+    form.addEventListener('change', guncelle);
+  }
+  guncelle();
+</script>

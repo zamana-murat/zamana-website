@@ -6,12 +6,12 @@ tags:
   - mcp
   - guvenlik
   - kvkk
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **[MCP](/wiki/mcp/nedir/), Claude'a sisteminize erişim verir.** Bu güç dikkatsiz kurulduğunda sorun yaratabilir: yetkisiz veri erişimi, beklenmedik silme işlemleri ve prompt injection saldırıları gibi. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar. Ürün tarafındaki güvenlik çerçevesi için [Claude Güvenliği](/claude/security/) sayfasına bakın.
 
-Claude'daki connector'lar da birer MCP sunucusudur; fark, sunucunun kimden geldiğidir. Dizindeki connector'lar sağlayıcıdan gelir ve Anthropic incelemesinden geçer; özel connector ve masaüstü uzantıları ise sizin seçtiğiniz sunuculardır, güveni siz değerlendirirsiniz. İnceleme "veriniz güvende" garantisi değildir: hangi veriyi hangi yetkiyle açacağınıza her durumda siz karar verirsiniz. Karşılaştırma için [Connectors](/wiki/araclar/connectors/) sayfasına bakın.
+Claude'daki [connector](/wiki/sozluk/#connector)'lar da birer MCP sunucusudur; fark, sunucunun kimden geldiğidir. Dizindeki connector'lar sağlayıcıdan gelir ve Anthropic incelemesinden geçer; özel connector ve masaüstü uzantıları ise sizin seçtiğiniz sunuculardır, güveni siz değerlendirirsiniz. İnceleme "veriniz güvende" garantisi değildir: hangi veriyi hangi yetkiyle açacağınıza her durumda siz karar verirsiniz. Karşılaştırma için [Connectors](/wiki/araclar/connectors/) sayfasına bakın.
 
 ## MCP Güvenlik Modeli: Temel Mantık
 
@@ -52,7 +52,7 @@ Claude in Chrome için Anthropic, prompt injection saldırı başarı oranların
 
 ### 3. Yanlış Sunucu (Supply Chain)
 
-Topluluk sunucularının bazıları kötü niyetli olabilir. Sahte bir "resmî görünümlü" paket, kurulduğunda token'larınızı dışarı sızdırabilir. Kötü niyet olmasa bile bakımsız bir sunucu, güvenlik açığı demektir.
+Topluluk sunucularının bazıları kötü niyetli olabilir. Sahte bir "resmî görünümlü" paket, kurulduğunda [token](/wiki/sozluk/#token)'larınızı dışarı sızdırabilir. Kötü niyet olmasa bile bakımsız bir sunucu, güvenlik açığı demektir.
 
 **Örnek:** Paraşüt'ün resmî bir MCP sunucusu yok; GitHub'da bulunan tek sunucu topluluk işidir, Paraşüt ile bağı yoktur. Muhasebe verinize erişecek bir sunucu için "resmî mi, kim bakımını yapıyor?" sorusunun cevabı net değilse kurmayın. Logo, Mikro ve Netsis için ise resmî ya da topluluk sunucusu bulunamadı; bu sistemlerde bağlantı genelde dışa aktarılan dosya ya da entegratör işidir ([Türk İş Araçları](/wiki/temeller/turk-is-araclari/)).
 
@@ -63,7 +63,7 @@ Topluluk sunucularının bazıları kötü niyetli olabilir. Sahte bir "resmî g
 - Açık kaynak ise kodu önce gözden geçirin (veya BT'ye gözden geçirtin).
 - Arşivlenmiş depolardan kaçının (bakım yok).
 
-Enterprise yönetiminde skill ve plugin için bir güvenlik taraması da var (beta, 6 Ağustos 2026'dan beri); ama bu sizin kendi değerlendirmenizin yerini tutmaz.
+Enterprise yönetiminde [skill](/wiki/sozluk/#skill) ve plugin için bir güvenlik taraması da var (beta, 6 Ağustos 2026'dan beri); ama bu sizin kendi değerlendirmenizin yerini tutmaz.
 
 ### 4. KVKK Veri Sızıntısı
 

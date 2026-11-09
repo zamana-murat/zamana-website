@@ -1,6 +1,6 @@
 ---
 title: "Claude Skills: Claude'a Çalışma Usulünüzü Öğretin"
-seoTitle: "Claude Skills: Çalışma Usulünüzü Öğretin"
+seoTitle: "Claude Skills Nedir? Çalışma Usulünüzü Öğretin"
 description: "Skill, Claude'a bir işi sizin usulünüzle yapmayı öğreten talimat klasörüdür. Excel ve PowerPoint için hazır skill'ler var, kendinizinkini de yazarsınız."
 eyebrow: "Yetenek"
 lead: "Skill, bir işi sizin usulünüzle nasıl yapacağını Claude'a bir kez anlattığınız klasördür. Sonra aynı işte her seferinde aynı biçimde çalışır; bunu tekrar yazmanız gerekmez."
@@ -16,7 +16,7 @@ related:
   - { label: "Şirket İçi Politika (wiki)", href: "/wiki/temeller/sirket-ici-politika/" }
   - { label: "Takım ve Admin (wiki)", href: "/wiki/temeller/takim-ve-admin/" }
 order: 10
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 ## Nedir?

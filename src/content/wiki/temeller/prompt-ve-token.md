@@ -1,5 +1,6 @@
 ---
 title: "Prompt ve Token: Temel Kavramlar"
+seoTitle: "Token Nedir? Claude'da Prompt ve Token Mantığı"
 description: Prompt nedir, token nedir, neden önemlidir, kalan kullanım hakkınızı nereden görebilirsiniz. Yeni başlayanlar için sade açıklama.
 tags:
   - temeller

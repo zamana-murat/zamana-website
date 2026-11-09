@@ -1,16 +1,27 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="Yönetici AI Hazırlık, 3 Saatlik Hafta Sonu Oturumu | Zamana"
-  description="Yöneticiler için 3 saatlik AI anlama oturumu. AI nedir, ne değildir, şirketinize ne fayda sağlar. Hafta sonu, sizin seçtiğiniz adreste, 15.000 TL + KDV."
+  title="Yöneticiler için Yapay Zeka Eğitimi, 3 Saat | Zamana"
+  description="Yöneticiler için yapay zeka eğitimi: 3 saatlik birebir oturumda AI nedir, ne değildir, şirketinize ne fayda sağlar. Hafta sonu, 15.000 TL + KDV."
   ogImage="/og/programlar-ceo-brifing.png"
 >
 
+  <ProgramSchema
+    name="Yönetici AI Hazırlık"
+    description="Yöneticiler için 3 saatlik tek oturum: yapay zeka nedir, ne değildir, şirkete ne fayda sağlar."
+    url="https://zamana.com.tr/programlar/ceo-brifing/"
+    price={15000}
+    duration="PT3H"
+    courseMode={['onsite', 'online']}
+    audience="Şirketi adına yapay zeka kararı verecek yöneticiler"
+  />
+
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Yönetici AI Hazırlık</span>
+      <span class="eyebrow">Yöneticiler için Yapay Zeka Eğitimi</span>
       <h1>3 saat. AI'ı anlamak. Karar vermek.</h1>
       <p class="lead">
         Yetkinlik kursu değil, anlama oturumu. AI nedir, ne değildir ve şirketinize ne fayda sağlar, hafta sonu sizin seçtiğiniz adreste birebir konuşuyoruz.
@@ -251,6 +262,14 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=ceo-brifing" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/programlar/karsilastirma/" class="btn btn--secondary btn--lg">Programları Karşılaştır</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

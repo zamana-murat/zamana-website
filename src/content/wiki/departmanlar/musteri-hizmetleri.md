@@ -7,7 +7,7 @@ tags:
   - musteri-hizmetleri
   - sikayet-yonetimi
   - sosyal-medya
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Müşteri hizmetleri en duygusal yüklü departmanlardan biridir: stres ve zaman baskısı altında doğru şeyi söylemek gerekir. Claude burada en büyük değeri, temsilcinin **zor anlarda doğru kelimeleri bulmasına yardım ederek** katar.
@@ -104,7 +104,7 @@ Uluslararası müşterilere hizmet veren şirketlerde Claude, İngilizce (veya b
 - `docx`: FAQ belgeleri, politikalar
 - `pdf`: resmi müşteri bildirimleri
 - [Hafıza (Memory)](/wiki/yetenekler/memory/) ve Projects: müşteri bağlamı için (ürün detayları, bilinen sorunlar, şirket politikaları)
-- Anthropic'in Cowork için açık kaynak eklenti deposunda (knowledge-work-plugins) `customer-support` klasörü var; içerikleri sürüme göre değişir, kurulu skill'leri Skills listenizden kontrol edin
+- Anthropic'in Cowork için açık kaynak eklenti deposunda (knowledge-work-plugins) `customer-support` klasörü var; içerikleri sürüme göre değişir, kurulu [skill](/wiki/sozluk/#skill)'leri Skills listenizden kontrol edin
 
 **Connector'lar:**
 1. **CRM**: müşteri geçmişi
@@ -140,6 +140,8 @@ Pazartesi sabahı Şikayetvar'da markanız hakkında bir şikayet yayımlanmış
 - **Otomatik gönderim.** Akış "Claude yanıt, temsilci onay, gönderim" olmalı; Claude taslak asistanıdır, otomatik yanıtlayıcı değil. *(Zamana eğitim materyali)*
 - **Müşteri verisini olduğu gibi yapıştırmak.** Sipariş numarası, müşteri kimliği, kişisel veriyi anonimleştirin. Müşteri verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, veri ayarları); zorunlu değil. Yurt dışı aktarım için [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasına bakın.
 - **Fazla empatiye kaymak.** Bazı şikayetlerde net bir pozisyon gerekir; fazla empati pozisyonu zayıflatabilir. Taslakta "haklıyız" ya da "haksızız" kararını önce siz verin.
+
+Yanıt tonunun ekip genelinde tutarlı kalması için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programı, kendi şablonlarınızla çalışır.
 
 ## İlgili Sayfalar
 

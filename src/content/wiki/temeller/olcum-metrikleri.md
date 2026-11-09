@@ -1,5 +1,6 @@
 ---
 title: Ölçüm Metrikleri ve ROI Çerçevesi
+seoTitle: "Yapay Zeka ROI Nasıl Ölçülür? Claude Metrikleri"
 description: "Claude'un şirketinizdeki etkisini nasıl ölçersiniz? Zaman, kalite, otomasyon, üç birincil metrik, baseline kurma ve aralıklı denetim rehberi."
 tags:
   - temeller

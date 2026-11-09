@@ -7,7 +7,7 @@ tags:
   - idari-isler
   - yonetici-asistani
   - toplanti
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Yönetici asistanı ve idari personel, Claude ile haftada saatlerce zaman kazanabilir. Bu zaman, **zaten yapmaları gereken ama vakit bulamadıkları** yüksek değerli işlere gider.
@@ -129,6 +129,8 @@ Eğitimlerde idari ekiplerin en çok takıldığı üç nokta (Zamana eğitim ma
 - **Yönetici sesini yakalamak.** İlk 5-10 e-postada ton tutmayabilir. Yönetici ile birlikte düzeltin ve düzeltmeleri CLAUDE.md'ye işleyin.
 - **Hassas yönetici bilgisi.** Strateji ve personel kararı gibi konular yöneticinin onayı olmadan paylaşılmaz, Claude'a da yazılmaz. Şirket yazışması işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
 - **Her e-postayı aynılaştırmak.** "Standart e-posta atayım" diye tüm yazışmayı tek kalıba sokmayın; ilişki taşıyan kişilere özel yazın.
+
+Yönetici asistanlığı ve ofis yönetiminde toplantı tutanağı en çok zaman alan iştir; adım adım yöntem için [Claude ile Toplantı Notu](/wiki/gorevler/claude-ile-toplanti-notu/) rehberine bakın. Yöneticinizin kendisi için kısa bir giriş arıyorsanız [Yönetici AI Hazırlık](/programlar/ceo-brifing/) 3 saatlik tek oturumdur.
 
 ## İlgili Sayfalar
 

@@ -7,7 +7,7 @@ tags:
   - turizm
   - otel
   - misafir-iletisim
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Türkiye'de turizm stratejik bir sektör: ekonominin önemli bir dilimi, milyonlarca uluslararası misafir ve çok dilli iletişim zorunluluğu. Otel, acente ve tur operatörü için **dil çeşitliliği, kesintisiz misafir iletişimi ve online yorum yönetimi**, Claude'un hızlı değer ürettiği alanlardandır.
@@ -264,6 +264,8 @@ Otel iletişim sorumlusu için temel yapı:
 ## Sezon Dışı Strateji
 
 Kasım-Mart arası sezon dışıdır. Çoğu otel personeli azaltır, içerik üretimi tamamen durur. Claude **sezon dışı dönemi** içerik üretim mevsimine çevirir: sezon boyunca yetecek blog, sosyal medya ve e-posta serisi bu aylarda hazırlanabilir.
+
+Resepsiyon, rezervasyon ve pazarlama ekiplerinin ortak yöntem kurması için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) seçeneğine bakabilirsiniz.
 
 ## İlgili Sayfalar
 

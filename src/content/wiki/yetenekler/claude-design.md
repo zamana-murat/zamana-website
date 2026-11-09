@@ -8,7 +8,7 @@ tags:
   - tasarim
   - sunum
   - gorsel
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Claude Design, Claude ile birlikte görsel iş ürettiğiniz bir Anthropic Labs ürünüdür.** 17 Nisan 2026'da tanıtıldı. Metin yerine **tasarım, prototip, sunum ve one-pager** gibi görsel çıktıları konuşarak, adım adım birlikte oluşturmanızı sağlar.

@@ -5,7 +5,7 @@ description: "Claude'u nerede kullanırsınız: Chat, Projects, Desktop, Cowork,
 tags:
   - araclar
   - giris
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Claude'u kullanmanın birden fazla yolu var. Hangisinin hangi iş için doğru olduğu, üretkenlikte ciddi fark yaratır.**
@@ -44,7 +44,7 @@ Bu bölüm Claude'un temel araçlarını tanıtır. Her biri farklı bir senaryo
 
     ---
 
-    Claude'u sohbet arayüzünden tam bir çalışma ortamına dönüştüren özellik. Dosyalar, kod, connector'lar.
+    Claude'u sohbet arayüzünden tam bir çalışma ortamına dönüştüren özellik. Dosyalar, kod, [connector](/wiki/sozluk/#connector)'lar.
 
     [→ Cowork Modu](/wiki/araclar/cowork-modu/)
 
@@ -138,7 +138,7 @@ Başlangıç için basit bir karar ağacı:
 
 Araçlar kavramsal olarak soru-cevap ağırlıklı (Chat, Projects, Voice Mode) ve çalışma ağırlıklı (Desktop, Cowork, Scheduled Tasks) diye iki gruba ayrılır. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude arayüzünde birleşiyor (kademeli yayılım; Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda), bu yüzden ayrım giderek ürün seçimi değil **iş türü** ayrımına dönüşüyor. Karşılaştırma tablosu tek yerde, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında.
 
-Kısa özet: sohbet kurulum gerektirmez; dosya yükleme, web araması, artifact, skill, connector ve kod çalıştırma claude.ai'de Free dahil tüm planlarda vardır. Yerel klasörlerle çalışmak, zamanlanmış görev kurmak ve çok adımlı işi baştan sona devretmek ise Cowork ister; Cowork en az Pro abonelik gerektirir. Yeni başlayan kullanıcı için ilk ay Max (eski adı Max 5x) önerilir (öneri, zorunlu değil).
+Kısa özet: sohbet kurulum gerektirmez; dosya yükleme, web araması, artifact, [skill](/wiki/sozluk/#skill), connector ve kod çalıştırma claude.ai'de Free dahil tüm planlarda vardır. Yerel klasörlerle çalışmak, zamanlanmış görev kurmak ve çok adımlı işi baştan sona devretmek ise Cowork ister; Cowork en az Pro abonelik gerektirir. Yeni başlayan kullanıcı için ilk ay Max (eski adı Max 5x) önerilir (öneri, zorunlu değil).
 
 ## Önerilen Adaptasyon Yolu
 

@@ -1,0 +1,70 @@
+---
+title: "Plan Seçici: Size Hangi Claude Planı Uygun?"
+seoTitle: "Claude Plan Seçici: Hangi Plan Size Uygun?"
+description: "Beş soruyla Free, Pro, Max, Ultra, Team ya da Enterprise önerisi alın; USD fiyatı ve yaklaşık TL karşılığını görün. Mantık açık."
+tags:
+  - temeller
+  - planlar
+  - hesaplayici
+  - fiyat
+lastUpdated: "2026-11-09"
+---
+
+import PlanSecici from '../../../components/wiki/PlanSecici.astro';
+
+**"Hangi Claude planını almalıyım?"** sorusunun tek doğru cevabı yoktur; cevap kaç kişi olduğunuza, Claude'u ne kadar yoğun kullandığınıza ve yönetim ihtiyacınıza göre değişir. Aşağıdaki araç beş soru sorar ve Free, Pro, Max, Ultra, Team Standard, Team Premium ya da Enterprise planlarından birini kısa bir gerekçeyle önerir. Sonuçta plan fiyatını USD olarak, kişi sayınıza göre TL karşılığını da yaklaşık olarak görürsünüz.
+
+Bu bir öneridir, zorunluluk değildir. Yeni başlayanlara ilk ay Max öneririz, çünkü Pro'nun limitine yeni kullanıcı çabuk çarpar; ama Pro ile başlayıp gerekirse yükseltmek de olur. Team planı merkezi yönetim, faturalama ve veri kontrolü için önerilir, şart değildir. Zamana abonelik satmaz; satın alma doğrudan Anthropic'ten yapılır (claude.com/pricing). Cevaplarınız hiçbir yere gönderilmez, hesap tarayıcınızda yapılır. Sorular kişisel veri istemez; kişi sayısı ve kur dışında yalnızca kullanım alışkanlığınızı sorar. Sonuç kartında ilgili wiki sayfalarına ve ekipler için kurumsal programa bağlantılar da bulunur.
+
+<PlanSecici />
+
+## Hızlı karar tablosu
+
+JavaScript kapalıysa ya da aracı kullanmadan karar vermek isterseniz, soldan sağa okuyun. Fiyatlar USD, vergi hariç, kişi başı aylıktır (2026-11-08 itibarıyla).
+
+| Durumunuz | Plan | Aylık ödeme | Yıllık ödeme |
+|---|---|---|---|
+| Denemek istiyorum, hafif ve ara sıra kullanım | Free | 0 USD | yok |
+| Tek kişi, düzenli ama orta düzey kullanım | Pro | 20 USD | 17 USD / ay (200 USD peşin) |
+| Tek kişi, yoğun kullanım ya da Cowork; yeni başlıyorsam ilk ay | Max (eski adı Max 5x) | 100 USD | yok, yalnız aylık |
+| Tek kişi, Max'in limitine sık çarpıyorum | Ultra (eski adı Max 20x) | 200 USD | yok, yalnız aylık |
+| 2-150 kişi, merkezi fatura, SSO ve paylaşılan projeler, standart kullanım | Team Standard | 25 USD / koltuk | 20 USD / koltuk / ay |
+| 2-150 kişi, merkezi yönetim ve yoğun kullanım | Team Premium | 125 USD / koltuk | 100 USD / koltuk / ay |
+| Denetim kaydı, rol bazlı yetki, uyum; 20 koltuk ve üzeri | Enterprise | 20 USD / koltuk (yıllık faturalı) + kullanım API fiyatıyla | yıllık taahhüt |
+
+Merkezi yönetim ihtiyacınız yoksa 2 kişilik bir ekip de herkesin kendi Pro ya da Max hesabıyla çalışabilir; Team'e geçmek zorunlu değildir. Tüm planların özellik karşılaştırması [Planlar](/wiki/temeller/planlar/) sayfasında.
+
+## Nasıl karar veriyoruz
+
+Araç beş cevabı basit bir kural zinciriyle birleştirir. Gizli bir puanlama ya da yönlendirme yoktur; mantığın tamamı burada.
+
+1. **Kullanım düzeyi.** Yoğunluk sorusu bir taban düzey verir: yeni başlayan Max (ilk ay önerisi), hafif ve orta kullanım Pro, yoğun kullanım Max, "limitime sık çarpıyorum" Ultra. Cowork, dosya düzenleme ve çok adımlı işler sık yapılacaksa düzey bir basamak yükselir, çünkü bu işler kotayı hızlı tüketir.
+2. **Bütçe tavanı.** Bütçe, düzeyi aşağı çeker. "Ücretsiz" Free, "yaklaşık 20 USD" en fazla Pro ya da Team Standard, "yaklaşık 100 USD" en fazla Max ya da Team Premium (yıllık ödeme) demektir. Tavan ihtiyacın altında kalırsa sonuç kartında bu açıkça yazılır; kota bitince usage credits ile devam edilebilir.
+3. **Ekip ve yönetim.** Tek kişi için bireysel planlar. İki kişi ve üzeri için merkezi fatura, SSO ve paylaşılan proje istiyorsanız Team; denetim kaydı, rol bazlı yetki ve uyum denetimi gerekiyorsa ve ekip 20 kişi ya da üzerindeyse Enterprise. Yönetim ihtiyacınız yoksa Team önerilmez.
+4. **Team içinde Standard ve Premium.** Düzey Max ve üzeriyse Premium, altındaysa Standard önerilir. Koltuk tipleri karıştırılabildiği için yoğun kullananlara Premium, diğerlerine Standard vermek çoğu ekip için daha ekonomiktir.
+
+Bu araç bir **başlangıç noktasıdır**. Gerçek kullanımınızı iki hafta izlemeden büyük bir taahhüt vermeyin; kota davranışı için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/), Team ve Enterprise farkı için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfalarına bakın. Seçtiğiniz planın kendini ödeyip ödemediğini [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) ile sınayabilirsiniz.
+
+## TL karşılığı nasıl hesaplanıyor?
+
+Fiyatlar USD'dir; kartınızdan çekilen tutarı bankanız kendi kuruyla TL'ye çevirir. Araç şu basit yaklaşımı kullanır, [Planlar](/wiki/temeller/planlar/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarındakiyle aynıdır:
+
+```
+Aylık TL (KDV hariç) = Kişi sayısı × Aylık USD fiyat × Kur
+Aylık TL (KDV dahil) = Aylık TL (KDV hariç) × 1,20
+```
+
+- **Kur:** varsayılan 40 TL/USD'dir ve bir **Ekim 2026 varsayımıdır**, o günün canlı kuru değildir. Kendi bankanızın kurunu yazarak güncelleyin.
+- **KDV:** Türkiye faturalama adresiyle ödemede %20 KDV eklendiği bildirilmektedir; ödeme ekranındaki toplam esastır. KDV mükellefi şirketlerde bu KDV çoğu zaman 2 No'lu beyanname ve indirimle net sıfıra yaklaşır, bu yüzden araç "KDV hariç" tutarı birincil, "KDV dahil" tutarı ikincil gösterir. Kesin uygulama için mali müşavirinize danışın.
+- **Enterprise:** gösterilen tutar yalnız koltuk ücretinin alt sınırıdır; kullanım API fiyatıyla ayrıca faturalanır, bu yüzden toplam öngörülemez.
+- **Yıllık ödeme:** Pro ve Team'de yıllık seçenek aylık eşdeğeri düşürür; kutuda ayrıca gösterilir, TL karşılığı aylık ödeme üzerinden hesaplanır.
+
+Fiyatlar Anthropic'in resmi sayfalarından doğrulanmıştır ve değişebilir; güncel tutar için [claude.com/pricing](https://claude.com/pricing) sayfasına bakın.
+
+## İlgili sayfalar
+
+- [Planlar](/wiki/temeller/planlar/): tüm planların özellik ve fiyat karşılaştırması
+- [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/): 5 saatlik pencere, haftalık limit, usage credits
+- [Takım ve Admin](/wiki/temeller/takim-ve-admin/): Team ve Enterprise yönetimi
+- [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): 2 No'lu beyanname, stopaj, gider yazımı
+- [Kurumsal program](/programlar/kurumsal/): planı aldıktan sonra ekibin gerçekten kullanması için

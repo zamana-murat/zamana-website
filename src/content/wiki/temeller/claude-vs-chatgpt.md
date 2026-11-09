@@ -7,7 +7,7 @@ tags:
   - claude
   - chatgpt
   - karsilastirma
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 "Claude mu ChatGPT mi?" sorusu en çok sorulan sorulardan biridir. Kısa ve dürüst cevap şu:
@@ -284,6 +284,7 @@ Hâlihazırda ChatGPT kullanıyor ve Claude'a geçmeyi düşünüyorsanız, terc
 
 ## İlgili Sayfalar
 
+- [Hangi Yapay Zeka? Karar Rehberi](/wiki/temeller/hangi-yapay-zeka/): ChatGPT, Gemini, Copilot, Perplexity, DeepSeek ve Claude tek tabloda
 - [Claude Nedir?](/wiki/temeller/claude-nedir/): Temel kavram
 - [Claude Modelleri](/wiki/temeller/modeller/): Fable / Opus / Sonnet / Haiku
 - [Claude Planları](/wiki/temeller/planlar/): Fiyat ve özellik detayları

@@ -7,7 +7,7 @@ tags:
   - satis
   - is-gelistirme
   - crm
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Bu sayfa, satış ekibinin Claude ile en çok zaman kazandığı yerleri ve bu departmanda kurulan tipik iş akışlarını anlatır. Salesforce kullanıyorsanız ilgili eklenti için Skills bölümündeki nota bakın.
@@ -101,7 +101,7 @@ Bu departman için önerilen prompt koleksiyonu:
 - `sales:call-prep`: satış görüşmesi hazırlığı
 - `sales:account-research`: şirket / kişi derinlemesine araştırma
 - `sales:draft-outreach`: kişiselleştirilmiş outreach
-- Görüşme sonrası debrief için benzer bir skill (aksiyon maddeleri, ekip mesajı, müşteri takip e-postası): adı plugin sürümüne göre değişir, Skills listenizden kontrol edin
+- Görüşme sonrası debrief için benzer bir [skill](/wiki/sozluk/#skill) (aksiyon maddeleri, ekip mesajı, müşteri takip e-postası): adı plugin sürümüne göre değişir, Skills listenizden kontrol edin
 
 > **Salesforce in Claude (beta, 15 Eylül 2026):** Salesforce kullanan ekipler için 37 satış becerisi içeren, tüm ücretli planlarda kullanılabilen bir eklenti. Günlük özet, görüşme hazırlığı, anlaşma analizi ve kapanış planı, toplantı sonrası güncelleme ve pipeline incelemesi gibi akışları kapsıyor; Salesforce'taki mevcut yetkiler aynen geçerli. Kurulumu organizasyon yöneticisi yapar, ayrıntı haberde. Yukarıdaki `sales:*` skill adları plugin sürümüne göre değişebilir, kurulu olanları Skills listenizden kontrol edin. Bu ürün Salesforce ve Anthropic'in eklentisidir; Zamana bayi değildir, satın alma doğrudan Anthropic'ten yapılır. Bkz: [haber](/haberler/2026-09-15-salesforce-claude-icinde/).
 
@@ -150,6 +150,8 @@ Aynı yaklaşım satışın ötesinde de işe yarar: müşteri başarısı, iş 
 - **Hassas veriyi olduğu gibi yapıştırmak.** Müşteri adı ve anlaşma rakamını anonimleştirin ya da `[MÜŞTERİ]` gibi bir yer tutucu kullanın. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, veri ayarları); zorunlu değil.
 - **Claude'un müşteri ve pazar hakkında söylediğini doğrulamamak.** Bilmediği şeyi uydurabilir, özellikle pazar verilerinde. Rakam ve iddiayı toplantıya girmeden kaynağından kontrol edin.
 - **Kütüphaneyi kurup bırakmak.** 5 prompt eklendiğinde "yine de elle yazarım" refleksi doğaldır; yatırımın karşılığı genellikle birkaç hafta sonra görünür, vazgeçmeyin. *(Zamana eğitim materyali)*
+
+Satış ekibinin tamamı aynı alışkanlığı kazanmadıkça kazanım bireysel kalır; ekibinizle bunu birlikte oturtmak için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programına bakabilirsiniz. Müşteri sunumu taslağı için [Claude ile Sunum](/wiki/gorevler/claude-ile-sunum/) rehberi işinize yarar.
 
 ## İlgili Sayfalar
 

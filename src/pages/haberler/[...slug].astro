@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import '../../styles/wiki.css';
 import { getHaberler, formatDateTr, haberPath, type Haber } from '../../data/haberler';
-import { composeTitle } from '../../data/seo';
+import { composeTitle, ORG_REF } from '../../data/seo';
 
 export async function getStaticPaths() {
   const haberler = await getHaberler();
@@ -35,13 +35,8 @@ const newsSchema = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
   url: pageUrl,
   ...(tags && tags.length > 0 ? { keywords: tags.join(', ') } : {}),
-  author: { '@type': 'Organization', name: 'Zamana', url: SITE },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Zamana',
-    url: SITE,
-    logo: { '@type': 'ImageObject', url: `${SITE}/images/zamana-logo.webp` },
-  },
+  author: ORG_REF,
+  publisher: ORG_REF,
   isBasedOn: { '@type': 'CreativeWork', url: source, name: sourceTitle, publisher: { '@type': 'Organization', name: 'Anthropic' } },
 };
 
@@ -60,6 +55,7 @@ const breadcrumbSchema = {
   title={composeTitle(title, ' | Zamana Haberler', seoTitle)}
   description={description}
   ogImage={ogImage}
+  ogType="article"
   publishDate={date}
   modifiedDate={date}
   skipAutoBreadcrumb

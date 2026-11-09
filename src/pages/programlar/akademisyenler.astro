@@ -1,16 +1,30 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="Akademisyenler için Araştırma ve Yazım Programı | Zamana"
-  description="Akademisyen ve araştırmacılara 3 haftalık birebir Claude eğitimi: literatür, kaynak doğrulama, proje ve makale yazımı, kodsuz veri analizi. 30.000 TL + KDV."
+  title="Akademisyenler için Yapay Zeka Eğitimi, Claude | Zamana"
+  description="Akademisyenler için yapay zeka eğitimi: 3 haftalık birebir Claude programı, literatür, kaynak doğrulama, makale ve proje yazımı. 30.000 TL + KDV."
   ogImage="/og/programlar-akademisyenler.png"
 >
 
+  <ProgramSchema
+    name="Akademisyenler için Araştırma ve Yazım Programı"
+    description="Akademisyen ve araştırmacılara 3 haftalık Claude eğitimi: literatür, kaynak doğrulama, proje ve makale yazımı, kodsuz veri analizi."
+    url="https://zamana.com.tr/programlar/akademisyenler/"
+    duration="P3W"
+    courseMode={['online', 'onsite']}
+    audience="Öğretim üyeleri, araştırmacılar ve doktora öğrencileri"
+    offers={[
+      { name: 'Tek kişi, akademik fiyat', price: 30000 },
+      { name: 'Araştırma grubu veya bölüm (3-6 kişi)', price: 75000 },
+    ]}
+  />
+
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Akademisyenler için Araştırma ve Yazım</span>
+      <span class="eyebrow">Akademisyenler için Yapay Zeka Eğitimi</span>
       <h1>3 hafta. Kendi araştırmanız. Her kaynak doğrulanmış.</h1>
       <p class="lead">
         Literatür, proje başvurusu, makale taslağı, ders materyali ve veri analizi için Claude'u kendi akademik işiniz üzerinden öğrenirsiniz.
@@ -304,6 +318,14 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=akademisyenler" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/programlar/" class="btn btn--secondary btn--lg">Tüm Programlar</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

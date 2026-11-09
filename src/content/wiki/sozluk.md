@@ -6,7 +6,7 @@ tags:
   - sozluk
   - terimler
   - referans
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Claude ekosistemindeki terimlerin sade Türkçe karşılıkları. Her terim için kısa açıklama ve, varsa, detaylı sayfaya bağlantı.
@@ -18,8 +18,8 @@ Claude ekosistemindeki terimlerin sade Türkçe karşılıkları. Her terim içi
 **Adaptif Düşünme (Adaptive thinking)**
 Claude'un görev karmaşıklığına göre cevap vermeden önce ne zaman ve ne kadar derin düşüneceğine kendisinin karar vermesi. Güncel modellerde varsayılan yöntemdir. Thinking ve effort ile ilişkisi için bkz. [Effort Control](/wiki/yetenekler/effort-control/).
 
-**Agent**
-Claude'un birden fazla adım boyunca otonom çalışıp araçlar kullanarak karmaşık görevleri tamamladığı çalışma biçimi. Detay: [Agents ve Subagents](/wiki/yetenekler/agents-subagents/).
+<a id="agent"></a>**Agent (Yapay Zeka Ajanı)**
+Yapay zeka ajanı: Claude'un birden fazla adım boyunca otonom çalışıp araçlar kullanarak karmaşık görevleri tamamladığı çalışma biçimi. Detay: [Agents ve Subagents](/wiki/yetenekler/agents-subagents/).
 
 **AGENTS.md**
 Claude Code'da, klasörde CLAUDE.md yoksa proje talimatı olarak okunan yedek dosya. Geliştirici aracıdır; iş kullanıcısının bilmesi şart değildir. Detay: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
@@ -35,10 +35,10 @@ Anthropic'in modellerin yetenek seviyesini sınıflandırma sistemi (ASL-1 ile A
 
 ## B
 
-**Bağlayıcı (Connector)**
+<a id="connector"></a>**Bağlayıcı (Connector)**
 Claude'u Gmail, Drive, Slack, Notion, CRM gibi üçüncü taraf servislere bağlayan entegrasyon; çoğu OAuth ile yetkilendirilir. Resmi dizinde 1.000'den fazla hazır connector bulunur, MCP ile özel connector da eklenebilir. Logo, Mikro, Paraşüt gibi Türk iş araçlarında resmi connector durumu farklıdır. Detay: [Connectors](/wiki/araclar/connectors/), [MCP Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) ve [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/).
 
-**Bağlam Penceresi (Context Window)**
+<a id="baglam-penceresi"></a>**Bağlam Penceresi (Context Window)**
 Claude'un bir sohbette aynı anda görebildiği ve akıl yürütebildiği toplam metin. Plana göre değil modele göre değişir: Fable 5.1, Opus 5.5 ve Sonnet 5.5 için 1M token, Haiku 5.5 için 1M, legacy Haiku 4.5 için 200K. Uzun belgede sorunuzu belgeden sonra, en sona yazmak yanıtı iyileştirir. Detay: [Context ve Compaction](/wiki/yetenekler/context-compaction/) ve [Belgeyle Çalışma](/wiki/prompting/belgeyle-calisma/).
 
 **Bash / Bash tool**
@@ -54,6 +54,9 @@ Modelin eğitiminden sonraki olayları kendiliğinden bilmediği tarih. Fable 5.
 
 **Chain-of-thought (Zincirleme Düşünme)**
 Cevaptan önce Claude'dan adım adım akıl yürütmesini isteyen prompting tekniği. Thinking açıkken "adım adım düşün" demek önerilmez; genel bir talimat ("iyice düşün") çoğu zaman elle yazılmış adım planından iyidir. Elle zincirleme düşünce, thinking kapalıyken yedek yöntemdir. Detay: [İleri Seviye Prompt Engineering](/wiki/prompting/ileri-seviye/).
+
+<a id="claude-okunusu"></a>**Claude (okunuşu)**
+Türkçede genellikle "Klod" diye okunur (İngilizce telaffuza yakın). Yazıda "Claude" olarak bırakılır; modelin adı Anthropic tarafından verilmiştir.
 
 **Claude Academy**
 Anthropic'in ücretsiz kurs platformu (academy.claude.com, eski adıyla Anthropic Academy). Kurslar arasında AI Fluency, Claude 101 ve Cowork girişi bulunur; tamamlayana rozet ya da sertifika verilir. Detay: [4D Çerçevesi](/wiki/prompting/4d-cercevesi/).
@@ -94,7 +97,7 @@ Claude'un masaüstü Google Chrome'da yan panelde açılıp sayfayı okuduğu, t
 **Claude Max**
 Aylık 100 USD bireysel plan (eski adı Max 5x), Pro'nun 5 katı limit. Yeni başlayan kullanıcının ilk ayı için önerilir, agresif keşif ritminde Pro limiti yetmez. Zorunlu değildir; ay 2+ kullanıma göre Pro'ya indirilebilir. Aylık 100 USD API kredisi içerir (Claude Console'daki API kullanımı için; Claude Code ve Cowork'ü kapsamaz). Detay: [Planlar](/wiki/temeller/planlar/).
 
-**CLAUDE.md**
+<a id="claude-md"></a>**CLAUDE.md**
 Çalışma klasöründe duran kalıcı talimat dosyası. Yerel Cowork oturumu (masaüstü, klasör bağlı) ve Claude Code okur; sohbet okumaz, bulut Cowork oturumunda okunduğu belgelenmemiştir. Sohbetteki karşılığı için bkz. Instructions for Claude. Detay: [CLAUDE.md Nedir?](/wiki/claude-md/nedir/).
 
 **Claude Motion**
@@ -127,7 +130,7 @@ Anthropic'in geliştirdiği AI eğitim yöntemi: modelin "anayasa"ya göre kendi
 **Context Compaction (Bağlam Sıkıştırma)**
 Bağlam penceresi dolmaya yaklaşırken eski mesajların otomatik özetlenmesi, uzun oturumları ayakta tutar. claude.ai'de code execution açıkken çalışır, limitten düşmez. Detay: [Context ve Compaction](/wiki/yetenekler/context-compaction/).
 
-**Cowork**
+<a id="cowork"></a>**Cowork**
 Claude'un çok adımlı otonom çalışma biçimi. Masaüstünde ücretli planlarda genel kullanıma açık, web ve mobilde beta. 16 Eylül 2026'dan beri sohbetle tek Claude içinde birleşiyor (kademeli yayılım; Enterprise'ta birleşik arayüz 23 Ekim 2026'dan beri genel kullanımda). 6 Ekim 2026'dan itibaren Pro, Max ve Ultra'da yeni görevler bulutta çalışır. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
 
 **Cowork Project**
@@ -151,10 +154,10 @@ Veri İşleme Sözleşmesi: KVKK ve GDPR kapsamında veri işleyenle yapılan, k
 
 ## E
 
-**Effort (Çaba seviyesi)**
+<a id="effort"></a>**Effort (Çaba seviyesi)**
 Claude'un bir işe ne kadar derin düşünüp ne kadar token harcayacağını ayarlayan seviye. claude.ai'de gönder düğmesinin yanındaki model menüsünden seçilir; Low, Medium, High, Extra high ve Max kademeleri vardır. Yüksek kademe limiti daha hızlı tüketir. Legacy Haiku 4.5 desteklemez. Detay: [Effort Control](/wiki/yetenekler/effort-control/).
 
-**Extended Thinking / Thinking (Uzatılmış Düşünme)**
+<a id="thinking"></a>**Extended Thinking / Thinking (Uzatılmış Düşünme)**
 Claude'un yanıtı yazmadan önce kendi içinde akıl yürütmesi. Model menüsünde Effort'tan ayrı bir ayardır: Effort ne kadar çaba harcanacağını, Thinking düşünmenin açık olup olmadığını belirler. Güncel modellerin çoğunda kapatılamaz. Detay: [Effort Control](/wiki/yetenekler/effort-control/).
 
 ## F
@@ -178,7 +181,7 @@ Cowork'teki eski adı; artık profil talimatıyla aynı ayardır (Settings > Gen
 **Hook (Prompt Hook'u, Güvenlik Merkezi)**
 Enterprise'ta Claude'dan giden istemleri ya da araç çağrılarını kendi güvenlik aracınıza (ör. DLP) kontrole gönderen mekanizma. 5 Kasım 2026'da gelen güvenlik paketinin parçasıdır; güvenlik merkezi ise ayarları Anthropic'in önerdiği yapılandırmayla karşılaştırır (beta). Detay: [Takım ve Admin](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026).
 
-**Halüsinasyon (Hallucination)**
+<a id="halusinasyon"></a>**Halüsinasyon (Hallucination)**
 Claude'un emin ama yanlış bilgi üretmesi. Detay: [Claude'un Sınırları](/wiki/temeller/sinirlamalar/).
 
 ## I
@@ -216,7 +219,7 @@ Akreditif, uluslararası ticarette bankanın alıcı adına satıcıya ödeme ga
 **Live Artifact**
 Cowork artifact'ı; connector'lara bağlanır ve her açıldığında güncel veriyle tazelenir. 19 Ağustos 2026'dan beri "legacy" biçimdir: mevcutlar çalışmaya devam eder ama yerinde düzenlenemez, bu tarihten sonra oluşturulanlar standart artifact'tir. Detay: [Artifacts](/wiki/yetenekler/artifacts/).
 
-**LLM (Large Language Model)**
+<a id="llm"></a>**LLM (Large Language Model)**
 Büyük Dil Modeli, Claude'un ait olduğu AI kategorisi. Detay: [Claude Nedir?](/wiki/temeller/claude-nedir/).
 
 **LOI (Letter of Intent)**
@@ -224,7 +227,7 @@ Niyet Mektubu, uluslararası ticarette alıcı veya satıcının açılış pozi
 
 ## M
 
-**MCP (Model Context Protocol)**
+<a id="mcp"></a>**MCP (Model Context Protocol)**
 Açık standart, Claude ↔ dış servis bağlantıları için. Detay: [MCP Nedir?](/wiki/mcp/nedir/).
 
 **Masaüstü Uzantısı (.mcpb)**
@@ -260,19 +263,22 @@ Skill'ler, MCP connector'ları ve subagent'ların kurulabilir paketi. Detay: [Sk
 **Private Marketplace (Özel Marketplace)**
 Yalnızca şirketin onayladığı plugin'lerden oluşan, kurum içi dağıtım kataloğu. Team ve Enterprise'ta owner kurar (Cowork ve Skills açık olmalı); gruba göre farklı kurulum kuralı yalnız Enterprise'tadır. Genel katalog için bkz. Claude Marketplace. Detay: [Skills](/wiki/yetenekler/skills/).
 
-**Project (claude.ai)**
+<a id="project"></a>**Project (claude.ai)**
 Claude Chat'teki kalıcı çalışma alanı, bilgi tabanı ve proje talimatıyla. Free'de en çok 5 proje açılır. Detay: [Projects](/wiki/araclar/projects/).
 
 **Proje Talimatı (Project instructions)**
 Yalnız o Project içindeki sohbetlerde geçerli talimat; hesap geneli olan profil talimatından ayrıdır. Tüm planlarda vardır. Detay: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
-**Prompt**
+<a id="prompt"></a>**Prompt**
 Claude'a gönderdiğiniz talimat veya mesaj. Detay: [Prompt ve Token](/wiki/temeller/prompt-ve-token/).
+
+<a id="prompt-muhendisligi"></a>**Prompt Mühendisliği (Prompt Engineering)**
+İstenen çıktıyı almak için talimatı düzenleme işi. İş kullanıcısı için dürüst not: sihirli kalıp ya da ayrı bir meslek gerekmez; neyi, kim için, hangi biçimde istediğinizi açık yazmak ve ilk yanıtı birkaç tur düzeltmek çoğu işe yeter. Detay: [Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/).
 
 **Prompt Chaining**
 Karmaşık bir görevi ardışık prompt'lara bölmek: her çıktı sıradakinin girdisi olur. Detay: [İleri Seviye](/wiki/prompting/ileri-seviye/).
 
-**Prompt Injection**
+<a id="prompt-injection"></a>**Prompt Injection**
 Dış kaynaklı (e-posta, web) içeriğe gizlenmiş, Claude'u kötü davranışa yönlendirme amaçlı saldırı. Detay: [MCP Güvenlik](/wiki/mcp/guvenlik/).
 
 **Prompt Library (Prompt Kütüphanesi)**
@@ -283,7 +289,7 @@ Anthropic'in kurumsal yapısı: kâr amacının yanında kamu yararını da göz
 
 ## R
 
-**RAG (Retrieval Augmented Generation)**
+<a id="rag"></a>**RAG (Retrieval Augmented Generation)**
 Bilgi tabanındaki belgelerden yalnız ilgili parçaları getirip kullanan teknoloji. Claude'da Project bilgi tabanı büyüdüğünde ücretli planlarda devreye girer. Detay: [Projects](/wiki/araclar/projects/).
 
 **Research (Derin Araştırma)**
@@ -306,7 +312,7 @@ Claude'un kodu güvenle çalıştırdığı izole hesaplama ortamı. Detay: [Cod
 **Scheduled Task (Zamanlanmış Görev)**
 Kullanıcı başlatmadan belirli aralıkla çalışan otomasyon. Bulutta oluşturulan zamanlanmış görevler yerel klasör ve yerel connector kullanamaz. Detay: [Scheduled Tasks](/wiki/araclar/scheduled-tasks/).
 
-**Skill**
+<a id="skill"></a>**Skill**
 Özel görevler için önceden inşa edilmiş talimat seti; tüm planlarda vardır, Cowork'te `/skill-adi` ile çağrılır, Claude ilgili görürse kendisi de yükler. Eski Styles özelliği Skills'e taşınıyor. Detay: [Skills](/wiki/yetenekler/skills/).
 
 **Sorumlu Sıfatıyla KDV (2 No'lu Beyanname)**
@@ -318,7 +324,7 @@ Satış ve Satın Alma Sözleşmesi, uluslararası ticarette bağlayıcı ticari
 **Structured Outputs (Yapılandırılmış Çıktı)**
 API'de Claude'un yanıtını verdiğiniz JSON şemaya uymaya zorlayan özellik. Geliştiriciler içindir; iş kullanıcısı için prompt'ta formatı tarif etmek yeterlidir. Detay: [Çıktı Formatı](/wiki/prompting/cikti-formati/).
 
-**Subagent (Alt-agent)**
+<a id="subagent"></a>**Subagent (Alt-agent)**
 Claude tarafından paralel veya izole bir alt görev için oluşturulan Claude instance'ı. Detay: [Agents ve Subagents](/wiki/yetenekler/agents-subagents/).
 
 **Sycophancy (Onay Eğilimi)**
@@ -346,7 +352,7 @@ Toplam Sahip Olma Maliyeti: sadece satın alma fiyatı değil, tüm yaşam döng
 **Telefondan Görev (Cowork)**
 Telefondaki Claude uygulamasından Cowork'e iş atama; görev bulutta çalışır, dizüstünüz kapalıyken de sürer. Pro, Max, Ultra ve Team'de otomatik açıktır, Enterprise'ta kurum isterse açılır. Eski Dispatch'ten ayrıdır. Detay: [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
 
-**Token**
+<a id="token"></a>**Token**
 Yaklaşık 0.75 İngilizce kelime; bağlam penceresi boyutunun ölçüm birimi. Detay: [Prompt ve Token](/wiki/temeller/prompt-ve-token/).
 
 **TSV (Tab-Separated Values)**

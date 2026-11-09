@@ -1,5 +1,6 @@
 ---
 import { wikiNav } from '../data/wiki-nav';
+import { WIKI_SECTION_LABELS } from '../data/seo';
 
 interface Props {
   slug: string;
@@ -27,6 +28,14 @@ if (section) {
   } else {
     // Deep page — section is an intermediate link.
     trail.push({ label: section.label, href: `/wiki/${section.landingSlug}/` });
+    trail.push({ label: title });
+  }
+} else if (WIKI_SECTION_LABELS[sectionSlug]) {
+  // Section folder without a wiki-nav entry yet (e.g. gorevler): use the fallback label.
+  if (segments.length === 1) {
+    trail.push({ label: WIKI_SECTION_LABELS[sectionSlug] });
+  } else {
+    trail.push({ label: WIKI_SECTION_LABELS[sectionSlug], href: `/wiki/${sectionSlug}/` });
     trail.push({ label: title });
   }
 } else if (slug) {

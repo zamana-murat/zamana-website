@@ -8,7 +8,7 @@ tags:
   - teams
   - claude-tag
   - entegrasyon
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Çoğu kurumsal ekibin bilgi akışı Slack veya Microsoft Teams'te akar.** Claude'u bu platformlara bağlamak (geçmiş mesajları okuyabilmesi, kanal özetleyebilmesi, akışın içinde çalışabilmesi) günlük üretkenliğin en görünür kazançlarından biridir.
@@ -17,7 +17,7 @@ Bu sayfa entegrasyon seçeneklerini, kurulumu ve kurumsal IT onayını anlatır.
 
 ## Teams: Resmi Uygulama Yok, Connector Var
 
-Teams içinde resmi bir Claude uygulaması veya botu yok. Anthropic, Claude Tag'in Microsoft Teams sürümü için yalnızca bir bekleme listesi açtı; henüz yayında değil. Geçerli yol Microsoft 365 connector'ıdır (aşağıdaki Model 1). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir, Microsoft 365 admin onayı da gerekebilir.
+Teams içinde resmi bir Claude uygulaması veya botu yok. Anthropic, Claude Tag'in Microsoft Teams sürümü için yalnızca bir bekleme listesi açtı; henüz yayında değil. Geçerli yol Microsoft 365 [connector](/wiki/sozluk/#connector)'ıdır (aşağıdaki Model 1). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir, Microsoft 365 admin onayı da gerekebilir.
 
 Microsoft ekosisteminde ayrıca Excel, PowerPoint ve Word'ün içinde çalışan Claude eklentileri var (Excel, PowerPoint, Word genel kullanımda, Outlook public beta). Bunlar Teams botu değil, ofis uygulamalarının içindeki yardımcıdır: [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
 

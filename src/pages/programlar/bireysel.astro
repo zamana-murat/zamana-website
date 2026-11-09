@@ -1,16 +1,27 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="Bireysel Program, 3 Haftalık Birebir Claude Eğitimi | Zamana"
-  description="3 hafta × 2 saat birebir eğitim + 3 ay sınırsız telefon desteği. Yöneticiler, freelance'lar ve bağımsız profesyoneller için 40.000 TL + KDV."
+  title="Bireysel Claude Eğitimi, 3 Haftalık Birebir Program | Zamana"
+  description="Birebir yapay zeka eğitimi: 3 hafta × 2 saat bireysel Claude eğitimi ve 3 ay sınırsız telefon desteği. Yönetici ve bağımsız profesyoneller için 40.000 TL + KDV."
   ogImage="/og/programlar-bireysel.png"
 >
 
+  <ProgramSchema
+    name="Bireysel Claude Eğitimi, 3 Haftalık Birebir Program"
+    description="3 hafta × 2 saat birebir Claude eğitimi, kendi işiniz üzerinden, 3 ay sınırsız telefon desteği."
+    url="https://zamana.com.tr/programlar/bireysel/"
+    price={40000}
+    duration="P3W"
+    courseMode={['onsite', 'online']}
+    audience="Yöneticiler, freelancer'lar ve bağımsız profesyoneller"
+  />
+
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Bireysel Program</span>
+      <span class="eyebrow">Bireysel Claude Eğitimi</span>
       <h1>3 hafta. Birebir. Kendi işinizle.</h1>
       <p class="lead">
         Yönetici, freelancer veya bağımsız profesyonelseniz birebir oturumlarda, kendi gerçek işiniz üzerinden Claude'u öğrenirsiniz.
@@ -210,6 +221,14 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=bireysel" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/programlar/karsilastirma/" class="btn btn--secondary btn--lg">Kurumsal ile Karşılaştır</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

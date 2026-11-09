@@ -1,6 +1,6 @@
 ---
 title: Claude Modelleri, Güncel Kılavuz
-seoTitle: "Claude Modelleri: Opus mu Sonnet mi? Effort Nedir?"
+seoTitle: "Claude Modelleri 2026: Fable, Opus, Sonnet, Haiku"
 description: "Opus 5.5 mi Sonnet 5.5 mi? Claude'un dört modeli Fable, Opus, Sonnet ve Haiku arasındaki farklar, effort (çaba) nedir, plan erişimi ve bağlam penceresi."
 tags:
   - temeller
@@ -9,8 +9,10 @@ tags:
   - sonnet
   - opus
   - haiku
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
+
+Modeller, [Claude nedir](/wiki/temeller/claude-nedir/) sorusunun "hangi Claude" kısmıdır: aynı asistanın dört farklı gücü ve hızı vardır.
 
 **Kısa cevap, Opus mu Sonnet mi:** Günlük iş için **Sonnet 5.5**. Sonnet'in yetmediği uzun, zor ve çok adımlı işler için **Opus 5.5**. Fable 5.1 yalnız ikisiyle de olmayan çok zor işlerde, Haiku 5.5 hızlı ve hafif işlerde.
 

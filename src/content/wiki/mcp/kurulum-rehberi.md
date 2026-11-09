@@ -6,7 +6,7 @@ tags:
   - mcp
   - kurulum
   - rehber
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **[MCP](/wiki/mcp/nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır; Claude'daki "connector" bir MCP sunucusudur.** Bu sayfa dizinde olmayan bir MCP sunucusunu Claude'a nasıl ekleyeceğinizi anlatır: özel connector (uzak sunucu URL'si) ve masaüstü uzantısı (yerel).
@@ -159,7 +159,7 @@ Kurumsal yönetimin geneli için [Takım ve Admin](/wiki/temeller/takim-ve-admin
 > - `command: npx` Node.js paket yürütücüsüdür; Node.js (v18+) ya da Python 3.10+ kurulu olmalıdır.
 > - `-y` npm'in kurulum onayı sorusunu otomatik geçer. Sürümü güncel tutmaz; sürümü paket adının sonuna `@1.2.3` yazarak sabitlersiniz. Kurumsal kullanımda sürümü sabitlemek önerilir, çünkü beklenmedik bir güncelleme davranışı değiştirebilir.
 > - Son argüman erişim verilen klasördür; tüm disk yerine tek bir çalışma klasörü seçin.
-> - Parola ve token'ı yapılandırma dosyasına yazmayın, ortam değişkeni kullanın; dosyayı git'te tutuyorsanız sırları dışarıda bırakın.
+> - Parola ve [token](/wiki/sozluk/#token)'ı yapılandırma dosyasına yazmayın, ortam değişkeni kullanın; dosyayı git'te tutuyorsanız sırları dışarıda bırakın.
 > - Dosyayı kaydettikten sonra Claude Desktop'ı tamamen kapatıp yeniden açın (yalnız pencereyi kapatmak yetmez).
 > - Sorun halinde sırayla bakın: `npx` PATH'te mi, paket adı doğru mu, JSON sözdizimi geçerli mi (virgül ve tırnak hataları yaygındır), token geçerli mi, Claude Desktop günlükleri ne diyor.
 >

@@ -1,12 +1,13 @@
 ---
 title: "Claude vs Gemini: Hangisi Hangi İşte?"
+seoTitle: "Claude mu Gemini mi? İş İçin Karşılaştırma 2026"
 description: "Google Gemini ile Claude'un dürüst karşılaştırması. Güçlü ve zayıf yönler, Workspace entegrasyonu, hangi senaryoda hangisi tercih edilmeli."
 tags:
   - temeller
   - karsilastirma
   - gemini
   - google
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Gemini, Google'ın amiral AI modelidir**: Workspace (Gmail, Docs, Drive, Calendar) içine derinlemesine entegredir, çoğu Türkiye kurumsalında zaten ücretsiz olarak deneniyor.
@@ -116,6 +117,7 @@ Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik
 
 ## İlgili Sayfalar
 
+- [Hangi Yapay Zeka? Karar Rehberi](/wiki/temeller/hangi-yapay-zeka/): ChatGPT, Gemini, Copilot, Perplexity, DeepSeek ve Claude tek tabloda
 - [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/): OpenAI tarafı
 - [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/): Microsoft tarafı
 - [Modeller](/wiki/temeller/modeller/): Claude'un kendi içindeki seçim

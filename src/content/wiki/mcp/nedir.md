@@ -7,7 +7,7 @@ tags:
   - plugins
   - connector
   - standart
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **MCP (Model Context Protocol), Claude'un dış servislere bağlanmasını sağlayan açık bir standarttır.**
@@ -41,7 +41,7 @@ Dizin connector'ını eklemek için Claude'da **Customize > Connectors** bölüm
 İki terim sık birbirine karışır:
 
 - **Connector** = Claude ile tek bir servis arasındaki bağlantı (örn. Slack, Google Drive)
-- **Plugin** = İlgili skill'leri, connector'ları ve subagent'ları tek kurulumda bir araya getiren paket
+- **Plugin** = İlgili [skill](/wiki/sozluk/#skill)'leri, connector'ları ve subagent'ları tek kurulumda bir araya getiren paket
 
 **Örnek:** Sales plugin kurduğunuzda şunlar birlikte gelir:
 

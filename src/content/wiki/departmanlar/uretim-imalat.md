@@ -8,7 +8,7 @@ tags:
   - imalat
   - oee
   - kalite
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Türkiye sanayisi geniş ve çeşitli: gıda, tekstil, otomotiv yan sanayi, makine, metal, plastik. Üretim hattı her gün veri üretir, ama bu verinin **büyük kısmı hiç okunmaz**; yönetim raporuna dönüşmediği için kaybolur. Claude, üretim verisini iş kararına çevirmeye ve vardiyalar arası iletişimi hızlandırmaya yardım eder.
@@ -208,6 +208,8 @@ Bir otomotiv yan sanayi tesisine müşteriden kritik bir şikayet geldi: sevk ed
 ## Bireysel Kullanım: Üretim Mühendisi
 
 Tek bir üretim mühendisi de ciddi değer alabilir, ekip kurulumuna gerek yoktur.
+
+Vardiya, kalite ve bakım ekiplerinin aynı yöntemi kullanması için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programı var. Vardiya ve kalite raporları için [Claude ile Rapor](/wiki/gorevler/claude-ile-rapor/) rehberine bakın.
 
 ## İlgili Sayfalar
 

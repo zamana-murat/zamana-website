@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import WikiLayout from '../../layouts/WikiLayout.astro';
+import { wikiPublished } from '../../data/wiki-published';
 
 export async function getStaticPaths() {
   const entries = await getCollection('wiki');
@@ -21,6 +22,10 @@ export async function getStaticPaths() {
 
 const { entry, urlSlug } = Astro.props;
 const { Content, headings } = await entry.render();
+// First-publish date from repo history; new pages not in the map fall back to lastUpdated.
+const firstAdded = wikiPublished[urlSlug];
+const lastUpdated = entry.data.lastUpdated;
+const publishDate = firstAdded && (!lastUpdated || firstAdded <= lastUpdated) ? firstAdded : lastUpdated;
 ---
 
 <WikiLayout
@@ -30,6 +35,7 @@ const { Content, headings } = await entry.render();
   description={entry.data.description}
   tags={entry.data.tags}
   headings={headings}
+  publishDate={publishDate}
   modifiedDate={entry.data.lastUpdated}
 >
   <Content />

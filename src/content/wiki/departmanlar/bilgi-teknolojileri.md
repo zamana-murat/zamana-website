@@ -8,7 +8,7 @@ tags:
   - bilgi-teknolojileri
   - powershell
   - kvkk
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 IT departmanı Claude konusunda iki yeni bakış açısıyla tanışmalıdır:
@@ -145,7 +145,7 @@ Sysadmin her Pazartesi sabahı 50 sunucunun disk kullanım durumunu elle kontrol
 
 ## Kurumsal Güvenlik Kontrolleri
 
-BT ekibinin Claude'u şirkete açarken sorduğu ilk sorular genelde "DLP'miz araya girebilir mi, kişisel hesapla girişi engelleyebilir miyiz, uç nokta güvenliği Cowork'ü görür mü" olur. 5 Kasım 2026'dan beri Enterprise'ta prompt hook'larıyla istemler kendi DLP aracınızdan geçer (genel kullanımda), yönetilen bilgisayarlarda Claude Desktop'a dış hesapla giriş engellenir, IP izin listesi panelden kurulur ve güvenlik merkezi ayarları Anthropic'in önerdiği yapılandırmayla karşılaştırır (bu üçü ve yönetim araçlarının çoğu beta ya da duyuruda durumu belirtilmemiş). EDR sensörünün Cowork sanal makinesinde çalışması Team'de de var. Team ve Enterprise'ta ayrıca masaüstü uzantıları (yerel MCP sunucuları) için izin listesi açılabilir; varsayılan kapalıdır, açılınca onaylanmamış kurulu uzantılar kaldırılır ve kullanıcı yalnız onaylı listeden kurar ([MCP Güvenlik](/wiki/mcp/guvenlik/)). Tam liste: [Takım ve Admin, Enterprise Güvenlik Araçları](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026).
+BT ekibinin Claude'u şirkete açarken sorduğu ilk sorular genelde "DLP'miz araya girebilir mi, kişisel hesapla girişi engelleyebilir miyiz, uç nokta güvenliği Cowork'ü görür mü" olur. 5 Kasım 2026'dan beri Enterprise'ta prompt hook'larıyla istemler kendi DLP aracınızdan geçer (genel kullanımda), yönetilen bilgisayarlarda Claude Desktop'a dış hesapla giriş engellenir, IP izin listesi panelden kurulur ve güvenlik merkezi ayarları Anthropic'in önerdiği yapılandırmayla karşılaştırır (bu üçü ve yönetim araçlarının çoğu beta ya da duyuruda durumu belirtilmemiş). EDR sensörünün Cowork sanal makinesinde çalışması Team'de de var. Team ve Enterprise'ta ayrıca masaüstü uzantıları (yerel [MCP](/wiki/sozluk/#mcp) sunucuları) için izin listesi açılabilir; varsayılan kapalıdır, açılınca onaylanmamış kurulu uzantılar kaldırılır ve kullanıcı yalnız onaylı listeden kurar ([MCP Güvenlik](/wiki/mcp/guvenlik/)). Tam liste: [Takım ve Admin, Enterprise Güvenlik Araçları](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026).
 
 ## Sık Hatalar
 
@@ -154,6 +154,8 @@ Eğitimlerde BT ekiplerinin en çok takıldığı üç nokta (Zamana eğitim mat
 - **Script'i körü körüne çalıştırmak.** Claude'un ürettiği script test edilmeden canlı ortama girmez; özellikle silme ve değiştirme komutlarında.
 - **Var olmayan komut ya da kütüphane.** Claude olmayan bir modül, parametre ya da fonksiyon önerebilir. Derleme ve çalıştırma testi şarttır.
 - **Hassas yapılandırma.** Şifre, API anahtarı ve iç IP adreslerini prompt'a yazmadan önce temizleyin. Şirket yapılandırması işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
+
+BT ekibinde güvenlik ve veri kuralları baştan konuşulmalıdır; [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) bunu ekibinizin kendi araçlarıyla ele alır.
 
 ## İlgili Sayfalar
 

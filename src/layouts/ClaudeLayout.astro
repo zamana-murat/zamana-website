@@ -2,7 +2,7 @@
 import Layout from './Layout.astro';
 import RetainerCTA from '../components/RetainerCTA.astro';
 import '../styles/wiki.css';
-import { composeTitle } from '../data/seo';
+import { composeTitle, ORG_REF } from '../data/seo';
 import type { CollectionEntry } from 'astro:content';
 
 // Hero animations: src/components/<section>-anim/<name>.astro, selected by frontmatter heroAnimation.
@@ -63,7 +63,7 @@ const webPageSchema = {
   dateModified: `${lastUpdated}T00:00:00+03:00`,
   primaryImageOfPage: { '@type': 'ImageObject', url: new URL(ogImage, SITE).toString() },
   isPartOf: { '@type': 'WebSite', name: 'Zamana', url: SITE },
-  publisher: { '@type': 'Organization', name: 'Zamana', url: SITE },
+  publisher: ORG_REF,
   isBasedOn: { '@type': 'CreativeWork', url: sourceUrl, name: sourceTitle, publisher: { '@type': 'Organization', name: 'Anthropic' } },
 };
 

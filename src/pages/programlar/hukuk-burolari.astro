@@ -1,16 +1,32 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ProgramSchema from '../../components/ProgramSchema.astro';
 ---
 
 <Layout
-  title="Hukuk Büroları için Claude, 3 Haftalık Program | Zamana"
-  description="Avukatlar ve hukuk büroları için 3 haftalık Claude programı: sözleşme inceleme, dilekçe taslağı, atıf doğrulama, sır saklama. 45.000 TL + KDV'den başlar."
+  title="Hukukçular için Yapay Zeka Eğitimi, Claude | Zamana"
+  description="Hukukçular için yapay zeka eğitimi: sözleşme inceleme, dilekçe taslağı, atıf doğrulama, müvekkil sırrı. 3 hafta, 45.000 TL + KDV'den başlar, 3 ay destek."
   ogImage="/og/programlar-hukuk-burolari.png"
 >
 
+  <ProgramSchema
+    name="Hukuk Büroları için Claude"
+    description="Avukatlar ve hukuk büroları için 3 haftalık Claude programı: sözleşme inceleme, dilekçe taslağı, atıf doğrulama, sır saklama."
+    url="https://zamana.com.tr/programlar/hukuk-burolari/"
+    duration="P3W"
+    courseMode={['onsite', 'online']}
+    audience="Avukatlar, hukuk büroları ve şirket hukuk müşavirlikleri"
+    offers={[
+      { name: 'Tek avukat', price: 45000 },
+      { name: 'Büro paketi, 2 kişi', price: 65000 },
+      { name: 'Büro paketi, 3 kişi', price: 85000 },
+      { name: 'Büro paketi, 4 kişi', price: 105000 },
+    ]}
+  />
+
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Hukuk Büroları için Claude</span>
+      <span class="eyebrow">Hukukçular için Yapay Zeka Eğitimi</span>
       <h1>3 hafta. Taslak Claude'dan. İmza sizden.</h1>
       <p class="lead">
         Claude avukatın yerini almaz. Okuma, karşılaştırma ve ilk taslak yükünü alır, siz zamanınızı hukuki değerlendirmeye ayırırsınız.
@@ -319,6 +335,14 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/iletisim/?program=hukuk-burolari" class="btn btn--primary btn--lg">Görüşme Talep Et</a>
         <a href="/programlar/" class="btn btn--secondary btn--lg">Tüm Programlar</a>
       </div>
+    </div>
+  </section>
+
+  <section class="section pillar-link">
+    <div class="container container-narrow">
+      <p class="text-muted" style="text-align:center;margin:0;">
+        Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/">Kurumsal yapay zeka eğitimi rehberi</a>
+      </p>
     </div>
   </section>
 

@@ -8,12 +8,12 @@ tags:
   - kucuk-isletme
   - nakit-akisi
   - otomasyon
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Bu sayfa bir departman değil, bir **senaryo**: satışı da pazarlamayı da muhasebeyi de tek başına yürüten **küçük işletme sahibi**. Diğer departman sayfaları tek bir role odaklanır; KOBİ sahibi hepsini aynı gün yapar. Claude'un en büyük kaldıraç sağladığı yer tam burasıdır, çünkü ayrı ekiplerin yaptığı işi tek kişiye sığdırır.
 
-Anthropic bu profile özel bir paket de sunuyor: Eylül 2026'da genişleyen Claude for Small Business, 43 hazır iş akışı (Monday Brief, Proposal Builder, Close the Month gibi) ve 27 yeni entegrasyon içeriyor. Aşağıdaki akışların birçoğu bu paketin kapsadığı işlerle örtüşüyor. Paketin Türkiye'deki muhasebe yazılımlarıyla uyumu için aşağıdaki Connector'lar bölümündeki nota bakın. Ayrıntılar için [haberi okuyun](/haberler/2026-09-15-claude-for-small-business-genisledi/). Anthropic'in Cowork için hazırladığı eklenti deposunda da bir `small-business` klasörü bulunur ([knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)); hangi iş akışının Türkiye'de işe yaradığını denemeden varsaymayın.
+Anthropic bu profile özel bir paket de sunuyor: Eylül 2026'da genişleyen Claude for Small Business, 43 hazır iş akışı (Monday Brief, Proposal Builder, Close the Month gibi) ve 27 yeni entegrasyon içeriyor. Aşağıdaki akışların birçoğu bu paketin kapsadığı işlerle örtüşüyor. Paketin Türkiye'deki muhasebe yazılımlarıyla uyumu için aşağıdaki [Connector](/wiki/sozluk/#connector)'lar bölümündeki nota bakın. Ayrıntılar için [haberi okuyun](/haberler/2026-09-15-claude-for-small-business-genisledi/). Anthropic'in Cowork için hazırladığı eklenti deposunda da bir `small-business` klasörü bulunur ([knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)); hangi iş akışının Türkiye'de işe yaradığını denemeden varsaymayın.
 
 > **Pazarlık dışı çerçeve:** Hiçbir şey siz onaylamadan **gönderilmez, yayınlanmaz, ödenmez.** Claude taslak hazırlar ve önerir; göndermek, yayınlamak veya para hareketi yapmak her zaman sizin onayınızla olur. Vergi, hukuk ve finans gibi kritik kararlar ehliyetli danışmanınızdadır; Claude mali müşavirin ya da avukatın onayının yerine geçmez.
 
@@ -40,7 +40,7 @@ Yavaş bir dönem yaklaşıyorsa Claude kampanya kurar: stratejiyi taslaklar, g�
 
 - Satış verisinden durgun dönemi tespit eder
 - Promosyon fikri + mesaj taslağı üretir
-- Görseli Canva connector'ıyla, `canvas-design` skill'iyle ([Skills](/wiki/yetenekler/skills/)) ya da Free dahil tüm planlarda açık [Claude Design](/wiki/yetenekler/claude-design/) ile hazırlar
+- Görseli Canva connector'ıyla, `canvas-design` [skill](/wiki/sozluk/#skill)'iyle ([Skills](/wiki/yetenekler/skills/)) ya da Free dahil tüm planlarda açık [Claude Design](/wiki/yetenekler/claude-design/) ile hazırlar
 - CRM'de müşteri listesini segmentler
 - Gönderimi hazırlar, **siz onaylayana kadar göndermez**
 
@@ -109,6 +109,8 @@ Eskiden bu iş ya hiç yapılmıyordu ya da yarım saat üzülerek yazılıyordu
 - **Aylık kapanış ön hazırlığı**: mutabakat + mali müşavir özeti
 - **Tahsilat takibi**: haftalık otomatik geciken-fatura taraması + taslak hatırlatma
 - **Durgun dönem kampanyası**: tetik bazlı (satış düşünce öneri gelsin)
+
+Tek başınıza ya da küçük bir ekiple çalışıyorsanız [Bireysel Program](/programlar/bireysel/) 3 hafta boyunca kendi işiniz üzerinden ilerler; ekip büyüdüğünde [ekibinizle 3 aylık Claude programı](/programlar/kurumsal/) devreye girer.
 
 ## İlgili Sayfalar
 

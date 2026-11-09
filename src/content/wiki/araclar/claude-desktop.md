@@ -7,7 +7,7 @@ tags:
   - claude-desktop
   - kurulum
   - cowork
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Claude Desktop, Claude'un Windows, macOS ve Linux için yerel uygulamasıdır.** Kağıt üzerinde başka bir arayüz gibi görünse de pratikte çok daha fazlasıdır: bilgisayarınızdaki gerçek klasörlerle çalışan [Cowork](/wiki/araclar/cowork-modu/)'ün en eksiksiz ortamıdır ve iş kullanımı için web arayüzünden ciddi ölçüde daha güçlüdür.
@@ -25,7 +25,7 @@ Tek cümleyle: yerel dosyalarla ciddi Claude kullanımı Claude Desktop ile baş
 - **Masaüstüne bağlı yetenekler**: yerleşik tarayıcı (Pro, Max, Ultra ve Team; Enterprise'ta yönetici ayarıyla), computer use ve bulut görevlerinin bilgisayarınızdaki dosyalara ulaşması
 - **Computer use (beta, ilk çıkışta research preview):** Claude ekranınızı görüp fare ve klavyeyi kullanabilir. Yalnız Pro, Max ve Ultra'da, masaüstü uygulamasında (macOS 15+ veya Windows) Cowork ve Claude Code içinde çalışır. Web sohbetinde ve Team/Enterprise'ta yoktur. Settings > Capabilities altındaki "Enable computer use" anahtarından açılır (orada yoksa Settings > System). Ayrıntı: [Computer Use](/wiki/yetenekler/computer-use/)
 
-Skill'ler, connector'lar, Projects ve kod çalıştırma/dosya oluşturma claude.ai'de de var; bunlar için masaüstü uygulaması şart değildir. Masaüstünün asıl farkı, bunların bilgisayarınızdaki gerçek klasörlerle birleşmesidir.
+[Skill](/wiki/sozluk/#skill)'ler, [connector](/wiki/sozluk/#connector)'lar, Projects ve kod çalıştırma/dosya oluşturma claude.ai'de de var; bunlar için masaüstü uygulaması şart değildir. Masaüstünün asıl farkı, bunların bilgisayarınızdaki gerçek klasörlerle birleşmesidir.
 
 > **6 Ekim 2026'dan itibaren:** Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışıyor. Bulut oturumu bilgisayarınızdaki dosyaya doğrudan erişmez; yerel klasör, yerel connector ve computer use için masaüstü uygulaması açık ve bağlı olmalıdır. Ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/#hangi-planda-nerede-çalışır).
 

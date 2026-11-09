@@ -7,7 +7,7 @@ tags:
   - iterasyon
   - test
   - geliştirme
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Bir promptu ilk seferinde mükemmel yazmak nadirdir.** İyi prompt **iterasyonla** olur: yazarsınız, test edersiniz, sorunu görürsünüz, düzeltirsiniz, tekrar test edersiniz. Bu sayfa o döngünün sistematik metodolojisini anlatır.
@@ -85,7 +85,7 @@ Her test çıktısını üç eksende skorlayın:
 
 ### Boyut 1: Doğruluk
 
-Çıktı doğru bilgi içeriyor mu? Halüsinasyon var mı?
+Çıktı doğru bilgi içeriyor mu? [Halüsinasyon](/wiki/sozluk/#halusinasyon) var mı?
 
 - 5: Tamamen doğru
 - 3: Çoğu doğru, küçük yanlışlıklar
@@ -267,7 +267,7 @@ Sorun çıkan promptlar yeni iterasyon turuna girer.
 
 ## Otomasyon: Scheduled Tasks ile
 
-Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu), bunu [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) içine koyun. Prompt sürümü ayrı dosyada tutulur, scheduled task ona referans verir. Promptu güncellediğinizde ertesi hafta yeni sürümle çalışır. Dikkat: bulutta kurulan zamanlanmış görev yerel klasörü ve yerel connector'ı kullanamaz; şablon dosyasını bilgisayardaki klasörde değil projede ya da görevin kendi talimatında tutun.
+Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu), bunu [Scheduled Tasks](/wiki/araclar/scheduled-tasks/) içine koyun. Prompt sürümü ayrı dosyada tutulur, scheduled task ona referans verir. Promptu güncellediğinizde ertesi hafta yeni sürümle çalışır. Dikkat: bulutta kurulan zamanlanmış görev yerel klasörü ve yerel [connector](/wiki/sozluk/#connector)'ı kullanamaz; şablon dosyasını bilgisayardaki klasörde değil projede ya da görevin kendi talimatında tutun.
 
 ## Yaygın Hata: Sürekli Yamamak
 

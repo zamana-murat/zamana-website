@@ -6,10 +6,10 @@ tags:
   - mcp
   - populer
   - kurumsal
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
-**MCP ekosisteminde yüzlerce sunucu var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa MCP sunucularını kategorilere ayırır ve her biri için olgunluk ve risk notu verir. Claude'daki connector'lar da birer MCP sunucusudur; sayfadaki bazı sunucuların dizinde hazır connector karşılığı vardır.
+**MCP ekosisteminde yüzlerce sunucu var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa MCP sunucularını kategorilere ayırır ve her biri için olgunluk ve risk notu verir. Claude'daki [connector](/wiki/sozluk/#connector)'lar da birer MCP sunucusudur; sayfadaki bazı sunucuların dizinde hazır connector karşılığı vardır.
 
 [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) ile birlikte okunmalı; [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki değerlendirme kontrolleri her sunucu için geçerli. Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına bakın.
 
@@ -48,7 +48,7 @@ Kendi iç sisteminiz için [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirk
 >
 > **Risk:** Yazma yetkisi geniş verilirse Claude beklenmedik commit yapabilir.
 >
-> **Tavsiye:** Fine-grained token, sadece okuma; yazma için ayrı manuel onay.
+> **Tavsiye:** Fine-grained [token](/wiki/sozluk/#token), sadece okuma; yazma için ayrı manuel onay.
 >
 > **`postgres` / `sqlite`**
 >

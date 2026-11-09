@@ -4,32 +4,35 @@ import { getCollection } from 'astro:content';
 
 const SITE = 'https://zamana.com.tr';
 
-const baseRoutes = [
-  { path: '/',                              priority: '1.0', changefreq: 'monthly' },
-  { path: '/programlar/',                   priority: '0.9', changefreq: 'monthly' },
-  { path: '/programlar/bireysel/',          priority: '0.9', changefreq: 'monthly' },
-  { path: '/programlar/kurumsal/',          priority: '0.9', changefreq: 'monthly' },
-  { path: '/programlar/ceo-brifing/',       priority: '0.9', changefreq: 'monthly' },
-  { path: '/programlar/ai-sampiyonu/',      priority: '0.8', changefreq: 'monthly' },
-  { path: '/programlar/ihracatcilar/',      priority: '0.8', changefreq: 'monthly' },
-  { path: '/programlar/hukuk-burolari/',    priority: '0.8', changefreq: 'monthly' },
-  { path: '/programlar/kamu-kurumlari/',    priority: '0.8', changefreq: 'monthly' },
-  { path: '/programlar/akademisyenler/',    priority: '0.8', changefreq: 'monthly' },
-  { path: '/programlar/yeni-mezun/',        priority: '0.8', changefreq: 'monthly' },
-  { path: '/programlar/karsilastirma/',     priority: '0.8', changefreq: 'monthly' },
-  { path: '/yapay-zeka-egitimi/',           priority: '0.8', changefreq: 'monthly' },
-  { path: '/sss/',                          priority: '0.8', changefreq: 'monthly' },
-  { path: '/hakkinda/',                     priority: '0.7', changefreq: 'yearly'  },
-  { path: '/iletisim/',                     priority: '0.8', changefreq: 'yearly'  },
-  { path: '/gizlilik/',                     priority: '0.3', changefreq: 'yearly'  },
-  { path: '/cerezler/',                     priority: '0.3', changefreq: 'yearly'  },
-];
-
 type Route = { path: string; priority: string; changefreq: string; lastmod?: string };
 
-export const GET: APIRoute = async () => {
-  const today = new Date().toISOString().slice(0, 10);
+// Static pages: lastmod is the real date of the page's last content change
+// (git history, plus the 2026-11-09 working-tree edits). Update the date when a page
+// actually changes; never use the build date (Google ignores lastmod it can't trust).
+const baseRoutes: Route[] = [
+  { path: '/',                              priority: '1.0', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/claude-egitimi/',               priority: '0.9', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/',                   priority: '0.9', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/bireysel/',          priority: '0.9', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/kurumsal/',          priority: '0.9', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/ceo-brifing/',       priority: '0.9', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/ai-sampiyonu/',      priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/ihracatcilar/',      priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/hukuk-burolari/',    priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/kamu-kurumlari/',    priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/akademisyenler/',    priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/yeni-mezun/',        priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/programlar/karsilastirma/',     priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/yapay-zeka-egitimi/',           priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/hazirlik-degerlendirmesi/',     priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-09' },
+  { path: '/sss/',                          priority: '0.8', changefreq: 'monthly', lastmod: '2026-11-08' },
+  { path: '/hakkinda/',                     priority: '0.7', changefreq: 'yearly',  lastmod: '2026-11-08' },
+  { path: '/iletisim/',                     priority: '0.8', changefreq: 'yearly',  lastmod: '2026-11-08' },
+  { path: '/gizlilik/',                     priority: '0.3', changefreq: 'yearly',  lastmod: '2026-11-08' },
+  { path: '/cerezler/',                     priority: '0.3', changefreq: 'yearly',  lastmod: '2026-11-09' },
+];
 
+export const GET: APIRoute = async () => {
   // News routes: lastmod = article date; index lastmod = newest article date.
   const haberler = await getHaberler();
   const newsRoutes: Route[] = [
@@ -87,8 +90,8 @@ export const GET: APIRoute = async () => {
   const urls = routes
     .map(
       (r) => `  <url>
-    <loc>${SITE}${r.path}</loc>
-    <lastmod>${r.lastmod || today}</lastmod>
+    <loc>${SITE}${r.path}</loc>${r.lastmod ? `
+    <lastmod>${r.lastmod}</lastmod>` : ''}
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority}</priority>
   </url>`

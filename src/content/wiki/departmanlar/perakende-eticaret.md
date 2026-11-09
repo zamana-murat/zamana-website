@@ -7,7 +7,7 @@ tags:
   - perakende
   - eticaret
   - urun-aciklamasi
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Türkiye'de perakende ve e-ticaret hızla büyüyor: Trendyol, Hepsiburada, Amazon TR, kendi siteleri, fiziksel mağaza zincirleri. Her gün **binlerce ürün açıklaması, müşteri yorumu ve kampanya metni** gerekir. Claude bu içerik üretimini ölçeklendirir ve üstüne veri analizi de katar.
@@ -217,6 +217,8 @@ E-ticaret çalışanı için temel:
 ## Bireysel ve Küçük İşletme
 
 Tek kişilik bir e-ticaret işletmesi için Claude'un katkısı çok büyüktür; tek kişi, küçük bir ekibin içerik hacmine yaklaşabilir. Anthropic'in küçük işletmelere yönelik paketi Shopify, Stripe ve TikTok gibi entegrasyonlar da içeriyor, ayrıntı için [haberi okuyun](/haberler/2026-09-15-claude-for-small-business-genisledi/). Aynı yaklaşımın tek kişilik halini [KOBİ sayfasında](/wiki/departmanlar/kobi/) bulabilirsiniz.
+
+Katalog, kampanya ve yorum yönetimini ekibe yaymak için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programı var; tek başına çalışan e-ticaret sahipleri için [Bireysel Program](/programlar/bireysel/) uygundur.
 
 ## İlgili Sayfalar
 

@@ -11,135 +11,13 @@ const claudeIntroCards = [
   { label: 'Modeller', href: '/claude/modeller/', desc: 'Fable, Opus, Sonnet ve Haiku arasındaki fark' },
 ];
 
-const organizationSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Zamana',
-  legalName: 'Saytad Organik Gıda Ürt. Paz. ve Dış Tic. A.Ş.',
-  alternateName: 'Zamana Claude Eğitim',
-  url: 'https://zamana.com.tr',
-  logo: 'https://zamana.com.tr/images/zamana-logo.webp',
-  image: 'https://zamana.com.tr/og/index.png',
-  description: 'Türkiye\'nin kurumsal Claude eğitim ve danışmanlık platformu. Yönetici AI Hazırlık, Bireysel ve Kurumsal programlarla şirketlere yapay zekayı iş süreçlerine entegre etme rehberliği sunar.',
-  foundingDate: '2026-04',
-  founder: {
-    '@type': 'Person',
-    name: 'Murat Özsaygılı',
-    url: 'https://zamana.com.tr/hakkinda/',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Yavuz Sultan Selim Bulvarı, Perlavista Residence B Blok D:2',
-    addressLocality: 'Beylikdüzü',
-    addressRegion: 'İstanbul',
-    addressCountry: 'TR',
-  },
-  contactPoint: [
-    {
-      '@type': 'ContactPoint',
-      contactType: 'customer service',
-      telephone: '+90-530-490-4740',
-      email: 'info@zamana.com.tr',
-      areaServed: 'TR',
-      availableLanguage: ['Turkish', 'English'],
-    },
-    {
-      '@type': 'ContactPoint',
-      contactType: 'sales',
-      telephone: '+90-530-490-4740',
-      email: 'info@zamana.com.tr',
-      areaServed: 'TR',
-      availableLanguage: ['Turkish'],
-    },
-  ],
-  sameAs: [
-    'https://www.linkedin.com/in/murat-%C3%B6zsayg%C4%B1l%C4%B1-59790865/',
-    'https://x.com/ZamanaClaude',
-  ],
-  knowsAbout: [
-    'Anthropic Claude',
-    'Yapay Zeka Eğitimi',
-    'CLAUDE.md',
-    'Model Context Protocol',
-    'Kurumsal AI Dönüşümü',
-    'Prompt Mühendisliği',
-    'AI İş Akışı Tasarımı',
-  ],
-  areaServed: {
-    '@type': 'Country',
-    name: 'Türkiye',
-  },
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Zamana Eğitim Programları',
-    itemListElement: [
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Bireysel Program',
-          description: '3 hafta birebir Claude eğitimi + 3 ay sınırsız telefon desteği. Yönetici, freelancer ve bağımsız profesyoneller için.',
-          url: 'https://zamana.com.tr/programlar/bireysel/',
-        },
-        price: '40000',
-        priceCurrency: 'TRY',
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Kurumsal Program',
-          description: 'Minimum 3 aylık şirket içi Claude dönüşümü, ödeme aylık. 6 çalışan için departman bazlı eğitim, sınırsız telefon desteği, KVKK rehberliği.',
-          url: 'https://zamana.com.tr/programlar/kurumsal/',
-        },
-        price: '100000',
-        priceCurrency: 'TRY',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '100000',
-          priceCurrency: 'TRY',
-          unitText: 'MONTH',
-          referenceQuantity: {
-            '@type': 'QuantitativeValue',
-            value: '1',
-            unitCode: 'MON',
-          },
-        },
-        eligibleDuration: {
-          '@type': 'QuantitativeValue',
-          minValue: '3',
-          unitCode: 'MON',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Yönetici AI Hazırlık',
-          description: 'Yöneticiler için 3 saatlik AI anlama oturumu. AI nedir, ne değildir, şirketinize ne fayda sağlar. Hafta sonu, sizin seçtiğiniz adreste, birebir.',
-          url: 'https://zamana.com.tr/programlar/ceo-brifing/',
-        },
-        price: '15000',
-        priceCurrency: 'TRY',
-      },
-    ],
-  },
-};
-
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Zamana',
   url: 'https://zamana.com.tr',
   inLanguage: 'tr-TR',
-  publisher: {
-    '@type': 'Organization',
-    name: 'Zamana',
-    logo: {
-      '@type': 'ImageObject',
-      url: 'https://zamana.com.tr/images/zamana-logo.webp',
-    },
-  },
+  publisher: { '@id': 'https://zamana.com.tr/#org' },
 };
 ---
 
@@ -149,7 +27,6 @@ const websiteSchema = {
   ogImage="/og/index.png"
 >
 
-  <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
   <section class="hero">
@@ -157,8 +34,8 @@ const websiteSchema = {
     <div class="container hero__inner">
       <span class="eyebrow eyebrow--light">Kurumsal Claude Eğitimi · Türkiye</span>
       <h1 class="hero__title">
-        Claude, doğru öğretildiğinde<br>
-        şirketinizi <span class="hero__accent">3 ayda dönüştürür.</span>
+        Claude eğitimiyle<br>
+        şirketinizi <span class="hero__accent">3 ayda dönüştürün.</span>
       </h1>
       <p class="hero__lead">
         Zamana, Türkiye'nin yapay zeka eğitim platformudur. Yöneticilere, bireysel profesyonellere ve şirketlere
@@ -303,6 +180,9 @@ const websiteSchema = {
         <h2 class="section-title center">Size Uygun Olanı Seçin</h2>
         <p class="lead center">
           Aynı pedagojik DNA. Üç farklı ölçek. Yöneticiler için 3 saatlik anlama oturumu, bireysel profesyoneller için 3 hafta, şirketler için 3 aylık tam dönüşüm.
+        </p>
+        <p class="text-muted" style="margin-top: var(--s-3);">
+          Eğitim seçerken neye bakılır? <a href="/yapay-zeka-egitimi/" style="text-decoration: underline;">Kurumsal yapay zeka eğitimi rehberi</a>
         </p>
       </div>
 

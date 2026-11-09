@@ -7,7 +7,7 @@ tags:
   - insan-kaynaklari
   - ik
   - is-kanunu
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 İnsan Kaynakları, Claude'un en çok tekrarlayan ve en yüksek hacimli işi bulduğu alanlardan biridir. Ama hukuki hassasiyeti de yüksektir.
@@ -158,6 +158,8 @@ Eğitimlerde İK ekiplerinin en çok takıldığı üç nokta (Zamana eğitim ma
 - **Hukuki risk.** Disiplin, fesih ve kıdem hesaplaması Claude'un işi değildir; hukuk incelemesi her zaman gerekir.
 - **Çalışan verisi.** Performans değerlendirmesi gibi bilgiler hassastır; prompt'a girmeden önce anonimleştirin ya da şirket politikanıza bakın. Çalışan verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
 - **Fazla teknik dil.** İK iletişiminde insani ton önemlidir. Talimata "hukuk dili olmasın" yazın, yazılı kısıt koymazsanız çıktı resmî bir dile kayabilir.
+
+CV eleme ve değerlendirme için [Claude ile CV](/wiki/gorevler/claude-ile-cv/), mülakat ve toplantı notları için [Claude ile Toplantı Notu](/wiki/gorevler/claude-ile-toplanti-notu/) rehberine bakın.
 
 ## İlgili Sayfalar
 

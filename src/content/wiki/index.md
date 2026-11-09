@@ -1,5 +1,6 @@
 ---
 title: "Zamana Wiki: Türkiye'nin Claude Kaynağı"
+seoTitle: "Claude Wiki: Türkçe Claude Rehberi ve Kaynakları"
 description: "Claude'u profesyonel kullanmanın Türkçe rehberi: kalıcı talimat (CLAUDE.md), Cowork, prompting, MCP ve rol bazlı gerçek iş akışları."
 lastUpdated: "2026-11-08"
 ---

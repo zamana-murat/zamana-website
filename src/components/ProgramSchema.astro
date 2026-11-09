@@ -1,0 +1,77 @@
+---
+// Course + Offer JSON-LD for a program page. Prices are VAT-exclusive (KDV hariç).
+// Single price: pass `price`. Several tiers: pass `offers` (price/name/description each).
+interface OfferInput {
+  name?: string;
+  price: number | string;
+  description?: string;
+}
+interface Props {
+  name: string;
+  description: string;
+  url: string; // absolute, e.g. https://zamana.com.tr/programlar/bireysel/
+  price?: number | string;
+  priceCurrency?: string;
+  duration?: string; // ISO 8601, e.g. PT3H, P3W, P3M
+  courseMode?: string | string[]; // onsite | online | blended
+  audience?: string;
+  offers?: OfferInput[];
+}
+
+const {
+  name,
+  description,
+  url,
+  price,
+  priceCurrency = 'TRY',
+  duration,
+  courseMode = 'onsite',
+  audience,
+  offers,
+} = Astro.props;
+
+const offerList: OfferInput[] = offers ?? (price !== undefined ? [{ price }] : []);
+
+const toOffer = (o: OfferInput) => ({
+  '@type': 'Offer',
+  ...(o.name ? { name: o.name } : {}),
+  ...(o.description ? { description: o.description } : {}),
+  url,
+  category: 'Paid',
+  price: String(o.price),
+  priceCurrency,
+  availability: 'https://schema.org/InStock',
+  priceSpecification: {
+    '@type': 'PriceSpecification',
+    price: String(o.price),
+    priceCurrency,
+    valueAddedTaxIncluded: false,
+  },
+});
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name,
+  description,
+  url,
+  inLanguage: 'tr',
+  // Inline name/url so validators that do not resolve @id across blocks still see a provider.
+  provider: {
+    '@type': 'Organization',
+    '@id': 'https://zamana.com.tr/#org',
+    name: 'Zamana',
+    url: 'https://zamana.com.tr',
+  },
+  ...(audience ? { audience: { '@type': 'Audience', audienceType: audience } } : {}),
+  ...(offerList.length ? { offers: offerList.length === 1 ? toOffer(offerList[0]) : offerList.map(toOffer) } : {}),
+  hasCourseInstance: {
+    '@type': 'CourseInstance',
+    courseMode,
+    inLanguage: 'tr',
+    ...(duration ? { courseWorkload: duration } : {}),
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

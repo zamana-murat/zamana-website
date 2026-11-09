@@ -16,7 +16,7 @@ related:
   - { label: "Computer use (wiki)", href: "/wiki/yetenekler/computer-use/" }
   - { label: "Kullanım limitleri (wiki)", href: "/wiki/temeller/kullanim-limitleri/" }
 order: 15
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 ## Nedir?

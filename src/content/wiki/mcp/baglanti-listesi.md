@@ -7,10 +7,10 @@ tags:
   - connector
   - entegrasyon
   - liste
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
-Kasım 2026 itibarıyla Claude'un resmî dizininde 1.000'den fazla bağlayıcı (connector) bulunur (8 Kasım 2026 sayımı: 1.094 connector ve 529 plugin). Connector, bir MCP sunucusudur ([MCP Nedir?](/wiki/mcp/nedir/)). Bu sayfa bunların hepsini değil, iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
+Kasım 2026 itibarıyla Claude'un resmî dizininde 1.000'den fazla bağlayıcı ([connector](/wiki/sozluk/#connector)) bulunur (8 Kasım 2026 sayımı: 1.094 connector ve 529 plugin). Connector, bir [MCP](/wiki/sozluk/#mcp) sunucusudur ([MCP Nedir?](/wiki/mcp/nedir/)). Bu sayfa bunların hepsini değil, iş dünyasında en yaygın kullanılanları kategoriye göre listeler ve **hangi connector'un hangi rol için kritik** olduğunu gösterir.
 
 > **Not:** Dizin düzenli olarak büyür. Güncel kataloğu Claude'da **Customize > Connectors** bölümünden veya claude.com/connectors adresinden görebilirsiniz. Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına bakın. Team ve Enterprise'ta bazı connector'ları önce kuruluş sahibi (Owner) açar. 23 Eylül 2026'da açılan [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde toplar ve açılışta 2.000'den fazla bağlayıcı ve eklenti sunduğu duyuruldu. Bu sayı eklentileri de kapsar; yalnızca connector sayan dizinin rakamıyla çelişmez.
 
@@ -136,7 +136,7 @@ Her rol için "olmadan olmaz" tip connector önerileri:
 
 ## Plugin Olarak Gelen Sektörel Paketler
 
-Ayrıca Anthropic'in sektörel **plugin paketleri** var. Bir plugin kurduğunuzda içindeki skill'ler + connector'lar birlikte gelir:
+Ayrıca Anthropic'in sektörel **plugin paketleri** var. Bir plugin kurduğunuzda içindeki [skill](/wiki/sozluk/#skill)'ler + connector'lar birlikte gelir:
 
 | Plugin | İçerdiği |
 |---|---|

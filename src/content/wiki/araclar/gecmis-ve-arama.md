@@ -7,7 +7,7 @@ tags:
   - gecmis
   - arama
   - export
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Claude'u haftalarca aktif kullanan biri için, sohbet geçmişi hızla bir bilgi arşivine dönüşür.** Onu yönetmemek, geçmişte değerli üretimleri kaybetmek demektir.
@@ -95,7 +95,7 @@ Sohbet geçmişinden ayrı olarak Claude'un **hafızası** da vardır. Hafıza i
 
 **Claude geçmiş sohbetlerimi arayıp kullanabilir mi?** Evet, Claude'un sohbet arama özelliği geçmiş konuşmalarınıza başvurup önceki bağlamdan yararlanabilir; Anthropic bunu hafıza özelliğiyle birlikte anlatıyor. Kapsamı planınıza ve ayarlarınıza göre değişebilir, kendi hesabınızda "geçen ay X için ne konuşmuştuk?" diye sorup deneyin. Bu, yukarıdaki arama kutusundan ayrıdır: arama kutusunda siz ararsınız, sohbet aramada Claude arar.
 
-**Kişisel hesabımı Team'e geçirirsem sohbetlerim taşınır mı?** Hesabı yerinde yükseltirseniz sohbetler, artifact'ler, projeler (Cowork dahil), dosyalar, hafıza (kuruluş kapatmadıysa) ve tercihler taşınır. Taşınmayanlar: özel skill'ler, uygulama yetkilendirmeleri, özel connector'lar, yayınlanmış artifact'ler, halka açık paylaşım linkleri ve yerel Cowork/Claude Code oturumları. "Kişisel hesabımı ayrı tut" seçeneğini seçerseniz eski sohbetler kişisel hesapta kalır. Ekip tarafı için [Takım ve Admin](/wiki/temeller/takim-ve-admin/).
+**Kişisel hesabımı Team'e geçirirsem sohbetlerim taşınır mı?** Hesabı yerinde yükseltirseniz sohbetler, artifact'ler, projeler (Cowork dahil), dosyalar, hafıza (kuruluş kapatmadıysa) ve tercihler taşınır. Taşınmayanlar: özel [skill](/wiki/sozluk/#skill)'ler, uygulama yetkilendirmeleri, özel [connector](/wiki/sozluk/#connector)'lar, yayınlanmış artifact'ler, halka açık paylaşım linkleri ve yerel Cowork/Claude Code oturumları. "Kişisel hesabımı ayrı tut" seçeneğini seçerseniz eski sohbetler kişisel hesapta kalır. Ekip tarafı için [Takım ve Admin](/wiki/temeller/takim-ve-admin/).
 
 ## Paylaşım
 

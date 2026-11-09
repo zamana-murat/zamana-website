@@ -8,7 +8,7 @@ tags:
   - procurement
   - rfp
   - pazarlik
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 > **Operasyondan farkı:** Operasyon **akışı** yönetir: malı A'dan B'ye zamanında getirmek. Satınalma ise **ilişkileri ve şartları** yönetir: kim tedarik eder, ne fiyata, hangi şartlarda. İkisinin kesiştiği yerler vardır ama iş farklıdır. Operasyon çalışanı süreci yürütür; satınalma çalışanı kimin yürüteceğini ve neyin tutulacağını tanımlar.
@@ -113,7 +113,7 @@ Onaylı listeye tedarikçi eklerken veya listeden çıkarırken karar dokümante
 - `xlsx`: karşılaştırma matrisleri ve skorlama
 - `pdf`: resmi satınalma belgeleri
 - Web search: pazar kaynak bulma
-- Kendi vendor değerlendirme skill'iniz: skorlama çerçevenizi bir kez tanımlayıp her değerlendirmede aynısını kullanır ([Skills](/wiki/yetenekler/skills/))
+- Kendi vendor değerlendirme [skill](/wiki/sozluk/#skill)'iniz: skorlama çerçevenizi bir kez tanımlayıp her değerlendirmede aynısını kullanır ([Skills](/wiki/yetenekler/skills/))
 
 **Connector'lar:**
 1. **Microsoft 365 / Google Workspace**: RFP ve sözleşme belgeleri
@@ -146,6 +146,8 @@ Satınalma müdürü, ana tedarikçisiyle yıllık sözleşme yenileme görüşm
 **Adım 4:** Toplantıya gider, brief cebinde.
 
 **Süre:** pazarlık brief'i için elle 2-3 saat, Claude ile 30-40 dakika (kontrol dahil). Üç teklifli karşılaştırma matrisi için elle 1,5-2 saat, Claude ile 20-30 dakika. Ayda dört tedarikçi görüşmesi yapılıyorsa brief tarafında kabaca 6-10 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+
+Satınalma ekibinde teklif karşılaştırması ve tedarikçi yazışması standart hale gelince kazanç büyür; ekip için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) seçeneği var. Karşılaştırma tabloları için [Claude ile Excel](/wiki/gorevler/claude-ile-excel/) rehberine bakın.
 
 ## İlgili Sayfalar
 

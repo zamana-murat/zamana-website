@@ -7,7 +7,7 @@ tags:
   - plugins
   - connector
   - giris
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Claude, connector'lar olmadan bir sohbet aracıdır. Connector'larla gerçek bir iş meslektaşı gibi davranır.**
@@ -46,7 +46,7 @@ Bu bölüm Claude'u Slack, Drive, CRM, proje yönetimi araçlarınıza bağlayan
 
     ---
 
-    İzinler, prompt injection, aşırı yetki ve kurumsal onaylı liste için kontrol listesi.
+    İzinler, [prompt injection](/wiki/sozluk/#prompt-injection), aşırı yetki ve kurumsal onaylı liste için kontrol listesi.
 
     [→ Güvenlik](/wiki/mcp/guvenlik/)
 
@@ -81,7 +81,7 @@ Bu fark küçük değildir: **Claude deneyiminin tümü değişir**.
 ## Plugin ve Connector: Kısa Fark
 
 - **Connector** = Claude ile tek bir servis arasındaki bağlantı. Teknik adıyla bir MCP sunucusu.
-- **Plugin** = İlgili skill'leri, connector'ları ve subagent'ları tek kurulumda paketleyen bileşen.
+- **Plugin** = İlgili [skill](/wiki/sozluk/#skill)'leri, connector'ları ve subagent'ları tek kurulumda paketleyen bileşen.
 
 Connector eklemek için Claude'da **Customize > Connectors** bölümünü açıp servisi seçmeniz yeter; adımlar [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) sayfasında. Ayrıntı için [MCP Nedir?](/wiki/mcp/nedir/) sayfasına bakın. Ürün tanıtımları: [Claude Connectors](/claude/connectors/) ve [Claude Plugins](/claude/plugins/).
 
@@ -101,6 +101,6 @@ Hangi rolün hangi connector'a ihtiyaç duyduğu [Bağlantı Listesi](/wiki/mcp/
 
 MCP'yi anladıysanız:
 
-- [**Yetenekler**](/wiki/yetenekler/): Connector'larla birlikte çalışan skill'ler, artifacts, agent'lar
+- [**Yetenekler**](/wiki/yetenekler/): Connector'larla birlikte çalışan skill'ler, artifacts, [agent](/wiki/sozluk/#agent)'lar
 - [**Departmanlar**](/wiki/departmanlar/): Rol bazlı connector uygulamaları
 - [**Cowork Modu**](/wiki/araclar/cowork-modu/): Connector'ların yaşadığı ortam

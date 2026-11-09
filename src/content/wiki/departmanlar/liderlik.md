@@ -8,7 +8,7 @@ tags:
   - yonetim
   - strateji
   - ma
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Üst yönetim için Claude'un sağladığı zaman kazancı en belirgin olanlardandır. Sebep basit: **yöneticinin günü büyük ölçüde bilgi tüketmek, karar vermek ve iletişim kurmaktan oluşur**; bu üçü Claude'un en güçlü olduğu alanlardır.
@@ -106,7 +106,7 @@ Claude düşünmeyi yapılandırır ve ön değerlendirmeyi yazar.
 - `pptx`: yönetim kurulu sunumları
 - [Hafıza (Memory)](/wiki/yetenekler/memory/): organizasyonel bağlam (org chart, kilit paydaşlar, stratejik öncelikler)
 - Web search: pazar istihbaratı
-- Tüm ilgili departman skill'leri (denetim sorumluluklarına göre)
+- Tüm ilgili departman [skill](/wiki/sozluk/#skill)'leri (denetim sorumluluklarına göre)
 - **Claude Dashboards** (beta, ücretli planlar; Enterprise'ta yönetici açar): bağlı veri kaynağından sade bir soruyla canlı yönetim panosu. Hızlı soru içindir, onaylı raporlamanın yerine geçmez ([Claude Dashboards](/wiki/yetenekler/claude-design/#claude-dashboards-ve-claude-motion-beta))
 
 **Connector'lar:**

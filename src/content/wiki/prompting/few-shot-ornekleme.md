@@ -6,7 +6,7 @@ tags:
   - prompting
   - few-shot
   - ornek
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Bir kavramı öğretmenin en güçlü yolu örnek göstermektir.** Claude için de öyle. Soyut bir kuralı tarif etmek yerine "şuna benzer üret" demek, sonucu daha tutarlı yapar ve sürprizleri azaltır.
@@ -247,7 +247,7 @@ Bazı görevlerde 10-20 örnek vermek gerekir. Bu **many-shot** dedikleri yakla�
 - Karmaşık karar verme (matrix mantık)
 - Çok-aşamalı dönüşüm (örnek-1 → orta-form → final)
 
-Many-shot uzun bir prompt demektir. Güncel modellerde [bağlam penceresi](/wiki/yetenekler/context-compaction/) geniş (Fable 5.1, Opus 5.5 ve Sonnet 5.5'te 1M token, ücretli planlarda plana göre fark yok), yani sınır nadiren sorun olur. Asıl maliyet kullanım limitinizden düşen token'dır.
+Many-shot uzun bir prompt demektir. Güncel modellerde [bağlam penceresi](/wiki/yetenekler/context-compaction/) geniş (Fable 5.1, Opus 5.5 ve Sonnet 5.5'te 1M [token](/wiki/sozluk/#token), ücretli planlarda plana göre fark yok), yani sınır nadiren sorun olur. Asıl maliyet kullanım limitinizden düşen token'dır.
 
 ## Örnek Aktarımı: Tek Sohbet İçinde
 

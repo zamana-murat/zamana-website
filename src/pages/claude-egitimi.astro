@@ -1,0 +1,354 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqs = [
+  {
+    q: 'Claude eğitimi için yazılımcı olmak gerekir mi?',
+    a: 'Hayır. Zamana\'nın Claude eğitimi iş eğitimidir: kod yazmayan roller için tasarlanmıştır ve API ya da Claude Code içermez. Dosya açıp kaydedebiliyor ve ne istediğinizi yazıyla anlatabiliyorsanız yeterlidir.',
+  },
+  {
+    q: 'Claude kursu online olarak alınabilir mi?',
+    a: 'Evet. İstanbul dışındaki katılımcılarla Zoom veya Google Meet üzerinden, ekran paylaşımıyla çalışılır. İstanbul içinde yüz yüze oturum ek ücretsiz seçenektir. Kurumsal programda İstanbul dışı yerinde oturum isteyen firmalar yol ve konaklamayı karşılar.',
+  },
+  {
+    q: 'Claude eğitimi ne kadar sürer?',
+    a: 'Bireysel Program 3 hafta ve toplam 6 saattir, ardından 3 ay telefon desteği sürer. Yönetici AI Hazırlık 3 saatlik tek oturumdur. Kurumsal Program en az 3 aydır ve çalışan başına 6 saat eğitim içerir. Uzman programların süreleri kendi sayfalarında yazılıdır.',
+  },
+  {
+    q: 'Anthropic\'in Claude sertifikasını Zamana programı ile alabilir miyim?',
+    a: 'Hayır. Zamana programları Anthropic sertifikası vermez ve katılımcıları sınava sokabildiğimizi iddia etmiyoruz. Zamana, Claude Partner Network\'e kayıtlı bağımsız bir eğitim ve danışmanlık şirketidir; Anthropic bayisi ya da temsilcisi değildir. Resmi rol bazlı Claude sertifikaları Claude Partner Network üyesi firmalara açık, ücretli sınavlardır.',
+  },
+  {
+    q: 'Anthropic Academy rozeti sertifika mıdır?',
+    a: 'Hayır. Academy kursları ücretsizdir ve kurs sonu quizlerini geçince ücretsiz bir tamamlama rozeti verilir. Bu rozet, Anthropic\'in rol bazlı Claude sertifikalarından ayrıdır.',
+  },
+  {
+    q: 'Ücretsiz kaynaklarla başlayıp sonra eğitim almak mantıklı mı?',
+    a: 'Evet, çoğu kişi için en makul yol budur. Temelleri Türkçe wiki ve Academy ile öğrenip kendi işinizde tıkandığınız yerde eğitime geçmek, eğitim süresini daha verimli kullanmanızı sağlar.',
+  },
+  {
+    q: 'Claude için ücretli plan almak zorunda mıyım?',
+    a: 'Zorunlu değil. Yeni katılımcılara ilk ay Max planını öneririz, çünkü Pro planın limitine çabuk çarpılır; ikinci aydan itibaren kullanımınıza göre Pro\'ya inilebilir. Yönetici AI Hazırlık için abonelik gerekmez. Zamana abonelik satmaz, satın alma doğrudan Anthropic\'tendir.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title="Claude Eğitimi ve Kursu: İş İçin Türkçe Program | Zamana"
+  ogImage="/og/claude-egitimi.png"
+  description="Claude eğitimi ve kursu: iş için Türkçe, kendi işiniz üzerinden. Bireysel, kurumsal ve yönetici programları, fiyatlar ve Claude sertifikası hakkında net bilgi."
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Claude Eğitimi</span>
+      <h1>Claude eğitimi: iş için, Türkçe, kendi işinizle</h1>
+      <p class="lead">
+        Claude'u tanımak değil, günlük işinize kalıcı olarak yerleştirmek için tasarlanmış
+        birebir ve kurumsal programlar.
+      </p>
+      <div class="hero-cta center">
+        <a href="/iletisim/" class="btn btn--primary btn--lg">Ücretsiz Keşif Görüşmesi</a>
+        <a href="/programlar/karsilastirma/" class="btn btn--secondary btn--lg">Fiyat ve Seçim Tablosu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <div class="tldr-card">
+        <span class="tldr-label">Kısaca</span>
+        <p>
+          Zamana'nın Claude eğitimi, Türkiye'deki profesyoneller ve ekipler için Türkçe verilen, sizin gerçek işiniz üzerinden ilerleyen bir iş eğitimidir. Satış, finans, hukuk, İK, operasyon ve yönetim gibi kod yazmayan rollere yöneliktir; API ve Claude Code eğitimi değildir. Oturumlarda şirket bilgisini Projects ile Claude'a tanıtmayı, tekrar eden işleri Skills ile standartlaştırmayı, dosya ve görev odaklı çalışmak için Cowork'ü, tablo ve belge işini hızlandırmak için Claude in Excel ve Office'i, iyi prompt yazmayı ve KVKK açısından hangi veriyi paylaşabileceğinizi öğrenirsiniz. Oturum aralarında öğrendiklerinizi kendi işinizde uygularsınız; program bitince elinizde prompt kütüphaneniz ve çalışan bir kurulum kalır. Örnekler sizin sektörünüzden ve dosyalarınızdan gelir. Formatlar: tek kişilik Bireysel Program (3 hafta), ekipler için Kurumsal Program (en az 3 ay), yöneticiler için 3 saatlik tek oturum ve uzman programlar. İstanbul'da yüz yüze, diğer şehirlerde Zoom veya Google Meet ile çalışılır.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title center">Hangi program size uygun?</h2>
+      <p class="lead center">
+        Tüm fiyatlar TL + KDV. Programlara Zamana eğitmeni katılır. Kararsızsanız
+        <a href="/hazirlik-degerlendirmesi/">hazırlık değerlendirmesi</a> ile başlayabilirsiniz.
+      </p>
+      <div class="prog-grid">
+        <div class="prog-card">
+          <span class="prog-eyebrow">Bireysel Program</span>
+          <p class="prog-price">40.000 TL <span>+ KDV</span></p>
+          <p class="prog-desc">Tek kişi için 3 hafta, haftada 2 saat birebir (6 saat), kendi işiniz üzerinden. 3 ay telefon desteği, size özel CLAUDE.md. Sonrası aylık devam desteği 8.000 TL + KDV.</p>
+          <a href="/programlar/bireysel/" class="btn btn--secondary">Bireysel Programı İncele</a>
+        </div>
+        <div class="prog-card prog-card--gold">
+          <span class="prog-eyebrow">Kurumsal Program</span>
+          <p class="prog-price">100.000 TL <span>+ KDV / ay</span></p>
+          <p class="prog-desc">Minimum 3 ay (300.000 TL), 6 çalışan. 12, 18 ve 24 çalışan için 185.000, 265.000 ve 350.000 TL + KDV / ay. Rol bazlı derinleşme, KVKK politikası, sürekli destek.</p>
+          <a href="/programlar/kurumsal/" class="btn btn--primary">Kurumsal Programı İncele</a>
+        </div>
+        <div class="prog-card">
+          <span class="prog-eyebrow">Yönetici AI Hazırlık</span>
+          <p class="prog-price">15.000 TL <span>+ KDV</span></p>
+          <p class="prog-desc">Yöneticiler için 3 saatlik tek oturum: yapay zeka nedir, ne değildir, şirketinize ne fayda sağlar. 30 gün içinde Bireysel ya da Kurumsal'a geçerseniz ücret düşülür.</p>
+          <a href="/programlar/ceo-brifing/" class="btn btn--secondary">Oturumu İncele</a>
+        </div>
+        <div class="prog-card">
+          <span class="prog-eyebrow">Uzman programlar</span>
+          <p class="prog-price">7.500 TL'den <span>+ KDV</span></p>
+          <p class="prog-desc">AI Şampiyonu, İhracatçılar, Hukuk Büroları, Kamu Kurumları, Akademisyenler ve Yeni Mezun programları. Fiyat programa ve kişi sayısına göre değişir.</p>
+          <a href="/programlar/" class="btn btn--secondary">Tüm Programları Gör</a>
+        </div>
+      </div>
+      <p class="more-link center">
+        Hepsini yan yana görmek için <a href="/programlar/karsilastirma/">karşılaştırma tablosuna</a> bakın.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <article class="guide">
+
+        <h2>Ücretsiz kaynaklarla başlamak mümkün mü?</h2>
+        <p>
+          Evet, ve çoğu kişi için iyi bir fikirdir. Anthropic'in kendi eğitim sitesi
+          <strong>Anthropic Academy</strong> (academy.claude.com) ücretsiz kurslar sunar; yalnızca
+          ücretsiz bir Claude hesabı yeterlidir. Kurs sonu quizlerini geçince ücretsiz bir tamamlama
+          rozeti alırsınız. Resmi bir Türkçe içerik bulamadık, kurslar büyük olasılıkla İngilizcedir.
+        </p>
+        <p>
+          Türkçe tarafta <a href="/wiki/">Zamana wiki'si</a> ücretsizdir. Sıfırdan başlıyorsanız
+          <a href="/wiki/temeller/ilk-7-gun/">ilk 7 gün rehberi</a> ile başlayın, gündelik işler için de
+          <a href="/wiki/gorevler/">görev rehberlerine</a> bakın.
+        </p>
+        <p>
+          Eğitim şu noktada işe yarar: temelleri biliyorsunuz ama Claude hâlâ işinizin bir parçası olmadı.
+          Genel bir kurs sizin dosyalarınızı, sektörünüzü ve ekibinizin rollerini bilmez; takıldığınızda
+          da soracak kimse yoktur. Bu boşluğu kendi işiniz üzerinden çalışmak ve tıkandığınızda ulaşılabilir
+          biri olması doldurur. Daha geniş çerçeve için <a href="/yapay-zeka-egitimi/">yapay zeka eğitimi rehberine</a> bakın.
+        </p>
+
+        <h2>Claude sertifikası nasıl alınır?</h2>
+        <p>
+          İki ayrı şey var ve sık karıştırılıyor. Birincisi Academy'nin ücretsiz <strong>tamamlama rozeti</strong>:
+          kurs quizini geçince alınır, PDF olarak indirilir, LinkedIn'e eklenebilir. Bu rozet sertifika değildir.
+        </p>
+        <p>
+          İkincisi Anthropic'in <strong>rol bazlı Claude sertifikaları</strong>: Associate, Developer, Architect
+          Foundations ve Architect Professional. Bu sınavlar Claude Partner Network üyesi firmalara açıktır,
+          gözetimli ve ücretlidir; firmalar uygulayıcılarını claude.com/partners üzerinden kaydeder. Sınav
+          ücreti, dili ve Türkiye'den bireysel girilip girilemeyeceği resmi kaynaklarda net değil,
+          bu yüzden rakam ya da vaat vermiyoruz.
+        </p>
+        <p>
+          <strong>Zamana programları Anthropic sertifikası vermez</strong> ve katılımcıları
+          sınava sokabildiğimizi iddia etmiyoruz. Zamana, Claude Partner Network'e kayıtlı bağımsız bir eğitim ve
+          danışmanlık şirketidir; Anthropic'in bayisi ya da temsilcisi değildir, abonelik satmaz ve Anthropic adına
+          konuşmaz. AI Şampiyonu programını tamamlayanlara Zamana'nın kendi belgesi verilir; bu da
+          Anthropic'in resmi sertifikası değildir ve öyle sunulmaz.
+        </p>
+
+        <h2>Online mı, yüz yüze mi, ne kadar sürer?</h2>
+        <ul>
+          <li><strong>İstanbul içi:</strong> Bireysel ve Kurumsal programlarda yerinde, yüz yüze; eviniz, ofisiniz ya da seçtiğiniz mekan. Ek ücret yok.</li>
+          <li><strong>İstanbul dışı:</strong> Zoom veya Google Meet üzerinden, ekran paylaşımıyla. Kurumsalda isteyen firmalar yerinde oturum da seçebilir; yol ve konaklama firmaya aittir.</li>
+          <li><strong>Bireysel Program:</strong> 3 hafta, haftada 2 saat, toplam 6 saat; ardından 3 ay telefon desteği.</li>
+          <li><strong>Yönetici AI Hazırlık:</strong> 3 saatlik tek oturum, hafta sonu.</li>
+          <li><strong>Kurumsal Program:</strong> en az 3 ay; çalışan başına 6 saat eğitim.</li>
+        </ul>
+        <p>
+          Süreler kasıtlı olarak yayılmıştır: öğrenme oturumun kendisinde değil, oturum aralarındaki gerçek işte olur.
+        </p>
+
+        <h2>Eğitimde ne yaparsınız?</h2>
+        <p>
+          Slayt izlemezsiniz. Kendi dosyalarınız, kendi teklifleriniz, kendi raporlarınızla çalışırsınız.
+          Yaklaşımımız tek cümleye sığar: <strong>zorlanmak öğrenmenin kendisidir</strong>. Bunu üç katmanla uygularız:
+        </p>
+        <ul>
+          <li><strong>Oturumlar:</strong> eğitmen kavramı gösterir ve sizinle birlikte kurar. Yoğun rehberlik burada.</li>
+          <li><strong>Bağımsız pratik:</strong> oturum arasında kendi gerçek işinizde tek başınıza uygularsınız. Kalıcı öğrenme burada yerleşir.</li>
+          <li><strong>Telefon desteği:</strong> gerçekten tıkandığınızda aranır. Yerinize yapmak için değil, sizi açmak için. Önce en az 30 dakika kendiniz denersiniz.</li>
+        </ul>
+        <p>
+          Hedef, bize ihtiyaç duyan çalışanlar yetiştirmek değil, ihtiyaç duymayanlar yetiştirmektir. Hangi görevlerde
+          nasıl çalışıldığını görmek için <a href="/wiki/gorevler/">görev rehberlerine</a> göz atabilirsiniz.
+        </p>
+
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <h2 class="section-title">Sık sorulanlar</h2>
+      <ol class="faq-list">
+        {faqs.map((f, i) => (
+          <li class="faq-item">
+            <details>
+              <summary>
+                <span class="faq-num">{String(i + 1).padStart(2, '0')}</span>
+                <span class="faq-q">{f.q}</span>
+                <span class="faq-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-a"><p>{f.a}</p></div>
+            </details>
+          </li>
+        ))}
+      </ol>
+      <p class="faq-more">
+        Daha fazlası için <a href="/sss/">tüm sık sorulan sorular</a> sayfasına bakın.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow text-center">
+      <h2 class="section-title center">Size uygun formatı birlikte netleştirelim</h2>
+      <p class="lead center">
+        15 dakikalık ücretsiz görüşmede durumunuzu dinler, hangi programın uygun olduğunu söyleriz. Satış konuşması yok.
+      </p>
+      <div class="hero-cta center">
+        <a href="/iletisim/" class="btn btn--primary btn--lg">Ücretsiz Keşif Görüşmesi</a>
+        <a href="/yapay-zeka-egitimi/" class="btn btn--secondary btn--lg">Eğitim Rehberini Oku</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .hero-cta {
+    display: flex;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+    margin-top: var(--s-4);
+  }
+  .hero-cta.center { justify-content: center; }
+
+  .tldr-card {
+    background: var(--c-white);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    padding: var(--s-4) var(--s-5);
+    box-shadow: var(--sh-mid);
+  }
+  .tldr-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: var(--s-2);
+  }
+  .tldr-card p { margin: 0; color: var(--c-text); line-height: 1.7; }
+  .tldr-card strong { color: var(--c-navy); }
+
+  .guide h2 {
+    color: var(--c-navy);
+    font-size: 1.5rem;
+    margin: var(--s-6) 0 var(--s-3);
+    line-height: 1.3;
+  }
+  .guide h2:first-child { margin-top: 0; }
+  .guide p {
+    color: var(--c-text-muted);
+    line-height: 1.8;
+    margin-bottom: var(--s-3);
+  }
+  .guide strong { color: var(--c-text); }
+  .guide a { color: var(--c-gold-text); text-decoration: underline; }
+  .guide ul {
+    margin: 0 0 var(--s-4);
+    padding-left: 1.2rem;
+    display: grid;
+    gap: var(--s-2);
+  }
+  .guide li { color: var(--c-text-muted); line-height: 1.7; }
+  .guide li strong { color: var(--c-navy); }
+
+  .lead.center { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
+
+  .prog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-4);
+    max-width: 900px;
+    margin: var(--s-5) auto 0;
+  }
+  @media (max-width: 700px) { .prog-grid { grid-template-columns: 1fr; } }
+  .prog-card {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    padding: var(--s-5);
+    display: flex;
+    flex-direction: column;
+  }
+  .prog-card--gold { border-color: var(--c-border-gold); box-shadow: var(--sh-mid); }
+  .prog-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+  }
+  .prog-price {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--c-navy);
+    margin: var(--s-2) 0 var(--s-3);
+  }
+  .prog-price span { font-size: 0.9rem; font-weight: 500; color: var(--c-text-muted); }
+  .prog-desc { color: var(--c-text-muted); line-height: 1.65; margin-bottom: var(--s-4); flex: 1; }
+
+  .faq-list { list-style: none; display: grid; gap: var(--s-3); margin-top: var(--s-4); }
+  .faq-item {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    overflow: hidden;
+  }
+  .faq-item:hover { border-color: var(--c-border-gold); }
+  .faq-item summary {
+    display: grid;
+    grid-template-columns: 48px 1fr 32px;
+    gap: var(--s-3);
+    align-items: center;
+    padding: var(--s-4);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { background: var(--c-bg-subtle); }
+  .faq-num { font-weight: 800; font-size: 1.05rem; color: var(--c-gold); }
+  .faq-q { font-weight: 600; color: var(--c-navy); line-height: 1.45; }
+  .faq-toggle { font-size: 1.6rem; color: var(--c-gold-text); text-align: center; font-weight: 300; line-height: 1; transition: transform var(--t-fast); }
+  .faq-item details[open] .faq-toggle { transform: rotate(45deg); }
+  .faq-a { padding: 0 var(--s-4) var(--s-4) calc(var(--s-4) + 48px + var(--s-3)); }
+  .faq-a p { color: var(--c-text-muted); line-height: 1.75; margin: 0; }
+  .faq-more { margin-top: var(--s-4); color: var(--c-text-muted); }
+  .faq-more a { color: var(--c-gold-text); text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .faq-item summary { grid-template-columns: 36px 1fr 28px; gap: var(--s-2); padding: var(--s-3); }
+    .faq-a { padding: 0 var(--s-3) var(--s-3) var(--s-3); }
+    .guide h2 { font-size: 1.3rem; }
+  }
+  .more-link { margin-top: var(--s-4); color: var(--c-text-muted); }
+  .more-link.center { text-align: center; }
+  .more-link a, .lead a { color: var(--c-gold-text); text-decoration: underline; }
+</style>

@@ -8,7 +8,7 @@ tags:
   - ios
   - android
   - dispatch
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Claude'un mobil uygulamaları, masaüstü Claude'un cebinizdeki uzantısıdır.** App Store ve Google Play'den ücretsiz indirilir. Hesabınızla giriş yaptığınız anda sohbet geçmişiniz, [Projects](/wiki/araclar/projects/)'iniz ve aboneliğiniz aynen orada olur.
@@ -45,7 +45,7 @@ Mobil uygulamaların eksikleri masaüstüne göre belirgin. Karar verirken bilin
 
 Kısaca: **mobil "hızlı giriş ve takip" için, masaüstü "üretim ve otomasyon" için.**
 
-Mobil Cowork 7 Temmuz 2026'dan beri beta olarak çalışıyor; telefondan görev atma Pro, Max, Ultra ve Team'de otomatik açık (aşağıda). Connector'lar, skill'ler, zamanlanmış görevler ve cihazlar arası devam mobilde de var. Yerel dosya erişimi ve tarayıcı kullanımı kısmi; sandbox'ta kod çalıştırma ve computer use masaüstü uygulamasına bağlı. Cowork ile sohbet 16 Eylül 2026'dan itibaren tek Claude içinde birleşiyor (kademeli yayılım, ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/)). Hafıza sohbet ve Cowork arasında ortak, bkz. [Memory](/wiki/yetenekler/memory/). Mobilde etkileşimli uygulamalar (interactive apps) da 25 Mart 2026'dan beri var.
+Mobil Cowork 7 Temmuz 2026'dan beri beta olarak çalışıyor; telefondan görev atma Pro, Max, Ultra ve Team'de otomatik açık (aşağıda). [Connector](/wiki/sozluk/#connector)'lar, [skill](/wiki/sozluk/#skill)'ler, zamanlanmış görevler ve cihazlar arası devam mobilde de var. Yerel dosya erişimi ve tarayıcı kullanımı kısmi; sandbox'ta kod çalıştırma ve computer use masaüstü uygulamasına bağlı. Cowork ile sohbet 16 Eylül 2026'dan itibaren tek Claude içinde birleşiyor (kademeli yayılım, ayrıntı: [Cowork Modu](/wiki/araclar/cowork-modu/)). Hafıza sohbet ve Cowork arasında ortak, bkz. [Memory](/wiki/yetenekler/memory/). Mobilde etkileşimli uygulamalar (interactive apps) da 25 Mart 2026'dan beri var.
 
 ## Sesli Mod (Voice Mode)
 

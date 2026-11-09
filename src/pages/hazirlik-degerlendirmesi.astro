@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HazirlikTesti from '../components/HazirlikTesti.astro';
+---
+
+<Layout
+  title="Claude Hazırlık Değerlendirmesi: Hazır mısınız? | Zamana"
+  description="Ekibiniz Claude'a hazır mı? 10 soruluk, 3 dakikalık ücretsiz değerlendirme: kullanım durumu, veri politikası, pilot ve ölçüm. Cevaplar saklanmaz."
+  ogImage="/og/hazirlik-degerlendirmesi.png"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Hazırlık Değerlendirmesi</span>
+      <h1>Ekibiniz Claude'a Hazır mı?</h1>
+      <p class="lead">
+        10 soru, yaklaşık 3 dakika. Sonuçta nerede olduğunuzu ve sıradaki en mantıklı adımı görürsünüz.
+        Satın almak zorunda olduğunuz hiçbir şey yok.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="tldr-card">
+        <span class="tldr-label">Önce bilmeniz gerekenler</span>
+        <p>
+          <strong>Cevaplarınız hiçbir yere gönderilmez ve saklanmaz.</strong> Hesap tarayıcınızda yapılır; e-posta,
+          ad ya da şirket adı istemeyiz. Test bir tanı değil, kaba bir fotoğraftır: amaç, Claude'a geçmeden önce
+          hangi alanların boş kaldığını görmenizdir. Sonuç bir satış yönlendirmesi olarak tasarlanmadı; en düşük
+          bantta bile ilk önerimiz ücretsiz kaynaklardır.
+        </p>
+      </div>
+
+      <HazirlikTesti />
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <article class="guide">
+        <h2>Puan bantları</h2>
+        <p>
+          Her soru 0, 1 ya da 2 puandır (ilk seçenek 0, ikinci 1, üçüncü 2). Toplam 0 ile 20 arasındadır.
+        </p>
+
+        <h3>0-7 puan: Başlangıç</h3>
+        <p>
+          Zemin henüz hazır değil. Önce kullanım durumunu netleştirin ve veri kuralını yazın.
+          Başlamak için <a href="/wiki/temeller/ilk-7-gun/">İlk 7 Gün</a> ve
+          <a href="/wiki/temeller/sirket-ici-politika/">Şirket İçi Politika</a> sayfaları ücretsizdir.
+          Üst yönetimle aynı sayfaya gelmek istiyorsanız
+          <a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a> (3 saatlik tek oturum, 15.000 TL + KDV)
+          bu iş için tasarlandı, ama şart değildir.
+        </p>
+
+        <h3>8-14 puan: Gelişen</h3>
+        <p>
+          Temel parçaların çoğu var, birkaç boşluk kaldı. Küçük ve ölçülen bir pilot en çok işe yarayan adımdır:
+          <a href="/wiki/temeller/pilot-ve-yayginlastirma/">Pilot ve Yaygınlaştırma</a> yolu anlatır.
+          Destek isterseniz <a href="/programlar/bireysel/">Bireysel Program</a> (40.000 TL + KDV, 3 hafta + 3 ay destek)
+          tek kişinin hızlı yetkinlik kazanması için, <a href="/programlar/kurumsal/">Kurumsal Program</a>
+          (aylık 100.000 TL + KDV, en az 3 ay, 6 çalışan) ekip genelinde süreklilik için uygundur.
+        </p>
+
+        <h3>15-20 puan: İleri</h3>
+        <p>
+          Ölçeklemeye hazırsınız. Asıl risk teknik değil, alışkanlıktır: kullanım bir ekipte yayılıp diğerinde sönebilir.
+          <a href="/programlar/kurumsal/">Kurumsal Program</a> süreklilik, <a href="/programlar/ai-sampiyonu/">AI Şampiyonu</a>
+          ise şirket içinde Claude'u yaygınlaştıracak kişiyi yetiştirmek içindir.
+        </p>
+
+        <h2>Bu değerlendirme neyi ölçmez?</h2>
+        <ul>
+          <li><strong>Teknik uygunluğu.</strong> Altyapı, entegrasyon ya da güvenlik incelemesi kapsam dışıdır.</li>
+          <li><strong>Hukuki uyumu.</strong> Veri sorusu bir politikanın var olup olmadığına bakar; içeriğinin KVKK'ya uygunluğunu denetlemez. Kesin görüş için hukuk danışmanınıza başvurun.</li>
+          <li><strong>Sizin sektörünüzü.</strong> Aynı puan, bir hukuk bürosu ile bir üretim firması için farklı anlam taşıyabilir.</li>
+        </ul>
+        <p>
+          Plan seçimi için <a href="/wiki/temeller/plan-secici/">Plan Seçici</a>, maliyet hesabı için
+          <a href="/wiki/temeller/roi-hesaplayici/">ROI Hesaplayıcı</a> sayfalarını kullanabilirsiniz.
+          Zamana Claude aboneliği satmaz; satın alma doğrudan Anthropic'ten yapılır (claude.com/pricing).
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="hero-cta center">
+        <a href="/iletisim/?program=kurumsal" class="btn btn--primary btn--lg">Görüşme talep et</a>
+        <a href="/programlar/" class="btn btn--secondary btn--lg">Programları gör</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

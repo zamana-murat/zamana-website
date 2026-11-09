@@ -7,7 +7,7 @@ tags:
   - pazarlama
   - iletisim
   - icerik-uretimi
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Pazarlama ekibi Claude'u doğru kurduğunda içerik üretim kapasitesini belirgin biçimde artırır: kalite düşmez, ton tutarlı kalır, üretim hızlanır.
@@ -106,7 +106,7 @@ Ana mesaj üzerinde **gerçekten farklı açılardan** 2-3 varyant: yalnızca ke
 - Artifacts: basit landing page taslağı (bkz: [Artifacts](/wiki/yetenekler/artifacts/))
 - `marketing:content-creation`: çok formatlı içerik üretimi
 - `marketing:campaign-plan`: tam kampanya brief'i
-- Marka sesi uyum kontrolü için CLAUDE.md'deki ses profilini kullanın; hazır bir skill adına güvenmeyin, kurulu olanları Skills listenizden kontrol edin
+- Marka sesi uyum kontrolü için CLAUDE.md'deki ses profilini kullanın; hazır bir [skill](/wiki/sozluk/#skill) adına güvenmeyin, kurulu olanları Skills listenizden kontrol edin
 
 **Connector'lar:**
 1. **Google Workspace / Microsoft 365**: içerik belgeleri
@@ -144,6 +144,8 @@ Kriz ve şikayet yanıtı taslağı örneği için [Müşteri Hizmetleri](/wiki/
 - **"X markası gibi yaz" demek.** Rakip dilini kopyalamak hukuki risk ve marka değeri kaybıdır; "rakipten şu açılardan ayrışan" diye tarif edin.
 - **Müşteri listesini olduğu gibi yüklemek.** E-posta listesi, müşteri adı ve telefon kişisel veridir; segment çalışması için anonim özet tablo yeterlidir. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil. Çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Veri olmadan tahmine güvenmek.** "Bu post kaç beğeni alır" gibi sorulara Claude veri olmadan da cevap üretir; gerçek veriyle test edin.
+
+Pazarlama ekibiniz için ortak ses ve prompt düzeni kurmak istiyorsanız [ekibinizle 3 aylık Claude programı](/programlar/kurumsal/) bunu iş akışlarınız üzerinden çalışır. Kampanya sunumları için [Claude ile Sunum](/wiki/gorevler/claude-ile-sunum/) rehberine de bakın.
 
 ## İlgili Sayfalar
 

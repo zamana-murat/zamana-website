@@ -1,11 +1,12 @@
 ---
 title: "Anthropic ve Claude'un Tarihçesi"
+seoTitle: "Anthropic Nedir? Kurucuları ve Claude'un Tarihçesi"
 description: "Claude'u yapan şirket Anthropic'i tanıyın, kurucular, ayrılış hikâyesi, Constitutional AI, model tarihçesi ve neden güvenilir bir AI ortağı."
 tags:
   - temeller
   - anthropic
   - tarihce
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 **Anthropic, Claude'u yapan şirkettir.** Kurumsal bir aracı sözleşmeye bağlamadan önce arkasındaki şirketi tanımak doğaldır. Bu sayfa Anthropic'i, kuruluşunu, değerlerini ve Claude'un model tarihçesini özetler.

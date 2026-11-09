@@ -1,13 +1,13 @@
 ---
 title: "Kurulum Sorun Giderme"
-seoTitle: "Claude Kurulum Sorunları: Donanım, Linux, Çözüm"
-description: "Claude Desktop kurulumunda donanım kontrolü, Linux gereksinimleri ve sık sorunlar: Cowork görünmüyor, klasör bağlanmıyor, connector girişi, yavaşlık."
+seoTitle: "Claude Sorunları: Limit Doldu, Giriş, Kurulum"
+description: "Claude sorunları ve çözümleri: limit doldu ne yapmalı, limit ne zaman sıfırlanır, giriş yapamıyorum, Türkçe yanıt, Cowork görünmüyor, kurulum ve donanım."
 tags:
   - temeller
   - kurulum
   - sorun-giderme
   - claude-desktop
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-09"
 ---
 
 Bu sayfa [İlk Kurulum](/wiki/temeller/ilk-kurulum/) rehberinin yardımcısıdır: kurulumdan önce bilgisayarınızı kontrol etmek, Linux kullanıyorsanız farkları görmek ve kurulumda takıldığınız yeri çözmek için. Kuruluma yeni başlıyorsanız önce İlk Kurulum sayfasındaki adımları izleyin, bir yerde takılırsanız buraya dönün.
@@ -74,6 +74,42 @@ Claude Desktop resmi olarak Linux'u da destekler (Ubuntu 22.04+ / Debian 12+, x6
 - Şirket maili güvenlik filtresi → @anthropic.com'u beyaz listeye ekletin
 - Geçici olarak Gmail ile deneyin
 
+### "Limit doldu" uyarısı geldi, ne yapmalıyım?
+
+- Önce Settings, Usage ekranına bakın: hangi limitin dolduğu (5 saatlik oturum mu, haftalık mı) ve ne zaman açılacağı orada yazar.
+- 5 saatlik pencere doluysa beklemek çoğu zaman yeterlidir. Beklerken Claude gerektirmeyen bir işe geçin.
+- Sık takılıyorsanız yeni konuda yeni sohbet açın, rutin işte Sonnet kullanın, büyük belgeleri parça parça yükleyin.
+- Beklemek istemiyorsanız ücretli planlarda kullanım kredisi açılabilir; kullanım API fiyatıyla ayrıca faturalanır. Ayrıntı: [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/).
+- Pro'da limite haftada birkaç kez takılıyorsanız sorun alışkanlık değil plandır: [Claude Planları](/wiki/temeller/planlar/).
+
+### Limit ne zaman sıfırlanır?
+
+- **5 saatlik oturum limiti** sabit bir saatte (gece yarısı gibi) sıfırlanmaz. İlk mesajla başlayan kayan bir pencerededir ve yaklaşık 5 saat sonra yenilenir.
+- **Haftalık limit** hesabınıza atanmış sabit bir gün ve saatte sıfırlanır; zamanı Settings, Usage ekranında görünür.
+- Ultra'da doğrulanmış hesapta 5 saatlik limit yoktur, yalnız haftalık limit sürer.
+- Haftalık limitin tam miktarını ve Free planın sayısal limitini Anthropic yayımlamaz; internette gördüğünüz sayılar resmî değildir.
+
+### "Giriş yapamıyorum"
+
+- Hangi yöntemle kayıt olduysanız (Google hesabı ya da e-posta) onunla girin; yanlış yöntem yeni, boş bir hesap açılmış gibi görünmesine yol açabilir.
+- E-posta ile giriş kodu ya da bağlantı gelmiyorsa yukarıdaki "Email gelmiyor" adımlarına bakın.
+- Tarayıcıyı güncelleyin, gizli pencerede deneyin, VPN'i ve reklam engelleyiciyi geçici kapatın.
+- Masaüstü uygulamada takılıyorsanız çıkış yapıp web'den (claude.ai) girin, sonra uygulamaya dönün.
+- Hesap askıya alındı ya da kısıtlandı gibi bir mesaj görüyorsanız kendi başınıza çözmeye çalışmayın; Anthropic yardım merkezinden (support.claude.com) destek talep edin.
+
+### Claude'u Türkçe nasıl yaparım?
+
+- Claude, Türkçe yazdığınıza Türkçe yanıt verir. Çoğu zaman ayar gerekmez.
+- Her konuşmada Türkçe istiyorsanız profil talimatına (Settings, Profile) "Her zaman Türkçe yanıt ver, resmi ama sade bir ton kullan" yazın. Ayrıntı: [Claude Nedir?](/wiki/temeller/claude-nedir/).
+- Arayüz dilinin (menüler, düğmeler) Türkçe olup olmadığı sürüme ve platforma göre değişebilir ve resmi kaynaklarda net bir dil listesi bulamadık. Settings içindeki dil seçeneğine bakın; yoksa arayüz İngilizce kalır, ama sohbet Türkçe yürür.
+- Sesli konuşma (Voice mode) için Türkçe desteği doğrulanmamıştır.
+
+### "Tool-use limit" gibi bir araç mesajı çıktı, ne demek?
+
+- Anthropic'in bu mesajın metni ve tam anlamı için yayımladığı net bir açıklamayı doğrulayamadık, o yüzden kesin bir anlam yazmıyoruz.
+- Genel olarak bu tür mesajlar, Claude'un tek bir görevde çok sayıda araç (web araması, dosya, connector) çağırdığında bir üst sınıra ya da kullanım limitine yaklaştığını gösterir. Bu yorum bize aittir, resmi bir tanım değildir.
+- Pratik çözüm: görevi daha küçük adımlara bölün, "devam et" yazın, gerekmeyen connector'ları kapatın, yeni sohbette devam edin. Mesaj Usage ekranındaki bir limitle birlikte geliyorsa yukarıdaki "Limit doldu" adımlarını izleyin.
+
 Şirket bilgisayarında kurulum engeli (yazılım kurma izni, firewall, VPN) için [İlk Kurulum](/wiki/temeller/ilk-kurulum/) sayfasındaki "Şirket Bilgisayarındaysanız" adımına ve [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki IT listesine bakın.
 
 ## İlgili Sayfalar
@@ -82,4 +118,5 @@ Claude Desktop resmi olarak Linux'u da destekler (Ubuntu 22.04+ / Debian 12+, x6
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Uygulamanın özellikleri ve ayarları
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Cowork nedir, hangi planda var
 - [Connectors](/wiki/araclar/connectors/): Connector kurulumu ve giriş adımları
+- [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/): Limit nasıl işler, dolunca ne yapılır
 - [İlk 7 Gün Rehberi](/wiki/temeller/ilk-7-gun/): Kurulumdan sonraki ilk hafta

@@ -1,5 +1,6 @@
 ---
 title: Takım, Admin Paneli ve Enterprise Plan
+seoTitle: "Claude Team Plan: Admin Paneli ve Enterprise"
 description: Birden çok kullanıcılı şirketler için Claude. Team ve Enterprise plan farkları, admin paneli, kullanıcı yönetimi, güvenlik araçları ve merkezi fatura.
 tags:
   - temeller
