@@ -3,7 +3,7 @@ title: "Claude Marketplace açıldı: eklentiler, ajanlar ve hizmetler tek yerde
 seoTitle: "Claude Marketplace açıldı"
 description: "2.000'den fazla bağlayıcı ve eklenti, Claude tabanlı ürünler ve danışmanlık ortakları tek bir pazar yerinde toplandı."
 date: "2026-09-23"
-source: "https://claude.com/blog/claude-marketplace"
+source: "https://claude.com/resources/articles/claude-marketplace"
 sourceTitle: "Claude Marketplace: one place to discover plugins, agents, and services from our partners"
 image: "/images/haberler/claude-marketplace.jpg"
 imageAlt: "Turuncu zemin üzerinde birbirine bağlı düğümler ve bir el çizimi"
@@ -37,4 +37,4 @@ Pazar yeri açık; claude.com/marketplace adresinden gözatabilirsiniz. Bir conn
 
 İlgili sayfalar: [MCP Nedir](/wiki/mcp/nedir/), [Popüler MCP'ler](/wiki/mcp/populer-mcpler/) ve [MCP Güvenliği](/wiki/mcp/guvenlik/).
 
-*Kaynak: [Claude Marketplace: one place to discover plugins, agents, and services from our partners](https://claude.com/blog/claude-marketplace), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Claude Marketplace: one place to discover plugins, agents, and services from our partners](https://claude.com/resources/articles/claude-marketplace), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

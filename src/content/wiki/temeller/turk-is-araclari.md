@@ -29,7 +29,7 @@ Connector, Claude'un bir programa doğrudan bağlanıp veri okumasını (bazen y
 | KEP | Bildiğimiz kadarıyla yok | Aynı |
 | Türk bankaları | Bildiğimiz kadarıyla yok | Aynı |
 
-Bu tablo **Kasım 2026** itibarıyladır ve resmi dizin (1.000'den fazla connector, Kasım 2026) ile arama sonuçlarına dayanır. Durum değişebilir: karar vermeden önce [claude.com/connectors](https://claude.com/connectors) dizininde ürün adını arayın. Dizinde görünmeyen şey için "özel connector" yolu vardır, ama bu sizin sorumluluğunuzdaki bir kurulumdur (aşağıya bakın). Genel resmi connector listesi için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
+Bu tablo **Kasım 2026** itibarıyladır ve resmi dizin (1.000'den fazla connector, Kasım 2026) ile arama sonuçlarına dayanır. Durum değişebilir: karar vermeden önce [claude.com/connectors](https://claude.com/marketplace/connectors-plugins) dizininde ürün adını arayın. Dizinde görünmeyen şey için "özel connector" yolu vardır, ama bu sizin sorumluluğunuzdaki bir kurulumdur (aşağıya bakın). Genel resmi connector listesi için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasına bakın.
 
 ## En pratik yol: dışa aktar, Claude'a yükle
 

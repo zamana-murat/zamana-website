@@ -32,10 +32,10 @@ Anthropic, Claude Enterprise için üç özelliği genel kullanıma açtı: akı
 
 ## Bilmeniz gerekenler
 
-- Raporlar tek tek çalışanın performansını değerlendirmek ya da işe ilişkin karar vermek için tasarlanmadı. Çalışan gizliliği ve KVKK açısından bunu şirket içi politikanızda açıkça yazın: [Şirket içi politika](/wiki/temeller/sirket-ici-politika).
+- Raporlar tek tek çalışanın performansını değerlendirmek ya da işe ilişkin karar vermek için tasarlanmadı. Çalışan gizliliği ve KVKK açısından bunu şirket içi politikanızda açıkça yazın: [Şirket içi politika](/wiki/temeller/sirket-ici-politika/).
 - Raporlar konuşma örneklerine dayanır, tüm konuşmaları okumaz.
 - Müşteri yönetimli şifreleme anahtarı kullanan kurumlarda anketler açılabilir. Tek bir saklama süresi varsa anketler ve yanıtlar o süreye göre silinir.
 - Bazı yapılandırmalarda (örneğin HIPAA) kullanılabilirlik değişebilir.
-- Yatırım getirisi ölçümü için [Ölçüm metrikleri](/wiki/temeller/olcum-metrikleri) sayfası bir başlangıç noktasıdır.
+- Yatırım getirisi ölçümü için [Ölçüm metrikleri](/wiki/temeller/olcum-metrikleri/) sayfası bir başlangıç noktasıdır.
 
 *Kaynak: [Smart reports, surveys, and pooled group budgets for Claude Enterprise](https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

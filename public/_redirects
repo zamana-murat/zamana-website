@@ -14,6 +14,9 @@
 # Wiki Araçlar Tur 2 (2026-10-06): Dispatch sayfası Claude Mobil'e birleşti
 /wiki/araclar/dispatch/   /wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch   301
 /wiki/araclar/dispatch    /wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch   301
+# Göreli link kalıntısı + dispatch: aşağıdaki genel kurallardan önce, tek adımda hedefe (2026-11-08 denetimi)
+/wiki/:x/araclar/dispatch/       /wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch   301
+/wiki/araclar/:page/dispatch/    /wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch   301
 
 # Eski göreli link hatasının kalıntıları (GSC 404 raporu, 2026-10-06, 217/220 URL).
 # Gerçek wiki sayfaları en fazla 2 seviye: /wiki/{section}/{slug}/. 3 seviyeli her yol bu hatanın ürünü.

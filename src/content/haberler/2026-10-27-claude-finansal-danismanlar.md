@@ -3,7 +3,7 @@ title: "Claude for Financial Advisors'a 22 ortak bağlantı geldi"
 seoTitle: "Claude for Financial Advisors: ABD odaklı paket"
 description: "Finansal danışmanlar için Claude paketi 22 ortak connector ile genişledi; odağı ABD'deki SEC kurallarına tabi danışman firmaları."
 date: "2026-10-27"
-source: "https://claude.com/blog/claude-for-financial-advisors"
+source: "https://claude.com/resources/articles/claude-for-financial-advisors"
 sourceTitle: "Claude for Financial Advisors"
 image: "/images/haberler/finansal-danismanlar.png"
 imageAlt: "Claude for Financial Advisors duyurusunun kapak görseli"
@@ -39,4 +39,4 @@ Connector listesinde Addepar, BlackRock, Charles Schwab, Envestnet, iCapital, Or
 
 Sektör sayfası: [Finansal hizmetlerde Claude](/kurumsal/finansal-hizmetler/).
 
-*Kaynak: [Claude for Financial Advisors](https://claude.com/blog/claude-for-financial-advisors), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Claude for Financial Advisors](https://claude.com/resources/articles/claude-for-financial-advisors), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

@@ -45,4 +45,4 @@ Kredi her faturalama döneminde yenilenir, kullanılmayan kısım bir sonraki d�
 - Fiyatlar dolar üzerinden belirlenir. Türkiye'deki kartlarda kur farkı ve vergi hesabınıza yansıyabilir.
 - Planlar ve limitlerin nasıl çalıştığı için [Claude planları](/wiki/temeller/planlar/) ve [kullanım limitleri](/wiki/temeller/kullanim-limitleri/) sayfalarına bakabilirsiniz.
 
-*Kaynak: [What is the Ultra plan?](https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan), [Max plan fiyatları](https://claude.com/pricing/max) ve [Monthly API credits for Max, Ultra, and Team plans](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [What is the Ultra plan?](https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan), [Max plan fiyatları](https://claude.com/pricing) ve [Monthly API credits for Max, Ultra, and Team plans](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

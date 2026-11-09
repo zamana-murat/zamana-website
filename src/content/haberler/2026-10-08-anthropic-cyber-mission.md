@@ -25,9 +25,9 @@ Anthropic, yazılım ve sistemleri koruyan savunmacılara yardım etmek için uz
 ## Nasıl denersiniz?
 
 1. Güvenlik ekibiniz varsa Anthropic'in siber doğrulama programı sayfasından başvurun.
-2. Kod tabanınızı taratmak istiyorsanız [Claude Security](/claude/security) sayfasına bakın.
+2. Kod tabanınızı taratmak istiyorsanız [Claude Security](/claude/security/) sayfasına bakın.
 3. Açık kaynak projeniz varsa OSS Scanner kaydı ve Claude for Open Source için Anthropic duyurusundaki bağlantıları izleyin.
-4. Sektörünüzde savunma tarafında Claude kullanımı için [siber güvenlik sayfamıza](/kurumsal/siber-guvenlik) göz atabilirsiniz.
+4. Sektörünüzde savunma tarafında Claude kullanımı için [siber güvenlik sayfamıza](/kurumsal/siber-guvenlik/) göz atabilirsiniz.
 
 ## Bilmeniz gerekenler
 

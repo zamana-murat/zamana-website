@@ -195,7 +195,7 @@ Kaynak: [More visibility and control over Claude Enterprise for security teams](
 - **Uygun olmayan kuruluşlar:** HIPAA yapılandırması, müşteri yönetimli anahtar, zero data retention ya da asgari veri saklama kullananlar ve verisi ABD dışında tutulanlar.
 - **Sınırlar:** Etiketler kuruluştaki herkese görünür, kilitlenemez; tek sohbete etiket, etiketler arası bölüştürme ve etiket bazlı harcama tavanı yok. Rakamlar faturayla birebir tutmayabilir; ay sonundan sonra yaklaşık bir hafta değişebilir.
 
-Kaynak: [Track spend by project with tags](https://support.claude.com/en/articles/18251257-track-spend-by-project-with-tags) (Anthropic).
+Kaynak: [Track spend by project with tags](https://support.claude.com/en/articles/18251257-track-spend-by-cost-code-with-project-tags) (Anthropic).
 
 ## Veri İşleme Sözleşmesi (DPA)
 

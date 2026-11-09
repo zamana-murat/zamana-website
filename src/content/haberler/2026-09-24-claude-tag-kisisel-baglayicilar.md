@@ -3,7 +3,7 @@ title: "Slack'teki Claude Tag artık kişisel bağlayıcılarını da kullanabil
 seoTitle: "Claude Tag kişisel bağlayıcıları kullanabiliyor"
 description: "Claude Tag, kanallarda kişinin kendi takvimine, Drive'ına ve CRM'ine erişerek onun adına bilgi getirebiliyor."
 date: "2026-09-24"
-source: "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels"
+source: "https://claude.com/resources/articles/claude-tag-now-supports-personal-connectors-in-channels"
 sourceTitle: "Claude Tag now supports personal connectors in channels"
 image: "/images/haberler/claude-tag-kisisel-baglayicilar.jpg"
 imageAlt: "Turuncu zemin üzerinde konuşma balonu çizimi"
@@ -38,4 +38,4 @@ Kurulum gerekmiyor. İlk kez kişisel connector'a ihtiyaç duyulduğunda Claude 
 
 İlgili sayfalar: [Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/) ve [Connectors](/wiki/araclar/connectors/).
 
-*Kaynak: [Claude Tag now supports personal connectors in channels](https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Claude Tag now supports personal connectors in channels](https://claude.com/resources/articles/claude-tag-now-supports-personal-connectors-in-channels), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

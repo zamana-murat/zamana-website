@@ -3,7 +3,7 @@ title: "Cowork ve sohbet tek Claude oldu, belge ve sunum üretimi geldi"
 seoTitle: "Cowork ve sohbet tek Claude oldu"
 description: "Cowork ile sohbet birleşti; Claude artık sohbet içinden belge, sunum ve tasarım üretebiliyor."
 date: "2026-09-16"
-source: "https://claude.com/blog/cowork-is-now-claude"
+source: "https://claude.com/resources/articles/cowork-is-now-claude"
 sourceTitle: "Claude Cowork and chat are now one Claude"
 image: "/images/haberler/cowork-claude-tek-oldu.jpg"
 imageAlt: "Turuncu zemin üzerinde, üzerinde karalama çizgisi olan bir sunum tahtası çizimi"
@@ -47,4 +47,4 @@ Kullanılabilirlik:
 
 İlgili wiki sayfaları: [Cowork](/wiki/araclar/cowork-modu/), [Connectors](/wiki/araclar/connectors/), [Claude Design](/wiki/yetenekler/claude-design/) ve [Planlar](/wiki/temeller/planlar/).
 
-*Kaynak: [Claude Cowork and chat are now one Claude](https://claude.com/blog/cowork-is-now-claude), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Claude Cowork and chat are now one Claude](https://claude.com/resources/articles/cowork-is-now-claude), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

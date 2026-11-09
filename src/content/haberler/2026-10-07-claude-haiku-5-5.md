@@ -40,6 +40,6 @@ Anthropic'in müşteri örnekleri de var: Asana görev tamamlama gecikmesinde y�
 - Aylık API kredisi alan Max, Ultra ve Team planlarında kredi her modelde kullanılabiliyor.
 - Türkiye için özel bir kısıt belirtilmiyor. Fiyatlar dolar bazlıdır ve vergi hariçtir.
 
-Model ve planlar için [Modeller](/wiki/temeller/modeller) ve [Planlar](/wiki/temeller/planlar) sayfalarına bakabilirsiniz.
+Model ve planlar için [Modeller](/wiki/temeller/modeller/) ve [Planlar](/wiki/temeller/planlar/) sayfalarına bakabilirsiniz.
 
 *Kaynak: [Introducing Claude Haiku 5.5](https://www.anthropic.com/claude-haiku-5-5), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

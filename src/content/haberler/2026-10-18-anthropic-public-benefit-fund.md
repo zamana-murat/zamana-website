@@ -27,6 +27,6 @@ Kısacası: şirketin değeri büyüdükçe kamu yararına ayrılan pay da büy�
 - **Bağlam:** Kurucu ortakların hisselerinin %80'ini bağışlama sözü ve çalışanların yaklaşık yarısının katıldığı eşleştirmeli hisse bağışı programı var. Anthropic, tüm bunlarla birlikte hisselerinin kabaca %20'sinin kamu yararına gideceğini belirtiyor.
 - **Belirsizlikler:** Başlangıç değeri, fonun dolar karşılığı ve yönetişim yapısı duyuruda yer almıyor. Anthropic bunları önümüzdeki aylarda paylaşacağını ve ilerleme için bir kamu yararı raporu yayımlayacağını söylüyor.
 - Bu yazı yatırım tavsiyesi değildir. Şirketin halka arz sürecine ilişkin ayrı yazımız: [S-1 başvurusu](/haberler/2026-10-26-anthropic-s1-halka-arz-basvurusu/).
-- Şirketin yapısı hakkında genel bilgi için [Anthropic ve Claude'un tarihçesi](/wiki/temeller/anthropic-ve-tarihce) sayfasına bakın.
+- Şirketin yapısı hakkında genel bilgi için [Anthropic ve Claude'un tarihçesi](/wiki/temeller/anthropic-ve-tarihce/) sayfasına bakın.
 
 *Kaynak: [Investing in the public benefit](https://www.anthropic.com/news/public-benefit-fund), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

@@ -41,7 +41,7 @@ Claude seçtiğiniz hesaplar için banka adı, hesap adı ve türü, son dört h
 - Hesabı istediğiniz an bağlantıdan çıkarabilirsiniz, Claude verilere erişimini kaybeder.
 - Yatırım tavsiyesi vermek için tasarlanmadı ve hata yapabilir. Önemli rakamları bankanızdan doğrulayın.
 - Reklam ya da sponsorlu öneri yok. Anthropic bu özellik üzerinden kendi kredi kartı, kredi ya da tasarruf hesabı sunmuyor.
-- Şirket hesaplarını bağlamadan önce kurumsal veri kurallarınıza bakın: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk).
+- Şirket hesaplarını bağlamadan önce kurumsal veri kurallarınıza bakın: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - Türkiye için bir takvim açıklanmadı.
 
 *Kaynak: [Introducing Personal Finance in Claude](https://claude.com/resources/articles/introducing-personal-finance-in-claude), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

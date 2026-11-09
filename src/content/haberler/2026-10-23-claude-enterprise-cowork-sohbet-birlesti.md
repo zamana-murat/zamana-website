@@ -32,13 +32,13 @@ Yöneticiler için asıl yenilik kontrol araçları:
 2. Mevcut Enterprise müşterileri, kurumlarının yayılımı hakkında e-posta alacak.
 3. Kurulum rehberi için Anthropic'in yardım merkezindeki yönetici makalesine bakın.
 
-Bu özellik Claude Enterprise planlarına özeldir. Bireysel kullanıcılar için daha önceki haber: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu).
+Bu özellik Claude Enterprise planlarına özeldir. Bireysel kullanıcılar için daha önceki haber: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
 ## Bilmeniz gerekenler
 
 - Sıfır veri saklama (zero data retention) ile Claude Code kullanan, HIPAA uyumlu yapılandırması olan ya da müşteri yönetimli şifreleme anahtarı kullanan kurumlar mevcut yapılandırmada kalıyor.
 - Ajan tabanlı işler hızlı bir sohbetten daha fazla token harcayabilir. Enterprise'da kullanım ayrıca faturalandığı için limit koymak mantıklı.
-- Türkiye'deki kurumlar için bölgeye özgü bir kısıt belirtilmiyor. Veri aktarımı ve KVKK değerlendirmesi için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk) sayfasına bakın.
+- Türkiye'deki kurumlar için bölgeye özgü bir kısıt belirtilmiyor. Veri aktarımı ve KVKK değerlendirmesi için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 - Zamana abonelik satmaz; Enterprise başvurusu doğrudan Anthropic'tendir.
 
 *Kaynak: [Claude Cowork and chat come together for Enterprise](https://claude.com/resources/articles/unified-claude-enterprise), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

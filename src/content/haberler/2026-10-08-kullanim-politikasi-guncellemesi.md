@@ -31,12 +31,12 @@ Yapılacak bir şey yok, politika otomatik olarak geçerli olacak. Şirketinizde
 
 1. Güncel Kullanım Politikasını 12 Kasım'dan önce okuyun.
 2. Sağlık, finans, hukuk ya da donanım içeren senaryolarınızı yüksek riskli kullanım maddesine göre gözden geçirin.
-3. Şirket içi yapay zekâ kuralınızı güncel metne göre yenileyin ([şirket içi politika rehberi](/wiki/temeller/sirket-ici-politika)).
+3. Şirket içi yapay zekâ kuralınızı güncel metne göre yenileyin ([şirket içi politika rehberi](/wiki/temeller/sirket-ici-politika/)).
 
 ## Bilmeniz gerekenler
 
-- **Desteklenen bölgeler:** Duyuruya göre uygulama, desteklenmeyen bölgelerde fiziksel olarak bulunan kişileri, orada kurulu ya da merkezli kuruluşları ve çoğunluk sahipliği oradan kontrol edilen kuruluşları da kapsayacak şekilde netleştirildi. Türkiye, Claude.ai ve API için desteklenen ülkeler listesinde. Ayrıntı için [Türkiye'de Claude](/wiki/temeller/turkiyede-claude) sayfasına bakın.
+- **Desteklenen bölgeler:** Duyuruya göre uygulama, desteklenmeyen bölgelerde fiziksel olarak bulunan kişileri, orada kurulu ya da merkezli kuruluşları ve çoğunluk sahipliği oradan kontrol edilen kuruluşları da kapsayacak şekilde netleştirildi. Türkiye, Claude.ai ve API için desteklenen ülkeler listesinde. Ayrıntı için [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/) sayfasına bakın.
 - Yukarıdaki özet duyurunun öne çıkardığı noktaları içerir; bağlayıcı olan, Anthropic'in yayımladığı tam metindir.
-- Kişisel veriler ve KVKK açısından genel çerçeve için [gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk) sayfasına bakabilirsiniz.
+- Kişisel veriler ve KVKK açısından genel çerçeve için [gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakabilirsiniz.
 
 *Kaynak: [2026 Usage Policy update](https://www.anthropic.com/news/2026-usage-policy-update), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

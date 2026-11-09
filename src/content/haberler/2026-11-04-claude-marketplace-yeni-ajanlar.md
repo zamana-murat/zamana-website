@@ -16,7 +16,7 @@ Eylülde açılan Claude Marketplace'e yeni ortak ürünler geldi ve liste 25'i 
 
 ## Sizin için ne değişiyor?
 
-Pazar yerini ilk haberimizde anlatmıştık: [Claude Marketplace açıldı](/haberler/2026-09-23-claude-marketplace). Bu turun öne çıkanları:
+Pazar yerini ilk haberimizde anlatmıştık: [Claude Marketplace açıldı](/haberler/2026-09-23-claude-marketplace/). Bu turun öne çıkanları:
 
 - **Güvenlik:** Chainguard Harness, Checkmarx One, Cyera Agent Guardian (Claude kullanımınızı envanterler ve istem, dosya, araç çağrılarına politika uygular), Rubrik Code Guardian, Tanium Cloud.
 - **Geliştirme altyapısı:** Datadog Agent Observability (ajanın hangi araçlardan geçtiğini izler), Netlify Enterprise.
@@ -36,7 +36,7 @@ Asıl avantaj sözleşme tarafında: tek bir taahhüdü hem Claude hem ortak ür
 ## Bilmeniz gerekenler
 
 - Yalnızca "uygun kurumsal müşteriler" yararlanabiliyor. Uygunluk ölçütleri, taahhüdün ne kadarının kullanılabileceği, fiyatlar, bölge kısıtları ve sözleşme şartları duyuruda yer almıyor; her ürünün sayfasından ya da Anthropic'ten öğrenilmeli.
-- Ortak ürünler üçüncü taraflara aittir; veri işleme koşullarını ayrıca değerlendirin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk).
+- Ortak ürünler üçüncü taraflara aittir; veri işleme koşullarını ayrıca değerlendirin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - Türkiye'den satın alma için duyuru bilgi vermiyor. Zamana aracılık yapmaz, satın alma doğrudan Anthropic ve ortaklarla yapılır.
 
 *Kaynak: [New agents and products for security, productivity, and creative work on Claude Marketplace](https://claude.com/resources/articles/new-agents-and-products-claude-marketplace), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

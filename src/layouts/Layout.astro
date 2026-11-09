@@ -51,7 +51,7 @@ const breadcrumbItems = pathParts.length > 0 ? [
   { name: 'Anasayfa', url: siteUrl },
   ...pathParts.map((part, i) => ({
     name: breadcrumbLabels[part] || part.charAt(0).toUpperCase() + part.slice(1),
-    url: `${siteUrl}/${pathParts.slice(0, i + 1).join('/')}`,
+    url: `${siteUrl}/${pathParts.slice(0, i + 1).join('/')}/`,
   })),
 ] : null;
 ---
@@ -67,7 +67,7 @@ const breadcrumbItems = pathParts.length > 0 ? [
     <meta name="description" content={description} />
     <meta name="author" content="Murat Özsaygılı" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
-    <link rel="canonical" href={canonicalUrl} />
+    {!noindex && <link rel="canonical" href={canonicalUrl} />}
 
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />

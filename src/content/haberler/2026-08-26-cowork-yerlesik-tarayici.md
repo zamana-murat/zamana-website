@@ -3,7 +3,7 @@ title: "Cowork'e kendi tarayıcısı geldi: şifrelerinize ve sekmelerinize doku
 seoTitle: "Cowork'e kendi tarayıcısı geldi"
 description: "Cowork masaüstü uygulamasında Claude, sizin tarayıcınızdan ayrı kendi tarayıcısıyla sitelerde gezip form dolduruyor."
 date: "2026-08-26"
-source: "https://claude.com/blog/cowork-built-in-browser"
+source: "https://claude.com/resources/articles/cowork-built-in-browser"
 sourceTitle: "Claude gets its own browser in Cowork"
 image: "/images/haberler/cowork-yerlesik-tarayici.jpg"
 imageAlt: "Turuncu zemin üzerinde düğümlü bir ağ ve fare imleci çizimi"
@@ -39,4 +39,4 @@ Web ve mobil kullanıcıları da özelliği uzaktan kullanabiliyor, ancak bunun 
 
 Birlikte okumak için: [Cowork](/wiki/araclar/cowork-modu/) ve [Claude Desktop](/wiki/araclar/claude-desktop/).
 
-*Kaynak: [Claude gets its own browser in Cowork](https://claude.com/blog/cowork-built-in-browser), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Claude gets its own browser in Cowork](https://claude.com/resources/articles/cowork-built-in-browser), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

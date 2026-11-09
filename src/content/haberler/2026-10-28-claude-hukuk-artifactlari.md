@@ -39,7 +39,7 @@ Makale ürünü "Claude Enterprise" olarak etiketliyor ve plan ya da fiyat liste
 
 - **Türk hukuku:** Resmi kaynakta Türk hukuku ve Türkçe sözleşme desteği yazmıyor. Playbook örnekleri ABD eyaletleri (Delaware, New York, California) üzerine kurulu, bazı araçlar da yer bağımlı (New York, Washington D.C.). Türkiye'de kullanmak için kendi playbook'unuzu ve mevzuat kaynaklarınızı sizin tanımlamanız gerekir.
 - **Her çıktı avukat kontrolünden geçer:** Araçlar ilk tur taslak üretir, hukuki görüş değildir. Dosyalama ya da gönderme öncesi insan onayı gerekir.
-- **Müvekkil verisi:** Müvekkil bilgisi için kişisel hesap kullanmayın, Team ya da Enterprise tercih edin. İçerikle model eğitilmemesi varsayılan olarak yalnız bu iki planda söz konusu. Meslek sırrı ve KVKK açısından [gizlilik ve KVKK rehberine](/wiki/temeller/gizlilik-kvkk) bakın.
+- **Müvekkil verisi:** Müvekkil bilgisi için kişisel hesap kullanmayın, Team ya da Enterprise tercih edin. İçerikle model eğitilmemesi varsayılan olarak yalnız bu iki planda söz konusu. Meslek sırrı ve KVKK açısından [gizlilik ve KVKK rehberine](/wiki/temeller/gizlilik-kvkk/) bakın.
 - **Erişim adaleti araçları** (kira defteri, sicil temizleme) ABD yerel hukukuna dayanıyor, Türkiye için karşılığı yok.
 
 Sektör sayfaları: [Claude hukuk çözümleri](/kurumsal/hukuk/), [Hukuk departmanında Claude](/wiki/departmanlar/hukuk/), [Hukuk Büroları programı](/programlar/hukuk-burolari/).

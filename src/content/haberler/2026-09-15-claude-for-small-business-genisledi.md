@@ -3,7 +3,7 @@ title: "Claude for Small Business genişledi: 43 iş akışı ve 27 yeni entegra
 seoTitle: "Claude for Small Business genişledi"
 description: "Küçük işletmeler için hazır iş akışları, yeni entegrasyonlar ve eğitim programları duyuruldu."
 date: "2026-09-15"
-source: "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
+source: "https://claude.com/resources/articles/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
 sourceTitle: "Claude for Small Business launches new workflows, integrations, and training programs"
 image: "/images/haberler/kucuk-isletme-is-akislari.jpg"
 imageAlt: "Turuncu zemin üzerinde küçük işletme duyurusunun soyut çizimi"
@@ -39,4 +39,4 @@ Paket tüm ücretli Claude planlarında kullanılabiliyor; birden fazla kişili 
 
 İlgili sayfalar: [Cowork](/wiki/araclar/cowork-modu/) ve [Connectors](/wiki/araclar/connectors/).
 
-*Kaynak: [Claude for Small Business launches new workflows, integrations, and training programs](https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Claude for Small Business launches new workflows, integrations, and training programs](https://claude.com/resources/articles/claude-for-small-business-launches-new-workflows-integrations-and-training-programs), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

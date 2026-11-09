@@ -37,7 +37,7 @@ Skill'ler, connector'lar, Projects ve kod çalıştırma/dosya oluşturma claude
 | **RAM ve depolama** | Genel bir resmi gereksinim yayımlanmıyor. Yalnız Linux'ta Cowork için en az 8 GB RAM ve yaklaşık 25 GB boş disk gerekir (KVM desteği şart) |
 | **İnternet** | Resmi bir hız değeri yayımlanmıyor. Zamana önerisi: kesintisiz, kararlı bir bağlantı |
 
-Güncel gereksinim için resmi kurulum sayfasına bakın: [Claude Desktop kurulumu](https://support.claude.com/en/articles/10065433-installing-claude-desktop).
+Güncel gereksinim için resmi kurulum sayfasına bakın: [Claude Desktop kurulumu](https://support.claude.com/en/articles/10065433-install-claude-desktop).
 
 **Önemli:** Cowork için **en az Pro ($20/ay)** gerekir. Yeni başlayan kullanıcılar için **ilk ay Max, eski adıyla Max 5x ($100/ay)** önerilir (öneri, zorunlu değil): keşif döneminde Pro limiti çabuk dolar ve "çalışmıyor" izlenimi oluşur. İkinci aydan itibaren gerçek kullanıma göre Pro'ya ($20) inebilirsiniz.
 

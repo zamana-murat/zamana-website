@@ -417,7 +417,7 @@ Connector'ları (Slack, Drive vb.) bağlarken OAuth akışları için modern tar
 Google Chrome kullanıyorsanız **Claude in Chrome** eklentisi de vardır (26 Ağustos 2026'dan beri genel kullanımda, tüm ücretli planlarda, yalnız masaüstü Chrome). Claude'un tarayıcıda sizin adınıza sayfa açıp doldurmasını sağlar; ne yaptığını bilerek kullanın. Tanıtım: [Claude in Chrome](/claude/chrome/), wiki özeti: [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/).
 
 - Zaten varsa: güncel olduğundan emin olun (Yardım → Hakkında)
-- Yoksa: [google.com/chrome](https://www.google.com/chrome) → indir → kur
+- Yoksa: [google.com/chrome](https://www.google.com/chrome/) → indir → kur
 
 ### VS Code (Daha İyi Metin Editörü)
 

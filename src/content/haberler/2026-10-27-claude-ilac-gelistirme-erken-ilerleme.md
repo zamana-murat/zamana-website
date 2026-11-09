@@ -30,7 +30,7 @@ Duyurudaki örnekler:
 
 - **Henüz insan denemesinde ilaç yok.** Sonuçların çoğu ortakların yayımladığı teknik raporlara ve erken laboratuvar testlerine dayanıyor. Mithril sonuçları fare verisi. Anthropic, sonuçlar tutarsa bir ilacın en erken 2028 sonunda insan denemelerine girebileceğini öngörüyor.
 - BigHat örneğinde standart ölçütlerin yanıltıcı olduğu ortaya çıktı; Claude ve bir Anthropic araştırmacısı yeni ölçütler önerdi. Yani çıktıların insan uzmanlığıyla doğrulanması gerekiyor.
-- Anthropic ayrıca Claude Science (araştırmacılar için yapay zekâ çalışma tezgâhı), yaşam bilimcilere kredi ve doğrulanmış kuruluşlar için Life Sciences Verification Program'ı anıyor. Ayrıntı için [Claude Science](/claude/science) ve [yaşam bilimleri sayfamız](/kurumsal/yasam-bilimleri).
-- Türkiye'de sağlık otoritesi onayı ya da KVKK açısından ayrı bir bilgi yayımlanmadı; hasta verisiyle çalışacaksanız önce [gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk) sayfasına bakın.
+- Anthropic ayrıca Claude Science (araştırmacılar için yapay zekâ çalışma tezgâhı), yaşam bilimcilere kredi ve doğrulanmış kuruluşlar için Life Sciences Verification Program'ı anıyor. Ayrıntı için [Claude Science](/claude/science/) ve [yaşam bilimleri sayfamız](/kurumsal/yasam-bilimleri/).
+- Türkiye'de sağlık otoritesi onayı ya da KVKK açısından ayrı bir bilgi yayımlanmadı; hasta verisiyle çalışacaksanız önce [gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 *Kaynak: [Early progress on accelerating drug development with Claude](https://www.anthropic.com/research/early-progress-drug-development), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

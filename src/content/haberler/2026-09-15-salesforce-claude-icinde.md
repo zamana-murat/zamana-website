@@ -3,7 +3,7 @@ title: "Salesforce artık Claude'un içinde: satış ekipleri için 37 beceri"
 seoTitle: "Salesforce artık Claude'un içinde"
 description: "Salesforce eklentisi beta olarak geldi; hesap, fırsat ve pipeline verisi mevcut yetkilerle Claude'a bağlanıyor."
 date: "2026-09-15"
-source: "https://claude.com/blog/salesforce-in-claude"
+source: "https://claude.com/resources/articles/salesforce-in-claude"
 sourceTitle: "Bringing Salesforce into Claude"
 image: "/images/haberler/salesforce-in-claude.jpg"
 imageAlt: "Turuncu zemin üzerinde Salesforce ve Claude entegrasyonunu simgeleyen soyut çizim"
@@ -37,4 +37,4 @@ Eklenti tüm ücretli Claude planlarında beta olarak kullanılabiliyor. Kurulum
 
 İlgili sayfalar: [Connectors](/wiki/araclar/connectors/) ve [Slack ve Teams Entegrasyonu](/wiki/araclar/slack-teams-entegrasyon/).
 
-*Kaynak: [Bringing Salesforce into Claude](https://claude.com/blog/salesforce-in-claude), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Bringing Salesforce into Claude](https://claude.com/resources/articles/salesforce-in-claude), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

@@ -33,6 +33,6 @@ Her özelliğin adımları Anthropic yardım merkezindeki ayrı makalelerde. Gen
 - Özellikler Claude Enterprise içindir; beta olanların istisnaları yardım merkezinde listeli. Cowork'te EDR, macOS ve Windows'ta Team ve Enterprise için beta; Amazon Bedrock, Google Cloud Vertex AI ve Microsoft Foundry üzerindeki masaüstü uygulaması için MDM ile kurulur.
 - Oturum kapatma API anahtarlarını ve çalışan bulut oturumlarını sonlandırmaz.
 - Adım adım kurulum ve sınırlar duyuruda verilmiyor.
-- Kurumsal güvenlik yaklaşımı için [Takım ve admin](/wiki/temeller/takim-ve-admin) ve [Şirket içi politika](/wiki/temeller/sirket-ici-politika) sayfalarına bakın.
+- Kurumsal güvenlik yaklaşımı için [Takım ve admin](/wiki/temeller/takim-ve-admin/) ve [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
 
 *Kaynak: [More visibility and control over Claude Enterprise for security teams](https://claude.com/resources/articles/claude-enterprise-security-updates), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

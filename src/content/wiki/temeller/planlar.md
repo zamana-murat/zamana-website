@@ -136,7 +136,7 @@ Büyük organizasyonlar için: maksimum kontrol, uyum ve güvenlik isteyen kurul
 - Kurum çapında yönetici kontrolleri
 - Kasım 2026 eklemeleri: güvenlik merkezi, kişisel Claude hesaplarını şirket ağında engelleme, proje etiketiyle harcama takibi (kısmen beta; ayrıntı [Takım ve Admin](/wiki/temeller/takim-ve-admin/))
 
-**Bütçe notu:** Aylık tutar sabit değil, kullanıma göre değişir. Bu yüzden Enterprise'a geçmeden önce Team'de ölçülmüş bir kullanım verisi ve yönetici panelindeki harcama izleme çok işe yarar. Güncel fiyat için [claude.com/pricing/enterprise](https://claude.com/pricing/enterprise) sayfasına bakın.
+**Bütçe notu:** Aylık tutar sabit değil, kullanıma göre değişir. Bu yüzden Enterprise'a geçmeden önce Team'de ölçülmüş bir kullanım verisi ve yönetici panelindeki harcama izleme çok işe yarar. Güncel fiyat için [claude.com/pricing/enterprise](https://claude.com/solutions/enterprise) sayfasına bakın.
 
 **Kime uygun:** Hukuki ve uyum gereksinimleri yüksek şirketler (bankalar, sigorta, sağlık, enerji), çok kullanıcılı yaygınlaştırmalar, KVKK / GDPR / HIPAA benzeri düzenleyici çerçeveler altında çalışan kuruluşlar.
 

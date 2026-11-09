@@ -1,5 +1,4 @@
 import type { APIRoute } from 'astro';
-import { allWikiSlugs } from '../data/wiki-nav';
 import { getHaberler, haberPath } from '../data/haberler';
 import { getCollection } from 'astro:content';
 
@@ -25,18 +24,6 @@ const baseRoutes = [
   { path: '/gizlilik/',                     priority: '0.3', changefreq: 'yearly'  },
   { path: '/cerezler/',                     priority: '0.3', changefreq: 'yearly'  },
 ];
-
-// Wiki routes — derived from the canonical nav config (single source of truth).
-const wikiRoutes = allWikiSlugs().map((slug) => {
-  const path = slug ? `/wiki/${slug}/` : '/wiki/';
-  // Section landings + wiki home get higher priority; deep articles slightly lower.
-  const isLanding = !slug.includes('/') || slug === '';
-  return {
-    path,
-    priority: isLanding ? '0.9' : '0.7',
-    changefreq: 'monthly',
-  };
-});
 
 type Route = { path: string; priority: string; changefreq: string; lastmod?: string };
 
@@ -76,6 +63,25 @@ export const GET: APIRoute = async () => {
       changefreq: 'monthly',
       lastmod: c.data.lastUpdated,
     }));
+
+  // Wiki routes: every page in the collection (same mapping as wiki/[...slug].astro),
+  // so a page missing from the nav still reaches the sitemap. lastmod = lastUpdated.
+  const wikiEntries = await getCollection('wiki');
+  const wikiRoutes: Route[] = wikiEntries
+    .map((w) => {
+      let slug = w.slug;
+      if (slug === 'index') slug = '';
+      else if (slug.endsWith('/index')) slug = slug.slice(0, -'/index'.length);
+      const isLanding = !slug.includes('/');
+      const lastmod = /^\d{4}-\d{2}-\d{2}$/.test(w.data.lastUpdated ?? '') ? w.data.lastUpdated : undefined;
+      return {
+        path: slug ? `/wiki/${slug}/` : '/wiki/',
+        priority: isLanding ? '0.9' : '0.7',
+        changefreq: 'monthly',
+        lastmod,
+      };
+    })
+    .sort((a, b) => a.path.localeCompare(b.path));
 
   const routes: Route[] = [...baseRoutes, ...claudeRoutes, ...kurumsalRoutes, ...wikiRoutes, ...newsRoutes];
   const urls = routes

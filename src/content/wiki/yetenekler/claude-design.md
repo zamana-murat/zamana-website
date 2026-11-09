@@ -124,5 +124,5 @@ Design, Slides ve Docs 8 Ekim 2026'dan beri **beta değil** ve **Free, Pro, Max,
 - [Artifacts](/wiki/yetenekler/artifacts/): İnteraktif veri çıktıları
 - [Skills](/wiki/yetenekler/skills/): `.pptx` / `.docx` dosya üretimi
 - [Planlar](/wiki/temeller/planlar/): Hangi planda dahil
-- [Build live dashboards and animate explainers with Claude](https://www.claude.com/resources/articles/dashboards-and-motion) (Anthropic, 8 Ekim 2026): Dashboards ve Motion duyurusu
+- [Build live dashboards and animate explainers with Claude](https://claude.com/resources/articles/dashboards-and-motion) (Anthropic, 8 Ekim 2026): Dashboards ve Motion duyurusu
 - [Cowork ve Sohbet Tek Claude Oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/): Design, Slides ve Docs'un geldiği duyuru

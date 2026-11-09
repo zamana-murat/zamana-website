@@ -57,7 +57,7 @@ Yöneticiler OpenTelemetry ile güvenlik izlemesi yapılandırabilir ve Analytic
 - **Veri akışı:** Dosya içeriği Claude'a gider. Müşteri verisi veya kişisel veri içeren dosyalar için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
 - **Connector'dan farkı:** Microsoft 365 [connector](/wiki/araclar/connectors/) Claude'un OneDrive, Outlook, takvim gibi verilerini okumasını sağlar. Eklenti ise Claude'u uygulamanın **içine** koyar. İkisi birlikte de kullanılabilir.
 
-Kaynak ve ayrıntı için: [Claude for Excel, PowerPoint, Word ve Outlook](https://claude.com/blog/collaborate-with-claude-across-excel-powerpoint-word-and-outlook) (Anthropic).
+Kaynak ve ayrıntı için: [Claude for Excel, PowerPoint, Word ve Outlook](https://claude.com/resources/articles/collaborate-with-claude-across-excel-powerpoint-word-and-outlook) (Anthropic).
 
 ## Google Docs, Sheets ve Slides Eklentisi
 

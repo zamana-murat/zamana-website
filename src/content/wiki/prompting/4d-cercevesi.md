@@ -192,7 +192,7 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 ## Resmi Kaynaklar
 
 - **AI Fluency Framework and Foundations** (Claude Academy, ücretsiz, 14 ders, yaklaşık 4 saat): [academy.claude.com/courses](https://academy.claude.com/courses)
-- **Anthropic AI Fluency:** [anthropic.com/ai-fluency](https://anthropic.com/ai-fluency)
+- **Anthropic AI Fluency:** [anthropic.com/ai-fluency](https://www.anthropic.com/ai-fluency)
 - **Yazarlar:** Rick Dakan (Ringling College of Art and Design), Joseph Feller (University College Cork)
 
 

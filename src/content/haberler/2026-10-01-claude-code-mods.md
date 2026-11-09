@@ -2,7 +2,7 @@
 title: "Claude Code artık mod'larla özelleştirilebiliyor"
 description: "Mod'lar, Claude Code'un davranışını ve arayüzünü değiştiren küçük TypeScript fonksiyonları."
 date: "2026-10-01"
-source: "https://claude.com/blog/claude-code-mods"
+source: "https://claude.com/resources/articles/claude-code-mods"
 sourceTitle: "Customize Claude Code with mods"
 image: "/images/haberler/claude-code-mods.jpg"
 imageAlt: "Turuncu zemin üzerinde Claude Code mod'larını simgeleyen soyut çizim"
@@ -42,4 +42,4 @@ Mod'lar bugün Claude Code komut satırı sürümünde ve masaüstü uygulaması
 
 İlgili sayfalar: [Skills](/wiki/yetenekler/skills/), [Agents ve Subagents](/wiki/yetenekler/agents-subagents/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/).
 
-*Kaynak: [Customize Claude Code with mods](https://claude.com/blog/claude-code-mods), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Customize Claude Code with mods](https://claude.com/resources/articles/claude-code-mods), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

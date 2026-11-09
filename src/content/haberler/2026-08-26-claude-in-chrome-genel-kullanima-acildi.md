@@ -3,7 +3,7 @@ title: "Claude in Chrome tüm ücretli planlarda genel kullanıma açıldı"
 seoTitle: "Claude in Chrome genel kullanıma açıldı"
 description: "Tarayıcı eklentisi artık beta değil; Claude sitelerde gezip form doldurabiliyor ve saldırılara karşı yeni korumaları var."
 date: "2026-08-26"
-source: "https://claude.com/blog/claude-in-chrome-generally-available"
+source: "https://claude.com/resources/articles/claude-in-chrome-generally-available"
 sourceTitle: "Claude in Chrome is generally available"
 image: "/images/haberler/claude-in-chrome-genel-kullanim.jpg"
 imageAlt: "Turuncu zemin üzerinde üst üste iki tarayıcı penceresi ve fare imleci çizimi"
@@ -38,4 +38,4 @@ Sınırlar:
 
 İlgili sayfalar: [Computer Use](/wiki/yetenekler/computer-use/) ve [MCP Güvenliği](/wiki/mcp/guvenlik/).
 
-*Kaynak: [Claude in Chrome is generally available](https://claude.com/blog/claude-in-chrome-generally-available), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Claude in Chrome is generally available](https://claude.com/resources/articles/claude-in-chrome-generally-available), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

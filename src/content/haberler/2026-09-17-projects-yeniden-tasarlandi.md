@@ -3,7 +3,7 @@ title: "Projects yeniden tasarlandı: klasörden, birlikte çalışan konuşmala
 seoTitle: "Projects yeniden tasarlandı"
 description: "Projects artık paralel çalışan konuşmalar, ortak hafıza ve bir koordinatörle iş yürüten bir yapıya dönüştü."
 date: "2026-09-17"
-source: "https://claude.com/blog/projects-redesigned"
+source: "https://claude.com/resources/articles/projects-redesigned"
 sourceTitle: "Projects redesigned: from folder to conversation"
 image: "/images/haberler/projects-yeniden-tasarlandi.jpg"
 imageAlt: "Turuncu zemin üzerinde birbirine bağlı düğümlerden oluşan soyut bir proje çizimi"
@@ -39,4 +39,4 @@ Yeni projelere claude.com/projects adresinden ulaşılıyor. Beta, başlangıçt
 
 Projects'in mevcut hâli için [Projects](/wiki/araclar/projects/) wiki sayfasına bakabilirsiniz. Bu sayfa eski yapıyı anlatır.
 
-*Kaynak: [Projects redesigned: from folder to conversation](https://claude.com/blog/projects-redesigned), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*
+*Kaynak: [Projects redesigned: from folder to conversation](https://claude.com/resources/articles/projects-redesigned), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

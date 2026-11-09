@@ -37,6 +37,6 @@ Aday göstermek isteyen kurumlar Anthropic hesap ekibine ya da iş ortağı hesa
 - İlk programlar San Francisco, New York ve Londra'da yapılıyor. Türkiye'de bir oturum duyurulmadı.
 - Akademi, mevcut Claude Partner Network'ün üzerine kuruluyor. Anthropic bu ağda 46.000 firmadaki uzmanlar, 175.000'den fazla Claude sertifikası ve Basecamp'i tamamlamış yaklaşık 4.000 kişi olduğunu belirtiyor.
 - Program mühendislere yönelik. Mühendis olmayan çalışanlar için iş odaklı eğitim yolu ayrı; Zamana'nın programları bu akademiyle bağlantılı değil.
-- Genel çerçeve için [Anthropic ve Claude'un tarihçesi](/wiki/temeller/anthropic-ve-tarihce) sayfasına bakabilirsiniz.
+- Genel çerçeve için [Anthropic ve Claude'un tarihçesi](/wiki/temeller/anthropic-ve-tarihce/) sayfasına bakabilirsiniz.
 
 *Kaynak: [Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap](https://www.anthropic.com/news/claude-frontier-academy), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

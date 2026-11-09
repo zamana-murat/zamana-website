@@ -37,7 +37,7 @@ Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro, Ma
 
 20 Nisan 2026'da Cowork'te **live artifact** tanıtıldı: bağlı servislerden veri çeken, her açılışta tazelenen sayfalar. **19 Ağustos 2026'dan beri bu biçim "legacy" sayılıyor.** Eskiden oluşturduklarınız çalışmaya ve kuruluş içinde paylaşılmaya devam eder, ama yerinde düzenlenemez. Bu tarihten sonra oluşturduklarınız standart artifact'tir ve tam düzenlenebilir.
 
-Pratik sonuç: "her açılışta kendiliğinden tazelenir" vaadine güvenerek yeni bir panel kurmayın. Yeni artifact'lerin veri davranışı için [Cowork'te artifact kullanımı](https://support.claude.com/en/articles/14729249-use-artifacts-in-claude-cowork) yardım sayfasına bakın.
+Pratik sonuç: "her açılışta kendiliğinden tazelenir" vaadine güvenerek yeni bir panel kurmayın. Yeni artifact'lerin veri davranışı için [Cowork'te artifact kullanımı](https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork) yardım sayfasına bakın.
 
 **Güncel yöntem:** panelin her hafta taze veriyle yeniden üretilmesini istiyorsanız [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) kurun. Görev her Pazartesi connector'lardan veriyi çeker ve artifact'i yeniden üretir; siz açıp bakarsınız.
 

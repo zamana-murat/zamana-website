@@ -30,7 +30,7 @@ Devir, hesabınızda yapmanız gereken bir şey getirmiyor. Skill kullanmak içi
 2. Hazır bir skill ekleyin ya da kendi `SKILL.md` dosyanızı oluşturun.
 3. Bir görevde Claude'dan o skill'i kullanmasını isteyin.
 
-Ayrıntı için [Skills](/wiki/yetenekler/skills) wiki sayfasına bakın.
+Ayrıntı için [Skills](/wiki/yetenekler/skills/) wiki sayfasına bakın.
 
 ## Bilmeniz gerekenler
 
