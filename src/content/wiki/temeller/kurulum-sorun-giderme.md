@@ -7,7 +7,7 @@ tags:
   - kurulum
   - sorun-giderme
   - claude-desktop
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-18"
 ---
 
 Bu sayfa [İlk Kurulum](/wiki/temeller/ilk-kurulum/) rehberinin yardımcısıdır: kurulumdan önce bilgisayarınızı kontrol etmek, Linux kullanıyorsanız farkları görmek ve kurulumda takıldığınız yeri çözmek için. Kuruluma yeni başlıyorsanız önce İlk Kurulum sayfasındaki adımları izleyin, bir yerde takılırsanız buraya dönün.
@@ -43,6 +43,8 @@ Başlamadan önce bilgisayarınız uygun mu kontrol edelim. Uygun değilse Claud
 Claude Desktop resmi olarak Linux'u da destekler (Ubuntu 22.04+ / Debian 12+, x64 veya arm64). Linux'ta Cowork için en az 8 GB RAM ve yaklaşık 25 GB boş disk gerekir (KVM gerekli). [İlk Kurulum](/wiki/temeller/ilk-kurulum/) rehberindeki indirme ve kurulum adımları Windows ve macOS içindir; Linux için resmi kurulum sayfasındaki adımları izleyin. İsterseniz **[Claude.ai web arayüzü](/wiki/araclar/claude-chat/)** ile de devam edebilirsiniz; Cowork web'de beta aşamasındadır ve yerel dosya erişimi kısmidir, İlk Kurulum'daki workspace klasörü ve Cowork adımları (Adım 6 ve 7) masaüstü uygulaması gerektirir.
 
 ## Sık Sorunlar ve Çözümleri
+
+Claude hiç açılmıyor ya da hata veriyorsa önce sorunun sizde mi Anthropic tarafında mı olduğuna bakın: [Claude çöktü mü? sayfası](/claude-coktu-mu/) anlık durumu ve sorun giderme adımlarını verir, [Claude servis durumu](/claude-status/) sayfası da servisleri tek tek gösterir.
 
 ### "Cowork görünmüyor"
 
@@ -116,6 +118,9 @@ Claude Desktop resmi olarak Linux'u da destekler (Ubuntu 22.04+ / Debian 12+, x6
 
 - [İlk Kurulum](/wiki/temeller/ilk-kurulum/): Hesap, abonelik ve Claude Desktop kurulumu adım adım
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Uygulamanın özellikleri ve ayarları
+- [Claude çöktü mü?](/claude-coktu-mu/): Anlık durum ve sorun giderme rehberi
+- [Claude servis durumu](/claude-status/): Servislerin canlı Türkçe durumu
+- [Claude'u resmi kaynaklardan indirme rehberi](/claude-indir/): Windows, Mac, iOS ve Android
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Cowork nedir, hangi planda var
 - [Connectors](/wiki/araclar/connectors/): Connector kurulumu ve giriş adımları
 - [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/): Limit nasıl işler, dolunca ne yapılır

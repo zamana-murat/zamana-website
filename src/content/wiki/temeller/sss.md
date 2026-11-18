@@ -6,7 +6,7 @@ tags:
   - temeller
   - sss
   - faq
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-18"
 ---
 
 Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem kendiniz için okuyabilirsiniz, hem de şirket içinde Claude'u savunurken kaynak olarak kullanabilirsiniz.
@@ -61,7 +61,7 @@ Tüm erişimler loglanır ve denetlenir. **Zero Data Retention** (API için söz
 
 **Kısa cevap: Hayır. Claude bulut tabanlıdır, internet bağlantısı zorunludur ve hava boşluklu (air-gapped) ortamlarda çalıştırılamaz.**
 
-Model Anthropic'in bulut altyapısında çalışır ve cihaza indirilemez. Nedeni model boyutu (yüz milyarlarca parametre, yüzlerce GB) ve sürekli güncellemedir. Bağlantı kesilirse masaüstü uygulaması, web arayüzü ve API kullanılamaz; offline modu yoktur.
+Model Anthropic'in bulut altyapısında çalışır ve cihaza indirilemez. Nedeni model boyutu (yüz milyarlarca parametre, yüzlerce GB) ve sürekli güncellemedir. Bağlantı kesilirse masaüstü uygulaması, web arayüzü ve API kullanılamaz; offline modu yoktur. Sorun Anthropic tarafındaysa [Claude servis durumu](/claude-status/) sayfasından, "Claude çöktü mü?" diye merak ediyorsanız [bu rehberden](/claude-coktu-mu/) bakabilirsiniz.
 
 Askeri sistemler, hava boşluklu üretim ağları ve yüksek güvenlikli devlet kurumları için Claude şu an uygun değildir. Bu tip ortamlar için Anthropic'in izole bir dağıtım seçeneği olup olmadığını doğrulayamadık; ihtiyacınız varsa Anthropic satış ekibine yazılı sorun. Yerel donanımda çalışan açık kaynak alternatifler (Llama, Mistral) offline çalışır, ancak Claude'un yetkinlik düzeyinin altındadır. İnternet erişimi olan ofis ortamlarında sorun yoktur.
 
@@ -168,7 +168,7 @@ Model, statik bir "bilgi kesim tarihiyle" çalışır (güncel modellerde Hazira
 
 ### Telefondan Claude'a iş verebilir miyim?
 
-**Evet.** Pro, Max, Ultra ve Team'de Cowork'ün "telefondan görev" özelliği otomatik açıktır; mobil uygulamadan görev atarsınız, yeni görevler bulutta çalışır. Enterprise'ta kurum isterse açılır. Bilgisayardaki yerel dosyalara ulaşmak için masaüstü uygulamasının açık olması gerekir. Eski Dispatch özelliği yeni kullanıcıya kapalıdır. Adımlar: [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch).
+**Evet.** Pro, Max, Ultra ve Team'de Cowork'ün "telefondan görev" özelliği otomatik açıktır; mobil uygulamadan görev atarsınız, yeni görevler bulutta çalışır. Enterprise'ta kurum isterse açılır. Bilgisayardaki yerel dosyalara ulaşmak için masaüstü uygulamasının açık olması gerekir. Eski Dispatch özelliği yeni kullanıcıya kapalıdır. Adımlar: [Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch). Uygulamayı [resmi kaynaklardan indirme rehberinden](/claude-indir/) edinebilirsiniz.
 
 ### Word, Excel veya Google Docs içinde çalışır mı?
 

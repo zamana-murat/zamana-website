@@ -7,7 +7,7 @@ tags:
   - kurulum
   - baslangic
   - claude-desktop
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-18"
 ---
 
 Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz, bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.
@@ -182,7 +182,7 @@ claude.ai'da herhangi bir sohbet açın, gönder düğmesinin yanındaki model m
 
 ### 3.1 Download Sayfasını Bulun
 
-claude.ai sol menüsünde veya profil menüsünde **"Download Desktop App"** seçeneği vardır. Tıklayın.
+claude.ai sol menüsünde veya profil menüsünde **"Download Desktop App"** seçeneği vardır. Tıklayın. Tüm platformlar için resmi bağlantılar [Claude'u resmi kaynaklardan indirme rehberinde](/claude-indir/) toplu durur; uygulamanın özellikleri için [Claude masaüstü uygulaması rehberine](/claude-masaustu/) bakabilirsiniz.
 
 Veya doğrudan:
 
@@ -476,6 +476,8 @@ Kurulum tek başına verim getirmez; ilk haftada neyin işe yaradığını görm
 - [İlk 7 Gün Rehberi](/wiki/temeller/ilk-7-gun/): Kurulum sonrası ilk hafta
 - [Kurulum Sorun Giderme](/wiki/temeller/kurulum-sorun-giderme/): Donanım, Linux, sık kurulum hataları
 - [Claude Desktop](/wiki/araclar/claude-desktop/): Uygulama detayları
+- [Claude indirme rehberi](/claude-indir/): Windows, Mac, iOS ve Android için resmi bağlantılar
+- [Claude masaüstü uygulaması rehberi](/claude-masaustu/): Tüm özellikler
 - [Cowork Modu](/wiki/araclar/cowork-modu/): Cowork'ün ne olduğu
 - [CLAUDE.md Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Kalıcı talimat dosyası şablonu
 - [Claude Planları](/wiki/temeller/planlar/): Plan detayları, Pro → Max upgrade mantığı

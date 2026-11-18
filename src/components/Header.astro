@@ -89,7 +89,12 @@ const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor
                         <span class="visually-hidden">(yeni sekmede açılır)</span>
                       </a>
                     ) : (
-                      <a href={b.href} class="mega__btn" aria-current={itemActive(b.href) ? 'page' : undefined}>{b.label}</a>
+                      <a href={b.href} class="mega__btn" aria-current={itemActive(b.href) ? 'page' : undefined}>
+                        {b.icon === 'server' && (
+                          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><rect x="2.5" y="2" width="11" height="5" rx="1.2"/><rect x="2.5" y="9" width="11" height="5" rx="1.2"/></g><g fill="currentColor"><circle cx="5" cy="4.5" r=".9"/><circle cx="5" cy="11.5" r=".9"/></g><path d="M8.5 4.5h2.5M8.5 11.5h2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                        )}
+                        {b.label}
+                      </a>
                     )
                   ))}
                 </div>
@@ -142,7 +147,7 @@ const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor
             {m.footer.buttons.map((b) => (
               b.external
                 ? <a href={b.href} target="_blank" rel="noopener">{b.label} <span aria-hidden="true">&#8599;</span><span class="visually-hidden">(yeni sekmede açılır)</span></a>
-                : <a href={b.href} aria-current={itemActive(b.href) ? 'page' : undefined}>{b.label}</a>
+                : <a href={b.href} aria-current={itemActive(b.href) ? 'page' : undefined}>{b.icon === 'server' && <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false" style="vertical-align:-2px;margin-right:.35rem"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><rect x="2.5" y="2" width="11" height="5" rx="1.2"/><rect x="2.5" y="9" width="11" height="5" rx="1.2"/></g><g fill="currentColor"><circle cx="5" cy="4.5" r=".9"/><circle cx="5" cy="11.5" r=".9"/></g><path d="M8.5 4.5h2.5M8.5 11.5h2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>}{b.label}</a>
             ))}
           </div>
         </div>

@@ -9,7 +9,7 @@ tags:
   - pro
   - team
   - enterprise
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-18"
 ---
 
 Claude'un altı ana planı vardır: Free, Pro, Max, Ultra, Team ve Enterprise. Plan seçimi sadece fiyatla ilgili değildir, hangi özelliklerin kullanılabilir olduğunu, özellikle **hangi modellere erişildiğini, connector'ları, paylaşılan projeleri ve kurumsal uyum araçlarını** doğrudan belirler.
@@ -47,7 +47,7 @@ Ekip için alıyorsanız planı almak işin yarısıdır; ekibin onu nasıl kull
 
 ### Free Plan
 
-Claude'u hiç kullanmamış bir kişi için giriş kapısıdır.
+Claude'u hiç kullanmamış bir kişi için giriş kapısıdır. Kayıttan verimli kullanıma kadar adımlar için [Claude'u ücretsiz kullanma rehberine](/claude-ucretsiz/) bakın.
 
 - Web, iOS, Android ve masaüstünden erişim; model seçicide Haiku ve Sonnet (Free'de hangi sürümün açık olduğu resmi olarak belirtilmez)
 - Web araması, belge analizi, görsel anlama, içerik üretimi

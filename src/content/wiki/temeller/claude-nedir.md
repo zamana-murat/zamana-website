@@ -6,7 +6,7 @@ tags:
   - temeller
   - claude
   - anthropic
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-18"
 ---
 
 **Claude, Anthropic şirketinin geliştirdiği yapay zekâ asistanıdır.** Yazdığınız isteği anlar ve karşılığında metin yazar, uzun belgeleri özetler, tablo ve analiz hazırlar, Excel ve sunum dosyası üretir. Türkçe dahil birçok dilde çalışır; Türkçe yazarsanız Türkçe yanıt verir. Kod bilmeniz gerekmez, ne istediğinizi günlük dille yazmanız yeterlidir. Claude'u yapan Anthropic, 2021'de kurulmuş, merkezi San Francisco'da olan bir yapay zekâ güvenliği şirketidir. Claude'u claude.ai adresinden tarayıcıda, Windows ve Mac masaüstü uygulamasından ya da iOS ve Android uygulamasından kullanırsınız. Ücretsiz bir Free planı vardır, ancak kullanım sınırı dardır; yoğun iş kullanımı için ücretli planlar gerekir ve en düşüğü Pro, ayda 20 USD'dir (vergi hariç). ChatGPT'den farkı kısaca şudur: ikisi de büyük dil modeline dayanan asistanlardır, ama Claude'un güçlü yanı uzun belgeler, dosyalarla çalışma ve iş kullanımına dönük tasarımıdır. Konuşmalarınızın model eğitiminde kullanılıp kullanılmayacağı plana ve ayarlarınıza bağlıdır; kişisel verilere dikkat edin. Yanılabileceğini unutmayın, önemli çıktıları kontrol edin.
@@ -15,7 +15,7 @@ Bu sayfa arama niyetinize göre sıralıdır: ne işe yaradığı, nasıl kullan
 
 ## Claude Nasıl Kullanılır, Nereden Erişilir?
 
-Başlamak için [claude.ai](https://claude.ai) adresinde e-posta ya da Google hesabıyla ücretsiz kayıt olmanız yeterlidir. Adım adım anlatım: [İlk Kurulum](/wiki/temeller/ilk-kurulum/). "Claude" tek bir ekran değil, aynı modelin birkaç yüzüdür.
+Başlamak için [claude.ai](https://claude.ai) adresinde e-posta ya da Google hesabıyla ücretsiz kayıt olmanız yeterlidir ([Claude'u ücretsiz kullanma rehberi](/claude-ucretsiz/)). Uygulamalar için [resmi indirme rehberine](/claude-indir/) bakın. Adım adım anlatım: [İlk Kurulum](/wiki/temeller/ilk-kurulum/). "Claude" tek bir ekran değil, aynı modelin birkaç yüzüdür.
 
 Erişim yolları Kasım 2026 itibarıyla şunlardır:
 
@@ -153,6 +153,8 @@ Günlük iş için Sonnet 5.5, zor işler için Opus 5.5. Ayrıntı: [Claude Mod
 
 - [Claude Modelleri](/wiki/temeller/modeller/): Fable, Opus, Sonnet ve Haiku arasındaki fark
 - [Claude Planları](/wiki/temeller/planlar/): Free, Pro, Max, Ultra, Team, Enterprise fiyat ve özellikler
+- [Claude'u ücretsiz kullanma rehberi](/claude-ucretsiz/): Free planla başlamak
+- [Claude indirme rehberi](/claude-indir/): Resmi uygulama bağlantıları
 - [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/): Şirket, kurucular, model tarihçesi
 - [Claude'un Sınırları](/wiki/temeller/sinirlamalar/): Claude'un yapamadıkları
 - [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/): Türkiye'de Claude kullanırken veri güvenliği

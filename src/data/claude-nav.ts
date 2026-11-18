@@ -96,13 +96,14 @@ export const claudeNavColumns: ClaudeNavColumn[] = [
 /** Bottom strip of a mega menu: one text link on the left, buttons on the right. */
 export interface MegaNavFooter {
   link: { label: string; href: string; desc: string };
-  buttons: { label: string; href: string; external?: boolean }[];
+  buttons: { label: string; href: string; external?: boolean; icon?: 'server' }[];
 }
 
 export const claudeNavFooter: MegaNavFooter = {
   link: { label: "Claude'a geçiş", href: '/claude/gecis/', desc: 'Başka bir asistandan geçmek için' },
   buttons: [
-    { label: 'Uygulamaları indir', href: 'https://claude.com/download', external: true },
+    { label: 'Uygulamaları indir', href: '/claude-indir/' },
+    { label: 'Altyapı durumu', href: '/claude-status/', icon: 'server' },
     { label: "Claude'a giriş", href: 'https://claude.ai', external: true },
   ],
 };

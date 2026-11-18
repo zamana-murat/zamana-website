@@ -8,10 +8,10 @@ tags:
   - ios
   - android
   - dispatch
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-18"
 ---
 
-**Claude'un mobil uygulamaları, masaüstü Claude'un cebinizdeki uzantısıdır.** App Store ve Google Play'den ücretsiz indirilir. Hesabınızla giriş yaptığınız anda sohbet geçmişiniz, [Projects](/wiki/araclar/projects/)'iniz ve aboneliğiniz aynen orada olur.
+**Claude'un mobil uygulamaları, masaüstü Claude'un cebinizdeki uzantısıdır.** App Store ve Google Play'den ücretsiz indirilir ([resmi indirme bağlantıları](/claude-indir/)). Hesabınızla giriş yaptığınız anda sohbet geçmişiniz, [Projects](/wiki/araclar/projects/)'iniz ve aboneliğiniz aynen orada olur.
 
 Bu sayfa mobil Claude'un ne için iyi olduğunu, ne için **olmadığını**, telefondan nasıl görev verileceğini ve bir iş profesyonelinin günlük rutinine nasıl yerleştireceğini anlatır.
 
@@ -137,5 +137,6 @@ Mobil uygulamada hangi planı kullandığınızdan bağımsız oturum açarsın�
 - [Scheduled Tasks](/wiki/araclar/scheduled-tasks/): Zamanlanmış görevler
 - [Skills](/claude/skills/) ve [Connector'lar](/claude/connectors/): Claude ürün tanıtım sayfaları
 - [İlk Kurulum](/wiki/temeller/ilk-kurulum/): Hesap açma ve uygulama indirme
+- [Claude'u resmi kaynaklardan indirme rehberi](/claude-indir/): iOS ve Android bağlantıları
 - [Planlar](/wiki/temeller/planlar/): Mobil hangi plan üzerinde çalışır
 - [Görsel ve Görüntü](/wiki/yetenekler/vision-image/): Kamera ile çekim mantığı

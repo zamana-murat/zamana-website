@@ -8,7 +8,7 @@ tags:
   - limit
   - usage-credits
   - fable
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-18"
 ---
 
 Claude'da "limit" sorusu en sık şikayet konusudur: "Dün çalışıyordu, bugün bekle diyor." Bu sayfa limitin nasıl işlediğini, dolunca ne yapacağınızı ve hangi planın kime yettiğini sade bir dille anlatır. Plan fiyatları için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
@@ -40,7 +40,7 @@ Tüm ücretli planlarda ayrıca haftalık bir limit vardır. Beş saatlik pencer
 
 Haftalık tavanın tam miktarını Anthropic açıklamaz ve ek sınırlar koyma hakkını saklı tutar. Bu yüzden bu sayfada "haftada şu kadar mesaj" gibi bir sayı bulamazsınız; bulduğunuz sayılar resmî değildir.
 
-Free planda da limit vardır ve dardır. Anthropic Free için günlük sayı yayımlamaz.
+Free planda da limit vardır ve dardır. Anthropic Free için günlük sayı yayımlamaz. Free planı verimli kullanma yolları için [Claude ücretsiz kullanım rehberine](/claude-ucretsiz/) bakın.
 
 ### Kalan kullanımı nerede görürsünüz?
 
@@ -48,7 +48,7 @@ claude.ai veya Claude Desktop'ta profil ikonu, **Settings**, **Usage** yolunu iz
 
 ## Limite Takılınca Ne Yapılır?
 
-Sırayla düşünün:
+Önce bunun limit mi yoksa kesinti mi olduğunu ayırın: hata mesajı limitten söz etmiyorsa [Claude çöktü mü? sayfasından](/claude-coktu-mu/) anlık durumu kontrol edin. Limit ise sırayla düşünün:
 
 1. **Bekleyin.** Beş saatlik pencerede bu en ucuz ve çoğu zaman yeterli çözümdür. Beklerken Claude gerektirmeyen bir işe geçin.
 2. **Tüketimi azaltın.** Yeni bir konuya geçerken yeni sohbet açın (uzun geçmiş her mesajda yeniden işlenir). Günlük işte Sonnet 5.5 kullanın; Opus ve Fable'ı yalnız gerçekten gereken işlere ayırın. Model menüsündeki **Effort** ayarını rutin işte Low ya da Medium'a çekin; High, Extra high ve Max limiti daha hızlı bitirir. Research (derin araştırma) ayrı kotadan değil standart limitten yer ve onu hızlı tüketir. Çok büyük belgeleri bölüm bölüm yükleyin.
@@ -135,6 +135,8 @@ Team'de yönetici harcama tavanı koyar. Bireysel planlarda krediyi yalnız ihti
 ## İlgili Sayfalar
 
 - [Claude Planları](/wiki/temeller/planlar/): Fiyatlar ve plan özellikleri
+- [Claude ücretsiz kullanım rehberi](/claude-ucretsiz/): Free planı nasıl kullanırsınız
+- [Claude çöktü mü?](/claude-coktu-mu/): Limit mi kesinti mi, anlık durum
 - [Prompt ve Token](/wiki/temeller/prompt-ve-token/): Token ve kullanım limiti ilişkisi
 - [Modeller](/wiki/temeller/modeller/): Hangi model ne zaman
 - [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/): Türkiye'de muhasebe
