@@ -1,0 +1,290 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StatusWidget from '../components/claude-status/StatusWidget.astro';
+import StatusSourceNote from '../components/claude-status/StatusSourceNote.astro';
+import { SITE_URL } from '../data/seo';
+
+const faqs = [
+  {
+    q: 'Claude neden çalışmıyor?',
+    a: "Üç olası neden vardır: Anthropic tarafında bir kesinti, hesabınızın kullanım limitine ulaşması ya da sizin tarafınızda bir sorun (tarayıcı, uygulama, ağ, VPN). Bu sayfanın en üstündeki canlı kontrol yeşilse ve limit uyarısı görmüyorsanız sorun büyük olasılıkla cihazınızda ya da ağınızdadır.",
+  },
+  {
+    q: 'Claude çöktü mü, nasıl anlarım?',
+    a: "Bu sayfanın en üstündeki canlı kontrol, Anthropic'in resmi durum sayfası status.claude.com'daki bilgiyi her 60 saniyede bir gösterir. Orada kesinti yoksa başka bir cihazdan ya da ağdan deneyin; başka yerde çalışıyorsa sorun ilk cihazınızdadır.",
+  },
+  {
+    q: 'Limit uyarısı aldım, Claude çöktü mü?',
+    a: 'Hayır. Limit uyarısı yalnız sizin hesabınızla ilgilidir ve genellikle kullanımın ne zaman yeniden açılacağını söyler. Ücretli planlarda 5 saatlik kayan oturum penceresi ve haftalık limit vardır; ücretsiz planda da her 5 saatte ve her hafta kullanım sınırlıdır. Kullanım durumunuzu Settings, Usage ekranında görebilirsiniz.',
+  },
+  {
+    q: "Claude Türkiye'de erişime kapalı mı?",
+    a: "Hayır. Türkiye, Anthropic'in claude.ai ve API için desteklenen ülkeler listesindedir. Erişemiyorsanız önce VPN'i kapatın ve başka bir ağdan (örneğin telefonunuzun mobil verisi) deneyin; şirket ağları claude.ai'yi engelleyebilir.",
+  },
+  {
+    q: 'claude.ai çalışıyor ama Claude Code ya da Cowork çalışmıyor, neden?',
+    a: "Bunlar Anthropic'in durum sayfasında ayrı izlenen hizmetlerdir; biri sorunluyken diğeri çalışabilir. Önce Claude durum panelinde ilgili satıra bakın. Satır yeşilse uygulamayı güncelleyin, tamamen kapatıp yeniden açın ve oturumu yenileyin.",
+  },
+  {
+    q: 'Kesinti sırasında yazdıklarım kaybolur mu?',
+    a: 'Tamamlanmış sohbetler hesabınızda saklanır. Gönderilemeyen ya da yanıtı yarıda kalan bir mesajı ise kesinti bitince yeniden göndermeniz gerekebilir. Uzun bir istem yazdıysanız göndermeden önce bir kopyasını almak iyi bir alışkanlıktır.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Claude Çöktü mü?', item: `${SITE_URL}/claude-coktu-mu/` },
+  ],
+};
+---
+
+<Layout
+  title="Claude Çöktü mü? Canlı Kontrol ve Çözüm Rehberi | Zamana"
+  description="Claude çöktü mü, yoksa sorun sizde mi? Canlı durum kontrolü ve Claude çalışmıyorsa tarayıcı, masaüstü, mobil, VPN ve şirket ağı için adım adım çözüm."
+  ogImage="/og/claude-coktu-mu.png"
+  skipAutoBreadcrumb={true}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Claude Çöktü mü?</span>
+      <h1>Claude çöktü mü, yoksa sorun sizde mi?</h1>
+      <p class="lead">
+        Aşağıdaki kutu Anthropic'in resmi durum sayfasını canlı kontrol eder. Claude çalışıyor görünüyorsa
+        altındaki rehber, sorunu kendi tarafınızda birkaç dakikada bulmanıza yardım eder.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <StatusWidget variant="answer" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <article class="guide">
+        <nav class="toc" aria-label="Bu sayfada">
+          <p class="toc-title">Bu sayfada</p>
+          <ol>
+            <li><a href="#kimde">Sorun Claude'da mı, sizde mi?</a></li>
+            <li><a href="#limit">Kullanım limiti mi, kesinti mi?</a></li>
+            <li><a href="#tarayici">Tarayıcıda Claude çalışmıyorsa</a></li>
+            <li><a href="#masaustu">Masaüstü uygulamasında</a></li>
+            <li><a href="#mobil">Telefonda (iOS ve Android)</a></li>
+            <li><a href="#sirket-agi">Şirket ağı, VPN ve güvenlik duvarı</a></li>
+            <li><a href="#kesinti">Kesinti sırasında ne yapmalı?</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="kimde">Sorun Claude'da mı, sizde mi?</h2>
+        <p>Üç soruyla çoğu durumu ayırt edebilirsiniz:</p>
+        <ol class="steps">
+          <li>
+            <strong>Yukarıdaki canlı kontrol ne diyor?</strong> "Büyük kesinti" ya da kullandığınız hizmet
+            için "Kısmi kesinti" görüyorsanız sorun Anthropic tarafındadır; beklemek dışında yapacağınız bir
+            şey yoktur.
+          </li>
+          <li>
+            <strong>Ekranda limit uyarısı var mı?</strong> Limitinizin dolduğunu ve ne zaman açılacağını söyleyen
+            bir mesaj kesinti değildir, yalnız sizin hesabınızı ilgilendirir. Ayrıntı bir sonraki bölümde.
+          </li>
+          <li>
+            <strong>Başka bir cihazda ya da ağda çalışıyor mu?</strong> Claude'u telefonunuzun mobil verisiyle
+            ya da başka bir tarayıcıda açın. Orada çalışıyorsa sorun ilk cihazınızda, tarayıcınızda ya da
+            ağınızdadır.
+          </li>
+        </ol>
+        <p>
+          Kesinti belirtileri çoğunlukla genel hata mesajlarıdır: sayfanın hiç yüklenmemesi, "bir şeyler ters
+          gitti" türü uyarılar, yanıtın yarıda kesilmesi ya da aynı anda pek çok kişinin aynı sorunu yaşaması.
+          Sorun tek bir modelde olabilir; bu durumda model seçiciden başka bir model seçmek işe yarayabilir.
+        </p>
+
+        <h2 id="limit">Kullanım limiti mi, kesinti mi?</h2>
+        <p>
+          Claude'un her planında kullanım sınırı vardır ve limite ulaşmak en sık "Claude çalışmıyor"
+          sanılan durumdur. Kısaca:
+        </p>
+        <ul>
+          <li><strong>Ücretli planlar:</strong> yaklaşık 5 saatlik kayan bir oturum penceresi (ilk mesajınızla başlar, 5 saat sonra yeniden açılır) ve bunun üstünde haftalık bir limit vardır. Doğrulanmış Ultra hesaplarında 5 saatlik limit yoktur, haftalık limit sürer.</li>
+          <li><strong>Ücretsiz plan:</strong> her 5 saatte ve her hafta sınırlı kullanım. Anthropic sayısal limitleri yayımlamaz.</li>
+          <li><strong>Ortak havuz:</strong> claude.ai, masaüstü uygulaması ve Claude Code aynı kullanım havuzunu kullanır. Claude Code'da yoğun çalıştıysanız sohbette de limite yaklaşmış olabilirsiniz.</li>
+          <li><strong>Nereden bakılır:</strong> claude.ai ya da masaüstü uygulamasında profil simgesi, Settings, Usage. Kullandığınız oran ve sıfırlanma zamanı orada görünür.</li>
+          <li><strong>Limit dolunca:</strong> sıfırlanmayı beklersiniz, planınızı yükseltirsiniz ya da ücretli planlarda kullanım kredisi (usage credits) açarak API fiyatıyla devam edersiniz.</li>
+        </ul>
+        <p>
+          Limit mesajı bir zaman verir ve yalnız sizin hesabınızı etkiler; kesinti ise zaman vermez ve birçok
+          kullanıcıyı aynı anda etkiler. Çok uzamış bir sohbette de yanıtlar yavaşlayabilir ya da sohbet sınırına
+          ulaşabilirsiniz; bu durumda yeni bir sohbet açmak en hızlı çözümdür. Ayrıntılar için
+          <a href="/wiki/temeller/kullanim-limitleri/">kullanım limitleri rehberine</a> bakın.
+        </p>
+
+        <h2 id="tarayici">Tarayıcıda Claude çalışmıyorsa</h2>
+        <ol class="steps">
+          <li><strong>Sayfayı tamamen yenileyin:</strong> Windows'ta Ctrl+F5, Mac'te Cmd+Shift+R.</li>
+          <li><strong>Gizli pencerede açın.</strong> Gizli pencerede çalışıyorsa sorun bir eklentide ya da kayıtlı site verisindedir.</li>
+          <li><strong>Eklentileri kapatın:</strong> reklam engelleyici, gizlilik, çeviri ve yapay zeka eklentilerini claude.ai için devre dışı bırakın.</li>
+          <li><strong>Site verisini temizleyin:</strong> yalnız claude.ai için çerezleri ve site verisini silin, sonra yeniden giriş yapın.</li>
+          <li><strong>Başka bir tarayıcı deneyin</strong> ve kullandığınız tarayıcıyı güncelleyin.</li>
+          <li><strong>Tarih ve saati kontrol edin:</strong> bilgisayarın saati yanlışsa güvenli bağlantı hataları çıkar. Saati otomatik ayara alın.</li>
+        </ol>
+
+        <h2 id="masaustu">Masaüstü uygulamasında</h2>
+        <ol class="steps">
+          <li><strong>Uygulamayı tamamen kapatın:</strong> Windows'ta sistem tepsisindeki simgeden çıkış yapın, Mac'te Cmd+Q kullanın. Sonra yeniden açın.</li>
+          <li><strong>Güncellemeyi kontrol edin.</strong> Eski sürümler yeni özelliklerde hata verebilir; gerekirse uygulamayı <a href="/claude-indir/">yeniden indirin</a>.</li>
+          <li><strong>Tarayıcıyla karşılaştırın:</strong> aynı hesapla claude.ai'yi tarayıcıda açın. Tarayıcıda çalışıyorsa sorun uygulamadadır.</li>
+          <li><strong>Çıkış yapıp yeniden giriş yapın.</strong></li>
+          <li><strong>Son çare olarak kaldırıp yeniden kurun.</strong> Sohbetleriniz hesabınızda saklandığı için silinmez.</li>
+        </ol>
+        <p>
+          Cowork ya da Claude Code çalışmıyor ama sohbet çalışıyorsa, <a href="/claude-status/">Claude durum
+          panelinde</a> ilgili satıra bakın; bu hizmetler ayrı izlenir. Kurulumla ilgili diğer sorunlar için
+          <a href="/wiki/temeller/kurulum-sorun-giderme/">kurulum sorun giderme</a> sayfası yardımcı olur.
+        </p>
+
+        <h2 id="mobil">Telefonda (iOS ve Android)</h2>
+        <ol class="steps">
+          <li><strong>Uygulamayı tamamen kapatıp yeniden açın</strong> (son uygulamalar ekranından kaydırarak kapatın).</li>
+          <li><strong>App Store ya da Google Play'den güncelleyin.</strong></li>
+          <li><strong>Ağ değiştirin:</strong> Wi-Fi ile mobil veri arasında geçiş yapın. Birinde çalışıp diğerinde çalışmıyorsa sorun ağdadır.</li>
+          <li><strong>Veri tasarrufu ve VPN uygulamalarını kapatın.</strong> Düşük veri modu ve bazı güvenlik uygulamaları bağlantıyı kesebilir.</li>
+          <li><strong>Çıkış yapıp yeniden giriş yapın;</strong> olmazsa uygulamayı silip yeniden yükleyin.</li>
+          <li><strong>Telefonun tarayıcısında claude.ai'yi deneyin.</strong> Tarayıcıda çalışıyorsa sorun uygulamadadır.</li>
+        </ol>
+
+        <h2 id="sirket-agi">Şirket ağı, VPN ve güvenlik duvarı</h2>
+        <p>
+          "Evde çalışıyor, ofiste çalışmıyor" durumu neredeyse her zaman ağ kaynaklıdır. Şirket güvenlik duvarları,
+          proxy sunucuları ve web filtreleri yapay zeka sitelerini engelleyebilir ya da bağlantıyı araya girip
+          inceleyerek yanıtların yarıda kesilmesine yol açabilir.
+        </p>
+        <ul>
+          <li><strong>Ağı değiştirerek test edin:</strong> bilgisayarınızı kısa süreliğine telefonunuzun internetine bağlayın. Orada çalışıyorsa sorun şirket ağındadır.</li>
+          <li><strong>BT ekibinize iletin:</strong> claude.ai, claude.com ve anthropic.com alan adlarına (alt alan adlarıyla birlikte) erişimin açık olmasını isteyin. Claude Code ya da API kullanıyorsanız api.anthropic.com da gerekir. Kesin ve güncel liste için Anthropic'in yardım belgelerine bakılmalıdır.</li>
+          <li><strong>SSL denetimi:</strong> trafiği inceleyen güvenlik ürünleri sayfanın yüklenmesine izin verip yanıt akışını bozabilir. Yanıtlar sürekli yarıda kalıyorsa bunu BT ekibine özellikle belirtin.</li>
+          <li><strong>VPN:</strong> Türkiye, Claude'un desteklenen ülkeleri arasındadır, VPN gerekmez. VPN bağlantınız desteklenmeyen bir ülke üzerinden çıkıyorsa erişim reddedilebilir; VPN'i kapatıp yeniden deneyin.</li>
+        </ul>
+        <p>
+          Kurumsal kullanımda hangi verinin Claude ile paylaşılabileceği ayrı bir konudur; bu konuda
+          <a href="/wiki/temeller/gizlilik-kvkk/">gizlilik ve KVKK rehberine</a> bakabilirsiniz.
+        </p>
+
+        <h2 id="kesinti">Kesinti sırasında ne yapmalı?</h2>
+        <ul>
+          <li><strong>Tekrar tekrar göndermeyin.</strong> Kesintide gönderilen mesajlar genellikle yanıtsız kalır. Uzun bir istem yazdıysanız bir kopyasını alın.</li>
+          <li><strong>Başka bir model deneyin.</strong> Sorun yalnız bir modeli etkiliyorsa model seçiciden başka bir modelle devam edebilirsiniz.</li>
+          <li><strong>Gelişmeleri takip edin.</strong> Bu sayfa her 60 saniyede yenilenir; olayın aşamalarını ve Anthropic'in güncellemelerini <a href="/claude-status/">durum panelinde</a> görebilirsiniz.</li>
+          <li><strong>Çözümden sonra kontrol edin.</strong> Yarıda kalan yanıtları yeniden oluşturun. Cowork ya da Claude Code'da uzun süren bir görev varsa nerede kaldığını kontrol edin, gerekirse yeniden başlatın.</li>
+          <li><strong>Geliştiriciler için:</strong> API'de 529 (overloaded) ve 5xx hataları geçici yoğunluk ya da kesinti anlamına gelir. Bekleme süresini artırarak yeniden deneyen bir mantık kullanın.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <h2 class="section-title">Sık sorulanlar</h2>
+      <ol class="faq-list">
+        {faqs.map((f, i) => (
+          <li class="faq-item">
+            <details>
+              <summary>
+                <span class="faq-num">{String(i + 1).padStart(2, '0')}</span>
+                <span class="faq-q">{f.q}</span>
+                <span class="faq-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-a"><p>{f.a}</p></div>
+            </details>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow text-center">
+      <h2 class="section-title center">Claude'u ekibinizle sorunsuz kullanın</h2>
+      <p class="lead center">
+        Limitleri doğru yönetmek, doğru planı seçmek ve Claude'u günlük işe yerleştirmek öğrenilebilir.
+        Zamana'nın Türkçe Claude eğitimi bunu sizin dosyalarınız ve iş akışlarınız üzerinden anlatır.
+      </p>
+      <div class="hero-cta center">
+        <a href="/claude-egitimi/" class="btn btn--primary btn--lg">Claude Eğitimini İncele</a>
+        <a href="/claude-status/" class="btn btn--secondary btn--lg">Claude Durum Paneli</a>
+      </div>
+      <StatusSourceNote variant="footer" />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero-cta { display: flex; gap: var(--s-3); flex-wrap: wrap; margin-top: var(--s-4); }
+  .hero-cta.center { justify-content: center; }
+  .lead.center { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
+
+  .toc {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    padding: var(--s-3) var(--s-4);
+    margin-bottom: var(--s-5);
+  }
+  .toc-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-gold-text); margin: 0 0 var(--s-2); }
+  .toc ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.3rem; }
+  .toc a { color: var(--c-navy); text-decoration: none; }
+  .toc a:hover { color: var(--c-gold-text); text-decoration: underline; }
+
+  .guide h2 { color: var(--c-navy); font-size: 1.5rem; margin: var(--s-6) 0 var(--s-3); line-height: 1.3; scroll-margin-top: 90px; }
+  .guide p { color: var(--c-text-muted); line-height: 1.8; margin-bottom: var(--s-3); }
+  .guide strong { color: var(--c-navy); }
+  .guide a { color: var(--c-gold-text); text-decoration: underline; }
+  .guide ul, .guide ol.steps { margin: 0 0 var(--s-4); padding-left: 1.3rem; display: grid; gap: var(--s-2); }
+  .guide li { color: var(--c-text-muted); line-height: 1.7; }
+  .guide ol.steps li::marker { color: var(--c-gold-text); font-weight: 800; }
+
+  .faq-list { list-style: none; display: grid; gap: var(--s-3); margin-top: var(--s-4); padding: 0; }
+  .faq-item { background: var(--c-white); border: 1px solid var(--c-border); border-radius: var(--r-card); overflow: hidden; }
+  .faq-item:hover { border-color: var(--c-border-gold); }
+  .faq-item summary {
+    display: grid;
+    grid-template-columns: 48px 1fr 32px;
+    gap: var(--s-3);
+    align-items: center;
+    padding: var(--s-4);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { background: var(--c-bg-subtle); }
+  .faq-num { font-weight: 800; font-size: 1.05rem; color: var(--c-gold); }
+  .faq-q { font-weight: 600; color: var(--c-navy); line-height: 1.45; }
+  .faq-toggle { font-size: 1.6rem; color: var(--c-gold-text); text-align: center; font-weight: 300; line-height: 1; transition: transform var(--t-fast); }
+  .faq-item details[open] .faq-toggle { transform: rotate(45deg); }
+  .faq-a { padding: 0 var(--s-4) var(--s-4) calc(var(--s-4) + 48px + var(--s-3)); }
+  .faq-a p { color: var(--c-text-muted); line-height: 1.75; margin: 0; }
+  @media (max-width: 600px) {
+    .faq-item summary { grid-template-columns: 36px 1fr 28px; gap: var(--s-2); padding: var(--s-3); }
+    .faq-a { padding: 0 var(--s-3) var(--s-3) var(--s-3); }
+    .guide h2 { font-size: 1.3rem; }
+  }
+</style>

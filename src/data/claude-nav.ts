@@ -118,6 +118,10 @@ export const claudeHubGroups: { title: string; items: ClaudeNavItem[] }[] = [
 
 export const claudeFooterLinks: { label: string; href: string }[] = [
   { label: 'Claude nedir', href: '/claude/' },
+  { label: 'Claude indir', href: '/claude-indir/' },
+  { label: 'Claude masaüstü', href: '/claude-masaustu/' },
+  { label: 'Claude ücretsiz kullanım', href: '/claude-ucretsiz/' },
+  { label: 'Claude durumu (canlı)', href: '/claude-status/' },
   { label: 'Claude Code', href: '/claude/claude-code/' },
   { label: 'Artifacts', href: '/claude/artifacts/' },
   { label: 'Connectors', href: '/claude/connectors/' },

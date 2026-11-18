@@ -14,6 +14,8 @@ lastUpdated: "2026-11-09"
 
 **Claude kısmen ücretsizdir.** Free plan, claude.ai'de web, masaüstü ve mobil uygulamada sohbet, web araması, dosya oluşturma ve temel özellikleri ücretsiz sunar. Karşılığında kullanım her 5 saatte ve her hafta sınırlıdır; sınırın sayısal değerini Anthropic yayımlamaz. Ücretli planlar için resmi bir ücretsiz deneme ya da kampanya duyurusu doğrulayamadık. Resmi bir bireysel öğrenci indirimi ya da indirim kodu da yok. Aboneliği ucuzlatmanın tek resmi bireysel yolu yıllık ödemeli Pro'dur: ayda 17 USD, yani 200 USD peşin; aylık ödemede 20 USD. Kâr amacı gütmeyen kuruluşlar, bilim insanları, girişimler ve eğitim kurumları için ayrı programlar var, ama Türkiye'den uygunluk çoğunda belirsiz. "Ucuz Claude hesabı" satan sitelerden uzak durun. Zamana abonelik satmaz, satın alma doğrudan Anthropic'tendir. Aşağıda Free planın ne verdiğini, yıllık fiyat farkını, öğrenci ve startup durumunu ve Türkiye için belirsiz kalan noktaları tek tek açıklıyoruz; belirsiz olanı kesin yazmıyoruz.
 
+> **Claude'u ücretsiz nasıl kullanırsınız?** Kayıt, ilk kullanım ve limiti uzatma yolları adım adım: [Claude Ücretsiz Kullanım Rehberi](/claude-ucretsiz/).
+
 ## Free Plan Ne Sunar, Sınırı Nedir?
 
 Free plan bir deneme sürümü değildir, süresi dolmaz. Kayıt olmanız ve kullanmanız yeterlidir.
@@ -86,6 +88,7 @@ Bunu Anthropic'ten başka kimse söyleyemez. Bu sayfa 9 Kasım 2026 durumunu gö
 
 ## İlgili Sayfalar
 
+- [Claude Ücretsiz Kullanım Rehberi](/claude-ucretsiz/): Free planla adım adım kullanım ve limiti uzatma
 - [Claude Planları ve Fiyatları](/wiki/temeller/planlar/): Tüm planlar, KDV ve TL karşılığı
 - [Plan Seçici](/wiki/temeller/plan-secici/): Size uygun planı bulun
 - [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/): Free'de ve ücretli planlarda limit nasıl işler

@@ -1,0 +1,261 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StatusWidget from '../components/claude-status/StatusWidget.astro';
+import StatusSourceNote from '../components/claude-status/StatusSourceNote.astro';
+import { SITE_URL } from '../data/seo';
+
+const faqs = [
+  {
+    q: 'Bu Claude status sayfası resmi mi?',
+    a: "Hayır. Bu sayfa Zamana'nın hazırladığı resmi olmayan bir Türkçe görünümdür. Veriler Anthropic'in resmi durum sayfası status.claude.com'dan otomatik alınır; bir çelişki olursa resmi sayfa geçerlidir. Zamana, Anthropic'ten bağımsız bir şirkettir.",
+  },
+  {
+    q: 'Claude durum bilgisi ne sıklıkla yenilenir?',
+    a: 'Sayfa açıkken her 60 saniyede bir kendiliğinden yenilenir. Sekme arka plandayken yenileme durur, sekmeye döndüğünüzde hemen güncellenir. Beklemek istemezseniz "Şimdi yenile" düğmesini kullanabilirsiniz.',
+  },
+  {
+    q: 'Claude kesintilerinden nasıl haberdar olurum?',
+    a: 'status.claude.com sayfasındaki "Subscribe to updates" düğmesiyle e-posta, SMS, Slack, webhook ya da RSS/Atom üzerinden olay bildirimlerine abone olabilirsiniz. Bildirimler İngilizcedir ve doğrudan Anthropic tarafından gönderilir.',
+  },
+  {
+    q: 'Erişilebilirlik yüzdesi neden %100 değil?',
+    a: "Yüzde, son 90 günde kaydedilen kesinti sürelerinden hesaplanır. %99,7 gibi bir değer, 90 günün toplamında birkaç saatlik kesinti ya da kısmi aksama anlamına gelir. Değer Anthropic'in durum sayfasının kendi hesabıdır; Zamana bir düzeltme ya da yorum eklemez.",
+  },
+  {
+    q: 'Saatler hangi saat dilimine göre gösteriliyor?',
+    a: "Tüm saatler, olay açıklamalarının içindekiler de dahil, Türkiye saatine (TSİ, UTC+3) çevrilerek gösterilir. Anthropic olay metinlerinde saatleri UTC ve PT (ABD Pasifik saati) olarak yazar; Türkçe metinde bunlar TSİ'ye dönüştürülür, İngilizce orijinal metin ise olduğu gibi kalır.",
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Claude Durumu', item: `${SITE_URL}/claude-status/` },
+  ],
+};
+
+const levels = [
+  { cls: 'operational', label: 'Çalışıyor', text: 'Hizmet normal çalışıyor. Sorun yaşıyorsanız büyük olasılıkla tarayıcınız, uygulamanız, ağınız ya da kullanım limitinizle ilgilidir.' },
+  { cls: 'degraded', label: 'Yavaşlama', text: 'Hizmet açık ama yanıtlar yavaş gelebilir ya da ara sıra hata alınabilir. Çoğu istek yine de tamamlanır.' },
+  { cls: 'partial', label: 'Kısmi kesinti', text: 'Kullanıcıların bir bölümü ya da belirli bir özellik (ör. bir model, giriş, bir bağlantı) çalışmıyor.' },
+  { cls: 'major', label: 'Büyük kesinti', text: 'Hizmet çoğu kullanıcı için kullanılamıyor. Bu durumda yapabileceğiniz en iyi şey Anthropic\'in düzeltmesini beklemektir.' },
+  { cls: 'maintenance', label: 'Bakımda', text: 'Önceden planlanmış bakım çalışması sürüyor. Bakım süresince hizmet kısa aralıklarla kesilebilir.' },
+];
+
+const phases = [
+  { label: 'İnceleniyor', text: 'Anthropic bir sorun bildirimi aldı ve nedenini araştırıyor.' },
+  { label: 'Sorun tespit edildi', text: 'Neden bulundu, düzeltme üzerinde çalışılıyor.' },
+  { label: 'İzleniyor', text: 'Düzeltme uygulandı, sistemin normale dönüp dönmediği takip ediliyor.' },
+  { label: 'Çözüldü', text: 'Olay kapandı. Hâlâ sorun yaşıyorsanız sayfayı yenileyin ya da uygulamayı yeniden başlatın.' },
+  { label: 'Olay sonrası değerlendirme', text: 'Anthropic olayın nedenini ve alınan önlemleri anlatan bir değerlendirme yayımladı.' },
+];
+---
+
+<Layout
+  title="Claude Status: Canlı Claude Sunucu Durumu | Zamana"
+  description="Claude status Türkçe: claude.ai, Claude API, Claude Code ve Cowork'ün canlı sunucu durumu, 90 günlük erişilebilirlik, aktif olaylar. 60 saniyede bir yenilenir."
+  ogImage="/og/claude-status.png"
+  skipAutoBreadcrumb={true}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Claude Durumu</span>
+      <h1>Claude status: canlı Claude sunucu durumu</h1>
+      <p class="lead">
+        claude.ai, Claude API, Claude Code, Cowork ve diğer Claude hizmetlerinin anlık durumu, Türkçe.
+        Veriler Anthropic'in resmi durum sayfasından gelir ve her 60 saniyede yenilenir.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <p class="cs-crosslink">
+        Claude açılmıyor ya da yanıt vermiyor mu? Sorunun Anthropic'te mi, sizde mi olduğunu hızlıca
+        anlamak için <a href="/claude-coktu-mu/">Claude çöktü mü?</a> sayfasına bakın.
+      </p>
+      <StatusWidget variant="dashboard" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <article class="guide">
+        <h2>Durum renkleri ne anlama gelir?</h2>
+        <p>
+          Her hizmetin yanında Anthropic'in o hizmet için bildirdiği durum yazar. Renkler, sorunun ne kadar
+          geniş olduğunu gösterir:
+        </p>
+        <dl class="legend">
+          {levels.map((l) => (
+            <div class="legend-row">
+              <dt><span class={`cs-badge cs-lv-${l.cls}`}><span class="cs-dot"></span>{l.label}</span></dt>
+              <dd>{l.text}</dd>
+            </div>
+          ))}
+        </dl>
+
+        <h2>Olay aşamaları</h2>
+        <p>
+          Anthropic bir sorunu duyurduğunda olay, çözülene kadar şu aşamalardan geçer. Her aşamada kısa bir
+          güncelleme yayımlanır; yukarıdaki "Aktif olaylar" bölümünde bu güncellemeler zaman sırasıyla görünür.
+        </p>
+        <ul>
+          {phases.map((p) => (
+            <li><strong>{p.label}:</strong> {p.text}</li>
+          ))}
+        </ul>
+        <p>
+          Olayın yanındaki etki etiketi (Bilgilendirme, Küçük etki, Büyük etki, Kritik etki) sorunun ne kadar
+          kullanıcıyı etkilediğini gösterir. Planlı bakımlar Planlandı, Bakım sürüyor, Doğrulanıyor ve
+          Tamamlandı aşamalarından geçer.
+        </p>
+
+        <h2>Kullandığınız ürün hangi satıra bakar?</h2>
+        <ul>
+          <li><strong>Tarayıcıda claude.ai, masaüstü ya da mobil uygulamada sohbet:</strong> claude.ai satırı.</li>
+          <li><strong>Masaüstü uygulamasında dosya ve görev çalışması:</strong> Claude Cowork satırı.</li>
+          <li><strong>Terminalde ya da kod editöründe Claude Code:</strong> Claude Code satırı.</li>
+          <li><strong>Claude'u arka planda kullanan bir uygulama ya da şirket içi araç:</strong> Claude API satırı. API anahtarı ve faturalama ekranları için Claude Console satırı.</li>
+          <li><strong>Claude'u bir bulut sağlayıcısının hesabınız üzerinden kullanıyorsanız:</strong> Claude on Cloud Platforms grubu. Amazon Bedrock ya da Google Vertex AI gibi sağlayıcıların kendi durum sayfaları da ayrıca kontrol edilmelidir.</li>
+        </ul>
+
+        <h2>Erişilebilirlik (uptime) yüzdesi nasıl okunur?</h2>
+        <p>
+          Her hizmetin altındaki çubuklar son 90 günü gösterir; en sağdaki çubuk bugündür. Yeşil gün sorunsuz,
+          turuncu gün kısmi kesinti, kırmızı gün büyük kesinti kaydı olan gündür; gri gün hizmetin henüz durum
+          sayfasında izlenmediği günü gösterir. Yüzde, Anthropic'in durum sayfasının aynı 90 gün için hesapladığı
+          değerdir. Kısa süreli bir aksama da bir günü renklendirir, bu yüzden turuncu bir çubuk tüm günün
+          kesintiyle geçtiği anlamına gelmez.
+        </p>
+
+        <h2>Bu sayfa nasıl çalışır?</h2>
+        <p>
+          Sayfa, Anthropic'in herkese açık durum verisini 60 saniyede bir alır ve Türkçe etiketlerle gösterir.
+          Tüm saatler, olay açıklamalarının içindekiler de dahil, Türkiye saatine (TSİ) çevrilir. Olay başlıkları ve güncellemeler Anthropic'te İngilizce yazılır;
+          otomatik çeviri kullanılabildiğinde Türkçe gösterilir ve orijinal metin hemen altında durur, çeviri
+          yoksa orijinal İngilizce metin "Anthropic'in orijinal (İngilizce) açıklaması" notuyla gösterilir.
+          Resmi sayfaya ulaşılamazsa son alınan kopya tarihiyle birlikte gösterilir. Bu sayfada yanıt süresi
+          gibi sistem ölçümleri yoktur, çünkü Anthropic'in durum sayfası bu verileri yayımlamaz.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <h2 class="section-title">Sık sorulanlar</h2>
+      <ol class="faq-list">
+        {faqs.map((f, i) => (
+          <li class="faq-item">
+            <details>
+              <summary>
+                <span class="faq-num">{String(i + 1).padStart(2, '0')}</span>
+                <span class="faq-q">{f.q}</span>
+                <span class="faq-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-a"><p>{f.a}</p></div>
+            </details>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow text-center">
+      <h2 class="section-title center">Claude'u işinizin bir parçası yapın</h2>
+      <p class="lead center">
+        Kesintiler geçicidir, alışkanlıklar kalıcı. Zamana'nın Türkçe Claude eğitimi, Claude'u kendi
+        dosyalarınız ve iş akışlarınız üzerinden günlük işinize yerleştirmenize yardım eder.
+      </p>
+      <div class="hero-cta center">
+        <a href="/claude-egitimi/" class="btn btn--primary btn--lg">Claude Eğitimini İncele</a>
+        <a href="/claude-coktu-mu/" class="btn btn--secondary btn--lg">Claude Çalışmıyorsa</a>
+      </div>
+      <StatusSourceNote variant="footer" />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cs-crosslink {
+    margin: 0 0 var(--s-4);
+    padding: var(--s-3) var(--s-4);
+    background: var(--c-white);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    color: var(--c-text-muted);
+    line-height: 1.6;
+  }
+  .cs-crosslink a { color: var(--c-gold-text); text-decoration: underline; font-weight: 700; }
+
+  .hero-cta { display: flex; gap: var(--s-3); flex-wrap: wrap; margin-top: var(--s-4); }
+  .hero-cta.center { justify-content: center; }
+  .lead.center { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
+
+  .guide h2 { color: var(--c-navy); font-size: 1.5rem; margin: var(--s-6) 0 var(--s-3); line-height: 1.3; }
+  .guide h2:first-child { margin-top: 0; }
+  .guide p { color: var(--c-text-muted); line-height: 1.8; margin-bottom: var(--s-3); }
+  .guide strong { color: var(--c-navy); }
+  .guide ul { margin: 0 0 var(--s-4); padding-left: 1.2rem; display: grid; gap: var(--s-2); }
+  .guide li { color: var(--c-text-muted); line-height: 1.7; }
+
+  .legend { display: grid; gap: var(--s-3); margin: 0 0 var(--s-4); }
+  .legend-row {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: var(--s-3);
+    align-items: start;
+    padding: var(--s-3);
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+  }
+  .legend dd { margin: 0; color: var(--c-text-muted); line-height: 1.65; }
+  @media (max-width: 600px) {
+    .legend-row { grid-template-columns: 1fr; gap: var(--s-2); }
+    .guide h2 { font-size: 1.3rem; }
+  }
+
+  .faq-list { list-style: none; display: grid; gap: var(--s-3); margin-top: var(--s-4); padding: 0; }
+  .faq-item { background: var(--c-white); border: 1px solid var(--c-border); border-radius: var(--r-card); overflow: hidden; }
+  .faq-item:hover { border-color: var(--c-border-gold); }
+  .faq-item summary {
+    display: grid;
+    grid-template-columns: 48px 1fr 32px;
+    gap: var(--s-3);
+    align-items: center;
+    padding: var(--s-4);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { background: var(--c-bg-subtle); }
+  .faq-num { font-weight: 800; font-size: 1.05rem; color: var(--c-gold); }
+  .faq-q { font-weight: 600; color: var(--c-navy); line-height: 1.45; }
+  .faq-toggle { font-size: 1.6rem; color: var(--c-gold-text); text-align: center; font-weight: 300; line-height: 1; transition: transform var(--t-fast); }
+  .faq-item details[open] .faq-toggle { transform: rotate(45deg); }
+  .faq-a { padding: 0 var(--s-4) var(--s-4) calc(var(--s-4) + 48px + var(--s-3)); }
+  .faq-a p { color: var(--c-text-muted); line-height: 1.75; margin: 0; }
+  @media (max-width: 600px) {
+    .faq-item summary { grid-template-columns: 36px 1fr 28px; gap: var(--s-2); padding: var(--s-3); }
+    .faq-a { padding: 0 var(--s-3) var(--s-3) var(--s-3); }
+  }
+</style>

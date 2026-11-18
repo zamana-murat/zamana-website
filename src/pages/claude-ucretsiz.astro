@@ -1,0 +1,441 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE_URL } from '../data/seo';
+
+const pageUrl = `${SITE_URL}/claude-ucretsiz/`;
+
+const faqs = [
+  {
+    q: "Claude ücretsiz nasıl kullanılır?",
+    a: "claude.ai adresinden ya da Claude uygulamasından e-posta veya Google hesabınızla kayıt olun. Hesap Free planla açılır, ücretli plana geçmediğiniz sürece ödeme yapmazsınız. Web, masaüstü ve mobil uygulamada aynı hesapla sohbet edebilirsiniz.",
+  },
+  {
+    q: "Free planda hangi modeller var?",
+    a: "Free planda model seçicide Haiku ve Sonnet bulunur. Opus ve Fable modelleri Pro ve üstü planlardadır.",
+  },
+  {
+    q: "Ücretsiz Claude'un günlük mesaj sınırı kaç?",
+    a: "Anthropic sabit bir sayı yayımlamaz. Free planda kullanım her 5 saatte ve her hafta sınırlıdır; harcanan şey mesaj sayısı değil, işlenen metin miktarıdır. Uzun belge ve uzun sohbet limiti daha hızlı bitirir.",
+  },
+  {
+    q: "Limit dolunca ne olur?",
+    a: "Claude yeniden ne zaman kullanabileceğinizi gösterir. 5 saatlik pencere kayar, yani sabit bir saatte değil, kullanımınızdan yaklaşık 5 saat sonra açılır. Haftalık limite ulaştıysanız hafta sıfırlanana kadar beklersiniz.",
+  },
+  {
+    q: "Ücretsiz Claude telefonda kullanılabilir mi?",
+    a: "Evet. iOS ve Android uygulamaları ücretsiz indirilir ve Free plan mobilde de çalışır. Sesli konuşma (beta) Free'de de var, ama Haiku modeliyle ve tek bağlı araçla sınırlıdır.",
+  },
+  {
+    q: "Free planda dosya yükleyebilir miyim?",
+    a: "Evet. PDF, Word, Excel, CSV ve görsel yükleyebilirsiniz. Sohbet başına en çok 20 dosya yüklenir. Büyük dosyalar limitinizi hızlı tükettiği için yalnız gereken bölümü yüklemek daha verimlidir.",
+  },
+  {
+    q: "Free planda Cowork veya Claude Code var mı?",
+    a: "Hayır. Cowork, Claude Code, Research (derin araştırma), Claude in Chrome ve Microsoft 365 eklentileri ücretli planlardadır.",
+  },
+  {
+    q: "Claude Türkçe ücretsiz kullanılır mı?",
+    a: "Evet. Türkçe yazdığınızda Türkçe yanıt verir; bunun için ayar gerekmez. Her sohbette aynı tonu istiyorsanız profil talimatına bir kez yazmanız yeterlidir.",
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Claude Ücretsiz Kullanım', item: pageUrl },
+  ],
+};
+---
+
+<Layout
+  title="Claude Ücretsiz Nasıl Kullanılır? Free Plan Rehberi | Zamana"
+  description="Claude'u ücretsiz kullanma rehberi: Free planda neler var, adım adım kayıt, limiti uzatmanın yolları, Free'de olmayanlar ve ne zaman ücretli plana geçmek mantıklı."
+  ogImage="/og/claude-ucretsiz.png"
+  skipAutoBreadcrumb={true}
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Claude Ücretsiz Kullanım</span>
+      <h1>Claude'u ücretsiz kullanmak: adım adım rehber</h1>
+      <p class="lead">
+        Free plan bir deneme sürümü değildir, süresi dolmaz. Bu rehber kayıttan ilk işe,
+        limiti uzatmaktan ücretli plana geçme zamanına kadar ne yapacağınızı anlatır.
+      </p>
+      <div class="hero-cta center">
+        <a href="https://claude.ai" class="btn btn--primary btn--lg" target="_blank" rel="noopener">claude.ai'yi aç</a>
+        <a href="/claude-indir/" class="btn btn--secondary btn--lg">Uygulamayı indir</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <div class="tldr-card">
+        <span class="tldr-label">Kısaca</span>
+        <p>
+          Claude'un <strong>Free planı ücretsizdir ve süresizdir</strong>. Web, masaüstü ve mobil uygulamada sohbet,
+          web araması, dosya yükleme, dosya oluşturma, hafıza, connector ve en çok 5 proje sunar. Modeller Haiku ve Sonnet'tir.
+          Karşılığında kullanım her 5 saatte ve her hafta sınırlıdır; Anthropic bu sınırı sayı olarak yayımlamaz.
+          Limiti uzatmanın yolu basit: her yeni konu için yeni sohbet, net ve tek seferde verilen istek, yalnız gereken belge.
+          Cowork, Claude Code, Research ve Opus ücretli planlardadır. Fiyat, indirim ve program soruları için
+          <a href="/wiki/temeller/claude-ucretsiz-mi/">Claude ücretsiz mi?</a> sayfasına bakın; bu sayfa kullanımı anlatır.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <article class="guide">
+
+        <h2>Free planda neler var?</h2>
+        <p>
+          Free plan, Claude'un günlük işte en çok kullanılan özelliklerinin çoğunu içerir. Bu tablo
+          18 Kasım 2026 durumunu gösterir; güncel liste için <a href="https://claude.com/pricing" target="_blank" rel="noopener">claude.com/pricing</a> sayfasına bakın.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Özellik</th><th>Free planda</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Sohbet (web, masaüstü, iOS, Android)</td><td>Var</td></tr>
+              <tr><td>Modeller</td><td>Haiku ve Sonnet</td></tr>
+              <tr><td>Web araması</td><td>Var</td></tr>
+              <tr><td>Dosya yükleme (PDF, Word, Excel, görsel)</td><td>Var, sohbet başına en çok 20 dosya</td></tr>
+              <tr><td>Dosya oluşturma ve kod çalıştırma (Excel, Word, PowerPoint, PDF üretir)</td><td>Var</td></tr>
+              <tr><td>Artifacts, Claude Design, Slides ve Docs</td><td>Var</td></tr>
+              <tr><td>Projects</td><td>Var, en çok 5 proje</td></tr>
+              <tr><td>Hafıza (önceki sohbetlerden öğrenme)</td><td>Var, varsayılan açık</td></tr>
+              <tr><td>Connector (Gmail, Drive, Microsoft 365 gibi uygulama bağlantıları)</td><td>Var, özel connector en çok 1</td></tr>
+              <tr><td>Geçici sohbet (kayda geçmeyen sohbet)</td><td>Var</td></tr>
+              <tr><td>Sesli konuşma (beta)</td><td>Var, Haiku ve tek bağlı araçla</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Her özelliğin ne işe yaradığını <a href="/wiki/araclar/">Araçlar</a> ve
+          <a href="/wiki/yetenekler/">Yetenekler</a> bölümlerinde Türkçe anlatıyoruz.
+        </p>
+
+        <h2>Adım adım: kayıt ve ilk kullanım</h2>
+        <ol class="steps">
+          <li>
+            <strong>claude.ai adresine gidin</strong> ya da telefonunuza resmi uygulamayı kurun.
+            Doğru indirme bağlantıları <a href="/claude-indir/">Claude indir</a> sayfasında.
+          </li>
+          <li>
+            <strong>Kayıt olun.</strong> "Continue with Google" ile Gmail hesabınızla ya da "Continue with email" ile
+            herhangi bir e-posta adresiyle. E-posta seçtiyseniz gelen doğrulama mailindeki bağlantıya tıklayın.
+            Claude'u kullanmak için en az 18 yaşında olmanız gerekir.
+          </li>
+          <li>
+            <strong>Free planla başlayın.</strong> Kayıt tamamlanınca hesabınız Free planla açılır; ücretli bir plan seçmeniz gerekmez.
+          </li>
+          <li>
+            <strong>İki ayara bakın.</strong> Settings altında "Help improve Claude" (sohbetlerinizin model eğitiminde kullanılıp kullanılmayacağı)
+            ve "Generate memory from chats" (hafıza). İkisini de bilerek seçin.
+          </li>
+          <li>
+            <strong>Profil talimatı yazın.</strong> Settings, General altındaki "Instructions for Claude" alanına kim olduğunuzu ve nasıl yanıt
+            istediğinizi bir kez yazın. Örnek: "Bir muhasebe ofisinde çalışıyorum. Her zaman Türkçe, kısa ve maddeli yanıt ver."
+          </li>
+          <li>
+            <strong>İlk gerçek işi verin.</strong> Deneme sorusu yerine bugün yapacağınız bir işi seçin: bir e-postaya yanıt taslağı,
+            bir PDF'in özeti, bir toplantı notunun maddelere dökülmesi.
+          </li>
+        </ol>
+        <p>
+          Ekran ekran anlatım için <a href="/wiki/temeller/ilk-kurulum/">İlk Kurulum</a>, ilk haftayı planlamak için
+          <a href="/wiki/temeller/ilk-7-gun/">İlk 7 Gün</a> rehberine bakın.
+        </p>
+
+        <h2>Free limiti nasıl işler?</h2>
+        <p>
+          Claude "günde şu kadar mesaj" diye saymaz. Harcanan şey, Claude'un okuduğu ve yazdığı metnin miktarıdır.
+          İki katman vardır: her 5 saatte bir kayan oturum penceresi ve haftalık limit. Free planın sınırı Anthropic tarafından
+          <strong>sabit bir sayı olarak yayımlanmaz</strong>; internette dolaşan "günde 40 mesaj" gibi rakamlar resmi değildir.
+          Kalan kullanımı ve sıfırlanma zamanını Settings, Usage ekranında görürsünüz. Ayrıntı:
+          <a href="/wiki/temeller/kullanim-limitleri/">Kullanım Limitleri</a>.
+        </p>
+
+        <h2>Limiti uzatmanın 7 yolu</h2>
+        <ul>
+          <li>
+            <strong>Her yeni konu için yeni sohbet açın.</strong> Uzun bir sohbette önceki mesajların hepsi her yeni mesajda yeniden işlenir.
+            Teklif işi bitti, şimdi bir e-posta yazacaksanız yeni sohbete geçin.
+          </li>
+          <li>
+            <strong>İsteği tek seferde ve net verin.</strong> Bağlamı, amacı ve istediğiniz biçimi ilk mesajda yazın.
+            "Daha kısa yap", "şimdi resmi yap", "bir de tablo yap" diye beş tur yerine tek mesaj: "Bu notu müşteriye gidecek resmi bir
+            e-postaya çevir, en fazla 120 kelime, sonunda iki maddelik özet." Yöntem için <a href="/wiki/prompting/temel-ilkeler/">Prompt temel ilkeleri</a>.
+          </li>
+          <li>
+            <strong>Yalnız gereken belgeyi yükleyin.</strong> 80 sayfalık bir raporun yalnız 3 sayfası lazımsa o sayfaları yükleyin
+            ya da metni kopyalayın. Çok büyük belgeleri bölüm bölüm çalışın. Bkz. <a href="/wiki/prompting/belgeyle-calisma/">Belgeyle çalışma</a>.
+          </li>
+          <li>
+            <strong>Kısa çıktı isteyin.</strong> Claude'un yazdığı metin de limitten düşer. "En fazla 5 madde" ya da "yalnız tablo" demek işe yarar.
+          </li>
+          <li>
+            <strong>Projects kullanın.</strong> Sık yaptığınız bir iş için proje açın, talimatı ve sabit belgeleri bir kez projeye koyun.
+            Her sohbette aynı açıklamayı yeniden yazmazsınız. Free'de en çok 5 proje vardır, bunları en sık işlerinize ayırın.
+            Bkz. <a href="/wiki/araclar/projects/">Projects</a>.
+          </li>
+          <li>
+            <strong>Profil talimatını kullanın.</strong> Ton, dil ve biçim tercihlerinizi her mesajda tekrarlamak yerine bir kez yazın.
+          </li>
+          <li>
+            <strong>Limit dolunca bekleyin, işi bölün.</strong> 5 saatlik pencere kayar; yoğun bir sabahtan sonra öğleden sonra çoğu zaman yeniden açılır.
+            Büyük işi güne yaymak, Free'de en etkili yöntemdir.
+          </li>
+        </ul>
+
+        <h2>Free planda olmayanlar</h2>
+        <ul>
+          <li><strong>Cowork:</strong> bilgisayarınızdaki klasörlerle çok adımlı iş yürüten bölüm. Pro ve üstü.</li>
+          <li><strong>Claude Code:</strong> yazılımcılar için kodlama aracı. Pro ve üstü.</li>
+          <li><strong>Research (derin araştırma):</strong> çok sayıda kaynağı tarayıp atıflı rapor hazırlar. Pro ve üstü.</li>
+          <li><strong>Opus ve Fable modelleri:</strong> en güçlü modeller. Pro ve üstü (Fable, Pro'da ayrıca ücretlidir).</li>
+          <li><strong>Claude in Chrome</strong> ve <strong>Microsoft 365 eklentileri</strong> (Excel, Word, PowerPoint, Outlook içinde Claude). Ücretli planlar.</li>
+          <li><strong>Claude for Google Workspace</strong> (Docs, Sheets, Slides içinde Claude). Ücretli planlar.</li>
+          <li><strong>Computer use</strong> (Claude'un ekranınızı görüp uygulama kullanması, beta). Pro, Max ve Ultra.</li>
+        </ul>
+        <p>
+          Bu listedeki araçların masaüstünde nasıl çalıştığını <a href="/claude-masaustu/">Claude masaüstü uygulaması</a> rehberinde anlatıyoruz.
+        </p>
+
+        <h2>Ne zaman ücretli plana geçmek mantıklı?</h2>
+        <p>
+          Free plan Claude'u tanımak, ara sıra e-posta yazdırmak ve belge özetletmek için yeterlidir. Şu durumlarda dar gelir:
+        </p>
+        <ul>
+          <li>Haftada birkaç kez limite takılıyorsanız. Bu durumda sorun alışkanlık değil, plandır.</li>
+          <li>Klasörlerinizdeki dosyalarla çalışmak istiyorsanız (Cowork).</li>
+          <li>Excel, Word ya da Outlook içinde Claude kullanmak istiyorsanız.</li>
+          <li>Uzun araştırma raporları ya da en güçlü modellere ihtiyacınız varsa.</li>
+        </ul>
+        <p>
+          Bireysel ücretli planlar <strong>Pro</strong> (aylık 20 USD, yıllık ödemede ayda 17 USD), <strong>Max</strong> (aylık 100 USD) ve
+          <strong>Ultra</strong> (aylık 200 USD); fiyatlar vergi hariçtir. Claude'u her gün yoğun kullanacaksanız ilk ay
+          <strong>Max öneririz</strong>, çünkü Pro limitine çabuk çarpılır. Zorunlu değildir; ikinci aydan kullanımınıza göre Pro'ya inebilirsiniz.
+          Karşılaştırma için <a href="/wiki/temeller/planlar/">Claude Planları</a> ve <a href="/wiki/temeller/plan-secici/">Plan Seçici</a>.
+          Zamana abonelik satmaz; satın alma doğrudan Anthropic'ten yapılır.
+        </p>
+
+        <h2>Öğrenci, girişim ve STK için ücretsiz ya da indirimli yollar</h2>
+        <p>
+          Bireysel öğrenci indirimi ya da indirim kodu resmi kaynaklarda yoktur. Kurum bazlı programlar ise vardır:
+        </p>
+        <ul>
+          <li><strong>Claude for Education:</strong> üniversitenin satın aldığı kurum planı. Okulunuz aldıysa erişim okuldan gelir.</li>
+          <li><strong>Claude for Nonprofits:</strong> dernek ve vakıflar için indirimli Team planı. Türkiye'nin hangi fiyat grubuna girdiği yayımlanmıyor.</li>
+          <li><strong>Team plan for scientists:</strong> akredite üniversite ve kâr amacı gütmeyen enstitülerdeki araştırmacılara 12 ay Standard koltuk ücretsiz.</li>
+          <li><strong>Claude Startups:</strong> girişimlere API kredisi. Program 13 Ekim 2026'dan beri yeni başvuru almıyor.</li>
+          <li><strong>Anthropic Academy:</strong> ücretsiz İngilizce kurslar; yalnız ücretsiz bir Claude hesabı gerekir.</li>
+        </ul>
+        <p>
+          Koşullar ve Türkiye durumu: <a href="/wiki/temeller/claude-ucretsiz-mi/">Claude ücretsiz mi? Free plan, indirimler, öğrenci ve startup</a>.
+        </p>
+
+        <h2>Kişisel Free hesaba şirket verisi girmeyin</h2>
+        <p>
+          Kişisel Free hesabınız tüketici şartlarına tabidir: sohbetlerin model eğitiminde kullanılıp kullanılmayacağını
+          "Help improve Claude" ayarıyla siz seçersiniz ve ticari planlardaki veri işleme sözleşmesi (DPA) bu hesabı kapsamaz.
+          Bu yüzden müşteri listesi, maaş bilgisi, sözleşme ayrıntısı, kimlik numarası gibi gizli ya da kişisel verileri kişisel hesaba yazmayın.
+          Genel bir metni yazdırmak, isimleri çıkarılmış bir belgeyi özetletmek sorun değildir. Şirkette düzenli kullanılacaksa
+          kural yazmak için <a href="/wiki/temeller/sirket-ici-politika/">Şirket İçi Politika</a>, ayrıntı için
+          <a href="/wiki/temeller/gizlilik-kvkk/">Gizlilik ve KVKK</a>.
+        </p>
+
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <h2 class="section-title">Sık sorulanlar</h2>
+      <ol class="faq-list">
+        {faqs.map((f, i) => (
+          <li class="faq-item">
+            <details>
+              <summary>
+                <span class="faq-num">{String(i + 1).padStart(2, '0')}</span>
+                <span class="faq-q">{f.q}</span>
+                <span class="faq-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-a"><p>{f.a}</p></div>
+            </details>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow text-center">
+      <h2 class="section-title center">Free planla başladınız, sırada ne var?</h2>
+      <p class="lead center">
+        Ücretsiz kaynaklarla çok yol alınır. Claude'u kendi işinize kalıcı olarak yerleştirmek istediğinizde,
+        Zamana'nın Türkçe ve iş odaklı eğitimleri sizin dosyalarınız üzerinden ilerler.
+      </p>
+      <div class="hero-cta center">
+        <a href="/claude-egitimi/" class="btn btn--primary btn--lg">Claude eğitimini incele</a>
+        <a href="/wiki/temeller/ilk-7-gun/" class="btn btn--secondary btn--lg">İlk 7 Gün rehberi</a>
+      </div>
+
+      <aside class="source-note" aria-label="Kaynak ve not">
+        <span class="source-note__label">Kaynak ve not</span>
+        <p>
+          Bu sayfa, Zamana tarafından hazırlanmış Türkçe bir rehberdir. Claude ve ilgili markalar Anthropic'e aittir.
+          Resmi sayfa: <a href="https://claude.com/pricing" target="_blank" rel="noopener">claude.com/pricing</a>.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .hero-cta {
+    display: flex;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+    margin-top: var(--s-4);
+  }
+  .hero-cta.center { justify-content: center; }
+
+  .tldr-card {
+    background: var(--c-white);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    padding: var(--s-4) var(--s-5);
+    box-shadow: var(--sh-mid);
+  }
+  .tldr-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: var(--s-2);
+  }
+  .tldr-card p { margin: 0; color: var(--c-text); line-height: 1.7; }
+  .tldr-card strong { color: var(--c-navy); }
+  .tldr-card a { color: var(--c-gold-text); text-decoration: underline; }
+
+  .guide h2 {
+    color: var(--c-navy);
+    font-size: 1.5rem;
+    margin: var(--s-6) 0 var(--s-3);
+    line-height: 1.3;
+  }
+  .guide h2:first-child { margin-top: 0; }
+  .guide p {
+    color: var(--c-text-muted);
+    line-height: 1.8;
+    margin-bottom: var(--s-3);
+  }
+  .guide strong { color: var(--c-text); }
+  .guide a { color: var(--c-gold-text); text-decoration: underline; }
+  .guide ul, .guide ol.steps {
+    margin: 0 0 var(--s-4);
+    padding-left: 1.2rem;
+    display: grid;
+    gap: var(--s-2);
+  }
+  .guide li { color: var(--c-text-muted); line-height: 1.7; }
+  .guide li strong { color: var(--c-navy); }
+  .guide ol.steps { padding-left: 1.4rem; gap: var(--s-3); }
+  .guide ol.steps li::marker { color: var(--c-gold-text); font-weight: 800; }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 var(--s-4); }
+  .guide table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    font-size: 0.95rem;
+  }
+  .guide th, .guide td {
+    text-align: left;
+    padding: var(--s-2) var(--s-3);
+    border-bottom: 1px solid var(--c-border);
+    color: var(--c-text-muted);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .guide th { color: var(--c-navy); font-weight: 700; background: var(--c-bg-subtle); }
+  .guide tr:last-child td { border-bottom: none; }
+
+  .lead.center { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
+
+  .faq-list { list-style: none; display: grid; gap: var(--s-3); margin-top: var(--s-4); }
+  .faq-item {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    overflow: hidden;
+  }
+  .faq-item:hover { border-color: var(--c-border-gold); }
+  .faq-item summary {
+    display: grid;
+    grid-template-columns: 48px 1fr 32px;
+    gap: var(--s-3);
+    align-items: center;
+    padding: var(--s-4);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { background: var(--c-bg-subtle); }
+  .faq-num { font-weight: 800; font-size: 1.05rem; color: var(--c-gold); }
+  .faq-q { font-weight: 600; color: var(--c-navy); line-height: 1.45; }
+  .faq-toggle { font-size: 1.6rem; color: var(--c-gold-text); text-align: center; font-weight: 300; line-height: 1; transition: transform var(--t-fast); }
+  .faq-item details[open] .faq-toggle { transform: rotate(45deg); }
+  .faq-a { padding: 0 var(--s-4) var(--s-4) calc(var(--s-4) + 48px + var(--s-3)); }
+  .faq-a p { color: var(--c-text-muted); line-height: 1.75; margin: 0; }
+
+  .source-note {
+    margin-top: var(--s-6);
+    padding: var(--s-4);
+    border-top: 1px solid var(--c-border);
+    text-align: left;
+  }
+  .source-note__label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: var(--s-2);
+  }
+  .source-note p { color: var(--c-text-muted); font-size: 0.9rem; line-height: 1.7; margin: 0; }
+  .source-note a { color: var(--c-gold-text); text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .faq-item summary { grid-template-columns: 36px 1fr 28px; gap: var(--s-2); padding: var(--s-3); }
+    .faq-a { padding: 0 var(--s-3) var(--s-3) var(--s-3); }
+    .guide h2 { font-size: 1.3rem; }
+  }
+</style>

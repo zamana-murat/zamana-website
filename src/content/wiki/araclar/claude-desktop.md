@@ -1,7 +1,7 @@
 ---
 title: "Claude Desktop: Kurumsal Kullanımın Kapısı"
-seoTitle: "Claude Desktop İndirme ve Kurulum (Windows, Mac)"
-description: "Claude Desktop, Cowork ve yerel dosya erişiminin en eksiksiz ortamıdır. Kurulum, sistem gereksinimleri, web arayüzünden farkı ve ilk adımlar."
+seoTitle: "Claude Desktop Kurumsal Kurulum: IT, Ağ, Dağıtım"
+description: "Claude Desktop'ı şirkette kurmak: kurumsal kurulum adımları, IT onayı, güvenlik duvarı ve VPN, ağ ayarları, dağıtım, connector güvenliği ve ilk Cowork ayarı."
 tags:
   - araclar
   - claude-desktop
@@ -11,6 +11,8 @@ lastUpdated: "2026-11-09"
 ---
 
 **Claude Desktop, Claude'un Windows, macOS ve Linux için yerel uygulamasıdır.** Kağıt üzerinde başka bir arayüz gibi görünse de pratikte çok daha fazlasıdır: bilgisayarınızdaki gerçek klasörlerle çalışan [Cowork](/wiki/araclar/cowork-modu/)'ün en eksiksiz ortamıdır ve iş kullanımı için web arayüzünden ciddi ölçüde daha güçlüdür.
+
+> **Bu sayfa kurumsal kurulum ve IT içindir.** Uygulamanın tüm özellikleri ve iş örnekleri için [Claude masaüstü uygulaması rehberi](/claude-masaustu/), resmi indirme bağlantıları için [Claude indir](/claude-indir/).
 
 Tek cümleyle: yerel dosyalarla ciddi Claude kullanımı Claude Desktop ile başlar. Cowork web ve mobilde de (beta) var, ama yerel workspace klasörü, sandbox'ta kod çalıştırma, computer use ve yerleşik tarayıcı masaüstü uygulamasına bağlıdır.
 
@@ -33,7 +35,7 @@ Tek cümleyle: yerel dosyalarla ciddi Claude kullanımı Claude Desktop ile baş
 
 | Bileşen | Gereksinim |
 |---|---|
-| **İşletim sistemi** | Windows 10 veya üstü, macOS 11 (Big Sur) veya üstü, Linux (Ubuntu 22.04+ / Debian 12+, x64 veya arm64) |
+| **İşletim sistemi** | Windows 10 veya üstü, macOS 13 (Ventura) veya üstü, Linux (Ubuntu 22.04+ / Debian 12+, x64 veya arm64) |
 | **RAM ve depolama** | Genel bir resmi gereksinim yayımlanmıyor. Yalnız Linux'ta Cowork için en az 8 GB RAM ve yaklaşık 25 GB boş disk gerekir (KVM desteği şart) |
 | **İnternet** | Resmi bir hız değeri yayımlanmıyor. Zamana önerisi: kesintisiz, kararlı bir bağlantı |
 

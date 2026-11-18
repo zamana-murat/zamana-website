@@ -163,6 +163,36 @@ const pages = [
     title: 'Kurumsal Ekipler İçin Yapay Zeka Eğitimi',
     subtitle: 'İş odaklı · Türkçe · Claude odaklı',
   },
+  {
+    slug: 'claude-ucretsiz',
+    eyebrow: 'Claude Ücretsiz Kullanım',
+    title: "Claude'u ücretsiz kullanmak: adım adım rehber",
+    subtitle: 'Free planda neler var · Limiti uzatmanın yolları',
+  },
+  {
+    slug: 'claude-indir',
+    eyebrow: 'Claude İndir',
+    title: 'Windows, Mac, iOS ve Android',
+    subtitle: 'Yalnız resmi kaynaklar · Kurulum adımları',
+  },
+  {
+    slug: 'claude-masaustu',
+    eyebrow: 'Claude Masaüstü',
+    title: 'Claude masaüstü uygulaması: ne yapar, kime yarar?',
+    subtitle: 'Sohbet · Cowork · Connector · Plan farkları',
+  },
+  {
+    slug: 'claude-status',
+    eyebrow: 'Claude Status',
+    title: 'Claude sunucu durumu, canlı ve Türkçe',
+    subtitle: '60 saniyede bir yenilenir · 90 günlük erişilebilirlik',
+  },
+  {
+    slug: 'claude-coktu-mu',
+    eyebrow: 'Claude Çöktü mü?',
+    title: 'Claude çalışmıyorsa: canlı kontrol ve çözüm',
+    subtitle: 'Sorun Claude’da mı, sizde mi? · Adım adım çözüm',
+  },
 ];
 
 // ── Wiki pages: discover from src/content/wiki/, derive eyebrow from section,

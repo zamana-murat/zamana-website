@@ -1,0 +1,269 @@
+---
+/**
+ * Live Claude status widget.
+ *   variant="dashboard"  full view for /claude-status/ (overall, components + 90-day uptime,
+ *                        active incidents, maintenance, history)
+ *   variant="answer"     big yes/no answer for /claude-coktu-mu/ (affected services only)
+ *
+ * The static markup is meaningful without JS (headings, component list with Turkish
+ * descriptions); status-client.ts fills in the live data. Styles are global (prefixed cs-)
+ * because the client creates elements that Astro's scoped CSS would not match.
+ */
+import { KNOWN_COMPONENTS } from '../../lib/claude-status';
+import StatusSourceNote from './StatusSourceNote.astro';
+
+interface Props {
+  variant: 'dashboard' | 'answer';
+}
+const { variant } = Astro.props;
+---
+
+<div class={`cs-root cs-root--${variant}`} data-cs-root data-variant={variant} data-state="loading">
+  {variant === 'answer' && (
+    <div class="cs-answer cs-answer--loading" data-cs-answer>
+      <p class="cs-answer-kicker">Canlı kontrol</p>
+      <p class="cs-answer-title" data-cs-answer-title aria-live="polite">Kontrol ediliyor…</p>
+      <p class="cs-answer-text" data-cs-answer-text>
+        Anthropic'in resmi durum sayfasındaki güncel bilgi alınıyor.
+      </p>
+      <ul class="cs-affected" data-cs-affected hidden></ul>
+      <div class="cs-active" data-cs-active hidden></div>
+      <div class="cs-meta">
+        <span data-cs-updated>Son güncelleme: bekleniyor</span>
+        <span class="cs-sep" aria-hidden="true">·</span>
+        <span data-cs-countdown>Yükleniyor…</span>
+        <button type="button" class="cs-refresh" data-cs-refresh>Şimdi yenile</button>
+      </div>
+      <p class="cs-notice" data-cs-notice hidden></p>
+      <p class="cs-answer-more">
+        Bileşen bazında durum, 90 günlük erişilebilirlik ve olay geçmişi:
+        <a href="/claude-status/">Claude durum paneli</a>
+      </p>
+    </div>
+  )}
+
+  {variant === 'dashboard' && (
+    <>
+      <div class="cs-overall cs-lv-unknown" data-cs-overall>
+        <span class="cs-overall-dot" aria-hidden="true"></span>
+        <div class="cs-overall-text">
+          <p class="cs-overall-label" data-cs-overall-label aria-live="polite">Durum bilgisi yükleniyor…</p>
+          <div class="cs-meta">
+            <span data-cs-updated>Son güncelleme: bekleniyor</span>
+            <span class="cs-sep" aria-hidden="true">·</span>
+            <span data-cs-countdown>Yükleniyor…</span>
+            <button type="button" class="cs-refresh" data-cs-refresh>Şimdi yenile</button>
+          </div>
+        </div>
+      </div>
+      <p class="cs-notice" data-cs-notice hidden></p>
+
+      <section class="cs-block" aria-labelledby="cs-h-components">
+        <h2 id="cs-h-components" class="cs-h">Hizmetlerin durumu</h2>
+        <p class="cs-sub" data-cs-uptime-note hidden>
+          Çubuklar son 90 günü gösterir (telefonda son 30 gün). Bir günün üzerine gelince o günkü kesinti süresi görünür.
+        </p>
+        <ul class="cs-components" data-cs-components>
+          {KNOWN_COMPONENTS.map((c) => (
+            <li class={`cs-comp${c.parentId ? ' cs-comp--child' : ''}${c.isGroup ? ' cs-comp--group' : ''}`}>
+              <div class="cs-comp-row">
+                <div class="cs-comp-text">
+                  <span class="cs-comp-name">{c.name}</span>
+                  <span class="cs-comp-desc">{c.description}</span>
+                </div>
+                <span class="cs-badge cs-lv-unknown"><span class="cs-dot"></span>Yükleniyor</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="cs-block" aria-labelledby="cs-h-incidents">
+        <h2 id="cs-h-incidents" class="cs-h">Aktif olaylar</h2>
+        <div data-cs-incidents><p class="cs-empty">Aktif olaylar yükleniyor…</p></div>
+      </section>
+
+      <section class="cs-block" aria-labelledby="cs-h-maint">
+        <h2 id="cs-h-maint" class="cs-h">Planlı bakımlar</h2>
+        <div data-cs-maint><p class="cs-empty">Bakım bilgisi yükleniyor…</p></div>
+      </section>
+
+      <section class="cs-block" aria-labelledby="cs-h-history">
+        <h2 id="cs-h-history" class="cs-h">Son olaylar</h2>
+        <p class="cs-sub">Anthropic'in durum sayfasında kaydedilen son 10 olay, en yeni üstte.</p>
+        <div data-cs-history><p class="cs-empty">Olay geçmişi yükleniyor…</p></div>
+      </section>
+    </>
+  )}
+
+  <noscript>
+    <p class="cs-notice">
+      Canlı durum için JavaScript gerekir. Anthropic'in resmi durum sayfasına doğrudan bakabilirsiniz:
+      <a href="https://status.claude.com" rel="noopener">status.claude.com</a>
+    </p>
+  </noscript>
+
+  <StatusSourceNote variant="inline" />
+</div>
+
+<script>
+  import { initClaudeStatus } from './status-client';
+  initClaudeStatus();
+</script>
+
+<style is:global>
+  /* on :root so badges outside the widget (legend on the page) get the same colors */
+  :root {
+    --cs-ok: #2e9e4f;      --cs-ok-bg: #e6f5ea;   --cs-ok-tx: #14592b;
+    --cs-deg: #d4a514;     --cs-deg-bg: #fff6d6;  --cs-deg-tx: #6b5300;
+    --cs-part: #e8730c;    --cs-part-bg: #ffead8; --cs-part-tx: #8a3c00;
+    --cs-maj: #d83131;     --cs-maj-bg: #fde3e2;  --cs-maj-tx: #9b1c1c;
+    --cs-mnt: #2f6fde;     --cs-mnt-bg: #e3ecfd;  --cs-mnt-tx: #1d4c9a;
+    --cs-unk: #9aa5b8;     --cs-unk-bg: #eef1f5;  --cs-unk-tx: #3d4a60;
+    --cs-none: #dfe3ea;
+  }
+  .cs-root .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  .cs-root a { color: var(--c-gold-text); text-decoration: underline; }
+
+  /* level colors */
+  .cs-lv-operational { --lv: var(--cs-ok); --lv-bg: var(--cs-ok-bg); --lv-tx: var(--cs-ok-tx); }
+  .cs-lv-degraded    { --lv: var(--cs-deg); --lv-bg: var(--cs-deg-bg); --lv-tx: var(--cs-deg-tx); }
+  .cs-lv-partial     { --lv: var(--cs-part); --lv-bg: var(--cs-part-bg); --lv-tx: var(--cs-part-tx); }
+  .cs-lv-major       { --lv: var(--cs-maj); --lv-bg: var(--cs-maj-bg); --lv-tx: var(--cs-maj-tx); }
+  .cs-lv-maintenance { --lv: var(--cs-mnt); --lv-bg: var(--cs-mnt-bg); --lv-tx: var(--cs-mnt-tx); }
+  .cs-lv-unknown     { --lv: var(--cs-unk); --lv-bg: var(--cs-unk-bg); --lv-tx: var(--cs-unk-tx); }
+
+  .cs-badge {
+    display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap;
+    padding: 0.2rem 0.65rem; border-radius: 999px; font-size: 0.82rem; font-weight: 700;
+    background: var(--lv-bg); color: var(--lv-tx);
+  }
+  .cs-dot { width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--lv); flex: none; }
+  .cs-chip {
+    display: inline-block; padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.8rem;
+    font-weight: 600; background: var(--c-cream); color: var(--c-text-muted); border: 1px solid var(--c-border);
+  }
+
+  /* meta line */
+  .cs-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.6rem; font-size: 0.88rem; color: var(--c-text-muted); }
+  .cs-refresh {
+    font: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer;
+    background: transparent; color: var(--c-navy); border: 1px solid var(--c-border); border-radius: var(--r-btn);
+    padding: 0.2rem 0.65rem;
+  }
+  .cs-refresh:hover { border-color: var(--c-gold); }
+  .cs-root[aria-busy='true'] .cs-refresh { opacity: 0.6; }
+  .cs-notice {
+    margin: var(--s-3) 0 0; padding: var(--s-3); border-radius: var(--r-card);
+    background: var(--cs-deg-bg); color: var(--cs-deg-tx); font-size: 0.92rem; line-height: 1.6;
+  }
+  .cs-notice[hidden] { display: none; }
+
+  /* overall (dashboard) */
+  .cs-overall {
+    display: flex; gap: var(--s-3); align-items: flex-start;
+    background: var(--c-white); border: 1px solid var(--c-border); border-left: 6px solid var(--lv);
+    border-radius: var(--r-card); padding: var(--s-4); box-shadow: var(--sh-soft);
+  }
+  .cs-overall-dot { width: 1.1rem; height: 1.1rem; border-radius: 50%; background: var(--lv); margin-top: 0.35rem; flex: none; box-shadow: 0 0 0 5px var(--lv-bg); }
+  .cs-overall-label { font-size: 1.45rem; font-weight: 800; color: var(--c-navy); margin: 0 0 0.35rem; line-height: 1.3; }
+
+  /* answer (coktu-mu) */
+  .cs-answer {
+    --lv: var(--cs-unk); --lv-bg: var(--cs-unk-bg); --lv-tx: var(--cs-unk-tx);
+    background: var(--c-white); border: 1px solid var(--c-border); border-top: 8px solid var(--lv);
+    border-radius: var(--r-lg); padding: var(--s-5); box-shadow: var(--sh-mid); text-align: center;
+  }
+  .cs-answer--ok { --lv: var(--cs-ok); --lv-bg: var(--cs-ok-bg); --lv-tx: var(--cs-ok-tx); }
+  .cs-answer--partial { --lv: var(--cs-part); --lv-bg: var(--cs-part-bg); --lv-tx: var(--cs-part-tx); }
+  .cs-answer--major { --lv: var(--cs-maj); --lv-bg: var(--cs-maj-bg); --lv-tx: var(--cs-maj-tx); }
+  .cs-answer-kicker { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-gold-text); margin: 0 0 var(--s-2); }
+  .cs-answer-title { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 800; line-height: 1.2; color: var(--lv-tx); margin: 0 0 var(--s-3); }
+  .cs-answer--loading .cs-answer-title { color: var(--c-navy); }
+  .cs-answer-text { color: var(--c-text-muted); line-height: 1.7; max-width: 560px; margin: 0 auto var(--s-4); }
+  .cs-affected { list-style: none; display: grid; gap: var(--s-2); max-width: 520px; margin: 0 auto var(--s-4); padding: 0; text-align: left; }
+  .cs-affected[hidden] { display: none; }
+  .cs-aff { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3); padding: 0.6rem 0.9rem; border: 1px solid var(--c-border); border-radius: var(--r-card); }
+  .cs-aff-name { font-weight: 700; color: var(--c-navy); }
+  .cs-active { max-width: 560px; margin: 0 auto var(--s-4); text-align: left; font-size: 0.92rem; color: var(--c-text-muted); }
+  .cs-active[hidden] { display: none; }
+  .cs-active-head { font-weight: 700; color: var(--c-navy); margin: 0 0 0.3rem; }
+  .cs-active-list { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.25rem; }
+  .cs-active-title { color: var(--c-navy); font-weight: 600; }
+  .cs-answer .cs-meta { justify-content: center; }
+  .cs-answer-more { margin: var(--s-4) 0 0; font-size: 0.95rem; color: var(--c-text-muted); }
+  .cs-answer-more a { font-weight: 700; }
+
+  /* blocks */
+  .cs-block { margin-top: var(--s-6); }
+  .cs-h { color: var(--c-navy); font-size: 1.35rem; margin: 0 0 var(--s-2); }
+  .cs-sub { color: var(--c-text-muted); font-size: 0.92rem; margin: 0 0 var(--s-3); line-height: 1.6; }
+  .cs-sub[hidden] { display: none; }
+  .cs-empty { color: var(--c-text-muted); margin: 0; padding: var(--s-3); background: var(--c-white); border: 1px dashed var(--c-border); border-radius: var(--r-card); }
+  .cs-note { font-size: 0.85rem; color: var(--c-text-muted); margin: 0 0 var(--s-2); }
+  .cs-note--en { font-style: italic; }
+
+  /* components */
+  .cs-components { list-style: none; padding: 0; margin: 0; background: var(--c-white); border: 1px solid var(--c-border); border-radius: var(--r-card); }
+  .cs-comp { padding: var(--s-3) var(--s-4); border-top: 1px solid var(--c-border); }
+  .cs-comp:first-child { border-top: 0; }
+  .cs-comp--child { padding-left: calc(var(--s-4) + 1.25rem); background: var(--c-cream); }
+  .cs-comp-row { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3); }
+  .cs-comp-text { display: flex; flex-direction: column; min-width: 0; }
+  .cs-comp-name { font-weight: 700; color: var(--c-navy); overflow-wrap: anywhere; }
+  .cs-comp--group > .cs-comp-row .cs-comp-name::after { content: ' (grup)'; font-weight: 500; color: var(--c-text-muted); }
+  .cs-comp-desc { font-size: 0.88rem; color: var(--c-text-muted); line-height: 1.5; }
+
+  .cs-uptime { margin-top: var(--s-2); }
+  .cs-bars { display: flex; gap: 2px; height: 30px; }
+  .cs-day { flex: 1 1 0; min-width: 0; border-radius: 2px; background: var(--cs-ok); }
+  .cs-day-partial { background: var(--cs-part); }
+  .cs-day-major { background: var(--cs-maj); }
+  .cs-day-none { background: var(--cs-none); }
+  .cs-day:hover { opacity: 0.7; }
+  .cs-uptime-legend { display: flex; justify-content: space-between; gap: var(--s-2); font-size: 0.78rem; color: var(--c-text-muted); margin-top: 0.3rem; }
+  .cs-up-pct { font-weight: 700; color: var(--c-navy); text-align: center; }
+  .cs-up-30 { display: none; }
+  @media (max-width: 640px) {
+    .cs-bars .cs-day:nth-child(-n+60) { display: none; }
+    .cs-up-90 { display: none; }
+    .cs-up-30 { display: inline; }
+    .cs-comp, .cs-comp--child { padding-left: var(--s-3); padding-right: var(--s-3); }
+    .cs-comp--child { padding-left: calc(var(--s-3) + 0.75rem); }
+    .cs-comp-row { flex-wrap: wrap; }
+    .cs-overall-label { font-size: 1.2rem; }
+    .cs-answer { padding: var(--s-4) var(--s-3); }
+  }
+
+  /* incidents */
+  .cs-incident {
+    background: var(--c-white); border: 1px solid var(--c-border); border-left: 5px solid var(--lv, var(--cs-unk));
+    border-radius: var(--r-card); padding: var(--s-3) var(--s-4); margin-bottom: var(--s-3);
+  }
+  .cs-edge-operational { --lv: var(--cs-ok); }
+  .cs-edge-degraded { --lv: var(--cs-deg); }
+  .cs-edge-partial { --lv: var(--cs-part); }
+  .cs-edge-major { --lv: var(--cs-maj); }
+  .cs-edge-maintenance { --lv: var(--cs-mnt); }
+  .cs-edge-unknown { --lv: var(--cs-unk); }
+  .cs-inc-head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--s-3); flex-wrap: wrap; }
+  .cs-inc-title { font-size: 1.05rem; color: var(--c-navy); margin: 0; line-height: 1.4; }
+  .cs-inc-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .cs-inc-badges .cs-badge { background: var(--lv-bg); color: var(--lv-tx); }
+  .cs-inc-meta { font-size: 0.85rem; color: var(--c-text-muted); margin: 0.4rem 0 0; line-height: 1.5; }
+  .cs-text { margin: 0; white-space: pre-line; line-height: 1.65; color: var(--c-text); overflow-wrap: anywhere; }
+  .cs-inc-summary { margin-top: var(--s-2); font-size: 0.93rem; }
+  .cs-inc-summary .cs-text { color: var(--c-text-muted); }
+  .cs-timeline { list-style: none; margin: var(--s-3) 0 0; padding: 0 0 0 var(--s-3); border-left: 2px solid var(--c-border); display: grid; gap: var(--s-3); }
+  .cs-tl-top { display: flex; flex-wrap: wrap; gap: 0.2rem 0.6rem; align-items: baseline; margin-bottom: 0.2rem; }
+  .cs-tl-status { color: var(--c-navy); }
+  .cs-tl-time { font-size: 0.82rem; color: var(--c-text-muted); }
+  .cs-tl-body { font-size: 0.93rem; }
+  .cs-orig { margin-top: 0.3rem; font-size: 0.82rem; color: var(--c-text-muted); }
+  .cs-orig summary { cursor: pointer; }
+  .cs-orig .cs-text { color: var(--c-text-muted); font-style: italic; margin-top: 0.2rem; }
+  .cs-inc-link { margin: var(--s-2) 0 0; font-size: 0.85rem; }
+</style>

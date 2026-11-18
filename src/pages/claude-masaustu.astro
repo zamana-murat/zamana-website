@@ -1,0 +1,522 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE_URL } from '../data/seo';
+
+const pageUrl = `${SITE_URL}/claude-masaustu/`;
+
+const faqs = [
+  {
+    q: "Claude Desktop nedir?",
+    a: "Claude Desktop, Anthropic'in Windows, macOS ve Linux (beta) için yaptığı masaüstü uygulamasıdır. Sohbetin yanında Cowork, bilgisayarınızdaki klasörlerle çalışma, masaüstü uzantıları ve Mac'te Quick Entry gibi yalnız masaüstünde olan özellikleri sunar.",
+  },
+  {
+    q: "Claude masaüstü uygulaması ücretsiz mi?",
+    a: "Uygulama ücretsiz indirilir ve sohbet Free planda da çalışır. Cowork ve Claude Code gibi bölümler Pro, Max, Ultra, Team ya da Enterprise planı ister.",
+  },
+  {
+    q: "Masaüstü uygulamasının web sürümünden farkı ne?",
+    a: "Sohbet, Projects, hafıza ve connector'lar ikisinde de aynıdır. Masaüstü; bilgisayarınızdaki klasörlere erişimi, computer use'u, yerleşik tarayıcıyı, yerel MCP sunucusu kuran masaüstü uzantılarını ve Mac'te Quick Entry'yi ekler.",
+  },
+  {
+    q: "Claude bilgisayarımdaki bütün dosyaları görür mü?",
+    a: "Hayır. Cowork yalnız sizin eklediğiniz klasörlerle çalışır. Computer use açıksa da Claude her uygulama için ayrıca izin ister. Hangi klasörü vereceğinize siz karar verirsiniz.",
+  },
+  {
+    q: "Bilgisayarım kapalıyken Cowork çalışır mı?",
+    a: "Bulutta çalışan görev sürer, ama bilgisayarınızdaki dosyalara ulaşamaz. Yerel klasör, yerel connector ya da computer use gereken iş için masaüstü uygulaması açık ve bağlı olmalıdır.",
+  },
+  {
+    q: "Windows'ta Quick Entry kısayolu var mı?",
+    a: "Anthropic'in yardım sayfasına göre Quick Entry şu an yalnız macOS'ta. Mac'te Option tuşuna iki kez basarak açılır; kısayol ayarlardan değiştirilebilir.",
+  },
+  {
+    q: "Claude masaüstünde Türkçe sesli komut çalışır mı?",
+    a: "Claude yazılı olarak Türkçeyi rahatça anlar ve yanıtlar. Sesli konuşmada Türkçe desteğini resmi kaynaklarda doğrulayamadık; Anthropic güncel bir dil listesi yayımlamıyor. İngilizce dışındaki diller beta olarak geçiyor.",
+  },
+  {
+    q: "Şirket bilgisayarına kurmak için IT onayı gerekir mi?",
+    a: "Çoğu şirkette evet. Kurulum izni, güvenlik duvarı, VPN ve uzantı politikası IT'nin kararıdır. Kurumsal kurulum adımlarını Claude Desktop kurumsal kurulum sayfamızda anlatıyoruz.",
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Claude Masaüstü', item: pageUrl },
+  ],
+};
+---
+
+<Layout
+  title="Claude Masaüstü Uygulaması: Özellikler Rehberi | Zamana"
+  description="Claude masaüstü uygulaması (Claude Desktop) nedir? Sohbet, Cowork, yerel klasörler, zamanlanmış görevler, connector, Quick Entry ve plan farkları, iş örnekleriyle."
+  ogImage="/og/claude-masaustu.png"
+  skipAutoBreadcrumb={true}
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Claude Masaüstü</span>
+      <h1>Claude masaüstü uygulaması: ne yapar, kime yarar?</h1>
+      <p class="lead">
+        Claude Desktop'ın her bölümünü, ne işe yaradığını ve hangi planda olduğunu
+        Türk iş hayatından örneklerle anlatıyoruz.
+      </p>
+      <div class="hero-cta center">
+        <a href="/claude-indir/" class="btn btn--primary btn--lg">Claude'u indir</a>
+        <a href="/wiki/araclar/claude-desktop/" class="btn btn--secondary btn--lg">Kurumsal kurulum</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <div class="tldr-card">
+        <span class="tldr-label">Kısaca</span>
+        <p>
+          <strong>Claude Desktop</strong>, Claude'un Windows, macOS ve Linux (beta) uygulamasıdır. Sohbet, Projects, hafıza ve
+          connector'lar web sürümüyle aynıdır. Masaüstünü farklı kılan, Claude'un <strong>bilgisayarınızdaki klasörlerle</strong>
+          çalışabilmesidir: Cowork ile bir klasördeki onlarca belgeyi okuyup tablo, rapor ya da taslak üretir. Bunun yanında
+          yerleşik tarayıcı, computer use, yerel MCP sunucusu kuran masaüstü uzantıları ve Mac'te her uygulamadan açılan Quick Entry
+          yalnız masaüstündedir. Sohbet Free planda çalışır; Cowork ve Claude Code ücretli planlardadır.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <article class="guide">
+
+        <h2>Web ve mobilden farkı ne?</h2>
+        <p>
+          Aynı hesapla üç yerden girersiniz ve sohbetleriniz her yerde görünür. Fark, bilgisayara bağlı yeteneklerdedir.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Özellik</th><th>Masaüstü</th><th>Web</th><th>Mobil</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Sohbet, Projects, hafıza, connector</td><td>Var</td><td>Var</td><td>Var</td></tr>
+              <tr><td>Cowork</td><td>Var, tam sürüm</td><td>Beta</td><td>Beta</td></tr>
+              <tr><td>Bilgisayardaki klasörlerle çalışma</td><td>Var</td><td colspan="2">Yalnız masaüstü uygulaması açık ve bağlıyken</td></tr>
+              <tr><td>Yerleşik tarayıcı (Cowork yan paneli)</td><td>Var</td><td>Yok</td><td>Yok</td></tr>
+              <tr><td>Computer use (beta)</td><td>Var (macOS 15+, Windows)</td><td>Yok</td><td>Yok</td></tr>
+              <tr><td>Masaüstü uzantıları (yerel MCP)</td><td>Var</td><td>Yok</td><td>Yok</td></tr>
+              <tr><td>Quick Entry kısayolu</td><td>Yalnız Mac</td><td>Yok</td><td>Yok</td></tr>
+              <tr><td>Sesli konuşma (beta)</td><td>Var</td><td>Var</td><td>Var</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Kısa bir soru, yolda bir e-posta taslağı için web ya da mobil yeterlidir. Dosya ve klasörle iş yapacaksanız masaüstü
+          uygulaması asıl çalışma yeriniz olur.
+        </p>
+
+        <h2>Uygulamanın bölümleri ve iş örnekleri</h2>
+        <p>
+          Örneklerdeki şirketler kurgusaldır. Her bölümün sonunda hangi planda olduğu yazılıdır; ayrıntılı tablo aşağıda.
+        </p>
+
+        <div class="feature">
+          <h3>Sohbet</h3>
+          <p>
+            Soru sormak, metin yazdırmak, belge özetletmek, tablo ve sunum ürettirmek için. Dosya yükleyebilir, web araması
+            yaptırabilir, Excel, Word, PowerPoint ya da PDF dosyası oluşturtabilirsiniz.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Ege Tekstil'in ihracat sorumlusu, Alman alıcıdan gelen şikâyet e-postasını yapıştırır:
+            "Bunu Türkçe özetle, sonra kibar ama net bir Almanca yanıt taslağı yaz, teslim tarihini 15 gün sonrası olarak öner."
+          </p>
+          <p class="plan-line">Tüm planlarda. Bkz. <a href="/wiki/araclar/claude-chat/">Claude Chat</a>.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Cowork: klasörlerinizle çok adımlı iş</h3>
+          <p>
+            Cowork, Claude'a bir iş verip sonucunu teslim aldığınız bölümdür. Bilgisayarınızdan bir klasör eklersiniz; Claude oradaki
+            dosyaları okur, yeni dosya üretir, adımları kendisi planlar. Claude yalnız sizin eklediğiniz klasörleri görür.
+            Cowork dosyaları varsayılan olarak kullanıcı klasörünüzdeki "Claude" klasörüne kaydedilir.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Kaya Mali Müşavirlik, ekim ayı faturalarını tek klasörde toplar ve şunu ister: "Bu klasördeki PDF faturaları oku,
+            tarih, firma, matrah, KDV ve toplam sütunlu bir Excel tablosu hazırla; okunamayan ya da eksik bilgili faturaları ayrı bir sayfada listele."
+            Muhasebe programı için hazır bir Claude bağlantısı olmadığından veri dışa aktarılıp klasöre konur.
+          </p>
+          <p>
+            <strong>Bulut ve yerel:</strong> 6 Ekim 2026'dan beri Pro, Max ve Ultra'da yeni Cowork görevleri bulutta çalışır; uygulamayı kapatsanız da
+            iş sürer. Ama bulut oturumu bilgisayarınızdaki dosyaya doğrudan erişmez. Yerel klasör, yerel connector ya da computer use gereken işte
+            masaüstü uygulaması açık ve bağlı olmalıdır.
+          </p>
+          <p class="plan-line">Pro, Max, Ultra, Team, Enterprise (Enterprise'ta yönetici açması gerekebilir). Bkz. <a href="/wiki/araclar/cowork-modu/">Cowork Modu</a>.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Zamanlanmış görevler</h3>
+          <p>
+            Tekrar eden işi bir kez tarif edersiniz, Claude belirlediğiniz gün ve saatte kendisi çalıştırır.
+            Önemli sınır: bulutta kurulan zamanlanmış görev bilgisayarınızdaki klasörü kullanamaz; veriyi Gmail, Drive gibi
+            bulut bağlantılarından almalıdır.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Ege Tekstil'in satış müdürü: "Her pazartesi 08:00'de, geçen hafta Gmail'e gelen fiyat taleplerini ülke ve ürün bazında
+            tek sayfada özetle."
+          </p>
+          <p class="plan-line">Cowork olan planlarda. Bkz. <a href="/wiki/araclar/scheduled-tasks/">Zamanlanmış Görevler</a>.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Yerleşik tarayıcı</h3>
+          <p>
+            Cowork'ün yan panelinde açılan tarayıcı. Claude web sayfalarını gezip bilgi toplayabilir; ne yaptığını panelde izlersiniz.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Bir fuar öncesi ihracatçı firma: "Fuarın katılımcı listesinde ambalaj sektöründeki firmaları bul, ülke ve web
+            adresleriyle tabloya yaz."
+          </p>
+          <p class="plan-line">Masaüstünde Pro, Max, Ultra ve Team; Enterprise'ta yönetici ayarıyla.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Computer use (beta)</h3>
+          <p>
+            Claude ekranınızı görüp fare ve klavyeyle uygulama kullanabilir. Bağlantısı olmayan eski bir masaüstü programında işe yarar.
+            Claude her uygulama için ayrıca izin ister; yatırım, alım satım ve kripto uygulamaları varsayılan olarak kapalıdır.
+            Ayarlar, Capabilities altındaki "Enable computer use" anahtarıyla açılır.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Bir muhasebe ofisi, web arayüzü olmayan eski bir programdan aylık raporu dışa aktarma adımlarını Claude'a yaptırır,
+            sonucu Cowork klasörüne alır. İlk denemeyi önemsiz bir veriyle yapmak akıllıcadır.
+          </p>
+          <p class="plan-line">Yalnız Pro, Max ve Ultra; Team ve Enterprise'ta yok. macOS 15+ veya Windows. Bkz. <a href="/wiki/yetenekler/computer-use/">Computer Use</a>.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Telefondan görev vermek</h3>
+          <p>
+            Bilgisayar başında değilken mobil uygulamadan Cowork'e iş verebilir, sonucunu sonra masaüstünde alabilirsiniz.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Marmara Lojistik'in operasyon müdürü depoda: "Dünkü sevkiyat gecikmelerini müşteri bazında özetle, sabah toplantısı için tek sayfa olsun."
+          </p>
+          <p class="plan-line">Pro, Max, Ultra ve Team'de otomatik açık; Enterprise'ta kurum isterse açılır.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Connector'lar ve masaüstü uzantıları</h3>
+          <p>
+            <strong>Connector'lar</strong> Claude'u kullandığınız uygulamalara bağlar: Gmail, Google Drive, Microsoft 365 (SharePoint, OneDrive,
+            Outlook, Teams) ve dizindeki binden fazla bağlantı. Bu bağlantılar Anthropic'in bulutundan kurulur, yani şirket içi ağdaki
+            bir sunucuya ulaşamaz.
+          </p>
+          <p>
+            <strong>Masaüstü uzantıları</strong> ise bilgisayarınıza tek tıkla kurulan yerel MCP sunucularıdır (dosya biçimi .mcpb). Ayarlar,
+            Extensions bölümünden incelenmiş dizine göz atarak kurulur. Yerel çalıştıkları için iç ağdaki bir kaynağa erişmenin yolu genellikle budur.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Ege Tekstil, Drive'daki fiyat listelerini connector ile bağlar; satış ekibi "Bu müşteriye geçen yıl hangi fiyatı verdik?"
+            sorusunu dosya aramadan sorar.
+          </p>
+          <p class="plan-line">
+            Tüm planlarda (Free'de en çok 1 özel connector). Team ve Enterprise'ta connector'ları ve uzantıları yönetici açar.
+            Bkz. <a href="/wiki/araclar/connectors/">Connectors</a>, <a href="/wiki/mcp/nedir/">MCP nedir?</a>
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Projects ve hafıza</h3>
+          <p>
+            <strong>Projects</strong> bir iş için talimatı ve sabit belgeleri tek yerde tutar; o projede açtığınız her sohbet bunları bilir.
+            <strong>Hafıza</strong> önceki sohbetlerinizden tercihlerinizi ve bağlamı hatırlar; her projenin hafızası ayrıdır.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Kaya Mali Müşavirlik her büyük müşterisi için bir proje açar: şirket bilgileri, beyan takvimi ve yazışma tonu projede durur.
+            Personel her ay aynı açıklamayı yeniden yazmaz.
+          </p>
+          <p class="plan-line">
+            Tüm planlarda (Free'de en çok 5 proje). Hafıza Free, Pro, Max ve Ultra'da varsayılan açık; Team ve Enterprise'ta yönetici açar.
+            Bkz. <a href="/wiki/araclar/projects/">Projects</a>, <a href="/wiki/yetenekler/memory/">Hafıza</a>.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Sesli kullanım ve Quick Entry</h3>
+          <p>
+            <strong>Sesli konuşma</strong> (beta) masaüstünde de çalışır; Cowork ve Claude Code bölümlerinde yalnız dikte vardır.
+            Türkçe ses desteğini resmi kaynaklarda doğrulayamadık.
+          </p>
+          <p>
+            <strong>Quick Entry</strong> Mac'te Option tuşuna iki kez basınca her uygulamanın üstünde açılan küçük Claude penceresidir.
+            Ekran görüntüsü alabilir, açık bir pencereyi paylaşabilir ya da sesle yazdırabilirsiniz (dikte için macOS 14+).
+            Anthropic'in yardım sayfasına göre şu an yalnız macOS'ta.
+          </p>
+          <p class="example">
+            <span>Örnek</span> Excel'de bir tabloya bakarken Quick Entry'yi açıp pencereyi paylaşırsınız: "Bu tablodaki aylık sapmaları yorumla."
+          </p>
+          <p class="plan-line">Tüm planlarda. Free'de sesli konuşma Haiku ve tek bağlı araçla sınırlıdır. Bkz. <a href="/wiki/araclar/voice-mode/">Sesli Kullanım</a>.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Claude Code sekmesi</h3>
+          <p>
+            Masaüstü uygulamasında yazılımcılar için bir Claude Code bölümü de vardır. Kod yazmayan iş kullanıcılarının günlük işinde gerekmez;
+            yazılım ekibiniz varsa onlara yöneliktir.
+          </p>
+          <p class="plan-line">Ücretli planlarda. Bkz. <a href="/claude/claude-code/">Claude Code</a>.</p>
+        </div>
+
+        <h2>Hangi plan neyi açar?</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Masaüstünde</th><th>Free</th><th>Pro</th><th>Max / Ultra</th><th>Team</th><th>Enterprise</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Sohbet, Projects, hafıza, connector</td><td>Var (5 proje)</td><td>Var</td><td>Var</td><td>Var</td><td>Var</td></tr>
+              <tr><td>Masaüstü uzantıları</td><td>Var</td><td>Var</td><td>Var</td><td>Var, yönetici kısıtlayabilir</td><td>Var, yönetici kısıtlayabilir</td></tr>
+              <tr><td>Quick Entry (Mac)</td><td>Var</td><td>Var</td><td>Var</td><td>Var</td><td>Var</td></tr>
+              <tr><td>Cowork ve zamanlanmış görev</td><td>Yok</td><td>Var</td><td>Var</td><td>Var</td><td>Var, yönetici açması gerekebilir</td></tr>
+              <tr><td>Yerleşik tarayıcı</td><td>Yok</td><td>Var</td><td>Var</td><td>Var</td><td>Yönetici ayarıyla</td></tr>
+              <tr><td>Telefondan görev</td><td>Yok</td><td>Var</td><td>Var</td><td>Var</td><td>Kurum açarsa</td></tr>
+              <tr><td>Computer use (beta)</td><td>Yok</td><td>Var</td><td>Var</td><td>Yok</td><td>Yok</td></tr>
+              <tr><td>Research (derin araştırma)</td><td>Yok</td><td>Var</td><td>Var</td><td>Var</td><td>Var</td></tr>
+              <tr><td>Claude Code</td><td>Yok</td><td>Var</td><td>Var</td><td>Var</td><td>Var</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Kullanım limiti tüm bölümlerde ortaktır: sohbet, Cowork ve Claude Code aynı havuzdan harcar. Cowork çok adımlı çalıştığı için limiti
+          sohbetten hızlı tüketir. Masaüstünü her gün yoğun kullanacak birine ilk ay <strong>Max öneririz</strong>, çünkü Pro limitine çabuk çarpılır;
+          zorunlu değildir, ikinci aydan kullanıma göre Pro'ya inilebilir. Plan fiyatları ve karşılaştırma:
+          <a href="/wiki/temeller/planlar/">Claude Planları</a>. Ücretsiz başlamak için <a href="/claude-ucretsiz/">Claude ücretsiz kullanım rehberi</a>.
+        </p>
+
+        <h2>Güvenlik ve IT için kısa notlar</h2>
+        <ul>
+          <li><strong>Klasör sınırı sizde:</strong> Claude yalnız eklenen klasörlerle çalışır. Hassas klasörleri eklemeyin, çalışma için ayrı bir klasör açın.</li>
+          <li><strong>Uzantı izin listesi:</strong> Team ve Enterprise'ta yönetici, masaüstü uzantılarını onaylı listeyle sınırlayabilir. Liste varsayılan kapalıdır; açılınca onaysız uzantılar kaldırılır.</li>
+          <li><strong>Cihaz yönetimi:</strong> uzantı ayarları ve kuruluş geneli talimat, MDM ya da yerel yapılandırma dosyasıyla merkezden verilebilir.</li>
+          <li><strong>Ağ:</strong> uzak connector'lar Anthropic'in bulutundan bağlanır; güvenlik duvarı kuralları buna göre yazılır.</li>
+          <li><strong>Kişisel ve kurumsal hesap:</strong> şirket verisi için kişisel Free hesap yerine kurumun Team ya da Enterprise hesabı kullanılmalıdır; ticari planlarda veriler varsayılan olarak model eğitiminde kullanılmaz.</li>
+        </ul>
+        <p>
+          Kurulum izni, VPN, güvenlik duvarı ve dağıtım adımları için <a href="/wiki/araclar/claude-desktop/">Claude Desktop kurumsal kurulum</a>,
+          yönetici ayarları için <a href="/wiki/temeller/takim-ve-admin/">Takım ve Admin</a>, veri kuralları için
+          <a href="/wiki/temeller/gizlilik-kvkk/">Gizlilik ve KVKK</a>.
+        </p>
+
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <h2 class="section-title">Sık sorulanlar</h2>
+      <ol class="faq-list">
+        {faqs.map((f, i) => (
+          <li class="faq-item">
+            <details>
+              <summary>
+                <span class="faq-num">{String(i + 1).padStart(2, '0')}</span>
+                <span class="faq-q">{f.q}</span>
+                <span class="faq-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-a"><p>{f.a}</p></div>
+            </details>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow text-center">
+      <h2 class="section-title center">Cowork'ü kendi dosyalarınızla öğrenin</h2>
+      <p class="lead center">
+        Masaüstü uygulamasının gücü, işinize uyguladığınızda görünür. Zamana'nın Türkçe Claude eğitimlerinde
+        klasör düzeni, Projects, connector ve Cowork'ü sizin gerçek işiniz üzerinden kurarız.
+      </p>
+      <div class="hero-cta center">
+        <a href="/claude-egitimi/" class="btn btn--primary btn--lg">Claude eğitimini incele</a>
+        <a href="/claude-indir/" class="btn btn--secondary btn--lg">Uygulamayı indir</a>
+      </div>
+
+      <aside class="source-note" aria-label="Kaynak ve not">
+        <span class="source-note__label">Kaynak ve not</span>
+        <p>
+          Bu sayfa, Zamana tarafından hazırlanmış Türkçe bir rehberdir. Claude, Claude Desktop ve ilgili markalar Anthropic'e aittir.
+          Resmi sayfa: <a href="https://claude.com/download" target="_blank" rel="noopener">claude.com/download</a>.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .hero-cta {
+    display: flex;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+    margin-top: var(--s-4);
+  }
+  .hero-cta.center { justify-content: center; }
+
+  .tldr-card {
+    background: var(--c-white);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    padding: var(--s-4) var(--s-5);
+    box-shadow: var(--sh-mid);
+  }
+  .tldr-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: var(--s-2);
+  }
+  .tldr-card p { margin: 0; color: var(--c-text); line-height: 1.7; }
+  .tldr-card strong { color: var(--c-navy); }
+
+  .lead.center { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
+
+  .guide h2 {
+    color: var(--c-navy);
+    font-size: 1.5rem;
+    margin: var(--s-6) 0 var(--s-3);
+    line-height: 1.3;
+  }
+  .guide h2:first-child { margin-top: 0; }
+  .guide p {
+    color: var(--c-text-muted);
+    line-height: 1.8;
+    margin-bottom: var(--s-3);
+  }
+  .guide strong { color: var(--c-text); }
+  .guide a { color: var(--c-gold-text); text-decoration: underline; }
+  .guide ul {
+    margin: 0 0 var(--s-4);
+    padding-left: 1.2rem;
+    display: grid;
+    gap: var(--s-2);
+  }
+  .guide li { color: var(--c-text-muted); line-height: 1.7; }
+  .guide li strong { color: var(--c-navy); }
+
+  .feature {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    padding: var(--s-4) var(--s-5);
+    margin-bottom: var(--s-4);
+  }
+  .feature:hover { border-color: var(--c-border-gold); }
+  .feature h3 { color: var(--c-navy); font-size: 1.2rem; margin: 0 0 var(--s-2); }
+  .feature p:last-child { margin-bottom: 0; }
+  .example {
+    background: var(--c-bg-subtle);
+    border-left: 3px solid var(--c-gold);
+    padding: var(--s-2) var(--s-3);
+    border-radius: 0 var(--r-card) var(--r-card) 0;
+  }
+  .example span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: 2px;
+  }
+  .plan-line { font-size: 0.9rem; font-weight: 600; }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 var(--s-3); }
+  .guide table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    font-size: 0.92rem;
+  }
+  .guide th, .guide td {
+    text-align: left;
+    padding: var(--s-2) var(--s-3);
+    border-bottom: 1px solid var(--c-border);
+    color: var(--c-text-muted);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .guide th { color: var(--c-navy); font-weight: 700; background: var(--c-bg-subtle); }
+  .guide tr:last-child td { border-bottom: none; }
+
+  .faq-list { list-style: none; display: grid; gap: var(--s-3); margin-top: var(--s-4); }
+  .faq-item {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    overflow: hidden;
+  }
+  .faq-item:hover { border-color: var(--c-border-gold); }
+  .faq-item summary {
+    display: grid;
+    grid-template-columns: 48px 1fr 32px;
+    gap: var(--s-3);
+    align-items: center;
+    padding: var(--s-4);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { background: var(--c-bg-subtle); }
+  .faq-num { font-weight: 800; font-size: 1.05rem; color: var(--c-gold); }
+  .faq-q { font-weight: 600; color: var(--c-navy); line-height: 1.45; }
+  .faq-toggle { font-size: 1.6rem; color: var(--c-gold-text); text-align: center; font-weight: 300; line-height: 1; transition: transform var(--t-fast); }
+  .faq-item details[open] .faq-toggle { transform: rotate(45deg); }
+  .faq-a { padding: 0 var(--s-4) var(--s-4) calc(var(--s-4) + 48px + var(--s-3)); }
+  .faq-a p { color: var(--c-text-muted); line-height: 1.75; margin: 0; }
+
+  .source-note {
+    margin-top: var(--s-6);
+    padding: var(--s-4);
+    border-top: 1px solid var(--c-border);
+    text-align: left;
+  }
+  .source-note__label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: var(--s-2);
+  }
+  .source-note p { color: var(--c-text-muted); font-size: 0.9rem; line-height: 1.7; margin: 0; }
+  .source-note a { color: var(--c-gold-text); text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .faq-item summary { grid-template-columns: 36px 1fr 28px; gap: var(--s-2); padding: var(--s-3); }
+    .faq-a { padding: 0 var(--s-3) var(--s-3) var(--s-3); }
+    .guide h2 { font-size: 1.3rem; }
+    .feature { padding: var(--s-3) var(--s-4); }
+  }
+</style>

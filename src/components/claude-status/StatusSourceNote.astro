@@ -1,0 +1,39 @@
+---
+/**
+ * Source / non-affiliation note for the Claude status pages.
+ *   inline  under the live data
+ *   footer  closing note at the end of the page
+ */
+interface Props {
+  variant?: 'inline' | 'footer';
+}
+const { variant = 'inline' } = Astro.props;
+---
+
+{variant === 'inline' ? (
+  <p class="cs-source">
+    Resmi olmayan Türkçe görünüm. Veriler Anthropic'in resmi durum sayfası
+    <a href="https://status.claude.com" target="_blank" rel="noopener">status.claude.com</a>
+    üzerinden her 60 saniyede bir alınır. Zamana, Anthropic'ten bağımsız bir şirkettir ve Anthropic adına
+    konuşmaz. Claude, Anthropic'in ticari markasıdır.
+  </p>
+) : (
+  <aside class="cs-source cs-source--footer">
+    <p>
+      Bu sayfa, Zamana'nın hazırladığı resmi olmayan bir Türkçe görünümdür. Durum verileri Anthropic'in
+      resmi durum sayfası <a href="https://status.claude.com" target="_blank" rel="noopener">status.claude.com</a>
+      üzerinden alınır; bir çelişki olursa resmi sayfa geçerlidir. Zamana, Anthropic'ten bağımsız bir
+      şirkettir, Anthropic'in bayisi ya da temsilcisi değildir. Claude, Anthropic'in ticari markasıdır.
+    </p>
+  </aside>
+)}
+
+<style is:global>
+  .cs-source { margin: var(--s-4) 0 0; font-size: 0.85rem; line-height: 1.6; color: var(--c-text-muted); }
+  .cs-source a { color: var(--c-gold-text); text-decoration: underline; }
+  .cs-source--footer {
+    margin-top: var(--s-5); padding: var(--s-3) var(--s-4);
+    border-top: 1px solid var(--c-border); background: var(--c-cream); border-radius: var(--r-card);
+  }
+  .cs-source--footer p { margin: 0; }
+</style>

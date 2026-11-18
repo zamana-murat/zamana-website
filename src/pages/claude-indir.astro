@@ -1,0 +1,486 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE_URL } from '../data/seo';
+
+const pageUrl = `${SITE_URL}/claude-indir/`;
+
+const DOWNLOAD = 'https://claude.com/download';
+const MS_STORE = 'https://apps.microsoft.com/detail/9P6K58THS811';
+const APP_STORE = 'https://apps.apple.com/tr/app/claude-by-anthropic/id6473753684';
+const GOOGLE_PLAY = 'https://play.google.com/store/apps/details?id=com.anthropic.claude';
+const LINUX_DOCS = 'https://code.claude.com/docs/en/desktop-linux';
+const CHROME_STORE = 'https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn';
+const WEB = 'https://claude.ai';
+
+const platforms = [
+  {
+    name: 'Windows',
+    req: 'Windows 10 veya üstü (x64 ve ARM64)',
+    desc: 'Masaüstü uygulaması: sohbet, Cowork, connector ve masaüstü uzantıları.',
+    links: [
+      { label: 'Windows için indir', href: DOWNLOAD, primary: true },
+      { label: 'Microsoft Store', href: MS_STORE },
+    ],
+  },
+  {
+    name: 'macOS',
+    req: 'macOS 13 (Ventura) veya üstü, Apple Silicon ve Intel',
+    desc: 'Masaüstü uygulaması. Mac\'e özel Quick Entry ile her uygulamadan hızlı erişim.',
+    links: [{ label: 'Mac için indir', href: DOWNLOAD, primary: true }],
+  },
+  {
+    name: 'iPhone ve iPad',
+    req: 'iOS 18.0 veya iPadOS 18.0 ve üstü',
+    desc: 'App Store\'da "Claude by Anthropic", satıcı Anthropic PBC. Ücretsiz indirilir.',
+    links: [{ label: 'App Store', href: APP_STORE, primary: true }],
+  },
+  {
+    name: 'Android',
+    req: 'Uyumluluk Google Play sayfasında cihazınıza göre gösterilir',
+    desc: 'Google Play\'de "Claude by Anthropic". Ücretsiz indirilir.',
+    links: [{ label: 'Google Play', href: GOOGLE_PLAY, primary: true }],
+  },
+  {
+    name: 'Web',
+    req: 'Güncel bir tarayıcı yeterli',
+    desc: 'Kurulum gerekmez. Kurumsal bilgisayarda kurulum izni yoksa en hızlı yol.',
+    links: [{ label: 'claude.ai\'yi aç', href: WEB, primary: true }],
+  },
+  {
+    name: 'Linux (beta)',
+    req: 'Ubuntu 22.04+ veya Debian 12+, x64 ve arm64',
+    desc: 'Anthropic\'in apt deposundan kurulur. Computer use ve dikte henüz yok.',
+    links: [{ label: 'Linux kurulum belgesi', href: LINUX_DOCS, primary: true }],
+  },
+];
+
+const faqs = [
+  {
+    q: "Claude'u indirmek ücretli mi?",
+    a: "Hayır. Masaüstü ve mobil uygulamalar ücretsiz indirilir ve Free planla kullanılabilir. Ücret yalnız Pro, Max, Ultra gibi ücretli bir plana geçerseniz söz konusu olur.",
+  },
+  {
+    q: "Claude PC'ye nasıl indirilir?",
+    a: "claude.com/download sayfasından Windows sürümünü indirin, kurulum dosyasını açın ve Claude'u Başlat menüsünden başlatın. Microsoft Store üzerinden de kurabilirsiniz. Windows 10 veya üstü gerekir.",
+  },
+  {
+    q: "Claude APK dosyası güvenli mi?",
+    a: "Android için tek güvenli kaynak Google Play'deki resmi uygulamadır. APK aynası sitelerden indirilen dosyalar değiştirilmiş olabilir; hesabınızı ve cihazınızdaki veriyi riske atar. Anthropic'in resmi indirme sayfası ayrı bir APK dosyası sunmaz.",
+  },
+  {
+    q: "Mac'te hangi macOS sürümü gerekir?",
+    a: "Anthropic'in kurulum sayfasına göre macOS 13 (Ventura) veya üstü. Computer use özelliği için macOS 15 ve üstü gerekir.",
+  },
+  {
+    q: "Claude uygulaması Türkçe mi?",
+    a: "Claude, Türkçe yazdığınızda Türkçe yanıt verir. App Store sayfası desteklenen diller arasında Türkçeyi listeler. Masaüstü ve web arayüzünün menü dili platforma göre değişebilir; menüler İngilizce kalsa da sohbet Türkçe yürür.",
+  },
+  {
+    q: "Uygulama indirmeden Claude kullanılabilir mi?",
+    a: "Evet. claude.ai adresinden tarayıcıyla kullanabilirsiniz. Cowork'ün yerel klasör erişimi, computer use ve masaüstü uzantıları için ise masaüstü uygulaması gerekir.",
+  },
+  {
+    q: "Claude Windows 7 veya 8'de çalışır mı?",
+    a: "Hayır. Masaüstü uygulaması Windows 10 veya üstünü ister. Eski bir sistemde web sürümünü güncel bir tarayıcıyla kullanabilirsiniz.",
+  },
+  {
+    q: "Telefondan abonelik almak farklı mı?",
+    a: "Mobil mağazadan satın alırsanız fiyat App Store ya da Google Play üzerinden TL ile gösterilir ve web fiyatından farklı olabilir. Aynı hesapla tüm cihazlarda kullanırsınız.",
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Claude İndir', item: pageUrl },
+  ],
+};
+---
+
+<Layout
+  title="Claude İndir: Windows, Mac, iOS ve Android | Zamana"
+  description="Claude'u resmi kaynaktan indirin: Windows ve Mac masaüstü uygulaması, iPhone ve Android. Sistem gereksinimleri, kurulum adımları ve sahte APK uyarısı."
+  ogImage="/og/claude-indir.png"
+  skipAutoBreadcrumb={true}
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Claude İndir</span>
+      <h1>Claude'u indirin: yalnız resmi kaynaklardan</h1>
+      <p class="lead">
+        Windows, Mac, iPhone, Android ve web. Bu sayfadaki her düğme Anthropic'in kendi indirme sayfasına
+        ya da resmi uygulama mağazasına gider.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <div class="tldr-card">
+        <span class="tldr-label">Kısaca</span>
+        <p>
+          Claude'un masaüstü uygulaması <strong>claude.com/download</strong> adresinden, mobil uygulaması
+          <strong>App Store</strong> ve <strong>Google Play</strong>'den ücretsiz indirilir. Uygulamanın adı mağazalarda
+          "Claude by Anthropic"tır. Windows 10 ve üstü, macOS 13 ve üstü, iOS 18 ve üstü gerekir. Hesap tektir:
+          bir cihazda kayıt olur, hepsinde aynı hesapla girersiniz. APK aynası sitelerden ve "Claude PC indir" diye
+          reklam veren üçüncü taraf sitelerden indirmeyin.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title center">Platformunuzu seçin</h2>
+      <p class="lead center">
+        Gereksinimler 18 Kasım 2026'da Anthropic'in kurulum sayfası ve mağaza kayıtlarından alındı.
+      </p>
+      <div class="platform-grid">
+        {platforms.map((p) => (
+          <div class="platform-card">
+            <h3>{p.name}</h3>
+            <p class="platform-req">{p.req}</p>
+            <p class="platform-desc">{p.desc}</p>
+            <div class="platform-links">
+              {p.links.map((l) => (
+                <a
+                  href={l.href}
+                  class={l.primary ? 'btn btn--primary' : 'btn btn--secondary'}
+                  target="_blank"
+                  rel="noopener"
+                >{l.label}</a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <p class="more-link center">
+        Claude in Chrome tarayıcı eklentisi ayrıca <a href={CHROME_STORE} target="_blank" rel="noopener">Chrome Web Store</a>'da,
+        yayıncısı Anthropic. Yalnız ücretli planlarda ve masaüstü Google Chrome'da çalışır.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow">
+      <article class="guide">
+
+        <h2>Sistem gereksinimleri</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Platform</th><th>Gereksinim</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Windows</td><td>Windows 10 veya üstü; x64 ve ARM64 sürümü ayrı</td></tr>
+              <tr><td>macOS</td><td>macOS 13 (Ventura) veya üstü; computer use için macOS 15 ve üstü</td></tr>
+              <tr><td>Linux (beta)</td><td>Ubuntu 22.04+ veya Debian 12+, x64 veya arm64; Cowork için donanım sanallaştırma (KVM) açık olmalı</td></tr>
+              <tr><td>iPhone / iPad</td><td>iOS 18.0 / iPadOS 18.0 veya üstü</td></tr>
+              <tr><td>Android</td><td>Google Play sayfası cihazınızın uyumlu olup olmadığını gösterir</td></tr>
+              <tr><td>RAM ve disk</td><td>Windows ve Mac için genel bir değer yayımlanmıyor. Linux'ta Cowork için en az 8 GB RAM ve yaklaşık 25 GB boş disk</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Güncel liste: <a href="https://support.claude.com/en/articles/10065433-installing-claude-desktop" target="_blank" rel="noopener">Anthropic kurulum sayfası</a>.
+        </p>
+
+        <h2>Kurulum adımları</h2>
+
+        <h3>Windows</h3>
+        <ol class="steps">
+          <li><a href={DOWNLOAD} target="_blank" rel="noopener">claude.com/download</a> sayfasında Windows'u seçin (ARM işlemcili bir bilgisayarınız varsa ARM64 sürümünü).</li>
+          <li>İndirilen kurulum dosyasını açın, kurulumu tamamlayın.</li>
+          <li>Claude'u Başlat menüsünden açın ve hesabınızla giriş yapın.</li>
+        </ol>
+        <p>Şirket bilgisayarında kurulum izni yoksa IT ekibinizden onay isteyin ya da bu arada web sürümünü kullanın.</p>
+
+        <h3>macOS</h3>
+        <ol class="steps">
+          <li><a href={DOWNLOAD} target="_blank" rel="noopener">claude.com/download</a> sayfasından Mac sürümünü indirin (Apple Silicon ve Intel için tek dosya).</li>
+          <li>İndirilen dosyayı açıp kurulumu tamamlayın.</li>
+          <li>Claude'u Uygulamalar (Applications) klasöründen başlatın ve giriş yapın.</li>
+        </ol>
+
+        <h3>iPhone ve iPad</h3>
+        <ol class="steps">
+          <li>App Store'da <a href={APP_STORE} target="_blank" rel="noopener">Claude by Anthropic</a> sayfasını açın; satıcının <strong>Anthropic PBC</strong> olduğunu kontrol edin.</li>
+          <li>"Al" düğmesiyle indirin, uygulamayı açın, mevcut hesabınızla girin ya da yeni hesap oluşturun.</li>
+        </ol>
+
+        <h3>Android</h3>
+        <ol class="steps">
+          <li>Google Play'de <a href={GOOGLE_PLAY} target="_blank" rel="noopener">Claude by Anthropic</a> sayfasını açın; geliştiricinin Anthropic olduğunu kontrol edin.</li>
+          <li>"Yükle" düğmesiyle kurun, açın ve giriş yapın.</li>
+        </ol>
+
+        <h3>Web</h3>
+        <p>
+          <a href={WEB} target="_blank" rel="noopener">claude.ai</a> adresine gidin ve giriş yapın. Kurulum gerekmez.
+          Hesap açma adımları için <a href="/wiki/temeller/ilk-kurulum/">İlk Kurulum</a>, ücretsiz kullanım için
+          <a href="/claude-ucretsiz/">Claude ücretsiz kullanım rehberi</a>.
+        </p>
+
+        <h2>Sahte indirme sitelerine dikkat</h2>
+        <div class="warn-card">
+          <p>
+            "Claude indir", "Claude PC" ya da "Claude APK" aramalarında resmi olmayan siteler de çıkar. Bunlardan indirilen dosyalar
+            değiştirilmiş, reklam yazılımı eklenmiş ya da hesap bilgilerinizi toplamak için hazırlanmış olabilir.
+          </p>
+          <ul>
+            <li><strong>Masaüstü için tek adres:</strong> claude.com/download (ya da Microsoft Store'daki resmi kayıt).</li>
+            <li><strong>Mobil için:</strong> yalnız App Store ve Google Play. Yayıncı adı Anthropic olmalı.</li>
+            <li><strong>APK aynası siteleri kullanmayın.</strong> Anthropic'in indirme sayfası ayrı bir APK dosyası sunmaz.</li>
+            <li><strong>Tarayıcı eklentisinde yayıncıyı kontrol edin.</strong> Adında "Claude" geçen her eklenti Anthropic'in değildir.</li>
+            <li><strong>"Ücretsiz Pro" ya da "ucuz hesap" vaatlerine güvenmeyin.</strong> Satın alma yalnız claude.ai ya da resmi mağaza üzerinden yapılır.</li>
+          </ul>
+        </div>
+
+        <h2>Sık karşılaşılan sorunlar</h2>
+        <ul>
+          <li><strong>Kurulum engellendi:</strong> şirket bilgisayarlarında yönetici izni gerekebilir. IT'ye başvurun; kurumsal dağıtım için <a href="/wiki/araclar/claude-desktop/">Claude Desktop kurumsal kurulum</a> sayfasına bakın.</li>
+          <li><strong>Mac'te uygulama açılmıyor:</strong> macOS sürümünüz 13'ün altındaysa önce sistemi güncelleyin.</li>
+          <li><strong>Google Play "uyumlu değil" diyor:</strong> Android sürümünüz eski olabilir. Sistem güncellemesini kontrol edin ya da tarayıcıdan claude.ai'yi kullanın.</li>
+          <li><strong>Cowork görünmüyor:</strong> Cowork ücretli planlardadır; Free hesapta görünmez.</li>
+          <li><strong>Giriş yapamıyorum:</strong> kayıt olduğunuz yöntemle girin (Google mı, e-posta mı). E-posta doğrulama maili spam klasörüne düşmüş olabilir.</li>
+          <li><strong>VPN'de bağlantı sorunu:</strong> bazı kurumsal VPN'ler trafiği kısıtlar; IT ile konuşun.</li>
+        </ul>
+        <p>
+          Daha fazlası: <a href="/wiki/temeller/kurulum-sorun-giderme/">Kurulum ve sorun giderme</a>.
+          Masaüstü uygulamasıyla neler yapabileceğinizi <a href="/claude-masaustu/">Claude masaüstü rehberinde</a> anlatıyoruz.
+        </p>
+
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <h2 class="section-title">Sık sorulanlar</h2>
+      <ol class="faq-list">
+        {faqs.map((f, i) => (
+          <li class="faq-item">
+            <details>
+              <summary>
+                <span class="faq-num">{String(i + 1).padStart(2, '0')}</span>
+                <span class="faq-q">{f.q}</span>
+                <span class="faq-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-a"><p>{f.a}</p></div>
+            </details>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container container-narrow text-center">
+      <h2 class="section-title center">Kurdunuz, şimdi işinize yerleştirin</h2>
+      <p class="lead center">
+        Uygulamayı kurmak işin kolay kısmı. Zamana'nın Türkçe Claude eğitimleri, kendi dosyalarınız ve
+        görevleriniz üzerinden Claude'u günlük işinize kalıcı olarak yerleştirmenize yardım eder.
+      </p>
+      <div class="hero-cta center">
+        <a href="/claude-egitimi/" class="btn btn--primary btn--lg">Claude eğitimini incele</a>
+        <a href="/programlar/" class="btn btn--secondary btn--lg">Programları gör</a>
+      </div>
+
+      <aside class="source-note" aria-label="Kaynak ve not">
+        <span class="source-note__label">Kaynak ve not</span>
+        <p>
+          Bu sayfa, Zamana tarafından hazırlanmış Türkçe bir rehberdir. Claude, uygulamalar ve ilgili markalar Anthropic'e aittir.
+          Zamana uygulama dağıtmaz; tüm bağlantılar resmi kaynaklara gider. Resmi sayfa:
+          <a href={DOWNLOAD} target="_blank" rel="noopener">claude.com/download</a>.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .hero-cta {
+    display: flex;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+    margin-top: var(--s-4);
+  }
+  .hero-cta.center { justify-content: center; }
+
+  .tldr-card {
+    background: var(--c-white);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    padding: var(--s-4) var(--s-5);
+    box-shadow: var(--sh-mid);
+  }
+  .tldr-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: var(--s-2);
+  }
+  .tldr-card p { margin: 0; color: var(--c-text); line-height: 1.7; }
+  .tldr-card strong { color: var(--c-navy); }
+
+  .lead.center { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
+
+  .platform-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s-4);
+    max-width: 1000px;
+    margin: var(--s-5) auto 0;
+  }
+  @media (max-width: 900px) { .platform-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .platform-grid { grid-template-columns: 1fr; } }
+  .platform-card {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    padding: var(--s-5);
+    display: flex;
+    flex-direction: column;
+  }
+  .platform-card:hover { border-color: var(--c-border-gold); }
+  .platform-card h3 { color: var(--c-navy); font-size: 1.25rem; margin: 0 0 var(--s-2); }
+  .platform-req {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--c-gold-text);
+    margin: 0 0 var(--s-2);
+    line-height: 1.5;
+  }
+  .platform-desc { color: var(--c-text-muted); line-height: 1.65; margin: 0 0 var(--s-4); flex: 1; }
+  .platform-links { display: flex; gap: var(--s-2); flex-wrap: wrap; }
+
+  .more-link { margin-top: var(--s-4); color: var(--c-text-muted); }
+  .more-link.center { text-align: center; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .more-link a { color: var(--c-gold-text); text-decoration: underline; }
+
+  .guide h2 {
+    color: var(--c-navy);
+    font-size: 1.5rem;
+    margin: var(--s-6) 0 var(--s-3);
+    line-height: 1.3;
+  }
+  .guide h2:first-child { margin-top: 0; }
+  .guide h3 { color: var(--c-navy); font-size: 1.15rem; margin: var(--s-4) 0 var(--s-2); }
+  .guide p {
+    color: var(--c-text-muted);
+    line-height: 1.8;
+    margin-bottom: var(--s-3);
+  }
+  .guide strong { color: var(--c-text); }
+  .guide a { color: var(--c-gold-text); text-decoration: underline; }
+  .guide ul, .guide ol.steps {
+    margin: 0 0 var(--s-4);
+    padding-left: 1.2rem;
+    display: grid;
+    gap: var(--s-2);
+  }
+  .guide li { color: var(--c-text-muted); line-height: 1.7; }
+  .guide li strong { color: var(--c-navy); }
+  .guide ol.steps { padding-left: 1.4rem; }
+  .guide ol.steps li::marker { color: var(--c-gold-text); font-weight: 800; }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 var(--s-3); }
+  .guide table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    font-size: 0.95rem;
+  }
+  .guide th, .guide td {
+    text-align: left;
+    padding: var(--s-2) var(--s-3);
+    border-bottom: 1px solid var(--c-border);
+    color: var(--c-text-muted);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .guide th { color: var(--c-navy); font-weight: 700; background: var(--c-bg-subtle); }
+  .guide tr:last-child td { border-bottom: none; }
+
+  .warn-card {
+    background: var(--c-white);
+    border: 1px solid var(--c-border-gold);
+    border-left: 4px solid var(--c-gold);
+    border-radius: var(--r-card);
+    padding: var(--s-4) var(--s-5);
+    margin-bottom: var(--s-4);
+  }
+  .warn-card ul { margin-bottom: 0; }
+
+  .faq-list { list-style: none; display: grid; gap: var(--s-3); margin-top: var(--s-4); }
+  .faq-item {
+    background: var(--c-white);
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-card);
+    overflow: hidden;
+  }
+  .faq-item:hover { border-color: var(--c-border-gold); }
+  .faq-item summary {
+    display: grid;
+    grid-template-columns: 48px 1fr 32px;
+    gap: var(--s-3);
+    align-items: center;
+    padding: var(--s-4);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { background: var(--c-bg-subtle); }
+  .faq-num { font-weight: 800; font-size: 1.05rem; color: var(--c-gold); }
+  .faq-q { font-weight: 600; color: var(--c-navy); line-height: 1.45; }
+  .faq-toggle { font-size: 1.6rem; color: var(--c-gold-text); text-align: center; font-weight: 300; line-height: 1; transition: transform var(--t-fast); }
+  .faq-item details[open] .faq-toggle { transform: rotate(45deg); }
+  .faq-a { padding: 0 var(--s-4) var(--s-4) calc(var(--s-4) + 48px + var(--s-3)); }
+  .faq-a p { color: var(--c-text-muted); line-height: 1.75; margin: 0; }
+
+  .source-note {
+    margin-top: var(--s-6);
+    padding: var(--s-4);
+    border-top: 1px solid var(--c-border);
+    text-align: left;
+  }
+  .source-note__label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-gold-text);
+    margin-bottom: var(--s-2);
+  }
+  .source-note p { color: var(--c-text-muted); font-size: 0.9rem; line-height: 1.7; margin: 0; }
+  .source-note a { color: var(--c-gold-text); text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .faq-item summary { grid-template-columns: 36px 1fr 28px; gap: var(--s-2); padding: var(--s-3); }
+    .faq-a { padding: 0 var(--s-3) var(--s-3) var(--s-3); }
+    .guide h2 { font-size: 1.3rem; }
+  }
+</style>
