@@ -595,3 +595,53 @@ export function toTurkeyTime(text: string, year = new Date().getUTCFullYear()): 
   });
   return out;
 }
+
+// ---------------------------------------------------------------------------
+// Lite payload: the header status button on every page (GET /api/claude-status?lite=1)
+// ---------------------------------------------------------------------------
+export interface StatusLite {
+  ok: true;
+  /** Button color bucket: worst of the overall level and any active incident. */
+  level: Level;
+  /** Short Turkish headline for the note under the button. */
+  title: string;
+  /** Affected services (Turkish labels), worst first. */
+  affected: { name: string; statusLabel: string; level: Level }[];
+  /** Active incident titles (Turkish when translated). */
+  incidents: string[];
+  /** In-progress maintenance titles. */
+  maintenances: string[];
+  stale: boolean;
+  fetchedAt: string;
+}
+
+const LITE_TITLE: Record<Level, string> = {
+  operational: 'Tüm hizmetler çalışıyor',
+  maintenance: "Claude'da planlı bakım sürüyor",
+  degraded: "Claude'da performans düşüşü var",
+  partial: "Claude'da kısmi kesinti var",
+  major: "Claude'da büyük kesinti var",
+  unknown: 'Durum bilgisi alınamadı',
+};
+
+export function toLite(p: StatusPayload): StatusLite {
+  const incidents = p.incidents.filter((i) => !i.resolvedAt);
+  const activeMaint = p.maintenances.filter((m) => m.status === 'in_progress' || m.status === 'verifying');
+  let level: Level = p.overall.level;
+  // An open incident with impact but all components green: still show a warning color.
+  for (const i of incidents) level = worstLevel(level, i.impact === 'none' ? 'operational' : i.level === 'unknown' ? 'degraded' : i.level);
+  if (activeMaint.length) level = worstLevel(level, 'maintenance');
+  const affected = [...p.answer.affected]
+    .sort((a, b) => LEVEL_RANK[b.level] - LEVEL_RANK[a.level])
+    .map(({ name, statusLabel, level: l }) => ({ name, statusLabel, level: l }));
+  return {
+    ok: true,
+    level,
+    title: LITE_TITLE[level],
+    affected,
+    incidents: incidents.map((i) => i.titleTr || i.title),
+    maintenances: activeMaint.map((m) => m.titleTr || m.title),
+    stale: p.stale,
+    fetchedAt: p.fetchedAt,
+  };
+}

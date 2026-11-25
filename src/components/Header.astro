@@ -110,8 +110,23 @@ const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor
           class={`nav-link${isActive(l.href) ? ' nav-link--active' : ''}`}
         >{l.label}</a>
       ))}
-      <a href="/iletisim/" class="btn btn--primary nav-cta">Görüşme Al</a>
     </nav>
+
+    <!-- Live Claude status (all pages). Color and note are filled by the script below from /api/claude-status?lite=1. -->
+    <div class="status-cta" data-status-cta data-level="loading">
+      <a href="/claude-status/" class="status-cta__btn" aria-describedby="status-cta-note" title="Claude altyapı durumu: kontrol ediliyor">
+        <span class="status-cta__dot" aria-hidden="true"></span>
+        <svg class="status-cta__icon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><rect x="2.5" y="2" width="11" height="5" rx="1.2"/><rect x="2.5" y="9" width="11" height="5" rx="1.2"/></g><g fill="currentColor"><circle cx="5" cy="4.5" r=".9"/><circle cx="5" cy="11.5" r=".9"/></g><path d="M8.5 4.5h2.5M8.5 11.5h2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="status-cta__label">Altyapı durumu</span>
+        <span class="status-cta__label-short" aria-hidden="true">Durum</span>
+      </a>
+      <div class="status-cta__note" id="status-cta-note" role="status" aria-live="polite" hidden>
+        <button type="button" class="status-cta__close" aria-label="Bilgiyi kapat" data-status-close>&times;</button>
+        <p class="status-cta__title" data-status-title></p>
+        <p class="status-cta__text" data-status-text></p>
+        <a href="/claude-status/" class="status-cta__more">Ayrıntılar ve güncellemeler &rarr;</a>
+      </div>
+    </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="nav-mobile">
       <span></span><span></span><span></span>
@@ -221,11 +236,107 @@ const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor
     outline-offset: 3px;
     border-radius: 4px;
   }
-  .nav-cta {
-    margin-left: var(--s-2);
-    padding: 0.55rem 1.1rem;
-    font-size: 0.92rem;
+  /* ── Live Claude status button (replaces the old CTA) ── */
+  .nav-desktop { margin-left: auto; }
+  .status-cta {
+    --st: #9aa5b8; --st-bg: #eef1f5; --st-tx: #3d4a60; --st-bd: #d9dee7;
+    position: relative;
+    flex-shrink: 0;
   }
+  .status-cta[data-level="operational"] { --st: #2e9e4f; --st-bg: #e6f5ea; --st-tx: #14592b; --st-bd: #b9e2c5; }
+  .status-cta[data-level="maintenance"] { --st: #2f6fde; --st-bg: #e3ecfd; --st-tx: #1d4c9a; --st-bd: #b8cdf6; }
+  .status-cta[data-level="degraded"]    { --st: #d4a514; --st-bg: #fff6d6; --st-tx: #6b5300; --st-bd: #f0d982; }
+  .status-cta[data-level="partial"]     { --st: #e8730c; --st-bg: #ffead8; --st-tx: #8a3c00; --st-bd: #f6c79c; }
+  .status-cta[data-level="major"]       { --st: #d83131; --st-bg: #fde3e2; --st-tx: #9b1c1c; --st-bd: #f4b0ae; }
+  .status-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.95rem;
+    border: 1px solid var(--st-bd);
+    border-radius: 999px;
+    background: var(--st-bg);
+    color: var(--st-tx);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.2s;
+  }
+  .status-cta__btn:hover { box-shadow: 0 2px 8px rgba(15, 40, 85, 0.12); }
+  .status-cta__btn:focus-visible { outline: 2px solid var(--st); outline-offset: 3px; }
+  .status-cta__dot {
+    position: relative;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--st);
+    flex-shrink: 0;
+  }
+  .status-cta:is([data-level="degraded"], [data-level="partial"], [data-level="major"]) .status-cta__dot::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid var(--st);
+    animation: status-cta-pulse 1.6s ease-out infinite;
+  }
+  @keyframes status-cta-pulse {
+    from { transform: scale(0.5); opacity: 0.9; }
+    to { transform: scale(1.4); opacity: 0; }
+  }
+  .status-cta__icon { flex-shrink: 0; }
+  .status-cta__label-short { display: none; }
+  .status-cta__note {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: min(330px, calc(100vw - 32px));
+    padding: 0.8rem 2.2rem 0.8rem 0.95rem;
+    background: var(--st-bg);
+    color: var(--st-tx);
+    border: 1px solid var(--st-bd);
+    border-left: 4px solid var(--st);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(15, 40, 85, 0.14);
+    font-size: 0.86rem;
+    line-height: 1.45;
+    z-index: 60;
+  }
+  .status-cta__note[hidden] { display: none; }
+  .status-cta__note::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 26px;
+    width: 10px;
+    height: 10px;
+    background: var(--st-bg);
+    border-top: 1px solid var(--st-bd);
+    border-left: 1px solid var(--st-bd);
+    transform: rotate(45deg);
+  }
+  .status-cta__title { margin: 0 0 0.25rem; font-weight: 700; }
+  .status-cta__text { margin: 0 0 0.45rem; }
+  .status-cta__text:empty { display: none; }
+  .status-cta__more { color: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  .status-cta__close {
+    position: absolute;
+    top: 0.35rem;
+    right: 0.45rem;
+    width: 28px;
+    height: 28px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .status-cta__close:hover { background: rgba(0, 0, 0, 0.06); }
+  .status-cta__close:focus-visible { outline: 2px solid var(--st); outline-offset: 1px; }
 
   /* ── Mega menus (desktop) ───────────────────────── */
   .mega__trigger {
@@ -452,14 +563,22 @@ const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor
   @media (max-width: 1180px) {
     .nav-desktop { gap: var(--s-3); }
     .nav-link { font-size: 0.95rem; }
-    .nav-cta { margin-left: 0; padding: 0.5rem 0.95rem; }
+    .status-cta__btn { padding: 0.45rem 0.8rem; }
   }
   @media (max-width: 1040px) {
     .nav-desktop { display: none; }
     .nav-toggle { display: flex; }
+    .status-cta { margin-left: auto; }
+  }
+  @media (max-width: 480px) {
+    .site-header__inner { gap: var(--s-3); }
+    .status-cta__btn { padding: 0.4rem 0.65rem; font-size: 0.85rem; }
+    .status-cta__label { display: none; }
+    .status-cta__label-short { display: inline; }
   }
   @media (prefers-reduced-motion: reduce) {
-    .mega__panel, .mega__chev, .mega__arrow { transition: none !important; }
+    .mega__panel, .mega__chev, .mega__arrow, .status-cta__btn { transition: none !important; }
+    .status-cta__dot::after { animation: none !important; }
   }
 </style>
 
@@ -534,4 +653,92 @@ const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor
       if (m.isOpen() && !m.root.contains(e.target as Node)) m.setOpen(false);
     });
   });
+
+  // ── Live Claude status button ─────────────────────────────
+  // One small request per page view at most (sessionStorage 60 s + HTTP max-age 60), then every
+  // 60 s only while the tab is visible. The API serves a shared edge cache, never per-visitor upstream calls.
+  (() => {
+    const root = document.querySelector<HTMLElement>('[data-status-cta]');
+    if (!root) return;
+    const btn = root.querySelector<HTMLAnchorElement>('.status-cta__btn')!;
+    const note = root.querySelector<HTMLElement>('.status-cta__note')!;
+    const titleEl = root.querySelector<HTMLElement>('[data-status-title]')!;
+    const textEl = root.querySelector<HTMLElement>('[data-status-text]')!;
+    const API = '/api/claude-status?lite=1';
+    const KEY = 'zmn-claude-status';
+    const DISMISS_KEY = 'zmn-claude-status-dismissed';
+    const TTL = 60_000;
+    const onStatusPage = /^\/claude-(status|coktu-mu)\/?$/.test(location.pathname);
+    type Lite = {
+      ok: boolean; level: string; title: string;
+      affected: { name: string; statusLabel: string; level: string }[];
+      incidents: string[]; maintenances: string[]; stale: boolean; fetchedAt: string;
+    };
+    const store = {
+      get(k: string) { try { return sessionStorage.getItem(k); } catch { return null; } },
+      set(k: string, v: string) { try { sessionStorage.setItem(k, v); } catch { /* private mode */ } },
+    };
+    let signature = '';
+
+    const render = (d: Lite | null) => {
+      const level = d?.ok ? d.level : 'unknown';
+      root.dataset.level = level;
+      if (!d?.ok) {
+        btn.title = 'Claude altyapı durumu: bilgi şu an alınamadı';
+        note.hidden = true;
+        return;
+      }
+      btn.title = `Claude altyapı durumu: ${d.title}`;
+      const problem = level !== 'operational' && level !== 'unknown';
+      if (!problem) { note.hidden = true; signature = ''; return; }
+
+      const parts: string[] = [];
+      const sentence = (t: string) => (/[.!?]$/.test(t) ? t : `${t}.`);
+      if (d.incidents.length) parts.push(sentence(d.incidents.slice(0, 2).join(' · ')));
+      if (d.affected.length) {
+        const names = d.affected.slice(0, 4).map((a) => `${a.name} (${a.statusLabel.toLocaleLowerCase('tr')})`);
+        parts.push(`Etkilenen: ${names.join(', ')}${d.affected.length > 4 ? ` ve ${d.affected.length - 4} hizmet daha` : ''}.`);
+      } else if (d.maintenances.length) {
+        parts.push(sentence(d.maintenances.slice(0, 2).join(' · ')));
+      }
+      titleEl.textContent = d.title;
+      textEl.textContent = parts.join(' ');
+      signature = `${level}|${d.incidents.join('|')}|${d.affected.map((a) => a.name + a.level).join('|')}`;
+      note.hidden = onStatusPage || store.get(DISMISS_KEY) === signature;
+    };
+
+    const load = async (force = false) => {
+      if (!force) {
+        try {
+          const c = JSON.parse(store.get(KEY) || 'null') as { t: number; d: Lite } | null;
+          if (c && Date.now() - c.t < TTL) { render(c.d); return; }
+        } catch { /* ignore */ }
+      }
+      try {
+        const r = await fetch(API, { headers: { accept: 'application/json' } });
+        const d = (await r.json()) as Lite;
+        if (d?.ok) store.set(KEY, JSON.stringify({ t: Date.now(), d }));
+        render(d);
+      } catch {
+        render(null);
+      }
+    };
+
+    root.querySelector('[data-status-close]')?.addEventListener('click', () => {
+      note.hidden = true;
+      if (signature) store.set(DISMISS_KEY, signature);
+    });
+
+    let timer: number | undefined;
+    const schedule = () => {
+      window.clearInterval(timer);
+      if (document.visibilityState === 'visible') timer = window.setInterval(() => load(), TTL);
+    };
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') load();
+      schedule();
+    });
+    load();
+    schedule();
+  })();
 </script>

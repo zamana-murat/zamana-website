@@ -12,6 +12,8 @@
  *                      for 30 days, keyed by a SHA-256 of the source text. Without the key, or when
  *                      the call fails / is slow, the English original is returned untranslated.
  *
+ * Query: ?lite=1 returns StatusLite (header button) instead of the full payload.
+ *
  * Upstream failure: serves the last good copy (stale: true) when one exists, else 502 JSON.
  * Note: the Cache API is a no-op on *.pages.dev preview hosts; a small in-memory cache per
  * isolate covers that case.
@@ -29,6 +31,7 @@ import {
   normalize,
   normalizeUptime,
   parseUptimeFromHtml,
+  toLite,
   toTurkeyTime,
   type ComponentUptime,
   type StatusError,
@@ -280,7 +283,7 @@ async function translateAll(texts: string[], apiKey: string, origin: string, cac
 // ---------------------------------------------------------------------------
 // Handler
 // ---------------------------------------------------------------------------
-export const onRequestGet: PagesFunction<Env> = async (context) => {
+const handleFull = async (context: Parameters<PagesFunction<Env>>[0]): Promise<Response> => {
   const { request, env } = context;
   // Keep the call bound to the context object (detached waitUntil can throw "Illegal invocation").
   const waitUntil = (p: Promise<unknown>) => context.waitUntil(p);
@@ -376,6 +379,17 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     );
   }
   return json(body, 200, FRESH_TTL);
+};
+
+// ?lite=1: ~1 KB summary for the header status button on every page (same cache as the full payload).
+export const onRequestGet: PagesFunction<Env> = async (context) => {
+  const res = await handleFull(context);
+  if (!new URL(context.request.url).searchParams.has('lite') || res.status !== 200) return res;
+  try {
+    return json(toLite(JSON.parse(await res.text()) as StatusPayload), 200, FRESH_TTL);
+  } catch {
+    return json({ ok: false, error: 'bad_payload', message: 'Durum bilgisi okunamadı.', source: STATUS_SOURCE } satisfies StatusError, 502);
+  }
 };
 
 export const onRequest: PagesFunction = async () =>
