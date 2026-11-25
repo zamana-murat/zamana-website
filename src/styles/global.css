@@ -439,6 +439,30 @@ p:last-child { margin-bottom: 0; }
   pointer-events: none;
 }
 .price__new { white-space: nowrap; font-weight: 700; }
+/* Old price + small gold "%50 indirim" chip sitting above its top-left corner. */
+.price__was {
+  position: relative;
+  display: inline-block;
+  padding-top: 1.15em;
+  line-height: 1.1;
+}
+.price__chip {
+  position: absolute;
+  top: 0;
+  left: -0.15em;
+  padding: 0.12em 0.45em;
+  border-radius: 999px;
+  background: var(--c-gold);
+  color: var(--c-navy-deep);
+  font-size: max(0.42em, 10px);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  transform: rotate(-4deg);
+  transform-origin: left bottom;
+  box-shadow: 0 1px 2px rgba(15, 40, 85, 0.18);
+}
 
 .campaign-bar {
   background: var(--c-navy-deep);

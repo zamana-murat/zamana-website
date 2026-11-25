@@ -62,7 +62,7 @@ export const nowText = (listAmount: number): string => tl(sale(listAmount));
 /** HTML for places that take a string (props rendered with set:html, JS templates). Same markup as <Price />. */
 export const priceHtml = (listAmount: number): string =>
   campaignOn()
-    ? `<span class="price price--sale"><s class="price__old"><span class="visually-hidden">Normal fiyat: </span>${tl(listAmount)}</s> <span class="price__new"><span class="visually-hidden">Kampanya fiyatı: </span>${tl(sale(listAmount))}</span></span>`
+    ? `<span class="price price--sale"><span class="price__was"><span class="price__chip" aria-hidden="true">${campaign.percentLabel} indirim</span><s class="price__old"><span class="visually-hidden">Normal fiyat: </span>${tl(listAmount)}</s></span> <span class="price__new"><span class="visually-hidden">Kampanya fiyatı: </span>${tl(sale(listAmount))}</span></span>`
     : `<span class="price">${tl(listAmount)}</span>`;
 
 /** Schema.org Offer extras during the campaign. */
