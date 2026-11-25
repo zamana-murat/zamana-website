@@ -35,7 +35,7 @@ Başlangıçta desteklenenler: Asana, Canva, Carta, Dropbox, monday.com, Smartsh
 
 - Kuruluşunuz bir bağlayıcının tüm araçlarına zaten izin veriyorsa yenilikler kendiliğinden gelir. Yöneticiler bir bağlayıcının araçlarını bugünkü gibi kısıtlayabilir.
 - Kaynak, kullanım limiti veya kota hakkında bir ayrıntı vermiyor.
-- Geliştiriciler için: bu yapı MCP Apps adlı açık bir uzantıya dayanıyor ve genel önizlemede. MCP, Claude'un araçlara bağlanma standardıdır, ayrıntı için [MCP rehberine](/wiki/mcp/nedir) bakın.
-- Hangi bağlayıcının sizin verilerinize eriştiğini yönetmek için [Connectors sayfası](/wiki/araclar/connectors) faydalı.
+- Geliştiriciler için: bu yapı MCP Apps adlı açık bir uzantıya dayanıyor ve genel önizlemede. MCP, Claude'un araçlara bağlanma standardıdır, ayrıntı için [MCP rehberine](/wiki/mcp/nedir/) bakın.
+- Hangi bağlayıcının sizin verilerinize eriştiğini yönetmek için [Connectors sayfası](/wiki/araclar/connectors/) faydalı.
 
 *Kaynak: [Your apps can now open in Claude, and Claude can work in them](https://claude.com/resources/articles/interactive-connectors-full-tool), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

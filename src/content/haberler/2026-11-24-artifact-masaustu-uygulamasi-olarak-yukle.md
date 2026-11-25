@@ -39,6 +39,6 @@ Paketleme, imzalama, API anahtarı ya da ayrı bir giriş gerekmiyor, çünkü u
 - Plan durumu: tüm planlarda beta. Team'de varsayılan açık, tam erişim kapalı. Enterprise'da bir sahip açana kadar kapalı. Yöneticiler izinleri kuruluş düzeyinde açıp kapatabilir.
 - Uygulamayı açmak için çevrimiçi ve Claude'a giriş yapmış olmak gerekiyor. Uygulamanın Claude'a yaptığı istekler plan kullanım limitinizden düşüyor.
 - HIPAA hazır kuruluşlarda ve hibrit dağıtımlarda yok. Claude Docs, Slides ve Sheets gibi bazı artifact'lar kurulamıyor.
-- Artifact kavramı için [Claude sohbet](/wiki/araclar/claude-chat) sayfasına bakın.
+- Artifact kavramı için [Claude sohbet](/wiki/araclar/claude-chat/) sayfasına bakın.
 
 *Kaynak: [Turn artifacts into Mac and Windows apps](https://claude.com/resources/articles/install-as-app), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

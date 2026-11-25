@@ -34,6 +34,6 @@ Sistem tek tek isteklere değil, birçok isteğin oluşturduğu örüntülere ba
 - Depolama maliyetini (okuma, yazma, anahtar işlemleri, ağ aktarımı) bulut sağlayıcınız size normal tarifeyle faturalıyor.
 - Bedrock ve Google Cloud'da (Google yönetimli) izlemeyi bulut sağlayıcısı işletiyor ve veri o bulutun sınırları içinde kalıyor.
 - Kapsam, ciddi zarara yol açabilecek kasıtlı kötüye kullanım (örneğin saldırgan siber operasyonlar) ve ajanların kullanıcı niyetinin dışına çıkması. Genel içerik denetimi değil.
-- Yazı kesin uygunluk ölçütlerini vermiyor. KVKK ve veri aktarımı açısından değerlendirme için [gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk) sayfasına bakın.
+- Yazı kesin uygunluk ölçütlerini vermiyor. KVKK ve veri aktarımı açısından değerlendirme için [gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasına bakın.
 
 *Kaynak: [Zero data retention with Enterprise Frontier Safeguards is now in beta](https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

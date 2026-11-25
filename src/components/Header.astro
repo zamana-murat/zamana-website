@@ -669,6 +669,9 @@ const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor
     const DISMISS_KEY = 'zmn-claude-status-dismissed';
     const TTL = 60_000;
     const onStatusPage = /^\/claude-(status|coktu-mu)\/?$/.test(location.pathname);
+    // On narrow screens the note would cover the H1 and overflow the left edge: the colored,
+    // pulsing pill is the signal there, and tapping it opens /claude-status/.
+    const wide = window.matchMedia('(min-width: 721px)');
     type Lite = {
       ok: boolean; level: string; title: string;
       affected: { name: string; statusLabel: string; level: string }[];
@@ -704,8 +707,9 @@ const chevron = '<path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor
       titleEl.textContent = d.title;
       textEl.textContent = parts.join(' ');
       signature = `${level}|${d.incidents.join('|')}|${d.affected.map((a) => a.name + a.level).join('|')}`;
-      note.hidden = onStatusPage || store.get(DISMISS_KEY) === signature;
+      note.hidden = onStatusPage || !wide.matches || store.get(DISMISS_KEY) === signature;
     };
+    wide.addEventListener('change', () => { if (!wide.matches) note.hidden = true; });
 
     const load = async (force = false) => {
       if (!force) {

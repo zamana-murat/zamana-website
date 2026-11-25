@@ -82,7 +82,7 @@ export const claudeNavColumns: ClaudeNavColumn[] = [
       {
         title: 'Modeller',
         items: [
-          { label: 'Mythos', href: '/claude/modeller/#mythos', slug: 'modeller', desc: 'Davetle erişilen, Fable düzeyinde model' },
+          { label: 'Mythos', href: '/claude/modeller/#mythos', slug: 'modeller', desc: 'Doğrulama programıyla erişilen sınırlı model' },
           { label: 'Fable', href: '/claude/modeller/#fable', slug: 'modeller', desc: 'En güçlü genel model, uzun ajan işleri' },
           { label: 'Opus', href: '/claude/modeller/#opus', slug: 'modeller', desc: 'Çoğu iş için önerilen başlangıç' },
           { label: 'Sonnet', href: '/claude/modeller/#sonnet', slug: 'modeller', desc: 'Hız ve kalite dengesi' },
