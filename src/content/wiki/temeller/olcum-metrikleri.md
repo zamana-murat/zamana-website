@@ -7,10 +7,10 @@ tags:
   - olcum
   - roi
   - metrikler
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**"Claude işe yaradı mı?" sorusunun cevabı duygusal değil sayısal olmalı.** Çoğu şirket Claude'u 6 ay kullanıyor, faydasını "hissediyor" ama ölçemiyor. İlk yıl sonunda yenileme kararı tartışmalı oluyor. Bu sayfa bunu önler.
+**"Claude işe yaradı mı?" sorusuna sayıyla cevap verebilmelisiniz.** Claude'u 6 ay kullanıp faydasını yalnızca "hissedenler", ilk yıl sonunda yenileme kararını tartışarak veriyor. Aşağıdaki ölçüm düzeni bunu önlemek için.
 
 ## Üç Birincil Metrik
 
@@ -20,7 +20,7 @@ Claude etkisi üç eksende ölçülür:
 2. **Kalite**: üretilenin değeri arttı mı
 3. **Otomasyon**: kaç manuel iş sistemli ve otomatik hâle geldi
 
-Üçü birden ölçülmeli; sadece birine bakmak yanıltır.
+Üçünü birlikte ölçün; yalnız birine bakmak yanıltır.
 
 ### 1. Zaman Tasarrufu
 
@@ -40,7 +40,7 @@ Claude etkisi üç eksende ölçülür:
 | Orta kullanıcı (günde 30-60 dk Claude'da) | 5-8 saat |
 | Yoğun kullanıcı (günde 1-3 saat Claude'da) | 8-15 saat |
 
-**TL karşılığı:** Çalışan saatlik maliyetiyle çarpılır. Bordro + işveren payları + dolaylı maliyet (ofis, eğitim, vb.) toplam **yüklü maliyet** kullanılmalı, sadece brüt maaş değil.
+**TL karşılığı:** Çalışan saatlik maliyetiyle çarpılır. Bordro + işveren payları + dolaylı maliyet (ofis, eğitim, vb.) toplam **yüklü maliyet** kullanılmalı; brüt maaşla sınırlı kalmayın.
 
 ### 2. Kalite
 
@@ -155,14 +155,14 @@ ROI = (Tasarruf - Maliyet) / Maliyet × 100
 
 ## Geliştirme Döngüsü: PDCA
 
-Ölçüm yalnızca rakam toplamak değil, eylem doğurmalıdır:
+Ölçümden sonra eyleme geçin:
 
 - **Plan:** Hedef metrikleri belirle (örn. ortalama 8 saat/hafta)
 - **Do:** Eğitim + retainer ile uygulama
 - **Check:** 90 günde ölçüm, hedeften sapma analizi
 - **Act:** Düşük kalan kullanıcılarla bireysel görüşme, kullanım engelleri çıkarma, ek eğitim
 
-Bu döngü kalıcı adaptasyonun temelidir.
+Bu döngü kalıcı adaptasyonu sağlar.
 
 ## Vaka Örnekleri (Kapalı İsim)
 

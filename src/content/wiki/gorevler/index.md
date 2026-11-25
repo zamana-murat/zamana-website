@@ -5,12 +5,12 @@ description: "Excel, PDF, sunum, toplantı notu, rapor, sözleşme taslağı ve 
 tags:
   - gorevler
   - rehber
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 **Görev rehberleri, "Claude ile şunu nasıl yaparım?" sorusuna adım adım cevap verir.** Diğer wiki bölümleri araçları ve yetenekleri anlatır; bu bölüm tersinden başlar: elinizde bir iş var (bir Excel tablosu, bir PDF, yarına yetişmesi gereken bir sunum), hangi yüzeyi, hangi sırayla ve hangi promptla kullanacağınızı görürsünüz.
 
-Her rehber aynı kalıbı izler: kısa cevap, hangi yüzeyin (sohbet, Projects, Cowork, Office eklentileri) hangi iş için uygun olduğu, adım adım yöntem, kopyalayıp doldurabileceğiniz Türkçe promptlar, tahmini süre kazancı, KVKK ve veri uyarısı, sık hatalar. Tarif edilen her şey sizin sorumluluğunuzda kalır: Claude taslağı hızlandırır, doğrulama ve karar sizindir.
+Her rehberde kopyalayıp doldurabileceğiniz Türkçe promptlar, tahmini süre kazancı, KVKK ve veri uyarısı ile sık hatalar var; hangi yüzeyin (sohbet, Projects, Cowork, Office eklentileri) hangi işe uygun olduğu da anlatılıyor. Claude taslağı hızlandırır, doğrulama ve karar sizindir.
 
 ## Rehberler
 
@@ -26,9 +26,9 @@ Her rehber aynı kalıbı izler: kısa cevap, hangi yüzeyin (sohbet, Projects, 
 
 ## Başlamadan önce üç not
 
-1. **Planınıza bakın.** Sohbette dosya yükleme tüm planlarda var; Office eklentileri, Research ve Cowork ücretli planlarda. Plan farkları için [Planlar](/wiki/temeller/planlar/) sayfası.
-2. **Veriyi hazırlayın.** Kişisel veri ya da ticari sır içeren bir dosyayı yüklemeden önce [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ile [Şirket içi yapay zeka politikası](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
-3. **İyi prompt iyi sonuç verir.** Rehberlerdeki şablonlar [Prompt kataloğu](/wiki/prompting/prompt-katalogu/) ve [Temel ilkeler](/wiki/prompting/temel-ilkeler/) sayfalarıyla aynı mantığı izler.
+1. Planınıza bakın. Sohbette dosya yükleme tüm planlarda var; Office eklentileri, Research ve Cowork ücretli planlarda. Plan farkları için [Planlar](/wiki/temeller/planlar/) sayfası.
+2. Veriyi hazırlayın. Kişisel veri ya da ticari sır içeren bir dosyayı yüklemeden önce [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ile [Şirket içi yapay zeka politikası](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
+3. Promptları kendi işinize uyarlayın. Rehberlerdeki şablonlar [Prompt kataloğu](/wiki/prompting/prompt-katalogu/) ve [Temel ilkeler](/wiki/prompting/temel-ilkeler/) sayfalarındaki ilkelere dayanır.
 
 ## İlgili departman sayfaları
 

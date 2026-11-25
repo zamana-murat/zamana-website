@@ -18,14 +18,14 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Şirket içi yapay zeka politikası (wiki)", href: "/wiki/temeller/sirket-ici-politika/" }
 order: 130
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Claude for Education, Anthropic'in üniversitelere yönelik paketidir. Aynı Claude'u öğrenciye, akademisyene, araştırmacıya ve idari personele tek bir kurumsal anlaşmayla açar. Kurum hesabı olduğu için yönetim paneli, merkezi faturalama ve veri koşulları tek elden yürür. Kaynak sayfa üç vaatte toplanıyor: üniversite düzeyinde karmaşık konularla basitleştirmeden çalışmak, öğrencinin düşünmesini güçlendirmek ve kurumların uyum beklentilerini karşılamak.
+Claude for Education, Anthropic'in üniversitelere yönelik paketi. Aynı Claude'u öğrenciye, akademisyene, araştırmacıya ve idari personele tek bir kurumsal anlaşmayla açar. Kurum hesabı olduğu için yönetim paneli, merkezi faturalama ve veri koşulları tek elden yürür. Kaynak sayfa üç vaatte toplanıyor: üniversite düzeyinde karmaşık konularla basitleştirmeden çalışmak, öğrencinin düşünmesini güçlendirmek ve kurumların uyum beklentilerini karşılamak.
 
-Paketin en çok konuşulan parçası **öğrenme modu**. Bu modda Claude iyi bir asistan hoca gibi davranır: ödevi çözmek yerine soru sorar, öğrencinin hangi adımda takıldığını bulmaya çalışır, ipucunu ders notuna yönlendirir. Anthropic öğrenme modunu Nisan 2025'te yalnız üniversite paketiyle tanıttı. Basına yansıyan haberlere göre sonradan claude.ai'deki stil menüsüne de eklendi. Anthropic stil menüsünü skill'lere taşıyor ve "Learning" bir skill olarak kalıyor; bu geçişin ayrıntısını Anthropic'in kendi yardım makalesinden doğrulayamadık. Claude Code'daki "Learning" ve "Explanatory" çıktı stilleri ise resmi belgelerde yer alıyor. Kurum anlaşmasının asıl farkı yönetim, veri koşulları ve ders sistemleriyle bağlantıdır.
+Paketin öne çıkan parçası **öğrenme modu**. Bu modda Claude iyi bir asistan hoca gibi davranır: ödevi çözmek yerine soru sorar, öğrencinin hangi adımda takıldığını bulmaya çalışır, ipucunu ders notuna yönlendirir. Anthropic öğrenme modunu Nisan 2025'te yalnız üniversite paketiyle tanıttı. Basına yansıyan haberlere göre sonradan claude.ai'deki stil menüsüne de eklendi. Anthropic stil menüsünü skill'lere taşıyor ve "Learning" bir skill olarak kalıyor; bu geçişin ayrıntısını Anthropic'in kendi yardım makalesinden doğrulayamadık. Claude Code'daki "Learning" ve "Explanatory" çıktı stilleri ise resmi belgelerde yer alıyor. Kurum anlaşmasının asıl farkı yönetim, veri koşulları ve ders sistemleriyle bağlantıdır.
 
 ![Aynı ödev sorusuna standart yanıt ile öğrenme modu yanıtının yan yana karşılaştırması: solda Claude çözümü adım adım veriyor, sağda öğrenciye yönlendirici soru soruyor ve ders notuna ipucu veriyor](/images/kurumsal/yuksekogretim/ogrenme-modu.webp)
 
@@ -42,7 +42,7 @@ Kaynakta ayrıca ders yönetim sistemleri ve içerik platformlarıyla bağlantı
 
 ## Akademik dürüstlük: yasaklamak yerine kural koymak
 
-Türk üniversitelerinin en sık sorduğu soru şu: "Öğrenci ödevi Claude'a yazdırırsa ne olacak?" Dürüst cevap, bunu teknik olarak engellemenin mümkün olmadığı. Öğrenme modu öğrenciyi doğru kullanıma yönlendirir ama öğrenci modu kapatabilir, başka bir araç kullanabilir. Bu yüzden asıl iş politikada.
+İlk akla gelen soru şu: "Öğrenci ödevi Claude'a yazdırırsa ne olacak?" Dürüst cevap, bunu teknik olarak engellemenin mümkün olmadığı. Öğrenme modu öğrenciyi doğru kullanıma yönlendirir ama öğrenci modu kapatabilir, başka bir araç kullanabilir. Bu yüzden asıl iş politikada.
 
 - **Ders bazında kural yazın.** Hangi derste hangi kullanıma izin var: fikir üretme serbest mi, taslak yazma yasak mı, kod yardımı kabul mü? İzlencede açıkça yazılsın.
 - **Beyan isteyin.** YÖK, bilimsel araştırma ve yayında üretken yapay zeka kullanımına dair bir etik rehber yayımladı ve birçok üniversite tez ve yayınlarda kullanım beyanı istiyor. Aynı mantığı ödevlere taşıyın: öğrenci neyi, hangi araçla yaptığını yazsın.

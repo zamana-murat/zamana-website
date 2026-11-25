@@ -8,14 +8,14 @@ tags:
   - kvkk
   - ttk
   - sozlesme
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Hukuk, Claude'un büyük zaman tasarrufu sağlayabildiği ama en katı disiplini gerektiren departmandır.
+Hukukta Claude çok zaman kazandırabilir, ama bu departman en katı disiplini ister.
 
-> **Pazarlık dışı çerçeve:** Claude yazar, avukat gözden geçirir. Her zaman. İstisnasız.
+> **Pazarlık dışı çerçeve:** Claude yazar, avukat gözden geçirir; istisnası yok.
 >
-> Bu bir uyarı değil, her iş akışına yerleştirilmiş yapısal bir kuraldır. Claude çok hızlı bir ilk taslak yazarı ve titiz bir madde bulucudur; ama kalifiye bir Türk avukatı değildir. Hukuk ekibinin değeri yargı, yorum ve hesap verebilirliktedir, yazımda değil. **Yazımı Claude halleder.**
+> Bu kural her iş akışının içinde yer alır. Claude çok hızlı bir ilk taslak yazarı ve titiz bir madde bulucudur, ama kalifiye bir Türk avukatı değildir. Hukuk ekibinin değeri yargıda, yorumda ve hesap verebilirliktedir; yazımı Claude üstlenebilir.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -30,11 +30,11 @@ Hukuk, Claude'un büyük zaman tasarrufu sağlayabildiği ama en katı disiplini
 
 ### Sözleşme Taslağı Yardımı
 
-Ticari şartlar girilir; madde madde, mantıksal sırayla, uygun hukuki dille yapılandırılmış bir ilk taslak çıkar. Bu taslak **avukat incelemesi için bir başlangıç noktasıdır**.
+Ticari şartlar girilir; madde madde, mantıksal sırayla, uygun hukuki dille yapılandırılmış bir ilk taslak çıkar. Bu taslak avukat incelemesi için bir başlangıç noktasıdır.
 
 ### Madde Çıkarımı
 
-Uzun bir sözleşmeyi verir ve Claude'dan her mücbir sebep maddesini, cezai şartı, ödeme koşulunu, fesih hakkını ve yetkili mahkeme maddesini **bulmasını, alıntılamasını ve özetlemesini** istersiniz. Tipik beklenti: 40 sayfalık bir sözleşmede madde çıkarımı elle 2-3 saat, Claude ile 20-30 dakika (Zamana eğitim materyali; tahmini tipik aralık). Her alıntıyı sözleşme metninden kontrol etmek bu sürenin dışındadır ve atlanmaz.
+Uzun bir sözleşmeyi verir ve Claude'dan her mücbir sebep maddesini, cezai şartı, ödeme koşulunu, fesih hakkını ve yetkili mahkeme maddesini bulmasını, alıntılamasını ve özetlemesini istersiniz. Tipik beklenti: 40 sayfalık bir sözleşmede madde çıkarımı elle 2-3 saat, Claude ile 20-30 dakika (Zamana eğitim materyali; tahmini tipik aralık). Her alıntıyı sözleşme metninden kontrol etmek bu sürenin dışındadır ve atlanmaz.
 
 ### Sözleşme Karşılaştırma
 
@@ -46,11 +46,11 @@ Jenerik İngiliz hukuku şablonları yerine, Türk ticari uygulamasına göre uy
 
 ### Türk Hukuku Uyarı Çerçevesi
 
-Uluslararası sözleşme şablonları uyarlanırken Claude, **Türk Ticaret Kanunu (TTK)** veya **Borçlar Kanunu** ile çelişebilecek maddeleri belirlemeye yardım eder. Bu, avukatın dikkatine sunulan bir işarettir, avukatın yerine geçmez.
+Uluslararası sözleşme şablonları uyarlanırken Claude, Türk Ticaret Kanunu (TTK) ya da Borçlar Kanunu ile çelişebilecek maddeleri belirlemeye yardım eder. Bu, avukatın dikkatine sunulan bir işarettir, avukatın yerine geçmez.
 
 ## Bölüm 2: Uyum Dokümantasyonu
 
-**Uyum politikası yazımı.** Net, yapılandırılmış, erişilebilir bir dil: düzenleyiciye hukuk ekibinin yazdığı değil, çalışanların gerçekten okuyup uygulayacağı politika.
+**Uyum politikası yazımı.** Çalışanların gerçekten okuyup uygulayacağı, sade bir dille yazılmış politika.
 
 **Düzenleyici özet belgeleri.** Karmaşık düzenlemeler (KVKK, MASAK, ihracat kontrol kuralları) avukat olmayan kişilerin eyleme geçebileceği iç rehberlik notlarına dönüşür.
 
@@ -70,16 +70,16 @@ Uluslararası sözleşme şablonları uyarlanırken Claude, **Türk Ticaret Kanu
 
 ### KVKK Veri Sahibi Talep Yanıtları
 
-KVKK kapsamında şirketler, veri sahiplerinin taleplerine **yasal olarak yanıt vermek zorundadır**. Başlıca talepler (KVKK md. 11):
+KVKK kapsamında şirketler, veri sahiplerinin taleplerine yasal olarak yanıt vermek zorundadır. Başlıca talepler (KVKK md. 11):
 
 - Bilgi / erişim talepleri
 - Düzeltme talepleri
 - Silme / yok etme talepleri
 - İtiraz talepleri
 
-Yanıt, kanunda öngörülen süre içinde (başvuruya en geç 30 gün, KVKK m.13) verilmelidir. Bu yanıtlar **hukuki olarak doğru, resmi olarak yapılandırılmış ve tutarlı** olmak zorundadır.
+Yanıt, kanunda öngörülen süre içinde (başvuruya en geç 30 gün, KVKK m.13) verilmelidir. Yanıtlar hukuken doğru, resmi biçimde yapılandırılmış ve tutarlı olmalıdır.
 
-Claude, kanuna uygun bir ilk taslak yanıt üretir; **hukuk, göndermeden önce inceler**. Kişisel veri işleyen her şirkette bu yüksek hacimli ve zaman alıcı bir iştir; örnek senaryomuzda taslak yazım süresi dakikalara iner.
+Claude kanuna uygun bir ilk taslak yanıt üretir; hukuk ekibi göndermeden önce inceler. Kişisel veri işleyen her şirkette bu yüksek hacimli ve zaman alıcı bir iştir; örnek senaryomuzda taslak yazım süresi dakikalara iner.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -136,10 +136,10 @@ Kullanım: Word'de playbook'a karşı değişiklik izlemeli redline, Outlook'ta 
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Sözleşme inceleme ve geri dönüş süreci**: gelen sözleşme → madde çıkarımı → risk değerlendirmesi → taslak redline
-- **Uyum dokümantasyonu döngüsü**: politikalar, yıllık güncellemeler, eğitim materyalleri
-- **Sözleşme özeti dağıtımı**: imzalanan her sözleşmenin tek sayfalık özetinin ticari ekiplerine dağıtılması
-- **KVKK talep yönetim süreci**: gelen talep → sınıflandırma → taslak yanıt → hukuk inceleme → gönderim
+- Sözleşme inceleme ve geri dönüş süreci: gelen sözleşme → madde çıkarımı → risk değerlendirmesi → taslak redline
+- Uyum dokümantasyonu döngüsü: politikalar, yıllık güncellemeler, eğitim materyalleri
+- Sözleşme özeti dağıtımı: imzalanan her sözleşmenin tek sayfalık özetinin ticari ekiplerine dağıtılması
+- KVKK talep yönetim süreci: gelen talep → sınıflandırma → taslak yanıt → hukuk inceleme → gönderim
 
 ## Gerçek Örnek: KVKK Erişim Talebi
 
@@ -183,12 +183,12 @@ Eğitimlerde hukuk ekiplerinin en çok takıldığı üç nokta (Zamana eğitim 
 
 ## Brifing İş Akışı: Geçmiş Kararlara Hızlı Yanıt
 
-Hukuk ekibinin sık ihtiyacı: "Bu konuyu daha önce nasıl ele almıştık?" Bunu otomatik brifing, talep üzerine araştırma ve **kaynak doğrulama** ile kuran bir akışı, kendi yazdıracağınız bir "brief" skill'iyle kurabilirsiniz (Anthropic'in hazır bir brifing skill'ine dayanmıyoruz):
+Hukuk ekibinin sık ihtiyacı: "Bu konuyu daha önce nasıl ele almıştık?" Bunu otomatik brifing, talep üzerine araştırma ve kaynak doğrulama ile kuran bir akışı, kendi yazdıracağınız bir "brief" skill'iyle kurabilirsiniz (Anthropic'in hazır bir brifing skill'ine dayanmıyoruz):
 
 1. **Skill'i yazdırın ve özelleştirin.** İncelemelerinizin nerede durduğunu (klasör, tracker, e-posta) Claude'a tanıtın: *"Ekibim için 'brief' adında bir skill yaz. İncelemelerimiz şurada duruyor..."*
 2. **Günlük brief'i zamanlayın.** *"/schedule Her iş günü 08:00'de gelen kutumu, tracker'ı ve Slack'i oku, önceliklendirilmiş bir özet hazırla."* (bkz: [Scheduled Tasks](/wiki/araclar/scheduled-tasks/))
 3. **Talep üzerine brief çalıştırın.** Belirli bir soruda aynı skill'i çağırın: *"/brief yeni gelen talep, önceki incelemedeki sonucumuzu değiştirir mi?"*
-4. **Kaynakları doğrulayın.** Her iddianın bağlı olduğu **kaynağı tıklayıp orijinal metni okuyun**. Bu adım atlanmaz, profesyonel sorumluluk burada başlar.
+4. **Kaynakları doğrulayın.** Her iddianın bağlı olduğu kaynağı tıklayıp orijinal metni okuyun. Bu adım atlanmaz; profesyonel sorumluluk burada başlar.
 5. **Yanıtlayın ve kapatın.** Connector'larla yanıtı taslaklayın, ticket'ı kapatın, kararı ve kaynağı not düşün.
 
 > **Claude hazırlığı yaptı, ama karar sizin.** Brifing rutini sıralamayı ve özeti üstlenir; yorum, doğrulama ve nihai hukuki yargı avukatta kalır. Bu, [Sycophancy](/wiki/temeller/sinirlamalar/) riskine karşı da kalkandır: Claude'a sonucu onaylatmayın, kaynağı kendiniz okuyun.

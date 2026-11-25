@@ -7,14 +7,14 @@ tags:
   - fatura
   - kdv
   - muhasebe
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 **Claude aboneliği yurt dışından alınan dijital bir hizmettir.** Türkiye'de muhasebeleştirilmesi, KDV uygulanması ve gider olarak gösterilmesi için net bir prosedür var; bunu doğru bilmek de finans direktörünün ilk sorusudur.
 
 Claude'un ne olduğunu henüz bilmiyorsanız önce [Claude nedir](/wiki/temeller/claude-nedir/) sayfasına, plan fiyatları için [Claude Planları](/wiki/temeller/planlar/) sayfasına bakın.
 
-Bu sayfa Claude aboneliğinin Türkiye'deki vergi-muhasebe yansımasını anlatır. **Önemli not:** Bu sayfa genel rehberlik amaçlıdır; nihai uygulamayı **mali müşaviriniz** ile birlikte netleştirin. Vergi mevzuatı değişebilir.
+Sayfa genel rehberlik amaçlıdır; nihai uygulamayı mali müşaviriniz ile birlikte netleştirin. Vergi mevzuatı değişebilir.
 
 ## Temel Bilgi: Anthropic Türkiye'de Vergi Mükellefi mi?
 
@@ -146,7 +146,7 @@ Claude aboneliği başlattıysanız, ödeme ve muhasebe akışını [Şirket İ�
 - Aylık ödeme onayı kimde?
 - Plan değişikliği (Max'tan Pro'ya geçiş gibi) hangi prosedürle yapılır?
 
-Bunlar küçük şeyler ama yıl sonunda denetimde sorun çıkartmamak için önemli.
+Küçük kararlar gibi görünür, ama yıl sonu denetiminde sorun çıkmasını önler.
 
 Satın alma ve muhasebe tarafı düzene girdikten sonra bütçenin karşılığını almak, çalışanların aboneliği gerçekten kullanmasına bağlıdır. Koltukları dağıtıp bırakmak yerine [kurumsal yapay zeka eğitimi](/yapay-zeka-egitimi/) ile kullanımı baştan yönlendirmek, ilk aylardaki boşa giden lisansı azaltır.
 

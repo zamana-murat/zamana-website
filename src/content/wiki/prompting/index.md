@@ -5,14 +5,14 @@ description: "Prompt nasıl yazılır? 4D Çerçevesi, beş bileşenli yapı, T�
 tags:
   - prompting
   - giris
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Claude'la çalışmanın en öğretilebilir becerisi. Ve en yaygın şekilde kötü kullanılan.
+Prompt yazmak, Claude'la çalışmanın en kolay öğretilen ama en sık yanlış yapılan becerisidir.
 
-Çoğu kişi Claude'la başarısız olur çünkü ona **Google'a sorar gibi sorar**: kısa, anahtar kelimeli, bağlamsız. İyi bir prompt bu reflekse direnen, yapılandırılmış bir düşünce metnidir.
+Claude'la başarısız olanlar genellikle ona Google'a sorar gibi sorar: kısa, anahtar kelimeli, bağlamsız. İyi bir prompt bu refleksi kıran, yapılandırılmış bir düşünce metnidir.
 
-Bu bölüm, prompting becerisini kavramsal çerçeveden (4D) başlayıp temel yapıya, Türkçe ve çıktı biçimine, ileri tekniklere, belgeyle çalışmaya, test etmeye ve hazır şablonlara kadar on sayfada kapsar.
+Bölüm on sayfadan oluşur: kavramsal çerçeve (4D), temel yapı, Türkçe ve çıktı biçimi, ileri teknikler, belgeyle çalışma, test etme ve hazır şablonlar.
 
 ## Bu Bölümdeki Sayfalar
 
@@ -117,19 +117,19 @@ Bu bölümü yeni okuyorsanız:
 
 **Önce kendiniz deneyin.** Hazır şablonu kopyalayıp geçmek hızlı görünür ama öğretmez. Aynı işi önce kendi cümlelerinizle yazın, zorlanın, sonra kataloga bakın. Prompt yazmayı öğreten şey, ilk denemelerdeki o zorlanmadır.
 
-Bir çalışanın prompting becerisi eğitim programının birinci saatinde başlar, **haftalarca gelişmeye devam eder**. Bu bölüm bir kere okunup kapanan değil, aylar boyunca geri dönülen bir kaynaktır.
+Bir çalışanın prompting becerisi eğitim programının birinci saatinde başlar ve haftalarca gelişmeye devam eder. Bu bölüme aylar boyunca geri dönmeniz normaldir.
 
 ## Ana Fikir
 
-Bölümün özeti tek cümleye indirgenirse:
+Bölümün özeti:
 
 > **Prompt, Claude'la konuştuğunuz metinden fazlasıdır: Claude'un düşünmesi için ona kurduğunuz çerçevedir. Çerçeveyi ne kadar iyi kurarsanız, çıktı o kadar iyi olur.**
 
-Bu, Claude'u "sihirli kutu" olarak görmekten çok uzaktır. Claude bir düşünme ortağıdır. İyi bir düşünme ortağı, **iyi bir sohbet partneri** gerektirir. Siz o partner olursunuz.
+Claude'u "sihirli kutu" gibi kullanmayın; o bir düşünme ortağıdır ve iyi çalışması için karşısında iyi bir sohbet partneri ister. O partner sizsiniz.
 
 ## 4D, Temel ve İleri Arasında
 
-Ana üç sayfanın ilişkisini netleştirmek gerekirse:
+Ana üç sayfa birbirini şöyle tamamlar:
 
 - **4D Çerçevesi** → **NE?** (Neye dikkat ediyorum? Ne için sorumluyum?)
 - **Temel İlkeler** → **NASIL?** (Promptu pratik olarak nasıl yazarım?)
@@ -144,8 +144,6 @@ Prompting öğrenmek bir oturumda olmaz, katmanlı ilerler:
 - **İlk hafta:** Description pratiği (4D'nin D2'si). Üç gerçek iş problemini yüksek sesle çerçevelemeyi öğrenmek.
 - **Sonraki haftalar:** Gerçek iş çıktıları üretmek. Her başarılı prompt kişisel kütüphanenize eklenir (kütüphaneyi nasıl kuracağınız ve hedefler: [İleri Seviye](/wiki/prompting/ileri-seviye/)).
 - **Aylar içinde:** Çoğu prompt sorunu iki kategoriye girer: bağlam eksikliği veya iterasyon eksikliği.
-
-Bu kütüphane Claude öğrenme sürecinin en somut kalıntısıdır.
 
 ## Nereye Gitmeli?
 

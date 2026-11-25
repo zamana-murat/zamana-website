@@ -7,10 +7,10 @@ tags:
   - idari-isler
   - yonetici-asistani
   - toplanti
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Yönetici asistanı ve idari personel, Claude ile haftada saatlerce zaman kazanabilir. Bu zaman, **zaten yapmaları gereken ama vakit bulamadıkları** yüksek değerli işlere gider.
+Yönetici asistanı ve idari personel, Claude ile haftada saatlerce zaman kazanabilir. Kazanılan zaman, yapılması gereken ama vakit bulunamayan, değeri yüksek işlere gider.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -25,7 +25,7 @@ Yönetici asistanı ve idari personel, Claude ile haftada saatlerce zaman kazana
 
 ### Profesyonel E-posta Taslağı
 
-Bağlam ve istenen sonuç girilir, parlatılmış bir taslak çıkar. **Asistan artık her e-posta için kelime seçmekle uzun uzun uğraşmaz.** **Süre:** tek bir önemli e-posta için elle 15-20 dakika, Claude ile 3-5 dakika. *Zamana gözlemi, tipik aralık.*
+Bağlam ve istenen sonuç girilir, parlatılmış bir taslak çıkar. Asistan her e-posta için kelime seçmekle uzun uzun uğraşmaz. **Süre:** tek bir önemli e-posta için elle 15-20 dakika, Claude ile 3-5 dakika. *Zamana gözlemi, tipik aralık.*
 
 ### Çok Partili Koordinasyon E-postaları
 
@@ -33,11 +33,11 @@ Karmaşık takvim ve lojistik iletişimi: birden fazla kişiye, her birine ait f
 
 ### Yönetici Yazışması
 
-Üst yönetim adına yazarken ton, otorite ve kesinlik **yöneticiyi yansıtmalı, asistanı değil**. CLAUDE.md'deki "yöneticimin iletişim tarzı" girdisi bunun için kurulur.
+Üst yönetim adına yazarken ton, otorite ve kesinlik yöneticinin sesini yansıtmalı. CLAUDE.md'deki "yöneticimin iletişim tarzı" girdisi bunun için kurulur.
 
 ### Dış Yazışma
 
-Resmi mektuplar, kurumlara (bankalar, devlet kurumları, ticaret odaları) yanıtlar ve ortak iletişim. Gerektiğinde **resmi Türk iş mektubu formatı** kullanılır.
+Resmi mektuplar, kurumlara (bankalar, devlet kurumları, ticaret odaları) yanıtlar ve ortak iletişim. Gerektiğinde resmi Türk iş mektubu formatı kullanılır.
 
 ### Çeviri ve Uyarlama
 
@@ -47,7 +47,7 @@ Uluslararası kontaklar için İngilizce (veya tersine Türkçe) iletişim tasla
 
 **Toplantı hazırlığı.** Gündem oluşturma, arka plan belgelerini derleme, brifing notları. Yönetici her toplantıya gerçekten okuyacağı tek sayfalık bir brief'le girer.
 
-**Toplantı tutanakları.** Kaba notlar; kararlar, eylem kalemleri, sahipler ve son tarihlerle yapılandırılmış bir tutanağa dönüşür. Tutanak **toplantıdan 3 gün sonra değil, 30 dakika sonra** elinizde olur.
+**Toplantı tutanakları.** Kaba notlar; kararlar, eylem kalemleri, sahipler ve son tarihlerle yapılandırılmış bir tutanağa dönüşür. Tutanak toplantıdan 30 dakika sonra elinizde olur.
 
 **Takip koordinasyonu.** Toplantı sonrası eylem takibi ve hatırlatma iletişimi, aksiyon üretecek kadar profesyonel bir dille.
 
@@ -57,11 +57,11 @@ Uluslararası kontaklar için İngilizce (veya tersine Türkçe) iletişim tasla
 
 ## Bölüm 3: Yönetici Desteği
 
-**Brifing belgeleri.** Yöneticiyi toplantı, görüşme ve sunumlara hazırlamak: kiminle buluşuyor, neden, ne bilmesi gerekir, neyi **söylememesi** gerekir, istenen sonuç ne.
+**Brifing belgeleri.** Yöneticiyi toplantı, görüşme ve sunumlara hazırlamak: kiminle buluşuyor, neden, ne bilmesi gerekir, neyi söylememesi gerekir, istenen sonuç ne.
 
 **Sunum desteği.** Slayt içeriğini yapılandırmak ve yöneticinin okumadan, güvenle sunmasına yardım eden konuşmacı notları yazmak. Claude'un PowerPoint eklentisi bu işi doğrudan sunum dosyasının içinde yapabilir; Google Slaytlar kullanıyorsanız Google Workspace eklentisi (genel beta, ücretli planlarda) aynı işi görür, bkz. [Office, Google ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/).
 
-**Takvim ve öncelik yönetimi.** Zamanlama, reddetme ve yeniden zamanlama için profesyonel yanıtlar: ilişkileri koruyan ama **yöneticinin zamanını da koruyan** bir dille.
+**Takvim ve öncelik yönetimi.** Zamanlama, reddetme ve yeniden zamanlama için profesyonel yanıtlar: ilişkileri koruyan, yöneticinin zamanını da koruyan bir dille.
 
 **Gider raporu dokümantasyonu.** Fişleri ve giderleri finansın işleyebileceği yapılandırılmış raporlara düzenlemek; bir yığın kâğıdı temiz bir başvuruya çevirir.
 
@@ -69,7 +69,7 @@ Uluslararası kontaklar için İngilizce (veya tersine Türkçe) iletişim tasla
 
 Yönetim kurulu toplantısının materyallerini toplama ve yazma büyük bir idari iştir: gündem, board pack kapak notu, destekleyici belgeler, karar taslakları.
 
-Claude **paketi yapılandırır, kapak özetlerini yazar ve eksik bir belge olup olmadığını kontrol etmenize yardım eder**. Bu, yönetici brifinginden ayrı bir iştir: brief tek kişiyi hazırlar, board pack ise birden fazla kıdemli paydaş için **resmi bir belge setidir**.
+Claude paketi yapılandırır, kapak özetlerini yazar ve eksik belge olup olmadığını kontrol etmenize yardım eder. Bu iş yönetici brifinginden ayrıdır: brief tek kişiyi hazırlar, board pack ise birden fazla kıdemli paydaş için resmi bir belge setidir.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -101,11 +101,11 @@ Claude **paketi yapılandırır, kapak özetlerini yazar ve eksik bir belge olup
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Sabah e-posta yönetim seansı**: gelen kutusu → öncelikleme → taslak yanıtlar
-- **Yoldayken iş atama**: toplantıdan çıkarken telefondan "şu notları tutanağa çevir" diyebilirsiniz. Cowork'ün telefondan görev özelliği Pro, Max, Ultra ve Team'de otomatik açıktır; görev bulutta çalışır, bilgisayarınızdaki dosyalar gerekiyorsa Desktop'ın açık ve bağlı olması gerekir ([Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch))
-- **Toplantı hazırlık → tutanak → takip döngüsü**: her toplantının tam döngüsü
-- **Seyahat koordinasyon iş akışı**: rezervasyon → seyahat programı → dönüş sonrası gider raporu
-- **Yönetim kurulu hazırlık döngüsü**: çeyreklik tam paket üretimi
+- Sabah e-posta yönetim seansı: gelen kutusu → öncelikleme → taslak yanıtlar
+- Yoldayken iş atama: toplantıdan çıkarken telefondan "şu notları tutanağa çevir" diyebilirsiniz. Cowork'ün telefondan görev özelliği Pro, Max, Ultra ve Team'de otomatik açıktır; görev bulutta çalışır, bilgisayarınızdaki dosyalar gerekiyorsa Desktop'ın açık ve bağlı olması gerekir ([Claude Mobil](/wiki/araclar/claude-mobil/#telefondan-görev-mobil-cowork-ve-dispatch))
+- Toplantı hazırlık → tutanak → takip döngüsü: her toplantının tam döngüsü
+- Seyahat koordinasyon iş akışı: rezervasyon → seyahat programı → dönüş sonrası gider raporu
+- Yönetim kurulu hazırlık döngüsü: çeyreklik tam paket üretimi
 
 ## Gerçek Örnek: Toplantı Tutanağı
 
@@ -130,7 +130,7 @@ Eğitimlerde idari ekiplerin en çok takıldığı üç nokta (Zamana eğitim ma
 - **Hassas yönetici bilgisi.** Strateji ve personel kararı gibi konular yöneticinin onayı olmadan paylaşılmaz, Claude'a da yazılmaz. Şirket yazışması işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
 - **Her e-postayı aynılaştırmak.** "Standart e-posta atayım" diye tüm yazışmayı tek kalıba sokmayın; ilişki taşıyan kişilere özel yazın.
 
-Yönetici asistanlığı ve ofis yönetiminde toplantı tutanağı en çok zaman alan iştir; adım adım yöntem için [Claude ile Toplantı Notu](/wiki/gorevler/claude-ile-toplanti-notu/) rehberine bakın. Yöneticinizin kendisi için kısa bir giriş arıyorsanız [Yönetici AI Hazırlık](/programlar/ceo-brifing/) 3 saatlik tek oturumdur.
+Yönetici asistanlığında ve ofis yönetiminde en çok zamanı toplantı tutanağı alır; adım adım yöntem için [Claude ile Toplantı Notu](/wiki/gorevler/claude-ile-toplanti-notu/) rehberine bakın. Yöneticinizin kendisi için kısa bir giriş arıyorsanız [Yönetici AI Hazırlık](/programlar/ceo-brifing/) 3 saatlik tek oturumdur.
 
 ## İlgili Sayfalar
 

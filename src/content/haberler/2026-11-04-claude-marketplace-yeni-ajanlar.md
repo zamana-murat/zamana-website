@@ -25,7 +25,7 @@ Pazar yerini ilk haberimizde anlatmıştık: [Claude Marketplace açıldı](/hab
 
 Somut örnek: bir pazarlama ekibi Webflow ile site yönetimini, Runway ile video üretimini Claude ile aynı sözleşme çatısı altında yürütebilir. Bilgi işlem ekibi ise Cyera ile çalışanların Claude'a hangi dosyaları verdiğini izleyebilir.
 
-Asıl avantaj sözleşme tarafında: tek bir taahhüdü hem Claude hem ortak ürünler için kullanmak, ayrı ayrı satın alma süreçlerini azaltabilir.
+Sözleşme tarafında tek bir taahhüdü hem Claude hem ortak ürünler için kullanmak, ayrı ayrı satın alma süreçlerini azaltabilir.
 
 ## Nasıl denersiniz?
 
@@ -35,7 +35,7 @@ Asıl avantaj sözleşme tarafında: tek bir taahhüdü hem Claude hem ortak ür
 
 ## Bilmeniz gerekenler
 
-- Yalnızca "uygun kurumsal müşteriler" yararlanabiliyor. Uygunluk ölçütleri, taahhüdün ne kadarının kullanılabileceği, fiyatlar, bölge kısıtları ve sözleşme şartları duyuruda yer almıyor; her ürünün sayfasından ya da Anthropic'ten öğrenilmeli.
+- Yalnızca "uygun kurumsal müşteriler" yararlanabiliyor. Uygunluk ölçütleri, taahhüdün ne kadarının kullanılabileceği, fiyatlar, bölge kısıtları ve sözleşme şartları duyuruda yer almıyor; her ürünün sayfasından ya da Anthropic'ten öğrenin.
 - Ortak ürünler üçüncü taraflara aittir; veri işleme koşullarını ayrıca değerlendirin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - Türkiye'den satın alma için duyuru bilgi vermiyor. Zamana aracılık yapmaz, satın alma doğrudan Anthropic ve ortaklarla yapılır.
 

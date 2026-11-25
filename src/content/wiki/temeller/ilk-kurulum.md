@@ -7,10 +7,10 @@ tags:
   - kurulum
   - baslangic
   - claude-desktop
-lastUpdated: "2026-11-18"
+lastUpdated: "2026-11-26"
 ---
 
-Bu sayfa, **hiç Claude kullanmamış birinin** sıfırdan başlangıç noktasına gelmesi için hazırlanmıştır. Her adımı tek tek anlatıyoruz, bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" şeklinde.
+Bu sayfa hiç Claude kullanmamış biri için. Her adımı tek tek anlatıyoruz; bilgisayar bilgisi gerekmez, "şuraya tıkla, bunu seç" düzeyinde ilerliyoruz.
 
 > **Bu sayfayı okumadan önce:**
 > - [Claude Nedir?](/wiki/temeller/claude-nedir/): Claude'un ne olduğunu anlayın
@@ -392,7 +392,7 @@ Kaydedin. Bu kadar yeterli, zamanla genişletirsiniz.
 
 ### 8.3 Kısa Sürümü Profil Talimatına da Yazın
 
-Settings > General > **"Instructions for Claude"** alanını açın ve yukarıdaki dosyanın en kritik 3-4 satırını (kim olduğunuz, ton, "her zaman / asla" kuralları) oraya yapıştırın. Bu alan tüm sohbetlerde ve Cowork'te geçerlidir; CLAUDE.md'yi okumayan sıradan sohbette de Claude sizi tanır.
+Settings > General > **"Instructions for Claude"** alanını açın ve yukarıdaki dosyanın en önemli 3-4 satırını (kim olduğunuz, ton, "her zaman / asla" kuralları) oraya yapıştırın. Bu alan tüm sohbetlerde ve Cowork'te geçerlidir; CLAUDE.md'yi okumayan sıradan sohbette de Claude sizi tanır.
 
 ### 8.4 Test
 
@@ -427,7 +427,7 @@ CLAUDE.md ve markdown dosyalarını düzenlemek için Notepad/TextEdit yeterli. 
 - İlk açılışta Türkçe dil paketi önerilir → kabul edin
 - Dosyaları VS Code ile açmak için: dosyaya sağ tıklayın → "VS Code ile aç"
 
-**Şart değil**: Notepad ile de yapılır.
+Zorunlu değil, Notepad ile de olur.
 
 ### Microsoft Office veya Google Workspace
 
@@ -463,7 +463,7 @@ Temel kurulum bitti. İlk haftadan sonra bakabileceğiniz güncel özellikler:
 
 ## Sıradaki Adım: İlk 7 Gün
 
-Kurulum tamam. Artık Claude Desktop ve Cowork'ü kullanabiliyorsunuz. Ama şimdi **doğru ilk hafta** önemli, bilgiyi alışkanlığa çevirmek için.
+Kurulum tamam, Claude Desktop ve Cowork'ü kullanabilirsiniz. Sıradaki iş ilk haftayı doğru geçirmek, yani bilgiyi alışkanlığa çevirmek.
 
 [**İlk 7 Gün Rehberi**](/wiki/temeller/ilk-7-gun/) → gün gün ne yapacağınızı, hangi hatalardan kaçınacağınızı, haftanın sonunda nerede olacağınızı anlatır.
 

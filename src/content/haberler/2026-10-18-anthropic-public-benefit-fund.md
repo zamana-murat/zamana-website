@@ -18,7 +18,7 @@ Anthropic, 18 Ekim'de **Public Benefit Fund** (Kamu Yararı Fonu) adlı yeni bir
 
 Claude kullanıcısı olarak Claude'un planlarında, fiyatlarında ya da özelliklerinde bir değişiklik yok. Bu haber, şirketin yapısı ve uzun vadeli yönelimiyle ilgili. Anthropic zaten "public benefit corporation" (kamu yararı şirketi) olarak kurulmuş durumda; bu adım o taahhüdü hisse düzeyine taşıyor. Şirketin kime hesap verdiğini ve amacını merak eden kurumsal karar vericiler için bağlam sağlıyor.
 
-Kısacası: şirketin değeri büyüdükçe kamu yararına ayrılan pay da büyüyebilecek. Ne kadarının, kime ve hangi biçimde gideceği ise şimdilik açık; bu kararlar fonun yönetişim yapısı açıklandığında netleşecek.
+Şirketin değeri büyüdükçe kamu yararına ayrılan pay da büyüyebilecek. Ne kadarının, kime ve hangi biçimde gideceği ise şimdilik açık; bu kararlar fonun yönetişim yapısı açıklandığında netleşecek.
 
 ## Bilmeniz gerekenler
 

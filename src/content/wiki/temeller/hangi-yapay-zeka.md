@@ -8,12 +8,12 @@ tags:
   - chatgpt
   - gemini
   - copilot
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Hangi yapay zeka daha iyi?** Tek bir doğru cevap yok, çünkü dördü de iş için yeterince iyi. Karar çoğunlukla modelin zekâsından değil, ekibinizin zaten kullandığı altyapıdan ve veri politikanızdan çıkar. Microsoft 365 kullanıyorsanız Copilot, Google Workspace kullanıyorsanız Gemini ofis araçlarının içinde hazır gelir ve kurulumu en kolay olandır. ChatGPT en geniş kullanıcı kitlesine ve geniş bir uygulama kataloğuna sahiptir. Claude ise uzun ve düzgün yazı, belge analizi, çok adımlı muhakeme ve dosya üretimi gibi işlerde güçlü bir seçimdir. Dördünün de iş planlarında veri varsayılan olarak eğitimde kullanılmaz; asıl risk, çalışanın şirket verisini kişisel hesaba yapıştırmasıdır. Pratik yol şu: işinizin türünü belirleyin, anonimleştirilmiş gerçek bir belgeyle her adayı bir hafta deneyin, ekibin çoğu zaten bir ekosistemdeyse onu başlangıç alın. Çoğu ekip için tek tedarikçi yeterlidir. İkinci aracı ancak somut bir nedeniniz varsa ekleyin.
+**Hangi yapay zeka daha iyi?** Tek bir doğru cevap yok, çünkü dördü de iş için yeterince iyi. Karar çoğunlukla modelin zekâsından değil, ekibinizin zaten kullandığı altyapıdan ve veri politikanızdan çıkar. Microsoft 365 kullanıyorsanız Copilot, Google Workspace kullanıyorsanız Gemini ofis araçlarının içinde hazır gelir ve kurulumu en kolay olandır. ChatGPT en geniş kullanıcı kitlesine ve geniş bir uygulama kataloğuna sahiptir. Claude uzun ve düzgün yazı, belge analizi, çok adımlı muhakeme ve dosya üretimi gibi işlerde öne çıkar. Dördünün de iş planlarında veri varsayılan olarak eğitimde kullanılmaz; asıl risk, çalışanın şirket verisini kişisel hesaba yapıştırmasıdır. Pratik yol şu: işinizin türünü belirleyin, anonimleştirilmiş gerçek bir belgeyle her adayı bir hafta deneyin, ekibin çoğu zaten bir ekosistemdeyse onu başlangıç alın. Çoğu ekip için tek tedarikçi yeterlidir. İkinci aracı ancak somut bir nedeniniz varsa ekleyin.
 
-Zamana Claude eğitimi verir, bu yüzden bu sayfada tarafsızlık iddiamız yok. Ama "her işte Claude" demiyoruz da: aşağıdaki tablo hangi işte hangisinin mantıklı olduğunu dürüstçe yazar.
+Zamana Claude eğitimi verir, bu yüzden tarafsız olduğumuzu iddia etmiyoruz. Yine de her işte Claude demiyoruz: tablo hangi işte hangisinin mantıklı olduğunu açıkça yazıyor.
 
 ## Karar Tablosu: Hangi Durumda Hangisi?
 
@@ -32,7 +32,7 @@ Tabloyu kural olarak değil, başlangıç hipotezi olarak okuyun. Model sürüml
 
 ## Ekip Altyapısı Neden Belirleyici?
 
-Gündelik iş çoğunlukla e-posta, tablo ve belge içinde geçer. Yapay zeka bu araçların içindeyse çalışanın bir sekme daha açması gerekmez ve benimsenme kolaylaşır. Bu yüzden "en iyi model" sorusu çoğu zaman yanlış sorudur; doğru soru "ekip hangi araçta yaşıyor" sorusudur.
+Gündelik iş çoğunlukla e-posta, tablo ve belge içinde geçer. Yapay zeka bu araçların içindeyse çalışanın bir sekme daha açması gerekmez ve benimsenme kolaylaşır. Bu yüzden "en iyi model hangisi" sorusundan önce "ekip hangi araçta çalışıyor" diye sorun.
 
 ### Zaten Microsoft 365 Kullanıyorsanız
 
@@ -44,7 +44,7 @@ Pratikte iyi çalışan düzen: günlük Office içi hızlı işler Copilot'ta, 
 
 [Gemini](/wiki/temeller/claude-vs-gemini/) Gmail, Docs, Sheets ve Slides içinde yerleşiktir ve ek kurulum istemez. Google'ın belgelerine göre Workspace (iş) hesaplarında müşteri verisi, önceden izin olmadan Workspace üretken yapay zeka modellerini eğitmek için kullanılmıyor. Kişisel Google hesabında ise etkinlik kaydı varsayılan olarak açık ve model eğitimi ile insan incelemesi için kullanılabiliyor; kapatılabilir. Yani iş verisini kişisel hesapla değil, Workspace hesabıyla işlemek önemli.
 
-Claude'un Google Docs, Sheets ve Slides eklentisi genel beta aşamasında ve ücretli planlarda. Gmail, Drive ve Calendar için [connector](/wiki/araclar/connectors/) kullanılır. Yani iki ekosistemde de Claude'u kullanabilirsiniz, ama yerleşik olanın kolaylığı yerleşikte kalır.
+Claude'un Google Docs, Sheets ve Slides eklentisi genel beta aşamasında ve ücretli planlarda. Gmail, Drive ve Calendar için [connector](/wiki/araclar/connectors/) kullanılır. İki ekosistemde de Claude'u kullanabilirsiniz, ama yerleşik aracın kolaylığı yerleşik araçta kalır.
 
 ### Hiçbirini Kullanmıyorsanız ya da Karmaysa
 

@@ -16,12 +16,12 @@ related:
   - { label: "Şirket İçi Politika (wiki)", href: "/wiki/temeller/sirket-ici-politika/" }
   - { label: "Takım ve Admin (wiki)", href: "/wiki/temeller/takim-ve-admin/" }
 order: 10
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Her seferinde Claude'a aynı şeyi anlatıyorsanız (rapor şablonunuz, e-posta üslubunuz, bir sözleşmeyi nasıl kontrol ettiğiniz) skill tam bunun için var. Skill, aslında içinde `SKILL.md` adlı bir talimat dosyası bulunan bir klasördür. İçine ister örnek dosyalar, ister betikler koyarsınız. Claude görevinize uygun skill'i kendisi seçip yükler; siz elle seçmezsiniz.
+Her seferinde Claude'a aynı şeyi anlatıyorsanız (rapor şablonunuz, e-posta üslubunuz, bir sözleşmeyi nasıl kontrol ettiğiniz) skill bunun için var. Skill, aslında içinde `SKILL.md` adlı bir talimat dosyası bulunan bir klasördür. İçine ister örnek dosyalar, ister betikler koyarsınız. Claude görevinize uygun skill'i kendisi seçip yükler; siz elle seçmezsiniz.
 
 Anthropic'in sayfası faydayı dört başlıkta özetliyor:
 
@@ -67,4 +67,4 @@ Hazır paketler isterseniz, rol bazlı skill gruplarını [Plugins sayfasında](
 
 **Türkçe.** Skill'i Türkçe yazabilirsiniz; Claude Türkçe talimatı anlar. Çok sayıda dosyası olan karmaşık skill'lerde ilk denemeleri küçük tutun.
 
-Ekibinizin kendi prosedürlerini skill'e çevirmesini birlikte yapmak isterseniz, [Zamana programları](/programlar/) iş kullanımına odaklıdır; Claude Code ya da API eğitimi vermez.
+Ekibinizin kendi prosedürlerini skill'e çevirmesini birlikte yapmak isterseniz [Zamana programlarına](/programlar/) bakabilirsiniz. Programlar iş kullanıcıları içindir, Claude Code ya da API eğitimi vermiyoruz.

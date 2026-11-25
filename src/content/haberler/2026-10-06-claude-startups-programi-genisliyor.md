@@ -15,14 +15,14 @@ Anthropic, girişimcilere yönelik Claude Startups programının kapsamını gen
 
 ## Sizin için ne değişiyor?
 
-Küçük bir ekibiniz varsa ve Claude'u şirket genelinde denemek istiyorsanız, program ilk yılın maliyetini önemli ölçüde azaltabilir. Programın içeriği şöyle:
+Küçük bir ekibiniz varsa ve Claude'u şirket genelinde denemek istiyorsanız, program ilk yılın maliyetini düşürebilir. Programın içeriği şöyle:
 
 - **Bir yıl ücretsiz Claude Team:** Yeni Team üyelerine en çok beş Premium koltuk. Premium koltuk, Team planının yoğun kullanıma yönelik üst düzey koltuk tipi.
 - **1.000 dolar API kredisi:** Onaydan hemen sonra tanımlanan, tek seferlik kredi. Ürününüze Claude'u API (yazılımların Claude'a bağlanma yolu) ile bağlayacaksanız işinize yarar.
 - **Claude Startup Stack:** Ortak araçlarda toplamda 45.000 dolara kadar değerinde indirimler. Kaynak yazı hangi ortakların olduğunu belirtmiyor.
 - **Destek ve topluluk:** Anthropic'in Applied AI ekibiyle sanal ofis saatleri, Founder House etkinlikleri, hackathonlar ve bir girişim bülteni.
 
-Örneğin İstanbul'da beş kişilik bir yazılım girişimi, ekibinin tamamı için Premium koltuk açıp ürün geliştirmeyi, müşteri yazışmalarını ve yatırımcı sunumlarını aynı çatı altında yürütebilir. Premium koltuk üst sınırı beş.
+Örneğin İstanbul'da beş kişilik bir yazılım girişimi, ekibinin tamamı için Premium koltuk açıp ürün geliştirmeyi, müşteri yazışmalarını ve yatırımcı sunumlarını aynı çatı altında yürütebilir.
 
 ## Nasıl denersiniz?
 

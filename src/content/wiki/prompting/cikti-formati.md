@@ -6,21 +6,21 @@ tags:
   - prompting
   - format
   - cikti
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Aynı içerik üç farklı formatta üç farklı kullanım değeri verir.** Tabloya yapıştırılması gereken veri madde listesi olarak gelirse 5 dakika daha kaybedersiniz. Bu sayfa Claude çıktısını istediğiniz formatta üretmenin pratik tekniklerini anlatır.
+Aynı içerik farklı formatta farklı işe yarar. Tabloya yapıştıracağınız veri madde listesi olarak gelirse 5 dakika daha kaybedersiniz. Aşağıda Claude'dan çıktıyı istediğiniz formatta almanın pratik tekniklerini bulacaksınız.
 
 ## Neden Format Önemli?
 
-Claude çoğu zaman akıcı paragraflarla yanıt verir. Ama pek çok iş çıktısı için bu uygun olmayan formattır:
+Claude çoğu zaman akıcı paragraflarla yanıt verir. İş çıktılarının birçoğunda bu format işe yaramaz:
 
 - Bir tabloya geçecek veri → kopyala-yapıştır cehennemi
 - Bir başka yazılıma yapışacak veri → JSON gerekir
 - Yöneticiye gönderilecek özet → bullet
 - Slayda eklenecek madde → kısa, yapıştırılabilir
 
-**İki yaklaşım var:** açıkça istemek veya örnek vermek. İkisi birden en güçlüsü.
+İki yolu var: formatı açıkça istemek ya da örnek vermek. İkisini birlikte kullanırsanız sonuç en iyi çıkar.
 
 ## 1. Format Açıkça İste
 
@@ -84,7 +84,7 @@ Bir başka yazılıma (Python, Excel formül, başka bir API) verilecek veri iç
 Sadece geçerli JSON döndür, başka yorum/açıklama yok.
 ```
 
-**Önemli:** "Sadece JSON, başka açıklama yok" demek kritik. Aksi halde Claude JSON'un başında ve sonunda paragraf ekleyebilir, bu da makine işlemeyi bozar.
+"Sadece JSON, başka açıklama yok" demeyi unutmayın. Demezseniz Claude JSON'un başında ve sonunda paragraf ekleyebilir, bu da makine işlemeyi bozar.
 
 JSON şemasını net belirtin, Claude tahmin etmesin.
 
@@ -187,7 +187,7 @@ Ya da:
 Sadece sayı (örn: "12.500"). Hiçbir kelime, paragraf, $ işareti, açıklama yok.
 ```
 
-Bu agresif kısıt, Claude'un "yardımcı olma" eğilimini frenler.
+Bu sert kısıt Claude'un "yardımcı olma" eğilimini frenler.
 
 ## 9. Çok Bölümlü Çıktı
 
@@ -209,7 +209,7 @@ Cevabını 4 bölümde ver, her bölümü H2 başlık olarak işaretle:
 [tablo: aksiyon | sorumlu | deadline]
 ```
 
-Bu yapıyla Claude her bölümü ayrı ele alır, atlama riski azalır.
+Bu yapıda Claude her bölümü ayrı yazar, bölüm atlama ihtimali düşer.
 
 ## 10. Ne Yapmamalı? Format Çarpışmaları
 
@@ -232,11 +232,11 @@ Format-kritik bir görev için, çıktıyı **kontrol** edin:
 Eğer doğrulama başarısızsa düzelt ve yeniden ver.
 ```
 
-Bu meta-talimat Claude'u kendi kendini kontrol etmeye zorlar.
+Bu talimat Claude'a kendi çıktısını kontrol ettirir.
 
 ## 12. Format + Few-Shot Birleşimi
 
-En güçlü teknik **örnekle göstermek**. [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) sayfasında detayı:
+En güçlü teknik örnekle göstermektir. [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) sayfasında detayı:
 
 ```
 Çıktı şu örneğe benzer formatta:
@@ -251,7 +251,7 @@ En güçlü teknik **örnekle göstermek**. [Few-Shot Örnekleme](/wiki/promptin
 [veri]
 ```
 
-Örnek görmüş Claude çok daha tutarlı format üretir.
+Örnek gören Claude formatı daha tutarlı üretir.
 
 ## 13. Türkçe Format İncelikleri
 
@@ -278,7 +278,7 @@ Claude: doğrudan kullanılabilir 5 satırlık tablo
 
 ## 15. Kendi Format Şablonlarınız
 
-Sık yaptığınız her işin **bir favori format şablonu** olsun ve her seferinde yazmayın, kalıcı bir yere koyun:
+Sık yaptığınız her işin bir format şablonu olsun; her seferinde yazmayın, kalıcı bir yere koyun:
 
 - **Tüm sohbetleriniz için:** profil talimatı ("Instructions for Claude", Settings > General).
 - **Tek bir iş için:** o işin [Claude Projesi](/wiki/araclar/projects/) talimatı.

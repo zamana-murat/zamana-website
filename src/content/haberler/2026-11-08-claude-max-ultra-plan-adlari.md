@@ -15,7 +15,7 @@ Claude'un bireysel üst planlarının adı değişti. Eski "Max 5x" artık sadec
 
 Yeni bir plan eklenmedi, yalnızca etiketler değişti. Daha önce "Max 5x" diye bildiğiniz plan, Pro'nun her 5 saatte ve her hafta 5 katı kullanımını veriyor. Adı artık Max. "Max 20x" ise Ultra oldu ve Pro'nun haftalık 10 katı kullanımını sunuyor.
 
-Ultra'da bir ayrıntı dikkat çekiyor: doğrulanmış hesaplarda 5 saatlik limit yok, yalnızca haftalık limit işliyor. Hesabınızın doğrulanması otomatik, hesap ve ödeme geçmişinize bakılarak yapılıyor. Doğrulanana kadar geçici bir 5 saatlik limit uygulanabilir. Kendi durumunuzu görmek için Ayarlar'dan Kullanım (Settings > Usage) sayfasına bakın, orada "Current session" çubuğu görünmüyorsa hesabınız doğrulanmıştır.
+Ultra'da doğrulanmış hesaplarda 5 saatlik limit yok, yalnızca haftalık limit işliyor. Hesabınızın doğrulanması otomatik, hesap ve ödeme geçmişinize bakılarak yapılıyor. Doğrulanana kadar geçici bir 5 saatlik limit uygulanabilir. Kendi durumunuzu görmek için Ayarlar'dan Kullanım (Settings > Usage) sayfasına bakın, orada "Current session" çubuğu görünmüyorsa hesabınız doğrulanmıştır.
 
 İkinci yenilik aylık API kredisi. API, yazılımların Claude'u kendi içinden çağırma yoludur ve normalde kullanıma göre ayrıca ücretlendirilir. Artık şu planlara her ay kredi tanımlanıyor:
 

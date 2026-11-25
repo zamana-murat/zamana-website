@@ -18,7 +18,7 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Fatura, KDV ve stopaj (wiki)", href: "/wiki/temeller/fatura-ve-kdv/" }
 order: 0
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Claude Enterprise nedir?
@@ -66,7 +66,7 @@ Enterprise'ı Team'den ayıran asıl şey bu katman. BT ve bilgi güvenliği bir
 
 ## Kaynak sayfadaki örnekler
 
-Anthropic'in sayfasında paylaşılan sonuçlardan birkaçı (rakamlar Anthropic'e ve ilgili şirketlere aittir): Spotify karmaşık kod geçişlerinde harcanan sürenin yüzde 90 azaldığını, Moody's bir kredi notu hazırlığının 40 saatten 2 dakikaya indiğini, Slack kullanıcı başına haftada 97 dakika kazanıldığını söylüyor. Avrupa'dan adı verilmeyen bir yaşam bilimleri şirketi, klinik çalışma belgelerinin hazırlanmasının 10 haftadan 10 dakikaya indiğini aktarıyor. Bu sonuçlar büyük ölçüde bu şirketlerin kendi iş akışlarını yeniden kurmasından geliyor, lisans almakla kendiliğinden ortaya çıkmıyor.
+Anthropic'in sayfasında paylaşılan sonuçlardan birkaçı (rakamlar Anthropic'e ve ilgili şirketlere aittir): Spotify karmaşık kod geçişlerinde harcanan sürenin yüzde 90 azaldığını, Moody's bir kredi notu hazırlığının 40 saatten 2 dakikaya indiğini, Slack kullanıcı başına haftada 97 dakika kazanıldığını söylüyor. Avrupa'dan adı verilmeyen bir yaşam bilimleri şirketi, klinik çalışma belgelerinin hazırlanmasının 10 haftadan 10 dakikaya indiğini aktarıyor. Bu sonuçlar için şirketler iş akışlarını yeniden kurdu; lisans almak tek başına aynı sonucu getirmez.
 
 ## Fiyat modeli
 
@@ -96,7 +96,7 @@ DPA ve "eğitimde kullanılmama" güvencesi KVKK dosyanız için sağlam bir tem
 
 ## Ekibi yetiştirmek: Claude Academy ve Frontier Academy
 
-Anthropic'in iki ayrı eğitim yolu var ve sık karıştırılıyor:
+Anthropic'in iki ayrı eğitim yolu var:
 
 - **Claude Academy** ([academy.claude.com](https://academy.claude.com)): herkese açık, ücretsiz, İngilizce çevrim içi kurslar; yapay zeka okuryazarlığından Claude Code ve Cowork'e kadar. Bitirene rozet ya da sertifika verilir.
 - **Claude Frontier Academy:** kurumların en güçlü mühendislerini aday gösterdiği, Claude ile gerçek kurulum yapmayı öğreten program. İlk adımı "Frontier Deployed Engineer" (FDE) rezidansı: dört günlük yoğun bölüm (üç gün yüz yüze, dördüncü gün notlandırılan senaryo, geçene "Claude Resident Engineer" rozeti), ardından katılımcının kendi kurumunda Claude kurulumuna liderlik ettiği 12 haftalık rezidans ve son pratik sınavla "Claude Frontier Deployed Engineer" rozeti. **Bireysel başvuru yok;** program Enterprise müşterileri ve partnerlerle başlıyor, müşteri Anthropic hesap ekibine, partner kendi partner yöneticisine başvurur. Rezidans şu an seçili bir grupla erken erişimde. Anthropic 100 milyon dolarlık ilk yatırımla 2027 sonuna kadar 10.000 FDE yetiştirmeyi hedefliyor ve ilk belgeleri 2027 başında vermeyi bekliyor. Ücret ve yer bilgisi yayımlanmadı. Kaynak: [claude.com/programs/frontier-academy](https://claude.com/programs/frontier-academy).
@@ -109,4 +109,4 @@ Claude Türkçeyi resmi yazışmada da teknik terminolojide de iyi kullanır, am
 
 ## Zamana'nın notu
 
-Enterprise lisansı bir satın alma kararıdır, verim ise kullanımdan gelir. Sık görülen tablo şu: kurum lisansı alır, SSO'yu kurar, ama çalışanların çoğu Claude'u bir arama motoru gibi kullanmaya devam eder. Bizim önerimiz önce iki ya da üç departmanla, ölçülebilir işlerle küçük başlamak, kullanım verisi ve iç politika (hangi veri girilir, hangisi girilmez) netleştikten sonra yaygınlaştırmak. Ekiplerin bu süreçte işe dönük kullanım alışkanlığı kazanması için [Kurumsal Program](/programlar/kurumsal/) tam bu aşamaya göre tasarlandı.
+Sık görülen durum şu: kurum lisansı alır, SSO'yu kurar, ama çalışanların çoğu Claude'u bir arama motoru gibi kullanmaya devam eder. Verim lisanstan değil kullanımdan gelir. Bu yüzden önce iki ya da üç departmanla, ölçülebilir işlerle küçük başlamayı, kullanım verisi ve iç politika (hangi veri girilir, hangisi girilmez) netleşince yaygınlaştırmayı öneriyoruz. [Kurumsal Program](/programlar/kurumsal/) tam bu aşama için tasarlandı: ekiplerin işe dönük kullanım alışkanlığı kazanmasını hedefliyor.

@@ -7,11 +7,10 @@ tags:
   - pdf
   - ozetleme
   - belge
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude ile PDF okumak için dosyayı sohbete sürükleyip ne istediğinizi yazmanız yeterlidir.** Claude PDF'in metnini okur; 100 sayfaya kadar olan PDF'lerde sayfalardaki grafik, tablo ve görselleri de görür, 101-1000 sayfa arasında ise yalnız metni okur. Sohbette dosya başına 500 MB ve en çok 20 dosya yüklenebilir. En iyi sonuç için sadece "özetle" demeyin: kim okuyacak, kaç maddelik özet istediğiniz, hangi bölümün önemli olduğu ve hangi soruya cevap aradığınızı yazın. Uzun belgelerde sorunuzu belgeden sonra, en sona koyun. Claude sayfa numarası vererek alıntı yapabilir, ama alıntıyı belgede kontrol etmek sizin işinizdir. Taranmış (fotoğraf gibi) PDF'lerde sonuçlar zayıflayabilir. Gizli sözleşme, müşteri ya da çalışan verisi içeren belgeleri yüklemeden önce şirket politikanızı ve KVKK kurallarını kontrol edin. Bu rehber, tek belgeyi özetlemekten iki belgeyi karşılaştırmaya kadar dört hazır Türkçe prompt, sayfa ve boyut sınırları ve sık yapılan hataları içerir.
-
+**Claude ile PDF okumak için dosyayı sohbete sürükleyip ne istediğinizi yazmanız yeterlidir.** Claude PDF'in metnini okur; 100 sayfaya kadar olan PDF'lerde sayfalardaki grafik, tablo ve görselleri de görür, 101-1000 sayfa arasında ise yalnız metni okur. Sohbette dosya başına 500 MB ve en çok 20 dosya yüklenebilir. En iyi sonuç için sadece "özetle" demeyin: kim okuyacak, kaç maddelik özet istediğiniz, hangi bölümün önemli olduğu ve hangi soruya cevap aradığınızı yazın. Uzun belgelerde sorunuzu belgeden sonra, en sona koyun. Claude sayfa numarası vererek alıntı yapabilir, ama alıntıyı belgede kontrol etmek sizin işinizdir. Taranmış (fotoğraf gibi) PDF'lerde sonuçlar zayıflayabilir. Gizli sözleşme, müşteri ya da çalışan verisi içeren belgeleri yüklemeden önce şirket politikanızı ve KVKK kurallarını kontrol edin.
 ## Adım adım: PDF nasıl özetlenir?
 
 1. **claude.ai'de yeni sohbet açın** ve PDF'i mesaj kutusuna sürükleyin ya da ataş simgesiyle seçin. Free dahil tüm planlarda çalışır.

@@ -57,7 +57,7 @@ import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../..
       <h1>Yapay zeka eğitimi ne kadar tutar, nasıl seçilir?</h1>
       <p class="lead">
         Kurumsal yapay zeka eğitimi fiyatları süreye, kişi sayısına ve eğitimin ne kadar sizin işinize göre kurulduğuna göre değişir.
-        Aşağıda Zamana fiyatları, fiyatı neyin belirlediği ve herhangi bir sağlayıcıya sorabileceğiniz 7 soru var. Sonra üç ana programı yan yana görebilirsiniz.
+        Sayfada Zamana fiyatlarını, fiyatı neyin belirlediğini, herhangi bir sağlayıcıya sorabileceğiniz 7 soruyu ve üç ana programın yan yana karşılaştırmasını bulursunuz.
       </p>
     </div>
   </section>
@@ -78,7 +78,7 @@ import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../..
           <tr><td><a href="/programlar/ai-sampiyonu/">AI Şampiyonu</a> (Şampiyon yolu / Eğitmen yolu)</td><td><strong><Price amount={LIST.sampiyon} /></strong> (Kurumsal müşteriye <Price amount={LIST.sampiyonRetainer} />) / <strong><Price amount={LIST.egitmen} /></strong></td></tr>
           <tr><td><a href="/programlar/ihracatcilar/">İhracatçılar</a> ve <a href="/programlar/hukuk-burolari/">Hukuk Büroları</a></td><td><strong><Price amount={LIST.egitmen} /></strong> tek kişi, ek kişi + <Price amount={LIST.ekKisi} /> (2-4 kişi)</td></tr>
           <tr><td><a href="/programlar/kamu-kurumlari/">Kamu Kurumları</a> semineri / atölye</td><td><strong><Price amount={LIST.egitmen} /></strong> (aynı kurumda ikinci seminer <Price amount={LIST.kamuIkinciSeminer} />) / <strong><Price amount={LIST.kamuAtolye} /></strong></td></tr>
-          <tr><td><a href="/programlar/akademisyenler/">Akademisyenler</a></td><td><strong><Price amount={LIST.kamuAtolye} /></strong>, grup (3-6 kişi) <Price amount={LIST.akademisyenGrup} /></td></tr>
+          <tr><td><a href="/programlar/akademisyenler/">Akademisyenler</a></td><td><strong><Price amount={LIST.akademisyen} /></strong>, grup (3-6 kişi) <Price amount={LIST.akademisyenGrup} /></td></tr>
           <tr><td><a href="/programlar/yeni-mezun/">Yeni Mezun</a> kohortu</td><td><strong><Price amount={LIST.yeniMezun} /></strong> kişi başı</td></tr>
         </tbody>
       </table>
@@ -89,7 +89,7 @@ import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../..
     <div class="container container-narrow">
       <h2 class="section-title">Eğitim fiyatını ne belirler?</h2>
       <ul class="guide-list">
-        <li><strong>Süre ve destek.</strong> Üç saatlik tek oturum ile 3 ay boyunca telefondan ulaşılabilen bir program aynı iş değildir. Fiyat farkının büyük kısmı burada.</li>
+        <li><strong>Süre ve destek.</strong> Üç saatlik tek oturum ile 3 ay boyunca telefondan ulaşılabilen bir program iki ayrı iştir. Fiyat farkı en çok buradan gelir.</li>
         <li><strong>Kaç kişi, hangi roller.</strong> Altı kişilik bir çekirdek grup ile tek kişilik birebir çalışma farklı emek ister. Rol bazlı müfredat (satış, finans, hukuk) hazırlık gerektirir.</li>
         <li><strong>Sizin işinize göre kurulması.</strong> Hazır slayt anlatmak ucuzdur. Sizin dosyalarınız, teklifleriniz ve süreçleriniz üzerinden çalışmak her ekip için ayrı hazırlık demek.</li>
         <li><strong>Yer.</strong> İstanbul içi yerinde oturumda ek ücret yok. İstanbul dışında yerinde oturum seçilirse yol ve konaklama için tipik ek 7.000-13.000 TL, online seçenekte bu ek yok.</li>
@@ -102,11 +102,11 @@ import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../..
     <div class="container container-narrow">
       <h2 class="section-title">Tek günlük kurs mu, 3 aylık program mı?</h2>
       <p class="text-muted">
-        İkisi de yanlış bir seçim değil, farklı işler görüyor.
+        İkisi de işe yarar, ama farklı işlere.
       </p>
       <ul class="guide-list">
-        <li><strong>Tek günlük kurs</strong> aracı tanımak, kavramları öğrenmek ve karar verecek kişiyi bilgilendirmek için yeterli olabilir. Maliyeti düşüktür. Eksik kalan: öğrenilen şeyi ertesi gün kendi işine taşımak ve takılınca soracak biri.</li>
-        <li><strong>3 aylık program</strong> alışkanlık kurmak içindir. Öğrenme oturumda değil, oturumlar arasındaki gerçek işte yaşanır; bu yüzden süre ve destek bilinçli tasarımdır. Maliyeti yüksektir ve ekibin gerçekten zaman ayırmasını gerektirir.</li>
+        <li><strong>Tek günlük kurs</strong> aracı tanımak, kavramları öğrenmek ve karar verecek kişiyi bilgilendirmek için yeterli olabilir. Maliyeti düşük. Eksik kalan: öğrenilen şeyi ertesi gün kendi işine taşımak ve takılınca soracak biri.</li>
+        <li><strong>3 aylık program</strong> alışkanlık kurmak içindir. Öğrenme oturumlar arasındaki gerçek işte gerçekleşir, bu yüzden süreyi ve desteği bilerek böyle kurduk. Maliyeti yüksek, ekibin de gerçekten zaman ayırması gerekir.</li>
         <li>Emin değilseniz küçük başlayın: 3 saatlik <a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>, 30 gün içinde Bireysel ya da Kurumsal Program'a geçerseniz ücret düşülür.</li>
       </ul>
     </div>

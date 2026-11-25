@@ -7,10 +7,10 @@ tags:
   - excel
   - formul
   - analiz
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude'u Excel'de üç yoldan kullanabilirsiniz:** sohbete .xlsx ya da .csv dosyası yükleyip soru sormak, Excel'in içinde yan panelde çalışan Claude in Excel eklentisini açmak, ya da Cowork'te bir klasördeki tabloları işletmek. En sık işler formül yazdırmak, hatalı formülü bulmak, dağınık tabloyu temizlemek, veriyi yorumlatmak ve basit bir makro (VBA) hazırlatmaktır. Pratik yol şudur: dosyayı yükleyin ya da eklentiyi açın, sütunların ne anlama geldiğini ve istediğiniz sonucu düz Türkçeyle yazın, Claude'un önerdiği formülü önce boş bir hücrede deneyin. Excel eklentisi genel kullanımdadır ve ücretli planlarda (Pro, Max, Ultra, Team, Enterprise) bulunur, Free planda yoktur. Claude hesapta hata yapabilir; toplamları ve kritik sayıları bir kez ikinci bir yoldan doğrulayın. Müşteri ve çalışan verisini yüklemeden önce anonimleştirin. Bu rehberde formül, temizleme, analiz ve makro için beş hazır Türkçe prompt, hangi yüzeyin hangi işe uygun olduğu ve sık yapılan hatalar bulunur.
+**Claude'u Excel'de üç yoldan kullanabilirsiniz:** sohbete .xlsx ya da .csv dosyası yükleyip soru sormak, Excel'in içinde yan panelde çalışan Claude in Excel eklentisini açmak, ya da Cowork'te bir klasördeki tabloları işletmek. En sık işler formül yazdırmak, hatalı formülü bulmak, dağınık tabloyu temizlemek, veriyi yorumlatmak ve basit bir makro (VBA) hazırlatmaktır. Pratik yol şudur: dosyayı yükleyin ya da eklentiyi açın, sütunların ne anlama geldiğini ve istediğiniz sonucu düz Türkçeyle yazın, Claude'un önerdiği formülü önce boş bir hücrede deneyin. Excel eklentisi genel kullanımdadır ve ücretli planlarda (Pro, Max, Ultra, Team, Enterprise) bulunur, Free planda yoktur. Claude hesapta hata yapabilir; toplamları ve kritik sayıları bir kez ikinci bir yoldan doğrulayın. Müşteri ve çalışan verisini yüklemeden önce anonimleştirin.
 
 ## Hangi yüzeyi kullanmalıyım?
 

@@ -9,12 +9,12 @@ tags:
   - pro
   - team
   - enterprise
-lastUpdated: "2026-11-18"
+lastUpdated: "2026-11-26"
 ---
 
-Claude'un altı ana planı vardır: Free, Pro, Max, Ultra, Team ve Enterprise. Plan seçimi sadece fiyatla ilgili değildir, hangi özelliklerin kullanılabilir olduğunu, özellikle **hangi modellere erişildiğini, connector'ları, paylaşılan projeleri ve kurumsal uyum araçlarını** doğrudan belirler.
+Claude'un altı ana planı vardır: Free, Pro, Max, Ultra, Team ve Enterprise. Plan fiyatın yanında hangi özelliklerin kullanılabileceğini de belirler: hangi modellere erişildiğini, connector'ları, paylaşılan projeleri ve kurumsal uyum araçlarını.
 
-Bu sayfa her planın ne sunduğunu ve kime uygun olduğunu açıklar. Limitlerin nasıl işlediği için ayrı bir sayfa var: [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/).
+Aşağıda her planın ne sunduğu ve kime uygun olduğu var. Limitlerin nasıl işlediği ayrı sayfada: [Kullanım Limitleri ve Usage Credits](/wiki/temeller/kullanim-limitleri/).
 
 > **Pratik öneri (yeni kullanıcı için):** Claude'a yeni başlayanlara ilk ay **Max** (eski adı Max 5x, $100/ay) öneriyoruz, çünkü Pro'nun ($20/ay) limitine yeni kullanıcı çabuk çarpar. İlk ayda herkes yoğun keşif yapar: connector kurar, skill dener, uzun belge yükler, günde saatlerce çalışır. Pro'da limit bu tempoda birkaç saatte dolabilir ve kişi "çalışmıyor" diye vazgeçebilir. Bu zorunlu değil: Pro ile başlayıp gerektiğinde yükseltmek de olur.
 >
@@ -23,7 +23,7 @@ Bu sayfa her planın ne sunduğunu ve kime uygun olduğunu açıklar. Limitlerin
 > - Haftada birkaç çıktıya düşen veya günde 1-3 saat kullanan → Pro'ya ($20) iner
 > - Çok yoğun, çoklu iş akışı → Ultra'ya ($200) çıkabilir
 >
-> **Max pahalı görünür, ama kötü bir ilk deneyimle vazgeçmekten ucuzdur.** Max ayrıca Fable gibi en güçlü modeli plana dahil sunar ([Modeller ve Planlar](#modeller-ve-planlar)).
+> Max pahalı görünür, ama kötü bir ilk deneyimle vazgeçmekten ucuz kalır. Max ayrıca Fable gibi en güçlü modeli plana dahil sunar ([Modeller ve Planlar](#modeller-ve-planlar)).
 
 ## Türkiye'de TL Olarak Ne Ödersiniz?
 
@@ -59,13 +59,13 @@ Claude'u hiç kullanmamış bir kişi için giriş kapısıdır. Kayıttan verim
 
 ### Pro Plan, 20 USD/ay (yıllık ödemede 17 USD/ay), kişi başı
 
-**Steady-state kullanım için ideal plan**; günde 1-3 saat aktif kullanım Pro'da rahatça karşılanır. Yeni başlayan biri için ilk ay yetersiz kalabilir (yukarıdaki öneriye bakın).
+Steady-state kullanım için uygun plan: günde 1-3 saat aktif kullanım Pro'da rahatça karşılanır. Yeni başlayan biri için ilk ay yetersiz kalabilir (yukarıdaki öneriye bakın).
 
 Pro planında neler vardır:
 
 - Claude Sonnet 5.5'e tam erişim (günlük iş için ana model)
 - Claude Opus 5.5 model seçicide açıktır, ağır işler için kullanılır ([Modeller](/wiki/temeller/modeller/))
-- Fable 5.1 plana dahil değildir, yalnızca **kullanım kredisi** (usage credits) ile kullanılır
+- Fable plana dahil değildir, yalnızca **kullanım kredisi** (usage credits) ile kullanılır
 - Free'ye göre çok daha yüksek limit (5 saatlik pencere + haftalık limit; Ultra'da doğrulanmış hesapta 5 saatlik pencere yok) ve yoğun saatlerde öncelikli erişim
 - Sınırsız Project + her projede RAG zenginleştirmeli bilgi tabanı
 - **Cowork'e tam erişim** (skills, plugins, connector'lar, scheduled tasks, workspace klasörü). Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude'da birleşiyor, Pro, Max ve Ultra'da kademeli açılıyor ([haber](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/)). 6 Ekim 2026'dan itibaren yeni Cowork görevleri bulutta çalışır
@@ -81,13 +81,13 @@ Pro planında neler vardır:
 
 ### Max (100 USD/ay) ve Ultra (200 USD/ay) Planları, kişi başı
 
-**Yeni başlayan kullanıcı için ideal başlangıç planıdır.** İlk ayın yoğun keşif temposunda Pro çoğu zaman yetmez, Max bu sürtünmeyi ortadan kaldırır. Pro'nun limitine düzenli takılan güç kullanıcıları için de doğru plandır. Max ve Ultra yalnızca aylık ödenir, yıllık seçenek yoktur.
+Yeni başlayan kullanıcıya ilk ay için öneririz. İlk ayın yoğun keşif temposunda Pro çoğu zaman yetmez, Max bu sürtünmeyi ortadan kaldırır. Pro'nun limitine düzenli takılan güç kullanıcıları için de doğru plandır. Max ve Ultra yalnızca aylık ödenir, yıllık seçenek yoktur.
 
 Pro'daki her şey, ek olarak:
 
 - Pro'ya göre Max'te 5 kat, Ultra'da haftalık 10 kat kullanım limiti (Ultra'da doğrulanmış hesapta 5 saatlik oturum limiti yoktur; haftalık limit sürer)
 - Aylık API kredisi (aşağıda "Aylık API kredisi")
-- **Fable 5.1 plana dahildir**: haftalık limitin en fazla %50'sine kadar Fable kullanılabilir
+- **Fable plana dahildir**: haftalık limitin en fazla %50'sine kadar Fable kullanılabilir
 - Daha yüksek çıktı limiti
 
 **Kime uygun:**
@@ -115,19 +115,19 @@ Yani yıllık taahhüt, aylık ödemeye göre koltuk başına tasarruf sağlar.
 - Merkezi faturalama, yönetim panosu ve harcama tavanı
 - Yönetici denetimi, kullanıcı ekleme/çıkarma
 - Kurumsal masaüstü dağıtımı
-- Fable 5.1 plana dahil değildir, kullanım kredisiyle kullanılır
+- Fable plana dahil değildir, kullanım kredisiyle kullanılır
 
 **Premium koltukta ek olarak:**
 
 - Pro'nun oturum başına kullanımının **6,25 katı** limit (yoğun, sürekli çalışan kullanıcılar için)
-- **Fable 5.1 plana dahildir** (haftalık limitin en fazla %50'sine kadar)
+- **Fable plana dahildir** (haftalık limitin en fazla %50'sine kadar)
 - Claude Code kotası da bu yüksek limitten gelir; geliştirici ekipler için uygundur
 
 **Kime uygun:** Bireysel Pro/Max/Ultra aboneliklerinden çıkıp Claude'u şirket genelinde kurumsallaştırmak isteyen şirketler. Yaygınlaşma aşamasında doğal bir adımdır. Merkezi fatura ve paylaşılan proje istiyorsanız 2 kişiyle bile başlanabilir. Team planı zorunlu değildir; merkezi yönetim, faturalama ve veri kontrolü için öneriyoruz.
 
 ### Enterprise Plan, 20 USD/koltuk/ay + kullanım API fiyatıyla
 
-Büyük organizasyonlar için: maksimum kontrol, uyum ve güvenlik isteyen kuruluşlar. Enterprise **kullanım bazlıdır**. Koltuk ücreti (yıllık faturalı) kullanımı içermez; sohbet, Claude Code ve Cowork'teki her token standart API fiyatıyla ayrıca faturalanır. Self-serve başlangıç için en az 20 koltuk gerekir, satış ekibiyle yapılan sözleşmelerde eşik daha yüksek olabilir. Eski koltuk bazlı (standard/premium) Enterprise sözleşmeleri mevcut müşterilerde hâlâ görülebilir.
+Daha sıkı kontrol, uyum ve güvenlik isteyen büyük kuruluşlar için. Enterprise **kullanım bazlıdır**. Koltuk ücreti (yıllık faturalı) kullanımı içermez; sohbet, Claude Code ve Cowork'teki her token standart API fiyatıyla ayrıca faturalanır. Self-serve başlangıç için en az 20 koltuk gerekir, satış ekibiyle yapılan sözleşmelerde eşik daha yüksek olabilir. Eski koltuk bazlı (standard/premium) Enterprise sözleşmeleri mevcut müşterilerde hâlâ görülebilir.
 
 - RBAC (rol bazlı erişim), özel roller, model yetkilendirme
 - Audit log, Compliance API, OpenTelemetry
@@ -144,7 +144,7 @@ Büyük organizasyonlar için: maksimum kontrol, uyum ve güvenlik isteyen kurul
 
 ## Modeller ve Planlar
 
-Zamana'nın çizgisi: **günlük iş için Sonnet 5.5** (Sonnet her planda vardır), ağır işler için Opus 5.5 (Pro ve üstünde), en güçlüsü için Fable 5.1. Haiku en hızlı ve hafif modeldir, basit işler içindir; güncel sürümü Haiku 5.5'tir (API'de), Haiku 4.5 legacy kaldı.
+Zamana'nın çizgisi: **günlük iş için Sonnet 5.5** (Sonnet her planda vardır), ağır işler için Opus 5.5 (Pro ve üstünde), en güçlüsü için Fable 5.2 (önceki sürüm Fable 5.1 hâlâ seçilebilir, $10 / $50). Haiku en hızlı ve hafif modeldir, basit işler içindir; güncel sürümü Haiku 5.5'tir (API'de), Haiku 4.5 legacy kaldı.
 
 **Fable erişimi plana göre farklıdır:**
 
@@ -214,17 +214,17 @@ Tipik bir şirketin planı zamanla doğal bir şekilde evrilir:
 
 Plan seçimi ticari büyüklüğe ve kurumsal olgunluğa göre aşamalı olarak ilerler, hep birden büyük bir plana atlamak gereksizdir.
 
-> **Not:** Plan seçmek işin kolay kısmı. Zor kısım, ekibin o planı gerçekten verimli kullanması: kimin hangi işi Claude'a vereceği, neyin gizli kalacağı, çıktının nasıl kontrol edileceği. Bu bir lisans değil alışkanlık meselesidir. Ekibiniz için yapılandırılmış bir [kurumsal yapay zeka eğitimi](/yapay-zeka-egitimi/) arıyorsanız ya da doğrudan [kurumsal Claude programı](/programlar/kurumsal/) ayrıntısına bakmak isterseniz, ikisi de planı aldıktan sonraki adımı anlatır.
+> **Not:** Plan seçmek işin kolay kısmı. Zor kısım, ekibin o planı gerçekten verimli kullanması: kimin hangi işi Claude'a vereceği, neyin gizli kalacağı, çıktının nasıl kontrol edileceği. Ekibiniz için yapılandırılmış bir [kurumsal yapay zeka eğitimi](/yapay-zeka-egitimi/) arıyorsanız ya da doğrudan [kurumsal Claude programı](/programlar/kurumsal/) ayrıntısına bakmak isterseniz, ikisi de planı aldıktan sonraki adımı anlatır.
 
 ## KVKK ve Veri Konumu
 
-Türkiye'deki şirketler için kritik bir nokta: **Kişisel veri işleyen bir süreçte hangi plan KVKK-uyumlu çalışır?**
+Türkiye'deki şirketler için sorulacak soru: **Kişisel veri işleyen bir süreçte hangi plan KVKK-uyumlu çalışır?**
 
-Önce şunu ayıralım: eğitim kullanımı her planda kontrol edilebilir, ama kontrol biçimi tüketici ve ticari planlar arasında farklıdır.
+Eğitim kullanımı her planda kontrol edilebilir, ama kontrol biçimi tüketici ve ticari planlar arasında farklıdır.
 
 - **Free, Pro, Max, Ultra (tüketici planları):** Konuşmaların model eğitiminde kullanılıp kullanılmayacağını **kullanıcı seçer**. Ayar **"Claude'u geliştirmeye yardım et"** (*Help improve Claude*) adıyla **Settings → Privacy** altındadır ve istediğiniz zaman değiştirilebilir. Anthropic'in duyurusuna göre eğitime izin verilirse veri 5 yıl, verilmezse 30 gün saklanır. Varsayılan konumu her hesapta kendiniz kontrol edin; kurumsal kullanımda ayarın **kapalı** olması önerilir. Yine de hassas kişisel veri içeren işlerde dikkatli olun: çalışan adı, kimlik numarası, müşteri verisi gibi bilgileri Claude'a vermeyin. Bu planlar DPA kapsamı dışındadır.
 
-- **Team:** Konuşmalar **varsayılan olarak** model eğitiminde kullanılmaz; bu bir ayar değil, ticari sözleşmenin güvencesidir. Yönetim paneli ve SSO ile kimlik kontrolü de gelir. KVKK açısından bireysel planlara göre ciddi üstünlüğü vardır. Anthropic'in DPA'sı (Veri İşleme Sözleşmesi) ticari şartlara otomatik dahildir, ayrıca imza gerekmez.
+- **Team:** Konuşmalar **varsayılan olarak** model eğitiminde kullanılmaz; bu bir ayar değil, ticari sözleşmenin güvencesidir. Yönetim paneli ve SSO ile kimlik kontrolü de gelir. KVKK açısından bireysel planlardan belirgin biçimde avantajlıdır. Anthropic'in DPA'sı (Veri İşleme Sözleşmesi) ticari şartlara otomatik dahildir, ayrıca imza gerekmez.
 
 - **Enterprise:** Konuşmalar **varsayılan olarak** eğitimde kullanılmaz. DPA standarttır, veri saklama süresi müzakereye açıktır. Zero Data Retention plana dahil değildir: API için kuruluş başına etkinleştirilen bir sözleşme düzenlemesidir ve satış ekibiyle talep edilir. DPA ve eğitimde kullanılmama güvencesi KVKK dosyanız için güçlü bir temeldir, ama KVKK uyumunun yerine geçmez.
 
@@ -248,7 +248,7 @@ Tüm planların tüm özelliklerini tek tabloda görebilmek için:
 | **Minimum kullanıcı** | 1 | 1 | 1 | 2 koltuk (en çok 150) | Self-serve 20 koltuk |
 | Sonnet 5.5 | Sonnet ✅ (sürüm belirtilmez) | ✅ | ✅ | ✅ | ✅ |
 | Opus 5.5 | ❌ | ✅ | ✅ | ✅ | ✅ |
-| Fable 5.1 | ❌ | Yalnız kullanım kredisiyle | ✅ plana dahil (haftalık limitin en çok %50'si) | Standard: kredi; Premium: plana dahil | API fiyatıyla faturalanır |
+| Fable | ❌ | Yalnız kullanım kredisiyle | ✅ plana dahil (haftalık limitin en çok %50'si) | Standard: kredi; Premium: plana dahil | API fiyatıyla faturalanır |
 | Haiku (güncel: 5.5, API; 4.5 legacy) | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Kullanım limiti | Çok sıkı | Baz | Max: Pro'nun 5 katı; Ultra: Pro'nun haftalık 10 katı | Standard: Pro'nun 1,25 katı; Premium: 6,25 katı (oturum başına) | Kullanım bazlı, API fiyatıyla |
 | **Context window** | Modele bağlı (Free için resmi değer yok) | 1M* | 1M* | 1M* | 1M* |
@@ -361,7 +361,7 @@ Anthropic, Agent SDK ve `claude -p` gibi programatik kullanım için abonelikten
 
 ## Güncel Fiyat Doğrulaması
 
-Anthropic fiyatlarını ve plan özelliklerini zaman zaman günceller. Bu sayfadaki rakamlar 8 Kasım 2026 itibarıyla doğrulanmıştır, fiyatlar USD ve vergi hariçtir. Kritik bir satın alma kararı vermeden önce güncel fiyatlar için **[claude.com/pricing](https://claude.com/pricing)** sayfasını kontrol edin.
+Anthropic fiyatlarını ve plan özelliklerini zaman zaman günceller. Bu sayfadaki rakamlar 8 Kasım 2026 itibarıyla doğrulanmıştır, fiyatlar USD ve vergi hariçtir. Önemli bir satın alma kararı vermeden önce güncel fiyatlar için **[claude.com/pricing](https://claude.com/pricing)** sayfasını kontrol edin.
 
 ## İlgili Sayfalar
 

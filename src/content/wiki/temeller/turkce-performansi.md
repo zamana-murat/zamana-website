@@ -7,16 +7,16 @@ tags:
   - turkce
   - dil-kalitesi
   - yazim
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-25"
 ---
 
-"Claude Türkçeyi ne kadar iyi konuşur?" soyut bir sorudur. Bu sayfa somut cevap verir: dört register (dilsel kayıt) için Claude'un tipik çıktılarını ve her birindeki güçlü ve zayıf yönleri gösterir. Registerlar: resmi yazışma, teknik terminoloji, hukuki dil ve yaratıcı içerik.
+Claude'un Türkçesini anlamanın en kolay yolu örneklerine bakmak. Bu sayfada dört register (dilsel kayıt) için Claude'un tipik bir çıktısı ve her birinde nerede iyi, nerede zayıf olduğu var: resmi yazışma, teknik terminoloji, hukuki dil ve yaratıcı içerik.
 
-> **Kısa cevap:** Evet, Claude Türkçe biliyor; profesyonel Türkçeyi büyük ölçüde **doğru** yazar. Bu sayfadaki değerlendirmeler Zamana'nın kendi kullanım gözlemidir, bağımsız bir ölçüm ya da Anthropic'in yayımladığı bir Türkçe karşılaştırması değildir. Hata yapar: sayı, madde numarası ve ek yazımında özellikle.
+> **Kısa cevap:** Evet, Claude Türkçe biliyor ve profesyonel Türkçeyi çoğunlukla doğru yazıyor. En sık hatası sayı, madde numarası ve ek yazımında. Bu sayfadaki değerlendirmeler Zamana'nın kendi kullanım gözlemi; bağımsız bir ölçüm ya da Anthropic'in yayımladığı bir Türkçe karşılaştırması değil.
 
 ## Register 1: Resmi Yazışma (Kurumsal/Devlet)
 
-En yüksek formalite seviyesi. Bankalar, devlet kurumları, ticaret odaları, resmi yazışma standartlarına uyum gerekir.
+Formalitenin en yüksek olduğu kayıt. Bankalara, devlet kurumlarına ve ticaret odalarına yazarken resmi yazışma standartlarına uymak gerekir.
 
 ### Prompt Örneği
 
@@ -42,29 +42,29 @@ En yüksek formalite seviyesi. Bankalar, devlet kurumları, ticaret odaları, re
 
 ### Claude'un Güçlü Yönleri (Resmi Register'da)
 
-- ✅ **Formal hitap kuralları doğru**: "arz ederiz", "takdirlerinize", "ilgi yazınız"
-- ✅ **Devlet yazışma formatı** biliniyor: T.C. başlığı, Konu, İlgi
-- ✅ **Pasif cümle yapısı** resmi metne uygun ("talep edilmiş olan", "verilmesi hususu")
-- ✅ Üçüncü şahıs kurumsal dil tutarlı ("Şirketimizin", "tarafımıza")
+- ✅ Resmi hitap kalıplarını doğru kullanıyor: "arz ederiz", "takdirlerinize", "ilgi yazınız".
+- ✅ Devlet yazışmasının biçimini biliyor: T.C. başlığı, Konu, İlgi.
+- ✅ Resmi metne uyan edilgen cümleler kuruyor ("talep edilmiş olan", "verilmesi hususu").
+- ✅ Kurum ağzından yazmayı baştan sona sürdürüyor ("Şirketimizin", "tarafımıza").
 
 ### Zayıf Yönleri
 
-- ⚠️ Çok **arkaik** ifadeler kullanabilir ("bilcümle", "işbu", "müteakiben"), bazı modern resmi yazışmalarda eski görünebilir. **Çözüm:** CLAUDE.md'de "arkaik dil kullanma" belirt.
-- ⚠️ **Uzun cümle** eğilimi var: resmi yazışma uzun cümleye izin verir ama okunurluk düşebilir.
+- ⚠️ Zaman zaman "bilcümle", "işbu", "müteakiben" gibi arkaik kelimeler seçiyor; bugünkü resmi yazışmalarda bunlar eski duruyor. CLAUDE.md'ye "arkaik dil kullanma" yazmanız yeterli.
+- ⚠️ Cümleleri uzun kuruyor. Resmi yazışmada uzun cümle kabul görür, ama metni okumak zorlaşır.
 
 ### Pratik Tavsiye
 
-Resmi devlet yazışması için Claude **çok iyi bir ilk taslak üretir**. Ama imzalamadan önce idari personel veya muhasebeci gözden geçirsin, özellikle:
+Resmi devlet yazışmasında Claude çok iyi bir ilk taslak yazar. İmzalamadan önce idari personel ya da muhasebeci metni okusun ve özellikle şunlara baksın:
 
-- Sayı ve tarih alanlarını siz doldurun (halüsinasyon riski)
-- Kurum adının tam ünvanını kontrol edin
+- Sayı ve tarih alanlarını siz doldurun (Claude bunları uydurabilir)
+- Kurumun tam unvanını kontrol edin
 - Hukuki iddiaları avukata gösterin
 
 ---
 
 ## Register 2: Teknik Terminoloji (IT, Mühendislik, Finans)
 
-Teknik alan spesifik terimlerle dolu. İngilizce-Türkçe karışımı sık görülür. Doğru kullanım sektöre göre değişir.
+Teknik metinler alana özgü terimlerle dolu ve İngilizce ile Türkçe sık sık karışıyor. Hangi terimin doğru olduğu sektörden sektöre değişir.
 
 ### Prompt Örneği
 
@@ -76,24 +76,24 @@ Teknik alan spesifik terimlerle dolu. İngilizce-Türkçe karışımı sık gör
 
 ### Claude'un Güçlü Yönleri (Teknik Register'da)
 
-- ✅ **İngilizce terimleri** hedef kitleye göre doğru karar veriyor, "PLC", "HMI", "Modbus TCP" aynen, "iş istasyonu" Türkçeleştirilmiş
-- ✅ **Hibrid kitle** için denge iyi: IT direktörü de fabrika müdürü de anlar
-- ✅ **Aksiyon yönlendirmeli** kapanış: "önerilmektedir", "standardize edilmelidir"
+- ✅ Hangi terimin İngilizce kalacağına hedef kitleye göre doğru karar veriyor: "PLC", "HMI", "Modbus TCP" olduğu gibi kalmış, "iş istasyonu" Türkçe yazılmış.
+- ✅ Metni hem IT direktörü hem fabrika müdürü anlayabiliyor.
+- ✅ Paragraf yapılacak işlerle bitiyor ("önerilmektedir", "standardize edilmelidir").
 
 ### Zayıf Yönleri
 
-- ⚠️ **Aşırı Türkçeleştirme** zaman zaman garip sonuçlar verir ("serbest metin alanı" yerine "text field" daha doğal olabilir bazı bağlamlarda)
-- ⚠️ **Sektörel jargon tercihi** her zaman yerelliğe uygun olmayabilir, her şirketin iç jargonu farklı
+- ⚠️ Bazen fazla Türkçeleştiriyor. Bazı bağlamlarda "serbest metin alanı" yerine "text field" daha doğal durur.
+- ⚠️ Sektör jargonunda seçtiği kelime sizin şirketinizde kullanılan kelime olmayabilir; her şirketin kendi iç dili var.
 
 ### Pratik Tavsiye
 
-CLAUDE.md'de **şirketinizin teknik terminoloji tercihini** belirtin: "PLC İngilizce bırak, 'iş istasyonu' Türkçe yaz, 'firewall' Türkçeleştirme."
+Şirketinizin terim tercihlerini CLAUDE.md'ye yazın: "PLC İngilizce bırak, 'iş istasyonu' Türkçe yaz, 'firewall' Türkçeleştirme."
 
 ---
 
 ## Register 3: Hukuki Dil (Sözleşme, Dilekçe, Memo)
 
-En spesifik ve en hassas register. Her kelime hukuki sonuç doğurur.
+Hata payının en dar olduğu kayıt, çünkü sözleşmede tek bir kelime hukuki sonuç doğurabilir.
 
 ### Prompt Örneği
 
@@ -107,28 +107,28 @@ En spesifik ve en hassas register. Her kelime hukuki sonuç doğurur.
 
 ### Claude'un Güçlü Yönleri (Hukuki Register'da)
 
-- ✅ **Tanımlı terimler** büyük harfle: "Sözleşme", "Taraflar", "Mücbir Sebep", standart hukuki uygulama
-- ✅ **Kanun atıfları** doğru formatta: "Türk Borçlar Kanunu'nun 136. maddesi"
-- ✅ **"Dahil ancak bunlarla sınırlı olmaksızın"** tipik sözleşme genişletici ifadesi
-- ✅ **Süre + yazılı bildirim** yükümlülüğü: hukuki riski azaltan yaygın kullanım
+- ✅ Tanımlı terimleri büyük harfle yazıyor ("Sözleşme", "Taraflar", "Mücbir Sebep"); standart hukuki uygulama bu.
+- ✅ Kanuna doğru biçimde atıf yapıyor: "Türk Borçlar Kanunu'nun 136. maddesi".
+- ✅ Sözleşmelerde kapsamı genişletmek için kullanılan "dahil ancak bunlarla sınırlı olmaksızın" kalıbını biliyor.
+- ✅ Süre ve yazılı bildirim yükümlülüğü koyuyor; hukuki riski azaltan yaygın bir uygulama.
 
 ### Zayıf Yönleri
 
-- ⚠️ **Yanlış madde numarası riski**: Claude bir madde referansı uydurabilir. Her kanun atıfı avukat tarafından doğrulanmalı
-- ⚠️ **Çok İngilizce hukuk şablonu** etkisi: "dahil ancak bunlarla sınırlı olmaksızın" İngilizce "including but not limited to" çevirisi, Türk hukuku için gerekli değil
-- ⚠️ **Karmaşık cümle** yapısı: hukuki kesinlik için gerekli ama okunurluk zorlu
+- ⚠️ Madde numarası uydurabiliyor. Her kanun atfını avukat doğrulamalı.
+- ⚠️ İngilizce hukuk şablonlarının izini taşıyor: "dahil ancak bunlarla sınırlı olmaksızın", İngilizcedeki "including but not limited to" kalıbının çevirisi ve Türk hukukunda gerekli değil.
+- ⚠️ Cümleleri karmaşık kuruyor. Hukuki kesinlik bunu gerektiriyor, ama okumak zorlaşıyor.
 
 ### Pratik Tavsiye
 
-**Pazarlık dışı kural:** Claude'un yazdığı her hukuki metni avukat incelemeli. Kanun atıfları, tarih aralıkları, sayısal yükümlülükler, hepsi doğrulanmalı. Claude bir **süper hızlı ilk taslak yazarıdır**, hukuki otorite değildir.
+Claude'un yazdığı her hukuki metni avukat incelemeli; bunun istisnası yok. Kanun atıflarını, tarih aralıklarını ve sayısal yükümlülükleri tek tek doğrulayın. Claude ilk taslağı çok hızlı yazar, ama hukuki otorite değildir.
 
-[Hukuk ve Uyum](/wiki/departmanlar/hukuk/) sayfasında detay.
+Ayrıntısı [Hukuk ve Uyum](/wiki/departmanlar/hukuk/) sayfasında.
 
 ---
 
 ## Register 4: Yaratıcı İçerik (Pazarlama, Sosyal Medya)
 
-Marka sesi, ton, yaratıcılık gerektiren content. Buradaki "doğru" esnek, markanın ruhu belirler.
+Marka sesi ve ton isteyen metinler. Burada tek bir doğru yok; neyin doğru olduğunu markanın kendi tarzı belirler.
 
 ### Prompt Örneği
 
@@ -144,24 +144,24 @@ Marka sesi, ton, yaratıcılık gerektiren content. Buradaki "doğru" esnek, mar
 
 ### Claude'un Güçlü Yönleri (Yaratıcı Register'da)
 
-- ✅ **Marka sesi** kalibrasyonu CLAUDE.md ile güçlü
-- ✅ **Metaforik dil**: "kahveye dair tanımları sessizce yeniden çiziyor" gibi hoş dokunuşlar
-- ✅ **Türkçe-İngilizce hashtag karışımı** doğru: yerel ve uluslararası erişim dengesi
-- ✅ **Hedef kitleye özel** kelime seçimi: "filtrelendiğinde" profesyonel terim, "bardakta" samimi
+- ✅ CLAUDE.md'de marka sesi tarif edildiyse o sese iyi uyuyor.
+- ✅ Metafor kurabiliyor: "kahveye dair tanımları sessizce yeniden çiziyor" gibi.
+- ✅ Türkçe ve İngilizce hashtag'leri karıştırarak hem yerel hem uluslararası okura ulaşıyor.
+- ✅ Kelimeyi kitleye göre seçiyor: "filtrelendiğinde" profesyonel bir terim, "bardakta" samimi.
 
 ### Zayıf Yönleri
 
-- ⚠️ **Bazen klişe** üretir: "yükseklerinden", "peşinden koşanlar" tipik kahve pazarlaması
-- ⚠️ **Tonu "fazla güzel"** olabilir: markanın kişiliği daha kuru/alaycı ise yumuşatılmalı
-- ⚠️ **Emoji kullanımı** talep edilmezse nadirdir: bazı markalar bekler
+- ⚠️ Bazen klişeye kayıyor: "yükseklerinden", "peşinden koşanlar" kahve pazarlamasında çok görülen ifadeler.
+- ⚠️ Ton fazla "güzel" çıkabiliyor. Markanız daha kuru ya da alaycıysa metni sadeleştirmeniz gerekir.
+- ⚠️ İstemezseniz emoji pek kullanmıyor; bazı markalar emoji bekler.
 
 ### Pratik Tavsiye
 
-Pazarlama için **CLAUDE.md "Marka Sesi" bölümü kritik.** Şunları net yazın:
+Pazarlama metninin kalitesini en çok CLAUDE.md'deki "Marka Sesi" bölümü belirler. Bu bölüme şunları yazın:
 
 - Tonunuzun 3 kelimelik özeti ("sakin + dürüst + esprili" gibi)
 - Kaçınılması gereken kelimeler ("eşsiz", "devrim" gibi klişeler)
-- Örnek 2-3 cümle: bu tarzda
+- Bu tarzda yazılmış 2-3 örnek cümle
 - Emoji kullanımı: evet / hayır / seçici
 
 Detay: [Pazarlama ve İletişim](/wiki/departmanlar/pazarlama/).
@@ -179,29 +179,27 @@ Detay: [Pazarlama ve İletişim](/wiki/departmanlar/pazarlama/).
 
 ## Her Register İçin Geçerli Genel Notlar
 
-Dört register'ın hepsinde görülen güçlü ve zayıf yönler:
-
 ### Güçlü
 
-- ✅ **Fiil çekimi** doğru: zaman, kişi, kip
-- ✅ **Ünlü uyumu** doğru
-- ✅ **Türk adlandırma** doğru: "Murat Bey", "Ayşe Hanım", "Müdür Yardımcısı"
-- ✅ **Büyük-küçük harf** Türk kurallarına uygun (devlet kurumu, özel isim)
-- ✅ **Ünlem, virgül, tire** doğru yerde
-- ✅ **İstanbul Türkçesi** standart: bölgesel tercihler istenirse belirtilmeli
+- ✅ Fiil çekimi (zaman, kişi, kip) doğru.
+- ✅ Ünlü uyumu doğru.
+- ✅ Türkçe hitap ve unvanları doğru kullanıyor: "Murat Bey", "Ayşe Hanım", "Müdür Yardımcısı".
+- ✅ Büyük-küçük harfi Türkçe kurallarına göre yazıyor (devlet kurumu, özel isim).
+- ✅ Ünlem, virgül ve tireyi doğru yere koyuyor.
+- ✅ Standart İstanbul Türkçesiyle yazıyor; bölgesel bir ağız istiyorsanız belirtin.
 
 ### Zayıf
 
-- ⚠️ **"de"/"da" eki** bazen yanlış yazılır (ayrı mı bitişik mi), özellikle karmaşık cümlelerde
-- ⚠️ **"-ken"/"-iken"** bazen yanlış kullanılır
-- ⚠️ **Özel terim Türkçeleştirme** kararı her zaman doğru değil ("download" → "indir" her bağlamda uygun değil)
-- ⚠️ **Uzun tire (–) vs kısa tire (-)** tutarsız kullanılabilir
+- ⚠️ "de"/"da" ekini bazen yanlış yazıyor (ayrı mı, bitişik mi), özellikle karmaşık cümlelerde.
+- ⚠️ "-ken"/"-iken" ekini bazen yanlış kullanıyor.
+- ⚠️ Bir terimi Türkçeleştirip Türkçeleştirmeme kararı her zaman doğru çıkmıyor ("download" her bağlamda "indir" olmaz).
+- ⚠️ Uzun tire (–) ile kısa tireyi (-) tutarsız kullanabiliyor.
 
-**Çözüm:** Önemli Türkçe metinleri her zaman **insan gözüyle** baştan sona okuyun. "Bu metin benim adımı altına atabileceğim kalitede mi?" testi ([4D Çerçevesi](/wiki/prompting/4d-cercevesi/) D3, Discernment).
+Önemli Türkçe metinleri bir insan baştan sona okusun. Ölçüt şu soru: "Bu metnin altına adımı atabilir miyim?" ([4D Çerçevesi](/wiki/prompting/4d-cercevesi/) D3, Discernment).
 
 ## Türkçe Kalitesini CLAUDE.md İle Artırmak
 
-En büyük kalite sıçraması kalıcı talimatın "Ton" bölümünde yapılır. Cowork'te klasördeki CLAUDE.md'ye, sıradan sohbette ise profil talimatına (Settings > General > "Instructions for Claude") ya da proje talimatına yazın; sohbet CLAUDE.md okumaz ([Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/)). Minimum içerik:
+Türkçe kalitesini en çok, kalıcı talimata yazılmış bir "Ton" bölümü artırır. Cowork'te klasördeki CLAUDE.md'ye, sıradan sohbette ise profil talimatına (Settings > General > "Instructions for Claude") ya da proje talimatına yazın; sohbet CLAUDE.md okumaz ([Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/)). Bölüm en azından şunları içermeli:
 
 ```markdown
 ## Ton
@@ -220,11 +218,11 @@ En büyük kalite sıçraması kalıcı talimatın "Ton" bölümünde yapılır.
 - API Türkçeleştirme yok
 ```
 
-Bu 10-15 satır Claude'un Türkçe çıktı kalitesini belirgin biçimde iyileştirir.
+Bu 10-15 satırlık bölüm bile Türkçe çıktıyı belirgin biçimde iyileştirir.
 
 ## Çeviri: Türkçe ile İngilizce, Almanca ve Rusça Arası
 
-İhracat yapan ya da yabancı tedarikçiyle çalışan ekipler için en sık iş çeviridir. Claude bu yönlerde iş metni çevirisini iyi yapar; avantajı, çeviriyi bağlamla birlikte yapabilmesidir (alıcı kim, ton ne, hangi terim sözleşmeye bağlı).
+İhracat yapan ya da yabancı tedarikçiyle çalışan ekiplerin en sık işi çeviri. Claude bu dillerde iş metnini iyi çevirir. Avantajı bağlamı da hesaba katabilmesi: alıcının kim olduğunu, tonun nasıl olacağını ve hangi terimin sözleşmeye bağlı olduğunu söylerseniz çeviride bunları kullanır.
 
 ### Prompt Örneği
 
@@ -236,33 +234,33 @@ Bu 10-15 satır Claude'un Türkçe çıktı kalitesini belirgin biçimde iyileş
 
 ### Nelere Dikkat Edin
 
-- ✅ Terim seçimi bağlamla birlikte verildiğinde doğru ("Vade" için "Zahlungsziel" gibi).
-- ✅ Rusça ve Almanca yazışmalarda taslak olarak işe yarar; vaka örneği için [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasına bakın.
-- ⚠️ Sözleşme, gümrük belgesi ve resmi başvuru gibi hukuki sonucu olan metinlerde hedef dili bilen biri okumalı.
-- ⚠️ Hedef dili bilmiyorsanız Claude'dan çeviriyi **geri çevirtin** (Almancadan Türkçeye) ve anlamın korunup korunmadığına bakın. Bu, kontrolün tek başına yeterli yolu değildir ama büyük kaymaları yakalar.
-- 💡 Yönlerden hangisi daha güçlü? Türkçe kaynaklı çeviride (TR → EN/DE/RU) çıktı genelde daha akıcıdır; yabancı dilden Türkçeye çeviride ise yabancı cümle yapısı Türkçeye sızabilir. Bu bizim gözlemimiz, ölçülmüş bir oran değil.
+- ✅ Terimin anlamını bağlamla birlikte verdiğinizde doğru karşılığı seçiyor ("Vade" için "Zahlungsziel" gibi).
+- ✅ Rusça ve Almanca yazışmalarda taslak olarak işe yarıyor; vaka örneği için [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasına bakın.
+- ⚠️ Sözleşme, gümrük belgesi ve resmi başvuru gibi hukuki sonucu olan metinleri hedef dili bilen biri okumalı.
+- ⚠️ Hedef dili bilmiyorsanız Claude'a çeviriyi **geri çevirtin** (Almancadan Türkçeye) ve anlamın korunup korunmadığına bakın. Bu tek başına yeterli bir kontrol değil, ama büyük kaymaları yakalar.
+- 💡 Türkçeden yabancı dile çeviride (TR → EN/DE/RU) çıktı genelde daha akıcı. Yabancı dilden Türkçeye çeviride yabancı cümle yapısı Türkçeye sızabiliyor. Bu bizim gözlemimiz, ölçülmüş bir oran değil.
 
 ## Taranmış Türkçe Belge Okumak
 
-Claude görselleri ve PDF'leri okuyabilir; taranmış fatura, sözleşme sayfası ya da dilekçe fotoğrafı da buna girer. Türkçe karakterler (ç, ğ, ı, ö, ş, ü) temiz taramalarda genelde doğru okunur.
+Claude görselleri ve PDF'leri okuyabilir; taranmış fatura, sözleşme sayfası ya da dilekçe fotoğrafı da buna dahil. Türkçe karakterler (ç, ğ, ı, ö, ş, ü) temiz taramalarda genelde doğru okunur.
 
 - ✅ **Temiz, düz tarama:** metin çıkarma, özetleme ve tablo hâline getirme iyi çalışır.
-- ⚠️ **Kötü tarama:** düşük çözünürlük, eğik sayfa, kaşe ve imzanın metnin üstüne binmesi, el yazısı notlar hata oranını artırır. Tutar, tarih, vergi numarası ve IBAN gibi alanları kaynakla mutlaka karşılaştırın.
+- ⚠️ **Kötü tarama:** düşük çözünürlük, eğik sayfa, metnin üstüne binen kaşe ve imza, el yazısı notlar hata oranını artırır. Tutar, tarih, vergi numarası ve IBAN gibi alanları kaynakla mutlaka karşılaştırın.
 - ⚠️ **Uzun PDF:** 100 sayfaya kadar PDF'te hem metin hem sayfa görüntüsü okunur. 100 sayfadan uzun PDF'te yalnız metin katmanı okunur; taranmış (görüntü) sayfalarda metin katmanı yoksa içerik görülmez. Uzun taramaları bölün. Sınırlar değişebilir; Claude'un dosya yükleme yardım sayfasından teyit edin.
 
 Hassas belgelerde (kimlik, sağlık, personel kaydı) önce [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki kurallara bakın.
 
 ## Yazılı Türkçe ile Sesli Mod Aynı Şey Değil
 
-Bu sayfa **yazılı** Türkçeyi anlatır. Claude'un sesli modu (Voice mode, beta) Türkçe desteği doğrulanmadı (yardım sayfası tam dil listesi vermiyor, İngilizce dışı dilleri beta sayıyor); sesli modu Türkçe iş akışlarında kullanmadan önce uygulamadaki dil menüsünü kontrol edin ([Voice Mode](/wiki/araclar/voice-mode/)).
+Bu sayfadaki gözlemler yazılı Türkçe için. Claude'un sesli modunun (Voice mode, beta) Türkçe desteğini doğrulayamadık: yardım sayfası tam dil listesi vermiyor ve İngilizce dışındaki dilleri beta sayıyor. Sesli modu Türkçe bir iş akışında kullanmadan önce uygulamadaki dil menüsüne bakın ([Voice Mode](/wiki/araclar/voice-mode/)).
 
 ## ChatGPT ile Türkçe Karşılaştırması
 
-Zamana gözlemimize göre iki model Türkçede yakın seviyede. Bunu destekleyen bağımsız bir Türkçe karşılaştırma yayımlamıyoruz; kendi işinizdeki metinlerle yan yana deneyin. Gözlemlediğimiz fark kullanım biçiminde:
+Zamana gözlemimize göre iki model Türkçede yakın seviyede. Bunu destekleyen bağımsız bir Türkçe karşılaştırma yayımlamıyoruz; kendi işinizdeki metinlerle yan yana deneyin. Gözlemlediğimiz fark tonda:
 
-- **Claude** daha ağır kurumsal tonda doğal
-- **ChatGPT** daha modern şirket kültüründe doğal
-- **Her ikisi de** jenerik çıktı verir: kişiselleştirme için CLAUDE.md (Claude) veya Custom Instructions (ChatGPT) şart
+- Claude ağır kurumsal tonda daha doğal duruyor.
+- ChatGPT modern şirket kültürünün dilinde daha doğal.
+- İkisi de kişiselleştirilmezse sıradan çıktı veriyor; bunun için Claude'da CLAUDE.md, ChatGPT'de Custom Instructions şart.
 
 Detaylı karşılaştırma: [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/).
 

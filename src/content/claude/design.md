@@ -16,7 +16,7 @@ related:
   - { label: "Pazarlama departmanı için Claude (wiki)", href: "/wiki/departmanlar/pazarlama/" }
   - { label: "Takım ve Admin (wiki)", href: "/wiki/temeller/takim-ve-admin/" }
 order: 7
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -25,7 +25,7 @@ Claude Design, Anthropic Labs'in 17 Nisan 2026'da duyurduğu görsel çalışma 
 
 Artık ayrı bir ekrana gitmeniz gerekmiyor. Design, Claude ile yaptığınız herhangi bir konuşmanın içinden ya da Claude Code'dan çağrılabiliyor. Sunum üretimi ise ayrı bir başlangıç noktası olarak Claude Slides adıyla sunuluyor; üçü de [Artifacts](/claude/artifacts/) çatısı altında.
 
-Önemli bir ayrım: Claude Design, Photoshop ya da Figma'nın yerini almaz. Güçlü olduğu yer, boş sayfadan ilk taslağa giden yolu kısaltmak ve markanıza uygun tutarlı çıktı vermek. Cilalama için hâlâ bir tasarımcıya ihtiyaç duyabilirsiniz; Anthropic de bunu böyle anlatıyor ("Claude ile başlayın, cilalamak için bir tasarımcıyla paylaşın").
+Claude Design, Photoshop ya da Figma'nın yerini almaz. Güçlü olduğu yer boş sayfadan ilk taslağa giden yolu kısaltmak ve markanıza uygun tutarlı çıktı vermek. Cilalama için hâlâ bir tasarımcıya ihtiyaç duyabilirsiniz; Anthropic de bunu böyle anlatıyor ("Claude ile başlayın, cilalamak için bir tasarımcıyla paylaşın").
 
 ## Türk şirketinde ne işe yarar?
 
@@ -44,7 +44,7 @@ Artık ayrı bir ekrana gitmeniz gerekmiyor. Design, Claude ile yaptığınız h
 3. Taslağı düzenleyin: öğeye yorum bırakın, metni doğrudan değiştirin, Claude'un oluşturduğu ayar çubuklarıyla aralık ve rengi inceltin, öğeleri sürükleyip boyutlandırın.
 4. Çıktıyı PDF, PowerPoint ya da HTML olarak indirin, link ile paylaşın veya bağlı araca gönderin.
 
-Claude Design şu hizmetlerle bağlantı kuruyor: Adobe, Canva, Gamma, Lovable, Miro, Replit, Vercel ve Wix. Claude Code kullanan bir ekibiniz varsa `/design` ve `/design-sync` komutlarıyla tasarım sistemi ile kod arasında geçiş yapılabiliyor. Not: Zamana programları iş kullanımına odaklıdır; Claude Code eğitimi vermiyoruz, bu paragraf yalnızca ürünün neler yaptığını anlatıyor.
+Claude Design şu hizmetlerle bağlantı kuruyor: Adobe, Canva, Gamma, Lovable, Miro, Replit, Vercel ve Wix. Claude Code kullanan bir ekibiniz varsa `/design` ve `/design-sync` komutlarıyla tasarım sistemi ile kod arasında geçiş yapılabiliyor. Zamana Claude Code eğitimi vermiyor; bu komutlardan yalnızca ürünün kapsamını göstermek için söz ediyoruz.
 
 ## Hangi planda, nelere dikkat?
 
@@ -58,4 +58,4 @@ Claude Design şu hizmetlerle bağlantı kuruyor: Adobe, Canva, Gamma, Lovable, 
 
 **Veri.** Müşteri listesi, fiyat ya da kişisel veri içeren dosyaları aktarmadan önce [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki yurt dışı aktarım notlarını okuyun. Anthropic'in Türkiye'de ofisi ya da temsilcisi yok; ayrıntı [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/) sayfasında. Abonelik ücreti dolardır.
 
-Tasarım sistemi kurulumu, Slides ve Docs farkları ve sunum skill'i ile karşılaştırma için [wiki'deki Claude Design sayfasına](/wiki/yetenekler/claude-design/) geçin. Ekibinizin Claude'u iş akışına yerleştirmesini istiyorsanız [Zamana programları](/programlar/) bu konuda destek verir.
+Tasarım sistemi kurulumu, Slides ve Docs farkları ve sunum skill'i ile karşılaştırma için [wiki'deki Claude Design sayfasına](/wiki/yetenekler/claude-design/) geçin. Ekibinizin Claude'u iş akışına yerleştirmesini istiyorsanız [Zamana programlarına](/programlar/) bakabilirsiniz.

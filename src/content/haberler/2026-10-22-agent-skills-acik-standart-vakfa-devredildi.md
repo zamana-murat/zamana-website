@@ -16,9 +16,9 @@ Anthropic, "Agent Skills" adlı açık standardı Agentic AI Foundation'a (AAIF)
 
 ## Sizin için ne değişiyor?
 
-Skill, Claude'a belirli bir işi nasıl yapacağını öğreten bir klasördür. İçinde `SKILL.md` adlı bir yönerge dosyası bulunur, isterse betikler ve referans belgeler de eklenebilir. Örneğin "şirketimizin teklif şablonu böyle doldurulur" diye yazdığınız bir skill'i Claude her seferinde yeniden anlatmanıza gerek kalmadan uygular.
+Skill, Claude'a belirli bir işi nasıl yapacağını öğreten bir klasör. İçinde `SKILL.md` adlı bir yönerge dosyası var; isterseniz betikler ve referans belgeler de ekleyebilirsiniz. Örneğin "şirketimizin teklif şablonu böyle doldurulur" diye yazdığınız bir skill'i Claude her seferinde yeniden anlatmanıza gerek kalmadan uygular.
 
-Bu haberin gündelik anlamı şu: bir skill'i bir kez yazdığınızda yalnızca Claude'da değil, standardı destekleyen diğer araçlarda da kullanabilirsiniz. Anthropic, ChatGPT, Cursor, GitHub Copilot ve VS Code dahil 70'ten fazla ajan platformunun Agent Skills'i entegre ettiğini söylüyor. Yani emek verip hazırladığınız bir beceri tek bir ürüne bağlı kalmıyor.
+Bir skill'i bir kez yazdığınızda yalnızca Claude'da değil, standardı destekleyen diğer araçlarda da kullanabilirsiniz. Anthropic, ChatGPT, Cursor, GitHub Copilot ve VS Code dahil 70'ten fazla ajan platformunun Agent Skills'i entegre ettiğini söylüyor.
 
 Standart Aralık 2025'te yayımlandığından beri yaklaşık 1 milyon skill yayımlandı ve yaklaşık 280 milyon kez kuruldu (Anthropic'in verdiği rakamlar).
 

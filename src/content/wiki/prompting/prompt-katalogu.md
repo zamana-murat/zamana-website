@@ -6,12 +6,12 @@ tags:
   - prompting
   - sablon
   - katalog
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Çoğu profesyonel her gün benzer 5-10 işle uğraşır.** Toplantı özeti, müşteri e-postası, rapor taslağı, veri analizi, hızlı araştırma, bunların her biri için **kullanıma hazır prompt şablonu** olması, her seferinde yeniden düşünmekten kurtarır.
+Bir profesyonel her gün benzer 5-10 işle uğraşır: toplantı özeti, müşteri e-postası, rapor taslağı, veri analizi, hızlı araştırma. Bunların her biri için hazır bir prompt şablonu olursa her seferinde yeniden düşünmezsiniz.
 
-Bu sayfa pratik kullanımdan derlenmiş prompt şablonları sunar. **Kopyalayın, [köşeli parantezli yerleri] kendi bilgilerinizle doldurun, kullanın.**
+Aşağıdaki şablonlar pratik kullanımdan derlendi. Kopyalayın, [köşeli parantezli yerleri] kendi bilgilerinizle doldurun, kullanın.
 
 ## Nasıl Kullanılır
 
@@ -723,7 +723,7 @@ Kamu kullanımında kurumunuzun yapay zekâ ve veri politikasına uyun; çerçev
 
 ## Şablonu Kalıcı Hale Getirme
 
-Bu kataloğun her şablonunu **her seferinde kopyalamak** uzun vadede yorucudur. Sık kullandıklarınız için:
+Kataloğun şablonlarını her seferinde kopyalamak yorucudur. Sık kullandıklarınız için:
 
 1. **Claude Projesi:** şablonları bir [Projeye](/wiki/araclar/projects/) dosya olarak yükleyin, proje talimatına "şablonlarım bu projede; adıyla çağırırsam o şablonu kullan, eksik bilgiyi sor" yazın. Sonra basitçe deyin: *"Soğuk e-posta şablonunu kullan, müşteri X için, sektör Y."* Cowork bulut görevleri bilgisayardaki klasöre doğrudan erişemediği için kütüphaneyi yerel klasörde değil projede tutmak daha güvenlidir
 2. **Sık kullanılan ve değişmeyen şablon:** [Skill](/wiki/yetenekler/skills/)'e çevirin; Claude ilgili gördüğünde yükler
@@ -734,7 +734,7 @@ Talimat türlerinin kapsamı için [Talimat ve Hafıza Yerleri](/wiki/claude-md/
 
 ## Şablonların Sınırı
 
-Şablonlar **başlangıç noktasıdır**. Aşağıdaki durumlar için yeterli değildir:
+Şablonlar başlangıç noktasıdır. Şu işler için yetmez:
 
 - Çok hassas, sektör-spesifik nüanslı işler (örneğin tıp tedavi planı)
 - Sıfırdan yaratıcı çıktı (yeni marka kimliği)

@@ -8,13 +8,13 @@ tags:
   - bilgi-teknolojileri
   - powershell
   - kvkk
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-IT departmanı Claude konusunda iki yeni bakış açısıyla tanışmalıdır:
+IT departmanının Claude'a iki açıdan bakması gerekir:
 
-1. **Claude sadece bir kod aracı değildir.** IT için değerinin çoğu dokümantasyon, iletişim ve yapılandırılmış düşünmededir: IT ekibinin her gün yaptığı, kod olmayan işler.
-2. **Claude kod yazmayan personelin basit script'ler, sorgular ve otomasyonlar yazmasına yardım eder.** İhtiyacını sade dilde anlatabilen bir sysadmin kısa sürede çalışan bir PowerShell script'i alır. Bu, geliştiricilerin yerini almaz; **IT operasyon personelini engellerinden kurtarır.**
+1. Claude yalnız bir kod aracı sayılmamalı. IT için değerinin çoğu dokümantasyonda, iletişimde ve düşünceyi yapıya oturtmakta: ekibin her gün yaptığı, kod içermeyen işlerde.
+2. Kod yazmayan personel de Claude'la basit script'ler, sorgular ve otomasyonlar yazabilir. İhtiyacını sade dilde anlatabilen bir sysadmin kısa sürede çalışan bir PowerShell script'i alır. Geliştiricilerin işini üstlenmez, ama IT operasyon personelinin geliştirici kuyruğunda beklemesini azaltır.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -33,7 +33,7 @@ Mühendis sistemi sade dille anlatır; Claude net ve sürdürülebilir bir dokü
 
 ### Kullanıcı Rehberleri ve Kılavuzları
 
-Teknik olarak doğru ama erişilebilir bir dil, sanki **sistemi hiç görmemiş biri** için yazılmış gibi.
+Teknik olarak doğru, ama sistemi hiç görmemiş biri okuyacakmış gibi erişilebilir bir dille.
 
 ### Sistem Mimarisi Dokümantasyonu
 
@@ -41,49 +41,49 @@ Kişilerin kafasındaki bilgiyi, personel değişikliklerinden etkilenmeyen yaz�
 
 ### Runbook Oluşturma
 
-Tekrar eden görevler için adım adım operasyonel prosedürler. **On-call personel asla doğaçlama yapmak zorunda kalmamalı.**
+Tekrar eden görevler için adım adım operasyonel prosedürler. On-call personel gece yarısı doğaçlama yapmak zorunda kalmamalı.
 
 ### Basit Scripting Yardımı
 
-Sysadmin neyi otomatize etmek istediğini tarif eder, Claude çalışan bir PowerShell, Bash veya Python script'i üretir. **Script'i çalıştırmadan önce siz doğrular ve test edersiniz, körü körüne çalıştırmazsınız.**
+Sysadmin neyi otomatize etmek istediğini tarif eder, Claude çalışan bir PowerShell, Bash veya Python script'i üretir. Script'i çalıştırmadan önce siz doğrular ve test edersiniz.
 
 **Zamana notu:** eğitim materyalimizde bu tek yetenek IT ekibine haftada saatler kazandıran kalem olarak geçer; örnek aşağıda (Gerçek Örnek).
 
-> **Script çalıştırma notu:** Claude'un kod çalıştırma ve dosya oluşturma özelliği Claude'un kendi ortamında çalışır; Team ve Enterprise'ta ağ erişimi varsayılan kapalıdır. Yani 50 sunucunuza bağlanan script'i Claude değil, siz kendi ağınızda çalıştırırsınız. Pratik kural: "İhtiyacınızı anlatın, Claude script'i yazar; siz sonucu doğrularsınız." Kod yazmayı öğrenmeniz gerekmez, sonucun işe yaradığını doğrularsınız.
+> **Script çalıştırma notu:** Claude'un kod çalıştırma ve dosya oluşturma özelliği Claude'un kendi ortamında çalışır; Team ve Enterprise'ta ağ erişimi varsayılan kapalıdır. Yani 50 sunucunuza bağlanan script'i Claude değil, siz kendi ağınızda çalıştırırsınız. Pratik kural: "İhtiyacınızı anlatın, Claude script'i yazar; siz sonucu doğrularsınız." Kod yazmayı öğrenmeniz gerekmez; sonucun işe yaradığını doğrulamanız yeter.
 
 ## Bölüm 2: İletişim ve Raporlama
 
-**Teknik → teknik olmayan çeviri.** Teknik gerçekliği Claude'a verirsiniz; karşılığında bilgisayar mühendisliği bilgisi gerektirmeyen ama doğru bir yönetim düzeyi açıklama alırsınız.
+**Teknikten teknik olmayana çeviri.** Teknik durumu Claude'a verirsiniz; karşılığında mühendislik bilgisi gerektirmeyen ama doğru bir yönetim düzeyi açıklama alırsınız.
 
-**Incident raporları.** Yapılandırılmış, net, suçlamasız post-mortem formatı: ne oldu, ne zaman, etki, kök neden, çözüm, önleme. **Süre:** elle 2-3 saat, Claude ile 30-45 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+**Incident raporları.** Suçlamasız post-mortem formatı: ne oldu, ne zaman, etki, kök neden, çözüm, önleme. **Süre:** elle 2-3 saat, Claude ile 30-45 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
-**IT proje durum raporları.** Mühendislik ekibi için değil, **zaman çizelgesi, maliyet ve risklerle ilgilenen iş paydaşları** için yazılmış.
+**IT proje durum raporları.** Okuru mühendislik ekibi değil, zaman çizelgesine, maliyete ve risklere bakan iş paydaşları.
 
 **Change request dokümantasyonu.** Net iş etkisi, teknik kapsam, geri alma planı, risk değerlendirmesi.
 
-**Güvenlik farkındalık iletişimi.** Oltalama farkındalık güncellemeleri, güvenlik politikası hatırlatmaları, ihlal bildirim taslakları: net ve eyleme geçirilebilir, **kimsenin okumadığı standart metin değil.**
+**Güvenlik farkındalık iletişimi.** Oltalama farkındalık güncellemeleri, güvenlik politikası hatırlatmaları, ihlal bildirim taslakları: kimsenin okumadığı standart metin yerine, ne yapılacağını söyleyen net bir metin.
 
 ## Bölüm 3: Analiz ve Planlama
 
-**Vendor teknik değerlendirmesi.** Tutarlı kriterlerle RFP ve değerlendirme çerçeveleri yapılandırılır; vendor'lar aynı boyutlarda karşılaştırılır.
+**Vendor teknik değerlendirmesi.** Claude tutarlı kriterlerle RFP ve değerlendirme çerçeveleri kurar; vendor'lar aynı boyutlarda karşılaştırılır.
 
-**Teknoloji karar memoları.** Seçenekler analiz edilir, riskler adlandırılır, öneri yapılır. Memo, karar vermesi gereken CTO ya da CFO için yazılır, tez okumak isteyen biri için değil.
+**Teknoloji karar memoları.** Claude seçenekleri analiz eder, riskleri adlandırır, öneri yapar. Memo karar vermesi gereken CTO ya da CFO için yazılır, tez okumak isteyen biri için değil.
 
 **IT bütçe anlatıları.** IT yatırımını iş diliyle açıklama, "yeni firewall lazım" değil, "mevcut güvenlik duruşumuz X riskine maruz bırakıyor; bu yatırım Y'ye indiriyor."
 
-**Güvenlik politika dokümantasyonu.** Net, uygulanabilir, insan diliyle yazılmış politikalar. İnsanlar ancak anladıkları politikaya uyar.
+**Güvenlik politika dokümantasyonu.** İnsan diliyle yazılmış, uygulanabilir politikalar. İnsanlar anladıkları politikaya uyar.
 
 ### KVKK Teknik Etki Dokümantasyonu
 
-IT, kişisel veri işleyen bir sistem dağıttığında veya değiştirdiğinde **KVKK uyumu için veri akışlarını, depolama konumlarını, erişim kontrollerini ve saklama sürelerini dokümante etmek zorundadır**.
+IT, kişisel veri işleyen bir sistem kurduğunda ya da değiştirdiğinde KVKK uyumu için veri akışlarını, depolama konumlarını, erişim kontrollerini ve saklama sürelerini dokümante etmek zorundadır.
 
-Claude, IT personelinin teknik bilgisinden bu veri işleme faaliyet kayıtlarının **taslağını** üretmesine yardım eder; kayıtlar, VERBİS'e girilen bilgilerin dayandığı veri envanteriyle aynı alanları (veri kategorisi, amaç, saklama süresi, aktarım) kapsayacak biçimde yapılandırılır. VERBİS kaydını ve güncellemesini Claude yapmaz; hukuk ekibi ya da KVKK uyum sorumlusu inceler ve kaydı kendisi yapar. Son kontrol onlarındır.
+Claude, IT personelinin teknik bilgisinden bu veri işleme faaliyet kayıtlarının taslağını çıkarır; kayıtlar VERBİS'e girilen bilgilerin dayandığı veri envanteriyle aynı alanları (veri kategorisi, amaç, saklama süresi, aktarım) kapsayacak biçimde yapılandırılır. VERBİS kaydını ve güncellemesini Claude yapmaz; hukuk ekibi ya da KVKK uyum sorumlusu inceler ve kaydı kendisi yapar.
 
 ### Help Desk Ticket Kalitesi
 
-Birçok IT ekibi **kötü yazılmış ticket'lara** saat kaybeder: yetersiz detay, eksik adımlar, belirsiz öncelik.
+IT ekipleri kötü yazılmış ticket'lara saat kaybeder: yetersiz detay, eksik adımlar, belirsiz öncelik.
 
-Claude yardımcı olur: "iyi ticket nasıl yazılır" rehberi + yaygın talep tipleri için ticket şablonları. IT'nin hızlı çözmek için ihtiyacı olan bilgiyi içeren şablonlar.
+Claude bir "iyi ticket nasıl yazılır" rehberi ve yaygın talep tipleri için şablonlar hazırlar. Şablonlar, IT'nin hızlı çözmek için ihtiyaç duyduğu bilgiyi baştan ister.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -120,10 +120,10 @@ Claude yardımcı olur: "iyi ticket nasıl yazılır" rehberi + yaygın talep ti
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Dokümantasyon kültürü değişimi**: dokümantasyonu backlog değil alışkanlık yapmak
-- **Incident yönetim süreci**: olay → tespit → kök neden → rapor → önleme
-- **Change request iş akışı**: her değişiklik yapılandırılmış dokümantasyonla
-- **KVKK teknik uyum dokümantasyonu**: sistem değişikliğinde veri envanteri taslağının güncellenmesi, VERBİS değişikliği gerekiyorsa hukuk/uyum sorumlusuna iletilmesi
+- Dokümantasyon kültürü: dokümantasyonu backlog'a atmak yerine alışkanlık yapmak
+- Incident yönetim süreci: olay → tespit → kök neden → rapor → önleme
+- Change request iş akışı: her değişiklik yapılandırılmış dokümantasyonla
+- KVKK teknik uyum dokümantasyonu: sistem değişikliğinde veri envanteri taslağının güncellenmesi, VERBİS değişikliği gerekiyorsa hukuk/uyum sorumlusuna iletilmesi
 
 ## Gerçek Örnek: Script Yardımı
 
@@ -155,7 +155,7 @@ Eğitimlerde BT ekiplerinin en çok takıldığı üç nokta (Zamana eğitim mat
 - **Var olmayan komut ya da kütüphane.** Claude olmayan bir modül, parametre ya da fonksiyon önerebilir. Derleme ve çalıştırma testi şarttır.
 - **Hassas yapılandırma.** Şifre, API anahtarı ve iç IP adreslerini prompt'a yazmadan önce temizleyin. Şirket yapılandırması işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil.
 
-BT ekibinde güvenlik ve veri kuralları baştan konuşulmalıdır; [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) bunu ekibinizin kendi araçlarıyla ele alır.
+BT ekibinde güvenlik ve veri kurallarını baştan konuşun; [kurumsal yapay zeka eğitimimizde](/programlar/kurumsal/) bunu ekibinizin kendi araçlarıyla çalışıyoruz.
 
 ## İlgili Sayfalar
 

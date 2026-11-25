@@ -18,14 +18,14 @@ related:
   - { label: "Claude Platform", href: "/kurumsal/platform/" }
   - { label: "Türkçe performansı (wiki)", href: "/wiki/temeller/turkce-performansi/" }
 order: 50
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
 Anthropic'in "Claude Commerce agents" adını verdiği çalışma, perakende, seyahat, telekom ve etkinlik sektörlerindeki şirketlerin kendi uygulamalarına alışveriş ajanı kurmasını hızlandırmak için yayımlanmış bir **referans uygulama**. Kod GitHub'da açık; şirketler kopyalayıp (fork) kendi sistemlerine bağlar ve kendi ürünleri gibi işletir.
 
-Kaynak sayfadaki sık sorulan sorulardan iki net cevap, Türk şirketlerinin ilk soracağı soruları da karşılıyor:
+Kaynak sayfadaki sık sorulan sorulardan ikisi, Türk şirketlerinin de ilk soracağı sorulardır:
 
 - **Ürün mü, kod mu?** Kod. Anthropic bakım yapmaz, hizmet seviyesi (SLA) taahhüdü vermez; ne kurarsanız sizindir.
 - **Anthropic ticarete mi giriyor?** Hayır. Anthropic mağaza, katalog, tedarik zinciri veya teslimat işletmiyor; reklam ya da ücretli ürün öne çıkarma da yok. Claude yalnızca ajanın arkasındaki model.
@@ -56,7 +56,7 @@ Satıcı ajanı mağaza ekibi içindir. Satış, stok, fiyat ve kampanya veriniz
 - Pazarlama kampanyası taslağı
 - Kişiselleştirme ve hafıza
 
-Önemli varsayılan: kaynak sayfaya göre satıcı ajanı değişiklikleri kendiliğinden yayına almaz, **taslak hazırlar ve onaya sunar**. Hangi değişikliklerin hangi kurallarla otomatik onaylanacağını siz tanımlarsınız.
+Varsayılan davranış: kaynak sayfaya göre satıcı ajanı değişiklikleri kendiliğinden yayına almaz, **taslak hazırlar ve onaya sunar**. Hangi değişikliklerin hangi kurallarla otomatik onaylanacağını siz tanımlarsınız.
 
 ## Türkiye'de uyarlama notları
 
@@ -86,7 +86,7 @@ Kaynak sayfa dört yol sayıyor; hangisinin seçileceği yazılım ekibinizin ka
 3. **Claude Managed Agents:** Sunucu tarafını yönetmeden, birleştirilebilir API'lerle üretim ajanı.
 4. **Claude Code eklentisi:** Referans uygulamayı Claude Code içinde kendi sisteminize uyarlamak.
 
-Kaynak sayfadaki müşteri görüşlerine göre kurulum hızlı: Wix mühendislerinin on beş dakikada çalışan bir ajana, Fetch ekibinin bir saatten kısa sürede iki ajanın yerel kurulumuna ulaştığı aktarılıyor. Canlıya almak ise katalog, ödeme, stok ve müşteri sistemlerinize bağlantı, test ve güvenlik incelemesi demek; asıl iş oradadır.
+Kaynak sayfadaki müşteri görüşlerine göre kurulum hızlı: Wix mühendislerinin on beş dakikada çalışan bir ajana, Fetch ekibinin bir saatten kısa sürede iki ajanın yerel kurulumuna ulaştığı aktarılıyor. Canlıya almak ise katalog, ödeme, stok ve müşteri sistemlerinize bağlantı, test ve güvenlik incelemesi gerektirir.
 
 Ücret Claude API kullanımına göre token başına ödenir. Güncel API fiyatları milyon token başına girdi ve çıktı için Opus 5.5'te 4 ve 20 dolar, Sonnet 5.5'te 2 ve 10 dolar, Haiku 5.5'te 0,10 ve 0,50 dolardan (100K token'a kadar istem). Yoğun trafikli bir mağazada model seçimi ve önbellekleme maliyeti doğrudan belirler; kampanya dönemi trafiğiyle hesaplayın. Ödeme dolar ile, doğrudan Anthropic'e. Kurumsal görüşme için Anthropic satış ekibiyle iletişime geçilir.
 

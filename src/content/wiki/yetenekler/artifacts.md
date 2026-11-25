@@ -7,14 +7,14 @@ tags:
   - artifacts
   - dashboard
   - cowork
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 **Artifacts, Claude'un ürettiği kendi kendine yeten, interaktif çıktılardır.** Sohbetin yanında bir panelde açılır; metin cevabı yerine **dönüp bakabileceğiniz, düzenleyebileceğiniz, paylaşabileceğiniz** bir şeye dönüşür.
 
 Sohbet ve Cowork 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (Pro, Max ve Ultra'da kademeli; Team ve Enterprise'ta yönetici açınca, Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda). Bu yüzden artifact'i artık "sohbet artifact'i" ve "Cowork artifact'i" diye ikiye bölmek gerekmez: **standart artifact** her yerde aynı davranır. Yayılım durumu için [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasına bakın.
 
-> Claude'un ürün tanıtım sayfası için: [Claude Artifacts](/claude/artifacts/). Bu sayfa kurulum, karar ve sınırları anlatır.
+> Ürün tanıtım sayfası: [Claude Artifacts](/claude/artifacts/).
 
 ## Standart Artifact Neler Yapar?
 
@@ -67,7 +67,7 @@ Anadolu Yapı Market'in satış yöneticisi her Pazartesi pipeline raporu yazıy
 - Gecikmiş olanları kırmızıyla vurgular
 - "Bu hafta kapanması muhtemel" listesini ayrı bölümde gösterir
 
-Pazartesi açılır, toplantıya girilir. Rapor yazmak yok.
+Pazartesi sabahı paneli açıp toplantıya girersiniz, rapor yazmanız gerekmez.
 
 **Süre:** elle 1-2 saat, Claude ile 15-20 dk (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
@@ -93,7 +93,7 @@ Ekip lideri haftalık toplantıya tek sayfayla gelir.
 
 ## Pratik Yaklaşım
 
-Çoğu çalışan artifact istemez, **rapor ister**. Çünkü iş dünyasında alışkanlık "rapor"dur, "dashboard" değil.
+Çalışanlar genellikle artifact değil **rapor ister**, çünkü iş dünyasında alışılmış biçim rapordur.
 
 Bir çalışan "bunu haftaya yine görmek isteyeceğim" dediğinde artifact devreye girer. Belge anında eskir; artifact ise yeniden üretilerek güncel tutulabilir.
 
@@ -101,7 +101,7 @@ Kendinize sorabileceğiniz tek soru:
 
 > **"Bu veriye bir hafta sonra yine bakmak isteyecek miyim?"**
 
-Cevap "evet"se artifact, "hayır"sa belge. Basit ama hayatı değiştiren bir soru.
+Cevap "evet"se artifact, "hayır"sa belge.
 
 ## İlgili Sayfalar
 

@@ -7,10 +7,10 @@ tags:
   - egitim
   - akademi
   - okul
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Eğitim sektörü Türkiye'de geniş: üniversiteler, liseler ve ortaokullar, özel okullar, dershaneler, dil okulları, online kurs platformları, bireysel eğitmenler. Her birinde **müfredat hazırlama, sınav üretme, ödev değerlendirme ve öğrenci iletişimi** zaman alıcı, tekrar eden işlerdir. Claude bunların hepsinde somut destek sağlar.
+Eğitim sektörü Türkiye'de geniş: üniversiteler, liseler ve ortaokullar, özel okullar, dershaneler, dil okulları, online kurs platformları, bireysel eğitmenler. Her birinde müfredat hazırlama, sınav üretme, ödev değerlendirme ve öğrenci iletişimi zaman alan, tekrar eden işlerdir. Claude bu işlerin her biri için taslak çıkarır.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -41,7 +41,7 @@ Bir kursun yıllık müfredatı. Konu sırası, ön gerekler, kazanım listesi, 
 
 ### Çoklu Seviye Adaptasyonu
 
-Aynı konuyu **6. sınıf**, **9. sınıf** ve **üniversite 1. sınıf** seviyelerine göre farklı kelime ve farklı örnekle anlatmak. Claude seviyeye uyum konusunda güçlüdür.
+Aynı konuyu 6. sınıf, 9. sınıf ve üniversite 1. sınıf seviyelerine göre farklı kelime ve farklı örnekle anlatmak. Claude kelime ve örneği seviyeye göre ayarlamada iyidir.
 
 ### Ders Notu / Sunum
 
@@ -51,13 +51,13 @@ Konunun öğrenci dağıtım notu (handout) ve sunum slaytı. [Skills](/wiki/yet
 
 ### Sınav Sorusu Üretme
 
-Açık uçlu, çoktan seçmeli, doğru-yanlış, eşleştirme: Claude tüm tipleri konuya göre üretir. Sıkıcı klişe sorular yerine **gerçek hayat senaryosu** içeren sorular da hazırlayabilir.
+Açık uçlu, çoktan seçmeli, doğru-yanlış, eşleştirme: Claude tüm tipleri konuya göre üretir. Klişe sorular yerine gerçek hayat senaryosu içeren sorular da hazırlar.
 
 [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile sizin sınav tarzınızı öğretebilirsiniz.
 
 ### Soru Bankası Genişletme
 
-Mevcut soru bankanızı Claude ile genişletin: orijinal soruların **yeniden ifade edilmiş**, varyasyon ve ters versiyonları hızla üretilir.
+Mevcut soru bankanızı Claude ile genişletin: orijinal soruların yeniden ifade edilmiş, varyasyon ve ters versiyonları hızla çıkar.
 
 ### Cevap Anahtarı ve Çözüm
 
@@ -81,7 +81,7 @@ Sınavın hatırlama-anlama-uygulama-analiz-değerlendirme-yaratma seviyelerinde
 - En güçlü ve en zayıf yönü
 - Öğretmenin odaklanması gereken 3 nokta
 
-Bu **karar değil tarama**: son notu öğretmen verir, Claude yalnızca ön gözden geçirme yapar.
+Bu bir tarama: son notu öğretmen verir, Claude yalnızca ön gözden geçirme yapar.
 
 ### Bireyselleştirilmiş Geri Bildirim
 
@@ -99,13 +99,13 @@ Türkçe veya yabancı dilde kompozisyon değerlendirmesi: gramer, akış, argü
 
 ### Literatür Taraması
 
-[Research Mode](/wiki/yetenekler/research-mode/) ile bir konuda akademik literatür özeti çıkarılır. Bu akademik bir kaynak değildir, ama **tarama başlangıcı** olarak değerlidir.
+[Research Mode](/wiki/yetenekler/research-mode/) ile bir konuda akademik literatür özeti çıkarılır. Çıktı akademik kaynak sayılmaz, ama tarama başlangıcı olarak işe yarar.
 
-**Önemli:** Claude, akademik makalelerin ücretli veya kısıtlı tam metinlerine erişemez; açık kaynaklar üzerinden tarama yapar. Her atıfı kaynağından kendiniz doğrulayın. Final akademik atıflar için DergiPark, Google Scholar, JSTOR ve Web of Science'ı elle tarayın.
+Claude, akademik makalelerin ücretli veya kısıtlı tam metinlerine erişemez; açık kaynaklar üzerinden tarama yapar. Her atıfı kaynağından kendiniz doğrulayın. Final akademik atıflar için DergiPark, Google Scholar, JSTOR ve Web of Science'ı elle tarayın.
 
 ### Makale Taslağı
 
-Akademik makale için taslak, özet, giriş, yöntem ve tartışma bölümleri Claude ile hızlıca çıkar. Sonrasında **akademik üslubu öğretmen veya araştırmacı** parlatır.
+Akademik makale için taslak, özet, giriş, yöntem ve tartışma bölümleri Claude ile hızlıca çıkar. Akademik üslubu sonra öğretmen ya da araştırmacı kendisi düzeltir.
 
 ### Atıf ve Bibliography
 
@@ -113,7 +113,7 @@ APA, MLA, Chicago ve ISNAD gibi biçimler arasında dönüşüm Claude ile hızl
 
 ### Tez Danışmanlığı (Öğrenciye)
 
-Yüksek lisans veya doktora öğrencisi, tezinin bölümleri için Claude'dan **destek** alabilir: tarama, taslak, dil düzeltme. Akademik etik açısından Claude bir **araçtır**; son ürün öğrencinin emeği ve düşüncesidir.
+Yüksek lisans veya doktora öğrencisi, tezinin bölümleri için Claude'dan destek alabilir: tarama, taslak, dil düzeltme. Akademik etik açısından Claude bir araçtır; son ürün öğrencinin emeği ve düşüncesidir.
 
 ## Bölüm 5: Öğrenci ve Veli İletişimi
 
@@ -123,7 +123,7 @@ Yüksek lisans veya doktora öğrencisi, tezinin bölümleri için Claude'dan **
 
 ### Olay Bildirimi
 
-Bir öğrenci olayı (devamsızlık, davranış, kaza) için Claude olgusal, profesyonel ve **abartmasız** bir veli bildirimi hazırlar. Bu hassas bir durumdur, gönderen kişi mutlaka gözden geçirir.
+Bir öğrenci olayı (devamsızlık, davranış, kaza) için Claude olgusal, profesyonel ve abartısız bir veli bildirimi hazırlar. Konu hassas olduğu için gönderen kişi metni mutlaka gözden geçirir.
 
 ### Bilgilendirme Yazıları
 
@@ -131,7 +131,7 @@ Müfredat değişikliği, etkinlik daveti, gezi onay formu. Claude ile profesyon
 
 ### Çoklu Dilde
 
-Yabancı uyruklu veya yabancı dil ağırlıklı bir veli kitlesi varsa Claude, birebir çeviriden öte **kültürel olarak uygun** bir iletişim kurar.
+Yabancı uyruklu veya yabancı dil ağırlıklı bir veli kitlesi varsa Claude, birebir çeviriyle yetinmez, kültürel olarak da uygun bir metin yazar.
 
 ## Bölüm 6: İdare ve Yönetim
 
@@ -155,7 +155,7 @@ Pazartesi 07:30. Öğretmen Cuma'dan kalan ödevleri unutmuş. Claude'a sınıf 
 
 ### Senaryo 2: Üniversite Asistanı
 
-Doktora öğrencisi bir dersin asistanlığını yapıyor. Bu haftanın ders konusu için Claude ile **literatür taraması** yapar, **slayt seti** hazırlar, **forum sorularına** taslak yanıt verir. Asistanlık yükü belirgin biçimde hafifler.
+Doktora öğrencisi bir dersin asistanlığını yapıyor. Bu haftanın ders konusu için Claude ile literatür taraması yapar, slayt seti hazırlar, forum sorularına taslak yanıt verir. Asistanlık yükü belirgin biçimde hafifler.
 
 ### Senaryo 3: Dil Okulu
 
@@ -216,7 +216,7 @@ Eğitmen için temel yapı:
 
 **Engel:** "Eğitim hassas, AI ile akademik etik sorunlu olur."
 
-**Çözüm:** Claude **araç**tır, son üretim öğretmenin/öğrencinin işidir. Şeffaf kullanım: "AI ile taslak ürettik, ben düzelttim" notu olabilir. [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfası kullanım sınıflarını verir.
+**Çözüm:** Claude bir araçtır, son üretim öğretmenin/öğrencinin işidir. Şeffaf kullanım: "AI ile taslak ürettik, ben düzelttim" notu olabilir. [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfası kullanım sınıflarını verir.
 
 **Engel:** "Öğrenci verisi KVKK kapsamında çok hassas."
 
@@ -224,7 +224,7 @@ Eğitmen için temel yapı:
 
 **Engel:** "Öğretmenler teknolojiye dirençli."
 
-**Çözüm:** İlk hafta yalnızca **sınav sorusu üretme** ile başlayın. Kazanç hemen görünür olur, direnç çözülür. [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) genel başlangıç rehberidir.
+**Çözüm:** İlk hafta yalnızca sınav sorusu üretmeyle başlayın. Kazanç hemen görünür olur, direnç çözülür. [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) genel başlangıç rehberidir.
 
 ## Bireysel Eğitmen / Online Kurs
 
@@ -243,9 +243,9 @@ Eğitim için Anthropic'in ayrı programları var, ama hepsi Türkiye'de olduğu
 
 ## Üniversite Bağlamı: Özel Notlar
 
-- **Kullanım duyurusu:** Birçok üniversite yapay zekâ araçlarının kullanımına, **belirtilmesi koşuluyla** izin veriyor; dönem başında kuralı yazılı duyurmak (Sık Hatalar'daki akademik dürüstlük notu) tartışmayı baştan keser.
-- **Araştırma etiği:** Claude ile üretilmiş araştırma içeriği akademik makalede bildirilmeli. Bu konuda henüz yerleşik bir standart yok, üniversitenizin politikasına bakın.
-- **Uzaktan eğitim:** Online derslerde Claude, öğrenci sorularına gün boyu yanıt veren bir asistan kurmanın temelini oluşturabilir.
+- Kullanım duyurusu: Yapay zekâ araçlarına izin veren üniversiteler çoğunlukla kullanımın belirtilmesini istiyor; dönem başında kuralı yazılı duyurmak (Sık Hatalar'daki akademik dürüstlük notu) tartışmayı baştan keser.
+- Araştırma etiği: Claude ile üretilmiş araştırma içeriği akademik makalede bildirilmeli. Bu konuda henüz yerleşik bir standart yok, üniversitenizin politikasına bakın.
+- Uzaktan eğitim: Online derslerde Claude, öğrenci sorularına gün boyu yanıt veren bir asistan kurmanın temelini oluşturabilir.
 
 ## İlgili Sayfalar
 

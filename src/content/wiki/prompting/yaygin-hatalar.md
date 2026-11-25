@@ -6,12 +6,10 @@ tags:
   - prompting
   - hatalar
   - troubleshooting
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Pratikte gözlenen bir gerçek: insanlar Claude'la başarısız olurken **benzer hatalarla** başarısız oluyor. Bu sayfa o on hatayı ve her birinin spesifik düzeltmesini içeriyor.
-
-Her hatayı somut bir örneğiyle, neden başarısız olduğuyla ve düzeltmesiyle veriyoruz. Kendi promptlarınızda bunlardan birini yakaladığınızda, çözüm de yanında olacak.
+Claude'la başarısız olan insanlar çoğunlukla benzer hatalara düşüyor. Aşağıda bu on hata var; her biri için örnek, başarısızlığın nedeni ve düzeltme veriyoruz. Kendi promptunuzda birini yakaladığınızda çözümü hemen bulursunuz.
 
 ## Hata 1: Google-Tarzı Anahtar Kelime Sorgusu
 
@@ -56,7 +54,7 @@ Claude ilk cevabı nadiren mükemmel verir. İlk çıktı çoğu zaman iyi bir t
 > *"Bu versiyonun konu satırını daha iyi yapabilir misin? 3 alternatif ver."*
 > *"Ton biraz sert. Yumuşat ama güç kaybetme."*
 
-İyi bir prompt, genelde 3-5 iterasyonla doğru çıktıya ulaşır. Bu başarısızlık değil, **süreç**tir.
+İyi bir prompt, genelde 3-5 iterasyonla doğru çıktıya ulaşır. Bu başarısızlık değil, süreçtir.
 
 ## Hata 4: Claude'u Google Sanma
 
@@ -64,7 +62,7 @@ Claude ilk cevabı nadiren mükemmel verir. İlk çıktı çoğu zaman iyi bir t
 > *"TÜSİAD başkanı kim?"*
 
 **Neden başarısız olur:**
-Claude'un eğitim bilgisinin bir kesim tarihi vardır (Fable 5.1, Opus 5.5, Sonnet 5.5 ve Haiku 5.5 için Haziran 2026; legacy Haiku 4.5 için güvenilir bilgi Şubat 2025'e kadar. Modeller için bkz: [Modeller](/wiki/temeller/modeller/), sınırlar için [Sınırlamalar](/wiki/temeller/sinirlamalar/)). Sonrasında değişen bir isim ya da rakamı güncel sanıp **emin bir tonla** söyleyebilir. Buna "[halüsinasyon](/wiki/sozluk/#halusinasyon)" denir.
+Claude'un eğitim bilgisinin bir kesim tarihi vardır (Fable 5.2, Opus 5.5, Sonnet 5.5 ve Haiku 5.5 için Haziran 2026; legacy Haiku 4.5 için güvenilir bilgi Şubat 2025'e kadar. Modeller için bkz: [Modeller](/wiki/temeller/modeller/), sınırlar için [Sınırlamalar](/wiki/temeller/sinirlamalar/)). Sonrasında değişen bir isim ya da rakamı güncel sanıp **emin bir tonla** söyleyebilir. Buna "[halüsinasyon](/wiki/sozluk/#halusinasyon)" denir.
 
 **Düzeltme:**
 Claude'u düşünme ortağı olarak görün, gerçek arama motoru olarak değil.
@@ -127,12 +125,12 @@ Kısıtlar gerçek kısıtlar olmalı. "İstemiyorum" listesi yerine "istiyorum"
 Çıktı geldi. Biraz sorunlu ama "tamam, bu da iş görür" deyip gönderdik.
 
 **Neden başarısız olur:**
-Çoğu zaman Claude size daha iyisini verebilirdi, sadece söylemediniz için yapmadı. Göndermeden önce 30 saniyelik bir düzeltme turu çıktıyı belirgin biçimde iyileştirebilir.
+Çoğu zaman Claude size daha iyisini verebilirdi, sadece söylemediniz için yapmadı. Göndermeden önce 30 saniyelik bir düzeltme turu çıktıyı iyileştirebilir.
 
 **Düzeltme:**
 Pratik altın soru: **"Bunu şu an müdürüme göndermeye razı olur muydum?"**
 
-Cevap "hayır"sa geri dönün. Basitçe: *"Üçüncü paragraf iyi değil, yeniden yaz"*, *"Konu satırı yumuşak, keskinleştir"*, *"Kapanış çok uzun, kısalt"*. Her düzeltme 30 saniye, toplam kalite farkı büyük.
+Cevap "hayır"sa geri dönün. Basitçe: *"Üçüncü paragraf iyi değil, yeniden yaz"*, *"Konu satırı yumuşak, keskinleştir"*, *"Kapanış çok uzun, kısalt"*. Her düzeltme 30 saniye sürer.
 
 Bir tuzak daha: Claude'a "bu iyi mi?" diye sorarsanız bazen doğruyu değil, duymak istediğinizi söyleme eğilimine girer (sycophancy, onay eğilimi). Onay değil eleştiri isteyin: *"Bu metnin en zayıf üç noktası nedir?"* Ayrıntı: [Claude'un Sınırları](/wiki/temeller/sinirlamalar/).
 
@@ -176,7 +174,6 @@ Haftada bir kez, geçen haftanın 5 promptuna geri bakın. Şu sorularla:
 - [ ] Daha iyi bir prompt yazsaydım ne farklı olurdu?
 - [ ] Bu prompt kütüphaneme kaydedilmeyi hak ediyor mu?
 
-Bu haftalık refleksiyon, prompting becerisini sıradan kullanıcı seviyesinden profesyonel seviyeye çıkarır.
 
 ## İlgili Sayfalar
 

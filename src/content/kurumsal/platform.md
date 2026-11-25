@@ -3,7 +3,7 @@ title: "Claude Platform: kendi ürününüzü Claude üzerine kurun"
 seoTitle: "Claude Platform (API) Nedir? Kurumlar İçin Özet"
 description: "Claude Platform: API, yönetilen ajanlar ve Console ile Claude'u kendi ürün ve sistemlerinize gömme yolu. Modeller, fiyatlar, bulut ve KVKK notları."
 eyebrow: "Kurumsal"
-lead: "Claude Platform, Claude'u bir sohbet uygulaması olarak değil, kendi yazılımınızın parçası olarak kullanmanın yolu. Modellere API ile erişir, ajan kurar, Console'dan izler ve yönetirsiniz. Bu bir yazılım ekibi işidir."
+lead: "Claude Platform, Claude'u kendi yazılımınızın parçası olarak kullanmanın yolu. Modellere API ile erişir, ajan kurar, Console'dan izler ve yönetirsiniz. Bu bir yazılım ekibi işidir."
 heroImage: "/images/kurumsal/platform/hero.webp"
 heroAnimation: "platform"
 heroAlt: "Kurgusal Anadolu Sigorta'nın hasar dosyası ajanı API üzerinden çalışıyor: solda istek kodu, sağda Claude'un poliçeyi sorguladığı, ekspertiz raporunu okuduğu ve ödeme önerisini hasar uzmanının onayına gönderdiği çalıştırma izi, altta token ve maliyet özeti."
@@ -18,7 +18,7 @@ related:
   - { label: "Alt ajanlar (wiki)", href: "/wiki/yetenekler/agents-subagents/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 20
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -47,7 +47,7 @@ Fiyatlar milyon token başına, ABD doları, vergi hariç:
 
 | Model | Girdi | Çıktı | Ne için |
 |---|---|---|---|
-| Fable 5.1 | 10 $ | 50 $ | En güçlü model, uzun soluklu ajan işleri |
+| Fable 5.2 | 8 $ | 40 $ | En güçlü model, uzun soluklu ajan işleri |
 | Opus 5.5 | 4 $ | 20 $ | Çoğu iş için başlangıç önerisi, ajan ve kodlama |
 | Sonnet 5.5 | 2 $ | 10 $ | Hız ve zekâ dengesi, yüksek hacimli işler |
 | Haiku 5.5 | 0,10 $'dan | 0,50 $'dan | En hızlı ve en ucuz, hafif işler |
@@ -90,4 +90,4 @@ KVKK açısından en önemli nokta tasarımdır: API'ye ne gönderdiğinize siz 
 
 ## Zamana'nın notu
 
-Zamana'nın eğitimleri Claude'u iş için kullanan ekiplere yöneliktir ve API'yi kapsamaz. Claude Platform üzerinde ürün geliştirmek bir yazılım ekibi işidir: mimari, güvenlik, değerlendirme ve bakım ister. Bu sayfayı, kurumunuzda "Enterprise mı alalım, API ile kendimiz mi kuralım?" sorusu sorulduğunda iki yolun farkını net görebilmeniz için hazırladık. Çoğu kurumda cevap ikisi birden olur: çalışanlar için Enterprise, ürün ve süreç otomasyonu için Platform.
+Zamana'nın eğitimleri Claude'u iş için kullanan ekiplere yöneliktir ve API'yi kapsamaz. Claude Platform üzerinde ürün geliştirmek bir yazılım ekibi işidir: mimari, güvenlik, değerlendirme ve bakım ister. Kurumunuzda "Enterprise mı alalım, API ile kendimiz mi kuralım?" sorusu çıkarsa, iki yol farklı ihtiyaca hizmet eder: çalışanlar için Enterprise, ürün ve süreç otomasyonu için Platform. İkisi birlikte de kullanılabilir.

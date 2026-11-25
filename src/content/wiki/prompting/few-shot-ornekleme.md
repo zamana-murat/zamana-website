@@ -6,12 +6,10 @@ tags:
   - prompting
   - few-shot
   - ornek
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Bir kavramı öğretmenin en güçlü yolu örnek göstermektir.** Claude için de öyle. Soyut bir kuralı tarif etmek yerine "şuna benzer üret" demek, sonucu daha tutarlı yapar ve sürprizleri azaltır.
-
-Bu sayfa few-shot örnekleme yaklaşımını ve pratik kullanımını anlatır.
+Bir kavramı öğretmenin en güçlü yolu örnek göstermektir, Claude için de. Soyut bir kuralı tarif etmek yerine "şuna benzer üret" demek sonucu daha tutarlı yapar ve sürprizleri azaltır. Few-shot, bu yaklaşımın adıdır.
 
 ## Terminoloji
 
@@ -127,7 +125,7 @@ JSON:
 
 ## İyi Örnek Seçme Kuralları
 
-Few-shot'ta örnek kalitesi her şeydir.
+Few-shot'ta sonucu en çok örneklerin kalitesi belirler.
 
 ### 1. Çeşit-Cins Karışımı
 
@@ -156,7 +154,7 @@ Tüm örnekler aynı yapıda olsun, başlık aynı, etiket aynı, alanlar aynı.
 
 ### 5. Az ama Yüksek Kalite
 
-3 mükemmel örnek, 10 ortalama örnekten iyidir. Kalite sayıyı yener.
+3 mükemmel örnek, 10 ortalama örnekten iyidir.
 
 ### 6. Örnekleri Claude'a Denetletin
 
@@ -241,7 +239,7 @@ Sonra: ?
 
 ## Many-Shot: Çok Örnek
 
-Bazı görevlerde 10-20 örnek vermek gerekir. Bu **many-shot** dedikleri yaklaşımdır. Pratik kullanımı:
+Bazı görevlerde 10-20 örnek vermek gerekir. Buna many-shot denir. Kullanıldığı yerler:
 
 - Çok ince nüanslı sınıflandırma (15+ kategori)
 - Karmaşık karar verme (matrix mantık)

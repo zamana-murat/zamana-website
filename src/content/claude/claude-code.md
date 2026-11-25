@@ -14,7 +14,7 @@ related:
   - { label: "Planlar ve fiyatlar (wiki)", href: "/wiki/temeller/planlar/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 20
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -27,7 +27,7 @@ Claude Code şu yüzeylerde çalışır: terminal, VS Code (Cursor ve Devin Desk
 
 ## Zamana programlarıyla ilişkisi
 
-Dürüst olalım: Zamana'nın eğitim programları iş kullanıcısına odaklıdır. Claude'u sohbette, Excel ve Word'de, Cowork'te ve bağlı araçlarda gündelik işe yerleştirmeyi öğretiriz. Claude Code ve API geliştirme programlarımızın kapsamında değil. Yazılım ekibiniz için Claude Code eğitimi arıyorsanız Anthropic'in kendi kaynakları daha doğru adres:
+Zamana'nın eğitim programları iş kullanıcıları içindir. Claude'u sohbette, Excel ve Word'de, Cowork'te ve bağlı araçlarda gündelik işe yerleştirmeyi öğretiriz. Claude Code ve API geliştirme programlarımızın kapsamında değil. Yazılım ekibiniz için Claude Code eğitimi arıyorsanız Anthropic'in kendi kaynakları daha doğru adres:
 
 - Claude Code dokümantasyonu: [code.claude.com/docs](https://code.claude.com/docs)
 - Claude Academy kursları ve eğitim videoları: [academy.claude.com](https://academy.claude.com)
@@ -43,7 +43,7 @@ Aşağıdakiler araç özelliklerinden türetilmiş tipik örneklerdir, kaynak s
 - **Destek ve operasyon ekipleri:** Gelen hata bildirimlerini ayıklayıp ilk teşhisi çıkarmak (Slack üzerinden de tetiklenebilir).
 - **Küçük ekipte "ikinci çift göz":** Tek geliştiricinin olduğu şirkette yazılan kodu gözden geçirtmek. Yine de üretime çıkan her değişikliğin insan onayından geçmesi şarttır.
 
-Claude Code kod yazmayan bir çalışanın yerine kullanacağı bir araç değildir. Kod yazmıyorsanız Claude'un [genel sayfasına](/claude/) ve sohbet, Excel, Word gibi iş araçlarına bakın.
+Claude Code kod yazanlar için bir araç. Kod yazmıyorsanız Claude'un [genel sayfasına](/claude/) ve sohbet, Excel, Word gibi iş araçlarına bakın.
 
 ## Nasıl başlarsınız?
 
@@ -61,4 +61,4 @@ Kaynak sayfa şu yeni özellikleri duyuruyor: Projeler (masaüstünde birden ço
 - **Uzun görevler kotayı hızlı tüketir.** Alt ajanlar ve çok ajanlı iş akışları çok sayıda token harcar, abonelik limitinden düşer.
 - **Veri ve KVKK:** Claude Code yerelde çalışır ve doğrudan model API'leriyle konuşur, ancak kodunuz ve komut çıktılarınız model işlemesi için Anthropic'e gider, yani yurt dışına aktarılır. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak eğitimde kullanılmaz; tüketici hesaplarında (Pro, Max, Ultra) bu bir kullanıcı ayarıdır. Müşteri verisi, kişisel veri veya gizli anahtarları depoda tutuyorsanız önce şirket politikanızı oluşturun: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Türkiye notları:** Ödeme ABD doları ile, Anthropic'in Türkiye'de ofisi veya temsilcisi yok. Ayrıntı: [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/).
-- **Yazılımcı olmayanlar için:** İş kullanıcısı odaklı eğitimden önce gündelik işlerde Claude'u verimli kullanmayı öğrenmek gerekiyorsa Zamana'nın [programlarına](/programlar/) bakabilirsiniz. Claude Code için ise yukarıdaki Anthropic kaynakları öncelikli.
+- **Yazılımcı değilseniz:** Önce gündelik işlerde Claude'u kullanmayı öğrenmek istiyorsanız Zamana'nın [programlarına](/programlar/) bakabilirsiniz. Claude Code için yukarıdaki Anthropic kaynakları daha doğru adres.

@@ -8,28 +8,26 @@ tags:
   - teams
   - claude-tag
   - entegrasyon
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Çoğu kurumsal ekibin bilgi akışı Slack veya Microsoft Teams'te akar.** Claude'u bu platformlara bağlamak (geçmiş mesajları okuyabilmesi, kanal özetleyebilmesi, akışın içinde çalışabilmesi) günlük üretkenliğin en görünür kazançlarından biridir.
-
-Bu sayfa entegrasyon seçeneklerini, kurulumu ve kurumsal IT onayını anlatır. Türk kurumlarında Teams yaygın olduğu için önce onun durumu geliyor. Claude Tag'in ürün tanıtımı ve plan kapsamı için [@Claude: Slack'te Claude](/claude/tag/), Microsoft tarafı için [Claude for Microsoft 365](/claude/microsoft-365/) sayfasına bakın.
+Kurumsal ekiplerin yazışmaları çoğunlukla Slack ya da Microsoft Teams'te geçer. Claude'u bu platformlara bağlarsanız geçmiş mesajları okuyabilir, kanalları özetleyebilir ve akışın içinde çalışabilir. Türk kurumlarında Teams yaygın olduğu için önce onun durumuna bakıyoruz. Claude Tag'in ürün tanıtımı ve plan kapsamı için [@Claude: Slack'te Claude](/claude/tag/), Microsoft tarafı için [Claude for Microsoft 365](/claude/microsoft-365/) sayfasına bakın.
 
 ## Teams: Resmi Uygulama Yok, Connector Var
 
-Teams içinde resmi bir Claude uygulaması veya botu yok. Anthropic, Claude Tag'in Microsoft Teams sürümü için yalnızca bir bekleme listesi açtı; henüz yayında değil. Geçerli yol Microsoft 365 [connector](/wiki/sozluk/#connector)'ıdır (aşağıdaki Model 1). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir, Microsoft 365 admin onayı da gerekebilir.
+Teams içinde resmi bir Claude uygulaması ya da botu yok. Anthropic, Claude Tag'in Microsoft Teams sürümü için yalnızca bir bekleme listesi açtı; henüz yayında değil. Bugünkü yol Microsoft 365 [connector](/wiki/sozluk/#connector)'ıdır (aşağıdaki Model 1). Team ve Enterprise'ta önce organizasyon sahibi (owner) etkinleştirir, Microsoft 365 admin onayı da gerekebilir.
 
-Microsoft ekosisteminde ayrıca Excel, PowerPoint ve Word'ün içinde çalışan Claude eklentileri var (Excel, PowerPoint, Word genel kullanımda, Outlook public beta). Bunlar Teams botu değil, ofis uygulamalarının içindeki yardımcıdır: [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
+Microsoft ekosisteminde ayrıca Excel, PowerPoint ve Word'ün içinde çalışan Claude eklentileri var (Excel, PowerPoint, Word genel kullanımda, Outlook public beta). Bunlar Teams botu olmayıp ofis uygulamalarının içindeki yardımcılardır: [Office, Google ve Chrome'da Claude](/wiki/araclar/office-ve-chrome/).
 
 ## İki Entegrasyon Modeli
 
-Slack ve Teams için iki farklı yaklaşım var:
+Slack ve Teams için iki yaklaşım var:
 
 ### Model 1: Claude'a Bağlamak (Connector)
 
-Claude.ai içinden Slack'e (Teams için Microsoft 365 connector'ı üzerinden) [connector](/wiki/araclar/connectors/) ile bağlanırsınız. Sohbet Claude'un içinde geçer; Claude sizin yerinize Slack/Teams'i okur, özetler, arar. Microsoft 365 connector'ı Teams'te yalnız arama yapmaz, yazma araçlarıyla **Teams mesajı da gönderebilir** (yönetici bu aracı açıp kapatabilir).
+Claude.ai içinden Slack'e (Teams için Microsoft 365 connector'ı üzerinden) [connector](/wiki/araclar/connectors/) ile bağlanırsınız. Sohbet Claude'un içinde geçer; Claude sizin yerinize Slack/Teams'i okur, özetler, arar. Microsoft 365 connector'ı Teams'te yalnız arama yapmaz, yazma araçlarıyla Teams mesajı da gönderebilir (yönetici bu aracı açıp kapatabilir).
 
-**Tipik kullanım:**
+Tipik kullanım:
 
 - *"Marketing kanalında son 3 gün ne konuşuldu, özet ver."*
 - *"Bosfor Tekstil ile DM'de konuştuğum konuların aksiyon listesini çıkar."*
@@ -37,51 +35,51 @@ Claude.ai içinden Slack'e (Teams için Microsoft 365 connector'ı üzerinden) [
 
 ### Model 2: Slack'in İçine Claude Eklemek (Claude Tag)
 
-Slack'te Claude'u kanala getiren yol **Claude Tag**'dir (23 Haziran 2026'dan beri; haber metnine göre şu an beta). Kanalda `@Claude bana ...` diye etiketlersiniz, cevap kanalın içinde gelir. Claude Tag yalnızca **Team ve Enterprise** planlarında vardır; Free, Pro, Max ve Ultra'da yoktur.
+Slack'te Claude'u kanala getiren yol Claude Tag'dir (23 Haziran 2026'dan beri; haber metnine göre şu an beta). Kanalda `@Claude bana ...` diye etiketlersiniz, cevap kanalın içinde gelir. Claude Tag yalnızca Team ve Enterprise planlarında vardır; Free, Pro, Max ve Ultra'da yoktur.
 
-**Tipik kullanım:**
+Tipik kullanım:
 
 - Kanalın içinden hızlı soru: *"@Claude bu PR açıklamasını üç cümleye sığdır"*
 - Toplantı sonrası: *"@Claude yukarıdaki konuşmadan aksiyon maddelerini çıkar"*
 - Hızlı çeviri / yazım yardımı, ekip arkadaşının görmesinden çekinmeden
 
-**24 Eylül 2026 güncellemesi:** Kanalda @Claude diyen kişi artık **kendi kişisel connector'larını** da kullanabiliyor. Örneğin fiyat verisi kişisel CRM erişiminizdeyse, o bağlayıcıyı kanalın geneline açmadan Claude'a baktırabilirsiniz. İlk ihtiyaçta Claude sizden izin ister, bağlantıyı istediğiniz zaman kaldırabilirsiniz. Özellik önce Team planlarında açılmaya başladı, Enterprise sonra geliyor.
+24 Eylül 2026 güncellemesi: Kanalda @Claude diyen kişi artık kendi kişisel connector'larını da kullanabiliyor. Örneğin fiyat verisi kişisel CRM erişiminizdeyse, o bağlayıcıyı kanalın geneline açmadan Claude'a baktırabilirsiniz. İlk ihtiyaçta Claude sizden izin ister, bağlantıyı istediğiniz zaman kaldırabilirsiniz. Özellik önce Team planlarında açılmaya başladı, Enterprise sonra geliyor.
 
 İki çalışma modu var:
 
-- **İnceleme modu:** Claude'un cevabı kanala düşmeden önce siz okuyup onaylarsınız.
-- **Otomatik mod:** Claude cevabı doğrudan paylaşır; hassas içerik sezerse insan incelemesi bekler.
+- İnceleme modu: Claude'un cevabı kanala düşmeden önce siz okuyup onaylarsınız.
+- Otomatik mod: Claude cevabı doğrudan paylaşır; hassas içerik sezerse insan incelemesi bekler.
 
 Başlangıçta inceleme modunu seçin: kanalda herkesin göreceği bir cevapta hassas veri çıkabilir.
 
 Kişisel connector yalnızca sizin başlattığınız istekler içindir. Zamanlanmış rutinler ve Claude'un kendi başlattığı işler, yöneticinin kanala tanımladığı ortak connector'ları kullanır. Claude'un sizin connector'ınızla yaptığı işlemler, ilgili aracın kendi günlüğünde sizin hesabınız altında görünür. Ayrıntı: [Claude Tag kişisel connector'ları kullanabiliyor](/haberler/2026-09-24-claude-tag-kisisel-baglayicilar/).
 
-İki model birlikte kullanılabilir. **Model 1 (connector)**, Claude'un tam gücüne (skills, projects, dosya yükleme) erişim verdiği için çoğu iş için daha geniş bir yoldur. Teams için Claude Tag henüz yayında değil (bekleme listesi var); Teams'te connector yolunu kullanın (yukarıdaki Teams bölümüne bakın).
+İki modeli birlikte kullanabilirsiniz. Model 1 (connector) Claude'un tüm özelliklerine (skills, projects, dosya yükleme) erişim verdiği için çoğu iş için daha geniş bir yoldur. Teams için Claude Tag henüz yayında değil (bekleme listesi var); Teams'te connector yolunu kullanın (yukarıdaki Teams bölümüne bakın).
 
 ## Kurulum: Connector (Model 1)
 
 claude.ai içinde:
 
-1. **Customize → Connectors** menüsüne girin (eski arayüzde Settings → Connectors; Team ve Enterprise'ta connector'ı önce owner Organization settings → Connectors'tan açar)
+1. Customize → Connectors menüsüne girin (eski arayüzde Settings → Connectors; Team ve Enterprise'ta connector'ı önce owner Organization settings → Connectors'tan açar)
 2. Slack seçin (Teams için Microsoft 365 connector'ını seçin)
-3. **Connect** → workspace OAuth ekranı açılır
+3. Connect'e basın, workspace OAuth ekranı açılır
 4. Hangi yetkileri verdiğinizi okuyun (kanal okuma, DM okuma, vb.)
-5. Onaylayın → bağlantı aktif
+5. Onaylayın, bağlantı aktif olur
 
 [Connectors](/wiki/araclar/connectors/) sayfası genel akışı açıklar.
 
-**Kurumsal Slack/Teams'te:** OAuth onayını **workspace yöneticisi** vermelidir. Çalışan tek başına bağlayamaz. IT ile konuşulması gereken bir adım. [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası bu süreci açıklar.
+Kurumsal Slack/Teams'te OAuth onayını workspace yöneticisi verir, çalışan tek başına bağlayamaz; bu yüzden IT ile konuşmanız gerekir. Süreç için [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfasına bakın.
 
 ## Kurulum: Slack'te Claude Tag
 
-Claude Tag'i workspace yöneticisi etkinleştirir. Kesin menü adımları Anthropic'in yardım merkezinde ve yönetim ekranında güncel tutulur; burada sabit adım yazmıyoruz çünkü ürün hâlâ beta ve değişiyor. Genel akış:
+Claude Tag'i workspace yöneticisi etkinleştirir. Ürün hâlâ beta ve değiştiği için güncel menü adımlarına Anthropic'in yardım merkezinden ve yönetim ekranından bakın. Genel akış:
 
 1. Planınızın Team veya Enterprise olduğunu doğrulayın
 2. Workspace yöneticisi Claude'u Slack workspace'ine ekler ve izinleri verir
 3. Yönetici, Claude'un hangi kanallarda ve hangi ortak connector'larla çalışacağını belirler
 4. Çalışanlar kanalda `@Claude` ile etiketleyerek kullanmaya başlar
 
-**Veri akışı:** Slack'e yazdığınız mesaj Claude'a (Anthropic'e) gider, cevap döner. Bu akışın gizlilik tarafı için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
+Veri akışı: Slack'e yazdığınız mesaj Claude'a (Anthropic'e) gider, cevap döner. Bu akışın gizlilik tarafı için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Şirket İçi Politika](/wiki/temeller/sirket-ici-politika/) sayfalarına bakın.
 
 ## Pratik Kullanım Senaryoları
 
@@ -89,7 +87,7 @@ Claude Tag'i workspace yöneticisi etkinleştirir. Kesin menü adımları Anthro
 
 [Connector ile] *"Slack'te bu sabah açılmış kanallarımdan #marketing, #sales, #urun, son 12 saatte ne oldu, kısa özet ver."*
 
-Çıktı: kanal başına bir paragraf, neyin önemli olduğu vurgulanmış. 200 mesajı tek tek taramak yerine kısa bir özet okursunuz. **Süre:** elle 30-45 dakika, Claude ile özet okuma yaklaşık 5 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
+Çıktı kanal başına bir paragraftır ve önemli olanı öne çıkarır; 200 mesajı taramak yerine kısa bir özet okursunuz. **Süre:** elle 30-45 dakika, Claude ile özet okuma yaklaşık 5 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
 ### Müşteri Tartışması Toplama
 
@@ -105,30 +103,30 @@ Slack'te @Claude'a (Claude Tag): *"Müşteriye gecikme bildiren nazik ama dürü
 
 ## Kurumsal IT Açısından
 
-Slack/Teams entegrasyonu IT ekibinin aktif onayını gerektirir. Hassas konular:
+Slack/Teams entegrasyonu için IT ekibinin onayı gerekir. Dikkat edilecek konular:
 
-- **Veri sızıntı riski:** Çalışan kanaldaki içeriği farkında olmadan Claude'a aktarmış olur
-- **DLP (data loss prevention) entegrasyonu:** Bazı kurumsal Slack/Teams'te DLP politikaları zaten kurulu olabilir; Claude entegrasyonuyla nasıl etkileşeceği kontrol edilmeli
-- **Audit log:** Hangi çalışan ne zaman ne sordu, kurumsal denetim açısından log tutulması gerekiyorsa Enterprise plana ihtiyaç var (audit log ve Compliance API Enterprise'tadır; Team'de OpenTelemetry gibi kısmi izleme vardır)
-- **Saklama politikası:** Slack tarafında 30 gün sonra silinen mesajlar Claude tarafında ne oluyor? Anthropic standart politikası uygulanır; net almak için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfalarını okuyun.
+- Veri sızıntı riski: çalışan kanaldaki içeriği farkında olmadan Claude'a aktarabilir
+- DLP (data loss prevention): bazı kurumsal Slack/Teams'te DLP politikaları zaten kuruludur; Claude entegrasyonuyla nasıl etkileşeceğini IT'nin kontrol etmesi gerekir
+- Audit log: hangi çalışan ne zaman ne sordu, kurumsal denetim açısından log tutulması gerekiyorsa Enterprise plana ihtiyaç var (audit log ve Compliance API Enterprise'tadır; Team'de OpenTelemetry gibi kısmi izleme vardır)
+- Saklama politikası: Slack tarafında 30 gün sonra silinen mesajlar Claude tarafında ne oluyor? Anthropic'in standart politikası geçerli; ayrıntı için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfalarına bakın.
 
-[BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfası IT'nin değerlendirme listesini içerir.
+IT'nin değerlendirme listesi [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfasında.
 
 ## Yaygın Hatalar
 
-**Hassas kanalı bağlama.** İK, hukuk, üst yönetim DM'lerinin bulunduğu workspace'i Claude'a bağlamak ölçüsüz risktir. Önce hangi kanalların kapsam dışı tutulacağını kararlaştırın.
+**Hassas kanalı bağlama.** İK, hukuk ve üst yönetim DM'lerinin bulunduğu workspace'i Claude'a bağlamak yüksek risktir. Önce hangi kanalların kapsam dışı tutulacağını kararlaştırın.
 
 **Hatalı yetki verme.** OAuth onayında "tüm kanallar" yerine seçili kanallara izin verebiliyorsanız bunu kullanın.
 
-**"Bot her şeyi görüyor" zannı.** Slack'e eklenen Claude Tag **sadece eklendiği kanallardaki** mesajları görür. Eklenmediği kanal görünmez. Bu güvenlik özelliğidir.
+**"Bot her şeyi görüyor" yanlışı.** Slack'e eklenen Claude Tag yalnız eklendiği kanallardaki mesajları görür; eklenmediği kanalı göremez.
 
-**Audit yapılmaması.** Üç ayda bir Slack/Teams bağlantılarını gözden geçirin: hâlâ kullanılıyor mu, yetkiler güncel mi, kim kullanıyor.
+**Denetim yapılmaması.** Üç ayda bir Slack/Teams bağlantılarını gözden geçirin: hâlâ kullanılıyor mu, yetkiler güncel mi, kim kullanıyor.
 
 ## Plan Gereksinimi
 
-**Bireysel kullanım:** Connector tüm planlarda vardır, kişisel Slack hesabınızı bağlayabilirsiniz.
+Bireysel kullanım: Connector tüm planlarda vardır, kişisel Slack hesabınızı bağlayabilirsiniz.
 
-**Kurumsal kullanım:** Claude Tag yalnız Team ve Enterprise planlarında var. Plan tablosu [@Claude: Slack'te Claude](/claude/tag/) ve [Planlar](/wiki/temeller/planlar/) sayfalarında, yönetici ayarları [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında.
+Kurumsal kullanım: Claude Tag yalnız Team ve Enterprise planlarında var. Plan tablosu [@Claude: Slack'te Claude](/claude/tag/) ve [Planlar](/wiki/temeller/planlar/) sayfalarında, yönetici ayarları [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfasında.
 
 ## İlgili Sayfalar
 

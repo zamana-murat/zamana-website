@@ -9,10 +9,10 @@ tags:
   - indirim
   - ogrenci
   - planlar
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude kısmen ücretsizdir.** Free plan, claude.ai'de web, masaüstü ve mobil uygulamada sohbet, web araması, dosya oluşturma ve temel özellikleri ücretsiz sunar. Karşılığında kullanım her 5 saatte ve her hafta sınırlıdır; sınırın sayısal değerini Anthropic yayımlamaz. Ücretli planlar için resmi bir ücretsiz deneme ya da kampanya duyurusu doğrulayamadık. Resmi bir bireysel öğrenci indirimi ya da indirim kodu da yok. Aboneliği ucuzlatmanın tek resmi bireysel yolu yıllık ödemeli Pro'dur: ayda 17 USD, yani 200 USD peşin; aylık ödemede 20 USD. Kâr amacı gütmeyen kuruluşlar, bilim insanları, girişimler ve eğitim kurumları için ayrı programlar var, ama Türkiye'den uygunluk çoğunda belirsiz. "Ucuz Claude hesabı" satan sitelerden uzak durun. Zamana abonelik satmaz, satın alma doğrudan Anthropic'tendir. Aşağıda Free planın ne verdiğini, yıllık fiyat farkını, öğrenci ve startup durumunu ve Türkiye için belirsiz kalan noktaları tek tek açıklıyoruz; belirsiz olanı kesin yazmıyoruz.
+Claude kısmen ücretsizdir. Free plan, claude.ai'de web, masaüstü ve mobil uygulamada sohbet, web araması, dosya oluşturma ve temel özellikleri ücretsiz sunar. Karşılığında kullanım her 5 saatte ve her hafta sınırlıdır; sınırın sayısal değerini Anthropic yayımlamaz. Ücretli planlar için resmi bir ücretsiz deneme ya da kampanya duyurusu doğrulayamadık. Resmi bir bireysel öğrenci indirimi ya da indirim kodu da yok. Aboneliği ucuzlatmanın tek resmi bireysel yolu yıllık ödemeli Pro'dur: ayda 17 USD, yani 200 USD peşin; aylık ödemede 20 USD. Kâr amacı gütmeyen kuruluşlar, bilim insanları, girişimler ve eğitim kurumları için ayrı programlar var, ama Türkiye'den uygunluk çoğunda belirsiz. "Ucuz Claude hesabı" satan sitelerden uzak durun. Zamana abonelik satmaz, satın alma doğrudan Anthropic'tendir.
 
 > **Claude'u ücretsiz nasıl kullanırsınız?** Kayıt, ilk kullanım ve limiti uzatma yolları adım adım: [Claude Ücretsiz Kullanım Rehberi](/claude-ucretsiz/).
 
@@ -63,7 +63,7 @@ Fiyatlar USD ve vergi hariçtir. Türkiye faturalama adresiyle %20 KDV eklendiğ
 | **Team plan for scientists** | Akredite üniversite ve kâr amacı gütmeyen enstitülerdeki araştırmacılara 12 ay Standard koltuk ücretsiz | Ülke kısıtı yazılmıyor; Türk üniversitesinin onaylanıp onaylanmayacağı belirsiz |
 | **Claude for Small Business** | İndirim değil; ücretli planlarda çalışan plugin | Pro, Max, Ultra, Team, Enterprise |
 
-Kısacası: kâr amacı gütmeyen bir dernek ya da vakıfsanız Nonprofits başvurusunu denemeye değer, ama fiyat grubunu kesin bilemeyiz. Girişimler için program şu an kapalı; yeniden açılış tarihi yayımlanmadı. Şirket olarak alıyorsanız indirim değil, doğru plan seçimi (karma Max ve Pro dağılımı gibi) maliyeti düşürür: [Plan Seçimi Nasıl Değişir?](/wiki/temeller/planlar/#plan-seçimi-nasıl-değişir)
+Kâr amacı gütmeyen bir dernek ya da vakıfsanız Nonprofits başvurusunu denemeye değer, ama fiyat grubunu kesin bilemeyiz. Girişimler için program şu an kapalı; yeniden açılış tarihi yayımlanmadı. Şirket olarak alıyorsanız indirim değil, doğru plan seçimi (karma Max ve Pro dağılımı gibi) maliyeti düşürür: [Plan Seçimi Nasıl Değişir?](/wiki/temeller/planlar/#plan-seçimi-nasıl-değişir)
 
 ## Ucuza Alma Yolları: Nelere Dikkat?
 

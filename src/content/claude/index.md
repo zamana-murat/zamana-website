@@ -18,16 +18,16 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "İlk 7 gün planı (wiki)", href: "/wiki/temeller/ilk-7-gun/" }
 order: 10
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Claude nedir?
 
-Claude, yapay zeka şirketi Anthropic'in geliştirdiği asistandır. Sohbet penceresine yazdığınız soruya cevap verir, ama asıl farkı şudur: ona soru değil görev verebilirsiniz. Bir klasördeki raporları okuyup özet çıkarmasını, bir Excel dosyasındaki rakamları birleştirip sapmaları işaretlemesini, toplantı notlarından aksiyon listesi hazırlamasını ya da bir müşteri görüşmesi öncesi kısa bir bilgi notu yazmasını isteyebilirsiniz.
+Claude, yapay zeka şirketi Anthropic'in geliştirdiği asistandır. Sohbet penceresine yazdığınız soruya cevap verir, ayrıca görev de alır. Bir klasördeki raporları okuyup özet çıkarmasını, bir Excel dosyasındaki rakamları birleştirip sapmaları işaretlemesini, toplantı notlarından aksiyon listesi hazırlamasını ya da bir müşteri görüşmesi öncesi kısa bir bilgi notu yazmasını isteyebilirsiniz.
 
 Gerekeni sade Türkçe anlatmanız yeterlidir. Doğru komutu bilmeniz gerekmez, bir iş arkadaşınıza anlatır gibi yazarsınız. Claude adımları kendisi çıkarır, takıldığı yerde size sorar, sonunda düzenleyebileceğiniz gerçek bir dosya (Word, Excel, PowerPoint, PDF) teslim eder. Son söz sizde kalır: Word ve Excel'de değişiklikler izlenebilir şekilde görünür, Claude kaynak gösterir ve isterseniz bir işlem yapmadan önce onayınızı bekler.
 
-Claude hata yapabilir. Özellikle rakam, hukuki atıf ve önemli kararlar için çıktıyı kontrol etmeden kullanmayın. Bu aracın doğasının bir parçası, çalışma biçiminize yerleştirmeniz gereken bir alışkanlık.
+Claude hata yapabilir. Özellikle rakam, hukuki atıf ve önemli kararlar için çıktıyı kontrol etmeden kullanmayın. Hata payı bu aracın doğasında var; çıktıyı kontrol etmeyi çalışma alışkanlığınız yapın.
 
 ## Kim yapıyor, hangi modeller var?
 
@@ -35,16 +35,16 @@ Claude'u ABD merkezli yapay zeka şirketi Anthropic geliştirir. Şirketin geçm
 
 Kasım 2026 itibarıyla güncel model ailesi dört isimden oluşur:
 
-- **Fable 5.1:** en güçlü genel model, uzun süren ve çok adımlı işler için.
-- **Opus 5.5:** Fable 5.1'e yakın performans, daha düşük maliyet. Çoğu iş için iyi bir başlangıç.
+- **Fable 5.2:** en güçlü genel model, uzun süren ve çok adımlı işler için.
+- **Opus 5.5:** Fable 5.1 düzeyinde performans, daha düşük maliyet. Çoğu iş için iyi bir başlangıç.
 - **Sonnet 5.5:** hız ve zekâ dengesi, günlük kullanım modeli.
 - **Haiku 5.5:** en hızlı ve hafif model, basit ve yüksek hacimli işler için.
 
-Yeni modellerde bağlam penceresi 1 milyon token. Bu, çok uzun belgeleri ve yazışma geçmişini tek seferde işleyebilmesi demek. Hangi modelin ne zaman seçileceği için [Modeller bölümümüze](/claude/modeller/) ve [wiki'deki model sayfasına](/wiki/temeller/modeller/) bakın. Mythos 5.1 adlı bir model de var, ancak yalnızca davetle seçili katılımcılara açık, genel kullanımda değil.
+Yeni modellerde bağlam penceresi 1 milyon token. Bu, çok uzun belgeleri ve yazışma geçmişini tek seferde işleyebilmesi demek. Hangi modelin ne zaman seçileceği için [Modeller bölümümüze](/claude/modeller/) ve [wiki'deki model sayfasına](/wiki/temeller/modeller/) bakın. Mythos 5.2 adlı bir model de var, ancak sınırlı erişimli: yalnızca doğrulama programlarından geçen kuruluşlara açık, genel kullanımda değil.
 
 ## Neler yapabilir?
 
-Claude'un güçlü olduğu işlerin pratik karşılığı şöyle:
+Claude'un yapabildikleri:
 
 - **Hızlı cevap ve uzun görev:** Kısa bir soru da sorabilir, bilgisayarınızı kapattıktan sonra bile süren uzun bir görev de verebilirsiniz.
 - **Bitmiş, düzenlenebilir dosyalar:** Word, Excel, PowerPoint ve PDF okur; belge, tablo, sunum ve etkileşimli grafik üretir. Claude görsel üretmez, görselleri yorumlar.
@@ -75,7 +75,7 @@ Aşağıdakiler Claude'un çalışma biçimini Türkiye'deki tipik işlere uyarl
 - **İhracat ve satış:** Alıcı yazışmalarını İngilizce ve Türkçe hazırlamak, teklif ve proforma taslakları çıkarmak, müşteri görüşmesi öncesi geçmiş yazışmalardan özet çıkarmak.
 - **Hukuk ve uyum:** Sözleşme taslağını şirketin standart maddeleriyle karşılaştırıp farkları işaretlemek, KVKK aydınlatma metni taslağı hazırlamak. Hukuki atıfları mutlaka kontrol edin.
 - **İK:** İş ilanını yetkinlik kılavuzuyla karşılaştırmak, anket sonuçlarını yönetici sunumuna dönüştürmek.
-- **Yönetim ve KOBİ:** Haftalık toplantı notlarından aksiyon listesi ve sorumlu atamak, kendi şirketinizin rakamlarından panel hazırlatmak. Küçük işletmede "bir analist tutmak" ile "hiçbir şey yapmamak" arasındaki boşluğu doldurur.
+- **Yönetim ve KOBİ:** Haftalık toplantı notlarından aksiyon listesi ve sorumlu atamak, kendi şirketinizin rakamlarından panel hazırlatmak.
 
 ## Planlar ve fiyatlar
 

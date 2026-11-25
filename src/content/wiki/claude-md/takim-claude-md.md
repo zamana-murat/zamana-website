@@ -6,23 +6,23 @@ tags:
   - claude-md
   - takim
   - paylasimli
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**[CLAUDE.md](/wiki/claude-md/nedir/) bireysel başlar, ama şirkette 6 kişi aynı yönergeyi paylaşmak istediğinde takım versiyonu gerekir.** Bu sayfa paylaşılan kural setinin nasıl kurulduğunu, kimin editlediğini, sürüm sorunlarının nasıl yönetildiğini anlatır.
+[CLAUDE.md](/wiki/claude-md/nedir/) bireysel başlar, ama şirkette 6 kişi aynı yönergeyi paylaşmak istediğinde takım versiyonu gerekir. Aşağıda paylaşılan kural setinin nasıl kurulacağı, kimin edit edeceği ve sürümlerin nasıl yönetileceği var.
 
-> **Takımda tek bir yer yok, birkaç yol var.** Aynı kural seti, kullanılan araca göre şu yerlere konur: Team ya da Enterprise'ta paylaşılan bir proje, yöneticinin yazdığı kuruluş talimatı, yöneticinin dağıttığı skill ve Cowork'te çalışılan klasördeki ortak `CLAUDE.md`. Her yolun gücü ve sınırı aşağıda ("Takım Kural Seti Çalışana Nasıl Ulaşır?").
+> Takımda tek bir yer yok, birkaç yol var. Aynı kural seti, kullanılan araca göre şu yerlere konur: Team ya da Enterprise'ta paylaşılan bir proje, yöneticinin yazdığı kuruluş talimatı, yöneticinin dağıttığı skill ve Cowork'te çalışılan klasördeki ortak `CLAUDE.md`. Her yolun gücü ve sınırı aşağıda ("Takım Kural Seti Çalışana Nasıl Ulaşır?").
 
 ## Bireysel mi Takım mı?
 
-Çoğu şirkette **iki katman** birden vardır:
+Şirketlerde genellikle iki katman birlikte bulunur:
 
 | Katman | Sahibi | Kapsam |
 |---|---|---|
-| **Şirket / Takım kural seti** | Yönetim / İK / takım lideri | Marka sesi, KVKK kuralları, yasak kelimeler, müşteri tarzı |
-| **Bireysel talimat** (profil talimatı ya da klasördeki CLAUDE.md) | Çalışanın kendisi | Rol, kişisel tercihler, projeler, çalışma saatleri |
+| Şirket / Takım kural seti | Yönetim / İK / takım lideri | Marka sesi, KVKK kuralları, yasak kelimeler, müşteri tarzı |
+| Bireysel talimat (profil talimatı ya da klasördeki CLAUDE.md) | Çalışanın kendisi | Rol, kişisel tercihler, projeler, çalışma saatleri |
 
-Bunlar çelişmemeli. Bireysel, takımı **tamamlar**, değiştirmez. Şirket "asla X yapma" diyorsa, çalışan kendi talimatında "ama bazen X yap" diyemez.
+Bunlar çelişmemeli: bireysel talimat takım kural setini tamamlar, değiştirmez. Şirket "asla X yapma" diyorsa, çalışan kendi talimatında "ama bazen X yap" diyemez.
 
 ## Takım CLAUDE.md Ne İçerir?
 
@@ -32,7 +32,7 @@ Tipik bölümler:
 
 > *Biz [Şirket Adı]'yız. [Sektör]'de faaliyet gösteren [büyüklük] bir kurumuz. Müşterilerimiz [kategori]. Konumlanmamız [değer önerisi].*
 
-Claude'un sektörel doğru hizalanması için temel.
+Claude'un sektörünüze uygun çalışması için temel bilgi.
 
 ### 2. Marka Sesi
 
@@ -60,73 +60,73 @@ Claude'un sektörel doğru hizalanması için temel.
 
 > *Şu ifadeler kullanılmayacak: "lider çözümümüz", "yenilikçi yaklaşım", "vizyoner ekip", "pazarın lideri".*
 
-Marka diliyle ilgili keskin sınırlar burada.
+Marka diliyle ilgili kesin sınırlar burada yer alır.
 
 ### 7. Şirket İçi Dil ve Akronimler
 
 > *"PMV" = "Proje Müdürü Vekâleti", "K1 / K2" = İlk ve ikinci çeyrek müşteri kategorileri, "Ankara hattı" = Anadolu üretim tesisleri.*
 
-Claude'un cümlelerinizi anlaması için iç jargonu açıklamak gerekir.
+Claude'un cümlelerinizi anlaması için iç jargonu açıklayın.
 
 ## Nerede Saklanır?
 
-Önce **kaynak metnin** nerede duracağına karar verin. Bu, çalışanların Claude'da gördüğü yer değil, "doğru sürüm hangisi" sorusunun cevabıdır. Birkaç seçenek var, her birinin avantajı farklı:
+Önce kaynak metnin nerede duracağına, yani "doğru sürüm hangisi" sorusunun cevabının nerede olacağına karar verin. Çalışanların Claude'da gördüğü yer ayrı bir konudur. Seçenekler:
 
 ### Seçenek 1: Paylaşılan Bulut Dosyası
 
 Google Drive / OneDrive / SharePoint'te tek bir CLAUDE.md dosyası. Çalışanlar [Projects](/wiki/araclar/projects/) içine kopyalar veya klasörlerine indirir.
 
-**Avantaj:** Her çalışan en güncel versiyonu görür.
-**Dezavantaj:** Sürüm/değişiklik kontrolü zayıf.
+Avantaj: Her çalışan en güncel versiyonu görür.
+Dezavantaj: Sürüm ve değişiklik kontrolü zayıf.
 
 ### Seçenek 2: Git Repository
 
 Şirket içi GitHub/GitLab repository'sinde CLAUDE.md. Değişiklikler PR ile yönetilir, geçmiş izlenir.
 
-**Avantaj:** Sürüm kontrolü, değişiklik geçmişi, onay süreci güçlü.
-**Dezavantaj:** Git bilen birinin sahiplenmesi gerekir.
+Avantaj: Sürüm kontrolü, değişiklik geçmişi ve onay süreci güçlü.
+Dezavantaj: Git bilen birinin sahiplenmesi gerekir.
 
 ### Seçenek 3: Wiki / Notion Sayfası
 
 İç wiki'de CLAUDE.md sayfası. Çalışanlar oradan kopyalar.
 
-**Avantaj:** Kolay erişim, yorum sistemi.
-**Dezavantaj:** Format değişikliği (Notion → Markdown) bazen kayıp yaratır.
+Avantaj: Kolay erişim, yorum sistemi.
+Dezavantaj: Format değişikliği (Notion → Markdown) bazen kayıp yaratır.
 
 ## Takım Kural Seti Çalışana Nasıl Ulaşır?
 
-Kaynak metin hazırsa, onu çalışanın Claude'una ulaştıran dört yol var. Birini seçmeniz gerekmez; çoğu şirkette kısa bir kuruluş talimatı ile paylaşılan bir proje birlikte kullanılır.
+Kaynak metin hazırsa onu çalışanın Claude'una ulaştıran dört yol var. Birini seçmeniz gerekmez; kısa bir kuruluş talimatını paylaşılan bir projeyle birlikte kullanabilirsiniz.
 
 | Yol | Kim kurar | Nerede geçerli | Sınırı |
 |---|---|---|---|
-| **Paylaşılan proje** (Team ve Enterprise) | Proje sahibi | O projedeki sohbetler | Çalışan doğru projede çalışmalı; izin düzeyi paylaşımda belirlenir |
-| **Kuruluş talimatı** | Yönetici | Sohbet, Cowork ve Claude Code oturumları | En çok 3.000 karakter; **zorlayıcı değil**, modele rehberdir |
-| **Yöneticinin dağıttığı skill ya da plugin** | Yönetici | Skill'i yüklemiş ya da kendisine açılmış kullanıcılar | Claude skill'i ilgili gördüğünde yükler, her mesaja sabit uygulanmaz. Toplu dağıtım şirket içi plugin marketplace'iyle (Team ve Enterprise; Cowork ve Skills açık olmalı) |
-| **Klasörde ortak CLAUDE.md** | Takım lideri | Cowork'te o klasörle çalışılan **yerel** oturumlar | Her çalışanın klasörde güncel kopyası olmalı; bulut Cowork oturumunda okunduğu belgelenmemiş |
+| Paylaşılan proje (Team ve Enterprise) | Proje sahibi | O projedeki sohbetler | Çalışan doğru projede çalışmalı; izin düzeyi paylaşımda belirlenir |
+| Kuruluş talimatı | Yönetici | Sohbet, Cowork ve Claude Code oturumları | En çok 3.000 karakter; zorlayıcı değildir, modele rehberdir |
+| Yöneticinin dağıttığı skill ya da plugin | Yönetici | Skill'i yüklemiş ya da kendisine açılmış kullanıcılar | Claude skill'i ilgili gördüğünde yükler, her mesaja sabit uygulanmaz. Toplu dağıtım şirket içi plugin marketplace'iyle (Team ve Enterprise; Cowork ve Skills açık olmalı) |
+| Klasörde ortak CLAUDE.md | Takım lideri | Cowork'te o klasörle çalışılan yerel oturumlar | Her çalışanın klasörde güncel kopyası olmalı; bulut Cowork oturumunda okunduğu belgelenmemiş |
 
-Hangi yönetici özelliklerinin planınızda açık olduğu ([Team ve Enterprise plan](/wiki/temeller/takim-ve-admin/)) güncel yönetici ayarlarına bağlıdır; bu sayfada bunu garanti etmiyoruz. Kurmadan önce admin panelinden veya Anthropic satış ekibinden teyit edin.
+Hangi yönetici özelliklerinin planınızda açık olduğu ([Team ve Enterprise plan](/wiki/temeller/takim-ve-admin/)) güncel yönetici ayarlarına bağlıdır. Kurmadan önce admin panelinden ya da Anthropic satış ekibinden teyit edin.
 
 ### Paylaşılan Proje
 
-Şirket kurallarını proje talimatı olarak, uzun başvuru metinlerini (marka kılavuzu, KVKK politikası) proje bilgisi olarak ekleyin. Ayrıntı: [Projects](/wiki/araclar/projects/). Kural değiştiğinde tek noktada güncellenir.
+Şirket kurallarını proje talimatı olarak, uzun başvuru metinlerini (marka kılavuzu, KVKK politikası) proje bilgisi olarak ekleyin. Ayrıntı: [Projects](/wiki/araclar/projects/). Kural değiştiğinde tek noktada güncellersiniz.
 
 ### Kuruluş Talimatı
 
-Yöneticinin yazdığı kısa bir metindir ve oturumların sistem istemine eklenir. Yalnızca 3.000 karaktere sığar, yani kabaca yarım sayfa. Bu yüzden buraya en kritik 5-10 kuralı yazın: dil, ton, "müşteri kişisel verisi yüklenmez" gibi mutlaklar. Zorlayıcı olmadığı için KVKK gibi bağlayıcı bir yükümlülüğü **yalnızca** buraya yazıp işi bitmiş saymayın; asıl denetim [şirket içi politika](/wiki/temeller/sirket-ici-politika/) ve yönetici ayarlarıyla yapılır.
+Yöneticinin yazdığı kısa bir metindir ve oturumların sistem istemine eklenir. 3.000 karaktere, yani kabaca yarım sayfaya sığar; bu yüzden en kritik 5-10 kuralı yazın: dil, ton, "müşteri kişisel verisi yüklenmez" gibi mutlaklar. Zorlayıcı olmadığı için KVKK gibi bağlayıcı bir yükümlülüğü yalnızca buraya yazıp işi bitmiş saymayın; asıl denetim [şirket içi politika](/wiki/temeller/sirket-ici-politika/) ve yönetici ayarlarıyla yapılır.
 
 ### Skill
 
-Tekrar eden görev yapıları (müşteri yanıtı formatı, toplantı özeti, teklif iskeleti) için en uygun yol skill'dir. Yöneticiler özelleştirilmiş skill ve eklentileri departmanlara dağıtabilir. Ayrıntı: [Skills](/wiki/yetenekler/skills/). Her zaman geçerli olması gereken kurallar için skill değil, kuruluş talimatı ya da proje talimatı kullanın.
+Tekrar eden görev yapıları (müşteri yanıtı formatı, toplantı özeti, teklif iskeleti) için en uygun yol skill'dir. Yöneticiler özelleştirilmiş skill ve eklentileri departmanlara dağıtır. Ayrıntı: [Skills](/wiki/yetenekler/skills/). Her zaman geçerli olması gereken kurallar için skill değil, kuruluş talimatı ya da proje talimatı kullanın.
 
 ### Klasörde Ortak CLAUDE.md
 
 Takım Cowork ile ortak bir klasörde çalışıyorsa (örneğin her çalışanın bilgisayarındaki aynı yapıdaki proje klasörü) klasör köküne `CLAUDE.md` koyun. Yerel oturumda okunur. Dosyanın güncel kopyasının herkeste olması sizin sorumluluğunuzdadır; bu yüzden kaynak metni yukarıdaki seçeneklerden birinde tutun.
 
-> **Geliştiriciler için.** Claude Code kullanan ekiplerde iki ek katman var. BT ekibi **yönetilen politika** dosyasını (`CLAUDE.md`) çalışanların makinelerine kurabilir; bu dosya kullanıcının `~/.claude/CLAUDE.md` ve projenin `./CLAUDE.md` dosyalarıyla birleştirilir. Projenin dosyası kod deposunda durduğu için sürüm kontrolü hazır gelir. Ayrıntı: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
+> Geliştiriciler için: Claude Code kullanan ekiplerde iki ek katman var. BT ekibi yönetilen politika dosyasını (`CLAUDE.md`) çalışanların makinelerine kurabilir; bu dosya kullanıcının `~/.claude/CLAUDE.md` ve projenin `./CLAUDE.md` dosyalarıyla birleştirilir. Projenin dosyası kod deposunda durduğu için sürüm kontrolü hazır gelir. Ayrıntı: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ## Çalışan Bireysel Talimatıyla Birleştirme
 
-Çalışan iki metni birleştirme yaklaşımı seçer:
+Çalışan iki metni şu yollardan biriyle birleştirir:
 
 ### A: Tek Bir Metin (kopyala + ekle)
 
@@ -140,14 +140,14 @@ Takım Cowork ile ortak bir klasörde çalışıyorsa (örneğin her çalışan�
 [bireysel içerik]
 ```
 
-**Risk:** Şirket güncellendiğinde çalışan kopyasını güncellemez → eskisi kalır.
+Risk: Şirket metni güncellendiğinde çalışan kopyasını güncellemezse eski sürüm kalır.
 
 ### B: Paylaşılan Projede Şirket, Profil Talimatında Bireysel
 
 [Projects](/wiki/araclar/projects/) içinde bir "Şirket Bilgisi" projesi açın ve şirket metnini proje talimatı ya da proje bilgisi olarak yükleyin. Çalışanın bireysel talimatı (Settings > General > "Instructions for Claude", ya da klasöründeki CLAUDE.md) ayrı kalır. (Projects 17 Eylül 2026'da yeniden tasarlandı; mevcut projeler olduğu gibi çalışıyor, yeni yapı kademeli açılıyor. Ayrıntı: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).)
 
-**Avantaj:** Şirket güncellendiğinde tek noktada güncellenir.
-**Dezavantaj:** Çalışan her sohbette doğru proje altında olduğundan emin olmalı.
+Avantaj: Şirket metni güncellendiğinde tek noktada güncellenir.
+Dezavantaj: Çalışan her sohbette doğru proje altında olduğundan emin olmalı.
 
 ### C: Merkezi Dağıtım (planınız destekliyorsa)
 
@@ -155,11 +155,11 @@ Yönetici özellikleriniz organizasyon genelinde talimat dağıtımına izin ver
 
 ## Kim Editler?
 
-Şirket kural setinin **sahibi** olmalı. Genelde:
+Şirket kural setinin bir sahibi olmalı. Genelde:
 
-- **Küçük şirket (5-15):** İK direktörü veya kurucu
-- **Orta şirket (15-50):** İletişim/marka müdürü + İK direktörü ortak
-- **Büyük şirket (50+):** Ayrı bir AI Governance kurulu (CIO + Hukuk + İK + Marka temsilcisi)
+- Küçük şirket (5-15): İK direktörü veya kurucu
+- Orta şirket (15-50): İletişim/marka müdürü + İK direktörü ortak
+- Büyük şirket (50+): Ayrı bir AI Governance kurulu (CIO + Hukuk + İK + Marka temsilcisi)
 
 Editleme süreci:
 
@@ -182,7 +182,7 @@ sonraki gözden geçirme: 2026-07-26
 ---
 ```
 
-Önemli değişikliklerde **değişiklik geçmişi** tutun:
+Önemli değişikliklerde değişiklik geçmişi tutun:
 
 ```markdown
 ## Değişiklik Geçmişi
@@ -202,13 +202,13 @@ Yeni çalışan ilk haftasında:
 4. İki metni birleştirir
 5. İlk haftada yöneticiyle birlikte bir deneme oturumu yapılır: talimat test edilir, gerekirse iyileştirilir. Çalışan klasörle yerel bir [Cowork](/wiki/araclar/cowork-modu/) oturumunda çalışıyorsa "Talimatımı 3 maddede özetle" testi o klasörde yapılır; sohbet kullanıyorsa aynı test paylaşılan projede, yeni bir sohbette yapılır
 
-[İlk 7 Gün](/wiki/temeller/ilk-7-gun/) sayfası bu süreci genel hatlarıyla anlatır.
+Genel süreç için [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) sayfasına bakın.
 
 ## Yaygın Sorunlar
 
 ### "Şirket metni çok uzun, Claude bunalıyor"
 
-Talimat çok uzunsa Claude bazı kuralları görmezden gelmeye başlar. **Birkaç yüz kelimeyi geçmemesi** pratiktir; kuruluş talimatında zaten 3.000 karakter sınırı var. Detaylar yerine **mutlaklar** yazılsın.
+Talimat çok uzunsa Claude bazı kuralları görmezden gelmeye başlar. Birkaç yüz kelimeyi geçmemesi pratiktir; kuruluş talimatında zaten 3.000 karakter sınırı var. Ayrıntı yerine mutlak kuralları yazın.
 
 Detaylı şablonlar [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)'nde, Claude'a "şu şablonu kullan" diye hitap ederek çağrılır.
 
@@ -222,11 +222,11 @@ Detaylı şablonlar [Şablon Kütüphanesi](/wiki/claude-md/sablon-kutuphanesi/)
 
 ### "Şirket metnini kim güncellesin, kimse sahiplenmiyor"
 
-Sahipsiz politika belgeleri 6 ay sonra eskimiş ve etkisizdir. **Bir kişiyi resmi sahibi atayın**, KPI'sının bir kısmı bu olsun.
+Sahipsiz politika belgeleri 6 ay sonra eskir ve etkisizleşir. Bir kişiyi resmi sahibi olarak atayın, KPI'sının bir kısmı bu olsun.
 
 ### "İki çalışan farklı sürüm kullanıyor"
 
-Sürüm yönetimi yoksa olur. **Her metnin başında sürüm numarası** kuralı bunu önler.
+Sürüm yönetimi yoksa olur. Her metnin başına sürüm numarası yazmak bunu önler.
 
 ## Mini Şablon: Başlangıç İçin
 
@@ -264,7 +264,7 @@ sahip: [Pozisyon]
 - [vs.]
 ```
 
-Bu taslak kısa olduğu için kuruluş talimatının 3.000 karakterine de sığar; uzun kısımlarını paylaşılan projeye taşıyın. [Örnekler](/wiki/claude-md/ornekler/) sayfasında daha kapsamlı örnekler var.
+Bu taslak kuruluş talimatının 3.000 karakterine de sığar; uzun kısımları paylaşılan projeye taşıyın. Daha kapsamlı örnekler [Örnekler](/wiki/claude-md/ornekler/) sayfasında.
 
 ## İlgili Sayfalar
 

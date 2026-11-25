@@ -18,14 +18,14 @@ related:
   - { label: "Claude Marketplace", href: "/kurumsal/marketplace/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 180
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-26"
 ---
 
 ## Bu sayfayı nasıl okumalı?
 
 claude.com/customers'ta Kasım 2026 itibarıyla 286 hikâye var. Aşağıdakileri iki ölçüte göre seçtik: Türk kurumlarının tanıdığı bir iş problemi olsun ve kaynakta somut bir sonuç yazsın. Özetler kısaltılmış uyarlamalardır; ayrıntı ve bağlamı için her örneğin bağlantısına gidin. Rakamları biz üretmedik, değiştirmedik.
 
-Bir uyarı: bu hikâyelerin önemli bir kısmı Claude'u **kendi ürününe API ile gömen** şirketlere ait. Ekiplerin günlük işte Claude Enterprise, Cowork veya Claude Tag kullandığı örneklerle aynı şey değil. Aşağıdaki görsel, seçtiğimiz örneklerde hangi ürünün kullanıldığını gösteriyor.
+Bir uyarı: hikâyelerin bir bölümü Claude'u **kendi ürününe API ile gömen** şirketlere ait. Bunlar, ekiplerin günlük işte Claude Enterprise, Cowork veya Claude Tag kullandığı örneklerden farklı. Aşağıdaki görsel, seçtiğimiz örneklerde hangi ürünün kullanıldığını gösteriyor.
 
 ![Seçilen 10 müşteri hikâyesinin kullandığı Claude ürünleri: ekip kullanımı tarafında Claude Enterprise, Cowork ve Claude Tag; ürün geliştirme tarafında Claude Platform (API) ve Claude Code](/images/kurumsal/musteriler/urun-dagilimi.webp)
 

@@ -7,10 +7,10 @@ tags:
   - prompt
   - token
   - kullanim
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Claude'la çalışmaya başlamadan önce iki kelimeyi bilmek yeterli: **prompt** ve **token**. İkisi de basit, ilk başta korkutucu değil.
+Claude'la çalışmaya başlamadan önce iki kelimeyi bilmek yeterli: **prompt** ve **token**. İkisi de göründüğünden basit.
 
 ---
 
@@ -24,7 +24,7 @@ Claude'la çalışmaya başlamadan önce iki kelimeyi bilmek yeterli: **prompt**
 - *"Müşterime kibar bir takip e-postası yaz."*
 - *"Şu Excel dosyasındaki sayıları tabloya çevir."*
 
-Hepsi prompt. Düşünmek için karmaşık bir kelimeye gerek yok, Claude'a ne söylediğinizdir.
+Hepsi prompt: Claude'a ne söylediğiniz.
 
 > **İyi prompt nedir?** Net, bağlamlı, ne istediğinizi söyleyen. İleride [Prompting Temel İlkeleri](/wiki/prompting/temel-ilkeler/) sayfasında detaylı işliyoruz. Şimdilik sadece "Claude'a yazdığım mesaj" olarak düşünün.
 

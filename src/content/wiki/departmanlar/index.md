@@ -6,12 +6,12 @@ tags:
   - departmanlar
   - giris
   - rol-bazli
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Claude her departmanda farklı çalışır. **Aynı araç, farklı rollerde farklı değer üretir**, çünkü iş akışları farklı, çıktılar farklı, hukuki hassasiyetler farklı.
+Claude her departmanda farklı çalışır. Aynı araç farklı rollerde farklı değer üretir, çünkü iş akışları, çıktılar ve hukuki hassasiyetler farklıdır.
 
-Bu bölüm 12 departman, küçük işletmeler (KOBİ) ve 7 sektör için hazırlanmış, gerçek iş akışlarına dayanan Claude kullanım senaryolarını içerir: toplam 20 sayfa.
+Bu bölümde 12 departman, küçük işletmeler (KOBİ) ve 7 sektör için gerçek iş akışlarına dayanan Claude kullanım senaryoları var: toplam 20 sayfa.
 
 ![Departman ve sektör çarkı: merkezde Claude ve ekip, üstte 12 departman, altta 7 sektör ve Küçük İşletme (KOBİ)](/images/wiki/departmanlar-cark.svg)
 
@@ -119,9 +119,9 @@ Bu bölüm 12 departman, küçük işletmeler (KOBİ) ve 7 sektör için hazırl
 
 ## Departman Değil, Senaryo: Küçük İşletme (KOBİ)
 
-Yukarıdaki 12 departman, ayrı ekiplerin olduğu orta ölçekli şirketler içindir. Ama Türkiye'deki işletmelerin çoğu **tek kişinin bütün şapkaları taktığı** KOBİ'lerdir: satışı da pazarlamayı da muhasebeyi de aynı kişi yürütür. Bu profil için ayrı bir sayfa hazırladık:
+Yukarıdaki 12 departman, ayrı ekiplerin olduğu orta ölçekli şirketler içindir. KOBİ'lerde ise çoğu zaman tek kişi satışı da pazarlamayı da muhasebeyi de yürütür. Bu profil için ayrı bir sayfa hazırladık:
 
-- [**Küçük İşletme (KOBİ) için Claude**](/wiki/departmanlar/kobi/): Pazartesi brifingi, kampanya, ay sonu kapanış, tahsilat takibi. Bir rol değil, tek başına her işi yürüten işletme sahibinin tam iş akışı.
+- [**Küçük İşletme (KOBİ) için Claude**](/wiki/departmanlar/kobi/): Pazartesi brifingi, kampanya, ay sonu kapanış, tahsilat takibi. Tek başına her işi yürüten işletme sahibinin tam iş akışı.
 
 ## Sektöre Özel Sayfalar
 
@@ -138,7 +138,7 @@ Bazı sektörlerin işi departman sınırlarına sığmaz. Bunlar için ayrı sa
 
 ## Nasıl Ölçülür?
 
-Sayfalardaki "Gerçek Örnek" bölümlerinde elle ve Claude ile süre karşılaştırması bulacaksınız. Bunlar **Zamana'nın atölye ve müşteri çalışmalarında gözlediği tipik aralıklardır**; kurumdan kuruma değişir. Kendi kurumunuzdaki kazancı görmek için:
+Sayfalardaki "Gerçek Örnek" bölümlerinde elle ve Claude ile süre karşılaştırması bulacaksınız. Bunlar Zamana'nın atölye ve müşteri çalışmalarında gözlediği tipik aralıklardır; kurumdan kuruma değişir. Kendi kurumunuzdaki kazancı görmek için:
 
 - [**Ölçüm Metrikleri**](/wiki/temeller/olcum-metrikleri/): Neyi, nasıl ölçeceğiniz ve gerçek vaka örnekleri
 - [**ROI Hesaplayıcı**](/wiki/temeller/roi-hesaplayici/): Kendi süre ve maliyet rakamlarınızla hesap
@@ -161,32 +161,30 @@ Her departman sayfasında tutarlı bir yapı bulacaksınız:
 - **Gerçek örnek**: tipik bir iş akışının adım adım uygulaması
 - **İlgili sayfalar**: wiki içinde mantıklı bağlantılar
 
-KOBİ ve sektör sayfaları aynı mantığı izler, ama bölümleri o işe göre düzenlenmiştir.
+KOBİ ve sektör sayfaları aynı mantığı izler; bölümleri işe göre düzenlenmiştir.
 
 ## Ana Fikir
 
-Bu bölümün özeti tek cümleye indirgenirse:
+> Aynı Claude, farklı roller için farklı iş akışları kurar. Her çalışan Claude'u kendi işine göre kurmalı.
 
-> **Aynı Claude, farklı roller için farklı iş akışları kurar. Her çalışanın kendi işine uygun bir uygulama kurması bu bölümde önerilen yaklaşımdır.**
-
-Bu 12 departman Türkiye'deki orta ölçekli şirketlerin fonksiyonel yapısına karşılık gelir. Sizin şirketinizde bazıları birleştirilmiş olabilir (örneğin satınalma + operasyon tek kişide) ya da bazıları yoktur (örneğin şirket içi hukuk yerine dış danışman). Önerilen yaklaşım **çalışanın rolüne göre** değil, **yaptığı işe göre** uyarlanır.
+Bu 12 departman Türkiye'deki orta ölçekli şirketlerin fonksiyonel yapısına karşılık gelir. Sizin şirketinizde bazıları birleşmiş olabilir (örneğin satınalma ve operasyon tek kişide) ya da hiç olmayabilir (örneğin şirket içi hukuk yerine dış danışman). Sayfaları unvana göre değil, yaptığınız işe göre seçin.
 
 ## Nasıl Kullanın?
 
-**Kendi rolünüze en yakın sayfa(lar)dan başlayın.** Birden fazla departmanda çalışıyorsanız, en çok zaman harcadığınız alana öncelik verin.
+Kendi rolünüze en yakın sayfa(lar)dan başlayın. Birden fazla departmanda çalışıyorsanız, en çok zaman harcadığınız alana öncelik verin.
 
-Bir sayfa genellikle 15-25 dakikada okunur. Hepsini okumak saatler alır, ama **kendi rolünüzle sınırlarsanız** 30 dakika yeter.
+Bir sayfa genellikle 15-25 dakikada okunur. Hepsini okumak saatler alır, ama kendi rolünüzle sınırlarsanız 30 dakika yeter.
 
 ## Pratik Adaptasyon Yolu
 
 Kendi rolünüz için somut bir kurulum:
 
-1. **Departman sayfasını okuyun**, içeriği gezin
-2. **3-5 prompt** taslağını kendi gerçek işiniz üzerinden hazırlayın
-3. **İlk iş akışını** canlı kurun, o gün ilk gerçek çıktıyı alın
-4. **Bir scheduled task veya connector** ekleyin
+1. Departman sayfasını okuyun, içeriği gezin
+2. 3-5 prompt taslağını kendi gerçek işiniz üzerinden hazırlayın
+3. İlk iş akışını canlı kurun, o gün ilk gerçek çıktıyı alın
+4. Bir scheduled task ya da connector ekleyin
 
-Bu yaklaşım her departman sayfasının başlangıç noktası niteliğindedir.
+Aynı sırayı her departman sayfasında izleyebilirsiniz.
 
 ## Nereye Gitmeli?
 

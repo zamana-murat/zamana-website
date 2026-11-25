@@ -8,7 +8,7 @@ tags:
   - tasarim
   - sunum
   - gorsel
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 **Claude Design, Claude ile birlikte görsel iş ürettiğiniz bir Anthropic Labs ürünüdür.** 17 Nisan 2026'da tanıtıldı. Metin yerine **tasarım, prototip, sunum ve one-pager** gibi görsel çıktıları konuşarak, adım adım birlikte oluşturmanızı sağlar.
@@ -30,7 +30,7 @@ lastUpdated: "2026-11-09"
 
 ## Nasıl Çalışır?
 
-Claude Design **işbirlikçi**dir. Siz niyeti söylersiniz, Claude bir taslak üretir, siz geri bildirim verirsiniz, birlikte iyileştirirsiniz. "Şu başlığı büyüt", "renkleri kurumsal kimliğimize çek", "bu slaytı ikiye böl" gibi yönlendirmelerle ilerler. Tek seferlik bir çıktı değil, üzerinde dönülen bir tasarım yüzeyidir.
+Claude Design **işbirlikçi**dir. Siz niyeti söylersiniz, Claude bir taslak üretir, siz geri bildirim verirsiniz, birlikte iyileştirirsiniz. "Şu başlığı büyüt", "renkleri kurumsal kimliğimize çek", "bu slaytı ikiye böl" gibi yönlendirmelerle ilerler. Tasarım, üzerinde defalarca dönüp düzeltebileceğiniz bir yüzey olarak kalır.
 
 ## Sunum ve Slayt Üretimi
 

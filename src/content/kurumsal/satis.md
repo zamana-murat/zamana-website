@@ -3,7 +3,7 @@ title: "Satış ekipleri için Claude"
 seoTitle: "Satışta Claude: Görüşme Hazırlığı ve Teklif"
 description: "Satış ekipleri Claude ile müşteri araştırır, görüşmeye hazırlanır, teklif ve tahmin hazırlar, CRM'i günceller. Türkiye'de bayi ağı, TL ve döviz teklif notları."
 eyebrow: "Departman"
-lead: "Satış temsilcisinin haftasının önemli bir kısmı müşteriyle değil, hazırlıkla geçer: araştırma, not toplama, teklif, CRM girişi. Claude bu hazırlık işini üstlenir; temsilci zamanını görüşmeye ve kapanışa ayırır."
+lead: "Satış temsilcisi haftada saatlerce hazırlık yapar: araştırma, not toplama, teklif, CRM girişi. Claude bu hazırlık işini üstlenir; temsilci zamanını görüşmeye ve kapanışa ayırır."
 heroImage: "/images/kurumsal/satis/hero.webp"
 heroAnimation: "satis"
 heroAlt: "Kurgusal bir endüstriyel tedarikçinin satış temsilcisi görüşme hazırlığı komutunu yazıyor; Claude CRM kaydını, son e-postaları ve şirket haberlerini tarıyor, açık fırsat, son 90 gün, risk ve konuşma noktalarını içeren görüşme özetini hazırlıyor ve onayla CRM'e not ekliyor."
@@ -18,14 +18,14 @@ related:
   - { label: "Microsoft 365 eklentileri", href: "/claude/microsoft-365/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 90
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
 Anthropic'in satış sayfasının özeti tek cümle: daha çok satış hattı, daha az hazırlık işi. Temsilci haftada saatlerce sürdüğü hesap araştırmasını, görüşme hazırlığını ve CRM girişini Claude'a devreder; yönetici ise kaynakları gösterilmiş, savunulabilir bir satış tahmini alır.
 
-Claude bunu kendi başına değil, bağlı araçlarınızla yapar. Kaynak sayfa CRM, görüşme kaydı, potansiyel müşteri verisi ve e-imza alanlarında bir dizi entegrasyon sayıyor; en yaygın örnekler Salesforce ve HubSpot. Eylül 2026'da beta olarak çıkan **Salesforce in Claude** eklentisi, yenileme hazırlığından görüşme sonrası takibe kadar 37 hazır satış skill'i getiriyor ve tüm ücretli planlarda sunuluyor; Claude'un Salesforce'taki işlemleri temsilcinin kendi yetkileriyle kaydediliyor. Kaynak sayfadaki müşteri görüşlerinden birinde, bir hukuk teknolojisi şirketinin finans direktörü bu eklentiyle görüşme özetlerinin "saatler yerine saniyeler içinde" hazırlandığını söylüyor.
+Claude bu işi bağlı araçlarınızla yapar. Kaynak sayfa CRM, görüşme kaydı, potansiyel müşteri verisi ve e-imza alanlarında bir dizi entegrasyon sayıyor; en yaygın örnekler Salesforce ve HubSpot. Eylül 2026'da beta olarak çıkan **Salesforce in Claude** eklentisi, yenileme hazırlığından görüşme sonrası takibe kadar 37 hazır satış skill'i getiriyor ve tüm ücretli planlarda sunuluyor; Claude'un Salesforce'taki işlemleri temsilcinin kendi yetkileriyle kaydediliyor. Kaynak sayfadaki müşteri görüşlerinden birinde, bir hukuk teknolojisi şirketinin finans direktörü bu eklentiyle görüşme özetlerinin "saatler yerine saniyeler içinde" hazırlandığını söylüyor.
 
 ## Satış ekibi Claude'a neleri devreder?
 
@@ -43,10 +43,10 @@ Anthropic'in resmi açık depodaki satış plugin'inde bu işler için hazır sk
 
 ## Türkiye'de uyarlama notları
 
-- **Bayi ve distribütör ağı:** Türk şirketlerinde satışın önemli kısmı bayiler üzerinden yürür. Claude bayilerden gelen dağınık aylık raporları tek tabloya çevirmek, bayi bazında hedef sapmasını yorumlamak ve bayi toplantısı için özet hazırlamak için kullanılabilir. Bayi verisinin Claude'a nasıl ulaşacağı (dosya, paylaşılan klasör, CRM) önceden planlanmalı.
+- **Bayi ve distribütör ağı:** Bayi ve distribütör ağıyla satış yapan şirketlerde Claude bayilerden gelen dağınık aylık raporları tek tabloya çevirmek, bayi bazında hedef sapmasını yorumlamak ve bayi toplantısı için özet hazırlamak için kullanılabilir. Bayi verisinin Claude'a nasıl ulaşacağı (dosya, paylaşılan klasör, CRM) önceden planlanmalı.
 - **TL ve döviz teklifleri:** Claude güncel döviz kurunu, fiyat listenizi ve iskonto yetkinizi bilmez; bunları siz vermelisiniz. Teklif tutarları, KDV ve tevkifat hesapları ERP'den ya da onaylı fiyat tablosundan gelmeli, Claude'un yazdığı rakam gönderilmeden önce kontrol edilmelidir. Kur maddesi ve geçerlilik süresi gibi ticari şartlar şirketinizin standart metninden alınmalıdır.
 - **Yerli CRM ve ERP:** Türkiye'de yaygın bazı CRM ve ERP sistemleri için Claude'un hazır connector'ı olmayabilir. Bu durumda özel connector, sistemin API'si ya da dışa aktarılmış raporlar kullanılır. Ayrıntı: [Connector'lar](/claude/connectors/).
-- **İhracat:** Yabancı alıcı araştırması, alıcının dilinde ilk temas e-postası ve fuar sonrası takip için Claude güçlü bir yardımcıdır. Senaryolar: [İhracat ve uluslararası ticaret](/wiki/departmanlar/ihracat/).
+- **İhracat:** Yabancı alıcı araştırması, alıcının dilinde ilk temas e-postası ve fuar sonrası takip için Claude hazırlık işini hızlandırır. Senaryolar: [İhracat ve uluslararası ticaret](/wiki/departmanlar/ihracat/).
 - **Ticari elektronik ileti:** Claude'un yazdığı kampanya e-postası veya SMS taslaklarını toplu gönderirken ticari elektronik ileti izni ve İleti Yönetim Sistemi (İYS) kurallarına uyun. Taslağı yazmak Claude'un, gönderme izni ise sizin sorumluluğunuzdadır.
 
 ## Güvenlik ve KVKK

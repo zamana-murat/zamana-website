@@ -7,30 +7,26 @@ tags:
   - rehber
   - sablon
   - kurumsal-kullanim
-lastUpdated: "2026-10-06"
+lastUpdated: "2026-11-26"
 ---
 
-[CLAUDE.md'nin ne olduğunu](/wiki/claude-md/nedir/) okuduysanız, sıradaki soru doğal: **peki bunu ben nasıl yazarım?**
+[CLAUDE.md'nin ne olduğunu](/wiki/claude-md/nedir/) okuduysanız, sıradaki soru bunu nasıl yazacağınız. Sonunda kendi CLAUDE.md'nizin ilk sürümü elinizde olacak.
 
-Bu sayfa adım adım bir rehberdir. Sonunda kendi CLAUDE.md'nizin ilk sürümü elinizde olur.
-
-> **Metin araçtan bağımsızdır, konduğu yer değişir.** Aşağıdaki beş bölümlü metni bir kez yazarsınız; sonra kullandığınız araca göre profil talimatına, bir projenin talimatına, Cowork'te çalıştığınız klasöre ya da Claude Code'a koyarsınız. Hangisinin size uyduğunu aşağıdaki "Bu Metni Nereye Koyacağım?" bölümünde bulursunuz.
+> Metin araçtan bağımsızdır, yalnız konduğu yer değişir. Aşağıdaki beş bölümlü metni bir kez yazarsınız; sonra kullandığınız araca göre profil talimatına, bir projenin talimatına, Cowork'te çalıştığınız klasöre ya da Claude Code'a koyarsınız. Hangisinin size uyduğunu aşağıdaki "Bu Metni Nereye Koyacağım?" bölümünde bulursunuz.
 
 ## Genel Prensip
 
-Önce mantıksal çerçeve:
+İyi bir CLAUDE.md, işe yeni aldığınız akıllı bir asistana ilk gün aktaracağınız bilgilerin yazılı halidir.
 
-> **İyi bir CLAUDE.md, sizi işe yeni aldığınız akıllı bir asistana ilk gün hangi bilgileri aktaracağınızın yazılmış halidir.**
-
-Bu asistan zeki. Hızlı öğreniyor. Ama sizin şirketinizi, sizin rolünüzü, sizin tonunuzu, sizin iş akışlarınızı bilmiyor. Görev verirken gereken bağlamı CLAUDE.md'ye bir kere yazarsınız.
+Bu asistan zeki ve hızlı öğrenir, ama şirketinizi, rolünüzü, tonunuzu ve iş akışlarınızı bilmez. Görev verirken gereken bağlamı CLAUDE.md'ye bir kere yazarsınız.
 
 ## Beş Adımlı Temel Yapı
 
-Her iyi CLAUDE.md şu beş bölümü içerir. Sırasıyla yazarsanız ilk sürüm 15 dakikada biter.
+İyi bir CLAUDE.md şu beş bölümü içerir. Sırasıyla yazarsanız ilk sürüm 15 dakikada biter.
 
 ### 1. Kim Olduğunuz
 
-Kısa. Kritik olanı yazın, gereksizini bırakın.
+Kısa tutun: kritik olanı yazın, gereksizi bırakın.
 
 ```markdown
 ## Kim Olduğum
@@ -80,7 +76,7 @@ En güçlü bölüm. Sınırlar ve varsayılan davranışlar.
 
 ### 5. Güncel Odak
 
-Bu, düzenli güncellenen bir bölümdür:
+Bu bölümü düzenli güncellersiniz:
 
 ```markdown
 ## Güncel Odak
@@ -150,10 +146,10 @@ Sohbet ekranındaki Claude, bilgisayarınızdaki bir `CLAUDE.md` dosyasını ken
 
 | Nasıl çalışıyorsunuz? | Metni nereye koyarsınız? |
 |---|---|
-| **Tüm sohbetlerde** geçerli olsun istiyorsunuz | Settings > General > **"Instructions for Claude"** (profil talimatı). Tüm planlarda var, Cowork'ün genel talimatıyla aynı yerdir. Buraya uzun metnin **kısa sürümünü** yazın: Kim Olduğum, Ton, Her Zaman / Asla |
-| Tek bir **iş, müşteri ya da konu** için | O işin [Projects](/wiki/araclar/projects/) talimat alanı. Şirket ve Güncel Odak bölümleri burada daha yerinde durur; yalnız o projede geçerlidir |
-| [Cowork](/wiki/araclar/cowork-modu/) ile **bilgisayarınızdaki bir klasörde** çalışıyorsunuz | Klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel Cowork oturumunda okunur |
-| **Claude Code** kullanıyorsunuz | `CLAUDE.md` dosyası (bkz. aşağıdaki kutu) |
+| Tüm sohbetlerde geçerli olsun istiyorsunuz | Settings > General > "Instructions for Claude" (profil talimatı). Tüm planlarda var, Cowork'ün genel talimatıyla aynı yerdir. Buraya uzun metnin kısa sürümünü yazın: Kim Olduğum, Ton, Her Zaman / Asla |
+| Tek bir iş, müşteri ya da konu için | O işin [Projects](/wiki/araclar/projects/) talimat alanı. Şirket ve Güncel Odak bölümleri burada daha yerinde durur; yalnız o projede geçerlidir |
+| [Cowork](/wiki/araclar/cowork-modu/) ile bilgisayarınızdaki bir klasörde çalışıyorsunuz | Klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel Cowork oturumunda okunur |
+| Claude Code kullanıyorsunuz | `CLAUDE.md` dosyası (bkz. aşağıdaki kutu) |
 
 Kalıcı talimat yerlerinin tam karşılaştırması (kapsam, plan, ne zaman okunur) için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
 
@@ -161,8 +157,8 @@ Kalıcı talimat yerlerinin tam karşılaştırması (kapsam, plan, ne zaman oku
 
 İki not:
 
-- **Bulut Cowork oturumları.** Cowork görevi bulutta çalışıyorsa klasör elle eklenir ve orada CLAUDE.md okunduğu Anthropic belgelerinde yazmıyor. Cowork belgeleri klasördeki talimatı "klasör talimatı" diye anar, dosya adını açıkça vermez. Bu yüzden değişmez kuralların kısa sürümünü profil talimatına da koyun, sonra aşağıdaki testi yapın.
-- **Kısa sürüm nasıl görünür?** Örneğin profil talimatına şu kadarı yeter:
+- Bulut Cowork oturumları: Cowork görevi bulutta çalışıyorsa klasör elle eklenir ve orada CLAUDE.md okunduğu Anthropic belgelerinde yazmıyor. Cowork belgeleri klasördeki talimatı "klasör talimatı" diye anar, dosya adını açıkça vermez. Bu yüzden değişmez kuralların kısa sürümünü profil talimatına da koyun, sonra aşağıdaki testi yapın.
+- Kısa sürüm: örneğin profil talimatına şu kadarı yeter:
 
 ```
 Ben Elif Kaya, Mavi Lojistik'te operasyon müdürüyüm.
@@ -171,7 +167,7 @@ Türkçe yaz, sade ve dolaysız ol; devrik cümle ve "ayrıca" ile başlayan cü
 Müşteri kişisel verisini ve gizli mali bilgiyi dış metinlerde kullanma.
 ```
 
-> **Geliştiriciler için.** Claude Code'da `CLAUDE.md` katmanlıdır: kullanıcı düzeyinde `~/.claude/CLAUDE.md`, proje kökünde `./CLAUDE.md`, kişisel notlar için `CLAUDE.local.md`. Dosyalar birleştirilir, biri ötekini ezmez. Bu bir iş eğitimi sayfası olduğu için ayrıntıya girmiyoruz; ayrıntı için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
+> Geliştiriciler için: Claude Code'da `CLAUDE.md` katmanlıdır: kullanıcı düzeyinde `~/.claude/CLAUDE.md`, proje kökünde `./CLAUDE.md`, kişisel notlar için `CLAUDE.local.md`. Dosyalar birleştirilir, biri ötekini ezmez. Ayrıntı için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
 
 Örnek klasör yerleşimi (Cowork'te klasörle çalışıyorsanız):
 
@@ -185,54 +181,54 @@ C:\ClaudeWorkspace\
 
 ## Nasıl Büyür?
 
-Bir CLAUDE.md ilk yazıldığında temelini kurmuş olur. Sonra yaşar ve büyür. Pratik altın kural:
+İlk yazdığınızda CLAUDE.md yalnız temeldir; sonra kullandıkça büyür. Pratik kural:
 
-> **Claude'a aynı şeyi ikinci kez anlattığınızı fark ettiğinizde, durun ve talimat metninizi (CLAUDE.md, proje talimatı ya da profil talimatı) açın. O bilgiyi oraya yazın.**
+> Claude'a aynı şeyi ikinci kez anlattığınızı fark ettiğinizde talimat metninizi (CLAUDE.md, proje talimatı ya da profil talimatı) açın ve o bilgiyi oraya yazın.
 
-Bu kural bir şeyi yapar: metniniz kullandıkça daha iyi hale gelir. Kullanmayan bir çalışanın CLAUDE.md'si paslanmış kalır; kullanan çalışanın her geçen hafta daha güçlü olur.
+Böylece metniniz kullandıkça iyileşir. Kullanılmayan bir CLAUDE.md eskir; kullanılan ise her hafta biraz daha işe yarar.
 
 ## Ne Koymamalısınız?
 
-Her CLAUDE.md'de olmaması gerekenler:
+CLAUDE.md'de bulunmaması gerekenler:
 
-- **Şifreler, API anahtarları, erişim bilgileri**: bu metin düz metindir, yedeklenebilir, paylaşılabilir
-- **KVKK kapsamındaki kişisel veriler**: başkalarının tam adları, kimlik numaraları, hassas bilgileri
-- **Çelişen talimatlar**: "her zaman resmi yaz" ve "samimi ol" aynı dosyada durursa Claude şaşırır
-- **Aşırı katı kurallar**: "hiçbir zaman liste kullanma" gibi yasaklar Claude'un esnekliğini öldürür
-- **Geçici iş notları**: bunlar konuşma bazlı, CLAUDE.md uzun vadeli
+- Şifreler, API anahtarları, erişim bilgileri: bu metin düz metindir, yedeklenebilir, paylaşılabilir
+- KVKK kapsamındaki kişisel veriler: başkalarının tam adları, kimlik numaraları, hassas bilgileri
+- Çelişen talimatlar: "her zaman resmi yaz" ve "samimi ol" aynı dosyada durursa Claude hangisine uyacağını bilemez
+- Aşırı katı kurallar: "hiçbir zaman liste kullanma" gibi yasaklar Claude'u gereksiz kısıtlar
+- Geçici iş notları: bunlar konuşmaya aittir, CLAUDE.md uzun vadelidir
 
 ## Sık Yapılan Hatalar
 
 ### Hata 1: Her Şeyi Bir Kerede Yazmaya Çalışmak
 
-İlk gün CLAUDE.md'nizi 500 satır yazmaya çalışmayın. Şablonu doldurun; birkaç yüz kelime (kabaca 40-80 kısa satır) yeterli. Sonra büyüyecek.
+İlk gün 500 satır yazmaya çalışmayın. Şablonu doldurun; birkaç yüz kelime (kabaca 40-80 kısa satır) yeter, gerisini kullandıkça eklersiniz.
 
 ### Hata 2: Çok Genel Yazmak
 
-"Profesyonel ol" yerine "devrik cümle kullanma, modern Türkçe yaz", somut olun.
+"Profesyonel ol" yerine "devrik cümle kullanma, modern Türkçe yaz" gibi somut yazın.
 
 ### Hata 3: Hiç Güncellememek
 
-Üç ay önce yazılmış ama şu an geçerli olmayan bilgiler CLAUDE.md'de olduğunda Claude yanlış bağlamla çalışır. Ayda bir gözden geçirin. Üç satır değiştirseniz bile yeterlidir.
+Üç ay önce yazılmış ama şu an geçerli olmayan bilgiler CLAUDE.md'de olduğunda Claude yanlış bağlamla çalışır. Ayda bir gözden geçirin; üç satır değiştirseniz bile yeter.
 
 ### Hata 4: Ton Tercihini Atlamak
 
-Ton bölümünü yazmayan kullanıcılar Claude'un çıktılarından şikayet eder. Ton yoksa Claude varsayılan tonda yazar, bu sizin sesiniz olmayabilir.
+Ton bölümü yoksa Claude varsayılan tonda yazar ve bu sizin sesiniz olmayabilir.
 
 ### Hata 5: "Her Zaman/Asla" Kuralları Yok
 
-Bu bölüm yoksa Claude nasıl davranacağını tahmin etmek zorunda kalır. Kurallar olduğunda Claude daha sağlam çalışır.
+Bu bölüm yoksa Claude nasıl davranacağını tahmin etmek zorunda kalır.
 
 ## İlk 30 Dakika Planı
 
-Bu sayfayı okuduktan sonra:
+Okuduktan sonra:
 
-1. **5 dakika:** Yeni bir metin dosyası açın (klasörle çalışacaksanız adı `CLAUDE.md` olsun) ve yukarıdaki şablonu yapıştırın.
-2. **15 dakika:** Şablondaki bölümleri doldurun. Hızlıca, mükemmeliyetçi olmadan.
-3. **5 dakika:** Metni yerine koyun (profil talimatı, proje ya da klasör), yeni bir sohbet ya da oturum açın ve Claude'a "Talimatımı 3 maddede özetle" deyin. Yanlış ya da eksik anladığı yerleri metinde düzeltirsiniz. Özet hiç tutmuyorsa [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakın.
-4. **5 dakika:** Gerçek bir görev verin: bir e-posta yazdırın. Tonunuza uyuyor mu? Uymuyorsa Ton bölümünü iyileştirin.
+1. 5 dakika: Yeni bir metin dosyası açın (klasörle çalışacaksanız adı `CLAUDE.md` olsun) ve yukarıdaki şablonu yapıştırın.
+2. 15 dakika: Şablondaki bölümleri doldurun. Hızlıca, mükemmeliyetçi olmadan.
+3. 5 dakika: Metni yerine koyun (profil talimatı, proje ya da klasör), yeni bir sohbet ya da oturum açın ve Claude'a "Talimatımı 3 maddede özetle" deyin. Yanlış ya da eksik anladığı yerleri metinde düzeltirsiniz. Özet hiç tutmuyorsa [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakın.
+4. 5 dakika: Gerçek bir görev verin: bir e-posta yazdırın. Tonunuza uyuyor mu? Uymuyorsa Ton bölümünü iyileştirin.
 
-Bu 30 dakikada işe yarar bir CLAUDE.md'niz olur. Mükemmel olmayacak. Ama yaşayan bir dosya olacak.
+30 dakikanın sonunda işe yarar bir CLAUDE.md'niz olur. Mükemmel olmayacak, ama kullandıkça iyileşir.
 
 ## İlgili Sayfalar
 

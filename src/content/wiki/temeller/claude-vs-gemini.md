@@ -7,14 +7,14 @@ tags:
   - karsilastirma
   - gemini
   - google
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Gemini, Google'ın amiral AI modelidir**: Workspace (Gmail, Docs, Drive, Calendar) içine derinlemesine entegredir, çoğu Türkiye kurumsalında zaten ücretsiz olarak deneniyor.
+Gemini, Google'ın amiral AI modelidir. Workspace'e (Gmail, Docs, Drive, Calendar) yerleşiktir ve ücretsiz denenebilir.
 
-Bu sayfa Claude ile Gemini'yi **dürüstçe** karşılaştırır: hangisi neyde iyi, hangisi neyde değil, ikisini birden kullanmak mantıklı mı.
+Aşağıda Claude ile Gemini'yi dürüstçe karşılaştırıyoruz: hangisi neyde iyi, hangisi neyde değil, ikisini birden kullanmak mantıklı mı.
 
-[Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) sayfası OpenAI tarafının kıyaslamasını yapar; mantıklı bir kurum bu üç sayfayı birlikte okur.
+OpenAI tarafı için [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/), Microsoft tarafı için [Claude vs Copilot](/wiki/temeller/claude-vs-copilot/) sayfasına bakın.
 
 ## Genel Konumlandırma
 
@@ -92,7 +92,7 @@ Claude tarafının fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında.
 
 ## İkisini Birden Kullanmak Mantıklı mı?
 
-Evet, ve birçok gelişmiş kullanıcı bunu yapıyor:
+Evet:
 
 - **Gemini**: Workspace içinde hızlı, "yerinde" yardım
 - **Claude**: Üretim, analiz, derinlik gerektiren işler
@@ -111,7 +111,7 @@ Ama bir şirket olarak iki tedarikçi yönetmek gereksiz karmaşıklık. **Tipik
 
 ## Pratik Tavsiye
 
-**Mevcut Workspace kullanıcılarına:** Gemini'nin ücretsiz katmanını yarım gün test edin → Claude Pro'yu bir hafta deneyin → kalitesini hissedin → kararı işin türüne göre verin.
+**Mevcut Workspace kullanıcılarına:** Gemini'nin ücretsiz katmanını yarım gün, Claude Pro'yu bir hafta deneyin; kararı işin türüne göre verin.
 
 **Yeni başlayan şirketlere:** Doğrudan Claude ile başlayın, [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberini takip edin. İhtiyaç görürseniz Gemini'yi sonradan ek araç olarak alabilirsiniz.
 

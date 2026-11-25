@@ -7,14 +7,14 @@ tags:
   - agents
   - subagents
   - otonom
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 **Bir agent, Claude'un birden fazla adım boyunca otonom çalıştığı ve araçlar kullanarak karmaşık görevleri tamamladığı modudur.** Tek bir soruya cevap vermek yerine bir dizi eylemi **planlar, uygular ve gözden geçirir**.
 
 Subagent'lar ise Claude'un **aynı anda çalışan yardımcı kopyalarıdır**. Karmaşık bir işi alt görevlere bölüp birden fazla Claude üzerinde birlikte ilerletirler.
 
-Bu sayfa bir iş profesyonelinin bu yapıdan ne kadarını bilmesi gerektiğini anlatır. Kısa cevap: teknik derinliği değil, **nasıl çalıştığını**. Karmaşık bir görev verdiğinizde bu yapı zaten arka planda devreye girer.
+Bir iş profesyonelinin teknik derinliği bilmesi gerekmez, **nasıl çalıştığını** bilmesi yeter. Karmaşık bir görev verdiğinizde bu yapı zaten arka planda devreye girer.
 
 ## Agent Nedir?
 
@@ -50,7 +50,7 @@ Paralel çalışma toplam bekleme süresini kısaltır. Çıktıyı gözden geç
 
 ## Çalışan Ne Bilmeli?
 
-Agent mimarisini **derinlemesine** bilmeye gerek yok. Bir iş profesyonelinin bilmesi gerekenler üç madde:
+Mimarinin ayrıntısını bilmeniz gerekmez; üç şey yeter:
 
 ### 1. Karmaşık bir görev verdiğinde Claude birden fazla adım atar
 
@@ -101,7 +101,7 @@ Bu 10 şirket × 5 bileşen = 50 alt görev.
 
 ## Kısacası
 
-Agent mimarisinin teknik ayrıntısı iş profesyoneli için gerekmez. Yukarıdaki üç refleks yeter: işi bitirmesine izin verin, son çıktıyı gözden geçirin ve karmaşık görevi açıkça tarif edin ki Claude doğru araçları seçsin.
+Üç refleks yeter: işi bitirmesine izin verin, son çıktıyı gözden geçirin ve karmaşık görevi açıkça tarif edin ki Claude doğru araçları seçsin.
 
 ## İlgili Sayfalar
 

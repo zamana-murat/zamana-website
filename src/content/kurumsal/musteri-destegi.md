@@ -18,7 +18,7 @@ related:
   - { label: "Claude Platform", href: "/kurumsal/platform/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 60
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -29,7 +29,7 @@ Anthropic'in müşteri desteği sayfası üç başlık öne çıkarıyor: talebi
 
 Claude'u destekte iki ayrı şekilde kullanabilirsiniz:
 
-- **Temsilcinin yanında:** Ekip, Claude'u sohbet, Cowork ya da Slack üzerinden kullanır. Talebi yapıştırır veya bağlı sistemden okutur, taslağı alır, düzeltir, gönderir. Müşteri Claude ile doğrudan konuşmaz. Bir Türk şirketi için başlangıç noktası çoğunlukla budur.
+- **Temsilcinin yanında:** Ekip, Claude'u sohbet, Cowork ya da Slack üzerinden kullanır. Talebi yapıştırır veya bağlı sistemden okutur, taslağı alır, düzeltir, gönderir. Müşteri Claude ile doğrudan konuşmaz. Başlangıç için uygun olan yol budur.
 - **Müşteriyle doğrudan konuşan ajan:** Web sohbeti, mesajlaşma hattı veya e-posta kuyruğuna bağlanan, ilk yanıtı kendisi veren ve gerektiğinde insana devreden bir destek ajanı. Bu, Claude Platform (API) üzerinde yazılım geliştirmeyi ya da Claude kullanan bir destek yazılımı satın almayı gerektirir. Ayrıntı: [Claude Platform](/kurumsal/platform/).
 
 ## Destek ekibi Claude'a neleri devreder?
@@ -47,7 +47,7 @@ Anthropic'in resmi açık depodaki müşteri desteği plugin'inde bu işler içi
 ## Türkiye'de uyarlama notları
 
 - **Kanallar:** Türk şirketlerinde destek çoğunlukla çağrı merkezi, mesajlaşma uygulamaları, e-posta ve şikâyet platformları arasında dağınıktır. Claude'un bir talebe yardım etmesi için metnin ona ulaşması gerekir: ya temsilci yapıştırır, ya da destek yazılımınız connector veya özel entegrasyonla bağlanır. Telefon görüşmeleri için önce yazıya dökülmüş kayıt gerekir.
-- **Türkçe:** Claude Türkçe yanıtta güçlüdür, ama marka üslubunu, "siz" ve "sen" tercihini, kullanılmayacak ifadeleri yazılı bir stil rehberiyle vermeniz sonucu belirgin biçimde iyileştirir. Ayrıntı: [Türkçe performansı](/wiki/temeller/turkce-performansi/).
+- **Türkçe:** Claude Türkçe yanıtta iyidir, ama marka üslubunu, "siz" ve "sen" tercihini, kullanılmayacak ifadeleri yazılı bir stil rehberiyle verirseniz sonuç daha tutarlı olur. Ayrıntı: [Türkçe performansı](/wiki/temeller/turkce-performansi/).
 - **Tüketici hukuku:** Cayma hakkı, iade süresi, ayıplı mal ya da tazminat gibi konularda müşteriye yazılan cümle hukuki sonuç doğurabilir; Tüketici Hakem Heyeti veya mahkeme sürecinde delil olarak önünüze gelebilir. Bu tür yanıtlar otomatik gönderilmemeli, onaylı şablonlara dayanmalı ve temsilci onayından geçmelidir.
 - **Bilgi bankası güncel olmalı:** Claude, verdiğiniz politikayı esas alır. Kargo firması değiştiyse veya iade süresi güncellendiyse belgeyi de güncelleyin; eski belge, kendinden emin ama yanlış bir yanıt demektir.
 

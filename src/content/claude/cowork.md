@@ -16,7 +16,7 @@ related:
   - { label: "Computer use (wiki)", href: "/wiki/yetenekler/computer-use/" }
   - { label: "Kullanım limitleri (wiki)", href: "/wiki/temeller/kullanim-limitleri/" }
 order: 15
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -27,7 +27,7 @@ Sohbette Claude size bir cevap verir; işi siz kopyalayıp bir dosyaya taşırs�
 
 Anthropic'in sayfasında öne çıkan özellikler:
 
-- **Ne istediğinizi söylersiniz, nasılını değil.** Web'de iş gerekiyorsa Claude tarayıcı açar, ekranınızı yalnız gerektiğinde kullanır.
+- **Hedefi söylersiniz.** Web'de iş gerekiyorsa Claude tarayıcı açar, ekranınızı yalnız gerektiğinde kullanır.
 - **İşi canlı izlersiniz.** Açtığı her dosya, kullandığı her araç ve verdiği her karar ekranda görünür; istediğiniz an yön değiştirir ya da durdurursunuz.
 - **Siz yokken de çalışır.** Görevler dizüstü kapandığında bulutta sürer; tekrarlayan işleri takvime bağlayıp gözetimsiz çalıştırabilirsiniz.
 - **Aynı anda birden fazla iş.** Büyük bir iş parçalara bölünür ve paralel yürür, örneğin araştırma sürerken taslak yazılır.

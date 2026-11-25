@@ -7,10 +7,10 @@ tags:
   - pazarlama
   - iletisim
   - icerik-uretimi
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Pazarlama ekibi Claude'u doğru kurduğunda içerik üretim kapasitesini belirgin biçimde artırır: kalite düşmez, ton tutarlı kalır, üretim hızlanır.
+Pazarlama ekibi Claude'u doğru kurduğunda içerik üretimi hızlanır ve ton tutarlı kalır.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -26,19 +26,19 @@ Pazarlama ekibi Claude'u doğru kurduğunda içerik üretim kapasitesini belirgi
 
 ### Marka Sesi CLAUDE.md'de
 
-Pazarlama için **en önemli ilk adım**, marka ses profilini CLAUDE.md'ye yerleştirmektir: ton, sözcük dağarcığı, kaçınılacak ifadeler, hedef kitle ve **rakiplerin sesinden uzaklaşma kuralları**.
+Pazarlamada ilk adım, marka ses profilini CLAUDE.md'ye yazmaktır: ton, sözcük dağarcığı, kaçınılacak ifadeler, hedef kitle ve rakiplerin sesinden ayrışma kuralları.
 
-Zayıf bir marka ses profili jenerik içerik üretir. Ayrıntılı bir profil, **şirketin sesiyle yazılmış gibi duran** içerik üretir.
+Zayıf bir marka ses profili jenerik içerik üretir. Ayrıntılı bir profil, şirketin sesiyle yazılmış gibi duran içerik üretir.
 
 Profili nereye yazacağınız çalıştığınız yere bağlıdır: sohbette bir Project'in proje talimatına, yerel Cowork'te çalışma klasöründeki CLAUDE.md dosyasına. Sohbet CLAUDE.md dosyasını okumaz. Ayrıntı: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ### İçerik Yaratım Akışı
 
-Brief, ana hat, taslak, rafine. Çalışan stratejiyi sahiplenir; Claude uygulamayı halleder.
+Brief, ana hat, taslak, rafine. Çalışan stratejiyi sahiplenir; uygulamayı Claude yapar.
 
 ### Repurposing: Tek Parçayı Çok Kanala
 
-Bir içerik parçası **aynı anda** LinkedIn, e-posta, Instagram ve X'e uyarlanır; her platform kendi kitlesi ve formatı için ayarlanır.
+Bir içerik parçası aynı anda LinkedIn, e-posta, Instagram ve X'e uyarlanır; her platform kendi kitlesi ve formatı için ayarlanır.
 
 **Platform nüansı:**
 
@@ -52,7 +52,7 @@ Bir içerik parçası **aynı anda** LinkedIn, e-posta, Instagram ve X'e uyarlan
 
 ### A/B Test Kopya Varyantları
 
-Ana mesaj üzerinde **gerçekten farklı açılardan** 2-3 varyant: yalnızca kelime değişikliği değil, **farklı bir önerme**. Hangi önermenin daha güçlü olduğu test öncesinde analiz edilebilir.
+Ana mesaj üzerinde gerçekten farklı açılardan 2-3 varyant: her biri farklı bir önerme taşımalı, kelime değişikliği yetmez. Hangi önermenin daha güçlü olduğu test öncesinde analiz edilebilir.
 
 ## Bölüm 2: Kampanya ve Strateji İşleri
 
@@ -60,7 +60,7 @@ Ana mesaj üzerinde **gerçekten farklı açılardan** 2-3 varyant: yalnızca ke
 
 **Hedef kitle analizi.** Müşteri segmentleri, itirazları, tetikleyicileri ve dilleri CLAUDE.md'ye taşınır, gelecekteki tüm metinlerin temeli olur.
 
-**İçerik takvimi planı.** Tema, sezon, ürün odağı ve **Türkiye pazarına özgü kültürel anlar** (Ramazan, Cumhuriyet Bayramı, 15 Temmuz, Kurban Bayramı).
+**İçerik takvimi planı.** Tema, sezon, ürün odağı ve Türkiye pazarına özgü kültürel anlar (Ramazan, Cumhuriyet Bayramı, 15 Temmuz, Kurban Bayramı).
 
 **Sosyal medya kriz ve şikayet yanıtı.** Kamuoyunda bir şey yanlış gittiğinde Claude, ölçülü, empatik ve marka ile uyumlu bir yanıt taslağını hızla verir. Çalışan her zaman paylaşımdan önce gözden geçirir.
 
@@ -70,7 +70,7 @@ Ana mesaj üzerinde **gerçekten farklı açılardan** 2-3 varyant: yalnızca ke
 
 **Rekabet içerik analizi.** Rakipler ne yayımlıyor, onlar için ne işe yarıyor, hangi konumlandırma boşlukları var.
 
-**E-posta kampanya analizi.** Konu satırı performansı, tıklama kalıpları, abonelikten çıkış tetikleyicileri; sonunda "bir sonraki test ne olmalı?" yanıtı. Türkiye'de ticari elektronik ileti göndermeden önce alıcıların **İYS (İleti Yönetim Sistemi) izin kaydı** kontrol edilir; Claude izin durumunu bilemez, gönderim listesini İYS ile siz süzersiniz. Claude kampanya metnini ve segment kurgusunu hazırlar, izin kontrolünü yerine getirmez.
+**E-posta kampanya analizi.** Konu satırı performansı, tıklama kalıpları, abonelikten çıkış tetikleyicileri; sonunda "bir sonraki test ne olmalı?" yanıtı. Türkiye'de ticari elektronik ileti göndermeden önce alıcıların İYS (İleti Yönetim Sistemi) izin kaydı kontrol edilir; Claude izin durumunu bilemez, gönderim listesini İYS ile siz süzersiniz. Claude kampanya metnini ve segment kurgusunu hazırlar, izin kontrolünü yerine getirmez.
 
 **Sponsorluk ve ortaklık brief yazımı.** Ortak pazarlama fırsatları için yapılandırılmış teklifler.
 
@@ -116,10 +116,10 @@ Ana mesaj üzerinde **gerçekten farklı açılardan** 2-3 varyant: yalnızca ke
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Haftalık içerik üretim döngüsü**: brief → taslaklar → platform varyantları → zamanlama
-- **Aylık raporlama süreci**: veri → anlatı → yönetim özeti
-- **Sosyal medya şikayet yükseltme**: otomatik kategorileştirme + yanıt taslağı
-- **Etkinlik tanıtım iş akışı**: tüm iletişim arkının otomasyonu
+- Haftalık içerik üretim döngüsü: brief → taslaklar → platform varyantları → zamanlama
+- Aylık raporlama süreci: veri → anlatı → yönetim özeti
+- Sosyal medya şikayet yükseltme: otomatik kategorileştirme + yanıt taslağı
+- Etkinlik tanıtım iş akışı: tüm iletişim arkının otomasyonu
 
 ## Gerçek Örnek: Aylık Performans Anlatısı
 
@@ -145,7 +145,7 @@ Kriz ve şikayet yanıtı taslağı örneği için [Müşteri Hizmetleri](/wiki/
 - **Müşteri listesini olduğu gibi yüklemek.** E-posta listesi, müşteri adı ve telefon kişisel veridir; segment çalışması için anonim özet tablo yeterlidir. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil. Çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Veri olmadan tahmine güvenmek.** "Bu post kaç beğeni alır" gibi sorulara Claude veri olmadan da cevap üretir; gerçek veriyle test edin.
 
-Pazarlama ekibiniz için ortak ses ve prompt düzeni kurmak istiyorsanız [ekibinizle 3 aylık Claude programı](/programlar/kurumsal/) bunu iş akışlarınız üzerinden çalışır. Kampanya sunumları için [Claude ile Sunum](/wiki/gorevler/claude-ile-sunum/) rehberine de bakın.
+Pazarlama ekibiniz için ortak ses ve prompt düzeni kurmak istiyorsanız [ekibinizle 3 aylık Claude programımız](/programlar/kurumsal/) bunu sizin iş akışlarınız üzerinden kurar. Kampanya sunumları için [Claude ile Sunum](/wiki/gorevler/claude-ile-sunum/) rehberine de bakın.
 
 ## İlgili Sayfalar
 

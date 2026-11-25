@@ -7,18 +7,18 @@ tags:
   - plugins
   - connector
   - standart
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 **MCP (Model Context Protocol), Claude'un dış servislere bağlanmasını sağlayan açık bir standarttır.**
 
 Basit çeviriyle: bir **MCP sunucusu**, Claude ile üçüncü taraf bir uygulama arasındaki köprüdür. Claude'un arayüzünde gördüğünüz **connector** (bağlayıcı) bu köprünün kendisidir: **connector, bir MCP sunucusudur.** Kurulup kimlik doğrulaması yapıldığında Claude o servis üzerinde sizin adınıza işlem yapabilir.
 
-Bu, Claude'u tek başına bir sohbet aracından, **şirketinizin iş yığınının üstüne oturan bir katman**a dönüştüren şeydir. Aradaki farkın günlük işte nasıl göründüğünü [MCP bölümünün girişindeki](/wiki/mcp/) örnekte bulabilirsiniz.
+Böylece Claude yalnız sohbet etmekle kalmaz, şirketinizin kullandığı araçlarda okuma ve işlem yapabilir. Aradaki farkın günlük işte nasıl göründüğünü [MCP bölümünün girişindeki](/wiki/mcp/) örnekte bulabilirsiniz.
 
 ## MCP Mimarisi
 
-Claude tek protokolle (MCP) konuşur, her servis kendi MCP sunucusu üzerinden bağlanır. Yeni bir araç eklemek **yeni connector** eklemek demektir, Claude'un kendisi değişmez.
+Claude tek protokolle (MCP) konuşur, her servis kendi MCP sunucusu üzerinden bağlanır. Yeni bir araç eklemek yeni connector eklemek demektir, Claude'un kendisi değişmez.
 
 ![MCP mimarisi: istemci olarak Claude, ortada izin katmanlı MCP connector katmanı, sağda Google Drive, Microsoft 365, Slack, CRM ve özel MCP server ile şirket veritabanı; Logo ve Mikro için resmi connector yok](/images/wiki/mcp-mimari.svg)
 
@@ -56,7 +56,7 @@ Tek tıkla hepsi kurulur, ayrı ayrı uğraşmazsınız.
 
 ## Connector'lar Nereden Çağrılır?
 
-Bu, BT ekibinizin ve sizin kararınızı değiştiren bir ayrıntıdır: **uzak connector'lar (dizin ve özel), Claude'un kendi bulut altyapısından çağrılır, sizin bilgisayarınızdan ya da ofis ağınızdan değil.**
+**Uzak connector'lar (dizin ve özel), Claude'un kendi bulut altyapısından çağrılır, sizin bilgisayarınızdan ya da ofis ağınızdan değil.** Bu ayrıntı BT ekibinizin ve sizin kararınızı değiştirir.
 
 - **Standart iş araçları** (Slack, Google Workspace, Microsoft 365, Notion, Salesforce, HubSpot gibi herkese açık servisler) için ek bir ağ ayarı gerekmez, kimlik doğrulaması yeterlidir. Team ve Enterprise'ta bazılarını önce yönetici açar.
 - **Şirket içi özel sistemler** (yalnız ofis ağında duran ERP, iç CRM) sohbet ve Cowork içinde ancak iki yolla bağlanır:
@@ -68,20 +68,20 @@ Bu, BT ekibinizin ve sizin kararınızı değiştiren bir ayrıntıdır: **uzak 
 
 Kendi sisteminizi bağlamak istiyorsanız karar akışı [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasında.
 
-Türkiye'deki orta ölçekli şirketlerin kullandığı **standart connector'lar** (Slack, Drive, Gmail, CRM) genellikle sorunsuz çalışır. Resmi dizinde 1.000'den fazla connector bulunur; [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) ise connector'ları ve eklentileri tek yerde toplar. Kurumsal değerlendirme için [Claude Marketplace (Kurumsal)](/kurumsal/marketplace/) sayfası var.
+Resmi dizinde 1.000'den fazla connector bulunur; [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) ise connector'ları ve eklentileri tek yerde toplar. Kurumsal değerlendirme için [Claude Marketplace (Kurumsal)](/kurumsal/marketplace/) sayfası var.
 
 API'si olmayan dahili programlar için [Computer Use](/wiki/yetenekler/computer-use/) bir alternatif olabilir. Yalnızca Pro, Max ve Ultra planlarında, masaüstü uygulamasında (Cowork ve Claude Code içinde) çalışır ve beta aşamasındadır; Team ve Enterprise'ta yoktur.
 
 ## MCP Açık Bir Standart: Ne Demek?
 
-MCP'nin "open standard" (açık standart) olması önemli bir tasarım seçimidir:
+MCP açık bir standart (open standard) olduğu için:
 
-- **Anthropic'e özel değil**: başka AI sistemleri de MCP kullanabilir. Anthropic MCP'yi Aralık 2025'te, Agent Skills standardını da 22 Ekim 2026'da Linux Foundation bünyesindeki Agentic AI Foundation'a (AAIF) devretti; iki standardın yönetimi artık tek bir şirkette değil
-- **Özelleştirilebilir**: şirketler kendi MCP sunucularını yazabilir
-- **Uzun ömürlü**: protokol standart kaldığı sürece bir connector'un çalışmaya devam etmesi beklenir (bakımı yine sağlayıcıya bağlıdır)
+- Anthropic'e özel değildir: başka AI sistemleri de MCP kullanabilir. Anthropic MCP'yi Aralık 2025'te, Agent Skills standardını da 22 Ekim 2026'da Linux Foundation bünyesindeki Agentic AI Foundation'a (AAIF) devretti; iki standardın yönetimi artık tek bir şirkette değil
+- Özelleştirilebilir: şirketler kendi MCP sunucularını yazabilir
+- Uzun ömürlüdür: protokol standart kaldığı sürece bir connector'un çalışmaya devam etmesi beklenir (bakımı yine sağlayıcıya bağlıdır)
 - **Yetkilendirme için ortak yol var**: MCP spesifikasyonu, HTTP üzerinden çalışan sunucular için OAuth 2.1 taslağına dayanan bir yetkilendirme tarif eder. Yetkilendirme isteğe bağlıdır, her sunucu uygulamak zorunda değildir; güvenlik bu yüzden sunucuya göre değişir
 
-Bu, Claude'u seçen bir şirketin **kendini Anthropic'e kilitlememiş** olduğu anlamına gelir. Claude için hazırlattığınız bir MCP sunucusu, MCP'yi destekleyen başka sistemlerde de kullanılabilir.
+Yani Claude'u seçen şirket kendini Anthropic'e kilitlemiş olmaz. Claude için hazırlattığınız bir MCP sunucusu, MCP'yi destekleyen başka sistemlerde de kullanılabilir.
 
 ## Plugin Nasıl Kurulur?
 
@@ -106,17 +106,17 @@ Cowork ve Skills'in kuruluşta açık olması gerekir. Bu, büyük şirketler i�
 
 ## Pratik Yaklaşım
 
-İyi bir kurulum stratejisinde **her çalışan için 1-2 kritik connector** belirlenir ve önce o ikisi kurulur. Hangi rolün hangisine ihtiyaç duyduğunu [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasında bulabilirsiniz.
+Her çalışan için 1-2 connector belirleyip önce onları kurun. Hangi rolün hangisine ihtiyaç duyduğunu [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasında bulabilirsiniz.
 
 Dizin connector'ının kurulumu tipik olarak birkaç dakika sürer (OAuth girişi ve izin ekranları); bu süre bir tahmindir, Team ve Enterprise'ta yöneticinin connector'ı önce açması gerekebilir. Özel bir sistem söz konusuysa süre sistemin hazır olup olmamasına bağlıdır.
 
 ## Güvenlik ve İzinler
 
-- Her connector **ayrı izin** ister. Slack'e izin verdiniz diye Drive'a erişim kazanılmaz.
-- Dizin ve özel connector'ların çoğu giriş için **OAuth** kullanır: şifrenizi Claude görmez. Bazı özel sunucular bunun yerine sabit bir anahtar kullanabilir ya da girişsiz çalışabilir.
+- Her connector ayrı izin ister. Slack'e izin verdiniz diye Drive'a erişim kazanılmaz.
+- Dizin ve özel connector'ların çoğu giriş için OAuth kullanır: şifrenizi Claude görmez. Bazı özel sunucular bunun yerine sabit bir anahtar kullanabilir ya da girişsiz çalışabilir.
 - **Araç onayını Claude uygulaması yönetir**, sunucu değil. Claude bir aracı ilk kullanacağında sohbette sorar: "Allow once" (bir kez), "Always allow" (hep izin ver) ya da "Deny" (reddet).
 - Team ve Enterprise'ta kuruluş sahibi, araç kategorileri için **Always allow / Needs approval / Blocked** kuralı koyabilir (örneğin e-postayı okusun ama göndermesin). Kullanıcı bu kuralı değiştiremez.
-- İstediğiniz zaman bir connector'u **devre dışı** bırakabilirsiniz.
+- İstediğiniz zaman bir connector'u devre dışı bırakabilirsiniz.
 - Claude'a "izin ver" demek, kaynak sistemde sahip olmadığınız yetkiyi size vermez; kısıtlar yalnız daraltır.
 
 Ayrıntı için [MCP Güvenliği](/wiki/mcp/guvenlik/) ve [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfalarına bakın.

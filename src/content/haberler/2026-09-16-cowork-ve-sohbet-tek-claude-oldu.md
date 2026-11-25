@@ -36,7 +36,7 @@ Kullanılabilirlik:
 - Birleşik deneyim önce Pro ve Max planlarında; web, masaüstü ve mobilde, "önümüzdeki haftalarda" kademeli olarak açılıyor.
 - Docs, Slides ve Design özellikleri ücretli planlarda (Pro, Max, Team, Enterprise) beta; Ücretsiz planda yok. Pro, Max ve Team'de varsayılan açık, Enterprise'da yönetici açana kadar kapalı.
 - Birleşik deneyim için Ücretsiz ve Team planlarında "yakında" deniyor, tarih verilmedi.
-- Enterprise kuruluşlara değişiklikten en az 30 gün önce haber verilecek.
+- Anthropic, Enterprise kuruluşlara değişiklikten en az 30 gün önce haber verecek.
 
 ## Bilmeniz gerekenler
 

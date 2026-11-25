@@ -7,14 +7,14 @@ tags:
   - baslangic
   - checklist
   - onboarding
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-[İlk Kurulum](/wiki/temeller/ilk-kurulum/) tamam. Claude Desktop kurulu, abonelik aktif, Cowork çalışıyor. **Şimdi asıl iş başlıyor, bilgiyi alışkanlığa çevirmek.**
+[İlk Kurulum](/wiki/temeller/ilk-kurulum/) tamam. Claude Desktop kurulu, abonelik aktif, Cowork çalışıyor. Şimdi asıl iş başlıyor: bilgiyi alışkanlığa çevirmek.
 
-İlk haftayı **doğru** geçirirseniz Claude günlük iş akışınızın kalıcı bir parçası olur. Yanlış geçirirseniz, "denedim, işe yaramadı" grubuna katılırsınız. Aradaki fark mucizevi bir kabiliyet değil, yapılandırılmış bir hafta.
+İlk haftayı **doğru** geçirirseniz Claude günlük iş akışınızın kalıcı bir parçası olur. Yanlış geçirirseniz, "denedim, işe yaramadı" grubuna katılırsınız. Aradaki farkı yapılandırılmış bir hafta yaratır.
 
-Bu sayfa, ilk haftayı yapılandırılmış geçirmek için bir rehberdir. Her gün **30-60 dakika**, hafta sonunda elinizde gerçek çıktılar ve refleks olmuş bir alışkanlık.
+Her gün 30-60 dakika ayırırsanız hafta sonunda elinizde gerçek çıktılar ve refleks olmuş bir alışkanlık olur.
 
 > **Bu hafta neler kazanacaksınız:**
 >
@@ -35,7 +35,7 @@ Toplam yatırım: **~5 saat** (haftada 7 gün × ortalama 40 dk). Çıktı: kal�
 
 ## Gün 1: İlk Gerçek İş Çıktısı (45 dk)
 
-**Amaç:** Claude'la **bugün gerçekten yapmanız gereken** bir işi birlikte halledin. Hayali egzersiz değil, gerçek bir iş.
+**Amaç:** Claude'la **bugün gerçekten yapmanız gereken** bir işi birlikte halledin. Hayali bir alıştırma değil, gerçek bir iş seçin.
 
 ### Yapılacaklar
 
@@ -49,7 +49,7 @@ Bu hafta yapmanız gereken yazılı bir çıktı: müşteri e-postası, rapor ö
 >
 > - **Mod: Cowork.** Claude Desktop sol üstte üç ikon gösterir: 💬 Chats, **Cowork** (ortadaki, küçük yatay çizgili liste ikonu) ve `</> Code`. **Ortadaki Cowork ikonuna tıklayın.** Sebep: workspace klasörünü bağladığınız yerel Cowork oturumu klasördeki CLAUDE.md dosyanızı okur, çıktıyı da workspace klasörüne kaydedebilirsiniz; Chats'te ikisi de yok. Hesabınızda birleşik arayüz açıldıysa ([Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/), yayılım kademeli) ayrı bir Cowork ikonu görmeyebilirsiniz; doğrudan yeni bir konuşma açıp görevi yazın.
 > - **Model: Sonnet**, model seçici gönder düğmesinin yanındaki model adındadır. **Sonnet 5.5** seçili olduğunu kontrol edin, değilse seçin. Bu hafta hep Sonnet kullanın, model seçimiyle uğraşmayın. Detay: [Modeller](/wiki/temeller/modeller/).
-> - **İlk devretme refleksi:** Cowork bir işe başlamadan önce sık sık **ne yapacağına dair bir plan önerir**. Bu planı okuyun, doğruysa onaylayın. Devretmenin kalbi "yap" demek değil, planı onaylamaktır. Detay: [Cowork → İlk Görevi Devretmek](/wiki/araclar/cowork-modu/).
+> - **İlk devretme refleksi:** Cowork bir işe başlamadan önce sık sık **ne yapacağına dair bir plan önerir**. Bu planı okuyun, doğruysa onaylayın. Devretmede asıl adım planı onaylamaktır. Detay: [Cowork → İlk Görevi Devretmek](/wiki/araclar/cowork-modu/).
 
 İyi kurulmuş bir prompt şu beş bileşeni birlikte taşır:
 
@@ -75,7 +75,7 @@ Claude ilk çıktıyı verir. Okuyun. Spesifik geri bildirim verin:
 
 **4. Gönderin / kullanın (5 dk)**
 
-Çıktıyı **gerçekten** gönderin veya kullanın. Çekmeceye atmayın, bu egzersiz değil.
+Çıktıyı **gerçekten** gönderin veya kullanın. Çekmeceye atmayın.
 
 **5. Notu alın (5 dk)**
 
@@ -141,7 +141,7 @@ Workspace klasöründeki `CLAUDE.md` dosyasını bir editörle açın. [5 bölü
 
 **3. Kısa sürümü profil talimatına yazın (5 dk)**
 
-Settings > General > "Instructions for Claude" alanına dosyanın en kritik 3-4 satırını (ton, "her zaman / asla" kuralları) yapıştırın. Bu alan tüm sohbetlerde geçerlidir. Hangi talimatın nerede çalıştığı: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
+Settings > General > "Instructions for Claude" alanına dosyanın en önemli 3-4 satırını (ton, "her zaman / asla" kuralları) yapıştırın. Bu alan tüm sohbetlerde geçerlidir. Hangi talimatın nerede çalıştığı: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 **4. Test edin (5 dk)**
 
@@ -206,7 +206,7 @@ Claude `docx` skill'ini çağırır, belgeyi workspace klasörünüze yazar, aç
 ### Yeni Öğrenilen
 
 - **Skill kavramı**: Claude'un uzmanlık paketleri
-- **Doğrudan dosya üretimi**: kopyala-yapıştır değil, gerçek `.docx`
+- **Doğrudan dosya üretimi**: gerçek bir `.docx` dosyası
 - **Workspace içinde kalıcı çıktı**: workspace klasörünüzde her zaman duruyor
 
 ### Daha Detay
@@ -223,7 +223,7 @@ Claude `docx` skill'ini çağırır, belgeyi workspace klasörünüze yazar, aç
 
 **1. Doğru connector'u seçin (5 dk)**
 
-Rolünüze göre en kritik olan:
+Rolünüze en uygun olan:
 
 | Rol | Önerilen ilk connector |
 |---|---|
@@ -272,7 +272,7 @@ Connector kurulu olduğuna göre, **bugün gerçekten yapacağınız bir işi** 
 
 - **MCP / Connector kavramı**: Claude'u şirket araçlarınıza bağlamak
 - **OAuth akışı**: güvenli kimlik doğrulama
-- **Gerçek veri ile çalışma**: kopyala-yapıştır değil, canlı bağlantı
+- **Gerçek veri ile çalışma**: kopyala-yapıştır yerine canlı bağlantı
 
 ### Daha Detay
 
@@ -282,7 +282,7 @@ Connector kurulu olduğuna göre, **bugün gerçekten yapacağınız bir işi** 
 
 ## Gün 5: Prompt Kütüphanesi Başlangıcı (40 dk)
 
-**Amaç:** İlk 4 günde çalıştığını fark ettiğiniz promptları yapılandırılmış olarak kaydedin. Bu hafta ürettiğiniz en değerli kalıcı varlık.
+**Amaç:** İlk 4 günde çalıştığını fark ettiğiniz promptları yapılandırılmış olarak kaydedin. Bu haftanın en kalıcı çıktısı bu olacak.
 
 ### Yapılacaklar
 
@@ -502,7 +502,7 @@ Dürüstçe cevaplayın:
 
 - **Scheduled Task**: Claude bensiz çalışıyor
 - **Yansıma alışkanlığı**: haftalık değerlendirme + bir sonraki haftaya hedef
-- **Sürdürülebilirlik**: alışkanlık tek seferlik egzersiz değil
+- **Sürdürülebilirlik**: alışkanlık her hafta yinelenir
 
 ### Daha Detay
 
@@ -534,7 +534,7 @@ Eğitim egzersizi gibi yapay görevler yerine **gerçek işiniz** üzerinde çal
 
 ### "İterasyon yapmadım"
 
-İlk çıktıyı kabul ettiniz mi? Çoğunlukla yanlış karar. 2-3 tur düzeltme ile çıktı niteliksel atlama yapar.
+İlk çıktıyı kabul ettiniz mi? Çoğunlukla yanlış karar. 2-3 tur düzeltme çıktıyı belirgin biçimde iyileştirir.
 
 ### "CLAUDE.md'yi unuttum"
 
@@ -546,11 +546,11 @@ OAuth akışı 5 dakikalık iş, vazgeçmeyin. Şirket VPN'i sorun çıkarıyors
 
 ### "Prompt'ları kaydetmedim"
 
-İyi çalışan promptlar parmak izleriniz. Kaydetmezseniz her seferinde yeniden uğraşırsınız. 5 dakikalık kayıt ileride saatler kazandırır.
+İyi çalışan promptlar sizin birikiminizdir. Kaydetmezseniz her seferinde yeniden uğraşırsınız. 5 dakikalık kayıt ileride saatler kazandırır.
 
 ### "Hafta sonu yansıma yapmadım"
 
-Yansıma olmazsa öğrenme yarım kalır. 25 dakikalık yansıma, bir sonraki haftayı niteliksel olarak değiştirir.
+Yansıma olmazsa öğrenme yarım kalır. 25 dakikalık yansıma, bir sonraki haftanın nasıl geçeceğini belirler.
 
 ---
 

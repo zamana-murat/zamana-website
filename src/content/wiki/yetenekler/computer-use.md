@@ -7,7 +7,7 @@ tags:
   - computer-use
   - otomasyon
   - erp
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 **Computer Use, Claude'a bilgisayar ekranında gözler ve eller veren özelliktir.** Yapılandırılmış bir API veya connector kullanmak yerine Claude ekran görüntüsü alır, ne gördüğünü analiz eder, bir eylem kararı verir ve uygular: tıklar, yazar, kaydırır, gezinir. Sonra yeni bir ekran görüntüsü alır ve devam eder.
@@ -25,11 +25,11 @@ Anthropic'in yardım sayfasına göre:
 
 Claude her uygulamaya erişmeden önce sizden onay ister; yatırım, alım satım ve kripto platformları varsayılan olarak yasaktır, kendi engelleme listenize de uygulama ekleyebilirsiniz. Claude'u istediğiniz an durdurabilirsiniz. macOS 15 ve üstünde Claude varsayılan olarak arka plandaki pencerelerde çalışır; ekranı tamamen devretmek için Computer use bölümünde "How Claude uses the apps you allow" ayarını "Full control" yapın.
 
-Neden önemli? **Çünkü API'si olmayan yazılımlarda da çalışabilir.** Türkiye'deki birçok orta ölçekli şirket hâlâ API'si olmayan eski sistemler kullanıyor. Computer Use, Claude'u bu şirketler için **evrensel bir otomasyon katmanına** yaklaştırır; yine de beta olduğu için her sistemde aynı güvenilirlikte çalışmaz.
+**API'si olmayan yazılımlarda da çalışabilmesi** bu yüzden önemli. Türkiye'deki birçok orta ölçekli şirket hâlâ API'si olmayan eski sistemler kullanıyor. Computer Use, Claude'u bu şirketler için **evrensel bir otomasyon katmanına** yaklaştırır; yine de beta olduğu için her sistemde aynı güvenilirlikte çalışmaz.
 
 ## Nasıl Çalışır?
 
-Döngü basit ama güçlü:
+Döngü şöyle işler:
 
 1. Claude ekran görüntüsünü alır (tüm ekran veya belirli bir uygulama penceresi)
 2. Görsel içeriği analiz eder: metinleri okur, UI öğelerini tespit eder, düzeni anlar
@@ -49,7 +49,7 @@ Computer Use'un büyük farkı: **GUI (grafik arayüzü) olan her yazılımda ç
 - **Masaüstü uygulamalar** (eski Office versiyonları, sektörel özel yazılımlar)
 - **Şu an insanın elle tıklayarak yaptığı her sistem**
 
-Türkiye'deki mali müşavir programlarının ve yerel ERP'lerin çoğunda genel amaçlı bir API yoktur, ama hepsinin bir arayüzü vardır. Yine de bu, her işi onlara devretmek demek değildir: **yalnız okuma ve rapor alma** için düşünün; kayıt girişi, fatura, ödeme ve beyan için kullanmayın. Gerekçe ve alternatifler [Türk İş Araçları](/wiki/temeller/turk-is-araclari/) sayfasında.
+Türkiye'deki mali müşavir programlarının ve yerel ERP'lerin çoğunda genel amaçlı bir API yoktur, ama hepsinin bir arayüzü vardır. Yine de her işi devretmeyin: **yalnız okuma ve rapor alma** için düşünün; kayıt girişi, fatura, ödeme ve beyan için kullanmayın. Gerekçe ve alternatifler [Türk İş Araçları](/wiki/temeller/turk-is-araclari/) sayfasında.
 
 ## Hangi Yöntemi Önce Denemeli?
 
@@ -60,7 +60,7 @@ Aynı işi birkaç yolla yapabiliyorsanız şu sırayı öneririz:
 3. **Dışa aktar ve yükle:** programdan rapor alıp dosyayı Claude'a vermek çoğu zaman en güvenli yoldur
 4. **Computer Use:** son çare; çok şey üzerinde çalışır ama daha yavaş ve daha az güvenilir
 
-Computer Use, **kapsamı genişleten** son kademedir: yalnızca API'si olan uygulamalar değil, ekranı olan hemen her şey.
+Computer Use son kademedir ve kapsamı en geniş olandır: ekranı olan hemen her şeyde çalışır.
 
 ## Gerçek İş Otomasyon Örnekleri
 
@@ -100,7 +100,7 @@ Claude gerçek ekranınızda çalıştığı için eylemleri izleyebilir ve gere
 
 ## Türk Kurumsal Kullanıcısı İçin Neden Değerli?
 
-Türkiye'deki orta ölçekli şirketlerin çoğu **eski sistemler üzerinde çalışır**:
+Türkiye'de bazı orta ölçekli şirketler **eski sistemlerle çalışır**:
 
 - 15 yıllık Logo / Mikro / Netsis
 - Dahili geliştirilmiş ama hiç API'si olmayan ERP
@@ -116,7 +116,7 @@ Cevap "evet"se, Computer Use denemeye değer. Önce küçük ve geri alınabilir
 
 ## Güvenlik ve Kontrol
 
-Computer Use güçlüdür, sorumluluk da öyle:
+Computer Use gerçek ekranınızda çalıştığı için dikkat ister:
 
 - Eylemler ekranınızda görünür çalışır
 - Kritik eylemlerde (kayıt silme, form gönderme, para transferi) onay istenip istenmeyeceğine güvenmeyin; bu tür işleri baştan Claude'a vermeyin

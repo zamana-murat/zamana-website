@@ -7,12 +7,12 @@ tags:
   - insan-kaynaklari
   - ik
   - is-kanunu
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-İnsan Kaynakları, Claude'un en çok tekrarlayan ve en yüksek hacimli işi bulduğu alanlardan biridir. Ama hukuki hassasiyeti de yüksektir.
+İnsan Kaynakları, Claude'un tekrarlayan ve yüksek hacimli iş bulduğu alanlardan biridir. Hukuki hassasiyeti de yüksektir.
 
-> **Kritik çerçeve:** Claude İK belgelerini taslaklar; istihdam hukukuna dokunan her şeyde **hukuk incelemesi zorunludur**. Özellikle Türkiye'de **İş Kanunu** kendine özgü gereksinimler taşır. Claude yapı ve dil konusunda yardım eder; disiplin işlemleri, işten çıkarmalar veya bağlayıcı anlaşmalar için istihdam avukatının yerini tutmaz.
+> Claude İK belgelerini taslaklar; istihdam hukukuna dokunan her şeyde hukuk incelemesi zorunludur. Türkiye'de İş Kanunu kendine özgü gereksinimler getirir. Claude yapı ve dil konusunda yardım eder; disiplin işlemleri, işten çıkarmalar veya bağlayıcı anlaşmalar için istihdam avukatının yerini tutmaz.
 
 > **Kişisel veri notu:** Aday ve çalışan bilgileri kişisel veridir. Kimlik, maaş, sağlık ve performans bilgilerini Claude'a girmeden önce anonimleştirin; anonimleştirmeden girecekseniz yurt dışı aktarım güvencesini tamamlayın ([KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/)). Çalışandan açık rıza almak, düzenli kullanım için tek başına güvenli bir dayanak değildir.
 
@@ -30,7 +30,7 @@ lastUpdated: "2026-11-09"
 
 ### İş İlanı Mimarisi
 
-Rol, gereksinimler, şirket kültürü ve **işveren olarak şirketi ayıran şey**: doğru adayı çeken ve yanlış adayı eleyen bir ilan.
+Rol, gereksinimler, şirket kültürü ve şirketi işveren olarak ayıran özellikler: doğru adayı çeken ve yanlış adayı eleyen bir ilan.
 
 ### Aday Değerlendirmesi
 
@@ -38,7 +38,7 @@ Belirli roller ve departmanlar için yapılandırılmış mülakat soru setleri:
 
 ### Teklif Mektubu Şablonları
 
-Profesyonel, eksiksiz ve net yapılandırılmış mektuplar; tüm kilit şartlar yerinde, **İş Kanunu gereksinimleri not edilmiş**. Gönderimden önce **hukuk incelemesi zorunludur**.
+Profesyonel, eksiksiz ve net yapılandırılmış mektuplar; tüm kilit şartlar yerinde, İş Kanunu gereksinimleri not edilmiş. Gönderimden önce hukuk incelemesi zorunludur.
 
 ### Ret İletişimi
 
@@ -52,7 +52,7 @@ Toplantı zamanı harcamadan adayları eleyen yazılı sorular.
 
 ### Performans Değerlendirme Yazımı
 
-Siz olgusal değerlendirmeyi ve somut örnekleri verirsiniz, Claude yapılandırılmış bir anlatı üretir. **Tüm yöneticilerde tutarlı kalite** sağlanır, değerlendirmenin kalitesi en iyi yazan kişiye bağlı kalmaz. **Süre:** kişi başı elle 45-60 dakika, Claude ile 15-20 dakika (yönetici kontrolü dahil). *Zamana gözlemi, tipik aralık.* 50 kişilik bir değerlendirme sezonunda fark kabaca 20-35 saattir.
+Siz olgusal değerlendirmeyi ve somut örnekleri verirsiniz, Claude yapılandırılmış bir anlatı üretir. Tüm yöneticilerde kalite tutarlı olur; değerlendirme en iyi yazan kişiye bağlı kalmaz. **Süre:** kişi başı elle 45-60 dakika, Claude ile 15-20 dakika (yönetici kontrolü dahil). *Zamana gözlemi, tipik aralık.* 50 kişilik bir değerlendirme sezonunda fark kabaca 20-35 saattir.
 
 ### Gelişim Planı Dokümantasyonu
 
@@ -66,7 +66,7 @@ Zor mesajları net, profesyonel ve şefkatli biçimde yapılandırmak: ne söyle
 
 Yazılı uyarılar ve performans iyileştirme planları: yapılandırılmış, olgusal ve hukuki olarak izlenebilir.
 
-> **Bu alan, İK'nın Claude kullanımında en yüksek hukuki hassasiyete sahip alandır. Her zaman hukuk incelemesi.**
+> İK'nın Claude kullanımında en yüksek hukuki hassasiyet bu alandadır. Hukuk incelemesi her seferinde şart.
 
 ### Eğitim Materyali Ana Hatları
 
@@ -74,9 +74,9 @@ Siz konuyu tarif edersiniz; Claude eğitim oturumunun gündemini, kilit noktalar
 
 ## Bölüm 3: Politika ve İç İletişim
 
-**İK politika yazımı.** Net, tutarlı, insan diliyle yazılmış politikalar, hukuki jargon değil. İnsanların gerçekten okuduğu ve anladığı politikalar.
+**İK politika yazımı.** Hukuki jargon yerine insan diliyle yazılmış, tutarlı politikalar: çalışanların gerçekten okuduğu ve anladığı metinler.
 
-**Onboarding dokümantasyonu.** Karşılama rehberleri, ilk hafta planları, role özel checklist'ler. Yeni çalışan deneyimi burada başlar, ve bugün çoğu yerde hayal kırıklığıyla başlıyor.
+**Onboarding dokümantasyonu.** Karşılama rehberleri, ilk hafta planları, role özel checklist'ler. Yeni çalışanın deneyimi burada başlar.
 
 **İç İK duyuruları.** Yan hak değişiklikleri, politika güncellemeleri, kurumsal haberler. Okunan duyuru ile görmezden gelinen duyuru arasındaki fark çoğunlukla yazımdır.
 
@@ -90,7 +90,7 @@ Siz konuyu tarif edersiniz; Claude eğitim oturumunun gündemini, kilit noktalar
 
 ### İşten Çıkarma ve Yeniden Yapılanma Dokümantasyonu
 
-Pozisyon kaldırma bildirimleri, danışma süreci dokümantasyonu, kıdem tazminatı iletişimi. Bunlar **hukuki olarak hassastır** ve İş Kanunu gereksinimleri uygulanır. **Her zaman hukuk incelemesi gerekir**: Claude yapılandırılmış ilk taslağı üretir, İK hiçbir iletişimi yayınlamadan önce hukuki danışmanla doğrular.
+Pozisyon kaldırma bildirimleri, danışma süreci dokümantasyonu, kıdem tazminatı iletişimi. Bunlar hukuken hassastır ve İş Kanunu gereksinimleri uygulanır. Hukuk incelemesi her seferinde gerekir: Claude yapılandırılmış ilk taslağı üretir, İK hiçbir iletişimi yayınlamadan önce hukuki danışmanla doğrular.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -129,11 +129,11 @@ Pozisyon kaldırma bildirimleri, danışma süreci dokümantasyonu, kıdem tazmi
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **İşe alım döngüsü**: ilan → ön-eleme → mülakat → teklif, her adımda Claude destekli
-- **Performans değerlendirme sezonu**: tutarlı yapıda toplu değerlendirme
-- **Disiplin dokümantasyon süreci**: her adımda hukuk koordinasyonu
-- **Yıllık iş gücü planlama döngüsü**
-- **Politika soru-cevap ortamı**: yürürlükteki politika belgelerini bir [Project](/wiki/araclar/projects/)'e koyup "yıllık izin devri nasıl işliyor?" gibi tekrar eden soruları kaynağa dayalı yanıtlatmak. Yanıtlar İK uzmanınca kontrol edilir; kişisel dosya (bordro, özlük) bu ortama girmez
+- İşe alım döngüsü: ilan → ön-eleme → mülakat → teklif, her adımda Claude destekli
+- Performans değerlendirme sezonu: tutarlı yapıda toplu değerlendirme
+- Disiplin dokümantasyon süreci: her adımda hukuk koordinasyonu
+- Yıllık iş gücü planlama döngüsü
+- Politika soru-cevap ortamı: yürürlükteki politika belgelerini bir [Project](/wiki/araclar/projects/)'e koyup "yıllık izin devri nasıl işliyor?" gibi tekrar eden soruları kaynağa dayalı yanıtlatmak. Yanıtlar İK uzmanınca kontrol edilir; kişisel dosya (bordro, özlük) bu ortama girmez
 
 ## Gerçek Örnek: İş İlanı
 

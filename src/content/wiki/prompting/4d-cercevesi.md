@@ -7,16 +7,14 @@ tags:
   - 4d-framework
   - ai-fluency
   - anthropic-academy
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Yapay zekayla çalışmak bir beceridir, bir araç değil. Bu becerinin resmi adı **AI Fluency**'dir. Claude Academy (eski adı Anthropic Academy) ve University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
+Yapay zekayla çalışmak bir beceridir. Bu becerinin resmi adı **AI Fluency**'dir. Claude Academy (eski adı Anthropic Academy) ve University College Cork gibi üniversiteler bu beceriyi öğretirken **4D Çerçevesi**'ni kullanır.
 
 4D, bir çalışanın Claude'la "dene bakalım" seviyesinden "işini buna göre yeniden tasarla" seviyesine geçmesini sağlayan düşünce yapısıdır.
 
 > **AI Fluency, yapay zekayla etkili, verimli, etik ve güvenli biçimde etkileşim kurabilme yetkinliğidir.**
-
-Bu sayfa çerçeveyi tanıtır. Dört D'yi ve her birinin alt yetkinliklerini açıklar.
 
 ## Dört D: Resmi Tanımlar
 
@@ -152,7 +150,7 @@ Bu bir Diligence beyanının modelidir: yapay zekanın ne yaptığı konusunda n
 
 ### Türkiye'de profesyonel bağlam
 
-Profesyonellerin çoğu mesleki standartlara tabidir: avukatlar Barolar Birliği'ne, finans uzmanları SPK'ya, sağlık çalışanları ilgili mevzuata, ihracatçılar GTİP ve gümrük mevzuatına. Bu profesyoneller için **Diligence iyi bir pratik değil, mesleki yükümlülüktür**. Claude bir araçtır. Yasal ve mesleki sorumluluk ehliyetli profesyonelde kalır.
+Profesyonellerin çoğu mesleki standartlara tabidir: avukatlar Barolar Birliği'ne, finans uzmanları SPK'ya, sağlık çalışanları ilgili mevzuata, ihracatçılar GTİP ve gümrük mevzuatına. Bu profesyoneller için Diligence mesleki yükümlülüktür. Claude bir araçtır. Yasal ve mesleki sorumluluk ehliyetli profesyonelde kalır.
 
 ### Temel ilke
 
@@ -171,7 +169,7 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 
 ## Davranışsal Göstergeler: Öz Değerlendirme
 
-4D bir teori değil, gözlemlenebilir davranışlar bütünüdür. Çerçeve 24 gözlemlenebilir davranış tanımlar ve her boyutta "düşük akıcılık" ve "yüksek akıcılık" davranışlarını ayırt eder. Aşağıdaki tablo kendinizi (veya ekibinizi) hızlıca konumlandırmak için bir aynadır.
+4D gözlemlenebilir davranışlardan oluşur. Çerçeve 24 gözlemlenebilir davranış tanımlar ve her boyutta "düşük akıcılık" ve "yüksek akıcılık" davranışlarını ayırt eder. Aşağıdaki tabloyla kendinizi ya da ekibinizi hızlıca konumlandırabilirsiniz.
 
 | Boyut | Düşük akıcılık göstergesi | Yüksek akıcılık göstergesi |
 |---|---|---|
@@ -180,7 +178,7 @@ Her departmana özgü "pazarlık dışı çerçeveleme" Diligence'ın somut kar�
 | **Discernment** | Emin tonlu çıktıyı sorgusuz kabul eder | Çıktıyı, süreci ve davranışı eleştirir; "adımı koyar mıyım?" testini uygular |
 | **Diligence** | Kullanır ama söylemez, paylaşır ama doğrulamaz | Araç seçimini, şeffaflığı ve doğrulamayı üstlenir; sorumluluğu taşır |
 
-**Kendi işinizde test edin:** Son bir haftada Claude ile yaptığınız 3-4 önemli işi seçin, her birini bu dört satıra göre puanlayın. En düşük çıktığınız boyut, bir sonraki gelişim alanınızdır. Tek bir boyutu bile bir kademe yukarı taşımak, genel verimi belirgin artırır.
+**Kendi işinizde test edin:** Son bir haftada Claude ile yaptığınız 3-4 önemli işi seçin, her birini bu dört satıra göre puanlayın. En düşük çıktığınız boyut, bir sonraki gelişim alanınızdır. Tek bir boyutu bile bir kademe yükseltmek işinizi değiştirir.
 
 ## İlgili Sayfalar
 

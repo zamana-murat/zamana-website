@@ -10,10 +10,10 @@ tags:
   - spa
   - lc
   - incoterms
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Bu bölüm, Türkiye'den emtia ihracatı yapan firmalar için somut iş akışlarına odaklanır. Kükürt, bitümen, sepiyolit ve üre gibi emtiaların uluslararası ticareti, LOI/FCO/SPA aşamaları, akreditif yazışmaları ve gümrük süreçleri pratik örneklerle ele alınır.
+Bu sayfa, Türkiye'den emtia ihracatı yapan firmaların iş akışlarını anlatır. Kükürt, bitümen, sepiyolit ve üre gibi emtiaların uluslararası ticaretinde LOI/FCO/SPA aşamalarını, akreditif yazışmalarını ve gümrük süreçlerini örneklerle işler.
 
 ## Pazarlık Dışı Çerçeve
 
@@ -32,7 +32,7 @@ Bu bölüm, Türkiye'den emtia ihracatı yapan firmalar için somut iş akışla
 
 ### LOI (Letter of Intent): Niyet Mektubu
 
-Alıcının veya satıcının açılış pozisyonunu yapılandırmak: ürün spesifikasyonu, miktar, fiyat bazı, Incoterms, ödeme koşulları, muayene, geçerlilik. Claude, tüccarın ticari parametrelerinden **kısa sürede profesyonel bir taslak** üretir.
+Alıcının veya satıcının açılış pozisyonunu yapılandırmak: ürün spesifikasyonu, miktar, fiyat bazı, Incoterms, ödeme koşulları, muayene, geçerlilik. Claude, tüccarın ticari parametrelerinden kısa sürede profesyonel bir taslak üretir.
 
 ### FCO (Full Corporate Offer): Resmi Teklif
 
@@ -44,17 +44,17 @@ Erken aşama pazar test belgeleri. Claude farklı alıcı profilleri için varya
 
 ### SPA (Sale and Purchase Agreement): Bağlayıcı Ticari Anlaşma
 
-Claude, anlaşılmış şartlardan taslağı hazırlar; tüccar her maddeyi kontrol eder, **hukuk imzadan önce inceler**.
+Claude, anlaşılmış şartlardan taslağı hazırlar; tüccar her maddeyi kontrol eder, hukuk imzadan önce inceler.
 
 Odak: yapı ve hangi maddeler önemli:
 
-- **Miktar toleransı** (± %5, ± %10)
-- **Kalite spesifikasyonu**
-- **Fiyat ayarlama formülü**
-- **Ödeme koşulları** (LC, TT, CAD)
-- **Muayene hakları**
-- **Mücbir sebep**
-- **Tabi olunacak hukuk**
+- Miktar toleransı (± %5, ± %10)
+- Kalite spesifikasyonu
+- Fiyat ayarlama formülü
+- Ödeme koşulları (LC, TT, CAD)
+- Muayene hakları
+- Mücbir sebep
+- Tabi olunacak hukuk
 
 ### CIS (Cargo Information Sheet)
 
@@ -68,9 +68,9 @@ Alıcı due diligence'ı için biçimlendirilmiş ürün teknik spesifikasyonu. 
 
 **Pazar istihbarat raporları.** Yönetim veya iç kullanım için ürün pazar brief'leri: alıcılar, fiyat trendleri, arz dinamikleri, ana üreticiler, talep görünümü, ticaret rotaları. Claude, sağladığınız veri ve web araştırmasından profesyonel bir rapor sentezler. Rakamları ve kaynakları kontrol edin.
 
-**Alıcı sorgu yanıtları.** Gelen ticaret sorgularına profesyonel, hızlı ve eksiksiz yanıtlar. İlk yanıt, tüm pazarlığın tonunu belirler. **Claude taslak yazar, tüccar kişiselleştirir ve gönderir.**
+**Alıcı sorgu yanıtları.** Gelen ticaret sorgularına profesyonel, hızlı ve eksiksiz yanıtlar. İlk yanıt, tüm pazarlığın tonunu belirler. Claude taslak yazar, tüccar kişiselleştirir ve gönderir.
 
-**Pazarlık yazışması.** Karşı teklif mektupları, revize şart iletişimi, fiyat revizyon talepleri: **kararlı, profesyonel ve ilişkiyi koruyan** bir ticari dil.
+**Pazarlık yazışması.** Karşı teklif mektupları, revize şart iletişimi, fiyat revizyon talepleri: kararlı, profesyonel ve ilişkiyi koruyan bir ticari dil.
 
 **Şirket profili ve kapasite bildirisi.** Potansiyel bir alıcıya veya satıcıya kim olduğunuzu ve neden sizinle ticaret yapmaları gerektiğini anlatan belge.
 
@@ -78,35 +78,35 @@ Alıcı due diligence'ı için biçimlendirilmiş ürün teknik spesifikasyonu. 
 
 ## Bölüm 3: Uyum, Lojistik ve Dokümantasyon
 
-**İhracat uyum dokümantasyonu.** Hangi hedef ülkeler için hangi belgelerin gerektiğini toparlamak; gümrük beyanları, menşe sertifikaları ve düzenleyici dosyalar için destekleyici metin taslağı hazırlamak. **Claude gümrük komisyoncusunun yerini almaz**; tüccarın neyin gerektiğini anlamasına ve hazırlanmasına yardım eder.
+**İhracat uyum dokümantasyonu.** Hangi hedef ülkeler için hangi belgelerin gerektiğini toparlamak; gümrük beyanları, menşe sertifikaları ve düzenleyici dosyalar için destekleyici metin taslağı hazırlamak. Claude gümrük komisyoncusunun yerini almaz; tüccarın neyin gerektiğini anlamasına ve hazırlanmasına yardım eder.
 
 ### Incoterms Tutarlılık Kontrolü
 
-Bir set ticaret belgesini Claude'a verip Incoterms, fiyat bazı, sigorta sorumluluğu ve risk transfer noktasının **tüm belgelerde tutarlı olduğunu kontrol etmesini** istersiniz. Hatalar **anlaşmazlığa dönüşmeden** yakalanır.
+Bir set ticaret belgesini Claude'a verip Incoterms, fiyat bazı, sigorta sorumluluğu ve risk transfer noktasının tüm belgelerde tutarlı olduğunu kontrol etmesini istersiniz. Hatalar anlaşmazlığa dönüşmeden yakalanır.
 
 **Sevkiyat talimatları.** Freight forwarder'lara yapılandırılmış, eksiksiz talimatlar: gemi nominasyonu, yükleme limanı detayları, dokümantasyon gereksinimleri, alıcı bilgileri, özel işleme notları.
 
 ### Ödeme Koşulları Dokümantasyonu
 
-LC (Letter of Credit) gereksinimlerinin özeti: satıcının sunması gerekenler, alıcının ayarlaması gerekenler. Claude ödeme mekanizmasını **net bir iç checklist'e** çevirir.
+LC (Letter of Credit) gereksinimlerinin özeti: satıcının sunması gerekenler, alıcının ayarlaması gerekenler. Claude ödeme mekanizmasını net bir iç checklist'e çevirir.
 
 **Yaptırım ve uyum farkındalığı.** Claude, alıcının, ülkenin veya ürünün ek uyum incelemesi gerektirip gerektirmediğini kontrol etmenize yardım eder ve takip için işaretler. Hukuk veya uyum danışmanının yerini almaz.
 
 ### Proforma Fatura Hazırlığı
 
-Resmi ticari faturadan önce birçok ticaret işlemi proforma fatura gerektirir; fatura yapılandırılmış olmalı ve tüm gerekli alanları içermelidir. Claude, tüccarın deal parametrelerinden profesyonel bir proforma üretir; **tüccar her rakamı doğrular**.
+Resmi ticari faturadan önce birçok ticaret işlemi proforma fatura gerektirir; fatura yapılandırılmış olmalı ve tüm gerekli alanları içermelidir. Claude, tüccarın deal parametrelerinden profesyonel bir proforma üretir; tüccar her rakamı doğrular.
 
 ### LC Uyuşmazlık Yanıt Mektupları
 
-Emtia ticaretinin en zor anlarından biri: banka, Letter of Credit kapsamındaki belgeleri uyuşmazlık nedeniyle reddeder. Tüccar, düzenleyen bankaya, alıcıya ya da her ikisine **hızlı ve kesin bir dille** yanıt vermek zorundadır.
+Emtia ticaretinin en zor anlarından biri: banka, Letter of Credit kapsamındaki belgeleri uyuşmazlık nedeniyle reddeder. Tüccar, düzenleyen bankaya, alıcıya ya da her ikisine hızlı ve kesin bir dille yanıt vermek zorundadır.
 
-Claude, tüccarın uyuşmazlık tanımından ve pozisyonundan bir yanıt taslağı çıkarır; **tüccar göndermeden önce inceler**. Bankanın uyuşmazlık bildirimini (PDF ya da tarama) ve LC metnini birlikte yüklerseniz Claude, bildirilen her uyuşmazlığı LC maddesiyle karşılaştırıp tablo yapar; taranmış belgede okuma hatası olabilir, rakam ve tarihleri aslından kontrol edin ([Dosya İşleme](/wiki/yetenekler/file-handling/)).
+Claude, tüccarın uyuşmazlık tanımından ve pozisyonundan bir yanıt taslağı çıkarır; tüccar göndermeden önce inceler. Bankanın uyuşmazlık bildirimini (PDF ya da tarama) ve LC metnini birlikte yüklerseniz Claude, bildirilen her uyuşmazlığı LC maddesiyle karşılaştırıp tablo yapar; taranmış belgede okuma hatası olabilir, rakam ve tarihleri aslından kontrol edin ([Dosya İşleme](/wiki/yetenekler/file-handling/)).
 
-> **Bu, yanlış seçilmiş kelimelerin gerçek para kaybına yol açabildiği bir durumdur.**
+> Burada yanlış seçilmiş bir kelime gerçek para kaybına yol açabilir.
 
 ### Emtia Fiyat Hedge Anlatısı
 
-Forward kontratlar, opsiyonlar veya swap'lar ile emtia fiyat riskini hedge eden şirketlerde yönetim, hedge pozisyonunun yazılı açıklamasına ihtiyaç duyar: **ne hedge edildi, hangi seviyede, hangi süre için, çeşitli fiyat senaryolarında P&L etkisi ne.** Claude anlatıyı yazar; finans ekibi rakamların sahibidir.
+Forward kontratlar, opsiyonlar veya swap'lar ile emtia fiyat riskini hedge eden şirketlerde yönetim, hedge pozisyonunun yazılı açıklamasına ihtiyaç duyar: ne hedge edildi, hangi seviyede, hangi süre için, çeşitli fiyat senaryolarında P&L etkisi ne. Claude anlatıyı yazar; finans ekibi rakamların sahibidir.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -131,7 +131,7 @@ Forward kontratlar, opsiyonlar veya swap'lar ile emtia fiyat riskini hedge eden 
 ## Kullanılacak Skills ve Connector'lar
 
 **Skills:**
-- **Kendi dış ticaret skill'iniz**: LOI, SPA, CIS, NCNDA gibi belgeleri şirketinizin şablonlarıyla üreten, sizin yazdığınız skill (hazır gelmez; nasıl yazılır: [Skills](/wiki/yetenekler/skills/))
+- Kendi dış ticaret skill'iniz: LOI, SPA, CIS, NCNDA gibi belgeleri şirketinizin şablonlarıyla üreten, sizin yazdığınız skill (hazır gelmez; nasıl yazılır: [Skills](/wiki/yetenekler/skills/))
 - Web search: pazar istihbaratı, pazar haberleri, fiyat referansları
 - `docx`, `pdf`: ticaret belgeleri
 - `xlsx`: fiyat ve miktar takibi
@@ -143,14 +143,14 @@ Forward kontratlar, opsiyonlar veya swap'lar ile emtia fiyat riskini hedge eden 
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Ticaret sorgu → teklif döngüsü**: sorgu alındı → LOI / FCO taslandı → pazarlık → SPA execute edildi
-- **Pazar istihbarat raporu üretimi**: haftalık / aylık emtia brifingleri
-- **LC belge hazırlığı ve uyuşmazlık yönetimi**: tüm LC süreci
+- Ticaret sorgu → teklif döngüsü: sorgu alındı → LOI / FCO taslandı → pazarlık → SPA execute edildi
+- Pazar istihbarat raporu üretimi: haftalık / aylık emtia brifingleri
+- LC belge hazırlığı ve uyuşmazlık yönetimi: tüm LC süreci
 
 ## Sık Hatalar
 
 - **SPA madde hatası:** Bağlayıcı sözleşmede yanlış bir madde gerçek para kaybettirir. Claude'un taslağını her zaman tüccar ve hukuk müşaviri inceler.
-- **Yaptırım listeleri:** Claude güncel yaptırım listelerini bilmiyor olabilir. Alıcıyı ve ülkeyi OFAC, AB ve BM listelerinden ayrıca kontrol edin.
+- **Yaptırım listeleri:** Claude güncel yaptırım listelerini bilmeyebilir. Alıcıyı ve ülkeyi OFAC, AB ve BM listelerinden ayrıca kontrol edin.
 - **Ticari sır.** Alıcı adı, fiyat ve banka bilgisi ticari sırdır; taslağı hazırlarken gerekmiyorsa yer tutucu (`[ALICI]`, `[FİYAT]`) kullanın. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil. Çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Banka enstrümanı dili:** LC, MT760, MT799 gibi mesajların dili çok özeldir. Claude'un taslağını bankanın kendi şablonuyla kıyaslamadan göndermeyin.
 

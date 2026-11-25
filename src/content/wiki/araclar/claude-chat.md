@@ -6,12 +6,12 @@ tags:
   - araclar
   - claude-chat
   - web
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude Chat, Claude'un tarayıcı ve mobil uygulamalardaki standart arayüzüdür**, çoğu kişinin Claude'la ilk tanıştığı yerdir. [claude.ai](https://claude.ai) adresinden ve iOS / Android uygulamalarından erişilir.
+Claude Chat, Claude'un tarayıcı ve mobil uygulamalardaki standart arayüzü ve çoğu kişinin Claude'la ilk tanıştığı yer. [claude.ai](https://claude.ai) adresinden ve iOS / Android uygulamalarından girersiniz.
 
-Bu sayfa Claude Chat'in ne yaptığını, ne yapmadığını ve bir iş profesyonelinin hangi görevleri sohbet tarzında, hangilerini [Cowork](/wiki/araclar/cowork-modu/) tarzında yapması gerektiğini açıklar.
+Aşağıda Claude Chat'in neler yaptığı, neler yapmadığı ve hangi işi sohbet tarzında, hangisini [Cowork](/wiki/araclar/cowork-modu/) tarzında yapmanız gerektiği var.
 
 > **Güncel durum (16 Eylül 2026):** Cowork ve sohbet tek bir Claude arayüzünde birleşiyor (kademeli yayılım: Pro, Max ve Ultra'da açılıyor; Team ve Enterprise'ta yönetici "Chat and Cowork unified" ayarını açınca görünür, Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda; Free için "yakında" deniyor). Aynı konuşmada hem soru sorabilir hem "bu verilerden haftalık raporu hazırla" diyebilirsiniz. Hangi iş hangi tarza yakın, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında. Ayrıntı: [Cowork ve sohbet tek Claude oldu](/haberler/2026-09-16-cowork-ve-sohbet-tek-claude-oldu/).
 
@@ -19,17 +19,17 @@ Bu sayfa Claude Chat'in ne yaptığını, ne yapmadığını ve bir iş profesyo
 
 Kısaca: bir konuşma arayüzü. Siz yazarsınız, Claude cevap verir. Yazı yazmak, analiz, araştırma, belge incelemesi gibi bir dizi işte hemen sonuç üretir.
 
-**Sohbet arayüzünde dosya yükleyebilir, web'de arayabilir, artifact üretebilir, skill ve kod çalıştırma özelliklerini kullanabilirsiniz.** Skill'ler ve code execution claude.ai'de Free dahil tüm planlarda var (Team ve Enterprise'ta yönetici kod çalıştırmayı kapatabilir). Bu yüzden .docx, .xlsx, .pptx gibi dosyaları sohbetten indirilebilir çıktı olarak üretebilirsiniz.
+Sohbet arayüzünde dosya yükleyebilir, web'de arayabilir, artifact üretebilir, skill ve kod çalıştırma özelliklerini kullanabilirsiniz. Skill'ler ve code execution claude.ai'de Free dahil tüm planlarda var (Team ve Enterprise'ta yönetici kod çalıştırmayı kapatabilir). Bu yüzden .docx, .xlsx, .pptx gibi dosyaları sohbetten indirilebilir çıktı olarak üretebilirsiniz.
 
 **Klasik sohbet arayüzünde (birleşik arayüz hesabınıza gelmediyse) olmayanlar:**
 
-- **Yerel dosya sisteminize erişmez.** Bilgisayarınızdaki klasörü göremez.
-- **Kalıcı otomasyon çalıştırmaz.** Zamanlanmış görev, arka plan süreci yok.
-- **Plugins desteklemez.** Cowork'teki rol bazlı uzmanlık paketleri tam hâliyle burada yoktur.
+- Yerel dosya sisteminize erişmez. Bilgisayarınızdaki klasörü göremez.
+- Kalıcı otomasyon çalıştırmaz. Zamanlanmış görev, arka plan süreci yok.
+- Plugins desteklemez. Cowork'teki rol bazlı uzmanlık paketleri tam hâliyle burada yoktur.
 
 Birleşik arayüzde bu işler aynı konuşmadan yapılabiliyor; yerel klasör erişimi ve sandbox gibi masaüstüne bağlı parçalar yine [Claude Desktop](/wiki/araclar/claude-desktop/) ister.
 
-Claude Chat'i şöyle düşünün: **"kurulum gerektirmeyen Claude giriş kapısı."** Başlangıç için mükemmel, ama iş akışınızın merkezi olmak için yeterli değil.
+Claude Chat kurulum gerektirmeyen giriş noktasıdır. Başlamak için yeterli, ama iş akışınızın merkezi olacak kadar geniş değil.
 
 ## Temel Özellikler
 
@@ -59,7 +59,7 @@ Claude sohbet penceresi içinde interaktif HTML sayfaları, veri görselleştirm
 
 ### Projects
 
-Claude Chat içinde **Projects** özelliği, kalıcı ve organize çalışma alanları yaratır; her biri kendi bilgi tabanı ve özel talimatlarıyla gelir. Detay için [Projects](/wiki/araclar/projects/) sayfasına bakın.
+Claude Chat'teki Projects özelliği kalıcı çalışma alanları açar; her biri kendi bilgi tabanı ve özel talimatlarıyla gelir. Detay için [Projects](/wiki/araclar/projects/) sayfasına bakın.
 
 ## Soru-Cevap mı, Çalışma mı?
 
@@ -73,7 +73,7 @@ Claude Chat içinde **Projects** özelliği, kalıcı ve organize çalışma ala
 - **Görsel yorumlama:** Bir grafik, bir çizim, bir ekran görüntüsü üzerine konuşmak
 - **Gezerken kullanım:** Telefondan kısa soru, fotoğraf yükleyip yorum isteme
 
-Bunların hepsi sohbette harika çalışır. Cowork tarzı çalışma gerekmez.
+Bu işlerin hepsini sohbetle yaparsınız, Cowork tarzı çalışmaya gerek yok.
 
 ## Ne Zaman Cowork Tarzı Çalışmaya Geçmelisiniz?
 

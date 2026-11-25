@@ -7,10 +7,10 @@ tags:
   - satis
   - is-gelistirme
   - crm
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Bu sayfa, satış ekibinin Claude ile en çok zaman kazandığı yerleri ve bu departmanda kurulan tipik iş akışlarını anlatır. Salesforce kullanıyorsanız ilgili eklenti için Skills bölümündeki nota bakın.
+Satış ekibi Claude ile en çok teklif, takip ve araştırmada zaman kazanır; tipik iş akışları aşağıda. Salesforce kullanıyorsanız ilgili eklenti için Skills bölümündeki nota bakın.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -28,13 +28,13 @@ Bu sayfa, satış ekibinin Claude ile en çok zaman kazandığı yerleri ve bu d
 
 **Takip dizileri.** Farklı senaryolar için çok dokunuşlu bir takip kütüphanesi kurulur: yanıt yok, ilgili ama yavaş, itiraz geldi.
 
-**Teklif yazımı.** Çalışan rakamları ve özel şartları verir; Claude yapıyı, dili ve ikna akışını kurar. Sonuç, özenle yazılmış gibi okunan profesyonel bir tekliftir.
+**Teklif yazımı.** Çalışan rakamları ve özel şartları verir; Claude yapıyı, dili ve ikna akışını kurar. Sonuç, özenle yazılmış profesyonel bir tekliftir.
 
 **Fiyat ve teklif dokümantasyonu.** Standart fiyat girdilerinden; şartlar, geçerlilik ve ödeme koşulları eklenmiş profesyonel bir teklif belgesi çıkar.
 
-**Tender / RFP yanıtları.** Çalışan tender gereksinimlerini açar; Claude yanıtı bölüm bölüm yapılandırır. **Zamana notu:** Yanıt hazırlama süresi belirgin biçimde kısalır, ama her bölümü teknik ve hukuki olarak sizin doğrulamanız gerekir.
+**Tender / RFP yanıtları.** Çalışan tender gereksinimlerini açar; Claude yanıtı bölüm bölüm yapılandırır. **Zamana notu:** Yanıt hazırlama süresi kısalır, ama her bölümü teknik ve hukuki olarak sizin doğrulamanız gerekir.
 
-**Kamu ihalesi (EKAP) teklif dosyası.** Kamu ihalelerinde dosya hacmi yüksektir: idari şartname, teknik şartname, belge listesi, uygunluk beyanları. Claude'a şartnameyi verip önce madde madde bir **uygunluk matrisi** ("şartname maddesi, karşıladığımız kanıt, eksik belge") çıkarttırırsınız; sonra teknik yanıt bölümlerini bu matrise göre yazdırırsınız. Zamana eğitim materyalinde ihale/RFP yanıt süresinin yaklaşık %60-70 kısalabileceği varsayılır; bu tahmini bir orandır, kendi sürenizi ölçün. Tarihleri, teminat ve yeterlik koşullarını, belge geçerlilik sürelerini Claude'dan değil şartnameden ve EKAP'tan doğrulayın; teklif bedeli ve maliyet kalemlerini yapıştırırken şirket verisi kurallarınıza uyun. İhale mevzuatı ayrıntıları için hukuk ya da ihale uzmanınıza danışın.
+**Kamu ihalesi (EKAP) teklif dosyası.** Kamu ihalelerinde dosya hacmi yüksektir: idari şartname, teknik şartname, belge listesi, uygunluk beyanları. Claude'a şartnameyi verip önce madde madde bir uygunluk matrisi ("şartname maddesi, karşıladığımız kanıt, eksik belge") çıkarttırırsınız; sonra teknik yanıt bölümlerini bu matrise göre yazdırırsınız. Zamana eğitim materyalinde ihale/RFP yanıt süresinin yaklaşık %60-70 kısalabileceği varsayılır; bu tahmini bir orandır, kendi sürenizi ölçün. Tarihleri, teminat ve yeterlik koşullarını, belge geçerlilik sürelerini Claude'dan değil şartnameden ve EKAP'tan doğrulayın; teklif bedeli ve maliyet kalemlerini yapıştırırken şirket verisi kurallarınıza uyun. İhale mevzuatı ayrıntıları için hukuk ya da ihale uzmanınıza danışın.
 
 ## Bölüm 2: Araştırma ve İstihbarat
 
@@ -58,7 +58,7 @@ Bu sayfa, satış ekibinin Claude ile en çok zaman kazandığı yerleri ve bu d
 
 **Kaybedilen anlaşma dokümantasyonu.** Kaybı kurumsal öğrenmeye çevirmek: ne oldu, gelecekte ne yapılmalı, benzer prospect'lerde neye dikkat edilmeli.
 
-**Referans isteği yazımı.** Memnun müşterilerden doğal ve yanıt alan bir tanıştırma istemek. Çoğu satışçı bunu yapamaz, çünkü nasıl söyleyeceğini bilmez.
+**Referans isteği yazımı.** Memnun müşterilerden doğal ve yanıt alan bir tanıştırma istemek. Bu istek sık ertelenir, çünkü nasıl söyleneceği belli olmaz.
 
 **Account ve territory mapping.** Hesaplarınız ve bölgeniz hakkında bildiklerinizi yapılandırmak: boş alanlar (white space), penetrasyon derinliği, risk yoğunluğu, büyüme fırsatları. Hepsi yaşayan bir referans belgesi olarak tutulur.
 
@@ -117,10 +117,10 @@ Bu departman için önerilen prompt koleksiyonu:
 
 Yeniden tasarlanabilecek iş akışları:
 
-- **Teklif üretim süreci**: bilgi toplama → taslak → inceleme → teslim, her adım Claude destekli
-- **Toplantı hazırlık rutini**: her toplantıdan önce otomatik brifing üretimi
-- **Tender yanıt iş akışı**: gereksinim analizi → bölüm yazımı → tutarlılık kontrolü
-- **Aylık hesap incelemesi**: hesap bazlı sağlık durumu + önerilen aksiyonlar
+- Teklif üretim süreci: bilgi toplama → taslak → inceleme → teslim, her adım Claude destekli
+- Toplantı hazırlık rutini: her toplantıdan önce otomatik brifing üretimi
+- Tender yanıt iş akışı: gereksinim analizi → bölüm yazımı → tutarlılık kontrolü
+- Aylık hesap incelemesi: hesap bazlı sağlık durumu + önerilen aksiyonlar
 
 ## Gerçek Örnek: Takılan Anlaşma Teşhisi
 
@@ -141,7 +141,7 @@ Toplam süre: yaklaşık 15 dakika (örnek senaryo). Geleneksel yaklaşımda ("d
 
 ## Pratik Refleks: Hesap Geçmişini Biriktirin
 
-Görüşme öncesi brief ile görüşme sonrası debrief çıktılarını her hesap için **özel bir klasörde** biriktirin (örn. `workspace/hesaplar/XYZ-Gida/`). Zamanla bu klasör o hesabın yaşayan hafızası olur: her yeni görüşme öncesi Claude geçmiş brief ve debrief'leri okuyup bağlamı toparlar. İkinci görüşmeye "sıfırdan" değil, tüm geçmişle girersiniz.
+Görüşme öncesi brief ile görüşme sonrası debrief çıktılarını her hesap için ayrı bir klasörde biriktirin (örn. `workspace/hesaplar/XYZ-Gida/`). Zamanla bu klasör o hesabın yaşayan hafızası olur: her yeni görüşme öncesi Claude geçmiş brief ve debrief'leri okuyup bağlamı toparlar. İkinci görüşmeye "sıfırdan" değil, tüm geçmişle girersiniz.
 
 Aynı yaklaşım satışın ötesinde de işe yarar: müşteri başarısı, iş ortaklıkları, işe alım, kurumsal geliştirme ve kişi/şirket araştırması gereken her rol için.
 
@@ -151,7 +151,7 @@ Aynı yaklaşım satışın ötesinde de işe yarar: müşteri başarısı, iş 
 - **Claude'un müşteri ve pazar hakkında söylediğini doğrulamamak.** Bilmediği şeyi uydurabilir, özellikle pazar verilerinde. Rakam ve iddiayı toplantıya girmeden kaynağından kontrol edin.
 - **Kütüphaneyi kurup bırakmak.** 5 prompt eklendiğinde "yine de elle yazarım" refleksi doğaldır; yatırımın karşılığı genellikle birkaç hafta sonra görünür, vazgeçmeyin. *(Zamana eğitim materyali)*
 
-Satış ekibinin tamamı aynı alışkanlığı kazanmadıkça kazanım bireysel kalır; ekibinizle bunu birlikte oturtmak için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programına bakabilirsiniz. Müşteri sunumu taslağı için [Claude ile Sunum](/wiki/gorevler/claude-ile-sunum/) rehberi işinize yarar.
+Satış ekibinin tamamı aynı alışkanlığı kazanmadıkça kazanım bireysel kalır; ekibinizle bunu birlikte oturtmak için [kurumsal yapay zeka eğitimimize](/programlar/kurumsal/) bakın. Müşteri sunumu taslağı için [Claude ile Sunum](/wiki/gorevler/claude-ile-sunum/) rehberi işinize yarar.
 
 ## İlgili Sayfalar
 

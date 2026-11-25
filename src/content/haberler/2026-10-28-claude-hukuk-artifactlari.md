@@ -12,7 +12,7 @@ tags: ["özellik", "hukuk", "artifact", "kurumsal"]
 
 ## Kısaca
 
-Anthropic, mayıs ayında duyurduğu Claude for Legal paketine hazır "artifact" galerisi ekledi. Artifact, Claude içinde açılan, kullanıp uyarlayabileceğiniz ve paylaşabileceğiniz etkileşimli araçtır (takip tablosu, pano gibi). Galeride sözleşme tablosu, atıf kontrolü, mevzuat takibi ve sapma panosu gibi araçlar var. Anthropic süreci şöyle tarif ediyor: siz belgelerinizi ve kaynaklarınızı getirirsiniz, Claude ilk turu yapar, avukat sonucu kendi muhakemesiyle değerlendirir.
+Anthropic, mayıs ayında duyurduğu Claude for Legal paketine hazır "artifact" galerisi ekledi. Artifact, Claude içinde açılan etkileşimli bir araçtır (takip tablosu, pano gibi); onu uyarlayıp paylaşabilirsiniz. Galeride sözleşme tablosu, atıf kontrolü, mevzuat takibi ve sapma panosu gibi araçlar var. Anthropic süreci şöyle tarif ediyor: siz belgelerinizi ve kaynaklarınızı getirirsiniz, Claude ilk turu yapar, avukat sonucu kendi muhakemesiyle değerlendirir.
 
 ## Sizin için ne değişiyor?
 
@@ -37,7 +37,7 @@ Makale ürünü "Claude Enterprise" olarak etiketliyor ve plan ya da fiyat liste
 
 ## Bilmeniz gerekenler
 
-- **Türk hukuku:** Resmi kaynakta Türk hukuku ve Türkçe sözleşme desteği yazmıyor. Playbook örnekleri ABD eyaletleri (Delaware, New York, California) üzerine kurulu, bazı araçlar da yer bağımlı (New York, Washington D.C.). Türkiye'de kullanmak için kendi playbook'unuzu ve mevzuat kaynaklarınızı sizin tanımlamanız gerekir.
+- **Türk hukuku:** Resmi kaynakta Türk hukuku ve Türkçe sözleşme desteği yazmıyor. Playbook örnekleri ABD eyaletleri (Delaware, New York, California) üzerine kurulu, bazı araçlar da yer bağımlı (New York, Washington D.C.). Türkiye'de kullanmak için kendi playbook'unuzu ve mevzuat kaynaklarınızı tanımlamanız gerekir.
 - **Her çıktı avukat kontrolünden geçer:** Araçlar ilk tur taslak üretir, hukuki görüş değildir. Dosyalama ya da gönderme öncesi insan onayı gerekir.
 - **Müvekkil verisi:** Müvekkil bilgisi için kişisel hesap kullanmayın, Team ya da Enterprise tercih edin. İçerikle model eğitilmemesi varsayılan olarak yalnız bu iki planda söz konusu. Meslek sırrı ve KVKK açısından [gizlilik ve KVKK rehberine](/wiki/temeller/gizlilik-kvkk/) bakın.
 - **Erişim adaleti araçları** (kira defteri, sicil temizleme) ABD yerel hukukuna dayanıyor, Türkiye için karşılığı yok.

@@ -16,7 +16,7 @@ Claude Cowork'ün masaüstü uygulamasına yerleşik bir tarayıcı eklendi. Bu 
 
 ## Sizin için ne değişiyor?
 
-En önemli fark gizlilik. Kaynak yazının ifadesiyle Claude sizin sekmelerinizi, yer imlerinizi ve şifrelerinizi görmüyor. Yani "Claude web'de çalışsın ama kişisel hesaplarıma girmesin" diyorsanız bu seçenek tam olarak bunun için.
+En önemli fark gizlilik. Kaynak yazının ifadesiyle Claude sizin sekmelerinizi, yer imlerinizi ve şifrelerinizi görmüyor. "Claude web'de çalışsın ama kişisel hesaplarıma girmesin" diyorsanız bu seçenek tam size göre.
 
 Gerekirse Chrome, Edge veya Firefox'tan belirli oturum açma bilgilerini kendiniz içe aktarabiliyorsunuz. Bankacılık, e-posta ve tek oturum açma (SSO) siteleri varsayılan olarak dışarıda tutuluyor.
 

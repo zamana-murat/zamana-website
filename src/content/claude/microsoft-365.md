@@ -17,19 +17,19 @@ related:
   - { label: "Claude vs Copilot (wiki)", href: "/wiki/temeller/claude-vs-copilot/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 51
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Çoğu iş gün boyu aynı birkaç uygulamada yapılır: bir Excel dosyası, bir sunum, bir Word belgesi, gelen kutusu. Claude for Microsoft 365, Claude'u bu uygulamaların **içine** yan panel olarak yerleştirir. Dosyayı sohbete kopyalayıp sonucu geri yapıştırmanız gerekmez.
+Ofis işi gün boyu aynı birkaç uygulamada geçer: bir Excel dosyası, bir sunum, bir Word belgesi, gelen kutusu. Claude for Microsoft 365, Claude'u bu uygulamaların içine yan panel olarak yerleştirir. Dosyayı sohbete kopyalayıp sonucu geri yapıştırmanız gerekmez.
 
 - **Excel:** Herhangi bir hücre hakkında soru sorarsınız, varsayımları formülleri bozmadan güncellersiniz, sıfırdan model kurdurursunuz.
 - **PowerPoint:** Slaytları kendi şablonunuzda hazırlar, seçtiğiniz bölümü düzenler, yerel (native) grafik ve diyagram üretir.
 - **Word:** Değişiklikleri izleme (tracked changes) ile düzenler, yorum dizilerine yanıt verir, içeriği şirketinizin stillerine göre günceller.
 - **Outlook (beta):** Gelen kutusunu tek istekle ayıklar, yanıt taslakları hazırlar ve takvimlerde ortak boşluk bulur.
 
-En önemli fark, **tek bir konuşmanın uygulamalar arasında sürmesidir.** Outlook'ta başladığınız bağlam Word'e, oradan Excel'e ve PowerPoint'e taşınır. Birini değiştirdiğinizde açık diğer dosyalar yetişir. Panele bir PDF ya da belge bıraktığınızda Claude onu açık dosyanızla birlikte okur ve diğer uygulamalarda da kullanır. İşi doğru yaptığınız bir süreci skill olarak kaydedersiniz; ekip aynısını dört uygulamada kullanır. Konuşarak (dikte) yazmak ve connector'lardan veri çekmek de panelden yapılır.
+En önemli fark, tek bir konuşmanın uygulamalar arasında sürmesidir. Outlook'ta başladığınız bağlam Word'e, oradan Excel'e ve PowerPoint'e taşınır. Birini değiştirdiğinizde açık diğer dosyalar yetişir. Panele bir PDF ya da belge bıraktığınızda Claude onu açık dosyanızla birlikte okur ve diğer uygulamalarda da kullanır. İşi doğru yaptığınız bir süreci skill olarak kaydedersiniz; ekip aynısını dört uygulamada kullanır. Konuşarak (dikte) yazmak ve connector'lardan veri çekmek de panelden yapılır.
 
 ## Türk şirketinde ne işe yarar?
 
@@ -48,7 +48,7 @@ En önemli fark, **tek bir konuşmanın uygulamalar arasında sürmesidir.** Out
 3. Claude hesabınızla giriş yapın. Bulut sağlayıcınız üzerinden bağlanmak istiyorsanız, Microsoft Foundry, Amazon Bedrock ya da Google Cloud'un Gemini Enterprise Agent Platform'u (eski adı Vertex AI) üzerinden de bağlanabilirsiniz.
 4. Önce kendi şablonlarınız üzerinde küçük bir iş deneyin: bir slayt, bir bölüm, bir tablo.
 
-Güvenlik tasarımı şöyle: her düzenleme gözden geçirilebilir. Word'de değişiklikleri izleme, Excel'de vurgulanan hücreler, Outlook'ta gönderilmeyi bekleyen taslaklar. Siz onaylamadan hiçbir şey gönderilmez ya da kaydedilmez. Claude e-postayı sizin görmeden göndermez; taslak ve takvim daveti Outlook'un normal yazma penceresinde sizi bekler.
+Güvenlik tasarımı şöyle: her düzenleme gözden geçirilebilir. Word'de değişiklikleri izleme, Excel'de vurgulanan hücreler, Outlook'ta gönderilmeyi bekleyen taslaklar. Siz onaylamadan hiçbir şey gönderilmez ya da kaydedilmez. Taslak ve takvim daveti Outlook'un normal yazma penceresinde sizi bekler.
 
 ## Hangi planda, nelere dikkat?
 
@@ -58,6 +58,6 @@ Güvenlik tasarımı şöyle: her düzenleme gözden geçirilebilir. Word'de de�
 
 **Excel'in Türkçe sürümü.** Türkçe Excel'de formül adları ve ayraçlar farklıdır. Kaynakta bu konuda bir açıklama yok; üretilen formülleri kendi sürümünüzde mutlaka deneyin.
 
-**Veri ve KVKK.** Açık dosyanızın içeriği Claude'a gider. Müşteri ya da çalışan verisi içeren dosyalar için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasını okuyun. Türkiye'de Anthropic ofisi ya da temsilcisi yoktur ([Türkiye'de Claude](/wiki/temeller/turkiyede-claude/)); ödeme USD ile yapılır. Kurumsal tarafta bulut sağlayıcı üzerinden bağlanma seçeneği, veri yönetişimi için BT ekibinizle konuşmaya değer bir yoldur.
+**Veri ve KVKK.** Açık dosyanızın içeriği Claude'a gider. Müşteri ya da çalışan verisi içeren dosyalar için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasını okuyun. Türkiye'de Anthropic ofisi ya da temsilcisi yoktur ([Türkiye'de Claude](/wiki/temeller/turkiyede-claude/)); ödeme USD ile yapılır. Kurumsal tarafta bulut sağlayıcı üzerinden bağlanma seçeneği, veri yönetişimi için bunu BT ekibinizle konuşun.
 
 Zamana'nın programları, ekibinizin bu araçları günlük işe oturtması içindir; Claude Code ya da API öğretmeyiz. [Programlarımıza](/programlar/) bakabilirsiniz.

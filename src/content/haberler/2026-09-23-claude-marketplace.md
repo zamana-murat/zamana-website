@@ -12,7 +12,7 @@ tags: ["marketplace", "eklenti", "mcp", "kurumsal"]
 
 ## Kısaca
 
-Anthropic, Claude Marketplace'i 23 Eylül 2026'da başlattı. Pazar yeri üç şeyi bir araya getiriyor: Claude'u başka araçlara bağlayan bağlayıcılar (connector) ve eklentiler, Claude ile çalışan ajanlar ve yazılım ürünleri, ve kurulum yapan danışmanlık ortakları.
+Anthropic, Claude Marketplace'i 23 Eylül 2026'da başlattı. Pazar yeri Claude'u başka araçlara bağlayan bağlayıcıları (connector) ve eklentileri, Claude ile çalışan ajanları ve yazılım ürünlerini, kurulum yapan danışmanlık ortaklarını tek yerde topluyor.
 
 ## Sizin için ne değişiyor?
 
@@ -20,14 +20,14 @@ Anthropic, Claude Marketplace'i 23 Eylül 2026'da başlattı. Pazar yeri üç ş
 
 - Atlassian, Google, Microsoft, Notion, Salesforce gibi firmalardan 2.000'den fazla connector ve eklenti var.
 - CrowdStrike, Cursor, Harvey, Legora, Lovable ve Snowflake gibi şirketlerin Claude tabanlı ajanları ve ürünleri satın alınabiliyor.
-- Anthropic ile yaptığınız taahhütlü harcamanın bir kısmını bu üçüncü taraf çözümlere ayırmak mümkün. Bu, büyük sözleşmesi olan kurumlar için bütçe açısından anlamlı.
-- Büyük çaplı kurulum ve danışmanlık için Claude Partner Network'teki hizmet ortaklarına bağlanılıyor.
+- Anthropic ile yaptığınız taahhütlü harcamanın bir kısmını bu üçüncü taraf çözümlere ayırmak mümkün. Büyük sözleşmesi olan kurumların işine yarayabilir.
+- Büyük çaplı kurulum ve danışmanlık için Claude Partner Network'teki hizmet ortaklarına ulaşabiliyorsunuz.
 
 Duyuruda öne çıkan örnekler: Atlassian (Confluence ve Jira üzerinden ekip bilgi grafiği), CrowdStrike (siber güvenlik), Hebbia (yatırım ve finans analizi), Legora (hukuk teknolojisi), Notion, Salesforce (CRM ve Slack) ve Snowflake (veri yönetişimi). Müşteri örneği olarak CodeRabbit, Power Digital ve ThoughtSpot'un Snowflake ve Vercel altyapısını bu yoldan kullandığı belirtiliyor.
 
 ## Nasıl denersiniz?
 
-Pazar yeri açık; claude.com/marketplace adresinden gözatabilirsiniz. Bir connector'ı kurmak için çoğu zaman hesabınızda yetkinizin olması ve yönetici onayı gerekebilir. Şirket olarak liste eklemek isteyenler için üç yol var: MCP (Model Context Protocol, Claude'u dış araçlara bağlayan açık standart) ve Agent Skills ile connector ya da eklenti yapmak, Claude tabanlı bir ürünü listeletmek için başvurmak veya Claude Partner Network'e hizmet ortağı olarak katılmak.
+Pazar yeri açık; claude.com/marketplace adresinden gözatabilirsiniz. Bir connector'ı kurmak için çoğu zaman hesabınızda yetkinizin olması ve yönetici onayı gerekebilir. Şirket olarak listeye girmek isterseniz yollar şunlar: MCP (Model Context Protocol, Claude'u dış araçlara bağlayan açık standart) ve Agent Skills ile connector ya da eklenti yapmak, Claude tabanlı bir ürünü listeletmek için başvurmak veya Claude Partner Network'e hizmet ortağı olarak katılmak.
 
 ## Bilmeniz gerekenler
 

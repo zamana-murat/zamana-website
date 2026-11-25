@@ -6,16 +6,16 @@ tags:
   - temeller
   - sss
   - faq
-lastUpdated: "2026-11-18"
+lastUpdated: "2026-11-26"
 ---
 
-Claude'u kullanmayı düşünenlerden en sık gelen sorular ve net cevaplar. Hem kendiniz için okuyabilirsiniz, hem de şirket içinde Claude'u savunurken kaynak olarak kullanabilirsiniz.
+Claude'u kullanmayı düşünenlerden en sık gelen sorular ve cevapları. Kendiniz için okuyabilir, şirket içinde Claude'u savunurken kaynak olarak kullanabilirsiniz.
 
 <div class="wiki-admonition wiki-admonition--abstract">
   <div class="wiki-admonition__title">Özet</div>
   <div class="wiki-admonition__body" markdown>
 
-Claude bulut tabanlı bir yapay zeka asistanıdır. Team ve Enterprise planlarında verileriniz varsayılan olarak **model eğitiminde kullanılmaz** (sözleşme güvencesi). KVKK uyumu doğru plan, DPA, şirket politikası ve (kişisel veri girilecekse) KVKK m.9 yurt dışı aktarım dayanağıyla sağlanır. **Bireysel maliyet** Pro $20/ay veya Max $100, Ultra $200/ay; yeni başlayanlara ilk ay Max (eski adı Max 5x) önerilir (zorunlu değil). Ekip maliyeti örneği [Claude Planları](/wiki/temeller/planlar/) sayfasındadır. İş kullanımı için varsayılan model **Sonnet**'tir. **Türkçe çıktı kalitesi** profesyonel düzeydedir. Çalışan adaptasyonunda somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
+Claude bulut tabanlı bir yapay zeka asistanıdır. Team ve Enterprise planlarında verileriniz varsayılan olarak **model eğitiminde kullanılmaz** (sözleşme güvencesi). KVKK uyumu doğru plan, DPA, şirket politikası ve (kişisel veri girilecekse) KVKK m.9 yurt dışı aktarım dayanağıyla sağlanır. Bireysel maliyet Pro $20/ay veya Max $100, Ultra $200/ay; yeni başlayanlara ilk ay Max (eski adı Max 5x) önerilir (zorunlu değil). Ekip maliyeti örneği [Claude Planları](/wiki/temeller/planlar/) sayfasındadır. İş kullanımı için varsayılan model **Sonnet**'tir. Türkçe çıktı kalitesi profesyonel düzeydedir. Çalışan adaptasyonunda somut iş üzerinden eğitim direnci kırar; CLAUDE.md ve prompt kütüphanesi şirket mülkiyetinde kalır.
 
   </div>
 </div>
@@ -104,7 +104,7 @@ Bireysel başlangıç için ilk ay **Max** önerilir (zorunlu değil), sonrasın
 
 ### Çalışanlarım Claude'u kullanmak istemezse?
 
-Direnç doğaldır ve beklenir. Çözüm: her çalışanın **kendi gerçek işi üzerinden** Claude'la ilk gerçek çıktıyı üretmesi. "Buna neden ihtiyacım var?" sorusu o an cevaplanır, soyut değil somut.
+Direnç doğaldır ve beklenir. Çözüm: her çalışanın **kendi gerçek işi üzerinden** Claude'la ilk gerçek çıktıyı üretmesi. "Buna neden ihtiyacım var?" sorusunun cevabı o an somut olarak görülür.
 
 ### Yaşça büyük çalışanlarım teknolojiden çekiniyorsa?
 
@@ -127,9 +127,9 @@ Bu gerçek bir risk. [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) tam bunu he
 Anthropic dört model sunar ve her birinin kendi kullanım senaryosu vardır:
 
 - **Haiku 5.5:** En hızlı ve hafif (güncel sürüm API'de Haiku 5.5, Haiku 4.5 legacy). Basit sınıflandırma, kısa yanıt, otomasyon arka planı için uygundur; derin akıl yürütme gerektiren işlerde yetersiz kalır.
-- **Sonnet 5.5:** Dengeli; hız ve yetkinlik arasındaki en iyi nokta. Kurumsal günlük işin büyük çoğunluğunda doğru tercihtir: sözleşme analizi, rapor yazımı, Türkçe iş yazışması, kod inceleme, doküman özetleme, Cowork iş akışları.
+- **Sonnet 5.5:** Dengeli; hız ve yetkinlik arasındaki en iyi nokta. Kurumsal günlük işte genellikle doğru tercihtir: sözleşme analizi, rapor yazımı, Türkçe iş yazışması, kod inceleme, doküman özetleme, Cowork iş akışları.
 - **Opus 5.5:** Daha güçlü ve daha pahalı. Çok derin araştırma, karmaşık akıl yürütme, ileri kod üretimi ve ajan işleri gibi ağır işler için ayırın.
-- **Fable 5.1:** En güçlü genel model; erişimi plana göre değişir. Max, Ultra ve Team Premium'da plana dahil (haftalık limitin en fazla yarısına kadar), Pro ve Team Standard'da yalnız kullanım kredisiyle, Free'de yok ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
+- **Fable 5.2:** En güçlü genel model; erişimi plana göre değişir. Max, Ultra ve Team Premium'da plana dahil (haftalık limitin en fazla yarısına kadar), Pro ve Team Standard'da yalnız kullanım kredisiyle, Free'de yok ([Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/)).
 
 Model seçimine değil çıktı kalitesine (prompt, bağlam, CLAUDE.md) enerji harcayın; Sonnet doğru kurulduğunda çoğu işte yeter. [Modeller detay](/wiki/temeller/modeller/).
 
@@ -137,7 +137,7 @@ Model seçimine değil çıktı kalitesine (prompt, bağlam, CLAUDE.md) enerji h
 
 **Kısa cevap: Evet, profesyonel düzeyde. Resmi yazışma, teknik terminoloji, hukuk dili ve iş kültürü nüansları doğru yakalanır.**
 
-Güncel modeller (Sonnet 5.5, Opus 5.5, Fable 5.1) Türkçe çıktıda üst seviyededir. Test edilen kullanım alanları:
+Güncel modeller (Sonnet 5.5, Opus 5.5, Fable 5.2) Türkçe çıktıda üst seviyededir. Test edilen kullanım alanları:
 
 - **Resmi yazışma:** KDV iadesi başvurusu, SGK yazışmaları, KVKK Kurumu bildirimi, vergi dairesi
 - **Hukuk dili:** Sözleşme maddesi taslağı, ihtarname, dilekçe
@@ -160,7 +160,7 @@ Model, statik bir "bilgi kesim tarihiyle" çalışır (güncel modellerde Hazira
 
 ### Claude kod yazabilir mi?
 
-**Evet.** İş profesyoneli için değerli olan kısım şudur: "Bir PowerShell script'i yaz, şunu otomatize et" diyebilirsiniz. Çalışan kod öğrenmez, Claude script'i üretir ve çalışan sonucu doğrular. [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/) sayfasında detay.
+**Evet.** İş profesyoneli için işe yarayan kullanım şu: "Bir PowerShell script'i yaz, şunu otomatize et" diyebilirsiniz. Çalışan kod öğrenmez, Claude script'i üretir ve çalışan sonucu doğrular. [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/) sayfasında detay.
 
 ### Claude bilgisayarımı kontrol edebilir mi?
 
@@ -191,7 +191,7 @@ ChatGPT (OpenAI) ve Claude (Anthropic) birbirinin doğrudan rakibidir. Tüketici
 
 **ChatGPT'nin üstün olduğu alanlar:** Yaratıcı yazım hızı, görsel üretim (Claude görsel üretmez), eklenti ekosisteminin genişliği, kod yorumlayıcı (Code Interpreter) olgunluğu, ses arayüzü kalitesi.
 
-**Karar özeti:** Yaratıcı içerik ağırlıklıysa ChatGPT yetebilir; sözleşme, rapor ve uzun doküman ağırlıklıysa Claude öne geçer. Çoğu kurumsal müşteri ikisini birlikte kullanır, departmana göre seçer. Detaylı karşılaştırma: [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/). Geçmeye karar verirseniz tercihlerinizi ve hafızanızı tek kopyala-yapıştırla taşımak için [ChatGPT'den Claude'a geçiş](/claude/gecis/) sayfasına bakın.
+**Karar özeti:** Yaratıcı içerik ağırlıklıysa ChatGPT yetebilir; sözleşme, rapor ve uzun doküman ağırlıklıysa Claude öne geçer. İkisini birlikte kullanıp departmana göre seçen kurumlar var. Detaylı karşılaştırma: [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/). Geçmeye karar verirseniz tercihlerinizi ve hafızanızı tek kopyala-yapıştırla taşımak için [ChatGPT'den Claude'a geçiş](/claude/gecis/) sayfasına bakın.
 
 ### Hem ChatGPT hem Claude kullanabilir miyim?
 

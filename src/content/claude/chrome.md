@@ -17,7 +17,7 @@ related:
   - { label: "MCP Güvenliği (wiki)", href: "/wiki/mcp/guvenlik/" }
   - { label: "Claude in Chrome genel kullanıma açıldı (haber)", href: "/haberler/2026-08-26-claude-in-chrome-genel-kullanima-acildi/" }
 order: 50
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -66,4 +66,4 @@ Claude Cowork'e yerleşik bir tarayıcı da geldi (masaüstünde Pro, Max, Ultra
 
 **Beklenti.** Türkçe arayüzlü sitelerde çalışıp çalışmadığı konusunda Anthropic'in ayrı bir belgesi yok; kendi portallarınızda küçük bir deneme yapıp sonucu kontrol edin.
 
-Zamana'nın programları iş kullanımına odaklıdır; ekibinizin bu tür araçları günlük işe oturtması için [programlarımıza](/programlar/) göz atabilirsiniz.
+Zamana'nın programları iş kullanıcıları içindir. Ekibinizin bu tür araçları günlük işe oturtmasını istiyorsanız [programlarımıza](/programlar/) göz atabilirsiniz.

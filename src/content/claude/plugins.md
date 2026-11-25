@@ -15,12 +15,12 @@ related:
   - { label: "Cowork Modu (wiki)", href: "/wiki/araclar/cowork-modu/" }
   - { label: "Hukuk departmanı için Claude (wiki)", href: "/wiki/departmanlar/hukuk/" }
 order: 9
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Üç kavram sık karıştırılır, kısaca ayıralım:
+Connector, skill ve plugin ayrı şeylerdir:
 
 - **Connector:** Claude'u bir uygulamaya bağlar (Gmail, Drive, Slack). Ayrıntı [Connectors sayfasında](/claude/connectors/).
 - **Skill:** Claude'a bir işin nasıl yapılacağını öğreten talimat klasörüdür. Ayrıntı [Skills sayfasında](/claude/skills/).
@@ -28,7 +28,7 @@ lastUpdated: "2026-11-08"
 
 Anthropic'in sayfası bunu "araçları, skill'leri ve entegrasyonları tek tıkla kurulan paketler" diye anlatıyor. Plugin'ler Claude Code ve Cowork için hazırlanıyor. Cowork, Claude'un dosyalarınızla ve araçlarınızla çalıştığı, bilgisayar başında bir iş arkadaşı gibi görev üstlenen çalışma biçimidir; ayrıntısı [Cowork sayfasında](/claude/cowork/).
 
-Marketplace'te Kasım 2026'da 529 plugin listeleniyor. Dikkat: listenin başındakilerin çoğu yazılım geliştiriciler içindir (örneğin kod inceleme, tarayıcı testi, GitHub, Vercel, dil sunucuları). İş kullanıcısı için asıl ilgi çekici olan, Anthropic'in bilgi çalışanları için hazırladığı rol paketleridir.
+Marketplace'te Kasım 2026'da 529 plugin listeleniyor. Listenin başında kod inceleme, tarayıcı testi, GitHub, Vercel ve dil sunucuları gibi yazılım geliştiriciler için olanlar var. İş kullanıcısına ise Anthropic'in bilgi çalışanları için hazırladığı rol paketleri yarar.
 
 ## Türk şirketinde ne işe yarar?
 

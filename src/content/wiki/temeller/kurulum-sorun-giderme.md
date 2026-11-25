@@ -7,10 +7,10 @@ tags:
   - kurulum
   - sorun-giderme
   - claude-desktop
-lastUpdated: "2026-11-18"
+lastUpdated: "2026-11-26"
 ---
 
-Bu sayfa [İlk Kurulum](/wiki/temeller/ilk-kurulum/) rehberinin yardımcısıdır: kurulumdan önce bilgisayarınızı kontrol etmek, Linux kullanıyorsanız farkları görmek ve kurulumda takıldığınız yeri çözmek için. Kuruluma yeni başlıyorsanız önce İlk Kurulum sayfasındaki adımları izleyin, bir yerde takılırsanız buraya dönün.
+Kurulumdan önce bilgisayarınızı kontrol etmek, Linux kullanıyorsanız farkları görmek ve takıldığınız yeri çözmek için bu sayfaya bakın. Kuruluma yeni başlıyorsanız önce [İlk Kurulum](/wiki/temeller/ilk-kurulum/) adımlarını izleyin, bir yerde takılırsanız buraya dönün.
 
 ## Donanım Kontrolü
 
@@ -36,7 +36,7 @@ Başlamadan önce bilgisayarınız uygun mu kontrol edelim. Uygun değilse Claud
 - **Eski işlemci:** Çoklu [skill](/wiki/yetenekler/skills/) aynı anda çalıştırılırken bilgisayar zorlanır.
 - **VPN'li ofis ağı:** Kurumsal VPN bazen Claude trafiğini engeller. (IT ile konuşun.)
 
-**Donanım yetersizse:** Önce donanımı yükseltin, sonra kuruluma geçin. Kötü donanımda kurmaya çalışmak boşa zaman.
+**Donanım yetersizse:** Önce donanımı yükseltin, sonra kuruluma geçin. Yetersiz donanımda kurulum denemek zaman kaybıdır.
 
 ## Linux'ta Kurulum
 

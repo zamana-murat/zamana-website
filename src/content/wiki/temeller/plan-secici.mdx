@@ -7,7 +7,7 @@ tags:
   - planlar
   - hesaplayici
   - fiyat
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 import PlanSecici from '../../../components/wiki/PlanSecici.astro';
@@ -41,9 +41,9 @@ Araç beş cevabı basit bir kural zinciriyle birleştirir. Gizli bir puanlama y
 1. **Kullanım düzeyi.** Yoğunluk sorusu bir taban düzey verir: yeni başlayan Max (ilk ay önerisi), hafif ve orta kullanım Pro, yoğun kullanım Max, "limitime sık çarpıyorum" Ultra. Cowork, dosya düzenleme ve çok adımlı işler sık yapılacaksa düzey bir basamak yükselir, çünkü bu işler kotayı hızlı tüketir.
 2. **Bütçe tavanı.** Bütçe, düzeyi aşağı çeker. "Ücretsiz" Free, "yaklaşık 20 USD" en fazla Pro ya da Team Standard, "yaklaşık 100 USD" en fazla Max ya da Team Premium (yıllık ödeme) demektir. Tavan ihtiyacın altında kalırsa sonuç kartında bu açıkça yazılır; kota bitince usage credits ile devam edilebilir.
 3. **Ekip ve yönetim.** Tek kişi için bireysel planlar. İki kişi ve üzeri için merkezi fatura, SSO ve paylaşılan proje istiyorsanız Team; denetim kaydı, rol bazlı yetki ve uyum denetimi gerekiyorsa ve ekip 20 kişi ya da üzerindeyse Enterprise. Yönetim ihtiyacınız yoksa Team önerilmez.
-4. **Team içinde Standard ve Premium.** Düzey Max ve üzeriyse Premium, altındaysa Standard önerilir. Koltuk tipleri karıştırılabildiği için yoğun kullananlara Premium, diğerlerine Standard vermek çoğu ekip için daha ekonomiktir.
+4. **Team içinde Standard ve Premium.** Düzey Max ve üzeriyse Premium, altındaysa Standard önerilir. Koltuk tipleri karıştırılabildiği için yoğun kullananlara Premium, diğerlerine Standard vermek daha ekonomik olabilir.
 
-Bu araç bir **başlangıç noktasıdır**. Gerçek kullanımınızı iki hafta izlemeden büyük bir taahhüt vermeyin; kota davranışı için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/), Team ve Enterprise farkı için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfalarına bakın. Seçtiğiniz planın kendini ödeyip ödemediğini [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) ile sınayabilirsiniz.
+Bu araç bir başlangıç noktasıdır. Gerçek kullanımınızı iki hafta izlemeden büyük bir taahhüt vermeyin; kota davranışı için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/), Team ve Enterprise farkı için [Takım ve Admin](/wiki/temeller/takim-ve-admin/) sayfalarına bakın. Seçtiğiniz planın kendini ödeyip ödemediğini [ROI Hesaplayıcı](/wiki/temeller/roi-hesaplayici/) ile sınayabilirsiniz.
 
 ## TL karşılığı nasıl hesaplanıyor?
 
@@ -55,7 +55,7 @@ Aylık TL (KDV dahil) = Aylık TL (KDV hariç) × 1,20
 ```
 
 - **Kur:** varsayılan 40 TL/USD'dir ve bir **Ekim 2026 varsayımıdır**, o günün canlı kuru değildir. Kendi bankanızın kurunu yazarak güncelleyin.
-- **KDV:** Türkiye faturalama adresiyle ödemede %20 KDV eklendiği bildirilmektedir; ödeme ekranındaki toplam esastır. KDV mükellefi şirketlerde bu KDV çoğu zaman 2 No'lu beyanname ve indirimle net sıfıra yaklaşır, bu yüzden araç "KDV hariç" tutarı birincil, "KDV dahil" tutarı ikincil gösterir. Kesin uygulama için mali müşavirinize danışın.
+- **KDV:** Türkiye faturalama adresiyle ödemede %20 KDV eklendiği bildiriliyor; ödeme ekranındaki toplam esastır. KDV mükellefi şirketlerde bu KDV çoğu zaman 2 No'lu beyanname ve indirimle net sıfıra yaklaşır, bu yüzden araç "KDV hariç" tutarı birincil, "KDV dahil" tutarı ikincil gösterir. Kesin uygulama için mali müşavirinize danışın.
 - **Enterprise:** gösterilen tutar yalnız koltuk ücretinin alt sınırıdır; kullanım API fiyatıyla ayrıca faturalanır, bu yüzden toplam öngörülemez.
 - **Yıllık ödeme:** Pro ve Team'de yıllık seçenek aylık eşdeğeri düşürür; kutuda ayrıca gösterilir, TL karşılığı aylık ödeme üzerinden hesaplanır.
 

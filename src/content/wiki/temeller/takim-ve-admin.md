@@ -7,16 +7,16 @@ tags:
   - takim
   - admin
   - enterprise
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Bireysel Pro plan tek kişi içindir. Şirkette Claude'u 3, 6, 20 kişi kullanmaya başladığında işler farklılaşır**: fatura merkezileşir, kullanıcı yönetimi, denetim ve veri politikası ortak olur. Bunun için **Team** ve **Enterprise** planları var.
+Bireysel Pro plan tek kişi içindir. Şirkette Claude'u 3, 6 ya da 20 kişi kullanmaya başlayınca fatura merkezileşir, kullanıcı yönetimi, denetim ve veri politikası ortak olur. Bunun için **Team** ve **Enterprise** planları var.
 
-Bu sayfa Team ve Enterprise farkını, ne zaman geçilmeli ve admin panelinde neler olduğunu anlatır.
+Aşağıda Team ve Enterprise farkı, ne zaman geçilmesi gerektiği ve admin panelindekiler var.
 
 ## Plan Karşılaştırma: Bireysel mi, Takım mı?
 
-[Planlar](/wiki/temeller/planlar/) sayfasında her planın detayı var. Buradaki odak: **şirket olarak hangisini almalı?**
+[Planlar](/wiki/temeller/planlar/) sayfasında her planın detayı var. Burada soru, şirket olarak hangisini alacağınız.
 
 | Özellik | Pro × N kişi (bireysel) | Team | Enterprise |
 |---|---|---|---|
@@ -152,7 +152,7 @@ Team ve Enterprise planlarında **SAML 2.0** üzerinden SSO entegrasyonu var. Bu
 
 SCIM (System for Cross-domain Identity Management), kurumsal kimlik sistemindeki (Microsoft Entra ID, Okta) kullanıcı ekleme ve silme işlemlerinin Claude'a otomatik yansımasını sağlar. Yeni çalışan İK sistemine eklendiğinde otomatik Claude hesabı açılır; ayrılınca otomatik kapanır.
 
-Bu, kalabalık organizasyonlarda hayati bir özelliktir. SCIM/JIT hem Team'de hem Enterprise'ta mevcuttur.
+Kalabalık organizasyonlarda bu özellik yönetimi çok kolaylaştırır. SCIM/JIT hem Team'de hem Enterprise'ta mevcuttur.
 
 ## Audit Log
 

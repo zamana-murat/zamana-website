@@ -8,14 +8,14 @@ tags:
   - kucuk-isletme
   - nakit-akisi
   - otomasyon
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Bu sayfa bir departman değil, bir **senaryo**: satışı da pazarlamayı da muhasebeyi de tek başına yürüten **küçük işletme sahibi**. Diğer departman sayfaları tek bir role odaklanır; KOBİ sahibi hepsini aynı gün yapar. Claude'un en büyük kaldıraç sağladığı yer tam burasıdır, çünkü ayrı ekiplerin yaptığı işi tek kişiye sığdırır.
+Bu sayfa bir departmanı değil, bir senaryoyu anlatıyor: satışı da pazarlamayı da muhasebeyi de tek başına yürüten küçük işletme sahibini. Diğer departman sayfaları tek bir role bakar; KOBİ sahibi hepsini aynı gün yapar. Claude burada işe çok yarar, çünkü ayrı ekiplerin yaptığı işi tek kişiye sığdırmaya yardım eder.
 
 Anthropic bu profile özel bir paket de sunuyor: Eylül 2026'da genişleyen Claude for Small Business, 43 hazır iş akışı (Monday Brief, Proposal Builder, Close the Month gibi) ve 27 yeni entegrasyon içeriyor. Aşağıdaki akışların birçoğu bu paketin kapsadığı işlerle örtüşüyor. Paketin Türkiye'deki muhasebe yazılımlarıyla uyumu için aşağıdaki [Connector](/wiki/sozluk/#connector)'lar bölümündeki nota bakın. Ayrıntılar için [haberi okuyun](/haberler/2026-09-15-claude-for-small-business-genisledi/). Anthropic'in Cowork için hazırladığı eklenti deposunda da bir `small-business` klasörü bulunur ([knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)); hangi iş akışının Türkiye'de işe yaradığını denemeden varsaymayın.
 
-> **Pazarlık dışı çerçeve:** Hiçbir şey siz onaylamadan **gönderilmez, yayınlanmaz, ödenmez.** Claude taslak hazırlar ve önerir; göndermek, yayınlamak veya para hareketi yapmak her zaman sizin onayınızla olur. Vergi, hukuk ve finans gibi kritik kararlar ehliyetli danışmanınızdadır; Claude mali müşavirin ya da avukatın onayının yerine geçmez.
+> **Pazarlık dışı çerçeve:** Hiçbir şey siz onaylamadan gönderilmez, yayınlanmaz, ödenmez. Claude taslak hazırlar ve önerir; göndermek, yayınlamak veya para hareketi yapmak her zaman sizin onayınızla olur. Vergi, hukuk ve finans gibi kritik kararlar ehliyetli danışmanınızdadır; Claude mali müşavirin ya da avukatın onayının yerine geçmez.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -28,7 +28,7 @@ Anthropic bu profile özel bir paket de sunuyor: Eylül 2026'da genişleyen Clau
 
 ## Bölüm 1: Pazartesi Sabah Brifingi
 
-Dağınık bilgiyi (banka bakiyesi, gelen ödemeler, açık teklifler, takvim) **tek bir öncelik sayfasına** indirin. Claude bağlı kaynaklardan veriyi toplar ve bu haftanın **en acil üç işini** belirler.
+Dağınık bilgiyi (banka bakiyesi, gelen ödemeler, açık teklifler, takvim) tek bir öncelik sayfasına indirin. Claude bağlı kaynaklardan veriyi toplar ve bu haftanın en acil üç işini belirler.
 
 > *"Bağlı banka/ön muhasebe ve takvimimden bu sabahın brifingini hazırla: nakit pozisyonu, bu hafta gelmesi beklenen tahsilatlar, açık teklifler, bugünkü randevular. Sonunda bu haftaki en kritik 3 işi sırala."*
 
@@ -36,29 +36,29 @@ Dağınık bilgiyi (banka bakiyesi, gelen ödemeler, açık teklifler, takvim) *
 
 ## Bölüm 2: Kampanya Yönetimi
 
-Yavaş bir dönem yaklaşıyorsa Claude kampanya kurar: stratejiyi taslaklar, görseli üretir, müşteri listesini segmentler, gönderimi **onayınıza** hazırlar.
+Yavaş bir dönem yaklaşıyorsa Claude kampanya kurar: stratejiyi taslaklar, görseli üretir, müşteri listesini segmentler, gönderimi onayınıza hazırlar.
 
 - Satış verisinden durgun dönemi tespit eder
 - Promosyon fikri + mesaj taslağı üretir
 - Görseli Canva connector'ıyla, `canvas-design` [skill](/wiki/sozluk/#skill)'iyle ([Skills](/wiki/yetenekler/skills/)) ya da Free dahil tüm planlarda açık [Claude Design](/wiki/yetenekler/claude-design/) ile hazırlar
 - CRM'de müşteri listesini segmentler
-- Gönderimi hazırlar, **siz onaylayana kadar göndermez**
+- Gönderimi hazırlar, siz onaylayana kadar göndermez
 
 ## Bölüm 3: Ay Sonu Kapanış
 
-KOBİ sahibinin en sevmediği iş. Claude, ön muhasebe kayıtlarını banka ve tahsilat hareketleriyle karşılaştırır, **uyuşmayanları işaretler** ve mali müşavir için sade bir gelir-gider anlatısı çıkarır.
+KOBİ sahibinin en sevmediği iş. Claude, ön muhasebe kayıtlarını banka ve tahsilat hareketleriyle karşılaştırır, uyuşmayanları işaretler ve mali müşavir için sade bir gelir-gider anlatısı çıkarır.
 
 - Muhasebe ile ödeme/tahsilat mutabakatı
 - Tutmayan kalemleri işaretler (siz kontrol edersiniz)
 - Mali müşavire gidecek özet anlatıyı üretir
 
-> **Önemli:** Bu, mali müşavirin yerine geçmez. Claude ön hazırlığı yapar, **resmi beyan ve karar mali müşavirdedir.** Bkz: [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/), [Sınırlamalar](/wiki/temeller/sinirlamalar/).
+> Bu, mali müşavirin yerine geçmez. Claude ön hazırlığı yapar; resmi beyan ve karar mali müşavirdedir. Bkz: [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/), [Sınırlamalar](/wiki/temeller/sinirlamalar/).
 
 ## Bölüm 4: Tahsilat ve Nakit Akışı Takibi
 
 - Önümüzdeki 30 günün nakit akışını tahmin eder
 - Vadesi geçen faturaları çıkarır
-- Müşterinin ödeme geçmişine göre **kişiselleştirilmiş** hatırlatma taslakları yazar (kibar / net / son uyarı tonları)
+- Müşterinin ödeme geçmişine göre kişiselleştirilmiş hatırlatma taslakları yazar (kibar / net / son uyarı tonları)
 - Hiçbir hatırlatma siz onaylamadan gitmez
 
 ## Tipik Günlük / Haftalık Ritim
@@ -81,7 +81,7 @@ KOBİ sahibinin en sevmediği iş. Claude, ön muhasebe kayıtlarını banka ve 
 - `canvas-design`: sosyal medya ve kampanya görselleri
 
 **Connector'lar:**
-1. **Banka / ön muhasebe** (Paraşüt, Logo ve Mikro için resmî bir Claude connector'ı yoktur; özel connector ya da yazılımın REST API'si gerekir), nakit ve mutabakat. Çoğu işletme için pratik yol, dışa aktarılmış Excel/CSV dosyasıyla çalışmaktır. Hangi programda hangi yolun işlediği, Türkçe sayı ve tarih tuzakları ve ay sonu mutabakat örneği için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın.
+1. **Banka / ön muhasebe** (Paraşüt, Logo ve Mikro için resmî bir Claude connector'ı yoktur; özel connector ya da yazılımın REST API'si gerekir), nakit ve mutabakat. Çoğu zaman pratik yol, dışa aktarılmış Excel/CSV dosyasıyla çalışmaktır. Hangi programda hangi yolun işlediği, Türkçe sayı ve tarih tuzakları ve ay sonu mutabakat örneği için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın.
 2. **Gmail / Outlook**: müşteri yazışmaları, hatırlatmalar
 3. **Google Workspace / Microsoft 365**: belgeler
 4. (opsiyonel) **CRM / HubSpot**: müşteri listesi ve segment
@@ -97,7 +97,7 @@ Bir KOBİ sahibinin 3 müşterisinde vadesi geçmiş fatura var, ama takip edece
 
 **Adım 2:** Claude üç farklı tonda üç taslak üretir, her birini ilgili müşterinin geçmişine göre kalibre eder.
 
-**Adım 3:** Siz okur, gerekirse düzeltir, **onaylayıp** gönderirsiniz.
+**Adım 3:** Siz okur, gerekirse düzeltir, onaylayıp gönderirsiniz.
 
 Eskiden bu iş ya hiç yapılmıyordu ya da yarım saat üzülerek yazılıyordu.
 
@@ -105,10 +105,10 @@ Eskiden bu iş ya hiç yapılmıyordu ya da yarım saat üzülerek yazılıyordu
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Pazartesi brifingi**: tam otomatik, her hafta hazır
-- **Aylık kapanış ön hazırlığı**: mutabakat + mali müşavir özeti
-- **Tahsilat takibi**: haftalık otomatik geciken-fatura taraması + taslak hatırlatma
-- **Durgun dönem kampanyası**: tetik bazlı (satış düşünce öneri gelsin)
+- Pazartesi brifingi: tam otomatik, her hafta hazır
+- Aylık kapanış ön hazırlığı: mutabakat + mali müşavir özeti
+- Tahsilat takibi: haftalık otomatik geciken-fatura taraması + taslak hatırlatma
+- Durgun dönem kampanyası: tetik bazlı (satış düşünce öneri gelsin)
 
 Tek başınıza ya da küçük bir ekiple çalışıyorsanız [Bireysel Program](/programlar/bireysel/) 3 hafta boyunca kendi işiniz üzerinden ilerler; ekip büyüdüğünde [ekibinizle 3 aylık Claude programı](/programlar/kurumsal/) devreye girer.
 

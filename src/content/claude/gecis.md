@@ -16,14 +16,14 @@ related:
   - { label: "Projects (wiki)", href: "/wiki/araclar/projects/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 70
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Türkiye'de Claude'a gelen kullanıcıların çoğu ChatGPT'den geliyor. Aylarca "kısa yaz, resmi yaz, KDV'li fiyatları böyle göster" diye öğrettiğiniz bir asistanı bırakıp sıfırdan başlamak zor. Claude'un **bellek içe aktarma** özelliği tam bunun için var.
+Aylarca "kısa yaz, resmi yaz, KDV'li fiyatları böyle göster" diye öğrettiğiniz bir asistanı bırakıp sıfırdan başlamak zor. Claude'un **bellek içe aktarma** özelliği bunun için var.
 
-Mantığı basit. Claude size hazır bir istem (prompt) verir. Bu istemi şu an kullandığınız asistana (ChatGPT, Gemini ya da başka biri) yapıştırırsınız; o da sizin hakkınızda sakladığı her şeyi tek bir kod bloğunda listeler. Bu listeyi Claude'un bellek ayarlarına yapıştırırsınız. Claude bilgileri tek tek bellek kayıtları olarak saklar. Anthropic'in sayfası bunu "bir dakikadan kısa sürede" yapılabilir diye anlatıyor.
+Claude size hazır bir istem (prompt) verir. Bu istemi şu an kullandığınız asistana (ChatGPT, Gemini ya da başka biri) yapıştırırsınız; o da sizin hakkınızda sakladığı her şeyi tek bir kod bloğunda listeler. Bu listeyi Claude'un bellek ayarlarına yapıştırırsınız. Claude bilgileri tek tek bellek kayıtları olarak saklar. Anthropic'in sayfası bunu "bir dakikadan kısa sürede" yapılabilir diye anlatıyor.
 
 Hazır istem Claude'un sayfasında (claude.com/import-memory). Asistandan şunları istiyor: nasıl yanıt vermesini istediğinizi anlatan talimatlar (ton, biçim, "her zaman şunu yap", "asla şunu yapma"), kişisel bilgiler (ad, konum, iş, aile, ilgi alanları), projeler ve hedefler, kullandığınız araçlar, diller ve çerçeveler, davranışına yaptığınız düzeltmeler ve diğer saklı bağlam. Hepsini özetlemeden, sözcüğü sözcüğüne vermesini ve en sonda "listenin tamamı bu mu" diye doğrulamasını ister.
 

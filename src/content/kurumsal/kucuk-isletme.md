@@ -18,7 +18,7 @@ related:
   - { label: "Cowork", href: "/claude/cowork/" }
   - { label: "Plugins", href: "/claude/plugins/" }
 order: 165
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -90,4 +90,4 @@ Anthropic'in aktardığına göre bir peynir şirketi (Rebel Cheese) kargo fatur
 
 ## Zamana'nın notu
 
-Plugin hazır iş akışı verir, ama hangi akışın sizin işletmenizde işe yarayacağını ve verinin hangi programdan nasıl alınacağını kurmak işin asıl kısmı. 1-3 kişilik işletmelerde önce kilit kişinin, genelde işletme sahibinin, Claude'u kendi işine yerleştirmesini öneriyoruz: [Bireysel Program](/programlar/bireysel/). Daha büyük ekipler için: [Kurumsal Program](/programlar/kurumsal/).
+Plugin hazır iş akışı verir. Hangi akışın işletmenizde işe yarayacağını ve verinin hangi programdan nasıl alınacağını belirlemek ise ayrı bir iştir. 1-3 kişilik işletmelerde önce kilit kişinin, genelde işletme sahibinin, Claude'u kendi işine yerleştirmesini öneriyoruz: [Bireysel Program](/programlar/bireysel/). Daha büyük ekipler için: [Kurumsal Program](/programlar/kurumsal/).

@@ -8,10 +8,10 @@ tags:
   - procurement
   - rfp
   - pazarlik
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-> **Operasyondan farkı:** Operasyon **akışı** yönetir: malı A'dan B'ye zamanında getirmek. Satınalma ise **ilişkileri ve şartları** yönetir: kim tedarik eder, ne fiyata, hangi şartlarda. İkisinin kesiştiği yerler vardır ama iş farklıdır. Operasyon çalışanı süreci yürütür; satınalma çalışanı kimin yürüteceğini ve neyin tutulacağını tanımlar.
+> Operasyondan farkı: Operasyon akışı yönetir, yani malı A'dan B'ye zamanında getirir. Satınalma ilişkileri ve şartları yönetir: kim tedarik eder, ne fiyata, hangi şartlarda. İkisi bazı yerlerde kesişir ama iş farklıdır. Operasyon çalışanı süreci yürütür; satınalma çalışanı kimin yürüteceğini ve neyin tutulacağını belirler.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -26,7 +26,7 @@ lastUpdated: "2026-11-09"
 
 ### RFP ve RFQ Yazımı
 
-Yapılandırılmış, eksiksiz ve tutarlı belgelerle her tedarikçi aynı kalitede bir sorgu alır; değerlendirme **daha adil, süreç daha savunulabilir** olur.
+Yapılandırılmış, eksiksiz ve tutarlı belgelerle her tedarikçi aynı kalitede bir sorgu alır; değerlendirme daha adil, süreç daha savunulabilir olur.
 
 RFQ için Claude'a şunları verin: ne alınacak (ürün, miktar, teknik şartname), teslim yeri ve tarihi, ödeme koşulu, tekliflerin hangi biçimde ve hangi tarihe kadar istendiği, değerlendirme kriterleri. İstenen çıktı: bütün tedarikçilere gidecek tek bir RFQ metni ve tedarikçinin dolduracağı fiyat tablosu. Aynı şablon her seferinde kullanılırsa teklifler yan yana karşılaştırılabilir hâle gelir. [Operasyon](/wiki/departmanlar/operasyon/) ve [Üretim](/wiki/departmanlar/uretim-imalat/) sayfaları RFQ'yu kendi bağlamında anar; ayrıntı burada.
 
@@ -40,21 +40,21 @@ Birden fazla tedarikçi yanıtından, öneriyle birlikte yapılandırılmış bi
 
 ### Tedarikçi Yeterlilik Anketi
 
-Tedarikçilerin dolduracağı değerlendirme belgesi: kapsamlı, konuyla ilgili, **eski bir şablonun kopyası olmayan** bir belge.
+Tedarikçilerin dolduracağı değerlendirme belgesi: kategoriye göre hazırlanmış, eski bir şablonun kopyası olmayan bir belge.
 
 ### Pazar Kaynak Araştırması
 
-Ürün veya hizmet kategorisini Claude'a verip **tedarikçi seçeneklerini, tipik fiyat aralıklarını ve kaynak risklerini** haritalandırmasını istemek, sonra web search ile doğrulamak.
+Ürün veya hizmet kategorisini Claude'a verip tedarikçi seçeneklerini, tipik fiyat aralıklarını ve kaynak risklerini haritalandırmasını istemek, sonra web search ile doğrulamak.
 
 ## Bölüm 2: Pazarlık ve Sözleşme Desteği
 
 ### Pazarlık Hazırlığı
 
-Hedef fiyat, vazgeçme (yürüyüş) fiyatı, **BATNA** (en iyi alternatif), kilit ödün noktaları ve açılış pozisyonu: her tedarikçi toplantısından önce **tek sayfalık bir pazarlık brief'i**.
+Hedef fiyat, vazgeçme (yürüyüş) fiyatı, BATNA (en iyi alternatif), kilit ödün noktaları ve açılış pozisyonu: her tedarikçi toplantısından önce tek sayfalık bir pazarlık brief'i.
 
 ### Karşı Teklif Taslağı
 
-Tedarikçi teklif gönderir, çalışan kendi pozisyonunu ve kısıtlarını Claude'a verir; Claude **profesyonel ticari dilde bir karşı teklif taslağı** hazırlamaya yardım eder.
+Tedarikçi teklif gönderir, çalışan kendi pozisyonunu ve kısıtlarını Claude'a verir; Claude profesyonel ticari dilde bir karşı teklif taslağı hazırlamaya yardım eder.
 
 ### Fiyat Gerekçelendirmesi ve İtiraz
 
@@ -62,7 +62,7 @@ Tedarikçi fiyatları artırdığında Claude, yapılandırılmış bir itiraz t
 
 ### Satınalma Siparişi Şartları
 
-Şirketi koruyan standart PO şartları. Claude, çalışanın önemli bulduğu noktalardan taslak hazırlar; **hukuk inceler**.
+Şirketi koruyan standart PO şartları. Claude, çalışanın önemli bulduğu noktalardan taslak hazırlar; hukuk inceler.
 
 ### Tedarikçi Anlaşma Özetleri
 
@@ -72,17 +72,17 @@ Uzun bir tedarikçi sözleşmesini satınalma ekibi için tek sayfalık referans
 
 **Tedarikçi performans incelemesi.** Çeyreklik veya yıllık değerlendirme: teslim güvenilirliği, kalite, yanıt hızı, fiyat rekabetçiliği. Yapılandırılmış ve tüm vendor'lar arasında tutarlı.
 
-**Performans sorunları için vendor iletişimi.** Profesyonel, kararlı ve belgeli bir mesaj: ilişkiyi gereksiz yere yakmadan tedarikçiye **performansının kabul edilemez olduğunu söyleyen** bir dil.
+**Performans sorunları için vendor iletişimi.** Profesyonel, kararlı ve belgeli bir mesaj: ilişkiyi gereksiz yere yakmadan tedarikçiye performansının kabul edilemez olduğunu söyleyen bir dil.
 
-**Satınalma tasarruf raporlaması.** Pazarlık veya tedarikçi değişiklikleriyle elde edilen maliyet azaltmalarını dokümante etmek; satınalma ekibinin değeri yönetime **görünür** hale gelir.
+**Satınalma tasarruf raporlaması.** Pazarlık veya tedarikçi değişiklikleriyle elde edilen maliyet azaltmalarını dokümante etmek; satınalma ekibinin değeri yönetime görünür hale gelir.
 
 **Toplam sahip olma maliyeti (TCO) anlatısı.** Bir tedarikçiden diğerine geçişi değerlendirirken Claude tam maliyet analizini yapılandırır; yalnızca birim fiyat değil: freight, kalite kayıpları, ödeme koşulları, risk primi.
 
-**Satınalma politika dokümantasyonu.** Şirketin satın alma kuralları, onay eşikleri, tercih edilen tedarikçi listeleri, rekabetçi teklif gereksinimleri: **herkesin uyabileceği kadar net.**
+**Satınalma politika dokümantasyonu.** Şirketin satın alma kuralları, onay eşikleri, tercih edilen tedarikçi listeleri, rekabetçi teklif gereksinimleri: herkesin uyabileceği kadar net.
 
 ### Tek Kaynak Gerekçesi
 
-Bir şirket belirli bir tedarikçiden **rekabetçi teklif olmadan** satın almak zorunda kaldığında (tek tedarikçi, tescilli teknoloji, acil durum, ilişki bağımlılığı) bu karar dokümante edilmelidir. Claude, iç yönetişimi, denetim gereksinimlerini ve yönetim onayını karşılayan yapılandırılmış bir gerekçe yazar: olgusal, eksiksiz, savunulabilir.
+Bir şirket belirli bir tedarikçiden rekabetçi teklif olmadan satın almak zorunda kaldığında (tek tedarikçi, tescilli teknoloji, acil durum, ilişki bağımlılığı) bu karar dokümante edilmelidir. Claude, iç yönetişimi, denetim gereksinimlerini ve yönetim onayını karşılayan yapılandırılmış bir gerekçe yazar: olgusal, eksiksiz, savunulabilir.
 
 ### Tercih Edilen Tedarikçi Listesi Değişim Gerekçesi
 
@@ -122,9 +122,9 @@ Onaylı listeye tedarikçi eklerken veya listeden çıkarırken karar dokümante
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Kaynak bulma süreci**: ihtiyaç tespiti → tedarikçi seçimi → sözleşme, her adımda Claude destekli
-- **Tedarikçi performans inceleme döngüsü**: çeyreklik otomasyon
-- **Onaylı tedarikçi listesi yönetişimi**: her değişiklik dokümante
+- Kaynak bulma süreci: ihtiyaç tespiti → tedarikçi seçimi → sözleşme, her adımda Claude destekli
+- Tedarikçi performans inceleme döngüsü: çeyreklik otomasyon
+- Onaylı tedarikçi listesi yönetişimi: her değişiklik dokümante
 
 ## Sık Hatalar
 
@@ -147,7 +147,7 @@ Satınalma müdürü, ana tedarikçisiyle yıllık sözleşme yenileme görüşm
 
 **Süre:** pazarlık brief'i için elle 2-3 saat, Claude ile 30-40 dakika (kontrol dahil). Üç teklifli karşılaştırma matrisi için elle 1,5-2 saat, Claude ile 20-30 dakika. Ayda dört tedarikçi görüşmesi yapılıyorsa brief tarafında kabaca 6-10 saat fark eder. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 
-Satınalma ekibinde teklif karşılaştırması ve tedarikçi yazışması standart hale gelince kazanç büyür; ekip için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) seçeneği var. Karşılaştırma tabloları için [Claude ile Excel](/wiki/gorevler/claude-ile-excel/) rehberine bakın.
+Satınalma ekibinde teklif karşılaştırması ve tedarikçi yazışması standart hale gelince kazanç büyür; ekip için [kurumsal yapay zeka eğitimimiz](/programlar/kurumsal/) var. Karşılaştırma tabloları için [Claude ile Excel](/wiki/gorevler/claude-ile-excel/) rehberine bakın.
 
 ## İlgili Sayfalar
 

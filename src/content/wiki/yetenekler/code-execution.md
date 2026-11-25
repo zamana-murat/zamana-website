@@ -7,12 +7,10 @@ tags:
   - kod
   - sandbox
   - veri
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 **Claude, sohbet içinde gerçek kod yazar (veri işlerinde genellikle Python) ve onu kendi sandbox'ında çalıştırır.** Bu, dil modeli "tahminine" değil **gerçek hesaplamaya** dayanır. Excel açmadan veri analizi, grafik ve hesap tablosu çıktısını Claude'un içinden alabilirsiniz.
-
-Bu sayfa code execution yeteneğinin ne olduğunu, hangi senaryolarda iş profesyoneli için değer ürettiğini ve [Skills](/wiki/yetenekler/skills/) ile ilişkisini anlatır.
 
 ## "Code Execution": İş Kullanıcısı İçin Ne Demek?
 
@@ -54,8 +52,6 @@ Korelasyon, regresyon ve trend analizi gibi soyut kavramlar, kodla yapılan ger�
 PDF'teki tablo Excel'e geçmiyor. Claude code execution ile PDF'i okur, tabloları ayıklar, CSV'ye çevirir.
 
 ## Code Execution vs LLM Tahmini
-
-Önemli bir ayrım:
 
 | | LLM Tahmini | Code Execution |
 |---|---|---|
@@ -99,7 +95,7 @@ Claude code execution ile:
 
 ## Code Execution + Skills
 
-İki yetenek birlikte güç katlar:
+İki yetenek birlikte kullanılır:
 
 - **Code execution** → veri işleme, hesaplama, görselleştirme
 - **[Skills](/wiki/yetenekler/skills/)** → çıktıyı .docx / .xlsx / .pptx dosya olarak üretme

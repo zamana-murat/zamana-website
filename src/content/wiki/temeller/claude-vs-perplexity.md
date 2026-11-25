@@ -7,12 +7,12 @@ tags:
   - karsilastirma
   - perplexity
   - arastirma
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Perplexity bir cevap motorudur**: sorunuzu web'de arar, kaynaklarıyla birlikte kısa bir cevap yazar. **Claude ise bir çalışma asistanıdır**: belgenizi okur, yazı yazar, analiz yapar, dosya üretir ve gerektiğinde web'de de arar. İkisi aynı işi yapmıyor, bu yüzden "hangisi daha iyi" yerine "hangi iş için hangisi" diye sormak daha doğru.
+Perplexity bir cevap motorudur: sorunuzu web'de arar, kaynaklarıyla birlikte kısa bir cevap yazar. Claude ise bir çalışma asistanıdır: belgenizi okur, yazı yazar, analiz yapar, dosya üretir ve gerektiğinde web'de de arar. İkisi aynı işi yapmıyor, bu yüzden "hangisi daha iyi" yerine "hangi iş için hangisi" diye sormak daha doğru.
 
-Zamana Claude eğitimi verir. Bu sayfada Perplexity'nin gerçekten güçlü olduğu yeri saklamıyoruz.
+Zamana Claude eğitimi verir. Perplexity'nin güçlü olduğu yeri saklamıyoruz.
 
 ## Perplexity Nerede Güçlü?
 

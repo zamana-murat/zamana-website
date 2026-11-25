@@ -8,12 +8,12 @@ tags:
   - erp
   - entegrasyon
   - bt
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Kısa cevap: çoğu zaman evet, ama "bağlayalım" demeden önce altı soruya cevap vermek gerekir.** Bu sayfa, iş kullanıcısı ya da yönetici olarak "ERP'mizi, iç CRM'imizi Claude'a bağlayabilir miyiz, kim kurar, ne kadar sürer?" sorusunu sorduğunuzda izleyeceğiniz sırayı anlatır. Teknik kısım BT ekibinize ya da entegratörünüze düşer; sizin işiniz doğru soruları doğru sırayla sormaktır.
+**Kısa cevap: çoğu zaman evet, ama "bağlayalım" demeden önce altı soruya cevap vermek gerekir.** "ERP'mizi, iç CRM'imizi Claude'a bağlayabilir miyiz, kim kurar, ne kadar sürer?" diye soran bir iş kullanıcısı ya da yönetici için izlenecek sıra aşağıda. Teknik kısım BT ekibinize ya da entegratörünüze düşer; sizin işiniz doğru soruları doğru sırayla sormaktır.
 
-Bir kurgusal örnek üzerinden gidelim: **Marmara Dağıtım**, 40 satış temsilcisi olan bir gıda dağıtım firması. Siparişler ve müşteri kayıtları, firmanın kendi sunucusunda duran bir iç CRM'de (Sipariş Takip). Satış müdürü "Claude müşteri geçmişine bakıp ziyaret öncesi özet çıkarsın" istiyor.
+Örnek olarak kurgusal bir firma: **Marmara Dağıtım**, 40 satış temsilcisi olan bir gıda dağıtım firması. Siparişler ve müşteri kayıtları, firmanın kendi sunucusunda duran bir iç CRM'de (Sipariş Takip). Satış müdürü "Claude müşteri geçmişine bakıp ziyaret öncesi özet çıkarsın" istiyor.
 
 ## Adım 1: Resmi dizinde var mı?
 
@@ -44,7 +44,7 @@ Claude'un bir sunucuya nasıl bağlandığı yolu belirler. İki ana yol var:
 | **Uzak sunucu + özel connector** | MCP sunucusu internetten erişilebilir bir adreste durur; Claude'a o adresi verirsiniz | Sistem zaten internete açıksa ya da güvenli biçimde açılabiliyorsa |
 | **Masaüstü uzantısı** | MCP sunucusu kullanıcının kendi bilgisayarında çalışır (`.mcpb` paketi) | Sistem yalnız ofis ağında ya da VPN arkasındaysa ve kullanıcılar o ağdayken çalışıyorsa |
 
-Neden bu iki yol? Çünkü uzak connector'lar **Claude'un bulut altyapısından çağrılır**, sizin bilgisayarınızdan ya da ofis ağınızdan değil. Yalnız iç ağdaki bir sunucuya bu yolla doğrudan ulaşılamaz. Ağ içindeki sunucuya tünelle bağlanma yolu bugün yalnız Managed Agents (API) tarafında, araştırma önizlemesi olarak var; claude.ai için değil.
+İki yol olmasının nedeni şu: uzak connector'lar Claude'un bulut altyapısından çağrılır, sizin bilgisayarınızdan ya da ofis ağınızdan değil. Yalnız iç ağdaki bir sunucuya bu yolla doğrudan ulaşılamaz. Ağ içindeki sunucuya tünelle bağlanma yolu bugün yalnız Managed Agents (API) tarafında, araştırma önizlemesi olarak var; claude.ai için değil.
 
 BT ekibinden ya da entegratörden şunları isteyin:
 
@@ -59,7 +59,7 @@ BT ekibinden ya da entegratörden şunları isteyin:
 
 ## Adım 4: Salt okunur pilot
 
-İlk sürümde Claude yalnızca **okusun**. Yazma, kayıt güncelleme ve silme sonraya kalsın.
+İlk sürümde Claude yalnızca okusun. Yazma, kayıt güncelleme ve silme sonraya kalsın.
 
 - **Küçük grup:** Marmara Dağıtım örneğinde 40 temsilcinin tamamı değil, 3-5 kişi.
 - **Net bir soru listesi:** "Bu müşterinin son 3 siparişi nedir?", "Bu bölgede vadesi geçen hesaplar hangileri?" gibi 10 civarı gerçek soru.
@@ -70,7 +70,7 @@ BT ekibinden ya da entegratörden şunları isteyin:
 
 ## Adım 5: Sahiplik ve bakım
 
-Dizinde olmayan bir connector'ı **siz** sahiplenirsiniz. Anthropic ya da yazılımın üreticisi bakımını üstlenmez.
+Dizinde olmayan bir connector'ı siz sahiplenirsiniz. Anthropic ya da yazılımın üreticisi bakımını üstlenmez.
 
 - **Bir sahip belirleyin:** BT'den bir kişi (teknik bakım) ve iş tarafından bir kişi (hangi soruların işe yaradığı, hangi izinlerin gerektiği).
 - **Güncelleme:** kaynak sistem güncellenince sunucu bozulabilir. Kimin bakacağı yazılı olsun.
@@ -103,7 +103,7 @@ Pilottan önce [MCP Güvenliği](/wiki/mcp/guvenlik/) sayfasındaki kontrol list
 
 ## Bu Sayfa Ne Değildir?
 
-Bu sayfa bir karar rehberidir, kurulum kılavuzu değildir. Zamana bağlantıyı sizin yerinize kurmaz ve bir yazılım ya da entegrasyon satmaz; kurulumu BT ekibiniz ya da seçeceğiniz bir entegratör yapar. Claude'un abonelik ve plan koşulları için doğrudan Anthropic'in sayfalarına bakın.
+Zamana bağlantıyı sizin yerinize kurmaz ve yazılım ya da entegrasyon satmaz; kurulumu BT ekibiniz ya da seçeceğiniz bir entegratör yapar. Kurulum adımları için [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) sayfasına bakın. Claude'un abonelik ve plan koşulları için doğrudan Anthropic'in sayfalarına bakın.
 
 ## İlgili Sayfalar
 

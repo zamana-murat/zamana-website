@@ -27,7 +27,7 @@ Somut örnek: Satış kanalında bir müşteriye fiyat teklifi cevabı yazıyors
 
 ## Nasıl denersiniz?
 
-Kurulum gerekmiyor. İlk kez kişisel connector'a ihtiyaç duyulduğunda Claude sizden izin istiyor, sonra o konuşma dizisinde kullanıyor. Özellik 24 Eylül 2026'da önce Team planlarında kullanıma açılmaya başladı, Enterprise sonra geliyor. Yapmanız gereken, kanalda @Claude'a kişisel araçlarınızdaki bir bilgiyi sormak; DM'lerde nasıl yapıyorsanız aynı şekilde.
+Kurulum gerekmiyor. İlk kez kişisel connector gerektiğinde Claude sizden izin istiyor, sonra o konuşma dizisinde kullanıyor. Özellik 24 Eylül 2026'da önce Team planlarında kullanıma açılmaya başladı, Enterprise sonra geliyor. Yapmanız gereken, kanalda @Claude'a kişisel araçlarınızdaki bir bilgiyi sormak; DM'lerde nasıl yapıyorsanız aynı şekilde.
 
 ## Bilmeniz gerekenler
 

@@ -16,15 +16,15 @@ Anthropic, 2 Ekim'de **Claude Frontier Academy**'yi duyurdu ve programa 100 mily
 
 ## Sizin için ne değişiyor?
 
-Bu program doğrudan bir ürün özelliği değil, bir yetiştirme hattı. Kurumsal tarafta şunu söylüyor: Anthropic, şirketlerin Claude'dan verim almasının önündeki en büyük engelin yetenek açığı olduğunu görüyor ve bunu kendi kaynağıyla kapatmaya çalışıyor. Şirketinizde Claude'u yaygınlaştırmayı planlıyorsanız, ileride bu rozetlere sahip kişilerle çalışma ya da kendi ekibinizden birini bu yola aday gösterme seçeneğiniz olabilir.
+Bu program doğrudan bir ürün özelliği değil, bir yetiştirme hattı. Anthropic'e göre şirketlerin Claude'dan verim almasının önündeki en büyük engel yetenek açığı; şirket bunu kendi kaynağıyla kapatmaya çalışıyor. Şirketinizde Claude'u yaygınlaştırmayı planlıyorsanız, ileride bu rozetlere sahip kişilerle çalışma ya da kendi ekibinizden birini bu yola aday gösterme seçeneğiniz olabilir.
 
 İlk gruplarda Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk gibi kurumlar var.
 
 ## Nasıl denersiniz?
 
-Programa bireysel başvuru yok, **katılım adaylıkla.** Kurumlar en güçlü mühendislerini aday gösteriyor. Aranan profil: sağlam temellere sahip, büyük dil modelleriyle (LLM) uygulama geliştirmiş, başkalarının yapay zekâyı benimsemesine yardım etmiş ve önemli iş sorunları çözmüş yazılım mühendisleri. Daha önce yapay zekâ ajanı deneyimi şart değil.
+Programa bireysel başvuru yok, katılım adaylıkla. Kurumlar en güçlü mühendislerini aday gösteriyor. Aranan profil: sağlam temellere sahip, büyük dil modelleriyle (LLM) uygulama geliştirmiş, başkalarının yapay zekâyı benimsemesine yardım etmiş ve önemli iş sorunları çözmüş yazılım mühendisleri. Daha önce yapay zekâ ajanı deneyimi şart değil.
 
-Süreç üç adımdan oluşuyor:
+Süreç şöyle işliyor:
 
 1. **Birkaç günlük yüz yüze program:** Anthropic mühendisleri ve lisanslı eğitmenlerle simüle edilmiş bir kurumsal uygulama ve notlandırılan bir uygulamalı sınav. Geçenler "Claude Resident Engineer" rozeti alıyor.
 2. **12 haftalık rezidans:** Mühendis, kendi kurumunda gerçek bir Claude kullanım senaryosunu Anthropic mühendislerinin desteğiyle yürütüyor.

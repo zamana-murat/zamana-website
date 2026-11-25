@@ -6,10 +6,10 @@ tags:
   - mcp
   - kurulum
   - rehber
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**[MCP](/wiki/mcp/nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır; Claude'daki "connector" bir MCP sunucusudur.** Bu sayfa dizinde olmayan bir MCP sunucusunu Claude'a nasıl ekleyeceğinizi anlatır: özel connector (uzak sunucu URL'si) ve masaüstü uzantısı (yerel).
+**[MCP](/wiki/mcp/nedir/) (Model Context Protocol), Claude'u istediğiniz dış servise bağlamanın açık standardıdır; Claude'daki "connector" bir MCP sunucusudur.** Dizinde olmayan bir MCP sunucusu Claude'a iki yolla eklenir: özel connector (uzak sunucu URL'si) ya da masaüstü uzantısı (yerel).
 
 Dizinde hazır duran connector'lar da aynı protokolü kullanır; onları bağlamak tek tıktır ve [Connectors](/wiki/araclar/connectors/) sayfasında anlatılır. Ürün çerçevesi ve plan kapsamı için [Claude Connectors](/claude/connectors/) sayfasına bakın.
 
@@ -20,7 +20,7 @@ Dizinde hazır duran connector'lar da aynı protokolü kullanır; onları bağla
 | Resmî dizinde var (1.000'den fazla connector) | Dizin connector'ı, tek tık: [Connectors](/wiki/araclar/connectors/) |
 | Dizinde yok | Özel connector (uzak sunucu URL'si) ya da masaüstü uzantısı (yerel), bu sayfa |
 
-Kendi iç sisteminizi (ERP, iç CRM) bağlamak istiyorsanız kim kurar, ne istenir, nasıl pilot yapılır sorularını [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfası ele alır. Hızlı seçki için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/).
+Kendi iç sisteminizi (ERP, iç CRM) bağlamak istiyorsanız kim kurar, ne istenir, nasıl pilot yapılır sorularının cevabı [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasında. Hızlı seçki için [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/).
 
 ## Üç Yol, Tek Protokol
 
@@ -69,7 +69,7 @@ Dosya erişimi veren bir uzantıda tüm diski değil, tek bir çalışma klasör
 - Herkese açık uzantı dizini açılıp kapatılabilir.
 - **İzin listesi (allowlist) anahtarı varsayılan olarak kapalıdır.** Açıldığında kurulu uzantılar **zorla silinir**; kullanıcılar yalnız onaylı uygulama içi kayıt defterinden kurabilir, `.mcpb` dosyasını sürükleyip kuramaz. Açmadan önce çalışanları uyarın. İzin listesi Claude Desktop 0.13.91 ve üstünü ister.
 - Kurum kendi `.mcpb` uzantısını yükleyip tek tıkla dağıtabilir. Manifest'teki `name` benzersiz olmalı, güncelleme için `version` artırılır.
-- Cihaz yönetimi (MDM) politikası, uygulama içi ayarı **ezer**.
+- Cihaz yönetimi (MDM) politikası, uygulama içi ayarı ezer.
 
 ## Kurulumdan Önce: Sunucu Seçimi
 
@@ -85,7 +85,7 @@ GitHub'daki MCP referans deposu (`modelcontextprotocol/servers`) bugün yalnızc
 
 ### C. Topluluk Sunucuları
 
-Açık kaynak topluluğu yüzlerce sunucu üretti, ama bunlar **denetlenmemiş** olabilir. Örneğin Paraşüt için bulunan tek MCP sunucusu resmî değil, topluluk işidir; deneme dışında önerilmez. [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki kontrol listesinden geçirmeden kurmayın.
+Açık kaynak topluluğu yüzlerce sunucu üretti, ama bunlar denetlenmemiş olabilir. Örneğin Paraşüt için bulunan tek MCP sunucusu resmî değil, topluluk işidir; deneme dışında önerilmez. [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki kontrol listesinden geçirmeden kurmayın.
 
 ### D. Şirket İçi Sistemler
 

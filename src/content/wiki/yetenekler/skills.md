@@ -7,14 +7,12 @@ tags:
   - skills
   - cowork
   - uzmanlik
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 **Skills, Claude'a belirli görev tipleri için hazır uzmanlık kazandıran önceden inşa edilmiş talimat setleridir.** Sohbette ve Cowork'te `/skill-adi` komutuyla çağrılır; Claude görevi tanırsa kendiliğinden de devreye alır.
 
-Skills Free dahil tüm planlarda vardır (Enterprise'ta code execution açık olmalı). Claude bir skill'i ilgili gördüğünde yükler; her mesaja sabit uygulanan bir kural değildir. Her konuşmada geçerli bir ton istiyorsanız profil talimatını, görev bazlı bir biçim istiyorsanız skill'i kullanın. Ürünün Türkçe tanıtımı için [Claude Skills](/claude/skills/) ve [Claude Plugins](/claude/plugins/) sayfalarına bakın; bu sayfa kurulum, çağırma ve sınırları anlatır.
-
-Bu sayfa skill'lerin **nasıl kullanılacağını** anlatır; ne olduğunu ve ne sunduğunu kısaca görmek için [Claude Skills ürün tanıtımına](/claude/skills/) bakın.
+Skills Free dahil tüm planlarda vardır (Enterprise'ta code execution açık olmalı). Claude bir skill'i ilgili gördüğünde yükler; her mesaja sabit uygulanan bir kural değildir. Her konuşmada geçerli bir ton istiyorsanız profil talimatını, görev bazlı bir biçim istiyorsanız skill'i kullanın. Ürünün Türkçe tanıtımı için [Claude Skills](/claude/skills/) ve [Claude Plugins](/claude/plugins/) sayfalarına bakın.
 
 Kısa benzetme: Skills, Claude'un arkasında duran uzmanlık kılavuzlarıdır. `/docx` komutunu verdiğinizde Claude profesyonel bir Word belgesi uzmanının yaklaşımıyla davranır: yıllarca oluşmuş en iyi uygulamalar, yaygın hatalar ve görsel kurallar bir anda devreye girer.
 
@@ -40,7 +38,7 @@ Dosya üreten ana skill'ler sohbette ve Cowork'te hazır gelir:
 | `xlsx` | Excel tablolarını (.xlsx) oluşturur ve düzenler |
 | `pdf` | PDF dosyaları oluşturur, okur, düzenler, birleştirir |
 
-Bu dört skill en temel iş çıktılarını kapsar; bir çalışanın ayda ürettiği çıktıların büyük kısmı bunlarla karşılanır.
+Bu dört skill en temel iş çıktılarını kapsar.
 
 Hesabınızda bunların yanında başka skill'ler de görünebilir. Örneğin görsel tasarım için `canvas-design` ya da tekrar eden görev kurmak için `schedule` adlı skill'ler bazı hesaplarda listelenir; ayrıca kurumun ya da kullanıcının sonradan eklediği skill'ler (web tasarımı, dış ticaret belgeleri gibi) olabilir. Bunlar her hesapta aynı olmayabilir, listenizi `/` yazarak görün. Kendi iş akışınız için aynısını siz de yazabilirsiniz.
 
@@ -123,7 +121,7 @@ Claude `xlsx` skill'ini otomatik devreye alır. Siz komut vermezsiniz.
 
 ## Pratik Yaklaşım
 
-Skills sihir değildir, **yapılandırılmış uzmanlığın metne çevrilmiş halidir**. Çalışan hâlâ görevi anlamak zorundadır; skill, Claude'un o görevi en yüksek seviyede yürütmesini sağlar.
+Skills, **yapılandırılmış uzmanlığın metne çevrilmiş halidir**. Çalışan hâlâ görevi anlamak zorundadır; skill, Claude'un o görevi daha iyi yürütmesini sağlar.
 
 Üç pratik prensip:
 

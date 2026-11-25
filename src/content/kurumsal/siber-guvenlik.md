@@ -7,7 +7,7 @@ lead: "Saldırganlar yapay zekâyı kullanmaya başladı; savunma tarafının da
 heroImage: "/images/kurumsal/siber-guvenlik/hero.webp"
 heroAnimation: "siber-guvenlik"
 heroAlt: "Kurgusal bir lojistik şirketinin güvenlik operasyon merkezinde gece gelen bir VPN alarmı: Claude bağlam ekliyor, kayıtları ilişkilendirip etkinliği ATT&CK tekniklerine eşliyor, olayı kritik olarak işaretliyor ve analist onayını bekleyen müdahale adımları öneriyor."
-availability: "Analiz ve raporlama: tüm ücretli planlar, kurum verisi için Team veya Enterprise. Claude Security: Enterprise'da beta. Mythos ailesi yalnız Project Glasswing katılımcılarına açık"
+availability: "Analiz ve raporlama: tüm ücretli planlar, kurum verisi için Team veya Enterprise. Claude Security: Enterprise'da beta. Mythos 5.2 sınırlı erişimli, yalnız doğrulama programlarındaki kuruluşlara açık"
 sourceUrl: "https://claude.com/solutions/cybersecurity"
 sourceTitle: "Claude for Cybersecurity | Claude by Anthropic"
 related:
@@ -18,23 +18,23 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Kodlama", href: "/kurumsal/kodlama/" }
 order: 70
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
 Anthropic'in siber güvenlik sayfası sert bir tespitle açılıyor: en gelişmiş yapay zekâ modelleri yazılım açıklarını bulma ve istismar etmede, en yetenekli uzmanlar dışında herkesi geride bırakmış durumda ve bu yetenek birkaç ay içinde saldırganlar dahil herkesin eline geçecek. Aynı yetenek savunmaya da yarar; sonucu kimin, nasıl kullandığı belirler.
 
-Sayfadaki örnek bunu iyi gösteriyor. Anthropic'in aktardığına göre Mozilla, Mart 2026'da Claude Opus 4.6'nın bulduğu açıkları kapattı; Nisan'da Claude Mythos Preview ile 271 düzeltme daha yayımladı, bu da aylık ortalamalarının 20 katından fazla. Sayfadaki bir başka müşteri olan Cogent, güvenlik tehditlerini Claude ile yüzde 97 daha hızlı çözdüğünü söylüyor. Bu rakamlar kaynağa aittir.
+Anthropic'in aktardığına göre Mozilla, Mart 2026'da Claude Opus 4.6'nın bulduğu açıkları kapattı; Nisan'da Claude Mythos Preview ile 271 düzeltme daha yayımladı, bu da aylık ortalamalarının 20 katından fazla. Sayfadaki bir başka müşteri olan Cogent, güvenlik tehditlerini Claude ile yüzde 97 daha hızlı çözdüğünü söylüyor. Bu rakamlar kaynağa aittir.
 
-Bu sayfa, güvenlik **departmanının** Claude'u nasıl kullandığını anlatır. Kod tabanınızı tarayan ayrı ürün için: [Claude Security](/claude/security/).
+Kod tabanınızı tarayan ayrı ürün için: [Claude Security](/claude/security/).
 
 ## Güvenlik ekibi Claude'a neleri devreder?
 
 Kaynak sayfa altı iş akışı sayıyor. Aşağıda her birini bir Türk güvenlik ekibinin gündelik işine çevirdik; senaryolar kurgusaldır.
 
 - **Tehdit bağlamı:** Ham bir göstergeyi (IP adresi, alan adı, dosya özeti) altyapı ilişkileri ve MITRE ATT&CK teknikleriyle zenginleştirmek. Gece gelen bir alarmda "bu adres daha önce görüldü mü, kullanıcının olağan davranışı ne, hangi tekniğe benziyor" sorularının ilk cevabı.
-- **Alarm önceliklendirme ve doğrulama:** Aynı kök nedene dayanan alarmları birleştirmek, istismar edilebilirliği sınamak, etki ve ön koşula göre sıralamak. SOC'taki yorgunluğun büyük kısmı tekrar eden ve yanlış pozitif alarmlardan gelir.
+- **Alarm önceliklendirme ve doğrulama:** Aynı kök nedene dayanan alarmları birleştirmek, istismar edilebilirliği sınamak, etki ve ön koşula göre sıralamak. SOC yorgunluğunun başlıca nedenlerinden biri tekrar eden ve yanlış pozitif alarmlardır.
 - **Açık tespiti:** Kaynak kodu bir araştırmacı gibi okuyup açığın gerçekten erişilebilir olup olmadığını düşünmek; statik analiz araçlarının kaçırdığı mantık hatalarını yakalamak.
 - **Yama:** Açığı kök nedenine kadar izlemek, aynı hatayı taşıyan diğer çağrı noktalarını bulmak, küçük bir düzeltme ve regresyon testi yazmak.
 - **Geliştirme döngüsünde inceleme:** Claude Code'un kod inceleme özelliğiyle her değişiklik talebinde güvenlik açığı ve mantık hatası kontrolü.
@@ -44,16 +44,16 @@ Kaynak sayfa altı iş akışı sayıyor. Aşağıda her birini bir Türk güven
 
 ## Çift kullanım ve sınırlar
 
-Saldırı ve savunma bilgisi büyük ölçüde aynı bilgidir. Anthropic bu yüzden en güçlü siber güvenlik yeteneklerine sahip modellerini (Mythos ailesi) doğrudan model olarak genel kullanıma açmıyor; erişim Project Glasswing adlı programın katılımcılarıyla sınırlı ve kaynak sayfaya göre bir güvenilir erişim programıyla kademeli olarak genişletilecek. Kaynak sayfaya göre programda 50'den fazla kuruluş var, Anthropic katılımcılara 100 milyon dolarlık kullanım kredisi ve açık kaynak güvenlik vakıflarına 4 milyon dolar doğrudan bağış ayırdı.
+Saldırı ve savunma bilgisi büyük ölçüde aynı bilgidir. Anthropic bu yüzden en güçlü siber güvenlik yeteneklerine sahip modellerini (Mythos 5.2) genel kullanıma açmıyor; erişim sınırlı. Siber güvenlik uzmanları için Cyber Verification Program, yaşam bilimleri araştırmacıları için Life Sciences Verification Program var. Enterprise müşterisi ise Mythos 5.2'yi Claude Security içinde programsız da kullanabilir.
 
-Pratikte bunun anlamı şu: genel Claude modelleri sızma testi, istismar kodu ya da kötü amaçlı yazılım analizi gibi isteklerde temkinli davranabilir ve bazı istekleri reddedebilir. Kaynak sayfa, doğrulanmış güvenlik uzmanlarının çift kullanımlı çalışmalar için güvenlik ayarlarının uyarlanmasını talep edebileceğini söylüyor; bunun yolu Anthropic ile görüşmektir.
+Bu yüzden genel Claude modelleri sızma testi, istismar kodu ya da kötü amaçlı yazılım analizi gibi isteklerde temkinli davranabilir ve bazı istekleri reddedebilir. Kaynak sayfa, doğrulanmış güvenlik uzmanlarının çift kullanımlı çalışmalar için güvenlik ayarlarının uyarlanmasını talep edebileceğini söylüyor; bunun yolu Anthropic ile görüşmektir.
 
 ## Türkiye'de uyarlama notları
 
 - **SOC ve olay müdahalesi:** Kurumunuzun olay bildirim yükümlülükleri (kurumsal veya sektörel SOME yapısı, USOM ile koordinasyon, sektör düzenleyicisine bildirim) yapay zekâ kullanımıyla değişmez. Claude bu süreçleri hızlandıran bir yardımcıdır, bildirim ve karar sorumluluğunu üstlenmez.
 - **Kişisel veri ihlali:** Bir olay kişisel verileri etkiliyorsa KVKK kapsamındaki bildirim süreci işler; Kişisel Verileri Koruma Kurulu kararına göre Kurul'a bildirim en geç 72 saat içinde yapılmalıdır. Claude ile hazırlanan olay notları bu süreci hızlandırabilir, ama bildirim metni hukuk biriminizden geçmelidir.
 - **Kamu kurumları:** 2019/12 sayılı Bilgi ve İletişim Güvenliği Tedbirleri Genelgesi, kamu verisinin yurt içindeki ve kurum kontrolündeki sistemler dışında saklanmasını kısıtlar. Kamu güvenlik ekipleri, kayıtları ve kodu yurt dışındaki bir modele göndermeden önce bu çerçeveyi kurumlarıyla değerlendirmelidir.
-- **Türkçe kayıtlar ve raporlar:** Claude Türkçe olay notu ve yönetici özeti yazmada güçlüdür; teknik terimlerde ekibinizin kullandığı karşılıkları bir sözlükle vermek tutarlılığı artırır.
+- **Türkçe kayıtlar ve raporlar:** Claude Türkçe olay notu ve yönetici özeti yazmada iyidir; teknik terimlerde ekibinizin kullandığı karşılıkları bir sözlükle verirseniz tutarlılık artar.
 
 ## Güvenlik ve KVKK
 

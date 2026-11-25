@@ -6,12 +6,10 @@ tags:
   - yetenekler
   - arastirma
   - research
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" gibi sorular saatler süren araştırma ister. Claude'un **Research** (derin araştırma) özelliği tam buna hizmet eder.
-
-Bu sayfa derin araştırma yeteneğinin ne olduğunu, claude.ai'de nasıl açıldığını, kullanım limitine etkisini ve hangi senaryolarda iş profesyoneline değer ürettiğini anlatır.
+**Bazı sorular tek bir web aramasıyla cevaplanmaz.** "Türkiye'de organik gıda pazarının 5 yıllık görünümü", "rakip 5 firma için detaylı kıyaslama", "yeni mevzuatın sektör etkisi" gibi sorular saatler süren araştırma ister. Claude'un **Research** (derin araştırma) özelliği bu tür sorular için var.
 
 ## Research Mode Nedir?
 

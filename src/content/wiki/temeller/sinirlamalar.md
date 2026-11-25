@@ -7,12 +7,12 @@ tags:
   - sinirlamalar
   - hallucination
   - hata-yonetimi
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude güçlüdür, ama yanılmaz değildir.** Bu sayfa iş kullanıcıları için en kritik bilgilerden birini içerir: **nerede güvenmemeniz gerektiği.**
+**Claude güçlüdür ama yanılabilir.** İş kullanıcısı için en önemli bilgilerden biri, nerede ona güvenmemeniz gerektiğidir.
 
-Yapay zeka satıcılarının çoğu sınırlardan kaçınır. Biz tersini yapıyoruz, çünkü güven abartıyla değil, doğrulukla inşa edilir. Claude'u ne kadar iyi tanırsanız, onu o kadar iyi kullanırsınız.
+Sınırları açık yazıyoruz: Claude'u ne kadar iyi tanırsanız, onu o kadar iyi kullanırsınız.
 
 ## Temel Sınırlar
 
@@ -45,7 +45,7 @@ Claude matematik problemleri üzerine **düşünebilir**, ama zihinden yürütt�
 
 ### 3. Eğitim Verisi Kesme Tarihi
 
-Claude'un bilgi tabanı belli bir tarihte donar. Bu tarih **bilgi kesim tarihidir (knowledge cutoff)**. Güncel modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5) güvenilir bilgi kesimi **Haziran 2026**'dır. Haiku 5.5'te Haziran 2026, legacy Haiku 4.5'te Şubat 2025'tir.
+Claude'un bilgi tabanı belli bir tarihte donar. Bu tarih **bilgi kesim tarihidir (knowledge cutoff)**. Güncel modellerde (Fable 5.2, Opus 5.5, Sonnet 5.5) güvenilir bilgi kesimi **Haziran 2026**'dır. Haiku 5.5'te Haziran 2026, legacy Haiku 4.5'te Şubat 2025'tir.
 
 Bundan sonraki olayları, haberleri, yasaları ve fiyatları Claude kendiliğinden bilmez.
 
@@ -154,7 +154,7 @@ Nasıl ortaya çıkar:
 - ✅ *"Kararımı onaylamanı istemiyorum, denetlemeni istiyorum. Nerede yanılıyor olabilirim?"*
 - ✅ Görüşünüzü **söylemeden** sorun: "Bu sözleşme maddesi kimin lehine?" (sizin ne düşündüğünüzü ekleme)
 
-**Pratik kural:** Önemli bir kararı Claude'a onaylatmayın, **çürütmesini** isteyin. İyi bir karar, eleştiriden sağ çıkan karardır. Bu, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'ndeki **Discernment** (Ayırt Etme) boyutunun doğrudan uygulamasıdır.
+**Pratik kural:** Önemli bir kararı Claude'a onaylatmayın, **çürütmesini** isteyin. Bu, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'ndeki **Discernment** (Ayırt Etme) boyutunun doğrudan uygulamasıdır.
 
 ### 10. Prompt Injection (Gizli Talimatla Yönlendirilme)
 
@@ -186,7 +186,7 @@ Bunlar bir hata değil, bilinçli tasarım sınırlarıdır. İş kullanımında
 
 ## Claude'un Kurumsal Olarak Yapamayacakları
 
-Başka bir kategori: Claude yapmaya çalışabilir ama **bir iş kullanımında asla tek başına yapmamalı** olduğu işler. Bunlar Claude'un yetersiz olduğu değil, sizin sorumlu olduğunuz konulardır:
+Başka bir kategori: Claude yapmaya çalışabilir ama **bir iş kullanımında asla tek başına yapmamalı** olduğu işler. Burada belirleyici olan, sorumluluğun sizde olmasıdır:
 
 - **Bağlayıcı hukuki karar vermek.** Claude hukuki analiz yapar, taslak yazar. Bir avukat onaylamadan yasal süreç başlatmaz.
 - **Finansal karar almak.** Claude analiz üretir, senaryolar çizer. Bir finans profesyoneli onaylamadan para hareketi yapılmaz.
@@ -194,13 +194,11 @@ Başka bir kategori: Claude yapmaya çalışabilir ama **bir iş kullanımında 
 - **İK disiplin süreci yürütmek.** Claude taslak yazabilir. Bir İK profesyoneli ve hukuk ekibi onaylamadan işten çıkarma yapılmaz.
 - **Vergi beyanı doldurmak.** Claude hesaplama yardımı sunabilir. Bir mali müşavir onaylamadan beyan verilmez.
 
-Bu liste Claude'un "yapamadığı" işleri değil, **profesyonel sorumluluğun yapay zekaya devredilemeyeceği** alanları gösterir.
+Bu liste, profesyonel sorumluluğun yapay zekaya devredilemeyeceği alanları gösterir.
 
 ## Altın Kural
 
 > **Claude yazar. Siz karar verirsiniz. Sorumluluk asla transfer olmaz.**
-
-Sayfadan tek şey hatırlayacaksanız bu cümle olsun.
 
 Önemli bir işte (sözleşme, finansal karar, hukuki görüş, tıbbi tavsiye, İK aksiyonu) Claude ilk taslağı üretir ve doğru soruları sorar. **Nihai kararı** her zaman o mesleğin ehliyetli profesyoneli verir ve sorumluluğu taşır.
 

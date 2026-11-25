@@ -6,16 +6,14 @@ tags:
   - temeller
   - claude
   - anthropic
-lastUpdated: "2026-11-18"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude, Anthropic şirketinin geliştirdiği yapay zekâ asistanıdır.** Yazdığınız isteği anlar ve karşılığında metin yazar, uzun belgeleri özetler, tablo ve analiz hazırlar, Excel ve sunum dosyası üretir. Türkçe dahil birçok dilde çalışır; Türkçe yazarsanız Türkçe yanıt verir. Kod bilmeniz gerekmez, ne istediğinizi günlük dille yazmanız yeterlidir. Claude'u yapan Anthropic, 2021'de kurulmuş, merkezi San Francisco'da olan bir yapay zekâ güvenliği şirketidir. Claude'u claude.ai adresinden tarayıcıda, Windows ve Mac masaüstü uygulamasından ya da iOS ve Android uygulamasından kullanırsınız. Ücretsiz bir Free planı vardır, ancak kullanım sınırı dardır; yoğun iş kullanımı için ücretli planlar gerekir ve en düşüğü Pro, ayda 20 USD'dir (vergi hariç). ChatGPT'den farkı kısaca şudur: ikisi de büyük dil modeline dayanan asistanlardır, ama Claude'un güçlü yanı uzun belgeler, dosyalarla çalışma ve iş kullanımına dönük tasarımıdır. Konuşmalarınızın model eğitiminde kullanılıp kullanılmayacağı plana ve ayarlarınıza bağlıdır; kişisel verilere dikkat edin. Yanılabileceğini unutmayın, önemli çıktıları kontrol edin.
-
-Bu sayfa arama niyetinize göre sıralıdır: ne işe yaradığı, nasıl kullanıldığı, ücretli olup olmadığı, Türkçesi, güvenliği ve kimlerin kullandığı. Sonda sık sorulan sorular var.
+Claude, Anthropic şirketinin geliştirdiği yapay zekâ asistanıdır. Yazdığınız isteği anlar ve karşılığında metin yazar, uzun belgeleri özetler, tablo ve analiz hazırlar, Excel ve sunum dosyası üretir. Türkçe dahil birçok dilde çalışır; Türkçe yazarsanız Türkçe yanıt verir. Kod bilmeniz gerekmez, ne istediğinizi günlük dille yazmanız yeterlidir. Claude'u yapan Anthropic, 2021'de kurulmuş, merkezi San Francisco'da olan bir yapay zekâ güvenliği şirketidir. Claude'u claude.ai adresinden tarayıcıda, Windows ve Mac masaüstü uygulamasından ya da iOS ve Android uygulamasından kullanırsınız. Ücretsiz bir Free planı vardır, ancak kullanım sınırı dardır; yoğun iş kullanımı için ücretli planlar gerekir ve en düşüğü Pro, ayda 20 USD'dir (vergi hariç). ChatGPT gibi Claude da büyük dil modeline dayanır; güçlü yanı uzun belgeler, dosyalarla çalışma ve iş kullanımına dönük tasarımıdır. Konuşmalarınızın model eğitiminde kullanılıp kullanılmayacağı plana ve ayarlarınıza bağlıdır; kişisel verilere dikkat edin. Yanılabileceğini unutmayın, önemli çıktıları kontrol edin.
 
 ## Claude Nasıl Kullanılır, Nereden Erişilir?
 
-Başlamak için [claude.ai](https://claude.ai) adresinde e-posta ya da Google hesabıyla ücretsiz kayıt olmanız yeterlidir ([Claude'u ücretsiz kullanma rehberi](/claude-ucretsiz/)). Uygulamalar için [resmi indirme rehberine](/claude-indir/) bakın. Adım adım anlatım: [İlk Kurulum](/wiki/temeller/ilk-kurulum/). "Claude" tek bir ekran değil, aynı modelin birkaç yüzüdür.
+Başlamak için [claude.ai](https://claude.ai) adresinde e-posta ya da Google hesabıyla ücretsiz kayıt olmanız yeterlidir ([Claude'u ücretsiz kullanma rehberi](/claude-ucretsiz/)). Uygulamalar için [resmi indirme rehberine](/claude-indir/) bakın. Adım adım anlatım: [İlk Kurulum](/wiki/temeller/ilk-kurulum/). Claude, aynı modelin birkaç farklı yüzüdür.
 
 Erişim yolları Kasım 2026 itibarıyla şunlardır:
 
@@ -39,8 +37,8 @@ Kısmen. **Free plan** ücretsizdir: web, masaüstü ve mobil sohbet, web aramas
 
 Yine de iki kural:
 
-1. **Önemli Türkçe metinleri daima insan gözüyle kontrol edin.** Özellikle formal yazışmalarda ince dil hatalarına karşı.
-2. **Kalıcı talimatınızda (profil talimatı veya CLAUDE.md) Türkçe ton tercihlerinizi belirtin.** "Resmi olun, ama robot gibi değil" gibi talimatlar sonuç kalitesini ciddi ölçüde artırır.
+1. Önemli Türkçe metinleri daima insan gözüyle kontrol edin. Özellikle formal yazışmalarda ince dil hatalarına karşı.
+2. Kalıcı talimatınızda (profil talimatı veya CLAUDE.md) Türkçe ton tercihlerinizi belirtin. "Resmi olun, ama robot gibi değil" gibi bir talimat sonucu iyileştirir.
 
 Dört farklı yazı türünde örnekli analiz: [Claude Türkçe Performansı](/wiki/temeller/turkce-performansi/).
 
@@ -56,15 +54,15 @@ Hukuk, finans, insan kaynakları, pazarlama, satış ve ihracat gibi bölümlerd
 
 Claude'un arkasındaki şirket **Anthropic**. 2021'de eski OpenAI çalışanları tarafından, yapay zekâ güvenliğini öncelik alan bir araştırma şirketi olarak kuruldu; merkezi San Francisco'da. Kurucuların başında kardeşler **Dario Amodei** (CEO) ve **Daniela Amodei** (Başkan) gelir.
 
-Şirketin tasarım felsefesi üç kelimeyle özetlenir: **yararlı, zararsız, dürüst** (*helpful, harmless, honest*). Bu ilkeler modelin davranışına yansır: Claude tehlikeli talepleri reddeder, emin olmadığında bunu söyler, sınırlarını belirtir. Finans, hukuk ve İK gibi bölümlerde kullanılan bir yapay zekânın öngörülebilir olması gerektiği için bu kurumsal kullanımda önemlidir.
+Şirketin tasarım felsefesi üç kelimeyle özetlenir: **yararlı, zararsız, dürüst** (*helpful, harmless, honest*). Bu ilkeler modelin davranışına yansır: Claude tehlikeli talepleri reddeder, emin olmadığında bunu söyler, sınırlarını belirtir. Finans, hukuk ve İK gibi bölümlerde kullanılan bir yapay zekânın öngörülebilir olması gerekir; bu ilkeler kurumsal kullanımda tam bu yüzden işe yarıyor.
 
 Kuruluş hikâyesi (neden ayrıldılar, Constitutional AI, şirket yapısı, yatırımcılar) ve "Claude" adının nereden geldiği [Anthropic ve Claude'un Tarihçesi](/wiki/temeller/anthropic-ve-tarihce/) sayfasında.
 
 ## Claude Ne İşe Yarar?
 
-Aynı soruyu tersine çevirdiğimizde iş dünyası için değerli olan şeyler netleşir. Claude bir...
+İş dünyasında Claude'un en çok işe yarayan yönleri şunlar. Claude bir...
 
-- **Düşünme ortağıdır.** Bir karar öncesinde varsayımlarınızı sorgular, kör noktalarınızı gösterir, "bu mantıklı mı?" sorusuna dürüst cevap verir. Çoğu yöneticinin ofisinde olmayan şey budur.
+- **Düşünme ortağıdır.** Bir karar öncesinde varsayımlarınızı sorgular, kör noktalarınızı gösterir, "bu mantıklı mı?" sorusuna dürüst cevap verir.
 - **Yazma motorudur.** İlk taslak, yeniden yazım, çeviri, ton ayarlaması, yazı işinin mekanik kısmını devralır. Satış teklifinden hukuki memoya, basın bültenden toplantı tutanağına.
 - **Belge işlemcisidir.** 200 sayfalık bir raporu 10 dakikada özetler. Uzun sözleşmelerden belirli tipte maddeleri çıkarır. İki belgeyi karşılaştırır, farkları listeler.
 - **Otomasyon katmanıdır.** Cowork ile komut çalıştırır, dosyalarınızı yönetir, dış araçları (Slack, Google Drive, CRM) çağırır. Kod yazmayı bilmeyen çalışanlar bile Claude üzerinden bu işleri yapabilir.
@@ -89,7 +87,7 @@ Kavram karşılıkları için [sözlükteki LLM maddesine](/wiki/sozluk/#llm) ba
 
 ## Ne Zaman Claude Değil, Başka Araç?
 
-Claude güçlüdür ama **her şey için doğru araç değildir**. Dürüst tavsiye: şu durumlarda Claude yerine (veya ek olarak) başka araç düşünün.
+Claude her iş için doğru araç değildir. Şu durumlarda Claude yerine (ya da yanında) başka araç düşünün.
 
 ### Kesin hesaplama gerektiğinde → **Excel veya özel yazılım**
 
@@ -121,7 +119,7 @@ Savunma, hassas finansal sunucular, internet kesintisi garantili ortamlarda Clau
 
 ### "Claude'a sorma, patronuma sor" olan durumlar
 
-Bazı konularda yapay zeka yanıtı almak yanlış hamledir, şirketinizdeki gerçek uzmanı (hukuk, İK, finans direktörü) aramak doğrusudur. Claude'un verdiği cevap "olabilir"i gösterir; şirket içi karar **insani sorumlulukla** verilir.
+Bazı konularda yapay zeka yanıtı almak yanlış hamledir, şirketinizdeki gerçek uzmanı (hukuk, İK, finans direktörü) aramak doğrusudur. Claude'un verdiği cevap "olabilir"i gösterir; şirket içi karar insani sorumlulukla verilir.
 
 ## Sık Sorulan Sorular
 

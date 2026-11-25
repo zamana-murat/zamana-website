@@ -6,10 +6,10 @@ tags:
   - mcp
   - populer
   - kurumsal
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**MCP ekosisteminde yüzlerce sunucu var, ama kurumsal kullanım için olgun olanlar sınırlı.** Bu sayfa MCP sunucularını kategorilere ayırır ve her biri için olgunluk ve risk notu verir. Claude'daki [connector](/wiki/sozluk/#connector)'lar da birer MCP sunucusudur; sayfadaki bazı sunucuların dizinde hazır connector karşılığı vardır.
+**MCP ekosisteminde yüzlerce sunucu var, ama kurumsal kullanım için olgun olanlar sınırlı.** Claude'daki [connector](/wiki/sozluk/#connector)'lar da birer MCP sunucusudur; sayfadaki bazı sunucuların dizinde hazır connector karşılığı vardır.
 
 [Kurulum Rehberi](/wiki/mcp/kurulum-rehberi/) ile birlikte okunmalı; [Güvenlik](/wiki/mcp/guvenlik/) sayfasındaki değerlendirme kontrolleri her sunucu için geçerli. Ürün çerçevesi için [Claude Connectors](/claude/connectors/) sayfasına bakın.
 
@@ -88,7 +88,7 @@ Kendi iç sisteminiz için [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirk
 
 ## Topluluk MCP'leri: Olgun Olanlar
 
-Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edilmiş** durumda. Yine de [Güvenlik](/wiki/mcp/guvenlik/) değerlendirmesinden geçirin.
+Aşağıdaki server'lar topluluk üretimi, ama yaygın kullanılıyor ve test edilmiş. Yine de [Güvenlik](/wiki/mcp/guvenlik/) değerlendirmesinden geçirin.
 
 ### Notion
 
@@ -157,11 +157,11 @@ Aşağıdaki server'lar topluluk üretimi ama **yaygın kullanılan ve test edil
 
 ### Sağlık
 
-- Kurumsal hasta verisi MCP'leri: HIPAA / KVKK kısıtları nedeniyle Türkiye'de **özel sözleşmeyle** kurulur. [Sağlık](/wiki/departmanlar/saglik/) sayfası dikkate alınmalı.
+- Kurumsal hasta verisi MCP'leri: HIPAA / KVKK kısıtları nedeniyle Türkiye'de özel sözleşmeyle kurulur. Ayrıntı için [Sağlık](/wiki/departmanlar/saglik/) sayfasına bakın.
 
 ### Finans / Muhasebe
 
-- **Paraşüt / Logo / Mikro / Netsis:** Türkiye'nin yerli muhasebe ve ERP sistemleri için Claude dizininde connector yok ve sağlayıcı yayımlı resmî MCP sunucusu bulunamadı (Ekim 2026 araması). Özel connector (herkese açık HTTPS adresli bir MCP sunucusu gerekir) ya da sağlayıcının REST API'si ile kurulur; özel geliştirme ister. Paraşüt için tek bulunan sunucu **resmî olmayan topluluk işidir** (Paraşüt ile bağı yok); müşteri verisi için önerilmez, en fazla deneme içindir. Logo, Mikro ve Netsis için topluluk sunucusu da bulunamadı. Çoğu zaman dışa aktarılan dosyayla çalışmak daha güvenlidir: [Türk İş Araçları](/wiki/temeller/turk-is-araclari/)
+- **Paraşüt / Logo / Mikro / Netsis:** Türkiye'nin yerli muhasebe ve ERP sistemleri için Claude dizininde connector yok ve sağlayıcı yayımlı resmî MCP sunucusu bulunamadı (Ekim 2026 araması). Özel connector (herkese açık HTTPS adresli bir MCP sunucusu gerekir) ya da sağlayıcının REST API'si ile kurulur; özel geliştirme ister. Paraşüt için tek bulunan sunucu resmî olmayan topluluk işidir (Paraşüt ile bağı yok); müşteri verisi için önerilmez, en fazla deneme içindir. Logo, Mikro ve Netsis için topluluk sunucusu da bulunamadı. Çoğu zaman dışa aktarılan dosyayla çalışmak daha güvenlidir: [Türk İş Araçları](/wiki/temeller/turk-is-araclari/)
 - **QuickBooks / Xero:** İkisinin de sağlayıcı yapımı connector'ı dizinde (QuickBooks Intuit'ten, Xero Xero Limited'den ve salt okunur). Bu yazılımları kullanıyorsanız (örneğin yurt dışı iştirakinizde) işe yarar; Türk muhasebe yazılımlarının karşılığı değildir
 
 [Finans departmanı](/wiki/departmanlar/finans/) sayfasında ek bağlam.
@@ -198,11 +198,11 @@ Diğerleri ihtiyaca göre eklenir; bağlantı sayısını az tutmak hem güvenli
 
 3 ay sonra şu soruyu sorun:
 
-- Hangi MCP'leri **gerçekten kullandım**?
+- Hangi MCP'leri gerçekten kullandım?
 - Hangileri kurulu ama hiç çağrılmamış?
 - Hangileri yetkisi gereğinden fazla?
 
-Kullanılmayanları kapatın. Yetkileri sıkılaştırın. Bu basit disiplin uzun vadeli güvenlik için kritik.
+Kullanılmayanları kapatın ve yetkileri sıkılaştırın; kullanılmayan bir bağlantı yalnız risk taşır.
 
 ## Kurumsal Onaylı MCP Listesi: Şablon
 
@@ -248,17 +248,16 @@ Yeni bir MCP'yi onaylı listeye almak için:
 7. **Dağıtım**: onaylı listeye eklenir, ilgili kullanıcılara duyurulur
 8. **Periyodik gözden geçirme**: 3 ayda bir
 
-Bu süreç ağır gibi görünür ama kurumsal güven için kritiktir.
 
 ## Geleceğe Bakış
 
-MCP ekosistemi 2025-2026'da hızla olgunlaşıyor:
+2025-2026'da MCP ekosisteminde şunlar oluyor:
 
 - Resmî connector dizini 1.000 connector'ı aştı (Kasım 2026); [Claude Marketplace](/haberler/2026-09-23-claude-marketplace/) connector'ları, eklentileri ve ortak hizmetleri tek yerde topluyor (kurumun satın alma tarafı için [Marketplace](/kurumsal/marketplace/))
 - Kurumsal SaaS'lar kendi resmî MCP sunucularını yayımlıyor
 - Enterprise yönetim araçları (merkezi config, audit) gelişiyor
 
-İhtiyacınız olan çoğu şey için yakında resmî veya onaylı bir MCP bulunması muhtemel, ama özel ve yerel sistemlerde hâlâ biraz öncülük gerekiyor.
+Dizinde olmayan özel ve yerel sistemler için ise hâlâ kendi geliştirmeniz gerekiyor.
 
 ## İlgili Sayfalar
 

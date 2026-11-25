@@ -15,11 +15,11 @@ Anthropic, en güçlü model ailesi olan Fable ve Mythos'u 5.2 sürümüne yüks
 
 ## Sizin için ne değişiyor?
 
-Çoğu iş kullanıcısı için günlük ana model değişmiyor. Anthropic de çoğu kodlama ve bilgi işi için başlangıç olarak Claude Opus 5.5'i öneriyor. Fable 5.2'yi, zor ve uzun soluklu işlerde (karmaşık bir yazılım geçişi, çok adımlı analiz, derin araştırma) bir üst vites olarak düşünebilirsiniz. Basit işleri ise Sonnet 5.5 ya da Haiku 5.5 ile daha ucuza çözmek mümkün.
+Günlük ana model değişmiyor. Anthropic çoğu kodlama ve bilgi işi için başlangıç olarak Claude Opus 5.5'i öneriyor. Fable 5.2'yi, zor ve uzun soluklu işlerde (karmaşık bir yazılım geçişi, çok adımlı analiz, derin araştırma) bir üst vites olarak düşünebilirsiniz. Basit işleri ise Sonnet 5.5 ya da Haiku 5.5 ile daha ucuza çözmek mümkün.
 
 Anthropic'in paylaştığı örneklerden biri: erken bir sürüm, canlıdaki bir servisi Python'dan Rust'a taşıyıp servisin açılışını yaklaşık 26 kat hızlandırmış. Şirket, kendi ana kod tabanındaki değişikliklerin yüzde 90'dan fazlasının insan yönlendirmesiyle Claude tarafından yazıldığını da söylüyor. Bunlar şirketin kendi ölçümleri, kendi işinizde sonuç farklı olabilir.
 
-Fiyat tarafında iyi haber var. API'de (yazılımların Claude'u çağırma yolu) standart fiyat milyon token başına 8 dolar girdi, 40 dolar çıktı. İsteğe bağlı "hızlı mod" 2,5 kata kadar hızlı üretim sunuyor ve 16 / 80 dolar. Token, modelin metni işlediği küçük parçadır, kabaca bir kelimenin bir kısmı.
+API'de (yazılımların Claude'u çağırma yolu) standart fiyat milyon token başına 8 dolar girdi, 40 dolar çıktı. İsteğe bağlı "hızlı mod" 2,5 kata kadar hızlı üretim sunuyor ve 16 / 80 dolar. Token, modelin metni işlediği küçük parçadır, kabaca bir kelimenin bir kısmı.
 
 ## Nasıl denersiniz?
 
@@ -35,6 +35,6 @@ Fable, Pro ve standart Team koltuklarına dahil değil; bu planlarda kullanım k
 - Mythos 5.2'ye Cyber Verification ve Life Sciences Verification programlarıyla erişiliyor. Enterprise müşterileri, Mythos 5.2 ile çalışan Claude Security'yi kod açığı taramasında kullanabiliyor.
 - Anthropic, davranış testlerinde modelin riskli davranış oranının düşük olduğunu bildiriyor. Aynı zamanda modelin "test ediliyorum" şüphesini önceki modellerden daha sık dile getirdiğini, bunun ölçümü zorlaştırdığını belirtiyor.
 - Kurumsal tarafta, sıfır veri saklama (ZDR) ile güvenlik izlemesini birleştiren Enterprise Frontier Safeguards 23 Kasım'da [herkese açık betaya geçti](/haberler/2026-11-23-sifir-veri-saklama-enterprise-frontier-safeguards/).
-- Türkçe için ayrı bir not yok. Modellerin genel karşılaştırması için [Claude modelleri](/wiki/temeller/modeller) sayfasına bakın.
+- Türkçe için ayrı bir not yok. Modellerin genel karşılaştırması için [Claude modelleri](/wiki/temeller/modeller/) sayfasına bakın.
 
 *Kaynak: [Introducing Claude Fable 5.2 and Claude Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

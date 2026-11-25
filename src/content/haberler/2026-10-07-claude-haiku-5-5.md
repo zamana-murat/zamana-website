@@ -20,7 +20,7 @@ Günlük sohbette modeli büyük ihtimalle kendiniz seçmiyorsunuz, bu yüzden d
 
 Fiyat farkı belirgin. Bir milyon token (kabaca 750 bin kelime) başına giriş 0,10 dolar, çıkış 0,50 dolardan başlıyor (100 bin token'a kadar olan istemler için). Eski Haiku 4.5'te bu rakamlar 1 ve 5 dolardı. Anthropic ortalamada yüzde 75 tasarruf bildiriyor. Yeni sürümün tokenizer'ı (metni parçalara bölen bileşen) aynı iş için biraz daha fazla token harcıyor, yani gerçek tasarruf iş yüküne göre değişir.
 
-Örnek: günde binlerce müşteri mesajını konulara ayıran bir e-ticaret ekibi, daha büyük model yerine Haiku 5.5'e geçerek maliyeti ciddi biçimde düşürebilir.
+Örnek: günde binlerce müşteri mesajını konulara ayıran bir e-ticaret ekibi, daha büyük model yerine Haiku 5.5'e geçerek maliyeti düşürebilir.
 
 Haiku 5.5, bu ailede ilk kez ayarlanabilir "efor" düzeyi sunuyor (Low, Med, High, Xhigh, Max). Hız ve maliyet ile zeka arasındaki dengeyi siz belirliyorsunuz.
 

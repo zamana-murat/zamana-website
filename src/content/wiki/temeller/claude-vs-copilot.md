@@ -7,12 +7,12 @@ tags:
   - karsilastirma
   - copilot
   - microsoft
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Microsoft Copilot, Microsoft'un Office uygulamaları ve Windows içine entegre AI asistanıdır.** Türkiye'deki orta-büyük kurumların ezici çoğunluğu Microsoft 365 kullanıyor; bu yüzden *"zaten Microsoft veriyor, Claude'a gerek var mı"* sorusu kurumsal satışta en sık karşılaşılan itirazdır.
+Microsoft Copilot, Microsoft'un Office uygulamaları ve Windows içine entegre AI asistanıdır. Türkiye'de Microsoft 365 çok yaygın; bu yüzden *"zaten Microsoft veriyor, Claude'a gerek var mı"* sorusu kurumsal satışta en sık karşılaşılan itirazdır.
 
-Bu sayfa Claude ile Microsoft Copilot'u dürüstçe karşılaştırır. [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) ve [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/) sayfaları diğer iki büyük rakibi ele alır.
+Aşağıda Claude ile Microsoft Copilot'u dürüstçe karşılaştırıyoruz. Diğer iki büyük rakip için [Claude vs ChatGPT](/wiki/temeller/claude-vs-chatgpt/) ve [Claude vs Gemini](/wiki/temeller/claude-vs-gemini/) sayfalarına bakın.
 
 ## Önce: "Copilot" Hangi Copilot?
 
@@ -27,7 +27,7 @@ Microsoft, "Copilot" markasını çok geniş kullanıyor. Karıştırılmaması 
 | **GitHub Copilot** | Geliştiriciler için kod tamamlama (bu sayfanın kapsamı dışında) |
 | **Copilot Studio** | Şirket içi özel chatbot kurma platformu |
 
-**Bu sayfada kıyas:** Microsoft 365 Copilot (kurumsal Office entegrasyonu) ve Copilot web, çünkü iş profesyoneli kıyaslaması bu iki ürünle olur.
+Bu sayfada Microsoft 365 Copilot (kurumsal Office entegrasyonu) ile Copilot web karşılaştırılıyor, çünkü iş profesyoneli kıyaslaması bu iki ürünle olur.
 
 ## Altyapı: İlginç Detay
 
@@ -110,14 +110,14 @@ Ama Microsoft'un dokümanına göre **Anthropic modelleri** de belirli Microsoft
 
 ## İkisini Birden Kullanmak: Yaygın Senaryo
 
-Türkiye'deki orta-büyük kurumların **çoğu zaten Microsoft 365 ekosistemindedir.** Pratik kararlardan biri:
+Türkiye'deki orta-büyük kurumlarda Microsoft 365 yaygındır. Pratik bir düzen:
 
 - **M365 Copilot**: Outlook, Word, Excel içinde günlük "yerinde" yardım için
 - **Claude**: Yaratıcı üretim, derin analiz, otomasyon için
 
 Her ikisi birden satın alınabilir; maliyet iki aboneliğin toplamıdır (Claude fiyatları için [Planlar](/wiki/temeller/planlar/)). Yoğun kullanan çalışanlar için karşılığını verir; kendi ekibinizde [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) ile doğrulayın.
 
-**Ama tek tedarikçi tercih ediliyorsa:** Çoğu durumda **Claude** seçilir, çünkü:
+**Tek tedarikçi isteniyorsa** Claude mantıklı bir seçimdir, çünkü:
 
 - Claude, Office'e Excel, PowerPoint ve Word eklentileriyle ve Microsoft 365 [connector](/wiki/araclar/connectors/)'ıyla zaten bağlanır
 - Claude [Skills](/wiki/yetenekler/skills/) ile .docx, .xlsx, .pptx üretebilir
@@ -142,7 +142,7 @@ Türkiye'deki tipik orta ölçekli şirketin başlangıç durumu:
 1. Pilot grupla **Claude** ile başlayın (6 kişi × 3 ay)
 2. 90 gün sonra ROI ölçün ([Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/))
 3. Kararı veriden verin: tek başına Claude yeterli mi, yoksa Copilot da eklenmeli mi
-4. Birçok kurumda sonuç, Claude ile M365 Copilot'un birlikte kullanıldığı karma yapı olur
+4. Sonuç, Claude ile M365 Copilot'un birlikte kullanıldığı karma bir yapı da olabilir
 
 ## İlgili Sayfalar
 

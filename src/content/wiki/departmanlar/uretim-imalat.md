@@ -8,10 +8,10 @@ tags:
   - imalat
   - oee
   - kalite
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Türkiye sanayisi geniş ve çeşitli: gıda, tekstil, otomotiv yan sanayi, makine, metal, plastik. Üretim hattı her gün veri üretir, ama bu verinin **büyük kısmı hiç okunmaz**; yönetim raporuna dönüşmediği için kaybolur. Claude, üretim verisini iş kararına çevirmeye ve vardiyalar arası iletişimi hızlandırmaya yardım eder.
+Türkiye sanayisi geniş ve çeşitli: gıda, tekstil, otomotiv yan sanayi, makine, metal, plastik. Üretim hattı her gün veri üretir; yönetim raporuna dönüşmeyen veri okunmadan kaybolur. Claude üretim verisini iş kararına çevirmeye ve vardiyalar arası iletişimi hızlandırmaya yardım eder.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -37,11 +37,11 @@ Vardiya amiri vardiya sonunda rapor yazmak için genellikle 30-60 dakika harcıy
 
 ### Haftalık / Aylık Üretim Raporu
 
-Vardiya raporlarını birleştirip yönetim için aylık rapor üretir: trend analizi, anomali işaretleme, **3 ana içgörü ve 3 öneri** formatında. Raporlar aynı klasöre düşüyorsa her Pazartesi sabahı o klasörü okuyup haftalık özeti hazırlayan bir [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) kurulabilir (klasör yerelse görev yerelde, bilgisayar açıkken çalışır).
+Vardiya raporlarını birleştirip yönetim için aylık rapor üretir: trend analizi, anomali işaretleme, 3 ana içgörü ve 3 öneri formatında. Raporlar aynı klasöre düşüyorsa her Pazartesi sabahı o klasörü okuyup haftalık özeti hazırlayan bir [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) kurulabilir (klasör yerelse görev yerelde, bilgisayar açıkken çalışır).
 
 ### OEE / Verim Analizi
 
-OEE (Overall Equipment Effectiveness) verilerini Claude analiz eder ve **kayıp kategorilerine** göre kırılım yapar. [Code Execution](/wiki/yetenekler/code-execution/) ile hesaplar gerçekten çalıştırılır, tahmin yürütülmez. Yine de sonuçları kendi raporlarınızla karşılaştırın.
+OEE (Overall Equipment Effectiveness) verilerini Claude analiz eder ve kayıp kategorilerine göre kırılım yapar. [Code Execution](/wiki/yetenekler/code-execution/) ile hesaplar gerçekten çalıştırılır, tahmin yürütülmez. Yine de sonuçları kendi raporlarınızla karşılaştırın.
 
 Hat karşılaştırma: birden çok hattın verisini birlikte verirseniz Claude hatlar arası farkı çıkarır ve hangi hattın uygulamasının diğerlerine örnek olabileceğini önerir. Fark nedenini hat sorumlusuyla doğrulayın; veri tanımları (duruş, fire) hatlar arasında aynı değilse karşılaştırma yanıltır. Üretim verisi Logo, Mikro gibi bir programdan geliyorsa dışa aktarma yolları için [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasına bakın.
 
@@ -49,7 +49,7 @@ Hat karşılaştırma: birden çok hattın verisini birlikte verirseniz Claude h
 
 ### ISO Belge Yönetimi
 
-ISO 9001 / 14001 / 45001 / IATF 16949 belgelerini **güncel** tutmak zordur. Claude:
+ISO 9001 / 14001 / 45001 / IATF 16949 belgelerini güncel tutmak zordur. Claude:
 
 - Mevcut prosedürleri okur, eski, çelişkili veya eksik bölümleri tespit eder
 - Yeni prosedür yazımında standart format uygular
@@ -58,7 +58,7 @@ ISO 9001 / 14001 / 45001 / IATF 16949 belgelerini **güncel** tutmak zordur. Cla
 
 ### Kalite Şikayet Yanıtı
 
-Müşteriden kalite şikayeti geldiğinde yanıt taslağı Claude ile yaklaşık bir saat içinde hazırlanabilir (Zamana eğitim materyali): **olgusal**, **savunmacı olmayan**, **önlemi somut** bir taslak. [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası genel şikayet yönetimini detaylandırır.
+Müşteriden kalite şikayeti geldiğinde yanıt taslağı Claude ile yaklaşık bir saat içinde hazırlanabilir (Zamana eğitim materyali): olgusal, savunmaya geçmeyen, önlemi somut bir taslak. [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası genel şikayet yönetimini detaylandırır.
 
 ### 8D Raporu
 
@@ -101,7 +101,7 @@ Yeni hammadde alındığında spesifikasyon belgesi Claude ile sade ve anlaşıl
 
 ### Kapasite Planlama
 
-Sipariş havuzu, kapasite ve vardiya verisinden Claude haftalık bir çizelge önerisi çıkarır. Optimum olmayabilir, ama planlama süresi belirgin biçimde kısalır; son karar planlama sorumlusundadır.
+Sipariş havuzu, kapasite ve vardiya verisinden Claude haftalık bir çizelge önerisi çıkarır. Optimum olmayabilir, ama planlama süresi kısalır; son karar planlama sorumlusundadır.
 
 ### Bottleneck Analizi
 
@@ -140,7 +140,7 @@ Hat operatörleri için güvenlik talimatları: sade, mümkünse fotoğraflı, t
 
 ### Senaryo 1: Vardiya Amiri Pazartesi Sabah
 
-Pazartesi 06:00. Amir, Cuma vardiya raporlarını Claude'a verir ve **hafta sonu yapılan üretim, fire ve duruş** özetini ister. Pazartesi sabah toplantısına 10-15 dakikada hazırdır.
+Pazartesi 06:00. Amir, Cuma vardiya raporlarını Claude'a verir ve hafta sonu yapılan üretim, fire ve duruş özetini ister. Pazartesi sabah toplantısına 10-15 dakikada hazırdır.
 
 ### Senaryo 2: Kalite Müdürü Müşteri Şikayetinde
 
@@ -195,7 +195,7 @@ Bir otomotiv yan sanayi tesisine müşteriden kritik bir şikayet geldi: sevk ed
 
 **Engel:** "Operasyonda zaman yok, Claude'a oturup yazmak vakit alır."
 
-**Çözüm:** Tam tersi, Claude **vakit kazandırır**. İlk hafta kısa bir öğrenme yatırımından sonra vardiya raporu birkaç dakikada tamamlanır.
+**Çözüm:** Claude vakit kazandırır. İlk hafta kısa bir öğrenme yatırımından sonra vardiya raporu birkaç dakikada tamamlanır.
 
 **Engel:** "Hattaki çalışanlar bilgisayarla iyi değil."
 
@@ -207,9 +207,9 @@ Bir otomotiv yan sanayi tesisine müşteriden kritik bir şikayet geldi: sevk ed
 
 ## Bireysel Kullanım: Üretim Mühendisi
 
-Tek bir üretim mühendisi de ciddi değer alabilir, ekip kurulumuna gerek yoktur.
+Tek bir üretim mühendisi de ekip kurmadan Claude'dan yarar görür.
 
-Vardiya, kalite ve bakım ekiplerinin aynı yöntemi kullanması için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programı var. Vardiya ve kalite raporları için [Claude ile Rapor](/wiki/gorevler/claude-ile-rapor/) rehberine bakın.
+Vardiya, kalite ve bakım ekiplerinin aynı yöntemi kullanması için [kurumsal yapay zeka eğitimimiz](/programlar/kurumsal/) var. Vardiya ve kalite raporları için [Claude ile Rapor](/wiki/gorevler/claude-ile-rapor/) rehberine bakın.
 
 ## İlgili Sayfalar
 

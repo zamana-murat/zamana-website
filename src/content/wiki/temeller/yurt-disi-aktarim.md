@@ -7,10 +7,10 @@ tags:
   - kvkk
   - yurt-disi-aktarim
   - gizlilik
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Claude'a kişisel veri girmeden önce şirketlerin en sık atladığı soru: **bu veri yurt dışına aktarılıyor, dayanağınız ne?** Bu sayfa [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasının yurt dışı aktarım bölümünün ayrıntısıdır. Plan, DPA ve eğitim ayarı gibi genel başlıklar orada.
+Claude'a kişisel veri girmeden önce şu soruyu yanıtlamanız gerekir: **bu veri yurt dışına aktarılıyor, dayanağınız ne?** Bu sayfa [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasının yurt dışı aktarım bölümünün ayrıntısıdır. Plan, DPA ve eğitim ayarı gibi genel başlıklar orada.
 
 > **Bu sayfa hukuki görüş değildir.** Mevzuat 5 Ekim 2026 itibarıyla resmî kaynaklardan derlendi. KVKK uyumunuzu mutlaka hukuk danışmanınızla doğrulayın.
 

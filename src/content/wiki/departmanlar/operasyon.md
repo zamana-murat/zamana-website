@@ -8,10 +8,10 @@ tags:
   - lojistik
   - sop
   - ncr
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Operasyon departmanında en büyük kayıp, **bilginin insanların kafasında yaşaması** ve hiç yazılı hale gelmemesidir. Claude bu kaybı gidermenin en kolay yollarından biridir.
+Operasyonda en büyük kayıp, bilginin insanların kafasında kalıp hiç yazıya geçmemesidir. Claude bu bilgiyi yazıya dökmenin kolay yollarından biridir.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -26,15 +26,15 @@ Operasyon departmanında en büyük kayıp, **bilginin insanların kafasında ya
 
 ### Süreç Yakalama
 
-Çalışan bir süreci **yüksek sesle Claude'a anlatır**. Claude bunu bir SOP'a yapılandırır. Süreç, "birinin kafasında"dan "yazılı ve devredilebilir" hale **tek oturumda** geçer.
+Çalışan bir süreci yüksek sesle Claude'a anlatır, Claude bunu SOP'a yapılandırır. Süreç, "birinin kafasında" olmaktan çıkıp tek oturumda yazılı ve devredilebilir hale gelir.
 
 ### Standart Operasyon Prosedürleri
 
-Şirket kültürüne uyan format, dil ve detay düzeyi. Bazı şirketler checklist ister, bazıları anlatı biçiminde prosedür; Claude ikisine de uyum sağlar.
+Şirket kültürüne uyan format, dil ve detay düzeyi. Bazı şirketler checklist ister, bazıları anlatı biçiminde prosedür; Claude ikisini de yazar.
 
 ### Süreç İyileştirme
 
-Mevcut süreci Claude'a verirsiniz; **darboğazları, gereksizlikleri, tek hata noktalarını ve iyileştirme fırsatlarını** belirler. Bu yapılandırılmış bir düşünmedir, yalnızca bir görüş değil.
+Mevcut süreci Claude'a verirsiniz; darboğazları, gereksiz adımları, tek hata noktalarını ve iyileştirme fırsatlarını belirler.
 
 ### Teslim Dokümantasyonu
 
@@ -58,7 +58,7 @@ Personel rol değiştirdiğinde veya ayrıldığında genellikle hiç yazılmaya
 
 **Incident (olay) ve istisna raporlama.** Kaotik bir durumdan zaman çizelgesi, etki, yanıt ve önleme içeren net bir yazılı kayıt çıkar.
 
-**Kök neden analizi.** Ne oldu, neden oldu, tekrarını ne önler. Claude burada yalnızca yazar değil, yapılandırılmış bir düşünme ortağıdır.
+**Kök neden analizi.** Ne oldu, neden oldu, tekrarını ne önler. Claude burada yazmanın ötesinde, düşünceyi yapıya oturtan bir ortak olur.
 
 **KPI anlatısı.** Operasyon metriklerini yönetime sade dille açıklamak: "zamanında teslimat %8 düştü" cümlesi; bağlam, sebep ve düzeltici aksiyonla bir hikâyeye dönüşür.
 
@@ -66,9 +66,9 @@ Personel rol değiştirdiğinde veya ayrıldığında genellikle hiç yazılmaya
 
 ### Kalite Kontrol ve NCR (Non-Conformance Report)
 
-Ürün veya teslimat spesifikasyonu karşılamadığında **NCR yapılandırılmış, olgusal ve izlenebilir** olmak zorundadır.
+Ürün veya teslimat spesifikasyonu karşılamadığında NCR yapılandırılmış, olgusal ve izlenebilir olmak zorundadır.
 
-Claude raporu çalışanın tarifinden üretir; **çalışan her teknik detayı doğrular**. Özellikle ISO sertifikalı şirketler için kritiktir.
+Claude raporu çalışanın tarifinden üretir; çalışan her teknik detayı doğrular. ISO sertifikalı şirketlerde bu adım atlanmaz.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -103,14 +103,14 @@ Claude raporu çalışanın tarifinden üretir; **çalışan her teknik detayı 
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Dokümantasyon kültürü**: SOP üretimini alışkanlık haline getirmek (backlog değil)
-- **Haftalık ops raporlama döngüsü**: veri toplama → anlatı → dağıtım
-- **Tedarikçi istisna yönetim iş akışı**: gecikme tespiti → iletişim → önleyici aksiyon
-- **NCR süreci**: olay yakalama → Claude taslağı → teknik doğrulama → dağıtım
+- Dokümantasyon kültürü: SOP üretimini alışkanlık haline getirmek
+- Haftalık ops raporlama döngüsü: veri toplama → anlatı → dağıtım
+- Tedarikçi istisna yönetim iş akışı: gecikme tespiti → iletişim → önleyici aksiyon
+- NCR süreci: olay yakalama → Claude taslağı → teknik doğrulama → dağıtım
 
 ## Sık Hatalar
 
-- **"Süreç bende, yazmaya değmez":** Bilgi tek kişideyse o kişi izne çıktığında süreç durur. Devredilemezliğin riskini baştan konuşun; SOP bir lüks değil, devir güvencesidir.
+- **"Süreç bende, yazmaya değmez":** Bilgi tek kişideyse o kişi izne çıktığında süreç durur. Devredilemezliğin riskini baştan konuşun; SOP devir güvencesidir.
 - **Uydurma sevkiyat ve gümrük bilgisi:** Claude sevkiyat süresi, gümrük detayı gibi spesifik bilgileri uydurabilir. Rakamı, süreyi ve mevzuat atfını kaynağından kontrol edin.
 - **Tedarikçi ve fiyat bilgisi.** Sözleşme fiyatı, tedarikçi iletişim kişileri ve müşteri siparişleri ticari sırdır; gerekmiyorsa yer tutucu kullanın. Şirket verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, ticari veri ayarları); zorunlu değil. Çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
 - **Çok genel SOP:** "Tedarikçiyle konuş" gibi boş adımlar işe yaramaz. Kim arar, hangi soruları sorar, hangi cevaba göre ne yapılır, bunu prompt'a yazın.

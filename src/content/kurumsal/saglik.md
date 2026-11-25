@@ -18,12 +18,12 @@ related:
   - { label: "Yaşam bilimleri için Claude", href: "/kurumsal/yasam-bilimleri/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 120
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Kaynak sayfa ne anlatıyor?
 
-Anthropic'in sağlık sayfasının ana fikri şu: sağlıkta zamanın büyük kısmı hastayla değil, evrakla geçiyor. Claude bu idari yükü azaltmak için konumlandırılıyor. Sayfadaki dört örnek iş akışı:
+Anthropic'in sağlık sayfasına göre sağlıkta zamanın büyük kısmı hastaya değil evraka gidiyor; Claude bu idari yükü azaltmak için konumlandırılıyor. Sayfadaki dört örnek iş akışı:
 
 - **Ön onay (prior authorization) incelemesi:** Bir işlem için sigorta ön onay dosyasını kapsam politikası, hekim kaydı ve kodlarla karşılaştırıp eksikleri göstermek.
 - **Reddedilen sigorta taleplerine itiraz:** İtiraz dosyasını hazırlamak.
@@ -58,7 +58,7 @@ Araştırma tarafında Anthropic'in ayrı bir ürünü var: veri analizi ve bili
 
 Kaynak sayfa Claude'un "HIPAA'ya hazır altyapı" üzerinde çalıştığını söylüyor. Enterprise planında HIPAA yapılandırması (Anthropic ile iş ortağı sözleşmesi, BAA) 14 Temmuz 2026'dan beri yöneticinin kendisinin açabileceği (self-serve) bir seçenek. HIPAA yapılandırması yalnız Enterprise'da var; Team ve bireysel planlarda (Free, Pro, Max, Ultra) açılamıyor. Claude Platform (API) için BAA ayrı bir yoldan yürüyor, yalnız belirli API özellikleri ve modeller kapsamda.
 
-BAA'nın kapsamı dar tutulmuştur. Kapsam dışında kalanlar:
+BAA'nın kapsamı dar. Kapsam dışında kalanlar:
 
 - Üçüncü taraf entegrasyonlar: MCP sunucuları, connector'lar ve Enterprise Search.
 - Claude in Chrome tarayıcı eklentisi ve skill'ler.

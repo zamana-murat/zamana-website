@@ -16,7 +16,7 @@ Anthropic'in yaşam bilimleri ekibi, birkaç ay boyunca altı ilaç geliştirici
 
 ## Sizin için ne değişiyor?
 
-Claude'u ilaç, sağlık ya da biyoteknolojide çalışmayan biri olarak kullanıyorsanız somut bir değişiklik yok. Bu yazı, Claude'un uzun ve çok adımlı uzman işlerinde nasıl kullanıldığına dair somut örnekler sunuyor. Kurumsal tarafta ise "yapay zekâ yalnız metin üretir" algısını sorgulatan veriler içeriyor. Yaşam bilimleri ekipleri için aşağıdaki örnekler fikir verebilir.
+Claude'u ilaç, sağlık ya da biyoteknolojide çalışmayan biri olarak kullanıyorsanız somut bir değişiklik yok. Duyuru, Claude'un uzun ve çok adımlı uzman işlerinde nasıl kullanıldığını örneklerle gösteriyor. Örnekler, yapay zekânın yalnız metin ürettiği düşüncesine de veriyle karşı çıkıyor. Yaşam bilimleri ekipleri aşağıdaki örneklerden kendi işleri için fikir çıkarabilir.
 
 Duyurudaki örnekler:
 

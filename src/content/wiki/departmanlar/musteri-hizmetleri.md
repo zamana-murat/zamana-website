@@ -7,10 +7,10 @@ tags:
   - musteri-hizmetleri
   - sikayet-yonetimi
   - sosyal-medya
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Müşteri hizmetleri en duygusal yüklü departmanlardan biridir: stres ve zaman baskısı altında doğru şeyi söylemek gerekir. Claude burada en büyük değeri, temsilcinin **zor anlarda doğru kelimeleri bulmasına yardım ederek** katar.
+Müşteri hizmetleri duygusal yükü yüksek departmanlardan biridir: stres ve zaman baskısı altında doğru şeyi söylemek gerekir. Claude buraya en çok, temsilcinin zor anlarda doğru kelimeleri bulmasına yardım ederek katkı verir.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -25,17 +25,15 @@ Müşteri hizmetleri en duygusal yüklü departmanlardan biridir: stres ve zaman
 
 ### Yanıt Kütüphanesi Kurmak
 
-Yaygın müşteri durumlarını kategorilere ayırın (teslim gecikmesi, ürün sorunu, fatura anlaşmazlığı, hizmet başarısızlığı, genel sorgu) ve Claude destekli başlangıç noktaları oluşturun. Amaç kopyala-yapıştır metinler değil, **asla robotik hissettirmeyen** taslaklardır.
+Yaygın müşteri durumlarını kategorilere ayırın (teslim gecikmesi, ürün sorunu, fatura anlaşmazlığı, hizmet başarısızlığı, genel sorgu) ve Claude destekli başlangıç noktaları oluşturun. Hedef, robotik hissettirmeyen ve her seferinde duruma uyarlanan taslaklardır.
 
 ### Şikayet Yönetimi
 
 Müşteri şikayeti, şirketin pozisyonu ve istenen çözüm girilir; empatik, net ve çözüm odaklı bir yanıt çıkar.
 
-> **Kilit nokta:** Claude, temsilcinin **stres altındayken bile doğru şeyi söylemesine** yardım eder.
-
 ### Yükseltme Yanıtları
 
-Yüksek riskli durumlarda dil kesin olmalıdır. **Claude taslak yazar, çalışan rafine eder, süpervizör onaylar.** Taslak asla son söz değildir.
+Yüksek riskli durumlarda dil kesin olmalıdır. Claude taslak yazar, çalışan rafine eder, süpervizör onaylar. Taslak son söz değildir.
 
 ### Zor Müşteri İletişimi
 
@@ -43,15 +41,15 @@ Kötü haber vermek, imkânsız beklentileri yönetmek, zor bir konuşma boyunca
 
 ### Sosyal Medya Şikayet Yönetimi
 
-Instagram, Google ve LinkedIn'deki kamuya açık şikayetler **hızlı ve halka açık bir dil** gerektirir: aynı anda profesyonel, empatik ve stratejik olarak uygun. **Claude taslak yazar, temsilci yayınlar.**
+Instagram, Google ve LinkedIn'deki kamuya açık şikayetler hızlı ve herkesin okuyacağı bir dil gerektirir: aynı anda profesyonel, empatik ve stratejik olarak uygun. Claude taslak yazar, temsilci yayınlar.
 
-Kötü kelimelerle verilmiş bir kamu yanıtı krize dönüşebilir. **Türkiye'de müşteri yorumları halka açıktır ve etkilidir**, bu yüzden bu alan yüksek değerli bir kullanım senaryosudur. Şikayetvar gibi şikayet platformlarındaki markaya yanıtlar da herkes tarafından okunur: aynı ilke geçerlidir, Claude taslak yazar, temsilci kontrol edip yayınlar.
+Kötü kelimelerle verilmiş bir kamu yanıtı krize dönüşebilir. Türkiye'de müşteri yorumları herkese açıktır ve etkilidir; bu yüzden bu alan değerli bir kullanım senaryosudur. Şikayetvar gibi şikayet platformlarındaki markaya yanıtlar da herkes tarafından okunur: aynı ilke geçerlidir, Claude taslak yazar, temsilci kontrol edip yayınlar.
 
 ## Bölüm 2: Bilgi ve Dokümantasyon
 
 **FAQ belge üretimi.** Çalışan, en yaygın 20 müşteri sorusunu yüksek sesle anlatır; Claude FAQ'ı yapılandırıp yazar. Haftalar sürebilecek iş, çoğu zaman bir oturuma sığar: 20 soruluk ilk FAQ taslağı tahminen 30-60 dakikada çıkar, ürün ve politika doğruluğunu ekip kontrol eder.
 
-**Ürün/hizmet bilgi tabanı.** İç bilgiyi, temsilcilerin baskı altında uydurmak yerine **gerçekten kullandığı** müşteri odaklı dokümantasyona çevirmek.
+**Ürün/hizmet bilgi tabanı.** İç bilgiyi, temsilcilerin baskı altında uydurmak yerine gerçekten kullanacağı, müşteri odaklı dokümantasyona çevirmek.
 
 **Yükseltme prosedürü dokümantasyonu.** Ne zaman ve nasıl yükseltileceğine dair net iç rehberler: kim, hangi sırayla, hangi bilgiyle aranır.
 
@@ -61,25 +59,25 @@ Kötü kelimelerle verilmiş bir kamu yanıtı krize dönüşebilir. **Türkiye'
 
 ## Bölüm 3: Analiz ve Raporlama
 
-**Müşteri geri bildirim sentezi.** Yorumlar, şikayetler ve anket yanıtlarından Claude tema ve kalıpları, **en sık tekrar eden 3 sorunu** belirler. 50 veri noktasını eyleme geçirilebilir bir özete çevirir.
+**Müşteri geri bildirim sentezi.** Yorumlar, şikayetler ve anket yanıtlarından Claude tema ve kalıpları, en sık tekrar eden 3 sorunu belirler. 50 veri noktasını eyleme geçirilebilir bir özete çevirir.
 
 **Haftalık/aylık müşteri hizmetleri raporları.** Hacim, temalar, çözüm oranları, müşteri memnuniyet trendi: yönetim için anlatı, yarım gün yerine tahminen 20-30 dakikada taslak olur (veriyi kontrol etmek sizde).
 
-**Şikayet trend analizi.** Şikayetlerin içine gömülü, tekrar eden ürün veya süreç sorunlarını belirlemek. Bulgular doğrudan operasyona ve ürün ekibine aktarılır, sistemik iyileştirmeyi besler.
+**Şikayet trend analizi.** Şikayetlerin içine gömülü, tekrar eden ürün veya süreç sorunlarını belirlemek. Bulgular doğrudan operasyon ve ürün ekibine gider ve sistemik iyileştirmeye dayanak olur.
 
 **Eğitim materyali oluşturma.** "Her yeni temsilcinin bilmesi gereken ilk 10 senaryo": dokümante edilmiş, açıklamalı, kullanıma hazır.
 
 ### VIP Müşteri İletişimi
 
-Yüksek değerli müşteriler farklı bir üslup ister: **daha kişisel, daha kıdemli, daha dikkatli seçilmiş kelimelerle.** Claude, bu müşterilere özel yanıt ve proaktif iletişim taslakları hazırlar; müşterinin tanındığını hissettirir ama sürdürülemez bir emsal oluşturmaz.
+Yüksek değerli müşteriler farklı bir üslup ister: daha kişisel, daha kıdemli, daha dikkatli seçilmiş kelimelerle. Claude, bu müşterilere özel yanıt ve proaktif iletişim taslakları hazırlar; müşterinin tanındığını hissettirir ama sürdürülemez bir emsal oluşturmaz.
 
 ### İade ve İptal Politika İletişimi
 
-Müşteri iade veya iptal istediğinde yanıt, **politika uyumu, hukuki duruş ve ilişkinin korunmasını** dengelemek zorundadır. Claude, politikanın kendisini ve yaygın iade senaryoları için yanıtları (onay, kısmi onay, ret) yazar. İnternetten yapılan satışlarda (mesafeli satış) tüketicinin cayma hakkı ve iade süreleri yasal çerçevededir; yanıttaki süre ve koşulları güncel mevzuat ve politikanıza göre siz doğrulayın, Claude'un ezberine bırakmayın.
+Müşteri iade veya iptal istediğinde yanıt politika uyumunu, hukuki duruşu ve ilişkinin korunmasını dengelemek zorundadır. Claude, politikanın kendisini ve yaygın iade senaryoları için yanıtları (onay, kısmi onay, ret) yazar. İnternetten yapılan satışlarda (mesafeli satış) tüketicinin cayma hakkı ve iade süreleri yasal çerçevededir; yanıttaki süre ve koşulları güncel mevzuat ve politikanıza göre siz doğrulayın, Claude'un ezberine bırakmayın.
 
 ### Çok Dilli Müşteri Desteği
 
-Uluslararası müşterilere hizmet veren şirketlerde Claude, İngilizce (veya başka dilde) destek yanıtlarını Türkçedeki özenle taslaklar. Müşteri tabanı yerel olmayan, ihracat odaklı işletmeler için kritiktir.
+Uluslararası müşterilere hizmet veren şirketlerde Claude, İngilizce (veya başka dilde) destek yanıtlarını Türkçedeki özenle taslaklar. Müşteri tabanı yurt dışında olan, ihracat yapan işletmelerde bu özellikle işe yarar.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -115,10 +113,10 @@ Uluslararası müşterilere hizmet veren şirketlerde Claude, İngilizce (veya b
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Yanıt taslak iş akışı**: Claude-destekli, insan-incelemeli yanıt üretimi
-- **Sosyal medya izleme ve yanıt süreci**: şikayet tespiti → kategorileme → taslak → onay → yayın
-- **Aylık raporlama döngüsü**: veri toplama → sentez → yönetim özeti
-- **VIP müşteri yükseltme yolu**
+- Yanıt taslak iş akışı: Claude-destekli, insan-incelemeli yanıt üretimi
+- Sosyal medya izleme ve yanıt süreci: şikayet tespiti → kategorileme → taslak → onay → yayın
+- Aylık raporlama döngüsü: veri toplama → sentez → yönetim özeti
+- VIP müşteri yükseltme yolu
 
 ## Gerçek Örnek: Şikayetvar'da Kamuya Açık Yanıt
 
@@ -141,7 +139,7 @@ Pazartesi sabahı Şikayetvar'da markanız hakkında bir şikayet yayımlanmış
 - **Müşteri verisini olduğu gibi yapıştırmak.** Sipariş numarası, müşteri kimliği, kişisel veriyi anonimleştirin. Müşteri verisi işliyorsanız Team ya da Enterprise öneriyoruz (merkezi kontrol, veri ayarları); zorunlu değil. Yurt dışı aktarım için [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasına bakın.
 - **Fazla empatiye kaymak.** Bazı şikayetlerde net bir pozisyon gerekir; fazla empati pozisyonu zayıflatabilir. Taslakta "haklıyız" ya da "haksızız" kararını önce siz verin.
 
-Yanıt tonunun ekip genelinde tutarlı kalması için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programı, kendi şablonlarınızla çalışır.
+Yanıt tonunun ekip genelinde tutarlı kalması için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programımız kendi şablonlarınızla çalışır.
 
 ## İlgili Sayfalar
 

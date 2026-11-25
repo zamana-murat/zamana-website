@@ -7,14 +7,14 @@ tags:
   - roi
   - hesaplayici
   - maliyet
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 import RoiHesaplayici from '../../../components/wiki/RoiHesaplayici.astro';
 
 **"Claude ayda bana ne kadara patlıyor, karşılığında ne getiriyor?"** Bu sayfa tek bir aylık hesap yapar. Rakamları kendi şirketinize göre girin; formül açık, varsayımlar yazılı, sonucu sizin ölçümünüz belirler.
 
-Aynı hesabın 6 aylık, eğitim bedeli dahil versiyonu [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasında. Kazanılan saati nasıl ölçeceğiniz de orada. Bu sayfa daha kısa bir soruya cevap verir: abonelik kendini çıkarıyor mu?
+Aynı hesabın 6 aylık, eğitim bedeli dahil versiyonu [Ölçüm Metrikleri](/wiki/temeller/olcum-metrikleri/) sayfasında. Kazanılan saati nasıl ölçeceğiniz de orada. Burada daha kısa bir soruya bakıyoruz: abonelik kendini çıkarıyor mu?
 
 <RoiHesaplayici />
 
@@ -49,7 +49,7 @@ Girmeniz gereken rakam brüt maaş değil, **yüklü maliyet**: brüt maaşın �
 | Rol grubu | Saatlik yüklü maliyet (TL) | Ne zaman |
 |---|---|---|
 | Destek ve idari roller | 250-300 | Giriş ve orta düzey, tekrar eden iş yoğun |
-| Uzman (satış, finans, İK, operasyon) | 300-400 | Çoğu ekip için makul başlangıç |
+| Uzman (satış, finans, İK, operasyon) | 300-400 | Başlangıç için makul |
 | Kıdemli uzman ve yönetici | 400-500 | Müdür, direktör ve benzeri roller |
 
 **Varsayılan 400 TL** orta kuşak uzman-yönetici karışımı içindir. Bu aralıklar **Zamana'nın örnek varsayımıdır**, bir piyasa araştırmasından alınmış ölçülmüş veri değildir ve enflasyonla eskir. En doğru rakam, şirketinizin bordro ve muhasebe verisinden çıkan kendi rakamıdır; mali müşaviriniz ya da İK'nız bunu birkaç dakikada verir.
@@ -81,7 +81,7 @@ Tüm senaryolarda kur 40 TL/USD, KDV hariç, dönüşüm payı %70. **Eğitim, d
 | **Geri dönüş oranı** | **%-9** | **%355** | **%507** | **%14** |
 | Başabaş (kişi başı saat/hafta) | 4,4 | 0,9 | 0,8 | 2,6 |
 
-Bu tablodan üç ders çıkar:
+Tablodan üç sonuç çıkıyor:
 
 1. **İlk ay zayıf görünebilir, bu normaldir.** A senaryosunda ilk ay Max'in maliyeti kazancı biraz aşıyor: kullanıcı henüz alışkanlık kazanmadı. Max'i ilk ay için öneriyoruz; çünkü Pro'nun limiti yeni kullanıcı için çabuk dolar ve kişi "çalışmıyor" diye bırakabilir (zorunlu değil, bir öneridir). Asıl hesap ikinci aydan sonra, B satırındaki gibi yapılır.
 2. **Plan seçimi hesabı çok değiştirir.** Aynı ekip, Pro ile Max arasında maliyeti beş kat oynatıyor. Yoğun kullanan kişi Max'i hak eder, hafif kullanan Pro ile yetinir; bunu ikinci aydan sonra kullanım verisine bakarak ayarlayın.

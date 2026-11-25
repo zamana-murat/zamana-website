@@ -6,14 +6,14 @@ tags:
   - prompting
   - temel
   - prompt-anatomisi
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Prompting, Claude'la çalışırken en öğretilebilir beceridir. Ve en çok hata yapılan yerdir.
+Prompt yazmak, Claude'la çalışırken en kolay öğretilen ama en çok hata yapılan beceridir.
 
-Çoğu kişi Claude'la başarısız olur, çünkü **Google'a sorar gibi sorar**: kısa, anahtar kelime bazlı, bağlamsız. İyi bir prompt bunun zıttıdır: kâğıda dökülmüş yapılandırılmış düşüncedir.
+Claude'la başarısız olanlar genellikle ona Google'a sorar gibi sorar: kısa, anahtar kelime bazlı, bağlamsız. İyi bir prompt kâğıda dökülmüş, yapılandırılmış düşüncedir.
 
-Bu sayfa, her iş profesyonelinin günlük promptlarına uygulayabileceği beş temel bileşeni anlatır.
+Aşağıda her iş profesyonelinin günlük promptlarına uygulayabileceği beş temel bileşen var.
 
 ## Bir Promptun Beş Bileşeni
 
@@ -33,7 +33,7 @@ Rol, Claude'un cevabın tonunu, derinliğini ve odağını belirler. Boş bırak
 
 ### 2. Bağlam: Arka Plan Verin
 
-Ne kadar ilgili bağlam verirseniz çıktı o kadar iyi olur. İş bağlamı özellikle kritiktir.
+Ne kadar ilgili bağlam verirseniz çıktı o kadar iyi olur. İş bağlamı özellikle önemlidir.
 
 > *"Lojistik sektöründe 200 çalışanlı bir firmayla toplantıya hazırlanıyorum. Ana sıkıntıları sevkiyat gecikmeleri. Üç yıldır süren bir ilişkimiz var. Son teklifimiz %12 zam içeriyordu ve henüz cevap gelmedi..."*
 
@@ -96,7 +96,7 @@ Kısıtlar pozitif talimatların yapamadığını yapar, Claude'un düşmemesi g
 
 ## Pozitif ve Negatif Örnekler
 
-Claude'a iyi örnek **ve** kötü örnek gösterin. Bu tek başına çıktı kalitesini çarpıcı biçimde artırır.
+Claude'a iyi örnek **ve** kötü örnek gösterin. Bu çıktıyı hedefe yaklaştırır.
 
 > *"İyi örnek şöyle olmalı: [iyi örnek metin]. Kaçınılması gereken kötü örnek: [kötü örnek metin]."*
 
@@ -112,11 +112,11 @@ Kötü bir alışkanlık: Claude ilk cevabı verir, çalışan "olmadı" deyip y
 - *"3 alternatif konu başlığı ver."*
 - *"Bu versiyon ile ilk versiyonun birleşimini dene: birinci ve ikinci paragraflar yeni versiyondan, üçüncü ilk versiyondan."*
 
-İterasyon, prompt yazma becerisinin en güçlü parçasıdır. İyi bir çalışan 5-6 iterasyona alışır, bundan rahatsız olmaz.
+İyi bir çalışan 5-6 iterasyona alışır, bundan rahatsız olmaz.
 
 ## Bağlamı Önce Verin Prensibi
 
-Her zaman Claude'a **ihtiyacı olan bağlamı ÖNCE** verin, sonra sorunuzu sorun. Soruyu başa yazıp durumu "aa, bu arada" diye sonradan eklemek, bir danışmanı arayıp önce "ne yapmalıyım?" deyip sonra durumu anlatmak gibidir. Önce durum, sonra soru:
+Claude'a ihtiyacı olan bağlamı önce verin, sonra sorunuzu sorun. Soruyu başa yazıp durumu "aa, bu arada" diye sonradan eklemek, bir danışmanı arayıp önce "ne yapmalıyım?" deyip sonra durumu anlatmak gibidir. Önce durum, sonra soru:
 
 > *"Bağlam: Müşteri 3 yıldır bizimle çalışıyor, son 2 ay cevap vermedi, bütçe sıkıntısından bahsetmişti. Soru: Şimdi en doğru adım nedir?"*
 
@@ -129,7 +129,7 @@ Eskiden karmaşık işlerde "cevaptan önce adım adım düşün" yazmak ana kal
 - **Değerlendirme kriterlerini söyleyin.** "Karar vermeden önce şu üç ölçüte göre tart: maliyet, risk, süre." Claude'a neye bakacağını vermek, "daha çok düşün" demekten güçlüdür.
 - **Düşünme derinliğini Effort ile ayarlayın.** Pro ve üstü planlarda gönder düğmesinin yanındaki model adına tıklayınca model, Effort ve Thinking ayarları açılır. Effort beş kademedir (Low'dan Max'e): rutin işte düşük, zor karar ve analizde yüksek seçin. Yüksek effort limitinizi daha hızlı tüketir. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
 
-*"Akıl yürütmeni önce özetle, sonra tavsiyeni ver"* gibi cümleler hâlâ işe yarar, ama gerekçeyi **görünür kılmak** için: Claude'un neden o sonuca vardığını siz denetleyebilirsiniz. Zincirleme (adımlara bölme) ve eleştirmen teknikleri [İleri Seviye](/wiki/prompting/ileri-seviye/) sayfasında derinlemesine anlatılıyor.
+*"Akıl yürütmeni önce özetle, sonra tavsiyeni ver"* gibi cümleler hâlâ işe yarar, ama gerekçeyi görünür kılmak için: Claude'un neden o sonuca vardığını siz denetleyebilirsiniz. Zincirleme (adımlara bölme) ve eleştirmen teknikleri [İleri Seviye](/wiki/prompting/ileri-seviye/) sayfasında derinlemesine anlatılıyor.
 
 ## Geliştiriciler için
 
@@ -159,7 +159,7 @@ Bu teknik, işi göndermeden önce eksikleri kendiniz yakalamanızı sağlar. Ro
 | Claude'u Google sanma | Yanlış zihinsel model | Düşünme ortağı olarak gör |
 | Tek promptta çoklu soru | Karışık çıktı | Tek prompt, tek görev |
 
-Bu tablo her haftada en az bir kez gözden geçirilmeli. Yaptığınız prompt'u gönderirken kendinize sorun: "Bu altı tuzaktan birine düştüm mü?" Hataların tamamı örnekleriyle [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) sayfasında.
+Tabloyu haftada en az bir kez gözden geçirin. Prompt'u göndermeden önce kendinize sorun: "Bu altı tuzaktan birine düştüm mü?" Hataların tamamı örnekleriyle [Yaygın Prompting Hataları](/wiki/prompting/yaygin-hatalar/) sayfasında.
 
 ## Hızlı Kontrol Listesi
 

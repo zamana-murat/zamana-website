@@ -16,12 +16,12 @@ related:
   - { label: "Türk iş araçları (wiki)", href: "/wiki/temeller/turk-is-araclari/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 52
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Şirketiniz Microsoft yerine Google kullanıyorsa günün büyük kısmı Docs, Sheets ve Slides'ta geçer. Claude for Google Workspace, 6 Ekim 2026'dan beri genel beta olarak bu üç uygulamaya yan panel ekliyor. Google Workspace Marketplace'ten tek kurulum yaparsınız, Claude üç uygulamada birden görünür. Dosyayı sohbete kopyalamanız gerekmez; Claude açık dosyada sizinle birlikte çalışır.
+Şirketiniz Microsoft yerine Google kullanıyorsa belge, tablo ve sunum işiniz Docs, Sheets ve Slides'ta yürür. Claude for Google Workspace, 6 Ekim 2026'dan beri genel beta olarak bu üç uygulamaya yan panel ekliyor. Google Workspace Marketplace'ten tek kurulum yaparsınız, Claude üç uygulamada birden görünür. Dosyayı sohbete kopyalamanız gerekmez; Claude açık dosyada sizinle birlikte çalışır.
 
 - **Google Docs:** Sıfırdan taslak yazar, metni ve yapıyı sıkılaştırır. Değişiklikler öneri (suggestion) olarak gelir, tek tek uygular ya da reddedersiniz. Başlık stillerinize uyar.
 - **Google Sheets:** Finansal model kurar, veriyi analiz eder, bağlı veri kaynaklarınızdan güncel rakam çeker. Değişen hücreler vurgulanır.

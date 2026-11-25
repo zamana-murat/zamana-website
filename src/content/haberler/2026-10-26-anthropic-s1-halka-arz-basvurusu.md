@@ -16,14 +16,14 @@ Anthropic, 26 Ekim 2026'da ABD Menkul Kıymetler ve Borsa Komisyonu'na (SEC) hal
 
 ## Sizin için ne değişiyor?
 
-Claude kullanıcısı olarak bugün için somut bir değişiklik duyurulmadı. Duyuru planlar, fiyatlar, ürünler ya da kullanım koşulları hakkında bir şey söylemiyor. Bu yazı olguları aktarır, yorum ya da yatırım tavsiyesi içermez.
+Claude kullanıcısı olarak bugün için somut bir değişiklik duyurulmadı. Duyuru planlar, fiyatlar, ürünler ya da kullanım koşulları hakkında bir şey söylemiyor.
 
 ## Bilmeniz gerekenler
 
 - **Durum:** Kayıt beyanı verildi ama henüz yürürlüğe girmedi. Yürürlüğe girene kadar menkul kıymetler satılamaz, satın alma teklifleri kabul edilemez.
 - **Önceki adım:** Anthropic 1 Haziran 2026'da SEC'e gizli bir taslak S-1 sunduğunu duyurmuştu.
 - **Aracı kurumlar:** Ön izahnameyi Goldman Sachs & Co. LLC ve Morgan Stanley & Co. LLC dağıtıyor.
-- **Şirket yapısı:** Anthropic, PBC bir kamu yararı şirketi (Public Benefit Corporation). Belirtilen misyonu, gelişmiş yapay zekânın sorumlu biçimde geliştirilmesi ve sürdürülmesi.
+- **Şirket yapısı:** Anthropic bir kamu yararı şirketi (Public Benefit Corporation, PBC). Şirketin belirtilen misyonu, gelişmiş yapay zekânın sorumlu biçimde geliştirilmesi ve sürdürülmesi.
 - **Türkiye:** Duyuru Türkiye'deki yatırımcılar ya da kullanıcılar için ayrı bir bilgi içermiyor. Ayrıntılar için SEC'e verilen belgelere ve resmi duyuruya bakın.
 - Bu yazı yatırım tavsiyesi değildir.
 

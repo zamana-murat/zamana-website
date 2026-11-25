@@ -5,7 +5,7 @@ description: "Claude'un beş model ailesi Mythos, Fable, Opus, Sonnet ve Haiku i
 eyebrow: "Model"
 lead: "Claude tek bir model değil, hız ve derinlik dengesi farklı beş aile. Çoğu iş için doğru seçim Sonnet, ağır işler için Opus; geri kalanı ne zaman gerektiğini bu sayfada bulursunuz."
 heroAlt: "Claude model ailesi: Mythos, Fable, Opus, Sonnet ve Haiku"
-availability: "Haiku ve Sonnet Free dahil tüm planlarda. Opus ve Fable ücretli planlarda; Fable Pro ve Team Standard'da kullanım kredisiyle, Max, Ultra ve Team Premium'da planın içinde. Mythos yalnız davetle."
+availability: "Haiku ve Sonnet Free dahil tüm planlarda. Opus ve Fable ücretli planlarda; Fable Pro ve Team Standard'da kullanım kredisiyle, Max, Ultra ve Team Premium'da planın içinde. Mythos yalnız doğrulama programlarındaki kuruluşlara."
 sourceUrl: "https://www.anthropic.com/claude/opus"
 sourceTitle: "Claude Opus, Sonnet, Haiku, Fable ve Mythos model sayfaları (anthropic.com/claude)"
 related:
@@ -15,7 +15,7 @@ related:
   - { label: "Effort Kontrolü (wiki)", href: "/wiki/yetenekler/effort-control/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 60
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -24,31 +24,31 @@ Claude ile her sohbet ettiğinizde bir **model** konuşur. Anthropic bunları ai
 
 | Aile | Güncel sürüm | Bağlam penceresi | Kısaca |
 |---|---|---|---|
-| Mythos | 5.1 | 1M | En yetenekli, yalnız davetle |
-| Fable | 5.1 | 1M | En güçlü genel model, uzun ve zor işler |
+| Mythos | 5.2 | 1M | En yetenekli, yalnız doğrulama programlarıyla |
+| Fable | 5.2 | 1M | En güçlü genel model, uzun ve zor işler |
 | Opus | 5.5 | 1M | Ağır iş ve ajanlar |
 | Sonnet | 5.5 | 1M | Hız ve zekâ dengesi, günlük model |
 | Haiku | 5.5 | 1M | En hızlı, hafif işler |
 
 Bağlam penceresi, Claude'un bir konuşmada aynı anda "aklında tutabildiği" metin miktarıdır; sayı büyüdükçe uzun belgeler ve uzun yazışmalar tek konuşmaya sığar (1M, 1 milyon token demektir).
 
-**Zamana çizgisi:** günlük iş için Sonnet, ağır işler için Opus. Fable ve Mythos çoğu iş kullanıcısının gündelik ihtiyacının ötesindedir. Aşağıda her birini, sırasıyla, kısaca tanıyın.
+**Zamana çizgisi:** günlük iş için Sonnet, ağır işler için Opus. Fable ve Mythos gündelik iş ihtiyacının ötesindedir. Her aile aşağıda ayrı başlıkta.
 
 <a id="mythos"></a>
 
 ## Mythos
 
-Mythos 5.1, Anthropic'in en yetenekli modelidir ve **genel kullanıma açık değildir.** Siber güvenlik ve biyoloji araştırmasında çok güçlü olduğu için yalnızca güvenilir erişim programlarıyla doğrulanmış kuruluşlara veriliyor. Anthropic'e göre erişim şu an yalnızca bir grup ABD kuruluşu için mümkün; genişletmeye çalıştıklarını söylüyor.
+Mythos 5.2, Anthropic'in en yetenekli modelidir ve **genel kullanıma açık değildir** (sınırlı erişim). Yalnızca doğrulama programlarından geçen kuruluşlara veriliyor: siber güvenlik uzmanları için Cyber Verification Program, yaşam bilimleri araştırmacıları için Life Sciences Verification Program. Enterprise müşterileri ise Mythos 5.2'yi Claude Security içinde programsız da kullanabilir.
 
-Mythos 5.1 ile Fable 5.1 aynı temel modeldir. Fark, Fable'ın siber güvenlik ve biyolojide risk taşıyan işleri sınırlayan güvenlik katmanlarıyla gelmesidir. Mythos kullanmak varsayılan olarak 30 günlük veri saklamayı kabul etmeyi gerektirir. Claude Security ürünü Mythos 5.1 üzerinde çalışır ([Claude Security](/claude/security/)).
+Mythos ile Fable aynı temel modelden gelir. Fark, Fable'ın siber güvenlik ve biyolojide risk taşıyan işleri sınırlayan güvenlik katmanlarıyla gelmesidir. Mythos kullanmak varsayılan olarak 30 günlük veri saklamayı kabul etmeyi gerektirir. Claude Security ürünü Mythos 5.2 üzerinde çalışır ([Claude Security](/claude/security/)).
 
-**Türk bir şirket için:** Mythos'u seçeneğiniz olarak düşünmeyin. Siber savunma yapan bir güvenlik ekibi Anthropic'in doğrulama programına başvurabilir, kabul garantisi yok.
+**Türk bir şirket için:** Mythos'u seçeneğiniz olarak düşünmeyin. Siber savunma yapan bir güvenlik ekibi Cyber Verification Program'a başvurabilir.
 
 <a id="fable"></a>
 
 ## Fable
 
-Fable 5.1, **genel kullanıma açık en güçlü modeldir.** Saatler hatta günler süren, çok adımlı ve zor işler için tasarlanmıştır: derin araştırma ve analiz, büyük kod projeleri, birden çok uygulamaya yayılan görevler. Belgelerin ve PDF'lerin içindeki tabloları, grafikleri ve diyagramları da okur. Bir adım başarısız olduğunda toparlanır ve çalışırken sizi bilgilendirir.
+Fable 5.2, **genel kullanıma açık en güçlü modeldir.** Önceki sürüm Fable 5.1 de ücretli planlarda hâlâ seçilebilir. Saatler hatta günler süren, çok adımlı ve zor işler için tasarlanmıştır: derin araştırma ve analiz, büyük kod projeleri, birden çok uygulamaya yayılan görevler. Belgelerin ve PDF'lerin içindeki tabloları, grafikleri ve diyagramları da okur. Bir adım başarısız olduğunda toparlanır ve çalışırken sizi bilgilendirir.
 
 **Plana göre erişim farklıdır:**
 
@@ -77,7 +77,7 @@ Not: Anthropic, Opus 5.5'i hem kodlama hem bilgi işi için "günlük çalışma
 
 Sonnet 5.5, Opus'un daha hızlı ve daha ucuz tamamlayıcısıdır; **iyi tanımlanmış gündelik işler** için tasarlanmıştır: yazışma ve rapor taslakları, analiz, belge ve slayt hazırlama, sınırlı kapsamlı araştırma, inceleme. Anthropic'e göre Sonnet 5'ten %30 hızlıdır ve çoğu iş için %30'a kadar daha ucuzdur. Yazısı daha net ve doğrudandır, bu yüzden taslaklar daha az temizlik ister. Şablonu verirseniz o şablona uygun slaytlar kurar.
 
-Free dahil herkes claude.ai'de (web, iOS, Android) Sonnet ile sohbet edebilir; Free'de hangi Sonnet sürümünün sunulduğunu Anthropic'in fiyat sayfası belirtmiyor. Günlük işin büyük kısmı için başlangıç noktası budur. Sonuç zayıf ya da yüzeysel kalırsa aynı işi Opus ile deneyin.
+Free dahil herkes claude.ai'de (web, iOS, Android) Sonnet ile sohbet edebilir; Free'de hangi Sonnet sürümünün sunulduğunu Anthropic'in fiyat sayfası belirtmiyor. Günlük işlerde başlangıç noktası budur. Sonuç zayıf ya da yüzeysel kalırsa aynı işi Opus ile deneyin.
 
 <a id="haiku"></a>
 
@@ -97,12 +97,12 @@ Haiku 5.5, ailenin **en hızlı ve en hafif** modelidir (7 Ekim 2026'da çıktı
 | Uzun ve çok kaynaklı araştırma, karmaşık model, sözleşme incelemesi | Opus |
 | Günler süren, çok adımlı, en zor işler (planınız izin veriyorsa) | Fable |
 | Çok hızlı, basit ve yüksek hacimli işler | Haiku |
-| Siber güvenlik ya da biyoloji araştırması | Mythos (davetle) |
+| Siber güvenlik ya da biyoloji araştırması | Mythos (doğrulama programıyla) |
 
 **Plan.** Free'de Haiku ve Sonnet; Pro ve üstünde Opus ve Fable de model seçicide görünür. Fable için yukarıdaki kullanım kredisi kuralı geçerlidir. Bağlam penceresi plana göre değişmez: yeni modellerde (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5) 1M.
 
 **Limit.** Kullanım limitiniz planınıza bağlıdır; Fable gibi modeller için ayrıca kredi ya da haftalık pay kuralı vardır. Ayrıntı için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
 
-**API fiyatları** (geliştirici kullanımı, milyon token başına girdi / çıktı): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0,10 / $0,50'den (100K token'a kadar istem). Abonelik (Pro, Max, Ultra) fiyatlarından ayrıdır. Ödeme USD ile yapılır; Türkiye'de Anthropic ofisi ya da temsilcisi yoktur ([Türkiye'de Claude](/wiki/temeller/turkiyede-claude/)).
+**API fiyatları** (geliştirici kullanımı, milyon token başına girdi / çıktı): Fable 5.2 $8 / $40 (hızlı mod $16 / $80), Mythos 5.2 $8 / $40 (yalnız doğrulama programlarında), Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0,10 / $0,50'den (100K token'a kadar istem). Abonelik (Pro, Max, Ultra) fiyatlarından ayrıdır. Ödeme USD ile yapılır; Türkiye'de Anthropic ofisi ya da temsilcisi yoktur ([Türkiye'de Claude](/wiki/temeller/turkiyede-claude/)).
 
 Hangi modelin hangi işte işinize yaradığını ekibinizle birlikte denemek isterseniz [Zamana programlarına](/programlar/) bakabilirsiniz.

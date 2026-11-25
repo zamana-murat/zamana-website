@@ -7,11 +7,10 @@ tags:
   - rapor
   - arastirma
   - taslak
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude ile rapor hazırlamak en iyi, yazma işini beş küçük adıma bölünce çalışır:** hedef ve okuyucuyu netleştirmek, kaynakları toplamak, iskelet çıkarmak, bölümleri tek tek yazdırmak ve en sonda tutarlılık ile doğruluk kontrolü yapmak. Tek seferde "50 sayfalık rapor yaz" demek genelde ortalama, genel geçer bir metin verir. Kaynak toplamak için Pro ve üstü planlarda Research özelliği (web arama açık olmalı) birkaç dakikada atıflı bir tarama yapar; elinizdeki belgeler için PDF ve Excel yükleyebilir, tekrar eden raporlar için bir Claude Projesi kurabilirsiniz. Docs çıktısı Word, PDF ve Markdown olarak dışa aktarılır. Claude taslağı hızlandırır, ama rakamların ve iddiaların doğruluğundan siz sorumlusunuz; kaynaksız cümleyi rapora almayın. Şirket verisi ve kişisel veri içeren belgeleri yüklemeden önce politikanızı kontrol edin. Aşağıda adımlar, hangi yüzeyin ne zaman uygun olduğu, beş hazır Türkçe prompt, tahmini süre kazancı ve sık yapılan hatalar var.
-
+**Claude ile rapor hazırlamak en iyi, yazma işini beş küçük adıma bölünce çalışır:** hedef ve okuyucuyu netleştirmek, kaynakları toplamak, iskelet çıkarmak, bölümleri tek tek yazdırmak ve en sonda tutarlılık ile doğruluk kontrolü yapmak. Tek seferde "50 sayfalık rapor yaz" demek genelde ortalama, genel geçer bir metin verir. Kaynak toplamak için Pro ve üstü planlarda Research özelliği (web arama açık olmalı) birkaç dakikada atıflı bir tarama yapar; elinizdeki belgeler için PDF ve Excel yükleyebilir, tekrar eden raporlar için bir Claude Projesi kurabilirsiniz. Docs çıktısı Word, PDF ve Markdown olarak dışa aktarılır. Claude taslağı hızlandırır, ama rakamların ve iddiaların doğruluğundan siz sorumlusunuz; kaynaksız cümleyi rapora almayın. Şirket verisi ve kişisel veri içeren belgeleri yüklemeden önce politikanızı kontrol edin.
 ## Adım adım: Rapor nasıl hazırlanır?
 
 1. **Okuyucuyu ve kararı yazın.** "Genel müdür bu raporla X bütçesini onaylayacak" ile "ekip bilgilensin" farklı raporlardır.

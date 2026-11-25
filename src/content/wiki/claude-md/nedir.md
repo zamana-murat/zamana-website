@@ -6,16 +6,16 @@ tags:
   - claude-md
   - temel-kavram
   - cowork
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**CLAUDE.md, Claude'un sizi (ve varsa şirketinizi) her oturumda yeniden tanımak zorunda kalmaması için hazırlanan düz metin bir dosyadır.**
+CLAUDE.md, Claude'un sizi (ve varsa şirketinizi) her oturumda yeniden tanımak zorunda kalmaması için hazırladığınız düz metin bir dosyadır.
 
-Markdown formatındadır. Çalıştığınız klasörde durur. Claude, bu klasörle çalışan bir oturum başlattığında (masaüstündeki yerel Cowork oturumu, Claude Code) dosyayı okur ve sessiz bir şekilde "tamam, bu kullanıcıyı tanıyorum" deyip işe başlar.
+Markdown formatındadır ve çalıştığınız klasörde durur. Claude bu klasörle çalışan bir oturum başlattığında (masaüstündeki yerel Cowork oturumu, Claude Code) dosyayı okur ve sizi tanıyarak işe başlar.
 
 ## CLAUDE.md Nerede Çalışır?
 
-Önce en sık yanlış anlaşılan nokta: CLAUDE.md her yerde otomatik okunan bir dosya değildir. Hangi ortamda çalıştığınıza bağlıdır.
+En sık yanlış anlaşılan nokta şu: CLAUDE.md her yerde otomatik okunmaz, hangi ortamda çalıştığınıza bağlıdır.
 
 | Ortam | CLAUDE.md okunur mu? | Karşılığı |
 |---|---|---|
@@ -24,11 +24,11 @@ Markdown formatındadır. Çalıştığınız klasörde durur. Claude, bu klasö
 | **Bulut Cowork oturumu** | Okunduğu belgelenmemiş | Klasörler elle eklenir; kritik kuralı profil talimatına da yazın |
 | **Claude Code** | Evet, hiyerarşik olarak | Geliştiriciler için; ayrıntı [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasının son kutusunda |
 
-Hangi yerin nerede geçerli olduğunu ve kimin yönettiğini tek tabloda [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/#kalıcı-talimat-ve-hafıza-yerleri) bölümünde görebilirsiniz. Bu sayfada anlatılan fikir ise hepsinde aynıdır: **kendinizi bir kez yazarsınız, kullandığınız yere koyarsınız.**
+Hangi yerin nerede geçerli olduğunu ve kimin yönettiğini tek tabloda [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/#kalıcı-talimat-ve-hafıza-yerleri) bölümünde görebilirsiniz. Fikir hepsinde aynıdır: kendinizi bir kez yazarsınız, kullandığınız yere koyarsınız.
 
-> **Güncel durum:** Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım; Enterprise'ta 23 Ekim 2026'da genel kullanıma açıldı, Team ve Enterprise'ta yönetici "Chat and Cowork unified" ayarıyla açar). Klasörle çalıştığınız yerde CLAUDE.md okunur; sohbet tarafında benzer işi [Projects](/wiki/araclar/projects/) talimatları, profil talimatı ve Claude'un [yerleşik hafızası](/wiki/yetenekler/memory/) görür.
+> Güncel durum: Cowork ve sohbet 16 Eylül 2026'dan beri tek Claude içinde birleşiyor (kademeli yayılım; Enterprise'ta 23 Ekim 2026'da genel kullanıma açıldı, Team ve Enterprise'ta yönetici "Chat and Cowork unified" ayarıyla açar). Klasörle çalıştığınız yerde CLAUDE.md okunur; sohbet tarafında benzer işi [Projects](/wiki/araclar/projects/) talimatları, profil talimatı ve Claude'un [yerleşik hafızası](/wiki/yetenekler/memory/) görür.
 
-Bu dosyanın (ya da sohbetteki karşılığının) değeri pratikte hızla görünür: **Claude'u genel bir asistan olmaktan çıkarıp size özel bir asistana dönüştüren mekanizma, kalıcı talimattır**: kendi tarzınıza, işinize, varsa ekibinize uygun bir asistan.
+Kalıcı talimat (dosya ya da sohbetteki karşılığı), Claude'u genel bir asistandan kendi tarzınıza, işinize ve varsa ekibinize uygun bir asistana çevirir.
 
 ## Neden Önemli?
 
@@ -36,67 +36,65 @@ Claude'un her oturumu kendi bağlamıyla başlar. Yerleşik bir hafızası da va
 
 Bu durum iki soruna yol açar:
 
-1. **Tekrar.** Her oturumda kim olduğunuzu, ne yaptığınızı, şirketin ne ürettiğini baştan anlatmanız gerekir. 5 dakika burada, 5 dakika orada, haftada saatlere ulaşır.
-2. **Tutarsızlık.** Farklı oturumlarda Claude'a aynı bağlamı farklı biçimlerde verirsiniz. Çıktıların kalitesi dalgalanır. Ton değişir.
+1. Tekrar. Her oturumda kim olduğunuzu, ne yaptığınızı, şirketin ne ürettiğini baştan anlatmanız gerekir. 5 dakika burada, 5 dakika orada, haftada saatleri bulur.
+2. Tutarsızlık. Farklı oturumlarda Claude'a aynı bağlamı farklı biçimlerde verirsiniz. Çıktıların kalitesi dalgalanır. Ton değişir.
 
 CLAUDE.md bu iki sorunu ortadan kaldırır:
 
-> **Bir kere yazarsınız, Claude her oturumda (dosyanın ya da profil talimatının geçerli olduğu yerde) sanki sizinle aylardır çalışıyormuş gibi başlar.**
+> Bir kere yazarsınız, Claude her oturumda (dosyanın ya da profil talimatının geçerli olduğu yerde) sanki sizinle aylardır çalışıyormuş gibi başlar.
 
 ## CLAUDE.md Nasıl Devreye Girer?
 
-CLAUDE.md'siz Claude ile CLAUDE.md'li Claude arasındaki fark şudur: ilki her seferinde "kim olduğunuzu" sıfırdan öğrenir, ikincisi dosyayı sessizce okur ve hazır başlar. Sohbette bu okumayı profil talimatı yapar.
+CLAUDE.md olmadan Claude her seferinde kim olduğunuzu sıfırdan öğrenir; dosya varsa onu okur ve hazır başlar. Sohbette bu okumayı profil talimatı yapar.
 
 ## Ne İçerir?
 
-İyi bir CLAUDE.md genellikle şu bilgileri içerir. Şart değildir, size ne lazımsa onu koyun:
+İyi bir CLAUDE.md genellikle şu bilgileri içerir; hepsi şart değil, size ne lazımsa onu koyun:
 
-- **Kim olduğunuz:** Ad, soyad, pozisyon, rol
-- **Şirket bilgisi:** Şirket adı, sektör, ürün ve hizmetler
-- **Anahtar kişiler:** Yöneticiniz, ekibiniz, kilit paydaşlar: kim neyle ilgileniyor
-- **Kullandığınız araçlar:** CRM, muhasebe yazılımı, iş birliği platformları
-- **Ton tercihleri:** Resmi mi, samimi mi; hangi kelimelerden kaçınıyorsunuz
-- **Tekrar eden iş akışları:** "Her ay şunu yaparım, şu formatta olsun"
-- **Her zaman yap / Asla yapma kuralları:** "Her e-postayı önce taslak göster, doğrudan göndermeye çalışma"
-- **Departmana özgü kelime dağarcığı ve kısaltmalar:** Şirketinize özel terimler, kod adları, iç jargon
-- **Güncel odak:** Şu an hangi projeler aktif, hangi hedefler öncelikli
+- Kim olduğunuz: Ad, soyad, pozisyon, rol
+- Şirket bilgisi: Şirket adı, sektör, ürün ve hizmetler
+- Anahtar kişiler: Yöneticiniz, ekibiniz, kilit paydaşlar: kim neyle ilgileniyor
+- Kullandığınız araçlar: CRM, muhasebe yazılımı, iş birliği platformları
+- Ton tercihleri: Resmi mi, samimi mi; hangi kelimelerden kaçınıyorsunuz
+- Tekrar eden iş akışları: "Her ay şunu yaparım, şu formatta olsun"
+- Her zaman yap / Asla yapma kuralları: "Her e-postayı önce taslak göster, doğrudan göndermeye çalışma"
+- Departmana özgü kelime dağarcığı ve kısaltmalar: Şirketinize özel terimler, kod adları, iç jargon
+- Güncel odak: Şu an hangi projeler aktif, hangi hedefler öncelikli
 
 ## Ne Koymamalısınız?
 
-Bir CLAUDE.md dosyası **şeffaf** bir dosyadır. Açık yazılır, kolay okunur. Bu şeffaflık onu güçlü kılar, ama aynı zamanda sınırları da belirler:
+CLAUDE.md açık yazılan, kolay okunan bir dosyadır. Bu şeffaflık işe yarar, ama bazı şeyleri dosyaya yazmamanız gerekir:
 
-- **Şifreler veya hassas kimlik bilgileri.** Bu dosya kalıcıdır ve yedeklenebilir. Kritik sırları asla içine yazmayın.
-- **Başkalarının kişisel verileri.** KVKK kapsamında izinsiz kişisel bilgi saklamak risklidir. Kendi bilgilerinizle sınırlı tutun.
-- **Çelişen talimatlar.** "Her zaman resmi yaz" ile "samimi ol" aynı dosyada durursa Claude şaşırır.
-- **Aşırı katı kurallar.** "Hiçbir zaman liste kullanma" gibi kesin yasaklar esnekliği öldürür. Claude'un karar alanını tamamen kapatmayın.
+- Şifreler ya da hassas kimlik bilgileri: dosya kalıcıdır ve yedeklenebilir, kritik sırları içine yazmayın.
+- Başkalarının kişisel verileri: KVKK kapsamında izinsiz kişisel bilgi saklamak risklidir, kendi bilgilerinizle sınırlı tutun.
+- Çelişen talimatlar: "Her zaman resmi yaz" ile "samimi ol" aynı dosyada durursa Claude hangisine uyacağını bilemez.
+- Aşırı katı kurallar: "Hiçbir zaman liste kullanma" gibi kesin yasaklar Claude'u gereksiz kısıtlar.
 
 ## Nerede Durur?
 
-CLAUDE.md, çalıştığınız **klasörün içinde** durur (örneğin Cowork'te bağladığınız klasör). Basit bir metin dosyasıdır: Notepad, TextEdit, VS Code veya Word (metin olarak kaydettiğiniz sürece) gibi herhangi bir editörle açıp düzenleyebilirsiniz. Dosyaya tam olarak `CLAUDE.md` adını verin.
+CLAUDE.md, çalıştığınız klasörün içinde durur (örneğin Cowork'te bağladığınız klasör). Basit bir metin dosyasıdır: Notepad, TextEdit, VS Code veya Word (metin olarak kaydettiğiniz sürece) gibi herhangi bir editörle açıp düzenleyebilirsiniz. Dosyaya tam olarak `CLAUDE.md` adını verin.
 
-Yerel Cowork oturumu bu dosyayı okur; siz bir şey yapmanız gerekmez. Yine de **güvenli çizgiyi** izleyin: ilk mesajda "talimatımı 3 maddede özetle" diye test edin ve kritik kuralların kısa sürümünü profil talimatına da yazın. Cowork yardım sayfaları dosyayı adıyla anmaz, bu yüzden testle doğrulamak sağlam yoldur.
+Yerel Cowork oturumu bu dosyayı okur; sizin bir şey yapmanız gerekmez. Yine de güvenli çizgiyi izleyin: ilk mesajda "talimatımı 3 maddede özetle" diye test edin ve kritik kuralların kısa sürümünü profil talimatına da yazın. Cowork yardım sayfaları dosyayı adıyla anmaz, bu yüzden testle doğrulamak en sağlam yoldur.
 
 Sohbet kullanıyorsanız dosya yerine aynı metni profil talimatına koyun. Hepsi için: [Kalıcı Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
 ## Nasıl Büyür?
 
-İyi bir CLAUDE.md dosyası doğumundan itibaren mükemmel değildir. Büyüyerek mükemmelleşir.
+İlk yazdığınız CLAUDE.md eksik olur, kullandıkça tamamlanır. Pratik kural şu:
 
-Pratik altın kural:
+> Claude'a aynı şeyi iki kere anlattığınızı fark ettiğinizde hemen CLAUDE.md'nizi açın ve o bilgiyi dosyaya yazın.
 
-> **Claude'a aynı şeyi iki kere anlattığınızı fark ettiğinizde, hemen CLAUDE.md'nizi açın ve o bilgiyi dosyaya yazın.**
-
-Bu kuralı uygulayan bir çalışan, bir iki ay içinde kendisi için gerçekten işe yarayan, kişiselleştirilmiş bir CLAUDE.md'ye sahip olur. Kural uygulanmazsa dosya zamanla paslanır ve değeri düşer.
+Bu kuralı uygulayan çalışan bir iki ay içinde kendisine göre kişiselleştirilmiş, işe yarayan bir CLAUDE.md edinir. Uygulanmazsa dosya eskir ve değeri düşer.
 
 ## Şeffaflığın Kurumsal Değeri
 
-CLAUDE.md'nin otomatik hafıza özellikleri (Claude'un yerleşik hafızası dahil) karşısındaki en büyük üstünlüğü **şeffaflık ve kontroldür**.
+CLAUDE.md'nin otomatik hafızaya (Claude'un yerleşik hafızası dahil) göre en büyük üstünlüğü şeffaflık ve kontroldür.
 
-- **Gördüğünüz dosya, Claude'un gördüğü bilgidir.** Sürpriz yok. Arka planda sizin yazmadığınız bir kayıt yok.
-- **Yanlış bir şey yazdıysanız silip düzeltirsiniz.** Aratmaya, deneme yanılmaya gerek yok.
-- **Kurumsal denetim mümkündür.** Bir çalışan şirketten ayrılırsa, CLAUDE.md dosyasına bakarak şirket bilgilerinin neyi içerdiğini tek bakışta anlamak mümkündür. Otomatik biriken hafızalarda bu denetim daha zordur.
+- Gördüğünüz dosya, Claude'un gördüğü bilgidir. Arka planda sizin yazmadığınız bir kayıt yoktur.
+- Yanlış bir şey yazdıysanız silip düzeltirsiniz; aratmaya ya da deneme yanılmaya gerek kalmaz.
+- Bir çalışan şirketten ayrılırsa CLAUDE.md'ye bakarak şirket bilgilerinin neyi içerdiğini tek bakışta görürsünüz. Otomatik biriken hafızalarda bu denetim daha zordur.
 
-Kurumsal kullanımda şeffaflık iyi bir özellik değil, **zorunlu bir özelliktir**. KVKK, iç denetim, bilgi güvenliği politikaları hepsi bunu gerektirir.
+Kurumsal kullanımda şeffaflık zorunludur: KVKK, iç denetim ve bilgi güvenliği politikaları bunu gerektirir.
 
 ## Basit Bir Örnek
 

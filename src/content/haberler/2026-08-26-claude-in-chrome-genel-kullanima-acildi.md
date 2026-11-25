@@ -18,7 +18,7 @@ Claude in Chrome, 26 Ağustos 2026'dan itibaren tüm ücretli Claude planlarınd
 
 Claude artık tarayıcıda bir sayfayı okuyabiliyor, bağlantılara tıklayabiliyor, sayfalar arasında gezebiliyor ve form doldurabiliyor. Siz zaten oturum açmışsanız, şifre gerektiren sitelerde Claude mevcut girişinizi kullanıyor. Pratik örnekler: bir tedarikçi portalından fatura bilgilerini çekmek, bir başvuru formunu doldurmak, bağlayıcısı (connector) olmayan bir iç aracı kullanmak.
 
-Önemli bir yenilik: Claude artık bazı eylemleri her seferinde sormadan onaylayabiliyor. Bu, Claude Code'daki "auto mode" mantığına benziyor. Ayrıca tarayıcıda başlattığınız bir işe masaüstü, mobil ve web uygulamalarından devam edebiliyorsunuz.
+Bir yenilik de şu: Claude bazı eylemleri her seferinde sormadan onaylayabiliyor; mantık Claude Code'daki "auto mode"a benziyor. Tarayıcıda başlattığınız bir işe masaüstü, mobil ve web uygulamalarından devam edebiliyorsunuz.
 
 ## Nasıl denersiniz?
 

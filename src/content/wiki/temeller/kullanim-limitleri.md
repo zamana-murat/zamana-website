@@ -8,10 +8,10 @@ tags:
   - limit
   - usage-credits
   - fable
-lastUpdated: "2026-11-18"
+lastUpdated: "2026-11-26"
 ---
 
-Claude'da "limit" sorusu en sık şikayet konusudur: "Dün çalışıyordu, bugün bekle diyor." Bu sayfa limitin nasıl işlediğini, dolunca ne yapacağınızı ve hangi planın kime yettiğini sade bir dille anlatır. Plan fiyatları için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
+Claude'da "limit" sorusu en sık şikayet konusudur: "Dün çalışıyordu, bugün bekle diyor." Aşağıda limitin nasıl işlediğini, dolunca ne yapacağınızı ve hangi planın kime yettiğini sade bir dille anlatıyoruz. Plan fiyatları için [Planlar](/wiki/temeller/planlar/) sayfasına bakın.
 
 <div class="wiki-admonition wiki-admonition--abstract">
   <div class="wiki-admonition__title">Özet</div>
@@ -70,9 +70,9 @@ Kredi, istediğiniz zaman açıp kapatabileceğiniz bir güvenlik ağıdır. Ek 
 
 ## Fable Hangi Planda?
 
-Fable 5.1 en güçlü genel modeldir. Plana göre erişimi farklıdır:
+Fable 5.2 en güçlü genel modeldir (önceki sürüm Fable 5.1 hâlâ seçilebilir). Plana göre erişimi farklıdır:
 
-| Plan | Fable 5.1 erişimi |
+| Plan | Fable erişimi |
 |---|---|
 | Free | Yok |
 | Pro | Plana dahil değil, yalnız kullanım kredisi ile (API fiyatı: $10 girdi / $50 çıktı, milyon token başına) |

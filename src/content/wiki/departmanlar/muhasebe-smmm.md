@@ -7,7 +7,7 @@ tags:
   - muhasebe
   - smmm
   - mali-musavir
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 Muhasebe ve mali müşavirlik, yapay zekanın en çok işe yarayabileceği ama en dikkatli kullanılması gereken meslek alanlarından biri. İş yoğun, tekrar eden, belge ağırlıklı; öte yandan hata maliyeti yüksek, mevzuat sürekli değişiyor ve elinizdeki veri müşterilerinizin sırrı.
@@ -18,11 +18,11 @@ Bu sayfa genel bir rol rehberidir. Finans ekiplerinin iç raporlama tarafı içi
 
 ## Yapay Zeka Muhasebeyi Bitirir mi?
 
-Kısa ve abartısız cevap: **hayır, ama işin dağılımını değiştirir.**
+Kısa cevap: hayır, ama işin dağılımını değiştirir.
 
 Veri girişi, belge sınıflandırma, tekrar eden kontrol ve standart yazışma gibi mekanik işler giderek otomatikleşiyor. Bu işlerin payı mesleğin içinde azalabilir. Buna karşılık mevzuat yorumu, müşteriye danışmanlık, risk değerlendirmesi, vergi planlaması ve imza sorumluluğu insanda kalıyor; çünkü hata yapıldığında hukuki ve mali sorumluluğu bir model değil meslek mensubu taşıyor.
 
-Dürüst tablo: ofisinde yapay zeka kullanan bir muhasebeci aynı zamanda daha çok müşteriye bakabilir ya da aynı müşteriye daha çok danışmanlık verebilir. Kullanmayan meslektaş rekabette zorlanabilir. Bunlar eğilimlerdir, kesin tahmin değil; hangi hızda olacağını kimse bilmiyor. Mesleğin geleceği hakkında yorum yapmak yerine, bugün işinize yarayan somut kullanımlara bakalım.
+Dürüst tablo: ofisinde yapay zeka kullanan bir muhasebeci aynı zamanda daha çok müşteriye bakabilir ya da aynı müşteriye daha çok danışmanlık verebilir. Kullanmayan meslektaş rekabette zorlanabilir. Bunlar eğilimdir, kesin tahmin değil; hangi hızda gerçekleşeceğini kimse bilmiyor.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -42,7 +42,7 @@ Sınır: Claude beyannameyi hazırlamaz, mevzuata göre doğru vergiyi hesaplama
 
 Yeni bir tebliğ, sirküler ya da duyuru çıktığında metni Claude'a yükleyip müşteri için sade bir özet, "kimi etkiler, ne zaman, ne yapmalı" notu çıkarttırabilirsiniz.
 
-> **Önemli uyarı:** Claude güncel mevzuatı bilmeyebilir. Eğitim verisinin tarihinden sonraki değişiklikleri, tebliğ numaralarını, oran ve tarihleri yanlış hatırlayabilir ya da uydurabilir. Bu yüzden özeti yalnızca **kendi verdiğiniz resmi metinden** (Resmî Gazete, GİB, mevzuat sayfaları) yazdırın; web aramayı kullandırıyorsanız bile her tarihi, oranı ve madde numarasını kaynağı açıp doğrulayın. Resmi metne dayanmayan bir "mevzuat bilgisi" müşteriye gitmemeli.
+> **Önemli uyarı:** Claude güncel mevzuatı bilmeyebilir. Eğitim verisinin tarihinden sonraki değişiklikleri, tebliğ numaralarını, oran ve tarihleri yanlış hatırlayabilir ya da uydurabilir. Bu yüzden özeti yalnızca kendi verdiğiniz resmi metinden (Resmî Gazete, GİB, mevzuat sayfaları) yazdırın; web aramayı kullandırıyorsanız bile her tarihi, oranı ve madde numarasını kaynağı açıp doğrulayın. Resmi metne dayanmayan bir "mevzuat bilgisi" müşteriye gitmemeli.
 
 Web arama özelliği için [Web Arama](/wiki/araclar/web-arama/) sayfasına bakın.
 
@@ -64,7 +64,7 @@ Yurt dışından alınan yazılım ve bulut hizmetlerinde (Claude aboneliği dah
 
 Muhasebeci ve mali müşavirlerin 3568 sayılı Kanun kapsamında müşterileri hakkında edindikleri bilgileri saklama yükümlülüğü var. Bu sayfa hukuki yorum yapmaz; ancak pratik sonuç şudur: müşteri verisini hangi araca, hangi hesapla yazdığınız bir mesleki sorumluluk meselesidir.
 
-- Müşteri adı, TCKN/VKN, banka hesabı, bordro gibi kişisel ve ticari verileri **anonimleştirerek** girin ya da gerekmiyorsa hiç girmeyin.
+- Müşteri adı, TCKN/VKN, banka hesabı, bordro gibi kişisel ve ticari verileri anonimleştirerek girin ya da gerekmiyorsa hiç girmeyin.
 - Kişisel hesaba (Free, Pro, Max) müşteri verisi yazmayın. Ticari planlar (Team, Enterprise) veri işleme eki (DPA) ve varsayılan olarak eğitimde kullanılmama güvencesi sunar; yine de büro politikanızı ve müşteri sözleşmelerinizi ayrıca kontrol edin. Plan farkları [Planlar](/wiki/temeller/planlar/) sayfasında, ticari ürünlerde veri güvencesi [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasında.
 - Verinin yurt dışına gitmesi konusu için [KVKK m.9 Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasına bakın.
 - Büro içi kuralları yazıya dökmek için [Şirket İçi Yapay Zeka Politikası](/wiki/temeller/sirket-ici-politika/).
@@ -147,7 +147,7 @@ Bunlar **Tahmini tipik aralık**tır; büronuzun müşteri sayısına ve belge d
 
 ## Büronuz İçin Eğitim
 
-Ekipli büro için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/), tek başına çalışan meslek mensubu için [bireysel program](/programlar/bireysel/) var. Eğitim iş eğitimidir: sizin gerçek iş akışlarınızla (anonimleştirilmiş) çalışırız. Meslek odalarının ve kurumların verdiği temel yapay zeka eğitimleri de başlangıç için faydalıdır; bizim farkımız, büronuzun kendi işine ve günlük kullanım alışkanlığına odaklanmamız. Zamana abonelik satmaz; Claude planları doğrudan sağlayıcıdan alınır.
+Ekipli büro için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/), tek başına çalışan meslek mensubu için [bireysel program](/programlar/bireysel/) var. Eğitim iş eğitimidir: sizin gerçek iş akışlarınızla (anonimleştirilmiş) çalışırız. Meslek odalarının ve kurumların verdiği temel yapay zeka eğitimleri de başlangıç için faydalıdır; bizim farkımız, büronuzun kendi işi üzerinden ve günlük kullanım alışkanlığına kadar çalışmamız. Zamana abonelik satmaz; Claude planları doğrudan sağlayıcıdan alınır.
 
 ## İlgili Sayfalar
 

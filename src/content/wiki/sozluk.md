@@ -6,10 +6,10 @@ tags:
   - sozluk
   - terimler
   - referans
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Claude ekosistemindeki terimlerin sade Türkçe karşılıkları. Her terim için kısa açıklama ve, varsa, detaylı sayfaya bağlantı.
+Claude ekosistemindeki terimlerin sade Türkçe karşılıkları.
 
 > **Kullanım:** Ctrl+F (Cmd+F) ile aradığınız terime hızlıca gidebilirsiniz.
 
@@ -45,10 +45,10 @@ Claude'un bir sohbette aynı anda görebildiği ve akıl yürütebildiği toplam
 Kabuk / komut satırı ortamı. Claude izole bir sanal makinede burada kod çalıştırabilir. Detay: [Cowork Modu](/wiki/araclar/cowork-modu/).
 
 **BATNA**
-Best Alternative To a Negotiated Agreement: bir pazarlıkta anlaşmaya varılamazsa alacağınız en iyi alternatif. Satınalma ve ticarette kritik. Detay: [Satınalma](/wiki/departmanlar/satinalma/).
+Best Alternative To a Negotiated Agreement: bir pazarlıkta anlaşmaya varılamazsa alacağınız en iyi alternatif. Satınalma ve ticarette sık geçer. Detay: [Satınalma](/wiki/departmanlar/satinalma/).
 
 **Bilgi Kesim Tarihi (Knowledge Cutoff)**
-Modelin eğitiminden sonraki olayları kendiliğinden bilmediği tarih. Fable 5.1, Opus 5.5 ve Sonnet 5.5 için güvenilir bilgi kesimi Haziran 2026 (Haiku 5.5 için de Haziran 2026), legacy Haiku 4.5 için Şubat 2025'tir. Güncel konuda web aramasını açmak gerekir. Detay: [Modeller](/wiki/temeller/modeller/).
+Modelin eğitiminden sonraki olayları kendiliğinden bilmediği tarih. Fable 5.2, Opus 5.5 ve Sonnet 5.5 için güvenilir bilgi kesimi Haziran 2026 (Haiku 5.5 için de Haziran 2026), legacy Haiku 4.5 için Şubat 2025'tir. Güncel konuda web aramasını açmak gerekir. Detay: [Modeller](/wiki/temeller/modeller/).
 
 ## C
 
@@ -163,7 +163,7 @@ Claude'un yanıtı yazmadan önce kendi içinde akıl yürütmesi. Model menüs�
 ## F
 
 **Fable / Mythos**
-Claude ailesinin en güçlü genel modeli Fable 5.1'dir (Mythos sınıfı). Mythos 5.1 yalnızca Project Glasswing katılımcılarına davetle açıktır. Fable, Max, Ultra ve Team Premium'da plana dahildir (haftalık limitin en fazla %50'sine kadar); Pro ve Team Standard'da yalnızca kullanım kredisi (usage credits) ile kullanılır. Detay: [Modeller](/wiki/temeller/modeller/).
+Claude ailesinin en güçlü genel modeli Fable 5.2'dir (Mythos sınıfı); önceki sürüm Fable 5.1 hâlâ seçilebilir. Mythos 5.2 yalnızca doğrulama programlarından (Cyber Verification, Life Sciences Verification) geçen kuruluşlara açıktır. Fable, Max, Ultra ve Team Premium'da plana dahildir (haftalık limitin en fazla %50'sine kadar); Pro ve Team Standard'da yalnızca kullanım kredisi (usage credits) ile kullanılır. Detay: [Modeller](/wiki/temeller/modeller/).
 
 **Few-shot Prompting**
 Prompt'ta istenen çıktı formatını, stilini veya akıl yürütme kalıbını göstermek için 3-5 örnek sağlamak. Örnekler ilgili ve çeşitli olmalıdır. Detay: [İleri Seviye](/wiki/prompting/ileri-seviye/) ve [Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/).
@@ -403,4 +403,4 @@ Bir API sözleşme düzenlemesi: Anthropic istem ve yanıtları, yanıt döndük
 
 ---
 
-**Sözlük yaşayan bir belgedir.** Claude yeni özellikler ekledikçe, modeller değiştikçe ve yeni kullanım senaryoları ortaya çıktıkça güncellenir. Son güncelleme: 2026-11-08.
+Sözlük, Claude'a yeni özellikler eklendikçe ve modeller değiştikçe güncellenir. Son güncelleme: 2026-11-26.

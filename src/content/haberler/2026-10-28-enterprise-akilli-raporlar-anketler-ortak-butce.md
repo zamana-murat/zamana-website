@@ -34,7 +34,7 @@ Anthropic, Claude Enterprise için üç özelliği genel kullanıma açtı: akı
 
 - Raporlar tek tek çalışanın performansını değerlendirmek ya da işe ilişkin karar vermek için tasarlanmadı. Çalışan gizliliği ve KVKK açısından bunu şirket içi politikanızda açıkça yazın: [Şirket içi politika](/wiki/temeller/sirket-ici-politika/).
 - Raporlar konuşma örneklerine dayanır, tüm konuşmaları okumaz.
-- Müşteri yönetimli şifreleme anahtarı kullanan kurumlarda anketler açılabilir. Tek bir saklama süresi varsa anketler ve yanıtlar o süreye göre silinir.
+- Şifreleme anahtarını kendisi yöneten kurumlarda anketler açılabilir. Tek bir saklama süresi varsa anketler ve yanıtlar o süreye göre silinir.
 - Bazı yapılandırmalarda (örneğin HIPAA) kullanılabilirlik değişebilir.
 - Yatırım getirisi ölçümü için [Ölçüm metrikleri](/wiki/temeller/olcum-metrikleri/) sayfası bir başlangıç noktasıdır.
 

@@ -8,12 +8,12 @@ tags:
   - yaygınlaştırma
   - kurumsal
   - yonetici
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude'u bir anda şirketin tamamına açmak da, kimseye açmamak da yanlış.** Doğru yol küçük bir grupla, sınırlı bir sürede, ölçerek başlamak; sonra rakama bakıp karar vermek. Bu sayfa o yolu anlatır: pilot kimlerle yapılır, kaç hafta sürer, hangi noktada devam ya da dur denir, yaygınlaştırma nasıl yönetilir.
+**Claude'u bir anda şirketin tamamına açmak da, kimseye açmamak da yanlış.** Doğru yol küçük bir grupla, sınırlı bir sürede, ölçerek başlamak; sonra rakama bakıp karar vermek. Aşağıda pilotun kimlerle yapılacağı, kaç hafta süreceği, hangi noktada devam ya da dur denileceği ve yaygınlaştırmanın nasıl yönetileceği var.
 
-Bu rehber **yöneticiler ve kurumsal ekipler** içindir. Tek başına çalışan biriyseniz [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberi yeterli.
+Bu rehber yöneticiler ve kurumsal ekipler için. Tek başına çalışan biriyseniz [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberi yeterli.
 
 ## Neden pilot?
 
@@ -123,7 +123,7 @@ Marmara Tekstil, Bursa'da 120 çalışanlı bir hazır giyim üreticisi. Genel m
 - **Hafta 4-6, Kapı 2:** İhracat ekibi kişi başı haftada ortalama 6 saat, finans 3 saat kazanıyor. Üretim planlama ve İK'da kazanç belirsiz. Karar: finansa derinleşme, ihracatı büyütme, diğer ikisini yeniden tanımlama.
 - **Son hafta, Kapı 3:** Sınırlı yaygınlaştırma: ihracat ve satış (14 kişi) ile finans (6 kişi) Team'e eklenir, üretim planlama ve İK ikinci bir 4 haftalık pilota girer. Pilot sırasında çıkan sorular ve prompt'lar şirket politikasına ve ortak CLAUDE.md'ye işlendi.
 
-Dikkat edin: pilotun en değerli çıktısı "evet işe yarıyor" değil, **neyin nerede işe yaradığı**.
+Pilotun en değerli çıktısı neyin nerede işe yaradığıdır; tek başına "evet, işe yarıyor" bilgisi bunun yanında az kalır.
 
 ## Yaygınlaştırma: dalgalar halinde
 

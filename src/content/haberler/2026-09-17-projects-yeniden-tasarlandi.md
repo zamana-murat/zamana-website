@@ -29,7 +29,7 @@ Kod yazmayan biri için de benzetme işe yarar: projeyi bir "iş takımı" gibi 
 
 ## Nasıl denersiniz?
 
-Yeni projelere claude.com/projects adresinden ulaşılıyor. Beta, başlangıçta seçili Pro ve Max abonelerine, Claude Code bulut oturumlarını kullanan ve henüz projesi olmayan kişilere açıldı. Sonraki hafta daha fazla Claude Code kullanıcısına genişledi; ardından tüm Claude, Team ve Enterprise planlarına yayılması bekleniyor. Erişiminiz yoksa bekleme listesine katılabilirsiniz. Pro ve Max'teki mevcut projeler olduğu gibi çalışmaya devam ediyor, yükseltmeler genişleme aşamalarında geliyor.
+Yeni projelere claude.com/projects adresinden ulaşabilirsiniz. Beta, başlangıçta seçili Pro ve Max abonelerine, Claude Code bulut oturumlarını kullanan ve henüz projesi olmayan kişilere açıldı. Sonraki hafta daha fazla Claude Code kullanıcısına genişledi; ardından tüm Claude, Team ve Enterprise planlarına yayılması bekleniyor. Erişiminiz yoksa bekleme listesine katılabilirsiniz. Pro ve Max'teki mevcut projeler olduğu gibi çalışmaya devam ediyor, yükseltmeler genişleme aşamalarında geliyor.
 
 ## Bilmeniz gerekenler
 

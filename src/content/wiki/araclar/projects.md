@@ -7,22 +7,20 @@ tags:
   - projects
   - claude-chat
   - bilgi-tabani
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Projects, claude.ai'de kalıcı ve organize çalışma alanları oluşturan özelliktir.** Her sohbetin sıfırdan başladığı normal bir konuşmanın aksine, bir Project Claude'a her seferinde devam eden bağlam sağlar, **bilgi tabanı** ve **özel talimatlar** yoluyla.
+Projects, claude.ai'de kalıcı çalışma alanları açan özelliktir. Normal bir konuşma her seferinde sıfırdan başlar; bir Project ise bilgi tabanı ve özel talimatlar sayesinde her sohbete aynı bağlamla başlar.
 
-Tek cümlede: bir Project, **"aynı bağlamda konuşmak istediğim her sohbetin o bağlamda başlaması"** demektir.
-
-> **Yeni yapı duyuruldu (17 Eylül 2026):** Anthropic Projects'in baştan tasarlandığını duyurdu: yeni projelerde birden fazla konuşmanın paralel çalışması ve ortak hafıza anlatılıyor. Erişimin kademeli açıldığı ve mevcut projelerin çalışmaya devam ettiği bildirildi; kendi hesabınızda hangi yapıyı gördüğünüzü kontrol edin. Bu sayfa mevcut (klasör mantığındaki) yapıyı anlatır. Ayrıntı ve kaynak: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
+> **Yeni yapı duyuruldu (17 Eylül 2026):** Anthropic Projects'in baştan tasarlandığını duyurdu: yeni projelerde birden fazla konuşmanın paralel çalışması ve ortak hafıza anlatılıyor. Erişimin kademeli açıldığı ve mevcut projelerin çalışmaya devam ettiği bildirildi; kendi hesabınızda hangi yapıyı gördüğünüzü kontrol edin. Bu sayfa mevcut (klasör mantığındaki) yapıyı anlatıyor. Ayrıntı ve kaynak: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
 
 ## Bir Project Nelerden Oluşur?
 
 ### Bilgi Tabanı (Knowledge Base)
 
-O projeye dosya, belge ve metin yüklersiniz, Claude bu içeriği projedeki **her sohbette** referans alır. Bir kere yüklersiniz, Claude hatırlar.
+O projeye dosya, belge ve metin yüklersiniz, Claude bu içeriği projedeki her sohbette referans alır. Bir kere yüklersiniz, Claude hatırlar.
 
-Faydalı kullanımlar:
+Örnek içerikler:
 
 - Şirket dokümanları
 - Ürün katalogları, teknik özellikler
@@ -31,32 +29,32 @@ Faydalı kullanımlar:
 - Düzenleyici çerçeveler (KVKK, TTK metinleri)
 - Kişisel referans notları
 
-Ücretli planlarda bilgi tabanı **RAG (Retrieval Augmented Generation)** kullanır, yani büyük hacimli içeriği verimli şekilde arar ve ilgili kısımları Claude'a getirir. Yüzlerce sayfa belge yükleyebilirsiniz. Proje dosyası başına sınır 30 MB; dosya sayısı sınırsızdır ama içerik bağlama sığmalıdır, sığmayınca Claude RAG moduna geçer.
+Ücretli planlarda bilgi tabanı RAG (Retrieval Augmented Generation) kullanır; yani büyük içeriği tarar ve yalnız ilgili kısımları Claude'a getirir. Yüzlerce sayfa belge yükleyebilirsiniz. Proje dosyası başına sınır 30 MB; dosya sayısı sınırsızdır ama içerik bağlama sığmalıdır, sığmayınca Claude RAG moduna geçer.
 
 ### Özel Talimatlar (Custom Instructions)
 
-Proje düzeyindeki talimatlar Claude'a bu projede nasıl davranması gerektiğini söyler: ton, rol, kısıtlar, "her zaman yap" ve "asla yapma" kuralları. Projedeki her yeni sohbet bu talimatlarla başlar. Bağlamı yeniden açıklamazsınız; zaten oradadır.
+Proje düzeyindeki talimatlar Claude'a bu projede nasıl davranacağını söyler: ton, rol, kısıtlar, "her zaman yap" ve "asla yapma" kuralları. Projedeki her yeni sohbet bu talimatlarla başlar, bağlamı yeniden açıklamanız gerekmez.
 
 ### Ayrı Konuşma Geçmişi
 
-Her projenin kendi izole sohbet geçmişi vardır. İş konuya, müşteriye veya proje tipine göre organize kalır. İlgisiz projeler arasında veri sızması olmaz.
+Her projenin kendi sohbet geçmişi vardır, bu yüzden işi konuya, müşteriye ya da proje tipine göre ayırabilirsiniz. Projeler arasında veri sızmaz.
 
 ### Proje Hafızası
 
-Hafıza açıksa her projenin **ayrı bir hafızası ve özeti** olur; proje dışındaki sohbetlerden ayrı tutulur. Projede söylediğiniz bir tercih o projede hatırlanır, başka müşterinin projesine taşınmaz. Hafızayı sohbette söyleyerek ya da düzenleyerek değiştirirsiniz. Ayrıntı: [Memory](/wiki/yetenekler/memory/).
+Hafıza açıksa her projenin ayrı bir hafızası ve özeti olur; proje dışındaki sohbetlerden ayrı tutulur. Projede söylediğiniz bir tercih o projede hatırlanır, başka müşterinin projesine taşınmaz. Hafızayı sohbette söyleyerek ya da düzenleyerek değiştirirsiniz. Ayrıntı: [Memory](/wiki/yetenekler/memory/).
 
 ### Paylaşılan Projeler (Team ve Enterprise)
 
 Projects, meslektaşlarınızla belirli izin seviyelerinde paylaşılabilir:
 
-- **"Kullanabilir"** (Can use): sadece okur ve sohbet eder
-- **"Düzenleyebilir"** (Can edit): içerik ekler/değiştirir, erişim yönetir
+- "Kullanabilir" (Can use): sadece okur ve sohbet eder
+- "Düzenleyebilir" (Can edit): içerik ekler/değiştirir, erişim yönetir
 
-Birden fazla ekip üyesi aynı anda belge katabilir. Bu özellik Projects'i **hafif bir ekip bilgi tabanına** dönüştürür.
+Birden fazla ekip üyesi aynı anda belge katabilir. Böylece Projects hafif bir ekip bilgi tabanına dönüşür.
 
 ## Projects, Klasörde CLAUDE.md ve Profil Talimatı
 
-Üç yer de "kalıcı bağlam" ihtiyacını çözer, ama farklı yerlerde yaşar ve farklı yerlerde okunur. Sohbet CLAUDE.md dosyasını okumaz; sohbetteki karşılığı proje talimatı ve profil talimatıdır:
+Üçü de kalıcı bağlam ihtiyacını karşılar; ama farklı yerlerde durur ve farklı yerlerde okunur. Sohbet CLAUDE.md dosyasını okumaz; sohbetteki karşılığı proje talimatı ve profil talimatıdır:
 
 | Özellik | Proje talimatı (claude.ai) | Klasörde CLAUDE.md (yerel Cowork) | Profil talimatı |
 |---|---|---|---|
@@ -73,17 +71,17 @@ Skills, kod çalıştırma ve dosya üretimi (.docx / .pptx / .xlsx) bu üç yer
 
 ### Hangisini Ne Zaman?
 
-- **Proje talimatı**: tarayıcı merkezli, paylaşım odaklı, çok sayıda ekip üyesinin aynı bağlama erişmesi gerektiğinde
-- **Klasörde CLAUDE.md**: tek çalışanın masaüstü merkezli, yerel klasör, plugin ve otomasyon gerektiren yoğun Cowork kullanımı için
-- **Profil talimatı**: nerede çalışırsanız çalışın geçmesini istediğiniz kısa kurallar için (dil, ton, rol)
+- Proje talimatı: tarayıcı merkezli, paylaşım odaklı, çok sayıda ekip üyesinin aynı bağlama erişmesi gerektiğinde
+- Klasörde CLAUDE.md: tek çalışanın masaüstü merkezli, yerel klasör, plugin ve otomasyon gerektiren yoğun Cowork kullanımı için
+- Profil talimatı: nerede çalışırsanız çalışın geçmesini istediğiniz kısa kurallar için (dil, ton, rol)
 
-Üçü birlikte de kullanılır. Bir çalışan masaüstünde Cowork + klasörde CLAUDE.md ile çalışırken, ekibin genelinin eriştiği bilgileri Projects'te tutabilir. Yerlerin tam karşılaştırması için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
+Üçünü birlikte de kullanabilirsiniz. Masaüstünde Cowork ve klasörde CLAUDE.md ile çalışan biri, ekibin genelinin eriştiği bilgileri Projects'te de tutabilir. Yerlerin tam karşılaştırması için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/) sayfasına bakın.
 
 ## Pratik Project Örnekleri
 
 ### Satış Ekibi Projesi
 
-**Yüklenenler:**
+Yüklenenler:
 
 - Ürün kataloğu ve teknik özellikler
 - Fiyat listesi (güncel)
@@ -91,72 +89,72 @@ Skills, kod çalıştırma ve dosya üretimi (.docx / .pptx / .xlsx) bu üç yer
 - Teklif şablonu
 - Müşteri itiraz kütüphanesi
 
-**Sonuç:** Her satış temsilcisinin o projedeki Claude sohbeti, şirketin tekliflerine tam bağlamla başlar. Tekrar tekrar açıklama gerekmez.
+Sonuç: Her satış temsilcisinin o projedeki Claude sohbeti şirketin tekliflerine tam bağlamla başlar, tekrar tekrar açıklama gerekmez.
 
 ### İhracat Projesi
 
-**Yüklenenler:**
+Yüklenenler:
 
 - Standart proforma fatura ve niyet mektubu (LOI) şablonları
 - Hedef pazara göre sevkiyat ve ödeme koşulları notları
 - Müşteri bazlı geçmiş teklif ve yazışma özetleri
 - Teslim şekli (Incoterms) hatırlatma notu
 
-**Sonuç:** Yeni bir alıcı için proforma ya da LOI taslağı şirketin kendi kalıbıyla başlar; her seferinde koşulları baştan anlatmazsınız. Hukuki ve gümrük yönü yine uzman kontrolünden geçer.
+Sonuç: Yeni bir alıcı için proforma ya da LOI taslağı şirketin kendi kalıbıyla başlar; her seferinde koşulları baştan anlatmazsınız. Hukuki ve gümrük yönü yine uzman kontrolünden geçer.
 
 ### Hukuk Projesi
 
-**Yüklenenler:**
+Yüklenenler:
 
 - Şirketin standart sözleşmeleri
 - KVKK politikası
 - Tercih edilen sözleşme maddeleri kütüphanesi
 - İç hukuki görüş şablonları
 
-**Sonuç:** Her sözleşme incelemesi şirketin hukuki standartları yüklü olarak başlar. "Bu bizim standart maddemizle uyumlu mu?" sorusu anında cevaplanır.
+Sonuç: Her sözleşme incelemesi şirketin hukuki standartları yüklü olarak başlar; "Bu bizim standart maddemizle uyumlu mu?" sorusuna hemen cevap alırsınız.
 
 ### İnsan Kaynakları Projesi
 
-**Yüklenenler:**
+Yüklenenler:
 
 - İş tanımı kütüphanesi
 - Çalışan el kitabı
 - İş Kanunu referans notları (fazla mesai, izin, ihbar süreleri gibi sık sorulanlar)
 - Şirket iç prosedürleri
 
-**Sonuç:** Her İK görevi şirkete özel bağlamda çalışır. Jenerik tavsiye yerine şirkete özel çıktı üretilir. Mevzuat yorumu için yüklediğiniz notların güncelliğini siz tutarsınız.
+Sonuç: Her İK görevi şirkete özel bağlamda çalışır, genel tavsiye yerine şirketinize uygun çıktı alırsınız. Mevzuat yorumu için yüklediğiniz notların güncelliğini siz tutarsınız.
 
 ### Pazarlama Projesi
 
-**Yüklenenler:**
+Yüklenenler:
 
 - Marka ses kılavuzu
 - Geçmiş kampanya arşivi
 - Ürün mesaj dokümanları
 - Hedef kitle araştırmaları
 
-**Sonuç:** Her içerik taslağı marka standartlarıyla otomatik uyumlu olur. Jenerik pazarlama dili yerine şirketin kendi sesi konuşur.
+Sonuç: Her içerik taslağı marka standartlarına uygun gelir ve genel pazarlama dili yerine şirketin kendi sesiyle yazılır.
 
 ## Hangi Planda Ne Kadar?
 
 | Plan | Projects erişimi |
 |---|---|
-| **Free** | 5 projeye kadar; standart bilgi tabanı boyutu |
-| **Pro / Max / Ultra** | Proje sayısı için yayımlanmış üst sınır yok; bilgi tabanı bağlam sınırına yaklaşınca Claude RAG moduna geçer ve kapasiteyi 10 kata kadar artırır |
-| **Team** | Pro / Max / Ultra'daki RAG + **paylaşılan projeler, izin kontrolleri ile** |
-| **Enterprise** | Team özellikleri + kurum çapında görünürlük, SSO, yönetici kontrolleri; 6 Kasım 2026'dan beri projelere etiket verip harcamayı proje bazında izleme (beta) |
+| Free | 5 projeye kadar; standart bilgi tabanı boyutu |
+| Pro / Max / Ultra | Proje sayısı için yayımlanmış üst sınır yok; bilgi tabanı bağlam sınırına yaklaşınca Claude RAG moduna geçer ve kapasiteyi 10 kata kadar artırır |
+| Team | Pro / Max / Ultra'daki RAG ve izin kontrollü paylaşılan projeler |
+| Enterprise | Team özellikleri + kurum çapında görünürlük, SSO, yönetici kontrolleri; 6 Kasım 2026'dan beri projelere etiket verip harcamayı proje bazında izleme (beta) |
 
-Yeni kullanıcılara **ilk ay Max (eski adı Max 5x)** öneriyoruz; bu bir öneridir, zorunlu değildir. Pro ile başlayıp gerektiğinde yükseltmek de olur. İkinci aydan itibaren kullanım ritmine göre Pro'ya inilebilir; Projects Pro'da da tam çalışır.
+Yeni kullanıcılara ilk ay Max (eski adı Max 5x) öneriyoruz, zorunlu değil. Pro ile başlayıp gerektiğinde yükseltebilirsiniz; ikinci aydan itibaren kullanım ritmine göre Pro'ya da inebilirsiniz, Projects Pro'da tam çalışır.
 
 ## İlk Project'inizi Nasıl Kurarsınız?
 
-1. [claude.ai](https://claude.ai) → sol menü → **Projects** → **+ Create project**
+1. [claude.ai](https://claude.ai) → sol menü → Projects → + Create project
 2. Projeye anlamlı bir ad verin ("İhracat Departmanı", "Q2 Pazarlama" gibi)
-3. **Custom instructions** alanına nasıl davranmasını istediğinizi yazın, kim olduğunuz, bağlam, ton, kurallar
-4. **Knowledge base**'e ilgili dosyaları yükleyin: şirket belgeleri, kılavuzlar, örnekler
-5. Projenin içinde yeni bir sohbet başlatın: Claude artık tüm bağlamla konuşur
+3. Custom instructions alanına Claude'un nasıl davranmasını istediğinizi yazın: kim olduğunuzu, bağlamı, tonu, kuralları
+4. Knowledge base'e ilgili dosyaları yükleyin: şirket belgeleri, kılavuzlar, örnekler
+5. Projenin içinde yeni bir sohbet başlatın, Claude artık tüm bağlamı bilir
 
-İlk denemede 3-5 dosya yükleyin, yeter. Zamanla ekleyebilirsiniz.
+İlk denemede 3-5 dosya yeter, sonra ekleyebilirsiniz.
 
 **Süre:** ilk projenin kurulumu (talimat yazma ve dosya yükleme) 15-30 dakika. *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).*
 

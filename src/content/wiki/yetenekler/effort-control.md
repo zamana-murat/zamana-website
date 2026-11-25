@@ -8,7 +8,7 @@ tags:
   - caba
   - opus
   - hiz
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 **Claude Effort, Claude'un bir göreve ne kadar "çaba" harcayacağını sizin belirlemenizi sağlayan ayardır.** [Modeller](/wiki/temeller/modeller/) sayfasındaki güncel model ailesinin çoğunda vardır; Haiku 4.5 (legacy) desteklemez; Haiku 5.5 dahil yeni modellerde vardır.
@@ -82,7 +82,7 @@ Kurgusal bir örnek: Aksoy Lojistik'te finans ekibi her sabah gelen tahsilat e-p
 
 Yüksek kademeler kullanım limitini daha hızlı tüketir; limitin nasıl işlediği için [Kullanım Limitleri](/wiki/temeller/kullanim-limitleri/) sayfasına bakın.
 
-Bu, [Modeller](/wiki/temeller/modeller/) sayfasındaki "model değil prompt önemli" felsefesinin bir uzantısıdır: artık sadece *hangi model* değil, *ne kadar çaba* da elinizde bir kaldıraçtır. Anthropic'in kendi testine göre Opus 5.5, orta çabayla Opus 5'in yüksek çaba düzeyini yakalıyor; yani daha yeni model, aynı kaliteyi daha düşük çabayla verebiliyor.
+Bu, [Modeller](/wiki/temeller/modeller/) sayfasındaki "model değil prompt önemli" felsefesinin bir uzantısıdır: model seçimine bir de *ne kadar çaba* kararı eklenmiş oluyor ve ikisi de elinizdeki kaldıraçtır. Anthropic'in kendi testine göre Opus 5.5, orta çabayla Opus 5'in yüksek çaba düzeyini yakalıyor; yani daha yeni model, aynı kaliteyi daha düşük çabayla verebiliyor.
 
 Bu ayarı bireysel olarak öğrenmek kolay, bir ekibe oturtmak daha zordur: hangi işte düşük, hangisinde yüksek çaba kullanılacağı ortak bir alışkanlık olmalı. [Kurumsal Claude programı](/programlar/kurumsal/) bu tür ekip kurallarını çalışanlarınızın kendi işleri üzerinden çalışır.
 

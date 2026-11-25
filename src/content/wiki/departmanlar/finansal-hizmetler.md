@@ -8,17 +8,17 @@ tags:
   - bddk
   - kvkk
   - hassas
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Banka, sigorta şirketi, aracı kurum ve faktoring şirketinde iş büyük ölçüde belgedir: kredi dosyası, poliçe, rapor, müşteri yazışması, denetim bulgusu. Claude bu belge işlerinde zaman kazandırır. Ama finansal hizmetler Türkiye'de düzenleyicisi olan, müşteri sırrı ve bilgi sistemleri kuralları bulunan bir sektördür; Claude kullanımı **önce uyum biriminin, sonra kullanıcının işidir**.
+Banka, sigorta şirketi, aracı kurum ve faktoring şirketinde iş büyük ölçüde belgedir: kredi dosyası, poliçe, rapor, müşteri yazışması, denetim bulgusu. Claude bu belge işlerinde zaman kazandırır. Ama finansal hizmetler Türkiye'de düzenleyicisi olan, müşteri sırrı ve bilgi sistemleri kuralları bulunan bir sektördür; Claude kullanımı önce uyum biriminin, sonra kullanıcının işidir.
 
-**Önemli:** Bu sayfa hukuki tavsiye değil, genel rehberlik. Kurumunuzun Claude kullanımını **uyum, hukuk ve bilgi güvenliği birimleri** onaylamadan müşteri verisini Claude'a girmeyin.
+Bu sayfa hukuki tavsiye değil, genel rehberlik. Kurumunuzun uyum, hukuk ve bilgi güvenliği birimleri Claude kullanımını onaylamadan müşteri verisini Claude'a girmeyin.
 
 ## Düzenleyici Çerçeve: Hızlı Özet
 
 - **BDDK:** bankalar için bilgi sistemleri, bulut kullanımı ve destek hizmeti alımı düzenlemeleri vardır; bazı sistem ve verilerin yurt içinde tutulması gerekebilir. Bankacılık Kanunu'ndaki sır saklama yükümlülüğü, müşteri bilgisinin üçüncü taraflarla paylaşımını sınırlar. Anthropic'in Türkiye'ye özgü bir BDDK onayı yoktur, değerlendirme kuruma aittir. Düzenleme adları ve madde metinleri için ilgili BDDK düzenlemelerini kurumunuzun uyum birimiyle teyit edin. Genel çerçeve: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki "Finans Sektörü" bölümü.
-- **SPK:** halka açık şirket ve aracı kurum çalışanlarında **içeriden öğrenenlerin ticareti ve bilgi koruması** kritiktir. Açıklanmamış mali tablo ve işlem bilgisi Claude'a girmez.
+- **SPK:** halka açık şirket ve aracı kurum çalışanlarında içeriden öğrenenlerin ticareti ve bilgi koruması ağır sonuç doğurur. Açıklanmamış mali tablo ve işlem bilgisi Claude'a girmez.
 - **MASAK:** müşteri tanıma ve şüpheli işlem kayıtları hassastır. Bildirime konu olabilecek bilgi Claude'a verilmez.
 - **Sigorta ve faktoring:** sigorta mevzuatı ve faktoring şirketlerinin tabi olduğu düzenlemeler sektöre göre değişir; hangi düzenleyicinin hangi kuralı koyduğunu uyum biriminizden öğrenin.
 - **KVKK:** müşteri verisi kişisel veridir. Claude'a girmek yurt dışına aktarım olabilir, ayrıntılar [Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfasında. Hesap, kart, bakiye ve kredi bilgisi aynı zamanda sır niteliğindedir.
@@ -39,13 +39,13 @@ Anthropic'in finansal hizmetler tarafındaki ürün ve [connector](/wiki/sozluk/
 | İç denetim raporu taslağı (bulgu anlatısı) | ⚠️ | Bulgudaki müşteri verisi maskelenir |
 | Kredi / sigorta karar verme | ❌ | Yetki ve sorumluluk kurumda |
 
-**Genel kural:** Claude **karar vermez, müşteri hakkında hüküm kurmaz**. Belge hazırlığı, özet ve anlatıda yardımcı olur; kredi, tazminat, risk ve uyum kararı yetkili kişi ve kurulda kalır.
+Genel kural: Claude karar vermez, müşteri hakkında hüküm kurmaz. Belge hazırlığı, özet ve anlatıda yardımcı olur; kredi, tazminat, risk ve uyum kararı yetkili kişi ve kurulda kalır.
 
 ## Bölüm 1: Kredi ve Analiz
 
 ### Kredi Dosyası Özeti
 
-Bir kredi talebi için mali tablolar, sektör bilgisi ve teminat bilgisi tek bir memoda toplanır. Claude rasyoları açıklar, risk ve güçlü yanları sıralar, memo taslağını yazar. Müşteri adı kodlanır ("Firma A"), kimlik ve vergi numarası çıkarılır. **Memo, karar önerisi değil bilgi özetidir**; öneri analistten, karar komiteden gelir.
+Bir kredi talebi için mali tablolar, sektör bilgisi ve teminat bilgisi tek bir memoda toplanır. Claude rasyoları açıklar, risk ve güçlü yanları sıralar, memo taslağını yazar. Müşteri adı kodlanır ("Firma A"), kimlik ve vergi numarası çıkarılır. Memo bir bilgi özetidir, karar önerisi içermez; öneri analistten, karar komiteden gelir.
 
 ### Sektör ve Rakip Analizi
 
@@ -63,7 +63,7 @@ Karmaşık bir iş modelinde formül tutarlılığı, hatalı hücre ve varsayı
 
 ### Poliçe Karşılaştırma
 
-İki ürünün genel şartlarındaki farkları (teminat, istisna, muafiyet) tablo olarak çıkarmak. Bu iş **ürün metni** üzerinde yapılır, bir müşterinin poliçesi üzerinde değil. Sonuç satış ya da hasar kararı değil, bilgi notudur.
+İki ürünün genel şartlarındaki farkları (teminat, istisna, muafiyet) tablo olarak çıkarmak. Bu iş ürün metni üzerinde yapılır; bir müşterinin poliçesi Claude'a verilmez. Sonuç satış ya da hasar kararı değil, bilgi notudur.
 
 ### Hasar Dosyası ve Sağlık Verisi
 
@@ -106,11 +106,11 @@ Denetçinin saha notlarından bulgu anlatısı ("tespit, risk, öneri, yönetim 
 
 ## Plan Önerisi
 
-Bireysel plan (Free, Pro, Max, Ultra) yerine **Team ya da Enterprise öneriyoruz**; **zorunlu değildir**. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz, DPA yalnız ticari ürünlere dahildir. Denetim günlüğü ve Compliance API gibi izleme araçları yalnız Enterprise'tadır; bir bankanın ya da aracı kurumun denetim ihtiyacı varsa bunlar belirleyicidir. 5 Kasım 2026'dan beri Enterprise'ta istemleri kurumun kendi DLP aracından geçiren hook'lar, yönetilen bilgisayarlarda kişisel hesapla girişi engelleme ve self-serve IP izin listesi de var (hook'lar genel kullanımda, IP izin listesi beta); bilgi güvenliği biriminiz bunları değerlendirmeye katabilir ([Enterprise Güvenlik Araçları](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026)). Ayrıntı: [Takım ve Admin](/wiki/temeller/takim-ve-admin/). API kullanılıyorsa Zero Data Retention bir API düzenlemesidir ve satış ekibiyle talep edilir.
+Bireysel plan (Free, Pro, Max, Ultra) yerine Team ya da Enterprise öneriyoruz; zorunlu değil. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz, DPA yalnız ticari ürünlere dahildir. Denetim günlüğü ve Compliance API gibi izleme araçları yalnız Enterprise'tadır; bir bankanın ya da aracı kurumun denetim ihtiyacı varsa bunlar belirleyicidir. 5 Kasım 2026'dan beri Enterprise'ta istemleri kurumun kendi DLP aracından geçiren hook'lar, yönetilen bilgisayarlarda kişisel hesapla girişi engelleme ve self-serve IP izin listesi de var (hook'lar genel kullanımda, IP izin listesi beta); bilgi güvenliği biriminiz bunları değerlendirmeye katabilir ([Enterprise Güvenlik Araçları](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026)). Ayrıntı: [Takım ve Admin](/wiki/temeller/takim-ve-admin/). API kullanılıyorsa Zero Data Retention bir API düzenlemesidir ve satış ekibiyle talep edilir.
 
 Hangi plan olursa olsun, müşteri sırrı ve BDDK/SPK/MASAK kapsamındaki veri için kural aynıdır: uyum birimi izin vermeden girmeyin.
 
-Uyum ve veri hassasiyeti yüksek ekiplerde kullanım kuralları baştan konuşulmalıdır; bunun için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programı ekibinizin kendi süreçleri üzerinden ilerler. Muhasebe ve mali müşavirlik tarafı için [Muhasebeciler ve SMMM'ler](/wiki/departmanlar/muhasebe-smmm/) sayfası var.
+Uyum ve veri hassasiyeti yüksek ekiplerde kullanım kurallarını baştan konuşun; [kurumsal yapay zeka eğitimimiz](/programlar/kurumsal/) bunu ekibinizin kendi süreçleri üzerinden çalışır. Muhasebe ve mali müşavirlik tarafı için [Muhasebeciler ve SMMM'ler](/wiki/departmanlar/muhasebe-smmm/) sayfası var.
 
 ## İlgili Sayfalar
 

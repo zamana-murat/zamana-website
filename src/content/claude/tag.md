@@ -17,14 +17,14 @@ related:
   - { label: "MCP güvenliği (wiki)", href: "/wiki/mcp/guvenlik/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 30
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Çoğu ekip işin büyük bölümünü Slack'te konuşur: karar verilir, rakam sorulur, hata bildirilir. Claude Tag, Claude'u bu konuşmanın içine alır. Bir kanalda ya da herhangi bir iş parçacığında (thread) `@Claude` yazarsınız, Claude o konuşmanın tamamını okur ve istediğiniz işi yapar. Cevabı özel bir pencerede değil, aynı kanalda yazar; böylece ekibin tamamı sonucu görür ve üzerine soru sorabilir.
+Slack kullanan ekiplerde karar verilir, rakam sorulur, hata bildirilir. Claude Tag, Claude'u bu konuşmanın içine alır. Bir kanalda ya da herhangi bir iş parçacığında (thread) `@Claude` yazarsınız, Claude o konuşmanın tamamını okur ve istediğiniz işi yapar. Cevabı özel bir pencerede değil, aynı kanalda yazar; böylece ekibin tamamı sonucu görür ve üzerine soru sorabilir.
 
-Aklınızda tutmanız gereken fark: bu, kişisel sohbet penceresindeki Claude'un Slack'e taşınmış hali değil, ekibin ortak bir kaynağı. Claude'un kendi hesabı ve kimliği vardır (Anthropic bunu "agent identity" olarak adlandırıyor). Sistemlere sizin hesabınızla değil, yöneticinin tanımladığı yetkilerle girer ve her kimlik bilgisi kullanımı kayda geçer. "Claude ne yaptı, kim istedi?" sorusunun cevabı hep bulunur.
+Bu, kişisel sohbet penceresindeki Claude'un Slack'e taşınmış hali değil, ekibin ortak bir kaynağı. Claude'un kendi hesabı ve kimliği vardır (Anthropic bunu "agent identity" olarak adlandırıyor). Sistemlere sizin hesabınızla değil, yöneticinin tanımladığı yetkilerle girer ve her kimlik bilgisi kullanımı kayda geçer. "Claude ne yaptı, kim istedi?" sorusunun cevabı hep bulunur.
 
 Kaynak sayfaya göre @Claude şunları yapabiliyor:
 

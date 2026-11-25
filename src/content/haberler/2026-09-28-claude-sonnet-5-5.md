@@ -15,11 +15,11 @@ Anthropic, Claude 5.5 ailesinin ikinci modeli Claude Sonnet 5.5'i duyurdu. Model
 
 ## Sizin için ne değişiyor?
 
-Sonnet, günlük iş modeli olarak düşünülebilir: rapor özetleme, e-posta taslağı, tablo analizi, uzun belgeyi okuyup yorumlama gibi işlerin çoğunu o yapar. Hız artışı en çok beklediğiniz anlarda hissedilir. Örneğin 40 sayfalık bir sözleşmeyi özetletirken ya da bir Excel dosyasından çok adımlı analiz isterken Claude'un yanıt vermesi daha kısa sürer.
+Sonnet'i günlük iş modeli olarak düşünebilirsiniz: rapor özetleme, e-posta taslağı, tablo analizi, uzun belgeyi okuyup yorumlama gibi işler için uygun. Hız artışı en çok beklediğiniz anlarda hissedilir. Örneğin 40 sayfalık bir sözleşmeyi özetletirken ya da bir Excel dosyasından çok adımlı analiz isterken Claude'un yanıt vermesi daha kısa sürer.
 
 Anthropic'in paylaştığı bir bilgi işi testinde Sonnet 5.5, Opus 5.5'e çok yakın bir puan aldı. Duyurudaki müşteri yorumlarından biri, modelin her karmaşıklık düzeyinde Sonnet 5'ten daha iyi karar verdiğini ve belirgin biçimde daha az token harcadığını söylüyor. Bunlar şirketin kendi testleri ve müşteri alıntıları; kendi işinizde denemeden kesin sonuç saymayın.
 
-Geliştiriciler için fiyatlar şöyle: milyon girdi tokenı 2 dolar, milyon çıktı tokenı 10 dolar, önbellekten okuma milyon token başına 0,20 dolar. Yani Sonnet 5'in fiyat listesiyle aynı; tasarruf fiyattan değil, harcanan token'ın azalmasından geliyor.
+Geliştiriciler için fiyatlar şöyle: milyon girdi tokenı 2 dolar, milyon çıktı tokenı 10 dolar, önbellekten okuma milyon token başına 0,20 dolar. Yani fiyat listesi Sonnet 5'le aynı; tasarruf harcanan token'ın azalmasından geliyor.
 
 ## Nasıl denersiniz?
 

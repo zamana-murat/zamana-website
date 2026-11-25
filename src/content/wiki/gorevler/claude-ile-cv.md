@@ -7,10 +7,10 @@ tags:
   - cv
   - insan-kaynaklari
   - kariyer
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude ile CV iki farklı biçimde kullanılır:** kendi CV'nizi yazmak ya da düzeltmek (aday olarak) ve gelen CV'leri ön değerlendirmek (İK olarak). Kendi CV'nizde işe yarayan yol şu: eski CV'nizi, başvuracağınız ilanı ve kendi başarılarınızı verin; Claude CV'yi ilana göre yeniden düzenler, zayıf cümleleri somut sonuçlara çevirir ve bir ön yazı taslağı hazırlar. İK tarafında Claude, CV'den özet çıkarmak ve ilan kriterlerine göre eşleştirme tablosu hazırlamak için kullanılabilir; ama aday hakkında nihai karar insanındır. Claude CV'ye sizin yaşamadığınız bir deneyim ya da beceri ekleyebilir; yazılan her cümle sizin için doğru olmalıdır. Aday verisi kişisel veridir ve KVKK kapsamındadır: başkalarının CV'sini yüklemeden önce hukuki dayanağı ve şirket politikasını kontrol edin. Bu rehber her iki taraf için adımları, dört hazır Türkçe promptu, tahmini süre kazancını ve en sık yapılan hataları, özellikle uydurulan deneyim ve önyargı risklerini içerir.
+**Claude ile CV iki farklı biçimde kullanılır:** kendi CV'nizi yazmak ya da düzeltmek (aday olarak) ve gelen CV'leri ön değerlendirmek (İK olarak). Kendi CV'nizde işe yarayan yol şu: eski CV'nizi, başvuracağınız ilanı ve kendi başarılarınızı verin; Claude CV'yi ilana göre yeniden düzenler, zayıf cümleleri somut sonuçlara çevirir ve bir ön yazı taslağı hazırlar. İK tarafında Claude, CV'den özet çıkarmak ve ilan kriterlerine göre eşleştirme tablosu hazırlamak için kullanılabilir; ama aday hakkında nihai karar insanındır. Claude CV'ye sizin yaşamadığınız bir deneyim ya da beceri ekleyebilir; yazılan her cümle sizin için doğru olmalıdır. Aday verisi kişisel veridir ve KVKK kapsamındadır: başkalarının CV'sini yüklemeden önce hukuki dayanağı ve şirket politikasını kontrol edin. En sık hatalar uydurulan deneyim ve önyargıdır; ikisi de aşağıda ayrıca anlatılıyor.
 
 ## Adım adım: Kendi CV'nizi Claude ile nasıl hazırlarsınız?
 
@@ -20,7 +20,7 @@ lastUpdated: "2026-11-09"
 4. **Taslağı isteyin, sonra sorgulayın.** "Hangi cümleyi kanıtlayamam?" diye sorun; kanıtlayamayacağınız iddiaları çıkarın.
 5. **Biçimi ayırın.** Metni Claude ile yazın, biçimlendirmeyi Word ya da Docs'ta yapın. ATS (başvuru takip sistemi) için sade yapı, tablo ve görsel olmadan.
 
-Claude kişisel olarak sizi tanıdıktan sonra CV'yi güncel tutmak için bir [Claude Projesi](/wiki/araclar/projects/)ne kariyer notlarınızı koyabilirsiniz.
+CV'yi güncel tutmak için kariyer notlarınızı bir [Claude Projesi](/wiki/araclar/projects/)ne koyabilirsiniz; Claude her seferinde sizi baştan tanımak zorunda kalmaz.
 
 ## Adım adım: İK'da CV'ler nasıl ön değerlendirilir?
 

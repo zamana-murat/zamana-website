@@ -7,10 +7,10 @@ tags:
   - turizm
   - otel
   - misafir-iletisim
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Türkiye'de turizm stratejik bir sektör: ekonominin önemli bir dilimi, milyonlarca uluslararası misafir ve çok dilli iletişim zorunluluğu. Otel, acente ve tur operatörü için **dil çeşitliliği, kesintisiz misafir iletişimi ve online yorum yönetimi**, Claude'un hızlı değer ürettiği alanlardandır.
+Türkiye'de turizm milyonlarca uluslararası misafir ağırlar ve çok dilli iletişim gerektirir. Otel, acente ve tur operatörü için dil çeşitliliği, kesintisiz misafir iletişimi ve online yorum yönetimi, Claude'dan hızlı fayda gelen alanlardır.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -27,7 +27,7 @@ Türkiye'de turizm stratejik bir sektör: ekonominin önemli bir dilimi, milyonl
 
 Misafir İngilizce, Almanca, Rusça, Arapça, Çince veya Fransızca yazıyor; çalışan İngilizce dışında zorlanıyor. Claude:
 
-- Onlarca dilde **profesyonel** otel iletişimi kurar
+- Onlarca dilde profesyonel otel iletişimi kurar
 - Birebir çeviri yapmaz, kültürel uygunluğu gözetir
 - Otelin marka sesini korur
 - Hızlı yanıt için tek bir prompt yeter
@@ -44,7 +44,7 @@ Claude şu inceliklere dikkat edebilir (genel eğilimlerdir, kalıp yargı deği
 - **Japon** misafirde: ekstra incelik, talep yerine rica kalıbı
 - **İskandinav** misafirde: sade, az kelimeli, şeffaf
 
-Claude bu hassasiyetleri doğal olarak getirir; **çalışanın 8 dil bilmesi gerekmez.** Yine de kritik yazışmaları ana dili bilen biri kontrol etmelidir.
+Claude bu hassasiyetleri doğal olarak getirir, çalışanın 8 dil bilmesi gerekmez. Yine de kritik yazışmaları ana dili bilen biri kontrol etmelidir.
 
 ### Şikayet Yönetimi
 
@@ -55,7 +55,7 @@ Misafir şikayetinin çözümünde hız ve diplomatik ton belirleyicidir. Claude
 - Çözüm öneren empati metni hazırlar
 - Telafi (compensation) önerisi sunar
 
-İçerik **müdür imzasıyla** çıktığı için müdür düzenler ve gönderir.
+İçerik müdür imzasıyla çıktığı için müdür düzenler ve gönderir.
 
 [Müşteri hizmetleri](/wiki/departmanlar/musteri-hizmetleri/) sayfası şikayet yönetimi temellerini verir.
 
@@ -69,7 +69,7 @@ Kayıp eşya, sağlık durumu ya da güvenlik olayında misafire ve yakınına h
 
 TripAdvisor, Booking ve Google Reviews'ın her birinde ton ve uzunluk farklıdır. Claude:
 
-- Yoruma **kişisel** bir yanıt yazar (hazır kalıp değil)
+- Yoruma kişisel bir yanıt yazar (hazır kalıp değil)
 - Olumlu yorumlarda samimi teşekkür eder
 - Olumsuz yorumlarda savunmaya geçmeden çözüm sunar
 - Otel adını tekrar etme klişesinden kaçınır
@@ -92,7 +92,7 @@ Misafir rezervasyondan önce "havuz ısıtmalı mı", "havaalanı transferi var 
 
 ### Yorum Toplama Stratejisi
 
-Memnun misafire **doğru zamanda, doğru kanaldan** yorum hatırlatma e-postası. Claude segment başına ayrı taslak hazırlar.
+Memnun misafire doğru zamanda ve doğru kanaldan yorum hatırlatma e-postası. Claude segment başına ayrı taslak hazırlar.
 
 ## Bölüm 3: Tur ve Paket İçeriği
 
@@ -251,7 +251,7 @@ Otel iletişim sorumlusu için temel yapı:
 
 **Engel:** "8 dilde misafir iletişimi karmaşık, çalışanlar yetişmez."
 
-**Çözüm:** Tam tersi: Claude ile **bir çalışan birden fazla dilde yanıt taslağı hazırlayabilir.** Dil eğitimi yatırımı azalır, kontrol ihtiyacı ise (ana dili bilen biri) kalır.
+**Çözüm:** Claude ile bir çalışan birden fazla dilde yanıt taslağı hazırlayabilir. Dil eğitimi yatırımı azalır, kontrol ihtiyacı ise (ana dili bilen biri) kalır.
 
 **Engel:** "Otelimizin marka sesi var, Claude tutturamaz."
 
@@ -263,9 +263,9 @@ Otel iletişim sorumlusu için temel yapı:
 
 ## Sezon Dışı Strateji
 
-Kasım-Mart arası sezon dışıdır. Çoğu otel personeli azaltır, içerik üretimi tamamen durur. Claude **sezon dışı dönemi** içerik üretim mevsimine çevirir: sezon boyunca yetecek blog, sosyal medya ve e-posta serisi bu aylarda hazırlanabilir.
+Kasım-Mart arası sezon dışıdır. Oteller bu dönemde genellikle personeli azaltır ve içerik üretimi durur. Claude sezon dışı dönemi içerik üretim mevsimine çevirir: sezon boyunca yetecek blog, sosyal medya ve e-posta serisi bu aylarda hazırlanabilir.
 
-Resepsiyon, rezervasyon ve pazarlama ekiplerinin ortak yöntem kurması için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) seçeneğine bakabilirsiniz.
+Resepsiyon, rezervasyon ve pazarlama ekiplerinin ortak yöntem kurması için [kurumsal yapay zeka eğitimimize](/programlar/kurumsal/) bakın.
 
 ## İlgili Sayfalar
 

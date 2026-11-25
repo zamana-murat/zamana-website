@@ -8,12 +8,10 @@ tags:
   - vision
   - ocr
   - gorsel-analiz
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Claude görselleri **görür ve üzerinde akıl yürütür**. Bu basit OCR (metin tanıma) ya da basit görsel tanıma değildir. **Görsel muhakemedir**: bağlamı, ilişkileri ve anlamı görsellerden çıkarır.
-
-Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bunu nasıl kullandığını anlatır.
+Claude görselleri **görür ve üzerinde akıl yürütür**. OCR (metin tanıma) gibi yalnız yazıyı okumakla kalmaz, bağlamı, ilişkileri ve anlamı da görsellerden çıkarır.
 
 ## Claude Neleri Görür ve Analiz Eder?
 
@@ -49,7 +47,7 @@ Bu sayfa Claude'un görsellerle ne yapabildiğini ve bir iş profesyonelinin bun
 
 - Uygulama ekran görüntülerini okur ve yorumlar
 - UI öğelerini, form alanlarını, düğmeleri, menüleri tespit eder
-- Ekranda ne olduğunu tarif eder: [Computer Use](/wiki/yetenekler/computer-use/) için kritik
+- Ekranda ne olduğunu tarif eder: [Computer Use](/wiki/yetenekler/computer-use/) için gerekli
 - İki ekran görüntüsünü karşılaştırarak değişiklikleri belirler
 
 ## Teknik Özellikler
@@ -144,7 +142,7 @@ Hesabınızdaki veri ayarlarının plana göre nasıl değiştiği [Gizlilik ve 
 
 ## Önemli Refleks
 
-Çalışanların çoğu **Claude'a fotoğraf verebileceğini bilmez**. "Claude metin aracı" algısı hâkim.
+Bazı çalışanlar **Claude'a fotoğraf verebileceklerini fark etmez**; "Claude metin aracı" algısı yaygındır.
 
 Kartvizitten CRM girişi bir satış ekibi için, tahtadan toplantı notu bir yönetici asistanı için çoğu zaman "bu kadar kolay mıymış" dedirten ilk andır.
 
@@ -152,7 +150,7 @@ Kendinize sorun:
 
 > **"Bu bilgi elinde bir görselde mi var? Claude'a ver."**
 
-O refleks kurulduğunda çalışan zamanını haftada saatlerce kazanır.
+Bu refleks oturunca fotoğraftaki bilgiyi elle yazmanız gerekmez.
 
 ## İlgili Sayfalar
 

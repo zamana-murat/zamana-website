@@ -6,29 +6,29 @@ tags:
   - claude-md
   - sablon
   - rol-bazli
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Sıfırdan iyi bir [CLAUDE.md](/wiki/claude-md/nedir/) yazmak ilk seferde zor.** Bu sayfa rol bazlı şablonlar sunar: kopyalayın, kendi bilgilerinizle kişiselleştirin, başlayın.
+Sıfırdan iyi bir [CLAUDE.md](/wiki/claude-md/nedir/) yazmak ilk seferde zor. Aşağıdaki rol bazlı şablonları kopyalayın, kendi bilgilerinizle kişiselleştirin ve başlayın.
 
-Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden kaçırabilir; pratik sınır birkaç yüz kelimedir ([Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında detay).
+Şablonlar kısa tutuldu: CLAUDE.md uzadıkça Claude bazı kuralları gözden kaçırabilir ve pratik sınır birkaç yüz kelimedir ([Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında ayrıntı).
 
 ## Nasıl Kullanılır
 
-1. Aşağıdan **kendi rolünüze en yakın olanı** seçin
+1. Aşağıdan kendi rolünüze en yakın olanı seçin
 2. Kopyalayın, bir metin dosyasına yapıştırın (klasörle çalışacaksanız `CLAUDE.md` adıyla)
-3. Köşeli parantezli yerleri **kendi bilgilerinizle** doldurun: `[Adınız]`, `[Şirket]`, `[Sektör]`
+3. Köşeli parantezli yerleri kendi bilgilerinizle doldurun: `[Adınız]`, `[Şirket]`, `[Sektör]`
 4. Kuralları kendi tercihlerinize göre düzenleyin
 5. Metni yerine koyun (aşağıdaki "Bu metni nereye koyacağım?" kutusuna bakın)
 6. Yeni bir sohbet ya da oturumda Claude'a "Talimatımı 3 maddede özetle" deyin; özet doğruysa devam edin
 7. İlk hafta gözleyin, gerekirse [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasına bakarak iyileştirin
 
-> **Bu metni nereye koyacağım?**
+> Bu metni nereye koyacağım?
 >
-> - **Tüm sohbetlerde geçerli olsun:** Settings > General > "Instructions for Claude" (profil talimatı). Şablonun tamamı yerine kısa sürümünü yazın: Ben Kimim, Ton ve Dil, Yap, Yapma.
-> - **Bir iş ya da müşteri için:** o işin [Projects](/wiki/araclar/projects/) talimat alanına; Şirket Bağlamı gibi bölümler burada daha yerindedir.
-> - **[Cowork](/wiki/araclar/cowork-modu/) ile bilgisayarınızdaki klasörde çalışıyorsanız:** klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel oturumda okunur; bulut oturumunda okunduğu belgelenmediği için kritik kuralları profil talimatına da yazın.
-> - **Claude Code'da:** proje köküne `CLAUDE.md`.
+> - Tüm sohbetlerde geçerli olsun: Settings > General > "Instructions for Claude" (profil talimatı). Şablonun tamamı yerine kısa sürümünü yazın: Ben Kimim, Ton ve Dil, Yap, Yapma.
+> - Bir iş ya da müşteri için: o işin [Projects](/wiki/araclar/projects/) talimat alanına; Şirket Bağlamı gibi bölümler burada daha yerindedir.
+> - [Cowork](/wiki/araclar/cowork-modu/) ile bilgisayarınızdaki klasörde çalışıyorsanız: klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel oturumda okunur; bulut oturumunda okunduğu belgelenmediği için kritik kuralları profil talimatına da yazın.
+> - Claude Code'da: proje köküne `CLAUDE.md`.
 >
 > Yerlerin karşılaştırması: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 
@@ -69,7 +69,7 @@ Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden 
 - Üst yönetimin bu çeyrek odağı: [tema]
 ```
 
-[Satış departmanı](/wiki/departmanlar/satis/) sayfası yaklaşımı genişletir.
+Daha fazlası için [Satış departmanı](/wiki/departmanlar/satis/) sayfasına bakın.
 
 ## 2. Pazarlama / İçerik
 
@@ -110,7 +110,7 @@ Her şablon kısa tutuldu. CLAUDE.md uzadıkça Claude bazı kuralları gözden 
 - Renk paleti / fon: [tema]
 ```
 
-[Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfası ek detay verir.
+Ek ayrıntı için [Pazarlama departmanı](/wiki/departmanlar/pazarlama/) sayfasına bakın.
 
 ## 3. Finans / Mali İşler
 
@@ -153,7 +153,7 @@ Sorumluluğum: [bütçeleme, raporlama, muhasebe, vergi; uygun olanları].
 - Çalıştığım çapraz birimler: [İK, Operasyon]
 ```
 
-[Finans departmanı](/wiki/departmanlar/finans/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfaları derinlik verir.
+Daha fazlası için [Finans departmanı](/wiki/departmanlar/finans/) ve [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfalarına bakın.
 
 ## 4. Hukuk
 
@@ -195,7 +195,7 @@ Sorumluluğum: [şirket içi sözleşme, iş hukuku, müşteri davaları, KVKK].
 - İçtihat: yargitay.gov.tr, karararama.yargitay.gov.tr
 ```
 
-[Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası kapsamı genişletir.
+Daha fazlası için [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfasına bakın.
 
 ## 5. İnsan Kaynakları
 
@@ -239,7 +239,7 @@ ve gelişimi sorumluluğum.
 - AI kullanım politikası: [şirket içi politika sayfasına atıf]
 ```
 
-[İK departmanı](/wiki/departmanlar/insan-kaynaklari/) ek bağlam verir.
+Ek bağlam için [İK departmanı](/wiki/departmanlar/insan-kaynaklari/) sayfasına bakın.
 
 ## 6. Operasyon / Üretim Müdürü
 
@@ -279,7 +279,7 @@ Ekip büyüklüğü: [sayı]. Tesis [konum].
 - Ana ürün kategorileri: [3-4]
 ```
 
-[Operasyon departmanı](/wiki/departmanlar/operasyon/) genişletir.
+Daha fazlası için [Operasyon departmanı](/wiki/departmanlar/operasyon/) sayfasına bakın.
 
 ## 7. Müşteri Hizmetleri
 
@@ -319,7 +319,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 - İade politikası: [özet]
 ```
 
-[Müşteri hizmetleri departmanı](/wiki/departmanlar/musteri-hizmetleri/) detay verir.
+Ayrıntı için [Müşteri hizmetleri departmanı](/wiki/departmanlar/musteri-hizmetleri/) sayfasına bakın.
 
 ## 8. Yönetici / C-Level
 
@@ -360,7 +360,7 @@ kapatıyorum. Kanallar: [e-posta, telefon, chat, sosyal medya].
 - Stratejik öncelik 2026: [tema]
 ```
 
-[Liderlik departmanı](/wiki/departmanlar/liderlik/) yaklaşımı derinleştirir.
+Daha fazlası için [Liderlik departmanı](/wiki/departmanlar/liderlik/) sayfasına bakın.
 
 ## 9. BT / IT Yöneticisi
 
@@ -401,17 +401,17 @@ organizasyonun BT altyapısını yönetiyorum.
 - Onaylı AI araçları: [şirket politikası]
 ```
 
-[BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) genişletir.
+Daha fazlası için [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) sayfasına bakın.
 
 ## Genel Tavsiyeler
 
-**Kişiselleştirin.** Şablon başlangıç noktası, son nokta değil. İlk haftada en az 5 kez güncelleme yapın.
+**Kişiselleştirin.** Şablon başlangıç noktasıdır; ilk haftada en az 5 kez güncelleyin.
 
 **Çalıştığını test edin.** "Talimatımı 3 maddede özetle" diye sorun, sonra [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasındaki test prosedürünü uygulayın.
 
-**Şirket CLAUDE.md ile uyumlu olsun.** [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) varsa, onunla çelişen kuralları silin.
+**Şirket CLAUDE.md ile uyumlu olsun.** [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) varsa onunla çelişen kuralları silin.
 
-**Üç ayda bir gözden geçirin.** Rolünüz, projeleriniz, müşteri portföyünüz değişiyor → talimat metniniz de değişmeli.
+**Üç ayda bir gözden geçirin.** Rolünüz, projeleriniz ve müşteri portföyünüz değiştikçe talimat metniniz de değişmeli.
 
 ## İlgili Sayfalar
 

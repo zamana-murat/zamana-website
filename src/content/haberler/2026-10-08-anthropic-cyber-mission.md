@@ -12,28 +12,28 @@ tags: ["güvenlik", "siber güvenlik", "açık kaynak", "duyuru"]
 
 ## Kısaca
 
-Anthropic, yazılım ve sistemleri koruyan savunmacılara yardım etmek için uzun vadeli bir girişim olan **Anthropic Cyber Mission**'ı duyurdu. İlk aşamada iki alana odaklanıyor: kritik altyapı (enerji, su, fabrikalar, ulaşım) ve açık kaynak yazılım. Gerekçe şu: önceki çalışma olan Project Glasswing çok sayıda açık buldu, ama bulguları doğrulamak, önceliklendirmek ve düzeltmek yavaş kaldığı için siber riski yeterince azaltamadı.
+Anthropic, yazılımları ve sistemleri koruyan savunma ekiplerine yardım etmek için **Anthropic Cyber Mission** adlı uzun vadeli bir girişim başlattı. İlk aşamada iki alanda çalışacak: kritik altyapı (enerji, su, fabrikalar, ulaşım) ve açık kaynak yazılım. Anthropic'in önceki çalışması Project Glasswing çok sayıda açık bulmuştu. Ancak bulguları doğrulamak, sıraya koymak ve düzeltmek yavaş ilerlediği için siber risk yeterince azalmadı. Yeni girişimin gerekçesi bu.
 
 ## Sizin için ne değişiyor?
 
-Çoğu kullanıcı için bu duyuru Claude'un günlük kullanımında bir fark yaratmıyor. İlgilenecekler şunlar:
+Claude'u günlük işlerinizde kullanıyorsanız bu duyuru sizin için bir şey değiştirmiyor. Yenilik şu gruplar için:
 
-- **Güvenlik ekipleri:** Büyüklüğü ne olursa olsun savunma amaçlı çalışan ekipler, Claude'un siber yeteneklerine genişletilmiş erişim için **Cyber Verification Program**'a (siber doğrulama programı) başvurabiliyor.
-- **Açık kaynak geliştiricileri:** **OSS Scanner** adlı ücretsiz ve isteğe bağlı bir hizmet geliyor. Kayıtlı projeler Anthropic'in en yetenekli modelleriyle düzenli taranıyor. Her rapor açığın nasıl istismar edilebileceğini gösteren bir kanıt, bir açıklama ve mümkünse düzeltme önerisi içeriyor.
-- **Bakımcılar:** Açık kaynak projesi yürütenler "Claude for Open Source" ile ücretsiz Claude Max aboneliği için başvurabiliyor.
+- Savunma amaçlı çalışan güvenlik ekipleri, büyüklükleri ne olursa olsun, **Cyber Verification Program**'a (siber doğrulama programı) başvurup Claude'un siber yeteneklerine daha geniş erişim alabiliyor.
+- Açık kaynak geliştiricileri için **OSS Scanner** adlı ücretsiz bir hizmet geliyor; katılmak isteğe bağlı. Anthropic kayıtlı projeleri en yetenekli modelleriyle düzenli olarak tarıyor. Her raporda açığın nasıl istismar edilebileceğini gösteren bir kanıt, açığın açıklaması ve mümkünse bir düzeltme önerisi var.
+- Açık kaynak projesi yürütenler (bakımcılar) "Claude for Open Source" programıyla ücretsiz Claude Max aboneliğine başvurabiliyor.
 
 ## Nasıl denersiniz?
 
 1. Güvenlik ekibiniz varsa Anthropic'in siber doğrulama programı sayfasından başvurun.
 2. Kod tabanınızı taratmak istiyorsanız [Claude Security](/claude/security/) sayfasına bakın.
 3. Açık kaynak projeniz varsa OSS Scanner kaydı ve Claude for Open Source için Anthropic duyurusundaki bağlantıları izleyin.
-4. Sektörünüzde savunma tarafında Claude kullanımı için [siber güvenlik sayfamıza](/kurumsal/siber-guvenlik/) göz atabilirsiniz.
+4. Claude'un savunma tarafında nasıl kullanıldığını [siber güvenlik sayfamızda](/kurumsal/siber-guvenlik/) anlatıyoruz.
 
 ## Bilmeniz gerekenler
 
-- **Kritik Altyapı Savunma Programı (CIDP):** Güvenilir sağlayıcılara en gelişmiş modeller, yerinde mühendisler ve tehdit araştırması veriyor. Kurucu ortaklar arasında Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Palo Alto Networks, PwC ve Rockwell Automation var. Sıradan kuruluşlar doğrudan katılmıyor; güvenlik satıcıları, sistem entegratörleri ve ekipman üreticileri ilgi kaydı bırakabiliyor.
-- **OSS Scanner raporları** insan incelemesi olmadan, model tarafından üretilip gönderiliyor; önem derecesi gibi yerlerde hata olabilir. Anthropic doğru pozitif oranının %90'ın üzerinde olmasını bekliyor.
-- Tarayıcı, bulguları takip edebilecek projeler için tasarlandı; diğer projeler insan tarafından doğrulanmış bildirimler almaya devam edecek.
-- Duyuruda Türkiye'ye özgü bir program yok. Başvuru koşulları Anthropic'in sayfalarında belirlenir.
+- **Kritik Altyapı Savunma Programı (CIDP)**, güvenilir sağlayıcılara en gelişmiş modelleri, yerinde çalışan mühendisleri ve tehdit araştırmasını sağlıyor. Kurucu ortaklar arasında Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Palo Alto Networks, PwC ve Rockwell Automation var. Tek tek kuruluşlar programa doğrudan katılmıyor; güvenlik satıcıları, sistem entegratörleri ve ekipman üreticileri ilgi kaydı bırakabiliyor.
+- **OSS Scanner raporlarını** model yazıyor ve raporlar bir insan okumadan gönderiliyor. Bu yüzden önem derecesi gibi alanlarda hata olabilir. Anthropic, bildirilen açıkların %90'ından fazlasının gerçek çıkmasını (doğru pozitif oranı) bekliyor.
+- Tarayıcı, bulguları takip edebilecek projeler için tasarlandı. Diğer projelere açık bildirimleri yine bir insan doğruladıktan sonra gidecek.
+- Duyuruda Türkiye'ye özgü bir program yok. Başvuru koşulları Anthropic'in sayfalarında.
 
 *Kaynak: [Introducing the Anthropic Cyber Mission](https://www.anthropic.com/news/anthropic-cyber-mission), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

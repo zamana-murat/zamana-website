@@ -7,7 +7,7 @@ tags:
   - context-window
   - compaction
   - token
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 **Context window (bağlam penceresi), Claude'un tek bir konuşmada aynı anda "görebildiği" ve üzerinde çalışabildiği toplam metin miktarıdır.**
@@ -67,7 +67,7 @@ claude.ai sohbetinde de, code execution açıkken, bağlam penceresine yaklaşı
 | Daha önce verilen açık talimatlar | |
 | Kritik bağlam | |
 
-Özetin kalitesi yüksektir. Ama bir uyarı: çok önemli bir ayrıntı yalnızca eski konuşmada geçtiyse özete girmeyip atılabilir. Kritik bilgiyi **CLAUDE.md veya proje dosyası** gibi kalıcı yerlere yazmak en güvenli yoldur.
+Özet ana hatları korur, ama çok önemli bir ayrıntı yalnızca eski konuşmada geçtiyse özete girmeyip atılabilir. Kritik bilgiyi **CLAUDE.md veya proje dosyası** gibi kalıcı yerlere yazmak en güvenli yoldur.
 
 ## İş Oturumlarında Compaction Ne Zaman Kritiktir?
 
@@ -126,8 +126,6 @@ Uzun görev (30+ tur, birçok dosya): şunlara bakın:
 ## Tek Prensip
 
 Bağlam **sınırlı bir kaynaktır**. Kısa görevlerde görmezden gelin. Uzun ve karmaşık projelerde en önemli bağlamı uzun bir konuşmaya gömmeyin, **CLAUDE.md veya proje dosyalarına** koyun.
-
-Bu tek prensip, en sık duyulan "Claude bir şeyi unutuyor" şikayetini büyük ölçüde çözer.
 
 ## İlgili Sayfalar
 

@@ -7,10 +7,10 @@ tags:
   - karsilastirma
   - deepseek
   - kvkk
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**DeepSeek, Çin merkezli bir yapay zeka şirketidir.** Uygulaması ücretsiz, API'si çok ucuz ve modelleri teknik olarak ciddi. Bir şirketin kullanım kararında asıl soru ise modelin kalitesi değil, **verinin nereye gittiğidir.** Bu sayfa Claude ile DeepSeek'i bu açıdan karşılaştırır.
+DeepSeek, Çin merkezli bir yapay zeka şirketidir. Uygulaması ücretsiz, API'si çok ucuz ve modelleri teknik olarak ciddi. Bir şirketin kullanım kararında belirleyici soru, verinin nereye gittiğidir. Aşağıda Claude ile DeepSeek'i bu açıdan karşılaştırıyoruz.
 
 Zamana Claude eğitimi verir; yine de DeepSeek'in teknik başarısını küçümsemiyoruz. Aşağıda yazılanlar iki sağlayıcının kendi yayımladığı metinlere dayanır. Hukuki görüş değildir; kurumsal karar için hukuk müşavirinize danışın.
 
@@ -48,7 +48,7 @@ Pratik sonuç: kişisel veri, ticari sır, müşteri sözleşmesi, finansal ya d
 
 ## DeepSeek'in Güçlü Yanı Nedir?
 
-Dürüst olmak gerekirse üç noktada ilgi çekici: **fiyat** (API token başına Claude ve diğerlerinden belirgin ucuz), **açık ağırlıklı modeller** (kurumun kendi altyapısında çalıştırma imkânı) ve **araştırma ivmesi**. Hassas veriyle çalışmayan bir geliştirici ya da araştırmacı için bunlar gerçek avantajlardır.
+DeepSeek üç noktada ilgi çekici: fiyat (API token başına Claude ve diğerlerinden belirgin ucuz), açık ağırlıklı modeller (kurumun kendi altyapısında çalıştırma imkânı) ve araştırma ivmesi. Hassas veriyle çalışmayan bir geliştirici ya da araştırmacı için bunlar gerçek avantajlardır.
 
 > **Geliştiriciler için:** DeepSeek'in bazı modelleri açık ağırlıklı olarak yayımlanıyor. Kurum bu modeli kendi sunucusunda ya da kendi bulutunda çalıştırırsa veri üçüncü tarafa gitmez ve politikadaki Çin'de saklama maddesi geçerli olmaz; bu yol, tüketici uygulaması ya da DeepSeek'in kendi API'sinden farklı bir risk profili taşır. Karşılığında altyapı (GPU), güvenlik güncellemesi, model değerlendirmesi ve bakım sorumluluğu size geçer. Lisans koşullarını ve modelin çıktısını kendi işinizle test etmeden üretime almayın. Bu müfredatımızın parçası değildir; yalnızca seçenek olarak anılıyor.
 

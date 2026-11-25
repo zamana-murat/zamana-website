@@ -7,12 +7,12 @@ tags:
   - sozlesme
   - hukuk
   - taslak
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 > **Bu sayfa hukuki danışmanlık değildir.** Claude'un ürettiği her sözleşme metni ve inceleme notu, imzadan önce yetkili bir avukat tarafından gözden geçirilmelidir. Claude yazar, avukat kontrol eder.
 
-**Claude sözleşme işinde iki işe yarar:** sıfırdan ilk taslak çıkarmak ve elinizdeki karşı taraf sözleşmesini ön okumadan geçirmek. İyi bir sonuç için taraf bilgilerini, işin kapsamını, bedeli, süreyi, ödeme koşullarını ve sizin için kritik maddeleri açıkça verin; Claude bunlarla yapılandırılmış bir taslak üretir. Ön incelemede ise sözleşmeyi yükleyip riskli, eksik ya da tek taraflı maddeleri, sayfa ve madde numarasıyla listelemesini isteyebilirsiniz. Claude'un Türk hukukuna uygunluğu ve güncel mevzuatı bilmesi garanti edilmez; atıf yaptığı kanun maddesini kendiniz doğrulayın. Taslak bir başlangıçtır, sözleşmenin hukuki geçerliliği ve sizi koruyup korumadığı sorusuna cevap vermez. Sözleşmeler ticari sır ve kişisel veri içerir; yüklemeden önce şirket politikanızı ve gizlilik yükümlülüklerinizi kontrol edin. Aşağıda taslak ve ön inceleme için adımlar, dört hazır Türkçe prompt, KVKK uyarıları ve sık yapılan hatalar var; hepsi, çıktının bir hukuk belgesi değil avukata gidecek bir ilk taslak olduğu varsayımıyla yazıldı.
+**Claude sözleşme işinde iki işe yarar:** sıfırdan ilk taslak çıkarmak ve elinizdeki karşı taraf sözleşmesini ön okumadan geçirmek. İyi bir sonuç için taraf bilgilerini, işin kapsamını, bedeli, süreyi, ödeme koşullarını ve sizin için kritik maddeleri açıkça verin; Claude bunlarla yapılandırılmış bir taslak üretir. Ön incelemede ise sözleşmeyi yükleyip riskli, eksik ya da tek taraflı maddeleri, sayfa ve madde numarasıyla listelemesini isteyebilirsiniz. Claude'un Türk hukukuna uygunluğu ve güncel mevzuatı bilmesi garanti edilmez; atıf yaptığı kanun maddesini kendiniz doğrulayın. Taslak bir başlangıçtır, sözleşmenin hukuki geçerliliği ve sizi koruyup korumadığı sorusuna cevap vermez. Sözleşmeler ticari sır ve kişisel veri içerir; yüklemeden önce şirket politikanızı ve gizlilik yükümlülüklerinizi kontrol edin. Çıktıyı hukuk belgesi olarak değil, avukata gidecek bir ilk taslak olarak görün.
 
 ## Adım adım: Sözleşme taslağı nasıl hazırlanır?
 

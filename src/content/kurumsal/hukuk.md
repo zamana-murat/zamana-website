@@ -1,7 +1,7 @@
 ---
 title: "Hukuk ekipleri için Claude"
 seoTitle: "Hukukta Claude: Sözleşme İnceleme ve KVKK Uyumu"
-description: "Claude for Legal plugin'leri, hukuk artifact'ları ve Word eklentisiyle sözleşme inceleme ve araştırma. Türk hukukunda doğrulama, sır saklama ve KVKK için dikkat edilecekler."
+description: "Claude for Legal plugin'leri, hukuk artifact'ları ve Word eklentisiyle sözleşme inceleme. Türk hukukunda doğrulama, sır saklama ve KVKK için dikkat noktaları."
 eyebrow: "Departman"
 lead: "Claude, hukuk ekibinin araştırma, taslak ve karşılaştırma yükünü alır; avukat da zamanını yargı gerektiren kararlara ayırır. Claude avukatın yerini almaz: Türk mevzuatı ve içtihadında hata yapabilir, her çıktı bir hukukçu tarafından doğrulanır."
 heroImage: "/images/kurumsal/hukuk/hero.webp"
@@ -19,12 +19,12 @@ related:
   - { label: "Haber: hukuk artifact'ları", href: "/haberler/2026-10-28-claude-hukuk-artifactlari/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 80
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Hukuk işinin büyük bölümü okuma, karşılaştırma ve yazmadır: sözleşmeyi şirket standartlarıyla kıyaslamak, değişiklik önermek, mevzuat taramak, karşı tarafa yanıt taslağı hazırlamak. Anthropic'in hukuk sayfası bu yükü Claude'a vermeyi ve avukatın zamanını "yüksek riskli karar" anlarına ayırmayı öneriyor.
+Hukuk işi okuma, karşılaştırma ve yazmaya dayanır: sözleşmeyi şirket standartlarıyla kıyaslamak, değişiklik önermek, mevzuat taramak, karşı tarafa yanıt taslağı hazırlamak. Anthropic'in hukuk sayfası bu yükü Claude'a vermeyi ve avukatın zamanını "yüksek riskli karar" anlarına ayırmayı öneriyor.
 
 Kaynak sayfada beş uygulama alanı sayılıyor: hukuki araştırma, şirket satın almalarında hukuki inceleme (due diligence), sözleşme revizyonu, dış hukuk bürolarının yönetimi ve mevzuat uyumu. Sayfadaki örnekte Claude, bir AB düzenlemesi hakkında atıfları kontrol edilmiş bir araştırma notu hazırlıyor ve avukatın bakması gereken noktaları ayrıca işaretliyor. Hukuk teknolojisi şirketlerinin görüşleri de var; örneğin Harvey, Claude Opus 4.7'nin kendi BigLaw Bench testinde yüzde 90,9 puan aldığını söylüyor. Bu rakamlar ABD ve AB hukuku üzerindeki testlere aittir, Türk hukuku için bir ölçüm değildir.
 

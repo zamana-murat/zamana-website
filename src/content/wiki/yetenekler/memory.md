@@ -6,10 +6,10 @@ tags:
   - yetenekler
   - memory
   - bellek
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude'un sohbetler arası bilgiyi hatırladığı bir bellek katmanı vardır.** Sizin kim olduğunuzu, neyle uğraştığınızı, tercihlerinizi otomatik biriktirir; sonraki sohbetlerde bu bilgileri kullanır. Bu sayfa nasıl çalıştığını, [CLAUDE.md](/wiki/claude-md/nedir/) ile farkını ve kontrol mekanizmalarını anlatır.
+**Claude'un sohbetler arası bilgiyi hatırladığı bir bellek katmanı vardır.** Sizin kim olduğunuzu, neyle uğraştığınızı, tercihlerinizi otomatik biriktirir; sonraki sohbetlerde bu bilgileri kullanır.
 
 ## Memory Nedir?
 
@@ -24,11 +24,9 @@ Pratik karşılığı: bir asistan üç ay sizinle çalıştıktan sonra rolün�
 - **Yazdığınız kalıcı talimat:** Hafızanın yerine geçmez, yanında çalışır. Sohbet CLAUDE.md dosyasını okumaz; sohbette bunun yeri profil talimatıdır (Settings > General > "Instructions for Claude") ya da proje talimatıdır. Yerel Cowork oturumu klasördeki [CLAUDE.md](/wiki/claude-md/nedir/) dosyasını okur. Yerlerin karşılaştırması için [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 - **Projects:** Her projenin kendi project knowledge ve özel talimatları vardır. Hafıza açıksa her projenin **ayrı hafızası ve özeti** de olur; proje dışındaki sohbetlerin hafızasıyla karışmaz. Ayrıntı için [Projects](/wiki/araclar/projects/) sayfasına bakın.
 
-Bu sayfa kişisel hafızayı anlatır.
-
 ## CLAUDE.md ile Farkı
 
-İki sistem birbirinin alternatifi değil, birlikte çalışır. Ama farklı amaçlara hizmet eder.
+İki sistem birlikte çalışır ve farklı işler görür.
 
 | | CLAUDE.md | Memory |
 |---|---|---|
@@ -141,8 +139,6 @@ Bazen Claude memory'e **yanlış** bir şey kaydedebilir:
 - Veya doğrudan Settings → Memory'den o satırı silersiniz
 - "Hep şu üslupla yaz" deseniz, sonra fikriniz değişse → memory'i güncelletirsiniz
 
-Memory bir kez yazıldı diye sonsuza kadar kalmaz; siz değiştirebilirsiniz.
-
 ## Memory + CLAUDE.md Birlikte Kullanım
 
 İkisi birbirini tamamlar:
@@ -214,7 +210,7 @@ Mayıs 2026'da Anthropic, agent tarafı için **Dreaming** adlı bir hafıza yet
 
 Pratik mantığı: Dreaming bir bellek deposunu ve en çok 100 geçmiş oturumu okuyup tekrar eden kalıpları ayıklar, yeniden düzenlenmiş yeni bir bellek deposu üretir. Girdi olarak verilen depoya dokunmaz. Standart API token fiyatıyla faturalanır.
 
-**İş profesyoneli için bugünkü karşılığı:** Doğrudan kullanmazsınız; bu özellik esas olarak kurumsal otomasyon ve [Managed Agents](/wiki/yetenekler/agents-subagents/) kuran ekipleri ilgilendirir (kurumsal tarafın tanıtımı için [Claude Ajanları](/kurumsal/ajanlar/)). Ama yönü gösterir: agent'lar artık sadece o anki bağlamı değil, geçmiş çalışmalardan süzülen kalıpları da kullanmaya başlıyor.
+**İş profesyoneli için bugünkü karşılığı:** Doğrudan kullanmazsınız; bu özellik esas olarak kurumsal otomasyon ve [Managed Agents](/wiki/yetenekler/agents-subagents/) kuran ekipleri ilgilendirir (kurumsal tarafın tanıtımı için [Claude Ajanları](/kurumsal/ajanlar/)). Yönü de gösteriyor: agent'lar geçmiş çalışmalardan süzülen kalıpları da kullanmaya başlıyor.
 
 ## İlgili Sayfalar
 

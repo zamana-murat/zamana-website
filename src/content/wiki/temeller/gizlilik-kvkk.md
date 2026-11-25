@@ -8,12 +8,12 @@ tags:
   - kvkk
   - veri-guvenligi
   - dpa
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 Her kurumsal Claude konuşmasının bir yerinde aynı soru çıkar: **"Verilerimize ne olur?"**
 
-Bu sayfa o soruya net, bağlamlı, Türkiye-odaklı cevap verir. Üç ana başlık altında ilerler:
+Sayfa bu soruyu Türkiye açısından üç başlıkta yanıtlıyor:
 
 1. Anthropic'in veri politikaları: plana göre ne değişir
 2. Hassas veri kuralları: çalışana ne öğretmeli
@@ -21,7 +21,7 @@ Bu sayfa o soruya net, bağlamlı, Türkiye-odaklı cevap verir. Üç ana başl�
 
 ## Anthropic Verilerinizi Ne Yapar? (Plana Göre)
 
-**Önemli ön bilgi:** Team ve Enterprise planlarında konuşmalarınız varsayılan olarak model eğitiminde kullanılmaz. Free, Pro, Max ve Ultra'da bu durum tüketici ayarına bağlıdır, yani hesabınızdaki gizlilik ayarı belirler. Hesap ayarınızı bir kez kontrol edin.
+Team ve Enterprise planlarında konuşmalarınız varsayılan olarak model eğitiminde kullanılmaz. Free, Pro, Max ve Ultra'da bu durum tüketici ayarına bağlıdır, yani hesabınızdaki gizlilik ayarı belirler. Hesap ayarınızı bir kez kontrol edin.
 
 | Plan | Model eğitimi için kullanılır mı? | Konuşma saklama | Notlar |
 |---|---|---|---|
@@ -57,10 +57,10 @@ Bunu nasıl yaparsınız:
 
 ### Geçici Sohbet (Incognito chat): Ne Sağlar, Ne Sağlamaz?
 
-Tüm planlarda yeni sohbette sağ üstteki **hayalet simgesiyle** geçici sohbet açılır (siyah çerçeve, "Incognito chat" etiketi). Çalışanlar bunu sık sık "iz bırakmayan mod" sanar; KVKK açısından doğru çerçeve şudur:
+Tüm planlarda yeni sohbette sağ üstteki **hayalet simgesiyle** geçici sohbet açılır (siyah çerçeve, "Incognito chat" etiketi). Çalışanlar bunu sık sık "iz bırakmayan mod" sanar. KVKK açısından doğrusu şu:
 
 - **Sağlar:** sohbet geçmişe ve hafızaya kaydedilmez, mevcut hafızayı kullanmaz, aramada çıkmaz ve **eğitimde kullanılmaz**. Tüketici hesabında "Claude'u geliştirmeye yardım et" açık olsa bile tek seferlik hassas bir soru için güvenli bir alışkanlıktır.
-- **Sağlamaz:** veri "hiç saklanmaz" değildir; 30 gün saklanır (Enterprise'ta kuruluşun belirlediği süre daha uzun olabilir). Team ve Enterprise'ta owner'ın veri dışa aktarımına, Enterprise'ta Compliance API'ye girer. Yani kişisel veriyi Claude'a girmek için KVKK dayanağının yerini tutmaz.
+- **Sağlamaz:** veri "hiç saklanmaz" değildir; 30 gün saklanır (Enterprise'ta kuruluşun belirlediği süre daha uzun olabilir). Team ve Enterprise'ta owner'ın veri dışa aktarımına, Enterprise'ta Compliance API'ye girer. Dolayısıyla kişisel veriyi Claude'a girmek için gereken KVKK dayanağının yerini tutmaz.
 - **Kısıtlar:** geçici sohbette dosya oluşturma ve kod çalıştırma yok; normal sohbete çevrilemez, kapatılınca yeniden açılamaz, proje içinde başlatılamaz. Profil talimatınız uygulanmaya devam eder.
 
 Ayrıntı: [Memory](/wiki/yetenekler/memory/) ve [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
@@ -70,7 +70,7 @@ Ayrıntı: [Memory](/wiki/yetenekler/memory/) ve [Talimat ve Hafıza Yerleri](/w
 - Tüm veri iletimde (HTTPS/TLS) ve depolamada şifrelenir
 - Anthropic çalışanları varsayılan olarak konuşmalarınıza erişemez, sadece açık izin veya Kullanım Politikası ihlali incelemesi durumunda
 - Erişim katı dahili kontrollerle korunur
-- **Compliance API (yalnız Enterprise):** sohbet, dosya, proje ve etkinlik akışına programatik erişim verir; Cowork ve Claude Code (CLI, masaüstü) oturum içeriği de kapsamdadır. Google Workspace eklentisi de kapsamdadır; **Claude Docs etkinliği ise Compliance API'ye girmez**. Team'de yoktur, Public Sector Enterprise hariçtir, yalnız Primary Owner açabilir. Denetim izi ihtiyacınız varsa plan seçiminde bu fark belirleyicidir
+- **Compliance API (yalnız Enterprise):** sohbet, dosya, proje ve etkinlik akışına programatik erişim verir; Cowork ve Claude Code (CLI, masaüstü) oturum içeriği ile Google Workspace eklentisi de kapsamdadır; Claude Docs etkinliği ise Compliance API'ye girmez. Team'de yoktur, Public Sector Enterprise hariçtir, yalnız Primary Owner açabilir. Denetim izi gerekiyorsa plan seçiminde bu fark belirleyicidir
 - **Zero Data Retention (API sözleşme düzenlemesi):** Anthropic istem ve yanıtları, yanıt döndükten sonra depolamaz. Bir plan değildir: satış ekibiyle talep edilir, kuruluş başına etkinleştirilir (başka bir organizasyona otomatik yayılmaz) ve tüm API özellikleri bu düzenlemeye uygun değildir. Enterprise planı otomatik olarak Zero Data Retention içermez
 
 ### Claude'un Yapmadığı Şeyler
@@ -78,7 +78,7 @@ Ayrıntı: [Memory](/wiki/yetenekler/memory/) ve [Talimat ve Hafıza Yerleri](/w
 - **Model oturumlar arasında kendiliğinden bilgi taşımaz.** Ama hafıza (memory) özelliği Free, Pro, Max ve Ultra'da varsayılan olarak açıktır (Team ve Enterprise'da varsayılan kapalı). Açıksa Claude önceki konuşmalardan özet bilgi saklar; kurumsal kullanımda bu ayarı da politikanıza ekleyin
 - **Bir kullanıcının konuşmasını başka bir kullanıcıyla paylaşmaz**
 - **Açık kimlik doğrulamalı bir MCP connector kurulmadıkça hiçbir sisteme erişmez**
-- Connector'lar dış servislere **Anthropic'in bulutu üzerinden** ulaşır, yerel kurumsal ağınızdan değil (IT firewall planlaması için kritik bilgi)
+- Connector'lar dış servislere **Anthropic'in bulutu üzerinden** ulaşır, yerel kurumsal ağınızdan değil (IT firewall planlaması için önemli)
 
 ## Çalışana Ne Öğretmeli: Hassas Veri Kuralları
 
@@ -93,7 +93,7 @@ Tüketici planlarında (Free, Pro, Max, Ultra) çalışanlar şunları **kesinli
 
 ### Pratik Test Sorusu
 
-Çalışana öğretin:
+Çalışanlara şunu öğretin:
 
 > **"Bu metin yarın bir gazetede çıksa rahat mıyım?"**
 
@@ -113,7 +113,7 @@ KVKK, Türkiye'nin temel kişisel veri koruma yasasıdır (Kanun No. 6698). Clau
 
 ### KVKK Kapsamında "Kişisel Veri" Nedir?
 
-Gerçek bir kişiyi tanımlayan veya tanımlayabilen her bilgi:
+Gerçek bir kişiyi tanımlayan ya da tanımlanabilir kılan her bilgi:
 
 - İsim + iletişim bilgisi
 - TC Kimlik numarası
@@ -184,7 +184,7 @@ Kurumsal dağıtım için IT ekibinizin yapması gerekenler:
   - `claude.ai`
   - `anthropic.com`
   - Claude Desktop backend endpoint'leri
-- **Connector trafiği:** Dış servislere (Slack, Drive vb.) Anthropic'in bulutu üzerinden ulaşır, yerel kurumsal ağ üzerinden değil. Firewall planlamasında bu bilgi kritiktir: kendi sunucunuza gelen connector çağrısına izin vermek için Anthropic'in giden IP aralığı (`160.79.104.0/21`) izin listesine eklenir. Ayrıntı: [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/).
+- **Connector trafiği:** Dış servislere (Slack, Drive vb.) Anthropic'in bulutu üzerinden ulaşır, yerel kurumsal ağ üzerinden değil. Firewall planlamasında buna dikkat edin: kendi sunucunuza gelen connector çağrısına izin vermek için Anthropic'in giden IP aralığı (`160.79.104.0/21`) izin listesine eklenir. Ayrıntı: [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/).
 - **Kişisel hesap engeli (Enterprise):** Kasım 2026'dan beri Enterprise kuruluşları kişisel Claude hesaplarını şirket ağında engelleyebilir (güvenlik merkezi ile birlikte gelen kontroller, kısmen beta). Güvenlik merkezi ve prompt hook'ları (mevcut DLP kurallarınızı Claude'a da uygulatır) claude.ai'da Organization settings altında yönetilir; araçların tam listesi ve durumu: [Takım ve Admin](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026).
 - **VPN uyumluluğu:** Kurumsal VPN bazen Claude Desktop ile çakışır. Eğitim öncesi test edin.
 - **Kurulum yetkisi:** Claude Desktop kurulumu için yönetici hakkı veya IT onayı gerekir.
@@ -193,7 +193,7 @@ Kurumsal dağıtım için IT ekibinizin yapması gerekenler:
 
 ## KVKK Müfettişinin Sorabileceği 10 Soru
 
-Bir KVKK denetimi veya iç denetim Claude kullanımını incelediğinde yöneltebileceği sorular. **Her birine cevabınız hazır olmalı.**
+Bir KVKK denetimi veya iç denetim Claude kullanımını incelediğinde bu sorular gelebilir. Her birine cevabınız hazır olmalı.
 
 ### 1. Claude'a hangi kişisel veri kategorileri girildi?
 
@@ -221,7 +221,7 @@ Plana göre değişir (yukarıdaki tabloya bakın). DPA'da bu süreler netleşti
 
 ### 7. Bir veri sahibi talebi geldiğinde (erişim, silme) Claude'daki veriye nasıl ulaşırsınız?
 
-Bu soru zorludur. Claude tarafında "kullanıcı X hakkında ne var" diye spesifik sorgulama zordur. Pratik cevap: **hassas kişisel veri zaten Claude'a girmemeli**, böylece sorun doğmaz.
+Bu sorunun cevabı kolay değil. Claude tarafında "kullanıcı X hakkında ne var" diye spesifik sorgulama zordur. Pratik cevap: **hassas kişisel veri zaten Claude'a girmemeli**, böylece sorun doğmaz.
 
 ### 8. Bir güvenlik ihlali durumunda Anthropic sizi nasıl bilgilendirir?
 
@@ -229,11 +229,11 @@ Anthropic'in DPA'sı (Team, Enterprise ve API'yi kapsar) ihlal bildirimi yüküm
 
 ### 9. Çalışanların Claude kullanımı nasıl eğitiliyor?
 
-Yapılandırılmış bir iç eğitim programı bu soruya güçlü cevap verir. Gayri resmi öğrenme KVKK denetim karşısında zayıftır.
+Yapılandırılmış bir iç eğitim programı bu soruyu karşılar. Gayri resmi öğrenme KVKK denetiminde yetersiz kalır.
 
 ### 10. Claude kullanımının iç kontrol / denetim izi nerede?
 
-Team yönetici paneli kullanım metriklerini gösterir (OpenTelemetry desteği kısmi vardır). Audit log ve Compliance API yalnız Enterprise'tadır; Enterprise'ta ayrıca güvenlik merkezi raporu denetçiye verilebilir ([Takım ve Admin](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026)). Ayrıca CLAUDE.md dosyaları, workspace klasörleri ve prompt kütüphaneleri **şirket dokümantasyonudur** ve denetimde kanıt olarak sunulabilir.
+Team yönetici paneli kullanım metriklerini gösterir (OpenTelemetry desteği kısmi vardır). Audit log ve Compliance API yalnız Enterprise'tadır; Enterprise'ta ayrıca güvenlik merkezi raporu denetçiye verilebilir ([Takım ve Admin](/wiki/temeller/takim-ve-admin/#enterprise-güvenlik-araçları-kasım-2026)). CLAUDE.md dosyaları, workspace klasörleri ve prompt kütüphaneleri de şirket dokümantasyonudur ve denetimde kanıt olarak sunulabilir.
 
 ## Adım Adım DPA Süreci
 
@@ -281,13 +281,13 @@ Team müşterilerinde genelde standart DPA değişmez, ama her zaman sorabilirsi
 
 ### 7. İç Duyuru
 
-DPA incelendi ve dosyalandı, ekibe bildirin. Çalışanlar Claude'u kullanmaya devam ederken artık hukuki çerçeve nettir.
+DPA incelenip dosyalandıktan sonra ekibe bildirin; çalışanlar Claude'u kullanırken hukuki çerçeveyi artık bilir.
 
 ### Süreç Ne Kadar Sürer?
 
 Standart DPA için Anthropic'ten beklenen bir adım yok, süreyi sizin hukuki incelemeniz belirler. Enterprise'ta özel hüküm müzakere ederseniz süre hukuk ekiplerinin hızına bağlıdır.
 
-Yapılandırılmış bir kurulum sürecinde bu adımlar eğitimle paralel yürütülebilir.
+Yapılandırılmış bir kurulumda bu adımları eğitimle paralel yürütebilirsiniz.
 
 ## Sektörel Ek: Düzenlenmiş Sektörler İçin KVKK Üstü Yükümlülükler
 
@@ -296,7 +296,7 @@ KVKK tüm sektörler için geçerlidir. Ama bazı sektörlerde **ek düzenleyici
 ### Finans Sektörü (BDDK, SPK, MASAK)
 
 - **BDDK**: Bilgi Sistemleri ve Elektronik Bankacılık Hizmetleri Hakkında Yönetmelik (bulut hizmeti kullanımı, bazı sistem ve verilerin yurt içinde tutulması) ile Bankaların Destek Hizmeti Almalarına İlişkin Yönetmelik (dış hizmet alımı) bankalar için ek yükümlülük getirir. Bankacılık Kanunu'ndaki sır saklama yükümlülüğü de müşteri bilgisinin üçüncü taraflarla paylaşımını sınırlar. Anthropic'in Türkiye'ye özgü bir BDDK onayı yoktur, değerlendirme kurumun kendisine aittir. Güncel madde metnini BDDK mevzuatından teyit edin
-- **SPK (Sermaye Piyasası Kurulu)**: halka açık şirket veya aracı kurum çalışanlarında **insider bilgi koruması** kritik. Mali tablolar açıklanana kadar Claude'a verilmemeli.
+- **SPK (Sermaye Piyasası Kurulu)**: halka açık şirket veya aracı kurum çalışanlarında insider bilgi koruması ön plandadır. Mali tablolar açıklanana kadar Claude'a verilmemeli.
 - **MASAK (Mali Suçları Araştırma Kurulu)**: müşteri tanıma, şüpheli işlem kayıtları hassas. MASAK bildirilmesi gerekli bilgiyi Claude'a vermeyin.
 
 **Pratik öneri:** Finans sektörü müşterileri için Enterprise plan + DPA (API kullanılıyorsa Zero Data Retention) + sıkı iç politika. Bireysel Pro yeterli değil. Sektör ayrıntısı: [Kurumsal: Finansal Hizmetler](/kurumsal/finansal-hizmetler/).
@@ -320,7 +320,7 @@ KVKK tüm sektörler için geçerlidir. Ama bazı sektörlerde **ek düzenleyici
 - **MEB (Milli Eğitim Bakanlığı)**: öğrenci verisi özel koruma altında. Özel okullarda öğrenci dosyaları Claude'a verilmemeli.
 - **YÖK (Yükseköğretim Kurulu)**: öğrenci ve akademisyen verileri için benzer ilkeler.
 
-**Pratik öneri:** Eğitim kurumlarında Claude akademik materyal üretimi, ders planı, araştırma desteği için güçlüdür. Öğrenci kişisel verisinden uzak durun.
+**Pratik öneri:** Eğitim kurumlarında Claude akademik materyal üretimi, ders planı ve araştırma desteği için uygundur. Öğrenci kişisel verisinden uzak durun.
 
 ### Hukuk Sektörü (Barolar Birliği, avukat-müvekkil gizliliği)
 
@@ -360,11 +360,11 @@ Claude'u kurumsal kullanıma açmadan önce tamamlanması gerekenler:
 
 ## Özet
 
-Claude, doğru planla ve doğru uygulamayla **Türkiye'de kurumsal olarak KVKK'ya uygun biçimde kullanılabilir**. Ancak bu otomatik değildir, şirketin bilinçli tercih ve prosedür oluşturması gerekir. Özellikle kişisel veri girecekseniz yurt dışı aktarım güvencesi (m.9) açık bir adımdır; bu sayfa onu çözülmüş saymaz.
+Claude, doğru planla ve doğru uygulamayla Türkiye'de kurumsal olarak KVKK'ya uygun biçimde kullanılabilir. Bu kendiliğinden olmaz; şirketin plan seçmesi ve prosedür oluşturması gerekir. Özellikle kişisel veri girecekseniz yurt dışı aktarım güvencesi (m.9) açık bir adımdır; bu sayfa onu çözülmüş saymaz.
 
-**Kilit dört hareket:**
+Dört adım:
 
-1. **Şirket verisi işleyen ekipler için Team veya Enterprise önerilir.** Zorunlu değildir, ama merkezi yönetim, faturalama, DPA ve veri kontrolü yalnız ticari planlarda vardır. Free, Pro, Max ve Ultra bireysel kullanım içindir, DPA kapsamı dışındadır.
+1. **Şirket verisi işleyen ekipler için Team veya Enterprise önerilir.** Zorunlu değildir; ama merkezi yönetim, faturalama, DPA ve veri kontrolü yalnız ticari planlarda vardır. Free, Pro, Max ve Ultra bireysel kullanım içindir, DPA kapsamı dışındadır.
 2. **DPA'yı inceleyip dosyalayın.** İşleyen ilişkisinin ve GDPR'ın sözleşme omurgası budur; KVKK yurt dışı aktarım güvencesi yerine geçmez.
 3. **Veri politikası belirleyin.** "Nerede Claude'a ne veririm" sorusu yazılı cevaplanmalı.
 4. **Kişisel veri yükleyecekseniz KVKK m.9 dayanağını kurun.** Standart sözleşme yolunu hukuk danışmanınızla ve Anthropic ile netleştirmeden kişisel veri yüklemeyin.

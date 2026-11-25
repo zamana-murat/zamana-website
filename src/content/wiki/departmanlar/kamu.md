@@ -8,19 +8,19 @@ tags:
   - belediye
   - kvkk
   - hassas
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Kamu kurumunda iş büyük ölçüde yazıdır: resmi yazı, mevzuat okuma, tutanak, vatandaş başvurusuna yanıt. Claude bu işlerde zaman kazandırır. Ama kamu kurumunun önünde özel sektörden farklı bir sınır vardır: **verinin nerede durduğu**. Bu sayfa hangi işlerin güvenle yapılabileceğini, hangilerinin yapılmaması gerektiğini ve kararı kimin vermesi gerektiğini anlatır.
+Kamu kurumunda iş büyük ölçüde yazıdır: resmi yazı, mevzuat okuma, tutanak, vatandaş başvurusuna yanıt. Claude bu işlerde zaman kazandırır. Ama kamu kurumunun önünde özel sektörde olmayan bir sınır var: verinin nerede durduğu. Aşağıda hangi işlerin güvenle yapılabileceği, hangilerinin yapılmaması gerektiği ve kararı kimin vereceği yazıyor.
 
-**Önemli:** Bu sayfa hukuki tavsiye değil, genel rehberlik. Hangi verinin Claude'a girebileceğine **kurumunuzun bilgi güvenliği birimi ve hukuk müşavirliği** karar verir. Aşağıdaki çerçeve bir başlangıç noktasıdır, izin değildir.
+Bu sayfa hukuki tavsiye değil, genel rehberlik. Hangi verinin Claude'a girebileceğine kurumunuzun bilgi güvenliği birimi ve hukuk müşavirliği karar verir. Aşağıdaki çerçeve bir başlangıç noktasıdır, izin değildir.
 
 ## Yasal Çerçeve: Hızlı Özet
 
-- **2019/12 sayılı Bilgi ve İletişim Güvenliği Tedbirleri Genelgesi (Cumhurbaşkanlığı):** özetle, kamu verisi kurumun kendi sistemlerinde ya da kurumun kontrolündeki yerli sağlayıcılarda saklanır, kritik veri yurt içinde tutulur. Claude yurt dışı bir hizmet olduğundan, bu kuralın kapsamına giren veriyi Claude'a girmek **yasak sayılabilecek bir alandır**. Genelgenin güncel metnini ve kurumunuzdaki uygulamasını bilgi güvenliği biriminizle teyit edin.
+- **2019/12 sayılı Bilgi ve İletişim Güvenliği Tedbirleri Genelgesi (Cumhurbaşkanlığı):** özetle, kamu verisi kurumun kendi sistemlerinde ya da kurumun kontrolündeki yerli sağlayıcılarda saklanır, kritik veri yurt içinde tutulur. Claude yurt dışı bir hizmet olduğundan, bu kuralın kapsamına giren veriyi Claude'a girmek yasak sayılabilir. Genelgenin güncel metnini ve kurumunuzdaki uygulamasını bilgi güvenliği biriminizle teyit edin.
 - **KVKK:** kamu kurumları da veri sorumlusudur. Claude'a kişisel veri girmek yurt dışına aktarım olabilir; ayrıntılar [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) ve [Yurt Dışı Aktarım](/wiki/temeller/yurt-disi-aktarim/) sayfalarında.
 - **Gizlilik dereceli bilgi:** "hizmete özel", "gizli" gibi derece taşıyan hiçbir belge Claude'a girmez.
-- **Kurumun kendi mevzuatı ve iç genelgeleri:** pek çok kurumda yapay zekâ araçları için ayrıca bir iç düzenleme ya da yasak olabilir. Önce onu öğrenin.
+- **Kurumun kendi mevzuatı ve iç genelgeleri:** kurumunuzda yapay zekâ araçları için ayrıca bir iç düzenleme ya da yasak olabilir. Önce onu öğrenin.
 
 Anthropic'in kamu sayfası ağırlıkla ABD kurumlarına yöneliktir (FedRAMP yetkisi, ABD'ye özel ürünler). Bunların Türkiye'de karşılığı yoktur. Ayrıntı: [Kurumsal: Kamu Kurumları](/kurumsal/kamu/).
 
@@ -32,13 +32,13 @@ Anthropic'in kamu sayfası ağırlıkla ABD kurumlarına yöneliktir (FedRAMP ye
 | Vatandaşın ad, TC, adres, telefon içeren başvurusu (ham hâliyle) | ❌ | Kişisel veri; önce maskeleme |
 | Maskelenmiş başvurudan yanıt taslağı | ⚠️ Dikkatli | Kurum onayı + bilgi güvenliği birimi izni |
 | Yayımlanmış mevzuat metninin özeti | ✅ | Metni siz yapıştırın, madde numaralarını doğrulayın |
-| Resmi yazı **şablonu** ve dil düzeltme (kişisel veri yok) | ✅ | Amir onaylar |
+| Resmi yazı şablonu ve dil düzeltme (kişisel veri yok) | ✅ | Amir onaylar |
 | Kamuya açık duyuru, basın bülteni, kılavuz metni | ✅ | Yayın öncesi birim onayı |
 | Toplantı tutanağı (iç, derecesiz, kişisel veri içermeyen) | ⚠️ | Kurum politikasına bağlı |
 | İhale dosyasında teknik şartname taslağı (kamuya açık bilgiyle) | ⚠️ | Mevzuata uygunluğu uzman kontrol eder |
 | Karar verme, mevzuat yorumuna dayalı işlem tesisi | ❌ | Yetki ve sorumluluk görevlidedir |
 
-**Genel kural:** Claude **yetki kullanmaz, işlem tesis etmez**. Metin hazırlığında ve bilgi derlemede yardımcı olur; imza, onay ve sorumluluk görevlide kalır.
+Genel kural: Claude yetki kullanmaz, işlem tesis etmez. Metin hazırlığında ve bilgi derlemede yardımcı olur; imza, onay ve sorumluluk görevlide kalır.
 
 ## Bölüm 1: Resmi Yazı ve Yazışma
 
@@ -52,13 +52,13 @@ Kamu yazısının sorunu çoğu zaman uzun cümlelerdir. Claude resmi tonu bozma
 
 ### Vatandaş Başvurusu Yanıtı
 
-CİMER, bilgi edinme ya da dilekçe ile gelen başvuruya yanıt taslağı. **Başvurudaki kişisel veri önce maskelenir** (ad "Başvuran", adres "[adres]", TC yok). Claude başvurunun konusunu çıkarır, ilgili birimi önerir, yanıt taslağını yazar. Yanıt süresini ve gerekçesini görevli kontrol eder.
+CİMER, bilgi edinme ya da dilekçe ile gelen başvuruya yanıt taslağı. Başvurudaki kişisel veri önce maskelenir (ad "Başvuran", adres "[adres]", TC yok). Claude başvurunun konusunu çıkarır, ilgili birimi önerir, yanıt taslağını yazar. Yanıt süresini ve gerekçesini görevli kontrol eder.
 
 ## Bölüm 2: Mevzuat ve Araştırma
 
 ### Mevzuat Özeti
 
-Yayımlanmış bir kanun, yönetmelik ya da genelgeyi sade dille özetletmek: "Bu yönetmelik birimimizi hangi işlerde bağlıyor?" Metni **siz yapıştırın**, Claude'un kendi hafızasındaki mevzuata güvenmeyin: madde numarası, tarih ve geçerlilik uydurulabilir. Özeti [mevzuat.gov.tr](https://www.mevzuat.gov.tr) ile karşılaştırın.
+Yayımlanmış bir kanun, yönetmelik ya da genelgeyi sade dille özetletmek: "Bu yönetmelik birimimizi hangi işlerde bağlıyor?" Metni siz yapıştırın, Claude'un kendi hafızasındaki mevzuata güvenmeyin: madde numarası, tarih ve geçerlilik uydurulabilir. Özeti [mevzuat.gov.tr](https://www.mevzuat.gov.tr) ile karşılaştırın.
 
 ### Karşılaştırma ve Fark Tespiti
 
@@ -135,7 +135,7 @@ Benzer başvurular için bir kez iyi bir şablon kurarsanız ([Projects](/wiki/a
 
 ## Plan ve Satın Alma
 
-Bireysel plan (Free, Pro, Max, Ultra) yerine **Team ya da Enterprise öneriyoruz** (merkezi kontrol, veri ayarları); **zorunlu değildir**. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz; DPA yalnız ticari ürünlere dahildir. Bunlar KVKK ya da 2019/12 uyumu yerine geçmez: hangi plan olursa olsun, kuralın sınırındaki veri Claude'a girmez.
+Bireysel plan (Free, Pro, Max, Ultra) yerine Team ya da Enterprise öneriyoruz (merkezi kontrol, veri ayarları); zorunlu değil. Team en az 2 koltuk, Enterprise self-serve en az 20 koltuktur. Ticari planlarda girdiler varsayılan olarak model eğitiminde kullanılmaz; DPA yalnız ticari ürünlere dahildir. Bunlar KVKK ya da 2019/12 uyumu yerine geçmez: hangi plan olursa olsun, kuralın sınırındaki veri Claude'a girmez.
 
 Satın alma tarafı kamuda ayrı bir meseledir. Kamu kurumları genellikle yurt dışından doğrudan alım yapamaz ve "TL fatura" ister. Anthropic'in Türkiye'de ofisi ya da resmi temsilcisi yoktur; Zamana da bayi ya da temsilci değildir, abonelik satmaz. Aboneliğin üçüncü bir tarafça yeniden satışı Anthropic'in yazılı onayına bağlıdır. Satın alma yolunu kurumunuzun satın alma ve hukuk birimleriyle birlikte çözün.
 

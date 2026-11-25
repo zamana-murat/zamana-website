@@ -3,7 +3,7 @@ title: "Yaşam bilimleri için Claude: Ar-Ge'den ruhsat dosyasına"
 seoTitle: "İlaç ve Biyoteknoloji için Claude: Ar-Ge, Klinik"
 description: "İlaç, biyoteknoloji ve klinik araştırma ekipleri için Claude: literatür, biyoinformatik, protokol ve ruhsat dosyası. Bağlantılar, planlar, hasta verisi, KVKK."
 eyebrow: "Sektör"
-lead: "Anthropic, Claude'u yaşam bilimlerinde hipotezden ruhsat başvurusuna kadar her aşamada, kaynak göstererek ve izi sürülebilir şekilde çalışan bir araştırma ortağı olarak konumluyor. Bu sayfa sektörün iş akışına bakar; araştırmacının analiz uygulaması Claude Science ayrı sayfada."
+lead: "Anthropic, Claude'u yaşam bilimlerinde hipotezden ruhsat başvurusuna kadar her aşamada, kaynak göstererek ve izi sürülebilir şekilde çalışan bir araştırma ortağı olarak konumluyor. Araştırmacının analiz uygulaması Claude Science ayrı sayfada."
 heroImage: "/images/kurumsal/yasam-bilimleri/hero.webp"
 heroAnimation: "yasam-bilimleri"
 heroAlt: "Kurgusal bir biyoteknoloji şirketinin klinik ekibi Claude'dan literatür taraması istiyor. Claude araştırma veritabanlarında yayınları sayıyor, kaynak numaralı bir kanıt tablosu çıkarıyor, ardından protokol taslağını kontrol edip güvenlik izlem planının eksik olduğunu işaretliyor. Veriler kurgusaldır."
@@ -18,14 +18,14 @@ related:
   - { label: "Sağlık sektörü (wiki)", href: "/wiki/departmanlar/saglik/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 150
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
 Bir ilacın ya da tanı testinin yolculuğu uzun: hipotez, literatür, deney ve veri analizi, klinik çalışma protokolü, düzenleyici kuruma sunulan dosya. Her aşama ayrı bir ekip, ayrı bir yazılım ve çok fazla belge demek. Anthropic'in yaşam bilimleri sayfası Claude'u bu zincirin tamamında çalışan bir ortak olarak anlatıyor ve üç noktayı öne çıkarıyor: doğrulanabilirlik (araştırma veritabanlarına bağlandığında her iddianın kaynağı gösterilir, biyogüvenlik önlemleri vardır), bilimsel karmaşıklıkla baş edebilme ve Ar-Ge'nin araçlarına bağlanabilme.
 
-Pratikte bu, iki parçadan oluşuyor. Birincisi, Claude'un sohbet, Cowork ve Claude Code'daki genel yetenekleri ile yaşam bilimlerine özel **connector** ve **skill**'ler. İkincisi, analizleri kayıt altında çalıştıran araştırma uygulaması [Claude Science](/claude/science/). Bu sayfa birincisine, yani ekip ve şirket düzeyindeki kullanıma odaklanıyor.
+Pratikte iki ayrı araç var. Birincisi, Claude'un sohbet, Cowork ve Claude Code'daki genel yetenekleri ile yaşam bilimlerine özel **connector** ve **skill**'ler. İkincisi, analizleri kayıt altında çalıştıran araştırma uygulaması [Claude Science](/claude/science/).
 
 ![Ar-Ge iş akışında Claude'un yeri: hipotez, literatür taraması, veri analizi, klinik protokol ve düzenleyici dosya aşamaları; her aşamanın altında kullanılan Claude aracı ve insan onayı noktası](/images/kurumsal/yasam-bilimleri/ar-ge-akisi.webp)
 

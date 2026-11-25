@@ -3,7 +3,7 @@ title: "Kodlama: yazılım ekiplerinde Claude"
 seoTitle: "Kodlamada Claude: Yazılım Ekipleri, Eski Sistemler"
 description: "Claude ile kod yazma, hata ayıklama, test, kod inceleme ve eski sistem modernizasyonu. Türk yazılım ekipleri için kullanım alanları, güvenlik ve plan notları."
 eyebrow: "Kullanım alanı"
-lead: "Claude, yazılım ekiplerinde kod yazmaktan çok daha fazlası için kullanılıyor: bir hatanın kök nedenini bulmak, test yazmak, kod incelemek ve kimsenin dokunmaya cesaret edemediği eski sistemleri anlamak. Bu sayfa kullanım alanlarını anlatır; aracın kurumsal yönetimi ayrı sayfada."
+lead: "Claude, yazılım ekiplerinde kod yazmaktan çok daha fazlası için kullanılıyor: bir hatanın kök nedenini bulmak, test yazmak, kod incelemek ve kimsenin dokunmaya cesaret edemediği eski sistemleri anlamak. Aracın kurumsal yönetimi ayrı sayfada."
 heroImage: "/images/kurumsal/kodlama/hero.webp"
 heroAnimation: "kodlama"
 heroAlt: "Terminalde bir geliştirici mobil uygulamada oturumun 15 dakikada düşmesinin sebebini soruyor; Claude kimlik doğrulama dosyalarını okuyup kök nedeni jeton yenilemede buluyor, düzeltmeyi kod farkı olarak gösteriyor ve 48 testin geçtiğini bildiriyor."
@@ -18,7 +18,7 @@ related:
   - { label: "Yapay zeka ajanları", href: "/kurumsal/ajanlar/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 40
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -26,17 +26,15 @@ lastUpdated: "2026-11-08"
 Anthropic, Claude'u geliştiriciler için en iyi yapay zeka olarak konumluyor ve bu sayfayı yazılım ekiplerinin işine ayırıyor. Pratikte Claude yazılım tarafında üç şekilde kullanılır:
 
 - **Claude Code:** Terminalde, IDE'de (VS Code, JetBrains) ve masaüstünde çalışan kodlama ajanı. Kod tabanını okur, dosya düzenler, komut ve test çalıştırır. Kurumsal yönetimi için [Kurumlar için Claude Code](/kurumsal/claude-code/), ürünün kendisi için [Claude Code tanıtımı](/claude/claude-code/).
-- **Sohbet ve Cowork:** Kod parçası açıklatmak, mimari karar tartışmak, teknik doküman yazdırmak için. Yazılımcı olmayan ekiplerin küçük araçlar ve otomasyonlar üretmesi de çoğunlukla buradan başlar.
+- **Sohbet ve Cowork:** Kod parçası açıklatmak, mimari karar tartışmak, teknik doküman yazdırmak için. Yazılımcı olmayan ekiplerin küçük araçlar ve otomasyonlar üretmesi de buradan başlayabilir.
 - **Claude Platform (API):** Kendi geliştirme araçlarınıza, kod inceleme hattınıza veya iç platformunuza Claude'u gömmek için. Ücret token başına ödenir.
-
-Bu sayfa hangi aracın kullanılacağından çok **hangi işin** Claude'a verilebileceğine odaklanıyor.
 
 ## Kullanım alanları
 
 Kaynak sayfa kodlama işini şu başlıklarla anlatıyor; Türk yazılım ekipleri için karşılıkları:
 
 - **Hata ayıklama:** Bir hata bildiriminden yola çıkıp ilgili dosyaları okumak, kök nedeni bulmak, düzeltmeyi önermek ve testle doğrulamak. Kaynaktaki hero örneği tam olarak budur: kimlik doğrulama hatasında jeton yenileme sorununun bulunup düzeltilmesi.
-- **Kod tabanı analizi:** Yeni katılan bir geliştiricinin "bu servis ne yapıyor, ödeme akışı hangi dosyalardan geçiyor?" sorusu. Büyük ve belgesiz kod tabanlarında en hızlı geri dönen kullanım budur.
+- **Kod tabanı analizi:** Yeni katılan bir geliştiricinin "bu servis ne yapıyor, ödeme akışı hangi dosyalardan geçiyor?" sorusu. Büyük ve belgesiz kod tabanlarında sık başvurulan bir kullanımdır.
 - **Test yazma ve çalıştırma:** Eksik birim testlerini tamamlamak, kenar durumları bulmak, kırılan testin sebebini açıklamak.
 - **Kod inceleme:** Çekme isteklerinde (pull request) mantık hatası, güvenlik açığı ve tutarsızlık aramak. İnsan incelemesinin yerine değil, önüne konur.
 - **Görev devri:** İyi tanımlanmış bir işi (bağımlılık güncellemesi, API sürüm geçişi, tekrarlayan düzenleme) Claude'a verip sonucu incelemek.
@@ -45,7 +43,7 @@ Kaynak sayfadaki müşteri sonuçları Anthropic'in aktarımıdır, kendi ortam�
 
 ## Eski sistem modernizasyonu
 
-Türkiye'de bankacılık, sigorta, telekom ve kamu tarafında çekirdek sistemlerin önemli bir kısmı onlarca yıllık kod üzerinde çalışıyor. Bu kodu yazanların çoğu artık kurumda değil, belgeler eksik, değişiklik yapmak risk. Claude'un en somut katkılarından biri burada:
+Türkiye'de bankacılık, sigorta, telekom ve kamu tarafında bazı çekirdek sistemler onlarca yıllık kod üzerinde çalışıyor. Kodu yazanlar çoğu zaman kurumdan ayrılmış, belgeler eksik, değişiklik yapmak riskli. Claude'un en somut katkılarından biri burada:
 
 ![Eski sistem modernizasyonunda dört adım: eski modülün okunup Türkçe belgelenmesi, bağımlılık haritasının çıkarılması, mevcut davranışı sabitleyen testlerin yazılması ve modülün yeni serviste parça parça yeniden yazılması; her adımın sonunda insan incelemesi](/images/kurumsal/kodlama/modernizasyon.webp)
 

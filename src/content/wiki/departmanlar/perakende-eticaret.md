@@ -7,10 +7,10 @@ tags:
   - perakende
   - eticaret
   - urun-aciklamasi
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Türkiye'de perakende ve e-ticaret hızla büyüyor: Trendyol, Hepsiburada, Amazon TR, kendi siteleri, fiziksel mağaza zincirleri. Her gün **binlerce ürün açıklaması, müşteri yorumu ve kampanya metni** gerekir. Claude bu içerik üretimini ölçeklendirir ve üstüne veri analizi de katar.
+Türkiye'de perakende ve e-ticaret hızla büyüyor: Trendyol, Hepsiburada, Amazon TR, kendi siteleri, fiziksel mağaza zincirleri. Her gün binlerce ürün açıklaması, müşteri yorumu ve kampanya metni gerekir. Claude bu içerik üretimini ölçeklendirir, üstüne veri analizi de yapar.
 
 ## Claude'un Çözdüğü Temel Sıkıntılar
 
@@ -25,7 +25,7 @@ Türkiye'de perakende ve e-ticaret hızla büyüyor: Trendyol, Hepsiburada, Amaz
 
 ### Ürün Açıklaması Yazımı
 
-Yeni bir ürün ekleyeceksiniz. Hammaddeler, ölçüler, fotoğraflar elinizde ama **satan** bir açıklama yok. Claude:
+Yeni bir ürün ekleyeceksiniz. Hammaddeler, ölçüler, fotoğraflar elinizde ama satan bir açıklama yok. Claude:
 
 - Ürün özelliklerinden satış faydası türetir
 - Hedef kitlenin dilini kullanır (genç anne, profesyonel sporcu, hobici vb.)
@@ -33,7 +33,7 @@ Yeni bir ürün ekleyeceksiniz. Hammaddeler, ölçüler, fotoğraflar elinizde a
 - Madde listesi ile akıcı paragrafı birleştirir
 - Marketplace başına farklı uzunluk üretir (Trendyol kısa, kendi site uzun)
 
-[Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile **"satan" örneklerinizi** Claude'a vererek kendi tarzınızı öğretirsiniz.
+[Few-Shot Örnekleme](/wiki/prompting/few-shot-ornekleme/) ile "satan" örneklerinizi Claude'a vererek kendi tarzınızı öğretirsiniz.
 
 ### Çoklu Marketplace İçerik
 
@@ -68,7 +68,7 @@ Yorum dosyasını (CSV ya da Excel) yüklemeden önce müşteri adı, telefon ve
 
 ### Yorum-Ürün Eşleme
 
-Yorumlardan **ürün açıklamasına** bilgi geri akışı. "Müşteriler sürekli 'kıvrılmıyor' diye övüyor, bunu açıklamada vurgulamamış mıyız?"
+Yorumlardan ürün açıklamasına bilgi geri akışı. "Müşteriler sürekli 'kıvrılmıyor' diye övüyor, bunu açıklamada vurgulamamış mıyız?"
 
 ## Bölüm 3: Kampanya ve Pazarlama
 
@@ -137,7 +137,7 @@ Yıllık ürün kataloğu: 200 ürün, kısa açıklama ve özellik tablosuyla e
 
 ### Blog ve SEO İçerik
 
-E-ticaret SEO'sunun önemli bir kısmı bloga dayanır. "Hangi ayakkabı hangi mevsimde", "kahve fincanı nasıl seçilir" gibi bilgi içerikleri Claude ile haftalık ritimde üretilebilir.
+E-ticaret SEO'sunda blog önemli bir yer tutar. "Hangi ayakkabı hangi mevsimde", "kahve fincanı nasıl seçilir" gibi bilgi içerikleri Claude ile haftalık ritimde üretilebilir.
 
 ### Video Senaryosu
 
@@ -164,7 +164,7 @@ Yaz koleksiyonu lansmanı: 80 ürün, her birinin Trendyol, Hepsiburada ve kendi
 
 ### Senaryo 2: Müşteri Yorum Krizi
 
-"Bu ay olumsuz yorum patladı" şikayeti. Claude o ayın tüm yorumlarını analiz eder ve **kök sebebi** bulur: meğer kargonun bir bayisinde sorun varmış. Operasyon hızla müdahale eder.
+"Bu ay olumsuz yorum patladı" şikayeti. Claude o ayın tüm yorumlarını analiz eder ve kök sebebi bulur: meğer kargonun bir bayisinde sorun varmış. Operasyon hızla müdahale eder.
 
 ### Senaryo 3: Fiyat Savaşı
 
@@ -216,9 +216,9 @@ E-ticaret çalışanı için temel:
 
 ## Bireysel ve Küçük İşletme
 
-Tek kişilik bir e-ticaret işletmesi için Claude'un katkısı çok büyüktür; tek kişi, küçük bir ekibin içerik hacmine yaklaşabilir. Anthropic'in küçük işletmelere yönelik paketi Shopify, Stripe ve TikTok gibi entegrasyonlar da içeriyor, ayrıntı için [haberi okuyun](/haberler/2026-09-15-claude-for-small-business-genisledi/). Aynı yaklaşımın tek kişilik halini [KOBİ sayfasında](/wiki/departmanlar/kobi/) bulabilirsiniz.
+Tek kişilik bir e-ticaret işletmesi Claude ile küçük bir ekibin içerik hacmine yaklaşabilir. Anthropic'in küçük işletmelere yönelik paketi Shopify, Stripe ve TikTok gibi entegrasyonlar da içeriyor, ayrıntı için [haberi okuyun](/haberler/2026-09-15-claude-for-small-business-genisledi/). Aynı yaklaşımın tek kişilik halini [KOBİ sayfasında](/wiki/departmanlar/kobi/) bulabilirsiniz.
 
-Katalog, kampanya ve yorum yönetimini ekibe yaymak için [kurumsal yapay zeka eğitimi](/programlar/kurumsal/) programı var; tek başına çalışan e-ticaret sahipleri için [Bireysel Program](/programlar/bireysel/) uygundur.
+Katalog, kampanya ve yorum yönetimini ekibe yaymak için [kurumsal yapay zeka eğitimimiz](/programlar/kurumsal/) var; tek başına çalışan e-ticaret sahipleri için [Bireysel Program](/programlar/bireysel/) uygundur.
 
 ## İlgili Sayfalar
 

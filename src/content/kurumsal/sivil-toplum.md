@@ -3,7 +3,7 @@ title: "Sivil toplum için Claude: hibe, bağışçı ve gönüllü işleri"
 seoTitle: "Vakıf ve Dernekler için Claude: İndirim, Hibe, KVKK"
 description: "Vakıf ve dernekler için Claude: hibe başvurusu, bağışçı raporu, gönüllü yönetimi. Kâr amacı gütmeyen indirimi, Goodstack doğrulaması, Türkiye'den başvuru."
 eyebrow: "Sektör"
-lead: "Claude, sivil toplum kuruluşlarının en çok zaman alan yazı ve veri işlerini, yani hibe başvurusunu, bağışçı raporunu, program izlemesini ve gönüllü yönetimini hızlandırır. Anthropic kâr amacı gütmeyen kuruluşlara Team planında indirim veriyor; doğrulama ortağı Türkiye'deki vakıf ve dernekleri tanıyor, ancak indirimin Türkiye'den bir başvuruda onaylandığını doğrulayamadık."
+lead: "Claude, sivil toplum kuruluşlarının yazı ve veri işlerini, yani hibe başvurusunu, bağışçı raporunu, program izlemesini ve gönüllü yönetimini hızlandırır. Anthropic kâr amacı gütmeyen kuruluşlara Team planında indirim veriyor; doğrulama ortağı Türkiye'deki vakıf ve dernekleri tanıyor, ancak indirimin Türkiye'den bir başvuruda onaylandığını doğrulayamadık."
 heroImage: "/images/kurumsal/sivil-toplum/hero.webp"
 heroAnimation: "sivil-toplum"
 heroAlt: "Kurgusal bir afet dayanışma derneğinin çalışanı saha raporunu ekleyip Claude'dan hibe başvurusunun beklenen sonuçlar bölümünü istiyor. Claude raporu okuyor, girdi, faaliyet, çıktı ve sonuç kutularıyla mantıksal çerçeve kuruyor, ardından kelime sınırına uyan bir taslak bölüm hazırlıyor. Veriler kurgusaldır."
@@ -18,7 +18,7 @@ related:
   - { label: "Fatura ve KDV (wiki)", href: "/wiki/temeller/fatura-ve-kdv/" }
   - { label: "Öğretmenler", href: "/kurumsal/ogretmenler/" }
 order: 160
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?

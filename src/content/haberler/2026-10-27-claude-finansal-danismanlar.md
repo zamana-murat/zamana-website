@@ -18,7 +18,7 @@ Anthropic, finansal danışmanlar için hazırladığı Claude paketini 27 Ekim 
 
 Metin ABD odaklı: SEC kurallarına, SEC Pazarlama Kuralı'na ve ABD'deki "RIA" (kayıtlı yatırım danışmanı) firmalarına atıf yapıyor. Bölge açıkça yazılmıyor, ancak içerik bunu gösteriyor. Türkiye'de SPK mevzuatı için bir uyarlama yok.
 
-Yine de Türkiye'de portföy, varlık yönetimi ya da danışmanlık ekipleri için fikir verici bir örnek. Pakette sekiz beceri var: toplantı öncesi hazırlık, toplantı sonrası notlar, portföy dengeleme incelemesi, miras ve vergi özetleri, uyum kontrolü ve aday müşteri girişi. Uyum becerisi müşteriye giden dili SEC Pazarlama Kuralı'na göre tarayıp olası sorunları işaretliyor.
+Yine de Türkiye'de portföy, varlık yönetimi ya da danışmanlık ekipleri bu pakete bakıp kendi işleri için fikir edinebilir. Pakette sekiz beceri var: toplantı öncesi hazırlık, toplantı sonrası notlar, portföy dengeleme incelemesi, miras ve vergi özetleri, uyum kontrolü ve aday müşteri girişi. Uyum becerisi müşteriye giden dili SEC Pazarlama Kuralı'na göre tarayıp olası sorunları işaretliyor.
 
 Connector listesinde Addepar, BlackRock, Charles Schwab, Envestnet, iCapital, Orion, Wealthbox, Wealth.com, Zocks, Vanguard, FactSet, MSCI, Invesco ve CAIS gibi isimler var. Bunlar ağırlıkla ABD pazarına hizmet eden araçlar.
 
@@ -28,7 +28,7 @@ Connector listesinde Addepar, BlackRock, Charles Schwab, Envestnet, iCapital, Or
 2. Kurun ve yönlendirmeli kurulumu izleyin.
 3. Kullandığınız ortak araçları seçip bağlayın.
 
-İsterseniz GitHub'daki `anthropics/claude-for-financial-advisors` deposundan da kurabilirsiniz. Beceriler olduğu gibi ya da uyarlanarak kullanılabilir.
+İsterseniz GitHub'daki `anthropics/claude-for-financial-advisors` deposundan da kurabilirsiniz. Becerileri olduğu gibi kullanabilir ya da kendinize uyarlayabilirsiniz.
 
 ## Bilmeniz gerekenler
 

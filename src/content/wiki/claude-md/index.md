@@ -5,20 +5,18 @@ description: "Claude'a kendinizi bir kez tanıtın: profil talimatı, proje ve C
 tags:
   - claude-md
   - giris
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Ciddi Claude kullanımının kalbinde kalıcı talimat vardır.**
+Claude'u genel bir yapay zeka asistanından kendi tarzınıza, işinize ve varsa ekibinize uygun bir asistana çeviren şey, ona kendinizi bir kez anlatmış olmanızdır. Yazdığınız metin aynıdır; konduğu yer, kullandığınız araca göre değişir:
 
-Claude'u genel bir yapay zeka asistanından çıkarıp size özel bir asistana (kendi tarzınıza, işinize, varsa ekibinize uygun) dönüştüren şey, ona kendinizi **bir kez** anlatmış olmanızdır. Yazdığınız metin aynıdır; konduğu yer, kullandığınız araca göre değişir:
+- Sohbette (claude.ai, mobil): profil talimatı (Ayarlar > General > "Instructions for Claude") ve proje talimatı
+- Masaüstünde Cowork'te: çalıştığınız klasörün içindeki `CLAUDE.md` dosyası (yerel oturumda okunur) ve kritik kuralların kısa sürümü profil talimatında
+- Claude Code'da (geliştiriciler): `CLAUDE.md` hiyerarşisi
 
-- **Sohbette** (claude.ai, mobil): profil talimatı (Ayarlar > General > "Instructions for Claude") ve proje talimatı
-- **Masaüstünde Cowork'te**: çalıştığınız klasörün içindeki `CLAUDE.md` dosyası (yerel oturumda okunur) ve kritik kuralların kısa sürümü profil talimatında
-- **Claude Code'da** (geliştiriciler): `CLAUDE.md` hiyerarşisi
+CLAUDE.md bu fikrin klasörle çalışan ortamlardaki biçimidir: düz bir metin dosyası. Sohbet CLAUDE.md dosyasını okumaz; orada aynı işi profil talimatı ve proje yapar. Bu bölümde bütün yerleri ve aralarındaki farkı bulursunuz.
 
-Bölüm adını taşıyan **CLAUDE.md**, bu fikrin klasörle çalışan ortamlardaki biçimidir: düz bir metin dosyası. Sohbet CLAUDE.md dosyasını okumaz; orada aynı işi profil talimatı ve proje görür. Bu bölüm bütün yerleri ve aralarındaki farkı anlatır.
-
-**Nereden başlamalı?** Yalnız sohbette (claude.ai, mobil) çalışıyorsanız dosya oluşturmanız gerekmez: beş bölümlü kısa metni profil talimatına yazmanız yeter. Masaüstünde bir klasörle çalışıyorsanız aynı metni klasöre `CLAUDE.md` olarak da koyarsınız.
+Nereden başlamalı? Yalnız sohbette (claude.ai, mobil) çalışıyorsanız dosya oluşturmanız gerekmez: beş bölümlü kısa metni profil talimatına yazmanız yeter. Masaüstünde bir klasörle çalışıyorsanız aynı metni klasöre `CLAUDE.md` olarak da koyarsınız.
 
 ## Bu Bölümdeki Sayfalar
 
@@ -84,29 +82,29 @@ Bölüm adını taşıyan **CLAUDE.md**, bu fikrin klasörle çalışan ortamlar
 
 ## Öğrenme Sırası
 
-Bu bölüme yeni başlıyorsanız önerilen okuma sırası:
+Bölüme yeni başlıyorsanız şu sırayla okuyun:
 
-1. **[Nedir?](/wiki/claude-md/nedir/)**: Kavramı oturtun, hangi ortamda neyin okunduğunu anlayın
-2. **[Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/)**: Şablonu alın, **kendi metninizin** ilk sürümünü yazın (30 dk)
-3. **[Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/)**: Metni nereye koyacağınızı seçin ve "talimatımı 3 maddede özetle" testini yapın
-4. **[Örnekler](/wiki/claude-md/ornekler/)**: Rolünüze en yakın örneği görün, kendi sürümünüzü iyileştirin
+1. [Nedir?](/wiki/claude-md/nedir/): Kavramı oturtun, hangi ortamda neyin okunduğunu anlayın
+2. [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/): Şablonu alın, kendi metninizin ilk sürümünü yazın (30 dk)
+3. [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/): Metni nereye koyacağınızı seçin ve "talimatımı 3 maddede özetle" testini yapın
+4. [Örnekler](/wiki/claude-md/ornekler/): Rolünüze en yakın örneği görün, kendi sürümünüzü iyileştirin
 
-Örnekler sayfasını körü körüne kopyalamayın. Önce Nedir ve Nasıl Yazılır sayfalarını okuyun, çünkü kalıcı talimatın gücü kişiselleştirilmiş olmasındadır. Jenerik bir örneği kopyalamak genel bir çıktı verir.
+Örnekleri olduğu gibi kopyalamayın. Önce Nedir ve Nasıl Yazılır sayfalarını okuyun; kalıcı talimat kişiselleştirildiği için işe yarar, kopyalanan genel bir örnek genel bir çıktı verir.
 
 ## Ana Fikir
 
-Tüm bölüm tek bir ilkeyi farklı açılardan anlatır:
+Bölümün dayandığı fikir şu:
 
-> **Claude'u her gece geceyarısı hafızası silinen harika bir meslektaş olarak düşünün. Sizin işiniz, geceyarısından önce önemli şeyleri yazmaktır.**
+> Claude'u her gece geceyarısı hafızası silinen harika bir meslektaş olarak düşünün. Sizin işiniz, geceyarısından önce önemli şeyleri yazmaktır.
 
 Profil talimatı, proje ve klasördeki CLAUDE.md bu "geceyarısı notlarının" farklı biçimleridir. Claude'un kendi biriktirdiği yerleşik hafıza bunlara ek olarak çalışır (Free, Pro, Max ve Ultra'da varsayılan açık), ama o sizin yazdığınız açık kuralın yerini tutmaz.
 
-Kullandıkça büyür. Büyüdükçe Claude daha akıllı hale gelir ve bu akıllılık **sizde kalır**: metin sizin elinizdedir, yeni bir bilgisayara ya da yeni bir araca taşırsınız. Ekibinize katılan başka biri kendi metnini yazar, ama sizinkinden öğrenir.
+Metni kullandıkça geliştirirsiniz ve Claude daha iyi çalışır. Metin sizin elinizdedir, yeni bir bilgisayara ya da yeni bir araca taşıyabilirsiniz. Ekibinize katılan biri kendi metnini yazar, ama sizinkinden öğrenir.
 
 ## Nereye Gitmeli?
 
-Kalıcı talimatı anladıysanız:
+Kalıcı talimatı anladıktan sonra:
 
-- [**Prompting**](/wiki/prompting/): Kalıcı talimatın üzerine iyi promptla Claude'u gerçekten kullanışlı yapmak
-- [**Cowork Modu**](/wiki/araclar/cowork-modu/): Klasörle çalışan ortam; CLAUDE.md'nin yerel oturumda okunduğu yer
-- [**Yetenekler**](/wiki/yetenekler/): Skills, Artifacts, Agents ve yerleşik hafıza; kalıcı talimatın üzerine inşa edilen özellikler
+- [Prompting](/wiki/prompting/): Kalıcı talimatın üstüne iyi prompt yazarak Claude'dan daha çok verim almak
+- [Cowork Modu](/wiki/araclar/cowork-modu/): Klasörle çalışan ortam; CLAUDE.md'nin yerel oturumda okunduğu yer
+- [Yetenekler](/wiki/yetenekler/): Skills, Artifacts, Agents ve yerleşik hafıza; kalıcı talimatın üstüne kurulan özellikler

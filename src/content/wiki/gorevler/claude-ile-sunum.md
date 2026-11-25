@@ -7,10 +7,10 @@ tags:
   - sunum
   - powerpoint
   - slayt
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude ile sunum hazırlamanın en iyi yolu, işi üç aşamaya bölmektir:** önce hikâye akışını (hangi slayt hangi mesajı taşıyor), sonra her slaytın içeriğini ve konuşmacı notunu, en son görünümü hazırlatın. Görünüm için üç yol var: Claude'un oluşturduğu .pptx dosyasını indirmek, PowerPoint içinde Claude eklentisini kullanmak (ücretli planlarda, genel kullanımda) ya da Claude Slides'ı denemek (Claude Design, Slides ve Docs 8 Ekim 2026'da betadan çıktı, Free dahil tüm planlarda açık). Claude fotoğraf ya da özgün görsel üretmez; grafik, tablo ve basit diyagramı yapabilir. İlk taslak dakikalar içinde gelir, ama sunumun sizin sesinizle konuşması için sayıları, örnekleri ve vurguyu siz düzeltmelisiniz. Gizli finansal rakamları ya da müşteri bilgilerini sunuma koymadan önce kullanım politikanıza bakın. Rehberde akış, slayt içeriği, analizden sunuma geçiş ve sadeleştirme için dört hazır Türkçe prompt, süre tahmini ve sık yapılan hatalar yer alır; hepsi iş kullanıcısı için, kod bilgisi gerektirmez.
+**Claude ile sunum hazırlamanın en iyi yolu, işi üç aşamaya bölmektir:** önce hikâye akışını (hangi slayt hangi mesajı taşıyor), sonra her slaytın içeriğini ve konuşmacı notunu, en son görünümü hazırlatın. Görünüm için üç yol var: Claude'un oluşturduğu .pptx dosyasını indirmek, PowerPoint içinde Claude eklentisini kullanmak (ücretli planlarda, genel kullanımda) ya da Claude Slides'ı denemek (Claude Design, Slides ve Docs 8 Ekim 2026'da betadan çıktı, Free dahil tüm planlarda açık). Claude fotoğraf ya da özgün görsel üretmez; grafik, tablo ve basit diyagramı yapabilir. İlk taslak dakikalar içinde gelir, ama sunumun sizin sesinizle konuşması için sayıları, örnekleri ve vurguyu siz düzeltmelisiniz. Gizli finansal rakamları ya da müşteri bilgilerini sunuma koymadan önce kullanım politikanıza bakın. Hiçbir adım kod bilgisi gerektirmez.
 
 ## Hangi yüzeyi kullanmalıyım?
 
@@ -111,7 +111,7 @@ Slaytları kendin silme; önce öneriyi göster, ben onaylayayım.
 - **Metin yoğunluğu.** Claude zaman zaman fazla yazar. Madde başına kelime sınırı koyun.
 - **Uydurma rakam.** Veri vermezseniz Claude makul görünen bir rakam üretebilir. Yalnız sizin verdiğiniz sayıları kullanmasını isteyin.
 - **Görsel beklentisi.** Claude fotoğraf ya da özel illüstrasyon üretmez; yer tutucu isteyin, görseli siz ekleyin.
-- **Şablon uyumu.** Kurumsal şablon bozulabilir; Çıktıyı yazı tipi, kayma ve taşma açısından gözle kontrol edin; PowerPoint eklentisi açık sunumda çalıştığı için dosyayı sıfırdan üretmekten daha kontrollüdür, ama kusursuzluk garantisi yoktur.
+- **Şablon uyumu.** Kurumsal şablon bozulabilir. Çıktıda yazı tipini, kaymayı ve taşmayı gözle kontrol edin. PowerPoint eklentisi açık sunumda çalıştığı için dosyayı sıfırdan üretmekten daha kontrollüdür, ama kusursuzluk garantisi yoktur.
 - **Dosya boyutu.** Claude'un oluşturduğu dosyalar dosya başına 30 MB ile sınırlıdır.
 
 ## İlgili sayfalar

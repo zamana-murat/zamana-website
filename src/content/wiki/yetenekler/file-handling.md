@@ -8,12 +8,10 @@ tags:
   - yukleme-sinirlari
   - pdf
   - excel
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Claude, metin tabanlı bir araç olmanın çok ötesinde **dosyalarla çalışan bir sistemdir**. Bir PDF okur, bir Excel tablosu oluşturur, bir Word raporu düzenler, bir görsel analiz eder; hepsi aynı oturumda.
-
-Bu sayfa hangi dosya tiplerini **okuduğunu**, hangilerini **ürettiğini**, yükleme sınırlarını ve üretilen dosyaların nerede durduğunu anlatır.
+Claude **dosyalarla çalışır**: bir PDF okur, bir Excel tablosu oluşturur, bir Word raporu düzenler, bir görsel analiz eder; hepsi aynı oturumda.
 
 ## Claude Hangi Dosyaları Okur?
 
@@ -42,7 +40,7 @@ Claude görselleri **görür**: yalnızca metin çıkarmaz, içeriği anlar. Bir
 
 - **`.py`, `.js`, `.ts`, `.sql`** ve diğer kod formatlarının çoğu
 
-İş profesyoneli kod yazmaz, ama zaman zaman Claude'un **kod analiz etmesi veya bir script önermesi** faydalı olur. [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/) departmanı için özellikle değerlidir.
+İş profesyoneli kod yazmaz, ama zaman zaman Claude'un **kod analiz etmesi veya bir script önermesi** faydalı olur. [Bilgi Teknolojileri](/wiki/departmanlar/bilgi-teknolojileri/) departmanında özellikle işe yarar.
 
 ## Claude Hangi Dosyaları Üretir?
 

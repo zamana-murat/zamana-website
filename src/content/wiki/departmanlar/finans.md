@@ -7,10 +7,10 @@ tags:
   - finans
   - muhasebe
   - raporlama
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Finans ekibi Claude'u doğru konumlandırdığında her ay saatlerce zaman kazanır. Ama kritik bir çerçeve var:
+Finans ekibi Claude'u doğru konumlandırdığında her ay saatlerce zaman kazanır. Ama önce bir çerçeve gerekiyor:
 
 > **Claude rakamların etrafında yazar, onları hesaplamaz. Rakamlar her zaman çalışanındır. Claude bir yazma ve düşünme aracıdır, hesap makinesi değildir ve asla finansal veri kaynağı değildir.**
 
@@ -33,11 +33,11 @@ Siz rakamları sağlarsınız; Claude anlatıyı, açıklamayı ve yönetici öz
 
 ### Bütçe Varyans Açıklaması
 
-Varyans tablosundan, **rakamların arkasındaki hikâyeyi** anlatan net bir yönetim anlatısı çıkar. Yalnızca "bütçe aşıldı" demek yetmez: neden aşıldı, bu bir trend mi, ne yapılmalı.
+Varyans tablosundan, rakamların arkasındaki hikâyeyi anlatan bir yönetim anlatısı çıkar. Yalnızca "bütçe aşıldı" demek yetmez: neden aşıldı, bu bir trend mi, ne yapılmalı.
 
 ### Yönetim ve Kurul Sunumları
 
-Finans dışı kitleler için yapılandırılmış finansal hikâyeler. CFO'nun işi yalnızca raporlamak değil, **anlaşılmaktır**. Claude for Excel (Excel, PowerPoint ve Word eklentileri genel kullanımda) tablo ile sunum arasındaki geçişi aynı yerde yapmanızı sağlar. Google Sheets ve Slides kullanan ekipler için aynı işi yapan Google Workspace eklentisi genel beta aşamasında, ücretli planlarda. Ayrıntılar [Office, Google ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/) sayfasında.
+Finans dışı kitleler için yapılandırılmış finansal hikâyeler. Rapor, finans bilmeyen okurun anlayacağı dille yazılmalı. Claude for Excel (Excel, PowerPoint ve Word eklentileri genel kullanımda) tablo ile sunum arasındaki geçişi aynı yerde yapmanızı sağlar. Google Sheets ve Slides kullanan ekipler için aynı işi yapan Google Workspace eklentisi genel beta aşamasında, ücretli planlarda. Ayrıntılar [Office, Google ve Chrome Eklentileri](/wiki/araclar/office-ve-chrome/) sayfasında.
 
 ### Enflasyon Muhasebesi (TMS 29) Anlatısı
 
@@ -53,7 +53,7 @@ Kör noktalar yönetim toplantısında karşınıza çıkmadan önce yüzeye ç�
 
 ## Bölüm 2: Analiz Desteği
 
-**Finansal senaryo düşüncesi.** Hesaplama değil, mantık ve çerçeve: Claude'a değişkenleri verirsiniz, senaryoları ve sonuçlarını haritalandırır.
+**Finansal senaryo düşüncesi.** Claude hesap yapmaz, mantığı ve çerçeveyi kurar: değişkenleri verirsiniz, senaryoları ve sonuçlarını haritalandırır.
 
 **Nakit akışı anlatısı.** Nakit pozisyonunu ve tahmini, finans dışı karar vericiler için sade dille açıklamak.
 
@@ -65,7 +65,7 @@ Kör noktalar yönetim toplantısında karşınıza çıkmadan önce yüzeye ç�
 
 ### Finansal Politika ve Prosedür Yazımı
 
-Çalışan kuralları verir, Claude temiz ve anlaşılır dokümantasyon üretir. Dil, **iç hukukun yazdığı değil, insanların okuyacağı** türdendir.
+Çalışan kuralları verir, Claude temiz ve anlaşılır dokümantasyon üretir. Dil, hukuk departmanının yazdığı gibi ağır değil, çalışanların okuyabileceği kadar sade olur.
 
 ### Tedarikçi Ödeme İletişimi
 
@@ -81,18 +81,18 @@ Claude kanıt paketlerini yapılandırır, denetçiler için açıklayıcı notl
 
 ### KOSGEB, TÜBİTAK ve TURQUALITY Başvuruları
 
-Türk şirketleri için **az kullanılan ama getirisi yüksek uygulamalardan biri.**
+Türk şirketleri için Claude'un işe yaradığı ama sık akla gelmeyen alanlardan biri.
 
 - **KOSGEB** destek programları
 - **TÜBİTAK** Ar-Ge hibeleri
 - **Yatırım teşvik başvuruları**
 - **TURQUALITY** ihracat destek programları
 
-Claude resmi formları doldurmaz, **destekleyici anlatıları, proje açıklamalarını ve gerekçe bölümlerini** yazar. Başvurunun başarısı bu bölümlere bağlıdır.
+Claude resmi formları doldurmaz; destekleyici anlatıları, proje açıklamalarını ve gerekçe bölümlerini yazar. Başvurunun başarısı bu bölümlere bağlıdır.
 
 ### FX Pozisyon Anlatısı
 
-USD veya EUR alacağı ya da borcu yüksek şirketlerde Claude FX risk bölümünü yazar: mevcut pozisyon, hedge durumu, kur hareketine duyarlılık. Dil, **finans dışı yöneticilerin anlayacağı kadar sade** olur.
+USD veya EUR alacağı ya da borcu yüksek şirketlerde Claude FX risk bölümünü yazar: mevcut pozisyon, hedge durumu, kur hareketine duyarlılık. Dil, finans dışı yöneticilerin anlayacağı kadar sade olur.
 
 ## Prompt Kütüphanesi Konuları
 
@@ -115,7 +115,7 @@ USD veya EUR alacağı ya da borcu yüksek şirketlerde Claude FX risk bölümü
 
 **Skills:**
 - `docx`: rapor ve politika belgeleri
-- `xlsx`: analiz tabloları ve modelleme (formüller çalıştırılır, veri analizi yapılır, ama **orijinal sayıları siz verirsiniz**)
+- `xlsx`: analiz tabloları ve modelleme (formüller çalıştırılır, veri analizi yapılır, ama orijinal sayıları siz verirsiniz)
 - `pdf`: kurumsal raporlar, başvuru dosyaları
 - `pptx`: yönetim sunumları
 
@@ -125,16 +125,16 @@ USD veya EUR alacağı ya da borcu yüksek şirketlerde Claude FX risk bölümü
 3. (opsiyonel) **DocuSign**: resmi dokümanların imzası
 4. (opsiyonel) **Claude Dashboards** (beta, ücretli planlar; Enterprise'ta yönetici açar): Snowflake, BigQuery gibi bağlı bir veri kaynağından sade bir soruyla canlı pano (ör. bölge bazında ciro ve tahsilat gecikmesi). Onaylı raporlama sisteminizin yerine geçmez; yönetime giden rakamı kaynağında doğrulayın ([Claude Dashboards](/wiki/yetenekler/claude-design/#claude-dashboards-ve-claude-motion-beta)).
 
-**Muhasebe programı (Logo, Mikro, Paraşüt):** Bu programlar için Claude'un resmi bir connector'ı yok. Pratik yol: mizanı, cari ekstreyi ya da fatura listesini programdan Excel/CSV olarak **dışa aktarıp** Claude'a yüklemek; ayrıntı ve riskler [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasında.
+**Muhasebe programı (Logo, Mikro, Paraşüt):** Bu programlar için Claude'un resmi bir connector'ı yok. Pratik yol: mizanı, cari ekstreyi ya da fatura listesini programdan Excel/CSV olarak dışa aktarıp Claude'a yüklemek; ayrıntı ve riskler [Türk İş Araçlarıyla Claude](/wiki/temeller/turk-is-araclari/) sayfasında.
 
 **Hazır eklenti:** Anthropic'in resmi eklenti deposunda (`anthropics/knowledge-work-plugins`) finans için ayrı bir `finance` klasörü var. Kurmadan önce içeriğini inceleyin; çıktıları Türk mevzuatına (VUK, TFRS) göre ayrıca kontrol edin.
 
 ## İş Akışı Yeniden Tasarımı Adayları
 
-- **Ay sonu raporlama döngüsü**: rakamlar hazırlanır → Claude anlatı üretir → iç inceleme → yönetime teslim. Her ay aynı günde "mizan dosyasını oku, varyans taslağını hazırla" diyen bir [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) taslağı sizi beklerken hazır eder (dosyaların yerel mi bulutta mı olduğu görevin çalışma yerini belirler)
-- **Denetim hazırlığı**: yıllık denetim öncesi kanıt paketleri ve açıklamalar
-- **Bütçe döngüsü iletişimi**: yıllık bütçe sunumu, gerekçeler, varyans takibi
-- **Başvuru taslağı döngüsü**: KOSGEB / TÜBİTAK / TURQUALITY için yılda 2-3 başvuru
+- Ay sonu raporlama döngüsü: rakamlar hazırlanır → Claude anlatı üretir → iç inceleme → yönetime teslim. Her ay aynı günde "mizan dosyasını oku, varyans taslağını hazırla" diyen bir [zamanlanmış görev](/wiki/araclar/scheduled-tasks/) taslağı sizi beklerken hazır eder (dosyaların yerel mi bulutta mı olduğu görevin çalışma yerini belirler)
+- Denetim hazırlığı: yıllık denetim öncesi kanıt paketleri ve açıklamalar
+- Bütçe döngüsü iletişimi: yıllık bütçe sunumu, gerekçeler, varyans takibi
+- Başvuru taslağı döngüsü: KOSGEB / TÜBİTAK / TURQUALITY için yılda 2-3 başvuru
 
 ## Gerçek Örnek: Bütçe Varyans Anlatısı
 
@@ -147,7 +147,7 @@ Mart ayı kapandı. Satış bütçenin %8 altında, pazarlama gideri %15 üstün
 
 **Adım 3:** "Üçüncü paragraf zayıf, Ramazan etkisini daha net göster" diye iterasyon.
 
-**Adım 4:** Cuma toplantısı öncesi çalışan **yönetim FAQ prompt'unu** çağırır: *"CEO bu sayfayı okuduğunda hangi 5 soruyu soracak? Cevaplarıyla birlikte ver."*
+**Adım 4:** Cuma toplantısı öncesi çalışan yönetim FAQ prompt'unu çağırır: *"CEO bu sayfayı okuduğunda hangi 5 soruyu soracak? Cevaplarıyla birlikte ver."*
 
 **Süre:** elle 2-3 saat, Claude ile 30-45 dakika (kontrol dahil). *Zamana gözlemi, tipik aralık; kendi rakamınız için [ROI hesaplayıcı](/wiki/temeller/roi-hesaplayici/).* Yalnız varyans anlatısı bile her ay hazırlanıyorsa fark yılda kabaca 15-30 saat eder; aylık rapor anlatısı da eklenirse 40-70 saat.
 

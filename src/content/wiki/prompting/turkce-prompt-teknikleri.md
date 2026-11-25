@@ -6,12 +6,12 @@ tags:
   - prompting
   - turkce
   - dil
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Türkçe prompt yazmak İngilizce yazmaktan farklı dikkat ister.** Claude Türkçe'yi iyi anlar, ama Türkçe yazılan prompt İngilizce yazılan prompttan farklı tepki üretebilir: sondan eklemeli yapı, tonlama nüansları ve iş hayatındaki kalıplar farklıdır. Bu sayfa on iki Türkçe'ye özgü tekniği ve bir şablonu anlatır.
+Türkçe prompt yazmak İngilizce yazmaktan farklı dikkat ister. Claude Türkçe'yi iyi anlar, ama Türkçe yazılan prompt İngilizce yazılandan farklı tepki üretebilir: sondan eklemeli yapı, tonlama nüansları ve iş hayatındaki kalıplar farklıdır. Aşağıda Türkçe'ye özgü on iki teknik ve bir şablon var.
 
-Fark tek cümleyle: [Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası Claude'un Türkçe'de **ne kadar iyi** olduğunu gösterir; bu sayfa **prompt yazarken neye dikkat edeceğinizi** anlatır.
+[Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası Claude'un Türkçe'de ne kadar iyi olduğunu gösterir; bu sayfa prompt yazarken nelere dikkat edeceğinizi anlatır.
 
 ## Önce Genel Prensip
 
@@ -66,7 +66,7 @@ Sohbet içinde kayma görürseniz hemen düzeltin:
 
 > *"Hatırlatma: lütfen Türkçe yanıtla. Teknik terim için Türkçe + parantez İngilizce."*
 
-[Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında bu ve benzer dil sorunları detaylanır.
+[Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasında bu ve benzer dil sorunlarının çözümü var.
 
 ## 3. Eklemeli Yapı: Net Kelime Seçimi
 
@@ -182,7 +182,7 @@ Türkçe soru tipleri farklı yanıt çağrıştırır:
 | "Nasıl" sorusu | "Nasıl yaparım?" | Adım adım |
 | "Neden" sorusu | "Neden böyle?" | Açıklayıcı |
 
-Ne istediğinizi sezmesinden değil, **soruyu doğru sormaktan** kalite çıkar. [Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) bunu derinleştirir.
+Kalite, soruyu doğru sormanıza bağlıdır; Claude'un ne istediğinizi sezmesine güvenmeyin. [Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) bunu derinleştirir.
 
 ## 11. Vurgu ve Önem
 
@@ -208,7 +208,7 @@ Yeni bir prompt yazdığınızda Türkçe kalitesini test edin:
 3. Bulduğunuz sorunları promptta düzeltin
 4. Bu süreci 2-3 kez yineleyin → kalıcı şablon oluşur
 
-[Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfası bu döngüyü detaylandırır.
+Bu döngü [Prompt İterasyonu](/wiki/prompting/prompt-iterasyonu/) sayfasında ayrıntılı.
 
 ## Pratik Şablon
 

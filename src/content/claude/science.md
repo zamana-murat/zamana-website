@@ -17,12 +17,12 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Türkiye'de Claude (wiki)", href: "/wiki/temeller/turkiyede-claude/" }
 order: 50
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
 
-Claude Science, Anthropic'in bilimsel araştırma için hazırladığı bir uygulamadır. Anthropic'in vurguladığı nokta şu: bu bir model değil. Planınızdaki aynı Claude modellerini kullanır; yeni olan, modellerin etrafındaki araçlardır: bilimsel veritabanı bağlantıları, hesaplama ortamı yönetimi ve her sonucun izlenebilir kaydı.
+Claude Science, Anthropic'in bilimsel araştırma için hazırladığı bir uygulamadır. Anthropic'e göre bu bir model değil. Planınızdaki aynı Claude modellerini kullanır; yeni olan, modellerin etrafındaki araçlardır: bilimsel veritabanı bağlantıları, hesaplama ortamı yönetimi ve her sonucun izlenebilir kaydı.
 
 Sıradan bir yapay zeka asistanı biyoloji hakkında konuşabilir, ama bir analiz hattını çalıştıramaz, kümelerde iş yönetemez ve önceki oturumda ne yapıldığını takip edemez. Claude Science bu boşluğu kapatmak için tasarlanmış. Uygulama genomik, tek hücre, proteomik, yapısal biyoloji, kemoinformatik gibi alanlarda hazır uzman ayarlarıyla gelir; 60'tan fazla bilimsel veritabanına doğrudan bağlanabilir. Kaynak sayfa, uygulamanın yaşam bilimleri alanında her ana dal için hazırlandığını söylüyor.
 
@@ -48,7 +48,7 @@ Claude Science geniş bir ofis aracı değil, uzman bir araştırma ortamıdır.
 
 ![Claude Science'ta kurgusal örnek veriden üretilmiş, doku etiketli hücre atlası ve hücre tipi belirteçleri grafiği](/images/claude/science/ornek-2.webp)
 
-Uygulama yaşam bilimleri için ayarlı. Muhasebe, satış veya yönetim gibi genel iş kullanımı için [Claude'un genel sayfasına](/claude/) bakmak daha doğru olur. Zamana'nın eğitim programları iş kullanıcısına odaklıdır, bilimsel analiz iş akışı eğitimi vermez.
+Uygulama yaşam bilimleri için ayarlı. Muhasebe, satış veya yönetim gibi genel iş kullanımı için [Claude'un genel sayfasına](/claude/) bakmak daha doğru olur. Zamana'nın eğitim programları iş kullanıcıları içindir, bilimsel analiz iş akışı eğitimi vermez.
 
 ## Nasıl başlarsınız?
 
@@ -63,5 +63,5 @@ Uygulama yaşam bilimleri için ayarlı. Muhasebe, satış veya yönetim gibi ge
 - **Durum ve erişim:** Beta. Kaynağa göre macOS, Windows ve Linux'ta Pro, Max, Ultra, Team ve Enterprise planlarında kullanılabilir. Enterprise'ta SSO, SCIM, özel roller, kullanım analitiği, Compliance API ve uygulama özelliklerinin (connector, skill, uzak hesaplama, hafıza) yönetimi var. Yöneticilerin yaygınlaştırmadan önce belgeleri incelemesi öneriliyor.
 - **Akademik ve kâr amacı gütmeyen indirim:** Dünyadaki akademik ve kâr amacı gütmeyen araştırma kurumlarındaki aktif bilim insanları için indirimli bir Team planı var; uygunluk grubun baş araştırmacısı üzerinden doğrulanıyor. Türkiye'deki kurumların uygunluğu için kaynakta ayrı bir ifade yok, başvurmadan önce Anthropic'ten teyit alın. Kâr amaçlı şirketler, sözleşmeli araştırma kuruluşları ve sanayi Ar-Ge ekipleri için Team ve Enterprise planları öneriliyor.
 - **Veri gizliliği:** Uygulama sizin altyapınızda çalışır, ham veri kümeleri ve hesaplama yerelde kalır. Ancak komutlara dahil ettiğiniz içerik ve model cevapları Anthropic tarafından standart saklama kurallarıyla işlenir, yani yurt dışına gider. Hasta verisi veya kişisel veri içeren çalışmalarda KVKK ve etik kurul gereklilikleri önce gelir: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/). Ekibinize özel ihtiyaçlar için Anthropic satış ekibiyle görüşmeniz öneriliyor.
-- **Yeni model değil:** Kullanılan modeller planınızdaki Claude modelleridir. Mevcut uzman araçların yerine geçmez, onların birlikte çalıştığı bir tezgâh olarak konumlanır.
+- **Yeni model değil:** Kullanılan modeller planınızdaki Claude modelleridir. Mevcut uzman araçların yerine geçmez; onları bir arada kullandığınız bir tezgâhtır.
 - **Türkiye notları:** Ödeme ABD doları ile. Anthropic'in Türkiye'de ofisi veya temsilcisi yok, bkz. [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/). Uygulamanın Türkçe arayüzü veya Türkçe destek hattı olup olmadığını kaynak belirtmiyor, bu yüzden doğrulanamadı.

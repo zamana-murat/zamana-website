@@ -8,16 +8,16 @@ tags:
   - xml-tags
   - few-shot
   - prompt-chaining
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 [Prompting temel ilkelerini](/wiki/prompting/temel-ilkeler/) oturtmuş bir çalışan, günlük iş çıktılarının büyük bölümünü zaten karşılar. İleri teknikler kalan farkı kapatır: karmaşık girdiyi düzenler, uzun işi parçalar, çıktıyı göndermeden önce sınar.
 
-Bu sayfa, temel ilkelerdeki kısa anlatımların **derin** halidir (zincirleme, eleştirmen, bağlam önce). Few-shot ve çıktı formatı kendi sayfalarında ayrıntılı anlatılır, burada yalnız özetlenir. Kaliteli bir prompt kütüphanesi kurmanın da zemini bu tekniklerdir.
+Temel ilkelerdeki kısa anlatımların (zincirleme, eleştirmen, bağlam önce) derin hali burada. Few-shot ve çıktı formatı kendi sayfalarında ayrıntılı, burada yalnız özet halinde. Kaliteli bir prompt kütüphanesi kurmanın zemini de bu teknikler.
 
 ## 1. XML Etiketleri: Karmaşık Promptun Yapısı
 
-XML etiketleri, uzun bir promptta talimatı, bağlamı, örneği ve değişen girdiyi birbirinden ayırır. Markdown gibi görsel değil, **anlamsal** sınır çizer: Claude hangi bölümün talimat, hangisinin üzerinde çalışılacak içerik olduğunu karıştırmaz.
+XML etiketleri, uzun bir promptta talimatı, bağlamı, örneği ve değişen girdiyi birbirinden ayırır. Çizdiği sınır görsel değil anlamsaldır: Claude hangi bölümün talimat, hangisinin üzerinde çalışılacak içerik olduğunu karıştırmaz.
 
 **Kullanım örneği:**
 
@@ -127,7 +127,7 @@ Basit görevlerde tersini söyleyin:
 
 > *"Doğrudan cevapla. Akıl yürütmeni açıklamana gerek yok."*
 
-Bu cümleler nasıl çalışacağını değil, işten ne kadar özen beklediğinizi iletir. Ama düşünme derinliğinin asıl ayarı artık cümle değil **Effort**'tur. claude.ai'de gönder düğmesinin yanındaki model adına tıklayınca model, Effort (Low'dan Max'e beş kademe) ve Thinking ayrı ayarlar olarak görünür. Rutin işte düşük, zor karar ve analizde yüksek Effort seçin; yüksek Effort kullanım limitinizi daha hızlı tüketir. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
+Bu cümleler işten ne kadar özen beklediğinizi iletir. Düşünme derinliğinin asıl ayarı ise artık **Effort**'tur. claude.ai'de gönder düğmesinin yanındaki model adına tıklayınca model, Effort (Low'dan Max'e beş kademe) ve Thinking ayrı ayarlar olarak görünür. Rutin işte düşük, zor karar ve analizde yüksek Effort seçin; yüksek Effort kullanım limitinizi daha hızlı tüketir. Ayrıntı: [Effort Kontrolü](/wiki/yetenekler/effort-control/).
 
 Pratik sıra: önce **ne istediğinizi ve neyin doğru sayılacağını** netleştirin, sonra gerekirse Effort'u yükseltin.
 
@@ -167,13 +167,11 @@ Bilgisayarınızdaki bir `prompts/` klasörü bu iş için artık iyi bir tercih
 - İlk birkaç hafta sonunda her çalışanın **5-10 prompt**'u olmalı
 - 3 ay sonunda **30-50 prompt** olmalı, tüm yaygın iş görevlerini kapsayan
 
-Prompt kütüphanesi en somut ve en değerli varlıklardan biridir. Yöntemi ve yapıyı her yerde kullanırsınız; yalnız şirkete ait gizli veri ya da müşteri bilgisi içeren promptları şirket dışına taşımayın.
+Yöntemi ve yapıyı her yerde kullanırsınız; yalnız şirkete ait gizli veri ya da müşteri bilgisi içeren promptları şirket dışına taşımayın.
 
 ## İleri Teknikleri Ne Kadar Önemsemelisiniz?
 
-Dürüst cevap: **orta düzeyde**.
-
-İleri teknikler çıktı kalitesini artırır, ama temel ilkeleri atlayıp XML etiketlerini öğrenmek boşa yatırımdır. Temeller sağlam olduğunda, ileri teknikler doğal olarak ince ayar sağlar.
+Orta düzeyde. İleri teknikler çıktı kalitesini artırır, ama temel ilkeleri atlayıp XML etiketlerini öğrenmek boşa yatırımdır. Temeller sağlam olduğunda, ileri teknikler doğal olarak ince ayar sağlar.
 
 Önerilen sıralama:
 
@@ -181,7 +179,7 @@ Dürüst cevap: **orta düzeyde**.
 2. **Sonra:** [Temel İlkeler](/wiki/prompting/temel-ilkeler/): 5 bileşen yapısı oturtulana kadar
 3. **En son:** Bu sayfa: XML, few-shot, chaining
 
-Bir haftada üçü birden öğrenilmez. Bir ayda oturur.
+Üçünü bir haftada öğrenmeye çalışmayın; bir ayda oturur.
 
 ## İlgili Sayfalar
 

@@ -18,7 +18,7 @@ related:
   - { label: "Alt ajanlar (wiki)", href: "/wiki/yetenekler/agents-subagents/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 10
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -31,7 +31,7 @@ Terminalde, masaüstü uygulamasında, VS Code ve JetBrains gibi IDE'lerde, Slac
 
 Anthropic'in sayfası dört yönetim özelliğini öne çıkarıyor:
 
-- **Katkı metrikleri:** Kullanımın ve verimin bir panoda görünmesi. Claude Code yardımıyla açılan değişiklik istekleri ve gönderilen kod gibi ölçüler.
+- **Katkı metrikleri:** Kullanım ve verim bir panoda görünür. Ölçüler arasında Claude Code yardımıyla açılan değişiklik istekleri ve gönderilen kod var.
 - **Sunucu tarafından yönetilen ayarlar:** Araç izinleri, dosya erişim kısıtları ve MCP sunucu ayarları kuruluş genelinde merkezden tanımlanır. Her geliştiricinin bilgisayarına ayrı ayrı cihaz yönetimi (MDM) yazılımıyla dağıtmak gerekmez.
 - **OpenTelemetry ile izleme:** Oturum etkinliği, token kullanımı ve maliyet, şirketin mevcut gözlem araçlarına gerçek zamanlı aktarılır.
 - **Erişim ve izinler:** SSO ve SCIM ile koltuk yönetimi ve otomatik kullanıcı açma ve kapatma Team'de de var. Enterprise'da buna rol bazlı izinler, özel roller ve denetim izleri eklenir.
@@ -52,7 +52,7 @@ Kuruluşun kodlama standartları için ayrıca CLAUDE.md dosyaları kullanılır
 
 ## Kaynak sayfadaki örnekler
 
-Rakamlar Anthropic'in sayfasından, ilgili şirketlere aittir: Rakuten yeni özelliklerin pazara çıkış süresinin 24 günden 5 güne indiğini, Zapier çalışanlarının yüzde 89'unun yapay zekayı benimsediğini ve 800'den fazla ajan devreye aldığını aktarıyor. Spotify mühendislerinin büyük çaplı kod geçişlerini çok daha hızlı yürüttüğünü söylüyor. Bu sonuçların arkasında güçlü bir test altyapısı ve iyi tanımlanmış kod inceleme süreçleri olduğunu unutmayın.
+Rakamlar Anthropic'in sayfasından, ilgili şirketlere aittir: Rakuten yeni özelliklerin pazara çıkış süresinin 24 günden 5 güne indiğini, Zapier çalışanlarının yüzde 89'unun yapay zekayı benimsediğini ve 800'den fazla ajan devreye aldığını aktarıyor. Spotify mühendislerinin büyük çaplı kod geçişlerini çok daha hızlı yürüttüğünü söylüyor. Bu sonuçların arkasında güçlü bir test altyapısı ve iyi tanımlanmış kod inceleme süreçleri var.
 
 ## Türkiye'de kullanırken
 

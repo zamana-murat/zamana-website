@@ -2,12 +2,12 @@
 title: "Zamana Wiki: Türkiye'nin Claude Kaynağı"
 seoTitle: "Claude Wiki: Türkçe Claude Rehberi ve Kaynakları"
 description: "Claude'u profesyonel kullanmanın Türkçe rehberi: kalıcı talimat (CLAUDE.md), Cowork, prompting, MCP ve rol bazlı gerçek iş akışları."
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 **Claude'u doğru kullanmanın Türkçe kaynağı.**
 
-Bu wiki, Claude'u profesyonel hayatınızda gerçek iş akışlarına geçirmek isteyen herkese yöneliktir: bağımsız profesyoneller, şirket çalışanları, ekip yöneticileri. Kod yazmayı öğretmek için değil; satış, finans, hukuk, İK, operasyon ve yönetim alanlarında pratik, gerçek iş çıktısı üretmek için.
+Bu wiki, Claude'u gerçek iş akışlarına geçirmek isteyen bağımsız profesyoneller, şirket çalışanları ve ekip yöneticileri için. İçerik satış, finans, hukuk, İK, operasyon ve yönetimdeki iş çıktılarına dayanır; kod yazmayı öğretmez.
 
 ![Anthropic Claude'u geliştirir ve satar, abonelik doğrudan Anthropic'ten alınır; Zamana bayi değildir, bağımsız eğitim, danışmanlık ve ücretsiz wiki sunar](/images/wiki/wiki-zamana-claude.svg)
 

@@ -8,12 +8,13 @@ tags:
   - kvkk
   - guvenlik
   - sablon
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 > **Önemli:** Bu şablon hukuki danışmanlık değildir; kullanmadan önce kendi avukatınıza şirketinize göre uyarlatın. Zamana hukuk bürosu değildir. Sektörünüze özgü düzenlemeler (finans, sağlık, kamu) şablonda yoktur. [Hukuk departmanı](/wiki/departmanlar/hukuk/) sayfası da rehber içerir.
 
-Yapay zeka kullanım politikası, çalışanların hangi yapay zeka araçlarını, hangi veriyle ve hangi kurallarla kullanabileceğini yazılı hale getiren, imzalanabilir bir şirket belgesidir. Bu sayfa İK, BT, hukuk ve yönetim ekipleri için hazırlanmış, araçtan bağımsız bir şablon sunar: 13 maddelik politika metni, onaylı araç listesi, veri sınıflandırma tablosu, çalışan taahhüt formu ve olay bildirim formu. Hepsini aşağıdaki Word dosyasında düzenlenebilir olarak indirebilirsiniz. Köşeli parantezli alanları (`[Şirket Adı]` gibi) doldurun, sektörünüze göre uyarlayın, hukuk müşavirinizle gözden geçirin, yönetime onaylatın, çalışanlara duyurup imza alın. Claude'a özgü maddeler "Claude örneği" olarak ayrıldı; ChatGPT, Gemini ya da Copilot kullanıyorsanız o kısımları kendi aracınıza göre değiştirirsiniz. Şablon, KVKK m.9 yurt dışı aktarım ve aydınlatma yükümlülüklerini de hatırlatır; denetimde "kurallarımız yazılı ve imzalı" diyebilmenizi sağlar. KVKK de Mart 2026 tarihli iş yeri duyurusunda, kurumların açık bir yapay zeka politikası oluşturmasını bir çerçeve olarak önerir.
+Yapay zeka kullanım politikası, çalışanların hangi yapay zeka araçlarını, hangi veriyle ve hangi kurallarla kullanabileceğini yazılı hale getiren, imzalanabilir bir şirket belgesidir. Aşağıdaki şablon İK, BT, hukuk ve yönetim ekipleri için ve araçtan bağımsız: 13 maddelik politika metni, onaylı araç listesi, veri sınıflandırma tablosu, çalışan taahhüt formu ve olay bildirim formu. Hepsini Word dosyasında düzenlenebilir olarak indirebilirsiniz. Köşeli parantezli alanları (`[Şirket Adı]` gibi) doldurun, sektörünüze göre uyarlayın, hukuk müşavirinizle gözden geçirin, yönetime onaylatın, çalışanlara duyurup imza alın. Claude'a özgü maddeler "Claude örneği" olarak ayrıldı; ChatGPT, Gemini ya da Copilot kullanıyorsanız o kısımları kendi aracınıza göre değiştirirsiniz. Şablon, KVKK m.9 yurt dışı aktarım ve aydınlatma yükümlülüklerini de hatırlatır; denetimde "kurallarımız yazılı ve imzalı" diyebilmenizi sağlar. KVKK de Mart 2026 tarihli iş yeri duyurusunda, kurumların açık bir yapay zeka politikası oluşturmasını bir çerçeve olarak önerir.
+
 ## Şablonu nereden indiririm?
 
 **[Yapay zeka kullanım politikası şablonunu indir (Word, .docx)](/indir/yapay-zeka-kullanim-politikasi-sablonu.docx)**
@@ -34,7 +35,7 @@ KVKK'nın "İş Yerlerinde Üretken Yapay Zekâ Araçlarının Kullanımı" dok�
 Politikanın üç hedefi:
 
 1. **Riski yönetmek**: hassas veri sızıntısı, halüsinasyon kaynaklı yanlış karar, KVKK ihlali
-2. **Verimi korumak**: politika yasaklamak için değil, aşırı temkinli olmadan güvenle kullanmak için
+2. **Verimi korumak**: çalışan aşırı temkinli olmadan, güvenle kullanır
 3. **Denetlenebilir olmak**: "politikamız var, çalışanlar imzaladı, ihlaller şöyle takip ediliyor" diyebilmek
 
 ## Kurumlar için yapay zeka politikası nasıl oluşturulur?
@@ -60,7 +61,7 @@ Kişisel Verileri Koruma Kurumu bu konuda iki resmi belge yayımladı:
 - **[Üretken Yapay Zekâ ve Kişisel Verilerin Korunması Rehberi (15 Soruda)](https://www.kvkk.gov.tr/Icerik/8547/uretken-yapay-zeka-ve-kisisel-verilerin-korunmasi-rehberi-15-soruda)**, Yayın No: 113, 24 Kasım 2025. Üretken yapay zekanın nasıl çalıştığını ve risklerini anlatır; kişisel veri işleme faaliyetlerini 6698 sayılı Kanun'a göre değerlendirir (işleme şartları, yurt dışı aktarım, aydınlatma ve şeffaflık, ilgili kişi hakları, veri güvenliği). Yurt dışı aktarım bölümü, yurt dışındaki hizmet sağlayıcılar üzerinden üretken yapay zeka kullanan Türkiye'deki veri sorumlularının aktarımı Kanun'un 9. maddesine ve 10 Temmuz 2024 tarihli aktarım yönetmeliğine uygun yapması gerektiğini söyler. Güvenlik bölümü; risk temelli yaklaşım, veri koruma etki değerlendirmesi, çok faktörlü kimlik doğrulama, kayıtların güvenli saklanması ve çalışan eğitimi gibi tedbirleri örnek olarak sayar.
 - **[İş Yerlerinde Üretken Yapay Zekâ Araçlarının Kullanımı](https://www.kvkk.gov.tr/Icerik/8674/is-yerlerinde-uretken-yapay-zeka-araclarinin-kullanimi)**, duyuru tarihi 5 Mart 2026 (doküman kapağında Şubat 2026). Üçüncü tarafların sunduğu, kamuya açık araçların iş yerinde kullanımına genel bir çerçeve çizer. Şunları gündeme getirir: açık bir kurumsal politika oluşturmak; yalnızca kurumun belirlediği araçlara, rol ve görev temelli erişim vermek; mümkün olduğunca anonimleştirilmiş ve genelleştirilmiş ifadeler kullanmak; sağlık, finans ve hukuki süreç bilgilerinde ek temkin; çıktıyı nihai karar dayanağı yapmayıp insan denetiminde değerlendirmek; politikayı duyurmak, eğitim vermek ve geri bildirim kanalı kurmak.
 
-Bu şablonun maddeleri bu önerilerle örtüşecek şekilde kuruldu. İki belge de yol gösterici niteliktedir; şirketinizin somut durumuna hukuki görüş yerine geçmez.
+Bu şablonun maddeleri bu önerilerle örtüşecek şekilde kuruldu. İki belge de yol göstericidir; şirketinizin somut durumu için hukuki görüş yerine geçmez.
 
 Şirket olarak bilmeniz gerekenler için iki sayfa: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) (plana göre veri durumu, DPA, müfettiş soruları) ve [Yurt Dışına Veri Aktarımı](/wiki/temeller/yurt-disi-aktarim/) (KVKK m.9 sırası ve şirketin adımları).
 
@@ -134,7 +135,7 @@ Aşağıdakiler **iş amaçlı yapay zeka kullanımında kesin yasaktır** (Böl
 
 Yapay zekaya araç yetkisi verdikçe risk büyür. Aşağıdaki maddeler Claude örneğiyle yazıldı; başka araç kullanıyorsanız karşılığına uyarlayın.
 
-Bu bölüm yetkilerin kim tarafından, hangi koşulda açılacağını belirler. 
+
 - **Connector, MCP ve eklentiler:** Yalnız [BT departmanı](/wiki/departmanlar/bilgi-teknolojileri/) onaylı listedeki olanlar kurulur. Connector'lar dış servislere Anthropic'in bulutu üzerinden ulaşır. Yazma yetkisi (e-posta, mesaj ya da dosya gönderme, düzenleme) okuma yetkisinden ayrı onaylanır; Team ve Enterprise'ta owner bunu connector başına "Always allow / Needs approval / Blocked" olarak kuruluş genelinde ayarlar ve kullanıcı geçersiz kılamaz. Yeni connector isteği BT'ye başvuruyla açılır
 - **Claude in Chrome:** [Rol veya birim listesi] kullanabilir. Bankacılık, sağlık kayıtları ve başkasıyla paylaşılmayacak şifreler gibi işlerde kullanılmaz. Claude'un sorduğu her onay okunur, beklenmedik davranışta işlem durdurulur ([Claude for Chrome](/claude/chrome/))
 - **Computer use (bilgisayar kontrolü):** Beta aşamasındadır ve yalnız Pro, Max ve Ultra'da vardır (Team ve Enterprise'ta yok). [Rol listesi] dışında kullanılmaz, ekranda gizli sınıfta veri açıkken başlatılmaz

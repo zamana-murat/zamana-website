@@ -18,19 +18,19 @@ related:
   - { label: "Hukuk ekipleri için Claude", href: "/kurumsal/hukuk/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 100
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Finans ekibinde Claude ne yapar?
 
-Finans işinin büyük kısmı, karar anından önceki hazırlıktır: mali tabloyu okumak, rasyo hesaplamak, sözleşme ve politika metnini taramak, aynı veriyi önce tabloya sonra sunuma sonra rapora taşımak. Claude bu hazırlığı hızlandırır. Anthropic'in sayfası bunu "sinyalden karara" diye özetliyor ve dört rolü öne çıkarıyor:
+Finans işinde karar anından önce hazırlık gerekir: mali tabloyu okumak, rasyo hesaplamak, sözleşme ve politika metnini taramak, aynı veriyi önce tabloya sonra sunuma sonra rapora taşımak. Claude bu hazırlığı hızlandırır. Anthropic'in sayfası bunu "sinyalden karara" diye özetliyor ve dört rolü öne çıkarıyor:
 
 - **Yatırım bankacılığı:** Sunum dosyaları (pitch book), emsal şirket tabloları ve bilgi notu taslakları, doğrudan Excel ve PowerPoint içinde.
 - **Kurumsal ve ticari bankacılık:** Kredi analizi ve tahsis memosu taslağı.
 - **Portföy yönetimi:** Yatırım komitesi notları, performans sunumları, portföy gözden geçirmeleri.
 - **Sigorta:** Aktüerya çalışma kitaplarının kontrolü ve düzenleyiciye gidecek raporlara hazırlık.
 
-Kaynak sayfa bir de yeni bir ürün duyuruyor: **Claude for Financial Advisors** (finansal danışmanlar için Claude). Ayrıntısı ve Türkiye açısından anlamı aşağıda, "Finansal danışmanlar için Claude" bölümünde.
+Kaynak sayfa bir de yeni bir ürün duyuruyor: **Claude for Financial Advisors** (finansal danışmanlar için Claude).
 
 ## Tablo ve sunum işi: Microsoft 365 eklentileri
 
@@ -38,7 +38,7 @@ Finans ekiplerinin günü Excel ve PowerPoint'te geçer. Claude bu programların
 
 ![Tablo programında kurgusal bir firmanın mali tablosu ve yan panelde Claude: analist "FAVÖK yüzde 15 düşerse borç oranı ne olur?" diye soruyor, Claude yeni bir senaryo sütunu ekleyip sonucu hücre kaynaklarıyla açıklıyor](/images/kurumsal/finansal-hizmetler/excel-senaryo.webp)
 
-Bu eklentiler finans sektörüne özel değil, tüm ücretli planlarda var; Outlook eklentisi henüz beta. Ayrıntı: [Microsoft 365 için Claude](/claude/microsoft-365/). Kurumunuz Google kullanıyorsa aynı iş Google Sheets, Docs ve Slides içinde de yapılabiliyor (beta): [Google Workspace için Claude](/claude/google-workspace/).
+Eklentiler tüm ücretli planlarda var, sektöre özel ayrı bir paket gerekmiyor; Outlook eklentisi henüz beta. Ayrıntı: [Microsoft 365 için Claude](/claude/microsoft-365/). Kurumunuz Google kullanıyorsa aynı iş Google Sheets, Docs ve Slides içinde de yapılabiliyor (beta): [Google Workspace için Claude](/claude/google-workspace/).
 
 Kaynak sayfa ayrıca pitch book, kredi memosu, KYC (müşterini tanı) taraması ve fon muhasebesi için hazır **ajan şablonları** duyuruyor. Bunlar Claude ve Claude Code içinde plugin olarak, kendi ajanını kuran yazılım ekipleri için de Managed Agents tarifi olarak geliyor. Şablonlar ABD ve küresel piyasa pratiğine göre yazıldığı için MASAK ve BDDK gereklerine göre uyarlanmadan kullanılmamalı.
 

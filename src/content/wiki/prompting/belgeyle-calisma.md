@@ -8,12 +8,12 @@ tags:
   - sozlesme
   - excel
   - dogrulama
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-Claude'a bir belge verip "bunu özetle" demek kolaydır. İşin zor kısmı, aldığınız cevaba **güvenip güvenemeyeceğinizi** bilmektir. Belgeyle çalışırken üç hata türü çıkar: belgede olmayan bir şeyi var gibi anlatmak, belgedeki bir maddeyi atlamak ve tablodaki bir sayıyı yanlış okumak ya da toplamak.
+Claude'a bir belge verip "bunu özetle" demek kolaydır. İşin zor kısmı, aldığınız cevaba güvenip güvenemeyeceğinizi bilmektir. Belgeyle çalışırken üç hata türü çıkar: belgede olmayan bir şeyi var gibi anlatmak, belgedeki bir maddeyi atlamak ve tablodaki bir sayıyı yanlış okumak ya da toplamak.
 
-Bu sayfa belgeyi **nasıl vereceğinizi ve nasıl soracağınızı** anlatır. Hangi dosya türlerinin açıldığı, yükleme sınırları ve dosyanın nerede durduğu için [Dosya İşleme](/wiki/yetenekler/file-handling/) sayfasına bakın; bu sayfa onunla çakışmaz, üstüne biner. Üç örnek kurgusaldır: bir ihale şartnamesi, bir tedarik sözleşmesi ve bir Excel satış tablosu.
+Belgeyi nasıl vereceğinizi ve nasıl soracağınızı aşağıda bulacaksınız. Hangi dosya türlerinin açıldığı, yükleme sınırları ve dosyanın nerede durduğu [Dosya İşleme](/wiki/yetenekler/file-handling/) sayfasında. Örneklerin üçü kurgusaldır: bir ihale şartnamesi, bir tedarik sözleşmesi ve bir Excel satış tablosu.
 
 ## Belgeyi Yüklemeden Önce: Anonimleştirin
 
@@ -115,7 +115,7 @@ Kurallar:
 
 ## Örnek: Excel Satış Tablosu
 
-Tablolarda sorun farklıdır: metin gibi "yanlış anlatmak" değil, **yanlış saymak** riski vardır. Dil modelleri uzun sayı sütunlarını gözle toplarken hata yapabilir; güvenilir yol, hesabı Claude'a **kod çalıştırarak** yaptırmaktır. claude.ai'de XLSX yüklemek için [code execution](/wiki/yetenekler/code-execution/) özelliğinin açık olması gerekir.
+Tablolarda asıl risk yanlış saymaktır. Dil modelleri uzun sayı sütunlarını gözle toplarken hata yapabilir; güvenilir yol, hesabı Claude'a **kod çalıştırarak** yaptırmaktır. claude.ai'de XLSX yüklemek için [code execution](/wiki/yetenekler/code-execution/) özelliğinin açık olması gerekir.
 
 Kurgusal bir örnek: Karadeniz Pano Sanayi'nin 2026 ilk altı ay satışlarını içeren bir tablo (sütunlar: Tarih, Bölge, Müşteri Kodu, Ürün, Adet, Tutar).
 

@@ -7,12 +7,12 @@ tags:
   - iterasyon
   - test
   - geliştirme
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Bir promptu ilk seferinde mükemmel yazmak nadirdir.** İyi prompt **iterasyonla** olur: yazarsınız, test edersiniz, sorunu görürsünüz, düzeltirsiniz, tekrar test edersiniz. Bu sayfa o döngünün sistematik metodolojisini anlatır.
+Promptu ilk seferinde mükemmel yazmak nadirdir. İyi prompt iterasyonla olur: yazarsınız, test edersiniz, sorunu görürsünüz, düzeltirsiniz, tekrar test edersiniz.
 
-[Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) sayfaları **nasıl yazarsınız** sorusuna cevap verir; bu sayfa **yazdıktan sonra ne yaparsınız** sorusuna.
+[Temel İlkeler](/wiki/prompting/temel-ilkeler/) ve [4D Çerçevesi](/wiki/prompting/4d-cercevesi/) sayfaları promptu nasıl yazacağınızı anlatır. Aşağıda yazdıktan sonra ne yapacağınızı bulacaksınız.
 
 ## Neden İterasyon?
 
@@ -149,7 +149,7 @@ Ortalama skor 13+/15'e çıktığında prompt **kabul edilebilir** seviyededir.
 
 ## 6. Sürümle: Kalıcı Kayıt
 
-Hazır prompta artık **kalıcı bir yer** verin:
+Hazır prompta kalıcı bir yer verin:
 
 ### Seçenek A: Claude Projesi (sohbet ve Cowork kullanıcıları için)
 
@@ -251,13 +251,13 @@ Bu özellikle [Pazarlama](/wiki/departmanlar/pazarlama/) içerikleri, [Müşteri
 
 ## Üretim Sonrası Geri Bildirim
 
-Bir prompt (proje, skill ya da paylaşılan kütüphane) aktif kullanımda olduktan sonra da **gözlemlenmeli**:
+Bir prompt (proje, skill ya da paylaşılan kütüphane) kullanıma girdikten sonra da izlenmeli:
 
 - Çalışan kullanıyor mu, yoksa bypass mı geçiyor?
 - Çıktıyı kullanmadan önce ne kadar düzeltme yapıyor?
 - Hangi durumlarda tatmin etmiyor?
 
-Bu geri bildirimi sistematik toplayın:
+Geri bildirimi düzenli toplayın:
 
 - Aylık ekip toplantısında "hangi prompt iyi, hangisi sorunlu?"
 - Slack'te "prompt-feedback" kanalı
@@ -271,7 +271,7 @@ Aynı promptu her hafta çalıştırıyorsanız (örn. haftalık satış raporu)
 
 ## Yaygın Hata: Sürekli Yamamak
 
-Bir prompt çalıştığında sürekli kurcalamayın. **Sürekli ince ayar** üretkenliği öldürür. Hazır olan prompt 3 ay sabit kalsın, sonra ihtiyaca göre revize edin.
+Çalışan promptu sürekli kurcalamayın; sürekli ince ayar zaman yer. Hazır prompt 3 ay sabit kalsın, sonra ihtiyaca göre revize edin.
 
 ## İterasyon Disiplini: Kişisel Sistem
 
@@ -283,7 +283,7 @@ Kendi prompt yönetiminizi kurun:
 4. **Aylık gözden geçirin**: hangileri çalışıyor, hangileri iyileştirilmeli
 5. **Çeyreklik temizlik**: kullanılmayanları silin, eskileri güncelleyin
 
-Bu disiplin uzun vadede **AI okuryazarlığınızı** ciddi şekilde artırır. Bunu kurum çapında uygulamak için [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfasında çerçeve var.
+Bu disiplin AI okuryazarlığınızı zamanla geliştirir. Kurum çapında uygulamak isterseniz [Şirket içi politika](/wiki/temeller/sirket-ici-politika/) sayfasında çerçeve var.
 
 ## Hızlı Test Checklist
 

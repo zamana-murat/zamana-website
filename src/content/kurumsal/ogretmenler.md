@@ -18,7 +18,7 @@ related:
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
   - { label: "Bireysel program", href: "/programlar/bireysel/" }
 order: 140
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -36,7 +36,7 @@ Sayfanın arkasındaki program **Claude for Teachers**. ABD'de doğrulanmış K-
 
 ## 18 yaş kuralı: öğrenciler Claude kullanamaz
 
-Bu, Türk okulları için en önemli satır. Anthropic'in kullanım koşulları her kullanıcının **en az 18 yaşında** olmasını şart koşuyor. ABD'deki öğretmen programı da "yalnız öğretmenler içindir, öğrenci hesabı yoktur" diyor. Sonuç:
+Anthropic'in kullanım koşulları her kullanıcının **en az 18 yaşında** olmasını şart koşuyor. ABD'deki öğretmen programı da "yalnız öğretmenler içindir, öğrenci hesabı yoktur" diyor. Sonuç:
 
 - Ortaokul ve lise öğrencilerine Claude hesabı açtırmayın, sınıfta öğrencinin kendi başına Claude kullandığı bir etkinlik planlamayın.
 - Claude öğretmenin hazırlık aracıdır. Öğrenci, Claude'un ürettiğini öğretmenin kontrol edip dağıttığı materyal olarak görür.

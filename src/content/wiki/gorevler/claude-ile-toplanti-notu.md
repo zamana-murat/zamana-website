@@ -7,11 +7,10 @@ tags:
   - toplanti
   - ozet
   - aksiyon
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude toplantı notu için en iyi, elinizde bir transkript ya da dağınık kendi notlarınız olduğunda çalışır.** Metni sohbete yapıştırırsınız ya da dosya olarak yüklersiniz; Claude özet, alınan kararlar, açık sorular ve sorumlusu ile tarihi olan bir aksiyon listesi çıkarır. Önemli ayrım şu: transkripti Teams, Google Meet, Zoom gibi araçlar ya da kendi notlarınız sağlar; Claude'un yüklenebilir dosya türleri arasında ses kaydı yoktur ve Teams içinde resmi bir Claude uygulaması bulunmuyor. Aksiyonlarda kişi adı ve tarih yoksa Claude bunları uydurabileceği için "belirtilmemiş" yazmasını isteyin. En iyi sonuç için toplantının amacını, katılımcı rollerini ve kısaltmaları promptun başında verin. Katılımcıların kaydedilmesi ve konuşmaların yapay zekaya aktarılması için önceden bilgilendirme yapın. Rehber, özet, aksiyon tablosu, katılımcı e-postası ve dağınık not toparlama için dört hazır Türkçe prompt, tahmini süre kazancı ve sık yapılan hataları içerir; gizli konuşmalar için KVKK notu da var.
-
+**Claude toplantı notu için en iyi, elinizde bir transkript ya da dağınık kendi notlarınız olduğunda çalışır.** Metni sohbete yapıştırırsınız ya da dosya olarak yüklersiniz; Claude özet, alınan kararlar, açık sorular ve sorumlusu ile tarihi olan bir aksiyon listesi çıkarır. Önemli ayrım şu: transkripti Teams, Google Meet, Zoom gibi araçlar ya da kendi notlarınız sağlar; Claude'un yüklenebilir dosya türleri arasında ses kaydı yoktur ve Teams içinde resmi bir Claude uygulaması bulunmuyor. Aksiyonlarda kişi adı ve tarih yoksa Claude bunları uydurabileceği için "belirtilmemiş" yazmasını isteyin. En iyi sonuç için toplantının amacını, katılımcı rollerini ve kısaltmaları promptun başında verin. Katılımcıların kaydedilmesi ve konuşmaların yapay zekaya aktarılması için önceden bilgilendirme yapın.
 ## Adım adım: Toplantı notu nasıl çıkarılır?
 
 1. **Transkripti alın.** Toplantı aracının kendi transkript özelliği, ya da toplantı sırasında tuttuğunuz notlar. Yüklenebilir dosya türleri arasında ses kaydı sayılmıyor.

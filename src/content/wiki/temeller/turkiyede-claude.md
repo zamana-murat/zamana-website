@@ -6,10 +6,10 @@ tags:
   - temeller
   - turkiye
   - satin-alma
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-"Claude'un Türkiye temsilcisi kim?" sorusunun kısa cevabı: **yok**. Ama bu, Claude'u Türkiye'den kullanamayacağınız anlamına gelmiyor. Bu sayfa, Türkiye'deki bir şirket yöneticisinin ya da çalışanının sorduğu soruları sırayla cevaplıyor: erişim, satın alma, fatura, KVKK, kamu kurumları ve destek.
+"Claude'un Türkiye temsilcisi kim?" sorusunun kısa cevabı: **yok**. Claude'u Türkiye'den yine de kullanabilirsiniz. Aşağıda şirket yöneticilerinin ve çalışanların sorduğu soruları sırayla yanıtlıyoruz: erişim, satın alma, fatura, KVKK, kamu kurumları ve destek.
 
 > **Kısa cevap:** Anthropic'in Türkiye'de ofisi ve resmi temsilcisi ya da distribütörü yok (bu sayfanın yazıldığı 6 Ekim 2026 itibarıyla). Türkiye, Anthropic'in desteklenen ülkeler listesinde; claude.ai ve uygulamalar Türkiye'den kullanılabiliyor. Satın alma doğrudan Anthropic'ten yapılır, aracı yoktur. Zamana bir Anthropic Partner'ıdır ama temsilci, distribütör ya da bayi değildir ve abonelik satmaz.
 

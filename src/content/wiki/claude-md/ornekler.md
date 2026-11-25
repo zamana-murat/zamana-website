@@ -7,14 +7,14 @@ tags:
   - ornekler
   - sablon
   - rol-bazli
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-[CLAUDE.md'yi nasıl yazacağınızı](/wiki/claude-md/nasil-yazilir/) öğrendiniz. Bu sayfa farklı rollere göre hazır örnekler sunar. Sizin rolünüze en yakınını kopyalayın, kendi bilgilerinizle doldurun, başlayın.
+[CLAUDE.md'yi nasıl yazacağınızı](/wiki/claude-md/nasil-yazilir/) öğrendiniz. Aşağıda farklı roller için hazır örnekler var: rolünüze en yakınını kopyalayın, kendi bilgilerinizle doldurun ve başlayın.
 
-Örnekler `CLAUDE.md` biçiminde yazıldı ama metnin kendisi araçtan bağımsızdır: aynı içeriği profil talimatına, bir projenin talimatına ya da klasörünüze koyabilirsiniz. Yeri seçmek için sayfa sonundaki "Bu Metni Nereye Koyacağım?" bölümüne bakın.
+Örnekler `CLAUDE.md` biçiminde yazıldı, ama içerik araçtan bağımsızdır: aynı metni profil talimatına, bir projenin talimatına ya da klasörünüze koyabilirsiniz. Yeri seçmek için sayfa sonundaki "Bu Metni Nereye Koyacağım?" bölümüne bakın.
 
-Örnekler **gerçekçi** olsun diye Türkiye'deki şirket yapısı, iş kültürü ve yaygın terminoloji gözetilerek yazılmıştır. Kişi ve şirket adları kurgusaldır. Kendi metninizde iş arkadaşlarınızın adı ve rolünden ötesini (telefon, kişisel bilgi, performans notu) yazmayın; ayrıntı [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) sayfasındaki "Ne Koymamalısınız?" bölümünde.
+Örneklerde Türkiye'deki şirket yapısı, iş kültürü ve yaygın terminoloji kullanıldı; kişi ve şirket adları kurgusaldır. Kendi metninizde iş arkadaşlarınızın adı ve rolünden fazlasını (telefon, kişisel bilgi, performans notu) yazmayın; ayrıntı [CLAUDE.md Nedir?](/wiki/claude-md/nedir/) sayfasındaki "Ne Koymamalısınız?" bölümünde.
 
 ## 1. Satış Yöneticisi (B2B)
 
@@ -368,22 +368,22 @@ lastUpdated: "2026-11-08"
 
 ## Örnekleri Nasıl Kullanırsınız?
 
-1. **En yakın rolü seçin**: birebir aynı olmasa bile en yakın olanı alın
-2. **Kopyalayın**: bir metin dosyasına yapıştırın
-3. **Kişisel bilgilerle değiştirin**: isim, şirket, müşteri, proje adları
-4. **Ton bölümünü kendinize uyarlayın**: en önemli bölümdür
-5. **"Güncel Odak"ı bugünkü gerçekliğinizle doldurun**
-6. **Yerine koyun** (aşağıya bakın) ve yeni bir sohbet ya da oturumda "Talimatımı 3 maddede özetle" deyin
-7. **Claude'la deneyin**: bir-iki gerçek görev verin, gördüğünüz eksiklikleri metne ekleyin
+1. En yakın rolü seçin: birebir aynı olmasa bile en yakın olanı alın
+2. Kopyalayın: bir metin dosyasına yapıştırın
+3. Kişisel bilgilerle değiştirin: isim, şirket, müşteri, proje adları
+4. Ton bölümünü kendinize uyarlayın: en önemli bölümdür
+5. "Güncel Odak"ı bugünkü durumunuzla doldurun
+6. Yerine koyun (aşağıya bakın) ve yeni bir sohbet ya da oturumda "Talimatımı 3 maddede özetle" deyin
+7. Claude'la deneyin: bir-iki gerçek görev verin, gördüğünüz eksiklikleri metne ekleyin
 
-Bu işlem Tahmini tipik aralıkla 20-30 dakika alır. Ve ertesi hafta Claude oturumlarınız niteliksel olarak farklı olur.
+Bu işlem 20-30 dakika alır (Tahmini tipik aralık).
 
 ## Bu Metni Nereye Koyacağım?
 
-- **Tüm sohbetlerde geçerli olsun istiyorsanız:** Settings > General > "Instructions for Claude" (profil talimatı). Uzun örneğin tamamı yerine kısa sürümünü, yani Kim Olduğum, Ton ve Her Zaman / Asla bölümlerini yapıştırın.
-- **Bir iş ya da müşteri için:** o işin [Projects](/wiki/araclar/projects/) talimat alanına. Şirket ve Güncel Odak bölümleri burada daha yerindedir.
-- **Cowork ile bilgisayarınızdaki klasörde çalışıyorsanız:** klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel oturumda okunur; bulut Cowork oturumunda okunduğu belgelenmediği için kritik kuralları profil talimatına da yazın.
-- **Claude Code kullanıyorsanız:** `CLAUDE.md` dosyası olarak proje köküne.
+- Tüm sohbetlerde geçerli olsun istiyorsanız: Settings > General > "Instructions for Claude" (profil talimatı). Uzun örneğin tamamı yerine kısa sürümünü, yani Kim Olduğum, Ton ve Her Zaman / Asla bölümlerini yapıştırın.
+- Bir iş ya da müşteri için: o işin [Projects](/wiki/araclar/projects/) talimat alanına. Şirket ve Güncel Odak bölümleri burada daha yerindedir.
+- Cowork ile bilgisayarınızdaki klasörde çalışıyorsanız: klasörün köküne `CLAUDE.md` adıyla kaydedin. Yerel oturumda okunur; bulut Cowork oturumunda okunduğu belgelenmediği için kritik kuralları profil talimatına da yazın.
+- Claude Code kullanıyorsanız: `CLAUDE.md` dosyası olarak proje köküne.
 
 Kalıcı talimat yerlerinin karşılaştırması: [Talimat ve Hafıza Yerleri](/wiki/claude-md/memory-yonetimi/).
 

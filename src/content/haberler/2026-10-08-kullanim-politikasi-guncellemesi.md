@@ -16,7 +16,7 @@ Anthropic, Kullanım Politikasının (Claude'u hangi amaçlarla kullanabileceği
 
 ## Sizin için ne değişiyor?
 
-Gündelik kullanımda, yani e-posta yazmak, belge özetlemek, analiz yapmak ve kod geliştirmek için Claude kullanıyorsanız, duyuruda sizi doğrudan etkileyecek bir kısıt görünmüyor. Değişiklikler daha çok şu alanlarda çalışanları ilgilendiriyor:
+Gündelik kullanımda, yani e-posta yazmak, belge özetlemek, analiz yapmak ve kod geliştirmek için Claude kullanıyorsanız, duyuruda sizi doğrudan etkileyecek bir kısıt görünmüyor. Değişiklikler en çok şu alanlarda çalışanları etkiliyor:
 
 - **Sahte kampanyalar:** Sahte hesaplar, uydurma haber siteleri ve etki operasyonları artık tek bir başlıkta, "Aldatıcı Kampanya ve Yapay Etkinlik" altında toplandı. Hem siyasi hem ticari aldatmayı kapsıyor. Pazarlama ekipleri için pratik sonuç: sahte yorum ya da sahte profil üretimi açıkça yasak alanda.
 - **Seçimler:** Başlık "Demokratik Süreçleri Baltalamama" oldu. Seçmeni kişiselleştirilmiş biçimde hedeflemeye getirilen genel yasak kalktı. Çok dilli seçmen bilgilendirmesi gibi meşru sivil çalışmalar serbest. Aldatıcı ya da gizliliği ihlal eden hedefleme ise diğer maddelerle hâlâ yasak.

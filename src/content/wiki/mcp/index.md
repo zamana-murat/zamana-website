@@ -7,12 +7,12 @@ tags:
   - plugins
   - connector
   - giris
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
 **Claude, connector'lar olmadan bir sohbet aracıdır. Connector'larla gerçek bir iş meslektaşı gibi davranır.**
 
-Bu bölüm Claude'u Slack, Drive, CRM, proje yönetimi araçlarınıza bağlayan sistemi anlatır.
+Connector'lar Claude'u Slack, Drive, CRM ve proje yönetimi araçlarınıza bağlar.
 
 ## Bu Bölümdeki Sayfalar
 
@@ -70,13 +70,9 @@ Bu bölüm Claude'u Slack, Drive, CRM, proje yönetimi araçlarınıza bağlayan
 
 ## Ana Fikir
 
-Tüm bölümün özeti tek cümleye indirgenirse:
-
 > **Bir connector, Claude'u sizin sohbet arkadaşınızdan çıkarıp gerçek sisteminize erişen bir iş meslektaşına çevirir.**
 
-Satış çalışanı için: "XYZ Gıda ile son durumum ne?" sorusuna Claude connector'suz cevap veremez. Connector'lu Claude (Salesforce + Gmail bağlı) aynı soruyu saniyeler içinde doğru cevaplar: CRM kaydını okur, son yazışmayı tarar, özet üretir.
-
-Bu fark küçük değildir: **Claude deneyiminin tümü değişir**.
+Satış çalışanı için: "XYZ Gıda ile son durumum ne?" sorusuna Claude connector'suz cevap veremez. Connector'lu Claude (Salesforce + Gmail bağlı) aynı soruyu cevaplar: CRM kaydını okur, son yazışmayı tarar, özet üretir.
 
 ## Plugin ve Connector: Kısa Fark
 
@@ -87,13 +83,11 @@ Connector eklemek için Claude'da **Customize > Connectors** bölümünü açıp
 
 ## Pratik Yaklaşım
 
-Bir çalışanın Claude deneyimini **gerçekten dönüştüren şey** connector kurulumudur.
+Bir çalışanın Claude kullanımını en çok değiştiren adım connector kurulumudur.
 
 İlk hafta: Claude uygulaması (masaüstünde Cowork dahil) ve kalıcı talimat (klasörde CLAUDE.md, profil talimatı) kurulur. Çalışan Claude'la konuşmayı öğrenir.
 
-İkinci hafta: rolüne göre **1-2 kritik connector** kurulur (örn. satış için Salesforce + Gmail). "Artık Claude gerçekten çalışma sistemimle konuşuyor" hissi oluşur.
-
-Bu, tek seferlik bir seviye atlayışıdır. Bir kez yaşayan çalışan genelde geri dönmek istemez.
+İkinci hafta: rolüne göre 1-2 connector kurulur (örn. satış için Salesforce + Gmail). Claude bu noktada çalışanın gerçek çalışma sistemine bağlanmış olur.
 
 Hangi rolün hangi connector'a ihtiyaç duyduğu [Bağlantı Listesi](/wiki/mcp/baglanti-listesi/) sayfasındaki rol bazlı önerilerde. Kullandığınız sistem dizinde yoksa (örneğin yerel bir ERP), [Şirket Sistemini Claude'a Bağlamak](/wiki/mcp/sirket-sistemini-baglamak/) sayfasından başlayın.
 

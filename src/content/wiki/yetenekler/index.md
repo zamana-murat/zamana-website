@@ -5,10 +5,10 @@ description: "Claude'un iş yetenekleri: Skills, dosya işleme, Artifacts, görs
 tags:
   - yetenekler
   - giris
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-Claude'un sadece yazı üretmekten çok daha fazlasını yapabildiği yerler. Bu bölüm, bir iş profesyoneline **gerçek zaman kazandıran** on iki yeteneği üç grupta toplar: dört temel, üç ileri ve beş destekleyen yetenek.
+Claude yazı üretmenin yanında dosya okur, kod çalıştırır, araştırma yapar. Bu bölüm, bir iş profesyoneline **gerçek zaman kazandıran** on iki yeteneği üç grupta toplar: dört temel, üç ileri ve beş destekleyen yetenek.
 
 Hepsini birden öğrenmek zorunda değilsiniz. Başlangıçta **Skills, Dosya İşleme ve Artifacts** yeterlidir; diğerleri ihtiyaç ortaya çıktıkça devreye girer.
 
@@ -16,7 +16,7 @@ Hepsini birden öğrenmek zorunda değilsiniz. Başlangıçta **Skills, Dosya İ
 
 ## Temel Dört Yetenek
 
-Bir iş profesyonelinin haftalık işinin çoğunluğu bu dört yetenek üzerine kurulur.
+Bir iş profesyonelinin haftalık işinde en sık bu dört yetenek devreye girer.
 
 <div class="wiki-grid">
 
@@ -148,7 +148,7 @@ Bu bölümü yeni okuyorsanız önerilen sıra:
 8. **[Effort Control](/wiki/yetenekler/effort-control/)** ve **[Claude Design](/wiki/yetenekler/claude-design/)**: İnce ayar ve görsel çıktı. Başlangıç için zorunlu değil.
 9. **[Agents ve Subagents](/wiki/yetenekler/agents-subagents/)** ve **[Computer Use](/wiki/yetenekler/computer-use/)**: Karmaşık görev refleksi ve eski sistemler. Derinlemesine bilinmesi gerekmez, ama tanınmalı.
 
-Tümünü bir haftada okumak gerekmez. **Skills → Dosya İşleme → Artifacts** üçlüsü ilk iki haftada yeter.
+**Skills → Dosya İşleme → Artifacts** üçlüsü ilk iki haftada yeter.
 
 ## Pratik Sıralama
 
@@ -159,7 +159,7 @@ Temel dört yeteneğin ne işe yaradığı:
 - **Artifacts**: raporu açıp tekrar bakılan bir panele çevirmek
 - **Görsel ve Görüntü**: fotoğraf verip veri çıkarmak
 
-Bu dördü oturunca haftalık işlerin büyük kısmı dönüşmüş olur. **Computer Use**, **Agents** ve **Context** belirli durumlarda devreye giren ileri yeteneklerdir; temel dördü oturduktan sonra değer çıkarırsınız.
+**Computer Use**, **Agents** ve **Context** belirli durumlarda devreye giren ileri yeteneklerdir; onlara temel dördü oturduktan sonra geçin.
 
 ## Ürün Tanıtımı ve Wiki Arasındaki Fark
 

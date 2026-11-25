@@ -8,10 +8,10 @@ tags:
   - e-fatura
   - excel
   - kobi
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Kısa cevap: Logo, Mikro ve Paraşüt için Claude'un resmi bir connector'ı yok.** Yani Claude'u bu programlara tek tıkla bağlayamazsınız. Ama bu, Claude'un muhasebe ve fatura işlerinde işe yaramadığı anlamına gelmez: en pratik yol, programdan **dışa aktardığınız dosyayı** Claude'a vermek. Bu sayfa hangi işin hangi yolla yapıldığını, teknik bilgi gerektirmeyen dille anlatır.
+**Kısa cevap: Logo, Mikro ve Paraşüt için Claude'un resmi bir connector'ı yok.** Yani Claude'u bu programlara tek tıkla bağlayamazsınız. Muhasebe ve fatura işlerinde yine de işe yarar: en pratik yol, programdan **dışa aktardığınız dosyayı** Claude'a vermek. Aşağıda her işin hangi yolla yapıldığını teknik bilgi gerektirmeden anlatıyoruz.
 
 Küçük işletme sahibiyseniz önce [KOBİ için Claude](/wiki/departmanlar/kobi/) sayfasına, sonra buraya bakın.
 
@@ -52,7 +52,7 @@ Türkçe programların çıktısında sayı `1.234,56` biçimindedir (nokta binl
 
 ## Excel ile Claude
 
-Excel, muhasebe ile Claude'un buluştuğu yerdir. Üç yol var:
+Excel'le çalışmanın üç yolu var:
 
 1. **Dosyayı yüklemek.** Excel dosyasını sohbete atarsınız, Claude içeriği okur, [kod çalıştırma](/wiki/yetenekler/code-execution/) ile toplama, süzme ve grafik yapabilir ve sonucu yeni bir Excel dosyası olarak verir. En kolay yol bu.
 2. **Excel'in içindeki eklenti.** Claude'un Microsoft 365 için Excel eklentisi genel kullanıma açıktır (ücretli planlarda, Pro, Max, Ultra, Team ve Enterprise); dosyanın içinde çalışır, formül ve tablo önerir. Ayrıntı [Office, Google ve Chrome](/wiki/araclar/office-ve-chrome/) sayfasında. Eklenti için Microsoft 365 aboneliğiniz olması gerekir; kurulumdan önce Excel sürümünüzün destekleyip desteklemediğini kontrol edin.

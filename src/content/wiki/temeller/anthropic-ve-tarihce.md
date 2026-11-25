@@ -6,14 +6,14 @@ tags:
   - temeller
   - anthropic
   - tarihce
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Anthropic, Claude'u yapan şirkettir.** Kurumsal bir aracı sözleşmeye bağlamadan önce arkasındaki şirketi tanımak doğaldır. Bu sayfa Anthropic'i, kuruluşunu, değerlerini ve Claude'un model tarihçesini özetler.
+Anthropic, Claude'u yapan şirkettir. Kurumsal bir aracı sözleşmeye bağlamadan önce arkasındaki şirketi tanımak doğaldır. Aşağıda şirketin kuruluşu, değerleri ve Claude'un model tarihçesi var.
 
 > **Kısa cevap:** Claude'u **Anthropic** yapar, ABD'li bir yapay zekâ şirketidir ve merkezi San Francisco'dadır. **2021'de** kuruldu; kurucuların başında kardeşler **Dario Amodei** (CEO) ve **Daniela Amodei** (Başkan) gelir. İlk Claude **Mart 2023'te** çıktı. "Claude" adının, bilgi kuramının babası **Claude Shannon**'dan geldiği düşünülüyor (Anthropic resmen doğrulamadı).
 
-[Claude Nedir?](/wiki/temeller/claude-nedir/) sayfası ürünün ne olduğunu anlatır; bu sayfa **kim yapıyor, neye değer veriyor** sorularına cevap verir.
+[Claude Nedir?](/wiki/temeller/claude-nedir/) sayfası ürünün ne olduğunu anlatır; burada onu kimin yaptığına ve neye değer verdiğine bakıyoruz.
 
 ## Kuruluş: 2021, OpenAI'den Ayrılış
 
@@ -25,7 +25,7 @@ Anthropic, **2021 yılı başında** kuruldu. Yedi kişilik kurucu ekip OpenAI'd
 
 ## Kurumsal Yapı: Public Benefit Corporation
 
-Anthropic geleneksel bir kâr amaçlı şirket değil. **Public Benefit Corporation (PBC)** olarak yapılandırılmıştır, yani yönetim kurulu yalnızca hissedar getirisini değil, **kamu yararını** da gözetmek zorundadır.
+Anthropic **Public Benefit Corporation (PBC)** olarak yapılandırılmıştır; yani yönetim kurulu yalnızca hissedar getirisini değil, **kamu yararını** da gözetmek zorundadır.
 
 Bunun üzerine **Long-Term Benefit Trust** adlı bir vakıf, Anthropic'in uzun vadeli kararlarını insanlık yararına yönlendirme yetkisine sahiptir. Bu yapı, ticari baskı arttıkça güvenlik tavizini kontrol altında tutmak için tasarlandı.
 
@@ -62,23 +62,22 @@ Anthropic, AI modellerinin yetenek seviyelerini **AI Safety Levels (ASL)** siste
 
 Şirket her seviye için **önceden tanımlanmış güvenlik kontrolleri** uygular. Bir modelin yeteneği bir üst seviyeye geçtiğinde, o seviyenin gerektirdiği güvenlik mekanizmaları kurulmadan model dağıtılmaz.
 
-Bu yaklaşım sektörde nadirdir ve kurumsal alıcılar için **denetlenebilir bir dürüstlük taahhüdüdür**.
+Kurumsal alıcı açısından bu, denetlenebilir bir taahhüttür.
 
 ## 2026 Gelişmeleri
 
-Anthropic'in kurumsal olgunlaşmasını gösteren güncel başlıklar:
+2026'nın başlıca gelişmeleri:
 
 - **Halka arz yolu (SEC S-1):** Anthropic, 1 Haziran 2026'da ABD menkul kıymet düzenleyicisine (SEC) **gizli taslak kayıt beyanı (S-1)** sundu. Bu, ileride halka açılma (IPO) ihtimalinin ilk resmî adımıdır. Kurumsal alıcı için anlamı: şeffaflık ve mali denetim yükümlülüğü artan, kurumsallaşan bir tedarikçi.
-- **Project Glasswing:** Anthropic'in, en yetenekli modelinin erişimini kontrollü bir katılımcı grubuyla sınırladığı program. Mythos 5.1 yalnızca bu katılımcılara davetle açılıyor. Güvenlik tarafındaki ürünler için [Claude Security](/claude/security/) sayfasına bakın.
+- **Project Glasswing:** Anthropic'in, en yetenekli modelinin erişimini kontrollü bir katılımcı grubuyla sınırladığı program. Mythos 5.1 bu programla sunulmuştu; Mythos 5.2 için Anthropic Glasswing'i anmıyor, erişim doğrulama programlarıyla (Cyber Verification, Life Sciences Verification) veriliyor. Güvenlik tarafındaki ürünler için [Claude Security](/claude/security/) sayfasına bakın.
 - **Avrupa yayılımı:** 27 Mayıs 2026'da **Milano ofisinin** açılacağı duyuruldu (Avrupa'da Londra, Dublin, Paris, Zürih ve Münih'ten sonra altıncı ofis). Anthropic'in uluslararası kurumsal varlığı büyüyor.
 - **Ürün tarafı (Haziran-Eylül 2026):** Claude Tag (Slack, 23 Haziran), Cowork'ün web ve mobilde açılması (7 Temmuz), Claude in Chrome'un genel kullanıma açılması (26 Ağustos) ve 16 Eylül'de Cowork ile sohbetin tek Claude'da birleşmesi.
 - **Ürün tarafı (Ekim-Kasım 2026):** Google Dokümanlar, E-Tablolar ve Slaytlar eklentisi (6 Ekim, genel beta), Design, Slides ve Docs'un betadan çıkıp Free dahil tüm planlara açılması (8 Ekim), Enterprise'ta birleşik Cowork ve sohbet arayüzünün genel kullanıma açılması (23 Ekim), Max 20x'in Ultra adını alması (30 Ekim dolayı) ve Enterprise güvenlik merkezi (5 Kasım). Model tarafı için aşağıdaki tabloya bakın.
 
-Bu gelişmeler, "Anthropic geçici bir startup mı, kalıcı bir kurumsal tedarikçi mi?" sorusuna kalıcılık yönünde cevap verir.
 
 ## Claude Model Tarihçesi
 
-Claude'un gelişimi hızlı oldu. Ana noktalar:
+Claude'un model tarihçesinde ana noktalar:
 
 | Tarih | Model | Önemi |
 |---|---|---|
@@ -96,15 +95,16 @@ Claude'un gelişimi hızlı oldu. Ana noktalar:
 | Haziran 2026 | **Claude Fable 5** ve **Mythos 5** (9 Haziran) | Yeni üst model katmanı. Erişim 12 Haziran ile 1 Temmuz arası askıya alındı, 1 Temmuz'da geri geldi |
 | Haziran 2026 | **Claude Sonnet 5** (30 Haziran) | Yeni kuşak Sonnet |
 | Temmuz 2026 | **Claude Opus 5** (24 Temmuz) | Yeni kuşak Opus |
-| Eylül 2026 | **Claude Fable 5.1** (1 Eylül) | En güçlü genel model, 1M bağlam. Mythos 5.1 aynı yetenekte ama yalnızca Project Glasswing katılımcılarına davetle |
+| Eylül 2026 | **Claude Fable 5.1** (1 Eylül) | En güçlü genel model, 1M bağlam. Mythos 5.1 aynı yetenekte ama yalnızca Project Glasswing katılımcılarına davetle; artık legacy |
 | Eylül 2026 | **Claude Opus 5.5** (22 Eylül) | Fable 5.1 düzeyinde performans, Opus 5'ten yaklaşık %40 ucuz |
 | Eylül 2026 | **Claude Sonnet 5.5** (28 Eylül) | Günlük iş modeli; Sonnet 5'ten yaklaşık %30 hızlı |
 | Ekim 2026 | **Claude Haiku 5.5** (7 Ekim) | En hızlı ve en ucuz model, 1M bağlam; aynı gün Max ve Team planlarına aylık API kredisi geldi |
 | Ekim 2026 (30 Ekim dolayı) | **Ultra planı** | Max 20x yeni adıyla Ultra, Max 5x yeni adıyla Max oldu; fiyatlar aynı |
+| Kasım 2026 | **Claude Fable 5.2** ve **Mythos 5.2** (9 Kasım) | Fable 5.2 en güçlü genel model ($8 / $40); Mythos 5.2 yalnızca doğrulama programlarındaki kuruluşlara |
 
 Tabloda yalnızca dönüm noktaları var; 4.5 ve 4.6 sürümleri (Opus 4.5, Sonnet 4.5, Opus 4.6 dahil) arada çıktı, ayrıntıları ve tarihleri Anthropic'in model sayfasında bulabilirsiniz.
 
-Güncel dört model (Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5) ve hangisini ne zaman seçeceğiniz için [Modeller](/wiki/temeller/modeller/) sayfasına, plan ve görev bazlı seçim için [Claude modelleri](/claude/modeller/) tanıtımına bakın.
+Güncel dört model (Fable 5.2, Opus 5.5, Sonnet 5.5, Haiku 5.5) ve hangisini ne zaman seçeceğiniz için [Modeller](/wiki/temeller/modeller/) sayfasına, plan ve görev bazlı seçim için [Claude modelleri](/claude/modeller/) tanıtımına bakın.
 
 ## "Claude" İsmi Nereden?
 
@@ -128,10 +128,10 @@ Resmî bir açıklama yok; yaygın kanı bilgi kuramının kurucusu Claude Shann
 
 Bilinen çizgiler:
 
-- **Araştırmacı ağırlıklı.** Şirketin önemli bir kısmı doğrudan AI güvenliği ve hizalama (alignment) araştırması yapıyor
-- **Şeffaflık önceliği.** Model sınırları, [yetersizlikleri](/wiki/temeller/sinirlamalar/), hata türleri Anthropic tarafından açıkça belgeleniyor
-- **Temkinli yayın.** Yeni modeller önce güvenlik değerlendirmesinden geçer; Fable 5.1 ile aynı yetenekteki Mythos 5.1 genel kullanıma açılmadı, yalnızca Project Glasswing katılımcılarına davetle veriliyor
-- **CEO erişilebilir.** Dario Amodei düzenli olarak teknik yazılar yazıyor, sektörün önemli sorularına kamuoyu önünde cevap veriyor
+- Araştırmacı ağırlıklı. Şirkette doğrudan AI güvenliği ve hizalama (alignment) araştırması yapan ekipler var
+- Şeffaflık önceliği. Model sınırları, [yetersizlikleri](/wiki/temeller/sinirlamalar/), hata türleri Anthropic tarafından açıkça belgeleniyor
+- Temkinli yayın. Yeni modeller önce güvenlik değerlendirmesinden geçer; Mythos 5.2 genel kullanıma açılmadı, yalnızca doğrulama programlarından geçen kuruluşlara veriliyor
+- CEO erişilebilir. Dario Amodei düzenli olarak teknik yazılar yazıyor, sektörün önemli sorularına kamuoyu önünde cevap veriyor
 
 ## Türkiye'de Anthropic
 
@@ -142,8 +142,6 @@ Yerel destek olmadığı için ekiplerin Claude'a geçişi çoğunlukla kendi ba
 [Türkçe Performansı](/wiki/temeller/turkce-performansi/) sayfası dil tarafının kalitesini, [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfası Türkiye'deki yasal duruma uyum tarafını anlatır. Erişim, satın alma, fatura ve destek sorularının tek sayfalık cevabı için [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/) sayfasına bakın.
 
 ## Anthropic Neden Önemli?
-
-Birkaç bağlamda:
 
 **Pazar gücü.** ChatGPT'nin tek alternatifi değil; OpenAI ve Google ile birlikte üst sıradaki üç oyuncudan biri. Tek tedarikçiye kilitlenmemek için kurumların portföylerinde Claude bulundurmasının stratejik gerekçesi var.
 

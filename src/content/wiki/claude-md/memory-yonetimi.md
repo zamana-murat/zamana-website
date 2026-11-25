@@ -8,12 +8,10 @@ tags:
   - hafiza
   - kalici-talimat
   - bilgi-tabani
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude'a "beni bir kez tanı" demenin tek bir yolu yoktur.** Her konuşma kendi bağlamıyla başlar; neyin bir sonraki konuşmaya taşınacağı, talimatı **nereye yazdığınıza** bağlıdır. Bu sayfa, Claude'un kalıcı talimat ve hafıza yerlerinin hepsini tek tabloda toplar: hangisi nerede ayarlanır, nerede geçerli, kim yönetir.
-
-Bölümün diğer sayfaları buraya bağlanır. Prompting sayfalarında geçen "kalıcı talimat yerlerinin karşılaştırması" da bu sayfadaki tablodur.
+Claude'a "beni bir kez tanı" demenin birden fazla yolu var. Her konuşma kendi bağlamıyla başlar; neyin sonraki konuşmaya taşınacağı talimatı nereye yazdığınıza bağlıdır. Aşağıdaki tabloda kalıcı talimat ve hafıza yerlerinin hepsi var: hangisi nerede ayarlanır, nerede geçerli, kim yönetir. Prompting sayfalarında geçen "kalıcı talimat yerlerinin karşılaştırması" da bu tablodur.
 
 ## Hangisini Kullanayım?
 
@@ -29,7 +27,7 @@ Bölümün diğer sayfaları buraya bağlanır. Prompting sayfalarında geçen "
 | Şirketin tamamı için ortak kural | **Takım kural seti**: [Takım CLAUDE.md](/wiki/claude-md/takim-claude-md/) |
 | Terminalde kod yazıyorsunuz (Claude Code) | Aşağıdaki [Geliştiriciler için](#geliştiriciler-için-claude-codeda-claudemd) kutusu |
 
-İki kural işinizi görür. Birincisi: **Claude'a bir şeyi ikinci kez söylediğinizde, o bilgiyi yukarıdaki yerlerden birine yazın.** İkincisi: **sohbet (claude.ai) CLAUDE.md dosyasını okumaz**; sohbette aynı işi profil talimatı ve proje görür.
+İki kural işinizi görür. Birincisi: Claude'a bir şeyi ikinci kez söylediğinizde o bilgiyi yukarıdaki yerlerden birine yazın. İkincisi: sohbet (claude.ai) CLAUDE.md dosyasını okumaz; sohbette aynı işi profil talimatı ve proje yapar.
 
 ## Kalıcı Talimat ve Hafıza Yerleri
 
@@ -47,39 +45,39 @@ Bölümün diğer sayfaları buraya bağlanır. Prompting sayfalarında geçen "
 | **Oturum içi bağlam** | Konuşmanın kendisi | Yalnız o konuşmada | Siz | Yüklediğiniz dosyalar ve söyledikleriniz; konuşma bitince kaybolur |
 | **`memory/` klasörü** (ileri kurulum) | Çalışma klasörünüzde kendi açtığınız dosyalar | Klasörle çalışılan oturumlarda, CLAUDE.md'den "bak" denirse | Siz, Claude'un yardımıyla | İsteğe bağlıdır; aşağıda anlatılıyor |
 
-> **Not:** "Sohbette neden okunmadı?" sorusunun cevabı çoğunlukla bu tablodadır: CLAUDE.md dosyası, klasörle çalışan ortamlar içindir. Sohbette aynı bilgiyi profil talimatına ya da projeye koyarsınız. Tanılama için [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasındaki sırayı izleyin.
+> Not: "Sohbette neden okunmadı?" sorusunun cevabı çoğunlukla bu tablodadır: CLAUDE.md dosyası, klasörle çalışan ortamlar içindir. Sohbette aynı bilgiyi profil talimatına ya da projeye koyarsınız. Tanılama için [Hata Ayıklama](/wiki/claude-md/hata-ayiklama/) sayfasındaki sırayı izleyin.
 
 ## Temel Fikir: Bir Kez Yazın, Kullandığınız Yere Koyun
 
 Claude'u her gece geceyarısı hafızası silinen harika bir meslektaş olarak düşünün. Sizin işiniz, geceyarısından önce önemli şeyleri yazmaktır. Yerleşik hafıza bu meslektaşa küçük bir otomatik not defteri verir, ama neyi yazacağına o karar verir; yukarıdaki diğer yerler ise sizin yazdığınız notlardır.
 
-Yöntem her yerde aynıdır. [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) sayfasındaki beş bölümlü "kendinizi tanıtın" metnini (kim olduğunuz, şirket, ton, her zaman/asla, güncel odak) **bir kez** yazarsınız. Sonra aynı metni kullandığınız yere koyarsınız:
+Yöntem her yerde aynıdır. [Nasıl Yazılır?](/wiki/claude-md/nasil-yazilir/) sayfasındaki beş bölümlü "kendinizi tanıtın" metnini (kim olduğunuz, şirket, ton, her zaman/asla, güncel odak) bir kez yazarsınız. Sonra aynı metni kullandığınız yere koyarsınız:
 
 - Sohbetle çalışıyorsanız: profil talimatına (ve bir işe özgü kısmı projeye)
 - Masaüstünde klasörle çalışıyorsanız (Cowork): klasörün içine `CLAUDE.md` olarak
 - Claude Code kullanıyorsanız: aşağıdaki kutudaki dosyalara
 
-Metin değişmez, yalnızca durduğu yer araca göre değişir. Birden fazla yer kullanıyorsanız ana metni tek bir dosyada tutun, öbürlerine kopyalayın; sürüm numarasını başlığa yazın ki hangisinin güncel olduğunu bilin.
+Metin aynı kalır, yalnız durduğu yer araca göre değişir. Birden fazla yer kullanıyorsanız ana metni tek bir dosyada tutun, öbürlerine kopyalayın; sürüm numarasını başlığa yazın ki hangisinin güncel olduğunu bilin.
 
 ## Güvenli Çizgi
 
-> **Kritik kuralı tek bir yere emanet etmeyin.** Cowork'te CLAUDE.md'nin okunması için en sağlam dayanak dolaylıdır (Cowork, Claude Code motorunda çalışır); Cowork yardım sayfaları dosyayı adıyla anmaz. Bu yüzden üç adım:
+> Kritik kuralı tek bir yere emanet etmeyin. Cowork'te CLAUDE.md'nin okunması için en sağlam dayanak dolaylıdır (Cowork, Claude Code motorunda çalışır); Cowork yardım sayfaları dosyayı adıyla anmaz. Bu yüzden üç adım izleyin:
 >
-> 1. **CLAUDE.md'yi çalıştığınız klasörün içine koyun.**
-> 2. **İlk mesajda test edin:** "Talimatımı 3 maddede özetle." Claude doğru özeti veriyorsa dosya okunuyor demektir. Vermiyorsa yanlış klasördesiniz, dosya adı hatalı ya da oturum dosyayı görmüyor olabilir.
-> 3. **Kritik kuralların kısa sürümünü profil talimatına da yazın** (örneğin "Her e-postayı önce taslak göster, gönderme"). Dosya okunmasa bile bu kurallar işler.
+> 1. CLAUDE.md'yi çalıştığınız klasörün içine koyun.
+> 2. İlk mesajda test edin: "Talimatımı 3 maddede özetle." Claude doğru özeti veriyorsa dosya okunuyor demektir. Vermiyorsa yanlış klasördesiniz, dosya adı hatalı ya da oturum dosyayı görmüyor olabilir.
+> 3. Kritik kuralların kısa sürümünü profil talimatına da yazın (örneğin "Her e-postayı önce taslak göster, gönderme"). Dosya okunmasa bile bu kurallar işler.
 
 ## Yerler Tek Tek
 
 ### Profil Talimatı
 
-En geniş ve en kolay yerdir. Hangi uygulamada olursanız olun sohbetlerinizde geçerli olur. Dil, ton ve değişmez kurallar için uygundur. İş bağlamının tamamını buraya yığmayın: her sohbette yüklendiği için müşteriye veya konuya özgü ayrıntıyı projeye bırakın.
+En geniş ve en kolay yerdir; hangi uygulamada olursanız olun sohbetlerinizde geçerlidir. Dil, ton ve değişmez kurallar için uygundur. İş bağlamının tamamını buraya yığmayın: her sohbette yüklendiği için müşteriye veya konuya özgü ayrıntıyı projeye bırakın.
 
 ### Proje
 
 Bir projeye girdiğinizde proje talimatı ve dosyaları o projedeki her sohbette hazırdır. "XYZ Gıda ile 3 yıldır çalışıyoruz, karar verici Ahmet Bey, bütçe dar" gibi bilgiler profil talimatına değil, o müşterinin projesine aittir. Profil talimatı genel tarzınızı, proje ise o işin ayrıntısını taşır; Claude ikisini birleştirir.
 
-> **Güncel durum:** Projects 17 Eylül 2026'da yeniden tasarlandı (beta, kademeli açılıyor). Yeni yapıda proje, paralel çalışan konuşmalardan ve bir koordinatörden oluşuyor; her konuşma projenin **ortak hafızasına** katkı yapıyor. Pro, Max ve Ultra'daki mevcut projeler olduğu gibi çalışmaya devam ediyor. Ayrıntı: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
+> Güncel durum: Projects 17 Eylül 2026'da yeniden tasarlandı (beta, kademeli açılıyor). Yeni yapıda proje, paralel çalışan konuşmalardan ve bir koordinatörden oluşuyor; her konuşma projenin ortak hafızasına katkı yapıyor. Pro, Max ve Ultra'daki mevcut projeler olduğu gibi çalışmaya devam ediyor. Ayrıntı: [Projects yeniden tasarlandı](/haberler/2026-09-17-projects-yeniden-tasarlandi/).
 
 Klasik projede bilgi tabanını siz güncellersiniz. Her oturumun sonunda Claude'a "bugün neyi öğrendik, özetle" deyip çıkan özeti proje talimatına eklemeye alışın.
 
@@ -89,14 +87,14 @@ Masaüstünde Cowork ile bir klasörle çalışıyorsanız, klasörün içindeki
 
 ### Yerleşik Hafıza
 
-Siz yazmazsınız; Claude konuşmalardan öğrendiklerini kategorili girdiler halinde biriktirir. Hafıza 10 Temmuz 2026'da kategorili girdilere dönüştü ve 25 Ağustos 2026'dan beri sohbet ve bulut Cowork görevleri arasında ortaktır. Pratik ayrım şudur: **kesin ve değişmez kuralı** profil talimatına ya da klasördeki CLAUDE.md'ye yazın, çünkü onu siz görür ve siz düzenlersiniz. Yerleşik hafıza "Claude beni zamanla tanısın" kolaylığıdır; kritik talimatı ona emanet etmeyin.
+Siz yazmazsınız; Claude konuşmalardan öğrendiklerini kategorili girdiler halinde biriktirir. Hafıza 10 Temmuz 2026'da kategorili girdilere dönüştü ve 25 Ağustos 2026'dan beri sohbet ve bulut Cowork görevleri arasında ortaktır. Pratik ayrım şu: kesin ve değişmez kuralı profil talimatına ya da klasördeki CLAUDE.md'ye yazın, çünkü onu siz görür ve siz düzenlersiniz. Yerleşik hafıza "Claude beni zamanla tanısın" kolaylığıdır; kritik talimatı ona emanet etmeyin.
 
 ### `memory/` Klasörü (İleri Kurulum)
 
-Klasörle çalışan ileri kullanıcılar için isteğe bağlı bir yapıdır. Bir bellek yönetimi skill'iyle ya da klasörü ve dosyaları kendiniz açarak çalışır. Skill kurulu değilse CLAUDE.md'ye "uzun vadeli bilgi için `memory/` klasörüne bak" satırı eklemeniz yeterlidir. İş bölümü şöyledir:
+Klasörle çalışan ileri kullanıcılar için isteğe bağlı bir yapıdır. Bir bellek yönetimi skill'iyle ya da klasörü ve dosyaları kendiniz açarak kurarsınız. Skill kurulu değilse CLAUDE.md'ye "uzun vadeli bilgi için `memory/` klasörüne bak" satırını eklemeniz yeterli. İş bölümü şöyle:
 
-- **CLAUDE.md:** çalışan hafıza (değişmeyen gerçekler, güncel odak)
-- **`memory/` klasörü:** uzun vadeli bilgi tabanı (organizasyon şeması, ürün kataloğu, müşteri profilleri, terminoloji)
+- CLAUDE.md: çalışan hafıza (değişmeyen gerçekler, güncel odak)
+- `memory/` klasörü: uzun vadeli bilgi tabanı (organizasyon şeması, ürün kataloğu, müşteri profilleri, terminoloji)
 
 ```
 memory/
@@ -107,7 +105,7 @@ memory/
 └── active-projects.md    # Aktif projeler, durum, son tarihler
 ```
 
-Claude klasöre yazma izni olan bir oturumda bu dosyaları kendisi güncelleyebilir: "bugün öğrendiğin şeyi doğru dosyaya kaydet" dersiniz. Bu yapıya zaman zaman "şirket beyni" denir. Sohbet kullanıcısı için gerekli değildir: orada proje dosyaları aynı işi görür.
+Claude klasöre yazma izni olan bir oturumda bu dosyaları kendisi güncelleyebilir: "bugün öğrendiğin şeyi doğru dosyaya kaydet" dersiniz. Bu yapıya "şirket beyni" de denir. Yalnız sohbet kullanıyorsanız gerekmez, orada proje dosyaları aynı işi yapar.
 
 ### Oturum İçi Bağlam
 
@@ -134,8 +132,6 @@ Sonuç: Claude ilk dakikadan itibaren Tolga'nın, XYZ Gıda'nın ve Delta Endüs
 **Hafta 3-4:** İlk projenizi oluşturun; haftada en az bir kez döndüğünüz bir müşteri ya da konu seçin.
 
 **Ay 2-3:** İhtiyaç hissederseniz `memory/` klasörünü kurun.
-
-Aceleniz yoksa her seviye doğal olarak gelir.
 
 ## Geliştiriciler için: Claude Code'da CLAUDE.md
 

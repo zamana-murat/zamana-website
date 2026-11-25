@@ -16,7 +16,7 @@ MCP (Model Context Protocol), Claude'un harici araçlara bağlanma standardıdı
 
 ## Sizin için ne değişiyor?
 
-Bir bağlayıcı eklediğinizde artık yalnızca araç listesi gelmiyor, o aracı doğru kullanmayı öğreten skill'ler (Claude'a verilen yeniden kullanılabilir talimat paketi) de gelebiliyor. Claude bu skill'i yalnızca gerektiğinde yüklüyor, böylece bağlam alanı boşa harcanmıyor. Sunucu güncellenince skill de güncelleniyor, sizin ek bir kurulum yapmanız gerekmiyor.
+Bir bağlayıcı eklediğinizde araç listesine ek olarak, o aracı doğru kullanmayı öğreten skill'ler (Claude'a verilen yeniden kullanılabilir talimat paketi) de gelebiliyor. Claude bu skill'i yalnızca gerektiğinde yüklüyor, böylece bağlam alanı boşa harcanmıyor. Sunucu güncellenince skill de güncelleniyor, sizin ek bir kurulum yapmanız gerekmiyor.
 
 Dört özelliğin gündelik karşılığı:
 
@@ -37,6 +37,6 @@ Bağlayıcı dizininden bir aracı bağlamanız yeterli, özellikler sunucu tara
 - Tasks ve Elicitation: genel kullanımda, Pro, Max ve Ultra'da var, Team ve Enterprise'a açılıyor.
 - File Uploads: Pro, Max, Ultra ve uygun Team ile Enterprise planlarında yakında.
 - Kaynak, bir kullanım limiti belirtmiyor. Araç araması (tool search) özelliğinin çok sunuculu kurulumlarda araç tanımlarının bağlam kullanımını yüzde 85'ten fazla azaltabildiğini söylüyor.
-- Temel bilgi için [MCP nedir](/wiki/mcp/nedir) ve [MCP güvenliği](/wiki/mcp/guvenlik) sayfalarına bakın.
+- Temel bilgi için [MCP nedir](/wiki/mcp/nedir/) ve [MCP güvenliği](/wiki/mcp/guvenlik/) sayfalarına bakın.
 
 *Kaynak: [MCP servers can now ship skills, run tasks, and more with Claude](https://claude.com/resources/articles/skills-over-mcp-tasks-and-more), Anthropic. Bu yazı Zamana tarafından Türkçeye uyarlanmıştır.*

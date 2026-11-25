@@ -7,14 +7,14 @@ tags:
   - claude
   - chatgpt
   - karsilastirma
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-"Claude mu ChatGPT mi?" sorusu en çok sorulan sorulardan biridir. Kısa ve dürüst cevap şu:
+"Claude mu ChatGPT mi?" sorusu en çok sorulan sorulardan biridir. Kısa ve dürüst cevap:
 
-> **İkisi de iyi. İkisi de büyük dil modeli. İkisi de bir iş profesyoneline ciddi değer katar. Ama ikisi birbirinin yerine geçmez, farklı işlerde farklı güçleri vardır.**
+> **İkisi de büyük dil modeli ve ikisi de bir iş profesyoneline ciddi değer katar. Birbirinin yerine geçmezler: farklı işlerde farklı güçleri var.**
 
-Bu sayfa, marketing sloganlarının ötesine geçerek iki sistemi gerçek iş kullanımı ekseninde karşılaştırır. "Hangisi daha iyi?" sorusu yanlış sorudur. Doğru soru: **sizin işiniz için hangisi doğru seçim?**
+Aşağıda iki sistemi pazarlama sloganlarına göre değil, gerçek iş kullanımına göre karşılaştırıyoruz. "Hangisi daha iyi?" diye sormak yerine şunu sorun: sizin işiniz için hangisi doğru seçim?
 
 ## Ortak DNA
 
@@ -29,7 +29,7 @@ Karşılaştırmanın anlamlı olduğu yer, bu ortak zeminin üstündeki farklar
 
 ## 1. Tasarım Felsefesi
 
-Burası çoğu karşılaştırmanın atladığı, ama iş kullanımında en önemli olan eksen.
+Çoğu karşılaştırma bu ekseni atlar, ama iş kullanımında en önemlisi budur.
 
 **OpenAI (ChatGPT)**: "Yapay genel zekayı (AGI) insanlığa faydalı olacak şekilde geliştirmek." Ürün hızı ve yetenek ön planda.
 
@@ -37,11 +37,11 @@ Burası çoğu karşılaştırmanın atladığı, ama iş kullanımında en öne
 
 Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kesin bilgim yok" veya "bu varsayıma dayalı bir cevap" gibi uyarıları doğal olarak verir. ChatGPT de bunu yapar. Fark bir derece farkıdır ve model sürümüne ve talimatınıza göre değişir; Anthropic bu davranışı özellikle hedefliyor.
 
-**Neden önemli?** Finans, hukuk, İK gibi departmanlarda yanılgıyla ilerleyen bir yapay zeka gerçek hasar verebilir. Sözleşme taslağında yanlış ama emin bir cümle, pahalı bir kararda gözden kaçabilir. Claude'un bu konudaki tasarım yaklaşımı kurumsal kullanımda ciddi bir avantajdır.
+**Neden önemli?** Finans, hukuk, İK gibi departmanlarda yanılgıyla ilerleyen bir yapay zeka gerçek hasar verebilir. Sözleşme taslağında yanlış ama emin bir cümle, pahalı bir kararda gözden kaçabilir. Claude'un bu konudaki tasarım yaklaşımı kurumsal kullanımda avantajdır.
 
 ## 2. Uzun Belge İşleme
 
-**Claude'un güçlü olduğu alanlardan biri, ama fark eskisi kadar büyük değil.**
+Claude'un güçlü olduğu alanlardan biri, ama fark eskisi kadar büyük değil.
 
 - Claude'un güncel modellerinde (Fable 5.1, Opus 5.5, Sonnet 5.5) bağlam penceresi (context window) tüm ücretli planlarda **1.000.000 token**'dır; plana göre fark yoktur. Bu, 150 sayfalık bir raporu tek oturumda okuyup tartışabilmek demektir.
 - OpenAI'nin güncel GPT-6 ailesi de API'de 1,05 milyon token bağlam sunuyor (Ekim 2026 itibarıyla). ChatGPT uygulamasında plana göre bağlam penceresini doğrulayamadık, güncel değer için OpenAI'nin sayfasına bakın. Pencere büyüklüğü artık belirleyici değil; asıl fark uzun belgede tutarlılık. Deneyimimizde Claude uzun belgelerde daha tutarlı özet çıkarıyor, ama bu sürümden sürüme değişir, kendi belgenizle deneyin.
@@ -68,7 +68,7 @@ Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kes
 | Proje alanları | Projects (claude.ai, 17 Eylül 2026'da yeniden tasarlandı) | Projects (ChatGPT) |
 | Zamanlanmış ve uzaktan görev | Scheduled Tasks; telefondan Cowork'e görev atama (Pro, Max, Ultra ve Team'de otomatik açık; eski Dispatch yeni kullanıcıya kapalı) | Zamanlanmış görevler |
 
-**Önemli fark:** Claude'un kalıcı talimatları düz metindir: profil talimatını ayarlardan, Cowork klasörünüzdeki CLAUDE.md dosyasını bir editörle düzenlersiniz (sıradan sohbet CLAUDE.md okumaz, orada profil ve proje talimatı geçerlidir). ChatGPT de kaydettiklerini gösterir, ama onun hafızası proje klasöründe yaşayan, ekiple paylaşılıp sürüm kontrolüne alınabilen bir dosya değildir. Kurumsal kullanımda **şeffaflık önemlidir**, çalışanın Claude'a ne öğrettiği görülebilir olmalı.
+**Önemli fark:** Claude'un kalıcı talimatları düz metindir: profil talimatını ayarlardan, Cowork klasörünüzdeki CLAUDE.md dosyasını bir editörle düzenlersiniz (sıradan sohbet CLAUDE.md okumaz, orada profil ve proje talimatı geçerlidir). ChatGPT de kaydettiklerini gösterir, ama onun hafızası proje klasöründe yaşayan, ekiple paylaşılıp sürüm kontrolüne alınabilen bir dosya değildir. Kurumsal kullanımda şeffaflık önemlidir: çalışanın Claude'a ne öğrettiği görülebilir olmalı.
 
 ## 5. Türkçe Kalitesi
 
@@ -82,7 +82,7 @@ Pratikte fark şu: Claude, emin olmadığında size bunu söyler. "Bu konuda kes
 
 Bireysel kullanıcı planları benzer:
 
-- **Claude Pro:** 20 USD/ay (Max ve Ultra kademeleri dahil tüm Claude fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında); Sonnet 5.5 ve Opus 5.5 plana dahil, Fable 5.1 yalnızca ek kullanım kredisiyle
+- **Claude Pro:** 20 USD/ay (Max ve Ultra kademeleri dahil tüm Claude fiyatları [Planlar](/wiki/temeller/planlar/) sayfasında); Sonnet 5.5 ve Opus 5.5 plana dahil, Fable Pro'da yalnızca ek kullanım kredisiyle (Max ve Ultra'da haftalık limitin en fazla %50'si plana dahil)
 - **ChatGPT Plus:** 20 USD/ay, benzer kullanım. ChatGPT'de ayrıca Go (8 USD/ay) ve üç kademeli Pro (100, 200 ve 500 USD/ay) planları var
 
 Kurumsal tarafta Claude Team ve Enterprise fiyatları ile kullanım modeli [Planlar](/wiki/temeller/planlar/) sayfasında. ChatGPT Business kullanıcı başına 20 USD/ay (yıllık faturalı, en az 2 kullanıcı); Enterprise özel fiyatlıdır. Rakip fiyatları Ekim 2026 itibarıyla geçerlidir ve hızlı değişir, güncel fiyat için resmi sayfalara bakın.
@@ -91,12 +91,12 @@ Kurumsal tarafta Claude Team ve Enterprise fiyatları ile kullanım modeli [Plan
 
 ## Türk Kurumsal Kullanımı için Tipik Tercih
 
-Birçok orta ölçekli Türk şirketi Claude'u tercih ediyor. Sebepleri:
+Claude'u tercih eden Türk şirketlerinin gerekçeleri tipik olarak şunlar:
 
-1. **Kurumsal güven.** "Dürüst" tasarım felsefesi, finans ve hukuk bölümlerinde kritik hatalardan korur.
-2. **Açık kalıcı talimat.** Çalışanın yapay zekaya ne öğrettiği (profil/proje talimatı, Cowork klasöründeki CLAUDE.md) düz metin olarak görülür. Kurumsal şeffaflık için bu tek başına önemli bir farktır.
-3. **Cowork + Skills + MCP.** İş akışı odaklı ekosistem, tek bir oturumda "belgeyi oku → raporu yaz → Slack'te paylaş" zincirini akıcı kurar.
-4. **Uzun belge performansı.** Türk iş dünyasında uzun sözleşmeler, tender dosyaları, denetim raporları sıradan. Claude bu tip belgelerde güçlü bir seçenektir.
+1. Kurumsal güven. "Dürüst" tasarım felsefesi, finans ve hukuk bölümlerinde kritik hatalardan korur.
+2. Açık kalıcı talimat. Çalışanın yapay zekaya ne öğrettiği (profil/proje talimatı, Cowork klasöründeki CLAUDE.md) düz metin olarak görülür. Kurumsal şeffaflık için bu tek başına önemli bir farktır.
+3. Cowork + Skills + MCP. İş akışı odaklı ekosistem, tek bir oturumda "belgeyi oku → raporu yaz → Slack'te paylaş" zincirini akıcı kurar.
+4. Uzun belge performansı. Türk iş dünyasında uzun sözleşmeler, tender dosyaları, denetim raporları sıradan. Claude bu tip belgelerde güçlü bir seçenektir.
 
 **Bu, "ChatGPT kötü" demek değildir.** ChatGPT hâlâ birçok görevde harika iş çıkarır. Yukarıdaki maddeler bir tercih gerekçesidir, mutlak doğru değildir.
 
@@ -129,7 +129,7 @@ Mistral AI, Paris merkezli bir Avrupa yapay zeka şirketi. AB bağımsızlığı
 
 ## Ya Meta Llama (Açık Kaynak)?
 
-Meta'nın Llama model ailesi, **açık kaynak**. Bu onu benzersiz yapar.
+Meta'nın Llama model ailesi **açık kaynaktır**.
 
 **Güçlü yönleri:**
 
@@ -179,7 +179,7 @@ Tüm alternatifleri tek bakışta:
 
 ## Türkçe Resmi Yazışma: Kafa Kafaya Örnek
 
-"Claude ve ChatGPT Türkçeyi nasıl yazıyor?" sorusuna soyut cevap vermek yerine somut bir örnek. Aynı prompt, iki modelin tipik çıktısı. Aşağıdakiler belirli bir sürümden alınmış birebir kayıt değil, farkı göstermek için hazırlanmış tipik örneklerdir.
+Aynı prompt, iki modelin tipik çıktısı. Aşağıdakiler belirli bir sürümden alınmış birebir kayıt değil, farkı göstermek için hazırlanmış tipik örneklerdir.
 
 ### Prompt
 
@@ -223,13 +223,13 @@ Tüm alternatifleri tek bakışta:
 - **Claude:** Daha ağır kurumsal register, daha formal, "tarafımızca" gibi üçüncü şahıs kullanımı ağırlıklı
 - **ChatGPT:** Biraz daha sıcak, daha modern kurumsal ton
 
-Her ikisi de **kullanılabilir**. Fark çıktıların kendisinde değil, **tercih ettiğiniz tonda**. Claude daha ağır kurumsal alanlarda (banka, sigorta, kamu yazışması), ChatGPT biraz daha modern şirket kültürlerinde doğal durur.
+İkisi de kullanılabilir; seçim, hangi tonu istediğinize bağlı. Claude daha ağır kurumsal alanlarda (banka, sigorta, kamu yazışması), ChatGPT biraz daha modern şirket kültürlerinde doğal durur.
 
-**Önemli not:** Bu tek örnek. 20 farklı resmi yazışma tipinde fark **daha incelikli**. Genel kural: ikisi de %90 doğru çıkarır, %10 insan gözüyle son rötuş gerekir.
+Bu tek bir örnek; 20 farklı resmi yazışma tipinde fark daha incelikli. Genel kural: ikisi de %90 doğru çıkarır, %10 insan gözüyle son rötuş gerekir.
 
 ## 2026'da Durum Ne Değişti?
 
-Claude ve ChatGPT hızlı evrim geçiriyor. Kasım 2026 itibarıyla önemli gelişmeler:
+Kasım 2026 itibarıyla başlıca gelişmeler:
 
 ### Claude tarafı (Nisan-Kasım 2026)
 
@@ -247,6 +247,7 @@ Claude ve ChatGPT hızlı evrim geçiriyor. Kasım 2026 itibarıyla önemli geli
 - 7 Ekim: **Haiku 5.5**; Max ve Team planlarına aylık API kredisi
 - 8 Ekim: Design, Slides ve Docs betadan çıktı, **Free dahil** tüm planlarda
 - Ekim-Kasım: **Claude Dashboards** (ücretli planlar) ve **Claude Motion** (Team, Enterprise) beta olarak geldi
+- 9 Kasım: **Fable 5.2** ve **Mythos 5.2** (Mythos doğrulama programlarıyla sınırlı). Ayrıntı: [haber](/haberler/2026-11-09-claude-fable-5-2-mythos-5-2/)
 - 23 Ekim: Enterprise'ta birleşik Cowork ve sohbet arayüzü genel kullanıma açıldı
 - 30 Ekim dolayı: Max 20x'in yeni adı **Ultra**, Max 5x'in yeni adı **Max**
 - 5 Kasım: Enterprise için güvenlik merkezi ve ek erişim kontrolleri (kısmen beta)
@@ -261,13 +262,12 @@ Güncel model ailesi için [Claude Modelleri](/wiki/temeller/modeller/) sayfası
 
 ### Türk Kurumsal Kullanıcısını Etkileyen Eksenler
 
-Hangi gelişme Türk kurumsal kullanıcısını doğrudan etkiler? Üç ana eksen:
+Türk kurumsal kullanıcısını doğrudan etkileyen üç eksen var:
 
 1. **KVKK uyum özellikleri**: ticari planlardaki DPA şartları ve veri saklama seçenekleri
 2. **Türkçe performans**: her iki modelin Türkçe kalitesinin seyri
 3. **Kurumsal connector'lar**: Türkiye'de yaygın araçlar (Logo, Mikro, Paraşüt için resmi connector yok; özel connector veya API ile kurulur)
 
-Bu eksenler değiştikçe wiki güncellenir.
 
 ## Kısa Karar Tablosu
 

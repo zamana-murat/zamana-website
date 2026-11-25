@@ -5,7 +5,7 @@ description: "Claude'u kullanmaya başlarken yönetimden, IT'den, hukuktan, fina
 tags:
   - temeller
   - itirazlar
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 Claude'u profesyonel hayatınıza getirirken karşılaşılan tipik itirazlar ve dürüst cevapları. Şirket içinde bir karar oturumundan önce, ya da kendi kendinize "değer mi, riski ne, başarabilir miyim" diye sorarken bu sayfa kaynak olabilir.
@@ -20,15 +20,15 @@ Bölümler paydaşa göre düzenlendi: yönetim, IT, hukuk, finans, IT güvenlik
 
 **Cevap:**
 
-Yapay zeka bir moda değil, **üretkenlik altyapısının bir katmanı**. Nasıl 1995'te internet moda değildi, 2010'da bulut bilişim moda değildi. Claude veya bir rakibi (ChatGPT, Gemini) yıllarca var olmaya devam edecek. Soru "bu geçer mi?" değil, **"biz hangi tarafta olacağız, erken mi yoksa geç mi adapte edenler?"**
+Yapay zeka geçici bir moda değil, üretkenlik altyapısının bir katmanı. 1995'te internet de, 2010'da bulut bilişim de moda değildi. Claude veya bir rakibi (ChatGPT, Gemini) yıllarca var olmaya devam edecek. Soru şu: erken mi yoksa geç mi adapte edenlerden olacağız?
 
-Erken adapte edenler zamanla birikmiş bir öğrenme avantajı kazanır. Saha gözlemimize göre Türkiye'deki orta ölçekli şirketlerin çoğu henüz sistematik başlamadı, **pencere şu an açık**.
+Erken adapte edenler zamanla birikmiş bir öğrenme avantajı kazanır. Saha gözlemimize göre Türkiye'deki orta ölçekli şirketlerin çoğu henüz sistematik başlamadı; pencere şu an açık.
 
 ### "Zaten Microsoft Copilot (ya da Gemini) var. Claude çift yatırım olmaz mı?"
 
 **Cevap:**
 
-Aynı kategori değiller, çoğu kurum ikisini yan yana kullanıyor. Copilot ve Gemini, Office ve Workspace **uygulamasının içinde yerinde yardım** için güçlü: Outlook'ta yanıt yazmak, Excel'de formül üretmek, Teams toplantısını özetlemek, Gmail'de taslak çıkarmak. Claude ise **sıfırdan üretim ve analiz** tarafında öne çıkar: uzun belge incelemesi, çok adımlı analiz, hukuki taslak, otomasyon.
+Aynı kategori değiller; kurumlar ikisini yan yana da kullanıyor. Copilot ve Gemini, Office ve Workspace **uygulamasının içinde yerinde yardım** için güçlü: Outlook'ta yanıt yazmak, Excel'de formül üretmek, Teams toplantısını özetlemek, Gmail'de taslak çıkarmak. Claude ise **sıfırdan üretim ve analiz** tarafında öne çıkar: uzun belge incelemesi, çok adımlı analiz, hukuki taslak, otomasyon.
 
 Üç pratik not:
 
@@ -66,9 +66,9 @@ Bir garanti vermiyoruz: kazanım ekibe ve işe göre değişir, kendi ölçümü
 
 **Cevap:**
 
-Rakipler Claude'u **kullanacak**, şüphesiz. Fark **ne kadar iyi kullandığınızda**. "Claude var, deneyin" yaklaşımı yetmez, **ne zaman, ne için, nasıl kullanacağınızı** sistematik olarak öğrenmek gerekir.
+Rakipler de Claude'u kullanacak. Fark, ne kadar iyi kullandığınızda. "Claude var, deneyin" yaklaşımı yetmez; ne zaman, ne için, nasıl kullanacağınızı sistematik olarak öğrenmek gerekir.
 
-Türkiye'de Claude'u stratejik öğrenerek kullanan şirket sayısı **düşük**. Tipik kullanım halen "ChatGPT'ye bir şey yazdır" seviyesinde. Derinlemesine iş akışı entegrasyonuyla şirketiniz bu farkı büyütür.
+Türkiye'de Claude'u stratejik öğrenerek kullanan şirket sayısı düşük. Tipik kullanım halen "ChatGPT'ye bir şey yazdır" seviyesinde. Derinlemesine iş akışı entegrasyonuyla şirketiniz bu farkı büyütür.
 
 ---
 
@@ -84,7 +84,7 @@ Doğru tespit. Kişisel veri girmiyorsanız risk küçüktür. Kişisel veri gir
 - **Zero Data Retention** yalnızca API için: kuruluş başına talep edilen bir sözleşme düzenlemesidir, istem ve yanıtlar yanıt döndükten sonra depolanmaz
 - **SSO ve yönetim kontrolleri**: Team'de SSO ve harcama tavanı; Enterprise'da ayrıca denetim günlüğü (audit log) ve Compliance API
 
-Konuyu gerçekten kapsamlı ele almak için: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki yurt dışı aktarım bölümünü ve **sektörel ek** bölümünü okuyun. Bu hukuki görüş değildir, hukuk danışmanınızla doğrulayın. KVKK müfettişinin sorabileceği 10 soru ve cevapları hazır.
+Ayrıntı için [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/) sayfasındaki yurt dışı aktarım ve sektörel ek bölümlerini okuyun; aynı sayfada KVKK müfettişinin sorabileceği 10 soru ve cevapları da var. Bu hukuki görüş değildir, hukuk danışmanınızla doğrulayın.
 
 ### "Şirket verilerimiz AI eğitiminde kullanılır mı?"
 
@@ -124,7 +124,7 @@ Beklenen öğrenme yükü: [İlk 7 Gün](/wiki/temeller/ilk-7-gun/) rehberinde g
 
 **Cevap:**
 
-Gerçek bir risk ve eğitim programının kritik bir parçası. Çözüm **üç katmanlı**:
+Gerçek bir risk ve eğitim programının ana konularından biri. Çözümün üç katmanı var:
 
 1. **Plan seçimi**: Team/Enterprise varsayılan olarak eğitim kullanımı yok
 2. **DPA kapsamı**: işleyen ilişkisi sözleşmeyle belgelenir (yurt dışı aktarım güvencesi ayrıca ele alınır, bkz. yukarıdaki IT cevabı)
@@ -140,7 +140,7 @@ Detay: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/), sektörel ek bölümü
 
 **Ehliyetli profesyonel.** Bu pazarlık dışı bir kuraldır, [4D Çerçevesi](/wiki/prompting/4d-cercevesi/)'nin D4 (Diligence, Sorumluluk) boyutunda yazılıdır.
 
-Claude hukuki metinler için **süper hızlı ilk-taslak yazıcıdır**. Avukat her kelimeyi inceler, imzasını atar, sorumluluğu üstlenir. Bu "Claude kullanıyoruz o zaman iş rahat" değil, "Claude sayesinde avukat saatlerini yazım yerine yargı ve değerlendirmeye ayırıyor" demektir.
+Claude hukuki metinde çok hızlı bir ilk taslak yazar. Avukat her kelimeyi inceler, imzasını atar, sorumluluğu üstlenir. Claude sayesinde avukat saatlerini yazım yerine yargı ve değerlendirmeye ayırır.
 
 Kontrolün süresi de hesaba girer ve atlanmaz. [Hukuk](/wiki/departmanlar/hukuk/) sayfasındaki tipik aralıklar (Zamana gözlemi): 40 sayfalık bir sözleşmede madde çıkarımı elle 2-3 saat, Claude ile 20-30 dakika; bir KVKK başvuru yanıtının taslağı elle 45-60 dakika, Claude ile 10-15 dakika, üstüne hukuk kontrolü 15-30 dakika. Sözleşmedeki her alıntı metinden ayrıca doğrulanır. Kazanç taslak yazımındadır, sorumlulukta değil.
 
@@ -245,7 +245,7 @@ Herkesin kabul etmesi gereken: "güvenlik mutlak değildir, risk yönetilir." Do
 
 **Cevap:**
 
-Bunu baştan netleştirmek güveni belirler. Kişisel Free, Pro, Max ve Ultra hesaplarını şirket göremez. Team ve Enterprise'ta yönetim kontrolleri vardır (SSO, harcama tavanı); **Enterprise'ta** ayrıca audit log ve Compliance API (sohbet, dosya ve proje verisine erişim sağlar, yalnızca Primary Owner açar). Yani teknik olarak kurum, kendi Enterprise hesabındaki içeriğe erişebilir.
+Bunu baştan netleştirmek gerekir. Kişisel Free, Pro, Max ve Ultra hesaplarını şirket göremez. Team ve Enterprise'ta yönetim kontrolleri vardır (SSO, harcama tavanı); **Enterprise'ta** ayrıca audit log ve Compliance API (sohbet, dosya ve proje verisine erişim sağlar, yalnızca Primary Owner açar). Yani teknik olarak kurum, kendi Enterprise hesabındaki içeriğe erişebilir.
 
 Bu yüzden iki şey şart: çalışana **önceden yazılı bildirim** (neyin kaydedildiği, kimin erişebildiği, hangi amaçla) ve izlemenin amacını "performans cezası" değil "güvenlik ve uyum" olarak sınırlayan bir politika. Çalışan izleme ve KVKK aydınlatma yükümlülüğü hukuk danışmanınızla birlikte çözülür. Ayrıca Team ve Enterprise'ta hafıza varsayılan olarak kapalıdır.
 
@@ -267,13 +267,13 @@ Süre ölçütüne örnek: performans değerlendirme metni kişi başı elle 45-
 
 **Cevap:**
 
-Üç somut gerçek:
+Fatura ve destek şöyle işliyor:
 
 - **Satın alma doğrudan Anthropic'ten yapılır.** Fiyatlar USD'dir; fatura adresine göre vergi eklenir. Güncel durum ve muhasebe tarafı için [Fatura ve KDV](/wiki/temeller/fatura-ve-kdv/) sayfasına, mali müşavirinize ve ilk faturanıza bakın
 - **Anthropic'in Türkiye'de ofisi ve resmî temsilcisi yoktur**, yerel destek sunulmaz. Erişim, ödeme ve destek soruları için [Türkiye'de Claude](/wiki/temeller/turkiyede-claude/)
 - **Tedarikçi sürekliliği:** Anthropic 2026'da büyük finansman turları kapattı ve SEC'e gizli taslak halka arz belgesi sundu; bu, kısa vadede kapanma riski olan bir startup olmadığını gösterir. Ayrıntı: [Anthropic ve Tarihçe](/wiki/temeller/anthropic-ve-tarihce/)
 
-Bağımlılığı azaltmanın yolu tedarikçiyi değil **beceriyi taşınabilir tutmak**: prompting disiplini, kalıcı talimat dosyaları ve iş akışı tasarımı modelden bağımsızdır. Zamana bayi değildir, abonelik satmaz; bu çerçeveyi kurmanıza yardım eder.
+Bağımlılığı azaltmak için becerinizi taşınabilir tutun: prompting disiplini, kalıcı talimat dosyaları ve iş akışı tasarımı modelden bağımsızdır. Zamana bayi değildir, abonelik satmaz; bu çerçeveyi kurmanıza yardım eder.
 
 ---
 
@@ -311,7 +311,7 @@ Tarihsel paralel: bilgisayarlar sekreterleri işsiz bırakmadı, sekreterleri **
 
 Claude'un büyük avantajı **konuşma arayüzü**. Türkçe konuşursunuz, Türkçe cevap alırsınız. Kod yok, karmaşık menü yok, teknik jargon yok.
 
-Pratikte **60 yaşındaki muhasebe müdürü** de **28 yaşındaki pazarlama uzmanı** da aynı hızla öğrenebiliyor. Fark: kim daha **dürüst** iş problemini anlatır.
+Pratikte **60 yaşındaki muhasebe müdürü** de **28 yaşındaki pazarlama uzmanı** da aynı hızla öğrenebiliyor. Fark, iş problemini kimin daha dürüst anlattığındadır.
 
 ### "Çok fazla yapay zeka aracı var, hangisi kalıcı olacak bilmiyorum."
 
@@ -325,7 +325,7 @@ Gerçek ve meşru soru. Cevabımız:
 - **CLAUDE.md benzeri yaklaşım**: ChatGPT'nin Memory, Gemini'nin kişisel bağlam özellikleri gibi karşılıkları var
 - **İş akışı tasarımı**: hangi işin insan, hangi işin AI olduğuna karar vermek
 
-Öğreniyor olacağınız şey **düşünme biçimi**. Model değişse de beceri yaşar.
+Asıl öğrendiğiniz şey düşünme biçimi, o da model değişse de kalır.
 
 Bizim değerlendirmemizde Claude kurumsal kullanımda en olgun seçeneklerden biri; başka bir model daha iyi olduğunda da çerçeve aynı kalır.
 

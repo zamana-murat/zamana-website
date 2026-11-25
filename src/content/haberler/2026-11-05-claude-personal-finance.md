@@ -16,7 +16,7 @@ Anthropic, Claude'a "Personal Finance" adlı bir beta özellik ekledi. Banka ve 
 
 ## Sizin için ne değişiyor?
 
-Türkiye'de hesaplarınızı bağlayamazsınız, bu yüzden bugün doğrudan kullanamazsınız. Yine de yön göstermesi açısından önemli: Claude kişisel kullanımda da veriye bağlanan bir asistan olmaya gidiyor.
+Türkiye'de hesaplarınızı bağlayamazsınız, bu yüzden bugün doğrudan kullanamazsınız. Yine de yönü gösteriyor: Claude kişisel kullanımda da hesaplarınıza bağlanabilen bir asistana dönüşüyor.
 
 ABD'de özellik şunları yapıyor:
 

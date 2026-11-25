@@ -6,10 +6,10 @@ tags:
   - mcp
   - guvenlik
   - kvkk
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**[MCP](/wiki/mcp/nedir/), Claude'a sisteminize erişim verir.** Bu güç dikkatsiz kurulduğunda sorun yaratabilir: yetkisiz veri erişimi, beklenmedik silme işlemleri ve prompt injection saldırıları gibi. Bu sayfa MCP'nin güvenlik modelini ve kurumsal değerlendirme listesini sunar. Ürün tarafındaki güvenlik çerçevesi için [Claude Güvenliği](/claude/security/) sayfasına bakın.
+**[MCP](/wiki/mcp/nedir/), Claude'a sisteminize erişim verir.** Bu güç dikkatsiz kurulduğunda sorun yaratabilir: yetkisiz veri erişimi, beklenmedik silme işlemleri ve prompt injection saldırıları gibi. Ürün tarafındaki güvenlik çerçevesi için [Claude Güvenliği](/claude/security/) sayfasına bakın.
 
 Claude'daki [connector](/wiki/sozluk/#connector)'lar da birer MCP sunucusudur; fark, sunucunun kimden geldiğidir. Dizindeki connector'lar sağlayıcıdan gelir ve Anthropic incelemesinden geçer; özel connector ve masaüstü uzantıları ise sizin seçtiğiniz sunuculardır, güveni siz değerlendirirsiniz. İnceleme "veriniz güvende" garantisi değildir: hangi veriyi hangi yetkiyle açacağınıza her durumda siz karar verirsiniz. Karşılaştırma için [Connectors](/wiki/araclar/connectors/) sayfasına bakın.
 
@@ -48,7 +48,7 @@ Claude bu gizli komutu uygulamaya çalışabilir. Bu **prompt injection** saldı
 - Kritik işlerde aracı "Needs approval" (onay iste) durumunda tutun; "Always allow" yalnız gözetimsiz çalışmasına güvendiğiniz sunucu ve araçlar için.
 - Güvenilmeyen kaynaktan gelen içeriğe dayanarak yapılan işlemi onaylamadan önce Claude'un neyi yapmak istediğini okuyun.
 
-Claude in Chrome için Anthropic, prompt injection saldırı başarı oranlarını yayımladı: Sonnet 5, Opus 5 ve Mythos 5'te %0, Fable 5'te %0,3; karşılaştırma olarak Opus 4.5 ve Kasım 2025 korumalarında %16,7. Bu rakamlar tarayıcı ajanı için, Anthropic'in kendi testine dayanır; sizin özel sunucunuzun güvenliği için garanti değildir. Risk azaldı, sıfırlanmadı.
+Claude in Chrome için Anthropic, prompt injection saldırı başarı oranlarını yayımladı: Sonnet 5, Opus 5 ve Mythos 5'te %0, Fable 5'te %0,3; karşılaştırma olarak Opus 4.5 ve Kasım 2025 korumalarında %16,7. Bu rakamlar tarayıcı ajanı için, Anthropic'in kendi testine dayanır; sizin özel sunucunuzun güvenliği için garanti değildir.
 
 ### 3. Yanlış Sunucu (Supply Chain)
 
@@ -236,7 +236,7 @@ Kişisel hesabınızı Team ya da Enterprise'a taşırsanız, kişisel hesaptaki
 
 ### Tuzak: "Test için açtım, kapatmayı unuttum"
 
-Bir çalışan "tüm klasörleri okusun" yetkisiyle test etti, sonra unuttu. 6 ay sonra hassas veri Claude'a giden bir senaryo.
+Bir çalışan "tüm klasörleri okusun" yetkisiyle test etti, sonra unuttu. Altı ay sonra bu yetki hâlâ açıktır ve hassas veri Claude'a akıyor olabilir.
 
 **Çözüm:** Çeyreklik bağlantı audit'i. Hangi sunucular ve uzantılar açık, neye erişiyor, hâlâ gerekli mi?
 
@@ -267,7 +267,7 @@ Bir MCP kaynaklı olay olursa ne yaparsınız?
 
 ## Pratik Tavsiyeler
 
-**Beyaz liste, kara liste değil.** Onaylı sunucu listesi tutun, dışarısı yasak. Daha kolay yönetim.
+**Beyaz liste.** Onaylı sunucu listesi tutun, dışarısı yasak; kara listeden daha kolay yönetilir.
 
 **Periyodik audit.** 3 ayda bir tüm aktif bağlantıları gözden geçirin: hâlâ gerekli mi, yetki güncel mi, üreticiye hâlâ güveniyor musunuz?
 
@@ -281,12 +281,12 @@ Bir MCP kaynaklı olay olursa ne yaparsınız?
 
 50+ kişilik bir organizasyonda iyi yönetim şuna benzer:
 
-- **Onaylı bağlantı listesi** (çeyreklik güncellenir)
-- **Onay komitesi** (BT + Hukuk + İlgili iş birimi)
-- **Standart yapılandırma şablonları** (owner'ın kuruluş geneli araç izinleri, izin listesi)
-- **Merkezi token yönetimi** (vault servisi)
-- **Audit görünümü** (kim ne zaman ne çağırdı)
-- **Çeyreklik gözden geçirme**
+- Onaylı bağlantı listesi (çeyreklik güncellenir)
+- Onay komitesi (BT + Hukuk + İlgili iş birimi)
+- Standart yapılandırma şablonları (owner'ın kuruluş geneli araç izinleri, izin listesi)
+- Merkezi token yönetimi (vault servisi)
+- Audit görünümü (kim ne zaman ne çağırdı)
+- Çeyreklik gözden geçirme
 
 Küçük şirketlerde basit bir Excel listesi ve 3 ayda bir kontrol yetebilir.
 

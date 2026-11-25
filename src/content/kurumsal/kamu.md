@@ -18,7 +18,7 @@ related:
   - { label: "Kodlama için Claude", href: "/kurumsal/kodlama/" }
   - { label: "Kurumsal program", href: "/programlar/kurumsal/" }
 order: 110
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Kaynak sayfa ne anlatıyor?
@@ -29,7 +29,7 @@ Sayfada farklı ülkelerden örnekler de var: ABD'de Kaliforniya eyaleti, Afrika
 
 ## ABD'ye özel olanlar: Türkiye'de geçerli değil
 
-Sayfanın asıl teklifleri ABD kamu sistemine bağlı. Bir Türk kurumunun bunları okurken yanlış beklentiye girmemesi için açıkça yazalım:
+Sayfanın asıl teklifleri ABD kamu sistemine bağlı. Türk kurumları bunları okurken yanlış beklentiye girmesin diye açık yazıyoruz:
 
 - **Claude for Government:** ABD federal, eyalet ve yerel kurumları ile onlara hizmet veren yükleniciler için ayrı bir ürün. FedRAMP High yetkisine sahip, masaüstü uygulaması ve Claude Code içeriyor.
 - **FedRAMP ve DoD IL4/IL5:** ABD federal hükümetinin bulut güvenlik yetkilendirmeleridir. Türk mevzuatında karşılığı yoktur, Türk kurumu için bir onay anlamı taşımaz. Kaynak sayfa, ticari Claude Enterprise ve Anthropic'in doğrudan sunduğu API'nin bugün FedRAMP yetkili olmadığını da ayrıca belirtiyor.
@@ -40,7 +40,7 @@ Türk kamu kurumunun önünde olan seçenekler, herkese açık ticari planlardı
 
 ## Veri: neyi verebilirsiniz?
 
-Kamu kurumu için asıl soru plan değil, veridir. Claude'a yazdığınız her şey Anthropic'in yurt dışındaki altyapısında işlenir. Bu yüzden önce kurumun kendi veri sınıflandırması devreye girer.
+Kamu kurumunda önce veri sorusu çözülür, plan sonra gelir. Claude'a yazdığınız her şey Anthropic'in yurt dışındaki altyapısında işlenir. Bu yüzden önce kurumun kendi veri sınıflandırması devreye girer.
 
 ![Bir kamu kurumu için örnek veri sınıflandırma şeması: kamuya açık bilgi Claude ile kullanılabilir, kurum içi bilgi birim onayıyla ve kişisel veri çıkarılarak kullanılabilir, kişisel veri ile hizmete özel bilgi anonimleştirilmeden girilmez, gizli ve kritik bilgi hiç girilmez](/images/kurumsal/kamu/veri-siniflandirma.webp)
 
@@ -54,7 +54,7 @@ Bu sayfa hukuki görüş değildir. Mevzuatın kurumunuza nasıl uygulanacağın
 
 ## Satın alma: gerçekçi yol
 
-Kamu kurumlarının en çok takıldığı yer burası:
+Satın almanın koşulları:
 
 - **Ödeme ABD doları ile, Anthropic'e yapılır.** Anthropic'in Türkiye'de ofisi ya da resmi temsilcisi yok.
 - **TL faturalı bir satın alma yolunu doğrulayamadık.** Team ve Enterprise'ın üçüncü taraf üzerinden yeniden satışı Anthropic'in yazılı onayına bağlı ve Türkiye'de yetkili bir bayi doğrulanmadı. Zamana, Anthropic'in temsilcisi ya da bayisi değildir ve abonelik satmaz.

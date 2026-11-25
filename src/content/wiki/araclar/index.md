@@ -5,12 +5,10 @@ description: "Claude'u nerede kullanırsınız: Chat, Projects, Desktop, Cowork,
 tags:
   - araclar
   - giris
-lastUpdated: "2026-11-09"
+lastUpdated: "2026-11-26"
 ---
 
-**Claude'u kullanmanın birden fazla yolu var. Hangisinin hangi iş için doğru olduğu, üretkenlikte ciddi fark yaratır.**
-
-Bu bölüm Claude'un temel araçlarını tanıtır. Her biri farklı bir senaryo için vardır; hepsini ayrı ayrı bilmek, doğru iş için doğru aracı seçmenizi sağlar.
+Claude'u kullanmanın birden fazla yolu var ve her biri farklı bir iş için uygun. Aşağıda temel araçlar ve hangi iş için hangisini seçeceğiniz var.
 
 ## Tüm Araçlar Tek Bakışta
 
@@ -28,7 +26,7 @@ Bu bölüm Claude'un temel araçlarını tanıtır. Her biri farklı bir senaryo
 
     ---
 
-    Claude Chat içindeki kalıcı çalışma alanları. Bilgi tabanı + özel talimatlar + ekip paylaşımı.
+    Claude Chat içindeki kalıcı çalışma alanları. Bilgi tabanı, özel talimatlar ve ekip paylaşımı.
 
     [→ Projects](/wiki/araclar/projects/)
 
@@ -44,7 +42,7 @@ Bu bölüm Claude'un temel araçlarını tanıtır. Her biri farklı bir senaryo
 
     ---
 
-    Claude'u sohbet arayüzünden tam bir çalışma ortamına dönüştüren özellik. Dosyalar, kod, [connector](/wiki/sozluk/#connector)'lar.
+    Claude'u sohbet arayüzünden tam bir çalışma ortamına çeviren özellik. Dosyalar, kod, [connector](/wiki/sozluk/#connector)'lar.
 
     [→ Cowork Modu](/wiki/araclar/cowork-modu/)
 
@@ -136,24 +134,24 @@ Başlangıç için basit bir karar ağacı:
 
 ## İki Temel Ayrım
 
-Araçlar kavramsal olarak soru-cevap ağırlıklı (Chat, Projects, Voice Mode) ve çalışma ağırlıklı (Desktop, Cowork, Scheduled Tasks) diye iki gruba ayrılır. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude arayüzünde birleşiyor (kademeli yayılım; Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda), bu yüzden ayrım giderek ürün seçimi değil **iş türü** ayrımına dönüşüyor. Karşılaştırma tablosu tek yerde, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında.
+Araçlar kavramsal olarak soru-cevap ağırlıklı (Chat, Projects, Voice Mode) ve çalışma ağırlıklı (Desktop, Cowork, Scheduled Tasks) diye iki gruba ayrılır. Cowork ve sohbet 16 Eylül 2026'dan itibaren tek Claude arayüzünde birleşiyor (kademeli yayılım; Enterprise'ta 23 Ekim 2026'dan beri genel kullanımda), bu yüzden ayrım giderek ürüne göre değil, iş türüne göre yapılıyor. Karşılaştırma tablosu tek yerde, [Cowork Modu](/wiki/araclar/cowork-modu/) sayfasında.
 
-Kısa özet: sohbet kurulum gerektirmez; dosya yükleme, web araması, artifact, [skill](/wiki/sozluk/#skill), connector ve kod çalıştırma claude.ai'de Free dahil tüm planlarda vardır. Yerel klasörlerle çalışmak, zamanlanmış görev kurmak ve çok adımlı işi baştan sona devretmek ise Cowork ister; Cowork en az Pro abonelik gerektirir. Yeni başlayan kullanıcı için ilk ay Max (eski adı Max 5x) önerilir (öneri, zorunlu değil).
+Sohbet kurulum gerektirmez; dosya yükleme, web araması, artifact, [skill](/wiki/sozluk/#skill), connector ve kod çalıştırma claude.ai'de Free dahil tüm planlarda vardır. Yerel klasörlerle çalışmak, zamanlanmış görev kurmak ve çok adımlı işi baştan sona devretmek ise Cowork ister; Cowork en az Pro abonelik gerektirir. Yeni başlayanlara ilk ay Max (eski adı Max 5x) öneririz, zorunlu değil.
 
 ## Önerilen Adaptasyon Yolu
 
-Tipik bir yeni kullanıcı şu sırayı izler:
+Yeni bir kullanıcı için tipik sıra şöyle:
 
-1. **Hafta 1:** Claude Desktop kurulur → Cowork açılır → klasöre CLAUDE.md yazılır (ve profil talimatı doldurulur) → ilk gerçek iş çıktısı üretilir
-2. **Hafta 2:** Role göre skill'ler ve plugin'ler keşfedilir → ilk connector kurulur (Slack, Drive veya CRM)
-3. **Hafta 3-4:** İlk zamanlanmış görev (haftalık rapor) → telefondan görev atma (Cowork'ün telefondan görev özelliğiyle; eski Dispatch yeni kullanıcılara kapalı, bkz. [Claude Mobil](/wiki/araclar/claude-mobil/))
+1. **Hafta 1:** Claude Desktop kurulur, Cowork açılır, klasöre CLAUDE.md yazılır (ve profil talimatı doldurulur), ilk gerçek iş çıktısı üretilir
+2. **Hafta 2:** Role göre skill'ler ve plugin'ler keşfedilir → ilk connector kurulur (Slack, Drive ya da CRM)
+3. **Hafta 3-4:** İlk zamanlanmış görev (haftalık rapor), ardından telefondan görev atma (Cowork'ün telefondan görev özelliğiyle; eski Dispatch yeni kullanıcılara kapalı, bkz. [Claude Mobil](/wiki/araclar/claude-mobil/))
 4. **Ay 2-3:** Prompt kütüphanesi büyür, iş akışlarının 2-3 tanesi tamamen otomatikleşir, çalışan işi yeniden tasarlar
 
-Bu sıra tesadüfi değil. Önce temel, sonra genişleme, en sonda otomasyon gelir; bu dizilim öğrenme eğrisini doğal akışta tutar.
+Önce temel, sonra genişleme, en sonda otomasyon gelir; her adım bir öncekinin üstüne kurulur.
 
 ## Nereye Gitmeli?
 
-Araçları tanıdıysanız:
+Araçları tanıdıktan sonra:
 
 - [**CLAUDE.md ve Kalıcı Talimat**](/wiki/claude-md/): Claude'a kendinizi bir kez tanıtmanın yolları: profil talimatı, proje, klasörde CLAUDE.md
 - [**Prompting**](/wiki/prompting/): Araç ne olursa olsun, iyi prompt yazabilmek

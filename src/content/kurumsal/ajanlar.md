@@ -18,7 +18,7 @@ related:
   - { label: "Kodlama", href: "/kurumsal/kodlama/" }
   - { label: "Gizlilik ve KVKK (wiki)", href: "/wiki/temeller/gizlilik-kvkk/" }
 order: 30
-lastUpdated: "2026-11-08"
+lastUpdated: "2026-11-26"
 ---
 
 ## Nedir?
@@ -66,7 +66,7 @@ Ortak çizgi: ajan veri toplar, karşılaştırır, taslak hazırlar; geri alın
 
 ## Güvenlik, KVKK ve insan onayı
 
-- **Yetkiyi dar tutun:** Ajanın erişebildiği her sistem, yanlış bir adımda etkilenebilecek bir sistemdir. Okuma yetkisiyle başlayın, yazma yetkisini tek tek ve gerekçesiyle açın.
+- **Yetkiyi dar tutun:** Ajanın erişebildiği her sistem, ajan yanlış adım attığında zarar görebilir. Okuma yetkisiyle başlayın, yazma yetkisini tek tek ve gerekçesiyle açın.
 - **Onay noktalarını baştan tanımlayın:** Para hareketi, müşteriye giden mesaj, kayıt silme gibi adımlarda ajanın durup onay istemesi tasarımın parçası olmalı.
 - **Kayıt tutun:** Hangi ajanın, kimin isteğiyle, hangi aracı çağırdığı izlenebilir olmalı. Enterprise planında denetim kaydı (audit log) ve Compliance API bunun için var.
 - **Kişisel veri:** Ajanın işlediği müşteri, çalışan veya tedarikçi verisi Anthropic'e model işlemesi için gider. Team, Enterprise ve API'de girdi ve çıktılar varsayılan olarak model eğitiminde kullanılmaz ve veri işleme sözleşmesi (DPA) ticari şartlara dahildir. KVKK (6698) kapsamında aydınlatma, yurt dışı aktarım ve özel nitelikli kişisel veri konularını hukuk biriminizle teyit edin: [Gizlilik ve KVKK](/wiki/temeller/gizlilik-kvkk/).
