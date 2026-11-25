@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProgramSchema from '../../components/ProgramSchema.astro';
+import Price from '../../components/Price.astro';
+import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../../data/pricing';
 ---
 
 <Layout
   title="Hukukçular için Yapay Zeka Eğitimi, Claude | Zamana"
-  description="Hukukçular için yapay zeka eğitimi: sözleşme inceleme, dilekçe taslağı, atıf doğrulama, müvekkil sırrı. 3 hafta, 45.000 TL + KDV'den başlar, 3 ay destek."
+  description={`Hukukçular için yapay zeka eğitimi: sözleşme inceleme, dilekçe taslağı, atıf doğrulama, müvekkil sırrı. 3 hafta, ${nowText(LIST.hukuk)} + KDV'den başlar, 3 ay destek.`}
   ogImage="/og/programlar-hukuk-burolari.png"
 >
 
@@ -33,10 +35,11 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
         Sözleşme incelemeden dilekçe taslağına, uydurma atıf riskinden müvekkil sırrına kadar büronuzun gerçek iş türleri üzerinden öğrenirsiniz.
       </p>
       <div class="hero-meta">
-        <div><strong>45.000 TL <em>+ KDV</em></strong><span>Tek avukat, büro paketi 65.000 TL'den</span></div>
+        <div><strong><Price amount={LIST.hukuk} /> <em>+ KDV</em></strong><span>Tek avukat, büro paketi <Price amount={LIST.hukuk + LIST.ekKisi} />'den</span></div>
         <div><strong>3 hafta</strong><span>Haftada 2 saat birebir ya da 3 saat grup</span></div>
         <div><strong>3 ay</strong><span>Sınırsız telefon desteği</span></div>
       </div>
+      {campaignOn() && <p class="text-muted" style="margin-top: var(--s-3);">{campaign.name}: {campaign.endLabel} tarihine kadar geçerli.</p>}
     </div>
   </section>
 
@@ -78,7 +81,7 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
       <div class="price-grid">
         <div class="price-card">
           <p class="price-name">Tek Avukat</p>
-          <p class="price-amount">45.000 TL <em>+ KDV</em></p>
+          <p class="price-amount"><Price amount={LIST.hukuk} /> <em>+ KDV</em></p>
           <ul class="price-list">
             <li>3 hafta × 2 saat birebir (6 saat)</li>
             <li>3 ay sınırsız telefon desteği, 30 dakika içinde dönüş</li>
@@ -88,12 +91,12 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
         </div>
         <div class="price-card price-card--accent">
           <p class="price-name">Büro Paketi (2-4 kişi)</p>
-          <p class="price-amount">45.000 TL <em>+ her ek kişi 20.000 TL + KDV</em></p>
+          <p class="price-amount"><Price amount={LIST.hukuk} /> <em>+ her ek kişi <Price amount={LIST.ekKisi} /> + KDV</em></p>
           <table class="price-table">
             <tbody>
-              <tr><td>2 kişi</td><td>65.000 TL + KDV</td></tr>
-              <tr><td>3 kişi</td><td>85.000 TL + KDV</td></tr>
-              <tr><td>4 kişi</td><td>105.000 TL + KDV</td></tr>
+              <tr><td>2 kişi</td><td><Price amount={LIST.hukuk + 1 * LIST.ekKisi} /> + KDV</td></tr>
+              <tr><td>3 kişi</td><td><Price amount={LIST.hukuk + 2 * LIST.ekKisi} /> + KDV</td></tr>
+              <tr><td>4 kişi</td><td><Price amount={LIST.hukuk + 3 * LIST.ekKisi} /> + KDV</td></tr>
             </tbody>
           </table>
           <ul class="price-list">
@@ -108,7 +111,7 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
       <p class="price-note">
         <strong>Dahil değil:</strong> Claude aboneliği (Anthropic'e ayrıca ödenir, aşağıda Başlamadan Önce), hukuki görüş ya da hukuki danışmanlık
         (Zamana bir hukuk bürosu değildir, politika taslağının son halini büronuz kendi hukukçusuyla verir), İstanbul dışı yerinde eğitimde seyahat masrafları.
-        Program sonrası ek danışmanlık 5.000 TL + KDV / saat.
+        Program sonrası ek danışmanlık <Price amount={LIST.ekSaat} /> + KDV / saat.
       </p>
     </div>
   </section>

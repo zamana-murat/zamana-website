@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProgramSchema from '../../components/ProgramSchema.astro';
+import Price from '../../components/Price.astro';
+import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../../data/pricing';
 ---
 
 <Layout
   title="Kamu Kurumları için Yapay Zeka Eğitimi Semineri | Zamana"
-  description="Kamu personeli için yapay zeka eğitimi semineri: yarım günde veri sınıflandırması, KVKK, doğrulama. 30 kişiye kadar 45.000 TL + KDV, abonelik gerekmez."
+  description={`Kamu personeli için yapay zeka eğitimi semineri: yarım günde veri sınıflandırması, KVKK, doğrulama. 30 kişiye kadar ${nowText(LIST.kamuSeminer)} + KDV, abonelik gerekmez.`}
   ogImage="/og/programlar-kamu-kurumlari.png"
 >
 
@@ -32,10 +34,11 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
         çıktının nasıl doğrulandığı. Bu bir eğitim hizmetidir, abonelik satışı değildir.
       </p>
       <div class="hero-meta">
-        <div><strong>45.000 TL <em>+ KDV</em></strong><span>Seminer, 30 kişiye kadar</span></div>
+        <div><strong><Price amount={LIST.kamuSeminer} /> <em>+ KDV</em></strong><span>Seminer, 30 kişiye kadar</span></div>
         <div><strong>4 saat</strong><span>Yarım gün</span></div>
         <div><strong>Yerinde</strong><span>Ya da çevrim içi</span></div>
       </div>
+      {campaignOn() && <p class="text-muted" style="margin-top: var(--s-3);">{campaign.name}: {campaign.endLabel} tarihine kadar geçerli.</p>}
     </div>
   </section>
 
@@ -94,18 +97,18 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
       <div class="price-grid">
         <div class="price-card price-card--accent">
           <p class="price-name">Seminer</p>
-          <p class="price-amount">45.000 TL <em>+ KDV</em></p>
+          <p class="price-amount"><Price amount={LIST.kamuSeminer} /> <em>+ KDV</em></p>
           <ul class="price-list">
             <li>Yarım gün, 4 saat, 30 kişiye kadar</li>
             <li>Yerinde ya da çevrim içi</li>
             <li>Katılımcılara veri sınıflandırma tablosu ve doğrulama kontrol listesi</li>
             <li>Kurum içi kullanım yönergesi taslağı</li>
           </ul>
-          <p class="price-extra">Aynı kurumda farklı birime ikinci seminer: <strong>35.000 TL + KDV</strong></p>
+          <p class="price-extra">Aynı kurumda farklı birime ikinci seminer: <strong><Price amount={LIST.kamuIkinciSeminer} /> + KDV</strong></p>
         </div>
         <div class="price-card">
           <p class="price-name">Uygulama Atölyesi (opsiyonel)</p>
-          <p class="price-amount">30.000 TL <em>+ KDV</em></p>
+          <p class="price-amount"><Price amount={LIST.kamuAtolye} /> <em>+ KDV</em></p>
           <ul class="price-list">
             <li>Seminerin devamı, 3 saat, 12 kişiye kadar</li>
             <li>Birimin kendi kamuya açık ya da anonimleştirilmiş belgeleriyle</li>

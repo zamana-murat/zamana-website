@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProgramSchema from '../../components/ProgramSchema.astro';
+import Price from '../../components/Price.astro';
+import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../../data/pricing';
 ---
 
 <Layout
   title="İhracatçılar için Yapay Zeka Eğitimi, Claude | Zamana"
-  description="İhracatçılar için yapay zeka eğitimi: teklif, proforma, yabancı dilde yazışma, belge kontrolü. Tek kişi 45.000 TL + KDV, ekip paketi, 3 ay destek."
+  description={`İhracatçılar için yapay zeka eğitimi: teklif, proforma, yabancı dilde yazışma, belge kontrolü. Tek kişi ${nowText(LIST.ihracatci)} + KDV, ekip paketi, 3 ay destek.`}
   ogImage="/og/programlar-ihracatcilar.png"
 >
 
@@ -33,10 +35,11 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
         Bu programda bu işleri kendi ürünleriniz ve kendi pazarlarınız üzerinden Claude ile yapmayı öğreniyorsunuz.
       </p>
       <div class="hero-meta">
-        <div><strong>45.000 TL <em>+ KDV</em></strong><span>Tek kişi, ekip paketi ayrıca</span></div>
+        <div><strong><Price amount={LIST.ihracatci} /> <em>+ KDV</em></strong><span>Tek kişi, ekip paketi ayrıca</span></div>
         <div><strong>3 hafta</strong><span>Birebir 2 saat ya da ekip 3 saat</span></div>
         <div><strong>3 ay</strong><span>Sınırsız telefon desteği</span></div>
       </div>
+      {campaignOn() && <p class="text-muted" style="margin-top: var(--s-3);">{campaign.name}: {campaign.endLabel} tarihine kadar geçerli.</p>}
     </div>
   </section>
 
@@ -78,7 +81,7 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
       <div class="options">
         <div class="opt-card opt-card--main">
           <span class="path-tag">Tek kişi</span>
-          <p class="opt-price">45.000 TL <em>+ KDV</em></p>
+          <p class="opt-price"><Price amount={LIST.ihracatci} /> <em>+ KDV</em></p>
           <p class="opt-sub">Tek seferlik</p>
           <p class="opt-head">Dahil</p>
           <ul class="opt-list">
@@ -90,7 +93,7 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
 
         <div class="opt-card">
           <span class="path-tag">İhracat ekibi (2-4 kişi)</span>
-          <p class="opt-price">45.000 TL <em>+ ek kişi başı 20.000 TL + KDV</em></p>
+          <p class="opt-price"><Price amount={LIST.ihracatci} /> <em>+ ek kişi başı <Price amount={LIST.ekKisi} /> + KDV</em></p>
           <p class="opt-sub">Aynı firmadan, tek seferlik</p>
           <p class="opt-head">Dahil</p>
           <ul class="opt-list">
@@ -104,9 +107,9 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
                 <tr><th scope="col">Ekip</th><th scope="col">Toplam</th></tr>
               </thead>
               <tbody>
-                <tr><td>2 kişi</td><td>65.000 TL + KDV</td></tr>
-                <tr><td>3 kişi</td><td>85.000 TL + KDV</td></tr>
-                <tr><td>4 kişi</td><td>105.000 TL + KDV</td></tr>
+                <tr><td>2 kişi</td><td><Price amount={LIST.ihracatci + 1 * LIST.ekKisi} /> + KDV</td></tr>
+                <tr><td>3 kişi</td><td><Price amount={LIST.ihracatci + 2 * LIST.ekKisi} /> + KDV</td></tr>
+                <tr><td>4 kişi</td><td><Price amount={LIST.ihracatci + 3 * LIST.ekKisi} /> + KDV</td></tr>
               </tbody>
             </table>
           </div>

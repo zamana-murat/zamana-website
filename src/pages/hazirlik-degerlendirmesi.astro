@@ -1,4 +1,6 @@
 ---
+import Price from '../components/Price.astro';
+import { LIST } from '../data/pricing';
 import Layout from '../layouts/Layout.astro';
 import HazirlikTesti from '../components/HazirlikTesti.astro';
 ---
@@ -50,7 +52,7 @@ import HazirlikTesti from '../components/HazirlikTesti.astro';
           Başlamak için <a href="/wiki/temeller/ilk-7-gun/">İlk 7 Gün</a> ve
           <a href="/wiki/temeller/sirket-ici-politika/">Şirket İçi Politika</a> sayfaları ücretsizdir.
           Üst yönetimle aynı sayfaya gelmek istiyorsanız
-          <a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a> (3 saatlik tek oturum, 15.000 TL + KDV)
+          <a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a> (3 saatlik tek oturum, <Price amount={LIST.yonetici} /> + KDV)
           bu iş için tasarlandı, ama şart değildir.
         </p>
 
@@ -58,9 +60,9 @@ import HazirlikTesti from '../components/HazirlikTesti.astro';
         <p>
           Temel parçaların çoğu var, birkaç boşluk kaldı. Küçük ve ölçülen bir pilot en çok işe yarayan adımdır:
           <a href="/wiki/temeller/pilot-ve-yayginlastirma/">Pilot ve Yaygınlaştırma</a> yolu anlatır.
-          Destek isterseniz <a href="/programlar/bireysel/">Bireysel Program</a> (40.000 TL + KDV, 3 hafta + 3 ay destek)
+          Destek isterseniz <a href="/programlar/bireysel/">Bireysel Program</a> (<Price amount={LIST.bireysel} /> + KDV, 3 hafta + 3 ay destek)
           tek kişinin hızlı yetkinlik kazanması için, <a href="/programlar/kurumsal/">Kurumsal Program</a>
-          (aylık 100.000 TL + KDV, en az 3 ay, 6 çalışan) ekip genelinde süreklilik için uygundur.
+          (aylık <Price amount={LIST.retainer6} /> + KDV, en az 3 ay, 6 çalışan) ekip genelinde süreklilik için uygundur.
         </p>
 
         <h3>15-20 puan: İleri</h3>

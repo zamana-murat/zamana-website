@@ -1,9 +1,13 @@
 ---
+import { priceHtml } from '../data/pricing';
+
 interface Props {
   title: string;
   badge?: string;
-  price: string;
+  /** List amount (number, campaign applied) or free text. */
+  price: number | string;
   priceSuffix?: string;
+  /** May contain markup from priceHtml(). */
   priceSubtext?: string;
   duration: string;
   audience: string;
@@ -23,11 +27,11 @@ const { title, badge, price, priceSuffix = '+ KDV', priceSubtext, duration, audi
 
   <div class="prog-card__price">
     <div class="prog-card__price-row">
-      <span class="prog-card__price-main">{price}</span>
+      <span class="prog-card__price-main">{typeof price === 'number' ? <Fragment set:html={priceHtml(price)} /> : price}</span>
       <span class="prog-card__price-suffix">{priceSuffix}</span>
     </div>
     {duration && <div class="prog-card__duration">{duration}</div>}
-    {priceSubtext && <div class="prog-card__price-sub">{priceSubtext}</div>}
+    {priceSubtext && <div class="prog-card__price-sub" set:html={priceSubtext} />}
   </div>
 
   <ul class="prog-card__features">

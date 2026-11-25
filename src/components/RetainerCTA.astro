@@ -6,6 +6,7 @@
  * with the program pages under src/pages/programlar/.
  */
 import type { RetainerVariant } from '../data/retainer-variants';
+import { LIST, priceHtml } from '../data/pricing';
 
 interface Props {
   intro?: string;
@@ -29,64 +30,64 @@ const VARIANTS: Record<RetainerVariant, VariantCopy> = {
   default: {
     heading: "Claude'u şirketinize entegre edelim.",
     body: `Zamana, <a href="/yapay-zeka-egitimi/">kurumsal yapay zeka eğitimi</a> için üç program sunuyor:
-      <strong>Yönetici AI Hazırlık</strong> (3 saat, 15.000 TL),
-      <strong>Bireysel Program</strong> (3 hafta birebir, 40.000 TL) veya
-      <strong>Kurumsal Retainer</strong> (6 çalışan, aylık 100.000 TL, minimum 3 ay). ${VAT}`,
+      <strong>Yönetici AI Hazırlık</strong> (3 saat, ${priceHtml(LIST.yonetici)}),
+      <strong>Bireysel Program</strong> (3 hafta birebir, ${priceHtml(LIST.bireysel)}) veya
+      <strong>Kurumsal Retainer</strong> (6 çalışan, aylık ${priceHtml(LIST.retainer6)}, minimum 3 ay). ${VAT}`,
     primary: { label: 'Programları İncele', href: '/programlar/' },
   },
   kurumsal: {
     heading: "Claude'u şirketinize entegre edelim.",
     body: `Zamana'nın <a href="/programlar/kurumsal/">kurumsal yapay zeka eğitimi programı</a> 6 çalışanla başlar:
       departman bazlı müfredat, şirket içi Claude şampiyonları, telefon desteği ve KVKK rehberliği.
-      <strong>Aylık 100.000 TL</strong>, minimum 3 ay, ödeme aylık. ${VAT}`,
+      <strong>Aylık ${priceHtml(LIST.retainer6)}</strong>, minimum 3 ay, ödeme aylık. ${VAT}`,
     primary: { label: 'Kurumsal Programı İncele', href: '/programlar/kurumsal/' },
   },
   bireysel: {
     heading: "Claude'u kendi işinizle öğrenin.",
     body: `<a href="/programlar/bireysel/">Bireysel Program</a>: 3 hafta boyunca birebir, kendi dosyalarınız ve
       görevleriniz üzerinden Claude eğitimi, ardından 3 ay telefon desteği.
-      <strong>40.000 TL</strong>, tek seferlik ödeme. ${VAT}`,
+      <strong>${priceHtml(LIST.bireysel)}</strong>, tek seferlik ödeme. ${VAT}`,
     primary: { label: 'Bireysel Programı İncele', href: '/programlar/bireysel/' },
   },
   hukuk: {
     heading: "Claude'u büronuzun işine uyarlayalım.",
     body: `<a href="/programlar/hukuk-burolari/">Hukuk Büroları programı</a>: 3 hafta, sözleşme inceleme,
       dilekçe taslağı, atıf doğrulama ve müvekkil sırrı üzerine, 3 ay destekle.
-      Tek avukat <strong>45.000 TL</strong>, her ek kişi 20.000 TL (2-4 kişi). ${VAT}`,
+      Tek avukat <strong>${priceHtml(LIST.hukuk)}</strong>, her ek kişi ${priceHtml(LIST.ekKisi)} (2-4 kişi). ${VAT}`,
     primary: { label: 'Programı İncele', href: '/programlar/hukuk-burolari/' },
   },
   ihracat: {
     heading: "Claude'u ihracat ekibinize uyarlayalım.",
     body: `<a href="/programlar/ihracatcilar/">İhracatçılar programı</a>: teklif, proforma, yabancı dilde yazışma
       ve belge kontrolü üzerine Claude eğitimi, 3 ay destekle.
-      Tek kişi <strong>45.000 TL</strong>, her ek kişi 20.000 TL (2-4 kişi). ${VAT}`,
+      Tek kişi <strong>${priceHtml(LIST.ihracatci)}</strong>, her ek kişi ${priceHtml(LIST.ekKisi)} (2-4 kişi). ${VAT}`,
     primary: { label: 'Programı İncele', href: '/programlar/ihracatcilar/' },
   },
   kamu: {
     heading: 'Kurumunuzda güvenli kullanımla başlayın.',
     body: `<a href="/programlar/kamu-kurumlari/">Kamu Kurumları semineri</a>: yarım günde veri sınıflandırması,
-      KVKK ve doğrulama. 30 kişiye kadar <strong>45.000 TL</strong>, aynı kurumda ikinci seminer 35.000 TL.
+      KVKK ve doğrulama. 30 kişiye kadar <strong>${priceHtml(LIST.kamuSeminer)}</strong>, aynı kurumda ikinci seminer ${priceHtml(LIST.kamuIkinciSeminer)}.
       Abonelik gerekmez. ${VAT}`,
     primary: { label: 'Semineri İncele', href: '/programlar/kamu-kurumlari/' },
   },
   akademi: {
     heading: "Claude'u kendi araştırmanızla öğrenin.",
     body: `<a href="/programlar/akademisyenler/">Akademisyenler programı</a>: 3 hafta birebir; literatür,
-      kaynak doğrulama, makale ve proje yazımı. Tek kişi <strong>30.000 TL</strong>,
-      3-6 kişilik grup 75.000 TL. ${VAT}`,
+      kaynak doğrulama, makale ve proje yazımı. Tek kişi <strong>${priceHtml(LIST.akademisyen)}</strong>,
+      3-6 kişilik grup ${priceHtml(LIST.akademisyenGrup)}. ${VAT}`,
     primary: { label: 'Programı İncele', href: '/programlar/akademisyenler/' },
   },
   sampiyon: {
     heading: "Claude'u kurumunuzda öğretecek kişiyi yetiştirelim.",
     body: `<a href="/programlar/ai-sampiyonu/">AI Şampiyonu ve Eğitmen Programı</a>: kurum içinde Claude'u öğretecek
-      şampiyon (<strong>80.000 TL</strong>) ya da eğitimlerini Claude ile tasarlayan eğitmen
-      (<strong>45.000 TL</strong>) için birebir program, 3 ay destekle. ${VAT}`,
+      şampiyon (<strong>${priceHtml(LIST.sampiyon)}</strong>) ya da eğitimlerini Claude ile tasarlayan eğitmen
+      (<strong>${priceHtml(LIST.egitmen)}</strong>) için birebir program, 3 ay destekle. ${VAT}`,
     primary: { label: 'Programı İncele', href: '/programlar/ai-sampiyonu/' },
   },
   yonetici: {
     heading: 'Karar vermeden önce yapay zekayı anlayın.',
     body: `<a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>: yöneticiler için 3 saatlik tek oturum;
-      yapay zeka nedir, ne değildir, şirketinize ne fayda sağlar. <strong>15.000 TL</strong>.
+      yapay zeka nedir, ne değildir, şirketinize ne fayda sağlar. <strong>${priceHtml(LIST.yonetici)}</strong>.
       30 gün içinde Bireysel ya da Kurumsal programa geçerseniz bu ücret düşülür. ${VAT}`,
     primary: { label: 'Oturumu İncele', href: '/programlar/ceo-brifing/' },
   },

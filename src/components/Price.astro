@@ -1,0 +1,10 @@
+---
+// Renders a Zamana price: struck through list price + campaign price while the campaign runs.
+// Usage: <Price amount={LIST.bireysel} />  or  <Price amount={120000} /> for derived totals.
+import { priceHtml } from '../data/pricing';
+interface Props {
+  amount: number;
+}
+const { amount } = Astro.props;
+---
+<Fragment set:html={priceHtml(amount)} />

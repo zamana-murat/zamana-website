@@ -1,4 +1,6 @@
 ---
+import Price from '../components/Price.astro';
+import { LIST } from '../data/pricing';
 import Layout from '../layouts/Layout.astro';
 
 const faqs = [
@@ -180,13 +182,13 @@ const faqSchema = {
       <div class="prog-grid">
         <div class="prog-card">
           <span class="prog-eyebrow">Bireysel Program</span>
-          <p class="prog-price">40.000 TL <span>+ KDV</span></p>
+          <p class="prog-price"><Price amount={LIST.bireysel} /> <span>+ KDV</span></p>
           <p class="prog-desc">3 hafta birebir, kendi işiniz üzerinden. 6 saat eğitim, 3 ay telefon desteği, size özel CLAUDE.md.</p>
           <a href="/programlar/bireysel/" class="btn btn--secondary">Bireysel Programı İncele</a>
         </div>
         <div class="prog-card prog-card--gold">
           <span class="prog-eyebrow">Kurumsal Program</span>
-          <p class="prog-price">100.000 TL <span>+ KDV / ay</span></p>
+          <p class="prog-price"><Price amount={LIST.retainer6} /> <span>+ KDV / ay</span></p>
           <p class="prog-desc">Minimum 3 ay, 6 çalışan. Rol bazlı derinleşme, ortak prompt kütüphanesi, KVKK politikası, sürekli destek.</p>
           <a href="/programlar/kurumsal/" class="btn btn--primary">Kurumsal Programı İncele</a>
         </div>

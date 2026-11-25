@@ -1,5 +1,7 @@
 ---
+import { sale, offerValidity } from '../data/pricing';
 // Course + Offer JSON-LD for a program page. Prices are VAT-exclusive (KDV hariç).
+// Pass LIST prices (src/data/pricing.ts); the campaign price and priceValidUntil are applied here.
 // Single price: pass `price`. Several tiers: pass `offers` (price/name/description each).
 interface OfferInput {
   name?: string;
@@ -32,18 +34,24 @@ const {
 
 const offerList: OfferInput[] = offers ?? (price !== undefined ? [{ price }] : []);
 
+// Campaign price for numeric list prices ("40000" strings too); other strings pass through.
+const now = (p: number | string) => {
+  const n = typeof p === 'number' ? p : Number(p);
+  return Number.isFinite(n) && n > 0 ? String(sale(n)) : String(p);
+};
 const toOffer = (o: OfferInput) => ({
   '@type': 'Offer',
+  ...offerValidity(),
   ...(o.name ? { name: o.name } : {}),
   ...(o.description ? { description: o.description } : {}),
   url,
   category: 'Paid',
-  price: String(o.price),
+  price: now(o.price),
   priceCurrency,
   availability: 'https://schema.org/InStock',
   priceSpecification: {
     '@type': 'PriceSpecification',
-    price: String(o.price),
+    price: now(o.price),
     priceCurrency,
     valueAddedTaxIncluded: false,
   },

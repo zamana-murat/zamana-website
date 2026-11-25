@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProgramSchema from '../../components/ProgramSchema.astro';
+import Price from '../../components/Price.astro';
+import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../../data/pricing';
 ---
 
 <Layout
   title="Bireysel Claude Eğitimi, 3 Haftalık Birebir Program | Zamana"
-  description="Birebir yapay zeka eğitimi: 3 hafta × 2 saat bireysel Claude eğitimi ve 3 ay sınırsız telefon desteği. Yönetici ve bağımsız profesyoneller için 40.000 TL + KDV."
+  description={`Birebir yapay zeka eğitimi: 3 hafta × 2 saat bireysel Claude eğitimi ve 3 ay sınırsız telefon desteği. Yönetici ve bağımsız profesyoneller için ${nowText(LIST.bireysel)} + KDV.`}
   ogImage="/og/programlar-bireysel.png"
 >
 
@@ -27,10 +29,11 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
         Yönetici, freelancer veya bağımsız profesyonelseniz birebir oturumlarda, kendi gerçek işiniz üzerinden Claude'u öğrenirsiniz.
       </p>
       <div class="hero-meta">
-        <div><strong>40.000 TL <em>+ KDV</em></strong><span>Tek seferlik</span></div>
+        <div><strong><Price amount={LIST.bireysel} /> <em>+ KDV</em></strong><span>Tek seferlik</span></div>
         <div><strong>6 saat</strong><span>3 hafta × 2 saat birebir</span></div>
         <div><strong>3 ay</strong><span>Sınırsız telefon desteği</span></div>
       </div>
+      {campaignOn() && <p class="text-muted" style="margin-top: var(--s-3);">{campaign.name}: {campaign.endLabel} tarihine kadar geçerli.</p>}
     </div>
   </section>
 

@@ -1,4 +1,6 @@
 ---
+import Price from '../components/Price.astro';
+import { LIST } from '../data/pricing';
 import Layout from '../layouts/Layout.astro';
 
 const faqs = [
@@ -87,25 +89,25 @@ const faqSchema = {
       <div class="prog-grid">
         <div class="prog-card">
           <span class="prog-eyebrow">Bireysel Program</span>
-          <p class="prog-price">40.000 TL <span>+ KDV</span></p>
-          <p class="prog-desc">Tek kişi için 3 hafta, haftada 2 saat birebir (6 saat), kendi işiniz üzerinden. 3 ay telefon desteği, size özel CLAUDE.md. Sonrası aylık devam desteği 8.000 TL + KDV.</p>
+          <p class="prog-price"><Price amount={LIST.bireysel} /> <span>+ KDV</span></p>
+          <p class="prog-desc">Tek kişi için 3 hafta, haftada 2 saat birebir (6 saat), kendi işiniz üzerinden. 3 ay telefon desteği, size özel CLAUDE.md. Sonrası aylık devam desteği <Price amount={LIST.devamDestegi} /> + KDV.</p>
           <a href="/programlar/bireysel/" class="btn btn--secondary">Bireysel Programı İncele</a>
         </div>
         <div class="prog-card prog-card--gold">
           <span class="prog-eyebrow">Kurumsal Program</span>
-          <p class="prog-price">100.000 TL <span>+ KDV / ay</span></p>
-          <p class="prog-desc">Minimum 3 ay (300.000 TL), 6 çalışan. 12, 18 ve 24 çalışan için 185.000, 265.000 ve 350.000 TL + KDV / ay. Rol bazlı derinleşme, KVKK politikası, sürekli destek.</p>
+          <p class="prog-price"><Price amount={LIST.retainer6} /> <span>+ KDV / ay</span></p>
+          <p class="prog-desc">Minimum 3 ay (<Price amount={LIST.retainerMin} />), 6 çalışan. 12, 18 ve 24 çalışan için <Price amount={LIST.retainer12} />, <Price amount={LIST.retainer18} /> ve <Price amount={LIST.retainer24} /> + KDV / ay. Rol bazlı derinleşme, KVKK politikası, sürekli destek.</p>
           <a href="/programlar/kurumsal/" class="btn btn--primary">Kurumsal Programı İncele</a>
         </div>
         <div class="prog-card">
           <span class="prog-eyebrow">Yönetici AI Hazırlık</span>
-          <p class="prog-price">15.000 TL <span>+ KDV</span></p>
+          <p class="prog-price"><Price amount={LIST.yonetici} /> <span>+ KDV</span></p>
           <p class="prog-desc">Yöneticiler için 3 saatlik tek oturum: yapay zeka nedir, ne değildir, şirketinize ne fayda sağlar. 30 gün içinde Bireysel ya da Kurumsal'a geçerseniz ücret düşülür.</p>
           <a href="/programlar/ceo-brifing/" class="btn btn--secondary">Oturumu İncele</a>
         </div>
         <div class="prog-card">
           <span class="prog-eyebrow">Uzman programlar</span>
-          <p class="prog-price">7.500 TL'den <span>+ KDV</span></p>
+          <p class="prog-price"><Price amount={LIST.yeniMezun} />'den <span>+ KDV</span></p>
           <p class="prog-desc">AI Şampiyonu, İhracatçılar, Hukuk Büroları, Kamu Kurumları, Akademisyenler ve Yeni Mezun programları. Fiyat programa ve kişi sayısına göre değişir.</p>
           <a href="/programlar/" class="btn btn--secondary">Tüm Programları Gör</a>
         </div>

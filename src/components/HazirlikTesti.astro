@@ -1,4 +1,6 @@
 ---
+import Price from './Price.astro';
+import { LIST } from '../data/pricing';
 // Claude hazırlık değerlendirmesi: 10 soru, istemci tarafı, vanilla JS.
 // Cevaplar hiçbir yere gönderilmez ve saklanmaz.
 const sorular = [
@@ -135,7 +137,7 @@ const sorular = [
       <ul>
         <li><a href="/wiki/temeller/ilk-7-gun/">İlk 7 Gün</a>: Claude ile ilk haftada ne yapılır, ücretsiz ve kendi başınıza.</li>
         <li><a href="/wiki/temeller/sirket-ici-politika/">Şirket İçi Politika</a>: hangi veri girer, hangisi girmez; yazılı kuralın ilk taslağı.</li>
-        <li><a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>: üst yönetimin kararını hızlandırmak istiyorsanız, 3 saatlik tek oturum, 15.000 TL + KDV. Bu adım şart değildir; yukarıdaki iki ücretsiz kaynakla da başlayabilirsiniz.</li>
+        <li><a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>: üst yönetimin kararını hızlandırmak istiyorsanız, 3 saatlik tek oturum, <Price amount={LIST.yonetici} /> + KDV. Bu adım şart değildir; yukarıdaki iki ücretsiz kaynakla da başlayabilirsiniz.</li>
       </ul>
       <p><a class="btn btn--primary" href="/iletisim/?program=ceo-brifing">Görüşme talep et</a></p>
     </div>
@@ -148,8 +150,8 @@ const sorular = [
       </p>
       <ul>
         <li><a href="/wiki/temeller/pilot-ve-yayginlastirma/">Pilot ve Yaygınlaştırma</a>: önce küçük bir grup, sonra yayma.</li>
-        <li><a href="/programlar/bireysel/">Bireysel Program</a>: tek bir kişinin (örneğin pilot sorumlusunun) hızlı yetkinlik kazanması için, 3 hafta + 3 ay destek, 40.000 TL + KDV.</li>
-        <li><a href="/programlar/kurumsal/">Kurumsal Program</a>: ekip genelinde süreklilik için, aylık 100.000 TL + KDV, en az 3 ay, 6 çalışan.</li>
+        <li><a href="/programlar/bireysel/">Bireysel Program</a>: tek bir kişinin (örneğin pilot sorumlusunun) hızlı yetkinlik kazanması için, 3 hafta + 3 ay destek, <Price amount={LIST.bireysel} /> + KDV.</li>
+        <li><a href="/programlar/kurumsal/">Kurumsal Program</a>: ekip genelinde süreklilik için, aylık <Price amount={LIST.retainer6} /> + KDV, en az 3 ay, 6 çalışan.</li>
       </ul>
       <p><a class="btn btn--primary" href="/iletisim/?program=kurumsal">Görüşme talep et</a></p>
     </div>
@@ -161,7 +163,7 @@ const sorular = [
         Hedef, politika, sahiplik ve ölçüm büyük ölçüde yerinde. Bundan sonraki risk teknik değil, alışkanlık riskidir: kullanım bir ekipte parlayıp diğerinde sönebilir. Süreklilik ve iç şampiyon yapısı bu aşamanın asıl işidir.
       </p>
       <ul>
-        <li><a href="/programlar/kurumsal/">Kurumsal Program</a>: rol bazlı, gerçek iş üzerinden süreklilik; aylık 100.000 TL + KDV, en az 3 ay, 6 çalışan.</li>
+        <li><a href="/programlar/kurumsal/">Kurumsal Program</a>: rol bazlı, gerçek iş üzerinden süreklilik; aylık <Price amount={LIST.retainer6} /> + KDV, en az 3 ay, 6 çalışan.</li>
         <li><a href="/programlar/ai-sampiyonu/">AI Şampiyonu</a>: şirket içinde Claude'u yaygınlaştıracak kişiyi yetiştirmek için.</li>
       </ul>
       <p><a class="btn btn--primary" href="/iletisim/?program=kurumsal">Görüşme talep et</a></p>

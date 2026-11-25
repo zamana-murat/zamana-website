@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProgramSchema from '../../components/ProgramSchema.astro';
+import Price from '../../components/Price.astro';
+import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../../data/pricing';
 ---
 
 <Layout
   title="AI Şampiyonu ve Eğitmen Programı | Zamana"
-  description="Kurumunuzda Claude'u öğretecek şampiyon (80.000 TL + KDV) ya da eğitimlerini Claude ile tasarlayan eğitmen (45.000 TL + KDV). Birebir eğitim, 3 ay destek."
+  description={`Kurumunuzda Claude'u öğretecek şampiyon (${nowText(LIST.sampiyon)} + KDV) ya da eğitimlerini Claude ile tasarlayan eğitmen (${nowText(LIST.egitmen)} + KDV). Birebir eğitim, 3 ay destek.`}
   ogImage="/og/programlar-ai-sampiyonu.png"
 >
 
@@ -31,10 +33,11 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
         Eğitmen yolu, işi zaten eğitim vermek olan kişiye kendi eğitimlerini Claude ile tasarlamayı öğretir.
       </p>
       <div class="hero-meta">
-        <div><strong>80.000 TL <em>+ KDV</em></strong><span>Şampiyon yolu, kişi başı</span></div>
-        <div><strong>45.000 TL <em>+ KDV</em></strong><span>Eğitmen yolu, kişi başı</span></div>
+        <div><strong><Price amount={LIST.sampiyon} /> <em>+ KDV</em></strong><span>Şampiyon yolu, kişi başı</span></div>
+        <div><strong><Price amount={LIST.egitmen} /> <em>+ KDV</em></strong><span>Eğitmen yolu, kişi başı</span></div>
         <div><strong>Birebir</strong><span>Siz ve Zamana eğitmeni, 3 ay telefon desteği</span></div>
       </div>
+      {campaignOn() && <p class="text-muted" style="margin-top: var(--s-3);">{campaign.name}: {campaign.endLabel} tarihine kadar geçerli.</p>}
     </div>
   </section>
 
@@ -95,8 +98,8 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
       </p>
       <p>Bu program iki durumda daha doğru seçim:</p>
       <ul class="who-list">
-        <li><strong>Kurumsal Program bütçesi yoksa:</strong> En az üç aylık, 300.000 TL + KDV'lik bir taahhüt yerine tek kişiyle başlarsınız. Bedeli de var: tek şampiyon yalnız kalabilir. Bu riski ilk iç eğitimine katılarak ve 3 ay destekle azaltıyoruz, sıfırlamıyoruz.</li>
-        <li><strong>Kurumsal Program sonrası yayılım için:</strong> Kurumsal Program'daki şampiyonlar Claude'u kendi işlerinde kullanmak üzerine yetişir, iç eğitim vermek için ders planı ve materyal setiyle hazırlanmaz. Altı kişiden sonra kalan çalışanlara ulaşmak isterseniz bir ya da iki kişiyi bu programla eğitmen olarak hazırlarsınız. Kurumsal Program müşterisine ek şampiyon fiyatı 65.000 TL + KDV.</li>
+        <li><strong>Kurumsal Program bütçesi yoksa:</strong> En az üç aylık, <Price amount={LIST.retainerMin} /> + KDV'lik bir taahhüt yerine tek kişiyle başlarsınız. Bedeli de var: tek şampiyon yalnız kalabilir. Bu riski ilk iç eğitimine katılarak ve 3 ay destekle azaltıyoruz, sıfırlamıyoruz.</li>
+        <li><strong>Kurumsal Program sonrası yayılım için:</strong> Kurumsal Program'daki şampiyonlar Claude'u kendi işlerinde kullanmak üzerine yetişir, iç eğitim vermek için ders planı ve materyal setiyle hazırlanmaz. Altı kişiden sonra kalan çalışanlara ulaşmak isterseniz bir ya da iki kişiyi bu programla eğitmen olarak hazırlarsınız. Kurumsal Program müşterisine ek şampiyon fiyatı <Price amount={LIST.sampiyonRetainer} /> + KDV.</li>
       </ul>
     </div>
   </section>
@@ -122,7 +125,7 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
       <div class="options">
         <div class="opt-card opt-card--main">
           <span class="path-tag">Şampiyon yolu</span>
-          <p class="opt-price">80.000 TL <em>+ KDV</em></p>
+          <p class="opt-price"><Price amount={LIST.sampiyon} /> <em>+ KDV</em></p>
           <p class="opt-sub">Kişi başı, tek seferlik</p>
           <p class="opt-head">Dahil</p>
           <ul class="opt-list">
@@ -138,12 +141,12 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
             <li>Materyalin kurum dışında kullanımı, satışı ya da dağıtımı</li>
             <li>İstanbul dışı yerinde oturumlarda seyahat masrafı</li>
           </ul>
-          <p class="opt-note">Kurumsal Program müşterisine ek şampiyon: <strong>65.000 TL + KDV</strong>.</p>
+          <p class="opt-note">Kurumsal Program müşterisine ek şampiyon: <strong><Price amount={LIST.sampiyonRetainer} /> + KDV</strong>.</p>
         </div>
 
         <div class="opt-card">
           <span class="path-tag">Eğitmen yolu</span>
-          <p class="opt-price">45.000 TL <em>+ KDV</em></p>
+          <p class="opt-price"><Price amount={LIST.egitmen} /> <em>+ KDV</em></p>
           <p class="opt-sub">Kişi başı, tek seferlik</p>
           <p class="opt-head">Dahil</p>
           <ul class="opt-list">

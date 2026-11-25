@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProgramSchema from '../../components/ProgramSchema.astro';
+import Price from '../../components/Price.astro';
+import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../../data/pricing';
 ---
 
 <Layout
   title="Yöneticiler için Yapay Zeka Eğitimi, 3 Saat | Zamana"
-  description="Yöneticiler için yapay zeka eğitimi: 3 saatlik birebir oturumda AI nedir, ne değildir, şirketinize ne fayda sağlar. Hafta sonu, 15.000 TL + KDV."
+  description={`Yöneticiler için yapay zeka eğitimi: 3 saatlik birebir oturumda AI nedir, ne değildir, şirketinize ne fayda sağlar. Hafta sonu, ${nowText(LIST.yonetici)} + KDV.`}
   ogImage="/og/programlar-ceo-brifing.png"
 >
 
@@ -27,10 +29,11 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
         Yetkinlik kursu değil, anlama oturumu. AI nedir, ne değildir ve şirketinize ne fayda sağlar, hafta sonu sizin seçtiğiniz adreste birebir konuşuyoruz.
       </p>
       <div class="hero-meta">
-        <div><strong>15.000 TL <em>+ KDV</em></strong><span>Tek seferlik</span></div>
+        <div><strong><Price amount={LIST.yonetici} /> <em>+ KDV</em></strong><span>Tek seferlik</span></div>
         <div><strong>3 saat</strong><span>Tek oturum</span></div>
         <div><strong>Hafta sonu</strong><span>Cumartesi veya Pazar</span></div>
       </div>
+      {campaignOn() && <p class="text-muted" style="margin-top: var(--s-3);">{campaign.name}: {campaign.endLabel} tarihine kadar geçerli.</p>}
     </div>
   </section>
 
@@ -239,7 +242,7 @@ import ProgramSchema from '../../components/ProgramSchema.astro';
               <span class="mfq-toggle" aria-hidden="true">+</span>
             </summary>
             <p>
-              Oturumdan sonraki 30 gün içinde Bireysel Program veya Kurumsal Retainer'a kayıt olursanız, oturumun 15.000 TL + KDV ücreti oradan düşülür.
+              Oturumdan sonraki 30 gün içinde Bireysel Program veya Kurumsal Retainer'a kayıt olursanız, oturumun <Price amount={LIST.yonetici} /> + KDV ücreti oradan düşülür.
               Yani oturum fiili olarak ücretsiz oluyor, devam etmeye karar verdiğinizde.
             </p>
           </details>

@@ -1,4 +1,5 @@
 ---
+import { LIST } from '../data/pricing';
 import Layout from '../layouts/Layout.astro';
 import ProgramCard from '../components/ProgramCard.astro';
 import { claudeNavColumns } from '../data/claude-nav';
@@ -190,7 +191,7 @@ const websiteSchema = {
         <ProgramCard
           title="Bireysel Program"
           badge="Hızlı Başlangıç"
-          price="40.000 TL"
+          price={LIST.bireysel}
           duration="3 hafta eğitim + 3 ay destek"
           audience="Yönetici, freelancer, bağımsız profesyonel veya kendi başına öğrenmek isteyen çalışan."
           features={[
@@ -209,7 +210,7 @@ const websiteSchema = {
         <ProgramCard
           title="Kurumsal Program"
           badge="Tam Dönüşüm"
-          price="100.000 TL"
+          price={LIST.retainer6}
           priceSuffix="+ KDV / Ay"
           duration=""
           priceSubtext="Minimum 3 aylık eğitim"
@@ -231,7 +232,7 @@ const websiteSchema = {
         <ProgramCard
           title="Yönetici AI Hazırlık"
           badge="Anlama Oturumu"
-          price="15.000 TL"
+          price={LIST.yonetici}
           duration="Tek oturum, hafta sonu"
           audience="Yöneticiler için. AI'ı anlamak ve şirketi için karar vermek isteyenler."
           features={[

@@ -10,8 +10,8 @@ const rows = [
   { label: 'Format (İstanbul içi)',   ceo: 'Yerinde yüz yüze',                bireysel: 'Yerinde yüz yüze',          kurumsal: 'Yerinde yüz yüze' },
   { label: 'Format (İstanbul dışı)',  ceo: 'Yerinde ya da online (kişi tercihi, yerinde seçilirse seyahat masrafı kişiye ait)', bireysel: 'Zoom/Google Meet',          kurumsal: 'Yerinde ya da online (firma tercihi, yerinde seçilirse seyahat masrafı firmaya ait)' },
   { label: 'Zaman',                  ceo: 'Hafta sonu (Cumartesi/Pazar)',   bireysel: 'Hafta içi veya hafta sonu', kurumsal: 'Hafta içi mesai saatinde' },
-  { label: 'Fiyat',                  ceo: '15.000 TL + KDV (tek seferlik)',  bireysel: '40.000 TL + KDV (tek seferlik)', kurumsal: '100.000 TL + KDV / ay (min. 3 ay, ödeme aylık)' },
-  { label: 'Kişi başı maliyet',      ceo: '15.000 TL',                       bireysel: '40.000 TL',                 kurumsal: '50.000 TL (3 ay için)' },
+  { label: 'Fiyat',                  ceo: `${priceHtml(LIST.yonetici)} + KDV (tek seferlik)`,  bireysel: `${priceHtml(LIST.bireysel)} + KDV (tek seferlik)`, kurumsal: `${priceHtml(LIST.retainer6)} + KDV / ay (min. 3 ay, ödeme aylık)` },
+  { label: 'Kişi başı maliyet',      ceo: priceHtml(LIST.yonetici),                       bireysel: priceHtml(LIST.bireysel),                 kurumsal: `${priceHtml(LIST.retainerMin / 6)} (3 ay için)` },
   { label: 'Claude aboneliği',       ceo: 'Zorunlu değil (tavsiye)',         bireysel: 'İlk ay Max önerilir (Pro ile de başlanabilir)', kurumsal: 'İlk ay Max önerilir; Team planı önerilir, zorunlu değil' },
   { label: 'Ek ders',                ceo: 'Yok',                             bireysel: 'Gerek görülürse ücretsiz',  kurumsal: 'Gerek görülürse ücretsiz' },
   { label: 'Hedef alıcı',            ceo: 'Yöneticiler',                    bireysel: 'Bireysel profesyonel (B2C)', kurumsal: 'Şirket (B2B)' },
@@ -41,6 +41,8 @@ const recRows: { situation: string; rec: string; href?: string }[] = [
   { situation: 'Akademisyen, araştırmacı ya da doktora öğrencisisiniz', rec: 'Akademisyenler için Araştırma ve Yazım', href: '/programlar/akademisyenler/' },
   { situation: 'Yeni mezun ya da son sınıf öğrencisisiniz',           rec: 'Yeni Mezun ve Kariyer Programı', href: '/programlar/yeni-mezun/' },
 ];
+import Price from '../../components/Price.astro';
+import { LIST, nowText, priceHtml, priceText, campaign, campaignOn } from '../../data/pricing';
 ---
 
 <Layout
@@ -63,21 +65,21 @@ const recRows: { situation: string; rec: string; href?: string }[] = [
   <section class="section">
     <div class="container container-narrow">
       <h2 class="section-title">Zamana fiyatları</h2>
-      <p class="text-muted">Tüm fiyatlar TL, KDV hariçtir.</p>
+      <p class="text-muted">Tüm fiyatlar TL, KDV hariçtir.{campaignOn() && ` ${campaign.name}: ${campaign.endLabel} tarihine kadar geçerli.`}</p>
       <table class="rec-table">
         <thead>
           <tr><th>Program</th><th>Fiyat (+ KDV)</th></tr>
         </thead>
         <tbody>
-          <tr><td><a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>, 3 saatlik tek oturum</td><td><strong>15.000 TL</strong></td></tr>
-          <tr><td><a href="/programlar/bireysel/">Bireysel Program</a>, 3 hafta, 1 kişi, 3 ay destek dahil</td><td><strong>40.000 TL</strong>, tek seferlik. Sonrası aylık devam desteği 8.000 TL</td></tr>
-          <tr><td><a href="/programlar/kurumsal/">Kurumsal Program</a>, 6 çalışan, minimum 3 ay</td><td><strong>100.000 TL / ay</strong> (3 ay için 300.000 TL)</td></tr>
-          <tr><td>Kurumsal Program, 12 / 18 / 24 çalışan</td><td><strong>185.000 / 265.000 / 350.000 TL / ay</strong></td></tr>
-          <tr><td><a href="/programlar/ai-sampiyonu/">AI Şampiyonu</a> (Şampiyon yolu / Eğitmen yolu)</td><td><strong>80.000 TL</strong> (Kurumsal müşteriye 65.000 TL) / <strong>45.000 TL</strong></td></tr>
-          <tr><td><a href="/programlar/ihracatcilar/">İhracatçılar</a> ve <a href="/programlar/hukuk-burolari/">Hukuk Büroları</a></td><td><strong>45.000 TL</strong> tek kişi, ek kişi + 20.000 TL (2-4 kişi)</td></tr>
-          <tr><td><a href="/programlar/kamu-kurumlari/">Kamu Kurumları</a> semineri / atölye</td><td><strong>45.000 TL</strong> (aynı kurumda ikinci seminer 35.000 TL) / <strong>30.000 TL</strong></td></tr>
-          <tr><td><a href="/programlar/akademisyenler/">Akademisyenler</a></td><td><strong>30.000 TL</strong>, grup (3-6 kişi) 75.000 TL</td></tr>
-          <tr><td><a href="/programlar/yeni-mezun/">Yeni Mezun</a> kohortu</td><td><strong>7.500 TL</strong> kişi başı</td></tr>
+          <tr><td><a href="/programlar/ceo-brifing/">Yönetici AI Hazırlık</a>, 3 saatlik tek oturum</td><td><strong><Price amount={LIST.yonetici} /></strong></td></tr>
+          <tr><td><a href="/programlar/bireysel/">Bireysel Program</a>, 3 hafta, 1 kişi, 3 ay destek dahil</td><td><strong><Price amount={LIST.bireysel} /></strong>, tek seferlik. Sonrası aylık devam desteği <Price amount={LIST.devamDestegi} /></td></tr>
+          <tr><td><a href="/programlar/kurumsal/">Kurumsal Program</a>, 6 çalışan, minimum 3 ay</td><td><strong><Price amount={LIST.retainer6} /> / ay</strong> (3 ay için <Price amount={LIST.retainerMin} />)</td></tr>
+          <tr><td>Kurumsal Program, 12 / 18 / 24 çalışan</td><td><strong><Price amount={LIST.retainer12} /> / <Price amount={LIST.retainer18} /> / <Price amount={LIST.retainer24} /> / ay</strong></td></tr>
+          <tr><td><a href="/programlar/ai-sampiyonu/">AI Şampiyonu</a> (Şampiyon yolu / Eğitmen yolu)</td><td><strong><Price amount={LIST.sampiyon} /></strong> (Kurumsal müşteriye <Price amount={LIST.sampiyonRetainer} />) / <strong><Price amount={LIST.egitmen} /></strong></td></tr>
+          <tr><td><a href="/programlar/ihracatcilar/">İhracatçılar</a> ve <a href="/programlar/hukuk-burolari/">Hukuk Büroları</a></td><td><strong><Price amount={LIST.egitmen} /></strong> tek kişi, ek kişi + <Price amount={LIST.ekKisi} /> (2-4 kişi)</td></tr>
+          <tr><td><a href="/programlar/kamu-kurumlari/">Kamu Kurumları</a> semineri / atölye</td><td><strong><Price amount={LIST.egitmen} /></strong> (aynı kurumda ikinci seminer <Price amount={LIST.kamuIkinciSeminer} />) / <strong><Price amount={LIST.kamuAtolye} /></strong></td></tr>
+          <tr><td><a href="/programlar/akademisyenler/">Akademisyenler</a></td><td><strong><Price amount={LIST.kamuAtolye} /></strong>, grup (3-6 kişi) <Price amount={LIST.akademisyenGrup} /></td></tr>
+          <tr><td><a href="/programlar/yeni-mezun/">Yeni Mezun</a> kohortu</td><td><strong><Price amount={LIST.yeniMezun} /></strong> kişi başı</td></tr>
         </tbody>
       </table>
     </div>
@@ -146,21 +148,21 @@ const recRows: { situation: string; rec: string; href?: string }[] = [
               <th>
                 <div class="th-card">
                   <span class="th-tag">Bireysel</span>
-                  <span class="th-price">40.000 TL <em>+ KDV</em></span>
+                  <span class="th-price"><Price amount={LIST.bireysel} /> <em>+ KDV</em></span>
                   <a href="/programlar/bireysel/" class="th-link">Detaylar →</a>
                 </div>
               </th>
               <th>
                 <div class="th-card th-card--gold">
                   <span class="th-tag">Kurumsal</span>
-                  <span class="th-price">100.000 TL <em>+ KDV / ay</em></span>
+                  <span class="th-price"><Price amount={LIST.retainer6} /> <em>+ KDV / ay</em></span>
                   <a href="/programlar/kurumsal/" class="th-link">Detaylar →</a>
                 </div>
               </th>
               <th>
                 <div class="th-card">
                   <span class="th-tag">Yönetici AI Hazırlık</span>
-                  <span class="th-price">15.000 TL <em>+ KDV</em></span>
+                  <span class="th-price"><Price amount={LIST.yonetici} /> <em>+ KDV</em></span>
                   <a href="/programlar/ceo-brifing/" class="th-link">Detaylar →</a>
                 </div>
               </th>
@@ -170,9 +172,9 @@ const recRows: { situation: string; rec: string; href?: string }[] = [
             {rows.map(r => (
               <tr>
                 <th scope="row">{r.label}</th>
-                <td>{r.bireysel}</td>
-                <td>{r.kurumsal}</td>
-                <td>{r.ceo}</td>
+                <td set:html={r.bireysel} />
+                <td set:html={r.kurumsal} />
+                <td set:html={r.ceo} />
               </tr>
             ))}
           </tbody>
