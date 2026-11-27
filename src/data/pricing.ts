@@ -4,7 +4,7 @@
 // The check below also turns it off automatically on builds after `endsAt`.
 
 export const campaign = {
-  active: true,
+  active: false,
   /** Share of the list price the customer pays (0.5 = %50 indirim). */
   factor: 0.5,
   percentLabel: '%50',
